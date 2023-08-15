@@ -3,10 +3,10 @@ title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 83%
+source-wordcount: '1141'
+ht-degree: 79%
 
 ---
 
@@ -23,14 +23,14 @@ Une mise en œuvre de l’IDE [GraphQL](https://graphql.org/learn/serving-over-h
 >[!NOTE]
 >Vous devez avoir [configuré vos points d’entrée](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
 
-L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :
+La variable **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant :
 * sélectionner le **Point d’entrée** approprié pour la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
 * saisir directement de nouvelles requêtes ;
 * créer et accéder aux **[Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md)** ;
 * exécuter vos requêtes pour afficher immédiatement les résultats ;
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
-* publier ou annuler la publication, **Requêtes persistantes**, **Publier** ou **Aperçu** le service; par exemple, vers/depuis `dev-publish`
+* publier ou annuler la publication, **Requêtes persistantes**, **Publier** ou **Aperçu** service ; par exemple, vers/depuis `dev-publish`
 * afficher l’**Historique** de vos requêtes précédentes ;
 * utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
@@ -87,7 +87,7 @@ Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la 
 
 ## Variables de requête {#query-variables}
 
-L’IDE GraphiQL vous permet également de gérer vos [variables de requête](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+L’IDE GraphiQL vous permet également de gérer votre [Variables de requête](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Par exemple :
 
@@ -144,17 +144,17 @@ La requête sera alors activée dans l&#39;environnement que vous sélectionnez.
 
 ## Annulation de la publication de requêtes persistantes {#unpublishing-persisted-queries}
 
-Comme lors de la publication, une fois que vous avez sélectionné votre requête conservée dans la liste (panneau de gauche), vous pouvez utiliser la variable **Annuler la publication** action.
+Comme lors de la publication, une fois que vous avez sélectionné votre requête conservée dans la liste (panneau de gauche), vous pouvez utiliser la variable **Dépublier** action.
 
-La requête sera alors désactivée à partir de l’environnement que vous sélectionnez. soit votre **Publier** ou votre **Aperçu** environnement.
+Cela désactive la requête de l’environnement que vous sélectionnez ; soit votre **Publier** ou votre **Aperçu** environnement.
 
 >[!NOTE]
 >
->Vous devez également vous assurer que vous avez apporté les modifications nécessaires à votre application cliente, afin d’éviter tout problème potentiel.
+>Vous devez également vous assurer que vous avez apporté les modifications nécessaires à votre application cliente pour éviter tout problème potentiel.
 
 ## Copie de l’URL pour accéder directement à la requête {#copy-url}
 
-L’option **Copier l’URL** vous permet de simuler une requête en copiant l’URL utilisée pour accéder directement à la requête persistante et consulter les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
+La variable **Copier l’URL** permet de simuler une requête, en copiant l&#39;URL utilisée pour accéder directement à la requête conservée et visualiser les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
 
 <!--
   >[!NOTE]

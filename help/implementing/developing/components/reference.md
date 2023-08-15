@@ -2,16 +2,16 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3648'
 ht-degree: 95%
 
 ---
 
 # Guide de référence des composants {#components-reference-guide}
 
-Les composants sont essentiels à la création d’une expérience dans AEM. Les [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) facilitent la prise en main d’un ensemble de composants robustes et prêts à l’emploi. Le [Tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) explique au développeur comment utiliser ces outils et comment créer des composants personnalisés pour créer un site AEM.
+Les composants sont essentiels à la création d’une expérience dans AEM. Les [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) facilitent la prise en main d’un ensemble de composants robustes et prêts à l’emploi. La variable [Tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) explique au développeur comment utiliser ces outils et comment créer des composants personnalisés pour créer un site AEM.
 
 >[!TIP]
 >
@@ -64,7 +64,7 @@ Cette approche est compatible avec [HTL](https://experienceleague.adobe.com/docs
 Cette logique (facultative) peut être mise en œuvre de différentes manières et est appelée à partir de HTL avec des commandes spécifiques :
 
 * Utilisation de Java : [Use-API Java HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
-* Utilisation de JavaScript : [Le HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=fr) permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript. Cela permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+* Utiliser JavaScript  : [Use-API JavaScript HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=fr) permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript. Vous pouvez ainsi utiliser du code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 * Utilisation de bibliothèques côté client : les sites web modernes sont très dépendants du traitement côté client effectué par du code JavaScript et CSS complexe. Pour plus d’informations, consultez le document [Utilisation de bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Structure des composants {#structure}

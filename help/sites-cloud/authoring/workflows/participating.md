@@ -2,10 +2,10 @@
 title: Participation aux workflows
 description: Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 92%
+source-wordcount: '1536'
+ht-degree: 91%
 
 ---
 
@@ -75,7 +75,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
 1. Sélectionnez **Terminer** dans la barre d’outils.
-1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Sélectionnez la **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
+1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Sélectionnez la variable **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Éditeur de page {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 
 1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Terminer** dans la barre d’état en haut.
-1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Sélectionnez la **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
+1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Sélectionnez la variable **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Chronologie {#completing-a-participant-step-timeline}
@@ -163,7 +163,7 @@ Vous pouvez également utiliser la chronologie pour déléguer et/ou attribuer u
 
 ### Revenir d’une étape de participant en arrière {#performing-step-back-on-a-participant-step}
 
-Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir à une étape antérieure. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
+Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir à une étape antérieure. Vous pouvez ainsi sélectionner une étape, qui s’est produite plus tôt dans le workflow, pour le retraitement. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
 
 Sur cette action, vous pouvez indiquer :
 

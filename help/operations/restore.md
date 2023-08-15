@@ -1,10 +1,10 @@
 ---
 title: Restauration de contenu dans AEM as a Cloud Service
 description: Découvrez comment restaurer votre contenu AEM as a Cloud Service à partir de la sauvegarde à l’aide de Cloud Manager.
-source-git-commit: 6813b5b9570a4d115cd0600bcccd4d787dc42154
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 76%
 
 ---
 
@@ -59,11 +59,11 @@ Déterminez d’abord la période du contenu que vous souhaitez restaurer. Ensui
 
 1. Sous l’onglet **Restaurer le contenu** de la page Détails de l’environnement, sélectionnez d’abord la période de restauration sous le menu déroulant du **Temps de restauration**.
 
-   1. Si vous sélectionnez **24 dernières heures**, le champ **Heure** voisin vous permet de spécifier l’heure exacte des dernières 24 heures à partir de laquelle vous souhaitez lancer la restauration.
+   1. Si vous sélectionnez **24 dernières heures** le voisin **Heure** vous permet de spécifier l’heure exacte des dernières 24 heures à restaurer.
 
       ![24 dernières heures](assets/backup-time.png)
 
-   1. Si vous sélectionnez **Semaine dernière**, le champ **Jour** voisin vous permet de sélectionner une date au cours des sept derniers jours, à l’exception des 24 heures précédentes.
+   1. Si vous sélectionnez **Semaine dernière** le voisin **Jour** vous permet de sélectionner une date au cours des sept derniers jours, à l’exception des 24 heures précédentes.
 
       ![Semaine dernière](assets/backup-date.png)
 
@@ -106,7 +106,7 @@ En outre, gardez à l’esprit qu’une restauration peut entraîner une désync
 
 ## Restaurer l’activité {#restore-activity}
 
-La variable **Restaurer l’activité** La liste affiche l’état des dix demandes de restauration les plus récentes, y compris les opérations de restauration principales.
+La variable **Restaurer l’activité** La liste affiche l’état des dix demandes de restauration les plus récentes, y compris les opérations de restauration actives.
 
 ![Restaurer l’activité](assets/backup-activity.png)
 

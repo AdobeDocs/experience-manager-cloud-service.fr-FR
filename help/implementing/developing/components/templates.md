@@ -2,10 +2,10 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui sert de base à la nouvelle page.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3294'
-ht-degree: 90%
+source-wordcount: '3291'
+ht-degree: 89%
 
 ---
 
@@ -205,7 +205,7 @@ Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes 
 1. Les champs suivants doivent être configurés dans la boîte de dialogue **Créer une configuration** :
 
    * **Titre** : indiquez un titre pour le dossier de configuration.
-   * **Modèles modifiables**: Cochez cette case pour autoriser les modèles modifiables dans ce dossier.
+   * **Modèles modifiables**: cochez cette case pour autoriser les modèles modifiables dans ce dossier.
 
 1. Cliquez sur **Créer**
 
@@ -356,7 +356,7 @@ When creating a new editable template, the value is copied from the template typ
 Si vous avez créé un modèle qui peut servir de base pour d’autres modèles, vous pouvez le copier en tant que type de modèle.
 
 1. Créez un modèle qui servira de base pour votre type de modèle. Pour ce faire, procédez comme vous le feriez pour n’importe quel modèle de page, [en suivant ces instructions](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author).
-1. À l’aide de CRXDE Lite, copiez le nouveau modèle créé depuis le nœud `templates` dans le nœud `template-types` sous le [dossier de modèles](#template-folders).
+1. À l’aide de CRXDE Lite, copiez le nouveau modèle depuis le nœud `templates` dans le nœud `template-types` sous le [dossier de modèles](#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](#template-folders).
 1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` de tous les nœuds `jcr:content`.
 
@@ -448,7 +448,7 @@ Définit le contenu initial dont une nouvelle page disposera au moment de sa cr�
 * Contient un nœud `jcr:content` copié dans toute nouvelle page.
 * Est fusionné avec la structure (`/structure`) lors de la création d’une page.
 * Aucune page existante n’est mise à jour si le contenu initial est modifié après la création.
-* Le `root` contient une liste de composants pour définir ce qui est disponible dans la page résultant du processus.
+* La variable `root` contient une liste de composants pour définir ce qui est disponible dans la page résultant du processus.
 * Si du contenu est ajouté à un composant en mode de structure et que ce composant est ensuite déverrouillé (ou inversement), ce contenu est utilisé comme contenu initial.
 
 ### Mise en page {#layout}
@@ -539,9 +539,9 @@ Lors du rendu d’une page :
 
    * Le composant de page fusionnera l’arborescence `structure/jcr:content` du modèle avec l’arborescence `jcr:content` de la page.
       * Le composant de page permet uniquement à l’auteur de modifier les noeuds de la structure de modèle qui ont été marqués comme modifiables (et tous les enfants).
-      * Lors du rendu d’un composant sur une page, le chemin relatif de ce composant est extrait de la propriété `jcr:content` Noeud; le même chemin sous `policies/jcr:content` du modèle est ensuite recherché.
+      * Lors du rendu d’un composant sur une page, le chemin relatif de ce composant est extrait de la propriété `jcr:content` noeud ; le même chemin sous la propriété `policies/jcr:content` du modèle est ensuite recherché.
          * La propriété `cq:policy` de ce nœud pointe vers la politique de contenu proprement dite (en d’autres termes, elle contient la configuration de conception de ce composant).
-            * De cette manière, vous pouvez disposer de plusieurs modèles qui réutilisent les mêmes configurations de politique de contenu.
+            * Cela vous permet de disposer de plusieurs modèles qui réutilisent les mêmes configurations de stratégie de contenu.
 
 ### Disponibilité des modèles {#template-availability}
 
@@ -595,6 +595,6 @@ Le diagramme suivant illustre le processus d’évaluation de modèle :
 
 Pour limiter les modèles servant à créer des pages enfants sous une page donnée, utilisez la propriété `cq:allowedTemplates` du nœud `jcr:content` de la page pour spécifier la liste des modèles à autoriser en tant que pages enfants. Chaque valeur de la liste doit être un chemin absolu vers un modèle pour une page enfant autorisée, par exemple `/apps/wknd/templates/page-content`.
 
-Vous pouvez appliquer la propriété `cq:allowedTemplates` sur le nœud `jcr:content` du modèle pour que cette configuration soit appliquée à toutes les pages nouvellement créées qui utilisent ce modèle.
+Vous pouvez utiliser la variable `cq:allowedTemplates` sur la propriété  `jcr:content` pour que cette configuration soit appliquée à toutes les pages nouvellement créées qui utilisent ce modèle.
 
 Si vous souhaitez ajouter d’autres contraintes, par exemple concernant la hiérarchie des modèles, vous pouvez appliquer les propriétés `allowedParents/allowedChildren` sur le modèle. Vous pouvez ensuite spécifier explicitement que les pages créées à partir d’un modèle T doivent être des parents/enfants de pages créées à partir d’un modèle T.

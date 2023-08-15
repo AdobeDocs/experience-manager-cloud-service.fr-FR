@@ -2,10 +2,10 @@
 title: Création de programmes Sandbox
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme Sandbox à des fins de formation, de démonstration, de point de vente ou à d’autres fins hors production.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 48%
+source-wordcount: '444'
+ht-degree: 51%
 
 ---
 
@@ -35,7 +35,7 @@ Découvrez-en plus sur les types de programme dans le document [Présentation de
 
    * Utilisez les chevrons en regard des noms des solutions pour afficher des modules complémentaires facultatifs supplémentaires pour les solutions.
 
-   * Le **Sites** et **Ressources** Les solutions sont toujours incluses dans les programmes sandbox et ne peuvent pas être désélectionnées.
+   * La variable **Sites** et **Ressources** Les solutions sont toujours incluses dans les programmes sandbox et ne peuvent pas être désélectionnées.
 
    ![Sélectionner des solutions et des modules complémentaires pour un sandbox](assets/sandbox-solutions-add-ons.png)
 
@@ -49,11 +49,11 @@ Une nouvelle carte de programme sandbox s’affiche sur la page d’entrée avec
 
 Vous pouvez afficher les détails de la configuration de votre environnement de test et accéder à l’environnement (une fois disponible) en consultant la page d’aperçu du programme.
 
-1. Sur la page d’entrée de Cloud Manager, cliquez sur le bouton représentant des points de suspension du nouveau programme.
+1. Dans la page de destination de Cloud Manager, cliquez sur le bouton représentant des points de suspension du programme que vous venez de créer.
 
    ![Accès à l’aperçu du programme](assets/program-overview-sandbox.png)
 
-1. Une fois l’étape de création du projet terminée, vous pouvez accéder à la variable **Accès aux informations sur le référentiel** pour pouvoir utiliser votre référentiel git.
+1. Une fois l’étape de création du projet terminée, vous pouvez accéder au **Accès aux informations sur le référentiel** pour pouvoir utiliser votre référentiel git.
 
    ![Configuration du programme](assets/create-program4.png)
 

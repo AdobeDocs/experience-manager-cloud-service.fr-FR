@@ -2,10 +2,10 @@
 title: Création d’expériences produit
 description: Découvrez comment créer du contenu de produit qui peut ensuite être utilisé dans divers canaux pour créer une expérience d’achat immersive.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 96%
+source-wordcount: '1165'
+ht-degree: 93%
 
 ---
 
@@ -33,13 +33,13 @@ Dans AEM, vous pouvez créer différents types de contenu et les lier au catalog
 
 Les ressources marketing sont liées à la promotion et à l’utilisation du produit et sont généralement détenues par le marketing. Il peut sʼagir, par exemple, de la présentation de plusieurs produits (« acheter le look »), dans un contexte spécifique (« collection dʼautomne pour lʼextérieur ») ou de fichiers PDF pratiques. Lʼextension CIF permet de lier facilement nʼimporte quelle ressource AEM à un objet de catalogue de produits.
 
-Ouvrez les propriétés de la ressource et accédez à lʼonglet **Commerce**. Cet onglet vous permet de gérer l’association avec les produits. Le tableau situé sous le sélecteur fournit des informations supplémentaires sur les objets liés (visibles uniquement en cas de sélection). Cliquez sur l’icône des détails pour obtenir une vue complète dans la console du produit. Pour associer un nouvel objet, cliquez sur l’icône du sélecteur de produits (icône de dossier), sélectionnez un objet, puis fermez le sélecteur.
+Ouvrez les propriétés de la ressource et accédez à lʼonglet **Commerce**. Cet onglet permet de gérer l&#39;association avec les produits. Le tableau situé sous le sélecteur fournit des informations supplémentaires sur les objets liés (visibles uniquement en cas de sélection). Cliquez sur l’icône des détails pour obtenir une vue complète dans la console du produit. Pour associer un nouvel objet, cliquez sur l’icône du sélecteur de produits (icône de dossier), sélectionnez un objet, puis fermez le sélecteur.
 
 ![ressources pem](assets/pem-assets.png)
 
 ### Fragments d’expérience {#experience-fragments}
 
-Les fragments d’expérience constituent un excellent moyen de créer des données réutilisables ou pour un produit individuel à grande échelle. L’association fonctionne de la même manière qu’une ressource. Ouvrez les propriétés et accédez à lʼonglet **Commerce**. Cet onglet vous permet de gérer l’association avec les produits et les catégories. Les tableaux situés sous les sélecteurs fournissent des informations supplémentaires sur les objets liés (visibles uniquement en cas de sélection). Cliquez sur l’icône des détails pour obtenir une vue complète dans la console du produit. Pour associer un nouvel objet, cliquez sur l’icône du sélecteur de produits (icône de dossier), sélectionnez un objet, puis fermez le sélecteur.
+Les fragments d’expérience constituent un excellent moyen de créer des données réutilisables ou pour un produit individuel à grande échelle. L’association fonctionne de la même manière qu’une ressource. Ouvrez les propriétés et accédez à lʼonglet **Commerce**. Cet onglet permet de gérer l&#39;association avec les produits et les catégories. Les tableaux situés sous les sélecteurs fournissent des informations supplémentaires sur les objets liés (visibles uniquement en cas de sélection). Cliquez sur l’icône des détails pour obtenir une vue complète dans la console du produit. Pour associer un nouvel objet, cliquez sur l’icône du sélecteur de produits (icône de dossier), sélectionnez un objet, puis fermez le sélecteur.
 
 ![pem xf](assets/pem-xf.png)
 

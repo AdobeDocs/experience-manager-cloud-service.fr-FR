@@ -5,10 +5,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 85%
+source-wordcount: '1627'
+ht-degree: 81%
 
 ---
 
@@ -28,13 +28,13 @@ Vous pouvez publier ou dépublier des ressources au niveau de la ressource ou du
 
 ## Publication de ressources à l’aide de la publication rapide {#quick-publish}
 
-La publication rapide vous permet de publier immédiatement le contenu vers la destination sélectionnée. Dans la console [!DNL Experience Manager Assets], accédez au dossier parent et sélectionnez toutes les ressources ou tous les dossiers à publier. Cliquez sur **[!UICONTROL Publication rapide]** dans la barre d’outils, puis sélectionnez dans la liste déroulante la destination où vous souhaitez publier les ressources.
+La publication rapide permet de publier immédiatement le contenu vers la destination sélectionnée. Dans la console [!DNL Experience Manager Assets], accédez au dossier parent et sélectionnez toutes les ressources ou tous les dossiers à publier. Cliquez sur **[!UICONTROL Publication rapide]** dans la barre d’outils, puis sélectionnez dans la liste déroulante la destination où vous souhaitez publier les ressources.
 
 ![Publication rapide](assets/quick-publish-to-aem.png)
 
 ## Publication de ressources à l’aide de la fonction Gérer la publication {#manage-publication}
 
-« Gérer la publication » permet de publier ou de dépublier du contenu vers et depuis la destination sélectionnée, d’[ajouter du contenu](#add-content) à la liste de publication à partir du référentiel DAM, d’[inclure des paramètres de dossier](#include-folder-settings), de publier le contenu des dossiers sélectionnés et d’appliquer des filtres, et de [planifier une publication](#publish-assets-later) à une date ou à une heure ultérieure.
+Gérer la publication permet de publier ou d&#39;annuler la publication de contenu vers et depuis la destination sélectionnée, [ajouter du contenu](#add-content) à la liste de publication à partir du référentiel DAM, [paramètres du dossier d’inclusion](#include-folder-settings) pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et [planification de la publication](#publish-assets-later) à une date ou une heure ultérieure.
 
 Dans la console [!DNL Experience Manager Assets], accédez au dossier parent et sélectionnez toutes les ressources ou tous les dossiers à publier. Cliquez sur **[!UICONTROL Gérer la publication]** dans la barre d’outils. Si vous n’avez pas configuré [!DNL Dynamic Media] et [!DNL Brand Portal] dans votre instance [!DNL Experience Manager Assets], vous pouvez publier des ressources et des dossiers uniquement dans [!DNL Experience Manager Assets].
 
@@ -61,7 +61,7 @@ Pour continuer, cliquez sur **[!UICONTROL Suivant]**. Selon la sélection, l’o
 
 ### Ajouter du contenu {#add-content}
 
-La publication vers [!DNL Experience Manager Assets] vous permet d’ajouter davantage de contenu (ressources et dossiers) à la liste de publication. Vous pouvez ajouter d’autres ressources ou dossiers à la liste dans les référentiels DAM. Cliquez sur **[!UICONTROL Ajouter du contenu]** pour ajouter du contenu.
+Publication sur [!DNL Experience Manager Assets] vous permet d’ajouter plus de contenu (ressources et dossiers) à la liste de publication. Vous pouvez ajouter d’autres ressources ou dossiers à la liste dans les référentiels DAM. Cliquez sur **[!UICONTROL Ajouter du contenu]** pour ajouter du contenu.
 
 Vous pouvez ajouter plusieurs ressources à partir d’un dossier ou ajouter plusieurs dossiers à la fois. Cependant, vous ne pouvez pas ajouter de ressources à partir de plusieurs dossiers à la fois.
 
@@ -179,7 +179,7 @@ Vous pouvez publier des ressources, des dossiers et des collections dans l’ins
 
 ## Demander la publication {#request-publication}
 
-Le `Request Publication` permet d’authentifier le workflow des ressources avant de les publier sur . [!DNL AEM] Environnement de ressources. [!DNL AEM] fournit différents niveaux d’autorisations à différents utilisateurs. Vous pouvez *contributor* qui charge des ressources, mais ne peut pas les publier tant que les chargements ne sont pas vérifiés. En outre, la variable *Administration* vous pouvez gérer les workflows de lecture et d’écriture des ressources.
+La variable `Request Publication` aide à authentifier le workflow des ressources avant de les publier sur [!DNL AEM] Environnement de ressources. [!DNL AEM] fournit différents niveaux d’autorisations à différents utilisateurs. Vous pouvez *contributor* qui charge des ressources, mais ne peut pas les publier tant que les chargements ne sont pas vérifiés. En outre, la variable *Administration* vous pouvez gérer les workflows de lecture et d’écriture des ressources.
 
 L’option Demander la publication est disponible pour les utilisateurs suivants :
 * **Contributeur :** Si vous êtes un utilisateur pouvant contribuer à la variable [!DNL AEM] Assets, vous disposez alors d’un accès limité à la variable [!DNL AEM] Workflow des ressources. `Manage publication` est masqué pour vous. En tant que contributeur, vous ne pouvez contribuer qu’en ajoutant des ressources, mais vous ne pouvez pas les publier ni disposer d’un accès en lecture au workflow.
@@ -189,7 +189,7 @@ L’option Demander la publication est disponible pour les utilisateurs suivants
    * view `Manage publication` button
    * planifier le workflow et afficher les options `schedule now` et `schedule later`
 
-* **Administrateur :** En tant que type d’administrateur d’utilisateur, vous pouvez gérer les étapes globales du workflow pour les ressources. `Manage publication` est visible par vous. Si la destination `publish` est sélectionné, vous pouvez planifier une ressource ultérieurement pour l’étape du workflow.
+* **Admin :** En tant que type d’administrateur d’utilisateur, vous pouvez gérer les étapes globales du workflow pour les ressources. `Manage publication` est visible par vous. Si la destination `publish` est sélectionné, vous pouvez planifier une ressource ultérieurement pour l’étape du workflow.
 
 >[!NOTE]
 >

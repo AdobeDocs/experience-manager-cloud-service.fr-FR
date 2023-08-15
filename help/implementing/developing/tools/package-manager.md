@@ -4,10 +4,10 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3775'
-ht-degree: 85%
+source-wordcount: '3770'
+ht-degree: 84%
 
 ---
 
@@ -72,7 +72,7 @@ Donc tous les packages que je crée doivent être inférieurs à 750 Mo.
 
 >[!NOTE]
 >
->Les vitesses du réseau sont soumises aux conditions locales actuelles. Même avec un test de vitesse récent, votre débit réel peut varier.
+>La vitesse du réseau est assujettie aux conditions locales actuelles. Même avec un test de vitesse récent, votre débit réel peut varier.
 >
 >Par conséquent, la formule fournie est uniquement une directive et la taille maximale réelle du module recommandée peut varier.
 
@@ -105,7 +105,7 @@ Vous pouvez accéder au gestionnaire de packages de trois façons :
 
 Le gestionnaire de packages est divisé en quatre zones fonctionnelles principales :
 
-* **Panneau de navigation de gauche** - Ce panneau vous permet de filtrer et de trier la liste des packages.
+* **Panneau de navigation gauche** - Ce panneau vous permet de filtrer et de trier la liste des packages.
 * **Liste de packages** - Il s’agit de la liste des packages de votre instance, filtrée et triée selon les sélections effectuées dans le panneau de navigation de gauche.
 * **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de packages, comme lorsqu’un package est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
    * **Effacer le journal**
@@ -194,7 +194,7 @@ Lors de la création de filtres, vous pouvez définir un chemin dʼaccès ou uti
 
 | Type de règle | Description |
 |---|---|
-| inclusion | L’inclusion d’un répertoire inclut ce répertoire et tous les fichiers et dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière), mais **ne sera pas** d’inclure d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
+| inclusion | L’inclusion d’un répertoire inclut ce répertoire et tous les fichiers et dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière), mais **will not** d’inclure d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
 | exclusion | L’exclusion d’un répertoire exclut ce répertoire ainsi que tous les fichiers et dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière). |
 
 Les filtres de package sont le plus souvent définis lors de la première [création du package.](#creating-a-new-package) Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
@@ -395,7 +395,7 @@ Le gestionnaire de packages peut effectuer les validations suivantes :
 
 >[!NOTE]
 >
->Les packages ne pouvant pas être utilisés pour déployer du code dans AEMaaCS, la validation **Importation de packages OSGi** est inutile.
+>Les packages ne pouvant pas être utilisés pour déployer du code dans AEMaaCS, **Imports de modules OSGi** La validation n’est pas nécessaire.
 
 **Contenu vérifié**
 
@@ -417,7 +417,7 @@ Pour résoudre des erreurs dues à des lots OSGi non satisfaits, il faut ajuster
 
 >[!NOTE]
 >
->Comme les packages ne peuvent pas être utilisés pour déployer du code dans AEMaaC, la validation des **Recouvrements** est inutile.
+>Les packages ne pouvant pas être utilisés pour déployer du code dans AEMaaCS, **Recouvrements** La validation n’est pas nécessaire.
 
 **Contenu vérifié**
 
@@ -463,7 +463,7 @@ Aucune erreur explicite ne peut être fournie. La validation indique simplement 
 >
 >Il est recommandé de sʼassurer que les packages n’affectent pas les listes ACL fournies par AEM, car cela pourrait entraîner un comportement inattendu du produit.
 
-#### Exécution de la validation {#performing-validation}
+#### Validation {#performing-validation}
 
 La validation des packages peut se faire de deux manières différentes :
 

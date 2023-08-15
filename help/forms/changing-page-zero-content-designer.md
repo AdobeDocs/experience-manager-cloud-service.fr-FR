@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 69%
+source-wordcount: '232'
+ht-degree: 63%
 
 ---
 
@@ -22,7 +22,7 @@ Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de vis
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-La version [!DNL AEM Forms] de Designer vous permet de modifier le message affiché sur la page zéro. Pour modifier le message de la page zéro, procédez comme suit :
+[!DNL AEM Forms] La version de Designer permet de modifier le message affiché sur la page zéro. Pour modifier le message de la page zéro, procédez comme suit :
 
 1. Assurez-vous que la version [!DNL AEM Forms] de Designer est installée. Vous pouvez vérifier la version dans l’écran A propos de Designer.
 

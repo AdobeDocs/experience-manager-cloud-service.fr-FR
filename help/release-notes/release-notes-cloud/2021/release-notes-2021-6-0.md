@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1436'
 ht-degree: 94%
 
 ---
@@ -68,7 +68,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * Une nouvelle règle de qualité du code a été ajoutée pour valider la structure des index `damAssetLucene`. Voir [Index Lucene Oak de ressource DAM personnalisés](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) pour plus d’informations.
 
-* La page Détails de l’environnement affiche désormais plusieurs noms de domaine pour les services de publication et de prévisualisation (le cas échéant). Voir [Détails de l’environnement](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) pour en savoir plus.
+* La page Détails de l’environnement affiche désormais plusieurs noms de domaine pour les services de publication et de prévisualisation (le cas échéant). Voir [Détails de l’environnement](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-junecm}
 
@@ -128,7 +128,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Fonction bêta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les API de communication vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les API de communication vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    * Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
    * Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.
    * Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat (AcroForm).
@@ -155,9 +155,9 @@ La date de publication d’AEM Screens as a Cloud Service est le 24 juin 2021
 >[!NOTE]
 >Consultez le [Guide d’AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=fr) pour obtenir les connaissances de base requises pour réussir l’installation, la configuration et l’exécution de Screens as a Cloud Service et reportez-vous à la documentation technique des concepts détaillés.
 
-* La gestion de l’enregistrement des périphériques en masse signifie que la mise en service d’un grand nombre de périphériques de lecture est plus rapide et plus efficace.
+* La gestion de l’enregistrement des appareils en masse signifie que la mise en service d’un grand nombre d’appareils de lecture est plus rapide et plus efficace.
 
-* Amélioration des options de recherche et de filtrage pour chacune des vues d’inventaire Périphérique, Affichage et Canal.
+* Amélioration des options de recherche et de filtrage pour chacune des vues d’inventaire Appareil, Affichage et Canal.
 
 * L’instantané de la santé de l’appareil permet de gagner du temps en fournissant un état critique en un coup d’œil.
 

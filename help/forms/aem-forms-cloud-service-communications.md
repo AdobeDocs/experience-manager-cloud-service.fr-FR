@@ -2,17 +2,17 @@
 title: AEM Forms as a Cloud Service - Communications
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 100%
+source-wordcount: '683'
+ht-degree: 94%
 
 ---
 
 
 # Utilisation du traitement synchrone {#sync-processing-introduction}
 
-Les API de communication de Forms as a Cloud Service vous permettent de créer, d’assembler et de diffuser des communications personnalisées dans le ton de la marque. Il peut notamment s’agir de correspondances d’entreprise, de documents, de relevés, de courriers de traitement des réclamations, d’avis de prestations, de factures mensuelles ou de kits de bienvenue. Vous pouvez utiliser les API de communication pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
+Forms as a Cloud Service : les API de communications vous permettent de créer, assembler et diffuser des communications personnalisées et orientées sur la marque, telles que des correspondances commerciales, des documents, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des lettres de traitement des demandes, des factures mensuelles et des kits de bienvenue. Vous pouvez utiliser les API de communication pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
 
 Supposons que vous ayez un ou plusieurs modèles et plusieurs enregistrements de données XML pour chaque modèle. Vous pouvez utiliser les API Communications pour générer un document d’impression pour chaque enregistrement. <!-- You can also combine the records into a single document. --> Le résultat est un document PDF non interactif. Dans ce type de document, les utilisateurs n’ont pas la possibilité de saisir des données dans les champs.
 
@@ -51,9 +51,9 @@ Les opérations des API à client unique prennent en charge deux types d’authe
    1. Exécutez l’API Experience Manager avec le jeton d’accès servant de jeton d’authentification du porteur.
    1. [Définissez les autorisations appropriées pour l’utilisateur du compte technique dans l’environnement Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr#configurer-l’accès-dans-aem).
 
-   >[!NOTE]
-   >
-   >Adobe recommande d’utiliser l’authentification basée sur les jetons sur un environnement de production.
+  >[!NOTE]
+  >
+  >Adobe recommande d’utiliser l’authentification basée sur les jetons sur un environnement de production.
 
 <!-- 
 

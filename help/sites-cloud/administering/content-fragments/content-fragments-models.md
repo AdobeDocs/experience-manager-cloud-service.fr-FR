@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu servent de b
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 86%
+source-wordcount: '2916'
+ht-degree: 85%
 
 ---
 
@@ -58,7 +58,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
    >[!NOTE]
    >
-   >Lorsque un champ est défini sur **Obligatoire**, la variable **Libellé** indiqué dans le volet de gauche est marqué d’un astérisque (**&#42;**).
+   >Lorsqu’un champ est défini sur **Obligatoire**, la variable **Libellé** indiqué dans le volet de gauche est marqué d’un astérisque (**&#42;**).
 
 ![propriétés](assets/cfm-models-03.png)
 
@@ -221,7 +221,8 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 
 * **[Référence du fragment](#fragment-reference-nested-fragments)** (fragments imbriqués)
    * Fait référence à d’autres fragments, en fonction des modèles spécifiques spécifiés.
-   * Permet d’inclure/récupérer des données structurées.
+   * Vous permet d’inclure/de récupérer des données structurées.
+
      >[!NOTE]
      >
      >Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
@@ -239,7 +240,7 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 
 ### Référence de contenu {#content-reference}
 
-La référence de contenu permet de générer du contenu à partir d’une autre source, par exemple, une image ou un fragment de contenu.
+La référence de contenu vous permet d’effectuer le rendu du contenu à partir d’une autre source, par exemple une image ou un fragment de contenu.
 
 Outre les propriétés standard, vous pouvez spécifier les éléments suivants :
 
@@ -254,7 +255,7 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
 
 ### Référence du fragment (fragments imbriqués) {#fragment-reference-nested-fragments}
 
-La référence du fragment fait référence à un ou plusieurs fragments de contenu. Cette fonctionnalité présente un intérêt particulier lors de la récupération de contenu pour une utilisation dans votre application, car elle permet de récupérer des données structurées comportant plusieurs calques.
+La référence du fragment fait référence à un ou plusieurs fragments de contenu. Cette fonctionnalité présente un intérêt particulier lors de la récupération de contenu à utiliser dans votre application, car elle vous permet de récupérer des données structurées avec plusieurs couches.
 
 Par exemple :
 
@@ -405,7 +406,7 @@ Pour supprimer un modèle de fragment de contenu :
 1. Accédez à **Outils**, **Général**, puis ouvrez les **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Sélectionnez votre modèle, puis **Supprimer** dans la barre d’outils.
+1. Sélectionnez votre modèle, suivi de **Supprimer** dans la barre d’outils.
 
    >[!NOTE]
    >

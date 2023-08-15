@@ -4,9 +4,9 @@ description: Découvrez comment configurer l’éditeur de texte enrichi [!DNL A
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4301'
+source-wordcount: '4299'
 ht-degree: 85%
 
 ---
@@ -39,13 +39,13 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * un nœud de configuration alternatif : `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
+
    * Ils sont du type : **jcr:primaryType** `cq:Widget`
    * Possèdent tous deux les propriétés suivantes :
 
       * **Nom** `name`
       * **Type** `String`
       * **Valeur** `./text`
-
 
 1. Selon l’interface pour laquelle vous effectuez la configuration, créez un nœud `<rtePlugins-node>`, s’il n’existe pas :
 
@@ -59,7 +59,7 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
 
 Après activation d’un module externe, suivez ces instructions pour configurer la propriété `features`.
 
-|  | Activer toutes les fonctions | Activer des fonctions spécifiques. | Désactiver toutes les fonctions. |
+| | Activer toutes les fonctions | Activer des fonctions spécifiques. | Désactiver toutes les fonctions. |
 |---|---|---|---|
 | Nom | features | features | features |
 | Type | Chaîne | `String` (multichaîne ; définissez le type sur `String` et cliquez sur `Multi` dans CRXDE Lite) | Chaîne |
@@ -303,8 +303,7 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que les auteurs voient lors de la sélection du style.
    * Nom : `text`
-*Type : 
-`String`
+*Type : `String`
    * Valeur : `Japanese word-wrap`
 
 1. Créez une feuille de style et spécifiez son chemin d’accès. Consultez [spécification de l’emplacement de la feuille de style](#locationofstylesheet). Ajoutez le contenu suivant à la feuille de style. Modifiez la couleur d’arrière-plan selon vos besoins.
@@ -356,7 +355,7 @@ Pour activer le module externe `paraformat`, procédez comme suit :
 
 >[!CAUTION]
 >
->Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la balise `<p>` est supprimée, l’auteur du contenu ne peut pas sélectionner l’option [!UICONTROL Formats des paragraphes], même si d’autres formats sont configurés.
+>Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la variable `<p>` est supprimée, puis l’auteur du contenu ne peut pas sélectionner la balise [!UICONTROL Formats de paragraphe] même si d’autres formats sont configurés.
 
 ### Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
 
@@ -379,7 +378,7 @@ Les formats de paragraphe sont mis à disposition pour être sélectionnés :
    * **Type** `String`
    * **Valeur** La balise block pour le format, par exemple : p, h1, h2, etc.
 
-      Vous n’avez pas besoin de saisir les crochets de séparation.
+     Vous n’avez pas besoin de saisir les crochets de séparation.
 
 1. Sur le même nœud, ajoutez une autre propriété pour que le texte descriptif s’affiche dans la liste déroulante :
 
@@ -392,6 +391,7 @@ Les formats de paragraphe sont mis à disposition pour être sélectionnés :
    Répétez les étapes pour chaque format requis.
 
 >[!CAUTION]
+>
 Si vous définissez des formats personnalisés, les formats par défaut (`<p>`, `<h1>`, `<h2>` et `<h3>`) sont supprimés. Recréez le format `<p>`, car il s’agit du format par défaut.
 
 ## Configuration des caractères spéciaux {#spchar}
@@ -401,6 +401,7 @@ Dans une installation [!DNL Experience Manager] standard, lorsque le module exte
 Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à disposition votre sélection de caractères, en définissant des caractères distincts ou une séquence entière.
 
 >[!CAUTION]
+>
 Si vous ajoutez vos caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, redéfinissez ces caractères dans votre sélection.
 
 ### Définition d’un caractère unique {#definesinglechar}
@@ -412,7 +413,7 @@ Si vous ajoutez vos caractères spéciaux, ils remplacent la sélection par déf
    * **Type** `String[]`
    * **Valeur** `specialchars`
 
-          (ou `String / *` si toutes les fonctions sont appliquées pour ce module externe)
+         (ou `String / *` si toutes les fonctions sont appliquées pour ce module externe)
 
 1. Sous `misctools`, créez un nœud destiné à contenir les configurations de caractères spéciaux :
 
@@ -452,14 +453,12 @@ Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s�
 1. Sous ce nœud (nommé en fonction de votre plage de caractères spéciaux), ajoutez les deux propriétés suivantes :
 
    * **Nom** `rangeStart`
-
-      **Type** `Long`
-      **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du premier caractère de la plage
+     **Type** `Long`
+     **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du premier caractère de la plage
 
    * **Nom** `rangeEnd`
-
-      **Type** `Long`
-      **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du dernier caractère de la plage
+     **Type** `Long`
+     **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du dernier caractère de la plage
 
 1. Enregistrez les modifications.
 
@@ -476,9 +475,11 @@ Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s�
 Les styles sont généralement appliqués au texte, mais un ensemble distinct de styles peut également être appliqué à un tableau ou à quelques cellules de tableau. Ces styles sont à la disposition des auteurs au niveau de la boîte du sélecteur de style dans la boîte de dialogue de propriétés de la cellule ou du tableau. Les styles sont disponibles lors de la modification d’un tableau dans un composant Texte (ou dérivé), et non dans le composant Tableau standard.
 
 >[!NOTE]
-Vous pouvez définir des styles pour les tableaux et les cellules pour l’IU classique uniquement.
+>
+Vous pouvez définir des styles pour les tableaux et les cellules uniquement pour l’IU classique.
 
 >[!NOTE]
+>
 La copie et le collage de tableaux dans ou depuis un composant d’éditeur de texte enrichi dépendent du navigateur. Il n’est pas pris en charge par défaut pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant d’éditeur de texte enrichi dans Mozilla Firefox dans les IU classique et tactile, la mise en page du tableau n’est pas conservée.
 
 1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/table`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
@@ -489,12 +490,14 @@ La copie et le collage de tableaux dans ou depuis un composant d’éditeur de t
    * **Valeur** `*`
 
    >[!NOTE]
+   >
    Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
+   >
    * **Type** `String[]`
+   >
    * **Valeurs** Un ou deux des éléments ci-dessous, au besoin :
-      * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
-      * `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
-
+   * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
+   * `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
 
 1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement de votre feuille de style](#locationofstylesheet) comme c’est le cas lors de la définition de [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
 1. Sous le nœud `table`, créez les nœuds suivants selon les besoins :
@@ -503,11 +506,11 @@ La copie et le collage de tableaux dans ou depuis un composant d’éditeur de t
 
       * **Nom** `tableStyles`
       * **Type** `cq:WidgetCollection`
+
    * Pour définir des styles pour des cellules individuelles (disponibles sous **[!UICONTROL Propriétés de la cellule]**) :
 
       * **Nom** `cellStyles`
       * **Type** `cq:WidgetCollection`
-
 
 1. Créez un nœud (sous le nœud `tableStyles` ou `cellStyles`, selon ce qui est approprié) pour représenter un style individuel :
 
@@ -521,12 +524,12 @@ La copie et le collage de tableaux dans ou depuis un composant d’éditeur de t
       * **Nom** `cssName`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (sans préfixe `.`, par exemple, `cssClass` au lieu de `.cssClass`)
+
    * Pour définir un texte descriptif à afficher dans le sélecteur pop-up,
 
       * **Nom** `text`
       * **Type** `String`
       * **Valeur** Texte à afficher dans la liste de sélection
-
 
 1. Enregistrez toutes les modifications.
 
@@ -555,6 +558,7 @@ Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe 
 Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. Pour la branche `/en/`, la vérification est effectuée pour l’anglais ; pour la branche `/de/`, pour l’allemand.
 
 >[!NOTE]
+>
 Le message « Échec de la vérification orthographique » s’affiche si le système tente d’effectuer une vérification pour une langue non installée.
 
 Une installation Experience Manager standard comprend les dictionnaires pour les langues suivantes :
@@ -563,6 +567,7 @@ Une installation Experience Manager standard comprend les dictionnaires pour le
 * Anglais britannique (en_gb)
 
 >[!NOTE]
+>
 Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
 Pour ajouter d’autres dictionnaires, le cas échéant, procédez comme suit.
@@ -571,14 +576,18 @@ Pour ajouter d’autres dictionnaires, le cas échéant, procédez comme suit.
 1. Sélectionnez la langue requise et téléchargez le fichier ZIP contenant les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
 
    >[!CAUTION]
+   >
    Seuls les dictionnaires au format `MySpell` pour OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers d’archive, il est recommandé de vérifier l’archive après son téléchargement.
 
 1. Recherchez les fichiers .aff et .dic. Conservez le nom du fichier en minuscules. Par exemple, `de_de.aff` et `de_de.dic`.
 1. Chargez les fichiers .aff et.dic dans le référentiel à l’emplacement `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
+>
 Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
+>
 Pour exécuter le vérificateur orthographique, appuyez/cliquez sur le bouton Vérificateur orthographique de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
+>
 Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
@@ -596,9 +605,9 @@ L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir que
 
 ## Configuration de la taille de tabulation {#tabsize}
 
-Lorsque le caractère de tabulation est enfoncé dans un texte, un nombre prédéfini d’espaces est inséré ; par défaut, il s’agit de trois espaces insécables et d’un espace.
+Lorsque vous appuyez sur le caractère de tabulation dans un texte, un nombre prédéfini d’espaces est inséré ; par défaut, il s’agit de trois espaces insécables et d’un espace.
 
-Pour définir la taille de tabulation :
+Pour définir la taille de la tabulation :
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/keys`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Sur le nœud `keys`, créez la propriété :
@@ -614,6 +623,7 @@ Pour définir la taille de tabulation :
 Lorsque la mise en retrait est activée (par défaut), vous pouvez définir la taille du retrait :
 
 >[!NOTE]
+>
 Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte. Elle n’affecte pas la mise en retrait des listes.
 
 1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/lists`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
@@ -646,11 +656,13 @@ Lors de l’ajout de liens dans [!DNL Experience Manager], vous pouvez définir 
    * **Type** `nt:unstructured`
 
    >[!NOTE]
+   >
    Le nœud `../items/text` possède la propriété :
+   >
    * **Nom** `xtype`
    * **Type** `String`
    * **Valeur** `richtext`
-
+   >
    L’emplacement du nœud `../items/text` peut varier en fonction de la structure de votre boîte de dialogue. Deux exemples sont `/apps/myProject>/components/text/dialog/items/text` et `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Sous `htmlRules`, créez un nœud.
@@ -665,27 +677,31 @@ Lors de l’ajout de liens dans [!DNL Experience Manager], vous pouvez définir 
       * **Nom** `cssInternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
+
    * Style CSS pour les liens externes
 
       * **Nom** `cssExternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
+
    * Tableau de **[!UICONTROL protocoles]** valides, dont les protocoles `https://`, `https://`, `file://`, `mailto:` et autres,
 
       * **Nom** `protocols`
       * **Type** `String[]`
       * **Valeurs** Un ou plusieurs protocoles
+
    * **defaultProtocol** (propriété de type **String**) : protocole à utiliser si l’utilisateur n’en a pas spécifié un explicitement.
 
       * **Nom** `defaultProtocol`
       * **Type** `String`
       * **Valeurs** Un ou plusieurs protocoles par défaut
+
    * Définition de la gestion de l’attribut cible d’un lien. Créez un nœud :
 
       * **Nom** `targetConfig`
       * **Type** `nt:unstructured`
 
-      Sur le nœud `targetConfig` : définissez les propriétés nécessaires :
+     Sur le nœud `targetConfig` : définissez les propriétés nécessaires :
 
       * Spécifiez le mode cible :
 
@@ -695,26 +711,21 @@ Lors de l’ajout de liens dans [!DNL Experience Manager], vous pouvez définir 
 
             * `auto` : signifie qu’une cible automatique est choisie
 
-               (spécifié par la propriété `targetExternal` pour les liens externes ou `targetInternal` pour les liens internes).
+              (spécifié par la propriété `targetExternal` pour les liens externes ou `targetInternal` pour les liens internes).
 
             * `manual` : non applicable dans ce contexte
             * `blank` : non applicable dans ce contexte
+
       * Cible des liens internes :
 
          * **Nom** `targetInternal`
          * **Type** `String`
          * **Valeur** Cible des liens internes (utilisée uniquement lorsque le mode est `auto`)
+
       * Cible des liens externes :
 
          * **Nom** `targetExternal`
          * **Type** `String`
          * **Valeur** Cible des liens externes (utilisé uniquement lorsque le mode est `auto`).
-
-
-
-
-
-
-
 
 1. Enregistrez toutes les modifications.

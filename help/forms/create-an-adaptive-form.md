@@ -7,15 +7,15 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e302d24261f24697aeb5f97b99ffee1fc2135959
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2783'
-ht-degree: 90%
+source-wordcount: '2780'
+ht-degree: 87%
 
 ---
 
 
-# Créer un formulaire adaptatif {#creating-an-adaptive-form}
+# Création d’un formulaire adaptatif {#creating-an-adaptive-form}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -53,7 +53,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 * **Autorisations** : ajoutez vos utilisateurs et utilisatrices au groupe [!DNL forms-users]. Les membres du groupe [!DNL forms-users] ont les autorisations de créer un formulaire adaptatif. Pour obtenir la liste détaillée des groupes d’utilisateurs spécifiques aux formulaires, voir [Groupes et autorisations](forms-groups-privileges-tasks.md).
 
 
-## Créer un formulaire adaptatif {#create-an-adaptive-form-core-components}
+## Création d’un formulaire adaptatif {#create-an-adaptive-form-core-components}
 
 1. Connectez-vous à [!DNL Experience Manager Forms] Instance de création. Il peut s’agir d’une instance cloud ou d’une instance de développement local.
 
@@ -80,7 +80,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
    * **Modèle de données de formulaire** : un [modèle de données de formulaire](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
 
-   * **Schéma JSON** : [schéma JSON](adaptive-form-json-schema-form-model.md), notre formulaire adaptatif basé sur les composants principaux, permet une intégration transparente au système back-end de votre entreprise en vous permettant d’associer un schéma JSON, qui représente la structure des données générées ou consommées. Cette association permet aux créateurs et créatrices d’ajouter dynamiquement du contenu au formulaire adaptatif à l’aide des éléments du schéma. Les éléments du schéma sont facilement accessibles dans l’onglet Objets de modèle de données de l’explorateur de contenu au cours du processus de création. Tous les champs sont automatiquement ajoutés à tout nouveau formulaire adaptatif.
+   * **Schéma JSON** : [schéma JSON](adaptive-form-json-schema-form-model.md), notre formulaire adaptatif basé sur les composants principaux, permet une intégration transparente au système back-end de votre entreprise en vous permettant d’associer un schéma JSON, qui représente la structure des données générées ou consommées. Cette association permet aux créateurs et créatrices d’ajouter dynamiquement du contenu au formulaire adaptatif à l’aide des éléments du schéma. Les éléments du schéma sont facilement accessibles dans l’onglet Objets de modèle de données de l’explorateur de contenu au cours du processus de création, et tous les champs sont automatiquement ajoutés à tout nouveau formulaire adaptatif.
 
    Par défaut, tous les champs du schéma JSON associé sont automatiquement sélectionnés et convertis en composants de formulaire adaptatif correspondants, ce qui simplifie le processus de création. L’assistant vous permet, en outre, de sélectionner les champs à inclure dans le formulaire adaptatif au moyen de cases à cocher.
 
@@ -111,7 +111,7 @@ Désormais, vous pouvez faire glisser et déposer le [Composants principaux de F
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les propriétés.
 
->[!TAB Création d’un Forms adaptatif avec des composants de base]
+>[!TAB Création d’un Forms adaptatif avec des composants Foundation]
 
 Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants :
 
@@ -126,7 +126,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
    * **Modèle statique** : il s’agit de modèles hérités qui ne sont recommandés que pour les clients effectuant la migration depuis des installations Adobe Managed Services (AMS) et AEM Forms On-Premise (AEM 6.5 Forms ou version antérieure). Ils vous permettent de continuer à utiliser votre investissement existant dans des modèles statiques. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
 
 
-## Créer un formulaire adaptatif {#create-an-adaptive-form-foundation-components}
+## Création d’un formulaire adaptatif {#create-an-adaptive-form-foundation-components}
 
 1. Accédez à l’instance d’auteur [!DNL Experience Manager Forms]. Il peut s’agir d’une instance cloud ou d’une instance de développement local.
 
@@ -154,7 +154,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
    * **Modèle de données de formulaire** : un [modèle de données de formulaire](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
 
-   * **Schéma JSON** : [le schéma JSON](adaptive-form-json-schema-form-model.md) représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets de modèle de données de l’explorateur de contenu lors de la création de formulaires adaptatifs et tous les champs sont également ajoutés au formulaire adaptatif nouvellement créé.
+   * **Schéma JSON** : [le schéma JSON](adaptive-form-json-schema-form-model.md) représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets de modèle de données de l’explorateur de contenu lors de la création d’un Forms adaptatif et tous les champs sont également ajoutés au formulaire adaptatif nouvellement créé.
 
    Par défaut, tous les champs du modèle de données sont sélectionnés. Lorsque vous créez le formulaire adaptatif, tous les champs de modèle de données sélectionnés sont convertis en composants de formulaire adaptatif correspondants. L’assistant vous fournit des cases à cocher pour sélectionner uniquement les champs qui doivent être inclus dans le formulaire adaptatif.
 
@@ -178,7 +178,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
    * **[!UICONTROL Nom :]** indique le nom du formulaire. Un nœud portant le nom spécifié est créé dans le référentiel. Lorsque vous commencez à saisir un titre, la valeur du champ Nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ Nom ne peut contenir que des caractères alphanumériques, des traits d’union et des traits de soulignement. Toutes les entrées non valides sont remplacées par un trait d’union.
    * **[!UICONTROL Chemin d’accès :]** indique l’emplacement d’enregistrement du formulaire adaptatif. Vous pouvez enregistrer le formulaire adaptatif directement sur `/content/dam/formsanddocuments` ou créer un dossier tel que `/content/dam/formsanddocuments/adaptiveforms` pour enregistrer un formulaire adaptatif. Assurez-vous de créer le dossier avant de l’utiliser dans le chemin d’accès. Le champ **[!UICONTROL Chemin d’accès]** ne crée pas de dossier automatiquement.
 
-1. Appuyez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et s’ouvre dans l’éditeur de formulaires adaptatifs. L’éditeur affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé selon vos besoins.
+1. Appuyez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et s’ouvre dans l’éditeur de formulaires adaptatifs. L’éditeur affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé en fonction des besoins.
 
    En fonction du type de formulaire adaptatif, les éléments de formulaire présents dans le <!--XFA form template, XML schema or --> schéma JSON ou le modèle de données de formulaire associé sont affichés dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’**[!UICONTROL explorateur de contenu]** dans la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
 
@@ -271,7 +271,7 @@ Vous pouvez également modifier les propriétés du modèle de formulaire à par
 
 >[!MORELIKETHIS]
 >
->* [Création d’un formulaire adaptatif dans une page AEM Sites ou un fragment d’expérience](create-or-add-an-adaptive-form-to-aem-sites-page.md)
+>* [Créer un formulaire adaptatif dans une page AEM Sites ou un fragment d’expérience](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 >* [Création d’un thème Forms adaptatif personnalisé](using-themes-in-core-components.md)
 >* [Configuration des actions d’envoi pour un formulaire](configuring-submit-actions.md)
 >* [Composants principaux des formulaires adaptatifs disponibles](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)

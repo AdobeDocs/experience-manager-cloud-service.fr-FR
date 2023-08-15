@@ -4,10 +4,10 @@ description: Découvrez comment réutiliser du contenu avec les puissantes fonct
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2719'
-ht-degree: 88%
+source-wordcount: '2714'
+ht-degree: 85%
 
 ---
 
@@ -114,14 +114,14 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Créer un site** (**Sites**)
 
-   * MSM vous aide à gérer plusieurs sites web qui partagent du contenu commun. Par exemple, les sites web sont souvent offerts aux audiences internationales de sorte que la majeure partie du contenu soit commun à tous les pays, avec un sous-ensemble du contenu spécifique à chaque pays. MSM vous permet de [créer des Live Copies qui mettent automatiquement à jour un ou plusieurs sites en fonction de votre site source](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Cela vous permet également d’appliquer une structure de base commune, d’utiliser le contenu commun dans tous les sites, de conserver la même apparence et de concentrer les efforts sur la gestion du contenu qui diffère réellement d’un site à l’autre. Créer un site de la manière suivante :
+   * MSM vous aide à gérer plusieurs sites web qui partagent du contenu commun. Par exemple, les sites web sont souvent offerts aux audiences internationales de sorte que la majeure partie du contenu soit commun à tous les pays, avec un sous-ensemble du contenu spécifique à chaque pays. MSM vous permet de [créer des Live Copies qui mettent automatiquement à jour un ou plusieurs sites en fonction de votre site source ;](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Cela vous permet également d’appliquer une structure de base commune, d’utiliser le contenu commun dans tous les sites, de conserver la même apparence et de concentrer les efforts sur la gestion du contenu qui diffère réellement d’un site à l’autre. Créer un site de la manière suivante :
       * requiert une configuration de plan directeur prédéfinie pour spécifier la source ;
       * crée une Live Copy de la source (prédéfinie).
       * Fournit à l’utilisateur l’accès **Déploiement** bouton .
 
 * **Créer une Live Copy** (**Sites**)
 
-   * MSM vous permet de [créer une Live Copy ad hoc (unique) d’une page ou d’une sous-branche spécifique d’un site web](creating-live-copies.md#creating-a-live-copy-of-a-page). Par exemple, vous pouvez dupliquer une sous-branche pour fournir des informations sur la nouvelle version d’un produit. Créer une Live Copy de la manière suivante :
+   * MSM vous permet de [créer une Live Copy ad hoc (ponctuelle) d’une page ou sous-branche individuelle d’un site web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Par exemple, la duplication d’une sous-branche afin de fournir des informations sur une nouvelle version/mise à jour d’un produit. Créer une Live Copy de la manière suivante :
       * crée une Live Copy ad hoc (aucune configuration de plan directeur requise) ;
       * peut être utilisé pour créer (immédiatement) une Live Copy pour une page ou une branche.
       * Nécessite de **Synchroniser** (ne fournit pas le bouton **Déployer**).
@@ -136,11 +136,11 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Aperçu de la Live Copy** (**Sites**)
 
-   * Cette console vous permet [d’afficher et de gérer votre plan directeur et ses Live Copies.](live-copy-overview.md)
+   * Cette console vous permet de : [afficher et gérer votre plan directeur et ses Live Copies ;](live-copy-overview.md)
 
 * **Plans directeurs** (**Outils** – **Sites**)
 
-   * Cette console vous permet de [créer et de gérer vos configurations de plan directeur.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Cette console vous permet de : [créez et gérez vos configurations de plan directeur.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
@@ -245,7 +245,7 @@ Une Live Copy est appelée Live Copy empilée lorsqu’elle est créée en tan
 
 ### Source, plans directeurs et configurations de plan directeur {#source-blueprints-and-blueprint-configurations}
 
-N’importe quelle page ou branche de pages peut être utilisée comme source d’une Live Copy. Toutefois, MSM vous permet également de définir une configuration de plan directeur qui spécifie un chemin d’accès source. Les avantages liés à l’utilisation d’une configuration de plan directeur sont les suivants :
+N’importe quelle page ou branche de pages peut être utilisée comme source d’une Live Copy. Cependant, MSM vous permet également de définir une configuration de plan directeur qui spécifie un chemin source. Les avantages liés à l’utilisation d’une configuration de plan directeur sont les suivants :
 
 * Permet à l’auteur d’utiliser l’option **Déployer** sur un plan directeur. C’est-à-dire envoyer explicitement les modifications aux Live Copies qui héritent de ce plan.
 * Permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.

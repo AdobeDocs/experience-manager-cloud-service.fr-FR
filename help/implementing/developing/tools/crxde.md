@@ -2,10 +2,10 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 89%
+source-wordcount: '1685'
+ht-degree: 86%
 
 ---
 
@@ -40,7 +40,7 @@ L’interface utilisateur CRXDE Lite comporte de nombreuses parties et de nombr
 
 ### Barre de commutation supérieure {#top-switcher-bar}
 
-La barre de commutation supérieure permet de basculer rapidement entre CRXDE Lite, le [Gestionnaire de package.](package-manager.md)
+La barre de sélecteur supérieure vous permet de basculer rapidement entre CRXDE Lite et [Gestionnaire de modules.](package-manager.md)
 
 ### Widget de chemin de nœud {#node-path-widget}
 
@@ -60,7 +60,7 @@ Filtre de navigation dans l’arborescence (l’icône en forme de paire de jume
 
 ### Volet de modification {#edit-pane}
 
-Le **Volet Modifier** permet d’afficher le contenu du fichier actuellement sélectionné dans le référentiel. Chaque fichier ouvert est représenté sous la forme de son propre onglet dans le volet.
+La variable **Volet Modifier** permet d’afficher le contenu du fichier actuellement sélectionné dans le référentiel. Chaque fichier ouvert est représenté sous la forme de son propre onglet dans le volet.
 
 L’onglet **Accueil** permet de rechercher du contenu et/ou de la documentation et d’accéder à la documentation destinée aux développeurs et à l’assistance Adobe.
 
@@ -144,7 +144,7 @@ Le **bouton Renommer** renomme le nœud sélectionné.
 
 ### Mixins {#mixins-button}
 
-Le bouton **Mixins** permet d’ajouter des types de mixin au type de nœud. Les types de mixin sont principalement utilisés pour ajouter des fonctions avancées.
+La variable **Bouton Mixins** vous permet d’ajouter des types de mixin au type de noeud. Les types de mixin sont principalement utilisés pour ajouter des fonctions avancées.
 
 ### Outils {#tools-button}
 
@@ -192,7 +192,7 @@ Vous pouvez désormais adapter le nœud à vos besoins en modifiant les proprié
 >
 La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
 >
-La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un noeud, vérifiez si la structure de contenu est valide (par exemple, vous ne pouvez pas créer une `nt:unstructured` noeud en tant qu’enfant de `nt:folder` ).
+La validation du fait que le noeud nouvellement créé est autorisé par le type de noeud du noeud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un noeud, vérifiez si la structure de contenu est valide (vous ne pouvez pas créer un `nt:unstructured` noeud en tant qu’enfant de `nt:folder` ).
 
 ## Création d’une propriété {#creating-a-property}
 

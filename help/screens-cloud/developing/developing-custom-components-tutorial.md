@@ -2,9 +2,9 @@
 title: Développement d’un composant personnalisé pour Screens as a Cloud Service
 description: Le tutoriel suivant décrit les étapes à suivre pour créer un composant personnalisé pour AEM Screens. AEM Screens réutilise de nombreux modèles de conception et technologies existants d’autres produits AEM. Ce tutoriel met en évidence les différences et les considérations spéciales lors du développement pour AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2107'
 ht-degree: 72%
 
 ---
@@ -69,7 +69,7 @@ Le code source d’un projet Screens est généralement géré sous la forme d�
 
    Représentation du code ui.apps dans CRXDE Lite
 
-   Le **`helloworld`** n’est qu’un espace réservé. Au cours du tutoriel, une fonctionnalité est ajoutée pour permettre à un auteur de mettre à jour le message affiché par le composant.
+   La variable **`helloworld`** n’est qu’un espace réservé. Au cours du tutoriel, une fonctionnalité est ajoutée pour permettre à un auteur de mettre à jour le message affiché par le composant.
 
 1. Le package **screens-weretail-run.ui.content** installe le code sous :
 
@@ -134,7 +134,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
    1. **Production**: Mode Aperçu ou Publication (wcmmode=disabled)
    1. **Modifier** : utilisé pour tous les autres modes de création, c’est-à-dire éditer, concevoir, échafauder, développeur...
 
-   `helloworld.html`agit comme un commutateur, en vérifiant quel mode de création est principal et en redirigeant vers un autre script HTL. Une convention commune utilisée par les composants Screens consiste à utiliser un script `edit.html` pour le mode d’édition et un script `production.html` pour le mode de production.
+   `helloworld.html`agit comme un commutateur, en vérifiant quel mode de création est actif et en redirigeant vers un autre script HTL. Une convention commune utilisée par les composants Screens consiste à utiliser un script `edit.html` pour le mode d’édition et un script `production.html` pour le mode de production.
 
 1. Sous `/apps/weretail-run/components/content/helloworld`, créez un fichier appelé `production.html.`
 
@@ -255,7 +255,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
    </jcr:root>
    ```
 
-   Le `textfield` pour que le message soit enregistré dans une propriété nommée `message` et que la variable `numberfield` pour que la durée soit enregistrée dans une propriété nommée `duration`. Ces deux propriétés sont toutes deux référencées dans `/apps/weretail-run/components/content/helloworld/production.html` par HTL en tant que `${properties.message}` et `${properties.duration}`.
+   La variable `textfield` pour que le message soit enregistré dans une propriété nommée `message` et que la variable `numberfield` pour que la durée soit enregistrée dans une propriété nommée `duration`. Ces deux propriétés sont toutes deux référencées dans `/apps/weretail-run/components/content/helloworld/production.html` par HTL en tant que `${properties.message}` et `${properties.duration}`.
 
    ![Hello World - Boîte de dialogue terminée](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -265,7 +265,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
 
 Les bibliothèques côté client offrent un mécanisme d’organisation et de gestion des fichiers CSS et JavaScript nécessaires à une mise en œuvre d’AEM.
 
-Les composants AEM Screens sont rendus différemment en mode d’édition et en mode d’aperçu/de production. Deux bibliothèques clientes sont créées : l’une pour le mode d’édition, l’autre pour le mode d’aperçu/de production.
+Les composants AEM Screens sont rendus différemment en mode d’édition et en mode d’aperçu/de production. Deux bibliothèques clientes sont créées : une pour le mode d’édition et une pour l’aperçu/la production.
 
 1. Création de dossier pour les bibliothèques côté client pour le composant Hello World.
 
@@ -427,7 +427,7 @@ Le composant Hello World est destiné à être utilisé sur un canal de séquenc
 
 1. Basculez le mode Page vers le mode **Conception.**
 
-   1. Cliquez sur le bouton **clé à molette** Icône dans le système de paragraphes (parsys) permettant de configurer les composants autorisés.
+   1. Cliquez sur le bouton **clé** Icône dans le système de paragraphes (parsys) afin de pouvoir configurer les composants autorisés.
 
    1. Sélectionnez le groupe **Screens** et le groupe **We Retail Run - Contenu**.
 

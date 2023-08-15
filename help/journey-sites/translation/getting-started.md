@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 88%
+source-wordcount: '1399'
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ Un certain nombre d’exigences s’imposent avant de vous lancer dans la traduc
 
 >[!TIP]
 >
->Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Par conséquent, revenez à cette page une fois l’opération terminée.
+>Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Une fois terminé, revenez à cette page.
 
 ### Outils {#tools}
 
@@ -93,7 +93,7 @@ Pour accéder à la console Sites, procédez comme suit :
 
 ### Éditeur de page {#page-editor}
 
-La console Sites vous permet de parcourir votre contenu et offre un aperçu de sa structure. Pour afficher les détails d’une page, vous devez utiliser l’éditeur Sites.
+La console Sites vous permet de parcourir votre contenu et fournit un aperçu de sa structure. Pour afficher les détails d’une page, vous devez utiliser l’éditeur Sites.
 
 Pour modifier votre page :
 

@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3084'
-ht-degree: 93%
+source-wordcount: '3080'
+ht-degree: 92%
 
 ---
 
@@ -82,8 +82,8 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 
-* L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
-* L’API REST Assets permet de créer et de modifier des fragments de contenu (et d’autres ressources).
+* L’API GraphQL vous permet de créer des demandes d’accès et de diffusion de fragments de contenu.
+* L’API REST Assets vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Ou voir [ressources supplémentaires](#additional-resources) pour plus d’informations.
 
@@ -143,7 +143,7 @@ Pour la réussite d’un projet, il est important de définir clairement non seu
 
 ### Portée {#scope}
 
-Il est très important de définir clairement la portée du projet. La portée définit les critères d’acceptation et permet d’établir une définition de l’état « terminé ».
+Il est très important de définir clairement la portée du projet. La portée informe les critères d’acceptation et vous permet d’établir une définition de &quot;terminé&quot;.
 
 La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM découplé ? » En règle générale, la réponse doit être que vous disposez ou aurez à l’avenir une application d’expérience que vous avez créée avec vos propres outils de développement et non avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
 
@@ -181,7 +181,7 @@ Créez un plan pour la traduction de contenu dont vous avez besoin.
 
 Clarifiez la situation concernant votre workflow de mise à jour de contenu. Quel est le processus d’approbation que le système doit prendre en charge ? AEM workflows peuvent-ils être utilisés pour automatiser ce processus ?
 
-Notez que votre [hiérarchie du contenu](#content-hierarchy) peut être utilisé pour faciliter la traduction.
+Notez que la variable [hiérarchie du contenu](#content-hierarchy) peut être utilisé pour faciliter la traduction.
 
 Consultez la section des [ressources supplémentaires](#additional-resources) pour obtenir de la documentation supplémentaire sur les workflows AEM et les outils de traduction, y compris des liens vers le parcours de traduction découplée AEM.
 
@@ -259,7 +259,7 @@ Pour comprendre le trafic et les schémas de trafic, commencez par recueillir de
 
 #### Fréquence de mise à jour {#update-frequency}
 
-Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Il est important de comprendre cela pour pouvoir affiner les configurations du réseau de diffusion de contenu (CDN) et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
+Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Comprendre cela est important pour pouvoir affiner les configurations du réseau de diffusion de contenu et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
 
 * Certains types de contenu doivent-ils expirer au-delà d’une certaine période ?
 * Certains éléments sont-ils spécifiques à l’utilisateur, donc sans pouvoir être mis en cache ?

@@ -2,9 +2,9 @@
 title: Variations – création de contenu de fragment (Ressources - Fragments de contenu)
 description: Découvrez comment les variations peuvent rendre votre contenu découplé dans AEM encore plus flexible en vous permettant de créer du contenu pour un fragment, puis de créer des variantes de ce contenu selon vos besoins.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: '2435'
 ht-degree: 77%
 
 ---
@@ -112,7 +112,7 @@ Le format peut être sélectionné dans l’éditeur plein écran.
 
 ### Texte enrichi {#rich-text}
 
-La modification de texte enrichi permet de mettre en forme :
+L&#39;édition de texte enrichi permet de mettre en forme :
 
 * Gras
 * Italique
@@ -147,7 +147,7 @@ Le texte brut permet de saisir du contenu de manière rapide, sans formatage ni 
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentation.
+>Pour plus d’informations, voir [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) la documentation.
 
 Vous pouvez ainsi mettre en forme votre texte à l’aide de Markdown. Vous pouvez définir :
 
@@ -196,7 +196,7 @@ Vous pouvez alors créer un fragment en procédant comme suit :
 1. sélectionnez **Créer** ;
 1. et sélectionnez enfin :
    1. **Terminé**:
-      * renvoie (au fragment d’origine)
+      * renvoie (au fragment original)
       * référence le nouveau fragment ;
    1. **Ouvrir**:
       * référence le nouveau fragment ;
@@ -322,7 +322,7 @@ Les annotations :
 
 Pour simplifier le processus de création de fragments de contenu, vous pouvez ajouter directement des [Ressources](/help/assets/manage-digital-assets.md) (images) au fragment.
 
-Elles sont ajoutées à la séquence de paragraphes du fragment sans mise en forme ; le formatage peut être effectué lorsque la variable [fragment utilisé/référencé sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Elles sont ajoutées à la séquence de paragraphes du fragment sans aucune mise en forme ; le formatage peut être effectué lorsque la fonction [fragment utilisé/référencé sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >

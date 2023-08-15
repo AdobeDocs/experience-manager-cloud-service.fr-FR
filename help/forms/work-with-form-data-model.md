@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4140'
-ht-degree: 75%
+source-wordcount: '4137'
+ht-degree: 74%
 
 ---
 
@@ -96,7 +96,7 @@ Vous pouvez ensuite ajouter des propriétés enfants dans les objets de modèle 
 
 ### Ajout des propriétés enfant {#child-properties}
 
-L’éditeur de modèle de données de formulaire vous permet de créer des propriétés enfant dans un objet de modèle de données. Une fois créée, la propriété n’est liée à aucune propriété d’une source de données. Vous pouvez ensuite lier la propriété enfant à une autre propriété dans l’objet de modèle de données conteneur.
+L’éditeur de modèle de données de formulaire vous permet de créer des propriétés enfants dans un objet de modèle de données. Une fois créée, la propriété n’est liée à aucune propriété d’une source de données. Vous pouvez ensuite lier la propriété enfant à une autre propriété dans l’objet de modèle de données conteneur.
 
 Pour créer une propriété enfant :
 
@@ -115,7 +115,7 @@ Après avoir créé des objets et des propriétés de modèle de données, vous 
 
 Lorsque les sources de données que vous souhaitez intégrer au modèle de données de formulaire sont disponibles, vous pouvez les ajouter au modèle de données de formulaire, comme indiqué dans la section [Mise à jour des sources de données](create-form-data-models.md#update). Ensuite, procédez comme suit pour lier les objets et propriétés de modèle de données non liés :
 
-1. Dans le modèle de données de formulaire, sélectionnez la source de données non liée que vous souhaitez lier à une source de données.
+1. Dans le modèle de données de formulaire, sélectionnez la source de données non liée à lier à une source de données.
 1. Appuyez sur **[!UICONTROL Modifier les propriétés]**.
 1. Dans le **[!UICONTROL Modifier les propriétés]** Appuyez sur l’icône de navigation en regard du volet **[!UICONTROL Liaison]** champ . Elle ouvre la fenêtre **[!UICONTROL Sélectionner un objet]** qui répertorie les sources de données ajoutées dans le modèle de données de formulaire.
 
@@ -291,11 +291,11 @@ Vous pouvez modifier les propriétés des objets de modèle de données, leurs p
 Pour modifier les propriétés :
 
 1. Cochez la case en regard d’un objet de modèle de données, d’une propriété ou d’un service dans le modèle de données de formulaire.
-1. Appuyez sur **[!UICONTROL Modifier les propriétés]**. Le **[!UICONTROL Modifier les propriétés]** Le volet correspondant à l’objet de modèle, la propriété ou le service sélectionné s’ouvre.
+1. Appuyez sur **[!UICONTROL Modifier les propriétés]**. La variable **[!UICONTROL Modifier les propriétés]** Le volet correspondant à l’objet de modèle, la propriété ou le service sélectionné s’ouvre.
 
-   * **[!UICONTROL Objet de modèle de données]**: Spécifiez les services de lecture et d’écriture et modifiez les arguments.
-   * **[!UICONTROL Propriété]**: Spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé Principale de l’objet de modèle de données.
-   * **[!UICONTROL Service]**: Spécifiez l’objet de modèle d’entrée, le type de sortie et les arguments du service. Pour un service Get, vous pouvez spécifier s’il doit renvoyer un tableau .
+   * **[!UICONTROL Objet de modèle de données]**: spécifiez les services de lecture et d’écriture et modifiez les arguments.
+   * **[!UICONTROL Propriété]**: spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé primaire de l’objet de modèle de données.
+   * **[!UICONTROL Service]**: spécifiez l’objet de modèle d’entrée, le type de sortie et les arguments du service. Pour un service Get, vous pouvez spécifier s’il doit renvoyer un tableau .
 
      ![edit-properties-service](assets/edit-properties-service.png)
 
@@ -387,7 +387,7 @@ De même, vous pouvez choisir un service `GET LINK` et configurer ses propriét�
 
 ## Génération et modification des exemples de données {#sample}
 
-L’éditeur de modèles de données de formulaire vous permet de générer des exemples de données pour toutes les propriétés d’objet de modèle de données, y compris les propriétés calculées, dans un modèle de données de formulaire. Il s’agit d’un ensemble de valeurs aléatoires conformes au type de données configuré pour chaque propriété. Vous pouvez également modifier et enregistrer des données qui sont conservées même si vous régénérez les données d’exemple.
+L’éditeur de modèle de données de formulaire vous permet de générer des données d’exemple pour toutes les propriétés d’objet de modèle de données, y compris les propriétés calculées, dans un modèle de données de formulaire. Il s’agit d’un ensemble de valeurs aléatoires conformes au type de données configuré pour chaque propriété. Vous pouvez également modifier et enregistrer des données qui sont conservées même si vous régénérez les données d’exemple.
 
 Pour générer et modifier des exemples de données, procédez comme suit :
 
@@ -425,7 +425,7 @@ L’indicateur peut être défini sur l’une des valeurs suivantes :
 
 * **FULL** : FDM effectue la validation en fonction de toutes les contraintes.
 * **OFF** : aucune validation.
-* **BASIC**: FDM effectue la validation en fonction de contraintes &quot;requises&quot; et &quot;nullable&quot;.
+* **BASIC**: FDM effectue la validation en fonction des contraintes &quot;requises&quot; et &quot;nullable&quot;.
 
 Si aucune valeur n’est définie pour l’indicateur `ValidationOptions`, la validation **BASIC** est effectuée sur les données d’entrée.
 

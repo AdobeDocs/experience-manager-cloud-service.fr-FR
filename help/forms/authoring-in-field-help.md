@@ -1,26 +1,22 @@
 ---
-title: Créer une aide contextuelle pour les champs de formulaire
-seo-title: Authoring in-context help for form fields
-description: AEM Forms permet d’ajouter une aide contextuelle aux champs et aux panneaux des formulaires adaptatifs sous forme de texte ou de contenu multimédia enrichi, comme des vidéos.
-seo-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
-uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
+title: Création d’une aide contextuelle pour les champs de formulaire
+description: AEM Forms vous permet d’ajouter une aide contextuelle aux champs et aux panneaux de formulaire adaptatif sous forme de texte ou de contenu multimédia enrichi, y compris des vidéos.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 58%
+source-wordcount: '365'
+ht-degree: 53%
 
 ---
 
 
-# Créer une aide contextuelle pour les champs de formulaire {#authoring-in-context-help-for-form-fields}
+# Création d’une aide contextuelle pour les champs de formulaire{#authoring-in-context-help-for-form-fields}
 
 ## Présentation {#introduction}
 
-Dans certains cas, les utilisateurs finaux qui remplissent un formulaire ne sont pas toujours sûrs des informations qu’ils doivent indiquer dans un champ spécifique. À cet effet, les formulaires adaptatifs permettent d’ajouter du texte ou une aide contextuelle riche à un champ de formulaire. Cela permet d’améliorer l’expérience de remplissage du formulaire et d’éviter toute ambiguïté pour les utilisateurs finaux.
+Dans certains cas, les utilisateurs finaux qui remplissent un formulaire ne sont pas toujours sûrs des informations qu’ils doivent indiquer dans un champ spécifique. À cet effet, les formulaires adaptatifs permettent d’ajouter du texte ou une aide contextuelle riche à un champ de formulaire. Cela contribue à améliorer l’expérience de remplissage du formulaire et évite toute ambiguïté pour les utilisateurs finaux.
 
 Cet article explique comment les auteurs de formulaires peuvent ajouter une aide contextuelle lors de la création d’un Forms adaptatif.
 

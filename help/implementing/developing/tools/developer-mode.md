@@ -4,10 +4,10 @@ seo-title: Developer Mode
 description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 79%
+source-wordcount: '527'
+ht-degree: 90%
 
 ---
 
@@ -29,13 +29,13 @@ Ils aident les développeurs à :
 >
 >Le mode Développeur :
 >
->* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
+>* n’est pas disponible sur les appareils mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
 >  * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
 >* n’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
 
-## Ouverture du mode Développeur {#opening-developer-mode}
+## Ouvrir le mode Développeur {#opening-developer-mode}
 
-Le mode Développeur est mis en oeuvre sous la forme d’un panneau latéral dans l’éditeur de page. Pour ouvrir le panneau, sélectionnez **Développeur** dans le sélecteur de mode au niveau de la barre d’outils de l’éditeur de page :
+Le mode Développeur est implémenté sous la forme d’un panneau latéral dans l’éditeur de page. Pour ouvrir le panneau, sélectionnez **Développeur** dans le sélecteur de mode au niveau de la barre d’outils de l’éditeur de page :
 
 ![Ouverture du mode Développeur](assets/developer-mode.png)
 
@@ -51,10 +51,10 @@ Le panneau est divisé en deux onglets :
 Il présente une arborescence de composants qui :
 
 * décrit la chaîne de composants et de modèles rendus sur la page. L’arborescence peut être développée pour afficher le contexte dans la hiérarchie.
-* Affiche le temps de calcul côté serveur nécessaire au rendu du composant.
-* Permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant. par exemple :
-   * Chemin du référentiel
-   * Liens vers les scripts (accessibles en CRXDE Lite)
+* affiche le temps de calcul côté serveur nécessaire au rendu du composant ;
+* Permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, par exemple :
+   * le chemin du référentiel ;
+   * les liens vers les scripts (accessibles dans CRXDE Lite).
    * Les informations sur le composant, comme indiqué dans la section [Console des composants](/help/sites-cloud/authoring/features/components-console.md)
 * Les composants sélectionnés dans l’arborescence sont indiqués par une bordure bleue dans l’éditeur.
 

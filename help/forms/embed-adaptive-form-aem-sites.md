@@ -5,10 +5,10 @@ description: Vous pouvez utiliser le composant Forms adaptatif - Incorporer pour
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: df772533b5b8b55a80780d848e21b2432bea253c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3232'
-ht-degree: 24%
+source-wordcount: '3230'
+ht-degree: 36%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 24%
 
 AEM Forms permet aux développeurs et développeuses de formulaires d’incorporer facilement des formulaires adaptatifs dans une page AEM Sites ou dans une page web hébergée en dehors d’AEM. Le formulaire adaptatif incorporé est entièrement fonctionnel, et les utilisateurs et utilisatrices peuvent le remplir et l’envoyer sans quitter la page. Il permet à l’utilisateur ou à l’utilisatrice de rester dans le contexte des autres éléments de la page Web et d’interagir simultanément avec le formulaire. Ainsi, vos utilisateurs peuvent facilement remplir et envoyer des formulaires sans jamais quitter la page sur laquelle ils se trouvent. Cette intégration offre un moyen pratique de réutiliser le Forms adaptatif qu’il a déjà créé.
 
-Vous pouvez utiliser AEM éditeur de page pour incorporer rapidement plusieurs formulaires à vos pages AEM Sites. L’utilisation de l’éditeur de page AEM permet aux auteurs de contenu de créer des expériences de capture de données en toute transparence dans une page Sites à l’aide de la puissance des composants Forms adaptatif, notamment le comportement dynamique, les validations, l’intégration de données, ainsi que la génération d’un document d’enregistrement et l’automatisation des processus d’entreprise. Il vous permet également d’utiliser différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
+Vous pouvez utiliser AEM éditeur de page pour incorporer rapidement plusieurs formulaires à vos pages AEM Sites. L’utilisation de l’éditeur de page AEM permet aux auteurs de contenu de créer des expériences de capture de données en toute transparence dans une page Sites à l’aide de la puissance des composants Forms adaptatif, notamment le comportement dynamique, les validations, l’intégration de données, ainsi que la génération d’un document d’enregistrement et l’automatisation des processus d’entreprise. Il vous permet également d’utiliser différentes fonctionnalités des pages AEM Sites, telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
 
 Fourniture AEM Forms **[!UICONTROL Conteneur de formulaires adaptatifs]** et **[!UICONTROL Forms adaptatif - Incorporer (v2)]** composants. Vous pouvez utiliser **[!UICONTROL Forms adaptatif - Incorporer (v2)]** pour ajouter un formulaire adaptatif existant ou créer un formulaire à l’aide de l’ éditeur de Forms adaptatif , tandis que **[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer un formulaire dans un fragment d’expérience ou une page AEM Sites.
 
@@ -34,12 +34,12 @@ Fourniture AEM Forms **[!UICONTROL Conteneur de formulaires adaptatifs]** et **[
 
 ## Why embed an Adaptive Form in AEM Sites page or AEM Experience Fragment? 
 
-Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor allows you to create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
+Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
 
 * **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/features/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
 * **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By leveraging user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
 * **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
-* **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now allows you to reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
+* **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now lets you reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
 * **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/fundamentals/editing-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
@@ -68,7 +68,7 @@ Vous pouvez tirer pleinement parti de cette fonctionnalité en utilisant les opt
 
 * Lorsque vous créez ou ajoutez un formulaire à l’aide de la fonction **[!UICONTROL Forms adaptatif - Incorporer (v2)]** , les formulaires sont traduits et localisés à l’aide du flux de traduction AEM Forms. Dans ce cas, un seul formulaire est conservé et référencé dans toutes les copies de langue des pages Sites. **[!UICONTROL Forms adaptatif - Incorporer (v2)]** ne permet pas d’accéder aux différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
 
-* Lorsque vous utilisez la variable **[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer un formulaire, les formulaires sont traduits et localisés par le biais du flux de traduction AEM Sites. Pour chaque langue, une copie distincte (copie de langue) de la page de sites et des formulaires correspondants est générée. Lorsqu’un auteur de contenu modifie une règle dans un formulaire sur la page parente, les mêmes modifications doivent être effectuées dans toutes les copies de langue du formulaire. **[!UICONTROL Conteneur de formulaires adaptatifs]** vous permet également d’utiliser différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
+* Lorsque vous utilisez la variable **[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer un formulaire, les formulaires sont traduits et localisés par le biais du flux de traduction AEM Sites. Pour chaque langue, une copie distincte (copie de langue) de la page du site et des formulaires correspondants est générée. Lorsqu’un auteur ou une autrice de contenu modifie une règle dans un formulaire sur la page parente, les mêmes modifications doivent être effectuées dans toutes les copies de langue du formulaire. **[!UICONTROL Conteneur de formulaires adaptatifs]** vous permet également d’utiliser différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
 
 
 ## Conditions requises pour incorporer un formulaire adaptatif dans une page AEM Sites ou dans un fragment d’expérience AEM {#before-you-start-embedding-an-adaptive-form}
@@ -92,45 +92,45 @@ Ajoutez la variable **Customheaderlibs** et **Customfooterlibs** bibliothèques 
 
 1. Accédez à et clonez vos [Référentiel AEM Cloud Service Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
 1. Ouvrez le dossier Référentiel Git AEM Cloud Service dans un éditeur de texte de plan. Par exemple, Microsoft® Visual Code.
-1. Ouvrez le `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` et ajoutez le code suivant au fichier :
+1. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` et ajoutez le code suivant au fichier :
 
-       &quot;
-       //Customheaderlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       &quot;
+       ```
+     //Customheaderlibs.html
+     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+     &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
+     &lt;/sly>
+     
+     ```
    
-1. Ouvrez le `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` et ajoutez le code suivant au fichier :
+1. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` et ajoutez le code suivant au fichier :
 
-       &quot;
-       
-       //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       &quot;
+       ```
+     
+     //customfooterlibs.html
+     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+     &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
+     &lt;/sly>
+     ```
    
-1. Ouvrez le `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` et ajoutez le code suivant au fichier :
+1. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` et ajoutez le code suivant au fichier :
 
-       &quot;
-       //Customheaderlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       &quot;
+       ```
+     //Customheaderlibs.html
+     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+     &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
+     &lt;/sly>
+     
+     ```
    
-1. Ouvrez le `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` et ajoutez le code suivant au fichier :
+1. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` et ajoutez le code suivant au fichier :
 
-       &quot;
-       
-       //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       &quot;
+       ```
+     
+     //customfooterlibs.html
+     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+     &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
+     &lt;/sly>
+     ```
    
 1. [Exécution du pipeline de déploiement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=fr) pour déployer les bibliothèques clientes dans votre environnement as a Cloud Service AEM.
 
@@ -141,8 +141,8 @@ Ajoutez la variable **Customheaderlibs** et **Customfooterlibs** bibliothèques 
 Pour activer **[!UICONTROL Forms adaptatif - Incorporer (v2)]** dans la stratégie du modèle, procédez comme suit :
 
 1. Ouvrez la page AEM Sites ou le fragment d’expérience à modifier. Pour ouvrir la page à modifier, sélectionnez-la, puis cliquez sur **[!UICONTROL Modifier]**.
-1. Ouvrez le modèle de votre page Sites ou Fragment d’expérience . Pour ouvrir le modèle, accédez au **[!UICONTROL Informations sur la page]** ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Modifier le modèle]**. Il ouvre le modèle correspondant dans l’éditeur de modèles.
-1. Dans la vue Structure, cliquez sur le **[!UICONTROL Stratégie]** ![Stratégie](/help/forms/assets/Smock_FeedManagement_18_N.svg) dans la barre de menus. Dans le **[!UICONTROL Composants autorisés]** et sélectionnez la variable **[!UICONTROL Forms adaptatif - Incorporer (v2)]**  sous la case **[Nom du projet AEM Archetype] - Formulaire adaptatif**.
+1. Ouvrez le modèle de votre page Sites ou Fragment d’expérience. Pour ouvrir le modèle, accédez aux **[!UICONTROL Informations sur la page]** ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Modifier le modèle]**. Cela ouvre le modèle correspondant dans l’éditeur de modèles.
+1. Dans la vue Structure, cliquez sur l’icône **[!UICONTROL Politique]** ![Politique](/help/forms/assets/Smock_FeedManagement_18_N.svg) dans la barre de menus. Dans le **[!UICONTROL Composants autorisés]** et sélectionnez la variable **[!UICONTROL Forms adaptatif - Incorporer (v2)]**  sous la case **[Nom du projet AEM Archetype] - Formulaire adaptatif**.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
@@ -228,22 +228,22 @@ Ensuite, vous pouvez [Définition de l’action Envoyer](/help/forms/configuring
 
 ### Convertir un formulaire de la page AEM Sites en fragment d’expérience {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
-Vous pouvez convertir un formulaire adaptatif existant dans un éditeur de page de sites en fragment d’expérience afin de réutiliser le formulaire sur plusieurs pages ou sites.
+Vous pouvez convertir un formulaire adaptatif existant dans un éditeur de page d’AEM Sites en fragment d’expérience afin de réutiliser le formulaire sur plusieurs pages ou sites.
 
-Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’expérience :
+Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’expérience :
 
-1. Ouvrez la page AEM Sites contenant le formulaire adaptatif (dans le composant Conteneur de Forms adaptatif) en mode d’édition.
-1. Ouvrez l’arborescence de contenu, puis sélectionnez la **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
-1. Dans la barre de menus, sélectionnez l’option ![Icône Convertir en variation de fragment d’expérience](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Icône de variation Convertir en fragment d’expérience .
+1. Ouvrez la page AEM Sites contenant le formulaire adaptatif (dans le composant de conteneur de formulaires adaptatifs) en mode d’édition.
+1. Ouvrez l’arborescence de contenu, puis sélectionnez le **[!UICONTROL conteneur de formulaires adaptatifs]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs formulaires adaptatifs. Sélectionnez donc avec soin le conteneur de formulaires adaptatifs approprié.
+1. Dans la barre de menu, sélectionnez l’![icône de conversion en variation de fragment d’expérience](/help/forms/assets/Smock_FilingCabinet_18_N.svg) icône de conversion en variation de frangment d’expérience.
    ![Cliquez sur le logo de l’armoire à fichiers pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’expérience.](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Une boîte de dialogue pour convertir le conteneur de formulaires adaptatifs en un nouveau fragment d’expérience ou l’ajouter à un fragment d’expérience existant s’affiche.
 1. Sur le **[!UICONTROL Convertir en fragment d’expérience]** de la boîte de dialogue variation, définissez les valeurs des options suivantes :
 
    * **Action :** Sélectionnez cette option pour créer un fragment d’expérience ou Ajouter à un fragment d’expérience existant.
-   * **Chemin d’accès parent :** Spécifiez le chemin du dossier dans lequel héberger le fragment d’expérience. Cette option est disponible uniquement pour la création d’un fragment d’expérience.
-   * **Modèle :** Spécifiez le chemin du modèle de fragment d’expérience. Si vous ne disposez pas d’un modèle de fragment d’expérience, [créer](/help/implementing/developing/extending/experience-fragments.md). Cette option est disponible uniquement pour l’ajout d’un formulaire adaptatif à un fragment d’expérience existant.
-   * **Titre du fragment :** Spécifiez le titre du fragment d’expérience. Le titre identifie de manière unique un fragment d’expérience.
+   * **Chemin d’accès parent :** spécifiez le chemin du dossier dans lequel héberger le fragment d’expérience. Cette option est disponible uniquement pour la création d’un fragment d’expérience.
+   * **Modèle :** spécifiez le chemin du modèle de fragment d’expérience. Si vous ne disposez pas d’un modèle de fragment d’expérience, [créer](/help/implementing/developing/extending/experience-fragments.md). Cette option est disponible uniquement pour l’ajout d’un formulaire adaptatif à un fragment d’expérience existant.
+   * **Titre du fragment :** spécifiez le titre du fragment d’expérience. Le titre identifie de manière unique un fragment d’expérience..
    * **Balises de fragment :** Spécifiez la balise du fragment d’expérience. La balise identifie de manière unique la catégorie d’un fragment d’expérience.
 
 ## Configuration des propriétés Adaptive Form-Embed(v2)
@@ -331,7 +331,7 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
 
-AEM site also allows you to create an Adaptive Form on the fly using the Adaptive Forms - Embed component. Follow the steps to create an Adaptive Form using the **Adaptive Forms - Embed component** on AEM sites page:
+AEM site also lets you create an Adaptive Form on the fly using the Adaptive Forms - Embed component. Follow the steps to create an Adaptive Form using the **Adaptive Forms - Embed component** on AEM sites page:
 1. Open the AEM sites page, in edit mode, in which you want to embed an Adaptive Form.
 1. From the Component browser panel, drag-drop the Adaptive Forms - Embed component on the page.
 1. Click the **Plus** icon and you are redirected to the form creation wizard.

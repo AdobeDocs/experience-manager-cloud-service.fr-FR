@@ -2,10 +2,10 @@
 title: Phase de mise en œuvre dans Cloud Acceleration Manager
 description: Cette page présente un aperçu de la phase de mise en œuvre dans Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 34%
+source-wordcount: '661'
+ht-degree: 31%
 
 ---
 
@@ -19,7 +19,7 @@ La phase de mise en œuvre comprend :
 * [Transfert de contenu](#content-transfer)
 
 
-Cliquez sur la carte de votre projet afin d’ouvrir la page d’entrée du projet et d’accéder au **Implémentation** , comme illustré dans la figure suivante.
+Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet et accéder à la **Implémentation** , comme illustré dans la figure suivante.
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
@@ -63,7 +63,7 @@ Consultez cette section pour découvrir la carte d’activité Refactorisation d
 >[!NOTE]
 >Passez en revue le contenu de ces onglets pour comprendre certaines zones supplémentaires qui ne sont pas couvertes par l’analyseur des bonnes pratiques.
 
-Le **Dispatcher** Cet onglet fournit des informations sur la structure des configurations Apache et Dispatcher as a Cloud Service, ainsi que sur la validation et l’exécution en local avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud.
+La variable **Dispatcher** Cet onglet fournit des informations sur la structure des configurations Apache et Dispatcher as a Cloud Service, ainsi que sur la validation et l’exécution en local avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud.
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
@@ -89,7 +89,7 @@ Consultez cette section pour découvrir AEM carte d’activité Carte de déploi
 
 ## Utilisation de la carte de transfert de contenu {#content-transfer}
 
-La carte de transfert de contenu vous permet de démarrer et de gérer le transfert de contenu de votre instance AEM actuelle vers AEM as a Cloud Service.
+La carte Transfert de contenu vous permet de lancer et de gérer le transfert de contenu de votre instance AEM actuelle vers AEM as a Cloud Service.
 
 Consultez cette section pour découvrir la carte de l’activité Transfert de contenu :
 
@@ -105,11 +105,11 @@ Consultez cette section pour découvrir la carte de l’activité Transfert de c
    >Un jeu de migration expire après une longue période d’inactivité. Voir [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
 
    >[!NOTE]
-   >Voir [conditions préalables](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) et le [bonnes pratiques et directives](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr) avant d’utiliser l’outil de transfert de contenu.
+   >Voir [conditions préalables](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) et la variable [bonnes pratiques et directives](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr) avant d’utiliser l’outil de transfert de contenu.
 
 1. Téléchargez et installez l’outil de transfert de contenu pour renseigner le jeu de migration et terminer la phase Extraction du transfert de contenu. Lisez la section [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) pour savoir comment utiliser l’outil de transfert de contenu.
 
-1. Pour ingérer du contenu à partir du jeu Migration dans un environnement sur AEM as a Cloud Service, vous devez démarrer une ingestion. Accédez à **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**. Réviser [Ingestion de contenu dans Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=fr) afin que vous puissiez apprendre à terminer la phase d’ingestion du transfert de contenu.
+1. Pour ingérer du contenu à partir du jeu de migration dans un environnement sur AEM as a Cloud Service, vous devez démarrer une ingestion. Accédez à **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**. Réviser [Ingestion de contenu dans Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=fr) afin que vous puissiez apprendre à terminer la phase d’ingestion du transfert de contenu.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 

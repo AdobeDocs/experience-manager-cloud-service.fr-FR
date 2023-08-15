@@ -2,10 +2,10 @@
 title: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 description: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2818'
-ht-degree: 97%
+source-wordcount: '2816'
+ht-degree: 96%
 
 ---
 
@@ -294,7 +294,7 @@ Pour configurer le cache du Dispatcher pour Experience Manager Forms en tant que
 
 1. Ouvrez votre projet AEM et accédez à `\src\conf.dispatcher.d\available_farms`
 1. Créez une copie du fichier `default.farm`, par exemple, `forms.farm`.
-1. Ouvrez le fichier `forms.farm` nouvellement créé pour édition et remplacez le code suivant :
+1. Ouvrez le `forms.farm` pour modifier et remplacer le code suivant :
 
    ```json
    #/ignoreUrlParams {
@@ -331,7 +331,7 @@ Votre environnement de développement local est prêt.
 
 ## Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms
 
-L’activation des composants principaux des formulaires adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, à publier et à diffuser des formulaires adaptatif et des formulaires découplés basés sur les composants principaux à l’aide de vos instances Cloud Service d&#39;AEM Forms sur plusieurs canaux. Vous avez besoin de l’environnement de composants principaux de Forms adaptatif activé pour utiliser le Forms adaptatif sans affichage.
+L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. Vous avez besoin de l’environnement de composants principaux de Forms adaptatif activé pour utiliser le Forms adaptatif sans affichage.
 
 Pour obtenir des instructions, voir [Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 

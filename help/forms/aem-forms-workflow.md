@@ -8,9 +8,9 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2362'
+source-wordcount: '2361'
 ht-degree: 70%
 
 ---
@@ -44,7 +44,7 @@ Le diagramme suivant illustre le processus complet de création, d’exécution 
 
 * Un workflow est une représentation d’un processus d’entreprise réel. Préparez votre processus d’entreprise réel et la liste des participants au processus d’entreprise. Par ailleurs, préparez les éléments associés (formulaires adaptatifs, documents PDF, etc.) avant de créer un processus.
 * Un workflow peut comporter plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et permettent de signaler la progression du workflow. Divisez votre processus d’entreprise en étapes logiques.
-* Vous pouvez configurer l’étape Affecter une tâche de AEM Workflows pour envoyer des notifications par e-mail aux utilisateurs ou aux personnes désignées. Donc, [activer les notifications par e-mail ;](#configure-email-service).
+* Vous pouvez configurer l’étape Affecter une tâche de AEM Workflows pour envoyer des notifications par e-mail aux utilisateurs ou aux personnes désignées. Donc, [activer les notifications par e-mail](#configure-email-service).
 * Un workflow peut également utiliser Adobe Sign pour les signatures numériques. Si vous envisagez d’utiliser Adobe Sign dans un workflow, [configure Adobe Sign pour [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) avant de l’utiliser dans un workflow.
 
 ## Créer un modèle de workflow {#create-a-workflow-model}
@@ -70,9 +70,9 @@ L’exemple crée un modèle de workflow dans lequel une demande de prêt immobi
 1. Ouvrez la console Modèles de processus. L’URL par défaut est `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Sélectionnez **Créer**, puis **Créer un modèle**. La boîte de dialogue Ajouter un modèle de processus s’ouvre.
 1. Saisissez **Titre** et **Nom** (facultatif). par exemple, une demande de prêt immobilier. Appuyez sur **Terminé**.
-1. Sélectionnez le processus nouvellement créé et appuyez sur **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
+1. Sélectionnez le modèle de workflow nouvellement créé et appuyez sur **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
 
-   * Les étapes : Début de flux et Fin de flux. Ces étapes représentent le début et la fin du workflow. Ces étapes sont requises et ne peuvent pas être modifiées ni supprimées.
+   * Les étapes : Début du flux et Fin du flux. Ces étapes représentent le début et la fin du workflow. Ces étapes sont requises et ne peuvent pas être modifiées ni supprimées.
    * Un exemple d’étape Participant, dont le nom est Étape 1. Cette étape est configurée pour affecter un élément de travail à l’utilisateur administrateur. Supprimez cette étape.
 
 1. Activez les notifications électroniques. Vous pouvez configurer le processus basé sur l’utilisation de Forms sur OSGi pour qu’il envoie des notifications électroniques aux utilisateurs ou personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
@@ -205,7 +205,7 @@ La demande de processus que vous avez créée est disponible en tant qu’applic
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
-The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and allows you to make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
+The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
 
 ### Envoi d’un formulaire adaptatif {#af}
 

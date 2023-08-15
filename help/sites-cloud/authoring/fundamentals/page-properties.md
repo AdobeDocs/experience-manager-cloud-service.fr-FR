@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Découvrez comment définir les propriétés requises pour gérer une page dans AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 80%
+source-wordcount: '2279'
+ht-degree: 79%
 
 ---
 
@@ -76,7 +76,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **URL de redirection**
 
-   * Permet de saisir une URL de redirection pour cette page, ce qui peut vous permettre d’avoir une URL plus courte ou plus expressive.
+   * Vous permet de saisir une URL Vanity pour cette page, ce qui peut vous permettre d’avoir une URL plus courte et/ou plus expressive.
    * Par exemple, si l’URL Vanity est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL Vanity de `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]

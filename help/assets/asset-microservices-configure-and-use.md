@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2930'
 ht-degree: 97%
 
 ---
@@ -246,7 +246,7 @@ Lorsque le post-traitement n’est pas nécessaire, créez et utilisez un modèl
    * Titre : désactiver le workflow de démarrage automatique
    * Nom : disable-auto-start-workflow
 1. Sélectionnez __Terminé__ pour créer le modèle de processus.
-1. __Sélectionnez__ et __modifiez__ le nouveau modèle de processus.
+1. __Sélectionner__ et __Modifier__ le modèle de processus nouvellement créé
 1. Dans l’éditeur de modèle de processus, sélectionnez l’__Étape 1__ de la définition de modèle et supprimez-la.
 1. Ouvrez le __Panneau latéral__ puis sélectionnez __Étapes__.
 1. Faites glisser l’étape __Ressources de mise à jour de gestion des actifs numériques, processus terminé__ dans la définition de modèle.

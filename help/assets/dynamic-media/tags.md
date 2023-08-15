@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6665'
-ht-degree: 98%
+source-wordcount: '6663'
+ht-degree: 97%
 
 ---
 
@@ -257,7 +257,7 @@ La méthode la plus simple consiste à effectuer le processus en deux étapes :
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement de visionneuse Dynamic Media. Entrez le nom complet de l’argument d’événement dans le champ d’entrée **[!UICONTROL valeur]** de l’affectation de variable Analytics. Veillez à entourer votre entrée par des signes de pourcentage (%). Par exemple,
+Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement de visionneuse Dynamic Media. Saisissez le nom qualifié complet de l’argument d’événement dans la variable **[!UICONTROL value]** champ d’entrée de l’affectation de variable Analytics. Veillez à entourer votre entrée par des signes de pourcentage (%). Par exemple,
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -519,7 +519,7 @@ Consultez également la section [Configurer une propriété de balise](https://e
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-   Sélectionnez la propriété que vous venez de créer, puis passez à *Installation et configuration des extensions*.
+   Sélectionnez la propriété nouvellement créée, puis passez à *Installation et configuration des extensions*.
 
 ### Installation et configuration des extensions {#installing-and-setup-of-extensions}
 

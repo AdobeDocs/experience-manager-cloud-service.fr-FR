@@ -3,10 +3,10 @@ title: Présentation d’ [!DNL AEM Forms]  as a Cloud Service
 description: Découvrez AEM Forms et comment il vous aide à créer des formulaires et documents professionnels prêts à l’emploi. Découvrez Platform-as-a-Service (PaaS) et apprenez à gérer des formulaires numériques et des processus d’entreprise à l’échelle de l’organisation, puis connectez Forms à Adobe Sign et aux sources de données actives.
 landing-page-description: Découvrez comment utiliser les formulaires dans AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 92%
+source-wordcount: '1155'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Utilisez des workflows basés sur les formulaires pour automatiser le traitement
 
 ## Optimiser les performances des formulaires
 
-Le service s’intègre à Adobe Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser. Utilisez Adobe Analytics pour identifier les schémas d’interaction et les problèmes auxquels sont confrontés les utilisateurs et les utilisatrices lorsqu’ils ou elles utilisent des formulaires adaptatifs.
+Le service s’intègre à Adobe Analytics qui vous permet de capturer et de suivre les mesures de performances des formulaires que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser. Utilisez Adobe Analytics pour identifier les schémas d’interaction et les problèmes auxquels sont confrontés les utilisateurs et les utilisatrices lorsqu’ils ou elles utilisent des formulaires adaptatifs.
 
 
 ## Commencer {#key-features}

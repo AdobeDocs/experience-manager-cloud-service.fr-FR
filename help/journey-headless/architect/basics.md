@@ -2,10 +2,10 @@
 title: En savoir plus sur les bases de la modélisation de contenu
 description: Découvrez les bases de la modélisation du contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '903'
+ht-degree: 95%
 
 ---
 
@@ -67,7 +67,7 @@ Dans un modèle :
 1. **Types de données** vous permet de définir les attributs individuels.
 Par exemple, définissez le champ portant le nom d’un enseignant comme **Texte** et ses années de service comme **Nombre**.
 1. Les types de données **Référence de contenu** et **Référence du fragment** permettent de créer des relations avec d’autres contenus dans AEM.
-1. Le type de données **Référence du fragment** vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Ceci est essentiel pour la modélisation de contenu.
+1. La variable **Référence de fragment** Le type de données vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Ceci est essentiel pour la modélisation de contenu.
 
 Par exemple :
 
@@ -113,7 +113,7 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
 
 ## Niveaux de structure (fragments imbriqués) {#levels-of-structure-nested-fragments}
 
-Pour la modélisation de contenu, le type de données **Référence de fragment** vous permet de créer plusieurs niveaux de structure et de relations.
+Pour la modélisation de contenu, le **Référence de fragment** type de données permet de créer plusieurs niveaux de structure et de relations.
 
 Ce référencement vous permet de *connecter* divers modèles de fragment de contenu pour représenter les interrelations. Il permet à l’application découplée de suivre les connexions et d’accéder au contenu si nécessaire.
 

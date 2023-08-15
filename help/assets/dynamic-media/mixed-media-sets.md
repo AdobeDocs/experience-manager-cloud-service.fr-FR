@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 98%
+source-wordcount: '1500'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Les visionneuses de médias mixtes sont désignées par une bannière contenant 
 
 Pour démarrer rapidement, procédez comme suit :
 
-1. [Chargement des ressources](#uploading-assets).
+1. [Chargement de vos ressources](#uploading-assets).
 
    Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) et [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, assurez-vous de tenir compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
 
@@ -148,12 +148,11 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
 
    * Pour trier des ressources selon leur nom par ordre croissant ou décroissant, dans le panneau de gauche, sélectionnez **[!UICONTROL Ressources]** (icône image). À droite de l’en-tête **[!UICONTROL Ressources]**, sélectionnez les icônes lambda vers le haut ou vers le bas.
 
-      >[!NOTE]
-      >
-      >* Pour supprimer une visionneuse de médias mixtes dans son ensemble, depuis n’importe quel mode d’affichage (**[!UICONTROL Carte]** ou **[!UICONTROL Colonnes]**, par exemple), accédez à la visionneuse de médias mixtes. Placez le pointeur de la souris sur la ressource, puis sélectionnez l’icône de coche pour pouvoir la sélectionner. Appuyez sur la touche **[!UICONTROL Retour arrière]** du clavier ou sélectionnez **[!UICONTROL Plus]** (points de suspension) dans la barre d’outils, puis sélectionnez **[!UICONTROL Supprimer]**.
-      >
-      >* Vous pouvez modifier les fichiers d’une visionneuse de médias mixtes en accédant à la visionneuse. Dans le rail de gauche, appuyez sélectionnez **[!UICONTROL Définir les membres]**, puis l’icône **[!UICONTROL Crayon]** d’une ressource individuelle pour ouvrir la fenêtre de modification.
-
+     >[!NOTE]
+     >
+     >* Pour supprimer une visionneuse de médias mixtes dans son ensemble, depuis n’importe quel mode d’affichage (**[!UICONTROL Carte]** ou **[!UICONTROL Colonnes]**, par exemple), accédez à la visionneuse de médias mixtes. Placez le pointeur de la souris sur la ressource, puis sélectionnez l’icône de coche pour pouvoir la sélectionner. Appuyez sur la touche **[!UICONTROL Retour arrière]** du clavier ou sélectionnez **[!UICONTROL Plus]** (points de suspension) dans la barre d’outils, puis sélectionnez **[!UICONTROL Supprimer]**.
+     >
+     >* Vous pouvez modifier les fichiers d’une visionneuse de médias mixtes en accédant à la visionneuse. Dans le rail de gauche, appuyez sélectionnez **[!UICONTROL Définir les membres]**, puis l’icône **[!UICONTROL Crayon]** d’une ressource individuelle pour ouvrir la fenêtre de modification.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
@@ -162,7 +161,6 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
    >* Pour modifier les ressources dans une visionneuse de médias mixtes – Accédez à la visionneuse de médias mixtes. Appuyez sur (ne sélectionnez pas) la visionneuse pour pouvoir l’ouvrir dans la page Aperçu de la visionneuse Experience Manager. Dans le rail de gauche, sélectionnez l’icône lambda vers le bas pour ouvrir la liste déroulante, puis sélectionnez **[!UICONTROL Définir les membres]**. Dans la page Définir des membres, passez la souris sur une ressource, puis sélectionnez **[!UICONTROL Modifier]** (icône représentant un crayon) pour ouvrir la page de modification.
    >
    >* Pour supprimer une visionneuse de médias mixtes dans son ensemble – À partir de n’importe quel mode d’affichage (Mode Carte ou Colonne, par exemple), accédez à la visionneuse de médias mixtes. Pointez sur la visionneuse, puis sélectionnez **[!UICONTROL Sélectionner]** (icône de coche). Appuyez sur la touche **[!UICONTROL Retour arrière]** de votre clavier ou sélectionnez **[!UICONTROL Plus]** (trois points de suspension), puis **[!UICONTROL Supprimer]**.
-
 
 ## Prévisualisez une visionneuse de médias mixtes {#previewing-mixed-media-sets}
 

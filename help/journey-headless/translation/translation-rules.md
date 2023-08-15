@@ -2,10 +2,10 @@
 title: Configuration des règles de traduction pour le contenu découplé
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 98%
+source-wordcount: '941'
+ht-degree: 97%
 
 ---
 
@@ -69,14 +69,14 @@ Il existe une console **Configuration de traduction** disponible pour la configu
 
 Dans l’IU **Configuration de traduction**, plusieurs options sont disponibles pour vos règles de traduction. Dans cette partie, nous mettons en évidence les étapes les plus nécessaires et les plus courantes requises pour une configuration de localisation découplée de base.
 
-1. Appuyez ou cliquez sur **Ajouter du contexte**, qui permet d’ajouter un chemin d’accès. Il s’agit du chemin d’accès du contenu qui sera affecté par la règle.
+1. Appuyez ou cliquez sur **Ajouter un contexte**, qui vous permet d’ajouter un chemin. Il s’agit du chemin d’accès du contenu qui sera affecté par la règle.
    ![Ajoutez du contexte](assets/add-translation-context.png)
 1. Utilisez le navigateur de chemins d’accès pour sélectionner le chemin requis et appuyez ou cliquez sur le bouton **Confirmer** pour enregistrer. N’oubliez pas que les fragments de contenu, qui contiennent du contenu découplé, se trouvent généralement sous `/content/dam/<your-project>`.
    ![Sélectionnez le chemin d’accès](assets/select-context.png)
 1. AEM enregistre la configuration.
 1. Vous devez sélectionner le contexte que vous venez de créer, puis appuyer ou cliquer sur **Modifier**. Vous ouvrez ainsi la fenêtre de l’**Éditeur de règles de traduction** pour configurer les propriétés.
    ![Éditeur de règles de traduction](assets/translation-rules-editor.png)
-1. Par défaut, toutes les configurations sont héritées du chemin d’accès parent, dans ce cas `/content/dam`. Décochez l’option . **Hériter de`/content/dam`** vous pouvez ainsi ajouter des champs supplémentaires à la configuration.
+1. Par défaut, toutes les configurations sont héritées du chemin d’accès parent, dans ce cas `/content/dam`. Décochez l’option **Hériter de`/content/dam`** vous pouvez ainsi ajouter des champs supplémentaires à la configuration.
 1. Une fois la case désélectionnée, dans la section **Général** de la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous avez [précédemment identifiés comme des champs à traduire](getting-started.md#content-models).
    1. Saisissez le nom de la propriété dans le champ **Nouvelle propriété**.
    1. Les options **Traduire** et **Hériter** sont cochées automatiquement.

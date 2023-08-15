@@ -4,10 +4,10 @@ description: Découvrez les puissantes fonctionnalités du rail Site qui vous ai
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
+source-wordcount: '596'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez les puissantes fonctionnalités du rail Site qui vous aidera à perso
 
 ## Présentation {#overview}
 
-Le rail Site vous permet de gérer le thème et les ressources du modèle de votre site. [Comme les autres rails](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) tels que les rails Arborescence de contenu, Références ou Chronologie, le rail Site s’affiche dans le panneau le plus à gauche de la console Sites et affiche des informations sur l’élément sélectionné. Contrairement aux autres rails, le rail Site s’applique uniquement aux racines du site.
+Le rail Site vous permet de gérer le thème et les ressources de modèle de votre site. [Comme les autres rails](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) tels que les rails Arborescence de contenu, Références ou Chronologie, le rail Site s’affiche dans le panneau le plus à gauche de la console Sites et affiche des informations sur l’élément sélectionné. Contrairement aux autres rails, le rail Site s’applique uniquement aux racines du site.
 
 Le rail Site permet de gérer les informations relatives aux thèmes et aux modèles pour votre site, notamment les éléments suivants :
 

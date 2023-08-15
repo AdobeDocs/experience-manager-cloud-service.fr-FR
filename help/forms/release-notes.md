@@ -2,10 +2,10 @@
 title: « Notes de mise à jour d’[!DNL AEM Forms] as a Cloud Service »
 description: « Notes de mise à jour d’[!DNL AEM Forms] as a Cloud Service »
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 99%
+source-wordcount: '2015'
+ht-degree: 94%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service fait l’objet r
 
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](aem-forms-cloud-service-communications.md) vous permettent de combiner un modèle et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents dans les modes synchrone et par lots. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+- **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](aem-forms-cloud-service-communications.md) vous permettent de combiner un modèle et des données XML pour générer des documents d’impression dans différents formats. Le service permet de générer des documents en mode synchrone et par lots. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
    - Générer des documents en renseignant les fichiers de modèle (PDF et XDP) avec des données XML
    - Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
@@ -61,9 +61,9 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 - **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes :  Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
-   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](aem-forms-cloud-service-communications.md) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+- **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](aem-forms-cloud-service-communications.md) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    - Générer des documents en complétant des fichiers de modèle avec des données XML
    - Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
    - Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat
@@ -104,7 +104,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 - **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
-- **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](configure-azure-storage.md). Ceci vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant que BLOB.
+- **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](configure-azure-storage.md). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft Azure Storage en tant que BLOB.
 
 ### Fonction bêta de [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
@@ -113,7 +113,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
    - Activer la fonctionnalité d’enregistrement et de reprise de Forms Portal et stocker les brouillons de formulaires adaptatifs dans un référentiel de données géré par le client.
    - Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](aem-forms-cloud-service-communications.md) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+- **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](aem-forms-cloud-service-communications.md) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    - Générer des documents en complétant des fichiers de modèle avec des données XML
    - Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
    - Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat
@@ -139,13 +139,13 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 - **Document d’enregistrement basé sur Acrobat** : vous pouvez également [utiliser Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr) comme modèle de document d’enregistrement en plus du modèle de formulaire basé sur XFA.
 
-- **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Ceci vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant que BLOB.
+- **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft Azure Storage en tant que BLOB.
 
 - **Externalisateur de données variables** : vous pouvez enregistrer les données variables des workflows AEM sur un système de stockage externe géré par votre entreprise.
 
 ### Fonction bêta de [!DNL Forms] {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](aem-forms-cloud-service-communications.md) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+- **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](aem-forms-cloud-service-communications.md) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    - Générer des documents en complétant des fichiers de modèle avec des données XML
    - Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
    - Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat
@@ -161,7 +161,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 ### Fonction bêta de [!DNL Forms] {#june-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]** : les API de communication vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+- **[!DNL AEM Forms as a Cloud Service - Communications]** : les API de communication vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
    - Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
    - Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.
@@ -207,25 +207,25 @@ Vous pouvez écrire à l’adresse formscsbeta@adobe.com pour vous inscrire au p
 
 - **Utilisation de la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign**
 
-   Optimisé par des algorithmes d’apprentissage automatique avancés, le processus d’ID gouvernement d’Adobe Sign permet aux entreprises du monde entier de sécuriser une authentification de grande qualité de l’identité de leur destinataire. Vous pouvez maintenant utiliser la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign.
+  Optimisé par des algorithmes de machine learning avancés, le processus d’ID gouvernement d’Adobe Sign permet aux entreprises du monde entier de sécuriser une authentification de grande qualité de l’identité de leur destinataire. Vous pouvez maintenant utiliser la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign.
 
-   ID gouvernement est une méthode d’authentification d’identité Premium qui demande au destinataire de [charger l’image d’un document d’identité émis par le gouvernement (permis de conduire, carte d’identité nationale, passeport)](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html), puis qui évalue ce document pour s’assurer qu’il est authentique.
+  ID gouvernement est une méthode d’authentification d’identité Premium qui demande au destinataire de [charger l’image d’un document d’identité émis par le gouvernement (permis de conduire, carte d’identité nationale, passeport)](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html), puis qui évalue ce document pour s’assurer qu’il est authentique.
 
 - **Prise en charge de l’utilisation de l’expérience de signature dans les formulaires pour les envois asynchrones de formulaires adaptatifs**
 
-   Vous pouvez maintenant utiliser l’expérience de signature dans les formulaires pour les envois asynchrones de formulaires adaptatifs. Vous avez également la possibilité d’incorporer un formulaire adaptatif dans une page [!DNL Experience Manager Sites] et d’utiliser l’expérience de signature dans les formulaires pour les envois de formulaires adaptatifs.
+  Vous pouvez maintenant utiliser l’expérience de signature dans les formulaires pour les envois asynchrones de formulaires adaptatifs. Vous avez également la possibilité d’incorporer un formulaire adaptatif dans une page [!DNL Experience Manager Sites] et d’utiliser l’expérience de signature dans les formulaires pour les envois de formulaires adaptatifs.
 
 - **Prise en charge de l’utilisation d’une variable pour spécifier une pièce jointe lors du remplissage préalable d’un formulaire adaptatif pour une étape d’affectation d’une tâche**
 
-   Lors du remplissage préalable d’un formulaire adaptatif pour une étape d’affectation d’une tâche, vous pouvez désormais utiliser une variable de type document pour sélectionner une pièce jointe d’entrée pour le formulaire adaptatif.
+  Lors du remplissage préalable d’un formulaire adaptatif pour une étape d’affectation d’une tâche, vous pouvez désormais utiliser une variable de type document pour sélectionner une pièce jointe d’entrée pour le formulaire adaptatif.
 
 - **Prise en charge de l’utilisation de l’option littérale pour définir la valeur d’une variable de type JSON**
 
-   Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un processus AEM. L’option littérale vous permet de spécifier un fichier JSON sous la forme d’une chaîne.
+  Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un processus AEM. L’option littérale permet de spécifier un fichier JSON sous la forme d’une chaîne.
 
 - **Utilisation de l’environnement de développement local pour créer un document d’enregistrement**
 
-   Vous pouvez utiliser un fichier XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et dans le SDK AEM Forms as a Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée uniquement aux instances de Cloud Service.
+  Vous pouvez utiliser un fichier XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et dans le SDK AEM Forms as a Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée uniquement aux instances de Cloud Service.
 
 ### Bogues corrigés dans [!DNL Forms] {#april-bug-fixes-forms}
 

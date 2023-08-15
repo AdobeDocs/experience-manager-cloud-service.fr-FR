@@ -4,10 +4,10 @@ description: Découvrez comment gérer et résoudre les conflits de déploiement
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 89%
+source-wordcount: '920'
+ht-degree: 84%
 
 ---
 
@@ -17,7 +17,7 @@ Des conflits peuvent apparaître si de nouvelles pages portant le même nom de p
 
 ## Gestion des conflits {#conflict-handling}
 
-Lorsqu’il y a des pages en conflit (dans les branches Plan directeur et Live Copy), MSM permet de définir comment elles doivent être gérées (voire si elles doivent l’être).
+Lorsqu’il existe des pages en conflit (dans les branches Plan directeur et Live Copy), MSM vous permet de définir comment (ou même si) elles doivent être gérées.
 
 Pour vous assurer que le déploiement n’est pas bloqué, les définitions possibles peuvent inclure :
 
@@ -54,7 +54,7 @@ Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b
 
 ## Gestionnaire de déploiement et gestion des conflits {#rollout-manager-and-conflict-handling}
 
-Le gestionnaire de déploiement permet d’activer ou de désactiver la gestion des conflits.
+Le gestionnaire de déploiement vous permet d’activer ou de désactiver la gestion des conflits.
 
 Ceci est effectué à l’aide de la [configuration OSGi](/help/implementing/deploying/configuring-osgi.md) du **gestionnaire de déploiement WCM Day CQ**. Définissez la valeur **Gérer un conflit avec des pages créées manuellement** (`rolloutmgr.conflicthandling.enabled` ) sur true si le gestionnaire de déploiement doit gérer les conflits d’une page créée dans la Live Copy qui porte un nom déjà présent dans le plan directeur.
 
@@ -64,9 +64,9 @@ AEM possède un [comportement prédéfini lorsque la gestion des conflits a ét�
 
 AEM utilise des gestionnaires de conflit pour résoudre des conflits de page qui émergent lors du déploiement du contenu du plan directeur vers la Live Copy. Le changement de nom des pages est la méthode habituelle (mais pas la seule) pour résoudre de tels conflits. Plusieurs gestionnaires de conflit peuvent être opérationnels pour permettre une sélection de comportements différents.
 
-AEM fournit :
+AEM fournit :
 
-* Le [gestionnaire de conflit par défaut](#default-conflict-handler):
+* La variable [gestionnaire de conflit par défaut](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * Possibilité de mettre en œuvre un [gestionnaire personnalisé](#customized-handlers)
 * Le mécanisme de classement des services qui permet de définir la priorité de chaque gestionnaire individuel

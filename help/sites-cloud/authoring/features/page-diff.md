@@ -2,10 +2,10 @@
 title: Outil de comparaison des pages
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 45%
+source-wordcount: '610'
+ht-degree: 79%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 45%
 
 ## Présentation {#introduction}
 
-La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. L’affichage d’une version de page, puis de l’autre, est inefficace et susceptible d’erreur. Un auteur souhaite pouvoir facilement comparer la page actuelle côte à côte à une autre version.
+La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. L’affichage d’une version de page, puis de l’autre, est inefficace et source d’erreurs. Un créateur ou une créatrice doit pouvoir facilement comparer la page actuelle à côté d’une autre version.
 
 De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 
@@ -36,10 +36,10 @@ Reportez-vous aux rubriques correspondantes afin de connaître la procédure de 
 
 ### Présentation des différences {#presentation-of-differences}
 
-Quel que soit le contenu comparé, la présentation de l’outil de comparaison reste la même.
+Quel que soit le contenu comparé, la présentation des différences reste la même.
 
 * Le contenu sélectionné au démarrage de l’outil de comparaison s’affiche à gauche (le point d’entrée de l’outil de comparaison).
-* Le contenu de la comparaison est affiché à droite (par rapport au contenu sélectionné).
+* Le contenu de la comparaison est affiché à droite (ce qui est comparé au contenu sélectionné).
 
 Par exemple, si vous comparez des versions, la version actuelle est affichée à gauche et la version précédente à droite.
 
@@ -51,12 +51,12 @@ L’outil de comparaison détecte les modifications effectuées sur les composan
 
 **Modifications des composants**
 
-* Vert clair : composant ajouté
-* Rose : composant supprimé
+* Vert clair : composant ajouté
+* Rose : composant supprimé
 
-**Modifications du HTML**
+**Modifications du code HTML**
 
-* Vert foncé - HTML ajouté
+* Vert foncé : HTML ajouté
 * Rouge : HTML supprimé
 
 >[!NOTE]
@@ -85,16 +85,16 @@ Vous pouvez quitter le mode de comparaison côte à côte à tout moment en cliq
 
 ## Restrictions {#limitations}
 
-Dans certains cas, l’outil de comparaison des pages peut ne pas détecter une différence comme prévu.
+Dans certains cas, l’outil de comparaison des pages peut ne pas détecter toutes les différences.
 
 * Lors de la comparaison des versions et lancements, la comparaison ne prend pas en compte les composants dynamiques tels que les chemins de navigation, les menus, les listes de produits ou les logos (composants qui dépendent de la structure du site pour effectuer le rendu de leur contenu).
 * Pour les versions, l’outil de comparaison ne recrée pas la politique de contrôle d’accès ni les relations Live Copy.
-* Si une page est déplacée, vous ne pouvez plus effectuer de comparaison avec les versions antérieures au déplacement.
-   * Si vous rencontrez des problèmes avec une comparaison, vérifiez la variable [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) pour la page afin de voir si la page a été déplacée.
+* Si une page a été déplacée, vous ne pouvez plus la comparer à des versions antérieures au déplacement.
+   * Si vous rencontrez des problèmes liés à une comparaison, vérifiez le [Journal](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) de la page afin de voir si la page a été déplacée.
 
 >[!NOTE]
 >
->Les versions ne peuvent pas être comparées entre elles. Seule la version en cours peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
+>Les versions ne peuvent pas être comparées les unes aux autres. Seule la version en cours peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
 
 >[!NOTE]
 >

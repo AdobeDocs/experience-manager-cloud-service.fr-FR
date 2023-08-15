@@ -2,16 +2,16 @@
 title: Ajout d’annotations de page
 description: Utilisez le mode d’annotation pour laisser des annotations et des schémas sur les pages, car vous utiliserez des pense-bêtes pour faciliter le processus de révision du contenu.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 94%
+source-wordcount: '694'
+ht-degree: 87%
 
 ---
 
 # Ajout d’annotations de page {#adding-page-annotations}
 
-La création de contenu pour votre expérience numérique nécessite souvent des discussions et des commentaires avant la publication. Pour faciliter ce processus de retour, AEM vous permet d’ajouter des annotations à votre contenu.
+La création de contenu pour votre expérience digitale nécessite souvent des discussions et des commentaires avant la publication. Pour faciliter ce processus de retour, AEM vous permet d’ajouter des annotations à votre contenu.
 
 Une annotation place une simple esquisse ou une simple note (pensez aux notes autocollantes du monde réel) sur la page. L’annotation vous permet de laisser des commentaires ou des questions à l’intention d’autres auteurs et réviseurs.
 
@@ -61,9 +61,9 @@ Outre l’affichage des annotations, le mode Annotation vous permet de créer, m
 
    ![Ajout d’une annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   Ici, vous pouvez utiliser le champ et/ou l’icône appropriés pour :
+   Ici, vous pouvez utiliser le champ et/ou l’icône appropriés pour :
 
-   * Saisissez le texte de l’annotation.
+   * Saisir le texte de l’annotation.
    * Créez une esquisse (traits et formes) pour mettre en surbrillance une zone du composant.
 
      ![Bouton d’esquisse d’annotation](/help/sites-cloud/authoring/assets/annotation-sketch.png)

@@ -4,10 +4,10 @@ description: Experience Manager ajoute automatiquement des balises intelligentes
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 99%
+source-wordcount: '1212'
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ Les résultats de la recherche conjuguent les ressources vidéo avec des mots-cl
 
 ## Modération des balises intelligentes des vidéos {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] permet de traiter les balises intelligentes pour :
+[!DNL Adobe Experience Manager] permet de traiter les balises intelligentes pour :
 
 * Supprimer les balises inexactes attribuées aux vidéos de votre marque.
 

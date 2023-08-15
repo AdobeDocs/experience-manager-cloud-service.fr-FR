@@ -2,9 +2,9 @@
 title: Recherche et indexation de contenu
 description: Découvrez la recherche et l’indexation de contenu dans AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2324'
 ht-degree: 39%
 
 ---
@@ -36,7 +36,7 @@ Restrictions :
 
 ## Utilisation {#how-to-use}
 
-Les définitions d’index peuvent être classées dans trois cas d’utilisation Principaux, comme suit :
+Les définitions d’index peuvent être classées en trois principaux cas d’utilisation, comme suit :
 
 1. **Ajouter** une nouvelle définition d’index personnalisée.
 2. **Mettre à jour** une définition d’index existante en ajoutant une nouvelle version.

@@ -3,9 +3,9 @@ title: « Interface utilisateur dʼ[!DNL Assets view] »
 description: Comprendre l’interface utilisateur et de la navigation dans [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 88%
 
 ---
@@ -44,11 +44,11 @@ Vous pouvez accéder aux dossiers requis à partir de l’interface utilisateur 
 * [Tâches](/help/assets/my-workspace-assets-view.md) : vous pouvez afficher les tâches qui vous sont affectées sous l’onglet **Mes tâches**. En revanche, les tâches que vous créez peuvent être affichées sous l’onglet **Tâches affectées**. En outre, les tâches que vous avez terminées se trouvent sous l’onglet **Tâches terminées**.
 * [Ressources](/help/assets/manage-organize-assets-view.md) : liste de tous les dossiers auxquels vous avez accès sous la forme d’une arborescence.
 * **Récemment consultés** : liste des ressources que vous avez récemment prévisualisées. [!DNL Assets view] affiche uniquement les ressources que vous prévisualisez. Cette fonctionnalité n’affiche pas les ressources que vous faites défiler en naviguant dans les fichiers ou dossiers du référentiel.
-* [Collections](/help/assets/manage-collections-assets-view.md): Une collection est un ensemble de ressources, de dossiers ou d’autres collections dans la vue Adobe Experience Manager Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs et utilisatrices. Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
+* [Collections](/help/assets/manage-collections-assets-view.md): une collection est un ensemble de ressources, de dossiers ou d’autres collections dans la vue Ressources Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs et utilisatrices. Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
 
 * [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics) : dans [!DNL Assets view], vous pouvez afficher des insights en temps réel sur votre tableau de bord. La vue Assets vous permet d’afficher des données en temps réel pour votre environnement de vue Assets à l’aide du tableau de bord Statistiques . Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
 * **Corbeille** : répertorie les ressources supprimées du dossier racine **[!UICONTROL Ressources]**. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à l’emplacement d’origine ou la supprimer définitivement. Vous pouvez également spécifier un mot-clé ou appliquer des filtres standard ou personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille. Pour plus d’informations sur l’utilisation de filtres standard et personnalisés, voir [Recherche de ressources dans la vue Ressources](/help/assets/search-assets-view.md).
-* **Paramètres**: Vous pouvez configurer différentes options de la vue Ressources à l’aide de la commande **Paramètres**, par exemple, les formulaires de métadonnées, les rapports et la gestion de la taxonomie.
+* **Paramètres**: vous pouvez configurer différentes options de la vue Ressources à l’aide de la commande **Paramètres**, par exemple, les formulaires de métadonnées, les rapports et la gestion de la taxonomie.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
@@ -78,7 +78,7 @@ Pour accéder à un dossier, double-cliquez sur la miniature du dossier ou séle
 
 Avant d’utiliser, de partager ou de télécharger une ressource, vous pouvez l’afficher pour en connaître les détails. La fonction d’aperçu vous permet d’afficher non seulement les images, mais également quelques autres types de ressources pris en charge.
 
-Pour prévisualiser une ressource, sélectionnez-la et cliquez sur ![icône de détails](assets/do-not-localize/edit-in-icon.png) [!UICONTROL Détails] dans la barre d’outils supérieure. Vous pouvez non seulement afficher la ressource, mais également afficher le détail de ses métadonnées et effectuer d’autres actions.
+Pour prévisualiser une ressource, sélectionnez-la et cliquez sur ![icône de détails](assets/do-not-localize/edit-in-icon.png) [!UICONTROL Détails] dans la barre d’outils supérieure. Vous ne pouvez pas seulement afficher la ressource, mais également afficher ses métadonnées détaillées et prendre d’autres mesures.
 
 ![Aperçu d’une ressource](assets/preview-asset-2.png)
 

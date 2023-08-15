@@ -2,9 +2,9 @@
 title: Fragments de contenu
 description: Les fragments de contenu d’Adobe Experience Manager as a Cloud Service vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1222'
 ht-degree: 86%
 
 ---
@@ -96,7 +96,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
   >Les éléments disponibles dépendent du modèle utilisé.
 
 * **Variation**
-   * La valeur par défaut **Principal** est toujours disponible.
+   * Par défaut **Principal** est toujours disponible.
    * Une sélection est disponible si des variations ont été créées pour le fragment.
 
 * **ID**
@@ -148,7 +148,7 @@ Pour le contenu intermédiaire, vous pouvez :
 
 ### Utilisation de contenu associé {#using-associated-content}
 
-Si vous avez [contenu associé](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) avec le [fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) ces ressources sont disponibles à partir du panneau latéral (après avoir placé votre fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Si vous avez [contenu associé](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) avec la propriété [fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) ces ressources sont disponibles à partir du panneau latéral (après avoir placé votre fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >

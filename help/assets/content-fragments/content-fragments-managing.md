@@ -2,10 +2,10 @@
 title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 87%
+source-wordcount: '1768'
+ht-degree: 85%
 
 ---
 
@@ -76,9 +76,9 @@ La méthode de création d’un fragment de contenu est la suivante :
 
       * **Nom**
 
-        Le nom ; est utilisé pour former l’URL.
+        Le nom est utilisé pour former l’URL.
 
-        Obligatoire; est dérivé automatiquement du titre, mais peut être mis à jour.
+        Obligatoire ; est dérivé automatiquement du titre, mais peut être mis à jour.
 
 1. Sélectionnez **Créer** pour terminer l’action, puis **ouvrez** le fragment en mode d’édition ou revenez à la console en sélectionnant **Terminé**.
 
@@ -105,11 +105,11 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 * **Passage en caisse**
 * **Propriétés**
 
-   * Permet d’afficher et/ou de modifier les métadonnées du fragment.
+   * Permet d’afficher, ou de modifier, ou les deux, les métadonnées du fragment.
 
 * **Modifier**
 
-   * Permet [d’ouvrir le fragment afin d’en modifier le contenu](/help/assets/content-fragments/content-fragments-variations.md) ainsi que ses variations, contenu, métadonnées et éléments associés.
+   * Permet : [ouvrir le fragment pour modifier le contenu ;](/help/assets/content-fragments/content-fragments-variations.md) ainsi que ses éléments, variations, contenu et métadonnées associés.
 
 * **Publication rapide**
 * **Gérer la publication**
@@ -139,7 +139,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
 1. L’éditeur de fragment s’ouvre alors. Apportez les modifications nécessaires :
 
-   ![Éditeur de fragments](assets/cfm-managing-03.png)
+   ![Éditeur de fragment](assets/cfm-managing-03.png)
 
 1. Après avoir apporté vos modifications, cliquez sur **Enregistrer**, **Enregistrer et fermer** ou **Fermer** selon les besoins.
 
@@ -323,7 +323,7 @@ Elles sont affichées côte à côte, où :
    * le texte inséré est en vert ;
    * le texte remplacé est en bleu.
 
-* L’icône Plein écran vous permet d’ouvrir l’une des versions seule puis de basculer à nouveau sur la vue parallèle.
+* L’icône plein écran vous permet d’ouvrir l’une des versions seule, puis de revenir à la vue parallèle.
 * Vous pouvez **rétablir** la version spécifique
 * **Terminé** vous ramène à la console.
 

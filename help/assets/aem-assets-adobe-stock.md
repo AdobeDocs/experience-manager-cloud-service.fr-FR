@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '2493'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '2492'
+ht-degree: 99%
 
 ---
 
@@ -271,7 +271,7 @@ Vous pouvez créer un groupe d’utilisateurs ou attribuer des autorisations à 
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Adobe Stock]**. Sélectionnez la configuration du cloud d’[!DNL Adobe Stock] et cliquez sur **[!UICONTROL Propriétés]**.
 
-1. Ajoutez le groupe d’utilisateurs nouvellement créé à la configuration d’[!DNL Adobe Stock]. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+1. Ajoutez le groupe d’utilisateurs nouvellement créé au [!DNL Adobe Stock] configuration. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
    ![affecter-utilisateur](assets/aem-stock-adduser.png)
 
@@ -477,4 +477,3 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Tutoriel visuel sur l’utilisation de ressources Adobe Stock avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
 >* [Aide d’Adobe Stock pour entreprise](https://helpx.adobe.com/fr/enterprise/using/adobe-stock-enterprise.html)
 >* [FAQ d’Adobe Stock](https://helpx.adobe.com/fr/stock/faq.html)
-

@@ -1,17 +1,17 @@
 ---
 title: Externalisation d’URL
-description: Externalizer est un service OSGi qui vous permet de transformer, par programmation, un chemin d’accès aux ressources en une URL externe et absolue..
+description: L’externaliseur est un service OSGi qui vous permet de transformer par programmation un chemin d’accès aux ressources en une URL absolue et externe.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 95%
+source-wordcount: '653'
+ht-degree: 82%
 
 ---
 
 # Externalisation d’URL {#externalizing-urls}
 
-Dans AEM, **Externalizer** est un service OSGi qui vous permet de transformer, par programmation, un chemin d’accès aux ressources (`/path/to/my/page`, par exemple) en une URL externe et absolue (`https://www.mycompany.com/path/to/my/page`, par exemple) en faisant précéder le chemin d’accès d’un DNS préconfiguré.
+Dans AEM, la variable **Externalizer** est un service OSGi qui vous permet de transformer par programmation un chemin d’accès aux ressources (par exemple, `/path/to/my/page`) dans une URL externe et absolue (par exemple, `https://www.mycompany.com/path/to/my/page`) en ajoutant un préfixe au chemin d’accès avec un DNS préconfiguré.
 
 Étant donné qu’AEM as a Cloud Service ne peut pas connaître son URL visible en externe et qu’il est parfois nécessaire de créer un lien hors de portée de la requête, ce service fournit un emplacement central pour configurer ces URL externes et les créer.
 
@@ -44,7 +44,7 @@ Pour remplacer les valeurs `preview` et `publish`, utilisez les variables d’en
 
 ## Configuration du service Externalizer {#configuring-the-externalizer-service}
 
-Le service Externalizer vous permet de définir, de manière centralisée, le domaine pouvant être utilisé pour préfixer des chemins d’accès aux ressources par programmation. Le service Externalizer ne doit être utilisé que pour les applications à domaine unique.
+Le service Externalizer permet de définir de manière centralisée le domaine qui peut être utilisé pour préfixer par programmation les chemins d’accès aux ressources. Le service Externalizer ne doit être utilisé que pour les applications à domaine unique.
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Pour définir un mappage de domaine pour le service Externalizer, procédez comm
 
    >[!NOTE]
    >
-   >Une configuration personnalisée vous permet d’ajouter une nouvelle catégorie, telle que `production`, `staging` ou même des systèmes externes non AEM tels que `my-internal-webservice`. Il est utile d’éviter de coder en dur de telles URL à différents endroits dans le code de base d’un projet.
+   >Une configuration personnalisée permet d’ajouter une nouvelle catégorie, telle que `production`, `staging` ou même des systèmes externes non AEM tels que `my-internal-webservice`. Il est utile d’éviter de coder en dur de telles URL à différents endroits dans le code de base d’un projet.
 
 1. Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 

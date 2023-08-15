@@ -2,10 +2,10 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée et, avec l’éditeur de modèles, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4577'
-ht-degree: 64%
+source-wordcount: '4570'
+ht-degree: 63%
 
 ---
 
@@ -15,12 +15,12 @@ Lors de la création d&#39;une page, vous devez sélectionner un modèle qui ser
 
 Grâce à **Éditeur de modèles**, la création et la maintenance de modèles ne sont plus des tâches réservées aux développeurs. Un type d’utilisateur avancé, appelé **auteur de modèles**, peut également être impliqué. Les développeurs doivent encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’**auteur de modèles** peut créer et configurer des modèles sans projet de développement.
 
-Le **Console de modèles** permet aux auteurs de modèles de :
+La variable **Console de modèles** permet aux auteurs de modèles de :
 
 * de créer ou de copier un modèle ;
 * de gérer le cycle de vie du modèle.
 
-Le **Éditeur de modèles** permet aux auteurs de modèles de :
+La variable **Éditeur de modèles** permet aux auteurs de modèles de :
 
 * Ajoutez des composants au modèle et positionnez-les sur une grille réactive.
 * de préconfigurer les composants ;
@@ -32,7 +32,7 @@ Pour plus d’informations sur le fonctionnement des modèles modifiables à un 
 
 >[!NOTE]
 >
->L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais pas les modèles eux-mêmes.
+>L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais les modèles eux-mêmes ne le peuvent pas.
 
 ## Avant de commencer {#before-you-start}
 
@@ -56,9 +56,9 @@ La création d’un modèle à l’aide de la **console Modèles** et de l’**�
 * **Créateur de modèles** :
    * Il s’agit d’un créateur particulier qui est membre du groupe `template-authors`
       * Ce groupe affecte les privilèges et les autorisations nécessaires.
-   * Peut configurer l’utilisation de composants et d’autres détails de haut niveau qui nécessitent :
+   * Peut configurer l’utilisation de composants et d’autres détails de haut niveau qui nécessitent les éléments suivants :
       * Quelques connaissances techniques
-         * Par exemple, l’utilisation de modèles lors de la définition de chemins d’accès.
+         * Par exemple, l’utilisation de modèles lors de la définition de chemins.
       * Des informations techniques provenant du développeur.
 
 En raison de la nature de certaines tâches, telles que la création d’un dossier, un environnement de développement est nécessaire, ce qui nécessite des connaissances/de l’expérience.
@@ -139,7 +139,7 @@ Un modèle peut avoir les propriétés suivantes :
 * Image
    * Image à utiliser comme [miniature du modèle](#template-thumbnail-image) pour faciliter la sélection, par exemple dans l’assistant Créer une page .
       * Peut être chargé
-      * Peut être généré en fonction du contenu du modèle.
+      * Peuvent être générées en fonction du contenu du modèle
 * Titre
    * Titre utilisé pour identifier le modèle, tel que dans la variable **Créer une page** assistant.
 * Description
@@ -228,9 +228,9 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 ## Modification des modèles   – Créateurs de modèles {#editing-templates-template-authors}
 
-Lorsque vous créez ou modifiez un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
+Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
-Le sélecteur **Mode** de la barre d’outils permet de sélectionner et de modifier l’aspect approprié du modèle :
+La variable **Mode** dans la barre d’outils, le sélecteur permet de sélectionner et d’éditer l’aspect approprié du modèle :
 
 * [Structure](#editing-a-template-structure-template-author)
 * [Contenu initial](#editing-a-template-initial-content-author)
@@ -238,7 +238,7 @@ Le sélecteur **Mode** de la barre d’outils permet de sélectionner et de modi
 
 ![Sélecteur de mode de l’éditeur de modèles](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-Tandis que l’option **Politique de page** du menu **Informations sur la page**, vous permet de [sélectionner les politiques de page désirées](#page-policies) :
+Lorsque la variable **Stratégie de page** sur l’option **Informations sur la page** vous permet de [sélectionnez les stratégies de page requises.](#page-policies):
 
 ![Informations sur la page de l’éditeur de modèles](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -323,7 +323,7 @@ Une fois ajouté, chaque composant est marqué par :
 
 #### Actions des composants {#component-actions}
 
-Agissez sur les composants une fois qu’ils ont été ajoutés au modèle. Chaque instance individuelle dispose d’une barre d’outils qui vous permet d’accéder aux actions disponibles. La barre d’outils dépend du type de composant.
+Agissez sur les composants une fois qu’ils ont été ajoutés au modèle. Chaque instance individuelle dispose d’une barre d’outils qui permet d’accéder aux actions disponibles. La barre d’outils dépend du type de composant.
 
 ![Barre d’outils d’actions d’un composant de modèle](/help/sites-cloud/authoring/assets/templates-component-actions.png)
 
@@ -345,7 +345,7 @@ Créez une politique de contenu ou sélectionnez-en une existante pour un compos
 
 ![Bouton Politique de contenu](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
 
-Cela permet de définir les détails de la conception.
+Vous pouvez ainsi définir les détails de la conception.
 
 ![Politique de contenu](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
@@ -407,7 +407,7 @@ Pour supprimer une configuration, cliquez ou appuyez sur le bouton **Supprimer**
 
 ###### Fonctions {#features}
 
-L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant.
+La variable **Fonctionnalités** vous permet d’activer ou de désactiver des fonctionnalités supplémentaires du composant.
 
 Par exemple, pour un composant d’image, vous pouvez définir les proportions de recadrage, les orientations d’image autorisées et si les chargements sont autorisés.
 
@@ -485,7 +485,7 @@ Lorsqu’un composant a été déverrouillé :
 
 ![Bouton Verrouiller le composant](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Cela comprend le déverrouillage des composants de conteneur afin que d’autres composants puissent être ajoutés, soit en mode **Contenu initial**, soit sur les pages résultantes. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci ne s’affichent plus lorsque dans **Structure** , mais elles s’affichent dans **Contenu initial** mode . Dans **Mode Structure**, seul le composant de conteneur s’affiche avec sa liste de **Composants autorisés**.
+Cela comprend le déverrouillage des composants de conteneur afin que d’autres composants puissent être ajoutés, soit en mode **Contenu initial**, soit sur les pages résultantes. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci ne s’affichent plus lorsque dans **Structure** , mais elles s’affichent dans **Contenu initial** mode . Dans **Mode de structure**, seul le composant de conteneur s’affiche avec sa liste de **Composants autorisés**.
 
 ![Composants autorisés](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 

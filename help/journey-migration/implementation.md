@@ -2,10 +2,10 @@
 title: Phase dʼimplémentation
 description: Assurez-vous que votre code et contenu sont prêts pour la migration vers le cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 92%
+source-wordcount: '2339'
+ht-degree: 89%
 
 ---
 
@@ -59,7 +59,7 @@ Il permet de spécifier le sous-ensemble de contenu que vous souhaitez transfér
 
 Le processus de migration de contenu consiste en plusieurs étapes, qui demandent une planification, un suivi et une collaboration entre les différentes équipes.
 
-Pour obtenir une description complète du fonctionnement de l’outil et de la façon dont nous vous recommandons de l’utiliser, consultez la section [Documentation de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Pour plus d’informations sur le fonctionnement de l’outil et sur la façon dont Adobe vous recommande de l’utiliser, voir la section [Documentation de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Refactorisation du code {#code-refactor}
 
@@ -112,7 +112,7 @@ Une fois que vous avez configuré l’environnement de développement local, fam
 
 ### Planifier un gel de code {#schedule-a-code-freeze}
 
-Pour gérer le développement de code en cours sur votre AEM actif, ainsi que les tâches de refonte du code au cours du parcours de transition, il est recommandé de planifier une période de gel du code jusqu’à la fin de la restructuration du projet Maven pour assurer la compatibilité avec AEM as a Cloud Service.
+Pour gérer le développement continu de votre code sur votre AEM active, ainsi que les tâches de refactorisation du code dans le cadre de votre parcours de transition, Adobe vous recommande de planifier une période de gel du code jusqu’à ce que vous ayez terminé la restructuration de votre projet Maven afin qu’il soit compatible avec AEM as a Cloud Service.
 
 Une fois la restructuration du projet terminée, vous pouvez reprendre le développement de nouveau code à l’aide de cette nouvelle structure. Les défaillances du pipeline de Cloud Manager seront ainsi réduites au cours du déploiement et du test du code.
 

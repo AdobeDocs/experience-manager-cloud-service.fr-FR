@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 85%
+source-wordcount: '1420'
+ht-degree: 80%
 
 ---
 
@@ -82,7 +82,7 @@ MSM peut aider à la création de sites web multilingues de deux façons :
 Lors de la création de gabarits de langue, gardez à l’esprit les points suivants :
 
 * Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Notez les points suivants :
-   * MSM vous permet d’annuler l’héritage au niveau des pages et des composants. Cela évite de remplacer le contenu traduit (dans une Live Copy, avec le contenu pas encore traduit d’un plan directeur) lors du déploiement suivant.
+   * MSM vous permet d’annuler l’héritage au niveau de la page et/ou du composant. Cela évite de remplacer le contenu traduit (dans une Live Copy, avec le contenu pas encore traduit d’un plan directeur) lors du déploiement suivant.
       * Certains connecteurs de traduction tiers automatisent cette gestion des héritages MSM.
       * Pour plus d’informations, contactez votre fournisseur de services de traduction.
       * Une autre méthode pour créer et traduire les gabarits de langue est d’utiliser des copies de langue conjointement à la structure d’intégration de traduction prête à l’emploi d’AEM.
@@ -113,9 +113,9 @@ Lorsque vous envisagez de déplacer des pages dans une Live Copy, tenez compte 
    * N’ajoutez pas d’autres actions à cette configuration.
 1. Placez la nouvelle configuration.
    * Pour déployer entièrement le déplacement de page tout en supprimant les pages respectives de leur ancien emplacement dans la Live Copy :
-      * Placez la configuration que vous venez de créer avant la configuration de déploiement standard. La configuration de déploiement standard se charge de supprimer les pages de leurs anciens emplacements.
+      * Placez la configuration nouvellement créée avant la configuration de déploiement standard. La configuration de déploiement standard se charge de supprimer les pages de leurs anciens emplacements.
       * Pour déployer le déplacement de page tout en conservant les pages respectives à leurs anciens emplacements dans les Live Copies (ce qui revient essentiellement à dupliquer le contenu) :
-         * Placez la configuration que vous venez de créer après la configuration de déploiement standard. Cela permet de s’assurer qu’aucun contenu n’est supprimé dans la Live Copy ni désactivé sur l’instance de publication.
+         * Positionnez la configuration nouvellement créée après la configuration de déploiement standard. Cela permet de s’assurer qu’aucun contenu n’est supprimé dans la Live Copy ni désactivé sur l’instance de publication.
 
 ## Personnalisation des déploiements {#customizing-rollouts}
 
@@ -140,7 +140,7 @@ Par conséquent, il est recommandé d’utiliser uniquement les déclencheurs `o
 
 ### Types/propriétés de nœuds {#node-types-properties}
 
-En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La [configuration OSGi MSM vous permet d’exclure des types de nœuds](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
+Outre la personnalisation des actions de déploiement, MSM vous permet de personnaliser les propriétés de noeud en cours de déploiement. La variable [La configuration OSGi MSM vous permet d’exclure les types de noeuds](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
 
 ## Informations supplémentaires {#further-information}
 

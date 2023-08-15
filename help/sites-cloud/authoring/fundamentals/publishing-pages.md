@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 84%
+source-wordcount: '1804'
+ht-degree: 83%
 
 ---
 
@@ -85,7 +85,7 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 >[!NOTE]
 >
->Les pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
+>Pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peut pas être publié. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
 ### Publication à partir de la console {#publishing-from-the-console}
 
@@ -124,7 +124,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    ![Sélection de pages en vue de la publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. L’assistant **Gérer la publication** démarre. La première étape, **Options**, vous permet d’effectuer les opérations suivantes :
+1. L’assistant **Gérer la publication** démarre. la première étape, **Options**, vous permet :
 
    * **Action**
 
@@ -228,7 +228,7 @@ Lors de la modification d’une page, si vous la dépubliez, sélectionnez **Dé
 
 >[!NOTE]
 >
->Les pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peuvent pas être dépubliées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
+>Pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peut pas être dépublié. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
 ### Dépublication à partir de la console {#unpublishing-from-the-console}
 

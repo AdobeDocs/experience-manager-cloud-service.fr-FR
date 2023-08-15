@@ -4,9 +4,9 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4078'
+source-wordcount: '4077'
 ht-degree: 89%
 
 ---
@@ -17,7 +17,7 @@ Les projets de traduction permettent de gérer la traduction du contenu d’AEM.
 
 >[!TIP]
 >
->Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous commencez à traduire du contenu, voir [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 Lorsque des ressources sont ajoutées à un projet de traduction, une tâche de traduction est créée pour ces ressources. Les tâches comportent les commandes et les informations sur le statut utilisées pour gérer les workflows de traduction humaine et automatique exécutés sur les ressources.
 
@@ -454,7 +454,7 @@ Dans ce scénario, la bonne pratique consiste à procéder comme suit :
 1. Annulez la publication des copies dans la langue associées à la page source que vous souhaitez déplacer.
 1. Supprimez-les.
 1. Créez de nouvelles copies dans la langue à partir de la page source nouvellement déplacée.
-1. Publiez les copies dans la langue nouvellement créées.
+1. Publiez les copies de langue nouvellement créées.
 
 ## Importation et exportation de tâches de traduction {#import-export}
 

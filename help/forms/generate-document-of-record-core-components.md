@@ -2,10 +2,10 @@
 title: Générer un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
-workflow-type: ht
-source-wordcount: '3109'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '3105'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ Lorsqu’un formulaire adaptatif est configuré pour générer automatiquement u
 * Les développeurs de formulaires n’ont pas à gérer manuellement les liaisons de données. Le document d’enregistrement généré automatiquement prend en charge les mises à jour des liaisons de données.
 * Les développeurs de formulaires n’ont pas à masquer manuellement les champs marqués comme exclus du document d’enregistrement. Les documents d’enregistrement générés automatiquement sont préconfigurés pour exclure ces champs.
 * L’option de génération automatique du document d’enregistrement permet de gagner du temps lors de la création d’un modèle de formulaire pour le document d’enregistrement.
-* L’option de génération automatique du document d’enregistrement vous permet d’utiliser des styles et des aspects différents en utilisant différents modèles de base. Il permet de sélectionner le style et l’apparence appropriés pour le document d’enregistrement de votre entreprise. Si vous ne spécifiez pas de style, les styles système sont définis en tant que valeur par défaut.
+* L’option Document d’enregistrement généré automatiquement vous permet d’utiliser des styles et des aspects différents en utilisant différents modèles de base. Il permet de sélectionner le style et l’apparence appropriés pour le document d’enregistrement de votre entreprise. Si vous ne spécifiez pas de style, les styles système sont définis en tant que valeur par défaut.
 * La génération automatique du document d’enregistrement permet de s’assurer que toute modification du formulaire se répercute immédiatement dans le document d’enregistrement.
 
 Suivez les étapes suivantes pour configurer un formulaire adaptatif afin de générer automatiquement un document d’enregistrement :
@@ -94,7 +94,7 @@ Liez les champs de formulaire adaptatif aux champs de modèle pour afficher les 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 Vous pouvez utiliser des actions d’envoi telles que « Envoyer par e-mail », « Appeler un workflow d’AEM », « Appeler un flux Power Automate », etc., et d’autres [actions d’envoi](configuring-submit-actions.md) pour recevoir un document d’enregistrement.
@@ -265,7 +265,7 @@ Composants tabulaires des formulaires adaptatifs, comme l’en-tête, le pied de
 
 ## Modèle de base d’un document d’enregistrement {#base-template-of-a-document-of-record}
 
-Le modèle de base fournit les informations de style et d’aspect du document d’enregistrement. Il permet de personnaliser l’aspect par défaut d’un document d’enregistrement généré automatiquement. Par exemple, vous pouvez utiliser des modèles de base pour ajouter le logo de votre entreprise dans l’en-tête et les informations sur le copyright dans le pied de page du document d’enregistrement.
+Le modèle de base fournit les informations de style et d’aspect du document d’enregistrement. Il vous permet de personnaliser l’aspect par défaut du document d’enregistrement généré automatiquement. Par exemple, vous pouvez utiliser des modèles de base pour ajouter le logo de votre entreprise dans l’en-tête et les informations sur le copyright dans le pied de page du document d’enregistrement.
 
 Le gabarit de page du modèle de base est utilisé comme gabarit de page du document du modèle d’enregistrement. Le gabarit de page peut comporter des informations telles que l’en-tête, le pied de page et le numéro de page, que vous pouvez appliquer au document d’enregistrement. Vous pouvez appliquer ces informations au document d’enregistrement à l’aide d’un modèle de base pour générer automatiquement un document d’enregistrement. L’utilisation d’un modèle de base vous permet de modifier les propriétés par défaut des champs.
 
@@ -328,14 +328,21 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Famille de polices** : famille de polices du texte dans le document d’enregistrement au format PDF.
 
       * **Inclure les objets de formulaire qui ne sont pas associés à un modèle de données** : la définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans le document d’enregistrement.
+
       <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **Masquer la description des panneaux** : la définition de la propriété exclut la description du panneau/tableau du document d’enregistrement. Applicable au panneau et au tableau.
+
+
+
    1. **Propriétés des champs de formulaire** :
       * **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées** : la définition de la propriété affiche uniquement les valeurs sélectionnées de la case à cocher et du bouton radio dans [!UICONTROL document d’enregistrement].
       * **Séparateur pour plusieurs valeurs** : vous pouvez choisir n’importe quel séparateur, tel qu’une virgule ou un saut de ligne, pour afficher plusieurs valeurs.
       * **Alignement des options** : vous pouvez sélectionner l’alignement de votre choix (horizontal, vertical, identique au formulaire adaptatif) pour définir l’alignement des champs (case à cocher ou bouton radio, par exemple) à afficher sur le [!UICONTROL document d’enregistrement]. Par défaut, l’alignement vertical est défini pour les champs du [!UICONTROL document d’enregistrement]. La définition des propriétés à partir des [!UICONTROL Propriétés des champs de formulaire] du document d’enregistrement remplace les propriétés définies dans la variable [!UICONTROL Alignement des éléments] pour les champs d’un formulaire adaptatif. Si vous sélectionnez l’option [!UICONTROL Identique au formulaire adaptatif], l’alignement tel que configuré dans une instance d’auteur de formulaire adaptatif est utilisé pour les champs du [!UICONTROL document d’enregistrement].
       * **Nombre d’options d’alignement horizontal** : vous pouvez définir le nombre d’options à afficher sur le document d’enregistrement pour l’alignement horizontal.
+
+
+
    1. **Propriétés du gabarit de page** :
       * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, sélectionner une image dans le gestionnaire des ressources numériques (DAM) ou en charger une à partir de votre ordinateur.
       * **Titre du formulaire** : titre du document d’enregistrement.
@@ -343,7 +350,9 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Libellé clause de non-responsabilité** : libellé de la clause de non-responsabilité.
       * **Clause de non-responsabilité** : texte spécifiant la portée des droits et des obligations sur le document d’enregistrement.
       * **Texte de clause de non-responsabilité** : texte de la clause de non-responsabilité.
+
       ![Propriétés du gabarit de page](/help/forms/assets/dorpropertiesimg.png)
+
    >[!NOTE]
    >
    >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous de la présence des éléments suivants dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :

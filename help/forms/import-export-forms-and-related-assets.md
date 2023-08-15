@@ -3,10 +3,10 @@ title: Importation et exportation des ressources
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: Vous pouvez importer et exporter des formulaires adaptatifs et des ressources connexes vers une instance AEM. Cela permet de migrer ou de déplacer facilement les formulaires vers d’autres systèmes.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 90%
+source-wordcount: '1323'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Pour les ressources pour lesquelles le chargement et l’importation sont pris e
 
 ## Téléchargement et chargement de ressources de formulaires et documents {#download-or-upload-forms-amp-documents-assets}
 
-L’interface utilisateur de [!DNL AEM Forms] vous permet d’exporter des ressources d’une instance AEM en les téléchargeant sous forme de fichiers binaires ou de package CRX AEM. Vous pouvez ensuite importer le package CRX ou le fichier binaire AEM téléchargé dans une autre instance AEM.
+[!DNL AEM Forms] L’interface utilisateur vous permet d’exporter des ressources à partir d’une instance AEM en les téléchargeant sous la forme d’un package CRX ou de fichiers binaires AEM. Vous pouvez ensuite importer le package CRX ou le fichier binaire AEM téléchargé dans une autre instance AEM.
 
 L’exportation et l’importation via l’interface utilisateur [!DNL AEM Forms] sont prises en charge pour toutes les ressources, à l’exception des modèles et des politiques de contenu de formulaires adaptatifs. Par conséquent, lors de l’exportation d’un formulaire adaptatif depuis l’interface utilisateur [!DNL AEM Forms], le modèle de formulaire adaptatif associé et les politiques de contenus ne sont pas automatiquement exportés comme d’autres ressources associées.
 
@@ -202,7 +202,7 @@ Pour créer un dossier, procédez comme suit :
 
    Si un dossier portant le même nom que celui spécifié existe déjà, l’envoi échoue avec une erreur. Vous pouvez afficher le message d’erreur en pointant sur l’icône d’erreur ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) qui s’affiche en regard du champ Nom.
 
-   Vous pouvez appuyer sur le dossier que vous venez de créer afin de l’ouvrir et de créer des ressources ou des dossiers dans ce dossier. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
+   Vous pouvez appuyer sur le dossier nouvellement créé pour accéder au dossier et créer des ressources ou des dossiers dans le dossier. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 
@@ -221,9 +221,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-[!DNL AEM Forms] UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+[!DNL AEM Forms] UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -239,7 +239,7 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 

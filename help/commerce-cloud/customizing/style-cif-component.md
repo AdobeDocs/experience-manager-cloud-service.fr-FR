@@ -1,5 +1,5 @@
 ---
-title: Style des composants principaux Adobe Experience Manager CIF
+title: Style des composants principaux CIF Adobe Experience Manager
 description: Découvrez comment mettre en forme les composants principaux Adobe Experience Manager (AEM) CIF. Le tutoriel explique comment les bibliothèques côté client (clientlibs) sont utilisées pour déployer et gérer des fichiers CSS et JavaScript pour une mise en oeuvre d’AEM Commerce. Ce tutoriel explique également comment le module ui.frontend et un projet webpack sont intégrés au processus de génération de bout en bout.
 sub-product: Commerce
 topics: Development
@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2535'
 ht-degree: 61%
 
 ---
@@ -71,9 +71,9 @@ Le code CSS et JavaScript responsable du rendu du thème/des styles du storefron
 
 Des styles spécifiques à la marque peuvent être appliqués aux composants principaux CIF AEM en ajoutant et en remplaçant le CSS géré par ces bibliothèques clientes. Il est essentiel de comprendre comment les bibliothèques clientes sont structurées et incluses dans la page.
 
-Le [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) est un [webpack](https://webpack.js.org/) pour gérer toutes les ressources front-end d’un projet. Ce webpack permet aux développeurs front-end d’utiliser un grand nombre de langues et de technologies, telles que [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/), et bien plus encore.
+La variable [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) est un [webpack](https://webpack.js.org/) pour gérer toutes les ressources front-end d’un projet. Ce webpack permet aux développeurs front-end d’utiliser un grand nombre de langues et de technologies, telles que [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/), et bien plus encore.
 
-Le `ui.frontend` module est également un module Maven et intégré au projet plus vaste à l’aide d’un module NPM le [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Au cours d’une génération, `aem-clientlib-generator` copie les fichiers CSS et JavaScript compilés dans une bibliothèque cliente du module`ui.apps`.
+La variable `ui.frontend` module est également un module Maven et intégré au projet plus vaste en utilisant un module NPM pour la [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Au cours d’une génération, `aem-clientlib-generator` copie les fichiers CSS et JavaScript compilés dans une bibliothèque cliente du module`ui.apps`.
 
 ![ui.frontend dans l’architecture ui.apps](../assets/style-cif-component/ui-frontend-architecture.png)
 
@@ -129,7 +129,7 @@ Apportez ensuite une légère modification au style du teaser pour voir comment 
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Inspectez la sortie du terminal. Notez que la commande Maven a exécuté plusieurs scripts NPM, y compris `npm run build`. Le `npm run build` est définie dans la fonction `package.json` et compile le projet webpack et déclenche la génération de la bibliothèque cliente.
+   Inspectez la sortie du terminal. Notez que la commande Maven a exécuté plusieurs scripts NPM, y compris `npm run build`. La variable `npm run build` est définie dans la fonction `package.json` et compile le projet webpack et déclenche la génération de la bibliothèque cliente.
 
 1. Inspectez le fichier `ui.frontend/dist/clientlib-site/site.css` :
 
@@ -178,7 +178,7 @@ Apportez ensuite une légère modification au style du teaser pour voir comment 
 
    Ces bibliothèques clientes ne sont pas gérées par le module `ui.frontend`. À la place, elles incluent les dépendances CSS et JavaScript fournies par Adobe. La définition de ces bibliothèques clientes figure dans le fichier `.content.xml` sous chaque dossier.
 
-   **clientlib-base** - Une bibliothèque cliente vide qui incorpore simplement les dépendances nécessaires de [Composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr). La catégorie est `venia.base`.
+   **clientlib-base** - Une bibliothèque cliente vide qui incorpore simplement les dépendances nécessaires de [Composants principaux d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr). La catégorie est `venia.base`.
 
    **clientlib-cif** - Une bibliothèque cliente vide qui incorpore simplement les dépendances nécessaires de [AEM Composants principaux CIF](https://github.com/adobe/aem-core-cif-components). La catégorie est `venia.cif`.
 
@@ -263,7 +263,7 @@ Il existe plusieurs options pour inclure une bibliothèque côté client. Examin
 
    ![Éditer le modèle](../assets/style-cif-component/edit-template.png)
 
-   Le **Page d’entrée** le modèle ouvert qui **Accueil** est basée sur .
+   La variable **Page d’entrée** le modèle ouvert que la fonction **Accueil** est basée sur .
 
    >[!NOTE]
    >
@@ -275,14 +275,14 @@ Il existe plusieurs options pour inclure une bibliothèque côté client. Examin
 
 1. La stratégie de page s’ouvre pour le modèle Landing Page :
 
-   ![Politique de page – Landing Page](../assets/style-cif-component/page-policy-properties.png)
+   ![Stratégie de page – Page de destination](../assets/style-cif-component/page-policy-properties.png)
 
    Sur le côté droit, vous pouvez voir la liste des bibliothèques clientes. **categories** qui sont inclus sur toutes les pages qui utilisent ce modèle.
 
    * `venia.dependencies` – Fournit les bibliothèques de fournisseurs dont `venia.site` dépend.
-   * `venia.site` - La catégorie pour `clientlib-site` que la variable `ui.frontend` génère.
+   * `venia.site` - La catégorie pour `clientlib-site` que la variable `ui.frontend` génère le module .
 
-   Notez que d’autres modèles utilisent la même politique, la **Page de contenu**, la **Page d’entrée**, etc. En réutilisant la même stratégie, elle garantit que les mêmes bibliothèques clientes sont incluses sur toutes les pages.
+   Notez que d’autres modèles utilisent la même stratégie, la **Page de contenu**, la **Page de destination**, etc. En réutilisant la même stratégie, elle garantit que les mêmes bibliothèques clientes sont incluses sur toutes les pages.
 
    Utiliser des politiques de modèle et de page pour gérer l’inclusion des bibliothèques clientes présente l’avantage de permettre de changer la politique par modèle. Par exemple, il se peut que vous gériez deux marques différentes au sein de la même instance AEM. Chaque marque possède son propre style ou *thème* mais les bibliothèques et le code de base sont les mêmes. Autre exemple : si vous disposez d’une bibliothèque cliente plus grande que vous ne souhaitez afficher que sur certaines pages, vous pouvez créer une politique de page unique réservée à ce modèle.
 

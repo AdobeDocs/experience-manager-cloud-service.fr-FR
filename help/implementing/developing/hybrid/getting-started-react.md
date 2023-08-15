@@ -1,11 +1,11 @@
 ---
 title: Prise en main des SPA dans AEM avec React
-description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
+description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 86%
+source-wordcount: '1141'
+ht-degree: 84%
 
 ---
 
@@ -60,7 +60,7 @@ Puisque cet exemple est basé sur le framework React, il existe deux dépendance
  react-dom
 ```
 
-Le `aem-clientlib-generator` est utilisé pour automatiser la création de bibliothèques clientes dans le cadre du processus de création.
+La variable `aem-clientlib-generator` est utilisé pour automatiser la création de bibliothèques clientes dans le cadre du processus de création.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-La fonction principale de `index.js` est d’utiliser la variable `ReactDOM.render` pour déterminer où, dans le DOM, injecter l’application.
+La fonction principale de `index.js` est d’utiliser la variable `ReactDOM.render` pour déterminer dans le DOM où injecter l’application.
 
 Cela est une utilisation standard de cette fonction, non spécifique à cet exemple d’application.
 

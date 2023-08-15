@@ -11,10 +11,10 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 96%
+source-wordcount: '2076'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Suivez les étapes de l’[Archétype de projet AEM](https://experienceleague.ad
 ![Projet AEM Commerce](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Créez et déployez le nouveau projet AEM Commerce vers le SDK AEM local en exécutant la commande suivante à partir du répertoire racine du projet.
+Créez et déployez le projet Commerce AEM nouvellement créé sur le SDK AEM local en exécutant la commande suivante à partir du répertoire racine du projet.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -403,11 +403,11 @@ Pour créer un flux de données dans Experience Platform, procédez comme suit.
 
    ![Créer des flux de données AEP](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Nommez votre flux de données à l’aide du champ __Nom__ obligatoire. Sous le champ __Schéma d’événement__, sélectionnez le schéma que vous venez de créer, puis cliquez sur __Enregistrer__.
+1. Nommez votre flux de données à l’aide du champ __Nom__ obligatoire. Sous , __Schéma d’événement__ , sélectionnez le schéma nouvellement créé et cliquez sur __Enregistrer__.
 
    ![Définir des flux de données AEP](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. Ouvrez le flux de données que vous venez de créer, puis cliquez sur __Ajouter un service__.
+1. Ouvrez le Datastream nouvellement créé, puis cliquez sur __Ajouter un service__.
 
    ![Ajouter un service aux flux de données AEP](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 

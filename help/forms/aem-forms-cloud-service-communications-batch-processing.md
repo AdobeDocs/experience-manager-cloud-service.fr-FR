@@ -2,16 +2,16 @@
 title: Traitement par lots des communications Experience Manager [!DNL Forms] as a Cloud Service
 description: Comment créer des communications personnalisées et axées sur la marque ?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 100%
+source-wordcount: '1692'
+ht-degree: 98%
 
 ---
 
 # Utilisation du traitement par lot
 
-La fonctionnalité Communications vous permet de créer, d’assembler et de diffuser des communications personnalisées et axées sur la marque. Il peut notamment s’agir de correspondances d’entreprise, de documents, de relevés, de courriers de traitement des réclamations, d’avis de prestations, de factures mensuelles et de kits de bienvenue. Vous pouvez utiliser les API Communications pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
+Communications vous permet de créer, d’assembler et de diffuser des communications personnalisées et axées sur la marque, telles que des correspondances d’entreprise, des documents, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des lettres de traitement des demandes, des factures mensuelles et des kits de bienvenue. Vous pouvez utiliser les API Communications pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
 
 La fonctionnalité Communications fournit des API pour la génération de documents planifiés et à la demande. Vous pouvez utiliser des API synchrones pour les API à la demande et Batch (API asynchrones) concernant la génération de documents planifiés :
 
@@ -157,7 +157,6 @@ La réponse de la demande d’état contient la section d’état. Elle fournit 
 >
 >* Lorsque vous demandez plusieurs formats d’impression, l’état contient plusieurs entrées. Par exemple, PRINT/ZPL, PRINT/IPL.
 >* Un traitement par lots ne lit pas tous les enregistrements simultanément, mais continue à lire et à incrémenter le nombre d’enregistrements. Par conséquent, le statut est -1 jusqu’à ce que tous les enregistrements aient été lus.
-
 
 ### Affichage des documents générés {#view-generated-documents}
 

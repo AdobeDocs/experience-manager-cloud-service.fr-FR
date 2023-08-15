@@ -3,16 +3,16 @@ title: Configuration d’une action Envoyer pour un formulaire adaptatif
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 hide: true
 hidefromtoc: true
-source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3365'
 ht-degree: 80%
 
 ---
 
 # Action Envoyer pour formulaire adaptatif {#configuring-the-submit-action}
 
-<span class="preview"> Adobe recommande d’utiliser les composants principaux pour [Ajout d’une Forms adaptative à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer une Forms adaptative autonome](/help/forms/creating-adaptive-form-core-components.md). </span>
+<span class="preview"> Adobe recommande d’utiliser les composants principaux pour [Ajout d’un Forms adaptatif à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer une Forms adaptative autonome](/help/forms/creating-adaptive-form-core-components.md). </span>
 
 
 | Version | Lien de l’article |
@@ -22,7 +22,7 @@ ht-degree: 80%
 | Application | ✅ Composants principaux de formulaire adaptatif, ❎ [Composants de base de formulaires adaptatifs](/help/forms/configuring-submit-actions.md) |
 
 
-Une action Envoyer vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle se déclenche lorsqu’un utilisateur clique sur la variable **[!UICONTROL Envoyer]** sur un formulaire adaptatif. Forms as a Cloud Service, pour Adaptive Forms basé sur les composants principaux, offre un tableau d’actions d’envoi préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
+Une action Envoyer permet de choisir la destination des données capturées via un formulaire adaptatif. Elle se déclenche lorsqu’un utilisateur clique sur la variable **[!UICONTROL Envoyer]** sur un formulaire adaptatif. Forms as a Cloud Service, pour Adaptive Forms basé sur les composants principaux, offre un tableau d’actions d’envoi préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
 
 * Envoyez facilement des données de formulaire par courrier électronique.
 * Lancez Microsoft Power Automatisez les flux ou les flux de AEM lors de la transmission des données.
@@ -32,12 +32,12 @@ Une action Envoyer vous permet de choisir la destination des données capturées
 
 Vous pouvez également [étendre les actions d’envoi par défaut ;](custom-submit-action-form.md) pour créer votre propre action Envoyer.
 
-## Sélection et configuration d’une action Envoyer pour un formulaire adaptatif {#select-and-configure-submit-action}
+## Sélectionner et configurer une action Envoyer pour un formulaire adaptatif {#select-and-configure-submit-action}
 
 Pour sélectionner et configurer une action Envoyer pour votre formulaire :
 
 1. Ouvrez l’explorateur de contenu , puis sélectionnez l’option **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
-1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
 
 1. Cliquez sur le bouton  **[!UICONTROL Envoi]** .
 
@@ -79,7 +79,7 @@ Pour envoyer un email à un ou plusieurs destinataires lors de l’envoi réussi
 
 En outre, la **[!UICONTROL Envoyer un courrier électronique]** L’action Envoyer permet d’inclure des pièces jointes et un document d’enregistrement (DE) avec le courrier électronique.
 
-Pour activer la variable [!UICONTROL Joindre un document d’enregistrement] , reportez-vous à la documentation relative à la [configurer le formulaire adaptatif pour générer un document d’enregistrement (DE) ;](generate-document-of-record-core-components.md). Vous pouvez activer cette option à partir des propriétés du formulaire adaptatif.
+Pour activer la variable [!UICONTROL Joindre un document d’enregistrement] , reportez-vous à la documentation sur [configurer le formulaire adaptatif pour générer un document d’enregistrement (DE) ;](generate-document-of-record-core-components.md). Vous pouvez activer cette option à partir des propriétés du formulaire adaptatif.
 
 <!-- [!NOTE]
 >
@@ -114,7 +114,7 @@ L’action d’envoi **[!UICONTROL Soumettre à SharePoint]** connecte un formul
 
 Pour connecter AEM Forms à votre stockage Microsoft® SharePoint :
 
-1. Accédez à **AEM Forms** instance > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Accédez à **AEM Forms** instance > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Sélectionnez un **conteneur de configuration**. Ne cochez pas la case du conteneur de configuration. Cliquez sur le nom du conteneur de configuration pour le sélectionner. La configuration est stockée dans le conteneur de configuration sélectionné.
 1. Cliquez sur **[!UICONTROL Créer]**. L’assistant de configuration SharePoint s’affiche.
    ![Configuration de SharePoint](/help/forms/assets/sharepoint_configuration.png)
@@ -126,7 +126,7 @@ Pour connecter AEM Forms à votre stockage Microsoft® SharePoint :
 
    >[!NOTE]
    >
-   > Le **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Principale Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
+   > La variable **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Active Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
 
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, le message `Connection Successful` s’affiche.
 
@@ -149,10 +149,10 @@ Vous pouvez utiliser la configuration SharePoint créée dans la section précé
    > Lorsque non [!UICONTROL Conteneur de configuration] est sélectionné, la variable globale [!UICONTROL Configuration de stockage] Les dossiers s’affichent dans la fenêtre des propriétés de l’action d’envoi.
 
 1. Sélectionnez l’**action d’envoi** **[!UICONTROL Soumettre à SharePoint]**.
-1. Sélectionnez le **[!UICONTROL Configuration de stockage]**. Il spécifie le dossier dans SharePoint pour enregistrer les données du formulaire et le document d’enregistrement.
+1. Sélectionnez la configuration **[!UICONTROL Configuration de stockage]**. Il spécifie le dossier dans SharePoint pour enregistrer les données du formulaire et le document d’enregistrement.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
 
-Lorsque vous envoyez le formulaire, les données sont enregistrées dans l’emplacement de stockage Microsoft® Share (Folder) spécifié.
+Lorsque vous envoyez le formulaire, les données sont enregistrées dans l’emplacement de stockage Microsoft® SharePoint (Dossier) spécifié.
 La structure de dossiers des données enregistrées est `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## Envoyer à l’aide du modèle de données de formulaire {#submit-using-form-data-model}

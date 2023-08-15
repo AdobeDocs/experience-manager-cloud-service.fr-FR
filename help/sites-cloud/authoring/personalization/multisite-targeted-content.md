@@ -2,9 +2,9 @@
 title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2891'
+source-wordcount: '2890'
 ht-degree: 45%
 
 ---
@@ -26,7 +26,7 @@ Ce document contient les informations suivantes :
 
 Pour configurer la manière dont vos sites partagent du contenu personnalisé, vous devez effectuer les étapes suivantes :
 
-1. [Créer une zone](#creating-new-areas) ou [créer une zone comme Live Copy ;](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *area* de la page ; , c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy vous permet d’hériter du contenu entre les structures du site.
+1. [Création d’une zone](#creating-new-areas) ou [créer une zone comme Live Copy ;](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *area* de la page, c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy vous permet d’hériter du contenu entre les structures du site.
 
 1. [Lier votre site ou votre page](#linking-sites-to-an-area) à une zone.
 
@@ -66,7 +66,7 @@ Avec la prise en charge de sites multiples pour le contenu ciblé, vous pouvez, 
    * Le site B est lié à la zone X
 * Un ensemble distinct de contenu ciblé *hérité* d’un autre site via MSM : le contenu peut être déployé, dans une seule direction, du maître vers la Live Copy. Par exemple :
    * Le site A est lié à la zone X
-   * Le site B est lié à la zone Y (qui est une Live Copy de la zone X).
+   * Le site B est lié à la zone Y (qui est une Live Copy de la zone X)
 
 Vous pouvez également **multiple** les marques utilisées sur un site, qui peuvent être plus complexes que cet exemple.
 
@@ -82,8 +82,8 @@ L’utilisation de sites multiples pour le contenu ciblé vous permet de partage
 
 Il existe quatre versions d’un même site en fonction de la géographie :
 
-* Le **États-Unis** se trouve dans le coin supérieur gauche et est le site maître. Dans cet exemple, il est ouvert en mode Ciblage.
-* Les trois autres versions de ce site sont les suivantes : **Canada**, **Grande-Bretagne**, et **Australie**, qui sont toutes des Live Copies. Ces sites sont ouverts en mode Aperçu.
+* La variable **États-Unis** se trouve dans le coin supérieur gauche et est le site maître. Dans cet exemple, il est ouvert en mode Ciblage.
+* Les trois autres versions de ce site sont : **Canada**, **Grande-Bretagne**, et **Australie**, qui sont toutes des Live Copies. Ces sites sont ouverts en mode Aperçu.
 
 ![Versions de sites multiples](/help/sites-cloud/authoring/assets/multisite-versions.png)
 
@@ -232,7 +232,7 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 >[!NOTE]
 >
 >* Vous pouvez uniquement suspendre ou désolidariser des Live Copies dans une activité.
->* Vous n’avez pas besoin de suspendre ou de désolidariser des Live Copies pour étendre une activité héritée. Vous pouvez toujours créer des **new** expériences et offres locales pour cette activité. Si vous souhaitez modifier une activité existante, vous devez suspendre l’héritage.
+>* Vous n’avez pas besoin de suspendre ou de désolidariser des Live Copies pour étendre une activité héritée. Vous pouvez toujours créer **new** expériences et offres locales pour cette activité. Si vous souhaitez modifier une activité existante, vous devez suspendre l’héritage.
 >
 
 ### Suspension de l’héritage {#suspending-inheritance}
@@ -275,7 +275,7 @@ Pour restaurer l’héritage du contenu ciblé dans une activité :
 
    ![Reprise de la Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
-1. Appuyez ou cliquez sur **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de la Live Copy. Toute modification apportée à l’activité actuelle est perdue si vous reprenez l’héritage.
+1. Appuyez ou cliquez sur **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de la Live Copy. Toutes les modifications apportées à l’activité actuelle sont perdues si vous reprenez l’héritage.
 
 ## Suppression de zones {#deleting-areas}
 

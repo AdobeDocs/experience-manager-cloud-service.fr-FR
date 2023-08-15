@@ -2,10 +2,10 @@
 title: Générer un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4143'
-ht-degree: 98%
+source-wordcount: '4139'
+ht-degree: 97%
 
 ---
 
@@ -75,7 +75,7 @@ Lorsqu’un formulaire adaptatif est configuré pour générer automatiquement u
 * Les développeurs de formulaires n’ont pas à gérer manuellement les liaisons de données. Le document d’enregistrement généré automatiquement prend en charge les mises à jour des liaisons de données.
 * Les développeurs de formulaires n’ont pas à masquer manuellement les champs marqués comme exclus du document d’enregistrement. Les documents d’enregistrement générés automatiquement sont préconfigurés pour exclure ces champs.
 * L’option de génération automatique du document d’enregistrement permet de gagner du temps lors de la création d’un modèle de formulaire pour le document d’enregistrement.
-* L’option de génération automatique du document d’enregistrement vous permet d’utiliser des styles et des aspects différents en utilisant différents modèles de base. Il permet de sélectionner le style et l’apparence appropriés pour le document d’enregistrement de votre entreprise. Si vous ne spécifiez pas de style, les styles système sont définis en tant que valeur par défaut.
+* L’option Document d’enregistrement généré automatiquement vous permet d’utiliser des styles et des aspects différents en utilisant différents modèles de base. Il permet de sélectionner le style et l’apparence appropriés pour le document d’enregistrement de votre entreprise. Si vous ne spécifiez pas de style, les styles système sont définis en tant que valeur par défaut.
 * La génération automatique du document d’enregistrement permet de s’assurer que toute modification du formulaire se répercute immédiatement dans le document d’enregistrement.
 
 Suivez les étapes suivantes pour configurer un formulaire adaptatif afin de générer automatiquement un document d’enregistrement :
@@ -103,7 +103,7 @@ Liez les champs de formulaire adaptatif aux champs de modèle pour afficher les 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 Vous pouvez utiliser l’action de soumission de workflow Experience Manager Envoyer un e-mail conjointement avec l’étape [Document d’enregistrement et autres actions de soumission](configuring-submit-actions.md) pour recevoir un document d’enregistrement.
@@ -284,7 +284,7 @@ Composants tabulaires des formulaires adaptatifs, comme l’en-tête, le pied de
 
 ## Modèle de base d’un document d’enregistrement {#base-template-of-a-document-of-record}
 
-Le modèle de base fournit les informations de style et d’aspect du document d’enregistrement. Il permet de personnaliser l’aspect par défaut d’un document d’enregistrement généré automatiquement. Par exemple, vous pouvez utiliser des modèles de base pour ajouter le logo de votre entreprise dans l’en-tête et les informations sur le droit d’auteur dans le pied de page du document d’enregistrement.
+Le modèle de base fournit les informations de style et d’aspect du document d’enregistrement. Il vous permet de personnaliser l’aspect par défaut du document d’enregistrement généré automatiquement. Par exemple, vous pouvez utiliser des modèles de base pour ajouter le logo de votre entreprise dans l’en-tête et les informations sur le droit d’auteur dans le pied de page du document d’enregistrement.
 
 Le gabarit de page du modèle de base est utilisé comme gabarit de modèle de document d’enregistrement. Le gabarit de page peut comporter des informations comme l’en-tête, le pied et le numéro de page, que vous pouvez appliquer au document d’enregistrement. Vous pouvez appliquer ces informations au document d’enregistrement à l’aide d’un modèle de base pour générer automatiquement un document d’enregistrement. L’utilisation d’un modèle de base permet de modifier les propriétés par défaut des champs.
 

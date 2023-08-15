@@ -3,10 +3,10 @@ title: Sélecteur de destination pour AEM as a Cloud Service
 description: Utilisez le sélecteur de destination AEM pour afficher et sélectionner les ressources que vous pouvez utiliser comme copie de la ressource d’origine.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 35%
+source-wordcount: '1902'
+ht-degree: 36%
 
 ---
 
@@ -86,7 +86,7 @@ import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-a
 
 ### Destination sélectionnée {#selected-destination}
 
-Le sélecteur de destination reçoit un rappel de `onItemSelect`, `onTreeToggleItem`ou `onTreeSelectionChange` avec le répertoire sélectionné contenant l’objet (répertoire, image, etc.).
+Le sélecteur de destination reçoit un rappel de `onItemSelect`, `onTreeToggleItem`, ou `onTreeSelectionChange` avec le répertoire sélectionné contenant l’objet (répertoire, image, etc.).
 
 **Syntaxe du schéma**
 
@@ -130,21 +130,21 @@ Le tableau suivant décrit certaines des propriétés importantes de la destinat
 | *repo:size* | nombre | Taille de la ressource en octets. |
 | *repo:path* | chaîne | Emplacement de la ressource dans le référentiel. |
 | *repo:ancestors* | `Array<string>` | Tableau d’éléments ancêtres de la ressource dans le référentiel. |
-| *repo:state* | chaîne | État actuel de la ressource dans le référentiel (par exemple, principal, supprimé, etc.). |
+| *repo:state* | chaîne | État actuel de la ressource dans le référentiel (par exemple, active, supprimée, etc.). |
 | *repo:createdBy* | chaîne | L’utilisateur, l’utilisatrice ou le système qui a créé la ressource. |
 | *repo:createDate* | chaîne | Date et heure de création de la ressource. |
 | *repo:modifiedBy* | chaîne | L’utilisateur, l’utilisatrice ou le système qui a modifié la ressource pour la dernière fois. |
 | *repo:modifyDate* | chaîne | Date et heure de la dernière modification de la ressource. |
 | *dc:format* | chaîne | Format de la ressource. |
-| *_page* | orderBy : string; count : nombre; | Inclut le numéro de page du document. |
+| *_page* | orderBy : string; count : number; | Inclut le numéro de page du document. |
 
-Pour obtenir la liste complète des propriétés et des exemples détaillés, rendez-vous sur la page [Exemple de code de sélecteur de destination](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+Pour obtenir la liste complète des propriétés et des exemples détaillés, consultez la page [Exemple de code de sélecteur de destination](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 ### Exemple pour le flux non-SUSI {#non-ims-vanilla}
 
 Cet exemple montre comment utiliser le sélecteur de destination avec un flux non SUSI lors de l’exécution d’une [!DNL Adobe] application sous Shell unifié ou lorsque vous avez déjà `imsToken` générés pour l’authentification.
 
-Incluez le package du sélecteur de destination dans votre code à l’aide de la variable `script` , comme illustré dans _lignes 6 à 15_ de l’exemple ci-dessous. Une fois le script chargé, la variable `PureJSSelectors` la variable globale peut être utilisée. Définition du sélecteur de destination [properties](#destination-selector-properties) comme illustré dans _lignes 16 à 23_. Les propriétés `imsOrg` et `imsToken` sont toutes deux requises pour l’authentification dans un flux non-SUSI. La propriété `handleSelection` sert à gérer les ressources sélectionnées. Pour effectuer le rendu du sélecteur de destination, appelez la fonction `renderDestinationSelector` comme indiqué dans _ligne 17_. Le sélecteur de destination s’affiche dans la `<div>` élément de conteneur, comme indiqué dans _lignes 21 et 22_.
+Incluez le package du sélecteur de destination dans votre code à l’aide de la variable `script` , comme illustré dans _lignes 6 à 15_ de l’exemple ci-dessous. Une fois le script chargé, la variable `PureJSSelectors` la variable globale est disponible. Définition du sélecteur de destination [properties](#destination-selector-properties) comme illustré dans _lignes 16 à 23_. Les propriétés `imsOrg` et `imsToken` sont toutes deux requises pour l’authentification dans un flux non-SUSI. La propriété `handleSelection` sert à gérer les ressources sélectionnées. Pour effectuer le rendu du sélecteur de destination, appelez la fonction `renderDestinationSelector` fonction comme indiqué dans _ligne 17_. Le sélecteur de destination s’affiche dans la `<div>` élément de conteneur, comme indiqué dans _lignes 21 et 22_.
 
 En suivant ces étapes, vous pouvez utiliser le sélecteur de destination avec un flux non SUSI dans votre [!DNL Adobe] application.
 
@@ -185,40 +185,40 @@ Vous pouvez utiliser les propriétés du sélecteur de destination pour personna
 
 | Propriété | Type | Requis | Valeur par défaut | Description |
 |---|---|---|---|---|
-| *imsOrg* | chaîne | Oui | | Identifiant Adobe Identity Management System (IMS) attribué lors de l’approvisionnement de [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] pour votre organisation. Le `imsOrg` clé est requise pour vous authentifier si l’organisation à laquelle vous accédez se trouve sous Adobe IMS ou non. |
+| *imsOrg* | chaîne | Oui | | Identifiant Adobe Identity Management System (IMS) attribué lors de l’approvisionnement de [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] pour votre organisation. La variable `imsOrg` clé est requise pour vous authentifier si l’organisation à laquelle vous accédez se trouve sous Adobe IMS ou non. |
 | *imsToken* | chaîne | Non | | Jeton de support IMS utilisé pour l’authentification. `imsToken` n’est pas nécessaire si vous utilisez le flux SUSI. Cependant, il est requis si vous utilisez le flux non SUSI. |
 | *apiKey* | chaîne | Non | | Clé d’API utilisée pour accéder au service AEM Discovery. `apiKey` n’est pas nécessaire si vous utilisez le flux SUSI. Toutefois, il est requis dans un flux non SUSI. |
 | *rootPath* | chaîne | Non | /content/dam/ | Chemin du dossier à partir duquel le sélecteur de destination affiche vos ressources. `rootPath` peut également être utilisé sous la forme d’encapsulation. Par exemple, étant donné le chemin suivant, `/content/dam/marketing/subfolder/`, le sélecteur de destination ne vous permet pas de parcourir les dossiers parents, mais affiche uniquement les dossiers enfants. |
 | *hasMore* | booléen | Non | | Lorsque l’application dispose de davantage de contenu à afficher, vous pouvez utiliser cette propriété pour ajouter un chargeur chargeant le contenu afin de le rendre visible dans l’application. Il s’agit d’un indicateur indiquant que le chargement du contenu est en cours. |
 | *orgName* | booléen | Non | | Il s’agit du nom de l’organisation (probablement orgID) associé à AEM |
 | *initRepoID* | chaîne | Non | | Il s’agit du chemin d’accès du référentiel de ressources que vous souhaitez utiliser dans une vue initiale par défaut. |
-| *onCreateFolder* | chaîne | Non | | Le `onCreateFolder` vous permet d’ajouter une icône qui ajoute un nouveau dossier dans l’application. |
+| *onCreateFolder* | chaîne | Non | | La variable `onCreateFolder` permet d’ajouter une icône qui ajoute un nouveau dossier dans l’application. |
 | *onConfirm* | chaîne | Non | | Il s’agit d’un rappel lorsque vous appuyez sur le bouton de confirmation. |
 | *confirmDisabled* | chaîne | Non | | Cette propriété contrôle le bouton de confirmation. |
-| *viewType* | chaîne | Non | | Le `viewType` sert à spécifier les vues que vous utilisez pour afficher les ressources. |
-| *viewTypeOptions* | chaîne | Non | | Cette propriété est liée à `viewType` . vous pouvez spécifier une ou plusieurs vues pour afficher les ressources. Les options viewType disponibles sont les suivantes : Mode Liste, mode Grille, mode Galerie, mode Cascade et mode Arborescence. |
+| *viewType* | chaîne | Non | | La variable `viewType` sert à spécifier les vues que vous utilisez pour afficher les ressources. |
+| *viewTypeOptions* | chaîne | Non | | Cette propriété est liée à `viewType` . vous pouvez spécifier une ou plusieurs vues pour afficher les ressources. Les options viewType disponibles sont les suivantes : Mode Liste, Mode Grille, Mode Galerie, Mode Cascade et Affichage Arborescence. |
 | *itemNameFormatter* | chaîne | Non | | Cette propriété vous permet de mettre en forme le nom de l’élément. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Non |  | Si les traductions prêtes à l’emploi ne sont pas suffisantes pour répondre aux besoins de votre application, vous pouvez exposer une interface par laquelle vous pouvez transmettre vos propres valeurs localisées et personnalisées via la propriété `i18nSymbols`. Le transfert d’une valeur par le biais de cette interface remplace les traductions fournies par défaut par les vôtres.  Pour effectuer le remplacement, vous devez transmettre un objet [Descripteur de message](https://formatjs.io/docs/react-intl/api/#message-descriptor) valide à la clé de `i18nSymbols` que vous voulez remplacer. |
-| *inlineAlertSetup* | chaîne | Non | | Il ajoute un message d’alerte que vous souhaitez transmettre à l’application. Par exemple, ajouter un message d’alerte indiquant que Vous n’êtes pas autorisé à accéder à ce dossier. |
+| *inlineAlertSetup* | chaîne | Non | | Il ajoute un message d’alerte à transmettre à l’application. Par exemple, ajouter un message d’alerte indiquant que Vous n’êtes pas autorisé à accéder à ce dossier. |
 | *intl* | Objet | Non | | Le sélecteur de destination fournit des traductions par défaut prêtes à l’emploi. Vous pouvez sélectionner la langue de traduction en fournissant une chaîne de paramètres régionaux valide via la propriété `intl.locale`. Par exemple : `intl={{ locale: "es-es" }}` </br></br>. Les chaînes de paramètres régionaux prises en charge suivent la norme [ISO 639 - Codes](https://www.iso.org/fr/iso-639-language-codes.html) pour la représentation des noms des normes linguistiques. </br></br> Liste des paramètres régionaux pris en charge : anglais (en-us, par défaut), espagnol (es-es), allemand (de-de), français (fr-FR), italien (it-it), japonais (ja-jp), coréen (ko-kr), portugais (pt-br), chinois (traditionnel, zh-cn), chinois (Taïwan, zh-tw). |
 
 ## Exemples d’utilisation des propriétés du sélecteur de destination {#usage-examples}
 
 Vous pouvez définir le sélecteur de destination [properties](#destination-selector-properties) dans le `index.html` pour personnaliser l’affichage du sélecteur de destination dans votre application.
 
-### Exemple 1 : Création d’un dossier dans le sélecteur de destination
+### Exemple 1 : création d’un dossier dans le sélecteur de destination
 
-Le sélecteur de destination vous permet de créer un dossier pour charger, déplacer ou copier des ressources à cet emplacement.
+Le sélecteur de destination vous permet de créer un dossier où charger, déplacer ou copier des ressources à cet emplacement.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
-### Exemple 2 : Définition du type de vue du sélecteur de destination
+### Exemple 2 : spécification du type de vue du sélecteur de destination
 
-Le sélecteur de destination affiche un large éventail de ressources dans quatre modes différents, notamment en mode Liste, Grille, Galerie et Cascade. Pour spécifier le type de vue par défaut, vous pouvez utiliser `viewType` . Le `viewTypeOptions` est utilisée avec la propriété `viewType` pour indiquer d’autres types de vue afin que d’autres options de type de vue puissent être affichées dans une liste déroulante. Un seul argument peut être utilisé si vous ne souhaitez afficher qu’une seule option.
+Le sélecteur de destination affiche un large éventail de ressources dans quatre modes différents, notamment en mode Liste, Grille, Galerie et Cascade. Pour spécifier le type de vue par défaut, vous pouvez utiliser `viewType` . La variable `viewTypeOptions` est utilisée avec la propriété `viewType` pour indiquer d’autres types de vue afin que d’autres options de type de vue puissent être affichées dans une liste déroulante. Un seul argument peut être utilisé si vous ne souhaitez afficher qu’une seule option.
 
 ![viewtype-destination-selector](assets/viewtype-destination-selector.png)
 
-### Exemple 3 : Initialisation du chemin d’accès au dossier de ressources
+### Exemple 3 : initialisation du chemin d’accès du dossier de ressources
 
 Utilisez la variable `path` pour définir le nom du dossier qui s’affiche automatiquement lors du rendu du sélecteur de destination.
 

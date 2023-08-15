@@ -2,10 +2,10 @@
 title: Vérification du statut du nom de domaine
 description: Découvrez comment déterminer si Cloud Manager a vérifié votre nom de domaine personnalisé avec succès.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 84%
+source-wordcount: '649'
+ht-degree: 82%
 
 ---
 
@@ -60,7 +60,7 @@ Cette erreur peut se produire lors de la validation du domaine de l’enregistre
 
 #### Cause de l’erreur {#cause}
 
-Fastly verrouille un domaine sur le compte initial qui l’a enregistré et aucun autre compte ne peut enregistrer de sous-domaine sans demander l’autorisation. De plus, Fastly ne vous permet d’affecter qu’un seul domaine apex et ses sous-domaines associés à un seul service et compte Fastly. Si vous disposez d’un compte Fastly qui lie les mêmes apex et sous-domaines utilisés pour vos domaines AEM Cloud Service, cette erreur s’affichera.
+Fastly verrouille un domaine sur le compte initial qui l’a enregistré et aucun autre compte ne peut enregistrer de sous-domaine sans demander l’autorisation. De plus, Fastly vous permet d&#39;affecter un domaine apex et des sous-domaines associés à un seul service et compte Fastly. Si vous disposez d’un compte Fastly qui lie les mêmes apex et sous-domaines utilisés pour vos domaines AEM Cloud Service, cette erreur s’affichera.
 
 #### Résolution d’erreurs {#resolution}
 

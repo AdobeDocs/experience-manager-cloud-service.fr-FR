@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1532'
-ht-degree: 90%
+source-wordcount: '1531'
+ht-degree: 89%
 
 ---
 
@@ -109,7 +109,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * **Prise en charge de l’utilisation de l’option littérale pour définir la valeur d’une variable de type JSON**
 
-  Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un processus AEM. L’option littérale vous permet de spécifier un fichier JSON sous la forme d’une chaîne.
+  Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un processus AEM. L’option littérale permet de spécifier un fichier JSON sous la forme d’une chaîne.
 
 * **Utilisation de l’environnement de développement local pour créer un document d’enregistrement**
 

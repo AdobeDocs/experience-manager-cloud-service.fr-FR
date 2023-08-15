@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 96%
+source-wordcount: '1027'
+ht-degree: 94%
 
 ---
 
@@ -53,7 +53,7 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 ### Correctifs d’[!DNL Assets] {#assets-bugs-fixed}
 
-* Lorsqu’un membre du groupe de contributeurs accède à la variable [!DNL Assets] Console, une `POST` est générée pour créer une collection. Cette demande n’est pas requise ; il échoue en raison de problèmes d’autorisations et crée de nombreuses erreurs dans les journaux. (CQ-4328856)
+* Lorsqu’un membre du groupe de contributeurs accède à la variable [!DNL Assets] Console, une `POST` est générée pour créer une collection. Cette requête n’est pas obligatoire ; elle échoue en raison de problèmes d’autorisation et crée de nombreuses erreurs dans les journaux. (CQ-4328856)
 * Lorsque les utilisateurs affichent une ressource et sélectionnent la [!UICONTROL Chronologie] dans le menu contextuel du panneau de gauche, une erreur s’affiche. Dans les journaux, de nombreux avertissements sont consignés en raison d’une requête erronée. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -64,7 +64,7 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 * **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
-* **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Ceci vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant que BLOB.
+* **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft Azure Storage en tant que BLOB.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 

@@ -2,9 +2,9 @@
 title: Conseils de développement sur AEM as a Cloud Service
 description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 86%
 
 ---
@@ -39,7 +39,7 @@ Par exemple, si l’utilisation du système de fichiers n’est pas prise en cha
 
 ## Observation {#observation}
 
-De même, compte tenu de tout ce qui se passe de manière asynchrone, comme les actions sur des événements d’observation, il n’est pas garanti que le système de fichiers soit exécuté localement et il doit donc être utilisé avec soin. Cela est vrai pour les événements JCR comme pour les événements de ressources Sling. Au moment d’un changement, l’instance peut être supprimée et remplacée par une autre instance. D’autres instances de la topologie principales à ce moment-là peuvent réagir à cet événement. Dans ce cas, cependant, il ne s’agira pas d’un événement local et il se pourrait même qu’il n’y ait pas de leader actif dans le cas d’une élection de leader en cours au moment de l’émission de l’événement.
+De même, compte tenu de tout ce qui se passe de manière asynchrone, comme les actions sur des événements d’observation, il n’est pas garanti que le système de fichiers soit exécuté localement et il doit donc être utilisé avec soin. Cela est vrai pour les événements JCR comme pour les événements de ressources Sling. Au moment d’un changement, l’instance peut être supprimée et remplacée par une autre instance. D’autres instances de la topologie actives à ce moment-là peuvent réagir à cet événement. Dans ce cas, cependant, il ne s’agira pas d’un événement local et il se pourrait même qu’il n’y ait pas de leader actif dans le cas d’une élection de leader en cours au moment de l’émission de l’événement.
 
 ## Tâches en arrière-plan et tâches à long terme {#background-tasks-and-long-running-jobs}
 
@@ -70,7 +70,7 @@ En plus de fournir des délais d’expiration, une gestion appropriée de ces d�
 ## Gestion des limites de taux de requête {#rate-limit-handling}
 
 >[!NOTE]
->La réponse d’erreur HTTP passera de 503 à 429 au cours de la semaine du 7 août 2023.
+>La réponse d’erreur HTTP passera de 503 à 429 durant la semaine du 7 août 2023.
 >
 Lorsque le taux de requêtes entrantes à AEM dépasse des niveaux sains, AEM répond aux nouvelles requêtes avec le code d’erreur HTTP 429. Les applications qui effectuent des appels programmatiques à AEM peuvent envisager de coder de manière défensive, en essayant à nouveau après quelques secondes avec une stratégie de backoff exponentiel. Avant la mi-août 2023, AEM avait répondu à la même condition avec le code d’erreur HTTP 503.
 
@@ -205,7 +205,7 @@ Pour les programmes de Production, l’accès à Developer Console est défini 
 
 ### Surveillance des performances {#performance-monitoring}
 
-Adobe surveille les performances de l’application et prend des mesures pour remédier à cette détérioration. Actuellement, il n’est pas possible d’observer les mesures d’application.
+Adobe surveille les performances de l’application et prend des mesures pour remédier à cette détérioration. Actuellement, les mesures d’application ne peuvent pas être observées.
 
 ## Envoi d’un e-mail {#sending-email}
 

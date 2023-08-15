@@ -2,10 +2,10 @@
 title: Présentation des fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 50%
+source-wordcount: '1640'
+ht-degree: 49%
 
 ---
 
@@ -27,7 +27,7 @@ Parce qu&#39;il n&#39;y a pas de `/libs/cq/experience-fragments/components/xfpag
 
 Le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut.
 
-Ce rendu est disponible à partir du navigateur. Toutefois, son Principal objectif est de permettre à d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) d’accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL.
+Ce rendu est disponible à partir du navigateur. Toutefois, son principal objectif est de permettre à d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) d’accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL.
 
 Le rendu en HTML brut ajoute le protocole, l’hôte et le chemin d’accès contextuel aux chemins suivants :
 
@@ -45,7 +45,7 @@ Par exemple :
 
 ![Rendu HTML brut](assets/xf-14.png)
 
-Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires. Le [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Ce transformateur est configuré comme suit :
+Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires. La variable [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Ce transformateur est configuré comme suit :
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -142,7 +142,7 @@ Par défaut, lorsque vous créez une offre HTML Target, une requête est envoyé
 
 Une fois la page de HTML générée, le pipeline Sling Rewriter est modifié en sortie :
 
-1. Les éléments `html`, `head` et `body` sont remplacés par des éléments `div`. Le `meta`, `noscript`, et `title` Les éléments sont supprimés (il s’agit d’éléments enfants de l’original `head` et ne sont pas pris en compte lorsqu’ils sont remplacés par la propriété `div` ).
+1. Les éléments `html`, `head` et `body` sont remplacés par des éléments `div`. La variable `meta`, `noscript`, et `title` Les éléments sont supprimés (il s’agit d’éléments enfants de l’original `head` et ne sont pas pris en compte lorsqu’ils sont remplacés par la propriété `div` ).
 
    Ce processus permet de s’assurer que l’offre Target par HTML peut être incluse dans les activités Target.
 
@@ -159,7 +159,7 @@ Une fois la page de HTML générée, le pipeline Sling Rewriter est modifié en 
    >
    >Les liens internes du HTML sont des liens relatifs, mais il peut arriver que des composants personnalisés fournissent des URL complètes dans le HTML. Par défaut, AEM ignore ces URL complètes et n’effectue aucune modification.
 
-   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` pour recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, accessible au public.
+   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` pour recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, disponible publiquement.
 
 Lors de l’utilisation d’une implémentation prête à l’emploi, le processus décrit ci-dessus doit être suffisant pour générer l’offre Target à partir du fragment d’expérience, puis l’exporter vers Adobe Target. Cependant, certains cas d’utilisation ne sont pas pris en compte dans ce processus. Voici quelques-uns de ces cas qui ne sont pas pris en compte :
 
@@ -170,13 +170,13 @@ Pour ces cas d’utilisation, AEM fournit l’interface du fournisseur de rééc
 
 ### Interface du fournisseur de réécriture de liens {#link-rewriter-provider-interface}
 
-Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Cette interface est une `ConsumerType` que vous pouvez implémenter dans vos bundles, en tant que service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
+Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Cette interface est une `ConsumerType` que vous pouvez implémenter dans vos bundles, en tant que service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens de HTML interne afin de l’adapter aux besoins de votre entreprise.
 
 Voici quelques exemples d’implémentation de cette interface en tant que service :
 
 * Les mappages Sling sont activés sur les instances de publication, mais pas sur l’instance de création.
 * Un Dispatcher ou une technologie similaire est utilisé pour rediriger les URL en interne.
-* Le `sling:alias mechanisms` sont en place pour les ressources ;
+* La variable `sling:alias mechanisms` sont en place pour les ressources ;
 
 >[!NOTE]
 >
@@ -278,7 +278,7 @@ Pour la variation du fragment d’expérience affectée par le processus de ré�
 En entrée, la méthode reçoit les paramètres suivants :
 
 * `link`
-Le `String` Représentation du lien en cours de traitement. Cette représentation est généralement une URL relative pointant vers la ressource sur l’instance de création.
+La variable `String` Représentation du lien en cours de traitement. Cette représentation est généralement une URL relative pointant vers la ressource sur l’instance de création.
 
 * `tag`
 Nom de l’élément de HTML en cours de traitement.
@@ -286,7 +286,7 @@ Nom de l’élément de HTML en cours de traitement.
 * `attribute`
 Nom exact de l’attribut.
 
-Par exemple, si le système Exporter vers Target traite cet élément, vous pouvez définir `CSSInclude` comme :
+Par exemple, si le système Exporter vers Target traite cet élément, vous pouvez définir `CSSInclude` en tant que :
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">

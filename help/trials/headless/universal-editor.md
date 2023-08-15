@@ -3,9 +3,9 @@ title: Modification En Contexte
 description: Découvrez comment utiliser l’éditeur universel pour modifier n’importe quel aspect de votre contenu en place et dans son contexte dans n’importe quelle mise en oeuvre.
 hidefromtoc: true
 index: false
-source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '959'
 ht-degree: 9%
 
 ---

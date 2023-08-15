@@ -2,10 +2,10 @@
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 77%
+ht-degree: 75%
 
 ---
 
@@ -40,9 +40,9 @@ Un programme peut fournir une variation réseau avancée unique. Lorsque vous h�
 
 ## Sortie de port flexible {#flexible-port-egress}
 
-Cette fonctionnalité de mise en réseau avancée vous permet de configurer AEM as a Cloud Service pour récupérer le trafic par des ports autres que HTTP (port 80) et HTTPS (port 443), qui sont ouverts par défaut.
+Cette fonctionnalité de mise en réseau avancée vous permet de configurer AEM as a Cloud Service pour récupérer le trafic via des ports autres que HTTP (port 80) et HTTPS (port 443), qui sont ouverts par défaut.
 
-### Considérations {#flexible-port-egress-considerations}
+### Remarques {#flexible-port-egress-considerations}
 
 Une sortie de port flexible est le choix recommandé si vous n’avez pas besoin de VPN et n’avez pas besoin d’une adresse IP de sortie dédiée, car le trafic qui ne dépend pas d’une sortie dédiée peut atteindre un débit supérieur.
 
@@ -180,7 +180,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->Si vous avez reçu une adresse IP de sortie dédiée avant la version de septembre 2021 (10/6/21), reportez-vous à la section [Clients d’adresse sortante dédiés hérités](#legacy-dedicated-egress-address-customers).
+>Si vous avez reçu une adresse IP de sortie dédiée avant la version de septembre 2021 (10/6/21), voir [Clients d’adresse sortante dédiés hérités](#legacy-dedicated-egress-address-customers).
 
 ### Avantages {#benefits}
 
@@ -345,7 +345,7 @@ Un VPN permet de se connecter à une infrastructure ou à un centre de données 
 
 Il permet également de se connecter aux fournisseurs SaaS tels qu’un fournisseur de gestion de la relation client qui prend en charge les VPN ou de se connecter à l’auteur, la prévisualisation ou la publication AEM as a Cloud Service à partir d’un réseau d’entreprise.
 
-La plupart des périphériques VPN dotés de la technologie IPSec sont pris en charge. Consultez la liste des périphériques sur [cette page](https://docs.microsoft.com/fr-fr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable), en fonction des informations dans la colonne **Instructions de configuration basées sur les routes**. Configurez le périphérique comme décrit dans le tableau.
+La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge. Consultez la liste des appareils sur [cette page](https://docs.microsoft.com/fr-fr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable), en fonction des informations dans la colonne **Instructions de configuration basées sur les routes**. Configurez l’appareil comme décrit dans le tableau.
 
 ### Remarques générales {#general-vpn-considerations}
 
@@ -425,7 +425,7 @@ Le tableau ci-dessous décrit le routage du trafic.
   </tr>
   <tr>
     <td></td>
-    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de passerelle VPN</i> et via la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java standard).</td>
+    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de la passerelle VPN</i> et via la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java standard).</td>
     <td>N’importe lequel</td>
     <td>Via l’adresse IP sortante dédiée</td>
     <td></td>
@@ -454,7 +454,7 @@ Le tableau ci-dessous décrit le routage du trafic.
   </tr>
   <tr>
     <td></td>
-    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de passerelle VPN</i> plage et le client se connecte à <code>AEM_PROXY_HOST</code> env à l’aide d’une variable <code>portOrig</code> déclaré dans la variable <code>portForwards</code> Paramètre d’API</td>
+    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de la passerelle VPN</i> plage et le client se connecte à <code>AEM_PROXY_HOST</code> env en utilisant une variable <code>portOrig</code> déclaré dans la variable <code>portForwards</code> Paramètre d’API</td>
     <td>N’importe lequel</td>
     <td>Via l’adresse IP sortante dédiée</td>
     <td></td>
@@ -544,31 +544,31 @@ Si l’interruption devait entraîner un impact important sur l’activité, con
 
 ## Configuration de réseau avancée pour d’autres régions de publication {#advanced-networking-configuration-for-additional-publish-regions}
 
-Lorsqu’une région supplémentaire est ajoutée à un environnement qui dispose déjà d’une mise en réseau avancée configurée, le trafic de la région de publication supplémentaire qui correspond aux règles de mise en réseau avancées traverse par défaut la région Principale. Toutefois, si la région Principale n’est plus disponible, le trafic réseau avancé est abandonné si la mise en réseau avancée n’a pas été activée dans la région supplémentaire. Si vous souhaitez optimiser la latence et augmenter la disponibilité en cas de panne de l’une des régions, il est nécessaire d’activer une mise en réseau avancée pour la ou les régions de publication supplémentaires. Les sections suivantes décrivent deux scénarios différents.
+Lorsqu’une région supplémentaire est ajoutée à un environnement qui dispose déjà d’une mise en réseau avancée configurée, le trafic de la région de publication supplémentaire qui correspond aux règles de mise en réseau avancées traverse par défaut la région principale. Toutefois, si la région principale n’est plus disponible, le trafic réseau avancé est abandonné si la mise en réseau avancée n’a pas été activée dans la région supplémentaire. Si vous souhaitez optimiser la latence et augmenter la disponibilité en cas de panne de l’une des régions, il est nécessaire d’activer une mise en réseau avancée pour la ou les régions de publication supplémentaires. Deux scénarios différents sont décrits dans les sections suivantes.
 
 >[!NOTE]
 >
->Toutes les régions partagent la même [configuration de réseau avancé de l’environnement](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), il n’est donc pas possible d’acheminer le trafic vers différentes destinations en fonction de la région d’où provient le trafic.
+>Toutes les régions partagent la même [configuration avancée de la mise en réseau de l’environnement](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), il n’est donc pas possible d’acheminer le trafic vers différentes destinations en fonction de la région d’où provient le trafic.
 
 ### Adresses IP Egress dédiées {#additional-publish-regions-dedicated-egress}
 
-#### Mise en réseau avancée déjà activée dans la région Principale {#already-enabled}
+#### Mise en réseau avancée déjà activée dans la région principale {#already-enabled}
 
-Si une configuration réseau avancée est déjà activée dans la région Principale, procédez comme suit :
+Si une configuration réseau avancée est déjà activée dans la région principale, procédez comme suit :
 
-1. Si vous avez verrouillé votre infrastructure de sorte que l’adresse IP AEM dédiée soit répertoriée, il est recommandé de désactiver temporairement toute règle de refus dans cette infrastructure. Si ce n’est pas le cas, il y a une courte période pendant laquelle les demandes provenant des adresses IP de la nouvelle région sont refusées par votre propre infrastructure. Notez que cela n’est pas nécessaire si vous avez verrouillé votre infrastructure via le nom de domaine complet (FQDN), (`p1234.external.adobeaemcloud.com`, par exemple), car toutes les régions AEM reçoivent un trafic réseau avancé du même nom de domaine complet (FQDN).
-1. Créez l’infrastructure réseau à portée de programme pour la région secondaire par le biais d’un appel POST à l’API Cloud Manager Create Network Infrastructure, comme décrit dans la documentation réseau avancée. La seule différence dans la configuration JSON de la payload par rapport à la région Principale est la propriété region .
+1. Si vous avez verrouillé votre infrastructure de sorte que l’adresse IP AEM dédiée soit répertoriée, il est recommandé de désactiver temporairement toute règle de refus dans cette infrastructure. Si ce n’est pas le cas, il y a une courte période pendant laquelle les demandes provenant des adresses IP de la nouvelle région sont refusées par votre propre infrastructure. Cela n’est pas nécessaire si vous avez verrouillé votre infrastructure au moyen d’un nom de domaine complet (FQDN), (`p1234.external.adobeaemcloud.com`, par exemple), car toutes les régions AEM reçoivent un trafic réseau avancé du même nom de domaine complet (FQDN).
+1. Créez l’infrastructure réseau à portée de programme pour la région secondaire par le biais d’un appel POST à l’API Cloud Manager Create Network Infrastructure, comme décrit dans la documentation réseau avancée. La seule différence dans la configuration JSON de la payload par rapport à la région principale est la propriété region .
 1. Si votre infrastructure doit être verrouillée par IP pour autoriser AEM trafic, ajoutez les adresses IP qui correspondent `p1234.external.adobeaemcloud.com`. Il devrait y en avoir une par région.
 
 #### Mise en réseau avancée non encore configurée dans une région {#not-yet-configured}
 
 La procédure est essentiellement similaire aux instructions précédentes. Cependant, si l’environnement de production n’a pas encore été activé pour la mise en réseau avancée, vous avez la possibilité de tester la configuration en l’activant d’abord dans un environnement intermédiaire :
 
-1. Créez une infrastructure de réseau pour toutes les régions à l’aide de l’appel du POST à la fonction [API de création d’infrastructure réseau de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). La seule différence dans la configuration JSON de la payload par rapport à la région Principale est la propriété region.
+1. Créez une infrastructure de réseau pour toutes les régions à l’aide de l’appel du POST à la fonction [API Create Network Infrastructure de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). La seule différence dans la configuration JSON de la payload par rapport à la région principale est la propriété region.
 1. Pour l’environnement d’évaluation, activez et configurez l’environnement mis en réseau avancé en exécutant `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Pour plus d’informations, voir la documentation de l’API . [here](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. Si nécessaire, verrouiller l’infrastructure externe, de préférence par le nom de domaine complet (par exemple `p1234.external.adobeaemcloud.com`). Vous pouvez le faire autrement par adresse IP.
 1. Si l’environnement d’évaluation fonctionne comme prévu, activez et configurez la configuration de mise en réseau avancée de l’environnement pour la production.
 
 #### VPN {#vpn-regions}
 
-La procédure est presque identique aux instructions d’adresses IP sortantes dédiées. La seule différence est qu’en plus de la propriété de région configurée différemment de la région Principale, la variable `connections.gateway` peut éventuellement être configuré pour acheminer vers un autre point d’entrée VPN opéré par votre organisation, peut-être géographiquement plus proche de la nouvelle région.
+La procédure est presque identique aux instructions d’adresses IP sortantes dédiées. La seule différence est qu’en plus de la propriété de région configurée différemment de la région principale, la variable `connections.gateway` peut éventuellement être configuré pour acheminer vers un autre point d’entrée VPN opéré par votre organisation, peut-être géographiquement plus proche de la nouvelle région.

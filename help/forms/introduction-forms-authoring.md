@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 86da8e784e3e5ff034efdb9186cf134d4b1c6e9c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2482'
 ht-degree: 66%
 
 ---
@@ -94,7 +94,7 @@ Affiche la hiérarchie des objets du formulaire. L’auteur peut accéder au com
 
    * **Objets de modèle de données**
 Permet de voir la hiérarchie des modèles de formulaire.
-Vous pouvez faire glisser des éléments du modèle de formulaire sur le formulaire adaptatif. Les éléments ajoutés sont automatiquement convertis en composants de formulaire tout en conservant leurs propriétés d’origine. Vous pouvez voir des objets de modèle de données lorsque votre formulaire utilise un schéma XML, un schéma JSON ou un modèle XDP.
+Il vous permet de faire glisser des éléments de modèle de formulaire sur le formulaire adaptatif. Les éléments ajoutés sont automatiquement convertis en composants de formulaire tout en conservant leurs propriétés d’origine. Vous pouvez voir des objets de modèle de données lorsque votre formulaire utilise un schéma XML, un schéma JSON ou un modèle XDP.
 
 * **Explorateur de propriétés**
 
@@ -150,7 +150,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Groupe de fragments de document</td>
-   <td>Vous permet d’ajouter un groupe de fragments de document associés que vous pouvez utiliser dans un modèle de lettre en tant qu’unité unique.</td>
+   <td>Vous permet d’ajouter un groupe de fragments de document associés que vous pouvez utiliser dans un modèle de lettre comme une seule unité.</td>
   </tr>
   <tr>
    <td>Liste déroulante</td>
@@ -178,7 +178,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Image</td>
-   <td>Vous permet d’insérer une image.</td>
+   <td>Permet d’insérer une image.</td>
   </tr>
   <tr>
    <td>Choix d’image</td>
@@ -214,7 +214,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Bouton de réinitialisation</td>
-   <td>Ajoute un bouton pour réinitialiser les champs de formulaire.</td>
+   <td>Ajoute un bouton permettant de réinitialiser les champs du formulaire.</td>
   </tr>
   <tr>
    <td>Bouton Enregistrer</td>
@@ -336,7 +336,7 @@ Par exemple, si vous tapez **[!UICONTROL Parent]** pour une zone de texte, vous
 * guideRootPanel
 * Conteneur de formulaires adaptatifs
 
-J. **Autres**: Fournit d’autres options pour utiliser le composant sélectionné.
+J. **Autres**: fournit d’autres options pour l’utilisation du composant sélectionné.
 
 * Afficher l’expression SOM
 * Enregistrement d’un panneau en tant que fragment (pour les panneaux uniquement)
@@ -355,11 +355,11 @@ La structure de contenu contient généralement les composants principaux ci-des
 * **guideContainer** : racine d’un formulaire adaptatif, indiquée sous la forme **[!UICONTROL Début du formulaire adaptatif]** dans l’interface utilisateur du formulaire. Dans ce composant, vous pouvez spécifier les éléments suivants :
 
    * *Mise en page du formulaire adaptatif pour mobiles* : définit l’apparence du formulaire sur les appareils mobiles.
-   * *Page de remerciement*: Définit la page vers laquelle l’utilisateur est redirigé après l’envoi du formulaire.
-   * *Action Envoyer*: Définit le mode de traitement du formulaire sur le serveur une fois que l’utilisateur l’a envoyé.
-   * *Style*: Spécifie le chemin d’accès au fichier CSS utilisé pour personnaliser l’aspect du formulaire.
+   * *Page de remerciement*: définit la page vers laquelle l’utilisateur est redirigé après l’envoi du formulaire.
+   * *Action Envoyer*: définit le mode de traitement du formulaire sur le serveur une fois que l’utilisateur l’a envoyé.
+   * *Style*: indique le chemin d’accès au fichier CSS utilisé pour personnaliser l’aspect du formulaire.
 
-* **rootPanel** : panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le noeud éléments . Une disposition peut être associée à chaque panneau, y compris le panneau racine. La disposition du panneau détermine la disposition du formulaire. Par exemple, dans la mise en page en accordéon, les éléments constitutifs sont disposés sous la forme d’étapes en accordéon.
+* **rootPanel** : panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le noeud éléments . Une mise en page peut être associée à chaque panneau, y compris le panneau racine. La disposition du panneau détermine la disposition du formulaire. Par exemple, dans la mise en page en accordéon, les éléments constitutifs sont disposés sous la forme d’étapes en accordéon.
 
 * **toolbar:** : une barre d’outils globale est associée à un conteneur de formulaires adaptatifs. Il s’agit d’une barre d’outils à l’échelle du formulaire. Cette barre d’outils peut être ajoutée à l’aide de l’action **[!UICONTROL Ajouter une barre d’outils]** de la barre d’édition, ce qui permet aux auteurs d’ajouter des actions telles que Envoyer, Enregistrer, réinitialiser, etc.
 

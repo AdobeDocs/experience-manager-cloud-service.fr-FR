@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.8.0.
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 89%
+source-wordcount: '1038'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Possibilité de [restaurer les pages et les sous-pages (arborescences de page) dans une version antérieure](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* Capacité à [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans AEM [Éditeur de SPA](/help/implementing/developing/hybrid/introduction.md).
+* Capacité à [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans AEM [Éditeur SPA](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -84,7 +84,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
   Voir [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md) pour plus d’informations.
 
-* Les nouveaux environnements créés dans les programmes Assets seront désormais automatiquement configurés avec le service de contenu dynamique.
+* Les nouveaux environnements créés dans les programmes Assets seront désormais automatiquement configurés avec Smart Content Services.
 
 * Il est possible de désactiver les environnements placés en veille prolongée à l’aide de la page **Aperçu** de Cloud Manager.
 
@@ -140,6 +140,6 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 
 * Publication du module AIO-CLI afin d’unifier les outils de refactorisation du code pour permettre aux développeurs d’appeler et d’exécuter ces outils à partir d’un seul emplacement. Voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) pour plus d’informations.
 
-* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Voir [Ressource Git : Convertisseur du Dispatcher AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) pour plus d’informations.
+* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Voir [Ressource Git : convertisseur du Dispatcher AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) pour plus d’informations.
 
 * Réécriture du convertisseur du Dispatcher dans ` node.js ` et intégration avec le module AIO-CLI.

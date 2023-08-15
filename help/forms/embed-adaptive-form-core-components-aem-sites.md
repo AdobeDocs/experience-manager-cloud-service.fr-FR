@@ -6,10 +6,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 100%
+source-wordcount: '2131'
+ht-degree: 96%
 
 ---
 
@@ -19,9 +19,9 @@ Vous pouvez facilement créer ou incorporer des formulaires adaptatifs dans une 
 
 Vous pouvez choisir l’une des méthodes suivantes pour créer ou ajouter un formulaire adaptatif à une page AEM Sites :
 
-* **Créer un formulaire adaptatif à l’aide du composant Conteneur de formulaires adaptatifs** : le composant [Conteneur de formulaires adaptatifs](#af-container-component) permet de créer des expériences d’inscription numérique en utilisant des composants de formulaires adaptatifs directement dans l’éditeur AEM Sites. Cette intégration offre une expérience transparente aux auteurs et autrices AEM Sites qui souhaitent créer et gérer des formulaires dans leurs pages AEM Sites.
+* **Création d’un formulaire adaptatif à l’aide du composant de conteneur de Forms adaptatif**: la variable [Conteneur de formulaires adaptatifs](#af-container-component) vous permet de créer des expériences d’inscription numérique en utilisant des composants Forms adaptatif directement dans l’éditeur AEM Sites. Cette intégration offre une expérience transparente aux auteurs et autrices AEM Sites qui souhaitent créer et gérer des formulaires dans leurs pages AEM Sites.
 
-* **Ajouter un formulaire adaptatif existant** : le composant [Formulaires adaptatifs - Incorporer (v2)](#embed-existing-af) permet d’ajouter facilement un formulaire adaptatif préexistant à une page dans AEM Sites. Cette fonctionnalité améliore l’adaptabilité et la possibilité de réutilisation des formulaires adaptatifs. Cette intégration permet aux clientes et clients de réutiliser les formulaires adaptatifs déjà créés.
+* **Ajouter un formulaire adaptatif existant**: la variable [Forms adaptatif - Incorporer (v2)](#embed-existing-af) permet d’ajouter facilement un formulaire adaptatif préexistant dans une page dans AEM Sites. Cette fonctionnalité améliore l’adaptabilité et la possibilité de réutilisation des formulaires adaptatifs. Cette intégration permet aux clientes et clients de réutiliser les formulaires adaptatifs déjà créés.
 
 * **Utiliser l’assistant de formulaires adaptatifs pour créer un formulaire** : le composant [Formulaires adaptatifs - Incorporer (v2)](#embed-new-af) permet de créer un formulaire adaptatif à partir de l’éditeur AEM Sites à l’aide de l’assistant de création de formulaire. Le formulaire est enregistré en tant qu’entité externe. Vous pouvez également réutiliser ce formulaire dans d’autres pages Sites et dans des formulaires autonomes.
 
@@ -140,7 +140,7 @@ Dans la boîte de dialogue [!UICONTROL Modifier le conteneur de formulaires adap
 
 ## Incorporer un formulaire adaptatif  {#aem-container-component}
 
-L’utilisation du composant **[!UICONTROL Formulaires adaptatifs - Incorporer (V2)]** permet d’incorporer un nouveau formulaire adaptatif ou un formulaire adaptatif existant dans la page de Site. Le composant [!UICONTROL Formulaires adaptatifs - Incorporer (v2)] vous permet d’effectuer les opérations suivantes :
+L’utilisation du composant **[!UICONTROL Formulaires adaptatifs - Incorporer (V2)]** permet d’incorporer un nouveau formulaire adaptatif ou un formulaire adaptatif existant dans la page de Site. La variable [!UICONTROL Forms adaptatif - Incorporer (v2)] permet d’effectuer les opérations suivantes :
 
 * [Ajouter un formulaire adaptatif existant](#embed-new-af)
 

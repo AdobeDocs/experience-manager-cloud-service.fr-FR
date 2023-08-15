@@ -2,10 +2,10 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 95%
+source-wordcount: '728'
+ht-degree: 87%
 
 ---
 
@@ -79,7 +79,7 @@ En tant qu’auteur, vous n’êtes pas responsable de la définition de ces rel
 
 ### Création de fragments imbriqués {#author-nested-fragment}
 
-La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus couramment) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet d’accéder au fragment dont vous avez besoin et de le sélectionner.
+La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus probablement) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet de naviguer et de sélectionner le fragment dont vous avez besoin.
 
 ![Fragments de contenu – Références](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

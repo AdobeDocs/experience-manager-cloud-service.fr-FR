@@ -2,10 +2,10 @@
 title: Comment mettre à jour votre contenu à l’aide des API AEM Assets
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 100%
+source-wordcount: '1069'
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ Cet article s’appuie sur ces principes de base afin que vous compreniez commen
 
 Alors pourquoi une autre API est-elle nécessaire ?
 
-L’API HTTP Assets vous permet de **Lire** votre contenu, mais elle vous permet également de **Créer**, **Mettre à jour** et **Supprimer** le contenu – des actions qui sont impossibles avec l’API GraphQL.
+L’API HTTP Assets ne vous permet pas de **Lecture** votre contenu, mais il vous permet également de **Créer**, **Mettre à jour** et **Supprimer** content : actions qui ne sont pas possibles avec l’API GraphQL.
 
 L’API REST Assets est disponible pour chaque installation prête à l’emploi d’une version récente d’Adobe Experience Manager as a Cloud Service.
 
@@ -54,7 +54,7 @@ L’API HTTP Assets englobe les éléments suivants :
 
 L’implémentation actuelle de l’API HTTP Assets repose sur le style architectural **REST** et permet d’accéder au contenu (stocké dans AEM) via les opérations **CRUD** (Create, Read, Update, Delete) pour créer, lire, mettre à jour, supprimer.
 
-Grâce à ces opérations, l’API permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant des services de contenu à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications sur une seule page (SPA), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Grâce à ces opérations, l’API vous permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications sur une seule page (SPA), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
 <!--
 >[!NOTE]

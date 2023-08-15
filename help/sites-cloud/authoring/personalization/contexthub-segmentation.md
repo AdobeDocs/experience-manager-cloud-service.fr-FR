@@ -2,10 +2,10 @@
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 78%
+source-wordcount: '1687'
+ht-degree: 77%
 
 ---
 
@@ -21,7 +21,7 @@ AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs.
 
 ## Accès aux segments {#accessing-segments}
 
-Le [Audiences](audiences.md) La console permet de gérer les segments pour ContextHub et les audiences pour votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub.
+La variable [Audiences](audiences.md) La console permet de gérer les segments pour ContextHub et les audiences pour votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub.
 
 Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**. Sélectionnez votre configuration (par exemple, le site WKND) pour visualiser vos segments :
 
@@ -29,8 +29,8 @@ Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navig
 
 ## Éditeur de segment {#segment-editor}
 
-<!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-L’**éditeur de segment** vous permet de modifier facilement un segment. Pour modifier un segment, sélectionnez un segment dans la liste de segments et cliquez sur le bouton **Modifier**.
+<!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
+La variable **Éditeur de segment** permet de modifier facilement un segment. Pour modifier un segment, sélectionnez un segment dans la liste de segments et cliquez sur le bouton **Modifier**.
 
 ![Éditeur de segment](../assets/contexthub-segment-editor.png)
 
@@ -71,7 +71,7 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
 >
 >Par conséquent, lors de la [création d’un segment](#creating-a-new-segment), vous devez sélectionner un **type de données** chaque fois que les types de valeurs comparées sont connus. Par exemple :
 >
->Lors de la comparaison de la propriété `profile/age`, vous savez déjà que le type comparé est une **nombre**, même si `profile/age` n’est pas défini, il s’agit d’une comparaison `profile/age` moins de 30 est renvoyé **false**, comme vous l’attendriez.
+>Lors de la comparaison de la propriété `profile/age`, vous savez déjà que le type comparé est une **nombre**, même si `profile/age` n’est pas défini, une comparaison `profile/age` moins de 30 est renvoyé **false**, comme vous l’attendriez.
 
 ### Références {#references}
 
@@ -199,7 +199,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
-   * Le **Nom** devient le nom du noeud dans le référentiel.
+   * La variable **Nom** devient le nom du noeud dans le référentiel.
       * Il est généré automatiquement en fonction du titre et adapté en fonction des [Conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Il peut être adapté si nécessaire.
 
@@ -281,7 +281,7 @@ De tels tests peuvent également être effectués sur les pages de contenu et en
 
 Si vous avez configuré une activité et une expérience, vous pouvez tester facilement votre segment avec l’activité. Pour plus d’informations sur la configuration d’une activité, voir [documentation sur la création de contenu ciblé](targeted-content.md).
 
-1. En mode d’édition d’une page sur laquelle vous avez configuré du contenu ciblé, vous pouvez constater que le contenu est ciblé par le biais d’une icône de flèche sur le contenu.
+1. Dans le mode d’édition d’une page sur laquelle vous avez configuré du contenu ciblé, vous pouvez constater que le contenu est ciblé à l’aide d’une icône de flèche sur le contenu.
 1. Basculez vers le mode Aperçu et, avec ContextHub, passez à une personne qui ne correspond pas à la segmentation configurée pour l’expérience.
 1. Passez à une personne qui correspond à la segmentation configurée pour l’expérience et constatez que l’expérience change en conséquence.
 

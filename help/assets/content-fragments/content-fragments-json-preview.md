@@ -2,8 +2,8 @@
 title: Aperçu - Représentation JSON (Ressources - Fragments de contenu)
 description: Découvrez comment prévisualiser facilement la représentation JSON de vos fragments de contenu lors de la mise en œuvre de votre solution AEM découplée.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
-workflow-type: ht
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 100%
 
@@ -22,5 +22,5 @@ Vous pouvez afficher la représentation JSON du fragment actif. Par exemple :
 ![Éditeur de fragment de contenu – Aperçu d’un fragment](assets/cfm-preview-02.png)
 
 <!--
-**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+**Copy URL** lets you copy to clipboard the URL for either author or publish.
 -->

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 84%
+source-wordcount: '836'
+ht-degree: 79%
 
 ---
 
@@ -36,7 +36,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* Le [Onglet Personnalisation pour les fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) permet des fonctionnalités de spécification de segmentation à l’éditeur de fragments d’expérience et la possibilité de créer des fragments d’expérience imbriqués dans lesquels des variations d’en-têtes et de pieds de page peuvent être créées pour plusieurs segments. Avant le lancement de cette fonctionnalité, la personnalisation proposée par AEM n’était disponible que pour les pages du site et non pour les fragments d’expérience
+* La variable [Onglet Personnalisation pour les fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) permet des fonctionnalités de spécification de segmentation à l’éditeur de fragments d’expérience et la possibilité de créer des fragments d’expérience imbriqués dans lesquels des variations d’en-têtes et de pieds de page peuvent être créées pour plusieurs segments. Avant le lancement de cette fonctionnalité, la personnalisation proposée par AEM n’était disponible que pour les pages du site et non pour les fragments d’expérience
 
 * La [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) permet désormais aux utilisateurs et utilisatrices de gérer efficacement les fragments de contenu traduits. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
 
@@ -48,7 +48,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets vous permet désormais de télécharger des documents dans d’autres types de format pris en charge et de [les prévisualiser à l’aide de la visionneuse Document Cloud incluse](/help/assets/manage-pdf-documents.md). Les types de format pris en charge sont les suivants : TXT, RTF, DOC, DOCX, PPT, PPTX, XLS et XLSX.
+* Experience Manager Assets vous permet désormais de transférer des documents dans d’autres formats et[prévisualisez-les à l’aide de la visionneuse de Documents Cloud incluse](/help/assets/manage-pdf-documents.md). Les types de format pris en charge sont les suivants : TXT, RTF, DOC, DOCX, PPT, PPTX, XLS et XLSX.
 
   ![Rendu PDF pour d’autres formats](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -63,9 +63,9 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouvelles fonctionnalités disponibles dans le canal de préversion [!DNL Forms] {#prerelease-features-forms}
+### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-* **Éditeur de modèles de formulaires adaptatifs** : l’éditeur de modèles permet de prédéfinir la structure de base et l’apparence des formulaires adaptatifs d’une organisation. Dans cette nouvelle version, l’éditeur de modèles bénéficie des améliorations suivantes :
+* **Éditeur de modèle de Forms adaptatif**: l’éditeur de modèles vous permet de prédéfinir la structure de base et l’aspect de Forms adaptatif d’une organisation. Dans cette nouvelle version, l’éditeur de modèles bénéficie des améliorations suivantes :
    * **[Modèle de données de formulaire dans l’éditeur de modèles](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)** : vous pouvez associer un schéma de modèle de données de formulaire à un modèle de formulaire adaptatif dans l’éditeur de modèles. Le temps nécessaire à la création d’un formulaire adaptatif est ainsi réduit. Cette option est également ajoutée à l’éditeur de formulaires adaptatifs pour permettre aux utilisateurs et utilisatrices de sélectionner ou de modifier le modèle de données de formulaire pour les formulaires existants.
    * **[Document d’enregistrement dans l’éditeur de modèles](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)** : vous pouvez désormais standardiser la génération d’un document d’enregistrement pour tous les formulaires créés à l’aide d’un modèle. Cela permet de renforcer la standardisation et la conformité aux exigences de l’organisation.
 

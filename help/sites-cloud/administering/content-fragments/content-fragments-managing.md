@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la console Fragments de contenu pour g�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 76%
+source-wordcount: '2051'
+ht-degree: 75%
 
 ---
 
@@ -292,14 +292,14 @@ Une fois qu’un fragment est publié, référencé ou les deux, AEM affiche un 
 
 ## Dépublication d’un fragment {#unpublishing-a-fragment}
 
-Pour annuler la publication de fragments de contenu, sélectionnez un ou plusieurs fragments, puis **Annuler la publication** dans la barre d’outils de la fonction [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Vous pouvez sélectionner **Maintenant** ou **Planifié**.
+Pour annuler la publication de fragments de contenu, sélectionnez un ou plusieurs fragments, puis **Dépublier** dans la barre d’outils de la fonction [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Vous pouvez sélectionner **Maintenant** ou **Planifié**.
 
 Lorsque la boîte de dialogue correspondante s’ouvre, vous pouvez sélectionner le service approprié :
 ![Boîte de dialogue Annuler la publication](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
 >
-Le **Annuler la publication** L’action n’est visible que lorsque des fragments publiés sont disponibles.
+La variable **Dépublier** L’action n’est visible que lorsque des fragments publiés sont disponibles.
 
 >[!CAUTION]
 >
@@ -394,7 +394,7 @@ Elles sont affichées côte à côte, où :
    * le texte inséré est en vert ;
    * le texte remplacé est en bleu.
 
-* L’icône Plein écran vous permet d’ouvrir l’une des versions seule puis de basculer à nouveau sur la vue parallèle.
+* L’icône plein écran vous permet d’ouvrir l’une des versions seule, puis de revenir à la vue parallèle.
 * Vous pouvez **rétablir** la version spécifique
 * **Terminé** vous ramène à la console.
 

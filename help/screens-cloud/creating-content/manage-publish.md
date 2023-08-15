@@ -2,10 +2,10 @@
 title: Publication d’un canal dans Screens as a Cloud Service
 description: Cette page décrit comment publier un canal dans Screens as a Cloud Service.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 72%
+source-wordcount: '307'
+ht-degree: 67%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 72%
 
 ## Présentation {#introduction}
 
-Vous pouvez annuler la publication de contenu à partir d’AEM Screens. La fonction Gérer les publications vous permet de diffuser des mises à jour de contenu de l’auteur à publier sur le lecteur. Vous pouvez publier ou annuler la publication de contenu pour l’ensemble du projet AEM Screens ou uniquement pour un de vos canaux, un de vos emplacements, un de vos lecteurs ou une de vos applications.
+Vous pouvez annuler la publication de contenu à partir d’AEM Screens. La fonction Gérer la publication vous permet de diffuser des mises à jour de contenu de l’auteur à publier sur le lecteur. Vous pouvez publier ou annuler la publication de contenu pour l’ensemble du projet AEM Screens ou uniquement pour un de vos canaux, un de vos emplacements, un de vos lecteurs ou une de vos applications.
 
 >[!IMPORTANT]
 >Une fois que vous avez créé votre ou vos canaux dans votre projet, il est obligatoire de publier les canaux pour afficher les canaux en mode Liste des stocks dans le fournisseur de services AEM Screens.

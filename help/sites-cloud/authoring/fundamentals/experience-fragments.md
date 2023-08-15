@@ -2,10 +2,10 @@
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2046'
-ht-degree: 87%
+source-wordcount: '2044'
+ht-degree: 86%
 
 ---
 
@@ -79,7 +79,7 @@ Nous vous encourageons à :
 
 * [configurer les modèles autorisés sur ces dossiers](#configure-allowed-templates-folder).
 
-La création de dossiers vous permet d’effectuer les opérations suivantes :
+La création de dossiers permet :
 
 * Créer une structure significative pour vos fragments d’expérience ; en fonction de la classification, par exemple
 
@@ -232,7 +232,7 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 
    ![Création d’une variation de fragment d’expérience](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Créer** vous permet de créer les éléments suivants :
+1. **Créer** permet de créer :
 
    * **Variation**
    * **Variation en tant que Live Copy**.
@@ -293,7 +293,7 @@ Pour créer un bloc de création :
 
    ![Attribution d’un nom au bloc de création](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. Le **Bloc de création** s’affiche dans le panneau de gauche (**Local**), et peuvent être sélectionnés pour une action ultérieure :
+1. La variable **Bloc de création** s’affiche dans le panneau de gauche (**Local**), et peuvent être sélectionnés pour une action ultérieure :
 
    ![Bloc de création dans le rail](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -422,7 +422,7 @@ Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML b
 
 >[!NOTE]
 >
-Bien que cette option soit directement disponible à partir du navigateur, [l’objectif Principal est de permettre à d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) d’accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Bien que cette option soit directement disponible à partir du navigateur, [l’objectif principal est de permettre à d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) d’accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publication de fragments d’expérience {#publishing-experience-fragments}
 

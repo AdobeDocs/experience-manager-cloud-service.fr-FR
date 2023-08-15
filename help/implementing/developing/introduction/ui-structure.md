@@ -2,10 +2,10 @@
 title: Structure de l’interface utilisateur d’AEM
 description: 'L’interface utilisateur d’AEM s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés :'
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 50%
+source-wordcount: '892'
+ht-degree: 49%
 
 ---
 
@@ -95,7 +95,7 @@ Le cadre d’éditeur est un conteneur pour l’ensemble des éléments de créa
 
 ### Panneau latéral {#side-panel}
 
-Contient trois onglets par défaut. Le **Ressources** et **Composants** Les onglets vous permettent de sélectionner ces éléments, de les faire glisser du panneau et de les déposer sur la page. Le **Arborescence de contenu** vous permet d’examiner la hiérarchie du contenu de la page.
+Contient trois onglets par défaut. La variable **Ressources** et **Composants** Les onglets vous permettent de sélectionner ces éléments, de les faire glisser du panneau et de les déposer sur la page. La variable **Arborescence de contenu** vous permet d’examiner la hiérarchie du contenu de la page.
 
 Par défaut, le panneau latéral est masqué. Lorsqu’elle est sélectionnée, elle s’affiche sur le côté gauche ou lorsque la largeur de la fenêtre est inférieure à 1 024 pixels, elle s’étend sur toute la fenêtre comme, par exemple, sur un appareil mobile.
 

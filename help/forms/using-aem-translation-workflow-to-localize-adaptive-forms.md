@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 71%
 
 ---
@@ -30,8 +30,8 @@ Le service de traduction automatique traduit directement le contenu de vos formu
 1. Dans l’écran **Ajouter un dictionnaire au projet de traduction**, sélectionnez l’option **Créer un nouveau projet de traduction** ou **Ajouter à un projet de traduction existant**.
 1. Dans le champ **Titre du projet**, indiquez le titre, par exemple `Government Reference Site - German locale.`
 1. Dans le champ **Langues cibles**, spécifiez un paramètre régional (par exemple `German(de)`), puis cliquez sur **Terminé**. Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans la variable **Langues cibles** champ .
-1. Dans la boîte de dialogue Dictionnaire ajouté, cliquez sur **Ouvrir des projets**. Dans l’écran Projets , ouvrez le nouveau projet.
-1. Cliquez sur le bouton **ellipses** au bas de la **Résumé de traduction** mosaïque. L’écran Résumé de traduction s’affiche.
+1. Dans la boîte de dialogue Dictionnaire ajouté, cliquez sur **Ouvrir des projets**. Dans l’écran Projets , ouvrez le projet nouvellement créé.
+1. Cliquez sur le bouton **ellipses** au bas de la page **Résumé de traduction** mosaïque. L’écran Résumé de traduction s’affiche.
 1. Cliquez sur le bouton **Modifier** en haut de la page **Résumé de traduction** écran. Ouvrez l’onglet **Traduction** et sélectionnez Traduction automatique sur l’écran **Méthode de traduction**. Sélectionnez le **fournisseur de traduction** approprié et la **configuration de cloud**. Cliquez sur l’icône **Terminé** en haut de l’écran.
 1. Dans le volet **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Démarrer**. L’état de la mosaïque passe à Brouillon. Une fois la traduction terminée, l’état passe à **Prêt pour la révision**. Actualisez la page après quelques minutes et vérifiez l’état.
 1. Après le changement d’état en **Prêt pour la révision**, dans la vignette **Tâche de traduction**, ouvrez le formulaire dans une fenêtre de navigateur. Une version localisée du formulaire s’affiche.

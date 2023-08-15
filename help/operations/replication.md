@@ -2,10 +2,10 @@
 title: Réplication
 description: Découvrez la distribution et le dépannage de la réplication dans AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 46%
+source-wordcount: '1341'
+ht-degree: 45%
 
 ---
 
@@ -64,7 +64,7 @@ Vous pouvez également créer un modèle de processus qui utilise la variable `P
 1. Sur la page d’accueil d’AEM as a Cloud Service, accédez à **Outils – Workflow – Modèles**.
 1. Sur la page Modèles de processus, appuyez sur **Créer** dans le coin supérieur droit de l’écran.
 1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
-1. Sélectionnez le modèle nouvellement créé dans la liste, puis appuyez sur **Modifier**.
+1. Sélectionnez le modèle nouvellement créé dans la liste, puis appuyez sur **Modifier**
 1. Dans la fenêtre suivante, faites un glisser-déposer de l’étape du processus dans le flux de modèle actuel :
 
    ![Étape du processus](/help/operations/assets/processstep.png)
@@ -151,7 +151,7 @@ Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchRepl
 
 **Réplication à l’aide d’agents spécifiques**
 
-Lors de la réplication de ressources, comme dans l’exemple ci-dessus, seuls les agents principaux par défaut sont utilisés. Dans AEM as a Cloud Service, cela signifie uniquement que l’agent appelé &quot;publish&quot;, qui connecte l’auteur au niveau de publication.
+Lors de la réplication de ressources, comme dans l’exemple ci-dessus, seuls les agents actifs par défaut sont utilisés. Dans AEM as a Cloud Service, cela signifie uniquement que l’agent appelé &quot;publish&quot;, qui connecte l’auteur au niveau de publication.
 
 Pour prendre en charge la fonctionnalité d’aperçu, un nouvel agent appelé « preview » a été ajouté, qui n’est pas principal par défaut. Cet agent est utilisé pour connecter l’auteur au niveau aperçu. Si vous souhaitez répliquer uniquement par le biais de l’agent d’aperçu, vous devez sélectionner explicitement cet agent d’aperçu au moyen d’une `AgentFilter`.
 

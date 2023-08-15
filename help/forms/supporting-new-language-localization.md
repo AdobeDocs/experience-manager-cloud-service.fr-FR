@@ -1,13 +1,11 @@
 ---
 title: Ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif
-seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. Paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR).
-seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 90%
+source-wordcount: '1266'
+ht-degree: 89%
 
 ---
 
@@ -105,7 +103,7 @@ Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez n
 1. Ajoutez les valeurs des paramètres régionaux par défaut `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, si elles ne sont pas déjà présentes.
 
 1. Ajoutez `<locale>` aux valeurs de la propriété `languages` de `/etc/languages`.
-1. Ajoutez les dossiers que vous venez de créer au `filter.xml` sous etc/META-INF/[hiérarchie de dossiers] en tant que :
+1. Ajoutez les dossiers nouvellement créés dans le `filter.xml` sous etc/META-INF/[hiérarchie de dossiers] en tant que :
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
@@ -144,7 +142,7 @@ Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous p
 
    * La langue du navigateur défini pour l’utilisateur ou l’utilisatrice, qui est spécifiée dans la demande par le biais de l’en-tête `Accept-Language`.
 
-Si aucune bibliothèque cliente pour le paramètre régional requis n’existe, elle recherche une bibliothèque cliente pour le code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional requis est `en_ZA` (en anglais d’Afrique du Sud) et la bibliothèque cliente pour `en_ZA` n’existe pas, le formulaire adaptatif utilise la bibliothèque cliente pour `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
+Si aucune bibliothèque cliente pour le paramètre régional requis n’existe, elle recherche une bibliothèque cliente pour le code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional requis est `en_ZA` (en anglais d’Afrique du Sud) et la bibliothèque cliente pour `en_ZA` n’existe pas, le formulaire adaptatif utilise la bibliothèque cliente pour `en` (anglais), s’il existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
 
 
 Une fois le paramètre régional identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire correspondant au paramètre régional requis n’est pas trouvé, il utilise le dictionnaire de la langue dans laquelle le formulaire adaptatif a été créé.

@@ -2,10 +2,10 @@
 title: Variables d’environnement Cloud Manager
 description: Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Elle sont fournies à l’environnement d’exécution, pour une utilisation dans la configuration OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 92%
+source-wordcount: '1014'
+ht-degree: 91%
 
 ---
 
@@ -34,7 +34,7 @@ Les cas d’utilisation les plus courants des variables d’environnement inclue
 
 >[!NOTE]
 >
->Vous devez être membre du [**Responsable de déploiement** rôle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) pour ajouter ou modifier des variables d’environnement.
+>Vous devez être membre de la fonction [**Responsable de déploiement** rôle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) pour ajouter ou modifier des variables d’environnement.
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celui que vous souhaitez gérer.
@@ -118,9 +118,9 @@ Les variables d’environnement standard et les secrets peuvent être utilisés 
 
 ### Dispatcher {#dispatcher}
 
-Seules les variables d’environnement normales peuvent être utilisées avec le [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
+Seules les variables d’environnement normales peuvent être utilisées avec le [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrétaires ne peuvent pas être utilisés.
 
-Toutefois, les variables d’environnement ne peuvent pas être utilisées dans les directives `IfDefine`.
+Toutefois, les variables d’environnement ne peuvent pas être utilisées dans `IfDefine` directives.
 
 >[!TIP]
 >

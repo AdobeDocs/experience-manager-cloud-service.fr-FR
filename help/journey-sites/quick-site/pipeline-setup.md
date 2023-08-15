@@ -2,10 +2,10 @@
 title: Configurer le pipeline
 description: Créez un pipeline frontal pour gérer la personnalisation du thème de votre site.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 89%
+source-wordcount: '966'
+ht-degree: 87%
 
 ---
 
@@ -51,7 +51,7 @@ Ainsi, le développement frontal peut fonctionner séparément et parallèlement
 
 >[!NOTE]
 >
->Les pipelines frontaux peuvent uniquement déployer des ressources JavaScript, CSS et statiques pour appliquer un style à votre site AEM. Le contenu du site, tel que les pages ou les ressources, ne peuvent pas être déployé dans un pipeline.
+>Les pipelines frontaux peuvent uniquement déployer des ressources JavaScript, CSS et statiques pour appliquer un style à votre site AEM. Le contenu du site, tel que les pages ou les ressources, ne peut pas être déployé dans un pipeline.
 
 ## Accès à Cloud Manager {#login}
 
@@ -102,7 +102,7 @@ Le nouveau pipeline est créé et visible dans la section **Pipelines** de la fe
 
 >[!TIP]
 >
->Si vous connaissez déjà les pipelines dans AEMaaCS et souhaitez en savoir plus sur les différences entre les différents types de pipelines, y compris des détails supplémentaires sur le pipeline frontal, voir Configuration du pipeline CI/CD - Cloud Services liés dans la section [Ressources supplémentaires](#additional-resources) ci-dessous.
+>Si vous connaissez déjà les pipelines dans AEMaaCS et souhaitez en savoir plus sur les différences entre les différents types de pipelines, y compris des détails supplémentaires sur le pipeline frontal, voir Configuration du pipeline CI/CD - Cloud Service liés dans la section [Ressources supplémentaires](#additional-resources) ci-dessous.
 
 ## Prochaines étapes {#what-is-next}
 

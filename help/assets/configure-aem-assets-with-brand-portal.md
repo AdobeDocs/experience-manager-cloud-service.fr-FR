@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2563'
-ht-degree: 96%
+source-wordcount: '2562'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-La configuration d’Adobe Experience Manager Assets Brand Portal permet de publier des ressources de marque approuvées d’Adobe Experience Manager Assets as a [!DNL Cloud Service] vers Brand Portal et de les distribuer aux utilisateurs de Brand Portal.
+La configuration de Adobe Experience Manager Assets Brand Portal vous permet de publier des ressources de marque approuvées à partir de Adobe Experience Manager Assets as a [!DNL Cloud Service] à Brand Portal et distribuez-les aux utilisateurs de Brand Portal.
 
 ## Activation de Brand Portal à l’aide de Cloud Manager {#activate-brand-portal}
 
@@ -372,7 +372,7 @@ Effectuez les étapes suivantes pour configurer le compte IMS.
 
    Cliquez sur **[!UICONTROL Vérifier]** dans la boîte de dialogue. Une fois la configuration réussie, un message s’affiche avec la mention *Jeton récupéré avec succès*.
 
-   ![Les Configurations Adobe IMS Vérifiez L’Intégrité.](assets/create-new-integration5.png)
+   ![Les Configurations Adobe IMS Vérifient L’Intégrité.](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >

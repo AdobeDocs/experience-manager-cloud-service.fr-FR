@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 95%
+source-wordcount: '2150'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ L’environnement de création d’AEM comprend divers mécanismes permettant d�
 
 ## Gestion de votre site {#managing-your-site}
 
-Dans la console **Sites**, vous pouvez parcourir et gérer votre site web en utilisant la barre d’en-tête, la barre d’outils, les icônes d’action (applicables à la ressource sélectionnée), les chemins de navigation et, s’ils sont sélectionnés, les rails secondaires (par exemple référence et chronologie).
+La variable **Sites** La console vous permet de parcourir et de gérer votre site web à l’aide de la barre d’en-tête, de la barre d’outils, des icônes d’action (applicables à la ressource sélectionnée), des chemins de navigation et, lorsqu’ils sont sélectionnés, des rails secondaires (par exemple, la chronologie et les références).
 
 Par exemple, le mode Colonnes :
 
@@ -152,7 +152,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 >[!NOTE]
 >
->Un appareil mobile est détecté si la largeur est inférieure à 1 024 px ; c’est-à-dire, également sur une petite fenêtre de bureau.
+>Un appareil mobile est détecté lorsque la largeur est inférieure à 1 024 px ; c’est-à-dire également sur une petite fenêtre de bureau.
 
 Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeur de ressources](/help/assets/manage-digital-assets.md) directement depuis l’explorateur de ressources en cliquant sur l’icône Modifier affichée en regard du nom de la ressource.
 
@@ -265,12 +265,12 @@ Le menu **Informations sur la page** peut en outre donner accès à des analyses
 Plusieurs modes sont possibles lors de la modification d’une page, ce qui permet d’effectuer différentes actions :
 
 * [Modifier](/help/sites-cloud/authoring/fundamentals/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
-* [Disposition](/help/sites-cloud/authoring/features/responsive-layout.md) : permet de créer et de modifier une disposition réactive en fonction du type d’appareil utilisé (si la page est basée sur un conteneur de mises en page).
+* [Disposition](/help/sites-cloud/authoring/features/responsive-layout.md) - vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil (si la page est basée sur un conteneur de mises en page).
 * [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) : accroît la pertinence du contenu grâce au ciblage et à la mesure sur tous les canaux.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - vous permet d’afficher l’état d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
 * [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
-* [Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - utilisé pour afficher la page telle qu’elle est affichée dans l’environnement de publication ; ou pour naviguer à l’aide de liens dans le contenu.
+* [Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - utilisé pour afficher la page telle qu’elle est affichée dans l’environnement de publication ou pour naviguer à l’aide des liens du contenu.
 * [Annoter](/help/sites-cloud/authoring/fundamentals/annotations.md) : permet d’ajouter ou d’afficher des annotations sur la page.
 
 Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supérieur droit ; l’icône active se changera alors pour refléter le mode sélectionné :

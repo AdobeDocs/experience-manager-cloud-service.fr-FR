@@ -4,10 +4,10 @@ description: Découvrez les concepts de base de la réalisation d’un CMS AEM d
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 97%
+source-wordcount: '727'
+ht-degree: 89%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 Avec les fragments de contenu et l’API GraphQL, vous pouvez utiliser Adobe Experience Manager (AEM) as a Cloud Service en tant que système de gestion de contenu (CMS) découplé.
 
-Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu découplé structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
+Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu découplé structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez/devez rendre (en tant que réponse à la requête API unique).
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ GraphQL est :
 
   Voir [GraphQL.org](https://graphql.org)
 
-L’[API AEM GraphQL](#aem-graphql-api) permet d’effectuer des requêtes (complexes) sur vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) ; chaque requête étant conforme à un type de modèle spécifique. Le contenu renvoyé peut alors être utilisé par vos applications.
+La variable [API GRAPHQL AEM](#aem-graphql-api) vous permet d’effectuer des requêtes (complexes) sur votre [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md); chaque requête étant en fonction d’un type de modèle spécifique. Le contenu renvoyé peut alors être utilisé par vos applications.
 
 ## API AEM GraphQL {#aem-graphql-api}
 
@@ -96,7 +96,7 @@ La **[référence à un fragment](/help/sites-cloud/administering/content-fragme
 
 * fait référence à un autre fragment, en fonction d’un modèle de fragment de contenu spécifique ;
 
-* permet de récupérer des données structurées.
+* Permet de récupérer des données structurées.
 
    * Lorsqu’elle est définie comme **référence à sources multiples**, plusieurs sous-fragments peuvent être référencés (récupérés) par le fragment principal.
 
@@ -110,4 +110,4 @@ Voir [Utilisation de GraphQL avec AEM – Exemple de contenu et de requêtes](/h
 
 ## Tutoriel – Prise en main d’AEM découplé et de GraphQL
 
-Vous cherchez un tutoriel pratique ? Consultez le tutoriel complet [Prise en main d’AEM découplé et de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS découplé.
+Vous cherchez un tutoriel pratique ? Consultez le tutoriel complet [Prise en main d’AEM Headless et de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS découplé.

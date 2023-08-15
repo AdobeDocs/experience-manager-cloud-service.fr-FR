@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 62%
+source-wordcount: '624'
+ht-degree: 59%
 
 ---
 
@@ -40,12 +40,12 @@ Regardez la vidéo Aperçu de la version d’août 2022 pour un résumé des fon
    * est basé sur la variable [Composant WCM principal](https://github.com/adobe/aem-core-wcm-components) qui prend en charge les modèles modifiables et le système de style.
    * fournit 10 composants prêts à l’emploi optimisés pour la production (page, conteneur, titre, texte, image, bouton, teaser, fragment d’expérience, fragment de contenu, segmentation).
    * permet une personnalisation et une segmentation avancées grâce au [insertion de variables Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) sur la plupart des champs de boîte de dialogue et à la variable [Composant Segmentation](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * fournit une sortie de HTML optimale pour les emails grâce au [Styles CSS inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), la variable [Attribut HTML inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), et la variable [assainisseur de HTMLs](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * fournit une sortie de HTML optimale pour les emails grâce au [Styles CSS intégrés](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), la variable [Attribut HTML inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), et la variable [assainisseur de HTMLs](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * permet de créer des emails n’importe où.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de préversion [!DNL Sites] {#prerelease-features-sites}
 
-* Le [Console de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) permet aux utilisateurs d’afficher le nombre total de copies de langue associées à un fragment de contenu. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
+* La variable [Console de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) permet aux utilisateurs d’afficher le nombre total de copies de langue associées à un fragment de contenu. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
 
 ![Langues de fragments de contenu](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -63,7 +63,7 @@ Regardez la vidéo Aperçu de la version d’août 2022 pour un résumé des fon
 
 * [Assistant de formulaires adaptatifs](/help/forms/creating-adaptive-form.md) : AEM Forms offre un assistant convivial pour l’utilisateur professionnel afin de créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif. Dans cette nouvelle version, l’assistant bénéficie des améliorations suivantes :
 
-   * Sélection ou désélection des champs : l’assistant vous permet de créer un formulaire adaptatif basé sur des schémas de modèle de données de formulaires et JSON. Vous pouvez désormais sélectionner un sous-ensemble de champs dans un schéma à inclure dans un formulaire adaptatif. Les champs sélectionnés sont convertis en composants de capture de données correspondants dans le formulaire adaptatif afin de créer rapidement les formulaires adaptatifs souhaités.
+   * Sélectionner ou désélectionner des champs : l’assistant vous permet de créer un formulaire adaptatif basé sur des schémas de modèle de données de formulaire et JSON. Vous pouvez désormais sélectionner un sous-ensemble de champs dans un schéma à inclure dans un formulaire adaptatif. Les champs sélectionnés sont convertis en composants de capture de données correspondants dans le formulaire adaptatif afin de créer rapidement les formulaires adaptatifs souhaités.
 
    * Utilisation de modèles statiques : les client(e)s qui utilisent toujours les modèles statiques hérités peuvent poursuivre leur migration vers le cloud en utilisant des modèles statiques dans l’assistant pour créer des formulaires adaptatifs. Les client(e)s disposent ainsi de temps supplémentaire pour migrer des anciens modèles statiques vers des modèles modifiables modernes.
 

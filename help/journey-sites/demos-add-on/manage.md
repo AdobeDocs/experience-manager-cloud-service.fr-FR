@@ -2,10 +2,10 @@
 title: Gestion de vos sites de démonstration
 description: Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 98%
+source-wordcount: '943'
+ht-degree: 94%
 
 ---
 
@@ -51,8 +51,8 @@ Maintenant que vous disposez de vos propres sites de démonstration, vous souhai
 
 Les utilitaires de démonstration en libre-service fournissent un certain nombre d’outils.
 
-* **Suppression de sites** : sélection du site à supprimer dans cette instance Adobe Experience Manager. Gardez à l’esprit qu’il s’agit d’une action destructrice, elle ne peut être annulée une fois lancée.
-* **Suppression de modèles de site** : sélection du modèle de site à supprimer dans cette instance Adobe Experience Manager. Avant de supprimer un modèle de site, assurez-vous que tous les sites qui font référence à ce modèle sont également supprimés. Gardez à l’esprit qu’il s’agit d’une action destructrice, elle ne peut être annulée une fois lancée.
+* **Suppression de sites** : sélection du site à supprimer dans cette instance Adobe Experience Manager. Gardez à l’esprit qu’il s’agit d’une action destructrice qui ne peut pas être annulée une fois lancée.
+* **Suppression de modèles de site** : sélection du modèle de site à supprimer dans cette instance Adobe Experience Manager. Avant de supprimer un modèle de site, assurez-vous que tous les sites qui font référence à ce modèle sont également supprimés. Gardez à l’esprit qu’il s’agit d’une action destructrice qui ne peut pas être annulée une fois lancée.
 * **Cache dʼauteur principal** : cet outil permet de récupérer plusieurs ressources au sein de l’instance Adobe Experience Manager, en accélérant leur temps de récupération. Cette opération peut prendre plusieurs secondes.
 * **Application Android** : outils d’installation et de lancement de l’application Android de démonstration. Permet de créer un site basé sur lʼ&#x200B;**Application monopage WKND** pour alimenter cette page. Utilisation à partir d’un appareil Android, d’un émulateur ou de la plateforme Bluestacks.
 * **Préférences utilisateur** : désactivation des boîtes de dialogue contextuelles de tutoriel.
@@ -70,7 +70,7 @@ Vous avez à présent testé tout un panel de fonctionnalités dʼAEM. Vous nʼa
 
    >[!CAUTION]
    >
-   >La suppression dʼun site ou dʼun modèle est une action destructrice, elle ne peut être annulée une fois lancée.
+   >La suppression de site et de modèle est une action destructrice qui ne peut pas être annulée une fois lancée.
 
 1. Confirmez la suppression du site dans la boîte de dialogue.
 

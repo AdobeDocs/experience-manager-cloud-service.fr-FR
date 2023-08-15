@@ -6,10 +6,10 @@ seo-description: Learn how to use shared queues for Forms-centric workflows on [
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '838'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ L’utilisateur connecté doit être membre du groupe [!DNL `workflow-users`]. I
 
 ## Partage d’un ou de tous les éléments de votre boîte de réception avec un autre utilisateur
 
-La boîte de réception AEM vous permet de partager un ou tous les éléments avec un autre utilisateur.
+AEM Boîte de réception vous permet de partager un seul ou tous les éléments de votre boîte de réception avec un autre utilisateur.
 
 ### Partage de tous les éléments de la boîte de réception
 

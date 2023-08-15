@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 94%
+source-wordcount: '1314'
+ht-degree: 93%
 
 ---
 
@@ -34,7 +34,7 @@ Regardez la vidéo [Aperçu de la version de juillet 2021](https://video.tv.ado
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Configuration Dispatcher plus flexible : les projets peuvent être plus facilement organisés. Par exemple, vous pouvez désormais inclure plusieurs fichiers de règle de réécriture qui reflètent la structure de votre site. [En savoir plus sur](/help/implementing/dispatcher/disp-overview.md#validation-debug) ce mode flexible, y compris comment structurer votre configuration Dispatcher afin que vous puissiez en profiter.
+* Configuration Dispatcher plus flexible : les projets peuvent être plus facilement organisés. Par exemple, vous pouvez désormais inclure plusieurs fichiers de règle de réécriture qui reflètent la structure de votre site. [En savoir plus](/help/implementing/dispatcher/disp-overview.md#validation-debug) ce mode flexible, y compris comment structurer votre configuration Dispatcher afin que vous puissiez en profiter.
 * L’interface utilisateur de réplication de l’arborescence sous l’onglet « Distribuer » de l’agent de réplication doit être considérée comme obsolète et doit être supprimée après le 30 septembre. [Découvrez](/help/operations/replication.md#tree-activation) les stratégies de réplication alternatives.
 * L’offre groupée `org.apache.sling.datasource-1.0.4.jar` pour la prise en charge de la source de données Sling a été supprimée car elle présente des fonctionnalités obsolètes et n’est pas utilisée par les clients.
 
@@ -97,7 +97,7 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible d
 
 * **Document d’enregistrement basé sur Acrobat** : vous pouvez également [utiliser Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr) comme modèle de document d’enregistrement en plus du modèle de formulaire basé sur XFA.
 
-* **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Ceci vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant que BLOB.
+* **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft Azure Storage en tant que BLOB.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 

@@ -2,10 +2,10 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 41%
+source-wordcount: '679'
+ht-degree: 40%
 
 ---
 
@@ -20,13 +20,13 @@ Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Servi
 ## Microsoft® Outlook {#microsoft-outlook}
 
 1. Accédez à [https://portal.azure.com/](https://portal.azure.com/) et connectez-vous.
-1. Rechercher **Azure Principal Directory** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1. Recherchez **Azure Active Directory** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 1. Cliquez sur **Enregistrement de l’application** > **Nouvelle inscription**.
 
    ![Démarrage du processus d’enregistrement de l’application](assets/oauth-outlook1.png)
 
 1. Renseignez les informations selon vos besoins puis cliquez sur **Enregistrement**.
-1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations API**.
+1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations d’API**.
 1. Cliquez sur **Ajouter une autorisation** > **Autorisation graphique** > **Autorisations déléguées**.
 1. Sélectionnez les autorisations ci-dessous pour votre application, puis cliquez sur **Ajouter une autorisation** :
    * `https://outlook.office.com/SMTP.Send`
@@ -37,12 +37,12 @@ Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Servi
    * `offline_access`
    * `email`
    * `profile`
-1. Accédez à **Authentification** > **Ajouter une plateforme** > **Web**, et dans le **Url De Redirection** , ajoutez les URL ci-dessous : une avec et une sans barre oblique :
+1. Accédez à **Authentification** > **Ajouter une plate-forme** > **Web**, et dans la variable **Url De Redirection** , ajoutez les URL ci-dessous : une avec et une sans barre oblique :
    * `http://localhost/`
    * `http://localhost`
-1. Press **Configurer** après avoir ajouté chaque URL et configuré vos paramètres en fonction de vos besoins.
+1. Presse **Configurer** après avoir ajouté chaque URL et configuré vos paramètres en fonction de vos besoins.
 1. Ensuite, accédez à **Certificats et secrets**, cliquez sur **Nouveau secret client** et suivez les étapes sur l’écran pour créer un secret. Veillez à prendre note de ce secret pour une utilisation ultérieure.
-1. Press **Présentation** dans le volet de gauche et copiez les valeurs pour **ID d’application (client)** et **ID de répertoire (client)** pour une utilisation ultérieure.
+1. Presse **Présentation** dans le volet de gauche et copiez les valeurs pour **ID d’application (client)** et **ID de répertoire (client)** pour une utilisation ultérieure.
 
 Pour effectuer une récapitulation, utilisez les informations suivantes pour configurer OAuth2 pour le service de messagerie du côté AEM :
 
@@ -133,7 +133,7 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
    * `email`
    * `profile`
 1. Créez un fichier de propriétés OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. Le `smtp.host` et `smtp.port` Les valeurs correspondent à une configuration réseau avancée, comme décrit dans la section [Tutoriel sur le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
+sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. La variable `smtp.host` et `smtp.port` Les valeurs correspondent à une configuration réseau avancée, comme décrit dans la section [Tutoriel sur le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
 
    ```
    {

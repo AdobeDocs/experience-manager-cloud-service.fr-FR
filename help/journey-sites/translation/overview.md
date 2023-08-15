@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -53,7 +53,7 @@ Les informations présentées dans ce parcours peuvent bien sûr être utiles à
 
 Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur la traduction de contenu de sites dans AEM et vous proposent des liens vers une documentation technique détaillée.
 
-Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept de traduction dans AEM est nouveau pour vous, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
+Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous commencez à traduire en AEM, Adobe vous recommande de commencer par le début et de progresser de manière séquentielle.
 
 | Numéro | Article | Description |
 |---|---|---|

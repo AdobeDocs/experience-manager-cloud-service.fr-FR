@@ -1,11 +1,11 @@
 ---
 title: API Query Builder
-description: Les fonctionnalités du Query Builder Asset Share sont exposées par le biais d’un commerce Java&trade ; API et API REST.
+description: Les fonctionnalités du Query Builder Asset Share sont exposées par le biais d’une API Java&trade, d’une API et d’une API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2008'
-ht-degree: 49%
+source-wordcount: '2006'
+ht-degree: 47%
 
 ---
 
@@ -254,7 +254,7 @@ type=cq:Page
 
 ### Recherche de plusieurs valeurs de propriété {#search-for-multiple-property-values}
 
-Pour éviter les groupes volumineux, recherchez plusieurs valeurs d’une propriété (`"A" or "B" or "C"`), vous pouvez fournir plusieurs valeurs à la variable `property` prédicat :
+Pour éviter les groupes de grande taille lorsque vous souhaitez rechercher plusieurs valeurs d’une propriété (`"A" or "B" or "C"`), vous pouvez fournir plusieurs valeurs à la variable `property` prédicat :
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 
@@ -303,7 +303,7 @@ Utilisez
 p.hits=selective
 ```
 
-Spécifiez les propriétés à intégrer.
+Spécifiez les propriétés que vous souhaitez intégrer.
 
 ```xml
 p.properties
@@ -351,7 +351,7 @@ Vous pouvez également consulter le [JavaDoc relatif aux `PredicateEvaluator`cla
 
 Le préfixe du nom de classe (par exemple, `similar` dans [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)), est la *propriété principale* de la classe. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
 
-Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser `similar=/content/en` au lieu de la variante complète `similar.similar=/content/en`. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
+Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser `similar=/content/en` au lieu de la variante entièrement qualifiée `similar.similar=/content/en`. Le formulaire complet doit être utilisé pour toutes les propriétés non principales d’une classe.
 
 ## Exemple d’utilisation de l’API Query Builder {#example-query-builder-api-usage}
 
@@ -449,7 +449,7 @@ Vous pouvez également utiliser le servlet JSON Query Builder à l’adresse
 
 `http://<host>:<port>/bin/querybuilder.json?path=/tmp`
 
-Le `path=/tmp` est un exemple uniquement.
+La variable `path=/tmp` est un exemple uniquement.
 
 ### Recommandations générales en matière de débogage {#general-debugging-recommendations}
 

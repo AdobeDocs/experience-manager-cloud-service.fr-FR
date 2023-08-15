@@ -2,10 +2,10 @@
 title: Création d’une requête API - Configuration découplée
 description: Découvrez comment utiliser l’API GraphQL pour une diffusion découplée du contenu du fragment de contenu et l’API REST AEM Assets pour gérer les fragments de contenu.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 63%
+source-wordcount: '651'
+ht-degree: 58%
 
 ---
 
@@ -17,9 +17,9 @@ Découvrez comment utiliser l’API GraphQL pour une diffusion découplée du co
 
 [Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md), vous pouvez utiliser les API d’AEM pour une diffusion découplée.
 
-* [API GraphQL](/help/headless/graphql-api/content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu. Cette API offre l’ensemble de fonctionnalités le plus robuste pour interroger et utiliser du contenu de fragment de contenu.
+* [API GRAPHQL](/help/headless/graphql-api/content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu. Cette API offre l’ensemble de fonctionnalités le plus robuste pour interroger et utiliser du contenu de fragment de contenu.
    * Pour utiliser l’API, [définir et activer des points de fin dans AEM](/help/headless/graphql-api/graphql-endpoint.md), et si nécessaire, l’événement [Interface GraphiQL installée](/help/headless/graphql-api/graphiql-ide.md).
-* [L’API REST Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permet de créer et de modifier des fragments de contenu (et d’autres ressources).
+* [API REST Assets](/help/assets/content-fragments/assets-api-content-fragments.md) vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.
 
@@ -29,7 +29,7 @@ Avant de pouvoir utiliser les API GraphQL, un point d’entrée GraphQL doit êt
 
 1. Accédez à **Outils**, **Général**, puis sélectionnez **GraphQL**.
 1. Sélectionnez **Créer**.
-1. Le **Créer un point de terminaison GraphQL** s’ouvre. Vous pouvez spécifier ici les éléments suivants :
+1. La variable **Créer un point de terminaison GraphQL** s’ouvre. Vous pouvez spécifier ici les éléments suivants :
    * **Nom** : nom du point d’entrée ; vous pouvez saisir du texte.
    * **Utiliser le schéma GraphQL fourni par** : utilisez la liste déroulante pour sélectionner la configuration requise.
 1. Confirmez avec **Créer**.
@@ -55,9 +55,9 @@ GraphiQL est un IDE inclus dans votre environnement AEM ; il est accessible/vis
    * directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 1. L’IDE GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
-   * La liste déroulante en haut à droite vous permet de sélectionner le point d’entrée.
+   * La liste déroulante en haut à droite vous permet de sélectionner le point de terminaison.
    * Un panneau de gauche répertorie les requêtes persistantes (le cas échéant).
-   * Le volet au milieu à gauche vous permet de construire votre requête.
+   * Le panneau du milieu à gauche vous permet de créer votre requête.
    * Le volet au milieu à droite affiche les résultats.
    * L’éditeur de requêtes comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
 

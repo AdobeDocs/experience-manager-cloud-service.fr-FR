@@ -2,10 +2,10 @@
 title: Lancements
 description: Les lancements vous permettent de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 90%
+source-wordcount: '902'
+ht-degree: 89%
 
 ---
 
@@ -67,7 +67,7 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
       * Si la variable **Prêt pour la production** est défini, le lancement est automatiquement promu aux pages de production sur l’élément **Launch**(**En direct**) **date**. Après la promotion, les pages de production sont automatiquement publiées.\
         Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 * Mettez à jour vos pages source et de lancement en parallèle :
-   * Les modifications apportées aux pages source sont automatiquement implémentées dans la copie de lancement (si elle est configurée avec un héritage) ; c’est-à-dire, en tant que Live Copy).
+   * Les modifications apportées aux pages source sont automatiquement implémentées dans la copie de lancement (si elle est configurée avec un héritage, c’est-à-dire en tant que Live Copy).
    * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
 
   ![Actions en parallèle](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -102,7 +102,7 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
 
 ## Console Lancements {#the-launches-console}
 
-La console Lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
+La console Lancements présente un aperçu de vos lancements et vous permet d’agir sur les lancements répertoriés. Vous pouvez accéder à la console via :
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 

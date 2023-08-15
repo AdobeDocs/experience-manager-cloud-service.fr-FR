@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 85%
+source-wordcount: '1714'
+ht-degree: 83%
 
 ---
 
@@ -40,7 +40,7 @@ Vous vous connectez et utilisez l’environnement de création pour générer vo
 
 Pour plus d’informations, consultez les concepts de création.
 
-Dans la **Fragments de contenu** vous pouvez également publier sur la console **Service de prévisualisation**, pour le test et la prévisualisation, avant la publication. Voir Publication et aperçu d’un fragment.
+Dans la **Fragments de contenu** , vous pouvez également publier sur la console **Service de prévisualisation**, pour le test et la prévisualisation, avant la publication. Voir Publication et aperçu d’un fragment.
 
 ### Connexion {#signing-in}
 
@@ -50,7 +50,7 @@ Comme pour la plupart des systèmes, vous devez vous connecter. En tant qu’aut
 * Mot de passe
 * Lien d’accès à l’écran de connexion
 
-Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, nous vous recommandons de contacter votre équipe interne d’assistance projet.
+Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, Adobe vous recommande de contacter votre équipe d’assistance pour les projets interne.
 
 ### Navigation {#navigation}
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 Vous pouvez ouvrir un fragment immédiatement après sa création ou en le sélectionnant dans la console Fragments de contenu (également disponible dans la console Ressources).
 
-Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s’affichent :
+Lorsque l’éditeur s’ouvre pour la première fois, vous voyez :
 
 * Une liste des icônes sur le côté gauche qui vous donne accès à différentes zones de fonctionnalités. L’éditeur s’ouvre dans l’onglet **Variations**, où vous opérerez la plupart de vos modifications. Vous pouvez également être intéressé par les onglets **Annotations** et **Métadonnées**.
 
@@ -217,7 +217,7 @@ Par exemple :
 
   ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* Un fragment qui vous permet d’écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
+* Un fragment permettant d’écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
 
   ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
@@ -258,7 +258,7 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
 * **Mettre à jour les références de page**
 
-  Cette action est disponible à partir du **...** (ellipses). Elle n’a pas d’intérêt particulier pour les auteurs de contenu découplé, car elle concerne la création de pages.
+  Cette action est disponible à partir du **..** (ellipses). Elle n’a pas d’intérêt particulier pour les auteurs de contenu découplé, car elle concerne la création de pages.
 
 ### Publication {#publishing}
 
@@ -308,7 +308,7 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
    * Publication
 
-      * Dans l’éditeur, ou **Ressources** console
+      * à partir de l’éditeur ; ou **Ressources** console
 
          * [Publication rapide](/help/assets/manage-publication.md#quick-publish)
 

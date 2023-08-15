@@ -2,10 +2,10 @@
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 84%
+source-wordcount: '2552'
+ht-degree: 82%
 
 ---
 
@@ -81,14 +81,14 @@ Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, u
 1. Pour spécifier la ou les catégories auxquelles appartient la bibliothèque, sélectionnez le nœud `cq:ClientLibraryFolder`, ajoutez la propriété suivante, puis cliquez sur **Enregistrer tout** :
    * Nom : `categories`
    * Type : chaîne
-   * Valeur : Nom de la catégorie
+   * Valeur : nom de la catégorie
    * Multi : sélectionné
 1. Pour que les bibliothèques clientes soient accessibles par proxy sous `/etc.clientlibs`, sélectionnez le nœud `cq:ClientLibraryFolder`, ajoutez la propriété suivante, puis cliquez sur **Enregistrer tout** :
    * Nom : `allowProxy`
    * Type : booléen
    * Valeur : `true`
 1. Si vous devez gérer des ressources statiques, créez un sous-dossier nommé `resources` sous le dossier de bibliothèques clientes.
-   * Si vous stockez des ressources statiques ailleurs que sous le dossier `resources`, elles ne peuvent pas être référencées sur une instance de publication.
+   * Si vous stockez des ressources statiques ailleurs que sous le dossier `resources`, ils ne peuvent pas être référencés sur une instance de publication.
 1. Ajoutez les fichiers sources dans le dossier de bibliothèques.
    * Cela est généralement effectué par le processus de création frontale de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr).
    * Si vous le souhaitez, vous pouvez organiser les fichiers sources dans des sous-dossiers.
@@ -112,7 +112,7 @@ Une fois votre dossier de bibliothèques clientes [configuré comme requis](#cre
 * Vous avez une bibliothèque cliente dans `/apps/myproject/clientlibs/foo`.
 * Vous avez une image statique dans `/apps/myprojects/clientlibs/foo/resources/icon.png`.
 
-La propriété `allowProxy` vous permet de demander :
+La variable `allowProxy` vous permet de demander :
 
 * La bibliothèque cliente via `/etc.clientlibs/myprojects/clientlibs/foo.js`.
 * L’image statique via `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`.
@@ -170,11 +170,11 @@ Le composant `dumplibs` comprend un sélecteur de test qui affiche le code sourc
 
 ## Autres fonctionnalités du dossier de bibliothèque cliente {#additional-features}
 
-D’autres fonctionnalités sont prises en charge par les dossiers de bibliothèque cliente dans AEM. Toutefois, ces fonctionnalités ne sont pas requises dans AEM as a Cloud Service et, par conséquent, leur utilisation est découragée. Elles sont répertoriées ici à des fins d’exhaustivité.
+D’autres fonctionnalités sont prises en charge par les dossiers de bibliothèque cliente dans AEM. Toutefois, ces fonctionnalités ne sont pas requises dans AEM as a Cloud Service et, par conséquent, leur utilisation est découragée. Elles sont répertoriées ici pour être exhaustives.
 
 >[!WARNING]
 >
->Ces fonctionnalités supplémentaires des dossiers de bibliothèque cliente ne sont pas requises dans AEM as a Cloud Service et leur utilisation est donc déconseillée. Elles sont répertoriées ici à des fins d’exhaustivité.
+>Ces fonctionnalités supplémentaires des dossiers de bibliothèque cliente ne sont pas requises dans AEM as a Cloud Service et leur utilisation est donc déconseillée. Elles sont répertoriées ici pour être exhaustives.
 
 ### Gestionnaire de bibliothèque HTML Adobe Granite {#html-library-manager}
 
@@ -184,12 +184,12 @@ D’autres paramètres de bibliothèque cliente peuvent être contrôlés par le
 
 Les autres propriétés de dossier permettent entre autres de contrôler les dépendances et les incorporations, mais ne sont généralement plus nécessaires et leur utilisation est déconseillée :
 
-* `dependencies` : il s’agit d’une liste d’autres catégories de bibliothèques clientes dont dépend ce dossier de catégories. Par exemple, pour deux `cq:ClientLibraryFolder` nodes `F` et `G`, si un fichier dans `F` nécessite un autre fichier dans `G` pour fonctionner correctement, au moins l’une des fonctions `categories` de `G` doit être parmi les `dependencies` de `F`.
-* `embed` : utilisé pour incorporer du code d’autres bibliothèques. Si le noeud `F` incorpore des noeuds `G` et `H`, le HTML qui en résulte est une concaténation de contenu à partir de noeuds. `G` et `H`.
+* `dependencies` : il s’agit d’une liste d’autres catégories de bibliothèques clientes dont dépend ce dossier de catégories. Par exemple, pour deux `cq:ClientLibraryFolder` nodes `F` et `G`, si un fichier se trouve dans `F` nécessite un autre fichier dans `G` pour fonctionner correctement, au moins l’une des fonctions `categories` de `G` doit être parmi les `dependencies` de `F`.
+* `embed` : utilisé pour incorporer du code d’autres bibliothèques. Si le noeud `F` incorpore des noeuds `G` et `H`, le HTML obtenu est une concaténation de contenu à partir de noeuds. `G` et `H`.
 
 ### Liaison vers des dépendances {#linking-to-dependencies}
 
-Lorsque le code de votre dossier de bibliothèques clientes fait référence à d’autres bibliothèques, identifiez ces dernières en tant que dépendances. Le `ui:includeClientLib` qui fait référence à votre dossier de bibliothèques clientes, le code de HTML inclut un lien vers le fichier de bibliothèque généré et les dépendances.
+Lorsque le code de votre dossier de bibliothèques clientes fait référence à d’autres bibliothèques, identifiez ces dernières en tant que dépendances. La variable `ui:includeClientLib` qui fait référence à votre dossier de bibliothèques clientes, le code de HTML inclut un lien vers le fichier de bibliothèque généré et les dépendances.
 
 Les dépendances doivent être un autre nœud `cq:ClientLibraryFolder`. Pour identifier les dépendances, ajoutez une propriété à votre nœud `cq:ClientLibraryFolder` avec les attributs suivants :
 
@@ -282,7 +282,7 @@ Les préprocesseurs enfichables permettent une utilisation flexible, notamment :
 * Définition de ScriptProcessors pouvant traiter des sources de script
 * Les processeurs peuvent être configurés avec des options
 * Les processeurs peuvent être utilisés pour la minification, mais également pour les cas non minimisés.
-* La bibliothèque cliente peut définir le processeur à utiliser.
+* La bibliothèque cliente peut définir le processeur à utiliser
 
 >[!NOTE]
 >

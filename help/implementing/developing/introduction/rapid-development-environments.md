@@ -2,10 +2,10 @@
 title: Environnements de développement rapide
 description: Découvrez comment utiliser des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3313'
-ht-degree: 89%
+source-wordcount: '3312'
+ht-degree: 88%
 
 ---
 
@@ -70,7 +70,7 @@ L’écran **Aperçu** affiche désormais votre nouvel environnement dans la car
 
 Lors de la création, les RDE sont définis sur la dernière version d’AEM disponible. Une réinitialisation du RDE, qui peut également être effectuée à l’aide de Cloud Manager, enchaîne le RDE et le définit sur la dernière version d’AEM disponible.
 
-Pour plus d’informations sur l’utilisation de Cloud Manager pour créer des environnements, gérer les personnes qui y ont accès et affecter des domaines personnalisés, voir [la documentation de Cloud Manager ;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Pour plus d’informations sur l’utilisation de Cloud Manager pour créer des environnements, gérer les personnes qui y ont accès et affecter des domaines personnalisés, voir [Documentation de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Installation des outils de ligne de commande RDE {#installing-the-rde-command-line-tools}
 
@@ -425,7 +425,7 @@ Vous pouvez également réinitialiser le RDE à l’aide du bouton représentant
 
 ![Réinitialiser le RDE à partir de la vignette Environnements](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Pour plus d’informations sur l’utilisation de Cloud Manager pour gérer vos environnements, voir [la documentation de Cloud Manager ;](/help/implementing/cloud-manager/manage-environments.md).
+Pour plus d’informations sur l’utilisation de Cloud Manager pour gérer vos environnements, voir [Documentation de Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Modes d’exécution {#runmodes}
 
@@ -441,7 +441,7 @@ Voir la [documentation sur les modes d’exécution](/help/implementing/deployin
 >
 >La configuration OSGi du RDE est unique dans la mesure où elle hérite des valeurs de toutes les propriétés OSGi déclarées par le mode d’exécution `dev` du bundle.
 
-Les RDE sont différents des autres environnements dans lesquels le contenu peut être installé dans un dossier install.rde (ou install.author.rde ou install.publish.rde) sous /apps. Cela vous permet de valider le contenu sur git et de le diffuser dans le RDE à l’aide de l’outil de ligne de commande.
+Les RDE sont différents des autres environnements dans lesquels le contenu peut être installé dans un dossier install.rde (ou install.author.rde ou install.publish.rde) sous /apps. Cela vous permet de valider le contenu sur git et de le diffuser dans l’éditeur de texte enrichi à l’aide de l’outil de ligne de commande.
 
 ## Ajout de contenu {#populating-content}
 

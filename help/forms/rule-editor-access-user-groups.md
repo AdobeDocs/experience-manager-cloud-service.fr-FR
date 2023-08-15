@@ -4,10 +4,10 @@ description: Plusieurs types d’utilisateurs dotés de différentes compétence
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 100%
+source-wordcount: '321'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Plusieurs types d’utilisateurs dotés de différentes compétences peuvent utiliser les formulaires adaptatifs. Les utilisateurs expérimentés peuvent avoir les connaissances requises pour utiliser des scripts et des règles complexes. Toutefois, certains utilisateurs peu expérimentés doivent utiliser uniquement les propriétés de mise en page et de base des formulaires adaptatifs.
 
-[!DNL Experience Manager Forms] permet de limiter l’accès à l’éditeur de règles des utilisateurs selon leur rôle ou fonction. Dans les paramètres du service de configuration des formulaires adaptatifs, vous pouvez spécifier les [groupes d’utilisateurs](forms-groups-privileges-tasks.md) qui pourront afficher l’éditeur de règles et y accéder.
+[!DNL Experience Manager Forms] vous permet de limiter l’accès de l’éditeur de règles aux utilisateurs en fonction de leur rôle ou fonction. Dans les paramètres du service de configuration des formulaires adaptatifs, vous pouvez spécifier les [groupes d’utilisateurs](forms-groups-privileges-tasks.md) qui pourront afficher l’éditeur de règles et y accéder.
 
 ## Spécification des groupes d’utilisateurs qui peuvent accéder à l’éditeur de règles {#specify-user-groups-that-can-access-rule-editor}
 

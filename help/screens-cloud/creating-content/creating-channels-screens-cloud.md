@@ -2,10 +2,10 @@
 title: Création et gestion des canaux dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des canaux dans Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 78%
+source-wordcount: '1092'
+ht-degree: 75%
 
 ---
 
@@ -69,7 +69,7 @@ Pour ajouter du contenu à un canal ou modifier son contenu, suivez les étapes 
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. L’éditeur vous permet d’ajouter au canal des ressources/composants que vous souhaitez publier.
+1. L’éditeur vous permet d’ajouter à votre canal des ressources/composants que vous souhaitez publier.
 
 1. Faites glisser et déposez les ressources à partir du volet de gauche et ajoutez-les à l’éditeur.
 
@@ -91,7 +91,7 @@ Les modèles suivants sont disponibles lors de l’utilisation de l’assistant 
 
 ## Utilisation des informations d’attribution par défaut pour les canaux {#default-channels}
 
-Cette fonctionnalité vous permet de définir un planning d’activation par défaut pour un canal et de l’utiliser par défaut pour chaque affectation pour un affichage. Elle permet de ne pas répéter une définition lourde de planification.
+Cette fonctionnalité vous permet de définir un planning d&#39;activation par défaut pour un canal, et de l&#39;utiliser par défaut pour chaque affectation à un affichage. Elle permet de ne pas répéter une définition lourde de planification.
 
 ### Création des informations d’attribution par défaut pour les canaux {#create-default}
 

@@ -2,10 +2,10 @@
 title: Accéder à Admin Console
 description: Une fois que vous avez compris la préparation nécessaire à l’intégration et les bases de la structure AEMaaCS, vous êtes prêt à vous connecter pour la première fois à Admin Console.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 94%
+source-wordcount: '1104'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ En tant qu’administrateur système, vous êtes responsable de la gestion des u
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console désigne un emplacement central pour administrer et gérer vos utilisateurs et licences de produits Adobe. Admin Console vous permet de créer et gérer des utilisateurs dans un seul emplacement plutôt qu’au sein de vos différentes solutions individuelles.
+Adobe Admin Console désigne un emplacement central pour administrer et gérer vos utilisateurs et licences de produits Adobe. Le Admin Console vous permet de créer et de gérer des utilisateurs à un seul emplacement plutôt qu’au sein de vos différentes solutions individuelles.
 
 ## Adobe ID {#adobe-id}
 
@@ -50,7 +50,7 @@ Avant de pouvoir utiliser Admin Console pour administrer les utilisateurs au sei
 
 1. En tant qu’administrateur système, vous recevrez plusieurs e-mails d’Adobe dans le cadre du processus d’intégration. Recherchez l’e-mail de bienvenue qui fournit des informations sur le nom de l’organisation à laquelle vous avez accès.
 
-1. Cliquez sur le lien **Commencer** de cet e-mail de bienvenue pour accéder à Admin Console. Si vous ne retrouvez pas l’e-mail en question, ouvrez un navigateur directement sur Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Cliquez sur le lien **Commencer** de cet e-mail de bienvenue pour accéder à Admin Console. Si vous ne trouvez pas l’adresse électronique, ouvrez un navigateur directement vers Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![E-mail de bienvenue](/help/journey-onboarding/assets/get-started-email.png)
 
@@ -90,7 +90,7 @@ Si vous rencontrez des problèmes, l’assistance d’Adobe est accessible via A
 
 ![Onglet Assistance](/help/journey-onboarding/assets/support-menu.png)
 
-L’interface vous permet de créer et de gérer des cas, de discuter directement avec des représentants de l’assistance clientèle d’Adobe et de planifier des sessions avec des experts. Les administrateurs système et les administrateurs de l’assistance doivent se connecter pour accéder aux cas d’assistance et aux options de session d’experts.
+L’onglet permet de créer et de gérer des cas, de discuter directement avec des représentants de l’assistance clientèle Adobe et de planifier des sessions avec des experts. Les administrateurs système et les administrateurs de l’assistance doivent se connecter pour accéder aux cas d’assistance et aux options de session d’experts.
 
 ## Prochaines étapes {#whats-next}
 

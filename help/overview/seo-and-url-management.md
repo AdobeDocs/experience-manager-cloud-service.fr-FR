@@ -2,9 +2,9 @@
 title: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 description: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3706'
+source-wordcount: '3705'
 ht-degree: 93%
 
 ---
@@ -192,7 +192,7 @@ Vous pouvez afficher les noms de pages localisés pour les utilisateurs de conte
 
 La difficulté en matière de localisation du nom d’une page réside dans le fait que plusieurs outils de localisation disponibles sur la plateforme AEM nécessitent que les noms de cette page correspondent dans toutes les langues pour que le contenu reste synchronisé.
 
-La propriété `sling:alias` permet de pallier cette difficulté. `sling:alias` peut être ajouté comme propriété à n’importe quelle ressource pour donner un nom d’alias à la ressource. Dans l’exemple précédent, vous auriez :
+La variable `sling:alias` La propriété vous permet d&#39;avoir le beurre et l&#39;argent du beurre. `sling:alias` peut être ajouté comme propriété à n’importe quelle ressource pour donner un nom d’alias à la ressource. Dans l’exemple précédent, vous auriez :
 
 * une page dans le JCR à :
   `…/es/home`
@@ -286,7 +286,7 @@ Cependant, il existe également un moyen plus simple de gérer cela :
 
 Jusqu’à présent, vous avez mis en œuvre des mappages avec la logique dans vos composants pour utiliser ces mappages lors de la génération des URL sur les pages.
 
-La gestion de ces URL raccourcies lorsqu’elles entrent dans le Dispatcher constitue la pièce finale du puzzle ; c’est là que `mod_rewrite` entre en jeu. Le plus grand avantage de l’utilisation de `mod_rewrite` est que les URL sont mappées à leur forme longue. *before* ils sont envoyés au module de Dispatcher. Cela signifie que le Dispatcher demande l’URL longue au serveur de publication et la met en cache en conséquence. Par conséquent, toutes les demandes de vidage du Dispatcher entrant à partir du serveur de publication invalideront correctement ce contenu.
+La gestion de ces URL raccourcies lorsqu’elles entrent dans le Dispatcher constitue la pièce finale du puzzle ; c’est là que `mod_rewrite` entre en jeu. L’utilisation de `mod_rewrite` est que les URL sont mappées à leur forme longue. *before* ils sont envoyés au module de Dispatcher. Cela signifie que le Dispatcher demande l’URL longue au serveur de publication et la met en cache en conséquence. Par conséquent, toutes les demandes de vidage du Dispatcher entrant à partir du serveur de publication invalideront correctement ce contenu.
 
 Pour mettre en œuvre ces règles, vous pouvez ajouter des éléments `RewriteRule` sous votre hôte virtuel dans la configuration Apache HTTP Server. Si vous souhaitez développer les URL raccourcies de l’exemple précédent, vous pouvez mettre en œuvre une règle qui ressemble à ce qui suit :
 
@@ -349,7 +349,7 @@ Disallow: /
 
 Sur un environnement de production, vous pouvez également choisir de désactiver certains chemins que vous ne voulez pas voir indexer.
 
-La mise en garde au moment de placer l’objet `robots.txt` à la racine du site, les requêtes de purge de Dispatcher peuvent effacer ce fichier et les mappages d’URL risquent de placer la racine du site à un autre emplacement que le fichier `DOCROOT` comme défini dans la configuration Apache HTTP Server. Pour cette raison, il est courant de placer ce fichier sur l’instance de création à la racine du site et de le répliquer dans l’instance de publication.
+La mise en garde au moment de placer l’objet `robots.txt` à la racine du site, les requêtes de purge de Dispatcher peuvent effacer ce fichier et les mappages d’URL risquent de placer la racine du site à un autre emplacement que la balise `DOCROOT` comme défini dans la configuration Apache HTTP Server. Pour cette raison, il est courant de placer ce fichier sur l’instance de création à la racine du site et de le répliquer dans l’instance de publication.
 
 ### Création d’un plan de site XML sur AEM {#building-an-xml-sitemap-on-aem}
 

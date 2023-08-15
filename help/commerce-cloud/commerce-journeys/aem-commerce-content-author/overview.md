@@ -2,10 +2,10 @@
 title: Parcours de création de contenu AEM Commerce
 description: Commencez ici pour un parcours guidé à travers la création d’AEM Commerce.
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ L&#39;information dans ce parcours peut bien sûr être utile à d&#39;autres pe
 
 Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous apportent des connaissances fondamentales et vous proposent un lien vers une documentation technique détaillée.
 
-Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous êtes un nouvel utilisateur d’AEM Content and Commerce, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
+Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous découvrez AEM Content and Commerce, Adobe vous recommande de commencer au début et de progresser de manière séquentielle.
 
 | Numéro | Article | Description |
 |---|---|---|

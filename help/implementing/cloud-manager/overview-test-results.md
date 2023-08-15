@@ -2,10 +2,10 @@
 title: Vue d’ensemble des tests Cloud Manager
 description: Obtenez une vue d’ensemble des trois types de tests que Cloud Manager exécute automatiquement pour garantir la qualité de votre code personnalisé.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 100%
+source-wordcount: '162'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ Il existe trois grandes catégories de tests pris en charge par le pipeline Clou
 
 1. [Tests d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * Les tests d’audit de l’expérience sont activés dans tous les pipelines de production de Cloud Manager et ne peuvent pas être ignorés.
+   * Le test d’audit d’expérience est activé dans tous les pipelines de production de Cloud Manager et ne peut pas être ignoré.
 
 Ces tests peuvent être :
 

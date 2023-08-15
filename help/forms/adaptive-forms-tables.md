@@ -6,10 +6,10 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2492'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -321,7 +321,7 @@ Vous pouvez aussi faire glisser et déposer un groupe d’éléments de type com
 
 >[!NOTE]
 >
->Le nombre d’éléments dans un composant de tableau XDP, un sous-formulaire, ou un type complexe XSD ne peut pas dépasser le nombre de cellules dans une ligne. Par exemple, vous ne pouvez pas déposer quatre éléments sur une ligne qui n’a que trois cellules. Cela provoquera une erreur.
+>Le nombre d’éléments d’un composant de tableau XDP, d’un sous-formulaire ou d’un type complexe XSD ne peut pas dépasser le nombre de cellules d’une ligne. Par exemple, vous ne pouvez pas déposer quatre éléments sur une ligne qui n’a que trois cellules. Cela provoquera une erreur.
 >
 >Si le nombre d’éléments est inférieur au nombre de cellules dans une ligne, la nouvelle ligne ajoute d’abord les cellules en fonction des éléments, puis les cellules par défaut sont ajoutées pour remplir les autres cellules de la ligne. Par exemple, si vous déposez un groupe de trois éléments dans une ligne qui comporte quatre cellules, les trois premières cellules sont basées sur les éléments que vous avez déposés et la cellule restante est la cellule de tableau par défaut.
 

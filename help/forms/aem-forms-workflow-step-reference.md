@@ -3,10 +3,10 @@ title: Comment affecter un processus à un autre utilisateur, envoyer un e-mail 
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '7209'
-ht-degree: 99%
+source-wordcount: '7204'
+ht-degree: 98%
 
 ---
 
@@ -120,11 +120,11 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **[!UICONTROL Personne désignée]** > **[!UICONTROL Options d’affectation]** : indiquez la méthode à utiliser pour affecter la tâche à un utilisateur. Vous pouvez affecter la tâche de manière dynamique à un utilisateur ou un groupe à l’aide du script Programme de sélection des participants ou affecter la tâche à un utilisateur ou à un groupe AEM spécifique.
 * **[!UICONTROL Programme de sélection des participants :]** cette option est disponible lorsque l’option **[!UICONTROL Sélectionner de manière dynamique un utilisateur ou un groupe]** est activée dans le champ Options d’affectation. Vous pouvez utiliser un ECMAScript ou un service pour sélectionner un utilisateur ou une utilisatrice, ou un groupe de manière dynamique. Pour en savoir plus, veuillez consulter [Affectation dynamique d’un workflow aux utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape de participant dynamique Adobe Experience Manager personnalisée.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
 
-* **[!UICONTROL Participants]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ Programme de **[!UICONTROL sélection des participants]**. Le champ vous permet de sélectionner des utilisateurs ou des groupes pour l’option RandomParticipantChooser.
+* **[!UICONTROL Participants]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ Programme de **[!UICONTROL sélection des participants]**. Le champ vous permet de sélectionner des utilisateurs ou des groupes pour l’option RandomParticipantChooser .
 
-* **[!UICONTROL Personne désignée]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** est sélectionnée dans le champ **[!UICONTROL Programme de sélection des participants]**. Ce champ vous permet de sélectionner une variable de type Chaîne pour définir la personne désignée.
+* **[!UICONTROL Personne désignée]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** est sélectionnée dans le champ **[!UICONTROL Programme de sélection des participants]**. Le champ vous permet de sélectionner une variable de type Données de chaîne pour définir la personne désignée.
 
-* **[!UICONTROL Arguments :]** le champ est disponible lorsqu’un script autre que le script RandomParticipantChoose est sélectionné dans le champ Programme de sélection des participants. Le champ vous permet de fournir une liste d’arguments séparés par des virgules pour le script sélectionné dans le champ Programme de sélection des participants.
+* **[!UICONTROL Arguments :]** le champ est disponible lorsqu’un script autre que le script RandomParticipantChoose est sélectionné dans le champ Programme de sélection des participants. Le champ vous permet de fournir une liste d’arguments séparés par des virgules pour le script sélectionné dans le champ Programme de sélection des participants .
 
 * **[!UICONTROL Utilisateur ou groupe :]** la tâche est affectée à l’utilisateur ou au groupe sélectionné. Cette option est disponible lorsque l’option **[!UICONTROL À un utilisateur ou un groupe spécifique]** est activée dans le champ **[!UICONTROL Options d’affectation]**. Le champ répertorie tous les utilisateurs et groupes du groupe [!DNL workflow-users].\
   Le menu déroulant **[!UICONTROL Utilisateur ou groupe]** répertorie les utilisateurs et les groupes auxquels l’utilisateur connecté a accès. L’affichage du nom d’utilisateur dépend des autorisations d’accès sur le nœud **[!UICONTROL users]** dans crx-repository pour cet utilisateur particulier.
@@ -272,7 +272,7 @@ L’étape Invoquer DDX présente les propriétés suivantes :
 
 ## Étape Invoquer le service de modèle de données de formulaire {#invoke-form-data-model-service-step}
 
-Vous pouvez utiliser l’[[!DNL AEM Forms] intégration de données](data-integration.md) pour configurer des sources de données disparates et vous y connecter. Ces sources de données peuvent être un service web, un service REST, un service OData et une solution CRM. L’intégration de données [!DNL AEM Forms] vous permet de créer un modèle de données de formulaire regroupant plusieurs services afin d’effectuer des opérations de récupération, d’ajout et de mise à jour de données sur la base de données configurée. Vous pouvez utiliser **[!UICONTROL l’étape Invoquer le service de modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire (FDM) et utiliser les services du FDM pour récupérer, mettre à jour ou ajouter des données aux sources de données disparates.
+Vous pouvez utiliser l’[[!DNL AEM Forms] intégration de données](data-integration.md) pour configurer des sources de données disparates et vous y connecter. Ces sources de données peuvent être un service web, un service REST, un service OData et une solution CRM. [!DNL AEM Forms] L’intégration de données vous permet de créer un modèle de données de formulaire qui englobe divers services pour effectuer des opérations de récupération, d’ajout et de mise à jour de données sur la base de données configurée. Vous pouvez utiliser **[!UICONTROL l’étape Invoquer le service de modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire (FDM) et utiliser les services du FDM pour récupérer, mettre à jour ou ajouter des données aux sources de données disparates.
 
 Pour expliquer les entrées des champs de l’étape, le tableau de base de données et le fichier JSON suivants servent d’exemple :
 
@@ -334,7 +334,7 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 
 * **[!UICONTROL Chemin d’accès du modèle de données de formulaire]** : recherchez et sélectionnez un modèle de données de formulaire présent sur le serveur.
 
-* **[!UICONTROL Erreurs et validations]** : cette option vous permet de capturer des messages d’erreur et de spécifier des options de validation pour les données récupérées et envoyées aux sources de données. Grâce à ces modifications, vous pouvez vous assurer que les données transmises à l’étape du service Invoquer le service de modèle de données de formulaire respectent les contraintes de données définies par la source de données. Pour plus d’informations, voir [Validation automatisée des données d’entrée](work-with-form-data-model.md#automated-validation-of-input-data).
+* **[!UICONTROL Erreurs et validations]**: l’option permet de capturer les messages d’erreur et de spécifier des options de validation pour les données récupérées et envoyées aux sources de données. Grâce à ces modifications, vous pouvez vous assurer que les données transmises à l’étape du service Invoquer le service de modèle de données de formulaire respectent les contraintes de données définies par la source de données. Pour plus d’informations, voir [Validation automatisée des données d’entrée](work-with-form-data-model.md#automated-validation-of-input-data).
 
 * **[!UICONTROL Niveau de validation]** : il existe trois catégories de validation : De base, Complète et Désactivée :
 

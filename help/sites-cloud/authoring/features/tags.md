@@ -1,17 +1,17 @@
 ---
 title: Utilisation des balises
-description: Les balises sont une méthode rapide et facile de classer le contenu dans un site web.
+description: Les balises sont une méthode rapide et facile pour classer le contenu dans un site web
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 75%
+source-wordcount: '562'
+ht-degree: 90%
 
 ---
 
 # Utilisation des balises {#using-tags}
 
-Les balises sont une méthode rapide et facile de classer le contenu dans un site web. Les balises peuvent être considérées comme des mots-clés ou des étiquettes pouvant être jointes à une page, à une ressource ou à un autre contenu pour permettre aux recherches de trouver ce contenu et le contenu associé.
+Les balises sont une méthode rapide et facile pour classer le contenu dans un site web. Les balises peuvent être considérées comme des mots-clés ou des libellés pouvant être jointes à une page, à une ressource ou à un autre contenu pour permettre aux recherches de trouver ce contenu et le contenu associé.
 
 * Voir Administration des balises pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
 * Voir [Balisage pour les développeurs](/help/implementing/developing/introduction/tagging-framework.md) pour plus d’informations sur la structure de balisage et l’inclusion et l’extension de balises dans les applications personnalisées.
@@ -27,9 +27,9 @@ Les balises sont une méthode rapide et facile de classer le contenu dans un sit
 1. **Optimisation pour les moteurs de recherche** : les balises appliquées sous forme de propriétés de page s’affichent automatiquement dans les métabalises de la page pour que les moteurs de recherche puissent les identifier.
 1. **Utilisation simple** : les balises se créent facilement à partir d’un mot et en cliquant sur un bouton. Ensuite, un titre, une description et un nombre illimité de libellés peuvent être utilisés pour associer plus de termes à la balise.
 1. **Cohérence** : le système de balisage est un composant central d’AEM. Il est utilisé par toutes les applications AEM pour catégoriser le contenu. En outre, l’API de balisage est mise à la disposition des développeurs pour leur permettre de créer des applications prenant en charge le balisage avec un accès aux mêmes taxonomies.
-1. **Structuration et souplesse** : AEM est idéal pour travailler avec des informations structurées, grâce à l’imbrication des pages et des chemins d’accès. Il est tout aussi puissant lorsque vous utilisez des informations non structurées, en raison de la recherche de texte intégral intégrée. Le balisage combine les avantages de la structure et de la flexibilité.
+1. **Structuration et souplesse** : AEM est idéal pour travailler avec des informations structurées, grâce à l’imbrication des pages et des chemins d’accès. Il est tout aussi puissant lorsqu’il sagit de travailler avec des informations non structurées, grâce à la recherche de texte intégral intégrée. Le balisage combine les avantages de la structuration et de la flexibilité.
 
-Lors de la conception de la structure de contenu d’un site et du schéma de métadonnées des ressources, tenez compte de l’approche légère et accessible fournie par le balisage.
+Lors de la conception de la structure du contenu d’un site et du schéma des métadonnées pour les ressources, il convient de tenir compte de l’approche légère et accessible qu’offre le balisage.
 
 ## Application de balises {#applying-tags}
 
@@ -47,7 +47,7 @@ De la même manière que vous pouvez publier et dépublier des pages, vous pouve
 
 * Activez individuellement des balises.
 
-  A l’instar des pages, les nouvelles balises doivent être activées avant d’être disponibles dans l’environnement de publication.
+  Comme pour les pages, les balises nouvellement créées doivent être activées avant d’être disponibles dans l’environnement de publication.
 
 >[!NOTE]
 >

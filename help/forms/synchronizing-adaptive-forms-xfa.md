@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 84%
+source-wordcount: '1143'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 84%
 
 ## Présentation {#introduction}
 
-Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`.). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, voir [Création d’un formulaire adaptatif basé sur un modèle](creating-adaptive-form.md).
+Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`.). Cette réutilisation vous permet de conserver votre investissement dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, voir [Création d’un formulaire adaptatif basé sur un modèle](creating-adaptive-form.md).
 
 Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptatif. Ces champs sont appelés champs liés. Les propriétés des champs liés (tels que les scripts, les libellés et le format d’affichage) sont copiées à partir du fichier XDP. Vous pouvez également choisir de remplacer la valeur de certaines de ces propriétés.
 
@@ -133,7 +133,7 @@ Le champ qui a été supprimé est également signalé par une icône pour indiq
 
 >[!NOTE]
 >
->Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` non valide dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section unbinded du fichier XML de sortie.
+>Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` non valide dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section non lié du fichier XML de sortie.
 
 ## Téléchargements {#downloads}
 

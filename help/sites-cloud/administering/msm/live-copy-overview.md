@@ -4,10 +4,10 @@ description: Découvrez les principes de base de la console Aperçu de la Live C
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 89%
+source-wordcount: '729'
+ht-degree: 86%
 
 ---
 
@@ -46,10 +46,10 @@ L’**aperçu de la Live Copy** peut être ouvert via le panneau latéral **Ré
 
 ### Propriétés d’une page de plan directeur {#properties-of-a-blueprint-page}
 
-Le **Présentation de la Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
+La variable **Présentation de la Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
 
 1. Ouvrir **Propriétés** pour la page de plan directeur appropriée.
-1. Ouvrez le **Blueprint** tab - **Présentation de la Live Copy** s’affiche dans la barre d’outils supérieure :
+1. Ouvrez le **Blueprint** de l’onglet **Présentation de la Live Copy** s’affiche dans la barre d’outils supérieure :
 
    ![Onglet Propriétés du plan directeur](../assets/live-copy-blueprint-tab.png)
 
@@ -94,7 +94,7 @@ Lorsque vous sélectionnez une page de Live Copy, les actions suivantes sont di
 * **[Synchroniser](overview.md#rollout-and-synchronize)** – Synchronisez une Live Copy pour extraire des modifications de la source vers la Live Copy.
 * **[Réinitialiser](creating-live-copies.md#resetting-a-live-copy-page)** – Réinitialisez une page Live Copy pour supprimer toutes les annulations d’héritage et restaurer la page au même statut que la page source.
 * **[Suspendre](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** – Désactive temporairement les relations directes entre une Live Copy et sa page de plan directeur.
-* **[Reprendre](creating-live-copies.md#resuming-inheritance-for-a-page)** – La reprise vous permet de rétablir une relation suspendue.
+* **[Reprendre](creating-live-copies.md#resuming-inheritance-for-a-page)** - Reprendre vous permet de rétablir une relation suspendue.
 * **[Désolidariser](overview.md#detaching-a-live-copy)** – Supprime définitivement la relation directe entre une Live Copy et sa page de plan directeur.
 
 ## État de la relation {#relationship-status}
@@ -112,6 +112,6 @@ Cet onglet fournit des informations détaillées sur le statut de la relation en
 
 ### Live Copy {#live-copy-tab}
 
-Cet onglet vous permet d’afficher et de modifier la configuration de la Live Copy.
+Cet onglet vous permet d’afficher et de modifier la configuration de la Live Copy.
 
 ![Onglet Live Copy](../assets/live-copy-relationship-status-live-copy.png)

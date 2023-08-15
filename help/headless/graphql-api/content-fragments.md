@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4918'
-ht-degree: 91%
+source-wordcount: '4913'
+ht-degree: 92%
 
 ---
 
@@ -139,7 +139,7 @@ Les cas d’utilisation peuvent dépendre du type d’environnement AEM as a Clo
 * Environnement de publication, utilisé pour :
    * Réaliser des requête de données pour l’application JS (cas d’utilisation standard)
 
-* Aperçu de l’environnement ; utilisé pour :
+* Environnement de prévisualisation ; utilisé pour :
    * Aperçu des requêtes avant le déploiement dans l’environnement de publication
       * Réaliser des requête de données pour l’application JS (cas d’utilisation standard)
 
@@ -156,9 +156,9 @@ Les requêtes GraphQL sont exécutées avec l’autorisation de l’utilisateur 
 
 En outre, l’utilisateur ou l’utilisatrice doit avoir accès à un point d’entrée GraphQL pour pouvoir exécuter des requêtes GraphQL.
 
-## Création de schémas {#schema-generation}
+## Génération de schémas {#schema-generation}
 
-GraphQL est une API dans laquelle les données doivent être clairement structurées et organisées par type.
+GraphQL est une API fortement typée, ce qui signifie que les données doivent être clairement structurées et organisées par type.
 
 La spécification GraphQL fournit une série de directives sur la création d’une API robuste pour interroger les données sur une certaine instance. Un client doit pour cela récupérer le [Schéma](#schema-generation), qui contient tous les types nécessaires pour une requête.
 
@@ -199,7 +199,7 @@ Par exemple, si vous :
 
 1. Installez un package contenant `Content-Fragment-Model-1` et `Content-Fragment-Model-2` :
 
-   1. Types GraphQL pour `Model-1` et `Model-2` sont générées.
+   1. Les types GraphQL pour `Model-1` et `Model-2` sont générés.
 
 1. Puis modifiez `Content-Fragment-Model-2` :
 
@@ -255,7 +255,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 {style="table-layout:auto"}
 
-### Champs d’assistance {#helper-fields}
+### Champs d’assistant {#helper-fields}
 
 Outre les types de données pour les champs générés par l’utilisateur, GraphQL pour AEM génère également un certain nombre de *assistance* pour identifier un fragment de contenu ou fournir des informations supplémentaires sur ce dernier.
 
@@ -345,7 +345,7 @@ Vous pouvez afficher tous les types GraphQL de métadonnées si vous affichez le
 >
 >Par exemple, en appelant le champ `stringMetadata`, vous recevriez un tableau de toutes les métadonnées stockées dans le référentiel comme `String` et en appelant `stringArrayMetadata`, vous recevriez un tableau de toutes les métadonnées stockées dans le référentiel comme `String[]`.
 
-Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb).
+Voir [Exemple de requête pour les métadonnées – Répertorier les métadonnées des prix intitulés GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb).
 
 #### Variations {#variations}
 
@@ -365,11 +365,11 @@ Le champ `_variations` a été implémenté pour simplifier la recherche de vari
 >
 >Notez que le champ `_variations` ne contient pas de variation `master`, car techniquement les données d’origine (référencées comme *Principal* dans l’interface utilisateur) ne sont pas considérées comme une variation explicite.
 
-Voir [Modèle de requête – Toutes les villes avec une variante nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
+Voir [Exemple de requête – Toutes les villes avec une variation nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
 >[!NOTE]
 >
->Si la variation donnée n’existe pas pour un fragment de contenu, les données d’origine (également appelées variation principale) sont renvoyées comme valeur par défaut (de secours).
+>Si la variation donnée n’existe pas pour un fragment de contenu, les données d’origine (également appelées variation principale) sont renvoyées comme valeur (de secours) par défaut.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -569,7 +569,7 @@ Cette fonctionnalité vous permet de trier les résultats de la requête en fonc
 Les critères de tri sont les suivants :
 
 * il s’agit d’une liste de valeurs séparées par des virgules représentant le chemin du champ,
-   * le premier champ de la liste définit l&#39;ordre de tri Principal, le second champ est utilisé si deux valeurs du critère de tri Principal sont égales, le troisième si les deux premiers critères sont égaux, etc.
+   * le premier champ de la liste définit l&#39;ordre de tri principal, le second champ est utilisé si deux valeurs du critère de tri principal sont égales, le troisième si les deux premiers critères sont égaux, etc.
    * notation pointillée, c’est-à-dire champ1.subfield.subfield, etc..
 * avec un sens d’ordre optionnel,
    * ASC (croissant) ou DESC (décroissant) ; la valeur par défaut est ASC,
@@ -707,7 +707,7 @@ query {
 
 ## Diffusion d’images optimisées pour le web dans des requêtes GraphQL {#web-optimized-image-delivery-in-graphql-queries}
 
-La diffusion d’images optimisées pour le web vous permet d’utiliser une requête Graphql pour :
+La diffusion d&#39;images optimisées pour le Web permet d&#39;utiliser une requête Graphql pour :
 
 * Demander une URL à une image AEM Asset
 
@@ -751,8 +751,8 @@ La structure et la syntaxe sont les suivantes :
    * `height` : la hauteur de la dimension ;
 * `rotation` : une énumération de toutes les rotations prises en charge : R90, R180, R270 ;
 * `flip` : une énumération de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL ;
-* `quality`: un entier compris entre 1 et 100 indiquant le pourcentage de la qualité de l’image ;
-* `width`: entier qui définit la largeur de l’image de sortie, mais est ignoré par le générateur d’images.
+* `quality`: nombre entier compris entre 1 et 100 notant le pourcentage de qualité de l’image
+* `width`: nombre entier qui définit la largeur de l’image de sortie, mais qui est ignoré par le générateur d’images.
 * `preferWebp` : une valeur booléenne qui indique si webp est préférable (la valeur par défaut est false).
 
 La transformation d’URL est disponible pour tous les types de requête : par chemin, liste ou paginé.
@@ -971,7 +971,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
         >[!NOTE]
         >
-        >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur par défaut (de secours).
+        >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur (de secours) par défaut.
 
         >[!CAUTION]
         >
@@ -1045,4 +1045,4 @@ AEM prévoit d’investir dans l’API AEM GraphQL.* »
 
 ## Tutoriel – Prise en main d’AEM découplé et de GraphQL {#tutorial}
 
-Vous cherchez un tutoriel pratique ? Consulter [Prise en main d’AEM sans affichage et GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) tutoriel de bout en bout illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et utilisé par une application externe, dans un scénario CMS sans interface.
+Vous cherchez un tutoriel pratique ? Consultez le tutoriel complet [Prise en main d’AEM Headless et de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS découplé.

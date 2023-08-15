@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '1999'
 ht-degree: 80%
 
 ---
@@ -38,7 +38,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
 1. Cliquez pour ouvrir l’onglet **Modèle de formulaire**, puis dans le menu déroulant **Choisir parmi**, sélectionnez l’un des modèles de fragment suivants :
 
-   * **Aucun**: Indique de créer le fragment à partir de zéro sans utiliser de modèle de formulaire.
+   * **Aucun**: indique de créer le fragment à partir de zéro sans utiliser de modèle de formulaire.
    * **Modèle de formulaire** : indique de créer le fragment à l’aide d’un modèle XDP téléchargé dans [!DNL AEM Forms]. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
 
    ![Création d’un formulaire adaptatif avec le modèle de formulaire comme modèle](assets/form-template-model.png)
@@ -61,7 +61,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
 En mode d’édition, vous pouvez faire glisser tout composant de formulaire adaptatif depuis le panneau latéral AEM sur le fragment. <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire XDP comme modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire apparaît dans l’outil de recherche de contenu. Il vous permet de faire glisser des éléments du modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du fichier XDP ou XSD associé.
+En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire XDP comme modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire apparaît dans l’outil de recherche de contenu. Il vous permet de faire glisser des éléments de modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du fichier XDP ou XSD associé.
 
 ### Enregistrement du panneau en tant que fragment {#save-panel-as-a-fragment}
 
@@ -85,7 +85,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 
    * **Balises** : métadonnées de balises de fragment.
 
-   * **Chemin cible**: Chemin d’accès au référentiel où le fragment est enregistré. Si vous ne spécifiez pas de chemin, un nœud portant le même nom que celui du fragment est créé en regard du nœud contenant le formulaire adaptatif. Le fragment est enregistré dans ce nœud.
+   * **Chemin cible**: chemin d’accès au référentiel où le fragment est enregistré. Si vous ne spécifiez pas de chemin, un nœud portant le même nom que celui du fragment est créé en regard du nœud contenant le formulaire adaptatif. Le fragment est enregistré dans ce nœud.
 
    * **Modèle de formulaire** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **schéma XML**, **modèle de formulaire** ou **aucun**. Ce champ n’est pas modifiable.
 

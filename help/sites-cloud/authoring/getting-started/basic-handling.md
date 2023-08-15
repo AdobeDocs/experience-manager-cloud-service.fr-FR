@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 92%
+source-wordcount: '2975'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Ce document donne un aperçu des opérations de gestion de base dans l’environ
 
 ## Interface utilisateur pour écrans tactiles {#a-touch-enabled-ui}
 
-L’interface utilisateur d’AEM est adaptée aux écrans tactiles. Les interfaces de ce type permettent d’interagir de manière tactile avec le logiciel en appuyant sur l’écran, en maintenant la pression du doigt ou en le faisant glisser. L’interface utilisateur d’AEM étant tactile, vous pouvez utiliser les mouvements des doigts sur vos appareils tactiles, tels que votre téléphone mobile ou votre tablette. Cependant, les actions de la souris sur un poste de travail traditionnel sont également disponibles, ce qui vous offre davantage de flexibilité pour créer votre contenu.
+L’interface utilisateur d’AEM est adaptée aux écrans tactiles. Une interface tactile vous permet d’interagir avec le logiciel en appuyant sur l’écran, en maintenant la touche enfoncée et en le faisant glisser. L’interface utilisateur d’AEM étant tactile, vous pouvez utiliser les mouvements des doigts sur vos appareils tactiles, tels que votre téléphone mobile ou votre tablette. Cependant, les actions de la souris sur un poste de travail traditionnel sont également disponibles, ce qui vous offre davantage de flexibilité pour créer votre contenu.
 
 ## Premiers pas {#first-steps}
 
@@ -216,7 +216,7 @@ L’action disponible dans la barre d’outils change pour tenir compte des acti
 
 La manière dont vous [sélectionnez une ressource](#viewing-and-selecting-resources) dépend du mode.
 
-En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois points ou **...**) ouvre un sélecteur de liste déroulante contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
+En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois points ou **..**) ouvre un sélecteur de liste déroulante contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
 
 ![Options supplémentaires](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -418,7 +418,7 @@ La chronologie peut être utilisée pour afficher et/ou lancer des événements 
 
 ![Arborescence de la chronologie](/help/sites-cloud/authoring/assets/timeline.png)
 
-La colonne Chronologie permet d’effectuer les actions suivantes :
+La colonne Chronologie permet d’effectuer les opérations suivantes :
 
 * Afficher divers événements liés à un élément sélectionné.
 

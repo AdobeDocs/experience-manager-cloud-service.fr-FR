@@ -4,9 +4,9 @@ description: Découvrez la configuration de Dynamic Media dans Adobe Experience
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3794'
 ht-degree: 98%
 
 ---
@@ -39,7 +39,6 @@ Avec la nouvelle architecture, Experience Manager est responsable des ressource
 >* [Diffusion de contenu HTTP/2](/help/assets/dynamic-media/http2faq.md)
 >* Redirection d’URL au niveau du réseau de diffusion de contenu
 >* Akamai ChinaCDN (pour une diffusion optimale en Chine)
-
 
 <!-- OBSOLETE CONTENT
 
@@ -85,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    Le nouveau mot de passe est enregistré si vous sélectionnez **[!UICONTROL Enregistrer]** dans l’angle supérieur droit de la page **[!UICONTROL Créer une configuration Dynamic Media]**.
 
-   Si vous avez sélectionné **[!UICONTROL Annuler]** dans la boîte de dialogue **[!UICONTROL Modifier le mot de passe]**, vous devez toujours saisir un nouveau mot de passe lorsque vous enregistrez la configuration Dynamic Media qui vient d’être créée.
+   Si vous avez sélectionné **[!UICONTROL Annuler]** dans le **[!UICONTROL Modifier le mot de passe]** , vous devez toujours saisir un nouveau mot de passe lorsque vous enregistrez la configuration Dynamic Media nouvellement créée.
 
    Voir aussi [Modifier le mot de passe pour Dynamic Media](#change-dm-password).
 
@@ -178,7 +177,7 @@ Le mot de passe modifié est enregistré lorsque vous sélectionnez **[!UICONTRO
 
    * Dans le champ **[!UICONTROL Nouveau mot de passe]**, saisissez un nouveau mot de passe.
 
-      Le champ **[!UICONTROL Mot de passe actuel]** est délibérément prérempli et masqué vis-à-vis des interactions.
+     Le champ **[!UICONTROL Mot de passe actuel]** est délibérément prérempli et masqué vis-à-vis des interactions.
 
    * Dans le champ **[!UICONTROL Répéter le mot de passe]**, saisissez une deuxième fois le nouveau mot de passe, puis sélectionnez **[!UICONTROL Terminé]**.
 
@@ -238,7 +237,6 @@ Les tâches d’installation et de configuration incluent :
 * [Configuration de la gestion des couleurs](#configuring-color-management)
 * [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats)
 * [Ajout de types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
-
 <!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
 #### Configurer la configuration de publication Dynamic Media pour Image Server {#publishing-setup-for-image-server}
@@ -291,7 +289,7 @@ Cela permet d’effectuer les opérations suivantes :
 Vous pouvez définir les types de ressources traités par Dynamic Media et personnaliser les paramètres de traitement des ressources avancé. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
 
 * Conversion d’un Adobe PDF en ressource de catalogue électronique.
-* Convertissez un document Adobe Photoshop (.PSD) en ressource de modèle de bannière à des fins de personnalisation.
+* Convertissez un document Adobe Photoshop (.PSD) en ressource de modèle de bannière pour la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript® encapsulé Adobe Photoshop (.eps).
 * Des [profils vidéo](/help/assets/dynamic-media/video-profiles.md) et des [profils d’images](/help/assets/dynamic-media/image-profiles.md) peuvent être utilisés pour définir le traitement des vidéos et des images.
 
@@ -479,7 +477,7 @@ Le paramètre de connexion de téléchargement de Dynamic Media Classic (Scene7)
 1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`.
 1. Dans le champ **[!UICONTROL Nombre de connexions]** et **[!UICONTROL Délai d’expiration des tâches actives]**, modifiez le nombre en fonction de vos besoins.
 
-   Le paramètre **[!UICONTROL Nombre de connexions]** contrôle le nombre maximal de connexions HTTP pour qu’Experience Manager peut transférer dans Dynamic Media. En règle générale, la valeur prédéfinie de dix connexions est suffisante.
+   Le paramètre **[!UICONTROL Nombre de connexions]** contrôle le nombre maximal de connexions HTTP pour qu’Experience Manager peut charger dans Dynamic Media. En règle générale, la valeur prédéfinie de dix connexions est suffisante.
 
    Le paramètre **[!UICONTROL Active job timeout]** détermine le temps d’attente avant que les ressources Dynamic Media chargées ne soient publiées sur le serveur de diffusion. Cette valeur est de 2 100 secondes ou 35 minutes, par défaut.
 

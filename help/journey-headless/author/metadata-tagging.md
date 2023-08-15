@@ -2,10 +2,10 @@
 title: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 description: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 1486a330e7931ab679f37464c3e22a27ea0d5876
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 85%
 
 ---
 
@@ -30,15 +30,15 @@ Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balis
 
 * Lors de la première création de votre fragment (à partir de la console **Assets**) :
 
-   ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+  ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* L’onglet **Variations** de l’éditeur de fragment de contenu vous permet d’ajouter des **balises** depuis votre projet :
+* La variable **Variations** de l’éditeur de fragment de contenu vous permet d’ajouter des **Balises** de votre projet :
 
-   ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* L’onglet **Métadonnées** de l’éditeur de fragment de contenu vous permet d’ajouter différents champs de métadonnées et des **Balises** prédéfinies à partir de votre projet :
+* La variable **Métadonnées** dans l’onglet de l’éditeur de fragment de contenu, vous pouvez ajouter différents champs de métadonnées et des champs prédéfinis. **Balises** de votre projet :
 
-   ![Éditeur de fragment de contenu – Métadonnées](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+  ![Éditeur de fragment de contenu – Métadonnées](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
    * Vous pouvez également y accéder directement à l’aide de l’option **Propriétés** dans la barre d’outils de la console Ressources.
 

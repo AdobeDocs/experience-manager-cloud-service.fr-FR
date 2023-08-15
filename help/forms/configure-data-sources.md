@@ -1,14 +1,14 @@
 ---
 title: Comment configurer des sources de données ?
-description: L’intégration de données Experience Manager Forms permet de configurer des sources de données disparates et de s’y connecter. Découvrez comment configurer les services web RESTful, les services web SOAP et les services OData en tant que sources de données et comment les utiliser pour créer des modèles de données de formulaire.
+description: L’intégration de données Experience Manager Forms vous permet de configurer des sources de données disparates et de vous y connecter. Découvrez comment configurer les services web RESTful, les services web SOAP et les services OData en tant que sources de données et comment les utiliser pour créer des modèles de données de formulaire.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2212'
-ht-degree: 98%
+source-wordcount: '2210'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
-L’intégration de données [!DNL Experience Manager Forms] permet de configurer des sources de données disparates et de s’y connecter. La prise en charge est assurée par défaut pour les types suivants :
+[!DNL Experience Manager Forms] Data Integration vous permet de configurer des sources de données disparates et de vous y connecter. La prise en charge est assurée par défaut pour les types suivants :
 
 * Bases de données relationnelles - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], et [!DNL Oracle RDBMS].
 * Services web RESTful
@@ -71,7 +71,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
 
    >[!NOTE]
    >
-   > Voir [Connexions SQL à l’aide de JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) pour plus d’informations.
+   > Voir [Connexions SQL avec JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) pour plus d’informations.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 

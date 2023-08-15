@@ -1,9 +1,9 @@
 ---
 title: Tableau de bord du contrôle de l’expérience
 description: Découvrez comment le contrôle de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en termes de performances, d’accessibilité, de bonnes pratiques et d’optimisation pour les moteurs de recherche par le biais d’une interface de tableau de bord claire et informative.
-source-git-commit: 7a8e6c3d226b02c65943629d0df196252218aa3c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '844'
 ht-degree: 17%
 
 ---

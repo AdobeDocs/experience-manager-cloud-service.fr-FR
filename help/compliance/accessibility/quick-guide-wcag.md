@@ -2,10 +2,10 @@
 title: Guide rapide relatif à WCAG 2.1
 description: Guide rapide relatif aux directives d’accessibilité du contenu web (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 66%
+source-wordcount: '1782'
+ht-degree: 65%
 
 ---
 

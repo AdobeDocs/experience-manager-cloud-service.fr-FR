@@ -4,16 +4,16 @@ description: Effectuez la gestion de vos documents PDF dans [!DNL Adobe Experien
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 96%
+source-wordcount: '849'
+ht-degree: 89%
 
 ---
 
 # Gérer les documents PDF dans Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
-Experience Manager Assets s’intègre de manière transparente à la visionneuse de fichiers PDF Document Cloud, qui vous permet de prévisualiser plusieurs pages d’un document PDF. En outre, vous pouvez également utiliser les fonctionnalités avancées de la visionneuse de fichiers PDF Document Cloud, telles que les annotations, la recherche de texte, la navigation dans le document PDF à l’aide de signets et de miniatures et bien plus encore sans quitter l’application. Experience Manager Assets vous permet également de télécharger des documents dans d’autres formats pris en charge et de les prévisualiser au format PDF.
+Experience Manager Assets s’intègre de manière transparente à la visionneuse Document Cloud PDF, ce qui vous permet de prévisualiser plusieurs pages d’un document PDF. En outre, vous pouvez également utiliser les fonctionnalités avancées de la visionneuse de fichiers PDF Document Cloud, telles que les annotations, la recherche de texte, la navigation dans le document PDF à l’aide de signets et de miniatures et bien plus encore sans quitter l’application. Experience Manager Assets vous permet également de télécharger des documents dans d’autres formats pris en charge et de les prévisualiser au format PDF.
 
 L’intégration d’AEM Assets à la visionneuse PDF Document Cloud offre les avantages suivants :
 * [Prise en charge des composants de la visionneuse PDF Document Cloud](#pdf-doc-cloud)
@@ -44,7 +44,7 @@ La visionneuse PDF native Document Cloud possède les composants suivants dans 
 
 ## Prise en charge de la prévisualisation de plusieurs pages et des annotations pour la ressource PDF {#multi-page}
 
-Adobe Experience Manager Assets vous permet de prévisualiser un document PDF comportant plusieurs pages. Pour prévisualiser plusieurs pages d’un document PDF, procédez comme suit :
+Adobe Experience Manager Assets vous permet de prévisualiser un document de PDF composé de plusieurs pages. Pour prévisualiser plusieurs pages d’un document PDF, procédez comme suit :
 
 1. Suivez la procédure afin de [télécharger des ressources dans AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=fr).
 1. Accédez au document PDF que vous souhaitez télécharger et prévisualiser.
@@ -66,7 +66,7 @@ Vous pouvez également ajouter des [annotations](#pdf-annotations) au document P
 
 **Annotations PDF{#pdf-annotations}**
 
-Experience Manager Assets vous permet d’ajouter des commentaires sur un document PDF. Un document PDF peut comporter plusieurs annotations.
+Experience Manager Assets vous permet d’ajouter des commentaires à un document de PDF. Un document PDF peut comporter plusieurs annotations.
 
 Pour annoter un document PDF, procédez comme suit :
 1. Accédez à l’interface d’Assets, puis sélectionnez le document PDF à annoter. La visionneuse PDF native s’ouvre à droite et affiche une prévisualisation du document PDF sélectionné.

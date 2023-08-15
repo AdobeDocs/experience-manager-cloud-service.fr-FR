@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 6822011a46a1c12c0057e828d976c735ec878eea
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1630'
 ht-degree: 72%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 72%
 * Partagez à l’aide d’[[!DNL Adobe Asset Link]](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html).
 * Partagez à l’aide de [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr).
 
-## Prérequis {#prerequisites}
+## Conditions préalables requises {#prerequisites}
 
 Vous avez besoin de droits d’administrateur pour [configuration des paramètres pour le partage de ressources en tant que lien](#config-link-share-settings).
 
 ## Configuration des paramètres de partage de lien {#config-link-share-settings}
 
-[!DNL Experience Manager Assets] vous permet de configurer les paramètres de partage de lien par défaut.
+[!DNL Experience Manager Assets] vous permet de configurer les paramètres par défaut du partage de liens.
 
 1. Cliquez sur le bouton [!DNL Experience Manager] , puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des ressources]** > **[!UICONTROL Partage de liens]**.
 1. Paramètres initiaux :
@@ -49,7 +49,7 @@ Vous avez besoin de droits d’administrateur pour [configuration des paramètre
 1. Indiquez la période de validité par défaut du lien dans la variable `Validity Period` dans le champ `Expiration date` .
 
 1. **[!UICONTROL Partage de liens]** dans la barre d’actions :
-   * Tous les utilisateurs avec `jcr:modifyAccessControl` les autorisations peuvent afficher la variable [!UICONTROL Partage de liens] . Par défaut, il est visible par tous les administrateurs. Le [!UICONTROL Partage de liens] est visible par tous, par défaut. Vous pouvez configurer pour afficher cette option uniquement pour les groupes définis ou refuser cette option à des groupes spécifiques. Sélectionner `Allow only for groups` si vous souhaitez autoriser des groupes spécifiques à afficher la variable `Share Link` . Sélectionner `Deny from groups` de refuser la variable `Share Link` à partir de groupes spécifiques. Une fois que vous avez sélectionné l’une de ces options, indiquez les noms des groupes à l’aide de la variable `Select Groups` pour ajouter les noms de groupe que vous devez autoriser ou refuser.
+   * Tous les utilisateurs avec `jcr:modifyAccessControl` les autorisations peuvent afficher la variable [!UICONTROL Partage de liens] . Par défaut, il est visible par tous les administrateurs. La variable [!UICONTROL Partage de liens] est visible par tous, par défaut. Vous pouvez configurer pour afficher cette option uniquement pour les groupes définis ou refuser cette option à des groupes spécifiques. Sélectionner `Allow only for groups` si vous souhaitez autoriser des groupes spécifiques à afficher la variable `Share Link` . Sélectionner `Deny from groups` de refuser la variable `Share Link` à partir de groupes spécifiques. Une fois que vous avez sélectionné l’une de ces options, spécifiez les noms des groupes à l’aide de la commande `Select Groups` pour ajouter les noms de groupe que vous devez autoriser ou refuser.
 
 Pour connaître les paramètres associés à la configuration du courrier électronique, voir [Documentation du service Email](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
@@ -57,7 +57,7 @@ Pour connaître les paramètres associés à la configuration du courrier élect
 
 ## Partage de ressources en tant que lien {#sharelink}
 
-Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers, de responsables marketing et d’autres utilisateurs [!DNL Experience Manager]. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lors du téléchargement des ressources à partir d’un lien partagé, [!DNL Experience Manager Assets] utilise un service asynchrone qui permet d’effectuer des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans les archives ZIP de taille de fichier gérable. Pour les téléchargements volumineux, le téléchargement est regroupé en plusieurs fichiers de 100 Go par taille de fichier.
+Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers, de spécialistes marketing et d’autres utilisateurs [!DNL Experience Manager]. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lors du téléchargement des ressources à partir d’un lien partagé, [!DNL Experience Manager Assets] utilise un service asynchrone qui permet d’effectuer des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans les archives ZIP de taille de fichier gérable. Pour les téléchargements volumineux, le téléchargement est regroupé en plusieurs fichiers de 100 Go par taille de fichier.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -96,7 +96,7 @@ Pour partager des ressources par e-mail :
 1. Sélectionnez les ressources ou le dossier contenant les ressources. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**.
 1. La boîte de dialogue **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans le champ **[!UICONTROL Partager le lien]**.
 
-   * Dans la zone Adresse électronique, saisissez l’adresse électronique de l’utilisateur avec lequel vous souhaitez partager le lien. Vous pouvez partager le lien avec plusieurs utilisateurs. Si l’utilisateur est membre de votre organisation, sélectionnez son adresse électronique dans la liste déroulante des suggestions. Dans le champ de texte de l’adresse électronique, saisissez l’adresse électronique de l’utilisateur avec lequel vous souhaitez partager le lien, puis cliquez sur [!UICONTROL Entrée]. Vous pouvez partager le lien avec plusieurs utilisateurs.
+   * Dans la zone Adresse électronique, saisissez l’adresse électronique de l’utilisateur avec lequel vous souhaitez partager le lien. Vous pouvez partager le lien avec plusieurs utilisateurs. Si l’utilisateur est membre de votre organisation, sélectionnez son adresse électronique dans la liste déroulante des suggestions. Dans le champ de texte Adresse électronique, saisissez l’adresse électronique de l’utilisateur avec lequel vous souhaitez partager le lien, puis cliquez sur [!UICONTROL Entrée]. Vous pouvez partager le lien avec plusieurs utilisateurs.
 
    * Dans la zone **[!UICONTROL Objet]**, saisissez un objet pour préciser l’objectif des ressources partagées.
    * Dans la zone **[!UICONTROL Message]**, vous pouvez, au besoin, saisir un message.

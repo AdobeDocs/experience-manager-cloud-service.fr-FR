@@ -1,11 +1,11 @@
 ---
 title: Rechercher
-description: Trouvez votre contenu plus rapidement grâce à la recherche exhaustive
+description: Trouvez votre contenu plus rapidement grâce à une recherche complète
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 63%
+source-wordcount: '490'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +33,7 @@ Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
 Pour rechercher et filtrer vos ressources :
 
-1. Ouvrir **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme à rechercher. Les suggestions sont faites et peuvent être sélectionnées :
+1. Ouvrez **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme à rechercher. Les suggestions sont faites et peuvent être sélectionnées :
 
    ![Terme recherché](/help/sites-cloud/authoring/assets/search-term.png)
 
@@ -54,7 +54,7 @@ Pour rechercher et filtrer vos ressources :
 
    Selon le type de ressource, la fonction de recherche présente une sélection prédéfinie de critères de recherche et de filtrage.
 
-   Le panneau latéral vous permet de sélectionner les éléments suivants :
+   Le panneau latéral vous permet de sélectionner :
 
    * Recherches enregistrées
    * Répertoire de recherche
@@ -63,9 +63,9 @@ Pour rechercher et filtrer vos ressources :
 
    >[!NOTE]
    >
-   >Les critères de recherche peuvent varier :
+   >Les critères de recherche peuvent varier :
    >
-   >* Selon le type de ressource que vous avez sélectionné ; par exemple, les critères Ressources et Communautés sont, de manière compréhensible, spécialisés.
+   >* selon le type de ressource que vous avez sélectionné ; par exemple, les critères Assets et Communities sont spécialisé, de manière compréhensible.
    >* Votre instance comme les formulaires de recherche peuvent être personnalisés (approprié selon l’emplacement dans AEM).
 
 <!--
@@ -86,7 +86,7 @@ Pour rechercher et filtrer vos ressources :
 
 ## Recherches enregistrées {#saved-searches}
 
-Outre la recherche par un large éventail de facettes, vous pouvez enregistrer une configuration de recherche spécifique à récupérer et à utiliser ultérieurement :
+Outre la recherche à partir de nombreuses facettes, vous pouvez enregistrer une configuration de recherche spécifique pour la récupérer et l’utiliser ultérieurement :
 
 1. Définissez vos critères de recherche et sélectionnez **Enregistrer**.
 
@@ -100,7 +100,7 @@ Outre la recherche par un large éventail de facettes, vous pouvez enregistrer u
 
    ![Recherches enregistrées](/help/sites-cloud/authoring/assets/saved-searches.png)
 
-1. Une fois enregistré, vous pouvez :
+1. Une fois l’enregistrement effectué, vous pouvez :
 
    * cliquer sur la **croix** (à côté du nom de la recherche enregistrée) pour lancer une nouvelle requête (la recherche enregistrée elle-même ne sera pas supprimée) ;
    * **modifier la recherche enregistrée**, modifier les critères de recherche, puis **enregistrer** la recherche une nouvelle fois.

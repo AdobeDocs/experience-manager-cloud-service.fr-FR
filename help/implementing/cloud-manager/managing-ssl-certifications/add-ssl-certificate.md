@@ -2,9 +2,9 @@
 title: Ajout d’un certificat SSL
 description: Découvrez comment ajouter votre propre certificat SSL à l’aide des outils en libre-service de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 82%
 
 ---
@@ -73,7 +73,7 @@ Une fois enregistré, votre certificat s’affiche sous la forme d’une nouvell
 
 >[!NOTE]
 >
->Un utilisateur doit être membre de la fonction **Propriétaire de l’entreprise** ou **Responsable de déploiement** rôle permettant d’installer un certificat SSL dans Cloud Manager.
+>Un utilisateur doit être membre de la fonction **Propriétaire de l’entreprise** ou **Responsable de déploiement** rôle pour installer un certificat SSL dans Cloud Manager.
 
 ## Erreurs de certificat {#certificate-errors}
 
