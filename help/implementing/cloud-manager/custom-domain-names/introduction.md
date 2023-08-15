@@ -1,11 +1,11 @@
 ---
 title: Introduction aux noms de domaine personnalisés
-description: L’interface utilisateur Cloud Manager permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service.
+description: L’interface utilisateur de Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site avec un nom de marque unique en libre-service.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 93%
+source-wordcount: '757'
+ht-degree: 74%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="Gestion des noms de domaine personnalisés"
->abstract="L’interface utilisateur Cloud Manager permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service."
+>abstract="L’interface utilisateur de Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site avec un nom de marque unique en libre-service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=fr" text="Ajout d’un nom de domaine personnalisé"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=fr" text="Afficher et mettre à jour le nom de domaine personnalisé"
 
-L’interface utilisateur Cloud Manager permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service. Adobe Experience Manager as a Cloud Service est configuré avec un nom de domaine par défaut, se terminant par `*.adobeaemcloud.com`. Ce nom de domaine par défaut est conservé, même après avoir associé de noms de domaine personnalisés à votre site web.
+L’interface utilisateur de Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site avec un nom de marque unique en libre-service. Adobe Experience Manager as a Cloud Service est configuré avec un nom de domaine par défaut, se terminant par `*.adobeaemcloud.com`. Ce nom de domaine par défaut est conservé, même après avoir associé de noms de domaine personnalisés à votre site web.
 
 ## Que sont les noms de domaine personnalisés ? {#what-are-custom-domain-names}
 
-Chaque site web est associé à une adresse numérique unique, lisible par ordinateur, telle que `184.33.123.64`. Le système de noms de domaine (DNS) permet d’associer des domaines personnalisés de marque à des sites web en traduisant des adresses numériques en adresses mémorisables, telles que `wknd.com`.
+Chaque site web est associé à une adresse numérique unique, lisible par ordinateur, telle que `184.33.123.64`. Le système de noms de domaine (DNS) permet d’associer des domaines personnalisés de marque à des sites web en traduisant des adresses numériques en adresses mémorables, telles que `wknd.com`.
 
 Il est recommandé d’attribuer à votre site un nom de domaine qui soit mémorisable pour vos clients et qui reflète votre marque.
 
@@ -35,7 +35,7 @@ Vous pouvez acheter un nom de domaine auprès d’un service d’enregistrement 
 
 ## Noms de domaines personnalisés et réseaux CDN BYO {#byo-cdn}
 
-AEM as a Cloud Service offre un service de réseau CDN (réseau de diffusion en continu) intégré mais vous permet également d’apporter votre propre réseau CDN (BYO) à utiliser avec AEM. Les domaines personnalisés peuvent être installés dans le réseau CDN géré par AEM ou dans un réseau CDN géré par vous-même.
+AEM as a Cloud Service propose un service CDN (Content Delivery Network) intégré, mais vous permet également d’apporter votre propre CDN (BYO) à utiliser avec AEM. Les domaines personnalisés peuvent être installés dans le réseau CDN géré par AEM ou dans un réseau CDN géré par vous-même.
 
 * Les noms de domaines (et certificats) personnalisés installés dans le réseau CDN géré par AEM sont gérés via Cloud Manager.
 * Les noms de domaines personnalisés (et les certificats) installés dans votre propre réseau CDN sont gérés dans ce réseau CDN spécifique.
@@ -70,8 +70,8 @@ L’utilisation de noms de domaine personnalisés avec AEMaaCS présente certain
 
 * Les noms de domaines personnalisés sont pris en charge dans Cloud Manager pour les services de publication et de prévisualisation pour les programmes Sites. Les domaines personnalisés pour les services de création ne sont pas pris en charge.
 * Chaque environnement Cloud Manager peut héberger jusqu’à 500 domaines personnalisés.
-* Les noms de domaines ne peuvent pas être ajoutés aux environnements tant qu’un pipeline en cours d’exécution est attaché à ceux-ci.
-* Un même nom de domaine ne peut pas être utilisé sur plusieurs environnements.
+* Les noms de domaine ne peuvent pas être ajoutés aux environnements lorsqu’un pipeline en cours d’exécution est associé à ces environnements.
+* Le même nom de domaine ne peut pas être utilisé dans plusieurs environnements.
 * Il n’est possible d’ajouter qu’un seul nom de domaine à la fois.
 * AEM as a Cloud Service ne prend pas en charge les domaines génériques tels que `*.example.com`.
 * Avant d’ajouter un nom de domaine personnalisé, un certificat SSL valide contenant le nom du domaine personnalisé (les certificats génériques sont valides) doit être installé pour votre programme. Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour en savoir plus.
