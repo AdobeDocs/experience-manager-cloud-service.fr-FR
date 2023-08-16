@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="Migration des groupes d’utilisateurs fermés"
->abstract="La migration des groupes d’utilisateurs fermés (CUG) nécessite actuellement quelques vérifications et étapes pour être opérationnelle après une migration."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="Groupes d’utilisateurs fermés dans AEM"
+>title="Migration des groupes d’utilisateurs et utilisatrices fermés"
+>abstract="La migration des groupes d’utilisateurs et utilisatrices fermés (CUG) nécessite actuellement quelques vérifications et étapes pour être opérationnelle après une migration."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=fr" text="Groupes d’utilisateurs fermés dans AEM"
 
 Actuellement, les groupes d’utilisateurs fermés (CUG) ont besoin de certaines étapes supplémentaires pour être fonctionnels dans l’environnement de destination d’une migration.  Ce document explique le scénario et les étapes requises pour leur permettre de protéger les noeuds de la manière prévue.
 
@@ -32,7 +32,7 @@ Enfin, les processus doivent être déclenchés pour activer le CUG. Pour ce fai
 
 Cela devrait activer les stratégies de CUG lors de la publication, et le contenu ne sera accessible qu’aux utilisateurs authentifiés qui sont membres du groupe associé aux stratégies.
 
-## Développement principal
+## Développement actif
 
 L’équipe de migration s’efforce de faire migrer et fonctionner automatiquement les stratégies de CUG, sans aucune étape supplémentaire après l’ingestion du contenu.
 Il est conseillé d’inclure la fonctionnalité CUG dans tout processus de test avant de tenter de passer en ligne.
