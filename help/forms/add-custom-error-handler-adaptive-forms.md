@@ -7,10 +7,10 @@ keywords: Ajoutez un gestionnaire d’erreurs personnalisé, ajoutez un gestionn
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
 source-wordcount: '1983'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 6%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
 | AEM as a Cloud Service | Cet article |
 
-AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaire. Il fournit également une fonctionnalité pour personnaliser les fonctions du gestionnaire d’erreurs. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client que le service est hors service. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un service externe est appelé à l’aide d’API, les données sont transmises au serveur pour validation, qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction. Un gestionnaire d’erreurs permet de gérer et d’afficher les erreurs ou les problèmes de validation rencontrés.
+AEM Forms fournit des gestionnaires de succès et d’erreur prêts à l’emploi pour les envois de formulaires. Il fournit également une fonctionnalité pour personnaliser les fonctions du gestionnaire d’erreurs. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client que le service est hors service. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un service externe est appelé à l’aide d’API, les données sont transmises au serveur pour validation, qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises comme paramètres au gestionnaire approprié pour exécuter la fonction. Un gestionnaire d’erreurs permet de gérer et d’afficher les erreurs ou les problèmes de validation rencontrés.
 
 ![workflow du gestionnaire d’erreurs pour comprendre comment ajouter un gestionnaire d’erreurs personnalisé dans les formulaires](/help/forms/assets/error-handler-workflow.png)
 
-Le formulaire adaptatif valide les entrées que vous fournissez dans les champs en fonction de critères de validation prédéfinis et vérifie diverses erreurs renvoyées par le point de terminaison REST configuré pour appeler un service externe. Vous pouvez définir les critères de validation en fonction de la source de données que vous utilisez avec le formulaire adaptatif. Par exemple, si vous utilisez des services web RESTful comme source de données, vous pouvez définir les critères de validation dans un fichier de définition Swagger.
+Le formulaire adaptatif valide les entrées que vous fournissez dans les champs en fonction de critères de validation prédéfinis et vérifie diverses erreurs renvoyées par le point de terminaison REST configuré pour appeler un service externe. Vous pouvez définir les critères de validation en fonction de la source de données utilisée avec le formulaire adaptatif. Par exemple, si vous utilisez des services web RESTful comme source de données, vous pouvez définir les critères de validation dans un fichier de définition Swagger.
 
 Si les valeurs d’entrée répondent aux critères de validation, les valeurs sont envoyées à la source de données, sinon le formulaire adaptatif affiche un message d’erreur à l’aide d’un gestionnaire d’erreurs. De la même manière que cette approche, Adaptive Forms s’intègre aux gestionnaires d’erreurs personnalisés pour effectuer des validations de données. Si les valeurs d’entrée ne répondent pas aux critères de validation, les messages d’erreur s’affichent au niveau du champ dans le formulaire adaptatif. Cela se produit lorsque le message d’erreur de validation renvoyé par le serveur est au format standard du message.
 
@@ -35,14 +35,14 @@ Si les valeurs d’entrée répondent aux critères de validation, les valeurs s
 ## Utilisation des gestionnaires d’erreurs {#uses-of-error-handler}
 
 Les gestionnaires d’erreurs sont utilisés à diverses fins. Certaines des utilisations des fonctions de gestionnaire d’erreurs sont répertoriées ci-dessous :
-* **Validation**: La gestion des erreurs commence par la validation des entrées utilisateur par rapport à des règles ou critères prédéfinis. Lorsque les utilisateurs remplissent un formulaire adaptatif, le gestionnaire d’erreurs valide l’entrée afin de s’assurer qu’elle respecte le format, la longueur ou toute autre contrainte requis.
+* **Validation**: la gestion des erreurs commence par la validation des entrées utilisateur par rapport à des règles ou critères prédéfinis. Lorsque les utilisateurs remplissent un formulaire adaptatif, le gestionnaire d’erreurs valide l’entrée afin de s’assurer qu’elle respecte le format, la longueur ou toute autre contrainte requis.
 
-* **Fournir des commentaires en temps réel**: Lorsqu’une erreur est détectée, le gestionnaire d’erreurs affiche des commentaires immédiats à l’utilisateur, tels que des messages d’erreur intégrés sous les champs de formulaire correspondants. Ces commentaires permettent aux utilisateurs d’identifier et de corriger les erreurs sans avoir à envoyer le formulaire et attendre une réponse.
+* **Fournir des commentaires en temps réel**: lorsqu’une erreur est détectée, le gestionnaire d’erreurs affiche des commentaires immédiats à l’utilisateur, tels que des messages d’erreur intégrés sous les champs de formulaire correspondants. Ces commentaires permettent aux utilisateurs d’identifier et de corriger les erreurs sans avoir à envoyer le formulaire et attendre une réponse.
 
 
-* **Affichage des messages d’erreur**: Lorsqu’un envoi de formulaire adaptatif rencontre une erreur de validation, le gestionnaire d’erreurs affiche un message d’erreur approprié. Les messages d’erreur doivent être clairs, concis et mettre en évidence les champs spécifiques qui nécessitent une attention particulière.
+* **Affichage des messages d’erreur**: lorsqu’un envoi de formulaire adaptatif rencontre une erreur de validation, le gestionnaire d’erreurs affiche un message d’erreur approprié. Les messages d’erreur doivent être clairs, concis et mettre en évidence les champs spécifiques qui nécessitent une attention particulière.
 
-* **Met en surbrillance le champ erroné**: Pour attirer l’attention de l’utilisateur sur les champs spécifiques incorrects, le gestionnaire d’erreurs surligne ou distingue visuellement les champs correspondants. Il est effectué en modifiant la couleur d’arrière-plan, en ajoutant une icône ou une bordure, ou tout autre indice visuel qui aide les utilisateurs à localiser et à corriger rapidement les erreurs.
+* **Met en surbrillance le champ erroné**: pour attirer l’attention de l’utilisateur sur les champs spécifiques incorrects, le gestionnaire d’erreurs surligne ou distingue visuellement les champs correspondants. Il est effectué en modifiant la couleur d’arrière-plan, en ajoutant une icône ou une bordure, ou tout autre indice visuel qui aide les utilisateurs à localiser et à corriger rapidement les erreurs.
 
 
 ## Format de réponse échec/erreur {#failure-response-format}
@@ -290,7 +290,7 @@ Pour utiliser un gestionnaire d’erreurs personnalisé à l’aide de la métho
 1. Définissez une condition dans la section **Lorsque** de la règle. Par exemple, Lorsque **[Nom du champ Identifiant de l’animal domestique]** est modifié, sélectionnez **est modifié** de la **Sélectionner un état** liste déroulante.
 1. Dans la section **Then** (Alors), sélectionnez **[!UICONTROL Invoke Service]** (Appeler un service) dans la liste déroulante **Select Action** (Sélectionner une action). 
 1. Sélectionnez une **Post service** et ses liaisons de données correspondantes depuis la variable **Entrée** . Par exemple, pour valider **Identifiant de paramètre prédéfini**, sélectionnez une **Post service** as **GET /pet/{petId}** et sélectionnez **Identifiant de paramètre prédéfini** dans le **Entrée** .
-1. Sélectionnez les liaisons de données dans la **Sortie** . Par exemple, sélectionnez Sélectionner . **Nom du paramètre prédéfini** dans le **Sortie** .
+1. Sélectionnez les liaisons de données dans la **Sortie** . Par exemple, Sélectionner **Nom du paramètre prédéfini** dans le **Sortie** .
 1. Sélectionner **[!UICONTROL Gestionnaire d’erreurs personnalisé]** de la **[!UICONTROL Gestionnaire d’erreurs]** .
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
