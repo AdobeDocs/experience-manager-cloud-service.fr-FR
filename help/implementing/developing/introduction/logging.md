@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service pour configurer les paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 91%
+source-wordcount: '2683'
+ht-degree: 81%
 
 ---
 
@@ -17,6 +17,7 @@ Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service 
 
 * La journalisation au niveau de l’application AEM.
 * La journalisation de serveur web Apache HTTPD/Dispatcher au niveau Publication.
+* La journalisation du réseau de diffusion de contenu, qui comme son nom l’indique, effectue la journalisation sur le réseau de diffusion de contenu. Cette fonctionnalité est actuellement disponible pour les utilisateurs finaux. Pour rejoindre le programme des premiers adopteurs, envoyez un email à l’adresse **aemcs-cdnlogs-adopter@adobe.com**, notamment le nom de votre organisation et le contexte de votre intérêt pour la fonctionnalité.
 
 ## Journalisation AEM {#aem-logging}
 
@@ -52,7 +53,7 @@ Développement</td>
 DEBUG</td>
 <td>
 Décrit ce qui se passe dans l’application.<br>
-Lorsque la journalisation DEBUG est principale, les instructions fournissant une image claire des activités qui se produisent et des paramètres clés qui affectent le traitement sont consignés.</td>
+Lorsque la journalisation DEBUG est active, les instructions fournissant une image claire des activités qui se produisent et des paramètres clés qui affectent le traitement sont consignés.</td>
 <td>
 <ul>
 <li> Développement local</li>
@@ -498,6 +499,57 @@ Define DISP_LOG_LEVEL debug
 >[!NOTE]
 >
 >Pour les environnements AEM as a Cloud Service, le débogage est le niveau maximal de verbosité. Le niveau de journalisation de trace n’étant pas pris en charge, évitez de le définir lorsque vous travaillez dans des environnements cloud.
+
+## Journal CDN {#cdn-log}
+
+>[!NOTE]
+>
+>Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme d’adoption précoce en cours, envoyez un courrier électronique à l’adresse **aemcs-cdnlogs-adopter@adobe.com**, notamment le nom de votre organisation et le contexte de votre intérêt pour la fonctionnalité.
+>
+
+AEM as a Cloud Service permet d’accéder aux journaux CDN, qui sont utiles pour les cas d’utilisation, notamment l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de le définir sur différents modes tels que les informations, les avertissements ou les erreurs.
+
+**Exemple**
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR"
+}
+```
+
+**Format du journal**
+
+Les journaux CDN sont différents des autres journaux dans la mesure où ils respectent un format json.
+
+| **Nom du champ** | **Description** |
+|---|---|
+| *timestamp* | Heure à laquelle la demande a commencé, après la fin de TLS |
+| *ttfb* | Abréviation de *Time To First Byte*. Intervalle entre le démarrage de la requête et le début de la diffusion du corps de la réponse. |
+| *cli_ip* | Adresse IP du client. |
+| *cli_country* | Deux lettres [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1) code de pays alpha-2 pour le pays client. |
+| *rid* | La valeur de l’en-tête de requête utilisé pour identifier la requête de manière unique. |
+| *req_ua* | L’agent utilisateur responsable de l’exécution d’une requête HTTP donnée. |
+| *host* | Autorité à laquelle la demande est destinée. |
+| *url* | Chemin d’accès complet, y compris les paramètres de requête. |
+| *method* | méthode HTTP envoyée par le client, telle que &quot;GET&quot; ou &quot;POST&quot;. |
+| *res_ctype* | Type de contenu utilisé pour indiquer le type de média d’origine de la ressource. |
+| *cache* | État du cache. Les valeurs possibles sont HIT, MISS ou PASS |
+| *status* | Le code d’état HTTP sous la forme d’une valeur entière. |
+| *res_age* | Durée (en secondes) pendant laquelle une réponse a été mise en cache (dans tous les noeuds). |
+| *pop* | Centre de données du serveur de cache CDN. |
 
 ## Comment accéder aux journaux {#how-to-access-logs}
 
