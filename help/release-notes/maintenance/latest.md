@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
+source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 18%
+source-wordcount: '661'
+ht-degree: 17%
 
 ---
 
@@ -24,7 +24,7 @@ Vous trouverez ci-dessous un résumé des améliorations continues apportées à
 - SITES-13906 : GraphQL - Mise à niveau vers graphql-java 20.1.
 - SITES-8972 : GraphQL - Ajout d’une étiquette d’option dans JSON pour le type de données Énumération .
 - SITES-9689 : GraphQL - Ajoutez un titre et une description dans JSON pour le type de données de référence de contenu.
-- SITES-13052 : Fragments de contenu - Exporter des fragments de contenu vers Adobe Target
+- SITES-13052 : Fragments de contenu - Exporter des fragments de contenu vers Adobe Target.
 
 ### Problèmes résolus {#fixed-issues-13099}
 
@@ -33,7 +33,7 @@ Vous trouverez ci-dessous un résumé des améliorations continues apportées à
 - SITES-11620 : Fragments de contenu - Le chemin des références est légèrement coupé dans l’interface utilisateur.
 - SITES-14171 : GraphQL - Dans certains cas, les références circulaires ne sont pas rompues pour les données mises en cache.
 - SITES-14577 : Fragments d’expérience - La publication en bloc ne fonctionne pas pour les Live Copies.
-- SITES-14341 : Interface utilisateur d’administration - Comportement incohérent du bouton &quot;Propriétés&quot; lors de la suppression des autorisations.
+- SITES-14341 : Interface utilisateur d’administration - Comportement incohérent du bouton &quot;Propriétés&quot; lorsque les autorisations de suppression sont supprimées.
 - SITES-11000 : Interface utilisateur d’administration - Références : liens entrants manquants dans certaines pages.
 - SITES-11559 : Interface utilisateur d’administration - Références : les liens entrants affichent des pages incorrectes.
 - SITES-14337 : Interface utilisateur d’administration - L’ouverture de la page de l’éditeur génère une erreur dans des cas spécifiques.
@@ -54,7 +54,9 @@ Vous trouverez ci-dessous un résumé des améliorations continues apportées à
 
 ### Problèmes connus {#known-issues-13099}
 
-- SITES-15359 : le modèle de nom de variation ne parvient pas à faire correspondre correctement les variations qui ont ```'_'``` dans leurs noms de ressources.
+- SITES-15359 : Fragments de contenu - Le modèle de nom de variation ne parvient pas à faire correspondre correctement les variations qui ont ```'_'``` dans leurs noms de ressources.
+- SITES-15463 : La publication des modèles Sites - Modèles ne peut pas être effectuée (solution : utilisez la console de distribution).
+- CQ-4354191 : Workflows : le lanceur personnalisé peut se déclencher de nombreuses fois en raison des métadonnées de réplication présentes sur les noeuds non structurés nt:unstructured (solution : mise à jour des lanceurs pour exclure les propriétés de métadonnées de réplication afin d’éviter les chevauchements).
 
 ### Technologies intégrées {#embedded-tech-13099}
 
