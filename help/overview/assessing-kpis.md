@@ -1,11 +1,11 @@
 ---
 title: Accès aux indicateurs de performance clés
-description: Accès aux indicateurs de performance clés
+description: Découvrez comment accéder à vos indicateurs clés de performance et définir le processus de création de rapports
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 67%
+source-wordcount: '545'
+ht-degree: 65%
 
 ---
 
@@ -51,4 +51,4 @@ Après le lancement de votre Experience Manager, un ensemble solide d’indicate
 
 >[!TIP]
 >
-> Si vous avez besoin d’aide supplémentaire sur vos indicateurs clés de performance, contactez [Services de conseil Adobe](https://www.adobe.com/fr/experience-cloud/consulting-services.html) ou votre partenaire de mise en oeuvre.
+> Si vous avez besoin d’aide supplémentaire sur vos indicateurs clés de performance, contactez [Services de conseil en Adobe](https://www.adobe.com/fr/experience-cloud/consulting-services.html) ou votre partenaire de mise en oeuvre.

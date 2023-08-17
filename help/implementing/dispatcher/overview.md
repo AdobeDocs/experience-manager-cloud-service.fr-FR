@@ -1,11 +1,11 @@
 ---
 title: Présentation du flux de diffusion de contenu
-description: Présentation du flux de diffusion de contenu
+description: En savoir plus sur le flux de données de diffusion de contenu et comment publier votre contenu
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 49%
+source-wordcount: '217'
+ht-degree: 45%
 
 ---
 

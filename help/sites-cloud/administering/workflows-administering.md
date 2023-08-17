@@ -1,12 +1,12 @@
 ---
 title: Administration d’instances de workflow
-description: Découvrez comment administrer des instances de workflow
+description: Découvrez comment administrer des instances de workflow à l’aide de la console de workflow
 feature: Administering
 role: Admin
-source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 71%
+source-wordcount: '1288'
+ht-degree: 77%
 
 ---
 
@@ -16,19 +16,19 @@ La console de workflows fournit plusieurs outils permettant d’administrer les 
 
 Différentes consoles sont à votre disposition pour administrer les workflows. Utilisez la [navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) pour ouvrir le panneau **Outils**, puis sélectionnez **Workflows** :
 
-* **Modèles**: Gestion des définitions de workflow
+* **Modèles** : gérez les définitions des workflows.
 * **Instances** : affichez et gérez l’exécution des instances de workflow.
-* **Lanceurs**: Gérer le lancement des workflows
-* **Archiver**: Afficher l’historique des workflows qui se sont terminés avec succès
-* **Échecs**: Afficher l’historique des workflows qui se sont terminés avec des erreurs
+* **Lanceurs** : gérez le lancement des workflows.
+* **Archive** : affichez l’historique des workflows correctement terminés.
+* **Échecs** : affichez l’historique des workflows terminés avec des erreurs.
 * **Attribution automatique** : configurez l’attribution automatique des workflows aux modèles
 
 ## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
 1. Sélectionner **Instances** pour afficher la liste des instances de workflow en cours d’exécution.
-1. Sur le rail supérieur, dans le coin droit, les instances de workflow affichent **Exécuter des workflows**, **État**, et **Détails**.
-1. **Exécuter des workflows** indique le nombre de workflows en cours d’exécution et leur état. par exemple, dans les images données, sont affichés le nombre de **Exécuter des workflows** et le **État** de l’instance AEM :
+1. Sur le rail supérieur, dans le coin droit, les instances de workflow affichent **Workflows en cours d’exécution**, **État**, et **Détails**.
+1. **Workflows en cours d’exécution** indique le nombre de workflows en cours d’exécution et leur état. par exemple, dans les images données, sont affichés le nombre de **Workflows en cours d’exécution** et la variable **État** de l’instance AEM :
 
    * **Statut : sain**
      ![status-health](/help/sites-cloud/administering/assets/status-healthy.png)
@@ -38,10 +38,10 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 1. Pour **Détails de l’état** des instances de workflow, cliquez sur **Détails**, pour afficher la variable **nombre d’instances de workflows en cours d’exécution**, **instances de workflow terminées**, **instances de workflow annulées**, **instances de workflow en échec**, etc. par exemple, ci-dessous, les images données qui affichent **Détails de l’état** par :
 
-   * **Détails de l’état : Santé**
+   * **Détails de l’état : Sain**
      ![status-details-health](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   * **Détails de l’état : Malsain**
+   * **Détails de l’état : malsain**
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -96,9 +96,9 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    >[!NOTE]
    >
    >
-   >L’état d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ; par exemple :
+   >L’état d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ou de l’utilisatrice, comme par exemple :
    >
-   >* l’utilisation de la fonction **Arrêter** action
+   >* L’utilisation de la fonction **Terminer**.
    >* lorsqu’une page, soumise à un workflow, est supprimée (de force), le workflow est arrêté.
 
 1. Sélectionnez un élément spécifique, puis **Ouvrir l’historique** pour afficher plus de détails :
@@ -117,14 +117,14 @@ Affiche des détails sur l’historique des workflows.
 
 * **Relancer l’étape** Exécute à nouveau l’instance du composant d’étape de test. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur initiale. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
 * **Arrêter** Arrêtez le workflow si l’erreur a provoqué une situation irrémédiable pour le workflow. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.
-* **Arrêt et reprise** similaire à **Arrêter** mais qu’une nouvelle instance de workflow est lancée à l’aide de la charge utile, du titre et de la description d’origine.
+* **Arrêter et réessayer** similaire à **Arrêter** mais qu’une nouvelle instance de workflow est lancée à l’aide de la charge utile, du titre et de la description d’origine.
 
 Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, utilisez les étapes suivantes :
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
 
 1. Sélectionnez **Échecs** pour afficher la liste des instances de workflow qui ne se sont pas terminées avec succès.
-1. Sélectionnez un élément spécifique, puis l’action appropriée :
+1. Sélectionnez un élément spécifique, puis l’action appropriée :
 
 ![workflow-failure](/help/sites-cloud/administering/assets/workflow-failure.png)
 
@@ -147,7 +147,7 @@ Pour configurer le service, vous pouvez configurer les fichiers de configuration
 <table>
  <tbody>
   <tr>
-   <th>Nom de la propriété (console web)</th>
+   <th>Nom de propriété (console web)</th>
    <th>Nom de propriété OSGi</th>
    <th>Description</th>
   </tr>
@@ -157,9 +157,9 @@ Pour configurer le service, vous pouvez configurer les fichiers de configuration
    <td>Nom explicite de la purge planifiée.</td>
   </tr>
   <tr>
-   <td>État du processus</td>
+   <td>Statut du workflow</td>
    <td>scheduledpurge.workflowStatus</td>
-   <td><p>Statut des instances de workflow à purger. Les valeurs suivantes sont valides :</p>
+   <td><p>Statut des instances de workflow à purger. Les valeurs suivantes sont valides :</p>
     <ul>
      <li>TERMINÉ : les instances de workflow terminées sont purgées.</li>
      <li>EN COURS : les instances de workflow en cours d’exécution sont purgées.</li>
@@ -172,7 +172,7 @@ Pour configurer le service, vous pouvez configurer les fichiers de configuration
   </tr>
   <tr>
    <td>Âge du workflow</td>
-   <td>scheduledpurge.daysold</td>
+   <td>scheduledpurge.daysell</td>
    <td>L’âge des instances de workflow à purger, exprimé en jours.</td>
   </tr>
  </tbody>
@@ -186,7 +186,7 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 >Pour ajouter la configuration au référentiel, le PID de service est :
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
-| Nom de la propriété (console web) | Nom de propriété OSGi |
+| Nom de propriété (console web) | Nom de propriété OSGi |
 |---|---|
 | Taille de requête de boîte de réception maximale | granite.workflow.inboxQuerySize |
 
