@@ -3,10 +3,10 @@ title: Différences entre AEM 6.5 Forms et AEM Cloud Services
 description: Êtes-vous un utilisateur ou une utilisatrice Experience Manager Forms qui souhaitez effectuer une mise à niveau vers Adobe Experience Manager Forms as a Cloud Service ? Comparez AEM Forms 6.5 et AEM Cloud Services et découvrez les modifications les plus importantes avant de procéder à la mise à niveau ou à la migration vers Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 97%
+source-wordcount: '1343'
+ht-degree: 92%
 
 ---
 
@@ -60,11 +60,11 @@ Adobe Experience Manager Forms as a Cloud Service apporte des modificatio
 
 * **Formulaires adaptatifs basés XSD :** vous pouvez utiliser un modèle XDP pour concevoir un modèle de document à enregistrer. Le service ne prend pas en charge le formulaire adaptatif basé sur XFA.
 
-* **Composants** : vous pouvez utiliser les [composants principaux de formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) pour concevoir vos formulaires. Ces composants sont basés sur les composants principaux de gestion de contenu web, suivent les normes BEM et peuvent être facilement personnalisés. Le service ne prend pas en charge l’expérience de signature dans le formulaire et n’inclut pas les composants Résumé et Vérifier pour les formulaires adaptatifs.
+* **Composants**: le service ne prend pas en charge l’expérience de signature dans le formulaire et n’inclut pas les composants Résumé et vérification pour le formulaire adaptatif.
+
+* **Interface de l’assistant :** Vous pouvez utiliser la variable [Interface de l’assistant](/help/forms/creating-adaptive-form-core-components.md) pour configurer rapidement les options communes et créer facilement un formulaire adaptatif.
 
 ## Portail Formulaires
-
-* Vous pouvez utiliser les composants Recherche et Énumérateur, Brouillons et Envois et Lien du Portail Formulaires pour répertorier les formulaires pour les utilisateurs et utilisatrices connectés. La prise en charge de l’utilisation anonyme du portail Formulaires n’est pas disponible immédiatement. Vous pouvez personnaliser le Portail Formulaires pour activer l’affichage de formulaires pour les utilisateurs et utilisatrices non connectés.
 
 * Le service ne conserve pas les métadonnées des brouillons et des formulaires adaptatifs envoyés.
 
@@ -85,7 +85,7 @@ Forms as a Cloud Service fournit des API RESTful de génération de documents e
 
 ## Intégration de données (modèle de données de formulaire)
 
-* Le service prend également en charge le connecteur JDBC, Microsoft Dynamics, SalesForce, des services web basés sur SOAP et des services qui prennent en charge OData.
+* Le service fournit également la prise en charge de Microsoft Dynamics, SalesForce, des services web SOAP et des services qui prennent en charge OData.
 
 * Vous pouvez également connecter le profil utilisateur AEM pour récupérer et mettre à jour les informations utilisateur.
 
@@ -96,8 +96,6 @@ Forms as a Cloud Service fournit des API RESTful de génération de documents e
 
 ## E-Sign
 
-* Le service fournit une intégration prête à l’emploi à Adobe Sign et prend en charge DocuSign pour les signatures électroniques.
-
 * Le service prend également en charge les rôles Adobe Sign. Vous pouvez configurer les rôles dans l’éditeur de formulaires adaptatifs pour que les utilisateurs et utilisatrices professionnels configurent facilement les workflows de signature.
 
 
@@ -105,7 +103,7 @@ Forms as a Cloud Service fournit des API RESTful de génération de documents e
 
 * Vous pouvez utiliser un environnement AEM 6.5 Forms pour :
 
-   * effectuer le rendu de vos formulaires basés sur XDP en tant que formulaires HTML5. Le service ne prend pas en charge HTML5 Forms (Mobile Forms).
+   * effectuer le rendu de vos formulaires basés sur XDP en tant que formulaires HTML5. Le service ne prend pas en charge HTML5 Forms.
 
    * capturer des données hors ligne et les synchroniser la prochaine fois que vous serez en ligne avec l’application de l’[espace de travail AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=fr).
 
