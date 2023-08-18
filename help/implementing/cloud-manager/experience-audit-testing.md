@@ -2,7 +2,7 @@
 title: Tests d’audit de l’expérience
 description: Découvrez comment l’audit de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation des moteurs de recherche.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
+source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 85%
@@ -35,7 +35,7 @@ Le contrôle de l’expérience est optimisé par Google Lighthouse, un outil op
 
 >[!INFO]
 >
->À compter du 28 août 2023, le contrôle de l’expérience effectuera la transition vers la présentation des résultats spécifiques à la plateforme mobile. Notez que les mesures de performances mobiles s’inscrivent généralement en dessous de celles des ordinateurs de bureau. Par conséquent, veuillez anticiper un changement des performances signalées suite à ce changement.
+>À compter du 31 août 2023, le contrôle de l’expérience effectuera la transition vers la présentation des résultats spécifiques à la plateforme mobile. Notez que les mesures de performances mobiles s’inscrivent généralement en dessous de celles des ordinateurs de bureau. Par conséquent, veuillez anticiper un changement des performances signalées suite à ce changement.
 
 >[!TIP]
 >
