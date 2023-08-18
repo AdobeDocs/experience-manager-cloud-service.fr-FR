@@ -1,10 +1,10 @@
 ---
 title: En quoi la nouvelle interface utilisateur d’AEM Assets ou la nouvelle vue Assets d’AEM vous bénéficient-elles ?
-description: En savoir plus sur les principaux avantages de la nouvelle interface utilisateur d’AEM Assets ou de la nouvelle vue Assets dans AEM
+description: Découvrez les principaux avantages de la nouvelle interface utilisateur d’AEM Assets ou de la nouvelle vue Assets dans AEM. Adobe, qui tire parti de son expertise en matière d’autonomisation des professionnels et professionnelles du marketing et de la création, propose aujourd’hui une nouvelle expérience utilisateur révolutionnaire.
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 66%
 
 ---

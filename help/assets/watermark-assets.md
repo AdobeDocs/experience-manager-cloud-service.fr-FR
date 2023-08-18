@@ -1,14 +1,14 @@
 ---
-title: Mise en filigrane des ressources
-description: Ajout d’un filigrane à vos ressources numériques.
+title: Comment mettre vos ressources en filigrane dans AEM ?
+description: Découvrez comment ajouter un filigrane numérique à vos ressources dans AEM. Les filigranes peuvent aider les utilisateurs à vérifier l’authenticité et le copyright des ressources.
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 85%
+source-wordcount: '318'
+ht-degree: 80%
 
 ---
 
