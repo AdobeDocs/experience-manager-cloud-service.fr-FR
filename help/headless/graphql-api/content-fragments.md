@@ -3,9 +3,9 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4922'
 ht-degree: 92%
 
 ---
@@ -116,6 +116,8 @@ Il est recommandé d’utiliser les [Requêtes persistantes](/help/headless/grap
 Les requêtes GraphQL utilisant des requêtes POST ne sont pas recommandées, car elles ne sont pas mises en cache. Par conséquent, dans une instance par défaut, Dispatcher est configuré pour bloquer ces requêtes.
 
 Bien que GraphQL prenne également en charge les requêtes GET, celles-ci comportent des limites (par exemple, la longueur de l’URL) qui peuvent être évitées grâce aux requêtes persistantes.
+
+Voir [Activation de la mise en cache des requêtes persistantes](/help/headless/deployment/dispatcher-caching.md) pour plus de détails.
 
 >[!NOTE]
 >

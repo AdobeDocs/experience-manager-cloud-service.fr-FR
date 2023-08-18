@@ -1,22 +1,23 @@
 ---
-title: Configuration du Dispatcher avec AEM découplé
+title: Configuration du point de terminaison Dispatcher avec AEM sans affichage
 description: Dispatcher est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont utilisées pour ouvrir les points d’entrée GraphQL aux applications découplées.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
+source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 56%
+source-wordcount: '232'
+ht-degree: 51%
 
 ---
 
-# Configuration du Dispatcher avec AEM découplé
+
+# Dispatcher : configuration du point d’entrée avec AEM sans affichage
 
 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont incluses par défaut pour ouvrir les points d’entrée GraphQL aux applications découplées.
 
 >[!NOTE]
 >
->Pour obtenir une documentation détaillée sur Dispatcher, reportez-vous à la section [Guide de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
+>Pour obtenir une documentation détaillée sur Dispatcher, voir la section [Guide de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
 
 Dans le cadre d’un projet AEM, un module de Dispatcher contient des configurations pour Dispatcher. Projets nouvellement générés à partir de la fonction [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) inclusion automatique [filtres](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#defining-a-filter) qui activent les points de fin GraphQL.
 

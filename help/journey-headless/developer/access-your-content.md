@@ -2,9 +2,9 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1366'
 ht-degree: 96%
 
 ---
@@ -374,5 +374,6 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
    * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [Sortie JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [Comprendre le partage des ressources cross-origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors))
+* [Requêtes persistantes GraphQL - Activation de la mise en cache dans Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) – Une courte série de tutoriels vidéo qui donne un aperçu de l’utilisation des fonctionnalités d’AEM découplé, notamment la modélisation de contenu et GraphQL.
