@@ -2,10 +2,10 @@
 title: Requêtes persistantes GraphQL - Activation de la mise en cache dans Dispatcher
 description: Dispatcher est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Vous pouvez activer la mise en cache des requêtes persistantes dans AEM sans affichage.
 feature: Dispatcher, GraphQL API
-source-git-commit: 6f07089812e587834784aeda7e62d3e4614f45a1
+source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 5%
+source-wordcount: '317'
+ht-degree: 6%
 
 ---
 
@@ -23,6 +23,10 @@ La mise en cache des requêtes persistantes n’est pas activée par défaut dan
 >Dispatcher ne met pas en cache la variable `Vary` en-tête .
 >
 >La mise en cache d’autres en-têtes liés à CORS peut être activée dans Dispatcher, mais peut s’avérer insuffisante en cas d’origines CORS multiples.
+
+>[!NOTE]
+>
+>Pour obtenir une documentation détaillée sur Dispatcher, voir la section [Guide de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
 
 ## Activation de la mise en cache des requêtes persistantes {#enable-caching-persisted-queries}
 
