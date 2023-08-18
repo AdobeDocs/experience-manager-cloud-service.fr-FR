@@ -2,7 +2,7 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Découvrez les tâches de maintenance dans AEM as a Cloud Service et comment les configurer.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 1d20c42dd140e1bdadbf4e7e0abf899c824d3b34
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 79%
@@ -44,7 +44,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge de version</td>
     <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant le 1er septembre 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée. Il peut alors également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->La purge est activée par défaut pour les nouveaux environnements (ceux créés à partir du 1er septembre 2023) avec les valeurs ci-dessous, et les clients peuvent effectuer une configuration avec des valeurs personnalisées.
+    <td>Pour les environnements existants (ceux créés avant le 1er novembre 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée. Il peut alors également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->La purge des nouveaux environnements (créés à partir du 1er novembre 2023) est activée par défaut avec les valeurs ci-dessous, et les clients peuvent la configurer avec des valeurs personnalisées.
      <ol>
        <li>Les versions de plus de 30 jours sont supprimées</li>
        <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
@@ -56,7 +56,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant le 1er septembre 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée. Il peut alors également la configurer avec des valeurs personnalisées.<br><br> <!-- See above for the two line breaks -->La purge des nouveaux environnements (créés à partir du 1er septembre 2023) sera activée par défaut sous la variable <code>/content</code> du référentiel, selon le comportement suivant :
+    <td>Pour les environnements existants (ceux créés avant le 1er novembre 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée. Il peut alors également la configurer avec des valeurs personnalisées.<br><br> <!-- See above for the two line breaks -->La purge des nouveaux environnements (créés à partir du 1er novembre 2023) sera activée par défaut sous la variable <code>/content</code> du référentiel, selon le comportement suivant :
      <ol>
        <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
        <li>Pour le contrôle du DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
