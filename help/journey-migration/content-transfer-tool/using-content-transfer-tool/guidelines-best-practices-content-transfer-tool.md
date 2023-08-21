@@ -2,10 +2,10 @@
 title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: 9212042db782dc413b64d40ebde096c12d754f97
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 90%
+source-wordcount: '1599'
+ht-degree: 87%
 
 ---
 
@@ -50,6 +50,8 @@ La formule générale pour calculer l’espace disque disponible requis est la s
 Ainsi, pour un volume de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
 
 * Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les compléments de contenu. Un maximum de cinq jeux de migration par projet dans Cloud Acceleration Manager peuvent être créés et conservés à la fois pendant l’activité de transfert de contenu. Si plus de cinq jeux de migration sont nécessaires, vous devrez créer un second projet dans Cloud Acceleration Manager. Toutefois, cela nécessitera une gestion de projet supplémentaire et une gouvernance hors produit afin d’éviter le remplacement de contenu sur la cible par plusieurs utilisateurs.
+
+* Évitez de modifier le répertoire d’installation de l’outil CTT. Par défaut, l’installation a lieu dans le chemin crx-quickstart/cloud-migration. Cet emplacement spécifique est utilisé en interne par d’autres bibliothèques. La modification de ce chemin peut entraîner des problèmes d’extraction.
 
 ## Points importants avant d’utiliser l’outil de transfert de contenu {#important-considerations}
 
