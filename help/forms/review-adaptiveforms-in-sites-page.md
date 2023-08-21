@@ -1,19 +1,18 @@
 ---
-title: Création et gestion de révisions d’Adaptive Forms incorporées ou créées dans la page Sites
-seo-title: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
+title: Création et gestion de révisions pour un formulaire adaptatif
 description: La révision est un mécanisme qui permet aux réviseurs et réviseuses d’effectuer différentes tâches sur les formulaires adaptatifs à l’aide de l’étape Affecter une tâche.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 95%
 
 ---
 
 
-# Étape de révision des formulaires dans une page Sites {#review-step-forms-aem-sites-page}
+# Création et gestion de révisions pour un formulaire adaptatif {#review-step-forms-aem-sites-page}
 
 En suivant l’[Étape Attribuer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step?lang=fr) dans le workflow AEM, le réviseur ou la réviseuse passe en revue le formulaire envoyé et effectue une action sur celui-ci. Pour passer en revue le formulaire envoyé à l’aide de l’étape Affecter une tâche, procédez comme suit :
 

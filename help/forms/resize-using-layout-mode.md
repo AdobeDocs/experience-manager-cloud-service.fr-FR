@@ -1,18 +1,18 @@
 ---
-title: Comment utiliser le mode Mise en page pour redimensionner des composants pour les formulaires adaptatifs ?
+title: Utilisation du mode Mise en page pour redimensionner les composants d’Adaptive Forms
 description: Définissez la position des composants à l’aide de la grille réactive disponible en mode Mise en page. Découvrez comment accéder au mode Mise en page, redimensionner des composants et des panneaux, définir une mise en page à plusieurs colonnes pour un panneau, activer la nouvelle grille réactive pour les anciennes mises en page réactives et désactiver le mode Mise en page pour les formulaires dotés d’une ancienne mise en page réactive.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 93%
+source-wordcount: '1157'
+ht-degree: 91%
 
 ---
 
-# Utilisation du mode Mise en page pour redimensionner les composants {#use-layout-mode-to-resize-components}
+# Utilisation du mode Mise en page pour redimensionner les composants d’Adaptive Forms {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 

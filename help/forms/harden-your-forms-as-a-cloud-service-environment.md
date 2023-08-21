@@ -1,13 +1,13 @@
 ---
-title: Renforcer votre environnement [!DNL AEM Forms] as a Cloud Service
+title: Renforcer votre environnement as a Cloud Service AEM Forms
 seo-title: Secure your [!DNL AEM Forms] as a Cloud Service environment
 description: Sécuriser votre environnement [!DNL AEM Forms] as a Cloud Service
 seo-description: Secure your [!DNL AEM Forms] as a Cloud Service environment
 contentOwner: khsingh
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 18%
+source-wordcount: '115'
+ht-degree: 12%
 
 ---
 

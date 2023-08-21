@@ -1,10 +1,10 @@
 ---
-title: Découvrez les dernières innovations d’Adobe Experience Manager Forms as a Cloud Service.
+title: Principales innovations d’Adobe Experience Manager Forms
 description: « Découvrez les dernières fonctionnalités d’ [!DNL AEM Forms] as a Cloud Service pour créer, gérer et publier des processus et des formulaires d’entreprise. »
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1155'
 ht-degree: 79%
 
 ---

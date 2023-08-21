@@ -1,15 +1,14 @@
 ---
-title: Comment configurer les modèles de données de formulaire prêts à l’emploi de Microsoft Dynamics 365 et Salesforce pour les formulaires adaptatifs ?
+title: Configuration de Microsoft Dynamics 365 ou Salesforce pour AEM Forms
 description: Découvrez comment intégrer Microsoft Dynamics 365 et Salesforce à des formulaires adaptatifs.
-exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 98%
+source-wordcount: '952'
+ht-degree: 96%
 
 ---
 
-# Configuration des services cloud [!DNL Microsoft Dynamics 365] et [!DNL Salesforce] {#configure-azure-storage}
+# Configuration de Microsoft Dynamics 365 ou Salesforce pour AEM Forms {#configure-azure-storage}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |

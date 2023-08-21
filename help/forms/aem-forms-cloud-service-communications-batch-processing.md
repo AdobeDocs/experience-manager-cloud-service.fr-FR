@@ -1,15 +1,15 @@
 ---
-title: Traitement par lots des communications Experience Manager [!DNL Forms] as a Cloud Service
+title: Traitement par lots des communications as a Cloud Service AEM Forms
 description: Comment créer des communications personnalisées et axées sur la marque ?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 98%
+source-wordcount: '1698'
+ht-degree: 97%
 
 ---
 
-# Utilisation du traitement par lot
+# Traitement par lots des communications as a Cloud Service AEM Forms
 
 Communications vous permet de créer, d’assembler et de diffuser des communications personnalisées et axées sur la marque, telles que des correspondances d’entreprise, des documents, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des lettres de traitement des demandes, des factures mensuelles et des kits de bienvenue. Vous pouvez utiliser les API Communications pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
 

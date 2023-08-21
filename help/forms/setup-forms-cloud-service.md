@@ -1,11 +1,10 @@
 ---
-title: Comment configurer un environnement [!DNL AEM Forms] as a Cloud Service ?
+title: Intégration à AEM Forms as a Cloud Service
 description: Découvrez comment configurer un environnement [!DNL AEM Forms] as a Cloud Service
-exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 90%
+source-wordcount: '632'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +26,7 @@ ht-degree: 90%
 
 * **Développeur Forms** : il développe une solution de formulaires personnalisée.  Il s’occupe généralement du développement back-end, tel que le développement de composants personnalisés, de processus AEM, de services de préremplissage, etc.
 
-* **Administrateur AEM**: Un administrateur d’AEM aide à la configuration globale, comme la configuration des utilisateurs, le renforcement de l’environnement, la configuration des sources de données, la configuration des courriers électroniques et des logiciels tiers. Il aide également à réaliser les intégrations à Adobe Analytics, Adobe Target et Adobe Sign.
+* **Administrateur AEM**: un administrateur d’AEM aide à la configuration globale, comme la configuration des utilisateurs, le renforcement de l’environnement, la configuration des sources de données, la configuration des courriers électroniques et des logiciels tiers. Il aide également à réaliser les intégrations à Adobe Analytics, Adobe Target et Adobe Sign.
 
 * **Utilisateur final** : il interagit avec le formulaire publié et l’envoie, signe les formulaires envoyés, suit les demandes envoyées via le portail web et reçoit des communications personnalisées.
 

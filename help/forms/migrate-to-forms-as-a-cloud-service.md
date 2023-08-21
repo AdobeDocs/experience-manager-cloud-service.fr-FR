@@ -1,5 +1,5 @@
 ---
-title: Comment migrer d’une Forms AEM 6.5 vers [!DNL AEM Forms] Environnement as a Cloud Service ?
+title: Migration d’AEM 6.5 Forms vers AEM Forms as a Cloud Service
 description: Prise en main du Parcours de migration pour AEM as a Cloud Service | Adobe Experience Manager. Migrer depuis  [!DNL AEM Forms] (environnements AMS et On-Premise) vers [!DNL AEM Forms] un environnement as a Cloud Service.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: d43e2d555a09f481900ec70e5e38bab42f4cc1d7
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1580'
 ht-degree: 71%
 
 ---
@@ -56,7 +56,7 @@ Pour migrer d’AEM 6.5 Forms vers AEM Cloud Service, il est important de tenir 
 |Configurations|<li>Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. </li> <li>If you use custom bundles, recompile your code with latest version of adobe-aemfd-docmanager before using these bundles with Forms as a Cloud Service.</li> |
 | Document Manipulation APIs (Assembler Service)| The service does not support operations dependent on other services or applications: <li>Conversion of documents in a non-PDF format to a PDF format is not supported. For example, Microsoft Word to PDF, Microsoft Excel to PDF, and HTML to PDF are not supported</li><li>Adobe Distiller-based conversions are not supported. For example, PostScript(PS) to PDF</li><li>Forms Service-based conversions are not supported. For example, XDP to PDF Forms.</li><li>The service does not support converting a Signed PDF or Transparent PDF to another PDF format.</li>| -->
 
-## Conditions préalables {#prerequisites}
+## Conditions préalables requises {#prerequisites}
 
 Pour garantir une transition en douceur d’AEM Forms 6.5 vers AEM environnement as a Cloud Service, il est important de tenir compte des conditions préalables suivantes :
 
@@ -109,7 +109,7 @@ Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et le
 
    1. Appuyez sur **[!UICONTROL Migration des composants de formulaire adaptatif personnalisés]** et, dans la page Migration des composants personnalisés, appuyez sur **[!UICONTROL Lancer la migration]**. Cela rend les composants personnalisés développés pour des formulaires adaptatifs et les superpositions de composants dans votre environnement [!DNL AEM Forms] compatibles avec [!DNL AEM] as a Cloud Service.
 
-   1. Appuyez sur **[!UICONTROL Migration de modèles de formulaire adaptatif]** et dans la page Migration des composants personnalisés, appuyez sur **[!UICONTROL Lancer la migration]**. Il crée des modèles de formulaire adaptatif à l’adresse `/apps` ou `/conf` et créé à l’aide de AEM Éditeur de modèles compatible avec [!DNL AEM] as a Cloud Service .
+   1. Appuyez sur **[!UICONTROL Migration de modèles de formulaire adaptatif]** et dans la page Migration des composants personnalisés, appuyez sur **[!UICONTROL Lancer la migration]**. Il crée des modèles de formulaire adaptatif à l’adresse `/apps` ou `/conf` et créé à l’aide d’AEM Éditeur de modèles compatible avec [!DNL AEM] AS A CLOUD SERVICE .
 
    1. Appuyez sur **[!UICONTROL Migration des configurations cloud AEM Forms]**, puis dans la page Migration de la configuration, appuyez sur **[!UICONTROL Commencer la migration]**. Il met à jour et déplace les Cloud Services suivants vers un nouvel emplacement :
 
@@ -134,8 +134,8 @@ Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et le
 
 Lorsque vous migrez d’AEM Forms 6.5 vers le service cloud, vous pouvez localiser les ressources spécifiques à AEM Forms à l’adresse :
 
-* **Forms adaptatif**: Vous trouverez les formulaires adaptatifs à l’adresse `/content/dam/formsanddocuments/`et `/content/forms/af`. Par exemple, pour un formulaire adaptatif appelé « Enregistrement WKND », ajoutez des chemins `/content/dam/formsanddocuments/wknd-registration` et `/content/forms/af/wknd-registration`.
-* **Modèle de données de formulaire**: Vous trouverez tous les modèles de données de formulaire à l’adresse `/content/dam/formsanddocuments-fdm`. Par exemple, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Forms adaptatif**: vous trouverez des formulaires adaptatifs à l’adresse `/content/dam/formsanddocuments/`et `/content/forms/af`. Par exemple, pour un formulaire adaptatif appelé « Enregistrement WKND », ajoutez des chemins `/content/dam/formsanddocuments/wknd-registration` et `/content/forms/af/wknd-registration`.
+* **Modèle de données de formulaire**: tous les modèles de données de formulaire sont disponibles à l’adresse `/content/dam/formsanddocuments-fdm`. Par exemple, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Bibliothèques clientes** : le chemin d’accès par défaut aux bibliothèques clientes est `/etc/clientlibs/fd/theme`.
 
@@ -171,7 +171,7 @@ Lorsque vous migrez AEM modèles de workflow d’AEM Forms 6.5 vers Cloud Servic
 L’utilitaire de migration vous permet de migrer les Forms adaptatives en fonction des composants de base. En outre, Forms as a Cloud Service prend en charge les composants principaux de Forms adaptatif. Ainsi, vous pouvez :
 
 * [Création d’un Forms adaptatif autonome basé sur des composants principaux](/help/forms/creating-adaptive-form-core-components.md)
-* [Création d’un formulaire adaptatif basé sur des composants principaux directement dans une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Créer un formulaire adaptatif basé sur des composants principaux directement dans une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 Pour en savoir plus sur AEM Forms as a Cloud Service, consultez :
 

@@ -1,17 +1,17 @@
 ---
-title: Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms
+title: Sélection dynamique d’utilisateurs ou de groupes dans AEM workflow
 description: Découvrez comment sélectionner un utilisateur ou un groupe pour un workflow [!DNL AEM Forms]  au moment de l’exécution.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 48%
+source-wordcount: '895'
+ht-degree: 46%
 
 ---
 
 
-# Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Sélection dynamique d’utilisateurs ou de groupes dans AEM workflow {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Découvrez comment sélectionner un utilisateur ou un groupe pour un workflow [!DNL AEM Forms] au moment de l’exécution.
 

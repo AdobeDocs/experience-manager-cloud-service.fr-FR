@@ -1,18 +1,17 @@
 ---
-title: Comment configurer l’envoi asynchrone de formulaires adaptatifs ?
+title: Configuration de l’envoi asynchrone d’AEM Forms adaptatif
 description: Apprenez à configurer l’envoi asynchrone de formulaires adaptatifs. Découvrez comment fonctionne l’envoi asynchrone de formulaires adaptatifs.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 72%
+source-wordcount: '749'
+ht-degree: 73%
 
 ---
 
-# Envoi asynchrone de formulaires adaptatifs {#asynchronous-submission-of-adaptive-forms}
+# Configuration de l’envoi asynchrone d’AEM Forms adaptatif {#asynchronous-submission-of-adaptive-forms}
 
 
 | Version | Lien de l’article |
@@ -35,14 +34,14 @@ Pour configurer l’envoi asynchrone d’un formulaire adaptatif :
 1. Dans la section des propriétés **[!UICONTROL Envoi]**, activez **[!UICONTROL Utiliser l’envoi asynchrone]**.
 1. Dans le **[!UICONTROL Lors de l’envoi]** , sélectionnez l’une des options suivantes à exécuter lors de l’envoi réussi d’un formulaire.
 
-   * **[!UICONTROL Rediriger vers l’URL]**: Redirige vers l’URL ou la page spécifiée lors de l’envoi du formulaire. Vous pouvez spécifier une URL ou sélectionner le chemin d’accès à une page dans le champ **[!UICONTROL URL/Chemin d’accès restreint.]**
+   * **[!UICONTROL Rediriger vers l’URL]**: redirige vers l’URL ou la page spécifiée lors de l’envoi du formulaire. Vous pouvez spécifier une URL ou sélectionner le chemin d’accès à une page dans le champ **[!UICONTROL URL/Chemin d’accès restreint.]**
    * **[!UICONTROL Afficher le message]** : affiche un message lors de l’envoi d’un formulaire. Vous pouvez rédiger un message dans le champ de texte situé en dessous de l’option **[!UICONTROL Afficher le message]**. Le champ de texte prend en charge la mise en forme de texte enrichi.
 
 1. Appuyez sur ![check-button1](assets/save_icon.svg) pour enregistrer les propriétés.
 
 ## Fonctionnement de l’envoi asynchrone {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] fournit des gestionnaires de succès et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
+[!DNL Experience Manager Forms] fournit des gestionnaires de succès et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises comme paramètres au gestionnaire approprié pour exécuter la fonction.
 
 En outre, les auteurs de formulaire et les développeurs peuvent écrire des règles au niveau du formulaire pour remplacer les gestionnaires par défaut. Pour plus d’informations, voir [Remplacement des gestionnaires par défaut à l’aide de règles](#custom).
 
@@ -71,7 +70,7 @@ La structure de la réponse du serveur pour l’événement de succès de l’en
 
 La réponse du serveur en cas d’envoi de formulaire réussi comprend :
 
-* Type de format des données de formulaire : XML ou JSON
+* Type de format de données de formulaire : XML ou JSON
 * Données de formulaire au format XML ou JSON
 * Option sélectionnée pour rediriger vers une page ou afficher un message tel que configuré dans le formulaire.
 * URL de la page ou contenu du message tel que configuré dans le formulaire

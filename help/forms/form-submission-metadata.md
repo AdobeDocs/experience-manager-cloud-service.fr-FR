@@ -1,18 +1,18 @@
 ---
-title: Comment ajouter des informations issues de données utilisateur aux métadonnées d’envoi de formulaire ?
+title: Ajout d’informations provenant de données utilisateur aux métadonnées d’envoi de formulaire
 description: Découvrez comment ajouter des informations aux métadonnées d’un formulaire envoyé avec des données fournies par l’utilisateur. Explorez en profondeur comment visualiser les métadonnées d’envoi de formulaire mises à jour dans le référentiel CRX.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 75%
+source-wordcount: '689'
+ht-degree: 73%
 
 ---
 
 
-# Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire {#adding-information-from-user-data-to-form-submission-metadata}
+# Ajout d’informations à partir de données utilisateur aux métadonnées d’envoi de formulaire {#adding-information-from-user-data-to-form-submission-metadata}
 
 Vous pouvez utiliser des valeurs saisies dans un élément de votre formulaire pour calculer les champs de métadonnées d’un brouillon ou d’un envoi de formulaire. Les métadonnées vous permettent de filtrer le contenu en fonction des données utilisateur. Par exemple, un utilisateur saisit John Doe dans le champ de nom de votre formulaire. Vous pouvez utiliser ces informations pour calculer les métadonnées qui peuvent classer cet envoi sous les initiales JD.
 
