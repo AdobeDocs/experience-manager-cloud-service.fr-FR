@@ -1,11 +1,11 @@
 ---
 title: Introduction aux noms de domaine personnalisés
-description: L’interface utilisateur de Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site avec un nom de marque unique en libre-service.
+description: L’interface utilisateur Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 74%
+ht-degree: 83%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="Gestion des noms de domaine personnalisés"
->abstract="L’interface utilisateur de Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site avec un nom de marque unique en libre-service."
+>abstract="L’interface utilisateur Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=fr" text="Ajout d’un nom de domaine personnalisé"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=fr" text="Afficher et mettre à jour le nom de domaine personnalisé"
 
-L’interface utilisateur de Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site avec un nom de marque unique en libre-service. Adobe Experience Manager as a Cloud Service est configuré avec un nom de domaine par défaut, se terminant par `*.adobeaemcloud.com`. Ce nom de domaine par défaut est conservé, même après avoir associé de noms de domaine personnalisés à votre site web.
+L’interface utilisateur Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service. Adobe Experience Manager as a Cloud Service est configuré avec un nom de domaine par défaut, se terminant par `*.adobeaemcloud.com`. Ce nom de domaine par défaut est conservé, même après avoir associé de noms de domaine personnalisés à votre site web.
 
 ## Que sont les noms de domaine personnalisés ? {#what-are-custom-domain-names}
 
