@@ -2,14 +2,17 @@
 title: Utilisation de reCAPTCHA dans le Forms adaptatif
 description: Découvrez comment configurer le service Google reCAPTCHA dans Forms adaptatif.
 topic-tags: adaptive_forms, author
-source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
+source-git-commit: ad63083016f0f8c51ea336e37461562e61c02a8f
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1932'
 ht-degree: 74%
 
 ---
 
 # Utiliser reCAPTCHA dans les Forms adaptatives{#using-reCAPTCHA-in-adaptive-forms}
+
+<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
