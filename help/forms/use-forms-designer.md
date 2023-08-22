@@ -1,15 +1,15 @@
 ---
-title: Utilisation de Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire
+title: Utilisation d’AEM Forms Designer
 description: Utilisez [!DNL AEM Forms] designer pour créer des modèles de document d’enregistrement.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 86%
+source-wordcount: '150'
+ht-degree: 94%
 
 ---
 
-# Utilisation de Forms Designer pour créer des modèles de document d’enregistrement et de fragment de formulaire {#install-designer}
+# Utilisation d’AEM Forms Designer {#install-designer}
 
 Designer offre une interface graphique de conception de formulaires conviviale, qui simplifie la création de modèles de formulaire XPD. Vous pouvez concevoir un modèle de formulaire, définir sa logique et respecter des exigences légales strictes. Ces modèles servent de modèle de document d’enregistrement pour un formulaire adaptatif. Ces modèles de formulaires sont différents des [modèles de formulaire adaptatif](template-editor.md).
 
