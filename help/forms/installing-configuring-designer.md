@@ -1,10 +1,10 @@
 ---
 title: Téléchargement et installation de Forms Designer
 description: Vous pouvez utiliser Forms Designer pour créer des modèles de formulaires XDP et PDF qui servent de modèle pour un document d’enregistrement. Designer est disponible avec la licence [!DNL AEM Forms]
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 115612a11f43000894c76758b1d2bcb3506f3bcb
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 96%
+source-wordcount: '307'
+ht-degree: 75%
 
 ---
 
@@ -14,18 +14,38 @@ Designer est un outil de conception de formulaires graphiques de type pointer-cl
 
 ## Conditions préalables {#pre-requisites}
 
-Pour installer et configurer Designer, vous avez besoin de la configuration matérielle et des logiciels suivants :
+Pour installer la dernière version d’AEM Forms Designer 64 bits ou 32 bits, vous devez disposer des logiciels et du matériel requis pour installer et configurer Designer :
 
-* [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server] ou [!DNL Microsoft® Windows® 10]
-* Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
-* Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
+>[!BEGINTABS]
+
+>[!TAB Système d’exploitation 64 bits (recommandé)]
+
+* [!DNL Microsoft® Windows® 2016 Server] ou [!DNL Microsoft® Windows® 2019 Server], et [!DNL Microsoft® Windows® 10]
+* 2 Go de RAM au minimum
+* 20 Go d’espace disque
+* Mémoire graphique - 128 Mo de GPU (256 Mo est recommandé)
+* 2,35 Go d’espace disponible sur le disque dur
+* Résolution d’écran de 1 024 x 768 pixels ou plus
+* Accélération matérielle de la vidéo (facultatif)
+* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
+* Droits d’administration pour l’installation de Designer
+* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 ou supérieur)
+
+>[!TAB SE 32 bits]
+
+* [!DNL Microsoft® Windows® 2016 Server] ou [!DNL Microsoft® Windows® 2019 Server], et [!DNL Microsoft® Windows® 10]
+* Minimum 1 Go de mémoire vive
+* 16 Go d’espace disque
 * Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)
 * 2,35 Go d’espace disponible sur le disque dur
 * Résolution d’écran de 1 024 x 768 pixels ou plus
 * Accélération matérielle de la vidéo (facultatif)
-* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
-* Droits d’administrateur pour l’installation de Designer.
-* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
+* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
+* Droits d’administration pour l’installation de Designer
+* Microsoft® Visual C++ 2019 (VC 14.28 ou version ultérieure)
+
+>[!ENDTABS]
+
 
 ## Installation de Designer {#install-designer}
 
