@@ -2,10 +2,10 @@
 title: Configuration IMS à utiliser lors de l’intégration à Adobe Target
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 91%
+source-wordcount: '883'
+ht-degree: 88%
 
 ---
 
@@ -65,13 +65,19 @@ Créez un projet Developer Console Adobe (intégration) avec Adobe Target que 
 
 Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Target qu’AEM utilisera :
 
+>[!CAUTION]
+>
+>Actuellement, nous ne prenons en charge que le **Compte de service (JWT)** type d’identification.
+>
+>N’utilisez pas la variable **OAuth serveur à serveur** type d’informations d’identification, qui sera pris en charge à l’avenir.
+
 1. Ouvrez la Developer Console d’Adobe pour les projets :
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 1. Tous les projets que vous avez sont affichés. Sélectionnez **Créer un projet** - L’emplacement et l’utilisation de celui-ci dépendent de :
 
-   * Si vous n’avez pas encore de projet, **Créer un projet** est centre, bas.
+   * Si vous n’avez pas encore de projet, **Créer un projet** est au centre, en bas.
      ![Créer un projet - Premier projet](assets/integration-target-ims-02.png)
    * Si vous disposez déjà de projets, ceux-ci sont répertoriés et **Créer un projet** est en haut à droite.
      ![Créer un projet - Projets multiples](assets/integration-target-ims-03.png)

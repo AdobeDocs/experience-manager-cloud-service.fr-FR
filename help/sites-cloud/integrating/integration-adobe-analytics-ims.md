@@ -2,10 +2,10 @@
 title: Configuration IMS à utiliser lors de l’intégration à Adobe Analytics
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 91%
+source-wordcount: '914'
+ht-degree: 88%
 
 ---
 
@@ -67,13 +67,19 @@ La première étape de la configuration consiste à créer une configuration IMS
 
 Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Analytics qu’AEM utilisera :
 
+>[!CAUTION]
+>
+>Actuellement, nous ne prenons en charge que le **Compte de service (JWT)** type d’identification.
+>
+>N’utilisez pas la variable **OAuth serveur à serveur** type d’informations d’identification, qui sera pris en charge à l’avenir.
+
 1. Ouvrez la Developer Console d’Adobe pour les projets :
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 1. Tous les projets que vous avez sont affichés. Sélectionnez **Créer un projet** - L’emplacement et l’utilisation de celui-ci dépendent de :
 
-   * Si vous n’avez pas encore de projet, **Créer un projet** est centre, bas.
+   * Si vous n’avez pas encore de projet, **Créer un projet** est au centre, en bas.
      ![Créer un projet - Premier projet](assets/integration-analytics-ims-02.png)
    * Si vous disposez déjà de projets, ceux-ci sont répertoriés et **Créer un projet** est en haut à droite.
      ![Créer un projet - Projets multiples](assets/integration-analytics-ims-03.png)
