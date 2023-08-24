@@ -3,10 +3,10 @@ title: Comment se connecter et envoyer des données de formulaire adaptatif à M
 description: Guide détaillé pour la connexion et l’envoi de données de formulaire adaptatif à Microsoft&reg; Power Automate.
 keywords: Adaptive Forms Microsoft Power Automate, envoi de données Adaptive Forms à Microsoft Power Automate
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 76%
+source-wordcount: '1198'
+ht-degree: 75%
 
 ---
 
@@ -119,7 +119,7 @@ Après la [Connexion de votre instance Forms as a Cloud Service à Microsoft® P
 1. Connectez-vous à votre instance Création, sélectionnez votre formulaire adaptatif et cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans le conteneur de configuration, recherchez et sélectionnez le conteneur créé dans la section [Créer une configuration cloud du Dataverse de Microsoft® Power Automate](#microsoft-power-automate-dataverse-cloud-configuration), puis appuyez sur **[!UICONTROL Enregistrer et fermer]**.
 1. Ouvrez le formulaire adaptatif pour le modifier et accéder à la section **[!UICONTROL Envoi]** des propriétés du Conteneur de formulaires adaptatifs.
-1. Dans le conteneur de propriétés, pour **[!UICONTROL Envoyer des actions]**, sélectionnez l’option **[!UICONTROL Appeler un flux Power Automate]**. Une liste des flux Power Automate disponibles est désormais disponible dans l’option **[!UICONTROL Flux Power Automate]**. Sélectionnez le flux requis afin que les données de formulaires adaptatifs lui soient soumises lors de l’envoi.
+1. Dans le conteneur de propriétés, pour **[!UICONTROL Actions Envoyer]** sélectionnez l’option **[!UICONTROL Appeler un flux d’automatisation de puissance]** et sélectionnez une **[!UICONTROL Flux de Power Automate]**. Sélectionnez le flux requis afin que les données de formulaires adaptatifs lui soient soumises lors de l’envoi.
 
    ![Configurer l’action d’envoi](assets/submission.png)
 
