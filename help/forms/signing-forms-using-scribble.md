@@ -1,12 +1,11 @@
 ---
 title: Signer électroniquement un formulaire à l’aide de signatures tactiles
-description: Signature de formulaires à l’aide de la saisie tactile
-seo-description: Signing forms using scribble
+description: Signer facilement le Forms adaptatif à l’aide de l’étape Signature tactile et signature. Rationalisation de la signature numérique pour une efficacité accrue.
 topic-tags: author
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 77%
+source-wordcount: '725'
+ht-degree: 75%
 
 ---
 
@@ -76,7 +75,7 @@ Vous pouvez appuyer sur le bouton **Configurer** ![icône de configuration](asse
 
    * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Il est recommandé d’utiliser des [thèmes](themes.md) et des [styles en ligne](inline-style-adaptive-forms.md) au lieu de la classe CSS.
 
-   Appuyez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications. La signature est configurée correctement.
+   Appuyez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications. La signature est correctement configurée.
 
    Désormais, lorsque vous remplissez un formulaire, une version PDF du formulaire adaptatif est affichée et les options pour signer le document PDF sont fournies. Pour plus d’informations, voir [Signature d’un formulaire adaptatif en utilisant la signature tactile](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 

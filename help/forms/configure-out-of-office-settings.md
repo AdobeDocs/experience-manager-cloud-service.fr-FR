@@ -1,13 +1,10 @@
 ---
 title: Configuration des paramètres d’absence du bureau
-seo-title: Configure Out of Office settings
-description: Configuration des paramètres d’absence du bureau
-seo-description: Configure Out of Office settings
-exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+description: Déléguez des tâches pendant ou hors du bureau pour une exécution transparente des workflows.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 99%
+source-wordcount: '826'
+ht-degree: 87%
 
 ---
 
@@ -29,7 +26,7 @@ Vous pouvez séparer la délégation de tâches en fonction des modèles de proc
 
 >[!NOTE]
 >
->* Lorsque vous activez le paramètre Absence du bureau, toutes les tâches disponibles dans votre boîte de réception avant d’activer ce paramètre restent dans votre boîte de réception. Seules les tâches reçues après l’activation du paramètre sont déléguées.
+>* Lorsque vous activez le paramètre Absence du bureau , tous les éléments disponibles dans votre boîte de réception, avant d’activer le paramètre, restent dans votre boîte de réception. Seules les tâches reçues après l’activation du paramètre sont déléguées.
 >* Lorsque vous désactivez le paramètre Absence du bureau, les tâches déléguées ne vous sont pas automatiquement réaffectées. Vous pouvez utiliser la fonctionnalité de revendication pour que ces tâches vous soient attribuées.
 >* Lorsque l’utilisateur A délègue des tâches à l’utilisateur B et que l’utilisateur B délègue des tâches à l’utilisateur C, les tâches sont affectées uniquement à l’utilisateur C et non à l’utilisateur B.
 >* Lorsqu’une boucle est présente dans l’affectation, les tâches restent chez l’utilisateur initial. Par exemple, lorsque l’utilisateur A délègue des tâches à l’utilisateur B, l’utilisateur C délègue des tâches à l’utilisateur C, l’utilisateur C délègue des tâches à l’utilisateur D et l’utilisateur D délègue des tâches à l’utilisateur B, une boucle est créée. Dans ce cas, la tâche reste à l’utilisateur initial. L’utilisateur A est l’utilisateur initial dans l’exemple ci-dessus.
@@ -55,7 +52,7 @@ Effectuez les étapes suivantes pour activer le paramètre Absence du bureau pou
 
    >[!NOTE]
    >
-   >L’ordre des délégataires est important. Lorsqu’une tâche est affectée à un utilisateur qui a activé le paramètre Absence du bureau, la tâche est évaluée par rapport à la liste des délégataires dans leur ordre d’ajout. Lorsqu’une tâche correspond aux critères, elle est affectée au délégataire et le délégataire suivant n’est pas coché.
+   >L’ordre des délégataires est important. Lorsqu’un élément est attribué à un utilisateur qui a activé le paramètre d’absence du bureau, l’élément est évalué par rapport à la liste de personnes désignées spécifiée dans l’ordre auquel les personnes désignées sont ajoutées. Lorsqu’un élément correspond aux critères, il est attribué à la personne désignée et la personne désignée suivante n’est pas cochée.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**. Ce paramètre prend effet à la date et à l’heure de début spécifiées. Si vous vous connectez pendant que vous êtes absent du bureau, vous êtes toujours considéré comme absent du bureau jusqu’à ce que vous ayez modifié vos paramètres.
 
@@ -64,7 +61,7 @@ Désormais, les tâches qui vous sont affectées au cours de la période d’abs
 
 >[!NOTE]
 >
->(Pour les éléments de processus orientés formulaire uniquement) Activez l’option **[!UICONTROL Autoriser les délégataires à déléguer à l’aide des paramètres « Absence du bureau »]** de l’étape **[!UICONTROL Attribuer la tâche]** du processus. Seules les tâches pour lesquelles l’option ci-dessus est activée sont déléguées à d’autres utilisateurs.
+>(Pour les éléments de processus orientés formulaire uniquement) Activez l’option **[!UICONTROL Autoriser les délégataires à déléguer à l’aide des paramètres « Absence du bureau »]** de l’étape **[!UICONTROL Attribuer la tâche]** du processus. Seuls les éléments pour lesquels l’option mentionnée précédemment est activée sont délégués à d’autres utilisateurs.
 
 ## Limites {#limitations}
 
