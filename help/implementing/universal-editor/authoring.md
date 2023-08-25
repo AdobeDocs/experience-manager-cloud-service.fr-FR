@@ -2,9 +2,9 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2267'
 ht-degree: 29%
 
 ---
@@ -224,7 +224,7 @@ L’éditeur occupe la majeure partie de la fenêtre et est l’endroit où la p
 
 ### Rail des composants {#component-rail}
 
-Le rail du composant est toujours présent le long du côté gauche de l’éditeur. En fonction de son mode, il peut afficher les détails d’un composant sélectionné dans le contenu ou la hiérarchie du contenu de la page.
+Le rail du composant est toujours présent le long du côté droit de l’éditeur. En fonction de son mode, il peut afficher les détails d’un composant sélectionné dans le contenu ou la hiérarchie du contenu de la page.
 
 ![Rail des composants](assets/component-rail.png)
 
