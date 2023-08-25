@@ -2,7 +2,7 @@
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
 workflow-type: tm+mt
 source-wordcount: '2044'
 ht-degree: 86%
@@ -356,14 +356,18 @@ Pour personnaliser votre fragment, procédez comme suit :
    >Le **Chemin d’accès ContextHub** sélectionné dans l’onglet **Personnalisation** doit correspondre à l’une des valeurs suivantes :
    >
    >* le même chemin que celui configuré pour la page sur laquelle le fragment est rendu ;
-   >Ou :
+   >
+   >  Ou :
+   >
    >* un chemin contenant un sous-ensemble des magasins définis dans le chemin d’accès ContextHub configuré pour la page.
    >
-   > 
-Le **Chemin d’accès de segments** sélectionné dans l’onglet **Personnalisation** doit correspondre à l’une des valeurs suivantes :
+   >La variable **Chemin d’accès aux segments** sélectionné dans le **Personnalisation** doit être :
    >
-   * le même chemin que celui configuré pour la page sur laquelle le fragment est rendu Ou
-   * un chemin d’accès contenant un sous-ensemble des segments configurés pour la page.
+   >* le même chemin que celui configuré pour la page sur laquelle le fragment est rendu ;
+   >
+   >  Ou
+   >
+   >* un chemin d’accès contenant un sous-ensemble des segments configurés pour la page.
 
 ### Définir le ciblage de votre fragment d’expérience {#defining-targeting-experience-fragment}
 
@@ -390,9 +394,9 @@ Les détails sont affichés dans toutes les vues de la console **Fragments d’e
 
    >[!CAUTION]
    >
-   Ces onglets s’affichent lorsque vous ouvrez les **propriétés** à partir de la console Fragments d’expérience.
+   >Ces onglets s’affichent lorsque vous ouvrez les **propriétés** à partir de la console Fragments d’expérience.
    >
-   Si vous **ouvrez les propriétés** lors de la modification d’un fragment d’expérience, les [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriées s’affichent.
+   >Si vous **ouvrez les propriétés** lors de la modification d’un fragment d’expérience, les [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriées s’affichent.
 
    ![Propriétés du fragment d’expérience](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -422,7 +426,7 @@ Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML b
 
 >[!NOTE]
 >
-Bien que cette option soit directement disponible à partir du navigateur, [l’objectif principal est de permettre à d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) d’accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Bien que cette option soit directement disponible à partir du navigateur, [l’objectif principal est de permettre à d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) d’accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publication de fragments d’expérience {#publishing-experience-fragments}
 
