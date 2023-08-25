@@ -1,9 +1,9 @@
 ---
 title: Configuration des règles CDN et WAF pour filtrer le trafic
 description: Utilisation des règles CDN et de pare-feu d’application web pour filtrer le trafic malveillant
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2391'
 ht-degree: 2%
 
 ---
@@ -175,7 +175,7 @@ La variable `wafRules` peut inclure les règles suivantes :
 | RESPONSESPLIT | Fractionnement des réponses HTTP | Identifie le moment où les caractères CRLF sont envoyés en entrée de l’application pour injecter des en-têtes dans la réponse HTTP. |
 | XML-ERROR | Erreur de codage XML | Corps de requête de POST, de PUT ou de PATCH spécifié comme contenant du code XML dans l’en-tête de requête &quot;Content-Type&quot;, mais contenant des erreurs d’analyse XML. Cela est souvent lié à une erreur de programmation ou à une requête automatisée ou malveillante. |
 
-## Considérations {#considerations}
+## Remarques {#considerations}
 
 * Lorsque deux règles en conflit sont créées, les règles d’autorisation ont toujours la priorité sur les règles de blocage. Par exemple, si vous créez une règle pour bloquer un chemin spécifique et une règle pour autoriser une adresse IP spécifique, les demandes de cette adresse IP sur le chemin bloqué seront autorisées.
 
@@ -256,7 +256,7 @@ Il est parfois souhaitable de bloquer le trafic correspondant à une règle uniq
 | **Propriété** | **Type** | **Valeur par défaut** | **Description** |
 |---|---|---|---|
 | limit | entier compris entre 10 et 10 000 | obligatoire | Taux de requêtes de requêtes par seconde pour lesquelles la règle est déclenchée |
-| fenêtre | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le taux de requête est calculé |
+| window | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le taux de requête est calculé |
 | pénalité | entier compris entre 60 et 3 600 | 300 (5 minutes) | Une période en secondes pendant laquelle les requêtes correspondantes sont bloquées (arrondie à la minute la plus proche). |
 
 ### Exemples {#ratelimiting-examples}
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ Vous trouverez ci-dessous une liste des noms de champ utilisés dans les journau
 |---|---|
 | *timestamp* | Heure à laquelle la demande a commencé, après la fin de TLS |
 | *ttfb* | Abréviation de *Time To First Byte*. Intervalle entre le démarrage de la requête et le début de la diffusion du corps de la réponse. |
-| *cip* | Adresse IP du client. |
+| *cli_ip* | Adresse IP du client. |
+| *cli_country* | Deux lettres [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1) code de pays alpha-2 pour le pays client. |
 | *rid* | La valeur de l’en-tête de requête utilisé pour identifier la requête de manière unique. |
-| *ua* | L’agent utilisateur responsable de l’exécution d’une requête HTTP donnée. |
+| *req_ua* | L’agent utilisateur responsable de l’exécution d’une requête HTTP donnée. |
 | *host* | Autorité à laquelle la demande est destinée. |
 | *url* | Chemin d’accès complet, y compris les paramètres de requête. |
-| *req_mthd* | méthode HTTP envoyée par le client, telle que &quot;GET&quot; ou &quot;POST&quot;. |
-| *res_type* | Type de contenu utilisé pour indiquer le type de média d’origine de la ressource. |
+| *method* | méthode HTTP envoyée par le client, telle que &quot;GET&quot; ou &quot;POST&quot;. |
+| *res_ctype* | Type de contenu utilisé pour indiquer le type de média d’origine de la ressource. |
 | *cache* | État du cache. Les valeurs possibles sont HIT, MISS ou PASS |
-| *res_status* | Le code d’état HTTP sous la forme d’une valeur entière. |
-| *res_bsize* | Octets de corps envoyés au client dans la réponse. |
-| *server* | Centre de données du serveur de cache CDN. |
+| *status* | Le code d’état HTTP sous la forme d’une valeur entière. |
+| *res_age* | Durée (en secondes) pendant laquelle une réponse a été mise en cache (dans tous les noeuds). |
+| *pop* | Centre de données du serveur de cache CDN. |
 | *règles* | Nom de toute règle correspondante, pour les règles CDN et les règles Waf.<br><br>Les règles CDN correspondantes s’affichent dans l’entrée de journal pour toutes les requêtes sur le CDN, qu’il s’agisse d’un accès, d’un passage ou d’une absence CDN.<br><br>Indique également si la correspondance a entraîné un bloc. <br><br>Par exemple, &quot;`cdn=;waf=SQLI;action=blocked`&quot;<br><br>Vide si aucune règle ne correspondait. |
