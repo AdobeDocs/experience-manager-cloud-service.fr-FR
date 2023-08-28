@@ -2,10 +2,10 @@
 title: New Relic One
 description: Découvrez le service de surveillance des performances de l’application New Relic One (APM) pour AEM as a Cloud Service et comment y accéder.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f695bc891b60d2494b936a43f5c0a729c64628d7
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 79%
+source-wordcount: '1691'
+ht-degree: 77%
 
 ---
 
@@ -120,7 +120,7 @@ Pour obtenir de l’aide, ouvrez un ticket d’assistance au moyen de l’option
 
 ## Dépanner l’accès à New Relic One {#troubleshooting}
 
-Si vous avez été ajouté en tant qu’utilisateur New Relic One comme décrit dans la section [Gestion des utilisateurs New Relic One](#manage-users) et ne parvient pas à localiser l’e-mail de confirmation de compte d’origine, procédez comme suit.
+Si vous avez été ajouté en tant qu’utilisateur New Relic One, comme décrit dans la section [Gérer les utilisateurs New Relic One](#manage-users) et ne parvenez pas à localiser l’e-mail de confirmation de compte d’origine, procédez comme suit.
 
 1. Accédez à la page de connexion de New Relic à l’adresse [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
@@ -149,6 +149,12 @@ Les restrictions suivantes s’appliquent à l’ajout d’utilisateurs à New 
 * 30 utilisateurs ou utilisatrices au maximum peuvent être ajouté(e)s. Si le nombre maximal d’utilisateurs a été atteint, supprimez les utilisateurs pour pouvoir ajouter de nouveaux utilisateurs.
 * Les utilisateurs ajoutés à New Relic sont du type **Restricted**, voir [pour plus d’informations, consultez la documentation de New Relic .](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service ne propose que la solution New Relic One APM et ne prend pas en charge les intégrations d’alertes, de journalisation ou d’API.
+
+>[!NOTE]
+>
+>Si aucune activité n’est détectée dans votre compte New Relic One pendant 90 jours ou plus, l’agent APM est arrêté.
+>
+>Veuillez ouvrir un ticket d’assistance au moyen du [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) si vous souhaitez réactiver l’agent APM pour vos environnements AEMaaCS.
 
 Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One de votre programme as a Cloud Service AEM, ouvrez un ticket d’assistance via le [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
@@ -189,3 +195,7 @@ Bien que la prise en charge d’Adobe contrôle l’application as a Cloud Servi
 >[!NOTE]
 >
 >Pour afficher les deux jeux de données dans New Relic One, un utilisateur doit disposer des autorisations appropriées et utiliser la même méthodologie de connexion pour les deux comptes (New Relic One d’Adobe et les comptes New Relic gérés par le client).
+
+### L’agent APM de mon compte New Relic One est arrêté. Que s&#39;est-il passé ? {#deactivated}
+
+[Les agents APM sont arrêtés](#limitations) si aucune activité n’est détectée pendant 90 jours ou plus. Veuillez ouvrir un ticket d’assistance au moyen du [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) si vous souhaitez réactiver l’agent APM pour vos environnements AEMaaCS.

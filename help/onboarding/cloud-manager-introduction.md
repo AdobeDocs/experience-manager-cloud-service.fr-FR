@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager
 description: Découvrez comment Cloud Manager prend en charge votre projet AEM par le biais de ses programmes, environnements et pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: fe2b0eab36a3ecd6c731fe8c9ac23fd4a3175341
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 85%
+source-wordcount: '861'
+ht-degree: 83%
 
 ---
 
@@ -51,6 +51,8 @@ Vous pouvez également accéder à la page Programmes et produits de Cloud Manag
 | Génération d’un jeton d’accès personnel | Accéder à Git |  | x |  | x |
 | Créer un RDE | Créer un environnement de développement rapide | x |  |  | x |
 | Réinitialiser un RDE | Réinitialiser un environnement de développement rapide | x |  |  | x |
+| Création/modification de jeux de contenu | Création ou modification d’un jeu de contenu pour la copie de contenu |  | x |  |  |
+| Démarrer/annuler la copie de contenu | Démarrer ou annuler un processus de copie de contenu |  | x |  |  |
 
 >[!NOTE]
 >
@@ -83,7 +85,7 @@ Vos environnements cloud sont créés, accessibles et affichés via Cloud Manage
 
 >[!TIP]
 >
-> Voir la vidéo [Utilisation des environnements Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=fr) un aperçu des environnements disponibles.
+> Voir la vidéo [Utilisation des environnements Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=fr) une vue d’ensemble des environnements disponibles.
 >
 >Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour en savoir plus sur les types d’environnement qu’un utilisateur peut créer et sur la manière dont il peut créer un environnement.
 
