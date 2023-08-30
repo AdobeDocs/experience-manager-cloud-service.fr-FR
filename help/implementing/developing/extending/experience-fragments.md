@@ -2,9 +2,9 @@
 title: Présentation des fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1646'
 ht-degree: 49%
 
 ---
@@ -42,6 +42,8 @@ Par exemple :
 >[!NOTE]
 >
 >Les liens font toujours référence à l’instance de publication. Ils sont destinés à être utilisés par des tiers. Par conséquent, le lien est toujours appelé à partir de l’instance de publication, et non de l’instance d’auteur.
+>
+>Pour plus d’informations, voir [Externalisation des URL](/help/implementing/developing/tools/externalizer.md).
 
 ![Rendu HTML brut](assets/xf-14.png)
 
