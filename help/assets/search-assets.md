@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
 workflow-type: tm+mt
-source-wordcount: '5162'
-ht-degree: 95%
+source-wordcount: '5372'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ La recherche de ressources dans AEM prend en charge les cas d’utilisation suiv
 | [Limites](#limitations) et [conseils](#tips) | | |
 | [Exemples illustrés](#samples) | | |
 
-Recherchez des ressources à l’aide du champ Omni-recherche situé en haut de l’interface web [!DNL Experience Manager]. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. `Path:/content/dam` s’affiche également lorsque vous effectuez une recherche au niveau racine dans la variable **[!UICONTROL Fichiers]** dossier. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Omni-recherche pour limiter la portée de la recherche au dossier actif. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
+Recherchez des ressources à l’aide du champ Omni-recherche situé en haut de l’interface web [!DNL Experience Manager]. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. `Path:/content/dam` s’affiche également lorsque vous effectuez une recherche au niveau racine dans la variable **[!UICONTROL Fichiers]** dossier. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Omni-recherche pour limiter l’étendue de la recherche au dossier actif. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
 
 Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des dossiers, des balises et des métadonnées. Vous pouvez filtrer les résultats de recherche en fonction des différentes options (prédicats), telles que le type et la taille de fichier, la date de dernière modification, l’état de la ressource, les données d&#39;aperçu et les licences Adobe Stock. Vous pouvez personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide des [facettes de recherche](/help/assets/search-facets.md). Le filtre [!UICONTROL Type de fichier] du panneau [!UICONTROL Filtres] comporte des cases à cocher à états mixtes. Les cases à cocher du premier niveau sont donc partiellement cochées à moins que vous ne sélectionniez tous les prédicats (ou formats) imbriqués.
 
@@ -60,6 +60,20 @@ Vous pouvez découvrir plus rapidement les ressources souhaitées à partir de l
 ![Affichage du nombre approximatif de ressources sans filtrer les résultats de la recherche dans les facettes de recherche.](assets/asset_search_results_in_facets_filters.png)
 
 *Figure : Affichage du nombre approximatif de ressources sans filtrer les résultats de la recherche dans les facettes de recherche.*
+
+Experience Manager Assets affiche par défaut le nombre de facettes pour deux propriétés :
+
+* Type de ressource (jcr:content/metadata/dc:format)
+
+* État d’approbation (jcr:content/metadata/dam:status)
+
+Depuis août 2023, Experience Manager Assets inclut une nouvelle version 9 de `damAssetLucene` index. les versions précédentes, `damAssetLucene-8` et ci-dessous, utilisez la méthode `statistical` pour vérifier le contrôle d’accès sur un échantillon des éléments pour chaque nombre de facettes de recherche.
+
+`damAssetLucene-9` modifie le comportement du comptage des facettes Oak Query afin de ne plus évaluer le contrôle d’accès sur les comptes de facettes renvoyés par l’index de recherche sous-jacent, ce qui entraîne des temps de réponse de recherche plus rapides. Par conséquent, les utilisateurs peuvent se voir présenter des valeurs de nombre de facettes, qui incluent les ressources auxquelles ils n’ont pas accès. Ces utilisateurs ne peuvent pas accéder à ces ressources, les télécharger ni lire d’autres détails, y compris leurs chemins d’accès, ni obtenir d’autres informations les concernant.
+
+Si vous devez passer au comportement précédent (`statistical` mode), voir [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr) pour créer une version personnalisée de la variable `damAssetLucene-9` index. Adobe déconseille de passer à la `secure` en raison de l’impact sur les temps de réponse de la recherche avec des jeux de résultats volumineux.
+
+Pour plus d’informations sur les fonctionnalités de facette d’Oak, y compris une description détaillée de ces modes, voir [cet article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suggestions de recherche en cours de frappe {#searchsuggestions}
 
@@ -411,11 +425,11 @@ Vous pouvez effectuer les opérations suivantes avec les ressources dans lesquel
 * Télécharger une ou plusieurs ressources
 * Utiliser les actions de bureau pour ouvrir ces ressources dans l’application de bureau
 * Créer des collections dynamiques
-* Création d’une version
-* démarrer un workflow.
-* Lier ou dissocier des ressources
-* Appliquez des filtres à l’aide du panneau Filtres qui s’affiche automatiquement après avoir effectué la recherche, afin de limiter les résultats de la recherche.
-* Accédez à l’emplacement de la ressource.
+* Créer une version
+* Démarrage d’un workflow
+* Liaison ou dissociation de ressources
+* Appliquez des filtres à l’aide du panneau Filtres qui s’affiche automatiquement après avoir effectué la recherche, afin d’en limiter les résultats.
+* Accès à l’emplacement de la ressource
 
 ### Tri des résultats de la recherche {#sort}
 
@@ -458,15 +472,15 @@ Vous pouvez créer des collections dynamiques en fonction des critères de reche
 
 ### Création d’une version {#create-version}
 
-Créez une version pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Version]**. Ajoutez un libellé facultatif ou un commentaire, puis cliquez sur **[!UICONTROL Créer]**. Vous pouvez également sélectionner plusieurs ressources et créer simultanément des versions à leur intention.
+Créez une version pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Version]**. Ajoutez un libellé facultatif ou un commentaire, puis cliquez sur **[!UICONTROL Créer]**. Vous pouvez également sélectionner plusieurs ressources et créer simultanément des versions à leur intention.
 
 ### Créer un workflow {#create-workflow}
 
-Tout comme la fonctionnalité de création de version, vous pouvez créer un workflow pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Workflow]**. Sélectionnez le modèle de workflow, spécifiez un titre pour le workflow, puis cliquez sur **[!UICONTROL Début]**.
+Comme pour la fonction de création de version, vous pouvez créer un workflow pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Workflow]**. Sélectionnez le modèle de workflow, spécifiez un titre pour le workflow, puis cliquez sur **[!UICONTROL Démarrer]**.
 
-### Lier et dissocier des ressources {#relate-unrelate-assets}
+### Liaison et dissociation de ressources {#relate-unrelate-assets}
 
-Lier et dissocier les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Relate]** ou **[!UICONTROL Sans relation]**.
+Liez et dissociez les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Relier]** ou **[!UICONTROL Dissocier]**.
 
 ### Accédez à l’emplacement du dossier de ressources {#navigate-asset-folder-location}
 
