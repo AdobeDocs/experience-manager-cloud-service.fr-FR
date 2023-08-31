@@ -3,9 +3,9 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Découvrez la validation locale, le débogage, la structure de fichiers du mode flexible et comment migrer du mode hérité vers le mode flexible.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
+source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2990'
 ht-degree: 53%
 
 ---
@@ -113,13 +113,13 @@ Ce dossier contient des liens symboliques relatifs vers des fichiers sous conf.d
 
 Exemples de commandes nécessaires à la création de liens symboliques :
 
-Apple® macOS, Linux et WSL
+Apple macOS, Linux et WSL
 
 ```
 ln -s ../available_vhosts/wknd.vhost wknd.vhost
 ```
 
-Microsoft® Windows 
+Microsoft Windows
 
 ```
 mklink wknd.vhost ..\available_vhosts\wknd.vhost
@@ -151,13 +151,13 @@ Ce dossier contient des liens symboliques relatifs vers des fichiers sous conf.d
 
 Exemples de commandes nécessaires à la création de liens symboliques :
 
-Apple® macOS, Linux et WSL
+Apple macOS, Linux et WSL
 
 ```
 ln -s ../available_farms/wknd.farm wknd.farm
 ```
 
-Microsoft® Windows 
+Microsoft Windows
 
 ```
 mklink wknd.farm ..\available_farms\wknd.farm
