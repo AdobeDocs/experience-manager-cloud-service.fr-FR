@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Découvrez la validation locale, le débogage, la structure de fichiers du mode flexible et comment migrer du mode hérité vers le mode flexible.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
 workflow-type: tm+mt
-source-wordcount: '2860'
-ht-degree: 55%
+source-wordcount: '2988'
+ht-degree: 53%
 
 ---
 
@@ -107,6 +107,28 @@ Si vous souhaitez faire correspondre l’hôte exact car vous disposez de plusie
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+Ce dossier contient des liens symboliques relatifs vers des fichiers sous conf.dispatcher.d/available_vhosts.
+
+Exemples de commandes nécessaires à la création de liens symboliques :
+
+Apple® macOS, Linux et WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft® Windows 
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> Lorsque vous utilisez des liens symboliques sous Windows, vous devez exécuter dans une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou avoir le [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilège attribué.
+
 * `conf.d/rewrites/rewrite.rules`
 
 Le fichier est inclus dans votre `.vhost` fichiers . Il contient un ensemble de règles de réécriture pour `mod_rewrite`.
@@ -122,6 +144,28 @@ Le fichier est inclus dans la variable `dispatcher_vhost.conf` fichier . Vous po
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des fermes correspondant aux noms d’hôtes et permettant au module Dispatcher de gérer chaque ferme avec des règles différentes. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un lien symbolique dans le répertoire `enabled_farms`. Dans la `.farm` Les fichiers, d’autres fichiers tels que les filtres, les règles de cache et d’autres sont inclus.
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+Ce dossier contient des liens symboliques relatifs vers des fichiers sous conf.dispatcher.d/available_farms.
+
+Exemples de commandes nécessaires à la création de liens symboliques :
+
+Apple® macOS, Linux et WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft® Windows 
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> Lorsque vous utilisez des liens symboliques sous Windows, vous devez exécuter dans une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou avoir le [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilège attribué.
 
 * `conf.dispatcher.d/cache/rules.any`
 
