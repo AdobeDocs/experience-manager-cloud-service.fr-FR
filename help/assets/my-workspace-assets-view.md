@@ -1,11 +1,11 @@
 ---
-title: My Workspace for Assets view
+title: Mon espace de travail pour la vue Ressources
 description: La page Mon espace de travail est composée de modules visuels personnalisables permettant d’accéder facilement aux éléments clés de l’interface utilisateur d’Assets et aux informations les plus pertinentes pour l’utilisateur et l’utilisatrice.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: ab607be0cc4a6c7f686978250a513c776f73024e
+source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 77%
+source-wordcount: '740'
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 77%
 
 Assets comprend désormais un espace de travail personnalisable, composé de widgets permettant d’accéder facilement aux éléments clés de l’interface utilisateur d’Assets et aux informations qui vous intéressent le plus. Sur une page unique, bénéficiez d’un aperçu de vos tâches et d’un accès rapide aux principaux workflows. Grâce à un accès rapide et convivial aux menus pertinents, vous gagnez en efficacité et en vitesse de contenu.
 
-Pour accéder à Mon espace de travail, cliquez sur **[!UICONTROL Mon espace de travail]** à partir des éléments disponibles dans le volet de navigation de gauche. Mon espace de travail comprend une variété de widgets qui affichent un accès rapide, des informations, des tâches et des widgets de contenu. Vous pouvez configurer l’affichage de ces widgets dans votre espace de travail en fonction de vos préférences.
+Pour accéder à Mon espace de travail, cliquez sur **[!UICONTROL Mon espace de travail]** à partir des éléments disponibles dans le volet de navigation de gauche. Mon espace de travail comprend différents widgets qui affichent des informations sur l’accès rapide, les Insights, les tâches et le contenu. Vous pouvez configurer l’affichage de ces widgets dans votre espace de travail en fonction de vos préférences.
 
 >[!NOTE]
 >
@@ -38,17 +38,25 @@ Highlights upcoming features for Assets.
 
 **Accès rapide**
 
-Epinglez des fichiers, des dossiers et des collections pour un accès plus rapide à ces éléments lorsque vous en avez besoin ultérieurement. Tous les éléments épinglés s’affichent dans la **Accès rapide** de Mon espace de travail. Vous pouvez y accéder à l’aide de Mon espace de travail au lieu d’accéder à l’emplacement où ils sont enregistrés dans le référentiel.
+Épinglez des fichiers, des dossiers et des collections pour accéder plus rapidement à ces éléments lorsque vous en aurez besoin ultérieurement. Tous les éléments épinglés s’affichent dans la section **Accès rapide** de Mon espace de travail. Vous pouvez y accéder à l’aide de Mon espace de travail au lieu d’accéder à l’emplacement où ils sont enregistrés dans le référentiel.
 
-Pour épingler une ressource, un dossier ou une collection, sélectionnez l’élément et cliquez sur **[!UICONTROL Épingler l’accès rapide]**.
+Pour épingler une ressource, un dossier ou une collection :
 
-![Tâches dans l’espace de travail](assets/quick-access.png)
+1. Sélectionnez l’élément et cliquez sur **[!UICONTROL Épingler l’accès rapide]**.
+
+1. Sélectionnez cette option si vous devez épingler l’élément uniquement pour vous, pour l’ensemble de l’organisation ou pour les groupes sélectionnés. Si vous sélectionnez **[!UICONTROL Groupes]**, définissez les noms des groupes dans la variable **[!UICONTROL Epinglage pour les groupes]** champ .
+
+   ![Épingler des éléments pour les groupes](assets/pin-items-for-groups.png)
+1. Cliquez sur **[!UICONTROL Epinglage]**.
+
+   L’élément sélectionné s’affiche dans la **[!UICONTROL Accès rapide]** de My Workspace.
+   ![Tâches dans l’espace de travail.](assets/quick-access.png)
 
 **Insights**
 
 L’administration peut afficher un résumé du nombre de téléchargements et de chargements effectués dans l’environnement Assets au cours des 30 derniers jours. Vous pouvez cliquer sur **[!UICONTROL Afficher tout]** pour accéder rapidement à la page Insights afin de consulter des tableaux de bord plus détaillés.
 
-Vous pouvez également afficher les principaux termes recherchés, ainsi que le nombre de fois où ces termes sont recherchés dans votre déploiement de la vue Assets à l’aide de la variable **Insights** de Mon espace de travail. Vous pouvez également accéder à Informations détaillées pour afficher les principales recherches effectuées au cours des 30 ou 12 derniers jours.
+Vous pouvez également afficher les principaux termes recherchés, ainsi que le nombre de fois où ces termes sont recherchés dans votre déploiement de la vue Assets à l’aide de la variable **Informations** de My Workspace. Vous pouvez également accéder à Insights pour afficher les principales recherches effectuées au cours des 30 ou 12 derniers jours.
 
 ![Insights dans l’espace de travail](assets/insights.png)
 
@@ -66,7 +74,7 @@ Ce widget affiche les listes de tâches suivantes : les tâches qui vous sont a
 
 Présente les ressources sous différents affichages, y compris la liste des ressources que vous avez récemment consultées. Vous pouvez afficher les ressources du widget dans la vue Liste, Grille, Galerie ou Cascade et les trier par nom, taille ou date de modification. Vous pouvez également sélectionner une ressource pour en afficher les détails ou la supprimer de la liste des ressources récemment consultées.
 
-Le **[!UICONTROL Principaux téléchargements]** Cet onglet affiche les dix ressources les plus téléchargées disponibles dans votre environnement d’affichage Ressources. Vous pouvez choisir d’afficher les ressources en vue Liste ou vue Grille. Les deux vues affichent le type de format et le nombre de téléchargements pour chaque ressource. Vous pouvez également sélectionner une ressource et cliquer sur **[!UICONTROL Détails]** pour afficher ses propriétés.
+La variable **[!UICONTROL Principaux téléchargements]** Cet onglet affiche les dix ressources les plus téléchargées disponibles dans votre environnement d’affichage Ressources. Vous pouvez choisir d’afficher les ressources en vue Liste ou vue Grille. Les deux vues affichent le type de format et le nombre de téléchargements pour chaque ressource. Vous pouvez également sélectionner une ressource et cliquer sur **[!UICONTROL Détails]** pour afficher ses propriétés.
 
 ![Widget Contenu dans l’espace de travail](assets/workspace-content.png)
 
