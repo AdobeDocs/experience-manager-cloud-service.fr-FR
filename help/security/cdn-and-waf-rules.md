@@ -1,7 +1,7 @@
 ---
 title: Configuration des règles CDN et WAF pour filtrer le trafic
 description: Utilisation des règles CDN et de pare-feu d’application web pour filtrer le trafic malveillant
-source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
+source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 2%
@@ -265,7 +265,7 @@ Exemple 1 : lorsque le taux de requêtes dépasse 100 requêtes par seconde au c
 
 ```
 - name: rate-limit-example
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -274,7 +274,7 @@ Exemple 2 : lorsque le taux de requêtes dépasse 10 requêtes par seconde en 10
 
 ```
 - name: rate-limit-using-defaults
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit:
     limit: 10
