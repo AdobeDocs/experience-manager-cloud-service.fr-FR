@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 22ed74b307b9eb4c6c2f72ac2a34e2ab6d30a85c
+source-git-commit: bb7d8145eb954557d185b58f884532f8f08c5a54
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 38%
+source-wordcount: '286'
+ht-degree: 37%
 
 ---
 
@@ -23,12 +23,10 @@ Vous trouverez ci-dessous un résumé des améliorations continues apportées à
 
 - GRANITE-46784 : Ajouter une option pour désactiver BearerAuthenticationHandler
 - GRANITE-36205 : mettez à jour la version interne de oak vers la dernière version
-- GRANITE-47059 : Suppression du lot SSL Granite Jetty
 - ASSETS-26713 : Touch UI Lien externe vers le nouveau tableau de bord de l’interface utilisateur d’Experience - unifié-shell-intégration et IU optimisée pour les écrans tactiles mis à niveau
 - SKYOPS-63302 : effectuez une mise à niveau com.adobe.granite:com.adobe.granite.auth.saml vers la version 1.0.54
 - GRANITE-46634 : mise à niveau vers le client eventing 1.4.0
-- GRANITE-46788 : Mise à jour des bibliothèques Apache Commons
-- GRANITE-29211 : Mise à jour des outils vers le modèle de fonctionnalité Sling 2.0
+- GRANITE-46788 : Mise à jour des bibliothèques vers Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 et Commons Compress 1.23.0
 - GRANITE-46705 : Mise à jour vers Apache Felix Http Jetty 4.1.14
 - GRANITE-46631 : mise à jour de la version Jackrabbit vers la version 2.20.11
 - SKYOPS-61895 : mise à jour vers Jackrabbit Filevault 3.7.0
@@ -41,6 +39,7 @@ Vous trouverez ci-dessous un résumé des améliorations continues apportées à
 - GRANITE-43744 : L’authentificateur Sling ne fonctionne pas correctement en cas de configuration incorrecte avec l’exigence d’authentification et le chemin d’accès Vanity.
 - GRANITE-46419 : problème d’intégration AEM avec l’Idp Auth0
 - GRANITE-46292 : la configuration SAML Okta ne fonctionne pas après la mise à jour AEM Cloud
+- GRANITE-47059 : Suppression du lot SSL Granite Jetty
 
 ### Problèmes connus {#known-issues-13239}
 
