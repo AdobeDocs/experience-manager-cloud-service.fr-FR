@@ -2,10 +2,10 @@
 title: Notifications
 description: Découvrez comment recevoir des informations sur les déploiements de pipeline à l’aide du système de notifications d’Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 96%
+source-wordcount: '589'
+ht-degree: 86%
 
 ---
 
@@ -54,7 +54,7 @@ Les abonnements définissent les produits pour lesquels vous recevez des notific
 
 ![Abonnements aux notifications](assets/notifications-subscriptions.png)
 
-Par défaut, vous recevrez toutes les notifications pour tous les produits. Cliquez sur **Personnaliser** à côté d’un produit pour définir les types de notifications que vous recevez pour ce produit.
+Par défaut, vous recevrez toutes les notifications pour tous les produits de l’application et par email. Cliquez sur le chevron en regard d’un nom de produit pour afficher les options détaillées et définir les types de notifications que vous recevez pour ce produit. Ou cochez ou décochez les options au niveau du produit pour sélectionner/désélectionner toutes les options du produit.
 
 ![Personnalisation de l’abonnement aux notifications](assets/notifications-subscriptions-customize.png)
 
