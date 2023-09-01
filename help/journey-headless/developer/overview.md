@@ -3,10 +3,10 @@ title: Parcours du développeur CMS AEM Headless
 description: Découvrez le développement découplé à l’aide d’Adobe Experience Manager (AEM) en tant que CMS découplé. Découvrez comment utiliser des fonctionnalités telles que les modèles de contenu, les fragments de contenu et l’API GraphQL afin d’optimiser la diffusion de contenu découplé.
 landing-page-description: Découvrez la diffusion et la mise en œuvre du contenu découplé. Apprenez-en plus sur le développement de votre stratégie au sein de votre entreprise.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 93%
+source-wordcount: '1099'
+ht-degree: 92%
 
 ---
 
@@ -89,8 +89,10 @@ Les parcours de documentation vous montrent comment AEM permet de résoudre un p
 
 Consultez ces parcours supplémentaires pour plus d’informations sur la manière dont les puissantes fonctionnalités d’AEM fonctionnent ensemble.
 
+* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels AEM sans affichage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) - Si vous préférez apprendre en faisant et en ayant des connaissances existantes en matière d’AEM, suivez nos tutoriels pratiques organisés par API et structure, qui explorent la création et l’utilisation d’applications reposant sur AEM Headless.
 * [Parcours de traduction découplé AEM](/help/journey-headless/translation/overview.md) – Ce parcours de documentation vous donne une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
 * [Parcours de création découplée](/help/journey-headless/author/overview.md) – Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les modéliser votre contenu dans votre premier projet découplé.
 * [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) – Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) - Si vous avez déjà des connaissances solides sur AEM et les technologies de découplage, vous pouvez consulter directement notre documentation technique détaillée.
+   * [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)

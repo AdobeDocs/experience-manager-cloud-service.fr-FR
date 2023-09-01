@@ -2,10 +2,10 @@
 title: Tout assembler – Votre application et votre contenu dans AEM découplé
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment aborder votre projet AEM, notamment les fragments de contenu, les appels GraphQL, les appels API REST et votre application, mais aussi comment préparer ce projet pour la mise en ligne.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 91%
+source-wordcount: '1092'
+ht-degree: 92%
 
 ---
 
@@ -68,13 +68,13 @@ Un environnement d’AEM complet est constitué d’un auteur, d’une publicati
 
 * **Le service Auteur** permet aux utilisateurs internes de créer, gérer et prévisualiser du contenu.
 
-* **Le service de publication** est considéré comme l’environnement « En ligne » et est généralement celui avec lequel les utilisateurs finaux interagissent. Le contenu, après avoir été modifié et approuvé sur le service Auteur, est distribué au service Publication. Le modèle de déploiement le plus courant avec les applications découplées AEM est de connecter la version de production de l’application à un service de publication AEM.
+* **Le service de publication** est considéré comme l’environnement « En ligne » et est généralement celui avec lequel les utilisateurs finaux interagissent. Le contenu, après avoir été modifié et approuvé sur le service Auteur, est distribué au service Publication. Le modèle de déploiement le plus courant avec les applications découplées d’AEM est de connecter la version de production de l’application à un service de publication d’AEM.
 
 * **Le Dispatcher** est un serveur web statique qui est alimenté par le module Dispatcher d’AEM. Ce module met en cache les pages web produites par l’instance de publication pour améliorer les performances.
 
 ## Workflow de développement local {#the-local-development-workflow}
 
-Le projet de développement local est basé sur Apache Maven et utilise Git pour le contrôle de code source. Pour mettre à jour le projet, les développeurs peuvent utiliser leur environnement de développement intégré préféré, tel qu’Eclipse, Visual Studio Code ou IntelliJ, entre autres.
+Le projet de développement local est basé sur Apache Maven et utilise Git pour le contrôle de code source. Pour mettre à jour le projet, les développeurs et développeuses peuvent utiliser leur environnement de développement intégré préféré, tel qu’Eclipse, Visual Studio Code ou IntelliJ, entre autres.
 
 Pour tester le code ou les mises à jour de contenu ingérées par votre application découplée, vous devez déployer les mises à jour sur l’exécution locale AEM, qui inclut les instances locales des services de création et de publication AEM.
 
@@ -92,7 +92,7 @@ L’environnement de développement local se compose de trois principaux éléme
 
 1. Le projet AEM : il contient tout le code personnalisé, la configuration et le contenu sur lesquels les développeurs AEM vont travailler.
 1. L’exécution locale AEM : les versions locales des services de création et de publication AEM utilisés pour déployer le code du projet AEM.
-1. L’exécution locale du Dispatcher : la version locale du serveur web Apache httpd qui comprend le module de Dispatcher.
+1. L’exécution locale du Dispatcher : la version locale du serveur web Apache httpd qui comprend le module du Dispatcher.
 
 Une fois l’environnement de développement local configuré, vous pouvez simuler la diffusion de contenu vers l’application React en déployant localement un serveur de nœuds statique.
 
@@ -114,4 +114,6 @@ Poursuivez votre parcours dans AEM découplé en consultant le document [Comment
 * [SDK AEM découplé pour les navigateurs côté client (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 * [SDK AEM découplé pour les Node.js côté serveur (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [SDK AEM découplé pour Java™](https://github.com/adobe/aem-headless-client-java)
-
+* [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

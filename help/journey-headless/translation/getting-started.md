@@ -2,9 +2,9 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1425'
 ht-degree: 94%
 
 ---
@@ -44,7 +44,7 @@ Un certain nombre d’exigences s’imposent avant de vous engager dans la tradu
 
 >[!TIP]
 >
->Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Par conséquent, revenez à cette page une fois l’opération terminée.
+>Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Une fois terminé, revenez à cette page.
 
 ### Outils {#tools}
 
@@ -64,7 +64,7 @@ Le contenu AEM, qu’il s’agisse de pages web découplée ou traditionnelles, 
 
 ## Stockage du contenu découplé dans AEM {#headless-content-in-aem}
 
-En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu découplé. Toutefois, il est utile de connaître les concepts et la terminologie de base, car vous utiliserez ensuite AEM outils de traduction. Plus important encore, vous devez comprendre votre propre contenu et sa structure afin de pouvoir le traduire efficacement.
+En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu découplé. Toutefois, il est utile de connaître les concepts et la terminologie de base, car vous utiliserez par la suite AEM outils de traduction. Plus important encore, vous devez comprendre votre propre contenu et sa structure afin de pouvoir le traduire efficacement.
 
 ### Modèles de contenu {#content-models}
 
@@ -188,3 +188,5 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 * [Identification du contenu à traduire](/help/sites-cloud/administering/translation/rules.md) : découvrez comment les règles de traduction identifient le contenu à traduire.
 * [Configuration du framework d’intégration de la traduction](/help/sites-cloud/administering/translation/integration-framework.md) : découvrez comment configurer le framework d’intégration de la traduction pour l’intégrer à des services de traduction tiers.
 * [Gestion de projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
+* [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

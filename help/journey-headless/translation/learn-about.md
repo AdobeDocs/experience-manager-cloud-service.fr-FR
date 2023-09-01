@@ -2,10 +2,10 @@
 title: En savoir plus sur le contenu découplé et sa traduction dans AEM
 description: Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 96%
+source-wordcount: '743'
+ht-degree: 95%
 
 ---
 
@@ -78,3 +78,5 @@ Appuyez-vous sur ces connaissances et poursuivez votre parcours de traduction d�
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en examinant le document [Prise en main de la traduction découplée AEM](getting-started.md), vous trouverez ci-dessous quelques ressources supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, sans être obligatoires pour poursuivre ce parcours découplé.
 
 * [MSM et traduction](/help/sites-cloud/administering/msm-and-translation.md) – Informations sur AEM Multi-Site Manager et sur le fonctionnement de ses outils de traduction
+* [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

@@ -2,10 +2,10 @@
 title: Création pour AEM en tant que CMS découplé - Introduction
 description: Une introduction de l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service dans un CMS découplé pour créer du contenu pour votre projet.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '691'
+ht-degree: 95%
 
 ---
 
@@ -77,10 +77,16 @@ Maintenant que vous avez découvert les concepts et la terminologie, l’étape 
 
 ## Ressources supplémentaires {#additional-resources}
 
+* [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
+
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+
 * Parcours du développeur AEM Headless
    * [En savoir plus sur le développement CMS découplé](/help/journey-headless/developer/learn-about.md)
    * [Découvrez comment modéliser votre contenu](/help/journey-headless/developer/model-your-content.md)
 
-* Parcours d’architecture de contenu découplé AEM
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 
-* Parcours de traduction de contenu découplé AEM
+* [Parcours d’architecture de contenu découplé AEM](/help/journey-headless/architect/overview.md)
+
+* [Parcours de traduction de contenu découplé AEM](/help/journey-headless/translation/overview.md)

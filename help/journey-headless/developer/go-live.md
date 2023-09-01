@@ -2,10 +2,10 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement découplé AEM, apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 93%
+source-wordcount: '1093'
+ht-degree: 92%
 
 ---
 
@@ -120,7 +120,7 @@ Félicitations ! Vous avez terminé le parcours de développement découplé AE
 * La mise en ligne d’un projet découplé AEM
 * Que faire après la mise en ligne.
 
-Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous disposez en tout cas déjà de toutes les connaissances nécessaires pour le faire. Super boulot !
+Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous disposez en tout cas déjà de toutes les connaissances nécessaires pour le faire. Très bon travail.
 
 ### Découvrez les applications sur une seule page {#explore-spa}
 
@@ -130,6 +130,9 @@ Si ce type de flexibilité est nécessaire pour votre projet, passez à la secti
 
 ## Ressources supplémentaires {#additional-resources}
 
+* [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
 * [Présentation du déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr)
 * [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr)
