@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
+source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4481'
 ht-degree: 96%
 
 ---
@@ -121,19 +121,18 @@ Pour prévisualiser une ressource, procédez comme suit.
 
 1. Pour planifier une date/heure spécifique pour l’activation de la ressource, utilisez le sélecteur de date situé en regard du champ **[!UICONTROL Heure d’activation]**.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![Sélecteur de date](assets/date-picker.png)
 
 1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web Assets ou via l’API HTTP.
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
-
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)
 1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et sélectionnez ensuite la touche `Enter`. La nouvelle balise est enregistrée dans [!DNL Experience Manager].
 
    YouTube requiert que les balises soient publiées et comportent un lien vers YouTube (si un lien approprié peut être trouvé).
 
    >[!NOTE]
    >
-   >Pour créer des balises, vous devez disposer d’une autorisation d’écriture sur le chemin d’accès `/content/cq:tags/default` dans le référentiel CRX.
+   > Pour créer des balises, vous devez disposer d’une autorisation d’écriture sur le chemin d’accès `/content/cq:tags/default` dans le référentiel CRX.
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
@@ -181,7 +180,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Cliquez sur l’icône de ressource **[!UICONTROL Coller]** de la barre d’outils. Les ressources sont copiées à cet emplacement.
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   <!--![chlimage_1-219](assets/chlimage_1-219.png)-->
 
    >[!NOTE]
    >
@@ -229,7 +228,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Appuyez/cliquez sur la ressource pour ouvrir sa page.
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
 1. Appuyez/cliquez sur l’icône de navigation globale et sélectionnez **[!UICONTROL Rendus]** dans la liste.
 
@@ -255,7 +254,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    Accédez à la page de détails de la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Ajouter le rendu]** de la barre d’outils afin de charger un nouveau rendu pour la ressource.
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
    >[!NOTE]
    >
@@ -267,7 +266,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    De même, vous pouvez personnaliser l’image de la page Annotation en recouvrant `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
    Pour configurer les dimensions du rendu d’une ressource vidéo, accédez au nœud `videopicker` dans le référentiel CRX à l’emplacement `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, recouvrez le nœud, puis modifiez la propriété adéquate.
 
@@ -451,11 +450,11 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
    * [Actions rapides](#quick-actions)
    * Dans la barre d’outils, après avoir sélectionné la ressource    ou avoir accédé à la page de la ressource
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+<!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
@@ -465,11 +464,11 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 >
 >Si l’utilisateur ne dispose pas des droits d’administration, les suggestions s’affichent uniquement s’il dispose de droits de lecture sur `/home` dans CRXDE.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+<!--![chlimage_1-235](assets/chlimage_1-235.png)-->
 
 1. Après avoir ajouté l’annotation, cliquez sur **[!UICONTROL Ajouter]** pour l’enregistrer. Une notification relative à l’annotation est envoyée à Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   <!--![chlimage_1-236](assets/chlimage_1-236.png)-->
 
    >[!NOTE]
    >
@@ -484,11 +483,11 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Pour sélectionner une autre couleur afin de différencier les utilisateurs, cliquez/appuyez sur l’icône Profil et ensuite sur **[!UICONTROL Mes préférences]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
    Indiquez la couleur de votre choix dans la zone **[!UICONTROL Couleur de l’annotation]**, puis cliquez/appuyez sur **[!UICONTROL Accepter]**.
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+<!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
 >[!NOTE]
 >
@@ -508,15 +507,15 @@ Vous ne pouvez afficher qu’une annotation à la fois.
 
 1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans la liste.
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
 1. Dans la liste **[!UICONTROL Tout afficher]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
    Dans le panneau **[!UICONTROL Chronologie]**, appuyez/cliquez sur un commentaire pour afficher l’annotation correspondante sur l’image.
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
    Pour supprimer un commentaire spécifique, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
@@ -540,29 +539,29 @@ Pour imprimer les annotations et le statut de révision, cliquez/appuyez sur l�
 
 1. Pour imprimer des annotations spécifiques, sélectionnez-les dans la chronologie.
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   <!--![chlimage_1-242](assets/chlimage_1-242.png)-->
 
    Pour n’imprimer que le statut de révision, sélectionnez-le dans la chronologie.
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Imprimer]** dans la barre d’outils.
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
 1. Dans la boîte de dialogue Imprimer, sélectionnez la position dans laquelle vous souhaitez afficher les annotations/le statut de révision dans le fichier PDF. Par exemple, si vous souhaitez que les annotations ou le statut de révision soient imprimés dans le coin supérieur droit de la page qui contient l’image imprimée, sélectionnez le paramètre **Haut et gauche**. Ce paramètre est sélectionné par défaut.
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
    Vous pouvez choisir d’autres paramètres selon la position à laquelle vous souhaitez que les annotations ou le statut de révision apparaissent dans le document PDF imprimé. Si vous souhaitez que les annotations ou le statut de révision apparaissent sur une page différente de la ressource imprimée, sélectionnez **[!UICONTROL Page suivante]**.
 
 1. Cliquez sur **[!UICONTROL Imprimer]**. En fonction de l’option sélectionnée à l’étape 2, le fichier PDF généré affiche les annotations ou le statut de révision à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et le statut de révision à l’aide du paramètre **Haut et gauche**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
 1. Téléchargez ou imprimez le fichier PDF à l’aide des options situées dans le coin supérieur droit.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
    Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des statuts, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-digital-assets.md#annotating).
 
@@ -594,15 +593,15 @@ La fonctionnalité de contrôle de version vous permet d’effectuer les opérat
 
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Actions]** (flèche) dans la partie inférieure pour afficher les actions disponibles que vous pouvez effectuer sur la ressource.
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer comme version]** pour créer une version de la ressource.
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+<!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
 1. Ajoutez un libellé et un commentaire, puis cliquez sur **[!UICONTROL Créer]** pour créer une version. Sinon, appuyez/cliquez sur **Annuler** pour quitter l’opération.
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
 1. Pour afficher la version qui vient d’être créée, ouvrez la liste **[!UICONTROL Tout afficher]** dans la chronologie à partir de la page de détails de la ressource ou de l’interface utilisateur d’Assets et sélectionnez **[!UICONTROL Versions]**. Toutes les versions créées pour une ressource sont répertoriées sous l’onglet Chronologie. Pour filtrer la liste afin d’afficher les versions, cliquez sur la flèche pointant vers le bas et sélectionnez **[!UICONTROL Versions]** dans la liste.
 
@@ -635,23 +634,23 @@ La fonctionnalité de contrôle de version vous permet d’effectuer les opérat
 
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Actions]** (flèche) dans la partie inférieure pour afficher la liste des actions disponibles pour la ressource.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
 1. Appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la liste.
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
-1. Dans la section **[!UICONTROL Démarrer le processus]**, sélectionnez un modèle de workflow dans la liste.
+1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste.
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   <!--![chlimage_1-254](assets/chlimage_1-254.png)-->
 
 1. (Facultatif) Spécifiez le titre du workflow, qui peut permettre de référencer l’instance du workflow.
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
 1. Appuyez/cliquez sur **[!UICONTROL Démarrer]**, puis cliquez sur **[!UICONTROL Continuer]** dans la boîte de dialogue pour confirmer. Chaque étape du workflow s’affiche en tant qu’événement dans la chronologie.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 
 ## Collections {#collections}
 
