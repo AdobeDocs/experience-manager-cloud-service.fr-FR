@@ -2,7 +2,7 @@
 title: Conseils de développement sur AEM as a Cloud Service
 description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
+source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
 workflow-type: tm+mt
 source-wordcount: '2746'
 ht-degree: 83%
@@ -98,8 +98,6 @@ La réplication inverse de l’instance de publication vers l’instance d’aut
 
 Le contenu est répliqué de l’instance d’auteur vers l’instance de publication au moyen d’un mécanisme pub-sub. Les agents de réplication personnalisés ne sont pas pris en charge.
 
-## Surveillance et débogage {#monitoring-and-debugging}
-
 ## Aucun surchargement d’environnements de développement {#overloading-dev-envs}
 
 Les environnements de production sont dimensionnés plus haut pour garantir un fonctionnement stable, tandis que les environnements de test sont dimensionnés comme les environnements de production pour garantir des tests réalistes dans les conditions de production.
@@ -107,6 +105,8 @@ Les environnements de production sont dimensionnés plus haut pour garantir un f
 Les environnements de développement et les environnements de développement rapide doivent se limiter au développement, à l’analyse des erreurs et aux tests fonctionnels. Ils ne sont pas conçus pour traiter des charges de travail élevées ni de grandes quantités de contenu.
 
 Par exemple, la modification d’une définition d’index sur un référentiel de contenu volumineux dans un environnement de développement peut entraîner une réindexation, ce qui entraîne un traitement excessif. Les tests qui nécessitent un contenu important doivent être exécutés dans des environnements intermédiaires.
+
+## Surveillance et débogage {#monitoring-and-debugging}
 
 ### Journaux {#logs}
 
