@@ -3,7 +3,7 @@ title: Considérations relatives aux autorisations pour le contenu découplé
 description: Découvrez les différentes considérations relatives aux autorisations et aux listes de contrôle d’accès pour une mise en œuvre découplée avec Adobe Experience Manager. Découvrez les différentes personnes et les niveaux d’autorisation potentiels nécessaires pour les environnements de création et de publication.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 97%
@@ -54,7 +54,7 @@ Il est préférable de ne pas modifier directement les autorisations d’un grou
 
 Pour obtenir des autorisations plus granulaires, utilisez la variable **Autorisations** dans AEM et mettez à jour le chemin à partir de `/content/dam` vers un chemin plus spécifique, c’est-à-dire : `/content/dam/mycontentfragments`.
 
-Il peut être souhaitable de donner à ce groupe d’utilisateurs les autorisations permettant de créer et de modifier des fragments de contenu, mais pas de les supprimer. Pour vérifier et attribuer des autorisations de modification sans autorisation de suppression, consultez les [Considérations relatives à la suppression des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+Il peut être souhaitable de donner à ce groupe d’utilisateurs les autorisations permettant de créer et de modifier des fragments de contenu, mais pas de les supprimer. Pour vérifier et attribuer des autorisations de modification sans autorisation de suppression, consultez les [Considérations relatives à la suppression des fragments de contenu](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 ### Éditeurs de modèle
 

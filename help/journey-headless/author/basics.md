@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 83%
+source-wordcount: '1729'
+ht-degree: 70%
 
 ---
 
@@ -71,7 +71,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 Dans la console, vous pouvez sélectionner des dossiers dans le panneau de gauche pour accéder à votre fragment de contenu. Vous pouvez également filtrer et/ou rechercher.
 
-![Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
+![Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Actions, sélection, affichage {#actions-selecting-viewing}
 
@@ -183,43 +183,44 @@ Spécifiez les éléments suivants :
 
 Confirmez en cliquant sur **Créer** ou **Créer et ouvrir**.
 
-<!--
-Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
-
-![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
-
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
-
-![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
-
-After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
-
-![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-Confirm with **Create** and you can then **Open** your fragment in the editor.
--->
-
 ### Modifier un fragment {#editing-fragment}
 
 Vous pouvez ouvrir un fragment immédiatement après sa création ou en le sélectionnant dans la console Fragments de contenu (également disponible dans la console Ressources).
 
+>[!NOTE]
+>
+>Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
+>
+>Il existe deux éditeurs pour la création de fragments de contenu.
+>
+>* Le nouvel éditeur, principalement accessible à partir du **Fragments de contenu** console.
+>* L’éditeur d’origine, principalement accessible à partir de **Ressources** console.
+
 Lorsque l’éditeur s’ouvre pour la première fois, vous voyez :
 
-* Une liste des icônes sur le côté gauche qui vous donne accès à différentes zones de fonctionnalités. L’éditeur s’ouvre dans l’onglet **Variations**, où vous opérerez la plupart de vos modifications. Vous pouvez également être intéressé par les onglets **Annotations** et **Métadonnées**.
+* barre d’outils supérieure : pour obtenir des informations clés et des actions
+   * lien vers la console de fragments de contenu (icône Accueil)
+   * informations sur le modèle et le dossier
+   * Liens vers Aperçu ; si le modèle d’URL d’aperçu par défaut est configuré pour le modèle
+   * Actions Publier et Annuler la publication
+   * une option pour afficher tout **Références parentes** (icône de lien)
+   * le fragment **État**, et les dernières informations enregistrées ;
+   * bascule pour passer à l’éditeur d’origine (basé sur les ressources)
+* panneau de gauche : affiche la variable **Variations** pour le fragment de contenu et son **Champs**:
+   * ces liens peuvent être utilisés pour parcourir la structure de fragment de contenu
+* panneau de droite : présente des onglets présentant les propriétés (métadonnées) et les balises, des informations sur l’historique des versions et des informations relatives aux copies de langue.
+   * dans le **Propriétés** vous pouvez mettre à jour l’onglet **Titre** et **Description** pour le fragment, ou **Variation**
+* panneau central : affiche les champs réels et le contenu de la variation sélectionnée.
+   * permet de modifier le contenu.
+   * if **Espace réservé de tabulation** Les champs sont définis dans le modèle qu’ils sont affichés ici et peuvent être utilisés pour naviguer
 
-* En-tête contenant des informations sur le fragment et un accès à différentes actions.
+Par exemple, un fragment peut :
 
-* La zone d’édition principale qui dépend du modèle utilisé pour créer votre fragment.
+* Nécessite plusieurs informations, dont certaines avec un type spécifique. Pour le contenu sans interface utilisateur, les références sont essentielles (vous en apprendrez plus loin dans votre parcours).
 
-Par exemple :
+* Permet d&#39;écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
 
-* Un fragment qui ne nécessite que plusieurs informations, certaines avec un type spécifique. Pour le contenu sans interface utilisateur, les références sont essentielles (vous en apprendrez plus loin dans votre parcours).
-
-  ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
-
-* Un fragment permettant d’écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
-
-  ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+![Éditeur de fragment de contenu – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -239,26 +240,12 @@ Cette section peut sembler un peu étrange, mais dès que vous ouvrez l’édite
 
 * **Modèles de fragment de contenu**
 
-  Le nom du modèle de fragment de contenu s’affiche en haut de l’éditeur, directement sous celui du fragment. Il s’agit également d’un lien qui vous mène à l’éditeur de modèles.
+  Le nom du modèle de fragment de contenu s’affiche dans le panneau de droite de l’éditeur. Il s’agit également d’un lien qui vous mène à l’éditeur de modèles.
 Les modèles de fragment de contenu sont essentiels à vos fragments de contenu, car ils définissent la structure que vous utilisez. Cependant, leur création et leur modification relèvent (généralement) de la responsabilité d’une autre personne, l’architecte de contenu.
 
   >[!NOTE]
   >
   >Si vous souhaitez en savoir plus, vous pouvez consultez le parcours d’architecture de contenu découplé AEM.
-
-* **Contenu associé**
-
-  Celui-ci est assez évident, car il s’agit d’un onglet dans l’éditeur.
-
-  Les fragments de contenu sont disponibles dans AEM depuis un certain nombre de versions. À l’origine, ils étaient disponibles pour une utilisation « traditionnelle » lors de la création de pages...et ils sont toujours utilisés dans ce contexte. Cela peut impliquer l’association de ressources (des images, par exemple) qui, bien qu’elles ne soient pas incorporées dans le fragment, doivent être disponibles pour l’auteur lors de la création d’une page.
-
-* **Aperçu**
-
-  Il s’agit d’un autre onglet de l’éditeur qui fournit une vue technique, principalement destinée aux développeurs.
-
-* **Mettre à jour les références de page**
-
-  Cette action est disponible à partir du **..** (ellipses). Elle n’a pas d’intérêt particulier pour les auteurs de contenu découplé, car elle concerne la création de pages.
 
 ### Publication {#publishing}
 
@@ -296,15 +283,15 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
    * [Sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
 
-   * [Application de la configuration à votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [Application de la configuration à votre dossier de ressources](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-   * [Création d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Création d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Variations – Création de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [Créer des fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * Publication
 
@@ -316,15 +303,17 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
       * Dans la **Fragments de contenu** Console
 
-         * [Publication et aperçu d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+         * [Publication et aperçu d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [Modèles de fragment de contenu – Propriétés](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [Modèles de fragment de contenu – Propriétés](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+
+* [Fragments de contenu - éditeur d’origine, à partir de la console Ressources](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Guides de prise en main
    * [Création d’une configuration découplée d’un dossier de ressources](/help/headless/setup/create-assets-folder.md)

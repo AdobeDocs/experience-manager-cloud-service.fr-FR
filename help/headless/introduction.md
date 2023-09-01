@@ -3,7 +3,7 @@ title: Présentation de Headless pour AEM
 description: Découvrez Headless dans Adobe Experience Manager (AEM) avec une combinaison de documentation détaillée et de parcours headless. Découvrez comment des fonctionnalités telles que les modèles de fragment de contenu, les fragments de contenu et une API GraphQL sont utilisées pour créer des expériences découplées.
 landing-page-description: Apprenez comment utiliser et administrer Headless dans Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 98%
@@ -42,7 +42,7 @@ AEM as a Cloud Service est un outil souple pour le modèle d’implémentation d
 1. **Fragments de contenu**
    * Un fragment de contenu est créé à partir d’un modèle de fragment de contenu.
    * Il est créé par les créateurs et créatrices de contenu à l’aide de l’éditeur de fragments de contenu AEM.
-   * Les fragments de contenu sont stockés en tant qu’AEM Assets, mais peuvent être gérés via la console Ressources ou la [Console fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+   * Les fragments de contenu sont stockés en tant qu’AEM Assets, mais peuvent être gérés via la console Ressources ou la [Console fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 1. **API de contenu pour la diffusion**
    * L’API AEM GraphQL prend en charge la diffusion de fragments de contenu.
    * L’API REST AEM Assets prend en charge les opérations CRUD sur les fragments de contenu.

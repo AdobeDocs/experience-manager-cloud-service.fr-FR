@@ -3,7 +3,7 @@ title: Gérer les points d’entrée GraphQL dans AEM
 description: Découvrez comment gérer les points d’entrée GraphQL dans Adobe Experience Manager as a Cloud Service pour la diffusion de contenu découplé.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 87%
@@ -22,10 +22,10 @@ Dans AEM, il existe deux types de points d’entrée :
 
 * Global
    * Disponible pour tous les sites.
-   * Ce point d’entrée peut utiliser tous les modèles de fragment de contenu de toutes les configurations Sites (définis dans l’[explorateur de configurations](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Ce point d’entrée peut utiliser tous les modèles de fragment de contenu de toutes les configurations Sites (définis dans l’[explorateur de configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)).
    * S’il existe des modèles de fragment de contenu à partager entre les configurations Sites, ils doivent être créés sous les configurations Sites globales.
 * Configurations Sites :
-   * Correspond à une configuration Sites, comme défini dans l’[explorateur de configurations](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Correspond à une configuration Sites, comme défini dans l’[explorateur de configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
    * Spécifique à un site/projet spécifique.
    * Un point d’entrée spécifique à la configuration Sites utilisera les modèles de fragment de contenu de cette configuration Sites spécifique, ainsi que ceux de la configuration Sites globale.
 
@@ -52,11 +52,11 @@ Pour activer le point d’entrée de GraphQL pour AEM, vous devez procéder comm
 
 ## Activation de votre point d’entrée GraphQL {#enabling-graphql-endpoint}
 
-Pour activer un point d’entrée GraphQL, vous devez d’abord disposer d’une configuration appropriée. Voir [Fragments de contenu – Explorateur de configurations](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+Pour activer un point d’entrée GraphQL, vous devez d’abord disposer d’une configuration appropriée. Voir [Fragments de contenu – Explorateur de configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 >[!CAUTION]
 >
->Si l’[utilisation des modèles de contenu du fragment n’a pas été activée](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
+>Si l’[utilisation des modèles de contenu du fragment n’a pas été activée](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser), l’option **Créer** n’est pas disponible.
 
 Pour activer le point d’entrée correspondant :
 

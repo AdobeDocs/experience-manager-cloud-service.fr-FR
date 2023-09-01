@@ -3,8 +3,11 @@ title: Utiliser des fragments de contenu
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour la création de pages et la diffusion découplée.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2122'
 ht-degree: 94%
@@ -12,6 +15,12 @@ ht-degree: 94%
 ---
 
 # Utiliser des fragments de contenu {#working-with-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements ou sur plusieurs canaux, ce qui est idéal pour la création de pages et la diffusion découplée.
 
@@ -294,13 +303,13 @@ Pour utiliser vos fragments de contenu pour la création de pages, vous avez ég
 
    * Utilitaire de diffusion du fragment au format HTML et/ou JSON.
    * Obligatoire pour [référencer le fragment sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * responsable de la mise en page et de la diffusion d’un fragment ; c&#39;est-à-dire les canaux.
+   * Responsable de la mise en page et de la diffusion d’un fragment, c’est-à-dire des canaux.
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
 
 ## Exemple d’utilisation {#example-usage}
 
-Un fragment, avec ses éléments et ses variations, peut être utilisé afin de créer du contenu homogène sur plusieurs canaux. Lors de la conception de votre fragment, tenez compte de l’emplacement utilisé.
+Un fragment, avec ses éléments et ses variations, peut être utilisé afin de créer du contenu homogène sur plusieurs canaux. Lors de la conception de votre fragment, tenez compte de l’emplacement d’utilisation.
 
 ### Exemple WKND {#wknd-sample}
 

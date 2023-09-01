@@ -3,8 +3,11 @@ title: Modèles de fragment de contenu
 description: Découvrez comment les modèles de fragment de contenu servent de base pour vos fragments de contenu dans AEM. Ils vous permettent de créer du contenu structuré à utiliser dans une diffusion Headless ou dans la création de pages.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 85%
@@ -12,6 +15,12 @@ ht-degree: 85%
 ---
 
 # Modèles de fragment de contenu {#content-fragment-models}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Les modèles de fragment de contenu dans AEM définissent la structure du contenu de vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md). Ils peuvent être utilisés pour la création de pages ou comme base pour votre contenu Headless.
 

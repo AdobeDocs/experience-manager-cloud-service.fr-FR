@@ -2,7 +2,7 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard. Découvrez comment les personnaliser.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1812'
 ht-degree: 75%
@@ -13,13 +13,13 @@ ht-degree: 75%
 
 Dans Adobe Experience Manager as a Cloud Service, un fragment de contenu étend une ressource standard ; voir :
 
-* [Création et gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) et [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md) pour plus d’informations sur les fragments de contenu.
+* [Création et gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) et [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md) pour plus d’informations sur les fragments de contenu.
 
 * [Gestion des ressources](/help/assets/manage-digital-assets.md) pour plus d’informations sur les ressources standard.
 
 ## Architecture {#architecture}
 
-Les [éléments](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) de base d’un fragment de contenu sont les suivants :
+Les [éléments](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) de base d’un fragment de contenu sont les suivants :
 
 * un *fragment de contenu*,
 * comportant un ou plusieurs *éléments de contenu*,
@@ -80,7 +80,7 @@ Comme pour les ressources standard, un fragment de contenu est conservé sous :
 
 #### Autorisations de ressources {#asset-permissions}
 
-Pour plus d’informations, voir [Fragments de contenu – considérations sur la suppression](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+Pour plus d’informations, voir [Fragments de contenu – considérations sur la suppression](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### Intégration de fonction {#feature-integration}
 
@@ -326,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Exemple : spécification de l’intervalle d’enregistrement automatique {#example-specifying-the-auto-save-interval}
 
-L’[intervalle d’enregistrement automatique](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
+L’[intervalle d’enregistrement automatique](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
 
 * Nœud : `<conf-root>/settings/dam/cfm/jcr:content`
 * Nom de la propriété : `autoSaveInterval`

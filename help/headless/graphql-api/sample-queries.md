@@ -1,25 +1,25 @@
 ---
-title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
-description: Apprenez à utiliser GraphQL avec AEM afin de pouvoir diffuser du contenu sans interface en explorant des exemples de contenu et de requêtes.
+title: Apprendre à utiliser GraphQL avec AEM – Exemples de contenu et de requêtes
+description: Apprenez à utiliser GraphQL avec AEM afin de pouvoir diffuser du contenu sans problème en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 78%
+ht-degree: 83%
 
 ---
 
-# Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
+# Apprendre à utiliser GraphQL avec AEM – Exemples de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
-Apprenez à utiliser GraphQL avec AEM afin de pouvoir diffuser du contenu sans interface en explorant des exemples de contenu et de requêtes.
+Apprenez à utiliser GraphQL avec AEM afin de pouvoir diffuser du contenu sans problème en explorant des exemples de contenu et de requêtes.
 
 >[!NOTE]
 >
 >Lisez cette page avec ce qui suit :
 >
->* [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
->* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+>* [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
+>* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 >* [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/headless/graphql-api/content-fragments.md)
 
 Pour commencer à utiliser les requêtes GraphQL et leur utilisation avec les fragments de contenu AEM, vous pouvez consulter quelques exemples pratiques.
@@ -41,7 +41,7 @@ Consultez ces exemples de requêtes pour obtenir un aperçu de la création de r
 
 >[!NOTE]
 >
->Selon votre instance, vous pouvez accéder directement à la variable [Interface GraphiQL incluse avec l’API GraphQL AEM](/help/headless/graphql-api/graphiql-ide.md) pour envoyer et tester des requêtes.
+>Selon votre instance, vous pouvez accéder directement à l’[interface GraphiQL incluse dans l’API GraphQL d’AEM](/help/headless/graphql-api/graphiql-ide.md) pour soumettre et tester des requêtes.
 >
 >Vous pouvez accéder à l’éditeur de requêtes à partir de :
 >
@@ -158,7 +158,7 @@ Pour récupérer toutes les informations sur toutes les villes, vous pouvez util
 }
 ```
 
-Lors de l’exécution, le système développe automatiquement la requête afin d’inclure tous les champs :
+À l’exécution, le système développe automatiquement la requête pour inclure tous les champs :
 
 ```graphql
 {
@@ -366,7 +366,7 @@ Si vous créez une variation appelée &quot;Centre de Berlin&quot; (`berlin_cent
 
 Si vous :
 
-* créer différentes balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
+* créez différentes balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
 * et les affecter à la variation de Principal de diverses `City` instances
 
 vous pouvez alors utiliser une requête pour renvoyer les détails de `name` et de `tags` de toutes les entrées balisées comme des Escapades en ville dans le schéma `city`.
@@ -710,7 +710,7 @@ query {
 
 ### Exemple de requête : toutes les villes d’Allemagne ou de Suisse ayant une population comprise entre 400000 et 999999 {#sample-all-cities-d-ch-population}
 
-Ici, une combinaison de champs est filtrée. Un opérateur `AND` (implicite) est utilisé pour sélectionner la plage `population`, tandis qu’un opérateur `OR` (explicite) est utilisé pour sélectionner les villes requises.
+Ici, le filtrage concerne une combinaison de champs. Un opérateur `AND` (implicite) est utilisé pour sélectionner la plage `population`, tandis qu’un opérateur `OR` (explicite) est utilisé pour sélectionner les villes requises.
 
 **Exemple de requête**
 
@@ -1152,7 +1152,7 @@ query {
 
 ## Exemples de requêtes utilisant le projet WKND {#sample-queries-using-wknd-project}
 
-Ces exemples de requêtes sont basés sur le projet WKND. Il comporte les éléments suivants :
+Ces exemples de requêtes sont basés sur le projet WKND. Il possède les caractéristiques suivantes :
 
 * les modèles de fragments de contenu disponibles sous :
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1310,7 +1310,7 @@ Cet exemple de requête interroge :
 }
 ```
 
-### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle unique {#sample-wknd-nested-fragment-single-model}
+### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle unique{#sample-wknd-nested-fragment-single-model}
 
 Cette requête interroge :
 
@@ -1338,7 +1338,7 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle multiple {#sample-wknd-nested-fragment-multiple-model}
+### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle multiple{#sample-wknd-nested-fragment-multiple-model}
 
 #### Type de modèle référencé unique
 
@@ -1394,7 +1394,7 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références de contenu {#sample-wknd-fragment-specific-model-content-reference}
+### Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références de contenu{#sample-wknd-fragment-specific-model-content-reference}
 
 Cette requête possède deux versions :
 
@@ -1446,7 +1446,7 @@ La requête suivante renvoie toutes les références de contenu en utilisant `_r
 
 #### Exemple de requête pour plusieurs fragments de contenu avec pièces jointes {#sample-wknd-multiple-fragments-attachments}
 
-La requête suivante renvoie toutes les `attachments` : champ spécifique (sous-groupe) de type `content-reference`:
+La requête suivante renvoie tous les `attachments`, un champ spécifique (sous-groupe) de type `content-reference` :
 
 >[!NOTE]
 >
@@ -1805,7 +1805,7 @@ Les exemples de requêtes sont basés sur la structure suivante, qui utilise :
 
 ### Exemples de modèles de fragments de contenu (schémas) {#sample-content-fragment-models-schemas}
 
-Pour les exemples de requêtes, vous utilisez les modèles de contenu suivants et leurs interrelations (références ->) :
+Pour les exemples de requêtes, vous utilisez les modèles de contenu suivants, ainsi que leurs interrelations (références ->) :
 
 * [Entreprise](#model-company)
 -> [Personne](#model-person)
@@ -1819,7 +1819,7 @@ Les champs de base définissant l’entreprise sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom de l’entreprise | Texte sur une seule ligne | |
+| Nom de l’entreprise | Texte d’une seule ligne | |
 | PDG | Référence du fragment (unique) | [Personne](#model-person) |
 | Employés | Référence du fragment (champ multiple) | [Personne](#model-person) |
 
@@ -1829,8 +1829,8 @@ Champs définissant une personne, qui peut également être un employé :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom | Texte sur une seule ligne | |
-| Prénom | Texte sur une seule ligne | |
+| Nom | Texte d’une seule ligne | |
+| Prénom | Texte d’une seule ligne | |
 | Distinctions | Référence du fragment (champ multiple) | [Distinction](#model-award) |
 
 #### Distinction {#model-award}
@@ -1839,8 +1839,8 @@ Les champs définissant une distinction sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Raccourci/ID | Texte sur une seule ligne | |
-| Titre | Texte sur une seule ligne | |
+| Raccourci/ID | Texte d’une seule ligne | |
+| Titre | Texte d’une seule ligne | |
 
 #### Ville {#model-city}
 
@@ -1848,8 +1848,8 @@ Les champs permettant de définir une ville sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom | Texte sur une seule ligne | |
-| Pays | Texte sur une seule ligne | |
+| Nom | Texte d’une seule ligne | |
+| Pays | Texte d’une seule ligne | |
 | Population | Nombre | |
 | Catégories | Balises | |
 

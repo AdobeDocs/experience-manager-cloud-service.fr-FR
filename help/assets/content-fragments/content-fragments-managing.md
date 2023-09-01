@@ -2,10 +2,10 @@
 title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 85%
+source-wordcount: '1813'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,11 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 
 >[!NOTE]
 >
->Les fragments de contenu sont stockés sous forme de **ressources**. Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
+>Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
+>
+>Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
+>
+>Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ).
 
 ## Créer des fragments de contenu {#creating-content-fragments}
 

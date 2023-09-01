@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5372'
-ht-degree: 94%
+source-wordcount: '5532'
+ht-degree: 91%
 
 ---
 
@@ -137,6 +137,20 @@ Vous pouvez l’utiliser à votre avantage en améliorant le classement de certa
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
+
+## Configuration de la taille de lot des ressources pour afficher les résultats de recherche {#configure-asset-batch-size}
+
+Les administrateurs peuvent maintenant configurer la taille du lot des ressources qui s’affichent lorsque vous effectuez une recherche. Les résultats de recherche de ressources s’affichent en multiples de la taille de lot configurée lorsque vous faites défiler la page vers le bas pour charger les résultats. Vous pouvez sélectionner les tailles de lot disponibles (200, 500 et 1 000 ressources). Si vous définissez un nombre de lots inférieur, les temps de réponse de la recherche sont plus rapides.
+
+Par exemple, si vous définissez la limite du nombre de résultats sur une taille de lot de 200 ressources, Experience Manager Assets affiche une taille de lot de 200 ressources dans les résultats de recherche lorsque vous commencez à effectuer la recherche. Lorsque vous faites défiler les résultats de recherche vers le bas, le lot suivant de 200 ressources s’affiche. Le processus se poursuit jusqu’à ce que toutes les ressources correspondant à la requête soient affichées.
+
+Pour configurer la taille du lot de ressources, procédez comme suit :
+
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configurations d’Assets]** > **[!UICONTROL Configuration de l’omni-recherche des ressources]**.
+
+1. Sélectionnez la limite du nombre de résultats et cliquez sur **[!UICONTROL Enregistrer]**.
+
+   ![Configuration de la taille de lot des ressources](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## Recherche avancée {#scope}
 

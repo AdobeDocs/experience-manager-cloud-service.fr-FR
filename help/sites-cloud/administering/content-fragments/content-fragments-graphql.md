@@ -3,8 +3,11 @@ title: Diffusion de contenu découplée à l’aide de fragments de contenu avec
 description: Découvrez les concepts de base de la réalisation d’un CMS AEM découplé à l’aide de fragments de contenu avec GraphQL pour la diffusion de contenu découplé.
 feature: Content Fragments, GraphQL API
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 89%
@@ -12,6 +15,12 @@ ht-degree: 89%
 ---
 
 # Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Avec les fragments de contenu et l’API GraphQL, vous pouvez utiliser Adobe Experience Manager (AEM) as a Cloud Service en tant que système de gestion de contenu (CMS) découplé.
 

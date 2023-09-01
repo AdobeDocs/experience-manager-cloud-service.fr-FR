@@ -2,14 +2,16 @@
 title: Présentation des communications as a Cloud Service Forms
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 92%
+source-wordcount: '1475'
+ht-degree: 78%
 
 ---
 
 # Présentation des communications as a Cloud Service AEM Forms {#frequently-asked-questions}
+
+<span class="preview"> [Service DocAssurance](#doc-assurance) est une fonctionnalité de version préliminaire accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). La documentation de la fonctionnalité peut être modifiée.</span>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -157,7 +159,35 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## Types d’API de communication
+
+<span class="preview"> Le service Document Assurance est une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). La documentation de la fonctionnalité peut être modifiée.</span>
+
+## Document Assurance {#doc-assurance}
+
+Le service DocAssurance comprend les API Signature et Encyption :
+
+### API de signature
+
+Les API Signature permettent à votre entreprise de protéger la sécurité et la confidentialité des documents Adobe PDF qu’elle distribue et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seuls les destinataires prévus peuvent modifier les documents. Les fonctions de sécurité étant appliquées au document lui-même, celui-ci reste sécurisé et contrôlé pendant tout son cycle de vie. Un document reste sécurisé au-delà du pare-feu lorsqu’il est téléchargé hors ligne et lorsqu’il est renvoyé à votre entreprise. Vous pouvez accomplir les tâches suivantes à l’aide des API de signature :
+
+* Ajoutez un champ de signature à un document de PDF.
+* Signez le champ de signature spécifié dans un document de PDF.
+* Certifier un document de PDF
+
+### API de chiffrement
+
+Les API Encryption vous permettent de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Un utilisateur autorisé peut déchiffrer le document pour accéder au contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. De même, si un document de PDF est chiffré avec un certificat, l’utilisateur doit déchiffrer le document de PDF avec la clé publique correspondant au certificat (clé privée) utilisé pour chiffrer le document de PDF.
+
+Vous pouvez accomplir ces tâches à l’aide des API Encryption :
+
+* Chiffrez un document de PDF avec un mot de passe.
+* Supprimez le chiffrement par mot de passe d’un document PDF.
+* Récupérez le type de sécurité appliqué à un document de PDF.
+
+Les API de signature et les API de chiffrement sont [API synchrones](#types-of-communications-apis-types).
+
+
+## Types d’API de communication {#types}
 
 Communications fournit des API HTTP pour la génération de documents à la demande et par lots :
 

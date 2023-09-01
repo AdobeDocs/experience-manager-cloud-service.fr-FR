@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service pour configurer les paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
+source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 81%
+source-wordcount: '2669'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +17,7 @@ Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service 
 
 * La journalisation au niveau de l’application AEM.
 * La journalisation de serveur web Apache HTTPD/Dispatcher au niveau Publication.
-* La journalisation du réseau de diffusion de contenu, qui comme son nom l’indique, effectue la journalisation sur le réseau de diffusion de contenu. Cette fonctionnalité est actuellement disponible pour les utilisateurs finaux. Pour rejoindre le programme des premiers adopteurs, envoyez un email à l’adresse **aemcs-cdnlogs-adopter@adobe.com**, notamment le nom de votre organisation et le contexte de votre intérêt pour la fonctionnalité.
+* La journalisation du réseau de diffusion de contenu, qui comme son nom l’indique, effectue la journalisation sur le réseau de diffusion de contenu. Cette fonctionnalité est progressivement déployée auprès des clients début septembre.
 
 ## Journalisation AEM {#aem-logging}
 
@@ -504,10 +504,12 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme d’adoption précoce en cours, envoyez un courrier électronique à l’adresse **aemcs-cdnlogs-adopter@adobe.com**, notamment le nom de votre organisation et le contexte de votre intérêt pour la fonctionnalité.
+>Cette fonctionnalité est progressivement déployée auprès des clients début septembre.
 >
 
 AEM as a Cloud Service permet d’accéder aux journaux CDN, qui sont utiles pour les cas d’utilisation, notamment l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de le définir sur différents modes tels que les informations, les avertissements ou les erreurs.
+
+Notez que la fonction de transfert Splunk ne prend pas encore en charge les journaux CDN.
 
 **Exemple**
 
@@ -600,6 +602,8 @@ Selon le trafic et la quantité d’instructions de journal écrites par Debug, 
 Les clients disposant d’un compte Splunk peuvent demander, via un ticket de service clientèle, que leurs journaux d’AEM as a Cloud Service soient transférés vers l’index approprié. Les données de journalisation sont équivalentes à ce qui est disponible par le biais des téléchargements de journaux de Cloud Manager, mais les clients peuvent trouver pratique d’utiliser les fonctionnalités de requête disponibles dans le produit Splunk.
 
 La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l’utilisation des E/S réseau du client.
+
+Notez que le transfert Splunk ne prend pas encore en charge les journaux CDN.
 
 ### Activation du transfert Splunk {#enabling-splunk-forwarding}
 

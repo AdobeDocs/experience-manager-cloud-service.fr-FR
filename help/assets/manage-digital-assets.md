@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
 workflow-type: tm+mt
-source-wordcount: '4376'
-ht-degree: 99%
+source-wordcount: '4508'
+ht-degree: 96%
 
 ---
 
@@ -76,6 +76,21 @@ Une fois activé, Experience Manager envoie des notifications de ressources en d
 >[!NOTE]
 >
 >Lorsque vous chargez des ressources vers le référentiel, Experience Manager détecte la duplication et vous informe des 100 premières ressources en double.
+
+## Extraction des archives ZIP {#extract-zip-archives}
+
+Sélectionnez les archives ZIP gérées en Experience Manager et extrayez les fichiers directement dans Experience Manager sans les télécharger.
+
+Pour extraire les fichiers ZIP, procédez comme suit :
+
+1. Sélectionnez le type de fichier ZIP.
+1. Cliquez sur le bouton **[!UICONTROL Extraction de l’archive]** dans la barre d’actions.
+1. Sélectionnez le dossier dans lequel vous devez enregistrer les ressources extraites disponibles dans le dossier compressé.
+1. Cliquez sur **[!UICONTROL Suivant]**.
+1. Sélectionnez le comportement approprié pour gérer les conflits de nom de fichier lors de l’extraction. Vous pouvez choisir de créer une version d’une ressource existante, de la remplacer, de conserver les deux ressources dans le dossier de destination ou d’ignorer l’extraction de la nouvelle ressource.
+1. Cliquez sur **[!UICONTROL Extract]**. Démarrage du processus d’extraction de code postal. Une fois le processus terminé, vous pouvez afficher les ressources extraites dans le dossier de destination.
+
+   ![extraction zip](assets/zip-extraction.png)
 
 ## Aperçu des ressources {#previewing-assets}
 

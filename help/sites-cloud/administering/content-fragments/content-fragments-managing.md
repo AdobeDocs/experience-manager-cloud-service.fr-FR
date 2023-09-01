@@ -3,8 +3,11 @@ title: Gérer des fragments de contenu
 description: Découvrez comment utiliser la console Fragments de contenu pour gérer vos fragments de contenu AEM, pour la création de pages ou comme base de votre contenu headless.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2051'
 ht-degree: 75%
@@ -12,6 +15,12 @@ ht-degree: 75%
 ---
 
 # Gérer des fragments de contenu {#managing-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Découvrez comment utiliser la console **Fragments de contenu** pour gérer vos fragments de contenu AEM. Ils peuvent être utilisés pour la création de pages ou comme base de votre contenu headless.
 

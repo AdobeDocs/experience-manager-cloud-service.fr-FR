@@ -4,7 +4,7 @@ description: Découvrez comment configurer la structure d’intégration de trad
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 87%
@@ -23,7 +23,7 @@ Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Tra
 
 >[!TIP]
 >
->Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous commencez à traduire du contenu, voir [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 ## Connexion à un fournisseur de services de traduction {#connecting-to-a-translation-service-provider}
 
@@ -73,7 +73,7 @@ Une configuration unique de la structure contrôle la manière dont le contenu d
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Il est souvent basé sur un site particulier, mais peut également être global.
 1. Fournissez les informations suivantes dans les champs requis, puis cliquez ou appuyez sur **Créer** :
    1. Sélectionnez **Type de configuration** dans la liste déroulante.
-   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la variable **Cloud Services** console et dans les listes déroulantes des propriétés de page.
+   1. Indiquez un **Titre** pour votre configuration. La variable **Titre** identifie la configuration dans la variable **Cloud Service** console et dans les listes déroulantes des propriétés de page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
 1. Dans la fenêtre **Modifier la configuration**, configurez les propriétés sur les onglets **Sites** et **Ressources**, puis cliquez ou appuyez sur **Enregistrer et fermer**.
 
@@ -109,7 +109,7 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
 | Traduire les balises | Activez cette propriété pour traduire les balises associées à la ressource. |
 | Exécuter automatiquement la traduction | Sélectionnez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier ou de définir la portée de la tâche de traduction. |
 | Désactiver Traduction uniquement des champs mis à jour | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
-| Activer les champs de modèle de contenu pour la traduction | L’activation de l’option appliquera le champ **Traduisible** dans les [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) pour déterminer si le champ doit être traduit et crée automatiquement des [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
+| Activer les champs de modèle de contenu pour la traduction | L’activation de l’option appliquera le champ **Traduisible** dans les [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) pour déterminer si le champ doit être traduit et crée automatiquement des [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
 
 ## Configuration des pages pour la traduction {#configuring-pages-for-translation}
 

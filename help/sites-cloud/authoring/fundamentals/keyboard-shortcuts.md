@@ -2,7 +2,7 @@
 title: Raccourcis clavier pour la modification de pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 91%
@@ -11,7 +11,7 @@ ht-degree: 91%
 
 # Raccourcis clavier pour la modification de page {#keyboard-shortcuts-when-editing-pages}
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clavier peuvent être utilisés lors de la modification de pages, d’autres lors de l’[utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et d’autres encore spécifiquement pour la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clavier peuvent être utilisés lors de la modification de pages, d’autres lors de l’[utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et d’autres encore spécifiquement pour la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clav
 >
 >Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
 
-Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs et utilisatrices de bureau lorsqu’ils interagissent dans les [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et certains spécifiquement dans la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs et utilisatrices de bureau lorsqu’ils interagissent dans les [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et certains spécifiquement dans la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

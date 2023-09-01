@@ -4,7 +4,7 @@ description: Découvrez comment les règles de traduction identifient le contenu
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 86%
@@ -17,13 +17,13 @@ Les règles de traduction identifient le contenu à traduire pour les pages, les
 
 >[!TIP]
 >
->Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous commencez à traduire du contenu, voir [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 ## Fragments de contenu et règles de traduction {#content-fragments}
 
 Les règles de traduction décrites dans ce document s’appliquent aux fragments de contenu uniquement si l’option **Activer les champs de modèle de contenu pour la traduction** n’a pas été activée au niveau de la fonction [niveau de configuration de la structure d’intégration de traduction.](integration-framework.md#assets-configuration-properties)
 
-Si l’option **Activer les champs de modèle de contenu pour la traduction** est active, AEM utilisera le champ **Traduisible** dans les [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) pour déterminer si le champ doit être traduit et crée automatiquement des règles de traduction en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées et ne nécessite aucune intervention ni aucune étape supplémentaire.
+Si l’option **Activer les champs de modèle de contenu pour la traduction** est active, AEM utilisera le champ **Traduisible** dans les [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) pour déterminer si le champ doit être traduit et crée automatiquement des règles de traduction en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées et ne nécessite aucune intervention ni aucune étape supplémentaire.
 
 Si vous souhaitez utiliser des règles de traduction pour traduire vos fragments de contenu, l’option **Activer les champs de modèle de contenu pour la traduction** dans la configuration de la structure d’intégration de traduction doit être désactivée et vous devez suivre les étapes décrites ci-dessous pour créer vos règles.
 
@@ -186,7 +186,7 @@ Vous pouvez modifier quatre attributs via l’interface utilisateur :
 
 **`isDeep`** s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. Si la valeur est false, il vérifie uniquement le noeud actif.
 
-Par exemple, les noeuds enfants sont ajoutés à une tâche de traduction même lorsque le noeud parent possède la propriété . `draftOnly` définissez cette variable sur true pour marquer le contenu du brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
+Par exemple, les noeuds enfants sont ajoutés à une tâche de traduction même lorsque le noeud parent possède la propriété . `draftOnly` Définissez cette variable sur true pour marquer le contenu du brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
 Dans l’éditeur, vous pouvez cocher/désélectionner **ls Deep** dans l’onglet **Filtres**.
 

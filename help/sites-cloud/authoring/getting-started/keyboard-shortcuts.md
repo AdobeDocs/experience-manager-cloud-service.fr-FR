@@ -2,7 +2,7 @@
 title: Raccourcis clavier pour les consoles
 description: Gagnez du temps lors de la création grâce à ces raccourcis clavier
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%
@@ -49,17 +49,17 @@ Les touches de modification utilisées pour les raccourcis clavier varient selon
 
 AEM évite les raccourcis courants déjà utilisés par les navigateurs les plus populaires, mais le comportement par défaut du navigateur n’est pas remplacé par les raccourcis AEM.
 
-En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régionaux et toutes les mises en page clavier.
+En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régionaux et toutes les dispositions de clavier.
 
 >[!NOTE]
 >
->Les raccourcis AEM ne remplacent pas le comportement par défaut du navigateur.
+>Les raccourcis d’AEM ne remplacent pas le comportement par défaut du navigateur.
 >
->Si des conflits se produisent entre les raccourcis AEM et de navigateur, les raccourcis AEM ne fonctionneront pas, en raison des fonctionnalités du navigateur.
+>Dans le cas où des conflits doivent se produire entre les raccourcis d’AEM et ceux du navigateur, les raccourcis d’AEM ne fonctionneront pas, laissant la place aux fonctionnalités du navigateur.
 
 >[!CAUTION]
 >
->Les raccourcis clavier AEM peuvent interférer avec les lecteurs d’écran, certaines fonctionnalités de navigateur et d’autres outils d’accessibilité.
+>Les raccourcis clavier d’AEM peuvent interférer avec les lecteurs d’écran, certaines fonctionnalités de navigateur et d’autres outils d’accessibilité.
 >
 >Adobe recommande de [désactiver les raccourcis clavier AEM](#deactivating-keyboard-shortcuts) lors de l’utilisation d’un lecteur d’écran.
 
@@ -69,7 +69,7 @@ AEM propose des raccourcis clavier pour certaines des fonctions courantes (modif
 
 Pour les utilisateurs et utilisatrices qui n’utilisent pas les raccourcis clavier ou qui ont certaines exigences d’accessibilité, tous les raccourcis clavier peuvent être désactivés.
 
-Vous pouvez désactiver les raccourcis clavier à deux endroits :
+Vous pouvez désactiver les raccourcis clavier à deux emplacements :
 
 * [Mes préférences](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
 * Le [menu Aide](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
@@ -84,4 +84,4 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 ## Raccourcis clavier de la console Fragments de contenu {#keyboard-shortcuts-for-the-content-fragments-console}
 
-Certains raccourcis clavier s’appliquent à la [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Certains raccourcis clavier s’appliquent à la [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).

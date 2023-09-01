@@ -2,10 +2,10 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 96%
+source-wordcount: '1991'
+ht-degree: 95%
 
 ---
 
@@ -110,8 +110,8 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 
 ### Création de contenu {#authoring}
 
-* Pour les versions spécifiques à un canal de votre contenu, pensez à utiliser des variations de fragment de contenu. Les variations sont synchronisées avec le gabarit de contenu afin de rationaliser la gestion des changements de contenu.
-* Invitez d’autres producteurs de contenu à passer en revue le contenu et à faire part de leur point de vue à l’aide d’annotations et de commentaires, disponibles dans l’éditeur de fragments de contenu et globalement dans les fragments d’Admin Console des fragments de contenu.
+* Pour les versions spécifiques à un canal de votre contenu, pensez à utiliser des variations de fragment de contenu. Les variations sont synchronisées avec le contenu principal afin de rationaliser la gestion des changements de contenu.
+* Invitez d’autres producteurs de contenu à passer en revue le contenu et à faire part de leurs commentaires.
 * Créez un système efficace qui nécessite le moins d’éléments obligatoires possible. Des éléments obligatoires peuvent bloquer le workflow.
 
 ### Création de contenu global {#localization}
@@ -149,6 +149,6 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [Guides AEM WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) : ce projet GitHub comprend des exemples d’applications qui mettent en évidence l’API AEM GraphQL.
 * [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) : un aperçu complet de l’architecture AEM.
 * [Configuration découplée](/help/headless/introduction.md#getting-started) : une présentation rapide des fonctionnalités découplées AEM pour les utilisateurs qui connaissent déjà AEM.
-* [Créer des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) : documentation technique sur les modèles de fragment de contenu.
-* [Créer des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) : documentation technique sur les fragments de contenu.
+* [Créer des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) : documentation technique sur les modèles de fragment de contenu.
+* [Créer des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) : documentation technique sur les fragments de contenu.
 * [Demander du contenu avec GraphQL](/help/headless/graphql-api/content-fragments.md) : documentation technique sur l’API GraphQL.

@@ -2,7 +2,7 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
+source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 96%
@@ -369,10 +369,10 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
    * [Exemple de requête – Un fragment de ville unique et spécifique](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [Exemple de requête – Toutes les villes avec une variante nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [Activation de la fonctionnalité de fragments de contenu dans l’explorateur de configurations](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-   * [Sortie JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+* [Activation de la fonctionnalité de fragments de contenu dans l’explorateur de configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
+* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
+   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Sortie JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Comprendre le partage des ressources cross-origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors))
 * [Requêtes persistantes GraphQL - Activation de la mise en cache dans Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)

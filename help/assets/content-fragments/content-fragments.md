@@ -2,10 +2,10 @@
 title: Utiliser des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour la création de pages et la diffusion découplée. Comment les utiliser avec MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 91%
+source-wordcount: '2216'
+ht-degree: 88%
 
 ---
 
@@ -30,11 +30,15 @@ Les fragments de contenu contiennent du contenu structuré :
 Les fragments de contenu peuvent également être diffusés au format JSON, à l’aide des fonctionnalités d’exportation du modèle Sling (JSON) des composants principaux d’AEM. Cette forme de diffusion :
 
 * permet d’utiliser le composant pour gérer les éléments d’un fragment à diffuser
-* permet la diffusion en masse, en ajoutant plusieurs composants principaux de fragments de contenu sur la page utilisée pour la diffusion de l’API.
+* permet la diffusion en masse, en ajoutant plusieurs composants principaux de fragments de contenu sur la page utilisée pour la diffusion de l’API
 
 >[!NOTE]
 >
->Les fragments de contenu sont stockés sous la forme de **Ressources**. Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
+>Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
+>
+>Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
+>
+>Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ).
 
 Cette page et les suivantes portent sur les tâches de création, de configuration, de gestion et d’utilisation de vos fragments de contenu :
 
@@ -114,7 +118,7 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 
 Lorsque vous y accédez par le **Ressources** console vous pouvez utiliser MSM et créer des Live Copies pour vos fragments.
 
-Pour plus d’informations, voir [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](/help/assets/reuse-assets-using-msm.md).
+Pour plus d’informations, voir [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](/help/assets/reuse-assets-using-msm.md). Cette option active [héritage](/help/assets/content-fragments/content-fragments-variations.md#inheritance) pour les variations et les champs individuels de vos fragments.
 
 >[!CAUTION]
 >

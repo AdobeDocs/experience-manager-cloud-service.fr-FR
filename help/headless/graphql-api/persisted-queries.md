@@ -3,7 +3,7 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1680'
 ht-degree: 83%
@@ -32,7 +32,7 @@ Par exemple, pour créer une requête persistante spécifique à la configuratio
 
 >[!NOTE]
 >
->Voir [Activation de la fonctionnalité de fragment de contenu dans le navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) pour plus d’informations.
+>Voir [Activation de la fonctionnalité de fragment de contenu dans le navigateur de configuration](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) pour plus d’informations.
 >
 >Les **requêtes persistantes GraphQL** doivent être activées pour la configuration appropriée des sites.
 

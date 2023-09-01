@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3080'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -166,7 +166,7 @@ L’administrateur doit être l’utilisateur qui a installé AEM et préparé l
 
 #### Auteur de contenu {#content-author}
 
-Les auteurs de contenu créent et gèrent le contenu diffusé de manière découplée par AEM. Pour gérer leurs contenus, les auteurs utilisent les fonctionnalités d’AEM, notamment les fragments de contenu et la console Assets.
+Les auteurs de contenu créent et gèrent le contenu diffusé de manière découplée par AEM. Les auteurs de contenu utilisent AEM fonctionnalités telles que l’éditeur de fragments de contenu et diverses consoles pour gérer leur contenu.
 
 Ils doivent garder à l’esprit les bonnes pratiques suivantes.
 
@@ -289,8 +289,8 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [Convention d’affectation de noms](/help/implementing/developing/introduction/naming-conventions.md) – Documentation technique relative aux restrictions d’affectation de noms de pages dans AEM
 * [Multi Site Manager et traduction](/help/sites-cloud/administering/msm-and-translation.md) – Documentation technique sur les puissantes fonctionnalités de traduction d’AEM
 * [Workflows AEM](/help/sites-cloud/authoring/workflows/overview.md) – Documentation technique sur l’automatisation des workflows dans AEM
-* [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) – Documentation technique sur les fragments de contenu.
-* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – Documentation technique sur les modèles de fragment de contenu.
+* [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) – Documentation technique sur les fragments de contenu.
+* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – Documentation technique sur les modèles de fragment de contenu.
 * [Documentation technique GraphQL](https://graphql.org) – La définition de GraphQL (lien externe)
 * [API GraphQL](/help/headless/graphql-api/content-fragments.md) – Documentation technique expliquant comment créer des demandes d’accès et de diffusion de fragments de contenu.
 * [API REST Assets](/help/assets/content-fragments/assets-api-content-fragments.md) – Documentation technique expliquant comment créer et modifier des fragments de contenu (et d’autres ressources).

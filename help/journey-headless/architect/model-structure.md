@@ -2,7 +2,7 @@
 title: En savoir plus sur la création de modèles de fragment de contenu dans AEM
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 84%
@@ -112,23 +112,23 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
 * [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) : cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la navigation et l’exécution d’actions sur les **Modèles de fragment de contenu** dans la console **Général**.
 
-* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Définition de votre modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [Définition de votre modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
 
-      * [Activation ou désactivation d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Activation ou désactivation d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Autorisation de modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Autorisation de modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Suppression d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [Suppression d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
 
-      * [Publication d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [Publication d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
 
-      * [Dépublication d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Dépublication d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-      * [Modèles de fragment de contenu (publiés) verrouillés](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [Modèles de fragment de contenu (publiés) verrouillés](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
 
 * Guides de prise en main
 

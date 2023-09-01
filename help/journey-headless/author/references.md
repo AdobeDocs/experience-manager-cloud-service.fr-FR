@@ -2,9 +2,9 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '712'
 ht-degree: 87%
 
 ---
@@ -35,7 +35,7 @@ Les références sont simplement un mécanisme de connexion de vos ressources, q
 
 Certaines références comportent des types de données dédiés (par exemple, Références de contenu et Références de fragment), tandis que d’autres sont simplement ajoutées comme référence dans un bloc de texte (références de ressources et références ad hoc).
 
-![Fragments de contenu – Références](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Fragments de contenu – Références](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Références du contenu {#content-references}
 
@@ -92,11 +92,7 @@ La définition du modèle de fragment de contenu contrôle :
 
 En utilisant la variable **Arborescence de la structure** de l’éditeur de fragment de contenu, vous pouvez parcourir les fragments référencés par votre fragment, puis parcourir toutes les références qu’ils peuvent contenir. La sélection d’une référence ouvre ce fragment en vue de le modifier.
 
->[!NOTE]
->
->À l’aide des chemins de navigation du panneau principal, vous pouvez revenir à votre point de départ.
-
-![Arborescence de la structure du fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![Arborescence de la structure du fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## Références ad hoc {#adhoc-references}
 
@@ -110,21 +106,21 @@ Maintenant que vous en savez plus sur les références et la structure dans les 
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
 
-      * [Application de la configuration à votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Application de la configuration à votre dossier de ressources](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-      * [Création d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [Création d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Variations – Création de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [Créer des fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [Modèles de fragment de contenu – Propriétés](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [Modèles de fragment de contenu – Propriétés](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * Guides de prise en main
    * [Création d’un dossier de ressources - Configuration découplée](/help/headless/setup/create-assets-folder.md)

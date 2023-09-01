@@ -2,10 +2,10 @@
 title: Exportateur JSON pour Content Services
 description: AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web. Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 89%
 
 AEM Content Services est conçu pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web.
 
-Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
+Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
 
 * des applications sur une seule page ;
 * des applications mobiles natives ;
@@ -29,7 +29,7 @@ Avec AEM, la diffusion s’effectue à l’aide du sélecteur `model` et de l’
 
 `.model.json`
 
-1. Par exemple, une URL telle que :
+1. Par exemple, une URL telle que :
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks.model.json
@@ -47,23 +47,23 @@ Pour ce faire, utilisez le chemin du fragment dans son intégralité (via `jcr:c
 
 Votre page peut contenir un fragment de contenu unique ou plusieurs composants de différents types. Vous pouvez également utiliser des mécanismes tels que des composants de liste pour rechercher automatiquement du contenu pertinent.
 
-* Par exemple, une URL telle que :
+* Par exemple, une URL telle que :
 
-   ```shell
-   http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
+  ```
 
 * Diffusera du contenu tel que :
 
-   ![Modèle JSON du fragment de contenu WKND](assets/json-model-wknd-content-fragment.png)
+  ![Modèle JSON du fragment de contenu WKND](assets/json-model-wknd-content-fragment.png)
 
-   >[!NOTE]
-   >
-   >Vous pouvez [adapter vos propres composants](enabling-json-exporter.md) pour accéder à ces données et les utiliser.
+  >[!NOTE]
+  >
+  >Vous pouvez [adapter vos propres composants](enabling-json-exporter.md) pour accéder à ces données et les utiliser.
 
-   >[!NOTE]
-   >
-   >Bien qu’il ne s’agisse pas d’une implémentation standard, [plusieurs sélecteurs sont pris en charge,](enabling-json-exporter.md#multiple-selectors) mais `model` doit être le premier.
+  >[!NOTE]
+  >
+  >Bien qu’il ne s’agisse pas d’une implémentation standard, [plusieurs sélecteurs sont pris en charge,](enabling-json-exporter.md#multiple-selectors) mais `model` doit être le premier.
 
 ### Informations supplémentaires {#further-information}
 
@@ -73,14 +73,14 @@ Voir également :
    * [API HTTP Assets](/help/assets/developer-reference-material-apis.md)
 * Modèles Sling :
    * [Modèles Sling – Association d’une classe de modèles à un type de ressource depuis la version 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
-* AEM avec JSON :
+* AEM avec JSON :
    * [Activation de l’exportateur JSON pour un composant](enabling-json-exporter.md)
 
 ## Documentation connexe {#related-documentation}
 
 Pour plus d’informations, voir :
 
-* [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)

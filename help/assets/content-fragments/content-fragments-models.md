@@ -2,10 +2,10 @@
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 85%
+source-wordcount: '2937'
+ht-degree: 84%
 
 ---
 
@@ -30,7 +30,12 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
    >
    >Si l’[utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
 
-1. Spécifiez le **Titre du modèle**. Vous pouvez également ajouter des **balises**, une **description** et sélectionner **Activer le modèle** pour [activer le modèle](#enabling-disabling-a-content-fragment-model), si nécessaire.
+1. Spécifiez le **Titre du modèle**.
+Vous pouvez également définir différentes propriétés ; par exemple, ajouter **Balises**, un **Description**, puis sélectionnez **Activer le modèle** to [activer le modèle ;](#enabling-disabling-a-content-fragment-model) si nécessaire.
+
+   >[!NOTE]
+   >
+   >Pour plus d’informations sur la variable **Modèle d’URL d’aperçu par défaut** see [Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
 
    ![titre et description](assets/cfm-models-02.png)
 
@@ -313,6 +318,12 @@ Vous pouvez modifier les **propriétés** d’un modèle de fragment de contenu�
    * **Balises**
    * **Description**
    * **Télécharger l’image**
+   * **Modèle d’URL de prévisualisation par défaut**
+
+     >[!NOTE]
+     >
+     >Cette propriété n’est utilisée que par la variable *new* Éditeur de fragment de contenu. Voir [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) pour plus d’informations.
+
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
 

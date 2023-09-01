@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 75%
@@ -37,7 +37,7 @@ Consultez la vidéo Aperçu de la version de mai 2022 pour obtenir un résumé 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Sites] {#prerelease-features-sites}
 
 * Diverses fonctionnalités GraphQL
-* [Nouvelle console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) optimisée pour une utilisation headless des fragments de contenu
+* [Nouvelle console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) optimisée pour une utilisation headless des fragments de contenu
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 * **Intégrer des formulaires adaptatifs à Microsoft® Power Automate** : vous pouvez désormais configurer un formulaire adaptatif pour exécuter un flux cloud Microsoft® Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client.
 
-* **Assistant de création d’un formulaire adaptatif**: Vous pouvez utiliser un assistant convivial destiné aux entreprises pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
+* **Assistant de création d’un formulaire adaptatif**: vous pouvez utiliser un assistant convivial destiné aux entreprises pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
   ![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png)
 

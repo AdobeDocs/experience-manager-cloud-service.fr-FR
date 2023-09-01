@@ -1,10 +1,13 @@
 ---
 title: Fragments de contenu - Navigateur de configurations
-description: Découvrez comment activer la fonctionnalité Fragment de contenu et GraphQL dans l’explorateur de configurations afin d’utiliser AEM fonctionnalités de diffusion sans interface utilisateur.
+description: Découvrez comment activer la fonctionnalité Fragment de contenu et GraphQL dans l’explorateur de configurations pour utiliser AEM fonctionnalités de diffusion sans interface utilisateur.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 34%
@@ -12,6 +15,12 @@ ht-degree: 34%
 ---
 
 # Fragments de contenu – Explorateur de configurations{#content-fragments-configuration-browser}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Découvrez comment activer certaines fonctionnalités de fragments de contenu dans le navigateur de configurations.
 
@@ -27,7 +36,7 @@ Avant d’utiliser des fragments de contenu, vous devez utiliser la variable **E
 >Si vous n’activez pas les **modèles de fragment de contenu** :
 >
 >* la valeur **Créer** n’est pas disponible pour la création de modèles.
->* vous ne pouvez pas [sélectionnez la configuration Sites pour créer le point de terminaison associé.](/help/headless/graphql-api/graphql-endpoint.md).
+>* vous ne pouvez [sélectionnez la configuration Sites pour créer le point de terminaison associé.](/help/headless/graphql-api/graphql-endpoint.md).
 
 Pour activer la fonctionnalité de fragment de contenu, procédez comme suit :
 
@@ -44,7 +53,7 @@ Pour utiliser certains [Fonctionnalité de fragment de contenu](#creating-a-cont
 
 >[!NOTE]
 >
->[Sous-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (configuration imbriquée dans une autre configuration) sont entièrement prises en charge pour une utilisation avec des fragments de contenu, des modèles de fragment de contenu et des requêtes GraphQL.
+>[Sous-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (une configuration imbriquée dans une autre configuration) sont entièrement prises en charge pour une utilisation avec des fragments de contenu, des modèles de fragment de contenu et des requêtes GraphQL.
 >
 >Il faut juste noter que :
 >
@@ -61,7 +70,7 @@ Pour utiliser certains [Fonctionnalité de fragment de contenu](#creating-a-cont
 1. Utilisez le bouton **Créer** pour ouvrir la boîte de dialogue.
 
    1. Spécifiez un **Titre**.
-   1. Le **Nom** devient le nom du noeud dans le référentiel.
+   1. La variable **Nom** devient le nom du noeud dans le référentiel.
       * Il est généré automatiquement en fonction du titre et ajusté en fonction des [Conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Vous pouvez l’ajuster si nécessaire.
    1. Pour activer leur utilisation, sélectionnez
@@ -78,6 +87,6 @@ Pour utiliser certains [Fonctionnalité de fragment de contenu](#creating-a-cont
 
 Lorsque la configuration **global** est activé pour la fonctionnalité de fragment de contenu, il s’applique à tout dossier de ressources accessible par le biais de la **Ressources** console.
 
-Pour utiliser d’autres configurations (c’est-à-dire, à l’exclusion de global) avec un dossier de ressources comparable, vous devez définir la connexion. Cette connexion s’effectue en sélectionnant la **Configuration** dans le **Cloud Services** de l’onglet **Propriétés du dossier** du dossier approprié.
+Pour utiliser d’autres configurations (c’est-à-dire, à l’exclusion de global) avec un dossier de ressources comparable, vous devez définir la connexion. Cette connexion s’effectue en sélectionnant la **Configuration** dans le **Cloud Service** de la **Propriétés du dossier** du dossier approprié.
 
 ![Appliquer la configuration](assets/cfm-conf-02.png)

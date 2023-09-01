@@ -2,7 +2,7 @@
 title: En savoir plus sur les bases de la modélisation de contenu
 description: Découvrez les bases de la modélisation du contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 95%
@@ -149,12 +149,12 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-   * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+   * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
 * [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) – Cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la création de **Fragments de contenu** dans la console **Ressources**.
 
-* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)

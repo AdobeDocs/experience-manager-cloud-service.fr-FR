@@ -2,7 +2,7 @@
 title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 91%
@@ -34,7 +34,7 @@ L’administrateur AEM et les auteurs peuvent considérer les configurations com
 Des configurations peuvent être créées pour de nombreuses fonctionnalités différentes dans AEM.
 
 * [Segments Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Modèles modifiables](/help/sites-cloud/authoring/features/templates.md)
 * diverses configurations de cloud
 
@@ -75,12 +75,12 @@ Il est très simple de créer une nouvelle configuration dans AEM à l’aide de
    ![Création d’une configuration](assets/configuration-create.png)
 
    * Le **Titre** doit être descriptif.
-   * Le **Nom** devient le nom du noeud dans le référentiel.
+   * La variable **Nom** devient le nom du noeud dans le référentiel.
       * Il est généré automatiquement en fonction du titre et adapté en fonction des [AEM les conventions d’affectation des noms.](naming-conventions.md)
       * Il peut être adapté si nécessaire.
 1. Vérifiez le type de configuration que vous souhaitez autoriser.
    * [Segments Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Modèles modifiables](/help/sites-cloud/authoring/features/templates.md)
    * diverses configurations de cloud
 1. Appuyez ou cliquez sur **Créer**.

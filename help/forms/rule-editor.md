@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '6389'
-ht-degree: 69%
+source-wordcount: '6436'
+ht-degree: 68%
 
 ---
 
@@ -150,9 +150,21 @@ Pour plus d’informations sur la configuration des services dans le modèle de 
 
 Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
 
-La variable **[!UICONTROL Définir la propriété]** type de règle permet de définir la valeur d’une propriété de l’objet spécifié en fonction d’une action de condition.
+La variable **[!UICONTROL Définir la propriété]** type de règle permet de définir la valeur d’une propriété de l’objet spécifié en fonction d’une action de condition. Vous pouvez définir la propriété sur l’une des options suivantes :
+* visible (booléen)
+* dorExclusion (booléen)
+* chartType (String)
+* title (String)
+* enabled (booléen)
+* mandatory (booléen)
+* validationsDisabled (booléen)
+* validateExpMessage (chaîne)
+* value (Number, String, Date)
+* items (List)
+* valid (boolean)
+* errorMessage (String)
 
-Il permet de définir des règles pour ajouter dynamiquement des cases à cocher au formulaire adaptatif. Pour définir une règle, vous pouvez utiliser une fonction personnalisée, un objet de formulaire ou une propriété d’objet.
+Par exemple, il vous permet de définir des règles pour ajouter dynamiquement des cases à cocher au formulaire adaptatif. Pour définir une règle, vous pouvez utiliser une fonction personnalisée, un objet de formulaire ou une propriété d’objet.
 
 ![Définir la propriété](assets/set_property_rule_new.png)
 
@@ -807,7 +819,9 @@ La règle ci-dessous indique comment configurer l’action Appel du service pour
 
 ![Exemple-invoke-services](assets/example-invoke-services.png)
 
-Appeler le service de modèle de données de formulaire à l’aide d’une règle de formulaire adaptatif
+>[!NOTE]
+>
+>Si l’entrée est de type tableau, les champs qui prennent en charge les tableaux sont visibles dans la section déroulante Sortie .
 
 ### Déclenchement de plusieurs actions à l’aide de la règle Lorsque {#triggering-multiple-actions-using-the-when-rule}
 

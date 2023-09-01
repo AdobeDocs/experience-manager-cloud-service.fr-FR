@@ -2,7 +2,7 @@
 title: Facultatif - Comment créer des applications d’une seule page (SPA) avec Adobe Experience Manager (AEM)
 description: Dans cette suite facultative du parcours de développement découplé AEM, vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 48%
@@ -126,5 +126,5 @@ Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondisse
 * [Aperçu sur l’éditeur de SPA](/help/implementing/developing/hybrid/editor-overview.md) : informations détaillées sur le fonctionnement de l’éditeur de SPA
 * [Rendu côté serveur](/help/implementing/developing/hybrid/ssr.md) - Comment configurer le rendu côté serveur pour AEM SPA
 * [Documents de référence SPA](/help/implementing/developing/hybrid/reference-materials.md) - Références de l’API JavaScript et liens vers les AEM Open Source SPA projets GitHub
-* [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) : comment créer des fragments de contenu
+* [Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) : comment créer des fragments de contenu
 * [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) : modèle Maven qui crée un projet Adobe Experience Manager (AEM) minimal qui s’appuie sur des bonnes pratiques pour démarrer votre site web

@@ -2,10 +2,10 @@
 title: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 description: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 85%
+source-wordcount: '191'
+ht-degree: 92%
 
 ---
 
@@ -26,21 +26,9 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment utili
 
 ## Ajout de métadonnées et de balises {#adding-metadata-and-tags}
 
-Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balises :
+Vous pouvez ajouter des métadonnées et des balises à partir du panneau de droite de l’éditeur de fragments de contenu :
 
-* Lors de la première création de votre fragment (à partir de la console **Assets**) :
-
-  ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-* La variable **Variations** de l’éditeur de fragment de contenu vous permet d’ajouter des **Balises** de votre projet :
-
-  ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
-* La variable **Métadonnées** dans l’onglet de l’éditeur de fragment de contenu, vous pouvez ajouter différents champs de métadonnées et des champs prédéfinis. **Balises** de votre projet :
-
-  ![Éditeur de fragment de contenu – Métadonnées](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
-
-   * Vous pouvez également y accéder directement à l’aide de l’option **Propriétés** dans la barre d’outils de la console Ressources.
+![Éditeur de fragment de contenu – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Prochaines étapes {#whats-next}
 
@@ -48,8 +36,8 @@ Vous pouvez maintenant mettre toutes ces connaissances à profit et commencer à
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Métadonnées – propriétés des fragments](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [Métadonnées – propriétés des fragments](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
 * [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

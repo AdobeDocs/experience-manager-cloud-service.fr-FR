@@ -4,16 +4,22 @@ description: Découvrez comment l’éditeur de fragment de contenu utilise la s
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 72%
+source-wordcount: '576'
+ht-degree: 65%
 
 ---
 
 # Texte (Markdown) {#markdown}
 
 Lors du processus de [création](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragments de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire aisément du contenu découplé :
+
+>[!NOTE]
+>
+>Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
+>
+>Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ).
 
 ![Éditeur de balisage](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -31,7 +37,7 @@ Vous pouvez définir :
 
 ## Notation d’en-tête {#heading-notation}
 
-Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Une balise de hachage (#) est utilisée pour un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
+Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Un hashtag (#) est utilisé pour un H1, deux hashtags (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
 
     `## This is an H2`
 

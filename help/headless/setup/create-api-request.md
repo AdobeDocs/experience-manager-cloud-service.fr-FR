@@ -2,7 +2,7 @@
 title: Création d’une requête API - Configuration découplée
 description: Découvrez comment utiliser l’API GraphQL pour une diffusion découplée du contenu du fragment de contenu et l’API REST AEM Assets pour gérer les fragments de contenu.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 58%
@@ -96,6 +96,6 @@ GraphQL peut éviter les requêtes d’API itératives et la sur-diffusion, et p
 
 C’est terminé ! Vous possédez maintenant une compréhension de base de la gestion de contenu découplée dans AEM. Il existe de nombreuses autres ressources où vous pouvez approfondir vos connaissances pour une compréhension complète des fonctionnalités disponibles.
 
-* **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)** – Pour plus d’informations sur la création et la gestion de fragments de contenu
+* **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)** – Pour plus d’informations sur la création et la gestion de fragments de contenu
 * **[Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)** – Pour plus d’informations sur l’accès direct au contenu AEM via l’API HTTP, via des opérations CRUD (création, lecture, mise à jour, suppression)
 * **[API GraphQL](/help/headless/graphql-api/content-fragments.md)** – Pour plus d’informations sur la diffusion découplée de fragments de contenu

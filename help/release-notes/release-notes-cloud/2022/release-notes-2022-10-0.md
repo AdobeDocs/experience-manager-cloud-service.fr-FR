@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 79%
@@ -38,7 +38,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 * La variable [Onglet Personnalisation pour les fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) permet des fonctionnalités de spécification de segmentation à l’éditeur de fragments d’expérience et la possibilité de créer des fragments d’expérience imbriqués dans lesquels des variations d’en-têtes et de pieds de page peuvent être créées pour plusieurs segments. Avant le lancement de cette fonctionnalité, la personnalisation proposée par AEM n’était disponible que pour les pages du site et non pour les fragments d’expérience
 
-* La [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) permet désormais aux utilisateurs et utilisatrices de gérer efficacement les fragments de contenu traduits. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
+* La [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) permet désormais aux utilisateurs et utilisatrices de gérer efficacement les fragments de contenu traduits. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
 
 ![Langues de fragments de contenu](/help/release-notes/assets/cfconsole-languages.png)
 

@@ -2,16 +2,22 @@
 title: Variations – création de contenu de fragment (Ressources - Fragments de contenu)
 description: Découvrez comment les variations peuvent rendre votre contenu découplé dans AEM encore plus flexible en vous permettant de créer du contenu pour un fragment, puis de créer des variantes de ce contenu selon vos besoins.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 77%
+source-wordcount: '2567'
+ht-degree: 74%
 
 ---
 
 # Variations – création de contenu de fragment{#variations-authoring-fragment-content}
 
 Les [variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu AEM car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques ou dans des cas spécifiques, ce qui rend la diffusion de votre contenu découplé encore plus flexible.
+
+>[!NOTE]
+>
+>Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
+>
+>Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ).
 
 À partir de l’onglet **Variations**, vous pouvez :
 
@@ -391,8 +397,33 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
    >[!CAUTION]
    >
    Si, après avoir ajouté une référence à un autre fragment, vous modifiez le format en :
+   >
    * **Texte brut**: la référence est complètement perdue du fragment.
    * **Marquage** : la référence restera intégrée au fragment.
+
+## Héritage {#inheritance}
+
+L’héritage est le mécanisme par lequel le contenu peut être automatiquement envoyé d’un fragment à un autre. Les champs hérités et les variations peuvent être le produit de [Gestion multisite](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+Vous pouvez annuler (puis réactiver) l’héritage. Selon le contexte, cette option peut être disponible pour une variation ou un champ individuel, si le fragment fait partie d’une Live Copy.
+
+![Un fragment de contenu montrant la relation d’héritage](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+Par exemple :
+
+* Annuler l’héritage
+
+  ![Bouton Annuler l’héritage](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* Réactiver l’héritage (si l’héritage est déjà annulé)
+
+  ![Bouton Réactiver l’héritage](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## Gestion des variations {#managing-variations}
 

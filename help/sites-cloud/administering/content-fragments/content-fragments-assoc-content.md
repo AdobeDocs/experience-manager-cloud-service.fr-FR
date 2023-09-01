@@ -3,15 +3,25 @@ title: Contenu associé
 description: Découvrez comment la fonctionnalité de contenu associé pour les fragments de contenu fournit la connexion aux ressources à utiliser (facultativement) avec le fragment, ce qui ajoute une flexibilité supplémentaire à la création de pages et à la diffusion de contenu découplé.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 81%
 
 ---
 
+
 # Contenu associé{#associated-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 La fonctionnalité de contenu associé d’AEM fournit la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu, en [fournissant une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), tout en contribuant à réduire le temps nécessaire à la recherche de la ressource appropriée. Vous bénéficiez ainsi d’une certaine souplesse pour la diffusion de contenu headless.
 
@@ -29,7 +39,7 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
 1. Selon que des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
 
-   * **Associer du contenu** - première collection associée
+   * **Associer du contenu** - la première collection associée
    * **Associer la collection** - les collections associées sont déjà configurées
 
 1. Sélectionnez la collection requise.

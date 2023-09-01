@@ -8,19 +8,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 80%
+source-wordcount: '2021'
+ht-degree: 79%
 
 ---
 
 
-# Fragments de formulaire adaptatif{#adaptive-form-fragments}
+# Fragments de formulaire adaptatif {#adaptive-form-fragments}
 
-Bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnels tels que le nom et l’adresse, les informations relatives à la famille et aux revenus, etc. Les développeurs de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé.
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM as a Cloud Service | Cet article |
 
-Les formulaires adaptatifs fournissent un mécanisme pratique pour créer un segment de formulaire, comme un panneau ou un groupe de champs, une seule fois et pour les réutiliser dans des formulaires adaptatifs. Ces segments réutilisables et autonomes s’appellent des fragments de formulaire adaptatif.
+Bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnels tels que le nom et l’adresse, les informations relatives à la famille et aux revenus, etc. Les développeurs de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé. Les formulaires adaptatifs fournissent un mécanisme pratique pour créer un segment de formulaire, comme un panneau ou un groupe de champs, une seule fois et pour les réutiliser dans des formulaires adaptatifs. Ces segments réutilisables et autonomes s’appellent des fragments de formulaire adaptatif.
+
 
 ## Création d’un fragment {#create-a-fragment}
 
@@ -75,6 +79,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 1. Dans la boîte de dialogue de création de fragment, spécifiez les informations suivantes :
 
    * **Nom** : nom du fragment. La valeur par défaut est le nom de l’élément du panneau. Ce champ est obligatoire.
+
      >[!NOTE]
      >
      >Veillez à spécifier un nom unique pour le fragment. S’il existe déjà un autre fragment portant le même nom, la création du fragment échoue.
@@ -225,9 +230,9 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 
 >[!NOTE]
 >
->Les touches de localisation dans le fragment n’apparaîtront pas dans le fichier XLIFF d’un formulaire adaptatif.
+>Les clés de localisation dans le fragment n’apparaîtront pas dans le fichier XLIFF d’un formulaire adaptatif.
 
-## Points clés à retenir lorsque vous travaillez avec des fragments {#key-points-to-remember-when-working-with-fragments}
+## Points essentiels à respecter lorsque vous utilisez des fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Assurez-vous que le nom du fragment est unique. La création du fragment échoue si un fragment portant le même nom existe déjà.
 * Dans un formulaire adaptatif basé sur XDP, si vous enregistrez un panneau en tant que fragment contenant un autre fragment XDP, le fragment résultant est automatiquement lié au fragment XDP enfant. Dans le cas d’un formulaire adaptatif basé sur XSD, le fragment obtenu est lié à la racine du schéma.

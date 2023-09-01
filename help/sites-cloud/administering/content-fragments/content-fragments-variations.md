@@ -3,8 +3,11 @@ title: Variations – création de contenu de fragment
 description: Les variations permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion headless et la création de pages.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 76%
@@ -12,6 +15,12 @@ ht-degree: 76%
 ---
 
 # Variations – créer du contenu de fragment{#variations-authoring-fragment-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Les [variations](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu AEM, car elles permettent de créer et de modifier des copies du contenu principal pour une utilisation sur des canaux et/ou scénarios spécifiques, ce qui rend aussi bien la création de pages que la diffusion de votre contenu découplé encore plus flexible.
 

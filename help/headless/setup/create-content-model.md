@@ -2,7 +2,7 @@
 title: Création de modèles de fragment de contenu - Configuration découplée
 description: Définissez la structure du contenu que vous allez créer et diffuser à l’aide des fonctionnalités découplées AEM à l’aide des modèles de fragment de contenu.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 95%
@@ -69,4 +69,4 @@ Maintenant que vous avez défini les structures de vos fragments de contenu en c
 
 >[!TIP]
 >
->Pour plus d’informations sur les modèles de fragments de contenu, voir la [documentation sur les modèles de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md).
+>Pour plus d’informations sur les modèles de fragments de contenu, voir la [documentation sur les modèles de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).

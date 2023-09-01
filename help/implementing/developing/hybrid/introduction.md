@@ -2,7 +2,7 @@
 title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 85%
@@ -75,7 +75,7 @@ Plus rapide, fluide et ressemblant davantage à une application native, une SPA,
 
 ### Comment fonctionne une SPA ?  {#how-does-a-spa-work}
 
-L’idée Principale sous-jacente à une SPA est que les appels à un serveur et sa dépendance à ce dernier sont réduits afin de minimiser les retards causés par la latence du serveur, de sorte que le SPA s’approche de la réactivité d’une application native.
+L’idée principale sous-jacente à un SPA est que les appels à un serveur et sa dépendance à ce dernier sont réduits afin de minimiser les retards causés par la latence du serveur, de sorte que le SPA s’approche de la réactivité d’une application native.
 
 Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque vous passez à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
 
@@ -177,7 +177,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 1. Accédez à l’onglet Réseau de l’Inspecteur et rechargez la page.
 
-   Ignorant les demandes d’image, notez que les Principales ressources chargées pour la page sont la page elle-même, CSS, le code JavaScript React, ses dépendances et les données JSON de la page.
+   Ignorant les demandes d’image, notez que les principales ressources chargées pour la page sont la page elle-même, le code CSS, le code JavaScript React, ses dépendances et les données JSON de la page.
 
    ![Activité de réseau du projet SPA WKND](assets/wknd-network.png)
 
@@ -187,7 +187,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
    ![JSON de la page d’accueil du projet SPA WKND](assets/wknd-json.png)
 
-   AEM l’éditeur SPA utilise [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) pour diffuser l’intégralité du contenu de la page en tant que modèle JSON.
+   AEM l’éditeur SPA utilise [AEM Content Services](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-and-content-services) pour diffuser l’intégralité du contenu de la page sous la forme d’un modèle JSON.
 
    En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à la SPA. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page, au paragraphe, au composant, etc.).
 
