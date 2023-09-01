@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: a1686d7796bb1e310b776195bd19df98f6f10650
+source-git-commit: 370d5742065d659f32ec1ff4d4b0fc0a153f71c2
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 35%
+source-wordcount: '315'
+ht-degree: 33%
 
 ---
 
@@ -21,25 +21,26 @@ Vous trouverez ci-dessous un résumé des améliorations continues apportées à
 
 ### Améliorations {#enhancements-13323}
 
-- GRANITE-46784 : Ajouter une option pour désactiver BearerAuthenticationHandler
-- GRANITE-36205 : mettez à jour la version interne de oak vers la dernière version
-- ASSETS-26713 : Touch UI Lien externe vers le nouveau tableau de bord de l’interface utilisateur d’Experience - unifié-shell-intégration et IU optimisée pour les écrans tactiles mis à niveau
-- SKYOPS-63302 : effectuez une mise à niveau com.adobe.granite:com.adobe.granite.auth.saml vers la version 1.0.54
-- GRANITE-46634 : mise à niveau vers le client eventing 1.4.0
-- GRANITE-46788 : Mise à jour des bibliothèques vers Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 et Commons Compress 1.23.0
-- GRANITE-46705 : Mise à jour vers Apache Felix Http Jetty 4.1.14
-- GRANITE-46631 : mise à jour de la version Jackrabbit vers la version 2.20.11
-- SKYOPS-61895 : mise à jour vers Jackrabbit Filevault 3.7.0
+- GRANITE-46784 : Ajoutez une option pour désactiver BearerAuthenticationHandler.
+- GRANITE-36205 : mettez à jour la version interne de oak vers la dernière version.
+- ASSETS-26713 : Touch UI Lien externe vers le nouveau tableau de bord de l’interface utilisateur d’Experience - intégration unifiée-shell et mise à niveau optimisée pour les écrans tactiles.
+- SKYOPS-63302 : effectuez une mise à niveau com.adobe.granite:com.adobe.granite.auth.saml vers la version 1.0.54.
+- GRANITE-46634 : mise à niveau vers le client eventing 1.4.0.
+- GRANITE-46788 : Mise à jour des bibliothèques vers Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 et Commons Compress 1.23.0.
+- GRANITE-46705 : Mise à jour vers Apache Felix Http Jetty 4.1.14.
+- GRANITE-46631 : mettez à jour la version Jackrabbit vers 2.20.11.
+- SKYOPS-61895 : mise à jour vers Jackrabbit Filevault 3.7.0.
 
 ### Problèmes résolus {#fixed-issues-13323}
 
-- SKYOPS-63290 : correction d’une évolution incorrecte des compartiments
-- SKYOPS-54607 : calcul de la charge du serveur de l’outil de limitation de vitesse incorrect pour une requête qui a échoué.
-- ASSETS-27648 : ContentModelIT ne parvient pas à lire les fichiers d’exclusion d’autres lots
+- ASSETS-28461 : la visionneuse cloud Doc ne fonctionne pas pour les PDF, correction à partir de 13239.
+- SKYOPS-63290 : correction d’une évolution incorrecte des compartiments.
+- SKYOPS-54607 : le calcul de la charge du serveur de l’outil de référence n’est pas correct pour une requête qui a échoué.
+- ASSETS-27648 : ContentModelIT ne parvient pas à lire les fichiers d’exclusion d’autres lots.
 - GRANITE-43744 : L’authentificateur Sling ne fonctionne pas correctement en cas de configuration incorrecte avec l’exigence d’authentification et le chemin d’accès Vanity.
-- GRANITE-46419 : problème d’intégration AEM avec l’Idp Auth0
-- GRANITE-46292 : la configuration SAML Okta ne fonctionne pas après la mise à jour AEM Cloud
-- GRANITE-47059 : Suppression du lot SSL Granite Jetty
+- GRANITE-46419 : problème d’intégration AEM avec l’Idp Auth0.
+- GRANITE-46292 : la configuration SAML Okta ne fonctionne pas après la mise à jour d’AEM Cloud.
+- GRANITE-47059 : Supprimez le lot SSL Granite Jetty.
 
 ### Problèmes connus {#known-issues-13323}
 
