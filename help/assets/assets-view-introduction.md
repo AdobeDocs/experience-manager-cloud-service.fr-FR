@@ -1,16 +1,16 @@
 ---
-title: En quoi la nouvelle interface utilisateur d’AEM Assets ou la nouvelle vue Assets d’AEM vous bénéficient-elles ?
-description: Découvrez les principaux avantages de la nouvelle interface utilisateur d’AEM Assets ou de la nouvelle vue Assets dans AEM. Adobe, qui tire parti de son expertise en matière d’autonomisation des professionnels et professionnelles du marketing et de la création, propose aujourd’hui une nouvelle expérience utilisateur révolutionnaire.
+title: En quoi la vue Assets dans AEM vous est-elle bénéfique ?
+description: En savoir plus sur les principaux avantages de la vue Assets dans AEM. Adobe, qui tire parti de son expertise en matière d’autonomisation des professionnels et professionnelles du marketing et de la création, propose aujourd’hui une nouvelle expérience utilisateur révolutionnaire.
 mini-toc-levels: 3
-source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
+source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 66%
+source-wordcount: '1079'
+ht-degree: 79%
 
 ---
 
 
-# Présentation de la nouvelle interface utilisateur d’AEM Assets {#assets-view}
+# Présentation de la vue Assets {#assets-view}
 
 ![Déploiment d’Assets Essentials.](assets/banner-image.jpg)
 
@@ -18,10 +18,10 @@ Dans le paysage numérique actuel, où la création et la diffusion de contenu e
 
 Pour en savoir plus sur les expériences personnalisées disponibles pour Assets as a Cloud Service, voir [Présentation d’Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
-## Comment accéder à la nouvelle interface utilisateur AEM Assets ? {#access-assets-view}
+## Comment accéder à la vue Assets ? {#access-assets-view}
 
-Vous pouvez accéder à la nouvelle interface utilisateur d’AEM Assets ou à la nouvelle vue AEM Assets comme suit :
-![Présentation de My Workspace](assets/assets-view.png)
+Vous pouvez accéder à la vue Assets de la manière suivante :
+![Vue d’ensemble de Mon espace de travail.](assets/assets-view.png)
 
 <!--
 
@@ -45,9 +45,9 @@ Vous pouvez accéder à la nouvelle interface utilisateur d’AEM Assets ou à l
 
     -->
 
-## Pourquoi la nouvelle vue AEM Assets ?
+## À quoi sert la vue Assets ?
 
-La nouvelle interface utilisateur d’AEM Assets offre les avantages clés suivants, qui ne sont pas disponibles dans la vue Admin :
+La vue Assets offre les avantages clés suivants qui ne sont pas disponibles dans la vue Admin :
 
 * [Tableau de bord Mon espace de travail offrant des expériences rationalisées](#my-workspace-for-streamlined-experience)
 * [Approche axée sur la recherche en priorité pour une efficacité accrue](#search-first)
@@ -59,7 +59,7 @@ La nouvelle interface utilisateur d’AEM Assets offre les avantages clés suiva
 
 ### Tableau de bord Mon espace de travail offrant des expériences rationalisées {#my-workspace-for-streamlined-experience}
 
-Découvrez une solution de gestion des ressources numériques qui comprend les divers besoins des différents rôles de l’entreprise. La nouvelle vue d’interface utilisateur d’AEM Assets, très élégante, donne la priorité à la facilité d’utilisation et à la vitesse, en fonction des préférences visuelles des marketeurs et des espaces de travail sans encombre. Grâce au tableau de bord Mon espace de travail personnalisé en fonction de la personne qui l’utilise, les spécialistes du marketing peuvent rapidement trouver, prévisualiser, modifier, gérer et diffuser des ressources avec une efficacité remarquable. Dites adieu aux interminables heures passées à rechercher des ressources spécifiques. Nous vous proposons aujourd’hui une expérience simplifiée qui met à votre portée tout ce dont vous avez besoin.
+Découvrez une solution de gestion des ressources numériques qui comprend les divers besoins des différents rôles de l’entreprise. La vue sélectionnée des ressources donne la priorité à la facilité d’utilisation et à la vitesse, en fonction des préférences des marketeurs en matière d’attrait visuel et d’espaces de travail encombrants. Grâce au tableau de bord Mon espace de travail personnalisé en fonction de la personne qui l’utilise, les spécialistes du marketing peuvent rapidement trouver, prévisualiser, modifier, gérer et diffuser des ressources avec une efficacité remarquable. Dites adieu aux interminables heures passées à rechercher des ressources spécifiques. Nous vous proposons aujourd’hui une expérience simplifiée qui met à votre portée tout ce dont vous avez besoin.
 
 ![Vue d’ensemble de Mon espace de travail.](assets/my-workspace-demo.gif)
 
@@ -67,7 +67,7 @@ Découvrez une solution de gestion des ressources numériques qui comprend les d
 
 ### Insights pour la prise de décisions pilotées par les données {#insights-data}
 
-Pour suivre la vitesse du contenu, il est essentiel de pouvoir tirer parti d’informations exploitables. La nouvelle expérience de l’interface utilisateur d’AEM Assets offre des informations avancées dans My Workspace, fournissant des données précieuses sur les performances des ressources, l’utilisation de l’audience et les engagements. Les personnes spécialistes du marketing peuvent prendre des décisions basées sur les données, optimiser les stratégies de contenu et affiner leur diffusion en aval pour obtenir des résultats optimaux. Grâce à l’accès à des informations pertinentes, les entreprises ont une longueur d’avance sur la concurrence et génèrent des résultats exceptionnels.
+Pour suivre la vitesse du contenu, il est essentiel de pouvoir tirer parti d’informations exploitables. La vue Ressources offre des informations avancées dans My Workspace, fournissant des données précieuses sur les performances des ressources, l’utilisation de l’audience et les engagements. Les personnes spécialistes du marketing peuvent prendre des décisions basées sur les données, optimiser les stratégies de contenu et affiner leur diffusion en aval pour obtenir des résultats optimaux. Grâce à l’accès à des informations pertinentes, les entreprises ont une longueur d’avance sur la concurrence et génèrent des résultats exceptionnels.
 
 ![Vue d’ensemble d’Insights.](assets/insights-overview.gif)
 
@@ -77,7 +77,7 @@ Pour suivre la vitesse du contenu, il est essentiel de pouvoir tirer parti d’i
 
 La nouvelle expérience fournit un solide ensemble de fonctionnalités de collaboration, notamment la modification en temps réel avec des fonctionnalités Adobe Photoshop intégrées, des contrôles de version et des outils d’annotation. Ainsi, la collaboration est transparente entre les équipes de conception, de création, de valorisation de marque et de marketing, ce qui leur permet de surmonter les goulets d’étranglement et d’accélérer le processus des opérations marketing. Les spécialistes du marketing disposent désormais d’outils puissants pour accélérer la livraison des projets et accroître leur productivité globale.
 
-Regardez cette vidéo pour comprendre la puissance de la nouvelle intégration de l’interface utilisateur d’AEM Assets avec Adobe Photoshop Express :
+Regardez cette vidéo pour comprendre la puissance de l’intégration de la vue Assets à Adobe Photoshop Express :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
@@ -87,7 +87,7 @@ Les prochaines versions d’Assets as a Cloud Service incluraient également [In
 
 ### Chargements de dossiers pour la configuration de la structure hiérarchique de votre organisation {#folder-uploads}
 
-Configurez rapidement une structure de dossiers pour votre organisation à l’aide de la nouvelle interface utilisateur d’AEM Assets en chargeant les dossiers qui existent sur votre système de fichiers local. Il n’est pas nécessaire de créer des dossiers sous le dossier racine, puis de charger manuellement les ressources dans ces dossiers afin de conserver la structure hiérarchique logique. Tous les dossiers et ressources situés sous le dossier racine sont automatiquement chargés vers Experience Manager Assets.
+Configurez rapidement une structure de dossiers pour votre organisation à l’aide de la vue Assets en chargeant les dossiers qui existent sur votre système de fichiers local. Il n’est pas nécessaire de créer des dossiers sous le dossier racine, puis de charger manuellement les ressources dans ces dossiers afin de conserver la structure hiérarchique logique. Tous les dossiers et ressources situés sous le dossier racine sont automatiquement chargés vers Experience Manager Assets.
 
 ![Chargement des dossiers.](assets/folder-uploads.gif)
 
@@ -101,7 +101,7 @@ Déverrouillez tout le potentiel de la bibliothèque de ressources numériques d
 
 ### Abonnement au contenu du référentiel pour une gestion efficace des ressources {#subscribe-content}
 
-La nouvelle interface utilisateur d’AEM Assets permet de surveiller les opérations effectuées sur les ressources, les dossiers ou les collections disponibles dans le référentiel. Pour recevoir les notifications, vous devez sélectionner le contenu et vous y abonner. Vous pouvez également configurer les types d’événements, tels que la suppression de votre contenu abonné, les modifications apportées au contenu abonné, etc. Les notifications vous sont alors envoyées uniquement pour ces types d’événements.
+La vue Assets permet de surveiller les opérations effectuées sur les ressources, dossiers ou collections disponibles dans le référentiel. Pour recevoir les notifications, vous devez sélectionner le contenu et vous y abonner. Vous pouvez également configurer les types d’événements, tels que la suppression de votre contenu abonné, les modifications apportées au contenu abonné, etc. Les notifications vous sont alors envoyées uniquement pour ces types d’événements.
 
 ![Recevoir des notifications](assets/notifications.gif)
 
@@ -109,22 +109,22 @@ La nouvelle interface utilisateur d’AEM Assets permet de surveiller les opéra
 
 ### Suppression progressive des ressources pour un meilleur contrôle par les personnes administratrices {#soft-delete-assets}
 
-Le dossier Corbeille disponible dans la nouvelle interface utilisateur d’AEM Assets répertorie les ressources supprimées du dossier Assets racine. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à l’emplacement d’origine ou la supprimer définitivement. Vous pouvez également spécifier un mot-clé ou appliquer des filtres standard ou personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille.
+Le dossier Corbeille disponible dans la vue Assets répertorie les ressources supprimées du dossier Ressources racine. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à l’emplacement d’origine ou la supprimer définitivement. Vous pouvez également spécifier un mot-clé ou appliquer des filtres standard ou personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille.
 
 ![Effectuer une suppression progressive](assets/soft-delete.gif)
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
 
-En plus de ces fonctionnalités, la nouvelle interface utilisateur d’AEM Assets vous permet d’exécuter les fonctionnalités suivantes qui ne sont pas disponibles dans la vue d’administration :
+En plus de ces fonctionnalités, la vue Assets vous permet d’exécuter les fonctionnalités suivantes qui ne sont pas disponibles dans la vue Admin :
 
 * Charger la nouvelle version d’une ressource portant un nom différent, depuis votre système de fichiers local vers le référentiel de ressources. La ressource chargée est disponible sous la forme d’une nouvelle version portant le même nom que la ressource d’origine.
 
 * Renommez les ressources et les dossiers disponibles dans le référentiel.
 
-La nouvelle interface utilisateur d’AEM Assets est conçue pour rationaliser les workflows, favoriser la collaboration et accélérer la diffusion des ressources. En adoptant la vitesse du contenu, les personnes spécialisées dans le marketing peuvent exploiter tout le potentiel de leurs ressources numériques et libérer leur créativité comme jamais auparavant.
+La vue Assets est conçue pour rationaliser les workflows, favoriser la collaboration et accélérer la diffusion des ressources. En adoptant la vitesse du contenu, les personnes spécialisées dans le marketing peuvent exploiter tout le potentiel de leurs ressources numériques et libérer leur créativité comme jamais auparavant.
 
 
-Utilisez ces liens pour commencer rapidement à utiliser la nouvelle interface utilisateur d’AEM Assets :
+Utilisez ces liens pour commencer rapidement à utiliser la vue Assets :
 
 * [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
 * [Prise en main de la vue Assets](/help/assets/get-started-assets-view.md)
