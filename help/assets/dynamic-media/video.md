@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 3203e79d1dd083d13d9357b21040dfa88194c4db
+source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
 workflow-type: tm+mt
-source-wordcount: '9445'
+source-wordcount: '9442'
 ht-degree: 64%
 
 ---
@@ -576,7 +576,6 @@ Voici quelques-uns des cas d’utilisation à prendre en compte pour l’ajout d
 | **Sous-titres** | Prise en charge de plusieurs langues |
 |  | Texte descriptif pour l’accessibilité |
 | **Traces audio** | Prise en charge de plusieurs langues |
-|  | Stéréo ou multicanal (son entouré) |
 |  | Suivi des commentaires |
 |  | Audio descriptif |
 
@@ -669,7 +668,7 @@ Dans le cas où vous avez configuré Dynamic Media pour une publication immédia
 
 >[!CAUTION]
 >
->Lorsque vous téléchargez des fichiers de sous-titre ou des fichiers audio vers une vidéo déjà publiée, ces fichiers sont supprimés si vous [*retraiter*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) la vidéo. Seul le son d’origine de la vidéo reste intact. Dans ce cas, vous devez charger à nouveau les fichiers de sous-titre et de suivi audio dans la vidéo.
+>Lorsque vous téléchargez des fichiers de sous-titre ou des fichiers audio vers une vidéo publiée ou non, les fichiers sont supprimés si vous [*retraiter*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) la vidéo. Seul le son d’origine de la vidéo reste intact. Dans ce cas, vous devez charger à nouveau les fichiers de sous-titre et de suivi audio dans la vidéo.
 
 #### Ajout de plusieurs sous-titres à une vidéo contenant une URL existante avec le modificateur de sous-titres
 
