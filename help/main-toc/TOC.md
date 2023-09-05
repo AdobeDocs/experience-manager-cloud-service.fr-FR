@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
 workflow-type: tm+mt
-source-wordcount: '4253'
+source-wordcount: '4260'
 ht-degree: 93%
 
 ---
@@ -516,6 +516,7 @@ ht-degree: 93%
       + [Ajout de ressources Dynamic Media à des pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [Intégration de la visionneuse de vidéos ou d’images Dynamic dans une page web](/help/assets/dynamic-media/embed-code.md)
       + [Liaison d’URL à votre application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+      + [Rapport de demande d’erreur pour les URL de diffusion en échec](/help/assets/dynamic-media/reporting-dm.md)
       + [Utilisation de jeux de règles de transformation d’URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Publication de ressources Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Utilisation de la publication sélective dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
