@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bb15e840071279dbdf8bd2bfe89d59c067898aca
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4253'
 ht-degree: 93%
 
 ---
@@ -570,6 +570,7 @@ ht-degree: 93%
          + [Intégrer AEM Forms as a Cloud Service à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Intégrer un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporer un formulaire adaptatif dans une page AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [Incorporer un formulaire adaptatif basé sur des composants principaux à une page web externe](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + Modèle de données de formulaire {#use-form-data-model}
          + [Connecter vos sources de données à Cloud Service](/help/forms/data-integration.md)
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
@@ -583,20 +584,19 @@ ht-degree: 93%
    + Formulaires adaptatifs {#adaptive-forms-authoring}
       + [Création d’un formulaire adaptatif](/help/forms/create-an-adaptive-form.md)
       + [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + Création d’un formulaire adaptatif - Composants principaux {#authoring-adaptive-forms-core-components}
+      + Composants principaux {#authoring-adaptive-forms-core-components}
          + Création d’un formulaire adaptatif {#create-an-adaptive-form-on-forms-cs}
             + [Création d’un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)
             + [Création d’un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments-core-components.md)
             + [Création de thèmes pour un formulaire adaptatif - Composants principaux](/help/forms/using-themes-in-core-components.md)
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
-            + [Créer un formulaire adaptatif - Composants principaux dans une page AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Utilisation de la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configuration de la page de redirection ou du message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Création de formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
             + [Configuration de l’action Envoyer pour un formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)
             + [Utilisation de Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + Création d’un formulaire adaptatif - Composants de base {#authoring-adaptive-forms-foundation-components}
+      + Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)
             + [Conversion d’un formulaire PDF existant en formulaire adaptatif](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=fr)
