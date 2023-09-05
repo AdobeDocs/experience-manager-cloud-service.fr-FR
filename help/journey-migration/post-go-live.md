@@ -2,10 +2,10 @@
 title: Post-activation
 description: Découvrez comment surveiller les problèmes et améliorer les performances
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
+source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 74%
+source-wordcount: '483'
+ht-degree: 73%
 
 ---
 
@@ -51,7 +51,7 @@ Voir [Développement avec le CRXDE Lite](/help/implementing/developing/tools/crx
 
 Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
-Voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) pour savoir comment accéder aux journaux et les gérer via l’interface utilisateur ou à partir de l’API via Cloud Manager.
+Voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) pour savoir comment accéder aux journaux et les gérer via l’interface utilisateur ou à partir de l’API au moyen de Cloud Manager.
 
 ## Contacter l’assistance {#contacting-support}
 
