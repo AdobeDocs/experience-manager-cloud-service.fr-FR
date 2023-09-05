@@ -4,9 +4,9 @@ description: Découvrez comment demander un rapport d’erreur pour les URL de d
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
+source-git-commit: 7ce15cc755c9db589001d543c16312096d88bcf0
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '273'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Demander un rapport d’erreur pour les URL de diffusion Dynamic Media qui échouent
 
-Vous pouvez désormais demander un rapport d’erreur qui identifie les URL Dynamic Media qui ont échoué au moment de la diffusion. Le rapport est un regroupement de données sur cinq jours, disponible au format CSV. Le rapport d’erreur contient les informations suivantes :
+Vous pouvez demander un rapport d’erreur qui identifie les URL Dynamic Media qui ont échoué au moment de la diffusion. Le rapport est un regroupement de données allant jusqu’à cinq jours, disponible au format CSV. Le rapport d’erreur contient les informations suivantes :
 
 * URL de diffusion Dynamic Media en échec : une URL en échec est une URL générée par Dynamic Media qui ne peut produire aucun contenu au moment de la diffusion.
 * URL du référent : URL du référent à partir de laquelle l’URL de diffusion ayant échoué est appelée.
@@ -26,15 +26,11 @@ Vous pouvez demander un rapport d’erreur une fois par mois pour une société 
 
 **Pour demander un rapport d’erreur pour les URL de diffusion Dynamic Media qui échouent :**
 
-1. [Envoyez un email à reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) par le nom de la société.
+1. [Envoyez un email à reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) par le nom de la société associée à votre compte Dynamic Media.
 
-   Pour connaître le nom de l’entreprise associé à votre compte Dynamic Media Adobe, voir [Configuration Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr#configuring-dynamic-media-cloud-services) dans Adobe Experience Manager (AEM) **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]**.
+   Si vous ne connaissez pas le nom de l’entreprise, reportez-vous à la section [Configuration Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr#configuring-dynamic-media-cloud-services) page **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuration de Dynamic Media]**. Sur la page du navigateur de configuration Dynamic Media, cliquez sur **[!UICONTROL global]**, sélectionnez la variable *[Dynamic_Media_folder_icon]* , puis sélectionnez **[!UICONTROL Modifier]**. Vous devez disposer des droits d’administrateur dans AEM pour accéder à la page de configuration de Dynamic Media.
 
-
-   >[!NOTE]
-   >
-   >Vous devez disposer de droits d’administrateur dans AEM pour accéder à **[!UICONTROL Configuration Dynamic Media]** informations dans AEM **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]**.
-
+   ![Accès à la page Configuration de Dynamic Media .](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
 
 
 
