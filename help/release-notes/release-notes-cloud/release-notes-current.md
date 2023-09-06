@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e75c957e8e791ed991117f5cd54012c3a24a2958
+source-git-commit: 555873b15e3a748c95893a371925d3ab6e87ae67
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1934'
 ht-degree: 13%
 
 ---
@@ -144,9 +144,8 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[Protect de vos documents avec les API DocAssurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de protéger la sécurité et la confidentialité des documents Adobe PDF qu’elle distribue et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seuls les destinataires prévus peuvent modifier les documents.
 
-  <br> Vous pouvez envoyer un courrier électronique à partir de votre adresse électronique officielle à `aem-forms-early-adopter-program@adobe.com`  pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.  <br>  <br>
-
-
+      Vous pouvez écrire sur &quot;aem-forms-early-adopter-program@adobe.com&quot; à partir de votre ID de courrier électronique officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.
+  
 * **[Forms adaptatif sans affichage](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr)**: utilisez le Forms adaptatif sans affichage pour permettre aux développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs via les API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
 
    * créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
