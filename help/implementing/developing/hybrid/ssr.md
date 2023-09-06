@@ -2,10 +2,10 @@
 title: SPA et rendu côté serveur (SSR)
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 55%
+source-wordcount: '1518'
+ht-degree: 54%
 
 ---
 
@@ -48,6 +48,10 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 >Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Cela permet d’obtenir des modèles de cycle de vie de développement de systèmes classiques avec différentes versions d’une application unique déployée dans différents environnements. Voir [CI/CD pour les applications App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) pour plus d’informations.
 >
 >Un espace de travail distinct n’est pas nécessaire pour chaque instance (création, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
+
+>[!NOTE]
+>
+>Cloud Manager ne prend pas en charge le déploiement vers Adobe I/O Runtime. Par conséquent, votre propre infrastructure doit être configurée pour déployer le code SSR vers Adobe I/O Runtime.
 
 ## Configuration du moteur de rendu distant {#remote-content-renderer-configuration}
 
@@ -160,7 +164,7 @@ Ce service est utilisé en interne par le servlet [RemoteContentRendererRequestH
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-Le `RemoteContentRendererRequestHandlerServlet` est utilisé pour définir la configuration de la requête par programmation. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implémentation du gestionnaire de requêtes par défaut fournie, vous permet de créer plusieurs configurations OSGi afin que vous puissiez mapper un emplacement de la structure de contenu à un point de terminaison distant.
+La variable `RemoteContentRendererRequestHandlerServlet` est utilisé pour définir la configuration de la requête par programmation. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implémentation du gestionnaire de requêtes par défaut fournie, vous permet de créer plusieurs configurations OSGi afin que vous puissiez mapper un emplacement de la structure de contenu à un point de terminaison distant.
 
 Pour ajouter un gestionnaire de requêtes personnalisé, implémentez l’interface de `RemoteContentRendererRequestHandler`. Veillez à définir la propriété du composant `Constants.SERVICE_RANKING` sur un nombre entier supérieur à 100, qui correspond au classement du servlet `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -181,7 +185,7 @@ La configuration du gestionnaire par défaut doit être établie comme décrit d
 
 Effectuez une récupération de servlet et renvoyez du contenu injecté dans la page :
 
-1. Assurez-vous que votre serveur distant est accessible.
+1. Vérifiez que votre serveur distant est accessible.
 1. Ajoutez l’un des fragments de code suivants au modèle HTL d’un composant AEM.
 1. Vous pouvez éventuellement créer ou modifier les configurations OSGi.
 1. Parcourir le contenu de votre site.
