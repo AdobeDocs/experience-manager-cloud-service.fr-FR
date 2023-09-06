@@ -3,7 +3,7 @@ title: Mises à jour de la version d’AEM
 description: Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) pour conserver vos projets sur la dernière version.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
+source-git-commit: 7cdbda468221c42325a957131c6817c9f85a574a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 29%
@@ -55,28 +55,22 @@ De même, si une mise à jour automatisée d’un environnement de développemen
 
 ## Bonnes pratiques {#best-practices}
 
-* 
-   * **Utilisation de l’environnement d’évaluation**
-   * Utilisez un environnement différent (pas l’environnement intermédiaire) pour de longs cycles AQ/UAT.
-   * Une fois le test d’intégrité terminé sur l’évaluation, déplacez-le pour le vérifier sur l’environnement de production.
+* **Utilisation de l’environnement d’évaluation**
+* Utilisez un environnement différent (pas l’environnement intermédiaire) pour de longs cycles AQ/UAT.
+* Une fois le test d’intégrité terminé sur l’évaluation, déplacez-le pour le vérifier sur l’environnement de production.
 
-* 
-   * **Pipeline de production**
-   * Pause avant le déploiement en production.
-   * Annuler le pipeline après un déploiement dans l’environnement intermédiaire indique que le code est &quot;un jeton&quot; et qu’il ne s’agit pas d’un candidat valide pour la production, reportez-vous à la section [Configuration d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+* **Pipeline de production**
+* Pause avant le déploiement en production.
+* Annuler le pipeline après un déploiement dans l’environnement intermédiaire indique que le code est &quot;un jeton&quot; et qu’il ne s’agit pas d’un candidat valide pour la production, reportez-vous à la section [Configuration d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
-* 
-   * **Pipeline hors production**
+* **Pipeline hors production**
 * Configurer [Pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* 
-   * Accélérer la vitesse/fréquence de diffusion pour les échecs de pipeline de production.  Identifiez les problèmes dans les pipelines non prod en activant les tests fonctionnels du produit, les tests fonctionnels personnalisés et les tests d’interface utilisateur personnalisés.
+* Accélérer la vitesse/fréquence de diffusion pour les échecs de pipeline de production.  Identifiez les problèmes dans les pipelines non prod en activant les tests fonctionnels du produit, les tests fonctionnels personnalisés et les tests d’interface utilisateur personnalisés.
 
-* 
-   * **Copie de contenu**
-   * Utilisation [Copie de contenu](/help/implementing/developing/tools/content-copy.md) pour déplacer des visionneuses de contenu similaires vers un environnement autre que prod.
+* **Copie de contenu**
+* Utilisation [Copie de contenu](/help/implementing/developing/tools/content-copy.md) pour déplacer des visionneuses de contenu similaires vers un environnement autre que prod.
 
-* 
-   * **Tests fonctionnels automatisés**
+* **Tests fonctionnels automatisés**
 * Incluez des tests automatisés dans votre pipeline pour tester les fonctionnalités critiques.
 * [Tests fonctionnels du client](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) et [Tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) bloquent, s’ils échouent, AEM version ne sera pas déployée.
 
@@ -90,4 +84,4 @@ Dans la plupart des cas, les mises à jour n’entraînent aucune interruption, 
 
 Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. Dans un [déploiement en continu,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) la nouvelle version d’AEM contient sa propre version `/libs` (référentiel non modifiable basé sur TarMK), distinct de l’ancienne version d’AEM, bien que les deux fassent référence à un référentiel modifiable partagé basé sur DocumentMK qui contient des zones comme `/content` , `/conf` , `/etc` et autres.
 
-Parce que les anciennes et les nouvelles versions ont leurs propres versions de `/libs`, ils peuvent être principaux pendant la mise à jour en continu et prendre en charge le trafic jusqu’à ce que l’ancien soit complètement remplacé par le nouveau.
+Parce que les anciennes et les nouvelles versions ont leurs propres versions de `/libs`, ils peuvent tous deux être actifs pendant la mise à jour en continu et prendre en charge le trafic jusqu’à ce que l’ancien soit complètement remplacé par le nouveau.
