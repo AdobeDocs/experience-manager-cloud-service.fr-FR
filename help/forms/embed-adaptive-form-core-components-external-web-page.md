@@ -4,10 +4,10 @@ description: Découvrez comment incorporer un formulaire adaptatif dans une page
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 60%
+source-wordcount: '979'
+ht-degree: 61%
 
 ---
 
@@ -99,14 +99,12 @@ Pour incorporer le formulaire adaptatif :
 
 Le formulaire adaptatif est incorporé à la page web. Observez ce qui suit dans le formulaire adaptatif incorporé :
 
-* L’en-tête et le pied de page du formulaire adaptatif d’origine ne sont pas inclus dans le formulaire incorporé.
 * Les brouillons et les formulaires envoyés sont disponibles dans l’onglet Brouillons et envois du portail des formulaires.
 * L’action Envoyer configurée sur le formulaire adaptatif d’origine est conservée dans le formulaire incorporé.
 * Les règles de formulaire adaptatif sont conservées et entièrement fonctionnelles dans le formulaire incorporé.
 * Le ciblage d’expérience et les tests A/B configurés dans le formulaire adaptatif d’origine ne fonctionnent pas dans le formulaire incorporé.
 * Si Adobe Analytics est configuré sur le formulaire d’origine, les données d’analyse sont capturées dans le serveur Adobe Analytics. Cependant, elle n’est pas disponible dans le rapport d’analyse Forms.
-
-Dans les Forms adaptatives basées sur les composants principaux, les bibliothèques clientes (bibliothèques clientes) sont incluses et chargées avec les composants En-tête et Pied de page d’un formulaire. Ainsi, lorsque vous incorporez une Forms adaptative basée sur les composants principaux à une page web, elle inclut toujours l’en-tête et le pied de page du formulaire.
+* Dans les Forms adaptatives basées sur les composants principaux, les bibliothèques clientes (bibliothèques clientes) sont incluses et chargées avec les composants En-tête et Pied de page d’un formulaire. Ainsi, lorsque vous incorporez une Forms adaptative basée sur les composants principaux à une page web, elle inclut toujours l’en-tête et le pied de page du formulaire.
 
 ## Exemple de topologie {#sample-topology}
 

@@ -2,9 +2,9 @@
 title: Utilisation de reCAPTCHA dans le Forms adaptatif
 description: Découvrez comment configurer le service Google reCAPTCHA dans Forms adaptatif.
 topic-tags: adaptive_forms, author
-source-git-commit: 58451648b120991a5e204044f8dd6aeeaf655d81
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1930'
 ht-degree: 74%
 
 ---
@@ -13,15 +13,13 @@ ht-degree: 74%
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
-| Application | Lien de l’article |
-| -------- | ---------------------------- |
-| Formulaire adaptatif basé sur des composants de base | Cet article |
-| Formulaire adaptatif basé sur les composants principaux | [Cliquez ici](/help/forms/captcha-adaptive-forms-core-components.md) |
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Cet article |
+| Application | Formulaire adaptatif basé sur des composants de base. <br> Pour les formulaires adaptatifs basés sur les composants principaux, [Cliquez ici](/help/forms/captcha-adaptive-forms-core-components.md). |
+
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatique ayant pour but de différencier les humains des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les humains des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’un humain ou d’un robot qui interagit avec le site. Il empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et contribue à sécuriser les transactions en ligne en empêchant les robots d’envoyer des spams ou des messages malveillants.
 
