@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
+source-git-commit: 6c43921b90daa64dd4695c569e6dcd6f23e464cb
 workflow-type: tm+mt
-source-wordcount: '4260'
+source-wordcount: '4265'
 ht-degree: 93%
 
 ---
@@ -229,8 +229,9 @@ ht-degree: 93%
          + [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [Mappage des utilisateurs et utilisatrices et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
-         + [Extraction de contenu à partir de la source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-         + [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [Extraction de contenu à partir de la source ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+         + [Ingestion de contenu dans Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [Indexation après migration de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [Affichage des journaux d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Suppression d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Exécution de l’outil de transfert de contenu sur une instance de publication](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
@@ -531,7 +532,7 @@ ht-degree: 93%
       + [Types de fichiers pris en charge et cas d’utilisation](/help/assets/supported-file-formats-assets-view.md)
       + [Afficher les ressources](/help/assets/navigate-assets-view.md)
       + [Chargement et ajout de ressources](/help/assets/add-delete-assets-view.md)
-      + [Importation de ressources en bloc](/help/assets/bulk-import-assets-view.md)
+      + [Importer des ressources en bloc](/help/assets/bulk-import-assets-view.md)
       + [Recherche et découverte de ressources](/help/assets/search-assets-view.md)
       + [Tâches de gestion des ressources](/help/assets/manage-organize-assets-view.md)
       + [Modification des images](/help/assets/edit-images-assets-view.md)
