@@ -1,18 +1,19 @@
 ---
-title: Notes de mise à jour de Cloud Manager 2023.9.0 dans Adobe Experience Manager as a Cloud Service
-description: Consultez les notes de mise à jour de Cloud Manager 2023.9.0 dans AEM as a Cloud Service.
+title: Notes de mise à jour de Cloud Manager 2023.8.0 dans Adobe Experience Manager as a Cloud Service
+description: Consultez les notes de mise à jour de Cloud Manager 2023.8.0 dans AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: dd52aef2f88cf64e8d9a32b1c8cafe4fcfbcb812
+exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
+source-git-commit: 3eee8a88b9945bb16be992d7157f9f7f3e816246
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 21%
+source-wordcount: '540'
+ht-degree: 34%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager 2023.9.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notes de mise à jour de Cloud Manager 2023.8.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager version 2023.9.0 dans AEM as a Cloud Service.
+Cette page présente les notes de mise à jour de Cloud Manager version 2023.8.0 dans AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -20,11 +21,12 @@ Cette page présente les notes de mise à jour de Cloud Manager version 2023.9
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager version 2023.9.0 dans AEM as a Cloud Service est le 7 septembre 2023. La prochaine version est prévue pour le 5 octobre 2023.
+La date de publication de Cloud Manager version 2023.8.0 dans AEM as a Cloud Service est le 10 août 2023. La prochaine version est prévue pour le 14 septembre 2023.
 
 ## Nouveautés {#what-is-new}
 
-Cette version est axée sur les correctifs de bogues.
+* Lors de la configuration d’un jeu de contenu sur [copier le contenu,](/help/implementing/developing/tools/content-copy.md) [configurations basées sur le contexte](/help/implementing/developing/introduction/configurations.md) sont désormais autorisées dans les jeux de contenu de l’interface utilisateur.
+* Des améliorations ont été apportées à la lisibilité et à l’affichage des messages d’erreur dans l’interface utilisateur de Cloud Manager.
 
 ## Programme d&#39;adoption précoce {#early-adoption}
 
@@ -53,6 +55,12 @@ Vous souhaitez tester le nouveau tableau de bord ? Veuillez envoyer un e-mail à
 
 ## Correctifs {#bug-fixes}
 
-* Lorsqu’un programme est supprimé, tout pipeline associé en cours d’exécution est également supprimé, en s’assurant que le pipeline n’est pas incorrectement désigné comme état d’échec.
-* Parfois, lorsque toutes les étapes d’exécution d’un pipeline sont &quot;terminées&quot;, l’état du pipeline est considéré comme &quot;en cours d’exécution&quot;, ce qui donne l’impression qu’il est en état de blocage. Il est maintenant considéré comme &quot;terminé&quot;.
-* Pour les branches de référentiel générées à l’aide de l’archétype du générateur de code, le pipeline CI/CD échoue.
+* Le menu **Environnements** se ferme maintenant après avoir ouvert la boîte de dialogue modale **[Copier le contenu](/help/implementing/developing/tools/content-copy.md)**.
+* La [réexécution d’un pipeline](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) n’est plus autorisée si l’exécution précédente n’a pas de `commitId` défini sur l’état de phase de création.
+* Un message plus compréhensible s’affiche désormais pour les erreurs rares lorsqu’un utilisateur ou une utilisatrice clique sur un pipeline dans les écrans **Activité** ou **Pipeline**.
+* La variable `contentSetName` n’est plus manquante dans les journaux et est désormais fournie dans les entrées lors du démarrage d’une [copie de contenu](/help/implementing/developing/tools/content-copy.md) opération.
+* Il n’est plus possible, dans de rares circonstances, de démarrer deux exécutions à partir du même pipeline menant à un état &quot;bloqué&quot;.
+* Lorsqu’un certificat expire, les noms de domaine et les listes autorisées d’adresses IP associées au certificat ne sont plus supprimés du réseau de diffusion de contenu.
+   * Dans ce cas, le site reste accessible.
+   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)L’interface utilisateur de Cloud Manager fournit des avertissements avancés plus visibles indiquant que le certificat SSL est sur le point d’expirer.
+* Correction d’un problème en raison duquel AEM perdait l’accès à un point de terminaison de publication dans les situations où Sites était ajouté en tant que solution à un programme Assets uniquement.
