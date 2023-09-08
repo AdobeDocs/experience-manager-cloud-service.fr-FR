@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 78%
+source-wordcount: '1244'
+ht-degree: 65%
 
 ---
 
@@ -146,3 +146,26 @@ Par exemple, la règle suivante appelle un service get qui utilise l’ID d’em
 ![invoke-service](assets/invoke-service.png)
 
 En outre, vous pouvez utiliser l’API `guidelib.dataIntegrationUtils.executeOperation` pour écrire un code JavaScript dans l’éditeur de code pour l’éditeur de règles. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### Appeler un modèle de données de formulaire à l’aide de fonctions personnalisées {#invoke-form-data-model-using-custom-functions}
+
+Vous pouvez [appel d’un modèle de données de formulaire à partir de l’éditeur de règles à l’aide de fonctions personnalisées](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Pour appeler le modèle de données de formulaire, ajoutez un modèle de données de formulaire à la liste autorisée. Pour ajouter un modèle de données de formulaire à une liste autorisée :
+
+1. Accédez à la console web Experience Manager à l’adresse `https://server:host/system/console/configMgr`.
+1. Localiser **[!UICONTROL Liste blanche adaptative au niveau du formulaire du modèle de données de formulaire pour l’appel de service - Fabrique de configuration]**.
+1. Cliquez sur ![icône plus](/help/forms/assets/Smock_Add_18_N.svg) pour ajouter la configuration.
+1. Ajouter **[!UICONTROL Modèle de chemin d’accès au contenu]** pour spécifier l’emplacement de votre Forms adaptatif.  Par défaut, la valeur est `/content/forms/af/(.*)` qui inclut toutes les Forms adaptatives. Vous pouvez également spécifier le chemin d’accès d’un formulaire adaptatif spécifique.
+1. Ajouter **[!UICONTROL Modèle de données de formulaire]** pour spécifier l’emplacement du modèle de données de formulaire. Par défaut, la valeur est `/content/dams/formsanddocuments-fdm/(.*)` qui inclut tous les modèles de données de formulaire. Vous pouvez également spécifier le chemin d’accès d’un modèle de données de formulaire spécifique.
+1. Enregistrez les paramètres.
+
+La configuration ajoutée est enregistrée sous le **[!UICONTROL Liste blanche adaptative au niveau du formulaire du modèle de données de formulaire pour l’appel de service - Fabrique de configuration]** .
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> Pour appeler un modèle de données de formulaire à partir de l’éditeur de règles à l’aide de fonctions personnalisées par le biais d’un projet d’archétype AEM :
+>
+>1. [Création d’un fichier de configuration](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. Définissez les propriétés de getContentPathPattern et getFormDataModelPathPattern.
+>1. Déployez le projet.

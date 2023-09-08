@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
 workflow-type: tm+mt
-source-wordcount: '6436'
+source-wordcount: '6446'
 ht-degree: 68%
 
 ---
@@ -656,6 +656,10 @@ Pour ouvrir un formulaire en mode d’édition, sélectionnez un formulaire, pui
    [![Utilisation des fonctions personnalisées pour créer une règle](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Appuyez sur **[!UICONTROL Terminé]**. Votre fonction personnalisée est ajoutée.
+
+   >[!NOTE]
+   >
+   > Pour appeler un modèle de données de formulaire à partir de l’éditeur de règles à l’aide de fonctions personnalisées, [voir ici](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Types pris en charge pour la déclaration de fonction {#function-declaration-supported-types}
 

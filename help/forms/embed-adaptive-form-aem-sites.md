@@ -5,10 +5,10 @@ description: Vous pouvez utiliser le composant Forms adaptatif - Incorporer pour
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '3158'
-ht-degree: 35%
+source-wordcount: '3177'
+ht-degree: 34%
 
 ---
 
@@ -259,6 +259,11 @@ Vous pouvez personnaliser les paramètres avancés du composant **[!UICONTROL Fo
 * **Utiliser la langue de la page** : utilisez les paramètres régionaux de la page AEM Sites au lieu de ceux du formulaire adaptatif. Cette option s’applique uniquement au formulaire adaptatif (Foundation).
 * **Définir le focus sur le formulaire** : sélectionnez cette option pour définir le focus sur le premier champ du formulaire adaptatif. Cette option s’applique uniquement au formulaire adaptatif (Foundation).
 * **Thème** : sélectionnez un thème qui définit le style des composants de votre formulaire adaptatif. Style comprend des propriétés d’aspect, comme le style de police, la couleur d’arrière-plan, les dimensions et l’alignement. Cette option s’applique uniquement au formulaire adaptatif (Foundation).
+
+  >[!NOTE]
+  >
+  > Vous pouvez utiliser la variable **Utiliser la langue de la page**, **Définir la cible d’action sur le formulaire** et **Thème** options uniquement pour le formulaire adaptatif (Foundation).
+
 * **Le formulaire couvre toute la largeur du cadre.**: un cadre intégré (iframe) est un élément de HTML qui charge un formulaire adaptatif sur une page AEM Sites.
 
    * Si la variable **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** est cochée, un formulaire adaptatif occupe toute la largeur du conteneur dans lequel il est placé. Dans ce cas, un iframe n’est pas utilisé pour générer le formulaire. La mise en page et la conception d’un formulaire adaptatif s’adaptent à toute la largeur du conteneur, ce qui le rend réactif et capable de s’adapter à différentes tailles d’écran. Cette option permet d’incorporer plusieurs Forms adaptatives dans une page AEM Sites.
