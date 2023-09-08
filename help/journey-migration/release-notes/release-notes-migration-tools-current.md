@@ -1,37 +1,30 @@
 ---
-title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.07.0
-description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.07.0
+title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.09.0
+description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.09.0
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 46%
+source-wordcount: '150'
+ht-degree: 38%
 
 ---
 
-# Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.07.0 {#release-notes}
+# Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.09.0 {#release-notes}
 
-Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2022.07.0.
+Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2022.09.0.
 
-## Analyseur des bonnes pratiques {#bpa-release}
+## Outil de transfert de contenu {#ctt-release}
 
-### Date de publication {#release-date-bpa}
+### Date de publication {#release-date-ctt}
 
-La date de publication de l’analyseur de bonnes pratiques v2.1.42 est le 06 juillet 2023.
+La date de publication de l’outil de transfert de contenu v3.0.0 est le 7 septembre 2023.
 
-### Nouveautés {#what-is-new-bpa}
+### Nouveautés {#what-is-new-ctt}
 
-* Plusieurs modèles de bonnes pratiques ont été ajoutés à cette version de l’analyseur des bonnes pratiques. Ces informations comprennent les éléments suivants :
-   * Identification de la configuration minimale de la tâche de maintenance
-   * Détection de requêtes longues/lourdes
-   * Détection d’un grand nombre de workflows de création en cours d’exécution ou à l’état obsolète
-   * Détection de la configuration de la tâche Sling Apache OSGI
-   * Détection de caches goyaves personnalisés
+L’outil de transfert de contenu a été considérablement amélioré pour offrir les avantages suivants :
+* Réduction du temps de transfert lors de la migration d’un sous-ensemble d’un référentiel de contenu en utilisant AzCopy pour copier uniquement les identifiants d’objets Blob requis au lieu de copier tous les identifiants d’objets Blob.
+* Compléments de contenu différentiels plus rapides à l’aide de la mise à niveau Oak
+* Amélioration de la robustesse en séparant le processus d’indexation du processus d’ingestion de contenu. En cas d’échec de l’indexation, le contenu n’aura pas à être ingéré à nouveau. Seule l’indexation redémarre automatiquement, ce qui permet de gagner du temps et d’économiser des efforts significatifs.
 
-### Correctifs {#bug-fixes-bpa}
-
-* Le BPA a été amélioré afin d’éviter les échecs de génération de rapports en mémoire insuffisante pour les rapports avec un grand nombre de résultats.
-* La BPA a été améliorée afin de détecter les caractères d’échappement dans les chemins d’accès afin d’éviter les échecs d’assimilation de contenu lors de la migration du contenu vers AEM as a Cloud Service.
 
 
