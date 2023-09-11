@@ -3,7 +3,7 @@ title: Mises à jour de la version d’AEM
 description: Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) pour conserver vos projets sur la dernière version.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 7cdbda468221c42325a957131c6817c9f85a574a
+source-git-commit: 620543b6c5d7bc017b8ac99d82b2a00dab2287b9
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 29%
@@ -56,23 +56,23 @@ De même, si une mise à jour automatisée d’un environnement de développemen
 ## Bonnes pratiques {#best-practices}
 
 * **Utilisation de l’environnement d’évaluation**
-* Utilisez un environnement différent (pas l’environnement intermédiaire) pour de longs cycles AQ/UAT.
-* Une fois le test d’intégrité terminé sur l’évaluation, déplacez-le pour le vérifier sur l’environnement de production.
+   * Utilisez un environnement différent (pas l’environnement intermédiaire) pour de longs cycles AQ/UAT.
+   * Une fois le test d’intégrité terminé sur l’évaluation, déplacez-le pour le vérifier sur l’environnement de production.
 
 * **Pipeline de production**
-* Pause avant le déploiement en production.
-* Annuler le pipeline après un déploiement dans l’environnement intermédiaire indique que le code est &quot;un jeton&quot; et qu’il ne s’agit pas d’un candidat valide pour la production, reportez-vous à la section [Configuration d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * Pause avant le déploiement en production.
+   * Annuler le pipeline après un déploiement dans l’environnement intermédiaire indique que le code est &quot;un jeton&quot; et qu’il ne s’agit pas d’un candidat valide pour la production, reportez-vous à la section [Configuration d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
 * **Pipeline hors production**
-* Configurer [Pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* Accélérer la vitesse/fréquence de diffusion pour les échecs de pipeline de production.  Identifiez les problèmes dans les pipelines non prod en activant les tests fonctionnels du produit, les tests fonctionnels personnalisés et les tests d’interface utilisateur personnalisés.
+   * Configurer [Pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+   * Accélérer la vitesse/fréquence de diffusion pour les échecs de pipeline de production.  Identifiez les problèmes dans les pipelines non prod en activant les tests fonctionnels du produit, les tests fonctionnels personnalisés et les tests d’interface utilisateur personnalisés.
 
 * **Copie de contenu**
-* Utilisation [Copie de contenu](/help/implementing/developing/tools/content-copy.md) pour déplacer des visionneuses de contenu similaires vers un environnement autre que prod.
+   * Utilisation [Copie de contenu](/help/implementing/developing/tools/content-copy.md) pour déplacer des visionneuses de contenu similaires vers un environnement autre que prod.
 
 * **Tests fonctionnels automatisés**
-* Incluez des tests automatisés dans votre pipeline pour tester les fonctionnalités critiques.
-* [Tests fonctionnels du client](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) et [Tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) bloquent, s’ils échouent, AEM version ne sera pas déployée.
+   * Incluez des tests automatisés dans votre pipeline pour tester les fonctionnalités critiques.
+   * [Tests fonctionnels du client](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) et [Tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) bloquent, s’ils échouent, AEM version ne sera pas déployée.
 
 ## Régression {#regression}
 
