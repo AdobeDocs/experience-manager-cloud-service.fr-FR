@@ -2,10 +2,10 @@
 title: Mappage des utilisateurs et utilisatrices et migration des entités principales
 description: Présentation du mappage des utilisateurs et de la migration des entités de sécurité dans AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 21%
+source-wordcount: '952'
+ht-degree: 16%
 
 ---
 
@@ -21,43 +21,40 @@ ht-degree: 21%
 
 ## Présentation {#introduction}
 
-Dans le cadre du parcours de transition vers Adobe Experience Manager (AEM) as a Cloud Service, vous devez déplacer les utilisateurs et les groupes de votre système AEM existant vers l’as a Cloud Service. Cette tâche est effectuée par l’outil de transfert de contenu.
+Dans le cadre du parcours de transition vers Adobe Experience Manager (AEM) as a Cloud Service, les utilisateurs et les groupes (ou &quot;entités de sécurité&quot;) doivent être migrés des systèmes AEM existants vers les systèmes as a Cloud Service. Cette tâche est effectuée par l’outil de transfert de contenu.
 
-L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création. Ce processus nécessite l’utilisation de la fonction [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour la gestion des utilisateurs et des groupes d’utilisateurs. Les informations de profil utilisateur sont centralisées dans Adobe Identity Management System (IMS), qui permet l’authentification unique dans toutes les applications cloud d’Adobe. Pour plus d’informations, voir [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). En raison de cette modification, les utilisateurs existants doivent être mappés à leurs identifiants IMS afin d’éviter les doublons d’utilisateurs sur l’instance d’auteur du Cloud Service. Puisque les groupes de la plateforme AEM traditionnelle sont fondamentalement différents de ceux dans IMS, ils ne sont pas mappés, mais les deux ensembles de groupes doivent être réconciliés une fois la migration terminée.
+L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création. Ce processus nécessite l’utilisation de la fonction [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour la gestion des utilisateurs et des groupes d’utilisateurs. Les informations de profil utilisateur sont centralisées dans Adobe Identity Management System (IMS), qui permet l’authentification unique dans toutes les applications cloud d’Adobe. Pour plus d’informations, voir [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). En raison de cette modification, les utilisateurs existants doivent être mappés à leurs identifiants IMS pour éviter la création d’utilisateurs en double sur l’instance de création du Cloud Service. Puisque les groupes de la plateforme AEM traditionnelle sont fondamentalement différents de ceux dans IMS, ils ne sont pas mappés, mais les deux ensembles de groupes doivent être réconciliés une fois la migration terminée.
 
-## Détails de la migration des utilisateurs {#user-migration-detail}
+## Détails de la migration des principaux {#principal-migration-detail}
 
-L’outil de transfert de contenu et Cloud Acceleration Manager migreront vers le système cloud tous les utilisateurs associés au contenu en cours de migration.
+L’outil de transfert de contenu et Cloud Acceleration Manager migreront vers le système cloud toutes les entités associées au contenu en cours de migration.  L’outil de transfert de contenu effectue cette opération en copiant toutes les entités du système d’AEM source pendant le processus d’extraction.  L’ingestion CAM sélectionne et migre ensuite uniquement les entités associées au contenu ingéré.
 
 ## Détails du mappage des utilisateurs {#user-mapping-detail}
 
-Les utilisateurs AEM peuvent être mappés aux utilisateurs Adobe IMS correspondants avec la même adresse électronique.  Ce mappage peut être effectué automatiquement dans le CTT et son exécution peut être contrôlée par un bouton bascule avant le démarrage de l’extraction. Le paramètre par défaut du bouton (bascule) peut être remplacé par l’utilisateur ou l’utilisatrice lors du démarrage de l’extraction.
+Les utilisateurs AEM peuvent être mappés aux utilisateurs Adobe IMS correspondants avec la même adresse électronique.  Ce mapping peut être effectué automatiquement dans CTT (lors de l’étape d’extraction) et s’il est effectué ou non peut être contrôlé par un bouton bascule avant le démarrage de l’extraction. Le paramètre par défaut du bouton (bascule) peut être remplacé par l’utilisateur ou l’utilisatrice lors du démarrage de l’extraction.
 
 * Si le système source est une instance d’auteur, le choix par défaut d’effectuer le mappage est _on_, car il s’agit du processus recommandé.
-* Si le système source est une instance de publication, le choix par défaut d’effectuer le mappage est _off_, car les utilisateurs ne sont normalement pas migrés ou utilisés sur les instances de publication.
+* Si le système source est une instance de publication, le choix par défaut d’effectuer le mappage est _off_, car les utilisateurs ne sont normalement pas migrés ou utilisés sur les instances de publication ; ou s’ils sont utilisés, un autre système d’authentification (c’est-à-dire pas IMS) est généralement utilisé à leur place.
+
+Que les utilisateurs soient mappés ou non lors de l’extraction, ils sont migrés, avec les groupes, vers le système cloud lors de l’ingestion s’ils sont associés au contenu en cours de migration.
 
 ## Points importants lors du mappage et de la migration d’utilisateurs et d’utilisatrices {#important-considerations}
-
 
 ### Cas exceptionnels {#exceptional-cases}
 
 Les cas spécifiques suivants sont consignés :
 
 1. Si un utilisateur ne dispose d’aucune adresse électronique dans la variable `profile/email` de leur champ *jcr* , l’utilisateur ou le groupe en question peut être migré, mais n’est pas mappé. Ce scénario est le cas même si l’adresse électronique est utilisée comme nom d’utilisateur pour la connexion.
-
-1. Si l’utilisateur ou l’utilisatrice est désactivé, le traitement est le même que s’il ou elle ne l’était pas. Il ou elle fera l’objet d’une migration et d’un mappage normaux et restera désactivé(e) sur l’instance cloud.
-
-1. Si un utilisateur existe sur l’instance AEM Cloud Service cible avec le même nom d’utilisateur (rep:principalName) que l’un des utilisateurs sur l’instance d’AEM source, l’utilisateur en question n’est pas migré.
-
-1. Si un utilisateur est migré sans être mappé au moyen du mappage utilisateur, il ne peut pas se connecter à l’aide de son identifiant IMS sur le système cloud cible. Ou, si leur adresse électronique ne correspond pas à celle utilisée pour se connecter à IMS, sur le système cloud cible, ils ne peuvent pas non plus se connecter à l’aide de leur identifiant IMS. Il est possible qu’ils puissent se connecter à l’aide de la méthode d’AEM traditionnelle, mais cette méthode n’est normalement pas ce qui est recherché ou attendu.
-
+2. Si l’utilisateur est désactivé, il est traité de la même manière que les autres utilisateurs ; il est mappé et migré normalement et reste désactivé sur l’instance cloud.
+3. Si une entité porte le même nom (rep:principalName) sur l’instance d’AEM source et l’instance AEM Cloud Service cible, l’entité en question n’est pas migrée et l’entité existante précédemment sur le système cloud reste inchangée.
+4. Si un utilisateur est migré sans être mappé au moyen du mappage utilisateur, l’utilisateur ne pourra pas se connecter à l’aide de son identifiant IMS sur le système cloud cible. Ou, si leur adresse électronique ne correspond pas à celle utilisée pour se connecter à IMS, sur le système cloud cible, ils ne pourront pas non plus se connecter à l’aide de leur identifiant IMS. Ils peuvent se connecter à l’aide de la méthode d’AEM traditionnelle (connexion locale), mais cette méthode n’est normalement pas ce qui est recherché ou attendu.
 
 ## Considérations supplémentaires {#additional-considerations}
 
-* Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est définie, les utilisateurs déjà transférés sur l’instance de Cloud Service sont supprimés avec l’ensemble du référentiel existant. De plus, un nouveau référentiel est créé dans lequel le contenu est ingéré. Ce processus réinitialise également tous les paramètres, y compris les autorisations sur l’instance de Cloud Service cible. Il est vrai pour un utilisateur administrateur ajouté à la variable **administrateurs** groupe. L’utilisateur administrateur doit être lu dans la variable **administrateurs** pour récupérer le jeton d’accès pour CTT.
-* Lorsque des compléments de contenu sont effectués, si le contenu n’est pas transféré car il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne sont pas transférés non plus. Cette règle est vraie même si les utilisateurs et les groupes ont changé entre-temps. Cela est dû au fait que les utilisateurs et les groupes sont migrés avec le contenu auquel ils sont associés.
+* Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est définie, les utilisateurs déjà transférés sur l’instance de Cloud Service sont supprimés avec l’ensemble du référentiel existant ; un nouveau référentiel est créé dans lequel le contenu est ingéré. Ce processus réinitialise également tous les paramètres, y compris les autorisations sur l’instance de Cloud Service cible. Il est vrai pour un utilisateur administrateur ajouté à la variable **administrateurs** groupe. L’utilisateur administrateur doit être rajouté au **administrateurs** groupe pour récupérer le jeton d’accès pour l’ingestion CTT/CAM.
+* Lorsque des compléments de contenu sont effectués, si le contenu n’est pas transféré car il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne sont pas transférés non plus. Cette règle est vraie même si les utilisateurs et les groupes ont changé sur le système source. Cela est dû au fait que les utilisateurs et les groupes ne sont migrés qu’avec le contenu auquel ils sont associés.
 * Si l’instance AEM Cloud Service cible comporte un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs sur l’instance d’AEM source et que le mappage utilisateur est activé, les journaux enregistrent un message d’erreur. En outre, l’utilisateur de l’AEM source n’est pas transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
-* Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur les groupes utilisés dans une stratégie de groupe d’utilisateurs fermé (CUG).
+* Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur les entités utilisées dans une stratégie de groupe d’utilisateurs fermé (CUG).
 
 ## Résumé final et rapport {#final-report}
 
