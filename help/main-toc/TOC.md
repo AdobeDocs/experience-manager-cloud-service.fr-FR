@@ -8,7 +8,7 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
+source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
 workflow-type: tm+mt
 source-wordcount: '4284'
 ht-degree: 93%
@@ -573,7 +573,7 @@ ht-degree: 93%
          + [Intégrer AEM Forms as a Cloud Service à DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Intégrer AEM Forms as a Cloud Service à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Intégration de Forms adaptatif à Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md)
-         + [Affichage et compréhension du rapport Analytics Forms adaptatif](/help/forms/view-understand-aem-forms-analytics-reports.md)
+         + [Affichage et compréhension du rapport Analyses de Forms adaptatif](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Intégrer un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporer un formulaire adaptatif dans une page AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incorporer un formulaire adaptatif basé sur des composants principaux à une page web externe](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
