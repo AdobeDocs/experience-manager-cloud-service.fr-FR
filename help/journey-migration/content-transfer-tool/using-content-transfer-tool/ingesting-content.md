@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Ingestion de contenu"
->abstract="L’ingestion fait référence à l’ingestion de contenu à partir du jeu de migration vers l’instance de Cloud Service de destination. L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées."
+>abstract="L’ingestion désigne l’ingestion de contenu à partir du jeu de migration dans l’instance Cloud Service cible. L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr" text="Ingestion complémentaire"
 
 Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager :

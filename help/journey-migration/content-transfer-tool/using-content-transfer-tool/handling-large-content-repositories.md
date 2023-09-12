@@ -156,13 +156,13 @@ If `repository.home` est manquante dans azcopy.config, puis l’emplacement de l
 
 ### 4. Extraction avec AzCopy {#extracting-azcopy}
 
-Une fois le fichier de configuration ci-dessus en place, la phase de précopie AzCopy s’exécute dans le cadre de chaque extraction ultérieure. Pour l’empêcher d’exécuter, vous pouvez renommer ce fichier ou le supprimer.
+Une fois le fichier de configuration ci-dessus en place, la phase de pré-copie AzCopy s’exécute dans le cadre de chaque extraction ultérieure. Pour l’empêcher d’exécuter, vous pouvez renommer ce fichier ou le supprimer.
 
 >[!NOTE]
 >Si AzCopy n&#39;est pas configuré correctement, le message suivant apparaît dans les logs :
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. Commencez une extraction à partir de l’interface utilisateur de CTT. Voir [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) et le [Processus d’extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) pour plus d’informations.
+1. Commencez une extraction à partir de l’interface utilisateur de CTT. Voir [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) et la variable [Processus d’extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) pour plus d’informations.
 
 1. Vérifiez que la ligne suivante est imprimée dans le journal d&#39;extraction :
 

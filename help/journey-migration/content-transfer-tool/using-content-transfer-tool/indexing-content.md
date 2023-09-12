@@ -4,7 +4,7 @@ description: Découvrez comment le processus de migration va indexer le contenu 
 source-git-commit: 22c5cbf300bb0b3b0db04fcfa669dde44197c326
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="Indexation de contenu"
->abstract="AEM Indexation fait référence à l’indexation du contenu sur l’instance de Cloud Service après la migration du contenu vers celle-ci. L’indexation est nécessaire pour prendre en charge la recherche de contenu sur cette instance."
+>abstract="L’Indexation AEM fait référence à l’indexation du contenu sur l’instance de Cloud Service après la migration du contenu vers celle-ci. L’indexation est nécessaire pour prendre en charge la recherche de contenu sur cette instance."
 
 Une fois que Cloud Acceleration Manager a terminé l’ingestion de contenu dans votre instance de Cloud Service, il est prêt à être utilisé. Au départ, le contenu n’est pas indexé, ce qui entraîne probablement un environnement instable dans lequel des problèmes tels que le contenu non indexable et les performances dégradées peuvent être attendus.
 Pour des performances optimales sur l&#39;instance, le processus de migration démarre automatiquement l&#39;indexation du contenu. Il n&#39;y a rien à faire, à part surveiller la progression de l&#39;indexation.
