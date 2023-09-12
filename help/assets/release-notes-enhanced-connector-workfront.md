@@ -2,10 +2,10 @@
 title: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 83%
+source-wordcount: '1252'
+ht-degree: 79%
 
 ---
 
@@ -15,16 +15,17 @@ La section suivante présente les notes de mise à jour générales de [!DNL Wor
 
 ## Date de publication {#release-date}
 
-Date de publication de la dernière version 1.9.12 d’ [!DNL Workfront for Experience Manager enhanced connector] 9 août 2023.
+Date de publication de la dernière version 1.9.13 de [!DNL Workfront for Experience Manager enhanced connector] est le 11 septembre 2023.
 
 ## Principaux éléments de la mise à jour {#release-highlights}
 
 La dernière version de [!DNL Workfront for Experience Manager enhanced connector] inclut les mises à jour suivantes :
 
-* Impossible de créer les dossiers liés dans Experience Manager, car aucun compte utilisateur n’est associé au dossier lié.
+* Le connecteur amélioré de Experience Manager récupère tous les abonnements d’événement de Workfront lors de la suppression d’un abonnement d’événement pour un projet, ce qui a un impact sur les performances de l’application.
 
-* Conditions de concurrence lors des mises à jour des métadonnées d’une ressource en Experience Manager.
+* Lorsqu’une ressource est envoyée de Workfront à Experience Manager, le type MIME de la ressource n’est pas défini sur `dc:format` dans Experience Manager.
 
+* Les identifiants de projet Workfront stockés sur le connecteur amélioré de Experience Manager incluent des doublons.
 
 >[!NOTE]
 >
@@ -33,7 +34,7 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!IMPORTANT]
 >
->Adobe vous recommande [mise à niveau vers la dernière version 1.9.12](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe vous recommande [mise à niveau vers la dernière version 1.9.13](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problèmes connus {#known-issues}
 
@@ -42,6 +43,12 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 * Lorsque vous utilisez l’expérience Workfront classique, l’option **[!UICONTROL Envoyer à]** disponible dans la liste déroulante **[!UICONTROL Plus]** ne vous permet pas de sélectionner la destination cible dans Experience Manager. La variable **[!UICONTROL Envoyer à]** fonctionne correctement avec l’option **[!UICONTROL Actions de document]** liste déroulante. La variable **[!UICONTROL Envoyer à]** fonctionne correctement pour **[!UICONTROL Plus]** et la liste déroulante **[!UICONTROL Actions de document]** liste déroulante disponible dans la nouvelle expérience Workfront.
 
 ## Versions précédentes {#previous-releases}
+
+### Version d’août 2023 {#august-2023-release}
+
+* Impossible de créer les dossiers liés dans Experience Manager, car aucun compte utilisateur n’est associé au dossier lié.
+
+* Conditions de concurrence lors des mises à jour des métadonnées d’une ressource en Experience Manager.
 
 ### Version de juin 2023 {#june-2023-release}
 
