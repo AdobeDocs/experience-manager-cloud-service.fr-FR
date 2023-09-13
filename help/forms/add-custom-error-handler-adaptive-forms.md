@@ -6,10 +6,10 @@ keywords: Ajoutez un gestionnaire d’erreurs personnalisé, ajoutez un gestionn
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 1f6fd90b2a5772951c78275b395653bbd14bbd7b
+source-git-commit: f6c6ef96f8de194942a95d8589591b41431037f5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2466'
+ht-degree: 7%
 
 ---
 
