@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 288f871b75e68fdbca1244099e490408ea66ff40
+source-git-commit: 57d818e3e89f17f829a6b51689f02e5f59614563
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 33%
+source-wordcount: '296'
+ht-degree: 36%
 
 ---
 
@@ -13,41 +13,38 @@ ht-degree: 33%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 13323 {#release-13323}
+## Version 13420 {#release-13420}
 
-Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 13323, qui a été publiée publiquement le 1er septembre 2023. Cette version de maintenance remplace la version 13239.
+Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 13420, publiée publiquement le 11 septembre 2023. Cette version de maintenance remplace la version 13323.
 
 2023.9.0 Feature Activation fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
-### Améliorations {#enhancements-13323}
+### Améliorations {#enhancements-13420}
 
-- GRANITE-46784 : Ajoutez une option pour désactiver BearerAuthenticationHandler.
-- GRANITE-36205 : mettez à jour la version interne de oak vers la dernière version.
-- ASSETS-26713 : Touch UI Lien externe vers le nouveau tableau de bord de l’interface utilisateur d’Experience - intégration unifiée-shell et mise à niveau optimisée pour les écrans tactiles.
-- SKYOPS-63302 : effectuez une mise à niveau com.adobe.granite:com.adobe.granite.auth.saml vers la version 1.0.54.
-- GRANITE-46634 : mise à niveau vers le client eventing 1.4.0.
-- GRANITE-46788 : Mise à jour des bibliothèques vers Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 et Commons Compress 1.23.0.
-- GRANITE-46705 : Mise à jour vers Apache Felix Http Jetty 4.1.14.
-- GRANITE-46631 : mettez à jour la version Jackrabbit vers 2.20.11.
-- SKYOPS-61895 : mise à jour vers Jackrabbit Filevault 3.7.0.
+- ASSETS-19544 : les ressources modifiées en dernier par propriété sont désormais définies sur l’utilisateur demandant le traitement.
 
-### Problèmes résolus {#fixed-issues-13323}
+### Problèmes résolus {#fixed-issues-13420}
 
-- ASSETS-28461 : la visionneuse cloud Doc ne fonctionne pas pour les PDF, correction à partir de 13239.
-- SKYOPS-63290 : correction d’une évolution incorrecte des compartiments.
-- SKYOPS-54607 : le calcul de la charge du serveur de l’outil de référence n’est pas correct pour une requête qui a échoué.
-- ASSETS-27648 : ContentModelIT ne parvient pas à lire les fichiers d’exclusion d’autres lots.
-- GRANITE-43744 : L’authentificateur Sling ne fonctionne pas correctement en cas de configuration incorrecte avec l’exigence d’authentification et le chemin d’accès Vanity.
-- GRANITE-46419 : problème d’intégration AEM avec l’Idp Auth0.
-- GRANITE-46292 : la configuration SAML Okta ne fonctionne pas après la mise à jour d’AEM Cloud.
-- GRANITE-47059 : Supprimez le lot SSL Granite Jetty.
+- ASSETS-27628 : Noeud &quot;canaux&quot; en erreur créé lors de la personnalisation du panneau de recherche Assets
+- ASSETS-27539 : mise en correspondance des expressions régulières de restrictions de chargement.
+- ASSETS-26530 : Le Shell unifié ne ramène pas les utilisateurs à la page d’origine.
+- ASSETS-22719 : les crochets dans le nom du point d’arrêt de recadrage intelligent rompent la fonction d’édition de recadrage intelligent.
+- ASSETS-27726 : linkshare.html ne doit pas être indexé par Google.
+- ASSETS-27791 : la validation du schéma de métadonnées se produit uniquement pour le premier champ.
+- ASSETS-25544 : correction du bouton d’invalidation du cache CDN désactivé.
+- ASSETS-26575 : correction de la troncation des noms lors de la création de visionneuses d’images.
+- ASSETS-26705 : correction d’un traitement inutile sur les ressources de dossier et les fragments de contenu non DM.
+- ASSETS-25740 : correction des lecteurs d’écran qui ne narraient pas le nom et le rôle des commandes Modifier/Recadrer sur la page &quot;Modifier les recadrages intelligents&quot; à l’aide des touches fléchées vers le bas.
+- CQ-4354266 : impossible d’ouvrir les éléments de boîte de réception.
+- CQ-4354347 : Mise à jour AEM traductions.
+- DISP-1009 : User-Agent en tant que non-premier en-tête coupe X-Forwarded-Host.
+- Divers correctifs liés à l’accessibilité et à la sécurité.
 
-### Problèmes connus {#known-issues-13323}
+### Problèmes connus {#known-issues-13420}
 
-- SITES-15622 : GraphQL - Problème avec les requêtes persistantes avec les paramètres numériques et booléens.
-- SITES-15654 : GraphQL - Problèmes liés aux unions et propriétés du même nom.
+Aucun.
 
-### Technologies intégrées {#embedded-tech-13323}
+### Technologies intégrées {#embedded-tech-13420}
 
 | Technologie | Version | Lien |
 |---|---|---|
