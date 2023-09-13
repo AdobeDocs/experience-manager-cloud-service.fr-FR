@@ -4,10 +4,10 @@ description: Découvrez comment créer des profils d’utilisateurs dans l’Adm
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
+source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 97%
+source-wordcount: '989'
+ht-degree: 95%
 
 ---
 
@@ -22,6 +22,10 @@ De temps à autre, Adobe doit contacter les utilisateurs et utilisatrices au suj
 
 * **Notification d’incident** : ces notifications sont envoyées lors d’un incident ou lorsqu’Adobe identifie un problème de disponibilité potentiel avec votre environnement AEM as a Cloud Service.
 * **Notification proactive** : ces notifications sont envoyées lorsqu’un membre de l’équipe d’assistance Adobe souhaite fournir des conseils sur une optimisation potentielle ou une recommandation susceptible de bénéficier à votre environnement AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>L’affectation de groupes à une notification proactive n’est pas prise en charge. Vous devez affecter des utilisateurs directement aux profils de produit à la place.
 
 Pour que les utilisateurs ou les utilisatrices appropriés puissent recevoir ces notifications, vous devez configurer et affecter des profils d’utilisateurs, comme décrit dans ce document.
 
