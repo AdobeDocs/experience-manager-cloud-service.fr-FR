@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 4cf7d3692b53e5cb5baecd7d0ee93824d9186380
+source-git-commit: b3ba87c1fa2f0578f93c7c3bd2671fbc75178b4e
 workflow-type: tm+mt
-source-wordcount: '2267'
-ht-degree: 29%
+source-wordcount: '2412'
+ht-degree: 27%
 
 ---
 
@@ -176,19 +176,6 @@ En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtr
 >
 >Utilisez la touche de raccourci `P` pour passer en mode Aperçu.
 
-#### Mode texte {#text-mode}
-
-En mode texte, l’auteur du contenu peut cliquer pour sélectionner le contenu texte.
-
-![Mode texte](assets/text-mode.png)
-
-* Vous pouvez [modifier du texte brut ;](#editing-content) en place.
-* Vous pouvez également [modifier du texte enrichi ;](#editing-rich-text) en place avec des options de mise en forme supplémentaires affichées dans le rail du composant.
-
->[!TIP]
->
->Utiliser la touche chaude `T` pour passer en mode texte.
-
 #### Mode multimédia {#media-mode}
 
 En mode multimédia, l’auteur du contenu peut cliquer pour sélectionner le contenu multimédia.
@@ -203,11 +190,15 @@ Les détails du contenu s’affichent dans le rail du composant et l’auteur pe
 
 #### Mode de composant {#component-mode}
 
-En mode Composant, l’auteur du contenu peut cliquer pour sélectionner [Fragments de contenu.](/help/assets/content-fragments/content-fragments.md)
+En mode Composant, l’auteur du contenu peut cliquer pour sélectionner des composants afin de les modifier, notamment :
+
+* [Modification de texte brut](#editing-content) en place.
+* [Modification de texte enrichi](#editing-rich-text) en place avec des options de mise en forme supplémentaires affichées dans le rail du composant.
+* [Modification de fragments de contenu](#edit-content-fragment)
 
 ![Mode Composant](assets/component-mode.png)
 
-Lorsque vous sélectionnez un fragment de contenu, les détails s’affichent dans le rail du composant, où vous pouvez [modifiez le fragment de contenu.](#edit-content-fragment)
+Lorsque vous sélectionnez une [Fragment de contenu](/help/assets/content-fragments/content-fragments.md), les détails s’affichent dans le rail du composant où vous pouvez modifier le fragment de contenu.
 
 >[!TIP]
 >
@@ -217,7 +208,7 @@ Lorsque vous sélectionnez un fragment de contenu, les détails s’affichent da
 
 L’éditeur occupe la majeure partie de la fenêtre et est l’endroit où la page indiquée dans [la barre d’emplacement ;](#location-bar) est rendue.
 
-* Si l’éditeur est en mode de modification, par exemple [mode texte](#text-mode) ou [mode média,](#media-mode) le contenu sera modifiable, mais vous ne pouvez pas suivre les liens.
+* Si l’éditeur se trouve dans [mode composant,](#component-mode) le contenu sera modifiable, mais vous ne pouvez pas suivre les liens.
 * Si l’éditeur se trouve dans [mode aperçu,](#preview-mode) le contenu sera navigable et vous pouvez suivre les liens, mais vous ne pouvez pas le modifier.
 
 ![Éditeur](assets/editor.png)
@@ -244,6 +235,20 @@ Notez que tous les composants ne comportent pas de détails qui peuvent être af
 >
 >Utiliser la touche chaude `D` pour passer en mode propriétés.
 
+##### Modifier {#edit}
+
+Dans [mode composant,](#component-mode) les options de modification du composant sélectionné s’affichent dans le rail du composant. Dans le rail du composant, vous pouvez modifier le composant sélectionné. Vous pouvez également appuyer ou cliquer sur le bouton Modifier.
+
+![Icône Modifier](assets/edit.png)
+
+Appuyez ou cliquez sur le bouton Modifier pour ouvrir la [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) dans un nouvel onglet. Cela vous permet d’accéder à toute la puissance de l’éditeur de fragments de contenu pour modifier le fragment de contenu associé.
+
+Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu dans l’éditeur universel ou directement dans l’éditeur de fragment de contenu.
+
+>[!TIP]
+>
+>Utiliser la touche chaude `E` pour modifier un composant sélectionné.
+
 #### Mode Arborescence de contenu {#content-tree-mode}
 
 En mode Arborescence de contenu, le rail affiche la hiérarchie du contenu de la page.
@@ -258,21 +263,7 @@ Lors de la sélection d’un élément dans l’arborescence de contenu, l’éd
 >
 >Utiliser la touche chaude `F` pour passer en mode arborescence de contenu.
 
-#### Modifier {#edit}
-
-Dans [mode composant,](#component-mode) si vous sélectionnez une [Fragment de contenu,](/help/assets/content-fragments/content-fragments.md) l’option de modification s’affiche sur le rail des composants.
-
-![Icône Modifier](assets/edit.png)
-
-Appuyez ou cliquez sur le bouton Modifier pour ouvrir la [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) dans un nouvel onglet, ce qui vous permet d’accéder à toutes les fonctionnalités de l’éditeur de fragments de contenu.
-
-Vous pouvez également modifier les détails du fragment de contenu dans le rail des composants en fonction des besoins de votre workflow.
-
->[!TIP]
->
->Utiliser la touche chaude `E` pour modifier un composant sélectionné.
-
-#### Ajouter {#add}
+##### Ajouter {#add}
 
 Si vous sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option d’ajout s’affiche sur le rail du composant.
 
@@ -284,7 +275,7 @@ Appuyez ou cliquez sur le bouton d’ajout pour ouvrir un menu déroulant des co
 >
 >Utiliser la touche chaude `A` pour ajouter un composant à un composant de conteneur sélectionné.
 
-#### Supprimer {#delete}
+##### Supprimer {#delete}
 
 Si vous sélectionnez un composant dans un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option de suppression s’affiche sur le rail du composant.
 
@@ -298,33 +289,39 @@ Appuyez ou cliquez sur le bouton de suppression [supprime le composant.](#deleti
 
 ## Modification du contenu {#editing-content}
 
-La modification du contenu est simple et intuitive. Dans les modes de modification ([mode texte](#text-mode), [mode média](#media-mode), et [mode composant](#component-mode)), lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable est mis en surbrillance avec une zone bleue.
+La modification du contenu est simple et intuitive. Dans les modes de modification ([mode média](#media-mode) et [mode composant](#component-mode)), lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable est mis en surbrillance avec une zone bleue.
 
 ![Le contenu modifiable est mis en surbrillance dans une case bleue.](assets/editable-content.png)
 
-Notez qu’en mode d’édition, le fait d’appuyer ou de cliquer sur du contenu sélectionne ce dernier en vue de le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez en [mode Aperçu.](#preview-mode)
+>[!TIP]
+>
+>Notez qu’en mode d’édition, appuyer ou cliquer sur le contenu le sélectionne pour le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez en [mode Aperçu.](#preview-mode)
 
 Selon le [mode](#mode-rail) vous vous trouvez dans et le contenu que vous sélectionnez ; il se peut que vous disposiez de différentes options de modification en place et que vous puissiez consulter des propriétés supplémentaires pour le contenu à l’aide de la variable [rail de composant.](#component-rail)
 
 ### Modification de texte brut {#edit-plain-text}
 
-Si vous êtes dans [mode texte](#text-mode) et sélectionnez un composant de texte brut, vous pouvez modifier le texte en place.
+Si vous êtes dans [mode composant](#component-mode) et sélectionnez un composant de texte brut, vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fois sur le composant.
 
 ![Modification du contenu](assets/editing-content.png)
 
-Il vous suffit de saisir pour mettre à jour le contenu. Appuyez sur Entrée/Retour ou appuyez ou cliquez en dehors de la zone de texte pour enregistrer vos modifications.
+Appuyez sur Entrée/Retour ou appuyez ou cliquez en dehors de la zone de texte pour enregistrer vos modifications.
+
+Lorsque vous appuyez ou cliquez pour sélectionner le composant de texte, ses détails s’affichent dans le rail du composant. Vous pouvez également modifier le texte dans le rail.
+
+![Modification du texte dans le rail du composant](assets/ue-editing-text-component-rail.png)
+
+De plus, des détails sur votre texte sont disponibles dans le rail de composant. Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le rail du composant.
 
 ### Modification de texte enrichi {#edit-rich-text}
 
-Si vous êtes dans [mode texte](#text-mode) et sélectionnez un composant de texte enrichi, vous pouvez modifier le texte en place.
+Si vous êtes dans [mode composant](#component-mode) et sélectionnez un composant de texte enrichi, vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fois sur le composant.
 
-Il vous suffit de saisir pour mettre à jour le contenu. Appuyez sur Entrée/Retour ou appuyez ou cliquez en dehors de la zone de texte pour enregistrer vos modifications.
-
-En outre, les options de mise en forme et les détails de votre texte sont disponibles dans le rail du composant.
+Appuyez sur Entrée/Retour ou appuyez ou cliquez en dehors de la zone de texte pour enregistrer vos modifications.
 
 ![Modification d’un composant de texte enrichi](assets/rich-text-editing.png)
 
-Les modifications de mise en forme sont automatiquement enregistrées dans votre contenu.
+En outre, les options de mise en forme et les détails de votre texte sont disponibles dans le rail du composant. Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le rail du composant.
 
 ### Modification du média {#edit-media}
 
@@ -352,9 +349,13 @@ Si vous êtes dans [mode composant](#component-mode) et vous sélectionnez une [
 
 Les champs définis dans le modèle de contenu du fragment de contenu sélectionné sont affichés et modifiables dans le rail du composant.
 
-Les modifications sont automatiquement enregistrées dans votre contenu.
+Si vous sélectionnez un champ lié à un fragment de contenu, celui-ci se charge dans le rail des composants et le champ est automatiquement défilé vers .
+
+Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le rail du composant.
 
 Si vous souhaitez modifier votre fragment de contenu dans le [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) cliquez sur [bouton d’édition](#edit) dans le rail de mode.
+
+Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu dans l’éditeur universel ou directement dans l’éditeur de fragment de contenu.
 
 ### Ajout de composants aux conteneurs {#adding-components}
 
@@ -364,6 +365,10 @@ Si vous souhaitez modifier votre fragment de contenu dans le [Éditeur de fragme
    ![Sélectionner un composant à ajouter à un conteneur](assets/ue-add-component.png)
 
 Le composant est inséré dans le conteneur et peut être modifié dans l’éditeur.
+
+>[!TIP]
+>
+>Utiliser la touche chaude `A` pour ajouter un composant au conteneur sélectionné.
 
 ### Suppression de composants des conteneurs {#deleting-components}
 
@@ -376,6 +381,10 @@ Le composant est inséré dans le conteneur et peut être modifié dans l’édi
 
 Le composant sélectionné a été supprimé.
 
+>[!TIP]
+>
+>Utiliser la touche chaude `Shift+Backspace` pour supprimer le composant sélectionné de son conteneur.
+
 ### Réorganisation des composants dans les conteneurs {#reordering-components}
 
 1. Sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur.
@@ -384,6 +393,7 @@ Le composant sélectionné a été supprimé.
 1. Faites glisser les icônes de poignée en regard des composants dans le conteneur pour afficher que vous puissiez les réorganiser. Faites glisser les composants pour les réorganiser dans le conteneur.
 
    ![Réorganisation des composants](assets/ue-reordering-components.png)
+
 1. Le composant déplacé devient gris dans l’arborescence du composant, tandis que votre point d’insertion est représenté par une ligne bleue. Libérez le composant pour le placer à son nouvel emplacement.
 
 Les composants sont réorganisés dans l’arborescence de contenu et dans l’éditeur.
@@ -392,7 +402,7 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 
 Une fois le contenu modifié, vous aimez généralement le parcourir pour voir à quoi il ressemble dans le contenu d’autres pages. En [mode Aperçu](#preview-mode), vous pouvez cliquer sur les liens pour parcourir votre contenu comme le ferait un lecteur ou une lectrice. Le contenu est rendu dans l’éditeur tel qu’il serait publié.
 
-Notez qu’en mode Aperçu, le fait d’appuyer ou de cliquer sur le contenu fait réagir ce dernier comme il le ferait avec un lecteur ou une lectrice du contenu. Si vous souhaitez sélectionner le contenu à modifier, basculez vers un mode de modification tel que [mode texte](#text-mode) ou [mode média.](#media-mode)
+Notez qu’en mode Aperçu, le fait d’appuyer ou de cliquer sur le contenu fait réagir ce dernier comme il le ferait avec un lecteur ou une lectrice du contenu. Si vous souhaitez sélectionner le contenu à modifier, basculez vers un mode de modification tel que [mode composant](#component-mode) ou [mode média.](#media-mode)
 
 ## Ressources supplémentaires {#additional-resources}
 
