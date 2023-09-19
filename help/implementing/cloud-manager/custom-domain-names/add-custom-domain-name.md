@@ -2,10 +2,10 @@
 title: Ajout d’un nom de domaine personnalisé
 description: Découvrez comment ajouter un nom de domaine personnalisé à l’aide de Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 600288a87e024fbe58ff605a8bcdc61535cc0759
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 79%
+source-wordcount: '601'
+ht-degree: 74%
 
 ---
 
@@ -18,11 +18,11 @@ Vous pouvez ajouter un nom de domaine personnalisé à partir de deux emplacemen
 
 >[!NOTE]
 >
->Un utilisateur doit disposer de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** rôle pour ajouter un nom de domaine personnalisé dans Cloud Manager
+>Un utilisateur doit disposer de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour ajouter un nom de domaine personnalisé dans Cloud Manager. Vous devez utiliser le réseau de diffusion de contenu Fastly.
 
 ## Ajout d’un nom de domaine personnalisé à partir de la page Paramètres du domaine {#adding-cdn-settings}
 
-Suivez la procédure suivante pour ajouter un nom de domaine personnalisé à partir de la page **Paramètres du domaine**.
+Suivez la procédure suivante pour ajouter un nom de domaine personnalisé à partir de la page **Paramètres du domaine.** Si vous utilisez un autre réseau de diffusion de contenu que celui fourni le plus rapidement, ces étapes ne fonctionneront pas pour vous et vous devez configurer votre domaine avec le réseau de diffusion de contenu que vous avez configuré.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
@@ -42,7 +42,7 @@ Suivez la procédure suivante pour ajouter un nom de domaine personnalisé à pa
    >
    >N’incluez pas `http://`, `https://` ni d’espace lors de la saisie dans votre domaine.
 
-1. Sélectionnez la **Environnement** dont le service est associé au nom de domaine.
+1. Sélectionnez la variable **Environnement** dont le service est associé au nom de domaine.
 
 1. Sélectionnez le service **Publier** ou **Aperçu**.
 
