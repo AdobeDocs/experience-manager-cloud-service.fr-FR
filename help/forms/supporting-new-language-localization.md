@@ -2,10 +2,10 @@
 title: Ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif
 description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. Paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR).
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 89%
+source-wordcount: '1251'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 89%
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=fr) |
-| AEM as a Cloud Service | Cet article |
 
 AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN).
 
@@ -31,7 +30,7 @@ La localisation des formulaires adaptatifs repose sur deux types de dictionnaire
 
 ## Ajouter la prise en charge de nouveaux paramètres régionaux {#add-support-for-new-locales}
 
-Pour ajouter la prise en charge d’un nouveau paramètre régional, procédez comme suit :
+Pour ajouter la prise en charge d’un paramètre régional, procédez comme suit :
 
 1. [Ajoutez la localisation pour les paramètres régionaux non pris en charge](#add-localization-support-for-non-supported-locales)
 1. [Utilisez les paramètres régionaux ajoutés dans Adaptive Forms](#use-added-locale-in-af)
@@ -40,7 +39,7 @@ Pour ajouter la prise en charge d’un nouveau paramètre régional, procédez c
 
 AEM Forms prend actuellement en charge la localisation du contenu de formulaire adaptatif en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésl (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR).
 
-Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formulaires adaptatifs :
+Pour ajouter la prise en charge d’un paramètre régional :
 
 1. [Clonez votre référentiel](#clone-the-repository)
 1. [Ajoutez des paramètres régionaux au service GuideLocalizationService](#add-a-locale-to-the-guide-localization-service)
@@ -114,12 +113,12 @@ Avant de valider les modifications dans le référentiel Git d’AEM, vous devez
 
 #### 5. Valider les modifications dans le référentiel et déployer le pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Validez les modifications dans le référentiel GIT après l’ajout d’une nouvelle prise en charge de paramètres régionaux. Déployez votre code à l’aide du pipeline de pile pleine. Découvrez [comment configurer un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) pour ajouter une nouvelle prise en charge de paramètres régionaux.
+Validez les modifications dans le référentiel GIT après l’ajout d’une prise en charge des paramètres régionaux. Déployez votre code à l’aide du pipeline de pile pleine. Découvrez [comment configurer un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) pour ajouter une nouvelle prise en charge de paramètres régionaux.
 Une fois le pipeline terminé, le nouveau paramètre régional ajouté apparaît dans l’environnement AEM.
 
 ### Utiliser des paramètres régionaux ajoutés dans les formulaires adaptatifs {#use-added-locale-in-af}
 
-Effectuez les étapes suivantes pour utiliser et générer un formulaire adaptatif à l’aide d’un paramètre régional nouvellement ajouté :
+Effectuez les étapes suivantes pour utiliser et générer un formulaire adaptatif à l’aide des paramètres régionaux nouvellement ajoutés :
 
 1. Connectez-vous à votre instance de création AEM.
 1. Accédez à **Formulaires** > **Formulaires et documents**.
