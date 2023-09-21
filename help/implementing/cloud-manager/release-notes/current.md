@@ -3,9 +3,9 @@ title: Notes de mise à jour de Cloud Manager 2023.9.0 dans Adobe Experience�
 description: Consultez les notes de mise à jour de Cloud Manager 2023.9.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '443'
 ht-degree: 19%
 
 ---
@@ -55,6 +55,6 @@ Vous souhaitez tester le nouveau tableau de bord ? Veuillez envoyer un e-mail à
 
 ## Correctifs {#bug-fixes}
 
-* Lorsqu’un programme est supprimé, tout pipeline associé en cours d’exécution est également supprimé, en s’assurant que le pipeline n’est pas incorrectement désigné comme état d’échec.
-* Le bouton Terminer la mise en service est désactivé et informe l’utilisateur de la raison pour laquelle un pipeline est en cours.
-* Parfois, lorsque toutes les étapes d’exécution d’un pipeline sont &quot;terminées&quot;, l’état du pipeline est considéré comme &quot;en cours d’exécution&quot;, ce qui donne l’impression qu’il est en état de blocage. Il est maintenant considéré comme &quot;terminé&quot;.
+* Lorsqu’un programme est supprimé, tout pipeline associé en cours d’exécution est désormais également supprimé.
+* Si un pipeline est en cours, la variable **Envoyer** du bouton **Fin de la mise en ligne** La boîte de dialogue est maintenant désactivée et informe l’utilisateur que la date d’activation ne peut pas être définie en raison du pipeline en cours d’exécution.
+* Une erreur occasionnelle a été corrigée lorsque toutes les étapes d’une exécution de pipeline étaient marquées comme étant terminées, mais que l’état du pipeline était toujours en cours d’exécution, ce qui donnait l’apparence d’un état bloqué.
