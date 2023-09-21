@@ -1,7 +1,7 @@
 ---
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
 description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs.
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 48%
@@ -48,7 +48,7 @@ AEM Forms prend actuellement en charge la localisation du contenu de formulaire
 
 ![Ajouter un paramètre régional à un référentiel](add-a-locale-adaptive-form-core-components.png)
 
-### 1. Cloner votre référentiel Git as a Cloud Service AEM {#clone-the-repository}
+### Cloner votre référentiel Git as a Cloud Service AEM {#clone-the-repository}
 
 1. Ouvrez la ligne de commande et sélectionnez un répertoire pour stocker le référentiel, tel que `/cloud-service-repository/`.
 
@@ -63,7 +63,7 @@ AEM Forms prend actuellement en charge la localisation du contenu de formulaire
    Une fois la commande terminée, un dossier `<my-program>` est créée. Il contient le contenu cloné à partir du référentiel Git. Dans le reste de l’article, le dossier est appelé : `[AEM Forms as a Cloud Service Git repostory]`.
 
 
-### 2. Ajoutez le nouveau paramètre régional au Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
+### Ajouter le nouveau paramètre régional au Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
 
 1. Ouvrez le dossier du référentiel, cloné dans la section précédente, dans un éditeur de texte brut.
 1. Accédez au dossier `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. Vous pouvez trouver la variable `<appid>` dans le `archetype.properties` fichiers du projet.
@@ -74,7 +74,7 @@ AEM Forms prend actuellement en charge la localisation du contenu de formulaire
 1. Ajoutez la variable [code du paramètre régional pour la langue](https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1) vous souhaitez ajouter, par exemple, &quot;hi&quot; pour le hindi.
 1. Enregistrez et fermez le fichier.
 
-### 3. Création d’une bibliothèque cliente pour ajouter un paramètre régional
+### Création d’une bibliothèque cliente pour ajouter un paramètre régional
 
 AEM Forms fournit un exemple de bibliothèque cliente pour vous aider à ajouter facilement de nouveaux paramètres régionaux. Vous pouvez télécharger et ajouter le `clientlib-it-custom-locale` Bibliothèque cliente du référentiel des composants principaux de Forms adaptatif sur GitHub vers votre référentiel Forms as a Cloud Service. Pour ajouter la bibliothèque cliente, procédez comme suit :
 
@@ -84,7 +84,7 @@ AEM Forms fournit un exemple de bibliothèque cliente pour vous aider à ajouter
 1. Accédez à `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` et collez le `clientlib-it-custom-locale` répertoire .
 
 
-### 4. Création d’un fichier spécifique aux paramètres régionaux {#locale-specific-file}
+### Création d’un fichier spécifique aux paramètres régionaux {#locale-specific-file}
 
 1. Accédez à `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`.
 1. Recherchez la variable [Fichier .json de paramètres régionaux anglais sur GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), qui contient le dernier ensemble de chaînes par défaut inclus dans le produit.
@@ -94,7 +94,7 @@ AEM Forms fournit un exemple de bibliothèque cliente pour vous aider à ajouter
 1. Enregistrez et fermez le fichier.
 
 
-### 4. Ajout de la prise en charge des paramètres régionaux au dictionnaire {#add-locale-support-for-the-dictionary}
+### Ajout de la prise en charge des paramètres régionaux au dictionnaire {#add-locale-support-for-the-dictionary}
 
 Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez ne se trouve pas parmi `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -133,7 +133,7 @@ Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez n
 
    ![Ajoutez les dossiers nouvellement créés dans le `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 5. Validez les modifications et déployez le pipeline {#commit-changes-in-repo-deploy-pipeline}
+### Validation des modifications et déploiement du pipeline {#commit-changes-in-repo-deploy-pipeline}
 
 Validez les modifications dans le référentiel GIT après l’ajout d’une nouvelle prise en charge de paramètres régionaux. Déployez votre code à l’aide du pipeline de pile pleine. Découvrez [comment configurer un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) pour ajouter une nouvelle prise en charge de paramètres régionaux.
 Une fois le pipeline terminé, le nouveau paramètre régional ajouté apparaît dans l’environnement AEM.
