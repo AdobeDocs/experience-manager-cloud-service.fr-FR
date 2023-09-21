@@ -5,9 +5,9 @@ topic-tags: author
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: b3aac0cb7682f66c72c32ebf706f5db4067b12ed
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1680'
 ht-degree: 23%
 
 ---
@@ -43,6 +43,11 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
    ![Affiche le type de modèle dans l’onglet Modèle de formulaire.](assets/create-af-1-1.png)
 
    * **Aucun**: indique de créer le fragment à partir de zéro sans utiliser de modèle de formulaire.
+
+     >[!NOTE]
+     >
+     >L’avantage des fragments basés sur des composants principaux par rapport aux fragments basés sur des composants de base est la possibilité d’utiliser plusieurs fragments basés sur des composants principaux non liés à un modèle de formulaire dans un seul formulaire adaptatif.
+
    * **Schéma**: indique de créer le fragment à l’aide d’un schéma XML ou JSON téléchargé dans AEM Forms. Vous pouvez charger ou sélectionner dans les schémas XML ou JSON disponibles comme modèle de formulaire pour le fragment. Lorsque vous sélectionnez un schéma XML, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant un type complexe présent dans le schéma sélectionné à partir de la propriété **[!UICONTROL Type complexe de schéma XML]** menu déroulant. Lorsque vous sélectionnez un schéma JSON, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant une définition de schéma présente dans le schéma sélectionné à partir du **[!UICONTROL Définitions de schéma JSON]** menu déroulant.
    * **Modèle de données de formulaire**: indique de créer le fragment à l’aide d’un modèle de données de formulaire. Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire. Développez la liste déroulante Définitions de modèle de données de formulaire . Il répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié. Sélectionnez un objet de modèle de données dans la liste.
 
