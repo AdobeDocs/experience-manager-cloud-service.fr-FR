@@ -1,10 +1,10 @@
 ---
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
 description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
-source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
+source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 26%
+source-wordcount: '1484'
+ht-degree: 27%
 
 ---
 
@@ -16,12 +16,11 @@ ht-degree: 26%
 | Composants de base | [Cliquez ici](supporting-new-language-localization.md) |
 | Composants principaux | Cet article |
 
-AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). 
+AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN).
 
 ## Comment le paramètre régional est-il sélectionné pour un formulaire adaptatif ?
 
-
-Il existe deux méthodes pour identifier et sélectionner les paramètres régionaux d’un formulaire adaptatif lors de son rendu :
+Avant de commencer à ajouter de nouveaux paramètres régionaux pour le Forms adaptatif, vous devez comprendre comment un paramètre régional est sélectionné pour un formulaire adaptatif. Il existe deux méthodes pour identifier et sélectionner les paramètres régionaux d’un formulaire adaptatif lors de son rendu :
 
 * **En utilisant la variable [locale] Sélecteur dans l’URL**: lors du rendu d’un formulaire adaptatif, le système identifie les paramètres régionaux requis en examinant la variable [locale] dans l’URL du formulaire adaptatif. L&#39;URL suit ce format : http:/[URL du serveur AEM Forms]/content/forms/af/[afName].[locale].html?wcmmode=disabled. L’utilisation de la variable [locale] Le sélecteur permet la mise en cache du formulaire adaptatif.
 
