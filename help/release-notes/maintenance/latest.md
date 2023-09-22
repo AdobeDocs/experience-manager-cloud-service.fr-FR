@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 8a1ed1e44db0154854af73a96339d8e416afd3b4
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 36%
+source-wordcount: '295'
+ht-degree: 35%
 
 ---
 
@@ -17,7 +17,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 13420, publiée publiquement le 12 septembre 2023. Cette version de maintenance remplace la version 13323.
 
-2023.9.0 Feature Activation fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
+L’activation des fonctionnalités de la version 2023.9.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
 ### Améliorations {#enhancements-13420}
 
@@ -48,7 +48,7 @@ Aucun.
 
 | Technologie | Version | Lien |
 |---|---|---|
-| AEM OAK | 1.54-T20230817132355-3800a65 | [API Oak 1.54.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
+| AEM Oak | 1.54-T20230817132355-3800a65 | [API Oak 1.54.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
 | API SLING AEM | Version 2.27.2 | [API Apache Sling 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version 1.4.20-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
 | Composants principaux d’AEM | Version 2.23.2 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |

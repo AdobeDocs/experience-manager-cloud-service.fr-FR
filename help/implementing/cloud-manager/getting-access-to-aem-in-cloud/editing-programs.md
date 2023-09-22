@@ -2,20 +2,20 @@
 title: Modification de programmes
 description: Découvrez comment modifier vos programmes de production et Sandbox pour ajuster leurs options après les avoir créés.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 85%
+source-wordcount: '502'
+ht-degree: 44%
 
 ---
 
 # Modification de programmes {#editing-programs}
 
-Les utilisateurs disposant des autorisations requises peuvent modifier [programmes de production créés dans votre organisation](creating-production-programs.md) et [programmes sandbox créés dans votre entreprise.](creating-sandbox-programs.md) En modifiant un programme, vous pouvez :
+Les utilisateurs disposant des autorisations requises peuvent modifier [programmes de production créés dans votre organisation](creating-production-programs.md) et [programmes sandbox créés dans votre entreprise.](creating-sandbox-programs.md) En éditant un programme, vous pouvez :
 
-* Ajouter la solution Sites à un programme existant avec Assets et inversement.
+* Ajoutez la solution Sites à un programme existant avec Assets et inversement.
 * Supprimer Sites ou Assets d’un programme existant contenant à la fois Sites et Assets.
-* Ajouter un deuxième droit non utilisé sur une solution à un programme existant ou à titre de nouveau programme.
+* Ajoutez un second droit de solution inutilisé à un programme existant ou en tant que nouveau programme.
 * Supprimer les programmes Sandbox.
 
 ## Autorisations {#permissions}
@@ -24,11 +24,9 @@ Vous devez être membre du rôle **Propriétaire de l’entreprise** pour modifi
 
 ## Modifier un programme {#editing}
 
-Pour modifier un programme, procédez comme suit.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
-
-1. Cliquez sur le programme que vous souhaitez modifier pour en afficher les détails.
+1. Cliquez sur le programme à modifier pour en afficher les détails.
 
 1. Cliquez sur le nom de votre programme dans le coin supérieur gauche de la page, puis sélectionnez **Modifier le programme**.
 
@@ -44,7 +42,7 @@ Pour modifier un programme, procédez comme suit.
 
    ![Solutions sélectionnées](assets/edit-prg.png)
 
-1. Cliquez sur le chevron situé avant les noms des solutions pour afficher les modules complémentaires facultatifs, tels que la sélection de l’option de module complémentaire **Commerce** sous **Sites**.
+1. Cliquez sur le chevron situé avant le nom de la solution pour afficher les modules complémentaires facultatifs, tels que la sélection de la variable **Commerce** option de module complémentaire sous **Sites**.
 
    ![Modifier les modules complémentaires](assets/edit-program-add-on.png)
 
@@ -52,34 +50,34 @@ Pour modifier un programme, procédez comme suit.
 
    ![Modifier les paramètres de mise en production](assets/edit-program-go-live.png)
 
-   * Cette date est destinée à un usage informatif uniquement et déclenche le widget de mise en production sur la page d’aperçu du programme pour fournir des liens internes au produit vers la documentation des bonnes pratiques d’AEM as a Cloud Service en temps opportun, afin de vous aligner avec votre parcours et d’offrir ainsi une expérience de mise en production réussie et fluide.
+   * Cette date est fournie à titre d’information uniquement. Il déclenche le widget GoLive sur la page d’aperçu du programme. De son côté, il fournit des liens internes au produit vers la documentation des bonnes pratiques as a Cloud Service de Adobe Experience Manager (AEM) pour s’aligner sur votre parcours, ce qui a abouti à une expérience GoLive réussie.
    * Cet onglet n’est pas disponible pour les programmes Sandbox.
 
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications dans le programme.
 
-Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
+Chaque fois qu’un programme est modifié, y compris l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
 
 Si la sécurité de votre programme de production a été améliorée, une **Sécurité renforcée** est disponible dans la **Modifier le programme** pour confirmer que la fonctionnalité est active pour le programme.
 
 ![Sécurité renforcée activée pour un programme.](assets/edit-program-enhanced.png)
 
-Ce paramètre ne peut pas être modifié une fois le programme créé. Pour plus d’informations sur l’option de sécurité améliorée, voir [Création de programmes de production](creating-production-programs.md) document.
+Vous ne pouvez pas modifier ce paramètre une fois le programme créé. Pour plus d’informations sur l’option de sécurité améliorée, voir [Création de programmes de production](creating-production-programs.md).
 
 ## Suppression de programmes Sandbox {#delete-sandbox-program}
 
-La suppression d’un programme Sandbox supprimera tous les environnements et les pipelines qui y sont associés.
+La suppression d’un programme d’environnement de test supprime tous les environnements et pipelines qui y sont associés.
 
 >[!TIP]
 >
 >Les utilisateurs avec des rôles de **Propriétaire de l’entreprise** ou **Responsable du déploiement** peuvent également supprimer leurs environnements de production et d’évaluation plutôt que l’ensemble du programme Sandbox.
 
-Pour supprimer un programme Sandbox, procédez comme suit.
+Pour supprimer un programme sandbox, procédez comme suit.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Cliquez sur le programme que vous souhaitez modifier pour en afficher les détails.
+1. Cliquez sur le programme à modifier pour en afficher les détails.
 
-1. Cliquez sur le nom de votre programme dans le coin supérieur gauche de la page et sélectionnez **Supprimer le programme**.
+1. Cliquez sur le nom de votre programme en haut à gauche de la page, puis sélectionnez **Supprimer le programme**.
 
    ![Option Supprimer le programme](assets/delete-sandbox1.png)
 

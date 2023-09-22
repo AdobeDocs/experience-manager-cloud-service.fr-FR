@@ -1,11 +1,11 @@
 ---
 title: Migration des groupes d’utilisateurs fermés
-description: Cette page contient les considérations spéciales nécessaires pour activer les groupes d’utilisateurs fermés après la migration de contenu vers Adobe Experience Manager as a Cloud Service.
+description: Découvrez les points à prendre en compte pour activer les groupes d’utilisateurs fermés après la migration de contenu vers Adobe Experience Manager as a Cloud Service.
 hide: true
 hidefromtoc: true
-source-git-commit: 9da813d39d154e81da5b9814aa86b8318dc0bb3a
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '462'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 >abstract="La migration des groupes d’utilisateurs et utilisatrices fermés (CUG) nécessite actuellement quelques vérifications et étapes pour être opérationnelle après une migration."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=fr" text="Groupes d’utilisateurs fermés dans AEM"
 
-Actuellement, les groupes d’utilisateurs fermés (CUG) ont besoin de certaines étapes supplémentaires pour être fonctionnels dans l’environnement de destination d’une migration.  Ce document explique le scénario et les étapes requises pour leur permettre de protéger les noeuds de la manière prévue.
+Actuellement, les groupes d’utilisateurs fermés (CUG) ont besoin de certaines étapes supplémentaires pour être fonctionnels dans l’environnement de destination d’une migration. Ce document explique le scénario et les étapes requises pour leur permettre de protéger les noeuds de la manière prévue.
 
 ## Migration des groupes
 
@@ -26,24 +26,24 @@ Les entités principales (y compris les groupes) sont automatiquement incluses d
 
 ## Groupes d’utilisateurs fermés dans la migration
 
-Actuellement, groupes associés *only* avec une stratégie Groupe d’utilisateurs fermé (CUG) : *not* automatiquement inclus dans l’ingestion. Comme indiqué ci-dessus, ils seront migrés s’ils sont associés à un contenu quelconque par le biais d’une liste de contrôle d’accès. La vérification du groupe et de ses membres doit être effectuée avant la mise en ligne. Le rapport Principal, téléchargé via la vue Tâche d’ingestion, peut être utilisé pour déterminer si le groupe en question a été inclus ou non parce qu’il ne se trouvait pas dans une liste de contrôle d’accès. Si le groupe n’existe pas, il doit être créé dans l’instance d’auteur, y compris en ajoutant les membres appropriés, et activé afin qu’il existe sur l’instance de publication. Vous pouvez le faire à l’aide de packages créés sur la source.
+Actuellement, groupes associés *only* avec une stratégie Groupe d’utilisateurs fermé (CUG) : *not* automatiquement inclus dans l’ingestion. Comme indiqué ci-dessus, ils sont migrés s’ils sont associés à un contenu par le biais d’une liste de contrôle d’accès. La vérification du groupe et de ses membres doit être effectuée avant la mise en ligne. Le rapport Principal, téléchargé via la vue Tâche d’ingestion, peut être utilisé pour déterminer si le groupe en question a été inclus ou non parce qu’il ne se trouvait pas dans une liste de contrôle d’accès. Si le groupe n’existe pas, il doit être créé dans l’instance d’auteur, y compris en ajoutant les membres appropriés, et activé pour qu’il existe sur l’instance de publication. Vous pouvez le faire à l’aide de packages créés sur la source.
 
-Enfin, les processus doivent être déclenchés et les propriétés doivent être définies pour activer les CUG. Pour ce faire, republiez toutes les pages associées à une stratégie de CUG. L’instance de publication est ainsi calibrée pour effectuer le suivi des stratégies.
+Enfin, les processus doivent être déclenchés et les propriétés doivent être définies pour activer les CUG. Pour ce faire, republiez toutes les pages associées à une stratégie de CUG. Cette opération calibre l’instance de publication pour effectuer le suivi des stratégies.
 
-Les stratégies de CUG seront ainsi activées lors de la publication, et le contenu sera uniquement accessible aux utilisateurs authentifiés qui sont membres du groupe associé aux stratégies.
+Cela active les stratégies de CUG lors de la publication et le contenu n’est accessible que pour les utilisateurs authentifiés qui sont membres du groupe associé aux stratégies.
 
 ## Développement actif
 
 L’équipe de migration s’efforce de faire migrer et fonctionner automatiquement les stratégies de CUG, sans aucune étape supplémentaire après l’ingestion du contenu.
-Il est conseillé d’inclure la fonctionnalité CUG dans tout processus de test avant de tenter de passer en ligne.
+Incluez la fonctionnalité CUG dans tout processus de test avant de tenter de passer en ligne.
 
 ## Résumé
 
 En résumé, voici les étapes pour activer CUG après une migration :
 
 1. Assurez-vous que chaque groupe utilisé dans les stratégies de CUG existe sur Publier après la migration.
-   - Un groupe peut déjà exister s’il est inclus dans l’ACL d’un contenu migré.
-   - Si ce n’est pas le cas, utilisez les packages pour l’installer sur l’instance de destination (ou créez-la manuellement) et l’activer ainsi que ses membres. Vérifiez ensuite qu’il existe sur la publication.
+   - Un groupe peut exister s’il est inclus dans l’ACL d’un contenu migré.
+   - Si ce n’est pas le cas, utilisez Packages pour l’installer sur l’instance de destination (ou créez-la manuellement) et l’activer ainsi que ses membres. Vérifiez ensuite qu’il existe sur la publication.
 1. Republiez toutes les pages associées à une stratégie de CUG, en vous assurant qu’elles sont publiées, par exemple en modifiant d’abord la page. Il est important de tous les republier.
    - Une fois toutes les pages republiées, vérifiez la fonctionnalité de chaque page protégée par un groupe d’utilisateurs fermé.
 
