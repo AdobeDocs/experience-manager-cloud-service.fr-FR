@@ -1,15 +1,15 @@
 ---
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
-description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs.
-source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
+description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
+source-git-commit: 056aecd0ea1fd9ec1e4c05299d2c50bca161615f
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 33%
+source-wordcount: '1413'
+ht-degree: 28%
 
 ---
 
-# Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux {#supporting-new-locales-for-adaptive-forms-localization}
 
+# Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux {#supporting-new-locales-for-adaptive-forms-localization}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -18,26 +18,32 @@ ht-degree: 33%
 
 AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). 
 
-Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN).
+## Comment les paramètres régionaux sont-ils sélectionnés pour un formulaire adaptatif ?
 
-<!-- 
-## Understanding locale dictionaries {#about-locale-dictionaries}
+Il existe deux méthodes pour identifier et sélectionner les paramètres régionaux d’un formulaire adaptatif lors de son rendu :
 
-The localization of adaptive forms relies on two types of locale dictionaries:
+* **En utilisant la variable [locale] Sélecteur dans l’URL**: lors du rendu d’un formulaire adaptatif, le système identifie les paramètres régionaux requis en examinant la variable [locale] dans l’URL du formulaire adaptatif. L&#39;URL suit ce format : http:/[URL du serveur AEM Forms]/content/forms/af/[afName].[locale].html?wcmmode=disabled. L’utilisation de la variable [locale] Le sélecteur permet la mise en cache du formulaire adaptatif.
 
-*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+* Récupération des paramètres dans l’ordre indiqué ci-dessous :
 
-*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+   * Paramètre de requête `afAcceptLang`: pour remplacer les paramètres régionaux du navigateur de l’utilisateur, vous pouvez transmettre le paramètre de requête afAcceptLang . Par exemple, cette URL applique le rendu du formulaire en français canadien : `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
 
--->
+   * Paramètre régional du navigateur (en-tête Accept-Language) : le système prend également en compte le paramètre régional du navigateur de l’utilisateur, qui est spécifié dans la requête à l’aide de la variable `Accept-Language` en-tête .
+
+  Si une bibliothèque cliente correspondant au paramètre régional requis n’est pas disponible, le système vérifie si une bibliothèque cliente existe pour le code de langue dans le paramètre régional. Par exemple, si le paramètre régional requis est `en_ZA` (en anglais sud-africain) et il n’y a pas de bibliothèque cliente pour `en_ZA`, le formulaire adaptatif utilise la bibliothèque cliente pour en (anglais) si disponible. Si aucun de ces éléments n’est trouvé, le formulaire adaptatif a recours au dictionnaire pour la variable `en` locale.
+
+  Une fois le paramètre régional identifié, le formulaire adaptatif sélectionne le dictionnaire correspondant spécifique au formulaire. Si le dictionnaire correspondant au paramètre régional requis est introuvable, il utilise par défaut le dictionnaire dans la langue dans laquelle le formulaire adaptatif a été créé.
+
+  Dans les cas où aucune information locale n’est disponible, le formulaire adaptatif s’affiche dans sa langue d’origine, qui est la langue utilisée lors du développement du formulaire.
+
 
 ## Conditions préalables requises {#prerequistes}
 
 Avant de commencer à ajouter la prise en charge d’un nouveau paramètre régional,
 
-* Installez un éditeur de texte brut (IDE) pour faciliter la modification. Les exemples de ce document sont basés sur Microsoft VS Code.
+* Installez un éditeur de texte brut (IDE) pour faciliter la modification. Les exemples de ce document sont basés sur Microsoft® Visual Studio Code.
 * Cloner le référentiel des composants principaux de Forms adaptatif. Pour cloner le référentiel :
-   1. Ouvrez la ligne de commande ou la fenêtre centrale et accédez à un emplacement de stockage du référentiel. Par exemple, `/adaptive-forms-core-components`
+   1. Ouvrez la ligne de commande ou la fenêtre de terminal et accédez à un emplacement pour stocker le référentiel. Par exemple, `/adaptive-forms-core-components`
    1. Exécutez la commande suivante pour cloner le référentiel :
 
       ```SHELL
@@ -63,20 +69,20 @@ Pour ajouter la prise en charge d’un nouveau paramètre régional, procédez c
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   Remplacer `<my-org>` et `<my-program>` dans l&#39;URL ci-dessus avec le nom de votre organisation et le nom de votre programme. Pour obtenir des instructions détaillées sur le nom de l’organisation, le nom du programme ou le chemin d’accès complet à votre référentiel Git et les informations d’identification requises pour cloner le référentiel, reportez-vous à la section [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article.
+   Remplacer `<my-org>` et `<my-program>` dans l’URL ci-dessus avec le nom de votre organisation et le nom du programme. Pour obtenir des instructions détaillées sur le nom de l’organisation, le nom du programme ou le chemin d’accès complet à votre référentiel Git et les informations d’identification requises pour cloner le référentiel, reportez-vous à la section [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article.
 
-   Une fois la commande terminée, un dossier `<my-program>` est créée. Il contient le contenu cloné à partir du référentiel Git. Dans le reste de l’article, le dossier est appelé : `[AEM Forms as a Cloud Service Git repostory]`.
+   Une fois la commande terminée, un dossier `<my-program>` est créée. Il contient le contenu cloné à partir du référentiel Git. Dans le reste de l’article, le dossier est appelé : `[AEM Forms as a Cloud Service Git repository]`.
 
 
 ### Ajouter le nouveau paramètre régional au Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
 
 1. Ouvrez le dossier du référentiel, cloné dans la section précédente, dans un éditeur de texte brut.
-1. Accédez au dossier `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. Vous pouvez trouver la variable `<appid>` dans le `archetype.properties` fichiers du projet.
-1. Ouvrez le fichier `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` pour le modifier. Si le fichier n’existe pas, créez-le. Un exemple de fichier avec les paramètres régionaux pris en charge ressemble à ce qui suit :
+1. Accédez au dossier `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. Vous pouvez trouver la variable `<appid>` dans le `archetype.properties` fichiers du projet.
+1. Ouvrez le fichier `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` pour le modifier. Si le fichier n’existe pas, créez-le. Un exemple de fichier avec les paramètres régionaux pris en charge ressemble à ce qui suit :
 
    ![Exemple de guide Localization Service.cfg.json](locales.png)
 
-1. Ajoutez la variable [code du paramètre régional pour la langue](https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1) vous souhaitez ajouter, par exemple, &quot;hi&quot; pour le hindi.
+1. Ajoutez la variable [code du paramètre régional pour la langue](https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1) que vous souhaitez ajouter, par exemple, &quot;hi&quot; pour le hindi.
 1. Enregistrez et fermez le fichier.
 
 ### Création d’une bibliothèque cliente pour ajouter un paramètre régional
@@ -86,12 +92,12 @@ AEM Forms fournit un exemple de bibliothèque cliente pour vous aider à ajouter
 1. Ouvrez le référentiel des composants principaux de Forms adaptatif dans votre éditeur de texte brut. Si le référentiel n’est pas cloné, voir [Conditions préalables](#prerequistes) pour obtenir des instructions sur le clonage du référentiel.
 1. Accédez au répertoire `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs`.
 1. Copiez le `clientlib-it-custom-locale` répertoire .
-1. Accédez à `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` et collez le `clientlib-it-custom-locale` répertoire .
+1. Accédez à `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` et collez le `clientlib-it-custom-locale` répertoire .
 
 
 ### Création d’un fichier spécifique aux paramètres régionaux {#locale-specific-file}
 
-1. Accédez à `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`.
+1. Accédez à `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`.
 1. Recherchez la variable [Fichier .json de paramètres régionaux anglais sur GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), qui contient le dernier ensemble de chaînes par défaut inclus dans le produit.
 1. Créez un fichier .json correspondant à vos paramètres régionaux spécifiques.
 1. Dans le fichier .json que vous venez de créer, mettez en miroir la structure du fichier de paramètres régionaux anglais.
@@ -103,7 +109,7 @@ AEM Forms fournit un exemple de bibliothèque cliente pour vous aider à ajouter
 
 Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez ne se trouve pas parmi `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
-1. Accédez au dossier `[AEM Forms as a Cloud Service Git repostory]/ui.content/src/main/content/jcr_root/etc/`.
+1. Accédez au dossier `[AEM Forms as a Cloud Service Git repository]/ui.content/src/main/content/jcr_root/etc/`.
 
 1. Créez un `etc` sous `jcr_root` , le cas échéant.
 
@@ -175,14 +181,13 @@ Une fois le paramètre régional identifié, le formulaire adaptatif sélectionn
 
 Si aucune information de paramètres régionaux n’est disponible, le formulaire adaptatif s’affiche dans sa langue d’origine, la langue utilisée lors du développement des formulaires.
 
-<!--
-Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## Best Practices to support for new localization {#best-practices}
+## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
-*   Adobe recommends creating a translation project after creating an Adaptive Form.
+* Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif.
 
-*   When new fields are added in an existing Adaptive Form:
-    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
-    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
--->
+* Lorsque de nouveaux champs sont ajoutés dans un formulaire adaptatif existant :
+   * **Pour la traduction automatique** : recréez le dictionnaire et exécutez le projet de traduction. Les champs ajoutés à un formulaire adaptatif après la création d’un projet de traduction ne sont pas traduits.
+   * **Pour la traduction humaine** : exportez le dictionnaire via `[server:port]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire avec les champs nouvellement ajoutés et téléchargez-le.
+
+
