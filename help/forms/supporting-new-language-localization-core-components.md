@@ -1,10 +1,10 @@
 ---
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
 description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs.
-source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
+source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 48%
+source-wordcount: '1079'
+ht-degree: 33%
 
 ---
 
@@ -16,15 +16,20 @@ ht-degree: 48%
 | Composants de base | [Cliquez ici](supporting-new-language-localization.md) |
 | Composants principaux | Cet article |
 
-AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN).
+AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). 
 
-## Présentation des dictionnaires de paramètres régionaux {#about-locale-dictionaries}
+Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN).
 
-La localisation des formulaires adaptatifs repose sur deux types de dictionnaires de paramètres régionaux : 
+<!-- 
+## Understanding locale dictionaries {#about-locale-dictionaries}
 
-* **Dictionnaire spécifique au formulaire** : il contient des chaînes utilisées dans des formulaires adaptatifs. Par exemple, les étiquettes, les noms de champ, les messages d’erreur et les descriptions d’aide. Il est géré sous forme de jeu de fichiers XLIFF pour chaque jeu de paramètres régionaux et accessible à l’adresse `[author-instance]/libs/cq/i18n/gui/translator.html`.
+The localization of adaptive forms relies on two types of locale dictionaries:
 
-* **Dictionnaires globaux** : la bibliothèque client AEM comporte deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous trouverez ces dictionnaires à l’adresse `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Ces emplacements contiennent des dossiers distincts pour chaque paramètre régional. Étant donné que les dictionnaires globaux ne sont pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque paramètre régional permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur.
+*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+
+*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+
+-->
 
 ## Conditions préalables requises {#prerequistes}
 
@@ -44,7 +49,7 @@ Avant de commencer à ajouter la prise en charge d’un nouveau paramètre régi
 
 ## Ajouter un paramètre régional {#add-localization-support-for-non-supported-locales}
 
-AEM Forms prend actuellement en charge la localisation du contenu de formulaire adaptatif en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésl (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Pour ajouter la prise en charge d’un nouveau paramètre régional lors de l’exécution d’Adaptive Forms, procédez comme suit :
+Pour ajouter la prise en charge d’un nouveau paramètre régional, procédez comme suit :
 
 ![Ajouter un paramètre régional à un référentiel](add-a-locale-adaptive-form-core-components.png)
 
@@ -136,13 +141,14 @@ Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez n
 ### Validation des modifications et déploiement du pipeline {#commit-changes-in-repo-deploy-pipeline}
 
 Validez les modifications dans le référentiel GIT après l’ajout d’une nouvelle prise en charge de paramètres régionaux. Déployez votre code à l’aide du pipeline de pile pleine. Découvrez [comment configurer un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) pour ajouter une nouvelle prise en charge de paramètres régionaux.
-Une fois le pipeline terminé, le nouveau paramètre régional ajouté apparaît dans l’environnement AEM.
 
-## Utiliser des paramètres régionaux ajoutés dans les formulaires adaptatifs {#use-added-locale-in-af}
+Une fois l’exécution du pipeline terminée, le nouveau paramètre régional ajouté est prêt à l’emploi.
 
-Effectuez les étapes suivantes pour utiliser et générer un formulaire adaptatif à l’aide d’un paramètre régional nouvellement ajouté :
+## Aperçu d’un formulaire adaptatif avec les paramètres régionaux nouvellement ajoutés {#use-added-locale-in-af}
 
-1. Connectez-vous à votre instance de création AEM.
+Effectuez les étapes suivantes pour prévisualiser un fichier adaptatif avec les paramètres régionaux nouvellement ajoutés :
+
+1. Connectez-vous à votre instance AEM Forms as a Cloud Service.
 1. Accédez à **Formulaires** > **Formulaires et documents**.
 1. Sélectionnez un formulaire adaptatif, puis cliquez sur **Ajouter un dictionnaire**. L’assistant **Ajouter un dictionnaire au projet de traduction** s’affiche.
 1. Spécifiez le **Titre du projet** et sélectionnez les **Langues cibles** dans le menu déroulant de l’assistant **Ajouter un dictionnaire au projet de traduction**.
@@ -153,7 +159,7 @@ Effectuez les étapes suivantes pour utiliser et générer un formulaire adaptat
 
 Deux méthodes permettent d’identifier les paramètres régionaux d’un formulaire adaptatif. Lors du rendu d’un formulaire adaptatif, il identifie les paramètres régionaux nécessaires :
 
-* Récupération du sélecteur `[local]` dans l’URL du formulaire adaptatif. Le format de l’URL est `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. L’utilisation du sélecteur `[local]` permet de mettre en cache un formulaire adaptatif ;
+* Récupération du sélecteur `[local]` dans l’URL du formulaire adaptatif. Le format de l’URL est `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. L’utilisation du sélecteur `[local]` permet de mettre en cache un formulaire adaptatif ;
 
 * La récupération des paramètres suivants dans l’ordre indiqué :
 
@@ -165,17 +171,18 @@ Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous p
 
 Si aucune bibliothèque cliente pour le paramètre régional requis n’existe, elle recherche une bibliothèque cliente pour le code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional requis est `en_ZA` (en anglais d’Afrique du Sud) et la bibliothèque cliente pour `en_ZA` n’existe pas, le formulaire adaptatif utilise la bibliothèque cliente pour `en` (anglais), s’il existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
 
-
 Une fois le paramètre régional identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire correspondant au paramètre régional requis est introuvable, il utilise le dictionnaire correspondant à la langue dans laquelle le formulaire adaptatif est créé.
 
-Si aucune information locale n’est disponible, le formulaire adaptatif s’affiche dans sa langue d’origine, qui est la langue utilisée lors de son développement.
+Si aucune information de paramètres régionaux n’est disponible, le formulaire adaptatif s’affiche dans sa langue d’origine, la langue utilisée lors du développement des formulaires.
 
-Procurez-vous l’[exemple de bibliothèque cliente](/help/forms/assets/locale-support-sample.zip) pour ajouter la prise en charge de nouveaux paramètres régionaux. Vous devez modifier le contenu du dossier dans le paramètre régional requis.
+<!--
+Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
+## Best Practices to support for new localization {#best-practices}
 
-* Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif.
+*   Adobe recommends creating a translation project after creating an Adaptive Form.
 
-* Lorsque de nouveaux champs sont ajoutés dans un formulaire adaptatif existant :
-   * **Pour la traduction automatique** : recréez le dictionnaire et exécutez le projet de traduction. Les champs ajoutés à un formulaire adaptatif après la création d’un projet de traduction ne sont pas traduits.
-   * **Pour la traduction humaine** : exportez le dictionnaire via `[server:port]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire avec les champs nouvellement ajoutés et téléchargez-le.
+*   When new fields are added in an existing Adaptive Form:
+    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
+    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+-->
