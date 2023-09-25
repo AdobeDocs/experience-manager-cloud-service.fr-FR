@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Découvrez comment utiliser l’outil de transfert de contenu pour transférer du contenu d’une instance AEM on-premise vers AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
 
@@ -47,7 +47,7 @@ Le transfert de contenu comporte deux phases :
 
 Un jeu de migration possède les attributs suivants :
 
-* Avec la nouvelle version, vous pouvez créer un maximum de cinq jeux de migration au sein d’un projet créé dans Cloud Acceleration Manager.
+* Avec la nouvelle version, vous pouvez créer un maximum de vingt jeux de migration au sein d’un projet créé dans Cloud Acceleration Manager.
 * Chaque jeu de migration doit avoir un nom unique.
 
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.

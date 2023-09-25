@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Découvrez comment commencer à utiliser l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7de874f607c98501052ddb715c4af98f6c5d5324
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1439'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -86,7 +86,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
    >[!NOTE]
    >
-   >Vous pouvez créer au maximum cinq jeux de migration, y compris les jeux ayant expiré, par projet dans Cloud Acceleration Manager.
+   >Dans Cloud Acceleration Manager, vous pouvez créer au maximum vingt jeux de migration, y compris les jeux expirés, par projet.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
