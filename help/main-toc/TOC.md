@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: 44492597085c52eb715a8ecd19a2c4aa884ae12f
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4310'
 ht-degree: 92%
 
 ---
@@ -1046,3 +1046,4 @@ ht-degree: 92%
    + [Architecture de l’éditeur universel](/help/implementing/universal-editor/architecture.md)
    + [Attributs et types](/help/implementing/universal-editor/attributes-types.md)
    + [Authentification de l’éditeur universel](/help/implementing/universal-editor/authentication.md)
+   + [Développement d’AEM locales avec l’éditeur universel](/help/implementing/universal-editor/local-dev.md)
