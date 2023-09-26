@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 66%
+source-wordcount: '825'
+ht-degree: 60%
 
 ---
 
@@ -52,6 +52,12 @@ Les bibliothécaires de la gestion des actifs numériques, les développeurs et 
 ![add-tags](assets/newui-overview.svg)
 
 Pour plus d’informations sur l’accès à la vue Assets et sur certaines des simplifications qu’elle offre par rapport à la vue Admin, voir [Présentation de la vue Assets](/help/assets/assets-view-introduction.md).
+
+## Intégration à la création basée sur des documents pour les Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+
+Edge Delivery vous permet de créer des sites web rapides et attrayants où les auteurs peuvent rapidement mettre à jour et publier du contenu, et où de nouveaux sites peuvent être lancés rapidement.
+
+Intégrez AEM Assets à la création basée sur des documents pour que les Edge Delivery Services puissent permettre aux créateurs de sites web d’utiliser les images disponibles dans les référentiels AEM Assets lors de la création de documents dans Microsoft Word ou Google Docs. Pour plus d’informations, voir [Intégration d’AEM Assets à la création basée sur des documents](/help/edge/using.md#integrate-assets-edge).
 
 ## Nouvelles fonctionnalités d’Assets {#whats-new-assets}
 
