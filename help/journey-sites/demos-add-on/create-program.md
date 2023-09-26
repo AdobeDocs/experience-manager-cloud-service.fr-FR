@@ -2,10 +2,10 @@
 title: Créer un programme
 description: Découvrez comment configurer un nouveau programme et un nouveau pipeline pour déployer le module complémentaire.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 7c33a618f474914ca80dff525552017c55a32517
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 68%
+source-wordcount: '710'
+ht-degree: 34%
 
 ---
 
@@ -16,29 +16,29 @@ Découvrez comment configurer un nouveau programme et un nouveau pipeline pour d
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours du module complémentaire de démonstration d’AEM, [Présentation de l’installation du module complémentaire de démonstration de référence,](installation.md) vous avez appris comment fonctionne le processus d’installation du module complémentaire de démonstration de référence, illustrant comment les différentes pièces fonctionnent ensemble. Vous devez maintenant :
+Dans le document précédent du parcours de module complémentaire de démonstration de référence Adobe Experience Manager (AEM), [Comprendre l’installation du module complémentaire de démonstration de référence,](installation.md) vous avez appris le fonctionnement du processus d’installation du module complémentaire de démonstration de référence, en illustrant le fonctionnement des différentes pièces. Vous devez maintenant :
 
 * Posséder une compréhension de base de Cloud Manager.
 * Découvrez comment les pipelines diffusent du contenu et une configuration à AEM.
-* Savoir comment les modèles peuvent créer de nouveaux sites préremplis avec du contenu de démonstration en quelques clics seulement.
+* Découvrez comment les modèles peuvent créer des sites préremplis avec du contenu de démonstration en quelques clics seulement.
 
 Cet article s’appuie sur ces principes de base et effectue la première étape de configuration pour créer un programme à des fins de test et utilise un pipeline pour déployer le contenu du module complémentaire.
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment configurer un nouveau programme ainsi qu’un nouveau pipelin pour déployer le module complémentaire. Après avoir lu ce document, vous devriez :
+Ce document vous aide à comprendre comment configurer un nouveau programme ainsi qu’un nouveau pipelin pour déployer le module complémentaire. Après lecture, vous devriez pouvoir effectuer les opérations suivantes :
 
-* Découvrir comment utiliser Cloud Manager pour créer un programme.
-* Savoir comment activer le module complémentaire de démonstration de référence pour le nouveau programme.
-* Être en mesure d’exécuter un pipeline pour déployer le contenu du module complémentaire.
+* Découvrez et expliquez comment utiliser Cloud Manager pour créer un programme.
+* Activez le module complémentaire de démonstration de référence pour le nouveau programme.
+* Exécutez un pipeline pour déployer le contenu du module complémentaire.
 
-## Création d’un programme {#create-program}
+## Créer un programme {#create-program}
 
-Après vous être connecté à Cloud Manager, vous pouvez créer un nouveau programme sandbox à des fins de test et de démonstration.
+Après vous être connecté à Cloud Manager, vous pouvez créer un programme d’environnement de test à des fins de test et de démonstration.
 
 >[!NOTE]
 >
->Votre utilisateur doit être membre de la fonction **Propriétaire de l’entreprise** rôle dans Cloud Manager dans votre entreprise pour créer des programmes.
+>Votre utilisateur doit être membre du **Propriétaire de l’entreprise** rôle dans Cloud Manager dans votre entreprise pour créer des programmes.
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
@@ -69,7 +69,7 @@ Après vous être connecté à Cloud Manager, vous pouvez créer un nouveau pro
 
    ![Création de programme terminée](assets/ready.png)
 
-1. Votre environnement est prêt et le module complémentaire est désormais activé en tant qu’option, mais le contenu de la démonstration doit être déployé pour AEM être disponible. Pour ce faire, appuyez ou cliquez sur le bouton représentant des points de suspension en regard du pipeline Déployer vers le développement dans le **Pipelines** et sélectionnez **Exécuter**.
+1. Votre environnement est prêt et le module complémentaire est désormais activé en tant qu’option, mais le contenu de la démonstration doit être déployé pour AEM être disponible. Pour ce faire, appuyez ou cliquez sur le bouton représentant des points de suspension en regard du pipeline Déployer vers le développement dans le **Pipelines** carte et sélectionnez **Exécuter**.
 
    ![Démarrer](assets/run.png)
 
@@ -81,14 +81,14 @@ L’exécution du pipeline peut prendre plusieurs minutes. Une fois terminé, le
 
 ## Prochaines étapes {#what-is-next}
 
-Maintenant que vous avez terminé cette partie du parcours de module complémentaire de démonstration de référence d’AEM, vous devez :
+Maintenant que vous avez terminé cette partie du parcours de module complémentaire de démonstration de référence d’AEM, vous devez :
 
-* Découvrir comment utiliser Cloud Manager pour créer un programme.
-* Savoir comment activer le module complémentaire de démonstration de référence pour le nouveau programme.
-* Être en mesure d’exécuter un pipeline pour déployer le contenu du module complémentaire.
+* Découvrez comment utiliser Cloud Manager pour créer un programme.
+* Découvrez comment activer le module complémentaire de démonstration de référence pour le programme.
+* Vous pouvez exécuter un pipeline pour déployer le contenu du module complémentaire.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de démonstration de référence AEM en consultant le document [Création d’un site de démonstration,](create-site.md) où vous apprendrez à créer un site de démonstration dans AEM en fonction d’une bibliothèque de modèles préconfigurés qui ont été déployés par le pipeline.
+Tirez parti de ces connaissances et poursuivez votre parcours de module complémentaire de démonstration de référence AEM en consultant [Création d’un site de démonstration](create-site.md). Vous y apprendrez à créer un site de démonstration dans AEM basé sur une bibliothèque de modèles préconfigurés qui ont été déployés par le pipeline.
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
+* [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.

@@ -1,19 +1,19 @@
 ---
 title: Utilisation d’AEM Forms Designer
-description: Utilisez [!DNL AEM Forms] designer pour créer des modèles de document d’enregistrement.
+description: Utilisation [!DNL Adobe Experience Manager (AEM) Forms] Designer pour créer des modèles de document d’enregistrement.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 94%
+source-wordcount: '153'
+ht-degree: 69%
 
 ---
 
-# Utilisation d’AEM Forms Designer {#install-designer}
+# Utilisation de Adobe Experience Manager (AEM) Forms Designer {#install-designer}
 
 Designer offre une interface graphique de conception de formulaires conviviale, qui simplifie la création de modèles de formulaire XPD. Vous pouvez concevoir un modèle de formulaire, définir sa logique et respecter des exigences légales strictes. Ces modèles servent de modèle de document d’enregistrement pour un formulaire adaptatif. Ces modèles de formulaires sont différents des [modèles de formulaire adaptatif](template-editor.md).
 
-Les documents ci-dessous fournissent des instructions d’utilisation de Designer pour créer des modèles XDP et des formulaires PDF :
+Les documents suivants contiennent des instructions sur l’utilisation de Designer pour créer des modèles et des PDF forms XDP :
 
 + [Utilisation de Designer](assets/using-designer-cs.pdf)
 + [Didacticiels de mise en route de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
