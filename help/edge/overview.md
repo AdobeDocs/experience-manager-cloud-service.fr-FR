@@ -1,7 +1,7 @@
 ---
 title: Prise en main des Edge Delivery Services
-description: Prise en main des Edge Delivery Services
-source-git-commit: 22a3795340add4ae29ec690b41baef96e8fb4adc
+description: Prise en main des Edge Delivery Services.
+source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Le diagramme suivant illustre comment modifier du contenu dans Microsoft Word (m
 
 Edge Delivery est un ensemble de services composables qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Comme mentionné précédemment, vous pouvez utiliser les deux [Création AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) et [création basée sur des documents](https://www.hlx.live/docs/authoring).
 
-Par exemple, vous pouvez utiliser du contenu directement à partir de Microsoft Word ou de documents Google. Cela signifie que les documents provenant de ces sources peuvent devenir des pages de votre site web. De plus, les en-têtes, listes, images et éléments de police peuvent tous être transférés de la source initiale vers le site web. Le nouveau contenu sera ajouté instantanément sans processus de reconstruction.
+Par exemple, vous pouvez utiliser du contenu directement à partir de documents Microsoft Word ou Google. Cela signifie que les documents provenant de ces sources peuvent devenir des pages de votre site web. De plus, les en-têtes, listes, images et éléments de police peuvent tous être transférés de la source initiale vers le site web. Le nouveau contenu sera ajouté instantanément sans processus de reconstruction.
 
 Edge Delivery utilise GitHub afin que les clients puissent gérer et déployer du code directement à partir de leur référentiel GitHub. Par exemple, vous pouvez écrire du contenu dans Google Docs ou Microsoft Word et les fonctionnalités de votre site peuvent être développées à l’aide de CSS et de JavaScript dans GitHub . Lorsque vous êtes prêt, vous pouvez utiliser l’extension de navigateur du Sidekick pour prévisualiser et publier les mises à jour de contenu.
 
