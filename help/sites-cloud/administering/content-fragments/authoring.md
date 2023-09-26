@@ -3,9 +3,9 @@ title: Créer des fragments de contenu
 description: Découvrez comment créer du contenu pour vos fragments de contenu, puis créez des variantes de ce contenu en fonction de vos besoins. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion headless et la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2227'
 ht-degree: 4%
 
 ---
@@ -484,7 +484,7 @@ La variable **Champs** répertorie tous les champs du fragment de contenu. L’i
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Espace réservé pour tabulation</b></p><p>Même si elle n’est pas représentée par une icône réelle, une <b>Espace réservé de tabulation</b> est représenté dans le panneau de gauche, ainsi que dans le panneau central.</p> </td>
+   <td><p><b>Espace réservé pour tabulation</b></p><p>Même si elle n’est pas représentée par une icône réelle, une <b>Espace réservé de tabulation</b> est représenté dans le panneau de gauche. <br>Il est également représenté dans le panneau central, horizontalement comme affiché, ou dans une liste déroulante (s’il y en a trop à afficher horizontalement).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
