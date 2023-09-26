@@ -2,12 +2,13 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 91%
 
 ---
+
 
 # Manipulation de base {#basic-handling}
 
@@ -17,6 +18,8 @@ Ce document donne un aperçu des opérations de gestion de base dans l’environ
 >
 >* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles uniquement. Des informations spécifiques sur les consoles individuelles et leurs fonctionnalités associées sont traitées plus en détail sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+{{edge-delivery-authoring}}
 
 ## Interface utilisateur pour écrans tactiles {#a-touch-enabled-ui}
 

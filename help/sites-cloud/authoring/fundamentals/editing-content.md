@@ -2,12 +2,13 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 84%
 
 ---
+
 
 # Modification du contenu de la page{#editing-page-content}
 
@@ -31,6 +32,8 @@ Le contenu est ajouté à l’aide des [composants](/help/sites-cloud/authoring/
 >[!TIP]
 >
 >En mode **Édition**, les liens dans votre contenu sont visibles, mais ils ne sont **pas accessibles**. Utilisez le [mode Aperçu](#previewing-pages) pour naviguer en suivant les liens.
+
+{{edge-delivery-authoring}}
 
 ## Barre d’outils Page {#page-toolbar}
 

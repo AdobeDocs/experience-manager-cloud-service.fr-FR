@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 44492597085c52eb715a8ecd19a2c4aa884ae12f
+source-git-commit: af7a4a3e23a07e4768192ae7d6308e3c6036ceb6
 workflow-type: tm+mt
-source-wordcount: '4310'
+source-wordcount: '4321'
 ht-degree: 92%
 
 ---
@@ -741,6 +741,9 @@ ht-degree: 92%
    + [PWA Studio dans Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migration](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
++ Services de diffusion Edge {#edge-delivery}
+   + [Prise en main d’Edge Delivery](/help/edge/overview.md)
+   + [Utilisation de la diffusion Edge](/help/edge/using.md)
 + Découplé {#headless}
    + [Qu’est-ce qu’un CMS Headless ?](/help/headless/what-is-headless.md)
    + [Présentation d’AEM découplé](/help/headless/introduction.md)
