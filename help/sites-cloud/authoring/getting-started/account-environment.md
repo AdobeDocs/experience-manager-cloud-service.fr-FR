@@ -1,17 +1,17 @@
 ---
 title: Configuration de votre environnement de compte
-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
+description: Adobe Experience Manager (AEM) vous permet de configurer votre compte et certains aspects de l’environnement de création.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 73%
+source-wordcount: '495'
+ht-degree: 46%
 
 ---
 
 # Configuration de votre environnement de compte {#configuring-your-account-environment}
 
-AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
+Adobe Experience Manager (AEM) vous permet de configurer votre compte et certains aspects de l’environnement de création.
 
 Grâce à l’option [Utilisateur](#user-settings) dans l’[en-tête](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) et à la boîte de dialogue associée [Mes préférences](#my-preferences), vous pouvez modifier vos options utilisateur.
 
@@ -19,12 +19,12 @@ Accédez tout d’abord à l’option [Utilisateur](#user-settings) dans l’en-
 
 ## Paramètres utilisateur {#user-settings}
 
-Le **Utilisateur** La boîte de dialogue paramètres vous donne accès aux options suivantes :
+La variable **Utilisateur** La boîte de dialogue paramètres vous donne accès aux options suivantes :
 
 * Se faire passer pour
    * La fonction Se faire passer pour permet à un utilisateur de travailler au nom d’un autre. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Profil
-   * Offre un lien pratique vers vos paramètres utilisateur<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->.
+   * Il offre un lien pratique vers vos paramètres utilisateur. <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [Mes préférences](#my-preferences)
    * Spécifiez les différents paramètres uniques à votre utilisateur.
 
@@ -32,9 +32,9 @@ Le **Utilisateur** La boîte de dialogue paramètres vous donne accès aux optio
 
 ### Mes préférences {#my-preferences}
 
-La boîte de dialogue **Mes préférences** est accessible par l’intermédiaire de l’option [Utilisateur](#user-settings) dans l’en-tête.
+La variable **Mes préférences** La boîte de dialogue est accessible à l’aide de la fonction [Utilisateur](#user-settings) dans l’en-tête.
 
-Chaque utilisateur peut définir certaines propriétés pour lui-même.
+Chaque utilisateur peut définir ses propriétés préférées.
 
 ![Mes préférences](/help/sites-cloud/authoring/assets/user-preferences.png)
 
@@ -52,7 +52,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
    * **Une seule fenêtre**
 
-      * Les pages sont ouvertes dans la fenêtre active.
+      * Les pages s’ouvrent dans la fenêtre active.
 
 * **Afficher les actions de bureau pour Assets**
 
@@ -62,12 +62,12 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
   Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
 
-   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillons afin de sélectionner une couleur.
+   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillon afin de sélectionner une couleur.
    * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
 
-  Pour améliorer la lisibilité, AEM effectue le rendu des dates parmi les sept derniers jours en tant que dates relatives (par exemple, il y a trois jours) et des dates antérieures en tant que dates précises (par exemple, le 20 mars 2017).
+  Pour améliorer la lisibilité, AEM effectue le rendu des dates au cours des sept derniers jours sous forme de dates relatives (par exemple, il y a trois jours) et des dates plus anciennes sous forme de dates exactes (par exemple, 20 mars 2017).
 
   Cette option définit la manière dont les dates sont affichées dans le système. Les options suivantes sont disponibles :
 
@@ -80,7 +80,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Activer les raccourcis**
 
-  AEM prend en charge un certain nombre de raccourcis clavier qui rendent la création plus efficace.
+  AEM prend en charge divers raccourcis clavier qui rendent la création plus efficace.
 
    * [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -89,8 +89,8 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Activer la page d’accueil des ressources**
 
-  Cette option est disponible uniquement si l’administrateur système a activé l’environnement Page d’accueil des ressources pour l’ensemble de l’entreprise.
+  Cette option n’est disponible que si l’administrateur système a activé l’expérience de page d’accueil des ressources pour l’ensemble de l’entreprise.
 
 * **Configuration Stock**
 
-  Cette option permet de spécifier la configuration Adobe Stock préférée. Elle n’est disponible que si votre administrateur système a activé . [Intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Cette option vous permet de définir la configuration Adobe Stock souhaitée. Elle n’est disponible que si l’administrateur système a activé [Intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

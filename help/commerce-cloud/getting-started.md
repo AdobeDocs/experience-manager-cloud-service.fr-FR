@@ -1,6 +1,6 @@
 ---
 title: Prise en main d’AEM Commerce as a Cloud Service
-description: Découvrez comment déployer un projet de commerce AEM à l’aide d’Adobe Cloud Manager, d’un pipeline CI/CD et du storefront de référence Venia.
+description: Découvrez comment déployer un projet commercial Adobe Experience Manager (AEM) à l’aide d’Adobe Cloud Manager, d’un pipeline CI/CD et du storefront de référence Venia.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,16 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 44%
+source-wordcount: '1104'
+ht-degree: 42%
 
 ---
 
 # Prise en main d’AEM Commerce as a Cloud Service {#start}
 
-Pour commencer à utiliser AEM Commerce as a Cloud Service, votre Experience Manager Cloud Service doit être configuré avec le module complémentaire CIF (Commerce Integration Framework). Le module complémentaire CIF est un module supplémentaire ajouté à la [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Pour commencer à utiliser Adobe Experience Manager (AEM) Commerce as a Cloud Service, votre Experience Manager Cloud Service doit être configuré avec le module complémentaire Commerce integration framework (CIF). Le module complémentaire CIF est un module supplémentaire ajouté à la [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
 
 ## Intégration {#onboarding}
 
@@ -38,12 +38,12 @@ Pour connecter le module complémentaire CIF et le [AEM Composants principaux CI
 
 Cette variable d’environnement est utilisée à deux endroits :
 
-- Les appels GraphQL d’AEM au serveur principal Commerce, par le biais d’un client GraphQl partageable commun, utilisé par les composants principaux CIF AEM et les composants de projet client.
-- Configurez une URL de proxy GraphQL sur chaque environnement AEM la variable est disponible à l’adresse `/api/graphql`. Cette URL est utilisée par les outils de création de commerce AEM (module complémentaire CIF) et les composants côté client CIF.
+- Les appels GraphQL d’AEM au serveur principal Commerce, par le biais d’un client GraphQl partageable commun, utilisé par AEM composants principaux et les composants de projet client.
+- Configurez une URL de proxy GraphQL sur chaque environnement AEM la variable est disponible à l’adresse `/api/graphql`. Cette URL est utilisée par les outils de création de commerce AEM (module complémentaire CIF) et les composants côté client.
 
-Une autre URL de point d’entrée GraphQL peut être utilisée pour chaque environnement AEM as a Cloud Service. De cette façon, les projets peuvent connecter les environnements d’évaluation AEM avec les systèmes d’évaluation de commerce et l’environnement de production AEM à un système de production de commerce. Ce point d’entrée GraphQL doit être accessible au public, et les connexions VPN privées ou locales ne sont pas prises en charge. Vous pouvez éventuellement fournir un en-tête d’authentification pour utiliser des fonctionnalités CIF supplémentaires nécessitant une authentification.
+Une autre URL de point d’entrée GraphQL peut être utilisée pour chaque environnement AEM as a Cloud Service. De cette façon, les projets peuvent connecter les environnements d’évaluation AEM avec les systèmes d’évaluation de commerce et l’environnement de production AEM à un système de production de commerce. Ce point d’entrée GraphQL doit être accessible au public, et les connexions VPN privées ou locales ne sont pas prises en charge. Vous pouvez éventuellement fournir un en-tête d’authentification afin d’utiliser des fonctionnalités CIF supplémentaires nécessitant une authentification.
 
-Si vous le souhaitez, et uniquement pour Adobe Commerce Enterprise/Cloud, le module complémentaire CIF prend en charge l’utilisation de données de catalogue intermédiaires pour les auteurs AEM. Ces données nécessitent que vous configuriez un en-tête d’autorisation. Pour des raisons de sécurité, l’en-tête n’est disponible et utilisé que sur les instances d’auteur AEM. Les instances AEM de publication ne peuvent pas afficher de données intermédiaires.
+Éventuellement, et uniquement pour Adobe Commerce Enterprise/Cloud, le module complémentaire CIF prend en charge l’utilisation de données de catalogue intermédiaires pour les auteurs AEM. Ces données nécessitent que vous configuriez un en-tête d’autorisation. Cet en-tête n’est disponible et utilisé que sur les instances d’auteur AEM pour des raisons de sécurité. AEM les instances de publication ne peuvent pas afficher de données intermédiaires.
 
 Il existe deux options pour configurer le point d’entrée :
 
@@ -103,11 +103,11 @@ Vous êtes prêt à utiliser AEM Commerce as a Cloud Service et pouvez déployer
 
 ## Configuration des magasins et des catalogues {#catalog}
 
-Le module complémentaire CIF et la variable [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components) peut être utilisé sur plusieurs structures de site AEM connectées à différents magasins de commerce (ou vues de magasin, etc.). Par défaut, le module complémentaire CIF est déployé avec une configuration par défaut se connectant au magasin et au catalogue par défaut d’Adobe Commerce.
+Le module complémentaire CIF et le [CIF composants principaux](https://github.com/adobe/aem-core-cif-components) peut être utilisé sur plusieurs structures de site AEM connectées à différents magasins de commerce (ou vues de magasin, etc.). Par défaut, le module complémentaire CIF est déployé avec une configuration par défaut se connectant au magasin et au catalogue par défaut d’Adobe Commerce.
 
-Cette configuration peut être ajustée pour le projet au moyen de la configuration du Cloud Service CIF en procédant comme suit :
+Cette configuration peut être ajustée pour le projet à l’aide de la configuration du Cloud Service CIF, en procédant comme suit :
 
-1. Dans AEM, accédez à Outils -> Cloud Services -> Configuration CIF.
+1. Dans AEM, accédez à Outils -> Cloud Service -> CIF Configuration.
 
 2. Sélectionnez la configuration commerciale à modifier.
 

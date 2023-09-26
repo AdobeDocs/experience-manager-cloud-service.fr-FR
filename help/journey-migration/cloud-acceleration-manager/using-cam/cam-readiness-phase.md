@@ -2,16 +2,16 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 92%
+source-wordcount: '981'
+ht-degree: 51%
 
 ---
 
 # Phase de préparation dans Cloud Accelerated Manager {#readiness-phase-cam}
 
-Une fois que vous avez créé un projet dans Cloud Acceleration Manager, vous pouvez commencer l’évaluation de votre mise en œuvre AEM actuelle dans la phase de préparation.
+Une fois que vous avez créé un projet dans Cloud Acceleration Manager, vous pouvez commencer l’évaluation de votre mise en oeuvre Adobe Experience Manager (AEM) actuelle lors de la phase de préparation.
 
 La phase de préparation comprend :
 
@@ -20,11 +20,11 @@ La phase de préparation comprend :
 
 Suivez les étapes ci-dessous pour accéder à la phase de préparation :
 
-1. Cliquez sur la carte de votre projet pour ouvrir sa page de destination.
+1. Cliquez sur la carte de votre projet.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. Accédez à la section **Préparation**, comme illustré dans la figure ci-dessous.
+1. Sur la page d’entrée du projet, accédez au **Préparation** , comme illustré dans la figure ci-dessous.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
@@ -33,32 +33,30 @@ Suivez les étapes ci-dessous pour accéder à la phase de préparation :
 
 ## Utilisation de la carte d’analyse des bonnes pratiques {#best-practices-analysis}
 
-Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratiques :
-
-1. Cliquez sur le bouton **Réviser** de la carte **Analyse des bonnes pratiques**.
+1. Cliquez sur **Réviser** de la **Analyse des bonnes pratiques** carte.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Pour télécharger l’analyseur de bonnes pratiques (BPA), procédez comme suit :
+1. Téléchargez BPA (Best Practices Analyzer).
 
    >[!NOTE]
-   >Pour éviter tout impact sur les instances critiques de l’entreprise, il est recommandé d’exécuter l’application d’une seule page dans un environnement de création aussi proche que possible de l’environnement de production dans les domaines de la personnalisation, de la configuration, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de création de production.
+   >Pour éviter tout impact sur les instances critiques de l’entreprise, Adobe vous recommande d’exécuter BPA dans un environnement de création. L’environnement doit être aussi proche que possible de l’environnement de production en ce qui concerne la personnalisation, la configuration, le contenu et les applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de création de production.
 
-   1. Accédez au portail de [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) et téléchargez l’analyseur de bonnes pratiques sous la forme d’un fichier zip.
+   1. Accédez au [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr) Portal et téléchargez l’analyseur des bonnes pratiques sous la forme d’un fichier zip.
 
       >[!NOTE]
-      >Consultez la section [Utilisation de l’analyseur de bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=fr#imp-considerations) pour savoir comment exécuter BPA.
+      >Consultez la section [Utilisation de l’analyseur de bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) pour savoir comment exécuter BPA.
 
    1. Exporter le rapport au format CSV
 
-1. Cliquez sur **Charger un nouveau rapport** pour charger le rapport BPA dans CAM.
+1. Cliquez sur **Charger un nouveau rapport** vous pouvez donc télécharger le rapport BPA dans CAM.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
 
    >[!IMPORTANT]
    >Le rapport ne peut pas être chargé si vous êtes en mode Incognito dans le navigateur.
 
-1. Une fois que vous avez chargé un nouveau rapport, le rapport Analyse des bonnes pratiques s’affiche.
+1. Une fois que vous avez chargé un nouveau rapport, vous pouvez consulter le rapport Analyse des bonnes pratiques .
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
@@ -73,15 +71,16 @@ Vous pouvez sélectionner l’option d’aperçu avant impression dans Cloud Acc
 
 Suivez les étapes ci-dessous :
 
-1. Cliquez sur l’icône **Aperçu de l’impression**, comme illustré ci-dessous.
+1. Cliquez sur le bouton **Aperçu de l’impression** Icône
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Cliquez sur **Aperçu de l’impression** pour ouvrir un nouvel onglet avec le rapport affiché dans un aperçu imprimable. Cliquez sur **Imprimer** pour imprimer le rapport au format PDF.
+1. Dans le nouvel onglet du rapport affiché dans un aperçu imprimable, cliquez sur **Imprimer** pour imprimer le rapport au format PDF.
 
    >[!IMPORTANT]
+   >
    >* L’option **Enregistrer en tant que PDF** est recommandée et prise en charge pour les fonctionnalités ci-dessus.
-   >* Si vous utilisez le bouton d’impression du navigateur, une seule page sera imprimée.
+   >* Si le bouton d’impression du navigateur est utilisé, il n’imprime qu’une seule page.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
@@ -92,24 +91,24 @@ Lorsque vous chargez plusieurs rapports de l’analyseur de bonnes pratiques (BP
 Pour afficher les rapports à partir de l’option de tendance, procédez comme suit :
 
 >[!NOTE]
->Lorsque vous chargez plusieurs rapports BPA dans un projet, l’icône **…** s’affiche.
+>Lorsque vous transférez plusieurs rapports d’application monopage dans un projet, le **..** Icône
 
-1. Accédez à votre projet et cliquez sur **Révision** à partir de la vignette **Analyse des bonnes pratiques** dans la phase **Préparation**.
+1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Cliquez sur l’icône **…** pour afficher la liste déroulante.
+1. Cliquez sur **...**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >Le rapport affiché est toujours celui dont la date de rapport est la plus récente.
 
-1. Cliquez sur **Afficher la tendance**, comme illustré ci-dessous.
+1. Dans la liste déroulante, cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. Cliquer sur **Afficher la tendance** ouvre la vue de tendance du rapport, comme illustré ci-dessous.
+1. Cliquer **Afficher la tendance** ouvre la vue de tendance du rapport.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
@@ -117,23 +116,25 @@ Pour afficher les rapports à partir de l’option de tendance, procédez comme 
    >[!NOTE]
    >Le Rapport de tendances affiche sous forme graphique les résultats des rapports BPA historiques.
    >
-   >Deux graphiques affichent les tendances suivantes :
+   >Deux graphiques s’affichent avec la tendance de :
+   > 
    >1. **Tendance des résultats du rapport**
    >1. **Tendance de modèle et de composants personnalisés**
    >
-   >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante, comme illustré ci-dessous :
+   >Vous pouvez ajouter ou modifier la vue graphique par le biais de la liste déroulante, comme illustré dans la figure ci-dessous :
    >![image](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Consultation du rapport d’analyse des bonnes pratiques {#analysis-report}
 
-Consultez les cartes suivantes disponibles sur la page Rapport d’analyse des bonnes pratiques :
+Consultez les cartes suivantes disponibles sur la page Rapport d’analyse des bonnes pratiques :
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
-> Avec chaque carte, vous pouvez :
->* cliquer sur la carte pour ouvrir son onglet associé ;
+> Avec chaque carte, vous pouvez :
+>
+>* ouvrir l’onglet associé ;
 >* mettre en signet tous les onglets du rapport (y compris le filtrage) pour les partager ou les récupérer ultérieurement ;
 >* utiliser l’icône de détails pour afficher les détails de chaque résultat de rapport.
 
@@ -149,16 +150,16 @@ Cette carte **Aperçu du rapport** donne les résultats du rapport et les niveau
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
-Cliquez sur ce rapport pour ouvrir l’onglet **Rapport**.
+Cliquez sur ce rapport pour ouvrir la **Rapport** .
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
-Vous pouvez filtrer le rapport par critère d’importance, de sous-type ou de nombre.
+Vous pouvez filtrer le rapport selon son importance, son sous-type ou son nombre.
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Voir [Interprétation du rapport Analyseur des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=fr) pour en savoir plus sur les catégories de résultats et les niveaux d’importance.
+>Voir [Interprétation du rapport Analyseur des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=fr) pour en savoir plus sur les catégories de résultats et les niveaux d’importance.
 
 #### Évaluation des bonnes pratiques {#best-practices-assessment}
 
@@ -184,9 +185,7 @@ Vous pouvez consulter les informations suivantes grâce à cet onglet :
 
 ## Utilisation de la carte Planification et configuration {#planning-setup}
 
-Consultez cette section pour découvrir la carte de l’activité Planification et configuration.
-
-1. Cliquez sur le bouton **Afficher** dans la carte **Planification et configuration**. Cette carte fournit tout le contenu approprié pour vous aider à planifier et à configurer votre migration AEM.
+1. Cliquez sur **Affichage** de la **Planification Et Configuration** carte. Cette carte fournit tout le contenu approprié qui vous aide à planifier et à configurer votre migration AEM.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -194,26 +193,24 @@ Consultez cette section pour découvrir la carte de l’activité Planification 
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
-### Supprimer un rapport d’analyse des bonnes pratiques {#delete-trendline}
-
-Pour supprimer un rapport de la vue Tendance, procédez comme suit :
+### Supprimer un rapport d’analyse des bonnes pratiques depuis la vue Trendline {#delete-trendline}
 
 >[!IMPORTANT]
 >Un rapport peut être supprimé uniquement lorsque plusieurs rapports ont été chargés dans un projet.
 
-1. Accédez à votre projet et cliquez sur **Révision** à partir de la vignette **Analyse des bonnes pratiques** dans la phase **Préparation**.
+1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Cliquez sur l’icône **…** pour afficher la liste déroulante.
+1. Cliquez sur **...**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
-1. Cliquez sur **Afficher la tendance**, comme illustré ci-dessous.
+1. Dans la liste déroulante, cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. Cliquez sur l’icône Supprimer de l’écran **Rapport de tendances**.
+1. Cliquez sur l’icône de suppression dans la **Rapport de tendance** écran.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
@@ -223,4 +220,4 @@ Pour supprimer un rapport de la vue Tendance, procédez comme suit :
 
 ## Prochaines étapes {#whats-next}
 
-Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante de la [phase d’implémentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=fr).
+Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer en revue l’étape suivante dans la [Phase de mise en oeuvre](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).

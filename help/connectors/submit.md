@@ -1,30 +1,29 @@
 ---
 title: Envoi d’un connecteur AEM
-description: Découvrez comment référencer et déployer correctement les connecteurs dans AEM as a Cloud Service.
+description: Découvrez comment référencer et déployer correctement les connecteurs dans Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 95%
+source-wordcount: '310'
+ht-degree: 30%
 
 ---
 
-Envoi d’un connecteur AEM
-===========================
+# Envoi d’un connecteur AEM
 
-Les informations fournies ci-dessous sont utiles pour l’envoi des connecteurs AEM. Elles doivent être lues conjointement avec les articles sur l’[implémentation](implement.md) et la [maintenance](maintain.md) des connecteurs.
+Les informations fournies ci-dessous sont utiles pour envoyer des connecteurs Adobe Experience Manager (AEM) et doivent être lues avec des articles sur [implémentation](implement.md) et  [maintenance](maintain.md) connecteurs.
 
-Les connecteurs AEM sont répertoriés dans [Adobe Exchange](https://partners.adobe.com/fr/exchangeprogram/experiencecloud).
+Les connecteurs AEM sont répertoriés dans [Adobe Exchange](https://partners.adobe.com/technologyprogram/experiencecloud.html).
 
 Dans les solutions AEM précédentes, le [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) était utilisé pour installer des connecteurs sur diverses instances AEM. Toutefois, avec AEM as a Cloud Service, les connecteurs sont déployés pendant le processus de CI/CD dans Cloud Manager. Pour que les connecteurs soient déployés, ils doivent être référencés dans le fichier pom.xml du projet Maven.
 
 Il existe différentes options pour inclure les packages dans un projet :
 
 1. Référentiel public du partenaire : un partenaire héberge le package de contenu dans un référentiel expert accessible au public.
-1. Référentiel protégé par mot de passe du partenaire : un partenaire héberge le package de contenu dans un référentiel Maven protégé par mot de passe. Pour obtenir des instructions, consultez [Référentiels Maven protégés par mot de passe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=fr#password-protected-maven-repositories).
+1. Référentiel protégé par mot de passe du partenaire : un partenaire héberge le module de contenu dans un référentiel Maven protégé par mot de passe. Voir [Référentiels Maven protégés par mot de passe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) pour obtenir des instructions.
 1. Artefact assemblé : dans ce cas, le package de connecteur est inclus localement dans le projet expert du client.
 
-Où qu’ils soient hébergés, les packages doivent être référencés en tant que dépendances dans le fichier pom.xml, comme indiqué par le fournisseur.
+Où qu’ils soient hébergés, les modules doivent être référencés en tant que dépendances dans le fichier pom.xml, tel qu’il est fourni par le fournisseur.
 
 ```xml
 <!-- UberJAR Dependency to be added to the project's Reactor pom.xml -->
@@ -37,7 +36,7 @@ Où qu’ils soient hébergés, les packages doivent être référencés en tant
 </dependency>
 ```
 
-Si le partenaire logiciel héberge le connecteur sur un référentiel Maven accessible sur Internet (tel que Cloud Manager accessible), ce partenaire doit fournir la configuration du référentiel où le fichier pom.xml peut être placé, de sorte que les dépendances du connecteur (ci-dessus) puissent être résolues au moment de la création (localement et par Cloud Manager).
+Si le partenaire logiciel héberge le connecteur sur un référentiel Maven accessible sur Internet (tel que Cloud Manager accessible), le partenaire doit fournir la configuration du référentiel où la variable `pom.xml` peut être placé. Cela est dû au fait que les dépendances des connecteurs (ci-dessus) peuvent être résolues au moment de la création, à la fois localement et par Cloud Manager.
 
 ```xml
 <repository>
@@ -54,4 +53,4 @@ Si le partenaire logiciel héberge le connecteur sur un référentiel Maven acce
 </repository>
 ```
 
-Si le partenaire logiciel choisit de distribuer le connecteur en tant que fichiers téléchargeables, le partenaire doit alors fournir des instructions sur la manière dont les fichiers peuvent être déployés dans un référentiel Maven du système de fichiers local qui doit être archivé dans Git dans le cadre du projet AEM, afin que Cloud Manager puisse résoudre ces dépendances.
+Si le partenaire logiciel choisit de distribuer le connecteur en tant que fichiers téléchargeables, le partenaire doit alors fournir des instructions. L’instruction doit décrire comment les fichiers peuvent être déployés dans un référentiel Maven de système de fichiers local qui doit être archivé dans Git dans le cadre du projet AEM. Cloud Manager peut ainsi résoudre ces dépendances.

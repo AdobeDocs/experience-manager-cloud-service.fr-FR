@@ -2,10 +2,10 @@
 title: Aperçu des composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 87%
+source-wordcount: '386'
+ht-degree: 58%
 
 ---
 
@@ -15,26 +15,24 @@ Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels
 
 ## Que sont les composants ?  {#what-are-components}
 
-Les composants dans AEM :
-
 * sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web ;
-* peuvent être réutilisés ;
+* Réutilisable.
 * sont développés comme des unités autonomes dans un seul dossier du référentiel ;
 * ne comportent aucun fichier de configuration masqué ;
-* peuvent contenir d’autres composants ;
-* peuvent s’exécuter n’importe où dans n’importe quel système AEM et peuvent également être limités à s’exécuter sur des composants spécifiques ;
+* Ils peuvent contenir d’autres composants.
+* Ils peuvent s’exécuter n’importe où dans n’importe quel système AEM et peuvent également être limités à s’exécuter sous des composants spécifiques.
 * possèdent une interface utilisateur standardisée ;
 * sont associés à un comportement de modification qui peut être configuré ;
-* utilisent des boîtes de dialogue créées à l’aide de sous-éléments basés sur les composants de l’interface utilisateur Granite ;
-* sont développés à l’aide de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) ;
-* peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
+* Utilisez des boîtes de dialogue créées à l’aide de sous-éléments basés sur des composants de l’IU Granite.
+* Ils sont développés à l’aide de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr).
+* Ils peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
 
 Les composants étant modulaires, vous pouvez :
 
 * Développez un nouveau composant sur votre instance locale.
 * Déployer ce composant sur votre environnement de test.
 * Déployer le composant sur votre environnement de création actif et permettre ainsi aux auteurs et/ou développeurs d’ajouter et de configurer du contenu.
-* Déployer le composant sur votre (vos) environnement(s) de publication actif(s), où il est utilisé pour effectuer le rendu du contenu à l’intention des visiteurs de votre site Web.
+* Déployez-le dans vos environnements de publication actifs, où il est utilisé pour effectuer le rendu du contenu pour les visiteurs de votre site web.
 
 Chaque composant AEM :
 
@@ -44,7 +42,7 @@ Chaque composant AEM :
 
 ## AEM Core Components {#aem-core-components}
 
-[Les composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés pour AEM dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites web.
+[Composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés permettant d’AEM accélérer le développement et de réduire les coûts de maintenance de vos sites web.
 
 Les composants principaux sont fournis avec AEM as a Cloud Service et le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustre la manière d’implémenter et d’utiliser les composants. Les composants sont fournis avec l’intégralité du code source et peuvent être utilisés tels quels ou comme points de départ pour des composants modifiés ou étendus.
 
@@ -58,7 +56,7 @@ Vous pouvez également utiliser CRXDE Lite pour obtenir la liste de tous les com
 
 1. Dans l’onglet **[!UICONTROL Requête]**, sélectionnez `XPath` comme **[!UICONTROL Type]**.
 
-1. Dans la zone de saisie **[!UICONTROL Requête]**, entrez la chaîne suivante :
+1. Dans le **[!UICONTROL Requête]** saisissez la chaîne suivante dans le champ de saisie :
 
    `//element(*, cq:Component)`
 
