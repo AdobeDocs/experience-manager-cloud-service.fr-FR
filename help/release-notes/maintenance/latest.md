@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 0dab7428d8ae5ec4c11a88ff310fad649a365868
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 35%
+source-wordcount: '511'
+ht-degree: 20%
 
 ---
 
@@ -13,42 +13,60 @@ ht-degree: 35%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 13420 {#release-13420}
+## Version 13665 {#release-13665}
 
-Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 13420, publiée publiquement le 12 septembre 2023. Cette version de maintenance remplace la version 13323.
+Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 13665, publiée publiquement le 27 septembre 2023. Cette version de maintenance remplace la version 13420.
 
-L’activation des fonctionnalités de la version 2023.9.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
+2023.10.0 Feature Activation fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
-### Améliorations {#enhancements-13420}
+### Améliorations {#enhancements-13665}
 
-- ASSETS-19544 : les ressources modifiées en dernier par propriété sont désormais définies sur l’utilisateur demandant le traitement.
+* Diverses améliorations apportées aux API de fragment de contenu.
+* ASSETS-26713 : Tableau de bord des ressources : nouveau tableau de bord de l’interface utilisateur d’Experience est désormais accessible à partir de l’interface utilisateur tactile.
+* SITES-11206 : Fragments de contenu : API de recherche de fragments de contenu.
+* SITES-11262 : Fragments de contenu : bouton pour passer au nouvel éditeur de fragments de contenu.
+* SITES-15447 : Core Components : Version 2.23.4.
 
-### Problèmes résolus {#fixed-issues-13420}
+### Problèmes résolus {#fixed-issues-13665}
 
-- ASSETS-27628 : Noeud &quot;canaux&quot; en erreur créé lors de la personnalisation du panneau de recherche Assets
-- ASSETS-27539 : mise en correspondance des expressions régulières de restrictions de chargement.
-- ASSETS-26530 : Le Shell unifié ne ramène pas les utilisateurs à la page d’origine.
-- ASSETS-22719 : les crochets dans le nom du point d’arrêt de recadrage intelligent rompent la fonction d’édition de recadrage intelligent.
-- ASSETS-27726 : linkshare.html ne doit pas être indexé par Google.
-- ASSETS-27791 : la validation du schéma de métadonnées se produit uniquement pour le premier champ.
-- ASSETS-25544 : correction du bouton d’invalidation du cache CDN désactivé.
-- ASSETS-26575 : correction de la troncation des noms lors de la création de visionneuses d’images.
-- ASSETS-26705 : correction d’un traitement inutile sur les ressources de dossier et les fragments de contenu non DM.
-- ASSETS-25740 : correction des lecteurs d’écran qui ne narraient pas le nom et le rôle des commandes Modifier/Recadrer sur la page &quot;Modifier les recadrages intelligents&quot; à l’aide des touches fléchées vers le bas.
-- CQ-4354266 : impossible d’ouvrir les éléments de boîte de réception.
-- CQ-4354347 : Mise à jour AEM traductions.
-- DISP-1009 : User-Agent en tant que non-premier en-tête coupe X-Forwarded-Host.
-- Divers correctifs liés à l’accessibilité et à la sécurité.
+* Différentes mises à jour liées aux traductions.
+* CQ-4354428 : Workflows : impossible d’effectuer une tâche dans la boîte de réception.
+* SITES-9733 : Fragments de contenu : les références de ressources dans le panneau de référence des fragments de contenu affichent 0 (zéro) référence.
+* SITES-14561 : Fragments de contenu : correction et amélioration du HTML de la conversion Markup.
+* SITES-14882 : Fragments de contenu : une fois que nous avons modifié le fragment de contenu et fermé l’onglet sans cliquer sur le bouton Enregistrer ou fermer, les valeurs sont stockées.
+* SITES-15167 : Fragments de contenu : le correctif d’une variation avec une charge utile non valide ne renvoie pas 400 mais 500.
+* SITES-15514 : Fragments de contenu : sortie Markdown incorrecte pour le tableau dans l’éditeur de texte enrichi.
+* SITES-15661 : Fragments de contenu : n’utilisez pas de contrainte unique et ne réorganisez pas les éléments dans les champs de référence de l’API Fragments.
+* SITES-15730 : Screens : la fonctionnalité Aperçu du canal Screens ne fonctionne pas sur le tableau de bord.
+* SITES-15995 : Fragments de contenu : les types MIME des champs de texte long de modèle et de fragment sont codés en dur.
+* SITES-16074 : Fragments de contenu : Balisez les champs qui ne sont pas des chaînes[] ne peut pas être récupéré depuis JCR.
+* SITES-16084 : Fragments de contenu : le navigateur cible est absent de CFHomeCardModelImpl.
+* SITES-14773 : Fragments d’expérience : la référence de lien n’est pas mise à jour dans le fragment d’expérience.
+* SITES-14899 : Fragments d’expérience : plusieurs offres créées pour des variations XF dans Target.
+* SITES-8590 : GraphQL : problèmes de codage des variables dans les requêtes persistantes.
+* SITES-9224 : GraphQL : exception &quot;Writer a déjà été fermé&quot; dans GraphQLServlet.
+* SITES-14800 : GraphQL : exception dans les requêtes GraphQL persistantes avec des variables.
+* SITES-15586 : GraphQL : problème lié au filtrage de requêtes persistantes avec des valeurs &quot;null&quot;.
+* SITES-15622 : GraphQL : problème avec les requêtes persistantes avec les paramètres numériques et bool.
+* SITES-15654 : GraphQL : problème avec les unions et propriétés du même nom.
+* SITES-15267 : Lancements : la promotion ne sélectionne pas les pages de lancement modifiées avant la modification de la configuration du lancement.
+* SITES-15406 : Lancements : impossible d’ajouter une page de lancement.
+* SITES-15427 : Lancements : comportement incohérent de la portée &quot;Promouvoir la page active et les sous-pages&quot;.
+* SITES-15429 : Lancements : création de pages supprimées lors de la promotion de lancements.
+* SITES-15462 : Lancements : le processus de promotion automatique publie des pages hors du cadre de la promotion.
+* SITES-15815 : Lancements : la suppression de la page du lancement entraîne la non-promotion de Launch.
+* SITES-15223 : Éditeur de page : impossible de redimensionner les composants dans l’émulateur de taille de tablette.
+* SITES-15463 : Modèles de page : les modèles ne peuvent pas être publiés.
 
-### Problèmes connus {#known-issues-13420}
+### Problèmes connus {#known-issues-13665}
 
-Aucun.
+Aucun
 
-### Technologies intégrées {#embedded-tech-13420}
+### Technologies intégrées {#embedded-tech-13665}
 
 | Technologie | Version | Lien |
 |---|---|---|
 | AEM Oak | 1.54-T20230817132355-3800a65 | [API Oak 1.54.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
 | API SLING AEM | Version 2.27.2 | [API Apache Sling 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version 1.4.20-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
-| Composants principaux d’AEM | Version 2.23.2 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Composants principaux d’AEM | Version 2.23.4 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
