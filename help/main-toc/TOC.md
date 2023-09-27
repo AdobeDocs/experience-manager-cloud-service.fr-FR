@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: af7a4a3e23a07e4768192ae7d6308e3c6036ceb6
+source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
 workflow-type: tm+mt
-source-wordcount: '4321'
+source-wordcount: '4268'
 ht-degree: 92%
 
 ---
@@ -331,20 +331,6 @@ ht-degree: 92%
          + [Suppression de considérations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Structure d’analyse](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Raccourcis clavier ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
-         + [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-         + [Diffusion découplée avec des fragments de contenu et GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
-         + [Activation de la fonctionnalité de fragments de contenu pour votre instance](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
-         + [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-         + [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
-         + [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
-         + [Variations – création de contenu de fragment](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
-         + [Contenu associé à un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
-         + [Métadonnées – propriétés des fragments](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
-         + [Fragments de contenu – considérations sur la suppression](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
-         + [Texte (Markdown)](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
-         + [Arborescence de la structure](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-         + [Aperçu – Représentation JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-         + [Console Fragments de contenu - Raccourcis clavier](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + Création de site {#site-creation}
          + [Création d’un site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Activation du pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)

@@ -2,7 +2,7 @@
 title: Fragments de contenu
 description: Les fragments de contenu d’Adobe Experience Manager as a Cloud Service vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 83%
@@ -159,7 +159,7 @@ Pour le contenu intermédiaire, vous pouvez :
 
 ### Utilisation de contenu associé {#using-associated-content}
 
-Si vous avez [contenu associé](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) avec la propriété [fragment de contenu](/help/assets/content-fragments/content-fragments.md) ces ressources sont disponibles à partir du panneau latéral (après avoir placé votre fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Si vous avez [contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md) avec la propriété [fragment de contenu](/help/assets/content-fragments/content-fragments.md) ces ressources sont disponibles à partir du panneau latéral (après avoir placé votre fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
