@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 94%
+source-wordcount: '1024'
+ht-degree: 55%
 
 ---
 
@@ -15,7 +15,7 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 >[!NOTE]
 >
->À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes ; par exemple, celles de 2020, 2021 et ainsi de suite.
+>À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes. Par exemple, pour les années 2020 et 2021.
 
 >[!NOTE]
 >
@@ -34,12 +34,12 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Lors du partage de ressources numériques dans un lien, les utilisateurs peuvent copier immédiatement l’URL dans le presse-papiers. Cette amélioration vous permet de partager des ressources plus rapidement et plus facilement. Cette fonctionnalité permet un partage de ressources plus rapide et pratique.
+* Lors du partage de ressources numériques sous la forme d’un lien, l’utilisateur peut copier immédiatement l’URL dans le Presse-papiers. Cette amélioration vous permet de partager des ressources plus rapidement et plus facilement. Cette fonctionnalité permet un partage de ressources plus rapide et pratique.
 
   ![Option Copier l’URL lors du partage d’une ressource dans un lien](/help/assets/assets/link-share-copy-URL-option.png)
   *Image : lors du partage d’une ressource dans un lien, vous pouvez désormais copier l’URL pour la partager séparément.*
 
-* Lorsque vous chargez des fichiers TXT, les microservices de ressources génèrent automatiquement une miniature. La miniature PNG est un rendu de fichier TXT qui aide les utilisateurs à identifier le contenu ou les fichiers dans une certaine mesure, sans ouvrir les fichiers. Cette fonctionnalité ne nécessite aucune configuration et fonctionne par défaut.
+* Lorsque vous chargez des fichiers TXT, les microservices de ressources génèrent automatiquement une miniature. La miniature PNG est un rendu d’un fichier TXT qui permet aux utilisateurs d’identifier le contenu ou les fichiers dans une certaine mesure, sans ouvrir les fichiers. Cette fonctionnalité ne nécessite aucune configuration et fonctionne par défaut.
 
   ![Un rendu d’un fichier TXT est automatiquement généré par [!DNL Assets] au format PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
   *Image : un rendu d’un fichier TXT est automatiquement généré pour vous aider à identifier le fichier sans l’ouvrir.*
@@ -62,23 +62,23 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 * Le service de conversion automatique des formulaires peut [convertir des formulaires PDF en italien et en portugais](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=fr#language-specific-meta-model) dans les formulaires adaptatifs.
 
-* **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
+* **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
-* **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft Azure Storage en tant que BLOB.
+* **Connecteur Microsoft® Azure Data Store**: vous pouvez désormais [Connectez le modèle de données de formulaire à un stockage Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft® Azure Storage as a BLOB.
 
-### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
+### Nouvelles fonctionnalités disponibles dans le canal de préversion [!DNL Forms] {#prerelease-features-forms}
 
-* **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** : les niveaux de service professionnel et entreprise d’Adobe Sign offrent la possibilité d’étendre les rôles des destinataires du contrat au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais permettre à chaque destinataire de contrat de configurer son rôle dans un formulaire adaptatif, avec le rôle Signer par défaut.
+* **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** - Adobe Sign pour les niveaux de service d’entreprise et d’entreprise peut éventuellement étendre les rôles des destinataires du contrat, au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais permettre à chaque destinataire de l’accord de configurer son rôle dans un formulaire adaptatif, avec le signataire comme rôle par défaut.
 
-* **Analytics pour les formulaires adaptatifs** : vous pouvez désormais capturer et suivre le comportement de l’utilisateur final via Adobe Analytics pour les formulaires adaptatifs afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
+* **Analytics pour Forms adaptatif** - Vous pouvez désormais capturer et suivre le comportement de l’utilisateur final via Adobe Analytics pour Forms adaptatif afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
 
-* **Connectez facilement AEM Forms à Microsoft Dynamics et à Salesforce.com** : le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce.com, ce qui permet aux développeurs de configurer plus rapidement et plus facilement Microsoft Dynamics et Salesforce.com en tant que sources de données pour un formulaire adaptatif.
+* **Connectez facilement AEM Forms à Microsoft® Dynamics et Salesforce.com** - Le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft® Dynamics et Salesforce.com. Cela permet aux développeurs de configurer plus rapidement et plus facilement Microsoft® Dynamics et Salesforce.com comme sources de données pour un formulaire adaptatif.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
 ### Nouveautés {#what-is-new-cif}
 
-* Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience utilisateur, efficacité améliorée et meilleure prise en charge pour les catalogues complexes de produits
+* Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience utilisateur, une efficacité accrue et une meilleure prise en charge d’un catalogue de produits complexe
 
   ![Nouveau sélecteur de catégorie](/help/assets/CIF/category-picker.png)
 
@@ -95,16 +95,16 @@ La prochaine version est prévue pour le 9 septembre 2021.
 
 ### Nouveautés {#what-is-new-aug}
 
-* Les clients Cloud Service peuvent désormais afficher les rapports de Contrat de niveau de service (SLA) dans Cloud Manager. Cette fonctionnalité sera disponible progressivement au cours des prochains mois.
-Consultez [Rapport de SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html?lang=fr) pour en savoir plus.
+* Les clients Cloud Service peuvent désormais afficher les rapports de Contrat de niveau de service (SLA) dans Cloud Manager. Elle sera disponible progressivement au cours des prochains mois.
+Voir [Rapport SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html).
 
-* Le type et la gravité de l’IndexType et des règles de qualité de `IndexDamAssetLucene` ont été modifiés. Ils sont maintenant tous deux répertoriés en tant que niveau de *sévérité* « bogues de blocage ».
+* Le type et la gravité de l’IndexType et des règles de qualité de `IndexDamAssetLucene` ont été modifiés. Il s’agit désormais des deux bogues du bloqueur *gravité*.
 
-* De nouvelles règles de qualité d’index Oak ont été introduites pour couvrir les configurations asynchrones et tika.
+* De nouvelles règles de qualité d’index Oak ont été introduites pour couvrir les configurations asynchrones et Tika.
 
 * Augmentez le nombre maximal de certificats SSL par programme à 50.
 
-* Fonctionnalité de libre-service pour permettre aux utilisateurs de créer et de gérer plusieurs référentiels via l’interface utilisateur de Cloud Manager.
+* Fonctionnalité de libre-service permettant aux utilisateurs de créer et de gérer plusieurs référentiels au moyen de l’interface utilisateur de Cloud Manager.
 
 * SonarQube lisait inutilement les données de l’historique Git. Avec les bases de code volumineuses, cela pouvait entraîner une pénalité de performance de build inutile.
 
@@ -114,11 +114,11 @@ Consultez [Rapport de SLA](https://experienceleague.adobe.com/docs/experience-ma
 
 ### Correctifs {#bug-fixes-aug}
 
-* Le statut Mise à jour disponible ne doit pas s’afficher lorsque la dernière version est inférieure à la version présente.
+* Mise à jour L’état Disponible ne doit pas s’afficher lorsque la dernière version est inférieure à la version actuelle.
 
-* L’intégration initiale échouait pour les nouvelles organisations dont les noms étaient très longs.
+* L’intégration initiale échouait pour les nouvelles organisations aux noms longs.
 
-* Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une ou l’autre des exécutions échoue avec l’erreur *Impossible de mettre à jour l’état d’exécution du pipeline*.
+* Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une des exécutions échoue avec un événement *`cannot update pipeline execution status`* erreur.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
@@ -128,7 +128,7 @@ La date de publication de l’outil de transfert de contenu version v1.5.6 est 
 
 ### Correctifs {#bug-fixes-ctt}
 
-* Dans certains cas, certains utilisateurs n’ont pas été migrés vers l’instance cible. Pour obtenir ce correctif, la version v1.5.6 de CTT est requise avec aem-ethos-tools version 1.2.354 ou une version ultérieure dans l’instance cible d’AEM as a Cloud Service.
+* Parfois, tous les utilisateurs n’étaient pas migrés vers l’instance cible. Pour obtenir ce correctif, CTT v1.5.6 est requis avec aem-ethos-tools 1.2.354 ou version ultérieure sur l’instance as a Cloud Service de l’AEM cible.
 
 * Le bouton **Arrêter l’ingestion** était désactivé lors de l’ingestion vers l’instance de publication. Cela n’est pas nécessaire, car il n’existe aucune étape de restauration de mongo pendant l’ingestion de publication.
 
