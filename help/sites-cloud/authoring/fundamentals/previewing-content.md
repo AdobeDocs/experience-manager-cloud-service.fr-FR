@@ -2,10 +2,10 @@
 title: Prévisualisation du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant sa mise en ligne.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 96%
+source-wordcount: '316'
+ht-degree: 83%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 96%
 AEM propose un service d’aperçu Sites qui permet aux développeurs et aux auteurs de contenu de prévisualiser l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement.
 
 Il facilite la prévisualisation des expériences de page qui ne seraient pas visibles autrement à partir de l’environnement de création, comme les transitions de page et tout autre contenu côté publication uniquement.
+
+>[!NOTE]
+>
+>Comme le contenu est *publié* dans l’environnement de prévisualisation, il est accessible par URL (il n’a donc pas besoin d’accéder à AEM).
 
 Pour plus d’informations sur les environnements d’aperçu, voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
@@ -31,6 +35,9 @@ Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’in
 
 1. Une boîte de dialogue affiche les URL d’accès au contenu dans l’environnement de prévisualisation.
 
+   >[!NOTE]
+   >
+   >Comme le contenu est *publié* dans l’environnement de prévisualisation, il est accessible par URL (il n’a donc pas besoin d’accéder à AEM).
 
 Vous pouvez également utiliser les URL affichées dans l’assistant pour afficher le contenu de l’aperçu, ou ajouter `preview-` à l’URL de publication de votre instance de production.
 
