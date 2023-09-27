@@ -3,7 +3,7 @@ title: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Serv
 description: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
 workflow-type: tm+mt
 source-wordcount: '1451'
 ht-degree: 83%
@@ -32,7 +32,7 @@ que vous disposez d’une archive avec une structure similaire à celle décrite
 ### Extraire l’archive et supprimer tout préfixe
 
 Extrayez l’archive dans un dossier et assurez-vous que les noms des sous-dossiers immédiats commencent par `conf`, `conf.d`,
-`conf.dispatcher.d` et `conf.modules.d`. Dans le cas contraire, déplacez-les vers le haut de la hiérarchie.
+`conf.dispatcher.d` et `conf.modules.d`. Si ce n’est pas le cas, déplacez-les vers le haut de la hiérarchie.
 
 ### Supprimer les sous-dossiers et fichiers non utilisés
 
@@ -114,7 +114,7 @@ liés peuvent également être supprimés.
 
 ### Renommer les fichiers de fermes
 
-Toutes les fermes dans `conf.d/enabled_farms` doivent être renommées afin de correspondre au motif `*.farm`. Par exemple, le
+Toutes les fermes dans `conf.dispatcher.d/enabled_farms` doivent être renommées afin de correspondre au motif `*.farm`. Par exemple, le
 fichier de ferme appelé `customerX_farm.any` doit être renommé `customerX.farm`.
 
 ### Vérifier le cache
@@ -129,7 +129,7 @@ standard se trouve dans le dossier `src` de ce SDK. N’oubliez pas d’adapter 
 instructions `$include` faisant référence aux fichiers de règles `ams_*_cache.any` dans les
 fichiers de fermes.
 
-Si au lieu de `conf.dispatcher.d/cache` contient maintenant un seul fichier avec le suffixe `_cache.any`, il doit être renommé en `rules.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
+Si au lieu `conf.dispatcher.d/cache` contient maintenant un seul fichier avec le suffixe `_cache.any`, il doit être renommé en `rules.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
 doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
