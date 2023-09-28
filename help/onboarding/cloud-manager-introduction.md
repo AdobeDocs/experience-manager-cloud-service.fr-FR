@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager
 description: Découvrez comment Cloud Manager prend en charge votre projet AEM par le biais de ses programmes, environnements et pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 1608a44b8c9b5ae6bd75307ecb29dcd8f0ff367f
+source-git-commit: 0e0daf9870ba2e5923f9ea5dcdf3821a0cd0b7c6
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 85%
+source-wordcount: '861'
+ht-degree: 83%
 
 ---
 
@@ -51,6 +51,8 @@ Vous pouvez également accéder à la page Programmes et produits de Cloud Manag
 | Génération d’un jeton d’accès personnel | Accéder à Git |  | x |  | x |
 | Créer un RDE | Créer un environnement de développement rapide | x |  |  | x |
 | Réinitialiser un RDE | Réinitialiser un environnement de développement rapide | x |  |  | x |
+| Création/modification de jeux de contenu | Création ou modification d’un jeu de contenu pour la copie de contenu |  | x |  |  |
+| Démarrer/annuler la copie de contenu | Démarrer ou annuler un processus de copie de contenu |  | x |  |  |
 
 >[!NOTE]
 >
