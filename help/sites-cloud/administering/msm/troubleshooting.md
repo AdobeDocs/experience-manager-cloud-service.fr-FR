@@ -1,13 +1,13 @@
 ---
 title: Résolution des problèmes et FAQ concernant MSM
-description: Découvrez comment résoudre les problèmes les plus courants liés à MSM et comment obtenir des réponses aux questions les plus courantes à ce sujet.
+description: Découvrez comment résoudre les problèmes les plus courants liés à MSM et obtenir des réponses aux questions les plus courantes relatives à MSM.
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 80%
+source-wordcount: '767'
+ht-degree: 49%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 80%
 
 Si vous constatez ce que vous pensez être un comportement erroné ou une erreur dans MSM, avant de procéder à un dépannage en profondeur, assurez-vous de vérifier les points suivants :
 
-* Consultez la [FAQ sur MSM](#faq) car vos problèmes ou questions peuvent y avoir déjà été abordés.
-* Consultez l’article [Bonnes pratiques concernant MSM](best-practices.md) car de nombreux conseils y sont proposés ainsi que des clarifications sur un certain nombre d’idées fausses.
+* Vérifiez les [FAQ sur MSM](#faq) parce que vos problèmes ou questions peuvent déjà être traités là-bas.
+* Vérifiez les [Article sur les bonnes pratiques MSM](best-practices.md) plusieurs conseils y sont proposés, ainsi que des clarifications sur certaines idées fausses.
 
 ## Recherche d’informations avancées sur votre plan et le statut de Live Copy {#advanced-info}
 
@@ -42,13 +42,13 @@ Les versions précédentes des servlets renvoyaient des informations calculées 
 
 * Type de mixin `cq:LiveSync`
    * Il est défini sur les nœuds `jcr:content` et définit les pages racine Live Copy.
-   * Ces pages présenteront un nœud enfant `cq:LiveSyncConfig` de type `cq:LiveCopy` qui contiendra des informations de base et obligatoires sur la Live Copy dans les propriétés suivantes :
+   * Ces pages ont une `cq:LiveSyncConfig` noeud enfant de type `cq:LiveCopy` qui contient des informations de base et obligatoires sur la Live Copy via les propriétés suivantes :
       * `cq:master` pointe vers la page de plan directeur de la Live Copy.
       * `cq:rolloutConfigs` indique les configurations de déploiement principal appliquées à la Live Copy.
       * `cq:isDeep` est « true » si les pages enfants de cette page racine de Live Copy sont incluses dans la Live Copy.
 * Type de mixin `cq:LiveRelationship`
    * Toute page Live Copy dispose de ce type de mixin sur son nœud `jcr:content`.
-   * Si tel n’est pas le cas, la page a dû à un moment donné être détachée ou créée manuellement par le biais de l’interface de création en dehors d’une action Live Copy (création ou déploiement).
+   * Si ce n’est pas le cas, la page a à un moment donné été désolidarisée ou créée manuellement via l’interface de création en dehors d’une action Live Copy (création ou déploiement).
 * Type de mixin `cq:LiveSyncCancelled`
    * Ajouté aux nœuds `jcr:content` des pages Live Copy suspendues.
    * Si la suspension s’applique également aux pages enfants, une propriété `cq:isCancelledForChildren` est définie sur « true » sur le même nœud.
@@ -71,23 +71,23 @@ Voir [cet article](best-practices.md) pour plus d’informations sur cette rubri
 
 ### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 
-Aucun privilège de **déploiement** ne peut être défini ou supprimé pour les principaux d’AEM (utilisateurs ou groupes).
+Il n’y a pas de **déploiement** privilège pouvant être défini ou supprimé pour les entités de Adobe Experience Manager (utilisateurs ou groupes).
 
 Vous pouvez cependant :
 
 * modifier l’interface utilisateur du produit pour masquer les actions de déploiement pour un principal de sécurité donné ;
-* supprimer les privilèges d’écriture de l’arborescence Live Copy pour les auteurs qui ne sont pas autorisés à procéder à un déploiement.
+* Supprimez les privilèges d’écriture de l’arborescence de Live Copy pour les auteurs qui ne sont pas autorisés à se déployer.
 
 ### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_move » ?  {#moved-pages}
 
-Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une page Live Copy si elle n’existe pas encore (par exemple, lorsqu’elle est déployée pour la première fois ou que la page Live Copy a été supprimée manuellement).
+Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une page Live Copy si elle n’existe pas encore. Par exemple, lorsqu’il a été déployé pour la première fois ou que la page Live Copy a été supprimée manuellement.
 
-Dans ce cas, toutefois, si une page sans `cq:LiveRelationship` existe avec le même nom, cette page est renommée en conséquence avant la création de la page Live Copy.
+Dans ce cas, toutefois, si une page sans `cq:LiveRelationship` existe avec le même nom, cette page est renommée de sorte qu’elle soit antérieure à la création de la page Live Copy.
 
-Par défaut, le déploiement attend soit une page Live Copy liée, sur laquelle les mises à jour des plans directeurs sont déployées, soit aucune page à l’emplacement, lors de la création d’une page Live Copy.
+Par défaut, le déploiement attend une page Live Copy liée sur laquelle les mises à jour des plans directeurs sont déployées. Ou, il ne s’attend à aucune page lors de la création d’une page Live Copy.
 
-Si une page « autonome » est trouvée, MSM choisit de renommer cette page et de créer une page Live Copy distincte et liée.
+Si une page &quot;autonome&quot; est trouvée, MSM choisit de renommer cette page et crée une page Live Copy distincte liée.
 
-Une telle page autonome dans une sous-arborescence de Live Copy provient généralement d’une opération **Désolidariser** ou l’ancienne page de Live Copy a pu avoir été supprimée manuellement par un auteur, puis recréée sous le même nom.
+Une telle page autonome dans une sous-arborescence de Live Copy est généralement le résultat d’une **Désolidariser** ou l’ancienne page Live Copy a été supprimée manuellement par un auteur, puis recréée avec le même nom.
 
-Pour éviter cela, utilisez la fonction Live Copy **Suspendre** au lieu de **Désolidariser**. Vous trouverez plus d’informations sur l’action **Désolidariser** dans [cet article.](creating-live-copies.md)
+Pour éviter cela, utilisez la Live Copy **Suspendre** au lieu de **Désolidariser**. Plus d’informations sur **Désolidariser** vous trouverez l’action dans [cet article.](creating-live-copies.md)

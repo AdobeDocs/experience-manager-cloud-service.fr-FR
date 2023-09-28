@@ -1,11 +1,11 @@
 ---
 title: Ajout d’un module complémentaire Screens à un nouveau programme dans Cloud Manager
-description: Cette page décrit l’ajout d’un module complémentaire Screens à un nouveau programme dans Cloud Manager pour Screens as a Cloud Service.
+description: Découvrez comment ajouter un module complémentaire Screens à un nouveau programme dans Cloud Manager for Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 92%
+source-wordcount: '308'
+ht-degree: 40%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 Cette section décrit comment ajouter Screens en tant que module complémentaire à un nouveau programme dans Cloud Manager.
 
 >[!NOTE]
->Voir [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=fr) pour en savoir plus sur les programmes Cloud Manager.
+>Voir [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) pour en savoir plus sur les programmes Cloud Manager.
 
 ## Objectif {#objective}
 
@@ -27,9 +27,9 @@ Pour ajouter Screens en tant que module complémentaire à un nouveau programme 
 1. Accédez à [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) pour en savoir plus sur Cloud Manager.
+   >Voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=fr) pour en savoir plus sur Cloud Manager.
 
-1. Cliquez sur **Ajouter le programme** dans la page de destination de Cloud Manager.
+1. Cliquez sur **Ajout d’un programme** à partir de la page d’entrée de Cloud Manager.
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon1.png)
 
@@ -37,14 +37,14 @@ Pour ajouter Screens en tant que module complémentaire à un nouveau programme 
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon2.png)
 
-1. Sélectionnez **Screens** en tant que module complémentaire dans l’écran **Configurer pour production** à partir de cette étape de l’assistant, puis cliquez sur **Créer**.
+1. Sélectionner **Screens** sous la forme d’un module complémentaire de la fonction **Configuration pour la production** à partir de cette étape de l’assistant, cliquez sur **Créer**.
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
 
-1. Une fois la configuration de la création de votre programme terminée, votre programme Cloud Manager, par exemple, **Programme de démonstration ScreensCloud** s’affiche, comme illustré dans la figure ci-dessous, avec Screens comme module complémentaire dans votre programme.
+1. Une fois la configuration de création de votre programme terminée, vous pouvez voir votre programme Cloud Manager. Par exemple, la variable **Programme de démonstration ScreensCloud**, comme illustré dans la figure ci-dessous, avec Screens comme module complémentaire dans votre programme.
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
-Une fois que vous avez appris à ajouter Screens en tant que module complémentaire à un programme Cloud Manager existant et que votre programme s’affiche sous Programmes et produits de Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration, à savoir la [Création d’une branche pour votre projet dans Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Lorsque vous avez appris à ajouter Screens en tant que module complémentaire à un programme Cloud Manager existant et que votre programme s’affiche sous Programmes et produits de Cloud Manager, vous êtes prêt à passer à l’étape suivante. L’étape suivante du processus d’intégration est la suivante : [Création d’une branche pour votre projet dans Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
