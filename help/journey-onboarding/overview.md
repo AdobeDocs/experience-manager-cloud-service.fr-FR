@@ -2,10 +2,10 @@
 title: Présentation du Parcours d’intégration d’AEM as a Cloud Service
 description: Commencez ici pour avoir un aperçu du parcours guidé tout au long du processus d’intégration pour AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
+source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 95%
+source-wordcount: '1256'
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,9 @@ ht-degree: 95%
 
 Félicitations pour avoir choisi AEM as a Cloud Service. Ce document constitue le point de départ d’un parcours guidé tout au long du processus d’intégration. Que vous déployiez une nouvelle application ou migriez une application existante, ce parcours d’intégration garantit que vos équipes sont prêtes et qu’elles ont accès à AEM as a Cloud Service.
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
+
+Adobe Experience Manager est une puissante suite de services de contenu composable qui offre rapidement des expériences personnalisées et à fort impact sur n’importe quel canal, déverrouillant ainsi le contenu de tous pour tous. **Services de diffusion Edge** est la dernière innovation de Adobe Experience Manager qui permet une vitesse de contenu extrême et offre des expériences exceptionnelles. Découvrez comment commencer à utiliser les Edge Delivery Services en consultant [cette page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Pour savoir comment utiliser les Edge Delivery Services, reportez-vous à la section [Tutoriel du développeur](https://www.hlx.live/developer/tutorial) page.
 
 L’intégration est le processus au cours duquel un administrateur système désigné configure AEM as a Cloud Service pour votre organisation. Ce processus inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs et utilisatrices à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à ses ressources sur AEM as a Cloud Service.
 
@@ -83,10 +85,6 @@ Les articles suivants décrivent en détail les principaux concepts d’intégra
 | 8 | [Attribuer des profils de produit AEM](assign-profiles-aem.md) | Découvrez comment l’administrateur ou l’administratrice système attribue les membres de votre équipe à des profils de produit dans AEM as a Cloud Service. | Administrateur système |
 | 9 | [Tâches du développeur et du responsable de déploiement](developers.md) | Facultatif - Découvrez comment, en tant que développeur ou développeuse, vous pouvez accéder au Git de Cloud Manager et le gérer et en tant que responsable de déploiement, comment configurer des pipelines et déployer du code dans Cloud Manager. | Développeurs et responsables de déploiement |
 | 10 | [Tâches utilisateur d’AEM](aem-users.md) | Facultatif - Découvrez comment, en tant qu’auteur ou autrice AEM, vous pouvez accéder à l’instance AEM as a Cloud Service et vous familiariser avec la création de contenu pour AEM as a Cloud Service. | Utilisateurs AEM |
-
->[!NOTE]
->
->Edge Delivery Services est un nouvel ensemble de services composables qui permet un environnement de développement flexible et rapide dans lequel les auteurs peuvent rapidement mettre à jour et publier, et où de nouveaux sites sont lancés rapidement. Pour en savoir plus sur les services Edge Delivery, voir [Page de prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## Prochaines étapes {#what-is-next}
 
