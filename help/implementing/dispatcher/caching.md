@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Découvrez les principes de base de la mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
 workflow-type: tm+mt
-source-wordcount: '2800'
-ht-degree: 50%
+source-wordcount: '2803'
+ht-degree: 49%
 
 ---
 
@@ -203,16 +203,18 @@ Lorsqu’une requête HEAD est reçue sur le réseau CDN Adobe pour une ressourc
 
 ### Paramètres de campagne marketing {#marketing-parameters}
 
-Les URL de site web incluent souvent des paramètres de campagne marketing qui permettent de suivre la réussite d’une campagne. Pour utiliser efficacement le cache de Dispatcher, il est recommandé de configurer le `ignoreUrlParams` property as [documenté ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
+Les URL de site web incluent souvent des paramètres de campagne marketing qui permettent de suivre la réussite d’une campagne.
 
-La section `ignoreUrlParams` ne doit pas être commentée et doit référencer le fichier `conf.dispatcher.d/cache/marketing_query_parameters.any`. Le fichier peut être modifié en supprimant les commentaires des lignes correspondant aux paramètres relatifs à vos canaux marketing. Vous pouvez également ajouter d’autres paramètres.
+Pour les environnements créés en octobre 2023 ou version ultérieure, afin de mieux mettre en cache les requêtes, le réseau de diffusion de contenu supprimera les paramètres de requête communs liés au marketing, en particulier ceux qui correspondent au modèle regex suivant :
 
 ```
-/ignoreUrlParams {
-{{ /0001 { /glob "*" /type "deny" }}}
-{{ $include "../cache/marketing_query_parameters.any"}}
-}
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
+
+Veuillez envoyer un ticket d’assistance si vous souhaitez que ce comportement soit désactivé.
+
+Pour les environnements créés avant octobre 2023, il est recommandé de configurer le `ignoreUrlParams` property as [documenté ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
+
 
 ## Invalidation du cache du Dispatcher {#disp}
 

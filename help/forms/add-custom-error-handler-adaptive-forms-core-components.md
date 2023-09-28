@@ -7,17 +7,16 @@ keywords: Ajoutez un gestionnaire d’erreurs personnalisé, ajoutez un gestionn
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 963fcbe1e333dd6e0540e29ea150881826a1323c
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 7%
+source-wordcount: '2406'
+ht-degree: 8%
 
 ---
 
 
 # Gestionnaires d’erreurs dans Forms adaptatif (composants principaux) {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -234,7 +233,7 @@ Pour créer une fonction d’erreur personnalisée, procédez comme suit :
 
 Pour créer une fonction d’erreur personnalisée, procédez comme suit :
 
-1. [Cloner votre référentiel as a Cloud Service AEM Forms.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git).
+1. [Cloner votre référentiel AEM Forms as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git).
 1. Créez un dossier sous le `[AEM Forms as a Cloud Service repository folder]/apps/` dossier. Par exemple, créez un dossier nommé comme `experience-league`
 1. Accédez à `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` et créez un `ClientLibraryFolder` as `clientlibs`.
 1. Créez un dossier nommé `js`.

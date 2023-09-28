@@ -2,12 +2,11 @@
 title: Fragments de formulaire adaptatif
 description: Les formulaires adaptatifs fournissent un mécanisme permettant de créer un segment de formulaire, tel qu’un panneau ou un groupe de champs, utilisable dans tout formulaire adaptatif. Vous pouvez également enregistrer un panneau existant en tant que fragment.
 topic-tags: author
+keywords: Ajouter des fragments de formulaire adaptatif, des fragments de formulaire adaptatif, Créer un fragment de formulaire, Ajouter un fragment à un formulaire adaptatif, Gérer des fragments
 feature: Adaptive Forms
-hide: true
-hidefromtoc: true
-source-git-commit: b3aac0cb7682f66c72c32ebf706f5db4067b12ed
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1734'
 ht-degree: 23%
 
 ---
@@ -15,7 +14,11 @@ ht-degree: 23%
 
 # Fragments de formulaire adaptatif {#adaptive-form-fragments}
 
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Cet article |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Bien que chaque formulaire soit conçu à des fins spécifiques, certains segments sont communs à la plupart des formulaires, comme pour fournir des détails personnels tels que le nom et l’adresse, les détails de famille et les informations sur les revenus. Les développeurs de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé.
 
@@ -186,3 +189,9 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
 
 Les fragments de formulaire adaptatif de référence que vous pouvez utiliser pour créer votre formulaire sont disponibles.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
+
+## Voir également {#see-also}
+
+* [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Création ou ajout de thèmes dans Forms adaptatif](/help/forms/using-themes-in-core-components.md)
+* [Utilisation de Google reCAPTCHA dans un formulaire adaptatif AEM basé sur les composants principaux](/help/forms/captcha-adaptive-forms-core-components.md)

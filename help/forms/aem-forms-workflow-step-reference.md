@@ -3,21 +3,21 @@ title: Utilisation de processus d’AEM basés sur l’utilisation de Forms pour
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+keywords: Utiliser AEM workflows, en utilisant affecter des étapes de tâche, convertir en étape de PDF/A, Générer un document d’étape enregistrée, utiliser des workflows, Signer une étape de document, Générer une étape de sortie imprimée, Générer une sortie de PDF non interactive
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '7452'
-ht-degree: 78%
+source-wordcount: '7433'
+ht-degree: 79%
 
 ---
 
-# Utilisation de processus d’AEM basés sur Forms - Référence d’étape pour automatiser les processus d’entreprise{#forms-centric-workflow-on-osgi-step-reference}
+
+# Utilisation de processus d’AEM basés sur Forms - Référence d’étape pour automatiser les processus d’entreprise {#forms-centric-workflow-on-osgi-step-reference}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
-
-<span class="preview"> Rôles des chanteurs, Suivi et options d’authentification basées sur les ID de gouvernement dans la variable [Étape Signer le document](#sign-document-step) sont des fonctionnalités de préversion et accessibles via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Vous utilisez des modèles de workflow . Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr#extending-aem).
 
@@ -40,7 +40,6 @@ Les étapes de processus orientés formulaire effectuent des opérations spécif
 >[!NOTE]
 >
 >Si le modèle de workflow est marqué pour un stockage externe, alors pour toutes les étapes du Forms Workflow, vous ne pouvez sélectionner que l’option de variable pour stocker ou récupérer les fichiers de données et les pièces jointes.
-
 
 ## Étape Affecter une tâche {#assign-task-step}
 
@@ -379,8 +378,6 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 
 ## Étape Signer le document {#sign-document-step}
 
-<span class="preview"> Les rôles de chanteur, le Suivi et l’option d’authentification basée sur les ID de gouvernement dans l’étape Adobe Sign sont des fonctionnalités de préversion et accessibles via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 L’étape Signer le document vous permet d’utiliser [!DNL Adobe Sign] pour signer des documents. Lorsque vous utilisez la variable [!DNL Adobe Sign] Étape de processus pour signer un formulaire adaptatif, le formulaire peut être transmis entre les destinataires les uns après les autres ou envoyé simultanément à tous les destinataires, selon la configuration de l’étape de processus. [!DNL Adobe Sign] Les Forms adaptatives activées sont envoyées au serveur Experience Manager Forms, uniquement une fois que tous les destinataires ont terminé le processus de signature.
 
 Par défaut, la variable [!DNL Adobe Sign] Le service Planificateur vérifie la réponse des destinataires (sondages) toutes les 24 heures. [Vous pouvez modifier l’intervalle par défaut pour votre environnement](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
@@ -591,3 +588,9 @@ saisissez le code de paramètre régional dans la zone littérale ou sélectionn
 * **PDF linéarisé** : indique si le PDF généré doit être optimisé pour l’affichage Web.
 * **PDF balisé** : spécifie si le PDF généré doit être accessible.
 * **Document XCI** : spécifie le chemin d’accès au fichier XCI.
+
+## Voir également {#see-also}
+
+* [Variables dans les workflows AEM basés sur l’utilisation de Forms](/help/forms/variable-in-aem-workflows.md)
+* [Configuration du paramètre d’absence du bureau](/help/forms/configure-out-of-office-settings.md)
+

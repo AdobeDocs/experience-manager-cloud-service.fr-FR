@@ -1,20 +1,23 @@
 ---
 title: Activation d’Adobe Analytics pour un formulaire adaptatif
 description: L’automatisation de la configuration des Experience Cloud permet de connecter Adobe Analytics à un formulaire adaptatif afin d’effectuer le suivi des informations sur les interactions et l’engagement des visiteurs.
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+keywords: Activation d’Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration de l’Experience Cloud, de l’activation d’Adobe Analytics dans Forms, d’Adobe Analytics dans le Forms adaptatif, de l’intégration de Forms Analytics, de Forms et d’Adobe Analytics
+source-git-commit: 4daba42c9d8a7eff5d3ef6f9581c52c787666ed1
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 6%
+source-wordcount: '1591'
+ht-degree: 7%
 
 ---
 
 
 # Activation d’Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Cet article |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
 L’automatisation de la configuration des Experience Cloud permet de connecter Adobe Analytics à Adaptive Forms, ce qui facilite le suivi et l’analyse des interactions utilisateur avec vos formulaires et offre des informations sur les interactions et l’engagement des visiteurs. L’automatisation de la configuration des Experience Cloud permet également de surveiller les performances des formulaires, ce qui implique d’évaluer des mesures telles que les temps d’achèvement et les points d’abandon. Cette analyse permet d’optimiser les formulaires pour une meilleure expérience utilisateur tout en distinguant le comportement des utilisateurs en fonction de leur état de connexion, par exemple les utilisateurs anonymes, afin d’identifier les tendances et les modèles généraux.
-
 
 ## Avantages de l’intégration d’Adobe Analytics à Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -76,7 +79,7 @@ Pour activer et configurer Adobe Analytics pour votre Forms adaptatif, procédez
 * [Activation d’Adobe Analytics pour Forms adaptatif en fonction des composants de base](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [Activation d’Adobe Analytics pour Forms adaptatif en fonction des composants principaux](#integrate-adobe-analytics-with-aem-forms-for-core-components)
 
->[!VIDEO](https://video.tv.adobe.com/v/3424577/recaptcha-google-adaptive-forms/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
 
 
 <!--
@@ -219,14 +222,20 @@ Une fois que vous avez lié les règles de formulaire et de sites par le biais d
 
 ## Best Practices
 
-1.	Verify that Adobe Analytics is enabled on all the forms activated for Adobe Analytics.
+1.    Verify that Adobe Analytics is enabled on all the forms activated for Adobe Analytics.
 
-1.	Check the Adobe Analytics report periodically to gain insights into user behavior and form performance. For instance, you may set the cadence to 15 days or the period you prefer to choose for report analysis. This enables you to improve the forms enrollment experience.
+1.    Check the Adobe Analytics report periodically to gain insights into user behavior and form performance. For instance, you may set the cadence to 15 days or the period you prefer to choose for report analysis. This enables you to improve the forms enrollment experience.
 
-1.	Enable Analytics for all or most of your forms for tracking and analyzing user interaction with your forms and to gain insights into visitor interactions and engagement.
+1.    Enable Analytics for all or most of your forms for tracking and analyzing user interaction with your forms and to gain insights into visitor interactions and engagement.
 
 1. Check your forms performance after you update your form fields or components.
 
-1.	Share Analytics report with your peer groups for review, you can schedule your report for a later time.
+1.    Share Analytics report with your peer groups for review, you can schedule your report for a later time.
 
 -->
+
+## Voir également {#see-also}
+
+* [Affichage et compréhension des rapports d’analyse Forms adaptatif](/help/forms/view-understand-aem-forms-analytics-reports.md)
+* [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Intégration d’AEM Forms à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

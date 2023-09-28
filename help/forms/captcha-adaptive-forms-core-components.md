@@ -2,19 +2,16 @@
 title: Utilisation de Google reCAPTCHA dans un formulaire adaptatif AEM
 description: Améliorez la sécurité des formulaires avec le service Google reCAPTCHA sans effort. Guide pas à pas à l'intérieur !
 topic-tags: Adaptive Forms, author
-hide: true
-hidefromtoc: true
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+keywords: Service Google reCAPTCHA, Forms adaptatif, défi CAPTCHA, prévention des robots, composants principaux, sécurité d’envoi de formulaire, prévention des messages indésirables de formulaire
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '945'
 ht-degree: 17%
 
 ---
 
-# Utilisation de Google reCAPTCHA dans un formulaire adaptatif AEM basé sur les composants principaux {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+# Utilisation de Google reCAPTCHA dans un formulaire adaptatif AEM basé sur les composants principaux {#using-reCAPTCHA-in-adaptive-forms}
 
 | Application | Lien de l’article |
 | -------- | ---------------------------- |
@@ -54,13 +51,9 @@ Pour connecter votre environnement AEM Forms avec le service reCAPTCHA de Google
    1. Sélectionnez un conteneur de configuration, créé ou mis à jour dans la section précédente. Appuyez sur **[!UICONTROL Créer]**.
    1. Spécifier **[!UICONTROL Titre]**, **[!UICONTROL Nom]**, **[!UICONTROL Clé du site]**, et **[!UICONTROL Clé secrète]** pour le service reCAPTCHA (obtenu à l’étape 1). Appuyez sur **[!UICONTROL Créer]**.
 
-
    ![Configurez le Cloud Service pour connecter votre environnement AEM Forms au service reCAPTCHA par Google.](/help/forms/assets/captcha-configuration.gif)
 
-
-
    Une fois le service reCAPTCHA configuré, il peut être utilisé dans un formulaire adaptatif. Pour plus d’informations, voir [utilisation de Google reCAPTCHA dans un formulaire adaptatif](#using-reCAPTCHA).
-
 
 ## Utilisation de Google reCAPTCHA dans un formulaire adaptatif {#using-reCAPTCHA}
 
@@ -108,7 +101,7 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 
    -->
 
-## Foire aux questions
+## Questions fréquentes
 
 **Q : Puis-je utiliser plusieurs composants Captcha dans un formulaire adaptatif ?**
 **Réponse :** L’utilisation de plusieurs composants Captcha dans un formulaire adaptatif n’est pas prise en charge. En outre, il n’est pas recommandé d’utiliser le composant Captcha dans un fragment ou un panneau marqué pour le chargement différé.

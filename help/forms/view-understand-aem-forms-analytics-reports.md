@@ -1,21 +1,25 @@
 ---
 title: Affichage et compréhension des rapports d’analyse Forms adaptatif
 description: Adaptive Forms s’intègre de manière transparente à Adobe Analytics pour capturer et suivre les mesures de performances des formulaires et documents que vous avez publiés.
+keywords: Affichage et compréhension des rapports d’analyse Forms adaptatif, rapport d’analyse d’Adobe, rapport Forms Analytics
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 1%
 
 ---
 
 
 # Affichage et compréhension des rapports d’analyse Forms adaptatif {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Cet article |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 Dans le paysage en rapide évolution des analyses numériques, il est impératif de rester attentif aux tendances mondiales pour prendre des décisions éclairées et optimiser les expériences numériques. Pour ce faire, Adaptive Forms s’intègre de manière transparente à Adobe Analytics afin de capturer et de suivre les mesures de performances des formulaires et documents que vous avez publiés. L’analyse de ces mesures a pour objectif de prendre des décisions axées sur les données, en utilisant les mesures et analyses pour améliorer la convivialité et l’efficacité des formulaires.
 
@@ -102,3 +106,9 @@ Des mesures telles que les vues d’aide, les erreurs de validation et les visit
 Il permet d’analyser les champs de formulaire dans lesquels les utilisateurs ont passé du temps avant d’abandonner le formulaire. Par exemple, dans l’image ci-dessous, sur 5 formulaires abandonnés, 2 se trouvent dans le champ **Nom complet**, 2 à gauche sur le champ **Numéro de téléphone**, et 1 gauche sur le champ **Entrée de texte**.
 
 ![Visiteurs de champ](assets/field-visitors.png){width="100%"}
+
+## Voir également {#see-also}
+
+* [Activation d’Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Intégration d’AEM Forms à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
