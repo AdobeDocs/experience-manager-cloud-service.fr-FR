@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
+source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 7%
@@ -94,15 +94,9 @@ Vous trouverez ci-dessous un résumé des améliorations continues apportées à
 * FORMS-10248 : dans Forms adaptatif basé sur les composants principaux, la définition de la valeur d’un bouton radio ou d’une case à cocher lorsque le type de valeur de données est Booléen ne fonctionne pas comme prévu.
 * FORMS-8114 : le sélecteur de date et le modèle ne sont pas correctement lus par le lecteur d’écran NVDA. Plus précisément, lors de l’utilisation du lecteur d’écran NVDA, le sélecteur de date sans modèle est correctement lu. Cependant, lorsqu’un modèle est appliqué au sélecteur de date, il est lu en tant que tableau au lieu d’être interprété correctement.
 
-
-
-
-
-
-
 ### Problèmes connus {#known-issues-13665}
 
-Aucun
+Aucun.
 
 ### Technologies intégrées {#embedded-tech-13665}
 
