@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5532'
-ht-degree: 91%
+source-wordcount: '5561'
+ht-degree: 90%
 
 ---
 
@@ -46,12 +46,26 @@ La fonctionnalité de recherche [!DNL Experience Manager] prend en charge la rec
 ## Comprendre l’interface de recherche des ressources {#searchui}
 
 Familiarisez-vous avec l’interface de recherche des ressources et les actions disponibles.
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![Présentation de l’interface des résultats de recherche Experience Manager Assets](assets/aem-search-interface.png)
+*Figure : Présentation [!DNL Experience Manager Assets] interface des résultats de recherche.*
 
-![Présentation de l’interface des résultats de recherche des ressources Experience Manager](assets/aem_search_results.png)
-
-*Figure : Présentation de l’interface des résultats de recherche [!DNL Experience Manager Assets].*
-
-**A.** Enregistrer la recherche en tant que collection dynamique. **B.** Filtres ou prédicats pour limiter les résultats de recherche. **C.** Afficher les fichiers, les dossiers ou les deux. **D.** Cliquer sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est la gestion des ressources numériques. **F.** Champ Omni-recherche avec mot-clé de recherche fourni par l’utilisateur. **G.** Sélectionner les résultats de recherche chargés. **H.** Nombre de résultats de recherche affichés par rapport au nombre total de résultats de recherche. **I.** Fermer la recherche. **J.** Basculer entre les vues Carte et Liste.
+**A.** Enregistrer la recherche en tant que collection dynamique.
+**B.** Filtres ou prédicats pour limiter les résultats de recherche.
+**C.** Afficher les fichiers, les dossiers ou les deux.
+**D.** L’emplacement de recherche est DAM.
+**E.** Accéder aux recherches enregistrées.
+**F.** Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche.
+**G.** Affiche Ressources comme recherche par défaut.
+**H.** L’emplacement de recherche est DAM.
+**I.** Champ Omni-recherche avec mot-clé de recherche fourni par l’utilisateur.
+**J.** Sélectionnez les résultats de recherche chargés.
+**K.** Tri par Créé, Modifié, Nom, Aucun.
+**L.** Tri par ordre croissant ou décroissant.
+**M.** Nombre de résultats de recherche affichés sur le total des résultats de recherche. **N.** Fermez la recherche.
+**O.** Basculez entre le mode Carte et le mode Liste.
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
@@ -160,7 +174,10 @@ Pour configurer la taille du lot de ressources, procédez comme suit :
 
 **Recherche de ressources dans un dossier** : vous pouvez limiter la recherche à un dossier spécifique. Dans le panneau **[!UICONTROL Filtres]**, ajoutez le chemin d’un dossier. Vous ne pouvez sélectionner qu’un dossier à la fois.
 
-![Limitation des résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau Filtres](assets/search_folder_select.gif)
+![Limitation des résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau Filtres](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *Figure : Limitation des résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau Filtres.*
 
@@ -277,7 +294,9 @@ Transmettez les paramètres de requête suivants dans une URL pour démarrer le 
 
 Pour accéder à l’interface du sélecteur de ressources, accédez à `https://[aem_server]:[port]/aem/assetpicker`. Recherchez le dossier souhaité, puis sélectionnez une ou plusieurs ressources. Vous pouvez également rechercher la ressource souhaitée dans la zone Omni-recherche, appliquer un filtre selon vos besoins, puis la sélectionner.
 
-![Parcourir et sélectionner une ressource dans le sélecteur de ressources](assets/assetpicker.png)
+![Parcourir et sélectionner une ressource dans le sélecteur de ressources](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *Figure : Parcourir et sélectionner une ressource dans le sélecteur de ressources.*
 
