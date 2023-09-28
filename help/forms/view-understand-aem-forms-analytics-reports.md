@@ -5,7 +5,7 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -23,7 +23,7 @@ En capturant et en suivant les indicateurs clés de performance, les entreprises
 
 ## Configuration d’Adobe Analytics vers Forms adaptatif {#setup-adobe-analytics-to-aem-forms}
 
-Pour le rapport AEM Forms Analytics, vous devez d’abord intégrer Adobe Analytics à AEM Forms par le biais de l’automatisation de la configuration des Experience Cloud. L’automatisation de la configuration des Experience Cloud dans Forms adaptatif nécessite une licence Adobe Analytics, une collecte de données (anciennement Adobe Launch) pour gérer les scripts de suivi et une intégration à l’API Experience Platform Launch pour une agrégation et une génération simplifiées de données et d’informations. Visite [Activation d’Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration Experience Cloud](/help/forms/forms-experience-cloud-setup-automation.md) pour obtenir des informations de configuration complètes.
+Pour le rapport AEM Forms Analytics, vous devez d’abord intégrer Adobe Analytics à AEM Forms par le biais de l’automatisation de la configuration des Experience Cloud. L’automatisation de la configuration des Experience Cloud dans Forms adaptatif nécessite une licence Adobe Analytics, une collecte de données (anciennement Adobe Launch) pour gérer les scripts de suivi et une intégration à l’API Experience Platform Launch pour une agrégation et une génération simplifiées de données et d’informations. Visite [Activation d’Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) pour obtenir des informations de configuration complètes.
 
 ## Afficher le rapport Adobe Analytics d’Forms adaptatif {#view-adobe-analytics-report}
 
