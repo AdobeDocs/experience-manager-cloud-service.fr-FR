@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
+source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1419'
 ht-degree: 27%
 
 ---
@@ -50,7 +50,7 @@ En savoir plus sur les Edge Delivery Services dans cet article [here](/help/edge
 
 **Affectation d’un formulaire de métadonnées à un dossier**
 
-Vous pouvez désormais affecter un formulaire de métadonnées à un dossier spécifique dans le déploiement Assets Essentials. Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent ensuite les propriétés définies dans le formulaire de métadonnées affecté.
+Vous pouvez désormais affecter un formulaire de métadonnées à un dossier spécifique de votre déploiement. Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent ensuite les propriétés définies dans le formulaire de métadonnées affecté.
 
 ![affecter un formulaire de métadonnées à un dossier](/help/release-notes/assets/assign-to-folder.png)
 
