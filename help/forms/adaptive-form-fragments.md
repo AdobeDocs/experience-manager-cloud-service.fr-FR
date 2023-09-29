@@ -8,15 +8,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 17df7ef15fbd4077201f7e0678ffc9ea2732863d
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2028'
 ht-degree: 79%
 
 ---
 
 
-# Fragments de formulaire adaptatif {#adaptive-form-fragments}
+# Création et utilisation de fragments de Forms adaptatifs dans un formulaire adaptatif  {#adaptive-form-fragments}
+
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
