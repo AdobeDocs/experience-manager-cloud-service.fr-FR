@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
+source-git-commit: 8c878833118b2d8dc51e8cfa2c15ce70efbd3deb
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 27%
@@ -27,6 +27,10 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 ## Date de publication {#release-date}
 
 La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle des fonctionnalités (2023.9.0) est le 28 septembre 2023. La prochaine version de la fonctionnalité (2023.10.0) est prévue pour le 26 octobre 2023.
+
+## Notes de mise à jour de la maintenance {#maintenance}
+
+Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
 <!-- 
 
@@ -127,10 +131,6 @@ Filtrez le trafic sur le réseau de diffusion de contenu selon :
 Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-waf-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs. L&#39;espace est limité.
 
 En savoir plus sur la fonctionnalité de l’article [here](/help/security/cdn-and-waf-rules.md).
-
-## Notes de mise à jour de la maintenance {#maintenance}
-
-Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 
