@@ -2,10 +2,10 @@
 title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 80%
+source-wordcount: '1877'
+ht-degree: 79%
 
 ---
 
@@ -196,6 +196,10 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
    * **Désactivé** : rouge
 
 * Un bouton permet de **Essayer un nouvel éditeur**, en ouvrant directement le *new* [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) accessible via le [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >Le nouvel éditeur s’ouvre dans le même onglet. Il est déconseillé d’ouvrir les deux éditeurs en même temps.
 
 * **Enregistrer** permet d’accéder à l’option **Enregistrer et fermer**.
 

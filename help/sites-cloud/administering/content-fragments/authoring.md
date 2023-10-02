@@ -3,9 +3,9 @@ title: Créer des fragments de contenu
 description: Découvrez comment créer du contenu pour vos fragments de contenu, puis créez des variantes de ce contenu en fonction de vos besoins. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion headless et la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2249'
 ht-degree: 4%
 
 ---
@@ -62,6 +62,11 @@ Lorsque vous ouvrez l’éditeur de fragments de contenu pour la première fois,
    * une option pour afficher tout **Références parentes** (icône de lien)
    * le fragment **[État](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, et les dernières informations enregistrées ;
    * bascule pour passer à l’éditeur d’origine (basé sur les ressources)
+
+     >[!WARNING]
+     >
+     >L’éditeur d’origine s’ouvre dans le même onglet. Il est déconseillé d’ouvrir les deux éditeurs en même temps.
+
 * panneau de gauche : affiche la variable **[Variations](#variations)** pour le fragment de contenu et son **Champs**:
    * ces liens peuvent être utilisés pour [parcourir la structure du fragment de contenu ;](#navigate-structure)
 * panneau de droite : présente les onglets [affichage des propriétés (métadonnées) et des balises](#view-properties-tags), informations sur la variable [historique des versions](#view-version-history)et les informations relatives à [copies de langue](#view-language-copies)
