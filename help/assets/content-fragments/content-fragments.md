@@ -2,10 +2,10 @@
 title: Utiliser des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour la création de pages et la diffusion sans interface utilisateur. Comment les utiliser avec MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 61%
+source-wordcount: '2229'
+ht-degree: 60%
 
 ---
 
@@ -38,7 +38,7 @@ Les fragments de contenu peuvent également être diffusés au format JSON, à l
 >
 >Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ).
+>Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ). Les deux éditeurs disposent d’un bouton d’activation/désactivation dans la barre d’outils supérieure afin d’accéder rapidement à l’autre éditeur.
 
 Cette page et les suivantes portent sur les tâches de création, de configuration, de maintenance et d’utilisation de vos fragments de contenu :
 
