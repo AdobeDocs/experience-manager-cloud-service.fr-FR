@@ -1,14 +1,14 @@
 ---
-title: Répétabilité dans un formulaire adaptatif (composants principaux)
-description: Utilisez la fonction de répétabilité des composants du panneau pour répéter des sections similaires dans un formulaire adaptatif.
+title: Comment créer des panneaux répétables dans les composants principaux de formulaire adaptatif
+description: Découvrez comment créer des sections ou des champs répétables dans un formulaire adaptatif.
 role: Architect, Developer, Admin, User
-source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
+exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1390'
 ht-degree: 31%
 
 ---
-
 
 # Création de formulaires avec des sections répétables (composants principaux) {#repeat-panel}
 
@@ -30,7 +30,7 @@ Prenons l’exemple d’un formulaire utilisé pour collecter des informations s
 * Définir le nombre minimal ou maximal de répétitions pour un composant de formulaire adaptatif
 * Utilisez l’éditeur de règles pour configurer les actions d’ajout ou de suppression pour les sections répétables.
 
-Vous pouvez utiliser la variable [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) pour rendre les sections d’un formulaire adaptatif répétables. Vous pouvez ajouter des composants enfants au panneau, à l’accordéon, aux onglets horizontaux ou aux composants de l’assistant pour créer une section répétable dans un formulaire.
+Vous pouvez utiliser la variable [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) composants pour rendre les sections d’un formulaire adaptatif répétables. Vous pouvez ajouter des composants enfants au panneau, à l’accordéon, aux onglets horizontaux ou aux composants de l’assistant pour créer une section répétable dans un formulaire.
 
 
 Les exemples de ce document reposent sur la fonction [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) composant. Vous pouvez effectuer les étapes identiques pour créer la variable [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), et [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) composants répétables.
@@ -107,7 +107,7 @@ Le parent du panneau doit contenir un bouton de suppression pour supprimer l’i
 >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
 >
 >
->Par exemple, vous créez un formulaire adaptatif avec un panneau répétable doté d’une zone de texte. Lorsque vous pré-remplissez le formulaire avec trois zones de texte répétables, le code xml ci-dessous est requis :
+>Par exemple, vous créez un formulaire adaptatif avec un panneau répétable contenant une zone de texte. Lorsque vous pré-remplissez le formulaire avec trois zones de texte répétables, le code xml ci-dessous est requis :
 >
 >
 >`<panel1><textbox1>AA1</panel1></textbox1>`
@@ -168,7 +168,7 @@ Un sous-formulaire répétable est similaire aux panneaux répétables dans les 
 1. Dans la palette Objet, cliquez sur l’onglet Sous-formulaire et sélectionnez Positionné ou Distribué dans la liste Contenu.
 1. Cliquez sur l’onglet Liaison et sélectionnez Sous-formulaire pour chaque élément.
 1. Pour spécifier le nombre minimum de répétitions, sélectionnez Min. de répétitions et saisissez un nombre dans la zone associée. Si cette option est définie sur 0 et qu’aucune donnée n’est fournie pour les objets du sous-formulaire au moment de la fusion, le sous-formulaire n’est pas placé lors de la génération du formulaire.
-1. Pour spécifier le nombre maximal de répétitions du sous-formulaire, sélectionnez Max. et saisissez un nombre dans la zone associée. Si vous n’indiquez pas de valeur dans la zone Max., le nombre de répétitions du sous-formulaire est illimité.
+1. Pour spécifier le nombre maximal de répétitions du sous-formulaire, sélectionnez Max. et saisissez un nombre dans la zone associée. Si vous ne spécifiez aucune valeur dans la zone Max, le nombre de répétitions du sous-formulaire est illimité.
 1. Pour spécifier un nombre précis de répétitions du sous-formulaire, quelle que soit la quantité de données, sélectionnez l’option Quantité initiale et tapez un nombre dans la zone associée. Si vous sélectionnez cette option et qu’aucune donnée n’est disponible ou qu’il existe moins d’entrées de données par rapport à la valeur Quantité initiale spécifiée, des instances vides du sous-formulaire sont toujours placées sur le formulaire.
 1. Ajoutez deux boutons dans le sous-formulaire parent : un pour ajouter une instance et un autre pour supprimer une instance du sous-formulaire répétable. Pour obtenir des instructions détaillées, voir [Création d’une action](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Maintenant, liez le modèle de formulaire au formulaire adaptatif. Pour obtenir des instructions détaillées, voir [Créer un formulaire adaptatif basé sur un modèle](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
@@ -227,7 +227,7 @@ Dans le code suivant, le panneau`SampleType` utilise la propriété minOccurs &a
 
 ## Articles connexes
 
-* [Créer un formulaire adaptatif](creating-adaptive-form-core-components.md)
+* [Création d’un formulaire adaptatif](creating-adaptive-form-core-components.md)
 * [Créer un style ou des thèmes pour vos formulaires](using-themes-in-core-components.md)
 * [Ajout d’un comportement dynamique aux formulaires à l’aide de l’éditeur de règles](rule-editor.md)
 * [Définir la disposition des formulaires pour différentes tailles d’écran et différents types d’appareils](/help/sites-cloud/authoring/features/responsive-layout.md)

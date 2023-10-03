@@ -1,10 +1,11 @@
 ---
-title: Prise en charge des notes de bas de page dans les Forms adaptatives
-description: Améliorez les Forms adaptatives avec des notes de bas de page informatives en texte enrichi. Améliorez l’expérience et l’engagement des utilisateurs.
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+title: Prise en charge des notes de bas de page dans Adaptive Forms
+description: Utilisez l’éditeur de texte enrichi pour les notes de bas de page dans un formulaire adaptatif.
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 78%
+source-wordcount: '438'
+ht-degree: 79%
 
 ---
 

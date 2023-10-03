@@ -1,18 +1,14 @@
 ---
-title: Remplissage dynamique des listes déroulantes
-seo-title: Dynamically populating drop-down lists
-description: Procédure pour remplir de manière dynamique des listes déroulantes en fonction d’une certaine logique
-seo-description: Procedure to dynamically populate drop-down lists based on some logic
+title: Comment remplir de manière dynamique des listes déroulantes ?
+description: Découvrez comment créer une zone de liste en cascade ou remplir de manière dynamique des listes déroulantes.
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 54%
+source-wordcount: '346'
+ht-degree: 52%
 
 ---
 
@@ -32,7 +28,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
 1. Créez un projet avec les modules suivants :
 
-   * Groupe contenant la logique pour remplir la liste déroulante, qui dans ce cas est une servlet.
+   * Le lot contenant la logique pour remplir la liste déroulante, qui dans ce cas est une servlet.
    * Le contenu, qui incorpore le fichier .jar et dispose d’une ressource déroulante. Le servlet pointe vers cette ressource.
 
 1. Créez un servlet basé sur le paramètre de requête Pays, qui renvoie un tableau contenant les noms des états du pays.

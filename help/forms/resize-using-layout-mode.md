@@ -1,14 +1,14 @@
 ---
-title: Utilisation du mode Mise en page pour redimensionner les composants d’Adaptive Forms
-description: Définissez la position des composants à l’aide de la grille réactive disponible en mode Mise en page. Découvrez comment accéder au mode Mise en page, redimensionner des composants et des panneaux, définir une mise en page à plusieurs colonnes pour un panneau, activer la nouvelle grille réactive pour les anciennes mises en page réactives et désactiver le mode Mise en page pour les formulaires dotés d’une ancienne mise en page réactive.
+title: Comment utiliser le mode Mise en page pour redimensionner des composants pour les formulaires adaptatifs ?
+description: Définissez la position des composants AEM Forms, apprenez à accéder au mode de mise en page, redimensionnez les composants, redimensionnez les panneaux et définissez la mise en page multicolonne d’un panneau.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 91%
+source-wordcount: '1134'
+ht-degree: 90%
 
 ---
 

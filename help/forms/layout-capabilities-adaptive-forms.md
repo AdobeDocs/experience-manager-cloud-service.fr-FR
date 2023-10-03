@@ -1,12 +1,11 @@
 ---
-title: Fonctions de mise en page des formulaires adaptatifs
-seo-title: Layout capabilities of Adaptive Forms
+title: Quelles sont les fonctionnalités de mise en page d’Adaptive Forms ?
 description: La disposition et l’apparence des formulaires adaptatifs sur différents appareils sont déterminées par les paramètres de disposition. Comprenez les différentes dispositions et leur mode d’application.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 81%
+source-wordcount: '859'
+ht-degree: 80%
 
 ---
 

@@ -1,16 +1,14 @@
 ---
-title: Création de formulaires avec des sections répétables
-seo-title: Creating forms with repeatable sections
-description: Les sections répétables sont des panneaux qui peuvent être dynamiquement ajoutés ou supprimés dans un formulaire.
-seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
+title: Comment créer des formulaires avec des sections répétables ?
+description: Découvrez comment créer des sections répétables dans un formulaire pouvant être ajouté ou supprimé dynamiquement dans un formulaire.
 uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 62%
+source-wordcount: '1130'
+ht-degree: 50%
 
 ---
 
@@ -27,13 +25,13 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 1. En mode d’édition, sélectionnez panneau, puis appuyez sur ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **[!UICONTROL Activer la répétition du panneau]**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
 
-   Le champ Maximum spécifie le nombre maximal de fois qu’un panneau peut s’afficher sur la page. Vous pouvez spécifier -1 dans le champ Nombre maximum pour que le panneau s’affiche un nombre infini de fois.
+   Le champ Maximum spécifie le nombre maximal de fois qu’un panneau peut apparaître sur la page. Vous pouvez spécifier -1 dans le champ Nombre maximum pour que le panneau s’affiche un nombre infini de fois.
 
    Le champ Minimum spécifie le nombre minimum de fois qu’un panneau s’affiche sur le formulaire. Si vous définissez le champ Nombre minimum sur zéro, vous pouvez ultérieurement supprimer toutes les instances via des scripts une fois le rendu terminé.
 
    >[!NOTE]
    >
-   >Pour créer un panneau non répétable, définissez la valeur des champs Maximum et Minimum sur 1. La mise en page en accordéon ne prend pas en charge -1 dans le champ Nombre maximum . Vous pouvez spécifier un nombre élevé pour donner une valeur infinie.
+   >Pour créer un panneau non répétable, définissez la valeur des champs Maximum et Minimum sur 1. La mise en page en accordéon ne prend pas en charge -1 dans le champ Nombre maximum . Vous pouvez spécifier un nombre élevé pour donner la notion de valeur infinie.
 
 1. Le parent du panneau, qui doit être répété, doit contenir des boutons d’ajout et de suppression pour gérer les instances des panneaux répétables. Pour insérer des boutons dans le parent et activer des scripts sur les boutons, procédez comme suit :
 
@@ -63,7 +61,7 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
       >
       >
-      >Par exemple, vous créez un formulaire adaptatif avec un panneau répétable contenant une zone de texte. Lorsque vous pré-remplissez le formulaire avec trois zones de texte répétables, le code xml ci-dessous est requis :
+      >Vous pouvez par exemple créer un formulaire adaptatif avec un panneau répétable contenant une zone de texte. Lorsque vous pré-remplissez le formulaire avec trois zones de texte répétables, le code xml ci-dessous est requis :
       >
       >
       >`<panel1><textbox1>AA1</panel1></textbox1>`
@@ -91,16 +89,14 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
       >[!NOTE]
       >
-      >Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instance du panneau et l’API addInstance du gestionnaire d’instances pour ajouter l’instance supprimée. Par exemple, _panelName.addInstance(). Elle ajoute une instance du panneau supprimé.
-
-
+      >Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instances du panneau et utilisez l’API addInstance du gestionnaire d’instances pour ajouter l’instance supprimée. Par exemple, _panelName.addInstance(). Elle ajoute une instance du panneau supprimé.
 
 ## Utilisation de la mise en page en accordéon pour le panneau parent  {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
-Un panneau comporte différentes options de mise en page. La mise en page de l’option de conception en accordéon prend en charge les panneaux répétables. Pour créer un panneau répétable avec la mise en page de l’option de conception en accordéon, procédez comme suit :
+Un panneau présente différentes options de disposition. La mise en page de l’option de conception en accordéon prend en charge les panneaux répétables. Effectuez les étapes suivantes pour créer un panneau répétable avec la mise en page de l’option de conception en accordéon :
 
 1. Dans le parent du panneau à répéter, appuyez sur ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Dans le menu déroulant **Disposition**, sélectionnez **Accordéon**.
-1. Dans un panneau à répéter, appuyez sur ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Activez l’onglet **Activer la répétition du panneau** et spécifiez des valeurs pour les champs **Maximum** et **Minimum**.
+1. Dans un panneau à répéter, appuyez sur ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Activez la variable **Rendre le panneau répétable** et spécifiez les valeurs de la variable **Maximum** et **Minimum** des champs.
 
    Vous pouvez désormais utiliser les boutons plus (+) et Supprimer (![delete-panel](assets/delete-panel.png)) pour ajouter ou supprimer des panneaux.
 
@@ -114,9 +110,9 @@ Un sous-formulaire répétable est similaire aux panneaux répétables dans les 
 1. Dans la palette Objet, cliquez sur l’onglet Sous-formulaire et sélectionnez Positionné ou Distribué dans la liste Contenu.
 1. Cliquez sur l’onglet Liaison et sélectionnez Sous-formulaire pour chaque élément.
 1. Pour spécifier le nombre minimum de répétitions, sélectionnez Min. de répétitions et saisissez un nombre dans la zone associée. Si cette option est définie sur 0 et qu’aucune donnée n’est fournie pour les objets du sous-formulaire au moment de la fusion, le sous-formulaire n’est pas placé lors de la génération du formulaire.
-1. Pour spécifier le nombre maximal de répétitions du sous-formulaire, sélectionnez Max. et saisissez un nombre dans la zone associée. Si vous n’indiquez pas de valeur dans la zone Max., le nombre de répétitions du sous-formulaire est illimité.
+1. Pour spécifier le nombre maximal de répétitions du sous-formulaire, sélectionnez Max. et saisissez un nombre dans la zone associée. Si vous ne spécifiez aucune valeur dans la zone Max, le nombre de répétitions du sous-formulaire est illimité.
 1. Pour spécifier un nombre précis de répétitions du sous-formulaire, quelle que soit la quantité de données, sélectionnez l’option Quantité initiale et tapez un nombre dans la zone associée. Si vous sélectionnez cette option et qu’aucune donnée n’est disponible ou qu’il existe moins d’entrées de données par rapport à la valeur Quantité initiale spécifiée, des instances vides du sous-formulaire sont toujours placées sur le formulaire.
-1. Ajoutez deux boutons dans le sous-formulaire parent : un pour ajouter une instance et un autre pour supprimer une instance du sous-formulaire répétable. Pour obtenir des instructions détaillées, voir [Création d’une action](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
+1. Ajoutez deux boutons dans le sous-formulaire parent : un pour ajouter une instance et un autre pour supprimer une instance d’un sous-formulaire répétable. Pour obtenir des instructions détaillées, voir [Création d’une action](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Liez maintenant le modèle de formulaire au formulaire adaptatif. Pour les étapes détaillées, voir [Création d’un formulaire adaptatif basé sur un modèle](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Utilisez les boutons créés à l’étape 9 pour ajouter et supprimer des sous-formulaires.
 
@@ -172,4 +168,4 @@ Dans le code suivant, le panneau`SampleType` utilise la propriété minOccurs &a
 
 >[!NOTE]
 >
->Pour une mise en page autre qu’en accordéon, utilisez les composants Bouton des formulaires adaptatifs pour ajouter et supprimer des instances.
+>Pour une mise en page sans accordéon, utilisez les composants de bouton Formulaire adaptatif pour ajouter et supprimer des instances.

@@ -1,14 +1,14 @@
 ---
-title: Comment créer un modèle de données de formulaire ?
-description: L’intégration de données d’Experience Manager Forms fournit une interface utilisateur intuitive permettant de créer et d’utiliser des modèles de données de formulaire. Découvrez comment créer des modèles de données de formulaire avec ou sans sources de données configurées.
+title: Comment créer un modèle de données de formulaire ?
+description: Découvrez comment créer un modèle de données de formulaire (FDM) et envoyer ou récupérer des données à une source de données à l’aide d’un formulaire adaptatif ou d’un processus d’AEM.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 88%
+source-wordcount: '1544'
+ht-degree: 86%
 
 ---
 
@@ -26,7 +26,7 @@ L’intégration de données [!DNL Experience Manager Forms] fournit une interfa
 
 * **Utilisation de sources de données préconfigurées** : si vous avez configuré les sources de données comme décrit dans [Configurer les sources de données](configure-data-sources.md), vous pouvez les sélectionner lors de la création d’un modèle de données de formulaire. Elle apporte tous les objets, propriétés et services de modèle de données des sources de données sélectionnées, disponibles dans le modèle de données de formulaire.
 
-* **Sans sources de données**: Si vous n’avez pas configuré de sources de données pour votre modèle de données de formulaire, vous pouvez tout de même le créer sans sources de données. Vous pouvez utiliser le modèle de données de formulaire pour créer des formulaires adaptatifs <!--and interactive communication--> et les tester à l’aide des exemples de données. Lorsque des sources de données sont disponibles, vous pouvez lier le modèle de données de formulaire à des sources de données, ce qui se reflète automatiquement dans les formulaires adaptatifs associés<!--and interactive communications-->.
+* **Sans sources de données**: si vous n’avez pas configuré de sources de données pour votre modèle de données de formulaire, vous pouvez tout de même le créer sans sources de données. Vous pouvez utiliser le modèle de données de formulaire pour créer des formulaires adaptatifs <!--and interactive communication--> et les tester à l’aide des exemples de données. Lorsque des sources de données sont disponibles, vous pouvez lier le modèle de données de formulaire à des sources de données, ce qui se reflète automatiquement dans les formulaires adaptatifs associés<!--and interactive communications-->.
 
 >[!NOTE]
 >

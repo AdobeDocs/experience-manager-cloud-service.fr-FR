@@ -1,11 +1,11 @@
 ---
-title: Utilisation d’AEM Forms Designer
-description: Utilisation [!DNL Adobe Experience Manager (AEM) Forms] Designer pour créer des modèles de document d’enregistrement.
+title: Comment utiliser Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire ?
+description: Utilisation [!DNL AEM Forms] concepteur pour créer des modèles de document d’enregistrement et des fragments de formulaire.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 69%
+source-wordcount: '167'
+ht-degree: 63%
 
 ---
 

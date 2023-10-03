@@ -1,14 +1,15 @@
 ---
-title: Envoi d’un accusé de réception d’envoi de formulaire par e-mail
+title: Comment envoyer un accusé de réception d’envoi de formulaire par courrier électronique dans AEM Forms ?
 description: AEM Forms vous permet de configurer l’action Envoyer par messagerie qui envoie un accusé de réception à un utilisateur lors de l’envoi du formulaire.
+uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 94%
+source-wordcount: '371'
+ht-degree: 91%
 
 ---
 

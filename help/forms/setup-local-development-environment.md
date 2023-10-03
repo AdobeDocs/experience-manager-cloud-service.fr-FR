@@ -1,9 +1,10 @@
 ---
-title: Configuration de l’environnement de développement local pour AEM Forms
+title: Comment configurer un environnement de développement local pour AEM Forms ?
 description: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '2807'
+source-wordcount: '2810'
 ht-degree: 95%
 
 ---
@@ -330,7 +331,7 @@ Votre environnement de développement local est prêt.
 
 ## Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms
 
-L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. Vous avez besoin de l’environnement de composants principaux de Forms adaptatif activé pour utiliser le Forms adaptatif sans affichage.
+L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
 
 Pour obtenir des instructions, voir [Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 

@@ -1,12 +1,14 @@
 ---
 title: Configuration des paramètres d’absence du bureau
 description: Déléguez des tâches pendant ou hors du bureau pour une exécution transparente des workflows.
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 87%
+source-wordcount: '873'
+ht-degree: 81%
 
 ---
+
 
 # Configuration du paramètre d’absence du bureau {#configure-out-of-office-settings}
 
@@ -29,7 +31,7 @@ Vous pouvez séparer la délégation de tâches en fonction des modèles de proc
 >* Lorsque vous activez le paramètre Absence du bureau , tous les éléments disponibles dans votre boîte de réception, avant d’activer le paramètre, restent dans votre boîte de réception. Seules les tâches reçues après l’activation du paramètre sont déléguées.
 >* Lorsque vous désactivez le paramètre Absence du bureau, les tâches déléguées ne vous sont pas automatiquement réaffectées. Vous pouvez utiliser la fonctionnalité de revendication pour que ces tâches vous soient attribuées.
 >* Lorsque l’utilisateur A délègue des tâches à l’utilisateur B et que l’utilisateur B délègue des tâches à l’utilisateur C, les tâches sont affectées uniquement à l’utilisateur C et non à l’utilisateur B.
->* Lorsqu’une boucle est présente dans l’affectation, les tâches restent chez l’utilisateur initial. Par exemple, lorsque l’utilisateur A délègue des tâches à l’utilisateur B, l’utilisateur C délègue des tâches à l’utilisateur C, l’utilisateur C délègue des tâches à l’utilisateur D et l’utilisateur D délègue des tâches à l’utilisateur B, une boucle est créée. Dans ce cas, la tâche reste à l’utilisateur initial. L’utilisateur A est l’utilisateur initial dans l’exemple ci-dessus.
+>* Lorsqu’une boucle est en cours d’attribution, les tâches restent réservées à l’utilisateur d’origine. Par exemple, lorsque l’utilisateur A délègue des tâches à l’utilisateur B, l’utilisateur C délègue des tâches à l’utilisateur C, l’utilisateur C délègue des tâches à l’utilisateur D et l’utilisateur D délègue des tâches à l’utilisateur B, une boucle est créée. Dans ce cas, l’élément reste avec l’utilisateur d’origine. L’utilisateur A est l’utilisateur d’origine dans l’exemple ci-dessus.
 
 ## Activez le paramètre Absence du bureau pour votre compte {#enable-out-of-office}
 
@@ -40,7 +42,7 @@ Effectuez les étapes suivantes pour activer le paramètre Absence du bureau pou
 1. Ouvrez l’onglet **[!UICONTROL Absence du bureau]** dans la boîte de dialogue des paramètres.
 1. Appuyez sur le bouton **[!UICONTROL Activer/Désactiver]** pour activer le paramètre Absence du bureau.
 1. Spécifiez les paramètres **[!UICONTROL Heure de Début]** et **[!UICONTROL Heure de fin]**. Les tâches sont déléguées uniquement pendant la période spécifiée. Laissez le champ **[!UICONTROL Heure de fin]** vide pour déléguer des tâches pour une période indéfinie.
-1. Cochez la case **[!UICONTROL Transférer mes tâches pendant cette période]**. Si vous ne sélectionnez pas l’option et ne spécifiez pas de personne désignée, vos tâches ne sont transférées à aucun utilisateur. Bien que vous soyez absent et que le paramètre soit activé, les tâches restent dans votre boîte de réception.
+1. Cochez la case **[!UICONTROL Transférer mes tâches pendant cette période]**. Si vous ne sélectionnez pas l’option et ne spécifiez aucune personne désignée, vos éléments ne sont transférés à aucun utilisateur. Bien que vous soyez absent et que le paramètre soit activé, les tâches restent dans votre boîte de réception.
 1. Appuyez sur **[!UICONTROL Ajouter le cessionnaire]**. Spécifiez un utilisateur dans le champ **[!UICONTROL Cessionnaire]** pour lui déléguer les tâches. Spécifiez le **[!UICONTROL modèle de workflow]** à déléguer à l’utilisateur spécifié. Vous pouvez sélectionner plusieurs modèles de processus.
 
    En outre, pour affecter toutes les tâches, quel que soit le modèle de processus, à un utilisateur particulier, sélectionnez **[!UICONTROL Tous les processus]** dans la liste déroulante Modèle de processus. <br>
@@ -52,7 +54,8 @@ Effectuez les étapes suivantes pour activer le paramètre Absence du bureau pou
 
    >[!NOTE]
    >
-   >L’ordre des délégataires est important. Lorsqu’un élément est attribué à un utilisateur qui a activé le paramètre d’absence du bureau, l’élément est évalué par rapport à la liste de personnes désignées spécifiée dans l’ordre auquel les personnes désignées sont ajoutées. Lorsqu’un élément correspond aux critères, il est attribué à la personne désignée et la personne désignée suivante n’est pas cochée.
+   >L’ordre des délégataires est important. Lorsqu’une tâche est affectée à un utilisateur qui a activé le paramètre Absence du bureau, la tâche est évaluée par rapport à la liste des délégataires dans leur ordre d’ajout. Lorsqu’un élément correspond aux critères, il est attribué à la personne désignée et la personne désignée suivante n’est pas cochée.
+
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**. Ce paramètre prend effet à la date et à l’heure de début spécifiées. Si vous vous connectez pendant que vous êtes absent du bureau, vous êtes toujours considéré comme absent du bureau jusqu’à ce que vous ayez modifié vos paramètres.
 
@@ -61,6 +64,7 @@ Désormais, les tâches qui vous sont affectées au cours de la période d’abs
 
 >[!NOTE]
 >
+>(Pour les éléments de workflow basés sur l’utilisation de Forms uniquement) Activez la variable **[!UICONTROL Autoriser les personnes désignées à déléguer à l’aide des paramètres &quot;Absence du bureau&quot;]** de l’ **[!UICONTROL Affecter une tâche]** dans le workflow. Seules les tâches pour lesquelles l’option ci-dessus est activée sont déléguées à d’autres utilisateurs.
 >(Pour les éléments de processus orientés formulaire uniquement) Activez l’option **[!UICONTROL Autoriser les délégataires à déléguer à l’aide des paramètres « Absence du bureau »]** de l’étape **[!UICONTROL Attribuer la tâche]** du processus. Seuls les éléments pour lesquels l’option mentionnée précédemment est activée sont délégués à d’autres utilisateurs.
 
 ## Limites {#limitations}

@@ -1,18 +1,16 @@
 ---
-title: Création de formulaires adaptatifs accessibles
-seo-title: Creating accessible Adaptive Forms
-description: AEM Forms propose les outils nécessaires pour créer des formulaires adaptatifs accessibles et répondre aux normes d’accessibilité.
-seo-description: AEM Forms provides you tools and to create accessible Adaptive Forms and helps comply with accessibility standards.
+title: Comment créer un Forms adaptatif accessible ?
+description: AEM Forms vous fournit des outils pour créer un Forms adaptatif accessible et vous aide à vous conformer aux normes d’accessibilité.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 78%
+source-wordcount: '2025'
+ht-degree: 76%
 
 ---
 
@@ -124,7 +122,7 @@ Pour utiliser l’option Accessibilité, procédez comme suit :
 >[!NOTE]
 >
 >* Dans le cas de la case d’option et de la case à cocher, deux options seulement sont possibles dans le cadre de l’accessibilité à savoir : Texte personnalisé et Titre.
->* Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont mappées sur la description courte et la légende sur le titre. Les autres options fonctionnent normalement.
+>* Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont mappées sur la description courte et la légende sont mappées sur le titre. Les autres options fonctionnent normalement.
 
 ### 3. Fournissez des équivalents textuels pour les images {#provide-text-equivalents-for-images}
 
@@ -140,7 +138,7 @@ Sélectionnez un composant d’image et appuyez sur ![cmppr](assets/cmppr.png). 
 
 La conception de l’accessibilité implique la prise en compte d’instructions supplémentaires pour l’utilisation des couleurs. Les auteurs de formulaires peuvent utiliser des couleurs pour améliorer l’aspect des formulaires en mettant en surbrillance différents composants de formulaire. Cependant, une utilisation incorrecte des couleurs peut rendre un formulaire difficile ou impossible à lire pour les personnes ayant des capacités différentes.
 
-Les utilisateurs ayant une déficience visuelle s’appuient sur le contraste prononcé entre le texte et l’arrière-plan pour lire du contenu numérique. En l’absence de contraste suffisant, la lecture d’un formulaire peut s’avérer difficile, voire impossible, pour certains utilisateurs.
+Les utilisateurs ayant une déficience visuelle s’appuient sur le contraste prononcé entre le texte et l’arrière-plan pour lire du contenu numérique. Sans contraste suffisant, un formulaire peut devenir difficile, voire impossible, à lire pour certains utilisateurs.
 
 Il est recommandé d’utiliser la police et les couleurs d’arrière-plan par défaut, c’est-à-dire le contenu en noir sur fond blanc. Si vous modifiez les couleurs par défaut, choisissez une couleur de premier plan foncée sur un arrière-plan clair, ou inversement.
 

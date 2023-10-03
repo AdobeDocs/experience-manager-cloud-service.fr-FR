@@ -1,14 +1,14 @@
 ---
 title: Comment utiliser un modèle de données de formulaire ?
-description: Découvrez comment ajouter des services et des objets de modèle de données, créer des objets de modèle de données et des propriétés enfants. Apprenez également comment configurer des services, ajouter des associations et utiliser les propriétés de navigation des services OData. Découvrez comment générer et modifier des exemples de données, tester des services et des objets de modèle de données et automatiser la validation des données d’entrée.
+description: Ajoutez des objets de modèle de données, des services, créez des objets de modèle de données et des propriétés enfants, configurez des services, utilisez les propriétés de navigation des services OData.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '4137'
-ht-degree: 74%
+source-wordcount: '4108'
+ht-degree: 73%
 
 ---
 

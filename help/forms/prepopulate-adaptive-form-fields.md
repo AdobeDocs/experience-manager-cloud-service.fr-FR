@@ -1,14 +1,11 @@
 ---
-title: Préremplissage des champs de formulaires adaptatifs
-seo-title: Prefill Adaptive Form fields
-description: Employez les données existantes pour préremplir les champs d’un formulaire adaptatif.
-seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+title: Comment préremplir les champs de formulaire adaptatif ?
+description: Pour préremplir les champs d’un formulaire adaptatif à l’aide de données existantes, les utilisateurs peuvent préremplir les informations de base d’un formulaire en se connectant à leur profil de réseau social.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2042'
 ht-degree: 80%
 
 ---
@@ -300,7 +297,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 ```
 
 - SERVICE_NAME fait référence au nom du service de préremplissage OSGI. Voir [Création et exécution d’un service de préremplissage](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-- IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant de l’utilisateur connecté est un exemple de métadonnées qui peut être utilisé.
+- IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant de la personne connectée est un exemple de métadonnées pouvant être utilisées.
 
 >[!NOTE]
 >

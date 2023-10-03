@@ -1,13 +1,13 @@
 ---
-title: Création et gestion de révisions pour un formulaire adaptatif
-description: La révision est un mécanisme qui permet aux réviseurs et réviseuses d’effectuer différentes tâches sur les formulaires adaptatifs à l’aide de l’étape Affecter une tâche.
+title: Comment créer et gérer des révisions d’Adaptive Forms incorporées ou créées dans une page Sites ?
+description: La révision est un mécanisme qui permet aux réviseurs d’effectuer différentes tâches pour les formulaires adaptatifs à l’aide de l’étape Affecter une tâche .
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 95%
+source-wordcount: '358'
+ht-degree: 88%
 
 ---
 

@@ -1,10 +1,11 @@
 ---
-title: Connexion d’AEM Forms à une base de données
-description: Vous pouvez récupérer des données et les enregistrer dans les services web RESTful, les services web SOAP et les services OData depuis [!DNL AEM Forms] as a Cloud Service. Le service fournit un outil dédié pour récupérer, tester, valider et envoyer des données à divers types de sources de données.
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+title: Comment connecter une base de données à [!DNL AEM Forms] as a Cloud Service ?
+description: Récupérez et enregistrez des données dans les services Web RESTful, les services Web SOAP et les services OData d’un formulaire adaptatif ou d’un processus AEM.
+exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 60%
+source-wordcount: '555'
+ht-degree: 56%
 
 ---
 

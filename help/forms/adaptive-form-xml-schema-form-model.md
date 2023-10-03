@@ -1,14 +1,14 @@
 ---
 title: Conception d’un schéma XML pour un formulaire adaptatif
-description: Découvrez comment utiliser un schéma XML comme modèle de formulaire dans un formulaire adaptatif. Explorez plus en détail un exemple de schéma XML, ajoutez des propriétés spéciales aux champs à l’aide du schéma XML et limitez les valeurs acceptables pour un composant de formulaire adaptatif.
+description: Découvrez comment créer un schéma XML pour un formulaire adaptatif et créer un formulaire adaptatif basé sur le schéma pour produire des données de réclamation de schéma.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 54%
+source-wordcount: '950'
+ht-degree: 51%
 
 ---
 
@@ -284,7 +284,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
 
 ## Questions fréquemment posées {#frequently-asked-questions}
 
-**J’ai une longue structure complexe dans l’outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
+**Je dispose d’une longue structure complexe dans l’outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
 
 Vous disposez de deux options :
 

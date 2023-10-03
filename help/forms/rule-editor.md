@@ -1,13 +1,13 @@
 ---
-title: Comment utiliser l’éditeur de règles de formulaire adaptatif ?
-description: L’éditeur de règles de Forms adaptatif vous permet d’ajouter un comportement dynamique et de créer une logique complexe dans des formulaires sans codage ni script. Découvrez une règle et des instructions pour choisir un concept de règle. Découvrez les types d’opérateur et les événements disponibles dans l’éditeur de règles.
+title: Qu’est-ce que l’éditeur de règles de Forms adaptatif ?
+description: L’éditeur de règles de formulaire adaptatif permet d’ajouter un comportement dynamique et de créer une logique complexe dans des formulaires, sans code ni script.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '6446'
+source-wordcount: '6422'
 ht-degree: 68%
 
 ---

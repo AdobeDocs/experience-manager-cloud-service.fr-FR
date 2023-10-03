@@ -1,15 +1,17 @@
 ---
-title: Ajout de gestionnaires d’erreurs personnalisés dans AEM Forms adaptatif
+title: Ajout de gestionnaires d’erreurs personnalisés dans Forms adaptatif pour AEM Forms adaptatif
+seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
 description: AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour un formulaire à l’aide du point de terminaison REST configuré pour appeler un service externe. Vous pouvez ajouter un gestionnaire d’erreurs par défaut ainsi qu’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif AEM.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Ajoutez un gestionnaire d’erreurs personnalisé, ajoutez un gestionnaire d’erreurs par défaut, ajoutez un gestionnaire d’erreurs dans le formulaire, utilisez le service d’appel de l’éditeur de règles pour ajouter un gestionnaire d’erreurs personnalisé, configurez l’éditeur de règles pour ajouter un gestionnaire d’erreurs personnalisé , ajoutez un gestionnaire d’erreurs personnalisé à l’aide de l’éditeur de règles
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: f6c6ef96f8de194942a95d8589591b41431037f5
+exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '2466'
-ht-degree: 7%
+source-wordcount: '2470'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 7%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
 AEM Forms fournit des gestionnaires de succès et d’erreur prêts à l’emploi pour les envois de formulaires. Il fournit également une fonctionnalité pour personnaliser les fonctions du gestionnaire d’erreurs. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client que le service est hors service. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un service externe est appelé à l’aide d’API, les données sont transmises au serveur pour validation, qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises comme paramètres au gestionnaire approprié pour exécuter la fonction. Un gestionnaire d’erreurs permet de gérer et d’afficher les erreurs ou les problèmes de validation rencontrés.
@@ -228,7 +230,7 @@ Pour ajouter et utiliser un gestionnaire d’erreurs personnalisé dans un formu
 
 Pour créer une fonction d’erreur personnalisée, procédez comme suit :
 
-1. [Clonage de votre référentiel as a Cloud Service AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git).
+1. [Cloner votre référentiel AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git).
 1. Créez un dossier sous le `[AEM Forms as a Cloud Service repository folder]/apps/` dossier. Par exemple, créez un dossier nommé comme `experience-league`
 1. Accédez à `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` et créez un `ClientLibraryFolder` as `clientlibs`.
 1. Créez un dossier nommé `js`.

@@ -1,19 +1,14 @@
 ---
-title: Publication et dépublication de formulaires et documents
-seo-title: Publishing and unpublishing forms and documents
-description: Vous pouvez planifier la publication et l’annulation de la publication de formulaires. Les formulaires publiés sont répliqués sur l’instance de publication.
-seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
+title: Comment publier et annuler la publication de formulaires et de documents ?
+description: Planifiez la publication et l’annulation de la publication de votre Forms adaptatif. Les formulaires publiés sont répliqués sur l’instance de publication.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+docset: aem65s
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 70%
+source-wordcount: '1335'
+ht-degree: 69%
 
 ---
 
@@ -48,7 +43,7 @@ Votre Forms adaptatif peut utiliser certaines configurations, paramètres et per
 * Personnalisations. Il s’agit notamment, mais sans s’y limiter :
 
    * Dispositions personnalisées
-   * Apparences personnalisées
+   * Aspects personnalisés
    * Fichier CSS : utilisé en tant qu’entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
    * Catégorie de bibliothèque cliente : utilisée en tant qu’entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
    * Toute autre bibliothèque cliente pouvant être incluse dans le modèle de formulaire adaptatif.
@@ -78,7 +73,6 @@ Un élément peut présenter les états suivants :
       >[!NOTE]
       >
       >Ne sélectionnez pas plusieurs éléments. La publication simultanée de plusieurs éléments n’est pas prise en charge.
-
 
 1. Au lancement de la procédure de publication, une boîte de dialogue de confirmation s’ouvre. Elle répertorie l’ensemble des éléments et des ressources connexes. Dans la boîte de dialogue contenant les éléments connexes, appuyez sur **[!UICONTROL Publier]**. L’élément est publié et la boîte de dialogue Publication réussie apparaît.
 

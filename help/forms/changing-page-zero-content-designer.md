@@ -1,16 +1,14 @@
 ---
-title: Modification du contenu de la page zéro avec Designer
-seo-title: Changing Page Zero content in Designer
-description: Savez-vous comment modifier le message affiché sur la page zéro d’un PDF XFA lors de son affichage dans une visionneuse non Adobe PDF ?
-seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
+title: Comment modifier le contenu de la page zéro dans Designer ?
+description: Modifiez le message affiché sur la page zéro d’un PDF XFA pour les visionneuses non Adobe PDF.
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '224'
 ht-degree: 63%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Intégration de DocuSign à un formulaire adaptatif
+title: Comment intégrer DocuSign à un formulaire adaptatif ?
 description: Découvrez comment utiliser DocuSign avec un formulaire adaptatif pour collecter des signatures électroniques.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 100%
+source-wordcount: '1559'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 DocuSign est une solution de signature électronique de premier plan. Vous pouvez l’utiliser pour signer un contrat électroniquement. Vous pouvez intégrer DocuSign à un formulaire adaptatif. Il vous permet d’envoyer un formulaire adaptatif à plusieurs destinataires pour qu’ils le signent électroniquement. L’utilisation des signatures électroniques vous permet d’effectuer les opérations suivantes :
 
 - Vous pouvez établir des contrats à partir de tout appareil à l’aide de processus entièrement automatisés d’offre, de devis et de contrat.
-- Vous pouvez exécuter plus rapidement les processus de ressources humaines et offrir à vos employés une expérience numérique plus satisfaisante.
+- Vous pouvez exécuter plus rapidement les processus de ressources humaines et offrir à vos employés une expérience digitale plus satisfaisante.
 - Vous pouvez réduire considérablement les durées des cycles de mise en œuvre des contrats et intégrer plus rapidement vos fournisseurs.
 
 AEM Forms as a Cloud Service fournit une [action d’envoi personnalisée pour DocuSign](#deploy-custom-submit-action). L’action d’envoi vous permet d’envoyer des formulaires adaptatifs pour les signatures électroniques à l’aide des API DocuSign.
@@ -174,6 +174,7 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
    1. Précisez les **[!UICONTROL Nom]** et **[!UICONTROL Titre]** pour le formulaire adaptatif.
 
    1. Sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’ [!DNL DocuSign] intégration d’[ à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+
    Le conteneur de configurations contient les services [!DNL DocuSign] Cloud Services configurés pour votre environnement. Ces services peuvent être sélectionnés dans l’éditeur de formulaires adaptatifs.
 
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, sélectionnez l’une des options suivantes :

@@ -1,14 +1,14 @@
 ---
-title: Comment créer une séquence de formulaires à plusieurs étapes ?
-description: Avec [!DNL Experience Manager Forms], vous pouvez définir une séquence de panneaux de formulaires pour que les utilisateurs puissent naviguer entre ceux-ci et remplir un formulaire adaptatif. Explorez ce thème en profondeur en prenant comme exemple un cas d’utilisation pour créer une séquence de formulaires à plusieurs étapes.
+title: Comment créer une séquence de formulaires en plusieurs étapes ?
+description: Avec [!DNL Experience Manager Forms], vous pouvez définir une séquence de panneaux de formulaires pour que les utilisateurs puissent naviguer entre ceux-ci et remplir un formulaire adaptatif.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 66%
+source-wordcount: '547'
+ht-degree: 63%
 
 ---
 
@@ -35,7 +35,7 @@ Supposons que vous deviez créer une séquence pour les étapes de remplissage, 
 
    Dans cet exemple, nous pouvons ajouter les panneaux suivants :
 
-   * **[!UICONTROL Remplir]**: Il contient des champs de formulaires pour la capture de données. Vous pouvez inclure des sous-panneaux imbriqués afin de créer des sections pour différents types d’information ; personnel, famille ou financier, par exemple.
+   * **[!UICONTROL Remplir]**: contient des champs de formulaire pour la capture de données. Vous pouvez inclure des sous-panneaux imbriqués afin de créer des sections pour différents types d’information ; personnel, famille ou financier, par exemple.
 
    <!--* **[!UICONTROL Verify]**: It contains the **[!UICONTROL Verify]** component that can be used in an XFA-based Adaptive Form. It displays the information captured in the Fill panel in read-only mode for verification.-->
 

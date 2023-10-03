@@ -1,15 +1,15 @@
 ---
-title: Générer un document d’enregistrement pour les formulaires adaptatifs
-description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
+title: Comment générer un document d’enregistrement pour Forms adaptatif
+description: Découvrez comment générer un modèle de document d’enregistrement (DE) pour Forms adaptatif.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '4139'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
-# Génération d’un document d’enregistrement pour les formulaires adaptatifs
+# Générer un document d’enregistrement pour les formulaires adaptatifs
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 

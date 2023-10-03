@@ -1,16 +1,14 @@
 ---
-title: Mots-clés des formulaires adaptatifs
-seo-title: Adaptive Forms keywords
-description: Vous ne pouvez pas utiliser ces mots réservés comme identifiants dans vos formulaires adaptatifs.
-seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
+title: Mots-clés réservés Adaptive Forms
+description: Mots-clés réservés que vous ne pouvez pas utiliser comme identifiants dans votre Forms adaptative.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 52%
+source-wordcount: '209'
+ht-degree: 44%
 
 ---
 

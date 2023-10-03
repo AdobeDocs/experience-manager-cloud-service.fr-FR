@@ -1,13 +1,13 @@
 ---
-title: Créer et ajouter un formulaire adaptatif à l’aide de l’Éditeur AEM Sites
-description: Vous pouvez utiliser un formulaire adaptatif (composants principaux) dans une page AEM Sites pour remplir et envoyer un formulaire sans quitter les pages AEM Sites.
+title: Comment ajouter ou créer une page Composants principaux de formulaire adaptatif dans AEM Sites ?
+description: Utilisez les composants principaux de formulaire adaptatif dans une page AEM Sites pour remplir et envoyer un formulaire sans quitter les pages AEM Sites.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 96%
+source-wordcount: '2131'
+ht-degree: 94%
 
 ---
 

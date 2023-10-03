@@ -1,17 +1,17 @@
 ---
 title: Comment utiliser  [!DNL Adobe Sign] dans un formulaire adaptatif ?
-description: Vous pouvez activer les processus de signature électronique ([!DNL Adobe Sign]) pour un formulaire adaptatif afin d’automatiser les processus de signature, de simplifier les processus de signature unique et multiple, et de signer de manière électronique les formulaires sur des appareils mobiles.
+description: Utilisez Adobe Sign dans un formulaire adaptatif pour permettre aux destinataires du formulaire de signer électroniquement un formulaire à partir de l’appareil et du lieu de leur choix.
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '3173'
-ht-degree: 97%
+source-wordcount: '3169'
+ht-degree: 96%
 
 ---
-
 
 # Utilisation d’[!DNL Adobe Sign] dans un formulaire adaptatif {#using-adobe-sign-in-an-adaptive-form}
 

@@ -1,14 +1,14 @@
 ---
 title: Comment appliquer des styles intégrés aux composants de formulaire adaptatif ?
-description: Si vous pouvez appliquer des styles personnalisés à un formulaire adaptatif, vous pouvez également appliquer des propriétés de style CSS intégré sur les différents composants d’un formulaire adaptatif. Découvrez comment appliquer des styles intégrés aux composants de formulaire adaptatif. Explorez plus profondément ce thème en utilisant un exemple pour appliquer un style inséré à un composant de champ de texte.
+description: Découvrez comment appliquer des styles personnalisés à un formulaire adaptatif. Vous pouvez également appliquer des propriétés CSS intégrées à des composants individuels d’un formulaire adaptatif.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 70%
+source-wordcount: '769'
+ht-degree: 66%
 
 ---
 
@@ -76,7 +76,7 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
    <td><p>Zone de texte</p> </td>
    <td><p>background-color</p> </td>
    <td><p>#6495ED</p> </td>
-   <td><p>Modifie la couleur d’arrière-plan en CornflowerBlue (#6495ED)</p> <p>Remarque : vous pouvez spécifier un nom de couleur ou son code hexadécimal dans le champ Valeur.</p> </td>
+   <td><p>Modifie la couleur de fond en CornflowerBlue (#6495ED)</p> <p>Remarque : vous pouvez spécifier un nom de couleur ou son code hexadécimal dans le champ Valeur.</p> </td>
   </tr>
   <tr>
    <td><p>Libellé</p> </td>

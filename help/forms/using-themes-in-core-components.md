@@ -1,13 +1,11 @@
 ---
-title: Création et utilisation des thèmes
-description: Vous pouvez utiliser les thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif avec des composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: créer un nouveau thème, personnaliser le thème, charger un nouveau thème, utiliser le thème dans les formulaires, personnaliser le thème à l’aide du pipeline frontal
+title: Comment créer et utiliser des thèmes dans Forms adaptatif ?
+description: Vous pouvez utiliser des thèmes pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif à l’aide de composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 16%
+source-wordcount: '2697'
+ht-degree: 17%
 
 ---
 
@@ -62,7 +60,7 @@ La personnalisation d’un thème fait référence au processus de modification 
 
 * Se familiariser avec [configuration d’un pipeline dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) et posséder des connaissances de base sur la configuration d’un pipeline vous aide à gérer et déployer efficacement vos personnalisations de thème.
 * Découvrez comment [configuration d’un utilisateur avec le rôle de contributeur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=fr). Comprendre comment configurer un utilisateur avec le rôle de contributeur vous permet d’accorder les autorisations nécessaires à la personnalisation du thème.
-* Installez la dernière version de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de génération couramment utilisé pour les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
+* Installez la dernière version d’[Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de génération couramment utilisé pour les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
 * Installez un éditeur de texte brut. Par exemple, Microsoft® Visual Studio Code. L’utilisation d’un éditeur de texte brut tel que Microsoft® Visual Studio Code fournit un environnement convivial pour la modification et la modification de fichiers de thème.
 
 ### Configuration de votre environnement
@@ -224,7 +222,7 @@ Pour prévisualiser et tester les modifications dans l’environnement local et 
 ##### 4.2 Test du thème à l’aide de l’environnement local {#start-a-local-proxy-server}
 
 1. Accédez à la racine du dossier de thème. Dans ce cas, le nom du dossier de thème est `aem-forms-theme-canvas`.
-1. Ouvrez l’invite de commande ou le terminal.
+1. Ouvrez l’invite de commandes ou le terminal.
 1. Exécuter `npm install` pour installer les dépendances.
 1. Exécuter `npm run live` pour prévisualiser le formulaire avec le thème mis à jour dans votre navigateur local.
 
@@ -324,7 +322,7 @@ Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous �
 Maintenant, envoyez les modifications au référentiel de thème de votre Cloud Service AEM Forms. .
 
 1. Accédez à la racine du dossier de thème.  Dans ce cas, le nom du dossier de thème est `aem-forms-theme-canvas`.
-1. Ouvrez l’invite de commande ou le terminal.
+1. Ouvrez l’invite de commandes ou le terminal.
 1. Exécutez la commande suivante dans l’ordre indiqué :
 
    ```
@@ -406,7 +404,7 @@ Les thèmes de formulaire adaptatif sont utilisés dans le cadre d’un modèle 
   Utilisez l’éditeur de thèmes si vous souhaitez mettre en forme l’en-tête et le pied de page à l’aide d’options de style telles que le style de police, l’arrière-plan et la transparence.
 Si vous souhaitez fournir des informations comme une image de logo, le nom de l’entreprise dans l’en-tête et des informations de copyright dans le pied de page, utilisez les options de l’éditeur de formulaires.
 
-## Questions fréquemment posées  {#faq}
+## Questions fréquentes  {#faq}
 
 **Q :** Quelle personnalisation est la priorité lorsque vous effectuez des personnalisations dans un dossier de thème au niveau global et au niveau des composants ?
 

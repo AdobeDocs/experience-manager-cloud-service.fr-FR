@@ -1,10 +1,13 @@
 ---
-title: Signer électroniquement un formulaire à l’aide de signatures tactiles
-description: Signer facilement le Forms adaptatif à l’aide de l’étape Signature tactile et signature. Rationalisation de la signature numérique pour une efficacité accrue.
+title: Comment appliquer des signatures électroniques à un formulaire au moyen de signatures tactiles ?
+description: Découvrez comment appliquer des signatures électroniques à un formulaire à l’aide de signatures tactiles.
+uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
+products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '726'
 ht-degree: 75%
 
 ---

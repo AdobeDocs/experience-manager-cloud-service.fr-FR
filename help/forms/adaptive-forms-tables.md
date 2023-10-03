@@ -1,15 +1,13 @@
 ---
 title: Tableaux dans les formulaires adaptatifs
-seo-title: Tables in adaptive forms
-description: Le composant Tableau d’AEM Forms permet de créer des tableaux dans les formulaires adaptatifs qui sont sensibles aux mises en page des appareils mobiles. Il permet aussi d’utiliser des composants de tableau XDP.
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+description: Utilisez le composant Tableau pour ajouter des tableaux à un formulaire adaptatif. En plus d’aider à la mise en page réactive, le composant de tableau permet d’ajouter des éléments de tableau XDP.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '2492'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 

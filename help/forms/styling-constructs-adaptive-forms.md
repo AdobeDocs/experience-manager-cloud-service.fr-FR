@@ -1,17 +1,15 @@
 ---
-title: Mise en forme des éléments pour les formulaires adaptatifs
-seo-title: Styling constructs for Adaptive Forms
-description: La structure LESS permet de personnaliser l’aspect des formulaires adaptatifs.
-seo-description: Use LESS framework to customize appearance of Adaptive Forms.
+title: Comment mettre en forme les éléments pour Forms adaptatif ?
+description: Utilisez la structure LESS pour le Forms adaptatif afin de personnaliser l’aspect du Forms adaptatif.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 77%
+source-wordcount: '2315'
+ht-degree: 76%
 
 ---
 
@@ -20,7 +18,7 @@ ht-degree: 77%
 
 ## Conditions préalables {#prerequisites}
 
-Connaissances en matière de CSS et structure LESS.
+Connaissance de la structure CSS et LESS.
 
 ## Éléments personnalisables {#what-can-be-customized}
 
@@ -702,7 +700,7 @@ En outre, il existe des classes pour définir le style des navigateurs d’ongle
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Navigateurs d’onglets (gauche et haut) qui n’ont pas de navigateurs imbriqués/enfants/sous-navigateurs</p> </td>
+   <td><p>Navigateurs d’onglets (gauche et haut) qui n’ont pas de navigateur imbriqué/enfant/sous-navigateur</p> </td>
   </tr>
  </tbody>
 </table>
@@ -949,7 +947,7 @@ Le panneau le plus haut (RootPanel) ne dispose pas de cette classe.
 
 ## Barre d’en-tête {#header-bar}
 
-Ces variables influent sur la barre d’en-tête visible sur un périphérique mobile ou équipé qui contient un titre de panneau et les navigateurs Suivant et Précédent.
+Ces variables influent sur la barre d’en-tête visible sur un appareil mobile ou équipé qui contient un titre de panneau et les navigateurs Suivant et Précédent.
 
 <table>
  <tbody>
@@ -1040,19 +1038,19 @@ Ces variables dans le tableau suivant influent sur la disposition de la barre d�
   </tr>
   <tr>
    <td><p><code>mobileToolbarBottom</code></p> </td>
-   <td><p>Position fixe de la barre d’outils, sur un périphérique mobile, depuis le bas</p> </td>
+   <td><p>Position fixe de la barre d’outils, sur un appareil mobile, depuis le bas</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarTop</code></p> </td>
-   <td><p>Position fixe de la barre d’outils, sur un périphérique mobile, depuis le haut</p> </td>
+   <td><p>Position fixe de la barre d’outils, sur un appareil mobile, depuis le haut</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarLeft</code></p> </td>
-   <td><p>Position fixe de la barre d’outils, sur un périphérique mobile, depuis la gauche</p> </td>
+   <td><p>Position fixe de la barre d’outils, sur un appareil mobile, depuis la gauche</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarRight</code></p> </td>
-   <td><p>Position fixe de la barre d’outils, sur un périphérique mobile, depuis la droite</p> </td>
+   <td><p>Position fixe de la barre d’outils, sur un appareil mobile, depuis la droite</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileButtonIconTopMargin</code></p> </td>
@@ -1060,11 +1058,11 @@ Ces variables dans le tableau suivant influent sur la disposition de la barre d�
   </tr>
   <tr>
    <td><p><code>mobileButtonIconWidth</code></p> </td>
-   <td><p>Largeur de l’icône des boutons de la barre d’outils sur un périphérique mobile</p> </td>
+   <td><p>Largeur de l’icône des boutons de la barre d’outils sur un appareil mobile</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileButtonIconHeight</code></p> </td>
-   <td><p>Hauteur de l’icône des boutons de la barre d’outils sur un périphérique mobile</p> </td>
+   <td><p>Hauteur de l’icône des boutons de la barre d’outils sur un appareil mobile</p> </td>
   </tr>
   <tr>
    <td><p><code>mobilefixedtoolbarbgcolor</code></p> </td>

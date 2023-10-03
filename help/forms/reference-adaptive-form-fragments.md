@@ -1,24 +1,22 @@
 ---
-title: Fragments de formulaire adaptatif de référence
-seo-title: Reference Adaptive Form Fragments
-description: AEM Forms propose des fragments de formulaire adaptatif que vous pouvez utiliser en tant que ressources pour créer un formulaire rapidement.
-seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
+title: Que sont les fragments de formulaire adaptatif de référence ?
+description: AEM Forms fournit des fragments de formulaire adaptatif que vous pouvez utiliser comme ressources pour créer rapidement des formulaires.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 77%
+source-wordcount: '423'
+ht-degree: 63%
 
 ---
 
 
 # Fragments de formulaire adaptatif de référence {#reference-adaptive-form-fragments}
 
-Un fragment de formulaire adaptatif est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez glisser-déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans l’éditeur de formulaires.
+Un fragment de formulaire adaptatif est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez faire glisser et déposer un fragment de formulaire adaptatif dans un formulaire à l’aide de l’explorateur de ressources dans la barre latérale et vous pouvez le modifier dans l’éditeur de formulaire.
 
 Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le package [!DNL AEM Forms] [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/fr/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Il comprend les fragments suivants :
 
@@ -39,7 +37,7 @@ Lorsque vous installez le package, un dossier Fragments de référence contenant
 
 ## Adresse {#address}
 
-Comprend des champs pour spécifier l’adresse postale. Les champs disponibles sont Adresse postale, Code postal, Ville, État et pays. Il comprend également un service Web préconfiguré qui renseigne la ville et l’état pour un code postal américain spécifié.
+Comprend des champs pour spécifier une adresse postale. Les champs disponibles sont Adresse postale, Code postal, Ville, État et pays. Il comprend également un service Web préconfiguré qui renseigne la ville et l’état pour un code postal américain spécifié.
 
 ![Fragment d’adresse](assets/address.png)
 
@@ -49,7 +47,7 @@ Comprend des champs pour spécifier l’adresse postale. Les champs disponibles 
 
 ## Coordonnées {#contact-information}
 
-Comprend des champs permettant de saisir le numéro de téléphone et l’adresse électronique.
+Comprend des champs pour capturer un numéro de téléphone et une adresse électronique.
 
 ![Fragment de coordonnées](assets/contact-info.png)
 
@@ -60,7 +58,7 @@ Comprend des champs permettant de saisir le numéro de téléphone et l’adress
 ## Informations de carte de crédit {#credit-card-information}
 
 Comprend des champs permettant de capturer les informations de carte de crédit qui peuvent être utilisées pour le traitement des paiements.
-[ ![Fragment d’informations de carte de crédit](assets/cc-info.png)](assets/cc-info-1.png)
+[![Fragment d’informations de carte de crédit](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Emploi actuel {#current-employment}
 

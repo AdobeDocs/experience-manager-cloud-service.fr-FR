@@ -1,13 +1,14 @@
 ---
-title: Composant séparateur dans les formulaires adaptatifs
-description: Vous pouvez utiliser le composant séparateur pour isoler visuellement les sections d’un formulaire.
+title: Qu’est-ce que le composant Separator dans les Forms adaptatives ?
+description: Le composant Séparateur dans les Forms adaptatives permet de séparer visuellement les sections d’un formulaire.
+uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 41%
+source-wordcount: '312'
+ht-degree: 35%
 
 ---
 

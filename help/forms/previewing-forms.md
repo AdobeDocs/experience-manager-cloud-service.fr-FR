@@ -1,16 +1,14 @@
 ---
-title: Prévisualisation d’un formulaire
-seo-title: Previewing a form
-description: Vous pouvez prévisualiser vos formulaires avant de les publier ou de les activer pour vous assurer qu’ils répondent aux attentes. Les options d’aperçu peuvent varier selon les types de formulaire pris en charge.
-seo-description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
+title: Comment prévisualiser un formulaire adaptatif
+description: Les utilisateurs peuvent prévisualiser les formulaires avant leur publication ou leur activation, afin de s’assurer qu’ils répondent aux attentes. Les options d’aperçu peuvent varier selon les types de formulaire pris en charge.
 uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 36%
+source-wordcount: '365'
+ht-degree: 35%
 
 ---
 
@@ -19,7 +17,7 @@ ht-degree: 36%
 
 ## Présentation {#overview}
 
-Dans [!DNL AEM Forms], vous pouvez prévisualiser les formulaires et les documents figurant dans le référentiel. L’aperçu permet de savoir exactement à quoi les formulaires ressemblent et se comportent lorsqu’ils sont publiés pour les utilisateurs finaux.
+Dans [!DNL AEM Forms], vous pouvez prévisualiser les formulaires et les documents figurant dans le référentiel. L’aperçu permet de savoir exactement à quoi ressemblent les formulaires lorsqu’ils sont publiés pour les utilisateurs finaux.
 
 Lors de la prévisualisation de formulaires, ils sont rendus dans l’interface interactive et l’utilisateur peut les remplir avec des données. Lors de la prévisualisation de documents, ils sont rendus en mode non interactif et l’utilisateur peut uniquement afficher le document. Pour les formulaires, une option supplémentaire d’aperçu personnalisé est disponible. Grâce à cette option, vous pouvez prévisualiser le formulaire à l’aide des données d’un fichier XML. Les données remplissent certains ou tous les champs du formulaire prévisualisé.
 
@@ -36,7 +34,7 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
    <td>Aperçu du PDF</td>
   </tr>
   <tr>
-   <td>Formulaire PDF</td>
+   <td>Formulaire de PDF</td>
    <td>Aperçu au format PDF et aperçu avec des données<br /> </td>
   </tr>
   <tr>
@@ -62,13 +60,13 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
 
    Vous avez le choix entre :
 
-   * Aperçu en tant que HTML
+   * Aperçu comme HTML
    * Aperçu avec des données
    * Aperçu au format PDF (disponible pour les modèles de formulaire)
 
 ## Aperçu avec des données {#preview-with-data}
 
-Lorsque vous sélectionnez **Aperçu avec données**, vous pouvez voir à quoi ressemble le formulaire avec des données réelles saisies. L&#39;option Aperçu avec données permet de télécharger un fichier XML contenant des exemples de données utilisateur. Les exemples de données utilisateur sont utilisés pour remplir le formulaire d’aperçu au format que vous choisissez.
+Lorsque vous sélectionnez **Aperçu avec des données**, vous pouvez voir à quoi ressemble le formulaire avec des données réelles saisies. L&#39;option Aperçu avec données permet de télécharger un fichier XML contenant des exemples de données utilisateur. Les exemples de données utilisateur sont utilisés pour remplir le formulaire d’aperçu au format que vous choisissez.
 
 1. Sélectionnez une ressource, cliquez sur Aperçu ![aem6forms_preview](assets/aem6forms_preview.png), puis sélectionnez **Aperçu avec des données**.
 1. Dans la boîte de dialogue Aperçu du formulaire, fournissez FormData en tant que fichier XML. Cliquez sur Aperçu pour effectuer le rendu du formulaire avec les données fusionnées du code XML.

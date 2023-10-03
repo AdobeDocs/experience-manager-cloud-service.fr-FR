@@ -1,12 +1,10 @@
 ---
-title: Gestion des métadonnées
-seo-title: Manage [!DNL AEM Forms] metadata
+title: Gestion des métadonnées pour AEM Forms
 description: Les métadonnées permettent de catégoriser et d’organiser plus facilement les ressources. Les utilisateurs peuvent ainsi retrouver aisément une ressource spécifique.
-seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1738'
 ht-degree: 67%
 
 ---
@@ -84,7 +82,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
   <tr> 
    <td>Date de la dernière modification</td> 
    <td>Tous</td> 
-   <td>Valeur en lecture seule indiquant l’heure de la dernière modification de la ressource.</td> 
+   <td>Valeur en lecture seule indiquant la date de dernière modification de la ressource.</td> 
   </tr> 
   <tr> 
    <td>Création</td> 
@@ -100,9 +98,9 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
    <td>Tous sauf ressource</td> 
    <td><p> Valeur en lecture seule qui définit l’un des états suivants d’un formulaire :</p> 
     <ul> 
-     <li>Aucune valeur : Si un formulaire n’a jamais été publié.</li> 
-     <li>Publié : Lorsqu’un formulaire est publié.</li> 
-     <li>Modifié : Lorsqu’un formulaire a été modifié après avoir été publié une fois.</li> 
+     <li>Aucune valeur : si un formulaire n’a jamais été publié.</li> 
+     <li>Publié : lorsqu’un formulaire est publié.</li> 
+     <li>Modifié : lorsqu’un formulaire a été modifié après avoir été publié une fois.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -154,8 +152,8 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
    <td><p>Formulaire adaptatif</p> <p>Modèle de formulaire</p> <p>Ressource</p> </td> 
    <td><p>Liste des actifs (autres formulaires ou ressources) auxquels ce formulaire est associé. Ces ressources peuvent appartenir à deux catégories :</p> 
     <ul> 
-     <li>Fait référence : Ressources auxquelles le formulaire actuel fait référence.</li> 
-     <li>Référencé par : Ressources qui font référence à la ressource actuelle.</li> 
+     <li>Fait référence : ressources auxquelles le formulaire actuel fait référence.</li> 
+     <li>Référencé par : ressources faisant référence à la ressource actuelle.</li> 
     </ul> <p>Ces ressources sont affichées sous forme de liens et leurs métadonnées sont accessibles en cliquant dessus.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -234,7 +232,7 @@ Dans la page de propriétés, le panneau de gauche affiche la vignette du formul
 
 Pour tous les types de formulaires, vous avez la possibilité de télécharger une image en cliquant sur **[!UICONTROL Télécharger l’image]** et en accédant à un fichier image dans le répertoire local. L’image sélectionnée remplace la vignette par défaut.
 
-Pour les formulaires adaptatifs, les utilisateurs ont également la possibilité de générer une vignette en tant qu’instantané de l’aperçu du formulaire adaptatif actuel. Comme [!DNL AEM Forms] prend également en charge la création de formulaires adaptatifs, l’aperçu d’un formulaire adaptatif peut être modifié chaque fois que vous changez ce dernier. Cette possibilité de générer une vignette permet d’obtenir une vignette mise à jour du formulaire adaptatif selon l’état de l’aperçu actuel. Cliquez sur **[!UICONTROL Générer l’aperçu]** pour effectuer cette action.
+Pour les formulaires adaptatifs, les utilisateurs ont également la possibilité de générer une vignette en tant qu’instantané de l’aperçu du formulaire adaptatif actuel. Comme [!DNL AEM Forms] prend également en charge la création de formulaires adaptatifs, l’aperçu d’un formulaire adaptatif peut être modifié chaque fois que vous changez ce dernier. Cette possibilité de générer une vignette permet d’obtenir une vignette mise à jour du formulaire adaptatif selon l’état de l’aperçu actuel. Cliquez sur **[!UICONTROL Générer l’aperçu]** pour mener à bien cette action.
 
 >[!NOTE]
 >
@@ -291,16 +289,16 @@ Un outil (l’éditeur de schéma de métadonnées) est proposé pour définir l
 
 1. Cliquez sur un composant que vous venez de déplacer. Dans l’onglet Paramètres qui s’affiche dans le panneau de droite, renseignez les champs suivants :
 
-   1. Indiquez un libellé de champ à utiliser comme nom d’affichage au-dessus du champ placé dans le schéma (par exemple : Service)
-   1. Sous le champ Associer à la propriété , vous pouvez voir une valeur préremplie. **&#39;./jcr:content/metadata/default&#39;**. Modifiez le &quot;&quot;**default**&quot; à un nom de propriété souhaité, utilisé pour stocker la propriété dans le référentiel crx (par exemple : &#39;./jcr:content/metadata/department&#39;)
+   1. Indiquez un libellé de champ à utiliser comme nom d’affichage au-dessus du champ placé dans le schéma (par exemple : Service).
+   1. Sous le champ Associer à la propriété , vous pouvez voir une valeur préremplie. **&#39;./jcr:content/metadata/default&#39;**. Modifiez le &quot;&quot;**default**&quot; à un nom de propriété souhaité, utilisé pour stocker la propriété dans le référentiel crx (par exemple : &quot;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >Ne modifiez pas le préfixe &quot;./jcr:content/metadata/&#39; car il définit le chemin d’accès où la propriété est stockée.
+      >Ne modifiez pas le préfixe &quot;./jcr:content/metadata/&#39; car il définit le chemin où la propriété est stockée.
       >
       >En outre, le nom de la propriété doit être unique pour éviter d’écrire des valeurs pour plusieurs propriétés au même emplacement dans le référentiel. Il est donc recommandé de modifier la valeur &quot;default&quot;.
 
-   1. Remplissez les autres paramètres en fonction des besoins. Sélectionnez par exemple l’option Obligatoire si vous souhaitez que le champ soit obligatoire.
+   1. Remplissez d’autres paramètres en fonction des besoins. Sélectionnez par exemple l’option Obligatoire si vous souhaitez que le champ soit obligatoire.
    1. Pour supprimer un champ que vous avez ajouté, sélectionnez-le, puis cliquez sur l’icône ![Supprimer](assets/Smock_Delete_18_N.svg).
 
 1. Si nécessaire, suivez les étapes 1 à 3 pour ajouter une autre propriété.

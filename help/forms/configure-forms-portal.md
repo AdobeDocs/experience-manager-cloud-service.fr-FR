@@ -1,9 +1,10 @@
 ---
-title: Ajout de Forms Portal à une page AEM Sites
+title: Comment créer un portail Formulaires sur une page Experience Manager Sites?
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1839'
 ht-degree: 84%
 
 ---

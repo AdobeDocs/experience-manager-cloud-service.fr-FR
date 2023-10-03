@@ -1,14 +1,14 @@
 ---
 title: Comment configurer [!DNL Microsoft Dynamics] OData ?
-description: Découvrez comment créer un modèle de données de formulaire basé sur les entités, les attributs et les services définis dans le service [!DNL Microsoft Dynamics] . Le modèle de données de formulaire peut être utilisé pour créer des formulaires adaptatifs qui interagissent avec un serveur [!DNL Microsoft Dynamics] pour activer des processus métier.
+description: Découvrez comment créer un modèle de données de formulaire basé sur les entités, les attributs et les services définis dans [!DNL Microsoft Dynamics] service.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 96%
+source-wordcount: '982'
+ht-degree: 94%
 
 ---
 

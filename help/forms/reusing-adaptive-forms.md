@@ -1,13 +1,12 @@
 ---
-title: Réutilisation des propriétés de métadonnées d’un formulaire adaptatif
-seo-title: Reuse metadata properties of an Adaptive Form
-description: Vous pouvez réutiliser un formulaire adaptatif existant afin d’en créer de nouveaux.
+title: Comment réutiliser les propriétés de métadonnées d’un formulaire adaptatif ?
+description: Découvrez comment réutiliser efficacement un formulaire adaptatif existant pour en créer un nouveau.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 86%
+source-wordcount: '613'
+ht-degree: 83%
 
 ---
 
@@ -71,4 +70,4 @@ Le contenu d’un formulaire adaptatif collé peut être modifié en utilisant l
 
 1. **Republication :**
 
-   La ressource collée est différente de la ressource copiée. Vous pouvez le publier en tant que nouvelle ressource pour le rendre disponible pour les utilisateurs finaux. Pour savoir comment publier un fichier, <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+   La ressource collée est différente de la ressource copiée. Vous pouvez le publier en tant que nouvelle ressource afin de le rendre disponible pour les utilisateurs finaux. Pour savoir comment publier un fichier, <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->

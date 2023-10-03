@@ -1,11 +1,11 @@
 ---
-title: Considérations, problèmes connus et bonnes pratiques
-description: Bonnes pratiques, problèmes connus et limites en matière de communication
+title: Considérations sur les problèmes connus et les bonnes pratiques dans AEM Forms
+description: Considérations sur les problèmes connus et les bonnes pratiques pour les API de communication AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 100%
+source-wordcount: '1716'
+ht-degree: 98%
 
 ---
 
@@ -90,7 +90,7 @@ Les polices téléchargées ou incorporées sont automatiquement remplacées lor
 
 ### Utilisation des fichiers de profil de l’appareil (fichier XDC) {#working-with-xdc-files}
 
-Un profil de périphérique (fichier XDC) est un fichier de description d’imprimante au format XML. Ce fichier permet aux API Communications de produire des documents sous la forme de formats d’imprimantes laser ou d’imprimantes d’étiquettes. Les API de communication utilisent les fichiers XDC, notamment les suivants :
+Un profil d’appareil (fichier XDC) est un fichier de description d’imprimante au format XML. Ce fichier permet aux API Communications de produire des documents sous la forme de formats d’imprimantes laser ou d’imprimantes d’étiquettes. Les API de communication utilisent les fichiers XDC, notamment les suivants :
 
 * hppcl5c.xdc
 

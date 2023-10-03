@@ -1,12 +1,12 @@
 ---
-title: Différences entre AEM 6.5 Forms et AEM Cloud Services
-description: Êtes-vous un utilisateur ou une utilisatrice Experience Manager Forms qui souhaitez effectuer une mise à niveau vers Adobe Experience Manager Forms as a Cloud Service ? Comparez AEM Forms 6.5 et AEM Cloud Services et découvrez les modifications les plus importantes avant de procéder à la mise à niveau ou à la migration vers Cloud Service.
+title: Quelles sont les différences entre AEM 6.5 Forms et les Cloud Service AEM ?
+description: Comparez AEM Forms 6.5 et AEM Cloud Services et découvrez les modifications les plus importantes avant de procéder à la mise à niveau ou à la migration vers Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 92%
+source-wordcount: '1350'
+ht-degree: 69%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager Forms as a Cloud Service apporte des modificatio
 
 * Le service dispose d’une architecture native au cloud qui permet la mise à l’échelle automatique en fonction de la charge, de n’avoir aucun temps d’arrêt pour les mises à niveau, le déploiement fréquent et ultérieur de nouvelles fonctionnalités et mises à jour, ainsi que des topologies optimisées pour une résilience et une efficacité optimales.
 
-* Le service n’inclut aucune action d’envoi qui stocke les données dans les instances d’Adobe Experience Manager Cloud Service, ce qui le rend très sécurisé. Les données capturées par le biais de formulaires sont directement envoyées aux magasins de données configurés.
+* Le service n’inclut aucune action d’envoi qui stocke les données dans les instances de Cloud Service Adobe Experience Manager, ce qui le rend super sécurisé. Les données capturées par le biais de formulaires sont directement envoyées aux magasins de données configurés.
 
 * Un réseau de diffusion de contenu (CDN) gratuit est également inclus pour vous aider à diffuser et rendre les formulaires plus rapidement.
 
@@ -35,13 +35,13 @@ Adobe Experience Manager Forms as a Cloud Service apporte des modificatio
 
 * Avant d’utiliser les bundles de vos clients ou de vos clientes avec Forms as a Cloud Service, recompilez votre code personnalisé avec la dernière version d’adobe-aemfd-docmanager.
 
-* Utilisez l’[utilitaire de migration d’AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md) pour préparer et migrer vos formulaires adaptatifs, thèmes, modèles et configurations cloud depuis <!-- AEM 6.3 Forms--> AEM 6.4 Forms sur OSGi et AEM 6.5 Forms sur OSGi vers [!DNL AEM] as a Cloud Service. Utilisez le [référentiel Git de votre programme](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour importer des modèles de formulaires adaptatifs existants.
+* Utilisez l’[utilitaire de migration d’AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md) pour préparer et migrer vos formulaires adaptatifs, thèmes, modèles et configurations cloud depuis <!-- AEM 6.3 Forms--> AEM 6.4 Forms sur OSGi et AEM 6.5 Forms sur OSGi vers [!DNL AEM] as a Cloud Service. Utilisez la variable [référentiel Git de votre programme](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour importer des modèles de formulaires adaptatifs existants.
 
-* Par défaut, l’e-mail ne prend en charge que les protocoles HTTP et HTTPS. [Contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#sending-email) pour activer les ports pour l’envoi d’e-mails et pour activer le protocole SMTP pour votre environnement.
+* Par défaut, l’e-mail ne prend en charge que les protocoles HTTP et HTTPS. [Contactez l’équipe d’assistance.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#sending-email) pour activer les ports pour envoyer des emails et activer le protocole SMTP pour votre environnement.
 
 ## Localisation
 
-* La convention d’URL des formulaires adaptatifs localisés prend désormais en charge la spécification d’un paramètre régional dans l’URL. La nouvelle convention d’URL permet de mettre en cache les formulaires localisés sur un Dispatcher ou un CDN. Sur un environnement Cloud Service, utilisez le format d’URL `http://host:port/content/forms/af/<afName>.<locale>.html` pour demander une version localisée d’un formulaire adaptatif au lieu de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
+* La convention d’URL de la Forms adaptative localisée prend désormais en charge la spécification d’un paramètre régional dans l’URL. La nouvelle convention d’URL permet la mise en cache de formulaires localisés sur un Dispatcher ou un CDN. Sur un environnement Cloud Service, utilisez le format d’URL `http://host:port/content/forms/af/<afName>.<locale>.html` pour demander une version localisée d’un formulaire adaptatif au lieu de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
 * Adobe recommande d’utiliser la mise en cache du Dispatcher ou du CDN. Cela permet d’améliorer la vitesse de rendu des formulaires préremplis.
 
@@ -50,15 +50,15 @@ Adobe Experience Manager Forms as a Cloud Service apporte des modificatio
 
 * **Éditeur de règles :** AEM Forms as a Cloud Service fournit un [Éditeur de règles](rule-editor.md#visual-rule-editor) renforcé. L’éditeur de code n’est pas disponible sur Forms as a Cloud Service.
 
-  L’[utilitaire de migration](/help/forms/migrate-to-forms-as-a-cloud-service.md) vous permet de migrer vos formulaires dotés de règles personnalisées (créées dans l’éditeur de code). L’utilitaire convertit ces règles en fonctions personnalisées prises en charge sur Forms as a Cloud Service. Vous pouvez utiliser les fonctions réutilisables avec l’éditeur de règles pour continuer à accéder aux résultats obtenus avec les scripts de règles. Les fonctions `onSubmitError` ou `onSubmitSuccess` sont désormais disponibles en tant qu’actions dans l’éditeur de règles.
+  La variable [utilitaire de migration](/help/forms/migrate-to-forms-as-a-cloud-service.md) vous aide à migrer vos formulaires contenant des règles personnalisées (créées dans l’éditeur de code). L’utilitaire convertit ces règles en fonctions personnalisées prises en charge sur Forms as a Cloud Service. Vous pouvez utiliser les fonctions réutilisables avec l’éditeur de règles pour continuer à accéder aux résultats obtenus avec les scripts de règles. Les fonctions `onSubmitError` ou `onSubmitSuccess` sont désormais disponibles en tant qu’actions dans l’éditeur de règles.
 
 * **Service de préremplissage :** par défaut, le service de préremplissage fusionne les données avec un formulaire adaptatif au niveau du client plutôt que de fusionner les données sur le serveur dans AEM Forms 6.5. Cette fonctionnalité permet de réduire le temps nécessaire au préremplissage d’un formulaire adaptatif. Vous pouvez toujours procéder à la configuration pour exécuter l’action de fusion sur le serveur Adobe Experience Manager Forms.
 
-* **Actions d’envoi :** l’action d’envoi **Envoyer par e-mail** fournit des options pour envoyer des pièces jointes et joindre un document d’enregistrement (DE) par e-mail. Vous pouvez l’utiliser à la place de l’action **Envoyer au format PDF** disponible dans AEM 6.5 Forms.
+* **Actions d’envoi :** l’action d’envoi **Envoyer par e-mail** fournit des options pour envoyer des pièces jointes et joindre un document d’enregistrement (DE) par e-mail. Vous pouvez l’utiliser à la place de la fonction **Email en tant que PDF** action disponible dans AEM 6.5 Forms.
 
-* **Service de conversion automatisée de formulaires** : le service ne fournit pas de métamodèle pour le service de conversion automatisée de formulaires. Vous pouvez le [télécharger à partir de la documentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=fr#default-meta-model).
+* **Automated forms conversion Service**: le service ne fournit pas de métamodèle pour Automated forms conversion Service. Vous pouvez [téléchargez-le à partir de la documentation Automated forms conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=fr#default-meta-model).
 
-* **Formulaires adaptatifs basés XSD :** vous pouvez utiliser un modèle XDP pour concevoir un modèle de document à enregistrer. Le service ne prend pas en charge le formulaire adaptatif basé sur XFA.
+* **Formulaires adaptatifs basés XSD :** vous pouvez utiliser un modèle XDP pour concevoir un modèle de document à enregistrer. Le service ne prend pas en charge le Forms adaptatif basé sur XFA.
 
 * **Composants**: le service ne prend pas en charge l’expérience de signature dans le formulaire et n’inclut pas les composants Résumé et vérification pour le formulaire adaptatif.
 
@@ -76,27 +76,29 @@ Forms as a Cloud Service fournit des API RESTful de génération de documents e
 
 * **API de manipulation de documents (service Assembler)** :
 
-   * Les opérations qui dépendent de services ou d’applications de documents ne sont pas disponibles. Par exemple, Microsoft Word vers PDF, Microsoft Excel vers PDF et HTML vers PDF, PostScript (PS) vers PDF, XDP vers PDF forms ne sont pas pris en charge. Ces opérations dépendent respectivement de Microsoft Office, Adobe Acrobat, Adobe Distiller et Forms Document Service.
+   * Les opérations qui dépendent de services ou d’applications de documents ne sont pas disponibles. Par exemple, Microsoft® Word vers PDF, Microsoft® Excel vers PDF et HTML vers PDF, PostScript (PS) vers PDF, XDP vers PDF forms ne sont pas pris en charge. Ces opérations dépendent respectivement de Microsoft® Office, Adobe Acrobat, Adobe Distiller et Forms Document Service.
 
-   * Convertissez les documents qui ne sont pas au format PDF en format PDF avant de les utiliser avec les API de manipulation de documents de communication. Par exemple, si vos documents sont au format Microsoft Office, HTML, PostScript (PS) ou XDP, convertissez-les au format PDF avant de les utiliser avec des documents PDF. Vous pouvez utiliser le service [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html?lang=fr) pour ce type de conversions.
+   * Convertissez les documents qui ne sont pas au format PDF en format PDF avant de les utiliser avec les API de manipulation de documents de communication. Par exemple, si vos documents sont au format Microsoft® Office, HTML, PostScript (PS) ou XDP, convertissez-les au format PDF avant de les utiliser avec des documents PDF. Vous pouvez utiliser le service [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html?lang=fr) pour ce type de conversions.
 
-* Vous pouvez utiliser un environnement AEM 6.5 Forms pour les services Digital Signature, Encryption, Reader Extensions, Send to printer, Convert PDF et Barcoded Forms.
+   * Vous pouvez utiliser un environnement AEM 6.5 Forms pour les services Digital Signature, Encryption, Reader Extensions, Send to printer, Convert PDF et Barcoded Forms.
 
 
 ## Intégration de données (modèle de données de formulaire)
 
-* Le service fournit également la prise en charge de Microsoft Dynamics, SalesForce, des services web SOAP et des services qui prennent en charge OData.
+* Le service fournit également la prise en charge du connecteur JDBC, de Microsoft® Dynamics, de SalesForce, des services Web basés sur SOAP et des services qui prennent en charge OData.
 
 * Vous pouvez également connecter le profil utilisateur AEM pour récupérer et mettre à jour les informations utilisateur.
 
 * Le modèle de données de formulaire ne prend en charge que les points d’entrée HTTP et HTTPS pour l’envoi de données. Le service ne prend pas en charge le protocole d’authentification SSL mutuelle pour le connecteur REST ni l’authentification par certificat x509 pour les sources de données SOAP.
 
-* Forms as a Cloud Service permet d’utiliser Microsoft Azure Blob, Microsoft SharePoint, Microsoft OneDrive et les services qui prennent en charge les opérations CRUD (Create, Read, Update et Delete) générales en tant que magasins de données. Les spécifications Open API 2.0 et Open API 3.0 sont prises en charge.
+* Forms as a Cloud Service permet d’utiliser Microsoft® Azure Blob, Microsoft® SharePoint, Microsoft® OneDrive et les services prenant en charge les opérations CRUD (Créer, Lire, Mettre à jour et Supprimer) générales comme entrepôts de données. Les spécifications Open API 2.0 et Open API 3.0 sont prises en charge.
 
 
 ## E-Sign
 
-* Le service prend également en charge les rôles Adobe Sign. Vous pouvez configurer les rôles dans l’éditeur de formulaires adaptatifs pour que les utilisateurs et utilisatrices professionnels configurent facilement les workflows de signature.
+* Le service fournit une intégration prête à l’emploi à Adobe Sign et prend en charge DocuSign pour les signatures électroniques.
+
+* Le service prend également en charge les rôles Adobe Sign. Vous pouvez configurer les rôles dans l’éditeur de Forms adaptatif pour que les utilisateurs professionnels configurent facilement les processus de signature.
 
 
 ## Formulaires HTML5
@@ -105,7 +107,7 @@ Forms as a Cloud Service fournit des API RESTful de génération de documents e
 
    * effectuer le rendu de vos formulaires basés sur XDP en tant que formulaires HTML5. Le service ne prend pas en charge HTML5 Forms.
 
-   * capturer des données hors ligne et les synchroniser la prochaine fois que vous serez en ligne avec l’application de l’[espace de travail AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=fr).
+   * capturer des données hors ligne et les synchroniser la prochaine fois que vous revenez en ligne avec l’événement [Espace de travail AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=fr) application.
 
 ## Communications interactives
 
