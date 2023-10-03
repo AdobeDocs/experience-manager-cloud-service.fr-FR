@@ -2,10 +2,10 @@
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge du système de gestion des images pour Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 39%
+source-wordcount: '1978'
+ht-degree: 38%
 
 ---
 
@@ -19,11 +19,9 @@ ht-degree: 39%
 
 >[!TIP]
 >
->Voir [Configuration de l’accès à AEM pour les administrateurs](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) pour découvrir comment les utilisateurs s’authentifient à l’aide d’Adobe IMS pour AEM as a Cloud Service. Découvrez également comment les utilisateurs, groupes d’utilisateurs et profils de produits Adobe IMS sont utilisés pour contrôler l’accès à AEM et à ses fonctionnalités et fonctionnalités. Adobe ID requis.
+>Voir [Configuration de l’accès à AEM pour les administrateurs](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) pour une présentation sur la manière dont les utilisateurs s’authentifient à l’aide d’Adobe IMS pour AEM as a Cloud Service. Découvrez également comment les utilisateurs, groupes d’utilisateurs et profils de produits Adobe IMS sont utilisés pour contrôler l’accès à AEM et à ses fonctionnalités et fonctionnalités. Adobe ID requis.
 
->[!NOTE]
->
->AEM ne prend actuellement pas en charge l’affectation de groupes à des profils. Les utilisateurs doivent être ajoutés individuellement.
+{{ims-group-profiles}}
 
 ## Principales caractéristiques {#key-highlights}
 
@@ -68,7 +66,7 @@ Pour en savoir plus sur l’utilisation d’Enterprise Administration et d’Adm
 
 ### Intégration d’utilisateurs dans Admin Console {#onboarding-users-in-admin-console}
 
-Il existe trois façons d’intégrer des utilisateurs. Chaque méthode dépend de la taille du client et de ses préférences. Vous pouvez créer manuellement des utilisateurs dans Admin Console, charger un fichier .csv ou synchroniser des utilisateurs à partir de l’annuaire Principal d’entreprise du client.
+Il existe trois façons d’intégrer des utilisateurs. Chaque méthode dépend de la taille du client et de ses préférences. Vous pouvez créer manuellement des utilisateurs dans Admin Console, charger un fichier .csv ou synchroniser les utilisateurs à partir de l’annuaire Active Directory d’entreprise du client.
 
 **Ajout manuel via l’interface utilisateur de l’Admin Console**
 
@@ -84,17 +82,17 @@ Pour gérer facilement la création d’utilisateurs, un fichier `.csv` peut êt
 
 **Outil de synchronisation des utilisateurs**
 
-L’outil de synchronisation des utilisateurs (UST, User Sync Tool) permet aux clients d’Adobe Enterprise de créer et de gérer des utilisateurs d’Adobe à l’aide de Principal Directory. Cette UST fonctionne également pour d’autres services d’annuaire OpenLDAP testés. Les utilisateurs cibles sont les administrateurs d’identité informatique (administrateurs d’annuaire d’entreprise ou système) qui peuvent installer et configurer l’outil. L’outil open source est personnalisable de sorte que les clients que vous modifiez le afin qu’il réponde à vos besoins spécifiques.
+L’outil de synchronisation des utilisateurs (UST, User Sync Tool) permet aux clients d’entreprise d’Adobe de créer et de gérer des utilisateurs d’Adobe à l’aide d’Active Directory. Cette UST fonctionne également pour d’autres services d’annuaire OpenLDAP testés. Les utilisateurs cibles sont les administrateurs d’identité informatique (administrateurs d’annuaire d’entreprise ou système) qui peuvent installer et configurer l’outil. L’outil open source est personnalisable de sorte que les clients puissent le modifier en fonction de vos besoins spécifiques.
 
-Lorsque la synchronisation des utilisateurs s’exécute, elle récupère une liste d’utilisateurs du Principal Directory de l’entreprise et la compare à la liste des utilisateurs dans le Admin Console. Il appelle ensuite l’API de gestion des utilisateurs Adobe afin que le Admin Console soit synchronisé avec le répertoire de l’organisation. Le flux des modifications est entièrement unidirectionnel. Les modifications effectuées dans Admin Console ne sont pas transférées vers l’annuaire.
+Lorsque la synchronisation des utilisateurs s’exécute, elle récupère une liste d’utilisateurs à partir de l’Active Directory de l’organisation et la compare à la liste des utilisateurs dans le Admin Console. Il appelle ensuite l’API de gestion des utilisateurs Adobe afin que le Admin Console soit synchronisé avec le répertoire de l’organisation. Le flux des modifications est entièrement unidirectionnel. Les modifications effectuées dans Admin Console ne sont pas transférées vers l’annuaire.
 
 L’outil permet à l’administrateur système de mapper les groupes d’utilisateurs dans l’annuaire du client avec la configuration de produit et les groupes d’utilisateurs dans le Admin Console.
 
-Pour configurer la synchronisation des utilisateurs, l’organisation doit créer un ensemble d’informations d’identification de la même manière qu’elle utiliserait la variable [API de gestion des utilisateurs](https://developer.adobe.com/umapi/).
+Pour configurer la synchronisation des utilisateurs, l’organisation doit créer un ensemble d’informations d’identification de la même manière qu’elle utiliserait la variable [API User Management](https://developer.adobe.com/umapi/).
 
 ![Outil de synchronisation des utilisateurs](/help/security/assets/ims5.png)
 
-L’outil de synchronisation des utilisateurs est distribué via le référentiel GitHub Adobe. [à cet emplacement](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.9.0rc2).
+L’outil de synchronisation des utilisateurs est distribué par le biais du référentiel GitHub Adobe. [à cet emplacement](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.9.0rc2).
 
 >[!NOTE]
 >
@@ -106,7 +104,7 @@ Vous trouverez plus d’informations sur les nouvelles fonctionnalités de group
 
 **Documentation de synchronisation des utilisateurs**
 
-Voir [Documentation de l’outil UST](https://adobe-apiplatform.github.io/user-sync.py/en/) pour plus d’informations.
+Voir [Documentation UST](https://adobe-apiplatform.github.io/user-sync.py/en/) pour plus d’informations.
 
 L’outil de synchronisation des utilisateurs doit s’enregistrer en tant qu’UMAPI client Adobe Developer en suivant la procédure [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -142,7 +140,7 @@ Une liste d’instances existantes s’affiche :
 
 Sous chaque instance Product Context, il existe des instances couvrant les services Auteur ou Publication dans les environnements de production, d’évaluation ou de développement. Chaque instance est associée aux rôles Profils de produit ou Cloud Manager. Ces profils de produits servent à attribuer l’accès aux utilisateurs et aux groupes avec le privilège requis.
 
-Le **AEM Administrateurs_xxx** Le profil est utilisé pour accorder des privilèges d’administrateur dans l’instance d’AEM associée pendant que la fonction **AEM Users_xxx** profile est utilisé pour ajouter des utilisateurs réguliers.
+La variable **AEM Administrateurs_xxx** Le profil est utilisé pour accorder des privilèges d’administrateur dans l’instance d’AEM associée pendant que la fonction **AEM Users_xxx** profile est utilisé pour ajouter des utilisateurs réguliers.
 
 Tous les utilisateurs et groupes ajoutés sous ce profil de produit peuvent se connecter à cette instance, comme illustré dans l’exemple ci-dessous :
 
@@ -150,7 +148,7 @@ Tous les utilisateurs et groupes ajoutés sous ce profil de produit peuvent se c
 
 >[!WARNING]
 >
->Ne modifiez pas la variable **Administrateurs AEM** nom du profil de produit. Modification du nom de la variable **Administrateurs AEM** le profil de produit supprime les droits d’administrateur de tous les utilisateurs affectés à ce profil.
+>Ne modifiez pas la variable **Administrateurs AEM** nom du profil de produit. Changement du nom de la variable **Administrateurs AEM** le profil de produit supprime les droits d’administrateur de tous les utilisateurs affectés à ce profil.
 
 ### Connexion à Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
@@ -217,7 +215,7 @@ Pour pouvoir accéder à Cloud Manager ou aux environnements sur AEM as a Cloud 
 Voir Définitions de rôle pour en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques dans Cloud Manager.
 
 >[!NOTE]
->Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur chacun des rôles dotés d’autorisations spécifiques, de tâches préconfigurées ou d’autorisations associées à chaque rôle, voir [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
+>Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur chacun des rôles avec des autorisations spécifiques, des tâches préconfigurées ou des autorisations associées à chaque rôle, voir [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
 
 **Procédure d’ajout d’un utilisateur**
 
@@ -243,7 +241,7 @@ Voir Définitions de rôle pour en savoir plus sur les rôles des utilisateurs q
 
 Pour avoir accès à une instance d’AEM au sein du **Admin Console**, le programme Cloud Manager et les environnements du programme doivent s’afficher dans la liste des produits sur la page **Admin Console**.
 
-Par exemple, dans la capture d’écran ci-dessous, deux environnements sont disponibles, à savoir : *dev author* et un *publier*.
+Par exemple, dans la capture d’écran ci-dessous, deux environnements sont disponibles : *dev author* et un *publier*.
 
 ![ACL3](/help/security/assets/ims19.png)
 
