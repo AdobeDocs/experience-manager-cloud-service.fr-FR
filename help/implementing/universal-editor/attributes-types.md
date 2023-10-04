@@ -2,10 +2,10 @@
 title: Attributs et types
 description: Découvrez les attributs et les types de données requis par l’éditeur universel.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 9df57ce958bb8f7f9406b9fe342c9d2a4ccb0ae0
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 77%
+source-wordcount: '680'
+ht-degree: 73%
 
 ---
 
@@ -62,7 +62,7 @@ Pour en savoir plus sur l’éditeur universel, consultez ces documents.
 
 * [Présentation de l’éditeur universel](introduction.md) - Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de vous permettre de proposer des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
 * [Création de contenu avec l’éditeur universel](authoring.md) - Découvrez à quel point il est facile et intuitif pour les créateurs et les créatrices de contenu de créer du contenu à l’aide de l’éditeur universel.
-* [Publication de contenu avec l’éditeur universel](publishing.md) : découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
+* [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 * [Prise en main de l’éditeur universel dans AEM](getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 * [Architecture de l’éditeur universel](architecture.md) – Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.
 * [Authentification de l’éditeur universel](authentication.md) – Découvrez comment l’éditeur universel s’authentifie.

@@ -1,26 +1,26 @@
 ---
-title: Publication de contenu avec l’éditeur visuel universel
-description: Découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
+title: Publication de contenu avec l’éditeur universel
+description: Découvrez comment Universal Editor publie du contenu et comment vos applications peuvent gérer le contenu publié.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 88%
+source-wordcount: '361'
+ht-degree: 61%
 
 ---
 
 
-# Publication de contenu avec l’éditeur visuel universel {#publishing}
+# Publication de contenu avec l’éditeur universel {#publishing}
 
-Découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
+Découvrez comment Universal Editor publie du contenu et comment vos applications peuvent gérer le contenu publié.
 
 ## Similarités avec AEM {#similarities}
 
-Pour les utilisateurs et utilisatrices d’AEM, le processus de publication de contenu avec l’éditeur visuel universel fonctionne comme vous en avez l’habitude : lors de la publication dans AEM, le contenu est répliqué du niveau création vers le niveau publication.
+Pour les utilisateurs d’AEM, le processus de publication de contenu avec l’éditeur universel fonctionne comme vous le faites habituellement : lors de la publication dans AEM, le contenu est répliqué du niveau Auteur au niveau Publication.
 
 ## Différences {#differences}
 
-Ce qui rend la publication avec l’éditeur visuel universel un peu différente n’est pas tant l’éditeur lui-même, mais plutôt l’hébergement externe de l’application que celui-ci rend possible.
+Ce qui rend la publication avec l’éditeur universel un peu différente n’est pas tant l’éditeur lui-même, mais plutôt l’hébergement externe de l’application que l’éditeur universel rend possible.
 
 Lorsqu’elle est hébergée en externe, l’application web s’assure que le contenu est chargé à partir du niveau création lorsque l’application est ouverte par les créateurs et créatrices dans l’éditeur et qu’il est chargé à partir du niveau publication lorsque les personnes accèdent à l’application.
 

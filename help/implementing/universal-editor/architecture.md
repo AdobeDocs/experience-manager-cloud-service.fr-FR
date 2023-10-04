@@ -2,10 +2,10 @@
 title: Architecture de l’éditeur universel
 description: Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et couches.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 78%
+source-wordcount: '651'
+ht-degree: 75%
 
 ---
 
@@ -29,7 +29,7 @@ Ce document décrit tous les blocs de création et la manière dont ils échange
 
 >[!TIP]
 >
->Pour voir l’éditeur universel et son architecture en action, consultez le document . [Prise en main d’Universal Editor dans AEM](getting-started.md) pour savoir comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
+>Pour voir Universal Editor et son architecture en action, consultez le document . [Prise en main d’Universal Editor dans AEM](getting-started.md) pour savoir comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 
 ### Éditeurs {#editors}
 
@@ -80,7 +80,7 @@ Pour en savoir plus sur l’éditeur universel, consultez ces documents.
 
 * [Présentation de l’éditeur universel](introduction.md) - Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de vous permettre de proposer des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
 * [Création de contenu avec l’éditeur universel](authoring.md) - Découvrez à quel point il est facile et intuitif pour les créateurs et les créatrices de contenu de créer du contenu à l’aide de l’éditeur universel.
-* [Publication de contenu avec l’éditeur universel](publishing.md) : découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
+* [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 * [Prise en main de l’éditeur universel dans AEM](getting-started.md) – Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 * [Attributs et types](attributes-types.md) – Découvrez les attributs et les types de données requis par l’éditeur universel.
 * [Authentification de l’éditeur universel](authentication.md) - Découvrez comment l’éditeur universel s’authentifie.

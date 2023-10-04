@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: b3ba87c1fa2f0578f93c7c3bd2671fbc75178b4e
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 27%
+source-wordcount: '2410'
+ht-degree: 25%
 
 ---
 
@@ -158,7 +158,7 @@ Appuyez ou cliquez sur le bouton Publier afin de publier les modifications appor
 
 >[!TIP]
 >
->Voir le document [Publication de contenu avec l’éditeur visuel universel](publishing.md) pour plus d’informations sur la publication avec l’éditeur universel.
+>Voir le document [Publication de contenu avec l’éditeur universel](publishing.md) pour plus d’informations sur la publication avec Universal Editor.
 
 ### Rail de mode {#rail}
 
@@ -409,7 +409,7 @@ Notez qu’en mode Aperçu, le fait d’appuyer ou de cliquer sur le contenu fai
 Pour en savoir plus sur l’éditeur universel, consultez ces documents.
 
 * [Présentation de l’éditeur universel](introduction.md) - Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de vous permettre de proposer des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
-* [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
+* [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 * [Prise en main de l’éditeur universel dans AEM](getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 * [Architecture de l’éditeur universel](architecture.md) - Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.
 * [Attributs et types](attributes-types.md) - Découvrez les attributs et les types de données requis par l’éditeur universel.
