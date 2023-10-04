@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
+source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
 workflow-type: tm+mt
-source-wordcount: '9442'
+source-wordcount: '9448'
 ht-degree: 64%
 
 ---
@@ -551,6 +551,7 @@ En même temps que vous créez un cas de prise en charge des Adobes pour que le 
 1. Suivez les instructions pour créer un dossier de support. Vous devez fournir les informations suivantes :
 
    * Nom, adresse électronique et numéro de téléphone du contact principal.
+   * L’identifiant de programme et l’identifiant d’environnement.
    * Nom de votre compte Dynamic Media.
    * Sur Experience Manager 6.5, indiquez que la prise en charge du suivi DASH, multisous-titres et multiaudio doit être activée sur votre compte Dynamic Media.
 
@@ -565,7 +566,7 @@ En même temps que vous créez un cas de prise en charge des Adobes pour que le 
 
 ## À propos de la prise en charge du suivi multititre et multiaudio pour les vidéos dans Dynamic Media{#about-msma}
 
-Grâce à la fonctionnalité de suivi multititre et multiaudio de Dynamic Media, vous pouvez facilement ajouter plusieurs sous-titres et pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à l’échelle mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience globale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
+Grâce à la fonctionnalité de suivi multititre et multiaudio de Dynamic Media, vous pouvez facilement ajouter plusieurs sous-titres et pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
 
 ![Onglet Sous-titres et pistes audio dans Dynamic Media , ainsi qu’un tableau présentant les fichiers de sous-titres .VTT transférés et les fichiers de suivi audio .MP3 transférés pour une vidéo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
