@@ -2,9 +2,9 @@
 title: Instructions et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
 description: Découvrez les instructions et les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1432'
 ht-degree: 60%
 
 ---
@@ -78,12 +78,6 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * Les utilisateurs, utilisatrices et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’_extraction_ copie l’intégralité de `/home` dans le jeu de migration et effectue le mappage des utilisateurs et utilisatrices en ajoutant un champ provenant de l’adresse e-mail de chaque utilisateur ou utilisatrice. Pour plus d’informations, consultez [Mappage des utilisateurs et utilisatrices et migration principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Le processus d’_ingestion_ copie tous les utilisateurs et utilisatrices ainsi que les groupes référencés dans les listes de contrôle d’accès (ACL) du contenu migré. Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur les groupes utilisés dans une stratégie de groupe d’utilisateurs fermé (CUG).
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
-
-* Après avoir terminé la phase d’*extraction* du processus de transfert de contenu et avant de commencer la *phase d’ingestion* pour ingérer du contenu dans votre instance d’*évaluation* ou de *production* AEM as a Cloud Service, enregistrez un ticket d’assistance. Avertissez l’Adobe de votre intention d’exécuter *Ingestion* afin que l’Adobe puisse garantir qu’aucune interruption ne se produise pendant la *Ingestion* processus. Enregistrez le ticket d’assistance une semaine avant la date prévue pour l’*ingestion*. Une fois que vous avez envoyé le ticket d’assistance, l’équipe d’assistance fournit des conseils sur les étapes suivantes. Vous pouvez envoyer un ticket d’assistance avec les détails suivants :
-
-   * Date exacte et heure estimée (avec votre fuseau horaire) lorsque vous prévoyez de lancer la phase d’*ingestion*.
-   * Type d’environnement (évaluation ou production) dans lequel vous prévoyez d’importer des données.
-   * ID de programme.
 
 * La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’AEM de création n’est pas disponible pendant l’ensemble du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant l’exécution de la variable *Ingestion* phase.
 

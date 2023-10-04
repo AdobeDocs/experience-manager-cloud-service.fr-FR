@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
-ht-degree: 32%
+source-wordcount: '2191'
+ht-degree: 28%
 
 ---
 
@@ -20,9 +20,6 @@ ht-degree: 32%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process?lang=fr" text="Extraction de complément"
 
 Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager :
-
->[!NOTE]
->Avez-vous pensé à soumettre un ticket d’assistance pour cette ingestion ? Pour cela et afin d’obtenir de l’aide pour réussir l’ingestion, consultez les [Points importants avant d’utiliser l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr#important-considerations).
 
 1. Présentation de Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu . Accédez à **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**
 
@@ -120,21 +117,27 @@ Ce message indique que Cloud Acceleration Manager n’a pas pu atteindre le serv
 > Le champ « Jeton de migration » s’affiche, car dans certains cas, la récupération de ce jeton est ce qui est en fait interdit. En autorisant sa mise à disposition manuelle, cela peut permettre à l’utilisateur ou l’utilisatrice de démarrer rapidement l’ingestion, sans aide supplémentaire. Si le jeton est fourni et que le message s’affiche toujours, la récupération du jeton n’est pas le problème.
 
 * AEM as a Cloud Service conserve l’état de l’environnement et doit parfois redémarrer le service de migration pour diverses raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais il est disponible à terme.
-* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Si, par exemple, l&#39;application d&#39;une mise à jour est lancée par Release Orchestration, le système peut être occupé et le service de migration régulièrement indisponible. C’est pourquoi il est vivement recommandé de suspendre les mises à jour lors d’une ingestion, ainsi que la possibilité de corrompre l’instance d’évaluation ou de production.
+* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [AEM mises à jour de version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=fr) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut à nouveau être tenté.
 * Si [LISTE AUTORISÉE IP appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager empêche Cloud Acceleration Manager d’accéder au service de migration. Il n’est pas possible d’ajouter une adresse IP pour les assimilations, car celle-ci est dynamique. Actuellement, la seule solution consiste à désactiver la liste autorisée d’adresses IP pendant l’exécution de l’ingestion.
 * D’autres raisons peuvent nécessiter un examen. Si l’ingestion continue d’échouer, contactez l’assistance clientèle Adobe.
 
-### Les mises à jour automatiques par l’intermédiaire de l’orchestrateur de versions sont toujours activées.
+### AEM des mises à jour et des ingérations de version
 
-L’orchestrateur de versions applique les mises à jour automatiquement, ce qui permet de maintenir les environnements à jour. Si la mise à jour est déclenchée lorsqu’une ingestion est effectuée, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement. Une bonne raison de consigner un ticket d’assistance clientèle avant de commencer une ingestion (voir la &quot;Remarque&quot; ci-dessus), de sorte que la désactivation temporaire de Release Orchestration puisse être planifiée.
+[AEM mises à jour de version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=fr) sont automatiquement appliqués aux environnements afin de les mettre à jour avec la version la plus récente AEM as a Cloud Service. Si la mise à jour est déclenchée lorsqu’une ingestion est effectuée, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement.
 
-Si l’ingestion est toujours en cours d’exécution, l’interface utilisateur présente ce message. Vous pouvez choisir de continuer tout de même, en acceptant le risque, en cochant le champ et en appuyant à nouveau sur le bouton.
+Si les &quot;Mises à jour de version AEM&quot; sont intégrées dans le programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant de commencer. Une fois l’ingestion terminée, l’état du mise à jour de version est renvoyé à son état avant le début de l’ingestion.
 
 >[!NOTE]
 >
-> Le déploiement d’Release Orchestration sur les environnements de développement est en cours. Il est donc conseillé de suspendre les mises à jour de ces environnements.
+> Il n’est plus nécessaire de consigner un ticket d’assistance pour que &quot;AEM mises à jour de version&quot; soit désactivé.
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+Si &quot;AEM mises à jour de version&quot; est actif (c’est-à-dire que les mises à jour sont en cours d’exécution ou en file d’attente pour être exécutées), l’ingestion ne démarre pas et l’interface utilisateur présente le message suivant. Une fois les mises à jour terminées, l’ingestion peut être lancée. Cloud Manager peut être utilisé pour afficher l’état actuel des pipelines du programme.
+
+>[!NOTE]
+>
+> &quot;AEM mises à jour de version&quot; est exécuté dans le pipeline de l’environnement et attend que le pipeline soit clair. Si les mises à jour sont mises en file d’attente plus longtemps que prévu, assurez-vous qu’un workflow personnalisé ne verrouille pas involontairement le pipeline.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### Échec de l’ingestion complémentaire En raison d’une violation de contrainte d’unicité
 
