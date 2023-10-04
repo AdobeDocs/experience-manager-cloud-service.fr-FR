@@ -3,13 +3,13 @@ title: Créer des fragments de contenu
 description: Découvrez comment créer du contenu pour vos fragments de contenu, puis créez des variantes de ce contenu en fonction de vos besoins. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion headless et la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2253'
 ht-degree: 4%
 
 ---
-
 
 # Créer des fragments de contenu {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ Cet éditeur fournit les éléments suivants :
 * Capacité à [afficher et ouvrir les références parentes ;](#view-parent-references).
 * Une vue hiérarchique du fragment de contenu et de ses références, à l’aide de la variable [Arborescence de structure](#structure-tree).
 
->[!CAUTION]
+>[!WARNING]
 >
 >L’éditeur décrit dans cette section est *only* disponible dans le *en ligne* Adobe Experience Manager (AEM) as a Cloud Service.
-
->[!CAUTION]
->
->Pour modifier un fragment de contenu, vous devez [les autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contactez votre administrateur système si vous rencontrez des problèmes.
-> 
->Par exemple, si vous n’avez pas `edit` autorisations L’éditeur est en lecture seule.
-
->[!NOTE]
->
->Pour plus d’informations sur la fonction [éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md) - il est disponible à partir de la **Ressources** et la console **Fragments de contenu** console.
-
->[!NOTE]
->
->Votre équipe de projet peut personnaliser l’éditeur si nécessaire. Voir [Personnalisation de la console de fragments de contenu et de l’éditeur](/help/implementing/developing/extending/content-fragments-console-and-editor.md) pour plus de détails.
 
 ## Éditeur de fragment de contenu {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ Lorsque vous ouvrez l’éditeur de fragments de contenu pour la première fois,
    * if **Espace réservé de tabulation** Les champs sont définis dans le modèle qu’ils sont affichés ici et peuvent être utilisés pour naviguer ; ils seront présentés horizontalement ou sous forme de liste déroulante.
 
 ![Éditeur de fragment de contenu - Aperçu](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->Un modèle de fragment de contenu peut souvent définir des champs de données nommés **Titre** et **Description**. Si ces champs existent, il s’agit de champs définis par l’utilisateur et ils peuvent être mis à jour dans la variable *panneau central* lors de la modification du fragment.
->
->Le fragment de contenu et ses variations comportent également des champs de métadonnées (propriétés de variation) appelés **Titre** et **Description**. Ces champs font partie intégrante d’un fragment de contenu et sont initialement définis lors du fragment. Ils peuvent être mis à jour dans le *panneau droit* lors de la modification du fragment.
 
 ## Navigation dans la structure du fragment de contenu {#navigate-structure}
 
@@ -494,3 +474,19 @@ La variable **Champs** répertorie tous les champs du fragment de contenu. L’i
   </tr>
  </tbody>
 </table>
+
+## Bon à savoir {#good-to-know}
+
+En outre:
+
+* Pour modifier un fragment de contenu, vous devez [les autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contactez votre administrateur système si vous rencontrez des problèmes.
+
+  Par exemple, si vous n’avez pas `edit` autorisations L’éditeur est en lecture seule.
+
+* Un modèle de fragment de contenu peut souvent définir des champs de données nommés **Titre** et **Description**. Si ces champs existent, il s’agit de champs définis par l’utilisateur et ils peuvent être mis à jour dans la variable *panneau central* lors de la modification du fragment.
+
+  Le fragment de contenu et ses variations comportent également des champs de métadonnées (propriétés de variation) appelés **Titre** et **Description**. Ces champs font partie intégrante d’un fragment de contenu et sont initialement définis lors du fragment. Ils peuvent être mis à jour dans le *panneau droit* lors de la modification du fragment.
+
+* Pour plus d’informations sur la fonction [éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md) - il est disponible à partir de la **Ressources** et la console **Fragments de contenu** console.
+
+* Votre équipe de projet peut personnaliser l’éditeur si nécessaire. Voir [Personnalisation de la console de fragments de contenu et de l’éditeur](/help/implementing/developing/extending/content-fragments-console-and-editor.md) pour plus de détails.
