@@ -2,9 +2,9 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service pour configurer les paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
+source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2657'
 ht-degree: 82%
 
 ---
@@ -501,11 +501,6 @@ Define DISP_LOG_LEVEL debug
 >Pour les environnements AEM as a Cloud Service, le débogage est le niveau maximal de verbosité. Le niveau de journalisation de trace n’étant pas pris en charge, évitez de le définir lorsque vous travaillez dans des environnements cloud.
 
 ## Journal CDN {#cdn-log}
-
->[!NOTE]
->
->Cette fonctionnalité est progressivement déployée auprès des clients début septembre.
->
 
 AEM as a Cloud Service permet d’accéder aux journaux CDN, qui sont utiles pour les cas d’utilisation, notamment l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de le définir sur différents modes tels que les informations, les avertissements ou les erreurs.
 
