@@ -2,12 +2,13 @@
 title: Équipe et profils de produits AEM as a Cloud Service
 description: Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service accordent et limitent l’accès à vos solutions Adobe sous licence.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 83%
+source-wordcount: '853'
+ht-degree: 74%
 
 ---
+
 
 # Équipe et profils de produits AEM as a Cloud Service {#product-profiles}
 
@@ -54,10 +55,18 @@ Cloud Manager dispose de profils de produit préconfigurés qui peuvent être c
 
 Chacun des profils de produit est associé à des autorisations spécifiques.
 
-* **Propriétaire de l’entreprise** - Ce rôle vous donne l’autorisation d’ajouter ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, de déployer du code dans un environnement AEM ou d’exécuter des contrôles qualité du code.
-* **Responsable de déploiement** - Ce rôle vous donne l’autorisation d’ajouter ou de mettre à jour un environnement, d’exécuter n’importe quel pipeline et de déployer du code dans un environnement AEM ou d’exécuter des contrôles qualité du code.
-* **Développeur** - Ce rôle vous donne l’autorisation de générer des jetons d’accès personnel à Git.
-* **Responsable de programme** - Ce rôle vous donne l’autorisation de planifier des pipelines, de remplacer les points de contrôle qualité à 3 niveaux et de fournir l’approbation de production.
+* **Propriétaire de l’entreprise**
+   * Dans ce rôle, vous avez l’autorisation d’ajouter un nouveau programme ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, de déployer du code dans AEM environnement ou d’exécuter des contrôles qualité du code.
+   * Cet utilisateur est chargé de définir les indicateurs de performance clés, d’approuver les déploiements en production et de remplacer les échecs importants à 3 niveaux si nécessaire.
+* **Responsable de déploiement**
+   * Dans ce rôle, vous avez l’autorisation d’ajouter ou de mettre à jour un environnement, d’exécuter n’importe quel pipeline, de déployer le code dans AEM environnement ou d’exécuter des contrôles qualité du code.
+   * Cet utilisateur gère les opérations de déploiement et utilise Cloud Manager pour exécuter des déploiements d’évaluation/de production, modifier les pipelines CI/CD ou approuver des échecs importants à 3 niveaux si nécessaire. Il peut également accéder au référentiel Git.
+* **Développeur**
+   * Dans ce rôle, vous avez la permission de générer des jetons d’accès personnels pour accéder à git.
+   * Cet utilisateur développe et teste des codes d’application personnalisés et utilise principalement Cloud Manager pour afficher l’état du déploiement. Il peut accéder au référentiel Git pour les validations de code.
+* **Responsable de programme**
+   * Dans ce rôle, vous avez l’autorisation de planifier des pipelines, de remplacer les points de contrôle qualité à trois niveaux et de fournir une approbation de production.
+   * Cet utilisateur utilise Cloud Manager pour effectuer la configuration de l’équipe, réviser l’état, afficher les ICP et approuver les échecs importants à 3 niveaux si nécessaire.
 
 Un utilisateur peut être affecté à plusieurs profils de produit. Par exemple, l’attribution des rôles **Propriétaire de l’entreprise** et **Responsable de déploiement** à un utilisateur leur donne la somme de ces autorisations.
 

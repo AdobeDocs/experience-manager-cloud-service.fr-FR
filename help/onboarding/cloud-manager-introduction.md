@@ -2,12 +2,13 @@
 title: Présentation de Cloud Manager
 description: Découvrez comment Cloud Manager prend en charge votre projet AEM par le biais de ses programmes, environnements et pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 0e0daf9870ba2e5923f9ea5dcdf3821a0cd0b7c6
+source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 83%
 
 ---
+
 
 # Présentation de Cloud Manager {#intro-cloud-manager}
 

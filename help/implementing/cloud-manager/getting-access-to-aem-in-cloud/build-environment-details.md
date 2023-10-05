@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
+source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 92%
+source-wordcount: '1039'
+ht-degree: 87%
 
 ---
 
@@ -19,9 +19,10 @@ Découvrez l’environnement de création de Cloud Manager et comment il génèr
 Cloud Manager crée et teste votre code à l’aide d’un environnement de génération spécialisé.
 
 * L’environnement de génération est basé sur Linux, dérivé de Ubuntu 18.04.
-* Apache Maven 3.6.0 est installé.
-* Les versions Java installées sont Oracle JDK 8u202 et Oracle JDK 11.0.2.
-* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_202` qui contient le JDK Oracle 8u202. Consultez la section [Autre version du JDK d’exécution Maven](#alternate-maven-jdk-version) pour plus d’informations.
+* Avec la variable [Version d’octobre 2023 de Cloud Manager,](/help/implementing/cloud-manager/release-notes/current.md) Les versions Java et Maven sont mises à jour de manière continue.
+   * Apache Maven 3.6.0 ou 3.8.8 est installé.
+   * Les versions Java installées sont les suivantes : Oracle JDK 8u202 et Oracle JDK 11.0.2. ou Oracle JDK 8u371 et Oracle JDK 11.0.20.
+   * Par défaut, la variable `JAVA_HOME` La variable d’environnement est définie sur `/usr/lib/jvm/jdk1.8.0_202` qui contient l’Oracle JDK 8u202 ou à `/usr/lib/jvm/jdk1.8.0_371` qui contient l’Oracle JDK 8u371. Consultez la [Autre version du JDK d’exécution de Maven](#alternate-maven-jdk-version) pour plus de détails.
 * D’autres packages système nécessaires sont installés.
 
    * `bzip2`
