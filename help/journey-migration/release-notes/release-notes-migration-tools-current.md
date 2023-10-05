@@ -1,17 +1,17 @@
 ---
-title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.09.0
-description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.09.0
+title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.10.0
+description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.10.0
 feature: Release Information
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+source-git-commit: 2ff6aeeb0145695aa44c79f42aefd53c7c545fea
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 38%
+source-wordcount: '124'
+ht-degree: 46%
 
 ---
 
-# Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.09.0 {#release-notes}
+# Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.10.0 {#release-notes}
 
-Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2022.09.0.
+Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2022.10.0.
 
 ## Outil de transfert de contenu {#ctt-release}
 
@@ -21,10 +21,4 @@ La date de publication de l’outil de transfert de contenu v3.0.0 est le 7 sept
 
 ### Nouveautés {#what-is-new-ctt}
 
-L’outil de transfert de contenu a été considérablement amélioré pour offrir les avantages suivants :
-* Réduction du temps de transfert lors de la migration d’un sous-ensemble d’un référentiel de contenu en utilisant AzCopy pour copier uniquement les identifiants d’objets Blob requis au lieu de copier tous les identifiants d’objets Blob.
-* Compléments de contenu différentiels plus rapides à l’aide de la mise à niveau Oak
-* Amélioration de la robustesse en séparant le processus d’indexation du processus d’ingestion de contenu. En cas d’échec de l’indexation, le contenu n’aura pas à être ingéré à nouveau. Seule l’indexation redémarre automatiquement, ce qui permet de gagner du temps et d’économiser des efforts significatifs.
-
-
-
+Des modifications ont été apportées au processus d’ingestion de contenu : il n’est plus nécessaire d’envoyer un ticket à l’assistance clientèle pour désactiver les mises à jour de version d’AEM dans l’environnement de destination. Ce processus est désormais automatisé. Pour plus d’informations, voir [AEM des mises à jour et des ingérations de version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#aem-version-updates-and-ingestions)
