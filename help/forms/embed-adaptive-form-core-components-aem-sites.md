@@ -4,9 +4,9 @@ description: Utilisez les composants principaux de formulaire adaptatif dans une
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2150'
 ht-degree: 94%
 
 ---
@@ -267,3 +267,8 @@ La page AEM Sites conserve une référence au formulaire adaptatif. Lorsque vou
 
 * L’en-tête et le pied de page du formulaire d’origine ne sont pas intégrés dans le formulaire incorporé.
 * Les brouillons et les envois de formulaires incorporés sont pris en charge et visibles dans les onglets Brouillons et Formulaires envoyés du Portail Formulaires.
+
+>[!MORELIKETHIS]
+>
+>* [Incorporer un formulaire adaptatif basé sur des composants principaux à une page web externe](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [Incorporation d’un formulaire adaptatif dans une page web externe](/help/forms/embed-adaptive-form-external-web-page.md)
