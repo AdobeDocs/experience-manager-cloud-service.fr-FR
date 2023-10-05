@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2023.10.0 dans Adobe Experience
 description: Consultez les notes de mise à jour de Cloud Manager 2023.10.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 661eac787439e6e696574a6973afa7e39eeb443e
+source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 15%
+source-wordcount: '521'
+ht-degree: 16%
 
 ---
 
@@ -25,16 +25,15 @@ La date de publication de la version 2023.10.0 de Cloud Manager dans AEM as a
 
 ## Nouveautés {#what-is-new}
 
-* [Vous pouvez désormais annuler un pipeline en toute sécurité.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) dans les étapes valider et créer une image.
 * Améliorations apportées à [indexation](/help/operations/indexing.md) ont réduit la durée du pipeline lors du déploiement de nouveaux index.
    * Les améliorations varient en fonction du profil de contenu.
 * Automatique [mises à jour des environnements de développement](/help/implementing/cloud-manager/manage-environments.md#updating-environments) sont activés par défaut pour les nouveaux programmes, ce qui vous évite d’avoir à exécuter les mises à jour manuellement.
    * Cette mise à jour sera mise en oeuvre par étapes.
-* Avec la version d’octobre 2023 de Cloud Manager, les versions Java et Maven sont mises à jour par le biais d’un déploiement progressif.
-   * Apache Maven est mis à jour vers la version 3.8.8.
-   * Les versions Java sont mises à jour pour Oracle JDK 8u371 et Oracle JDK 11.0.20.
-   * Par défaut, la variable `JAVA_HOME` La variable d’environnement est mise à jour vers `/usr/lib/jvm/jdk1.8.0_371` qui contient l’Oracle JDK 8u371.
-   * Voir le document [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) pour plus d’informations.
+* Avec la version d’octobre 2023 de Cloud Manager, les versions Java sont mises à jour par le biais d’un déploiement progressif.
+   * Les versions mineures de Java 8, 11 et Maven ont été mises à jour et seront déployées par étapes au cours des deux prochains mois. La nouvelle version comporte plusieurs correctifs de sécurité et correctifs. Les nouvelles versions sont les suivantes :
+   * *Maven : 3.8.8*
+   * *Version Java 8 : /usr/lib/jvm/jdk1.8.0_371*
+   * *Version Java 11 : /usr/lib/jvm/jdk-11.0.20*
    * [Voir l’avis d’OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) pour plus d’informations sur la sécurité et les correctifs de bogues dans ces mises à jour JDK.
 
 ## Programme d&#39;adoption précoce {#early-adoption}
