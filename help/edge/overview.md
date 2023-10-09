@@ -1,16 +1,16 @@
 ---
-title: Prise en main des Edge Delivery Services
-description: Prise en main des Edge Delivery Services.
+title: Prise en main d’Edge Delivery Services
+description: Prise en main d’Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 6a4a257b3ca3d2db76d43707792d97db87974593
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Prise en main des Edge Delivery Services {#getstart-edge}
+# Prise en main d’Edge Delivery Services {#getstart-edge}
 
 Avec les Edge Delivery Services, AEM offre des expériences exceptionnelles qui favorisent l’engagement et les conversions. AEM le fait en proposant des expériences à fort impact qui sont rapides à créer et à développer. Il s’agit d’un ensemble de services composables qui permet un environnement de développement rapide dans lequel les auteurs peuvent rapidement mettre à jour et publier, et où de nouveaux sites sont lancés rapidement. Ainsi, avec les Edge Delivery Services, vous pouvez améliorer la conversion, réduire les coûts et offrir une vitesse de contenu extrême.
 
