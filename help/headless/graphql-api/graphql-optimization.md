@@ -2,7 +2,7 @@
 title: Optimisation des requêtes GraphQL.
 description: Découvrez comment optimiser vos requêtes GraphQL lors du filtrage, de la pagination et du tri de vos fragments de contenu dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu découplée.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
+source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 62%
@@ -104,7 +104,7 @@ Pour réduire les problèmes de performances et de mémoire, ce jeu de résultat
 AEM propose deux méthodes d’optimisation des requêtes GraphQL :
 
 * [Le filtrage hybride.](#use-aem-graphql-hybrid-filtering)
-* La [pagination](#use-graphql-pagination).
+* La [pagination](#use-aem-graphql-pagination).
 
    * Le [tri](#use-graphql-sorting) n’est pas directement lié à l’optimisation, mais est lié à la pagination.
 
