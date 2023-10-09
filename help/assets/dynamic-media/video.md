@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
+source-git-commit: 51b048f753fe2e548d0ffdd9e3a903b21032aed7
 workflow-type: tm+mt
-source-wordcount: '9448'
+source-wordcount: '9463'
 ht-degree: 64%
 
 ---
@@ -521,7 +521,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-### Activation de la prise en charge du suivi DASH, multisous-titres et multiaudio sur votre compte Dynamic Media {#enable-dash}
+## Activation de la prise en charge du suivi DASH, multisous-titres et multiaudio sur votre compte Dynamic Media {#enable-dash}
 
 **À propos de l’activation de la prise en charge DASH sur votre compte**
 DASH (Digital Adaptive Streaming over HTTP) est la norme internationale pour la diffusion en continu de vidéos, largement adoptée par les différentes visionneuses de vidéos. Lorsque le DASH est activé sur votre compte, vous avez la possibilité de choisir entre DASH ou HLS pour la diffusion en continu de vidéo adaptative. Vous pouvez également opter pour les deux avec le changement automatique de lecteur lorsque **[!UICONTROL auto]** est sélectionné comme type de lecture dans le paramètre prédéfini de la visionneuse.
@@ -539,7 +539,7 @@ L’activation de la prise en charge DASH sur votre compte s’effectue au moyen
 
 **À propos de l’activation de la prise en charge du suivi multititre et multiaudio sur votre compte**
 
-En même temps que vous créez un cas de prise en charge des Adobes pour que le DASH soit activé sur votre compte, vous pouvez également bénéficier de l’activation automatique de la prise en charge du suivi multisous-titre et multiaudio. Après l’activation, toutes les vidéos suivantes que vous chargez sont traitées avec une nouvelle architecture du serveur principal qui inclut la prise en charge de l’ajout de pistes multisous-titres et audio multiples à vos vidéos.
+Au moment même où vous créez un cas de prise en charge des Adobes pour que le DASH soit activé sur votre compte, vous pouvez également bénéficier de l’activation automatique de la prise en charge du suivi multititre et multiaudio. Après l’activation, toutes les vidéos suivantes que vous chargez sont traitées avec une nouvelle architecture du serveur principal qui inclut la prise en charge de l’ajout de pistes multisous-titres et audio multiples à vos vidéos.
 
 >[!IMPORTANT]
 >
@@ -551,8 +551,9 @@ En même temps que vous créez un cas de prise en charge des Adobes pour que le 
 1. Suivez les instructions pour créer un dossier de support. Vous devez fournir les informations suivantes :
 
    * Nom, adresse électronique et numéro de téléphone du contact principal.
-   * L’identifiant de programme et l’identifiant d’environnement.
-   * Nom de votre compte Dynamic Media.
+   * Votre environnement de Cloud Service (ID de programme et ID d’environnement).
+   * Nom de votre compte de société Dynamic Media.
+   * Votre région Dynamic Media : Amérique du Nord (NA), Asie-Pacifique (APAC) ou Europe-Moyen-Orient-Asie (EMEA).
    * Sur Experience Manager 6.5, indiquez que la prise en charge du suivi DASH, multisous-titres et multiaudio doit être activée sur votre compte Dynamic Media.
 
 1. Le service clientèle d’Adobe vous inscrira sur la liste d’attente des clients et clientes en se basant sur l’ordre dans lequel les demandes ont été envoyées.
@@ -887,7 +888,7 @@ Voir [Diffusion de contenu statique (sans image)](https://experienceleague.adobe
 
 ## Ajout de marqueurs de chapitre à la vidéo {#adding-chapter-markers-to-video}
 
-Vous pouvez faciliter la lecture et le parcours de vos vidéos les plus longues en ajoutant des marqueurs de chapitre aux vidéos uniques ou aux visionneuses de vidéos adaptatives. Lorsqu’un utilisateur lit la vidéo, il peut sélectionner les marqueurs de chapitre dans la chronologie de la vidéo (également appelée barre vidéo). Ils peuvent facilement accéder au passage qui les intéresse ou accéder immédiatement à de nouveaux contenus et de nouvelles formations et démonstrations.
+Vous pouvez faciliter la lecture et la navigation de vos vidéos longues en ajoutant des marqueurs de chapitre aux vidéos uniques ou aux visionneuses de vidéos adaptatives. Lorsqu’un utilisateur lit la vidéo, il peut sélectionner les marqueurs de chapitre dans la chronologie de la vidéo (également appelée barre vidéo). Ils peuvent facilement accéder au passage qui les intéresse ou accéder immédiatement à de nouveaux contenus et de nouvelles formations et démonstrations.
 
 >[!NOTE]
 >
