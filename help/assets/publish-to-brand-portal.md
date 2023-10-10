@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 780d04852d3760f92c6f0c5edf77630d4bb5a343
+source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 95%
+source-wordcount: '1301'
+ht-degree: 92%
 
 ---
 
@@ -32,6 +32,8 @@ Si vous apportez des modifications ultérieures à la ressource, au dossier ou �
 >[!NOTE]
 >
 >Adobe recommande la publication décalée, de préférence en dehors des heures de pointe, de sorte que l’auteur AEM n’utilise pas une quantité excessive de ressources.
+>Les ressources doivent être publiées par lots. La recommandation pour la taille du lot est de 15 Ko.
+> Pour [!DNL Experience Manager Assets] as a [!DNL Cloud Service], le taux de transfert observé en état de laboratoire est de 1 000 actifs par heure. Le taux est observé avec une taille moyenne de 10 Mo de ressources.
 
 ## Publication de ressources sur Brand Portal {#publish-assets-to-bp}
 
