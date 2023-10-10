@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
+source-git-commit: 2ec0e09a20e2d129c9f2c01ebe21202b73505ee2
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1364'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 13665, publiée publiquement le 27 septembre 2023. Cette version de maintenance remplace la version 13420.
 
-2023.10.0 Feature Activation fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
+2023.10.0 Feature Activation fournira l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
 ### Améliorations {#enhancements-13665}
 
