@@ -2,9 +2,9 @@
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3600'
 ht-degree: 75%
 
 ---
@@ -55,7 +55,7 @@ Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau p
 Si la configuration de sortie de port flexible à l’échelle du programme est prête, le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit être invoqué pour chaque environnement afin d’activer la mise en réseau au niveau de l’environnement et de déclarer éventuellement toute règle de transfert de port. Les paramètres sont configurables par environnement pour offrir une certaine flexibilité.
 
 Les règles de transfert de port doivent être déclarées pour tout port de destination autre que le port 80/443, uniquement si le protocole http ou https n’est pas utilisé,
-en spécifiant le jeu d’hôtes de destination (noms ou adresses IP, avec les ports). Pour chaque hôte de destination, les clients doivent mapper le port de destination prévu à un port entre 30 000 et 30 999.
+en spécifiant le jeu d’hôtes de destination (noms ou adresses IP, avec les ports). La connexion client utilisant le port 80/443 via http/https doit toujours utiliser les paramètres proxy dans sa connexion pour que les propriétés de la mise en réseau avancée soient appliquées à la connexion. Pour chaque hôte de destination, les clients doivent mapper le port de destination prévu à un port entre 30 000 et 30 999.
 
 L’API doit répondre en quelques secondes seulement et indiquer un statut de mise à jour et, après environ 10 minutes, le point d’entrée `GET` indique que la mise en réseau avancée est activée.
 
