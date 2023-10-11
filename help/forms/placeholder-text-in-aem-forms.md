@@ -1,17 +1,17 @@
 ---
-title: Texte d’espace réservé dans [!DNL AEM Forms]
+title: Comment ajouter du texte d’espace réservé aux champs de formulaire ?
 description: Le texte d’espace réservé est destiné à aider l’utilisateur à saisir des données lorsque la commande n’a pas de valeur. Il peut s’agir d’un exemple de valeur ou d’une brève description du format attendu.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 57%
+source-wordcount: '211'
+ht-degree: 54%
 
 ---
 
 
 # Texte d’espace réservé dans [!DNL AEM Forms] {#placeholder-text-in-aem-forms}
 
-Le texte d’espace réservé représente un mot ou une expression courte. L’objectif est d’aider l’utilisateur à saisir des données lorsque le contrôle ne possède aucune valeur. Un texte d’espace réservé peut être un exemple de valeur ou une brève description du format attendu. Le texte d’espace réservé s’affiche avant que l’utilisateur ne saisisse une valeur et il est supprimé lorsque l’utilisateur saisit ou sélectionne une valeur.
+Le texte d’espace réservé représente un mot ou une expression courte. L’objectif est d’aider l’utilisateur à saisir des données lorsque le contrôle n’a pas de valeur. Un texte d’espace réservé peut être un exemple de valeur ou une brève description du format attendu. Le texte d’espace réservé s’affiche avant que l’utilisateur ne saisisse une valeur et il est supprimé lorsque l’utilisateur saisit ou sélectionne une valeur.
 
 >[!NOTE]
 >

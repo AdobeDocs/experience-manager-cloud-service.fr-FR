@@ -1,13 +1,13 @@
 ---
-title: Comment gérer les applications et les tâches de formulaires dans la boîte de réception AEM ?
+title: Comment gérer les formulaires, les applications et les tâches dans la boîte de réception AEM ?
 description: La boîte de réception AEM vous permet de lancer des processus orientés formulaire via l’envoi d’applications et de tâches de gestion.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1150'
 ht-degree: 80%
 
 ---

@@ -1,13 +1,13 @@
 ---
-title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif basé sur les composants principaux ?
+title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
 description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
-source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
+exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1340'
 ht-degree: 22%
 
 ---
-
 
 # Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux {#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -179,5 +179,3 @@ Effectuez les étapes suivantes pour prévisualiser un fichier adaptatif avec le
 * [Utilisation de la traduction automatique ou humaine pour traduire un formulaire adaptatif basé sur des composants principaux](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
 * [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
-

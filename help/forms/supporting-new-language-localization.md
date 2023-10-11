@@ -1,10 +1,10 @@
 ---
-title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif ?
+title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants de base ?
 description: Pour le Forms adaptatif, vous pouvez ajouter des paramètres régionaux pour plus de langues, à l’exception de celui fourni d’usine.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1264'
 ht-degree: 74%
 
 ---

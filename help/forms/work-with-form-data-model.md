@@ -1,13 +1,13 @@
 ---
-title: Comment utiliser un modèle de données de formulaire ?
+title: Quel est le processus pour utiliser un modèle de données de formulaire dans AEM Forms ?
 description: Ajoutez des objets de modèle de données, des services, créez des objets de modèle de données et des propriétés enfants, configurez des services, utilisez les propriétés de navigation des services OData.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4115'
 ht-degree: 73%
 
 ---

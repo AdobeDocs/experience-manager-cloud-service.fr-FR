@@ -1,13 +1,13 @@
 ---
-title: FAQ sur Forms as a Cloud Service
+title: Questions fréquentes sur AEM Forms as a Cloud Service
 description: FAQ sur Forms as a Cloud Service
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
-source-git-commit: 93e7c4b31ea3037c98b64790ffdee11f94cc6134
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '995'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Vous pouvez télécharger la documentation de référence de l’API [!DNL JavaS
 * **Puis-je continuer à utiliser les thèmes et modèles existants ?**
 Oui, vous pouvez continuer à utiliser les thèmes créés avec des formulaires AEM 6.4 et des formulaires AEM 6.5 après avoir utilisé l’[Utilitaire de migration](migrate-to-forms-as-a-cloud-service.md) pour les déplacer vers [!DNL AEM Forms] as a Cloud Service.
 
-   Vous pouvez également créer un projet basé sur [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment) [!DNL AEM Forms] as a Cloud Service et utiliser les exemples de thèmes et de modèles inclus.
+  Vous pouvez également créer un projet basé sur [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment) [!DNL AEM Forms] as a Cloud Service et utiliser les exemples de thèmes et de modèles inclus.
 
 * **Puis-je produire des données conformes au schéma ?**
 Oui, vous pouvez créer un formulaire adaptatif pour produire des données conformes au schéma.
@@ -60,7 +60,7 @@ Par défaut, la mise en cache des fonctionnalités de contenu sécurisé est dé
 
 * **J’ai un formulaire adaptatif localisé ; il n’effectue pas de rendu de la version localisée ? Quelle pourrait en être la cause et comment la résoudre ?**
 
-   La convention d’URL des formulaires adaptatifs localisés prend désormais en charge la spécification d’un paramètre régional dans l’URL. La nouvelle convention d’URL permet de mettre en cache les formulaires localisés sur un Dispatcher ou un CDN. Sur l’environnement Cloud Service, utilisez le format d’URL `http://host:port/content/forms/af/<afName>.<locale>.html` pour demander une version localisée d’un formulaire adaptatif au lieu de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe recommande d’utiliser la mise en cache du Dispatcher ou du CDN. Cela permet d’améliorer la vitesse de rendu des formulaires préremplis.
+  La convention d’URL des formulaires adaptatifs localisés prend désormais en charge la spécification d’un paramètre régional dans l’URL. La nouvelle convention d’URL permet de mettre en cache les formulaires localisés sur un Dispatcher ou un CDN. Sur l’environnement Cloud Service, utilisez le format d’URL `http://host:port/content/forms/af/<afName>.<locale>.html` pour demander une version localisée d’un formulaire adaptatif au lieu de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe recommande d’utiliser la mise en cache du Dispatcher ou du CDN. Cela permet d’améliorer la vitesse de rendu des formulaires préremplis.
 
 * **J’ai mis à jour un formulaire ; la version mise à jour n’est pas disponible pour les clients ?**
 Par défaut, le CDN actualise le cache toutes les 5 minutes, patiente pendant 5 minutes, puis recherche la version mise à jour.
@@ -82,11 +82,11 @@ Le modèle de données de formulaire ne fournit pas de méthode permettant d’u
 
 * **Puis-je utiliser des formulaires adaptatifs à soumettre au portail Formulaires ?**
 
-   Vous pouvez modifier votre formulaire adaptatif existant afin d’utiliser les actions d’envoi [Envoyer au point de d’entrée REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Envoyer un e-mail](configuring-submit-actions.md#send-email), [Envoyer à l’aide du modèle de données de formulaire](configuring-submit-actions.md#submit-using-form-data-model) et [Appeler un processus AEM](configuring-submit-actions.md#invoke-an-aem-workflow). Le portail Formulaires et l’action d’envoi au portail Formulaires ne sont pas encore disponibles. Surveillez les notes de mise à jour mensuelles pour connaître la disponibilité des fonctionnalités.
+  Vous pouvez modifier votre formulaire adaptatif existant afin d’utiliser les actions d’envoi [Envoyer au point de d’entrée REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Envoyer un e-mail](configuring-submit-actions.md#send-email), [Envoyer à l’aide du modèle de données de formulaire](configuring-submit-actions.md#submit-using-form-data-model) et [Appeler un processus AEM](configuring-submit-actions.md#invoke-an-aem-workflow). Le portail Formulaires et l’action d’envoi au portail Formulaires ne sont pas encore disponibles. Surveillez les notes de mise à jour mensuelles pour connaître la disponibilité des fonctionnalités.
 
 * **Puis-je utiliser l’application [!DNL AEM Forms] avec [!DNL AEM Forms] as a Cloud Service ?**
 
-   Les formulaires adaptatifs offrent un design réactif. Ces formulaires modifient l’aspect, la conception et l’interactivité en fonction du périphérique sous-jacent. Vous pouvez continuer à utiliser des formulaires adaptatifs sur un appareil mobile tout en surveillant les notes de mise à jour mensuelles concernant la disponibilité des fonctionnalités.
+  Les formulaires adaptatifs offrent un design réactif. Ces formulaires modifient l’aspect, la conception et l’interactivité en fonction de l’appareil sous-jacent. Vous pouvez continuer à utiliser des formulaires adaptatifs sur un appareil mobile tout en surveillant les notes de mise à jour mensuelles concernant la disponibilité des fonctionnalités.
 
 * **Quelles fonctionnalités ne font pas partie de la version GA initiale ?**
 Le portail Formulaires, l’application [!DNL AEM Forms], l’intégration à Adobe Analytics et l’intégration à Adobe Target ne font pas partie de la version GA initiale. Consultez les notes de mise à jour mensuelles pour en savoir plus sur les nouvelles fonctionnalités.

@@ -1,13 +1,13 @@
 ---
-title: Comment accorder l’autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs sélectionnés ?
+title: Comment donner accès à l’éditeur de règles de formulaires adaptatifs aem pour sélectionner des groupes d’utilisateurs ?
 description: Plusieurs types d’utilisateurs dotés de différentes compétences peuvent utiliser les formulaires adaptatifs. Découvrez comment limiter l’accès à l’éditeur de règles des utilisateurs selon leur rôle ou fonction.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 95%
+source-wordcount: '325'
+ht-degree: 91%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: Fragments de formulaire adaptatif
+title: Comment créer et utiliser des fragments de formulaire adaptatif ?
 description: Le fragment de formulaire est un composant modulaire et réutilisable d’un formulaire. Découvrez comment créer des fragments de formulaire et les réutiliser dans les formulaires pour un assemblage efficace de formulaires.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2023'
 ht-degree: 77%
 
 ---

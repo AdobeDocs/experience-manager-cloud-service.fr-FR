@@ -1,12 +1,12 @@
 ---
-title: Tableaux dans les formulaires adaptatifs
+title: Comment ajouter des tableaux à un formulaire adaptatif ?
 description: Utilisez le composant Tableau pour ajouter des tableaux à un formulaire adaptatif. En plus d’aider à la mise en page réactive, le composant de tableau permet d’ajouter des éléments de tableau XDP.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2496'
 ht-degree: 92%
 
 ---

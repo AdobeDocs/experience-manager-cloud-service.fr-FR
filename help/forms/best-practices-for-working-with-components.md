@@ -1,12 +1,10 @@
 ---
-title: Bonnes pratiques pour l’utilisation des composants
-seo-title: Best practices for working with components
-description: Bonnes pratiques et points clés à prendre en compte lors de l’utilisation de composants de formulaire adaptatifs
-seo-description: Some best practices and key points to remember when working with Adaptive Form components
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: Bonnes pratiques et points clés à retenir lorsque vous utilisez AEM formulaires adaptatifs.
+description: Bonnes pratiques et points clés à prendre en compte lors de l’utilisation de composants de formulaire adaptatifs.
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 82%
+source-wordcount: '641'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +33,7 @@ Les bonnes pratiques et les points clés suivants sont à prendre en compte lors
 * Vous pouvez activer les composants Zone de texte, Adresse électronique et Téléphone pour remplir automatiquement les champs tels que le nom, l’adresse, la carte de crédit, le téléphone et l’adresse électronique à partir des informations stockées dans les paramètres de remplissage automatique du navigateur. Pour activer cette fonctionnalité, sélectionnez **[!UICONTROL Activer le remplissage automatique]** dans les propriétés du composant et sélectionnez un **[!UICONTROL attribut de remplissage automatique]**. Lorsqu’un utilisateur remplit un formulaire adaptatif, les valeurs sont suggérées à partir du profil de remplissage automatique dans le navigateur ou en fonction des valeurs précédemment renseignées par l’utilisateur. Notez que le remplissage automatique fonctionne si les paramètres de remplissage automatique dans le navigateur de l’utilisateur sont activés.
 
 * Spécifiez des valeurs pour les éléments Bouton radio et Case à cocher au format `{value}={text}` dans les propriétés du composant.
-* Par défaut, le composant Pièce jointe permet à un utilisateur de joindre un seul fichier. Cependant, vous pouvez configurer les propriétés du composant pour prendre en charge plusieurs pièces jointes. En outre, si un utilisateur joint plusieurs fichiers avec le même nom de fichier, les pièces jointes peuvent entraîner des problèmes. Par conséquent, il est recommandé d’associer un identifiant unique pour chaque pièce jointe envoyée lors de l’envoi du formulaire. Pour ce faire :
+* Par défaut, le composant Pièce jointe permet à un utilisateur de joindre un seul fichier. Cependant, vous pouvez configurer les propriétés du composant pour prendre en charge plusieurs pièces jointes. En outre, si un utilisateur joint plusieurs fichiers avec le même nom de fichier, les pièces jointes peuvent entraîner des problèmes. Il est donc recommandé d’associer un identifiant unique pour chaque pièce jointe envoyée lors de l’envoi du formulaire. Pour ce faire :
 
    1. Sur votre serveur [!DNL AEM Forms], accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
    1. Recherchez **[!UICONTROL Service de configuration de formulaires adaptatifs]** et appuyez dessus.

@@ -1,12 +1,12 @@
 ---
-title: Ajout d’informations provenant de données utilisateur aux métadonnées d’envoi de formulaire
+title: Comment mettre à jour les métadonnées d’un formulaire envoyé ?
 description: Découvrez comment ajouter des informations aux métadonnées d’un formulaire envoyé avec des données fournies par l’utilisateur. Explorez en profondeur comment visualiser les métadonnées d’envoi de formulaire mises à jour dans le référentiel CRX.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 73%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Comment ajouter des variables dans des étapes de processus AEM ?
+title: Comment ajouter des variables aux étapes AEM workflow ?
 description: Découvrez comment créer une variable, définir une valeur pour la variable et l’utiliser dans les étapes de processus [!DNL AEM Forms]
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 97%
+source-wordcount: '2080'
+ht-degree: 96%
 
 ---
 

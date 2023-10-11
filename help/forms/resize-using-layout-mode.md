@@ -1,14 +1,14 @@
 ---
-title: Comment utiliser le mode Mise en page pour redimensionner des composants pour les formulaires adaptatifs ?
+title: Comment utiliser le mode de mise en page pour redimensionner les composants des formulaires adaptatifs ?
 description: Définissez la position des composants AEM Forms, apprenez à accéder au mode de mise en page, redimensionnez les composants, redimensionnez les panneaux et définissez la mise en page multicolonne d’un panneau.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 90%
+source-wordcount: '1135'
+ht-degree: 89%
 
 ---
 

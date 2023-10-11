@@ -1,12 +1,12 @@
 ---
-title: Découvrez comment importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources sur une instance[!DNL AEM Forms]
+title: Comment importer, exporter et organiser des PDF forms ou des Forms adaptatifs sur une instance AEM Forms ?
 description: Découvrez comment migrer les PDF forms, les thèmes et autres ressources adaptatives de Forms vers et depuis une instance d’AEM.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '1199'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 

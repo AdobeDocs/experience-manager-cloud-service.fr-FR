@@ -1,16 +1,16 @@
 ---
-title: Fragments de formulaire adaptatif
+title: Que sont les fragments de formulaire adaptatif ?
 description: Les formulaires adaptatifs fournissent un mécanisme permettant de créer un segment de formulaire, tel qu’un panneau ou un groupe de champs, utilisable dans tout formulaire adaptatif. Vous pouvez également enregistrer un panneau existant en tant que fragment.
 topic-tags: author
 keywords: Ajouter des fragments de formulaire adaptatif, des fragments de formulaire adaptatif, Créer un fragment de formulaire, Ajouter un fragment à un formulaire adaptatif, Gérer des fragments
 feature: Adaptive Forms
-source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
+exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1747'
 ht-degree: 23%
 
 ---
-
 
 # Création et utilisation de fragments de Forms adaptatifs dans un formulaire adaptatif en fonction des composants principaux {#adaptive-form-fragments}
 

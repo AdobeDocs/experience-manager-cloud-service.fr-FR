@@ -1,9 +1,10 @@
 ---
-title: Configuration d’une action Envoyer pour un formulaire adaptatif
+title: Configuration d’une action Envoyer pour un formulaire adaptatif?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 hide: true
 hidefromtoc: true
-source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
+exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '3573'
 ht-degree: 79%

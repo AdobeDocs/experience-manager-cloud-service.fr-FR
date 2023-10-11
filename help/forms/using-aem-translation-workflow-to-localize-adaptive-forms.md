@@ -1,16 +1,15 @@
 ---
-title: Comment utiliser AEM processus de traduction pour localiser le Forms adaptatif et le document d’enregistrement ?
-description: AEM processus de traduction vous aide à localiser les Forms adaptatifs et leurs documents d’enregistrement à l’aide d’une traduction automatique ou humaine.
-seo-description: Learn to use AEM translation workflows to localize Adaptive Forms and Document of Record.
+title: Comment pouvons-nous utiliser AEM processus de traduction pour localiser le Forms adaptatif et le document d’enregistrement ?
+description: Découvrez comment utiliser les processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 64%
+source-wordcount: '535'
+ht-degree: 67%
 
 ---
 

@@ -1,12 +1,13 @@
 ---
-title: Configuration de l’envoi asynchrone d’AEM Forms adaptatif
+title: Comment configurer l’envoi asynchrone pour AEM Forms adaptatif ?
 description: Apprenez à configurer l’envoi asynchrone de formulaires adaptatifs. Découvrez comment fonctionne l’envoi asynchrone de formulaires adaptatifs.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '751'
 ht-degree: 73%
 
 ---

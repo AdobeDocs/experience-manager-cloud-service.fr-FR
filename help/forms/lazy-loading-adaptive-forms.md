@@ -1,13 +1,14 @@
 ---
-title: Amélioration des performances des formulaires volumineux avec le chargement différé
+title: Comment améliorer les performances des formulaires volumineux avec chargement différé ?
 description: Découvrez comment améliorer les performances des formulaires volumineux avec le chargement différé. Le chargement différé améliore considérablement les performances des formulaires adaptatifs volumineux et complexes en différant l’initialisation et le chargement des fragments des formulaires jusqu’à ce qu’ils soient visibles.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 69%
+source-wordcount: '1075'
+ht-degree: 68%
 
 ---
 

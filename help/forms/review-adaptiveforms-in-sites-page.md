@@ -1,12 +1,12 @@
 ---
-title: Comment créer et gérer des révisions d’Adaptive Forms incorporées ou créées dans une page Sites ?
+title: Comment envoyer un formulaire adaptatif pour révision ? Comment gérer les révisions d’un formulaire adaptatif aem ?
 description: La révision est un mécanisme qui permet aux réviseurs d’effectuer différentes tâches pour les formulaires adaptatifs à l’aide de l’étape Affecter une tâche .
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 88%
 
 ---

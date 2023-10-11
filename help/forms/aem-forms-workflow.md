@@ -1,13 +1,13 @@
 ---
-title: Workflow basé sur l’utilisation de Forms sur OSGi
+title: Comment utiliser AEM Forms pour l’automatisation des processus d’entreprise (BPM) ?
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement des workflows de processus d’entreprise. Par exemple, révision et approbation, génération de PDF, workflows Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '2369'
-ht-degree: 69%
+source-wordcount: '2375'
+ht-degree: 68%
 
 ---
 

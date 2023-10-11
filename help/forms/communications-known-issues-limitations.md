@@ -1,10 +1,10 @@
 ---
-title: Considérations sur les problèmes connus et les bonnes pratiques dans AEM Forms
+title: Quelles sont les considérations, les problèmes connus et les bonnes pratiques dans AEM Forms ?
 description: Considérations sur les problèmes connus et les bonnes pratiques pour les API de communication AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1718'
 ht-degree: 98%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Configuration des paramètres d’absence du bureau
+title: Comment configurer les paramètres d’absence du bureau dans AEM Forms ?
 description: Déléguez des tâches pendant ou hors du bureau pour une exécution transparente des workflows.
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 81%
+source-wordcount: '878'
+ht-degree: 80%
 
 ---
 

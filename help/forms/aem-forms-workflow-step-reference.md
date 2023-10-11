@@ -1,12 +1,12 @@
 ---
-title: Utilisation de processus d’AEM basés sur l’utilisation de Forms pour automatiser les processus d’entreprise
+title: Quelles sont les étapes de workflow disponibles sur AEM Forms Cloud Service pour créer un workflow ou pour l’automatisation des processus d’entreprise (BPM) ?
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser AEM workflows, en utilisant affecter des étapes de tâche, convertir en étape de PDF/A, Générer un document d’étape enregistrée, utiliser des workflows, Signer une étape de document, Générer une étape de sortie imprimée, Générer une sortie de PDF non interactive
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '7433'
+source-wordcount: '7446'
 ht-degree: 79%
 
 ---

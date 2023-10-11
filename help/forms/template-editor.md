@@ -2,9 +2,9 @@
 title: Comment créer un modèle de formulaire adaptatif ?
 description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2095'
+source-wordcount: '2096'
 ht-degree: 76%
 
 ---
@@ -222,4 +222,4 @@ Vous pouvez également enregistrer un formulaire adaptatif en tant que modèle p
 
 * Lorsque vous modifiez les propriétés du formulaire dans l’éditeur de modèles, n’utilisez pas la propriété BindReference.
 * Si vous souhaitez ajouter un point d’arrêt, créez-le lorsque vous rédigez un modèle de formulaire adaptatif.
-Pour plus d’informations sur les points d’arrêt, voir [Mise en forme réactive](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=fr#authoring).
+Pour plus d’informations sur les points d’arrêt, voir [Mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=fr#authoring).

@@ -1,15 +1,15 @@
 ---
-title: Configuration du cache de formulaires adaptatifs
+title: Qu’est-ce que le cache de formulaires adaptatifs ? et comment mettre en cache un formulaire adaptatif AEM ?
 description: Le cache de Forms adaptatif est conçu pour Forms et les documents adaptatifs ayant pour objectif de réduire le temps nécessaire au rendu d’un formulaire ou d’un document adaptatif.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 55%
+source-wordcount: '974'
+ht-degree: 54%
 
 ---
 

@@ -1,17 +1,17 @@
 ---
-title: Traitement par lots des communications as a Cloud Service AEM Forms
+title: Création sans effort de PDF en bloc - Principal de l’art avec traitement par lots - Votre auto-guide de génération de millions de documents PDF !
 description: Comment créer des communications personnalisées et axées sur la marque ?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 97%
+source-wordcount: '1705'
+ht-degree: 96%
 
 ---
 
 # Traitement par lots des communications as a Cloud Service AEM Forms
 
-Communications vous permet de créer, d’assembler et de diffuser des communications personnalisées et axées sur la marque, telles que des correspondances d’entreprise, des documents, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des lettres de traitement des demandes, des factures mensuelles et des kits de bienvenue. Vous pouvez utiliser les API Communications pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
+Communications vous permet de créer, d’assembler et de diffuser des communications personnalisées et orientées sur la marque, telles que des correspondances d’entreprise, des documents, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des factures mensuelles et des kits de bienvenue. Vous pouvez utiliser les API Communications pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
 
 La fonctionnalité Communications fournit des API pour la génération de documents planifiés et à la demande. Vous pouvez utiliser des API synchrones pour les API à la demande et Batch (API asynchrones) concernant la génération de documents planifiés :
 

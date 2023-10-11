@@ -1,11 +1,11 @@
 ---
-title: Prise en charge des notes de bas de page dans Adaptive Forms
+title: Comment ajouter une note de bas de page à un formulaire adaptatif ?
 description: Utilisez l’éditeur de texte enrichi pour les notes de bas de page dans un formulaire adaptatif.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 79%
+source-wordcount: '441'
+ht-degree: 78%
 
 ---
 
