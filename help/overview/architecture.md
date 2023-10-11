@@ -2,10 +2,10 @@
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
 description: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 97%
+source-wordcount: '2015'
+ht-degree: 88%
 
 ---
 
@@ -133,7 +133,7 @@ Cette nouvelle architecture comporte différents éléments principaux :
 
       * La mise à l’échelle s’effectue automatiquement en fonction des besoins en matière de trafic sur le site.
 
-      * Par défaut, il existe une seule ferme de publication dans la région Principale, mais [zones de publication supplémentaires](/help/operations/additional-publish-regions.md) peut être sous licence.
+      * Par défaut, il existe une seule ferme de publication dans la région principale, mais [zones de publication supplémentaires](/help/operations/additional-publish-regions.md) peut être sous licence.
 
       * Les utilisateurs finaux, ou les visiteurs du site, consultent le site web via le service AEM Publish.
 
@@ -198,3 +198,26 @@ La nouvelle architecture d’AEM as a Cloud Service s’accompagne de quelques 
 * Le concept de « golden master » a été introduit afin d’automatiser le cycle de vie des nœuds de publication. Il s’agit d’un nœud de publication spécialisé, auquel aucun utilisateur final n’accède jamais, et à partir duquel sont créés tous les nœuds du service de publication. Les opérations de maintenance, telles que le compactage, sont effectuées sur le référentiel de contenu associé au « golden master ». Les nœuds de publication sont recyclés tous les jours et ne nécessitent aucune maintenance de routine ; auparavant, ce type de maintenance entraînait des temps d’arrêt, en particulier pour l’instance de création.
 
 * L’architecture sépare complètement le contenu de l’application de son code et de sa configuration. L’ensemble du code et de la configuration est pratiquement immuable et intégré à l’image de base utilisée pour créer les différents nœuds des services d’auteur et de publication. Vous avez ainsi la garantie absolue que tous les nœuds sont identiques, et que les modifications apportées au code et à la configuration ne peuvent être effectuées de manière globale qu’en exécutant un pipeline Cloud Manager.
+
+## AEM avec des Edge Delivery Services {#aem-with-edge-delivery-services}
+
+Avec l’ajout d’Edge Delivery Services, AEM offre des expériences exceptionnelles qui favorisent l’engagement et les conversions. AEM le fait en proposant des expériences à fort impact qui sont rapides à créer et à développer. Les Edge Delivery Services sont un ensemble de services composables qui permet un environnement de développement rapide dans lequel les auteurs peuvent rapidement mettre à jour et publier, et où de nouveaux sites sont lancés rapidement. Ainsi, avec les Edge Delivery Services, vous pouvez améliorer la conversion, réduire les coûts et offrir une vitesse de contenu extrême.
+
+L’architecture mise à jour comprend :
+
+* Gestion de contenu, comprenant désormais une sélection d’éditeurs :
+   * Éditeur visuel universel
+   * Éditeur de fragment de contenu
+   * Éditeur de page
+   * Création basée sur des documents, depuis SharePoint ou Google Drive
+* Diffusion d’expérience, qui comprend désormais :
+   * Services de diffusion Edge
+* Services auxiliaires pour une diffusion rapide et efficace de contenu et de code
+
+![AEM Aperçu as a Cloud Service - avec les Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM Aperçu as a Cloud Service - avec les Edge Delivery Services")
+
+Voir également :
+
+* [AEM Aperçu as a Cloud Service - avec les Edge Delivery Services](/help/edge/overview.md)
+* [Utilisation d’Edge Delivery Services](/help/edge/using.md)
+* [Explorez l’architecture sous-jacente et les éléments importants de l’AEM as a Cloud Service avec les Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
