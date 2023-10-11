@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Découvrez les principes de base de la mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
+source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
 workflow-type: tm+mt
-source-wordcount: '2803'
-ht-degree: 49%
+source-wordcount: '2878'
+ht-degree: 48%
 
 ---
 
@@ -99,6 +99,33 @@ Dans les deux cas, les en-têtes de mise en cache peuvent être remplacés à un
 ```
 
 Lorsque vous modifiez les en-têtes de mise en cache sur la couche de Dispatcher, veillez à ne pas effectuer un cache trop important. Consultez la discussion dans la section HTML/texte [above](#html-text). Assurez-vous également que les ressources destinées à être conservées en privé (plutôt que mises en cache) ne font pas partie des filtres de directive `LocationMatch`.
+
+Les ressources JCR (plus de 16 Ko) stockées dans la banque d’objets Blob sont généralement diffusées sous la forme de redirections 302 par AEM. Ces redirections sont interceptées et suivies par le réseau de diffusion de contenu et le contenu est diffusé directement à partir de la banque d’objets blob. Seul un ensemble limité d’en-têtes peut être personnalisé sur ces réponses. Par exemple, pour personnaliser `Content-Disposition` vous devez utiliser les directives dispatcher comme suit :
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+```
+
+La liste des en-têtes pouvant être personnalisés dans les réponses d’objets blob est la suivante :
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+```
 
 #### Nouveau comportement de mise en cache par défaut {#new-caching-behavior}
 
