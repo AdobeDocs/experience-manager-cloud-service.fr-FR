@@ -3,9 +3,9 @@ title: Prise en main d’Edge Delivery Services
 description: Prise en main d’Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: beaadc7b59223d527b61ed43d44fcd97a0079e0d
+source-git-commit: 39a7e45e3b367323cb1123227fd806f60d3ea224
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '877'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ Adobe fournit trois canaux pour vous aider avec les Edge Delivery Services :
 
 ### Accès aux ressources de la communauté {#community-resource}
 
-Adobe dispose de deux ressources de la communauté pour vous aider avec Edge Delivery, [Communauté Experience League](https://adobe.ly/3Q6kTKl) et un [Canal de discorde](https://discord.gg/aem-live).
+Adobe s’engage à vous donner les moyens d’engager et de soutenir la communauté au mieux pour les Edge Delivery Services et la création basée sur les documents. Participez à [Communauté Experience League](https://adobe.ly/3Q6kTKl) pour poser des questions, partager vos commentaires, lancer des discussions, demander l’aide d’experts en Adobe et d’AEM conseillers/Champs, et communiquer en temps réel avec des personnes partageant les mêmes opinions. Et rejoignez notre [Canal de discorde](https://discord.gg/aem-live), une plateforme plus décontractée pour les interactions en temps réel et les échanges d’idées rapides.
 
 ### Comment accéder à votre canal de collaboration de produit {#collab-channel}
 
