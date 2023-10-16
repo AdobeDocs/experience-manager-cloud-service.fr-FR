@@ -4,9 +4,9 @@ description: Cet article décrit comment créer, modifier et utiliser les facett
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2506'
 ht-degree: 97%
 
 ---
@@ -342,6 +342,7 @@ Si le rôle d’administrateur ne vous a pas été attribué, voici la liste des
 
 **Voir également**
 
+* [Bonnes pratiques de recherche](search-best-practices.md)
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)

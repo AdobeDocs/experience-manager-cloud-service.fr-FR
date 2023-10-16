@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '5561'
-ht-degree: 90%
+source-wordcount: '5564'
+ht-degree: 89%
 
 ---
 
@@ -539,6 +539,7 @@ Accédez à l’emplacement du dossier des ressources affichées dans les résul
 
 **Voir également**
 
+* [Bonnes pratiques de recherche](search-best-practices.md)
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)

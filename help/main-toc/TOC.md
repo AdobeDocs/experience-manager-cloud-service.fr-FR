@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '4325'
+source-wordcount: '4330'
 ht-degree: 91%
 
 ---
@@ -537,6 +537,8 @@ ht-degree: 91%
       + [Surveiller les ressources, les dossiers et les collections](/help/assets/manage-notifications-assets-view.md)
       + [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
       + [Gérer les balises](/help/assets/tagging-management-assets-view.md)
+   + Bonnes pratiques{#best-practices}
+      + [Bonnes pratiques de recherche](/help/assets/search-best-practices.md)
    + Intégration avec Adobe Workfront {#integrations}
       + [Intégrations à  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configurer le mappage des métadonnées des ressources](/help/assets/configure-asset-metadata-mapping.md)
@@ -736,7 +738,7 @@ ht-degree: 91%
    + [PWA Studio dans Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migration](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ Services de diffusion Edge {#edge-delivery}
++ Edge Delivery Services {#edge-delivery}
    + [Prise en main d’Edge Delivery ](/help/edge/overview.md)
    + [Utilisation de la diffusion Edge](/help/edge/using.md)
 + Découplé {#headless}
