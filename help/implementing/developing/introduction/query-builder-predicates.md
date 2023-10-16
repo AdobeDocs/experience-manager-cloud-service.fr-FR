@@ -2,10 +2,10 @@
 title: Référence des prédicats de Query Builder
 description: Référence de prédicat pour l’API Query Builder dans AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 58%
+source-wordcount: '2295'
+ht-degree: 57%
 
 ---
 
@@ -25,6 +25,8 @@ Le nom &quot;root&quot; n’est jamais utilisé dans une requête ; il est impli
 * **`p.limit`** - Nombre indiquant la taille de la page.
 * **`p.guessTotal`** - recommandé : évitez de calculer le total du résultat, ce qui peut être coûteux. Soit un nombre indiquant le total maximal à compter (par exemple 1 000, un nombre qui donne aux utilisateurs suffisamment de commentaires sur la taille brute et les nombres exacts pour obtenir des résultats plus modestes). Ou, `true` pour ne compter que le minimum nécessaire `p.offset` + `p.limit`.
 * **`p.excerpt`** - si la valeur est définie sur `true`, incluez un extrait de texte intégral dans le résultat.
+* **`p.indexTag`** - si la valeur est définie, une option de balise d’index est incluse dans la requête (voir [Balise d’index d’option de requête](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
+* **`p.facetStrategy`** - si la valeur est définie sur `oak`, Query Builder délègue l’extraction des facettes à Oak (voir [Facettes](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** - (uniquement pour le servlet JSON) sélectionnez la manière dont les accès sont écrits en tant que JSON, avec ces accès standard (extensibles par le biais du service ResultHitWriter).
    * **`simple`** - Éléments minimaux tels que `path`, `title`, `lastmodified`, `excerpt` (s’ils sont définis).
    * **`full`** - rendu Sling JSON du noeud, avec `jcr:path` indiquant le chemin de l’accès. Par défaut, répertorie uniquement les propriétés directes du noeud, incluez une arborescence plus profonde avec la propriété `p.nodedepth=N`, avec 0 signifiant la sous-arborescence entière et infinie. Ajouter `p.acls=true` pour inclure les autorisations JCR de la session en cours sur l’élément de résultat donné (mappages : `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
@@ -376,7 +378,7 @@ Il ne prend pas en charge l’extraction de facettes.
 
 ### type {#type}
 
-Ce prédicat limite les résultats à un type de noeud JCR spécifique, à la fois à des types de noeuds Principaux ou `mixin` types. Il trouve également des sous-types de ce type de noeud. Les index de recherche de référentiel doivent couvrir les types de noeuds pour une exécution efficace.
+Ce prédicat limite les résultats à un type de noeud JCR spécifique, à la fois aux types de noeuds principaux ou `mixin` types. Il trouve également des sous-types de ce type de noeud. Les index de recherche de référentiel doivent couvrir les types de noeuds pour une exécution efficace.
 
 Ce prédicat prend en charge l’extraction des facettes et fournit des intervalles pour chaque type unique dans les résultats.
 

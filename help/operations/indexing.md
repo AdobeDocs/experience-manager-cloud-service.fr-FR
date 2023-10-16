@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Découvrez la recherche et l’indexation de contenu dans AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 39%
+source-wordcount: '2433'
+ht-degree: 36%
 
 ---
 
@@ -34,6 +34,11 @@ Restrictions :
 * En interne, d’autres index peuvent être configurés et utilisés pour les requêtes. Par exemple, les requêtes écrites selon l’index `damAssetLucene` peuvent, sur Skyline, être exécutées par rapport à une version Elasticsearch de cet index. Cette différence n’est généralement pas visible par l’application et l’utilisateur. Cependant, certains outils tels que la fonction `explain` rapport d’un index différent. Pour connaître les différences entre les index Lucene et les index Elastic, consultez [la documentation Elastic dans Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les clients n’ont pas besoin ni ne peuvent configurer directement les index Elasticsearch.
 * Recherche de vecteurs de fonctionnalités similaires (`useInSimilarity = true`) n’est pas pris en charge.
 
+>[!TIP]
+>
+>Pour plus d’informations sur l’indexation et les requêtes Oak, y compris une description détaillée des fonctionnalités de recherche avancée et d’indexation, voir la section [Documentation Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+
+
 ## Utilisation {#how-to-use}
 
 Les définitions d’index peuvent être classées en trois principaux cas d’utilisation, comme suit :
@@ -54,11 +59,15 @@ Une définition d’index peut appartenir à l’une des catégories suivantes :
 
 3. Index entièrement personnalisé : il est possible de créer un index entièrement nouveau à partir de zéro. Leur nom doit comporter un préfixe pour éviter les conflits de noms. Par exemple : `/oak:index/acme.product-1-custom-2`, où le préfixe est `acme.`
 
+>[!NOTE]
+>
+>Présentation de nouveaux index sur la `dam:Asset` Le type de noeud (en particulier les index en texte intégral) est fortement déconseillé, car il peut entrer en conflit avec les fonctionnalités du produit prêtes à l’emploi, ce qui entraîne des problèmes de fonctionnalité et de performances. En général, l’ajout de propriétés supplémentaires à la propriété actuelle `damAssetLucene-*` La version d’index est la méthode la plus appropriée pour indexer des requêtes sur la variable `dam:Asset` type de noeud (ces modifications seront automatiquement fusionnées dans une nouvelle version de produit de l’index s’il est publié par la suite). En cas de doute, veuillez contacter le support Adobe pour obtenir des conseils.
+
 ## Préparation de la nouvelle définition d’index {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-8`, copiez la dernière définition d’index d’usine à partir d’un *Environnement Cloud Service* à l’aide du gestionnaire de packages CRX DE (`/crx/packmgr/`). Renommez-le en `damAssetLucene-8-custom-1` (ou version ultérieure) et ajoutez vos personnalisations dans le fichier XML. Ainsi, les configurations requises ne sont pas supprimées par inadvertance. Par exemple, le nœud `tika` sous `/oak:index/damAssetLucene-8/tika` est requis dans l’index personnalisé du service cloud. Il n’existe pas dans le SDK *Cloud.
+>Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-8`, copiez la dernière définition d’index d’usine à partir d’un *Environnement Cloud Service* à l’aide du gestionnaire de packages CRX DE (`/crx/packmgr/`). Renommez-le en `damAssetLucene-8-custom-1` (ou version ultérieure) et ajoutez vos personnalisations dans le fichier XML. Ainsi, les configurations requises ne sont pas supprimées par inadvertance. Par exemple, la variable `tika` noeud sous `/oak:index/damAssetLucene-8/tika` est requis dans l’index personnalisé déployé dans un environnement AEM Cloud Service, mais n’existe pas dans le SDK AEM local.
 
 Pour les personnalisations d’un index prêt à l’emploi, préparez un nouveau package contenant la définition d’index actuelle qui suit ce modèle de dénomination :
 
