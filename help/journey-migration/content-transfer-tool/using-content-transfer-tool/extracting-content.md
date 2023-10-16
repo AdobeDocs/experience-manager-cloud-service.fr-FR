@@ -2,7 +2,7 @@
 title: Extraction de contenu à partir de la source
 description: Découvrez comment extraire du contenu d’une instance Adobe Experience Manager (AEM) source pour le transférer ultérieurement vers une instance AEM Cloud Service.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
+source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 39%
@@ -36,7 +36,7 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
 1. Cela ouvre la boîte de dialogue Extraction . Cliquez sur **Extract** pour démarrer la phase d&#39;extraction.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
    >Vous pouvez éventuellement remplacer le conteneur intermédiaire lors de la phase d’extraction. If **Remplacement du conteneur d’évaluation** est désactivé, il peut accélérer les extractions pour les migrations suivantes où les chemins d’accès au contenu ou les paramètres des versions d’inclusion n’ont pas changé. Cependant, si les chemins d’accès au contenu ou les paramètres des versions ont changé, alors l’option **Remplacer le conteneur d’évaluation** doit être activée.
