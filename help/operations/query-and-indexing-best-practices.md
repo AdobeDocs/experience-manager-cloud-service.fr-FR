@@ -3,9 +3,9 @@ title: Bonnes pratiques en matière de requête et d’indexation
 description: Découvrez comment optimiser vos index et requêtes en fonction des bonnes pratiques d’Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 46%
 
 ---
@@ -315,4 +315,15 @@ Cela peut se produire pour plusieurs raisons :
    * Dans ce cas, tous les résultats renvoyés par l’index doivent être lus par le moteur de requête et triés en mémoire.
    * Cette opération est beaucoup plus lente que l’application d’un tri dans la requête d’index sous-jacente.
 1. L’exécuteur de la requête tente d’itérer un jeu de résultats volumineux.
-   * Cette situation peut se produire pour plusieurs raisons. | Cause | Atténuation | |—|—| | La Commission de `p.guessTotal` (ou l’utilisation d’un paramètre guessTotal très volumineux) provoquant l’itération de QueryBuilder sur un grand nombre de résultats comptant les résultats. |Fournir `p.guessTotal` avec une valeur appropriée | | Utilisation d’une limite importante ou illimitée dans Query Builder (c’est-à-dire `p.limit=-1`) |Utilisez la valeur appropriée pour `p.limit` (idéalement, 1 000 ou moins) | | Utilisation d’un prédicat de filtrage dans Query Builder qui filtre un grand nombre de résultats de la requête JCR sous-jacente | Remplacer les prédicats de filtrage par des restrictions qui peuvent être appliquées dans la requête JCR sous-jacente | | Utilisation d’un tri basé sur un comparateur dans QueryBuilder |Remplacer par un ordre basé sur les propriétés dans la requête JCR sous-jacente (à l’aide de propriétés indexées selon l’ordre) | | Filtrage d’un grand nombre de résultats en raison du contrôle d’accès |Appliquez une propriété indexée supplémentaire ou une restriction de chemin à la requête pour refléter le contrôle d’accès. | | L’utilisation de la &quot;pagination décalée&quot; avec un décalage important |Utiliser [Pagination du clavier](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Itération d’un nombre de résultats important ou illimité |Utiliser [Pagination du clavier](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Index incorrect sélectionné |Utilisez des balises dans la définition de requête et d’index pour vous assurer que l’index attendu est utilisé|
+   * Cette situation peut se produire pour plusieurs raisons, comme indiqué ci-dessous :
+
+| Cause  | Atténuation |
+|----------|--------------|
+| La Commission de `p.guessTotal` (ou l’utilisation d’un paramètre guessTotal très volumineux) provoquant l’itération de QueryBuilder sur un grand nombre de résultats comptant les résultats. | Fournir `p.guessTotal` avec une valeur appropriée |
+| Utilisation d’une limite importante ou illimitée dans Query Builder (c’est-à-dire `p.limit=-1`) | Utilisez la valeur appropriée pour `p.limit` (idéalement, 1 000 ou moins) |
+| Utilisation d’un prédicat de filtrage dans Query Builder qui filtre un grand nombre de résultats de la requête JCR sous-jacente | Remplacer les prédicats de filtrage par des restrictions qui peuvent être appliquées dans la requête JCR sous-jacente |
+| Utilisation d’un tri basé sur un comparateur dans QueryBuilder | Remplacez par un ordre basé sur les propriétés dans la requête JCR sous-jacente (à l’aide de propriétés indexées selon l’ordre). |
+| Filtrage d’un grand nombre de résultats en raison du contrôle d’accès | Appliquez une propriété indexée supplémentaire ou une restriction de chemin à la requête pour refléter le contrôle d’accès. |
+| Utilisation de la &quot;pagination décalée&quot; avec un décalage important | Envisager d’utiliser [Pagination du clavier](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Itération d’un nombre de résultats important ou illimité | Envisager d’utiliser [Pagination du clavier](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Index incorrect sélectionné | Utilisez des balises dans la définition de requête et d’index pour vous assurer que l’index attendu est utilisé. |
