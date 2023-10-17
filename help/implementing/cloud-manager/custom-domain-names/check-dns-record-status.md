@@ -3,9 +3,9 @@ title: Vérification du statut de l’enregistrement DNS
 description: Découvrez comment déterminer si vos paramètres DNS sont correctement résolus à l’aide de Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
