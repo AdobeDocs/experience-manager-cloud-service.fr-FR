@@ -3,9 +3,9 @@ title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query B
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 92%
 
 Ce document décrit comment étendre [Query Builder](query-builder-api.md) en mettant en œuvre un évaluateur de prédicat personnalisé.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 [Query Builder](query-builder-api.md) met à votre disposition un moyen efficace d’appliquer des requêtes au référentiel de contenu. AEM est fourni avec [un ensemble d’évaluateurs de prédicats](#query-builder-predicates.md) qui vous aident à appliquer des requêtes à vos données.
 
 Cependant, vous pouvez simplifier vos requêtes en implémentant un évaluateur de prédicat personnalisé qui masque une certaine complexité et garantit une meilleure sémantique.
 
-Un prédicat personnalisé peut également effectuer d’autres tâches qui ne sont pas directement possibles avec XPath, par exemple :
+Un prédicat personnalisé peut également effectuer d’autres tâches qui ne sont pas directement possibles avec XPath, par exemple :
 
 * Requêtes sur des données à l’aide d’un autre service
 * Filtrage personnalisé basé sur le calcul
@@ -105,9 +105,9 @@ Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet
 
 >[!NOTE]
 >
->La portée de la variable `cq-search` La dépendance est définie sur `provided` car `cq-search` est fourni par la fonction `OSGi` conteneur.
+>La portée de la dépendance `cq-search` est définie sur `provided`, car `cq-search` est fournie par le conteneur `OSGi`.
 
-Le fragment suivant présente les différences dans le fichier `pom.xml` au [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format).
+Le fragment suivant présente les différences dans le fichier `pom.xml` au [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format)
 
 ```text
 @@ -120,6 +120,12 @@
