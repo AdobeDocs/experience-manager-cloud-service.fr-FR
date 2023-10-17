@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3708'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -79,8 +79,8 @@ Cette méthode de diffusion unique garantit que des expériences de qualité coh
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media diffuse la même Principale image sur différents supports, dans des formats et des tailles différents.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_Adobe Dynamic Media garantit la cohérence et la qualité des expériences diffusées sur n’importe quel écran, quelle que soit leur taille ou leur bande passante._
+![Adobe Dynamic Media diffuse la même image principale sur différents supports, dans des formats et des tailles différents.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_Adobe Dynamic Media garantit la diffusion d’expériences cohérentes et de qualité sur n’importe quel écran, quelle que soit leur taille ou leur bande passante._
 
 Au fur et à mesure que vous lisez, vous allez en apprendre plus sur l’importance de ce concept de « Un fichier de ressource principal avec des possibilités infinies ».
 
@@ -102,7 +102,7 @@ Mais pour ajouter de la valeur à Dynamic Media au-delà des paramètres d’im
 
 L’imagerie dynamique offre de meilleures performances de diffusion des ressources d’image en optimisant automatiquement le format et la taille de fichier d’une image en fonction des fonctionnalités de navigateur d’un client. Il fonctionne avec vos paramètres d’image prédéfinis existants (les paramètres d’image prédéfinis sont abordés dans la deuxième partie de ce parcours) et utilise des informations lors de la diffusion.
 
-Ces informations permettent d’encore réduire la taille du fichier image en fonction de la vitesse de connexion du navigateur et du réseau. Étant donné que les ressources d’image représentent la majeure partie du temps de chargement d’une page, l’amélioration des performances peut avoir un impact complet sur les indicateurs métier clés, tels que :
+Ces informations permettent d’encore réduire la taille du fichier image en fonction de la vitesse de connexion du navigateur et du réseau. Étant donné que les ressources d’image représentent la majeure partie du temps de chargement d’une page, l’amélioration des performances peut avoir un impact déterminant sur les indicateurs d’activité clés suivants :
 
 * Une conversion plus élevée
 * Le temps passé sur le site
@@ -128,7 +128,7 @@ Vous commencez avec votre vidéo principale originale que vous téléchargez dan
 
 Par exemple, sur un appareil mobile iOS, il détecte une bande passante telle que 4G, 5G ou une connexion Wi-Fi, puis sélectionne automatiquement la vidéo codée selon le débit correspondant parmi ceux disponibles dans la visionneuse de vidéos adaptative. La vidéo est diffusée en continu sur des appareils mobiles, des tablettes ou des ordinateurs de bureau.
 
-En outre, la qualité vidéo est automatiquement changée de manière dynamique si les conditions réseau changent. De plus, si un client passe en mode Plein écran sur un bureau, la visionneuse de vidéos adaptative répond en utilisant une meilleure résolution, améliorant ainsi l’expérience de visionnage du client.
+En outre, la qualité vidéo est automatiquement changée de manière dynamique si les conditions réseau changent. De même, si un client ou une cliente passe en mode plein écran sur un bureau, la visionneuse de vidéos adaptative réagit en utilisant une meilleure résolution, améliorant ainsi l’expérience de visionnage.
 
 L’utilisation des visionneuses de vidéos adaptatives offre une lecture fluide et de qualité aux clients qui lisent des vidéos Dynamic Media sur plusieurs écrans et appareils. Voilà qui simplifie vraiment l’usage de la vidéo.
 
@@ -182,7 +182,7 @@ Un autre cas d’utilisation résolu par Dynamic Media est la vidéo. La vidéo
 
 Les clients espèrent résoudre le problème suivant grâce à Dynamic Media :
 
-&quot;_Nous avons la vidéo, et nous avons dépensé beaucoup d&#39;argent pour la créer. Mais nous nous sommes abstenus de le placer sur des pages, ou de le diffuser, parce que de nos tests, nous ne pouvons pas garantir la qualité de la vidéo, ou si elle va vraiment jouer. Cela finit par affecter nos marques et potentiellement notre capacité à réaliser des conversions_ ».
+« _Nous avons la vidéo et nous avons dépensé beaucoup d’argent pour la créer. Mais nous avons toujours peur de la placer sur des pages ou de la diffuser, parce que nos tests ne nous permettent pas de garantir la qualité de la vidéo ou sa lecture correcte. Cela finit par affecter nos marques et potentiellement notre capacité à réaliser des conversions_ ».
 
 La solution de Dynamic Media consiste à prendre ce fichier vidéo principal et à confier à Dynamic Media la création de toutes les tailles nécessaires grâce à son processus de transcodage. Vous pouvez ensuite l’ajouter au lecteur vidéo intelligent de Dynamic Media. Ce workflow garantit que si vous utilisez cette vidéo sur votre page de destination principale ou sur une page de détails de catégorie ou de produit, elle sera diffusée de façon cohérente et avec une qualité élevée.
 
@@ -265,7 +265,7 @@ Le rendu ci-dessus est en ligne ! [Faites un essai](https://s7d1.scene7.com/s7v
 
 ## Facultatif - En savoir plus
 
-La première partie de ce parcours couvrait les principes de base de diverses facettes de Dynamic Media. Si vous souhaitez en savoir plus sur ce que vous venez de lire, utilisez les matériaux ci-dessous pour explorer les concepts plus en détail. Sinon, vous pouvez continuer avec la deuxième partie de votre parcours. Consultez [Étapes suivantes de ce Parcours Dynamic Media](#whats-next).
+La première partie de ce parcours couvrait les principes de base de diverses facettes de Dynamic Media. Si vous souhaitez en savoir plus, lisez les documents ci-dessous pour explorer ces concepts plus en détail. Sinon, vous pouvez continuer avec la deuxième partie de votre parcours. Consultez [Étapes suivantes de ce Parcours Dynamic Media](#whats-next).
 
 _Rubriques d’aide de Dynamic Media_
 
@@ -291,7 +291,7 @@ _Visionneuses Dynamic Media_
 
 ## Étapes suivantes de ce Parcours Dynamic Media {#whats-next}
 
-Dans la partie II de ce parcours, vous examinez les URL Dynamic Media un peu plus près pour mieux comprendre ce qui se passe lorsqu’une ressource est diffusée. Vous en apprendrez également davantage sur les principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources, ainsi que sur les visionneuses d’images, à 360° et de supports variés, et leur mode de création.
+Dans la deuxième partie de ce parcours, vous allez vous pencher d’un peu plus près sur les URL de Dynamic Media, pour mieux comprendre ce qui se passe lorsqu’une ressource est diffusée. Vous en apprendrez également davantage sur les principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources, ainsi que sur les visionneuses d’images, à 360° et de supports variés, et leur mode de création.
 
 C’est parti pour le [Parcours Dynamic Media : principes de base, deuxième partie](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
