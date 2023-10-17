@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2023.2.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.2.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '732'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour 2023.2.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2023.2.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour techniques de la version 2023.2.0 d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -25,7 +25,7 @@ La section suivante concerne les notes de mise à jour techniques de la version�
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2023.2.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 12 avril 2023. La prochaine version de la fonctionnalité (2023.4.0) est prévue pour le 7 juin 2023.
+La date de publication de la version actuelle (2023.2.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 12 avril 2023. La prochaine mise à jour des fonctionnalités (2023.4.0) est prévue pour le 7 juin 2023.
 
 ## Vidéo de mise à jour {#release-video}
 
@@ -86,7 +86,7 @@ Utilisez les formulaires adaptatifs découplés pour permettre à vos développe
 * créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
 * intégrer nativement les formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat ;
 * réutiliser vos composants d’IU propriétaires avec des applications de formulaires ;
-* utiliser la puissance d’Adobe Experience Manager Forms ;
+* tirer profit de la puissance d’Adobe Experience Manager Forms
 
 Vous pouvez envoyer un e-mail à aem-forms-headless@adobe.com à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces.
 
