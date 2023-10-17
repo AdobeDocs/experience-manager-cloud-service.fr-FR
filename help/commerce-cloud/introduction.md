@@ -4,9 +4,9 @@ description: Présentation et aperçu de Content and Commerce. Experience Manage
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Grâce à Adobe Experience Manager Content and Commerce, les marques peuvent év
 
 Avec les attentes de plus en plus élevées des clients concernant les expériences commerciales en ligne, les marques subissent de fortes pressions pour offrir des expériences différenciées et plus de contenu plus rapidement. Cependant, la mise en œuvre d’une plateforme de gestion de contenu nécessite souvent des investissements importants en temps et en budget pour développer des éléments fondamentaux, tels que les composants personnalisés et les outils de création, et entraîne des coûts importants de maintenance et de mise à niveau. Experience Manager Sites propose Content and Commerce sous la forme d’un module complémentaire pour Experience Manager as a Cloud Service qui fournit des composants de base commerciaux prêts à l’emploi, des outils de création et un storefront de référence pour accélérer la mise en service, permettre une collaboration transparente entre les équipes et stimuler le taux de conversion.
 
-Les marques peuvent intégrer Experience Manager à Adobe Commerce, Adobe Experience Cloud et tout moteur de commerce de votre choix. Grâce à Experience Manager Content and Commerce, les marques peuvent :
+Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composant d’Adobe Experience Cloud, ainsi qu’à tout moteur de commerce de leur choix. Grâce à Experience Manager Content and Commerce, les marques peuvent :
 
 * évoluer et innover plus rapidement ;
 * personnaliser leurs expériences pour générer des conversions ;
@@ -42,11 +42,11 @@ Cette complexité ouvre la porte à de potentielles défaillances, à une augmen
 
 ## Prise en charge efficace des clients par le module CIF depuis 2013 {#support}
 
-Avec plus de 200 clients, CIF a prouvé son efficacité pour réaliser des projets Content and Commerce réussis. Il offre une valeur ajoutée aux technologies de l’information et aux entreprises, dès aujourd’hui et pour leur futur. Les projets clients récents décrivent CIF comme un &quot;accélérateur de vitesse et un gain de temps considérable avec beaucoup de valeur&quot;.
+Avec plus de 200 clients, CIF a prouvé son efficacité pour réaliser des projets Content and Commerce réussis. Il offre une valeur ajoutée aux technologies de l’information et aux entreprises, dès aujourd’hui et pour leur futur. Comme le décrivent de récents projets de clientes et clients, CIF est un « incroyable accélérateur de développement et offre un gain de temps considérable pour générer une valeur importante ».
 
 ## Avantages de CIF {#cif-benefits}
 
-CIF fournit des composants principaux commerciaux prêts à l’emploi qui réduisent le besoin de code personnalisé et accélèrent le délai de mise sur le marché des marques. Tous les composants principaux sont intégrés prêts à l’emploi à la couche de données côté client d’Adobe pour hydrater les profils clients, tels que le profil unifié. Ce profil capture en détail le comportement d’un visiteur, qui peut être utilisé pour prédire et personnaliser le parcours client en temps réel.
+CIF fournit des composants principaux commerciaux prêts à l’emploi qui réduisent le besoin de code personnalisé et accélèrent le délai de mise sur le marché des marques. Tous les composants principaux sont prêts à l’emploi et intégrés à la couche de données côté client d’Adobe pour nourrir les profils clients, comme par exemple le profil unifié. Ce profil capture en détail le comportement d’un visiteur ou d’une visiteuse et peut être utilisé pour prédire le parcours client et le personnaliser en temps réel.
 
 Le module complémentaire CIF apporte du contexte de produit à Experience Manager et fournit des outils de création tels qu’une console de produits et des sélecteurs de produits ou de catégories qui permettent au marketeur de créer et de diffuser des expériences Shoppable dans Experience Manager sans faire appel au développeur. Voici ses avantages :
 
@@ -79,6 +79,6 @@ CIF prend en charge les clients dotés de modèles d’intégration normalisés 
 
 ## Parcours {#journey}
 
-Si vous suivez un Parcours Commerce, passez à l’étape suivante :
+Si vous suivez un Parcours Commerce, passez à l’étape suivante :
 
 * Le [parcours de création de contenu AEM](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
