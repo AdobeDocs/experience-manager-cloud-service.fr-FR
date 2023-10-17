@@ -3,15 +3,15 @@ title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2068'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Introduction et présentation des applications monopage (SPA) {#spa-introduction}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de ces structures.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 
@@ -42,15 +42,15 @@ La présentation repose sur les fonctionnalités AEM standard et l’exemple d�
 
 >[!TIP]
 >
->Tout projet AEM doit utiliser la variable [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge SPA projets à l’aide de React ou d’Angular et utilise le SDK SPA.
+>Tout projet AEM doit utiliser l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK de SPA.
 
-### Qu’est-ce qu’une SPA ?  {#what-is-a-spa}
+### Qu’est-ce qu’une SPA ? {#what-is-a-spa}
 
-Une application d’une seule page (SPA) diffère d’une page conventionnelle en ce qu’elle est rendue côté client et qu’elle est principalement pilotée par JavaScript, en utilisant les appels Ajax pour charger les données et mettre à jour dynamiquement la page. La plupart ou la totalité du contenu est récupérée une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
+Une application monopage (SPA) diffère d’une page conventionnelle en cela qu’elle est rendue côté client et qu’elle est principalement pilotée par JavaScript, en utilisant les appels Ajax pour charger les données et mettre la page à jour dynamiquement. La plupart ou la totalité du contenu est récupérée une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
 
 Cela limite la nécessité d’actualiser la page et offre à l’utilisateur une expérience harmonieuse, rapide et rappelant davantage l’expérience d’une application native.
 
-L’éditeur de SPA AEM permet aux développeurs front-end de créer des SPA qui peuvent être intégrées à un site AEM, ce qui permet aux créateurs de contenu de modifier le contenu SPA aussi facilement qu’un autre contenu AEM.
+L’éditeur de SPA d’AEM permet aux développeurs et aux développeuses front-end de créer des SPA qui peuvent être intégrées à un site AEM, ce qui permet aux créateurs et créatrices de contenu de modifier le contenu de SPA aussi facilement qu’un autre contenu AEM.
 
 ### Pourquoi une SPA ?  {#why-a-spa}
 
@@ -73,9 +73,9 @@ Plus rapide, fluide et ressemblant davantage à une application native, une SPA,
 * L’équipe de développement veut une séparation nette entre les aspects liés au contenu et à la présentation.
 * Une séparation nette rend le système plus extensible et permet un développement front-end indépendant.
 
-### Comment fonctionne une SPA ?  {#how-does-a-spa-work}
+### Comment fonctionne une SPA ? {#how-does-a-spa-work}
 
-L’idée principale sous-jacente à un SPA est que les appels à un serveur et sa dépendance à ce dernier sont réduits afin de minimiser les retards causés par la latence du serveur, de sorte que le SPA s’approche de la réactivité d’une application native.
+L’idée principale sous-jacente à une SPA est que les appels à un serveur et la dépendance envers un serveur sont réduits afin de minimiser les retards liés à la latence du serveur, de sorte que la SPA soit presque aussi réactive qu’une application native.
 
 Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque vous passez à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
 
@@ -96,7 +96,7 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 
 ## Modification de contenu avec une SPA {#content-editing-experience-with-spa}
 
-Lorsqu’un SPA est créé pour utiliser l’AEM Éditeur, l’auteur du contenu ne remarque aucune différence lors de la modification et de la création de contenu. Des fonctionnalités AEM communes sont disponibles et aucune modification du workflow du créateur n’est requise.
+Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA AEM, le créateur ou la créatrice de contenu ne remarque aucune différence lors de la modification et de la création de contenu. Des fonctionnalités AEM communes sont disponibles et aucune modification du workflow du créateur n’est requise.
 
 1. Modifiez l’application de projet SPA WKND dans AEM.
 
@@ -177,7 +177,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 1. Accédez à l’onglet Réseau de l’Inspecteur et rechargez la page.
 
-   Ignorant les demandes d’image, notez que les principales ressources chargées pour la page sont la page elle-même, le code CSS, le code JavaScript React, ses dépendances et les données JSON de la page.
+   Sans tenir compte des requêtes d’image, notez que les principales ressources chargées pour la page sont la page elle-même, le code CSS, le code JavaScript React, ses dépendances, ainsi que les données JSON de la page.
 
    ![Activité de réseau du projet SPA WKND](assets/wknd-network.png)
 
@@ -187,9 +187,9 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
    ![JSON de la page d’accueil du projet SPA WKND](assets/wknd-json.png)
 
-   AEM l’éditeur SPA utilise [AEM Content Services](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-and-content-services) pour diffuser l’intégralité du contenu de la page sous la forme d’un modèle JSON.
+   L’éditeur de SPA AEM exploite [AEM Content Services](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-and-content-services) pour diffuser l’intégralité du contenu de la page sous la forme d’un modèle JSON.
 
-   En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à la SPA. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page, au paragraphe, au composant, etc.).
+   En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à la SPA. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page, au paragraphe, au composant, etc).
 
    Chaque composant choisit les données qu’il expose et le mode de rendu de ces données (côté serveur avec HTL ou côté client avec React ou Angular). Cet article porte sur le rendu côté client avec React.
 
@@ -207,7 +207,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 ### Interaction avec l’éditeur de SPA {#interaction-with-the-spa-editor}
 
-À l’aide de l’exemple d’application de projet WKND SPA, il est clair comment l’application se comporte et est chargée lorsqu’elle est publiée, en exploitant les services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
+L’exemple d’application de projet SPA WKND montre clairement comment l’application se comporte et est chargée lorsqu’elle est publiée, en exploitant les services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
 
 De plus, pour le créateur de contenu, la création de contenu à l’aide d’un éditeur de SPA est transparente dans AEM.
 
@@ -241,7 +241,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
 ## Couplage et découplage dans AEM {#headful-headless}
 
-Les SPA peuvent être activés avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développés et gérés en dehors d’AEM. En outre, SPA peut être utilisé dans AEM tout en utilisant l’utilisation d’un fichier pour diffuser du contenu vers d’autres points de terminaison sans interface.
+Les SPA peuvent être activées avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développées et gérées en dehors d’AEM. De plus, les SPA peuvent être exploitées dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points d’entrée, et ce, en mode découplé.
 
 >[!TIP]
 >
@@ -254,4 +254,4 @@ Maintenant que vous comprenez l’expérience de modification de SPA dans AEM et
 * La section [Prise en main des SPA dans AEM avec React](getting-started-react.md) indique comment une SPA de base est créée pour fonctionner avec l’éditeur de SPA dans AEM à l’aide de React
 * La section [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md) indique comment une SPA de base est créée pour fonctionner avec l’éditeur de SPA dans AEM à l’aide d’Angular
 * La section [Présentation de l’éditeur de SPA](editor-overview.md) examine de plus près le modèle de communication entre AEM et la SPA.
-* [Développement de SPA pour AEM](developing.md) décrit comment impliquer les développeurs front-end dans le développement d’un SPA pour AEM et comment interagir avec l’architecture.
+* La section [Développement de SPA pour AEM](developing.md) décrit comment impliquer les développeurs et développeuses front-end dans le développement d’une SPA pour AEM et décrit de quelle manière les SPA interagissent avec l’architecture d’AEM.
