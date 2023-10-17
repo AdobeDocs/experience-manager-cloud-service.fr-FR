@@ -1,28 +1,28 @@
 ---
 title: Apprendre à utiliser GraphQL avec AEM – Exemples de contenu et de requêtes
-description: Apprenez à utiliser GraphQL avec AEM afin de pouvoir diffuser du contenu sans problème en explorant des exemples de contenu et de requêtes.
+description: Apprenez à utiliser GraphQL avec AEM pour pourvoir diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1752'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Apprendre à utiliser GraphQL avec AEM – Exemples de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
-Apprenez à utiliser GraphQL avec AEM afin de pouvoir diffuser du contenu sans problème en explorant des exemples de contenu et de requêtes.
+Apprenez à utiliser GraphQL avec AEM pour pourvoir diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 
 >[!NOTE]
 >
->Lisez cette page avec ce qui suit :
+>Lisez cette page ainsi que ce qui suit :
 >
 >* [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
 >* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 >* [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/headless/graphql-api/content-fragments.md)
 
-Pour commencer à utiliser les requêtes GraphQL et leur utilisation avec les fragments de contenu AEM, vous pouvez consulter quelques exemples pratiques.
+Pour prendre en main les requêtes GraphQL et leur fonctionnement avec les fragments de contenu AEM, il peut être utile de consulter quelques exemples pratiques.
 
 Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 
@@ -54,7 +54,7 @@ Consultez ces exemples de requêtes pour obtenir un aperçu de la création de r
 
 ### Exemple de requête - Tous les schémas et types de données disponibles {#sample-all-schemes-datatypes}
 
-Renvoie tous `types` pour tous les schémas disponibles.
+Renvoie tous les `types` pour tous les schémas disponibles.
 
 **Exemple de requête**
 
@@ -147,7 +147,7 @@ Renvoie tous `types` pour tous les schémas disponibles.
 
 ### Exemple de requête - Toutes les informations sur toutes les villes {#sample-all-information-all-cities}
 
-Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base suivante :
+Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base suivante :
 **Exemple de requête**
 
 ```graphql
@@ -230,7 +230,7 @@ Pour récupérer toutes les informations sur toutes les villes, vous pouvez util
 
 ### Exemple de requête - Noms de toutes les villes {#sample-names-all-cities}
 
-Une requête simple pour renvoyer la variable `name`de toutes les entrées dans la variable `city`schéma.
+Requête simple pour renvoyer le `name` de toutes les entrées dans le schéma `city`.
 
 **Exemple de requête**
 
@@ -280,7 +280,7 @@ query {
 
 ### Exemple de requête – Un fragment de ville unique et spécifique {#sample-single-specific-city-fragment}
 
-Requête pour renvoyer les détails d’une entrée de fragment unique à un emplacement spécifique dans le référentiel.
+Requête qui renvoie les détails d’une entrée de fragment unique vers un emplacement spécifique dans le référentiel.
 
 **Exemple de requête**
 
@@ -321,7 +321,7 @@ Requête pour renvoyer les détails d’une entrée de fragment unique à un emp
 
 ### Exemple de requête – Toutes les villes avec une variante nommée {#sample-cities-named-variation}
 
-Si vous créez une variation appelée &quot;Centre de Berlin&quot; (`berlin_centre`), pour la variable `city` Berlin, vous pouvez alors utiliser une requête pour renvoyer les détails de la variation.
+Si vous créez une variante, appelée « Centre de Berlin » (`berlin_centre`), pour Berlin en tant que `city`, vous pouvez utiliser une requête afin de renvoyer des détails sur la variation.
 
 **Exemple de requête**
 
@@ -366,8 +366,8 @@ Si vous créez une variation appelée &quot;Centre de Berlin&quot; (`berlin_cent
 
 Si vous :
 
-* créez différentes balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
-* et les affecter à la variation de Principal de diverses `City` instances
+* créez différentes balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
+* et que vous les affectez à la variation principale de diverses instances `City`,
 
 vous pouvez alors utiliser une requête pour renvoyer les détails de `name` et de `tags` de toutes les entrées balisées comme des Escapades en ville dans le schéma `city`.
 
@@ -544,7 +544,7 @@ query {
 
 ### Exemple de Requête - Toutes les personnes qui portent le nom « Jobs » ou « Smith » {#sample-all-persons-jobs-smith}
 
-Une requête qui filtre toutes les `persons` pour tous ceux qui portent le nom `Jobs`ou `Smith`.
+Une requête qui filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
 
 **Exemple de requête**
 
@@ -598,7 +598,7 @@ query {
 
 ### Exemple de requête - Toutes les personnes qui ne portent pas le nom « Jobs » {#sample-all-persons-not-jobs}
 
-Une requête qui filtre toutes les `persons` pour tous ceux qui portent le nom `Jobs`ou `Smith`.
+Une requête qui filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
 
 **Exemple de requête**
 
@@ -708,7 +708,7 @@ query {
 }
 ```
 
-### Exemple de requête : toutes les villes d’Allemagne ou de Suisse ayant une population comprise entre 400000 et 999999 {#sample-all-cities-d-ch-population}
+### Exemple de requête - Toutes les villes situées en Allemagne ou en Suisse et dont la population se situe entre 400 000 et 999 999 {#sample-all-cities-d-ch-population}
 
 Ici, le filtrage concerne une combinaison de champs. Un opérateur `AND` (implicite) est utilisé pour sélectionner la plage `population`, tandis qu’un opérateur `OR` (explicite) est utilisé pour sélectionner les villes requises.
 
@@ -1163,7 +1163,7 @@ Ces exemples de requêtes sont basés sur le projet WKND. Il possède les caract
 
 >[!NOTE]
 >
->Comme les résultats peuvent être exhaustifs, ils ne sont pas reproduits ici.
+>Les résultats pouvant être volumineux, ils ne sont pas reproduits ici.
 
 ### Exemple de requête pour tous les fragments de contenu d’un modèle donné avec les propriétés spécifiées {#sample-wknd-all-model-properties}
 
@@ -1256,7 +1256,7 @@ Cette requête interroge :
 Cet exemple de requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
-   * dans ce fragment, tous les formats de contenu :
+   * à l’intérieur de ce fragment, tous les formats de contenu :
       * HTML
       * Texte (Markdown)
       * Texte brut
@@ -1315,7 +1315,7 @@ Cet exemple de requête interroge :
 Cette requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
-   * dans ce fragment, le chemin et l’auteur du fragment référencé (imbriqué).
+   * à l’intérieur de ce fragment, le chemin d’accès et l’auteur ou autrice du fragment référencé (imbriqué)
 
 >[!NOTE]
 >
@@ -1446,7 +1446,7 @@ La requête suivante renvoie toutes les références de contenu en utilisant `_r
 
 #### Exemple de requête pour plusieurs fragments de contenu avec pièces jointes {#sample-wknd-multiple-fragments-attachments}
 
-La requête suivante renvoie tous les `attachments`, un champ spécifique (sous-groupe) de type `content-reference` :
+La requête suivante renvoie toutes les `attachments`, un champ spécifique (sous-groupe) de type `content-reference` :
 
 >[!NOTE]
 >
@@ -1538,7 +1538,7 @@ Cette requête interroge :
 Cette requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `author` avec un chemin spécifique ;
-   * dans ce fragment, les données liées à la variation : `another`
+   * à l’intérieur de ce fragment, les données sont liées à la variation : `another`
 
 **Exemple de requête**
 
@@ -1564,7 +1564,7 @@ Cette requête interroge :
 
 >[!NOTE]
 >
->Cette requête présente les abandons pour les fragments de contenu qui n’ont pas de [Variation](/help/headless/graphql-api/content-fragments.md#variations) du nom spécifié.
+>Cette requête permet d’afficher la version de secours pour les fragments de contenu qui n’ont pas de [Variation](/help/headless/graphql-api/content-fragments.md#variations) du nom spécifié.
 
 **Exemple de requête**
 
@@ -1582,7 +1582,7 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour plusieurs fragments de contenu et leurs variations dans un modèle donné. {#sample-wknd-multiple-fragment-variations-given-model}
+### Exemple de requête pour plusieurs fragments de contenu et leurs variations dans un modèle donné {#sample-wknd-multiple-fragment-variations-given-model}
 
 Cette requête interroge :
 
@@ -1722,7 +1722,7 @@ Cette requête interroge :
 Cette requête interroge :
 
 * pour les fragments de contenu de type `vehicle` comportant la balise `big-block`
-* exclusion de variations
+* excluant des variations
 
 **Exemple de requête**
 
@@ -1752,12 +1752,12 @@ query {
 } 
 ```
 
-### Exemple de requête avec filtrage par identifiant _tags et inclusion de variations {#sample-filtering-tag-with-variations}
+### Exemple de requête avec filtrage par identifiant _tags et incluant des variations {#sample-filtering-tag-with-variations}
 
 Cette requête interroge :
 
 * pour les fragments de contenu de type `vehicle` comportant la balise `big-block`
-* inclusion de variations
+* incluant des variations
 
 **Exemple de requête**
 
@@ -1805,7 +1805,7 @@ Les exemples de requêtes sont basés sur la structure suivante, qui utilise :
 
 ### Exemples de modèles de fragments de contenu (schémas) {#sample-content-fragment-models-schemas}
 
-Pour les exemples de requêtes, vous utilisez les modèles de contenu suivants, ainsi que leurs interrelations (références ->) :
+Pour les exemples de requêtes, nous utiliserons les modèles de contenu suivants et leurs relations mutuelles (références ->) :
 
 * [Entreprise](#model-company)
 -> [Personne](#model-person)
@@ -1819,7 +1819,7 @@ Les champs de base définissant l’entreprise sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom de l’entreprise | Texte d’une seule ligne | |
+| Nom de l’entreprise | Texte monoligne | |
 | PDG | Référence du fragment (unique) | [Personne](#model-person) |
 | Employés | Référence du fragment (champ multiple) | [Personne](#model-person) |
 
@@ -1829,8 +1829,8 @@ Champs définissant une personne, qui peut également être un employé :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom | Texte d’une seule ligne | |
-| Prénom | Texte d’une seule ligne | |
+| Nom | Texte monoligne | |
+| Prénom | Texte monoligne | |
 | Distinctions | Référence du fragment (champ multiple) | [Distinction](#model-award) |
 
 #### Distinction {#model-award}
@@ -1839,8 +1839,8 @@ Les champs définissant une distinction sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Raccourci/ID | Texte d’une seule ligne | |
-| Titre | Texte d’une seule ligne | |
+| Raccourci/ID | Texte monoligne | |
+| Titre | Texte monoligne | |
 
 #### Ville {#model-city}
 
@@ -1848,8 +1848,8 @@ Les champs permettant de définir une ville sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom | Texte d’une seule ligne | |
-| Pays | Texte d’une seule ligne | |
+| Nom | Texte monoligne | |
+| Pays | Texte monoligne | |
 | Population | Nombre | |
 | Catégories | Balises | |
 
