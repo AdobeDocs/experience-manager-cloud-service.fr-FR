@@ -3,9 +3,9 @@ title: Comment partager des liens vers des ressources ?
 description: Générez un lien et partagez les ressources avec d’autres personnes qui n’ont pas accès à l’application  [!DNL Assets view] .
 exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
 source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -43,9 +43,9 @@ Pour télécharger toutes les ressources en une seule fois, basculez sur la **[!
 
 ## Étapes suivantes {#next-steps}
 
-* [Regardez une vidéo pour partager des liens pour des ressources dans la vue Ressources.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=fr)
+* [Regardez une vidéo pour partager des liens pour les ressources dans Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=fr)
 
-* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets
+* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur d’Assets Essentials.
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
