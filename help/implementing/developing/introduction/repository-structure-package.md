@@ -1,19 +1,19 @@
 ---
 title: Package de structure du référentiel de projet AEM
-description: Les projets Maven sur Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés.
+description: Les projets Maven pour Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel, dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '535'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 # Package de structure du référentiel de projet AEM
 
-Les projets Maven pour Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cette méthode garantit que l’installation des packages dans Experience Manager as a Cloud Service est automatiquement ordonnée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios où des sous-structures seraient installées avant leurs structures parents et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
+Les projets Maven pour Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel, dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cela permet de s’assurer que l’installation des packages dans Experience Manager as a Cloud Service est automatiquement commandée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios où des sous-structures seraient installées avant leurs structures parentes et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
 
-Si votre package de code se déploie dans un emplacement **non couvert** par le package de code, toutes les ressources ancêtres (ressources JCR plus proches de la racine JCR) doivent être énumérées dans le package de structure de référentiel. Ce processus est nécessaire pour établir ces dépendances.
+Si votre package de code se déploie dans un emplacement **non couvert** par le package de code, toutes les ressources ancêtres (ressources JCR plus proches de la racine JCR) doivent être recensées dans le package de structure du référentiel pour établir ces dépendances. Ce processus est nécessaire pour établir ces dépendances.
 
 ![Package de structure du référentiel](./assets/repository-structure-packages.png)
 
@@ -25,15 +25,15 @@ Les chemins les plus courants à inclure dans le package de structure de référ
 + `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`et `/apps/sling/...`, qui fournissent les recouvrements communs pour `/libs`.
 + `/apps/settings`, qui est le chemin racine de configuration reconnaissant le contexte partagé
 
-Ce sous-package **n’a pas** tout contenu et est constitué uniquement d’un `pom.xml` définition des racines du filtre.
+Notez que ce sous-package **ne comporte** aucun contenu et se compose uniquement d’un fichier `pom.xml` définissant les racines du filtre.
 
 ## Création du package de structure de référentiel
 
-Pour créer un module de structure de référentiel pour votre projet Maven, créez un sous-projet Maven vide, avec le code suivant : `pom.xml`, mise à jour des métadonnées du projet pour qu’elles soient conformes à votre projet Maven parent.
+Pour créer un package de structure de référentiel pour votre projet Maven, créez un nouveau sous-projet Maven vide, avec le fichier `pom.xml` suivant, en mettant à jour les métadonnées du projet pour qu’elles soient conformes à votre projet Maven parent.
 
-Mettez à jour le `<filters>` pour inclure toutes les racines du chemin d’accès au référentiel JCR dans lesquelles vos packages de code sont déployés.
+Mettez à jour `<filters>` pour inclure toutes les racines du chemin d’accès au référentiel JCR dans lesquelles vos packages de code sont déployés.
 
-Veillez à ajouter ce nouveau sous-projet Maven aux projets parents. `<modules>` liste.
+Veillez à ajouter ce nouveau sous-projet Maven à la liste des `<modules>` des projets parents.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -116,7 +116,7 @@ Veillez à ajouter ce nouveau sous-projet Maven aux projets parents. `<modules>`
 
 ## Référence au package de structure de référentiel
 
-Pour utiliser le package de structure de référentiel, référencez-le via tous les packages de code (les sous-packages qui se déploient vers `/apps`) Projets Maven via les modules de contenu FileVault Maven `<repositoryStructurePackage>` configuration.
+Pour utiliser le package de structure de référentiel, référencez-le par l’intermédiaire de tous les projets Maven de package de code (les sous-packages qui se déploient vers `/apps`) en configurant les modules externes Maven `<repositoryStructurePackage>` du package de contenu FileVault.
 
 Dans le package de code `ui.apps/pom.xml` et tout autre package de code `pom.xml`, ajoutez une référence à la configuration du package de structure de référentiel du projet (#repository-structure-package) dans le module externe Maven du package FileVault.
 
@@ -162,7 +162,7 @@ Par exemple :
 + Le package de code A se déploie dans `/apps/a`
 + Le package de code B se déploie dans `/apps/a/b`
 
-Si une dépendance au niveau du package n’est pas établie à partir du package de code B sur le package de code A, le package de code B peut être déployé en premier dans `/apps/a`. Il serait ensuite suivi du module de code B, qui se déploie dans `/apps/a`. Le résultat est la suppression du fichier précédemment installé. `/apps/a/b`.
+Si une dépendance au niveau du package n’est pas établie à partir du package de code B sur le package de code A, le package de code B peut être déployé en premier dans `/apps/a`. Il serait ensuite suivi du module de code B, qui se déploie dans `/apps/a`. Le résultat est la suppression du fichier précédemment installé dans `/apps/a/b`.
 
 Dans ce cas :
 
@@ -171,14 +171,14 @@ Dans ce cas :
 
 ## Erreurs et débogage
 
-Si les packages de structure de référentiel ne sont pas configurés correctement, une erreur est signalée lors de la création de Maven :
+Si les packages de structure de référentiel ne sont pas correctement configurés, une erreur est signalée lors de la création du projet Maven :
 
 ```
 1 error(s) detected during dependency analysis.
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Cette erreur indique que le package de code de saut n’a pas de `<repositoryStructurePackage>` qui répertorie `/apps/some/path` dans sa liste de filtres.
+Cette erreur indique que le package de code responsable de l’interruption n’a pas de `<repositoryStructurePackage>` qui comporte `/apps/some/path` dans sa liste de filtres.
 
 ## Ressources supplémentaires
 
