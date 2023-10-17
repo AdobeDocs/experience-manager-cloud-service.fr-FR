@@ -4,9 +4,9 @@ description: Chargez des ressources vers  [!DNL Assets view], affichez les statu
 role: User
 exl-id: a85a4455-4456-48af-aee9-f05300677605
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '835'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Une fois tous les fichiers placés en file d’attente, cliquez sur **[!UICONTRO
 
 >[!TIP]
 >
->Si vous chargez une structure de dossiers dans la vue Ressources, il n’est pas nécessaire de créer un fichier .ZIP avec la structure de dossiers. Vous pouvez charger directement des structures de dossiers. Un fichier .ZIP téléchargé dans la vue Assets est stocké en tant que ressource ZIP et n’est pas extrait automatiquement après le téléchargement.
+>Si vous téléchargez une structure de dossiers dans la vue Assets, vous n’avez pas besoin de créer un fichier ZIP avec la structure de dossiers. Vous pouvez directement charger des structures de dossiers. Un fichier ZIP chargé dans la vue Assets est stocké en tant que ressource ZIP et n’est pas extrait automatiquement après le chargement.
 
 ## Afficher la progression et le statut du chargement {#upload-progress}
 
@@ -82,7 +82,7 @@ Si vous tentez de charger des ressources en double, elles ne seront chargées qu
 
 >[!TIP]
 >
->Vous pouvez charger des ressources vers le référentiel DAM directement depuis vos applications de bureau [!DNL Creative Cloud]. 
+>Vous pouvez charger des ressources vers le référentiel DAM directement depuis vos applications de bureau [!DNL Creative Cloud].
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -101,9 +101,9 @@ Les utilisateurs peuvent supprimer individuellement des ressources ou des dossie
 
 ## Étapes suivantes {#next-steps}
 
-* [Regarder une vidéo pour charger des ressources dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=fr)
+* [Regardez cette vidéo expliquant comment charger des ressources dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=fr)
 
-* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets
+* Faites vos commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
