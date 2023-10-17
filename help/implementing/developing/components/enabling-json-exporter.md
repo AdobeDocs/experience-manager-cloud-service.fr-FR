@@ -3,9 +3,9 @@ title: Activation de l’exportateur JSON pour un composant
 description: Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '472'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 81%
 
 Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 L’exportation JSON est basée sur des [modèles Sling](https://sling.apache.org/documentation/bundles/models.html) et sur le framework d’[exportation des modèles Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (lequel s’appuie lui-même sur des [annotations Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-Cela signifie que le composant doit disposer d’un modèle Sling s’il doit exporter du code JSON. Par conséquent, vous devrez suivre ces deux étapes pour activer l’exportation JSON sur n’importe quel composant.
+Cela signifie que le composant doit disposer d’un modèle Sling s’il doit exporter du code JSON. Par conséquent, vous devrez suivre ces deux étapes pour activer l’exportation du code JSON sur n’importe quel composant.
 
 * [Définition d’un modèle Sling pour le composant](#define-a-sling-model-for-the-component)
 * [Annotation de l’interface du modèle Sling](#annotate-the-sling-model-interface)
@@ -44,7 +44,7 @@ En outre, cela indique que la classe de modèles Sling peut être adaptée dans 
 
 >[!NOTE]
 >
->Les annotations Jackson ne sont généralement pas spécifiées au niveau de la classe de modèles Sling, mais plutôt au niveau de l’interface de modèle. Cela permet de s’assurer que l’exportation JSON est considérée comme faisant partie de l’API du composant.
+>Les annotations Jackson ne sont généralement pas spécifiées au niveau de la classe de modèles Sling, mais plutôt au niveau de l’interface de modèle. Cela permet de s’assurer que l’exportation du code JSON est considéré comme faisant partie de l’API du composant.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Pour être prise en compte par le framework de l’exportateur JSON, l’interfa
 
 L’interface de modèle Sling correspondante (`MyComponent`) est alors marquée avec les [annotations Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) pour définir la manière dont les méthodes doivent être exportées (sérialisées).
 
-L’interface de modèle doit être correctement annotée pour définir les méthodes à sérialiser. Par défaut, toutes les méthodes qui respectent la convention de nommage habituelle pour les getters sont sérialisées et leurs noms de propriétés JSON sont naturellement dérivés des noms getter. Cela peut être évité en utilisant `@JsonIgnore` ou `@JsonProperty` pour renommer la propriété JSON.
+L’interface de modèle doit être correctement annotée pour définir les méthodes à sérialiser. Par défaut, toutes les méthodes qui respectent la convention de nommage habituelle pour les méthodes getter sont sérialisées. En outre, leurs noms de propriétés JSON sont naturellement dérivés des noms des méthodes getter. Cela peut être évité en utilisant `@JsonIgnore` ou `@JsonProperty` pour renommer la propriété JSON.
 
 ## Exemple {#example}
 
