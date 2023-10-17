@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '754'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ L’environnement doit maintenant être prêt pour l’automatisation de la conf
 1. Appuyez sur le bouton **Intégration d’Analytics**.
 1. Dans la boîte de dialogue qui s’affiche, fournissez un nom au **Identifiant de suite de rapports**.
 
-   Cette chaîne est utilisée pour créer une [Identifiant de suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr) dans Adobe Analytics comme entrepôt de données pour les données d’analyse du site AEM sélectionné. La chaîne fournie est ajoutée avec les identifiants d’environnement et de niveau pour garantir l’unicité.
+   Cette chaîne est utilisée pour créer un nouvel [identifiant de suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr) dans Adobe Analytics comme magasin de données pour les données d’analyse du site AEM sélectionné. La chaîne fournie est ajoutée avec les identifiants d’environnement et de niveau pour garantir l’unicité.
 
 1. Actualisez la page et le panneau, puis appuyez sur **Vérification de l’état d’intégration** pour vérifier l’état de l’automatisation.
 
