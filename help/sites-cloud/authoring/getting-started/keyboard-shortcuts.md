@@ -3,7 +3,7 @@ title: Raccourcis clavier pour les consoles
 description: Gagnez du temps lors de la création grâce à ces raccourcis clavier
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
 ht-degree: 100%
 
