@@ -4,9 +4,9 @@ description: Accès, connexion, cas d’utilisation pris en charge et problèmes
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: 88cbaae2ad8b610b8cd14b3ba0a92e7238ae8e9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '390'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ La gestion de vos ressources numériques à l’aide d’[!DNL Assets view] ne n
 * **Étape 2** : [rechercher](/help/assets/search-assets-view.md) et [télécharger](/help/assets/manage-organize-assets-view.md#download) des ressources.
 * **Étape 3** : [gérer et organiser](/help/assets/manage-organize-assets-view.md) vos ressources.
 
-Pour utiliser [!DNL Assets view], connectez-vous à l’adresse [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets). Lors de la connexion, sélectionnez `Company or School Account`. Pour recevoir un accès, contactez l’administrateur de votre entreprise.
+Pour utiliser [!DNL Assets view], connectez-vous à l’adresse [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets). Lors de la connexion, sélectionnez `Company or School Account`. Pour recevoir un accès, contactez l’administrateur ou l’administratrice de votre organisation.
 
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
@@ -57,9 +57,9 @@ Vous trouverez ci-dessous les différentes tâches de gestion des actifs numéri
 
 ## Étapes suivantes {#next-steps}
 
-* [Regardez une vidéo pour commencer à utiliser la vue Ressources.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=fr)
+* [Regardez une vidéo pour commencer à utiliser la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=fr)
 
-* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets
+* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
