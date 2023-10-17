@@ -3,9 +3,9 @@ title: En savoir plus sur la création de modèles de fragment de contenu dans A
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Ensuite, les modèles de fragments de contenu peuvent être créés et la struct
 
 Après avoir sélectionné cette option, accédez à l’emplacement de votre modèle et sélectionnez **Créer**. Vous pouvez saisir ici différentes informations importantes.
 
-L’option **Activer le modèle** est activé par défaut. Cela signifie que votre modèle peut être utilisé (dans la création de fragments de contenu) dès que vous l’avez enregistré. Vous pouvez désactiver cette option si vous le souhaitez. Par la suite, vous pourrez activer (ou désactiver) un modèle existant.
+L’option **Activer le modèle** est activé par défaut. Cela signifie que votre modèle est disponible pour être utilisé (dans la création de fragments de contenu) dès que vous l’aurez enregistré. Vous pouvez désactiver cette option si vous le souhaitez. Par la suite, vous pourrez activer (ou désactiver) un modèle existant.
 
 ![Création de modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -59,11 +59,11 @@ Lorsque vous ouvrez un nouveau modèle pour la première fois, vous verrez un gr
 
 Alors, que faire ?
 
-Vous pouvez faire glisser des instances du **Types de données** sur l’espace de gauche - vous définissez déjà votre modèle !
+Vous pouvez faire glisser des instances de **Types de données** dans l’espace gauche, et ainsi commencer à définir votre modèle
 
 ![Définition de champs](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Une fois que vous avez ajouté un type de données, vous devez définir la variable **Propriétés** pour ce champ. Celles-ci dépendent du type utilisé. Par exemple :
+Après avoir ajouté un type de données, vous devrez définir les **Propriétés** de ce champ. Celles-ci dépendent du type utilisé. Par exemple :
 
 ![Propriétés des données](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ Vous pouvez ajouter autant de champs que vous le souhaitez. Par exemple :
 
 ### Vos auteurs de contenu {#your-content-authors}
 
-Les auteurs de contenu ne voient pas les types de données et les propriétés réels que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
+Les auteurs et autrices de contenu ne voient pas les types de données et les propriétés que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Les modèles de fragment de contenu doivent être publiés avant ou pendant la p
 
 >[!NOTE]
 >
->Si un auteur tente de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique et le modèle est publié avec le fragment.
+>Si un auteur ou une autrice essaye de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, et le modèle est publié avec le fragment.
 
 Dès qu’un modèle est publié, il est *verrouillé* en mode LECTURE SEULE sur l’auteur. Cette fonctionnalité a pour but d’empêcher les modifications qui provoqueraient des erreurs dans les schémas et requêtes GraphQL existants, en particulier dans l’environnement de publication. Ce statut est indiqué dans la console par la mention **Verrouillé**.
 
