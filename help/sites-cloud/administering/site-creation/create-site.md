@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '775'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 Découvrez comment utiliser AEM pour créer un site à l’aide de modèles de site afin de définir le style et la structure de votre site.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Pour que les auteurs de contenu puissent créer des pages avec du contenu, le site doit d’abord être créé. Cette opération est généralement effectuée par un administrateur AEM qui définit la structure initiale du site. L’utilisation de modèles de site rend la création de site rapide et flexible.
 
@@ -23,21 +23,21 @@ L’outil de création rapide de site AEM permet aux non-développeurs de créer
 
 Une fois créé, l’outil de création rapide de site permet également une personnalisation rapide du thème et du style du site AEM (JavaScript, CSS et ressources statiques). Cela permet au développeur front-end, qui n’a besoin d’aucune connaissance d’AEM, de travailler séparément et parallèlement aux créateurs de contenu. L’administrateur d’AEM télécharge simplement le thème du site et le fournit au développeur front-end, qui le personnalise à l’aide de ses outils favoris, puis valide les modifications dans le référentiel de code AEM, qui est ensuite déployé.
 
-Ce document se concentre sur la création de site à l’aide de l’outil de création rapide de site. Si vous souhaitez un aperçu du processus de création et de personnalisation de site, reportez-vous à la section [parcours de création rapide de site](/help/journey-sites/quick-site/overview.md)
+Ce document se concentre sur la création de site à l’aide de l’outil de création rapide de site. Pour une vue d’ensemble du workflow de création et de personnalisation des sites, reportez-vous à la section [Parcours de création rapide de site AEM](/help/journey-sites/quick-site/overview.md)
 
 ## Planification de la structure du site {#structure}
 
-Prenez le temps d’examiner à l’avance l’objectif et le contenu planifié de votre site. Cela vous permettra de concevoir la structure du site. Une bonne structure de site prend en charge la navigation facile et la découverte de contenu pour les visiteurs de votre site et prend en charge diverses fonctionnalités AEM telles que [gestion multisite et traduction](/help/sites-cloud/administering/msm-and-translation.md).
+Prenez le temps d’examiner à l’avance l’objectif et le contenu planifié de votre site. Cela vous permettra de concevoir la structure du site. Une structure de site bien conçue facilite la navigation et la découverte du contenu pour les personnes accédant à de votre site et prend en charge diverses fonctionnalités AEM telles que la [gestion multisite et la traduction](/help/sites-cloud/administering/msm-and-translation.md).
 
 >[!TIP]
 >
->[Le site de référence WKND](https://wknd.site) fournit une implémentation des bonnes pratiques d’un site web de marque d’expériences en plein air entièrement fonctionnel. Explorez-le pour découvrir la structure d’un site d’AEM bien conçu.
+>[Le site de référence WKND](https://wknd.site) fournit une implémentation des bonnes pratiques d’un site web de marque entièrement fonctionnel proposant des expériences en plein air. Explorez-le pour découvrir la structure d’un site d’AEM bien conçu.
 
 ## Modèles de site {#site-templates}
 
 La structure du site étant si importante pour le succès d’un site, il est pratique de disposer de structures prédéfinies pour déployer rapidement un nouveau site en fonction d’un ensemble de normes existantes. Les modèles de site permettent de combiner du contenu de site de base dans un package pratique et réutilisable.
 
-Les modèles de site contiennent généralement du contenu et de la structure de base du site ainsi que des informations de style pour démarrer rapidement un nouveau site. Les modèles sont puissants, car ils sont réutilisables et personnalisables. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
+Les modèles de site contiennent généralement le contenu et la structure du site de base, ainsi que des informations de style pour démarrer rapidement un nouveau site. Les modèles, réutilisables et personnalisables, sont d’une grande efficacité. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
 
 >[!TIP]
 >
