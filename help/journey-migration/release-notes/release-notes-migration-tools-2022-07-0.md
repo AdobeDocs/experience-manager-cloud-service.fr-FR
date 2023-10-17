@@ -4,9 +4,9 @@ description: Notes de mise à jour pour les outils de migration dans AEM as a�
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '428'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ La date de publication de l’outil de transfert de contenu v2.0.12 est le 19 
 * Pour aider à déboguer les problèmes de connexion SSL/TLS lors des extractions, les utilisateurs peuvent désormais activer la journalisation SSL.
 * Pour aider à déboguer les problèmes de connectivité source, les noms de sous-domaines sont désormais imprimés dans les journaux lorsque la connexion à Azure échoue.
 * Pour aider à déboguer les problèmes qui surviennent lors de la pré-copie, les journaux AzCopy sont désormais ajoutés aux journaux d’extraction en cas d’échec de la pré-copie.
-* Pour éviter que la taille de contrôle ne soit obsolète, les utilisateurs ne peuvent réexécuter la taille de contrôle qu’une fois la taille de contrôle précédente terminée.
+* Pour éviter que les résultats de vérification de la taille ne soient obsolètes, les personnes utilisatrices ne peuvent réexécuter la vérification de la taille qu’une fois la vérification précédente terminée.
 
 ### Correctifs {#bug-fixes-ctt}
 
