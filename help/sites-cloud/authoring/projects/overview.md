@@ -1,11 +1,11 @@
 ---
 title: Projets
-description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
+description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1255'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -17,14 +17,14 @@ Les projets vous permettent de regrouper des ressources dans une seule entité. 
 >
 >Pour que les utilisateurs participant à des projets voient d’autres utilisateurs/groupes lorsqu’ils se servent de fonctionnalités de la console Projets comme créer des projets, créer des tâches/workflows, afficher et contrôler l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et à `/home/groups`. Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** un accès en lecture à `/home/users` et à `/home/groups`.
 
-En tant qu’utilisateur, vous pouvez effectuer les opérations suivantes :
+En tant que personne utilisatrice, vous pouvez effectuer les opérations suivantes :
 
-* Création de projets
-* Associer du contenu et des dossiers de ressources à un projet
-* Suppression de projets
-* Supprimer les liens de contenu d’un projet
+* créer des projets ;
+* associer du contenu et des dossiers de ressources à un projet ;
+* supprimer des projets ;
+* supprimer les liens de contenu d’un projet
 
-Reportez-vous aux rubriques supplémentaires suivantes :
+Reportez-vous aux rubriques supplémentaires suivantes :
 
 * [Gestion de projets](/help/sites-cloud/authoring/projects/managing.md)
 * [Utilisation de tâches](/help/sites-cloud/authoring/projects/tasks.md)
@@ -36,17 +36,17 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 
 ![Console Projets](/help/sites-cloud/authoring/assets/projects-console.png)
 
-* Sélectionner **Chronologie** puis un projet pour afficher sa chronologie.
+* Sélectionnez **Chronologie**, puis un projet pour afficher sa chronologie.
 * Cliquez/appuyez sur **Sélectionner** pour passer en mode de sélection.
 * Cliquez sur **Créer** pour ajouter des projets.
-* **Activation/désactivation de projets Principaux** permet de basculer entre tous les projets et uniquement ceux qui sont principaux.
-* **Afficher la vue Statistiques** vous permet d’afficher les statistiques de projet concernant les tâches terminées.
+* **Activer/désactiver les projets actifs** permet de basculer entre tous les projets actifs.
+* **Afficher la vue Statistiques** permet d’afficher les statistiques de projet concernant les tâches terminées.
 
 ## Mosaïques de projet {#project-tiles}
 
-Avec les projets, vous associez différents types d’informations à vos projets. Elles sont appelées **Mosaïques**. Chacune des mosaïques et le type d’informations qu’elles contiennent sont décrits dans cette section.
+Avec les projets, vous associez différents types d’informations à vos projets. Ces informations sont appelées **Mosaïques**. Chacune des mosaïques et le type d’informations qu’elles contiennent sont décrits dans cette section.
 
-Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles est décrite dans les sections suivantes :
+Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles est décrite dans les sections suivantes :
 
 * Ressources et collections de ressources
 * Expériences
@@ -71,7 +71,7 @@ Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez
 
 ### Collections de ressources {#asset-collections}
 
-Comme pour les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
+Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
 
 ![Collection de ressources](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -95,7 +95,7 @@ La mosaïque Liens permet d’associer des liens externes à votre projet.
 
 ![Liens](/help/sites-cloud/authoring/assets/project-links.png)
 
-Vous pouvez nommer le lien avec un nom facile à reconnaître et modifier la miniature.
+Vous pouvez donner au lien un nom facile à reconnaître et changer de miniature.
 
 ![Ajout d’un lien](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ La mosaïque Informations sur le projet fournit des informations générales sur
 
 ![Informations sur le projet](/help/sites-cloud/authoring/assets/project-info.png)
 
-Les membres de l’équipe peuvent être affectés et supprimés de cette mosaïque (ou leurs rôles peuvent être modifiés) et de la mosaïque Équipe.
+Des membres d’équipe peuvent être attribués et supprimés de cette mosaïque (ou leurs rôles peuvent être modifiés), ainsi que de la mosaïque Équipe.
 
 ![Ajout de membres de l’équipe au projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -121,7 +121,7 @@ Cliquez sur les points de suspension en bas de la carte **Tâche de traduction**
 
 ### Équipe {#team}
 
-Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet. Lors de la modification, vous pouvez saisir le nom du membre de l’équipe et attribuer le rôle d’utilisateur.
+Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet. Lors de la modification, vous pouvez saisir le nom de la personne membre de l’équipe et attribuer le rôle d’utilisateur ou d’utilisatrice.
 
 ![Mosaïque Équipe](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
@@ -163,12 +163,12 @@ En fonction du modèle sélectionné, plusieurs options s’offrent à vous, not
 
 ## Rôles utilisateur dans un projet {#user-roles-in-a-project}
 
-Les différents rôles utilisateur sont définis dans un modèle de projet et sont utilisés pour deux Principales raisons :
+Différents rôles d’utilisateur ou d’utilisatrice sont définis dans le modèle de projet et utilisés pour deux raisons principales :
 
-1. Autorisations. Les rôles utilisateur peuvent faire partie de l’une des trois catégories répertoriées : Observateur, Éditeur, Propriétaire. Par exemple, un photographe ou un rédacteur aura les mêmes privilèges qu’un éditeur. Les autorisations déterminent ce que les utilisateurs peuvent faire avec le contenu d’un projet.
-1. Workflows. Les workflows déterminent les tâches affectées à un projet. Les tâches peuvent être associées à un rôle de projet. Par exemple, une tâche peut être affectée aux photographes afin que tous les membres de l’équipe qui détiennent le rôle Photographe obtiennent la tâche.
+1. Autorisations. Les rôles utilisateur peuvent faire partie de l’une des trois catégories répertoriées : Observateur, Éditeur, Propriétaire. Par exemple, un photographe ou un rédacteur aura les mêmes privilèges qu’un éditeur. Les autorisations déterminent ce que les utilisateurs et utilisatrices peuvent faire avec le contenu d’un projet.
+1. Workflows. Les workflows déterminent la personne utilisatrice associée à telles ou telles tâches d’un projet. Les tâches peuvent être associées à un rôle de projet. Par exemple, une tâche peut être attribuée à des photographes, de sorte que toutes les personnes membres de l’équipe disposant du rôle Photographe se la voient attribuer.
 
-Pour vous permettre de gérer les autorisations de sécurité et de contrôle, tous les projets prennent en charge les rôles par défaut suivants:
+Pour vous permettre de gérer les autorisations de sécurité et de contrôle, tous les projets prennent en charge les rôles par défaut suivants :
 
 | Rôle | Description | Autorisations | Appartenance à un groupe |
 |---|---|---|---|
