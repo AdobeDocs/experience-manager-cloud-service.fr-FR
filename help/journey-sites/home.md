@@ -3,9 +3,9 @@ title: Parcours AEM Sites
 description: Commencez ici pour obtenir un aperçu des parcours guidés disponibles pour comprendre les fonctionnalités puissantes AEM en matière de sites.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Commencez ici pour obtenir un aperçu des parcours guidés disponibles pour comp
 
 ## Présentation {#introduction}
 
-[AEM Sites](https://business.adobe.com/fr/products/experience-manager/sites/aem-sites.html) est une suite unifiée d’outils puissants qui vous permet de créer, gérer et publier facilement des expériences digitales sur plusieurs canaux. De la configuration de votre structure de contenu initiale à la création facile de contenu réutilisable, en passant par le déploiement sur plusieurs marchés et langues, en passant par la création d’applications personnalisées offrant des expériences personnalisées, AEM Sites est une solution centrale et complète qui vous permet de créer des expériences formidables pour vos audiences, où qu’elles se trouvent.
+[AEM Sites](https://business.adobe.com/fr/products/experience-manager/sites/aem-sites.html) est une suite unifiée d’outils puissants qui vous permet de créer, gérer et publier facilement des expériences digitales sur plusieurs canaux. De la configuration de votre structure initiale de contenu à la création de contenu réutilisable, en passant par le déploiement sur plusieurs marchés et langues, et par la création d’applications personnalisées offrant des expériences personnalisées, AEM Sites est une solution globale et centrale qui permet de créer des expériences formidables pour vos audiences, où qu’elles se trouvent.
 
 ## Parcours de documentation AEM {#documentation-journeys}
 
@@ -43,4 +43,4 @@ Les parcours de documentation suivants sont concernent les différentes rubrique
 | [Parcours complémentaire des démonstrations de référence](/help/journey-sites/demos-add-on/overview.md) | Découvrez ici un parcours guidé expliquant comment ajouter facilement le module complémentaire des démonstrations de référence d’AEM à un environnement sandbox avec une configuration minimale d’AEM. Vous pourrez ainsi tester les puissantes fonctionnalités d’AEM avec des exemples riches basés sur les bonnes pratiques. | Administrateur système |
 | [Parcours de traduction de sites](/help/journey-sites/translation/overview.md) | Découvrez les technologies AEM Sites, leur utilisation pour votre projet et comment créer et mettre à jour des projets de traduction dans AEM, de A à Z. | Spécialistes de la traduction |
 
-Tenez-vous informé des [prochains parcours couvrant les spécificités des rôles supplémentaires](/help/journey-documentation/documentation-journeys.md#journeys).
+Restez à l’affût des [prochains parcours couvrant les spécificités des rôles supplémentaires](/help/journey-documentation/documentation-journeys.md#journeys).
