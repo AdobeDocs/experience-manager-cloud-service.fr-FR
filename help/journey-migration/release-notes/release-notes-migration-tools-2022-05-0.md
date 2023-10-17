@@ -4,9 +4,9 @@ description: Notes de mise à jour pour les outils de migration dans AEM as a�
 feature: Release Information
 exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
