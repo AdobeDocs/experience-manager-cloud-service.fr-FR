@@ -3,9 +3,9 @@ title: Création de modèles de fragment de contenu - Configuration découplée
 description: Définissez la structure du contenu que vous allez créer et diffuser à l’aide des fonctionnalités découplées AEM à l’aide des modèles de fragment de contenu.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,10 +45,10 @@ Un architecte de l’information ne réaliserait ces tâches qu’occasionnellem
 1. Lorsque vous avez fini de créer votre modèle, appuyez ou cliquez sur **Enregistrer**.
 
 1. Le mode du modèle que vous venez de créer varie selon que vous avez sélectionné ou non **Activer le modèle** lors de la création du modèle :
-   * sélectionné - le nouveau modèle sera déjà **Activé**.
-   * non sélectionné : le nouveau modèle est créé dans **Version préliminaire** mode
+   * sélectionné - le nouveau modèle sera déjà **Activé**
+   * non sélectionné - le nouveau modèle sera créé en mode **Brouillon**
 
-1. Si elle n’est pas déjà activée, le modèle doit être **Activé** pour l’utiliser.
+1. S’il n’est pas déjà activé, le modèle doit être **Activé** pour pouvoir l’utiliser.
    1. Sélectionnez le modèle que vous venez de créer, puis appuyez ou cliquez sur **Activer**.
 
       ![Activation du modèle](../assets/models-enable.png)
