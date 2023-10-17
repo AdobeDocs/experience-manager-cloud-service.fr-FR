@@ -2,9 +2,9 @@
 title: Bonnes pratiques de recherche pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Bonnes pratiques pour rechercher, rechercher et récupérer les métadonnées des ressources dans votre application.
 contentOwner: KK
-source-git-commit: 31526510cc32c9587e76da522d9377afd837d991
+source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2544'
 ht-degree: 11%
 
 ---
@@ -299,13 +299,11 @@ The newly added assets are not indexed.
 
 <table>
     <tr>
-        <th> S.No.</th>
         <th> Paramètres </th>
         <th> Vue Admin </th>
         <th> Vue Assets </th>
     </tr>
     <tr>
-        <td> 1. </td>
         <td> Facettes personnalisées </td>
         <td> Vous pouvez ajouter <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr">facettes de recherche personnalisées selon les besoins.</td>
         <td> Les facettes personnalisées sont partiellement prises en charge dans la vue Assets. Les facettes prises en charge sont les suivantes :
@@ -319,42 +317,36 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> 2. </td>
         <td> Opérateurs  </td>
         <td> Prend en charge AND, OR et NOT </td>
         <td> Pas de prise en charge </td>
     </tr>
     <tr>
-        <td> 3. </td>
         <td> Caractères génériques </td>
         <td> Prend en charge le point d’interrogation (?) et astérisque (*).</td>
         <td> Pas de prise en charge </td>
     </tr>
     <tr>
-        <td> 4. </td>
         <td> Amélioration des résultats de recherche </td>
         <td> Pris en charge </td>
         <td> Pas de prise en charge </td>
     </tr>
      <tr>
-        <td> 5. </td>
         <td> Effacer tous les filtres à la fois </td>
         <td> Pas de prise en charge </td>
         <td> Pris en charge</td>
     </tr>
      <tr>
-        <td> 6. </td>
         <td> Fichiers/Dossiers/Fichiers et dossiers </td>
         <td> Pris en charge </td>
         <td> Une option permettant de sélectionner un dossier est disponible sous "Type de fichier". </td>
     </tr>
      <tr>
-        <td> 7. </td>
         <td> Statut de la ressource </td>
         <td> 
             Les options prises en charge sont les suivantes :
             <ul>
-            <li> Publier
+            <li> Publication
             <li> Date de publication
             <li> Dernière publication par
             <li> Approbation 
@@ -374,7 +366,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 8. </td>
         <td> Type de fichier </td>
         <td>
         Les options prises en charge sont les suivantes :
@@ -398,7 +389,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 9. </td>
         <td> Taille de fichier </td>
         <td>
         Les options prises en charge sont les suivantes :
@@ -410,7 +400,6 @@ The newly added assets are not indexed.
         <td> Pas de prise en charge </td>
     </tr>
      <tr>
-        <td> 10. </td>
         <td> Autres filtres </td>
         <td>
             <ul>
@@ -427,7 +416,6 @@ The newly added assets are not indexed.
         <td> Pas de prise en charge </td>
     </tr>
      <tr>
-        <td> 11. </td>
         <td> Rechercher similaire </td>
         <td> Pris en charge </td>
         <td> Pas de prise en charge </td>
