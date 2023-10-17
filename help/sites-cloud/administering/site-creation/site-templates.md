@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '568'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 90%
 
 Découvrez comment les modèles de site AEM peuvent être utilisés pour prédéfinir la structure du site et le contenu initial afin de vous permettre de créer rapidement des sites.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Il est pratique de disposer de structures prédéfinies pour déployer rapidement un nouveau site en fonction d’un ensemble de normes existantes. Les modèles de site permettent de combiner du contenu de site de base dans un package pratique et réutilisable.
 
-Les modèles de site contiennent généralement du contenu et de la structure de base du site ainsi que des informations de style de site, connues sous le nom de [thème du site,](site-themes.md) pour démarrer rapidement un nouveau site. Les administrateurs sélectionnent un modèle de site sur lequel baser le site [pendant le processus de création du site.](create-site.md)
+Les modèles de site contiennent généralement le contenu et la structure du site de base et des informations sur le style du site, connues sous le nom de [thème de site,](site-themes.md) pour permettre à un nouveau site de démarrer rapidement. Les administrateurs et administratrices sélectionnent un modèle de site sur lequel baser le site [pendant le processus de création du site.](create-site.md)
 
-Les modèles sont puissants, car ils sont réutilisables et personnalisables. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
+Les modèles, réutilisables et personnalisables, sont d’une grande efficacité. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
 
 >[!NOTE]
 >
 >Les modèles de site AEM ne doivent pas être confondus avec les [modèles de page](/help/sites-cloud/authoring/features/templates.md). Les modèles de site définissent la structure globale d’un site. Un modèle de page définit la structure et le contenu initial d’une page individuelle.
 >
->Les modèles de site AEM ne doivent pas être confondus avec les [thèmes de site AEM](site-themes.md). Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. AEM modèles de site définissent la structure du site et le contenu initial, et contiennent un thème de site AEM pour permettre [création rapide de site](create-site.md).
+>Les modèles de site AEM ne doivent pas être confondus avec les [thèmes de site AEM](site-themes.md). Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. Les modèles de site AEM définissent la structure du site et le contenu initial et contiennent un thème de site AEM afin de permettre une [création rapide de site](create-site.md).
 
 ## Ajout d’un modèle de site à AEM {#adding}
 
@@ -74,4 +74,4 @@ Adobe fournit un modèle de référence des bonnes pratiques que vous pouvez uti
 
 Adobe fournit un Créateur de modèles de site AEM sous la forme d’un ensemble de scripts permettant de créer de nouveaux modèles de sites.
 
-[Le Créateur de modèles de site AEM est disponible ainsi que la documentation d’utilisation sur GitHub](https://github.com/adobe/aem-site-template-builder). Une expérience de développeur front-end est requise pour personnaliser le [thème de site](site-themes.md) et des connaissances de développeur AEM sont nécessaires pour personnaliser la structure ainsi que le contenu du site.
+[Le Créateur de modèles de site AEM est disponible ainsi que la documentation d’utilisation sur GitHub](https://github.com/adobe/aem-site-template-builder). Une expérience de développement front-end est requise pour personnaliser le [thème de site](site-themes.md) et des connaissances de développement AEM sont nécessaires pour personnaliser la structure ainsi que le contenu du site.
