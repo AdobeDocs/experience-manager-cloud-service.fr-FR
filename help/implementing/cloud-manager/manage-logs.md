@@ -1,46 +1,46 @@
 ---
-title: Accès aux journaux et gestion des journaux
-description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
+title: Accéder aux journaux et les gérer
+description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
-# Accès aux journaux et gestion des journaux {#manage-logs}
+# Accéder aux journaux et les gérer {#manage-logs}
 
-Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
+Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 
-Vous pouvez accéder à une liste de fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la **Environnements** de la carte **Présentation** page ou page Détails de l’environnement.
+Vous pouvez accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte **Environnements** de la page **Vue d’ensemble** ou de la page Détails de l’environnement.
 
-## Journaux de téléchargement {#download-logs}
+## Télécharger les journaux {#download-logs}
 
-Pour télécharger les journaux, procédez comme suit.
+Pour télécharger les journaux, procédez comme suit :
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à la carte **Environnements** à partir de la page **Aperçu**.
+1. Accédez à la carte **Environnements** à partir de la page **Vue d’ensemble**.
 
-1. Sélectionner **Journaux de téléchargement** dans le menu points de suspension.
+1. Sélectionnez **Télécharger les journaux** dans le menu représentant des points de suspension.
 
-   ![Option de menu des journaux de téléchargement](assets/download-logs1.png)
+   ![Élément de menu Télécharger les journaux](assets/download-logs1.png)
 
-1. Dans le **Journaux de téléchargement** , sélectionnez la **Service** dans le menu déroulant
+1. Dans la boîte de dialogue **Télécharger les journaux**, sélectionnez le **service** approprié dans le menu déroulant
 
    ![Boîte de dialogue Télécharger les journaux](assets/download-preview.png)
 
 1. Une fois que vous avez sélectionné votre service, cliquez sur l’icône de téléchargement en regard du journal que vous souhaitez récupérer.
 
-Vous pouvez également accéder à vos journaux à partir du **Environnements** page.
+Vous pouvez également accéder à vos journaux à partir de la page **Environnements**.
 
-![Journaux de l’écran Environnements](assets/download-logs.png)
+![Journaux depuis l’écran Environnements](assets/download-logs.png)
 
 ## Journaux via l’API {#logs-through-api}
 
-Outre le téléchargement de journaux via l’interface utilisateur, les journaux sont disponibles via l’API et l’interface de ligne de commande.
+En plus de l’interface utilisateur, les journaux sont disponibles via l’API et l’interface de ligne de commande.
 
 Pour télécharger les fichiers journaux d’un environnement spécifique, la commande est similaire à la suivante.
 
@@ -48,13 +48,13 @@ Pour télécharger les fichiers journaux d’un environnement spécifique, la co
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-En outre, vous pouvez afficher les journaux à l’aide de l’interface de ligne de commande.
+En outre, vous pouvez suivre les journaux à l’aide de l’interface de ligne de commande.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Pour obtenir l’ID d’environnement (1884 dans cet exemple) et les options de service ou de nom de journal disponibles, vous pouvez utiliser les commandes suivantes.
+Pour obtenir l’ID d’environnement (1884 dans ce cas) et les options de nom de service ou de journal disponibles, utilisez les commandes suivantes :
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Ressources supplémentaires {#resources}
 
-Consultez les ressources supplémentaires suivantes pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande d’Adobe I/O :
+Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande d’Adobe I/O :
 
 * [Documentation de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Interface de ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
