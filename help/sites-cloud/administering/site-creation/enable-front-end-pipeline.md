@@ -1,31 +1,31 @@
 ---
 title: Activation du pipeline front-end
-description: Découvrez comment vous pouvez activer le pipeline frontal pour que les sites existants utilisent des thèmes de site pour personnaliser plus rapidement votre site.
+description: Découvrez comment activer le pipeline front-end pour les sites existants, afin d’utiliser les thèmes de site et personnaliser plus rapidement votre site.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
-# Activation du pipeline front-end {#enable-front-end-pipeline}
+# Activer le pipeline front-end {#enable-front-end-pipeline}
 
-Découvrez comment vous pouvez activer le pipeline frontal pour que les sites existants utilisent des thèmes de site pour personnaliser plus rapidement votre site.
+Découvrez comment activer le pipeline front-end pour les sites existants, afin d’utiliser les thèmes de site et personnaliser plus rapidement votre site.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Le pipeline front-end est un mécanisme qui peut rapidement déployer uniquement le code front-end de vos sites web en fonction des [thèmes du site](site-themes.md) et des [modèles de site.](site-templates.md)
 
 Au lieu d’un déploiement full stack, seul le code front-end est géré par ce pipeline, ce qui accélère le processus et permet également aux développeurs front-end de personnaliser facilement et rapidement votre site sans connaissances d’AEM.
 
-Les sites basés sur des modèles de site peuvent utiliser le pipeline frontal par défaut. Ce document décrit la façon dont vous pouvez adapter vos sites existants pour tirer parti du pipeline front-end.
+Les sites basés sur des modèles de site peuvent utiliser le pipeline front-end par défaut. Ce document décrit la façon dont vous pouvez adapter vos sites existants pour tirer parti du pipeline front-end.
 
 >[!TIP]
 >
->Si vous ne connaissez pas le pipeline frontal et que vous ne savez pas comment déployer rapidement des sites à l’aide de celui-ci et des modèles de site, reportez-vous à la section [Parcours de création de site rapide](/help/journey-sites/quick-site/overview.md) pour une introduction.
+>Si vous ne connaissez pas le pipeline front-end et que vous ne savez pas comment l’utiliser pour déployer rapidement des sites et des modèles de site, consultez la section [Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md) en guise d’introduction.
 
 Si vous n’avez pas créé votre site existant en fonction de modèles et de thèmes, AEM peut configurer votre site pour charger les thèmes déployés avec le pipeline front-end sur les bibliothèques clientes existantes.
 
@@ -56,7 +56,7 @@ L’activation de votre site s’effectue à partir de la console Sites à l’a
 
    ![Activation du pipeline front-end](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
-1. AEM vous invite à confirmer avec un aperçu les modifications qui seront apportées. Confirmez et votre site est adapté.
+1. AEM vous invite à confirmer avec une vue d’ensemble des modifications qui seront apportées. Confirmez et votre site est adapté.
 
 Votre site est maintenant prêt à utiliser le pipeline front-end. Pour en savoir plus sur le pipeline front-end et la gestion du thème de votre site, consultez :
 
