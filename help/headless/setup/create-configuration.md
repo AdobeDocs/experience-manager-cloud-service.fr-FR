@@ -3,9 +3,9 @@ title: Création d’une configuration - Configuration découplée
 description: Créez une configuration comme première étape de prise en main d’AEM as a Cloud Service en mode découplé.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -28,8 +28,8 @@ Un administrateur n’a besoin de créer une configuration qu’une seule fois, 
 1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils -> Général -> Explorateur de configurations**.
 1. Indiquez un **Titre** et un **Nom** pour votre configuration.
    * Le **Titre** doit être descriptif.
-   * Le **Nom** devient le nom du noeud dans le référentiel.
-      * Il est généré automatiquement en fonction du titre et adapté en fonction des [Conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md).
+   * Le **nom** devient le nom du nœud dans le référentiel.
+      * Il sera généré automatiquement en fonction du titre et ajusté selon les [conventions de nommage d’AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Il peut être adapté si nécessaire.
 1. Vérifiez les options suivantes :
    * **Modèles de fragment de contenu**
