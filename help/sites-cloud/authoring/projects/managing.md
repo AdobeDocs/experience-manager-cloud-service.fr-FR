@@ -3,25 +3,25 @@ title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '893'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 # Gestion de projets {#managing-projects}
 
-La console Projets vous permet d’organiser votre projet en regroupant les ressources dans une seule entité.
+Les projets vous permettent d’organiser votre projet en regroupant les ressources dans une seule entité.
 
-Dans le **Projets** , vous accédez à vos projets et vous y exécutez les actions suivantes :
+Dans la console **Projets**, vous pouvez accéder à vos projets et réaliser des actions sur ces derniers :
 
 ![Console Projets](/help/sites-cloud/authoring/assets/projects-console.png)
 
-Dans les projets, vous pouvez créer un projet, associer des ressources à votre projet et supprimer un projet ou des liens Ressource. Vous pouvez ouvrir une mosaïque pour afficher son contenu et ajouter des éléments à cette dernière. Cette rubrique décrit ces procédures.
+Dans Projets, vous pouvez créer un projet et lui associer des ressources, ou bien supprimer un projet ou des liens vers des ressources. Vous pouvez ouvrir une mosaïque pour afficher son contenu et ajouter des éléments à cette dernière. Cette rubrique décrit ces procédures.
 
 ## Création d’un projet {#creating-a-project}
 
-AEM fournit les modèles prêts à l’emploi suivants à utiliser lors de la création d’un projet :
+AEM fournit les modèles prêts à l’emploi suivants à utiliser lors de la création d’un projet :
 
 * Projet simple
 * Projet de média
@@ -38,7 +38,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
    ![Création d’un projet](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Définissez le **titre** et la **description**, puis ajoutez une **miniature** s’il y a lieu. Vous pouvez également ajouter ou supprimer des utilisateurs et définir le groupe auquel ils appartiennent. En outre, cliquez sur **Avancé** pour ajouter un nom utilisé dans l’URL.
+1. Définissez le **titre** et la **description**, puis ajoutez une **miniature** s’il y a lieu. Vous pouvez également ajouter ou supprimer des utilisateurs et utilisatrices et le groupe auquel ils appartiennent. En outre, cliquez sur **Avancé** pour ajouter un nom utilisé dans l’URL.
 
    ![Ajout des détails du projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -46,11 +46,11 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
 ### Association de ressources à un projet {#associating-resources-with-your-project}
 
-Comme les projets vous permettent de regrouper des ressources dans une seule entité, vous souhaitez associer des ressources à votre projet. Ces ressources sont appelées **Mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits à la section [Mosaïques de projet](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
+Comme les projets vous permettent de regrouper des ressources dans une seule entité, vous pouvez associer des ressources à votre projet. Ces ressources sont appelées **Mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits à la section [Mosaïques de projet](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-Pour associer des ressources à votre projet :
+Pour associer des ressources à votre projet :
 
-1. Ouvrez votre projet à partir du **Projets** console.
+1. Ouvrez votre projet à partir de la console **Projets**.
 1. Appuyez/cliquez sur **Ajouter une mosaïque** et sélectionnez la mosaïque à lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
 
    ![Ajout d’une mosaïque à un projet](/help/sites-cloud/authoring/assets/projects-add-tile.png)
@@ -65,9 +65,9 @@ Pour associer des ressources à votre projet :
 
 La méthode permettant de supprimer un projet à partir de la console est la même que celle employée pour supprimer une ressource liée de votre projet :
 
-1. Accédez à l’emplacement approprié :
+1. Accédez à l’emplacement concerné :
 
-   * Pour supprimer un projet, accédez au niveau supérieur de la **Projets** console.
+   * Pour supprimer un projet, accédez au niveau supérieur de la console **Projets**.
    * Pour supprimer un lien vers une ressource dans un projet, ouvrez le projet dans la console **Projets**.
 
 1. Activez le mode de sélection en cliquant sur **Sélectionner** et sélectionnez le projet ou le lien vers une ressource.
@@ -81,21 +81,21 @@ La méthode permettant de supprimer un projet à partir de la console est la mê
 
 ### Ajout d’éléments à une mosaïque {#adding-items-to-a-tile}
 
-Dans certaines mosaïques, vous pouvez ajouter plusieurs éléments. Par exemple, plusieurs workflows peuvent s’exécuter à la fois ou plusieurs expériences.
+Dans certaines mosaïques, vous pouvez ajouter plusieurs éléments. Par exemple, plusieurs workflows ou expériences peuvent s’exécuter à la fois.
 
-Pour ajouter des éléments à une mosaïque :
+Pour ajouter des éléments à une mosaïque, procédez comme suit :
 
 1. Dans la console **Projets**, accédez au projet, puis appuyez ou cliquez sur le chevron de la mosaïque à laquelle vous souhaitez ajouter un élément.
 
    ![Ajout d’un élément à une mosaïque](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Ajoutez un élément à la mosaïque comme vous le feriez lors de la création d’une mosaïque. Les mosaïques de projets sont décrites [ici](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Dans cet exemple, un autre workflow a été ajouté.
+1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Les mosaïques de projets sont décrites [ici](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Dans cet exemple, un autre workflow a été ajouté.
 
 ### Ouverture d’une mosaïque {#opening-a-tile}
 
 Vous pouvez afficher les éléments inclus dans une mosaïque actuelle ou modifier ou supprimer des éléments dans la mosaïque.
 
-Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
+Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
 1. Dans la console Projets, cliquez/appuyez sur les points de suspension (...) au bas de la carte.
 
@@ -127,11 +127,11 @@ Si l’icône est accompagnée d’une croix (x), elle affiche les projets inact
 
 ## Activation/désactivation de projets {#making-projects-inactive-or-active}
 
-Vous pouvez désactiver un projet si vous l’avez terminé, mais que vous souhaitez conserver les informations le concernant.
+Vous pouvez désactiver un projet que vous avez terminé, mais dont vous souhaitez conserver les informations.
 
-Pour rendre un projet inactif (ou principal) :
+Pour activer/désactiver un projet :
 
-1. Dans le **Projets** , ouvrez votre projet, puis recherchez **Informations sur le projet** mosaïque.
+1. Dans la console **Projets**, ouvrez votre projet, puis recherchez la mosaïque **Informations sur le projet**.
 
    >[!NOTE]
    >
