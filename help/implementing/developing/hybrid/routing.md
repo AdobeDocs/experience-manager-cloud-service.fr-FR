@@ -3,9 +3,9 @@ title: Routage du modèle de SPA
 description: Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ L’application est responsable du routage et est ensuite implémentée par les 
 
 ## Architecture {#architecture}
 
-Pour obtenir une description détaillée, voir [PageModelManager](blueprint.md#pagemodelmanager) du document SPA Plan directeur.
+Pour obtenir une description détaillée, consultez la section [PageModelManager](blueprint.md#pagemodelmanager) du document du plan directeur de la SPA.
 
 ## ModelRouter {#modelrouter}
 
@@ -31,7 +31,7 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 >[!CAUTION]
 >
->La version actuelle de `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée de Sling Model. Il ne prend pas en charge l’utilisation d’URL ou d’alias Vanity.
+>La version actuelle de `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée de Sling Model. Elle ne prend pas en charge l’utilisation d’URL de redirection ni d’alias.
 
 ## Contrat de routage {#routing-contract}
 
@@ -41,7 +41,7 @@ L’implémentation actuelle repose sur l’hypothèse que le projet de SPA util
 
 `ModelRouter` prend en charge le concept de routage de modèle en écoutant les appels `pushState` et `replaceState` pour récupérer au préalable les fragments de modèle. En interne, il déclenche le chargement de `PageModelManager` pour charger le modèle correspondant à une URL donnée, et lance un `cq-pagemodel-route-changed` que d’autres modules peuvent écouter.
 
-Par défaut, ce comportement est activé automatiquement. Pour la désactiver, le SPA doit effectuer le rendu de la propriété meta suivante :
+Par défaut, ce comportement est activé automatiquement. Pour le désactiver, la SPA doit effectuer le rendu de la propriété meta suivante :
 
 ```
 <meta property="cq:pagemodel_router" content="disabled"\>
