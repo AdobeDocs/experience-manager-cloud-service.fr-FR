@@ -4,9 +4,9 @@ description: Découvrez les différentes considérations relatives aux autorisat
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Si vous utilisez l’IMS pour définir l’appartenance à un groupe, ajoutez le
 
 Il est préférable de ne pas modifier directement les autorisations d’un groupe prêt à l’emploi. Vous pouvez plutôt créer votre ou vos propres groupes d’après le modèle de d’autorisations du groupe **Utilisateurs du DAM** et restreindre ensuite l’accès à différents **dossiers** dans AEM Assets.
 
-Pour obtenir des autorisations plus granulaires, utilisez la variable **Autorisations** dans AEM et mettez à jour le chemin à partir de `/content/dam` vers un chemin plus spécifique, c’est-à-dire : `/content/dam/mycontentfragments`.
+Pour définir des autorisations plus granulaires, utilisez la console **Autorisations** dans AEM et mettez à jour le chemin `/content/dam` en définissant un chemin plus spécifique, à savoir, `/content/dam/mycontentfragments`.
 
 Il peut être souhaitable de donner à ce groupe d’utilisateurs les autorisations permettant de créer et de modifier des fragments de contenu, mais pas de les supprimer. Pour vérifier et attribuer des autorisations de modification sans autorisation de suppression, consultez les [Considérations relatives à la suppression des fragments de contenu](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
