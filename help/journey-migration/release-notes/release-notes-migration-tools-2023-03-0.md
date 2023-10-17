@@ -3,9 +3,9 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.03.0
 feature: Release Information
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ La date de publication de l’outil de transfert de contenu version v2.0.16 est
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Le mappage des utilisateurs et utilisatrices a été rationnalisé et intégré à l’étape d’extraction de contenu. Aucune configuration n’est nécessaire et, par défaut, le mappage de l’utilisateur est effectué automatiquement lorsque l’utilisateur lance l’extraction de contenu. L’utilisateur a la possibilité de désactiver le mappage des utilisateurs si nécessaire. En savoir plus [ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=fr#user-mapping-detail)
+* Le mappage des utilisateurs et utilisatrices a été rationnalisé et intégré à l’étape d’extraction de contenu. Aucune configuration n’est nécessaire et le mappage utilisateur est effectué automatiquement par défaut lorsque l’utilisateur ou l’utilisatrice lance l’extraction de contenu. L’utilisateur ou l’utilisatrice a la possibilité de désactiver le mappage utilisateur en cas de besoin. En savoir plus [ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=fr#user-mapping-detail)
 * L’étape de précopie à l’aide d’[AzCopy](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) a été intégrée à l’outil de transfert de contenu pour accélérer considérablement les extractions de contenu. La précopie est automatiquement configurée et installée lorsque cette version de l’outil de transfert de contenu est installée. Par défaut, lorsque l’extraction est lancée, la précopie s’exécute automatiquement pour les jeux de migration de plus de 200 Go. L’utilisateur ou l’utilisatrice a la possibilité de la désactiver si nécessaire. En savoir plus [ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr)
 * L’outil de transfert de contenu peut désormais être utilisé sur les serveurs Windows.
 
