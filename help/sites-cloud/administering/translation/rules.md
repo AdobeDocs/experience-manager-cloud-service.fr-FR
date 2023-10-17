@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1291'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Les règles de traduction identifient le contenu à traduire pour les pages, les
 
 >[!TIP]
 >
->Si vous commencez à traduire du contenu, voir [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous débutez dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour celles et ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 ## Fragments de contenu et règles de traduction {#content-fragments}
 
@@ -27,7 +27,7 @@ Si l’option **Activer les champs de modèle de contenu pour la traduction** es
 
 Si vous souhaitez utiliser des règles de traduction pour traduire vos fragments de contenu, l’option **Activer les champs de modèle de contenu pour la traduction** dans la configuration de la structure d’intégration de traduction doit être désactivée et vous devez suivre les étapes décrites ci-dessous pour créer vos règles.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Les pages et les ressources sont représentées sous forme de nœuds dans le référentiel JCR. Le contenu qui est extrait est constitué d’une ou plusieurs valeurs de propriété des nœuds. Les règles de traduction identifient les propriétés qui contiennent le contenu à extraire.
 
@@ -48,7 +48,7 @@ Les règles comprennent les informations suivantes :
 
 Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants de texte sur vos pages. La règle peut identifier le nœud `/content` et la propriété `text` du composant `core/wcm/components/text/v2/text`.
 
-Une [console](#translation-rules-ui) a été ajoutée pour configurer les règles de traduction. Les définitions de l’interface utilisateur renseignent le fichier à votre place.
+Une [console](#translation-rules-ui) a été ajoutée pour configurer les règles de traduction. Les définitions de l’interface utilisateur renseignent le fichier pour vous.
 
 Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Traduction de contenu pour les sites multilingues](overview.md).
 
@@ -157,13 +157,13 @@ Une console est également disponible pour configurer les règles de traduction.
 
 Pour y accéder, procédez comme suit :
 
-1. Accédez à **Outils** puis **Général**.
+1. Accédez à **Outils**, puis **Général**.
 
 1. Sélectionnez **Configuration de traduction**.
 
 Dans l’interface utilisateur des règles de traduction, vous pouvez effectuer les opérations suivantes :
 
-1. **Ajouter un contexte**, qui vous permet d’ajouter un chemin.
+1. **Ajouter du contexte**, ce qui permet d’ajouter un chemin d’accès.
 
    ![Ajouter le contexte de traduction](../assets/add-translation-context.png)
 
@@ -184,9 +184,9 @@ Vous pouvez modifier quatre attributs via l’interface utilisateur :
 
 ### isDeep {#isdeep}
 
-**`isDeep`** s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. Si la valeur est false, il vérifie uniquement le noeud actif.
+**`isDeep`** s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. Si la valeur est false, il vérifie uniquement le nœud actif.
 
-Par exemple, les noeuds enfants sont ajoutés à une tâche de traduction même lorsque le noeud parent possède la propriété . `draftOnly` Définissez cette variable sur true pour marquer le contenu du brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
+Par exemple, les nœuds enfants sont ajoutés à une tâche de traduction même lorsque la propriété `draftOnly` du nœud parent est définie sur true pour marquer le contenu comme étant un brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
 Dans l’éditeur, vous pouvez cocher/désélectionner **ls Deep** dans l’onglet **Filtres**.
 
@@ -237,7 +237,7 @@ Si vous modifiez le fichier `translation_rules.xml`, conservez une copie de sauv
 
 >[!NOTE]
 >
->Après avoir créé le module de contenu, recréez-le chaque fois que vous modifiez le fichier.
+>Après avoir créé le package de contenu, recréez-le chaque fois que vous modifiez le fichier.
 
 ## Exemple de fichier de règles de traduction {#example-translation-rules-file}
 
