@@ -3,9 +3,9 @@ title: Exécution de l’outil de transfert de contenu sur une instance de publi
 description: Exécution de l’outil de transfert de contenu sur une instance de publication
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Suivez l’approche recommandée, comme décrit ci-dessous :
 
 * Un seul nœud de publication doit être migré. Il doit être supprimé de l’équilibreur de charge avant de commencer l’extraction.
 
-* Lors de l’ingestion pour la publication, le niveau de publication ne sera pas réduit (contrairement à l’auteur).
+* Lors de l’ingestion pour la publication, le niveau de publication ne sera pas réduit (contrairement à l’instance de création).
 
   >[!IMPORTANT]
-  >Par mesure de précaution, évitez les opérations d’écriture initiées par l’utilisateur, telles que :
+  >Par mesure de précaution, évitez les opérations d’écriture initiées par l’utilisateur ou l’utilisatrice, telles que les suivantes :
   > * La distribution de contenu de la création dans AEM as a Cloud Service à la publication dans cet environnement
   > * La synchronisation des utilisateurs entre les instances de publication
