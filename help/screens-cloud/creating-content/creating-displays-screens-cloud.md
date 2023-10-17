@@ -3,9 +3,9 @@ title: Création et gestion des affichages dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des affichages dans Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 Une fois que vous avez publié votre canal, il est temps de créer votre affichage dans le fournisseur de services Screens.
 
-Un affichage est un groupe virtuel d’écrans généralement positionnés les uns à côté des autres. L’affichage est généralement permanent par rapport à une installation. Ce contenu d’objet est ce que les auteurs utilisent et font toujours référence à un affichage logique plutôt qu’à leurs parties de compteur physiques.
+Un affichage est un groupe virtuel d’écrans généralement positionnés les uns à côté des autres. L’affichage est généralement permanent par rapport à une installation. Les auteurs et autrices utilisent ce contenu d’objet et se réfèrent toujours à un affichage logique plutôt qu’à leurs contreparties physiques.
 
 ## Objectif {#objective}
 
@@ -128,7 +128,7 @@ Toutes les opérations de dossier sont accessibles via la barre d’actions de s
 
 1. Dans la vue d’inventaire, sélectionnez le dossier enfant que vous souhaitez supprimer et assurez-vous qu’il est vide.
 
-1. Cliquez sur **Supprimer** dans la barre d’actions de sélection. L’action est désactivée si le dossier n’est pas vide.
+1. Cliquez sur le bouton **Supprimer** dans la barre d’actions de sélection. L’action est désactivée si le dossier n’est pas vide.
 
 
 ## Et après ? {#whats-next}
