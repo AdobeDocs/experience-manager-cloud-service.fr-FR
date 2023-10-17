@@ -2,10 +2,11 @@
 title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.06.0
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.06.0
 feature: Release Information
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
-workflow-type: tm+mt
+exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +18,12 @@ Cette page présente les notes de mise à jour pour les outils de migration dans
 
 ### Date de publication {#release-date-ctt}
 
-La date de publication de l’outil de transfert de contenu version v2.0.20 est le 08 juin 2023.
+La date de publication de l’outil de transfert de contenu version v2.0.20 est le 8 juin 2023.
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Un nouvel outil de migration - Content Transformer (CT) a été intégré à l’outil de transfert de contenu (CTT) avec cette version. Le transformateur de contenu peut automatiquement détecter et corriger les problèmes liés au contenu signalés par [Analyseur des bonnes pratiques (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=fr) avant de migrer le contenu de votre mise en oeuvre AEM actuelle (On-premise ou Managed Services) vers AEM as a Cloud Service.
-Les avantages du transformateur de contenu sont les suivants :
-   * Fail-safe : un package est créé par Content Transformer chaque fois qu’il apporte une modification au référentiel pour résoudre les problèmes. Si nécessaire, vous pouvez revenir à l’état précédent en installant le package.
-   * Faciles à utiliser : Content Transformer a été intégré à l’outil de transfert de contenu et s’accompagne d’une interface utilisateur simple et intuitive.
-   * Gagne du temps : lorsque vous rencontrez un grand nombre de problèmes de contenu appartenant à une catégorie de modèle, vous pouvez tous les résoudre en quelques clics seulement à l’aide du transformateur de contenu, ce qui réduit considérablement le temps et la complexité de migration.
+* Un nouvel outil de migration, le Transformateur de contenu (CT) a été intégré à l’outil de transfert de contenu (CTT) dans cette version. Le Transformateur de contenu peut détecter et corriger automatiquement les problèmes liés au contenu tels que signalés par l’[Analyseur des bonnes pratiques (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=fr) avant de migrer le contenu de votre mise en œuvre AEM actuelle (On-premise ou Managed Services) vers AEM as a Cloud Service.
+Les avantages du Transformateur de contenu sont les suivants :
+   * Sûr : un package est créé par le Transformateur de contenu chaque fois qu’il apporte une modification au référentiel pour résoudre les problèmes. Si nécessaire, vous pouvez revenir à l’état précédent en installant le package.
+   * Facile à utiliser : le Transformateur de contenu a été intégré à l’outil de transfert de contenu et s’accompagne d’une interface utilisateur simple et intuitive.
+   * Permet de gagner du temps : lorsque vous rencontrez un grand nombre de problèmes de contenu appartenant à une catégorie de modèle, vous pouvez tous les résoudre en quelques clics seulement à l’aide du Transformateur de contenu, afin de réduire de manière significative la durée du processus et la complexité de la migration.
