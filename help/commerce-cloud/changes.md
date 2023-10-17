@@ -3,15 +3,15 @@ title: Modifications notables apportées au module complémentaire CIF (Commerce
 description: Modifications notables de Commerce Integration Framework (CIF) par rapport aux anciennes versions de CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Modifications notables apportées au module complémentaire CIF (Commerce Integration Framework){#notable-changes}
 
-Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités de gestion pour vos projets AEM. Pour en savoir plus sur ces fonctionnalités, suivez le lien [modifications apportées à Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités de gestion pour vos projets AEM. Pour en savoir plus sur ces fonctionnalités, consultez le lien menant aux [modifications apportées à Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 Ce document souligne les différences importantes entre le module complémentaire CIF (Commerce Integration Framework) et les anciennes versions du CIF, connues principalement sous le nom de CIF Classic (Quickstart) et CIF Open-source.
 
@@ -63,4 +63,4 @@ AEM effectue le rendu à la volée des expériences de catalogue de produits à 
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’utilisation de CIF avec AEM Managed Service ou AEM On-premise, voir [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Pour obtenir de la documentation supplémentaire sur l’utilisation de CIF avec AEM Managed Service ou AEM On-Premise, voir [framework d’intégration de Commerce (Commerce Integration Framework, CIF)](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
