@@ -3,9 +3,9 @@ title: Raccourcis clavier pour la modification de pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clav
 | Mode d’**édition** | `Ctrl-z` | [Annuler la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |
-|  | `Ctrl-c` | Copie de paragraphes sélectionnés |
-|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaissent pas dans l’interface utilisateur tant qu’ils ne sont pas collés). |
+|  | `Ctrl-c` | Copier les paragraphes sélectionnés |
+|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaissent pas dans l’interface utilisateur tant qu’ils ne sont pas collés) |
 |  | `Ctrl-v` | Coller les paragraphes précédemment coupés ou copiés |
 |  | `Ctrl-Backspace` | Supprimer le(s) paragraphe(s) sélectionné(s) |
 | Mode d’**édition** – Éditeur de texte enrichi | `Ctrl-b` | Gras |
