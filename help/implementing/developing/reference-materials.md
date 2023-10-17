@@ -1,11 +1,11 @@
 ---
 title: Documents de référence sur les API
-description: AEM dispose d’API complètes et puissantes que vous pouvez utiliser pour votre projet d’expérience numérique.
+description: AEM dispose d’API complètes et puissantes que vous pouvez utiliser pour votre projet d’expérience digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '664'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
