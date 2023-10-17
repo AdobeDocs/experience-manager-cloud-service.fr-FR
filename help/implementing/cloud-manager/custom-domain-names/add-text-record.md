@@ -3,9 +3,9 @@ title: Ajout d’un enregistrement TXT
 description: Découvrez comment ajouter un enregistrement TXT pour ajouter un nom de domaine personnalisé à l’aide de Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Lorsque vous lancez la vérification de domaine, Cloud Manager vous donne le no
 1. Connectez-vous à votre hôte de domaine et consultez la section des enregistrements DNS.
 1. Ajoutez `_aemverification.[yourdomainname]` en tant que valeur **Nom** et ajoutez la valeur TXT telle qu’elle apparaît.
 
-Consultez les exemples de ce tableau.
+Consultez les exemples dans ce tableau.
 
 | Domaine | Nom | Valeur TXT |
 |--- |--- |---|
