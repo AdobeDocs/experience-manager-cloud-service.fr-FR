@@ -3,9 +3,9 @@ title: Configuration du connecteur de traduction pour le contenu découplé
 description: Découvrez comment connecter AEM à un service de traduction.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1231'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Si vous choisissez un autre fournisseur, votre administrateur doit installer le 
 >
 >Si vous choisissez d’utiliser le connecteur Microsoft Translator à des fins de test, il n’est pas nécessaire d’effectuer les étapes des deux sections suivantes : [Création d’une configuration d’intégration de traduction](#create-config) et [Association de la configuration à votre contenu.](#associate) Il est toutefois conseillé de lire ces sections afin de vous familiariser avec les étapes de configuration de votre connecteur préféré.
 >
->La licence d’évaluation du connecteur Microsoft Translator n’est pas destinée à des fins de production et si vous décidez de lui accorder une licence, l’administrateur système doit suivre les étapes présentées dans la section [Ressources supplémentaires](#additional-resources) à la fin de ce document afin que vous puissiez configurer cette licence.
+>La licence d’évaluation du connecteur Microsoft Translator n’est pas destinée à la production. Si vous décidez de vous procurer une licence, l’administrateur ou l’administratrice système doit suivre les étapes présentées dans la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour configurer la licence.
 
 ## Création d’une configuration d’intégration de traduction {#create-config}
 
@@ -78,7 +78,7 @@ Pour créer une configuration de traduction :
 
 1. Fournissez les informations suivantes dans les champs requis, puis cliquez ou appuyez sur **Créer**.
    1. Sélectionnez **Type de configuration** dans la liste déroulante. Sélectionnez **Intégration de traduction** dans la liste.
-   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la variable **Cloud Services** console et dans les listes déroulantes des propriétés de page.
+   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud**, ainsi que dans les listes déroulantes de propriétés de la page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
 
    ![Créer une configuration de traduction](assets/create-translation-configuration.png)
@@ -99,7 +99,7 @@ Pour créer une configuration de traduction :
    1. **Traduire les métadonnées** : cochez cette option pour traduire les métadonnées des ressources.
    1. **Traduire les balises** : cochez cette case pour traduire les balises associées à la ressource.
    1. **Exécuter automatiquement la traduction** : cochez cette propriété si vous souhaitez que les traductions soient automatiquement envoyées à votre service de traduction.
-   1. **Désactiver Traduction uniquement des champs mis à jour** - Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. La mise à jour de votre projet de traduction est abordée ultérieurement dans le parcours.
+   1. **Désactiver Traduction uniquement des champs mis à jour** - Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. La mise à jour de votre projet de traduction est traitée ultérieurement dans le parcours.
    1. **Activer les champs de modèle de contenu pour la traduction** - Cochez cette option pour que la configuration de traduction reconnaisse automatiquement les champs des modèles de contenu en fonction de l’indicateur **Traduisible**.
 
 1. Appuyez et cliquez sur **Enregistrer et fermer**.
