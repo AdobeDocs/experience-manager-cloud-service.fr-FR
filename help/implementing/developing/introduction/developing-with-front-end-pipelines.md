@@ -3,16 +3,16 @@ title: Développer des sites avec le pipeline front-end
 description: Grâce au pipeline front-end, les développeurs et développeuses front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certains éléments particuliers du processus de création front-end qui doivent être pris en compte.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1155'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
 # Développer des sites avec le pipeline front-end {#developing-site-with-front-end-pipeline}
 
-[Grâce au pipeline front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit le fonctionnement de ce processus, ainsi que certaines considérations à prendre en compte pour vous permettre de tirer pleinement parti de ce processus.
+[Grâce au pipeline front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit le fonctionnement de ce processus, ainsi que certaines considérations à prendre en compte pour tirer pleinement parti de ce processus.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 Tout comme l’[environnement de création full-stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) le pipeline front-end possède son propre environnement. Les développeurs et développeuses disposent d’une certaine flexibilité dans ce pipeline tant que le contrat de création front-end suivant est respecté.
 
-Le pipeline front-end requiert le projet front-end Node.js pour utiliser la variable `build` directive de script pour générer la version déployée par le pipeline front-end. C’est-à-dire que Cloud Manager utilise la commande `npm run build` pour générer le projet déployable dans le dossier `dist`.
+Le pipeline front-end requiert le projet front-end Node.js pour utiliser la directive de script `build` afin de générer la version déployée par le pipeline front-end. C’est-à-dire que Cloud Manager utilise la commande `npm run build` pour générer le projet déployable dans le dossier `dist`.
 
 Le contenu du dossier `dist` est ce qui est finalement déployé vers AEM as a Cloud Service à partir du pipeline Cloud Manager.
 
@@ -58,7 +58,7 @@ Les étapes suivantes sont généralement recommandées lorsqu’il est nécessa
 
 1. L’équipe back-end configure d’abord un environnement de développement avec la nouvelle sortie HTML et/ou JSON.
    1. Par le biais du pipeline de pile complète, ils déploient le code nécessaire pour effectuer le rendu de la nouvelle sortie HTML et/ou JSON souhaitée.
-   1. S’il s’agit d’un environnement auquel l’équipe front-end n’avait pas auparavant accès, les étapes suivantes doivent être exécutées.
+   1. S’il s’agit d’un environnement auquel l’équipe front-end n’avait pas auparavant accès, les étapes suivantes doivent être effectuées.
       1. URL : l’équipe front-end doit connaître l’URL de cet environnement de développement.
       1. ACL : l’équipe front-end doit disposer d’un utilisateur AEM local disposant de droits similaires à ceux des « Contributeurs ».
       1. Git : l’équipe front-end doit disposer d’un emplacement Git distinct pour le module front-end qui cible spécifiquement cet environnement de développement.
@@ -68,7 +68,7 @@ Les étapes suivantes sont généralement recommandées lorsqu’il est nécessa
    1. Comme d’habitude, à développer localement :
       1. La commande `npx aem-site-theme-builder proxy` exécutée dans le module front-end démarre un serveur proxy permettant de demander le contenu d’un environnement AEM, tout en remplaçant les fichiers CSS et JS du module front-end par ceux du dossier local `dist`.
       1. La configuration de la variable `AEM_URL` dans le fichier caché `.env` permet de contrôler à partir de quel environnement AEM le serveur proxy local consomme le contenu.
-      1. Modifier la valeur de ceci `AEM_URL` vous permet donc de basculer entre les environnements de production et de développement pour ajuster le CSS et JS afin qu’il s’adapte aux deux environnements.
+      1. La modification de la valeur de l’`AEM_URL` permet donc de basculer entre les environnements de production et de développement, afin d’ajuster les CSS et JS de sorte qu’ils s’adaptent aux deux environnements.
       1. Il doit fonctionner à la fois avec l’environnement de développement qui effectue le rendu de la nouvelle sortie ainsi qu’avec l’environnement de production qui effectue le rendu de l’ancienne sortie.
    1. Le travail front-end est terminé lorsque le module front-end mis à jour fonctionne pour les deux environnements et est déployé sur les deux.
 1. L’équipe back-end peut ensuite mettre à jour l’environnement de production en déployant le code qui effectue le rendu de la nouvelle sortie HTML et/ou JSON via le pipeline de pile complète.
