@@ -3,9 +3,9 @@ title: Gestion des expériences de catalogue de produits par étapes
 description: Découvrez comment gérer les expériences de catalogue de produits par étapes.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Ce document vous aide à comprendre comment gérer l’expérience du catalogue 
 
     >[!REMARQUE]
     >
-    >Cette fonctionnalité est disponible uniquement avec Adobe Commerce ou Cloud Edition et les connecteurs tiers qui prennent en charge l’authentification par jeton. Voir [Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=fr) pour plus d’informations.
+    >Cette fonctionnalité est disponible uniquement avec Adobe Commerce ou Cloud Edition et les connecteurs tiers qui prennent en charge l’authentification par jeton. Voir [Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=fr) pour plus d’informations.
 
 Tout d’abord, voyons comment les auteurs peuvent accéder aux données des produits échelonnées avec le CIF.
 
