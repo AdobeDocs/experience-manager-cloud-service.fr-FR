@@ -4,9 +4,9 @@ description: Migration de la configuration Dispatcher d’AMS vers AEM as a Clou
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
 source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1451'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ La configuration Apache et Dispatcher dans AEM as a Cloud Service est assez simi
 
 * Dans AEM as a Cloud Service, certaines directives Apache peuvent ne pas être utilisées (par exemple, `Listen` ou `LogLevel`)
 * Dans AEM as a Cloud Service, seules certaines parties de la configuration Dispatcher peuvent être placées dans les fichiers d’inclusion et les noms qui leur sont donnés sont importants. Par exemple, les règles de filtrage que vous souhaitez réutiliser sur différents hôtes doivent être placées dans un fichier nommé `filters/filters.any`. Consultez la page de référence pour plus d’informations.
-* Dans AEM as a Cloud Service, il existe une validation supplémentaire pour interdire les règles de filtrage écrites avec `/glob` de façon à éviter les problèmes de sécurité. Parce que `deny *` est utilisé plutôt que `allow *` (qui ne peut pas être utilisé), les clients bénéficient de l’exécution locale de Dispatcher et de la vérification par tâtonnements, en examinant les journaux pour savoir exactement quels chemins sont bloqués par les filtres Dispatcher afin de pouvoir les ajouter.
+* Dans AEM as a Cloud Service, il existe une validation supplémentaire pour interdire les règles de filtrage écrites avec `/glob` de façon à éviter les problèmes de sécurité. Puisque `deny *` est utilisé plutôt que `allow *` (qui ne peut pas être utilisé), les clients et les clientes auront avantage à exécuter le Dispatcher localement et à procéder par tâtonnements, en examinant les journaux pour savoir exactement quels chemins sont bloqués par les filtres Dispatcher afin de pouvoir les ajouter.
 
-## Instructions relatives à la migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
+## Instructions relatives à la migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
 
 La structure de configuration Dispatcher présente des différences entre Managed Services et AEM as a Cloud Service. Vous trouverez ci-dessous un guide détaillé sur la migration de la configuration Dispatcher d’AMS version 2 vers AEM as Cloud Service.
 
@@ -32,11 +32,11 @@ que vous disposez d’une archive avec une structure similaire à celle décrite
 ### Extraire l’archive et supprimer tout préfixe
 
 Extrayez l’archive dans un dossier et assurez-vous que les noms des sous-dossiers immédiats commencent par `conf`, `conf.d`,
-`conf.dispatcher.d` et `conf.modules.d`. Si ce n’est pas le cas, déplacez-les vers le haut de la hiérarchie.
+`conf.dispatcher.d` et `conf.modules.d`. Si tel n’est pas le cas, déplacez-les dans la hiérarchie.
 
 ### Supprimer les sous-dossiers et fichiers non utilisés
 
-Suppression de sous-dossiers `conf` et `conf.modules.d`, et les fichiers correspondants `conf.d/*.conf`.
+Supprimez les sous-dossiers `conf` et `conf.modules.d`, ainsi que les fichiers correspondants `conf.d/*.conf`.
 
 ### Supprimer tous les hôtes virtuels non publiés
 
@@ -64,7 +64,8 @@ Entrez dans le répertoire `conf.d/rewrites`.
 Supprimez tout fichier nommé `base_rewrite.rules` et `xforwarded_forcessl_rewrite.rules`, et n’oubliez pas de
 supprimer les instructions `Include` dans les fichiers d’hôtes virtuels qui y font référence.
 
-If `conf.d/rewrites` contient maintenant un seul fichier. Il doit être renommé en `rewrite.rules` et n’oubliez pas d’adapter la variable `Include` des instructions se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
+Si `conf.d/rewrites` contient maintenant un seul fichier, il doit être renommé `rewrite.rules`.
+De plus, veillez à adapter également les instructions `Include` se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être
 placé dans l’instruction `Include` qui y fait référence dans les fichiers d’hôtes virtuels.
@@ -76,7 +77,8 @@ Entrez dans le répertoire `conf.d/variables`.
 Supprimez tout fichier nommé `ams_default.vars` et n’oubliez pas de supprimer les instructions `Include` des fichiers d’hôtes
 virtuels qui y font référence.
 
-If `conf.d/variables` contient maintenant un seul fichier. Il doit être renommé en `custom.vars` et n’oubliez pas d’adapter la variable `Include` des instructions se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
+Si `conf.d/variables` contient maintenant un seul fichier, il doit être renommé `custom.vars`.
+De plus, veillez à adapter également les instructions `Include` se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être
 placé dans l’instruction `Include` qui y fait référence dans les fichiers d’hôtes virtuels.
@@ -125,11 +127,11 @@ Supprimez tout fichier portant le préfixe `ams_`.
 
 Si `conf.dispatcher.d/cache` est maintenant vide, copiez le fichier `conf.dispatcher.d/cache/rules.any`
 de la configuration Dispatcher standard dans ce dossier. La configuration Dispatcher
-standard se trouve dans le dossier `src` de ce SDK. N’oubliez pas d’adapter également les
-instructions `$include` faisant référence aux fichiers de règles `ams_*_cache.any` dans les
-fichiers de fermes.
+standard se trouve dans le dossier `src` de ce SDK. N’oubliez pas d’adapter également les instructions `$include` faisant référence aux fichiers de règles `ams_*_cache.any` dans les fichiers de batterie.
 
-Si au lieu `conf.dispatcher.d/cache` contient maintenant un seul fichier avec le suffixe `_cache.any`, il doit être renommé en `rules.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
+En revanche, si `conf.dispatcher.d/cache` contient maintenant un seul fichier portant le suffixe `_cache.any`,
+il doit être renommé `rules.any`. De plus, veillez à adapter les instructions `$include`
+se rapportant à ce fichier dans les fichiers farm.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
 doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
@@ -152,7 +154,9 @@ Entrez dans le répertoire `conf.dispatcher.d/clientheaders`.
 
 Supprimez tout fichier portant le préfixe `ams_`.
 
-If `conf.dispatcher.d/clientheaders` contient maintenant un seul fichier avec le suffixe `_clientheaders.any`, il doit être renommé en `clientheaders.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
+Si `conf.dispatcher.d/clientheaders` contient maintenant un seul fichier portant le suffixe `_clientheaders.any`,
+il doit être renommé `clientheaders.any`. De plus, veillez à adapter également les instructions `$include`
+se rapportant à ce fichier dans les fichiers farm.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
 doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
@@ -179,8 +183,9 @@ Entrez dans le répertoire `conf.dispatcher.d/filters`.
 
 Supprimez tout fichier portant le préfixe `ams_`.
 
-If `conf.dispatcher.d/filters` contient maintenant un seul fichier qui doit être renommé
-`filters.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
+Si `conf.dispatcher.d/filters` contient maintenant un seul fichier, il doit être renommé
+`filters.any`. De plus, veillez à adapter également les instructions `$include` se rapportant à ce 
+fichier dans les fichiers farm.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
 doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
@@ -222,8 +227,9 @@ Renommez le répertoire `conf.dispatcher.d/vhosts` en `conf.dispatcher.d/virtual
 
 Supprimez tout fichier portant le préfixe `ams_`.
 
-If `conf.dispatcher.d/virtualhosts` contient maintenant un seul fichier qui doit être renommé
-`virtualhosts.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
+Si `conf.dispatcher.d/virtualhosts` contient maintenant un seul fichier, il doit être renommé
+`virtualhosts.any`. De plus, veillez à adapter également les instructions `$include` se rapportant à ce 
+fichier dans les fichiers farm.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
 doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
@@ -286,6 +292,6 @@ Cela démarrera le conteneur et exposera Apache sur le port local 8080.
 
 ### Utiliser votre nouvelle configuration Dispatcher
 
-Félicitations. Si le programme de validation ne signale plus aucun problème et que le conteneur Docker démarre sans erreur ni avertissement, vous êtes prêt à déplacer votre configuration vers un sous-répertoire `dispatcher/src` de votre référentiel git.
+Félicitations. Si le programme de validation ne signale plus aucun problème et que le conteneur Docker démarre sans erreur ni avertissement, tout est prêt pour que vous puissiez déplacer votre configuration vers un sous-répertoire `dispatcher/src` de votre référentiel git.
 
-**Les clients qui utilisent la version 1 de la configuration AMS Dispatcher doivent contacter le service clientèle pour les aider à migrer à la version 2 afin de pouvoir suivre les instructions ci-dessus.**
+**Les clientes et les clients qui utilisent la version 1 de la configuration AMS Dispatcher doivent contacter le service clientèle pour les aider à migrer à la version 2 afin de pouvoir suivre les instructions ci-dessus.**
