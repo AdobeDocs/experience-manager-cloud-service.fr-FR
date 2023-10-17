@@ -3,9 +3,9 @@ title: Comment configurer les filtres de recherche pour la boîte de réception�
 description: Découvrez comment configurer des filtres de recherche pour les éléments contenus dans la boîte de réception.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
