@@ -3,9 +3,9 @@ title: Déploiement de votre thème personnalisé
 description: Découvrez comment déployer le thème du site à l’aide du pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1023'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Félicitations ! Vous avez terminé le parcours de création rapide de site AEM
 * Comment personnaliser et tester un thème à l’aide du contenu AEM proxy et valider ces modifications dans le Git d’AEM.
 * Comment déployer la personnalisation front-end à l’aide du pipeline.
 
-Vous êtes maintenant prêt à personnaliser les thèmes de votre propre site AEM. Toutefois, avant de commencer à créer différents flux de travail à l’aide de plusieurs pipelines front-end, consultez le document . [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Il peut vous aider à tirer le meilleur parti de votre développement front-end en :
+Vous êtes maintenant prêt à personnaliser les thèmes de votre propre site AEM. Toutefois, avant de commencer à créer différents flux de travail à l’aide de plusieurs pipelines front-end, consultez le document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Cela vous aidera à tirer le meilleur parti de votre développement front-end en :
 
 * Maintenant une source unique de vérité.
 * Maintenant une séparation des préoccupations.
@@ -105,8 +105,8 @@ Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondisse
 * [Utilisation du rail Site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) - Découvrez les puissantes fonctionnalités du rail Site pour vous aider à personnaliser et gérer facilement votre thème de site, y compris le téléchargement des sources de thèmes et la gestion des versions de thèmes.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) - Si vous avez déjà une bonne compréhension d’AEM, vous pouvez consulter directement notre documentation technique détaillée.
 * [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
-* [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=fr) - Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Consultez ce document pour plus d’informations sur ces rôles et sur la manière de les administrer.
-* [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Si vous avez besoin d’informations supplémentaires sur la configuration et la gestion des référentiels Git pour votre projet AEMaaCS, consultez ce document.
+* [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=fr) - Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Reportez-vous à ce document pour plus de détails sur ces rôles et sur la manière de les administrer.
+* [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Si vous avez besoin d’informations supplémentaires sur la configuration et la gestion des référentiels Git pour votre projet AEMaaCS, reportez-vous à ce document.
 * [Configuration du pipeline CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Pour plus d’informations sur la configuration des pipelines, à la fois pile complète et front-end, consultez ce document.
 * [Modèle de site standard d’AEM](https://github.com/adobe/aem-site-template-standard) - Il s’agit du référentiel GitHub du modèle de site standard d’AEM.
 * [Thème de site AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - Il s’agit du référentiel GitHub du thème de site AEM.
@@ -117,4 +117,4 @@ Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondisse
 * [Parcours d’intégration](/help/journey-onboarding/overview.md) - Ce guide constitue votre point de départ pour vous assurer que vos équipes sont configurées et ont accès à AEM as a Cloud Service.
 * [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) - Consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.
 * [Documentation relative à l’administration du site](/help/sites-cloud/administering/site-creation/create-site.md) - Consultez la documentation technique sur la création de site pour plus d’informations sur les fonctionnalités de l’outil de création rapide de site.
-* [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Ce document décrit certaines considérations à prendre en compte afin que vous puissiez tirer pleinement parti du processus de développement front-end à l’aide du pipeline front-end.
+* [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Ce document décrit certaines considérations à prendre en compte pour tirer pleinement parti du processus de développement front-end à l’aide du pipeline front-end.
