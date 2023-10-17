@@ -1,11 +1,11 @@
 ---
 title: Création de composants
-description: Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages web. Consultez cette page pour en savoir plus sur la création de canaux et de composants de rendu.
+description: Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages web. Consultez cette page pour en savoir plus sur la création de canaux et le rendu de composants.
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ Les composants AEM servent à stocker, mettre en forme et générer le rendu du 
 
 ## Création de canaux {#authoring-channels}
 
-Le canal est l’objet central du contenu diffusé à un ensemble d’affichages. Par conséquent, un auteur de contenu ouvre généralement un canal dans l’éditeur pour ajouter ou modifier du contenu. Étant donné que le canal est un nœud ***cq:Page***, il applique le même schéma UX traditionnel pour ajouter et modifier des composants dans le canal.
+Le canal est l’objet central du contenu diffusé à un ensemble d’affichages. Par conséquent, un auteur ou une autrice de contenu ouvre généralement un canal dans l’éditeur pour ajouter ou modifier du contenu. Étant donné que le canal est un nœud ***cq:Page***, il applique le même schéma UX traditionnel pour ajouter et modifier des composants dans le canal.
 
-Cependant, dans la mesure où les composants d’un canal sont généralement rendus en mode Plein écran, l’expérience de création est dégradée lorsque vous essayez de modifier des composants uniques ou de composer de nouvelles séquences. Par conséquent, le canal dépend des sélecteurs pour effectuer le rendu des différentes vues des composants. L’environnement de création utilise le sélecteur d’édition pour activer le rendu personnalisé du canal.
+Cependant, dans la mesure où les composants d’un canal sont généralement rendus en mode Plein écran, l’expérience de création est dégradée lorsque vous essayez de modifier des composants uniques ou de composer de nouvelles séquences. Par conséquent, le canal dépend des sélecteurs pour effectuer le rendu des différentes vues des composants. L’environnement de création utilise le sélecteur de modification pour activer le rendu de canal personnalisé.
 
 Par exemple, `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
@@ -32,7 +32,7 @@ Pour garantir une création correcte, les composants doivent fournir les deux re
 | *my-component/my-component.html* | rendu de production |
 | *my-component/edit.html* | modification du rendu dans une vue plus petite |
 
-Les composants intégrés utilisent les catégories de bibliothèques clientes suivantes :
+Les composants intégrés utilisent les catégories de bibliothèques clientes suivantes :
 
 | **Component** | **Bibliothèque cliente** |
 |---|---|
