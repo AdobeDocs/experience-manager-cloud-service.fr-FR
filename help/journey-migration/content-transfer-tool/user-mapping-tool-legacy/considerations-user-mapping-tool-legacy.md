@@ -5,9 +5,9 @@ exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
 source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '593'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
@@ -15,33 +15,33 @@ ht-degree: 12%
 
 >[!INFO]
 >
->Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Mappage des utilisateurs et utilisatrices et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Cas exceptionnels {#exceptional-cases}
 
 Les cas spécifiques suivants sont consignés :
 
-1. Si un utilisateur ne dispose d’aucune adresse électronique dans la variable `profile/email` de leur champ *jcr* , l’utilisateur ou le groupe en question est migré, mais n’est pas mappé. Cette règle est appliquée même si l’adresse électronique est utilisée comme nom d’utilisateur pour la connexion.
+1. Si un utilisateur ou une utilisatrice n’a pas d’adresse e-mail dans le champ `profile/email` de son nœud *jcr*, l’utilisateur, l’utilisatrice ou le groupe en question est migré, mais pas mappé. Cette règle s’applique même si l’adresse e-mail est utilisée comme nom d’utilisateur pour la connexion.
 
-1. Si un courrier électronique est introuvable sur le système Adobe Identity Management (IMS) pour l’ID d’organisation utilisé (ou, si l’ID IMS ne peut pas être récupéré), l’utilisateur ou le groupe est migré, mais pas mappé.
+1. Si une adresse e-mail est introuvable sur le système IMS (Adobe Identity Management System) pour l’ID d’organisation utilisé (ou si l’ID IMS ne peut pas être récupéré), l’utilisateur, l’utilisatrice ou le groupe en question est migré, mais pas mappé.
 
-1. Si l’utilisateur ou l’utilisatrice est désactivé, le traitement est le même que s’il ou elle ne l’était pas. Il est mappé et migré normalement et reste désactivé sur l’instance cloud.
+1. Si l’utilisateur ou l’utilisatrice est désactivé, le traitement est le même que s’il ou elle ne l’était pas. Il ou elle fera l’objet d’une migration et d’un mappage normaux et restera désactivé sur l’instance cloud.
 
-1. Si un utilisateur existe sur l’instance AEM Cloud Service cible avec le même nom d’utilisateur (rep:principalName) que l’un des utilisateurs sur l’instance d’AEM source, l’utilisateur ou le groupe n’est pas migré.
+1. Si un utilisateur ou une utilisatrice existe sur l’instance d’AEM Cloud Service cible avec le même nom d’utilisateur (rep:principalName) que l’un des utilisateurs ou l’une des utilisatrices de l’instance d’AEM source, l’utilisateur, l’utilisatrice ou le groupe n’est pas migré.
 
-1. Si un utilisateur est migré sans avoir au préalable été mappé au moyen du mappage de l’utilisateur, il ne peut pas se connecter sur le système cloud cible à l’aide de son identifiant IMS. Ils peuvent se connecter à l’aide de la méthode d’AEM traditionnelle, mais ce workflow n’est normalement pas ce qui est attendu ou voulu.
+1. Si un utilisateur ou une utilisatrice est migré sans avoir au préalable été mappé via le mappage utilisateur, sur le système cloud cible, il ou elle ne pourra pas se connecter à l’aide de son identifiant IMS. La connexion sera possible à l’aide de la méthode AEM traditionnelle, mais ce n’est pas ce workflow qui est normalement recherché ou attendu.
 
 ## Considérations supplémentaires {#additional-considerations}
 
-* Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est définie, les utilisateurs déjà transférés sur l’instance de Cloud Service sont supprimés. L’intégralité du référentiel existant est également supprimée et un nouveau référentiel est créé dans lequel le contenu est ingéré. Cette action réinitialise également tous les paramètres, y compris les autorisations sur l’instance de Cloud Service cible. Elle est vraie pour un utilisateur administrateur ajouté à la variable **administrateurs** groupe. L’utilisateur administrateur doit être lu dans la variable **administrateurs** pour récupérer le jeton d’accès pour CTT.
+* Si le paramètre **Effacer le contenu existant sur l’instance Cloud avant l’ingestion** est défini, les utilisateurs et utilisatrices déjà transférés sur l’instance Cloud Service sont supprimés. L’intégralité du référentiel existant est également supprimée et un nouveau référentiel est créé dans lequel le contenu est ingéré. Cette action réinitialise également tous les paramètres, y compris les autorisations sur l’instance Cloud Service cible, et est effective pour une personne en charge de l’administration ajoutée au groupe d’**administration**. La personne en charge de l’administration doit être rajoutée au groupe d’**administration** pour récupérer le jeton d’accès pour l’outil de transfert de contenu.
 
-* Adobe recommande de supprimer tout utilisateur existant de l’instance AEM Cloud Service cible avant d’exécuter CTT avec le mappage utilisateur. Cette action est nécessaire pour éviter tout conflit entre les utilisateurs migrés de l’instance d’AEM source vers l’instance AEM cible. Des conflits peuvent se produire lors de l’ingestion si le même utilisateur existe sur l’instance d’AEM source et l’instance AEM cible.
+* Adobe recommande de supprimer tout utilisateur ou utilisatrice existant de l’instance Cloud Service cible d’AEM avant d’exécuter le CTT avec le mappage utilisateur. Cette action est nécessaire pour éviter tout conflit entre la migration des utilisateurs et utilisatrices de l’instance AEM source vers l’instance AEM cible. Des conflits peuvent survenir lors de l’ingestion si un même utilisateur ou une même utilisatrice existe sur l’instance AEM source et l’instance AEM cible.
 
-* Lorsque des compléments de contenu sont effectués, si le contenu n’est pas transféré car il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne sont pas transférés non plus. Cette règle est vraie même si les utilisateurs et les groupes ont changé entre-temps. Cela est dû au fait que les utilisateurs et les groupes sont migrés avec le contenu auquel ils sont associés.
+* Lorsque des rechargements de contenu sont effectués, si le contenu n’est pas transféré parce qu’il n’a pas été modifié depuis le transfert précédent, les utilisateurs, les utilisatrices et les groupes associés à ce contenu ne seront pas transférés non plus. Cette règle est vraie même si les utilisateurs et utilisatrices, et les groupes ont changé entre-temps. En effet, les utilisateurs, les utilisatrices et les groupes font l’objet d’une migration avec le contenu auquel ils ou elles sont associés.
 
-* Si AEM Cloud Service comporte un utilisateur portant un nom d’utilisateur différent, mais ayant la même adresse électronique qu’un utilisateur sur l’instance d’AEM source, et si le mappage d’utilisateur est activé, un message d’erreur est consigné. En outre, l’utilisateur de l’AEM source n’est pas transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
+* Si AEM Cloud Service comporte un utilisateur ou une utilisatrice portant un nom d’utilisateur différent, mais ayant la même adresse e-mail qu’un utilisateur ou une utilisatrice sur l’instance d’AEM source, et si le mappage utilisateur est activé, un message d’erreur est consigné. En outre, l’utilisateur ou utilisatrice d’AEM source n’est pas transféré, car seul un utilisateur ou une utilisatrice disposant d’une adresse e-mail donnée est autorisé sur le système cible.
 
-* Si deux utilisateurs de l’instance d’AEM source ont la même adresse électronique et que le mappage utilisateur est activé, un message d’erreur est consigné. En outre, l’un des utilisateurs de l’AEM source est transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
+* Si deux utilisateurs ou utilisatrices de l’instance d’AEM source ont la même adresse e-mail et que le mappage utilisateur est activé, un message d’erreur est consigné. En outre, l’un des utilisateurs ou l’une des utilisatrices d’AEM source est transféré(e), car un seul utilisateur ou une seule utilisatrice disposant d’une adresse e-mail donnée est autorisé(e) sur le système cible.
 
 ### Prochaines étapes {#whats-next}
 
