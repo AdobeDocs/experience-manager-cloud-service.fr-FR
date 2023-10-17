@@ -3,9 +3,9 @@ title: Création de programmes de production
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '581'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Pour créer un programme de production, procédez comme suit.
 
    ![Page de destination de Cloud Manager](assets/log-in.png)
 
-1. Sélectionner **Configuration pour la production** dans l’assistant Créer un programme pour créer un programme de production et attribuer un nom au programme.
+1. Sélectionnez **Configuration pour la production** dans l’assistant de création de programme pour créer un programme de production et fournissez un nom de programme.
 
    ![Créer un assistant de programme](assets/create-production-program.png)
 
-1. Vous pouvez éventuellement ajouter une image au programme en la faisant glisser et en la déposant sur le **Ajout d’une image de programme** cibler ou cliquer dessus pour sélectionner une image dans l’explorateur de fichiers. Cliquez ou appuyez sur **Continuer**.
+1. Vous pouvez éventuellement ajouter une image au programme en faisant glisser un fichier image et en le déposant sur la cible **Ajouter une image de programme** ou en cliquant dessus pour sélectionner une image dans l’explorateur de fichiers. Cliquez ou appuyez sur **Continuer**.
 
 1. Si vous disposez de droits de sécurité renforcée, accédez à l’onglet **Sécurité renforcée** pour **Activer la sécurité renforcée** pour votre programme de production. Cochez ensuite la case pour activer la sécurité renforcée, puis appuyez ou cliquez sur **Continuer**.
 
@@ -41,8 +41,8 @@ Pour créer un programme de production, procédez comme suit.
 
 1. Dans l’onglet **Solutions et modules complémentaires**, sélectionnez les solutions à inclure dans le programme.
 
-   * Si vous ne savez pas si vous avez besoin d’un ou de plusieurs programmes pour les différentes solutions disponibles, sélectionnez celle qui vous intéresse le plus. Vous pouvez activer des solutions supplémentaires en [modification du programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) plus tard. Voir [Présentation du document Programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus de recommandations sur la configuration du programme.
-   * Si vous avez sélectionné la variable **Activation de la sécurité** auparavant, vous ne pouviez sélectionner que le nombre de solutions pour lesquelles des droits HIPAA étaient disponibles.
+   * Si vous ne savez pas si vous avez besoin d’un ou de plusieurs programmes pour les différentes solutions disponibles, sélectionnez celle qui vous intéresse le plus. Vous pouvez activer des solutions supplémentaires en [modifiant le programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) plus tard. Consultez le [document Présentation des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus de recommandations sur la configuration des programmes.
+   * Si vous avez coché la case **Activer la sécurité renforcée** à l’étape précédente, vous ne pourrez sélectionner que les solutions conformes à la norme HIPAA.
 
    ![Solutions sélectionnées](assets/setup-prod-select.png)
 
