@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '127'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -18,8 +18,8 @@ Découvrez comment les administrateurs utilisent AEM créer un site à l’aide 
 
 {{edge-delivery-authoring}}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Pour que les auteurs de contenu puissent créer des pages avec du nouveau contenu, le site doit d’abord être créé. Le succès dʼun site dépend en grande partie de la considération et de la planification initiale de la structure du site, de son style et de son contenu au départ. Pour cette raison, un administrateur AEM se charge généralement de la création initiale du site.
 
-Pour en savoir plus sur la manière dont l’utilisation des modèles de site rend le processus de création de site rapide et flexible, voir [Création d’une documentation destinée aux administrateurs de site](/help/sites-cloud/administering/site-creation/create-site.md).
+Pour en savoir plus sur la façon dont les modèles de site permettent une création de site rapide et flexible, consultez la [documentation pour les personnes en charge de l’administration sur la création d’un site](/help/sites-cloud/administering/site-creation/create-site.md).
