@@ -3,9 +3,9 @@ title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -19,22 +19,22 @@ Pour les composants principaux AEM CIF, la mise en cache étant configurée comp
 
 ### Configuration {#configuration}
 
-Une fois configuré pour un composant donné, le cache commence à stocker les requêtes et les réponses GraphQL telles que définies par chaque entrée de configuration du cache. La taille du cache et la durée de mise en cache de chaque entrée sont définies projet par projet, selon, par exemple, les éléments suivants :
+Une fois configuré pour un composant donné, le cache commence à stocker les requêtes et les réponses GraphQL telles que définies par chaque entrée de configuration du cache. La taille du cache et la durée de mise en cache de chaque entrée sont définies projet par projet, selon, par exemple, les éléments suivants :
 
 * Fréquence à laquelle les données du catalogue peuvent changer.
-* Il est essentiel qu’un composant affiche toujours les dernières données possibles, etc.
+* Le degré d’importance pour un composant d’afficher toujours les dernières données possibles, etc.
 
-Il n’y a pas d’invalidation du cache. Soyez donc prudent lors de la définition des durées du cache.
+Il n’y a pas d’invalidation du cache. Par conséquent, agissez prudemment lors de la définition des durées du cache.
 
 Lors de la configuration de la mise en cache des composants, le nom du cache doit correspondre au nom des composants **proxy** que vous définissez dans votre projet.
 
-Avant d’envoyer une requête GraphQL, le client vérifie si **exact** la même requête GraphQL est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour établir une correspondance, la requête GraphQL _must_ correspond exactement. Autrement dit, la requête, le nom de l’opération (le cas échéant), les variables (le cas échéant) _must_ tous sont égaux à la requête mise en cache. Et tous les en-têtes HTTP personnalisés qui peuvent être définis _must_ soit également identique. Par exemple, Adobe Commerce `Store` header _must_ correspond à .
+Avant d’envoyer une requête GraphQL, le client ou la cliente vérifie si cette requête **exacte** est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour établir une correspondance, la requête GraphQL _doit_ correspondre exactement. Autrement dit, la requête, le nom de l’opération (le cas échéant), les variables (le cas échéant) _doivent_ tous être égaux à la requête mise en cache. En outre, tous les en-têtes HTTP personnalisés qui peuvent être définis _doivent_ être également identiques. Par exemple, l’en-tête `Store` Adobe Commerce _doit_ correspondre.
 
 ### Exemples {#examples}
 
-Adobe recommande de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est ajouté aux produits, par exemple. Par conséquent, la durée de cette entrée de cache peut être &quot;importante&quot; si l’ensemble des attributs de produit ne change pas souvent. Bien que cette entrée soit spécifique au projet, Adobe recommande des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur les systèmes de production stables.
+Adobe recommande de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs des agrégations/facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est ajouté aux produits, par exemple. Par conséquent, la durée de cette entrée de cache peut être « importante » si l’ensemble des attributs de produit ne change pas souvent. Bien que cette entrée soit spécifique au projet, Adobe recommande des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur des systèmes de production stables.
 
-Ce paramètre est généralement configuré avec l’entrée de cache suivante :
+Ce paramètre est généralement configuré avec l’entrée de cache suivante :
 
 ```
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:10:3600
@@ -46,23 +46,23 @@ Un autre exemple de scénario dans lequel la fonction de mise en cache GraphQl e
 venia/components/structure/navigation:true:10:600
 ```
 
-En considérant que la variable [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) est utilisée. Notez l’utilisation du nom du proxy de composant `venia/components/structure/navigation`, et **non pas** le nom du composant de navigation CIF (`core/cif/components/structure/navigation/v1/navigation`).
+Considérons ici que le [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) est utilisé. Notez l’utilisation du nom du proxy de composant `venia/components/structure/navigation`, et **non pas** le nom du composant de navigation CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
-La mise en cache d’autres composants doit être définie projet par projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’y a pas d’invalidation principale de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur &quot;universelle&quot; qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond au mieux aux exigences de votre projet.
+La mise en cache d’autres composants doit être définie projet par projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’y a pas d’invalidation active de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur « universelle » qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond au mieux aux exigences de votre projet.
 
 ## Mise en cache du Dispatcher {#dispatcher}
 
-La mise en cache de pages ou de fragments AEM dans le [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) constitue une bonne pratique pour un projet AEM. En règle générale, elle repose sur des techniques d’invalidation qui garantissent qu’un contenu modifié dans AEM est correctement mis à jour dans le Dispatcher. Cette fonctionnalité est essentielle à la stratégie de mise en cache AEM Dispatcher.
+La mise en cache de pages ou de fragments AEM dans le [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) constitue une bonne pratique pour un projet AEM. En règle générale, elle repose sur des techniques d’invalidation qui garantissent qu’un contenu modifié dans AEM est correctement mis à jour dans le Dispatcher. Cette fonctionnalité est essentielle à la stratégie de mise en cache du Dispatcher AEM.
 
-Outre le CIF de contenu géré par AEM pur, une page peut généralement afficher des données commerciales récupérées dynamiquement à partir d’Adobe Commerce via GraphQL. Bien que la structure de la page elle-même puisse ne jamais changer, le contenu commercial peut changer. Par exemple, si des données de produit, telles que le nom et le prix, changent dans Adobe Commerce.
+Outre le CIF du contenu géré par AEM, une page peut généralement afficher des données commerciales récupérées dynamiquement à partir d’Adobe Commerce via GraphQL. Bien que la structure de la page elle-même puisse ne jamais changer, le contenu commercial peut changer. C’est notamment le cas si des données de produit, telles que le nom et le prix, changent dans Adobe Commerce.
 
-Pour vous assurer que les pages CIF sont mises en cache pendant une durée limitée dans AEM Dispatcher, Adobe recommande d’utiliser [Invalidation temporelle du cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-time-based-cache-invalidation-enablettl) (mise en cache basée sur TTL) lors de la mise en cache de pages CIF dans le Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
+Afin de garantir que les pages CIF sont mises en cache pendant une durée limitée dans le Dispatcher AEM, Adobe recommande d’utiliser l’[Invalidation temporelle du cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-time-based-cache-invalidation-enablettl) (mise en cache basée sur TTL) lors de la mise en cache de pages CIF dans le Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
 
-Avec la mise en cache TTL, un développeur définit généralement une ou plusieurs durées de mise en cache pour les pages AEM sélectionnées. Cette durée garantit que les pages CIF sont uniquement mises en cache dans AEM Dispatcher jusqu’à la durée configurée et que le contenu est fréquemment mis à jour.
+Avec la mise en cache TTL, un développeur définit généralement une ou plusieurs durées de mise en cache pour les pages AEM sélectionnées. Cette durée garantit que les pages CIF ne sont mises en cache dans le Dispatcher AEM que pendant la durée configurée et que le contenu est fréquemment mis à jour.
 
 >[!NOTE]
 >
->Bien que les données côté serveur puissent être mises en cache par AEM Dispatcher, certains composants CIF tels que la fonction `product`, `productlist`, et `searchresults` en règle générale, les composants récupèrent toujours les prix des produits dans une requête de navigateur côté client lorsque la page est chargée. Cela permet de s’assurer que le contenu dynamique essentiel est toujours récupéré au chargement de la page.
+>Bien que les données côté serveur puissent être mises en cache par le Dispatcher AEM, certains composants CIF, tels que les composants `product`, `productlist` et `searchresults` récupèrent en général à nouveau les prix des produits dans une requête de navigateur côté client lorsque la page est chargée. Ainsi, le contenu dynamique crucial est toujours récupéré au chargement de la page.
 
 ## Ressources supplémentaires {#additional}
 
