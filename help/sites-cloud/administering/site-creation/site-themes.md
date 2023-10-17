@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 Découvrez comment les thèmes de site AEM peuvent être utilisés pour personnaliser le style et la conception de votre site.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Un thème de site AEM est un package contenant les ressources statiques, CSS et JavaScript qui définissent la mise en forme de votre site AEM et se conforme à la structure d’un thème de site AEM.
 
@@ -23,7 +23,7 @@ Les sites créés avec des modèles de site AEM permettent de télécharger, de 
 
 >[!NOTE]
 >
->Les thèmes de site AEM ne doivent pas être confondus avec les modèles de site [AEM](site-templates.md). Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. AEM modèles de site définissent la structure du site et le contenu initial, et contiennent un thème de site AEM pour permettre [création rapide de site](create-site.md).
+>Les thèmes de site AEM ne doivent pas être confondus avec les [modèles de site AEM](site-templates.md). Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. Les modèles de site AEM définissent la structure du site et le contenu initial et contiennent un thème de site AEM afin de permettre une [création rapide de site](create-site.md).
 
 ## Utilisation des thèmes de site {#using-themes}
 
