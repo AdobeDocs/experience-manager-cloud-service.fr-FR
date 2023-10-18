@@ -3,7 +3,7 @@ title: Création de modèles de fragment de contenu - Configuration découplée
 description: Définissez la structure du contenu que vous allez créer et diffuser à l’aide des fonctionnalités découplées AEM à l’aide des modèles de fragment de contenu.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 100%
 

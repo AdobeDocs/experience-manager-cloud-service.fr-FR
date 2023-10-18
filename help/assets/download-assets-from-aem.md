@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 98%
+source-wordcount: '1387'
+ht-degree: 89%
 
 ---
 
@@ -79,7 +79,7 @@ Pour télécharger des ressources, procédez comme suit :
 
    | Option de téléchargement | Description |
    |---|---|
-   | **[!UICONTROL Créer un dossier distinct pour chaque ressource]** | Sélectionnez cette option pour créer un dossier pour chaque ressource contenant tous les rendus téléchargés de la ressource. Si cette option n’est pas sélectionnée, chaque ressource (et ses rendus s’ils sont sélectionnés pour téléchargement) est contenu dans le dossier parent de l’archive générée. |
+   | **[!UICONTROL Créer un dossier distinct pour chaque ressource]** | Sélectionnez cette option pour créer un dossier pour chaque ressource contenant tous les rendus téléchargés de la ressource. Si cette option n’est pas sélectionnée, chaque ressource (et ses rendus s’ils sont sélectionnés pour le téléchargement) est contenue dans le dossier parent de l’archive générée. |
    | **[!UICONTROL E-mail]** | Sélectionnez cette option pour envoyer une notification par e-mail (contenant un lien vers votre téléchargement) à un autre utilisateur. Le destinataire doit être membre du groupe `dam-users`. Les modèles standard d’email sont disponibles aux emplacements suivants :<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Les modèles que vous personnalisez lors du déploiement sont disponibles aux emplacements suivants : <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Vous pouvez stocker des modèles personnalisés spécifiques au client à ces emplacements :<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ressource(s)]** | Sélectionnez cette option pour télécharger la ressource dans son format d’origine.<br>L’option Sous-ressources est disponible si la ressource d’origine comporte des sous-ressources. |
    | **[!UICONTROL Rendu(s)]** | Un rendu est une représentation binaire d’une ressource. Les ressources possèdent une représentation principale, à savoir celle du fichier téléchargé. Elles peuvent avoir un nombre illimité de représentations. <br> Avec cette option, vous pouvez sélectionner les rendus que vous souhaitez télécharger. Les rendus disponibles dépendent de la ressource que vous avez sélectionnée. |
@@ -88,7 +88,7 @@ Pour télécharger des ressources, procédez comme suit :
 
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Télécharger]**.
 
-   Si vous avez demandé à être averti en cas de téléchargement volumineux, vous recevrez un e-mail dans votre boîte de réception contenant une URL de téléchargement pour le dossier zip archivé. Cliquez sur le lien de téléchargement présent dans l’e-mail pour télécharger l’archive ZIP.
+   Si vous avez demandé à être averti en cas de téléchargement volumineux, vous recevrez un e-mail dans votre boîte de réception contenant une URL de téléchargement pour le dossier zip archivé. Cliquez sur le lien de téléchargement du courrier électronique pour télécharger l’archive ZIP.
 
    ![notifications-par-e-mail-en-cas-de-téléchargements-volumineux](/help/assets/assets/email-for-large-notification.png)
 
@@ -131,6 +131,15 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## Rendu onTime/OffTime {#on-off-time-rendition}
+
+Pour activer la variable `OnOffTimeAssetAccessFilter` , vous devez créer une configuration OSGi. Ce service permet de bloquer l’accès aux rendus et aux métadonnées en plus de la ressource elle-même en fonction des paramètres d’heure d’activation/de désactivation. La configuration OSGi doit être pour `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Suivez les étapes ci-dessous :
+
+1. Dans le code de votre projet dans Git, créez un fichier de configuration à l’adresse `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Le fichier doit contenir `{}` comme son contenu, ce qui signifie une configuration OSGi vide pour le composant OSGi correspondant. Cette action active le service.
+1. Déployez votre code, y compris cette nouvelle configuration, via [!DNL Cloud Manager].
+1. Une fois déployé, les rendus et les métadonnées sont accessibles en fonction des paramètres d’heure d’activation/de désactivation des ressources. Si la date ou l’heure actuelle est antérieure à l’heure actuelle ou après l’heure de désactivation, un message d’erreur s’affiche.
+Pour plus d’informations sur l’ajout d’une configuration OSGi vide, reportez-vous à cette section [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr).
 
 ## Conseils et restrictions {#tips-limitations}
 
