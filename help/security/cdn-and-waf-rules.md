@@ -2,10 +2,10 @@
 title: Configuration des règles de filtre de trafic avec des règles WAF
 description: Utilisation de règles de filtrage du trafic avec des règles WAF pour filtrer le trafic
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
+source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
 workflow-type: tm+mt
-source-wordcount: '2740'
-ht-degree: 2%
+source-wordcount: '3810'
+ht-degree: 1%
 
 ---
 
@@ -230,7 +230,7 @@ La variable `wafFlags` peut contenir les éléments suivants :
 | RESPONSESPLIT | Fractionnement des réponses HTTP | Identifie le moment où les caractères CRLF sont envoyés en entrée de l’application pour injecter des en-têtes dans la réponse HTTP. |
 | XML-ERROR | Erreur de codage XML | Corps de requête de POST, de PUT ou de PATCH spécifié comme contenant du code XML dans l’en-tête de requête &quot;Content-Type&quot;, mais contenant des erreurs d’analyse XML. Cela est souvent lié à une erreur de programmation ou à une requête automatisée ou malveillante. |
 
-## Remarques {#considerations}
+## Considérations {#considerations}
 
 * Lorsque deux règles en conflit sont créées, les règles d’autorisation ont toujours la priorité sur les règles de blocage. Par exemple, si vous créez une règle pour bloquer un chemin spécifique et une règle pour autoriser une adresse IP spécifique, les demandes de cette adresse IP sur le chemin bloqué seront autorisées.
 
@@ -372,7 +372,7 @@ Il est parfois souhaitable de bloquer le trafic correspondant à une règle uniq
 | limit | entier compris entre 10 et 10 000 | obligatoire | Taux de requêtes dans les requêtes par seconde pour lesquelles la règle est déclenchée. |
 | window | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le taux de requête est calculé. |
 | pénalité | entier compris entre 60 et 3 600 | 300 (5 minutes) | Période en secondes pendant laquelle les requêtes correspondantes sont bloquées (arrondie à la minute la plus proche). |
-| groupBy | tableau[Getter] | aucune | le compteur de limiteurs de débit sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
+| groupBy | tableau[Getter] | Aucune | le compteur de limiteurs de débit sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
 
 ### Exemples {#ratelimiting-examples}
 
@@ -526,3 +526,296 @@ Vous trouverez ci-dessous une liste des noms de champ utilisés dans les journau
 | *res_age* | Durée (en secondes) pendant laquelle une réponse a été mise en cache (dans tous les noeuds). |
 | *pop* | Centre de données du serveur de cache CDN. |
 | *règles* | Nom de toute règle correspondante.<br><br>Indique également si la correspondance a entraîné un bloc. <br><br>Par exemple, &quot;`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>Vide si aucune règle ne correspondait. |
+
+## Tutoriel sur les outils de tableau de bord  {#dashboard-tooling}
+
+Adobe fournit un mécanisme de téléchargement des outils de tableau de bord sur votre ordinateur pour ingérer les journaux CDN téléchargés via Cloud Manager. Grâce à cet outil, vous pouvez analyser le trafic afin d’obtenir les règles de filtrage du trafic appropriées à déclarer, y compris les règles WAF. Cette section fournit d’abord quelques instructions pour mieux connaître les outils de tableau de bord dans un environnement de développement, puis des instructions pour tirer parti de ces connaissances afin de créer des règles dans un environnement de production.
+
+Les clients les plus expérimentés des règles de filtrage du trafic doivent demander un fichier zip de l’outil de tableau de bord, qui comprend un fichier README décrivant comment charger le conteneur Docker et ingérer les journaux CDN.
+
+
+### Familiarisation avec l’outil de tableau de bord {#dashboard-getting-familiar}
+
+1. Créez un pipeline de configuration hors production Cloud Manager, associé à un environnement de développement. Sélectionnez tout d’abord l’option Pipeline de déploiement . Sélectionnez ensuite Déploiement ciblé, Configuration, votre référentiel, la branche git, et définissez l’emplacement du code sur /config.
+
+   ![Ajouter un déploiement sélectionné de pipeline hors production](/help/security/assets/waf-select-pipeline1.png)
+
+   ![Ajouter une sélection de pipeline hors production ciblée](/help/security/assets/waf-select-pipeline2.png)
+
+
+1. Dans votre espace de travail, créez une configuration de dossier au niveau racine et ajoutez un fichier nommé cdn.yaml, dans lequel vous déclarerez une règle simple, la définissant en mode journal plutôt qu’en mode bloquant.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: log
+   ```
+
+1. Validez et envoyez vos modifications, puis déployez votre configuration à l’aide du pipeline de configuration.
+
+   ![Exécution du pipeline de configuration](/help/security/assets/waf-run-pipeline.png)
+
+1. Une fois votre configuration déployée, essayez d’accéder à https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me à l’aide de votre navigateur web ou avec la commande curl ci-dessous. Vous devriez être traité avec une page d’erreur 404, car cette page n’existe pas.
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. Téléchargez les journaux CDN de Cloud Manager et vérifiez que les règles correspondent à vos attentes, avec une propriété de règles correspondant au nom de la règle :
+
+   ```
+   "rules": "match=log-rule-example"
+   ```
+
+   ![Sélectionner les journaux de téléchargement](/help/security/assets/waf-download-logs1.png)
+
+   ![Journaux de téléchargement](/help/security/assets/waf-download-logs2.png)
+
+1. Chargez l’image Docker à l’aide de l’outil de tableau de bord et suivez le fichier LISEZMOI pour ingérer les journaux CDN. Comme illustré dans les captures d’écran suivantes, sélectionnez la période appropriée, l’environnement approprié et les filtres appropriés.
+
+   ![Sélectionner l’heure dans le tableau de bord](/help/security/assets/dashboard-select-time.png)
+
+   ![Sélection de l’environnement dans le tableau de bord](/help/security/assets/dashboard-select-env.png)
+
+1. Une fois les filtres adéquats appliqués, vous devriez pouvoir voir un tableau de bord chargé avec les données attendues. Dans la capture d’écran ci-dessous, l’exemple de règle de log a été déclenché 3 fois au cours des deux dernières heures, par la même adresse IP située en Irlande, à l’aide d’un navigateur web et d’une URL.
+
+   ![Affichage des données du tableau de bord de développement](/help/security/assets/dashboard-see-data-logmode.png)
+   ![Affichage des widgets de données du tableau de bord de développement](/help/security/assets/dashboard-see-data-logmode2.png)
+
+1. Modifiez maintenant cdn.yaml pour mettre la règle en mode bloc afin de vous assurer que les pages sont bloquées, comme prévu. Ensuite, validez, poussez et déclenchez le pipeline de configuration comme vous l’avez fait précédemment.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: block
+   ```
+
+1. Une fois votre configuration déployée, essayez d’accéder à https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me à l’aide de votre navigateur web ou avec la commande curl ci-dessous. Une page d’erreur 406 doit s’afficher, indiquant que la demande a été bloquée.
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. Une fois de plus, téléchargez vos journaux CDN dans Cloud Manager (remarque : il peut s’écouler jusqu’à 5 minutes avant que les nouvelles requêtes soient exposées dans vos journaux CDN) et importez-les dans l’outil de tableau de bord comme nous l’avons fait précédemment. Une fois cette opération terminée, actualisez votre tableau de bord. Comme vous pouvez le voir dans la capture d’écran ci-dessous, les demandes à /log/me sont bloquées par notre règle.
+
+   ![Affichage des données du tableau de bord de la prod](/help/security/assets/dashboard-see-data-blockmode.png)
+   ![Affichage des données du tableau de bord de la prod](/help/security/assets/dashboard-see-data-blockmode2.png)
+
+1. Si les filtres de trafic WAF sont activés (cela nécessitera une licence supplémentaire une fois la fonction GA activée), répétez avec une règle de filtre de trafic WAF, en mode journal, et déployez les règles.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: log-waf-flags
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           action:
+             type: log
+             wafFlags:
+                 - SANS
+                 - SIGSCI-IP
+                 - TORNODE
+                 - NOUA
+                 - SCANNER
+                 - USERAGENT
+                 - PRIVATEFILE
+                 - ABNORMALPATH
+                 - TRAVERSAL
+                 - NULLBYTE
+                 - BACKDOOR
+                 - LOG4J-JNDI
+                 - SQLI
+                 - XSS
+                 - CODEINJECTION
+                 - CMDEXE
+                 - NO-CONTENT-TYPE
+                 - UTF8
+   ```
+
+1. Utilisez un outil comme [nikto](https://github.com/sullo/nikto/tree/master) pour générer des requêtes correspondantes. La commande ci-dessous enverra environ 550 demandes malveillantes en moins d’une minute.
+
+   ```
+   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
+   ```
+
+1. Téléchargez les journaux CDN depuis Cloud Manager (n’oubliez pas qu’ils peuvent prendre jusqu’à 5 minutes pour s’afficher) et vérifiez que les règles déclarées correspondantes et les indicateurs WAF s’affichent.
+
+   Comme vous pouvez le voir, plusieurs des demandes produites par Nikto sont signalées par le WAF comme étant malveillantes. Nous pouvons voir que Nikto a essayé d&#39;exploiter les vulnérabilités CMDEXE, SQLI et NULLBYTE. Si vous modifiez maintenant l’action du journal pour bloquer et déclencher à nouveau une analyse à l’aide de Nikto, toutes les requêtes précédemment marquées seront bloquées cette fois-ci.
+
+   ![Affichage des données WAF](/help/security/assets/dashboard-see-data-waf.png)
+
+
+   Notez que chaque fois qu’une requête correspond à l’un des indicateurs WAF, ces indicateurs WAF s’affichent, même s’ils ne font pas partie de la règle déclarée. Vous êtes donc toujours conscient du trafic potentiellement malveillant pour lequel vous n’avez pas encore déclaré de règles correspondantes. Par exemple :
+
+   ```
+   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
+   ```
+
+1. Répétez cette opération avec une règle qui utilise la limitation de débit, en mode journal. Comme toujours, validez, poussez et déclenchez le pipeline de configuration pour appliquer votre configuration.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: limit-requests-client-ip
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           rateLimit:
+             limit: 10
+             window: 1
+             penalty: 60
+             groupBy:
+               - reqProperty: clientIp
+           action: log
+   ```
+
+1. Utilisez un outil comme [Vegeta](https://github.com/tsenart/vegeta) pour générer le trafic.
+
+   ```
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   ```
+
+1. Après avoir exécuté l’outil, vous pouvez télécharger les journaux CDN et les ingérer dans le tableau de bord pour vérifier que la règle du limiteur de taux a été déclenchée.
+
+   Maintenant que vous connaissez le fonctionnement des règles de filtrage du trafic, vous pouvez passer à l’environnement prod.
+
+### Déploiement de règles dans l’environnement prod {#dashboard-prod-env}
+
+Veillez à déclarer initialement des règles en mode journal pour vérifier qu’il n’y a pas de faux positifs, ce qui signifie que le trafic légitime serait incorrectement bloqué.
+
+1. Créez un pipeline de configuration de production associé à votre environnement de production.
+
+1. Copiez les règles recommandées ci-dessous dans votre cdn.yaml. Vous pouvez modifier les règles en fonction des caractéristiques uniques du trafic en direct de votre site web. Validez, poussez et déclenchez votre pipeline de configuration. Assurez-vous que les règles sont en mode journal.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 100
+        window: 1
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
+      # Block requests coming from OFAC countries
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
+        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+        - name: block-waf-flags-globally
+          when:
+            reqProperty: tier
+            matches: "author|publish"
+          action:
+            type: block
+            wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+        # Disable protection against CMDEXE on /bin
+        - name: allow-cdmexe-on-root-bin
+          when:
+            allOf:
+              - reqProperty: tier
+                matches: "author|publish"
+              - reqProperty: path
+                matches: "^/bin/.*"
+          action:
+            type: allow
+            wafFlags:
+              - CMDEXE
+```
+
+1. Ajoutez d’autres règles pour bloquer le trafic malveillant que vous connaissez. Par exemple, certaines adresses IP qui ont attaqué votre site.
+
+1. Au bout de quelques minutes, heures ou jours, selon le volume de trafic de votre site, téléchargez les journaux CDN depuis Cloud Manager et analysez-les à l’aide du tableau de bord.
+
+1. Voici quelques considérations à prendre en compte :
+   1. Les règles déclarées de correspondance du trafic apparaissent dans les graphiques et les journaux de requêtes afin que vous puissiez facilement vérifier si vos règles déclarées sont déclenchées.
+   1. Les indicateurs WAF correspondant au trafic apparaissent dans les graphiques et les journaux de requêtes, même si vous ne les avez pas connectés dans une règle. Cela vous permet de toujours être conscient d’un nouveau trafic malveillant potentiel et de créer de nouvelles règles si nécessaire. Examinez les indicateurs WAF qui ne sont pas reflétés dans les règles déclarées et envisagez de les déclarer.
+   1. Pour les règles correspondantes, examinez les journaux de requêtes à la recherche de faux positifs et vérifiez si vous pouvez les filtrer hors des règles. Par exemple, ils sont peut-être faux positifs uniquement pour certains chemins.
+
+1. Définissez les règles appropriées pour le mode bloc et envisagez également d’ajouter des règles supplémentaires. Certaines des règles doivent peut-être rester en mode journal lorsque vous analysez davantage avec plus de trafic.
+
+1. Redéployer la configuration
+
+1. Interrompez et analysez fréquemment les tableaux de bord.
+
