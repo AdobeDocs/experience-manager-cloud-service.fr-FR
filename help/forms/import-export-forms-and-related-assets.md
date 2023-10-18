@@ -1,10 +1,10 @@
 ---
 title: Importation et exportation de ressources dans [!DNL AEM Forms]?
 description: Découvrez comment utiliser DocuSign avec un formulaire adaptatif pour collecter des signatures électroniques.
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 86%
+source-wordcount: '1325'
+ht-degree: 85%
 
 ---
 
@@ -242,3 +242,8 @@ The side panel also lets you save your search settings with names of your choice
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Importation de modèles de formulaires d’exportation](/help/forms/import-export-forms-templates.md)
+>* [Utilisation de thèmes dans les composants principaux de formulaire adaptatif](/help/forms/using-themes-in-core-components.md)

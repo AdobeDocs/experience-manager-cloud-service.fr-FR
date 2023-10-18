@@ -5,10 +5,10 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 50%
+source-wordcount: '1140'
+ht-degree: 64%
 
 ---
 
@@ -40,13 +40,13 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
       Sélectionnez **Éditeur visuel** dans la ligne Objets et fonctions de formulaire.
 
-      1. Dans la zone de règle, sous QUAND, sélectionnez l’état. **est cliqué**.
+      1. Dans la zone de règle, sous QUAND, sélectionnez l’état **lorsque l’on clique dessus**.
       1. Sous ALORS :
 
          * Pour créer un bouton d’ajout de panneau, sélectionnez **Ajouter une instance** et glissez-déposez le panneau à l’aide du ![panneau latéral](assets/toggle-side-panel.png) ou sélectionnez-le à l’aide de l’option **Déposer l’objet ou sélectionner ici.**
          * Pour créer un bouton de suppression de panneau, sélectionnez **Supprimer une instance**, et glissez-déposez le panneau à l’aide du ![panneau latéral](assets/toggle-side-panel.png) ou sélectionnez-le à l’aide de l’option **Déposer l’objet ou sélectionner ici**
 
-      Sélectionner **Éditeur de code** sur la ligne Objets et fonctions de formulaire . Cliquez sur **Modifier les règles** et dans la zone de code :
+      Sélectionnez **Éditeur de code** dans la ligne Objets et fonctions de formulaire. Cliquez sur **Modifier les règles** et dans la zone de code :
 
       * Pour créer un bouton d’ajout de panneau, spécifiez `this.panel.instanceManager.addInstance()`.
       * Pour créer un bouton de suppression de panneau, spécifiez `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`.
@@ -109,9 +109,9 @@ Un sous-formulaire répétable est similaire aux panneaux répétables dans les 
 1. Sélectionnez le sous-formulaire à répéter.
 1. Dans la palette Objet, cliquez sur l’onglet Sous-formulaire et sélectionnez Positionné ou Distribué dans la liste Contenu.
 1. Cliquez sur l’onglet Liaison et sélectionnez Sous-formulaire pour chaque élément.
-1. Pour spécifier le nombre minimum de répétitions, sélectionnez Min. de répétitions et saisissez un nombre dans la zone associée. Si cette option est définie sur 0 et qu’aucune donnée n’est fournie pour les objets du sous-formulaire au moment de la fusion, le sous-formulaire n’est pas placé lors de la génération du formulaire.
-1. Pour spécifier le nombre maximal de répétitions du sous-formulaire, sélectionnez Max. et saisissez un nombre dans la zone associée. Si vous ne spécifiez aucune valeur dans la zone Max, le nombre de répétitions du sous-formulaire est illimité.
-1. Pour spécifier un nombre précis de répétitions du sous-formulaire, quelle que soit la quantité de données, sélectionnez l’option Quantité initiale et tapez un nombre dans la zone associée. Si vous sélectionnez cette option et qu’aucune donnée n’est disponible ou qu’il existe moins d’entrées de données par rapport à la valeur Quantité initiale spécifiée, des instances vides du sous-formulaire sont toujours placées sur le formulaire.
+1. Pour spécifier le nombre minimum de répétitions, sélectionnez Nombre minimum de répétitions et saisissez un nombre dans la zone associée. Si cette option est définie sur 0 et qu’aucune donnée n’est fournie pour les objets du sous-formulaire au moment de la fusion des données, le sous-formulaire n’est pas placé lors de la génération du formulaire.
+1. Pour spécifier le nombre maximum de répétitions du sous-formulaire, sélectionnez Nombre maximum de répétitions et saisissez un nombre dans la zone associée. Si vous n’indiquez pas de valeur dans la zone Nombre maximum de répétitions, le nombre de répétitions du sous-formulaire est illimité.
+1. Pour spécifier un nombre précis de répétitions du sous-formulaire, quelle que soit la quantité de données, sélectionnez l’option Quantité initiale et tapez un nombre dans la zone associée. Si vous sélectionnez cette option et qu’aucune donnée n’est disponible ou qu’il existe moins d’entrées de données par rapport à la valeur Nombre initial spécifiée, des instances vides du sous-formulaire sont quand même placées sur le formulaire.
 1. Ajoutez deux boutons dans le sous-formulaire parent : un pour ajouter une instance et un autre pour supprimer une instance d’un sous-formulaire répétable. Pour obtenir des instructions détaillées, voir [Création d’une action](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Liez maintenant le modèle de formulaire au formulaire adaptatif. Pour les étapes détaillées, voir [Création d’un formulaire adaptatif basé sur un modèle](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Utilisez les boutons créés à l’étape 9 pour ajouter et supprimer des sous-formulaires.
@@ -169,3 +169,8 @@ Dans le code suivant, le panneau`SampleType` utilise la propriété minOccurs &a
 >[!NOTE]
 >
 >Pour une mise en page sans accordéon, utilisez les composants de bouton Formulaire adaptatif pour ajouter et supprimer des instances.
+
+
+>[!MORELIKETHIS]
+>
+>* [Création de formulaires avec des sections répétables dans les composants principaux de formulaire adaptatif](/help/forms/create-forms-repeatable-sections.md)

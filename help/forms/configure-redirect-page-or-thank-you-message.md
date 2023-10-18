@@ -4,13 +4,13 @@ description: Découvrez comment les utilisateurs et utilisatrices peuvent voir a
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
-workflow-type: ht
-source-wordcount: '233'
-ht-degree: 100%
+exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 98%
 
 ---
-
 
 # Configurer une page de redirection {#configuring-redirect-page}
 
@@ -32,3 +32,11 @@ Pour chaque formulaire, les auteurs et les autrices peuvent configurer une page 
 **En relation**
 
 * [Configurer la page de redirection (formulaires de base)](configuring-redirect-page.md)
+
+>[!MORELIKETHIS]
+>
+>* [Configuration d’une page de redirection](/help/forms/configuring-redirect-page.md)
+
+## Voir également {#see-also}
+
+{{see-also}}

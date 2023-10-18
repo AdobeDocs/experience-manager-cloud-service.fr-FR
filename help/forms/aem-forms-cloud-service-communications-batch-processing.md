@@ -2,10 +2,10 @@
 title: Création sans effort de PDF en bloc - Principal de l’art avec traitement par lots - Votre auto-guide de génération de millions de documents PDF !
 description: Comment créer des communications personnalisées et axées sur la marque ?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1705'
-ht-degree: 96%
+source-wordcount: '1735'
+ht-degree: 95%
 
 ---
 
@@ -171,3 +171,10 @@ Comprenons à l’aide d’un exemple : supposons qu’il existe un fichier de 
 ## Documentation de référence sur les API
 
 La documentation de référence sur les API fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence sur les API est également disponible au format .yaml. Vous pouvez télécharger le fichier des [API Batch](assets/batch-api.yaml) et le charger dans Postman pour vérifier les fonctionnalités des API.
+
+>[!MORELIKETHIS]
+>
+>* [Présentation des communications as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Architecture as a Cloud Service d’AEM Forms pour les API de communication et de Forms adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Traitement des communications - API par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

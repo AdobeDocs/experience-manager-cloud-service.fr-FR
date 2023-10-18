@@ -4,7 +4,7 @@ description: Les processus orientés formulaire vous permettent de créer rapide
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser AEM workflows, en utilisant affecter des étapes de tâche, convertir en étape de PDF/A, Générer un document d’étape enregistrée, utiliser des workflows, Signer une étape de document, Générer une étape de sortie imprimée, Générer une sortie de PDF non interactive
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '7446'
 ht-degree: 79%
@@ -594,3 +594,11 @@ saisissez le code de paramètre régional dans la zone littérale ou sélectionn
 * [Variables dans les workflows AEM basés sur l’utilisation de Forms](/help/forms/variable-in-aem-workflows.md)
 * [Configuration du paramètre d’absence du bureau](/help/forms/configure-out-of-office-settings.md)
 
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Forms-centric workflow on OSGi](/help/forms/aem-forms-workflow.md)
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+
+-->

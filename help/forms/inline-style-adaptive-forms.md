@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 66%
+source-wordcount: '778'
+ht-degree: 65%
 
 ---
 
@@ -132,3 +132,12 @@ Pour définir la mise en forme d’un état d’un composant :
 Vous pouvez également simuler les états de succès et d’erreur. Appuyez sur l’icône Développer pour afficher les options **[!UICONTROL Simuler la réussite]** et **[!UICONTROL Simuler l’erreur]**.
 
 ![Simuler les états](assets/simulate-states.png)
+
+
+## Voir également {#see-also}
+
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [Utilisation de thèmes dans les composants principaux de formulaire adaptatif](/help/forms/using-themes-in-core-components.md)

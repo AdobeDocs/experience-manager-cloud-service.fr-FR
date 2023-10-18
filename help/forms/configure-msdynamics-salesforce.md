@@ -2,10 +2,10 @@
 title: Comment configurer Microsoft Dynamics 365 et Salesforce des modèles de données de formulaire prêts à l’emploi pour Forms adaptatif ?
 description: Découvrez comment intégrer Microsoft Dynamics 365 et Salesforce à Adaptive Forms.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 72%
+source-wordcount: '980'
+ht-degree: 71%
 
 ---
 
@@ -100,3 +100,9 @@ A [!DNL Microsoft® Dynamics 365] Le modèle de données de formulaire est dispo
 Pour accéder au modèle de données de formulaire, accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**. La liste des dossiers de disponibles inclut un dossier avec le titre `DappTitle` tout en [générant le projet d’archétype d’AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Appuyez sur le nom du dossier, puis sélectionnez l’option **[!UICONTROL Modèle de données Microsoft® Dynamics 365]**, puis appuyez sur Modifier . ![Modifier](assets/edit.png) pour afficher le modèle de données de formulaire.
 
 Après avoir configuré le service de configuration du cloud [[!DNL Microsoft® Dynamics 365] ](#configure-dynamics-cloud-service), vous pouvez intégrer des formulaires adaptatifs avec le modèle de données [!DNL Microsoft® Dynamics 365] prêt à l’emploi.
+
+>[!MORELIKETHIS]
+>
+* [Configuration des sources de données pour AEM Forms](/help/forms/configure-data-sources.md)
+* [Configuration du stockage Azure pour AEM Forms](/help/forms/configure-azure-storage.md)
+[Ajout de Forms Portal à une page AEM Sites](/help/forms/configure-forms-portal.md)

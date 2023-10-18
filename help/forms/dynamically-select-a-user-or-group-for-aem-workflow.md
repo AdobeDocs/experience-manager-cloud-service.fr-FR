@@ -3,10 +3,10 @@ title: Comment sélectionner des utilisateurs dans AEM Workflow ?
 description: Découvrez comment sélectionner un utilisateur ou un groupe pour un workflow [!DNL AEM Forms]  au moment de l’exécution.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 46%
+source-wordcount: '902'
+ht-degree: 45%
 
 ---
 
@@ -345,3 +345,7 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
+
+>[!MORELIKETHIS]
+>
+>* [Utilisation du processus AEM Forms pour l’automatisation des processus d’entreprise](/help/forms/aem-forms-workflow.md)

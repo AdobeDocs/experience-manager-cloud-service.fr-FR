@@ -3,9 +3,9 @@ title: Comment créer et gérer des révisions dans les formulaires ?
 description: Utilisez le mécanisme de révision pour ajouter des réviseurs et permettre aux réviseurs de commenter un formulaire.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '733'
 ht-degree: 85%
 
 ---
@@ -114,3 +114,17 @@ Cette section décrit ce qui se produit lorsque **vous modifiez ou mettez fin à
    1. **Toutes** : la révision s’affiche dans la section des révisions précédentes. Plus aucun commentaire ne peut être ajouté.
 
    ![Révision terminée](assets/review-complete-imgg.png).
+
+
+## Voir également {#see-also}
+
+{{see-also}}
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
+
+-->

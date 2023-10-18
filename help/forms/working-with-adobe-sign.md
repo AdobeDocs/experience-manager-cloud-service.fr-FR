@@ -6,14 +6,14 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 96%
 
 ---
 
-# Utilisation d’[!DNL Adobe Sign] dans un formulaire adaptatif {#using-adobe-sign-in-an-adaptive-form}
+# Utilisation de [!DNL Adobe Sign] dans un formulaire adaptatif {#using-adobe-sign-in-an-adaptive-form}
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
@@ -361,7 +361,12 @@ Lorsque le service [!DNL Adobe Sign] est configuré pour un formulaire adaptatif
 
 * Utilisez des adresses e-mail distinctes pour configurer le compte [!DNL Adobe Sign] et pour le premier destinataire et le destinataire unique. L’adresse e-mail du premier destinataire ou du seul destinataire (s’il existe un destinataire unique) ne peut pas être identique au compte [!DNL Adobe Sign] utilisé pour configurer les services cloud AEM.
 
-## Articles connexes {#related-articles}
+>[!MORELIKETHIS]
+>
+>* [ [!DNL Adobe Sign] Intégration avec [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [Recommandations relatives à l’utilisation d’ [!DNL Adobe Sign] avec les formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
-* [Intégration d’ [!DNL Adobe Sign] à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
-* [Recommandations relatives à l’utilisation d’ [!DNL Adobe Sign] avec les formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+
+## Voir également {#see-also}
+
+{{see-also}}

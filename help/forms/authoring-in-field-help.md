@@ -4,10 +4,10 @@ description: AEM Forms vous permet d’ajouter une aide contextuelle aux champs 
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 50%
+source-wordcount: '384'
+ht-degree: 48%
 
 ---
 
@@ -65,3 +65,7 @@ L’ajout d’une aide pour le panneau affiche une **?** en regard de la descrip
 
 ![Exemple d’aide contextuelle au niveau d’un panneau](assets/photoshop-1.png)
 
+>[!MORELIKETHIS]
+>
+>* [Ajouter un texte d’espace réservé aux champs de formulaire](/help/forms/placeholder-text-in-aem-forms.md)
+>* [Ajouter une note de bas de page à un formulaire adaptatif pour le texte enrichi](/help/forms/footnotes-richtextsupport.md)

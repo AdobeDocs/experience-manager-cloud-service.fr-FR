@@ -2,10 +2,10 @@
 title: Comment configurer le connecteur de stockage unifié pour AEM Forms ?
 description: Découvrez comment gérer le connecteur de stockage unifié pour AEM Forms. Utilisez le connecteur de stockage unifié pour connecter AEM Forms à des stockages de données externes.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 95%
 
 ---
 
@@ -66,3 +66,10 @@ Voici nos recommandations concernant l’utilisation des workflows AEM et le sto
 * N’utilisez pas d’étape de workflow AEM personnalisée dans un modèle de workflow pour stocker des données dans le référentiel CRX DE.
 
 * Lorsque vous [configurez un modèle de processus AEM pour le stockage externe des données](#configure-workflow-external-data-storage), ne créez pas de colonnes personnalisées pour la boîte de réception AEM, car les valeurs des colonnes personnalisées ne sont pas récupérées si l’élément de travail de la boîte de réception AEM appartient à un processus marqué pour le stockage externe.
+
+>[!MORELIKETHIS]
+>
+>* [Configuration des sources de données pour AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configuration du stockage Azure pour AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Intégration de Microsoft Dynamics 365 et Salesforce à Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Ajout de Forms Portal à une page AEM Sites](/help/forms/configure-forms-portal.md)

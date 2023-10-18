@@ -2,9 +2,9 @@
 title: Comment gérer les métadonnées pour AEM Forms ?
 description: Les métadonnées permettent de catégoriser et d’organiser plus facilement les ressources. Les utilisateurs peuvent ainsi retrouver aisément une ressource spécifique.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1743'
 ht-degree: 96%
 
 ---
@@ -307,3 +307,8 @@ Un outil (l’éditeur de schéma de métadonnées) est proposé pour définir l
    Vous venez d’ajouter une propriété de métadonnées personnalisée.
 
 Tous les formulaires adaptatifs d’[!DNL AEM Forms] contiennent maintenant cette autre propriété de métadonnées. Vous pouvez la modifier dans la page de propriétés.
+
+
+## Voir également {#see-also}
+
+{{see-also}}

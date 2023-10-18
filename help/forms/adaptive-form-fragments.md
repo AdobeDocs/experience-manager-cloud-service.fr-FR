@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 96%
+source-wordcount: '2029'
+ht-degree: 95%
 
 ---
 
@@ -249,3 +249,7 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 ## Fragments de référence {#reference-fragments}
 
 Les fragments de formulaires adaptatifs de référence que vous pouvez utiliser pour créer votre formulaire sont disponibles. Pour plus d’informations, voir [Fragments de référence](reference-adaptive-form-fragments.md).
+
+>[!MORELIKETHIS]
+>
+>* [Fragments de formulaire adaptatif dans les composants principaux](/help/forms/adaptive-form-fragments-core-components.md)

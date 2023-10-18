@@ -5,10 +5,10 @@ uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 52%
+source-wordcount: '350'
+ht-degree: 53%
 
 ---
 
@@ -172,3 +172,8 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 Le package de contenu qui contient un exemple de formulaire adaptatif (demo/AFdemo) avec le code ci-dessus implémenté.
 
 [Obtenir le fichier](assets/dropdown-demo-content-1.0.1-snapshot.zip)
+
+
+>[!MORELIKETHIS]
+>
+>* [Préremplissage des champs de formulaires adaptatifs](/help/forms/prepopulate-adaptive-form-fields.md)

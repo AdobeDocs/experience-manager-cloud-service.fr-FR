@@ -2,10 +2,10 @@
 title: Quelles sont les considérations, les problèmes connus et les bonnes pratiques dans AEM Forms ?
 description: Considérations sur les problèmes connus et les bonnes pratiques pour les API de communication AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 98%
+source-wordcount: '1748'
+ht-degree: 96%
 
 ---
 
@@ -202,4 +202,12 @@ Par rapport à l’environnement On-Premise, le service cloud offre des avantage
 **Where is data hosted?** -->
 
 **Puis-je exécuter plusieurs opérations par lots simultanément ?**
-Oui, vous pouvez exécuter plusieurs opérations par lots de manière simultanée. Pour éviter tout conflit, utilisez toujours des dossiers source et de destination différents pour chaque opération.
+Oui, vous pouvez exécuter plusieurs opérations par lots simultanément. Pour éviter tout conflit, utilisez toujours des dossiers source et de destination différents pour chaque opération.
+
+>[!MORELIKETHIS]
+>
+>* [Présentation des communications as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Architecture as a Cloud Service d’AEM Forms pour les API de communication et de Forms adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Traitement des communications - API par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+

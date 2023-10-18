@@ -5,14 +5,14 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 89%
+source-wordcount: '214'
+ht-degree: 85%
 
 ---
 
-# Configuration d’une page de redirection {#configuring-redirect-page}
+# Configurer une page de redirection {#configuring-redirect-page}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -35,3 +35,7 @@ Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle le
 Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Les paramètres `status` et `owner` sont transmis pour toutes les actions d’envoi disponibles. Outre ces deux paramètres, d’autres paramètres sont transmis pour les actions d’envoi suivantes :
 
 * **[!UICONTROL Envoyer vers le point d’entrée REST]** : les paramètres ajoutés pour la correspondance entre le champ et le paramètre sont transmis. Les paramètres `status` et `owner` ne sont pas transmis à cette action d’envoi. Pour plus d’informations, voir [Configuration de l’action d’envoi Envoyer vers le point d’entrée REST](configuring-submit-actions.md).
+
+>[!MORELIKETHIS]
+>
+>* [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)

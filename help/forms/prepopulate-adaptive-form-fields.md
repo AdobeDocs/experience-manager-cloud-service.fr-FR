@@ -3,7 +3,7 @@ title: Comment préremplir les champs de formulaire adaptatif ?
 description: Pour préremplir les champs d’un formulaire adaptatif à l’aide de données existantes, les utilisateurs peuvent préremplir les informations de base d’un formulaire en se connectant à leur profil de réseau social.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 95%

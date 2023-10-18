@@ -2,9 +2,9 @@
 title: Comment obtenir des thèmes de référence et des modèles pour les formulaires AEM ?
 description: AEM Forms fournit des exemples de thèmes de formulaires adaptatifs, de modèles et de modèles de données de formulaire pour vous aider à créer rapidement des formulaires.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 90%
 
 ---
@@ -120,3 +120,8 @@ Vous pouvez obtenir les modèles de données de formulaire suivants en installan
 * Salesforce
 
 Pour plus d’informations sur l’utilisation de ces modèles, consultez [Configuration des services cloud Microsoft Dynamics 365 et Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=fr#configure-dynamics-cloud-service).
+
+
+## Voir également {#see-also}
+
+{{see-also}}

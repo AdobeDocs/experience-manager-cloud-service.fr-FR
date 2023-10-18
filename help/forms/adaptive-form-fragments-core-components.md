@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Ajouter des fragments de formulaire adaptatif, des fragments de formulaire adaptatif, Créer un fragment de formulaire, Ajouter un fragment à un formulaire adaptatif, Gérer des fragments
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 23%
+source-wordcount: '1716'
+ht-degree: 33%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 23%
 | AEM as a Cloud Service | Cet article |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
-Bien que chaque formulaire soit conçu à des fins spécifiques, certains segments sont communs à la plupart des formulaires, comme pour fournir des détails personnels tels que le nom et l’adresse, les détails de famille et les informations sur les revenus. Les développeurs de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé.
+Bien que chaque formulaire soit conçu à des fins spécifiques, certains segments sont communs à la plupart des formulaires, comme pour fournir des détails personnels tels que le nom et l’adresse, les détails de famille et les informations sur les revenus. Les personnes qui developpent des formulaire doivent créer ces segments communs à chaque fois qu’un formulaire est créé.
 
 Les formulaires adaptatifs fournissent un mécanisme pratique pour créer un segment de formulaire, comme un panneau ou un groupe de champs, une seule fois et pour les réutiliser dans des formulaires adaptatifs. Ces segments réutilisables et autonomes sont appelés fragments de formulaire adaptatif.
 
@@ -34,7 +34,7 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
 
 1. Connectez-vous à votre instance AEM Forms à l’adresse https://[*hostname*]:[*port*]/aem/forms.html.
 1. Cliquez sur **Créer > Fragment de formulaire adaptatif**.
-1. Indiquez le titre, le nom, la description et les balises du fragment. Veillez à spécifier un nom unique pour le fragment. S’il existe déjà un autre fragment portant le même nom, la création du fragment échoue.
+1. Indiquez le titre, le nom, la description et les balises du fragment. Assurez-vous de spécifier un nom unique pour le fragment. S’il existe déjà un autre fragment portant le même nom, la création du fragment échoue.
 1. Sélectionnez un modèle de formulaire. Vous pouvez créer un fragment de formulaire pour le Forms adaptatif basé sur les composants principaux ou le Forms adaptatif basé sur les composants de base.
    * Pour créer un fragment de formulaire pour les formulaires basés sur les composants principaux, sélectionnez un modèle basé sur les composants principaux.
    * Pour créer un fragment de formulaire pour les formulaires basés sur des composants de base, sélectionnez un modèle de composants de base. Par exemple, /libs/fd/af/templateForFragment/defaultFragmentTemplate.
@@ -45,7 +45,7 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
 
    ![Affiche le type de modèle dans l’onglet Modèle de formulaire.](assets/create-af-1-1.png)
 
-   * **Aucun**: indique de créer le fragment à partir de zéro sans utiliser de modèle de formulaire.
+   * **Aucun** : indique de créer le fragment à partir de zéro sans utiliser de modèle de formulaire.
 
      >[!NOTE]
      >
@@ -69,7 +69,7 @@ Une fois le fragment de formulaire adaptatif basé sur un schéma ou un modèle 
 
 Pour ajouter un fragment de formulaire adaptatif à un formulaire adaptatif :
 
-1. Ouvrez le formulaire adaptatif en mode d’édition.
+1. Ouvrez le de formulaire adaptatif en mode d’édition.
 1. Ajoutez la variable **fragment de formulaire adaptatif** du formulaire.
 1. Cliquez sur le bouton **Ressources** navigateur de contenu dans la barre latérale. Dans l’explorateur de ressources, sous les chemins d’accès, sélectionnez l’option **Fragments de formulaire adaptatif** . Tous les fragments de Forms adaptatif disponibles pour votre formulaire, selon le modèle du formulaire, s’affichent.
 
@@ -137,7 +137,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
   </tr>
   <tr>
    <td><p>Propriétés</p> </td>
-   <td><p>Ouvre le panneau Propriétés. Dans le panneau Propriétés, vous pouvez afficher et modifier les propriétés, générer un aperçu et charger une miniature pour le fragment sélectionné. Pour plus d’informations, voir <a>Gestion des métadonnées</a>.<br /> <br /> </p> </td>
+   <td><p>Ouvre le panneau Propriétés. Dans le panneau Propriétés, vous pouvez afficher et modifier les propriétés, générer un aperçu, et télécharger une vignette du fragment sélectionné. Pour plus d’informations, consultez la <a>gestion des métadonnées</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Copier</p> </td>
@@ -161,7 +161,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
   </tr>
   <tr>
    <td><p>Publier/Dépublier</p> </td>
-   <td><p>Publie/annule la publication du fragment sélectionné.<br /> <br /> </p> </td>
+   <td><p>Publie/dépublie le fragment sélectionné.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Supprimer</p> </td>
@@ -190,8 +190,8 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
 Les fragments de formulaire adaptatif de référence que vous pouvez utiliser pour créer votre formulaire sont disponibles.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
+
+
 ## Voir également {#see-also}
 
-* [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Création ou ajout de thèmes dans Forms adaptatif](/help/forms/using-themes-in-core-components.md)
-* [Utilisation de Google reCAPTCHA dans un formulaire adaptatif AEM basé sur les composants principaux](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

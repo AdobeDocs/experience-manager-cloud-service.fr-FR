@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2344'
-ht-degree: 72%
+source-wordcount: '2326'
+ht-degree: 75%
 
 ---
 
-# Création d’un formulaire adaptatif {#creating-an-adaptive-form-core-components}
+# Créer un formulaire adaptatif {#creating-an-adaptive-form-core-components}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -58,7 +58,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 > In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
-## Création d’un formulaire adaptatif  {#create-an-adaptive-form-core-components}
+## Créer un formulaire adaptatif  {#create-an-adaptive-form-core-components}
 
 1. Connectez-vous à [!DNL Experience Manager Forms] Instance de création. Il peut s’agir d’une instance cloud ou d’une instance de développement local.
 
@@ -126,13 +126,13 @@ Une action Envoyer permet de choisir la destination des données capturées via 
 
 -->
 
-## Rediriger l’utilisateur vers une page ou afficher un message de remerciement lors de l’envoi du formulaire
+## Rediriger des personnes utilisatrices vers une page ou afficher un message de remerciement lors de la soumission du formulaire
 
-Lors de l’envoi d’un formulaire, vous pouvez rediriger la personne utilisatrice vers une autre page web ou vers un message. Pour rediriger la personne utilisatrice ou configurer le message de remerciement :
+Lors de la soumission d’un formulaire, vous pouvez rediriger la personne utilisatrice vers une autre page web ou un message. Pour rediriger la personne utilisatrice ou configurer le message de remerciement :
 
 1. Ouvrez l’explorateur de contenu , puis sélectionnez l’option **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
 1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
-1. Ouvrez l’onglet **[!UICONTROL Envoi]**.
+1. Ouvrez l’onglet **[!UICONTROL Soumission]**.
 
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une page de redirection ou un message de remerciement.](/help/forms/assets/adaptive-forms-redirect-message.png)
 
@@ -166,7 +166,7 @@ Pour configurer un schéma JSON ou un modèle de données de formulaire pour vot
 
 ## Configuration d’un service de préremplissage  {#configure-prefill-service-for-form}
 
-Vous pouvez utiliser le service de préremplissage pour remplir automatiquement les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ou une utilisatrice ouvre un formulaire, les valeurs de ces champs sont préremplies. Vous pouvez :
+Vous pouvez utiliser le service de préremplissage pour remplir automatiquement les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ou une utilisatrice ouvre un formulaire, les valeurs de ces champs sont préremplies. Vous pouvez effectuer les actions suivantes :
 
 * [Créer un service de préremplissage personnalisé](/help/forms/prepopulate-adaptive-form-fields.md)
 * [Utiliser le service de préremplissage de modèle de données de formulaire](#fdm-prefill-service)
@@ -180,7 +180,7 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 1. Cliquez sur l’icône de propriétés de conteneur de formulaires adaptatifs ![propriétés de conteneur de formulaires adaptatifs](/help/forms/assets/configure-icon.svg). La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une page de redirection ou un message de remerciement.](/help/forms/assets/adaptive-forms-container-prefill-service.png)
 1. Sélectionnez un modèle de données de formulaire. Ouvrez l’onglet **[!UICONTROL De base]**. Dans le service de préremplissage, sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]**.
-1. Cliquez sur **[!UICONTROL Terminé]**. Votre formulaire adaptatif est maintenant configuré pour utiliser le préremplissage du modèle de données de formulaire. Vous pouvez désormais utiliser la variable [éditeur de règles](rule-editor.md) pour créer des règles afin de préremplir les champs du formulaire.
+1. Cliquez sur **[!UICONTROL Terminé]**. Votre formulaire adaptatif est maintenant configuré pour utiliser le préremplissage du modèle de données de formulaire. Vous pouvez désormais utiliser l’[éditeur de règles](rule-editor.md) pour créer des règles afin de préremplir les champs du formulaire.
 
 ## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model}
 
@@ -194,11 +194,12 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 ## Voir suivant
 
 * [Créer un style ou des thèmes pour vos formulaires](using-themes-in-core-components.md)
-* [Ajout d’un comportement dynamique aux formulaires à l’aide de l’éditeur de règles](rule-editor.md)
+* [Ajouter un comportement dynamique aux formulaires à l’aide de l’éditeur de règles](rule-editor.md)
 * [Définir la disposition des formulaires pour différentes tailles d’écran et différents types d’appareils](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Exemples de modèles de thèmes et de modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
+## Voir également {#see-also}
 
-## Article connexe {#related-article}
+{{see-also}}
 
-* [Création d’un formulaire adaptatif basé sur des composants principaux autonomes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=fr)
+

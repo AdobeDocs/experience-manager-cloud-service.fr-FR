@@ -2,9 +2,9 @@
 title: Comment générer un document d’enregistrement (DE) pour AEM Forms ?
 description: Découvrez comment générer un modèle de document d’enregistrement (DE) pour Forms adaptatif.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4142'
 ht-degree: 96%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 96%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Lorsqu’un formulaire est rempli ou envoyé, vous pouvez conserver un enregistrement du formulaire, au format imprimé ou au format de document. Ici, il s’agit d’un document d’enregistrement (DOR). Il s’agit d’une copie imprimable du formulaire envoyé. Vous pouvez également vous reporter au document d’enregistrement pour les informations que les clients ont remplies à une date ultérieure ou utiliser le document d’enregistrement pour archiver ensemble les formulaires et le contenu au format PDF.
 
@@ -503,3 +503,8 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
 1. Ouvrez le gestionnaire de configuration du SDK Cloud Service. L’URL par défaut est : <http://localhost:4502/system/console/configMgr>.
 1. Recherchez et ouvrez la configuration **[!UICONTROL du canal web pour la communication interactive et les formulaires adaptatifs]**.
 1. Spécifiez le chemin d’accès du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.
+
+
+## Voir également {#see-also}
+
+{{see-also}}

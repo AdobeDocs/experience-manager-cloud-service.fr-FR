@@ -2,7 +2,7 @@
 title: Comment configurer le stockage Azure ?
 description: Découvrez comment intégrer des formulaires à un serveur de stockage Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%
@@ -101,3 +101,13 @@ Après avoir défini les propriétés des objets du modèle de données comme cl
 >[!NOTE]
 >
 >Seules 10 clés de recherche sont autorisées par entité Azure, car Azure nʼautorise que 10 balises par objet Blob. Les valeurs des propriétés marquées comme clés de recherche sont stockées dans les balises d’index Azure après hachage.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

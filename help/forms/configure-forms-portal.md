@@ -2,9 +2,9 @@
 title: Comment créer un portail Formulaires sur une page Experience Manager Sites?
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1841'
 ht-degree: 94%
 
 ---
@@ -182,3 +182,19 @@ Vous pouvez configurer la fonction d’enregistrement automatique d’un formula
 1. Sélectionnez la case à cocher **[!UICONTROL Activer]** pour activer l’enregistrement automatique du formulaire. Vous pouvez configurer les éléments suivants :
 * Par défaut, l’[!UICONTROL Événement de formulaire adaptatift] est défini sur « true », ce qui implique que le formulaire est enregistré automatiquement après chaque événement.
 * Dans [!UICONTROL Déclencheur], configurez l’option pour déclencher l’enregistrement automatique en fonction de l’occurrence d’un événement ou d’un intervalle de temps spécifique.
+
+## Voir également {#see-also}
+
+{{see-also}}
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

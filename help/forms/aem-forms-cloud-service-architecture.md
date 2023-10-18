@@ -2,10 +2,10 @@
 title: Architecture as a Cloud Service d’AEM Forms pour les API de communication et de Forms adaptatifs
 description: Découvrez l’architecture d’ [!DNL AEM Forms] as a Cloud Service pour en savoir plus sur l’évolutivité, la résilience et les performances de la plateforme.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 98%
+source-wordcount: '1093'
+ht-degree: 96%
 
 ---
 
@@ -194,3 +194,10 @@ Lorsque vous configurez un environnement [!DNL AEM Forms] as a Cloud Service, vo
 ## Débogage {#debugging}
 
 AEM as a Cloud Service s’exécute sur une infrastructure cloud en libre-service et évolutive. Les développeurs AEM doivent donc comprendre et déboguer les différents aspects d’AEM as a Cloud Service, de la génération et du déploiement à l’obtention des informations sur l’exécution des applications AEM. Pour plus d’informations, consultez [Débogage d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=fr).
+
+
+>[!MORELIKETHIS]
+>
+>* [Présentation des communications as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Traitement par lots des communications as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)

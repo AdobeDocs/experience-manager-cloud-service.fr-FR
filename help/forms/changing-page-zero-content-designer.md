@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 63%
+source-wordcount: '248'
+ht-degree: 62%
 
 ---
 
@@ -45,3 +45,8 @@ Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de vis
 >[!NOTE]
 >
 >La propriété personnalisée que vous venez de créer peut ne pas s’afficher correctement dans la boîte de dialogue Propriétés du formulaire lors de la réouverture du formulaire. Cependant, il fonctionne correctement et le formulaire affiche le message mis à jour de la page zéro.
+
+>[!MORELIKETHIS]
+>
+>* [Télécharger et installer Forms Designer pour créer des modèles de document d’enregistrement](/help/forms/installing-configuring-designer.md)
+>* [Utilisation de Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire?](/help/forms/use-forms-designer.md)

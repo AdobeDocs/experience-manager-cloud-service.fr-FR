@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1939'
 ht-degree: 99%
 
 ---
@@ -215,8 +215,7 @@ Par exemple, pour exécuter le service de configuration tous les jours à 00:00
 Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
 
 
-## Articles connexes {#related-articles}
-
-* [Utiliser Adobe Acrobat Sign dans un formulaire adaptatif](working-with-adobe-sign.md)
-
-* [Recommandations relatives à l’utilisation d’Adobe Acrobat Sign avec des formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+>[!MORELIKETHIS]
+>
+>* [Signer électroniquement un formulaire à l’aide de signatures tactiles](/help/forms/signing-forms-using-scribble.md)
+>* [Recommandations relatives à l’utilisation d’Adobe Acrobat Sign avec des formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)

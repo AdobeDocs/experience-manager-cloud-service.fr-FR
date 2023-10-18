@@ -3,14 +3,14 @@ title: Comment intégrer AEM Forms à Adobe Analytics ?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1757'
 ht-degree: 83%
 
 ---
 
-# Intégration d’AEM Forms à [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+# Intégrer AEM Forms à [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -95,7 +95,7 @@ Après avoir installé l’extension **[!UICONTROL Adobe Experience Manager Form
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br />. </td>
+   <td>PageURL<br /> </td>
    <td>PanelTitle<br /> </td>
    <td>TimeSpent</td>
   </tr>
@@ -311,3 +311,7 @@ Perform the following steps to add AEM Forms and Adobe Analytics integration spe
 * Adobe Analytics can track form metrics only for authenticated users.
 
 -->
+
+>[!MORELIKETHIS]
+>
+>*[Activation d’Adobe Analytics dans un formulaire adaptatif](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)

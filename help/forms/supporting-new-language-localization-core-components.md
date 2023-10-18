@@ -2,10 +2,10 @@
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
 description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 22%
+source-wordcount: '1328'
+ht-degree: 23%
 
 ---
 
@@ -37,14 +37,14 @@ Avant de commencer à ajouter un paramètre régional pour le Forms adaptatif, v
   Dans les cas où aucune information locale n’est disponible, le formulaire adaptatif s’affiche dans sa langue d’origine, qui est la langue utilisée lors du développement du formulaire.
 
 
-## Conditions préalables requises {#prerequistes}
+## Prérequis {#prerequistes}
 
 Avant de commencer à ajouter un paramètre régional :
 
 * Installez un éditeur de texte brut (IDE) pour faciliter la modification. Les exemples de ce document reposent sur [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
 * Installation d’une version de [Git](https://git-scm.com), si elles ne sont pas disponibles sur votre ordinateur.
 * Cloner le [Composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components) référentiel. Pour cloner le référentiel :
-   1. Ouvrez la ligne de commande ou la fenêtre de terminal et accédez à un emplacement pour stocker le référentiel. Par exemple, `/adaptive-forms-core-components`.
+   1. Ouvrez la ligne de commande ou la fenêtre de terminal et accédez à un emplacement pour stocker le référentiel. Par exemple, `/adaptive-forms-core-components`
    1. Exécutez la commande suivante pour cloner le référentiel :
 
       ```SHELL
@@ -81,7 +81,7 @@ Pour ajouter la prise en charge d’un nouveau paramètre régional, procédez c
 
 1. Ouvrez le dossier du référentiel, cloné dans la section précédente, dans un éditeur de texte brut.
 1. Accédez au dossier `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. Vous pouvez trouver la variable `<appid>` dans le `archetype.properties` fichiers du projet.
-1. Ouvrez le fichier `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` pour le modifier. Si le fichier n’existe pas, créez-le. Un exemple de fichier avec les paramètres régionaux pris en charge ressemble à ce qui suit :
+1. Ouvrez le fichier `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` en mode d’édition. Si le fichier n’existe pas, créez-le. Un exemple de fichier avec les paramètres régionaux pris en charge ressemble à ce qui suit :
 
    ![Exemple de guide Localization Service.cfg.json](locales.png)
 
@@ -176,6 +176,10 @@ Effectuez les étapes suivantes pour prévisualiser un fichier adaptatif avec le
 
 ## En savoir plus
 
-* [Utilisation de la traduction automatique ou humaine pour traduire un formulaire adaptatif basé sur des composants principaux](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
-* [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Ajouter un formulaire adaptatif à une page AEM Sites ou un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+## Voir également {#see-also}
+
+{{see-also}}

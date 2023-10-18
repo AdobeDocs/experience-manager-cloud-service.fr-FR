@@ -2,10 +2,10 @@
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants de base ?
 description: Pour le Forms adaptatif, vous pouvez ajouter des paramètres régionaux pour plus de langues, à l’exception de celui fourni d’usine.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 79%
+source-wordcount: '1266'
+ht-degree: 80%
 
 ---
 
@@ -159,3 +159,8 @@ Obtenir un [exemple de bibliothèque cliente](/help/forms/assets/locale-support-
 * Lorsque de nouveaux champs sont ajoutés dans un formulaire adaptatif existant :
    * **Pour la traduction automatique** : recréez le dictionnaire et exécutez le projet de traduction. Les champs ajoutés à un formulaire adaptatif après la création d’un projet de traduction ne sont pas traduits.
    * **Pour la traduction humaine** : exportez le dictionnaire via `[server:port]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire avec les champs nouvellement ajoutés et téléchargez-le.
+
+
+## Voir également {#see-also}
+
+{{see-also}}
