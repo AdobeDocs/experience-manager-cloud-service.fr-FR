@@ -5,7 +5,7 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '13862'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -436,7 +436,7 @@ De la même manière, les informations qui impliquent de distinguer différents 
 
 >[!NOTE]
 >
-Pour connaître les exigences relatives aux alternatives aux couleurs, voir [Utilisation de la couleur](#use-of-color).
+Pour connaître les conditions requises en rapport avec les alternatives aux couleurs, voir [Utilisation de la couleur](#use-of-color).
 
 #### Comment procéder – Caractéristiques sensorielles (1.3.3) {#how-to-meet-sensory-characteristics}
 

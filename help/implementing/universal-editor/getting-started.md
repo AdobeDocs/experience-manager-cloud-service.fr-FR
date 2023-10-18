@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
 source-wordcount: '803'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Ce document vous guidera tout au fil de ces étapes.
 
 ## Demande d’accès à l’éditeur universel {#request-access}
 
-Vous devez d’abord demander l’accès à l’éditeur universel. Voir [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), connectez-vous et validez si vous avez accès à l’éditeur universel.
+Vous devez d’abord demander l’accès à l’éditeur universel. Accédez à [https://experience.adobe.com?lang=fr/#/aem/editor](https://experience.adobe.com/#/aem/editor), connectez-vous et vérifiez si vous avez accès à l’éditeur universel.
 
 Si vous n’y avez pas accès, vous pouvez le demander via un formulaire lié sur la même page.
 
@@ -163,15 +163,15 @@ itemid="urn:<referenceName>:<resource>"
 
 ## Vous pouvez désormais utiliser l’éditeur universel. {#youre-ready}
 
-Votre application est désormais instrumentée pour utiliser l’éditeur universel !
+Votre application est désormais instrumentée pour utiliser l’éditeur universel
 
-Voir [Création de contenu avec l’éditeur universel](authoring.md) pour savoir à quel point il est facile et intuitif pour les auteurs de contenu de créer du contenu à l’aide de l’éditeur universel.
+Reportez-vous à [Création de contenu avec l’éditeur universel](authoring.md) et découvrez à quel point il est facile et intuitif pour les auteurs et autrices de créer du contenu à l’aide de l’éditeur universel.
 
 ## Ressources supplémentaires {#additional-resources}
 
 Pour en savoir plus sur l’éditeur universel, consultez ces documents.
 
-* [Présentation de l’éditeur universel](introduction.md) - Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de vous permettre de proposer des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
+* [Présentation de l’éditeur universel](introduction.md) - Découvrez comment l’éditeur universel permet de modifier n’importe quel aspect d’un contenu dans n’importe quelle implémentation afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
 * [Création de contenu avec l’éditeur universel](authoring.md) - Découvrez à quel point il est facile et intuitif pour les créateurs et les créatrices de contenu de créer du contenu à l’aide de l’éditeur universel.
 * [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 * [Architecture de l’éditeur universel](architecture.md) - Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.

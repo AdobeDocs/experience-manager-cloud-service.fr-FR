@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 73%
+ht-degree: 76%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 73%
 >id="aemcloud_golive_troubleshooting"
 >title="Résolution des incidents liés à AEM"
 >abstract="Consultez les bonnes pratiques de développement continu et gérez les journaux avec des outils tels que Developer Console et CRXDE Lite pour résoudre les problèmes liés à AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=fr" text="Accès aux journaux et gestion des journaux"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=fr" text="Accéder aux journaux et les gérer"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=fr#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
 
 Ce parcours est la dernière partie. Vous apprendrez donc à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Vous devez veiller au nettoyage des fichiers temporaires, revoir les bonnes pratiques de développement continu et gérer les journaux.
@@ -36,7 +36,7 @@ Ce document décrit les outils disponibles pour résoudre les problèmes des env
 
 Le débogage des environnements de développeur d’AEM as a Cloud Service est disponible dans Developer Console pour les environnements de développement, d’évaluation et de production.
 
-Voir [Mise en oeuvre pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) pour en savoir plus sur les outils de développement.
+Pour en savoir plus sur les outils de développement, consultez la section [Implémentation pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools).
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -49,7 +49,7 @@ Voir [Développement avec le CRXDE Lite](/help/implementing/developing/tools/crx
 
 ## Gestion des journaux {#managing-logs}
 
-Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
+Les utilisateurs et utilisatrices peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
 Voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) pour savoir comment accéder aux journaux et les gérer via l’interface utilisateur ou à partir de l’API au moyen de Cloud Manager.
 

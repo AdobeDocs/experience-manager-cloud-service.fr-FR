@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1729'
-ht-degree: 70%
+ht-degree: 84%
 
 ---
 
@@ -28,9 +28,9 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment crée
 
 Avant de vous familiariser avec les fragments de contenu, voici une introduction (très) rapide à l’utilisation d’AEM...mais rien ne remplace vraiment l’expérience de connexion et d’utilisation du système.
 
-### Créer, prévisualiser et publier {#author-preview-publish}
+### Création, prévisualisation et publication {#author-preview-publish}
 
-Une installation AEM se compose généralement de trois environnements :
+Une installation AEM se compose généralement de trois environnements :
 
 * Création
 * Publication
@@ -40,11 +40,11 @@ Vous vous connectez et utilisez l’environnement de création pour générer vo
 
 Pour plus d’informations, consultez les concepts de création.
 
-Dans la **Fragments de contenu** , vous pouvez également publier sur la console **Service de prévisualisation**, pour le test et la prévisualisation, avant la publication. Voir Publication et aperçu d’un fragment.
+Dans la console **Fragments de contenu**, vous pouvez également publier sur le **Service de prévisualisation**, pour le test et la prévisualisation, avant la publication. Voir Publication et prévisualisation d’un fragment.
 
 ### Connexion {#signing-in}
 
-Comme pour la plupart des systèmes, vous devez vous connecter. En tant qu’auteur, vous recevez :
+Comme pour la plupart des systèmes, vous devez vous connecter. En tant qu’auteur ou autrice, vous recevez les informations suivantes :
 
 * Nom de l’utilisateur (compte)
 * Mot de passe
@@ -56,7 +56,7 @@ Votre compte a été configuré avec les privilèges dont vous avez besoin. Si v
 
 La première fois que vous vous connectez, un petit tutoriel en ligne vous présentera certaines des principales fonctionnalités de l’interface utilisateur.
 
-Vous pouvez ensuite utiliser le panneau de navigation pour accéder aux principales zones d’AEM. Pour les fragments de contenu, vous utilisez le **Fragments de contenu** (pour certaines actions, vous utiliserez également la méthode **Ressources** ).
+Vous pouvez ensuite utiliser le panneau de navigation pour accéder aux principales zones d’AEM. Pour les fragments de contenu, vous utilisez la console **Fragments de contenu** (pour certaines actions, vous utiliserez également la console **Ressources**).
 
 Vous pouvez ouvrir le panneau de navigation en sélectionnant l’icône d’Adobe en haut à gauche, puis la petite icône en forme de boussole.
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Créer des fragments de contenu {#authoring-content-fragments}
 
-C’était donc une introduction très rapide à l’interface utilisateur d’AEM, mais j’espère que vous avez eu la chance de l’essayer. Maintenant, revenons-en à votre véritable point d’intérêt : les fragments de contenu découplé.
+Malgré cette introduction très rapide à l’interface utilisateur d’AEM, j’espère que vous avez eu la chance de l’essayer. Maintenant, revenons-en à votre véritable point d’intérêt : les fragments de contenu découplé.
 
 Nous devrons passer en revue les éléments du début à la fin, mais il se peut que votre instance dispose de dossiers ou de fragments déjà créés, et qu’ils se trouvent à des emplacements différents. Les principes restent les mêmes.
 
@@ -141,7 +141,7 @@ Une boîte de dialogue s’ouvre dans laquelle vous pouvez saisir les informatio
 
 #### Utilisation des chemins et des balises pour limiter les modèles de fragment de contenu disponibles dans le dossier {#tags-paths-for-models-in-folder}
 
-Cette section est d’un niveau légèrement plus avancé. Vous n&#39;en avez pas vraiment besoin si vous commencez à essayer des choses, mais c&#39;est *very* utile lorsque vous avez de nombreux fragments. Il est donc bon de le savoir - même si vous ne l&#39;utilisez pas encore tout à fait.
+Cette section est d’un niveau légèrement plus avancé. Vous n’en avez pas vraiment besoin si vous venez juste de commencer, mais c&#39;est *très* utile lorsque vous avez de nombreux fragments. Il est donc bon de savoir qu’elle est là, même si vous ne l’exploiterez pas encore à son plein potentiel.
 
 Votre architecte de contenu aura créé tous les modèles de fragment de contenu requis pour votre projet actuel, ainsi que peut-être d’autres projets. Pour vous simplifier les choses ainsi qu’aux autres auteurs, vous pouvez limiter la liste des modèles disponibles pour un dossier spécifique.
 
@@ -196,7 +196,7 @@ Vous pouvez ouvrir un fragment immédiatement après sa création ou en le séle
 >* Le nouvel éditeur, principalement accessible à partir du **Fragments de contenu** console.
 >* L’éditeur d’origine, principalement accessible à partir de **Ressources** console.
 
-Lorsque l’éditeur s’ouvre pour la première fois, vous voyez :
+Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s’affichent :
 
 * barre d’outils supérieure : pour obtenir des informations clés et des actions
    * lien vers la console de fragments de contenu (icône Accueil)
@@ -216,7 +216,7 @@ Lorsque l’éditeur s’ouvre pour la première fois, vous voyez :
 
 Par exemple, un fragment peut :
 
-* Nécessite plusieurs informations, dont certaines avec un type spécifique. Pour le contenu sans interface utilisateur, les références sont essentielles (vous en apprendrez plus loin dans votre parcours).
+* Nécessite plusieurs informations, dont certaines avec un type spécifique. Pour le contenu découplé, les références sont essentielles (vous en apprendrez plus sur votre parcours ultérieurement).
 
 * Permet d&#39;écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
 
@@ -234,9 +234,9 @@ Confirmez vos mises à jour en effectuant l’une des opérations suivantes : *
 >
 >Pour plus d’informations, vous pouvez lire Variations – Création de fragments de contenu.
 
-#### Ce dont vous n’avez (probablement) pas besoin de vous soucier {#what-you-probably-do-not-need-to-worry-about}
+#### Ce dont vous ne devez (probablement) pas vous inquiéter {#what-you-probably-do-not-need-to-worry-about}
 
-Cette section peut sembler un peu étrange, mais dès que vous ouvrez l’éditeur de fragments de contenu et commencez à l’explorer, vous pouvez voir différentes options qui (probablement) ne s’appliquent pas à votre parcours sans interface en tant qu’auteur de contenu. Il s’agit simplement d’une rapide mise en garde sur ce que vous devriez pouvoir ignorer dans un contexte découplé :
+Cette section peut sembler un peu étrange, mais une fois que vous avez ouvert l’éditeur de fragments de contenu et que vous commencez à l’explorer, vous pouvez voir diverses options qui ne s’appliquent (probablement) pas à votre parcours découplé en tant qu’auteur ou autrice de contenu. Il s’agit simplement d’une rapide mise en garde sur ce que vous devriez pouvoir ignorer dans un contexte découplé :
 
 * **Modèles de fragment de contenu**
 
@@ -253,13 +253,13 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
 Une fois le fragment terminé, vous pouvez le **Publier** pour qu’il soit disponible pour les applications découplées.
 
-Les actions de publication sont disponibles dans l’éditeur :
+Les actions de publication sont disponibles dans l’éditeur :
 
 ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 >[!NOTE]
 >
->Vous pouvez également publier votre fragment à partir du **Ressources** ou **Fragments de contenu** console.
+>Vous pouvez également publier votre fragment à partir de la console **Ressources** ou **Fragments de contenu**.
 
 ## Prochaines étapes {#whats-next}
 
@@ -295,13 +295,13 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
    * Publication
 
-      * à partir de l’éditeur ; ou **Ressources** console
+      * Dans l’éditeur, ou la console **Ressources**
 
          * [Publication rapide](/help/assets/manage-publication.md#quick-publish)
 
          * [Gérer la publication](/help/assets/manage-publication.md#manage-publication)
 
-      * Dans la **Fragments de contenu** Console
+      * Dans la console **Fragments de contenu**
 
          * [Publication et aperçu d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 

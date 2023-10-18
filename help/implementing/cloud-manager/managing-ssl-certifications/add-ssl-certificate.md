@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -63,7 +63,7 @@ Pour ajouter un certificat à l’aide de Cloud Manager, procédez comme suit.
 
    * Toutes les erreurs détectées s’affichent.
       * Vous devez corriger toutes les erreurs avant de pouvoir enregistrer votre certificat.
-      * Voir [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
+      * Consultez la section [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre certificat.
 
@@ -73,7 +73,7 @@ Une fois enregistré, votre certificat s’affiche sous la forme d’une nouvell
 
 >[!NOTE]
 >
->Un utilisateur doit être membre de la fonction **Propriétaire de l’entreprise** ou **Responsable de déploiement** rôle pour installer un certificat SSL dans Cloud Manager.
+>L’utilisateur ou l’utilisatrice doit disposer du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour pouvoir installer un certificat SSL dans Cloud Manager.
 
 ## Erreurs de certificat {#certificate-errors}
 
@@ -81,7 +81,7 @@ Certaines erreurs peuvent se produire si un certificat n’est pas installé cor
 
 ### Politique de certificat {#certificate-policy}
 
-Si l’erreur suivante s’affiche, vérifiez la stratégie de votre certificat.
+Si l’erreur suivante s’affiche, veuillez vérifier la politique de votre certificat.
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.

@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -113,11 +113,11 @@ Plus précisément, le nombre et le type des programmes AEM pouvant être créé
 
 Cloud Manager a évolué sous la forme d’un portail en libre-service où les principaux composants d’AEM as a Cloud Service peuvent être créés et configurés :
 
-* Création et gestion de nouveaux programmes. Voir [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour plus d’informations.
+* Création et gestion de nouveaux programmes. Pour plus d’informations, consultez [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
-* Création et gestion des environnements AEM dans ces programmes. Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations.
+* Création et gestion des environnements AEM dans ces programmes. Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md).
 
-* Création et gestion des pipelines pour le déploiement du code client et de la configuration associée dans un environnement spécifique. Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour plus d’informations.
+* Création et gestion des pipelines pour le déploiement du code client et de la configuration associée dans un environnement spécifique. Pour plus d’informations, consultez [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 * Réception de notifications relatives à des événements de cycle de vie importants pour ces composants (par exemple, mises à jour de produits).
 
@@ -192,7 +192,7 @@ En raison de la séparation stricte du code et du contenu, les développeurs peu
 
 ### Développement local {#aem-as-a-cloud-service-developing-local-development}
 
-Pour permettre des itérations et un développement rapides, il est également possible de développer des applications AEM en dehors du contexte as a Cloud Service. À cette fin, les artefacts suivants sont mis à la disposition des développeurs :
+Pour assurer la rapidité des itérations et du développement, il est également possible de développer des applications AEM en dehors du contexte AEM as a Cloud Service. À cette fin, les artefacts suivants sont mis à la disposition des développeurs :
 
 * QuickStart AEM as a Cloud Service : programme d’installation autonome basé sur `.jar`, correspondant à la base de code la plus récente d’AEM, avec les mêmes capacités fonctionnelles et API.
 
@@ -242,7 +242,7 @@ Cela a pour effet de combiner les avantages suivants :
 >
 >Pour plus de détails, la section [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) est un bon point de départ.
 
-Les principes de base de l’interface utilisateur (IU) de création, pour Sites et Assets, sont très familiers pour toute personne qui a déjà utilisé AEM dans le passé.
+Les principes de base de l’interface utilisateur de création, tant pour Sites que pour Assets, seront très familiers pour toute personne ayant utilisé AEM dans le passé.
 
 La principale différence réside dans le fait que l’interface utilisateur est exclusivement tactile ; la version classique n’est plus disponible. Les fondamentaux restent par ailleurs inchangés, avec seulement quelques changements mineurs visibles.
 
@@ -274,6 +274,6 @@ Pour en savoir plus, voir :
 
 >[!TIP]
 >
->Une fois que vous disposez d’une vue d’ensemble d’AEM as a Cloud Service, vous pouvez rapidement vous y intégrer en examinant le [Parcours d’intégration](/help/journey-onboarding/overview.md).
+>Une fois que vous disposez d’une vue d’ensemble d’AEM as a Cloud Service, vous pouvez rapidement vous y intégrer en examinant le [Parcours d’intégration](/help/journey-onboarding/overview.md).
 >
 >Votre intégration est déjà faite ou vous êtes prêt à tester les fonctionnalités d’AEM ? Installez le [Module complémentaire des démonstrations de référence d’AEM](/help/journey-sites/demos-add-on/overview.md) pour explorer les fonctionnalités puissantes d’AEM à l’aide d’exemples enrichis.

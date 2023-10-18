@@ -5,7 +5,7 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Suivez ces étapes pour mettre vos environnements de programme Sandbox en veille
 
 1. Sur la carte **Environnements**, cliquez sur le bouton représentant des points de suspension et sélectionnez la **Developer Console**.
 
-   * Voir [Accès à Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) pour plus d’informations sur Developer Console.
+   * Consultez [Accès à Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) pour plus d’informations sur Developer Console.
 
    ![Option du menu Developer Console](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
 
 1. Sur la carte **Environnements**, cliquez sur le bouton représentant des points de suspension et sélectionnez la **Developer Console**.
 
-   * Voir [Accès à Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) pour plus d’informations sur Developer Console.
+   * Consultez [Accès à Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) pour plus d’informations sur Developer Console.
 
 1. Cliquez sur **De-hibernate** (Réactiver).
 

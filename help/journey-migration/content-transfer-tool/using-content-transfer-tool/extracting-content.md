@@ -5,7 +5,7 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 39%
+ht-degree: 44%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 39%
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 
 >[!NOTE]
->Si Amazon S3, Azure Data Store ou File Data Store sont utilisés comme type de magasin de données, vous pouvez exécuter l’étape de précopie facultative pour augmenter la vitesse de la phase d’extraction. L’étape de précopie est la plus efficace pour la première extraction et ingestion complètes. Voir [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) pour plus d’informations.
+>Si Amazon S3, Azure Data Store ou File Data Store sont utilisés comme type de magasin de données, vous pouvez exécuter l’étape de précopie facultative pour augmenter la vitesse de la phase d’extraction. L’étape de précopie est la plus efficace pour la première extraction et ingestion complète. Pour plus d’informations, consultez [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md).
 
 1. Sélectionnez un jeu de migration dans le **Transfert de contenu** assistant et cliquez sur **Extract** pour démarrer l’extraction.
 
@@ -63,7 +63,7 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
 
 >[!NOTE]
->Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service. Si vous avez utilisé l’étape de précopie pour la première extraction complète, vous pouvez ignorer la précopie pour les extractions de complément suivantes (si la taille du jeu de migration de complément est inférieure à 200 Go). La raison est qu’il peut ajouter du temps à l’ensemble du processus.
+>Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service. Si vous avez utilisé l’étape de précopie pour la première extraction complète, vous pouvez ignorer la précopie pour les extractions de complément suivantes (si la taille du jeu de migration de complément est inférieure à 200 Go). En effet, cela peut rallonger l’ensemble du processus.
 >En outre, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 Une fois le processus d’extraction terminé, vous pouvez transférer le contenu différentiel à l’aide de la méthode d’extraction de complément.

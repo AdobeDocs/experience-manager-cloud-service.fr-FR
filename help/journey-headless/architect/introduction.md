@@ -5,7 +5,7 @@ exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 03cf688168106f71f2df2511782be7c1f3cc0dae
 workflow-type: tm+mt
 source-wordcount: '749'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -23,9 +23,9 @@ Ce document vous aide à comprendre la diffusion de contenu découplé, comment 
 * **Audience** : débutant
 * **Objectif** : découvrez les concepts et la terminologie relatifs à la modélisation de contenu découplé.
 
-## Diffusion de contenu full stack {#full-stack}
+## Diffusion de contenu full-stack {#full-stack}
 
-Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme un emplacement central pour la gestion des messages, des marques et des communications. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
+Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les organisations les utilisent comme emplacement central pour la gestion des messages, de leur image de marque et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
 
 ![CMS full stack classique](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -66,7 +66,7 @@ Pour AEM, en tant qu’architecte de contenu, vous exécuterez la modélisation 
 
 En matière de développement, il s’agit d’un détail, mais ça pourrait vous intéresser, pour vous fournir une vue globale.
 
-Une fois que vous avez créé les modèles de fragment de contenu et que vos auteurs les ont utilisés pour générer le contenu, les applications sans interface utilisateur doivent accéder à ce contenu.
+Une fois que vous avez créé les modèles de fragment de contenu et que vos auteurs et autrices les ont utilisés pour générer le contenu, les applications découplées doivent accéder à ce contenu.
 
 Grâce à Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez accéder de manière sélective à vos fragments de contenu, à l’aide de l’API AEM GraphQL, pour renvoyer uniquement le contenu nécessaire. Grâce à l’API, un développeur peut formuler des requêtes qui sélectionnent un contenu spécifique. Ce processus de sélection est basé sur *vos* modèles de fragment de contenu.
 

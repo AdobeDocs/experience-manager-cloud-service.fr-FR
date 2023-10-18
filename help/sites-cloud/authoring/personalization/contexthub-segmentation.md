@@ -5,7 +5,7 @@ exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 77%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs.
 
 ## Accès aux segments {#accessing-segments}
 
-La variable [Audiences](audiences.md) La console permet de gérer les segments pour ContextHub et les audiences pour votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub.
+La console [Audiences](audiences.md) permet de gérer les segments pour ContextHub, ainsi que les audiences de votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub.
 
 Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**. Sélectionnez votre configuration (par exemple, le site WKND) pour visualiser vos segments :
 
@@ -71,7 +71,7 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
 >
 >Par conséquent, lors de la [création d’un segment](#creating-a-new-segment), vous devez sélectionner un **type de données** chaque fois que les types de valeurs comparées sont connus. Par exemple :
 >
->Lors de la comparaison de la propriété `profile/age`, vous savez déjà que le type comparé est une **nombre**, même si `profile/age` n’est pas défini, une comparaison `profile/age` moins de 30 est renvoyé **false**, comme vous l’attendriez.
+>Lorsque vous comparez la propriété `profile/age`, vous savez déjà que le type comparé sera un **nombre**. Donc, même si la propriété `profile/age` n’est pas définie, une comparaison `profile/age` inférieure à 30 retourne **faux**, comme prévu.
 
 ### Références {#references}
 
@@ -92,11 +92,11 @@ Pour définir votre nouveau segment, procédez comme suit :
 
    ![Ajouter un segment](../assets/contexthub-create-segment.png)
 
-1. Dans le **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
+1. Dans la section **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
 
    ![Nouveau segment](../assets/contexthub-new-segment.png)
 
-   Chaque segment comporte un paramètre d’amplification utilisé comme facteur de pondération. Un nombre plus élevé indique que le segment est sélectionné de préférence à un segment dont le nombre est plus faible dans les cas où plusieurs segments sont valides.
+   Chaque segment comporte un paramètre d’amplification utilisé comme facteur de pondération. Une valeur plus élevée indique que le segment est sélectionné de préférence à un segment ayant une valeur plus basse dans les cas où plusieurs segments sont valides.
 
    * Valeur minimale : `0`
    * Valeur maximale : `1000000`
@@ -114,7 +114,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
 ### Utilisation des conteneurs ET et OU {#using-and-and-or-containers}
 
-Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points de base :
+Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points importants :
 
 * Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé ; cela ne peut pas être changé, mais n’a pas d’effet sur le reste de votre définition de segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme des crochets de votre expression booléenne.
@@ -175,7 +175,7 @@ Vous pouvez imbriquer plusieurs opérateurs ET et OU selon les besoins.
 
 1. Enregistrez le script avec `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Si le script dépend de propriétés supplémentaires, il doit appeler `this.dependOn()`. Par exemple, si le script dépend de `profile/age`:
+Si le script dépend de propriétés supplémentaires, il doit appeler `this.dependOn()`. Par exemple, si le script dépend de `profile/age` :
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -184,8 +184,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 #### Référencement d’un script {#referencing-a-script}
 
 1. Créez un segment ContextHub.
-1. Ajouter **Référence de script** à l’emplacement souhaité du segment.
-1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. If [correctement configuré](#defining-a-script-to-reference), le script doit être disponible dans la variable **Nom du script** menu déroulant.
+1. Ajoutez le composant **Référence de script** à l’emplacement souhaité du segment.
+1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. S’il est [correctement configuré](#defining-a-script-to-reference), le script doit être disponible dans le menu déroulant **Nom du script**.
 
 ## Organisation des segments {#organizing-segments}
 
@@ -199,8 +199,8 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
-   * La variable **Nom** devient le nom du noeud dans le référentiel.
-      * Il est généré automatiquement en fonction du titre et adapté en fonction des [Conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md).
+   * Le **nom** deviendra celui du nœud dans le référentiel.
+      * Il sera généré automatiquement en fonction du titre et ajusté selon les [conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](../assets/contexthub-create-folder.png)
@@ -262,8 +262,8 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 
 1. Affichez l’aperçu d’une page.
 1. Cliquez sur l’icône ContextHub pour afficher la barre d’outils ContextHub.
-1. Sélectionnez une personne qui correspond au segment que vous avez créé.
-1. ContextHub résout les segments applicables pour la personne sélectionnée.
+1. Sélectionnez une personne qui correspond au segment que vous avez créé
+1. ContextHub résout les segments applicables pour la personne sélectionnée
 
 Par exemple, notre définition de segment simple identifiant les utilisateurs à Bâle repose sur l’emplacement de l’utilisateur. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :
 
@@ -277,11 +277,11 @@ Ou s’il n’est pas résolu :
 >
 >Toutes les caractéristiques sont résolues immédiatement, bien que la plupart ne soient modifiées qu’au rechargement de la page.
 
-De tels tests peuvent également être effectués sur les pages de contenu et en combinaison avec du contenu ciblé et des **Activités** et **Expériences**.
+Des tests comme celui-ci peuvent également être effectués sur les pages de contenu et en combinaison avec du contenu ciblé et des **Activités** et **Expériences** connexes.
 
-Si vous avez configuré une activité et une expérience, vous pouvez tester facilement votre segment avec l’activité. Pour plus d’informations sur la configuration d’une activité, voir [documentation sur la création de contenu ciblé](targeted-content.md).
+Si vous avez configuré une activité et une expérience, vous pouvez tester facilement votre segment avec l’activité. Pour plus d’informations sur la configuration d’une activité, consultez la [documentation sur la création de contenu ciblé](targeted-content.md).
 
-1. Dans le mode d’édition d’une page sur laquelle vous avez configuré du contenu ciblé, vous pouvez constater que le contenu est ciblé à l’aide d’une icône de flèche sur le contenu.
+1. En mode de modification d’une page sur laquelle vous avez configuré du contenu ciblé, vous pouvez constater que le contenu est ciblé par le biais d’une icône de flèche sur le contenu.
 1. Basculez vers le mode Aperçu et, avec ContextHub, passez à une personne qui ne correspond pas à la segmentation configurée pour l’expérience.
 1. Passez à une personne qui correspond à la segmentation configurée pour l’expérience et constatez que l’expérience change en conséquence.
 

@@ -5,7 +5,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    >[!NOTE]
    >
-   >Pour ajouter des pages et/ou des branches à un lancement, elles doivent se trouver dans un site ; c’est-à-dire, sous une racine de niveau supérieur commune.
+   >Pour ajouter des pages et/ou des branches à un lancement, elles doivent se trouver dans un site ; c’est-à-dire sous une racine de niveau supérieur commune.
    >
    >Si un site contient des racines de langue sous le niveau supérieur, les pages et les branches d’un lancement doivent se trouver sous une racine de langue commune.
 
@@ -79,7 +79,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 1. À l’étape **Propriétés** de l’assistant, vous pouvez définir les paramètres suivants :
 
    * **Titre du lancement** : nom du lancement. Le nom doit avoir un sens pour les personnes chargées de la création.
-   * **avec du contenu existant**: le contenu d’origine est utilisé pour créer le lancement.
+   * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement.
    * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
    * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option transforme le lancement en [Live Copy](/help/sites-cloud/administering/msm/overview.md). Par défaut, cette option est sélectionnée.-->
    * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements – Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
@@ -93,7 +93,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * la [**console Lancements**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) ;
    * les [**références** de la **console Sites**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console).
 
-### Création d’un lancement avec un nouveau modèle {#create-launch-with-new-template}
+### Créer un lancement avec un nouveau modèle {#create-launch-with-new-template}
 
 Lors de la création d’un lancement, vous pouvez utiliser un nouveau modèle :
 
@@ -112,7 +112,7 @@ La sélection de cette option va :
 
 >[!CAUTION]
 >
->Comme un autre modèle est utilisé, la nouvelle page est vide. En raison de la structure de page différente, aucun contenu n’est copié.
+>Étant donné qu’un modèle différent est utilisé, la nouvelle page est vide. En raison de la différence de structure de page, aucun contenu n’est copié.
 >
 >Ce mécanisme peut être utilisé pour modifier le modèle d’une [page existante](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), bien que la perte du contenu doit être envisagée.
 
@@ -146,7 +146,7 @@ Pour créer un lancement imbriqué à partir de la console **Sites**, sur la bas
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) pour afficher les actions disponibles.
 1. Sélectionnez **Créer un lancement** pour ouvrir l’assistant (puisque la source a déjà été sélectionnée, l’assistant ignore l’étape **Sélectionner la source**).
 1. Entrez le **titre du lancement** et tous les autres détails demandés (comme s’il s’agissait d’un lancement normal).
-1. Utilisez **Créer** pour terminer le processus et créer votre lancement. La boîte de dialogue de confirmation vous demandera si vous souhaitez ouvrir le lancement immédiatement.
+1. Cliquez ou appuyez sur **Créer** pour terminer le processus et créer votre lancement. La boîte de dialogue de confirmation vous demandera si vous souhaitez ouvrir le lancement immédiatement.
 
 Si vous sélectionnez **Terminé**, vous revenez au rail **Références** de la console **Sites**. Si vous sélectionnez la page appropriée, votre nouveau lancement est affiché.
 

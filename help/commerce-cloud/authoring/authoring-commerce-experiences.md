@@ -5,13 +5,13 @@ exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
 # Création d’expériences commerciales {#authoring-commerce-experiences}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Le module complémentaire CIF étend la création d’AEM avec des fonctionnalités spécifiques au commerce. Cela permet aux auteurs de créer et de gérer efficacement des expériences liées au commerce en accédant aux données et au contenu des produits sans quitter le contexte.
 
@@ -69,9 +69,9 @@ Les pages de catalogue de produits CIF sont des pages virtuelles rendues à la 
 
 ![Éditeur de texte enrichi](../assets/authoring/RTE.png)
 
-    >[!REMARQUE]
+    >[!NOTE]
     >
-    > Si la catégorie et le produit sont sélectionnés, le produit est sélectionné.
+    > Si la catégorie et le produit sont sélectionnés, le produit est pris.
 
 Cela crée un espace réservé pour un lien qui est remplacé par un lien réel lors du rendu de la page.
 

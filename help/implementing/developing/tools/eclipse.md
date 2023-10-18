@@ -5,7 +5,7 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
 source-wordcount: '1199'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 ![Logo Outils de développement Experience Manager pour Eclipse](assets/eclipse-logo.png)
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Les _outils de développement Experience Manager pour Eclipse_ sont un plug-in Eclipse basé sur le [plug-in Eclipse pour Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) disponible avec Apache License 2.
 
@@ -34,7 +34,7 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 
 >[!NOTE]
 >
->Sur macOS, cliquez avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionnez **Afficher le contenu du module** pour rechercher votre `eclipse.ini`**.**
+>Sous macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Voir le contenu du package** pour trouver le fichier `eclipse.ini`**.**
 
 ## Comment installer AEM Developer Tools pour Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -56,9 +56,9 @@ Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous po
 1. Cliquez sur **Next** (Suivant).
 1. Dans la fenêtre **Install Details** (Détails de l’installation), cliquez de nouveau sur **Next** (Suivant).
 1. Acceptez les contrats de licence et cliquez sur **Finish** (Terminer).
-1. Cliquez sur **RestartNow** pour redémarrer Eclipse.
+1. Cliquez sur **Redémarrer maintenant** pour redémarrer Eclipse.
 
-## La Perspective AEM {#the-aem-perspective}
+## La perspective d’AEM {#the-aem-perspective}
 
 Dans Eclipse, une perspective détermine les actions et les vues disponibles dans une fenêtre et permet une interaction axée sur les tâches avec les ressources. Pour plus d’informations sur les perspectives, consultez la [documentation d’Eclipse.](https://help.eclipse.org/latest/index.jsp)
 
@@ -104,7 +104,7 @@ Pour créer l’exemple de projet, procédez comme suit :
 
 1. Vous devez ensuite configurer un serveur AEM auquel Eclipse se connectera.
 
-   Pour utiliser la fonction de débogueur, vous devez avoir commencé AEM en mode de débogage, ce qui peut être réalisé, car en ajoutant le code suivant à la ligne de commande :
+   Pour utiliser la fonctionnalité de débogage, vous devez avoir démarré AEM en mode de débogage, ce qui peut être réalisé en ajoutant ce qui suit à la ligne de commande :
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123

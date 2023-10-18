@@ -7,13 +7,13 @@ exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Création et synchronisation de Live Copies {#creating-and-synchronizing-live-copies}
 
-Vous pouvez créer une Live Copy à partir d’une configuration de page ou de plan directeur afin de réutiliser ce contenu sur votre site. En paramétrant l’héritage et la synchronisation, vous pouvez contrôler la propagation des modifications apportées au contenu.
+Vous pouvez créer une Live Copy à partir d’une configuration de page ou de plan directeur afin d’utiliser ce contenu plusieurs fois sur votre site. En gérant l’héritage et la synchronisation, vous pouvez contrôler la propagation des modifications apportées au contenu.
 
 ## Gestion des configurations de plans directeurs {#managing-blueprint-configurations}
 
@@ -77,7 +77,7 @@ Vous pouvez modifier ou supprimer une configuration de plan directeur existante�
 
    ![Configurations de plans directeurs](../assets/blueprint-configurations.png)
 
-1. Sélectionnez la configuration de plan directeur requise ; les actions appropriées deviennent disponibles dans la barre d’outils :
+1. Sélectionnez la configuration de plan directeur requise. Les actions appropriées deviennent disponibles dans la barre d’outils :
 
    * **Propriétés** : permet d’afficher et de modifier les propriétés de la configuration.
    * **Supprimer**
@@ -101,7 +101,7 @@ Vous pouvez créer une Live Copy de n’importe quelle page :
 
 La seule différence est que la disponibilité de la commande **Déployer** sur les pages source/de plan directeur dépend du référencement ou non de la source par une configuration de plan directeur :
 
-* Si vous créez une Live Copy à partir d’une page source qui **is** référencée dans une configuration de plan directeur, la commande Déployer est disponible sur la ou les pages source/de plan directeur.
+* Si vous créez la Live Copy à partir d’une page source qui **est** référencée dans une configuration de plan directeur, la commande Déployer sera disponible sur la ou les pages source/de plan directeur.
 * Si vous créez la Live Copy à partir d’une page source qui n’est **pas** référencée dans une configuration de plan directeur, la commande Déployer ne sera pas disponible sur la ou les pages source/de plan directeur.
 
 Pour créer une Live Copy :
@@ -134,8 +134,8 @@ Pour créer une Live Copy :
    * Cochée : crée une Live Copy de la page sélectionnée uniquement (Live Copy superficielle)
    * Non cochée : crée une Live Copy qui comprend tous les descendants de la page sélectionnée (Live Copy profonde)
 
-1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la liste déroulante **Configurations de déploiement** pour les sélectionner. Les configurations sélectionnées s’affichent sous le sélecteur de liste déroulante.
-1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche. Vous pouvez sélectionner l’une des options suivantes : **Ouvrir** ou **Terminé**.
+1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la liste déroulante **Configurations de déploiement** pour les sélectionner. Les configurations sélectionnées s’affichent sous le sélecteur déroulant.
+1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche où vous pouvez sélectionner **Ouvrir** ou **Terminé**.
 
    >[!NOTE]
    >
@@ -164,7 +164,7 @@ Lorsque vous créez le site, saisissez des valeurs pour les propriétés suivant
 
 Pour créer une Live Copy d’un site à partir d’une configuration de plan directeur :
 
-1. Dans le **Sites** console, sélectionnez **Créer**, puis **Site** dans le sélecteur de liste déroulante.
+1. Dans la console **Sites**, sélectionnez **Créer**, puis **Site** dans le sélecteur déroulant.
 1. Sélectionnez la configuration de plan directeur à utiliser comme source de la Live Copy et cliquez sur **Suivant** :
 
    ![Création d’un site à partir d’un plan directeur](../assets/create-site-from-blueprint.png)
@@ -245,7 +245,7 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 
    ![Définir l’heure de déploiement](../assets/rollout-now-later.png)
 
-Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [***État des tâches asynchrones** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [***Statut des tâches asynchrones**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Déploiement d’un plan directeur à partir du rail de référence {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -256,7 +256,7 @@ Les déploiements sont traités comme des tâches asynchrones et peuvent être v
 
    ![Plan directeur de déploiement à partir du rail des références](../assets/rollout-blueprint-from-references.png)
 
-1. Vous êtes invité à confirmer les détails du déploiement :
+1. Le système vous invite à confirmer les détails du déploiement :
 
    * **Étendue du déploiement** :
 
@@ -270,7 +270,7 @@ Les déploiements sont traités comme des tâches asynchrones et peuvent être v
 
 1. Après avoir défini ces détails, sélectionnez **Déployer** pour exécuter l’opération.
 
-Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [**État des tâches asynchrones** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [**Statut des tâches asynchrones**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Déploiement d’un plan directeur de l’aperçu de la Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ L’action [**Déployer** est également disponible dans l’aperçu de la Live 
 
    ![Définir l’heure de déploiement](../assets/rollout-now-later.png)
 
-Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [**État des tâches asynchrones** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [**Statut des tâches asynchrones**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Synchronisation d’une Live Copy {#synchronizing-a-live-copy}
 
@@ -309,9 +309,9 @@ Synchronisez une Live Copy pour extraire des modifications de la source vers la
 
    ![Bouton Synchroniser](../assets/synchronize.png)
 
-   Une confirmation est demandée, utilisez **Synchronisation** pour continuer.
+   Une confirmation est demandée ; utilisez **Synchroniser** pour continuer.
 
-#### Synchronisation d’une Live Copy à partir de l’aperçu de la Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
+#### Synchroniser une Live Copy à partir de l’aperçu de la Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
 
 L’[action Syncroniser est également disponible dans la vue d’ensemble de la Live Copy](live-copy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
@@ -335,7 +335,7 @@ Pour modifier le contenu de Live Copy, vous pouvez :
 >
 >Si vous créez manuellement une nouvelle page dans la Live Copy, la nouvelle page est locale à la Live Copy, ce qui signifie qu’elle n’a pas de page source correspondante à laquelle être rattachée.
 >
->Il est recommandé de créer une page locale faisant partie de la relation afin de créer la page locale dans la source et d’effectuer un déploiement profond. Ceci a pour effet de créer la page localement en tant que Live Copies.
+>Une bonne pratique vous permettant de créer une page locale qui fait partie de la relation, consiste à créer la page locale dans la source et d’effectuer un déploiement en profondeur. Ceci a pour effet de créer la page localement en tant que Live Copies.
 
 >[!NOTE]
 >
@@ -423,13 +423,13 @@ Lorsque cette option est sélectionnée, la boîte de dialogue s’affiche. Vous
 
 L’[action Reprendre est également disponible dans l’aperçu de la Live Copy](live-copy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
-1. Ouvrez le [Présentation de la Live Copy](live-copy-overview.md#using-the-live-copy-overview) et sélectionnez une page Live Copy suspendue. La page s’affiche comme suit : **HÉRITAGE ANNULÉ**.
+1. Ouvrez l’[aperçu de la Live Copy](live-copy-overview.md#using-the-live-copy-overview) et sélectionnez une page Live Copy suspendue. La page affichera **HÉRITAGE ANNULÉ**.
 1. Sélectionnez **Reprendre** dans la barre d’outils.
 1. Indiquez si vous souhaitez synchroniser la page après le rétablissement de l’héritage, puis confirmez l’action **Reprendre** dans la boîte de dialogue **Reprendre la Live Copy**.
 
 ### Changement de la profondeur d’héritage (superficielle/profonde) {#changing-inheritance-depth-shallow-deep}
 
-Sur une Live Copy existante, vous pouvez modifier la profondeur d’une page, c’est-à-dire si les pages enfants sont incluses.
+Sur une Live Copy existante, vous pouvez changer la profondeur d’une page, c’est-à-dire indiquer si les pages enfants sont incluses.
 
 * Le passage à une Live Copy superficielle :
 
@@ -498,7 +498,7 @@ Pour activer l’héritage pour un composant, appuyez ou cliquez sur **Réactive
 Si une Live Copy contient des composants faisant partie d’un système de paragraphes, l’héritage de ce système de paragraphes suit les règles suivantes :
 
 * L’ordre des composants dans un système de paragraphes hérité peut être modifié, même si l’héritage est établi.
-* Lors du déploiement, l’ordre des composants est restauré à partir du plan directeur. Si de nouveaux composants ont été ajoutés à la Live Copy avant le déploiement, ils sont réorganisés avec les composants au-dessus desquels ils ont été ajoutés.
+* Sur le déploiement, l’ordre des composants est restauré à partir du plan directeur. Si de nouveaux composants ont été ajoutés à la Live Copy avant le déploiement, ils sont réorganisés avec les composants au-dessus desquels ils ont été ajoutés.
 * Si l’héritage du système de paragraphes est annulé, l’ordre des composants n’est pas restauré lors du déploiement et reste inchangé dans la Live Copy.
 
 >[!NOTE]
@@ -544,7 +544,7 @@ Pour activer l’héritage d’une propriété, appuyez ou cliquez sur l’icôn
 
 ### Réinitialisation d’une page Live Copy {#resetting-a-live-copy-page}
 
-Vous pouvez réinitialiser une page Live Copy pour effectuer les opérations suivantes :
+Vous pouvez réinitialiser une page Live Copy pour effectuer les opérations suivantes :
 
 * supprimer toutes les annulations d’héritage ;
 * restaurer la page au même statut que la page source.
@@ -590,9 +590,9 @@ Pour suivre les modifications que vous avez apportées, vous pouvez afficher la 
 
    ![Comparaison aux Live Copies](../assets/compare-live-copy.png)
 
-1. Les pages Live Copy et de plan directeur sont ouvertes côte à côte.
+1. Les pages Live Copy et les pages du plan directeur s’ouvrent côte à côte.
 
-   Pour obtenir des informations complètes sur l’utilisation de cette fonction, consultez [Différence entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
+   Pour obtenir des informations complètes sur l’utilisation de cette fonctionnaité, consultez [Différence entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Désolidarisation d’une Live Copy {#detaching-a-live-copy}
 
@@ -641,9 +641,9 @@ Pour désolidariser une Live Copy :
 
    ![Bouton Désolidariser](../assets/detach-button.png)
 
-1. Une boîte de dialogue de confirmation s’affiche, sélectionnez **Désolidariser** pour terminer l’action.
+1. Une boîte de dialogue de confirmation s’affiche. Sélectionnez **Désolidariser** pour terminer l’action.
 
-### Désolidarisation d’une page Live Copy à partir de l’aperçu de la Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
+### Dissocier une page Live Copy de l’aperçu de la Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 
 L’[action Désolidariser est également disponible dans la vue d’ensemble de la Live Copy](live-copy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 

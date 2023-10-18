@@ -5,13 +5,13 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
 # Guide de référence des composants {#components-reference-guide}
 
-Les composants sont essentiels à la création d’une expérience dans AEM. Les [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) facilitent la prise en main d’un ensemble de composants robustes et prêts à l’emploi. La variable [Tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) explique au développeur comment utiliser ces outils et comment créer des composants personnalisés pour créer un site AEM.
+Les composants sont essentiels à la création d’une expérience dans AEM. Les [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) facilitent la prise en main d’un ensemble de composants robustes et prêts à l’emploi. Le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) explique à l’équipe de développement comment utiliser ces outils et comment créer des composants personnalisés pour créer un site AEM.
 
 >[!TIP]
 >
@@ -19,7 +19,7 @@ Les composants sont essentiels à la création d’une expérience dans AEM. Les
 
 Comme le tutoriel WKND aborde la plupart des cas d’utilisation, ce document est uniquement conçu comme un supplément à ces ressources. Il présente des détails techniques sur la structuration et la configuration des composants dans AEM et n’est pas conçu comme un guide de prise en main.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Cette section décrit les concepts et les problèmes majeurs et sert d’introduction aux informations dont vous avez besoin pour développer vos propres composants.
 
@@ -55,7 +55,7 @@ Ainsi, vous avez seulement besoin de redéfinir les modifications à apporter et
 
 ### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
 
-Votre composant est rendu avec [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir les balises HTML nécessaires pour réaliser le rendu du contenu selon les besoins, dans les environnements de création et de publication.
+Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir les balises HTML nécessaires pour réaliser le rendu du contenu selon les besoins, dans les environnements de création et de publication.
 
 Il est recommandé de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
@@ -122,7 +122,7 @@ L’icône ou l’abréviation du composant est définie via les propriétés JC
 1. `abbreviation` – Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
    * L’abréviation devrait être limitée à deux caractères.
    * La saisie d’une chaîne vide crée l’abréviation à partir des deux premiers caractères de la propriété `jcr:title`.
-      * Par exemple, &quot;Im&quot; pour &quot;Image&quot;
+      * Par exemple, « Im » pour « Image »
       * Le titre localisé est utilisé pour créer l’abréviation.
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
 1. `cq:icon.png` ou `cq:icon.svg` – Icône du composant, affichée dans le navigateur de composants
@@ -166,14 +166,14 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
 | Nom | Type | Description |
 |---|---|---|
 | `.` | `cq:Component` | Ceci représente le composant actuel. Un composant possède le type de noeud `cq:Component`. |
-| `componentGroup` | `String` | Il s’agit du groupe sous lequel le composant peut être sélectionné dans le [navigateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Une valeur commençant par `.` est utilisée pour les composants qui ne peuvent pas être sélectionnés dans l’interface utilisateur, tels que les composants de base dont héritent d’autres composants. |
+| `componentGroup` | `String` | Il s’agit du groupe sous lequel le composant peut être sélectionné dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Une valeur commençant par `.` est utilisée pour les composants qui ne peuvent pas être sélectionnés dans l’interface utilisateur, tels que les composants de base dont héritent d’autres composants. |
 | `cq:isContainer` | `Boolean` | Cela indique si le composant est un composant de type « container » qui peut donc contenir d’autres composants, tels qu’un système de paragraphes. |
 | `cq:dialog` | `nt:unstructured` | Définition de la boîte de dialogue de modification du composant. |
 | `cq:design_dialog` | `nt:unstructured` | Définition de la boîte de dialogue de conception du composant. |
 | `cq:editConfig` | `cq:EditConfig` | Définit la configuration de [modification du composant.](#edit-behavior) |
 | `cq:htmlTag` | `nt:unstructured` | Renvoie des attributs de balise supplémentaires ajoutés à la balise HTML environnante. Active l’ajout d’attributs aux divs générés automatiquement. |
 | `cq:noDecoration` | `Boolean` | Si la valeur est true, le composant n’est pas rendu avec les classes div et css générées automatiquement. |
-| `cq:template` | `nt:unstructured` | S’il est trouvé, ce noeud est utilisé comme modèle de contenu lorsque le composant est ajouté à partir de l’explorateur de composants. |
+| `cq:template` | `nt:unstructured` | S’il est détecté, ce nœud est utilisé comme modèle de contenu lorsque le composant est ajouté depuis l’explorateur de composants. |
 | `jcr:created` | `Date` | Date de création du composant. |
 | `jcr:description` | `String` | Description du composant. |
 | `jcr:title` | `String` | Titre du composant. |
@@ -223,7 +223,7 @@ Dans la boîte de dialogue, des champs individuels sont définis :
 
 Les boîtes de dialogue de conception sont similaires aux boîtes de dialogue utilisées pour modifier et configurer le contenu, mais elles fournissent une interface permettant aux auteurs de modèles de configurer et de fournir des détails de conception pour ce composant sur un modèle de page. Les modèles de page sont ensuite utilisés par les auteurs de contenu pour créer des pages de contenu. Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/features/templates.md) pour plus de détails sur la création des modèles.
 
-[Les boîtes de dialogue de création sont utilisées lors de la modification d’un modèle de page](/help/sites-cloud/authoring/features/templates.md), bien qu’elles ne soient pas nécessaires pour tous les composants. Par exemple, la variable **Titre** et **Composants d’image** toutes deux comportent des boîtes de dialogue de conception, tandis que la propriété **Composant Partage sur les réseaux sociaux** ne le fait pas.
+[Les boîtes de dialogue de création sont utilisées lors de la modification d’un modèle de page](/help/sites-cloud/authoring/features/templates.md), bien qu’elles ne soient pas nécessaires pour tous les composants. Par exemple, les composants **Titre** et **Image** ont tous deux des boîtes de dialogue de conception, contrairement au composant **Partage sur les réseaux sociaux**.
 
 ### IU Coral et IU Granite {#coral-and-granite}
 
@@ -276,7 +276,7 @@ Après avoir créé un composant, vous devez l’activer pour l’utiliser. Son 
 
 ### Ajout de votre composant au modèle {#adding-your-component-to-the-template}
 
-Une fois qu’un composant a été défini, il doit être rendu disponible pour utilisation. Pour permettre l’utilisation d’un composant dans un modèle, vous devez activer ce composant dans les politiques du conteneur de disposition du modèle.
+Une fois qu’un composant a été défini, il doit être disponible pour utilisation. Pour permettre l’utilisation d’un composant dans un modèle, vous devez activer ce composant dans les politiques du conteneur de disposition du modèle.
 
 Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/features/templates.md) pour plus de détails sur la création des modèles.
 
@@ -321,7 +321,7 @@ Il existe de nombreuses configurations dans AEM. Vous pouvez facilement recherch
 
 Les composants doivent toujours générer du code HTML visible par l’auteur, même si le composant ne comporte aucun contenu, sans quoi il pourrait disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent, mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne pourraient pas sélectionner ce composant vide ni interagir avec lui.
 
-Pour cette raison, les composants doivent effectuer le rendu d’un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le mode WCM est `edit` ou `preview`).
+Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).
 L’annotation HTML type d’un espace réservé est la suivante :
 
 ```HTML
@@ -416,7 +416,7 @@ Le nœud `cq:listeners` (type de nœud `cq:EditListenersConfig`) définit ce qui
 >* `aftermove`
 >* `aftercopy`
 
-Le gestionnaire d’événements peut être mis en œuvre avec une implémentation personnalisée. Par exemple, (où `project.customerAction` est une méthode statique) :
+Le gestionnaire d’événements peut être mis en œuvre avec une implémentation personnalisée. Par exemple (où `project.customerAction` est une méthode statique) :
 
 `afteredit = "project.customerAction"`
 
@@ -469,8 +469,8 @@ Il suffit de placer un fichier `README.md` dans la structure du composant.
 
 ![README.md dans la structure de composants](assets/components-documentation.png)
 
-Ce MarkDown est ensuite affiché dans la [console du composant](/help/sites-cloud/authoring/features/components-console.md).
+Ce Markdown est ensuite affiché dans la [console du composant](/help/sites-cloud/authoring/features/components-console.md).
 
-![README.md visible dans la console de composants](assets/components-documentation-console.png)
+![README.md visible dans la console de composants.](assets/components-documentation-console.png)
 
 Le Markdown pris en charge est le même que pour les [fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md).

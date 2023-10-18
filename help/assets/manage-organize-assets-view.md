@@ -7,7 +7,7 @@ exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -121,13 +121,13 @@ Pour définir la date d’expiration de ressource :
 
 L’indicateur de carte de ressources `Expired` remplace l’indicateur `Approved` ou `Rejected` défini pour une ressource.
 
-Vous pouvez également filtrer les ressources en fonction de leur état. Pour plus d’informations, voir [Recherche de ressources dans la vue Ressources](search-assets-view.md).
+Vous pouvez également filtrer les ressources en fonction de leur statut. Pour plus d’informations, consultez [Rechercher des ressources dans la vue Assets](search-assets-view.md).
 
 ## Personnalisation des formulaires de métadonnées pour inclure un champ de statut de ressource {#customize-asset-status-metadata-form}
 
 **Autorisations requises :** administrateur
 
-La vue Assets fournit de nombreux champs de métadonnées standard par défaut. Les entreprises ont d’autres besoins en métadonnées et ont besoin de davantage de champs de métadonnées pour ajouter des métadonnées spécifiques à leur entreprise. Les formulaires de métadonnées permettent aux entreprises d’ajouter des champs de métadonnées personnalisés à la page [!UICONTROL Détails] d’une ressource. Les métadonnées spécifiques à l’entreprise améliorent la gouvernance et la découverte de ses ressources.
+La vue Assets fournit par défaut de nombreux champs de métadonnées standard. Les entreprises ont d’autres besoins en métadonnées et ont besoin de davantage de champs de métadonnées pour ajouter des métadonnées spécifiques à leur entreprise. Les formulaires de métadonnées permettent aux entreprises d’ajouter des champs de métadonnées personnalisés à la page [!UICONTROL Détails] d’une ressource. Les métadonnées spécifiques à l’entreprise améliorent la gouvernance et la découverte de ses ressources.
 
 Pour plus d’informations sur l’ajout de champs de métadonnées supplémentaires au formulaire de métadonnées, consultez [Formulaires de métadonnées](metadata-assets-view.md#metadata-forms).
 
@@ -141,9 +141,9 @@ Pour ajouter un champ de métadonnées Date d’expiration au formulaire, faites
 
 ## Étapes suivantes {#next-steps}
 
-* [Visionner une vidéo pour gérer des ressources dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=fr)
+* [Regardez une vidéo pour gérer les ressources dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=fr)
 
-* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets
+* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 

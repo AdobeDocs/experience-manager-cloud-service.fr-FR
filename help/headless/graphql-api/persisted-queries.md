@@ -1,12 +1,12 @@
 ---
 title: Requêtes GraphQL persistantes
-description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
+description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -38,9 +38,9 @@ Par exemple, pour créer une requête persistante spécifique à la configuratio
 
 Par exemple, s’il existe une requête spécifique appelée `my-query`, qui utilise un modèle `my-model` de la configuration Sites `my-conf` :
 
-* Vous pouvez créer une requête à l’aide de la fonction `my-conf` point de terminaison spécifique, puis la requête est enregistrée comme suit :
+* Vous pouvez créer une requête à l’aide du point d’entrée `my-conf` spécifique, puis la requête est enregistrée comme suit :
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* Vous pouvez créer la même requête en utilisant `global` point d’entrée, mais la requête est enregistrée comme suit :
+* Vous pouvez créer la même requête à l’aide du point d’entrée `global`, mais elle est dans ce cas enregistrée comme suit :
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Où `PERSISTENT_PATH` est un chemin raccourci vers l’emplacement d’enregistrement de la requête persistante.
 
-1. Par exemple : `wknd` est le nom de la configuration et `plain-article-query` est le nom de la requête persistante. Pour exécuter la requête :
+1. Par exemple, `wknd` est le nom de la configuration et `plain-article-query` est le nom de la requête persistante. Pour exécuter la requête :
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ Le modèle ressemble à ce qui suit :
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-Par exemple, la requête suivante contient une variable . `activity` pour filtrer une liste en fonction d’une valeur d’activité :
+Par exemple, la requête suivante contient une variable `activity` pour filtrer une liste en fonction d’une valeur d’activité.
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -359,7 +359,7 @@ Pour gérer le cache globalement, vous pouvez [configurer les paramètres OSGi](
 
 >[!NOTE]
 >
->La variable **Configuration de Query Service persistante** est également utilisé pour [configuration du code de réponse à la requête](#configuring-query-response-code).
+>La **configuration du service de requête persistante** est également utilisée pour [configurer le code de réponse à la requête](#configuring-query-response-code).
 
 Configuration OSGi par défaut pour les instances de publication :
 
@@ -376,29 +376,31 @@ Configuration OSGi par défaut pour les instances de publication :
 
 * et, si elle n’est pas disponible, la configuration OSGi utilise les [valeurs par défaut des instances de publication](#publish-instances).
 
-## Configuration du code de réponse de requête {#configuring-query-response-code}
+## Configurer le code de réponse à la requête {#configuring-query-response-code}
 
-Par défaut, la variable `PersistedQueryServlet` envoie une `200` lorsqu’elle exécute une requête, quel que soit le résultat réel.
+Par défaut, le `PersistedQueryServlet` envoie une réponse `200` lors de l’exécution d’une requête, quel que soit le résultat réel.
 
-Vous pouvez [configuration des paramètres OSGi](/help/implementing/deploying/configuring-osgi.md) pour le **Configuration de Query Service persistante** pour contrôler quel code d’état est renvoyé par la variable `/execute.json/persisted-query` point de terminaison , en cas d’erreur dans la requête persistante.
+Vous pouvez [configurer les paramètres OSGi](/help/implementing/deploying/configuring-osgi.md) pour la **configuration du service de requête persistante** afin de contrôler quel code d’état est renvoyé par le point d’entrée `/execute.json/persisted-query`, en cas d’erreur dans la requête persistante.
 
 >[!NOTE]
 >
->La variable **Configuration de Query Service persistante** est également utilisé pour [gestion du cache](#cache-osgi-configration).
+>La **configuration du service de requête persistante** est également utilisée pour la [gestion du cache](#cache-osgi-configration).
 
-Le champ `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) peut être défini selon les besoins :
+Le champ `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) peut être défini selon les besoins :
 
-* `false` (valeur par défaut) : peu importe que la requête persistante soit réussie ou non. La variable `/execute.json/persisted-query` renvoie le code d’état. `200` et la variable `Content-Type` l’en-tête renvoyé est `application/json`.
+* `false` (valeur par défaut) :
+peu importe que la requête persistante soit réussie ou non. La `/execute.json/persisted-query` renvoie le code d’état `200` et l’en-tête `Content-Type` renvoyé est `application/json`.
 
-* `true`: le point de terminaison renvoie `400` ou `500` le cas échéant, lorsqu’il existe une forme d’erreur lors de l’exécution de la requête persistante. En outre, la variable `Content-Type` is `application/graphql-response+json`.
+* `true` :
+le point d’entrée renvoie `400` ou `500`, le cas échéant, lorsqu’il existe une forme d’erreur lors de l’exécution de la requête persistante. En outre, le `Content-Type` renvoyé est `application/graphql-response+json`.
 
   >[!NOTE]
   >
-  >Pour plus d’informations, voir https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Pour plus d’informations, consultez https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes.
 
 ## Encoder l’URL de requête devant être utilisé par une application {#encoding-query-url}
 
-Pour une utilisation par une application, tout caractère spécial utilisé lors de la création de variables de requête (c’est-à-dire, des points-virgules (`;`), signe égal (`=`), barres obliques `/`) doit être converti pour utiliser le codage UTF-8 correspondant.
+Pour une utilisation par une application, tout caractère spécial utilisé lors de la création de variables de requête (c’est-à-dire les points-virgules (`;`), le signe égal (`=`), les barres obliques `/`) doit être converti pour utiliser le codage UTF-8 correspondant.
 
 Par exemple :
 
@@ -440,7 +442,7 @@ Création d’un package :
 1. Créez un nouveau package en appuyant sur **Créer un package**. Une boîte de dialogue s’ouvre alors pour définir le package.
 1. Dans la boîte de dialogue Définition de package, sous **Général**, saisissez un **Nom** comme « wknd-persistent-queries ».
 1. Saisissez un numéro de version comme « 1.0 ».
-1. Sous **Filtres** ajoutez un nouveau **Filtre**. Utilisez l’outil de recherche de chemin pour sélectionner le dossier `persistentQueries` sous la configuration. Par exemple, pour la variable `wknd` configuration, le chemin complet est `/conf/wknd/settings/graphql/persistentQueries`.
+1. Sous **Filtres** ajoutez un nouveau **Filtre**. Utilisez l’outil de recherche de chemin pour sélectionner le dossier `persistentQueries` sous la configuration. Par exemple, pour la configuration `wknd`, le chemin d’accès complet sera `/conf/wknd/settings/graphql/persistentQueries`.
 1. Appuyez sur **Enregistrer** pour enregistrer la nouvelle définition de package et fermez la boîte de dialogue.
 1. Appuyez sur le bouton **Build** dans la définition de package nouvellement créée.
 

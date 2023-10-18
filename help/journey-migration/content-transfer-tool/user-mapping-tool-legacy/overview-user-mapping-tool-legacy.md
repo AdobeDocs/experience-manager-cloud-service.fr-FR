@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 >[!INFO]
 >
->Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Mappage des utilisateurs et utilisatrices et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
 
@@ -32,13 +32,13 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 
 ## Présentation {#introduction}
 
-Dans le cadre du parcours de transition vers Adobe Experience Manager (AEM) as a Cloud Service, vous devez déplacer les utilisateurs et les groupes de votre système AEM existant vers l’as a Cloud Service. Cette migration est effectuée par l’outil de transfert de contenu.
+Dans le cadre de la transition vers Adobe Experience Manager (AEM) as a Cloud Service, vous devez transférer les utilisateurs et utilisatrices, et les groupes de votre système AEM existant vers AEM as a Cloud Service. Cette migration est effectuée par l’outil de transfert de contenu.
 
-L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création. Cette intégration requiert l’utilisation de la fonction [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour la gestion des utilisateurs et des groupes d’utilisateurs. Les informations de profil utilisateur sont centralisées dans Adobe Identity Management System (IMS), qui permet l’authentification unique dans toutes les applications cloud d’Adobe. Pour plus d’informations, voir [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). En raison de cette modification, les utilisateurs et les groupes existants doivent être mappés à leurs identifiants IMS afin d’éviter la duplication des utilisateurs et des groupes sur l’instance d’auteur du Cloud Service.
+L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création. Cette intégration nécessite l’utilisation d’[Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) afin de gérer les utilisateurs et utilisatrices, et les groupes d’utilisateurs et d’utilisatrices. Les informations relatives au profil utilisateur sont centralisées dans Identity Management System (IMS) d’Adobe, qui permet une authentification unique à toutes les applications cloud d’Adobe. Pour plus d’informations, voir [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=fr#identity-management). En raison de cette modification, les utilisateurs et utilisatrices, et les groupes existants doivent être mappés avec leurs ID IMS pour éviter d’être dupliqués sur l’instance de création Cloud Service.
 
-## Outil de mappage des utilisateurs {#mapping-tool}
+## Outil de mappage des utilisateurs et utilisatrices {#mapping-tool}
 
-L’outil de transfert de contenu (sans mappage utilisateur) migre les utilisateurs et les groupes associés au contenu en cours de migration. L’outil de mappage des utilisateurs fait partie de l’outil de transfert de contenu. Son seul objectif est de modifier les utilisateurs afin qu’ils soient correctement reconnus par IMS, la fonctionnalité d’authentification unique utilisée par AEM as a Cloud Service. Une fois ces modifications effectuées, l’outil de transfert de contenu migre les utilisateurs et les groupes du contenu spécifié comme d’habitude.
+L’outil de transfert de contenu (sans mappage utilisateur) migre les utilisateurs et utilisatrices, et les groupes associés au contenu en cours de migration. L’outil de mappage des utilisateurs et utilisatrices fait partie de l’outil de transfert de contenu. Son seul objectif est de modifier les utilisateurs et utilisatrices afin qu’ils soient reconnus par IMS, la fonctionnalité d’authentification unique utilisée par AEM as a Cloud Service. Une fois ces modifications effectuées, l’outil de transfert de contenu migre les utilisateurs, les utilisatrices et les groupes du contenu spécifié comme d’habitude.
 
 ### Prochaines étapes {#whats-next}
 

@@ -5,7 +5,7 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -64,10 +64,10 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
    * Automatiquement, ce qui implique les étapes suivantes :
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
       * L’indicateur **Prêt pour la production** : cette option ne peut être définie que lors de la modification d’un lancement.
-      * Si la variable **Prêt pour la production** est défini, le lancement est automatiquement promu aux pages de production sur l’élément **Launch**(**En direct**) **date**. Après la promotion, les pages de production sont automatiquement publiées.\
+      * Si l’indicateur **Prêt pour la production** est défini, le lancement est automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.\
         Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 * Mettez à jour vos pages source et de lancement en parallèle :
-   * Les modifications apportées aux pages source sont automatiquement implémentées dans la copie de lancement (si elle est configurée avec un héritage, c’est-à-dire en tant que Live Copy).
+   * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy).
    * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
 
   ![Actions en parallèle](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -86,19 +86,19 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
 >
 >La création et la modification de lancements exigent des droits d’accès à `/content/launches`, comme avec le groupe par défaut `content-authors`.
 >
->Si vous rencontrez des problèmes, contactez votre administrateur système.
+>Si vous rencontrez des problèmes, contactez votre administration système.
 
 ## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 
 1. Dans la console **Sites**, accédez à la source du/des lancement(s).
 1. Ouvrez le rail **Références** et sélectionnez la page source.
-1. Sélectionner **Lancements**, les lancements existants sont répertoriés, ainsi que l’accès au **Console de lancements**:
+1. Sélectionnez **Lancements**. Les lancements existants sont répertoriés, ainsi que l’accès à la **Console Lancements** :
 
-   ![Références des lancements dans la console des sites](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![Références des lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Appuyez/cliquez sur le lancement approprié. La liste des actions possibles s’affiche :
+1. Appuyez/cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
 
-   ![Actions à effectuer sur les lancements dans la console des sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+   ![Actions à effectuer sur les lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## Console Lancements {#the-launches-console}
 

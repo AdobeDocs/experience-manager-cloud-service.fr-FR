@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Elles sont fournies à l’environnement d’exécution et peuvent être utilisés dans des configurations OSGi. Les variables d’environnement peuvent être des valeurs spécifiques à un environnement ou des secrets d’environnement, en fonction de ce qui est modifié.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Les variables d’environnement offrent de nombreux avantages aux utilisateurs d’AEM as a Cloud Service :
 
@@ -34,13 +34,13 @@ Les cas d’utilisation les plus courants des variables d’environnement inclue
 
 >[!NOTE]
 >
->Vous devez être membre de la fonction [**Responsable de déploiement** rôle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) pour ajouter ou modifier des variables d’environnement.
+>Vous devez être membre du rôle [**Responsable de déploiement** ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) pour ajouter ou de modifier des variables d’environnement.
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celui que vous souhaitez gérer.
 1. Sélectionnez l’onglet **Environnements** pour le programme choisi, puis sélectionnez l’environnement pour lequel vous souhaitez créer une variable d’environnement dans le panneau de navigation de gauche.
 1. Dans le détail de l’environnement, sélectionnez l’onglet **Configuration**, puis sélectionnez **Ajouter** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
-   * Si vous ajoutez une variable d’environnement pour la première fois, un événement **Ajouter une configuration** au centre de la page. Vous pouvez utiliser ce bouton ou **Ajouter** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
+   * Si vous ajoutez une variable d’environnement pour la première fois, le bouton **Ajouter la configuration** s’affiche au centre de la page. Vous pouvez utiliser ce bouton ou **Ajouter** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
 
    ![Onglet Configuration](assets/configuration-tab.png)
 
@@ -59,7 +59,7 @@ Les cas d’utilisation les plus courants des variables d’environnement inclue
 
 1. Sélectionnez **Enregistrer** pour conserver vos variables.
 
-Un indicateur avec le statut **Mise à jour en cours** s’affiche en haut du tableau et en regard de la variable nouvellement ajoutée pour indiquer que l’environnement est en cours de mise à jour avec la configuration. Une fois l’opération terminée, la nouvelle variable d’environnement est visible dans le tableau.
+Un indicateur avec le statut **Mise à jour en cours** s’affiche en haut du tableau et en regard de la variable nouvellement ajoutée pour indiquer que l’environnement est en cours de mise à jour avec la configuration. Une fois cette opération terminée, la nouvelle variable d’environnement est visible dans le tableau.
 
 ![Mettre à jour les variables](assets/updating-variables.png)
 
@@ -88,7 +88,7 @@ Une fois les variables d’environnement créées, vous pouvez les mettre à jou
 
    ![Modifier la variable](assets/edit-variable.png)
 
-1. Après avoir apporté toutes les modifications de configuration requises, sélectionnez **Enregistrer**.
+1. Une fois toutes les modifications de configuration requises effectuées, sélectionnez **Enregistrer**.
 
 [Comme lors de l’ajout de variables](#add-variables), un indicateur avec le statut **Mise à jour** sʼaffiche en haut du tableau et en regard de la ou des variables nouvellement mises à jour pour indiquer que l’environnement est mis à jour avec la configuration. Une fois l’opération terminée, les variables d’environnement mises à jour sont visibles dans le tableau.
 

@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -26,20 +26,20 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Très bon travail ! Dans ce module, vous avez appris à créer un contenu découplé comme fragment de contenu en fonction du modèle que vous avez créé précédemment. Vous comprenez désormais comment les équipes de contenu peuvent créer et gérer du contenu pour les applications et les sites Web, indépendamment des cycles de développement."
+>title="Très bon travail. Dans ce module, vous avez appris à créer un contenu découplé comme fragment de contenu en fonction du modèle que vous avez créé précédemment. Vous comprenez désormais comment les équipes de contenu peuvent créer et gérer du contenu pour les applications et les sites Web, indépendamment des cycles de développement."
 >abstract=""
 
 ## Créer un fragment de contenu {#create-fragment}
 
 Les fragments de contenu représentent votre contenu découplé et sont basés sur des structures prédéfinies, appelées modèles de fragment de contenu. Vous avez déjà créé un modèle dans un module précédent.
 
-Dans ce module, vous créez un fragment de contenu basé sur ce modèle à l’aide de la console Fragment de contenu . Envisagez la console Fragment de contenu comme votre bibliothèque de contenu découplé. Utilisez-la pour créer des fragments de contenu et gérer des fragments existants.
+Dans ce module, vous allez créer un fragment de contenu basé sur ce modèle à l’aide de la console Fragments de contenu. Envisagez la console Fragment de contenu comme votre bibliothèque de contenu découplé. Utilisez-la pour créer des fragments de contenu et gérer des fragments existants.
 
 La console Fragment de contenu est utilisée pour créer et modifier du contenu headless sur les canaux de diffusion et indépendamment du contexte, ce qui peut être la méthode la plus efficace dans de nombreux cas de création. Dans un module ultérieur, nous allons explorer la modification de contenu headless dans le contexte et sur place.
 
 1. Appuyez ou cliquez sur le bouton **Créer** en haut à droite de la console.
 
-1. La variable **Nouveau fragment de contenu** s’ouvre, dans laquelle vous pouvez commencer à créer un fragment de contenu. **Emplacement** est automatiquement renseigné avec l’emplacement d’enregistrement du nouveau contenu.
+1. La boîte de dialogue **Nouveau fragment de contenu** s’ouvre et vous pouvez commencer à créer un fragment de contenu. Le champ **Emplacement** est automatiquement renseigné à l’emplacement du nouveau contenu.
 
 1. Dans la liste déroulante **Modèle de fragment de contenu**, sélectionnez le modèle de fragment de contenu **Aventure** que vous avez créé précédemment.
 
@@ -55,7 +55,7 @@ La console Fragment de contenu est utilisée pour créer et modifier du contenu 
 
 ## Ajouter du contenu à votre fragment de contenu {#add-content}
 
-Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, l’éditeur de fragment de contenu s’ouvre sur un nouvel onglet. Vous pouvez y ajouter le contenu de votre nouveau fragment.
+Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, l’éditeur de fragment de contenu s’ouvre dans un nouvel onglet. Vous pouvez y ajouter le contenu de votre nouveau fragment.
 
 1. L’éditeur de fragment de contenu affiche les champs que vous avez définis dans le modèle sélectionné. Vous pouvez ajouter du contenu à chaque champ pour compléter votre fragment de contenu. Votre progression est enregistrée automatiquement.
 

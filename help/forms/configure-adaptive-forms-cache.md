@@ -9,7 +9,7 @@ discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 54%
+ht-degree: 68%
 
 ---
 
@@ -22,11 +22,11 @@ Un cache est un mécanisme qui permet de raccourcir les temps d’accès aux don
 
 1. Accédez à la page de configuration de la console web AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
 1. Cliquez sur la **[!UICONTROL configuration de canal web de communication interactive de formulaire adaptatif]** pour éditer ses valeurs de configuration.
-1. Dans le [!UICONTROL modifier les valeurs de configuration ;] , indiquez le nombre maximal de formulaires ou documents d’une instance de l’AEM [!DNL Forms Server] peut mettre en cache dans la variable **[!UICONTROL Nombre de Forms adaptatives]** champ . La valeur par défaut est 100.
+1. Dans la boîte de dialogue [!UICONTROL Modifier les valeurs de configuration], spécifiez le nombre maximal de formulaires ou de documents qu’une instance d’AEM [!DNL Forms Server] peut mettre en cache dans le champ **[!UICONTROL Nombre de formulaires adaptatifs]**. La valeur par défaut est 100.
 
    >[!NOTE]
    >
-   >Pour désactiver le cache, définissez la valeur du champ Nombre de Forms adaptatives sur **0**. Le cache est réinitialisé, et tous les formulaires et documents sont supprimés du cache lorsque vous désactivez ou modifiez la configuration du cache.
+   >Pour désactiver le cache, définissez la valeur du champ Nombre de formulaires adaptatifs sur **0**. Le cache est réinitialisé, et tous les formulaires et documents sont supprimés du cache lorsque vous désactivez ou modifiez la configuration du cache.
 
    ![Boîte de dialogue de configuration du cache HTML de formulaires adaptatifs](assets/cache-configuration-edit.png)
 
@@ -35,7 +35,7 @@ Un cache est un mécanisme qui permet de raccourcir les temps d’accès aux don
 Votre environnement est configuré pour utiliser le cache de formulaires adaptatifs et de ressources connexes.
 
 
-## (Facultatif) Configurez le cache de formulaire adaptatif dans Dispatcher. {#configure-the-cache}
+## (Facultatif) Configurer le cache de formulaires adaptatifs pour le Dispatcher {#configure-the-cache}
 
 Vous pouvez également configurer la mise en cache des formulaires adaptatifs sur Dispatcher pour une amélioration supplémentaire des performances.
 
@@ -44,22 +44,22 @@ Vous pouvez également configurer la mise en cache des formulaires adaptatifs su
 * Activez la variable [fusion ou préremplissage des données au niveau du client](prepopulate-adaptive-form-fields.md#prefill-at-client) . Elle permet de fusionner des données uniques pour chaque instance d’un formulaire prérempli.
 * [Activation d’un agent de vidage pour chaque instance de publication](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-a-publishing-instance). Il permet de mieux mettre en cache les performances des formulaires adaptatifs. L’URL par défaut des agents de vidage est `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
-### Remarques concernant la mise en cache de Forms adaptatif sur un Dispatcher {#considerations}
+### Considérations relatives à la mise en cache des formulaires adaptatifs sur un Dispatcher {#considerations}
 
 * Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [!DNL Dispatcher] AEM pour mettre en cache les bibliothèques cliente (CSS et JavaScript) d’un formulaire adaptatif.
 * Lors du développement des composants personnalisés, sur le serveur utilisé pour le développement, gardez le cache de formulaires adaptatifs désactivé.
-* Les URL sans extension ne sont pas mises en cache. Par exemple, URL avec modèle `/content/forms/[folder-structure]/[form-name].html` sont mis en cache et la mise en cache ignore les URL avec modèle `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Par conséquent, utilisez des URL avec des extensions pour tirer parti des avantages de la mise en cache.
+* Les URL sans extension ne sont pas mises en cache. Par exemple, les URL avec le modèle `/content/forms/[folder-structure]/[form-name].html` sont mises en cache et la mise en cache ignore les URL avec le modèle `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Par conséquent, utilisez des URL avec des extensions pour tirer parti des avantages de la mise en cache.
 * Considérations relatives aux formulaires adaptatifs :
    * Utilisez le format URL `http://host:port/content/forms/af/<afName>.<locale>.html` pour demander une version localisée d’un formulaire adaptatif au lieu de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * Désactivez l’utilisation des paramètres régionaux du navigateur <!-- [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) -->pour les URL au format `http://host:port/content/forms/af/<adaptivefName>.html`.
    * Lorsque vous utilisez le format URL `http://host:port/content/forms/af/<adaptivefName>.html` et que l’option **[!UICONTROL Utiliser les paramètres régionaux du navigateur]** dans le gestionnaire de configuration est désactivée, la version non localisée du formulaire adaptatif est diffusée. La langue non localisée est celle utilisée lors du développement du formulaire adaptatif. Les paramètres régionaux configurés pour votre navigateur (paramètres régionaux du navigateur) ne sont pas pris en compte et une version non localisée du formulaire adaptatif est diffusée.
    * Lorsque vous utilisez le format URL `http://host:port/content/forms/af/<adaptivefName>.html` et que l’option **[!UICONTROL Utiliser les paramètres régionaux du navigateur]** dans le gestionnaire de configuration est activée, une version localisée du formulaire adaptatif est diffusée, le cas échéant. La langue du formulaire adaptatif localisé est basée sur les paramètres régionaux configurés pour votre navigateur (paramètres régionaux du navigateur). Cela peut mener à [mise en cache de la première instance d’un formulaire adaptatif]. Pour éviter que le problème ne se produise sur votre instance, voir [Résolution des problèmes](#only-first-insatnce-of-adptive-forms-is-cached).
 
-### Activation de la mise en cache dans Dispatcher
+### Activer la mise en cache sur le Dispatcher
 
-Suivez les étapes ci-dessous pour activer et configurer la mise en cache d’Adaptive Forms sur Dispatcher :
+Suivez les étapes ci-dessous pour pouvoir activer et configurer la mise en cache des formulaires adaptatifs sur le Dispatcher :
 
-1. Ouvrez l’URL suivante pour chaque instance de publication de votre environnement et configurez l’agent de réplication :
+1. Ouvrez l’URL suivante pour chaque instance de publication de votre environnement et configurez l’agent de réplication :
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Ajoutez les éléments suivants à votre fichier dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#automatically-invalidating-cached-files) :
@@ -125,7 +125,7 @@ Suivez les étapes ci-dessous pour activer et configurer la mise en cache d’Ad
       }
    ```
 
-Votre environnement AEM est configuré pour mettre en cache des formulaires adaptatifs. Il met en cache tous les types de formulaires adaptatifs. Si vous avez besoin de vérifier les autorisations d’accès utilisateur pour une page avant de diffuser la page mise en cache, reportez-vous à la section [mise en cache de contenu sécurisé](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr).
+Votre environnement AEM est configuré pour mettre en cache des formulaires adaptatifs. Il met en cache tous les types de formulaires adaptatifs. Si vous devez vérifier les autorisations d’accès utilisateur pour une page avant de diffuser la page mise en cache, voir [mise en cache de contenu sécurisé](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr).
 
 ## Résolution des problèmes {#troubleshooting}
 
@@ -139,7 +139,7 @@ Lorsque vous sélectionnez et ajoutez des images ou des vidéos par le biais de 
 
 Après avoir publié les images et la vidéo, dépubliez et publiez explicitement les formulaires adaptatifs qui référencent ces ressources.
 
-### Certaines Forms adaptatives contenant des fragments de contenu ou d’expérience ne sont pas automatiquement invalidées du cache de Dispatcher. {#content-or-experience-fragment-not-auto-invalidated}
+### Certains formulaires adaptatifs contenant des fragments de contenu ou d’expérience ne sont pas automatiquement invalidés à partir du cache du Dispatcher {#content-or-experience-fragment-not-auto-invalidated}
 
 #### Problème {#issue2}
 

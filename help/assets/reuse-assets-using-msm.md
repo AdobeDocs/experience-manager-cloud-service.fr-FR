@@ -9,7 +9,7 @@ exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '3403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,15 +28,15 @@ La fonctionnalité Multi Site Manager (MSM) dans [!DNL Adobe Experience Manager]
 
 >[!NOTE]
 >
->Le MSM pour [!DNL Assets] Cette fonctionnalité inclut des fragments de contenu, qui sont stockés sous la forme [!DNL Assets] (bien que considérée comme une fonctionnalité Sites).
+>Le MSM pour la fonctionnalité [!DNL Assets] inclut des fragments de contenu, qui sont stockés an tant que [!DNL Assets] (bien que cela soit considéré comme une fonctionnalité Sites).
 
 >[!CAUTION]
 >
->MSM pour les fragments de contenu n’est disponible que lors de l’utilisation de fragments de contenu via la fonction **[!UICONTROL Ressources]** console.
+>MSM pour les fragments de contenu n’est disponible que lors de l’utilisation de fragments de contenu via la console **[!UICONTROL Ressources]**.
 >
->La fonctionnalité MSM est la suivante : *not* disponible lors de l’utilisation de la variable **[!UICONTROL Fragments de contenu]** console.
+>La fonctionnalité MSM *n’est pas* disponible lors de l’utilisation de la console **[!UICONTROL Fragments de contenu]**.
 
-## Comprendre les avantages et les concepts de MSM {#concepts}
+## Présentation des avantages et des concepts de MSM {#concepts}
 
 ### Fonctionnement et avantages {#how-it-works-and-the-benefits}
 
@@ -53,7 +53,7 @@ MSM entretient une relation dynamique entre la ressource source et ses Live Copi
 
 **Live Copy :** copie des ressources/dossiers sources synchronisés avec sa source. Les Live Copies peuvent être une source d’autres Live Copies. Découvrez comment créer des Live Copies.
 
-**Hériter :** lien/référence entre une ressource/un dossier de Live Copy et sa source que le système utilise pour mémoriser où envoyer les mises à jour. L’héritage existe à un niveau granulaire pour les champs de métadonnées, ainsi que pour les variations et les champs de fragments de contenu. L’héritage peut être supprimé pour les éléments sélectionnés tout en conservant la relation dynamique entre la source et sa Live Copy.
+**Hériter :** lien/référence entre une ressource/un dossier de Live Copy et sa source que le système utilise pour mémoriser où envoyer les mises à jour. L’héritage existe à un niveau granulaire pour les champs de métadonnées, ainsi que pour les variations et les champs de fragments de contenu. L’héritage peut être supprimé pour les éléments sélectionnés tout en conservant les relations dynamiques entre la source et sa Live Copy.
 
 **Déployer :** action qui envoie les modifications apportées à la source en aval à ses Live Copies. Il est possible de mettre à jour une ou plusieurs Live Copies en une seule fois à l’aide de l’action de déploiement. Voir Déploiement.
 
@@ -243,31 +243,31 @@ Pour afficher les états et les informations liés à une action de synchronisat
 >
 >Si la relation est suspendue, l’action de synchronisation n’est pas disponible dans la barre d’outils. Alors que l’action de synchronisation est disponible dans le rail Références, les modifications ne sont pas propagées même lors d’un déploiement réussi.
 
-## Annulation et réactivation de l’héritage pour des éléments individuels {#canceling-reenabling-inheritance-individual-items}
+## Annuler et réactiver l’héritage pour des éléments individuels {#canceling-reenabling-inheritance-individual-items}
 
-Vous pouvez annuler l’héritage de la Live Copy pour un :
+Vous pouvez annuler l’héritage de la Live Copy pour :
 
-* champ de métadonnées
-* Variation de fragment de contenu
-* Champ de données Fragment de contenu
+* un champ de métadonnées ;
+* une variation de fragment de contenu ;
+* un champ de données de fragment de contenu
 
 Cela signifie que l’élément n’est plus synchronisé avec le composant source. Vous pouvez activer l’héritage ultérieurement, si nécessaire.
 
 ### Annuler l’héritage {#cancel-inheritance}
 
-Pour annuler l’héritage :
+Pour annuler l’héritage :
 
-1. Sélectionnez la **Annuler l’héritage** en regard de l’élément requis :
+1. Sélectionnez l’icône **Annuler l’héritage** en regard de l’élément requis :
 
    ![L’action de synchronisation récupère les modifications apportées à la source](assets/cancel-inheritance-icon.png)
 
 1. Dans la boîte de dialogue Annuler l’héritage, confirmez l’action par Oui.
 
-### Réactiver l&#39;héritage {#reenable-inheritance}
+### Réactiver l’héritage {#reenable-inheritance}
 
-Pour réactiver l’héritage :
+Pour réactiver l’héritage :
 
-1. Pour activer l’héritage d’un élément, sélectionnez l’option **Réactiver l’héritage** en regard de l’élément requis :
+1. Pour activer l’héritage d’un élément, sélectionnez l’icône **Réactiver l’héritage** en regard de l’élément requis :
 
    ![L’action de synchronisation récupère les modifications apportées à la source](assets/re-enable-inheritance-icon.png)
 
@@ -363,7 +363,7 @@ Dans d’autres scénarios, MSM pour [!DNL Assets] correspond au comportement de
 
 >[!NOTE]
 >
->N’oubliez pas que MSM pour les fragments de contenu (accessible par le biais de la **[!UICONTROL Ressources]** (console) utilise la fonctionnalité Assets ; car elles sont stockées en tant que ressources (bien qu’elles soient considérées comme une fonctionnalité Sites).
+>N’oubliez pas que MSM pour les fragments de contenu (accessible par le biais de la console **[!UICONTROL Ressources]**) utilise la fonctionnalité Ressources, car ils sont stockés en tant que ressources (bien que cela soit considéré comme une fonctionnalité Sites).
 
 ## Limites et problèmes connus de MSM pour [!DNL Assets] {#limitations}
 

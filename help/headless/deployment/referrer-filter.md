@@ -1,18 +1,18 @@
 ---
-title: Configuration du filtre Référent avec AEM découplé
-description: Le filtre de référent de Adobe Experience Manager permet d’accéder à partir d’hôtes tiers. Une configuration OSGi pour le filtre Référent est nécessaire pour activer l’accès au point d’entrée GraphQL pour les applications découplées.
+title: Configuration du filtre référent avec AEM Headless
+description: Le filtre de référent d’Adobe Experience Manager autorise l’accès à partir d’hôtes tiers. Une configuration OSGi pour le filtre Référent est nécessaire pour activer l’accès au point d’entrée GraphQL pour les applications découplées.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Filtre Référent {#referrer-filter}
 
-Le filtre de référent de Adobe Experience Manager permet d’accéder à partir d’hôtes tiers.
+Le filtre de référent d’Adobe Experience Manager autorise l’accès à partir d’hôtes tiers.
 
 Une configuration OSGi pour le filtre de référent est nécessaire pour autoriser l’accès au point d’entrée GraphQL pour les applications découplées via POST HTTP. Lors de l’utilisation de requêtes persistantes découplées AEM qui accèdent à AEM via GET HTTP, aucune configuration de filtre de référent n’est nécessaire.
 

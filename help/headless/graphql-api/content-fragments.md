@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '4922'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL est :
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-Pour plus d’informations sur l’API GraphQL, reportez-vous aux sections suivantes (parmi de nombreuses autres ressources) :
+Pour plus d’informations sur l’API GraphQL, voir les sections suivantes (parmi de nombreuses autres ressources) :
 
 * Sur [graphql.org](https://graphql.org) :
 
@@ -141,8 +141,8 @@ Les cas d’utilisation peuvent dépendre du type d’environnement AEM as a Clo
 * Environnement de publication, utilisé pour :
    * Réaliser des requête de données pour l’application JS (cas d’utilisation standard)
 
-* Environnement de prévisualisation ; utilisé pour :
-   * Aperçu des requêtes avant le déploiement dans l’environnement de publication
+* Environnement de prévisualisation, utilisé pour :
+   * Prévisualiser des requêtes avant le déploiement dans l’environnement de publication
       * Réaliser des requête de données pour l’application JS (cas d’utilisation standard)
 
 * Environnement de création, utilisé pour :
@@ -259,7 +259,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 ### Champs d’assistant {#helper-fields}
 
-Outre les types de données pour les champs générés par l’utilisateur, GraphQL pour AEM génère également un certain nombre de *assistance* pour identifier un fragment de contenu ou fournir des informations supplémentaires sur ce dernier.
+Outre les types de données des champs générés par l’utilisateur, GraphQL pour AEM génère également un certain nombre de champs *d’assistance* afin de faciliter l’identification d’un fragment de contenu ou de fournir des informations supplémentaires sur un fragment de contenu.
 
 Ces [champs d’assistance](#helper-fields) sont précédés d’un `_` pour distinguer ce qui a été défini par l’utilisateur ou l’utilisatrice de ce qui a été généré automatiquement.
 
@@ -409,7 +409,7 @@ query($variation: String!) {
 
 Cette requête renverra la liste complète des auteurs. Les auteurs qui n’ont pas la variation `another` reviendront aux données d’origine (`_variation` indiquera `master` dans ce cas).
 
-Appliquer une [filter](#filtering), si vous souhaitez limiter la liste aux auteurs qui fournissent la variation spécifiée (et ignorer les auteurs qui reviennent aux données d’origine) :
+Appliquez un [filtre](#filtering) si vous souhaitez limiter la liste aux céateurs et créatrices qui fournissent la variation spécifiée (et ignorer les créateurs et créatrices qui reviennent aux données d’origine) :
 
 ```graphql
 query($variation: String!) {
@@ -433,7 +433,7 @@ query($variation: String!) {
 
 Dans GraphQL, il est possible de modifier la requête en fonction de variables, nommées directives GraphQL.
 
-Par exemple, vous pouvez inclure la variable `adventurePrice` dans une requête pour l’ensemble des `AdventureModels`, en fonction d’une variable `includePrice`.
+Par exemple, vous pouvez inclure ici le champ `adventurePrice` dans une requête pour tous les `AdventureModels`, en fonction d’une variable `includePrice`.
 
 ![Directives GraphQL](assets/cfm-graphqlapi-04.png "Directives GraphQL")
 
@@ -571,8 +571,8 @@ Cette fonctionnalité vous permet de trier les résultats de la requête en fonc
 Les critères de tri sont les suivants :
 
 * il s’agit d’une liste de valeurs séparées par des virgules représentant le chemin du champ,
-   * le premier champ de la liste définit l&#39;ordre de tri principal, le second champ est utilisé si deux valeurs du critère de tri principal sont égales, le troisième si les deux premiers critères sont égaux, etc.
-   * notation pointillée, c’est-à-dire champ1.subfield.subfield, etc..
+   * le premier champ de la liste définit l’ordre de tri principal, le second est utilisé si deux valeurs du critère de tri principal sont égales, le troisième si les deux premiers critères sont égaux, etc.
+   * valeur séparée par des points, c’est-à-dire field1.subfield.subfield, etc.
 * avec un sens d’ordre optionnel,
    * ASC (croissant) ou DESC (décroissant) ; la valeur par défaut est ASC,
    * le sens d’ordre peut être spécifié par champ : vous pouvez trier un champ par ordre croissant et un autre par ordre décroissant (name, firstName DESC).
@@ -666,7 +666,7 @@ query {
 
 >[!NOTE]
 >
->* La pagination nécessite un ordre de tri stable pour fonctionner correctement sur plusieurs requêtes demandant différentes pages du même jeu de résultats. Par défaut, il utilise le chemin d’accès au référentiel de chaque élément du jeu de résultats pour s’assurer que l’ordre est toujours le même. Si un ordre de tri différent est utilisé et si ce tri ne peut pas être effectué au niveau de la requête JCR, il y a un impact négatif sur les performances, car l’ensemble de résultats doit être chargé en mémoire avant que les pages puissent être déterminées.
+>* La pagination nécessite un ordre de tri stable pour fonctionner correctement sur plusieurs requêtes demandant différentes pages du même jeu de résultats. Par défaut, il utilise le chemin d’accès au référentiel de chaque élément du jeu de résultats pour s’assurer que l’ordre est toujours le même. Si un ordre de tri différent est utilisé et si ce tri ne peut pas être effectué au niveau de la requête JCR, cela a un impact sur les performances, car le jeu complet de résultats doit être chargé en mémoire avant que les pages puissent être déterminées.
 >
 >* Plus le décalage est élevé, plus il faudra de temps pour ignorer les éléments du jeu complet de résultats de la requête JCR. Une autre solution pour les jeux de résultats volumineux consiste à utiliser la requête paginée avec la méthode `first` et `after`.
 
@@ -742,7 +742,7 @@ La solution de GraphQL vous permet :
 La structure et la syntaxe sont les suivantes :
 
 * `format` : une énumération avec tous les formats pris en charge par son extension : GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL ou WEBPLY ;
-* `seoName`: chaîne utilisée comme nom de fichier au lieu du nom de noeud
+* `seoName` : une chaîne qui est utilisée comme nom de fichier au lieu du nom de nœud ;
 * `crop` : une sous-structure d’image, si la largeur ou la hauteur est omise alors la hauteur ou la largeur est utilisée comme même valeur ;
    * `xOrigin` : l’origine x de l’image, obligatoire ;
    * `yOrigin` : l’origine y de l’image, obligatoire ;
@@ -753,8 +753,8 @@ La structure et la syntaxe sont les suivantes :
    * `height` : la hauteur de la dimension ;
 * `rotation` : une énumération de toutes les rotations prises en charge : R90, R180, R270 ;
 * `flip` : une énumération de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL ;
-* `quality`: nombre entier compris entre 1 et 100 notant le pourcentage de qualité de l’image
-* `width`: nombre entier qui définit la largeur de l’image de sortie, mais qui est ignoré par le générateur d’images.
+* `quality` : un entier compris entre 1 et 100 indiquant le pourcentage de la qualité de l’image ;
+* `width` : un entier qui définit la largeur de l’image de sortie, mais qui est ignoré par le générateur d’images ;
 * `preferWebp` : une valeur booléenne qui indique si webp est préférable (la valeur par défaut est false).
 
 La transformation d’URL est disponible pour tous les types de requête : par chemin, liste ou paginé.
@@ -934,12 +934,12 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
    * Voir [Exemple de requête – Toutes les informations sur toutes les villes](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities).
 
-* Le filtre `includeVariations` est inclus dans la variable `List` et `Paginated` types de requête.  Pour récupérer les variations du fragment de contenu dans les résultats de la requête, vous devez définir le filtre `includeVariations` sur `true`.
+* Le filtre `includeVariations` est inclus dans les types de requête `List` et `Paginated`.  Pour récupérer les variations du fragment de contenu dans les résultats de la requête, vous devez définir le filtre `includeVariations` sur `true`.
 
-   * Voir [Exemple de requête pour plusieurs fragments de contenu et leurs variantes d’un modèle donné](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   * Voir [Exemple de requête pour plusieurs fragments de contenu et leurs variations dans un modèle donné](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
-  >Le filtre `includeVariations` et le champ généré par le système `_variation` ne peut pas être utilisé ensemble dans la même définition de requête.
+  >Le filtre `includeVariations` et le champ généré par le système `_variation` ne peuvent pas être utilisés ensemble dans la même définition de requête.
 
 * Si vous souhaitez utiliser un OU logique :
    * Utilisez ` _logOp: OR`
@@ -997,8 +997,8 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
       * Reportez-vous à [Exemple de requête : noms de toutes les villes balisées en tant qu’Escapades en ville](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks).
       * Reportez-vous à [Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag).
-      * Voir [Exemple de requête avec filtrage par identifiant _tags et excluant des variantes](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
-      * Voir [Exemple de requête avec filtrage par identifiant _tags et inclusion de variantes](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+      * Voir [Exemple de requête avec filtrage par identifiant de balises et excluant des variations](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Voir [Exemple de requête avec filtrage par identifiant de balises et incluant des variations](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
      >[!NOTE]
      >
@@ -1047,4 +1047,4 @@ AEM prévoit d’investir dans l’API AEM GraphQL.* »
 
 ## Tutoriel – Prise en main d’AEM découplé et de GraphQL {#tutorial}
 
-Vous cherchez un tutoriel pratique ? Consultez le tutoriel complet [Prise en main d’AEM Headless et de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS découplé.
+Vous cherchez un tutoriel pratique ? Consultez le tutoriel complet [Prise en main d’AEM Headless et de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS découplé.

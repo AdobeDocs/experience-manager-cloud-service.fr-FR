@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
 workflow-type: tm+mt
 source-wordcount: '2746'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ Ce document présente les conseils de développement sur AEM as a Cloud Service
 
 Le code s’exécutant dans AEM as a Cloud Service doit savoir qu’il s’exécute toujours dans une grappe. Cela signifie qu’il y a toujours plusieurs instances en cours d’exécution. Le code doit être résilient, d’autant plus qu’une instance peut être arrêtée à tout moment.
 
-Lors de la mise à jour d’AEM as a Cloud Service, il existe des instances avec l’ancien et le nouveau code en cours d’exécution en parallèle. Par conséquent, l’ancien code ne doit pas rompre avec le contenu créé par le nouveau code et le nouveau code doit pouvoir traiter l’ancien contenu.
+Lors de la mise à jour d’AEM as a Cloud Service, il existe des instances dans lesquelles l’ancien et le nouveau code s’exécuteront en parallèle. Par conséquent, l’ancien code ne doit pas rompre avec le contenu créé par le nouveau code et le nouveau code doit pouvoir traiter l’ancien contenu.
 
 S’il est nécessaire d’identifier l’instance principale dans la grappe, l’API Apache Sling Discovery peut être utilisée pour le détecter.
 
@@ -33,7 +33,7 @@ Le statut ne doit pas être conservé dans la mémoire, mais conservé dans le r
 
 ## Statut sur le système de fichiers {#state-on-the-filesystem}
 
-Le système de fichiers de l’instance ne doit pas être utilisé dans AEM as a Cloud Service. Le disque est éphémère et est effacé lorsque les instances sont recyclées. L’utilisation limitée du système de fichiers pour le stockage temporaire lié au traitement des demandes uniques est possible, mais ne doit pas être excessive dans le cas des fichiers volumineux. En effet, elle peut avoir un impact négatif sur le quota d’utilisation des ressources et rencontrer des limitations de disque.
+Le système de fichiers de l’instance ne doit pas être utilisé dans AEM as a Cloud Service. Le disque est éphémère et est effacé lorsque les instances sont recyclées. L’utilisation limitée du système de fichiers pour le stockage temporaire lié au traitement des demandes uniques est possible, mais ne doit pas être excessive dans le cas des fichiers volumineux. En effet, elle peut avoir un impact négatif sur le quota d’utilisation des ressources et rencontrer des limitations de disque.
 
 Par exemple, si l’utilisation du système de fichiers n’est pas prise en charge, le niveau de publication doit s’assurer que toutes les données qui doivent être conservées sont transférées vers un service externe pour un stockage à plus long terme.
 
@@ -47,7 +47,7 @@ Le code exécuté en tant que tâches en arrière-plan doit prendre en compte le
 
 Afin de limiter les problèmes, il est nécessaire d’éviter les tâches à long terme autant que possible, et de faire en sorte qu’elles puissent autant que possible être reprises après avoir été interrompues. Pour exécuter de telles tâches, utilisez les tâches Sling qui offrent la garantie qu’elles redémarreront au moins une fois si elles sont interrompues, et qu’elles seront donc réexécutées dès que possible. Elles ne doivent cependant probablement pas recommencer depuis le début. Pour planifier de telles tâches, il est préférable d’utiliser le planificateur de [tâches Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), car il permet également l’exécution au moins une fois.
 
-Le planificateur Sling Commons ne doit pas être utilisé pour la planification, car l’exécution ne peut pas être garantie. Il est simplement plus probable qu’elle soit planifiée.
+Le planificateur Sling Commons ne doit pas être utilisé pour la planification, car l’exécution ne peut pas être garantie. Il permet simplement d’augmenter la probabilité de la programmation.
 
 De même, avec tout ce qui se passe de manière asynchrone, comme les actions sur des événements d’observation (c’est-à-dire des événements JCR ou des événements de ressources Sling), il n’est pas garanti qu’ils soient exécutés et doivent donc être utilisés avec soin. C’est déjà le cas actuellement pour les déploiements d’AEM.
 
@@ -65,7 +65,7 @@ Les alternatives connues et qui fonctionnent, mais qui peuvent nécessiter de fo
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non recommandées, car obsolètes et remplacées par la version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (non fourni par AEM)
 
-En plus de fournir des délais d’expiration, une gestion appropriée de ces délais d’expiration et des codes d’état HTTP inattendus doit être implémentée.
+En plus de fournir des délais d’expiration, une gestion appropriée de ces délais et des codes de statut HTTP inattendus doivent être implémentés.
 
 ## Gestion des limites de taux de requête {#rate-limit-handling}
 
@@ -76,11 +76,11 @@ Lorsque le taux de requêtes entrantes à AEM dépasse des niveaux sains, AEM r�
 
 ## Aucune personnalisation classique de l’interface utilisateur {#no-classic-ui-customizations}
 
-AEM as a Cloud Service ne prend en charge que l’interface utilisateur tactile pour le code client tiers. L’interface utilisateur classique n’est pas disponible pour la personnalisation.
+AEM as a Cloud Service ne prend en charge que l’interface utilisateur tactile pour le code client tiers. L’interface utilisateur classique n’est pas disponible pour la personnalisation.
 
 ## Pas de fichiers binaires natifs ni de bibliothèques natives {#avoid-native-binaries}
 
-Les binaires et bibliothèques natifs ne doivent pas être déployés sur ou installés dans des environnements cloud.
+Les fichiers binaires et bibliothèques natifs ne doivent pas être déployés sur ou installés dans des environnements cloud.
 
 En outre, le code ne doit pas tenter de télécharger des fichiers binaires natifs ou des extensions java natives (par exemple, JNI) au moment de l’exécution.
 
@@ -116,11 +116,11 @@ Dans les environnements cloud, les développeurs peuvent télécharger les journ
 
 **Définition du niveau de journalisation**
 
-Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGi Sling, suivi d’un redéploiement complet. Puisqu’il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en mode verbeux sur les environnements de production qui reçoivent beaucoup de trafic. À l’avenir, il est possible qu’il existe des mécanismes pour modifier plus rapidement le niveau de journalisation.
+Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGi Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux détaillés sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
 
 >[!NOTE]
 >
->Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer dans un environnement de développement local, puis les envoyer vers une instance as a Cloud Service AEM. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>Pour effectuer les modifications de configuration répertoriées ci-dessous, créez-les dans un environnement de développement local, puis transmettez-les à une instance AEM as a Cloud Service. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activation du niveau de journalisation DEBUG**
 
@@ -145,7 +145,7 @@ Ne laissez pas le journal au niveau de débogage DEBUG plus longtemps que néces
 
 Des niveaux de journal distincts peuvent être définis pour les différents environnements AEM à l’aide du ciblage de la configuration OSGi basée sur le mode d’exécution s’il est souhaitable de toujours se connecter à `DEBUG` pendant le développement. Par exemple :
 
-| Environnement | Emplacement de configuration OSGi par mode d’exécution | `org.apache.sling.commons.log.level` valeur de propriété |
+| Environnement | Emplacement de configuration OSGi par mode d’exécution | Valeur de propriété `org.apache.sling.commons.log.level` |
 | - | - | - |
 | Développement | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
 | Évaluation | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
@@ -167,7 +167,7 @@ Les niveaux de journal sont les suivants :
 
 ### Images mémoire de threads {#thread-dumps}
 
-Les images mémoire de threads dans les environnements Cloud sont collectés en permanence, mais ne peuvent pas être téléchargées en libre-service pour le moment. Dans l’intervalle, contactez AEM support si des images mémoire de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre de temps exacte.
+Les images mémoire de threads dans les environnements Cloud sont collectés en permanence, mais ne peuvent pas être téléchargées en libre-service pour le moment. En attendant, contactez l’assistance AEM si des images mémoire de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre temporelle exacte.
 
 ## CRX/DE Lite et Developer Console {#crxde-lite-and-developer-console}
 
@@ -209,7 +209,7 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes de Production, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, &quot;Cloud Manager - Rôle de développeur&quot; est nécessaire pour les vidages d’état. Le navigateur de référentiel et les utilisateurs doivent également être définis dans AEM profil de produit Utilisateurs ou AEM administrateurs sur les services de création et de publication afin d’afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
+Pour les programmes de Production, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développement » est nécessaire pour les vidages de statut et le navigateur de référentiels. Les utilisateurs et les utilisatrices doivent également être définis dans le profil de produit Utilisateurs et utilisatrices d’AEM ou Administrateurs et administratrices d’AEM sur les services de création et de publication pour afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
 
 ### Surveillance des performances {#performance-monitoring}
 
@@ -297,8 +297,8 @@ En raison du document MongoDB dépassant 16 Mo, les MVP trop nombreuses peuvent
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-Voir [Documentation Apache Oak](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) pour plus d’informations.
+Pour plus d’informations, consultez la [documentation d’Apache Oak](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property).
 
 ## Directives de développement et cas pratiques concernant [!DNL Assets] {#use-cases-assets}
 
-Pour découvrir les cas d’utilisation de développement, les recommandations et les documents de référence pour Assets as a Cloud Service, consultez les [références de développement pour Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Pour découvrir les cas d’utilisation de développement, les recommandations et les documents de référence pour Assets as a Cloud Service, consultez les [références de développement pour Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

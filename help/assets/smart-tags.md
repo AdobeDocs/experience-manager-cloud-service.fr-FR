@@ -1,6 +1,6 @@
 ---
-title: Comment ajouter des balises intelligentes aux ressources dans AEM ?
-description: Ajoutez des balises intelligentes aux ressources dans AEM avec un service artificiellement intelligent qui applique des balises commerciales contextuelles et descriptives.
+title: Comment ajouter des balises intelligentes aux ressources dans AEM ?
+description: Ajoutez des balises intelligentes aux ressources dans AEM avec un service artificiellement intelligent qui applique des balises métier contextuelles et descriptives.
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
@@ -8,12 +8,12 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2464'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# Ajout de balises intelligentes aux ressources dans AEM {#smart-tags-assets-aem}
+# Ajouter des balises intelligentes aux ressources dans AEM {#smart-tags-assets-aem}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -24,7 +24,7 @@ Les entreprises qui traitent des ressources numériques utilisent de plus en plu
 
 Comparé aux vocabulaires des langages naturels, le balisage basé sur la taxonomie métier aide à aligner les ressources avec les activités d’une entreprise et à veiller à ce que les mieux adaptées apparaissent dans les recherches. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèles afin de n’afficher que les images appropriées lors de recherches servant à concevoir une campagne de promotion.
 
-En arrière-plan, cette fonctionnalité utilise le cadre d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. AEM applique automatiquement, par défaut, les balises intelligentes aux ressources chargées.
+En arrière-plan, cette fonctionnalité utilise le cadre d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Par défaut, AEM applique automatiquement les balises intelligentes aux ressources chargées.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -59,7 +59,7 @@ Vous pouvez baliser les types de ressources suivants :
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-AEM ajoute automatiquement les balises intelligentes aux ressources textuelles et aux vidéos par défaut. Pour ajouter automatiquement des balises intelligentes aux images, suivez la procédure ci-dessous.
+Par défaut, AEM ajoute automatiquement les balises intelligentes aux ressources textuelles et vidéo. Pour ajouter automatiquement des balises intelligentes aux images, suivez la procédure ci-dessous.
 
 * [Comprendre les directives et les modèles relatifs aux balises](#understand-tag-models-guidelines).
 * [Entraîner le modèle](#train-model).
@@ -82,7 +82,7 @@ Vérifiez que les images figurant dans la série de formation sont conformes aux
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/coherence.png)
 
-**Couverture** : les images d’entraînement doivent être suffisamment variées. L’idée est de fournir quelques exemples raisonnablement différents pour apprendre à [!DNL Experience Manager] à se concentrer sur les bons éléments. Si vous appliquez la même balise sur des images visuellement différentes, incluez au moins cinq exemples de chaque type. Par exemple, pour la balise *mannequin-pose-tête-baissée*, incluez davantage d’images d’entraînement similaires à l’image mise en évidence ci-dessous pour que le service reconnaisse les images similaires avec plus de précision lors du balisage.
+**Couverture** : les images d’entraînement doivent être suffisamment variées. L’idée est de fournir quelques exemples raisonnablement différents pour apprendre à [!DNL Experience Manager] à se concentrer sur les bons éléments. Si vous appliquez la même balise sur des images visuellement différentes, incluez au moins cinq exemples de chaque type. Par exemple, pour la balise *mannequin-pose-tête-baissée*, incluez davantage d’images d’entraînement similaires à l’image mise en évidence ci-dessous pour que le service reconnaisse les images similaires avec plus de précision lors du balisage.
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/coverage_1.png)
 

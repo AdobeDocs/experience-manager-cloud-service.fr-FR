@@ -5,7 +5,7 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 76%
+ht-degree: 96%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 76%
 
 Il est probable qu’au sein de votre organisation, plusieurs départements possèdent différents aspects de l’expérience digitale. Sans gouvernance, cette phase est propice à un débat sans fin, à des querelles intestines et à la confusion.
 
-La gouvernance numérique commence par déterminer qui est responsable de quoi et qui fait quel travail centré sur le numérique. Vous devrez peut-être procéder à des embauches stratégiques pour incorporer les compétences nécessaires. Un défi encore plus grand est de provoquer un changement de culture — en construisant un large soutien pour la nouvelle technologie et en aidant les gens à s&#39;habituer à de nouvelles façons de faire les choses. L’un des éléments clés de cet effort réside dans la création d’une communauté numérique qui permet aux gens d’apprendre mutuellement et de s’entraider.
+La phase initiale de la gouvernance numérique consiste à déterminer qui est responsable de quoi et qui effectue quelle tâche fondée sur le numérique. Vous devrez peut-être procéder à des embauches stratégiques pour incorporer les compétences nécessaires. Un autre défi encore plus important est d’opérer un changement de culture en construisant un large soutien à la nouvelle technologie et en aidant les personnes concernées à se familiariser avec de nouvelles façons de faire les choses. L’un des éléments clés de cet effort réside dans la création d’une communauté numérique qui permet aux gens d’apprendre mutuellement et de s’entraider.
 
-Pour l’instant, l’accent est mis sur le fait de placer les bonnes personnes dans les tâches appropriées pour faciliter le déploiement d’Adobe Experience Manager. Pour chaque produit principal — Experience Manager Sites et Experience Manager Assets — Adobe a fourni une liste des rôles que vous devez remplir, ainsi que les compétences, les niveaux d’expertise et les attributs qui rendent les personnes efficaces dans les différents rôles.
+Pour l’instant, nous nous concentrerons sur la mise en place des bonnes personnes aux bons postes pour aider à la réussite de votre déploiement Adobe Experience Manager. Pour chaque produit principal (Experience Manager Sites et Experience Manager Assets), Adobe a établi une liste de rôles que vous devrez remplir, ainsi que les compétences, les niveaux d’expertise et les attributs qui rendent les gens efficaces dans ces différents rôles.
 
 Votre tâche cette semaine consiste à passer en revue ces deux listes avec votre équipe de mise en œuvre et de vous assurer de disposer de personnes possédant les qualifications adéquates à chaque rôle.
 
@@ -47,7 +47,7 @@ Maintenant que vous connaissez les fonctions requises, consultez le graphique ci
 
 <br>
 
-![Rôles de révision de la mise en oeuvre](assets/team_involvement.png)
+![Rôles de révision pour l’implémentation](assets/team_involvement.png)
 
 **Examinez les deux listes avec votre équipe chargée de la mise en œuvre** et assurez-vous que vous disposez de personnes possédant les qualifications appropriées dans chaque fonction. Les membres de l’équipe qui connaissent moins bien Adobe Experience Cloud peuvent utiliser les ressources de formation [Experience League](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) pour obtenir leur certification par le biais d’[Adobe Digital Learning](https://learning.adobe.com/certification.html).
 
@@ -55,7 +55,7 @@ Maintenant que vous connaissez les fonctions requises, consultez le graphique ci
 
 De l’architecte au scrum master, chaque fonction au sein de cette équipe est indispensable – y compris le bibliothécaire de la gestion des actifs numériques (DAM).
 
-Vous disposez peut-être déjà de la plupart des personnes nécessaires pour mettre en œuvre avec succès Adobe Experience Manager Assets. Cette liste est similaire à celle d’Adobe Experience Manager Sites, avec un ajout important : vous avez besoin d’un bibliothécaire pour vous assurer que vos ressources numériques sont organisées et étiquetées de manière à les rendre faciles à trouver.
+Vous disposez peut-être déjà de la plupart des personnes nécessaires pour mettre en œuvre avec succès Adobe Experience Manager Assets. Cette liste est similaire à celle d’Adobe Experience Manager Sites, avec un élément additionnel important : vous aurez besoin d’un ou d’une bibliothécaire pour vous assurer que vos ressources numériques sont organisées et étiquetées de façon à les rendre faciles à trouver.
 
 | Rôle | Compétences | Niveau de capacité | Qualités |
 |--- |--- |--- |--- |
@@ -78,4 +78,4 @@ Maintenant que vous connaissez les fonctions requises, consultez le graphique ci
 
 >[!TIP]
 >
-> En savoir plus sur Adobe Experience Cloud et utiliser les ressources sur [Experience League](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) et être certifié via [Apprentissage numérique des Adobes](https://learning.adobe.com/certification.html).
+> En savoir plus sur Adobe Experience Cloud, exploiter les ressources sur [Experience League](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) et obtenir une certification par [Adobe Digital Learning](https://learning.adobe.com/certification.html).

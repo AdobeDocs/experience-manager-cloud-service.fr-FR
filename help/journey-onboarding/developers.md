@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ Selon les besoins de votre entreprise, un ou plusieurs utilisateurs peuvent avoi
 Avant de commencer les tâches décrites dans ce document en tant que développeur ou responsable de déploiement, assurez-vous que l’administrateur système a terminé toutes les étapes de ce parcours d’intégration. Cela signifie que :
 
 * Votre administrateur système a affecté des développeurs et des responsables de déploiement à leurs profils de produits respectifs.
-* Les développeurs doivent en outre être affectés à **Utilisateurs AEM** ou **Administrateurs AEM** les profils de produits pour utiliser également AEM.
+* Les personnes en charge du développement doivent en outre être affectées aux profils de produits d’**utilisation AEM** ou d’**administration AEM** afin d’utiliser elles-mêmes AEM.
 * Les ressources cloud ont été configurées.
 
 ## Accéder à Git {#accessing-git}

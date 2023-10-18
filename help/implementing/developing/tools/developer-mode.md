@@ -7,7 +7,7 @@ exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Il présente une arborescence de composants qui :
 * affiche le temps de calcul côté serveur nécessaire au rendu du composant ;
 * Permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, par exemple :
    * le chemin du référentiel ;
-   * les liens vers les scripts (accessibles dans CRXDE Lite).
+   * les liens vers les scripts (accessibles dans CRXDE Lite)
    * Les informations sur le composant, comme indiqué dans la section [Console des composants](/help/sites-cloud/authoring/features/components-console.md)
 * Les composants sélectionnés dans l’arborescence sont indiqués par une bordure bleue dans l’éditeur.
 
@@ -76,7 +76,7 @@ Chaque entrée de composant peut comporter les options suivantes :
 
 * **Modifier le script :** lien qui ouvre le script du composant dans CRXDE Lite.
 
-* **Afficher les détails du composant :** affiche les informations sur le composant dans la [Console des composants](/help/sites-cloud/authoring/features/components-console.md).
+* **Afficher les détails du composant :** : affiche les informations sur le composant dans la [Console des composants](/help/sites-cloud/authoring/features/components-console.md).
 
 Le développement d’une entrée de composant en appuyant ou en cliquant sur le chevron peut également afficher :
 
@@ -92,4 +92,4 @@ L’onglet **Erreurs** devrait toujours rester vide (comme ci-dessus), mais lors
 * Un avertissement s’affiche si le composant écrit une entrée dans le journal d’erreurs, avec les détails de l’erreur et des liens directs vers le code correspondant dans CRXDE Lite.
 * Un avertissement s’affiche si le composant ouvre une session d’administrateur.
 
-Par exemple, si une méthode non définie est appelée, l’erreur résultante est affichée dans la variable **Erreurs** et l’entrée du composant dans l’arborescence de la fonction **Composants** est également marqué d’un indicateur lorsqu’une erreur se produit.
+Par exemple, si une méthode non définie est appelée, l’erreur résultante s’affiche dans l’onglet **Erreurs** et l’entrée du composant dans l’arborescence de l’onglet **Composants** est également marquée d’un indicateur lorsqu’une erreur se produit.

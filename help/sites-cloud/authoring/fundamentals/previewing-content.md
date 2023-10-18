@@ -5,7 +5,7 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 83%
+ht-degree: 86%
 
 ---
 
@@ -20,7 +20,7 @@ Il facilite la prévisualisation des expériences de page qui ne seraient pas vi
 >
 >Comme le contenu est *publié* dans l’environnement de prévisualisation, il est accessible par URL (il n’a donc pas besoin d’accéder à AEM).
 
-Pour plus d’informations sur les environnements d’aperçu, voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+Pour plus d’informations sur les environnements de prévisualisation, consultez le document [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publication de contenu en vue de la prévisualisation {#publishing-content-to-preview}
 

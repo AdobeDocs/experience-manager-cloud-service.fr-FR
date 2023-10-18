@@ -5,7 +5,7 @@ exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Consultez la vidéo Aperçu de la version de janvier 2023 pour un résumé des 
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Les rapports de ressources offrent désormais aux administrateurs et aux administratrices la possibilité de [générer des rapports de téléchargement de ressources](/help/assets/asset-reports.md) à partir du déploiement d’Experience Manager Assets as a Cloud Service. Ces données permettent en outre aux administrateurs d’obtenir des informations sur les principales mesures de succès afin de mesurer l’adoption d’Assets au sein de votre entreprise et par les clients.
+* Les rapports de ressources offrent désormais aux administrateurs et aux administratrices la possibilité de [générer des rapports de téléchargement de ressources](/help/assets/asset-reports.md) à partir du déploiement d’Experience Manager Assets as a Cloud Service. Ces données permettent en outre aux administrateurs et aux administratrices d’obtenir des informations sur les principales mesures de succès, afin de mesurer l’adoption d’Assets au sein de votre entreprise et par les clientes et clients.
 
   ![Rendu PDF pour d’autres formats](/help/release-notes/assets/choose_report.png)
 

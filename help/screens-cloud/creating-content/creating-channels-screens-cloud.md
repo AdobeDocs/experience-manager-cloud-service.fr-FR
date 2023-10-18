@@ -5,7 +5,7 @@ exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 75%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Ce document vous aide à comprendre la création et la gestion de canaux pour vo
 
 >[!NOTE]
 >**Conditions préalables**
->Avant de commencer cette section du Guide, consultez [Création et gestion de projets dans Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>Avant de commencer cette section du guide, consultez [Création et gestion de projets dans Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Pour créer un canal de séquence dans Screens as a Cloud Service, procédez comme suit :
 
@@ -43,7 +43,7 @@ Pour créer un canal de séquence dans Screens as a Cloud Service, procédez com
    ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
 
    >[!NOTE]
-   > L’assistant **Créer** fournit différents types de modèles lors de la création d’un canal. Voir [Modèles disponibles](#available-templates) pour plus d’informations.
+   > L’assistant **Créer** fournit différents types de modèles lors de la création d’un canal. Consultez [Modèles disponibles](#available-templates) dans l’assistant de création pour plus d’informations.
 
 1. Saisissez le nom de votre canal de séquence, par exemple **LoopingChannelOne** et cliquez sur **Créer**.
 
@@ -51,7 +51,7 @@ Pour créer un canal de séquence dans Screens as a Cloud Service, procédez com
 
    Un **LoopingChannelOne** apparaît désormais dans le dossier Canaux de votre projet AEM Screens.
 
-   Une fois que vous avez créé le canal, vous pouvez ajouter du contenu à votre canal. Voir [Ajout de contenu à un canal](#add-content) pour savoir comment ajouter des ressources (images/vidéos) à votre canal.
+   Une fois que vous avez créé le canal, vous pouvez ajouter du contenu à votre canal. Consultez [Ajout de contenu à un canal](#add-content) pour savoir comment ajouter des ressources (images/vidéos) à votre canal.
 
 ## Gestion d’un canal {#managing-channels}
 
@@ -85,8 +85,8 @@ Les modèles suivants sont disponibles lors de l’utilisation de l’assistant 
 
 | Modèles disponibles | Description |
 |--- |--- |
-| Dossier de canaux | Permet de créer un dossier pour stocker une collection de canaux. |
-| Canal de séquence | Permet de créer un canal qui lit les composants de manière séquentielle (un par un dans un diaporama). |
+| Dossier de canaux | Permet de créer un dossier pour stocker un ensemble de canaux. |
+| Canal de séquence | Permet de créer un canal qui lit les composants de manière séquentielle (l’un après l’autre comme une série de diapositives). |
 | Canal d’écran partagé barre en L gauche ou droite | Permet aux auteurs de contenus d’afficher différents types de ressources dans des zones de taille appropriée. |
 
 ## Utilisation des informations d’attribution par défaut pour les canaux {#default-channels}
@@ -101,7 +101,7 @@ Cette fonctionnalité vous permet de définir un planning d&#39;activation par d
    ![image](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. Cliquez sur **Définition des informations par défaut**.
-1. Configurez les détails de l’attribution par défaut, y compris la priorité, les dates de début et de fin et les modèles de périodicité pour le canal, puis cliquez sur **Attribuer**.
+1. Configurez les informations d’attribution par défaut, notamment la priorité, les dates de début et de fin, ainsi que les modèles de périodicité pour le canal, puis cliquez sur **Attribuer**.
 
    ![image](/help/screens-cloud/assets/display/Assignments2.png)
 
@@ -112,11 +112,11 @@ Cette fonctionnalité vous permet de définir un planning d&#39;activation par d
 Cette mosaïque affiche les informations suivantes :
 * La priorité par défaut du canal dans l’affichage
 * Les dates de début et de fin de l’activation lorsque la lecture du canal est planifiée
-* Vue synthétique de la périodicité (horaire/quotidien/hebdomadaire/mensuel/annuelle et nom donné à cette périodicité).
+* Un résumé de l’affichage de la périodicité (horaire/quotidien/hebdomadaire/mensuel/annuel, ainsi que le nom donné à cette périodicité).
 
-### Utilisation des informations d’attribution par défaut lors de l’affectation à un affichage {#default-display}
+### Utiliser les informations d’attribution par défaut lors de l’affectation à un affichage {#default-display}
 
-Les canaux dont les détails d’affectation par défaut peuvent être affectés affichent de la même manière que les canaux standard, avec l’option ajoutée pour utiliser les détails d’affectation par défaut au lieu de définir manuellement ceux qui sont personnalisés à chaque fois.
+Les canaux avec des informations d’attribution par défaut peuvent être affectés à des affichages de la même manière que les canaux standards, avec en plus la possibilité d’utiliser les informations d’attribution par défaut au lieu de définir manuellement des informations personnalisées, à chaque fois.
 
 1. Accédez à la page des informations de l’affichage auquel vous souhaitez attribuer le canal, puis cliquez sur **Attribuer le canal**.
 Vous pouvez également sélectionner l’affichage souhaité dans la vue d’inventaire et cliquer sur le bouton **Attribuer le canal**.
@@ -142,10 +142,10 @@ Vous pouvez également sélectionner l’affichage souhaité dans la vue d’inv
 
    ![image](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Remarque :** Une attribution de canal qui utilise les détails d’attribution par défaut ne sera pas modifiable dans le contexte de l’affichage.
+**Remarque :** une affectation de canal qui utilise les informations d’attribution par défaut ne sera pas modifiable dans le contexte de l’affichage.
 
-* Si vous devez le remplacer par une affectation personnalisée, supprimez-la d’abord, puis ajoutez-la à nouveau à l’aide de la fonction **Définition des détails d’affectation personnalisée** .
-* Si vous devez modifier les propriétés des détails d’attribution par défaut, faites-le directement à partir de la page des détails du canal.
+* Si vous devez la modifier et utiliser une affectation personnalisée, vous devrez d’abord la supprimer, puis la rajouter à l’aide de l’option **Définir des informations d’affectation personnalisée**.
+* Si vous devez modifier les propriétés des informations d’attribution par défaut, faites-le directement à partir de la page des informations du canal.
 
 ### Suppression des informations d’attribution par défaut d’un canal {#remove-display}
 
@@ -155,7 +155,7 @@ Vous pouvez également sélectionner l’affichage souhaité dans la vue d’inv
 
    ![image](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. Une boîte de dialogue de confirmation s’affiche et les détails correspondent à l’une des conditions suivantes :
+1. Une boîte de dialogue de confirmation s’affiche et les informations correspondent à l’une des conditions suivantes :
    **a.** Le canal n’est utilisé dans aucun affichage.
 
    ![image](/help/screens-cloud/assets/display/Assignments10.png)
@@ -175,4 +175,4 @@ Cela peut par conséquent donner lieu à des écrans vierges s’il n’y a pas 
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez configuré un canal AEM Screens dans votre projet, vous devez publier votre canal. Voir [Publication de canaux dans Screens as a Cloud Service](manage-publish.md) avant de gérer vos lecteurs à partir du fournisseur de services Screens.
+Maintenant que vous avez configuré un canal AEM Screens dans votre projet, vous devez publier votre canal. Consultez [Publication de canaux dans Screens as a Cloud Service](manage-publish.md) avant de gérer vos lecteurs à partir du fournisseur de services Screens.

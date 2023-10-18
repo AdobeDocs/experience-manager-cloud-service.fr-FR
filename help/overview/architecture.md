@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
 source-wordcount: '2015'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -65,7 +65,7 @@ La mise à l’échelle des instances par client du service s’applique aux deu
 ## Environnements {#environments}
 
 >[!NOTE]
->Pour plus d’informations, voir [Déploiement - Modes d’exécution](/help/implementing/deploying/overview.md#runmodes)
+>Pour plus d’informations, reportez-vous à [Déploiement – Modes d’exécution](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service est mis à la disposition des utilisateurs sous forme d’instances individuelles, chaque instance représentant un environnement AEM complet.
 
@@ -125,15 +125,15 @@ Cette nouvelle architecture comporte différents éléments principaux :
 
    * Le niveau de prévisualisation comprend un nœud d’aperçu unique. Celui-ci est utilisé pour l’assurance qualité du contenu avant publication au niveau de publication.
 
-   * Le niveau Publication comprend deux noeuds ou plus au sein d’une seule ferme de publication.
+   * Le niveau de publication comprend deux nœuds ou plus au sein d’une seule batterie de publication.
 
-      * Les noeuds peuvent fonctionner indépendamment les uns des autres.
+      * Les nœuds peuvent fonctionner indépendamment les uns des autres.
 
       * Chaque nœud est constitué d’un éditeur AEM et d’un serveur web équipé du module AEM Dispatcher.
 
       * La mise à l’échelle s’effectue automatiquement en fonction des besoins en matière de trafic sur le site.
 
-      * Par défaut, il existe une seule ferme de publication dans la région principale, mais [zones de publication supplémentaires](/help/operations/additional-publish-regions.md) peut être sous licence.
+      * Par défaut, il existe une seule batterie de publication dans la région principale, mais des [régions de publication supplémentaires](/help/operations/additional-publish-regions.md) peuvent être sous licence.
 
       * Les utilisateurs finaux, ou les visiteurs du site, consultent le site web via le service AEM Publish.
 
@@ -211,7 +211,7 @@ L’architecture mise à jour comprend :
    * Éditeur de page
    * Création basée sur des documents, depuis SharePoint ou Google Drive
 * Diffusion d’expérience, qui comprend désormais :
-   * Services de diffusion Edge
+   * Edge Delivery Services
 * Services auxiliaires pour une diffusion rapide et efficace de contenu et de code
 
 ![AEM Aperçu as a Cloud Service - avec les Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM Aperçu as a Cloud Service - avec les Edge Delivery Services")

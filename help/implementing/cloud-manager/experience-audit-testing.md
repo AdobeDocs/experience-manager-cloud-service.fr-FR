@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 85%
 
 Découvrez comment l’audit de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation des moteurs de recherche.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 L’audit de l’expérience est une fonctionnalité disponible dans les pipelines de production de Cloud Manager Sites qui valide le processus de déploiement et permet de s’assurer que les modifications déployées :
 
@@ -31,7 +31,7 @@ L’audit de l’expérience dans Cloud Manager garantit que l’expérience de 
 
 Les résultats sont informatifs et permettent au responsable de déploiement de voir les scores et les différences existant entre les scores précédents et actuels. Ces informations sont utiles pour déterminer si une régression a été introduite avec le déploiement actuel.
 
-Le contrôle de l’expérience est optimisé par Google Lighthouse, un outil open source de Google qui est activé dans tous les pipelines de production de Cloud Manager.
+L’audit de l’expérience est optimisé par Google Lighthouse, un outil open source de Google qui est activé dans tous les pipelines de production de Cloud Manager.
 
 >[!INFO]
 >
@@ -39,7 +39,7 @@ Le contrôle de l’expérience est optimisé par Google Lighthouse, un outil op
 
 >[!TIP]
 >
->Vous configurez les pages incluses dans le contrôle de l’expérience lorsque vous [configurez votre pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+>Vous configurez les pages incluses dans l’audit de l’expérience lorsque vous [configurez votre pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Comprendre les résultats de l’audit de l’expérience {#understanding-experience-audit-results}
 
@@ -72,6 +72,6 @@ La mesure de modification peut avoir l’une des valeurs suivantes.
 
 En analysant en profondeur n’importe lequel des tests, vous obtiendrez des scores au niveau de la page plus détaillés. Vous pouvez voir le score des pages individuelles pour le test spécifique, ainsi que la modification par rapport à l’exécution de test précédente.
 
-Cliquer sur les détails d’une page spécifique fournit des informations sur les éléments de la page qui ont été évalués et des conseils pour résoudre les problèmes si des opportunités d’amélioration sont détectées.
+Cliquer sur les détails d’une page donnée fournit des informations sur les éléments de la page qui ont été évalués, et des conseils pour résoudre les problèmes si des possibilités d’amélioration sont détectées.
 
 ![Scores au niveau de la page](/help/implementing/cloud-manager/assets/exp-audit-2.png)

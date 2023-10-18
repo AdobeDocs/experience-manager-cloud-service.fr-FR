@@ -3,10 +3,11 @@ title: Administration d’instances de workflow
 description: Découvrez comment administrer des instances de workflow à l’aide de la console de workflow
 feature: Administering
 role: Admin
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 77%
+ht-degree: 99%
 
 ---
 
@@ -16,37 +17,37 @@ La console de workflows fournit plusieurs outils permettant d’administrer les 
 
 Différentes consoles sont à votre disposition pour administrer les workflows. Utilisez la [navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) pour ouvrir le panneau **Outils**, puis sélectionnez **Workflows** :
 
-* **Modèles** : gérez les définitions des workflows.
+* **Modèles** : gérez les définitions des workflows
 * **Instances** : affichez et gérez l’exécution des instances de workflow.
-* **Lanceurs** : gérez le lancement des workflows.
-* **Archive** : affichez l’historique des workflows correctement terminés.
-* **Échecs** : affichez l’historique des workflows terminés avec des erreurs.
+* **Lanceurs** : gérez le lancement des workflows
+* **Archive** : affichez l’historique des workflows correctement terminés
+* **Échecs** : affichez l’historique des workflows terminés avec des erreurs
 * **Attribution automatique** : configurez l’attribution automatique des workflows aux modèles
 
 ## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
-1. Sélectionner **Instances** pour afficher la liste des instances de workflow en cours d’exécution.
-1. Sur le rail supérieur, dans le coin droit, les instances de workflow affichent **Workflows en cours d’exécution**, **État**, et **Détails**.
-1. **Workflows en cours d’exécution** indique le nombre de workflows en cours d’exécution et leur état. par exemple, dans les images données, sont affichés le nombre de **Workflows en cours d’exécution** et la variable **État** de l’instance AEM :
+1. Sélectionnez **Instances** pour afficher la liste des instances de workflow en cours d’exécution.
+1. Sur le rail supérieur, dans le coin droit, les instances de workflow affichent **Workflows en cours d’exécution**, **Statut**, et **Détails**.
+1. **Workflows en cours d’exécution** indique le nombre de workflows en cours d’exécution et leur statut. Par exemple, dans les images données, le nombre de **workflows en cours d’exécution** et le **statut** de l’instance AEM sont affichés :
 
    * **Statut : sain**
-     ![status-health](/help/sites-cloud/administering/assets/status-healthy.png)
+     ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
-   * **Statut : malsain**
-     ![statut-malsain](/help/sites-cloud/administering/assets/status-unhealthy.png)
+   * **Statut : non sain**
+     ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
-1. Pour **Détails de l’état** des instances de workflow, cliquez sur **Détails**, pour afficher la variable **nombre d’instances de workflows en cours d’exécution**, **instances de workflow terminées**, **instances de workflow annulées**, **instances de workflow en échec**, etc. par exemple, ci-dessous, les images données qui affichent **Détails de l’état** par :
+1. Si vous souhaitez avoir des **détails sur le statut** des instances de workflow, cliquez sur **Détails** pour afficher le **nombre d’instances de workflows en cours d’exécution**, les **instances de workflow terminées**, les **instances de workflow abandonnées**, **instances de workflow en échec**, etc. Par exemple, ci-dessous, les images données qui affichent les **détails sur le statut** avec :
 
-   * **Détails de l’état : Sain**
-     ![status-details-health](/help/sites-cloud/administering/assets/status-details-healthy.png)
+   * **Détails sur le statut : sain**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   * **Détails de l’état : malsain**
+   * **Détails sur le statut : non sain**
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Pour maintenir l’instance de workflow en bonne santé, suivez les bonnes pratiques à l’adresse [purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [bonnes pratiques relatives aux workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
+   > Pour maintenir une instance de workflow saine, consultez les rubriques [Purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [Bonnes pratiques en matière de workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=fr).
 
 ## Rechercher des instances de workflow {#search-workflow-instances}
 
@@ -82,7 +83,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    >[!NOTE]
    >
    >
-   >Pour interrompre ou interrompre un workflow, celui-ci doit être en attente d’une intervention de l’utilisateur, par exemple dans une étape de participant. Toute tentative d’abandon d’un workflow en cours d’exécution de traitements (threads actifs en cours d’exécution) peut ne pas produire les résultats escomptés.
+   >Pour arrêter ou abandonner un workflow, celui-ci doit être en attente d’une intervention de l’utilisateur ou utilisatrice, par exemple dans une étape de participant ou participante. Toute tentative d’abandon d’un workflow en cours d’exécution de traitements (threads actifs en cours d’exécution) peut ne pas produire les résultats escomptés.
 
 
 ## Affichage des workflows archivés {#viewing-archived-workflows}
@@ -96,10 +97,10 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    >[!NOTE]
    >
    >
-   >L’état d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ou de l’utilisatrice, comme par exemple :
+   >Le statut d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ou utilisatrice. Par exemple :
    >
-   >* L’utilisation de la fonction **Terminer**.
-   >* lorsqu’une page, soumise à un workflow, est supprimée (de force), le workflow est arrêté.
+   >* L’utilisation de la fonction **Arrêter**
+   >* Lorsqu’une page, soumise à un workflow, est supprimée (de force), le workflow est arrêté.
 
 1. Sélectionnez un élément spécifique, puis **Ouvrir l’historique** pour afficher plus de détails :
 
@@ -110,14 +111,14 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher le **Message d’échec**, **Step et **Pile des échecs**.
+Ouvre une fenêtre pour afficher le **message d’échec**, l’**étape et la **pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.
 
 * **Relancer l’étape** Exécute à nouveau l’instance du composant d’étape de test. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur initiale. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
 * **Arrêter** Arrêtez le workflow si l’erreur a provoqué une situation irrémédiable pour le workflow. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.
-* **Arrêter et réessayer** similaire à **Arrêter** mais qu’une nouvelle instance de workflow est lancée à l’aide de la charge utile, du titre et de la description d’origine.
+* **Arrêter et réessayer** Similaire à **Arrêter**, à ceci près qu’une nouvelle instance de workflow est lancée à l’aide de la payload, du titre et de la description d’origine.
 
 Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, utilisez les étapes suivantes :
 
@@ -152,7 +153,7 @@ Pour configurer le service, vous pouvez configurer les fichiers de configuration
    <th>Description</th>
   </tr>
   <tr>
-   <td>Nom de la tâche</td>
+   <td>Nom du traitement</td>
    <td>scheduledpurge.name</td>
    <td>Nom explicite de la purge planifiée.</td>
   </tr>
@@ -192,13 +193,13 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 
 ## Utilisation de variables de workflow pour les banques de données détenues par le client {#using-workflow-variables-customer-datastore}
 
-Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées/données définies par l’utilisateur dans votre propre stockage géré au lieu d’Adobe le stockage fourni. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
+Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées et les données définies par l’utilisateur ou l’utilisatrice dans votre propre espace de stockage géré au lieu de celui fourni par Adobe. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
 
 ### Définition du modèle pour utiliser l’enregistrement externe des métadonnées {#set-model-for-external-storage}
 
 Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le modèle (et ses instances d’exécution) dispose d’un enregistrement externe des métadonnées. Les variables de workflow ne seront pas conservées dans le JCR pour les instances de workflow des modèles marqués pour l’enregistrement externe.
 
-La propriété *userMetadataPersistenceEnabled* est stocké dans la variable *noeud jcr:content* du modèle de workflow. Cet indicateur est conservé dans les métadonnées de workflow en tant que *cq:userMetaDataCustomPersistenceEnabled*.
+La propriété *userMetadataPersistenceEnabled* sera stockée dans le *nœud jcr:content* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous le nom *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustration ci-dessous montre comment définir l’indicateur dans un workflow.
 
@@ -264,5 +265,3 @@ public interface UserMetaDataPersistenceProvider {
  
 } 
 ```
-
-

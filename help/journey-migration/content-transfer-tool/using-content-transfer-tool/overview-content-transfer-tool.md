@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 76%
+ht-degree: 93%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 76%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Présentation"
->abstract="Développé par Adobe, l’outil de transfert de contenu est utilisé pour délencher la migration de contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
+>abstract="Développé par Adobe, l’outil de transfert de contenu est utilisé pour délencher la migration de contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs, utilisatrices ou groupes)."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr" text="Conseils et bonnes pratiques"
 
-L’outil de transfert de contenu est un outil développé par Adobe qui peut être utilisé pour lancer la migration de contenu existant d’une instance d’AEM source (on-premise ou AMS) vers l’instance AEM Cloud Service cible.
+Développé par Adobe, l’outil de transfert de contenu est utilisé pour lancer la migration du contenu existant depuis une instance AEM source (on-premise ou AMS) vers une instance AEM Cloud Service cible.
 
-Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes).  Voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour plus d’informations.
+Cet outil transfère également automatiquement les entités principales (utilisateurs, utilisatrices ou groupes).  Consultez lea section [Mappage des utilisateurs et utilisatrices, et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour plus d’informations.
 
-L’outil de transfert de contenu intègre le processus de transfert de contenu à Cloud Acceleration Manager. Cela permet à l’utilisateur de bénéficier de tous les avantages suivants :
+L’outil de transfert de contenu intègre le processus de transfert de contenu à Cloud Acceleration Manager. Cela permet à la personne utilisatrice de bénéficier de tous les avantages suivants :
 
 * Une méthode en libre-service pour extraire une seule fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
-* Amélioration de l’expérience utilisateur grâce à de meilleurs états de chargement, garde-fous et gestion des erreurs
-* La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
-* Les rapports de migration des entités de sécurité et de validation sont disponibles.
+* Amélioration de l’expérience utilisateur grâce à une meilleure gestion des états de chargement, des mécanismes de sécurisation et des erreurs
+* Conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
+* Rapports de validation et de migration des entités principales disponibles pour validation
 
 ## Phases de l’outil de transfert de contenu {#phases-content-transfer-tool}
 
@@ -34,7 +34,7 @@ Le transfert de contenu comporte deux phases :
 
 1. **Extraction** : l’extraction fait référence à l’extraction de contenu de l’instance AEM source dans une zone temporaire appelée *jeu de migration*. Un *jeu de migration* est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service.
 
-   Voir [Processus d’extraction au cours du transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) pour plus d’informations.
+   Pour plus d’informations, consultez la section [Processus d’extraction au cours du transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
    >[!NOTE]
    >Le mappage des utilisateurs et utilisatrices est désormais exécuté automatiquement dans le cadre de la phase d’extraction sur l’instance de création (mais il peut être désactivé sur l’instance de création ou activé sur l’instance de publication). Consultez [Mappage des utilisateurs et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour plus d’informations.
@@ -55,9 +55,9 @@ L’outil de transfert de contenu comporte une fonctionnalité pour traiter un c
 >[!NOTE]
 >Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service.
 
-Au cours de la phase d’extraction, pour ***compléter*** un jeu de migration existant, l’option de *remplacement* doit être désactivée. Voir [Extraction de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) pour plus d’informations.
+Au cours de la phase d’extraction, pour ***compléter*** un jeu de migration existant, l’option de *remplacement* doit être désactivée. Pour en savoir plus, voir [Extraction de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
 
-Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus du contenu actuel, l’option *Effacer* doit être désactivée. Voir [Ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) pour plus d’informations.
+Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus du contenu actuel, l’option *Effacer* doit être désactivée. Pour en savoir plus, voir [Ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process).
 
 ## Expiration du jeu de migration {#migration-set-expiry}
 

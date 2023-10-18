@@ -5,11 +5,11 @@ exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2037'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Configuration des formulaires de recherche {#configuring-search-forms}
+# Configurer des formulaires de recherche {#configuring-search-forms}
 
 Adobe Experience Manager as a Cloud Service est fourni avec un puissant mécanisme de [recherche](/help/sites-cloud/authoring/getting-started/search.md).
 
@@ -29,7 +29,7 @@ Ensemble, ces outils visent à vous aider à localiser rapidement et facilement 
 
 À l’aide des **Formulaires de recherche**, vous pouvez personnaliser et étendre ces panneaux en fonction de vos besoins spécifiques.
 
-Les **Formulaires de recherche** fournissent une sélection immédiate de [prédicats](#predicates-and-their-settings) que vous pouvez combiner et définir. Le [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) est accessible via :
+Les **Formulaires de recherche** fournissent une sélection immédiate de [prédicats](#predicates-and-their-settings) que vous pouvez combiner et définir. Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessible via :
 
 * **Outils**
    * **Général**
@@ -37,7 +37,7 @@ Les **Formulaires de recherche** fournissent une sélection immédiate de [préd
 
 ## Formulaires par défaut {#default-forms}
 
-Lorsque vous accédez à la console **Formulaires de recherche** pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration correspondante est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois que vous avez personnalisé et enregistré une configuration, le cadenas disparaît. Il réapparaîtra lorsque vous [supprimer votre configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default), auquel cas la valeur par défaut (et l’indicateur de cadenas) est rétablie.
+Lorsque vous accédez à la console **Formulaires de recherche** pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration correspondante est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois que vous avez personnalisé et enregistré une configuration, le cadenas disparaît. Il réapparaît si vous [supprimez votre configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default), auquel cas la valeur par défaut (et l’indicateur de cadenas) est rétablie.
 
 ![présentation de la configuration des formulaires de recherche](assets/csf-overview.png)
 
@@ -64,7 +64,7 @@ Les configurations par défaut (classées dans l’ordre alphabétique) disponib
 
 >[!NOTE]
 >
->Pour plus d’informations sur les formulaires de recherche liés aux ressources, voir [Ressources – Facettes de recherche](/help/assets/search-facets.md)
+>Le rendu du contenu est effectué par le navigateur, qui peut également le mettre en cache, selon les en-têtes[Ressources – Facettes de recherche](/help/assets/search-facets.md)
 
 
 ## Prédicats et paramètres associés {#predicates-and-their-settings}
@@ -550,9 +550,9 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 
 1. Accédez à **Outils**, **Général**, **Formulaires de recherche**.
 
-1. Sélectionnez la configuration que vous souhaitez personnaliser.
-1. Utilisez la variable **Modifier** pour ouvrir la configuration à mettre à jour.
-1. S’il s’agit d’une nouvelle personnalisation, vous allez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) requis. Si une personnalisation existante est existante, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
+1. Sélectionnez la configuration à personnaliser.
+1. Cliquez sur l’icône **Modifier** pour ouvrir la configuration à mettre à jour.
+1. S’il s’agit d’une nouvelle personnalisation, vous allez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) requis. Si une personnalisation existe, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
 1. Sélectionnez **Terminé** pour enregistrer la configuration. Vos modifications seront visibles lors de la prochaine utilisation de la configuration.
 
    >[!NOTE]
@@ -564,9 +564,9 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 
 ### Ajout et modification d’un champ de prédicat et définition des paramètres de champ {#add-edit-a-predicate-field-and-define-field-settings}
 
-Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
+Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
 
-1. [Ouvrir la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Si vous souhaitez ajouter un nouveau champ, ouvrez l’onglet **Sélectionner le prédicat** et faites glisser le prédicat souhaité vers l’emplacement souhaité. Par exemple, le **prédicat de période** :
 
    ![ajout d’un prédicat](assets/csf-add-predicate.png)
@@ -593,7 +593,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
    ![icône d’aperçu](assets/csf-preview-icon.png)
 
-1. Affiche les formulaires de recherche tels qu’ils s’affichent (entièrement développés) dans la colonne Rechercher de la console appropriée.
+1. Affiche les formulaires de recherche tels qu’ils apparaissent (totalement développés) dans la colonne Rechercher de la console appropriée.
 
    ![formulaire d’aperçu](assets/csf-preview-form.png)
 
@@ -601,8 +601,8 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 ### Suppression d’un champ de prédicat {#deleting-a-predicate-field}
 
-1. [Ouvrir la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
-1. Sélectionnez le champ de prédicat (à droite), ouvrez le **Paramètres** , puis sélectionnez la variable **Supprimer** (en bas à gauche).
+1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (en bas à gauche).
 
    ![icône de suppression](assets/csf-delete-icon.png)
 
@@ -624,9 +624,9 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
    ![restaurer les valeurs par défaut](assets/csf-restore-default.png)
 
-1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (ceci est indiqué par la réapparition du symbole de cadenas dans la console).
+1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options {#adding-options-predicates}
+### Ajouter des prédicats d’options {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
@@ -657,8 +657,8 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
 1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administrateurs de sites**. Sélectionnez ensuite **Modifier**.
 
-1. Selon la configuration, ajoutez une **Options** ou **Propriété Options** à la configuration.
-1. Mettez à jour les champs, notamment :
+1. Selon la configuration, ajoutez des **Options** ou une **Propriété Options** à la configuration.
+1. Mettez à jour les champs, notamment :
 
    * **Nom de la propriété**
 
@@ -675,7 +675,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
    ![Prédicats Option](assets/csf-options-predicate-02.png)
 
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
-1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Recherche – Filtres**. Les formulaires de recherche nouvellement définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option nécessaire pour afficher les résultats de la recherche.
+1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Recherche – Filtres**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option nécessaire pour afficher les résultats de la recherche.
 
    ![options utilisées](assets/csf-options-usage.png)
 

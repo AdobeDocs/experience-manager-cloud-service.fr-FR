@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager vérifie la propriété du domaine via la valeur TXT et affiche l
 
 * **Vérifié, échec du déploiement** - La vérification TXT a réussi mais le déploiement CDN a échoué.
 
-   * Dans ce cas, contactez votre représentant Adobe.
+   * Dans ce cas, contactez votre personne représentante Adobe.
 
 * **Domaine vérifié et déployé** - Ce statut indique que votre nom de domaine personnalisé est prêt à être utilisé.
 
@@ -56,7 +56,7 @@ Vous trouverez ci-dessous quelques erreurs courantes de nom de domaine et leurs 
 
 ### Erreur de domaine non installé {#domain-not-installed}
 
-Cette erreur peut se produire lors de la validation du domaine de l’enregistrement TXT même après avoir vérifié que l’enregistrement a été mis à jour de manière appropriée.
+Cette erreur peut se produire lors de la validation du domaine de l’enregistrement TXT, même après avoir vérifié que l’enregistrement a été mis à jour de manière appropriée.
 
 #### Cause de l’erreur {#cause}
 
@@ -82,8 +82,8 @@ L’erreur est résolue comme suit :
 
 ## Configurations de réseau CDN préexistantes pour les noms de domaine personnalisés {#pre-existing-cdn}
 
-Si vous disposez d’une configuration CDN préexistante pour vos noms de domaine personnalisés, un message d’information s’affiche sur la variable **Noms de domaine personnalisés** et **Environnement** pages, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
+Si vous disposez d’une configuration de réseau CDN préexistante pour vos noms de domaine personnalisés, un message d’information s’affiche dans les pages **Noms de domaine personnalisés** et **Environnement**, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
 
 Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
-Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) pour plus d’informations.
+Pour plus d’informations, consultez la section [Affichage et mise à jour du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).

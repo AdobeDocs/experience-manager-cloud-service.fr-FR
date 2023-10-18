@@ -5,7 +5,7 @@ exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
 workflow-type: tm+mt
 source-wordcount: '1877'
-ht-degree: 62%
+ht-degree: 65%
 
 ---
 
@@ -120,7 +120,7 @@ Il applique un filtre JCR (sous la forme d’une contrainte de requête) avant d
 
 >[!NOTE]
 >
->Pour des raisons techniques (par exemple, flexibilité, imbrication de fragments), AEM ne peut pas déléguer l’intégralité du filtrage à JCR.
+>Pour des raisons techniques (par exemple : flexibilité, imbrication de fragments), AEM ne peut pas déléguer l’intégralité du filtrage à JCR.
 
 Cette technique permet de conserver la flexibilité offerte par les filtres GraphQL, tout en déléguant autant de filtrage que possible à JCR.
 
@@ -240,7 +240,7 @@ Si vous souhaitez principalement récupérer les premières pages uniquement, il
 
 ### Opérations logiques dans les expressions de filtre {#logical-operations-in-filter-expressions}
 
-Si vous filtrez des fragments imbriqués, vous pouvez toujours appliquer un filtrage JCR en fournissant un filtre d’accompagnement sur un champ de niveau supérieur combiné à l’aide de la variable `AND` de l’opérateur.
+Si vous filtrez des fragments imbriqués, vous pouvez tout de même appliquer le filtrage JCR en fournissant un filtre d’accompagnement sur un champ de niveau supérieur combiné avec l’utilisation de l’opérateur `AND`.
 
 Un cas d’utilisation type consiste à restreindre la portée de la requête à l’aide d’un filtre sur le champ `_path` du fragment de niveau supérieur, puis à filtrer les champs supplémentaires pouvant se trouver au niveau supérieur ou sur un fragment imbriqué.
 

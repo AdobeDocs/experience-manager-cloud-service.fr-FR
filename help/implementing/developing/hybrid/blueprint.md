@@ -1,11 +1,11 @@
 ---
 title: Plan directeur d’applications sur une seule page (SPA)
-description: Ce document décrit le contrat général et indépendant du framework que tout framework SPA devrait respecter afin que vous puissiez mettre en oeuvre des composants SPA modifiables dans Adobe.
+description: Ce document décrit le contrat général et indépendant du framework que tout framework SPA devrait respecter afin de mettre en œuvre des composants SPA modifiables dans AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2056'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ La SPA doit respecter certaines exigences afin que l’auteur puisse utiliser l�
 
 ## Présentation {#introduction}
 
-Ce document décrit le contrat général que tout framework SPA doit respecter (c’est-à-dire le type de couche de prise en charge AEM) afin que vous puissiez implémenter des composants de SPA modifiables dans.
+Ce document décrit le contrat général que tout framework SPA devrait respecter (c’est-à-dire le type de calque de support AEM) afin de mettre en œuvre des composants SPA modifiables dans AEM.
 
 Pour que l’auteur puisse utiliser l’éditeur de page AEM pour modifier les données exposées par un framework d’applications sur une seule page, un projet doit être en mesure d’interpréter la structure du modèle qui représente la sémantique des données stockées pour une application dans le référentiel AEM. Pour atteindre cet objectif, deux bibliothèques indépendantes du framework sont fournies : `PageModelManager` et `ComponentMapping`.
 
 >[!NOTE]
 >
->Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, une couche spécifique à la structure composée de modules, composants et services peut être fournie.
+>Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, un calque spécifique au framework composé de modules, composants et services peut être fourni.
 >
 >**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous voulez mettre en œuvre un autre framework à utiliser avec AEM.
 
@@ -49,7 +49,7 @@ Chaque élément présent dans le modèle contient un champ `:type` qui expose u
 
 #### Mappage dynamique de modèle à composant {#dynamic-model-to-component-mapping}
 
-Pour plus d’informations sur la façon dont le mappage du modèle dynamique avec les composants se produit dans le SDK SPA JavaScript pour AEM voir l’article [Mappage du modèle dynamique avec le composant pour SPA](model-to-component-mapping.md).
+Vous trouverez des explications sur le mappage dynamique de modèle à composant dans le SDK SPA JavaScript pour AEM dans l’article [Mappage dynamique de modèle à composant pour SPA](model-to-component-mapping.md).
 
 ### Couche spécifique au framework {#framework-specific-layer}
 
@@ -67,14 +67,14 @@ Les composants de la SPA doivent être synchronisés avec le modèle de page et 
 
 ### Champs Meta {#meta-fields}
 
-Le modèle de page utilise l’exportateur de modèle JSON, lui-même basé sur la variable [Modèle Sling](https://sling.apache.org/documentation/bundles/models.html) API. Les modèles Sling exportables présentent la liste de champs suivante pour permettre aux bibliothèques sous-jacentes d’interpréter le modèle de données :
+Le modèle de page utilise l’exporteur de modèle JSON, lui-même basé sur l’API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). Les modèles Sling exportables exposent la liste de champs suivante afin de permettre aux bibliothèques sous-jacentes d’interpréter le modèle de données :
 
 * `:type` : type de ressource AEM (par défaut = type de ressource)
 * `:children` : enfants hiérarchiques de la ressource actuelle. Les enfants ne font pas partie du contenu interne de la ressource actuelle (on les trouve sur les éléments qui représentent une page)
 * `:hierarchyType` : type hiérarchique d’une ressource. Actuellement, `PageModelManager` prend en charge le type de page.
 
 * `:items` : ressources de contenu enfant de la ressource actuelle (structure imbriquée, présente uniquement sur les conteneurs)
-* `:itemsOrder` : liste triée des enfants. L’objet de carte JSON ne garantit pas l’ordre de ses champs. En disposant de la carte et du tableau actif, le consommateur de l’API bénéficie des avantages des deux structures.
+* `:itemsOrder` : liste triée des enfants. L’objet carte JSON ne garantit pas l’ordre de ses champs. En disposant de la carte et du tableau actif, le consommateur de l’API bénéficie des avantages des deux structures.
 * `:path` : chemin d’accès au contenu d’un élément (présent sur les éléments qui représentent une page).
 
 Voir aussi [Prise en main d’AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr).
@@ -106,7 +106,7 @@ Les entités suivantes devraient être mises en œuvre conformément aux directi
 
 Les composants du projet doivent déléguer l’accès aux fragments d’un modèle à un fournisseur de modèles. Le fournisseur de modèles assure alors l’écoute des modifications apportées au fragment spécifié du modèle et le retour du modèle mis à jour au composant délégateur.
 
-Le fournisseur de modèles doit pour cela être inscrit auprès de [`PageModelManager`](#pagemodelmanager). Ensuite, lorsqu’une modification se produit, elle reçoit et transmet les données mises à jour au composant délégateur. Par convention, la propriété mise à la disposition du composant délégateur qui transportera le fragment de modèle est nommée `cqModel`. L’implémentation peut fournir cette propriété au composant, mais doit tenir compte d’aspects tels que l’intégration à l’architecture du framework, la capacité de découverte et la facilité d’utilisation.
+Le fournisseur de modèles doit pour cela être inscrit auprès de [`PageModelManager`](#pagemodelmanager). Ensuite, lorsqu’une modification se produit, il reçoit et transmet les données mises à jour au composant délégateur. Par convention, la propriété mise à la disposition du composant délégateur qui transportera le fragment de modèle est nommée `cqModel`. L’implémentation peut fournir cette propriété au composant, mais doit tenir compte d’aspects tels que l’intégration à l’architecture du framework, la capacité de découverte et la facilité d’utilisation.
 
 ### Le décorateur HTML du composant {#the-component-html-decorator}
 

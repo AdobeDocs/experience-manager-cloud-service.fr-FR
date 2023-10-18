@@ -14,14 +14,14 @@ exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
 # Configuration de la transcription dans [!DNL Experience Manager Assets] {#configure-transcription-service}
 
 La transcription est le processus de traduction de l’audio d’un fichier audio ou vidéo en texte (voix vers texte) à l’aide de la technologie de reconnaissance vocale.
-[!DNL Adobe Experience Manager Assets] est configuré avec les [!DNL Azure Media Services] qui génèrent automatiquement une transcription textuelle de la langue parlée dans un fichier audio ou vidéo pris en charge au format WebVTT (.vtt). Lorsqu’une ressource audio ou vidéo est traitée dans [!DNL Experience Manager Assets], le service de transcription génère automatiquement le rendu de transcription texte de la ressource audio ou vidéo et le stocke au même emplacement que la ressource d’origine dans votre référentiel de ressources. La variable [!DNL Experience Manager Assets] Le service de transcription permet aux marketeurs de gérer efficacement leur contenu audio et vidéo en ajoutant la possibilité de découvrir le contenu texte et en augmentant le retour sur investissement de ces ressources en prenant en charge l’accessibilité et la localisation.
+[!DNL Adobe Experience Manager Assets] est configuré avec les [!DNL Azure Media Services] qui génèrent automatiquement une transcription textuelle de la langue parlée dans un fichier audio ou vidéo pris en charge au format WebVTT (.vtt). Lorsqu’une ressource audio ou vidéo est traitée dans [!DNL Experience Manager Assets], le service de transcription génère automatiquement le rendu de transcription texte de la ressource audio ou vidéo et le stocke au même emplacement que la ressource d’origine dans votre référentiel de ressources. Le service de transcription d’[!DNL Experience Manager Assets] permet aux marketeurs et marketeuses de gérer efficacement leur contenu audio et vidéo en permettant de trouver plus facilement le contenu texte et en augmentant le retour sur investissement de ces ressources par la prise en charge de l’accessibilité et de la localisation.
 
 Les transcriptions sont des versions textuelles du contenu parlé ; par exemple, un film que vous visionnez sur n’importe quelle plateforme OTT comprend souvent des sous-titres pour faciliter son accessibilité ou pour utiliser le contenu dans d’autres langues. Ou encore, tout fichier audio ou vidéo utilisé à des fins de marketing, d’apprentissage ou de divertissement. Ces expériences commencent par une transcription qui est ensuite formatée ou traduite selon les besoins. La transcription audio ou vidéo est un processus long et susceptibles de contenir des erreurs lorsqu’elle est exécutée manuellement. Il est également difficile d’adapter manuellement le processus à grande échelle, compte tenu de la demande croissante de contenu audio-vidéo. [!DNL Experience Manager Assets] utilise la transcription basée sur l’IA d’Azure qui permet un traitement à grande échelle des ressources audio et vidéo et qui génère les transcriptions textuelles (fichiers .vtt) ainsi que les informations de date et heure. Tout comme dans Assets, la fonctionnalité de transcription est prise en charge avec Dynamic Media.
 

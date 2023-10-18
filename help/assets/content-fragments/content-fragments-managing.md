@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
 source-wordcount: '1877'
-ht-degree: 79%
+ht-degree: 90%
 
 ---
 
@@ -80,9 +80,9 @@ La méthode de création d’un fragment de contenu est la suivante :
 
       * **Nom**
 
-        Le nom est utilisé pour former l’URL.
+        Nom utilisé pour former l’URL.
 
-        Obligatoire ; est dérivé automatiquement du titre, mais peut être mis à jour.
+        Obligatoire, il est dérivé automatiquement du titre, mais il peut être modifié.
 
 1. Sélectionnez **Créer** pour terminer l’action, puis **ouvrez** le fragment en mode d’édition ou revenez à la console en sélectionnant **Terminé**.
 
@@ -133,7 +133,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
 >[!CAUTION]
 >
->Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contactez votre administrateur système si vous rencontrez des problèmes.
+>Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administration système.
 
 1. Utilisez la console **Ressources** afin de naviguer jusqu’à l’emplacement de votre fragment de contenu.
 1. Ouvrez le fragment à modifier, en effectuant l’une des opérations suivantes :
@@ -179,7 +179,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
 
 ![Actions de barre d’outils disponibles dans divers modes](assets/cfm-managing-top-toolbar.png)
 
-* Un message s’affiche lorsque le fragment est déjà référencé sur une page de contenu. Vous pouvez **Fermer** le message.
+* Un message s’affiche si le fragment est déjà référencé dans une page de contenu. Vous pouvez **Fermer** le message.
 
 * Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
 
@@ -227,7 +227,7 @@ L’éditeur possède différentes options :
 
   >[!CAUTION]
   >
-  >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contactez votre administrateur système si vous rencontrez des problèmes.
+  >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administration système.
 
   >[!NOTE]
   >
@@ -235,13 +235,13 @@ L’éditeur possède différentes options :
 
   >[!CAUTION]
   >
-  >En plus de simplement enregistrer vos modifications, ces actions mettent également à jour les références éventuelles et s’assurent que le Dispatcher est nettoyé si nécessaire. Le traitement de ces modifications peut prendre du temps. En raison de cette période, il peut y avoir un impact sur les performances sur un système volumineux/complexe/lourdement chargé.
+  >En plus de simplement enregistrer vos modifications, ces actions mettent également à jour les références éventuelles et s’assurent que le Dispatcher est nettoyé si nécessaire. Le traitement de ces modifications peut prendre du temps. Ce délai peut avoir un impact sur les performances d’un système volumineux/complexe/lourdement chargé.
   >
-  >Gardez ce processus à l’esprit lorsque vous utilisez **Enregistrer et fermer** puis de réentrer rapidement dans l’éditeur de fragments pour apporter et enregistrer d’autres modifications.
+  >Prenez cela en compte lorsque vous cliquez sur **Enregistrer et fermer**. Rouvrez aussitôt l’éditeur de fragments afin d’apporter d’autres modifications et de les enregistrer.
 
 * **Fermer**
 
-  Quitte l’éditeur sans enregistrer les dernières modifications (c’est-à-dire depuis la dernière **Enregistrer**).
+  Quitte l’éditeur sans enregistrer les dernières modifications (c’est-à-dire celles effectuées depuis la dernière fois que vous avez cliqué sur **Enregistrer**).
 
 Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des versions pour que le contenu précédent puisse être restauré si vous annulez les modifications (en cliquant sur **Fermer** sans enregistrer) :
 
@@ -272,9 +272,9 @@ Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer d
 
 ## Association de contenu au fragment {#associating-content-with-your-fragment}
 
-Vous pouvez également [associer du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) à un fragment. Cela fournit une connexion de sorte que les ressources (c’est-à-dire les images) puissent être (éventuellement) utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
+Vous pouvez également [associer du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) à un fragment. Vous fournissez ainsi une connexion afin que les ressources (les images, par exemple) puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
-## Affichage et modification des métadonnées (propriétés) du fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Afficher et modifier des métadonnées (propriétés) du fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de l’onglet [Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md).
 
@@ -325,7 +325,7 @@ Cette action ouvre :
 
 * la version sélectionnée **v&lt;*x.y*>** (à droite).
 
-Elles sont affichées côte à côte, où :
+Ces dernières sont affichées dans des versions côte à côte dans lesquelles :
 
 * les différences sont mises en surbrillance ;
 
@@ -359,7 +359,7 @@ Vous pouvez rétablir une version spécifique de votre fragment :
 >
 Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique et le modèle est publié avec le fragment.
+Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique. Elle précise également que le modèle est publié avec le fragment.
 
 Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Pour ce faire, utilisez la fonctionnalité Assets standard :
 
@@ -371,7 +371,7 @@ Vous pouvez y accéder des façons suivantes :
 * Après la création, en utilisant les actions [disponibles dans la console de ressources](#actions-for-a-content-fragment-assets-console).
 * Dans l’[éditeur de fragment de contenu](#toolbar-actions-in-the-content-fragment-editor).
 
-En outre, lorsque vous [publier une page qui utilise le fragment ;](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); le fragment est répertorié dans les références de page.
+De plus, lorsque vous [publiez une page qui utilise ce fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
 >
@@ -381,7 +381,7 @@ Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un ave
 
 Pour supprimer un fragment :
 
-1. Dans la console **Ressources**, naviguez jusqu’à l’emplacement du fragment de contenu.
+1. Dans la console **Assets**, naviguez jusqu’à l’emplacement du fragment de contenu.
 2. Sélectionnez le fragment.
 
    >[!NOTE]
@@ -393,4 +393,4 @@ Pour supprimer un fragment :
 
    >[!CAUTION]
    >
-   Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment, ainsi que son composant de fragment de contenu, sont supprimés de toutes les pages de contenu.
+   Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu sont supprimés de toutes les pages de contenu.

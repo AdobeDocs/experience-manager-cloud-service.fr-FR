@@ -8,7 +8,7 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Faites vos premiers pas avec ce parcours guidé pour découvrir comment traduire
 
 ## Présentation {#introduction}
 
-AEM Sites est une suite d’outils puissants pour la création et la gestion d’expériences digitales. Les auteurs de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il est diffusé par AEM à vos audiences sur l’ensemble des canaux.
+AEM Sites est une suite d’outils puissants pour la création et la gestion d’expériences digitales. Les auteurs et autrices de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il est diffusé par AEM à vos audiences sur l’ensemble des canaux.
 
 AEM propose des outils tout aussi puissants pour traduire votre contenu, ce qui vous permet de le diffuser le plus rapidement possible vers vos audiences d’autres régions ou avec d’autres paramètres régionaux. Ce parcours de documentation vous présente les outils de création afin que vous compreniez comment le contenu est créé et géré dans AEM, puis vous détaille ce que vous devez savoir pour gérer votre propre projet de traduction.
 
@@ -47,7 +47,7 @@ Voici les personnes qui interagissent dans ce parcours.
 | Administrateur | Gère les paramètres et la configuration de base d’AEM | Le spécialiste de la traduction travaille avec l’administrateur pour apporter les modifications de configuration nécessaires à la traduction, telles que l’installation d’un connecteur de traduction. |
 | Architecte de contenu | Analyse les exigences relatives aux données qui doivent être diffusées sur les sites et définit la structure de ces données | Les spécialistes de la traduction travaillent avec l’architecte de contenu pour définir l’organisation du contenu afin qu’il puisse être facilement traduit. |
 
-Les informations présentées dans ce parcours peuvent bien sûr être utiles à toutes les personnes, mais certaines informations peuvent être superflues pour certains rôles. Tenez-vous informé des [prochains parcours couvrant les spécificités des rôles supplémentaires](/help/journey-documentation/documentation-journeys.md#journeys).
+Les informations présentées dans ce parcours peuvent bien sûr être utiles à toutes les personnes, mais certaines informations peuvent être superflues pour certains rôles. Restez à l’affût des [prochains parcours couvrant les spécificités des rôles supplémentaires](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Le parcours de traduction de sites {#the-journey}
 
@@ -75,6 +75,6 @@ Consultez ces ressources supplémentaires pour plus d’informations sur la mani
 
 * [Parcours de création découplée](/help/journey-headless/author/overview.md) – Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les modéliser votre contenu dans votre premier projet découplé.
 * [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) – Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet.
-* [AEM Parcours développeur sans tête](/help/journey-headless/developer/overview.md) - Commencez ici pour un parcours guidé à travers les puissantes et flexibles fonctionnalités headless d’AEM, leurs capacités et comment les utiliser dans votre premier projet de développement.
+* [Parcours de développement AEM Headless](/help/journey-headless/developer/overview.md) : faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) – Si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
 * [Tutoriels découplés AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.

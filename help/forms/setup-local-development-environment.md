@@ -5,7 +5,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '2811'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -201,15 +201,15 @@ AEM Forms as a Cloud Services fournit un environnement SDK Docker qui facilite
    > géré par Docker lors de l’utilisation de WSL2 (moderne). Vous devez
    > configurer explicitement le partage de fichiers lors de l’utilisation d’Hyper-V (hérité).
 
-1. Créez un dossier, par exemple aem-sdk, parallèlement à vos instances d’auteur et de publication, Par exemple, C:\aem-sdk.
+1. Créez un dossier, par exemple aem-sdk, parallèlement à vos instances d’auteur et de publication, comme C:\aem-sdk.
 
 1. Extrayez le fichier `aem-forms-addon-<version>.zip\aem-forms-addon-native-<version>.zip`.
 
    ![extracted aem forms add on native](assets/microservice-docker.png)
 
-1. Créez une variable d’environnement AEM_HOME et pointez vers l’installation locale de l’auteur AEM, Par exemple, C:\aem\author\.
+1. Créez une variable d’environnement AEM_HOME et pointez vers l’installation locale de l’auteur AEM, par exemple C:\aem\author\.
 
-1. Ouvrez sdk.bat ou sdk.sh pour le modification. Définissez AEM_HOME pour pointer vers l’installation locale de l’auteur AEM, Par exemple, C:\aem\author\.
+1. Ouvrez sdk.bat ou sdk.sh pour le modification. Définissez AEM_HOME pour pointer vers l’installation locale de l’auteur AEM, par exemple C:\aem\author\.
 
 1. Ouvrez une invite de commandes et accédez au dossier `aem-forms-addon-native-<version>`.
 
@@ -329,11 +329,11 @@ Pour configurer le cache du Dispatcher pour Experience Manager Forms en tant que
 
 Votre environnement de développement local est prêt.
 
-## Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms
+## Activer les composants principaux des formulaires adaptatifs AEM Forms as a Cloud Service et dans l’environnement de développement local
 
 L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
 
-Pour obtenir des instructions, voir [Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+Pour obtenir des instructions, voir [Activer les composants principaux des formulaires adaptatifs AEM Forms as a Cloud Service et dans l’environnement de développement local](/help/forms/enable-adaptive-forms-core-components.md)
 
 
 ## Mise à niveau de votre environnement de développement local {#upgrade-your-local-development-environment}

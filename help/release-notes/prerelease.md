@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment utiliser le canal de version préliminaire pour obtenir un ap
 
 Adobe Experience Manager as a Cloud Service bénéficie régulièrement de nouvelles fonctionnalités, conformément à la [feuille de route des versions d’Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
 
-Pour vous familiariser avec les fonctionnalités prévues pour la mise à jour des fonctionnalités suivantes, vous pouvez vous abonner au canal de version préliminaire, accessible par la configuration de vos environnements de développement ou de tout environnement de test. Vous pouvez prévisualiser les modifications accessibles par le biais de l’interface utilisateur d’AEM et créer du code par rapport à toute nouvelle API de version préliminaire.
+Pour vous familiariser avec les fonctionnalités programmées pour la prochaine mise à jour, vous pouvez vous abonner au canal de version préliminaire. Il vous suffit de configurer vos environnements de développement ou tout environnement de sandbox. Vous pouvez prévisualiser les modifications accessibles par le biais de l’interface utilisateur d’AEM et créer du code par rapport à toute nouvelle API en version préliminaire.
 
 La liste des fonctionnalités de version préliminaire pour une mise à jour donnée est publiée dans les [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
@@ -31,13 +31,13 @@ AEM as a Cloud Service comporte deux types de mises à jour :
 
 Ce calendrier de publication permet d’offrir des mises à jour continues sans interruption de service.
 
-Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités programmées pour la prochaine version des fonctionnalités afin que vous puissiez évaluer les fonctionnalités à venir et planifier leur mise en oeuvre possible pour vos propres projets. Il vous permet de planifier la prochaine version de la fonctionnalité.
+Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités contenues dans la prochaine mise à jour. Vous pouvez ainsi les évaluer et planifier leur mise en œuvre dans vos propres projets. Vous prenez ainsi une longueur d’avance pour la mise en œuvre de la prochaine version.
 
-Si, par exemple, nous sommes en mai et que vous êtes abonné au canal de version préliminaire, vous pouvez évaluer les fonctionnalités de la version de juin à venir.
+Par exemple, si nous sommes au mois de mai et que vous disposez d’un abonnement au canal de version préliminaire, vous pouvez évaluer les fonctionnalités de la version de juin.
 
-![Graphique illustrant le rythme de publication des versions préliminaires.](assets/prerelease-cadence.png)
+![Graphique illustrant le rythme de publication des versions préliminaires](assets/prerelease-cadence.png)
 
-La version préliminaire vous donne un délai d’un mois pour découvrir les fonctionnalités AEMaaCS à venir, ce qui vous donne le temps d’évaluer l’impact de toutes nouvelles fonctionnalités sur vos projets et personnalisations et de planifier le déploiement de telles fonctionnalités, les tests et la formation des utilisateurs.
+En vous abonnant au canal de version préliminaire, vous pouvez découvrir les prochaines fonctionnalités d’AEM un mois avant leur publication. Vous disposez ainsi de suffisamment de temps pour évaluer l’impact des nouvelles fonctionnalités sur vos projets et personnalisations, ainsi que pour planifier le déploiement des fonctionnalités, les tests et la formation des utilisateurs et utilisatrices.
 
 Pour tirer pleinement parti du canal de version préliminaire, suivez les quatre étapes suivantes.
 
@@ -157,7 +157,7 @@ Les JavaDocs sont publiés sur Maven Central.
      </dependency>
    ```
 
-   Pour passer au SDK de version préliminaire, il vous suffit de modifier la dépendance de `com.adobe.aem:aem-sdk-api` to `com.adobe.aem:aem-prerelease-sdk-api` comme indiqué ci-dessous :
+   Pour passer au SDK de la version préliminaire, remplacez simplement la dépendance de `com.adobe.aem:aem-sdk-api` par `com.adobe.aem:aem-prerelease-sdk-api` comme indiqué ci-dessous :
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Le [module externe maven d’analyseur de création du SDK CS AEM version 1.0, e
 
 ## Former vos utilisateurs et utilisatrices {#train-users}
 
-Une fois que vous avez testé les nouvelles fonctionnalités dans le canal de version préliminaire et que vous avez décidé de les utiliser dans vos projets, vous devez former vos utilisateurs.
+Après avoir testé les nouvelles fonctionnalités dans le canal de version préliminaire et une fois que vous avez décidé de les exploiter dans vos projets, vous devez former vos utilisateurs et utilisatrices.
 
 Adobe Experience League propose de nombreuses ressources pour apprendre à utiliser AEMaaCS.
 

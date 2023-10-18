@@ -165,7 +165,7 @@ Le tableau suivant indique les options XCI.
 
 * Pour les API asynchrones (traitement par lot), le niveau d’enregistrement par défaut est défini sur 2. Vous pouvez utiliser un fichier XCI personnalisé pour définir le niveau d’enregistrement sur 1.
 
-* Lorsque le fichier XCI par défaut est configuré, il inclut le chemin d’accès jusqu’au rendu d’origine. Par exemple, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`.
+* Lorsque le fichier XCI par défaut est configuré, il inclut le chemin d’accès jusqu’au rendu d’origine. Par exemple, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 

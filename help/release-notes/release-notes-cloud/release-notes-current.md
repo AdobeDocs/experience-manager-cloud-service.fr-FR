@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 27%
+ht-degree: 32%
 
 ---
 
@@ -38,7 +38,7 @@ Regardez la vidéo de présentation de la version de septembre 2023 pour un rés
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## Services de diffusion Edge {#edge-delivery}
+## Edge Delivery Services {#edge-delivery}
 
 Edge Delivery est un nouvel ensemble de services composables axés sur l’optimisation de l’impact du contenu afin de générer des résultats commerciaux mesurables au moment de l’interaction client.
 
@@ -46,7 +46,7 @@ En savoir plus sur les Edge Delivery Services dans cet article [here](/help/edge
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouvelles fonctionnalités dans la vue Assets {#assets-view-features}
+### Nouvelles fonctionnalités de la vue Assets {#assets-view-features}
 
 **Affectation d’un formulaire de métadonnées à un dossier**
 
@@ -93,7 +93,7 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 * **Prise en charge du nombre de pages dans les API de communication**: maintenant, en plus de récupérer votre document par le biais des API de communication, vous pouvez également recevoir des informations précieuses sur le nombre de pages contenues dans le document.
 
-* **[Gestion des erreurs avec des gestionnaires d’erreurs personnalisés dans l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: vous pouvez désormais appeler une fonction personnalisée en réponse à une erreur renvoyée par un service externe et fournir une réponse personnalisée aux utilisateurs finaux. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client que le service est hors service.
+* **[Gestion des erreurs avec des gestionnaires d’erreurs personnalisés dans l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: vous pouvez désormais appeler une fonction personnalisée en réponse à une erreur renvoyée par un service externe et fournir une réponse personnalisée aux utilisateurs finaux. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client ou la cliente que le service est indisponible.
 
 * **[Version 64 bits d’AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour vous permettre de créer des formulaires. Grâce à l’architecture 64 bits, vous pouvez réaliser facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Tirez parti de vos capacités de conception de formulaire et embrassez l’avenir d’AEM Forms Designer avec cette version de pointe.
 
@@ -108,9 +108,9 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
    * créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
    * intégrer nativement les formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat ;
    * réutiliser vos composants d’IU propriétaires avec des applications de formulaires ;
-   * utiliser la puissance d’Adobe Experience Manager Forms ;
+   * tirer profit de la puissance d’Adobe Experience Manager Forms
 
-  Vous pouvez envoyer un courrier électronique à `aem-forms-headless@adobe.com` à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs.
+  Vous pouvez envoyer un e-mail à `aem-forms-headless@adobe.com` à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

@@ -5,7 +5,7 @@ exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 86%
 >
 >Le contenu de ce document ne constitue pas un avis juridique et ne vise pas à le remplacer.
 >
->Consultez le service juridique de votre entreprise pour obtenir des conseils sur les réglementations relatives à la protection des données et à la confidentialité des données.
+>Consultez le service juridique de votre entreprise pour obtenir des conseils concernant les réglementations sur la protection et la confidentialité des données.
 
 >[!NOTE]
 >
@@ -23,11 +23,11 @@ ht-degree: 86%
 
 Adobe Experience Manager as a Cloud Service Sites est prêt à accompagner ses clients pour les aider à respecter leurs obligations en matière de confidentialité et de protection des données. Cette page guide les clients à travers les procédures de gestion des demandes RGPD dans AEM Sites. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.
 
-Pour plus d’informations, voir [Centre de traitement des données personnelles des Adobes](https://www.adobe.com/fr/privacy.html).
+Pour plus d’informations, consultez le [centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy.html).
 
 >[!NOTE]
 >
->Consultez [Niveau de préparation d’Adobe Experience Manager as a Cloud Service Sites aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) pour plus d’informations.
+>Consultez [Préparation d’Adobe Experience Manager as a Cloud Service Sites aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) pour plus d’informations.
 
 ## Niveau de création AEM {#aem-author-tier}
 
@@ -37,7 +37,7 @@ Les comptes utilisateur et le contenu généré par les utilisateurs sur le serv
 
 Les comptes utilisateur utilisés pour authentifier les visiteurs sur le site et le contenu généré par les utilisateurs sur le serveur de publication sont abordés dans la [documentation d’AEM Foundation](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
 
-Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour un traitement ultérieur.
+Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
 
 ## Souscription/exclusion {#opt-in-opt-out}
 
@@ -56,7 +56,7 @@ Pour l’exclusion :
 
 1. Sélectionnez le lien référencé ; actuellement intitulé **ici**.
 
-1. Les détails suivants sont présentés, ainsi que les options de désinscription ou d’inscription :
+1. Les informations suivantes s’affichent, ainsi que les options d’exclusion ou d’inclusion :
 
    * Pour exclure l’agrégation et l’analyse des données relatives à votre visite sur ce site, il est nécessaire d’installer un cookie sur votre navigateur. Ce cookie identifie que vous avez choisi l’exclusion.
 
@@ -76,13 +76,13 @@ Pour l’exclusion :
 
 AEM Sites comprend une intégration facultative à Analytics Foundation qui utilise la fonctionnalité incluse dans le service On-demand d’Adobe Analytics.
 
-Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Analytics, voir [Adobe Analytics et confidentialité des données](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=fr).
+Pour plus d’informations sur la gestion des requêtes des titulaires de données liées à Adobe Analytics, voir [Adobe Analytics et la confidentialité des données](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=fr).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
-AEM Sites comprend une intégration facultative à Personalization Foundation by Target utilisant la fonctionnalité incluse dans le service On-demand Adobe Target.
+AEM Sites comprend une intégration facultative à Personalization Foundation by Target utilisant la fonctionnalité incluse dans le service On-demand d’Adobe Target.
 
-Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Target, voir [Adobe Target - Confidentialité et Règlement général sur la protection des données](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=fr).
+Pour plus d’informations sur la gestion des requêtes des titulaires de données liées à Adobe Target, voir [Adobe Target : confidentialité et règlement général sur la protection des données (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=fr).
 
 ## ContextHub {#contexthub}
 
@@ -174,7 +174,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur ou u
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     Le magasin ContextHub définit le calque de persistance utilisé. De ce fait, pour afficher l’état actuel de la persistance, tous les calques doivent être vérifiés.
+     Le magasin ContextHub définit la couche de persistance à utiliser. Pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
 
 Par exemple, pour afficher les données stockées dans localStorage :
 
@@ -203,7 +203,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur ou u
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     Le magasin ContextHub définit le calque de persistance utilisé. De ce fait, pour afficher l’état actuel de la persistance, tous les calques doivent être vérifiés.
+     Le magasin ContextHub définit la couche de persistance à utiliser. Pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
 
 Par exemple, pour afficher les données stockées dans localStorage :
 

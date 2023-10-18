@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
 source-wordcount: '2191'
-ht-degree: 28%
+ht-degree: 56%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 28%
 
 Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager :
 
-1. Présentation de Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu . Accédez à **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**
+1. Accédez à Cloud Acceleration Manager. Cliquez sur votre carte de projet puis sur la carte de transfert de contenu. Accédez aux **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. Consultez la liste de contrôle d’ingestion et assurez-vous que toutes les étapes sont terminées. Ces étapes sont nécessaires pour garantir la réussite de l’ingestion. Passez à la **Suivant** étape uniquement si la liste de contrôle est terminée.
+1. Consultez la liste de contrôle d’ingestion et assurez-vous que toutes les étapes sont effectuées. Ces étapes sont nécessaires à la réussite de l’ingestion. Vous devez terminer la liste de contrôle avant de pouvoir passer à l’étape **suivante**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -36,15 +36,15 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
    * Sélectionnez l’environnement de destination. C’est dans cet environnement que le contenu du jeu de migration est ingéré. Sélectionnez le niveau. (Création/Publication). Les environnements de développement rapide ne sont pas pris en charge.
 
    >[!NOTE]
-   >Les remarques suivantes s’appliquent à l’ingestion de contenu :
+   >Les remarques suivantes s’appliquent à l’ingestion de contenu :
    > Si la source était en Auteur, il est recommandé de l’ingérer dans le niveau Auteur sur la cible. De même, si la source était en Publication, la cible doit également être en Publication.
-   > Si le niveau cible est `Author`, l’instance d’auteur est arrêtée pendant la durée de l’ingestion et devient indisponible pour les utilisateurs (par exemple, les auteurs ou toute personne effectuant la maintenance). La raison est de protéger le système et d’empêcher toute modification qui pourrait être perdue ou provoquer un conflit d’ingestion. Assurez-vous que votre équipe est au courant de ce fait. Notez également que l’environnement apparaît en veille pendant l’ingestion par l’auteur.
-   > Vous pouvez exécuter l’étape de précopie facultative pour accélérer considérablement l’ingestion. Voir [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) pour plus d’informations.
-   > Si l’ingestion avec une précopie est utilisée (pour S3 ou Azure Data Store), il est recommandé d’exécuter l’ingestion d’auteur en premier, seule. Cela permet d’accélérer l’ingestion de publication lorsqu’elle est exécutée ultérieurement.
-   > Les intuitions ne prennent pas en charge une destination RDE (Rapid Development Environment) et n’apparaissent pas comme un choix de destination possible, même si l’utilisateur y a accès.
+   > Si le niveau cible est `Author`, l’instance de création est arrêtée pendant la durée de l’ingestion et n’est pas disponible pour les utilisateurs et utilisatrices (par exemple, les auteurs ou autrices ou toute personne effectuant la maintenance). Cela permet de protéger le système et d’empêcher toute modification qui pourrait être perdue ou qui pourrait entraîner un conflit d’ingestion. Assurez-vous d’en informer votre équipe. Notez également que l’environnement apparaît en veille pendant l’ingestion de l’instance de création.
+   > Vous pouvez exécuter l’étape de précopie facultative pour accélérer considérablement l’ingestion. Pour plus d’informations, veuillez consulter la section [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
+   > Si l’ingestion avec une précopie est utilisée (pour S3 ou Azure Data Store), il est recommandé d’exécuter l’ingestion de l’instance de création en premier, seule. Cela permet d’accélérer l’ingestion de l’instance de publication lorsqu’elle est exécutée ultérieurement.
+   > Les ingestions ne prennent pas en charge une destination d’environnement de développement rapide (RDE) et n’apparaissent pas comme un choix de destination possible, même si l’utilisateur ou l’utilisatrice y a accès.
 
    >[!IMPORTANT]
-   > Vous ne pouvez lancer une ingestion vers l’environnement de destination que si vous appartenez au **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
+   > Vous pouvez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs et administratrices d’AEM** sur le service de création Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
 
    * Choisissez la `Wipe` value
       * La variable **Wipe** définit le point de départ de la destination de l’ingestion. If **Wipe** est activée, la destination, y compris tout son contenu, est réinitialisée à la version d’AEM spécifiée dans Cloud Manager. Si elle n’est pas activée, la destination conserve son contenu actuel comme point de départ.
@@ -61,7 +61,7 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Cliquez sur le bouton **(i)** sur la ligne pour plus d’informations sur la tâche d’ingestion. Vous pouvez voir la durée de chaque étape de l’ingestion lorsqu’elle est en cours d’exécution ou terminée en cliquant sur **..**, puis cliquez sur **Afficher les durées**. Les informations de l’extraction sont également affichées pour réaliser ce qui est ingéré.
+1. Cliquez sur le bouton **(i)** sur la ligne pour plus d’informations sur la tâche d’ingestion. Vous pouvez voir la durée de chaque étape de l’ingestion lorsqu’elle est en cours d’exécution ou terminée en cliquant sur **…**, puis sur **Afficher les durées**. Les informations de l’extraction sont également affichées pour réaliser ce qui est ingéré.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
@@ -88,42 +88,42 @@ Commencez par créer une tâche d’ingestion et assurez-vous que **Wipe** est d
 
 ### Impossible pour CAM de récupérer le jeton de migration {#cam-unable-to-retrieve-the-migration-token}
 
-La récupération automatique du jeton de migration peut échouer pour différentes raisons, y compris la [configuration d’une liste autorisée d’adresses IP via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) dans l’environnement Cloud Service cible. Dans ce cas de figure, la boîte de dialogue suivante s’affiche lorsque vous tentez de démarrer une ingestion :
+La récupération automatique du jeton de migration peut échouer pour différentes raisons, y compris la [configuration d’une liste autorisée d’adresses IP via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) dans l’environnement Cloud Service cible. Dans ce cas de figure, la boîte de dialogue suivante s’affiche lorsque vous tentez de démarrer une ingestion :
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
-Récupérez manuellement le jeton de migration en cliquant sur le lien &quot;Obtenir le jeton&quot; dans la boîte de dialogue. Un autre onglet qui affiche le jeton s’ouvre. Vous pouvez ensuite copier le jeton et le coller dans le champ **Entrée du jeton de migration**. À présent, vous devriez être en mesure de commencer l’ingestion.
+Récupérez manuellement le jeton de migration en cliquant sur le lien « Obtenir le jeton » dans la boîte de dialogue. Un autre onglet qui affiche le jeton s’ouvre. Vous pouvez ensuite copier le jeton et le coller dans le champ **Entrée du jeton de migration**. À présent, vous devriez être en mesure de commencer l’ingestion.
 
 >[!NOTE]
 >
->Le jeton est disponible pour les utilisateurs qui appartiennent au **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination.
+>Le jeton sera disponible pour les utilisateurs et utilisatrices qui appartiennent au groupe local **Administrateurs AEM** sur le service de création Cloud Service de destination.
 
 ### Impossible de démarrer l’ingestion {#unable-to-start-ingestion}
 
-Vous ne pouvez lancer une ingestion vers l’environnement de destination que si vous appartenez au **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous n’appartenez pas au groupe d’administrateurs d’AEM, une erreur s’affiche, comme illustré ci-dessous lorsque vous essayez de démarrer une ingestion. Vous pouvez demander à votre administrateur de vous ajouter au groupe local **Administrateurs AEM** ou demander directement le jeton, que vous pouvez ensuite coller dans le champ **Entrée du jeton de migration**.
+Vous pouvez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs AEM** sur le service de création Cloud Service de destination. Si vous n’appartenez pas au groupe d’administrateurs AEM, une erreur s’affiche lorsque vous essayez de démarrer une ingestion, comme illustré ci-dessous. Vous pouvez demander à votre administrateur de vous ajouter au groupe local **Administrateurs AEM** ou demander directement le jeton, que vous pouvez ensuite coller dans le champ **Entrée du jeton de migration**.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ### Impossible d’atteindre le service de migration {#unable-to-reach-migration-service}
 
-Une fois l’ingestion demandée, un message du type suivant peut être présenté à l’utilisateur : &quot;Le service de migration sur l’environnement de destination est inaccessible. Si tel est le cas, réessayez plus tard ou contactez l’assistance Adobe.&quot;
+Une fois l’ingestion demandée, un message comme celui-ci peut être présenté à l’utilisateur ou l’utilisatrice : « Le service de migration sur l’environnement de destination est inatteignable. Réessayez ultérieurement ou contactez l’assistance Adobe. »
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
-Ce message indique que Cloud Acceleration Manager n’a pas pu atteindre le service de migration de l’environnement cible pour démarrer l’ingestion. Cette situation peut se produire pour diverses raisons.
+Ce message indique que Cloud Acceleration Manager n’a pas pu atteindre le service de migration de l’environnement cible pour démarrer l’ingestion. Cette situation peut se produire pour diverses raisons.
 
 >[!NOTE]
 > 
-> Le champ « Jeton de migration » s’affiche, car dans certains cas, la récupération de ce jeton est ce qui est en fait interdit. En autorisant sa mise à disposition manuelle, cela peut permettre à l’utilisateur ou l’utilisatrice de démarrer rapidement l’ingestion, sans aide supplémentaire. Si le jeton est fourni et que le message s’affiche toujours, la récupération du jeton n’est pas le problème.
+> Le champ « Jeton de migration » s’affiche, car dans certains cas, la récupération de ce jeton est ce qui est en fait interdit. En autorisant sa mise à disposition manuelle, cela peut permettre à l’utilisateur ou l’utilisatrice de démarrer rapidement l’ingestion, sans aide supplémentaire. Si le jeton est fourni et que le message s’affiche toujours, ce n’est donc pas la récupération du jeton qui a posé problème.
 
-* AEM as a Cloud Service conserve l’état de l’environnement et doit parfois redémarrer le service de migration pour diverses raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais il est disponible à terme.
+* AEM as a Cloud Service conserve l’état de l’environnement et peut parfois devoir redémarrer le service de migration pour plusieurs raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais il finit par être disponible.
 * Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [AEM mises à jour de version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=fr) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut à nouveau être tenté.
-* Si [LISTE AUTORISÉE IP appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager empêche Cloud Acceleration Manager d’accéder au service de migration. Il n’est pas possible d’ajouter une adresse IP pour les assimilations, car celle-ci est dynamique. Actuellement, la seule solution consiste à désactiver la liste autorisée d’adresses IP pendant l’exécution de l’ingestion.
+* Si une [liste autorisée d’adresses IP a été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager, cela empêche Cloud Acceleration Manager d’accéder au service de migration. Une adresse IP ne peut pas être ajoutée pour les ingestions, car leur adresse est dynamique. Actuellement, la seule solution consiste à désactiver la liste autorisée d’adresses IP pendant l’exécution de l’ingestion.
 * D’autres raisons peuvent nécessiter un examen. Si l’ingestion continue d’échouer, contactez l’assistance clientèle Adobe.
 
 ### AEM des mises à jour et des ingérations de version
 
-[AEM mises à jour de version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=fr) sont automatiquement appliqués aux environnements afin de les mettre à jour avec la version la plus récente AEM as a Cloud Service. Si la mise à jour est déclenchée lorsqu’une ingestion est effectuée, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement.
+[AEM mises à jour de version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=fr) sont automatiquement appliqués aux environnements afin de les mettre à jour avec la version la plus récente AEM as a Cloud Service. Si la mise à jour est déclenchée au cours d’une ingestion, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement.
 
 Si les &quot;Mises à jour de version AEM&quot; sont intégrées dans le programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant de commencer. Une fois l’ingestion terminée, l’état du mise à jour de version est renvoyé à son état avant le début de l’ingestion.
 
@@ -146,7 +146,7 @@ Les conflits entre identifiants de nœud sont une cause courante de l’échec d
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
 Chaque nœud d’AEM doit disposer d’un UUID unique. Cette erreur indique qu’un noeud en cours d’ingestion possède le même uuid que celui qui existe ailleurs sur un autre chemin sur l’instance de destination.
-Cette situation peut se produire si un noeud est déplacé sur la source entre une extraction et une [Extraction de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+Cette situation peut se produire si un nœud est déplacé sur la source entre une extraction et une [extraction complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) suivante.
 Cela peut également se produire si un noeud de la destination est déplacé entre une ingestion et une ingestion de complément ultérieure.
 
 Ce conflit doit être résolu manuellement. Une personne qui connait le contenu doit décider lequel des deux nœuds doit être supprimé, sans oublier tout autre contenu qui y fait référence. La solution peut nécessiter que l’extraction complémentaire soit effectuée à nouveau sans le nœud fautif.

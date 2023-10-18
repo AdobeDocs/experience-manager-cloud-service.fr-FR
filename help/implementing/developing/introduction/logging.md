@@ -1,17 +1,17 @@
 ---
 title: Connexion à AEM as a Cloud Service
-description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service pour configurer les paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
+description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
 workflow-type: tm+mt
 source-wordcount: '2657'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
 # Connexion à AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-La plateforme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement de l’AEM as a Cloud Service.
+La plateforme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
 
 Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service sont gérés dans des fichiers de configuration stockés au sein du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
 
@@ -53,7 +53,7 @@ Développement</td>
 DEBUG</td>
 <td>
 Décrit ce qui se passe dans l’application.<br>
-Lorsque la journalisation DEBUG est active, les instructions fournissant une image claire des activités qui se produisent et des paramètres clés qui affectent le traitement sont consignés.</td>
+Lorsque la journalisation DEBUG est active, les instructions fournissant une image claire des activités survenues ainsi que les paramètres clés qui affectent le traitement sont consignés.</td>
 <td>
 <ul>
 <li> Développement local</li>
@@ -95,7 +95,7 @@ Lorsque la journalisation ERROR est active, seules les instructions indiquant de
 
 Bien que la journalisation Java prenne en charge plusieurs autres niveaux de granularité de la journalisation, nous recommandons d’utiliser les trois niveaux décrits ci-dessus pour AEM as a Cloud Service.
 
-Les niveaux de journalisation AEM sont définis par type d’environnement via la configuration OSGi, qui à leur tour sont validés dans Git, et déployés sur AEM as a Cloud Service via Cloud Manager. Pour cette raison, il est préférable de conserver des instructions de journal cohérentes et bien connues pour les types d’environnements afin de s’assurer que les journaux disponibles via AEM as Cloud Service sont disponibles au niveau de journal optimal sans avoir à redéployer l’application avec la configuration de niveau de journal mise à jour.
+Les niveaux de journalisation AEM sont définis par type d’environnement via la configuration OSGi, qui à leur tour sont validés dans Git, et déployés sur AEM as a Cloud Service via Cloud Manager. C’est pourquoi il est préférable de conserver des instructions de journal cohérentes et bien connues pour les types d’environnements, afin de s’assurer que les journaux disponibles par l’intermédiaire d’AEM as a Cloud Service sont disponibles au niveau de journal optimal sans avoir à redéployer l’application avec la configuration de niveau de journal mise à jour.
 
 **Exemple de sortie de journal**
 
@@ -594,9 +594,9 @@ Selon le trafic et la quantité d’instructions de journal écrites par Debug, 
 
 ## Journaux Splunk {#splunk-logs}
 
-Les clients disposant d’un compte Splunk peuvent demander, via un ticket de service clientèle, que leurs journaux d’AEM as a Cloud Service soient transférés vers l’index approprié. Les données de journalisation sont équivalentes à ce qui est disponible par le biais des téléchargements de journaux de Cloud Manager, mais les clients peuvent trouver pratique d’utiliser les fonctionnalités de requête disponibles dans le produit Splunk.
+Les clients disposant d’un compte Splunk peuvent demander, via un ticket de service clientèle, que leurs journaux d’AEM as a Cloud Service soient transférés vers l’index approprié. Les données de journalisation sont équivalentes à celles disponibles par téléchargement des journaux de Cloud Manager, mais la clientèle peut tirer parti des fonctionnalités de requête disponibles dans le produit Splunk.
 
-La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l’utilisation des E/S réseau du client.
+La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l’utilisation des E/S réseau du client ou de la cliente.
 
 Notez que le transfert Splunk ne prend pas encore en charge les journaux CDN.
 
@@ -621,7 +621,7 @@ Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de
 
 Assurez-vous que la requête initiale comprend tous les environnements de développement qui doivent être activés, en plus des environnements d’évaluation/de production. Splunk doit disposer d’un certificat SSL et être accessible au public.
 
-Si des environnements de développement créés après la requête initiale sont destinés à un transfert Splunk, mais ne l’ont pas activé, une requête supplémentaire doit être effectuée.
+Si de nouveaux environnements de développement créés après la requête initiale sont destinés à un transfert de Splunk, mais qu’ils ne sont pas activés, une requête supplémentaire doit être envoyée.
 
 Notez également que si des environnements de développement ont été demandés, il est possible que d’autres environnements de développement qui ne figurent pas dans la requête ou même les environnements Sandbox aient activé le transfert de Splunk et en partagent un index. Les clients peuvent utiliser le champ `aem_env_id` pour distinguer ces environnements.
 

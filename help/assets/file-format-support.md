@@ -8,7 +8,7 @@ exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
 source-wordcount: '1030'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Les éléments essentiels concernant la conversion des ressources à l’aide de
 * [Formats de fichiers Adobe](#adobe-formats) clés générés par les applications et services Adobe, notamment [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] et [!DNL Adobe Acrobat] ou PDF.
 * [Formats de fichiers d’imagerie](#image-formats) clés.
 * [Formats de fichiers Camera Raw](#camera-raw-formats) pour un large éventail d’appareils photo, dont Canon, Nikon, Fujifilm, Olympus et d’autres fabricants (optimisés par Adobe Camera Raw).
-* Courant [formats de document](#document-formats), y compris les formats Microsoft® Office et Open Document.
+* [Formats de documents](#document-formats) courants, y compris les formats Microsoft® Office et Open Document.
 * Large éventail de formats [vidéo](#video-formats) et [audio](#audio-formats).
 
 Le tableau suivant décrit le niveau de prise en charge pour chaque format.
@@ -51,7 +51,7 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Pour [!DNL Adobe InDesign] fichiers (INDD), la taille des rendus est déterminée par l’aperçu incorporé dans le fichier INDD. Configurez les préférences dans [!DNL InDesign] (**[!UICONTROL Préférences > Gestion des fichiers > Toujours enregistrer les images d’aperçu avec les documents, Taille d’aperçu]**) afin que vous puissiez incorporer des rendus plus volumineux.
+\* Pour les fichiers [!DNL Adobe InDesign] (INDD), la taille des rendus est déterminée par l’aperçu incorporé dans le fichier INDD. Configurez les préférences dans [!DNL InDesign] (**[!UICONTROL Préférences > Gestion des fichiers > Toujours enregistrer les images d’aperçu avec les documents, Taille d’aperçu]**) pour incorporer des rendus plus grands.
 
 ## Formats d’image {#image-formats}
 
@@ -185,14 +185,14 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 * Windows Media Video (WMV) / ASF (.wmv, .asf)
 * AVI (8 bits/10 bits non compressés) (.avi)
 * MP4 (.mp4, .m4a, .m4v)
-* Enregistrement vidéo numérique Microsoft® (DVR-MS) (.dvr-ms)
+* Microsoft® Digital Video Recording (DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## Conseils et restrictions {#limitations-and-tips}
 
-* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de ressources volumineuses, l’opération d’extraction de métadonnées échoue parfois.
+* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de fichiers volumineux, l’opération d’extraction des métadonnées peut parfois échouer.
 
 ## Dynamic Media : formats vidéo d’entrée pris en charge pour le transcodage {#video-dynamic-media-transcoding}
 
@@ -241,7 +241,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Dynamic Media - Formats d’images pixellisées non prises en charge {#unsupported-raster-image-formats-dm}
 
-Les sous-types suivants de formats de fichiers image pixellisés sont : *not* pris en charge dans [!DNL Dynamic Media]:
+Les sous-types suivants de formats de fichiers d’image matricielle *ne sont pas* pris en charge dans [!DNL Dynamic Media] :
 
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
@@ -259,7 +259,7 @@ Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#supp
 | GLB | Transmission GL binaire | model/gltf-binary | Inclut les matières et les textures dans une seule ressource. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif | |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl | |
-| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion et de la génération de miniatures ; Les aperçus 3D ne sont pas encore pris en charge.* USDZ est un format 3D qui peut être visualisé en mode natif par Safari ou iOS. |
+| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion et de la génération de miniatures, les aperçus 3D ne pas encore pris en charge.* USDZ est un format 3D qui peut être visualisé en mode natif à l’aide de Safari ou iOS. |
 
 **Voir également**
 

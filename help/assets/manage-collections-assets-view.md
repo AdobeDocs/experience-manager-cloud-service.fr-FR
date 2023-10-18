@@ -1,11 +1,11 @@
 ---
 title: Gérer les collections
-description: Une collection est un ensemble de ressources dans la vue Experience Manager Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
+description: Une collection est un ensemble de ressources de la vue Experience Manager Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
 exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 87%
 >title="Gérer les collections"
 >abstract="Une collection est un ensemble de ressources, de dossiers ou d’autres collections au sein de la vue Ressources. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs et utilisatrices. Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections."
 
-Une collection est un ensemble de ressources, de dossiers ou d’autres collections dans la vue Adobe Experience Manager Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
+Une collection est un ensemble de ressources, de dossiers ou d’autres collections de la vue Adobe Experience Manager Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
 
 Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements.
 
@@ -92,7 +92,7 @@ Pour supprimer des ressources d’une collection :
 
 ## Gérer une collection dynamique {#manage-smart-collection}
 
-Enregistrez les résultats de recherche en tant que collection dynamique pour mettre à jour dynamiquement le contenu de la collection. Si des ressources sont ajoutées au référentiel de vue Assets qui correspondent aux critères de recherche définis lors de la création de la collecte dynamique, le contenu de la collecte dynamique est automatiquement mis à jour lorsque vous ouvrez une collection dynamique.
+Enregistrez les résultats de recherche en tant que collection dynamique pour mettre à jour dynamiquement le contenu de la collection. Si des ressources sont ajoutées au référentiel de la vue Assets et que celles-ci correspondent aux critères de recherche définis lors de la création de la collecte dynamique, le contenu de cette dernière est automatiquement mis à jour lorsque vous ouvrez une collecte dynamique.
 
 ### Créer une collection dynamique {#create-smart-collection}
 
@@ -162,7 +162,7 @@ Pour afficher et modifier les métadonnées :
 
 ![Partager les liens pour les ressources](assets/share-link-collections.png)
 
-Pour plus d’informations sur le partage de liens de collection avec des parties prenantes externes, voir [liens de partage pour les ressources](/help/assets/share-links-for-assets-view.md).
+Pour plus d’informations sur le partage de liens de collection avec des destinataires externes, consultez [Partager les liens vers des ressources](/help/assets/share-links-for-assets-view.md).
 
 ## Télécharger une collection {#download-collection}
 
@@ -188,7 +188,7 @@ Pour supprimer une collection, procédez comme suit :
 
 ## Étapes suivantes {#next-steps}
 
-* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets
+* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 

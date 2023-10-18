@@ -1,17 +1,17 @@
 ---
-title: Référence de l’API JavaScript ContextHub
-description: L’API JavaScript ContextHub est disponible pour vos scripts lorsque le composant ContextHub a été ajouté à la page.
+title: Référence pour l’API JavaScript ContextHub
+description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Référence de l’API JavaScript ContextHub {#contexthub-javascript-api-reference}
+# Référence pour l’API JavaScript ContextHub {#contexthub-javascript-api-reference}
 
-L’API JavaScript ContextHub est disponible pour vos scripts lorsque la variable [Le composant ContextHub a été ajouté à la page.](adding-contexthub.md).
+L’API JavaScript ContextHub est disponible pour les scripts lorsque le [composant ContextHub a été ajouté à la page](adding-contexthub.md).
 
 ## Constantes ContextHub {#contexthub-constants}
 
@@ -62,7 +62,7 @@ Le tableau suivant répertorie les noms des événements qui se produisent pour 
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Déclenché lorsque le conteneur d’IU est initialisé | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Indique le mode d’IU actif | `/_/active-ui-mode` |
 
-## Référence de l’API JavaScript ContextHub {#contexthub-javascript-api-reference-2}
+## Référence pour l’API JavaScript ContextHub {#contexthub-javascript-api-reference-2}
 
 L’objet ContextHub fournit l’accès à tous les magasins.
 
@@ -115,7 +115,7 @@ Représente un segment ContextHub. Utilisez `ContextHub.SegmentEngine.SegmentMan
 
 #### getName() {#getname}
 
-Renvoie le nom du segment sous la forme d’une valeur String .
+Renvoie le nom du segment sous forme de valeur de chaîne.
 
 #### getPath() {#getpath}
 
@@ -178,7 +178,7 @@ Une valeur `boolean` :
 
 #### addReference(key, anotherKey) {#addreference-key-anotherkey}
 
-Crée une référence d’une clé à une autre. Une clé ne peut pas se référencer.
+Crée une référence d’une clé à une autre. Une clé ne peut pas se faire référence à elle-même.
 
 ##### Paramètres {#parameters-addreference}
 
@@ -215,7 +215,7 @@ Un objet qui représente la valeur de la clé.
 
 #### getKeys(includeInternals) {#getkeys-includeinternals}
 
-Récupère les clés du magasin. Vous pouvez éventuellement récupérer les clés utilisées en interne par la structure ContextHub.
+Récupère les clés du magasin. Vous pouvez éventuellement récupérer les clés utilisées en interne par le framework ContextHub.
 
 ##### Paramètres {#parameters-getkeys}
 
@@ -238,7 +238,7 @@ Tableau qui utilise des clés de référencement comme index des clés référen
 
 #### getTree(includeInternals) {#gettree-includeinternals}
 
-Récupère l’arbre de données du magasin. Vous pouvez éventuellement inclure les paires clé/valeur utilisées en interne par la structure ContextHub.
+Récupère l’arbre de données du magasin. Vous pouvez éventuellement inclure les paires clé/valeur utilisées en interne par le framework ContextHub.
 
 ##### Paramètres {#parameters-gettree}
 
@@ -347,7 +347,7 @@ Rétablit le mode Eventing pour ce magasin afin que les événements soient déc
 
 Ajoute une paire clé/valeur au magasin.
 
-Déclenche la variable `data` uniquement si la valeur de la clé est différente de la valeur actuellement stockée pour la clé. Vous pouvez éventuellement empêcher le déclenchement de l’événement `data`.
+Déclenche l’événement `data` uniquement si la valeur de la clé est différente de la valeur actuellement stockée pour la clé. Vous pouvez éventuellement empêcher le déclenchement de l’événement `data`.
 
 Les données d’événement incluent le nom du magasin, la clé, la valeur précédente, la nouvelle valeur et le type d’action `set`.
 
@@ -367,7 +367,7 @@ Une valeur `boolean` :
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-Un magasin contenant des données JSON. Les données sont extraites d’un service JSONP externe ou, facultativement, d’un service qui renvoie des données JSON. Spécifiez les détails du service à l’aide de la fonction [`init`](#init-name-config) lorsque vous créez une instance de cette classe.
+Un magasin qui contient des données JSON. Les données sont extraites d’un service JSONP externe ou, facultativement, d’un service qui renvoie des données JSON. Spécifiez les détails du service à l’aide de la fonction [`init`](#init-name-config) lorsque vous créez une instance de cette classe.
 
 Le magasin utilise la persistance en mémoire (variable JavaScript). Les données de magasin sont disponibles uniquement pendant la durée de vie de la page.
 
@@ -377,7 +377,7 @@ ContextHub.Store.JSONPStore étend [ContextHub.Store.Core](#contexthub-store-cor
 
 #### configureService(serviceConfig, override) {#configureservice-serviceconfig-override}
 
-Configure les détails de connexion au service JSONP que cet objet utilise. Vous pouvez mettre à jour ou remplacer la configuration existante. La fonction ne renvoie aucune valeur.
+Configure les détails de connexion au service JSONP que cet objet utilise. Vous pouvez mettre à jour ou remplacer la configuration existante. Cette fonction ne renvoie aucune valeur.
 
 ##### Paramètres {#parameters-configureservice}
 
@@ -547,10 +547,10 @@ Renvoie tous les cookies dont les clés correspondent à un filtre.
 
 ##### Paramètres {#parameters-getallitems}
 
-* **`filter` :** (optionnel) critères d’appariement des clés de cookie. Pour renvoyer tous les cookies, ne spécifiez aucune valeur. Les types suivants sont pris en charge :
-   * Chaîne : La chaîne est comparée à la clé du cookie.
+* **`filter` :** (optionnel) critères d’appariement des clés de cookie. Pour renvoyer tous les cookies, ne spécifiez aucune valeur. Les types suivants sont pris en charge :
+   * Chaîne : la chaîne est comparée à la clé du cookie.
    * Tableau : chaque élément du tableau est un filtre.
-   * Un objet RegExp : La fonction de test de l’objet est utilisée pour faire correspondre les clés de cookie.
+   * Un objet RegExp : la fonction de test de l’objet est utilisée pour faire correspondre les clés de cookie.
    * Une fonction : fonction qui teste une clé de cookie pour chercher une correspondance. La fonction doit utiliser la clé de cookie comme paramètre et renvoyer la valeur true si le test confirme une correspondance.
 
 ##### Renvoie {#returns-getallitems}
@@ -587,10 +587,10 @@ Renvoie un tableau des clés des cookies existants correspondant à un filtre.
 
 ##### Paramètres {#parameters-getkeys-1}
 
-* **`filter` :** critères d’appariement des clés de cookie. Les types suivants sont pris en charge :
-   * Chaîne : La chaîne est comparée à la clé du cookie.
+* **`filter` :** critères d’appariement des clés de cookie. Les types suivants sont pris en charge :
+   * Chaîne : la chaîne est comparée à la clé du cookie.
    * Tableau : chaque élément du tableau est un filtre.
-   * Un objet RegExp : La fonction de test de l’objet est utilisée pour faire correspondre les clés de cookie.
+   * Un objet RegExp : la fonction de test de l’objet est utilisée pour faire correspondre les clés de cookie.
    * Une fonction : fonction qui teste une clé de cookie pour chercher une correspondance. La fonction doit utiliser la clé de cookie comme paramètre et renvoyer la valeur `true` si le test confirme une correspondance.
 
 ##### Renvoie {#returns-getkeys-1}
@@ -697,7 +697,7 @@ Associe une fonction à un événement. La fonction est appelée à chaque fois 
 
 Lorsque l’argument `triggerForPastEvents` est défini sur `true`, cette fonction renvoie une valeur `boolean` qui indique si l’événement s’est déjà produit :
 
-* `true`: L’événement s’est produit dans le passé et le gestionnaire est appelé.
+* `true` : l’événement s’est produit dans le passé et le gestionnaire est appelé.
 * `false` : l’événement ne s’est pas produit dans le passé.
 
 Si `triggerForPastEvents` est défini sur `false`, cette fonction ne renvoie aucune valeur.
@@ -737,7 +737,7 @@ Associe une fonction à un événement. La fonction est appelée une seule fois,
 
 Lorsque l’argument `triggerForPastEvents` est défini sur `true`, cette fonction renvoie une valeur `boolean` qui indique si l’événement s’est déjà produit :
 
-* `true`: L’événement s’est produit dans le passé et le gestionnaire est appelé.
+* `true` : l’événement s’est produit dans le passé et le gestionnaire est appelé.
 * `false` : l’événement ne s’est pas produit dans le passé.
 
 Si `triggerForPastEvents` est défini sur `false`, cette fonction ne renvoie aucune valeur.
@@ -773,7 +773,7 @@ Analyse une valeur de chaîne au format JSON et la convertit en objet JavaScript
 
 ##### Renvoie {#returns-parse}
 
-Objet JavaScript.
+Un objet JavaScript.
 
 ##### Exemple {#example-parse}
 
@@ -795,7 +795,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Sérialise les valeurs et les objets JavaScript en valeurs de chaîne au format JSON.
+Sérialise les valeurs JavaScript et les objets en valeurs de chaîne au format JSON.
 
 ##### Paramètres {#parameters-stringify}
 
@@ -840,7 +840,7 @@ Crée une copie d’un objet de données et y ajoute l’arbre de données d’u
 
 ##### Renvoie {#returns-addallitems-1}
 
-Objet contenant les données fusionnées.
+Un objet contenant les données fusionnées.
 
 #### cleanup() {#cleanup}
 
@@ -869,7 +869,7 @@ La valeur qui correspond à la clé. Si la clé possède des clés enfants, cett
 
 ##### Exemple {#example-getitem-2}
 
-Examinez l’objet JavaScript suivant :
+Étudions l’objet JavaScript suivant :
 
 ```javascript
 myObject {
@@ -897,7 +897,7 @@ L’exemple de code suivant récupère la valeur d’une clé possédant des cl�
 ContextHub.Utils.JSON.tree.getItem(myObject, "/user");
 ```
 
-La fonction renvoie l’objet suivant :
+La fonction renvoie l’objet suivant :
 
 ```javascript
 Object {
@@ -985,13 +985,13 @@ myObject {
 }
 ```
 
-L’exemple de script suivant supprime la branche /un/deux/trois/quatre de l’arborescence de données :
+L’exemple de script suivant supprime la branche /un/deux/trois/quatre de l’arborescence de données :
 
 ```javascript
 myObject = ContextHub.Utils.JSON.tree.removeItem(myObject, "/one/two/three/four");
 ```
 
-La fonction renvoie l’objet suivant :
+La fonction renvoie l’objet suivant :
 
 ```javascript
 myObject {
@@ -1003,10 +1003,10 @@ myObject {
 
 #### sanitizeKey(key) {#sanitizekey-key}
 
-Assainit les valeurs de chaîne pour les rendre utilisables sous forme de clés. Pour assainir une chaîne, cette fonction effectue les actions suivantes :
+Assainit les valeurs de chaîne pour les rendre utilisables sous forme de clés. Pour assainir une chaîne, cette fonction effectue les actions suivantes :
 
 * Réduit plusieurs barres obliques consécutives en une seule barre oblique.
-* Supprime les espaces au début et à la fin de la chaîne.
+* Supprime les espaces blancs au début et à la fin de la chaîne.
 * Divise le résultat en un tableau de chaînes délimitées par des barres obliques.
 
 Utilisez le tableau obtenu pour créer une clé utilisable.
@@ -1045,7 +1045,7 @@ Une copie de l’objet `tree` qui comporte la paire `key`/`value`.
 
 ##### Exemple {#example-setitem-2}
 
-Examinez le code JavaScript suivant :
+Étudions le code JavaScript suivant :
 
 ```javascript
 var myObject = {
@@ -1098,7 +1098,7 @@ Un objet qui représente le magasin candidat enregistré. Si le type de magasin 
 
 #### getSupportedStoreTypes() {#getsupportedstoretypes}
 
-Renvoie les noms des magasins enregistrés en tant que magasins candidats. Cette fonction ne nécessite aucun paramètre.
+Renvoie les noms des magasins enregistrés en tant que magasins candidats. Cette fonction ne comporte aucun paramètre.
 
 ##### Renvoie {#returns-getsupportedstoretypes}
 
@@ -1108,7 +1108,7 @@ Un tableau de valeurs sous forme de chaîne où chaque chaîne correspond au typ
 
 Enregistre un objet magasin en tant que magasin candidat à l’aide d’un nom et d’une priorité.
 
-La priorité est un nombre qui indique l’importance des magasins de même nom. Lorsqu’un magasin candidat est enregistré sous le même nom qu’un magasin candidat déjà enregistré, le candidat ayant la priorité la plus élevée est utilisé. Lors de l’enregistrement d’un candidat de magasin, le magasin n’est enregistré que si la priorité est supérieure aux candidats de magasin enregistrés portant le même nom.
+La priorité est un nombre qui indique l’importance des magasins de même nom. Lorsqu’un magasin candidat est enregistré sous le même nom qu’un magasin candidat déjà enregistré, le candidat ayant la priorité la plus élevée est utilisé. Lors de l’enregistrement d’un magasin candidat, le magasin n’est enregistré que si la priorité est supérieure aux magasins candidats enregistrés portant le même nom.
 
 ##### Paramètres {#parameters-registerstorecandidate}
 

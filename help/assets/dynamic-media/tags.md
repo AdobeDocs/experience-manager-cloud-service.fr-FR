@@ -8,7 +8,7 @@ exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '6663'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 L’extension *Visionneuses Dynamic Media* pour les Experience Platform Tags et les visionneuses Dynamic Media 5.13, permet aux clients Adobe Analytics et Experience Platform Tags d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Experience Platform Tags.
 
-Cette intégration signifie que vous pouvez suivre l’utilisation des visionneuses Dynamic Media sur votre site web avec Adobe Analytics. En même temps, vous pouvez utiliser les événements et les données exposés par les visionneuses avec toute autre extension de balises Experience Platform provenant d’Adobe ou d’un tiers.
+Cette intégration signifie que vous pouvez suivre l’utilisation des visionneuses Dynamic Media sur votre site web avec Adobe Analytics. Dans le même temps, vous pouvez utiliser les événements et les données exposés par les visiteurs et visiteuses avec toute autre extension de balises Experience Platform provenant d’Adobe ou d’un tiers.
 
 Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir [Extensions d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=fr) dans le Guide de l’utilisateur Experience Platform Tags.
 
@@ -420,7 +420,7 @@ Pour la configuration, assurez-vous d’avoir accès à une société dans Adobe
 
 ## Configuration d’Adobe Analytics pour l’intégration {#configuring-adobe-analytics-for-the-integration}
 
-Une fois Adobe Analytics configuré, les éléments suivants sont configurés pour l’intégration :
+Une fois Adobe Analytics configuré, les éléments suivants sont configurés pour l’intégration :
 
 * Une suite de rapports est en place et sélectionnée.
 * Les variables Analytics sont disponibles pour recevoir les données de suivi.
@@ -460,7 +460,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
    Voir [Présentation de props et eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=fr#vars).
 
-   Aux fins de cette documentation, seule une variable Trafic personnalisé (props) est utilisée, car elle est disponible dans un rapport Analytics quelques minutes après qu’une action a eu lieu sur une page web.
+   Pour les besoins de cette documentation, seule une variable de trafic personnalisé (props) est utilisée car elle est disponible dans un rapport Analytics quelques minutes après qu’une action a lieu sur une page web.
 
    Pour activer une nouvelle variable de trafic personnalisé, dans Adobe Analytics, sur la barre d’outils, accédez à **[!UICONTROL Admin]** > **[!UICONTROL Suites de rapports]**.
 
@@ -487,7 +487,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
 ## Configuration d’Experience Platform Tags pour l’intégration {#configuring-adobe-launch-for-the-integration}
 
-Une fois que vous avez configuré les balises Experience Platform, les éléments suivants sont configurés pour l’intégration :
+Une fois les balises Experience Platform configurées, les éléments suivants seront paramétrés pour l’intégration :
 
 * Création d’une propriété pour conserver toutes vos configurations ensemble.
 * Installation et configuration des extensions. Le code client de toutes les extensions installées dans la propriété est compilé dans une bibliothèque. Cette bibliothèque sera utilisée ultérieurement par la page web.
@@ -571,7 +571,7 @@ Au moment de la rédaction de cet article, l’extension *Visionneuses Dynamic 
 
 Consultez [Création d’une propriété dans Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
-Une fois les extensions installées et configurées, au minimum, les cinq extensions suivantes (quatre si vous n’effectuez pas le suivi vidéo) seront répertoriées dans la zone Extensions > Installées .
+Une fois les extensions installées et configurées, au minimum, les cinq extensions suivantes (quatre si vous n’effectuez pas le suivi vidéo) seront répertoriées dans la zone Extensions > Installées.
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 

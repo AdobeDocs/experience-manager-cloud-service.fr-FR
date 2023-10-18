@@ -5,7 +5,7 @@ exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 Il est possible de mettre en œuvre des projets Adobe Experience Manager sur des modèles couplés et découplés, sans que toutefois ce choix soit binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet. Ce document donne un aperçu des différents modèles et décrit les niveaux d’intégration des applications sur une seule page (SPA).
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 AEM offre de puissants outils pour gérer à la fois la création de contenus et leur diffusion sur une seule plateforme. Il s’agit d’un modèle traditionnel de gestion de contenu « couplé », où les auteurs et les développeurs de contenu travaillent sur la même plateforme pour mettre les expériences à la disposition des consommateurs de contenu.
 
@@ -31,7 +31,7 @@ Les applications sur une seule page (SPA) sont souvent destinataires du contenu 
 
 ## Exemple d’une boutique web {#web-shop-example}
 
-Supposons que votre entreprise dispose d’un site web sous la forme d’une SPA. Vous y trouverez tous les détails et images de votre produit. Vous présentez ensuite des AEM pour vos efforts marketing tels que des sites promotionnels, des blogs et du contenu de campagne. Comment intégrer les deux ? AEM offre tout un éventail d’options :
+Supposons que votre entreprise dispose d’un site web sous la forme d’une SPA. Vous y trouverez tous les détails et images de votre produit. Vous introduisez ensuite AEM pour optimiser vos efforts marketing avec notamment du contenu de sites promotionnels, de blogs et de campagnes. Comment intégrer les deux ? AEM offre tout un éventail d’options :
 
 * **Permettre aux systèmes de fonctionner de manière indépendante.**
 * **Apporter à la boutique web un contenu limité issu d’AEM via GraphQL.** Le contenu peut être créé par des auteurs dans AEM, mais il ne sera visible que par la biais de la boutique web SPA.
@@ -43,7 +43,7 @@ La section suivante examine ces niveaux d’intégration de manière plus détai
 
 >[!NOTE]
 >
->Bien sûr, vous pouvez également réimplémenter le webshop SPA comme une AEM pleinement opérationnelle. [utilisation de la structure d’AEM SPA Editor](/help/implementing/developing/hybrid/introduction.md). Si vous avez déjà AEM et que souhaitez créer un site web ou une autre SPA, cette méthode est recommandée. Cependant, elle n’entre pas dans le cadre de ce document.
+>Vous pouvez bien entendu réimplémenter la SPA de la boutique web sous la forme d’une SPA AEM pleinement opérationnelle [à l’aide du framework de l’éditeur de SPA d’AEM](/help/implementing/developing/hybrid/introduction.md). Si vous possédez déjà AEM et que souhaitez créer un site web ou une autre SPA, cette méthode est recommandée. Cependant, elle n’entre pas dans le cadre de ce document.
 
 ## Niveaux d’intégration SPA {#integration-levels}
 

@@ -6,13 +6,13 @@ exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '1793'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
 # Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -159,7 +159,7 @@ Il est recommandé d’utiliser OAuth dans les environnements ayant des exigence
 
 Les fragments de contenu sont un type spécifique de ressource. Voir [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md).
 
-Pour plus d’informations sur les fonctionnalités disponibles via l’API, voir :
+Pour plus d’informations sur les fonctionnalités disponibles via l’API, voir :
 
 * L’[API REST Assets](/help/assets/mac-api-assets.md)
 * [Types d’entité](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), où sont expliquées les fonctionnalités propres à chaque type pris en charge (en fonction des fragments de contenu).
@@ -175,7 +175,7 @@ La réponse contient des informations de pagination dans le cadre de la fonction
 
 >[!NOTE]
 >
->La pagination est généralement appliquée aux entités de conteneur (c’est-à-dire aux dossiers ou aux ressources avec des rendus), car elle se rapporte aux enfants de l’entité demandée.
+>La pagination est généralement appliquée aux entités de conteneur (c’est-à-dire les dossiers ou les ressources comportant des rendus), car elle a trait aux enfants de l’entité demandée.
 
 #### Exemple : pagination {#example-paging}
 

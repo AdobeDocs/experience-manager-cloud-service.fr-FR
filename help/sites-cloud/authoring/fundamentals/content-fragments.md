@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ En même temps que l’outil d’exportation JSON mis à jour, les fragments de
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >
->Pour plus d’informations, voir [Présentation des fragments de contenu et des fragments d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
+>Pour plus d’informations, consultez [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Les fragments de contenu permettent ce qui suit :
    >
    >L’autre méthode consiste à faire glisser un fragment de contenu directement sur la page. Le composant associé est ainsi automatiquement créé (Fragment de contenu).
 
-4. Au départ, le contenu de la variable **Principal** Elément et **Principal** (variation) s’affiche. Vous pouvez [sélectionner d’autres éléments et/ou variantes](#selecting-the-element-or-variation) en fonction de vos besoins.
+4. Au début, le contenu de l’élément **Principal** et du **Gabarit** (variation) est affiché. Vous pouvez [sélectionner d’autres éléments et/ou variantes](#selecting-the-element-or-variation) en fonction de vos besoins.
 
    ![Fragments de contenu dans l’explorateur de ressources](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -107,8 +107,8 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
   >Les éléments disponibles dépendent du modèle utilisé.
 
 * **Variation**
-   * Par défaut **Principal** est toujours disponible.
-   * Une sélection est disponible si des variations ont été créées pour le fragment.
+   * Le **Gabarit** par défaut est toujours disponible.
+   * La sélection est disponible si vous avez créé des variations pour le fragment.
 
 * **ID**
 
@@ -148,7 +148,7 @@ Pour le contenu intermédiaire, vous pouvez :
 
 >[!CAUTION]
 >
->Une fois que vous avez ajouté du contenu intermédiaire à un fragment de contenu sur votre page, la modification de la structure du fragment de contenu sous-jacent (c’est-à-dire dans l’éditeur de fragment de contenu) peut entraîner des résultats erronés/inattendus.
+>Une fois le contenu intermédiaire ajouté à un fragment de votre page, la modification de la structure du fragment de contenu sous-jacent (c’est-à-dire dans l’éditeur de fragment de contenu) risque de donner lieu à des résultats erronés/inattendus.
 >
 >Si cela se produit, le contenu intermédiaire est conservé tel quel :
 >
@@ -159,7 +159,7 @@ Pour le contenu intermédiaire, vous pouvez :
 
 ### Utilisation de contenu associé {#using-associated-content}
 
-Si vous avez [contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md) avec la propriété [fragment de contenu](/help/assets/content-fragments/content-fragments.md) ces ressources sont disponibles à partir du panneau latéral (après avoir placé votre fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) au [fragment de contenu](/help/assets/content-fragments/content-fragments.md), ces ressources sont disponibles à partir du panneau latéral (après avoir placé le fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Si vous avez [contenu associé](/help/assets/content-fragments/content-fragments
 
 Une fois que vous avez ajouté un fragment avec du contenu associé à votre page, un nouvel onglet (**Contenu associé**) s’ouvre dans le panneau latéral.
 
-À partir de là, vous pouvez faire glisser les ressources vers l’emplacement requis (vers un composant existant ou vers l’emplacement requis où le composant approprié est créé) :
+Dans cet onglet, vous pouvez faire glisser les ressources vers l’emplacement souhaité (un composant existant ou une position où le composant adéquat est créé) :
 
 ![Insertion d’une image](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

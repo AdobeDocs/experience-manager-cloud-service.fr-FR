@@ -5,7 +5,7 @@ exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2020'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Les activités sont affichées avec un libellé décrivant le type d’activité
 
 * XT : ciblage d’expérience Adobe Target
 * A/B : tests A/B Adobe Target
-* AEM - Ciblage Adobe Experience Manager (piloté par ContextHub)
+* AEM : ciblage d’Adobe Experience Manager (piloté par ContextHub)
 
 ![Types d’activités](/help/sites-cloud/authoring/assets/activities-types.png)
 

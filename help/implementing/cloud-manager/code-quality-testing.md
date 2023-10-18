@@ -5,7 +5,7 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -60,16 +60,16 @@ Le tableau suivant résume les notes et les seuils d’échec pour chacune des c
 | Couverture | Défini par un mélange de couverture de ligne de test unitaire et de couverture de condition à l’aide de la formule : <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = Conditions qui ont été évaluées comme `true` au moins une fois lors de l’exécution de tests unitaires</li><li>`CF` = Conditions qui ont été évaluées comme `false` au moins une fois lors de l’exécution de tests unitaires</li><li>`LC` = Lignes couvertes = lines_to_cover - uncover_lines</li><li>`B` = nombre total de conditions</li><li>`EL` = nombre total de lignes exécutables (lines_to_cover)</li></ul> | Important | &lt; 50 % |
 | Tests unitaires ignorés | Nombre de tests unitaires ignorés | Infos | > 1 |
 | Problèmes en cours | Types de problèmes généraux – Vulnérabilités, bogues et smells de code | Infos | > 0 |
-| Lignes dupliquées | Défini comme le nombre de lignes impliquées dans les blocs dupliqués. Un bloc de code est considéré comme dupliqué dans les conditions suivantes.<br>Projets non Java :<ul><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li></ul>Projets Java :<ul></li><li> Il devrait y avoir au moins 10 déclarations successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul>Les différences dans la mise en retrait et dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1 % |
+| Lignes dupliquées | Défini comme le nombre de lignes impliquées dans les blocs dupliqués. Un bloc de code est considéré comme dupliqué dans les conditions suivantes.<br>Projets non Java :<ul><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li></ul>Projets Java :<ul></li><li> Il devrait y avoir au moins 10 déclarations successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1 % |
 | Compatibilité Cloud Service | Nombre de problèmes de compatibilité Cloud Service identifiés | Infos | > 0 |
 
 >[!NOTE]
 >
->Voir [Définitions des mesures de SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) pour des définitions plus détaillées.
+>Reportez-vous aux [Définitions des mesures de SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) pour des définitions plus détaillées.
 
 >[!NOTE]
 >
->Pour en savoir plus sur les règles de qualité du code personnalisé exécutées par [!UICONTROL Cloud Manager], voir [Règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>Pour en savoir plus sur les règles de qualité du code personnalisé exécutées par [!UICONTROL Cloud Manager], reportez-vous à la section [Règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Traitement des faux positifs {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 
 >[!NOTE]
 >
->Bien qu’il soit recommandé d’effectuer l’opération `@SuppressWarnings` annotation aussi spécifique que possible, c’est-à-dire annoter uniquement l’instruction ou le bloc spécifique à l’origine du problème, il est possible d’annoter au niveau de la classe.
+>Bien que la bonne pratique consiste à rendre l’annotation `@SuppressWarnings` aussi précise que possible (c’est-à-dire à annoter uniquement l’instruction ou le bloc à l’origine du problème), il est tout de même possible d’annoter au niveau de la classe.
 
 >[!NOTE]
->Bien qu’il n’existe pas d’étape de test de sécurité explicite, des règles de qualité du code liées à la sécurité sont évaluées à l’étape de qualité du code. Voir [Présentation de la sécurité pour AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) pour en savoir plus sur la sécurité en Cloud Service.
+>Bien qu’il n’existe pas d’étape de test de sécurité explicite, des règles de qualité du code liées à la sécurité sont évaluées à l’étape de qualité du code. Pour en savoir plus sur la sécurité dans Cloud Service, reportez-vous à [Vue d’ensemble de la sécurité pour AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
 ## Optimisation de l’analyse des packages de contenu {#content-package-scanning-optimization}
 
@@ -116,11 +116,11 @@ Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue un
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
 
-Si les seuls éléments à l’intérieur `myco-all-1.0.0-SNAPSHOT.zip` sont les deux packages de contenu ignorés, puis les deux packages incorporés sont analysés au lieu du package de contenu &quot;all&quot;.
+Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deux packages de contenu ignorés, les deux packages incorporés sont analysés au lieu du package de contenu « all ».
 
 Pour les projets qui produisent des dizaines de packages incorporés, il a été démontré que cette optimisation permet de gagner jusqu’à 10 minutes par exécution de pipeline.
 
-Un cas particulier peut se produire lorsque le package de contenu « all » contient une combinaison de packages de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contenait les deux packages incorporés mentionnés précédemment et un ou plusieurs lots OSGi, puis un nouveau package de contenu minimal est construit avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
+Un cas particulier peut se produire lorsque le package de contenu « all » contient une combinaison de packages de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés mentionnés précédemment ainsi qu’un ou plusieurs lots OSGi, un nouveau package de contenu minimal est créé avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

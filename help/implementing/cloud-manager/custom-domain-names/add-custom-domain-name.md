@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 600288a87e024fbe58ff605a8bcdc61535cc0759
 workflow-type: tm+mt
 source-wordcount: '601'
-ht-degree: 74%
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ Vous pouvez ajouter un nom de domaine personnalisé à partir de deux emplacemen
 
 >[!NOTE]
 >
->Un utilisateur doit disposer de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour ajouter un nom de domaine personnalisé dans Cloud Manager. Vous devez utiliser le réseau de diffusion de contenu Fastly.
+>Un utilisateur ou une utilisatrice doit disposer du rôle **Propriétaire d’entreprise** ou **Responsable du déploiement** pour ajouter un nom de domaine personnalisé dans Cloud Manager, et vous devez utiliser le réseau de diffusion de contenu Fastly.
 
 ## Ajout d’un nom de domaine personnalisé à partir de la page Paramètres du domaine {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ Suivez la procédure suivante pour ajouter un nom de domaine personnalisé à pa
    >
    >N’incluez pas `http://`, `https://` ni d’espace lors de la saisie dans votre domaine.
 
-1. Sélectionnez la variable **Environnement** dont le service est associé au nom de domaine.
+1. Sélectionnez l’**environnement** dont le service est associé au nom de domaine.
 
 1. Sélectionnez le service **Publier** ou **Aperçu**.
 
@@ -54,17 +54,17 @@ Suivez la procédure suivante pour ajouter un nom de domaine personnalisé à pa
 
 Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Cela est indiqué par le statut **Vérifié et déployé**.
 
-Voir [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur la manière de résoudre les problèmes potentiels.
+Consultez [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents statuts et sur la manière de résoudre des problèmes potentiels.
 
 >[!NOTE]
 >
 >La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.
 >
->Cloud Manager vérifie la propriété et met à jour le statut visible dans le tableau des paramètres du domaine. Voir [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
+>Cloud Manager vérifie la propriété et met à jour le statut visible dans le tableau des paramètres du domaine. Consultez [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
 
 >[!TIP]
 >
->Voir [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.
+>Consultez [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.
 
 ## Ajout d’un nom de domaine personnalisé à partir de la page Environnements {#adding-cdn-environments}
 
@@ -84,7 +84,7 @@ Procédez comme suit pour ajouter un nom de domaine personnalisé à partir de l
 
    ![Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. Vérifiez les valeurs sélectionnées dans la boîte de dialogue **Ajouter le nom de domaine** et cliquez sur **Continuer**.
+1. Vérifiez les valeurs sélectionnées dans la boîte de dialogue **Ajouter un nom de domaine** et cliquez sur **Continuer**.
 
    ![Fenêtre du nom de domaine](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
@@ -98,14 +98,14 @@ Procédez comme suit pour ajouter un nom de domaine personnalisé à partir de l
 
 Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Cela est indiqué par le statut **Vérifié et déployé**.
 
-Voir [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur la manière de résoudre les problèmes potentiels.
+Consultez [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents statuts et sur la manière de résoudre des problèmes potentiels.
 
 >[!NOTE]
 >
 >La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.
 >
->Cloud Manager vérifie la propriété et met à jour le statut visible dans le tableau des paramètres du domaine. Voir [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
+>Cloud Manager vérifie la propriété et met à jour le statut visible dans le tableau des paramètres du domaine. Consultez [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
 
 >[!TIP]
 >
->Voir [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.
+>Consultez [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.

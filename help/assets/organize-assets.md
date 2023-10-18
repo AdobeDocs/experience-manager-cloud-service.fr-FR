@@ -8,7 +8,7 @@ exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 
-L’ajout de balises à des ressources les rend plus faciles à récupérer au cours d’une recherche, à créer des collections à l’aide des résultats de recherche, à améliorer le classement de certaines ressources et à appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
+L’ajout de balises à des ressources permet de les récupérer plus facilement au cours d’une recherche, de créer des collections à l’aide des résultats de recherche, d’améliorer le classement de certaines ressources et d’appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
 
 [!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure de machine learning, qui peuvent être entraînés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources..
 

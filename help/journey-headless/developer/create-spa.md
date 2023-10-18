@@ -3,7 +3,7 @@ title: 'Facultatif : comment créer des applications monopages (SPA) avec Adobe
 description: Dans cette suite facultative du parcours de développement découplé AEM, vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 100%
 

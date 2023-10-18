@@ -5,13 +5,13 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
 # Publication de pages {#publishing-pages}
 
-Une fois que vous avez créé et révisé votre contenu dans l’environnement de création, l’objectif est de [le rendre disponible sur votre site web public ;](/help/sites-cloud/authoring/getting-started/concepts.md) (votre environnement de publication).
+Une fois le contenu créé et révisé dans l’environnement de création, l’objectif est de [le rendre disponible sur votre site web public](/help/sites-cloud/authoring/getting-started/concepts.md) (votre environnement de publication).
 
 On parle alors de publication d’une page. Lorsque vous souhaitez supprimer une page de l’environnement de publication, on parle de dépublication. Lorsque vous publiez et dépubliez, la page reste disponible dans l’environnement de création pour d’autres modifications jusqu’à ce que vous la supprimiez.
 
@@ -64,14 +64,14 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 1. Selon que la page comporte des références qui doivent être publiées :
 
-   * La page est publiée directement s’il n’y a aucune référence à publier.
-   * Si la page comporte des références à publier, celles-ci sont répertoriées dans la variable **Publier** , où vous pouvez effectuer l’une des opérations suivantes :
+   * La page est publiée directement, s’il n’y a aucune référence à publier.
+   * Si la page comporte des références à publier, celles-ci sont répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
       * Spécifier les ressources, balises et autres éléments à publier conjointement avec la page, puis cliquer sur **Publier** pour terminer l’opération.
       * Sélectionner **Annuler** pour abandonner l’opération.
 
    ![Publication de références avec la page](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. L’option **Publier** réplique la page dans l’environnement de publication. Dans l’éditeur de page, une bannière d’informations s’affiche pour confirmer l’action de publication.
+1. L’option **Publier** réplique la page dans l’environnement de publication. Une bannière d’informations est affichée dans l’éditeur de page pour confirmer l’opération de publication.
 
    ![Bannière d’informations sur l’état de publication](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -81,7 +81,7 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 >[!NOTE]
 >
->La publication à partir de l’éditeur est une publication superficielle, c’est-à-dire que seule la ou les pages sélectionnées sont publiées et que les pages enfants ne le sont pas.
+>Une publication à partir de l’éditeur est dite superficielle ; en d’autres termes, seules la ou les pages sélectionnées sont publiées (les éventuelles pages enfants ne le sont pas).
 
 >[!NOTE]
 >
@@ -112,11 +112,11 @@ Pour publier une page avec publication rapide :
 
 >[!NOTE]
 >
->La publication rapide est une publication superficielle, c’est-à-dire que seule la ou les pages sélectionnées sont publiées et que les pages enfants ne le sont pas.
+>La publication rapide est une publication superficielle, c’est-à-dire que seules la ou les pages sélectionnées sont publiées alors que les pages enfants ne le sont pas.
 
 #### Gérer la publication {#manage-publication}
 
-**Gérer la publication** offre plus d’options que **Publication rapide**, permettant l’inclusion de pages enfants, la personnalisation des références et le démarrage de tous les workflows applicables, et offrant la possibilité de publier à une date ultérieure.
+La méthode **Gérer la publication** propose plus d’options que **Publication rapide**, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
@@ -168,11 +168,11 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   La boîte de dialogue **Références publiées** affiche alors les références du contenu sélectionné. Par défaut, ils sont tous sélectionnés et publiés/non publiés, mais vous pouvez décocher la case pour les désélectionner afin qu’ils ne soient pas inclus dans l’action.
+   La boîte de dialogue **Références publiées** affiche alors les références du contenu sélectionné. Par défaut, elles sont toutes sélectionnées. Dès lors, elles sont toutes publiées ou dépubliées. Vous pouvez toutefois les désélectionner pour qu’elles ne soient pas incluses dans l’opération.
 
    Cliquez sur **Terminé** pour enregistrer vos modifications ou sur **Annuler** pour annuler la sélection et revenir à l’assistant.
 
-   De retour dans l’assistant, le **Références** est mise à jour afin de prendre en compte votre sélection de références à publier ou dont la publication doit être annulée.
+   De retour dans l’assistant, la colonne **Références** est mise à jour afin de tenir compte des références que vous avez choisies de publier ou de dépublier.
 
    ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -203,11 +203,11 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    >[!NOTE]
    >
-   >La variable **Workflows** s’affiche en fonction des droits dont dispose ou non votre utilisateur. Consultez la remarque précédente sur cette page concernant les privilèges de publication et la gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md) pour plus d’informations.
+   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur ou utilisatrice. Pour plus d’informations, reportez-vous à la remarque précédente sur cette page concernant les privilèges de publication, ainsi qu’aux sections Gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md).
 
    Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 
-   * Définissez le titre du workflow.
+   * définir le titre du workflow ;
    * conserver le package de workflow, à condition que le workflow dispose d’une prise en charge multi-ressource ;
    * définir le titre du package de workflow, si l’option de conservation du package de workflow a été sélectionnée.
 
@@ -260,7 +260,7 @@ Vous pouvez utiliser l’option [Gérer la publication](#manage-publication) sur
 
 1. Dans la console Sites, sélectionnez la page racine de l’arborescence que vous souhaitez publier ou dépublier, puis sélectionnez **Gérer la publication**.
 1. L’assistant **Gérer la publication** démarre. Choisissez la publication ou la dépublication, puis sélectionnez **Suivant** pour continuer.
-1. À l’étape **Portée**, sélectionnez la page racine et sélectionnez **Inclure les enfants**.
+1. À l’étape **Portée**, sélectionnez la page racine, puis **Inclure les enfants**.
 
    ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 

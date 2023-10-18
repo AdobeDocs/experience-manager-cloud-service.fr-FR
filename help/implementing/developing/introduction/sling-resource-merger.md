@@ -5,7 +5,7 @@ exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 82%
 
 ## Objectif {#purpose}
 
-Sling Resource Merger fournit des services pour accéder aux ressources et les fusionner. Il fournit des mécanismes de différenciation pour les deux :
+Sling Resource Merger propose des services pour accéder à des ressources et les fusionner. Il fournit des mécanismes de différenciation pour les deux éléments ci-après :
 
 * **[Recouvrements](/help/implementing/developing/introduction/overlays.md)** de ressources à l’aide de [chemins de recherche](/help/implementing/developing/introduction/overlays.md#search-paths).
 
@@ -21,7 +21,7 @@ Sling Resource Merger fournit des services pour accéder aux ressources et les f
 
 Avec Sling Resource Merger, les ressources et/ou propriétés de recouvrement/remplacement sont fusionnées avec les ressources/propriétés d’origine :
 
-* Le contenu de la définition personnalisée a une priorité plus élevée que celle de l’original (c’est-à-dire qu’il *superpositions* ou *overrides* it).
+* Le contenu de la définition personnalisée a une priorité plus élevée que celle d’origine (en d’autres termes, elle la *recouvre* ou la *remplace*).
 
 * Si nécessaire, les [propriétés](#properties) définies dans la personnalisation indiquent comment utiliser le contenu fusionné à partir de l’original.
 
@@ -66,7 +66,7 @@ Resource Merger fournit les propriétés suivantes :
 
 * `sling:hideChildren` (`String` ou `String[]`)
 
-  Contient le nœud enfant, ou la liste des nœuds enfants, à masquer. Les propriétés du noeud sont conservées.
+  Contient le nœud enfant, ou la liste des nœuds enfants, à masquer. Les propriétés du nœud sont conservées.
 
   Le caractère générique `*` masque tout.
 
@@ -117,13 +117,13 @@ Ainsi, dans l’exemple de recouvrement ci-dessus, les nœuds suivants sont néc
 
 >[!NOTE]
 >
->Lors de l’utilisation de Sling Resource Merger (c’est-à-dire lorsque vous utilisez l’interface utilisateur tactile standard), il n’est pas recommandé de copier la structure entière depuis `/libs` car cela entraînerait le stockage d&#39;un trop grand nombre d&#39;informations dans `/apps`. Cela peut entraîner des problèmes lorsque le système est mis à niveau.
+>Lorsque vous utilisez Sling Resource Merger (c’est-à-dire lorsque vous employez l’interface utilisateur tactile standard), il est déconseillé de copier toute la structure depuis `/libs`, car cela entraînerait le stockage d’une trop grande quantité d’informations dans `/apps`. Cela peut entraîner des problèmes lorsque le système est mis à niveau.
 
 ### Cas d’utilisation {#use-cases}
 
-Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’effectuer les opérations suivantes :
+Ceux-ci, associés aux fonctionnalités standard, vous permettent d’effectuer les opérations suivantes :
 
-* **Ajout d’une propriété**
+* **Ajouter une propriété**
 
   La propriété n’existe pas dans la définition `/libs`, mais elle est requise dans le recouvrement/remplacement `/apps`.
 
@@ -137,10 +137,10 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
    1. Créez le nœud correspondant dans `/apps`.
    1. Créez la propriété correspondante sur ce nœud (sous /`apps`).
 
-      * La propriété aura une priorité basée sur la configuration Sling Resource Resolver.
+      * La propriété aura une priorité basée sur la configuration du résolveur de ressources Sling.
       * La modification du type de propriété est prise en charge.
 
-        Si vous utilisez un type de propriété différent de celui utilisé dans `/libs`, le type de propriété que vous définissez est utilisé.
+        Si vous utilisez un type de propriété différent de celui utilisé dans `/libs`, c’est le type que vous avez défini qui est utilisé.
 
   >[!NOTE]
   >
@@ -159,17 +159,17 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
 
   Le nœud et ses enfants sont définis dans `/libs`, mais une nouvelle configuration est requise dans le recouvrement/remplacement de `/apps`.
 
-   1. Combinez les actions des éléments suivants :
+   1. Combinez les actions des éléments suivants :
 
-      1. Masquer les enfants d’un noeud (en conservant les propriétés du noeud)
-      1. Redéfinir la propriété/les propriétés
+      1. Masquer les enfants d’un nœud (en conservant les propriétés du nœud)
+      1. Redéfinir la ou les propriétés
 
 * **Masquer une propriété**
 
   La propriété est définie dans `/libs`, mais elle n’est pas requise dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant dans `/apps`.
-   1. Créez une propriété `sling:hideProperties` de type `String` ou `String[]`. Utilisez cette option pour spécifier les propriétés à masquer/ignorer. Vous pouvez également utiliser des caractères génériques. Par exemple :
+   1. Créez une propriété `sling:hideProperties` de type `String` ou `String[]`. Utilisez cette option pour spécifier les propriétés à masquer ou à ignorer. Vous pouvez également utiliser des caractères génériques. Par exemple :
 
       * `*`
       * `["*"]`
@@ -214,7 +214,7 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
 
 ### Appel de Sling Resource Merger à partir de votre code {#invoking-the-sling-resource-merger-from-your-code}
 
-Sling Resource Merger comprend deux fournisseurs de ressources personnalisés : un pour les recouvrements et un autre pour les remplacements. Chacun d’eux peut être appelé dans votre code à l’aide d’un point de montage :
+Sling Resource Merger comprend deux fournisseurs de ressources personnalisés : un pour les recouvrements et un autre pour les remplacements. Chacun d’eux peut être appelé dans votre code à l’aide d’un point de montage :
 
 >[!NOTE]
 >

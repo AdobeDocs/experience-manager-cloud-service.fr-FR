@@ -8,7 +8,7 @@ exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -61,7 +61,7 @@ Pour continuer, cliquez sur **[!UICONTROL Suivant]**. Selon la sélection, l’o
 
 ### Ajouter du contenu {#add-content}
 
-Publication sur [!DNL Experience Manager Assets] vous permet d’ajouter plus de contenu (ressources et dossiers) à la liste de publication. Vous pouvez ajouter d’autres ressources ou dossiers à la liste dans les référentiels DAM. Cliquez sur **[!UICONTROL Ajouter du contenu]** pour ajouter du contenu.
+Publication sur [!DNL Experience Manager Assets] vous permet d’ajouter plus de contenu (ressources et dossiers) à la liste de publication. Vous pouvez ajouter d’autres ressources ou dossiers à la liste dans les référentiels DAM. Cliquez sur le bouton **[!UICONTROL Ajouter du contenu]** pour ajouter plus de contenu.
 
 Vous pouvez ajouter plusieurs ressources à partir d’un dossier ou ajouter plusieurs dossiers à la fois. Cependant, vous ne pouvez pas ajouter de ressources à partir de plusieurs dossiers à la fois.
 
@@ -179,26 +179,26 @@ Vous pouvez publier des ressources, des dossiers et des collections dans l’ins
 
 ## Demander la publication {#request-publication}
 
-La variable `Request Publication` aide à authentifier le workflow des ressources avant de les publier sur [!DNL AEM] Environnement de ressources. [!DNL AEM] fournit différents niveaux d’autorisations à différents utilisateurs. Vous pouvez *contributor* qui charge des ressources, mais ne peut pas les publier tant que les chargements ne sont pas vérifiés. En outre, la variable *Administration* vous pouvez gérer les workflows de lecture et d’écriture des ressources.
+L’option `Request Publication` permet d’authentifier le workflow des ressources avant de les publier sur l’environnement [!DNL AEM] Assets. [!DNL AEM] fournit différents niveaux d’autorisations à différents utilisateurs et utilisatrices. Vous pouvez être *contributeur ou contributrice*, c’est-à-dire que vous pouvez charger des ressources, mais vous ne pouvez pas les publier tant que les chargements ne sont pas vérifiés. Vous pouvez aussi être *administrateur ou administratrice*, c’est-à-dire que vous pouvez gérer la lecture et l’écriture des workflows des ressources.
 
-L’option Demander la publication est disponible pour les utilisateurs suivants :
-* **Contributeur :** Si vous êtes un utilisateur pouvant contribuer à la variable [!DNL AEM] Assets, vous disposez alors d’un accès limité à la variable [!DNL AEM] Workflow des ressources. `Manage publication` est masqué pour vous. En tant que contributeur, vous ne pouvez contribuer qu’en ajoutant des ressources, mais vous ne pouvez pas les publier ni disposer d’un accès en lecture au workflow.
+L’option Demander la publication est disponible pour les personnes suivantes :
+* **Contributeur ou contributrice :** si vous êtes un utilisateur ou une utilisatrice pouvant contribuer aux ressources [!DNL AEM], vous disposez alors d’un accès limité au workflow [!DNL AEM] Assets. Pour vous, le bouton `Manage publication` est masqué. En tant que contributeur ou contributrice, vous ne pouvez contribuer qu’en ajoutant des ressources, mais vous ne pouvez pas les publier ni disposer d’un accès en lecture au workflow.
 
-* **Utilisateur du workflow :** Cet utilisateur ne peut pas publier de ressources, mais dispose d’un accès en lecture au workflow. En tant qu’utilisateur de workflow, vous pouvez :
-   * publication de requête
-   * view `Manage publication` button
-   * planifier le workflow et afficher les options `schedule now` et `schedule later`
+* **Utilisateur ou utilisatrice du workflow :** cet utilisateur ou utilisatrice ne peut pas publier de ressources, mais dispose d’un accès en lecture au workflow. En tant qu’utilisateur ou utilisatrice de workflow, vous pouvez :
+   * Demander la publication
+   * Voir le bouton `Manage publication`
+   * Planifier le workflow et afficher les options `schedule now` et `schedule later`
 
-* **Admin :** En tant que type d’administrateur d’utilisateur, vous pouvez gérer les étapes globales du workflow pour les ressources. `Manage publication` est visible par vous. Si la destination `publish` est sélectionné, vous pouvez planifier une ressource ultérieurement pour l’étape du workflow.
+* **Administrateur ou administratrice :** en tant qu’administrateur ou administratrice, vous pouvez gérer les étapes globales du workflow pour les ressources. Vous pouvez voir le bouton `Manage publication`. Si la destination `publish` est sélectionnée, vous pouvez planifier une ressource ultérieurement pour l’étape du workflow.
 
 >[!NOTE]
 >
->If [!DNL Dynamic Media] est sélectionné comme destination, puis l’étape de workflow est désactivée pour **utilisateur de workflow** et **admin** utilisateurs.
+>Si vous sélectionnez [!DNL Dynamic Media] comme destination, l’étape de workflow est désactivée pour l’**utilisateur ou l’utilisatrice du workflow** et l’**administrateur ou l’administratrice**.
 >
 
 ## Restrictions et conseils {#limitations-and-tips}
 
-* `Manage publication` est disponible pour les utilisateurs disposant au moins d’autorisations de lecture sur le workflow.
+* `Manage publication` est disponible pour les utilisateurs disposant au minimum des autorisations de lecture sur le workflow.
 * Les dossiers vides ne sont pas publiés.
 * Si vous publiez une ressource en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
 * Lors de la dépublication d’une ressource complexe, dépubliez uniquement la ressource. Évitez de dépublier des références, car elles peuvent être référencées par d’autres ressources publiées.

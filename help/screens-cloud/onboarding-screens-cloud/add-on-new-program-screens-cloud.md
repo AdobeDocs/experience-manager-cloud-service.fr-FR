@@ -5,7 +5,7 @@ exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
 source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 40%
+ht-degree: 48%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 40%
 Cette section décrit comment ajouter Screens en tant que module complémentaire à un nouveau programme dans Cloud Manager.
 
 >[!NOTE]
->Voir [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) pour en savoir plus sur les programmes Cloud Manager.
+>Pour en savoir plus sur les programmes Cloud Manager, voir [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en).
 
 ## Objectif {#objective}
 
@@ -27,7 +27,7 @@ Pour ajouter Screens en tant que module complémentaire à un nouveau programme 
 1. Accédez à [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=fr) pour en savoir plus sur Cloud Manager.
+   >Pour en savoir plus sur Cloud Manager, voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=fr).
 
 1. Cliquez sur **Ajout d’un programme** à partir de la page d’entrée de Cloud Manager.
 

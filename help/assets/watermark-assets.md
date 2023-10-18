@@ -8,7 +8,7 @@ exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
 [!DNL Adobe Experience Manager Assets] permet d’ajouter un filigrane numérique aux images. [!DNL Assets] prend en charge l’application d’une image en tant que filigrane pour d’autres fichiers image. Les filigranes peuvent aider les utilisateurs à vérifier l’authenticité et le copyright des ressources. Un filigrane peut également être utilisé pour indiquer le statut d’un document, tel que confidentiel, brouillon, validité, etc.
@@ -39,10 +39,10 @@ Pour configurer [!DNL Experience Manager] de façon à appliquer un filigrane à
 
    >[!NOTE]
    >
-   >Si vous avez configuré le profil de filigrane du système à l’aide de `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` fichier de configuration (configuration OSGi), vous pouvez continuer à l’utiliser, mais Adobe recommande d’utiliser la nouvelle méthode.
+   >Si vous avez configuré le profil de filigrane système à l’aide du fichier de configuration `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` (configuration OSGi), vous pouvez continuer à l’utiliser, mais Adobe recommande d’utiliser la nouvelle méthode.
 
 
-1. [Création d’un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) pour utiliser les microservices de ressources pour appliquer le filigrane.
+1. [Créez un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) pour utiliser les microservices de ressources afin d’appliquer le filigrane.
 
    ![Profil de traitement des ressources pour créer un filigrane](assets/watermark-processing-profile.png)
 

@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Un certain nombre d’exigences s’imposent avant de vous lancer dans la traduc
 
 >[!TIP]
 >
->Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Une fois terminé, revenez à cette page.
+>Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Par conséquent, revenez à cette page une fois l’opération terminée.
 
 ### Outils {#tools}
 
@@ -57,11 +57,11 @@ Un certain nombre d’exigences s’imposent avant de vous lancer dans la traduc
 
 ## Stockage du contenu par AEM {#content-in-aem}
 
-En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu. Toutefois, il est utile de connaître les concepts et la terminologie de base, car vous utiliserez ensuite AEM outils de traduction. Plus important encore, vous devez comprendre votre propre contenu et la manière dont il est structuré pour le traduire efficacement.
+En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu. Toutefois, il vous sera utile de connaître les concepts de base et la terminologie lorsque vous utiliserez les outils de traduction AEM. Plus important encore, vous devez comprendre votre propre contenu et sa structure pour pouvoir le traduire efficacement.
 
 ### La console Sites {#sites-console}
 
-La console Sites fournit un aperçu de la structure de votre contenu, ce qui facilite la navigation et la gestion de votre contenu en créant des pages, en déplaçant et en copiant des pages et en publiant du contenu.
+La console Sites fournit un aperçu de la structure de votre contenu, ce qui facilite la navigation dans votre contenu ainsi que sa gestion, en créant des pages, en déplaçant et en copiant des pages, ou encore en publiant du contenu.
 
 Pour accéder à la console Sites, procédez comme suit :
 
@@ -75,7 +75,7 @@ Pour accéder à la console Sites, procédez comme suit :
 
    ![Hiérarchie du contenu](assets/sites-console-hierarchy.png)
 
-1. En appuyant ou en cliquant sur la case à cocher d’un élément dans une colonne, il sélectionne cet élément et affiche les détails de l’élément sélectionné dans la colonne de droite, ainsi que plusieurs actions disponibles pour l’élément sélectionné dans la barre d’outils ci-dessus.
+1. Lorsque vous appuyez ou cliquez sur la case à cocher d’un élément dans une colonne, vous sélectionnez cet élément et affichez les détails de l’élément sélectionné dans la colonne de droite, ainsi que le nombre d’actions disponibles pour l’élément sélectionné dans la barre d’outils ci-dessus.
 
    ![Sélection de contenu](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ La console Sites vous permet de parcourir votre contenu et fournit un aperçu de
 
 Pour modifier votre page :
 
-1. Utilisez la console Sites pour localiser et sélectionner une page. N’oubliez pas que vous devez appuyer ou cocher la case d’une page pour la sélectionner.
+1. Utilisez la console Sites pour localiser et sélectionner une page. N’oubliez pas que vous devez appuyer ou cliquer sur la case à cocher d’une page pour la sélectionner.
 
    ![Sélection d’une page à modifier](assets/sites-editor-select-page.png)
 
@@ -175,7 +175,7 @@ La structure finale peut ressembler à ce qui suit.
     |- ...
 ```
 
-Vous devez prendre note du chemin spécifique de votre contenu, car il est nécessaire ultérieurement pour configurer votre traduction.
+Vous devez prendre note du chemin spécifique de votre contenu, car il sera ensuite nécessaire pour configurer votre traduction.
 
 >[!NOTE]
 >

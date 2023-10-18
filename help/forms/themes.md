@@ -222,7 +222,7 @@ Lorsque vous mettez en forme un champ, tous les champs tels que l’âge, le nom
      Lorsque vous personnalisez tous les composants de champ avec une couleur d’arrière-plan spécifique, tous les champs tels que l’âge, le nom et l’adresse héritent de la couleur d’arrière-plan. Lorsque vous sélectionnez une zone numérique, telle que l’âge, et réduisez sa largeur, toutes les zones numériques telles que l’âge et le nombre de personnes dans une famille sont réduites. La largeur des champs de texte n’est pas modifiée.
 
    * **Etat :** vous permet de personnaliser les styles d’un objet dans un état spécifique. Par exemple, vous pouvez spécifier l’aspect d’un objet lorsqu’il est à l’état par défaut, mis au point, désactivé, survolé ou d’erreur.
-   * **Catégories de propriété :** les propriétés de style sont divisées en différentes catégories. Par exemple, Dimension et position, texte, arrière-plan, bordure et effets. Sous chaque catégorie, vous fournissez des informations de mise en forme. Par exemple, sous Arrière-plan, vous pouvez indiquer la Couleur d’arrière-plan, l’Image et le Dégradé de l’arrière-plan.
+   * **Catégories de propriété :** les propriétés de style sont divisées en différentes catégories. Par exemple : Dimension et position, Texte, Arrière-plan, Bordure et Effets. Sous chaque catégorie, vous fournissez des informations de mise en forme. Par exemple, sous Arrière-plan, vous pouvez indiquer la Couleur d’arrière-plan, l’Image et le Dégradé de l’arrière-plan.
 
    * **Avancé :** vous permet d’ajouter le CSS personnalisé à un objet, ce qui remplace les contrôles visuels de propriétés définis en cas de chevauchement.
 

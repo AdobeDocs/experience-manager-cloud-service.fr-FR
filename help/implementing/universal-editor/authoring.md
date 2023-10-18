@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
 source-wordcount: '2410'
-ht-degree: 25%
+ht-degree: 32%
 
 ---
 
@@ -16,7 +16,7 @@ Découvrez à quel point il est facile et intuitif pour les personnes en charge 
 
 ## Présentation {#introduction}
 
-L’éditeur universel permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de proposer des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
+L’éditeur universel permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en œuvre pour que vous puissiez fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
 
 Pour ce faire, l’éditeur universel offre aux auteurs de contenu une interface utilisateur intuitive qui nécessite une formation minimale pour simplement pouvoir intervenir et commencer à modifier le contenu. Ce document décrit l’expérience de création d’Universal Editor.
 
@@ -30,11 +30,11 @@ Pour ce faire, l’éditeur universel offre aux auteurs de contenu une interface
 
 ## Préparer l’application {#prepare-app}
 
-Pour créer du contenu pour une application à l’aide d’Universal Editor, l’application doit être instrumentée par un développeur afin de prendre en charge l’éditeur.
+Pour créer du contenu pour une application à l’aide de l’éditeur universel, l’application doit être instrumentée par un développeur ou une développeuse afin de prendre en charge l’éditeur.
 
 >[!TIP]
 >
->Voir [Prise en main d’Universal Editor dans AEM](getting-started.md) pour obtenir un exemple de configuration d’une application AEM pour qu’elle fonctionne avec l’éditeur universel.
+>Consultez [Prise en main de l’éditeur universel dans AEM](getting-started.md) pour obtenir un exemple de configuration d’une application AEM pour qu’elle fonctionne avec l’éditeur universel.
 
 ## Se connecter {#sign-in}
 
@@ -92,13 +92,13 @@ Cette icône comporte un badge indiquant le nombre d’éléments incomplets act
 
 #### Propriétés de l’utilisateur ou de l’utilisatrice {#user-properties}
 
-Appuyez ou cliquez sur l’icône représentant votre utilisateur ou votre utilisatrice pour accéder à vos paramètres utilisateur. Si aucune image d’utilisateur n’est configurée, une icône est attribuée de manière aléatoire.
+Appuyez ou cliquez sur l’icône représentant votre utilisateur ou votre utilisatrice pour accéder à vos paramètres utilisateur. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
 
 ![Propriétés de l’utilisateur](assets/user-properties.png)
 
 ### En-tête de l’éditeur universel {#universal-editor-header}
 
-L’en-tête de l’éditeur universel est toujours présent en haut de l’écran, juste en dessous de [l’en-tête Experience Cloud.](#experience-cloud-header) Il vous permet d’accéder rapidement à une autre page pour la modifier et la publier.
+L’en-tête de l’éditeur universel est toujours présent en haut de l’écran, juste en dessous de [l’en-tête Experience Cloud.](#experience-cloud-header) Il vous permet d’accéder rapidement à une autre page à modifier et de publier la page active.
 
 ![En-tête de l’éditeur universel](assets/universal-editor-header.png)
 
@@ -152,7 +152,7 @@ Appuyez ou cliquez sur l’icône d’aperçu de l’application ouverte pour ou
 
 #### Publier {#publish}
 
-Appuyez ou cliquez sur le bouton Publier afin de publier les modifications apportées au contenu en direct pour que vos lecteurs puissent les utiliser.
+Appuyez ou cliquez sur le bouton Publier pour pouvoir publier en direct les modifications apportées au contenu pour que vos lecteurs et lectrices puissent les utiliser.
 
 ![Bouton Publier](assets/publish.png)
 
@@ -408,7 +408,7 @@ Notez qu’en mode Aperçu, le fait d’appuyer ou de cliquer sur le contenu fai
 
 Pour en savoir plus sur l’éditeur universel, consultez ces documents.
 
-* [Présentation de l’éditeur universel](introduction.md) - Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de vous permettre de proposer des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
+* [Présentation de l’éditeur universel](introduction.md) - Découvrez comment l’éditeur universel permet de modifier n’importe quel aspect d’un contenu dans n’importe quelle implémentation afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
 * [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 * [Prise en main de l’éditeur universel dans AEM](getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 * [Architecture de l’éditeur universel](architecture.md) - Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.

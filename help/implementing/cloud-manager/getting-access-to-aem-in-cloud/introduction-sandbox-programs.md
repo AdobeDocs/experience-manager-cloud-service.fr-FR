@@ -5,7 +5,7 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez en quoi les programmes Sandbox diffèrent des programmes de productio
 
 Un programme Sandbox est généralement créé pour servir à la formation, à l’exécution de démonstrations, à l’activation ou aux preuves de concept (POC), ils ne sont donc pas destinés à transporter du trafic en direct.
 
-Le programme Sandbox est l’un des deux types de programmes disponibles dans AEM Cloud Service, l’autre étant le [programme de production.](introduction-production-programs.md) Voir [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour en savoir plus sur les types de programme.
+Le programme Sandbox est l’un des deux types de programmes disponibles dans AEM Cloud Service, l’autre étant le [programme de production.](introduction-production-programs.md) Voir [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour en savoir plus sur les types de programmes.
 
 ## Création automatique {#auto-creation}
 
@@ -49,7 +49,7 @@ Les domaines personnalisés et les listes d’adresses IP autorisées ne sont pa
 
 ### Aucun réseau avancé {#advanced-networking}
 
-[Fonctionnalités de mise en réseau avancées](/help/security/configuring-advanced-networking.md) (par exemple, la mise en service en libre-service de VPN, de ports non standard, d’adresses IP de sortie dédiées, etc.) ne sont pas disponibles dans les programmes Sandbox.
+Les [fonctionnalités de mise en réseau avancées](/help/security/configuring-advanced-networking.md) (par exemple, la configuration en libre-service de réseaux VPN, de ports non standards, d’adresses IP de sortie dédiées, etc.) ne sont pas disponibles dans les programmes Sandbox.
 
 ### Mises à jour AEM manuelles {#updates}
 
@@ -58,18 +58,18 @@ Les mises à jour AEM ne sont pas automatiquement transmises aux programmes Sand
 * Une mise à jour manuelle ne peut être exécutée que si l’environnement ciblé dispose d’un pipeline correctement configuré.
 * Une mise à jour manuelle d’un environnement de production met automatiquement à jour l’environnement d’évaluation, et vice-versa. Le jeu d’environnements Production+Évaluation doit se trouver dans la même version AEM.
 
-Voir [Mises à jour AEM version](/help/implementing/deploying/aem-version-updates.md) pour plus d’informations.
+Pour plus d’informations, voir [Mises à jour de la version AEM](/help/implementing/deploying/aem-version-updates.md).
 
-Voir [Environnement de mise à jour](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) pour savoir comment mettre à jour un environnement.
+Voir [Mise à jour de l’environnement](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) pour savoir comment mettre à jour un environnement.
 
 ### Mise en veille et suppression {#hibernation}
 
-Les environnements d’un programme Sandbox sont automatiquement mis en veille après huit heures d’inactivité. Les environnements Sandbox sont supprimés après six mois consécutifs de veille.
+Les environnements d’un programme Sandbox sont automatiquement mis en veille après huit heures d’inactivité. Les environnements Sandbox sont supprimés après six mois de mise en veille continus.
 
-Voir [Mise en veille et réactivation d’environnements Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) pour plus d’informations sur la réactivation des environnements et la suppression automatique des environnements de test.
+Voir [Mise en veille et réactivation d’environnements Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) pour plus d’informations sur la réactivation des environnements et la suppression automatique des environnements Sandbox.
 
-### Aucun support technique {#no-support}
+### Aucune assistance technique {#no-support}
 
-Étant donné qu’un programme d’environnement de test est généralement créé à des fins de formation, d’exécution de démonstrations, d’activation ou de preuve de concepts, la prise en charge technique n’est pas disponible pour les problèmes rencontrés dans un programme d’environnement de test.
+Étant donné qu’un programme Sandbox est généralement créé à des fins de formation, de démonstration, d’activation ou de preuve de concepts, l’assistance technique n’est pas disponible pour les problèmes rencontrés dans un programme Sandbox.
 
 Si vous rencontrez des problèmes lors de la création et de la gestion de vos programmes Sandbox, cela reste dans le cadre de l’assistance technique.

@@ -5,7 +5,7 @@ exl-id: a106dce1-5d51-406a-a563-4dea83987343
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ qui interagit avec le
 Pour plus d’informations sur le balisage :
 
 * Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md) pour plus d’informations sur le balisage du contenu en tant qu’auteur de contenu.
-* Pour en savoir plus sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées, voir Administration des balises pour un administrateur.
+* Consultez Administration des balises pour savoir comment un administrateur ou une administratrice peut créer et gérer des balises et déterminer à quel contenu elles ont été appliquées.
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}
 
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Tag Garbage Collector {#the-tag-garbage-collector}
 
-Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et inutilisées sont des balises sous `/content/cq:tags` avec une propriété `cq:movedTo` qui ne sont pas utilisées sur un nœud de contenu. Elles ont un décompte de zéro. En utilisant ce processus de suppression différée, le noeud de contenu (c’est-à-dire, le `cq:tags` ) ne doit pas être mise à jour dans le cadre de l’opération de déplacement ou de fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par exemple via la boîte de dialogue des propriétés de la page.
+Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et inutilisées sont des balises sous `/content/cq:tags` avec une propriété `cq:movedTo` qui ne sont pas utilisées sur un nœud de contenu. Elles ont un décompte de zéro. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par exemple via la boîte de dialogue des propriétés de la page.
 
 Tag Garbage Collector s’exécute par défaut une fois par jour. Cette fréquence peut être configurée sur :
 
@@ -138,7 +138,7 @@ La recherche de balises et l’obtention de la liste des balises fonctionnent co
 
 Une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction en français. `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser un trait de soulignement (`_`) au lieu d’un tiret (`-`), par exemple : `de_ch`.
 
-Par exemple, lorsque la variable **Animals** est ajoutée à la balise **Produits** page, valeur `stockphotography:animals` est ajouté à la propriété `cq:tags` du noeud `/content/wknd/en/products/jcr:content`. La traduction est référencée à partir du nœud de balise.
+Par exemple, lorsque la balise **Animals** est ajoutée à la page **Products**, la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du nœud `/content/wknd/en/products/jcr:content`. La traduction est référencée à partir du nœud de balise.
 
 L’API côté serveur dispose de méthodes liées à `title` localisées :
 
@@ -168,4 +168,4 @@ Le finnois est désormais disponible dans la boîte de dialogue des propriétés
 
 >[!NOTE]
 >
->La nouvelle langue doit être l’une des langues AEM reconnues, c’est-à-dire qu’elle doit être disponible sous forme de noeud sous `/libs/wcm/core/resources/languages`.
+>La nouvelle langue doit faire partie de celles reconnues par AEM, c’est-à-dire qu’elle doit être disponible comme nœud sous `/libs/wcm/core/resources/languages`.

@@ -5,7 +5,7 @@ exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 39%
+ht-degree: 47%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 39%
 Cette section décrit comment créer un environnement pour votre programme dans Cloud Manager.
 
 >[!NOTE]
->Voir [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=fr) pour savoir comment l’utilisateur peut créer un environnement.
+>Reportez-vous à [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=fr) pour savoir comment l’utilisateur ou l’utilisatrice peut créer un environnement.
 
 ## Objectif {#objective}
 

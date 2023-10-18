@@ -1,13 +1,13 @@
 ---
 title: Console Aperçu de Live Copy
-description: Découvrez les principes de base de la console Aperçu de la Live Copy pour comprendre rapidement l’état de vos Live Copies pour synchroniser le contenu.
+description: Découvrez les principes de base de la console Aperçu de Live Copy pour comprendre rapidement le statut des Live Copies afin de synchroniser le contenu.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -46,10 +46,10 @@ L’**aperçu de la Live Copy** peut être ouvert via le panneau latéral **Ré
 
 ### Propriétés d’une page de plan directeur {#properties-of-a-blueprint-page}
 
-La variable **Présentation de la Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
+L’**Aperçu de Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
 
-1. Ouvrir **Propriétés** pour la page de plan directeur appropriée.
-1. Ouvrez le **Blueprint** de l’onglet **Présentation de la Live Copy** s’affiche dans la barre d’outils supérieure :
+1. Ouvrez les **propriétés** pour la page de plan directeur appropriée.
+1. Ouvrez l’onglet **Plan directeur**, l’option **Aperçu de Live Copy** s’affiche dans la barre d’outils supérieure :
 
    ![Onglet Propriétés du plan directeur](../assets/live-copy-blueprint-tab.png)
 
@@ -72,7 +72,7 @@ Par exemple, une configuration de déploiement est définie sur `targetActivate`
 L’**aperçu de Live Copy** peut également être utilisé pour effectuer des actions sur la Live Copy :
 
 1. Ouvrez l’**aperçu de la Live Copy**.
-1. Sélectionnez le plan directeur ou la page Live Copy requis et la barre d’outils est mise à jour pour afficher les actions disponibles. Les [actions](overview.md#terms-used) disponibles varient selon que vous sélectionnez une page de [plan directeur](#actions-for-a-blueprint-page) ou de [Live Copy](#actions-for-a-live-copy-page).
+1. Sélectionnez la page de plan directeur ou de Live Copy requise. La barre d’outils est mise à jour pour afficher les actions disponibles. Les [actions](overview.md#terms-used) disponibles varient selon que vous sélectionnez une page de [plan directeur](#actions-for-a-blueprint-page) ou de [Live Copy](#actions-for-a-live-copy-page).
 
 ### Actions d’une page de plan directeur {#actions-for-a-blueprint-page}
 

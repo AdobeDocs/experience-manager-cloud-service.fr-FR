@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '1827'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -174,7 +174,7 @@ Par exemple :
 
 AEM fournit les types de données suivants pour que vous puissiez modéliser votre contenu :
 
-* Texte d’une seule ligne
+* Texte monoligne
 * Texte de plusieurs lignes
 * Nombre
 * Booléen

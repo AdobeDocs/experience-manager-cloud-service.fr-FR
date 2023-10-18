@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3705'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Il existe certaines bonnes pratiques reconnues dans les URL.
 
 Dans votre projet AEM, lors de l’évaluation des URL, posez-vous la question suivante :
 
-*&quot;Si un utilisateur voit cette URL et qu’aucun des contenus de la page n’est visible, peut-il décrire ce qu’était cette page ?&quot;*
+*« Si une personne voyait cette URL, mais pas le contenu de la page, aurait-elle une idée du contenu de cette page ? »*
 
 Si la réponse est oui, alors l’URL fonctionne probablement bien pour un moteur de recherche.
 
@@ -34,7 +34,7 @@ Voici quelques conseils généraux sur la construction de vos URL pour l’optim
 * Utilisez des tirets pour séparer les mots.
 
    * Nommez les pages en utilisant des tirets (-) comme séparateurs.
-   * Évitez d’utiliser la casse, les caractères de soulignement et les espaces.
+   * Évitez d’utiliser la casse mixte, les caractères de soulignement et les espaces.
 
 * Dans la mesure du possible, évitez d’utiliser des paramètres de requête. Si nécessaire, limitez-les à deux ou moins.
 
@@ -64,7 +64,7 @@ est préférable à `mybrand.com/products/product-detail.1234.html`
 
    * Si une URL peut être fournie à partir de différents chemins ou avec différents paramètres ou sélecteurs, veillez à utiliser une balise `rel=canonical` sur la page.
 
-   * Cela peut être inclus dans le code du modèle d’AEM.
+   * Cette information peut être incluse dans le code du modèle AEM.
 
 * Dans la mesure du possible, faites correspondre les URL aux titres des pages.
 
@@ -77,9 +77,9 @@ est préférable à `mybrand.com/products/product-detail.1234.html`
 
 * Assurez-vous que chaque page n’est diffusée qu’à partir d’un seul protocole.
 
-   * Parfois, les sites sont diffusés sur `http` jusqu’à ce qu’un utilisateur atteigne une page avec, par exemple, un formulaire de passage en caisse ou de connexion, auquel moment il passe à `https`. En cas de liaison depuis cette page, si l’utilisateur ou l’utilisatrice peut revenir aux pages `http` et y accéder par `https`, le moteur de recherche les suit comme deux pages distinctes.
+   * Il arrive que des sites soient diffusés via `http` jusqu’à ce qu’une personne utilisatrice arrive sur une page avec, par exemple, un formulaire de passage en caisse ou de connexion, qui passe alors en `https`. En cas de liaison depuis cette page, si l’utilisateur ou l’utilisatrice peut revenir aux pages `http` et y accéder par `https`, le moteur de recherche les suit comme deux pages distinctes.
 
-   * Actuellement, Google préfère les pages `https` aux pages `http`. Pour cette raison, il est souvent plus facile pour tous de diffuser l’ensemble du site `https`.
+   * Actuellement, Google préfère les pages `https` aux pages `http`. Pour cette raison, il est parfois plus facile pour toutes les parties prenantes de diffuser l’ensemble du site via `https`.
 
 ### Configuration du serveur {#server-configuration}
 
@@ -91,7 +91,7 @@ En termes de configuration du serveur, vous pouvez accomplir les étapes suivant
 
 * Lors du lancement d’un nouveau site avec des URL mises à jour, implémentez des redirections 301 pour vous assurer que votre classement d’optimisation du moteur de recherche existant n’est pas perdu.
 * Incluez une favicon à votre site.
-* Mettez en oeuvre un plan de site XML pour faciliter l’analyse de votre contenu par les moteurs de recherche. Veillez à inclure un plan de site mobile pour les sites mobiles et/ou réactifs.
+* Mettez en œuvre un plan de site XML pour faciliter l’analyse de votre contenu par les moteurs de recherche. Veillez à inclure un plan de site mobile pour les sites mobiles et/ou réactifs.
 
 ## Configurations AEM {#aem-configurations}
 
@@ -112,7 +112,7 @@ La tendance des dernières années a été de les supprimer afin que les URL soi
 AEM propose deux options d’écriture de servlets :
 
 * les servlets **bin** ;
-* les servlets **Sling**.
+* les servlets **Sling**
 
 Les exemples suivants illustrent comment enregistrer des servlets qui suivent ces deux schémas, ainsi que l’avantage obtenu grâce à l’utilisation des servlets Sling.
 
@@ -145,7 +145,7 @@ Cette approche comporte quelques points à prendre en compte :
 
 #### Servlets Sling (un niveau vers le bas) {#sling-servlets-one-level-down}
 
-Les servlets **Sling** vous permettent d’enregistrer votre servlet de la manière opposée. Plutôt que de vous adresser à une servlet et de spécifier le contenu dont vous souhaitez qu’elle effectue le rendu en fonction des paramètres de requête, vous devez aborder le contenu souhaité et spécifier la servlet qui doit effectuer le rendu du contenu en fonction des sélecteurs Sling.
+Les servlets **Sling** vous permettent d’enregistrer votre servlet de la manière opposée. Au lieu d’adresser un servlet et de spécifier le contenu que le servlet doit rendre en fonction des paramètres de requête, vous pouvez adresser le contenu de votre choix et spécifier le servlet qui doit effectuer le rendu du contenu en fonction des sélecteurs Sling.
 
 L’annotation SCR pour ce type de servlet doit ressembler à ce qui suit :
 
@@ -153,7 +153,7 @@ L’annotation SCR pour ce type de servlet doit ressembler à ce qui suit :
 @SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
-Dans ce cas, la ressource que l’URL adresse (une instance de la ressource `myPageType`) est accessible dans la servlet automatiquement. Pour y accéder, vous devez appeler :
+Dans ce cas, la ressource que l’URL adresse (une instance de la ressource `myPageType`) est accessible dans la servlet automatiquement. Pour y accéder, vous devez appeler :
 
 ```
 Resource myPage = req.getResource();
@@ -243,7 +243,7 @@ Voici un exemple de la manière dont ce problème se produit :
 
 Il existe plusieurs façons de configurer des règles de vidage du Dispatcher personnalisées qui mappent les URL plus courtes aux URL plus longues à des fins d’invalidation du cache.
 
-Cependant, il existe également un moyen plus simple de gérer cela :
+Cependant, il existe également un moyen plus simple de gérer cela :
 
 1. **Règles SlingResourceResolver**
 
@@ -267,7 +267,7 @@ Cependant, il existe également un moyen plus simple de gérer cela :
    * de `/content/my-brand/my-page.html`
    * en simplement `/my-page.html`
 
-   Cette est conforme à la pratique recommandée consistant à conserver les URL aussi courtes que possible.
+   Cela est conforme à la pratique recommandée consistant à conserver les URL aussi courtes que possible.
 
 1. **Mappage de la sortie d’URL sur les pages**
 
@@ -286,7 +286,7 @@ Cependant, il existe également un moyen plus simple de gérer cela :
 
 Jusqu’à présent, vous avez mis en œuvre des mappages avec la logique dans vos composants pour utiliser ces mappages lors de la génération des URL sur les pages.
 
-La gestion de ces URL raccourcies lorsqu’elles entrent dans le Dispatcher constitue la pièce finale du puzzle ; c’est là que `mod_rewrite` entre en jeu. L’utilisation de `mod_rewrite` est que les URL sont mappées à leur forme longue. *before* ils sont envoyés au module de Dispatcher. Cela signifie que le Dispatcher demande l’URL longue au serveur de publication et la met en cache en conséquence. Par conséquent, toutes les demandes de vidage du Dispatcher entrant à partir du serveur de publication invalideront correctement ce contenu.
+La gestion de ces URL raccourcies lorsqu’elles entrent dans le Dispatcher constitue la pièce finale du puzzle ; c’est là que `mod_rewrite` entre en jeu. L’utilisation de `mod_rewrite` a pour principal avantage que les URL sont mappées vers leur forme complète *avant* leur envoi au module de Dispatcher. Cela signifie que le Dispatcher demande l’URL longue au serveur de publication et la met en cache en conséquence. Par conséquent, toutes les demandes de vidage du Dispatcher entrant à partir du serveur de publication invalideront correctement ce contenu.
 
 Pour mettre en œuvre ces règles, vous pouvez ajouter des éléments `RewriteRule` sous votre hôte virtuel dans la configuration Apache HTTP Server. Si vous souhaitez développer les URL raccourcies de l’exemple précédent, vous pouvez mettre en œuvre une règle qui ressemble à ce qui suit :
 
@@ -301,7 +301,7 @@ Pour mettre en œuvre ces règles, vous pouvez ajouter des éléments `RewriteRu
 
 ### Balises d’URL canoniques {#canonical-url-tags}
 
-Les balises d’URL canoniques sont des balises de lien placées dans l’en-tête d’un document de HTML afin de clarifier la manière dont les moteurs de recherche doivent traiter une page lors de l’indexation du contenu. Elles présentent l’avantage de s’assurer qu’une page (et ses différentes versions) sera indexée comme étant la même, même si l’URL menant vers la page peut contenir des différences.
+Les balises d’URL canoniques sont des balises de lien placées dans l’en-tête d’un document HTML afin de clarifier la manière dont les moteurs de recherche doivent traiter une page lors de l’indexation du contenu. Elles présentent l’avantage de s’assurer qu’une page (et ses différentes versions) sera indexée comme étant la même, même si l’URL menant vers la page peut contenir des différences.
 
 Par exemple, si un site offre une version d’une page compatible avec les imprimantes, un moteur de recherche indexerait potentiellement cette page indépendamment de la version standard de la page. La balise canonique indique au moteur de recherche qu’elles sont identiques.
 
@@ -349,7 +349,7 @@ Disallow: /
 
 Sur un environnement de production, vous pouvez également choisir de désactiver certains chemins que vous ne voulez pas voir indexer.
 
-La mise en garde au moment de placer l’objet `robots.txt` à la racine du site, les requêtes de purge de Dispatcher peuvent effacer ce fichier et les mappages d’URL risquent de placer la racine du site à un autre emplacement que la balise `DOCROOT` comme défini dans la configuration Apache HTTP Server. Pour cette raison, il est courant de placer ce fichier sur l’instance de création à la racine du site et de le répliquer dans l’instance de publication.
+Lorsque vous placez le fichier `robots.txt` à la racine du site, il est possible que les requêtes de vidage du Dispatcher effacent ce fichier. Les mappages d’URL placeront alors probablement la racine du site à un emplacement différent du `DOCROOT`, comme défini dans la configuration Apache HTTP Server. Pour cette raison, il est courant de placer ce fichier sur l’instance de création à la racine du site et de le répliquer dans l’instance de publication.
 
 ### Création d’un plan de site XML sur AEM {#building-an-xml-sitemap-on-aem}
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-De plus, la fonctionnalité mise en œuvre pour les plans de site XML peut également être utilisée dans différents cas d’utilisation, par exemple pour ajouter le lien canonique ou des variantes linguistiques à l’en-tête d’une page. Voir [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) pour plus d’informations.
+De plus, la fonctionnalité mise en œuvre pour les plans de site XML peut également être utilisée dans différents cas d’utilisation, par exemple pour ajouter le lien canonique ou des variantes linguistiques à l’en-tête d’une page. Voir l’interface [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) pour plus d’informations.
 
 ### Création de redirections 301 pour les URL héritées {#creating-redirects-for-legacy-urls}
 
@@ -472,7 +472,7 @@ Veillez à consulter la section Ressources supplémentaires qui suit pour obteni
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour plus d’informations, voir les ressources supplémentaires suivantes :
+Pour plus d’informations, consultez les ressources supplémentaires suivantes :
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

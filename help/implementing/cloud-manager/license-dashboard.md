@@ -5,7 +5,7 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 Cloud Manager fournit un tableau de bord pour un affichage convivial des produits AEMaaCS disponibles pour votre entreprise ou vos clients.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Le tableau de bord de la licence Cloud Manager permet d’accéder facilement aux informations suivantes :
 
@@ -49,7 +49,7 @@ Chaque section résume ce qui est disponible et l’utilisation associée, le ca
 
 >[!TIP]
 >
->Voir [Présentation du Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour savoir comment gérer les droits de vos Adobes dans l’ensemble de votre organisation à partir de Admin Console.
+>Reportez-vous à la [vue d’ensemble d’Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour découvrir comment gérer vos droits Adobe dans l’ensemble de votre organisation à partir d’Admin Console.
 
 ## Foire aux questions {#faq}
 
@@ -79,13 +79,13 @@ Les requêtes de contenu présentent des écarts avec les outils de création de
 | Suites de rapports | Les pages qui font partie d’une même instance AEM et d’un même domaine peuvent envoyer des données à différentes suites de rapports Analytics. |
 | Outils de surveillance et de sécurité tiers | Les outils de surveillance et d’analyse de sécurité peuvent générer des demandes de contenu pour AEM qui ne sont pas suivies dans les rapports Analytics. |
 | Pré-récupérer des demandes | L’utilisation d’un service de pré-récupération pour précharger les pages afin d’augmenter la vitesse peut entraîner une augmentation significative du trafic de demandes de contenu. |
-| DDOS | Bien que Adobe fasse tout son possible pour détecter et filtrer automatiquement le trafic des attaques DDOS, il n’est pas garanti que toutes les attaques DDOS possibles soient détectées. |
+| DDOS | Bien qu’Adobe s’efforce de détecter et de filtrer automatiquement le trafic provenant des attaques DDOS, il n’existe aucune garantie que toutes les attaques DDOS possibles soient détectées |
 | Bloqueurs de trafic | L’utilisation d’un bloqueur de suivi dans un navigateur peut exclure certaines requêtes du suivi. |
 | Pare-feux | Les pare-feu peuvent bloquer le suivi Analytics. Cela est plus fréquent avec les pare-feu d’entreprise. |
 
 ### Comment en savoir plus sur le volume de ma requête de contenu ? {#current-request-volumes}
 
-Si vous souhaitez obtenir des informations supplémentaires sur le volume des requêtes de contenu affiché dans le tableau de bord des licences, votre équipe Adobe peut fournir un rapport qui indique les principaux facteurs de volume des requêtes de contenu. Contactez votre équipe d’Adobe ou l’assistance clientèle pour demander un rapport d’utilisation optimal.
+Si vous souhaitez obtenir des informations supplémentaires sur le volume des requêtes de contenu affiché dans le tableau de bord des licences, votre équipe Adobe peut fournir un rapport qui indique les principaux facteurs de volume des requêtes de contenu. Contactez votre équipe Adobe ou l’assistance clientèle d’Adobe pour demander un rapport sur l’utilisation optimale.
 
 ### Que se passe-t-il si j’utilise mon propre réseau CDN ? {#using-own-cdn}
 

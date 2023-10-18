@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 73%
+ht-degree: 84%
 
 ---
 
@@ -32,18 +32,18 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 
 >[!NOTE]
 >
->AEM version 6.4 a atteint la fin de la prise en charge étendue. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=en).
+>La prise en charge avancée d’AEM version 6.4 est terminée. Pour plus d’informations, voir nos [périodes d’assistance technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Recherchez les versions prises en charge [ici](https://experienceleague.adobe.com/docs/?lang=fr).
 
 
 >[!IMPORTANT]
 >
->Adobe vous recommande [mise à niveau vers la dernière version 1.9.14](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe vous recommande d’effectuer une [mise à niveau vers la dernière version 1.9.14](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problèmes connus {#known-issues}
 
 * Lors de la configuration de dossiers liés à un projet avec AEM 6.4, Experience Manager n’enregistre pas les valeurs pour les champs **[!UICONTROL Sous-dossiers]** et **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]**. La valeur du champ de **[!UICONTROL sous-dossiers]** est remplacé par **[!UICONTROL indéfini]** et la valeur du champ **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]** est remplacé par **[!UICONTROL Portfolio par défaut]** automatiquement après l’enregistrement de la configuration.
 
-* Lorsque vous utilisez l’expérience Workfront classique, l’option **[!UICONTROL Envoyer à]** disponible dans la liste déroulante **[!UICONTROL Plus]** ne vous permet pas de sélectionner la destination cible dans Experience Manager. La variable **[!UICONTROL Envoyer à]** fonctionne correctement avec l’option **[!UICONTROL Actions de document]** liste déroulante. La variable **[!UICONTROL Envoyer à]** fonctionne correctement pour **[!UICONTROL Plus]** et la liste déroulante **[!UICONTROL Actions de document]** liste déroulante disponible dans la nouvelle expérience Workfront.
+* Lorsque vous utilisez l’expérience Workfront classique, l’option **[!UICONTROL Envoyer à]** disponible dans la liste déroulante **[!UICONTROL Plus]** ne vous permet pas de sélectionner la destination cible dans Experience Manager. L’option **[!UICONTROL Envoyer à]** fonctionne correctement avec la liste déroulante **[!UICONTROL Actions de document]**. L’option **[!UICONTROL Envoyer à]** fonctionne correctement pour la liste déroulante **[!UICONTROL Plus]**. La liste déroulante **[!UICONTROL Actions de document]** est disponible dans la nouvelle expérience Workfront.
 
 ## Versions précédentes {#previous-releases}
 
@@ -63,7 +63,7 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 
 ### Version de juin 2023 {#june-2023-release}
 
-* Lorsque vous avez configuré la mise en réseau avancée, des problèmes se produisent lors de l’envoi de contenu d’Adobe Workfront vers AEM as a Cloud Service.
+* Lorsque vous avez configuré la mise en réseau avancée, des problèmes se produisent lors de l’envoi de contenu d’Adobe Workfront vers AEM as a Cloud Service.
 
 
 ### Version de mai 2023 {#may-2023-release}
@@ -165,7 +165,7 @@ La version 1.9.5 de [!DNL Workfront for Experience Manager enhanced connector] 
 
 La version 1.9.4 de [!DNL Workfront for Experience Manager enhanced connector], publiée le 7 octobre, comprend les mises à jour suivantes :
 
-* Impossible d’afficher l’onglet Abonnements à un événement sur la page de configuration du connecteur améliorée en raison de nombreux événements.
+* Impossible d’afficher l’onglet Abonnements aux événements sur la page de configuration du connecteur améliorée en raison de nombreux événements.
 
 * Workfront ne parvient pas à récupérer la liste des dossiers existants dans un projet, ce qui entraîne la création de dossiers en double.
 
@@ -173,7 +173,7 @@ La version 1.9.4 de [!DNL Workfront for Experience Manager enhanced connector],
 
 La version 1.9.3 de [!DNL Workfront for Experience Manager enhanced connector], publiée le 16 septembre, comprend les mises à jour suivantes :
 
-* Impossible de charger un fichier de plus de 8 Go.
+* Impossible de charger un fichier de plus de 8 Go.
 * Problèmes lors de la publication automatique de ressources envoyées depuis Workfront vers AEM.
 * Le champ Chemin d’accès racine n’est pas disponible pour le champ Balises lors de la modification d’un formulaire de schéma de métadonnées par défaut.
 * Problèmes lors de l’ajout de nouvelles versions dans Workfront à l’aide de workflows AEM.
@@ -204,7 +204,7 @@ La version 1.9.1 de [!DNL Workfront for Experience Manager enhanced connector] 
 
 [!DNL Workfront for Experience Manager enhanced connector] comprend désormais les mises à jour suivantes :
 
-* Lorsque vous effectuez un téléchargement via un dossier lié ou que vous utilisez le `Send To` action disponible dans Workfront pour charger des ressources vers Experience Manager as a Cloud Service, les ressources sont corrompues et ne peuvent pas être ouvertes dans Adobe Photoshop.
+* Lorsque vous effectuez un chargement via un dossier lié ou que vous utilisez l’action `Send To` disponible dans Workfront pour charger des ressources vers Experience Manager as a Cloud Service, les ressources sont endommagées et ne peuvent pas être ouvertes dans Adobe Photoshop.
 
 ### Version de mars 2022 {#march-2022-release}
 

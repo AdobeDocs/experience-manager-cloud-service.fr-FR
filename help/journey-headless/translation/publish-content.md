@@ -5,7 +5,7 @@ exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1389'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Votre contenu découplé traduit est maintenant publié ! Il peut désormais ê
 >
 >Vous pouvez sélectionner plusieurs éléments (c’est-à-dire plusieurs dossiers de langues) lors de la publication afin de publier plusieurs traductions à la fois.
 
-D’autres options s’offrent à vous lors de la publication de votre contenu, telles que la planification d’une heure de publication, mais elles dépassent la portée de ce parcours. Voir [Ressources supplémentaires](#additional-resources) à la fin du document pour plus d’informations.
+D’autres options s’offrent à vous lors de la publication de votre contenu, telles que la planification d’une heure de publication, mais elles dépassent la portée de ce parcours. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin du document pour obtenir plus d’informations.
 
 ## Mise à jour de votre contenu traduit {#updating-translations}
 

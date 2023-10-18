@@ -5,13 +5,13 @@ exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Composants composites dans les SPA {#composite-components-in-spas}
 
-Les composants composites utilisent la nature modulaire des composants AEM en combinant plusieurs composants de base en un seul composant. Le cas d’utilisation courant d’un composant composite est celui du composant de carte, composé d’une combinaison des composants image et texte.
+Les composants composites exploitent la nature modulaire des composants AEM en combinant plusieurs composants de base pour en constituer un seul. Le cas d’utilisation courant d’un composant composite est celui du composant de carte, composé d’une combinaison des composants image et texte.
 
 Lorsque les composants composites sont correctement implémentés dans la structure de l’éditeur d’application d’une seule page (SPA) d’AEM, les auteurs de contenu peuvent effectuer un glisser-déposer de ces composants comme s’ils le feraient pour d’autres, tout en ayant la possibilité de modifier individuellement chaque constituant du composant composite.
 
@@ -19,7 +19,7 @@ Cet article explique comment ajouter un composant composite à votre application
 
 ## Cas d’utilisation {#use-case}
 
-Cet article utilise le composant de carte type comme cas d’utilisation. Les cartes sont des éléments d’interface utilisateur courants pour de nombreuses expériences digitales. Elles sont généralement constituées d’une image et de texte ou d’une légende associés. Un auteur souhaite pouvoir faire glisser et déposer l’ensemble de la carte, mais il peut modifier individuellement l’image de la carte et personnaliser le texte associé.
+Cet article utilise le composant de carte type comme cas d’utilisation. Les cartes sont des éléments d’interface utilisateur courants pour de nombreuses expériences digitales. Elles sont généralement constituées d’une image et de texte ou d’une légende associés. La personne chargée de créer du contenu souhaite pouvoir faire un glisser-déposer de l’ensemble de la carte, mais aussi modifier individuellement l’image de la carte et personnaliser le texte associé.
 
 ## Prérequis {#prerequisites}
 
@@ -56,7 +56,7 @@ Commencez par créer les composants qui constitueront le composant composite, c�
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-Le composant de texte est similaire à ce qui suit.
+Le composant de texte ressemble à ce qui suit.
 
 ```javascript
 import React from 'react';
@@ -118,7 +118,7 @@ function Home() {
 }
 ```
 
-Un espace réservé vide s’affiche alors pour un texte et une image dans l’éditeur. Lors de la saisie de valeurs pour ces éléments à l’aide de l’éditeur, ils sont stockés dans le chemin de page spécifié, à savoir : `/content/wknd-spa/home`  au niveau racine avec les noms spécifiés dans `itemPath`.
+Un espace réservé vide s’affiche alors pour un texte et une image dans l’éditeur. Lors de la saisie de valeurs pour ces éléments à l’aide de l’éditeur, elles sont stockées selon le chemin de page spécifié, c’est-à-dire `/content/wknd-spa/home` ,au niveau racine avec les noms spécifiés dans `itemPath`.
 
 ![Composant de carte composite dans l’éditeur](assets/composite-card.png)
 

@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
@@ -32,45 +32,45 @@ ht-degree: 41%
 
 ## Créer un modèle {#create-model}
 
-La console de modèles de fragments de contenu s’ouvre dans un nouvel onglet. Considérez la console de modèle de fragment de contenu comme votre bibliothèque de modèles, dans laquelle vous créez des modèles et gérez les modèles existants.
+La console de modèles de fragments de contenu s’ouvre dans un nouvel onglet. Considérez la console de modèles de fragments de contenu comme votre bibliothèque de modèles, dans laquelle vous créez de nouveaux modèles et gérez les modèles existants.
 
-Par exemple, vous créez un modèle qui représente la structure de données d’un voyage présenté sur un site Web de voyage. Un voyage utilisant ce modèle est appelé **Adventure**.
+Dans cet exemple, vous allez créer un modèle qui représente la structure de données d’un voyage présenté sur un site web de voyage. Un voyage utilisant ce modèle est appelé **Aventure**.
 
 1. Dans le coin supérieur droit de l’écran, cliquez sur **Créer** pour commencer à créer un modèle de fragment de contenu.
 
-1. L’assistant Créer un modèle vous guide tout au long de la création de votre modèle. Fournissez les informations requises.
+1. L’assistant de création de modèles vous guide tout au long du processus de création. Fournissez les informations requises.
 
-   * **Titre du modèle** - Une brève étiquette du modèle et indique généralement l’objectif du modèle. Vous pouvez appeler le nouveau modèle. `Adventure`.
+   * **Titre du modèle** : libellé court du modèle indiquant généralement l’objectif du modèle. Vous pouvez appeler le nouveau modèle `Adventure`.
    * **Activer le modèle** : cette option est activée par défaut et doit être cochée pour pouvoir créer des fragments de contenu basés sur ce modèle.
 
-1. Une fois les champs obligatoires renseignés, cliquez sur **Créer** en haut à droite pour créer le modèle.
+1. Une fois les champs obligatoires remplis, cliquez sur **Créer** en haut à droite pour créer le modèle.
 
-1. Le **Succès** confirme la création du modèle. Cliquez sur **Ouvrir** dans la boîte de dialogue afin que vous puissiez ouvrir votre nouveau modèle de fragment de contenu dans l’éditeur d’un nouvel onglet. Passez ensuite à l’étape suivante pour ajouter des champs de données à votre modèle.
+1. La boîte de dialogue **Succès** confirme la création du modèle. Cliquez sur **Ouvrir** dans la boîte de dialogue pour ouvrir votre nouveau modèle de fragment de contenu dans l’éditeur, dans un nouvel onglet. Passez ensuite à l’étape suivante qui consiste à ajouter des champs de données à votre modèle.
 
-![Étapes 2 et 3 de la création d’un modèle de fragment de contenu.](assets/do-not-localize/create-model.png)
+![Étapes 2 et 3 de la création d’un modèle de fragment de contenu](assets/do-not-localize/create-model.png)
 
 ## Utilisation de l’éditeur de modèles {#configure-model}
 
-Vous avez maintenant un modèle appelé **Adventure**, mais il ne contient aucun détail tel que la durée, la destination et les activités. Avant de pouvoir utiliser votre modèle, vous devez définir la structure de ses données.
+Nous avons maintenant un modèle appelé **Aventure**, mais il ne contient aucun détail, tel que la durée, la destination ou les activités. Avant de pouvoir utiliser votre modèle, vous devez définir la structure de ses données.
 
 L’éditeur de modèles de fragments de contenu vous permet de configurer les types de données et les propriétés qui définissent le contenu de votre modèle.
 
 >[!TIP]
 >
->Il est important de suivre les schémas de nommage dans les instructions suivantes, car ces noms spécifiques sont référencés dans les modules ultérieurs.
+>Il est important de suivre les schémas de dénomination dans les instructions suivantes, car nous allons nous référer à ces noms spécifiques dans les modules ultérieurs.
 
 1. Faites glisser un **champ de texte monoligne** depuis le panneau **Types de données** à droite de l’éditeur et déposez-le sur votre modèle de fragment de contenu.
 
-1. Une fois un type de données placé, la variable **Types de données** remplacée automatiquement par **Propriétés** vous permettant de définir les détails du type de données que vous avez placé. Pour ce premier champ, vous souhaitez stocker le titre du voyage ou de l’aventure. Saisissez les propriétés suivantes :
+1. Une fois un type de données placé, la colonne **Types de données** est automatiquement remplacée par l’onglet **Propriétés** vous permettant de définir les détails du type de données que vous venez de placer. Pour ce premier champ, nous allons stocker le titre du voyage ou de l’aventure. Saisissez les propriétés suivantes :
 
-   * **Render As :** **Champ de texte** - Lorsque vous créez une aventure, ce champ stocke le titre de l’aventure.
-   * **Libellé du champ :** `Title` - Libellé affiché pour ce champ lors de la création d’une aventure.
+   * **Rendre en tant que :** **Champ de texte** - Lorsque vous créez une aventure, ce champ stocke le titre de l’aventure.
+   * **Libellé du champ :** `Title` - Le libellé affiché pour ce champ lors de la création d’une aventure.
 
-1. Après avoir défini les propriétés du champ, vous pouvez revenir au **Types de données** dans le panneau de droite et ajoutez des champs supplémentaires en les faisant glisser et en les déposant.
+1. Une fois les propriétés du champ définies, vous pouvez revenir à l’onglet **Types de données** dans le panneau de droite et ajouter des champs supplémentaires en procédant par glisser-déposer.
 
-Ainsi, vous pouvez ajouter autant de champs que nécessaire à votre modèle pour prendre en charge la structure de données dont vous avez besoin. Les types de champs de données varient, mais le processus de leur ajout à votre modèle reste le même.
+Ainsi, vous pouvez ajouter autant de champs que nécessaire à votre modèle pour prendre en charge le type de structure de données dont vous aurez besoin. Les types de champs de données varient, mais le processus de leur ajout à votre modèle reste le même.
 
-Passez à la section suivante afin de pouvoir ajouter les champs nécessaires pour renseigner et enregistrer le **Adventure** model
+Passez à la section suivante pour ajouter les champs nécessaires pour compléter et enregistrer le modèle **Aventure**
 
 ![Étapes 1, 2 et 3 de l’ajout de champs au modèle.](assets/do-not-localize/define-model-fields.png)
 
@@ -84,20 +84,20 @@ Vous avez déjà un champ pour le titre de l’aventure. Vous devez maintenant a
 
 Suivez les mêmes étapes que ci-dessus pour ajouter ces champs supplémentaires. La seule différence réside dans les propriétés que vous devez définir.
 
-1. Ajoutez un champ afin de stocker la description de l’aventure en faisant glisser un élément **Texte multi-lignes** et saisissez les propriétés suivantes :
+1. Ajoutez un champ pour stocker la description de l’aventure en faisant glisser et en déposant un champ de **texte multi-lignes** et saisissez les propriétés suivantes :
 
-   * **Render As :** **Zone de texte** - Lorsque vous créez une aventure, ce champ contient une brève description du voyage.
-   * **Libellé du champ :** `Description` - Libellé affiché pour ce champ lors de la création d’une aventure.
+   * **Rendre en tant que :** **Zone de texte** - Lorsque vous créez une aventure, ce champ stocke une brève description du voyage.
+   * **Libellé du champ :** `Description` - Libellé affiché pour ce champ lors de la création d’une aventure.
 
-1. Ajoutez un champ afin de stocker le prix de l’aventure en faisant glisser un **Texte sur une seule ligne** et saisissez les propriétés suivantes :
+1. Ajoutez un champ pour stocker le prix de l’aventure en faisant glisser et en déposant un champ de **texte monoligne** et saisissez les propriétés suivantes :
 
-   * **Render As :** **Champ de texte** - Lorsque vous créez une aventure, ce champ stocke le prix du voyage.
-   * **Libellé du champ :** `Price` - Libellé affiché pour ce champ lors de la création d’une aventure.
+   * **Rendre en tant que :** **Champ de texte** - Lorsque vous créez une aventure, ce champ stocke le prix du voyage.
+   * **Libellé du champ :** `Price` - Le libellé affiché pour ce champ lors de la création d’une aventure.
 
-1. Ajoutez un champ afin de stocker une image représentant le voyage. Les images dans AEM sont stockées sous la forme d’un autre type de contenu appelé **Ressources**. Pour créer un champ à leur intention, vous devez faire glisser et déposer un **Référence de contenu** qui fait référence à la ressource de l’image.
+1. Ajoutez un champ pour stocker une image représentant le voyage. Les images dans AEM sont stockées sous la forme d’un autre type de contenu appelé **Ressources**. Pour créer un champ à leur intention, vous devez faire glisser et déposer un champ de **référence de contenu** qui fait référence à la ressource de l’image.
 
-   * **Render As :** **Référence de contenu** - Lorsque vous créez une aventure, ce champ pointe vers la ressource image qui représente ce voyage.
-   * **Libellé du champ :** `Image` - Libellé affiché pour ce champ lors de la création d’une aventure.
+   * **Rendre en tant que :** **Référence de contenu** - Lorsque vous créez une aventure, ce champ pointe vers la ressource de l’image qui représente ce voyage.
+   * **Libellé du champ :** `Image` - Le libellé affiché pour ce champ lors de la création d’une aventure.
 
 1. Après avoir ajouté les champs nécessaires au modèle de fragment de contenu, dans le coin supérieur droit de la fenêtre, cliquez sur **Enregistrer**.
 

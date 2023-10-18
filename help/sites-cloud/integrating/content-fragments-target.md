@@ -5,7 +5,7 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2231'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ Avant d’exporter un fragment, vous devez ajouter la **configuration cloud** po
 * sélectionner un espace de travail Target comme destination ;
 * sélectionner un domaine d’externaliseur pour réécrire des références dans le fragment de contenu (facultatif).
 
-Les options requises peuvent être sélectionnées dans **Propriétés de la page** du dossier, du fragment ou des deux ; la spécification est héritée si nécessaire.
+Vous pouvez sélectionner les options obligatoires dans les **propriétés de page** du dossier et/ou du fragment concerné. La spécification est héritée, le cas échéant.
 
 1. Accédez à la console **Ressources**.
 
@@ -175,7 +175,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
    * **Identifiant du client** : l’identifiant du client
 
-   * **Configuration IMS**: sélectionnez la configuration requise dans la liste déroulante.
+   * **Configuration IMS** : sélectionnez la configuration requise dans la liste déroulante
 
    * **Type d’API** : par défaut : REST (XML est obsolète)
 
@@ -338,9 +338,9 @@ Pour exporter un fragment de contenu d’AEM vers Target (après avoir spécifi�
 
    >[!NOTE]
    >
-   >Les actions affichées dépendent de l’état de votre fragment et des ressources associées.
+   >Les actions affichées dépendent du statut de votre fragment et des ressources associées.
    >
-   >Si tout a déjà été publié et que rien n’a été modifié depuis, cette étape est dépassée.
+   >Si tout a déjà été publié et que rien n’a été modifié depuis, cette étape est ignorée.
 
    >[!NOTE]
    >

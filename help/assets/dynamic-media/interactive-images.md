@@ -8,7 +8,7 @@ exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4176'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il 
 
 
 
-Le tutoriel permet d’illustrer les étapes de l’intégration d’images interactives à votre propre site web.
+Le tutoriel permet d’illustrer les étapes d’intégration de vidéos interactives à votre site web.
 
 Étapes des images interactives :
 
@@ -100,11 +100,11 @@ Vous trouvez maintenant l’URL Ajax d’aperçu rapide dans le journal réseau.
 
 Au cours de ce processus, il est important de parcourir différentes zones de votre site web, avec différentes catégories et types de produits. En effet, les URL d’aperçu rapide peuvent comporter des parties communes pour une catégorie donnée du site web. Cependant, elles ne changent que si vous visitez une autre zone du site web.
 
-Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est le SKU du produit. Dans ce cas, la valeur de SKU est la seule donnée dont vous avez besoin pour ajouter des zones réactives à l’image de bannière.
+Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est le SKU du produit. Dans ce cas, la valeur du code SKU est la seule donnée dont vous avez besoin pour ajouter des zones réactives ou des zones cliquables à l’image de bannière.
 
 Toutefois, dans des cas complexes, l’URL d’aperçu rapide comporte différents éléments variables en plus du SKU. Par exemple, les éléments variables peuvent inclure l’ID de catégorie, le code couleur et le code de taille. Dans ce cas, chaque élément est une variable distincte dans votre définition de données d’images interactives dans la fonctionnalité d’image interactive publicitaire d’Experience Manager Assets.
 
-Examinez les exemples suivants d’URL d’aperçu rapide et les variables de zone réactive qui en résultent :
+Consultez les exemples d’URL d’aperçu rapide et les variables de zone réactive qui en résultent ci-dessous :
 
 <table>
   <tbody>
@@ -186,7 +186,7 @@ Une fois que vous avez enregistré le paramètre prédéfini de visionneuse, il 
 
 1. Dans le menu déroulant Type de média enrichi, sélectionnez **[!UICONTROL Image interactive]**.
 1. Sélectionnez **[!UICONTROL Créer]**.
-1. Sur la page Modifier le paramètre prédéfini de la visionneuse, appuyez sur le **[!UICONTROL Apparence]** .
+1. Sur la page Modifier le paramètre prédéfini de la visionneuse, sélectionnez l’onglet **[!UICONTROL Aspect]**.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour télécharger votre propre image de zone réactive à utiliser sur des images, appuyez sur l’icône Sélecteur de ressources. Dans la page Sélectionner le contenu, accédez à l’image de zone réactive que vous souhaitez utiliser et sélectionnez-la. Sélectionnez l’icône représentant une coche dans le coin supérieur droit.
@@ -216,7 +216,7 @@ Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l�
 
 Vous pouvez ajouter des zones réactives à une bannière d’image à l’aide de l’éditeur dans la page Gestion des zones réactives.
 
-Lorsque vous ajoutez des zones réactives, vous pouvez les définir comme un affichage contextuel d’aperçu rapide, comme lien hypertexte ou comme fragment d’expérience.
+Lorsque vous ajoutez des zones réactives, vous pouvez les définir comme un écran pop-up d’aperçu rapide, un lien hypertexte ou un fragment d’expérience.
 
 Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
@@ -244,7 +244,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
 
 **Pour ajouter des zones réactives à une bannière d’image :**
 
-1. Dans la vue Ressources, accédez à la bannière d’image que vous souhaitez rendre interactive.
+1. Dans la vue Ressources, accédez à la bannière d’image que vous avez chargée et que vous souhaitez rendre interactive.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pointez sur l’image, puis appuyez sur la touche **[!UICONTROL Sélectionner]** (icône de coche). Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
@@ -254,9 +254,9 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
    * Pour l’ouvrir dans la page Affichage des détails, appuyez sur l’image. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
 
 1. Près du coin supérieur gauche de la page, appuyez sur **[!UICONTROL Ajouter une zone réactive]** (icône d’appui à l’aide du doigt) pour ouvrir la page de gestion des zones réactives.
-1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Zone réactive]**.
+1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Zone réactive]**.
 
-   1. Dans le coin supérieur gauche de la page Gestion des zones réactives, appuyez sur **[!UICONTROL Zone réactive]**.
+   1. Dans le coin supérieur gauche de la page Gestion des zones réactives, sélectionnez **[!UICONTROL Zone réactive]**.
    1. Sur l’image, appuyez sur un emplacement où vous souhaitez que la zone réactive s’affiche. Si nécessaire, faites glisser la zone réactive pour en ajuster l’emplacement. Vous pouvez également utiliser les touches fléchées du clavier pour contrôler la position d’une zone réactive sélectionnée.
    1. Ajoutez des zones réactives supplémentaires si nécessaire en répétant les étapes a et b.
    1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis appuyez sur **[!UICONTROL Supprimer]** (l’icône corbeille) sous l’en-tête **[!UICONTROL Zone réactive]**.
@@ -276,7 +276,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
    * Sélectionnez **[!UICONTROL Lien hypertexte]**.
 
       * Si vous êtes un client Experience Manager Sites, appuyez sur l’icône du Sélecteur de site (dossier). Accédez à une URL. La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-      * Si vous êtes un client ou une cliente autonome de , dans le champ de texte HREF, spécifiez le chemin URL complet vers une page web liée.
+      * Si vous êtes un client ou une cliente autonome, dans le champ de texte HREF, spécifiez le chemin URL complet vers une page web liée.
 
    Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur (paramètre par défaut recommandé) ou dans le même onglet.
 
@@ -360,7 +360,7 @@ Voir l’attribut de configuration [ZoomView.iscommand](https://experienceleague
 
 Voir la commande de service d’images [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=fr).
 
-Vous êtes maintenant prêt à intégrer l’image interactive à un aperçu rapide existant sur votre site web.
+Vous pouvez désormais intégrer l’image interactive à un aperçu rapide existant de votre site web.
 
 ## Intégration d’une image interactive dans un aperçu rapide existant {#integrating-an-interactive-image-with-an-existing-quickview}
 
@@ -386,8 +386,8 @@ Lorsque l’image interactive shoppable remplace l’étape 1 et partiellement 
 
 Dans ce type de gestionnaire d’événements, le code en front-end effectue les opérations suivantes :
 
-* Écoute un événement émis par l’image interactive Shoppable.
-* Construit une URL d’aperçu rapide basée sur les données de zone réactive.
+* Il écoute un événement émis par l’image interactive d’achat.
+* Il construit une URL d’aperçu rapide en fonction des données de la zone réactive.
 * Il déclenche le processus de chargement de l’aperçu rapide depuis le serveur principal et en effectue le rendu à l’écran.
 
 Le code intégré renvoyé par Experience Manager comporte déjà un descripteur d’événement prêt à l’emploi, qui est commenté, comme vous pouvez le constater, dans le fragment de code mis en surbrillance ci-dessous :
@@ -451,9 +451,9 @@ En utilisant nos exemples précédents d’URL d’aperçu rapide, vous pouvez v
  </tbody>
 </table>
 
-La dernière étape pour déclencher l’URL d’aperçu rapide et activer le panneau d’aperçu rapide nécessite l’assistance d’un informaticien compétent de votre service informatique. Celui-ci sait comment déclencher précisément l’implémentation de l’aperçu rapide à l’aide de l’étape appropriée, avec une URL d’aperçu rapide prête à l’emploi.
+La dernière étape pour déclencher l’URL d’aperçu rapide et activer le panneau d’aperçu rapide nécessite l’assistance d’un informaticien compétent de votre service informatique. Cette personne sait comment déclencher précisément l’implémentation de l’aperçu rapide à l’aide de l’étape appropriée, avec une URL d’aperçu rapide prête à l’emploi.
 
-Vous pouvez découvrir comment ces étapes sont appliquées au site web de démonstration pour l’intégration complète d’une image interactive publicitaire avec le code d’aperçu rapide. Auparavant, la structure de l’URL d’aperçu rapide était identifiée comme suit :
+Vous pouvez découvrir comment ces étapes sont appliquées au site web de démonstration pour l’intégration complète d’une image interactive publicitaire avec le code d’aperçu rapide. Plus tôt, la structure de l’URL de l’aperçu rapide a été identifiée comme suit :
 
 ```xml {.line-numbers}
 /datafeed/$categoryId$-$SKU$.json

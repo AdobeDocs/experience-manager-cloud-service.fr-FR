@@ -5,7 +5,7 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 79%
+ht-degree: 99%
 
 ---
 
@@ -27,8 +27,8 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
 1. Selon que des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
 
-   * **Associer du contenu** : il s’agit de la première collection associée.
-   * **Associer la collection** - les collections associées sont déjà configurées
+   * **Associer le contenu** : il s’agit de la première collection associée
+   * **Associer la collection** : les collections associées sont déjà configurées
 
 1. Sélectionnez la collection requise.
 
@@ -42,9 +42,9 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
 ## Modification du contenu associé {#editing-associated-content}
 
-Une fois que vous avez associé une collection, vous pouvez :
+Une fois que vous avez associé une collection, vous pouvez :
 
 * **Supprimer** l’association.
-* **Ajouter des ressources** à la collection.
-* Sélectionnez une ressource pour effectuer d’autres actions.
-* Modifiez la ressource.
+* **Ajouter de ressources** à la collection.
+* Sélectionner une ressource pour effectuer d’autres actions.
+* Modifier la ressource.

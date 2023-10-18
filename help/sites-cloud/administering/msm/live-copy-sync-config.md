@@ -7,7 +7,7 @@ exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
 workflow-type: tm+mt
 source-wordcount: '2426'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Cette section contient des informations sur les configurations du déploiement i
 
 ### Déclencheurs de déploiement {#rollout-triggers}
 
-Chaque configuration du déploiement utilise un déclencheur qui entraîne la survenue du déploiement. Les configurations de déploiement peuvent utiliser l’un des déclencheurs suivants :
+Chaque configuration du déploiement utilise un déclencheur qui entraîne la survenue du déploiement. Les configurations de déploiement peuvent utiliser l’un des déclencheurs suivants :
 
 * **En cas de déploiement** : la commande **Déploiement** est utilisée dans la page Plan directeur ou la commande **Synchroniser** est utilisée dans la page Live Copy.
 * **En cas de modification** : la page source est modifiée.
@@ -68,7 +68,7 @@ Si les actions installées ne répondent pas à vos exigences, vous pouvez [cré
 | `contentDelete` | Cette action supprime les nœuds de la Live Copy qui n’existent pas sur la source. [Configurez le service **CQ MSM Content Delete Action**](#excluding-properties-and-node-types-from-synchronization) pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. |  |
 | `contentUpdate` | Cette action met à jour le contenu de la Live Copy avec les modifications provenant de la source. [Configurez le service **CQ MSM Content Update Action**](#excluding-properties-and-node-types-from-synchronization) pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. |  |
 | `editProperties` | Cette action modifie les propriétés de la Live Copy. La propriété `editMap` détermine les propriétés modifiées et leur valeur. La valeur de la propriété `editMap` doit utiliser le format suivant : <br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` et `new_value` sont des expressions régulières et `n` est un entier incrémenté.<br>Par exemple, tenez compte de la valeur suivante pour `editMap` :<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Cette valeur modifie les propriétés des nœuds Live Copy comme suit : <br>Les propriétés `sling:resourceType` qui sont définies sur `contentpage` ou sur `homepage` sont configurées sur `mobilecontentpage`.<br>Les propriétés `cq:template` qui sont définies sur `contentpage` sont configurées sur `mobilecontentpage`. | `editMap: (String)` identifie la propriété, la valeur actuelle et la nouvelle valeur. Pour plus d’informations, voir la description. |
-| `notify` | Cette action envoie un événement de page que la page a déployé. Pour être averti, vous devez d’abord vous abonner aux événements de déploiement. |  |
+| `notify` | Cette action envoie un événement de page que la page a déployé. Pour recevoir une notification, la personne utilisatrice doit d’abord s’abonner aux événements de déploiement. |  |
 | `orderChildren` | Cette action commande les nœuds enfants en fonction du plan directeur. |  |
 | `referencesUpdate` | Cette action de synchronisation met à jour les références sur la Live Copy.<br>Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy. Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées. <br>[Configurez le service **CQ MSM References Update Action**](#excluding-properties-and-node-types-from-synchronization) pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. |  |
 | `targetVersion` | Cette action crée une version de la Live Copy.<br>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement. |  |
@@ -97,7 +97,7 @@ Vous pouvez configurer différents services OSGi qui prennent en charge les act
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
-Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier les nœuds à exclure. Le tableau fournit les noms des services à configurer à l’aide de la console web et du PID pour la configuration à l’aide d’un noeud de référentiel.
+Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier les nœuds à exclure. Le tableau fournit les noms des services à configurer à l’aide de la console web et le PID pour la configuration à l’aide d’un nœud de référentiel.
 
 | Action de synchronisation | Nom de service dans la console web | PID de service |
 |---|---|---|
@@ -118,9 +118,9 @@ Le tableau ci-dessous décrit les propriétés que vous pouvez configurer :
 
 #### CQ MSM Content Update Action – Exclusions {#cq-msm-content-update-action-exclusions}
 
-Plusieurs propriétés et types de noeud sont exclus par défaut. Ils sont définis dans la configuration OSGi de **Action de mise à jour du contenu CQ MSM**, sous **Propriétés de page exclues**.
+Plusieurs propriétés et types de nœud sont exclus par défaut. Ils sont définis dans la configuration OSGi de **Action de mise à jour du contenu CQ MSM**, sous **Propriétés de page exclues**.
 
-Par défaut, les propriétés correspondant aux expressions régulières suivantes sont exclues (c’est-à-dire, non mises à jour) au moment du déploiement :
+Par défaut, les propriétés correspondant aux expressions régulières suivantes sont exclues (c’est-à-dire, non mises à jour) au moment du déploiement :
 
 ![Expressions régulières à exclure des Live Copies](../assets/live-copy-exclude.png)
 
@@ -136,7 +136,7 @@ Vous pouvez configurer différents services OSGi qui prennent en charge les act
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
-Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier la mise à jour des références. Le tableau fournit les noms des services à configurer à l’aide de la console web et du PID pour la configuration à l’aide d’un noeud de référentiel.
+Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier la mise à jour des références. Le tableau fournit les noms des services à configurer à l’aide de la console web et le PID pour la configuration à l’aide d’un nœud de référentiel.
 
 | Propriété de la console web | Propriété OSGi | Description |
 |---|---|---|
@@ -154,7 +154,7 @@ La liste ci-après des emplacements où vous pouvez spécifier les configuration
 * **Propriétés des pages parentes Live Copy** : lorsque ni la page Live Copy ni la page source du plan directeur ne sont configurées avec une configuration de déploiement, c’est la configuration du déploiement qui s’applique à la page parente de la page Live Copy qui est utilisée.
 * **[Valeurs système par défaut](live-copy-sync-config.md#setting-the-system-default-rollout-configuration) :** lorsque la configuration du déploiement de la page parente de la Live Copy ne peut pas être déterminée, c’est la configuration du déploiement des valeurs système par défaut qui est utilisée.
 
-Par exemple, un plan directeur utilise le site [Tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comme contenu source. Un site est créé à partir du plan directeur. Chaque élément de la liste suivante décrit un scénario différent concernant l’utilisation des configurations de déploiement :
+Par exemple, un plan directeur utilise le site [Tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comme contenu source. Un site est créé à partir du plan directeur. Chaque élément de la liste suivante décrit un scénario différent concernant l’utilisation des configurations de déploiement :
 
 * Aucune des pages de plan directeur ou des pages Live Copy n’est configurée pour utiliser une configuration du déploiement. MSM utilise la configuration du déploiement système par défaut pour toutes les pages Live Copy.
 * La page principale du site WKND est configurée avec plusieurs configurations de déploiement. MSM utilise ces configurations de déploiement pour toutes les pages Live Copy.
@@ -176,7 +176,7 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
 1. Si nécessaire, ajustez l’indicateur **Héritage de Live Copy**. Si cette option est activée, la configuration de Live Copy est effective sur tous les enfants.
 
-1. Effacez la variable **Hériter de la configuration de déploiement du parent** , puis sélectionnez une ou plusieurs configurations de déploiement dans la liste.
+1. Effacez la variable **Hériter de la configuration de déploiement du parent**, puis sélectionnez une ou plusieurs configurations de déploiement dans la liste.
 
    Les configurations de déploiement sélectionnées s’affichent sous la liste déroulante.
 
@@ -188,12 +188,12 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
 Configurez une page de plan directeur avec les configurations de déploiement à utiliser lorsque la page de plan directeur est déployée.
 
-Notez que les pages enfants de la page de plan directeur héritent de la configuration. Lorsque vous configurez la configuration de déploiement à utiliser, vous pouvez remplacer la configuration que la page hérite de son parent.
+Notez que les pages enfants de la page de plan directeur héritent de la configuration. Lorsque vous configurez la configuration du déploiement à utiliser, vous risquez de remplacer la configuration qui a été héritée par la page de son parent.
 
 1. Utilisez la console **Sites** pour sélectionner la page racine du plan directeur.
 1. Sélectionnez **Propriétés** dans la barre d’outils.
 1. Ouvrez l’onglet **Plan directeur**.
-1. Sélectionnez une ou plusieurs **Configurations du déploiement** à l’aide du sélecteur de liste déroulante.
+1. Sélectionnez une ou plusieurs **configurations de déploiement** à l’aide du sélecteur de liste déroulante.
 1. Conservez vos mises à jour à l’aide de l’option **Enregistrer**.
 
 ### Définition de la configuration du déploiement système par défaut {#setting-the-system-default-rollout-configuration}

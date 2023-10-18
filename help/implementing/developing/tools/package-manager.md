@@ -7,7 +7,7 @@ exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3770'
-ht-degree: 84%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Un package contient également les méta-informations du coffre, notamment les d
 
 >[!NOTE]
 >
->Les packages représentent la version actuelle du contenu au moment où le package est créé. Elles n’incluent aucune version précédente du contenu que AEM conserve dans le référentiel.
+>Les packages représentent la version actuelle du contenu au moment où le package est créé. Elles n’incluent aucune version précédente du contenu qu’AEM conserve dans le référentiel.
 
 ## Packages dans AEM as a Cloud Service {#aemaacs-packages}
 
@@ -43,38 +43,38 @@ Les packages de contenu créés pour les applications AEM as a Cloud Service doi
 >
 >N’essayez pas d’effectuer une nouvelle installation si une telle erreur s’affiche. L’installation se déroule correctement en arrière-plan. Si vous redémarrez l’installation, plusieurs processus d’importation simultanés peuvent provoquer des conflits.
 
-Pour plus d’informations sur la gestion des modules pour AEMaaCS, voir [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md) dans le guide d’utilisation du déploiement.
+Pour plus d’informations sur la gestion des packages pour AEMaaCS, consultez la section [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md) dans le guide d’utilisation du déploiement.
 
-## Taille du module {#package-size}
+## Taille du package {#package-size}
 
-Adobe recommande de ne pas créer de packages volumineux. Cela permet d’éviter des problèmes de délai d’expiration lors du téléchargement et du téléchargement des modules.
+Adobe recommande de ne pas créer de packages volumineux. Cela permet d’éviter des problèmes de délai d’expiration lors du chargement et du téléchargement des packages.
 
-En règle générale, un package doit être transmis dans son intégralité dans un délai de 60 secondes. La formule suivante est fournie à titre de guide.
+En règle générale, un package doit être transmis dans son intégralité dans un délai de 60 secondes. La formule suivante est fournie à titre de guide.
 
 ```text
 MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 ```
 
-Comme le trafic réseau est variable et qu&#39;il est toujours inférieur à la valeur théorique maximale annoncée, essayez d&#39;utiliser un outil de test de vitesse de connexion Internet en ligne.
+Comme le trafic réseau est variable et qu’il est toujours inférieur à la valeur théorique maximale annoncée, essayez d’utiliser un outil de test de vitesse de connexion Internet en ligne.
 
-Les vitesses Internet sont presque toujours différentes pour les téléchargements et les téléchargements. En supposant que vous deviez télécharger et télécharger des modules, vous devez utiliser la valeur la plus faible (généralement la vitesse de chargement) dans votre calcul.
+Les vitesses Internet sont presque toujours différentes pour les chargements et les téléchargements. En supposant que vous deviez charger et télécharger des packages, vous devez utiliser la valeur la plus faible (généralement la vitesse de chargement) dans votre calcul.
 
 ### Exemple {#example}
 
-En utilisant un outil de test de vitesse Internet, je vois que ma vitesse de chargement actuelle est d&#39;environ 100 Mbit/s.
+En utilisant un outil de test de vitesse Internet, je vois que ma vitesse de chargement actuelle est d’environ 100 Mbit/s.
 
 ```text
 100 Mbps = 12.5 MB/s
 12.5 MB/s * 60 s = 750 MB
 ```
 
-Donc tous les packages que je crée doivent être inférieurs à 750 Mo.
+Donc tous les packages que je crée doivent être inférieurs à 750 Mo.
 
 >[!NOTE]
 >
->La vitesse du réseau est assujettie aux conditions locales actuelles. Même avec un test de vitesse récent, votre débit réel peut varier.
+>Les vitesses du réseau sont soumises aux conditions locales actuelles. Même avec un test de vitesse récent, votre débit réel peut varier.
 >
->Par conséquent, la formule fournie est uniquement une directive et la taille maximale réelle du module recommandée peut varier.
+>Par conséquent, la formule fournie est uniquement une indication et la taille maximale réelle recommandée du package peut varier.
 
 ## Gestionnaire de packages {#package-manager}
 
@@ -110,7 +110,7 @@ Le gestionnaire de packages est divisé en quatre zones fonctionnelles principal
 * **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de packages, comme lorsqu’un package est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
    * **Effacer le journal**
    * **Afficher/Masquer**
-* **Barre d’outils** - La barre d’outils contient des boutons d’actualisation pour le panneau de navigation de gauche et la liste de modules, ainsi que des boutons permettant de rechercher, créer et charger des modules.
+* **Barre d’outils** - La barre d’outils contient des boutons d’actualisation pour le panneau de navigation de gauche et la liste des packages, ainsi que des boutons pour rechercher, créer et charger des packages.
 
 ![Interface utilisateur du gestionnaire de packages](assets/package-manager-ui.png)
 
@@ -194,8 +194,8 @@ Lors de la création de filtres, vous pouvez définir un chemin dʼaccès ou uti
 
 | Type de règle | Description |
 |---|---|
-| inclusion | L’inclusion d’un répertoire inclut ce répertoire et tous les fichiers et dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière), mais **will not** d’inclure d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
-| exclusion | L’exclusion d’un répertoire exclut ce répertoire ainsi que tous les fichiers et dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière). |
+| inclusion | L’inclusion d’un répertoire inclut le répertoire en question et l’ensemble des fichiers et des dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière), mais n’inclut **pas** d’autres fichiers ou dossiers situés sous le chemin d’accès racine spécifié. |
+| Exclusion | L’exclusion d’un répertoire exclut le répertoire en question et l’ensemble des fichiers et des dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière). |
 
 Les filtres de package sont le plus souvent définis lors de la première [création du package.](#creating-a-new-package) Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
 
@@ -244,7 +244,7 @@ De nombreuses actions peuvent être entreprises sur un package.
 
    >[!TIP]
    >
-   >Si votre instance comporte de nombreux packages, il se peut qu’une structure de dossiers soit en place. Il est alors plus facile de naviguer vers le dossier cible requis avant de créer le nouveau package.
+   >Si votre instance comporte de nombreux packages, une structure de dossiers peut être mise en place. Il est alors plus facile de naviguer vers le dossier cible requis avant de créer le nouveau package.
 
 1. Dans la boîte de dialogue **Nouveau package**, saisissez les champs suivants :
 
@@ -280,7 +280,7 @@ Un package est souvent conçu au moment où vous [créez le package](#creating-a
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Cliquez sur **Concevoir**. Une boîte de dialogue vous demande de confirmer que vous souhaitez créer le module, car tout contenu existant du module sera remplacé.
+1. Cliquez sur **Concevoir**. Une boîte de dialogue vous demande de confirmer que vous souhaitez créer le package, car tout contenu existant du package sera remplacé.
 
 1. Cliquez sur **OK**. AEM crée le package et répertorie tout le contenu ajouté au package dans la liste des activités. Une fois l’opération terminée, AEM affiche un message de confirmation indiquant que le package a été conçu et (lorsque vous fermez la boîte de dialogue) met à jour les informations de la liste de packages.
 
@@ -387,7 +387,7 @@ Les packages pouvant modifier le contenu existant, il est souvent utile de valid
 
 Le gestionnaire de packages peut effectuer les validations suivantes :
 
-* [Imports de modules OSGi](#osgi-package-imports)
+* [Importations de packages OSGi](#osgi-package-imports)
 * [Recouvrements](#overlays)
 * [Listes ACL](#acls)
 
@@ -421,7 +421,7 @@ Pour résoudre des erreurs dues à des lots OSGi non satisfaits, il faut ajuster
 
 **Contenu vérifié**
 
-Cette validation détermine si le package en cours d’installation contient un fichier qui est déjà recouvert dans l’instance d’AEM de destination.
+Cette validation détermine si le package en cours d’installation contient un fichier qui est déjà recouvert dans l’instance AEM de destination.
 
 Par exemple, étant donné un recouvrement présent dans `/apps/sling/servlet/errorhandler/404.jsp`, un package contenant `/libs/sling/servlet/errorhandler/404.jsp`, il modifiera donc le fichier existant dans `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -431,7 +431,7 @@ Ces recouvrements sont décrits dans le Journal d’activités du Gestionnaire d
 
 **États d’erreur**
 
-Un état d’erreur signifie que le package tente de déployer un fichier déjà recouvert. Par conséquent, les modifications du package seront remplacées (et donc &quot;masquées&quot;) par la superposition et ne prendront pas effet.
+Un état d’erreur signifie que le package tente de déployer un fichier déjà recouvert. Par conséquent, les modifications du package seront remplacées (et donc « masquées ») par le recouvrement et ne prendront pas effet.
 
 **Résolution d’erreurs**
 
@@ -457,17 +457,17 @@ Aucune erreur explicite ne peut être fournie. La validation indique simplement 
 
 **Résolution d’erreurs**
 
-À l’aide des informations fournies par la validation, les noeuds concernés peuvent être examinés dans CRXDE et les listes de contrôle d’accès peuvent être ajustées dans le module, si nécessaire.
+À l’aide des informations fournies par la validation, les nœuds concernés peuvent être examinés dans CRXDE et les listes de contrôle d’accès peuvent être ajustées dans le package, le cas échéant.
 
 >[!CAUTION]
 >
 >Il est recommandé de sʼassurer que les packages n’affectent pas les listes ACL fournies par AEM, car cela pourrait entraîner un comportement inattendu du produit.
 
-#### Validation {#performing-validation}
+#### Exécuter la validation {#performing-validation}
 
-La validation des packages peut se faire de deux manières différentes :
+La validation des packages peut se faire de deux manières différentes :
 
-* [Via l’interface utilisateur du gestionnaire de modules](#via-package-manager)
+* [via l’interface utilisateur du gestionnaire de modules ;](#via-package-manager)
 * [via une requête HTTP POST, telle que cURL.](#via-post-request)
 
 La validation doit toujours avoir lieu après le chargement du package, mais avant son installation.
@@ -522,13 +522,13 @@ Les packages sont définis par leurs filtres. Vous pouvez demander au Gestionnai
 
 ### Installation des packages {#installing-packages}
 
-Le chargement d’un package ajoute uniquement le contenu du package au référentiel, mais il n’est pas accessible. Vous devez installer le package téléchargé pour utiliser le contenu du package.
+Le chargement d’un package ajoute uniquement le contenu du package au référentiel, mais il n’est pas accessible. Vous devez installer le package chargé pour utiliser son contenu.
 
 >[!CAUTION]
 >
->L’installation d’un package peut remplacer ou supprimer le contenu existant. Ne chargez un package que si vous êtes certain qu’il ne supprime pas ou ne remplace pas le contenu dont vous avez besoin.
+>L’installation d’un package peut remplacer ou supprimer le contenu existant. Ne chargez un package que si vous avez la certitude qu’il ne supprime pas ou ne remplace pas le contenu dont vous avez besoin.
 
-Avant l’installation de votre package, Package Manager crée automatiquement un package instantané qui contient le contenu qui est remplacé. Cet instantané est réinstallé si vous désinstallez votre package.
+Avant l’installation de votre package, le gestionnaire de modules crée automatiquement un package instantané contenant le contenu qui sera remplacé. Cet instantané est réinstallé lorsque vous désinstallez le package.
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 

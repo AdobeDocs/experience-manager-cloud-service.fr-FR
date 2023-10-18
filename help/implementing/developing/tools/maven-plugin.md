@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1838'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ Ce document décrit comment utiliser Maven pour gérer ces tâches. Cependant, i
 
 ## Packages et structure de projet AEM {#aem-project-structure}
 
-AEM as a Cloud Service adhère aux bonnes pratiques les plus récentes en matière de gestion de packages et de structure de projet, telles qu’elles sont implémentées par le dernier archétype de projet AEM.
+AEM as a Cloud Service adhère aux bonnes pratiques les plus récentes en matière de gestion de packages et de structure de projet, telles qu’elles sont implémentées par le dernier archétype de projet AEM.
 
 >[!TIP]
 >
->Pour plus d’informations, reportez-vous à la section [AEM structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) de la documentation as a Cloud Service AEM et de la [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) documentation. Tous deux sont entièrement pris en charge pour AEM 6.5.
+>Pour plus d’informations, consultez l’article [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans les documentations AEM as a Cloud Service et [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
 
 ## Obtention du plug-in Maven Content Package {#obtaining-the-content-package-maven-plugin}
 
@@ -43,7 +43,7 @@ Le plug-in est disponible à partir du [référentiel Maven central.](https://mv
 
 ## Objectifs et paramètres du plug-in Maven Content Package
 
-Pour utiliser le module externe Content Package Maven, ajoutez l’élément de module externe suivant à l’élément build de votre fichier POM :
+Pour utiliser le plug-in Content Package Maven, ajoutez l’élément de plug-in suivant à l’élément build de votre fichier POM :
 
 ```xml
 <plugin>
@@ -56,7 +56,7 @@ Pour utiliser le module externe Content Package Maven, ajoutez l’élément de 
 </plugin>
 ```
 
-Pour permettre à Maven de télécharger le module externe, utilisez le profil fourni dans la variable [Obtention du module externe Content Package Maven](#obtaining-the-content-package-maven-plugin) sur cette page.
+Pour permettre à Maven de télécharger le plug-in, utilisez le profil fourni dans la section [Obtention du plug-in Content Package Maven](#obtaining-the-content-package-maven-plugin) sur cette page.
 
 ## Version du plug-in Content Package Maven : {#goals-of-the-content-package-maven-plugin}
 
@@ -94,7 +94,7 @@ Les paramètres contenus dans le tableau ci-après sont communs à tous les obje
 | `serverId` | `String` | Non | ID du serveur à partir duquel récupérer le nom d’utilisateur et le mot de passe pour l’authentification | Tous les objectifs, à l’exception de `package` |
 | `targetURL` | `String` | Oui | `http://localhost:4502/crx/packmgr/service.jsp` | URL de l’API du service HTTP du gestionnaire de packages AEM | Tous les objectifs, à l’exception de `package` |
 | `timeout` | `int` | Non | `5` | Délai de connexion, exprimé en secondes, pour communiquer avec le service du gestionnaire de packages | Tous les objectifs, à l’exception de `package` |
-| `useProxy` | `boolean` | Non | `true` | Une valeur de `true` entraîne Maven à utiliser la première configuration de proxy principale trouvée pour les requêtes de proxy vers le gestionnaire de modules. | Tous les objectifs, à l’exception de `package` |
+| `useProxy` | `boolean` | Non | `true` | La valeur `true` entraîne l’utilisation par Maven de la première configuration de proxy active trouvée en réponse aux requêtes de proxy au gestionnaire de packages. | Tous les objectifs, à l’exception de `package` |
 | `userId` | `String` | Oui | `admin` | Nom d’utilisateur à authentifier avec AEM | Tous les objectifs, à l’exception de `package` |
 | `verbose` | `boolean` | Non | `false` | Active ou désactive la journalisation documentée | Tous les objectifs, à l’exception de `package` |
 
@@ -181,7 +181,7 @@ Outre les paramètres suivants, consultez la description du paramètre `name` da
 | `prefix` | `java.lang.String` | Non | Aucune |  |
 | `project` | `org.apache.maven.project.MavenProject` | Oui | Aucune | Projet Maven |
 | `properties` | `java.util.Map` | Non | Aucune | Ces paramètres définissent des propriétés supplémentaires que vous pouvez définir dans le fichier `properties.xml`. Ces propriétés ne peuvent pas remplacer les propriétés prédéfinies suivantes : `group` (utiliser le paramètre `group` à définir), `name` (utiliser le paramètre `name` à définir), `version` (utiliser le paramètre `version` à définir), `description` (fixé à partir de la description du projet), `groupId` (`groupId` du descripteur de projet Maven), `artifactId` (`artifactId` du descripteur de projet Maven), `dependencies` (utiliser le paramètre `dependencies` à définir), `createdBy` (valeur de la propriété système `user.name`), `created` (temps système actuel), `requiresRoot` (utiliser le paramètre `requiresRoot` à définir), `packagePath` (généré automatiquement à partir du groupe et du nom du package) |
-| `requiresRoot` | `boolean` | Oui | false | Définit si le package requiert ou non root. Devient le `requiresRoot` de la propriété `properties.xml` fichier . |
+| `requiresRoot` | `boolean` | Oui | false | Définit si le package requiert ou non root. Devient la propriété `requiresRoot` du fichier `properties.xml`. |
 | `subPackages` | `java.util.List` | Non | Aucune |  |
 | `version` | `java.lang.String` | Oui | Version définie dans le projet Maven. | Version du package de contenu |
 | `workDirectory` | `java.io.File` | Oui | Répertoire défini dans le projet Maven (phase de compilation) | Répertoire qui comporte le contenu à inclure dans le package |
@@ -208,7 +208,7 @@ L’exemple de filtre suivant montre la structure XML à utiliser :
 
 ##### Mode d’importation {#import-mode}
 
-L’élément `mode` définit l’impact de l’importation du package sur le contenu du référentiel. Les valeurs suivantes peuvent être utilisées :
+L’élément `mode` définit l’impact de l’importation du package sur le contenu du référentiel. Les valeurs suivantes peuvent être utilisées :
 
 * **Fusionner** : le contenu du package ne se trouvant pas encore dans le référentiel est ajouté. Le contenu se trouvant dans le package et le référentiel reste inchangé. Aucun contenu n’est supprimé du référentiel.
 * **Remplacer** : le contenu du package absent du référentiel y est ajouté. Le contenu du référentiel est remplacé par le contenu correspondant du package. Le contenu est supprimé du référentiel lorsqu’il n’existe pas dans le package.
@@ -267,4 +267,4 @@ Le dernier archétype de projet AEM met en œuvre la structure de package des bo
 
 >[!TIP]
 >
->Pour plus d’informations, reportez-vous à la section [AEM structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) de la documentation as a Cloud Service AEM et de la [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) documentation. Tous deux sont entièrement pris en charge pour AEM 6.5.
+>Pour plus d’informations, consultez l’article [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans les documentations AEM as a Cloud Service et [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.

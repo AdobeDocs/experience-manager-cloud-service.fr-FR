@@ -5,7 +5,7 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '967'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -67,7 +67,7 @@ Adobe recommande de gérer les données et le contenu liés au marketing dans AE
 
 ## 14. Comment pouvons-nous garantir la conformité PCI lors de l’utilisation d’AEM pour toute la couche de présentation ?
 
-Adobe recommande d’utiliser des modes de paiement abstraits. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni Adobe ni les solution de commerce ne contiennent ni ne transmettent les données du détenteur de carte. Cette approche nécessite uniquement une conformité PCI de niveau 3. Cependant, il existe d’autres aspects à considérer pour assurer une conformité PCI entière, tels que la façon dont les employé(e)s interagissent avec le système et les données. Pour plus d’informations sur la conformité PCI Adobe Commerce, voir [Exigences de conformité PCI](https://business.adobe.com/fr/products/magento/pci-compliance.html).
+Adobe recommande d’utiliser des modes de paiement abstraits. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni Adobe ni les solution de commerce ne contiennent ni ne transmettent les données du détenteur de carte. Cette approche nécessite uniquement une conformité PCI de niveau 3. Cependant, il existe d’autres aspects à considérer pour assurer une conformité PCI entière, tels que la façon dont les employé(e)s interagissent avec le système et les données. Pour plus d’informations sur la conformité PCI d’Adobe Commerce, consultez les [Exigences de conformité PCI](https://business.adobe.com/fr/products/magento/pci-compliance.html).
 
 ## 15. Si j’utilise des versions cloud d’AEM et d’Adobe Commerce, cette solution conjointe est-elle conforme PCI ?
 

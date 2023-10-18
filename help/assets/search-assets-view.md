@@ -6,7 +6,7 @@ exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
 source-wordcount: '924'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Vous pouvez filtrer les résultats de la recherche en fonction des paramètres s
 
 * Date d’expiration : filtrez les résultats de la recherche en fonction du statut d’une ressource `Expired`. En outre, vous pouvez spécifier une période d’expiration pour les ressources afin de filtrer davantage les résultats de votre recherche.
 
-* Filtres personnalisés : [Ajout de filtres personnalisés](#custom-filters) dans l’interface utilisateur de la vue Assets. Appliquez ces filtres personnalisés en plus des filtres standard pour affiner les résultats de la recherche.
+* Filtres personnalisés : [ajoutez des filtres personnalisés](#custom-filters) à l’interface utilisateur de la vue Assets. Appliquez ces filtres personnalisés en plus des filtres standard pour affiner les résultats de la recherche.
 
 Vous pouvez trier les ressources recherchées par ordre croissant ou décroissant de `Name`, `Relevancy`, `Size`, `Modified` et `Created`.
 
@@ -58,7 +58,7 @@ Vous pouvez trier les ressources recherchées par ordre croissant ou décroissan
 
 La vue Assets vous permet également d’ajouter des filtres personnalisés à l’interface utilisateur. Vous pouvez ensuite appliquer ces filtres personnalisés en plus des [filtres standard](#refine-search-results) pour affiner vos résultats de recherche.
 
-La vue Assets fournit les filtres personnalisés suivants :
+La vue Assets fournit les filtres personnalisés suivants :
 
 <table>
     <tbody>
@@ -144,9 +144,9 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## Étapes suivantes {#next-steps}
 
-* [Visionner une vidéo pour rechercher des ressources dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=fr)
+* [Regardez une vidéo pour rechercher des ressources dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=fr)
 
-* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets
+* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 

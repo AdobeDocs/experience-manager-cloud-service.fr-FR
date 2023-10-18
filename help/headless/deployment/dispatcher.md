@@ -6,7 +6,7 @@ exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 51%
+ht-degree: 94%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 51%
 
 >[!NOTE]
 >
->Pour obtenir une documentation détaillée sur Dispatcher, voir la section [Guide de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
+>Pour obtenir une documentation détaillée à propos du Dispatcher, veuillez consulter le [Guide du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
 
-Dans le cadre d’un projet AEM, un module de Dispatcher contient des configurations pour Dispatcher. Projets nouvellement générés à partir de la fonction [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) inclusion automatique [filtres](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#defining-a-filter) qui activent les points de fin GraphQL.
+Dans le cadre d’un projet AEM, un module du Dispatcher contenant les configurations du Dispatcher est inclus. Les projets nouvellement générés à partir de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) incluent automatiquement des [filtres](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#defining-a-filter) qui activent les points d’entrée GraphQL.
 
 ## Points d’entrée GraphQL
 
@@ -29,14 +29,14 @@ Dans le cadre des filtres par défaut, les [points d’entrée GraphQL](/help/he
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-Le caractère générique `*` ouvre plusieurs points d’entrée sur l’instance AEM. La requête à l’aide d’un point de terminaison GraphQL est effectuée à l’aide de `POST` et la réponse est **not** mis en cache.
+Le caractère générique `*` ouvre plusieurs points d’entrée sur l’instance AEM. La requête qui utilise un point d’entrée GraphQL s’effectue à l’aide de `POST` et la réponse n’est **pas** mise en cache.
 
 ## Requêtes persistantes GraphQL
 
-La demande de requêtes persistantes est effectuée sur un autre point de terminaison. Dans le cadre de la configuration de filtre par défaut, l’URL pour [Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) s’ouvre avec la règle suivante :
+La demande de requêtes persistantes s’effectue sur un autre point d’entrée. Dans le cadre de la configuration de filtre par défaut, l’URL pour les [requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) est ouverte avec la règle suivante :
 
 ```
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Les requêtes persistantes peuvent être demandées à l’aide de `GET`, en mettant en cache la réponse au niveau du Dispatcher et du réseau de diffusion de contenu. Vous trouverez plus d’informations sur la mise en cache et l’invalidation du cache [ici](/help/implementing/dispatcher/caching.md).
+Les requêtes persistantes peuvent être demandées à l’aide de `GET`, mettant ainsi en cache la réponse au niveau du Dispatcher et du réseau CDN. Vous trouverez plus d’informations sur la mise en cache et l’invalidation du cache [ici](/help/implementing/dispatcher/caching.md).

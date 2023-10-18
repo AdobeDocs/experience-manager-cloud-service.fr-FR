@@ -9,7 +9,7 @@ exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -33,7 +33,7 @@ Avant de commencer à utiliser [!DNL AEM Forms] as a Cloud Service, passez en re
 
   ![Problème connu de la miniature Forms](/help/forms/assets/forms-tumbnail-known-issue.png)
 
-* Lorsque vous utilisez un schéma avec des éléments répétables pour créer un formulaire adaptatif basé sur des composants principaux, l’option de glisser-déposer des éléments répétables de l’arborescence du modèle de données dans l’éditeur de Forms adaptatif ne fonctionne pas.
+* Lorsque vous utilisez un schéma avec des éléments répétables pour créer un formulaire adaptatif basé sur des composants principaux, l’option de glisser-déposer des éléments répétables de l’arborescence du modèle de données dans l’éditeur de formulaires adaptatif ne fonctionne pas.
 
 ## Limites {#limitations}
 

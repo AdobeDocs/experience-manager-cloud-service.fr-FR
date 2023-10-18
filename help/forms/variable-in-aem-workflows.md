@@ -5,7 +5,7 @@ exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '2080'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ Le type de données ArrayList permet de créer des collections de variables. Vou
 
 Pour créer une variable :
 
-1. Sur une instance AEM, accédez à Outils . ![Icône Marteau](assets/hammer-icon.svg) > Workflow > Modèles.
+1. Sur une instance AEM, accédez à Outils ![icône marteau](assets/hammer-icon.svg) > Processus > Modèles.
 1. Appuyez sur **[!UICONTROL Créer]** et spécifiez le titre et un nom facultatif pour le modèle de processus. Sélectionnez le modèle et appuyez sur **[!UICONTROL Modifier]**.
 1. Appuyez sur l’icône de variables disponible dans le sidekick du modèle de processus et appuyez sur **[!UICONTROL Ajouter une variable]**.
 
@@ -283,4 +283,4 @@ Pour supprimer une variable :
 
 ## Références {#references}
 
-Pour plus d’exemples sur l’utilisation des variables dans [!DNL AEM Forms] Etapes du workflow, voir [Variables dans les workflows AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=fr).
+Pour plus d’exemples sur l’utilisation des variables dans les étapes de workflow [!DNL AEM Forms], voir [Variables dans les workflows AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=fr).

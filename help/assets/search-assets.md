@@ -9,7 +9,7 @@ exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
 source-wordcount: '5564'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -452,15 +452,15 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 
 ## Utilisation des résultats de recherche de ressources {#aftersearch}
 
-Vous pouvez effectuer les opérations suivantes avec les ressources dans lesquelles vous avez effectué des recherches. [!DNL Experience Manager]:
+Vous pouvez effectuer les opérations suivantes avec les ressources que vous avez recherchées dans [!DNL Experience Manager] :
 
 * Afficher les propriétés de métadonnées et d’autres informations
 * Télécharger une ou plusieurs ressources
 * Utiliser les actions de bureau pour ouvrir ces ressources dans l’application de bureau
 * Créer des collections dynamiques
 * Créer une version
-* Démarrage d’un workflow
-* Liaison ou dissociation de ressources
+* Démarrer un workflow
+* Associer ou dissocier des ressources
 * Appliquez des filtres à l’aide du panneau Filtres qui s’affiche automatiquement après avoir effectué la recherche, afin d’en limiter les résultats.
 * Accès à l’emplacement de la ressource
 
@@ -503,17 +503,17 @@ Une collection est un ensemble ordonné de ressources pouvant inclure des ressou
 
 Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gérer les collections](/help/assets/manage-collections.md).
 
-### Création d’une version {#create-version}
+### Créer une version {#create-version}
 
-Créez une version pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Version]**. Ajoutez un libellé facultatif ou un commentaire, puis cliquez sur **[!UICONTROL Créer]**. Vous pouvez également sélectionner plusieurs ressources et créer simultanément des versions à leur intention.
+Créez une version pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Version]**. Ajoutez un libellé facultatif ou un commentaire, puis cliquez sur **[!UICONTROL Créer]**. Vous pouvez également sélectionner plusieurs ressources et créer simultanément des versions pour elles.
 
 ### Créer un workflow {#create-workflow}
 
 Comme pour la fonction de création de version, vous pouvez créer un workflow pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Workflow]**. Sélectionnez le modèle de workflow, spécifiez un titre pour le workflow, puis cliquez sur **[!UICONTROL Démarrer]**.
 
-### Liaison et dissociation de ressources {#relate-unrelate-assets}
+### Lier et dissocier des ressources {#relate-unrelate-assets}
 
-Liez et dissociez les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Relier]** ou **[!UICONTROL Dissocier]**.
+Liez et dissociez les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Lier]** ou **[!UICONTROL Dissocier]**.
 
 ### Accédez à l’emplacement du dossier de ressources {#navigate-asset-folder-location}
 

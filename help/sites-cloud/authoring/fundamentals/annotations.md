@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -57,7 +57,7 @@ Outre l’affichage des annotations, le mode Annotation vous permet de créer, m
 
 1. Cliquez ou appuyez sur l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
 
-1. Cliquez ou appuyez sur le composant requis (les composants pouvant être annotés sont mis en surbrillance avec une bordure bleue) pour ajouter l’annotation et ouvrir la boîte de dialogue :
+1. Cliquez ou appuyez sur le composant requis (les composants qui peuvent être annotés sont encadrés en bleu) pour ajouter l’annotation et ouvrir la boîte de dialogue :
 
    ![Ajout d’une annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 

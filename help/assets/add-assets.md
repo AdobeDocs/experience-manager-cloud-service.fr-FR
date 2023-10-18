@@ -7,30 +7,30 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3156'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] accepte différents types de ressources numériques provenant de nombreuses sources. Il stocke les binaires et les rendus créés. Il peut effectuer le traitement des ressources à l’aide de divers workflows et [!DNL Adobe Sensei] , permet la distribution via de nombreux canaux sur de nombreuses surfaces.
+[!DNL Adobe Experience Manager Assets] accepte différents types de ressources numériques provenant de nombreuses sources. Il stocke les binaires et les rendus créés. Il peut aussi effectuer le traitement des ressources à l’aide de divers services de workflow et [!DNL Adobe Sensei], ce qui permet la distribution via de nombreux canaux sur différentes surfaces.
 
 [!DNL Adobe Experience Manager] enrichit le contenu binaire des fichiers numériques chargés avec des métadonnées enrichies, des balises intelligentes, des rendus et autres services de gestion des ressources numériques (DAM). Vous pouvez charger divers types de fichiers, tels que des images, des documents et des fichiers d’images brutes, depuis votre dossier local ou un lecteur réseau vers [!DNL Experience Manager Assets].
 
-Outre le chargement de navigateur le plus souvent utilisé, d’autres méthodes d’ajout de ressources à la variable [!DNL Experience Manager] existe. Ces autres méthodes incluent les clients de bureau, comme Adobe Asset Link ou [!DNL Experience Manager] l’appli de bureau, les scripts de chargement et d’ingestion créés par les clients et les intégrations d’ingestion automatisées ajoutées sous la forme [!DNL Experience Manager] extensions.
+Outre le chargement par navigateur, méthode la plus courante, il existe d’autres façons d’ajouter des ressources au référentiel [!DNL Experience Manager]. Ces autres méthodes incluent les clients de bureau, comme Adobe Asset Link ou l’application de bureau [!DNL Experience Manager], les scripts de chargement et d’ingestion créés par les clients ou les clientes et les intégrations d’ingestion automatisées ajoutées sous la forme d’extensions [!DNL Experience Manager].
 
-[!DNL Experience Manager] permet de charger et de gérer n’importe quel fichier binaire. Cependant, les formats de fichiers les plus courants prennent en charge des services supplémentaires, tels que l’extraction de métadonnées ou la génération d’aperçus et de rendus. Voir [formats de fichiers pris en charge](file-format-support.md) pour plus d’informations.
+[!DNL Experience Manager] permet de charger et de gérer n’importe quel fichier binaire. Cependant, les formats de fichiers les plus courants prennent en charge des services supplémentaires, tels que l’extraction de métadonnées ou la génération d’aperçus et de rendus. Voir [Formats de fichiers pris en charge](file-format-support.md) pour plus d’informations.
 
-Vous pouvez également choisir d’effectuer un traitement supplémentaire sur les fichiers chargés. Plusieurs profils de traitement de ressources peuvent être configurés sur le dossier dans lequel les ressources sont chargées afin d’ajouter des métadonnées, des rendus ou des services de traitement d’images spécifiques. Voir [Traitement des ressources lorsqu’elles sont chargées](#process-when-uploaded).
+Vous pouvez également choisir d’effectuer un traitement supplémentaire sur les fichiers chargés. Plusieurs profils de traitement des ressources peuvent être configurés sur le dossier dans lequel les ressources sont chargées, afin d’ajouter des services de traitement des images, des rendus ou des métadonnées spécifiques. Voir [Traitement des ressources lorsqu’elles sont chargées](#process-when-uploaded).
 
 [!DNL Assets] fournit les méthodes de chargement suivantes. Adobe vous recommande de comprendre votre cas d’utilisation et l’applicabilité d’une option de chargement avant de l’utiliser.
 
 | Méthode de chargement | Quand l’utiliser ? | Personnage principal |
 |---------------------|----------------|-----------------|
-| [Interface utilisateur de la console de ressources](#upload-assets) | Chargement occasionnel, facilité de pression et déplacement, chargement à partir du Finder. N’utilisez pas pour charger de nombreuses ressources. | Tous les utilisateurs |
+| [Interface utilisateur de la console de ressources](#upload-assets) | Chargement occasionnel, facilité de pression et déplacement, chargement à partir du Finder. À ne pas utiliser pour charger de nombreuses ressources. | Tous les utilisateurs |
 | [API de chargement](#upload-using-apis) | Pour les décisions dynamiques pendant le chargement. | Développeur |
-| Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Ingestion de ressources en faible volume, mais pas pour la migration. | Administrateur, professionnels du marketing |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Utile lorsque les créatifs et les professionnels du marketing travaillent sur des ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge. | Créatif, professionnel du marketing |
+| Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Ingestion de ressources en faible volume, mais pas pour la migration. | Administrateur, spécialiste marketing |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Utile lorsque les créatifs et les spécialistes marketing travaillent sur des ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge. | Créatif, spécialiste marketing |
 | [Outil d’ingestion en masse de ressources](#asset-bulk-ingestor) | Recommandé pour les migrations à grande échelle et les ingestions en masse occasionnelles. Uniquement pour les magasins de données pris en charge. | Administrateur, développeur |
 
 ## Charger des ressources {#upload-assets}
@@ -62,9 +62,9 @@ Pour charger un ou plusieurs fichiers, vous pouvez les sélectionner sur votre b
 
 >[!IMPORTANT]
 >
->Les ressources que vous chargez dans Experience Manager dont le nom de fichier est supérieur à 100 caractères ont un nom raccourci lorsqu’elles sont utilisées dans Dynamic Media.
+>Les ressources que vous chargez dans Experience Manager dont le nom de fichier est supérieur à 100 caractères ont un nom raccourci lorsqu’elles sont utilisées dans Dynamic Media.
 >
->Les 100 premiers caractères du nom de fichier sont utilisés tels quels ; les caractères restants sont remplacés par une chaîne alphanumérique. Cette méthode de changement de nom garantit un nom unique lorsque la ressource est utilisée dans Dynamic Media. Il est également prévu pour s’adapter à la longueur maximale de nom de fichier de ressource autorisée dans Dynamic Media.
+>Les 100 premiers caractères du nom de fichier sont utilisés tels quels ; les caractères restants sont remplacés par une chaîne alphanumérique. Cette méthode de changement de nom garantit un nom unique lorsque la ressource est utilisée dans Dynamic Media. Elle est également prévue pour s’adapter à la longueur maximale du nom du fichier de ressource autorisée dans Dynamic Media.
 
 
 1. Dans l’interface utilisateur [!DNL Assets], accédez à l’emplacement où vous voulez ajouter des ressources numériques.
@@ -108,9 +108,9 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### Gestion des chargements pour les ressources existantes {#handling-upload-existing-file}
 
-Vous pouvez charger une ressource avec le même chemin (même nom et même emplacement) qu’une ressource existante. Cependant, une boîte de dialogue d’avertissement s’affiche avec les options suivantes :
+Vous pouvez charger une ressource avec le même chemin d’accès (même nom et même emplacement) que celui d’une ressource existante. Cependant, une boîte de dialogue d’avertissement s’affiche avec les options suivantes :
 
-* Remplacer une ressource existante : Si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (annotations et recadrage, par exemple) que vous avez apportées à la ressource existante sont supprimées.
+* Remplacer la ressource existante : si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (annotations, recadrage, etc.) apportées à une ressource existante sont supprimées.
 
   >[!NOTE]
   >
@@ -130,18 +130,18 @@ Pour prendre en compte les conventions de dénomination de fichiers en vigueur d
 * Caractères non valides pour le nom de dossier de la ressource : `* / : [ \\ ] | # % { } ? &`
 * Caractères non valides pour le nom de dossier de la ressource : `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Chargement en masse de ressources {#bulk-upload}
+## Chargement massif de ressources {#bulk-upload}
 
-L’outil d’assimilation de ressources en masse peut gérer de nombreuses ressources efficacement. Cependant, une ingestion à grande échelle ne consiste pas simplement en un important vidage de fichiers ou une simple migration. Pour qu’une ingestion à grande échelle s’intègre à un projet pertinent qui réponde à vos besoins et qui soit efficace, planifiez la migration et traitez l’organisation des ressources. Toutes les ingestions étant différentes, les généralisations sont à éviter ; il faut tenir compte des nuances de la composition du référentiel et des besoins commerciaux. Voici quelques suggestions globales pour planifier et exécuter une ingestion en masse :
+L’outil d’ingestion en masse de ressources peut traiter efficacement de nombreuses ressources. Cependant, une ingestion à grande échelle ne consiste pas simplement en un important vidage de fichiers ou une simple migration. Pour qu’une ingestion à grande échelle s’intègre à un projet pertinent qui réponde à vos besoins et qui soit efficace, planifiez la migration et traitez l’organisation des ressources. Toutes les ingestions étant différentes, les généralisations sont à éviter ; il faut tenir compte des nuances de la composition du référentiel et des besoins commerciaux. Voici quelques suggestions globales pour planifier et exécuter une ingestion en masse :
 
-* Traiter les ressources : supprimez les ressources qui ne sont pas nécessaires dans le DAM. Envisagez de supprimer les ressources inutilisées, obsolètes ou dupliquées. De telles tâches de maintenance réduisent les données transférées et les ressources ingérées, ce qui entraîne des assimilations plus rapides.
+* Traiter les ressources : supprimez les ressources qui ne sont pas nécessaires dans le DAM. Envisagez de supprimer les ressources inutilisées, obsolètes ou dupliquées. Cette méthode de gestion permet de réduire les données transférées et les ressources ingérées afin d’accélérer les ingestions.
 * Organiser les ressources : envisagez d’organiser le contenu dans un ordre logique, par exemple par taille de fichier, format de fichier, cas d’utilisation ou priorité. En général, les fichiers complexes volumineux nécessitent un traitement plus lourd. Vous pouvez également envisager d’ingérer des fichiers volumineux séparément à l’aide de l’option de filtrage de taille de fichier (décrite ci-dessous).
-* Étaler les ingestions : envisagez de diviser votre ingestion en plusieurs projets d’ingestion en masse. q vous permet d’afficher le contenu plus tôt et de mettre à jour votre ingestion si nécessaire. Vous pouvez par exemple ingérer des ressources à fort besoin de traitement pendant les heures creuses ou graduellement en plusieurs tranches. Cependant, vous pouvez ingérer en une seule fois des ressources plus petites et plus simples qui ne nécessitent pas un traitement important.
+* Étaler les ingestions : envisagez de diviser votre ingestion en plusieurs projets d’ingestion en masse. Cela vous permet de voir le contenu plus tôt et de mettre à jour votre ingestion si nécessaire. Vous pouvez par exemple ingérer des ressources à fort besoin de traitement pendant les heures creuses ou graduellement en plusieurs tranches. Cependant, vous pouvez ingérer en une seule fois des ressources plus petites et plus simples qui ne nécessitent pas un traitement important.
 
 Pour charger un plus grand nombre de fichiers, utilisez l’une des méthodes suivantes. Voir aussi les [cas d’utilisation et méthodes](#upload-methods-comparison)
 
-* [API de chargement de ressources](developer-reference-material-apis.md#asset-upload): Utilisez un script ou un outil de chargement personnalisé qui utilise des API pour ajouter une gestion supplémentaire des ressources (par exemple, la traduction des métadonnées ou le changement de nom des fichiers), si nécessaire.
-* Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) : utile pour les professionnels de la création et du marketing qui chargent des ressources depuis leur système de fichiers local. Utilisez-la pour charger des dossiers imbriqués disponibles en local.
+* [API de chargement de ressources](developer-reference-material-apis.md#asset-upload) : utilisez un script ou un outil de chargement personnalisé qui utilise les API pour ajouter un traitement supplémentaire des ressources (par exemple, traduire des métadonnées ou renommer des fichiers), si nécessaire.
+* Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) : utile pour les professionnels de la création et les spécialistes marketing qui chargent des ressources depuis leur système de fichiers local. Utilisez-la pour charger des dossiers imbriqués disponibles en local.
 * [Outil d’ingestion en masse](#asset-bulk-ingestor) : utilisez-le pour l’ingestion de grandes quantités de ressources, occasionnellement ou au départ, lors du déploiement de [!DNL Experience Manager].
 
 ### Outil d’importation en bloc de ressources {#asset-bulk-ingestor}
@@ -193,19 +193,19 @@ Pour configurer l’outil dʼimportation en bloc, procédez comme suit :
 
 1. Sélectionnez lʼoption **[!UICONTROL Supprimer le fichier source après lʼimportation]** afin de supprimer les fichiers originaux du magasin de données source après lʼimportation des fichiers dans [!DNL Experience Manager].
 
-1. Sélectionnez le **[!UICONTROL Mode d’importation]**. Les modes suivants sont disponibles : **Ignorer**, **Remplacer** ou **Créer une version**. Le mode Ignorer est le mode par défaut. Dans ce mode, l’éditeur ignore l’importation d’une ressource si elle existe déjà. Voir la signification de [Remplacer et créer des options de version](#handling-upload-existing-file).
+1. Sélectionnez le **[!UICONTROL Mode d’importation]**. Les modes suivants sont disponibles : **Ignorer**, **Remplacer** ou **Créer une version**. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’importation d’une ressource si elle existe déjà. Voir la signification de [Remplacer et créer des options de version](#handling-upload-existing-file).
 
-1. Pour définir un emplacement dans la gestion des ressources numériques où les ressources doivent être importées à l’aide de la variable **[!UICONTROL Dossier cible des ressources]** , spécifiez un chemin. Par exemple, `/content/dam/imported_assets`.
+1. Pour définir un emplacement dans la gestion des ressources numériques (DAM) où les ressources doivent être importées à l’aide du champ **[!UICONTROL Dossier cible des ressources]**, indiquez un chemin d’accès. Par exemple, `/content/dam/imported_assets`.
 
-1. (Facultatif) Spécifiez le fichier de métadonnées à importer, fourni au format CSV, dans le champ **[!UICONTROL Fichier de métadonnées]**. Spécifiez le fichier CSV dans l’emplacement de l’objet blob source et indiquez le chemin d’accès lors de la configuration de l’outil d’importation en bloc. Le format de fichier CSV référencé dans ce champ est identique au format de fichier CSV lorsque vous [Importation et exportation des métadonnées de ressources en bloc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Si vous sélectionnez lʼoption **Supprimer le fichier source après lʼimportation**, filtrez les fichiers CSV à l’aide des champs **Exclure** ou **Inclure le type MIME** ou **Filtrer par chemin dʼaccès/fichier**. Vous pouvez utiliser une expression régulière pour filtrer les fichiers CSV dans ces champs.
+1. (Facultatif) Spécifiez le fichier de métadonnées à importer, fourni au format CSV, dans le champ **[!UICONTROL Fichier de métadonnées]**. Spécifiez le fichier CSV dans l’emplacement de l’objet blob source et indiquez le chemin d’accès lors de la configuration de l’outil d’importation en bloc. Le format de fichier CSV référencé dans ce champ est identique à celui du format de fichier CSV lorsque vous [importez et exportez des métadonnées de ressources en masse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=fr). Si vous sélectionnez lʼoption **Supprimer le fichier source après lʼimportation**, filtrez les fichiers CSV à l’aide des champs **Exclure** ou **Inclure le type MIME** ou **Filtrer par chemin dʼaccès/fichier**. Vous pouvez utiliser une expression régulière pour filtrer les fichiers CSV dans ces champs.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
 ### Gestion de la configuration de l’outil d’importation en bloc {#manage-bulk-import-configuration}
 
-Après avoir configuré l’outil d’importation en bloc, vous pouvez effectuer des tâches afin de tester la configuration et de vous assurer quʼelle réponde à vos besoins avant de procéder à lʼingestion de ressources en bloc dans votre instance Experience Manager. Pour afficher les options disponibles pour gérer la configuration de votre outil d’importation en bloc, sélectionnez la configuration disponible à l’adresse **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Importation en bloc]**.
+Après avoir configuré l’outil d’importation en bloc, vous pouvez effectuer des tâches afin de tester la configuration et de vous assurer quʼelle réponde à vos besoins avant de procéder à lʼingestion de ressources en bloc dans votre instance Experience Manager. Pour afficher les options disponibles afin de gérer la configuration de votre outil d’importation en masse, sélectionnez la configuration disponible dans **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Importation en masse]**.
 
-### Modifier la configuration {#edit-configuration}
+### *Modifier la configuration {#edit-configuration}
 
 Pour modifier les détails de configuration, sélectionnez la configuration, puis cliquez sur **[!UICONTROL Modifier]**. Notez que certains éléments ne sont pas modifiables, tels que le titre de la configuration et de la source de données d’importation.
 
@@ -215,7 +215,7 @@ Sélectionnez la configuration souhaitée et cliquez sur **[!UICONTROL Supprimer
 
 ### Valider la connexion à la source de données {#validate-connection}
 
-Pour valider la connexion à la source de données, sélectionnez la configuration, puis cliquez sur **[!UICONTROL check]**. Si la connexion est établie, Experience Manager affiche le message suivant :
+Pour valider la connexion à la source de données, sélectionnez la configuration, puis cliquez sur **[!UICONTROL Vérifier]**. Si la connexion est établie, Experience Manager affiche le message suivant :
 
 ![Message de réussite de lʼimportation en bloc](assets/bulk-import-success-message.png)
 
@@ -324,21 +324,21 @@ Pour planifier une importation en bloc ponctuelle ou récurrente, procédez comm
 
 #### Affichage du dossier cible des ressources {#view-assets-target-folder}
 
-Pour afficher l’emplacement cible Ressources où les ressources sont importées après l’exécution de la tâche d’importation en bloc, sélectionnez la configuration, puis cliquez sur **[!UICONTROL Affichage des ressources]**.
+Pour afficher l’emplacement cible Ressources où les ressources sont importées après l’exécution de la tâche d’importation en masse, sélectionnez la configuration, puis cliquez sur **[!UICONTROL Afficher les ressources]**.
 
 #### Exécution de l’outil d’importation en bloc {#run-bulk-import-tool}
 
 Une fois la [configuration de l’outil d’importation en bloc](#configure-bulk-ingestor-tool) et éventuellement la [gestion de la configuration de l’outil d’importation en bloc](#manage-bulk-import-configuration) terminées, vous pouvez exécuter la tâche de configuration pour démarrer l’ingestion en masse des ressources.
 
-Pour démarrer le processus d’importation en bloc, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Importation en bloc]**, sélectionnez la variable [Configuration de l’importation en bloc](#configure-bulk-ingestor-tool), puis cliquez sur **[!UICONTROL Exécuter]**. Cliquez à nouveau sur **[!UICONTROL Exécuter]** pour confirmer.
+Pour démarrer le processus d’importation en masse, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Importation en masse]**, sélectionnez [Configuration de l’importation en masse](#configure-bulk-ingestor-tool), puis cliquez sur **[!UICONTROL Exécuter]**. Cliquez à nouveau sur **[!UICONTROL Exécuter]** pour confirmer.
 
-Experience Manager met à jour le statut de la tâche à **Traitement** et à **Réussi** lors de la réussite de la tâche. Pour afficher les ressources importées dans Experience Manager, cliquez sur **Affichage des ressources**.
+Experience Manager met à jour le statut de la tâche à **Traitement** et à **Réussi** lors de la réussite de la tâche. Pour afficher les ressources importées dans Experience Manager, cliquez sur **Afficher les ressources**.
 
 Lorsque la tâche est en cours, vous pouvez également sélectionner la configuration et cliquer sur **Arrêter** pour arrêter le processus d’ingestion en bloc. Cliquez sur **Exécuter** pour reprendre le processus dʼingestion. Vous pouvez également cliquer sur **Exécution d’essai** pour connaître les détails des ressources qui sont toujours en attente d’importation.
 
 #### Gestion des tâches après lʼexécution {#manage-jobs-after-execution}
 
-Experience Manager vous permet de consulter l’historique des tâches d’importation en bloc. L’historique des tâches comprend l’état de la tâche, le créateur de la tâche, les journaux, ainsi que d’autres détails tels que la date et l’heure de début, la date et l’heure de création, ainsi que la date et l’heure de fin.
+Experience Manager vous permet de consulter l’historique des tâches d’importation en bloc. Lʼhistorique de la tâche comprend le statut de la tâche, le créateur ou la créatrice de la tâche, les journaux, ainsi que dʼautres détails tels que la date et lʼheure de début, la date et lʼheure de création et la date et lʼheure de fin.
 
 Pour accéder à l’historique des tâches d’une configuration, sélectionnez la configuration, puis cliquez sur **[!UICONTROL Historique des tâches]**. Sélectionnez une tâche, puis cliquez sur **Ouvrir**.
 
@@ -352,11 +352,11 @@ Experience Manager affiche l’historique des tâches. Sur la page Historique d
 Outre l’interface utilisateur du navigateur web, [!DNL Experience Manager] prend en charge d’autres clients pour ordinateur de bureau. Ils permettent également de charger du contenu sans devoir passer par le navigateur web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) permet d’accéder aux ressources [!DNL Experience Manager] dans les applications de bureau Adobe Photoshop, Adobe Illustrator et Adobe InDesign. Ces applications vous offrent la possibilité de charger directement le document ouvert vers [!DNL Experience Manager] depuis l’interface utilisateur d’Adobe Asset Link.
-* L’[[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) simplifie l’utilisation des ressources sur l’ordinateur, indépendamment du type de fichier ou de l’application native affectée à leur gestion. Il est utile de charger des fichiers dans des hiérarchies de dossiers imbriqués à partir de votre système de fichiers local, car le téléchargement depuis le navigateur ne prend en charge que les listes de fichiers plats.
+* L’[[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) simplifie l’utilisation des ressources sur l’ordinateur, indépendamment du type de fichier ou de l’application native affectée à leur gestion. Il est utile de charger des fichiers dans des hiérarchies de dossiers imbriqués à partir de votre système de fichiers local, car le chargement par le navigateur ne prend en charge que les listes de fichiers plats.
 
 ## Traiter les ressources lorsqu’elles sont chargées {#process-when-uploaded}
 
-Pour effectuer un traitement supplémentaire sur les ressources chargées, vous pouvez appliquer des profils de traitement sur les dossiers de chargement. Les profils sont disponibles sur la page **[!UICONTROL Propriétés]** d’un dossier dans [!DNL Assets]. Une ressource numérique sans extension ou dotée d’une extension incorrecte ne sera pas traitée comme vous le souhaitez. Par exemple, lors du chargement de ces ressources, il est possible que rien ne se produise ou qu’un profil de traitement incorrect s’applique à la ressource. Les utilisateurs peuvent toujours stocker les fichiers binaires dans le module DAM.
+Pour effectuer un traitement supplémentaire sur les ressources chargées, vous pouvez appliquer des profils de traitement aux dossiers de chargement. Les profils sont disponibles sur la page **[!UICONTROL Propriétés]** d’un dossier dans [!DNL Assets]. Une ressource numérique sans extension ou dotée d’une extension incorrecte ne sera pas traitée comme vous le souhaitez. Par exemple, lors du chargement de ces ressources, il est possible que rien ne se produise ou qu’un profil de traitement incorrect s’applique à la ressource. Les utilisateurs peuvent toujours stocker les fichiers binaires dans le module DAM.
 
 ![Propriétés d’un dossier de ressources dotées d’options permettant d’ajouter un profil de traitement](assets/assets-folder-properties.png)
 
@@ -365,7 +365,7 @@ Les onglets suivants sont disponibles :
 * Les [profils de métadonnées](metadata-profiles.md) vous permettent d’appliquer des propriétés de métadonnées par défaut aux ressources chargées dans ce dossier.
 * Les [profils de traitement](asset-microservices-configure-and-use.md) vous permettent de générer davantage de rendus que ce qui est possible par défaut.
 
-Également, si [!DNL Dynamic Media] est activée sur votre déploiement. Les onglets suivants sont disponibles :
+De plus, si [!DNL Dynamic Media] est activé sur votre déploiement, les onglets suivants sont disponibles :
 
 * Les [[!DNL Dynamic Media] profils d’image](dynamic-media/image-profiles.md) vous permettent d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux ressources chargées.
 * Les [[!DNL Dynamic Media] profils vidéo](dynamic-media/video-profiles.md) vous permettent d’appliquer des profils de codage vidéo spécifiques (résolution, format, paramètres).

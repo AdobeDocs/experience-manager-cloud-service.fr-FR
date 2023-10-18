@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 51%
+ht-degree: 55%
 
 ---
 
@@ -29,7 +29,7 @@ Suivez les étapes ci-dessous pour accéder à la phase de préparation :
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >Voir Création et gestion d’un projet dans Cloud Acceleration Manager pour en savoir plus.
+   >Pour en savoir plus, voir Création et gestion d’un projet dans Cloud Acceleration Manager.
 
 ## Utilisation de la carte d’analyse des bonnes pratiques {#best-practices-analysis}
 
@@ -60,7 +60,7 @@ Suivez les étapes ci-dessous pour accéder à la phase de préparation :
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Consultez et explorez le tableau de bord d’analyse des bonnes pratiques dans CAM. Voir [Rapport Analyse des bonnes pratiques](#analysis-report) pour plus d’informations.
+1. Consultez et explorez le tableau de bord d’analyse des bonnes pratiques dans CAM. Reportez-vous à la section [Affichage du rapport d’analyse des bonnes pratiques](#analysis-report) pour plus d’informations.
 
    >[!NOTE]
    >Le chargement d’un nouveau rapport réinitialise toutes les évaluations.
@@ -159,7 +159,7 @@ Vous pouvez filtrer le rapport selon son importance, son sous-type ou son nombre
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Voir [Interprétation du rapport Analyseur des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=fr) pour en savoir plus sur les catégories de résultats et les niveaux d’importance.
+>Voir [Interprétation du rapport de l’analyseur de bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=fr) pour en savoir plus sur les catégories de résultats et les niveaux d’importance.
 
 #### Évaluation des bonnes pratiques {#best-practices-assessment}
 

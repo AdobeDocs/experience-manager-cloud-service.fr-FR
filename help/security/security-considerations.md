@@ -7,7 +7,7 @@ exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 ## Trust Store d’AEM {#aem-trust-store}
 
-Pour prendre en charge les opérations cryptographiques asymétriques, AEM stocke les certificats dans le référentiel de contenu, dans un trust-store global. Ses contenus sont publics et accessibles par défaut et de façon anonyme par tous et toutes sur les instances d’éditeur.
+Pour prendre en charge les opérations cryptographiques asymétriques, AEM stocke les certificats dans le référentiel de contenu, dans un Trust Store global. Ses contenus sont publics et accessibles par défaut et de façon anonyme par tous et toutes sur les instances d’éditeur.
 
 ### Caractéristiques du Trust Store {#truststore-characteristics}
 

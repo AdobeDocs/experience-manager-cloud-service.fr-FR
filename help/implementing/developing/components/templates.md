@@ -1,11 +1,11 @@
 ---
 title: Modèles de page
-description: Les modèles de page sont utilisés lors de la création d’une page qui sert de base à la nouvelle page.
+description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3291'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -42,12 +42,12 @@ La création de modèles de page s’effectue essentiellement à l’aide de la 
 
 Lors de la création d’un modèle modifiable :
 
-1. Créez un [dossier pour les modèles](#template-folders). Cette opération n’est pas obligatoire, mais elle est recommandée.
+1. Créez un [dossier pour les modèles](#template-folders). Cela n’est pas obligatoire, mais cela fait partie des bonnes pratiques recommandées.
 1. Sélectionnez un [type de modèle](#template-type). Il est copié afin de créer la [définition du modèle](#template-definitions).
 
    >[!NOTE]
    >
-   >Une sélection de types de modèles prêts à l’emploi est fournie. Vous pouvez également [créer vos propres types de modèles spécifiques à un site ;](#creating-template-types) si nécessaire.
+   >Une sélection de types de modèles prêts à l’emploi est fournie. Vous pouvez également [créer vos propres types de modèles spécifiques à un site](#creating-template-types), si nécessaire.
 
 1. Configurez la structure, les politiques de contenu, le contenu initial et la mise en page du nouveau modèle.
 
@@ -68,7 +68,7 @@ Lors de la création d’un modèle modifiable :
 
       * Par exemple, les composants disponibles ou les dimensions minimales/maximales.
 
-   * Elles s’appliquent au modèle (et aux pages créées avec le modèle).
+   * Ces politiques s’appliquent au modèle (et aux pages créées avec le modèle).
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit des politiques, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
@@ -76,7 +76,7 @@ Lors de la création d’un modèle modifiable :
 
    **Contenu initial**
 
-   * Contenu initial définit le contenu qui s’affiche lors de la première création d’une page en fonction du modèle.
+   * Le contenu initial définit le contenu qui s’affiche lors de la première création d’une page en fonction du modèle.
    * Le contenu initial peut ensuite être modifié par les personnes créant les pages.
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit la structure, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
@@ -141,7 +141,7 @@ Pour organiser vos modèles, vous pouvez utiliser les dossiers suivants :
 >
 >Bien que vous puissiez imbriquer vos dossiers, lorsque l’utilisateur les visualise dans la console **Modèles**, ils sont présentés sous la forme d’une structure plate.
 
-Dans une instance AEM standard, le dossier `global` existe déjà dans la console de modèles. Il contient les modèles par défaut et fait office de dossier de rechange si le dossier actif ne contient pas de politiques et/ou de types de modèles. Vous pouvez ajouter vos modèles par défaut à ce dossier ou créer un dossier (recommandé).
+Dans une instance AEM standard, le dossier `global` existe déjà dans la console de modèles. Il contient les modèles par défaut et fait office de dossier de rechange si le dossier actif ne contient pas de politiques et/ou de types de modèles. Vous pouvez ajouter vos modèles par défaut à ce dossier ou créer un nouveau dossier (recommandé).
 
 >[!NOTE]
 >
@@ -161,7 +161,7 @@ Les types de modèles et les politiques sont hérités dans tous les dossiers se
 
 Une liste de toutes les entrées autorisées est créée. Si des configurations se chevauchent (`path`/`label`), seule l’instance la plus proche du dossier actif s’affiche pour l’utilisateur.
 
-Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes :
+Pour créer un nouveau dossier, vous pouvez effectuer l’une des opérations suivantes :
 
 * Par programmation ou avec CRXDE Lite
 * Utilisation de l’[explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
@@ -205,7 +205,7 @@ Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes 
 1. Les champs suivants doivent être configurés dans la boîte de dialogue **Créer une configuration** :
 
    * **Titre** : indiquez un titre pour le dossier de configuration.
-   * **Modèles modifiables**: cochez cette case pour autoriser les modèles modifiables dans ce dossier.
+   * **Modèles modifiables** : sélectionnez cette option pour autoriser les modèles modifiables dans ce dossier
 
 1. Cliquez sur **Créer**
 
@@ -227,7 +227,7 @@ Le groupe `template-authors` est utilisé pour gérer l’accès aux modèles. I
 >
 >Le groupe `template-authors` est destiné uniquement aux utilisateurs qui doivent pouvoir créer des modèles.
 >
->La modification des modèles est une fonctionnalité très puissante qui, si elle n’est pas exécutée correctement, peut entraîner l’échec des modèles existants. Par conséquent, ce rôle doit être ciblé et ne doit inclure que des utilisateurs qualifiés.
+>La modification des modèles est une fonctionnalité très puissante qui, si elle n’est pas exécutée correctement, peut entraîner l’échec des modèles existants. Par conséquent, ce rôle doit être ciblé et ne doit inclure que des utilisateurs et utilisatrices qualifiés.
 
 Le tableau suivant présente les autorisations nécessaires à l’édition de modèles.
 
@@ -285,13 +285,13 @@ Le tableau suivant présente les autorisations nécessaires à l’édition de m
  </tbody>
 </table>
 
-Ce groupe `template-authors` par défaut couvre les configurations de projet dans lesquelles tous les membres de `template-authors` sont autorisés à accéder à l’ensemble des modèles et à en créer. Pour les configurations plus complexes, où plusieurs groupes d’auteurs de modèles sont nécessaires pour séparer l’accès aux modèles, vous devez créer d’autres groupes d’auteurs de modèles personnalisés. Toutefois, les autorisations des groupes d’auteurs de modèles restent les mêmes.
+Ce groupe `template-authors` par défaut couvre les configurations de projet dans lesquelles tous les membres de `template-authors` sont autorisés à accéder à l’ensemble des modèles et à en créer. Pour les configurations plus complexes, lorsque plusieurs groupes de personnes créant des modèles sont nécessaires pour séparer l’accès aux modèles, vous devez créer davantage de groupes de personnes créant des modèles personnalisés. Toutefois, les autorisations des groupes de personnes créant des modèles restent les mêmes.
 
 ## Type de modèle {#template-type}
 
-Lors de la création d’un modèle, vous devez indiquer un type de modèle :
+Lors de la création d’un modèle, vous devez indiquer un type de modèle :
 
-* Les types de modèle fournissent de façon efficace des modèles pour un modèle. Lors de la création d&#39;un modèle, la structure et le contenu initial du type de modèle sélectionné sont utilisés pour créer le nouveau modèle.
+* Les types de modèle fournissent de façon efficace des modèles pour un modèle. Lors de la création d’un modèle, la structure et le contenu initial du type de modèle sélectionné sont utilisés pour créer le nouveau modèle.
 
    * Le type de modèle est copié pour créer le modèle.
    * Une fois la copie effectuée, la seule connexion entre le modèle et le type de modèle est une référence statique à des fins d’information.
@@ -328,7 +328,7 @@ Les définitions de vos types de modèle personnalisés doivent être stockées 
 
 >[!CAUTION]
 >
->Les types de modèles doivent respecter la structure de dossiers correcte (c’est-à-dire : `/settings/wcm/...`), sinon les types de modèle sont introuvables.
+>Les types de modèle doivent respecter la structure de dossiers correcte (à savoir `/settings/wcm/...`). Dans le cas contraire, ils seront introuvables.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -362,7 +362,7 @@ Si vous avez créé un modèle qui peut servir de base pour d’autres modèles,
 
 Vous pouvez également développer votre propre type de modèle en utilisant un exemple de modèle modifiable comme base (disponible sur GitHub).
 
-CODE SUR GITHUB
+Code sur Github
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
@@ -436,7 +436,7 @@ Définit la structure de la page créée :
 * Les modifications apportées à la structure sont répercutées dans toutes les pages créées avec le modèle.
 * Le nœud `root` (`structure/jcr:content/root`) définit la liste des composants qui seront disponibles dans la page créée.
    * Les composants définis dans la structure du modèle ne peuvent être ni déplacés ni supprimés dans les pages créées.
-   * Une fois qu’un composant est déverrouillé, la variable `editable` est définie sur `true`.
+   * Une fois qu’un composant est déverrouillé, la propriété `editable` est définie sur `true`.
    * Dès qu’un composant ayant déjà du contenu est déverrouillé, son contenu est déplacé vers la branche `initial`.
 
 * Le nœud `cq:responsive` contient des définitions pour la mise en page réactive.
@@ -448,7 +448,7 @@ Définit le contenu initial dont une nouvelle page disposera au moment de sa cr�
 * Contient un nœud `jcr:content` copié dans toute nouvelle page.
 * Est fusionné avec la structure (`/structure`) lors de la création d’une page.
 * Aucune page existante n’est mise à jour si le contenu initial est modifié après la création.
-* La variable `root` contient une liste de composants pour définir ce qui est disponible dans la page résultant du processus.
+* Le nœud `root` contient une liste de composants permettant de définir les éléments qui seront disponibles dans la page créée.
 * Si du contenu est ajouté à un composant en mode de structure et que ce composant est ensuite déverrouillé (ou inversement), ce contenu est utilisé comme contenu initial.
 
 ### Mise en page {#layout}
@@ -459,7 +459,7 @@ Lorsque vous [modifiez un modèle, vous pouvez définir la mise en page](/help/s
 
 ### Politiques de contenu {#content-policies}
 
-Les politiques de contenu définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle). Les politiques de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
+Les politiques de contenu définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Ces politiques s’appliquent au modèle (et aux pages créées avec le modèle). Les politiques de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
 
 * La propriété `cq:policy`, sur le nœud `root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
@@ -482,7 +482,7 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
 
 1. **Activer le modèle**
 
-   Pour qu’un modèle puisse être utilisé, il doit être activé par :
+   Pour qu’un modèle puisse être utilisé, il doit être activé par l’un des moyens suivants :
 
    * [Activer le modèle](/help/sites-cloud/authoring/features/templates.md) à partir de la console des **Modèles**.
 
@@ -538,8 +538,8 @@ Lors du rendu d’une page :
 * **Composants** :
 
    * Le composant de page fusionnera l’arborescence `structure/jcr:content` du modèle avec l’arborescence `jcr:content` de la page.
-      * Le composant de page permet uniquement à l’auteur de modifier les noeuds de la structure de modèle qui ont été marqués comme modifiables (et tous les enfants).
-      * Lors du rendu d’un composant sur une page, le chemin relatif de ce composant est extrait de la propriété `jcr:content` noeud ; le même chemin sous la propriété `policies/jcr:content` du modèle est ensuite recherché.
+      * Le composant de page autorisera uniquement l’auteur ou l’autrice à modifier les nœuds de la structure du modèle qui ont été marqués comme étant modifiables (ainsi que leurs éventuels enfants).
+      * Lors du rendu d’un composant sur une page, le chemin d’accès relatif de ce composant est prélevé dans le nœud `jcr:content` ; une recherche sera ensuite effectuée dans le même chemin sous le nœud `policies/jcr:content` du modèle.
          * La propriété `cq:policy` de ce nœud pointe vers la politique de contenu proprement dite (en d’autres termes, elle contient la configuration de conception de ce composant).
             * Cela vous permet de disposer de plusieurs modèles qui réutilisent les mêmes configurations de stratégie de contenu.
 

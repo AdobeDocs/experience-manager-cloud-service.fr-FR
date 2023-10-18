@@ -1,11 +1,11 @@
 ---
 title: Modification de lancements
-description: Après avoir créé un lancement pour votre page (ou ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
+description: Après avoir créé un lancement pour votre page (ou ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement de la page (ou des pages).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement correspondante.
 
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) pour afficher les actions disponibles.
-1. Sélectionner **Accéder à la page** pour ouvrir la page à modifier.
+1. Sélectionnez **Accéder à la page** pour ouvrir la page à modifier.
 
 Lors de la modification de la page, une indication apparaît dans la barre d’outils supérieure, ainsi que les options **Quitter** et **Naviguer** :
 
@@ -54,9 +54,9 @@ Pour suivre les modifications que vous avez apportées, vous pouvez afficher le 
 
    ![Comparaison du lancement à la source](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. Les deux pages (lancement et source) sont ouvertes côte à côte.
+1. Les deux pages (lancement et source) s’ouvrent côte à côte.
 
-   Pour des informations complètes sur l’utilisation de cette fonction, consultez la section [Comparaison entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
+   Pour obtenir des informations complètes sur l’utilisation de cette fonctionnalité, consultez [Différences entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Modification des pages source utilisées {#changing-the-source-pages-used}
 
@@ -68,11 +68,11 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
    * [Références (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) pour afficher les actions disponibles :
       * Sélectionnez **Modifier le lancement**.
       * Les pages source s’affichent.
-1. Effectuez les modifications requises, puis confirmez avec **Enregistrer**.
+1. Effectuez les modifications requises, puis confirmez avec l’option **Enregistrer**.
 
 >[!NOTE]
 >
->Pour ajouter des pages à un lancement, elles doivent se trouver sous une racine de langue commune ; c’est-à-dire, dans un seul site.
+>Pour ajouter des pages à un lancement, celles-ci doivent se trouver sous une racine de langue commune, c’est-à-dire au sein d’un même site.
 
 ## Modification d’une configuration de lancement {#editing-a-launch-configuration}
 

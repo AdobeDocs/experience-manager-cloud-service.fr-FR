@@ -5,7 +5,7 @@ exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -18,7 +18,7 @@ Pour optimiser les performances de vos filtres GraphQL, exécutez une procédure
 >Après avoir mis à jour vos fragments de contenu, vous pouvez suivre les recommandations relatives à la [Optimisation des requêtes GraphQL](/help/headless/graphql-api/graphql-optimization.md).
 
 
-## Conditions préalables requises {#prerequisites}
+## Prérequis {#prerequisites}
 
 Il existe des conditions préalables pour cette tâche :
 
@@ -240,7 +240,7 @@ Par conséquent, la présence de cette propriété, sur le nœud JCR `/content/d
 
 ## Limites {#limitations}
 
-Tenez compte des limites suivantes :
+Gardez à l’esprit les limites suivantes :
 
 * L’optimisation des performances des filtres GraphQL n’est possible qu’après une mise à jour complète de tous vos fragments de contenu (indiquée par la présence de la variable `cfGlobalVersion` pour le noeud JCR. `/content/dam`)
 

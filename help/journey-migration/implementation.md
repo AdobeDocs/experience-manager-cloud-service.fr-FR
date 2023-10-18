@@ -5,7 +5,7 @@ exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2339'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ Dans la phase dʼimplémentation du parcours, vous découvrirez les outils à vo
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans les parties précédentes du parcours, vous avez passé en revue [vous familiariser avec les modifications apportées à AEM as a Cloud Service](/help/journey-migration/getting-started.md), et déterminé si votre déploiement est prêt à être déplacé dans le cloud avec la variable [phase de préparation](/help/journey-migration/readiness.md).
+Dans les parties précédentes du parcours, vous avez appris les [tenants et aboutissants de la migration vers AEM as a Cloud Service](/help/journey-migration/getting-started.md), ainsi quʼà déterminer si votre déploiement est prêt à être migré vers le cloud, dans la [phase de préparation](/help/journey-migration/readiness.md).
 
 Votre parcours de migration continue dans cet article, qui propose des conseils sur la façon dʼutiliser les outils fournis par Adobe pour sʼassurer que votre code et contenu sont prêts à être migrés vers le cloud.
 
@@ -25,7 +25,7 @@ Ce document vise à vous fournir les éléments suivants :
 
 * Présentation de Cloud Manager, le framework dʼintégration et de livraison continues dʼAEM, utilisé pour déployer du code vers AEM as a Cloud Service.
 * Familiarisation avec lʼoutil de transfert de contenu.
-* Décrivez les outils de refactorisation du code que vous devez utiliser afin de pouvoir moderniser votre code pour AEM as a Cloud Service
+* Description des outils de refactorisation de code à utiliser afin de pouvoir moderniser votre code pour AEM as a Cloud Service
 
 ## Utilisation de Cloud Manager {#using-cloud-manager}
 
@@ -67,10 +67,10 @@ Pour plus d’informations sur le fonctionnement de l’outil et sur la façon d
 
 À présent, il est temps de commencer à refactoriser les fonctionnalités existantes pour les rendre compatibles avec Cloud Service.
 
-Tout d’abord, consultez la documentation détaillant les outils de base et commencez à restructurer votre code :
+Tout d’abord, consultez la documentation détaillant les outils de base et commencez à refactoriser votre code :
 
 
-* Lors de la planification, il est préférable d&#39;avoir une liste des domaines qui doivent être restructurés pour être compatibles avec AEM as a Cloud Service. Vous pouvez consulter les [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) pour en savoir plus sur la refactorisation et l’optimisation du code pour Cloud Service.
+* Lors de la planification, il est utile de disposer dʼune liste des éléments qui doivent être refactorisés afin d’être compatibles avec AEM as a Cloud Service. Vous pouvez consulter les [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) pour en savoir plus sur la refactorisation et l’optimisation du code pour Cloud Service.
 * Découvrez comment effectuer la [Gestion des configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=fr#what-is-a-configuration) dans AEM as a Cloud Service.
 * Découvrez comment configurer un environnement de développement local en téléchargeant le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr).
 * Pour terminer, familiarisez-vous avec lʼ[API Java AEM as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
@@ -241,8 +241,8 @@ La section suivante présente les étapes importantes et les tâches associées 
    * Se trouve dans la même zone réseau.
    * Fournit du contenu de production tel que des utilisateurs et des groupes.
    * Clone l’auteur et la publication : un nœud chacun dans le cas d’un cluster ou d’une batterie de publication.
-* Sélectionnez un sous-ensemble du contenu migré afin que :
-   * Il s’agit d’un mélange de tous les types de contenu disponibles.
+* Sélectionnez un sous-ensemble du contenu qui est migré en tenant compte des éléments suivants :
+   * Il s’agit d’un mélange de tous les types de contenu disponibles
    * Contient tous les utilisateurs, utilisatrices et groupes
 * Inclut 25 % du contenu ou jusqu’à 1 To de contenu, selon ce qui est moins élevé.
 * Exécutez au moins une opération de migration intégrale et [complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process), depuis le clone de production vers l’environnement hors production d’AEM as a Cloud Service.
@@ -256,4 +256,4 @@ La section suivante présente les étapes importantes et les tâches associées 
 
 ## Prochaines étapes {#what-is-next}
 
-Une fois que vous avez entièrement compris comment évaluer si votre installation AEM est prête à être déplacée vers le cloud, alors que nous apprenons à utiliser les outils nécessaires pour la préparer, il est temps de passer au [phase de activation](/help/journey-migration/go-live.md).
+Une fois que vous avez entièrement compris comment évaluer si votre installation AEM est prête à être déplacée vers le cloud, alors que nous apprenons à utiliser les outils nécessaires pour la préparer, il est temps de passer à la [phase de mise en production](/help/journey-migration/go-live.md).

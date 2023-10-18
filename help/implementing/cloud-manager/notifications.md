@@ -5,7 +5,7 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
@@ -60,7 +60,7 @@ Par défaut, vous recevrez toutes les notifications pour tous les produits de l�
 
 ### Priorité {#priority}
 
-Les alertes de priorité sont marquées d’une **HIGH** et peut être configuré pour être reçu exclusivement en tant qu’alertes. Dans la section **Priorité**, vous pouvez définir les catégories qui remplissent les critères de notification de priorité.
+Les alertes de priorité seront marquées d’une balise de priorité **ÉLEVÉE** et peuvent être configurées pour être reçues exclusivement en tant qu’alertes. Dans la section **Priorité**, vous pouvez définir les catégories qui remplissent les critères de notification de priorité.
 
 ![Priorité des notifications](assets/notifications-priority.png)
 

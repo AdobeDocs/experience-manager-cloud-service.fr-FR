@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
 source-wordcount: '502'
-ht-degree: 44%
+ht-degree: 50%
 
 ---
 
@@ -57,7 +57,7 @@ Vous devez être membre du rôle **Propriétaire de l’entreprise** pour modifi
 
 Chaque fois qu’un programme est modifié, y compris l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
 
-Si la sécurité de votre programme de production a été améliorée, une **Sécurité renforcée** est disponible dans la **Modifier le programme** pour confirmer que la fonctionnalité est active pour le programme.
+Si la sécurité renforcée de votre programme de production a été activée, un onglet supplémentaire **Sécurité renforcée** est disponible dans la fenêtre **Modifier le programme** pour confirmer que la fonctionnalité est bien activée pour ce programme.
 
 ![Sécurité renforcée activée pour un programme.](assets/edit-program-enhanced.png)
 

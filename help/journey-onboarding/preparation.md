@@ -5,7 +5,7 @@ exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Une fois le contrat signé, Adobe met en service vos environnements, un e-mail d
 
 ## Configuration du système {#provisioning}
 
-Une fois le contrat signé, tous les environnements cloud d’AEM couverts par le contrat sont automatiquement configurés par Adobe. De même, ces environnements seront liés à vos programmes dans Cloud Manager (plus d’informations à ce sujet plus loin dans le parcours). Ces environnements cloud AEM sont compris dans chaque abonnement AEM as a Cloud Service. Ils sont généralement composés d’au moins un environnement de production, d’un environnement d’évaluation et éventuellement d’un ou plusieurs environnements de développement ou de test.
+Une fois le contrat signé, tous les environnements cloud d’AEM couverts par le contrat seront automatiquement configurés par Adobe. De même, ces environnements seront liés à vos programmes dans Cloud Manager (plus d’informations à ce sujet plus loin dans le parcours). Ces environnements cloud AEM sont compris dans chaque abonnement AEM as a Cloud Service. Ils sont généralement composés d’au moins un environnement de production, d’un environnement d’évaluation et éventuellement d’un ou plusieurs environnements de développement ou de test.
 
 ## Appel d’intégration {#onboarding-call}
 
@@ -60,7 +60,7 @@ Les participants de votre entreprise doivent inclure :
 * Professionnels des technologies
 * Votre partenaire d’implémentation
 
-L’Adobe est représenté par :
+Adobe est représenté par :
 
 * Spécialiste de l’intégration
 * Votre gestionnaire de compte technique (le cas échéant)
@@ -88,4 +88,4 @@ Vous devriez maintenant comprendre les éléments suivants :
 * L’impact de ce contrat sur le processus d’intégration.
 * Comment préparer votre appel d’intégration.
 
-Maintenant que vous connaissez ces étapes de préparation, vous êtes presque prêt à vous connecter vous-même au système. Mais vous aurez tout d’abord besoin d’un bref aperçu de la structure d’AEM as a Cloud Service du point de vue de l’administrateur système et de découvrir une terminologie importante. Passez à la partie suivante du parcours, [Terminologie as a Cloud Service AEM](terminology.md).
+Maintenant que vous connaissez ces étapes de préparation, vous êtes presque prêt à vous connecter vous-même au système. Mais vous aurez tout d’abord besoin d’un bref aperçu de la structure d’AEM as a Cloud Service du point de vue de l’administrateur système et de découvrir une terminologie importante. Passez à la partie suivante du parcours, [Terminologie d’AEM as a Cloud Service](terminology.md).

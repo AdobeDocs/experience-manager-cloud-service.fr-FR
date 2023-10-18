@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -30,9 +30,9 @@ Cet article s’appuie sur ces principes de base afin que vous compreniez commen
    * Découvrir les détails de l’API AEM GraphQL.
    * Regardez quelques exemples de requêtes pour voir comment les choses fonctionnent dans la pratique.
 
-## Vous Souhaitez Donc Accéder À Votre Contenu ? {#so-youd-like-to-access-your-content}
+## Vous souhaitez accéder à votre contenu ? {#so-youd-like-to-access-your-content}
 
-Donc.. vous avez tout ce contenu, soigneusement structuré (dans les fragments de contenu), et vous attendez de nourrir votre nouvelle application. La question est : comment faire ?
+Vous disposez donc de tout ce contenu soigneusement structuré (dans les fragments de contenu) et qui n’attend plus que d’alimenter votre nouvelle application. La question est : comment faire ?
 
 Vous avez besoin d’un moyen de cibler un contenu spécifique, de sélectionner ce dont vous avez besoin et de le renvoyer à votre application pour un traitement ultérieur.
 
@@ -260,7 +260,7 @@ Pour utiliser l’API AEM GraphQL dans une requête, nous pouvons utiliser les d
 
 Comme vous pouvez le voir, les champs PDG et Employés font référence aux fragments de personne.
 
-Les modèles de fragment sont utilisés :
+Les modèles de fragment sont utilisés :
 
 * lors de la création du contenu dans l’éditeur de fragment de contenu ;
 * pour générer les schémas GraphQL que vous interrogerez.

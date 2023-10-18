@@ -5,13 +5,13 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2279'
-ht-degree: 79%
+ht-degree: 98%
 
 ---
 
 # Modification des propriétés de page {#editing-page-properties}
 
-Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, tandis que d’autres ne le sont pas, et les informations de Live Copy sont disponibles, le cas échéant.
+Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être ou non connectées à une Live Copy. Le cas échéant, les informations de Live Copy sont disponibles.
 
 ## Propriétés de page {#page-properties}
 
@@ -39,8 +39,8 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * **Slug de la marque**
 
-      * **Remplacer** : cochez la case pour définir le titre de rappel sur cette page.
-         * La valeur est héritée par toutes les pages enfants, sauf si elles disposent également de la variable **Remplacement** valeurs définies.
+      * **Remplacer** : cochez la case pour définir le slug de marque sur cette page.
+         * La valeur est héritée par toutes les pages enfants, à moins que leurs valeurs de **remplacement** ne soient également définies.
       * **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
          * La valeur est ajoutée au titre de la page après un caractère de barre verticale, par exemple « La Toscane en vélo | Toujours prêt pour le WKND »
 
@@ -50,8 +50,8 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Autres titres et descriptions**
 
-   * **Titre de la page** – Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si elle est vide, la variable **Titre** est utilisée.
-   * **Titre de navigation** - Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez un titre plus concis). Si elle est vide, la variable **Titre** est utilisée.
+   * **Titre de la page** – Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si rien n’est indiqué, le **titre** est utilisé.
+   * **Titre de navigation** – Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si rien n’est indiqué, le **titre** est utilisé.
    * **Sous-titre** – Sous-titre à utiliser sur la page.
    * **Description** – Votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
 
@@ -62,15 +62,15 @@ Les propriétés sont réparties sur plusieurs onglets.
   > Voir [Heures d’activation et de désactivation – Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
 
   >[!NOTE]
-  >Si l’une des variables **Heure d’activation** ou **Heure de désactivation** est dans le passé et la réplication automatique est configurée, puis l’action appropriée est déclenchée immédiatement.
+  >Si l’**heure d’activation** ou l’**heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
 
-   * **Heure d’activation** - Date et heure auxquelles la page publiée est rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
+   * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
-      * Si existe déjà [publié (manuellement)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) cette page reste inactive (masquée) jusqu’au rendu à l’heure indiquée.
+      * Si elle a déjà été [publiée (manuellement)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), cette page reste inactive (masquée) jusqu’à son rendu au moment spécifié.
       * Si elle n’est pas publiée et configurée pour la réplication automatique, la page est automatiquement publiée, puis rendue au moment spécifié.
-      * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas publiée automatiquement. Un message 404 s’affiche donc lorsqu’une tentative d’accès à la page est effectuée.
+      * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas publiée automatiquement. Un message 404 s’affiche lors d’une tentative d’accès à la page.
 
-   * **Heure de désactivation** - Similaire à et souvent utilisé en combinaison avec **Heure d’activation**, cette option définit l’heure à laquelle la page publiée est masquée dans l’environnement de publication.
+   * **Heure de désactivation** – Similaire à l’**heure d’activation**, souvent utilisée en combinaison avec cette dernière, définit l’heure à laquelle la page publiée est masquée dans l’environnement de publication.
 
    * Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
 
@@ -115,7 +115,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Paramètres de modèles**
 
-   * **Modèles autorisés** - [Définit la liste des modèles disponibles.](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche
+   * **Modèles autorisés** – [Définit la liste des modèles qui seront disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche
 
 * **Exigence d’authentification**
 
@@ -133,7 +133,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **SEO**
 
-   * **URL canonique** - peut être utilisé pour remplacer l’URL canonique de la page ; si rien n’est indiqué, l’URL de la page est son URL canonique.
+   * **URL canonique** – Peut être utilisée pour remplacer l’URL canonique de la page ; si rien n’est indiqué, l’URL de la page est son URL canonique
 
    * **Balises robots** - sélectionner les balises robots pour contrôler le comportement des robots des moteurs de recherche.
 
@@ -141,7 +141,7 @@ Les propriétés sont réparties sur plusieurs onglets.
      >
      >Certaines des options sont en conflit les unes avec les autres. En cas de conflit, l’option la plus permissive est prioritaire.
 
-   * **Générer un plan de site** : lorsqu’il est sélectionné, un fichier sitemap.xml est généré pour cette page et ses descendants.
+   * **Générer un plan de site** – Lorsque cette option est sélectionnée, un fichier sitemap.xml est généré pour cette page et ses descendants.
 
 ### Images {#images}
 
@@ -198,9 +198,9 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies, et font partie de la [gestion multisite](/help/sites-cloud/administering/msm/overview.md).
 
-* **Live Copies actuelles** - Répertorie les pages basées sur (c’est-à-dire Live Copies de) cette page de plan directeur.
+* **Live Copies actuelles** – Listes de pages basées sur (c’est-à-dire qu’il s’agit de Live Copies de) cette page de plan directeur
 
-* **Configurations du déploiement** : contrôle les circonstances dans lesquelles les modifications sont propagées à la Live Copy.
+* **Configurations du déploiement** – Détermine les circonstances dans lesquelles les modifications sont propagées à la Live Copy
 
 ### Live Copy {#live-copy}
 
@@ -223,7 +223,7 @@ Cet onglet n’est visible que pour les pages configurées en tant que Live Copi
 
    * **Héritage de Live Copy** – Si cette option est cochée, la configuration de la Live Copy est effective sur tous les enfants.
    * **Hériter des configurations de déploiement du parent** – Si cette option est cochée, la configuration de déploiement est héritée du parent de la page.
-   * **Choisir la configuration de déploiement** - Définit les circonstances dans lesquelles les modifications sont propagées à partir du plan directeur et disponibles uniquement lorsque **Hériter des configurations de déploiement du parent** n’est pas sélectionné
+   * **Choisir la configuration de déploiement** – Définit les circonstances dans lesquelles les modifications sont propagées à partir du plan directeur et disponibles uniquement lorsque **Hériter des configurations de déploiement du parent** n’est pas sélectionné
 
 ### Aperçu {#preview}
 
@@ -253,7 +253,7 @@ Grâce à une configuration simple, une personne en charge de la création de co
 
    * **Stratégie de mise en cache et fréquence d’actualisation du contenu** : définit le modèle de mise en cache de votre PWA
    * **Fichiers à mettre en cache pour une utilisation hors ligne**
-      * **Prémise du cache du fichier (aperçu technique)** - les fichiers hébergés sur AEM sont enregistrés dans le cache du navigateur local lorsque le service worker est installé et avant d’être utilisé
+      * **Prémise en cache des fichiers (aperçu technique)** – Les fichiers hébergés sur AEM sont enregistrés dans la mémoire cache du navigateur local lorsque l’agent de service effectue l’installation et avant son utilisation
       * **Bibliothèques côté client** : bibliothèques côté client à mettre en cache pour une expérience hors ligne
       * **Inclusions des chemins** : les demandes réseau pour les chemins définis sont interceptées et le contenu mis en cache est renvoyé conformément à la stratégie de mise en cache et à la fréquence d’actualisation configurées pour le contenu
       * **Exclusions des chemins** : ces fichiers ne seront jamais mis en cache, quels que soient les paramètres définis dans Prémise en cache des fichiers et dans Inclusions des chemins
@@ -276,7 +276,7 @@ Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la pag
 1. Sélectionnez l’option **Propriétés** pour la page requise, en utilisant :
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * Les propriétés de la page s’affichent à l’aide des onglets appropriés.
+   * Les propriétés de la page sont affichées dans les onglets appropriés.
 1. Affichez ou modifiez les propriétés selon les besoins.
 1. Puis cliquez sur **Enregistrer** pour enregistrer vos modifications et sur **Fermer** pour revenir à la console.
 
@@ -300,7 +300,7 @@ Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de
 * lorsque vous parcourez la console **Sites** ;
 * après avoir utilisé **Rechercher** pour localiser un ensemble de pages.
 
-Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’icône **Option Propriétés**, les propriétés en bloc s’affichent :
+Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’option **Propriétés**, les propriétés en bloc s’affichent :
 
 ![Modification groupée des propriétés de page](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -308,7 +308,7 @@ Vous ne pouvez modifier en masse que des pages qui :
 
 * Partagent le même type de ressource.
 * Ne font pas partie d’une Live Copy.
-   * Si l’une des pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
+   * Si l’une de ces pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
 
 Une fois le mode de modification en bloc activé, vous pouvez effectuer les opérations suivantes :
 
@@ -329,6 +329,6 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
 * **Modifier**
 
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
-      * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous sélectionnez **Terminé**.
-      * Lorsque le champ comporte plusieurs valeurs (des balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
-   * Les champs qui sont communs, mais qui ont des valeurs différentes sur les différentes pages, sont indiqués par une valeur spéciale, telle que le texte. `<Mixed Entries>`.
+      * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
+      * Lorsque le champ comporte plusieurs valeurs (les balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
+   * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.

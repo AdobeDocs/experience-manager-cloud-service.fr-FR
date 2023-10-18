@@ -8,7 +8,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2930'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Pour créer un profil de traitement standard, procédez comme suit :
 
 1. Les administrateurs accèdent à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]**. Cliquez sur **[!UICONTROL Créer]**.
 1. Fournissez un nom qui vous aide à identifier de manière unique le profil lors de l’application à un dossier.
-1. Pour générer des rendus FPO, dans l’onglet **[!UICONTROL Image]**, activez **[!UICONTROL Créer le rendu FPO]**. Saisie d’une **[!UICONTROL Qualité]** de 1 à 100.
+1. Pour générer des rendus FPO, dans l’onglet **[!UICONTROL Image]**, activez **[!UICONTROL Créer le rendu FPO]**. Saisissez une valeur **[!UICONTROL Qualité]** de 1 à 100.
 1. Pour générer d’autres rendus, cliquez sur **[!UICONTROL Ajouter nouveau]** et fournissez les informations suivantes :
 
    * Nom de fichier de chaque rendu.
@@ -101,7 +101,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Profil et cas d’utilisation personnalisés {#custom-config}
 
-Le [!DNL Asset Compute Service] prend en charge une variété de cas d’utilisation, tels que le traitement par défaut, le traitement de formats spécifiques à Adobe (par exemple, des fichiers Photoshop) et la mise en œuvre d’un traitement personnalisé ou spécifique à l’organisation. La personnalisation du workflow Ressource de mise à jour de gestion des actifs numériques requise par le passé est gérée automatiquement ou au moyen de la configuration des profils de traitement. Si ces options de traitement ne répondent pas aux besoins de l’entreprise, Adobe recommande de développer et d’utiliser le [!DNL Asset Compute Service] pour étendre les fonctionnalités par défaut. Pour obtenir aperçu, voir [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr).
+L’[!DNL Asset Compute Service] prend en charge une variété de cas d’utilisation, tels que le traitement par défaut, le traitement de formats spécifiques à Adobe (par exemple, des fichiers Photoshop) et la mise en œuvre d’un traitement personnalisé ou spécifique à l’organisation. La personnalisation du workflow Ressource de mise à jour DAM requise par le passé est gérée automatiquement ou via la configuration des profils de traitement. Si ces options de traitement ne répondent pas aux besoins de l’entreprise, Adobe recommande de développer et d’utiliser le [!DNL Asset Compute Service] pour étendre les fonctionnalités par défaut. Pour obtenir aperçu, voir [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr).
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Les applications personnalisées sont des applications [Project App Builder](h
 
 ### Exemple de profil personnalisé {#custom-profile-example}
 
-Pour illustrer l’utilisation d’un profil personnalisé, considérons un exemple d’utilisation dans lequel il s’agit d’appliquer du texte personnalisé à des images de campagne. Vous pouvez créer un profil de traitement qui utilise l’API Photoshop pour modifier les images.
+Pour illustrer l’utilisation d’un profil personnalisé, considérons un exemple d’utilisation dans lequel il s’agit d’appliquer du texte personnalisé à des images de campagne. Vous pouvez créer un profil de traitement qui exploite l’API Photoshop pour modifier les images.
 
 L’intégration d’Asset Compute Service permet à Experience Manager de transmettre ces paramètres à l’application personnalisée à l’aide du champ [!UICONTROL Paramètres de service]. L’application personnalisée appelle ensuite l’API Photoshop et transmet ces valeurs à l’API. Par exemple, vous pouvez transmettre le nom de la police ainsi que la couleur, l’épaisseur et la taille du texte pour ajouter le texte personnalisé aux images de campagne.
 
@@ -204,7 +204,7 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 
 Les modèles de workflow de post-traitement sont des modèles de workflow [!DNL Experience Manager]standard. Créez des modèles différents si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
 
-Les étapes de traitement sont ajoutées si nécessaire. Vous pouvez utiliser à la fois les étapes prises en charge disponibles et les étapes de workflow implémentées sur mesure.
+Les étapes de traitement sont ajoutées si nécessaire. Vous pouvez utiliser les étapes prises en charge qui sont disponibles, ainsi que n’importe quelle étape de workflow implémentée sur mesure.
 
 Assurez-vous que la dernière étape de chaque workflow de post-traitement est `DAM Update Asset Workflow Completed Process`. La dernière étape permet de s’assurer qu’Experience Manager sait quand le traitement des ressources est terminé.
 
@@ -262,7 +262,7 @@ Suivez les étapes décrites dans la section [appliquer un modèle de workflow �
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
-* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus non souhaités peuvent occuper une grande quantité d’espace de stockage après une utilisation prolongée de [!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
+* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage du fait d’une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
 * Actuellement, la prise en charge se limite à la génération de rendus. La génération de nouvelles ressources n’est pas prise en charge.
 * Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de fichiers très volumineux, l’opération d’extraction des métadonnées peut parfois échouer.
 

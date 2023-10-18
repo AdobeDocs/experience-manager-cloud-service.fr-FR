@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '966'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,7 @@ Cette partie du parcours s’applique à l’administrateur de Cloud Manager.
 * Vous devez avoir accès à Cloud Manager.
 * Vous devez être membre du rôle **Responsable de déploiement** dans Cloud Manager.
 * Un référentiel git pour l’environnement AEM doit être configuré dans Cloud Manager.
-   * C&#39;est généralement déjà le cas pour tout projet principal. Si ce n’est pas le cas, reportez-vous à la documentation des référentiels Cloud Manager disponible sous la rubrique [Ressources supplémentaires](#additional-resources) .
+   * C&#39;est généralement déjà le cas pour tout projet principal. Toutefois, si ce n’est pas le cas, reportez-vous à la documentation des référentiels Cloud Manager disponible dans la section [Ressources supplémentaires](#additional-resources).
 
 ## Qu’est-ce qu’un pipeline frontal {#front-end-pipeline}
 
@@ -90,7 +90,7 @@ Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipeli
    * Sélectionnez l’environnement approprié sous **Environnements de déploiement éligibles**.
    * Sélectionnez le **Référentiel** adéquat.
    * Définissez la **Branche Git** à laquelle le pipeline doit être associé.
-   * Définissez l’**Emplacement du code** si le développement front-end se trouve sous un chemin d’accès particulier dans le référentiel sélectionné. La valeur par défaut est la racine du référentiel, mais le développement front-end et le back-end se font souvent sous différents chemins.
+   * Définissez l’**Emplacement du code** si le développement front-end se trouve sous un chemin d’accès particulier dans le référentiel sélectionné. La valeur par défaut est la racine du référentiel, mais le développement front-end et back-end se fait souvent sous différents chemins d’accès.
 
    ![Informations sur le code source pour l’ajout de pipeline](assets/add-pipeline-source-code.png)
 
@@ -102,7 +102,7 @@ Le nouveau pipeline est créé et visible dans la section **Pipelines** de la fe
 
 >[!TIP]
 >
->Si vous connaissez déjà les pipelines dans AEMaaCS et souhaitez en savoir plus sur les différences entre les différents types de pipelines, y compris des détails supplémentaires sur le pipeline frontal, voir Configuration du pipeline CI/CD - Cloud Service liés dans la section [Ressources supplémentaires](#additional-resources) ci-dessous.
+>Si vous connaissez déjà les pipelines dans AEMaaCS et souhaitez en savoir plus sur les différences entre les divers types de pipelines, y compris sur le pipeline front-end, consultez Configurer le pipeline CI/CD - Cloud Services dans la section [Ressources supplémentaires](#additional-resources) ci-dessous.
 
 ## Prochaines étapes {#what-is-next}
 
@@ -118,5 +118,5 @@ Tirez parti de ces connaissances et poursuivez votre parcours de création rapid
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en examinant le document [Personnaliser le thème du site](customize-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
 
 * [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) : si vous souhaitez obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
-* [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Si vous avez besoin d’informations supplémentaires sur la configuration et la gestion des référentiels Git pour votre projet AEMaaCS, consultez ce document.
-* [Configurer le pipeline CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) : pour plus d’informations sur la configuration des pipelines de pile pleine et front-end, consultez ce document.
+* [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) : si vous avez besoin d’informations supplémentaires sur la configuration et la gestion des référentiels Git pour votre projet AEMaaCS, reportez-vous à ce document.
+* [Configurer le pipeline CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) : pour plus d’informations sur la configuration des pipelines full stack et front-end, consultez ce document.

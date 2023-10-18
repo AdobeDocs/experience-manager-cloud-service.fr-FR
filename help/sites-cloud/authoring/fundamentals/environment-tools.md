@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
 workflow-type: tm+mt
 source-wordcount: '2166'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -88,7 +88,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
   Dans la barre d’outils supérieure de l’explorateur de **composants**, vous pouvez effectuer les opérations suivantes :
 
    * Filtrer les composants par nom
-   * Limitez l’affichage à un groupe spécifique à l’aide de la liste déroulante.
+   * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante.
 
   Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **fragment de contenu** :
 
@@ -133,7 +133,7 @@ Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouv
 * Chemin
 * Type de ressource tel que les images, les vidéos, les documents, les paragraphes, les fragments de contenu et les fragments d’expérience
 * Caractéristiques des ressources, telles que l’orientation et le style
-   * Disponible uniquement pour certains types de ressources.
+   * Disponible uniquement pour certains types de ressources
 
 L’aspect et la gestion de l’explorateur dépendent du type d’appareil utilisé :
 
@@ -155,7 +155,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 >[!NOTE]
 >
->Un appareil mobile est détecté lorsque la largeur est inférieure à 1 024 px ; c’est-à-dire également sur une petite fenêtre de bureau.
+>Un appareil mobile est détecté si la largeur est inférieure à 1 024 px. C’est également le cas pour les petites fenêtres sur les ordinateurs de bureau.
 
 Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeur de ressources](/help/assets/manage-digital-assets.md) directement depuis l’explorateur de ressources en cliquant sur l’icône Modifier affichée en regard du nom de la ressource.
 
@@ -175,7 +175,7 @@ Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côt
 
 Étant donné qu’une page est souvent composée de nombreux composants du même type, l’arborescence des composants affiche un texte descriptif (en gris) après le nom du type de composant (en noir). Le texte descriptif provient des propriétés courantes du composant, telles que le titre ou le texte.
 
-Les types de composants sont affichés dans la langue de l’utilisateur, tandis que le texte de description du composant provient de la langue de la page.
+Les types de composants sont affichés dans la langue de l’utilisateur ou de l’utilisatrice, tandis que le texte descriptif du composant dépend de la langue de la page.
 
 Cliquez sur le chevron en regard d’un composant pour réduire ou développer ce niveau.
 
@@ -276,7 +276,7 @@ Plusieurs modes sont possibles lors de la modification d’une page, ce qui perm
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - vous permet d’afficher l’état d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
 * [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
-* [Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - utilisé pour afficher la page telle qu’elle est affichée dans l’environnement de publication ou pour naviguer à l’aide des liens du contenu.
+* [Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : permet d’afficher la page comme elle est présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.
 * [Annoter](/help/sites-cloud/authoring/fundamentals/annotations.md) : permet d’ajouter ou d’afficher des annotations sur la page.
 
 Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supérieur droit ; l’icône active se changera alors pour refléter le mode sélectionné :
@@ -287,13 +287,13 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >
 >* Selon les caractéristiques de la page, certains modes peuvent ne pas être disponibles.
 >* L’accès à certains modes nécessite les autorisations/privilèges appropriés.
->* Le mode Développeur n’est pas disponible sur les appareils mobiles en raison de restrictions d’espace.
+>* Le mode de développement n’est pas disponible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour basculer entre le mode **Prévisualisation** et le mode actuellement sélectionné (par exemple, **Modifier**, **Disposition**, etc.).
 >
 
 ## Sélection du chemin d’accès {#path-selection}
 
-Lors de la création, il est souvent nécessaire de sélectionner une autre ressource, par exemple lors de la définition d’un lien vers une autre page ou ressource ou de la sélection d’une image. Pour sélectionner facilement un chemin d’accès, [Champs de chemin d’accès](#path-fields) permet la saisie automatique et l’[explorateur de chemins d’accès](#path-browser) permet une sélection plus robuste.
+Lors de la création, il est souvent nécessaire de sélectionner une autre ressource, par exemple lors de la définition d’un lien vers une autre page ou ressource ou de la sélection d’une image. Pour sélectionner facilement un chemin d’accès, les [Champs de chemin d’accès](#path-fields) permettent la saisie automatique et l’[explorateur de chemins d’accès](#path-browser) permet une sélection plus robuste.
 
 ### Champs de chemin d’accès {#path-fields}
 

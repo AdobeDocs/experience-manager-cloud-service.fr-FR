@@ -5,15 +5,15 @@ exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '60'
-ht-degree: 46%
+ht-degree: 75%
 
 ---
 
 # Accès au niveau de création {#accessing-the-author-tier}
 
-L’accès au niveau de création d’un environnement AEM as a Cloud Service se fait par le biais d’une URL standard et non personnalisable.
+L’accès au niveau de création d’un environnement AEM as a Cloud Service se fait par le biais d’une URL standard et non personnalisable.
 
-Le format de l&#39;URL est le suivant :
+Le format d’URL se présente comme suit :
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 

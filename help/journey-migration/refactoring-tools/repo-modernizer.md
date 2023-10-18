@@ -5,7 +5,7 @@ exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 57%
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ Repository Modernizer est un utilitaire conçu pour restructurer les packages de
 
 ## Présentation {#introduction}
 
-Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités de gestion pour vos projets AEM. Toutefois, certains changements sont nécessaires pour que les projets Adobe Experience Manager Maven soient compatibles avec AEM Cloud Service. À un niveau élevé, AEM requiert une séparation des **content** et **code** en sous-modules discrets afin de respecter la division entre contenu modifiable et non modifiable. Voir [AEM structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr) pour plus d’informations sur la nouvelle structure de projet AEM pour Cloud Service.
+Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités pour vos projets AEM. Toutefois, certains changements sont nécessaires pour que les projets Maven Adobe Experience Manager soient compatibles avec AEM Cloud Service. À un niveau élevé, AEM exige une séparation du **contenu** et du **code** en sous-packages discrets pour respecter la division entre le contenu mutable et le contenu non mutable. Pour plus d’informations sur la nouvelle structure de projet AEM pour Cloud Service, reportez-vous à [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr).
 
 Repository Modernizer crée une structure de projet AEM Cloud Service compatible en créant la structure de déploiement suivante :
 
@@ -23,22 +23,22 @@ Repository Modernizer crée une structure de projet AEM Cloud Service compatible
 
 * Le package `ui.content` se déploie sur des zones pouvant être écrites à l’exécution (par exemple, `/content`, `/conf`, `/home` ou toute zone autre que `/apps`) et contient l’ensemble du contenu et de la configuration.
 
-* `all` Le module est un module conteneur qui contient les sous-modules. `ui.apps` et `ui.content`.
+* Le package `all` est un package de conteneur qui contient les sous-packages `ui.apps` et `ui.content`.
 
 >[!NOTE]
->La structure de projet est basée sur *Archetype 24* pour les packages et leurs `pom.xml/filter.xml files`. Voir [Archétype 24](https://github.com/adobe/aem-project-archetype) pour plus d’informations.
+>La structure de projet est basée sur *Archetype 24* pour les packages et leurs `pom.xml/filter.xml files`. Pour plus d’informations, voir [Archetype 24](https://github.com/adobe/aem-project-archetype).
 
 ## Utilisation de Repository Modernizer {#using-repo-modernizer}
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Par Adobe I/O de ligne de commande : il est recommandé d’utiliser Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM module externe de refactorisation du code as a Cloud Service pour l’interface de ligne de commande d’Adobe I/O).
+* Par l’intermédiaire de la ligne de commande d’Adobe I/O : il est recommandé d’utiliser Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (module externe de refactorisation de code AEM as a Cloud Service pour la ligne de commande d’Adobe I/O).
 
-  Voir **[Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** pour vous permettre d’apprendre à installer et à utiliser le module externe.
+  Consultez **[Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** pour apprendre à installer et à utiliser le plug-in.
 
 * En tant qu’utilitaire autonome : Repository Modernizer peut également être exécuté en tant qu’utilitaire autonome.
 
-  Voir **[Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** vous pouvez apprendre à utiliser cet outil.
+  Voir **[Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** pour apprendre à utiliser cet outil.
 
   >[!NOTE]
   >

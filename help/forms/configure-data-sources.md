@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
 workflow-type: tm+mt
 source-wordcount: '2452'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -72,7 +72,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
 
    >[!NOTE]
    >
-   > Voir [Connexions SQL avec JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) pour plus d’informations.
+   > Consultez [Connexions SQL à l’aide de JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) pour plus d’informations.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
@@ -176,7 +176,7 @@ Voici quelques-unes des opérations non prises en charge par la version 3.0 de l
 * Liens
 * Différents corps de requête pour différents types MIME pour une seule opération.
 
-Voir [Spécification OpenAPI 3.0](https://swagger.io/specification/v3/) pour plus d’informations.
+Consultez [Spécification OpenAPI 3.0](https://swagger.io/specification/v3/) pour plus d’informations.
 
 ### Configuration du client HTTP du modèle de données de formulaire pour optimiser les performances {#fdm-http-client-configuration}
 

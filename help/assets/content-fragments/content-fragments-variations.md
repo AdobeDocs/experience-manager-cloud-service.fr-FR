@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '2532'
-ht-degree: 43%
+ht-degree: 58%
 
 ---
 
@@ -44,13 +44,13 @@ effectuer diverses autres actions selon le type de données que vous modifiez, p
 
 ## Création de contenu {#authoring-your-content}
 
-Lorsque vous ouvrez votre fragment de contenu pour le modifier, la variable **Variations** est ouvert par défaut. Ici, vous pouvez créer le contenu, par Principal ou toute variante que vous avez. Le fragment structuré contient des champs de différents types de données qui ont été définis dans le modèle de contenu.
+Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Variations** s’ouvre par défaut. Ici, vous pouvez créer le contenu, pour le gabarit ou toute autre variation que vous avez. Le fragment structuré contient des champs de différents types de données qui ont été définis dans le modèle de contenu.
 
 Par exemple :
 
 ![éditeur plein écran](assets/cfm-variations-02.png)
 
-Vous pouvez :
+Vous pouvez effectuer les actions suivantes :
 
 * Apportez des modifications à votre contenu directement dans l’onglet **Variations**. Chaque type de données fournit différentes options de modification, par exemple :
 
@@ -89,14 +89,14 @@ L’éditeur de texte s’ouvre alors en plein écran :
 
 L’éditeur de texte plein écran fournit les éléments suivants :
 
-* Accès à divers [actions](#actions)
-* Selon le [format](#formats), options de mise en forme supplémentaires ([Texte enrichi](#rich-text))
+* Accès à diverses [actions](#actions)
+* Selon le [format](#formats), des options de formatage supplémentaires ([Texte enrichi](#rich-text))
 
 ### Actions {#actions}
 
-Les actions suivantes sont également disponibles (pour toutes les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire le texte multiligne) est ouvert :
+Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte multiligne) est ouvert :
 
-* Sélection du [format](#formats) ([Texte enrichi](#rich-text), [Texte brut](#plain-text) ou [Texte (Markdown](#markdown)))
+* Sélection du [format](#formats) ([Texte enrichi](#rich-text), [Texte brut](#plain-text) ou [Texte (Markdown)](#markdown))
 
 * [Chargement du contenu](#uploading-content)
 
@@ -108,7 +108,7 @@ Les actions suivantes sont également disponibles (pour toutes les [formats](#fo
 
 ### Formats {#formats}
 
-Les options de modification du texte sur plusieurs lignes dépendent du format sélectionné :
+Les options de modification du texte multiligne dépendent du format sélectionné :
 
 * [Texte enrichi](#rich-text)
 * [Texte brut](#plain-text)
@@ -126,7 +126,7 @@ L&#39;édition de texte enrichi permet de mettre en forme :
 * Alignement : gauche, centre et droite
 * Liste à puces
 * Liste numérotée
-* Retrait : augmenter, diminuer
+* Mise en retrait : augmenter, diminuer
 * Création/suppression d’hyperliens
 * Coller le texte/à partir de Word
 * Insérer un tableau
@@ -155,7 +155,7 @@ Le texte brut permet de saisir du contenu de manière rapide, sans formatage ni 
 >
 >Pour plus d’informations, voir [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) la documentation.
 
-Vous pouvez ainsi mettre en forme votre texte à l’aide de Markdown. Vous pouvez définir :
+Vous pouvez ainsi mettre en forme votre texte à l’aide de Markdown. Vous pouvez définir :
 
 * Titres
 * Paragraphes et sauts de ligne
@@ -201,12 +201,12 @@ L’option **Nouveau fragment de contenu** permet de créer un fragment. Pour ce
 1. Spécification des propriétés ; par exemple, **Titre**.
 1. sélectionnez **Créer** ;
 1. et sélectionnez enfin :
-   1. **Terminé**:
-      * renvoie (au fragment original)
-      * référence le nouveau fragment ;
-   1. **Ouvrir**:
-      * référence le nouveau fragment ;
-      * ouvre le nouveau fragment à modifier dans un nouvel onglet du navigateur.
+   1. **Terminé** :
+      * renvoie (au fragment d’origine) ;
+      * référence le nouveau fragment ;
+   1. **Ouvrir** :
+      * référence le nouveau fragment ;
+      * ouvre le nouveau fragment, pour modification, dans un nouvel onglet du navigateur
 
 ### Affichage des statistiques clés {#viewing-key-statistics}
 
@@ -240,7 +240,7 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 >
 L’anglais est disponible par défaut.
 >
-D’autres langues sont disponibles en tant que modules de modèle de langue à partir de Distribution logicielle :
+D’autres langues sont disponibles en tant que packages de modèle de langue à partir de la Distribution logicielle :
 >
 * [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
@@ -248,25 +248,25 @@ D’autres langues sont disponibles en tant que modules de modèle de langue à 
 * [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
-1. Sélectionner **Principal** ou la variation requise.
+1. Sélectionnez **Gabarit** ou la variation requise.
 1. Ouvrez l’éditeur plein écran.
 
 1. Sélectionnez **Résumer le texte** dans la barre d’outils.
 
    ![récapitulation](assets/cfm-variations-05.png)
 
-1. Indiquez le nombre cible de mots et sélectionnez **Début**:
-1. Le texte original s’affiche côte à côte avec la synthèse proposée :
+1. Indiquez le nombre cible de mots et sélectionnez **Démarrer** :
+1. Le texte original s’affiche côte à côte avec la synthèse proposée :
 
-   * Toutes les phrases à éliminer sont surlignées en rouge, avec un coup publicitaire.
+   * Toutes les phrases à éliminer sont surlignées en rouge et barrées.
    * Cliquez sur une phrase en surbrillance pour la conserver dans le contenu résumé.
    * Cliquez sur n’importe quelle phrase non mise en surbrillance pour pouvoir l’éliminer.
 
 1. Sélectionnez **Résumer** pour confirmer les modifications.
 
-1. Le texte original s’affiche côte à côte avec la synthèse proposée :
+1. Le texte original s’affiche côte à côte avec la synthèse proposée :
 
-   * Toutes les phrases à éliminer sont surlignées en rouge, avec un coup publicitaire.
+   * Toutes les phrases à éliminer sont surlignées en rouge et barrées.
    * Cliquez sur une phrase en surbrillance pour la conserver dans le contenu résumé.
    * Cliquez sur n’importe quelle phrase non mise en surbrillance pour pouvoir l’éliminer.
    * Les statistiques de synthèse s’affichent : **Réel** et **Cible**-
@@ -276,9 +276,9 @@ D’autres langues sont disponibles en tant que modules de modèle de langue à 
 
 ### Annotation d’un fragment de contenu {#annotating-a-content-fragment}
 
-Pour annoter un fragment :
+Pour annoter un fragment :
 
-1. Sélectionner **Principal** ou la variation requise.
+1. Sélectionnez **Gabarit** ou la variation requise.
 
 1. Ouvrez l’éditeur plein écran.
 
@@ -320,7 +320,7 @@ Les annotations :
 
 * Il peut être répertorié et supprimé en sélectionnant le **Annotations** dans l’éditeur de fragments.
 
-  ![annotations](assets/cfm-variations-08.png)
+  ![Annotations](assets/cfm-variations-08.png)
 
 * Il peut être visualisé et supprimé dans la variable [Chronologie](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) pour le fragment sélectionné.
 
@@ -328,7 +328,7 @@ Les annotations :
 
 Pour simplifier le processus de création de fragments de contenu, vous pouvez ajouter [Ressources](/help/assets/manage-digital-assets.md) (images) directement au fragment.
 
-Elles sont ajoutées à la séquence de paragraphes du fragment sans aucune mise en forme ; le formatage peut être effectué lorsque la fonction [fragment utilisé/référencé sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Elles sont ajoutées à la séquence de paragraphes du fragment sans mise en forme ; le formatage peut être effectué lorsque le [fragment est utilisé/référencé sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -356,7 +356,7 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
    Après l’ajout d’une ressource, si vous modifiez le format en :
    >
    * **Texte brut**: la ressource est perdue dans le fragment.
-   * **Markdown**: la ressource n’est pas visible, mais elle est toujours présente lorsque vous revenez à **Texte enrichi**.
+   * **Markdown** : le fichier n’est pas visible, mais il est toujours présent lorsque vous revenez au **texte enrichi**.
 
 ### Insertion d’un fragment de contenu dans votre fragment {#inserting-content-fragment-into-your-fragment}
 
@@ -430,9 +430,9 @@ Les variations vous permettent de prendre la variable **Principal** le contenu e
 
 1. Ouvrez votre fragment et assurez-vous que le panneau latéral est visible.
 1. Sélectionnez **Variations** dans la barre d’icônes du panneau latéral.
-1. Sélectionner **Créer une variation**.
+1. Sélectionnez **Créer une variation**.
 1. Une boîte de dialogue s’ouvre pour vous permettre d’indiquer les **Titre** et **Description** pour la nouvelle variation.
-1. Sélectionner **Ajouter**; le fragment **Principal** est copié dans la nouvelle variation, qui est désormais ouverte pour [édition](#editing-a-variation).
+1. Sélectionnez **Ajouter** et le **Gabarit** du fragment est copié dans la nouvelle variation, qui est maintenant ouverte pour [modification](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -455,11 +455,11 @@ Vous pouvez modifier le contenu de la variation après l’une des opérations s
 
 1. Ouvrez votre fragment et sélectionnez **Variations** dans le panneau latéral.
 1. Sélectionnez la variation requise.
-1. Sélectionner **Renommer** de la **Actions** menu déroulant.
+1. Sélectionnez **Renommer** dans le menu déroulant **Actions**.
 
 1. Saisissez le nouveau **Titre** et/ou la nouvelle **Description** dans la boîte de dialogue qui s’affiche.
 
-1. Confirmez le **Renommer** action.
+1. Confirmez l’action **Renommer**.
 
 >[!NOTE]
 >
@@ -469,7 +469,7 @@ Cela affecte uniquement la variation **Titre**.
 
 1. Ouvrez votre fragment et sélectionnez **Variations** dans le panneau latéral.
 1. Sélectionnez la variation requise.
-1. Sélectionner **Supprimer** de la **Actions** menu déroulant.
+1. Sélectionnez **Supprimer** dans le menu déroulant **Actions**.
 
 1. Confirmez l’action **Supprimer** dans la boîte de dialogue.
 
@@ -493,11 +493,11 @@ La synchronisation ne fonctionne que sur le **Texte multi-lignes** type de donn�
 >
 Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
 
-1. Ouvrez votre fragment de contenu dans l’éditeur de fragments. Assurez-vous que la variable **Principal** a été modifié.
+1. Ouvrez votre fragment de contenu dans l’éditeur de fragments. Assurez-vous que le **Gabarit** a été modifié.
 
-1. Sélectionnez une variation spécifique, puis l’action de synchronisation appropriée à partir de :
+1. Sélectionnez une variation spécifique, puis l’action de synchronisation appropriée à partir :
 
-   * la valeur **Actions** sélecteur de liste déroulante - **Synchroniser l’élément actuel avec le gabarit**
+   * du menu déroulant du sélecteur **Actions** – **Synchroniser l’élément actif avec le gabarit** ;
 
      ![Synchronisation avec le maître](assets/cfm-variations-11a.png)
 
@@ -505,7 +505,7 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
      ![Synchronisation avec le maître](assets/cfm-variations-11b.png)
 
-1. Principal et variation s’affichent côte à côte :
+1. Le gabarit et la variation sont affichés côte à côte :
 
    * le vert indique que le contenu a été ajouté (à la variation).
    * Le rouge indique que le contenu a été supprimé (de la variation).
@@ -513,4 +513,4 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
    ![Synchronisation avec le maître](assets/cfm-variations-11c.png)
 
-1. Sélectionner **Synchroniser**, la variation est mise à jour et affichée.
+1. Sélectionnez **Synchroniser**. La variation est alors mise à jour et affichée.

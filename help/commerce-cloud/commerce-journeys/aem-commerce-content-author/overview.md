@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Si vous souhaitez savoir la manière dont Adobe recommande de résoudre des prob
 
 Ce parcours est destiné à l’auteur de contenu AEM Commerce. Ce parcours présente les exigences, les étapes et l’approche à adopter pour démarrer et gérer les pages de catalogue, les modèles ainsi que les expériences produit complètes.
 
-L&#39;information dans ce parcours peut bien sûr être utile à d&#39;autres personnes, mais certaines informations sont superflues à certains rôles. Tenez-vous informés des prochains parcours couvrant les spécificités des rôles supplémentaires.
+Les informations présentées dans ce parcours peuvent bien sûr être utiles à d’autres personnes, mais certaines informations sont superflues pour certains rôles. Restez à l’affût des prochains parcours couvrant les spécificités des rôles supplémentaires.
 
 ## Le Parcours {#the-journey}
 

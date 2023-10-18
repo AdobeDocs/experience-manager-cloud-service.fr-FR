@@ -5,7 +5,7 @@ exl-id: a90fd619-eff6-466f-9178-90374f988b5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '788'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -13,23 +13,23 @@ ht-degree: 62%
 
 Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Dans ce cas, l’objectif est double :
 
-* Un composant ne peut être modifié que s’il est encapsulé avec un élément de HTML.
-* L’élément wrapper est utilisé pour appliquer des classes de HTML qui fournissent :
+* Un composant ne peut être modifié que s’il est encapsulé avec un élément HTML.
+* L’élément d’encapsulage est utilisé pour appliquer des classes HTML qui fournissent :
    * des informations de mise en page ;
    * des informations de style.
 
-Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés. Le rendu de la balise décorative est défini par la combinaison de deux facteurs, dont cette page se penchera sur :
+Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés. Le rendu de la balise décorative est défini par la combinaison de deux facteurs, détaillés sur cette page :
 
 * Le composant peut configurer sa balise décorative avec un ensemble de propriétés.
 * Les scripts qui contiennent des composants peuvent définir les aspects de la balise décorative avec des paramètres d’inclusion.
 
 ## Recommandations {#recommendations}
 
-Voici quelques recommandations générales sur le moment où inclure l’élément wrapper qui devrait permettre d’éviter des problèmes inattendus :
+Voici quelques recommandations générales sur le moment où inclure l’élément wrapper qui devrait permettre d’éviter les problèmes inattendus :
 
-* La présence de l’élément wrapper ne doit pas différer entre les modes WCMM (mode d’édition ou de prévisualisation), les instances (auteur ou publication) ou l’environnement (évaluation ou production), de sorte que les scripts CSS et JavaScript de la page fonctionnent de manière identique dans tous les cas.
+* La présence de l’élément wrapper ne doit pas différer entre les modes wcm (mode d’édition ou de prévisualisation), les instances (création ou publication) ou l’environnement (évaluation ou production), de sorte que les scripts CSS et JavaScript de la page fonctionnent de manière identique dans tous les cas.
 * L’élément wrapper doit être ajouté à tous les composants modifiables, de sorte que l’éditeur de page puisse les initialiser et les mettre à jour correctement.
-* Pour les composants non modifiables, l’élément wrapper peut être évité s’il ne remplit aucune fonction particulière, de sorte que les balises résultantes ne soient pas inutilement gonflées.
+* Pour les composants non modifiables, l’élément wrapper peut être évité s’il ne remplit aucune fonction particulière, de sorte que les balises résultantes ne soient pas inutilement développées.
 
 ## Contrôles de composant {#component-controls}
 
@@ -39,14 +39,14 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
 * **`cq:htmlTag`nœud :** ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
    * **`cq:tagName {String}` :** cette propriété peut être utilisée pour spécifier une balise HTML personnalisée dans le but d’encapsuler les composants au lieu de l’élément DIV par défaut.
    * **`class {String}` :** cette propriété peut être utilisée pour spécifier des noms de classe CSS à ajouter à l’élément wrapper.
-   * D’autres noms de propriété sont ajoutés en tant qu’attributs de HTML avec la même valeur de chaîne que celle fournie.
+   * D’autres noms de propriété sont ajoutés comme attributs HTML avec la même valeur String que celle fournie.
 
 ## Contrôles de script {#script-controls}
 
 En règle générale, le comportement de l’élément wrapper dans HTL peut être résumé comme suit :
 
 * Aucun élément DIV wrapper n’est rendu par défaut (en exécutant simplement `data-sly-resource="foo"`).
-* Tous les modes wcm (désactivés, prévisualisés, modifiés sur l’auteur et la publication) sont rendus de manière identique.
+* Tous les modes wcm (désactivés, prévisualisés, modifiés sur les instances de création et de publication) sont rendus de manière identique.
 
 Le comportement de l’élément wrapper peut également être entièrement contrôlé.
 
@@ -55,7 +55,7 @@ Le comportement de l’élément wrapper peut également être entièrement cont
 
 Il est possible de contrôler entièrement le comportement des balises wrapper à partir de scripts HTL et de la logique qui y est associée.
 
-Pour plus d’informations sur le développement dans HTL, voir [Documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr).
+Pour plus d’informations sur le développement en HTL, consultez la [documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr).
 
 ### Arborescence de décision {#decision-tree}
 
@@ -65,9 +65,9 @@ Cette arborescence de décision résume la logique qui détermine le comportemen
 
 ### Cas d’utilisation {#use-cases}
 
-Les trois cas d’utilisation suivants fournissent des exemples de gestion des balises wrapper et illustrent également la simplicité du contrôle du comportement souhaité des balises wrapper.
+Les trois cas d’utilisation suivants fournissent des exemples de gestion des balises wrapper et illustrent également la simplicité du contrôle du comportement souhaité de ces dernières.
 
-Tous les exemples qui suivent supposent la structure de contenu et les composants suivants :
+Tous les exemples qui suivent supposent la structure de contenu et les composants suivants :
 
 ```
 /content/test/
@@ -89,7 +89,7 @@ Tous les exemples qui suivent supposent la structure de contenu et les composant
 
 #### Cas d’utilisation 1 : Inclure un composant pour la réutilisation du code {#use-case-include-a-component-for-code-reuse}
 
-Le scénario d’utilisation le plus courant se présente lorsqu’un composant en inclut un autre en vue de réutiliser le code. Dans ce cas, le composant inclus ne doit pas être modifiable avec sa propre barre d’outils et sa propre boîte de dialogue. Aucun élément wrapper n’est donc nécessaire et le `cq:htmlTag` est ignorée. Cela peut être considéré comme le comportement par défaut.
+Le scénario d’utilisation le plus courant se présente lorsqu’un composant en inclut un autre en vue de réutiliser le code. Dans ce cas, on ne souhaite pas que le composant puisse être modifié avec sa propre barre d’outils et sa propre boîte de dialogue. Aucun élément wrapper n’est donc nécessaire et le nœud `cq:htmlTag` du composant est ignoré. Cela peut être considéré comme le comportement par défaut.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -103,7 +103,7 @@ Il peut s’agir, par exemple, d’un composant qui inclut un composant image pr
 
 #### Cas d’utilisation 2 : Inclure un composant modifiable {#use-case-include-an-editable-component}
 
-Un autre cas d’utilisation courant se présente lorsque des composants de conteneur incluent des composants enfants modifiables, comme un conteneur de mises en page. Dans ce cas, chaque enfant inclus a impérativement besoin d’un composant wrapper pour que l’éditeur puisse fonctionner (sauf s’il a été explicitement désactivé avec la propriété `cq:noDecoration`).
+Un autre cas d’utilisation courant se présente lorsque des composants de conteneur incluent des composants enfants modifiables, comme un conteneur de mise en page. Dans ce cas, chaque enfant inclus a impérativement besoin d’un composant wrapper pour que l’éditeur puisse fonctionner (sauf s’il a été explicitement désactivé avec la propriété `cq:noDecoration`).
 
 Étant donné que, dans ce cas, le composant inclus est indépendant, un élément wrapper est nécessaire pour que l’éditeur fonctionne, et pour définir la mise en page et le style à appliquer. Pour déclencher ce comportement, l’option `decoration=true` est disponible.
 

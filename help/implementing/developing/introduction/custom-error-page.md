@@ -5,7 +5,7 @@ exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Pour répondre aux erreurs, AEM fournit un script `404.jsp` sous `/libs/sling/se
 
 >[!NOTE]
 >
->Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreur par défaut répond en écrivant la trace de pile complète à la réponse.
+>Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreurs par défaut répond en écrivant la trace de la pile complète à la réponse.
 >
 >Sur une instance de publication, le filtre de débogage de la gestion du contenu web CQ est **toujours** désactivé (même s’il est configuré comme étant activé).
 
 ## Méthode de personnalisation des pages affichées par le gestionnaire d’erreurs {#how-to-customize-pages-shown-by-the-error-handler}
 
-Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Pour ce faire, utilisez [Mécanisme de superposition standard AEM](/help/implementing/developing/introduction/overlays.md) afin que vos pages personnalisées soient créées sous `/apps` et superposez les pages par défaut qui se trouvent sous `/libs`.
+Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vous utiliserez pour cela le [mécanisme de recouvrement standard d’AEM ](/help/implementing/developing/introduction/overlays.md) afin que vos pages personnalisées soient créées sous `/apps` et recouvrent les pages par défaut sous `/libs`.
 
 1. Dans le référentiel, copiez le ou les scripts par défaut :
 
@@ -62,7 +62,7 @@ Lorsque le traitement des demandes provoque une exception, la structure Apache 
    * Le code de réponse HTTP 500
    * La trace de la pile d’exception
 
-La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-to-customize-pages-shown-by-the-error-handler) permet de créer un script `500.jsp`. Cependant, il n’est utilisé que si `HttpServletResponse.sendError(500)` est exécuté explicitement ; c’est-à-dire, à partir d’un collecteur d’exceptions.
+La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-to-customize-pages-shown-by-the-error-handler) permet de créer un script `500.jsp`. Cependant, ce dernier n’est utilisé que si `HttpServletResponse.sendError(500)` est exécuté de manière explicite ; c’est-à-dire à partir d’un détecteur d’exceptions.
 
 Dans le cas contraire, le code de réponse est défini sur 500, mais le script `500.jsp` n’est pas exécuté.
 
@@ -70,12 +70,12 @@ Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire
 
 >[!NOTE]
 >
->Dans AEM as a Cloud Service, le réseau CDN diffuse une page d’erreur générique lorsqu’une erreur 5XX est reçue du serveur principal. Pour permettre au serveur principal de transmettre la réponse, vous devez ajouter l’en-tête suivant à la réponse : `x-aem-error-pass: true`.
+>Dans AEM as a Cloud Service, le réseau CDN diffuse une page d’erreur générique lorsqu’une erreur 5XX est reçue du serveur principal. Pour permettre au back-end de transmettre la réponse, vous devez ajouter l’en-tête suivant à la réponse : `x-aem-error-pass: true`.
 >Cela ne fonctionne que pour les réponses provenant d’AEM ou de la couche Apache/Dispatcher. D’autres erreurs inattendues provenant des couches d’infrastructure intermédiaires afficheront toujours la page d’erreur générique.
 
 >[!CAUTION]
 >
->Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreur par défaut répond en écrivant la trace de pile complète à la réponse.
+>Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreurs par défaut répond en écrivant la trace de la pile complète à la réponse.
 >
 >Des réponses avec le code 500 sont nécessaires pour un gestionnaire d’erreurs personnalisé. Par conséquent, le [filtre de débogage de la gestion du contenu Web CQ doit être désactivé](/help/implementing/deploying/configuring-osgi.md). Cela garantit le renvoi du code de réponse 500 qui, à son tour, déclenche le gestionnaire d’erreurs Sling approprié.
 >

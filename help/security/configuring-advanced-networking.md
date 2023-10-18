@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
 workflow-type: tm+mt
 source-wordcount: '3600'
-ht-degree: 75%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Cet article vise à vous présenter les différentes fonctionnalités de mise en
 >
 >Vous trouverez également à cet [emplacement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=fr) une série d’articles conçus pour vous guider dans les différentes options avancées de mise en réseau.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 AEM as a Cloud Service propose plusieurs types de fonctionnalités de mise en réseau avancées, qui peuvent être configurées par les clients à l’aide des API de Cloud Manager. Celles-ci comprennent les éléments suivants :
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service propose plusieurs types de fonctionnalités de mise en r�
 * Une [adresse IP sortante dédiée](#dedicated-egress-IP-address) : configurez le trafic sortant d’AEM as a Cloud Service pour qu’il provienne d’une adresse IP unique
 * Un [réseau privé virtuel (VPN)](#vpn) : sécurisez le trafic entre l’infrastructure d’un client et AEM as a Cloud Service, pour les clients qui disposent d’une technologie VPN
 
-Cet article décrit en détail chacune de ces options, y compris leur configuration. La stratégie de configuration générale invoque le point d’entrée de l’API `/networkInfrastructures` au niveau du programme pour déclarer le type souhaité de mise en réseau avancée, puis fait appel au point d’entrée `/advancedNetworking` pour chaque environnement afin d’activer l’infrastructure et de configurer des paramètres spécifiques à l’environnement. Référencez les points de terminaison appropriés dans la documentation de l’API Cloud Manager pour chaque syntaxe formelle, ainsi que les exemples de requêtes et de réponses.
+Cet article décrit en détail chacune de ces options, y compris leur configuration. La stratégie de configuration générale invoque le point d’entrée de l’API `/networkInfrastructures` au niveau du programme pour déclarer le type souhaité de mise en réseau avancée, puis fait appel au point d’entrée `/advancedNetworking` pour chaque environnement afin d’activer l’infrastructure et de configurer des paramètres spécifiques à l’environnement. Pour chaque syntaxe formelle et les exemples de requêtes et de réponses, reportez-vous aux points d’entrée appropriés dans la documentation de l’API Cloud Manager.
 
 Un programme peut fournir une variation réseau avancée unique. Lorsque vous hésitez entre une adresse IP de sortie de port flexible et de sortie dédiée, il est recommandé de choisir une sortie de port flexible si aucune adresse IP spécifique n’est requise, car Adobe peut optimiser les performances du trafic de sortie de port flexible.
 
@@ -36,23 +36,23 @@ Un programme peut fournir une variation réseau avancée unique. Lorsque vous h�
 
 >[!NOTE]
 >
->Les clients déjà configurés avec la technologie de sortie dédiée héritée qui doivent configurer l’une de ces options ne doivent pas le faire, sans quoi la connectivité du site peut être affectée. Contactez l’assistance Adobe pour obtenir de l’aide.
+>Les clientes et les clients disposant déjà de la technologie de sortie dédiée héritée qui doivent configurer l’une de ces options ne doivent pas le faire, sans quoi la connectivité du site peut être affectée. Pour obtenir de l’aide, contactez l’assistance Adobe.
 
 ## Sortie de port flexible {#flexible-port-egress}
 
 Cette fonctionnalité de mise en réseau avancée vous permet de configurer AEM as a Cloud Service pour récupérer le trafic via des ports autres que HTTP (port 80) et HTTPS (port 443), qui sont ouverts par défaut.
 
-### Remarques {#flexible-port-egress-considerations}
+### Considérations {#flexible-port-egress-considerations}
 
-Une sortie de port flexible est le choix recommandé si vous n’avez pas besoin de VPN et n’avez pas besoin d’une adresse IP de sortie dédiée, car le trafic qui ne dépend pas d’une sortie dédiée peut atteindre un débit supérieur.
+Une sortie de port flexible est recommandée si vous n’avez pas besoin de VPN et d’une adresse IP de sortie dédiée, car le trafic qui ne dépend pas d’une sortie dédiée peut atteindre un débit supérieur.
 
 ### Configuration {#configuring-flexible-port-egress-provision}
 
-Une fois par programme, le point d’entrée `/program/<programId>/networkInfrastructures` POST est invoqué, simplement en transmettant la valeur du `flexiblePortEgress` pour le paramètre de `kind` et de région. Le point de terminaison répond avec la variable `network_id`, ainsi que d’autres informations, y compris l’état. L&#39;ensemble complet des paramètres et la syntaxe exacte, ainsi que des informations importantes telles que les paramètres qui ne peuvent pas être modifiés ultérieurement, [peut être référencé dans la documentation de l’API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+Une fois par programme, le point d’entrée `/program/<programId>/networkInfrastructures` POST est invoqué, simplement en transmettant la valeur du `flexiblePortEgress` pour le paramètre de `kind` et de région. Le point d’entrée répond avec le `network_id` et d’autres informations, y compris le statut. Le jeu complet de paramètres et la syntaxe exacte, ainsi que des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être consultés dans la documentation de l’API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau prend généralement environ 15 minutes. Un appel au [point d’entrée GET de l’infrastructure réseau de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) affiche l’état « ready ».
 
-Si la configuration de sortie de port flexible à l’échelle du programme est prête, le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit être invoqué pour chaque environnement afin d’activer la mise en réseau au niveau de l’environnement et de déclarer éventuellement toute règle de transfert de port. Les paramètres sont configurables par environnement pour offrir une certaine flexibilité.
+Si la configuration de sortie de port flexible à l’échelle du programme est prête, le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit être invoqué pour chaque environnement afin d’activer la mise en réseau au niveau de l’environnement et de déclarer éventuellement toute règle de transfert de port. Les paramètres sont configurables par environnement afin d’offrir une certaine flexibilité.
 
 Les règles de transfert de port doivent être déclarées pour tout port de destination autre que le port 80/443, uniquement si le protocole http ou https n’est pas utilisé,
 en spécifiant le jeu d’hôtes de destination (noms ou adresses IP, avec les ports). La connexion client utilisant le port 80/443 via http/https doit toujours utiliser les paramètres proxy dans sa connexion pour que les propriétés de la mise en réseau avancée soient appliquées à la connexion. Pour chaque hôte de destination, les clients doivent mapper le port de destination prévu à un port entre 30 000 et 30 999.
@@ -71,7 +71,7 @@ Les règles de transfert de port par environnement peuvent être mises à jour e
 
 ### Désactivation de sortie de port flexible {#disabling-flexible-port-egress-provision}
 
-À **disable** sortie de port flexible à partir d’un environnement particulier, appel `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Pour **désactiver** une sortie de port flexible à partir d’un environnement en particulier, appelez `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 Pour plus d’informations sur les API, consultez la [documentation de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -180,7 +180,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->Si vous avez reçu une adresse IP de sortie dédiée avant la version de septembre 2021 (10/6/21), voir [Clients d’adresse sortante dédiés hérités](#legacy-dedicated-egress-address-customers).
+>Si vous avez reçu une adresse IP de sortie dédiée avant la publication de la version de septembre 2021 (10/06/21), consultez [Clients ou clientes avec une adresse sortante dédiée héritée](#legacy-dedicated-egress-address-customers).
 
 ### Avantages {#benefits}
 
@@ -196,7 +196,7 @@ Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant
 
 La configuration de l’adresse IP de sortie dédiée est identique à celle d’une [sortie de port flexible](#configuring-flexible-port-egress-provision).
 
-La principale différence est que le trafic sortira toujours d’une adresse IP dédiée et unique. Pour trouver cette adresse IP, utilisez un résolveur DNS pour identifier l’adresse IP associée à `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’adresse IP ne doit pas changer, mais si elle doit changer à l’avenir, une notification avancée est fournie.
+La principale différence est que le trafic sortira toujours d’une adresse IP dédiée et unique. Pour trouver cette adresse IP, utilisez un résolveur DNS pour identifier l’adresse IP associée à `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’adresse IP n’est pas censée changer mais si elle le doit malgré tout, vous recevez une notification avancée.
 
 Outre les règles de routage prises en charge par la sortie de port flexible dans le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, l’adresse IP sortante dédiée prend en charge un paramètre `nonProxyHosts`. Cela vous permet de déclarer un ensemble d’hôtes qui doivent passer par une plage d’adresses IP partagées plutôt que par l’adresse IP dédiée, ce qui peut s’avérer utile puisque le trafic passant par les adresses IP partagées peut être encore optimisé. Les URL `nonProxyHost` peuvent être calquées sur `example.com` ou `*.example.com`, le caractère générique n’étant pris en charge qu’au début du domaine.
 
@@ -204,7 +204,7 @@ Lorsque vous hésitez entre une adresse IP de sortie de port flexible et de sort
 
 ### Désactiver l’adresse IP sortante dédiée {#disabling-dedicated-egress-IP-address}
 
-À **disable** Adresse IP sortante dédiée d’un environnement particulier, invoquez `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Pour **désactiver** l’adresse IP sortante dédiée d’un environnement particulier, invoquez `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 Pour plus d’informations sur les API, consultez la [documentation de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -332,7 +332,7 @@ La même adresse IP dédiée est appliquée à tous les programmes d’un client
 
 ### Considérations relatives au débogage {#debugging-considerations}
 
-Pour vérifier que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, le cas échéant. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [https://ifconfig.me/IP](https://ifconfig.me/IP), qui renverra l’adresse IP d’appel.
+Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [https://ifconfig.me/IP](https://ifconfig.me/IP), qui renverra l’adresse IP d’appel.
 
 ## Clients avec une adresse sortante dédiée héritée {#legacy-dedicated-egress-address-customers}
 
@@ -354,11 +354,11 @@ La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge.
 
 ### Création {#vpn-creation}
 
-Une fois par programme, le point d’entrée `/program/<programId>/networkInfrastructures` POST est invoqué, transmettant un payload d’informations de configuration, notamment : la valeur de « vpn » pour le paramètre `kind`, la région, l’espace d’adresse (liste des CIDR ; notez que cela ne peut pas être modifié plus tard), les résolveurs DNS (pour résoudre les noms dans le réseau du client) et les informations de connexion VPN telles que la configuration de la passerelle, la clé VPN partagée et la politique de sécurité IP. Le point de terminaison répond avec la variable `network_id`, ainsi que d’autres informations, y compris l’état. L’ensemble complet des paramètres et la syntaxe exacte doivent être référencés dans la [documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+Une fois par programme, le point d’entrée `/program/<programId>/networkInfrastructures` POST est invoqué, transmettant un payload d’informations de configuration, notamment : la valeur de « vpn » pour le paramètre `kind`, la région, l’espace d’adresse (liste des CIDR ; notez que cela ne peut pas être modifié plus tard), les résolveurs DNS (pour résoudre les noms dans le réseau du client) et les informations de connexion VPN telles que la configuration de la passerelle, la clé VPN partagée et la politique de sécurité IP. Le point d’entrée répond avec le `network_id` et d’autres informations, y compris le statut. L’ensemble complet des paramètres et la syntaxe exacte doivent être référencés dans la [documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau prend généralement entre 45 et 60 minutes. La méthode GET de l’API peut être appelée pour renvoyer le statut actuel, qui finira par passer de `creating` à `ready`. Consultez la documentation de l’API pour connaître tous les statuts.
 
-Si la configuration de sortie de VPN à l’échelle du programme est prête, le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit être invoqué pour chaque environnement pour activer la mise en réseau au niveau de l’environnement et pour déclarer chaque règle de transfert de port. Les paramètres sont configurables par environnement pour offrir une certaine flexibilité.
+Si la configuration de sortie de VPN à l’échelle du programme est prête, le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit être invoqué pour chaque environnement pour activer la mise en réseau au niveau de l’environnement et pour déclarer chaque règle de transfert de port. Les paramètres sont configurables par environnement afin d’offrir une certaine flexibilité.
 
 Pour plus d’informations, consultez la [documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -425,7 +425,7 @@ Le tableau ci-dessous décrit le routage du trafic.
   </tr>
   <tr>
     <td></td>
-    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de la passerelle VPN</i> et via la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java standard).</td>
+    <td>Si l’adresse IP n’est pas comprise dans la plage d’<i>espace d’adressage de la passerelle VPN</i>, et par la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java standard)</td>
     <td>N’importe lequel</td>
     <td>Via l’adresse IP sortante dédiée</td>
     <td></td>
@@ -454,7 +454,7 @@ Le tableau ci-dessous décrit le routage du trafic.
   </tr>
   <tr>
     <td></td>
-    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de la passerelle VPN</i> plage et le client se connecte à <code>AEM_PROXY_HOST</code> env en utilisant une variable <code>portOrig</code> déclaré dans la variable <code>portForwards</code> Paramètre d’API</td>
+    <td>Si l’adresse IP n’est pas comprise dans la plage d’<i>espace d’adressage de la passerelle VPN</i> et que le client ou la cliente se connecte à la variable d’environnement <code>AEM_PROXY_HOST</code> à l’aide d’un <code>portOrig</code> déclaré dans le paramètre d’API <code>portForwards</code></td>
     <td>N’importe lequel</td>
     <td>Via l’adresse IP sortante dédiée</td>
     <td></td>
@@ -542,33 +542,33 @@ Il est possible de migrer entre les types de réseaux avancés en procédant com
 
 Si l’interruption devait entraîner un impact important sur l’activité, contactez le service clientèle pour obtenir de l’aide, en décrivant ce qui a déjà été créé et la raison du changement.
 
-## Configuration de réseau avancée pour d’autres régions de publication {#advanced-networking-configuration-for-additional-publish-regions}
+## Configuration de réseau avancée pour des régions de publication supplémentaires {#advanced-networking-configuration-for-additional-publish-regions}
 
-Lorsqu’une région supplémentaire est ajoutée à un environnement qui dispose déjà d’une mise en réseau avancée configurée, le trafic de la région de publication supplémentaire qui correspond aux règles de mise en réseau avancées traverse par défaut la région principale. Toutefois, si la région principale n’est plus disponible, le trafic réseau avancé est abandonné si la mise en réseau avancée n’a pas été activée dans la région supplémentaire. Si vous souhaitez optimiser la latence et augmenter la disponibilité en cas de panne de l’une des régions, il est nécessaire d’activer une mise en réseau avancée pour la ou les régions de publication supplémentaires. Deux scénarios différents sont décrits dans les sections suivantes.
+Lorsqu’une région supplémentaire est ajoutée à un environnement qui dispose déjà d’une mise en réseau avancée configurée, le trafic de la région de publication supplémentaire qui correspond aux règles de mise en réseau avancée traverse par défaut la région principale. Toutefois, si la région principale n’est plus disponible, le trafic de mise en réseau avancée est abandonné si la mise en réseau avancée n’a pas été activée dans la région supplémentaire. Si vous souhaitez optimiser la latence et augmenter la disponibilité en cas de panne de l’une des régions, il est nécessaire d’activer une mise en réseau avancée pour la ou les régions de publication supplémentaires. Les sections ci-après décrivent deux scénarios différents.
 
 >[!NOTE]
 >
->Toutes les régions partagent la même [configuration avancée de la mise en réseau de l’environnement](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), il n’est donc pas possible d’acheminer le trafic vers différentes destinations en fonction de la région d’où provient le trafic.
+>Toutes les régions partagent la même [configuration de mise en réseau avancée de l’environnement](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), il n’est donc pas possible d’acheminer le trafic vers différentes destinations en fonction de la région d’où il provient.
 
-### Adresses IP Egress dédiées {#additional-publish-regions-dedicated-egress}
+### Adresse IP de sortie dédiée {#additional-publish-regions-dedicated-egress}
 
 #### Mise en réseau avancée déjà activée dans la région principale {#already-enabled}
 
-Si une configuration réseau avancée est déjà activée dans la région principale, procédez comme suit :
+Si une configuration de mise en réseau avancée est déjà activée dans la région principale, procédez comme suit :
 
-1. Si vous avez verrouillé votre infrastructure de sorte que l’adresse IP AEM dédiée soit répertoriée, il est recommandé de désactiver temporairement toute règle de refus dans cette infrastructure. Si ce n’est pas le cas, il y a une courte période pendant laquelle les demandes provenant des adresses IP de la nouvelle région sont refusées par votre propre infrastructure. Cela n’est pas nécessaire si vous avez verrouillé votre infrastructure au moyen d’un nom de domaine complet (FQDN), (`p1234.external.adobeaemcloud.com`, par exemple), car toutes les régions AEM reçoivent un trafic réseau avancé du même nom de domaine complet (FQDN).
-1. Créez l’infrastructure réseau à portée de programme pour la région secondaire par le biais d’un appel POST à l’API Cloud Manager Create Network Infrastructure, comme décrit dans la documentation réseau avancée. La seule différence dans la configuration JSON de la payload par rapport à la région principale est la propriété region .
-1. Si votre infrastructure doit être verrouillée par IP pour autoriser AEM trafic, ajoutez les adresses IP qui correspondent `p1234.external.adobeaemcloud.com`. Il devrait y en avoir une par région.
+1. Si vous avez verrouillé votre infrastructure de sorte que l’adresse IP AEM dédiée soit répertoriée, il est recommandé de désactiver temporairement toute règle de refus dans cette infrastructure. Si ce n’est pas fait, il y a une courte période pendant laquelle les demandes provenant des adresses IP de la nouvelle région sont refusées par votre propre infrastructure. Cela n’est pas nécessaire si vous avez verrouillé votre infrastructure au moyen d’un nom de domaine complet (FQDN), (`p1234.external.adobeaemcloud.com`, par exemple), car toutes les régions AEM reçoivent un trafic réseau avancé du même nom de domaine complet (FQDN).
+1. Créez l’infrastructure de mise en réseau à portée de programme pour la région secondaire par le biais d’un appel POST à l’API de création d’infrastructure réseau de Cloud Manager, comme décrit dans la documentation de mise en réseau avancée. La seule différence dans la configuration JSON du payload par rapport à la région principale est la propriété de la région
+1. Si votre infrastructure doit être verrouillée par IP pour autoriser le trafic AEM, ajoutez les adresses IP qui correspondent à `p1234.external.adobeaemcloud.com`. Il devrait y en avoir une par région.
 
-#### Mise en réseau avancée non encore configurée dans une région {#not-yet-configured}
+#### Mise en réseau avancée non configurée dans une région {#not-yet-configured}
 
-La procédure est essentiellement similaire aux instructions précédentes. Cependant, si l’environnement de production n’a pas encore été activé pour la mise en réseau avancée, vous avez la possibilité de tester la configuration en l’activant d’abord dans un environnement intermédiaire :
+La procédure est essentiellement similaire aux instructions précédentes. Cependant, si l’environnement de production n’a pas encore été activé pour la mise en réseau avancée, vous avez la possibilité de tester la configuration en l’activant d’abord dans un environnement d’évaluation :
 
-1. Créez une infrastructure de réseau pour toutes les régions à l’aide de l’appel du POST à la fonction [API Create Network Infrastructure de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). La seule différence dans la configuration JSON de la payload par rapport à la région principale est la propriété region.
-1. Pour l’environnement d’évaluation, activez et configurez l’environnement mis en réseau avancé en exécutant `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Pour plus d’informations, voir la documentation de l’API . [here](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. Si nécessaire, verrouiller l’infrastructure externe, de préférence par le nom de domaine complet (par exemple `p1234.external.adobeaemcloud.com`). Vous pouvez le faire autrement par adresse IP.
+1. Créez une infrastructure de mise en réseau pour toutes les régions à l’aide d’un appel POST à l’[API de création d’infrastructure réseau de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). La seule différence dans la configuration JSON du payload par rapport à la région principale est la propriété de la région.
+1. Pour l’environnement d’évaluation, activez et configurez l’environnement mis en réseau avancé en exécutant `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Pour plus d’informations, voir la documentation de l’API [ici](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. Si nécessaire, verrouillez l’infrastructure externe, de préférence par le nom de domaine complet (par exemple `p1234.external.adobeaemcloud.com`). Vous pouvez également le faire par adresse IP
 1. Si l’environnement d’évaluation fonctionne comme prévu, activez et configurez la configuration de mise en réseau avancée de l’environnement pour la production.
 
 #### VPN {#vpn-regions}
 
-La procédure est presque identique aux instructions d’adresses IP sortantes dédiées. La seule différence est qu’en plus de la propriété de région configurée différemment de la région principale, la variable `connections.gateway` peut éventuellement être configuré pour acheminer vers un autre point d’entrée VPN opéré par votre organisation, peut-être géographiquement plus proche de la nouvelle région.
+La procédure est presque identique aux instructions d’adresses IP sortantes dédiées. La seule différence est qu’en plus de la propriété de région configurée différemment de la région principale, le champ `connections.gateway` peut éventuellement être configuré pour l’acheminement vers un autre point d’entrée VPN exploité par votre organisation, peut-être géographiquement plus proche de la nouvelle région.

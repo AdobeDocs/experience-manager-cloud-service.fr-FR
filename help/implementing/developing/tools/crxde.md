@@ -5,7 +5,7 @@ exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1685'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -48,19 +48,19 @@ Le widget de chemin de nœud affiche le chemin d’accès au nœud actuellement 
 
 Vous pouvez également l’utiliser pour sauter vers un nœud en entrant le chemin à la main ou en le collant à partir d’un autre endroit et en appuyant sur Entrée.
 
-Il permet aussi de rechercher des nœuds par nom de nœud. Entrez le nom du nœud que vous souhaitez rechercher et patientez (ou sélectionnez l’icône de recherche sur le côté droit). Si un ou plusieurs noeuds sont chargés dans le volet de l’explorateur, la liste s’affiche et vous pouvez sélectionner le chemin et appuyer sur Entrée pour y accéder. Notez que la recherche ne fonctionne que pour les nœuds actuellement chargés dans l’application cliente CRXDE dans le navigateur. Pour effectuer une recherche dans tout le référentiel, utilisez **Outils** > **Requête**.
+Il permet aussi de rechercher des nœuds par nom de nœud. Entrez le nom du nœud que vous souhaitez rechercher et patientez (ou sélectionnez l’icône de recherche sur le côté droit). Si un ou plusieurs nœuds sont chargés dans le volet de l’explorateur, la liste s’affiche. Vous pouvez sélectionner le chemin et appuyer sur Entrée pour y accéder. Notez que la recherche ne fonctionne que pour les nœuds actuellement chargés dans l’application cliente CRXDE dans le navigateur. Pour effectuer une recherche dans tout le référentiel, utilisez **Outils** > **Requête**.
 
 ### Volet de l’explorateur {#explorer-pane}
 
 Le **Volet de l’explorateur** affiche une arborescence de tous les nœuds du référentiel.
 
-Cliquez sur un nœud pour afficher ses propriétés dans l’onglet **Propriétés**. Après avoir cliqué sur un nœud, vous pouvez sélectionner une action dans la barre d’outils. Cliquez de nouveau sur le noeud pour le renommer.
+Cliquez sur un nœud pour afficher ses propriétés dans l’onglet **Propriétés**. Après avoir cliqué sur un nœud, vous pouvez sélectionner une action dans la barre d’outils. Cliquez de nouveau sur le nœud pour le renommer.
 
 Filtre de navigation dans l’arborescence (l’icône en forme de paire de jumelles) vous permet de filtrer les nœuds du référentiel pour lesquels le nom contient le texte saisi. S’applique uniquement aux nœuds qui ont été chargés localement.
 
 ### Volet de modification {#edit-pane}
 
-La variable **Volet Modifier** permet d’afficher le contenu du fichier actuellement sélectionné dans le référentiel. Chaque fichier ouvert est représenté sous la forme de son propre onglet dans le volet.
+Le **volet de modification** permet d’afficher le contenu du fichier actuellement sélectionné dans le référentiel. Chaque fichier ouvert est représenté par son propre onglet dans le volet.
 
 L’onglet **Accueil** permet de rechercher du contenu et/ou de la documentation et d’accéder à la documentation destinée aux développeurs et à l’assistance Adobe.
 
@@ -109,7 +109,7 @@ Le **bouton Actualiser** actualise la sélection actuelle. Les modifications des
 
 ### Bouton Enregistrer tout {#save-all-button}
 
-Le bouton **Enregistrer tout** enregistre toutes les modifications que vous avez apportées. Tant que vous n’avez pas choisi d’enregistrer, les modifications sont temporaires et perdues lorsque vous quittez la console.
+Le bouton **Enregistrer tout** enregistre toutes les modifications que vous avez apportées. Tant que vous ne décidez pas d’enregistrer, les modifications sont temporaires. Elles sont perdues lorsque vous quittez la console.
 
 * **Rétablir** – ignore toutes les modifications que vous avez apportées au nœud sélectionné depuis le dernier enregistrement, puis recharge l’état actuel du référentiel pour le nœud sélectionné
 * **Rétablir tout** – ignore toutes les modifications que vous avez apportées au référentiel entier depuis le dernier enregistrement, puis recharge l’état actuel du référentiel
@@ -167,7 +167,7 @@ L’option **Préférences** permet de définir la langue de l’interface utili
 
 ## Création d’un dossier {#creating-a-folder}
 
-Pour créer un dossier avec CRXDE Lite :
+Pour créer un fichier avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier sous lequel vous souhaitez créer le nouveau dossier, sélectionnez **Créer...**, puis **Créer un dossier...**.
@@ -178,7 +178,7 @@ Pour créer un dossier avec CRXDE Lite :
 
 ## Création d’un nœud {#creating-a-node}
 
-Pour créer un noeud avec CRXDE Lite :
+Pour créer un nœud avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le [**volet Explorateur**,](#explorer-pane) cliquez avec le bouton droit sur le nœud où vous souhaitez créer le nouveau nœud, sélectionnez **Créer**, puis **Créer un nœud**.
@@ -192,11 +192,11 @@ Vous pouvez désormais adapter le nœud à vos besoins en modifiant les proprié
 >
 La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
 >
-La validation du fait que le noeud nouvellement créé est autorisé par le type de noeud du noeud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un noeud, vérifiez si la structure de contenu est valide (vous ne pouvez pas créer un `nt:unstructured` noeud en tant qu’enfant de `nt:folder` ).
+La validation du fait que le noeud nouvellement créé est autorisé par le type de noeud du noeud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer de nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
 
 ## Création d’une propriété {#creating-a-property}
 
-Pour créer une propriété avec CRXDE Lite :
+Pour créer une propriété avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le [**volet Explorateur**,](#explorer-pane) sélectionnez le nœud dans lequel vous souhaitez ajouter la nouvelle propriété.
@@ -223,18 +223,18 @@ CRXDE Lite permet d’importer et/ou exporter des définitions de type de nœud
 Pour exporter une définition de type de nœud dans CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. Sélectionnez le noeud requis.
+1. Sélectionnez le nœud requis.
 1. Sélectionnez **Outils**, puis **Exporter le type de nœud**.
-1. La définition s’affiche sous forme de notation CND dans un nouvel onglet de votre navigateur.
+1. La définition s’affiche en notation CND dans un nouvel onglet de votre navigateur.
 1. Enregistrez les informations si nécessaire.
 
-Pour importer une définition de type de noeud :
+Pour importer une définition de type de nœud :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Sélectionnez **Outils**, puis **Importer le type de nœud**.
 1. Un nouvel onglet s’ouvre dans le [**volet de modification**](#edit-pane) intitulé **Type de nœud d’importation**.
 1. Saisissez la notation CND pour la définition dans la zone de texte de l’onglet **Type de nœud d’importation**.
-1. Vérifier **Autoriser la mise à jour** si vous mettez à jour une définition existante.
+1. Cochez **Autoriser la mise à jour** si vous mettez à jour une définition existante.
 1. Cliquez sur **Importer**.
 
 ## Journalisation {#logging}
@@ -243,9 +243,9 @@ CRXDE Lite permet d’afficher le fichier `error.log` qui se trouve sur le syst
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le menu déroulant situé à droite de l’[**onglet Console**](#console-tab) au bas de la fenêtre, sélectionnez **Journaux du serveur**.
-1. Cliquez sur le bouton **Arrêter** pour afficher les messages.
+1. Cliquez sur l’icône **Arrêter** pour afficher les messages.
 
-Vous pouvez :
+Vous pouvez effectuer les actions suivantes :
 
 * Ajuster les paramètres du journal dans la console Felix en cliquant sur l’icône **Configurations de journalisation**.
 * Effacer les messages en cliquant sur l’icône **Effacer la console**.

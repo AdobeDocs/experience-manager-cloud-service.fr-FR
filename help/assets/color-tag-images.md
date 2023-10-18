@@ -5,7 +5,7 @@ exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 67%
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 Adobe Experience Manager (AEM) Assets utilise les fonctionnalités d’Adobe Sensei AI pour distinguer les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image.
 
-Vous pouvez configurer le nombre de couleurs balisées vers une image dans une plage comprise entre 1 et 40 afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs. Experience Manager Assets applique les balises en fonction de la couverture colorimétrique d’une image. Vous pouvez également configurer le format d’affichage d’une balise de couleur.
+Vous pouvez configurer le nombre de couleurs, comprises entre un et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs. Experience Manager Assets applique les balises en fonction de la couverture colorimétrique d’une image. Vous pouvez également configurer le format d’affichage d’une balise de couleur.
 
 La figure suivante illustre l’ordre des tâches que vous effectuez pour configurer et gérer le balisage des couleurs pour les images dans Experience Manager Assets :
 
@@ -42,9 +42,9 @@ Pour gérer les propriétés de balisage des couleurs pour les images :
 
 1. Spécifiez le format d’affichage de la balise de couleur dans le champ **[!UICONTROL Format d’affichage]**. Les options possibles incluent le nom de la couleur, le RGB ou le format HEX.
 
-1. Indiquez le nombre de couleurs que vous souhaitez baliser pour les images dans la variable **[!UICONTROL Limite]** champ . Ces couleurs s’affichent lorsque vous affichez les propriétés d’une image. Vous pouvez définir un nombre compris entre 1 et 40 dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
+1. Indiquez le nombre de couleurs que vous souhaitez baliser pour les images dans la variable **[!UICONTROL Limite]** champ . Ces couleurs s’affichent lorsque vous affichez les propriétés d’une image. Vous pouvez définir un nombre compris entre un et 40 dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
 
-1. Indiquez le pourcentage de couverture colorimétrique minimal pour inclure une balise de couleur dans les résultats de recherche dans le champ **[!UICONTROL % de seuil de couverture/dominance]**. Par exemple, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 9 % dans ce champ, l’image est incluse lorsque vous recherchez des images de couleur rouge. Cependant, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 11 % dans ce champ, l’image n’est pas incluse lorsque vous recherchez des images de couleur rouge.
+1. Indiquez le pourcentage de couverture colorimétrique minimal pour inclure une balise de couleur dans les résultats de recherche dans le champ **[!UICONTROL % de seuil de couverture/dominance]**. Par exemple, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 9 % dans ce champ, l’image est incluse lorsque vous recherchez des images de couleur rouge. Cependant, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 11 % dans ce champ, l’image n’est pas incluse lorsque vous recherchez des images comprenant la couleur rouge.
 
    Vous pouvez indiquer un nombre compris entre cinq et cent dans ce champ. La valeur par défaut est 11.
 

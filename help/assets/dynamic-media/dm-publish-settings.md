@@ -12,7 +12,7 @@ exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
 source-wordcount: '3493'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -197,7 +197,7 @@ Les types de ressources et fonctionnalités suivants ne sont actuellement pas pr
 
   >[!IMPORTANT]
   >
-  >À compter du 1er mai 2023, les ressources UGC dans Dynamic Media pourront être utilisées pendant 60 jours à compter de la date de chargement. Au bout de 60 jours, les ressources sont supprimées.
+  >À compter du 1er mai 2023, les ressources UGC (contenu créé par l’utilisateur ou l’utilisatrice) dans Dynamic Media peuvent être utilisées pendant 60 jours à compter de la date de téléchargement. Au bout de 60 jours, les ressources sont supprimées.
 
   >[!NOTE]
   >

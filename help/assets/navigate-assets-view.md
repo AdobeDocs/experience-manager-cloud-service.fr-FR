@@ -6,7 +6,7 @@ exl-id: 534a8084-88f7-410e-b872-719e47e62b10
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -44,11 +44,11 @@ Vous pouvez accéder aux dossiers requis à partir de l’interface utilisateur 
 * [Tâches](/help/assets/my-workspace-assets-view.md) : vous pouvez afficher les tâches qui vous sont affectées sous l’onglet **Mes tâches**. En revanche, les tâches que vous créez peuvent être affichées sous l’onglet **Tâches affectées**. En outre, les tâches que vous avez terminées se trouvent sous l’onglet **Tâches terminées**.
 * [Ressources](/help/assets/manage-organize-assets-view.md) : liste de tous les dossiers auxquels vous avez accès sous la forme d’une arborescence.
 * **Récemment consultés** : liste des ressources que vous avez récemment prévisualisées. [!DNL Assets view] affiche uniquement les ressources que vous prévisualisez. Cette fonctionnalité n’affiche pas les ressources que vous faites défiler en naviguant dans les fichiers ou dossiers du référentiel.
-* [Collections](/help/assets/manage-collections-assets-view.md): une collection est un ensemble de ressources, de dossiers ou d’autres collections dans la vue Ressources Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs et utilisatrices. Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
+* [Collections](/help/assets/manage-collections-assets-view.md) : une collection est un ensemble de ressources, de dossiers ou d’autres collections dans la vue Assets d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs et utilisatrices. Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
 
-* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics) : dans [!DNL Assets view], vous pouvez afficher des insights en temps réel sur votre tableau de bord. La vue Assets vous permet d’afficher des données en temps réel pour votre environnement de vue Assets à l’aide du tableau de bord Statistiques . Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
-* **Corbeille** : répertorie les ressources supprimées du dossier racine **[!UICONTROL Ressources]**. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à l’emplacement d’origine ou la supprimer définitivement. Vous pouvez également spécifier un mot-clé ou appliquer des filtres standard ou personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille. Pour plus d’informations sur l’utilisation de filtres standard et personnalisés, voir [Recherche de ressources dans la vue Ressources](/help/assets/search-assets-view.md).
-* **Paramètres**: vous pouvez configurer différentes options de la vue Ressources à l’aide de la commande **Paramètres**, par exemple, les formulaires de métadonnées, les rapports et la gestion de la taxonomie.
+* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics) : dans [!DNL Assets view], vous pouvez afficher des insights en temps réel sur votre tableau de bord. La vue Assets vous permet d’afficher des données en temps réel pour votre environnement Assets à l’aide du tableau de bord Insights. Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
+* **Corbeille** : répertorie les ressources supprimées du dossier racine **[!UICONTROL Ressources]**. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à l’emplacement d’origine ou la supprimer définitivement. Vous pouvez également spécifier un mot-clé ou appliquer des filtres standard ou personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille. Pour plus d’informations sur l’utilisation de filtres standard et personnalisés, voir [Rechercher des ressources dans la vue Assets](/help/assets/search-assets-view.md).
+* **Paramètres** : vous pouvez configurer différentes options de la vue Assets à l’aide des **Paramètres**, par exemple, les formulaires de métadonnées, les rapports et la gestion de la taxonomie.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
@@ -114,7 +114,7 @@ Other use cases after previewing.
 
 ## Étapes suivantes {#next-steps}
 
-* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets
+* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 

@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Le package contient les ressources suivantes :
 
 1. Accédez à https://&lt;serveur>:&lt;port>/aem/forms.html. Entrez vos informations d’identification si nécessaire.
 1. Ouvrez le fichier sample-af-xfa pour le modifier en mode création.
-1. Dans l’explorateur de contenu de la barre latérale, sélectionnez l’onglet Objets de modèle de données . Faites glisser NumericField1 et TextField1 sur le formulaire adaptatif.
+1. Dans l’explorateur de contenu de la barre latérale, sélectionnez l’onglet Objets de modèle de données. Faites glisser NumericField1 et TextField1 jusqu’au formulaire adaptatif.
 1. Remplacez le titre de NumericField1 de **Numeric Field** par **AF Numeric Field.**
 
 >[!NOTE]
@@ -113,7 +113,7 @@ Il n’est pas nécessaire de cliquer sur le lien du message d’erreur pour met
 
 ### Champs supprimés du fichier XDP {#deleted-fields-in-xdp-file}
 
-Si un champ qui a été copié antérieurement dans un formulaire adaptatif est supprimé d’un fichier XDP, un message d’erreur s’affiche en mode création pour indiquer que le champ n’existe pas dans le fichier XDP. Dans ce cas, supprimez manuellement le champ du formulaire adaptatif ou effacez la propriété `bindRef` dans la boîte de dialogue Composant.
+Si un champ qui a été copié dans un formulaire adaptatif est supprimé d’un fichier XDP, un message d’erreur s’affiche en mode création indiquant que le champ n’existe pas dans le fichier XDP. Dans ce cas, supprimez manuellement le champ du formulaire adaptatif ou effacez la propriété `bindRef` dans la boîte de dialogue Composant.
 
 Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l’exemple utilisé dans cet article :
 
@@ -121,7 +121,7 @@ Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l�
 1. Chargez le fichier `sample-form.xdp` dans l’interface utilisateur [!DNL AEM Forms].
 1. Ouvrez le formulaire adaptatif `sample-xfa-af` en vue de sa création. Le message d’erreur suivant s’affiche : Le schéma/le modèle de formulaire du formulaire adaptatif a été mis à jour. `Click Here` pour le baser sur la nouvelle version.
 
-1. Cliquez sur le lien (intitulé « `Click Here` ») du message. Un message d’erreur s’affiche, indiquant que le champ n’existe plus dans le fichier XDP.
+1. Cliquez sur le lien (intitulé « `Click Here` ») du message. Un message d’erreur s’affiche indiquant que le champ n’existe plus dans le fichier XDP.
 
 ![Erreur apparaissant lorsque vous supprimez un élément dans le fichier XDP](assets/no-element-xdp.png)
 

@@ -5,7 +5,7 @@ exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Il est recommandé d’utiliser les composants principaux.
 
 Les services qui nécessitent l’enregistrement d’un composant sont les suivants :
 
-* Déterminer correctement les dépendances lors de la publication (c’est-à-dire s’assurer que les fragments et modèles peuvent être publiés automatiquement avec une page s’ils ont été modifiés depuis la dernière publication).
+* Déterminer correctement les dépendances au cours de la publication (c’est-à-dire s’assurer que les fragments et les modèles peuvent être publiés automatiquement avec une page s’ils ont été modifiés depuis la dernière publication).
 * Prise en charge des fragments de contenu dans la recherche de texte intégral.
 * Gestion/traitement du *contenu intermédiaire.*
 * Gestion/traitement des *ressources multimédias mixtes.*
@@ -93,7 +93,7 @@ La configuration OSGi est la suivante :
  </tbody>
 </table>
 
-Pour certaines fonctionnalités, votre composant devra respecter des conventions prédéfinies. Le tableau suivant décrit les propriétés à définir, par votre composant, pour chaque paragraphe (c’est-à-dire : `jcr:paragraph` pour chaque instance de composant) afin que les services puissent les détecter et les traiter correctement.
+Pour certaines fonctionnalités, votre composant devra respecter des conventions prédéfinies. Le tableau suivant décrit les propriétés à définir, par votre composant, pour chaque paragraphe (c’est-à-dire `jcr:paragraph` pour chaque instance de composant) afin que les services puissent les détecter et les traiter correctement.
 
 <table>
  <thead>

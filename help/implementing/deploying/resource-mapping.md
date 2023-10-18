@@ -1,6 +1,6 @@
 ---
 title: Mappage de ressource
-description: Découvrez comment définir des redirections, des URL de redirection vers un microsite et des hôtes virtuels pour AEM à l’aide du mappage des ressources.
+description: Découvrez comment définir des redirections, des URL de redirection et des hôtes virtuels pour AEM à l’aide du mappage de ressources.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
@@ -9,15 +9,15 @@ exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 54%
+ht-degree: 97%
 
 ---
 
 # Mappage de ressource{#resource-mapping}
 
-Le mappage de ressources permet de définir des redirections, des URL de redirection vers un microsite et des hôtes virtuels pour AEM.
+Le mappage de ressources permet de définir des redirections, des URL de redirection et des hôtes virtuels pour AEM.
 
-Par exemple, vous pouvez utiliser ces mappages pour :
+Par exemple, vous pouvez utiliser ces mappages pour :
 
 * faire précéder toutes les requêtes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
 * définir une redirection afin que toutes les requêtes en direction de la page `/content/en/gateway` de votre site Web soient redirigées vers `https://gbiv.com/`.
@@ -26,11 +26,11 @@ Un mappage HTTP possible consiste à préfixer toutes les demandes à `localhost
 
 `localhost:4503/content/we-retail/en/products.html`
 
-Pour y accéder à l’aide de :
+accessible à l’aide de :
 
 `localhost:4503/we-retail/en/products.html`
 
-Comme le mappage ajoute automatiquement le préfixe `/content` to `/we-retail/en/products.html`.
+En effet, le mappage ajoute automatiquement le préfixe `/content` à `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -48,25 +48,25 @@ Ces listes peuvent être visualisées (ainsi que des informations de configurati
 
 * Configuration indique la configuration actuelle (telle que définie pour le [résolveur de ressource Apache Sling](/help/overview/seo-and-url-management.md#etc-map)). 
 
-* Test de configuration Permet de saisir une URL ou un chemin d’accès à la ressource. Cliquez sur **Résoudre** ou **Carte** pour confirmer la manière dont le système transforme l’entrée.
+* Test de configuration Permet de saisir une URL ou un chemin d’accès à la ressource. Cliquez sur **Résoudre** ou **Mapper** pour confirmer la façon dont le système transforme l’entrée.
 
 * **Resolver Map Entries (Entrées de mappage du résolveur)** La liste des entrées utilisées par les méthodes ResourceResolver.resolve pour mapper les URL aux ressources. 
 
 * **Mapping Map Entries (Entrées de mappage)** La liste des entrées utilisées par les méthodes ResourceResolver.map pour mapper les chemins d’accès des ressources aux URL.
 
-Les deux listes affichent différentes entrées, y compris celles définies par défaut par les applications. Ces entrées visent souvent à simplifier les URL de l’utilisateur.
+Les deux listes affichent différentes entrées, y compris celles définies par défaut par les applications. Ces entrées visent souvent à simplifier les URL pour la personne qui les utilise.
 
-La paire de listes a **Modèle**, une expression régulière associée à la requête, avec une **Remplacement** qui définit la redirection à imposer.
+Les listes associent un **Modèle**, une expression régulière associée à la requête, à un **Remplacement** qui définit la redirection à imposer.
 
-Par exemple :
+Par exemple, le :
 
 **Modèle** `^[^/]+/[^/]+/welcome$`
 
-Déclenche :
+Déclenche le :
 
 **Remplacement** `/libs/cq/core/content/welcome.html`.
 
-Pour rediriger une requête :
+Pour rediriger une requête :
 
 `https://localhost:4503/welcome` ``
 
@@ -78,15 +78,15 @@ De nouvelles définitions de mappage sont créées dans le référentiel.
 
 >[!NOTE]
 >
->De nombreuses ressources sont disponibles pour expliquer comment définir des expressions régulières. Par exemple : [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Il existe de nombreuses ressources disponibles qui permettent d’expliquer comment définir les expressions régulières ; par exemple, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Création de définitions de mappage dans AEM {#creating-mapping-definitions-in-aem}
 
-Dans une installation standard d’AEM, vous trouverez le dossier suivant :
+L’installation standard d’AEM contient le dossier suivant :
 
 `/etc/map/http`
 
-Ce dossier est la structure utilisée lors de la définition des mappages pour le protocole HTTP. D’autres dossiers (`sling:Folder`) peuvent être créés sous `/etc/map` pour tout autre protocole que vous souhaitez mapper.
+Ce dossier correspond à la structure utilisée lors de la définition des mappages pour le protocole HTTP. D’autres dossiers (`sling:Folder`) peuvent être créés sous `/etc/map` pour tout autre protocole que vous souhaitez mapper.
 
 #### Configuration d’une redirection interne vers /content {#configuring-an-internal-redirect-to-content}
 
@@ -117,17 +117,17 @@ Pour créer le mappage qui préfixe toute demande de https://localhost:4503/ ave
 
 1. Cliquez sur **Enregistrer tout**.
 
-Ce mappage gère une requête telle que :
+Ce mappage gère une requête telle que :
 `localhost:4503/geometrixx/en/products.html`
-comme si :
+comme si :
 `localhost:4503/content/geometrixx/en/products.html`
-a été demandé.
+était demandé.
 
 >[!NOTE]
 >
 >Voir [Ressources](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) dans la documentation Sling pour plus d’informations sur les propriétés sling disponibles et leur configuration.
->Par exemple : [Interpolation de chaîne](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) s’avère utile, car il vous permet de configurer un mappage qui récupère par valeurs d’environnement au moyen de variables d’environnement.
+>Par exemple, l’[interpolation de chaîne](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) est utile, car elle permet de configurer un mappage qui récupère des valeurs par environnement via les variables d’environnement.
 
 >[!NOTE]
 >
->Vous pouvez utiliser `/etc/map.publish` pour conserver les configurations dans l’environnement de publication. Ces configurations doivent être répliquées et le nouvel emplacement ( `/etc/map.publish`) configuré pour la variable **Emplacement du mappage** de [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) de l’environnement de publication.
+>Vous pouvez utiliser `/etc/map.publish` pour conserver les configurations dans l’environnement de publication. Elles doivent ensuite être dupliquées, et le nouvel emplacement (`/etc/map.publish`) doit être configuré pour l’**emplacement du mappage** du [résolveur de ressources Apache Sling](/help/overview/seo-and-url-management.md#etc-map) de l’environnement de publication.

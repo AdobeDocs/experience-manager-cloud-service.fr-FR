@@ -5,7 +5,7 @@ exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
 source-wordcount: '1432'
-ht-degree: 60%
+ht-degree: 64%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 60%
 
 -->
 
-Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version pour utiliser tous les avantages qu’elle offre :
+Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version afin d’exploiter tous les avantages qu’elle offre :
 
 * Une méthode en libre-service pour extraire une seule fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
 * Amélioration de l’expérience utilisateur grâce à l’amélioration des états de chargement, des barrières de sécurité et de la gestion des erreurs
-* La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
+* Conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
 
 Pour commencer à utiliser la nouvelle version, désinstallez les anciennes versions de l’outil de transfert de contenu. Cette étape est nécessaire car la nouvelle version produit un changement architectural majeur. Avec la version 2.x, vous créez des jeux de migration et réexécutez l’extraction et l’ingestion sur les jeux.
 Les versions antérieures à la version 2.0.0 ne sont pas prises en charge et il est conseillé d’utiliser la version la plus récente.
@@ -79,17 +79,17 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
-* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’AEM de création n’est pas disponible pendant l’ensemble du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant l’exécution de la variable *Ingestion* phase.
+* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’instance de création AEM ne sera donc pas disponible pendant toute la durée du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
 
 * Si vous utilisez `Amazon S3` ou `Azure` comme entrepôt de données sur le système AEM source, cet entrepôt doit être configuré de sorte que les objets blob stockés ne puissent pas être supprimés (nettoyage de la mémoire). Cela garantit l’intégrité des données d’index et un échec de ce type de configuration peut entraîner des échecs d’extraction en raison d’un manque d’intégrité de ces données d’index.
 
-* Si vous utilisez des index personnalisés, vous devez veiller à les configurer avec le nœud `tika` avant d’exécuter l’outil de transfert de contenu. Voir [Préparation de la nouvelle définition d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition) pour plus d’informations.
+* Si vous utilisez des index personnalisés, vous devez veiller à les configurer avec le nœud `tika` avant d’exécuter l’outil de transfert de contenu. Pour plus d’informations, voir [Préparation de la nouvelle définition d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition).
 
 * Si vous envisagez d’effectuer des compléments, la structure de contenu du contenu existant ne doit pas changer du moment de l’extraction initiale au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 * Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
-* Un jeu de migration expire après une longue période d’inactivité, après laquelle ses données ne sont plus disponibles. Réviser [Expiration du jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#migration-set-expiry) pour plus d’informations.
+* Un jeu de migration expire après une longue période d’inactivité, après laquelle ses données ne sont plus disponibles. Pour en savoir plus, veuillez consulter [Expiration du jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#migration-set-expiry).
 
 ## Prochaines étapes {#whats-next}
 

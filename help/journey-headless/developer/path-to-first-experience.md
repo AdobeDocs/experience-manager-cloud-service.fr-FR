@@ -5,7 +5,7 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ En dehors d’AEM, nous vous recommandons également de vous assurer que vous di
 
 ### Définition des modèles de contenu et des API {#defining-models}
 
-Votre objectif est de générer une expérience cohérente et de gérer des campagnes personnalisées sur plusieurs canaux, afin de pouvoir considérer chaque canal et chaque surface comme sa propre structure de contenu à diffuser. Toutefois, la gestion de chaque canal avec son propre modèle de contenu est difficile.
+Votre objectif est de générer une expérience cohérente et de gérer des campagnes personnalisées sur plusieurs canaux, afin de pouvoir considérer chaque canal et chaque surface comme sa propre structure de contenu à diffuser. Toutefois, il est difficile de gérer chaque canal doté de son propre modèle de contenu.
 
 Il vous faut plutôt examiner la manière dont les contenus des différentes surfaces sont associés les uns aux autres en fonction de principes d’organisation tels que les hiérarchies de marques et de produits, les catégories de produits ou de surfaces, ou les étapes du parcours client. Par exemple, si vous disposez d’un ensemble de surfaces qui prennent en charge une marque spécifique de voitures que vous fabriquez, vous pouvez commencer par un modèle de contenu pour des informations générales qui seraient vraies pour l’ensemble de la voiture, puis avoir des éléments plus spécifiques, comme le contenu nécessaire pour le démarrage de la voiture, ou lorsqu’il y a des problèmes de service. Un tel modèle va appliquer un héritage pour le contenu général de la marque automobile tout en permettant des modifications en fonction du contexte spécifique nécessaire. Il permet également de gérer les futures mises à jour de ce contenu, car vous pouvez appliquer un contrôle en fonction de rôles tels que celui de responsable marketing global ou de chef de produit pour l’ensemble de la marque de voiture, par rapport à un auteur responsable de l’expérience « démarrage de la voiture ».
 
@@ -76,7 +76,7 @@ Les auteurs de contenu créent du contenu en fonction des modèles de contenu d�
 
 Avant de commencer à utiliser du contenu découplé dans AEM, vous devez vous assurer que toutes les fonctionnalités requises sont activées. Cette section décrit ces différentes exigences. Les étapes réelles pour réaliser ces étapes sont détaillées plus loin dans le [Parcours de développement découplé AEM.](#overview.md)
 
-Vous pouvez également [ressources supplémentaires](#additional-resources) pour plus d’informations sur les différentes rubriques.
+Vous pouvez également consulter les [ressources supplémentaires](#additional-resources) pour plus d’informations sur chaque sujet.
 
 ### Configuration {#configuration}
 
@@ -86,7 +86,7 @@ Vous pouvez également [ressources supplémentaires](#additional-resources) pour
 
 ## Mise en œuvre de votre première application découplée AEM
 
-Voici un aperçu de ce qui est nécessaire pour mettre en œuvre votre première application découplée pour diffuser votre contenu à l’aide d’AEM. La procédure à suivre pour effectuer ces étapes sera décrite en détail dans les parties ultérieures du Parcours de développement sans affichage.
+Voici un aperçu de ce qui est nécessaire pour mettre en œuvre votre première application découplée pour diffuser votre contenu à l’aide d’AEM. La procédure à suivre pour effectuer ces étapes est décrite en détail dans les parties suivantes du parcours de développement découplé.
 
 1. Créer des modèles de fragment de contenu
 1. Créer des fragments de contenu
@@ -106,7 +106,7 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 * Regroupez les contenus similaires dans un dossier.
    * Un auteur de contenu utilisera probablement un contenu existant pour le copier et le coller et créer du contenu. C’est pourquoi il sera plus efficace de le faire dans le même dossier.
    * AEM permet de définir des modèles autorisés par dossier afin que le bouton **Créer** n’affiche que les modèles pris en charge à cet emplacement.
-* La création de fragments de contenu en ligne par l’éditeur de fragments de contenu peut être simplifiée si le dossier racine est défini dans le modèle. Le praticien n’a alors pas à choisir un emplacement, mais doit simplement fournir un nom et peut commencer à modifier la nouvelle référence.
+* La création de fragments de contenu en ligne par l’éditeur de fragments de contenu peut être simplifiée si le dossier racine est défini dans le modèle. Le professionnel ou la professionnelle n’a alors pas à choisir un emplacement, mais doit simplement fournir un nom et peut commencer à modifier la nouvelle référence.
 
 ### Création de contenu {#authoring}
 

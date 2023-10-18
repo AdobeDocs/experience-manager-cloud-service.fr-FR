@@ -203,7 +203,7 @@ Vous pouvez avoir un ou plusieurs destinataires pour un contrat Adobe Sign. Lors
      >
      >Assurez-vous que l’adresse e-mail du premier destinataire ou du seul destinataire (s’il existe un destinataire unique) n’est pas identique au compte [!DNL Adobe Sign] utilisé pour configurer les services cloud AEM.
 
-   * **[!UICONTROL Méthode d’authentification du destinataire] :** indiquez la méthode d’authentification d’un destinataire avant d’ouvrir le contrat Adobe Sign. Vous pouvez choisir entre téléphone, base de connaissances, authentification basée sur l’identité sociale et [Identifiant du gouvernement](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html) pour [!DNL Adobe Acrobat Sign]. Pour [!DNL Adobe Acrobat Sign for Government] vous pouvez choisir entre l’authentification par téléphone et l’authentification basée sur les connaissances.
+   * **[!UICONTROL Méthode d’authentification du destinataire] :** indiquez la méthode d’authentification d’un destinataire avant d’ouvrir le contrat Adobe Sign. Vous pouvez choisir le téléphone, la base de connaissances, l’authentification par identité sociale et la [carte d’identité](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html) pour [!DNL Adobe Acrobat Sign]. Pour [!DNL Adobe Acrobat Sign for Government], vous pouvez choisir entre l’authentification par téléphone et l’authentification basée sur les connaissances.
 
    >[!NOTE]
    >

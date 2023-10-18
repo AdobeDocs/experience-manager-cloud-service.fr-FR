@@ -8,7 +8,7 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2590'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -174,7 +174,7 @@ Les traductions automatiques sont renvoyées automatiquement avec un statut **Ap
 >
 >Si vous n’avez pas désactivé l’option de projet **Supprimer le lancement après la promotion** comme [décrit dans la section précédente](#using-translation-project), les éléments traduits s’affichent en statut **Supprimé**. Il s’agit d’un comportement normal, car AEM ignore automatiquement les enregistrements de traduction une fois les éléments traduits arrivés. Les éléments traduits ont été importés en tant que copies de langue, seuls les enregistrements de traduction ont été supprimés, car ils ne sont plus nécessaires.
 >
->Ne vous inquiétez pas si ce n’est pas clair. Ces informations détaillées sur le fonctionnement d’AEM n’affecteront pas votre compréhension globale du parcours. Si vous souhaitez approfondir la manière dont AEM traite les traductions, reportez-vous à la section [ressources supplémentaires](#additional-resources) à la fin de cet article.
+>Ne vous inquiétez pas si ce n’est pas clair. Ces informations détaillées sur le fonctionnement d’AEM n’affecteront pas votre compréhension globale du parcours. Si vous souhaitez approfondir la façon dont AEM traite les traductions, reportez-vous à la section [ressources supplémentaires](#additional-resources) à la fin de cet article.
 
 ### Utilisation d’un projet de traduction créé manuellement {#using-manual-project}
 
@@ -234,7 +234,7 @@ Les traductions automatiques sont renvoyées automatiquement avec un statut **Ap
 >
 >Si vous n’avez pas désactivé l’option de projet **Supprimer le lancement après la promotion** comme [décrit dans la section précédente](#using-translation-project), les éléments traduits s’affichent en statut **Supprimé**. Il s’agit d’un comportement normal, car AEM ignore automatiquement les enregistrements de traduction une fois les éléments traduits arrivés. Les éléments traduits ont été importés en tant que copies de langue, seuls les enregistrements de traduction ont été supprimés, car ils ne sont plus nécessaires.
 >
->Ne vous inquiétez pas si ce n’est pas clair. Ces informations détaillées sur le fonctionnement d’AEM n’affecteront pas votre compréhension globale du parcours. Si vous souhaitez approfondir la manière dont AEM traite les traductions, reportez-vous à la section [ressources supplémentaires](#additional-resources) à la fin de cet article.
+>Ne vous inquiétez pas si ce n’est pas clair. Ces informations détaillées sur le fonctionnement d’AEM n’affecteront pas votre compréhension globale du parcours. Si vous souhaitez approfondir la façon dont AEM traite les traductions, reportez-vous à la section [ressources supplémentaires](#additional-resources) à la fin de cet article.
 
 ## Vérification du contenu traduit {#reviewing}
 
@@ -248,7 +248,7 @@ Appuyez ou cliquez sur cette icône pour ouvrir le contenu traduit dans sa conso
 
 ![Une page traduite](assets/translated-page.png)
 
-Vous pouvez continuer à modifier le contenu traduit si nécessaire, sous réserve que vous disposiez des autorisations appropriées, mais la modification du contenu ne relève pas de ce parcours. Voir [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique.
+Vous pouvez continuer à modifier le contenu traduit si nécessaire, sous réserve que vous disposiez des autorisations appropriées, mais la modification du contenu ne relève pas de ce parcours. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique.
 
 Le but du projet est de collecter toutes les ressources liées à une traduction en un seul endroit pour un accès facile et un aperçu clair. Cependant, comme vous pouvez le voir en affichant les détails d’un élément traduit, les traductions sont elles-mêmes renvoyées dans le dossier des sites de la langue de traduction. Dans cet exemple, le dossier est
 
@@ -268,7 +268,7 @@ Il est important de comprendre que ce contenu n’est pas publié et n’est don
 
 Si votre service de traduction fournit une traduction humaine, le processus de révision offre d’autres options. Par exemple, les traductions reviennent dans le projet en statut **Version préliminaire** et doivent être examinés et approuvés ou rejetés manuellement.
 
-La traduction humaine dépasse le cadre de ce parcours de localisation. Voir [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique. Au-delà des autres options de validation, le workflow de la traduction humaine est le même que celui des traductions automatiques, comme décrit dans ce parcours.
+La traduction humaine dépasse le cadre de ce parcours de localisation. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique. Au-delà des autres options de validation, le workflow de la traduction humaine est le même que celui des traductions automatiques, comme décrit dans ce parcours.
 
 ## Et après ? {#what-is-next}
 

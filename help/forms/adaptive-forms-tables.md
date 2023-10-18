@@ -7,7 +7,7 @@ exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '2496'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -307,13 +307,13 @@ Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiq
 
 Si vous avez créé un formulaire adaptatif en fonction d’un modèle de formulaire XFA, les éléments XFA sont disponibles dans l’onglet Modèle de données de l’outil de recherche de contenu AEM. Vous pouvez faire glisser et déposer ces éléments XFA, notamment des tableaux, dans le formulaire adaptatif.
 
-L’élément de tableau XFA est mappé sur le composant Tableau et fonctionne dans les formulaires adaptatifs prêts à l’emploi. Toutes les propriétés et fonctionnalités de tableau XDP sont conservées lors du déplacement dans le formulaire adaptatif, et vous pouvez effectuer n’importe quelle opération sur celui-ci comme vous le feriez avec le tableau natif du formulaire adaptatif. Par exemple, si une ligne d’un tableau XDP est marquée comme pouvant être répétée, elle est répétée lorsqu’elle est déposée dans des formulaires adaptatifs.
+L’élément de tableau XFA est mappé sur le composant Tableau et fonctionne dans les formulaires adaptatifs prêts à l’emploi. Toutes les propriétés et fonctionnalités de tableau XDP sont conservées lors du déplacement dans le formulaire adaptatif, et vous pouvez effectuer n’importe quelle opération sur celui-ci comme vous le feriez avec le tableau natif du formulaire adaptatif. Par exemple, si une ligne dans un tableau XDP est marquée comme pouvant être répétée, elle sera répétée dans les formulaires adaptatifs également.
 
 En outre, vous pouvez faire glisser et déposer le sous-formulaire XDP pour ajouter une nouvelle ligne au tableau. Notez toutefois que déposer un sous-formulaire imbriqué ne fonctionne pas.
 
 >[!NOTE]
 >
->Un tableau XDP sans ligne d’en-tête ne sera pas mappé au composant Tableau de formulaire adaptatif. Il est plutôt mappé au composant Panneau de formulaire adaptatif avec disposition fluide. En outre, lorsque vous ajoutez un tableau imbriqué XDP à un formulaire adaptatif, le tableau externe est converti en panneau tout en conservant le tableau interne.
+>Un tableau XDP sans ligne d’en-tête ne sera pas mappé au composant Tableau de formulaire adaptatif. Au lieu de cela, il est mappé sur le composant Panneau de formulaire adaptatif avec une disposition fluide. En outre, lorsque vous ajoutez un tableau imbriqué XDP à un formulaire adaptatif, le tableau externe est converti en panneau tout en conservant le tableau interne.
 
 Vous pouvez aussi faire glisser et déposer un groupe d’éléments de type complexe XSD pour créer une ligne de tableau. Une nouvelle ligne est créée juste en dessous de la ligne sur laquelle vous avez déposé les éléments. Les cellules créées avec des éléments de type complexe XSD conservent une référence de liaison au schéma XSD. Vous pouvez également remplacer une cellule de corps par un élément de type complexe XSD en déposant l’élément sur la cellule.
 
@@ -321,7 +321,7 @@ Vous pouvez aussi faire glisser et déposer un groupe d’éléments de type com
 >
 >Le nombre d’éléments d’un composant de tableau XDP, d’un sous-formulaire ou d’un type complexe XSD ne peut pas dépasser le nombre de cellules d’une ligne. Par exemple, vous ne pouvez pas déposer quatre éléments sur une ligne qui n’a que trois cellules. Cela provoquera une erreur.
 >
->Si le nombre d’éléments est inférieur au nombre de cellules dans une ligne, la nouvelle ligne ajoute d’abord les cellules en fonction des éléments, puis les cellules par défaut sont ajoutées pour remplir les autres cellules de la ligne. Par exemple, si vous déposez un groupe de trois éléments dans une ligne qui comporte quatre cellules, les trois premières cellules sont basées sur les éléments que vous avez déposés et la cellule restante est la cellule de tableau par défaut.
+>Si le nombre d’éléments est inférieur au nombre de cellules dans une ligne, la nouvelle ligne ajoute d’abord les cellules en fonction des éléments, puis les cellules par défaut sont ajoutées pour remplir les autres cellules de la ligne. Par exemple, si vous déposez un groupe de trois éléments dans une ligne qui comporte quatre cellules, les trois premières cellules sont basées sur les éléments déposés et la cellule restante sera la cellule de tableau par défaut.
 
 ## Considérations principales {#key-considerations}
 

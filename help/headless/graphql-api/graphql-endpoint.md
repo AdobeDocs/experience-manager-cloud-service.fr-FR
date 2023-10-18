@@ -6,7 +6,7 @@ exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -33,7 +33,7 @@ Dans AEM, il existe deux types de points d’entrée :
 >
 >L’éditeur de fragment de contenu peut permettre à un fragment de contenu d’une configuration Sites de référencer un fragment de contenu d’une autre configuration Sites (à l’aide de stratégies).
 >
->Dans ce cas, tout le contenu ne peut pas être récupéré à l’aide d’un point de terminaison spécifique à la configuration Sites.
+>Dans ce cas, tout le contenu ne peut pas être récupéré à l’aide d’un point d’entrée spécifique à la configuration Sites.
 >
 >L’auteur du contenu doit contrôler ce scénario ; par exemple, il peut être utile de placer des modèles de fragment de contenu partagés sous la configuration de sites globaux.
 
@@ -70,7 +70,7 @@ Pour activer le point d’entrée correspondant :
    >
    >L’avertissement suivant s’affiche dans la boîte de dialogue :
    >
-   >* *Les points de terminaison GraphQL peuvent introduire des problèmes de sécurité et de performances des données s’ils ne sont pas gérés avec précaution. Assurez-vous que les autorisations appropriées sont définies après la création d’un point de fin.*
+   >* *Les points d’entrée GraphQL peuvent introduire des problèmes de sécurité et de performances des données s’ils ne sont pas gérés avec précaution. Assurez-vous que les autorisations appropriées sont définies après la création d’un point d’entrée.*
 
 1. Confirmez en sélectionnant **Créer**.
 1. La variable **Étapes suivantes** La boîte de dialogue fournit un lien direct vers la console Sécurité afin que vous puissiez vous assurer que le nouveau point de terminaison créé dispose des autorisations appropriées.

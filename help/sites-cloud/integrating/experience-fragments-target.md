@@ -5,7 +5,7 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2254'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Avant d’exporter un fragment, vous devez ajouter la **configuration cloud** po
 * sélectionner un espace de travail Target comme destination ;
 * sélectionner un domaine d’externaliseur pour réécrire des références dans le fragment d’expérience (facultatif).
 
-Les options requises peuvent être sélectionnées dans **Propriétés de la page** du dossier, du fragment ou des deux ; la spécification est héritée si nécessaire.
+Vous pouvez sélectionner les options obligatoires dans les **propriétés de page** du dossier ou du fragment concerné, ou les deux. La spécification est héritée, le cas échéant.
 
 1. Accédez à la console **Fragments d’expérience**.
 
@@ -177,7 +177,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
    * **Identifiant du client** : l’identifiant du client
 
-   * **Configuration IMS**: sélectionnez la configuration requise dans la liste déroulante.
+   * **Configuration IMS** : sélectionnez la configuration requise dans la liste déroulante
 
    * **Type d’API** : par défaut : REST (XML est obsolète)
 
@@ -356,7 +356,7 @@ Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spé
 
 ## Utilisation de vos fragments d’expérience dans Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres de Target. Voir [documentation spécifique de Target](https://experiencecloud.adobe.com/resources/help/fr_FR/target/target/aem-experience-fragments.html) pour en savoir plus sur ce que vous pouvez y réaliser.
+Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres de Target. Voir [documentation spécifique de Target](https://experiencecloud.adobe.com/resources/help/fr_FR/target/target/aem-experience-fragments.html) pour en savoir plus sur ce qu’il est possible de faire.
 
 >[!NOTE]
 >

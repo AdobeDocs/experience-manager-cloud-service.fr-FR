@@ -5,7 +5,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '650'
-ht-degree: 60%
+ht-degree: 66%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 60%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
 
 ## Choix des rôles {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Avant d’intégrer un environnement as a Cloud Service Adobe Experience Manager (AEM) Forms, vous devez définir des personnages et structurer une équipe pour votre projet. Un [!DNL AEM Forms] l’équipe de projet a les personnages suivants :
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Avant d’intégrer un environnement as a Cloud Service Adobe Experience Manager (AEM) Forms, vous devez définir des personnages et structurer une équipe pour votre projet. Une équipe de projet [!DNL AEM Forms] type comprend les rôles suivants :
 
 * **Designer d’expérience utilisateur**: un concepteur d’expérience utilisateur (UX) définit le style, la mise en page et la marque pour [!DNL AEM Forms] ressources.
 
@@ -27,7 +27,7 @@ ht-degree: 60%
 
 * **Développeur Forms** : il développe une solution de formulaires personnalisée. En règle générale, un développeur Forms s’engage dans le développement d’un serveur principal, comme le développement de composants personnalisés, les processus d’AEM, les services de préremplissage, etc.
 
-* **Administrateur AEM**: un administrateur d’AEM aide à la configuration globale, comme la configuration des utilisateurs, le renforcement de l’environnement, la configuration des sources de données, la configuration des courriers électroniques et des logiciels tiers. Il aide également à réaliser les intégrations à Adobe Analytics, Adobe Target et Adobe Sign.
+* **Administration AEM** : la personne est chargée de la configuration globale, comme la configuration des utilisateurs et des utilisatrices, le renforcement de l’environnement, la configuration des sources de données, la configuration des e-mails et des logiciels tiers. Il aide également à réaliser les intégrations à Adobe Analytics, Adobe Target et Adobe Sign.
 
 * **Utilisateur final**: un utilisateur final interagit avec le formulaire publié et l’envoie, signe les formulaires envoyés, suit les demandes envoyées via un portail web et reçoit des communications personnalisées.
 

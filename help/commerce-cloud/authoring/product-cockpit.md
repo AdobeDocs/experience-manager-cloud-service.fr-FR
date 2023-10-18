@@ -5,13 +5,13 @@ exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 70%
+ht-degree: 95%
 
 ---
 
 # Console du produit {#product-cockpit}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Le cockpit de produits fournit une vue d’ensemble unifiée des catalogues de produits liés et du contenu associé. Tous les contenus associés comportent des liens pour y accéder rapidement à partir du cockpit.
 
@@ -23,13 +23,13 @@ Les données des produits intermédiaires incluent toute mutation future telle q
 
 ## Configuration {#configuration}
 
-Les catalogues de produits doivent être configurés dans AEM. Pour plus d’informations, consultez la section [Configurer un magasin et des catalogues](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog).
+Les catalogues de produits doivent être configurés dans AEM. Pour plus d’informations, consultez la section [Configurer un magasin et des catalogues](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=fr#catalog).
 
-L’activation des fonctionnalités de catalogue intermédiaire nécessite une authentification. Pour plus d’informations, consultez la section [Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html).
+L’activation des fonctionnalités de catalogue intermédiaire nécessite une authentification. Pour plus d’informations, consultez la section [Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=fr).
 
 >[!NOTE]
 >
->Les fonctionnalités de catalogue intermédiaire ne sont disponibles qu’avec Adobe Commerce et les connecteurs tiers qui prennent en charge l’authentification par jeton.
+>Les fonctionnalités de catalogue intermédiaire ne sont disponibles qu’avec Adobe Commerce et les connecteurs tiers qui prennent en charge l’authentification basée sur les jetons.
 
 ## Ouvrir le cockpit de produits {#opening-product-cockpit}
 
@@ -43,11 +43,11 @@ Le cockpit de produits est organisé de manière hiérarchique selon la structur
 
 ![Catalogues configurés](../assets/catalog-overview.png)
 
-Cliquer sur une catégorie charge les enfants de la catégorie sur laquelle l’utilisateur a cliqué.
+Cliquez sur une catégorie pour charger les enfants de la catégorie sur laquelle vous avez cliqué.
 
 ![Enfants de catégorie](../assets/catalog-category-children.png)
 
-Cliquez sur un produit pour charger des variations de produit, le cas échéant.
+Cliquez sur un produit pour charger les variations du produit si elles sont disponibles.
 
 ![Variations de produit](../assets/catalog-product-variation.png)
 
@@ -63,13 +63,13 @@ Une recherche en texte intégral sur le catalogue de produits complet est propos
 
 ## Naviguer dans le catalogue de produits intermédiaires {#staged-product-catalogs}
 
-Par défaut, le cockpit de produits affiche les données du catalogue de produits actives. L’utilisation du &quot;CATALOGUE ENREGISTRÉ&quot; dans l’onglet Filtre de gauche charge le catalogue de produits pour toute date sélectionnée.
+Par défaut, le cockpit de produits affiche les données du catalogue de produits actives. L’utilisation de l’option « CATALOGUE INTERMÉDIAIRE » dans l’onglet de filtre de gauche charge le catalogue de produits pour toute date sélectionnée.
 
 ![catalogue intermédiaire](../assets/staged-cockpit.png)
 
 ## Propriétés du catalogue de produits {#catalog-properties}
 
-Cliquez sur l’icône Propriétés d’un produit ou d’une catégorie pour ouvrir la vue des propriétés de l’objet sélectionné. Les propriétés d’ouverture d’une variante de produit sont égales pour l’ouverture des propriétés principales du produit.
+Cliquez sur l’icône des propriétés d’un produit ou d’une catégorie pour ouvrir l’affichage des propriétés de l’objet sélectionné. Ouvrir les propriétés d’une variante de produit revient à ouvrir les propriétés du produit principal.
 
 ### Onglets Commerce {#tabs}
 

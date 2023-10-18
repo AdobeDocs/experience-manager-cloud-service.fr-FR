@@ -1,17 +1,17 @@
 ---
-title: Java&trade; Tests fonctionnels
-description: Découvrez comment écrire Java&trade. tests fonctionnels pour AEM as a Cloud Service
-exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+title: Tests fonctionnels Java™
+description: Découvrez comment écrire des tests fonctionnels Java™ pour AEM as a Cloud Service
+exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # Tests fonctionnels Java™
 
-Découvrez comment écrire des tests fonctionnels Java™ pour AEM as a Cloud Service
+Découvrez comment écrire des tests fonctionnels Java™ pour AEM as a Cloud Service
 
 ## Prise en main des tests fonctionnels {#getting-started-functional-tests}
 
@@ -31,13 +31,13 @@ Une fois que vous disposez du contenu du dossier `it.tests`, vous pouvez l’uti
 
 Les mêmes outils que ceux utilisés par Adobe pour rédiger des tests fonctionnels de produit peuvent être utilisés pour rédiger vos tests fonctionnels personnalisés. Utilisez les [tests fonctionnels du produit](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) dans GitHub comme exemple de la manière d’écrire vos tests.
 
-Le code pour le test fonctionnel personnalisé est du code Java™ dans la variable `it.tests` du projet. Il doit produire un seul fichier JAR avec tous les tests fonctionnels. Si le build génère plusieurs fichiers JAR de test, le fichier JAR sélectionné est non déterministe. S’il ne génère aucun fichier JAR de test, l’étape de test est effectuée par défaut. [Consultez l’archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) pour découvrir des exemples de tests.
+Le code du test fonctionnel personnalisé est du code Java™ dans le dossier `it.tests` de votre projet. Il doit produire un seul fichier JAR avec tous les tests fonctionnels. Si le build génère plusieurs fichiers JAR de test, le fichier JAR sélectionné est non déterministe. S’il ne génère aucun fichier JAR de test, l’étape de test est effectuée par défaut. [Consultez l’archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) pour découvrir des exemples de tests.
 
-Les tests sont exécutés sur l’infrastructure de test gérée par l’Adobe, y compris au moins deux instances d’auteur, deux instances de publication et une configuration de Dispatcher. Cette configuration signifie que vos tests fonctionnels personnalisés s’exécutent sur l’ensemble de la pile AEM.
+Les tests sont exécutés sur l’infrastructure de test gérée par Adobe, comprenant au moins deux instances de création, deux instances de publication et une configuration de Dispatcher. Cette configuration signifie que vos tests fonctionnels personnalisés s’exécutent sur l’ensemble de la pile AEM.
 
 ### Structure des tests fonctionnels {#functional-tests-structure}
 
-Les tests fonctionnels personnalisés par le client doivent être placés dans un fichier JAR distinct produit par la même version de Maven que les artefacts à déployer dans AEM. En règle générale, cette version serait un module Maven distinct. Le fichier JAR obtenu doit contenir toutes les dépendances requises. Il est généralement créé avec le `maven-assembly-plugin` à l’aide du descripteur `jar-with-dependencies`.
+Les tests fonctionnels personnalisés par le client doivent être placés dans un fichier JAR distinct produit par la même version de Maven que les artefacts à déployer dans AEM. En règle générale, cette version est un module Maven distinct. Le fichier JAR obtenu doit contenir toutes les dépendances requises. Il est généralement créé avec le `maven-assembly-plugin` à l’aide du descripteur `jar-with-dependencies`.
 
 En outre, l’en-tête de manifeste `Cloud-Manager-TestType` du fichier JAR doit être défini sur `integration-test`.
 
@@ -81,9 +81,9 @@ Par exemple, une classe nommée `com.myco.tests.aem.it.ExampleIT` sera exécuté
 
 De plus, pour exclure le code test de la vérification de la couverture de l’analyse du code, le code test doit se trouver sous un package nommé `it` (le filtre d’exclusion de la couverture est `**/it/**/*.java`).
 
-Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests `aem-testing-clients`. Les développeurs sont encouragés à utiliser cette bibliothèque et à suivre ses bonnes pratiques.
+Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests `aem-testing-clients`. Les développeurs et développeuses sont encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur.
 
-Voir [`aem-testing-clients` Référentiel GitHub](https://github.com/adobe/aem-testing-clients) pour plus d’informations.
+Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ](https://github.com/adobe/aem-testing-clients).
 
 >[!TIP]
 >
@@ -91,7 +91,7 @@ Voir [`aem-testing-clients` Référentiel GitHub](https://github.com/adobe/aem-t
 
 ### Prérequis {#prerequisites}
 
-1. Les tests dans Cloud Manager sont exécutés à l’aide d’un utilisateur administrateur technique.
+1. Les tests dans Cloud Manager sont exécutés par une personne administratrice technique.
 
 >[!NOTE]
 >
@@ -103,9 +103,9 @@ Voir [`aem-testing-clients` Référentiel GitHub](https://github.com/adobe/aem-t
 | Type | Valeur | Description |
 |----------------------|-------|--------------------------------------------------------------------|
 | Processeur | 0,5 | Quantité de temps réservé au processeur par exécution de test |
-| Mémoire | 0,5Gi | Quantité de mémoire allouée au test, valeur en gibioctets |
-| Expiration | 30m | Durée au bout de laquelle le test est arrêté. |
-| Durée recommandée | 15m | Adobe recommande d’écrire les tests pour qu’ils ne prennent pas plus de temps que cette durée. |
+| Mémoire | 0,5 Go | Quantité de mémoire allouée au test, valeur en gibioctets |
+| Délai d’expiration | 30 min | Durée au bout de laquelle le test sera terminé. |
+| Durée recommandée | 15 min | Adobe recommande d’écrire les tests pour qu’ils ne prennent pas plus de temps que la durée indiquée. |
 
 >[!NOTE]
 >
@@ -118,21 +118,21 @@ Avant d’activer les tests fonctionnels dans un pipeline Cloud Manager, il est
 
 #### Exécution dans un IDE {#running-in-an-ide}
 
-Les classes de test étant des tests JUnit, elles peuvent être exécutées à partir d’IDE Java™ standard tels qu’Eclipse, IntelliJ et NetBeans. Les tests fonctionnels de produit et les tests fonctionnels personnalisés étant basés sur la même technologie, les deux peuvent être exécutés localement en copiant les tests de produit dans vos tests personnalisés.
+Les classes de test étant des tests JUnit, elles peuvent être exécutées à partir d’IDE Java™ standard comme Eclipse, IntelliJ, et NetBeans. Les tests fonctionnels de produit et les tests fonctionnels personnalisés étant basés sur la même technologie, les deux peuvent être exécutés localement en copiant les tests de produit dans vos tests personnalisés.
 
-Toutefois, lors de l’exécution de ces tests, il est nécessaire de définir diverses propriétés système attendues par la variable `aem-testing-clients` (et la bibliothèque Sling Testing Clients sous-jacente).
+Cependant, lors de l’exécution de ces tests, il est nécessaire de définir un ensemble de propriétés système attendues par la bibliothèque `aem-testing-clients` (et la clientèle de test Sling sous-jacente).
 
 Les propriétés système sont les suivantes.
 
 | Propriété | Description | Exemple |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | nombre d’instances, pour correspondre au service cloud, doit être défini sur `2` | `2` |
-| `sling.it.instance.url.1` | doit être défini sur l’URL de création | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | le mode d’exécution de la première instance doit être défini sur `author` | `author` |
+| `sling.it.instances` | quantité d’instances, pour correspondre au service cloud, doit être définie sur `2` | `2` |
+| `sling.it.instance.url.1` | doit être définie sur l’URL de création | `http://localhost:4502` |
+| `sling.it.instance.runmode.1` | mode d’exécution de la première instance, doit être défini sur `author` | `author` |
 | `sling.it.instance.adminUser.1` | doit être défini sur l’utilisateur ou l’utilisatrice admin de création. | `admin` |
 | `sling.it.instance.adminPassword.1` | doit être défini sur le mot de passe de l’administrateur ou l’administratrice de création. |                         |
 | `sling.it.instance.url.2` | doit être défini sur l’URL de publication | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | le mode d’exécution de la deuxième instance doit être défini sur `publish` | `publish` |
+| `sling.it.instance.runmode.2` | mode d’exécution de la deuxième instance, doit être défini sur `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | doit être défini sur l’utilisateur ou l’utilisatrice admin de publication. | `admin` |
 | `sling.it.instance.adminPassword.2` | doit être défini sur le mot de passe de l’administrateur ou l’administratrice de publication. |                         |
 
@@ -140,7 +140,7 @@ Les propriétés système sont les suivantes.
 
 #### Exécution de tous les tests à l’aide de Maven {#using-maven}
 
-1. Ouvrez un conteneur et accédez au dossier `it.tests` dans votre référentiel.
+1. Ouvrez un conteneur et accédez au dossier `it.tests` dans votre référentiel
 
 1. Exécutez la commande suivante fournissant les paramètres nécessaires pour démarrer les tests à l’aide de Maven.
 

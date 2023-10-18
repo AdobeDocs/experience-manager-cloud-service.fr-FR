@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -71,7 +71,7 @@ Voilà pour commencer. En fonction du niveau de complexité, une distinction peu
 
 Vous pouvez représenter ces interconnexions à l’aide de références de fragments, car ils peuvent être compris à la fois par vous (l’auteur) et par les applications découplées.
 
-En tant qu’auteur, vous n’êtes pas responsable de la définition de ces relations (c’est-à-dire de l’architecte de contenu lors de la création du modèle de fragment de contenu), mais vous devez savoir comment reconnaître et modifier les références.
+En tant qu’auteur ou autrice, vous n’êtes pas responsable de la définition de ces relations (l’architecte de contenu les définit lors de la création du modèle de fragment de contenu), mais vous devez savoir comment reconnaître et modifier les références.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")

@@ -1,27 +1,27 @@
 ---
 title: En quoi la vue Assets dans AEM vous est-elle bénéfique ?
-description: En savoir plus sur les principaux avantages de la vue Assets dans AEM. Adobe, qui tire parti de son expertise en matière d’autonomisation des professionnels et professionnelles du marketing et de la création, propose aujourd’hui une nouvelle expérience utilisateur révolutionnaire.
+description: En savoir plus sur les principaux avantages de la vue Assets dans AEM. Adobe, qui tire parti de son expertise en matière d’autonomisation des professionnelles et professionnels du marketing et de la création, propose aujourd’hui une nouvelle expérience client révolutionnaire.
 mini-toc-levels: 3
-source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 79%
+ht-degree: 86%
 
 ---
 
-
 # Présentation de la vue Assets {#assets-view}
 
-![Déploiment d’Assets Essentials.](assets/banner-image.jpg)
+![Déploiment d’Assets Essentials](assets/banner-image.jpg)
 
-Dans le paysage numérique actuel, où la création et la diffusion de contenu en temps réel sont essentielles, une expérience de gestion des actifs numériques (DAM) conçue pour la vitesse marketing en aval est primordiale. Adobe, qui tire parti de son expertise en matière d’autonomisation des professionnels et professionnelles du marketing et de la création, propose aujourd’hui une nouvelle expérience utilisateur révolutionnaire. Cette approche axée sur les workflows permet de révolutionner la manière dont les entreprises gèrent leurs ressources numériques dynamiques, en permettant aux personnes spécialisées dans le marketing d’optimiser l’efficacité dans la recherche, la collaboration, la personnalisation et la diffusion des ressources. Ces workflows rationalisés accélèrent la vitesse du contenu et propulsent vos efforts marketing vers de nouveaux sommets.
+Dans le paysage numérique actuel, où la création et la diffusion de contenu en temps réel sont essentielles, une expérience de gestion des actifs numériques (DAM) conçue pour la vitesse marketing en aval est primordiale. Adobe, qui tire parti de son expertise en matière d’autonomisation des professionnelles et professionnels du marketing et de la création, propose aujourd’hui une nouvelle expérience client révolutionnaire. Cette approche axée sur les workflows permet de révolutionner la manière dont les entreprises gèrent leurs ressources numériques dynamiques, en permettant aux personnes spécialisées dans le marketing d’optimiser l’efficacité dans la recherche, la collaboration, la personnalisation et la diffusion des ressources. Ces workflows rationalisés accélèrent la vitesse du contenu et propulsent vos efforts marketing vers de nouveaux sommets.
 
-Pour en savoir plus sur les expériences personnalisées disponibles pour Assets as a Cloud Service, voir [Présentation d’Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
+Pour en savoir plus sur les expériences personnalisées disponibles pour Assets as a Cloud Service, voir [Présentation d’Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
 ## Comment accéder à la vue Assets ? {#access-assets-view}
 
 Vous pouvez accéder à la vue Assets de la manière suivante :
-![Vue d’ensemble de Mon espace de travail.](assets/assets-view.png)
+![Vue d’ensemble de Mon espace de travail](assets/assets-view.png)
 
 <!--
 
@@ -59,23 +59,23 @@ La vue Assets offre les avantages clés suivants qui ne sont pas disponibles dan
 
 ### Tableau de bord Mon espace de travail offrant des expériences rationalisées {#my-workspace-for-streamlined-experience}
 
-Découvrez une solution de gestion des ressources numériques qui comprend les divers besoins des différents rôles de l’entreprise. La vue sélectionnée des ressources donne la priorité à la facilité d’utilisation et à la vitesse, en fonction des préférences des marketeurs en matière d’attrait visuel et d’espaces de travail encombrants. Grâce au tableau de bord Mon espace de travail personnalisé en fonction de la personne qui l’utilise, les spécialistes du marketing peuvent rapidement trouver, prévisualiser, modifier, gérer et diffuser des ressources avec une efficacité remarquable. Dites adieu aux interminables heures passées à rechercher des ressources spécifiques. Nous vous proposons aujourd’hui une expérience simplifiée qui met à votre portée tout ce dont vous avez besoin.
+Découvrez une solution de gestion des ressources numériques qui comprend les divers besoins des différents rôles de l’entreprise. La vue sélectionnée des ressources donne la priorité à la facilité d’utilisation et à la vitesse, en fonction des préférences des marketeurs en matière d’attrait visuel et d’espaces de travail encombrants. Grâce au tableau de bord Mon espace de travail personnalisé en fonction de la personne qui l’utilise, les personnes spécialisées dans le marketing peuvent rapidement trouver, prévisualiser, modifier, gérer et diffuser des ressources avec une efficacité remarquable. Dites adieu aux interminables heures passées à rechercher des ressources spécifiques. Nous vous proposons aujourd’hui une expérience simplifiée qui met à votre portée tout ce dont vous avez besoin.
 
-![Vue d’ensemble de Mon espace de travail.](assets/my-workspace-demo.gif)
+![Vue d’ensemble de Mon espace de travail](assets/my-workspace-demo.gif)
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### Insights pour la prise de décisions pilotées par les données {#insights-data}
 
-Pour suivre la vitesse du contenu, il est essentiel de pouvoir tirer parti d’informations exploitables. La vue Ressources offre des informations avancées dans My Workspace, fournissant des données précieuses sur les performances des ressources, l’utilisation de l’audience et les engagements. Les personnes spécialistes du marketing peuvent prendre des décisions basées sur les données, optimiser les stratégies de contenu et affiner leur diffusion en aval pour obtenir des résultats optimaux. Grâce à l’accès à des informations pertinentes, les entreprises ont une longueur d’avance sur la concurrence et génèrent des résultats exceptionnels.
+Pour suivre la vitesse du contenu, il est essentiel de pouvoir tirer parti d’informations exploitables. La vue Ressources offre des informations avancées dans My Workspace, fournissant des données précieuses sur les performances des ressources, l’utilisation de l’audience et les engagements. Les personnes spécialiées dans le marketing peuvent prendre des décisions pilotées par les données, optimiser les stratégies de contenu et affiner leur diffusion en aval pour obtenir des résultats optimaux. Grâce à l’accès à des informations pertinentes, les entreprises ont une longueur d’avance sur la concurrence et génèrent des résultats exceptionnels.
 
-![Vue d’ensemble d’Insights.](assets/insights-overview.gif)
+![Vue d’ensemble d’Insights](assets/insights-overview.gif)
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Intégration d’Adobe Photoshop Express pour accélérer la collaboration {#accelerate-collaboration}
 
-La nouvelle expérience fournit un solide ensemble de fonctionnalités de collaboration, notamment la modification en temps réel avec des fonctionnalités Adobe Photoshop intégrées, des contrôles de version et des outils d’annotation. Ainsi, la collaboration est transparente entre les équipes de conception, de création, de valorisation de marque et de marketing, ce qui leur permet de surmonter les goulets d’étranglement et d’accélérer le processus des opérations marketing. Les spécialistes du marketing disposent désormais d’outils puissants pour accélérer la livraison des projets et accroître leur productivité globale.
+La nouvelle expérience fournit un solide ensemble de fonctionnalités de collaboration, notamment la modification en temps réel avec des fonctionnalités Adobe Photoshop intégrées, des contrôles de version et des outils d’annotation. Ainsi, la collaboration est transparente entre les équipes de conception, de création, de valorisation de marque et de marketing, ce qui leur permet de surmonter les goulets d’étranglement et d’accélérer le processus des opérations marketing. Les personnes spécialisées dans le marketing disposent désormais d’outils puissants pour accélérer la livraison des projets et accroître leur productivité globale.
 
 Regardez cette vidéo pour comprendre la puissance de l’intégration de la vue Assets à Adobe Photoshop Express :
 
@@ -83,13 +83,13 @@ Regardez cette vidéo pour comprendre la puissance de l’intégration de la vue
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-Les prochaines versions d’Assets as a Cloud Service incluraient également [Intégration des Adobes Firefly via Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+Les prochaines versions d’Assets as a Cloud Service comprennent également l’[Intégration d’Adobe Firefly via Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
 ### Chargements de dossiers pour la configuration de la structure hiérarchique de votre organisation {#folder-uploads}
 
-Configurez rapidement une structure de dossiers pour votre organisation à l’aide de la vue Assets en chargeant les dossiers qui existent sur votre système de fichiers local. Il n’est pas nécessaire de créer des dossiers sous le dossier racine, puis de charger manuellement les ressources dans ces dossiers afin de conserver la structure hiérarchique logique. Tous les dossiers et ressources situés sous le dossier racine sont automatiquement chargés vers Experience Manager Assets.
+Configurez rapidement une structure de dossiers pour votre organisation à l’aide de la vue Assets en chargeant les dossiers qui existent sur votre système de fichiers local. Il n’est pas nécessaire de créer des dossiers sous le dossier racine et de charger manuellement les ressources dans ces dossiers afin de conserver la structure hiérarchique logique. Tous les dossiers et ressources situés sous le dossier racine sont automatiquement chargés vers Experience Manager Assets.
 
-![Chargement des dossiers.](assets/folder-uploads.gif)
+![Chargement des dossiers](assets/folder-uploads.gif)
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
 
@@ -109,28 +109,22 @@ La vue Assets permet de surveiller les opérations effectuées sur les ressource
 
 ### Suppression progressive des ressources pour un meilleur contrôle par les personnes administratrices {#soft-delete-assets}
 
-Le dossier Corbeille disponible dans la vue Assets répertorie les ressources supprimées du dossier Ressources racine. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à l’emplacement d’origine ou la supprimer définitivement. Vous pouvez également spécifier un mot-clé ou appliquer des filtres standard ou personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille.
+Le dossier Corbeille disponible dans la vue Ressources répertorie les ressources supprimées du dossier Ressources racine. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à l’emplacement d’origine ou la supprimer définitivement. Vous pouvez également spécifier un mot-clé ou appliquer des filtres standard ou personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille.
 
 ![Effectuer une suppression progressive](assets/soft-delete.gif)
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
 
-En plus de ces fonctionnalités, la vue Assets vous permet d’exécuter les fonctionnalités suivantes qui ne sont pas disponibles dans la vue Admin :
+En plus de ces fonctionnalités, la vue Ressources vous permet d’exécuter les fonctionnalités suivantes qui ne sont pas disponibles dans la vue Admin :
 
 * Charger la nouvelle version d’une ressource portant un nom différent, depuis votre système de fichiers local vers le référentiel de ressources. La ressource chargée est disponible sous la forme d’une nouvelle version portant le même nom que la ressource d’origine.
 
-* Renommez les ressources et les dossiers disponibles dans le référentiel.
+* Renommer les ressources et le dossier disponibles dans le référentiel.
 
-La vue Assets est conçue pour rationaliser les workflows, favoriser la collaboration et accélérer la diffusion des ressources. En adoptant la vitesse du contenu, les personnes spécialisées dans le marketing peuvent exploiter tout le potentiel de leurs ressources numériques et libérer leur créativité comme jamais auparavant.
+La vue Assets est conçue pour rationaliser les workflows, favoriser la collaboration et accélérer la diffusion des ressources. En adoptant la vitesse du contenu, les spécialistes du marketing peuvent exploiter tout le potentiel de leurs ressources numériques et libérer leur créativité comme jamais auparavant.
 
 
 Utilisez ces liens pour commencer rapidement à utiliser la vue Assets :
 
 * [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
-* [Prise en main de la vue Assets](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-
+* [Prise en main de la vue Ressources](/help/assets/get-started-assets-view.md)

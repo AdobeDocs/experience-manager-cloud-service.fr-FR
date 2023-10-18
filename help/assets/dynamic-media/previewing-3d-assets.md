@@ -8,7 +8,7 @@ exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
 source-wordcount: '631'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -19,27 +19,27 @@ ht-degree: 83%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-Experience Manager Assets prend en charge l’ingestion, la gestion, la prévisualisation et la diffusion de ressources 3D.
+Experience Manager Assets prend en charge l’ingestion, la gestion, la prévisualisation et la diffusion de ressources 3D.
 
-Vous pouvez prévisualiser des ressources 3D à l’aide des rendus de miniature générés automatiquement ou de la visionneuse 3D interactive. La visionneuse 3D interactive est disponible dans la page de détails de la ressource dans Experience Manager. La visionneuse comprend, entre autres, un ensemble de commandes de caméra interactives qui vous permettent de faire pivoter, de zoomer et de faire un panoramique sur la scène 3D.
+Vous pouvez prévisualiser des ressources 3D à l’aide des rendus de miniature générés automatiquement ou de la visionneuse 3D interactive. La visionneuse 3D interactive est disponible dans la page de détails de la ressource dans Experience Manager. La visionneuse comprend, entre autres, un ensemble de commandes de caméra interactives qui permettent de faire des rotations, des zooms et des panoramiques sur la scène 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formats pris en charge pour l’aperçu des miniatures dans Experience Manager{#supported-thumbnail-previewing-assets}
+## Formats pris en charge pour la prévisualisation de miniatures dans Experience Manager{#supported-thumbnail-previewing-assets}
 
-Experience Manager génère par défaut des miniatures pour les formats de fichiers suivants :
+Experience Manager génère par défaut des miniatures pour les formats de fichiers suivants :
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|
 | GLB | Transmission GL binaire | model/gltf-binary |  |
-| FBX | Autodesk FBX | application/octet-stream |  |
+| FBX | Autodesk FBX | application/octet-stream |  |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
-| 3DS | Modèle 3D Studio | application/x-3ds |  |
-| USDz | Description de scène universelle | model/vnd.usdz+zip |  |
+| 3DS | Modèle 3D Studio | application/x-3ds |  |
+| USDz | Universal Scene Description | model/vnd.usdz+zip |  |
 
-## Formats pris en charge pour l’aperçu 3D interactif dans Experience Manager{#supported-3d-previewing-assets}
+## Formats pris en charge pour la prévisualisation 3D interactive dans Experience Manager{#supported-3d-previewing-assets}
 
-Experience Manager prend nativement en charge l’aperçu 3D interactif pour les formats de fichiers suivants :
+Experience Manager prend nativement en charge la prévisualisation 3D interactive pour les formats de fichiers suivants :
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|

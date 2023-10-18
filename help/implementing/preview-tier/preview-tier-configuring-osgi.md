@@ -1,11 +1,11 @@
 ---
 title: Configuration des paramètres OSGi pour le niveau de prévisualisation
 description: Découvrez comment configurer le service de prévisualisation AEM pour prévisualiser le contenu avant sa mise en ligne.
-exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+exl-id: 1310eb1a-63ad-44f1-adf5-7a93ee3a8ae6
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Les valeurs de propriété OSGi du niveau de prévisualisation sont héritées d
 
 >[!NOTE]
 >
->Pour plus d’informations sur les environnements d’aperçu, voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Pour plus d’informations sur les environnements de prévisualisation, consultez le document [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Configuration des paramètres OSGi pour le niveau de prévisualisation {#configuring-osgi-settings-for-the-preview-tier}
 
@@ -40,7 +40,7 @@ Pour plus d’informations, consultez [cette section](/help/implementing/deployi
 
 ## Débogage de l’aperçu à l’aide de Developer Console {#debugging-preview-using-the-developer-console}
 
-Pour déboguer le niveau d’aperçu à l’aide de Developer Console, procédez comme suit :
+Pour déboguer le niveau d’aperçu à l’aide de la Developer Console, procédez comme suit :
 
 * Dans [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), sélectionnez **-- Tous les aperçus --** ou un environnement de production qui inclut **prev** dans son nom.
 * Générez les informations pertinentes pour l’instance d’aperçu

@@ -7,7 +7,7 @@ exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 Découvrez comment créer des profils d’utilisateurs dans l’Admin Console pour gérer la réception des notifications par e-mail importantes.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 De temps à autre, Adobe doit contacter les utilisateurs et utilisatrices au sujet des environnements AEM as a Cloud Service. En plus des notifications dans le produit, Adobe utilise parfois également les notifications par e-mail. Il existe deux types de notification par e-mail :
 
@@ -76,7 +76,7 @@ Vos deux nouveaux profils de notifications ont été créés.
 
 >[!NOTE]
 >
->Il est important que le **nom du profil de produit** Cloud Manager soit identique à celui fourni. Copiez et collez le nom du profil de produit fourni pour éviter les erreurs. Tout écart ou faute de frappe aura pour effet que les notifications ne seront pas envoyées comme vous le souhaitez.
+>Il est important que le **nom du profil de produit** Cloud Manager soit identique à celui fourni. Copiez et collez le nom du profil de produit fourni pour éviter toute erreur. Tout écart ou faute de frappe aura pour effet que les notifications ne seront pas envoyées comme vous le souhaitez.
 >
 >En cas d’erreur ou si les profils n’ont pas été définis, Adobe avertit par défaut les utilisateurs et utilisatrices existant(e)s affecté(e)s aux profils **Développeur Cloud Manager** ou **Responsable de déploiement**.
 

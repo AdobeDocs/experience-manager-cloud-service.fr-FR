@@ -1,11 +1,11 @@
 ---
 title: Environnements de développement rapide
-description: Découvrez comment utiliser des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
+description: Découvrez comment utiliser des environnements de développement rapide pour réaliser des itérations de développement rapides dans un environnement cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '3304'
-ht-degree: 58%
+ht-degree: 67%
 
 ---
 
@@ -20,7 +20,7 @@ Une fois les modifications testées dans un RDE, elles peuvent être déployées
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-D’autres vidéos présentent [comment le configurer](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [comment l’utiliser](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html), et la variable [cycle de vie du développement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) à l’aide de RDE.
+Vous pouvez visionner d’autres vidéos présentant [comment le configurer](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [comment l’utiliser](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html), et montrant [le cycle de vie du développement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) à l’aide du RDE.
 
 ## Présentation {#introduction}
 
@@ -44,7 +44,7 @@ Suivez ces étapes pour pouvoir utiliser Cloud Manager afin de créer un RDE pou
 
    * Les RDE peuvent être ajoutés aux [programmes sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) et aux [programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
-1. Dans la **Aperçu du programme** page, cliquez sur **Ajouter un environnement** sur le **Environnements** pour ajouter un environnement.
+1. Dans la page **Aperçu du programme**, cliquez sur **Ajouter un environnement** dans la carte **Environnements** pour ajouter un environnement.
 
    ![Carte Environnements](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -70,11 +70,11 @@ L’écran **Aperçu** affiche désormais votre nouvel environnement dans la car
 
 Lors de la création, les RDE sont définis sur la dernière version d’AEM disponible. Une réinitialisation de RDE, qui peut également être effectuée à l’aide de Cloud Manager, effectue un cycle de l’éditeur de texte enrichi et la définit sur la dernière version d’AEM disponible.
 
-Pour plus d’informations sur l’utilisation de Cloud Manager pour créer des environnements, gérer les personnes qui y ont accès et affecter des domaines personnalisés, voir [Documentation de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Pour plus d’informations sur l’utilisation de Cloud Manager pour créer des environnements, gérer leur accès et attribuer des domaines personnalisés, consultez [la documentation de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Installation des outils de ligne de commande RDE {#installing-the-rde-command-line-tools}
 
-Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, vous pouvez interagir avec celui-ci en configurant les outils de ligne de commande, comme décrit dans les étapes suivantes :
+Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, vous pouvez interagir avec celui-ci en configurant les outils de ligne de commande comme indiqué ci-dessous :
 
 >[!IMPORTANT]
 >
@@ -104,7 +104,7 @@ Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, v
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. Une fois le module externe configuré, connectez-vous en procédant comme suit :
+1. Après avoir configuré le plug-in, connectez-vous en procédant comme suit :
 
    `aio login`
 
@@ -365,7 +365,7 @@ Pour plus d’informations et de démonstration, voir le tutoriel vidéo [Commen
 
 ## Réinitialiser {#reset-rde}
 
-La réinitialisation du RDE supprime tout le code personnalisé, les configurations et le contenu des instances de création et de publication. Cette réinitialisation est utile, par exemple, si le RDE a été utilisé pour tester une fonctionnalité spécifique et que vous souhaitez la réinitialiser à un état par défaut afin que vous puissiez tester une autre fonctionnalité.
+La réinitialisation du RDE supprime tout le code personnalisé, les configurations et le contenu des instances de création et de publication. Cette réinitialisation peut s’avérer utile, par exemple, si le RDE a été utilisé pour tester une fonctionnalité spécifique et que vous souhaitez réinitialiser l’environnement à son état par défaut afin de tester une autre fonctionnalité.
 
 Une réinitialisation définit le RDE sur la dernière version d’AEM disponible.
 
@@ -393,11 +393,11 @@ Vous pouvez utiliser Cloud Manager pour réinitialiser votre RDE en procédant 
 
 1. Cliquez sur le programme pour lequel vous souhaitez réinitialiser le RDE.
 
-1. Dans la **Présentation** , cliquez sur **Environnements** dans la partie supérieure de l’écran.
+1. Dans la page **Aperçu**, cliquez sur l’onglet **Environnements** dans la partie supérieure de l’écran.
 
    ![Onglet Environnements](/help/implementing/cloud-manager/assets/environments-tab2.png)
 
-   * Vous pouvez également cliquer sur le bouton **Tout afficher** sur le bouton **Environnements** pour accéder directement à la **Environnements** .
+   * Vous pouvez également cliquer sur le bouton **Tout afficher** dans la vignette **Environnements** pour accéder directement à l’onglet **Environnements**.
 
      ![Option Tout afficher](/help/implementing/cloud-manager/assets/environment-showall.png)
 
@@ -417,7 +417,7 @@ Vous pouvez utiliser Cloud Manager pour réinitialiser votre RDE en procédant 
 
    ![Notification sous forme de bannière confirmant la réinitialisation](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Une fois le processus de réinitialisation de RDE démarré, il faut généralement quelques minutes pour terminer et rétablir l’état par défaut de l’environnement. Vous pouvez consulter le statut de la réinitialisation à tout moment dans la colonne **Statut** de la vignette **Environnements** ou dans la fenêtre **Environnements**.
+Le processus de réinitialisation du RDE dure généralement quelques minutes avant que l’environnement ne retrouve son état par défaut. Vous pouvez consulter le statut de la réinitialisation à tout moment dans la colonne **Statut** de la vignette **Environnements** ou dans la fenêtre **Environnements**.
 
 ![Statut de la réinitialisation du RDE](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ Vous pouvez également réinitialiser le RDE à l’aide du bouton représentant
 
 ![Réinitialiser le RDE à partir de la vignette Environnements](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Pour plus d’informations sur l’utilisation de Cloud Manager pour gérer vos environnements, voir [Documentation de Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
+Pour plus d’informations sur la gestion de vos environnements à l’aide de Cloud Manager, consultez [la documentation de Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Modes d’exécution {#runmodes}
 
@@ -463,7 +463,7 @@ Les niveaux de journal peuvent être définis en modifiant les configurations OS
 
 ## En quoi les RDE diffèrent-ils des environnements de développement cloud ? {#how-are-rds-different-from-cloud-development-environments}
 
-Bien que le RDE soit à de nombreux égards similaire à un environnement de développement cloud, il existe des différences architecturales mineures pour permettre une synchronisation rapide du code. Le mécanisme de transfert de code vers RDE est différent : pour les RDE, un synchronise le code d’un environnement de développement local, tandis que pour les environnements de développement Cloud, un déploie le code par le biais de Cloud Manager.
+Bien que le RDE et l’environnement de développement cloud partagent de nombreuses similitudes, ils diffèrent légèrement au niveau de leur architecture afin de permettre une synchronisation rapide du code. Le mécanisme de transfert de code vers RDE est différent : pour les RDE, un synchronise le code d’un environnement de développement local, tandis que pour les environnements de développement Cloud, un déploie le code par le biais de Cloud Manager.
 
 Pour ces raisons, il est recommandé, après la validation du code dans un environnement RDE, de déployer le code dans un environnement de développement cloud à l’aide du pipeline hors production. La dernière étape consiste à tester le code avant de le déployer avec le pipeline de production.
 

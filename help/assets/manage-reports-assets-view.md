@@ -1,11 +1,11 @@
 ---
-title: Gestion des rapports dans la vue Ressources
-description: Accédez aux données de la section des rapports de la vue Assets pour évaluer l’utilisation des produits et des fonctionnalités et obtenir des informations sur les mesures de succès clés.
+title: Gérer les rapports dans la vue Assets
+description: Accédez aux données de la section des rapports de la vue Assets pour évaluer l’utilisation des produits et des fonctionnalités et déduire des informations sur les mesures de succès clés.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -20,21 +20,21 @@ Les rapports de ressources offrent aux administrateurs et administratrices une v
 
 ## Accéder aux rapports {#access-reports}
 
-Tous les utilisateurs affectés au profil de produit Administrateurs de la vue Assets peuvent accéder au tableau de bord Statistiques ou créer des rapports définis par l’utilisateur dans la vue Assets.
+Tous les utilisateurs et toutes les utilisatrices affectés au profil de produit Administration de la vue Assets peuvent accéder au tableau de bord des Insights ou créer des rapports définis par l’utilisateur dans la vue Assets.
 
-## Affichage des insights {#view-live-statistics}
+## Afficher les insights {#view-live-statistics}
 
-La vue Assets vous permet d’afficher des données en temps réel pour votre environnement de vue Assets à l’aide du tableau de bord Statistiques . Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
+La vue Assets vous permet d’afficher des données en temps réel pour votre environnement Assets à l’aide du tableau de bord Insights. Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
 
 ![Options de la barre d’outils lors de la sélection d’une ressource](assets/assets-essentials-live-statistics.png)
 
 Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigation de gauche pour afficher les graphiques générés automatiquement suivants :
 
-* **Téléchargements**: Le nombre de ressources téléchargées à partir de l’environnement de vue Ressources au cours des 30 ou 12 derniers jours est représenté à l’aide d’un graphique en courbes.
+* **Téléchargements** : nombre de ressources téléchargées à partir de l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représenté à l’aide d’un graphique en courbes.
 
-* **Téléchargements**: Le nombre de ressources chargées dans l’environnement de la vue Ressources au cours des 30 ou 12 derniers jours est représenté à l’aide d’un graphique en courbes.
+* **Transferts** : nombre de ressources chargées dans l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représenté à l’aide d’un graphique en courbes.
 
-* **Principales recherches**: Afficher les termes recherchés principaux avec le nombre de fois où ces termes sont recherchés dans votre environnement d’affichage Ressources au cours des 30 ou 12 derniers mois, représentés sous forme de tableau.
+* **Principales recherches** : affichez les termes recherchés les plus fréquemment, ainsi que le nombre de fois où ces termes ont été recherchés dans l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représentés sous forme de tableau.
 
 <!--
 
@@ -58,7 +58,7 @@ Pour créer un rapport de téléchargement, procédez comme suit :
 
    >[!NOTE]
    >
-   > La vue Assets convertit tous les fuseaux horaires locaux en heure universelle coordonnée (UTC).
+   > La vue Assets convertit tous les fuseaux horaires locaux en temps universel coordonné (UTC).
 
 1. Sous l’onglet [!UICONTROL Colonnes], sélectionnez les noms des colonnes à afficher dans le rapport.
 
@@ -80,7 +80,7 @@ Le tableau suivant décrit l’utilisation de toutes les colonnes que vous pouve
      </tr>
      <tr>
       <td>Chemin </td>
-      <td>Chemin d’accès au dossier dans lequel la ressource est disponible en mode Ressources.</td>
+      <td>Chemin d’accès au dossier qui contient la ressource dans la vue Assets.</td>
      </tr>
      <tr>
       <td>Type MIME</td>
@@ -104,7 +104,7 @@ Le tableau suivant décrit l’utilisation de toutes les colonnes que vous pouve
      </tr>
      <tr>
       <td>Date de création</td>
-      <td>Date à laquelle la ressource est chargée dans la vue Assets.</td>
+      <td>Date à laquelle la ressource a été chargée dans la vue Assets.</td>
      </tr>
      <tr>
       <td>Date de modification</td>
@@ -155,7 +155,7 @@ Le tableau suivant décrit l’utilisation de toutes les colonnes que vous pouve
      </tr>
      <tr>
       <td>Chemin </td>
-      <td>Chemin d’accès au dossier dans lequel la ressource est disponible en mode Ressources.</td>
+      <td>Chemin d’accès au dossier qui contient la ressource dans la vue Assets.</td>
      </tr>
      <tr>
       <td>Type MIME</td>
@@ -171,7 +171,7 @@ Le tableau suivant décrit l’utilisation de toutes les colonnes que vous pouve
      </tr>
      <tr>
       <td>Date de création</td>
-      <td>Date à laquelle la ressource est chargée dans la vue Assets.</td>
+      <td>Date à laquelle la ressource a été chargée dans la vue Assets.</td>
      </tr>
      <tr>
       <td>Date de modification</td>

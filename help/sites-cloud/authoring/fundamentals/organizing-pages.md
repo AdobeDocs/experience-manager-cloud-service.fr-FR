@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -86,7 +86,7 @@ Lors de la création d’une page, il y a deux champs clés :
 
 Le **Titre** et le **Nom** de la page peuvent être créés séparément, mais ils sont associés :
 
-* lors de la création d’une page, seul le champ **Titre** est requis. Si aucun **nom** n’est indiqué lors de la création de la page, AEM génère un nom à partir des 64 premiers caractères du titre (examinez la validation présentée ci-dessous). Seuls les 64 premiers caractères sont utilisés pour prendre en charge la bonne pratique des noms de page courts.
+* lors de la création d’une page, seul le champ **Titre** est requis. Si aucun **nom** n’est indiqué lors de la création de la page, AEM génère un nom à partir des 64 premiers caractères du titre (examinez la validation présentée ci-dessous). Seuls les 64 premiers caractères sont utilisés dans le cadre de la bonne pratique définie pour les noms de pages courts.
 * Si un nom de page est spécifié manuellement par l’auteur, la limite de 64 caractères ne s’applique pas, mais d’autres limitations techniques sur la longueur du nom de la page peuvent s’appliquer.
 
 >[!TIP]
@@ -115,7 +115,7 @@ Vous trouverez la liste complète et détaillée des caractères autorisés dans
 
 Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
 
-A **Titre** Le champ contenant des caractères non valides est accepté, mais les caractères non valides sont remplacés pour le nom dérivé. Par exemple :
+Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
 | Titre | Nom dérivé |
 |---|---|
@@ -132,11 +132,11 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 >
 >Vous devez éviter d’utiliser un code à deux lettres tel que défini par la norme ISO-639-1 comme nom de page, sauf s’il s’agit d’une racine de langue.
 >
->Pour plus de détails, reportez-vous à la rubrique [Préparation du contenu de traduction](/help/sites-cloud/administering/translation/preparation.md).
+>Pour plus d’informations, voir [Préparation du contenu pour la traduction](/help/sites-cloud/administering/translation/preparation.md).
 
 ### Modèles {#templates}
 
-Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle sert de base à toute nouvelle page créée.
+Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle est utilisé comme base pour toute nouvelle page créée.
 
 Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
@@ -163,7 +163,7 @@ Les composants sont les éléments fournis par AEM afin que vous puissiez ajoute
 * Image
 * Titre
 * Carrousel
-* Et bien plus encore.
+* Et bien plus encore
 
 Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide de composants](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), disponibles dans le [navigateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
@@ -179,7 +179,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 1. Ouvrez la console Sites (par exemple, `https://<host>:<port>/sites.html/content`).
 1. Accédez à l’emplacement où créer la page.
-1. Ouvrez le sélecteur de liste déroulante à l’aide de **Créer** dans la barre d’outils, puis sélectionnez **Page** dans la liste :
+1. Ouvrez le sélecteur de liste déroulante avec l’option **Créer** de la barre d’outils, puis sélectionnez **Page** dans la liste :
 
    ![Création d’une page](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -207,7 +207,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
       * Il est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
       * Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
-      * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche pour indiquer les caractères à supprimer/remplacer.
+      * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche, indiquant les caractères à supprimer/remplacer.
 
    >[!TIP]
    >
@@ -223,7 +223,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
    >[!NOTE]
    >
-   >Si vous créez une page en utilisant un nom qui existe déjà à cet emplacement, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page devient `beach1`.
+   >Si vous créez une page en utilisant un nom qui existe déjà à cet emplacement, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, le nom de la nouvelle page est `beach1`.
 
 1. Si vous revenez à la console, la nouvelle page est présentée :
 
@@ -248,7 +248,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 
    ![Bouton Modifier](/help/sites-cloud/authoring/assets/edit.png)
 
-1. La page s’ouvre et vous pouvez [modifier la page ;](/help/sites-cloud/authoring/fundamentals/editing-content.md) selon les besoins.
+1. La page s’ouvre ; vous pouvez la [modifier](/help/sites-cloud/authoring/fundamentals/editing-content.md) selon vos besoins.
 
 >[!NOTE]
 >
@@ -283,7 +283,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
 >[!NOTE]
 >
->Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page nommée `beach` devient `beach1`.
+>Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` devient `beach1`.
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    >[!NOTE]
    >
-   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page nommée `beach` devient `beach1`.
+   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` devient `beach1`.
 
 1. À l’étape **Sélectionner une destination** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
@@ -335,7 +335,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    >[!NOTE]
    >
-   >Par défaut, le parent de la page que vous déplacez ou renommez est sélectionné comme destination.
+   >Par défaut, le parent de la page que vous déplacez/renommez est sélectionné comme destination.
 
    ![Sélectionner la destination de la page déplacée](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
@@ -343,7 +343,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
    >
    >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` devient `winter1`.
 
-1. Si la page est liée ou référencée, ou si elle a été publiée, les détails sont répertoriés dans la **Ajuster/republier** étape .
+1. Si la page est liée ou référencée, ou si elle a été publiée, les détails sont répertoriés dans l’étape **Ajuster/republier**.
 
    Vous pouvez indiquer quelles pages sont les pages à adapter et/ou à republier.
 
@@ -357,11 +357,11 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
 >[!NOTE]
 >
->Si la page a déjà été publiée, le déplacement de la page annule automatiquement sa publication. Par défaut, elle est republiée une fois le déplacement terminé, mais ce paramètre peut être modifié en décochant la case **Republier** dans le champ **Ajuster/republier** étape .
+>Si la page a déjà été publiée, son déplacement la dépublie automatiquement. Par défaut, elle est republiée une fois le déplacement terminé, mais ce paramètre peut être modifié en décochant le champ **Republier** à l’étape **Ajuster/Republier**.
 
 >[!NOTE]
 >
->Si la page n’est référencée d’aucune manière, la variable **Ajuster/republier** est ignorée.
+>Si la page n’est pas référencée, les étapes **Ajuster/republier** sont ignorées.
 
 >[!NOTE]
 >
@@ -375,7 +375,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
 Normalement, une action de déplacement ou de changement de nom de page est exécutée immédiatement. Cela est considéré comme un traitement synchrone et toute action supplémentaire dans l’interface utilisateur est bloquée jusqu’à ce que l’action soit terminée.
 
-Cependant, si le nombre de pages affectées est supérieur à une limite définie, l’action est traitée de manière asynchrone, ce qui permet à l’utilisateur de continuer à créer dans l’interface utilisateur sans être entravé par l’action de déplacement ou de changement de nom de page.
+Cependant, si le nombre de pages affectées est supérieur à une limite définie, l’action est traitée de manière asynchrone, ce qui permet à la personne utilisatrice de continuer à créer dans l’interface utilisateur sans être entravée par l’action de déplacement ou de changement de nom de page.
 
 * Lorsque vous cliquez sur **Déplacer** à la dernière étape ci-dessus, AEM vérifie la limite configurée.
 * Si le nombre de pages affectées est inférieur à la limite, il effectue une opération synchrone.
@@ -390,7 +390,7 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
 
 >[!NOTE]
 >
->Pour plus d’informations sur le traitement asynchrone des tâches et sur la configuration de la limite pour les actions de déplacement/changement de nom de page, voir [Tâches asynchrones](/help/operations/asynchronous-jobs.md) dans le guide d’utilisation des opérations.
+>Pour plus d’informations sur le traitement asynchrone des tâches et sur la manière de configurer la limite pour les actions de déplacement/changement de nom de page, consultez le document [Tâches asynchrones](/help/operations/asynchronous-jobs.md) dans le guide d’utilisation relatif aux opérations.
 
 ### Suppression d’une page {#deleting-a-page}
 
@@ -407,10 +407,10 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
 
    ![Boîte de dialogue Supprimer](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **Voulez-vous archiver les pages avant la suppression ?** - Si cette case est cochée, les versions des pages sélectionnées pour suppression sont créées lors de la suppression.
+   * **Voulez-vous archiver les pages avant la suppression ?** – Si cette case est cochée, les versions des pages sélectionnées pour suppression sont créées lors de la suppression.
       * [Il est possible de restaurer les versions ultérieurement](/help/sites-cloud/authoring/features/page-versions.md).
       * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
-   * **Annuler** pour abandonner l’opération.
+   * **Annuler** pour abandonner l’opération
    * **Supprimer** pour confirmer l’action :
 
       * Si la page ne comporte aucune référence, elle est supprimée.
@@ -441,7 +441,7 @@ Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 
 >[!NOTE]
 >
->Les dossiers sont également soumis aux [Conventions de dénomination de page](#page-naming-conventions) lors de la spécification du nouveau nom de dossier.
+>Les dossiers sont également soumis aux [Conventions de dénomination de page](#page-naming-conventions) lors de la spécification du nom du nouveau dossier.
 
 >[!CAUTION]
 >

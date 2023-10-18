@@ -1,17 +1,17 @@
 ---
 title: Limites de l’éditeur
-description: L’éditeur de l’interface utilisateur tactile utilise des superpositions pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
+description: L’éditeur de l’interface utilisateur optimisée pour les écrans tactiles emploie des recouvrements pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 65%
+ht-degree: 99%
 
 ---
 
 # Limites de l’éditeur {#editor-limitations}
 
-L’éditeur de l’interface utilisateur tactile utilise des superpositions pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions ou des solutions lorsque cela s’avère possible.
+L’éditeur de l’interface utilisateur optimisée pour les écrans tactiles emploie des recouvrements pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions ou des contournements lorsque cela s’avère possible.
 
 ## Limites fonctionnelles {#functional-limitations}
 
@@ -33,9 +33,9 @@ Un développeur peut être confronté aux limites suivantes concernant les inter
 
 ### Éléments à positionnement absolu {#absolutely-positioned-elements}
 
-Les éléments positionnés de manière absolue peuvent entraîner des problèmes de position de leur superposition.
+Les éléments positionnés de manière absolue peuvent entraîner des problèmes de position de leur recouvrement.
 
-* Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur crée une superposition avec les mêmes dimensions.
+* Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur crée un recouvrement avec les mêmes dimensions.
 
 ### Unités vh {#vh-units}
 
@@ -51,7 +51,7 @@ Il est possible que les images d’arrière-plan fixes ne puissent pas être aff
 
 La hauteur de 100 % n’est pas prise en charge sur l’élément de corps d’une page.
 
-* Une solution de contournement est possible en implémentant un corps plein écran en &quot;étirant&quot; l’élément de corps comme suit :
+* Il est possible d’appliquer une solution afin d’implémenter un corps plein écran en « étirant » l’élément de corps comme suit :
 
 ```xml
 body {

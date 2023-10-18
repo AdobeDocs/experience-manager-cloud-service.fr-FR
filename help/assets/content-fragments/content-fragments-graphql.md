@@ -6,7 +6,7 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ En termes de création de fragments de contenu dans AEM, cela signifie que :
 
 * Vous pouvez utiliser des fragments de contenu pour créer du contenu qui n’est pas principalement destiné à être publié directement (1:1) sur des pages formatées.
 
-* Le contenu de vos fragments de contenu est structuré d’une manière prédéterminée, selon les modèles de fragment de contenu. Cela simplifie l’accès à vos applications qui poursuivront le traitement de votre contenu.
+* Le contenu de vos fragments de contenu est structuré d’une manière prédéterminée, selon les modèles de fragments de contenu. Cela simplifie l’accès à vos applications qui poursuivront le traitement de votre contenu.
 
 ## GraphQL – Présentation {#graphql-overview}
 
@@ -109,4 +109,4 @@ Voir [Utilisation de GraphQL avec AEM – Exemple de contenu et de requêtes](/h
 
 ## Tutoriel – Prise en main d’AEM découplé et de GraphQL
 
-Vous cherchez un tutoriel pratique ? Consultez le tutoriel complet [Prise en main d’AEM Headless et de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS découplé.
+Vous cherchez un tutoriel pratique ? Consultez le tutoriel complet [Prise en main d’AEM Headless et de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS découplé.

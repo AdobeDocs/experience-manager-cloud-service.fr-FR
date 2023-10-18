@@ -5,7 +5,7 @@ exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2175'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -212,7 +212,7 @@ Appuyez ou cliquez sur cette icône pour ouvrir le fragment de contenu traduit d
 
 ![Un fragment de contenu traduit](assets/translated-content-fragment.png)
 
-Vous pouvez modifier le fragment de contenu si nécessaire, à condition que vous disposiez des autorisations appropriées, mais la modification des fragments de contenu dépasse la portée de ce parcours. Voir [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique.
+Vous pouvez modifier le fragment de contenu si nécessaire, à condition que vous disposiez des autorisations appropriées, mais la modification des fragments de contenu dépasse la portée de ce parcours. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique.
 
 Le but du projet est de collecter toutes les ressources liées à une traduction en un seul endroit pour un accès facile et un aperçu clair. Cependant, comme vous pouvez le voir en affichant les détails d’un élément traduit, les traductions sont elles-mêmes renvoyées dans le dossier des ressources de la langue de traduction. Dans cet exemple, le dossier est
 
@@ -232,7 +232,7 @@ Il est important de comprendre que ce contenu n’est pas publié et n’est don
 
 Si votre service de traduction fournit une traduction humaine, le processus de révision offre d’autres options. Par exemple, les traductions reviennent dans le projet en statut **Version préliminaire** et doivent être examinés et approuvés ou rejetés manuellement.
 
-La traduction humaine dépasse le cadre de ce parcours de localisation. Voir [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique. Au-delà des autres options de validation, le workflow de la traduction humaine est le même que celui des traductions automatiques, comme décrit dans ce parcours.
+La traduction humaine dépasse le cadre de ce parcours de localisation. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique. Au-delà des autres options de validation, le workflow de la traduction humaine est le même que celui des traductions automatiques, comme décrit dans ce parcours.
 
 ## Prochaines étapes {#what-is-next}
 

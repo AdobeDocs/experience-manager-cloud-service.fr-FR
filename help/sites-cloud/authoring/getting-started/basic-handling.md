@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2975'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ Ce document donne un aperçu des opérations de gestion de base dans l’environ
 
 >[!NOTE]
 >
->* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles uniquement. Des informations spécifiques sur les consoles individuelles et leurs fonctionnalités associées sont traitées plus en détail sur d’autres pages.
+>* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles uniquement. Vous trouverez des informations spécifiques et plus détaillées sur les consoles individuelles et leurs fonctionnalités associées sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
@@ -45,7 +45,7 @@ Si vous ne désactivez pas l’option **Ne plus afficher ce message**, l’aper�
 
 ## Navigation globale {#global-navigation}
 
-Pour passer d’une console à une autre, utilisez le panneau de navigation globale. Cela se déclenche sous la forme d’une liste déroulante plein écran lorsque vous cliquez ou appuyez sur le lien Adobe Experience Manager dans le coin supérieur gauche de l’écran.
+Pour passer d’une console à une autre, utilisez le panneau de navigation globale. Cliquez ou appuyez sur le lien Adobe Experience Manager, dans le coin supérieur gauche de l’écran, pour accéder au menu déroulant, qui s’affiche en mode plein écran.
 
 Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant sur **Fermer** pour revenir à votre position précédente.
 
@@ -85,7 +85,7 @@ Dans le panneau Outils se trouve un panneau latéral contenant un éventail de c
 
 ## En-tête {#the-header}
 
-L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart des options de l’en-tête restent les mêmes, quel que soit l’endroit où vous vous trouvez dans le système, certaines dépendent du contexte.
+L’en-tête est toujours présent en haut de l’écran. Bien que la plupart des options de l’en-tête restent les mêmes, quel que soit l’endroit où vous vous trouvez dans le système, certaines dépendent du contexte.
 
 ![En-tête de navigation](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
@@ -113,7 +113,7 @@ L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart de
 
   ![Bouton Notifications](/help/sites-cloud/authoring/assets/notifications.png)
 
-  Cette icône comporte un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
+  Cette icône contient un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
 
 * [Propriétés de l’utilisateur](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
@@ -219,7 +219,7 @@ L’action disponible dans la barre d’outils change pour tenir compte des acti
 
 La manière dont vous [sélectionnez une ressource](#viewing-and-selecting-resources) dépend du mode.
 
-En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois points ou **..**) ouvre un sélecteur de liste déroulante contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
+En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois points ou **…**) pour ouvrir un sélecteur de liste déroulante contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
 
 ![Options supplémentaires](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -229,7 +229,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 
 ## Actions rapides {#quick-actions}
 
-Dans [Mode Carte](#card-view) certaines actions sont disponibles sous forme d’icônes d’action rapide et se trouvent sur la barre d’outils. Les icônes d’action rapide sont disponibles pour un seul élément à la fois, ce qui évite d’avoir à présélectionner.
+Dans la [vue Carte](#card-view), certaines actions sont disponibles sous forme d’icônes d’action rapide ou dans la barre d’outils. Les icônes d’action rapide sont disponibles pour un seul élément à la fois, ce qui évite d’avoir à effectuer une présélection.
 
 Les actions rapides sont visibles lorsque vous pointez (ordinateur de bureau) sur une carte de ressource avec la souris. Les actions rapides disponibles dépendent de la console et du contexte. Voici, par exemple, les actions rapides d’une page dans la console **Sites** :
 
@@ -284,7 +284,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 #### Exemple de sélection {#selecting-example}
 
-1. Par exemple, en mode Carte :
+1. Par exemple, dans la vue Carte :
 
    ![Sélection du mode Carte](/help/sites-cloud/authoring/assets/card-view-select.png)
 
@@ -303,12 +303,12 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 * Vous pouvez naviguer de haut en bas dans l’arborescence en appuyant ou en cliquant sur le nom de la ressource ou sur le chevron situé à droite du nom de la ressource.
 
    * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous appuyez ou cliquez dessus.
-   * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de cette ressource.
-   * Si vous appuyez ou cliquez sur un nom de ressource sans enfant, ses détails s’affichent dans la colonne finale.
+   * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de celle-ci.
+   * Si vous appuyez ou cliquez sur un nom de ressource sans enfant, les détails s’affichent dans la dernière colonne.
 
 * Appuyez ou cliquez sur la miniature pour sélectionner la ressource.
 
-   * Lorsqu’elle est sélectionnée, une coche est superposée sur la miniature et le nom de la ressource est également mis en surbrillance.
+   * Lorsqu’elle est sélectionnée, une coche est apposée sur la miniature et le nom de la ressource est également mis en surbrillance.
    * Les détails de la ressource sélectionnée sont affichés dans la dernière colonne.
    * La barre d’outils d’action devient disponible.
 
@@ -361,14 +361,14 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
 * Sélectionnez les colonnes à afficher à l’aide de l’option **Afficher les paramètres** située sous le bouton Vues. Vous pouvez afficher les colonnes suivantes :
 
-   * **Nom** : nom de la page, qui peut s’avérer utile dans un environnement de création multilingue, car il fait partie de l’URL de la page et ne change pas, quelle que soit la langue.
-   * **Modifié** : date de la dernière modification et dernière modification par l’utilisateur ou l’utilisatrice.
+   * **Nom** : nom de la page, qui peut s’avérer utile dans un environnement de création multilingue, car il fait partie de l’URL de la page et ne change pas, quelle que soit la langue
+   * **Modifié** : date de la dernière modification et dernière modification par l’utilisateur ou l’utilisatrice
    * **Publié** : statut de la publication.
    * **Prévisualisation** : prévisualisation du statut
    * **Modèle** : modèle sur lequel la page est basée.
    * **Workflow** : workflow actuellement appliqué à la page. D’autres informations sont disponibles lorsque vous déplacez la souris ou lorsque vous ouvrez la chronologie.
    * **Analyse de la page**
-   * **Visiteurs uniques**
+   * **Visiteurs ou visiteuses uniques**
    * **Temps passé sur la page**
 
      ![Sélectionner des colonnes](/help/sites-cloud/authoring/assets/select-columns.png)
@@ -405,7 +405,7 @@ Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affi
 
 L’arborescence de contenu peut être utilisée pour parcourir rapidement la hiérarchie du site dans le panneau latéral et afficher de nombreuses informations sur les pages du dossier actif.
 
-Grâce au panneau latéral de l’arborescence de contenu associé à un mode Liste ou Carte, les utilisateurs peuvent facilement voir la structure hiérarchique du projet, naviguer facilement dans la structure de contenu à l’aide du panneau latéral de l’arborescence de contenu et afficher des informations détaillées sur la page en mode Liste.
+Grâce au panneau latéral de l’arborescence de contenu associé à la vue Liste ou Carte, les utilisateurs et utilisatrices peuvent facilement voir la structure hiérarchique du projet et naviguer dans la structure de contenu à l’aide du panneau latéral de l’arborescence de contenu. Cela leur permet également de consulter les informations détaillées de la page en vue Liste.
 
 ![Arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -413,7 +413,7 @@ Grâce au panneau latéral de l’arborescence de contenu associé à un mode Li
 >
 >Après avoir sélectionné une entrée dans la hiérarchie, vous pouvez naviguer rapidement dans la hiérarchie à l’aide des touches directionnelles.
 >
->Voir [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
+>Reportez-vous à la section [Raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
 
 ### Chronologie {#timeline}
 

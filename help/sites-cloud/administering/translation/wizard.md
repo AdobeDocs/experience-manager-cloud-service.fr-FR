@@ -7,7 +7,7 @@ exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 66%
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ L’assistant Copie de la langue est une expérience guidée pour créer et gér
 
 >[!TIP]
 >
->Si vous commencez à traduire du contenu, voir [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous débutez dans la traduction de contenu, référez-vous à notre [Parcours de traduction Sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour celles et ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 >[!NOTE]
 >

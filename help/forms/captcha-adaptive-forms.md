@@ -9,7 +9,7 @@ exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
 source-wordcount: '1935'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 74%
 | Application | Formulaire adaptatif basé sur des composants de base. <br> Pour les formulaires adaptatifs basés sur les composants principaux, [Cliquez ici](/help/forms/captcha-adaptive-forms-core-components.md). |
 
 
-CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatique ayant pour but de différencier les humains des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les humains des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’un humain ou d’un robot qui interagit avec le site. Il empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et contribue à sécuriser les transactions en ligne en empêchant les robots d’envoyer des spams ou des messages malveillants.
+CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
 [!DNL AEM Forms] prendre en charge reCAPTCHA dans Adaptive Forms. Vous pouvez utiliser le service reCAPTCHA de Google pour implémenter CAPTCHA.
 
@@ -36,7 +36,7 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 >* reCAPTCHA dans Adaptive Forms n’est pas pris en charge en mode hors ligne sur [!DNL AEM Forms] application.
 >
 
-## Configuration du service reCAPTCHA par Google {#google-reCAPTCHA}
+## Configurer le service reCAPTCHA de Google {#google-reCAPTCHA}
 
 Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour implémenter reCAPTCHA dans les Forms adaptatifs. Il offre des fonctionnalités avancées de CAPTCHA pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, consultez [Google reCAPTCHA](https://developers.google.com/recaptcha/). Le service reCAPTCHA comprend [!DNL reCAPTCHA v2] et [!DNL reCAPTCHA Enterprise] dans lequel vous pouvez intégrer [!DNL AEM Forms]. Selon vos besoins, vous pouvez configurer le service reCAPTCHA pour activer :
 
@@ -50,7 +50,7 @@ Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour 
 
 1. Créez ou sélectionnez une [Projet Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) et activez [API d’entreprise reCAPTCHA](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
 1. Obtention de la variable [Identifiant de projet](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) et créez un [Clé API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) et un [clé de site pour les sites web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
-1. Créez un conteneur de configuration pour les services cloud.
+1. Créez un conteneur de configurations pour les services cloud.
 
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
    1. Sélectionnez un dossier ou créez-en un, puis activez le dossier pour les configurations cloud en procédant comme suit :
@@ -80,7 +80,7 @@ Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé
 ### Configurer Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
 1. Obtenir la [paire de clés de l’API reCAPTCHA](https://www.google.com/recaptcha/admin) de Google. Elle comprend une **clé de site** et une **clé secrète**.
-1. Créez un conteneur de configuration pour les services cloud.
+1. Créez un conteneur de configurations pour les services cloud.
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
    1. Sélectionnez un dossier ou créez-en un, puis activez le dossier pour les configurations cloud en procédant comme suit :
       1. Dans le navigateur de configuration, sélectionnez le dossier  et appuyez sur **[!UICONTROL Propriétés]**.
@@ -229,7 +229,7 @@ Appuyez sur le champ **[!UICONTROL Valeur monétaire]** dans le formulaire et cr
 
 >[!NOTE]
 >
-> Lorsque vous sélectionnez une configuration reCAPTCHA v2 et que la taille est définie sur [!UICONTROL Invisible], l’option d’affichage/masquage reste désactivée.
+> Lorsque vous sélectionnez une configuration reCAPTCHA v2 et que la taille est définie sur [!UICONTROL Invisible], l’option afficher/masquer reste désactivée.
 
 ### Valider le CAPTCHA {#validate-captcha}
 

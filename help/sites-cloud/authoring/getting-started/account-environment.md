@@ -5,7 +5,7 @@ exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 46%
+ht-degree: 60%
 
 ---
 
@@ -19,7 +19,7 @@ Accédez tout d’abord à l’option [Utilisateur](#user-settings) dans l’en-
 
 ## Paramètres utilisateur {#user-settings}
 
-La variable **Utilisateur** La boîte de dialogue paramètres vous donne accès aux options suivantes :
+La boîte de dialogue des paramètres **Utilisateur** vous donne accès aux options suivantes :
 
 * Se faire passer pour
    * La fonction Se faire passer pour permet à un utilisateur de travailler au nom d’un autre. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -40,13 +40,13 @@ Chaque utilisateur peut définir ses propriétés préférées.
 
 * **Langue**
 
-  Cette option définit la langue à utiliser pour l’interface utilisateur de l’environnement de création. Sélectionnez la langue souhaitée dans la liste disponible.
+  Cette option définit la langue à utiliser pour l’interface utilisateur de l’environnement de création. Sélectionnez la langue désirée dans la liste.
 
 * **Gestion des fenêtres**
 
   Cela définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
 
-   * **Fenêtres multiples** (Par défaut)
+   * **Fenêtres multiples** (par défaut)
 
       * Les pages s’ouvrent dans une nouvelle fenêtre.
 
@@ -60,7 +60,7 @@ Chaque utilisateur peut définir ses propriétés préférées.
 
 * **Couleur de l’annotation**
 
-  Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
+  Elle définit la couleur par défaut utilisée lors de la création d’annotations.
 
    * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillon afin de sélectionner une couleur.
    * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.

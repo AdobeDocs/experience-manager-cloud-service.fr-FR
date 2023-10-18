@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
 source-wordcount: '4330'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -187,7 +187,7 @@ ht-degree: 91%
       + [Tâches du développeur et du responsable de déploiement](/help/journey-onboarding/developers.md)
       + [Tâches utilisateur d’AEM](/help/journey-onboarding/aem-users.md)
    + Parcours complémentaire des démonstrations de référence d’AEM {#demo-add-on}
-      + [Présentation](/help/journey-sites/demos-add-on/overview.md)
+      + [Vue d’ensemble](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
       + [Créer un programme](/help/journey-sites/demos-add-on/create-program.md)
       + [Créer un site de démonstration](/help/journey-sites/demos-add-on/create-site.md)
@@ -214,7 +214,7 @@ ht-degree: 91%
    + [Guide de migration vers Experience Manager as a Cloud Service pour les partenaires](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Présentation de Cloud Acceleration Manager {#introduction-cam}
-         + [Présentation](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [Vue d’ensemble](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [Avantages](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Utilisation de Cloud Acceleration Manager {#using-cam}
          + [Prise en main de Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
@@ -223,13 +223,13 @@ ht-degree: 91%
          + [Phase de mise en ligne](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + Outils de transition vers le cloud {#cloud-migration}
       + Analyseur des bonnes pratiques {#best-practices-analyzer}
-         + [Présentation](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [Vue d’ensemble](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Utilisation de l’analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Transformateur de contenu {#content-transformer}
          + [Vue d’ensemble](/help/journey-migration/content-transformer/overview.md)
-         + [Utilisation de Content Transformer](/help/journey-migration/content-transformer/using.md)
+         + [Utilisation du Transformateur de contenu](/help/journey-migration/content-transformer/using.md)
       + Outil de transfert de contenu {#content-transfer-tool}
-         + [Présentation](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [Vue d’ensemble](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
@@ -245,7 +245,7 @@ ht-degree: 91%
          + [Exécution de l’outil de transfert de contenu sur une instance de publication](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Dépannage de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Outil de mappage hérité (hérité){#legacy-user-mapping-tool}
-            + [Présentation](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + [Vue d’ensemble](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Points importants](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Utilisation de l’outil de mappage des utilisateurs](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Outils de refactorisation du code {#refactoring-tools}
@@ -400,7 +400,7 @@ ht-degree: 91%
    + [Accessibilité dans [!DNL Assets]](/help/assets/accessibility.md)
    + Gestion des ressources numériques {#manage}
       + [Sélecteur de ressources micro front-end](/help/assets/asset-selector.md)
-      + [Sélecteur de destination micro-front](/help/assets/destination-selector.md)
+      + [Sélecteur de destinations micro front-end](/help/assets/destination-selector.md)
       + [Partage de ressources](/help/assets/share-assets.md)
       + [Surveillance des activités et des tâches de gestion des ressources numériques (DAM)](/help/assets/assets-activity-history.md)
       + [Prise en main des microservices de ressources](/help/assets/asset-microservices-configure-and-use.md)
@@ -465,7 +465,7 @@ ht-degree: 91%
       + [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [Réutiliser les fragments de contenu à l’aide de MSM pour Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
    + Dynamic Media {#dynamicmedia}
       + Parcours Dynamic Media : principes de base {#dm-journey}
          + [Première partie : présentation de Dynamic Media - Cas d’utilisation - Flux des ressources dans le système](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -520,7 +520,7 @@ ht-degree: 91%
       + [FAQ sur la diffusion de contenu HTTP/2](/help/assets/dynamic-media/http2faq.md)
       + [Fin de prise en charge des visionneuses Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fin de vie des visionneuses DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + Utilisation de la vue Assets {#assets-view}
+   + Utilisation de la vue Ressources {#assets-view}
       + [Présentation](/help/assets/assets-view-introduction.md)
       + [Prise en main](/help/assets/get-started-assets-view.md)
       + [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
@@ -534,7 +534,7 @@ ht-degree: 91%
       + [Gestion des métadonnées des ressource](/help/assets/metadata-assets-view.md)
       + [Partager des ressources](/help/assets/share-links-for-assets-view.md)
       + [Gestion des collections](/help/assets/manage-collections-assets-view.md)
-      + [Surveiller les ressources, les dossiers et les collections](/help/assets/manage-notifications-assets-view.md)
+      + [Surveiller une ressource, des dossiers et des collections](/help/assets/manage-notifications-assets-view.md)
       + [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
       + [Gérer les balises](/help/assets/tagging-management-assets-view.md)
    + Bonnes pratiques{#best-practices}
@@ -560,7 +560,7 @@ ht-degree: 91%
    + Configurer et migrer {#setup-configure-migrate}
       + [Intégration d’un environnement Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configuration d’un environnement de développement local](/help/forms/setup-local-development-environment.md)
-      + [Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+      + [Activer les composants principaux des formulaires adaptatifs AEM Forms as a Cloud Service et dans l’environnement de développement local](/help/forms/enable-adaptive-forms-core-components.md)
       + [Configurer le connecteur de stockage unifié](/help/forms/configure-unified-storage-connector.md)
       + [Migrer de [!DNL AEM 6.5 Forms] ou une version antérieure à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
@@ -587,17 +587,17 @@ ht-degree: 91%
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
    + Formulaires adaptatifs {#adaptive-forms-authoring}
-      + [Création d’un formulaire adaptatif](/help/forms/create-an-adaptive-form.md)
-      + [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+      + [Créer un formulaire adaptatif](/help/forms/create-an-adaptive-form.md)
+      + [Ajouter un formulaire adaptatif à une page AEM Sites ou un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Composants principaux {#authoring-adaptive-forms-core-components}
          + Création d’un formulaire adaptatif {#create-an-adaptive-form-on-forms-cs}
             + [Création d’un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)
             + [Création d’un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments-core-components.md)
             + [Création de thèmes pour un formulaire adaptatif - Composants principaux](/help/forms/using-themes-in-core-components.md)
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
-            + [Utilisation de la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-            + [Configuration de la page de redirection ou du message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
-            + [Création de formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
+            + [Utiliser la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+            + [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
+            + [Créer des formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
             + [Configuration de l’action Envoyer pour un formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)
             + [Utilisation de Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -628,7 +628,7 @@ ht-degree: 91%
             + [Application de styles CSS intégrés à des composants de formulaire adaptatif individuels](/help/forms/inline-style-adaptive-forms.md)
          + Ajout de règles et utilisation d’expressions dans un formulaire adaptatif {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Ajout de règles à un formulaire adaptatif](/help/forms/rule-editor.md)
-            + [Ajout d’un gestionnaire d’erreurs personnalisé à l’aide du service Invoke de l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [Ajouter un gestionnaire d’erreurs personnalisé à l’aide du service Invoke de l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + Utilisation d’[!DNL Adobe Sign] {#use-adobe-sign}
             + [Utilisation d’Adobe Sign pour signer électroniquement un formulaire adaptatif](/help/forms/working-with-adobe-sign.md)
          + Configuration des actions Envoyer et de l’envoi de métadonnées {#configure-submit-actions-and-metadata-submission}
@@ -714,7 +714,7 @@ ht-degree: 91%
          + [Création d’expériences produit](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + Intégrations {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [Solution commerciale tierce](/help/commerce-cloud/integrating/third-party.md)
+      + [Solution de commerce tierce](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
       + [Prise en main](/help/commerce-cloud/getting-started.md)
@@ -843,7 +843,7 @@ ht-degree: 91%
          + [Gestion des pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Déploiement de votre code](/help/implementing/cloud-manager/deploy-code.md)
       + Présentation des résultats de test {#test-results}
-         + [Présentation](/help/implementing/cloud-manager/overview-test-results.md)
+         + [Vue d’ensemble](/help/implementing/cloud-manager/overview-test-results.md)
          + [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Tests fonctionnels {#functional-testing}
@@ -852,7 +852,7 @@ ht-degree: 91%
             + [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
          + [Tests d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [Tableau de bord du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md)
-      + [Accès aux journaux et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md)
+      + [Accéder aux journaux et les gérer](/help/implementing/cloud-manager/manage-logs.md)
       + [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md)
       + [Création de rapports de contrat SLA](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)

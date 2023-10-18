@@ -5,11 +5,11 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
-# Présentation {#overview-best-practices-analyzer}
+# Vue d’ensemble {#overview-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
@@ -37,4 +37,4 @@ Les liens contenus dans le rapport de l’analyseur de bonnes pratiques apporten
 >[!NOTE]
 >Le rapport d’analyse des meilleures pratiques accélère le processus d’évaluation du délai et du coût de la transition vers AEM as a Cloud Service en apportant des informations qui, en son absence, auraient dû être collectées et évaluées manuellement.
 
-Vous pouvez également télécharger le rapport de l’analyseur de bonnes pratiques depuis votre instance AEM. Voir [Affichage du rapport Analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) pour plus d’informations.
+Vous pouvez également télécharger le rapport de l’analyseur de bonnes pratiques depuis votre instance AEM. Reportez-vous à la section [Affichage du rapport du Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) pour plus d’informations.

@@ -5,7 +5,7 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '857'
-ht-degree: 46%
+ht-degree: 50%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) Cloud Service offre de nombreuses nouvelles fonct
 
 
 >[!NOTE]
->Ce document met en évidence les modifications notables apportées à AEM dans son ensemble. Pour plus d’informations et des modifications spécifiques aux solutions, voir :
+>Ce document met en évidence les modifications notables apportées à AEM dans son ensemble. Pour plus d’informations et pour connaître les changements spécifiques à une solution, consultez :
 >
 >* [Introduction à Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Nouveautés et différences](/help/overview/what-is-new-and-different.md) entre Adobe Experience Manager as a Cloud Service avec les versions précédentes
@@ -49,14 +49,14 @@ Les principales différences sont les suivantes :
 
 ## /apps et /libs ne sont pas modifiables au moment de l’exécution {#apps-libs-immutable}
 
-Tout contenu et sous-dossiers dans `/apps` et `/libs` est en lecture seule. Les fonctionnalités ou le code personnalisé qui s’attendent à y apporter des modifications échouent. Une erreur est renvoyée indiquant que ce contenu est en lecture seule et que l’opération d’écriture n’a pas pu être terminée. Cela a un impact dans plusieurs domaines AEM :
+Tout contenu et sous-dossiers dans `/apps` et `/libs` est en lecture seule. Les fonctionnalités ou le code personnalisé qui s’attendent à y apporter des modifications échouent. Une erreur est alors renvoyée, indiquant que ce contenu est en lecture seule et que l’opération d’écriture n’a pas pu être effectuée. Cela a un impact dans plusieurs domaines AEM :
 
 * Aucune modification n’est autorisée dans `/libs`.
    * Il ne s’agit pas d’une nouvelle règle, mais elle n’a pas été appliquée dans les versions on-premise précédentes d’AEM.
 * Recouvrements pour les zones de `/libs` qui peuvent être superposées sont toujours autorisées dans `/apps`.
    * Ces recouvrements doivent provenir de Git par le biais du pipeline CI/CD.
 * Informations de conception de modèle statique stockées dans `/apps` ne peut pas être modifié à l’aide de l’interface utilisateur.
-   * Il est recommandé d’utiliser plutôt des modèles modifiables .
+   * Il est recommandé d’utiliser plutôt des modèles modifiables.
    * Si des modèles statiques sont toujours requis, les informations de configuration doivent provenir de Git par le biais du pipeline CI/CD.
 * Les configurations de déploiement MSM personnalisées et le plan directeur MSM doivent être installés à partir de Git par le biais du pipeline CI/CD.
 * Les modifications de traduction I18n doivent provenir de Git par le biais du pipeline CI/CD.

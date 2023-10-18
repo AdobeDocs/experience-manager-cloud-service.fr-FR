@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ Maintenant que vous avez mis à jour l’image du cycliste, nous allons découvr
 
 1. Sélectionnez le calque **Mtn Biking - Shoppable**.
 
-1. Pour créer un appel à l’extérieur sur ce panneau, vous devez créer un fragment de contenu à moment Shoppable. Appuyez ou cliquez sur le bouton **+ Créer un nouveau fragment**.
+1. Pour créer un nouvel appel à l’extérieur sur ce panneau, vous devez créer un fragment de contenu de moment d’achat. Appuyez ou cliquez sur le bouton **+ Créer un nouveau fragment**.
 
    ![Ajouter un moment d’achat](assets/do-not-localize/add-reference-1-5.png)
 

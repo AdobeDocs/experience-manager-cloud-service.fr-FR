@@ -6,7 +6,7 @@ exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
 source-wordcount: '3144'
-ht-degree: 46%
+ht-degree: 49%
 
 ---
 
@@ -32,7 +32,7 @@ Comme les requêtes peuvent être l’une des opérations les plus contraignante
 
 ### Parcours transversal des nœuds {#traversing-nodes}
 
-Si le référentiel est conçu de manière à permettre une connaissance préalable de l’emplacement des données requises, le code qui récupère ces données des chemins nécessaires peut être déployé sans avoir à exécuter des requêtes pour les trouver.
+Si le référentiel est conçu de manière à permettre une connaissance préalable de l’emplacement des données requises, le code qui récupère ces données dans les chemins nécessaires peut être déployé sans avoir à exécuter de requêtes pour le trouver.
 
 Par exemple, le rendu de contenu correspondant à une certaine catégorie. Une méthode consiste à organiser le contenu avec une propriété de catégorie qui peut être interrogée pour renseigner un composant qui affiche des éléments dans une catégorie.
 
@@ -77,7 +77,7 @@ Ce graphique illustre le flux général d’utilisation de l’outil de performa
 
 Chaque requête doit utiliser un index pour fournir des performances optimales. Dans la plupart des cas, les index prêts à l’emploi existants doivent être suffisants pour gérer les requêtes.
 
-Il arrive que des propriétés personnalisées doivent être ajoutées à un index existant, de sorte que des contraintes supplémentaires puissent être interrogées à l’aide de l’index. Consultez le document [Recherche et indexation de contenu](/help/operations/indexing.md#changing-an-index) pour en savoir plus. La variable [Aide-mémoire pour les requêtes JCR](#jcr-query-cheatsheet) la section de ce document décrit comment une définition de propriété sur un index doit chercher à prendre en charge un type de requête spécifique.
+Il arrive que des propriétés personnalisées doivent être ajoutées à un index existant, de sorte que des contraintes supplémentaires puissent être interrogées à l’aide de l’index. Consultez le document [Recherche et indexation de contenu](/help/operations/indexing.md#changing-an-index) pour en savoir plus. La section [Aide-mémoire pour les requêtes JCR](#jcr-query-cheatsheet) de ce document décrit l’aspect que doit prendre une définition de propriété sur un index pour prendre en charge un type de requête spécifique.
 
 ### Utiliser les critères appropriés {#use-the-right-criteria}
 
@@ -254,7 +254,7 @@ Pour optimiser les performances de cette seconde requête, créez une version pe
 
 Pour prendre en charge la création de requêtes JCR et de définitions d’index efficaces, la section [Aide-mémoire pour les requêtes JCR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=fr#jcrquerycheatsheet) peut être téléchargée et utilisée comme référence pendant le développement.
 
-Il contient des exemples de requêtes pour QueryBuilder, XPath et SQL-2, couvrant plusieurs scénarios qui se comportent différemment en termes de performances des requêtes. Il fournit également des recommandations sur la version ou la personnalisation d’index Oak. Le contenu de cet aide-mémoire s’applique à AEM as a Cloud Service et AEM 6.5.
+Il contient des exemples de requêtes pour QueryBuilder, XPath et SQL-2, couvrant plusieurs scénarios qui se comportent différemment en termes de performances des requêtes. Il fournit également des recommandations sur la version ou la personnalisation d’index Oak. Le contenu de cet aide-mémoire s’applique à AEM as a Cloud Service ainsi qu’à la version 6.5 d’AEM.
 
 ## Bonnes pratiques relatives à la définition d’index {#index-definition-best-practices}
 

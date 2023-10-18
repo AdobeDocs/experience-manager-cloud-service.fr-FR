@@ -5,7 +5,7 @@ exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 47%
+ht-degree: 56%
 
 ---
 
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-L’utilisation d’une action GitHub est flexible. Tout mappage entre les branches des référentiels Git peut être effectué et tout mappage des projets Git distincts dans la disposition des répertoires du projet principal.
+L’utilisation d’une action GitHub est flexible. Tout mappage entre les branches des référentiels Git peut être effectué, de même que tout mappage de projets Git distincts dans la disposition des répertoires du projet principal.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-L’utilisation d’une tâche Jenkins est flexible. Tout mappage entre les branches des référentiels Git peut être effectué et tout mappage des projets Git distincts dans la disposition des répertoires du projet principal.
+L’utilisation d’une tâche Jenkins est flexible. Tout mappage entre les branches des référentiels Git peut être effectué, de même que tout mappage de projets Git distincts dans la disposition des répertoires du projet principal.
 
 >[!NOTE]
 >

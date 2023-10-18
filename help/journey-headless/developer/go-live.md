@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Pour préparer votre application AEM découplée pour son lancement, suivez les 
 
 * Évitez de créer des requêtes qui génèrent plus de 15 ko de JSON (fichier compressé gzip). Les fichiers JSON trop longs consomment beaucoup de ressources que l’application cliente doit ensuite analyser.
 * Évitez plus de cinq niveaux imbriqués dans les hiérarchies de fragments. Les niveaux supplémentaires rendent difficile la prise en compte de l’impact de leurs modifications par les auteurs de contenu.
-* Utilisez des requêtes à plusieurs objets au lieu de modéliser des requêtes avec des hiérarchies de dépendances au sein des modèles. Cela offre une plus grande flexibilité à long terme pour restructurer la sortie JSON sans avoir à effectuer de nombreuses modifications de contenu.
+* Utilisez des requêtes à plusieurs objets au lieu de modéliser des requêtes avec des hiérarchies de dépendances au sein des modèles. Cela permet une plus grande flexibilité à long terme pour restructurer la sortie JSON sans avoir à effectuer de nombreuses modifications de contenu.
 
 ## Maximiser le ratio cache-accès CDN {#maximize-cdn}
 
@@ -50,7 +50,7 @@ Pour préparer votre application AEM découplée pour son lancement, suivez les 
    * Dans la mesure du possible, utilisez des requêtes persistantes.
    * Fournissez un TTL CDN supérieur à 600 secondes pour que le CDN les mette en cache.
    * AEM peut calculer l’impact d’une modification de modèle sur des requêtes existantes.
-* Partage des fichiers JSON/requêtes GraphQL entre un taux de changement de contenu faible et élevé afin que vous puissiez réduire le trafic client sur le réseau de diffusion de contenu et attribuer un TTL plus élevé. Vous minimiserez grâce à cela la revalidation par le CDN du fichier JSON avec le serveur d’origine.
+* Partagez les requêtes de fichiers JSON et GraphQL entre un taux de changement de contenu faible et élevé afin de réduire le trafic client sur le réseau de diffusion de contenu et d’attribuer un TTL plus élevé. Vous minimiserez grâce à cela la revalidation par le CDN du fichier JSON avec le serveur d’origine.
 * Pour invalider activement le contenu du réseau de diffusion de contenu, utilisez la fonction Purge progressive. Cela permet au réseau de diffusion de contenu de télécharger à nouveau le contenu sans provoquer l’échec du cache.
 
 ## Amélioration du temps de téléchargement du contenu découplé {#improve-download-time}
@@ -101,7 +101,7 @@ Observez ces bonnes pratiques pour votre approche générale de débogage :
 
 ### Journalisation d’un bogue avec prise en charge {#logging-a-bug-with-support}
 
-Pour consigner efficacement un bogue avec l’assistance si vous avez besoin d’aide supplémentaire, procédez comme suit :
+Pour signaler un bug de manière efficace à l’assistance, si vous avez besoin d’aide supplémentaire, procédez comme suit :
 
 * Si nécessaire, réalisez des captures d’écran du problème.
 * Documentez une façon de reproduire le problème.
@@ -124,7 +124,7 @@ Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous dis
 
 ### Découvrez les applications sur une seule page {#explore-spa}
 
-Les magasins sans interface en AEM ne doivent pas s&#39;arrêter ici. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels) nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles complets traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
+Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels) nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles complets traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
 
 Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours intitulée [Comment créer des applications sur une seule page (SPA) avec AEM.](create-spa.md)
 

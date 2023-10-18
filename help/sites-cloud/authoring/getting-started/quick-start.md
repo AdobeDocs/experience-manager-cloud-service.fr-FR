@@ -5,7 +5,7 @@ exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '1568'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
 
 * Réorganisation des pages
 
-   * Vous pouvez le faire dans [Mode Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). Les modifications sont appliquées et visibles dans d’autres vues.
+   * Cette action s’effectue dans l’[Affichage en liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). Les modifications sont appliquées et visibles dans d’autres vues.
 
 ### Création de pages {#page-authoring}
 
@@ -60,7 +60,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
 
 Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, soit effectuer une recherche en procédant comme suit :
 
-1. Ouvrez le **Sites** (à l’aide de la **Sites** dans le [Navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - ceci est déclenché (liste déroulante) lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche).
+1. Ouvrez la console **Sites** (à l’aide de l’option **Sites** dans [Navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation). Pour cela, une liste déroulante s’affiche lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche).
 
 1. Naviguez dans l’arborescence en appuyant/cliquant sur la page appropriée. La représentation des ressources de page dépend du mode d’affichage activé : [Carte, Liste ou Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) :
 
@@ -79,7 +79,7 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 Pour [créer une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) :
 
 1. [Accédez à l’emplacement](#finding-your-page) où créer la page.
-1. Utilisez l’icône **Créer** puis sélectionnez **Page** dans la liste :
+1. Utilisez l’icône **Créer**, puis sélectionnez **Page** dans la liste :
 
    ![Bouton Créer](/help/sites-cloud/authoring/assets/create.png)
 
@@ -93,11 +93,11 @@ La sélection d’une page dépend de la vue utilisée dans la console :
 
 1. Mode Colonnes :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
+   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
 
 1. Vue Liste :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
+   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
 
 1. Mode Carte :
 
@@ -106,7 +106,7 @@ La sélection d’une page dépend de la vue utilisée dans la console :
       * Sur un appareil mobile : appuyez de manière prolongée sur la carte
       * Sur un ordinateur de bureau : utilisez l’[action rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) représentée par l’icône illustrant une coche :
 
-   * Une coche apparaît sur la carte pour indiquer que la page a été sélectionnée.
+   * Une coche apparaît sur la carte afin d’indiquer que la page a été sélectionnée.
 
    ![Exemple de carte](/help/sites-cloud/authoring/assets/card.png)
 
@@ -115,7 +115,7 @@ La sélection d’une page dépend de la vue utilisée dans la console :
 Les [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) sont disponibles :
 
 1. [Accédez à la page](#finding-your-page) sur laquelle vous souhaitez effectuer une action.
-1. Placez le pointeur de la souris sur la carte qui représente la ressource requise. Les actions rapides s’affichent :
+1. Placez le pointeur de la souris sur la carte qui représente la ressource requise. Les actions rapides s’affichent :
 
    ![Actions de carte](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -145,10 +145,10 @@ Pour modifier votre page :
 
      ![Bouton bascule du panneau latéral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-   * [Modifiez le contenu d’un composant existant](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) sur la page :
+   * [Modifier le contenu d’un composant existant](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) sur la page :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant dessus. Utilisez l’icône **Modifier** (crayon) pour ouvrir la boîte de dialogue.
-      * Ouvrez l’éditeur statique du composant en maintenant appuyé ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, il s’agit d’une sélection limitée).
+      * Ouvrez l’éditeur statique du composant en maintenant appuyé ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, la sélection est limitée).
       * Pour afficher toutes les actions disponibles, passez en mode plein écran en cliquant sur l’icône suivante :
 
         ![Bouton Plein écran](/help/sites-cloud/authoring/assets/full-screen.png)
@@ -157,7 +157,7 @@ Pour modifier votre page :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant dessus. Utilisez l’icône **Configurer** (clé à molette) pour ouvrir la boîte de dialogue.
 
-   * [Déplacez un composant](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) d’une des manières suivantes :
+   * [Déplacer un composant](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) d’une des manières suivantes :
 
       * Faites glisser le composant vers son nouvel emplacement.
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Couper** puis **Coller** suivant vos besoins.
@@ -184,7 +184,7 @@ Pour modifier votre page :
 
       * Sélectionnez **Aperçu** dans la barre d’outils.
 
-   * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide de la fonction **Modifier** sélecteur de liste déroulante.
+   * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
 
    >[!NOTE]
    >
@@ -215,7 +215,7 @@ Il existe deux (principales) méthodes de [modification des propriétés de page
 
 ### Publication de la page (ou dépublication) {#publishing-your-page-or-unpublishing}
 
-Il existe deux méthodes principales pour [publier votre page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (ainsi que pour la dépublier) :
+Il existe deux méthodes principales pour [publier votre page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (et la dépublier) :
 
 * Dans la console **Sites** :
 
@@ -262,7 +262,7 @@ Ces actions peuvent toutes être déclenchées en suivant ces étapes :
 
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) :
 
-      * Vous êtes invité à confirmer l’action.
+      * Le système vous invite à confirmer l’action.
 
    >[!NOTE]
    >
@@ -273,7 +273,7 @@ Ces actions peuvent toutes être déclenchées en suivant ces étapes :
 Le [verrouillage d’une page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) empêche d’autres auteurs de travailler dessus en même temps que vous. L’icône/le bouton Verrouiller (et Déverrouiller) est accessible :
 
 * La barre d’outils [une fois la page sélectionnée](#selecting-your-page-for-further-action).
-* La variable [Menu déroulant Informations sur la page](#editing-the-page-properties) lors de la modification d’une page.
+* Dans le [menu déroulant Informations sur la page](#editing-the-page-properties) lors de la modification d’une page.
 * Dans la barre d’outils de la page lors de la modification d’une page (si la page est verrouillée).
 
 Par exemple, l’icône de verrouillage se présente comme suit :
@@ -318,7 +318,7 @@ Le même mécanisme de base est appliqué pour restaurer ou pour comparer des ve
 
    Si une version de votre page a déjà été enregistrée, elle est répertoriée dans la chronologie.
 
-1. Appuyez/cliquez sur la version à restaurer. D’autres boutons d’action vont alors s’afficher :
+1. Appuyez/cliquez sur la version à restaurer, ce qui permet d’afficher d’autres boutons d’action :
 
    * **Revenir à cette version**
 

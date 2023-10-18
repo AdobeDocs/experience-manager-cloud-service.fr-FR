@@ -64,8 +64,8 @@ Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela 
 
    ![Politique](/help/assets/assets-dm/structure-mode.png)
 
-1. À proximité du bas de la page, sélectionnez **[!UICONTROL Conteneur de mises en page]** pour ouvrir sa barre d’outils, puis sélectionnez l’icône Politique.
-1. Sur la page **[!UICONTROL Conteneur de mises en page]**, sous l’en-tête **[!UICONTROL Propriétés]**, assurez-vous que l’onglet **[!UICONTROL Composants autorisés]** est sélectionné.
+1. À proximité du bas de la page, sélectionnez **[!UICONTROL Conteneur de mise en page]** pour ouvrir sa barre d’outils, puis sélectionnez l’icône Stratégie.
+1. Sur la page **[!UICONTROL conteneur de mise en page]**, sous l’en-tête **[!UICONTROL Propriétés]**, assurez-vous que l’onglet **[!UICONTROL Composants autorisés]** est sélectionné.
 
    ![Composants autorisés](/help/assets/assets-dm/allowed-components.png)
 
@@ -74,7 +74,7 @@ Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela 
 
    ![Liste de composants Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
-1. À proximité de l’angle supérieur droit de la page **[!UICONTROL Conteneur de mises en page]**, sélectionnez l’icône Terminé (coche).
+1. À proximité de l’angle supérieur droit de la page **[!UICONTROL Conteneur de mise en page]**, sélectionnez l’icône Terminé (coche).
 
 1. Dans la liste déroulante située sur le côté droit de la barre d’outils, à proximité du haut de la page, sélectionnez **[!UICONTROL Contenu initial]**.
 1. [Ajoutez un composant Dynamic Media à une page](#adding-a-dynamic-media-component-to-a-page), comme d’habitude.

@@ -7,7 +7,7 @@ exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
 source-wordcount: '767'
-ht-degree: 49%
+ht-degree: 52%
 
 ---
 
@@ -61,13 +61,13 @@ Connaître ces propriétés peut également s’avérer utile afin que vous puis
 
 ## FAQ {#faq}
 
-Voici quelques questions fréquemment posées relatives à MSM et Live Copy.
+Vous trouverez ci-dessous quelques questions fréquentes concernant MSM et la Live Copy.
 
 ### Pourquoi certaines propriétés (par exemple le titre ou les annotations) ne sont-elles pas mises à jour lors d’un déploiement MSM ? {#missing-properties}
 
 Les actions de synchronisation MSM sont hautement configurables. Les propriétés ou composants qui sont modifiés lors des déploiements dépendent directement des propriétés de ces configurations.
 
-Voir [cet article](best-practices.md) pour plus d’informations sur cette rubrique.
+Consultez [cet article](best-practices.md) pour plus d’informations à ce sujet.
 
 ### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 

@@ -5,7 +5,7 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Un programme Cloud Manager est fourni avec son propre référentiel Git.
 
 Pour accéder au référentiel Git de Cloud Manager, les utilisateurs doivent utiliser un client Git avec un outil de ligne de commande, un client Git visuel autonome ou l’IDE choisi par l’utilisateur tel qu’Eclipse, IntelliJ ou NetBeans.
 
-Une fois qu’un client Git est configuré, vous pouvez gérer votre référentiel Git à partir de l’interface utilisateur de Cloud Manager. Pour en savoir plus sur la gestion de Git à l’aide de l’interface utilisateur de Cloud Manager, voir [Accès à Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+Une fois le client Git configuré, vous pouvez gérer votre référentiel Git à partir de l’interface utilisateur de Cloud Manager. Pour en savoir plus sur la gestion de Git à l’aide de l’interface utilisateur de Cloud Manager, consultez la section [Accès à Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 Pour commencer à développer l’application AEM Cloud, une copie locale du code de l’application doit être effectuée en l’extrayant du référentiel Cloud Manager vers un emplacement de votre ordinateur local.
 
@@ -56,8 +56,8 @@ La seule différence réside dans le fait que le référentiel Git distant fait 
 Un utilisateur peut créer une **production** programme ou **sandbox** programme.
 
 * Un **programme de production** est créé pour activer le trafic en direct pour votre site.
-   * Voir [Présentation des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus d’informations.
+   * Consultez [Présentation des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus d’informations.
 * Un **programme Sandbox** est généralement créé pour les besoins de formation, à des fins de démonstration, d’activation, de preuve de concept ou de documentation.
    * Un environnement Sandbox n’est pas destiné à gérer un trafic en direct et comportera des restrictions absentes d’un programme de production.
-   * Ils incluront Sites et Assets et seront pourvus automatiquement d’une branche Git comprenant un exemple de code, un environnement de développement et un pipeline hors production.
-   * Voir [Présentation des programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) pour plus d’informations.
+   * Il inclut Sites et Assets et est pourvu automatiquement d’une branche Git comprenant un exemple de code, un environnement de développement et un pipeline hors production.
+   * Consultez [Présentation des programmes sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) pour plus d’informations.

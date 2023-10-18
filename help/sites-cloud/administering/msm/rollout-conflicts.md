@@ -7,7 +7,7 @@ exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 56%
+ht-degree: 63%
 
 ---
 
@@ -66,7 +66,7 @@ AEM utilise des gestionnaires de conflit pour résoudre des conflits de page qui
 
 AEM fournit :
 
-* La variable [gestionnaire de conflit par défaut](#default-conflict-handler):
+* Le [gestionnaire de conflits par défaut](#default-conflict-handler) :
    * `ResourceNameRolloutConflictHandler`
 * Possibilité de mettre en œuvre un [gestionnaire personnalisé](#customized-handlers)
 * Le mécanisme de classement des services qui permet de définir la priorité de chaque gestionnaire individuel
@@ -106,7 +106,7 @@ Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, l
 
 Les gestionnaires de conflit personnalisés permettent de mettre en œuvre vos propres règles. Grâce au mécanisme de classement des services, vous pouvez également définir la manière dont ils interagissent avec d’autres gestionnaires.
 
-Les gestionnaires de conflit personnalisés peuvent :
+Les gestionnaires de conflit personnalisés peuvent :
 
 * nommés selon vos besoins ;
 * développés/configurés selon vos besoins.

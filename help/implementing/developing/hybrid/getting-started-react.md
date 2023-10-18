@@ -5,13 +5,13 @@ exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
 # Prise en main des SPA dans AEM avec React {#getting-started-with-spas-in-aem-using-react}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de structures SPA.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Le souhait des développeurs et des développeuses est de pouvoir créer des sites avec des structures SPA. Les auteurs, et les autrices pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de structures SPA.
 
 La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente une SPA simplifiée dans le framework React, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA.
 
@@ -31,7 +31,7 @@ Pour plus de détails sur le fonctionnement des SPA dans AEM, consultez les docu
 
 >[!NOTE]
 >
->Pour pouvoir créer du contenu dans un SPA, le contenu doit être stocké dans AEM et exposé par le modèle de contenu.
+>Pour qu’il soit possible de créer du contenu dans une SPA, ce contenu doit être stocké dans AEM et exposé par le modèle de contenu.
 >
 >Une SPA développée en dehors d’AEM n’est pas modifiable si elle ne respecte pas le contrat de modèle de contenu.
 
@@ -39,7 +39,7 @@ Ce document décrit la structure d’une SPA simplifiée créée à l’aide du 
 
 ## Dépendances, configuration et construction {#dependencies-configuration-and-building}
 
-Outre la dépendance React attendue, l’exemple de SPA peut utiliser des bibliothèques supplémentaires pour rendre la création de la SPA plus efficace.
+En plus de la dépendance React attendue, l’exemple de SPA peut utiliser des bibliothèques supplémentaires pour optimiser la création de la SPA.
 
 ### Dépendances {#dependencies}
 
@@ -60,7 +60,7 @@ Puisque cet exemple est basé sur le framework React, il existe deux dépendance
  react-dom
 ```
 
-La variable `aem-clientlib-generator` est utilisé pour automatiser la création de bibliothèques clientes dans le cadre du processus de création.
+Le `aem-clientlib-generator` est utilisé pour automatiser la création de bibliothèques clientes dans le cadre du processus de construction.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -97,7 +97,7 @@ module.exports = {
 
 ### Génération {#building}
 
-En fait, la création de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de génération ressemblera à :
+En réalité, la construction de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation, en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de construction ressemblera à :
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -105,7 +105,7 @@ Une fois généré, le package peut être chargé dans une instance AEM.
 
 ### Archétype de projet AEM {#aem-project-archetype}
 
-Tout projet AEM doit utiliser la variable [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge SPA projets à l’aide de React ou d’Angular et utilise le SDK SPA.
+Tout projet AEM doit utiliser l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK de SPA.
 
 ## Structure d’application {#application-structure}
 
@@ -134,9 +134,9 @@ ReactDOM.render(
 });
 ```
 
-La fonction principale de `index.js` est d’utiliser la variable `ReactDOM.render` pour déterminer dans le DOM où injecter l’application.
+La principale finalité d’`index.js` est d’utiliser la fonction `ReactDOM.render` pour déterminer où, dans le DOM, injecter l’application.
 
-Cela est une utilisation standard de cette fonction, non spécifique à cet exemple d’application.
+Il s’agit d’une utilisation standard de cette fonction, non spécifique à cet exemple d’application.
 
 #### Instanciation statique {#static-instantiation}
 

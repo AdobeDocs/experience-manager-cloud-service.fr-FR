@@ -5,7 +5,7 @@ exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '1493'
-ht-degree: 55%
+ht-degree: 60%
 
 ---
 
@@ -29,7 +29,7 @@ Quelle que soit votre perspective, les configurations répondent à deux objecti
 
 ## Configurations en tant qu’administrateur {#configurations-administrator}
 
-L’administrateur AEM et les auteurs peuvent considérer les configurations comme des espaces de travail. Ces espaces de travail peuvent être utilisés pour rassembler des groupes de paramètres et leur contenu associé à des fins d’organisation en implémentant des droits d’accès pour ces fonctionnalités.
+L’administrateur ou administratrice AEM et les auteurs et autrices peuvent considérer les configurations comme des espaces de travail. Ces espaces de travail peuvent être utilisés pour rassembler des groupes de paramètres et leur contenu associé à des fins d’organisation en implémentant des droits d’accès pour ces fonctionnalités.
 
 Des configurations peuvent être créées pour de nombreuses fonctionnalités différentes dans AEM.
 
@@ -40,7 +40,7 @@ Des configurations peuvent être créées pour de nombreuses fonctionnalités di
 
 ### Exemple {#administrator-example}
 
-Par exemple, un administrateur peut créer deux configurations pour les modèles modifiables.
+Par exemple, un administrateur ou une administratrice peut créer deux configurations pour les modèles modifiables.
 
 * WKND-General
 * WKND-Magazine
@@ -75,8 +75,8 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
    ![Création d’une configuration](assets/configuration-create.png)
 
    * Le **Titre** doit être descriptif.
-   * La variable **Nom** devient le nom du noeud dans le référentiel.
-      * Il est généré automatiquement en fonction du titre et adapté en fonction des [AEM les conventions d’affectation des noms.](naming-conventions.md)
+   * Le **nom** deviendra celui du nœud dans le référentiel.
+      * Il sera généré automatiquement en fonction du titre et ajusté selon les [conventions de nommage AEM](naming-conventions.md).
       * Il peut être adapté si nécessaire.
 1. Vérifiez le type de configurations que vous souhaitez autoriser.
    * [Segments Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -91,7 +91,7 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
 
 #### Modification des configurations et de leurs droits d’accès {#access-rights}
 
-Si vous considérez les configurations comme des espaces de travail, les droits d’accès peuvent être définis sur ces configurations afin d’appliquer qui peut accéder à ces espaces de travail ou qui ne peut pas y accéder.
+Si vous considérez les configurations comme des espaces de travail, les droits d’accès peuvent être définis sur ces configurations afin de définir qui peut ou non accéder à ces espaces de travail.
 
 1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils** -> **Général** -> **Explorateur de configurations**.
 1. Sélectionnez la configuration à modifier, puis cliquez sur **Propriétés** dans la barre d’outils.

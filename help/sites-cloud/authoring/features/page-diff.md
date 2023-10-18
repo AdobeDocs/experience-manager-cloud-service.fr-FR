@@ -5,7 +5,7 @@ exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 79%
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 
 >[!NOTE]
 >
->L’utilisateur doit disposer de la variable **Modifier/Créer/Supprimer** autorisation sur le noeud `/content/versionhistory` pour utiliser la fonctionnalité.
+>L’utilisateur ou l’utilisatrice doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le nœud `/content/versionhistory` pour pouvoir utiliser la fonctionnalité.
 >
 >Consultez la section consacrée à l’[outil de comparaison des pages](/help/implementing/developing/introduction/page-diff.md#operation-details) pour plus d’informations sur cette fonction.
 
@@ -65,7 +65,7 @@ L’outil de comparaison détecte les modifications effectuées sur les composan
 
 ### Affichage en mode plein écran {#fullscreen-and-exiting}
 
-Pour vous concentrer sur un contenu particulier, vous pouvez cliquer sur l’icône Plein écran de l’un ou l’autre des &quot;côtés&quot; de la comparaison côte à côte afin de l’agrandir dans la fenêtre du navigateur.
+Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
 
 ![Bouton Plein écran](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
@@ -90,7 +90,7 @@ Dans certains cas, l’outil de comparaison des pages peut ne pas détecter tout
 * Lors de la comparaison des versions et lancements, la comparaison ne prend pas en compte les composants dynamiques tels que les chemins de navigation, les menus, les listes de produits ou les logos (composants qui dépendent de la structure du site pour effectuer le rendu de leur contenu).
 * Pour les versions, l’outil de comparaison ne recrée pas la politique de contrôle d’accès ni les relations Live Copy.
 * Si une page a été déplacée, vous ne pouvez plus la comparer à des versions antérieures au déplacement.
-   * Si vous rencontrez des problèmes liés à une comparaison, vérifiez le [Journal](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) de la page afin de voir si la page a été déplacée.
+   * Si vous rencontrez des problèmes liés à une comparaison, vérifiez la [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) de la page afin de voir si la page a été déplacée.
 
 >[!NOTE]
 >
@@ -98,4 +98,4 @@ Dans certains cas, l’outil de comparaison des pages peut ne pas détecter tout
 
 >[!NOTE]
 >
->Pour plus d’informations sur le fonctionnement de l’outil de comparaison des pages et les limites qui peuvent affecter cette comparaison, voir [documentation destinée aux développeurs](/help/implementing/developing/introduction/page-diff.md) de cette fonctionnalité.
+>Pour plus d’informations sur le fonctionnement de l’outil de comparaison des pages et des limites pouvant affecter cette comparaison, consultez la [documentation de développement](/help/implementing/developing/introduction/page-diff.md) liée à cette fonctionnalité.

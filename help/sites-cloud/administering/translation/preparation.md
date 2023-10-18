@@ -7,7 +7,7 @@ exl-id: afc577a2-2791-481a-ac77-468011e4302e
 source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
 source-wordcount: '769'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Les sites web multilingues fournissent généralement une certaine quantité de 
 
 >[!TIP]
 >
->Si vous commencez à traduire du contenu, voir [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous débutez dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour celles et ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 Le [site de démonstration WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comprend plusieurs branches de langue et utilise la structure suivante :
 
@@ -54,7 +54,7 @@ La copie de langue pour laquelle vous créez initialement le contenu du site est
 
 Chaque branche de langue d’un site est appelée « copie de langue ». La page racine d’une copie de langue, appelée « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/wknd/fr` est la racine de langue de la copie en français. Les copies de langue doivent utiliser une [racine de langue configurée correctement](preparation.md#creating-a-language-root) afin que la langue appropriée soit ciblée lorsque des sources sont traduites.
 
-Procédez comme suit pour préparer la traduction de votre site :
+Procédez comme suit pour préparer la traduction de vos ressources :
 
 1. Créez la racine de langue de votre gabarit de langue. Par exemple, la racine de langue en anglais du site de démonstration WKND est `/content/wknd/language-masters/en`. Vérifiez que la racine de langue est configurée conformément aux informations de la section [Création d’une racine de langue](preparation.md#creating-a-language-root).
 1. Créez le contenu de votre gabarit de langue.

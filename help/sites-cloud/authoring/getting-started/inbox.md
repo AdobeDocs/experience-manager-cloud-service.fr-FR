@@ -5,7 +5,7 @@ exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 
 >[!NOTE]
 >
->Pour plus d’informations sur les types d’éléments, voir :
+>Pour plus d’informations sur les types d’éléments, consultez les sections suivantes :
 >
 >* [Projets](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projets – Utilisation des Tâches](/help/sites-cloud/authoring/projects/tasks.md)
@@ -64,13 +64,13 @@ Ce mode affiche tous les éléments, ainsi que des informations importantes :
 
 ![Boîte de réception – Vue Liste](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
-### Boîte de réception – Mode Calendrier {#inbox-calendar-view}
+### Boîte de réception – Vue Calendrier {#inbox-calendar-view}
 
 Ce mode affiche les éléments en fonction de leur position dans le calendrier :
 
 ![Boîte de réception – Mode Calendrier](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
 
-Vous pouvez :
+Vous pouvez effectuer les actions suivantes :
 
 * sélectionner un mode d’affichage spécifique (**Chronologie**, **Colonnes**, **Liste**) ;
 * spécifier les tâches selon **Planification** : **Tous**, **Planifiés**, **En cours**, **Échéance proche** et **Échéance dépassée** ;
@@ -97,12 +97,12 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
 
   Pour la **vue Liste**, vous pouvez configurer le mécanisme de tri :
 
-   * **Tri**
+   * **Tri à**
    * **Ordre de tri**
 
   ![Boîte de réception – Paramètres de la vue Liste](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  Vous pouvez également déléguer votre calendrier à d’autres utilisateurs, demander la délégation à d’autres utilisateurs et gérer vos délégations.
+  Vous pouvez également déléguer votre calendrier à d’autres utilisateurs et utilisatrices, demander la délégation à d’autres utilisateurs et utilisatrices ou encore gérer vos délégations.
 
   ![Boîte de réception – Paramètres de délégation de la vue Liste](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -112,7 +112,7 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
 >
 >Bien qu’il soit possible de sélectionner plusieurs éléments, des actions ne peuvent être entreprises que sur un seul élément à la fois.
 
-1. Pour agir sur un élément, sélectionnez la miniature de l’élément approprié. Les icônes des actions applicables à cet élément s’affichent dans la barre d’outils :
+1. Pour agir sur un élément, sélectionnez la miniature de l’élément approprié. Les icônes des actions applicables à cet élément s’affichent dans la barre d’outils :
 
    ![Sélection d’un élément de la boîte de réception](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -136,11 +136,11 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
    >
    >* Éléments de workflow – [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. En fonction de l’élément sélectionné, une action est lancée, par exemple :
+2. Une action démarre en fonction de l’élément sélectionné, par exemple :
 
-   * Une boîte de dialogue correspondant à l’action s’ouvre.
-   * Un assistant d&#39;action est démarré
-   * Une page de documentation s’ouvre.
+   * Une boîte de dialogue correspondant à l’action s’ouvre ;
+   * Un assistant d&#39;action démarre ;
+   * Une page de documentation s’ouvre
 
    Par exemple, **Déléguer** ouvre une boîte de dialogue :
 
@@ -174,7 +174,7 @@ Vous pouvez créer des tâches à partir de la boîte de réception :
 
    * **Avancé**
 
-      * **Nom**: utilisé pour former l’URL et, s’il est vide, il repose sur la variable **Titre**.
+      * **Nom** : utilisé pour former l’URL, et s’il est vide, le nom est basé sur le champ **titre**.
 
    ![Options avancées de la tâche d’ajout de boîte de réception](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 

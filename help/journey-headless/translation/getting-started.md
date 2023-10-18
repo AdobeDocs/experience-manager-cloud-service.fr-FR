@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Un certain nombre d’exigences s’imposent avant de vous engager dans la tradu
 
 >[!TIP]
 >
->Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Une fois terminé, revenez à cette page.
+>Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Par conséquent, revenez à cette page une fois l’opération terminée.
 
 ### Outils {#tools}
 
@@ -64,7 +64,7 @@ Le contenu AEM, qu’il s’agisse de pages web découplée ou traditionnelles, 
 
 ## Stockage du contenu découplé dans AEM {#headless-content-in-aem}
 
-En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu découplé. Toutefois, il est utile de connaître les concepts et la terminologie de base, car vous utiliserez par la suite AEM outils de traduction. Plus important encore, vous devez comprendre votre propre contenu et sa structure afin de pouvoir le traduire efficacement.
+En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu découplé. Toutefois, il sera utile de connaître les concepts de base et la terminologie lorsque vous utiliserez les outils de traduction AEM. Plus important encore, vous devez comprendre votre propre contenu et sa structure pour pouvoir le traduire efficacement.
 
 ### Modèles de contenu {#content-models}
 
@@ -153,7 +153,7 @@ La structure finale peut ressembler à ce qui suit.
         |- ...
 ```
 
-Vous devez prendre note du chemin spécifique de votre contenu, car il est nécessaire ultérieurement pour configurer votre traduction.
+Vous devez prendre note du chemin spécifique de votre contenu, car il sera ensuite nécessaire pour configurer votre traduction.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 83%
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service propose un service CDN (Content Delivery Network) intégr
 * Les noms de domaines (et certificats) personnalisés installés dans le réseau CDN géré par AEM sont gérés via Cloud Manager.
 * Les noms de domaines personnalisés (et les certificats) installés dans votre propre réseau CDN sont gérés dans ce réseau CDN spécifique.
 
-Les domaines gérés dans votre propre réseau de diffusion de contenu ne doivent pas être installés par le biais de Cloud Manager. Ils sont mis à la disposition des AEM par le biais de X-Forwarded-Host et correspondent aux hôtes définis dans Dispatcher. Voir [Documentation CDN](/help/implementing/dispatcher/cdn.md).
+Les domaines gérés dans votre propre réseau CDN ne doivent pas être installés par l’intermédiaire de Cloud Manager. Ils sont mis à la disposition d’AEM par le biais de X-Forwarded-Host et correspondent aux hôtes virtuels définis dans le Dispatcher. Consultez la [documentation sur le réseau CDN](/help/implementing/dispatcher/cdn.md).
 
 Dans un seul environnement, vous pouvez avoir les deux domaines installés dans le réseau CDN géré par AEM et dans votre propre réseau CDN.
 
@@ -74,4 +74,4 @@ L’utilisation de noms de domaine personnalisés avec AEMaaCS présente certain
 * Le même nom de domaine ne peut pas être utilisé dans plusieurs environnements.
 * Il n’est possible d’ajouter qu’un seul nom de domaine à la fois.
 * AEM as a Cloud Service ne prend pas en charge les domaines génériques tels que `*.example.com`.
-* Avant d’ajouter un nom de domaine personnalisé, un certificat SSL valide contenant le nom du domaine personnalisé (les certificats génériques sont valides) doit être installé pour votre programme. Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour en savoir plus.
+* Avant d’ajouter un nom de domaine personnalisé, un certificat SSL valide contenant le nom du domaine personnalisé (les certificats génériques sont valides) doit être installé pour votre programme. Consultez la section [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour en savoir plus.

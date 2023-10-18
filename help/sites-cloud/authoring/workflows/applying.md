@@ -5,7 +5,7 @@ exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ Indiquez les détails suivants :
 
    * Une ressource existante pour afficher d’autres actions :
 
-      * **Inclure les enfants** pour indiquer que les enfants de cette ressource sont inclus dans le workflow.
+      * **Inclure les enfants** pour indiquer que les enfants de la ressource seront inclus dans le workflow.
 Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
 
          * Inclure seulement les enfants immédiats
@@ -143,6 +143,6 @@ Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection s
 
 ## Démarrage d’un workflow à partir de l’éditeur de page {#starting-a-workflow-from-the-page-editor}
 
-Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant comporte l’option . **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
+Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
 
 ![Démarrage d’un workflow à partir de l’éditeur de page](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

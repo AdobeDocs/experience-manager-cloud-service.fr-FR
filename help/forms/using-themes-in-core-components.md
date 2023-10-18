@@ -5,7 +5,7 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -56,7 +56,7 @@ Vous pouvez [personnaliser n’importe lequel de ces thèmes pour créer un nouv
 
 La personnalisation d’un thème fait référence au processus de modification et de personnalisation de l’aspect d’un thème. Lorsque vous personnalisez un thème, vous modifiez ses éléments de conception, sa mise en page, ses couleurs, sa typographie, et parfois le code sous-jacent. Il vous permet de créer un aspect unique et personnalisé pour votre site web ou votre application tout en conservant la structure et les fonctionnalités de base fournies par le thème.
 
-### Conditions préalables requises {#prerequisites-to-customize}
+### Prérequis {#prerequisites-to-customize}
 
 * Se familiariser avec [configuration d’un pipeline dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) et posséder des connaissances de base sur la configuration d’un pipeline vous aide à gérer et déployer efficacement vos personnalisations de thème.
 * Découvrez comment [configuration d’un utilisateur avec le rôle de contributeur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=fr). Comprendre comment configurer un utilisateur avec le rôle de contributeur vous permet d’accorder les autorisations nécessaires à la personnalisation du thème.
@@ -222,7 +222,7 @@ Pour prévisualiser et tester les modifications dans l’environnement local et 
 ##### 4.2 Test du thème à l’aide de l’environnement local {#start-a-local-proxy-server}
 
 1. Accédez à la racine du dossier de thème. Dans ce cas, le nom du dossier de thème est `aem-forms-theme-canvas`.
-1. Ouvrez l’invite de commandes ou le terminal.
+1. Ouvrez l’invite de commande ou le terminal.
 1. Exécuter `npm install` pour installer les dépendances.
 1. Exécuter `npm run live` pour prévisualiser le formulaire avec le thème mis à jour dans votre navigateur local.
 
@@ -322,7 +322,7 @@ Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous �
 Maintenant, envoyez les modifications au référentiel de thème de votre Cloud Service AEM Forms. .
 
 1. Accédez à la racine du dossier de thème.  Dans ce cas, le nom du dossier de thème est `aem-forms-theme-canvas`.
-1. Ouvrez l’invite de commandes ou le terminal.
+1. Ouvrez l’invite de commande ou le terminal.
 1. Exécutez la commande suivante dans l’ordre indiqué :
 
    ```
@@ -420,5 +420,5 @@ Si vous souhaitez fournir des informations comme une image de logo, le nom de l�
 
 ## Article connexe {#related-article}
 
-* [Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+* [Activer les composants principaux des formulaires adaptatifs AEM Forms as a Cloud Service et dans l’environnement de développement local](/help/forms/enable-adaptive-forms-core-components.md)
 * [Création d’un formulaire adaptatif basé sur des composants principaux autonomes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=fr)

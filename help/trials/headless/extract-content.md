@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Ouvrez l’Explorateur GraphQL dans un nouvel onglet. Vous pouvez y créer et va
 
    ![Requête de liste](assets/do-not-localize/list-query-1-3-4-5.png)
 
-Vous venez de valider une requête de liste pour obtenir une liste complète de tous les fragments de contenu. Ce processus permet de s’assurer que la réponse est bien celle attendue par votre application, avec des résultats qui illustrent la manière dont vos applications et sites web récupéreront le contenu créé dans AEM.
+Vous venez de valider une requête de liste afin d’obtenir une liste complète de tous les fragments de contenu. Ce processus permet de s’assurer que la réponse est bien celle attendue par votre application, avec des résultats qui illustrent la manière dont vos applications et sites web récupéreront le contenu créé dans AEM.
 
 ## Requête pour obtenir un fragment de contenu spécifique {#bypath-query}
 

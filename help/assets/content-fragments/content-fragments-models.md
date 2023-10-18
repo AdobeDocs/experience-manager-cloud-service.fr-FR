@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
 workflow-type: tm+mt
 source-wordcount: '2937'
-ht-degree: 84%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 1. Accédez à **Outils**, **Général**, puis ouvrez les **modèles de fragment de contenu**.
 1. Accédez au dossier adapté à votre [configuration, ou sous-configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. Utilisation **Créer** pour ouvrir l’assistant.
+1. Utilisez **Créer** pour ouvrir l’assistant.
 
    >[!CAUTION]
    >
@@ -39,7 +39,7 @@ Vous pouvez également définir différentes propriétés ; par exemple, ajouter
 
    ![titre et description](assets/cfm-models-02.png)
 
-1. Utilisation **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ; ou **Terminé** pour revenir à la console.
+1. Utilisez **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ou **Terminé** pour revenir à la console.
 
 ## Définition de votre modèle de fragment de contenu {#defining-your-content-fragment-model}
 
@@ -52,16 +52,16 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 1. Accédez à **Outils**, **Général**, puis ouvrez les **modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Ouvrez le modèle requis pour **Modifier**; utilisez l’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
+1. Ouvrez le modèle requis en vue de le **Modifier** ; utilisez l’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
 
-   Une fois ouvert, l’éditeur de modèles affiche :
+   Une fois ouvert, l’éditeur de modèles affiche :
 
    * à gauche : les champs déjà définis
    * à droite : les **types de données** disponibles pour la création des champs (et les **propriétés** à utiliser une fois les champs créés).
 
    >[!NOTE]
    >
-   >Lorsqu’un champ est défini sur **Obligatoire**, la variable **Libellé** indiqué dans le volet de gauche est marqué d’un astérisque (**&#42;**).
+   >Lorsqu’un champ est **obligatoire**, le **libellé** indiqué dans le volet de gauche est signalé par un astérisque (**&#42;**).
 
 ![propriétés](assets/cfm-models-03.png)
 
@@ -80,7 +80,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
         >
         >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
         >
-        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
+        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
      Par exemple :
 
@@ -88,7 +88,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône corbeille. Vous êtes invité à confirmer l’action.
+   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône de la corbeille. Le système vous invite à confirmer l’action.
 
    ![supprimer](assets/cfm-models-06.png)
 
@@ -127,11 +127,11 @@ Une sélection de types de données est disponible pour la définition de votre 
 * **Objet JSON**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
       * Permettre à AEM de stocker directement JSON que vous avez copié/collé à partir d’un autre service.
-      * Le fichier JSON est transmis et généré au format JSON dans GraphQL.
+      * Le fichier JSON est transmis et généré sous la forme JSON dans GraphQL.
       * Inclut la mise en surbrillance de la syntaxe JSON, la saisie semi-automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
 * **Espace réservé pour tabulation**
    * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
-Il s’affiche sous la forme d’un séparateur dans l’éditeur de modèles, séparant les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
+Il s’affiche sous forme de séparateur dans l’éditeur de modèles et permet de séparer les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
 Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un onglet.
      >[!NOTE]
      >
@@ -147,13 +147,13 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
   >[!CAUTION]
   >
-  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
+  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
-Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances.
+Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur ou l’autrice voit une seule instance du champ ou si cette personne est autorisée à créer plusieurs instances.
 
-* **Libellé du champ**
-Saisie d’un **Libellé du champ** génère automatiquement une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
+* **Libellé de champ** 
+La saisie d’un **libellé de champ** génère automatiquement un **nom de propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
 
 * **Validation**
 La validation de base est disponible par le biais de mécanismes tels que la propriété **Requis**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
@@ -173,7 +173,7 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
 
   Cette propriété permet de s’assurer que les auteurs de contenu ne peuvent pas répéter le contenu déjà ajouté dans un autre fragment du même modèle.
 
-  Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement s’affiche lorsque la seconde instance est tentée.
+  Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement est émis en cas de tentative concernant la deuxième instance.
 
   >[!NOTE]
   >
@@ -185,7 +185,7 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
 
   >[!CAUTION]
   >
-  >Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute **Unique** Les contraintes doivent être supprimées de tous les types de données utilisés dans les modèles de fragment de contenu respectifs.
+  >Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute contrainte **unique** doit être supprimée de tous les types de données utilisés dans les modèles de fragment de contenu respectifs.
 
 * Consultez la section **[Référence de contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
@@ -408,12 +408,12 @@ Les modèles de fragment de contenu autorisés pour un dossier sont résolus com
 >
 >La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
-Pour supprimer un modèle de fragment de contenu :
+Pour supprimer un modèle de fragment de contenu :
 
 1. Accédez à **Outils**, **Général**, puis ouvrez les **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Sélectionnez votre modèle, suivi de **Supprimer** dans la barre d’outils.
+1. Sélectionnez votre modèle, puis l’option **Supprimer** dans la barre d’outils.
 
    >[!NOTE]
    >
@@ -423,7 +423,7 @@ Pour supprimer un modèle de fragment de contenu :
 
 Les modèles de fragment de contenu doivent être publiés avant ou pendant la publication des fragments de contenu dépendants.
 
-Pour publier un modèle de fragment de contenu :
+Pour publier un modèle de fragment de contenu :
 
 1. Accédez à **Outils**, **Général**, puis ouvrez les **Modèles de fragment de contenu**.
 
@@ -433,7 +433,7 @@ L’état publié est indiqué dans la console.
 
    >[!NOTE]
    >
-   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique et le modèle est publié avec le fragment.
+   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, ainsi que le fait que le modèle est publié avec le fragment.
 
 ## Dépublication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
 
@@ -497,7 +497,7 @@ Vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l
 
    * Vous pouvez **Déverrouiller** un modèle pour activer les modifications.
 
-     Si vous sélectionnez **Déverrouiller**, un avertissement s’affiche et vous devez confirmer la variable **Déverrouiller** action :
+     Si vous sélectionnez **Déverrouiller**, un avertissement s’affiche et vous devez confirmer l’action **Déverrouiller** :
      ![Message lors du déverrouillage du modèle de fragment de contenu](assets/cfm-model-unlock-message.png)
 
      Vous pouvez ensuite ouvrir le modèle pour le modifier.
@@ -507,7 +507,7 @@ Vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l
 
 * Éditeur de modèles
 
-   * Lorsque vous ouvrez un modèle verrouillé, vous êtes averti et trois actions s’affichent : **Annuler**, **Afficher en lecture seule**, **Modifier**:
+   * Lorsque vous ouvrez un modèle verrouillé, vous recevez un avertissement et trois actions s’affichent : **Annuler**, **Afficher en lecture seule**, **Modifier** :
 
      ![Message lors de l’affichage d’un modèle de fragment de contenu verrouillé](assets/cfm-model-editor-lock-message.png)
 

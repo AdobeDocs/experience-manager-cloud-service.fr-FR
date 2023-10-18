@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
 source-wordcount: '2229'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -50,7 +50,7 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 * [Utilisation du contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md) : ajout de contenu associé.
 * [Métadonnées – propriétés des fragments](/help/assets/content-fragments/content-fragments-metadata.md) : affichage et modification des propriétés des fragments.
 * Utilisation [Fragments de contenu, ainsi que GraphQL, pour diffuser du contenu](/help/assets/content-fragments/content-fragments-graphql.md) à utiliser dans vos applications. Pour vous aider, vous pouvez prévisualiser la [sortie JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
-* [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](#reusing-content-fragments-with-msm-assets)
+* [Réutiliser les fragments de contenu à l’aide de MSM pour Assets](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Ces fragments de contenu peuvent ensuite être assemblés afin de fournir des ex
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >
->Pour plus d’informations, voir également [Présentation des fragments de contenu et des fragments d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
+>Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
 
 ## Fragments de contenu et services de contenu {#content-fragments-and-content-services}
 
@@ -122,7 +122,7 @@ Pour plus d’informations, voir [Réutilisation de fragments de contenu à l’
 
 >[!CAUTION]
 >
->Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute **Unique** Les contraintes doivent être supprimées de tous les types de données utilisés dans les [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md).
+>Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute contrainte **unique** doit être supprimée de tous les types de données utilisés dans les [modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) respectifs.
 
 ## Type de contenu {#content-type}
 
@@ -294,7 +294,7 @@ Pour utiliser vos fragments de contenu pour la création de pages, vous devez é
 
    * Indicateur pour diffuser le fragment au format HTML ou JSON, ou les deux.
    * Obligatoire pour [référencer le fragment sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Responsable de la mise en page et de la diffusion d’un fragment, c’est-à-dire des canaux.
+   * Responsable de la disposition et de la diffusion d’un fragment, c’est-à-dire des canaux.
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page et diffuser certains ou tous les éléments/variations et le contenu associé.
    * Le fait de faire glisser un fragment sur une page dans la création associe automatiquement le composant requis.
 

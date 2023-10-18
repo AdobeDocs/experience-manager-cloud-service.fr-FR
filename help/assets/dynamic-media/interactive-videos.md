@@ -8,7 +8,7 @@ exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '5966'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
->Si vous créez une vidéo interactive pour lancer une page web lorsqu’un utilisateur sélectionne une miniature, certains dispositifs bloquent l’ouverture de la page web pop-up. Dans ce cas, modifiez le paramètre de blocage des pop-ups sur le dispositif. Par exemple, sur un Apple iPhone 6, accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Safari]** > **[!UICONTROL Bloquer les pop-up]**, puis faites glisser la commande sur **[!UICONTROL Désactivé]**. À présent, lorsque vous visionnez une vidéo interactive et que vous sélectionnez une miniature, vous êtes invité à ouvrir le pop-up. Si vous acceptez, la page web s’ouvre.
+>Si vous créez une vidéo interactive pour lancer une page web lorsqu’un utilisateur sélectionne une miniature, certains appareils bloquent l’ouverture de la page web contextuelle. Dans ce cas, modifiez le paramètre de blocage des fenêtres contextuelles sur l’appareil. Par exemple, sur un Apple iPhone 6, accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Safari]** > **[!UICONTROL Bloquer les pop-up]**, puis faites glisser la commande sur **[!UICONTROL Désactivé]**. À présent, lorsque vous visionnez une vidéo interactive et que vous sélectionnez une miniature, vous êtes invité à ouvrir le pop-up. Si vous acceptez, la page web s’ouvre.
 
 ### Découvrez comment les vidéos interactives sont créées {#watch-how-interactive-videos-are-created}
 
@@ -67,7 +67,7 @@ Au terme du tutoriel dans la dernière section Exemple, [votre page web de démo
 
 Étapes d’ajout de la vidéo interactive :
 
-1. **(Facultatif) Identifier des variables d’aperçu rapide** : commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante de l’aperçu rapide. Vous utilisez des variables pour mapper des vignettes de produit à l’aperçu rapide du produit correspondant lorsque vous créez votre vidéo interactive. Voir [(Facultatif) Identification de variables d’aperçu rapide](#optional-identifying-quickview-variables).
+1. **(Facultatif) Identifier des variables d’aperçu rapide** : commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante de l’aperçu rapide. Vous utilisez des variables pour mapper des vignettes de produit à l’aperçu rapide du produit correspondant lorsque vous créez votre vidéo interactive. Voir [(Facultatif) Identification des variables d’aperçu rapide](#optional-identifying-quickview-variables).
    **Cette étape n’est nécessaire que si les conditions ci-dessous se vérifient :**
    * Vous souhaitez améliorer l’interactivité de votre vidéo en déclenchant des aperçus rapides.
    * Votre mise en œuvre d’Experience Manager *n’utilise pas* de framework d’intégration d’e-commerce pour extraire des données de produit dans Experience Manager à partir d’une solution d&#39;e-commerce, comme IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.

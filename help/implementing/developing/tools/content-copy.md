@@ -1,17 +1,17 @@
 ---
 title: Outil de copie de contenu
-description: L’outil de copie de contenu permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production sur AEM as a Cloud Service à des environnements inférieurs à des fins de test.
+description: L’outil de copie de contenu permet de copier du contenu modifiable à la demande à partir des environnements de production depuis AEM as a Cloud Service vers des environnements inférieurs, et ce à des fins de test.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
 workflow-type: tm+mt
 source-wordcount: '1306'
-ht-degree: 50%
+ht-degree: 87%
 
 ---
 
 # Outil de copie de contenu {#content-copy}
 
-L’outil de copie de contenu permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production sur AEM as a Cloud Service à des environnements inférieurs à des fins de test.
+L’outil de copie de contenu permet de copier du contenu modifiable à la demande à partir des environnements de production depuis AEM as a Cloud Service vers des environnements inférieurs, et ce à des fins de test.
 
 ## Présentation {#introduction}
 
@@ -29,7 +29,7 @@ Le contenu à copier est défini par un jeu de contenu. Un jeu de contenu est co
 
 Lors de la copie de contenu, l’environnement source est la source de vérité.
 
-* Si le contenu a été modifié dans l’environnement de destination, il est remplacé par le contenu de la source, si les chemins d’accès sont identiques.
+* Si le contenu a été modifié dans l’environnement de destination, il est remplacé par le contenu de la source si les chemins d’accès sont les mêmes.
 * Si les chemins d’accès sont différents, le contenu de la source est fusionné avec le contenu de la destination.
 
 ## Autorisations {#permissions}
@@ -45,11 +45,11 @@ Pour plus d’informations sur les autorisations et sur la manière de les défi
 
 ## Créer un jeu de contenu {#create-content-set}
 
-Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. Une fois défini, les jeux de contenu peuvent être réutilisés pour copier le contenu. Suivez ces étapes pour créer un jeu de contenu.
+Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. Une fois définis, les jeux de contenu peuvent être réutilisés pour copier du contenu. Pour créer un jeu de contenu, suivez la procédure décrite ci-après.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
+1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
 
 1. Accédez à la page **Jeux de contenu** à partir de l’écran **Environnements**.
 
@@ -65,15 +65,15 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
    1. Entrez le chemin dans le champ **Ajouter un chemin d’accès à inclure**.
    1. Cliquez sur **Ajouter un chemin** pour ajouter le chemin d’accès au jeu de contenu.
-   1. Cliquez sur **Ajouter un chemin** au besoin.
-      * Jusqu’à 50 chemins sont autorisés.
+   1. Le cas échéant, cliquez de nouveau sur **Ajouter un chemin**.
+      * Jusqu’à cinquante chemins sont autorisés.
 
    ![Ajouter des chemins à un jeu de contenu](assets/add-content-set-paths.png)
 
-1. Si vous devez affiner ou restreindre votre jeu de contenu, les sous-chemins peuvent être exclus.
+1. Si vous devez affiner ou limiter votre jeu de contenu, les sous-chemins peuvent être exclus.
 
-   1. Dans la liste des chemins inclus, cliquez sur **Ajouter des sous-chemins d’exclusion** en regard du chemin que vous souhaitez restreindre.
-   1. Entrez le sous-chemin à exclure sous le chemin sélectionné.
+   1. Dans la liste des chemins d’accès inclus, appuyez ou cliquez sur l’icône **Ajouter des sous-chemins à exclure** en regard du chemin que vous devez limiter.
+   1. Saisissez le sous-chemin d’accès à exclure sous le chemin d’accès sélectionné.
    1. Appuyez ou cliquez sur **Exclure le chemin**.
    1. Appuyez ou cliquez encore sur **Ajouter des sous-chemins à exclure** pour ajouter d’autres chemins à exclure si nécessaire.
       * Les chemins exclus doivent être relatifs au chemin inclus.
@@ -84,7 +84,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 1. Si nécessaire, vous pouvez modifier les chemins spécifiés.
 
    1. Cliquez sur le X en regard des sous-chemins exclus pour pouvoir les supprimer.
-   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins pour afficher la variable **Modifier** et **Supprimer** options.
+   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins pour afficher les options **Modifier** et **Supprimer**.
 
    ![Modification de la liste de chemins](assets/add-content-set-excluded-paths.png)
 
@@ -94,22 +94,22 @@ Le jeu de contenu peut désormais être utilisé pour copier du contenu entre de
 
 ## Modification d’un jeu de contenu {#edit-content-set}
 
-Procédez de la même façon que lors de la création d’une étape de contenu. Au lieu de cliquer sur **Ajouter un jeu de contenu**, sélectionnez un jeu existant dans la console, puis **Modifier** dans le menu points de suspension.
+Procédez de la même façon que lors de la création d’une étape de contenu. Au lieu de cliquer sur **Ajouter un jeu de contenu**, sélectionnez un jeu existant dans la console, puis sélectionnez **Modifier** dans le menu représentant des points de suspension.
 
 ![Modifier le jeu de contenu](assets/edit-content-set.png)
 
-Lors de la modification de votre jeu de contenu, vous pouvez développer les chemins configurés pour afficher les sous-chemins exclus.
+Lors de la modification de votre jeu de contenu, vous pouvez développer les chemins configurés pour que s’affichent les sous-chemins exclus.
 
 ## Copie de contenu {#copy-content}
 
-Une fois un jeu de contenu créé, vous pouvez l’utiliser pour copier du contenu. Procédez comme suit pour copier du contenu.
+Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour copier du contenu. Procédez comme suit pour copier du contenu.
 
 >[!NOTE]
-> N’utilisez pas la copie de contenu dans un environnement lorsqu’un [transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) s’exécute dans cet environnement.
+> N’utilisez pas la copie de contenu dans un environnement lorsqu’une opération de [transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) s’exécute dans cet environnement.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
+1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
 
 1. Accédez à la page **Jeux de contenu** à partir de l’écran **Environnements**.
 
@@ -134,7 +134,7 @@ Une fois un jeu de contenu créé, vous pouvez l’utiliser pour copier du conte
       * Évaluation
       * Développement/RDE
 
-1. Si nécessaire, vous pouvez également choisir de **Inclure les listes de contrôle d’accès** dans votre processus de copie.
+1. Si nécessaire, vous pouvez également sélectionner **Inclure les listes de contrôle d’accès** dans votre processus de copie.
 
 1. Appuyez ou cliquez sur **Copier**.
 
@@ -161,7 +161,7 @@ Une fois que vous avez commencé à copier du contenu, le processus peut avoir l
 | En cours | L’opération de copie de contenu est en cours. |
 | Échec | L’opération de copie de contenu a échoué. |
 | Terminé | L’opération de copie de contenu est terminée avec succès. |
-| Annulé | L’utilisateur ou l’utilisatrice annule une opération de copie de contenu après l’avoir démarrée. |
+| Annulé | L’utilisateur ou l’utilisatrice annule une opération de copie de contenu après l’avoir démarrée |
 
 ### Annulation d’un processus de copie {#canceling}
 
@@ -175,7 +175,7 @@ Pour ce faire, sur la page **Activité de copie de contenu**, sélectionnez l’
 >
 >Lorsque vous annulez une opération de copie de contenu, une copie partielle du contenu peut s’afficher dans l’environnement de destination. Cette situation peut rendre l’environnement de destination inutilisable.
 >
->Si votre environnement se trouve dans un tel état en raison d’une annulation, contactez l’assistance clientèle Adobe pour obtenir de l’aide.
+>Si votre environnement se trouve dans un tel état en raison d’une annulation, contactez l’Assistance clientèle d’Adobe pour obtenir de l’aide.
 
 ### Accès aux journaux {#accessing-logs}
 
@@ -195,10 +195,10 @@ L’outil de copie de contenu présente les limites suivantes.
 * Il ne peut être copié que depuis et vers les services de création.
 * Une copie de contenu ne peut pas être effectuée sur plusieurs programmes.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
-* Vous pouvez spécifier jusqu’à 50 chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
+* Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou le contenu nouvellement créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
-   * Si vous souhaitez uniquement mettre à jour votre environnement de destination avec les modifications de contenu, depuis la dernière opération de copie de contenu, vous devez créer un jeu de contenu. Indiquez ensuite les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
+   * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
 
 {{ims-group-profiles}}

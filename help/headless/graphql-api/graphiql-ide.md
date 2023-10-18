@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 79%
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ La variable **GraphiQL** vous permet de tester et de déboguer vos requêtes Gra
 * exécuter vos requêtes pour afficher immédiatement les résultats ;
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
-* publier ou annuler la publication, **Requêtes persistantes**, **Publier** ou **Aperçu** service ; par exemple, vers/depuis `dev-publish`
+* publier ou dépublier, **Requêtes persistantes**, sur votre service de **Publication** ou de **Prévisualisation** ; par exemple, vers/depuis `dev-publish` ;
 * afficher l’**Historique** de vos requêtes précédentes ;
 * utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
@@ -78,9 +78,9 @@ La requête s’affiche dans le panneau de l’éditeur. Apportez les modificati
 
 ## Exécution de requêtes {#running-queries}
 
-Vous pouvez exécuter une nouvelle requête immédiatement ou charger et exécuter une requête persistante. Pour charger une requête persistante, sélectionnez-la dans la liste ; la requête s’affiche dans le panneau de l’éditeur.
+Vous pouvez exécuter une nouvelle requête immédiatement ou charger et exécuter une requête persistante. Pour charger une requête persistante, sélectionnez-la dans la liste. Elle s’affiche dans le panneau de l’éditeur.
 
-Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la requête qui est exécutée lorsque vous :
+Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la requête qui sera exécutée lorsque vous :
 
 * cliquez ou appuyez sur l’icône **Exécuter la requête** ;
 * utilisez la combinaison de clavier `Control-Enter`.
@@ -130,11 +130,11 @@ Les caches peuvent continuer à servir une réponse mise en cache en cas d’err
 
 1. Sélectionnez **Enregistrer** pour conserver les modifications.
 
-## Publication et prévisualisation des requêtes persistantes {#publishing-previewing-persisted-queries}
+## Publier et prévisualiser des requêtes persistantes {#publishing-previewing-persisted-queries}
 
-Une fois que vous avez sélectionné votre requête conservée dans la liste (panneau de gauche), vous pouvez utiliser la variable **Publier** action.
+Une fois que vous avez sélectionné votre requête persistante dans la liste (panneau de gauche), vous pouvez utiliser l’action **Publier**.
 
-La requête sera alors activée dans l&#39;environnement que vous sélectionnez. Vous pouvez choisir l’une des options suivantes : **Publier** environnement (par exemple, `dev-publish`), ou votre **Aperçu** pour un accès facile à vos applications lors des tests.
+La requête sera alors activée dans l&#39;environnement que vous sélectionnez. Vous pouvez choisir entre votre environnement de **publication** (par exemple, `dev-publish`) ou votre environnement de **prévisualisation** pour un accès facile à vos applications lors des tests.
 
 ![GraphiQL - Requête persistante publiée](assets/cfm-graphiql-publish.png "GraphiQL - Publier la requête persistante")
 
@@ -142,15 +142,15 @@ La requête sera alors activée dans l&#39;environnement que vous sélectionnez.
 >
 >La définition du paramètre `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} du cache de la requête persistante a une valeur par défaut de 2 heures (7 200 secondes).
 
-## Annulation de la publication de requêtes persistantes {#unpublishing-persisted-queries}
+## Dépublier des requêtes persistantes {#unpublishing-persisted-queries}
 
-Comme lors de la publication, une fois que vous avez sélectionné votre requête conservée dans la liste (panneau de gauche), vous pouvez utiliser la variable **Dépublier** action.
+Comme lors de la publication, une fois que vous avez sélectionné votre requête persistante dans la liste (panneau de gauche), vous pouvez utiliser l’action **Dépublier**.
 
-Cela désactive la requête de l’environnement que vous sélectionnez ; soit votre **Publier** ou votre **Aperçu** environnement.
+La requête sera alors désactivée à partir de l’environnement que vous sélectionnez : soit votre environnement de **publication**, soit votre environnement de **prévisualisation**.
 
 >[!NOTE]
 >
->Vous devez également vous assurer que vous avez apporté les modifications nécessaires à votre application cliente pour éviter tout problème potentiel.
+>Vous devez également vous assurer que vous avez apporté les modifications nécessaires à votre application cliente, afin d’éviter tout problème potentiel.
 
 ## Copie de l’URL pour accéder directement à la requête {#copy-url}
 

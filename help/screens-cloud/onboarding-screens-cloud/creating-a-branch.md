@@ -5,7 +5,7 @@ exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
 source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 34%
+ht-degree: 44%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 34%
 Cette section décrit comment créer une branche pour votre programme dans Cloud Manager.
 
 >[!NOTE]
->Voir [Utilisation de l’assistant dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en) pour savoir comment créer un projet d’application AEM dans Cloud Manager à l’aide de l’assistant.
+>Consultez la section [Utilisation de l’assistant dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en) pour savoir comment créer un projet d’application AEM dans Cloud Manager à l’aide de l’assistant.
 
 ## Objectif {#objective}
 

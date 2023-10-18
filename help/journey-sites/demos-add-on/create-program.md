@@ -5,7 +5,7 @@ exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 34%
+ht-degree: 42%
 
 ---
 
@@ -38,7 +38,7 @@ Après vous être connecté à Cloud Manager, vous pouvez créer un programme d�
 
 >[!NOTE]
 >
->Votre utilisateur doit être membre du **Propriétaire de l’entreprise** rôle dans Cloud Manager dans votre entreprise pour créer des programmes.
+>Votre utilisateur ou utilisatrice doit être membre du rôle **Propriétaire de l’entreprise** dans Cloud Manager dans votre entreprise pour créer des programmes.
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
@@ -81,7 +81,7 @@ L’exécution du pipeline peut prendre plusieurs minutes. Une fois terminé, le
 
 ## Prochaines étapes {#what-is-next}
 
-Maintenant que vous avez terminé cette partie du parcours de module complémentaire de démonstration de référence d’AEM, vous devez :
+Maintenant que vous avez terminé cette partie du parcours de module complémentaire de démonstration de référence d’AEM, vous devez :
 
 * Découvrez comment utiliser Cloud Manager pour créer un programme.
 * Découvrez comment activer le module complémentaire de démonstration de référence pour le programme.
@@ -91,4 +91,4 @@ Tirez parti de ces connaissances et poursuivez votre parcours de module complém
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
+* [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
