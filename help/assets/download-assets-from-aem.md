@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
+source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1388'
 ht-degree: 89%
 
 ---
@@ -132,7 +132,7 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-## Rendu onTime/OffTime {#on-off-time-rendition}
+## Rendu onTime ou OffTime {#on-off-time-rendition}
 
 Pour activer la variable `OnOffTimeAssetAccessFilter` , vous devez créer une configuration OSGi. Ce service permet de bloquer l’accès aux rendus et aux métadonnées en plus de la ressource elle-même en fonction des paramètres d’heure d’activation/de désactivation. La configuration OSGi doit être pour `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Suivez les étapes ci-dessous :
 
