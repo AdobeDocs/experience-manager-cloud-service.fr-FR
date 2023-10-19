@@ -2,10 +2,10 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 417efad485226464b396c3ac3ef5ca8968309792
 workflow-type: tm+mt
 source-wordcount: '679'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -56,9 +56,15 @@ Pour effectuer une récapitulation, utilisez les informations suivantes pour con
 
 Ensuite, générez le jeton d’actualisation qui fait partie de la configuration OSGi lors d’une étape suivante en procédant comme suit :
 
-1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` et `tenantID` par les valeurs propres à votre compte : `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`.
+1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` et `tenantID` par les valeurs propres à votre compte : 
+
+   `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
+
 1. Sur demande, donnez l’autorisation.
-1. L’URL redirige vers un nouvel emplacement, créé au format suivant : `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`.
+1. L’URL redirige vers un nouvel emplacement, construit au format suivant :
+
+   `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+
 1. Copiez la valeur de `<code>` dans l’exemple ci-dessus.
 1. Utilisez la commande cURL suivante pour obtenir le refreshToken. Remplacez tenantID, clientID et clientSecret par les valeurs de votre compte et par la valeur de `<code>` :
 
