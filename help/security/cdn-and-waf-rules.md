@@ -2,9 +2,9 @@
 title: Configuration des règles de filtre de trafic avec des règles WAF
 description: Utilisation de règles de filtrage du trafic avec des règles WAF pour filtrer le trafic
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3810'
 ht-degree: 1%
 
 ---
@@ -532,7 +532,7 @@ Vous trouverez ci-dessous une liste des noms de champ utilisés dans les journau
 
 Adobe fournit un mécanisme de téléchargement des outils de tableau de bord sur votre ordinateur pour ingérer les journaux CDN téléchargés via Cloud Manager. Grâce à cet outil, vous pouvez analyser le trafic afin d’obtenir les règles de filtrage du trafic appropriées à déclarer, y compris les règles WAF. Cette section fournit d’abord quelques instructions pour mieux connaître les outils de tableau de bord dans un environnement de développement, puis des instructions pour tirer parti de ces connaissances afin de créer des règles dans un environnement de production.
 
-Les clients les plus expérimentés des règles de filtrage du trafic doivent demander un fichier zip de l’outil de tableau de bord, qui comprend un fichier README décrivant comment charger le conteneur Docker et ingérer les journaux CDN.
+Les outils des tableaux de bord peuvent être clonés directement à partir de la [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Référentiel Github.
 
 
 ### Familiarisation avec l’outil de tableau de bord {#dashboard-getting-familiar}
