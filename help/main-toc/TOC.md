@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2bb6c6b5846264145543134f607bd6520865b4ed
+source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
 workflow-type: tm+mt
-source-wordcount: '4330'
+source-wordcount: '4331'
 ht-degree: 93%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 93%
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
-         + [Notes de mise à jour de la version 2023.8.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
+         + [Notes de mise à jour de la version 2023.8.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
          + [Notes de mise à jour de la version 2023.7.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
          + [Notes de mise à jour de la version 2023.6.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [Notes de mise à jour de 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
@@ -87,7 +87,7 @@ ht-degree: 93%
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
          + [Notes de mise à jour de la version 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
-         + [Notes de mise à jour de la version 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
+         + [Notes de mise à jour de la version 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [Notes de mise à jour de la version 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [Notes de mise à jour de la version 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [Notes de mise à jour de la version 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
@@ -137,7 +137,7 @@ ht-degree: 93%
       + [Notes de mise à jour de la version actuelle](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2023 {#2023}
          + [Notes de mise à jour de la version 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
-         + [Notes de mise à jour de la version 2023.8.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
+         + [Notes de mise à jour de la version 2023.8.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
          + [Notes de mise à jour de la version 2023.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
          + [Notes de mise à jour de la version 2023.6.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
          + [Notes de mise à jour de la version 2023.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
@@ -575,7 +575,7 @@ ht-degree: 93%
          + [Incorporer un formulaire adaptatif basé sur les composants principaux à une page web externe](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Incorporation d’un formulaire adaptatif basé sur des composants Foundation à une page web externe](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modèle de données de formulaire {#use-form-data-model}
-         + [Connecter vos sources de données à Cloud Service](/help/forms/data-integration.md)
+         + [Connexion d’AEM Forms à la base de données ou à la source de données](/help/forms/data-integration.md)
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Intégration de l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
