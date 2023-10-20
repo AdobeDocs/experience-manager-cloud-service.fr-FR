@@ -120,7 +120,7 @@ Pour qu’un composant fonctionne avec le système de style d’AEM et affiche l
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-Cette méthode utilise des [recouvrements](/help/implementing/developing/introduction/overlays.md) en faisant appel à [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+>Cette méthode utilise des [recouvrements](/help/implementing/developing/introduction/overlays.md) en faisant appel à [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Une fois le composant configuré, les styles configurés par les personnes créant les pages sont automatiquement insérés par AEM sur l’élément décoratif qu’AEM encapsule automatiquement autour de chaque composant modifiable. Le composant lui-même n’a besoin d’effectuer aucune autre action pour que cela se produise.
 
@@ -134,11 +134,11 @@ L’onglet de la boîte de dialogue Modifier peut être inclus de la même mani�
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-Cette méthode utilise des [recouvrements](/help/implementing/developing/introduction/overlays.md) en faisant appel à [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+>Cette méthode utilise des [recouvrements](/help/implementing/developing/introduction/overlays.md) en faisant appel à [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
-L’onglet Styles de la boîte de dialogue Modifier n’est pas activé par défaut.
+>L’onglet Styles de la boîte de dialogue Modifier n’est pas activé par défaut.
 
 ### Styles avec noms d’éléments {#styles-with-element-names}
 
@@ -150,11 +150,11 @@ Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 
 >[!CAUTION]
 >
-Évitez de définir des noms d’éléments pour les styles pouvant être combinés. Lorsque plusieurs noms d’éléments sont définis, l’ordre de priorité est le suivant :
+>Évitez de définir des noms d’éléments pour les styles pouvant être combinés. Lorsque plusieurs noms d’éléments sont définis, l’ordre de priorité est le suivant :
 >
-1. HTL est prioritaire sur tout le reste : `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
-1. Ensuite, au sein de plusieurs styles actifs, le premier style de la liste des styles configurés dans la politique du composant est sélectionné.
-1. Enfin, le nom `cq:htmlTag`/`cq:tagName` du composant est considéré comme une valeur de repli.
+>1. HTL est prioritaire sur tout le reste : `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+>1. Ensuite, au sein de plusieurs styles actifs, le premier style de la liste des styles configurés dans la politique du composant est sélectionné.
+>1. Enfin, le nom `cq:htmlTag`/`cq:tagName` du composant est considéré comme une valeur de repli.
 >
 
 Cette capacité à définir des noms de styles est utile pour les composants génériques, tels que le conteneur de mise en page ou le composant Fragment de contenu. Cela permet de leur donner davantage de sens.

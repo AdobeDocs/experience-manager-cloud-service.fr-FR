@@ -314,7 +314,7 @@ Les fichiers inclus doivent être nommés comme suit :
 
 >[!TIP]
 >
-Pour pouvoir inclure plus de fichiers de manière beaucoup moins limitée, vous pouvez décider de passer en mode de configuration Dispatcher flexible. Consultez [Validation et débogage à l’aide des outils de Dispatcher](/help/implementing/dispatcher/validation-debug.md) pour plus d’informations sur le mode flexible.
+>Pour pouvoir inclure plus de fichiers de manière beaucoup moins limitée, vous pouvez décider de passer en mode de configuration Dispatcher flexible. Consultez [Validation et débogage à l’aide des outils de Dispatcher](/help/implementing/dispatcher/validation-debug.md) pour plus d’informations sur le mode flexible.
 
 Vous pouvez également inclure la version **par défaut** des règles de réécriture, dont le nom est `conf.d/rewrites/default_rewrite.rules`.
 Notez qu’il n’existe pas de version par défaut des fichiers de variables.
@@ -355,7 +355,7 @@ Cloud manager validator 2.0.xx
 Cette phase vérifie la syntaxe Apache en démarrant Docker dans une image. Docker doit être installé localement, mais il n’est pas nécessaire qu’AEM soit en cours d’exécution.
 
 >[!NOTE]
-Les utilisateurs et utilisatrices de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Cette condition préalable est nécessaire pour exécuter et déboguer le Dispatcher sur un ordinateur local.
+>Les utilisateurs et utilisatrices de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Cette condition préalable est nécessaire pour exécuter et déboguer le Dispatcher sur un ordinateur local.
 
 Cette phase peut également être exécutée indépendamment via `validator full -d out src/dispatcher`, qui génère un répertoire de sortie, dont a besoin la commande suivante `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
