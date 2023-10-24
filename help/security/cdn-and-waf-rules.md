@@ -2,9 +2,9 @@
 title: Configuration des règles de filtre de trafic avec des règles WAF
 description: Utilisation de règles de filtrage du trafic avec des règles WAF pour filtrer le trafic
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
+source-git-commit: 5231d152a67b72909ca5b38f0bbc40616ccd4739
 workflow-type: tm+mt
-source-wordcount: '3810'
+source-wordcount: '3661'
 ht-degree: 1%
 
 ---
@@ -166,6 +166,7 @@ Un groupe de conditions est composé de plusieurs conditions simples et/ou de gr
 | reqHeader | `string` | Renvoie l’en-tête de requête avec le nom spécifié |
 | queryParam | `string` | Renvoie le paramètre de requête avec le nom spécifié |
 | reqCookie | `string` | Renvoie le cookie avec le nom spécifié |
+| postParam | `string` | Renvoie le paramètre avec le nom spécifié du corps. Fonctionne uniquement lorsque le corps est de type de contenu `application/x-www-form-urlencoded` |
 
 **Prédicat**
 
@@ -208,12 +209,9 @@ La variable `wafFlags` peut contenir les éléments suivants :
 | TRAVERSAL | Directory Traversal | Directory Traversal est une tentative de navigation dans des dossiers privilégiés à travers un système dans l’espoir d’obtenir des informations sensibles. |
 | USERAGENT | Outils d’attaque | L’outil d’attaque est l’utilisation de logiciels automatisés pour identifier des vulnérabilités de sécurité ou pour tenter d’exploiter une vulnérabilité découverte. |
 | LOG4J-JNDI | JNDI Log4J | Les attaques JNDI de Log4J tentent d’exploiter la variable [Vulnérabilité de Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) présente dans les versions de Log4J antérieures à la version 2.16.0 |
-| AWS SSRF | AWS-SSRF | SSRF (Server Side Request Forgery) est une requête qui tente d’envoyer des requêtes effectuées par l’application web pour cibler les systèmes internes. Les attaques SSRF AWS utilisent SSRF pour obtenir les clés Amazon Web Services (AWS) et accéder aux compartiments S3 et à leurs données. |
 | BHH | En-têtes de saut inappropriés | Les en-têtes de saut incorrects indiquent une tentative de contrebande HTTP via un en-tête de transcodage (TE) ou de longueur de contenu (CL) mal formé, ou un en-tête de TE et de CL bien formé. |
 | ABNORMALPATH | Chemin anormal | Chemin anormal indique que le chemin d’origine diffère du chemin normalisé (par exemple, `/foo/./bar` est normalisé en `/foo/bar`) |
-| COMPRESSÉ | Compression détectée | Le corps de la requête du POST est compressé et ne peut pas être inspecté. Par exemple, si un en-tête de requête &quot;Content-Encoding: gzip&quot; est spécifié et que le corps du POST ne contient pas de texte brut. |
 | DOUBLEENCODING | Codage double | Le codage double vérifie la technique d’évasion du double encodage des caractères HTML. |
-| NAVIGATION FORCEFULBROWSING | Navigation forcée | La navigation forcée est la tentative d’accès aux pages d’administration qui a échoué. |
 | NOTUTF8 | Codage non valide | Un encodage non valide peut entraîner la traduction par le serveur de caractères malveillants d’une requête dans une réponse, provoquant un déni de service ou un XSS. |
 | JSON-ERROR | Erreur de codage JSON | Corps de requête de POST, de PUT ou de PATCH spécifié comme contenant JSON dans l’en-tête de requête &quot;Content-Type&quot;, mais contenant des erreurs d’analyse JSON. Cela est souvent lié à une erreur de programmation ou à une requête automatisée ou malveillante. |
 | MALFORMED-DATA | Données incorrectes dans le corps de la requête | Corps de requête de POST, de PUT ou de PATCH incorrect selon l’en-tête de requête &quot;Content-Type&quot;. Par exemple, si un en-tête de requête &quot;Content-Type: application/x-www-form-urlencoded&quot; est spécifié et contient un corps de POST qui est json. Il s’agit souvent d’une erreur de programmation, d’une requête automatisée ou malveillante. Nécessite l’agent 3.2 ou version ultérieure. |
@@ -222,9 +220,7 @@ La variable `wafFlags` peut contenir les éléments suivants :
 | NO-CONTENT-TYPE | En-tête de requête &quot;Content-Type&quot; manquant | Requête de POST, de PUT ou de PATCH ne comportant pas d’en-tête de requête &quot;Content-Type&quot;. Par défaut, les serveurs d’applications doivent assumer &quot;Content-Type: text/plain; charset=us-ascii&quot; dans ce cas. De nombreuses demandes automatisées et malveillantes peuvent ne pas disposer du &quot;type de contenu&quot;. |
 | NOUA | Aucun agent utilisateur | De nombreuses requêtes automatisées et malveillantes utilisent des agents utilisateur faux ou manquants pour rendre difficile l’identification du type d’appareil qui effectue les requêtes. |
 | TORNODE | Trafic Tor | Tor est un logiciel qui cache l&#39;identité d&#39;un utilisateur. Un pic de trafic Tor peut indiquer qu’un attaquant essaie de masquer sa localisation. |
-| DATACENTER | Trafic du centre de données | Le trafic du centre de données est du trafic non organique provenant de fournisseurs d’hébergement identifiés. Ce type de trafic n’est généralement pas associé à un utilisateur final réel. |
 | NULLBYTE | Octet nul | Les octets nuls n’apparaissent généralement pas dans une requête et indiquent que la requête est incorrecte et potentiellement malveillante. |
-| IMPOSTOR | SearchBot Impostor | L’imposteur de robots de recherche est quelqu’un qui prétend être un robot de recherche Google ou Bing, mais qui n’est pas légitime. Remarque : ne dépend pas d’une réponse seule, mais doit être résolu dans le cloud en premier. Elle ne doit donc pas être utilisée dans une règle précédente. |
 | PRIVATEFILE | Fichiers privés | Les fichiers privés sont généralement de nature confidentielle, par exemple un Apache `.htaccess` ou un fichier de configuration susceptible de faire fuiter des informations sensibles. |
 | SCANNER | Scanner | Identifie les services et outils d’analyse les plus utilisés |
 | RESPONSESPLIT | Fractionnement des réponses HTTP | Identifie le moment où les caractères CRLF sont envoyés en entrée de l’application pour injecter des en-têtes dans la réponse HTTP. |
