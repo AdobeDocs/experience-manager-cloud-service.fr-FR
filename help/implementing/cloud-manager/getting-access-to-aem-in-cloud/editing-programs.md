@@ -2,10 +2,10 @@
 title: Modification de programmes
 description: Découvrez comment modifier vos programmes de production et Sandbox pour ajuster leurs options après les avoir créés.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 50%
+source-wordcount: '507'
+ht-degree: 44%
 
 ---
 
@@ -53,15 +53,19 @@ Vous devez être membre du rôle **Propriétaire de l’entreprise** pour modifi
    * Cette date est fournie à titre d’information uniquement. Il déclenche le widget GoLive sur la page d’aperçu du programme. De son côté, il fournit des liens internes au produit vers la documentation des bonnes pratiques as a Cloud Service de Adobe Experience Manager (AEM) pour s’aligner sur votre parcours, ce qui a abouti à une expérience GoLive réussie.
    * Cet onglet n’est pas disponible pour les programmes Sandbox.
 
+1. Si les droits requis sont disponibles pour le programme, la variable **Sécurité** vous indique où vous pouvez modifier les options de sécurité du programme.
+
+   ![Modification des paramètres de sécurité](assets/edit-program-security.png)
+
+   * HIPAA ne peut pas être activé ni désactivé après [création du programme.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * [En savoir plus](https://www.adobe.com/go/hipaa-ready) sur la mise en œuvre de la solution conforme à la norme HIPAA d’Adobe.
+   * Une fois activée, la protection WAF-DDOS peut ensuite être configurée en configurant une [pipeline hors production.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications dans le programme.
 
 Chaque fois qu’un programme est modifié, y compris l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
-
-Si la sécurité renforcée de votre programme de production a été activée, un onglet supplémentaire **Sécurité renforcée** est disponible dans la fenêtre **Modifier le programme** pour confirmer que la fonctionnalité est bien activée pour ce programme.
-
-![Sécurité renforcée activée pour un programme.](assets/edit-program-enhanced.png)
-
-Vous ne pouvez pas modifier ce paramètre une fois le programme créé. Pour plus d’informations sur l’option de sécurité améliorée, voir [Création de programmes de production](creating-production-programs.md).
 
 ## Suppression de programmes Sandbox {#delete-sandbox-program}
 

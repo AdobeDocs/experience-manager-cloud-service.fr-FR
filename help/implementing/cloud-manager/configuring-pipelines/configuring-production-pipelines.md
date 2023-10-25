@@ -3,23 +3,23 @@ title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 98%
+source-wordcount: '1420'
+ht-degree: 80%
 
 ---
 
 
 # Configuration d’un pipeline de production {#configure-production-pipeline}
 
-Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production. Un pipeline de production déploie le code d’abord dans l’environnement d’évaluation, puis, une fois approuvé, déploie le même code dans l’environnement de production.
+Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production. Un pipeline de production déploie le code d’abord dans l’environnement intermédiaire, puis, une fois approuvé, déploie le même code dans l’environnement de production.
 
 Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** pour configurer les pipelines de production.
 
 >[!NOTE]
 >
->Un pipeline de production ne peut pas être configuré tant que la création du programme n’est pas terminée, qu’un référentiel git ne comporte pas au moins une branche et qu’un ensemble d’environnements de production et d’évaluation est créé.
+>Un pipeline de production ne peut être configuré que lorsqu’un programme a été créé, que si le référentiel Git comporte au moins une branche et que si un ensemble d’environnements de production et d’évaluation a été créé.
 
 Avant de commencer le déploiement du code, vous devez configurer les paramètres de votre pipeline à partir de [!UICONTROL Cloud Manager].
 
@@ -56,42 +56,18 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
    ![Configuration du pipeline de production](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. Dans l’onglet **Code source**, vous devez définir où le pipeline doit récupérer son code et à quel type de code il correspond.
+1. Sur le **Code source** vous devez sélectionner le type de code que le pipeline doit traiter.
 
-   * **[Code front-end](#front-end-code)**
    * **[Code full stack](#full-stack-code)**
-   * **[Configuration de la couche web](#web-tier-config)**
+   * **[Déploiement ciblé](#targeted-deployment)**
 
-Les étapes de création de votre pipeline de production varient en fonction de l’option du **Code source** que vous avez sélectionné. Suivez les liens ci-dessus pour accéder à la section suivante de ce document afin de terminer la configuration de votre pipeline.
+Consultez le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour plus d’informations sur les types de pipelines.
 
-### Code front-end {#front-end-code}
-
-Un pipeline de code front-end déploie les versions de code front-end contenant une ou plusieurs applications d’interface utilisateur côté client. Consultez le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour plus d’informations sur ce type de pipeline.
-
-Pour terminer la configuration du pipeline de production de code front-end, procédez comme suit.
-
-1. Dans l’onglet **Code source**, vous devez définir les options suivantes.
-
-   * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
-
-   >[!TIP]
-   > 
-   >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
-
-   * **Branche Git** : cette option définit à partir de quelle branche le pipeline doit récupérer le code.
-      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à les sélectionner.
-   * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
-   * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
-
-   ![Code front-end](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
-
-1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
-
-Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans la carte **Pipelines** dans la page **Aperçu du programme**.
+Les étapes de création de votre pipeline de production varient en fonction du type de code source sélectionné. Suivez les liens ci-dessus pour accéder à la section suivante de ce document afin de terminer la configuration de votre pipeline.
 
 ### Code full stack {#full-stack-code}
 
-Un pipeline de code full stack déploie simultanément des versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec une configuration HTTPD/Dispatcher. Consultez le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) pour plus d’informations sur ce type de pipeline.
+Un pipeline de code full stack déploie simultanément des versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec une configuration HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -109,7 +85,7 @@ Pour terminer la configuration du pipeline de production de code full stack, pro
 
    * **Branche Git** : cette option définit à partir de quelle branche le pipeline doit récupérer le code.
       * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à les sélectionner.
-   * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
+   * **Ignorer la configuration de niveau Web** – Lorsque cette case est cochée, le pipeline ne déploie pas votre configuration de niveau web.
    * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
    * **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié.
 
@@ -141,43 +117,54 @@ Les chemins configurés pour l’audit de l’expérience sont soumis au service
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
-### Configuration de la couche web {#web-tier-config}
+### Déploiement ciblé {#targeted-deployment}
 
-Un pipeline de configuration de niveau web déploie les configurations HTTPD/Dispatcher. Consultez le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) pour plus d’informations sur ce type de pipeline.
+Un déploiement ciblé déploie le code uniquement pour les parties sélectionnées de votre application AEM. Dans un tel déploiement, vous pouvez choisir **Inclure** l’un des types de code suivants :
 
-Pour terminer la configuration du pipeline de production de code full stack, procédez comme suit.
-
-1. Dans l’onglet **Code source**, vous devez définir les options suivantes.
-
-   * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
-
-   >[!TIP]
-   > 
-   >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
-
-   * **Branche Git** : cette option définit à partir de quelle branche le pipeline doit récupérer le code.
-      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à les sélectionner.
-   * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
-      * Pour les pipelines de configuration de niveau web, il s’agit généralement du chemin contenant les répertoires `conf.d`, `conf.dispatcher.d` et `opt-in`.
-      * Par exemple, si la structure du projet a été générée à partir de l’[archétype de projet AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) le chemin sera `/dispatcher/src`.
-   * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
-   * **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié.
-
-   ![Code de niveau web](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
-
-1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
+* **[Config](#config)** - Configurez les paramètres de votre environnement AEM, les tâches de maintenance, les règles CDN, etc.
+   * Voir le document [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
+* **[Code front-end](#front-end-code)** - Configurez JavaScript et CSS pour le front-end de votre application AEM.
+   * Avec les pipelines front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut être accéléré.
+   * Consultez le document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus ainsi que certaines considérations à prendre en compte pour en tirer le meilleur parti.
+* **[Configuration du niveau web](#web-tier-config)** - Configurez les propriétés du dispatcher pour stocker, traiter et diffuser des pages web au client.
 
 >[!NOTE]
 >
->Si vous disposez déjà d’un pipeline full stack se déployant vers un environnement, la création d’un pipeline de configuration de niveau web pour le même environnement entraîne l’exclusion de la configuration de niveau web existante dans le pipeline full stack.
+>* Si un pipeline de code de niveau web existe pour l’environnement sélectionné, cette sélection est désactivée.
+>* Si vous disposez déjà d’un pipeline full stack se déployant vers un environnement, la création d’un pipeline de configuration de niveau web pour le même environnement entraîne l’exclusion de la configuration de niveau web existante dans le pipeline full stack.
+> * À tout moment, il ne peut y avoir qu’un seul pipeline de déploiement de configuration par environnement.
 
-Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans la carte **Pipelines** dans la page **Aperçu du programme**.
+Les étapes de création de votre pipeline de déploiement ciblé en production sont les mêmes une fois que vous avez choisi un type de déploiement.
 
-## Développer des sites avec le pipeline front-end {#developing-with-front-end-pipeline}
+1. Choisissez le type de déploiement dont vous avez besoin.
 
-Avec les pipelines front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut être accéléré.
+![Options de déploiement ciblées](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
 
-Consultez le document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus ainsi que certaines considérations à prendre en compte pour en tirer le meilleur parti.
+1. Définissez la variable **Environnements de déploiement éligibles**.
+
+   * Si votre pipeline est un pipeline de déploiement, vous devez sélectionner les environnements à déployer.
+
+1. Sous **Code source**, définissez les options suivantes :
+
+   * **Référentiel** – Cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+
+   >[!TIP]
+   > 
+   >Consultez [Ajout et gestion de référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+
+   * **Branche Git** – Cette option définit à partir de quelle branche le pipeline sélectionné doit récupérer le code.
+      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Elle trouve les branches correspondantes que vous pouvez sélectionner.
+   * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
+   * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
+   * **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié. Disponible uniquement pour les déploiements ciblés de niveau web.
+
+   ![Configuration du pipeline de déploiement](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+
+1. Cliquez sur **Enregistrer**.
+
+Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) sur la carte **Pipelines** sur la page **Aperçu du programme**.
+
+Lors de l’exécution d’un pipeline de déploiement ciblé, les configurations [telles que les configurations WAF ;](/help/security/traffic-filter-rules-including-waf.md) seront déployés, à condition qu’ils soient enregistrés dans l’environnement, le référentiel et la branche que vous avez définis dans le pipeline.
 
 ## Ignorer les packages du Dispatcher {#skip-dispatcher-packages}
 
