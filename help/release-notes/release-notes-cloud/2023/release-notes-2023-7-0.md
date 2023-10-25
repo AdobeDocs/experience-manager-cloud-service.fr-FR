@@ -1,15 +1,15 @@
 ---
 title: Notes de mise à jour de la version 2023.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 1158508cc28d33e5799b3102381f227db05a0107
+exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 33%
+ht-degree: 47%
 
 ---
 
-
-# Notes de mise à jour 2023.7.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2023.7.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour techniques de la version 2023.7.0 d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -39,15 +39,15 @@ Regardez la vidéo Aperçu de la version de juillet 2023 pour un résumé des fo
 
 * MSM pour les fragments de contenu. AEM Multi-site Manager est désormais disponible pour les fragments de contenu, ce qui permet de créer des Live Copies de fragments de contenu pour la distribution de contenu en bloc. Les contrôles d’héritage granulaires sont disponibles jusqu’au niveau Elément de fragment de contenu et Niveau de variation.
 
-### Nouvelles fonctionnalités de la préversion de [!DNL Experience Manager Sites] {#prerelease-sites}
+### Nouvelles fonctionnalités de la version préliminaire d’[!DNL Experience Manager Sites] {#prerelease-sites}
 
-* La variable [Console de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) permet désormais aux utilisateurs d’afficher les balises et de rechercher par balises appliquées en tant que métadonnées aux fragments de contenu. Les utilisateurs n’auront plus à passer à l’interface utilisateur d’Assets pour cette fonctionnalité, ce qui réduit le changement de contexte et améliore l’efficacité.
+* La variable [Console de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=fr) permet désormais aux utilisateurs d’afficher les balises et de rechercher par balises appliquées en tant que métadonnées aux fragments de contenu. Les utilisateurs n’auront plus à passer à l’interface utilisateur d’Assets pour cette fonctionnalité, ce qui réduit le changement de contexte et améliore l’efficacité.
 
 ![Balisage dans la console de fragments de contenu](/help/assets/content-fragments-console-tags.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouvelles fonctionnalités dans la vue Assets {#assets-view-features}
+### Nouvelles fonctionnalités de la vue Assets {#assets-view-features}
 
 <!--
 
@@ -84,7 +84,7 @@ Assets Essentials trie désormais les résultats de la recherche en fonction de
 
 * **[Composants React pour Forms sans affichage](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: vous pouvez désormais prévisualiser et personnaliser les rendus de formulaire adaptatif sans affichage avec les composants React prêts à l’emploi. Ces composants tirent parti des classes BEM des composants principaux de Forms adaptatif pour la mise en forme, ce qui vous permet de personnaliser facilement leur aspect en fonction de vos besoins spécifiques.
 
-* [**Création d’un Forms adaptatif avec des sections répétables**](/help/forms/create-forms-repeatable-sections.md): vous pouvez désormais effectuer les opérations suivantes : [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), et [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) formulaire adaptatif basé sur des composants répétable pour plusieurs enregistrements de données.  Ces sections répétables vous permettent de fournir facilement plusieurs entrées de données. Elle est utile lorsque les instances de données requises sont inconnues à l’avance. L’utilisateur d’un formulaire peut facilement ajouter ou supprimer des sections, ce qui rend les formulaires adaptables à différents scénarios de saisie de données et simplifie la collecte de plusieurs occurrences d’un même enregistrement de données.
+* [**Création d’un Forms adaptatif avec des sections répétables**](/help/forms/create-forms-repeatable-sections.md): vous pouvez désormais effectuer les opérations suivantes : [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr), [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr), et [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr) formulaire adaptatif basé sur des composants répétable pour plusieurs enregistrements de données.  Ces sections répétables vous permettent de fournir facilement plusieurs entrées de données. Cela est utile lorsque les instances de données requises sont inconnues à l’avance. L’utilisateur d’un formulaire peut facilement ajouter ou supprimer des sections, ce qui rend les formulaires adaptables à différents scénarios de saisie de données et simplifie la collecte de plusieurs occurrences d’un même enregistrement de données.
 
 
 ### Fonctionnalités de préversion disponibles dans [!DNL Forms] {#pre-release-features-available-in-forms-channel}
@@ -95,14 +95,14 @@ Assets Essentials trie désormais les résultats de la recherche en fonction de
 
 ### Programme des formulaires adaptatifs découplés destiné aux utilisateurs et utilisatrices précoces {#forms-early-adopter}
 
-Utilisation [Forms adaptatif sans affichage](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr) pour permettre aux développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
+Utilisez les [formulaires adaptatifs découplés](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr) pour permettre à vos développeurs et développeuses de créer, publier et gérer des formulaires interactifs accessibles via des API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
 
 * créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
 * intégrer nativement les formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat ;
 * réutiliser vos composants d’IU propriétaires avec des applications de formulaires ;
-* utiliser la puissance d’Adobe Experience Manager Forms ;
+* tirer profit de la puissance d’Adobe Experience Manager Forms
 
-Vous pouvez envoyer un courrier électronique à `aem-forms-headless@adobe.com` à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs.
+Vous pouvez envoyer un e-mail à `aem-forms-headless@adobe.com` à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -120,7 +120,7 @@ Filtrez le trafic sur le réseau de diffusion de contenu selon :
 
 Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-waf-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs. L&#39;espace est limité.
 
-En savoir plus sur la fonctionnalité de l’article [here](/help/security/cdn-and-waf-rules.md).
+En savoir plus sur la fonctionnalité de l’article [here](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Autres modifications apportées à la base {#other-foundation-changes}
 

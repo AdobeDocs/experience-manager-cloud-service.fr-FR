@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 32%
@@ -60,7 +60,7 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 * **Extraction des archives ZIP**: possibilité de sélectionner les archives ZIP gérées en Experience Manager et [extraction directe des fichiers dans Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sans les télécharger.
 
-  ![Épingler des éléments pour les groupes](/help/release-notes/assets/extract-archive.png)
+  ![Épinglage d’éléments pour les groupes.](/help/release-notes/assets/extract-archive.png)
 
 ### Fonctionnalités de préversion disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
@@ -126,7 +126,7 @@ Filtrez le trafic sur le réseau de diffusion de contenu selon :
 
 Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-waf-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs. L&#39;espace est limité.
 
-En savoir plus sur la fonctionnalité de l’article [here](/help/security/cdn-and-waf-rules.md).
+En savoir plus sur la fonctionnalité de l’article [here](/help/security/traffic-filter-rules-including-waf.md).
 
 ## Cloud Manager {#cloud-manager}
 

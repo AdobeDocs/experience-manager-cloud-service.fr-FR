@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
+source-git-commit: c9ad4b6f2ae5107569c556ca11c75868c9e4be63
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4335'
 ht-degree: 93%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 93%
    + [Prise en charge IMS d’AEM as a Cloud Service](/help/security/ims-support.md)
    + [Prise en charge des mêmes cookies de site pour AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Prise en charge d’OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md)
-   + [Configuration des règles de filtrage du trafic avec des règles WAF pour filtrer le trafic](/help/security/cdn-and-waf-rules.md)
+   + [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considérations relatives à la sécurité d’AEM as a Cloud Service](/help/security/security-considerations.md)
 + Intégration {#onboarding}
    + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)
@@ -578,7 +578,7 @@ ht-degree: 93%
          + [Connexion d’AEM Forms à la base de données ou à la source de données](/help/forms/data-integration.md)
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Intégration de l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Connexion d’un formulaire adaptatif à l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Configuration du stockage [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurer les services cloud  [!DNL Microsoft Dynamics 365] et [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
          + [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)

@@ -1,15 +1,15 @@
 ---
 title: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 2b242cb10fb5d1da725c1396633d2db779a78639
+exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1686'
-ht-degree: 21%
+ht-degree: 30%
 
 ---
 
-
-# Notes de mise à jour 2023.8.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2023.8.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour techniques de la version 2023.8.0 d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -27,7 +27,7 @@ Regardez la vidéo Aperçu de la version d’août 2023 pour un résumé des fon
 
 ### Nouvelles fonctionnalités de [!DNL Experience Manager Sites] {#sites-features}
 
-* La variable [Console de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) permet désormais aux utilisateurs d’afficher les balises et de rechercher par balises appliquées en tant que métadonnées aux fragments de contenu. Les utilisateurs n’auront plus à passer à l’interface utilisateur d’Assets pour cette fonctionnalité, ce qui réduit le changement de contexte et améliore l’efficacité.
+* La variable [Console de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=fr) permet désormais aux utilisateurs d’afficher les balises et de rechercher par balises appliquées en tant que métadonnées aux fragments de contenu. Les utilisateurs n’auront plus à passer à l’interface utilisateur d’Assets pour cette fonctionnalité, ce qui réduit le changement de contexte et améliore l’efficacité.
 
   ![Balisage dans la console de fragments de contenu](/help/assets/content-fragments-console-tags.png)
 * Le nouvel éditeur de fragment de contenu est désormais disponible sur AEM as a Cloud Service. Cela permet aux auteurs de contenu d’être plus productifs en rationalisant leurs tâches de création et en réduisant la nécessité de basculer entre différentes applications lors de la modification du contenu.
@@ -54,7 +54,7 @@ Le nouvel éditeur de fragment de contenu offre les avantages suivants, qui ne s
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouvelles fonctionnalités dans la vue Assets {#assets-view-features}
+### Nouvelles fonctionnalités de la vue Assets {#assets-view-features}
 
 <!--
 
@@ -66,17 +66,17 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **Importation en bloc de ressources à partir de sources de données**: les administrateurs disposent désormais de la variable [possibilité d’importer un grand nombre de ressources](/help/assets/bulk-import-assets-view.md) d’une source de données vers AEM Assets. Les administrateurs n’ont plus besoin de charger des ressources ou des dossiers individuels vers AEM Assets. Les sources de données prises en charge pour l’importation en bloc sont Azure, AWS, Google Cloud et Dropbox.
+* **Importation en bloc de ressources à partir de sources de données**: les administrateurs disposent désormais de la variable [possibilité d’importer un grand nombre de ressources](/help/assets/bulk-import-assets-view.md) d’une source de données vers AEM Assets. Les administrateurs et administratrices n’ont plus besoin de charger des ressources ou des dossiers individuels vers AEM Assets. Les sources de données prises en charge pour l’import en bloc sont Azure, AWS, Google Cloud et Dropbox.
 
-  ![Importation en bloc de ressources à partir d’une source de données](/help/release-notes/assets/bulk-import.png)
+  ![Import de ressources en bloc à partir d’une source de données.](/help/release-notes/assets/bulk-import.png)
 
-* **Outils de retouche d’images optimisés par Adobe Express**: Facile et intuitive [outils de retouche d’images optimisés par Adobe Express](/help/assets/edit-images-assets-view.md) disponible directement dans AEM Assets pour augmenter la réutilisation du contenu et accélérer la vitesse du contenu.
+* **Outils de retouche d’images optimisés par Adobe Express**: Facile et intuitive [outils de retouche d’images optimisés par Adobe Express](/help/assets/edit-images-assets-view.md) disponible directement dans AEM Assets pour augmenter la réutilisation du contenu et accélérer la vitesse du contenu.
 
-  ![Modification d’images avec Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
+  ![Modification d’images avec Adobe Express.](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibilité lors de l’épinglage d’éléments pour l’accès rapide à My Workspace**: possibilité de sélectionner et d’épingler des éléments pour vous, pour l’ensemble de l’organisation ou pour une liste de groupes afin qu’ils s’affichent dans la variable [Section Accès rapide de My Workspace](/help/assets/my-workspace-assets-view.md) en fonction de votre sélection.
+* **Flexibilité lors de l’épinglage d’éléments pour l’accès rapide à Mon espace de travail**: possibilité de sélectionner et d’épingler des éléments pour vous, pour l’ensemble de l’organisation ou pour une liste de groupes afin qu’ils s’affichent dans la variable [Section Accès rapide de My Workspace](/help/assets/my-workspace-assets-view.md) en fonction de votre sélection.
 
-  ![Épingler des éléments pour les groupes](/help/release-notes/assets/pin-items-for-groups.png)
+  ![Épinglage d’éléments pour les groupes.](/help/release-notes/assets/pin-items-for-groups.png)
 
 ### Nouvelles fonctionnalités dans la vue d’administration {#admin-view-features}
 
@@ -96,7 +96,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Ressources**: possibilité de sélectionner les archives ZIP gérées en Experience Manager et [extraction directe des fichiers dans Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sans les télécharger.
 
-  ![Épingler des éléments pour les groupes](/help/release-notes/assets/extract-archive.png)
+  ![Épinglage d’éléments pour les groupes.](/help/release-notes/assets/extract-archive.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -127,19 +127,19 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Prise en charge du nombre de pages dans les API de communication**: maintenant, en plus de récupérer votre document par le biais des API de communication, vous pouvez également recevoir des informations précieuses sur le nombre de pages contenues dans le document.
 
-* **[Gestion des erreurs avec des gestionnaires d’erreurs personnalisés dans l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: vous pouvez désormais appeler une fonction personnalisée en réponse à une erreur renvoyée par un service externe et fournir une réponse personnalisée aux utilisateurs finaux. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client que le service est hors service.
+* **[Gestion des erreurs avec des gestionnaires d’erreurs personnalisés dans l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: vous pouvez désormais appeler une fonction personnalisée en réponse à une erreur renvoyée par un service externe et fournir une réponse personnalisée aux utilisateurs finaux. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client ou la cliente que le service est indisponible.
 
 
 ### Programme des formulaires adaptatifs découplés destiné aux utilisateurs et utilisatrices précoces {#forms-early-adopter}
 
-Utilisation [Forms adaptatif sans affichage](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr) pour permettre aux développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
+Utilisez les [formulaires adaptatifs découplés](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr) pour permettre à vos développeurs et développeuses de créer, publier et gérer des formulaires interactifs accessibles via des API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
 
 * créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
 * intégrer nativement les formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat ;
 * réutiliser vos composants d’IU propriétaires avec des applications de formulaires ;
-* utiliser la puissance d’Adobe Experience Manager Forms ;
+* tirer profit de la puissance d’Adobe Experience Manager Forms
 
-Vous pouvez envoyer un courrier électronique à `aem-forms-headless@adobe.com` à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs.
+Vous pouvez envoyer un e-mail à `aem-forms-headless@adobe.com` à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -156,7 +156,7 @@ Filtrez le trafic sur le réseau de diffusion de contenu selon :
 
 Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-waf-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs. L&#39;espace est limité.
 
-En savoir plus sur la fonctionnalité de l’article [here](/help/security/cdn-and-waf-rules.md).
+En savoir plus sur la fonctionnalité de l’article [here](/help/security/traffic-filter-rules-including-waf.md).
 
 
 ## Notes de mise à jour de la maintenance {#maintenance}
