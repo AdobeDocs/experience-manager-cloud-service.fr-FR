@@ -3,14 +3,14 @@ title: Comment intégrer Salesforce à l’aide du flux d’informations d’ide
 description: Découvrez comment intégrer Salesforce à AEM Forms à l’aide du flux d’informations d’identification client OAuth 2.0.
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 37%
+source-wordcount: '422'
+ht-degree: 33%
 
 ---
 
-# Intégration de Salesforce par le flux d’informations d’identification client OAuth 2.0 {#configure-salesforce-with-ouath-2.0-client-credential}
+# Connexion d’un formulaire adaptatif à Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0 {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -20,6 +20,7 @@ ht-degree: 37%
 Vous pouvez utiliser les informations d’identification du client OAuth 2.0 pour intégrer AEM Forms à l’application Salesforce. Les informations d’identification du client OAuth 2.0 sont une méthode standard et sécurisée de communication directe sans intervention de l’utilisateur.
 
 ![Workflow lors de la définition de la communication entre AEM Forms et l’application Salesforce](/help/forms/assets/salesforce-workflow.png)
+
 AEM Forms échange les informations d’identification du client (clé client et secret client), définies dans l’application connectée Salesforce, pour obtenir un jeton d’accès.
 
 L’utilisation des informations d’identification du client OAuth 2.0 présente plusieurs avantages pour l’authentification par rapport à l’authentification Flux de code d’autorisation :
@@ -38,7 +39,7 @@ Avant de définir la communication entre une application Salesforce et un enviro
 
 ## Configuration de l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0 {#steps-to-create-aem-datasource-configuration}
 
-Pour intégrer l’application Salesforce à un formulaire adaptatif à l’aide des paramètres d’authentification des informations d’identification client OAuth 2.0, procédez comme suit :
+Pour connecter le formulaire adaptatif à l’application Salesforce à l’aide des paramètres d’authentification des informations d’identification client OAuth 2.0, procédez comme suit :
 
 1. Connectez-vous à votre instance de création.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Sources de données]**.
@@ -66,4 +67,6 @@ Pour intégrer l’application Salesforce à un formulaire adaptatif à l’aide
 1. Cliquez sur **[!UICONTROL Tester la connexion]**.
 1. Si la connexion est établie, cliquez sur le bouton **[!UICONTROL Créer]**.
 
-Vous pouvez désormais [créer le modèle de données de formulaire](/help/forms/create-form-data-models.md) pour intégrer la source de données configurée à votre formulaire adaptatif.
+Maintenant, vous pouvez [création du modèle de données de formulaire](/help/forms/create-form-data-models.md) pour envoyer le formulaire adaptatif à l’application Salesforce.
+
+

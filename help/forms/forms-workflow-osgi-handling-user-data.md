@@ -5,10 +5,10 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 99%
+source-wordcount: '1030'
+ht-degree: 96%
 
 ---
 
@@ -74,7 +74,7 @@ Vous pouvez accéder aux données utilisateur et les supprimer d’une instance 
 Toutefois, dans les scénarios suivants d’identification des workflows associés à un initiateur ou une initiatrice, l’identification peut échouer ou les résultats peuvent être ambigus :
 
 * **Workflow déclenché par un dossier de contrôle** : il est impossible d’identifier une instance de workflow à l’aide de son initiateur ou initiatrice si le workflow est déclenché par un dossier de contrôle. Dans ce cas, les informations utilisateur sont codées dans les données stockées.
-* **Workflow initié à partir de l’instance de publication AEM** : toutes les instances de workflow sont créées à l’aide d’un utilisateur de service lorsque les formulaires adaptatifs, les communications interactives ou les lettres sont envoyés depuis l’instance de publication AEM. Dans ce cas, le nom d’utilisateur de la personne connectée n’est pas capturé dans les données de l’instance de workflow.
+* **Workflow lancé à partir de l’instance de publication AEM**: toutes les instances de workflow sont créées à l’aide d’un utilisateur de service lorsqu’un Forms adaptatif ou des lettres sont envoyés à partir de l’instance de publication AEM. Dans ce cas, le nom d’utilisateur de la personne connectée n’est pas capturé dans les données de l’instance de workflow.
 
 ### Accès aux données utilisateur {#access}
 

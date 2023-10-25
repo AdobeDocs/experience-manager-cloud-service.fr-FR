@@ -2,9 +2,9 @@
 title: Comment créer et utiliser des thèmes pour mettre en forme un formulaire adaptatif ?
 description: Utilisez les thèmes de formulaire adaptatif pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '5581'
+source-wordcount: '5578'
 ht-degree: 98%
 
 ---
@@ -651,7 +651,7 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
     
     * **Éditeur de thèmes :**
     
-    l’éditeur de thèmes vous permet de créer des thèmes pour mettre en forme votre formulaire &lt;!-- ou communication interactive -->. Vous pouvez spécifier le style de composants dans un thème, ce qui permet d’assurer la cohérence de l’apparence parmi les multiples formulaires &lt;!-- ou communications interactives --> que vous développez. La spécification des informations de style dans un thème, puis l’application du thème à un formulaire sont recommandées.
+    l’éditeur de thèmes vous permet de créer des thèmes pour mettre en forme votre formulaire &lt;!-- ou communication interactive -->. Vous pouvez spécifier la mise en forme des composants dans un thème, ce qui permet d’assurer la cohérence de l’aspect entre les différents formulaires que vous développez. La spécification des informations de style dans un thème, puis l’application du thème à un formulaire sont recommandées.
     
     * **Style intégré :**
     
