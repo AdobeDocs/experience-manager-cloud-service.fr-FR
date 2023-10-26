@@ -2,10 +2,10 @@
 title: Conseils de développement sur AEM as a Cloud Service
 description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
+source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
 workflow-type: tm+mt
-source-wordcount: '2746'
-ht-degree: 93%
+source-wordcount: '2733'
+ht-degree: 94%
 
 ---
 
@@ -69,9 +69,6 @@ En plus de fournir des délais d’expiration, une gestion appropriée de ces d�
 
 ## Gestion des limites de taux de requête {#rate-limit-handling}
 
->[!NOTE]
->La réponse d’erreur HTTP passera de 503 à 429 durant la semaine du 7 août 2023.
->
 Lorsque le taux de requêtes entrantes à AEM dépasse des niveaux sains, AEM répond aux nouvelles requêtes avec le code d’erreur HTTP 429. Les applications qui effectuent des appels programmatiques à AEM peuvent envisager de coder de manière défensive, en essayant à nouveau après quelques secondes avec une stratégie de backoff exponentiel. Avant la mi-août 2023, AEM avait répondu à la même condition avec le code d’erreur HTTP 503.
 
 ## Aucune personnalisation classique de l’interface utilisateur {#no-classic-ui-customizations}
