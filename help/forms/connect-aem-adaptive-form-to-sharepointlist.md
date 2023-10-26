@@ -3,7 +3,9 @@ title: Comment connecter AEM formulaire adaptatif à la liste SharePoint Microso
 description: Connectez un formulaire adaptatif à la liste SharePoint Microsoft®. Découvrez comment configurer la liste SharePoint Microsoft® et créer un modèle de données de formulaire à l’aide de la configuration. En outre, vous apprendrez comment intégrer le FDM à votre formulaire adaptatif.
 role: User, Developer
 keywords: Connectez AEM formulaire adaptatif à la liste SharePoint Microsoft, connectez le formulaire adaptatif à la liste SharePoint de Microsoft, intégrez AEM formulaire adaptatif à la liste SharePoint Microsoft, intégrez le formulaire adaptatif à la liste de , envoyez les données d’un formulaire adaptatif à la liste de , envoyez le processus d’ à la liste de .
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+hide: true
+hidefromToC: true
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 5%
