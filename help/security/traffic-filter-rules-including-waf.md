@@ -2,9 +2,9 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtrage du trafic y compris les règles de pare-feu d’applications web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3480'
 ht-degree: 2%
 
 ---
@@ -118,6 +118,10 @@ La variable `kind` doit être défini sur `CDN` et la version doit être défini
 
 Pour les RDE, la ligne de commande sera utilisée, mais RDE n’est pas pris en charge pour le moment.
 
+**Remarques**
+
+* Vous pouvez utiliser `yq` pour valider localement la mise en forme YAML de votre fichier de configuration (par exemple, `yq cdn.yaml`).
+
 ## Syntaxe des règles de filtre de trafic {#rules-syntax}
 
 Vous pouvez configurer `traffic filter rules` pour établir une correspondance sur des modèles tels que les adresses IP, l’agent utilisateur, les en-têtes de requête, le nom d’hôte, la zone géographique et l’URL.
@@ -152,7 +156,7 @@ Format des règles de filtrage du trafic dans la variable `cdn.yaml` est décrit
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Nom de règle (64 caractères, ne peut contenir que des caractères alphanumériques et - ) |
 | when | X | X | `Condition` | - | La structure de base est la suivante :<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Voir Syntaxe de la structure de condition](#condition-structure) ci-dessous, qui décrit les getters, les prédicats et comment combiner plusieurs conditions. |
-| action | X | X | `Action` | log | log, allow, block, log ou action object La valeur par défaut est log |
+| action | X | X | `Action` | log | log, allow, block ou Action. Le journal par défaut |
 | rateLimit | X |   | `RateLimit` | non défini | Configuration de limitation de débit. La limitation de débit est désactivée si elle n’est pas définie.<br><br>Vous trouverez ci-dessous une section distincte décrivant la syntaxe rateLimit, ainsi que des exemples. |
 
 ### Structure de condition {#condition-structure}
@@ -188,11 +192,11 @@ Un groupe de conditions est composé de plusieurs conditions simples et/ou de gr
 
 | **Propriété** | **Type** | **Description** |
 |---|---|---|
-| reqProperty | `string` | Propriété de requête.<br><br>L’une des : `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>La propriété domain correspond à une transformation en minuscules de l’en-tête hôte de la requête. Elle est utile pour les comparaisons de chaînes, de sorte que les correspondances ne soient pas omises en raison du respect de la casse.<br><br>La variable `clientCountry` utilise deux codes à lettres affichés à l’adresse [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
+| reqProperty | `string` | Propriété de requête.<br><br>L’une des :<br><ul><li>`path`: renvoie le chemin complet d’une URL sans les paramètres de requête.</li><li>`queryString`: renvoie la partie requête d’une URL</li><li>`method`: renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier`: renvoie l’un de `author`, `preview` ou `publish`.</li><li>`domain`: renvoie la propriété de domaine (telle que définie dans la variable `Host` en-tête) en minuscules</li><li>`clientIp`: renvoie l’adresse IP du client.</li><li>`clientCountry`: renvoie un code à deux lettres ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) qui identifient le pays dans lequel se trouve le client.</li></ul> |
 | reqHeader | `string` | Renvoie l’en-tête de requête avec le nom spécifié |
 | queryParam | `string` | Renvoie le paramètre de requête avec le nom spécifié |
 | reqCookie | `string` | Renvoie le cookie avec le nom spécifié |
-| postParam | `string` | Renvoie le paramètre avec le nom spécifié du corps. Fonctionne uniquement lorsque le corps est de type de contenu `application/x-www-form-urlencoded` |
+| postParam | `string` | Renvoie le paramètre de publication avec le nom spécifié du corps de la requête. Fonctionne uniquement lorsque le corps est de type de contenu `application/x-www-form-urlencoded` |
 
 **Prédicat**
 
@@ -207,6 +211,19 @@ Un groupe de conditions est composé de plusieurs conditions simples et/ou de gr
 | **dans** | `array[string]` | true si la liste fournie contient le résultat getter |
 | **notIn** | `array[string]` | true si la liste fournie ne contient pas le résultat getter |
 | **pas** | `boolean` | true lorsque la valeur est définie sur true et que la propriété existe ou lorsqu’elle est définie sur false et que la propriété n’existe pas |
+
+**Remarques**
+
+* La propriété request `clientIp` ne peut être utilisé qu’avec les prédicats suivants : `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` peut également être comparé à des plages d’adresses IP lors de l’utilisation de `in` et `notIn` prédicats. L’exemple suivant met en oeuvre une condition pour évaluer si une adresse IP du client se trouve dans la plage d’adresses IP 192.168.0.0/24 (de 192.168.0.0 à 192.168.0.255) :
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* Nous vous recommandons d’utiliser [regex101](https://regex101.com/) et [Fastly Fiddle](https://fiddle.fastly.dev/) lorsque vous utilisez l’expression régulière. Vous pouvez également en savoir plus sur la façon dont Fastly gère l’expression régulière dans ce [article](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### Structure d’action {#action-structure}
 
@@ -259,6 +276,8 @@ La variable `wafFlags` , qui peut être utilisée dans les règles de filtre de 
 * Si une règle est mise en correspondance et bloquée, le réseau de diffusion de contenu répond par une `406` code de retour.
 
 * Les fichiers de configuration ne doivent pas contenir de secrets, car ils seront lisibles par toute personne ayant accès au référentiel git.
+
+* Les Listes autorisées IP définies dans Cloud Manager sont prioritaires sur les règles de filtrage du trafic.
 
 ## Exemples de règles {#examples}
 
@@ -396,9 +415,10 @@ Les limites de taux sont calculées par réseau CDN POP. Supposons, par exemple,
 | **Propriété** | **Type** | **Par défaut** | **SIGNIFICATION** |
 |---|---|---|---|
 | limit | entier compris entre 10 et 10 000 | obligatoire | Taux de requêtes (par POP CDN) dans les requêtes par seconde pour lesquelles la règle est déclenchée. |
-| window | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le taux de requête est calculé. |
+| window | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le taux de requête est calculé. La précision des compteurs dépend de la taille de la fenêtre (plus grande précision de la fenêtre). Par exemple, on peut s’attendre à une précision de 50 % pour la fenêtre d’une seconde et de 90 % pour la fenêtre de 60 secondes. |
 | pénalité | entier compris entre 60 et 3 600 | 300 (5 minutes) | Période en secondes pendant laquelle les requêtes correspondantes sont bloquées (arrondie à la minute la plus proche). |
 | groupBy | tableau[Getter] | Aucune | le compteur de limiteurs de débit sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
+
 
 ### Exemples {#ratelimiting-examples}
 
