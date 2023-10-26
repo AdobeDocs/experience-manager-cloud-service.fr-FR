@@ -2,9 +2,9 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtrage du trafic y compris les règles de pare-feu d’applications web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
+source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3453'
 ht-degree: 2%
 
 ---
@@ -227,7 +227,7 @@ when:
 
 ### Structure d’action {#action-structure}
 
-Spécifié par `action` qui peut être soit une chaîne spécifiant le type d’action (autoriser, bloquer, consigner) et prenant des valeurs par défaut pour toutes les autres options, soit un objet pour lequel le type de règle est défini via `type` champ obligatoire avec d’autres options applicables à ce type.
+Un `action` peut être soit une chaîne spécifiant l’action (autoriser, bloquer ou consigner), soit un objet composé du type d’action (autoriser, bloquer ou consigner) et d’options telles que wafFlags et/ou l’état.
 
 **Types d’actions**
 
@@ -278,6 +278,8 @@ La variable `wafFlags` , qui peut être utilisée dans les règles de filtre de 
 * Les fichiers de configuration ne doivent pas contenir de secrets, car ils seront lisibles par toute personne ayant accès au référentiel git.
 
 * Les Listes autorisées IP définies dans Cloud Manager sont prioritaires sur les règles de filtrage du trafic.
+
+* Les correspondances de règles WAF apparaissent uniquement dans les journaux de réseau de diffusion de contenu pour les échecs et les passes du réseau de diffusion de contenu, et non les accès.
 
 ## Exemples de règles {#examples}
 
@@ -491,7 +493,7 @@ Les règles se comportent comme suit :
 * Si le WAF est sous licence et activé, la variable `waf` répertorie tous les indicateurs WAF (par exemple, SQLI) détectés, que les indicateurs WAF aient été répertoriés dans des règles ou non. Cela permet de fournir des informations sur les nouvelles règles potentielles à déclarer.
 * Si aucune correspondance de règles déclarées par le client et aucune correspondance de règles Waf, la variable `rules` est vide.
 
-En règle générale, les règles correspondantes apparaissent dans l’entrée de journal pour toutes les requêtes sur le réseau de diffusion de contenu, qu’il s’agisse d’un accès, d’une transmission ou d’une absence sur le réseau de diffusion de contenu. Toutefois, les règles WAF apparaissent dans l’entrée de journal uniquement pour les requêtes au réseau de diffusion de contenu qui sont considérées comme des échecs ou des réussites CDN, mais pas pour les accès CDN.
+Comme nous l’avons vu plus haut, les correspondances de règles WAF apparaissent uniquement dans les journaux de réseau de diffusion de contenu pour les échecs et les passes du réseau de diffusion de contenu, et non les accès.
 
 L’exemple ci-dessous illustre un exemple `cdn.yaml` et deux entrées de journal CDN :
 
