@@ -5,7 +5,7 @@ exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -40,16 +40,16 @@ Highlights upcoming features for Assets.
 
 Épinglez des fichiers, des dossiers et des collections pour accéder plus rapidement à ces éléments lorsque vous en aurez besoin ultérieurement. Tous les éléments épinglés s’affichent dans la section **Accès rapide** de Mon espace de travail. Vous pouvez y accéder à l’aide de Mon espace de travail au lieu d’accéder à l’emplacement où ils sont enregistrés dans le référentiel.
 
-Pour épingler une ressource, un dossier ou une collection :
+Pour épingler une ressource, un dossier ou une collection :
 
-1. Sélectionnez l’élément et cliquez sur **[!UICONTROL Épingler l’accès rapide]**.
+1. Sélectionnez l’élément et cliquez sur **[!UICONTROL Épingler à l’accès rapide]**.
 
-1. Sélectionnez cette option si vous devez épingler l’élément uniquement pour vous, pour l’ensemble de l’organisation ou pour les groupes sélectionnés. Si vous sélectionnez **[!UICONTROL Groupes]**, définissez les noms des groupes dans la variable **[!UICONTROL Epinglage pour les groupes]** champ .
+1. Sélectionnez cette option si vous devez épingler l’élément uniquement pour vous, pour l’ensemble de l’organisation ou pour les groupes sélectionnés. Si vous sélectionnez **[!UICONTROL Pour les groupes]**, définissez les noms des groupes dans le champ **[!UICONTROL Épingler pour les groupes]**.
 
-   ![Épingler des éléments pour les groupes](assets/pin-items-for-groups.png)
-1. Cliquez sur **[!UICONTROL Epinglage]**.
+   ![Épinglage d’éléments pour les groupes.](assets/pin-items-for-groups.png)
+1. Cliquez sur **[!UICONTROL Épingler]**.
 
-   L’élément sélectionné s’affiche dans la **[!UICONTROL Accès rapide]** de My Workspace.
+   Les éléments épinglés s’affichent dans la section **[!UICONTROL Accès rapide]** de Mon espace de travail.
    ![Tâches dans l’espace de travail](assets/quick-access.png)
 
 **Insights**

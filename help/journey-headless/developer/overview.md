@@ -68,7 +68,7 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 | 6 | [Comment mettre à jour votre contenu grâce aux API d’AEM Assets](update-your-content.md) | Découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour. |
 | 7 | [Comment tout assembler – votre application et votre contenu dans AEM découplé](put-it-all-together.md) | Découvrez comment prendre votre projet AEM et le préparer pour la mise en ligne avec le SDK AEM découplé. |
 | 8 | [Comment mettre en ligne votre application découplée](go-live.md) | Découvrez comment déployer l’application en direct et comment récupérer votre code local dans Git et le déplacer vers Cloud Manager Git pour le pipeline CI/CD. |
-| 9 | [Facultatif – Comment créer des applications d’une seule page (SPA) avec AEM](create-spa.md) | Découvrez comment combiner une diffusion couplée et découplée et comment créer des SPA modifiables à l’aide du framework de l’éditeur SPA d’AEM. |
+| 9 | [Facultatif – Comment créer des applications monopages avec AEM](create-spa.md) | Découvrez comment combiner une diffusion couplée et découplée et comment créer des SPA modifiables à l’aide du framework de l’éditeur SPA d’AEM. |
 
 {style="table-layout:auto"}
 

@@ -3,7 +3,7 @@ title: Guide de migration vers Experience Manager as a Cloud Service pour les pa
 description: Guide de migration vers Experience Manager as a Cloud Service pour les partenaires
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=fr" text="Quelles sont les nouveautés et les différences ?"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=fr" text="Présentation d’AEM as a Cloud Service."
 
-Adobe Experience Manager (AEM) as a Cloud Service propose un socle restructuré pour Experience Manager, qui s’appuie sur une infrastructure basée sur le conteneur, un développement piloté par les API et un processus DevOps guidé, permettant aux professionnels du marketing et aux développeurs de toujours garder une longueur d’avance sur les innovations en matière de gestion de l’expérience client.
+Adobe Experience Manager (AEM) as a Cloud Service propose un socle restructuré pour Experience Manager, qui s’appuie sur une infrastructure basée sur le conteneur, un développement piloté par les API et un processus DevOps guidé, permettant aux spécialistes marketing et aux développeurs de toujours garder une longueur d’avance sur les innovations en matière de gestion de l’expérience client.
 
 Cloud Service associe de riches capacités prêtes à l’emploi et l’extensibilité d’Adobe Experience Manager avec l’agilité de l’architecture cloud native moderne permettant aux marques de répondre à la demande toujours croissante des consommateurs.
 
