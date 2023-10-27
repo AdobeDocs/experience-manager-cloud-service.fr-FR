@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6e834244f3de7e615df12b137f2ae90a11e64ad0
+source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 26%
+source-wordcount: '920'
+ht-degree: 27%
 
 ---
 
@@ -68,17 +68,12 @@ Regardez la vidéo de présentation de la version d’octobre 2023 pour un rés
 
 ### Nouvelles fonctionnalités de [!DNL Experience Manager Forms] {#forms-features}
 
-* **Propriétés personnalisées pour le Forms adaptatif**: vous pouvez associer des attributs personnalisés (paires clé-valeur) à un modèle de formulaire ou à un composant de formulaires adaptatifs pour permettre aux développeurs de formulaires de fournir des comportements de formulaire dynamiques qui s’adaptent en fonction des valeurs de ces attributs personnalisés. Par exemple, les développeurs peuvent concevoir différents rendus d’un composant Forms sans affichage sur des plateformes mobiles, de bureau ou web, en fonction des valeurs des attributs personnalisés, améliorant ainsi considérablement l’expérience utilisateur sur un large éventail d’appareils.
+* **[Propriétés personnalisées pour le Forms adaptatif](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: vous pouvez associer des attributs personnalisés (paires clé-valeur) à un modèle de formulaire ou à un composant de formulaires adaptatifs pour permettre aux développeurs de formulaires de fournir des comportements de formulaire dynamiques qui s’adaptent en fonction des valeurs de ces attributs personnalisés. Par exemple, les développeurs peuvent concevoir différents rendus d’un composant Forms sans affichage sur des plateformes mobiles, de bureau ou web, en fonction des valeurs des attributs personnalisés, améliorant ainsi considérablement l’expérience utilisateur sur un large éventail d’appareils.
 
 * **Thèmes et modèles**: lancez le processus de création de formulaires grâce à nos nouveaux thèmes et modèles, conçus pour permettre aux professionnels chevronnés et aux nouveaux auteurs de formulaires de s’épanouir. Créés en toute simplicité à l’aide des composants principaux de Forms adaptatif, ces thèmes et modèles soigneusement traités vous permettent de commencer rapidement à créer des formulaires pour des cas d’utilisation courants.
 
   ![Modèles prêts à l’emploi](/help/forms/assets/form-templates-ootb.png)
 
-### Fonctionnalités de préversion disponibles dans [!DNL Forms] {#pre-release-features-available-in-forms-channel}
-
-* **Envoi de Forms à la liste SharePoint Microsoft**: AEM Forms fournit une intégration prête à l’emploi pour envoyer directement les données de formulaire à la liste SharePoint, ce qui vous permet d’exploiter les fonctionnalités de listes SharePoint.
-
-  >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### Programme d&#39;adoption précoce {#forms-early-adopter}
 
