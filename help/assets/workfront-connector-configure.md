@@ -4,10 +4,10 @@ description: Configuration de  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1767'
-ht-degree: 100%
+source-git-commit: bb80414989aa5ceb624550d0ea41283c7d5da4c6
+workflow-type: tm+mt
+source-wordcount: '1772'
+ht-degree: 99%
 
 ---
 
@@ -80,6 +80,7 @@ Le mappage des métadonnées entre les projets Workfront et les dossiers AEM est
 
 Pour configurer les mappages, procédez comme suit :
 
+1. Ajouter `jcr:read` autorisations pour `/conf/global/settings/dam/adminui-extension/foldermetadataschema` pour `wf-workfront-users` groupe.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sélectionnez le formulaire de schéma de métadonnées de dossier que vous souhaitez modifier, puis cliquez sur Modifier.
 1. Sélectionnez le champ de formulaire de schéma de métadonnées de dossier que vous souhaitez modifier, puis sélectionnez l’onglet Paramètres dans le panneau de droite.

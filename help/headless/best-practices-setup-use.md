@@ -1,13 +1,13 @@
 ---
 title: Bonnes pratiques pour la configuration et l’utilisation d’AEM GraphQL avec des fragments de contenu
 description: Découvrez les bonnes pratiques recommandées pour la configuration et l’utilisation d’AEM GraphQL avec des fragments de contenu.
-source-git-commit: 9a544fb9d2494862efdb2263f3b9b61214c4b8b9
+exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 29%
+ht-degree: 36%
 
 ---
-
 
 # Bonnes pratiques pour la configuration et l’utilisation d’AEM GraphQL avec des fragments de contenu{#best-practices-setup-use-aem-graphql-content-fragments}
 
@@ -82,7 +82,7 @@ La norme CORS est généralement configurée pour :
 
 ### Authentification {#authentication}
 
-Un cas d’utilisation principal de l’API GraphQL Adobe Experience Manager as a Cloud Service (AEM) pour la diffusion de fragments de contenu consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes distantes peuvent nécessiter un accès API authentifié pour sécuriser la diffusion de contenu sans interface utilisateur.
+Un des principaux cas d’utilisation de l’API Adobe Experience Manager as a Cloud Service (AEM) GraphQL pour la diffusion de fragments de contenu consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes à distance peuvent nécessiter un accès authentifié à l’API afin de sécuriser la diffusion de contenu découplé.
 
 #### Détails {#details-authentication}
 

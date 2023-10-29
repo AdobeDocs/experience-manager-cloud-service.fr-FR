@@ -1,13 +1,13 @@
 ---
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
-source-git-commit: e34b21194e35b2f56dd1e7df2165c3fa5c0cb7da
+exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 12%
 
 ---
-
 
 # Demandes de contenu Cloud Service
 
@@ -67,5 +67,3 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 | Exclusion des appels de Commerce integration framework | Exclu | Il s’agit de requêtes envoyées à AEM qui sont transférées au Commerce integration framework : l’URL commence par `/api/graphql`—pour éviter le double comptage, ils ne sont pas facturables au Cloud Service. |
 | Exclure `manifest.json` | Exclu | Le manifeste n’est pas un appel API, il fournit des informations sur la manière d’installer des sites web sur un ordinateur ou un téléphone mobile. Adobe ne doit pas comptabiliser la requête JSON à `/etc.clientlibs/*/manifest.json` |
 | Exclure `favicon.ico` | Exclu | Bien que le contenu renvoyé ne doive pas être HTML ou JSON, nous observons que, dans certains cas, comme les flux d’authentification SAML, les favicons peuvent être renvoyées en tant que HTML, par conséquent, sont explicitement exclues du décompte. |
-
-
