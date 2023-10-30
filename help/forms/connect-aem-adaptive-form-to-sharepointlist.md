@@ -5,9 +5,9 @@ role: User, Developer
 keywords: Connectez AEM formulaire adaptatif à la liste SharePoint Microsoft, connectez le formulaire adaptatif à la liste SharePoint de Microsoft, intégrez AEM formulaire adaptatif à la liste SharePoint Microsoft, intégrez le formulaire adaptatif à la liste de , envoyez les données d’un formulaire adaptatif à la liste de , envoyez le processus d’ à la liste de .
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 5%
 
 ---
@@ -86,16 +86,12 @@ Découvrez comment [Utilisation d’AEM Workflow](https://experienceleague.adobe
 * [Configuration des sources de données](/help/forms/configuring-submit-actions.md)
 * [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
 * [Utilisation de processus d’AEM basés sur Forms - Référence d’étape pour automatiser les processus d’entreprise](/help/forms/aem-forms-workflow-step-reference.md)
-
-## Informations supplémentaires
-
+* [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](/help/forms/custom-submit-action-form.md)
 * [Création ou ajout d’un formulaire adaptatif à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Incorporation d’un formulaire adaptatif à une page AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
 * [Créer, utiliser et personnaliser des thèmes dans un formulaire adaptatif](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](/help/forms/custom-submit-action-form.md)
+
 
 
 

@@ -3,9 +3,9 @@ title: Quelles sont les différences entre AEM 6.5 Forms et les Cloud Service AE
 description: Comparez AEM Forms 6.5 et AEM Cloud Services et découvrez les modifications les plus importantes avant de procéder à la mise à niveau ou à la migration vers Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1348'
 ht-degree: 69%
 
 ---
@@ -113,13 +113,20 @@ Forms as a Cloud Service fournit des API RESTful de génération de documents e
 
 * Vous pouvez utiliser des API de communication pour créer des documents personnalisés à la demande ou par lots sur Forms as a Cloud Service. Vous pouvez utiliser un environnement AEM 6.5 Forms pour les communications interactives et l’interface utilisateur de l’agent.
 
-## Voir Suivant
+## Voir également
 
 * [Migration d’un AEM Forms (environnements On-Premise et AMS) vers AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Ajout ou création d’une Forms adaptative à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Créer un formulaire adaptatif (composants principaux)](/help/forms/creating-adaptive-form-core-components.md)
-
-## Informations supplémentaires
-
 * [Présentation d’AEM Forms as a Cloud Service](/help/forms/home.md)
 * [Configuration d’un environnement de développement local et d’un projet de développement initial](/help/forms/setup-local-development-environment.md)
+
+
+<!--
+
+## Additional Information
+
+* [Introduction to AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Set up a local development environment and initial development project](/help/forms/setup-local-development-environment.md)
+
+-->

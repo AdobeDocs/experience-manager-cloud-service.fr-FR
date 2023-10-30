@@ -1,23 +1,23 @@
 ---
-title: Comment configurer le connecteur de stockage unifié pour AEM Forms ?
-description: Découvrez comment gérer le connecteur de stockage unifié pour AEM Forms. Utilisez le connecteur de stockage unifié pour connecter AEM Forms à des stockages de données externes.
+title: Comment configurer Unified Storage Connector (USC) pour AEM Forms ?
+description: Découvrez comment gérer Unified Storage Connector (USC) pour AEM Forms. Utilisez le connecteur de stockage unifié (USC) pour connecter AEM Forms à des entrepôts de données externes.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 95%
+source-wordcount: '641'
+ht-degree: 78%
 
 ---
 
-# Gestion du connecteur de stockage unifié pour AEM Forms {#manage-unified-storage-connector}
+# Gestion du connecteur de stockage unifié (USC) pour AEM Forms {#manage-unified-storage-connector}
 
-Vous pouvez utiliser le connecteur de stockage unifié pour connecter AEM Forms à des stockages de données externes.
+Vous pouvez utiliser Unified Storage Connector (USC) pour connecter AEM Forms à des entrepôts de données externes.
 
-Par exemple, vous pouvez remplir les valeurs des champs d’un formulaire adaptatif et les envoyer à un workflow AEM. Vous pouvez configurer des workflows AEM pour stocker des données dans un stockage externe, tel que le serveur de stockage Microsoft Azure. Utilisez le connecteur de stockage unifié pour créer une connexion entre les workflows AEM et le stockage externe.
+Par exemple, vous pouvez remplir les valeurs des champs d’un formulaire adaptatif et les envoyer à un workflow AEM. Vous pouvez configurer des workflows AEM pour stocker des données dans un stockage externe, tel que le serveur de stockage Microsoft Azure. Utilisez Unified Storage Connector (USC) pour créer une connexion entre AEM Workflows et le stockage externe.
 
 ## Connexion de workflows AEM à un serveur de stockage Microsoft Azure {#connect-workflows-with-azure}
 
-Créez une configuration de stockage Azure et référez-vous à cette configuration à l’aide du connecteur de stockage unifié. Vous pouvez ensuite configurer les modèles de workflow AEM pour externaliser l’enregistrement des données afin de les connecter à un serveur de stockage Azure.
+Créez une configuration de stockage Azure et reportez-vous à cette configuration à l’aide du connecteur de stockage unifié (USC). Vous pouvez ensuite configurer les modèles de workflow AEM pour externaliser l’enregistrement des données afin de les connecter à un serveur de stockage Azure.
 
 ### Créer une configuration de stockage [!DNL Azure] {#create-azure-storage-configuration}
 
@@ -31,9 +31,9 @@ Pour créer une configuration de stockage [!DNL Azure], procédez comme suit :
 1. Indiquez le nom du compte de stockage [!DNL Azure] dans le champ **[!UICONTROL Compte de stockage Azure]**.
 1. Indiquez la clé pour accéder au compte de stockage Azure dans le champ **[!UICONTROL Clé d’accès Azure]** et appuyez sur **[!UICONTROL Enregistrer]**.
 
-### Configuration du connecteur de stockage unifié pour les workflows AEM {#configure-unified-storage-connector-workflows}
+### Configuration du connecteur de stockage unifié (USC) pour les processus AEM {#configure-unified-storage-connector-workflows}
 
-Suivez les étapes suivantes pour configurer le connecteur de stockage unifié pour les workflows AEM :
+Effectuez les étapes suivantes pour configurer Unified Storage Connector (USC) pour AEM Workflows :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Connecteur de stockage unifié]**.
 

@@ -3,9 +3,9 @@ title: Comment créer des panneaux répétables dans les composants principaux d
 description: Découvrez comment créer des sections ou des champs répétables dans un formulaire adaptatif.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1359'
 ht-degree: 96%
 
 ---
@@ -229,10 +229,13 @@ Dans le code suivant, le panneau`SampleType` utilise la propriété minOccurs &a
 
 {{see-also}}
 
+<!--
 
 >[!MORELIKETHIS]
 >
->* [Création d’un formulaire adaptatif](creating-adaptive-form-core-components.md)
->* [Créer un style ou des thèmes pour vos formulaires](using-themes-in-core-components.md)
->* [Ajouter un comportement dynamique aux formulaires à l’aide de l’éditeur de règles](rule-editor.md)
->* [Définir la disposition des formulaires pour différentes tailles d’écran et différents types d’appareils](/help/sites-cloud/authoring/features/responsive-layout.md)
+>* [Create an Adaptive Form](creating-adaptive-form-core-components.md)
+>* [Create style or themes for your forms](using-themes-in-core-components.md)
+>* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+>* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+-->

@@ -2,9 +2,9 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtrage du trafic y compris les règles de pare-feu d’applications web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
+source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3473'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 # Règles de filtre de trafic incluant des règles WAF {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->Cette fonctionnalité sera bientôt disponible dans les environnements de développement, avec un déploiement progressif en novembre dans les environnements d’évaluation et de production. Vous pouvez demander un accès anticipé sur la scène et la production en envoyant un courrier électronique. **aemcs-waf-adopter@adobe.com**.
+>Cette fonctionnalité est désormais disponible dans les environnements de développement, avec un déploiement progressif vers les environnements intermédiaire et prod plus tard en novembre. Vous pouvez demander un accès anticipé sur la scène et la production en envoyant un courrier électronique. **aemcs-waf-adopter@adobe.com**.
 
 Les règles de filtrage du trafic peuvent être utilisées pour bloquer ou autoriser les requêtes au niveau de la couche CDN, ce qui peut s’avérer utile dans des scénarios tels que :
 
@@ -26,6 +26,8 @@ La plupart de ces règles de filtrage du trafic sont disponibles pour tous les c
 Une sous-catégorie de règles de filtrage du trafic nécessite une licence de sécurité améliorée ou une licence de protection WAF-DDoS. Elle sera disponible plus tard cette année. Ces règles puissantes sont connues sous le nom de règles de filtre de trafic WAF (Web Application Firewall) (ou règles WAF, en abrégé) et ont accès aux [Indicateurs WAF](#waf-flags-list) décrits plus loin dans cet article.
 
 Les règles de filtrage du trafic peuvent être déployées par le biais de pipelines de configuration de Cloud Manager vers des types d’environnements de développement, d’évaluation et de production dans des programmes de production (hors environnements de test). La prise en charge des RDE sera assurée à l’avenir.
+
+[Suivre un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) pour développer rapidement une expertise concrète sur cette fonctionnalité.
 
 ## Organisation de cet article {#how-organized}
 

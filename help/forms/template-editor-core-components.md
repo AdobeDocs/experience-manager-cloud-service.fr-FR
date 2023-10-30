@@ -3,9 +3,9 @@ title: Comment créer un modèle de formulaire adaptatif basé sur un composant 
 description: Créez des modèles de formulaire adaptatif basés sur le composant principal pour définir la structure de base et le contenu initial à l’aide de l’éditeur de modèles.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 25a1504e2655e414f32dfea20e416889cea06dcc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1991'
 ht-degree: 58%
 
 ---
@@ -282,11 +282,18 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 * Limitez le nombre de modèles pour qu’ils correspondent aux différents types de formulaires fondamentalement différents disponibles sur les sites web.
 * Fournissez la flexibilité et les fonctionnalités de configuration nécessaires à vos composants personnalisés utilisés dans un modèle.
 
-## Voir suivant
+<!--
+## See next
 
-* [Créer un style ou des thèmes pour vos formulaires](using-themes-in-core-components.md)
-* [Création d’un formulaire adaptatif (composants principaux)](/help/forms/creating-adaptive-form-core-components.md)
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
+
+-->
 
 ## Voir également {#see-also}
 
 {{see-also}}
+
+* [Créer un style ou des thèmes pour vos formulaires](using-themes-in-core-components.md)
+* [Création d’un formulaire adaptatif (composants principaux)](/help/forms/creating-adaptive-form-core-components.md)
+

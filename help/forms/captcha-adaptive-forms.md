@@ -6,9 +6,9 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1935'
 ht-degree: 75%
 
 ---
@@ -347,7 +347,10 @@ Pour définir les valeurs d’une configuration, [générez des configurations O
 
 {{see-also}}
 
+<!--
 
 >[!MORELIKETHIS]
 >
->* [Thèmes de référence, modèles et modèles de données de formulaire pour Forms adaptatif](/help/forms/reference-themes-templates-data-models.md)
+>* [Reference Themes, Templates, and Form Data models for Adaptive Forms](/help/forms/reference-themes-templates-data-models.md)
+
+-->

@@ -3,9 +3,9 @@ title: Configuration d’une action Envoyer pour un formulaire adaptatif?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres
 keywords: comment sélectionner une action d’envoi pour un formulaire adaptatif, connecter un formulaire adaptatif à la liste sharepoint, connecter un formulaire adaptatif à la bibliothèque de documents sharepoint, connecter un formulaire adaptatif au modèle de données de formulaire
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '3658'
+source-wordcount: '3635'
 ht-degree: 81%
 
 ---
@@ -498,12 +498,14 @@ Lorsque vous préremplissez un modèle de données de formulaire ou un formulair
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
 
-## Voir suivant
+<!--
+## See next
 
-* [Créer un style ou des thèmes pour vos formulaires](using-themes-in-core-components.md)
-* [Création d’un formulaire adaptatif (composants principaux)](/help/forms/creating-adaptive-form-core-components.md)
-* [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](/help/forms/custom-submit-action-form.md)
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
+* [Create a custom Submit Action for Adaptive Forms](/help/forms/custom-submit-action-form.md)
 
+-->
 
 ## Voir également {#see-also}
 
