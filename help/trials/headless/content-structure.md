@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les modèles de fragment de contenu d�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
+source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 98%
 
 ---
 
@@ -98,6 +98,7 @@ Suivez les mêmes étapes que ci-dessus pour ajouter ces champs supplémentaires
 
    * **Rendre en tant que :** **Référence de contenu** - Lorsque vous créez une aventure, ce champ pointe vers la ressource de l’image qui représente ce voyage.
    * **Libellé du champ :** `Image` - Le libellé affiché pour ce champ lors de la création d’une aventure.
+   * **Chemin racine :** `/content/dam/aem-demo-assets/en` : indique un chemin de point de départ lors de la recherche de ressources avec le sélecteur de ressources.
 
 1. Après avoir ajouté les champs nécessaires au modèle de fragment de contenu, dans le coin supérieur droit de la fenêtre, cliquez sur **Enregistrer**.
 
