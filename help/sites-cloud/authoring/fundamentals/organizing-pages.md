@@ -2,10 +2,10 @@
 title: Création et organisation des pages
 description: Découvrez comment organiser votre site web en créant et en gérant des pages avec AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '2543'
-ht-degree: 99%
+source-wordcount: '2451'
+ht-degree: 98%
 
 ---
 
@@ -373,18 +373,15 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
 #### Actions asynchrones {#asynchronous-actions}
 
-Normalement, une action de déplacement ou de changement de nom de page est exécutée immédiatement. Cela est considéré comme un traitement synchrone et toute action supplémentaire dans l’interface utilisateur est bloquée jusqu’à ce que l’action soit terminée.
+Les actions de déplacement de page sont toujours traitées de manière asynchrone, ce qui permet à l’utilisateur de continuer à créer dans l’interface utilisateur sans entraves.
 
-Cependant, si le nombre de pages affectées est supérieur à une limite définie, l’action est traitée de manière asynchrone, ce qui permet à la personne utilisatrice de continuer à créer dans l’interface utilisateur sans être entravée par l’action de déplacement ou de changement de nom de page.
+* L’utilisateur doit définir quand l’opération asynchrone doit être effectuée.
+   * **Maintenant** : l’exécution de la tâche asynchrone commence immédiatement.
+   * **Plus tard** : l’utilisateur peut définir le moment où la tâche asynchrone débutera.
 
-* Lorsque vous cliquez sur **Déplacer** à la dernière étape ci-dessus, AEM vérifie la limite configurée.
-* Si le nombre de pages affectées est inférieur à la limite, il effectue une opération synchrone.
-* S’il est supérieur à la limite, il effectue une opération asynchrone.
-   * L’utilisateur doit définir quand l’opération asynchrone doit être effectuée.
-      * **Maintenant** : l’exécution de la tâche asynchrone commence immédiatement.
-      * **Plus tard** : l’utilisateur peut définir le moment où la tâche asynchrone débutera.
-
-        ![Déplacement de page asynchrone](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+<!--
+  ![Asynchronous page move](assets/asynchronous-page-move.png)
+-->
 
 L’état des tâches asynchrones peut être vérifié dans le [**tableau de bord État des tâches asynchrones**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en sélectionnant **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**.
 

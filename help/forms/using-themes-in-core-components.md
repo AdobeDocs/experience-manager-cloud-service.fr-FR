@@ -2,7 +2,7 @@
 title: Comment créer et utiliser des thèmes dans Forms adaptatif ?
 description: Vous pouvez utiliser des thèmes pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif à l’aide de composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 18%
@@ -430,7 +430,6 @@ Si vous souhaitez fournir des informations comme une image de logo, le nom de l�
 ## Voir également {#see-also}
 
 {{see-also}}
-
 * [Définir la disposition des formulaires pour différentes tailles d’écran et différents types d’appareils](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Générer un document d’enregistrement pour les Forms adaptatives (composants principaux)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Création d’un Forms adaptatif avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)

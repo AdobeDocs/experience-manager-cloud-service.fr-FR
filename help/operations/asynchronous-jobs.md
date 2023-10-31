@@ -2,9 +2,9 @@
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources en tant qu’opérations en arrière-plan.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '865'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,6 @@ Ces opérations comprennent :
 * Déplacement de nombreuses ressources ou de ressources avec de nombreuses références
 * Exportation/importation de métadonnées de ressources en masse
 * Récupération des ressources dépassant la limite de seuil définie à partir d’un déploiement Experience Manager distant
-* Déplacement de pages
 * Déploiement de Live Copies
 
 Vous pouvez afficher le statut des tâches asynchrones dans le tableau de bord **[!UICONTROL Opérations en arrière-plan]** dans **Navigation globale** -> **Outils** -> **Général** -> **Tâches**.
@@ -124,20 +123,6 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, Par exemple, succès ou échec.
 1. Enregistrez les modifications.
 
-### Configuration des opérations de déplacement de page asynchrones {#configuring-asynchronous-page-move-operations}
-
-Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l’opération de déplacement est exécutée de manière asynchrone.
-
-1. Connectez-vous en tant qu’administrateur ou administratrice à la console Web de Quickstart Jar du SDK AEM à l’adresse `https://<host>:<port>/system/console`.
-1. Accédez à **OSGi** > **Configuration**.
-1. Dans la console web, ouvrez la **[!UICONTROL configuration de traitement des tâches des opérations de déplacement de page asynchrones.]**
-1. Dans le champ **[!UICONTROL Nombre seuil de références]**, spécifiez le nombre seuil de références pour le traitement asynchrone des opérations de déplacement.
-
-   ![Seuil de déplacement de page](assets/async-page-move.png)
-
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, Par exemple, succès ou échec.
-1. Enregistrez les modifications.
-
 ### Configuration des opérations de MSM asynchrones {#configuring-asynchronous-msm-operations}
 
 1. Connectez-vous en tant qu’administrateur ou administratrice à la console Web de Quickstart Jar du SDK AEM à l’adresse `https://<host>:<port>/system/console`.
@@ -154,4 +139,3 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 >* [Création et organisation des pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
 >* [Importation et exportation des métadonnées de ressources par lot](/help/assets/metadata-import-export.md).
 >* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
-
