@@ -1,15 +1,15 @@
 ---
-title: Configuration du connecteur de traduction pour le contenu découplé
+title: Configuration de l’intégration de traduction pour le contenu sans affichage
 description: Découvrez comment connecter AEM à un service de traduction.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+workflow-type: tm+mt
 source-wordcount: '1231'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Configuration du connecteur de traduction {#configure-connector}
+# Configuration de l’intégration de traduction {#configure-integration}
 
 Découvrez comment connecter AEM à un service de traduction.
 
@@ -25,7 +25,7 @@ Cet article s’appuie sur ces principes de base afin que vous puissiez effectue
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment configurer un connecteur AEM pour le service de traduction de votre choix. Après avoir lu ce document, vous devriez :
+Ce document vous aide à comprendre comment configurer une intégration AEM au service de traduction de votre choix. Après avoir lu ce document, vous devriez :
 
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.

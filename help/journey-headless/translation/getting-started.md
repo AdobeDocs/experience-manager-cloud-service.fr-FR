@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -178,7 +178,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * savoir comment AEM stocke du contenu découplé ;
 * être familiarisé avec les outils de traduction AEM.
 
-Tirez parti de ces connaissances et continuez de progresser sur votre parcours de traduction découplée AEM en consultant le document, [Configuration du connecteur de traduction](configure-connector.md) dans lequel vous apprendrez à connecter AEM à un service de traduction.|
+Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Configuration de l’intégration de traduction](configure-connector.md) où vous apprendrez à connecter AEM à un service de traduction.|
 
 ## Ressources supplémentaires {#additional-resources}
 

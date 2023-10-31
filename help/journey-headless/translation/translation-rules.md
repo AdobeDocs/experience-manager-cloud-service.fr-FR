@@ -2,10 +2,10 @@
 title: Configuration des règles de traduction pour le contenu découplé
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 98%
+ht-degree: 90%
 
 ---
 
@@ -15,12 +15,12 @@ Découvrez comment définir des règles de traduction pour identifier le contenu
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours de traduction découplée AEM, [Configuration du connecteur de traduction](configure-connector.md), vous avez appris à installer et configurer votre connecteur de traduction et vous devez maintenant :
+Dans le document précédent du parcours de traduction AEM, [Configuration de l’intégration de traduction](configure-connector.md) vous avez appris à installer et configurer votre intégration de traduction et vous devez maintenant :
 
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
-Maintenant que votre connecteur est configuré, cet article vous guide tout au long de l’étape suivante pour identifier le contenu à traduire.
+Maintenant que votre intégration est configurée, cet article vous guide tout au long de l’étape suivante d’identification du contenu à traduire.
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * comprendre ce que font les règles de traduction ;
 * être capable de définir vos propres règles de traduction.
 
-Tirez parti de ces connaissances et continuez à progresser sur votre parcours de traduction découplée AEM en consultant le document [Traduire le contenu](translate-content.md), dans lequel vous découvrirez comment votre connecteur et vos règles s’associent pour traduire du contenu découplé.
+Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Traduire le contenu](translate-content.md) où vous apprendrez comment votre intégration et vos règles fonctionnent ensemble pour traduire du contenu headless.
 
 ## Ressources supplémentaires {#additional-resources}
 

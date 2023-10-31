@@ -2,17 +2,17 @@
 title: Traduction du contenu découplé
 description: Utilisez le connecteur de traduction pour traduire votre contenu découplé.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '2175'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
 # Traduction du contenu découplé {#translate-content}
 
-Utilisez le connecteur de traduction pour traduire votre contenu découplé.
+Utilisez l’intégration de traduction pour traduire votre contenu headless.
 
 ## Un peu d’histoire… {#story-so-far}
 

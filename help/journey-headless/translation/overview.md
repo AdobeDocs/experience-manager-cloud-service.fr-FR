@@ -2,10 +2,10 @@
 title: Parcours de traduction découplée AEM
 description: Faites vos premiers pas avec ce parcours guidé pour découvrir comment traduire votre contenu découplé à l’aide des puissants outils de traduction d’AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -66,8 +66,8 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 | 0 | Parcours de traduction découplée AEM | Ce document |
 | 1 | [En savoir plus sur le contenu découplé et comment le traduire dans AEM](learn-about.md) | Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM. |
 | 2 | [Prise en main de la traduction découplée dans AEM](getting-started.md) | Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM. |
-| 3 | [Configuration du connecteur de traduction](configure-connector.md) | Découvrez comment connecter AEM à un service de traduction. |
-| 4 | [Traduction du contenu](translate-content.md) | Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé. |
+| 3 | [Configuration de l’intégration de traduction](configure-connector.md) | Découvrez comment connecter AEM à un service de traduction. |
+| 4 | [Traduction du contenu](translate-content.md) | Utilisez l’intégration de traduction et les règles pour traduire votre contenu sans interface utilisateur. |
 | 5 | [Publication du contenu traduit](publish-content.md) | Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour. |
 
 ## Prochaines étapes {#what-is-next}
