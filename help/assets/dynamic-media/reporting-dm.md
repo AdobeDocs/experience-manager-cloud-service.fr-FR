@@ -4,13 +4,15 @@ description: Découvrez comment demander un rapport d’erreur pour les URL de d
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-source-git-commit: 7ce15cc755c9db589001d543c16312096d88bcf0
+hide: true
+hidefromtoc: true
+exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
+source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 4%
 
 ---
-
 
 # Demander un rapport d’erreur pour les URL de diffusion Dynamic Media qui échouent
 
@@ -31,7 +33,3 @@ Vous pouvez demander un rapport d’erreur une fois par mois pour une société 
    Si vous ne connaissez pas le nom de l’entreprise, reportez-vous à la section [Configuration Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr#configuring-dynamic-media-cloud-services) page **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuration de Dynamic Media]**. Sur la page du navigateur de configuration Dynamic Media, cliquez sur **[!UICONTROL global]**, sélectionnez la variable *[Dynamic_Media_folder_icon]* , puis sélectionnez **[!UICONTROL Modifier]**. Vous devez disposer des droits d’administrateur dans AEM pour accéder à la page de configuration de Dynamic Media.
 
    ![Accès à la page Configuration de Dynamic Media .](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
-
-
-
-
