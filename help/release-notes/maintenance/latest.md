@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
+source-git-commit: 01f148dbe885c96b27f88a88e7020a1008f4c1d3
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '595'
 ht-degree: 23%
 
 ---
@@ -71,7 +71,7 @@ L’activation des fonctionnalités de la version 2023.11.0 fournit l’ensembl
 
 ### Problèmes connus {#known-issues-14029}
 
-Aucun.
+* ASSETS-31015 : impossible de charger des fichiers vers Assets avec des extensions de fichiers inconnues.
 
 ### Technologies intégrées {#embedded-tech-14029}
 
