@@ -1,11 +1,11 @@
 ---
 title: Utilisation d’Edge Delivery Services
-description: Utilisation d’Edge Delivery Services
+description: Utilisation d’Edge Delivery Services (EDS)
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 6a4a257b3ca3d2db76d43707792d97db87974593
+source-git-commit: 34965338015df868778a95582524df08a7c5f136
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '618'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Le module externe sidekick pour AEM Assets prend en charge l’accès à :
 
 * AEM Assets as a Cloud Service
 
-* AEM Assets Essentials
+* AEM Assets Essentials
 
 Après avoir configuré le module externe du sidekick AEM Assets, vous pouvez [commencer à utiliser des images dans vos documents Google ou Microsoft Word ;](https://www.hlx.live/docs/aem-assets-sidekick-plugin).
 
