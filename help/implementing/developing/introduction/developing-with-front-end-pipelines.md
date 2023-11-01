@@ -2,8 +2,8 @@
 title: Développer des sites avec le pipeline front-end
 description: Grâce au pipeline front-end, les développeurs et développeuses front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certains éléments particuliers du processus de création front-end qui doivent être pris en compte.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 36e40976c43826efd7921cd9429373fe97a20426
+workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Le contenu du dossier `dist` est ce qui est finalement déployé vers AEM as a
 
 Par défaut, le pipeline front-end utilise Node 14, mais les versions 12 et 16 sont également disponibles.
 
-Vous pouvez utiliser la variable d’environnement `CM_CUSTOM_VAR_NODE_VERSION` pour définir la version souhaitée.
+Vous pouvez utiliser la variable d’environnement `NODE_VERSION` pour définir la version souhaitée.
 
 ## Source unique de vérité {#single-source-of-truth}
 

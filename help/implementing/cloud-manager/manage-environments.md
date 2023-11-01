@@ -2,10 +2,10 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
+source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 88%
+source-wordcount: '2601'
+ht-degree: 85%
 
 ---
 
@@ -36,6 +36,8 @@ Les fonctionnalités de chaque environnement dépendent des solutions activées 
 >Les environnements de production et d’évaluation ne sont créés que par paire. Vous ne pouvez pas créer uniquement un environnement d’évaluation ou de production.
 
 ## Ajout d’un environnement {#adding-environments}
+
+Pour ajouter ou modifier un environnement, un utilisateur doit appartenir au **Propriétaire de l’entreprise** rôle.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
@@ -234,7 +236,7 @@ Cette option est également disponible en cliquant sur l’onglet **Environnemen
 
 ![Option de mise à jour depuis l’onglet Environnements](assets/environ-update3.png)
 
-Un utilisateur avec le rôle **Responsable de déploiement** peut utiliser cette option pour mettre à jour le pipeline associé à cet environnement vers la dernière version d’AEM.
+Un utilisateur avec la variable **Responsable de déploiement** ou **Propriétaire de l’entreprise** Le rôle peut utiliser cette option pour mettre à jour le pipeline associé à cet environnement vers la dernière version d’AEM.
 
 Une fois que la version du pipeline est mise à jour vers la dernière version d’AEM disponible pour le public, l’utilisateur est invité à exécuter le pipeline associé pour déployer la dernière version dans l’environnement.
 
@@ -248,7 +250,7 @@ Le comportement de l’option **Mise à jour** varie en fonction de la configura
 
 ## Suppression d’environnements de développement {#deleting-environment}
 
-Un utilisateur ou une utilisatrice disposant des autorisations requises peut supprimer un environnement de développement.
+Un utilisateur avec la variable **Responsable de déploiement** ou **Propriétaire de l’entreprise** peut supprimer un environnement de développement.
 
 Dans l’écran **Vue d’ensemble** du programme dans la carte **Environnements**, cliquez sur le bouton représentant des points de suspension de l’environnement de développement que vous souhaitez supprimer.
 
@@ -287,7 +289,7 @@ Cette option est également disponible à partir de l’onglet **Environnement**
 
 ## Connexion locale {#login-locally}
 
-Sélectionnez **Connexion locale** dans le menu représentant des points de suspension de la carte **Environnements** pour vous connecter localement à Adobe Experience Manager.
+Sélectionner **Connexion locale** depuis le menu représentant des points de suspension de l’environnement dans la **Environnements** pour vous connecter localement à Adobe Experience Manager.
 
 ![Connexion locale](assets/environ-login-locally.png)
 
@@ -300,6 +302,8 @@ De plus, vous pouvez vous connecter localement à partir de l’onglet **Environ
 Les noms de domaine personnalisés sont pris en charge dans Cloud Manager pour les programmes Sites, pour les services de publication comme de prévisualisation. Chaque environnement Cloud Manager peut héberger jusqu’à 250 domaines personnalisés.
 
 Pour configurer des noms de domaine personnalisés, accédez à l’onglet **Environnements** et cliquez sur un environnement pour en afficher les détails.
+
+Un utilisateur ou une utilisatrice doit disposer du rôle **Propriétaire d’entreprise** ou **Responsable du déploiement** pour ajouter un nom de domaine personnalisé dans Cloud Manager
 
 ![Détails de l’environnement](assets/domain-names.png)
 
