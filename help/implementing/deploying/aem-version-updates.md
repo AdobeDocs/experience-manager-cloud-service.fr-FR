@@ -3,10 +3,10 @@ title: Mises à jour de la version d’AEM
 description: Découvrez comment Adobe Experience Manager (AEM) as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) pour conserver vos projets sur la dernière version.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
+source-git-commit: 9bfea65c07da5da044df8f698e409eab5c4320fb
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 17%
+source-wordcount: '827'
+ht-degree: 16%
 
 ---
 
@@ -30,15 +30,18 @@ Avant que vos instances ne soient automatiquement mises à jour, une nouvelle ve
 
 Il existe deux types de mises à jour de la version d’AEM :
 
-* **Mises à jour de maintenance AEM**
+* [**Mises à jour de maintenance AEM**](/help/release-notes/maintenance/latest.md)
 
-   * Ils peuvent être libérés quotidiennement.
    * Ils sont principalement destinés à des fins de maintenance, notamment les derniers correctifs de bogues et les mises à jour de sécurité.
    * Son impact est minimal, car les changements sont appliqués régulièrement.
 
-* **Mises à jour avec de nouvelles fonctionnalités**
+* [**Mises à jour avec de nouvelles fonctionnalités**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-   * Ils sont relâchés sur un [planification mensuelle prévisible.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr)
+   * Ils sont publiés selon un calendrier mensuel prévisible.
+
+>[!NOTE]
+>
+> Vérifier les dates clés des versions mensuelles de [Feuille de route des versions Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service) et marquez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
 
 ## Échec de la mise à jour {#update-failure}
 
