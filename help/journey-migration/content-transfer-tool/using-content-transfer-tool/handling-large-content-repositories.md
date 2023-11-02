@@ -2,10 +2,10 @@
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 100%
+source-wordcount: '1835'
+ht-degree: 98%
 
 ---
 
@@ -190,6 +190,9 @@ Les entrées de journal d’AzCopy apparaissent dans le journal d’extraction e
 En cas de problème avec AzCopy, l’extraction échoue immédiatement et les journaux d’extraction contiennent des détails sur l’échec.
 
 Les objets Blob qui ont été copiés avant l’erreur sont automatiquement ignorés par AzCopy lors des exécutions suivantes et n’ont pas besoin d’être copiés à nouveau.
+
+>[!TIP]
+>Il est désormais possible de planifier le démarrage automatique d’une ingestion dès qu’une extraction est réussie. Voir [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
 
 #### Pour File Data Store {#file-data-store-extract}
 

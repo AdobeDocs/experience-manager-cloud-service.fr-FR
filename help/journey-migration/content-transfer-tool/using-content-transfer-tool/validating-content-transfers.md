@@ -2,10 +2,10 @@
 title: Validation des transferts de contenu
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 97%
+source-wordcount: '1084'
+ht-degree: 96%
 
 ---
 
@@ -101,7 +101,7 @@ Migration validation took 33 minutes
 
 Il s’agit d’un exemple de validation qui a réussi, puisqu’il n’y avait aucune entrée manquante dans le résumé d’ingestion présent dans le résumé d’extraction.
 
-En comparaison, voici un exemple de rapport de validation si la validation avait échoué :
+Pour comparer, voici à quoi ressemblerait un rapport de validation en cas d’échec de la validation (ou si une migration de complément a été effectuée) :
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]

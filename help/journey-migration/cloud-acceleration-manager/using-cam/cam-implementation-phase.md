@@ -2,9 +2,9 @@
 title: Phase de mise en œuvre dans Cloud Acceleration Manager
 description: Cette page présente un aperçu de la phase de mise en œuvre dans Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '652'
 ht-degree: 96%
 
 ---
@@ -109,7 +109,7 @@ Suivez cette section pour explorer la carte d’activité Transfert de contenu 
 
 1. Téléchargez et installez l’outil de transfert de contenu pour renseigner le jeu de migration et terminer la phase d’extraction du transfert de contenu. Lisez la section [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) pour savoir comment utiliser l’outil de transfert de contenu.
 
-1. Pour ingérer du contenu à partir du jeu de migration dans un environnement sur AEM as a Cloud Service, vous devez démarrer une ingestion. Accédez à **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**. Lisez la section [Ingestion de contenu dans Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=fr) pour savoir comment terminer la phase d’ingestion du transfert de contenu.
+1. Pour ingérer du contenu à partir du jeu de migration dans un environnement sur AEM as a Cloud Service, vous devez démarrer une ingestion. Accédez à **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**. Lisez la section [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour savoir comment terminer la phase d’ingestion du transfert de contenu.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 

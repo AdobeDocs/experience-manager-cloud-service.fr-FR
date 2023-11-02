@@ -2,16 +2,16 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
+source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
 workflow-type: tm+mt
-source-wordcount: '2191'
-ht-degree: 56%
+source-wordcount: '2324'
+ht-degree: 48%
 
 ---
 
 # Ingestion de contenu dans Cloud Service {#ingesting-content}
 
-## Processus d’ingestion dans Cloud Acceleration Manager {#ingestion-process}
+## Processus d’ingestion dans Cloud Acceleration Manager {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -31,27 +31,35 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
 
 1. Fournissez les informations requises pour créer une ingestion.
 
-   * Sélectionnez le jeu de migration contenant les données extraites en tant que source.
+   * **Jeu de migration :** Sélectionnez le jeu de migration contenant les données extraites comme Source.
       * Les jeux de migration expirent après une longue période d’inactivité. Il est donc probable que l’ingestion se produise peu de temps après l’exécution de l’extraction. Consultez [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
-   * Sélectionnez l’environnement de destination. C’est dans cet environnement que le contenu du jeu de migration est ingéré. Sélectionnez le niveau. (Création/Publication). Les environnements de développement rapide ne sont pas pris en charge.
+
+   >[!TIP]
+   > Si l’extraction est en cours d’exécution, la boîte de dialogue l’indique. Une fois l’extraction terminée, l’ingestion démarre automatiquement. Si l’extraction échoue ou est arrêtée, la tâche d’ingestion est annulée.
+
+   * **Destination :** Sélectionnez l’environnement de destination. C’est dans cet environnement que le contenu du jeu de migration est ingéré.
+      * Les intuitions ne prennent pas en charge une destination RDE (Rapid Development Environment) et n’apparaissent pas comme un choix de destination possible, même si l’utilisateur y a accès.
+      * Bien qu’un jeu de migration puisse être ingéré simultanément dans plusieurs destinations, une destination peut être la cible d’une seule ingestion en cours d’exécution ou en attente à la fois.
+
+   * **Niveau :** Sélectionnez le niveau. (Auteur/Publication).
+      * Si la source était `Author`, il est recommandé de l’ingérer dans la variable `Author` niveau sur la cible. De même, si la source était `Publish`, la cible doit être `Publish` ainsi que .
 
    >[!NOTE]
-   >Les remarques suivantes s’appliquent à l’ingestion de contenu :
-   > Si la source était en Auteur, il est recommandé de l’ingérer dans le niveau Auteur sur la cible. De même, si la source était en Publication, la cible doit également être en Publication.
    > Si le niveau cible est `Author`, l’instance de création est arrêtée pendant la durée de l’ingestion et n’est pas disponible pour les utilisateurs et utilisatrices (par exemple, les auteurs ou autrices ou toute personne effectuant la maintenance). Cela permet de protéger le système et d’empêcher toute modification qui pourrait être perdue ou qui pourrait entraîner un conflit d’ingestion. Assurez-vous d’en informer votre équipe. Notez également que l’environnement apparaît en veille pendant l’ingestion de l’instance de création.
-   > Vous pouvez exécuter l’étape de précopie facultative pour accélérer considérablement l’ingestion. Pour plus d’informations, veuillez consulter la section [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
-   > Si l’ingestion avec une précopie est utilisée (pour S3 ou Azure Data Store), il est recommandé d’exécuter l’ingestion de l’instance de création en premier, seule. Cela permet d’accélérer l’ingestion de l’instance de publication lorsqu’elle est exécutée ultérieurement.
-   > Les ingestions ne prennent pas en charge une destination d’environnement de développement rapide (RDE) et n’apparaissent pas comme un choix de destination possible, même si l’utilisateur ou l’utilisatrice y a accès.
 
-   >[!IMPORTANT]
-   > Vous pouvez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs et administratrices d’AEM** sur le service de création Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
-
-   * Choisissez la `Wipe` value
+   * **Wipe :** Choisissez la `Wipe` value
       * La variable **Wipe** définit le point de départ de la destination de l’ingestion. If **Wipe** est activée, la destination, y compris tout son contenu, est réinitialisée à la version d’AEM spécifiée dans Cloud Manager. Si elle n’est pas activée, la destination conserve son contenu actuel comme point de départ.
       * Notez que cette option **NOT** affectent la manière dont l’ingestion du contenu sera effectuée. L’ingestion utilise toujours une stratégie de remplacement de contenu et _not_ une stratégie de fusion de contenu, de sorte que dans les deux **Wipe** et **Non effacé** dans certains cas, l’ingestion d’un jeu de migration remplace le contenu situé dans le même chemin sur la destination. Par exemple, si le jeu de migration contient `/content/page1` et la destination contient déjà `/content/page1/product1`, l’ingestion supprime l’intégralité de la `page1` chemin et ses sous-pages, y compris `product1`et remplacez-le par le contenu du jeu de migration. Cela signifie qu’une planification minutieuse doit être effectuée lors de l’exécution d’une **Non effacé** l’ingestion vers une destination contenant tout contenu à conserver.
 
    >[!IMPORTANT]
    > Si le paramètre **Wipe** est activé pour l’ingestion, elle réinitialise l’ensemble du référentiel existant, y compris les autorisations utilisateur sur l’instance du Cloud Service cible. Cette réinitialisation est également vraie pour un utilisateur administrateur ajouté à la variable **administrateurs** et cet utilisateur doivent être à nouveau ajoutés au groupe administrateurs pour démarrer une ingestion.
+
+   * **Pré-copie :** Choisissez la `Pre-copy` value
+      * Vous pouvez exécuter l’étape de précopie facultative pour accélérer considérablement l’ingestion. Pour plus d’informations, veuillez consulter la section [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
+      * Si l’ingestion avec une précopie est utilisée (pour S3 ou Azure Data Store), il est recommandé de l’exécuter. `Author` l&#39;ingestion seule en premier. Cela permet d’accélérer la `Publish` lorsqu’elle est exécutée ultérieurement.
+
+   >[!IMPORTANT]
+   > Vous pouvez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs et administratrices d’AEM** sur le service de création Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
 
 1. Cliquez sur **Ingérer**.
 
@@ -160,8 +168,11 @@ Cela peut se produire si un noeud de la destination est modifié entre une inges
 
 La solution peut nécessiter que l’extraction complémentaire soit effectuée à nouveau sans le nœud fautif. Vous pouvez également créer un petit jeu de migration du noeud incriminé, mais en désactivant l’option &quot;Versions d’inclusion&quot;.
 
-Les bonnes pratiques indiquent que si **Non effacé** l’ingestion doit être exécutée à l’aide d’un jeu de migration qui inclut des versions (c’est-à-dire extraites avec &quot;include versions&quot;=true), il est essentiel que le contenu de la destination soit modifié le moins possible, jusqu’à ce que le parcours de migration soit terminé. Sinon, ces conflits peuvent se produire.
+Les bonnes pratiques indiquent que si une **Non effacé** l’ingestion doit être exécutée à l’aide d’un jeu de migration qui inclut des versions (c’est-à-dire extraites avec &quot;include versions&quot;=true), il est essentiel que le contenu de la destination soit modifié le moins possible, jusqu’à ce que le parcours de migration soit terminé. Sinon, ces conflits peuvent se produire.
 
+### Ingestion annulée
+
+Une ingestion créée avec une extraction en cours d’exécution comme jeu de migration source attend patiemment que cette extraction réussisse, et démarre normalement à ce stade. Si l’extraction échoue ou est arrêtée, l’ingestion et sa tâche d’indexation ne démarrent pas, mais sont annulées. Dans ce cas, vérifiez l’extraction pour déterminer pourquoi elle a échoué, corrigez le problème et recommencez à extraire. Une fois l’extraction fixe en cours d’exécution, une nouvelle ingestion peut être planifiée.
 
 ## Prochaines étapes {#whats-next}
 

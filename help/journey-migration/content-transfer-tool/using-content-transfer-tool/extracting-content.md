@@ -2,10 +2,10 @@
 title: Extraction de contenu à partir de la source
 description: Découvrez comment extraire du contenu d’une instance Adobe Experience Manager (AEM) source pour le transférer ultérieurement vers une instance AEM Cloud Service.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 44%
+source-wordcount: '735'
+ht-degree: 43%
 
 ---
 
@@ -28,6 +28,9 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 1. Sélectionnez un jeu de migration dans le **Transfert de contenu** assistant et cliquez sur **Extract** pour démarrer l’extraction.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
+
+   >[!TIP]
+   >Il est désormais possible de planifier le démarrage automatique d’une ingestion dès qu’une extraction est réussie. Voir [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
 
    >[!IMPORTANT]
    >
