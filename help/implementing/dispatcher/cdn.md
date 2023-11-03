@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Consultez [Gestion des listes d’adresses IP autorisées](/help/implementing/c
 >
 >Seules les requêtes provenant des adresses IP autorisées sont traitées par le biais du réseau CDN géré par AEM. Si vous pointez votre propre réseau CDN sur le réseau géré par AEM, assurez-vous que les adresses IP de votre réseau CDN sont incluses dans la liste autorisée.
 
-## Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré AEM {#point-to-point-CDN}
+## Le réseau CDN client pointe vers le réseau CDN géré par AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"

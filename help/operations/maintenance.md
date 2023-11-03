@@ -44,7 +44,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge de version</td>
     <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant le 1er novembre 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée. Il peut alors également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->La purge des nouveaux environnements (créés à partir du 1er novembre 2023) est activée par défaut avec les valeurs ci-dessous, et les clients peuvent la configurer avec des valeurs personnalisées.
+    <td>Pour les environnements existants (ceux créés avant le 1er novembre 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée. Il peut alors également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Les nouveaux environnements (ceux créés à partir du 1er novembre 2023) auront la purge activée par défaut avec les valeurs ci-dessous, et les clients pourront effectuer la configuration avec des valeurs personnalisées.
      <ol>
        <li>Les versions de plus de 30 jours sont supprimées</li>
        <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
@@ -56,7 +56,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant le 1er novembre 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée. Il peut alors également la configurer avec des valeurs personnalisées.<br><br> <!-- See above for the two line breaks -->La purge des nouveaux environnements (créés à partir du 1er novembre 2023) sera activée par défaut sous la variable <code>/content</code> du référentiel, selon le comportement suivant :
+    <td>Pour les environnements existants (ceux créés avant le 1er novembre 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée. Il peut alors également la configurer avec des valeurs personnalisées.<br><br> <!-- See above for the two line breaks -->Les nouveaux environnements (ceux créés à partir du 1er novembre 2023) auront la purge activée par défaut sous le noeud <code>/content</code> du référentiel, selon le comportement suivant :
      <ol>
        <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
        <li>Pour le contrôle du DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
