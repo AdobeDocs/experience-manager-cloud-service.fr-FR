@@ -2,10 +2,10 @@
 title: Comment configurer un environnement de développement local pour AEM Forms ?
 description: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
 workflow-type: tm+mt
-source-wordcount: '2811'
-ht-degree: 97%
+source-wordcount: '2847'
+ht-degree: 96%
 
 ---
 
@@ -265,6 +265,10 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    * Utilisez l’option `includeFormsenrollment=y` pour inclure des configurations, des thèmes, des modèles, des composants principaux et des dépendances spécifiques à Forms, nécessaires à la création de formulaires adaptatifs. Si vous utilisez Portail Formulaires, définissez l’option `includeExamples=y`. Vous ajoutez ainsi les composants principaux Portail Formulaires dans le projet.
 
    * Utilisez l’option `includeFormscommunications=y` afin d’ajouter les composants principaux Forms et les dépendances nécessaires pour inclure la fonctionnalité de communications client.
+
+     >[!WARNING]
+     >
+     * Lors de la création d’un projet Archetype avec la version 45, la variable [AEM archetype Project Folder]/pom.xml définit initialement la version des composants principaux de formulaires sur 2.0.64. Avant de créer ou de déployer le projet Archetype, mettez à jour la version des composants principaux de formulaires vers la version 2.0.62.
 
 1. Déployez le projet sur votre environnement de développement local. Vous pouvez utiliser la commande suivante pour effectuer un déploiement sur votre environnement de développement local :
 
