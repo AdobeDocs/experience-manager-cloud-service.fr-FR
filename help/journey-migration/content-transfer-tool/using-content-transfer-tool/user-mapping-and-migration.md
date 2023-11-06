@@ -2,10 +2,10 @@
 title: Mappage des utilisateurs et utilisatrices et migration des entités principales
 description: Présentation du mappage des utilisateurs et de la migration des entités de sécurité dans AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
+source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 47%
+source-wordcount: '1003'
+ht-degree: 45%
 
 ---
 
@@ -27,7 +27,7 @@ L’un des changements majeurs apportés à AEM as a Cloud Service est l’utili
 
 ## Détails de la migration des principaux {#principal-migration-detail}
 
-L’outil de transfert de contenu et Cloud Acceleration Manager migreront vers le système cloud toutes les entités associées au contenu en cours de migration.  L’outil de transfert de contenu effectue cette opération en copiant toutes les entités du système d’AEM source pendant le processus d’extraction.  L’ingestion CAM sélectionne et migre ensuite uniquement les entités associées au contenu ingéré.
+L’outil de transfert de contenu et Cloud Acceleration Manager migreront vers le système cloud toutes les entités associées au contenu en cours de migration.  L’outil de transfert de contenu effectue cette opération en copiant toutes les entités du système d’AEM source pendant le processus d’extraction.  L’ingestion CAM sélectionne et migre ensuite uniquement les entités associées au contenu ingéré. Si une entité de sécurité se trouve sur une règle ACL ou CUG du contenu migré, cette entité de sécurité et tous les groupes dans lesquels elle se trouve et leurs groupes parents (ancêtres) seront migrés. De plus, si une entité de sécurité sur le contenu est un groupe, tous ses groupes et utilisateurs descendants (enfants) seront également migrés.
 
 ## Détails du mappage des utilisateurs et utilisatrices {#user-mapping-detail}
 
