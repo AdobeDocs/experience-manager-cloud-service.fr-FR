@@ -2,9 +2,9 @@
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
 description: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 11%
 
 ---
@@ -198,7 +198,7 @@ Dans les deux cas, le même ensemble de tests automatisés est exécuté. Il est
 
 * contribution d’Adobe pour garantir l’intégrité du produit
 * tests fournis par le client
-   * Tests fonctionnels : http
+   * Tests fonctionnels : via des requêtes http au niveau de création ou de publication AEM
    * Tests de l’interface utilisateur : basés sur la technologie Selenium ou Cypress
 
 Ces tests automatisés sont exécutés dans l’environnement d’évaluation. C’est pourquoi il est important de maintenir le contenu de l’environnement d’évaluation aussi près que possible du contenu sur l’instance de production.
