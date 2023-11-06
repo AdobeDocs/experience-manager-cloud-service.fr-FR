@@ -37,7 +37,7 @@ Avant de commencer à ajouter un paramètre régional pour le Forms adaptatif, v
   Dans les cas où aucune information locale n’est disponible, le formulaire adaptatif s’affiche dans sa langue d’origine, qui est la langue utilisée lors du développement du formulaire.
 
 
-## Prérequis {#prerequistes}
+## Conditions préalables requises {#prerequistes}
 
 Avant de commencer à ajouter un paramètre régional :
 

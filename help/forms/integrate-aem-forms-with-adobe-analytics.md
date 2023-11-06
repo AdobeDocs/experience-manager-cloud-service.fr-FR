@@ -95,7 +95,7 @@ Après avoir installé l’extension **[!UICONTROL Adobe Experience Manager Form
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br /> </td>
+   <td>PageURL<br />. </td>
    <td>PanelTitle<br /> </td>
    <td>TimeSpent</td>
   </tr>

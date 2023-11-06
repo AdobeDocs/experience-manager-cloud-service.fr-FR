@@ -5,7 +5,7 @@ exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 75%
+ht-degree: 80%
 
 ---
 
@@ -112,7 +112,7 @@ Une fois que vous avez configuré [!DNL AEM Forms] as a Cloud Service, les group
 * [Configurer un environnement de développement local](/help/forms/setup-local-development-environment.md)
 * [Migration d’AEM 6.5 Forms vers Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Création d’un formulaire adaptatif autonome](/help/forms/creating-adaptive-form-core-components.md)
-* [Ajout d’un formulaire adaptatif à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Ajouter un formulaire adaptatif à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 <!--
 

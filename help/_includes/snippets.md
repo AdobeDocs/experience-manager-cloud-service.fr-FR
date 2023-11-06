@@ -2,7 +2,7 @@
 source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 75%
+ht-degree: 77%
 
 ---
 # Fragments de code {#snippets}
@@ -11,7 +11,7 @@ ht-degree: 75%
 
 [![Découvrez notre CMS découplé en bénéficiant d’un essai de 30 jours](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=fr)
 
-## Création d’Edge Delivery Services {#edge-delivery-authoring}
+## Edge Delivery Services Création {#edge-delivery-authoring}
 
 [!BADGE Pour créer AEM contenu pour les Edge Delivery Services, cliquez ici.]{type=Positive url="/help/edge/overview.md" tooltip="Création de contenu AEM pour les Edge Delivery Services"}
 
