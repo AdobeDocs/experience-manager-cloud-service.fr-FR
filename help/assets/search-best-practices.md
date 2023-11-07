@@ -3,9 +3,9 @@ title: Bonnes pratiques de recherche pour [!DNL Adobe Experience Manager] as a [
 description: Bonnes pratiques pour rechercher, rechercher et récupérer les métadonnées des ressources dans votre application.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
+source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2544'
 ht-degree: 11%
 
 ---
@@ -46,7 +46,7 @@ Vous pouvez rendre la recherche plus précise en ajoutant le mot-clé de recherc
 
 La recherche affiche des résultats similaires si vous travaillez dans le **[!UICONTROL Affichage des ressources]** ainsi que .
 
-[Regardez une vidéo pour effectuer une recherche de base dans AEM Assets](https://video.tv.adobe.com/v/3425489)
+>[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
 ## Fichiers et dossiers {#files-folders}
 
@@ -67,7 +67,7 @@ Sélectionnez le dossier à partir du chemin d’accès et accédez au dossier r
 
 ![Recherche à l’aide de fichiers et de dossiers](assets/files-folders.png)
 
-[Regardez une vidéo pour effectuer une recherche dans AEM Assets à l’aide de fichiers et de dossiers.](https://video.tv.adobe.com/v/3425487)
+>[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
 ## Opérateurs  {#operators}
 
@@ -119,7 +119,7 @@ L’astérisque est un opérateur de caractères génériques utilisé pour éla
 * `car*` renvoie les ressources avec carwash, carrier, Carriage, etc.
 * `*car` renvoie des ressources avec des voitures modernes, des voitures de sport, etc.
 
-[Regardez une vidéo pour effectuer une recherche dans AEM Assets à l’aide de caractères génériques.](https://video.tv.adobe.com/v/3425488)
+>[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Affichage des ressources]** ne prend pas en charge l’utilisation des caractères génériques.
 
@@ -187,7 +187,7 @@ Pour rechercher des ressources à l’aide du scénario mentionné dans **[!UICO
 1. Accédez aux filtres de recherche.
 1. Accédez à Filtres. Sous [!UICONTROL Type MIME], sélectionnez tous les types MIME donnés, mais désélectionnez PNG.
 
-[Regardez une vidéo pour effectuer une recherche dans AEM Assets à l’aide de filtres](https://video.tv.adobe.com/v/3425486)
+>[!VIDEO](https://video.tv.adobe.com/v/3425486)
 
 ## Recherche avancée {#advanced-search}
 
@@ -241,7 +241,7 @@ Vous pouvez capturer un critère spécifique à l’aide de différents filtres 
 
 La recherche affiche des résultats similaires si vous travaillez dans le **[!UICONTROL Affichage des ressources]** ainsi que .
 
-[Regardez une vidéo pour effectuer une recherche dans AEM Assets à l’aide de la recherche avancée](https://video.tv.adobe.com/v/3425490)
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
 **Scénario 9 : rechercher une correspondance similaire pour la voiture couleur rouge**
 
