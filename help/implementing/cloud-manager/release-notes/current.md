@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2023.10.0 dans Adobe Experience
 description: Consultez les notes de mise à jour de Cloud Manager 2023.10.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
+source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 19%
+source-wordcount: '599'
+ht-degree: 29%
 
 ---
 
@@ -29,12 +29,12 @@ La date de publication de la version 2023.10.0 de Cloud Manager dans AEM as a
    * Les améliorations varient en fonction du profil de contenu.
 * Automatique [mises à jour des environnements de développement](/help/implementing/cloud-manager/manage-environments.md#updating-environments) sont activés par défaut pour les nouveaux programmes, ce qui vous évite d’avoir à exécuter les mises à jour manuellement.
    * Cette mise à jour sera mise en oeuvre par étapes.
-* Avec la version d’octobre 2023 de Cloud Manager, les versions Java sont mises à jour par le biais d’un déploiement progressif.
-   * Les versions mineures de Java 8, 11 et Maven ont été mises à jour et seront déployées par étapes au cours des deux prochains mois. La nouvelle version comporte plusieurs correctifs de sécurité et correctifs. Les nouvelles versions sont les suivantes :
-   * *Maven : 3.8.8*
-   * *Version Java 8 : /usr/lib/jvm/jdk1.8.0_371*
-   * *Version Java 11 : /usr/lib/jvm/jdk-11.0.20*
-   * [Voir l’avis d’OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) pour plus d’informations sur la sécurité et les correctifs de bogues dans ces mises à jour JDK.
+* Avec la version d’octobre 2023 de Cloud Manager, les versions Java sont mises à jour par le biais d’un déploiement progressif.
+   * Les versions mineures de Java 8, 11 et Maven ont été mises à jour et seront déployées par étapes au cours des deux prochains mois. La nouvelle version comporte plusieurs correctifs de sécurité et de bugs. Les nouvelles versions sont les suivantes :
+      * **Maven:** `3.8.8`
+      * **Version Java 8 :** `/usr/lib/jvm/jdk1.8.0_371`
+      * **Version Java 11 :** `/usr/lib/jvm/jdk-11.0.20`
+   * [Voir l’avis d’OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) pour plus d’informations sur les correctifs de sécurité et de bugs dans ces mises à jour JDK.
 
 ## Programme d&#39;adoption précoce {#early-adoption}
 
@@ -66,3 +66,15 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commenta
 Le tableau de bord tire parti de Google Lighthouse, un outil automatisé et open source permettant d’améliorer la qualité de vos applications web. Vous pouvez l’exécuter sur n’importe quelle page web, publique ou nécessitant une authentification. Il comporte des audits des performances, de l’accessibilité, des applications web progressives, de l’optimisation pour les moteurs de recherche, etc.
 
 Vous souhaitez tester le nouveau tableau de bord ? Veuillez envoyer un e-mail à `aem-lighthouse-pilot@adobe.com` à partir de votre email associé à votre Adobe ID et nous pouvons vous aider à démarrer.
+
+## Problèmes connus {#known-issues}
+
+Un bogue connu empêche [pipelines de déploiement de configuration](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) de passer à la production.
+
+Si la variable **Mettre en pause avant le déploiement en production** est requise pour un pipeline de déploiement de configuration. Voici la solution suggérée jusqu’à ce que le bogue soit résolu.
+
+1. Exécuter le pipeline.
+1. Testez le code dans l’environnement d’évaluation.
+1. Lorsque le déploiement et l’approbation sont disponibles, cliquez sur **Rejeter**.
+1. Modifiez le pipeline pour désactiver la fonction **Mettre en pause avant le déploiement en production** .
+1. Exécutez à nouveau le pipeline. Il s’exécute à nouveau lors de l’évaluation, puis en production.
