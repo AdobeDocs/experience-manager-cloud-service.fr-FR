@@ -2,10 +2,10 @@
 title: Accès au fournisseur de services Screens
 description: Cette page décrit comment accéder au fournisseur de services Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ad5a8656b200ba35a0a6f58afd4be03202138f47
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 95%
+source-wordcount: '292'
+ht-degree: 85%
 
 ---
 
@@ -38,6 +38,9 @@ Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens
 3. Saisissez les informations suivantes dans la boîte de dialogue Modifier les paramètres.
    * **URL de publication** - URL de publication AEM (par exemple, `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **URL de création** - URL de création AEM (par exemple, `https://author-p12345-e12345.adobeaemcloud.com`)
+
+   >[!NOTE]
+   >Veillez à créer et publier au moins un canal d’écran AEM avant de configurer l’AEM sous Fournisseur de services Screens. Pour créer un canal, accédez à /screens.html sur votre fournisseur de contenu.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
 
