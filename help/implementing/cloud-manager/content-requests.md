@@ -2,10 +2,10 @@
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 12%
+source-wordcount: '1164'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,7 @@ Les requêtes de contenu peuvent présenter des écarts avec les outils de créa
 | Outils de surveillance et de sécurité tiers | Les outils de surveillance et d’analyse de sécurité peuvent générer des demandes de contenu pour AEM qui ne sont pas suivies dans les rapports Analytics. |
 | Accès API | Un accès programmatique aux pages ou aux API Adobe Experience Manager peut générer des demandes de contenu pour les AEM qui ne sont pas suivies dans les rapports Analytics. |
 | Pré-récupérer des demandes | L’utilisation d’un service de pré-récupération pour précharger les pages afin d’augmenter la vitesse peut entraîner une augmentation significative du trafic de demandes de contenu. |
-| DDOS | Bien qu’Adobe s’efforce de détecter et de filtrer automatiquement le trafic provenant des attaques DDOS, il n’existe aucune garantie que toutes les attaques DDOS possibles soient détectées |
+| DDOS | Bien qu’Adobe tente de détecter et de filtrer automatiquement le trafic provenant des attaques DDOS, rien ne garantit que toutes les attaques DDOS possibles soient détectées. |
 | Bloqueurs de trafic | L’utilisation d’un bloqueur de suivi dans un navigateur peut exclure certaines requêtes du suivi. |
 | Pare-feux | Les pare-feu peuvent bloquer le suivi Analytics. Ce scénario est plus fréquent avec les pare-feu d’entreprise. |
 
@@ -59,7 +59,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 | Code HTTP 400-499 | Exclu | Erreurs renvoyées au visiteur lorsque le contenu n’existe pas (404) ou qu’il existe d’autres problèmes liés au contenu ou aux requêtes. |
 | Code HTTP 300-399 | Exclu | Il s’agit de bonnes requêtes qui vérifient si quelque chose a changé sur le serveur ou redirigent la requête vers une autre ressource. Ils ne contiennent pas de contenu, donc ils ne sont pas facturables. |
 | Demandes allant à /libs/* | Exclu | AEM les requêtes JSON internes, telles que le jeton CSRF non facturable. |
-| Trafic provenant des attaques DOS | Exclu | Protection DDOS. AEM détecte automatiquement certaines attaques DOS et les bloque. Si des attaques DOS sont détectées, elles ne sont pas facturables.<br><br>Types de DDOS détectés automatiquement :<br>・ DOSBlockedCiphersSHA<br>・ DOSBlockedPattern<br>・ DDOSSuspiciousRequest |
+| Trafic provenant des attaques DOS | Exclu | Protection DDOS. AEM détecte automatiquement certaines attaques DOS et les bloque. Si des attaques DOS sont détectées, elles ne sont pas facturables. |
 | AEM surveillance NewRelic as a Cloud Service | Exclu | AEM surveillance mondiale as a Cloud Service. |
 | URL permettant aux clients de surveiller leur programme de Cloud Service | Exclu | URL recommandée pour surveiller la disponibilité en externe.<br><br>`/system/probes/health` |
 | AEM service de réchauffement de la capsule as a Cloud Service | Exclu | Agent utilisateur : skyline-service-chauffe/1.* |
