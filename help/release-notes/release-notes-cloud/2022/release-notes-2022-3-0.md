@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 87%
 
 ---
 
-# Notes de mise à jour 2022.3.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2022.3.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.3.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -44,7 +44,7 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 
 * Vous pouvez désormais utiliser l’interface utilisateur [!DNL Experience Manager Assets] pour :
 
-   * configurer la [détection des ressources en double](/help/assets/manage-digital-assets.md#detect-duplicate-assets) dans un référentiel ;
+   * configurer la [détection des ressources en double](/help/assets/detect-duplicate-assets.md) dans un référentiel ;
 
    * configurer l’[ajout de filigranes numériques](/help/assets/watermark-assets.md) à des images.
 
@@ -113,7 +113,7 @@ La date de publication de l’outil de transfert de contenu version v1.9.0 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Garde-fous de vérification de la taille : la fonctionnalité Vérification de la taille de l’outil de transfert de contenu permet de réduire le nombre de transferts de contenu ayant échoué. Grâce à la fonction Vérifier la taille , les utilisateurs peuvent 1) déterminer s’ils disposent d’un espace disque suffisant dans la variable `crx-quickstart` sous-répertoire avant extraction, et 2) estimer la taille du jeu de migration et vérifier s’il est pris en charge. Si l’une de ces vérifications est enfreinte, les utilisateurs verront apparaître des avertissements dans l’interface utilisateur de CTT. Grâce à ce garde-fous de sécurité, vous pouvez éviter les échecs de transfert de contenu et discuter de manière proactive des options de migration avec l’assistance clientèle d’Adobe. Voir [Détermination de la taille du jeu de migration et de l’espace disque](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#migration-set-size) pour plus d’informations.
+* Garde-fous de vérification de la taille : la fonctionnalité Vérification de la taille de l’outil de transfert de contenu permet de réduire le nombre de transferts de contenu ayant échoué. Grâce à la fonction Vérifier la taille , les utilisateurs peuvent 1) déterminer s’ils disposent d’un espace disque suffisant dans la variable `crx-quickstart` sous-répertoire avant extraction, et 2) estimer la taille du jeu de migration et vérifier s’il est pris en charge. Si l’une de ces vérifications est enfreinte, les utilisateurs verront apparaître des avertissements dans l’interface utilisateur de CTT. Grâce à ce mécanisme de sécurisation, vous pouvez éviter les échecs de transfert de contenu et discuter de manière proactive des options de migration avec l’assistance clientèle d’Adobe. Consultez [Détermination de la taille du jeu de migration et de l’espace disque](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#migration-set-size) pour plus d’informations.
 
 ## Analyseur des bonnes pratiques {#bpa-release}
 

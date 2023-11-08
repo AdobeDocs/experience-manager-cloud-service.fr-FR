@@ -4,10 +4,10 @@ description: Modifications notables apportées à [!DNL Adobe Experience Manager
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+workflow-type: tm+mt
+source-wordcount: '1038'
+ht-degree: 99%
 
 ---
 
@@ -51,14 +51,14 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 
 | Fonctions ou cas d’utilisation | Statut dans [!DNL Experience Manager] as a [!DNL Cloud Service] | Commentaires |
 |-----|-----|-----|
-| [Détection des doublons de ressources ](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Fonctionne différemment. | Renseignez-vous sur [son fonctionnement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=fr). |
+| [Détection des doublons de ressources ](/help/assets/detect-duplicate-assets.md) | Fonctionne différemment. | Renseignez-vous sur [son fonctionnement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=fr). |
 | [Pour les rendus FPO (avec positionnement uniquement)](/help/assets/configure-fpo-renditions.md) | Fonctionne différemment. | Les profils de traitement utilisent les microservices de ressources pour générer des rendus FPO. Dans Experience Manager 6.5, une solution tierce telle qu’[!DNL ImageMagick] était disponible pour générer les rendus. |
 | Écriture différée des métadonnées | Fonctionne différemment. | Désactivé par défaut. Activez le lanceur de processus correspondant si nécessaire. L’écriture différée est gérée par les microservices de ressources. |
 | Traitement des ressources chargées à l’aide du gestionnaire de packages | Nécessite une intervention manuelle. | Retraitez manuellement les ressources à l’aide de l’action **[!UICONTROL Retraiter la ressource]**. |
 | Détection du type MIME | Pas de prise en charge. | Si vous chargez une ressource numérique sans extension ou avec une extension incorrecte, elle peut ne pas être traitée comme vous le souhaitez. Les utilisateurs peuvent toujours stocker les fichiers binaires sans extension dans le module DAM. Voir la section [Détection de type MIME dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=fr). |
 | Génération de sous-ressources pour des ressources composites | Pas de prise en charge. | Les cas d’utilisation dépendants tels que les annotations peuvent ne pas être remplis. Voir la section [Création de sous-ressources dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=fr#generate-subassets). L’aperçu PDF de certains types de fichiers est disponible à partir de la [version 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | Modifier les images | Non pris en charge. | La modification de ressources n’est pas prise en charge dans Experience Manager as a Cloud Service. Voir [comment cela fonctionnait dans Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=fr#editing-images). |
-| Page d’accueil | Non pris en charge. | Voir la section [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=fr) |
+| Page d’accueil | Non pris en charge. | Voir [[!DNL Assets] Expérience sur la page d’accueil dans [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=fr) |
 | Extraction de ressources à partir de l’archive ZIP | Non pris en charge. | Voir la section [Extraction de fichiers ZIP dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=fr#extractzip). |
 | Évaluations des ressources | Non pris en charge. | Le widget d’évaluation dans l’éditeur de schéma de métadonnées n’est pas pris en charge. |
 | Filtre de disposition du contenu | Non pris en charge. | `ContentDispositionFilter` est un cas d’utilisation courant qui permet aux administrateurs de configurer [!DNL Experience Manager] pour qu’ils diffusent des fichiers HTML et qu’ils ouvrent des fichiers PDF en ligne au lieu de les télécharger. Sur les instances de publication, vous pouvez gérer la disposition à l’aide de la configuration de Dispatcher. Sur les instances d’auteur, Adobe ne recommande pas de modifier l’en-tête de disposition du contenu. Voir [Filtre de disposition du contenu dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html?lang=fr). |
@@ -93,4 +93,3 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 >* [Modifications notables](/help/release-notes/aem-cloud-changes.md)
 >* [Modifications notables [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Tutoriels vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
-
