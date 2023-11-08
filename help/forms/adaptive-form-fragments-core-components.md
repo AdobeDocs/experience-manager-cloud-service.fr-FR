@@ -5,9 +5,9 @@ topic-tags: author
 keywords: Ajouter des fragments de formulaire adaptatif, des fragments de formulaire adaptatif, Créer un fragment de formulaire, Ajouter un fragment à un formulaire adaptatif, Gérer des fragments
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: 1bdd9e323e74a3f2bb06bff52235742e9e22a136
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1776'
 ht-degree: 32%
 
 ---
@@ -49,7 +49,7 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
 
      >[!NOTE]
      >
-     > Dans les Forms adaptatives basées sur les composants principaux, vous pouvez utiliser plusieurs fois un fragment de formulaire unique dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et sur des éléments non basés sur des schémas.
+     > Dans Adaptive Forms, vous pouvez utiliser plusieurs fois un fragment de formulaire unique (basé sur les composants principaux). Il prend en charge les fragments de formulaire basés sur des schémas et sur des éléments non basés sur des schémas.
 
    * **Schéma**: indique de créer le fragment à l’aide d’un schéma XML ou JSON téléchargé dans AEM Forms. Vous pouvez charger ou sélectionner dans les schémas XML ou JSON disponibles comme modèle de formulaire pour le fragment. Lorsque vous sélectionnez un schéma XML, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant un type complexe présent dans le schéma sélectionné à partir de la propriété **[!UICONTROL Type complexe de schéma XML]** menu déroulant. Lorsque vous sélectionnez un schéma JSON, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant une définition de schéma présente dans le schéma sélectionné à partir du **[!UICONTROL Définitions de schéma JSON]** menu déroulant.
    * **Modèle de données de formulaire**: indique de créer le fragment à l’aide d’un modèle de données de formulaire. Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire. Développez la liste déroulante Définitions de modèle de données de formulaire . Il répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié. Sélectionnez un objet de modèle de données dans la liste.

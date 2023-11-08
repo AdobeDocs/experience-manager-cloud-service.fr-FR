@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2147'
 ht-degree: 89%
 
 ---
@@ -45,7 +45,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
      >[!NOTE]
      >
-     > Dans les Forms adaptatives basées sur les composants principaux, vous pouvez utiliser plusieurs fois un fragment de formulaire unique dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et sur des éléments non basés sur des schémas.
+     > Dans Adaptive Forms, vous pouvez utiliser plusieurs fois un fragment de formulaire unique (basé sur les composants principaux) dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et sur des éléments non basés sur des schémas.
 
    * **Modèle de formulaire** : indique de créer le fragment à l’aide d’un modèle XDP téléchargé dans [!DNL AEM Forms]. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
 
@@ -173,7 +173,7 @@ Vous pouvez utiliser plusieurs fois un fragment de formulaire basé sur un sché
 
 >[!NOTE]
 >
-> * Si vous utilisez plusieurs fois des fragments de formulaire sans base dans un formulaire adaptatif, la synchronisation des données entre les champs des fragments se produit. Vous pouvez utiliser une seule [fragment de formulaire (en fonction des composants principaux)](/help/forms/adaptive-form-fragments-core-components.md)  plusieurs fois dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et non sur des fragments basés sur des schémas sans problèmes de synchronisation des données.
+> Si vous utilisez plusieurs fois des fragments de formulaire sans base dans un formulaire adaptatif, la synchronisation des données entre les champs des fragments se produit. Vous pouvez utiliser une seule [fragment de formulaire (en fonction des composants principaux)](/help/forms/adaptive-form-fragments-core-components.md) qui n’est lié à aucun modèle de données de formulaire plusieurs fois dans un formulaire sans rencontrer de problèmes de synchronisation des données.
 
 ## Mappage automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
 
@@ -261,9 +261,11 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 * (**Mac uniquement**) Pour vous assurer que la fonctionnalité des fragments de formulaire fonctionne parfaitement dans tous les scénarios, ajoutez l’entrée suivante au fichier /private/etc/hosts :
   `127.0.0.1 <Host machine>` **Ordinateur hôte** : ordinateur Apple Mac sur lequel est déployé [!DNL AEM Forms].
 
-## Fragments de référence {#reference-fragments}
+<!--
+## Reference Fragments {#reference-fragments}
 
-Les fragments de formulaires adaptatifs de référence que vous pouvez utiliser pour créer votre formulaire sont disponibles. Pour plus d’informations, voir [Fragments de référence](reference-adaptive-form-fragments.md).
+Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+-->
 
 >[!MORELIKETHIS]
 >
