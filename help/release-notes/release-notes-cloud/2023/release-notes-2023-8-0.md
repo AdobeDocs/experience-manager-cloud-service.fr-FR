@@ -144,7 +144,7 @@ Vous pouvez envoyer un e-mail à `aem-forms-headless@adobe.com` à partir de vot
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Journaux du réseau de diffusion de contenu {#cdn-logs}
+### Journaux de réseau CDN {#cdn-logs}
 
 Téléchargez les journaux CDN à partir de Cloud Manager, ce qui s’avère utile pour l’optimisation du rapport cache-accès et une meilleure visibilité du flux de diffusion de contenu. [En savoir plus](/help/implementing/developing/introduction/logging.md#cdn-log) le format du journal CDN. Cette fonctionnalité sera progressivement déployée auprès des clients début septembre.
 

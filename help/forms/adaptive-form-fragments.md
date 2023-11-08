@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 95%
+source-wordcount: '2167'
+ht-degree: 89%
 
 ---
 
@@ -42,6 +42,11 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 1. Cliquez pour ouvrir l’onglet **Modèle de formulaire**, puis dans le menu déroulant **Choisir parmi**, sélectionnez l’un des modèles de fragment suivants :
 
    * **Aucun** : indique de créer le fragment à partir de zéro sans utiliser de modèle de formulaire.
+
+     >[!NOTE]
+     >
+     > Dans les Forms adaptatives basées sur les composants principaux, vous pouvez utiliser plusieurs fois un fragment de formulaire unique dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et sur des éléments non basés sur des schémas.
+
    * **Modèle de formulaire** : indique de créer le fragment à l’aide d’un modèle XDP téléchargé dans [!DNL AEM Forms]. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
 
    ![Création d’un formulaire adaptatif avec le modèle de formulaire comme modèle](assets/form-template-model.png)
@@ -159,6 +164,16 @@ Vous pouvez créer des fragments de formulaire adaptatif imbriqués, ce qui sign
 ### Modification des fragments {#change-fragments}
 
 Vous pouvez remplacer ou modifier un fragment de formulaire adaptatif par un autre fragment à l’aide de la propriété **Sélectionner une ressource un fragment** dans la boîte de dialogue Modifier le composant, pour un panneau de fragment de formulaire adaptatif.
+
+### Utilisation d’un fragment de formulaire plusieurs fois dans un formulaire adaptatif {#using-form-fragment-mutiple-times-in-af}
+
+Vous pouvez utiliser plusieurs fois un fragment de formulaire basé sur un schéma dans un formulaire adaptatif pour enregistrer les données de manière unique pour chaque champ de fragment de formulaire. Par exemple, vous pouvez utiliser un fragment de formulaire d’adresse pour collecter les détails des adresses pour les adresses permanentes, les communications et les adresses actives présentes dans un formulaire de demande de prêt.
+
+![utilisation de plusieurs fragments dans un formulaire adaptatif](/help/forms/assets/using-multiple-fragment-af.gif)
+
+>[!NOTE]
+>
+> * Si vous utilisez plusieurs fois des fragments de formulaire sans base dans un formulaire adaptatif, la synchronisation des données entre les champs des fragments se produit. Vous pouvez utiliser une seule [fragment de formulaire (en fonction des composants principaux)](/help/forms/adaptive-form-fragments-core-components.md)  plusieurs fois dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et non sur des fragments basés sur des schémas sans problèmes de synchronisation des données.
 
 ## Mappage automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
 

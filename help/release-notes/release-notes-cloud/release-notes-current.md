@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -87,9 +87,9 @@ Regardez la vidéo de présentation de la version d’octobre 2023 pour un rés
 
 [Filtrage du trafic sur le réseau de diffusion de contenu géré par Adobe](/help/security/traffic-filter-rules-including-waf.md) en déclarant des règles correspondant au trafic du site web par des propriétés, y compris l’url, l’adresse IP et l’agent utilisateur, ou en définissant des limites de taux de trafic personnalisées pour se protéger des attaques DoS. Les clients peuvent également acquérir sous licence un ensemble de règles WAF (Web Application Firewall) avancées afin d’obtenir une protection supplémentaire contre les menaces de sites web complexes.
 
-Nous vous encourageons à vous familiariser avec les règles de filtrage du trafic en [test d’un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Il vous guide tout au long des étapes nécessaires pour configurer un nouveau pipeline de configuration Cloud Manager, déclarer des règles dans un fichier de configuration et analyser les journaux de réseau de diffusion de contenu à la recherche de trafic malveillant.
+Nous vous encourageons à vous familiariser avec les règles de filtrage du trafic en [test d’un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=fr)! Il vous guide tout au long des étapes nécessaires pour configurer un nouveau pipeline de configuration Cloud Manager, déclarer des règles dans un fichier de configuration et analyser les journaux de réseau de diffusion de contenu à la recherche de trafic malveillant.
 
-Les règles de filtrage du trafic sont désormais disponibles dans les environnements de développement, avec un déploiement progressif dans les environnements d’évaluation et de production en novembre. Vous pouvez demander un accès anticipé sur la scène et la production en envoyant un courrier électronique. **aemcs-waf-adopter@adobe.com**.
+Les règles de filtrage du trafic sont désormais disponibles dans les environnements de développement, avec un déploiement progressif dans les environnements d’évaluation et de production en novembre. Vous pouvez demander un accès anticipé à l’évaluation et la production en envoyant un courrier électronique à **aemcs-waf-adopter@adobe.com**.
 
 Les règles de filtrage du trafic WAF avancé peuvent être autorisées au cours de l’année via les offres Sécurité améliorée ou Protection WAF-DDoS .
 

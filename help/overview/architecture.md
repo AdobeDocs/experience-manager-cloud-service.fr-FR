@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -228,5 +228,5 @@ Voir également :
 * Edge Delivery Services:
 
    * [AEM Aperçu as a Cloud Service - avec les Edge Delivery Services](/help/edge/overview.md)
-   * [Utilisation d’Edge Delivery Services](/help/edge/using.md)
+   * [Utiliser Edge Delivery Services](/help/edge/using.md)
    * [Explorez l’architecture sous-jacente et les éléments importants d’AEM as a Cloud Service avec Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=fr)

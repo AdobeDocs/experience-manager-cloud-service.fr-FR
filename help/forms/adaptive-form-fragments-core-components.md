@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Ajouter des fragments de formulaire adaptatif, des fragments de formulaire adaptatif, Créer un fragment de formulaire, Ajouter un fragment à un formulaire adaptatif, Gérer des fragments
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 33%
+source-wordcount: '1780'
+ht-degree: 32%
 
 ---
 
@@ -49,7 +49,7 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
 
      >[!NOTE]
      >
-     >L’avantage des fragments basés sur des composants principaux par rapport aux fragments basés sur des composants de base est la possibilité d’utiliser plusieurs fragments basés sur des composants principaux non liés à un modèle de formulaire dans un seul formulaire adaptatif.
+     > Dans les Forms adaptatives basées sur les composants principaux, vous pouvez utiliser plusieurs fois un fragment de formulaire unique dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et sur des éléments non basés sur des schémas.
 
    * **Schéma**: indique de créer le fragment à l’aide d’un schéma XML ou JSON téléchargé dans AEM Forms. Vous pouvez charger ou sélectionner dans les schémas XML ou JSON disponibles comme modèle de formulaire pour le fragment. Lorsque vous sélectionnez un schéma XML, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant un type complexe présent dans le schéma sélectionné à partir de la propriété **[!UICONTROL Type complexe de schéma XML]** menu déroulant. Lorsque vous sélectionnez un schéma JSON, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant une définition de schéma présente dans le schéma sélectionné à partir du **[!UICONTROL Définitions de schéma JSON]** menu déroulant.
    * **Modèle de données de formulaire**: indique de créer le fragment à l’aide d’un modèle de données de formulaire. Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire. Développez la liste déroulante Définitions de modèle de données de formulaire . Il répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié. Sélectionnez un objet de modèle de données dans la liste.
@@ -107,7 +107,11 @@ Perform the following steps to show complete fragments in forms:
 
 Vous pouvez créer des fragments de formulaire adaptatif imbriqués, ce qui signifie que vous pouvez faire glisser un fragment dans un autre fragment et avoir une structure de fragment imbriqué.
 
+### Utilisation d’un fragment de formulaire plusieurs fois dans un formulaire adaptatif {#using-form-fragment-mutiple-times-in-af}
 
+Vous pouvez utiliser plusieurs fois dans un formulaire adaptatif un fragment de formulaire basé sur un schéma ou un fragment de formulaire basé sur un schéma pour enregistrer les données de manière unique pour chaque champ de fragment de formulaire. Par exemple, vous pouvez utiliser un fragment de formulaire d’adresse pour collecter les détails des adresses pour les adresses permanentes, les communications et les adresses actives présentes dans un formulaire de demande de prêt.
+
+![utilisation de plusieurs fragments dans un formulaire adaptatif](/help/forms/assets/using-multiple-fragment-af.gif)
 
 ## Correspondance automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
 
