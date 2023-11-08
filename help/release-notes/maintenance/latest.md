@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
+source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 11%
+source-wordcount: '1130'
+ht-degree: 12%
 
 ---
 
@@ -101,9 +101,6 @@ L’activation des fonctionnalités de la version 2023.11.0 fournit l’ensembl
 * FORMS-11206 : lorsqu’un utilisateur tente de planifier un processus de publication pour un formulaire adaptatif, il ne fonctionne pas comme prévu.
 * FORMS-11546 : Lighthouse a détecté une étiquette ARIA manquante pour les panneaux répétés dans un formulaire adaptatif, ce qui a une incidence sur l’accessibilité.
 * FORMS-11095 : l’attribut ARIA est incorrectement défini pour les champs de numéro de téléphone, d’adresse électronique et de numéro, ce qui entraîne des problèmes d’accessibilité.
-* FORMS-9894 : l’API Output Service génère un code d’erreur incorrect lorsqu’un utilisateur fournit un chemin de référentiel non valide, ce qui entraîne une confusion pour les utilisateurs qui rencontrent ce problème.
-* FORMS-11404 : le service ImportData présente un comportement incohérent lors de la fusion de diverses données XML avec un PDF étendu Reader. Plus précisément, il conserve les propriétés d’extension Reader pour un document de PDF de sortie, mais ne le fait pas pour les autres PDF de sortie.
-
 
 ### Problèmes connus {#known-issues-14157}
 
