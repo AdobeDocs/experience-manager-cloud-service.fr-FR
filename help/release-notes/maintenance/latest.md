@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1124'
 ht-degree: 12%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 12%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 14157 {#release-14157}
+## Version 14227 {#release-14227}
 
-Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 14157, publiée publiquement le 7 novembre 2023. Cette mise à jour de maintenance est une mise à jour de la version de maintenance 14029 précédente.
+Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 14227, publiée publiquement le 9 novembre 2023. Cette mise à jour de maintenance est une mise à jour de la version de maintenance 14029 précédente. La version de maintenance 14227 remplace la version 14157 pour corriger un problème.
 
 L’activation des fonctionnalités de la version 2023.11.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
-### Améliorations {#enhancements-14157}
+### Améliorations {#enhancements-14227}
 
 * ASSETS-29631 : AEM Assets Cloud : utilisez dam:tasks pour effectuer des recherches/diffusions sécurisées.
 * CQ-4354515 : Traductions : option pour supprimer la traduction des ressources référencées.
@@ -40,7 +40,7 @@ L’activation des fonctionnalités de la version 2023.11.0 fournit l’ensembl
 * SITES-16545 : Fragments de contenu : ajoutez un point de terminaison pour récupérer les références de la variation d’un fragment de contenu.
 * SITES-16853 : Fragments de contenu : suppression /adobe/sites/cf/fragments/{fragmentId}/variation/{name}point de terminaison /tags.
 
-### Problèmes résolus {#fixed-issues-14157}
+### Problèmes résolus {#fixed-issues-14227}
 
 * Différents problèmes d’accessibilité résolus
 * ASSETS-31015 : impossible de charger des fichiers vers Assets avec des extensions de fichiers inconnues.
@@ -85,7 +85,6 @@ L’activation des fonctionnalités de la version 2023.11.0 fournit l’ensembl
 * SITES-16243 : Fragments de contenu : la recherche et le remplacement ne fonctionnent pas avec les champs dont le rendu est : Multiple.
 * SITES-16250 : Fragments de contenu : la correction d’un CF renvoie parfois un en-tête d’etag incorrect.
 * SITES-16686 : Fragments de contenu : les références de fragments de contenu qui ne sont pas des fragments sont sérialisées lorsque la référence parent est à la profondeur maximale.
-* SITES-16234 : ContextHub : la correction du nom d’activité de la marque sélectionnée ne s’affiche pas lorsque vous commencez le ciblage.
 * SITES-12880 : Fast-Track : Localisation des correctifs pour Sites > Configuration d’Analytics.
 * SITES-16103 : Fragments d’expérience : les options Target ne s’affichent pas sous les Cloud Service en raison d’une erreur de console.
 * SITES-16001 : MSM : Possibilité d’exclure des composants à plusieurs champs de la configuration de déploiement lors de la création de Live Copy.
@@ -102,11 +101,11 @@ L’activation des fonctionnalités de la version 2023.11.0 fournit l’ensembl
 * FORMS-11546 : Lighthouse a détecté une étiquette ARIA manquante pour les panneaux répétés dans un formulaire adaptatif, ce qui a une incidence sur l’accessibilité.
 * FORMS-11095 : l’attribut ARIA est incorrectement défini pour les champs de numéro de téléphone, d’adresse électronique et de numéro, ce qui entraîne des problèmes d’accessibilité.
 
-### Problèmes connus {#known-issues-14157}
+### Problèmes connus {#known-issues-14227}
 
 Aucun.
 
-### Technologies intégrées {#embedded-tech-14157}
+### Technologies intégrées {#embedded-tech-14227}
 
 | Technologie | Version | Lien |
 |---|---|---|
