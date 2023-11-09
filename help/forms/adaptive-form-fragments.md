@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
+source-git-commit: 1835559f9becea5f79d179be9b01efbe67c82151
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2148'
 ht-degree: 89%
 
 ---
@@ -173,7 +173,7 @@ Vous pouvez utiliser plusieurs fois un fragment de formulaire basé sur un sché
 
 >[!NOTE]
 >
-> Si vous utilisez plusieurs fois des fragments de formulaire sans base dans un formulaire adaptatif, la synchronisation des données entre les champs des fragments se produit. Vous pouvez utiliser une seule [fragment de formulaire (en fonction des composants principaux)](/help/forms/adaptive-form-fragments-core-components.md) qui n’est lié à aucun modèle de données de formulaire plusieurs fois dans un formulaire sans rencontrer de problèmes de synchronisation des données.
+> Si vous utilisez plusieurs fois des fragments de formulaire sans base dans un formulaire adaptatif, un problème de synchronisation des données entre les champs des fragments se produit. Vous pouvez utiliser une seule [fragment de formulaire (en fonction des composants principaux)](/help/forms/adaptive-form-fragments-core-components.md) qui n’est lié à aucun modèle de données de formulaire, plusieurs fois dans un formulaire sans rencontrer de problèmes de synchronisation des données.
 
 ## Mappage automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
 
