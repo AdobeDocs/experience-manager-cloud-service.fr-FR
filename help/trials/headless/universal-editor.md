@@ -4,12 +4,13 @@ description: Découvrez comment utiliser l’éditeur universel pour modifier n�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
+source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '977'
 ht-degree: 11%
 
 ---
+
 
 # Modifier en contexte avec l’éditeur universel {#editing-in-context}
 
@@ -38,11 +39,11 @@ La modification en place et dans le contexte peut souvent s’avérer préférab
 
 L’éditeur universel vous permet de modifier facilement votre texte en contexte et en place, ce qui vous permet de créer du contenu simple et intuitif.
 
-1. L’éditeur doit se charger par défaut dans **Texte** mode . Si ce n’est pas le cas, appuyez ou cliquez sur le bouton **Texte** dans le rail de mode sur le côté gauche de l’éditeur.
+1. L’éditeur doit se charger par défaut dans **Composants** mode . Si ce n’est pas le cas, appuyez ou cliquez sur le bouton **Composants** dans le rail de mode sur le côté gauche de l’éditeur.
 
-1. Appuyez ou cliquez sur le titre du dernier article pour le modifier.
+1. Appuyez ou cliquez deux fois sur le titre du dernier article pour le modifier.
 
-   ![Éditeur universel](assets/do-not-localize/ue-text-mode.png)
+   ![Éditeur universel](assets/do-not-localize/ue-component-mode.png)
 
 1. Le composant est sélectionné comme indiqué par une bordure bleue avec un onglet indiquant qu’il s’agit d’un composant de texte. Un curseur se trouve dans la bordure en attente de saisie de texte. Remplacez le texte par `Aloha Spirit in Lofoten`.
 
@@ -56,11 +57,9 @@ Universal Editor enregistre automatiquement vos modifications dans l’environne
 
 Vous pouvez également permuter des images tout en restant dans le contexte de votre contenu à l’aide de l’éditeur universel.
 
-1. Modifiez l’éditeur en **Média** en appuyant ou en cliquant sur **Média** sur le rail de mode.
+1. Reste dans **Composants** , appuyez ou cliquez sur l’image du surfeur pour la sélectionner.
 
-1. Appuyez ou cliquez sur l’image du surfeur pour la sélectionner.
-
-1. Dans le rail des composants, vous pouvez voir le détail de la ressource. Appuyez ou cliquez sur **Remplacer**.
+1. Dans le rail des composants, vous pouvez voir le détail de la ressource. Appuyez ou cliquez sur le bouton **Image en vedette** miniature.
 
    ![Sélectionner une image à modifier](assets/do-not-localize/ue-edit-media.png)
 
@@ -82,7 +81,7 @@ L’éditeur universel vous permet d’interagir avec votre contenu dans son con
 
 1. Les Readers peuvent se trouver sur différents appareils avec des proportions différentes. L’éditeur propose donc des modes d’émulation afin de visualiser la présentation de la page aux utilisateurs. Par exemple, sélectionnez l’option Appareil mobile en mode portrait.
 
-   ![Élément de menu de l’émulateur](assets/do-not-localize/ue-emulator-3.png)
+   ![Élément de menu de l’émulateur](assets/do-not-localize/ue-emulator-2.png)
 
 1. Voir la modification du contenu dans l’éditeur. L’icône de l’émulateur change également pour refléter le mode dans lequel il se trouve. Appuyez ou cliquez n’importe où en dehors du menu de l’émulateur pour le fermer et interagir avec votre contenu.
 
@@ -118,12 +117,12 @@ Pour accélérer votre expérience de création de contenu lorsque l’édition 
 
 1. Dans le rail de mode sur le côté gauche de l’éditeur, sélectionnez **Composants**. Vous pouvez ainsi sélectionner des composants de page dans l’éditeur.
 
-1. Appuyez ou cliquez sur l’une des aventures pour la sélectionner.
+1. Appuyez ou cliquez sur l’une des aventures telles que **Le camp de surf de Bali** pour la sélectionner.
 
-   * Notez le contour bleu du composant sélectionné. L’onglet doit se lire comme suit : **reference** lorsqu’un fragment de contenu est sélectionné.
+   * Notez le contour bleu du composant sélectionné. L’onglet doit afficher le nom du fragment de contenu lorsqu’un fragment de contenu est sélectionné. Dans ce cas **Le camp de surf de Bali**.
    * Etant donné que l’éditeur universel permet de sélectionner n’importe quel objet de la page, les composants qui font partie d’un fragment de contenu peuvent également être sélectionnés individuellement. Appuyez ou cliquez à l’emplacement indiqué dans l’illustration pour sélectionner l’intégralité du composant Fragment de contenu.
 
-1. Une nouvelle **Modifier** s’affiche sur le rail de mode. Appuyez ou cliquez sur le bouton **Modifier** pour ouvrir l’éditeur de fragment de contenu sur un nouvel onglet.
+1. La variable **Modifier** s’affiche sur le rail des composants. Appuyez ou cliquez sur le bouton **Modifier** pour ouvrir l’éditeur de fragment de contenu sur un nouvel onglet.
 
 ![Sélection de fragments de contenu dans l’éditeur universel](assets/do-not-localize/ue-content-fragments.png)
 
