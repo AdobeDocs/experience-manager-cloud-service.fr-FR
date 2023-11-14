@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
+source-git-commit: 5dfcf1c5484b978c1a778eb99a09421533234734
 workflow-type: tm+mt
-source-wordcount: '3211'
-ht-degree: 97%
+source-wordcount: '3179'
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ Vous pouvez également choisir d’effectuer un traitement supplémentaire sur l
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-Pour charger un ou plusieurs fichiers, vous pouvez les sélectionner sur votre bureau et les faire glisser vers le dossier de destination dans l’interface utilisateur (navigateur web). Vous pouvez également lancer le chargement à partir de l’interface utilisateur. [!DNL Experience Manager] peut prendre en charge des dossiers contenant plus de 1 000 ressources. Si vous souhaitez charger plus d’éléments dans ce dossier avec plus de 1 000 éléments existants, le téléchargement ou la création du nouveau dossier peuvent être retardés.
+Pour charger un ou plusieurs fichiers, vous pouvez les sélectionner sur votre bureau et les faire glisser vers le dossier de destination dans l’interface utilisateur (navigateur web). Vous pouvez également lancer le chargement à partir de l’interface utilisateur.
 
 >[!IMPORTANT]
 >
