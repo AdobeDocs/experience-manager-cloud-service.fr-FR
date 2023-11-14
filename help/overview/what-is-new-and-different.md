@@ -2,10 +2,10 @@
 title: Nouveautés et différences – Adobe Experience Manager as a Cloud Service
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 100%
+source-wordcount: '1897'
+ht-degree: 99%
 
 ---
 
@@ -186,7 +186,7 @@ En raison de la séparation stricte du code et du contenu, les développeurs peu
 
 * Rechercher les définitions d’index
 
-* Listes ACL et autorisations
+* ACL et autorisations
 
 * Utilisateurs et groupes d’utilisateurs du service
 
@@ -206,7 +206,7 @@ Pour assurer la rapidité des itérations et du développement, il est égalemen
 
 >[!NOTE]
 >
->Pour plus d’informations, commencez par les sections [Sauvegarde](/help/operations/backup.md), [Indexation](/help/operations/indexing.md) et [Autres tâches de maintenance](/help/operations/maintenance.md).
+>Pour plus d’informations, commencez par [restauration du contenu](/help/operations/backup.md), [Indexation](/help/operations/indexing.md), et [autres tâches de maintenance](/help/operations/maintenance.md).
 
 Avec AEM as a Cloud Service, ces opérations sont automatisées pour éviter toute interruption de service.
 

@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
+source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 92%
+source-wordcount: '1006'
+ht-degree: 98%
 
 ---
 
@@ -19,25 +19,21 @@ Découvrez l’environnement de création de Cloud Manager et comment il génèr
 Cloud Manager crée et teste votre code à l’aide d’un environnement de génération spécialisé.
 
 * L’environnement de génération est basé sur Linux, dérivé de Ubuntu 18.04.
-* Avec la variable [Version d’octobre 2023 de Cloud Manager,](/help/implementing/cloud-manager/release-notes/current.md) Les versions Java et Maven sont mises à jour de manière continue.
-   * Apache Maven 3.6.0 ou 3.8.8 est installé.
-   * Les versions Java installées sont les suivantes : Oracle JDK 8u202 et Oracle JDK 11.0.2. ou Oracle JDK 8u371 et Oracle JDK 11.0.20.
-   * Par défaut, la variable `JAVA_HOME` La variable d’environnement est définie sur `/usr/lib/jvm/jdk1.8.0_202` qui contient l’Oracle JDK 8u202 ou à `/usr/lib/jvm/jdk1.8.0_371` qui contient l’Oracle JDK 8u371. Consultez la [Autre version du JDK d’exécution de Maven](#alternate-maven-jdk-version) pour plus de détails.
+* Apache Maven 3.8.8 est installé.
+* Les versions Java installées sont Oracle JDK 8u371 et Oracle JDK 11.0.20.
+* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_371` qui contient le JDK Oracle 8u371. Consultez la [Autre version du JDK d’exécution de Maven](#alternate-maven-jdk-version) pour plus de détails.
 * D’autres packages système nécessaires sont installés.
-
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-
 * D’autres packages peuvent être installés au moment de la génération, comme décrit dans la section [Installation de packages système supplémentaires.](#installing-additional-system-packages)
 * Chaque génération a lieu dans un environnement vierge ; le conteneur de génération ne conserve aucun état entre les exécutions.
 * Maven est toujours exécuté avec les trois commandes suivantes.
-
-* `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-* `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven est configuré au niveau du système avec un fichier `settings.xml` qui inclut automatiquement le référentiel public d’artefacts Adobe à l’aide d’un profil appelé `adobe-public`. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo1.maven.org/)).
 
 >[!NOTE]

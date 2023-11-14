@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 92e7e64f25fdb2b4d8fbfe0da6da4bc81b9c96a1
+source-git-commit: a6d43e6d4138305c2f98dfb6e33946d36fb50fe1
 workflow-type: tm+mt
-source-wordcount: '4372'
-ht-degree: 93%
+source-wordcount: '4381'
+ht-degree: 92%
 
 ---
 
@@ -88,6 +88,7 @@ ht-degree: 93%
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [Notes de mise à jour de la version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)
          + [Notes de mise à jour de la version 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [Notes de mise à jour de la version 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [Notes de mise à jour de la version 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
@@ -843,6 +844,7 @@ ht-degree: 93%
          + [Utilisation de git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Utilisation de plusieurs référentiels](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configuration de l’équipe de développement des grands comptes](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Utilisation de vos propres référentiels GitHub](/help/implementing/cloud-manager/managing-code/byo-github.md)
       + [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md)
       + Pipelines CI-CD de Cloud Manager {#cicd-pipelines}
          + [Présentation](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
