@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
+source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
 workflow-type: tm+mt
-source-wordcount: '3188'
-ht-degree: 98%
+source-wordcount: '3211'
+ht-degree: 97%
 
 ---
 
@@ -384,7 +384,7 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 
 * Le chargement binaire direct est une nouvelle méthode de chargement de ressources. Il est pris en charge par défaut par les clients et fonctionnalités du produit, comme l’interface utilisateur d’[!DNL Experience Manager], [!DNL Adobe Asset Link] et l’appli de bureau [!DNL Experience Manager]. Le code personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
 
-* Adobe recommande de ne pas ajouter plus de 1 000 ressources par dossier dans [!DNL Experience Manager Assets]. Bien que vous puissiez ajouter plus de ressources à un dossier, il est possible que vous rencontriez des problèmes de performances, notamment une navigation plus lente vers ces dossiers.
+* Adobe recommande de ne pas ajouter plus de 1 000 ressources par dossier dans [!DNL Experience Manager Assets]. Si vous tentez de le faire, un message d’alerte peut s’afficher, indiquant &quot;Ce répertoire contient plus de 1 000 éléments. Les chargements et les nouvelles créations de dossiers peuvent être retardés.&quot; Bien que vous puissiez toujours ajouter d’autres ressources à un dossier, vous pouvez rencontrer des problèmes de performances, tels qu’une navigation plus lente vers ces dossiers.
 
 * Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente. Si la fonction [Statistiques sur les ressources](/help/assets/assets-insights.md) est activée pour effectuer le suivi des impressions/clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource dans [!DNL Analytics].
 
