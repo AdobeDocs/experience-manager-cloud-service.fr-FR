@@ -3,9 +3,9 @@ title: Notes de mise à jour de Cloud Manager 2023.11.0 dans Adobe Experience
 description: Consultez les notes de mise à jour de Cloud Manager 2023.11.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
+source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '750'
 ht-degree: 14%
 
 ---
@@ -31,7 +31,10 @@ La date de publication de Cloud Manager version 2023.11.0 dans AEM as a Clo
 * [Page des détails d’exécution du pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) affiche désormais toutes les étapes d’une exécution de pipeline avec celles qui n’ont pas encore commencé en grisé.
 * Sur les deux **[Activité](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** et **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** , un résumé de l’exécution du pipeline est désormais disponible lorsque vous cliquez sur un pipeline avec l’état en cours d’exécution.
 * Une nouvelle **Durée** a été ajoutée à la section [page des détails du pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) qui inclut la durée moyenne de l’étape du pipeline en fonction de la tendance historique de ce programme.
-* Sur la page d’exécution du pipeline, les étapes terminées affichent désormais la durée.
+* Sur le [page d’exécution du pipeline,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) les étapes terminées affichent désormais la durée.
+* Exécution de [réutilisation d’artefacts de build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) affiche désormais le lien vers l’exécution qui a initialement créé ces artefacts.
+* L’option à sélectionner **Échecs de mesures importants** peut maintenant être configuré pour [pipelines de qualité de code](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ainsi que .
+
 
 ## Programme d&#39;adoption précoce {#early-adoption}
 
