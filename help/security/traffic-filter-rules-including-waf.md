@@ -2,18 +2,15 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
+source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3441'
 ht-degree: 97%
 
 ---
 
 
 # Règles de filtre de trafic incluant des règles WAF {#traffic-filter-rules-including-waf-rules}
-
->[!NOTE]
->Cette fonctionnalité est désormais disponible dans les environnements de développement, avec un déploiement progressif vers les environnements intermédiaire et prod plus tard en novembre. Vous pouvez demander un accès anticipé à l’évaluation et la production en envoyant un courrier électronique à **aemcs-waf-adopter@adobe.com**.
 
 Les règles de filtre de trafic peuvent être utilisées pour bloquer ou autoriser les requêtes au niveau de la couche du réseau CDN, ce qui peut s’avérer utile dans des scénarios tels que :
 
