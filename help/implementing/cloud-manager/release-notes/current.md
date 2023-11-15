@@ -3,9 +3,9 @@ title: Notes de mise à jour de Cloud Manager 2023.11.0 dans Adobe Experience
 description: Consultez les notes de mise à jour de Cloud Manager 2023.11.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
+source-git-commit: 3a9eaa162d62cd3e674f14ba39ed7c96ad271f79
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '746'
 ht-degree: 14%
 
 ---
@@ -26,7 +26,7 @@ La date de publication de Cloud Manager version 2023.11.0 dans AEM as a Clo
 ## Nouveautés {#what-is-new}
 
 * La protection DOS (WAF-DDOS) du pare-feu d’applications web est désormais disponible à l’achat dans le cadre de vos droits as a Cloud Service et [peut être configuré en libre-service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Spécialisé [Configuration des pipelines de déploiement](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Les pipelines sont désormais disponibles pour configurer les paramètres d’environnement, les tâches de maintenance, les règles CDN, etc. en quelques minutes.
+* Spécialisé [pipelines de configuration](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) sont désormais disponibles pour configurer les paramètres d’environnement, les tâches de maintenance, les règles CDN, etc. en quelques minutes.
 * [Lors de la copie de contenu](/help/implementing/developing/tools/content-copy.md) d’un environnement supérieur à un environnement de développement, un message s’affiche maintenant pour vous avertir lorsque vous copiez des jeux de contenu volumineux, car les environnements de développement sont limités en capacité.
 * [Page des détails d’exécution du pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) affiche désormais toutes les étapes d’une exécution de pipeline avec celles qui n’ont pas encore commencé en grisé.
 * Sur les deux **[Activité](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** et **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** , un résumé de l’exécution du pipeline est désormais disponible lorsque vous cliquez sur un pipeline avec l’état en cours d’exécution.
@@ -75,9 +75,9 @@ Vous souhaitez tester le nouveau tableau de bord ? Veuillez envoyer un e-mail à
 
 ## Problèmes connus {#known-issues}
 
-Un bogue connu empêche [pipelines de déploiement de configuration](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) de passer à la production.
+Un bogue connu empêche [pipelines de configuration](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) de passer à la production.
 
-Si la variable **Mettre en pause avant le déploiement en production** est requise pour un pipeline de déploiement de configuration. Voici la solution suggérée jusqu’à ce que le bogue soit résolu.
+Si la variable **Mettre en pause avant le déploiement en production** est requise pour un pipeline de configuration. Voici la solution suggérée jusqu’à ce que le bogue soit résolu.
 
 1. Exécuter le pipeline.
 1. Testez le code dans l’environnement d’évaluation.

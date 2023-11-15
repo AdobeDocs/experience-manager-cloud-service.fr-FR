@@ -3,9 +3,9 @@ title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -132,7 +132,7 @@ Un déploiement ciblé déploie le code uniquement pour les parties sélectionn�
 >
 >* Si un pipeline de code de niveau web existe pour l’environnement sélectionné, cette sélection est désactivée.
 >* Si vous disposez déjà d’un pipeline full stack se déployant vers un environnement, la création d’un pipeline de configuration de niveau web pour le même environnement entraîne l’exclusion de la configuration de niveau web existante dans le pipeline full stack.
-> * À tout moment, il ne peut y avoir qu’un seul pipeline de déploiement de configuration par environnement.
+> * À tout moment, il ne peut y avoir qu’un seul pipeline de configuration par environnement.
 
 Les étapes de création de votre pipeline de déploiement ciblé en production sont les mêmes une fois que vous avez choisi un type de déploiement.
 
@@ -158,7 +158,7 @@ Les étapes de création de votre pipeline de déploiement ciblé en production 
    * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
    * **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié. Disponible uniquement pour les déploiements ciblés de niveau web.
 
-   ![Configuration du pipeline de déploiement](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![Configuration du pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. Cliquez sur **Enregistrer**.
 

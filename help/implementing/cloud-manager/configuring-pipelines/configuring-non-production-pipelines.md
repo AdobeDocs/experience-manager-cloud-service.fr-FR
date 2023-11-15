@@ -3,9 +3,9 @@ title: Configurer des pipelines hors production
 description: Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1288'
 ht-degree: 80%
 
 ---
@@ -121,7 +121,7 @@ Un déploiement ciblé déploie le code uniquement pour les parties sélectionn�
 >
 >* Si un pipeline de code de niveau web existe pour l’environnement sélectionné, cette sélection est désactivée.
 >* Si vous disposez déjà d’un pipeline full stack se déployant vers un environnement, la création d’un pipeline de configuration de niveau web pour le même environnement entraîne l’exclusion de la configuration de niveau web existante dans le pipeline full stack.
-> * À tout moment, il ne peut y avoir qu’un seul pipeline de déploiement de configuration par environnement.
+> * À tout moment, il ne peut y avoir qu’un seul pipeline de configuration par environnement.
 
 Les étapes de création de votre pipeline de déploiement ciblé hors production sont les mêmes une fois que vous avez choisi un type de déploiement.
 
@@ -145,7 +145,7 @@ Les étapes de création de votre pipeline de déploiement ciblé hors productio
       * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Elle trouve les branches correspondantes que vous pouvez sélectionner.
    * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
 
-   ![Configuration du pipeline de déploiement](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Configuration du pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. Cliquez sur **Enregistrer**.
 

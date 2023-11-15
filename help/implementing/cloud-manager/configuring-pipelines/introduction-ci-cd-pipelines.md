@@ -3,9 +3,9 @@ title: Pipelines CI/CD
 description: Découvrez les pipelines CI/CD de Cloud Manager et comment les utiliser pour déployer votre code efficacement.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1443'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Un pipeline hors production sert principalement à exécuter des analyses de qua
 Outre la dichotomie production et hors production, les pipelines peuvent être différenciés par le type de code qu’ils déploient.
 
 * **[Pipelines full stack](#full-stack-pipeline)** - Déploient simultanément des versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec des configurations HTTPD/Dispatcher.
-* **[Configuration des pipelines de déploiement](#config-deployment-pipeline)** - Configurez les paramètres de votre environnement AEM, les tâches de maintenance, les règles CDN, etc.
+* **[Configuration des pipelines](#config-deployment-pipeline)** - Configurez les paramètres de votre environnement AEM, les tâches de maintenance, les règles CDN, etc.
 * **[Pipelines front-end](#front-end)** - Déploient les versions de code front-end contenant une ou plusieurs applications d’interface utilisateur côté client.
 * **[Pipelines de configuration de niveau web](#web-tier-config-pipelines)** - Déploient les configurations HTTPD/Dispatcher.
 
@@ -111,15 +111,15 @@ Pour savoir comment configurer des pipelines full stack, reportez-vous aux docum
 * [Ajout d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## Configuration des pipelines de déploiement {#config-deployment-pipeline}
+## Configuration des pipelines {#config-deployment-pipeline}
 
-Avec un pipeline de déploiement de configuration, vous pouvez déployer les paramètres de configuration sur votre environnement AEM pour les tâches de maintenance, les règles CDN, etc.
+Avec un pipeline de configuration, vous pouvez déployer les paramètres de configuration sur votre environnement AEM pour les tâches de maintenance, les règles CDN, etc.
 
 Consultez le document [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
 
-### Configuration des pipelines de déploiement de configuration {#configure-config-deployment}
+### Configuration des pipelines de configuration {#configure-config-deployment}
 
-Pour savoir comment configurer les pipelines de déploiement de configuration, consultez les documents suivants :
+Pour savoir comment configurer les pipelines de configuration, consultez les documents suivants :
 
 * [Ajout d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
