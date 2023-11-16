@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
+source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 94%
+source-wordcount: '2757'
+ht-degree: 92%
 
 ---
 
@@ -556,6 +556,16 @@ Les journaux CDN sont différents des autres journaux dans la mesure où ils res
 ### Environnements cloud {#cloud-environments}
 
 Les journaux AEM as a Cloud Service pour les services cloud sont accessibles par téléchargement via l’interface de Cloud Manager ou en affichant leurs dernières lignes à l’aide de l’interface de ligne de commande Adobe I/O. Pour plus d’informations, voir la [documentation sur la journalisation de Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+
+### Journaux des régions de publication supplémentaires {#logs-for-additional-publish-regions}
+
+Si d’autres régions de publication sont activées pour un environnement particulier, les journaux de chaque région peuvent être téléchargés à partir de Cloud Manager, comme mentionné ci-dessus.
+
+Les journaux d’AEM et de Dispatcher pour les régions de publication supplémentaires spécifient la région dans les 3 premières lettres après l’ID d’environnement, comme illustré par **nld2** dans l’exemple ci-dessous, qui fait référence à une instance de publication AEM supplémentaire située aux Pays-Bas :
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+```
 
 ### SDK local {#local-sdk}
 

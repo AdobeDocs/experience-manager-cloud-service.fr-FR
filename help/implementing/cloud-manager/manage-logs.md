@@ -2,10 +2,10 @@
 title: Accéder aux journaux et les gérer
 description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 91%
+source-wordcount: '345'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +18,7 @@ Vous pouvez accéder à la liste des fichiers journaux disponibles pour l’envi
 
 ## Télécharger les journaux {#download-logs}
 
-Pour télécharger les journaux, procédez comme suit :
+Pour télécharger les journaux, procédez comme suit :
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
@@ -32,11 +32,17 @@ Pour télécharger les journaux, procédez comme suit :
 
    ![Boîte de dialogue Télécharger les journaux](assets/download-preview.png)
 
+   Dans le cas [Autres régions de publication](/help/operations/additional-publish-regions.md) sont activés pour votre environnement, vous pourrez sélectionner chaque région et télécharger ses journaux séparément, comme illustré ci-dessous :
+
+   ![Journaux de téléchargement pour d’autres régions de publication](assets/download-publish-region-logs.png)
+
 1. Une fois que vous avez sélectionné votre service, cliquez sur l’icône de téléchargement en regard du journal que vous souhaitez récupérer.
 
 Vous pouvez également accéder à vos journaux à partir de la page **Environnements**.
 
 ![Journaux depuis l’écran Environnements](assets/download-logs.png)
+
+
 
 ## Journaux via l’API {#logs-through-api}
 
