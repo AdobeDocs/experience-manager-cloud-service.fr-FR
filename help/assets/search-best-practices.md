@@ -3,9 +3,9 @@ title: Bonnes pratiques de recherche pour [!DNL Adobe Experience Manager] as a [
 description: Bonnes pratiques pour rechercher, rechercher et récupérer les métadonnées des ressources dans votre application.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2520'
 ht-degree: 11%
 
 ---
@@ -38,11 +38,11 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 
 Spécifier `classic car` comme mot-clé de recherche, puis cliquez sur Rechercher. Vous pouvez afficher les suggestions de recherche dans une liste déroulante lorsque vous saisissez le mot-clé. Les suggestions de recherche sont basées sur le contenu de l’index de recherche sur votre déploiement de Experience Manager. Si vous ne pouvez pas afficher les ressources appropriées dans le menu déroulant, appuyez sur la touche Entrée pour afficher la liste des résultats. Les résultats sont triés par pertinence, à partir des correspondances les plus proches.
 
-![Exécution de la méthode de recherche de base 1](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 Vous pouvez rendre la recherche plus précise en ajoutant le mot-clé de recherche entre guillemets doubles (&quot;&quot;). Cette recherche inclut uniquement les ressources qui contiennent ensemble les termes spécifiés. Les critères de recherche se présentent comme suit : `"classic car"`. Par conséquent, les résultats de la recherche avec les deux termes `classic` et `car` s’affichent.
 
-![Recherche d’une correspondance exacte](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 La recherche affiche des résultats similaires si vous travaillez dans le **[!UICONTROL Affichage des ressources]** ainsi que .
 
@@ -65,7 +65,7 @@ Pour réaliser ce scénario, procédez comme suit :
 Sélectionnez le dossier à partir du chemin d’accès et accédez au dossier requis si vous souhaitez effectuer des recherches dans le dossier spécifique.
 3. Sélectionnez Fichiers dans la liste déroulante pour afficher tous les fichiers avec le mot-clé `classic car`.
 
-![Recherche à l’aide de fichiers et de dossiers](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ Exécutez les étapes suivantes dans **[!UICONTROL Vue Admin]**:
 1. Sélectionner [!UICONTROL PDF].
 1. Accédez à [!UICONTROL État] > [!UICONTROL Publier] > [!UICONTROL Non publié].
 
-![Exemple de filtre 2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 Exécutez les étapes suivantes dans **[!UICONTROL Affichage des ressources]**:
 
@@ -180,7 +180,7 @@ Lorsque vous n’êtes pas certain du titre ou de la méta-description d’une r
 1. Accédez à Filtres. Sous [!UICONTROL Type de fichier], développer [!UICONTROL Images] et sélectionnez [!UICONTROL Compatible web]
 1. Désélectionnez PNG.
 
-![Rechercher toutes les images, à l’exception des jeep](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 Pour rechercher des ressources à l’aide du scénario mentionné dans **[!UICONTROL Affichage des ressources]**, procédez comme suit :
 
@@ -203,7 +203,7 @@ Pour effectuer une recherche dans le scénario 6 :
 2. Accédez au panneau Filtres et sélectionnez Documents sous Type de fichier.
 3. Affinez votre recherche à l’aide du caractère générique astérisque. Type `"classic car"` pour rechercher toutes les ressources qui contiennent le `classic car` mot-clé.
 
-![Scénario 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 Le scénario 6 ne peut pas s’exécuter dans **[!UICONTROL Affichage des ressources]** car il ne prend pas en charge l’utilisation des caractères génériques.
 
@@ -213,7 +213,7 @@ Pour effectuer une recherche dans le scénario 7 :
 
 Saisissez le `car - classic` dans la barre de recherche. Accédez au panneau Filtres et sélectionnez Documents sous Type de fichier. L’ordre de priorité de la recherche est basé sur les éléments suivants : Priorité 1 : Priorité des métadonnées 2 : Balises intelligentes
 
-![Scénario 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 Le scénario 7 ne peut pas s’exécuter dans **[!UICONTROL Affichage des ressources]** car il ne prend pas en charge l’utilisation des caractères génériques.
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 Vous pouvez capturer un critère spécifique à l’aide de différents filtres de recherche. Tag est un mot-clé attribué à une ressource afin de l’identifier parmi un grand nombre de ressources. Par exemple, dans ce scénario, recherchez des ressources avec *jeep* des balises qu’il contient. Pour ce faire, saisissez `tags:jeep` dans la barre de recherche. Seules les ressources qui répondent à ces critères sont répertoriées dans les résultats de recherche.
 
-![Recherche à l’aide de balises](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 La recherche affiche des résultats similaires si vous travaillez dans le **[!UICONTROL Affichage des ressources]** ainsi que .
 
