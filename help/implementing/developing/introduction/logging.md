@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 89%
+source-wordcount: '2683'
+ht-degree: 94%
 
 ---
 
@@ -523,7 +523,8 @@ Notez que la fonction de transfert Splunk ne prend pas encore en charge les jour
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -533,20 +534,22 @@ Les journaux CDN sont différents des autres journaux dans la mesure où ils res
 
 | **Nom du champ** | **Description** |
 |---|---|
-| *timestamp* | Heure à laquelle la demande a commencé, après la fin de TLS |
+| *timestamp* | Heure à laquelle la requête a commencé, après la fin de TLS |
 | *ttfb* | Abréviation de *Time To First Byte*. Intervalle entre le démarrage de la requête et le début de la diffusion du corps de la réponse. |
-| *cli_ip* | Adresse IP du client. |
-| *cli_country* | Deux lettres [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1) code de pays alpha-2 pour le pays client. |
-| *rid* | La valeur de l’en-tête de requête utilisé pour identifier la requête de manière unique. |
-| *req_ua* | L’agent utilisateur responsable de l’exécution d’une requête HTTP donnée. |
-| *host* | Autorité à laquelle la demande est destinée. |
+| *cli_ip* | Adresse IP du client ou de la cliente. |
+| *cli_country* | Code de pays alpha-2 à deux lettres [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1) pour le pays du client ou de la cliente. |
+| *rid* | Valeur de l’en-tête de requête utilisé pour identifier la requête de manière unique. |
+| *req_ua* | Agent utilisateur responsable de l’exécution d’une requête HTTP donnée. |
+| *host* | Autorité à laquelle la requête est destinée. |
 | *url* | Chemin d’accès complet, y compris les paramètres de requête. |
-| *method* | méthode HTTP envoyée par le client, telle que &quot;GET&quot; ou &quot;POST&quot;. |
+| *method* | Méthode HTTP envoyée par le client ou la cliente, telle que GET ou POST. |
 | *res_ctype* | Type de contenu utilisé pour indiquer le type de média d’origine de la ressource. |
 | *cache* | État du cache. Les valeurs possibles sont HIT, MISS ou PASS |
-| *status* | Le code d’état HTTP sous la forme d’une valeur entière. |
-| *res_age* | Durée (en secondes) pendant laquelle une réponse a été mise en cache (dans tous les noeuds). |
-| *pop* | Centre de données du serveur de cache CDN. |
+| *status* | Code d’état HTTP sous la forme d’une valeur d’entier. |
+| *res_age* | Durée (en secondes) pendant laquelle une réponse a été mise en cache (dans tous les nœuds). |
+| *pop* | Centre de données du serveur de cache de réseau CDN. |
+| *rules* | Les noms de toute correspondance [règles de filtrage de trafic](/help/security/traffic-filter-rules-including-waf.md) et les indicateurs WAF, indiquant également si la correspondance a entraîné un bloc. Vide si aucune règle ne correspondait. |
+
 
 ## Comment accéder aux journaux {#how-to-access-logs}
 
