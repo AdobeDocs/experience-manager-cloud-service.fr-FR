@@ -3,9 +3,9 @@ title: Pipelines CI/CD
 description: Découvrez les pipelines CI/CD de Cloud Manager et comment les utiliser pour déployer votre code efficacement.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1423'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Un pipeline hors production sert principalement à exécuter des analyses de qua
 Outre la dichotomie production et hors production, les pipelines peuvent être différenciés par le type de code qu’ils déploient.
 
 * **[Pipelines full stack](#full-stack-pipeline)** - Déploient simultanément des versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec des configurations HTTPD/Dispatcher.
-* **[Configuration des pipelines](#config-deployment-pipeline)** - Configurez les paramètres de votre environnement AEM, les tâches de maintenance, les règles CDN, etc.
+* **[Configuration des pipelines](#config-deployment-pipeline)** - Configurez et déployez les règles de filtrage du trafic, y compris les règles WAF, en quelques minutes.
 * **[Pipelines front-end](#front-end)** - Déploient les versions de code front-end contenant une ou plusieurs applications d’interface utilisateur côté client.
 * **[Pipelines de configuration de niveau web](#web-tier-config-pipelines)** - Déploient les configurations HTTPD/Dispatcher.
 
@@ -113,7 +113,7 @@ Pour savoir comment configurer des pipelines full stack, reportez-vous aux docum
 
 ## Configuration des pipelines {#config-deployment-pipeline}
 
-Avec un pipeline de configuration, vous pouvez déployer les paramètres de configuration sur votre environnement AEM pour les tâches de maintenance, les règles CDN, etc.
+Avec un pipeline de configuration, vous pouvez configurer et déployer des règles de filtrage du trafic, y compris des règles WAF, en quelques minutes.
 
 Consultez le document [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
 
@@ -129,10 +129,6 @@ Pour savoir comment configurer les pipelines de configuration, consultez les doc
 Un code front-end correspond à tout code qui est servi en tant que fichier statique. Il est distinct du code de l’interface utilisateur fourni par AEM et peut inclure des thèmes de site, des SPA définis par le client ou la clente, des SPA ainsi que d’autres solutions.
 
 Les pipelines front-end aident vos équipes à rationaliser votre processus de conception et de développement en activant le déploiement accéléré de code front-end asynchrone du développement principal. Ce pipeline dédié déploie le JavaScript et le CSS vers le calque de distribution AEM en tant que thème, ce qui entraîne une nouvelle version du thème qui peut être référencée à partir des pages fournies par AEM.
-
->[!IMPORTANT]
->
->Vous devez être sur une version `2021.10.5933.20211012T154732Z ` ou ultérieure d’AEM avec AEM Sites activé pour utiliser les pipelines front-end.
 
 >[!NOTE]
 >
