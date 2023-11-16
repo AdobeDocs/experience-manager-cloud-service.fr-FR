@@ -2,10 +2,10 @@
 title: Accéder aux référentiels
 description: Découvrez comment accéder à votre référentiel Git et comment le gérer à l’aide de la gestion de compte Git en libre-service à partir de Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
-workflow-type: ht
-source-wordcount: '232'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager facilite la récupération des informations de votre référentie
 
    ![Bouton Accéder aux informations sur le référentiel de la vignette d’environnements](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Cliquez sur le bouton **Afficher les informations sur le référentiel** pour ouvrir une boîte de dialogue affichant les éléments suivants :
+1. Cliquez sur le bouton **Afficher les informations sur le référentiel** pour ouvrir une boîte de dialogue afin d’afficher :
 
    * L’URL vers le référentiel Git de Cloud Manager.
    * Le nom d’utilisateur Git.

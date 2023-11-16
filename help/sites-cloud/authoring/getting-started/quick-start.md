@@ -2,10 +2,10 @@
 title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 98%
+source-wordcount: '1561'
+ht-degree: 90%
 
 ---
 
@@ -93,11 +93,11 @@ La sélection d’une page dépend de la vue utilisée dans la console :
 
 1. Mode Colonnes :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
+   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
 
 1. Vue Liste :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
+   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
 
 1. Mode Carte :
 
@@ -168,7 +168,7 @@ Pour modifier votre page :
 
    >[!NOTE]
    >
-   >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
+   >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez sur une autre page qui était déjà ouverte avant l’opération de couper/copier, une actualisation de page est nécessaire pour cette page.
 
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
@@ -258,7 +258,7 @@ Ces actions peuvent toutes être déclenchées en suivant ces étapes :
 
    * [Déplacer](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page) :
 
-      * L’assistant s’ouvre pour collecter les informations nécessaires au déplacement de la page. Suivez les instructions à l’écran.
+      * L’assistant s’ouvre pour collecter les informations nécessaires au déplacement de la page. Suivez les instructions affichées à l’écran.
 
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) :
 
@@ -292,7 +292,7 @@ Un [accès rapide aux références](/help/sites-cloud/authoring/fundamentals/env
 
    ![Mode Références](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Appuyez ou cliquez sur le type de référence requis pour afficher d’autres détails et (le cas échéant) accomplir d’autres actions.
+1. Appuyez/cliquez sur le type de référence requis pour afficher plus de détails et (le cas échéant) prendre d’autres mesures.
 
 ### Création d’une version d’une page {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ Pour créer une [version](/help/sites-cloud/authoring/features/page-versions.md)
 
    ![Option du mode Chronologie](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Appuyez ou cliquez sur les points de suspension en bas à droite de la colonne Chronologie pour afficher d’autres boutons, dont **Enregistrer comme version**.
+1. Appuyez/cliquez sur les points de suspension en bas à droite de la colonne Frise chronologique pour afficher d’autres boutons, notamment **Enregistrer comme version**.
 
    ![Mode Chronologie](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ Le même mécanisme de base est appliqué pour restaurer ou pour comparer des ve
 
    Si une version de votre page a déjà été enregistrée, elle est répertoriée dans la chronologie.
 
-1. Appuyez/cliquez sur la version à restaurer, ce qui permet d’afficher d’autres boutons d’action :
+1. Appuyez/cliquez sur la version à restaurer, ce qui permet d’afficher d’autres boutons d’action :
 
    * **Revenir à cette version**
 

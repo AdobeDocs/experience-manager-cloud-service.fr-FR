@@ -2,10 +2,10 @@
 title: Mise en page réactive
 description: AEM permet de créer une mise en page réactive pour vos pages.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 92%
+source-wordcount: '1734'
+ht-degree: 86%
 
 ---
 
@@ -49,7 +49,7 @@ En fonction de votre projet, le conteneur de mise en page peut être utilisé en
 
 >[!TIP]
 >
->Adobe propose une [documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) sur la mise en page réactive. Celle-ci peut servir de référence et être distribuée aux développeurs d’applications frontales pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lorsqu’ils créent des maquettes HTML statiques pour un site AEM en préparation.
+>Adobe propose une [documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) sur la mise en page réactive. Celle-ci peut servir de référence et être distribuée aux équipes de développement d’applications front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lors de la création de maquettes HTML statiques pour un site AEM en préparation.
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
 
    * utiliser l’icône Sélectionner un périphérique et sélectionner l’appareil dans la liste déroulante ;
-   * appuyer ou cliquer sur l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
+   * Appuyez/cliquez sur l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
 
    ![Menu déroulant Sélectionner un appareil](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -120,7 +120,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    ![Le pli](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * Le pli peut également être considéré comme un saut de ligne de page (à ne pas confondre avec les [points d’arrêt](#layout-definitions-device-emulation-and-breakpoints)) pour le contenu. Il est affiché à des fins pratiques pour indiquer la partie du contenu que l’utilisateur ou l’utilisatrice verra sur l’appareil avant de faire défiler l’écran.
+   * Le pli peut également être considéré comme un saut de ligne de page (à ne pas confondre avec les [points d’arrêt](#layout-definitions-device-emulation-and-breakpoints)) pour le contenu. Il est affiché à des fins pratiques pour indiquer la partie du contenu que l’utilisateur voit sur l’appareil avant de faire défiler l’écran.
    * La ligne du pli ne s’affiche pas si la hauteur de l’appareil émulé est supérieure à la taille de l’écran.
    * Le pli est affiché pour faciliter le travail de l’auteur et n’apparaît pas sur la page publiée.
 
@@ -136,7 +136,7 @@ Un **conteneur de mise en page** est un système de paragraphes qui présente le
 >
 >S’il n’est pas encore disponible, le **conteneur de mise en page** doit être explicitement activé pour un système de paragraphes ou une page. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). De là, vous pouvez le faire glisser vers l’emplacement souhaité sur la page, après lequel vous verrez l’espace réservé **Faire glisser les composants ici**.
+1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). À partir de là, vous pouvez le faire glisser vers l’emplacement requis sur la page, après lequel vous pouvez voir la variable **Faites glisser les composants ici** espace réservé.
 1. Vous pouvez ensuite ajouter des composants au conteneur de mise en page, qui contiendront le contenu proprement dit :
 
    ![Conteneur de mise en page](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -202,7 +202,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
   ![Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils s’affiche pour ce mode.
+* Dans **Disposition** vous pouvez appuyer/cliquer sur le mode **Faire glisser des composants ici** pour sélectionner le composant entier. La barre d’outils s’affiche pour ce mode.
 
   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 

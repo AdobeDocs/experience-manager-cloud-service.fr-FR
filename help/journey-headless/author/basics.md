@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 84%
+source-wordcount: '1727'
+ht-degree: 83%
 
 ---
 
@@ -135,7 +135,7 @@ Pour ce faire, créez une série de dossiers dans la section **Fichiers** de la 
 
 ![Option Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Une boîte de dialogue s’ouvre dans laquelle vous pouvez saisir les informations ; confirmez ensuite en sélectionnant **Créer** :
+Une boîte de dialogue s’ouvre, dans laquelle vous pouvez saisir les détails, puis confirmer avec **Créer**:
 
 ![Boîte de dialogue Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s
 
 Par exemple, un fragment peut :
 
-* Nécessite plusieurs informations, dont certaines avec un type spécifique. Pour le contenu découplé, les références sont essentielles (vous en apprendrez plus sur votre parcours ultérieurement).
+* Nécessite plusieurs informations, dont certaines avec un type spécifique. Pour le contenu sans interface utilisateur, les références sont essentielles (vous en apprendrez plus loin dans votre parcours).
 
 * Permet d&#39;écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
 

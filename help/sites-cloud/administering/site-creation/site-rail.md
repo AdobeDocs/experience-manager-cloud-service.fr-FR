@@ -4,10 +4,10 @@ description: Découvrez les puissantes fonctionnalités du rail Site qui vous ai
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 97%
+source-wordcount: '595'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Le rail Site permet de gérer les informations relatives aux thèmes et aux mod�
 
 >[!TIP]
 >
->Consultez la section [Parcours de création de site rapide](/help/journey-sites/quick-site/overview.md) pour vous familiariser avec l’outil de création rapide de site et le pipeline frontal afin de personnaliser facilement le thème de votre site.
+>Consultez la section [Parcours de création de site rapide](/help/journey-sites/quick-site/overview.md) pour vous familiariser avec l’outil de création rapide de site et le pipeline front-end afin de personnaliser facilement le thème de votre site.
 
 ## Télécharger les sources de thème {#downloading-theme-sources}
 

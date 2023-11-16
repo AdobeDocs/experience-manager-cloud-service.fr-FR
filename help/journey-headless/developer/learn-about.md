@@ -2,10 +2,10 @@
 title: En savoir plus sur le développement CMS découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez la technologie découplée et pourquoi l’utiliser.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 98%
+source-wordcount: '1636'
+ht-degree: 93%
 
 ---
 
@@ -106,7 +106,7 @@ Il est impossible de prédire l’avenir, mais le mode découplé apporte l’ag
 
 ## AEM et mode découplé {#aem-and-headless}
 
-Au fur et à mesure de ce parcours de développement, vous allez découvrir comment AEM prend en charge la diffusion en mode découplé, mais aussi ses fonctionnalités full stack de diffusion.
+Au fur et à mesure que vous continuez à parcourir ce parcours de développement, vous découvrez comment AEM prend en charge la diffusion sans interface en même temps que ses fonctionnalités de remise en pile complète.
 
 En tant que leader du secteur de la gestion de l’expérience digitale, Adobe sait que la solution idéale pour répondre aux défis du monde réel auxquels les créateurs d’expériences sont confrontés est rarement tranchée. AEM ne prend donc pas seulement en charge les deux modèles, mais permet également leur association hybride en toute transparence, alliant ainsi les avantages des modes Découplé et Full stack pour vous aider à mieux diffuser votre contenu vers les consommateurs, où qu’ils se trouvent.
 
@@ -120,7 +120,7 @@ Merci de vous être engagé sur ce parcours découplé AEM ! Maintenant que vou
 * comprendre pourquoi et quand le mode découplé est nécessaire ;
 * savoir de manière plus large comment les concepts de découplage sont utilisés et interagissent.
 
-Appuyez-vous sur ces connaissances et continuez votre parcours découplé AEM en consultant le document [Prise en main d’AEM découplé as a Cloud Service](getting-started.md). Vous y découvrirez comment configurer les outils nécessaires et de quelle manière réfléchir à l’utilisation d’un contenu découplé, ainsi que les conditions préalables qui s’y rapportent.
+Tirez parti de ces connaissances et continuez votre parcours sans tête AEM en consultant le document. [Prise en main d’AEM sans affichage as a Cloud Service](getting-started.md) où vous apprenez à configurer les outils nécessaires et à commencer à réfléchir à la manière dont AEM aborde la diffusion de contenu sans interface et ses conditions préalables.
 
 ## Ressources supplémentaires {#additional-resources}
 

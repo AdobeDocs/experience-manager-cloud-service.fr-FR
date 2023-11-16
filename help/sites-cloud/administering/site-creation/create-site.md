@@ -4,10 +4,10 @@ description: Découvrez comment utiliser AEM pour créer un site à l’aide de 
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '775'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '774'
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ L’utilisation d’un modèle pour créer un site est simple.
 
    ![Création d’un site à partir d’un modèle](../assets/create-site-from-template.png)
 
-1. Dans l’assistant Créer un site, appuyez ou cliquez sur un modèle existant dans le panneau de gauche ou sur **Importer** en haut de la colonne gauche pour importer un nouveau modèle.
+1. Dans l’assistant Créer un site , appuyez ou cliquez sur un modèle existant dans le panneau de gauche ou sur **Importer** en haut de la colonne gauche pour importer un nouveau modèle.
 
    ![Assistant de création de site](../assets/site-creation-wizard.png)
 

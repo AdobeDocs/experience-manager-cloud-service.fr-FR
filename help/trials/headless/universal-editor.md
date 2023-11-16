@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’éditeur universel pour modifier n�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '969'
 ht-degree: 11%
 
 ---
@@ -79,7 +79,7 @@ L’éditeur universel vous permet d’interagir avec votre contenu dans son con
 
    ![Élément de menu de l’émulateur](assets/do-not-localize/ue-emulator-1.png)
 
-1. Les Readers peuvent se trouver sur différents appareils avec des proportions différentes. L’éditeur propose donc des modes d’émulation afin de visualiser la présentation de la page aux utilisateurs. Par exemple, sélectionnez l’option Appareil mobile en mode portrait.
+1. Les Readers peuvent se trouver sur différents appareils avec des proportions différentes. L’éditeur propose donc des modes d’émulation pour voir comment la page sera présentée aux utilisateurs. Par exemple, sélectionnez l’option Appareil mobile en mode portrait.
 
    ![Élément de menu de l’émulateur](assets/do-not-localize/ue-emulator-2.png)
 
@@ -87,7 +87,7 @@ L’éditeur universel vous permet d’interagir avec votre contenu dans son con
 
 1. Revenez à l’émulateur en mode bureau.
 
-Vous pouvez également spécifier des dimensions exactes pour l’émulateur et faire pivoter l’appareil émulé afin d’afficher votre contenu sur n’importe quel appareil cible potentiel.
+Vous pouvez également spécifier des dimensions exactes pour l’émulateur et faire pivoter l’appareil émulé pour afficher votre contenu sur n’importe quel appareil cible potentiel.
 
 ## Prévisualisation et publication {#preview}
 

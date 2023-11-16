@@ -2,10 +2,10 @@
 title: Modélisation de contenu pour AEM en tant que CMS découplé - Introduction
 description: Une introduction de l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service dans un CMS découplé pour modéliser du contenu pour votre projet.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 03cf688168106f71f2df2511782be7c1f3cc0dae
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 98%
+source-wordcount: '748'
+ht-degree: 95%
 
 ---
 
@@ -66,7 +66,7 @@ Pour AEM, en tant qu’architecte de contenu, vous exécuterez la modélisation 
 
 En matière de développement, il s’agit d’un détail, mais ça pourrait vous intéresser, pour vous fournir une vue globale.
 
-Une fois que vous avez créé les modèles de fragment de contenu et que vos auteurs et autrices les ont utilisés pour générer le contenu, les applications découplées doivent accéder à ce contenu.
+Une fois que vous avez créé les modèles de fragment de contenu et que vos auteurs les ont utilisés pour générer le contenu, les applications sans interface utilisateur doivent accéder à ce contenu.
 
 Grâce à Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez accéder de manière sélective à vos fragments de contenu, à l’aide de l’API AEM GraphQL, pour renvoyer uniquement le contenu nécessaire. Grâce à l’API, un développeur peut formuler des requêtes qui sélectionnent un contenu spécifique. Ce processus de sélection est basé sur *vos* modèles de fragment de contenu.
 

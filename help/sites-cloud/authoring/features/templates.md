@@ -2,9 +2,9 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée. Grâce à l’éditeur de modèles, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs et développeuses.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '4570'
+source-wordcount: '4567'
 ht-degree: 97%
 
 ---
@@ -607,7 +607,7 @@ Vous pouvez appliquer une politique de contenu au modèle ou aux pages créées.
 
 >[!NOTE]
 >
->Bien que le créateur de modèles puisse indiquer la politique de page dans le modèle, il doit se procurer les détails relatifs aux bibliothèques clientes concernées auprès du développeur.
+>Bien que l’auteur du modèle puisse spécifier la stratégie de page sur le modèle, il doit obtenir des informations sur les bibliothèques clientes appropriées de la part du développeur.
 
 ### Modification d’un modèle - Propriétés de page initiales - Créateur {#editing-a-template-initial-page-properties-author}
 

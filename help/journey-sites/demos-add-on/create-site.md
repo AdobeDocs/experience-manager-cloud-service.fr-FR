@@ -2,10 +2,10 @@
 title: Créer un site de démonstration
 description: Créez un site de démonstration dans AEM basé sur une bibliothèque de modèles préconfigurés.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ Ce document vous aide à comprendre comment créer un nouveau site à partir des
 
 Une fois que le pipeline a déployé le module complémentaire de démonstration de référence, vous pouvez accéder à l’environnement de création AEM pour créer des sites de démonstration basés sur le contenu du module complémentaire.
 
-1. Dans la page de présentation du programme de Cloud Manager, appuyez ou cliquez sur le lien vers l’environnement de création AEM.
+1. Dans la page de présentation du programme de Cloud Manager, appuyez ou cliquez sur le lien vers l’environnement de création AEM.
 
    ![Accès à l’environnement de création](assets/access-author.png)
 
@@ -104,7 +104,7 @@ Maintenant que vous avez terminé cette partie du parcours de module complément
 Vous pouvez désormais tester les fonctionnalités d’AEM à l’aide du contenu du module complémentaire. Vous disposez de deux options pour poursuivre votre parcours :
 
 * Si vous souhaitez effectuer une démonstration complète et tester le contenu AEM Screens, assurez-vous d’avoir déployé un site en fonction du **modèle de site We.Cafe** comme décrit précédemment et continuez pour [Activer AEM Screens pour votre site de démonstration.](screens.md)
-* Si vous utilisez uniquement pour la démonstration du contenu de Sites, poursuivez sur [Gérer vos sites de démonstration,](manage.md) où vous découvrirez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
+* Si vous utilisez uniquement pour la démonstration du contenu de Sites, continuez à [Gérer vos sites de démonstration,](manage.md) où vous découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 
 ## Ressources supplémentaires {#additional-resources}
 

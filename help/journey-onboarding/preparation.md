@@ -2,10 +2,10 @@
 title: Préparation à l’intégration
 description: Avant que le processus d’intégration ne commence, l’administrateur système doit comprendre un certain nombre d’étapes préparatoires avant de se connecter au système.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 96%
 
 ---
 
@@ -88,4 +88,4 @@ Vous devriez maintenant comprendre les éléments suivants :
 * L’impact de ce contrat sur le processus d’intégration.
 * Comment préparer votre appel d’intégration.
 
-Maintenant que vous connaissez ces étapes de préparation, vous êtes presque prêt à vous connecter vous-même au système. Mais vous aurez tout d’abord besoin d’un bref aperçu de la structure d’AEM as a Cloud Service du point de vue de l’administrateur système et de découvrir une terminologie importante. Passez à la partie suivante du parcours, [Terminologie d’AEM as a Cloud Service](terminology.md).
+Maintenant que vous connaissez ces étapes de préparation, vous êtes presque prêt à vous connecter vous-même au système. Mais vous avez d’abord besoin d’un bref aperçu de la structure d’AEM as a Cloud Service du point de vue de l’administrateur système et de découvrir une terminologie importante. Passez à la partie suivante du parcours, [Terminologie d’AEM as a Cloud Service](terminology.md).

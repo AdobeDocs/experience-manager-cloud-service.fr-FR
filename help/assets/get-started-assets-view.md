@@ -3,10 +3,10 @@ title: Prise en main d’ [!DNL Assets View]
 description: Accès, connexion, cas d’utilisation pris en charge et problèmes connus dans [!DNL Assets View].
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: ht
-source-wordcount: '345'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 95%
 
 ---
 
@@ -29,9 +29,9 @@ Pour utiliser [!DNL Assets View], connectez-vous à l’adresse [https://experie
 
 Voir [Accès à la vue Assets](/help/assets/assets-view-introduction.md#how-to-access-assets-view) pour obtenir des instructions détaillées sur l’accès à la vue Assets.
 
-## Configuration d’[!DNL Assets View] {#configuration}
+## Configuration de [!DNL Assets View] {#configuration}
 
-Pour ouvrir les préférences, cliquez sur votre avatar dans le coin supérieur droit de l’interface utilisateur. Vous pouvez basculer entre les thèmes clairs et sombres dans les préférences de la solution.
+Pour ouvrir les préférences, cliquez sur l’avatar dans le coin supérieur droit de l’interface utilisateur. Vous pouvez basculer entre les thèmes clairs et sombres dans les préférences de la solution.
 
 Si vous faites partie de différentes organisations, vous pouvez également changer d’organisation et accéder à vos comptes de différentes organisations.
 

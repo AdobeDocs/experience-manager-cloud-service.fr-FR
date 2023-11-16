@@ -4,10 +4,10 @@ description: Utilisez le composant Tableau pour ajouter des tableaux à un formu
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 95%
+source-wordcount: '2494'
+ht-degree: 92%
 
 ---
 
@@ -77,7 +77,7 @@ Double-cliquez sur la ligne pour configurer les propriétés d’une ligne, tell
 
 #### Ajouter ou supprimer une colonne
 
-Pour ajouter ou supprimer une colonne, cliquez sur la cellule de texte dans la section d’en-tête. Une barre d’outils s’ouvre avec les options d’ajout ou de suppression d’une colonne :
+Pour ajouter ou supprimer une colonne, cliquez sur la cellule de texte dans la section d’en-tête. Une barre d’outils s’ouvre avec les options d’ajout ou de suppression d’une colonne :
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -155,7 +155,7 @@ Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou l
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes dans le tableau.
 1. Cliquez sur **Terminé**.
 
-Lors de l’exécution ou de la prévisualisation, vous verrez les boutons **+** et ![Bouton de suppression](/help/forms/assets/Smock_Delete.svg) pour ajouter ou supprimer une rangée.
+Au moment de l’exécution ou de l’aperçu, vous voyez **+** et ![Bouton Supprimer](/help/forms/assets/Smock_Delete.svg) pour ajouter ou supprimer une rangée.
 
 ![ajout-suppression-dynamique-de lignes](assets/add-delete-layout.png)
 

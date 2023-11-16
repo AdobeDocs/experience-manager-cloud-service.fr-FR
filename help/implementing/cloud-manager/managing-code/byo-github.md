@@ -2,9 +2,9 @@
 title: Utilisation de vos propres référentiels GitHub dans Cloud Manager
 description: Découvrez comment configurer Cloud Manager pour utiliser vos propres référentiels GitHub.
 feature: Release Information
-source-git-commit: 8d689ea08ab7caf9cb0fa84df23d7e0fd906f379
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ La configuration se compose de deux étapes principales :
 
 ### Ajouter un référentiel {#add-repo}
 
-1. Dans Cloud Manager, à partir du **Aperçu du programme** page, appuyez ou cliquez sur **Référentiels** pour basculer vers l’onglet **Référentiels** et cliquez sur **Ajouter un référentiel**.
+1. Dans Cloud Manager, à partir du **Aperçu du programme** , appuyez ou cliquez sur l’icône **Référentiels** pour basculer vers l’onglet **Référentiels** page et clic **Ajouter un référentiel**.
 
 1. Dans le **Ajouter un référentiel** boîte de dialogue, sélectionnez **Référentiel privé** comme type de référentiel.
 
@@ -65,7 +65,7 @@ Cloud Manager connaît désormais votre référentiel GitHub, mais il doit toujo
 
 1. De retour dans le **Validation de la propriété du référentiel privé** , Cloud Manager a généré le contenu du fichier privé dans la variable **Contenu du fichier secret** champ . Copiez le contenu de ce champ.
 
-   * Le contenu du fichier secret ne s&#39;affichera qu&#39;une seule fois. Si vous ne copiez pas le contenu avant de fermer cette fenêtre, vous devez régénérer le secret.
+   * Le contenu du fichier secret ne s&#39;affichera qu&#39;une seule fois. Si vous ne copiez pas le contenu avant de fermer cette fenêtre, régénérez le secret.
 
    ![Copie du contenu du fichier secret](/help/implementing/cloud-manager/assets/repos/new-secret.png)
 

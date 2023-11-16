@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Découvrez comment définir les propriétés requises pour gérer une page dans AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2279'
-ht-degree: 98%
+source-wordcount: '2280'
+ht-degree: 96%
 
 ---
 
@@ -184,7 +184,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    * **Marque** – Définit une [marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
   >[!NOTE]
-  >Cette option nécessite que le compte utilisateur figure dans le groupe `Target Administrators`.
+  >Cette option nécessite que le compte d’utilisateur figure dans le groupe `Target Administrators`.
 
 ### Autorisations {#permissions}
 
@@ -225,9 +225,9 @@ Cet onglet n’est visible que pour les pages configurées en tant que Live Copi
    * **Hériter des configurations de déploiement du parent** – Si cette option est cochée, la configuration de déploiement est héritée du parent de la page.
    * **Choisir la configuration de déploiement** – Définit les circonstances dans lesquelles les modifications sont propagées à partir du plan directeur et disponibles uniquement lorsque **Hériter des configurations de déploiement du parent** n’est pas sélectionné
 
-### Aperçu {#preview}
+### Prévisualisation {#preview}
 
-Lorsqu’un environnement de prévisualisation est activé, les éléments suivants s’affichent :
+Lorsqu’un environnement de prévisualisation est activé, les éléments suivants s’affichent :
 
 * URL de prévisualisation : URL utilisée pour accéder au contenu dans l’environnement de prévisualisation.
 
@@ -286,7 +286,7 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 
 1. Ouvrez la page dont vous souhaitez modifier les propriétés.
 1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu de sélection :
-1. Sélectionnez **Ouvrir les propriétés**. Une boîte de dialogue s’ouvre alors pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
+1. Sélectionner **Ouvrir les propriétés** et une boîte de dialogue s’ouvre pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
    * **Annuler**
    * **Enregistrez et fermez**
 1. Utilisez le bouton **Enregistrer et fermer** pour enregistrer les modifications.

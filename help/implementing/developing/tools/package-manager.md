@@ -4,9 +4,9 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3769'
 ht-degree: 98%
 
 ---
@@ -149,7 +149,7 @@ Si le package a été modifié ou n’a jamais été conçu, le statut est prés
 
 ## Paramètres du package {#package-settings}
 
-Un package est essentiellement un ensemble de filtres et les données du référentiel basées sur ces filtres. Dans l’interface utilisateur du gestionnaire de packages, vous pouvez cliquer sur un package, puis sur le bouton **Modifier** pour afficher les détails d’un package, y compris les paramètres suivants.
+Un package est essentiellement un ensemble de filtres et les données du référentiel basées sur ces filtres. À l’aide de l’interface utilisateur du gestionnaire de modules, vous pouvez cliquer sur un module, puis sur **Modifier** pour afficher les détails d’un package, y compris les paramètres suivants.
 
 * [Paramètres généraux](#general-settings)
 * [Filtres de package](#package-filters)
@@ -224,7 +224,7 @@ Les filtres de package sont le plus souvent définis lors de la première [créa
 | URL | Adresse URL du fournisseur | `https://wknd.site` |
 | Lien | Lien spécifique au package vers une page de fournisseur | `https://wknd.site/package/` |
 | Requiert | Définit s’il existe des restrictions lors de l’installation du package. | **Administrateur** - Le package ne doit être installé qu’avec des privilèges Administrateur <br>**Redémarrage** - AEM doit être redémarré après l’installation du package |
-| Traitement AC | Indique comment les informations de contrôle d’accès définies dans le package sont traitées lors de son importation | **Ignorer** - Les listes ACL dans le référentiel sont conservées <br>**Remplacer** - Les listes ACL dans le référentiel sont remplacées <br>**Fusionner** - Les deux ensembles de listes ACL sont fusionnés <br>**FusionnerConserver** - Le contrôle dʼaccès dans le contenu est fusionné avec celui fourni avec le module en ajoutant les entrées de contrôle dʼaccès des principaux non présentes dans le contenu <br>**Effacer** - Les listes ACL sont effacées |
+| Traitement AC | Indique comment les informations de contrôle d’accès définies dans le package sont traitées lors de son importation | **Ignorer** - Les ACL dans le référentiel sont conservées <br>**Remplacer** - Les ACL dans le référentiel sont remplacées <br>**Fusionner** - Les deux ensembles de ACL sont fusionnés <br>**FusionnerConserver** - Le contrôle dʼaccès dans le contenu est fusionné avec celui fourni avec le module en ajoutant les entrées de contrôle dʼaccès des principaux non présentes dans le contenu <br>**Effacer** - Les ACL sont effacées |
 
 ### Captures d’écran des packages {#package-screenshots}
 
@@ -389,7 +389,7 @@ Le gestionnaire de packages peut effectuer les validations suivantes :
 
 * [Importations de packages OSGi](#osgi-package-imports)
 * [Recouvrements](#overlays)
-* [Listes ACL](#acls)
+* [ACL](#acls)
 
 ##### Valider les importations de packages OSGi {#osgi-package-imports}
 
@@ -441,7 +441,7 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 >
 >Le mécanisme de validation ne peut pas vérifier si le contenu recouvert a été correctement incorporé dans le fichier recouvert. Par conséquent, cette validation continuera à signaler des conflits même après que les modifications nécessaires auront été apportées.
 
-##### Valider les listes ACL {#acls}
+##### Valider les ACL {#acls}
 
 **Contenu vérifié**
 
@@ -461,7 +461,7 @@ Aucune erreur explicite ne peut être fournie. La validation indique simplement 
 
 >[!CAUTION]
 >
->Il est recommandé de sʼassurer que les packages n’affectent pas les listes ACL fournies par AEM, car cela pourrait entraîner un comportement inattendu du produit.
+>Il est recommandé de sʼassurer que les packages n’affectent pas les ACL fournies par AEM, car cela pourrait entraîner un comportement inattendu du produit.
 
 #### Exécuter la validation {#performing-validation}
 

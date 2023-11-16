@@ -2,10 +2,10 @@
 title: Création de programmes de production
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 88%
+source-wordcount: '601'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +22,7 @@ Pour créer un programme de production, procédez comme suit.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Cliquez sur **Ajouter un programme** dans le coin supérieur droit de l’écran.
+1. Cliquez sur **Ajout d’un programme** dans le coin supérieur droit de l’écran.
 
    ![Page de destination de Cloud Manager](assets/log-in.png)
 
@@ -49,7 +49,7 @@ Pour créer un programme de production, procédez comme suit.
 
    ![Solutions sélectionnées](assets/setup-prod-select.png)
 
-1. Cliquez sur le chevron situé avant les noms des solutions pour afficher les modules complémentaires facultatifs, tels que la sélection de l’option de module complémentaire **Commerce** sous **Sites**.
+1. Cliquez sur le chevron situé avant les noms des solutions pour afficher les modules complémentaires facultatifs, tels que la sélection de la variable **Commerce** option de module complémentaire sous **Sites**.
 
    ![Sélectionner les modules complémentaires](assets/setup-prod-commerce.png)
 
@@ -70,7 +70,7 @@ Votre programme est créé par Cloud Manager, s’affiche et peut être sélect
 
 ## Accès à votre programme {#accessing}
 
-1. Une fois que la carte du programme s’affiche sur la page de destination, sélectionnez le bouton représentant des points de suspension pour afficher les options de menu disponibles.
+1. Lorsque la carte du programme s’affiche sur la landing page, cliquez sur le bouton représentant des points de suspension pour afficher les options de menu disponibles.
 
    ![Aperçu du programme](assets/program-overview.png)
 
@@ -80,7 +80,7 @@ Votre programme est créé par Cloud Manager, s’affiche et peut être sélect
 
    ![Aperçu du programme](assets/set-up-prod5.png)
 
-Si, à tout moment, vous devez passer à un autre programme ou revenir à la page d’aperçu pour créer un autre programme, cliquez sur le nom de votre programme dans le coin supérieur gauche de l’écran pour afficher l’option **Accéder à**.
+Si, à tout moment, vous devez passer à un autre programme ou revenir à la page d’aperçu pour créer un autre programme, cliquez sur le nom de votre programme dans le coin supérieur gauche de l’écran pour afficher la variable **Accédez à** .
 
 ![Accéder à ](assets/create-program-a1.png)
 

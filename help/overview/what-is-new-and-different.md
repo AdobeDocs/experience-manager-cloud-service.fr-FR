@@ -2,10 +2,10 @@
 title: Nouveautés et différences – Adobe Experience Manager as a Cloud Service
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 99%
+source-wordcount: '1895'
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ Les opérations sont également très différentes du fait des éléments suivan
 
 * Conditions requises pour le déploiement :
 
-   * Mises à jour du code ; toutes les applications client développées pour une version précédente d’AEM devront être examinées et éventuellement mises à jour.
+   * Mises à jour du code ; toutes les applications client développées pour une version précédente d’AEM doivent être examinées et éventuellement mises à jour.
 
    * Migration du contenu
 

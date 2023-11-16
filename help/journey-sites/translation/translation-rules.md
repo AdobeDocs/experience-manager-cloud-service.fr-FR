@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '788'
+ht-degree: 96%
 
 ---
 
@@ -97,7 +97,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * comprendre ce que font les règles de traduction ;
 * être capable de définir vos propres règles de traduction.
 
-Tirez parti de ces connaissances et continuez à progresser sur votre parcours de traduction AEM Sites en consultant le document [Traduire le contenu](translate-content.md), dans lequel vous découvrirez comment votre connecteur et vos règles s’associent pour traduire du contenu.
+Tirez parti de ces connaissances et poursuivez votre parcours de traduction AEM Sites en consultant le document. [Traduire le contenu](translate-content.md) où vous découvrez comment votre connecteur et vos règles fonctionnent ensemble pour traduire le contenu.
 
 ## Ressources supplémentaires {#additional-resources}
 

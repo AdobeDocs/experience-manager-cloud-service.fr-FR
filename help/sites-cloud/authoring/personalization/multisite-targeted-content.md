@@ -2,10 +2,10 @@
 title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2890'
-ht-degree: 99%
+source-wordcount: '2889'
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ Les zones peuvent couvrir des activités et des offres. Après avoir créé une 
 
 >[!NOTE]
 >
->La zone par défaut appelée Zone principale est réduite par défaut lorsque vous appuyez ou cliquez sur le nom d’une marque **jusqu’à ce que** vous en créiez une autre. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
+>La zone par défaut appelée Zone de Principal est réduite par défaut lorsque vous appuyez ou cliquez sur le nom d’une marque. **Jusqu’à** vous créez une autre zone. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
 
 Pour créer une zone :
 

@@ -2,10 +2,10 @@
 title: Outil de comparaison des pages
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 93%
+source-wordcount: '609'
+ht-degree: 89%
 
 ---
 
@@ -65,7 +65,7 @@ L’outil de comparaison détecte les modifications effectuées sur les composan
 
 ### Affichage en mode plein écran {#fullscreen-and-exiting}
 
-Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
+Pour vous concentrer sur un contenu particulier, vous pouvez cliquer sur l’icône Plein écran de l’un des &quot;côtés&quot; de la comparaison côte à côte afin de l’agrandir dans la fenêtre du navigateur.
 
 ![Bouton Plein écran](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

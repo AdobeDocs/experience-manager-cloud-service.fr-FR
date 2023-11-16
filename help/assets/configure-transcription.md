@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 98%
+source-wordcount: '1690'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Voici les configurations requises pour activer la fonction de transcription dans
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 
-Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration d’Azure Media Services]**. Sélectionnez un dossier (emplacement) dans le rail de gauche, puis cliquez sur le bouton [!UICONTROL Créer] pour configurer la connexion à votre compte [!DNL Azure]. Ce dossier correspond à l’emplacement où votre configuration cloud [!DNL Azure] est stockée dans Experience Manager Assets. Saisissez les informations d’identification [!DNL Azure] et cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration d’Azure Media Services]**. Sélectionnez un dossier (emplacement) dans le rail de gauche, puis cliquez sur l’icône [!UICONTROL Créer] pour configurer la connexion à votre [!DNL Azure] compte . Ce dossier correspond à l’emplacement où votre configuration cloud [!DNL Azure] est stockée dans Experience Manager Assets. Saisissez les informations d’identification [!DNL Azure] et cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
 ### Configuration du profil de traitement pour la transcription {#configure-processing-profile}
 
@@ -65,7 +65,7 @@ Une fois que les [!DNL Azure Media Services] sont configurés dans Experience M
 
 Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]** et cliquez sur le bouton **[!UICONTROL Créer]** pour créer un profil de traitement basé sur l’IA afin de générer la transcription de vos fichiers audio et vidéo. Par défaut, la page du profil de traitement ne reflète que trois onglets (Image, Vidéo et Personnalisé). Cependant, un onglet **[!UICONTROL IA dédiée au contenu]** est visible si vous avez configuré les [!DNL Azure Media Services] dans votre instance [!DNL Experience Manager Assets]. Vérifiez vos informations d’identification [!DNL Azure] si vous ne voyez pas l’onglet **[!UICONTROL IA dédiée au contenu]** lors de la création d’un profil de traitement.
 
-Dans l’onglet **[!UICONTROL IA dédiée au contenu]**, cliquez sur le bouton **[!UICONTROL Ajouter]** pour configurer la transcription. Ici, vous pouvez inclure et exclure les formats de fichiers (types MIME) pour la génération des transcriptions en sélectionnant les types de fichiers dans la liste déroulante. Dans l’illustration suivante, tous les fichiers audio et vidéo pris en charge sont inclus et les fichiers texte sont exclus.
+Dans le **[!UICONTROL IA dédiée au contenu]** , cliquez sur l’onglet **[!UICONTROL Ajouter]** pour configurer la transcription. Ici, vous pouvez inclure et exclure les formats de fichiers (types MIME) pour la génération des transcriptions en sélectionnant les types de fichiers dans la liste déroulante. Dans l’illustration suivante, tous les fichiers audio et vidéo pris en charge sont inclus et les fichiers texte sont exclus.
 
 Activez le bouton (bascule) **[!UICONTROL Créer une transcription VTT dans le même répertoire]** pour créer et stocker le rendu de transcription (fichier .vtt) dans le même dossier que la ressource d’origine. Les autres rendus sont également générés par le workflow de traitement des ressources de la gestion des actifs numériques par défaut, quel que soit ce paramètre.
 
@@ -79,7 +79,7 @@ Le profil vidéo contient également les configurations personnalisées suivante
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-Nous allons maintenant configurer la transcription dans ce profil vidéo. Accédez à l’onglet **[!UICONTROL IA dédiée au contenu]** et cliquez sur le bouton **[!UICONTROL Ajouter]**. Incluez tous les fichiers audio et vidéo et excluez les fichiers image et application. Activez le bouton (bascule) **[!UICONTROL Créer une transcription VTT dans le même répertoire]** et enregistrez la configuration.
+Nous allons maintenant configurer la transcription dans ce profil vidéo. Accédez au **[!UICONTROL IA dédiée au contenu]** et cliquez sur l’onglet **[!UICONTROL Ajouter]** bouton . Incluez tous les fichiers audio et vidéo et excluez les fichiers image et application. Activez le bouton (bascule) **[!UICONTROL Créer une transcription VTT dans le même répertoire]** et enregistrez la configuration.
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 

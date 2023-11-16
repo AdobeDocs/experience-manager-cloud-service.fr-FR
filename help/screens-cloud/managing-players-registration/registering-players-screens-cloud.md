@@ -2,10 +2,10 @@
 title: Enregistrement de lecteurs dans Screens as a Cloud Service
 description: Cette page décrit comment enregistrer des lecteurs dans Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 100%
+source-wordcount: '499'
+ht-degree: 80%
 
 ---
 
@@ -28,7 +28,7 @@ Pour enregistrer votre lecteur, procédez comme suit :
 
 1. Connectez-vous au fournisseur de services Screens.
 
-1. Accédez à **Codes d’enregistrement** sous **Gestion des lecteurs** dans le panneau de navigation de gauche, puis cliquez sur **Créer un code**.
+1. Accédez à **Codes d’enregistrement** under **Gestion des lecteurs** dans le panneau de navigation de gauche, puis cliquez sur **Créer du code**.
 
    >[!NOTE]
    >S’il n’existe aucun code valide/non expiré, cliquez sur Créer un code, saisissez un nom pour le code et choisissez les paramètres d’expiration en fonction de vos besoins.
@@ -44,18 +44,18 @@ Pour enregistrer votre lecteur, procédez comme suit :
    1. **Limiter l’utilisation** : basculez le bouton pour activer ou désactiver la limite d’utilisation de votre code d’enregistrement. Par défaut, l’option Limiter l’utilisation est désactivée.
    1. **Limite d’utilisation** : sélectionnez le nombre correspondant à votre limite d’utilisation.
 
-1. Cliquez sur **Créer** pour créer le code d’enregistrement. Votre lecteur s’affiche avec le code d’enregistrement dans la liste.
+1. Cliquez sur **Créer** pour créer le code d’enregistrement. Vous pouvez voir votre lecteur avec le code d’enregistrement dans la liste.
 
    ![image](/help/screens-cloud/assets/player/register-player3.png)
 
-1. Cliquez sur la valeur située sous la colonne **CODE D’ENREGISTREMENT** pour copier la valeur dans le presse-papiers.
+1. Cliquez sur la valeur située sous la colonne . **CODE D’ENREGISTREMENT**  pour copier la valeur dans le presse-papiers.
 
-1. Collez cette valeur dans le champ **Saisir le code** dans l’onglet **Enregistrement du lecteur** de l’interface utilisateur d’administration du lecteur AEM Screens, puis cliquez sur **Enregistrer**.
+1. Collez cette valeur dans la variable **Saisir du code** dans le champ **Enregistrement du lecteur** dans l’interface utilisateur d’administration du lecteur AEM Screens, puis cliquez sur **Enregistrer**.
 
    ![image](/help/screens-cloud/assets/player/register-player4.png)
 
 
-1. Une fois que vous avez ajouté le code, vous verrez que le lecteur est désormais enregistré dans l’interface utilisateur d’administration du lecteur.
+1. Lorsque vous avez ajouté le code, vous pouvez constater que le lecteur est désormais enregistré dans l’interface utilisateur d’administration du lecteur.
 
    ![image](/help/screens-cloud/assets/player/register-player5.png)
 

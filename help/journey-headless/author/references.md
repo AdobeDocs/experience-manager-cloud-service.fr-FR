@@ -2,9 +2,9 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '710'
 ht-degree: 92%
 
 ---
@@ -39,7 +39,7 @@ Certaines références comportent des types de données dédiés (par exemple, R
 
 ## Références du contenu {#content-references}
 
-Leur nom est clair : les références de contenu vous permettent de faire référence à tout autre contenu. Un navigateur s’ouvre, vous permettant de sélectionner l’élément de contenu.
+Leur nom est clair : les références de contenu vous permettent de faire référence à tout autre contenu. Vous accédez alors à un navigateur qui vous permet de sélectionner l’élément de contenu.
 
 ## Références de ressources/médias {#assets-media-references}
 

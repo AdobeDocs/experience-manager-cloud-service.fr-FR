@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 95%
+source-wordcount: '1074'
+ht-degree: 94%
 
 ---
 
-# Notes de mise à jour 2022.1.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2022.1.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.1.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -104,7 +104,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2022.0
 ### Nouveautés {#what-is-new-cm}
 
 * Cloud Manager [évitera de reconstruire la base de code lorsqu’il détecte que la même validation Git est utilisée](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) dans plusieurs exécutions de pipeline full stack.
-* L’accès au journal d’environnement AEM nécessite désormais le profil produit **Gestionnaire de déploiement**. Un bouton désactivé s’affiche dans l’interface utilisateur pour les utilisateurs ne disposant pas de ce profil.
+* L’accès au journal d’environnement AEM nécessite désormais le profil produit **Gestionnaire de déploiement**. Les utilisateurs ne disposant pas de ce profil voient apparaître un bouton désactivé dans l’interface utilisateur.
 * L’interface utilisateur n’autorise pas la configuration du pipeline front-end pour un programme où Sites n’est pas activé en tant que solution.
 * Lors de la génération d’un mot de passe Git, la date d’expiration s’affiche.
 
@@ -123,7 +123,7 @@ La date de publication de l’outil de transfert de contenu version v1.8.6 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Validation du contenu : les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, vous devez l’activer dans la variable `System Console` de l’environnement source AEM. Voir [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr#getting-started) pour plus d’informations.
+* Validation du contenu : les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, activez-la dans la `System Console` de l’environnement d’AEM source. Consultez [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr#getting-started) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-ctt}
 

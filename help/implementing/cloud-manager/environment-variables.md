@@ -2,10 +2,10 @@
 title: Variables d’environnement Cloud Manager
 description: Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Elle sont fournies à l’environnement d’exécution, pour une utilisation dans la configuration OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Les cas d’utilisation les plus courants des variables d’environnement inclue
 1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celui que vous souhaitez gérer.
 1. Sélectionnez l’onglet **Environnements** pour le programme choisi, puis sélectionnez l’environnement pour lequel vous souhaitez créer une variable d’environnement dans le panneau de navigation de gauche.
 1. Dans le détail de l’environnement, sélectionnez l’onglet **Configuration**, puis sélectionnez **Ajouter** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
-   * Si vous ajoutez une variable d’environnement pour la première fois, le bouton **Ajouter la configuration** s’affiche au centre de la page. Vous pouvez utiliser ce bouton ou **Ajouter** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
+   * Si vous ajoutez une variable d’environnement pour la première fois, une **Ajouter une configuration** au centre de la page. Vous pouvez utiliser ce bouton ou **Ajouter** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
 
    ![Onglet Configuration](assets/configuration-tab.png)
 

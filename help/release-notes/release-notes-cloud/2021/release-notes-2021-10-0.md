@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2021.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1436'
 ht-degree: 95%
 
 ---
@@ -98,10 +98,10 @@ La prochaine version est prévue pour le 09 décembre 2021.
 
 ### Nouveautés {#what-is-new-cm-nov}
 
-* Les utilisateurs peuvent désormais utiliser de nouveaux pipelines front-end pour déployer le code front-end de manière accélérée et exclusive. Voir [Pipelines frontaux de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
+* Les utilisateurs et utilisatrices peuvent désormais exploiter les nouveaux pipelines front-end pour déployer exclusivement le code front-end de manière accélérée. Voir [Pipelines frontaux de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
 
   >[!IMPORTANT]
-  >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` pour utiliser de nouveaux pipelines front-end.
+  >Vous devez être sur la version `2021.10.5933.20211012T154732Z` d’AEM pour tirer parti des nouveaux pipelines front-end.
 
 * La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la publication de la version.
 

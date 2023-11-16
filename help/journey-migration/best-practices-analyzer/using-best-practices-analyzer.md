@@ -2,10 +2,10 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour comprendre la préparation à la mise à niveau.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 99%
+source-wordcount: '2478'
+ht-degree: 95%
 
 ---
 
@@ -61,7 +61,7 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Cliquez sur **Generate Report** (Générer le rapport) pour exécuter l’analyseur des bonnes pratiques.
+1. Cliquez sur **Générer un rapport** pour exécuter l’analyseur des bonnes pratiques.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -69,7 +69,7 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. Une fois son rapport généré, l’analyseur des bonnes pratiques affiche un résumé et le nombre de résultats sous forme de tableau organisé selon le type de résultat et le niveau d’importance. Pour obtenir plus de détails sur un résultat spécifique, vous pouvez cliquer sur le numéro correspondant au type de résultat dans le tableau.
+1. Une fois le rapport BPA généré, il affiche un résumé et le nombre de résultats sous forme de tableau organisé selon le type de résultat et le niveau d’importance. Pour plus d’informations sur un résultat spécifique, vous pouvez cliquer sur le nombre correspondant au type de résultat dans le tableau.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -95,7 +95,7 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
 Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), procédez comme suit :
 
-1. Cliquez sur l’icône du rail de gauche sur le côté gauche de la page. Cela affichera le **filtre ACS Commons**. Cliquez sur le **filtre ACS Commons** pour afficher la case à cocher interactive comme illustré dans l’image ci-dessous.
+1. Cliquez sur l’icône de rail gauche dans la partie gauche de la page. Cela affichera le **filtre ACS Commons**. Cliquez sur le bouton **Filtre ACS Commons** pour afficher la case à cocher interactive comme illustré dans l’image ci-dessous.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 

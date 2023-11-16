@@ -2,10 +2,10 @@
 title: Personnalisation et ciblage de contenu
 description: Découvrez comment créer du contenu personnalisé et ciblé avec AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 100%
+source-wordcount: '1053'
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 La personnalisation du contenu web que vous fournissez aux client(e)s implique de personnaliser ces expériences en fonction de leurs intérêts et besoins. Vous pouvez faire ceci en fonction des informations que vous avez à leur sujet ; par exemple, le résumé des achats, l’âge, le sexe, la zone géographique, etc.
 
-Avec Adobe Experience Manager as a Cloud Service (AEM), vous pouvez créer une sélection de contenu, puis spécifier les audiences (groupes d’utilisateurs finaux) qui verront chaque expérience individuelle. Cela signifie que vous ciblez vos expériences personnalisées vers des audiences spécifiques.
+Avec Adobe Experience Manager as a Cloud Service (AEM), vous pouvez créer une sélection de contenu, puis spécifier les audiences (groupes d’utilisateurs finaux) qui voient chaque expérience individuelle. Cela signifie que vous ciblez vos expériences personnalisées vers des audiences spécifiques.
 
 Lorsque votre lecteur ou lectrice est en ligne, votre moteur de ciblage examine les informations disponibles sur l’utilisateur final et les compare aux définitions de l’expérience. Le moteur *« décide »* alors de l’expérience personnalisée à afficher.
 
@@ -40,7 +40,7 @@ Lors de la création de pages, vous définissez plusieurs expériences, chaque e
 
 Une offre est une expérience personnalisée, souvent disponible pendant une période limitée.
 
-Par exemple, une page d’un site web modèle peut utiliser des offres comme image teaser qui apparaît en haut de la page. Une personne de plus de 30 ans et une personne de moins de 30 ans verront différentes offres comme teaser d’expérience.
+Par exemple, une page d’un exemple de site web peut utiliser des offres comme image de teaser qui apparaît en haut de la page. Une personne de plus de 30 ans et une personne de moins de 30 ans peuvent voir différentes offres comme teaser d’expérience.
 
 ## Audience {#audience}
 

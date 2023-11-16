@@ -2,10 +2,10 @@
 title: Configuration de l’intégration de traduction pour le contenu sans affichage
 description: Découvrez comment connecter AEM à un service de traduction.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 97%
+source-wordcount: '1230'
+ht-degree: 95%
 
 ---
 
@@ -132,7 +132,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
-Tirez parti de ces connaissances et continuez à progresser sur votre parcours de traduction découplée AEM en consultant le document [Traduire le contenu](translation-rules.md), dans lequel vous découvrirez comment utiliser votre configuration en l’état pour effectivement traduire votre contenu.
+Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Traduire le contenu,](translation-rules.md) où vous apprenez à utiliser votre configuration jusqu’à présent pour traduire réellement votre contenu.
 
 ## Ressources supplémentaires {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 96%
+source-wordcount: '1684'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ Une fois le fichier modifié dans le **volet de modification**, les outils suiva
 * **Afficher dans l’arborescence** – affiche le fichier dans l’arborescence du référentiel.
 * **Rechercher/Remplacer** – effectue une recherche ou un remplacement.
 
-Double-cliquez sur la ligne d’état du **volet de modification** pour ouvrir la boîte de dialogue **Aller à la ligne** et entrer un numéro de ligne spécifique.
+Double-cliquez sur la ligne d’état du **Volet Modifier** ouvre la fonction **Aller à la ligne** pour saisir un numéro de ligne spécifique.
 
 ### Onglet Propriétés {#properties-tab}
 

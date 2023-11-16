@@ -2,10 +2,10 @@
 title: En savoir plus sur le contenu découplé et sa traduction dans AEM
 description: Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 99%
+source-wordcount: '742'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ En plus d’offrir des outils fiables pour la création, la gestion et la diffus
 
 La puissance d’AEM lui permet de diffuser du contenu découplé, en mode full stack ou dans les deux modes de façon simultanée. Pour le spécialiste de la traduction, le même ensemble d’outils de traduction peut être utilisé pour les deux types de contenu, ce qui vous donne une approche unifiée de la traduction de votre contenu.
 
-Plus loin dans le parcours, vous découvrirez les détails de la traduction de contenu AEM, mais à un niveau général, le concept est simple :
+Plus loin dans le parcours, vous découvrirez les détails de la traduction AEM contenu, mais à un niveau général, le concept est simple :
 
 1. Définissez une connexion à un service de traduction en configurant la structure d’intégration de traduction.
 1. Définissez le contenu à traduire à l’aide des règles de traduction.

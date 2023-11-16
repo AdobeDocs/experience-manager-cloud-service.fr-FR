@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 97%
+source-wordcount: '1422'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ L’architecte de contenu travaille à définir cette structure dès le début d
 Comme les modèles de contenu définissent la structure de votre contenu, vous devez savoir quels champs de vos modèles doivent être traduits. En règle générale, vous travaillez avec l’architecte de contenu pour définir ces éléments. Pour parcourir les champs de vos modèles de contenu, procédez comme suit.
 
 1. Accédez à **Outils** -> **Général** -> **Modèles de fragment de contenu**.
-1. Les modèles de fragment de contenu sont généralement stockés dans une structure de dossiers. Appuyez ou cliquez sur le dossier de votre projet.
+1. Les modèles de fragment de contenu sont généralement stockés dans une structure de dossiers. Appuyez ou cliquez sur le dossier du projet.
 1. Les modèles y sont répertoriés. Appuyez ou cliquez sur le modèle pour afficher les détails.
    ![Modèles de fragment de contenu](assets/content-fragment-models.png)
 1. L’**Éditeur de modèle de fragment de contenu** s’ouvre.
@@ -178,7 +178,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * savoir comment AEM stocke du contenu découplé ;
 * être familiarisé avec les outils de traduction AEM.
 
-Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Configuration de l’intégration de traduction](configure-connector.md) où vous apprendrez à connecter AEM à un service de traduction.|
+Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Configuration de l’intégration de traduction](configure-connector.md) où vous apprenez à connecter AEM à un service de traduction.|
 
 ## Ressources supplémentaires {#additional-resources}
 

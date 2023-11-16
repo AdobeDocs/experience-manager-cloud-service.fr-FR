@@ -4,17 +4,17 @@ description: Une fois que l’administrateur système a configuré les ressource
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 95%
+source-wordcount: '1411'
+ht-degree: 90%
 
 ---
 
 
 # Tâches du développeur et du responsable de déploiement {#developer-deployment-manager}
 
-Dans cette partie facultative du [parcours d’intégration](overview.md), vous découvrirez comment les développeurs et les responsables de déploiement peuvent accéder à Git pour développer des applications et utiliser des pipelines pour les déployer.
+Dans cette partie facultative de la fonction [parcours d&#39;intégration,](overview.md) vous découvrez comment les développeurs et les gestionnaires de déploiement peuvent accéder à git pour développer des applications et utiliser des pipelines pour les déployer.
 
 ## Un peu d’histoire… {#story-so-far}
 
@@ -64,7 +64,7 @@ Vous pouvez accéder à vos référentiels Git et les gérer à l’aide de la g
 
    ![Bouton Accéder aux informations sur le référentiel de la vignette d’environnements](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Cliquez sur le bouton **Afficher les informations sur le référentiel** pour ouvrir une boîte de dialogue affichant les éléments suivants :
+1. Cliquez sur le bouton **Afficher les informations sur le référentiel** pour ouvrir une boîte de dialogue afin d’afficher :
 
    * L’URL vers le référentiel Git de Cloud Manager.
    * Le nom d’utilisateur Git.
@@ -82,7 +82,7 @@ Pour créer votre premier pipeline de déploiement hors production, procédez co
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à la carte **Pipelines** depuis l’écran d’accueil de Cloud Manager. Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline hors production**.
+1. Accédez à la carte **Pipelines** depuis l’écran d’accueil de Cloud Manager. Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline hors production**.
 
    ![Ajouter un pipeline hors production](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
@@ -119,7 +119,7 @@ Maintenant que les développeurs ont ajouté leur code personnalisé aux référ
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à la vignette **Pipelines** à partir de la page **Présentation du programme** et cliquez sur le bouton représentant des points de suspension à côté du pipeline que vous avez créé dans la section précédente, puis sélectionnez **Exécuter** dans le menu.
+1. Accédez au **Pipelines** de la carte **Aperçu du programme** et cliquez sur le bouton représentant des points de suspension en regard du pipeline que vous avez créé dans la section précédente, puis sélectionnez **Exécuter** dans le menu.
 
 1. L’exécution du pipeline démarre et est indiquée par la colonne **Statut**.
 

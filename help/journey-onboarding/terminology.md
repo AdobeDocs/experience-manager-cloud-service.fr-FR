@@ -2,16 +2,16 @@
 title: Terminologie d’AEM as a Cloud Service
 description: Avant de vous connecter à AEMaaCS, il est utile de comprendre une partie de la terminologie du système et sa structure de base.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 87%
 
 ---
 
 # Terminologie d’AEM as a Cloud Service {#terminology}
 
-Dans cette partie du [parcours d’intégration,](overview.md) vous découvrirez certains aspects de la terminologie d’AEM as a Cloud Service et sa structure de base.
+Dans cette partie du [parcours d&#39;intégration,](overview.md) vous découvrez la terminologie d&#39;AEM as a Cloud Service et sa structure de base.
 
 ## Objectif {#objective}
 
@@ -53,4 +53,4 @@ Maintenant que vous avez terminé cette partie du parcours d’intégration AEM,
 * Les différents calques qui constituent AEMaaCS.
 * Les principes de base de chaque calque.
 
-Tirez parti de ces connaissances et poursuivez votre parcours d’intégration AEM en consultant le document [Accès à Admin Console](admin-console.md), où vous apprendrez comment accéder à la console et vérifier votre statut en tant qu’administrateur système.
+Tenez compte de ces connaissances et continuez votre parcours d’intégration AEM en lisant le document suivant. [Accès au Admin Console](admin-console.md), où vous découvrez comment accéder à la console et vérifier votre statut en tant qu’administrateur système.

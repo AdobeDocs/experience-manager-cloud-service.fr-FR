@@ -2,10 +2,10 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez en modifier le contenu pour effectuer les mises à jour nécessaires
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2983'
-ht-degree: 97%
+source-wordcount: '2978'
+ht-degree: 94%
 
 ---
 
@@ -151,9 +151,9 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
      ![Insertion d’un composant](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * Si vous utilisez un ordinateur de bureau, vous pouvez double-cliquer sur la zone **Faire glisser les composants ici**.
+   * Si vous utilisez un ordinateur de bureau, vous pouvez double-cliquer sur le bouton **Faire glisser des composants ici** de la boîte.
 
-   * La boîte de dialogue **Insérer un nouveau composant** s’affiche pour vous permettre de sélectionner le composant nécessaire :
+   * La variable **Insérer un nouveau composant** ouvrez la boîte de dialogue pour vous permettre de sélectionner le composant requis :
 
      ![Boîte de dialogue Insérer un nouveau composant](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -185,7 +185,7 @@ Si, lors de l’exploration des ressources, vous estimez qu’il est nécessaire
 
 ## Barre d’outils des composants {#component-toolbar}
 
-La sélection d’un composant ouvre la barre d’outils, qui permet d’accéder à diverses actions pouvant être réalisées sur le composant.
+La sélection d’un composant ouvre la barre d’outils. Cela permet d’accéder à diverses actions qui peuvent être exécutées sur le composant.
 
 Les actions disponibles sont affichées comme il convient ; ces actions ne peuvent pas toutes être décrites ici.
 
@@ -361,7 +361,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
 >[!TIP]
 >
->L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné, tandis que les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
+>L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné, les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
 >
 >Si vous devez modifier la disposition globale de la page et affecter ainsi plusieurs composants, basculez vers le [mode Disposition](/help/sites-cloud/authoring/features/responsive-layout.md).
 

@@ -2,10 +2,10 @@
 title: Référentiels Cloud Manager
 description: Découvrez comment créer, afficher et supprimer vos référentiels Git dans Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Suivez ces étapes pour afficher et gérer les référentiels dans Cloud Manage
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Dans la **Aperçu du programme** page, appuyez ou cliquez sur **Référentiels** pour basculer vers l’onglet **Référentiels** page.
+1. Dans la **Aperçu du programme** , appuyez ou cliquez sur l’icône **Référentiels** pour basculer vers l’onglet **Référentiels** page.
 
 1. Cliquez sur **Ajouter un référentiel**.
 
@@ -36,7 +36,7 @@ Suivez ces étapes pour afficher et gérer les référentiels dans Cloud Manage
 
 Lorsque l’assistant se ferme, votre nouveau référentiel s’affiche dans le tableau.
 
-Vous pouvez sélectionner le référentiel dans le tableau, puis cliquer sur le bouton représentant des points de suspension et sélectionner **Copier l’URL du référentiel**, **Afficher et mettre à jour** ou **Supprimer**.
+Vous pouvez sélectionner le référentiel dans le tableau, cliquer sur le bouton représentant des points de suspension et sélectionner **Copier l’URL du référentiel**, **Afficher et mettre à jour**, ou **Supprimer**.
 
 ![Options du référentiel](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,7 +58,7 @@ La suppression d’un référentiel entraînera les éléments suivants :
 
 Pour supprimer un référentiel dans Cloud Manager, procédez comme suit.
 
-1. Sur la page **Présentation du programme**, cliquez sur l’onglet **Référentiels** et accédez à la page **Référentiels**.
+1. Dans la **Aperçu du programme** , cliquez sur **Référentiels** et accédez à la **Référentiels** page.
 
 1. Sélectionnez le référentiel, cliquez sur le bouton représentant des points de suspension, puis sélectionnez **Supprimer** pour supprimer le référentiel.
 

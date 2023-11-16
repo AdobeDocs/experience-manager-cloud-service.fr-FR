@@ -2,10 +2,10 @@
 title: Comment configurer un environnement de développement local pour AEM Forms ?
 description: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2847'
-ht-degree: 96%
+source-wordcount: '2846'
+ht-degree: 95%
 
 ---
 
@@ -88,7 +88,7 @@ Pour télécharger la dernière version du SDK Adobe Experience Manager as a C
 
 1. Accédez à l’onglet **[!UICONTROL AEM as a Cloud Service]**.
 1. Effectuez un tri par date de publication dans l’ordre décroissant.
-1. Cliquez sur le dernier SDK Adobe Experience Manager as a Cloud Service, l’archive de fonctionnalités Experience Manager Forms (module complémentaire AEM Forms), les ressources de référence des formulaires ou Forms Designer.
+1. Cliquez sur le dernier SDK Adobe Experience Manager as a Cloud Service, l’archive de fonctionnalités Experience Manager Forms (module complémentaire AEM Forms), les ressources de référence de formulaires ou Forms Designer.
 1. Examinez et acceptez le contrat de licence de l’utilisateur final. Appuyez sur le bouton **[!UICONTROL Télécharger]**.
 
 ## Configuration des outils de développement pour les projets AEM {#setup-development-tools-for-AEM-projects}

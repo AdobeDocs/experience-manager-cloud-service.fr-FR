@@ -1,13 +1,13 @@
 ---
 title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer de nouveaux profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs responsables de cloud.
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+exl-id: 167da985-7f19-45b3-90a3-884817907da2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1506'
 ht-degree: 2%
 
 ---
-
 
 # Autorisations personnalisées {#custom-permissions}
 
@@ -44,7 +44,7 @@ Cette section décrit ces étapes. Il peut s’avérer utile de consulter la sec
 
 >[!NOTE]
 >
->Vous devez disposer des droits d’administrateur de produit dans Admin Console pour Adobe Experience Manager as a Cloud Service afin de créer de nouveaux profils et de gérer les autorisations de Cloud Manager.
+>Pour qu’Adobe Experience Manager as a Cloud Service puisse créer de nouveaux profils et gérer les autorisations de Cloud Manager, vous devez disposer de droits d’administrateur de produit dans Admin Console.
 
 ### Création d’un profil de produit {#create}
 

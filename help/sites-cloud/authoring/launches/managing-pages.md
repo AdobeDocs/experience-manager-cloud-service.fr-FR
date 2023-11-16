@@ -2,10 +2,10 @@
 title: Gestion des pages dans votre lancement
 description: Vous pouvez créer des pages dans votre lancement. Vous pouvez également supprimer des pages indésirables.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 100%
+source-wordcount: '289'
+ht-degree: 94%
 
 ---
 
@@ -25,36 +25,34 @@ Vous pouvez naviguer parmi la structure de votre lancement depuis :
 * L’éditeur de page :
 
    * Sélectionnez **Naviguer** pour ouvrir la structure de lancement dans la console :
-      ![Navigation dans le lancement à partir de l’éditeur de page](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+     ![Navigation dans le lancement à partir de l’éditeur de page](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
-      >[!NOTE]
-      >
-      >Vous pouvez également :
-      >
-      >* **Quitter** le lancement et retourner à la modification de la page source
-
+     >[!NOTE]
+     >
+     >Vous pouvez également :
+     >
+     >* **Quitter** le lancement et retourner à la modification de la page source
 
 * La console **Lancements** :
 Si vous sélectionnez un lancement spécifique, vous pouvez ensuite sélectionner **Gérer le contenu** :
-   ![Console Lancements – Gestion du contenu](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+  ![Console Lancements – Gestion du contenu](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * La console **Sites** :
 Si vous sélectionnez une page source spécifique et ouvrez **Références**, vous pouvez ensuite sélectionner **Lancements** puis **Gérer le contenu** :
-   ![Console Lancements – Gestion du contenu](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+  ![Console Lancements – Gestion du contenu](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
-   >[!NOTE]
-   >
-   >Vous pouvez également sélectionner **Console Lancements** pour accéder à **Gérer le contenu** (et à d’autres actions).
+  >[!NOTE]
+  >
+  >Vous pouvez également sélectionner **Console Lancements** pour accéder à **Gérer le contenu** (et à d’autres actions).
 
-Tous ces points d’entrée ouvrent le lancement dans la console Sites, où vous pouvez :
+Tous ces points d’entrée ouvrent le lancement dans la console Sites , où vous pouvez :
 
 * Naviguer
 * **Créer** des pages
 * Sélectionner des pages existantes et agir ; par exemple, **Modifier**, ouvrir **Propriétés**, **Verrouiller**, **Copier**, **Coller** et **Supprimer**
-
-   ![Accéder au lancement dans la console Sites à partir de Gérer le contenu](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+  ![Accéder au lancement dans la console Sites à partir de Gérer le contenu](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Utiliser le rail **Références** pour revenir aux pages **Source de lancement** :
-   ![Console Sites – Source de lancement](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+  ![Console Sites – Source de lancement](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Ajout de pages à votre lancement {#add-pages-to-launch}
 

@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 98%
+source-wordcount: '2970'
+ht-degree: 95%
 
 ---
 
@@ -133,7 +133,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console **Sites**, vous pouvez parcourir les différents niveaux de votre site web.
 
-  Il vous suffit de cliquer sur le texte du chemin de navigation pour afficher une liste déroulante des niveaux de la hiérarchie de l’élément sélectionné. Cliquez sur une entrée pour accéder à cet emplacement.
+  Cliquez simplement sur le texte du chemin de navigation pour afficher une liste déroulante répertoriant les niveaux de la hiérarchie de l’élément actuellement sélectionné. Cliquez sur une entrée pour accéder à cet emplacement.
 
   ![Exemple de chemin de navigation développé](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -171,7 +171,7 @@ Plusieurs ressources d’aide sont disponibles :
 
 * **Barre d’outils de la console**
 
-  Selon votre emplacement, l’icône **Aide** ouvre les ressources appropriées :
+  Selon votre emplacement, la variable **Aide** ouvre les ressources appropriées :
 
   ![Icône d’aide](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -304,7 +304,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
    * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous appuyez ou cliquez dessus.
    * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de celle-ci.
-   * Si vous appuyez ou cliquez sur un nom de ressource sans enfant, les détails s’affichent dans la dernière colonne.
+   * Si vous appuyez ou cliquez sur un nom de ressource sans enfant, ses détails s’affichent dans la colonne finale.
 
 * Appuyez ou cliquez sur la miniature pour sélectionner la ressource.
 
@@ -475,6 +475,6 @@ Consultez le document [Utilisation du rail Site pour gérer le thème de votre s
 
 ### Filtrer {#filter}
 
-Cette action ouvre un panneau similaire à [Rechercher](/help/sites-cloud/authoring/getting-started/search.md) avec les filtres d’emplacement correspondants déjà définis, ce qui permet de filtrer davantage le contenu que vous souhaitez afficher.
+Cela ouvre un panneau similaire à [search](/help/sites-cloud/authoring/getting-started/search.md) avec les filtres d’emplacement appropriés déjà définis, ce qui vous permet de filtrer davantage le contenu que vous souhaitez afficher.
 
 ![Exemple de filtre](/help/sites-cloud/authoring/assets/filter.png)

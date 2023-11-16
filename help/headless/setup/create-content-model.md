@@ -2,10 +2,10 @@
 title: Création de modèles de fragment de contenu - Configuration découplée
 description: Définissez la structure du contenu que vous allez créer et diffuser à l’aide des fonctionnalités découplées AEM à l’aide des modèles de fragment de contenu.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 100%
+source-wordcount: '488'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Les modèles de fragments de contenu définissent la structure des données et d
 Un architecte de l’information ne réaliserait ces tâches qu’occasionnellement, lorsque de nouveaux modèles sont nécessaires. Pour les besoins de ce guide de prise en main, nous n’avons besoin de créer qu’un modèle.
 
 1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Outils**, **Général**, **Modèles de fragments de contenu**.
-1. Appuyez ou cliquez sur le dossier créé lors de la configuration.
+1. Appuyez ou cliquez sur le dossier créé lors de la création de votre configuration.
 
    ![Le dossier de modèles](../assets/models-folder.png)
 1. Appuyez ou cliquez sur **Créer**.

@@ -2,10 +2,10 @@
 title: Indexation après migration de contenu
 description: Découvrez comment le processus de migration va indexer le contenu ingéré sur l’instance du Cloud Service de destination.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 8%
+source-wordcount: '506'
+ht-degree: 6%
 
 ---
 
@@ -46,13 +46,13 @@ Lorsque l’ingestion réussit, la tâche d’indexation est lancée automatique
 
 ### Terminé
 
-Lorsque la tâche d’indexation réussit, l’instance est prête à être utilisée à des performances optimales. À ce stade, les journaux des tâches d’indexation seront disponibles pour affichage ou téléchargement afin de les inspecter.
+Lorsque la tâche d’indexation réussit, l’instance est prête à être utilisée à des performances optimales. À ce stade, les journaux des tâches d’indexation peuvent être affichés ou téléchargés pour les inspecter.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/complete.png)
 
 ### Erreurs
 
-L’indexation de l’instance du Cloud Service de destination réussira très probablement. Dans certains cas, il peut échouer et la ligne de tâche d’ingestion apparaîtra comme suit. Dans tous les cas, vous pouvez trouver des détails sur l’échec en pointant la souris sur l’état de l’échec et il peut fournir plus d’informations pour vous aider à déterminer les prochaines étapes. À ce stade, les journaux des tâches d’indexation seront disponibles pour affichage ou téléchargement afin de vous aider à découvrir la source de l’échec. Si l’étape suivante n’est pas claire, contactez le support Adobe avec les détails de l’ingestion et du journal d’indexation.
+L’indexation de l’instance du Cloud Service de destination réussira très probablement. Dans certains cas, il peut échouer et la ligne de tâche d’ingestion apparaîtra comme suit. Dans tous les cas, vous pouvez trouver des détails sur l’échec en pointant la souris sur l’état de l’échec et il peut fournir plus d’informations pour vous aider à déterminer les prochaines étapes. À ce stade, les journaux des tâches d’indexation sont disponibles pour affichage ou téléchargement afin de découvrir la source de l’échec. Si l’étape suivante n’est pas claire, contactez le support Adobe avec les détails de l’ingestion et du journal d’indexation.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

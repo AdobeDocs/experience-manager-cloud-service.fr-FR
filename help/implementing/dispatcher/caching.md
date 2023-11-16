@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Découvrez les principes de base de la mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2878'
-ht-degree: 94%
+source-wordcount: '2874'
+ht-degree: 95%
 
 ---
 
@@ -232,7 +232,7 @@ Lorsqu’une requête HEAD est reçue sur le réseau CDN Adobe pour une ressourc
 
 Les URL de site web incluent souvent des paramètres de campagne marketing qui permettent de suivre la réussite d’une campagne.
 
-Pour les environnements créés en octobre 2023 ou version ultérieure, afin de mieux mettre en cache les requêtes, le réseau de diffusion de contenu supprimera les paramètres de requête communs liés au marketing, en particulier ceux qui correspondent au modèle regex suivant :
+Pour les environnements créés en octobre 2023 ou version ultérieure, afin de mieux mettre en cache les requêtes, le réseau de diffusion de contenu supprimera les paramètres de requête liés au marketing courants, en particulier ceux qui correspondent au modèle regex suivant :
 
 ```
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$

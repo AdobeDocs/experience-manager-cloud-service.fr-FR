@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 98%
+source-wordcount: '1398'
+ht-degree: 95%
 
 ---
 
@@ -107,7 +107,7 @@ Pour modifier votre page :
 
    ![Modification d’une page](assets/sites-editor-title.png)
 
-Vous pouvez revenir à la console Sites en revenant à cet onglet dans votre navigateur à tout moment. L’éditeur Sites vous permet d’afficher rapidement le contenu de la page de la même manière que les auteurs de contenu et votre audience la verront.
+Vous pouvez revenir à la console Sites en revenant à cet onglet dans votre navigateur à tout moment. L’éditeur de sites vous permet d’afficher rapidement le contenu de la page, car les auteurs de contenu et votre audience peuvent le voir.
 
 >[!NOTE]
 >
@@ -199,9 +199,9 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 
 * comprendre l’importance de la structure de contenu pour la traduction ;
 * comprendre comment AEM stocke le contenu ;
-* être familiarisé avec les outils de traduction AEM.
+* vous être familiarisé avec les outils de traduction AEM.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de traduction AEM Sites en consultant le document [Configuration du connecteur de traduction](configure-connector.md) où vous apprendrez à connecter AEM à un service de traduction.
+Tirez parti de ces connaissances et poursuivez votre parcours de traduction AEM Sites en consultant le document. [Configuration du connecteur de traduction](configure-connector.md) où vous apprenez à connecter AEM à un service de traduction.|
 
 ## Ressources supplémentaires {#additional-resources}
 

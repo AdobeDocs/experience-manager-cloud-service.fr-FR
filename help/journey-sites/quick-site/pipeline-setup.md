@@ -1,21 +1,21 @@
 ---
 title: Configurer le pipeline
-description: Créez un pipeline frontal pour gérer la personnalisation du thème de votre site.
+description: Créez un pipeline front-end pour gérer la personnalisation du thème de votre site.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 98%
+source-wordcount: '965'
+ht-degree: 97%
 
 ---
 
 # Configurer le pipeline {#set-up-your-pipeline}
 
-Créez un pipeline frontal pour gérer la personnalisation du thème de votre site.
+Créez un pipeline front-end pour gérer la personnalisation du thème de votre site.
 
 ## Un peu d’histoire…  {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Créer un site à partir d’un modèle](create-site.md), vous avez appris à utiliser un modèle de site pour créer rapidement un site AEM qui peut être davantage personnalisé à l’aide d’outils frontaux. Vous devriez maintenant :
+Dans le document précédent du parcours de création rapide de site AEM, [Créer un site à partir d’un modèle](create-site.md), vous avez appris à utiliser un modèle de site pour créer rapidement un site AEM qui peut être davantage personnalisé à l’aide d’outils front-end. Vous devriez maintenant :
 
 * Découvrir comment obtenir des modèles de site AEM.
 * Apprendre à créer un nouveau site à l’aide d’un modèle.
@@ -25,7 +25,7 @@ Cet article s’appuie sur ces principes de base afin que vous puissiez configur
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre les pipelines frontaux et comment en créer un pour gérer le déploiement du thème personnalisé de votre site. Après avoir lu ce document, vous devriez :
+Ce document vous aide à comprendre les pipelines front-end et comment en créer un pour gérer le déploiement du thème personnalisé de votre site. Après avoir lu ce document, vous devriez :
 
 * Comprendre ce qu’est un pipeline front-end.
 * Savoir comment configurer un pipeline front-end dans Cloud Manager.
@@ -41,17 +41,17 @@ Cette partie du parcours s’applique à l’administrateur de Cloud Manager.
 * Un référentiel git pour l’environnement AEM doit être configuré dans Cloud Manager.
    * C&#39;est généralement déjà le cas pour tout projet principal. Toutefois, si ce n’est pas le cas, reportez-vous à la documentation des référentiels Cloud Manager disponible dans la section [Ressources supplémentaires](#additional-resources).
 
-## Qu’est-ce qu’un pipeline frontal {#front-end-pipeline}
+## Qu’est-ce qu’un pipeline front-end ? {#front-end-pipeline}
 
-Le développement frontal implique la personnalisation de ressources JavaScript, CSS et statiques qui définissent le style de votre site AEM. Le développeur front-end travaille dans son propre environnements local pour effectuer ces personnalisations. Une fois qu’elles sont prêtes, les modifications sont validées dans le référentiel git d’AEM. Mais elles ne sont engagées que dans le code source. Elles ne sont pas encore en ligne.
+Le développement front-end implique la personnalisation de ressources JavaScript, CSS et statiques qui définissent le style de votre site AEM. Le développeur front-end travaille dans son propre environnements local pour effectuer ces personnalisations. Une fois qu’elles sont prêtes, les modifications sont validées dans le référentiel git d’AEM. Mais elles ne sont engagées que dans le code source. Elles ne sont pas encore en ligne.
 
-Le pipeline frontal prend ces personnalisations validées et les déploie dans un environnement AEM, généralement des environnements de production ou de non-production.
+Le pipeline front-end prend ces personnalisations validées et les déploie dans un environnement AEM, généralement des environnements de production ou hors production.
 
-Ainsi, le développement frontal peut fonctionner séparément et parallèlement à tout développement d’arrière-plan complet sur AEM, qui possède ses propres pipelines de déploiement.
+Ainsi, le développement front-end peut fonctionner séparément et parallèlement à tout développement back-end complet sur AEM, qui possède ses propres pipelines de déploiement.
 
 >[!NOTE]
 >
->Les pipelines frontaux peuvent uniquement déployer des ressources JavaScript, CSS et statiques pour appliquer un style à votre site AEM. Le contenu du site, tel que les pages ou les ressources, ne peut pas être déployé dans un pipeline.
+>Les pipelines front-end peuvent uniquement déployer des ressources JavaScript, CSS et statiques pour appliquer un style à votre site AEM. Le contenu du site, tel que les pages ou les ressources, ne peut pas être déployé dans un pipeline.
 
 ## Accès à Cloud Manager {#login}
 
@@ -67,9 +67,9 @@ Vous voyez maintenant un aperçu de votre programme. Votre page sera différente
 
 Notez le nom du programme auquel vous avez accédé ou copiez l’URL. Vous devrez fournir cette information au développeur front-end ultérieurement.
 
-## Création d’un pipeline frontal {#create-front-end-pipeline}
+## Création d’un pipeline front-end {#create-front-end-pipeline}
 
-Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipeline pour le déploiement frontal.
+Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipeline pour le déploiement front-end.
 
 1. Dans la section **Pipelines** de la page Cloud Manager, appuyez ou cliquez sur le bouton **Ajouter**.
 

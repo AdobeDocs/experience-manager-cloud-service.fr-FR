@@ -4,10 +4,10 @@ description: Découvrez comment créer du contenu pour vos fragments de contenu,
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 4%
+source-wordcount: '2252'
+ht-degree: 5%
 
 ---
 
@@ -478,7 +478,7 @@ La variable **Champs** répertorie tous les champs du fragment de contenu. L’i
 
 En outre:
 
-* Pour modifier un fragment de contenu, vous devez [les autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contactez votre administrateur système si vous rencontrez des problèmes.
+* Pour modifier un fragment de contenu, vous devez [les autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administration système.
 
   Par exemple, si vous n’avez pas `edit` autorisations L’éditeur est en lecture seule.
 

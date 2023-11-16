@@ -2,10 +2,10 @@
 title: Création de rendus vidéo dans Screens as a Cloud Service
 description: Cette page décrit comment créer des rendus vidéo dans Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 93%
+source-wordcount: '366'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Pour créer des rendus vidéo dans Screens as a Cloud Service à partir du fourn
 
 1. Cliquez sur la section Outils de la barre de navigation de gauche, puis sur **Ressources** et sur **Profils de traitement**.
 
-   ![Clic sur les Profils de traitement](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![Cliquez sur Profils de traitement](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Cliquez sur **Créer** pour créer un profil de traitement.
 

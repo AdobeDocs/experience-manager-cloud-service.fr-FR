@@ -2,10 +2,10 @@
 title: Lancements
 description: Les lancements vous permettent de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 98%
+source-wordcount: '901'
+ht-degree: 96%
 
 ---
 
@@ -96,7 +96,7 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
 
    ![Références des lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Appuyez/cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
+1. Appuyez/cliquez sur le lancement correspondant, la liste des actions possibles s’affiche :
 
    ![Actions à effectuer sur les lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

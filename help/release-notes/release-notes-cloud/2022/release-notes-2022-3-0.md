@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 87%
+source-wordcount: '1151'
+ht-degree: 85%
 
 ---
 
@@ -79,7 +79,7 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 ### Nouveautés {#what-is-new-cif}
 
 * Optimisation du référencement pour les scénarios multi-magasin : les formats d’URL pour les pages d’information ou de recensement produit peuvent désormais être configurés au niveau du magasin grâce aux propriétés de configuration cloud CIF.
-* Le sélecteur de produits prend en charge les produits intermédiaires par le biais d’une nouvelle option de filtre dans l’interface utilisateur. Cela permet aux spécialistes du contenu de préparer la gestion de contenu de produit pour les lancements de produits à venir.
+* Le sélecteur de produits prend en charge les produits intermédiaires par le biais d’une nouvelle option de filtre dans l’interface utilisateur.  Cela permet aux spécialistes du contenu de préparer la gestion de contenu de produit pour les lancements de produits à venir.
 * Simplification de la gestion de la configuration et de la gestion des erreurs CIF à l’aide du nom de configuration cloud CIF au lieu de l’URL du proxy de configuration.
 * Sélection manuelle de catégories pour la liste de produits et les composants de carrousel. Elle permet aux spécialistes du contenu d’utiliser ces composants sur les pages de contenu, en dehors du catalogue..
 
@@ -113,7 +113,7 @@ La date de publication de l’outil de transfert de contenu version v1.9.0 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Garde-fous de vérification de la taille : la fonctionnalité Vérification de la taille de l’outil de transfert de contenu permet de réduire le nombre de transferts de contenu ayant échoué. Grâce à la fonction Vérifier la taille , les utilisateurs peuvent 1) déterminer s’ils disposent d’un espace disque suffisant dans la variable `crx-quickstart` sous-répertoire avant extraction, et 2) estimer la taille du jeu de migration et vérifier s’il est pris en charge. Si l’une de ces vérifications est enfreinte, les utilisateurs verront apparaître des avertissements dans l’interface utilisateur de CTT. Grâce à ce mécanisme de sécurisation, vous pouvez éviter les échecs de transfert de contenu et discuter de manière proactive des options de migration avec l’assistance clientèle d’Adobe. Consultez [Détermination de la taille du jeu de migration et de l’espace disque](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#migration-set-size) pour plus d’informations.
+* Garde-fous de vérification de la taille : la fonctionnalité Vérification de la taille de l’outil de transfert de contenu permet de réduire le nombre de transferts de contenu ayant échoué. Grâce à la fonction Vérifier la taille , les utilisateurs peuvent 1) déterminer s’ils disposent d’un espace disque suffisant dans la variable `crx-quickstart` sous-répertoire avant extraction, et 2) estimer la taille du jeu de migration et vérifier s’il est pris en charge. Si l’une de ces vérifications est enfreinte, les utilisateurs voient des avertissements dans l’interface utilisateur de CTT. Grâce à ce mécanisme de sécurisation, vous pouvez éviter les échecs de transfert de contenu et discuter de manière proactive des options de migration avec l’assistance clientèle d’Adobe. Consultez [Détermination de la taille du jeu de migration et de l’espace disque](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#migration-set-size) pour plus d’informations.
 
 ## Analyseur des bonnes pratiques {#bpa-release}
 

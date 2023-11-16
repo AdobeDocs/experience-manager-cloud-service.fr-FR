@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: Découvrez comment utiliser AEM Developer Tools for Eclipse, un module externe Eclipse basé sur le module externe Eclipse pour Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 98%
+source-wordcount: '1192'
+ht-degree: 91%
 
 ---
 
@@ -34,7 +34,7 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 
 >[!NOTE]
 >
->Sous macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Voir le contenu du package** pour trouver le fichier `eclipse.ini`**.**
+>Sur macOS, vous devez cliquer avec le bouton droit de la souris. **Eclipse.app**, puis sélectionnez **Afficher le contenu du module** pour rechercher votre `eclipse.ini`**.**
 
 ## Comment installer AEM Developer Tools pour Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -132,16 +132,16 @@ Vous pouvez utiliser la fonction **Nouveau projet** pour créer la structure qui
 1. Remplacez le contenu de votre projet `PROJECT.ui.apps` par les dossiers `apps` et `etc` de votre package :
 
    1. Dans le panneau Project Explorer (Explorateur de projets), développez `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
-   1. Cliquez avec le bouton droit sur le dossier `apps` et choisissez **Show In** (Afficher dans) > **System Explorer** (Explorateur système).
+   1. Cliquez avec le bouton droit de la souris sur le `apps` dossier et choisissez **Afficher dans** > **Explorateur de systèmes**.
    1. Supprimez les dossiers `apps` et `etc` que vous devriez voir maintenant et placez ici les dossiers `apps` et `etc` de votre package de contenu.
-   1. Dans Eclipse, cliquez avec le bouton droit sur le projet `PROJECT.ui.apps` et choisissez **Refresh** (Actualiser).
+   1. Dans Eclipse, cliquez avec le bouton droit sur la `PROJECT.ui.apps` projet et choisissez **Actualiser**.
 
 1. Faites ensuite de même pour `PROJECT.ui.content` et remplacez son dossier de contenu par celui de vos packages :
 
    1. Dans le panneau Project Explorer (Explorateur de projets), développez `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. Cliquez avec le bouton droit sur le dossier de contenu plus profond et choisissez **Show In** (Afficher dans) > **System Explorer** (Explorateur système).
+   1. Cliquez avec le bouton droit de la souris sur le dossier de contenu profond et choisissez **Afficher dans** -> **Explorateur de systèmes**.
    1. Supprimez le dossier de contenu que vous devriez voir maintenant et placez ici le dossier de contenu de votre package de contenu.
-   1. Dans Eclipse, cliquez avec le bouton droit sur le projet `PROJECT.ui.content` et choisissez **Refresh** (Actualiser).
+   1. Dans Eclipse, cliquez avec le bouton droit sur la `PROJECT.ui.content` projet et choisissez **Actualiser**.
 
 1. Vous devez maintenant mettre à jour les fichiers `filter.xml` de ces deux projets pour qu’ils correspondent au contenu de votre package de contenu. Pour cela, ouvrez le fichier `META-INF/vault/filter.xml` de votre package de contenu dans un éditeur de texte/code distinct.
 
@@ -190,11 +190,11 @@ Vous pouvez utiliser la fonction **Nouveau projet** pour créer la structure qui
 1. Veillez à enregistrer toutes vos modifications. Vous pouvez désormais synchroniser ce nouveau contenu avec votre instance AEM.
 
 1. Dans le panneau Servers (Serveurs), assurez-vous que votre connexion est démarrée. Si ce n’est pas le cas, démarrez-la.
-1. Cliquez sur l’icône **Clean and Publish** (Nettoyer et publier).
+1. Cliquez sur le bouton **Nettoyage et publication** Icône
 
 Une fois cette opération terminée, votre package devrait être exécuté sur votre instance. Lors de l’enregistrement, toute modification est automatiquement synchronisée avec l’instance.
 
-Si vous souhaitez recréer un package à partir de votre projet, cliquez avec le bouton droit de la souris sur `PROJECT.ui.apps` ou `PROJECT.ui.content` et choisissez **Run As** (Exécuter en tant que) > **Maven Install** (Installation Maven).
+Si vous souhaitez recréer un module à partir de votre projet, cliquez avec le bouton droit de la souris sur le `PROJECT.ui.apps` ou `PROJECT.ui.content` et choisissez **Exécutez comme** -> **Installation de Maven**.
 
 Vous disposez désormais d’un dossier cible contenant votre package (nommé `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`, par exemple).
 

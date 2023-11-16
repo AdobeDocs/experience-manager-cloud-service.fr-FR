@@ -1,13 +1,13 @@
 ---
 title: Administration des balises
 description: Découvrez comment administrer des balises dans AEM pour organiser votre contenu.
-source-git-commit: af60a2b8f1e2dd7fc55247ecb0251d7b85f63eb3
+exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2272'
-ht-degree: 5%
+source-wordcount: '2268'
+ht-degree: 6%
 
 ---
-
 
 # Administration des balises {#administering-tags}
 
@@ -125,7 +125,7 @@ Les balises permettent la création flexible de votre propre taxonomie en foncti
 * Vous pouvez créer des balises enfants de balises existantes en sélectionnant la balise parente dans la console avant de créer la balise.
 * Si vous créez une balise sans sélectionner un espace de noms ou une autre balise, vous en créez un.
 
-### Publication de balises {#publishing-tags}
+### Publier des balises {#publishing-tags}
 
 Comme pour la création d’un autre contenu dans AEM, une fois que vous avez créé une balise (ou un espace de noms), elle n’existe que dans l’environnement de création. Pour que vos balises soient disponibles pour vos utilisateurs, vous devez les publier.
 
@@ -153,7 +153,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## Gestion des balises {#managing-tags}
 
-Vous pouvez exécuter un certain nombre d’actions sur les balises et espaces de noms existants afin de les gérer et de les organiser. Sélectionnez simplement une balise ou un espace de noms dans la [console de balisage](#tagging-console) pour afficher dans la barre d’outils les actions disponibles.
+Il existe un certain nombre d’actions que vous pouvez effectuer sur les balises et espaces de noms existants pour les gérer et les organiser. Sélectionnez simplement une balise ou un espace de noms dans la [console de balisage](#tagging-console) pour afficher dans la barre d’outils les actions disponibles.
 
 * [Afficher les propriétés](#viewing-tag-properties)
 * [Modifier](#editing-tags)

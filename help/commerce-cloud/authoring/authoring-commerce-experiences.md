@@ -2,10 +2,10 @@
 title: Création d’expériences commerciales
 description: Découvrez comment créer et créer efficacement des expériences liées au commerce en accédant aux données et au contenu des produits sans quitter le contexte.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 97%
+source-wordcount: '717'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,7 @@ Cliquer sur la catégorie parent ramène l’auteur au niveau du produit.
 
 ![Composant Teaser sans sélection](../assets/authoring/teaser_component_without_selection.png)
 
-La boîte de dialogue de configuration de ce composant nécessite un produit. CIF utilise le SKU comme identifiant de produit. Les auteurs peuvent saisir le SKU manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de produit. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom du produit sélectionné.
+La boîte de dialogue de configuration de ce composant nécessite un produit. CIF utilise le SKU comme identifiant de produit. Les auteurs peuvent saisir le SKU manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de produits. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom du produit sélectionné.
 
 ![Composant Teaser avec sélection](../assets/authoring/teaser_component_with_selection.png)
 

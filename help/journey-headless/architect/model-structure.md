@@ -2,10 +2,10 @@
 title: En savoir plus sur la création de modèles de fragment de contenu dans AEM
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 100%
+source-wordcount: '686'
+ht-degree: 96%
 
 ---
 
@@ -53,7 +53,7 @@ Confirmez en cliquant sur **Créer** et vous pourrez **Ouvrir** votre modèle po
 
 ## Définition de modèles de fragment de contenu {#defining-content-fragment-models}
 
-Lorsque vous ouvrez un nouveau modèle pour la première fois, vous verrez un grand espace vide à gauche et une longue liste de **Types de données** à droite :
+Lorsque vous ouvrez un nouveau modèle pour la première fois, un grand espace vide s’affiche à gauche et une longue liste de **Types de données** à droite :
 
 ![Modèle vide](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 

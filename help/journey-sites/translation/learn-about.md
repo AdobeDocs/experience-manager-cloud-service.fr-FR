@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '491'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Ce document vous aide à comprendre la création de contenu AEM Sites et la mani
 
 ## Présentation d’AEM Sites {#aem-sites}
 
-AEM Sites est une plateforme complète destinée à la création, à la gestion et à la diffusion d’expériences numériques. Les auteurs de contenu utilisent des outils simples WYSIWYG par glisser-déposer pour créer des pages dans un éditeur intuitif, qui effectue le rendu du contenu tel que votre audience le consommera.
+AEM Sites est une plateforme complète destinée à la création, à la gestion et à la diffusion d’expériences digitales. Les auteurs de contenu utilisent des outils simples WYSIWYG par glisser-déposer pour créer des pages dans un éditeur intuitif, qui effectue le rendu du contenu tel que votre audience le consommera.
 
 Les pages qui constituent votre expérience sont faciles à gérer dans la console Sites. Vous disposez ainsi d’un aperçu de votre contenu dans une hiérarchie facile à comprendre, ce qui vous permet de réorganiser, copier et publier facilement votre contenu.
 
@@ -47,7 +47,7 @@ AEM permet non seulement de créer et de gérer facilement du contenu, mais auss
 1. Vérifiez et publiez le contenu traduit.
 
 
-Plus loin dans le parcours, vous découvrirez comment AEM traduit le contenu pas à pas.
+Plus loin dans le parcours, vous découvrirez comment AEM traduit le contenu étape par étape.
 
 ## Et après ? {#what-is-next}
 

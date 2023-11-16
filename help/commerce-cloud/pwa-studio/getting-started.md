@@ -5,16 +5,16 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '764'
+ht-degree: 95%
 
 ---
 
 # Prise en main de l’extension AEM pour PWA Studio {#getting-started-pwa}
 
-PWA Studio s’intègre de manière transparente à Adobe Commerce par le biais de GraphQL. Il offre des options illimitées pour créer des storefronts innovants et attrayants ainsi que d’autres expériences numériques.
+PWA Studio s’intègre de manière transparente à Adobe Commerce par le biais de GraphQL. Il offre des options illimitées pour créer des storefronts innovants et attrayants ainsi que d’autres expériences digitales.
 
 Les fragments de contenu sont des éléments de contenu dotés d’une structure prédéfinie qui leur permet d’être utilisés de manière découplée à l’aide de GraphQL en tant qu’API dans différents formats (par exemple, JSON et Markdown) et rendus indépendamment. Les fragments de contenu incluent tous les types de données et champs requis par GraphQL pour s’assurer que votre application ne demande que les éléments disponibles et reçoit les éléments attendus. La flexibilité qu’ils offrent en termes de structure les rend parfaitement utilisables à plusieurs emplacements et sur plusieurs canaux.
 
@@ -62,8 +62,7 @@ Pour connecter PWA Studio au point d’entrée GraphQL d’AEM, vous pouvez util
 
    Vous trouverez plus d’informations sur la personnalisation du composant Navigation dans [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) et dans la documentation [Framework d’extensibilité](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) de PWA Studio.
 
-1. Le client Apollo s’attend à ce que le point d’entrée GraphQL d’AEM soit à `<https://pwa-studio/endpoint.js>`. Pour mapper le point d’entrée à cet emplacement, vous devez personnaliser la configuration UPWARD de votre application PWA Studio :
-a. Ajoutez la variable AEM_CFM_GRAPHQL à pwa-root/.env et adaptez-la pour qu’elle pointe vers votre point d’entrée GraphQL de fragments de contenu AEM.
+1. Le client Apollo s’attend à ce que le point d’entrée GraphQL d’AEM soit à `<https://pwa-studio/endpoint.js>`. Pour mapper le point de terminaison à cet emplacement, personnalisez la configuration UPWARD de votre application de PWA Studio : a. Ajoutez la variable AEM_CFM_GRAPHQL à pwa-root/.env et adaptez-la pour qu’elle pointe vers votre point de terminaison GraphQL de fragments de contenu AEM.
 
    Exemple : `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
@@ -94,15 +93,15 @@ Consultez la documentation relatives aux fragments de contenu AEM pour configure
 
 * Politique de partage des ressources cross-origin Adobe Granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Définissez la propriété allowedorigin sur le nom d’hôte complet de votre application PWA.
+  Définissez la propriété allowedorigin sur le nom d’hôte complet de votre application PWA.
 
-   Exemple : `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Exemple : `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtre de référent Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Définissez la propriété allow.hosts sur le nom d’hôte de votre application PWA.
+  Définissez la propriété allow.hosts sur le nom d’hôte de votre application PWA.
 
-   Exemple : `pwa-studio-test-vflyn.local.pwadev`
+  Exemple : `pwa-studio-test-vflyn.local.pwadev`
 
 Vous trouverez des exemples complets des deux configurations ici : <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
@@ -128,4 +127,4 @@ Affichez les publications de blog en fonction de certains modèles de fragments 
 
 ### Enrichissement PDP {#pdp-enrichment}
 
-Permet aux professionnels du marketing d’enrichir facilement les PDP avec du contenu supplémentaire qui est géré en tant que fragments de contenu. Pour plus d’informations, voir [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension).
+Permet aux spécialistes marketing d’enrichir facilement les PDP avec du contenu supplémentaire qui est géré en tant que fragments de contenu.  Pour plus d’informations, voir [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension).

@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Découvrez comment commencer à utiliser l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 98%
+source-wordcount: '1427'
+ht-degree: 90%
 
 ---
 
@@ -34,7 +34,7 @@ Seules les versions 2.0.0 et ultérieures seront prises en charge. Il est conse
 >
 >Une erreur de connexion peut également se produire si un jeu de migration a été supprimé de Cloud Acceleration Manager.
 
-L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour réussir l’exécution d’une extraction, les points d’entrée suivants doivent être accessibles à partir de l’instance qui exécute AEM :
+L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour réussir l’exécution d’une extraction, les points de terminaison suivants doivent être accessibles à partir de l’instance AEM :
 
 * Le service de stockage d’objets blob Azure : `casstorageprod.blob.core.windows.net`
 
@@ -76,9 +76,9 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
-1. Connectez-vous à Cloud Acceleration Manager (CAM) et cliquez sur le projet CAM que vous avez créé précédemment pour évaluer votre préparation à AEM as a Cloud Service. Si vous n’avez pas créé de projet CAM, reportez-vous à la section Création et gestion d’un projet dans CAM.
+1. Connectez-vous à Cloud Acceleration Manager (CAM) et cliquez sur le projet CAM que vous avez créé précédemment pour évaluer votre préparation à AEM as a Cloud Service. Si vous n’avez pas créé de projet CAM, reportez-vous à la section Création et gestion d’un projet dans CAM.
 
-1. Cliquez sur la carte **Transfert de contenu**. Vous accédez alors à la vue Liste des jeux de migration.
+1. Cliquez sur le bouton **Transfert de contenu** carte. Vous accédez alors à la vue Liste des jeux de migration.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -98,7 +98,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
    >
    >Le nom doit respecter les mêmes conventions qu’un nœud AEM. Il ne peut donc pas contenir les caractères suivants : . / : [ ] | *
 
-1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Cliquez sur le symbole des trois petits points (**...**) pour ouvrir la liste déroulante, puis cliquez sur **Copier la clé d’extraction**. Vous aurez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
+1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Sélectionnez le symbole des trois points (**..**) pour ouvrir la liste déroulante et sélectionnez **Copier la clé d’extraction**. Vous avez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
 
    >[!NOTE]
    >
@@ -118,7 +118,7 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleratio
 
 1. Après avoir installé la dernière version de l’outil de transfert de contenu sur votre instance Adobe Experience Manager source, accédez à **Opérations - Migration de contenu**.
 
-1. Cliquez sur **Créer un jeu de migration**.
+1. Cliquez sur **Créer un jeu de migration**
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -161,7 +161,7 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleratio
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
@@ -175,15 +175,15 @@ En effectuant une vérification de taille sur le jeu de migration, vous pouvez 
 
 Pour exécuter une vérification de taille, procédez comme suit :
 
-1. Sélectionnez un jeu de migration et cliquez sur **Check Size** (Vérifier la taille).
+1. Sélectionnez un jeu de migration et cliquez sur **Vérifier la taille**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Cela ouvrira la boîte de dialogue **Check Size** (Vérifier la taille).
+1. Cela ouvre la fenêtre **Vérifier la taille** boîte de dialogue.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Cliquez sur **Check Size** (Vérifier la taille) pour démarrer le processus. Vous revenez alors à la vue Liste jeu de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
+1. Cliquez sur **Vérifier la taille** pour démarrer le processus. Vous revenez alors à la vue Liste jeu de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 

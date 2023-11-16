@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 100%
+source-wordcount: '620'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Vous pouvez créer un dossier privé dans l’interface utilisateur d’[!DNL Ad
 
 Pour créer et partager un dossier privé :
 
-1. Dans la console [!DNL Assets], cliquez sur le bouton **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Dossier]** dans le menu.
+1. Dans le [!DNL Assets] , cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Dossier]** dans le menu.
 
    ![Créer un dossier de ressources](assets/create-folder.png)
 

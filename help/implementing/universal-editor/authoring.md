@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 32%
+source-wordcount: '2432'
+ht-degree: 31%
 
 ---
 
@@ -38,7 +38,7 @@ Pour créer du contenu pour une application à l’aide de l’éditeur universe
 
 ## Se connecter {#sign-in}
 
-Une fois que l’application est instrumentée pour fonctionner avec l’éditeur universel, vous devez vous connecter à l’éditeur universel. Vous aurez besoin d’un Adobe ID pour vous connecter et d’[avoir accès à l’éditeur universel.](getting-started.md#request-access)
+Une fois que l’application est instrumentée pour fonctionner avec l’éditeur universel, connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et [ont accès à l’éditeur universel.](getting-started.md#request-access)
 
 Une fois connecté, saisissez l’URL de la page à modifier dans le [la barre d’emplacement.](#location-bar) pour pouvoir commencer à modifier du contenu, par exemple [contenu texte](#text-mode) ou [contenu multimédia.](#media-mode)
 
@@ -192,7 +192,7 @@ En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtr
 
 #### Mode Composants {#component-mode}
 
-En mode Composants, l’auteur du contenu peut cliquer pour sélectionner des composants afin de les modifier, notamment :
+En mode Composants, l’auteur du contenu peut sélectionner les composants à modifier, notamment :
 
 * [Modification de texte brut](#editing-content) en place.
 * [Modification de texte enrichi](#editing-rich-text) en place avec des options de mise en forme supplémentaires affichées dans le rail des propriétés.

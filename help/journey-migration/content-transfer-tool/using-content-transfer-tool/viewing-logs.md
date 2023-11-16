@@ -2,10 +2,10 @@
 title: Affichage des journaux d’un jeu de migration dans l’outil de transfert de contenu
 description: Affichage des journaux d’un jeu de migration dans l’outil de transfert de contenu
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 100%
+source-wordcount: '244'
+ht-degree: 84%
 
 ---
 
@@ -38,6 +38,6 @@ Suivez ensuite les étapes ci-dessous :
 
 ### Journaux d’ingestion
 
-Pour afficher les journaux d’ingestion, accédez à la liste Tâches d’ingestion dans Cloud Acceleration Manager, puis recherchez la tâche de migration souhaitée et cliquez sur les trois points (**...**). Vous pouvez ensuite cliquer sur **Télécharger les journaux**.
+Pour afficher les journaux d’ingestion, accédez à la liste Tâches d’ingestion dans Cloud Acceleration Manager, puis recherchez la tâche de migration souhaitée et cliquez sur les trois points (**..**) de la tâche. Vous pouvez ensuite cliquer sur **Journal de téléchargement** pour télécharger les journaux.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

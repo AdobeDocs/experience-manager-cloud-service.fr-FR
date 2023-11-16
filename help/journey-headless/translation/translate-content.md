@@ -2,10 +2,10 @@
 title: Traduction du contenu découplé
 description: Utilisez le connecteur de traduction pour traduire votre contenu découplé.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2175'
-ht-degree: 99%
+source-wordcount: '2170'
+ht-degree: 95%
 
 ---
 
@@ -130,7 +130,7 @@ Lors de la création automatique du projet de traduction, AEM évalue le contenu
 
 Pour afficher le détail du contenu découplé inclus dans ce projet :
 
-1. Appuyez ou cliquez sur le bouton représentant des points de suspension en bas de la carte **Tâche de traduction**.
+1. Appuyez ou cliquez sur le bouton représentant des points de suspension en bas de la page **Tâche de traduction** carte.
 1. La fenêtre **Tâche de traduction** répertorie tous les éléments de la tâche.
    ![Détails de la tâche de traduction](assets/translation-job-detail.png)
 1. Appuyez ou cliquez sur une ligne pour afficher le détail de cette ligne, en gardant à l’esprit qu’une ligne peut représenter plusieurs éléments de contenu à traduire.
@@ -226,7 +226,7 @@ Si vous accédez à ce dossier via **Navigation** -> **Fichiers** -> **Ressource
 
 La structure de traduction d’AEM reçoit les traductions du connecteur de traduction, puis crée automatiquement la structure de contenu en fonction de la racine de langue et à l’aide des traductions fournies par le connecteur.
 
-Il est important de comprendre que ce contenu n’est pas publié et n’est donc pas prêt à être utilisé pour vos services découplés. Nous découvrirons cette structure de création et de publication et découvrirons comment publier notre contenu traduit à l’étape suivante du parcours de traduction.
+Il est important de comprendre que ce contenu n’est pas publié et n’est donc pas prêt à être utilisé pour vos services découplés. Vous découvrez cette structure de création et de publication et découvrez comment publier du contenu traduit à l’étape suivante du parcours de traduction.
 
 ## Traduction humaine {#human-translation}
 
@@ -242,7 +242,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * être capable de créer des projets de traduction ;
 * savoir comment utiliser des projets de traduction pour traduire votre contenu découplé.
 
-Appuyez-vous sur ces connaissances pour poursuivre votre parcours de traduction découplé AEM en consultant le document [Publication du contenu traduit](publish-content.md), dans lequel vous apprendrez à publier votre contenu traduit et à mettre à jour ces traductions à mesure que votre contenu racine de langue change.
+Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Publier le contenu traduit](publish-content.md) où vous apprenez à publier votre contenu traduit et comment mettre à jour ces traductions à mesure que votre contenu racine de langue change.
 
 ## Ressources supplémentaires {#additional-resources}
 

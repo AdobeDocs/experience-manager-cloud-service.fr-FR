@@ -2,16 +2,16 @@
 title: Prise en main du Parcours de migration vers AEM as a Cloud Service
 description: Commencez votre Parcours de migration en vous familiarisant avec les principes de base de la transition vers AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 100%
+source-wordcount: '582'
+ht-degree: 94%
 
 ---
 
 # Prise en main du Parcours de migration vers AEM as a Cloud Service {#getting-started}
 
-Dans cette partie du Parcours de migration vers AEM as a Cloud Service, vous découvrirez les principes de base de la migration de votre installation On-premise ou Adobe Managed Services d’AEM vers le cloud.
+Dans cette partie du Parcours de migration as a Cloud Service d’AEM, vous découvrez les principes de base du déplacement de votre installation d’AEM sur site ou Adobe Managed Services vers le cloud.
 
 ## Objectif {#objective}
 

@@ -4,10 +4,10 @@ description: L’automatisation de la configuration d’Experience Cloud offre 
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Avant d’utiliser cette fonctionnalité, il est recommandé de suivre les instr
 
 1. Connectez-vous à Adobe Admin Console (https://adminconsole.adobe.com/).
 1. Assurez-vous que l’identifiant de l’organisation IMS approprié est sélectionné dans le coin supérieur droit.
-1. Cliquez sur l’option Navigation dans les produits.
+1. Cliquez sur l’option de navigation Produits .
 1. Vérifiez qu’« Adobe Experience Manager as a Cloud Service » a été configuré pour l’organisation IMS.
 1. Vérifiez qu’« Adobe Analytics » a été configuré pour l’organisation IMS.
 1. Accédez à Cloud Manager (https://experience.adobe.com/cloud-manager).
@@ -46,7 +46,7 @@ L’environnement doit maintenant être prêt pour l’automatisation de la conf
 1. Accédez à **Sites** et sélectionnez la racine du site à intégrer à Adobe Analytics.
 1. Développez le menu du rail latéral et appuyez sur **Configuration d’Analytics**.
 
-   Il s’agit d’une nouvelle option du rail latéral qui ouvre un panneau qui fournit des contrôles et un état pour l’automatisation de la configuration de l’Experience Cloud.
+   Il s’agit d’une nouvelle option du rail latéral qui ouvre un panneau qui fournit des commandes et un état pour l’automatisation de la configuration de l’Experience Cloud.
 1. Appuyez sur le bouton **Intégration d’Analytics**.
 1. Dans la boîte de dialogue qui s’affiche, fournissez un nom au **Identifiant de suite de rapports**.
 

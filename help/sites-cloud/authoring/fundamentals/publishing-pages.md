@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 97%
+source-wordcount: '1801'
+ht-degree: 95%
 
 ---
 
@@ -100,7 +100,7 @@ L’option **Publication rapide** concerne les cas simples. Elle publie immédia
 
 Pour publier une page avec publication rapide :
 
-1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Publication rapide**.
+1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Publication rapide** bouton .
 
    ![Sélection de pages en vue de la publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -120,7 +120,7 @@ La méthode **Gérer la publication** propose plus d’options que **Publication
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
-1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Gérer la publication**.
+1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication** bouton .
 
    ![Sélection de pages en vue de la publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -234,7 +234,7 @@ Lors de la modification d’une page, si vous la dépubliez, sélectionnez **Dé
 
 De la même façon que vous [utilisez l’option Gérer la publication pour publier une page](#manage-publication), vous pouvez l’utiliser pour la dépublication.
 
-1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Gérer la publication**.
+1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication** bouton .
 1. L’assistant **Gérer la publication** démarre. Dans la première étape, **Options**, sélectionnez **Dépublier** au lieu de l’option par défaut, à savoir **Publier**.
 
    ![Dépublication - Options](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

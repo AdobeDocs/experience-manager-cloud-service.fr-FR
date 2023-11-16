@@ -4,17 +4,17 @@ description: Une fois que l’administrateur système a configuré les ressource
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '577'
+ht-degree: 93%
 
 ---
 
 
 # Tâches utilisateur d’AEM {#aem-user-tasks}
 
-Dans cette partie facultative du [parcours d’intégration](overview.md), vous découvrirez comment les utilisateurs AEM peuvent accéder à AEM as a Cloud Service pour créer du contenu.
+Dans cette partie facultative de la fonction [parcours d&#39;intégration,](overview.md) vous découvrez comment AEM utilisateurs peuvent accéder à AEM as a Cloud Service pour créer du contenu.
 
 ## Un peu d’histoire… {#story-so-far}
 
@@ -52,7 +52,7 @@ En tant qu’auteur AEM, vous devez vous connecter à AEM pour commencer à cré
 
 1. Sélectionnez le programme approprié dans la page **Programmes et produits** de Cloud Manager pour lancer la page **Aperçu**. Demandez à votre administrateur système si vous n’êtes pas sûr du programme auquel vous devez accéder.
 
-1. Sur la page **Aperçu** de Cloud Manager, cliquez sur le lien de création à partir de la vignette **Environnements**.
+1. Dans la **Présentation** dans Cloud Manager, cliquez sur le lien de création dans la **Environnements** carte.
 
    ![Vignette Environnement](/help/journey-onboarding/assets/author-environ.png)
 

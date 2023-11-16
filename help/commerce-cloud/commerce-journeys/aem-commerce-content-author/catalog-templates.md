@@ -2,10 +2,10 @@
 title: Gérer les pages et les modèles de catalogue de produits
 description: Découvrez comment gérer les pages et les modèles de catalogue de produits
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 100%
+source-wordcount: '719'
+ht-degree: 88%
 
 ---
 
@@ -89,11 +89,11 @@ Le modèle peut être prévisualisé avec n’importe quelle catégorie/produit.
 
 ![créer un modèle ](assets/create-template-picker.png)
 
-Nous devons maintenant affecter ce modèle à la catégorie spécifique. Ouvrez les propriétés dans le menu **Informations sur la page** et passez à l’onglet commerce. Cliquez sur l’icône du dossier pour sélectionner la catégorie **Shop The Look** dans le sélecteur de catégorie. Il est possible d’affecter plusieurs catégories à un modèle et d’inclure également des sous-catégories en activant la case à cocher.
+Nous devons maintenant affecter ce modèle à la catégorie spécifique. Ouvrez les propriétés dans le menu **Informations sur la page** et passez à l’onglet commerce. Cliquez sur l’icône de dossier pour sélectionner la variable **Magasiner le look** dans le sélecteur de catégorie. Il est possible d’affecter plusieurs catégories à un modèle et d’inclure également des sous-catégories en activant la case à cocher.
 
 ![créer un modèle associé](assets/create-template-associate.png)
 
-Revenez à la page d’accueil principale et cliquez sur la catégorie **Shop The Look** pour afficher le modèle spécifique. Toutes les autres catégories utilisent toujours le modèle générique.
+Revenez à la page d’accueil principale et cliquez sur **Magasiner le look** catégorie pour afficher le modèle spécifique. Toutes les autres catégories utilisent toujours le modèle générique.
 
 ![créer le résultat du modèle](assets/create-template-result.png)
 
@@ -107,7 +107,7 @@ Maintenant que vous avez terminé cette partie du parcours, vous devriez :
 * comprendre comment fonctionnent les modèles génériques
 * avoir créé un modèle individuel ;
 
-Tirer parti de ces connaissances et poursuivre votre parcours en consultant le document [Gérer les expériences de catalogue de produits étape par étape](staged-catalog.md), où vous apprendrez à utiliser des données de produit intermédiaires et des lancements AEM.
+Utilisez ces connaissances et continuez votre parcours en consultant le document. [Gestion des expériences de catalogue de produits étape par étape](staged-catalog.md), où vous apprendrez à utiliser des données de produit intermédiaires et des lancements d’AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 

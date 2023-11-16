@@ -11,10 +11,10 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 97%
+source-wordcount: '2074'
+ht-degree: 96%
 
 ---
 
@@ -438,9 +438,9 @@ Pour déclencher l’événement, vous pouvez utiliser le service de création o
 
 1. Sur la page Sites, sélectionnez la page __My Demo StoreFront > us > en__ et cliquez sur __Modifier__ dans la barre d’action supérieure.
 
-1. Dans la barre d’action supérieure, cliquez sur __Afficher comme publié__, puis cliquez sur n’importe quelle catégorie souhaitée dans la navigation du storefront.
+1. Dans la barre d’actions supérieure, cliquez sur __Afficher comme publié(e)__, puis cliquez sur une catégorie préférée dans la navigation du storefront.
 
-1. Cliquez sur n’importe quelle fiche produit souhaitée dans la __Page produit__, puis sélectionnez __couleur et taille__ pour activer le bouton __Ajouter au panier__.
+1. Cliquez sur n’importe quelle carte de produit préférée dans la __Page de produit__, puis sélectionnez __couleur, taille__ pour activer la variable __Ajouter au panier__ bouton .
 
 
 1. Ouvrez l’extension __Adobe Experience Platform Debugger__ dans le panneau d’extensions du navigateur et sélectionnez le __SDK Web Experience Platform__ dans le rail de gauche.

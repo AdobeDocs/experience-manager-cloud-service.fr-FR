@@ -2,10 +2,10 @@
 title: Validation des transferts de contenu
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 96%
+source-wordcount: '1077'
+ht-degree: 92%
 
 ---
 
@@ -127,7 +127,7 @@ Migration validation took 0 minutes
 
 L’exemple d’échec ci-dessus a été réalisé en exécutant une ingestion, puis en exécutant à nouveau la même ingestion avec l’option Effacer désactivée, de sorte qu’aucun nœud n’était impliqué pendant l’ingestion – les éléments étaient déjà présents sur la cible.
 
-En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur des **Tâches d’ingestion** de Cloud Acceleration Manager. Pour ce faire, cliquez sur les points de suspension (**…**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
+En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur des **Tâches d’ingestion** de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois points (**..**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -138,7 +138,7 @@ Voir [Mappage des utilisateurs et utilisatrices, et migration des entités princ
 
 Une fois l’extraction et l’ingestion terminées, un résumé et un rapport de la migration des entités principales sont disponibles. Ces informations peuvent être utilisées pour valider les utilisateurs, les utilisatrices et les groupes qui ont été migrés avec succès et, peut-être, pour déterminer pourquoi certains n’ont pas été migrés.
 
-Pour afficher ces informations, accédez à Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu. Accédez à **Tâches d’ingestion** et localisez l’ingestion que vous souhaitez vérifier. Cliquez sur les points de suspension (**…**) pour cette ingestion, puis cliquez sur **Afficher le résumé principal** dans la liste déroulante.
+Pour afficher ces informations, accédez à Cloud Acceleration Manager. Cliquez sur votre carte de projet puis sur la carte de transfert de contenu. Accédez à **Tâches d’ingestion** et localisez l’ingestion que vous souhaitez vérifier. Cliquez sur les trois points (**..**) pour cette ingestion, puis cliquez sur **Afficher le résumé principal** dans la liste déroulante.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 

@@ -1,10 +1,10 @@
 ---
 title: Implémentation d’un connecteur AEM
-description: Découvrez comment créer, tester et implémenter un connecteur AEM. En outre, vous découvrirez les modèles d’intégration courants.
+description: Découvrez comment créer, tester et mettre en oeuvre un connecteur AEM. En outre, vous découvrez les modèles d’intégration courants.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '979'
 ht-degree: 98%
 
 ---

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '6440'
+source-wordcount: '6439'
 ht-degree: 94%
 
 ---
@@ -93,7 +93,7 @@ L’éditeur de règles fournit les opérateurs logiques et les événements sui
 * **A sélectionné :** renvoie la valeur True lorsque l’utilisateur sélectionne une option donnée pour une case à cocher, une liste déroulante, un bouton radio.
 * **Est initialisé (événement) :** renvoie la valeur True si un objet de formulaire est généré dans le navigateur.
 * **Est modifié (événement) :** renvoie la valeur True si l’utilisateur modifie la valeur saisie ou l’option sélectionnée pour un objet de formulaire.
-* **Navigation (événement) :** renvoie la valeur True lorsque l’utilisateur clique sur un objet de navigation. Les objets de navigation sont utilisés pour passer d’un panneau à l’autre.
+* **Navigation(event) :** Renvoie true lorsque l’utilisateur clique sur un objet de navigation. Les objets de navigation sont utilisés pour passer d’un panneau à l’autre.
 * **Fin d’étape (événement) :** renvoie la valeur True lorsqu’une étape d’une règle se termine.
 * **Envoi réussi (événement) :** renvoie la valeur True si les données ont bien été envoyées vers un modèle de données de formulaire.
 * **Erreur dans l’envoi (événement) :** renvoie la valeur True si les données n’ont pas été envoyées vers un modèle de données de formulaire.

@@ -4,10 +4,10 @@ description: Découvrez comment intégrer Adobe Target à AEM as a Cloud Service
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -107,7 +107,7 @@ Une propriété est un conteneur qui est rempli d’extensions, de règles et d�
 Les **extensions** sont le conteneur qui gère les paramètres de bibliothèque principaux. L’extension Adobe Target prend en charge les implémentations côté client en utilisant le SDK Target JavaScript pour le web moderne, at.js. Ajoutez les extensions **Adobe Target** et **Adobe ContextHub**.
 
 1. Sélectionnez l’option Catalogue des extensions, puis recherchez Target dans le filtre.
-2. Sélectionnez **Adobe Target** at.js et cliquez sur l’option Installer.
+2. Sélectionner **Adobe Target** at.js et cliquez sur l’option Installer .
    ![Recherche de Target](assets/search_ext1.png "Recherche de Target")
 3. Sélectionnez le bouton **Configure** (Configurer). Notez la fenêtre de configuration avec les informations d’identification du compte Target importées et la version at.js de cette extension.
 4. Sélectionnez **Save** (Enregistrer) pour ajouter l’extension Target à votre propriété Launch. Vous devriez être en mesure de voir l’extension Target répertoriée dans la liste **Installed Extensions** (Extensions installées).

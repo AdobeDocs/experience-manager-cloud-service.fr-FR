@@ -2,10 +2,10 @@
 title: Ajout d’un nom de domaine personnalisé
 description: Découvrez comment ajouter un nom de domaine personnalisé à l’aide de Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 87%
+source-wordcount: '632'
+ht-degree: 83%
 
 ---
 
@@ -30,11 +30,11 @@ Suivez la procédure suivante pour ajouter un nom de domaine personnalisé à pa
 
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 
-1. Cliquez sur **Paramètres du domaine** dans le panneau de navigation de gauche.
+1. Cliquez sur **Paramètres de domaine** dans le panneau de navigation de gauche.
 
    ![Fenêtre Paramètres du domaine](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Cliquez sur le bouton **Ajouter un domaine** en haut à droite pour ouvrir la boîte de dialogue **Ajouter un nom de domaine**.
+1. Cliquez sur le bouton **Ajouter un domaine** en haut à droite pour ouvrir la **Ajouter un nom de domaine** boîte de dialogue.
 
    ![Boîte de dialogue Ajouter un domaine](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -82,7 +82,7 @@ Procédez comme suit pour ajouter un nom de domaine personnalisé à partir de l
 
    1. Entrez le nom de domaine personnalisé.
    1. Sélectionnez le certificat SSL associé à ce nom dans la liste déroulante.
-   1. Cliquez sur **+ Ajouter**.
+   1. Cliquez sur **+Ajouter**.
 
    ![Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

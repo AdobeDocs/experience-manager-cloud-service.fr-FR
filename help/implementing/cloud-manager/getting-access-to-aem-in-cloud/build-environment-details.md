@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 98%
+source-wordcount: '1005'
+ht-degree: 96%
 
 ---
 
@@ -179,7 +179,7 @@ En cas d’utilisation dans un fichier `pom.xml` Maven, il est généralement ut
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
 
-Certaines versions nécessitent d’autres packages système pour fonctionner entièrement. Par exemple, une génération peut appeler un script Python ou Ruby et doit se voir installer un interprète de langue approprié. Pour ce faire, appelez le plug-in [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) dans votre `pom.xml` pour invoquer APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Cet exemple installe Python.
+Certaines versions nécessitent d’autres packages système pour fonctionner entièrement. Par exemple, une version peut appeler un script Python ou Ruby et doit avoir un interpréteur de langue approprié installé. Pour ce faire, appelez le plug-in [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) dans votre `pom.xml` pour invoquer APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Cet exemple installe Python.
 
 ```xml
         <profile>

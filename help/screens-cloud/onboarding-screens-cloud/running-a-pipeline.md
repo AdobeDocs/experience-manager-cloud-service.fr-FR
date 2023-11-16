@@ -2,10 +2,10 @@
 title: Exécution d’un pipeline
 description: Cette page décrit l’exécution d’un pipeline pour un projet Screens as a Cloud Service dans Cloud Manager.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ La section suivante décrit comment configurer le pipeline CI/CD et déployer vo
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. Une fois le processus de création terminé, un lien de création s’affiche à partir de la carte **Environnements** de la page **Vue d’ensemble** de Cloud Manager.
+1. Une fois le processus de création terminé, vous pouvez voir un lien d’auteur à partir du **Environnements** Carte du **Présentation** page.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 

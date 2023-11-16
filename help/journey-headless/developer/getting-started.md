@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 97%
+source-wordcount: '3096'
+ht-degree: 95%
 
 ---
 
@@ -85,7 +85,7 @@ Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 * L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
 * L’API REST Assets vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
-Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Vous pouvez également consulter la section [Ressources supplémentaires](#additional-resources) pour plus d’informations.
+Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours sans interface AEM. Ou, voir [ressources supplémentaires](#additional-resources) pour plus d’informations.
 
 ## Niveaux d’intégration en mode découplé {#integration-levels}
 
@@ -103,7 +103,7 @@ Supposons que votre besoin de base soit au minimum de diffuser du contenu depuis
 
 Ce niveau d’intégration est le modèle découplé traditionnel. Il permet aux auteurs de créer des contenus dans AEM et de les diffuser sans interface utilisateur vers un certain nombre de services externes à l’aide de GraphQL, ou de les modifier dans des services externes à l’aide de l’API Assets. Aucun codage n’est nécessaire dans AEM.
 
-Dans ce modèle, AEM ne sert qu’à créer et à diffuser du contenu en utilisant des fragments de contenu AEM. Le rendu et l’interaction avec le contenu sont délégués à l’application externe consommatrice, souvent une application sur une seule page (SPA).
+Dans ce modèle, AEM ne sert qu’à créer et à diffuser du contenu en utilisant des fragments de contenu AEM. Le rendu et l’interaction avec le contenu sont délégués à l’application externe consommatrice, souvent une application monopage.
 
 #### Niveau 2 : incorporation de la SPA dans AEM – Modèle hybride {#level-2}
 
@@ -115,7 +115,7 @@ Ce niveau a l’avantage de permettre aux auteurs de créer du contenu de maniè
 
 Ce niveau d’intégration repose sur le niveau 2 en permettant de modifier l’essentiel du contenu de la SPA externe dans AEM.
 
-### Vous n’avez pas encore de consommateur externe de contenu découplé, par exemple les applications sur une seule page (SPA). {#do-not-have-a-spa}
+### Vous n’avez pas encore de consommateur externe de contenu découplé, par exemple les applications monopages. {#do-not-have-a-spa}
 
 Si votre objectif est de créer une SPA qui consomme du contenu en toute sécurité depuis AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu découplé et créer également une SPA avec le framework de l’éditeur de SPA d’AEM.
 
@@ -226,7 +226,7 @@ Comme les auteurs interagissent avec les modèles de manière permanente lorsqu�
 
 #### Développeur {#developer}
 
-Les développeurs sont chargés de rapprocher le contenu créé dans AEM découplé et le consommateur de ce contenu. Souvent il s’agit d’une application sur une seule page (SPA), d’une application web progressive (PWA), d’une boutique en ligne ou d’un autre service extérieur à AEM.
+Les équipes de développement sont chargées de rapprocher le contenu créé dans AEM découplé et le consommateur de ce contenu. Souvent il s’agit d’une application monopage, d’une application web progressive (PWA), d’une boutique en ligne ou d’un autre service extérieur à AEM.
 
 GraphQL sert de « liant » entre AEM et les consommateurs de contenu en mode découplé. GraphQL est un langage qui permet d’interroger AEM pour obtenir le contenu nécessaire.
 
@@ -273,7 +273,7 @@ Maintenant que vous avez terminé cette partie du parcours de développement dé
 * avoir conscience des niveaux d’intégration AEM découplé ;
 * être en mesure de définir la portée de votre projet.
 
-Vous devriez poursuivre votre parcours avec AEM découplé en consultant le document [Accès à votre première expérience à l’aide d’AEM découplé](path-to-first-experience.md). Vous pourrez y découvrir comment configurer les outils nécessaires et commencer à réfléchir à la modélisation de vos données dans AEM.
+Continuez votre parcours AEM sans interface utilisateur graphique en consultant le document. [Chemin d’accès à votre première expérience à l’aide d’AEM sans affichage](path-to-first-experience.md) où vous apprenez à configurer les outils nécessaires et à commencer à réfléchir à la modélisation de vos données dans AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 

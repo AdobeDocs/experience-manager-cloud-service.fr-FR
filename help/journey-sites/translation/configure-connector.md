@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * connaître les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de traduction AEM Sites en consultant le document intitulé [Configuration des règles de traduction,](translation-rules.md) dans lequel vous apprendrez à définir le contenu à traduire.
+Tirez parti de ces connaissances et poursuivez votre parcours de traduction AEM Sites en consultant le document. [Configuration des règles de traduction,](translation-rules.md) où vous apprenez à définir le contenu à traduire.
 
 ## Ressources supplémentaires {#additional-resources}
 

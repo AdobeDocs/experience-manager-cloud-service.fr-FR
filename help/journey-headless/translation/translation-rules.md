@@ -2,9 +2,9 @@
 title: Configuration des règles de traduction pour le contenu découplé
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '940'
 ht-degree: 90%
 
 ---
@@ -100,7 +100,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * comprendre ce que font les règles de traduction ;
 * être capable de définir vos propres règles de traduction.
 
-Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Traduire le contenu](translate-content.md) où vous apprendrez comment votre intégration et vos règles fonctionnent ensemble pour traduire du contenu headless.
+Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Traduire le contenu](translate-content.md) où vous découvrez comment votre intégration et vos règles fonctionnent ensemble pour traduire du contenu headless.
 
 ## Ressources supplémentaires {#additional-resources}
 

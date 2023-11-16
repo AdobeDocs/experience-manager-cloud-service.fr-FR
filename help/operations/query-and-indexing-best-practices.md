@@ -3,9 +3,9 @@ title: Bonnes pratiques en matière de requête et d’indexation
 description: Découvrez comment optimiser vos index et requêtes en fonction des bonnes pratiques d’Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3133'
 ht-degree: 49%
 
 ---
@@ -120,7 +120,7 @@ Les tables &quot;Requêtes lentes&quot; et &quot;Requêtes populaires&quot; incl
 * L’instruction de requête elle-même.
 * Détails du dernier thread qui a exécuté la requête, permettant d’identifier la fonction de page ou d’application exécutant la requête.
 * Score &quot;Lecture d’optimisation&quot; pour la requête.
-   * Il s’agit du ratio entre le nombre de lignes/noeuds analysés afin d’exécuter la requête et le nombre de résultats correspondants lus.
+   * Il s’agit du ratio entre le nombre de lignes/noeuds analysés pour exécuter la requête et le nombre de résultats correspondants lus.
    * Une requête pour laquelle chaque restriction (et tout ordre) peut être traité à l’index aura généralement un score supérieur ou égal à 90 %.
 * Détails du nombre maximal de lignes -
    * Lecture : indiquant qu’une ligne a été incluse dans un jeu de résultats.
@@ -132,15 +132,16 @@ La variable `Reset Statistics` est fournie pour supprimer toutes les statistique
 
 ### Expliquer la requête
 
-L’outil Expliquer la requête permet aux développeurs de comprendre le plan d’exécution de la requête (voir [Lecture du plan d’exécution de la requête](#reading-query-execution-plan)), y compris les détails des index utilisés lors de l’exécution de la requête. Vous pouvez l’utiliser pour comprendre l’efficacité de l’indexation d’une requête afin de prédire ou d’analyser rétrospectivement ses performances.
+L’outil Expliquer la requête permet aux développeurs de comprendre le plan d’exécution de la requête (voir [Lecture du plan d’exécution de la requête](#reading-query-execution-plan)), y compris les détails des index utilisés lors de l’exécution de la requête. Vous pouvez l’utiliser pour comprendre l’efficacité avec laquelle une requête est indexée pour prédire ou pour analyser rétrospectivement ses performances.
 
 #### Expliquer une requête
 
 Pour expliquer une requête, procédez comme suit :
+
 * Sélectionnez la langue de requête appropriée à l’aide du `Language` menu déroulant.
 * Saisissez l’instruction de requête dans le champ `Query` champ .
 * Si nécessaire, sélectionnez le mode d’exécution de la requête à l’aide des cases à cocher fournies.
-   * Par défaut, les requêtes JCR ne doivent pas être exécutées pour identifier le plan d’exécution de la requête (ce n’est pas le cas pour les requêtes QueryBuilder).
+   * Par défaut, les requêtes JCR n’ont pas besoin d’être exécutées pour identifier le plan d’exécution de la requête (ce n’est pas le cas pour les requêtes QueryBuilder).
    * Trois options sont proposées pour exécuter la requête :
       * `Include Execution Time` - exécutez la requête, mais ne tentez pas de lire les résultats.
       * `Read first page of results` - exécuter la requête et lire la première &quot;page&quot; de 20 résultats (réplication des bonnes pratiques d’exécution des requêtes).
@@ -238,7 +239,7 @@ Cette section du plan stipule que :
 
 Ce plan d’exécution de requête génère chaque ressource sous `/content/dam` à partir de l’index, puis filtré davantage par le moteur de requête (qui inclura uniquement ceux correspondant à la restriction de propriété non indexée dans le jeu de résultats).
 
-Même si seulement un faible pourcentage de ressources correspond à la restriction `jcr:content/metadata/myProperty = "My Property Value"`, la requête devra lire un grand nombre de noeuds pour (tenter) remplir la &quot;page&quot; de résultats demandée. Cela peut entraîner une requête peu performante, qui s’affichera comme ayant une faible valeur `Read Optimization` score dans l’outil de performances des requêtes) et peut entraîner des messages AVERTISSEMENT indiquant que de grands nombres de noeuds sont parcourus (voir [Traverse d’index](#index-traversal)).
+Même si seulement un faible pourcentage de ressources correspond à la restriction `jcr:content/metadata/myProperty = "My Property Value"`, la requête doit lire un grand nombre de noeuds pour (tenter) remplir la &quot;page&quot; de résultats demandée. Cela peut entraîner une requête peu performante, qui s’affichera comme ayant une faible valeur `Read Optimization` score dans l’outil de performances des requêtes) et peut entraîner des messages AVERTISSEMENT indiquant que de grands nombres de noeuds sont parcourus (voir [Traverse d’index](#index-traversal)).
 
 Pour optimiser les performances de cette seconde requête, créez une version personnalisée du `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) et ajoutez la définition de propriété suivante :
 

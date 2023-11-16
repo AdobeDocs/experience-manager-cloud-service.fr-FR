@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 100%
+source-wordcount: '1704'
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >title="Préparation de l’activation"
 >abstract="Pour garantir une activation fluide et réussie d’AEM as a Cloud Service, vous devez prévoir des périodes de gel du code et du contenu, des itérations de test, des compléments de contenu, des tests de performance, des tests de sécurité, etc."
 
-Dans cette partie du parcours, vous apprendrez à planifier et à effectuer la migration une fois que le code et le contenu sont prêts à être transférés vers AEM as a Cloud Service. En outre, vous apprendrez quelles sont les bonnes pratiques et les limites connues lors de la migration.
+Dans cette partie du parcours, vous apprenez à planifier et à effectuer la migration une fois que le code et le contenu sont prêts à être déplacés vers AEM as a Cloud Service. En outre, vous découvrez les bonnes pratiques et les limites connues lors de la migration.
 
 ## Un peu d’histoire…  {#story-so-far}
 
@@ -138,7 +138,7 @@ Passez en revue cette liste d’activités pour vous assurer d’effectuer une m
 * Configurez le CDN, le SSL et le DNS.
    * Si vous utilisez votre propre réseau de diffusion de contenu, saisissez un ticket d’assistance pour configurer le routage approprié.
       * Consultez [Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) dans la documentation du réseau de diffusion de contenu pour plus d’informations.
-      * Vous devez configurer le SSL et le DNS en fonction de la documentation de votre fournisseur de réseau de diffusion de contenu.
+      * Configurez SSL et DNS en fonction de la documentation de votre fournisseur de réseau de diffusion de contenu.
    * Si vous n’utilisez pas de réseau de diffusion de contenu supplémentaire, configurez le SSL et le DNS conformément à la documentation suivante :
       * Gestion des certificats SSL
          * [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

@@ -2,10 +2,10 @@
 title: Votre boîte de réception
 description: Découvrez comment utiliser les notifications qui arrivent dans votre boîte de réception pour gérer vos tâches.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 98%
+source-wordcount: '912'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ Pour ouvrir la boîte de réception des notifications AEM :
 
 1. Cliquez/appuyez sur l’indicateur dans la barre d’outils.
 
-1. Sélectionnez **Afficher tout**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
+1. Sélectionnez **Afficher tout**. La variable **Boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
 1. La vue par défaut est [Liste](#inbox-list-view), mais vous pouvez également passer à la vue [Calendrier](#inbox-calendar-view). Pour ce faire, utilisez le sélecteur de vue (barre d’outils, en haut à droite).
 
    Vous pouvez également définir les [paramètres d’affichage](#inbox-view-settings) pour ces deux modes ; les options disponibles dépendent du mode actif.
@@ -142,7 +142,7 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
    * Un assistant d&#39;action démarre ;
    * Une page de documentation s’ouvre
 
-   Par exemple, **Déléguer** ouvre une boîte de dialogue :
+   Par exemple : **Déléguer** ouvre une boîte de dialogue :
 
    ![Déléguer la tâche de boîte de réception](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

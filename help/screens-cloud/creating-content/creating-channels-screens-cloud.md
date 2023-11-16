@@ -2,10 +2,10 @@
 title: Création et gestion des canaux dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des canaux dans Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 96%
+source-wordcount: '1087'
+ht-degree: 90%
 
 ---
 
@@ -34,18 +34,18 @@ Pour créer un canal de séquence dans Screens as a Cloud Service, procédez com
 
 1. Accédez à votre projet AEM Screens, par exemple *FirstDigitalExperience*.
 
-1. Sélectionnez le dossier **Canaux** de votre projet, par exemple **FirstDigitalExperience** --> **Canaux** et cliquez sur **Créer** dans la barre d’actions.
+1. Sélectionnez la variable **Canaux** du projet, par exemple **FirstDigitalExperience** —> **Canaux** et cliquez sur **Créer** dans la barre d’actions.
 
    ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. Sélectionnez le modèle, par exemple **Canal de séquence** dans l’assistant **Créer** et cliquez sur **Suivant**.
+1. Sélectionnez le modèle, par exemple : **Canal de séquence** de la **Créer** assistant et cliquez sur **Suivant**.
 
    ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
 
    >[!NOTE]
    > L’assistant **Créer** fournit différents types de modèles lors de la création d’un canal. Consultez [Modèles disponibles](#available-templates) dans l’assistant de création pour plus d’informations.
 
-1. Saisissez le nom de votre canal de séquence, par exemple **LoopingChannelOne** et cliquez sur **Créer**.
+1. Saisissez le nom de votre canal de séquence, par exemple : **LoopingChannelOne** et cliquez sur **Créer**.
 
    ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
@@ -65,7 +65,7 @@ Accédez au canal à partir de votre projet et sélectionnez-le, comme illustré
 
 Pour ajouter du contenu à un canal ou modifier son contenu, suivez les étapes ci-dessous :
 
-1. Sélectionnez le canal que vous souhaitez modifier, tel qu’illustré ci-dessous. Cliquez sur **Modifier** dans l’angle supérieur gauche de la barre d’actions pour ouvrir l’éditeur.
+1. Sélectionnez le canal que vous souhaitez modifier, tel qu’illustré ci-dessous. Cliquez sur **Modifier** dans le coin supérieur gauche de la barre d’actions pour ouvrir l’éditeur.
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 

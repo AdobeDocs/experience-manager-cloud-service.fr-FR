@@ -4,10 +4,10 @@ description: Découvrez comment créer des profils d’utilisateurs dans l’Adm
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 96%
+source-wordcount: '985'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ Les profils d’utilisateurs sont créés et gérés dans l’Admin Console. Aus
 
 ## Créer des profils de produits Cloud Manager {#create-profiles}
 
-Pour configurer correctement la réception des notifications, vous devez créer deux profils d’utilisateurs. Ces étapes ne doivent être effectuées qu’une seule fois.
+Pour configurer correctement la réception des notifications, créez deux profils utilisateur. Ces étapes ne sont effectuées qu’une seule fois.
 
 1. Connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ Pour configurer correctement la réception des notifications, vous devez créer 
 
    ![Liste des instances de l’Admin Console](assets/cloud_manager_instance.png)
 
-1. La liste de tous les profils de produits Cloud Manager configurés s’affiche.
+1. Vous pouvez voir la liste de tous les profils de produits Cloud Manager configurés.
 
    ![Profils de produit de l’Admin Console](assets/cloud_manager_profiles.png)
 

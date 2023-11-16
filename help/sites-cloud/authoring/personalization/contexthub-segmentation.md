@@ -2,10 +2,10 @@
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 98%
+source-wordcount: '1682'
+ht-degree: 95%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 La segmentation est un élément clé de la création d’une campagne. Voir [Compréhension de la segmentation](segmentation.md) pour plus d’informations sur le fonctionnement de la segmentation et en connaître les termes clés.
 
-En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
+Selon les informations que vous avez déjà collectées sur les visiteurs de votre site et les objectifs que vous souhaitez atteindre, définissez les segments et les stratégies nécessaires au contenu ciblé.
 
 Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Les [activités](activities.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
@@ -103,7 +103,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
 1. Dans la console des segments, modifiez le segment que vous venez de créer pour l’ouvrir dans l’éditeur de segments.
 1. Faites glisser une comparaison ou une référence vers l’éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
-1. Double-cliquez ou appuyez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour modifier les paramètres. Dans cet exemple, des personnes situées à Bâle font l’objet d’un test.
+1. Double-cliquez ou appuyez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour modifier les paramètres spécifiques. Dans cet exemple, des personnes situées à Bâle font l’objet d’un test.
 
    ![Test de personnes à Bâle](../assets/contexthub-comparing-property-value.png)
 

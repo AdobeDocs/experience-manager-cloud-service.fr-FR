@@ -2,10 +2,10 @@
 title: Mise en veille et réactivation d’environnements Sandbox
 description: Découvrez comment les environnements d’un programme Sandbox passent automatiquement en mode veille et comment les réactiver.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 100%
+source-wordcount: '681'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Suivez ces étapes pour mettre vos environnements de programme Sandbox en veille
 
    ![Confirmation de la mise en veille](assets/hibernate-2.png)
 
-Une fois la veille effective, un message confirmant la fin du processus de mise en veille de votre environnement s’affiche à l’écran de la **Developer Console**.
+Une fois la mise en veille terminée, vous voyez la notification de fin du processus de mise en veille pour votre environnement dans **Developer Console** écran.
 
 ![Confirmation de veille](assets/hibernate-4.png)
 
@@ -71,7 +71,7 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
 
    * Consultez [Accès à Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) pour plus d’informations sur Developer Console.
 
-1. Cliquez sur **De-hibernate** (Réactiver).
+1. Cliquez sur **Réactiver**.
 
    ![Bouton De-hibernate](assets/de-hibernation-img1.png) (Réactiver)
 

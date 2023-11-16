@@ -3,13 +3,13 @@ title: Gérer des fragments de contenu
 description: Découvrez comment gérer vos fragments de contenu AEM à partir de la console et de l’éditeur, comme base de votre contenu sans interface utilisateur, ou pour la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
+exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 50%
+source-wordcount: '2532'
+ht-degree: 52%
 
 ---
-
 
 # Gérer des fragments de contenu {#managing-content-fragments}
 
@@ -70,7 +70,7 @@ Pour plus d’informations, consultez la section suivante :
 
 ### Structure et gestion de base de la console {#basic-structure-handling-content-fragments-console}
 
-Sélectionner **Fragments de contenu** ouvre la console dans un nouvel onglet.
+Sélection **Fragments de contenu** ouvre la console dans un nouvel onglet.
 
 ![Console Fragments de contenu - Aperçu](assets/cf-managing-console-overview.png)
 
@@ -172,10 +172,10 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
    * Informations uniquement.
    * Peut être utilisé pour [Filtrage rapide](#fast-filtering)
 * **Aperçu**
-   * Informations uniquement:
-      * **Synchronisation**: le fragment de contenu est synchronisé sur la variable **Auteur** et **Aperçu** services.
-      * **Désynchronisé**: le fragment de contenu est désynchronisé sur la page **Auteur** et **Aperçu** services. Vous devez **Publier** to **Aperçu** pour s’assurer que les deux instances redeviennent synchronisées.
-      * vide : le fragment de contenu n’existe pas sur la variable **Aperçu** service.
+   * Informations uniquement :
+      * **En synchronisation** : le fragment de contenu est synchronisé sur les servcies **Auteur** et **Aperçu**.
+      * **Désynchronisé** : le fragment de contenu n’est pas synchronisé sur les services **Auteur** et **Aperçu**. Vous devez **Publier** pour avoir un **Aperçu** et vous assurer que les deux instances sont de nouveau synchronisées.
+      * vide : le fragment de contenu n’existe pas sur le service **Aperçu**.
 * **Modifié**
    * Informations uniquement.
 * **Modifié par**
@@ -201,7 +201,7 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
 
      ![Console Fragments de contenu - Indicateur de langue](assets/cf-managing-console-language-indicator.png)
 
-   * Cliquez/appuyez sur le décompte pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le **Titre** dans la boîte de dialogue.
+   * Cliquez/appuyez sur le décompte pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
 
      ![Console Fragments de contenu - Boîte de dialogue Langue](assets/cf-managing-console-languages-dialog.png)
 
@@ -224,7 +224,7 @@ Pour créer un fragment de contenu :
    >
    >Pour prédéfinir l’emplacement du nouveau fragment, vous pouvez accéder au dossier dans lequel vous souhaitez créer le fragment ou spécifier l’emplacement pendant le processus de création.
 
-1. La boîte de dialogue **Nouveau fragment de contenu** s’ouvre. À partir d’ici, vous pouvez spécifier les éléments suivants :
+1. La variable **Nouveau fragment de contenu** La boîte de dialogue s’ouvre. Vous pouvez spécifier les éléments suivants :
 
    * **Emplacement** : l’emplacement actuel sera renseigné automatiquement, mais vous pouvez sélectionner un autre emplacement si nécessaire.
    * **Modèle de fragment de contenu** : sélectionnez le modèle à utiliser comme base du fragment dans la liste déroulante.
@@ -257,7 +257,7 @@ Pour ouvrir votre fragment à des fins de modification :
 1. Utilisez la console **Fragments de contenu** afin de naviguer jusqu’à l’emplacement de votre fragment de contenu.
 1. Ouvrez le fragment à modifier en le sélectionnant, puis **Ouvrir dans le nouvel éditeur** dans la barre d’outils.
 
-1. L’éditeur de fragment s’ouvre alors. Sélectionnez les **Variation** et apportez vos modifications selon les besoins (elles seront automatiquement enregistrées) :
+1. L’éditeur de fragments s’ouvre. Sélectionnez les **Variation** et apportez vos modifications selon les besoins (elles seront automatiquement enregistrées) :
 
    ![Éditeur de fragment](assets/cf-managing-editor.png)
 
@@ -286,25 +286,25 @@ Vous pouvez également afficher et modifier les balises appliquées à un fragme
 
 Vous pouvez afficher et modifier les propriétés (métadonnées) d’un fragment à l’aide de la variable [Propriétés](/help/sites-cloud/administering/content-fragments/authoring.md) de l’éditeur. Les informations affichées diffèrent entre **Principal** et tout **Variations**.
 
-## Publication et aperçu d’un fragment {#publishing-and-previewing-a-fragment}
+## Publication et prévisualisation d’un fragment {#publishing-and-previewing-a-fragment}
 
-Vous pouvez publier vos fragments de contenu sur :
+Vous pouvez publier vos fragments de contenu dans :
 
-* la valeur **[Service de publication](/help/headless/deployment/architecture.md)** - pour un accès public complet
+* le **[Service de publication](/help/headless/deployment/architecture.md)** - pour un accès public complet ;
 
-* la valeur **[Service de prévisualisation](/help/headless/deployment/architecture.md)** - pour prévisualiser le contenu avant sa disponibilité complète
+* le **[Service de prévisualisation](/help/headless/deployment/architecture.md)** - pour prévisualiser le contenu avant sa disponibilité complète
 
   >[!CAUTION]
   >
-  >Publication de fragments de contenu dans le **Service de prévisualisation** est uniquement disponible à partir de la console Fragments de contenu ; à l’aide de la fonction **Publier** action.
+  >La publication de fragments de contenu dans le **Service de prévisualisation** n’est disponible que depuis la console Fragments de contenu, via l’action **Publier**.
 
   >[!NOTE]
   >
   >Pour plus d’informations sur les environnements d’aperçu, voir :
   >
-  >* [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [Configuration des paramètres OSGi pour le niveau de prévisualisation](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [Débogage de l’aperçu à l’aide de Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >* [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  >* [Configurer les paramètres OSGi pour le niveau de prévisualisation](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  >* [Déboguer l’aperçu à l’aide de Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 >[!CAUTION]
 >
@@ -329,13 +329,13 @@ Après avoir sélectionné **Publier** action :
    * **Maintenant** - sélectionnez l’une des options suivantes : **Service de publication**, ou la variable **Service Preview**; après confirmation, le fragment sera publié immédiatement.
    * **Planification** - en plus du service requis, vous pouvez également sélectionner la date et l’heure de publication du fragment.
 
-1. Fournissez tous les détails de la boîte de dialogue. Par exemple, pour une requête de publication planifiée :
+1. Fournissez tous les détails de la boîte de dialogue. Par exemple, pour une requête de publication planifiée :
 
    ![Boîte de dialogue Publier](assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
    >
-   >Si nécessaire, vous devrez spécifier les références à publier. Par défaut, les références sont également publiées dans le service Preview pour s’assurer qu’il n’y a aucune coupure dans le contenu.
+   >Si nécessaire, vous devrez spécifier les références à publier. Par défaut, les références sont également publiées dans le service de prévisualisation pour s’assurer qu’il n’y a aucune coupure dans le contenu.
 
 1. Confirmez l’action de publication.
 
@@ -345,7 +345,7 @@ Après la publication, l’état du fragment est mis à jour et visible dans l�
 >
 >De plus, lorsque vous [publiez une page qui utilise ce fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
-## Dépublication d’un fragment {#unpublishing-a-fragment}
+## Annuler la publication d’un fragment {#unpublishing-a-fragment}
 
 Vous pouvez annuler la publication de fragments de contenu :
 
@@ -414,7 +414,7 @@ L’icône indique les paramètres régionaux du fragment de contenu, ainsi que 
 
 ![Console Fragments de contenu - Indicateur de langue](assets/cfc-console-language-indicator.png)
 
-Cliquez/appuyez sur le décompte pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le **Titre** dans la boîte de dialogue.
+Cliquez/appuyez sur le décompte pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
 
 ![Console Fragments de contenu - Boîte de dialogue Langue](assets/cf-managing-console-languages-dialog.png)
 

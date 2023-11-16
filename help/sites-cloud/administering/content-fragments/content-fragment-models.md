@@ -3,13 +3,13 @@ title: Modèles de fragment de contenu
 description: Découvrez comment les modèles de fragment de contenu servent de base pour vos fragments de contenu dans AEM. Ces fragments permettent de créer du contenu structuré à utiliser dans une diffusion sans interface utilisateur ou dans la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 57%
+source-wordcount: '3061'
+ht-degree: 60%
 
 ---
-
 
 # Modèles de fragment de contenu {#content-fragment-models}
 
@@ -26,7 +26,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 1. Accédez à **Outils**, **Général**, puis ouvrez les **modèles de fragment de contenu**.
 1. Accédez au dossier approprié à votre [configuration ou sous-configuration](/help/sites-cloud/administering/content-fragments/setup.md).
-1. Utilisation **Créer** pour ouvrir l’assistant.
+1. Utilisez **Créer** pour ouvrir l’assistant.
 
    >[!CAUTION]
    >
@@ -42,7 +42,7 @@ Vous pouvez également définir différentes propriétés ; par exemple, ajouter
 
    ![Titre et description](assets/cf-cfmodels-create.png)
 
-1. Utilisation **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ; ou **Terminé** pour revenir à la console.
+1. Utilisez **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ; ou **Terminé** pour revenir à la console.
 
 ### Modèle de fragment de contenu – Propriétés {#content-fragment-model-properties}
 
@@ -93,9 +93,9 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 1. Accédez à **Outils**, **Général**, puis ouvrez les **modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Ouvrez le modèle requis pour **Modifier**; utilisez l’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
+1. Ouvrez le modèle requis en vue de le **Modifier** ; utilisez l’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
 
-   Une fois ouvert, l’éditeur de modèles affiche :
+   Une fois ouvert, l’éditeur de modèles affiche :
 
    * à gauche : les champs déjà définis
    * à droite : les **types de données** disponibles pour la création des champs (et les **propriétés** à utiliser une fois les champs créés).
@@ -121,7 +121,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
         >
         >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, les noms doivent contenir *only* A-Z, a-z, 0-9 et trait de soulignement &quot;_&quot; comme caractère spécial.
         >
-        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
+        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
      Par exemple :
 
@@ -129,7 +129,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône corbeille. Vous êtes invité à confirmer l’action.
+   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône de la corbeille. Le système vous invite à confirmer l’action.
 
    ![Supprimez](assets/cf-cfmodels-remove-icon.png)
 
@@ -175,12 +175,13 @@ Une sélection de types de données est disponible pour la définition de votre 
 * **Objet JSON.**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
       * Permettre à AEM de stocker directement JSON que vous avez copié/collé à partir d’un autre service.
-      * Le fichier JSON est transmis et généré au format JSON dans GraphQL.
+      * Le fichier JSON est transmis et généré sous la forme JSON dans GraphQL.
       * Inclut la mise en surbrillance de la syntaxe JSON, la saisie automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
 * **Espace réservé pour tabulation**
    * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
       * Elles s’affichent sous forme de séparateurs dans l’éditeur de modèles, séparant les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
       * Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un onglet.
+
      >[!NOTE]
      >
      >Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
@@ -198,10 +199,10 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
   >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
-Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
+Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cela vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances.
 
 * **Libellé du champ**
-La saisie d’un **Libellé du champ** autogénère une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
+Saisie d’un **Libellé du champ** autogénère une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
 
 * **Validation**
 La validation de base est disponible par le biais de mécanismes tels que la propriété **Requis**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
@@ -221,7 +222,7 @@ Le contenu (pour le champ spécifique) doit être unique dans tous les fragments
 
   Cette propriété permet de s’assurer que les auteurs de contenu ne peuvent pas répéter le contenu déjà ajouté dans un autre fragment du même modèle.
 
-  Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement s’affiche lorsque la seconde instance est tentée.
+  Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement est émis en cas de tentative concernant la deuxième instance.
 
   >[!NOTE]
   >
@@ -453,7 +454,7 @@ Pour supprimer un modèle de fragment de contenu :
 1. Accédez à **Outils**, **Général**, puis ouvrez les **modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Sélectionnez votre modèle, suivi de **Supprimer** dans la barre d’outils.
+1. Sélectionnez votre modèle, puis l’option **Supprimer** dans la barre d’outils.
 
    >[!NOTE]
    >

@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 96%
+source-wordcount: '2164'
+ht-degree: 94%
 
 ---
 

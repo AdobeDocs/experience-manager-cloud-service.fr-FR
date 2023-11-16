@@ -2,10 +2,10 @@
 title: Activez AEM Screens pour votre site de démonstration
 description: Découvrez les étapes pour activer l’expérience complète AEM Screens as a Cloud Service sur votre site de démonstration.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 100%
+source-wordcount: '2665'
+ht-degree: 98%
 
 ---
 
@@ -388,7 +388,7 @@ Maintenant que vous avez terminé cette partie du parcours de module complément
 * Comprendre le contenu de la démonstration de We.Cafe.
 * Découvrir comment configurer AEM Screens pour We.Cafe.
 
-Vous êtes maintenant prêt à explorer les fonctionnalités d’AEM Screens à l’aide de vos propres sites de démonstration. Passez à la section suivante du parcours, [Gérer vos sites de démonstration,](manage.md) où vous découvrirez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
+Vous êtes maintenant prêt à explorer les fonctionnalités d’AEM Screens à l’aide de vos propres sites de démonstration. Passez à la section suivante du parcours, [Gérer vos sites de démonstration,](manage.md) où vous découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 
 Vous pouvez également consulter certaines des ressources supplémentaires disponibles dans la [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités rencontrées dans ce parcours.
 

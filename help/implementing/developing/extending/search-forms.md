@@ -2,10 +2,10 @@
 title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2037'
-ht-degree: 100%
+source-wordcount: '2035'
+ht-degree: 98%
 
 ---
 
@@ -575,7 +575,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
    * Vous ajoutiez ou non un nouveau champ :
 
-     Après l’ajout du prédicat, l’onglet **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
+     Après avoir ajouté le prédicat, la variable **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
 
    * Vous souhaitiez ou non mettre à jour un prédicat existant :
 
@@ -634,7 +634,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
 1. Créez le nœud définissant la propriété à rechercher.
 
-   Vous avez besoin d’un nœud racine contenant les définitions des différentes options disponibles pour l’utilisateur.
+   Vous avez besoin d’un noeud racine contenant les définitions des différentes options disponibles pour l’utilisateur.
 
    Les nœuds pour les différentes options ont besoin de propriétés :
 

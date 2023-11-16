@@ -2,10 +2,10 @@
 title: Accorder l’accès au développeur front-end
 description: Intégrez les développeurs front-end à Cloud Manager afin qu’ils aient accès au référentiel Git et au pipeline de votre site AEM.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 100%
+source-wordcount: '784'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Vous devez d’abord ajouter le développeur front-end en tant qu’utilisateur 
 
    ![Profils de produits](assets/product-profiles.png)
 
-1. Pour affecter le développeur front-end aux profils corrects, appuyez ou cliquez sur l’onglet **Utilisateurs** puis sur le bouton **Ajouter un utilisateur**.
+1. Pour affecter le développeur front-end aux profils corrects, appuyez ou cliquez sur le bouton **Utilisateurs** puis l’onglet **Ajouter un utilisateur** bouton .
 
    ![Ajouter un utilisateur](assets/add-user.png)
 

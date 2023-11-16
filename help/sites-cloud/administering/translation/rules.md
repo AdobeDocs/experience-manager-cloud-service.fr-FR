@@ -4,10 +4,10 @@ description: Découvrez comment les règles de traduction identifient le contenu
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1291'
-ht-degree: 100%
+source-wordcount: '1290'
+ht-degree: 99%
 
 ---
 
@@ -171,7 +171,7 @@ Dans l’interface utilisateur des règles de traduction, vous pouvez effectuer 
 
    ![Sélectionner le contexte](../assets/select-context.png)
 
-1. Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cette action ouvre l’éditeur de règles de traduction.
+1. Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cela ouvre l’éditeur de règles de traduction.
 
    ![Éditeur de règles de traduction](../assets/translation-rules-editor.png)
 

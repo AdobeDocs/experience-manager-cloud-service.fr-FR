@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2464'
-ht-degree: 100%
+source-wordcount: '2463'
+ht-degree: 99%
 
 ---
 
@@ -123,7 +123,7 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
 1. Créez les balises nécessaires et la structure de balise appropriée. Chargez les images appropriées dans le référentiel de gestion des ressources numériques (DAM).
 1. Dans l’interface utilisateur d’[!DNL Experience Manager], accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Entraînement des balises intelligentes]**.
 1. Cliquez sur **[!UICONTROL Créer]**. Indiquez un **[!UICONTROL titre]** et une **[!UICONTROL description]**.
-1. Cliquez sur l’icône de dossier dans le champ **[!UICONTROL Balises]**. Une fenêtre contextuelle s’ouvre.
+1. Cliquez sur l’icône de dossier dans **[!UICONTROL Balises]** champ . Une fenêtre contextuelle s’ouvre.
 1. Recherchez ou sélectionnez les balises appropriées parmi les balises existantes dans `cq-tags` que vous souhaitez ajouter au modèle. Cliquez sur **[!UICONTROL Suivant]**.
 
    >[!NOTE]

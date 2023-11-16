@@ -2,10 +2,10 @@
 title: Notifications
 description: Découvrez comment recevoir des informations sur les déploiements de pipeline à l’aide du système de notifications d’Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 89%
+source-wordcount: '584'
+ht-degree: 79%
 
 ---
 
@@ -34,15 +34,15 @@ L’onglet **Annonces** comprend les annonces de produits Adobe. Les annonces co
 
 Cliquez sur une notification ou une annonce pour en afficher les détails. Les notifications liées à des activités telles que les déploiements de pipeline vous permettent d’accéder aux informations de cette activité, telles que la fenêtre d’exécution du pipeline.
 
-Cliquez sur le bouton **Tout afficher** au bas du panneau pour afficher toutes les annonces dans votre boîte de réception.
+Cliquez sur le bouton **Afficher tout** au bas du panneau pour afficher toutes les annonces dans votre boîte de réception.
 
-Cliquez sur le bouton **Tout marquer comme lu** au bas du panneau pour marquer toutes les notifications non lues comme lues et effacer le badge de l’icône en forme de cloche.
+Cliquez sur le bouton **Tout marquer comme lu** au bas du panneau pour marquer toutes les notifications non lues comme lues et effacer le badge de l’icône représentant une cloche.
 
 ## Configuration des notifications {#configuration}
 
 Vous pouvez personnaliser le mode de réception des notifications et les notifications que vous recevez.
 
-Cliquez sur l’icône en forme d’engrenage en bas de la barre latérale de notifications.
+Cliquez sur l’icône d’engrenage en haut de la barre latérale des notifications.
 
 ![Icône Paramètres de notification](assets/notifications-configuration.png)
 

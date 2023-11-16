@@ -2,10 +2,10 @@
 title: Activation de l’exportateur JSON pour un composant
 description: Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 100%
+source-wordcount: '468'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Les composants peuvent être adaptés pour générer l’exportation JSON de leu
 
 L’exportation JSON est basée sur des [modèles Sling](https://sling.apache.org/documentation/bundles/models.html) et sur le framework d’[exportation des modèles Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (lequel s’appuie lui-même sur des [annotations Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-Cela signifie que le composant doit disposer d’un modèle Sling s’il doit exporter du code JSON. Par conséquent, vous devrez suivre ces deux étapes pour activer l’exportation du code JSON sur n’importe quel composant.
+Cela signifie que le composant doit disposer d’un modèle Sling s’il doit exporter du code JSON. Par conséquent, suivez ces deux étapes pour activer l’exportation JSON sur n’importe quel composant.
 
 * [Définition d’un modèle Sling pour le composant](#define-a-sling-model-for-the-component)
 * [Annotation de l’interface du modèle Sling](#annotate-the-sling-model-interface)

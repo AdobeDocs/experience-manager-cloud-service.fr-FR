@@ -2,10 +2,10 @@
 title: Modification de lancements
 description: Après avoir créé un lancement pour votre page (ou ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement de la page (ou des pages).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) pour afficher les actions disponibles.
 1. Sélectionnez **Accéder à la page** pour ouvrir la page à modifier.
 
-Lors de la modification de la page, une indication apparaît dans la barre d’outils supérieure, ainsi que les options **Quitter** et **Naviguer** :
+Lors de la modification de la page, une indication s’affiche dans la barre d’outils supérieure, ainsi que le **Laisser** et **Naviguer** options :
 
 ![Quitter et Naviguer apparaissent depuis l’éditeur de page](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

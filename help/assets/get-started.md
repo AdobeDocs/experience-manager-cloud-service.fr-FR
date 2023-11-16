@@ -3,10 +3,10 @@ title: Prise en main d’ [!DNL Assets view]
 description: Accès, connexion, cas d’utilisation pris en charge et problèmes connus dans [!DNL Assets view].
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 88cbaae2ad8b610b8cd14b3ba0a92e7238ae8e9f
-workflow-type: ht
-source-wordcount: '390'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 96%
 
 ---
 
@@ -31,9 +31,9 @@ Adobe fournit la solution et ajoute la personne désignée de votre organisation
 
 Lors de la connexion, après avoir fourni les informations d’identification, [!DNL Assets view] vous invite à sélectionner un compte. Dans ce cas, sélectionnez `Company or School Account` pour continuer.
 
-## Configuration d’[!DNL Assets view] {#configuration}
+## Configuration de [!DNL Assets view] {#configuration}
 
-Pour ouvrir les préférences, cliquez sur votre avatar dans le coin supérieur droit de l’interface utilisateur. Vous pouvez basculer entre les thèmes clairs et sombres dans les préférences de la solution.
+Pour ouvrir les préférences, cliquez sur l’avatar dans le coin supérieur droit de l’interface utilisateur. Vous pouvez basculer entre les thèmes clairs et sombres dans les préférences de la solution.
 
 Si vous faites partie de différentes organisations, vous pouvez également changer d’organisation et accéder à vos comptes de différentes organisations.
 

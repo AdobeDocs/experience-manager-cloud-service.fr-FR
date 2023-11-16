@@ -3,10 +3,10 @@ title: « Interface utilisateur dʼ[!DNL Assets view] »
 description: Comprendre l’interface utilisateur et de la navigation dans [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 98%
+source-wordcount: '894'
+ht-degree: 96%
 
 ---
 
@@ -68,7 +68,7 @@ Dans [!DNL Assets view], vous pouvez afficher les ressources, les dossiers et le
 
 Pour localiser une ressource, vous pouvez trier les ressources par ordre croissant ou décroissant de `Name`, `Relevancy`, `Size`, `Modified` et `Created`.
 
-Pour accéder à un dossier, double-cliquez sur la miniature du dossier ou sélectionnez le dossier dans la barre latérale gauche. Pour afficher les détails d’un dossier, sélectionnez-le et cliquez sur Détails dans la barre d’outils supérieure. Pour parcourir la hiérarchie de haut en bas, utilisez la barre latérale gauche ou le chemin de navigation en haut.
+Pour accéder à un dossier, double-cliquez sur les miniatures du dossier ou sélectionnez le dossier dans la barre latérale gauche. Pour afficher les détails d’un dossier, sélectionnez-le et cliquez sur Détails dans la barre d’outils supérieure. Pour parcourir la hiérarchie de haut en bas, utilisez la barre latérale gauche ou le chemin de navigation en haut.
 
 ![Parcourir les dossiers](assets/browsing-folders.png)
 

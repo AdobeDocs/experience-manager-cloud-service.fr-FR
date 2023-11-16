@@ -2,10 +2,10 @@
 title: Règlement sur la protection et la confidentialité des données – Niveau de préparation d’Adobe Experience Manager as a Cloud Service Sites
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Sites relative aux différents règlements sur la protection et la confidentialité des données ; notamment le Règlement général sur la protection des données (RGPD) de l’UE et la Loi sur la protection de la vie privée des consommateurs de Californie, ainsi que la manière de se conformer à ces règlements lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 100%
+source-wordcount: '1024'
+ht-degree: 98%
 
 ---
 
@@ -31,11 +31,11 @@ Pour plus d’informations, consultez le [centre de traitement des données pers
 
 ## Niveau de création AEM {#aem-author-tier}
 
-Les comptes utilisateur et le contenu généré par les utilisateurs sur le serveur de création sont abordés dans la [documentation d’AEM Foundation](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
+Les comptes d’utilisateur et le contenu généré par les utilisateurs ou utilisatrices sur le serveur de création sont abordés dans la [documentation d’AEM Foundation](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
 
 ## Niveau de publication AEM {#aem-publish-tier}
 
-Les comptes utilisateur utilisés pour authentifier les visiteurs sur le site et le contenu généré par les utilisateurs sur le serveur de publication sont abordés dans la [documentation d’AEM Foundation](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
+Les comptes d’utilisateurs utilisés pour authentifier les personnes qui se rendent sur le site et le contenu généré par les utilisateurs et utilisatrices sur le serveur de publication sont abordés dans la [documentation d’AEM Foundation](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
 
 Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
 
@@ -60,7 +60,7 @@ Pour l’exclusion :
 
    * Pour exclure l’agrégation et l’analyse des données relatives à votre visite sur ce site, il est nécessaire d’installer un cookie sur votre navigateur. Ce cookie identifie que vous avez choisi l’exclusion.
 
-     Si vous supprimez le cookie d’exclusion, ou si vous changez d’ordinateur ou de navigateur web, vous devez procéder à nouveau à l’exclusion.
+     Si vous supprimez le cookie d’exclusion, ou si vous changez d’ordinateur ou de navigateur Web, vous devez procéder à nouveau à l’exclusion.
 
      Exclusion : excluez-moi de l’agrégation et de l’analyse des sessions visiteur (installez le cookie d’exclusion `amcglobal.sc.omtrdc.net`) – Cliquez ici.
 

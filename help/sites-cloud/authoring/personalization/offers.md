@@ -2,10 +2,10 @@
 title: Créer et gérer des offres (console Offres)
 description: Utiliser la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Ajoutez des balises, le cas échéant.
 
 1. Confirmez avec **Terminé**.
 
-   Si vous accédez maintenant à la console **Offres de fragments d’expérience**, vous verrez votre nouveau fragment d’expérience, ainsi que ses variations associées.
+   Si vous accédez maintenant à la **Offres de fragments d’expérience** console, vous pouvez afficher votre nouveau fragment d’expérience, ainsi que ses variations associées.
 
 ### Ciblage à l’aide du modèle d’offre {#targeting-offers-template}
 

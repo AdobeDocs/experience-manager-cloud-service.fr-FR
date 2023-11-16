@@ -2,10 +2,10 @@
 title: Création et gestion des affichages dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des affichages dans Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '663'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Ce document vous aide à comprendre comment créer et gérer des affichages dans
 Pour créer l’affichage à partir du fournisseur de services Screens, procédez comme suit :
 
 1. Accédez au fournisseur de services Screens à partir de votre instance AEM Cloud Service.
-1. Sélectionnez **Affichages** dans le panneau de navigation de gauche et cliquez sur **Créer** dans le coin supérieur droit de l’écran.
+1. Sélectionner **Affichages** dans le panneau de navigation de gauche, puis cliquez sur **Créer** dans le coin supérieur droit de l’écran.
 
    ![image](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -35,7 +35,7 @@ Pour créer l’affichage à partir du fournisseur de services Screens, procéde
 
    ![image](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Saisissez le titre **LoopingChannelDisplay** dans **Nom d’affichage** et cliquez sur **Créer**.
+1. Saisissez le titre comme **LoopingChannelDisplay** in **Nom d’affichage** et cliquez sur **Créer**.
 
    ![image](/help/screens-cloud/assets/display/disp3.png)
 
@@ -47,7 +47,7 @@ Pour créer l’affichage à partir du fournisseur de services Screens, procéde
 
 Vous pouvez supprimer un affichage du fournisseur de services Screens.
 
-Sélectionnez l’affichage et cliquez sur **Supprimer** dans la partie inférieure du panneau, comme illustré ci-dessous.
+Sélectionnez l’affichage et cliquez sur **Supprimer** au bas du panneau, comme illustré dans la figure ci-dessous.
 
 ![image](/help/screens-cloud/assets/display/disp-5.png)
 

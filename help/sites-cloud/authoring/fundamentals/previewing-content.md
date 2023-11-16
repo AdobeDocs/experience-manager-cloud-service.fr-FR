@@ -2,10 +2,10 @@
 title: Prévisualisation du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant sa mise en ligne.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 86%
+source-wordcount: '315'
+ht-degree: 77%
 
 ---
 
@@ -26,7 +26,7 @@ Pour plus d’informations sur les environnements de prévisualisation, consulte
 
 Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’interface utilisateur de **Publication gérée**.
 
-1. Dans la console Sites, sélectionnez la ou les pages à envoyer en prévisualisation, puis cliquez sur le bouton **Gérer la publication**
+1. Dans la console Sites , sélectionnez la ou les pages à envoyer en prévisualisation, puis cliquez sur le bouton **Gérer la publication** bouton .
 1. Dans l’assistant suivant, sélectionnez **Aperçu** comme destination.
 
    ![publication gérée](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)

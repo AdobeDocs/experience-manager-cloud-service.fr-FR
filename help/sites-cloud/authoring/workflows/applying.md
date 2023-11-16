@@ -2,10 +2,10 @@
 title: Application de workflows aux pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 100%
+source-wordcount: '657'
+ht-degree: 93%
 
 ---
 
@@ -52,9 +52,7 @@ Vous pouvez démarrer un workflow des deux manières suivantes :
 * [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
-Dans les deux cas, vous devez :
-
-* [indiquer les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
+Dans les deux cas, vous devez [Spécification des détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Démarrage d’un workflow à partir de la barre d’outils Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -123,7 +121,7 @@ Indiquez les détails suivants :
    * Une ressource existante pour afficher d’autres actions :
 
       * **Inclure les enfants** pour indiquer que les enfants de la ressource seront inclus dans le workflow.
-Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
+Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection en fonction des éléments suivants :
 
          * Inclure seulement les enfants immédiats
          * Inclure seulement les pages modifiées
@@ -143,6 +141,6 @@ Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection s
 
 ## Démarrage d’un workflow à partir de l’éditeur de page {#starting-a-workflow-from-the-page-editor}
 
-Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
+Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Une boîte de dialogue s’ouvre, dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
 
 ![Démarrage d’un workflow à partir de l’éditeur de page](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

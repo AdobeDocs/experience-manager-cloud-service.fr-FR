@@ -2,10 +2,10 @@
 title: Personnaliser le thème du site
 description: Découvrez comment le thème du site est créé, comment le personnaliser et comment le tester à l’aide du contenu réel d’AEM.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '962'
+ht-degree: 96%
 
 ---
 
@@ -135,7 +135,7 @@ Maintenant que vous avez terminé cette partie du parcours de création rapide d
 * Voir comment tester vos personnalisations de thème à l’aide de contenu d’AEM réel via un proxy local.
 * Savoir comment valider vos modifications dans le référentiel Git d’AEM.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Déployer votre thème personnalisé](deploy-theme.md), qui vous apprendra à déployer le thème à l’aide du pipeline front-end.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document. [Déployer Votre Thème Personnalisé,](deploy-theme.md) où vous apprenez à déployer le thème à l’aide du pipeline front-end.
 
 ## Ressources supplémentaires {#additional-resources}
 
