@@ -291,7 +291,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experi
 
         >[!NOTE]
         >
-        Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+        >Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer vos modifications et revenir à la page du navigateur.
 1. Publiez l’image interactive. La publication fournit la bannière via le cloud et génère également un code incorporé qui vous permet de l’intégrer à un autre site web.
@@ -304,7 +304,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experi
 
    >[!NOTE]
    >
-   Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
+   >Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
 
 ### (Facultatif) Aperçu des images interactives {#optional-previewing-interactive-images}
 
