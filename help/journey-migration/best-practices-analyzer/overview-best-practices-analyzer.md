@@ -2,10 +2,10 @@
 title: Présentation de l’analyseur de bonnes pratiques
 description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour évaluer le respect de votre mise en oeuvre AEM des bonnes pratiques recommandées.
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 94%
+ht-degree: 80%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Présentation de l’analyseur de bonnes pratiques"
->abstract="L’analyseur de bonnes pratiques permet une évaluation de l’implémentation d’AEM actuelle en indiquant les domaines qui ne respectent pas les bonnes pratiques AEM. Il donne également des orientations sur les étapes à suivre pour adopter de bonnes pratiques concernant AEM. En outre, l’analyseur contribue à accélérer les processus d’évaluation du niveau de préparation à la migration entre un déploiement d’Adobe Experience Manager (AEM) existant et AEM as a Cloud Service."
+>abstract="L’analyseur de bonnes pratiques permet une évaluation de l’implémentation d’AEM actuelle en indiquant les domaines qui ne respectent pas les bonnes pratiques AEM. Il donne également des orientations sur les étapes à suivre pour adopter de bonnes pratiques concernant AEM. Cela permet également d’accélérer les processus d’évaluation de la préparation au passage d’un déploiement Adobe Experience Manager (AEM) existant à AEM as a Cloud Service."
 
-L’analyseur de bonnes pratiques permet une évaluation de l’implémentation d’AEM actuelle en indiquant les domaines qui ne respectent pas les bonnes pratiques AEM. Il donne également des orientations sur les étapes à suivre pour adopter de bonnes pratiques concernant AEM. En outre, l’analyseur contribue à accélérer les processus d’évaluation du niveau de préparation à la migration entre un déploiement d’Adobe Experience Manager (AEM) existant et AEM as a Cloud Service.
+L’analyseur de bonnes pratiques permet une évaluation de l’implémentation d’AEM actuelle en indiquant les domaines qui ne respectent pas les bonnes pratiques AEM. Il donne également des orientations sur les étapes à suivre pour adopter de bonnes pratiques concernant AEM. Cela permet également d’accélérer les processus d’évaluation de la préparation au passage d’un déploiement Adobe Experience Manager (AEM) existant à AEM as a Cloud Service.
 
 L’outil génère un rapport destiné à identifier les domaines de reconfiguration potentielle, première étape du parcours de transition vers AEM as a Cloud Service.
 

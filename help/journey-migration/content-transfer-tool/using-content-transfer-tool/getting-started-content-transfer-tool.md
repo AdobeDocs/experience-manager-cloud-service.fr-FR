@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Découvrez comment commencer à utiliser l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 90%
+source-wordcount: '1424'
+ht-degree: 87%
 
 ---
 
@@ -74,7 +74,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 >abstract="Découvrez comment créer et gérer un jeu de migration et comment copier la clé d’extraction."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration?lang=fr" text="Tutoriel – Utilisation de l’outil de transfert de contenu"
 
-<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
+<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
 1. Connectez-vous à Cloud Acceleration Manager (CAM) et cliquez sur le projet CAM que vous avez créé précédemment pour évaluer votre préparation à AEM as a Cloud Service. Si vous n’avez pas créé de projet CAM, reportez-vous à la section Création et gestion d’un projet dans CAM.
 
@@ -111,7 +111,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
 >title="Renseigner le jeu de migrations"
->abstract="Lorsque vous avez créé un jeu de migrations, celui-ci doit être renseigné avec le contenu de l’instance source qui doit être déplacée vers l’environnement AEM as a Cloud Service. Pour ce faire, l’outil de transfert de contenu doit être installé sur l’instance source."
+>abstract="Après la création d’un jeu de migration, il doit être renseigné avec le contenu de l’instance source qui doit être déplacé vers l’environnement as a Cloud Service AEM. Pour ce faire, l’outil de transfert de contenu doit être installé sur l’instance source."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=fr" text="Extraction de contenu"
 
 Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration Manager, vous devez installer la dernière version de l’outil de transfert de contenu sur votre instance source Adobe Experience Manager (AEM). Consultez cette section pour savoir comment renseigner le jeu de migration.
