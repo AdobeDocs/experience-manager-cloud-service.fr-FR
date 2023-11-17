@@ -2,10 +2,10 @@
 title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 98%
+source-wordcount: '2885'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Ce document contient les informations suivantes :
 
 Pour configurer la manière dont vos sites partagent du contenu personnalisé, vous devez effectuer les étapes suivantes :
 
-1. [Créer une zone](#creating-new-areas) ou [créer une zone comme Live Copy](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *zone* de la page, c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy vous permet d’hériter du contenu entre les structures du site.
+1. [Création d’une zone](#creating-new-areas) ou [création d’une zone comme Live Copy](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *zone* de la page, c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy vous permet d’hériter du contenu entre les structures du site.
 
 1. [Lier votre site ou votre page](#linking-sites-to-an-area) à une zone.
 
@@ -121,7 +121,7 @@ Vous pouvez à tout moment suspendre ou désolidariser complètement l’hérita
 
 Dans AEM, vous avez la possibilité de créer une zone ou de créer une zone en tant que Live Copy. La création d’une zone regroupe les activités et tout ce qui appartient à ces activités, telles que les offres, les expériences, etc. Vous créez une zone lorsque vous souhaitez créer un ensemble complètement distinct de contenu ciblé ou partager un ensemble de contenu ciblé.
 
-Si, toutefois, vous disposez d’un héritage configuré via le MSM entre les deux sites, vous pouvez hériter des activités. Dans ce cas, vous créez une zone en tant que Live Copy, où Y est une Live Copy de X et hérite donc également de toutes les activités.
+Si, toutefois, vous disposez d’un héritage configuré via le MSM entre les deux sites, vous pouvez hériter des activités. Dans ce cas, vous créez une zone comme Live Copy, où Y est une Live Copy de X et hérite donc également de toutes les activités.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Les zones peuvent couvrir des activités et des offres. Après avoir créé une 
 >
 >La zone par défaut appelée Zone de Principal est réduite par défaut lorsque vous appuyez ou cliquez sur le nom d’une marque. **Jusqu’à** vous créez une autre zone. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
 
-Pour créer une zone :
+Pour créer une zone :
 
 1. Accédez à **Personnalisation** > **Activités** ou **Offres** et sélectionnez ensuite votre marque.
 1. Appuyez ou cliquez sur **Créer une zone**.

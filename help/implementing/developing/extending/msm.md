@@ -1,13 +1,13 @@
 ---
 title: Étendre Multi Site Manager
 description: Découvrez comment étendre les fonctionnalités de Multi Site Manager.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2436'
-ht-degree: 65%
+source-wordcount: '2435'
+ht-degree: 66%
 
 ---
-
 
 # Étendre Multi Site Manager {#extending-the-multi-site-manager}
 
@@ -77,7 +77,7 @@ Vous pouvez créer des actions de synchronisation personnalisées à utiliser av
 
 Pour ce faire, créez deux classes :
 
-* Une implémentation de l’interface  [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) qui effectue l’action.
+* Une implémentation de l’interface [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) qui effectue l’action.
 * Un composant OSGi qui met en oeuvre la variable [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) et crée des instances de votre `LiveAction` class
 
 La `LiveActionFactory` crée des instances de la classe `LiveAction` pour une configuration donnée :
@@ -132,7 +132,7 @@ Les objets suivants sont fournis en tant que paramètres de la méthode `execute
 
 * A [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) qui représente la source de la Live Copy ;
 * A `Resource` qui représente la cible de la Live Copy.
-* La variable [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) pour la Live Copy
+* L’objet [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) pour la Live Copy
    * La valeur `autoSave` indique si votre `LiveAction` doit enregistrer les modifications apportées au référentiel
    * La variable `reset` indique le mode de réinitialisation du déploiement.
 
@@ -165,7 +165,7 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 
 ### Créer la configuration de déploiement {#create-the-rollout-configuration}
 
-Pour créer une configuration de déploiement :
+Pour créer une configuration de déploiement :
 
 1. Ouvrez le CRXDE Lite sur `https://<host>:<port>/crx/de`.
 

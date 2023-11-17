@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 89%
+source-wordcount: '1387'
+ht-degree: 88%
 
 ---
 
@@ -116,7 +116,7 @@ Pour autoriser le téléchargement de DAM à partir de votre gestion des ressour
 
    `/apps/<your-app-name>/config.publish`
 
-1. Dans le dossier de configuration, créez un fichier de type `nt:file` nommé `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
+1. Dans le dossier de configuration, créez un fichier de type `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Remplissez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` avec les éléments suivants. Définit une taille maximale (en octets) pour le téléchargement en tant que valeur de `asset.download.prezip.maxcontentsize`. L’exemple ci-dessous configure la taille maximale du téléchargement ZIP pour qu’il ne dépasse pas 100 Ko.
 
    ```java

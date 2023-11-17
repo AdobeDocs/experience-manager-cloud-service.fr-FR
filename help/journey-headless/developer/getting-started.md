@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3096'
-ht-degree: 95%
+source-wordcount: '3095'
+ht-degree: 94%
 
 ---
 
@@ -117,7 +117,7 @@ Ce niveau d’intégration repose sur le niveau 2 en permettant de modifier l�
 
 ### Vous n’avez pas encore de consommateur externe de contenu découplé, par exemple les applications monopages. {#do-not-have-a-spa}
 
-Si votre objectif est de créer une SPA qui consomme du contenu en toute sécurité depuis AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu découplé et créer également une SPA avec le framework de l’éditeur de SPA d’AEM.
+Si votre objectif est de créer un SPA qui consomme du contenu en toute sécurité à partir d’AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu sans affichage et créer également un  avec la structure de l’éditeur d’.
 
 Avec cet éditeur, la SPA consomme non seulement des contenus issus d’AEM, mais elle est en outre entièrement modifiable dans AEM par les auteurs de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
 

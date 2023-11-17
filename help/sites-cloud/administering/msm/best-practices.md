@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 95%
+source-wordcount: '1419'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ Notez qu’AEM propose deux méthodes principales pour créer des Live Copies 
 
 Voici quelques points à garder à l’esprit lors de la création d’un site :
 
-* Pour créer un site, vous avez besoin d’une [configuration de plan directeur](creating-live-copies.md#managing-blueprint-configurations).
+* Pour créer un site, vous devez disposer d’un [configuration du plan directeur](creating-live-copies.md#managing-blueprint-configurations).
 * Pour permettre la sélection des chemins de langue afin de créer un site, les racines de langue correspondantes doivent exister dans le plan directeur (source).
 * Une fois qu’un [site a été créé comme une Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (en sélectionnant **Créer**, puis **Site**), les deux premiers niveaux de cette Live Copy sont *peu profonds*. Les enfants de la page n’appartiennent pas à la relation activée, mais un déploiement descend toujours si une relation activée correspondant au déclencheur est détectée.
 

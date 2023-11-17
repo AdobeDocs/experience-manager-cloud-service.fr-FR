@@ -2,9 +2,9 @@
 title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer de nouveaux profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs responsables de cloud.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1501'
 ht-degree: 2%
 
 ---

@@ -2,10 +2,10 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez en modifier le contenu pour effectuer les mises à jour nécessaires
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 94%
+source-wordcount: '2975'
+ht-degree: 93%
 
 ---
 
@@ -161,7 +161,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
 ### Insertion d’un composant à partir de l’explorateur de ressources {#inserting-a-component-using-the-assets-browser}
 
-Vous pouvez également ajouter un nouveau composant à la page en faisant glisser un élément depuis l’[explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
+Vous pouvez également ajouter un nouveau composant à la page en faisant glisser une ressource depuis l’ [navigateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Cela crée automatiquement un composant du type approprié (et contenant la ressource).
 
 Ce comportement peut être configuré pour votre installation. Pour plus d’informations, voir Configuration d’un système de paragraphes de manière à faire glisser une ressource pour créer une instance de composant. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 

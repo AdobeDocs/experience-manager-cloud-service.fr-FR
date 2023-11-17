@@ -2,10 +2,10 @@
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '893'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ AEM fournit les modèles prêts à l’emploi suivants à utiliser lors de la cr
 * Product Photo Shoot Project 
 -->
 
-Les étapes de création d’un projet sont identiques d’un projet à l’autre. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-cloud/authoring/projects/overview.md) et les [workflows](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Pour créer un projet :
+Les étapes de création d’un projet sont identiques d’un projet à l’autre. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-cloud/authoring/projects/overview.md) et les [workflows](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Pour créer un projet :
 
 1. Dans **Projets**, appuyez/cliquez sur **Créer** pour ouvrir l’assistant **Créer un projet** :
 1. Sélectionnez le modèle, puis cliquez sur **Suivant**.
@@ -135,7 +135,7 @@ Pour activer/désactiver un projet :
 
    >[!NOTE]
    >
-   >Vous devrez peut-être ajouter cette mosaïque si elle ne figure pas déjà dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
+   Vous devrez peut-être ajouter cette mosaïque si elle ne figure pas déjà dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
 
 1. Appuyez/cliquez sur **Modifier**.
 1. Basculez la valeur du sélecteur entre **Actif** et **Inactif**.

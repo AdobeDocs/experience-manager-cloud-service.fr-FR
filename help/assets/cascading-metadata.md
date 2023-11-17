@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 98%
+source-wordcount: '984'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ à conditionner. Spécifiez un nom et un chemin de propriété dans l’onglet **[!UICONTROL Paramètres]**.
 
-   Pour créer un onglet, appuyez/cliquez sur `+` afin d’ajouter un onglet, puis ajoutez un champ de métadonnées.
+   Pour créer un onglet, appuyez/cliquez sur `+` pour ajouter un onglet, puis ajouter un champ de métadonnées.
 
    ![add_tab](assets/add_tab.png)
 

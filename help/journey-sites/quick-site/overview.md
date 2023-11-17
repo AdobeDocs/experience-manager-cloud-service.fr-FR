@@ -2,10 +2,10 @@
 title: Parcours de création rapide de site AEM
 description: Commencez ici votre parcours guidé à travers l’outil convivial de création rapide de site AEM, qui vous permet de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement ce site sans aucune connaissance du back-end AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Commencez ici votre parcours guidé à travers l’outil convivial de création 
 
 AEM Sites est une suite d’outils puissants pour la création et la gestion d’expériences digitales. Les auteurs et autrices de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il est diffusé par AEM à vos audiences sur l’ensemble des canaux.
 
-L’outil de création rapide de site AEM permet aux non-développeurs de créer rapidement un site à partir de zéro à l’aide de modèles de sites. Une fois créé, l’outil de création rapide de site permet également une personnalisation rapide du thème et du style du site AEM (JavaScript, CSS et ressources statiques). Cela permet au développeur front-end, qui n’a besoin d’aucune connaissance d’AEM, de travailler séparément et parallèlement aux créateurs de contenu. L’administrateur d’AEM télécharge simplement le thème du site et le fournit au développeur front-end, qui le personnalise à l’aide de ses outils favoris, puis valide les modifications dans le référentiel de code AEM, qui est ensuite déployé.
+L’outil de création rapide de site permet aux non-développeurs de créer rapidement un site à partir de zéro à l’aide de modèles de site. Une fois créé, l’outil de création rapide de site permet également une personnalisation rapide du thème et du style du site AEM (JavaScript, CSS et ressources statiques). Cela permet au développeur front-end, qui n’a besoin d’aucune connaissance d’AEM, de travailler séparément et parallèlement aux créateurs de contenu. L’administrateur d’AEM télécharge simplement le thème du site et le fournit au développeur front-end, qui le personnalise à l’aide de ses outils favoris, puis valide les modifications dans le référentiel de code AEM, qui est ensuite déployé.
 
 En éliminant le besoin de connaissance du développement en matière de création de sites, en éliminant les exigences de connaissance d’AEM pour le développement front-end et en permettant au développement de thèmes de se poursuivre parallèlement à la création de contenu, l’outil de création rapide de site AEM accélère de manière considérable le temps nécessaire à la valorisation de votre site et accroît la personnalisation et l’agilité du déploiement de votre site.
 
@@ -55,7 +55,7 @@ Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vou
 | 0 | Parcours de création rapide de site AEM | Ce document | Administration d’AEM et de Cloud Manager |
 | 1 | [Présentation de Cloud Manager et du workflow de création rapide de site](cloud-manager.md) | Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site. | Administration AEM |
 | 2 | [Créer un site à partir d’un modèle](create-site.md) | Découvrez comment créer rapidement un site AEM à l’aide d’un modèle de site. | Administration AEM |
-| 3 | [Configurer le pipeline](pipeline-setup.md) | Créez un pipeline frontal pour gérer la personnalisation du thème de votre site. | Administration Cloud Manager |
+| 3 | [Configurer le pipeline](pipeline-setup.md) | Créez un pipeline front-end pour gérer la personnalisation du thème de votre site. | Administration Cloud Manager |
 | 4 | [Accorder l’accès au développeur ou à la développeuse front-end](grant-access.md) | Intégrez les développeurs et développeuses front-end à Cloud Manager afin qu’ils aient accès au référentiel Git et au pipeline de votre site AEM. | Administration Cloud Manager |
 | 5 | [Récupérer des informations d’accès au référentiel Git](retrieve-access.md) | Découvrez comment le développeur ou la développeuse front-end utilise Cloud Manager pour accéder aux informations du référentiel Git. | Développement front-end |
 | 6 | [Personnaliser le thème du site](customize-theme.md) | Découvrez comment un thème de site est créé, comment le personnaliser et comment le tester à l’aide du contenu réel d’AEM. | Développement front-end |

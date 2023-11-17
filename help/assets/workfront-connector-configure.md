@@ -4,10 +4,10 @@ description: Configuration de  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 99%
+source-wordcount: '1770'
+ht-degree: 98%
 
 ---
 
@@ -98,7 +98,7 @@ Le mappage des métadonnées entre les documents Adobe Workfront et les ressour
 Pour configurer les mappages, procédez comme suit :
 
 1. Accédez à **Outils** > **Ressources** > **Schémas de métadonnées**.
-1. Sélectionnez le formulaire du schéma de métadonnées que vous souhaitez modifier, puis cliquez sur **Modifier** ou créez un schéma de métadonnées entièrement nouveau.
+1. Sélectionnez le formulaire de schéma de métadonnées à modifier, puis cliquez sur **Modifier** ou créer entièrement un schéma de métadonnées.
 1. Sélectionnez le champ de formulaire de schéma de métadonnées que vous souhaitez modifier, puis sélectionnez l’onglet **Paramètres** dans le panneau de droite.
 1. Dans Champ de formulaire personnalisé [!DNL Workfront], sélectionnez le nom du champ [!DNL Workfront] que vous souhaitez mapper à la propriété AEM sélectionnée. Les options disponibles sont les suivantes :
 

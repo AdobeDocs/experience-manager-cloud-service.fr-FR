@@ -2,10 +2,10 @@
 title: Créer un site de démonstration
 description: Créez un site de démonstration dans AEM basé sur une bibliothèque de modèles préconfigurés.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 89%
 
 ---
 
@@ -15,9 +15,9 @@ Créez un site de démonstration dans AEM basé sur une bibliothèque de modèle
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours du module complémentaire de démonstration de référence d’AEM, [Créer un programme](create-program.md), vous avez effectué la première étape de configuration pour créer un programme à des fins de test et utilisé un pipeline pour déployer le contenu du module complémentaire. Vous devez maintenant :
+Dans le document précédent du parcours du module complémentaire de démonstration de référence d’AEM, [Créer un programme](create-program.md), vous avez effectué la première étape de configuration pour créer un programme à des fins de test et utilisé un pipeline pour déployer le contenu du module complémentaire. Vous devriez maintenant :
 
-* Découvrir comment utiliser Cloud Manager pour créer un programme.
+* Découvrez comment utiliser Cloud Manager pour créer un programme.
 * Savoir comment activer le module complémentaire de démonstration de référence pour le nouveau programme.
 * Être en mesure d’exécuter un pipeline pour déployer le contenu du module complémentaire.
 
@@ -25,7 +25,7 @@ Cet article décrit l’étape suivante du processus en créant un nouveau site 
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment créer un nouveau site à partir des modèles du module complémentaire de démonstration de référence. Après avoir lu ce document, vous devriez :
+Ce document vous aide à comprendre comment créer un site à partir des modèles du module complémentaire de démonstration de référence. Après avoir lu ce document, vous devriez :
 
 * Découvrir comment accéder à l’environnement de création AEM.
 * Savoir comment créer un site à partir d’un modèle.

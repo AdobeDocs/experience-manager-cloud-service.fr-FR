@@ -2,10 +2,10 @@
 title: Extension de ContextHub
 description: Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux qui sont fournis ne répondent pas à vos besoins.
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 87%
+source-wordcount: '627'
+ht-degree: 84%
 
 ---
 
@@ -62,7 +62,7 @@ Dans la plupart des cas, un seul candidat est nécessaire et la priorité peut �
 
 ## Création de types de modules d’interface utilisateur ContextHub {#creating-contexthub-ui-module-types}
 
-Vous pouvez créer des types de modules d’interface utilisateur personnalisés lorsque ceux qui sont [installés avec ContextHub](sample-modules.md) ne répondent pas à vos attentes. Pour créer un type de module d’interface utilisateur, créez un moteur de rendu de module en étendant la classe `ContextHub.UI.BaseModuleRenderer`, puis en l’enregistrant auprès de `ContextHub.UI`.
+Vous pouvez créer des types de modules d’interface utilisateur personnalisés lorsque ceux qui sont [installés avec ContextHub](sample-modules.md) ne répondent pas à vos attentes. Pour créer un type de module d’IU, créez un moteur de rendu de module en étendant la variable `ContextHub.UI.BaseModuleRenderer` puis l’enregistrer auprès de `ContextHub.UI`.
 
 Pour créer un moteur de rendu de module d’interface utilisateur, créez un objet `Class` contenant le logiciel qui effectue le rendu de ce module. Votre classe doit, au minimum, effectuer les actions suivantes :
 

@@ -2,9 +2,9 @@
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 96%
 
 ---
@@ -297,7 +297,7 @@ Indique un chemin racine pour tout fragment référencé.
 
 * **Autoriser la création de fragments**
 
-  Cette propriété permet à l’auteur du fragment de créer un nouveau fragment en fonction du modèle approprié.
+  Cela permet à l’auteur du fragment de créer un fragment en fonction du modèle approprié.
 
    * **fragmentreferencecomposite** : permet à l’auteur du fragment de créer un composite en sélectionnant plusieurs fragments.
 

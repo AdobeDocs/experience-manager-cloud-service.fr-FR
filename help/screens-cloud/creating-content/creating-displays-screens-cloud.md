@@ -2,10 +2,10 @@
 title: Création et gestion des affichages dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des affichages dans Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 93%
+source-wordcount: '657'
+ht-degree: 91%
 
 ---
 

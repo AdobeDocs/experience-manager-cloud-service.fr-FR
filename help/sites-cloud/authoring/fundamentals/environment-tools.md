@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2164'
-ht-degree: 94%
+source-wordcount: '2163'
+ht-degree: 93%
 
 ---
 
@@ -120,7 +120,7 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
 * d’un composant existant du type approprié.
    * Par exemple, vous pouvez faire glisser une ressource de type image sur un composant Image ;
-* d’un [espace réservé](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) dans le système de paragraphes où créer un composant du type approprié.
+* A [espace réservé](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) dans le système de paragraphes pour créer un composant du type approprié.
    * Par exemple, vous pouvez faire glisser une ressource de type image sur le système de paragraphes afin de créer un composant Image.
 
 >[!NOTE]

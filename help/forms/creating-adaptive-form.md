@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 90%
+source-wordcount: '1546'
+ht-degree: 87%
 
 ---
 
@@ -66,9 +66,9 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 * **Modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud prend en charge deux types de modèles :
 
-   * **Modèle modifiable** : vous pouvez [créer un modèle modifiable](template-editor.md) ou en [importer un existant](migrate-to-forms-as-a-cloud-service.md). Vous pouvez également déployer l’[archétype le plus récent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr#:~:text=L%E2%80%99arch%C3%A9type%20AEM%20est%20constitu%C3%A9,les%20servlets%20et%20les%20filtres%20de%20requ%C3%AAte.%20it.tests%3A%20are%20Java-based%20integration%20tests.) pour obtenir des exemples de modèles modifiables.
+   * **Modèle modifiable**: vous pouvez [créer une](template-editor.md) ou [importer un modèle modifiable existant](migrate-to-forms-as-a-cloud-service.md). Vous pouvez également déployer l’[archétype le plus récent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr#:~:text=L%E2%80%99arch%C3%A9type%20AEM%20est%20constitu%C3%A9,les%20servlets%20et%20les%20filtres%20de%20requ%C3%AAte.%20it.tests%3A%20are%20Java-based%20integration%20tests.) pour obtenir des exemples de modèles modifiables.
 
-   * **Modèle statique** : il s’agit de modèles hérités qui ne sont recommandés que pour les clients effectuant la migration depuis des installations Adobe Managed Services (AMS) et AEM Forms On-Premise (AEM 6.5 Forms ou version antérieure). Ainsi, vous pouvez continuer à tirer profit de votre investissement existant dans les modèles statiques. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
+   * **Modèle statique** : il s’agit de modèles hérités qui ne sont recommandés que pour les clients effectuant la migration depuis des installations Adobe Managed Services (AMS) et AEM Forms On-Premise (AEM 6.5 Forms ou version antérieure). Ainsi, vous pouvez continuer à tirer profit de votre investissement existant dans les modèles statiques. Lorsque vous créez un formulaire adaptatif, utilisez un modèle modifiable.
 
 
 
@@ -89,7 +89,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
      >
      > Vous pouvez également créer un modèle de [!UICONTROL document d’enregistrement] à l’aide d’un éditeur de formulaires adaptatifs. Pour plus d’informations, voir [Prise en charge des documents d’enregistrement dans l’éditeur de formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
-   * Lorsque vous sélectionnez un modèle statique, les options de données, de style, d’envoi, de diffusion et de prévisualisation ne sont pas disponibles. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
+   * Lorsque vous sélectionnez un modèle statique, les options de données, de style, d’envoi, de diffusion et de prévisualisation ne sont pas disponibles. Lorsque vous créez un formulaire adaptatif, utilisez un modèle modifiable.
 
 1. Dans l’onglet **[!UICONTROL Style]**, sélectionnez un thème :
 

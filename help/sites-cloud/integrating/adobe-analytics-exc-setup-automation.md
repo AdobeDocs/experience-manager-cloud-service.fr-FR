@@ -4,10 +4,10 @@ description: L’automatisation de la configuration d’Experience Cloud offre 
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 96%
+source-wordcount: '750'
+ht-degree: 92%
 
 ---
 
@@ -50,7 +50,7 @@ L’environnement doit maintenant être prêt pour l’automatisation de la conf
 1. Appuyez sur le bouton **Intégration d’Analytics**.
 1. Dans la boîte de dialogue qui s’affiche, fournissez un nom au **Identifiant de suite de rapports**.
 
-   Cette chaîne est utilisée pour créer un nouvel [identifiant de suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr) dans Adobe Analytics comme magasin de données pour les données d’analyse du site AEM sélectionné. La chaîne fournie est ajoutée avec les identifiants d’environnement et de niveau pour garantir l’unicité.
+   Cette chaîne est utilisée pour créer une [Identifiant de suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr) dans Adobe Analytics comme entrepôt de données pour les données d’analyse du site AEM sélectionné. La chaîne fournie est ajoutée avec les identifiants d’environnement et de niveau pour garantir l’unicité.
 
 1. Actualisez la page et le panneau, puis appuyez sur **Vérification de l’état d’intégration** pour vérifier l’état de l’automatisation.
 

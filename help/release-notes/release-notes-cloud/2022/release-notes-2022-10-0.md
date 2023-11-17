@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 79%
+source-wordcount: '835'
+ht-degree: 77%
 
 ---
 
-# Notes de mise à jour 2022.10.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2022.10.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.10.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -69,7 +69,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
    * **[Modèle de données de formulaire dans l’éditeur de modèles](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)** : vous pouvez associer un schéma de modèle de données de formulaire à un modèle de formulaire adaptatif dans l’éditeur de modèles. Le temps nécessaire à la création d’un formulaire adaptatif est ainsi réduit. Cette option est également ajoutée à l’éditeur de formulaires adaptatifs pour permettre aux utilisateurs et utilisatrices de sélectionner ou de modifier le modèle de données de formulaire pour les formulaires existants.
    * **[Document d’enregistrement dans l’éditeur de modèles](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)** : vous pouvez désormais standardiser la génération d’un document d’enregistrement pour tous les formulaires créés à l’aide d’un modèle. Cela permet de renforcer la standardisation et la conformité aux exigences de l’organisation.
 
-* **[Lancement de l’assistant de formulaires adaptatifs à partir d’une page AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)** : la page AEM Sites offre une prise en charge étendue des formulaires adaptatifs. Vous pouvez désormais créer un formulaire adaptatif ou incorporer un formulaire adaptatif existant tout en restant sur la page AEM Sites.
+* **[Lancement de l’assistant de formulaires adaptatifs à partir d’une page AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)** : la page AEM Sites offre une prise en charge étendue des formulaires adaptatifs. Vous pouvez désormais créer un formulaire adaptatif ou incorporer un formulaire adaptatif existant tout en restant sur la page AEM Sites.
 * **[Modification de l’alignement de l’affichage des cases à cocher et du bouton radio dans le document d’enregistrement](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)** : vous pouvez désormais définir l’alignement souhaité (horizontal, vertical, identique aux formulaires adaptatifs) pour la case à cocher et le bouton radio du document d’enregistrement. Cette option permet de déterminer le positionnement des cases à cocher et du bouton radio dans le document d’enregistrement.
 
 ## Module complémentaire CIF {#cloud-services-cif}

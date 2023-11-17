@@ -3,10 +3,10 @@ title: Prise en charge des fragments de contenu d’Adobe Experience Manager as
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion Adobe Experience Manager sans interface utilisateur.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 60%
+source-wordcount: '1791'
+ht-degree: 59%
 
 ---
 
@@ -34,7 +34,7 @@ La variable [API REST Assets](/help/assets/mac-api-assets.md) permet aux dévelo
 
 L’API vous permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que CMS (Content Management System) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
-Par exemple, les [applications sur une seule page](/help/implementing/developing/hybrid/introduction.md), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Par exemple, les [applications monopages](/help/implementing/developing/hybrid/introduction.md), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
 while [Composants principaux d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) fournir une API personnalisable pouvant traiter les opérations de lecture requises à cette fin et dont la sortie JSON peut être personnalisée ; elles nécessitent AEM savoir-faire WCM (Web Content Management) pour la mise en oeuvre ; En effet, elles doivent être hébergées sur des pages basées sur des modèles d’AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
 
@@ -108,7 +108,7 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
   <tr>
    <td>Cas d’utilisation pris en charge</td>
    <td>Objectif général.</td>
-   <td><p>Optimisé pour une utilisation dans une application sur une seule page (SPA) ou tout autre contexte (utilisant du contenu).</p> <p>Il peut également contenir des informations de mise en page.</p> </td>
+   <td><p>Optimisé pour une utilisation dans une application monopage ou tout autre contexte (utilisant du contenu).</p> <p>Il peut également contenir des informations de mise en page.</p> </td>
   </tr>
   <tr>
    <td>Opérations prises en charge</td>
@@ -263,7 +263,7 @@ L’utilisation peut varier selon que vous utilisez un environnement de créatio
 
 Il existe quelques restrictions :
 
-* **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu, ou en mettre un existant à jour, les développeurs doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, la seule méthode pour obtenir un aperçu de ces éléments est via l’interface utilisateur d’administration.
+* **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer ou mettre à jour un fragment de contenu existant, les développeurs doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, la seule méthode pour obtenir un aperçu de ces éléments est via l’interface utilisateur d’administration.
 * **Les références sont ignorées**. Actuellement, il n’existe aucune vérification pour savoir si un fragment de contenu existant est référencé. Par conséquent, la suppression d’un fragment de contenu, par exemple, peut entraîner des problèmes sur une page contenant une référence au fragment de contenu en question.
 * **Type de données JSON** La sortie de l’API REST de la variable *Type de données JSON* is *sortie basée sur des chaînes*.
 

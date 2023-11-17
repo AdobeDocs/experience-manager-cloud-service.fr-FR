@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 97%
 
 ---
@@ -71,7 +71,7 @@ Une fois installé le package de connecteur correspondant au service de traducti
 * Si une traduction humaine ou automatique doit être réalisée
 * Si le contenu supplémentaire associé aux pages (comme les balises) doit être traduit
 
-Pour créer une configuration de traduction :
+Pour créer une configuration de traduction :
 
 1. Dans le menu de navigation global, cliquez ou appuyez sur **Outils** -> **Services cloud** -> **Services cloud de traduction**.
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Cet emplacement est souvent basé sur un projet en particulier, mais peut également être global.

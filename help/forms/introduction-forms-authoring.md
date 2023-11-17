@@ -1,16 +1,14 @@
 ---
 title: Présentation de la création de formulaires adaptatifs
 description: AEM Forms fournit une interface à la fois conviviale et puissante permettant de créer des formulaires adaptatifs. Les nombreux composants et outils proposés vous permettent de créer des formulaires.
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2482'
 ht-degree: 96%
 
 ---
@@ -54,7 +52,7 @@ L’interface utilisateur optimisée pour les écrans tactiles permet de créer 
 * Composants standard de formulaire
 * Référentiel intégré de ressources
 
-Lorsque vous créez ou modifiez un formulaire adaptatif, vous utilisez les éléments suivants de l’interface utilisateur :
+Lorsque vous créez ou modifiez un formulaire adaptatif existant, vous utilisez les éléments suivants de l’interface utilisateur :
 
 * [Barre latérale](#sidebar)
 * [Barre d’outils de la page](#page-toolbar)

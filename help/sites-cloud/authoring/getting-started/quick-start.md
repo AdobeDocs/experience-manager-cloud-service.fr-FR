@@ -2,9 +2,9 @@
 title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 90%
 
 ---
@@ -76,7 +76,7 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
 ### Création d’une page {#creating-a-new-page}
 
-Pour [créer une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) :
+À [création d’une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Accédez à l’emplacement](#finding-your-page) où créer la page.
 1. Utilisez l’icône **Créer**, puis sélectionnez **Page** dans la liste :

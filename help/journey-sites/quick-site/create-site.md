@@ -2,10 +2,10 @@
 title: Créer un site à partir d’un modèle
 description: Découvrez comment créer rapidement un site AEM à l’aide d’un modèle de site.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 98%
+source-wordcount: '1496'
+ht-degree: 91%
 
 ---
 
@@ -20,14 +20,14 @@ Dans le document précédent du parcours de création rapide de site AEM, [Prés
 * Découvrez comment AEM Sites et le Cloud Manager travaillent ensemble pour faciliter le développement front-end.
 * Découvrez comment l’étape de personnalisation front-end est entièrement découplée de l’AEM et ne nécessite aucune connaissance AEM.
 
-Cet article s’appuie sur ces principes de base afin que vous puissiez effectuer la première étape de configuration et créer un site à partir d’un modèle que vous pourrez ensuite personnaliser à l’aide d’outils front-end.
+Cet article s’appuie sur ces principes de base afin que vous puissiez effectuer la première étape de configuration et créer un site pour un modèle que vous pourrez ensuite personnaliser à l’aide des outils front-end.
 
 ## Objectif {#objective}
 
 Ce document vous aide à comprendre comment créer rapidement un site AEM à l’aide d’un modèle de site. Après avoir lu ce document, vous devriez :
 
 * Découvrir comment obtenir des modèles de site AEM.
-* Apprendre à créer un nouveau site à l’aide d’un modèle.
+* Découvrez comment créer un site à l’aide d’un modèle.
 * Découvrir comment télécharger le modèle de votre nouveau site pour le fournir au développeur front-end.
 
 ## Rôle responsable {#responsible-role}
@@ -65,7 +65,7 @@ Une fois le téléchargement effectué, vous pouvez le charger dans votre enviro
 
 ## Installation d’un modèle de site {#installing-template}
 
-L’utilisation d’un modèle pour créer un nouveau site est très simple.
+Utiliser un modèle pour créer un site est facile.
 
 1. Connectez-vous à votre environnement de création AEM et accédez à la console Sites.
 
@@ -171,7 +171,7 @@ Vous avez maintenant terminé la configuration. Les auteurs de contenu peuvent m
 Maintenant que vous avez terminé cette partie du parcours de création rapide de site AEM vous devriez :
 
 * Découvrir comment obtenir des modèles de site AEM.
-* Apprendre à créer un nouveau site à l’aide d’un modèle.
+* Découvrez comment créer un site à l’aide d’un modèle.
 * Découvrir comment télécharger le modèle de votre nouveau site pour le fournir au développeur front-end.
 
 Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Configuration de votre pipeline,](pipeline-setup.md) où vous allez créer un pipeline front-end pour gérer la personnalisation du thème de votre site.

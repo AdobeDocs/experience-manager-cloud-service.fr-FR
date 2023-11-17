@@ -2,9 +2,9 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1683'
 ht-degree: 95%
 
 ---
@@ -206,7 +206,7 @@ Pour créer une propriété avec CRXDE Lite :
 
 ## Création d’un fichier {#creating-a-file}
 
-Pour créer un nouveau fichier avec CRXDE Lite :
+Pour créer un fichier avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le [**volet Explorateur**, ](#explorer-pane)cliquez avec le bouton droit sur le composant dans lequel vous souhaitez créer le fichier, sélectionnez **Créer**, puis **Créer un fichier**.

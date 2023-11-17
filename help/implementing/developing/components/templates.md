@@ -2,10 +2,10 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
-ht-degree: 98%
+source-wordcount: '3287'
+ht-degree: 97%
 
 ---
 
@@ -103,7 +103,7 @@ Lors de la création d’un modèle modifiable :
 
 1. Utilisez-le pour créer des pages de contenu.
 
-   * Lorsque vous utilisez un modèle pour créer une page, il n’existe aucune différence visible ni indication permettant de distinguer les modèles statiques des modèles modifiables.
+   * Lors de l’utilisation d’un modèle pour créer une page, il n’y a aucune différence visible et aucune indication entre les modèles statiques et modifiables.
    * Pour le créateur de pages, le processus est transparent.
 
    Pour plus d’informations sur la façon dont un créateur de pages utilise le modèle afin de créer une page, voir [Création et organisation des pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -141,11 +141,11 @@ Pour organiser vos modèles, vous pouvez utiliser les dossiers suivants :
 >
 >Bien que vous puissiez imbriquer vos dossiers, lorsque l’utilisateur les visualise dans la console **Modèles**, ils sont présentés sous la forme d’une structure plate.
 
-Dans une instance AEM standard, le dossier `global` existe déjà dans la console de modèles. Il contient les modèles par défaut et fait office de dossier de rechange si le dossier actif ne contient pas de politiques et/ou de types de modèles. Vous pouvez ajouter vos modèles par défaut à ce dossier ou créer un nouveau dossier (recommandé).
+Dans une instance AEM standard, le dossier `global` existe déjà dans la console de modèles. Il contient les modèles par défaut et fait office de dossier de rechange si le dossier actif ne contient pas de politiques et/ou de types de modèles. Vous pouvez ajouter vos modèles par défaut à ce dossier ou créer un dossier (recommandé).
 
 >[!NOTE]
 >
->Il est conseillé de créer un dossier pour stocker vos modèles personnalisés et de ne pas utiliser le dossier `global`
+>Il est recommandé de créer un dossier qui contiendra vos modèles personnalisés et de ne pas utiliser la variable `global` dossier.
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ Les types de modèles et les politiques sont hérités dans tous les dossiers se
 
 Une liste de toutes les entrées autorisées est créée. Si des configurations se chevauchent (`path`/`label`), seule l’instance la plus proche du dossier actif s’affiche pour l’utilisateur.
 
-Pour créer un nouveau dossier, vous pouvez effectuer l’une des opérations suivantes :
+Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes :
 
 * Par programmation ou avec CRXDE Lite
 * Utilisation de l’[explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)

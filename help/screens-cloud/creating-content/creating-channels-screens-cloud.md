@@ -2,10 +2,10 @@
 title: Création et gestion des canaux dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des canaux dans Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 90%
+source-wordcount: '1086'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ Ce document vous aide à comprendre la création et la gestion de canaux pour vo
 >**Conditions préalables**
 >Avant de commencer cette section du guide, consultez [Création et gestion de projets dans Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-Pour créer un canal de séquence dans Screens as a Cloud Service, procédez comme suit :
+Pour créer un canal de séquence dans Screens as a Cloud Service, procédez comme suit :
 
 1. Accédez au fournisseur de contenu Screens.
 

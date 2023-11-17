@@ -2,10 +2,10 @@
 title: Configurer le mappage des métadonnées de ressources entre Workfront et Experience Manager Assets
 description: Mappez les champs de métadonnées des ressources entre les applications Adobe Workfront et Experience Manager as a Cloud Service. Suite au mappage des champs de métadonnées, lorsque vous envoyez une ressource de Workfront à Experience Manager Assets, vous pouvez afficher les métadonnées de ressource mappées dans Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '1025'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1023'
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ Pour envoyer l’image de Workfront à Experience Manager Assets :
 
 1. Cliquez sur l’icône du menu principal ![Afficher le menu](assets/show-menu.svg) disponible dans le coin supérieur droit de l’application Adobe Workfront, puis cliquez sur **[!UICONTROL Projets]**.
 
-1. Cliquez sur **[!UICONTROL Nouveau projet]** pour créer un nouveau projet.
+1. Cliquez sur **[!UICONTROL Nouveau projet]** pour créer un projet.
 
 1. Cliquez sur l’option **[!UICONTROL Documents]** disponible dans le volet de gauche, faites glisser l’image à envoyer à Experience Manager Assets, puis sélectionnez-la.
 
@@ -82,7 +82,7 @@ Pour configurer le mappage des métadonnées à l’aide d’un nouveau formulai
 
 1. Sélectionnez le formulaire de schéma et cliquez sur **[!UICONTROL Modifier]**.
 
-1. (Facultatif) Dans l’éditeur de formulaire de schéma de métadonnées, cliquez sur `+` pour créer un nouvel onglet pour les champs Workfront.
+1. (Facultatif) Dans l’éditeur de formulaire de schéma de métadonnées, cliquez sur `+` pour créer un onglet pour les champs Workfront.
 
 1. Cliquez sur l’onglet **[!UICONTROL Générer un formulaire]** et faites glisser le composant **[!UICONTROL Une seule ligne de texte]** vers le formulaire. Cliquez sur le composant dans le formulaire. Sous l’onglet **[!UICONTROL Générer un formulaire]** :
 

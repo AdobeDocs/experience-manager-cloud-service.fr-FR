@@ -2,7 +2,7 @@
 title: Comment mettre à jour votre contenu à l’aide des API AEM Assets
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 93%
@@ -54,7 +54,7 @@ L’API HTTP Assets englobe les éléments suivants :
 
 L’implémentation actuelle de l’API HTTP Assets repose sur le style architectural **REST** et permet d’accéder au contenu (stocké dans AEM) via les opérations **CRUD** (Create, Read, Update, Delete) pour créer, lire, mettre à jour, supprimer.
 
-Grâce à ces opérations, l’API vous permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications sur une seule page (SPA), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Grâce à ces opérations, l’API vous permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications monopages, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
 <!--
 >[!NOTE]
@@ -198,7 +198,7 @@ Content fragments:
 
 Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
-To create a new content fragment, the (internal repository) path of the model has to be provided.
+To create a content fragment, the (internal repository) path of the model has to be provided.
 
 ### Associated Content {#associated-content}
 

@@ -2,9 +2,9 @@
 title: Administration des balises
 description: Découvrez comment administrer des balises dans AEM pour organiser votre contenu.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2265'
 ht-degree: 6%
 
 ---
@@ -123,11 +123,11 @@ La balise est créée et la console est mise à jour pour afficher la nouvelle b
 Les balises permettent la création flexible de votre propre taxonomie en fonction des besoins de votre organisation.
 
 * Vous pouvez créer des balises enfants de balises existantes en sélectionnant la balise parente dans la console avant de créer la balise.
-* Si vous créez une balise sans sélectionner un espace de noms ou une autre balise, vous en créez un.
+* Si vous créez une balise sans sélectionner un espace de noms ou une autre balise, vous créez effectivement un espace de noms.
 
 ### Publier des balises {#publishing-tags}
 
-Comme pour la création d’un autre contenu dans AEM, une fois que vous avez créé une balise (ou un espace de noms), elle n’existe que dans l’environnement de création. Pour que vos balises soient disponibles pour vos utilisateurs, vous devez les publier.
+Comme pour la création d’un autre contenu dans AEM, une fois que vous avez créé une balise (ou un espace de noms), il existe uniquement dans l’environnement de création. Pour que vos balises soient disponibles pour vos utilisateurs, vous devez les publier.
 
 1. Pour publier une balise, ouvrez le [console de balisage.](#tagging-console)
 

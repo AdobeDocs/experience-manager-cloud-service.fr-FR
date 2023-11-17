@@ -4,9 +4,9 @@ description: Utilisez le sélecteur de destination AEM pour afficher et sélecti
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 93%
 
 ---
@@ -212,7 +212,7 @@ Vous pouvez définir les [propriétés](#destination-selector-properties) du sé
 
 ### Exemple 1 : créer un dossier dans le sélecteur de destination
 
-Le sélecteur de destination vous permet de créer un dossier où charger, déplacer ou copier des ressources à cet emplacement.
+Le sélecteur de destination vous permet de créer un dossier dans lequel charger, déplacer ou copier des ressources à cet emplacement.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 

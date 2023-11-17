@@ -2,10 +2,10 @@
 title: Présentation des programmes Sandbox
 description: Découvrez en quoi les programmes Sandbox diffèrent des programmes de production.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '474'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Le programme Sandbox est l’un des deux types de programmes disponibles dans AE
 
 ## Création automatique {#auto-creation}
 
-Les programmes Sandbox proposent la création automatique. Chaque fois que vous créez automatiquement un programme Sandbox Cloud Manager :
+Les programmes Sandbox proposent la création automatique. Chaque fois que vous créez un programme d’environnement de test, Cloud Manager :
 
 * Ajout d’AEM Sites et d’AEM Assets en tant que solutions dans votre programme.
 * Configuration d’un référentiel git de projet avec un exemple de projet basé sur l’[archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)

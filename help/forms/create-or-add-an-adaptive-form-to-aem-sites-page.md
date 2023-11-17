@@ -4,9 +4,9 @@ description: Découvrez comment créer ou ajouter un formulaire adaptatif à vot
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3209'
 ht-degree: 82%
 
 ---
@@ -187,7 +187,7 @@ Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’
    Une boîte de dialogue pour convertir le conteneur de formulaires adaptatifs en un nouveau fragment d’expérience ou l’ajouter à un fragment d’expérience existant s’affiche
 1. Dans la boîte de dialogue Convertir en variation de fragment d’expérience, définissez les valeurs des options suivantes :
 
-   * **Action :** sélectionner pour créer un fragment d’expérience ou Ajouter à un fragment d’expérience existant.
+   * **Action :** Sélectionnez cette option pour créer un fragment d’expérience ou Ajouter à un fragment d’expérience existant.
    * **Chemin d’accès parent :** spécifiez le chemin du dossier dans lequel héberger le fragment d’expérience. Cette option est disponible uniquement pour créer un nouveau fragment d’expérience.
    * **Modèle :** spécifiez le chemin du modèle de fragment d’expérience. Si vous ne disposez pas d’un modèle de fragment d’expérience, [créez-le](/help/implementing/developing/extending/experience-fragments.md). Cette option est disponible uniquement pour l’ajout d’un formulaire adaptatif à un fragment d’expérience existant.
    * **Titre du fragment :** spécifiez le titre du fragment d’expérience. Le titre identifie de manière unique un fragment d’expérience

@@ -5,7 +5,7 @@ role: User, Developer
 keywords: Connectez AEM formulaire adaptatif à la liste SharePoint Microsoft, connectez le formulaire adaptatif à la liste SharePoint de Microsoft, intégrez AEM formulaire adaptatif à la liste SharePoint Microsoft, intégrez le formulaire adaptatif à la liste de , envoyez les données d’un formulaire adaptatif à la liste de , envoyez le processus d’ à la liste de .
 hide: true
 hidefromToC: true
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 5%
@@ -56,7 +56,7 @@ Pour intégrer la liste SharePoint Microsoft® à un workflow AEM :
 1. [Créer un workflow pour appeler un modèle de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr)
 
    <!--
-    To create a new workflow with the editor, perform the following steps:
+    To create a workflow with the editor:
     1.  Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
     1.  Click **[!UICONTROL Create]** > **[!UICONTROL Create Model]**. The Add Workflow Model dialog appears. 
     1. Specify **[!UICONTROL Title]** and **[!UICONTROL Name (optional)]**.

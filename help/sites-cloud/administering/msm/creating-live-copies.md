@@ -4,10 +4,10 @@ description: Découvrez comment créer et synchroniser des Live Copies pour uti
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4308'
-ht-degree: 100%
+source-wordcount: '4307'
+ht-degree: 99%
 
 ---
 
@@ -333,7 +333,7 @@ Pour modifier le contenu de Live Copy, vous pouvez :
 
 >[!TIP]
 >
->Si vous créez manuellement une nouvelle page dans la Live Copy, la nouvelle page est locale à la Live Copy, ce qui signifie qu’elle n’a pas de page source correspondante à laquelle être rattachée.
+>Si vous créez manuellement une page dans la Live Copy, la nouvelle page est locale à la Live Copy, ce qui signifie qu’elle ne comporte pas de page source correspondante à laquelle elle est jointe.
 >
 >Une bonne pratique vous permettant de créer une page locale qui fait partie de la relation, consiste à créer la page locale dans la source et d’effectuer un déploiement en profondeur. Ceci a pour effet de créer la page localement en tant que Live Copies.
 

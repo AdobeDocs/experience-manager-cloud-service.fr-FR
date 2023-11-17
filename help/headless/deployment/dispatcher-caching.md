@@ -2,13 +2,13 @@
 title: Requêtes persistantes GraphQL - Activation de la mise en cache dans Dispatcher
 description: Dispatcher est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Vous pouvez activer la mise en cache des requêtes persistantes dans AEM sans affichage.
 feature: Dispatcher, GraphQL API
-source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
+exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
+source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 6%
+source-wordcount: '391'
+ht-degree: 8%
 
 ---
-
 
 # Requêtes persistantes GraphQL - Activation de la mise en cache dans Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
@@ -26,7 +26,7 @@ La mise en cache des requêtes persistantes n’est pas activée par défaut dan
 
 >[!NOTE]
 >
->Pour obtenir une documentation détaillée sur Dispatcher, voir la section [Guide de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
+>Pour obtenir une documentation détaillée à propos du Dispatcher, veuillez consulter le [Guide du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
 
 ## Activation de la mise en cache des requêtes persistantes {#enable-caching-persisted-queries}
 
@@ -37,6 +37,27 @@ Pour activer la mise en cache des requêtes persistantes, définissez la variabl
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
    ```
+
+>[!NOTE]
+>
+>Lorsque la mise en cache de Dispatcher est activée pour les requêtes persistantes à l’aide de `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` L’en-tête est ajouté à la réponse par Dispatcher.
+>
+>Par défaut, la variable `ETag` header est configuré avec la directive suivante :
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>Cependant, ce paramètre peut entraîner des problèmes lorsqu’il est utilisé pour les réponses de requête persistantes, car il ne tient pas compte des petites modifications apportées à la réponse.
+>
+>Pour atteindre un individu `ETag` calculs sur *each* réponse unique : `FileETag Digest` doit être utilisé dans la configuration du dispatcher :
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
 
 >[!NOTE]
 >

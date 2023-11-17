@@ -4,10 +4,10 @@ description: Utilisez le modèle de fragment de contenu que vous avez créé pr�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 93%
+source-wordcount: '701'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 93%
 
 Les fragments de contenu représentent votre contenu découplé et sont basés sur des structures prédéfinies, appelées modèles de fragment de contenu. Vous avez déjà créé un modèle dans un module précédent.
 
-Dans ce module, vous allez créer un fragment de contenu basé sur ce modèle à l’aide de la console Fragments de contenu. Envisagez la console Fragment de contenu comme votre bibliothèque de contenu découplé. Utilisez-la pour créer des fragments de contenu et gérer des fragments existants.
+Dans ce module, vous créez un fragment de contenu basé sur ce modèle à l’aide de la console Fragment de contenu . Envisagez la console Fragment de contenu comme votre bibliothèque de contenu découplé. Utilisez-la pour créer des fragments de contenu et gérer des fragments existants.
 
 La console Fragment de contenu est utilisée pour créer et modifier du contenu headless sur les canaux de diffusion et indépendamment du contexte, ce qui peut être la méthode la plus efficace dans de nombreux cas de création. Dans un module ultérieur, nous allons explorer la modification de contenu headless dans le contexte et sur place.
 

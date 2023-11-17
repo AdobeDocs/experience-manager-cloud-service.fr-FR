@@ -2,10 +2,10 @@
 title: Création de contenu ciblé en mode Ciblage
 description: Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '5409'
-ht-degree: 99%
+source-wordcount: '5408'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ Pour ajouter une activité :
 
    >[!NOTE]
    >
-   >Lorsque vous créez une activité et qu’une configuration de cloud Adobe Target est associée à la page ou à une page parente, AEM considère automatiquement Adobe Target comme le moteur.
+   >Lorsque vous créez une activité et qu’une configuration cloud Adobe Target est associée à la page ou à l’un de ses parents, AEM considère automatiquement Adobe Target comme le moteur.
 
 1. Dans le menu déroulant du moteur **Ciblage**, sélectionnez votre moteur de ciblage.
 

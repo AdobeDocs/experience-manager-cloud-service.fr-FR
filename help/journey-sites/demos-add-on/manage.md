@@ -2,10 +2,10 @@
 title: Gestion de vos sites de démonstration
 description: Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 95%
+source-wordcount: '942'
+ht-degree: 94%
 
 ---
 
@@ -93,7 +93,7 @@ Pour supprimer des modèles, effectuez une procédure identique sous lʼen-tête
 Félicitations ! Vous avez terminé le parcours du module complémentaire de démonstration d’AEM ! Vous devez maintenant :
 
 * Posséder une connaissance de base de Cloud Manager et comprendre comment les pipelines diffusent du contenu et de la configuration vers AEM.
-* Découvrir comment utiliser Cloud Manager pour créer un programme.
+* Découvrez comment utiliser Cloud Manager pour créer un programme.
 * Savoir comment activer le module complémentaire de démonstration de référence pour le nouveau programme et être capable d’exécuter un pipeline pour déployer le contenu du module complémentaire.
 * Découvrir comment accéder à l’environnement de création AEM pour créer un site basé sur un modèle.
 * Découvrir comment accéder aux utilitaires de démonstration en libre-service.

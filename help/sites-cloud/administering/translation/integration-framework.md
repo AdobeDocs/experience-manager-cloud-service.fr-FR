@@ -4,10 +4,10 @@ description: Découvrez comment configurer la structure d’intégration de trad
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1517'
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ Une fois que vous avez configuré une structure d’intégration de traduction, 
 >
 >Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Traduction de contenu pour les sites multilingues](overview.md).
 
-Une configuration unique de la structure contrôle la manière dont le contenu de page et les ressources sont traduits. Pour créer une configuration de traduction :
+Une configuration unique de la structure contrôle la manière dont le contenu de page et les ressources sont traduits. Pour créer une configuration de traduction :
 
 1. Dans le [menu de navigation global,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) cliquez ou appuyez sur **Outils -> Cloud Services et services cloud de traduction**.
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Il est souvent basé sur un site particulier, mais peut également être global.

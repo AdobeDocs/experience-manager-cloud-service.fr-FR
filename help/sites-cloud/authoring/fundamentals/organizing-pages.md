@@ -2,10 +2,10 @@
 title: Création et organisation des pages
 description: Découvrez comment organiser votre site web en créant et en gérant des pages avec AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 97%
+source-wordcount: '2448'
+ht-degree: 96%
 
 ---
 
@@ -213,7 +213,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
    >
    >Voir [Conventions de dénomination de page](#page-naming-conventions).
 
-   Les informations minimales requises pour créer une page sont le **Titre**.
+   Les informations minimales requises pour créer une page sont les suivantes : **Titre**.
 
    ![Affichage du titre de la page](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 

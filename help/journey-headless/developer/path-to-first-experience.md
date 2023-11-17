@@ -2,10 +2,10 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 98%
+source-wordcount: '1999'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ Au cours de l’étape de développement, il est recommandé de travailler avec 
 
 L’équipe de développement a besoin d’un environnement de développement AEM configuré avec les modèles de contenu renseignés. Le développeur développe le client qui consommera du contenu découplé AEM, car les auteurs du contenu continuent à créer du contenu. C’est pourquoi les définitions d’API sont très importantes. En utilisant le SDK AEM, le développeur peut créer un hook de test afin de pouvoir créer des tests client et unitaires pour s’assurer que le client est en mesure d’effectuer correctement le rendu du contenu.
 
-Les auteurs de contenu créent du contenu en fonction des modèles de contenu définis dans l’environnement d’évaluation. À l’aide de l’outil de création de fragments de contenu, l’auteur crée un fragment de contenu ou en modifie un déjà existant. Avant de le publier, l’auteur peut prévisualiser l’aspect qu’il aura dans le client en travaillant avec le développeur pour pousser le modèle de contenu en développement ou configurer un environnement de développement uniquement pour que les auteurs puissent prévisualiser l’aspect que le fragment de contenu aura dans le client.
+Les auteurs de contenu créent du contenu en fonction des modèles de contenu définis dans l’environnement d’évaluation. À l’aide de l’outil de création de fragments de contenu, l’auteur crée un fragment de contenu ou modifie un fragment de contenu existant. Avant de le publier, l’auteur peut prévisualiser l’aspect qu’il aura dans le client en travaillant avec le développeur pour pousser le modèle de contenu en développement ou configurer un environnement de développement uniquement pour que les auteurs puissent prévisualiser l’aspect que le fragment de contenu aura dans le client.
 
 ## Configuration {#setup}
 

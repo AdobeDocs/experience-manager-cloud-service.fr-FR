@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4344'
 ht-degree: 96%
 
 ---
@@ -54,7 +54,7 @@ Pour extraire les fichiers ZIP, procédez comme suit :
 1. Cliquez sur le bouton **[!UICONTROL Extraction de l’archive]** dans la barre d’actions.
 1. Sélectionnez le dossier dans lequel vous devez enregistrer les ressources extraites disponibles dans le dossier compressé.
 1. Cliquez sur **[!UICONTROL Suivant]**.
-1. Sélectionnez le comportement approprié pour gérer les conflits de nom de fichier lors de l’extraction. Vous pouvez choisir de créer une version d’une ressource existante, de la remplacer, de conserver les deux ressources dans le dossier de destination ou d’ignorer l’extraction de la nouvelle ressource.
+1. Sélectionnez le comportement approprié pour gérer les conflits de nom de fichier lors de l’extraction. Vous pouvez sélectionner pour créer une version d’une ressource existante, la remplacer, conserver les deux ressources dans le dossier de destination ou ignorer l’extraction de la nouvelle ressource.
 1. Cliquez sur **[!UICONTROL Extract]**. Démarrage du processus d’extraction de code postal. Une fois le processus terminé, vous pouvez afficher les ressources extraites dans le dossier de destination.
 
    ![extraction zip](assets/zip-extraction.png)
