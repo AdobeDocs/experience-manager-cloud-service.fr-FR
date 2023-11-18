@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4921'
-ht-degree: 95%
+source-wordcount: '4923'
+ht-degree: 94%
 
 ---
 
@@ -503,7 +503,7 @@ Certains types permettent également de spécifier des options supplémentaires 
 
 | Option | Type(s) | Description |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | Ignore la casse d’une chaîne, par exemple une valeur de `time` correspondra à `TIME`, `time`, `tImE`… |
+| `_ignoreCase` | `String` | Ignore la casse d’une chaîne ; par exemple, une valeur de `time` correspond à `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | Permet une certaine marge pour que les valeurs `float` soient considérées comme identiques (pour contourner les limitations techniques en raison de la représentation interne des valeurs `float`). Cette option n’est pas recommandée en raison de son impact négatif sur les performances. |
 
 Les expressions peuvent être combinées à un jeu à l’aide d’un opérateur logique (`_logOp`) :
@@ -515,7 +515,7 @@ Chaque champ peut être filtré par son propre jeu d’expressions. Les jeux d�
 
 Une définition de filtre (transmise comme l’argument `filter` dans une requête) contient les éléments suivants :
 
-* Une sous-définition pour chaque champ (le champ est accessible via son nom, par exemple il y a un champ `lastName` dans le filtre pour le champ `lastName` dans le type de données (champ)).
+* Une sous-définition pour chaque champ (le champ est accessible par son nom, par exemple, il y a une `lastName` dans le filtre pour la variable `lastName` champ dans le Type de données (champ)
 * Chaque sous-définition contient le tableau `_expressions`, qui fournit le jeu d’expressions, ainsi que le champ `_logOp`, qui définit l’opérateur logique avec lequel les expressions doivent être combinées.
 * Chaque expression est définie par la valeur (champ `value`) et l’opérateur (champ `_operator`) auxquels le contenu d’un champ doit être comparé.
 
@@ -914,7 +914,7 @@ Les restrictions suivantes s’appliquent :
 Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM, il existe quelques extensions :
 
 * Si vous avez besoin d’un seul résultat :
-   * Utilisez le nom du modèle ; p. ex. city.
+   * utiliser le nom du modèle ; par exemple, city
 
 * Si vous prévoyez une liste de résultats :
    * Ajoutez `List` au nom du modèle ; par exemple, `cityList`

@@ -4,10 +4,10 @@ description: Découvrez comment intégrer Adobe Target à AEM as a Cloud Service
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Lors de la configuration des champs d’ID client Adobe Target et de code clien
 Dans les deux cas :
 
 * par défaut, le Code client (s’il est ajouté en premier) est également automatiquement copié dans le champ d’ID client ;
-* si nécessaire, vous pouvez modifier le jeu d’ID client par défaut.
+* Si nécessaire, vous pouvez modifier le jeu d’identifiants de tenant par défaut.
 * Les appels back-end vers Target sont basés sur l’ID client et les appels vers Target côté client sont basés sur le Code client.
 
 Comme nous l’avons indiqué plus haut, le premier cas est le plus courant pour AEM as a Cloud Service. Dans les deux cas, veillez à ce que les **deux** champs contiennent les informations appropriées en fonction de vos besoins.

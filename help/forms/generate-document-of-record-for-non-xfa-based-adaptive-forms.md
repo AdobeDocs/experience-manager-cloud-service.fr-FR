@@ -2,10 +2,10 @@
 title: Comment générer un document d’enregistrement (DE) pour AEM Forms ?
 description: Découvrez comment générer un modèle de document d’enregistrement (DE) pour Forms adaptatif.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4142'
-ht-degree: 96%
+source-wordcount: '4140'
+ht-degree: 95%
 
 ---
 
@@ -112,7 +112,7 @@ Vous pouvez utiliser l’action de soumission de workflow Experience Manager Env
 
 Les formulaires adaptatifs et les documents correspondants des modèles d’enregistrement peuvent évoluer au fil du temps. Vous pouvez choisir d’ajouter, de supprimer ou de modifier des champs sur un formulaire adaptatif ou un modèle de document d’enregistrement.
 
-Lorsque vous apportez des modifications à un modèle de document d’enregistrement et chargez le modèle de document d’enregistrement modifié vers AEM Forms, l’éditeur de formulaires adaptatifs détecte automatiquement les liaisons modifiées et vous informe sur les composants de formulaire adaptatif qui nécessitent de nouvelles liaisons. Il vous permet d’effectuer des mises à jour incrémentielles sur un modèle de document d’enregistrement.
+Lorsque vous modifiez un modèle de document d’enregistrement et téléchargez le modèle de document d’enregistrement modifié vers AEM Forms, l’éditeur de Forms adaptatif détecte automatiquement les liaisons modifiées et vous informe sur les composants de formulaire adaptatif qui nécessitent de nouvelles liaisons. Il vous permet d’effectuer des mises à jour incrémentielles sur un modèle de document d’enregistrement.
 
 Par exemple, une organisation, *We.Retail*, possède un modèle de document d’enregistrement basé sur AcroForm, *we-retail-facture.pdf*. Le modèle ressemble à ce qui suit :
 

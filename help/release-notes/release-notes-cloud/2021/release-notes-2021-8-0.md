@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 55%
+ht-degree: 57%
 
 ---
 
@@ -54,7 +54,7 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 ### Correctifs d’[!DNL Assets] {#assets-bugs-fixed}
 
 * Lorsqu’un membre du groupe de contributeurs accède à la variable [!DNL Assets] Console, une `POST` est générée pour créer une collection. Cette requête n’est pas obligatoire ; elle échoue en raison de problèmes d’autorisation et crée de nombreuses erreurs dans les journaux. (CQ-4328856)
-* Lorsque les utilisateurs affichent une ressource et sélectionnent la [!UICONTROL Chronologie] dans le menu contextuel du panneau de gauche, une erreur s’affiche. Dans les journaux, de nombreux avertissements sont consignés en raison d’une requête erronée. (CQ-4328919)
+* Lorsque les utilisateurs affichent une ressource et sélectionnent l’option [!UICONTROL Chronologie] dans le menu contextuel du panneau de gauche, une erreur s’affiche. Dans les journaux, de nombreux avertissements sont consignés en raison d’une requête erronée. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,9 +96,9 @@ La prochaine version est prévue pour le 9 septembre 2021.
 ### Nouveautés {#what-is-new-aug}
 
 * Les clients Cloud Service peuvent désormais afficher les rapports de Contrat de niveau de service (SLA) dans Cloud Manager. Elle sera disponible progressivement au cours des prochains mois.
-Voir [Rapport SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html).
+Consultez [Rapport SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=fr).
 
-* Le type et la gravité de l’IndexType et des règles de qualité de `IndexDamAssetLucene` ont été modifiés. Il s’agit désormais des deux bogues du bloqueur *gravité*.
+* Le type et la gravité d’IndexType et des règles de qualité de `IndexDamAssetLucene` ont été modifiés. Il s’agit désormais des deux bogues du bloqueur *gravité*.
 
 * De nouvelles règles de qualité d’index Oak ont été introduites pour couvrir les configurations asynchrones et Tika.
 
@@ -116,7 +116,7 @@ Voir [Rapport SLA](https://experienceleague.adobe.com/docs/experience-manager-cl
 
 * Mise à jour L’état Disponible ne doit pas s’afficher lorsque la dernière version est inférieure à la version actuelle.
 
-* L’intégration initiale échouait pour les nouvelles organisations aux noms longs.
+* L’intégration initiale échouait pour les nouvelles organisations dont les noms étaient longs.
 
 * Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une des exécutions échoue avec un événement *`cannot update pipeline execution status`* erreur.
 

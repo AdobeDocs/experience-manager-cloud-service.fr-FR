@@ -2,10 +2,10 @@
 title: Parcours de traduction découplée AEM
 description: Faites vos premiers pas avec ce parcours guidé pour découvrir comment traduire votre contenu découplé à l’aide des puissants outils de traduction d’AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 88%
+source-wordcount: '1037'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Ce guide détaille les sujets les plus importants concernant la traduction déco
 * disposer d’une vue d’ensemble sur la diffusion découplée ;
 * disposer d’une compréhension de base des fonctions découplées d’AEM ;
 * connaître les fonctionnalités de traduction d’AEM et leur lien avec le contenu découplé ;
-* être capable de traduire votre propre contenu découplé.
+* Peuvent commencer à traduire votre propre contenu sans interface.
 
 L’objectif est de vous donner une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire. Si vous ne connaissez aucun de ces sujets, ce parcours représente le parfait point de départ.
 

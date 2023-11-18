@@ -2,7 +2,7 @@
 title: Appliquer des workflows aux pages
 description: Lors de la création, vous pouvez appeler des workflows pour agir sur vos pages. Il est également possible d’appliquer plusieurs workflows.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 83%

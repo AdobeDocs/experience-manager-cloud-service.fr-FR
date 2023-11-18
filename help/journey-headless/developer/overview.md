@@ -3,10 +3,10 @@ title: Parcours du développeur CMS AEM Headless
 description: Découvrez le développement découplé à l’aide d’Adobe Experience Manager (AEM) en tant que CMS découplé. Découvrez comment utiliser des fonctionnalités telles que les modèles de contenu, les fragments de contenu et l’API GraphQL afin d’optimiser la diffusion de contenu découplé.
 landing-page-description: Découvrez la diffusion et la mise en œuvre du contenu découplé. Apprenez-en plus sur le développement de votre stratégie au sein de votre entreprise.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 97%
+source-wordcount: '1095'
+ht-degree: 95%
 
 ---
 
@@ -28,11 +28,11 @@ Découvrez tout un ensemble de fonctionnalités de découplage puissantes et fle
 
 La mise en œuvre découplée d’AEM utilise des modèles de fragments de contenu et des fragments de contenu pour se concentrer sur la création de fragments de contenu structurés, neutres et réutilisables, ainsi que sur leur diffusion cross-canal. Pour cela, il faut abandonner la gestion de page et de composant telle qu’elle était traditionnellement réalisée dans les solutions de pile complètes. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences digitales.
 
-Ce guide aborde les différents aspects de l’implémentation découplée dans AEM. À l’issue de celui-ci, vous serez capable d’effectuer les opérations suivantes :
+Ce guide vous guide tout au long des rubriques d’implémentation sans interface utilisateur graphique dans AEM afin que lorsque vous avez terminé, vous puissiez :
 
 * comprendre pleinement ce qu’est la diffusion de contenu découplé et ses avantages ;
 * comprendre les fonctionnalités découplées AEM et comment elles s’associent pour vous offrir une expérience découplée ;
-* effectuer les premières étapes de la mise en œuvre de votre premier projet AEM découplé.
+* Effectuez les premières étapes de la mise en oeuvre de votre premier projet AEM sans interface utilisateur.
 
 >[!TIP]
 >

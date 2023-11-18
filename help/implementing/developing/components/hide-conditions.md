@@ -2,10 +2,10 @@
 title: Utilisation de conditions de masquage
 description: Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 

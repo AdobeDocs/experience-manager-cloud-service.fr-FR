@@ -2,10 +2,10 @@
 title: Étendre Multi Site Manager
 description: Découvrez comment étendre les fonctionnalités de Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 65%
+source-wordcount: '2429'
+ht-degree: 63%
 
 ---
 
@@ -565,7 +565,7 @@ AEM utilise un ensemble par défaut de codes de langue et de pays.
 * Le code de langue par défaut est le code à deux lettres en minuscules, tel que défini par la norme ISO-639-1.
 * Le code de pays par défaut est le code à deux lettres, en minuscules ou en majuscules, comme défini par la norme ISO 3166.
 
-MSM utilise une liste stockée de codes de langue et de pays pour déterminer le nom du pays associé au nom de la version linguistique de votre page. Si nécessaire, vous pouvez modifier les aspects suivants de la liste :
+MSM utilise une liste stockée de codes de langue et de pays pour déterminer le nom du pays associé au nom de la version linguistique de votre page. Si nécessaire, vous pouvez modifier les aspects suivants de la liste :
 
 * Titres de langue
 * Noms de pays
@@ -610,7 +610,7 @@ Par exemple, si deux nouvelles propriétés de page sont ajoutées :
 
 * Style visuel clé :
 
-   * Cette propriété doit être déployée, car elle est (généralement) commune à tous les pays (ou marques, etc.).
+   * Le projet exige que cette propriété soit déployée telle qu’elle est (généralement) commune à tous les pays (ou marques, etc.).
 
 Assurez-vous ensuite que les propriétés suivantes sont correctement configurées :
 

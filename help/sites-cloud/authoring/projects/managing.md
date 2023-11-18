@@ -2,10 +2,10 @@
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 84%
+source-wordcount: '875'
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
    ![Création d’un projet](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Définissez le **titre** et la **description**, puis ajoutez une **miniature** s’il y a lieu. Vous pouvez également ajouter ou supprimer des utilisateurs et utilisatrices et le groupe auquel ils appartiennent. En outre, cliquez sur **Avancé** pour ajouter un nom utilisé dans l’URL.
+1. Définissez la variable **Titre** et **Description** et ajoutez une **Miniature** image si nécessaire. Vous pouvez également ajouter ou supprimer des utilisateurs et utilisatrices et le groupe auquel ils appartiennent. En outre, cliquez sur **Avancé** pour ajouter un nom utilisé dans l’URL.
 
    ![Ajout des détails du projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -138,7 +138,7 @@ Pour activer/désactiver un projet :
    Vous devrez peut-être ajouter cette mosaïque si elle ne figure pas déjà dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
 
 1. Sélectionnez **Modifier**.
-1. Basculez la valeur du sélecteur entre **Actif** et **Inactif**.
+1. Modifier le sélecteur à partir de **Actif** to **Inactif** (ou inversement).
 
    ![Activation d’un projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

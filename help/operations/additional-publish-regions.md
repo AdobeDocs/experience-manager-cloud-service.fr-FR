@@ -2,10 +2,10 @@
 title: Autres régions de publication
 description: Découvrez comment AEM as a Cloud Service prend en charge des régions de publication supplémentaires pour une disponibilité accrue et une latence réduite.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 84%
+source-wordcount: '640'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ Si d’autres régions de publication sont activées, des journaux distincts pou
 
 Gardez à l’esprit les limites suivantes lorsque vous envisagez d’utiliser des régions de publication supplémentaires.
 
-* D’autres régions de publication ne peuvent être ajoutées qu’à AEM Sites. Les régions de publication supplémentaires ne s’étendent pas à d’autres solutions ou fonctionnalités connexes d’AEM déployées dans le même programme (par exemple, AEM Forms ou Adobe Learning Manager).
+* D’autres régions de publication ne peuvent être ajoutées qu’à AEM Sites. Les régions de publication supplémentaires ne s’étendent pas à d’autres solutions AEM ou fonctionnalités connexes déployées dans le même programme (par exemple, AEM Forms ou Adobe Learning Manager).
 * D’autres régions ne peuvent être ajoutées que si les droits associés sont disponibles et inutilisés dans le client.
 * Vous pouvez ajouter au maximum trois régions de publication supplémentaires à n’importe quel environnement.
 * D’autres régions sont disponibles uniquement pour les programmes de production. Cette fonctionnalité n’est pas disponible dans les programmes sandbox.

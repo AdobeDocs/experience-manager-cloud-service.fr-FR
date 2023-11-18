@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 90%
@@ -141,9 +141,10 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    * Mappez toutes les variables supplémentaires contenues dans l’aperçu rapide.
 
       * Mettez à jour l’appel `loadQuickView(sku,*var1*,*var2*)` si vous ajoutez d’autres variables.
+
    * Créez une fonction `loadQuickView` () simple sur la page, à l’extérieur de la visionneuse.
 
-      Par exemple, le code suivant écrit la valeur de SKU dans la console du navigateur :
+     Par exemple, le code suivant écrit la valeur de SKU dans la console du navigateur :
 
    ```xml {.line-numbers}
    function loadQuickView(sku){
@@ -153,11 +154,9 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    * Chargez une page HTML de test sur un serveur web et ouvrez-la.
 
-      Les variables de l’aperçu rapide sont mappées. L’appel de fonction est en place. Et la console du navigateur écrit la valeur de la variable dans la console du navigateur. Cette opération s’appuie sur l’exemple de fonction fourni.
+     Les variables de l’aperçu rapide sont mappées. L’appel de fonction est en place. Et la console du navigateur écrit la valeur de la variable dans la console du navigateur. Cette opération s’appuie sur l’exemple de fonction fourni.
 
-
-
-1. Vous pouvez désormais utiliser la fonction pour appeler un pop-up simple dans l’aperçu rapide. L’exemple suivant utilise une balise `DIV` pour une fenêtre contextuelle.
+1. Vous pouvez désormais utiliser la fonction pour appeler un pop-up simple dans l’aperçu rapide. L’exemple suivant utilise une `DIV` pour une fenêtre contextuelle.
 1. Mettez en forme la balise `DIV` du pop-up comme suit. Ajoutez un style supplémentaire selon vos besoins.
 
    ```xml {.line-numbers}
@@ -189,7 +188,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
-           document.getElementById("quickview_div").style.display="block"; // show popup
+           document.getElementById("quickview_div").style.display="block"; // show pop-up
        }
    </script>
    ```

@@ -2,9 +2,9 @@
 title: Publication du contenu découplé traduit
 description: Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 83%
 
 ---
@@ -155,7 +155,7 @@ Félicitations ! Vous avez terminé le parcours de traduction découplée. Vous
 * disposer d’une vue d’ensemble sur la diffusion découplée ;
 * disposer d’une compréhension de base des fonctions découplées d’AEM ;
 * connaître les fonctionnalités de traduction d’AEM et leur lien avec le contenu découplé ;
-* être capable de traduire votre propre contenu découplé.
+* Soyez en mesure de traduire votre propre contenu sans tête.
 
 Vous êtes maintenant prêt à traduire votre propre contenu découplé dans AEM. Cependant, AEM est un outil puissant et de nombreuses autres options sont disponibles. Consultez certaines des ressources supplémentaires disponibles dans la [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités rencontrées dans ce parcours.
 

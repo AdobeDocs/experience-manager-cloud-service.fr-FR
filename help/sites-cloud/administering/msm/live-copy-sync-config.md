@@ -4,10 +4,10 @@ description: Découvrez les puissantes options de synchronisation des Live Copie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager fournit plusieurs configurations de synchronisation pr�
 
 ## Configurations du déploiement installées et personnalisées {#installed-and-custom-rollout-configurations}
 
-Cette section contient des informations sur les configurations du déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la création de configurations personnalisées, si nécessaire.
+Cette section fournit des informations sur les configurations de déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la manière de créer des configurations personnalisées si nécessaire.
 
 >[!CAUTION]
 >
@@ -174,7 +174,7 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
    ![Héritage de Live Copy à partir de la page parente](../assets/live-copy-inherit.png)
 
-1. Si nécessaire, ajustez l’indicateur **Héritage de Live Copy**. Si cette option est activée, la configuration de Live Copy est effective sur tous les enfants.
+1. Si nécessaire, ajustez la variable **Héritage de Live Copy** Indicateur. Si cette option est activée, la configuration de Live Copy est effective sur tous les enfants.
 
 1. Effacez la variable **Hériter de la configuration de déploiement du parent**, puis sélectionnez une ou plusieurs configurations de déploiement dans la liste.
 

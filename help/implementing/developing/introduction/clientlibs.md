@@ -2,7 +2,7 @@
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 96%
@@ -29,7 +29,7 @@ Les bibliothèques côté client sont la solution intégrée pour la diffusion d
 
 ## Que sont les bibliothèques côté client ? {#what-are-clientlibs}
 
-Les sites requièrent du code JavaScript et CSS, ainsi que des ressources statiques telles que des icônes et des polices web, pour être traités côté client. Une bibliothèque cliente constitue le mécanisme d’AEM utilisé pour référencer (par catégorie si nécessaire) et traiter ces ressources.
+Les sites requièrent du code JavaScript et CSS, ainsi que des ressources statiques telles que des icônes et des polices web, pour être traités côté client. Une bibliothèque cliente est un mécanisme AEM de référence (par catégorie si nécessaire) et de diffusion de ces ressources.
 
 AEM collecte le CSS et code JavaScript du site dans un seul fichier, à un emplacement central, afin de s’assurer qu’une seule copie d’une ressource est incluse dans la sortie HTML. Cela optimise l’efficacité de la diffusion et permet à ces ressources d’être conservées de façon centralisée dans le référentiel par le biais d’un proxy, en assurant la sécurité de l’accès.
 

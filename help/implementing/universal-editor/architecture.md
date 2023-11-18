@@ -2,10 +2,10 @@
 title: Architecture de l’éditeur universel
 description: Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et couches.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 94%
+source-wordcount: '651'
+ht-degree: 90%
 
 ---
 
@@ -34,7 +34,7 @@ Ce document décrit tous les blocs de création et la manière dont ils échange
 ### Éditeurs {#editors}
 
 * **Éditeur universel** – L’éditeur universel utilise un DOM instrumenté pour permettre la modification statique du contenu. Consultez [Attributs et types](attributes-types.md) pour plus d’informations sur les métadonnées nécessaires. Consultez le document [Prise en main de l’éditeur universel dans AEM](getting-started.md) pour découvrir un exemple de l’instrumentation dans AEM.
-* **Rail Propriétés** – Certaines propriétés des composants ne peuvent pas être modifiées en contexte ; par exemple, l’heure de rotation d’un carrousel ou quel onglet accordéon doit toujours être ouvert ou fermé. Pour activer la modification de ces informations de composant, utilisez l’éditeur basé sur les formulaires qui apparaît dans le rail latéral de l’éditeur.
+* **Rail des propriétés** - Certaines propriétés des composants ne peuvent pas être modifiées en contexte ; par exemple, l’heure de rotation d’un carrousel ou quel onglet accordéon doit toujours être ouvert ou fermé. Pour activer la modification de ces informations de composant, utilisez l’éditeur basé sur les formulaires qui apparaît dans le rail latéral de l’éditeur.
 
 ### Application distante {#remote-app}
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 69%
+ht-degree: 65%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 
 Les métadonnées sont des informations supplémentaires sur la ressource qui peuvent faire l’objet d’une recherche. Elles sont automatiquement extraites lorsque vous chargez une image. Vous pouvez modifier les métadonnées existantes ou ajouter de nouvelles propriétés de métadonnées à des champs existants (par exemple lorsqu’un champ de métadonnées est vide).
 
-Étant donné que les entreprises ont besoin de vocabulaires de métadonnées contrôlés et fiables, [!DNL Experience Manager Assets] ne permet pas l’ajout ad hoc de nouvelles propriétés de métadonnées. Bien que les auteurs et autrices ne puissent pas ajouter de nouveaux champs de métadonnées pour les ressources, les développeurs et développeuses le peuvent. Voir [Création d’une propriété de métadonnées pour les ressources](meta-edit.md#editing-metadata-schema).
+Parce que les entreprises ont besoin de vocabulaires de métadonnées contrôlés et fiables, [!DNL Experience Manager Assets] ne permet pas l’ajout à la demande de nouvelles propriétés de métadonnées. Bien que les auteurs et autrices ne puissent pas ajouter de nouveaux champs de métadonnées pour les ressources, les développeurs et développeuses le peuvent. Voir [Création d’une propriété de métadonnées pour les ressources](meta-edit.md#editing-metadata-schema).
 
 ## Modification des métadonnées d’une ressource {#editing-metadata-for-an-asset}
 

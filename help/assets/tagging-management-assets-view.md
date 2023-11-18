@@ -2,10 +2,10 @@
 title: Comment gérer les balises dans la vue Assets ?
 description: Découvrez comment gérer les balises dans la vue Assets. Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 100%
+source-wordcount: '1416'
+ht-degree: 96%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
 >title="Gérer les balises"
->abstract="Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Les administrateurs et administratrices ont la possibilité d’utiliser la structure de balisage hiérarchique, qui facilite l’application des métadonnées pertinentes, la classification des ressources, la prise en charge de la recherche, la réutilisation des balises, l’amélioration de la visibilité, etc."
+>abstract="Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Les administrateurs peuvent utiliser la structure hiérarchique du balisage, qui facilite l’application des métadonnées pertinentes, la classification des ressources, la prise en charge de la recherche, la réutilisation des balises, l’amélioration de la visibilité, etc."
 
 Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et utilisatrices et workflows.
 
-Les listes plates de vocabulaires contrôlés peuvent devenir ingérables au fil du temps. Les administrateurs et administratrices ont la possibilité d’utiliser la structure de balisage hiérarchique, qui facilite l’application des métadonnées pertinentes, la classification des ressources, la prise en charge de la recherche, la réutilisation des balises, l’amélioration de la visibilité, etc.
+Les listes plates de vocabulaires contrôlés peuvent devenir ingérables au fil du temps. Les administrateurs peuvent utiliser la structure hiérarchique du balisage, qui facilite l’application des métadonnées pertinentes, la classification des ressources, la prise en charge de la recherche, la réutilisation des balises, l’amélioration de la visibilité, etc.
 
 Vous pouvez créer un espace de noms au niveau racine et créer une structure hiérarchique de sous-balises dans l’espace de noms. Par exemple, vous pouvez créer un espace de noms `Activities` au niveau racine et placer les balises `Cycling`, `Hiking` et `Running` dans l’espace de noms. Vous pouvez placer d’autres sous-balises `Clothing` et `Shoes` dans `Running`.
 

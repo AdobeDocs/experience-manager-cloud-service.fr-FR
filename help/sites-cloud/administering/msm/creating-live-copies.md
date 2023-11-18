@@ -4,10 +4,10 @@ description: Découvrez comment créer et synchroniser des Live Copies pour uti
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -523,7 +523,7 @@ Lorsque vous annulez l’héritage, vous pouvez modifier la valeur de la propri�
 
 ![Propriétés non héritées](../assets/properties-not-inherited.png)
 
-Vous pourrez par la suite réactiver l’héritage pour une propriété, si nécessaire.
+Vous pouvez réactiver ultérieurement l’héritage d’une propriété, si nécessaire.
 
 >[!NOTE]
 >

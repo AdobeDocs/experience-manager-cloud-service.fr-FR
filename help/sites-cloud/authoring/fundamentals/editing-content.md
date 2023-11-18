@@ -2,7 +2,7 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez en modifier le contenu pour effectuer les mises à jour nécessaires
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 92%
@@ -173,7 +173,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 
    Un composant, adapté au type de ressource, est créé à l’emplacement requis. Il contient la ressource sélectionnée.
 
-1. [Modifiez](#edit-content) le composant si nécessaire.
+1. [Modifier](#edit-content) le composant, si nécessaire.
 
 >[!NOTE]
 >

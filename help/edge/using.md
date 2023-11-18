@@ -3,10 +3,10 @@ title: Utiliser Edge Delivery Services
 description: Utiliser Edge Delivery Services (EDS)
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 99%
+source-wordcount: '617'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Edge Delivery utilise GitHub afin que les clientes et clients puissent gérer e
 
 ## Utiliser Sidekick {#using-sidekick}
 
-AEM Sidekick fournit une barre d’outils avec des options contextuelles qui vous permettent de modifier, de prévisualiser et de publier facilement du contenu. Après avoir [installé](https://www.hlx.live/docs/sidekick-extension) l’extension AEM Sidekick, elle peut être utilisée dans les environnements de projet ou lorsque vous modifiez votre contenu (par exemple, dans les documents Google). En fonction de l’environnement, plusieurs actions sont disponibles : Prévisualiser, Charger à nouveau, Modifier et Publier. Vous pouvez également changer d’environnement lorsque vous utilisez Sidekick pour passer de l’aperçu à la production, et vice versa.
+AEM Sidekick fournit une barre d’outils avec des options contextuelles qui vous permettent de modifier, de prévisualiser et de publier facilement du contenu. Après avoir [installé](https://www.hlx.live/docs/sidekick-extension) l’extension AEM Sidekick, elle peut être utilisée dans les environnements de projet ou lorsque vous modifiez votre contenu (par exemple, dans les documents Google). En fonction de l’environnement, plusieurs actions sont disponibles : Prévisualiser, Charger à nouveau, Modifier et Publier. Vous pouvez également changer d’environnement lors de l’utilisation du sidekick, de l’aperçu à la production, et inversement.
 
 **Pour publier**, ouvrez Sidekick sur une page d’aperçu et utilisez l’action Publier. Une fois que vous avez cliqué sur Publier, l’aperçu actuel sera disponible dans les environnements en ligne et de production.
 

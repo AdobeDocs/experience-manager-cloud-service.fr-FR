@@ -2,10 +2,10 @@
 title: Exemples de types de module d’IU ContextHub
 description: ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions.
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 99%
+ht-degree: 94%
 
 ---
 
@@ -170,7 +170,7 @@ La source du module d’IU se trouve à l’adresse `/libs/granite/contexthub/co
 
 ### Configuration {#configuration-5}
 
-Les instances du module d’IU `contexthub.screen-orientation` ne nécessitent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La variable `clickable` est `false` par défaut. Si vous remplacez la configuration par défaut pour définir `clickable` sur `true`, un clic sur le module fait apparaître une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
+Les instances du module d’IU `contexthub.screen-orientation` ne nécessitent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La variable `clickable` est `false` par défaut. Si vous remplacez la configuration par défaut à définir `clickable` to `true`, cliquez sur le module pour afficher une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
 
 ```javascript
 {
@@ -210,7 +210,7 @@ Les instances du module d’IU `contexthub.tagcloud` ne nécessitent pas de vale
 
 ## Type de module d’IU granite.profile {#granite-profile-ui-module-type}
 
-Le module d’IU ContextHub `granite.profile` affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle révèle l’identifiant de connexion de l’utilisateur et permet de modifier la valeur du nom affiché. Le module obtient des informations à partir d’un magasin ContextHub nommé profile et basé sur le magasin candidat [granite.profile](sample-stores.md#granite-profile-sample-store-candidate).
+Le module d’IU ContextHub `granite.profile` affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle affiche le nom de connexion de l’utilisateur et vous permet de modifier la valeur du nom d’affichage. Le module obtient des informations à partir d’un magasin ContextHub nommé profile et basé sur le magasin candidat [granite.profile](sample-stores.md#granite-profile-sample-store-candidate).
 
 ![Module granite.profil](assets/profile-module.png)
 

@@ -2,7 +2,7 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3642'
 ht-degree: 96%
@@ -59,7 +59,7 @@ Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.as
 
 Il est recommandé de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
-Cette approche est compatible avec [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Ce mécanisme met en évidence le code appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
+Cette approche est compatible avec [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Ce mécanisme met en évidence le code qui est appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
 
 Cette logique (facultative) peut être mise en œuvre de différentes manières et est appelée à partir de HTL avec des commandes spécifiques :
 

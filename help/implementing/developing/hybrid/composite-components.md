@@ -1,11 +1,11 @@
 ---
 title: Composants composites dans les applications d’une seule page (SPA)
-description: Découvrez comment créer vos propres composants composites, composants constitués eux-mêmes d’autres composants, qui fonctionnent avec l’éditeur d’applications d’une seule page (SPA) d’AEM.
+description: Découvrez comment créer vos propres composants composites, composants constitués eux-mêmes d’autres composants, qui fonctionnent avec l’éditeur d’application monopage AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 100%
+source-wordcount: '781'
+ht-degree: 94%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 Les composants composites exploitent la nature modulaire des composants AEM en combinant plusieurs composants de base pour en constituer un seul. Le cas d’utilisation courant d’un composant composite est celui du composant de carte, composé d’une combinaison des composants image et texte.
 
-Lorsque les composants composites sont correctement implémentés dans la structure de l’éditeur d’application d’une seule page (SPA) d’AEM, les auteurs de contenu peuvent effectuer un glisser-déposer de ces composants comme s’ils le feraient pour d’autres, tout en ayant la possibilité de modifier individuellement chaque constituant du composant composite.
+Lorsque les composants composites sont correctement implémentés dans la structure de l’éditeur d’application de page unique (SPA) d’AEM, les auteurs de contenu peuvent faire glisser et déposer ces composants comme s’ils le feraient pour tout autre composant, tout en étant en mesure de modifier individuellement chaque composant composant composant composant composant compositeur.
 
-Cet article explique comment ajouter un composant composite à votre application d’une seule page pour travailler en toute transparence avec l’éditeur de SPA d’AEM.
+Cet article explique comment ajouter un composant composite à votre application monopage pour travailler en toute transparence avec l’éditeur d’application monopage AEM.
 
 ## Cas d’utilisation {#use-case}
 

@@ -4,7 +4,7 @@ description: Découvrez comment configurer la structure d’intégration de trad
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1499'
 ht-degree: 91%
@@ -45,7 +45,7 @@ Les fournisseurs de services de traduction ci-dessous fournissent une mise en œ
 
 Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En général, vous devez fournir vos informations d’identification afin de vous authentifier auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration cloud pour le connecteur Microsoft Translator, voir [Intégration avec Microsoft Translator](connect-ms-translator.md).
 
-Vous pouvez créer plusieurs configurations de cloud pour le même connecteur, si nécessaire. Par exemple, créez une configuration pour chacun des comptes ou projets que vous avez avec le même fournisseur.
+Si nécessaire, vous pouvez créer plusieurs configurations de cloud pour le même connecteur. Par exemple, créez une configuration pour chacun des comptes ou projets que vous avez avec le même fournisseur.
 
 Après avoir configuré une connexion, vous pouvez créer la configuration du framework d’intégration de traduction qui l’utilise.
 

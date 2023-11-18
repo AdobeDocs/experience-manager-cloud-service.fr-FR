@@ -2,10 +2,10 @@
 title: Comment obtenir des thèmes de référence et des modèles pour les formulaires AEM ?
 description: AEM Forms fournit des exemples de thèmes de formulaires adaptatifs, de modèles et de modèles de données de formulaire pour vous aider à créer rapidement des formulaires.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 88%
+source-wordcount: '867'
+ht-degree: 86%
 
 ---
 
@@ -116,7 +116,7 @@ Le modèle de base permet de créer rapidement un formulaire d’inscription. Vo
 Les formulaires adaptatifs peuvent ainsi interagir avec les serveurs Microsoft Dynamics 365 et Salesforce pour activer les workflows métier. Par exemple :
 
 * Écrivez des données sur Microsoft Dynamics 365 et Salesforce sur les envois de formulaires adaptatifs.
-* Écrivez des données dans Microsoft Dynamics 365 et Salesforce via des entités personnalisées définies dans le modèle de données de formulaire et vice versa.
+* Écrivez des données dans Microsoft Dynamics 365 et Salesforce par le biais d’entités personnalisées définies dans le modèle de données de formulaire et inversement.
 * Demandez des données aux serveurs Microsoft Dynamics 365 et Salesforce et préremplissez des formulaires adaptatifs.
 * Lisez des données à partir des serveurs Microsoft Dynamics 365 et Salesforce.
 

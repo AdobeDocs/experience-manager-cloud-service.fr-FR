@@ -2,10 +2,10 @@
 title: En savoir plus sur les bases de la modélisation de contenu
 description: Découvrez les bases de la modélisation du contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 94%
+source-wordcount: '900'
+ht-degree: 93%
 
 ---
 
@@ -109,7 +109,7 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
 
 >[!NOTE]
 >
->Vous pouvez également créer des références ad hoc à l’aide de liens dans des blocs de texte.
+>Vous pouvez également créer des références improvisées à l’aide de liens dans des blocs de texte.
 
 ## Niveaux de structure (fragments imbriqués) {#levels-of-structure-nested-fragments}
 

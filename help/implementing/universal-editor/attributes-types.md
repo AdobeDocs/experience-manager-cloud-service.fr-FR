@@ -2,10 +2,10 @@
 title: Attributs et types
 description: Découvrez les attributs et les types de données requis par l’éditeur universel.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 85%
+source-wordcount: '682'
+ht-degree: 78%
 
 ---
 
@@ -32,7 +32,7 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 | `data-editor-itemfilter` | Définit les références qui peuvent être utilisées |
 | `data-editor-itemlabel` | Définit un libellé personnalisé pour un élément sélectionnable affiché dans l’éditeur. <br>Si `itemmodel` est défini, le libellé est récupéré via le modèle. |
 | `data-editor-itemmodel` | Définit un modèle qui est utilisé pour la modification basée sur les formulaires dans le rail des propriétés |
-| `data-editor-behavior` | Définit le comportement d’une instrumentation ; par exemple, un texte ou une image autonome peut également reproduire un composant pour qu’il puisse être modifié ou supprimé. |
+| `data-editor-behavior` | Définit le comportement d’une instrumentation ; par exemple, un texte ou une image autonome peut également imiter un composant pour le rendre modifiable ou pouvant être supprimé. |
 
 ## Types d’éléments {#item-types}
 
@@ -40,10 +40,10 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 |---|---|---|---|---|---|---|---|
 | `text` | Le texte est modifiable dans les balises HTML, mais uniquement dans un format de texte simple, sans mise en forme de texte enrichi. Ce format est généralement utilisé sur les composants de titre. | Facultatif | Requis | n/a | Facultatif | n/a | Facultatif |
 | `richtext` | Le texte est modifiable avec des fonctionnalités de texte enrichi complètes. L’éditeur de texte enrichi s’affiche dans le panneau de droite | Facultatif | Requis | n/a | Facultatif | n/a | Facultatif |
-| `media` | L’élément modifiable est une ressource, par exemple une image ou une vidéo. | Facultatif | Requis | Liste<br>facultative des critères de filtre d’image ou vidéo transmise au sélecteur de ressources. | Facultatif | n/a | Facultatif |
+| `media` | Le modifiable est une ressource, par exemple une image ou une vidéo. | Facultatif | Requis | Liste<br>facultative des critères de filtre d’image ou vidéo transmise au sélecteur de ressources. | Facultatif | n/a | Facultatif |
 | `container` | L’élément modifiable se comporte comme un conteneur pour les composants, c’est-à-dire le système de paragraphe. | Selon le cas <br>voir ci-dessous. | Selon le cas <br>voir ci-dessous. | Une liste<br>facultative des composants autorisés | Facultatif | n/a | n/a |
 | `component` | L’élément modifiable est un composant. Il n’ajoute pas de fonctionnalités supplémentaires. Il est nécessaire d’indiquer les parties déplaçables/déplaçables du DOM et d’ouvrir le rail des propriétés et ses champs. | Requis | n/a | n/a | Facultatif | Facultatif | n/a |
-| `reference` | L’élément modifiable est une référence : par exemple, un fragment de contenu, un fragment d’expérience ou un produit. | Selon le cas <br>voir ci-dessous. | Selon le cas <br>voir ci-dessous. | Une liste<br>facultative des critères de filtre des fragments de contenu, des produits ou des fragments d’expérience transmise au sélecteur de références. | Facultatif | Facultatif | n/a |
+| `reference` | Le modifiable est une référence, par exemple, Fragment de contenu, Fragment d’expérience ou Produit | Selon le cas <br>voir ci-dessous. | Selon le cas <br>voir ci-dessous. | Une liste<br>facultative des critères de filtre des fragments de contenu, des produits ou des fragments d’expérience transmise au sélecteur de références. | Facultatif | Facultatif | n/a |
 
 Selon le cas d’utilisation, `itemprop` ou `itemid` peuvent être requis. Par exemple :
 

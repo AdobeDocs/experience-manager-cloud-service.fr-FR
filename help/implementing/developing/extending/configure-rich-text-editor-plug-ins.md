@@ -4,7 +4,7 @@ description: Découvrez comment configurer l’éditeur de texte enrichi [!DNL A
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4298'
 ht-degree: 84%
@@ -570,7 +570,7 @@ Une installation Experience Manager standard comprend les dictionnaires pour le
 >
 Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
-Pour ajouter d’autres dictionnaires, le cas échéant, procédez comme suit.
+Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 1. Sélectionnez la langue requise et téléchargez le fichier ZIP contenant les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.

@@ -2,10 +2,10 @@
 title: Parcours d’architecture de contenu découplé AEM
 description: Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 87%
+source-wordcount: '793'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ Ce guide détaille les sujets les plus importants afin que vous puissiez :
 
 * comprendre ce qu’est la diffusion de contenu découplé et ses avantages ;
 * savoir comment modéliser votre contenu destiné aux fonctionnalités découplées AEM ;
-* effectuer les premières étapes de la modélisation de votre contenu pour votre premier projet AEM découplé.
+* Effectuez les premières étapes pour modéliser votre contenu pour votre premier projet AEM sans interface.
 
 ## Parcours de documentation AEM {#documentation-journeys}
 

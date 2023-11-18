@@ -2,10 +2,10 @@
 title: Conseils de développement sur AEM as a Cloud Service
 description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 92%
+source-wordcount: '2733'
+ht-degree: 91%
 
 ---
 

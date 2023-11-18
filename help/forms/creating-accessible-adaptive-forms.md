@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 97%
+source-wordcount: '2022'
+ht-degree: 96%
 
 ---
 
@@ -138,11 +138,11 @@ Dans le cadre des fonctions d’accessibilité, il convient de tenir compte de q
 
 Les utilisateurs ayant une déficience visuelle s’appuient sur le contraste prononcé entre le texte et l’arrière-plan pour lire du contenu numérique. En l’absence de contraste suffisant, la lecture d’un formulaire peut s’avérer difficile, voire impossible, pour certaines personnes utilisatrices.
 
-Il est conseillé d’utiliser la police et les couleurs d’arrière-plan par défaut, à savoir le contenu noir sur fond blanc. Si vous modifiez les couleurs par défaut, optez pour une couleur de premier plan foncée sur un arrière-plan clair, ou inversement.
+Il est conseillé d’utiliser la police et les couleurs d’arrière-plan par défaut, à savoir le contenu noir sur fond blanc. Si vous modifiez les couleurs par défaut, choisissez une couleur de premier plan foncée sur un arrière-plan clair ou inversement.
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 
-### 5. Assurez-vous que les contrôles de formulaire sont accessibles au clavier. {#ensure-that-form-controls-are-keyboard-accessible}
+### 5. Assurez-vous que les commandes de formulaire sont accessibles au clavier {#ensure-that-form-controls-are-keyboard-accessible}
 
 Un formulaire accessible peut être rempli complètement en utilisant uniquement le clavier ou un périphérique de saisie équivalent. Certaines personnes utilisatrices ayant une mobilité réduite ou une déficience visuelle sont parfois contraintes de n’utiliser que le clavier. De plus, de nombreuses personnes utilisatrices préfèrent saisir leurs données au moyen du clavier plutôt que de la souris. En proposant différents modes de saisie des données, vous créez également des formulaires qui répondent aux préférences de l’ensemble des utilisateurs et utilisatrices.
 

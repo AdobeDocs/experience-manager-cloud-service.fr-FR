@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 81%
+source-wordcount: '637'
+ht-degree: 86%
 
 ---
 
-# Notes de mise à jour 2022.6.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2022.6.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.6.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -37,7 +37,7 @@ Consultez la vidéo Aperçu de la version de juin 2022 pour obtenir un résumé 
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* Une nouvelle [interface utilisateur](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) est désormais disponible pour que les administrateurs et les auteurs de contenu puissent gérer efficacement (agir comme publier, annuler la publication, copier, déplacer, etc.), rechercher/filtrer et créer des fragments de contenu pour des cas d’utilisation sans affichage.
+* Une nouvelle [interface utilisateur](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) est désormais disponible pour les administrateurs de contenu et les auteurs de contenu afin de les gérer efficacement (par exemple, publier, annuler la publication, copier, déplacer, etc.), rechercher/filtrer et créer des fragments de contenu pour des cas d’utilisation sans affichage.
 
   ![Console Fragments de contenu](/help/release-notes/assets/cf-ui.png)
 
@@ -47,7 +47,7 @@ Consultez la vidéo Aperçu de la version de juin 2022 pour obtenir un résumé 
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sensei AI pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs balisées vers une image dans une plage comprise entre 1 et 40 afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
+Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sensei AI pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs, comprises entre un et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

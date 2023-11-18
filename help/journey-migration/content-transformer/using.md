@@ -2,10 +2,10 @@
 title: Utilisation du Transformateur de contenu
 description: Découvrez comment transformer votre structure de contenu en vue de la migration vers AEM as a Cloud Service.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 89%
+source-wordcount: '638'
+ht-degree: 87%
 
 ---
 
@@ -52,7 +52,7 @@ Le Transformateur de contenu est fourni avec l’[Outil de transfert de contenu]
 
    ![image](/help/journey-migration/content-transformer/assets/ct-4.png)
 
-1. Vous pouvez sélectionner tous les problèmes ou des problèmes spécifiques, puis les déplacer, les supprimer et les renommer afin de les résoudre. Des chemins personnalisés peuvent également être ajoutés à l’aide du bouton **Ajouter des chemins** dans le coin supérieur droit.
+1. Vous pouvez sélectionner tous les problèmes ou des problèmes spécifiques et les déplacer, les supprimer ou les renommer pour les résoudre. Des chemins personnalisés peuvent également être ajoutés à l’aide du bouton **Ajouter des chemins** dans le coin supérieur droit.
 
    >[!NOTE]
    > Lors de l’utilisation de l’opération de déplacement, il est recommandé de déplacer tous les chemins vers un seul dossier (par exemple, sous `/etc/packages/content-transformation/paths`). Ainsi, lorsque les packages de sauvegarde sont installés pour ramener l’instance à son état d’origine, le dossier (`/etc/packages/content-transformation/paths`) peut être supprimé à l’aide de l’opération de suppression afin de réduire la taille du référentiel.

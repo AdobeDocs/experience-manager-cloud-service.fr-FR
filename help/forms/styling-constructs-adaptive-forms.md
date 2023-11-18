@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2314'
 ht-degree: 97%
 
 ---
@@ -53,7 +53,7 @@ Actuellement, les variables LESS sont définies uniquement pour ces propriétés
 
 ## Modification du style de composant {#changing-component-style}
 
-Vous pouvez modifier l’apparence, la disposition, le positionnement et la visibilité des éléments. Pour réaliser cette tâche, créez ou mettez à jour vos fichiers .css personnalisés pour inclure les mises en forme répertoriées dans cet article.
+Vous pouvez modifier l’aspect, la mise en page, le positionnement et la visibilité des éléments. Pour réaliser cette tâche, créez ou mettez à jour vos fichiers .css personnalisés pour inclure les mises en forme répertoriées dans cet article.
 
 Pour appliquer un style à un formulaire adaptatif, ouvrez ce dernier pour édition, ouvrez les propriétés du conteneur de formulaires adaptatifs et spécifiez le chemin du fichier CSS personnalisé dans l’onglet de base. Les mises en forme par défaut du formulaire adaptatif sont remplacées par les mises en forme répertoriées dans le fichier .css personnalisé.
 

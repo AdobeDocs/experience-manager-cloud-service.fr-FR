@@ -2,10 +2,10 @@
 title: Lancements
 description: Les lancements vous permettent de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 93%
+source-wordcount: '898'
+ht-degree: 94%
 
 ---
 
@@ -102,7 +102,7 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
 
 ## Console Lancements {#the-launches-console}
 
-La console Lancements présente un aperçu de vos lancements et vous permet d’agir sur les lancements répertoriés. Vous pouvez accéder à la console via :
+La console Lancements présente un aperçu de vos lancements et vous permet d’agir sur ceux répertoriés. Vous pouvez accéder à la console via :
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 

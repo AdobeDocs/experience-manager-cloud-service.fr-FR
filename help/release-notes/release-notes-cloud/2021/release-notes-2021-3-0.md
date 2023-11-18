@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2021.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.3.0. »
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 90%
@@ -55,7 +55,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * Seule la dernière page du modèle InDesign figure dans le rendu PDF. (CQ-4317305)
 * L’ouverture du sélecteur de balises prend du temps lorsque le sélecteur fait partie d’un schéma de métadonnées complexe. (CQ-4316426)
 * Lors du chargement d’une ressource portant le même nom de fichier que celui existant, la boîte de dialogue de conflit de noms ne s’affiche pas pour inviter l’utilisateur à créer une version. (CQ-4315424)
-* Les propriétés des métadonnées de dossier peuvent être définies et enregistrées à partir du menu contextuel dans la page Propriétés d’un dossier. Bien que la sélection soit enregistrée dans le référentiel, elle ne s’affiche pas lorsque les propriétés des métadonnées de dossier sont à nouveau ouvertes. (CQ-4314429)
+* Les propriétés de métadonnées de dossier peuvent être définies et enregistrées à partir du menu contextuel dans la page Propriétés d’un dossier. Bien que la sélection soit enregistrée dans le référentiel, elle ne s’affiche pas lorsque les propriétés des métadonnées de dossier sont à nouveau ouvertes. (CQ-4314429)
 * Les ressources dont le nom de fichier contient des espaces ou des caractères spéciaux sont chargées à l’aide du navigateur. (CQ-4318381)
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -74,9 +74,9 @@ Vous pouvez contacter votre représentant Adobe pour une démonstration ou pour 
 
 * Le composant Détails du produit peut désormais être utilisé et configuré sur n’importe quelle page de contenu.
 
-* Site de référence CIF Venia - 2021.03.25 qui comprend la dernière version des composants principaux CIF v1.9.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) pour plus d’informations.
+* Publication CIF site de référence Venia - 2021.03.25 qui comprend la dernière version de CIF Core Components v1.9.0. Voir [Site de référence Venia CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) pour plus d’informations.
 
-* Composants principaux CIF version 1.9.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) pour plus d’informations.
+* Publication CIF composants principaux v1.9.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) pour plus d’informations.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -92,7 +92,7 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 * Clients avec des environnements avec des configurations de nom de domaine personnalisé préexistantes pour [LISTES AUTORISÉES IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) et [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) consultez un message à propos de leurs configurations existantes et peuvent être en libre-service au moyen de l’interface utilisateur .
 
-* Les utilisateurs disposant des autorisations requises peuvent désormais modifier un programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
+* Les utilisateurs et utilisatrices disposant des autorisations requises peuvent désormais modifier un programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
 
    * Ajouter la solution Sites à un programme existant avec Assets, ou inversement.
    * Supprimer Sites ou Assets d’un programme existant contenant à la fois Sites et Assets.
@@ -128,7 +128,7 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 * Il peut arriver que l’utilisateur voit un état « actif » vert en regard d’une liste d’adresses IP autorisées même si cette configuration n’a pas été déployée.
 
-* Tous les pipelines de production existants sont automatiquement activés avec l’étape Audit de l’expérience .
+* Tous les pipelines de production existants sont automatiquement activés avec l’étape d’audit de l’expérience.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
@@ -173,7 +173,7 @@ La date de publication de l’analyseur de bonnes pratiques v2.1.8 est le 22 mar
    * Générez le projet ui.apps.structure.
    * Créez le module d’analyse.
 
-* Nouvelles fonctionnalités et améliorations pour Dispatcher Converter. Voir [Ressource GitHub : Convertisseur du Dispatcher](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Nouvelles fonctionnalités et améliorations pour Dispatcher Converter. Voir [Ressource GitHub : convertisseur du Dispatcher](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * Création de fichiers distincts pour différentes inclusions au lieu de mettre le contenu en file d’attente.
    * Capacité à gérer à la fois le chemin d’accès des dossiers vhosts et le chemin d’accès aux fichiers vhost.
    * Génération de fichiers en batterie avec des configurations client importantes dans une plage de 600 et plus.

@@ -2,10 +2,10 @@
 title: Ajout d’un enregistrement TXT
 description: Découvrez comment ajouter un enregistrement TXT pour ajouter un nom de domaine personnalisé à l’aide de Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 97%
+source-wordcount: '326'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ Un enregistrement TXT de DNS permet l’hébergement d’un domaine dans un serv
 
 Vous devez remplir ces conditions avant d’ajouter un enregistrement TXT.
 
-* Vous devez pouvoir modifier les enregistrements DNS du domaine de votre entreprise ou contacter la personne qui peut le faire.
+* Vous devez être en mesure de modifier les enregistrements DNS pour le domaine de votre entreprise ou contacter la personne appropriée qui peut le faire.
 * Vous devez identifier l’hôte ou le serveur d’enregistrement de votre domaine si vous ne le connaissez pas déjà.
 
 Lorsque vous lancez la vérification de domaine, Cloud Manager vous donne le nom et la valeur TXT à utiliser pour la vérification. Ajoutez un enregistrement TXT au serveur DNS de votre domaine à l’aide du nom et de la valeur spécifiés.

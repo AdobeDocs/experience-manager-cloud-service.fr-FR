@@ -3,7 +3,7 @@ title: Bonnes pratiques en matière de requête et d’indexation
 description: Découvrez comment optimiser vos index et requêtes en fonction des bonnes pratiques d’Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 47%
@@ -140,19 +140,19 @@ Pour expliquer une requête, procédez comme suit :
 
 * Sélectionnez la langue de requête appropriée à l’aide du `Language` liste déroulante.
 * Saisissez l’instruction de requête dans le champ `Query` champ .
-* Si nécessaire, sélectionnez le mode d’exécution de la requête à l’aide des cases à cocher fournies.
+* Si nécessaire, cochez les cases fournies pour indiquer comment la requête sera exécutée.
    * Par défaut, les requêtes JCR n’ont pas besoin d’être exécutées pour identifier le plan d’exécution de la requête (ce n’est pas le cas pour les requêtes QueryBuilder).
    * Trois options sont proposées pour exécuter la requête :
       * `Include Execution Time` - exécutez la requête, mais ne tentez pas de lire les résultats.
       * `Read first page of results` - exécuter la requête et lire la première &quot;page&quot; de 20 résultats (réplication des bonnes pratiques d’exécution des requêtes).
       * `Include Node Count` - exécuter la requête et lire l&#39;ensemble des résultats (ce qui n&#39;est généralement pas conseillé - voir [Traverse d’index](#index-traversal)).
 
-#### Fenêtre contextuelle Explication de la requête {#query-explanation-popup}
+#### Fenêtre contextuelle Explication de requête {#query-explanation-popup}
 
-![Fenêtre contextuelle Explication de la requête](./assets/query-explanation-popup.png)
+![Fenêtre contextuelle Explication de requête](./assets/query-explanation-popup.png)
 
-Après avoir sélectionné `Explain`, une fenêtre contextuelle s’affiche pour l’utilisateur décrivant le résultat de l’explication de la requête (et l’exécution, si sélectionnée).
-Cette fenêtre contextuelle contient des détails sur -
+Après avoir sélectionné `Explain`, une fenêtre contextuelle s’affiche pour l’utilisateur décrivant le résultat de l’explication de la requête (et l’exécution, le cas échéant).
+Cette fenêtre contextuelle comprend des détails sur -
 * Index utilisés lors de l’exécution de la requête (ou aucun index si la requête est exécutée à l’aide de [Traverse du référentiel](#repository-traversal)).
 * Le temps d’exécution (si `Include Execution Time` case à cocher cochée) et le nombre de résultats lus (si `Read first page of results` ou `Include Node Count` cochez les cases ).
 * Le plan d’exécution, permettant une analyse détaillée de l’exécution de la requête - voir [Lecture du plan d’exécution de la requête](#reading-query-execution-plan) pour savoir comment interpréter cela.

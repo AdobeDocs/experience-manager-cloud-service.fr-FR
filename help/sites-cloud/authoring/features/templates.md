@@ -2,10 +2,10 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée. Grâce à l’éditeur de modèles, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs et développeuses.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
-ht-degree: 87%
+source-wordcount: '4535'
+ht-degree: 86%
 
 ---
 
@@ -73,7 +73,7 @@ Lors de la création d’un modèle modifiable :
    * Ou directement à l’adresse : `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
 * [Créez un modèle](#creating-a-new-template-template-author), qui est initialement vide.
-* [Définition de propriétés supplémentaires](#defining-template-properties-template-author) pour le modèle, le cas échéant
+* [Définition de propriétés supplémentaires](#defining-template-properties-template-author) pour le modèle, si nécessaire
 * [Modifier le modèle](#editing-templates-template-authors) pour définir :
    * [Structure](#editing-a-template-structure-template-author) : contenu prédéfini ne pouvant pas être modifié dans les pages créées avec le modèle.
    * [Contenu initial](#editing-a-template-initial-content-author) : contenu prédéfini pouvant être modifié dans les pages créées avec le modèle.
@@ -351,8 +351,8 @@ Vous pouvez ainsi définir les détails de la conception.
 
 La fenêtre de configuration est divisée en deux.
 
-* Dans la partie gauche de la boîte de dialogue, sous **Politique**, vous avez la possibilité de sélectionner une politique existante.
-* Dans la partie droite de la boîte de dialogue, sous **Propriétés**, vous pouvez définir les propriétés spécifiques au type de composant.
+* Dans la partie gauche de la boîte de dialogue sous **Stratégie**, vous pouvez sélectionner une stratégie existante ou en sélectionner une.
+* Dans la partie droite de la boîte de dialogue sous **Propriétés**, vous pouvez définir les propriétés spécifiques au type de composant.
 
 Les propriétés disponibles dépendent du composant sélectionné. Par exemple, pour un composant de texte, les propriétés définissent les options de copier-coller, de mise en forme et de style de paragraphe, entre autres options.
 

@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2158'
-ht-degree: 90%
+source-wordcount: '2161'
+ht-degree: 87%
 
 ---
 
@@ -189,7 +189,7 @@ Cliquez sur le composant pour le mettre en surbrillance dans l’éditeur de pag
 
   Les composants d’une page de base auront les options habituelles.
 
-  Si le composant sur lequel vous cliquez est éditable, une icône de clé à molette s’affiche à droite du nom. Cliquez sur cette icône pour lancer directement la boîte de dialogue de modification du composant.
+  Si le composant sur lequel vous cliquez est éditable, une icône de clé à molette s’affiche à droite du nom. Cliquez sur cette icône pour ouvrir la boîte de dialogue de modification du composant.
 
   ![Bouton Modifier l’arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -288,7 +288,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* Selon les caractéristiques de la page, certains modes peuvent ne pas être disponibles.
 >* L’accès à certains modes nécessite les autorisations/privilèges appropriés.
 >* Le mode de développement n’est pas disponible sur les appareils mobiles en raison de restrictions d’espace.
->* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour basculer entre le mode **Prévisualisation** et le mode actuellement sélectionné (par exemple, **Modifier**, **Disposition**, etc.).
+>* Il existe une [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) pour basculer entre les **Aperçu** et le mode actuellement sélectionné (par exemple : **Modifier**, **Disposition**, etc.).
 >
 
 ## Sélection du chemin d’accès {#path-selection}
@@ -315,10 +315,10 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 
 ![Explorateur de chemins d’accès](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droite de la boîte de dialogue devient actif. Sélectionnez cette option pour confirmer la sélection ou **Annuler** pour abandonner.
+* Une fois une ressource sélectionnée, la variable **Sélectionner** dans l’angle supérieur droit de la boîte de dialogue devient actif. Sélectionnez cette option pour confirmer la sélection ou **Annuler** pour abandonner.
 * Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton **Sélectionner**, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur le **X** en regard du nombre pour tout désélectionner.
 * Lorsque vous parcourez l’arborescence, votre emplacement est reflété dans le chemin de navigation de la boîte de dialogue. Ces chemins de navigation peuvent également être utilisés pour accéder rapidement à la hiérarchie des ressources.
-* Vous pouvez à tout moment utiliser le champ de recherche en haut de la boîte de dialogue. Cliquez sur le **X** dans le champ de recherche pour effacer la recherche.
+* Vous pouvez à tout moment utiliser le champ de recherche situé en haut de la boîte de dialogue. Cliquez sur le **X** dans le champ de recherche pour effacer la recherche.
 * Pour affiner votre recherche, vous pouvez afficher les options de filtre et filtrer vos résultats en fonction du chemin d’accès.
 
   ![Option Filtres](/help/sites-cloud/authoring/assets/filters-option.png)

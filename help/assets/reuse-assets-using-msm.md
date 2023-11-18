@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3403'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

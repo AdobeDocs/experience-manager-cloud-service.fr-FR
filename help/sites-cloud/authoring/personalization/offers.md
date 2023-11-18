@@ -2,10 +2,10 @@
 title: Créer et gérer des offres (console Offres)
 description: Utiliser la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1351'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -81,8 +81,8 @@ Définissez le chemin d’accès parent du nouveau fragment d’expérience
 Sélectionnez le modèle à utiliser pour créer le fragment d’expérience.
    * **Titre du fragment**
 Indiquez le titre.
-   * **Balises du fragment**
-Ajoutez des balises, le cas échéant.
+   * **Balises de fragment**
+Ajoutez des balises, si nécessaire.
 
 1. Confirmez avec **Terminé**.
 

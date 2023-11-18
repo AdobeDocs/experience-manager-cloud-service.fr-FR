@@ -2,10 +2,10 @@
 title: Centre d’actions
 description: Tirez parti du Centre d’actions pour agir facilement sur les incidents et d’autres informations importantes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 93%
+ht-degree: 79%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 AEM as a Cloud Service envoie au Centre d’actions des notifications par e-mail en cas d’incident critique nécessitant une action immédiate, ainsi que des recommandations proactives pour les optimisations. Ces incidents peuvent être par exemple une file d’attente bloquée ou un jeu d’informations d’identification arrivant à expiration ; l’ensemble des types de notification du Centre d’actions peut être consulté dans le [tableau ci-dessous](#supported-notification-types), qui s’agrandira au fil du temps.
 
-Lors de la réception d’une notification par e-mail dans le Centre d’actions, il est possible de cliquer dessus pour ouvrir le Centre d’actions d’AEM as a Cloud Service et accéder à une fenêtre contextuelle présentant un contexte supplémentaire expliquant l’action à effectuer par le client ou la cliente.
+Lorsqu’une notification électronique du Centre d’actions est reçue, vous pouvez cliquer dessus pour ouvrir le Centre d’actions d’AEM as a Cloud Service, avec une fenêtre contextuelle qui affiche un contexte supplémentaire expliquant l’action à entreprendre par un client.
 
 Outre l’affichage d’informations sur la notification par e-mail ouverte, le Centre d’actions sert de hub où vous pouvez afficher et gérer l’ensemble des notifications actuelles et antérieures. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ Pour configurer la réception de notifications par e-mail par le Centre d’acti
 
 ## Flux d’utilisateur détaillé {#detailed-user-flow}
 
-Cliquer sur l’e-mail vous redirige vers le Centre d’actions et une fenêtre contextuelle indiquant le contexte de la notification sur laquelle vous avez cliqué et, dans certains cas, des liens vers des informations supplémentaires décrivant comment prendre des mesures correctives. Vous pouvez également accéder directement au Centre d’actions à l’adresse [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), où vous pouvez sélectionner le programme et l’environnement appropriés.
+Cliquez sur l’e-mail pour accéder au Centre d’actions. Une fenêtre contextuelle affiche le contexte de la notification sur laquelle vous avez cliqué et, dans certains cas, des liens vers des informations supplémentaires décrivant comment prendre des mesures correctives. Vous pouvez également accéder directement au Centre d’actions à l’adresse [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), où vous pouvez sélectionner le programme et l’environnement appropriés.
 
 ![Détails de l’incident](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ Dans le Centre d’actions, vous pouvez voir une liste d’autres notifications 
 
 ![Liste de notifications](/help/operations/assets/notification-list.png)
 
-Dans la plupart des cas, la fenêtre contextuelle fournit tout le contexte nécessaire pour résoudre le problème. Toutefois, si vous souhaitez poser des questions à l’assistance Adobe, vous pouvez cliquer sur le lien **Contacter le support** dans la fenêtre contextuelle. Vous obtiendrez alors un formulaire sur lequel vous pourrez poser votre question, puis vous pourrez l’envoyer pour créer un ticket d’assistance, qui inclura également une référence à la notification spécifique afin qu’un ingénieur ou une ingénieure de l’assistance Adobe dispose du contexte nécessaire.
+Dans la plupart des cas, la fenêtre contextuelle doit fournir tout le contexte nécessaire pour résoudre le problème. Toutefois, si vous avez des questions à propos de l’assistance Adobe, vous pouvez cliquer sur le bouton **Contacter le support technique** dans la fenêtre contextuelle. Vous obtiendrez alors un formulaire sur lequel vous pourrez poser votre question, puis vous pourrez l’envoyer pour créer un ticket d’assistance, qui inclura également une référence à la notification spécifique afin qu’un ingénieur ou une ingénieure de l’assistance Adobe dispose du contexte nécessaire.
 
 ![Contacter l’assistance 1](/help/operations/assets/contact-support1.png)
 

@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2020.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.11.0.
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 91%
 
 ---
@@ -32,7 +32,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ### Nouveautés d’[!DNL Assets] et [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Ingestion en masse de ressources**: Fournir aux clients un service d’ingestion évolutif et natif dans le cloud qui utilise [!DNL Experience Manager] Architecture as a Cloud Service, y compris les microservices de ressources. Les cas d’utilisation essentiels incluent l’ingestion à l’échelle voulue avec la surveillance, les rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données dans le cloud à l’aide d’outils de téléchargement courants. Voir [Outil d’ingestion de ressources en masse](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Ingestion en masse de ressources**: fournir aux clients un service d’ingestion évolutif et natif dans le cloud qui utilise [!DNL Experience Manager] Architecture as a Cloud Service, y compris les microservices de ressources. Les cas d’utilisation essentiels incluent l’ingestion à l’échelle voulue avec la surveillance, les rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données dans le cloud à l’aide d’outils de téléchargement courants. Voir [Outil d’ingestion de ressources en masse](/help/assets/add-assets.md#asset-bulk-ingestor).
 
   Cet outil est destiné aux administrateurs système, consultants ou partenaires concernés par l’implémentation. Cette fonction permet l’ingestion à grande échelle et est idéalement adaptée pour une ingestion initiale ou occasionnellement volumineuse. Pour les tâches d’ingestion de volume plus modeste, utilisez l’[[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr) ou [effectuez un chargement à l’aide de l’interface utilisateur d’Assets](/help/assets/add-assets.md#upload-assets).
 
@@ -62,7 +62,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
    * Il est possible pour les utilisateurs d’accéder à la boîte de dialogue Envoi d’un lien par courrier électronique à l’aide de la touche `Tab`.
    * Le workflow permettant de créer des profils de codage vidéo est plus convivial grâce à l’amélioration du lecteur d’écran.
    * Lorsque vous naviguez à l’aide de la touche `Tab`, la sélection se déplace vers les éléments d’interface utilisateur appropriés dans le workflow pour créer une vidéo interactive.
-   * Les pages Publier, Modifier ressource, Modifier les recadrages intelligents et Éditeur de visionneuse d’images ont été améliorées pour répondre aux références standard du web. Les utilisateurs de la technologie d’assistance (AT) peuvent désormais parcourir facilement ces pages et choisir des actions comme le recadrage d’images.
+   * Les pages Publier, Modifier ressource, Modifier les recadrages intelligents et Éditeur de visionneuse d’images ont été améliorées pour répondre aux références standard du web. Les utilisateurs de la technologie d’assistance (AT) peuvent désormais naviguer facilement sur ces pages et agir sur celles-ci, comme recadrer des images.
    * Les lecteurs sont améliorés pour permettre aux utilisateurs de naviguer à l’aide du clavier.
    * Les utilisateurs du clavier et du lecteur d’écran peuvent employer la fonctionnalité de recadrage.
    * Les utilisateurs du clavier peuvent mieux gérer les zones réactives.
@@ -73,9 +73,9 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Site de référence CIF Venia - 2020.11.05 incluant la dernière version des composants principaux CIF v1.5.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) pour plus d’informations.
+* Publication CIF site de référence Venia - 2020.11.05 incluant la dernière version des CIF composants principaux v1.5.0. Voir [Site de référence Venia CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) pour plus d’informations.
 
-* Composants principaux CIF version 1.5.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) pour plus d’informations.
+* Publication CIF composants principaux v1.5.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.11.0
 ### Nouveautés d’[!DNL Cloud Manager]  {#what-is-new-cm}
 
 * Une nouvelle option de menu **Connexion locale** est désormais disponible pour les utilisateurs à partir des options du menu Environnement dans la carte **Environnements** et les pages de résumé des **environnements**.
-Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#login-locally) pour plus d’informations.
+Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#login-locally).
 
 * L’onglet **Apprendre** de Cloud Manager est actualisé avec de nouvelles images dans l’interface utilisateur.
 
@@ -99,7 +99,7 @@ Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-enviro
 * Le chargement des dépendances effectué avant l’exécution du build nécessitait le téléchargement d’un module externe Maven.
 * Le lien du pied de page de Cloud Manager destiné à sélectionner une langue dirige désormais vers l’emplacement approprié.
 * Parfois, pendant la numérisation du code, le processus SonarQube ne démarrait pas. Désormais, il sera automatiquement détecté et un redémarrage sera tenté.
-* Tous les pipelines de production existants sont automatiquement activés avec l’étape Audit de l’expérience .
+* Tous les pipelines de production existants sont automatiquement activés avec l’étape d’audit de l’expérience.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 

@@ -2,10 +2,10 @@
 title: Parcours de création de contenu découplé AEM
 description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, ses capacités et comment créer du contenu dans votre projet.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 88%
+source-wordcount: '873'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ Ce guide détaille les sujets les plus importants afin que vous puissiez :
 
 * comprendre les bases de ce qu’est la diffusion de contenu découplé et ses avantages ;
 * comprendre les fonctionnalités découplées AEM et comment elles s’associent pour vous offrir une expérience découplée ;
-* avoir la possibilité de créer du contenu pour votre projet découplé AEM.
+* Peut créer du contenu pour votre projet AEM sans interface.
 
 ## Parcours de documentation AEM {#documentation-journeys}
 

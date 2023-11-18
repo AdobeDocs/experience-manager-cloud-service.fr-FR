@@ -2,9 +2,9 @@
 title: Votre boîte de réception
 description: Découvrez comment utiliser les notifications qui arrivent dans votre boîte de réception pour gérer vos tâches.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '911'
 ht-degree: 94%
 
 ---
@@ -148,7 +148,7 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
 
    Selon qu’une boîte de dialogue, une page de documentation ou un assistant a été ouvert, vous pouvez :
 
-   * Confirmer l’action appropriée, par exemple Réaffecter.
+   * Confirmez l’action appropriée, par exemple en la réaffectant.
    * Annuler l’action
    * Sélectionner la flèche vers l’arrière pour revenir à la boîte de réception ; par exemple, si une page de documentation ou un assistant d’action a été ouvert, vous pouvez revenir à la boîte de réception.
 

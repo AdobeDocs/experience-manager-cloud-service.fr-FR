@@ -2,7 +2,7 @@
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 94%
@@ -152,8 +152,8 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur ou l’autrice voit une seule instance du champ ou si cette personne est autorisée à créer plusieurs instances.
 
-* **Libellé de champ** 
-La saisie d’un **libellé de champ** génère automatiquement un **nom de propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
+* **Libellé du champ**
+Saisie d’un **Libellé du champ** génère automatiquement une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
 
 * **Validation**
 La validation de base est disponible par le biais de mécanismes tels que la propriété **Requis**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.

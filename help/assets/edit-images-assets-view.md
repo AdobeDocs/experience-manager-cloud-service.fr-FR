@@ -3,10 +3,10 @@ title: Modification des images
 description: Modifiez les images à l’aide des options optimisées d’ [!DNL Adobe Photoshop Express] et enregistrez les images mises à jour sous forme de versions.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Le redimensionnement d’une image à une taille spécifique est un cas d’util
 1. Sélectionnez une image, puis cliquez sur **Modifier**.
 2. Cliquez sur **[!DNL Resize Image]** dans les actions rapides disponibles dans le volet de gauche.
 3. Sélectionnez la plateforme de médias sociaux appropriée dans la liste déroulante **[!UICONTROL Redimensionner pour]** et sélectionnez la taille de l’image parmi les options qui s’affichent.
-4. Mettez l’image à l’échelle, le cas échéant, à l’aide du champ **[!UICONTROL Échelle d’image]**.
+4. Mettez l’image à l’échelle, si nécessaire, à l’aide de la fonction **[!UICONTROL Échelle d’image]** champ .
 5. Cliquez sur **[!DNL Apply]** pour appliquer vos modifications.
    ![Modification d’images avec Adobe Express.](assets/adobe-express-resize-image.png)
 

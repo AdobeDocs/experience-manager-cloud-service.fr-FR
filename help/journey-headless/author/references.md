@@ -2,10 +2,10 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 91%
+source-wordcount: '705'
+ht-degree: 84%
 
 ---
 
@@ -27,13 +27,13 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment utili
    * Références du contenu
    * Références de ressources/médias
    * Références à un fragment
-   * Références ad hoc depuis un bloc de texte
+   * Références improvisées dans un bloc de texte
 
 ## Que sont les références {#what-are-references}
 
 Les références sont simplement un mécanisme de connexion de vos ressources, qu’il s’agisse d’autres contenus, ressources (comme dans les images) ou autres fragments. Bien que très similaires, il existe des différences.
 
-Certaines références comportent des types de données dédiés (par exemple, Références de contenu et Références de fragment), tandis que d’autres sont simplement ajoutées comme référence dans un bloc de texte (références de ressources et références ad hoc).
+Certaines références comportent des types de données dédiés (par exemple, Références de contenu et Références de fragment), tandis que d’autres sont simplement ajoutées comme référence dans un bloc de texte (références de ressources et références improvisées).
 
 ![Fragments de contenu – Références](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -96,7 +96,7 @@ En utilisant la variable **Arborescence de la structure** de l’éditeur de fra
 
 ## Références ad hoc {#adhoc-references}
 
-Les références ad hoc peuvent être ajoutées sous la forme d’un simple lien dans un bloc de texte :
+Les références improvisées peuvent être ajoutées sous la forme d’un lien simple dans un bloc de texte :
 
 ![Fragments de contenu – Références ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

@@ -2,9 +2,9 @@
 title: Présentation de l’éditeur de SPA
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1633'
 ht-degree: 96%
 
 ---
@@ -182,7 +182,7 @@ Le SDK de l’éditeur de SPA d’AEM est entièrement pris en charge par Adobe 
 * Mode cible
 * ContextHub
 * Modification des images en ligne
-* Modification des configurations (ex. listeners)
+* Modifier les configurations (écouteurs, par exemple)
 * Annuler/rétablir
 * Outil de comparaison des pages et déformation temporelle
 * Fonctionnalités de réécriture de HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.

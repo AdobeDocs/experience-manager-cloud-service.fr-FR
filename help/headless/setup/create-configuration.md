@@ -2,10 +2,10 @@
 title: Création d’une configuration - Configuration découplée
 description: Créez une configuration comme première étape de prise en main d’AEM as a Cloud Service en mode découplé.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ Un administrateur n’a besoin de créer une configuration qu’une seule fois, 
 
 1. Sélectionnez **Créer**
 
-Vous pouvez créer plusieurs configurations si nécessaire. Les configurations peuvent également être imbriquées.
+Si nécessaire, vous pouvez créer plusieurs configurations. Les configurations peuvent également être imbriquées.
 
 >[!NOTE]
 >

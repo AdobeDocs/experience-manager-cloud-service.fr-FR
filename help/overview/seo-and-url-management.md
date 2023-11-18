@@ -2,7 +2,7 @@
 title: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 description: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3705'
 ht-degree: 99%
@@ -105,7 +105,7 @@ La tendance des dernières années a été de les supprimer afin que les URL soi
 
 * améliorent la lisibilité de l’URL ;
 * permettent de mettre les pages en cache sur le Dispatcher et améliorent souvent la sécurité ;
-* permettent de traiter le contenu directement, plutôt que de disposer d’une classe servlet générique qui récupère le contenu. Vous pouvez ainsi profiter des avantages des listes ACL que vous appliquez au référentiel et des filtres que vous appliquez sur le Dispatcher.
+* permettent de traiter le contenu directement, plutôt que de disposer d’une classe servlet générique qui récupère le contenu. Vous pouvez ainsi profiter des avantages des ACL que vous appliquez au référentiel et des filtres que vous appliquez sur le Dispatcher.
 
 #### Utilisation de sélecteurs pour les servlets {#using-selectors-for-servlets}
 
@@ -167,7 +167,7 @@ Les avantages de cette approche sont les suivants :
 
 * Vous pouvez créer la valeur d’optimisation du moteur de recherche, acquise par la sémantique présente dans la hiérarchie de votre site et le nom de la page.
 * Comme aucun paramètre de requête n’est présent, le Dispatcher peut mettre la réponse en cache. En outre, toutes les mises à jour apportées à la page adressée invalident ce cache lorsque la page est activée.
-* Toutes les listes ACL appliquées à `/content/my-brand/my-page` prennent effet lorsqu’un utilisateur ou une utilisatrice tente d’accéder à cette servlet.
+* Toutes les ACL appliquées à `/content/my-brand/my-page` prennent effet lorsqu’un utilisateur ou une utilisatrice tente d’accéder à cette servlet.
 * Le Dispatcher aura déjà été configuré pour diffuser ce contenu en tant que fonction de diffusion du site web. Aucune configuration supplémentaire n’est nécessaire.
 
 ### Réécriture d’URL {#url-rewriting}
@@ -429,7 +429,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
         }
         String location = externalizer.externalize(resource);
         Url url = sitemap.addUrl(location + ".html");
-        // add any additional content to the Url like lastmod, change frequency, etc
+        // add any additional content to the Url like lastmod, change frequency, and so on
     }
 
     @Override

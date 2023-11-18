@@ -2,10 +2,10 @@
 title: Aperçu des pages à l’aide des données ContextHub
 description: La barre d’outils ContextHub affiche les données ContextHub, vous permet de modifier les données de la boutique, et se révèle utile pour prévisualiser le contenu.
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 84%
+ht-degree: 72%
 
 ---
 
@@ -46,16 +46,16 @@ Les modules d’IU peuvent afficher des données d’une ou de plusieurs boutiqu
 
 ### Contenu de la fenêtre contextuelle {#popup-content}
 
-Certains modules d’IU affichent une fenêtre contextuelle lorsque l’utilisateur clique ou appuie dessus. En règle générale, cette fenêtre contextuelle contient des informations supplémentaires complétant les informations affichées sur la barre d’outils.
+Certains modules d’IU affichent une fenêtre contextuelle lorsque vous cliquez ou appuyez dessus. En règle générale, la fenêtre contextuelle contient des informations supplémentaires par rapport à celles qui s’affichent dans la barre d’outils.
 
 ![Informations sur le profil ContextHub](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### Formulaires dans une fenêtre contextuelle {#popup-forms}
 
-La fenêtre contextuelle d’un module peut inclure des éléments de formulaire qui vous permettent de modifier les données dans le magasin ContextHub. Si le contenu de la page est déterminé par les données du magasin, vous pouvez utiliser le formulaire et observer les modifications apportées au contenu de la page.
+La superposition contextuelle d’un module peut inclure des éléments de formulaire qui vous permettent de modifier les données dans le magasin ContextHub. Si le contenu de la page est déterminé par les données du magasin, vous pouvez utiliser le formulaire et observer les modifications apportées au contenu de la page.
 
 ### Mode Plein écran {#fullscreen-mode}
 
-Les fenêtres contextuelles peuvent inclure une icône que vous choisissez pour développer le contenu de la fenêtre contextuelle afin de couvrir l’intégralité de la fenêtre ou de l’écran du navigateur.
+Les fenêtres contextuelles peuvent inclure une icône que vous choisissez pour développer le contenu de la fenêtre contextuelle afin de couvrir l’ensemble de la fenêtre ou de l’écran du navigateur.
 
 ![Bouton Plein écran](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

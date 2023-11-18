@@ -3,10 +3,10 @@ title: Prise en main d’Edge Delivery Services
 description: Prise en main d’Edge Delivery Services (EDS).
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 92%
+source-wordcount: '862'
+ht-degree: 74%
 
 ---
 
@@ -22,15 +22,15 @@ Grâce à Edge Delivery, vous pouvez :
 
 ## Fonctionnement d’Edge Delivery {#edge-works}
 
-Le diagramme suivant illustre comment modifier du contenu dans Microsoft Word (modification basée sur des documents) et le publier sur Edge Delivery. Il présente également la méthode de publication traditionnelle AEM à l’aide de différents éditeurs.
+Le diagramme suivant illustre comment modifier du contenu dans Microsoft® Word (modification basée sur des documents) et le publier sur Edge Delivery. Il présente également la méthode de publication traditionnelle AEM à l’aide de différents éditeurs.
 
 ![Architecture d’Edge Delivery.](assets/edgedelivery.png)
 
 Edge Delivery est un ensemble de services composables qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Comme mentionné précédemment, vous pouvez utiliser l’[instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=fr) et la [création basée sur des documents](https://www.hlx.live/docs/authoring).
 
-Par exemple, vous pouvez utiliser du contenu directement à partir de documents Microsoft Word ou Google Docs. Cela signifie que les documents provenant de ces sources peuvent devenir des pages de votre site web. De plus, les en-têtes, listes, images et éléments de police peuvent tous être transférés de la source initiale vers le site web. Le nouveau contenu sera ajouté instantanément sans nouveau processus de création.
+Par exemple, vous pouvez utiliser du contenu directement à partir de Microsoft® Word ou de documents Google. Cela signifie que les documents provenant de ces sources peuvent devenir des pages de votre site web. De plus, les en-têtes, listes, images et éléments de police peuvent tous être transférés de la source initiale vers le site web. Le nouveau contenu est ajouté instantanément sans processus de reconstruction.
 
-Edge Delivery utilise GitHub afin que les clientes et clients puissent gérer et déployer du code directement à partir de leur référentiel GitHub. Par exemple, vous pouvez écrire du contenu dans Google Docs ou Microsoft Word et les fonctionnalités de votre site peuvent être développées à l’aide de CSS et de JavaScript dans GitHub . Lorsque tout est prêt, vous pouvez utiliser l’extension de navigateur Sidekick pour prévisualiser et publier les mises à jour de contenu.
+Edge Delivery utilise GitHub afin que les clients puissent gérer et déployer du code directement à partir de leur référentiel GitHub. Par exemple, vous pouvez écrire du contenu dans Google Docs ou Microsoft® Word et les fonctionnalités de votre site peuvent être développées à l’aide de CSS et de JavaScript dans GitHub . Lorsque tout est prêt, vous pouvez utiliser l’extension de navigateur Sidekick pour prévisualiser et publier les mises à jour de contenu.
 
 Informations complémentaires :
 
@@ -40,9 +40,9 @@ Informations complémentaires :
 
 ## Edge Delivery Services et autres produits Adobe Experience Cloud {#edge-other-products}
 
-Edge Delivery Services fait partie d’Adobe Experience Manager. De ce fait Edge Delivery et AEM Sites peuvent coexister sur le même domaine. Il s’agit d’un cas d’utilisation courant pour les sites web plus volumineux. De plus, le contenu d’Edge Delivery peut être facilement utilisé dans vos pages AEM Sites et vice versa.
+Edge Delivery Services fait partie d’Adobe Experience Manager. De ce fait Edge Delivery et AEM Sites peuvent coexister sur le même domaine. Il s’agit d’un cas d’utilisation courant pour les sites web plus volumineux. De plus, le contenu de la diffusion Edge peut être facilement utilisé dans vos pages AEM Sites et à l’inverse.
 
-Vous pouvez également utiliser Edge Delivery Services avec Adobe Target, Analytics et Launch.
+Vous pouvez également utiliser des Edge Delivery Services avec Adobe Target, Analytics et Launch.
 
 ## Accéder à Edge Delivery Services {#getting-access}
 
@@ -64,7 +64,7 @@ Adobe s’engage à vous donner les moyens d’engager et de soutenir la communa
 
 ### Comment accéder à votre canal de collaboration de produit {#collab-channel}
 
-Compte tenu de la valeur du canal de communication directe avec les clientes et clients, tous les clientes et clients AEM établiront au lancement un canal Slack dans le but d’accélérer les mises à jour critiques et de développer des rapports sur la qualité de l’expérience. Vous recevrez une invitation d’Adobe à rejoindre un canal Slack spécifique à votre organisation.
+Compte tenu de la valeur du canal de communication directe avec les clients, tous les clients AEM au lancement établiront un canal Slack pour la vitesse, les mises à jour critiques et la création de rapports à l’échelle sur la qualité de l’expérience. Vous recevez une invitation d’Adobe à rejoindre un canal de Slack spécifique à votre entreprise.
 
 Pour plus d’informations, consultez le document [Utilisation du robot Slack](https://www.hlx.live/docs/slack) pour obtenir plus de détails.
 

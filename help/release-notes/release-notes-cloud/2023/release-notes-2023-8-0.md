@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1687'
 ht-degree: 30%
 
 ---
@@ -151,6 +151,7 @@ Téléchargez les journaux CDN à partir de Cloud Manager, ce qui s’avère uti
 ### Réseau de diffusion de contenu et règles WAF : programme d’adoption précoce {#waf-early-adopter}
 
 Filtrez le trafic sur le réseau de diffusion de contenu selon :
+
 * en-têtes de requête et propriétés (par exemple, adresse IP) ;
 * schémas de trafic connus pour être associés à un trafic malveillant
 

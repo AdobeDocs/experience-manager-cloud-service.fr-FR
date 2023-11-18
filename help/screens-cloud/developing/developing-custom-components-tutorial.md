@@ -2,10 +2,10 @@
 title: Développement d’un composant personnalisé pour Screens as a Cloud Service
 description: Le tutoriel suivant décrit les étapes à suivre pour créer un composant personnalisé pour AEM Screens. AEM Screens réutilise de nombreux modèles de conception et technologies existants d’autres produits AEM. Ce tutoriel met en évidence les différences et les considérations spéciales lors du développement pour AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2105'
-ht-degree: 98%
+source-wordcount: '2107'
+ht-degree: 97%
 
 ---
 
@@ -289,7 +289,7 @@ Les composants d’AEM Screens s’affichent différemment en mode d’édition
 
    La propriété catégories est une chaîne qui identifie la bibliothèque cliente. La catégorie cq.screens.components est utilisé en mode Edition et Aperçu/Production. Par conséquent, tout fichier CSS/JS défini dans la bibliothèque sharedclientlib est chargé dans tous les modes.
 
-   Il est recommandé de ne jamais exposer directement les chemins d’accès à /apps dans un environnement de production. La propriété allowProxy garantit que la bibliothèque cliente CSS et JS est référencée par le biais d’un préfixe of/etc.clientlibs.
+   Il est recommandé de ne jamais exposer directement les chemins d’accès à /apps dans un environnement de production. La propriété allowProxy garantit que la bibliothèque cliente CSS et JS est référencée au moyen d’un préfixe of/etc.clientlibs.
 
 1. Créez un fichier appelé `css.txt` sous le dossier partagé.
 

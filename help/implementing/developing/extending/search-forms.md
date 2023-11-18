@@ -2,10 +2,10 @@
 title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 97%
+source-wordcount: '2033'
+ht-degree: 96%
 
 ---
 
@@ -480,7 +480,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 >Les prédicats de recherche courants sont définis dans :
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->Ces informations sont proposées à des fins de référence seulement. Vous ne devez pas apporter de modifications au répertoire `/libs`.
+>Ces informations sont proposées à titre de référence uniquement. Vous ne devez pas modifier `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -527,7 +527,7 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
 * **Chemin d’accès aux options**
 
-  L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, puis cliquer sur l’icône « **+** » pour ajouter la sélection à la liste des options valides (puis sur l’icône « **-** » pour la supprimer, si nécessaire).
+  L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, Après avoir sélectionné **+** sert à ajouter la sélection à la liste des options valides (puis la fonction **-** pour la supprimer, le cas échéant).
 
   Les options sont des nœuds de contenu créés par l’utilisateur, qui possèdent la structure suivante :
 

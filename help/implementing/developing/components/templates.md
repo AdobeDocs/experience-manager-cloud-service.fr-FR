@@ -2,10 +2,10 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3279'
-ht-degree: 95%
+source-wordcount: '3278'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Lors de la création d’un modèle modifiable :
 
    >[!NOTE]
    >
-   >Une sélection de types de modèles prêts à l’emploi est fournie. Vous pouvez également [créer vos propres types de modèles spécifiques à un site](#creating-template-types), si nécessaire.
+   >Une sélection de types de modèles prêts à l’emploi est fournie. Vous pouvez également [créer vos propres types de modèles spécifiques à un site ;](#creating-template-types) si nécessaire.
 
 1. Configurez la structure, les politiques de contenu, le contenu initial et la mise en page du nouveau modèle.
 

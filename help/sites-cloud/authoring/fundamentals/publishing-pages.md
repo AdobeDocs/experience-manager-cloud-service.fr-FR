@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 92%
+source-wordcount: '1805'
+ht-degree: 91%
 
 ---
 
@@ -66,7 +66,7 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
    * La page est publiée directement, s’il n’y a aucune référence à publier.
    * Si la page comporte des références à publier, celles-ci sont répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
-      * Spécifier les ressources, balises et autres éléments à publier conjointement avec la page, puis cliquer sur **Publier** pour terminer l’opération.
+      * Indiquez les ressources, balises, etc., que vous souhaitez publier conjointement avec la page, puis utilisez **Publier** pour terminer le processus.
       * Sélectionner **Annuler** pour abandonner l’opération.
 
    ![Publication de références avec la page](/help/sites-cloud/authoring/assets/publishing-references.png)

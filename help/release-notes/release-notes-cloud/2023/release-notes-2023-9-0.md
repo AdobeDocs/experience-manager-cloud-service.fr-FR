@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2023.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1442'
 ht-degree: 32%
 
 ---
@@ -120,6 +120,7 @@ Pour les nouveaux environnements, le réseau de diffusion de contenu supprime pa
 ### Règles de filtre de trafic (y compris les règles WAF) du programme des premiers adopteurs {#waf-early-adopter}
 
 Filtrez le trafic sur le réseau de diffusion de contenu selon :
+
 * en-têtes de requête et propriétés (par exemple, adresse IP) ;
 * schémas de trafic connus pour être associés à un trafic malveillant
 

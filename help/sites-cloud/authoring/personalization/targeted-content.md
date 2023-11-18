@@ -2,10 +2,10 @@
 title: Création de contenu ciblé en mode Ciblage
 description: Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '5306'
-ht-degree: 88%
+source-wordcount: '5304'
+ht-degree: 87%
 
 ---
 
@@ -585,7 +585,7 @@ Pour simuler l’expérience du visiteur ou de la visiteuse, utilisez les outils
 
    La page se modifie pour afficher le contenu ciblé pour le contexte actuel.
 
-1. Pour apporter des modifications aux offres affichées, passez en mode Ciblage. Pour l’activité de simulation sélectionnée, modifiez les offres pour le contexte que vous avez configuré en mode Aperçu.
+1. Pour modifier les offres affichées, passez en mode Ciblage . Pour l’activité de simulation sélectionnée, modifiez les offres pour le contexte que vous avez configuré en mode Aperçu.
 
 ## Configuration des options du composant cible {#configuring-target-component-options}
 

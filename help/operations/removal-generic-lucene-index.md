@@ -2,10 +2,10 @@
 title: Suppression des index Lucene génériques
 description: Découvrez la planification de la suppression des index Lucene génériques et en quoi elle peut vous affecter.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ Afin de prendre en charge des volumes de données client plus importants, Adobe 
 
 Adobe a déjà ajusté les coûts de lʼindex via les propriétés « `costPerEntry` » et « `costPerExecution` » afin de garantir que dʼautres index tels que `/oak:index/pathreference` soient utilisés de préférence, dans la mesure du possible.
 
-Les applications client qui utilisent des requêtes qui dépendent toujours de cet index doivent être mises à jour immédiatement afin d’exploiter d’autres index existants, qui peuvent être personnalisés si nécessaire. Vous pouvez également ajouter de nouveaux index personnalisés à l’application cliente. Pour obtenir des instructions complètes sur la gestion des index dans AEM as a Cloud Service, consultez la [documentation sur lʼindexation](/help/operations/indexing.md).
+Les applications client qui utilisent des requêtes qui dépendent toujours de cet index doivent être mises à jour immédiatement afin d’utiliser d’autres index existants, qui peuvent être personnalisés si nécessaire. Vous pouvez également ajouter de nouveaux index personnalisés à l’application cliente. Pour obtenir des instructions complètes sur la gestion des index dans AEM as a Cloud Service, consultez la [documentation sur lʼindexation](/help/operations/indexing.md).
 
 ## Êtes-vous affecté ? {#are-you-affected}
 
@@ -129,7 +129,7 @@ Traditionnellement, lʼindex Lucene générique est utilisé pour prendre en cha
 
 #### Recherche du sélecteur de champ de chemin {#picker-search}
 
-AEM comprend un composant de boîte de dialogue personnalisé avec le type de ressource Sling `granite/ui/components/coral/foundation/form/pathfield` qui fournit un navigateur (sélecteur) permettant de sélectionner un autre chemin dʼaccès AEM. Le sélecteur de champ de chemin par défaut, qui est utilisé lorsqu’aucune propriété `pickerSrc` personnalisée n’est définie dans la structure du contenu, affiche une barre de recherche dans la boîte de dialogue contextuelle.
+AEM comprend un composant de boîte de dialogue personnalisé avec le type de ressource Sling `granite/ui/components/coral/foundation/form/pathfield` qui fournit un navigateur (sélecteur) permettant de sélectionner un autre chemin dʼaccès AEM. Sélecteur de champ de chemin par défaut, utilisé lorsqu’il n’est pas personnalisé `pickerSrc` est définie dans la structure de contenu et affiche une barre de recherche dans la boîte de dialogue contextuelle.
 
 Les types de nœud sur lesquels porter la recherche peuvent être spécifiés à l’aide de la propriété `nodeTypes`.
 
