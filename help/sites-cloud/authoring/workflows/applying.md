@@ -1,17 +1,17 @@
 ---
-title: Application de workflows aux pages
-description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
+title: Appliquer des workflows aux pages
+description: Lors de la création, vous pouvez appeler des workflows pour agir sur vos pages. Il est également possible d’appliquer plusieurs workflows.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 93%
+source-wordcount: '654'
+ht-degree: 83%
 
 ---
 
 # Appliquer des workflows aux pages {#applying-workflows-to-pages}
 
-Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
+Lors de la création, vous pouvez appeler des workflows pour agir sur vos pages. Il est également possible d’appliquer plusieurs workflows.
 
 Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes :
 
@@ -116,7 +116,7 @@ Indiquez les détails suivants :
 
 1. À l’étape **Domaine**, vous pouvez sélectionner :
 
-   * **Ajouter du contenu** pour ouvrir [l’explorateur de chemins d’accès](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) et sélectionner des ressources supplémentaires. Lorsque vous êtes dans l’explorateur, cliquez/appuyez sur **l’option de sélection** pour ajouter du contenu à l’instance de workflow.
+   * **Ajouter du contenu** pour ouvrir le [navigateur de chemin](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) et sélectionner des ressources supplémentaires ; lorsque vous vous trouvez dans le navigateur, sélectionnez **Sélectionner** pour ajouter le contenu à l’instance de workflow.
 
    * Une ressource existante pour afficher d’autres actions :
 

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '2003'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2000'
+ht-degree: 98%
 
 ---
 
@@ -77,7 +77,7 @@ La création manuelle d’informations descriptives de métadonnées coûte cher
 
 La date de dernière modification d’une ressource correspond au moment où le fichier d’origine d’une ressource a été modifié. Par conséquent, la date de modification et l’utilisateur ne changent que lorsque :
 
-* une nouvelle version de la ressource a été créée ;
+* une nouvelle version de la ressource est chargée ;
 * une ressource est retraitée.
 
 La date de la dernière modification et l’utilisateur ne changent pas :
@@ -135,7 +135,7 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
 
 1. Accédez à l’emplacement des ressources que vous souhaitez modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
-1. Sur la barre d’outils, appuyez/cliquez sur **[!UICONTROL Propriétés]** pour ouvrir la page [!UICONTROL Propriétés] des ressources sélectionnées.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Propriétés]** pour ouvrir le [!UICONTROL Propriétés] pour les ressources sélectionnées.
 
    >[!NOTE]
    >
@@ -149,13 +149,12 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
    >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
    >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
-
-1. Pour sélectionner un schéma de métadonnées différent pour les ressources, appuyez/cliquez sur **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez le schéma souhaité. Enregistrez les modifications.
-1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
+1. Pour sélectionner un schéma de métadonnées différent pour les ressources, sélectionnez **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez le schéma de votre choix. Enregistrez les modifications.
+1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Sélectionnez **[!UICONTROL Envoyer]**.
 
    >[!CAUTION]
    >
-   >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
+   >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ, même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
 
 ## Métadonnées personnalisées à l’aide d’un profil de traitement {#metadata-compute-service}
 
@@ -253,7 +252,7 @@ La création de workflows pilotés par les métadonnées permet d’automatiser 
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
@@ -266,4 +265,3 @@ La création de workflows pilotés par les métadonnées permet d’automatiser 
 >
 >* [Métadonnées XMP](xmp-metadata.md)
 >* [Modification ou ajout de métadonnées](meta-edit.md)
-

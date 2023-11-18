@@ -1,13 +1,13 @@
 ---
-title: Activation du pipeline front-end
+title: Activer le pipeline front-end
 description: Découvrez comment activer le pipeline front-end pour les sites existants, afin d’utiliser les thèmes de site et personnaliser plus rapidement votre site.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ AEM peut adapter automatiquement votre site existant pour utiliser le pipeline f
 L’activation de votre site s’effectue à partir de la console Sites à l’aide de la fonction [rail Site.](site-rail.md)
 
 1. Connectez-vous à AEM et naviguez sur votre site via **Navigation globale** > **Sites**.
-1. Sélectionnez votre site dans la console. Vous devez sélectionner la racine du site et pas les pages enfants.
+1. Sélectionnez votre site dans la console. Sélectionnez la racine du site et non les pages enfants.
 1. Une fois votre site sélectionné, ouvrez le [sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) à gauche et choisissez **Site**.
 1. Dans le rail **Site** cliquez sur le bouton **Activer le pipeline front-end**.
 

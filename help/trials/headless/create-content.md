@@ -4,10 +4,10 @@ description: Utilisez le modèle de fragment de contenu que vous avez créé pr�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 91%
+source-wordcount: '688'
+ht-degree: 81%
 
 ---
 
@@ -37,15 +37,15 @@ Dans ce module, vous créez un fragment de contenu basé sur ce modèle à l’a
 
 La console Fragment de contenu est utilisée pour créer et modifier du contenu headless sur les canaux de diffusion et indépendamment du contexte, ce qui peut être la méthode la plus efficace dans de nombreux cas de création. Dans un module ultérieur, nous allons explorer la modification de contenu headless dans le contexte et sur place.
 
-1. Appuyez ou cliquez sur le bouton **Créer** en haut à droite de la console.
+1. Sélectionnez la variable **Créer** en haut à droite de la console.
 
-1. La boîte de dialogue **Nouveau fragment de contenu** s’ouvre et vous pouvez commencer à créer un fragment de contenu. Le champ **Emplacement** est automatiquement renseigné à l’emplacement du nouveau contenu.
+1. La variable **Nouveau fragment de contenu** s’ouvre, dans laquelle vous pouvez commencer à créer un fragment de contenu. Le champ **Emplacement** est automatiquement renseigné à l’emplacement du nouveau contenu.
 
 1. Dans la liste déroulante **Modèle de fragment de contenu**, sélectionnez le modèle de fragment de contenu **Aventure** que vous avez créé précédemment.
 
 1. Ajoutez `Tuscany` comme **titre** descriptif pour le fragment de contenu. Cela permet d’identifier votre fragment dans la console.
 
-1. Appuyez ou cliquez sur **Créer et ouvrir**.
+1. Sélectionner **Créer et ouvrir**.
 
 ![Créer un fragment de contenu](assets/do-not-localize/create-content.png)
 
@@ -71,7 +71,7 @@ Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, 
 
 1. Fournissez une **image** qui représente le voyage en appuyant ou en cliquant sur **Ajouter une ressource** dans le champ **Image**.
 
-1. Dans le pop-up de la ressource, appuyez ou cliquez sur **Parcourir les ressources** pour effectuer une sélection à partir d’une ressource existante dans la bibliothèque de ressources.
+1. Dans la fenêtre contextuelle de la ressource, sélectionnez **Parcourir les ressources** pour effectuer une sélection à partir d’une ressource existante dans la bibliothèque assets.
 
    ![Ajouter une ressource](assets/do-not-localize/add-asset.png)
 
@@ -79,17 +79,17 @@ Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, 
 
 1. Le contenu du dossier **cycling-tuscany** s’affiche à droite. Sélectionnez l’image `ADOBESTOCK_141786166.JPEG`.
 
-1. Appuyez ou cliquez sur **Sélectionner**.
+1. Sélectionner **Sélectionner**.
 
    ![Sélectionner une ressource](assets/do-not-localize/select-asset.png)
 
 1. L’image sélectionnée s’affiche dans le fragment de contenu. L’éditeur enregistre automatiquement les modifications.
 
-1. Une fois que vous avez terminé d’ajouter du contenu, appuyez ou cliquez sur le bouton **Publier** en haut à droite de l’éditeur. Votre fragment de contenu peut ainsi être utilisé par des applications externes. Sélectionnez ensuite **Maintenant** dans la liste déroulante. Vous pouvez également planifier sa publication pour plus tard.
+1. Une fois le contenu ajouté, sélectionnez l’option **Publier** en haut à droite de l’éditeur. Votre fragment de contenu peut ainsi être utilisé par des applications externes. Sélectionnez ensuite **Maintenant** dans la liste déroulante. Vous pouvez également planifier sa publication pour plus tard.
 
    ![Publier le contenu](assets/do-not-localize/publish.png)
 
-1. La boîte de dialogue **Publier des fragments de contenu** s’affiche. AEM effectue automatiquement une vérification des références pour s’assurer que toutes les ressources nécessaires sont publiées pour votre fragment de contenu. Dans ce cas, vous devrez également publier le modèle que vous avez créé. Cliquez ou appuyez sur **Publier**.
+1. La boîte de dialogue **Publier des fragments de contenu** s’affiche. AEM effectue automatiquement une vérification des références pour s’assurer que toutes les ressources nécessaires sont publiées pour votre fragment de contenu. Dans ce cas, vous devrez également publier le modèle que vous avez créé. Sélectionner **Publier**.
 
    ![Vérification de la publication et des références.](assets/do-not-localize/publish-confirm.png)
 

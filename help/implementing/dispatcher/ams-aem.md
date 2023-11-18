@@ -3,10 +3,10 @@ title: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Serv
 description: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1451'
-ht-degree: 100%
+source-wordcount: '1455'
+ht-degree: 97%
 
 ---
 
@@ -103,8 +103,7 @@ Exécutez le programme de validation du Dispatcher dans votre répertoire, avec 
 $ validator httpd .
 ```
 
-Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé
-les fichiers en question.
+Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé ces fichiers.
 
 Si vous voyez des directives Apache qui ne sont pas placées sur la liste autorisée, supprimez-les.
 
@@ -257,8 +256,7 @@ Exécutez le programme de validation du Dispatcher AEM as a Cloud Service dans v
 $ validator dispatcher .
 ```
 
-Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé
-les fichiers en question.
+Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé ces fichiers.
 
 Si des erreurs s’affichent concernant une variable `PUBLISH_DOCROOT` non définie, renommez-la `DOCROOT`.
 

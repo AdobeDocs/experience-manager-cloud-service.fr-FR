@@ -2,10 +2,10 @@
 title: Référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4620'
-ht-degree: 100%
+source-wordcount: '4612'
+ht-degree: 99%
 
 ---
 
@@ -403,7 +403,7 @@ Objet représentant la réponse brute.
 
 #### getServiceDetails() {#getservicedetails}
 
-Récupère l’objet de service pour cet objet ContextHub.Store.JSONPStore. L’objet service contient toutes les informations requises pour créer l’URL du service.
+Récupère l’objet de service pour cet objet ContextHub.Store.JSONPStore. L’objet service contient les informations requises pour créer l’URL du service.
 
 ##### Renvoie {#returns-getservicedetails}
 
@@ -481,15 +481,15 @@ Résout le paramètre donné.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` étend le paramètre [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) pour qu’il hérite de toutes les fonctions de cette classe. Toutefois, les données extraites du service JSONP sont conservées conformément à la configuration de la persistance ContextHub. (Voir [Modes de persistance :](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` étend [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) il hérite donc de toutes les fonctions de cette classe. Toutefois, les données extraites du service JSONP sont conservées conformément à la configuration de la persistance ContextHub. (Voir [Modes de persistance :](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-`ContextHub.Store.PersistedStore` étend [ContextHub.Store.Core](#contexthub-store-core) pour qu’il hérite de toutes les fonctions de cette classe. Les données de ce magasin sont conservées en fonction de la configuration de la persistance ContextHub.
+`ContextHub.Store.PersistedStore` étend [ContextHub.Store.Core](#contexthub-store-core) il hérite donc de toutes les fonctions de cette classe. Les données de ce magasin sont conservées en fonction de la configuration de la persistance ContextHub.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` étend [ContextHub.Store.Core](#contexthub-store-core) pour qu’il hérite de toutes les fonctions de cette classe. Les données de ce magasin sont conservées en utilisant la persistance en mémoire (objet JavaScript).
+`ContextHub.Store.SessionStore` étend [ContextHub.Store.Core](#contexthub-store-core) il hérite donc de toutes les fonctions de cette classe. Les données de ce magasin sont conservées en utilisant la persistance en mémoire (objet JavaScript).
 
 ## ContextHub.UI {#contexthub-ui}
 

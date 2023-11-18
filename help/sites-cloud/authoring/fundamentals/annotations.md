@@ -2,10 +2,10 @@
 title: Ajout d’annotations de page
 description: Utilisez le mode d’annotation pour laisser des annotations et des schémas sur les pages, car vous utiliserez des pense-bêtes pour faciliter le processus de révision du contenu.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 91%
+source-wordcount: '676'
+ht-degree: 74%
 
 ---
 
@@ -43,11 +43,11 @@ Les annotations ne sont visibles qu’en mode Annotation.
 
    ![Exemples d’annotations](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Cliquez ou appuyez sur l’annotation pour ouvrir la boîte de dialogue d’annotation et afficher ses détails.
+1. Sélectionnez l’annotation pour ouvrir la boîte de dialogue d’annotation et afficher ses détails.
 
    ![Détails de l’annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. Pour quitter le mode Annotation et revenir au mode précédemment affiché, appuyez ou cliquez sur le bouton x à droite de la barre d’outils supérieure.
+1. Pour quitter le mode Annotation et revenir au mode précédemment utilisé, cliquez sur le bouton x situé à droite de la barre d’outils supérieure.
 
 ## Ajout et modification d’annotations {#annotating-a-component}
 
@@ -55,9 +55,9 @@ Outre l’affichage des annotations, le mode Annotation vous permet de créer, m
 
 1. [Démarrage du mode Annotation](#annotate-mode) sur la page.
 
-1. Cliquez ou appuyez sur l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
+1. Sélectionnez l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
 
-1. Cliquez ou appuyez sur le composant requis (les composants qui peuvent être annotés sont encadrés en bleu) pour ajouter l’annotation et ouvrir la boîte de dialogue :
+1. Sélectionnez le composant requis (les composants pouvant être annotés sont mis en surbrillance avec une bordure bleue) pour ajouter l’annotation et ouvrir la boîte de dialogue :
 
    ![Ajout d’une annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -80,9 +80,9 @@ Outre l’affichage des annotations, le mode Annotation vous permet de créer, m
 
 1. Après avoir modifié une annotation, vous pouvez effectuer ce qui suit :
 
-   * Cliquez ou appuyez sur le marqueur de texte pour ouvrir l’annotation. Une fois ouverte, vous pouvez afficher le texte intégral, apporter des modifications ou [supprimer l’annotation](#deleting-annotations).
+   * Sélectionnez le marqueur de texte pour ouvrir l’annotation. Une fois ouverte, vous pouvez afficher le texte intégral, apporter des modifications ou [supprimer l’annotation](#deleting-annotations).
    * Repositionner la marque de texte.
-   * Cliquez ou appuyez sur un trait du schéma pour le sélectionner et le faire glisser jusqu’à la position voulue.
+   * Sélectionnez une ligne d’esquisse pour la sélectionner et faites-la glisser jusqu’à l’emplacement souhaité.
    * Déplacer ou copier un composant
       * Toutes les annotations qui lui sont associées, ainsi que leurs esquisses, sont également déplacées ou copiées, mais leur position par rapport au paragraphe demeure inchangée.
 
@@ -101,9 +101,9 @@ Les annotations et leurs schémas associés peuvent être supprimés.
 
 1. [Démarrage du mode Annotation](#annotate-mode) sur la page.
 
-1. Cliquez ou appuyez sur le marqueur de texte pour ouvrir l’annotation.
+1. Sélectionnez le marqueur de texte pour ouvrir l’annotation.
 
-1. Cliquez ou appuyez sur l’icône Supprimer.
+1. Sélectionnez l’icône Supprimer .
 
    ![Supprimer l’annotation](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -119,7 +119,7 @@ Vous pouvez supprimer uniquement des schémas spécifiques au lieu de l’ensemb
 
 1. [Démarrage du mode Annotation](#annotate-mode) sur la page.
 
-1. Cliquez ou appuyez sur le schéma. AEM le surligne avec une boîte bleue plus foncée.
+1. Sélectionnez le schéma. AEM le surligne avec une boîte bleue plus foncée.
 
    ![Sélectionner le schéma à supprimer](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

@@ -2,16 +2,16 @@
 title: Documents de référence sur les API
 description: AEM dispose d’API complètes et puissantes que vous pouvez utiliser pour votre projet d’expérience digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '664'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 91%
 
 ---
 
 # Documents de référence sur les API {#api-reference-materials}
 
-Adobe Experience Manager (AEM) fournit de nombreuses API pour développer des applications et étendre AEM. AEM repose sur un certain nombre de technologies open source, qui peuvent également être utilisées.
+Adobe Experience Manager (AEM) fournit de nombreuses API pour développer des applications et étendre AEM. AEM s&#39;appuie sur plusieurs technologies open source, qui peuvent également être utilisées.
 
 ## API de base d’AEM {#core-aem-apis}
 
@@ -19,8 +19,8 @@ Les API suivantes sont essentielles pour AEM.
 
 | API | Description |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstractions de produits telles que des pages, ressources, workflows, etc. |
-| [IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pile Open Web d’Adobe, qui apporte différents composants essentiels (notez que les contenus Granite 6.5 s’appliquent à AEMaaCS). |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | abstractions de produits telles que pages, ressources, workflows, etc. |
+| [IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pile Open Web d’Adobe, fournissant divers composants essentiels (les matériaux Granite 6.5 s’appliquent à AEMaaCS) |
 | [IU Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Style visuel d’Adobe pour les interfaces utilisateur cloud, conçu pour assurer la cohérence de l’expérience utilisateur |
 
 <!---
@@ -29,7 +29,7 @@ Les API suivantes sont essentielles pour AEM.
 
 ## Autres frameworks {#additional-apis}
 
-AEM repose sur un certain nombre d’API open source supplémentaires.
+AEM repose sur plusieurs API open source supplémentaires.
 
 | API | Description |
 |---|---|
@@ -44,7 +44,7 @@ AEM repose sur les quatre principaux ensembles d’API Java suivants, dans l’o
 
 | Priorité | API | Description |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstractions de produits telles que des pages, ressources, workflows, etc. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | abstractions de produits telles que pages, ressources, workflows, etc. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST et abstractions basées sur des ressources telles que des ressources, cartes de valeurs et requêtes HTTP. |
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Abstractions de données et de contenu telles que des nœuds, propriétés et sessions. |
 | 4 | [Apache Felix](https://felix.apache.org/) | Abstractions du conteneur d’application OSGi telles que les services et les composants (OSGi). |
@@ -71,12 +71,12 @@ AEM propose des composants personnalisables et des options de diffusion de conte
 
 ## API spécifiques à SPA {#spa-apis}
 
-La structure du SDK de l’éditeur d’application d’une seule page AEM fournit des références d’API JavaScript.
+La structure du SDK de l’éditeur d’application monopage AEM fournit des références d’API JavaScript.
 
 | API | Description |
 |---|---|
-| [Mappage de composant](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | Offre aux applications d’une seule page le moyen de mapper les composants frontaux avec les types de ressources Adobe Experience Manager (composants AEM). |
-| [Gestionnaire de modèle de page](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Interpréteur entre l’éditeur Adobe Experience Manager et l’éditeur d’application d’une seule page (SPA) Adobe Experience Manager |
+| [Mappage de composant](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | Offre aux applications monopages le moyen de mapper les composants front-end avec les types de ressources Adobe Experience Manager (composants AEM). |
+| [Gestionnaire de modèle de page](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Interpréteur entre l’éditeur Adobe Experience Manager et l’éditeur d’application monopage Adobe Experience Manager |
 | [Composants modifiables React](https://www.npmjs.com/package/@adobe/aem-react-editable-components) | Fournit les composants React et la couche d’intégration pour vous familiariser avec l’éditeur de site Adobe Experience Manager |
 | [Composants modifiables Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | Fournit les composants Angular et la couche d’intégration pour vous familiariser avec l’éditeur de site Adobe Experience Manager |
 

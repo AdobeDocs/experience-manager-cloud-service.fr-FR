@@ -6,10 +6,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3172'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -168,13 +168,13 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
 
    Si la liste **[!UICONTROL Adobe Sign Cloud Service]** est vide, consultez l’article [Configuration d’ [!DNL Adobe Sign] avec [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) pour configurer le service.
 
-   La liste déroulante répertorie les Cloud Services présents dans le dossier `global` dans Outils > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. En outre, la liste déroulante répertorie également les Cloud Services qui existent dans le dossier que vous sélectionnez dans le champ **[!UICONTROL Conteneur de configurations]** lorsque vous créez un formulaire adaptatif.
+   La liste déroulante répertorie les Cloud Service qui existent dans la variable `global` dossier dans Outils > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. En outre, la liste déroulante répertorie également les Cloud Service qui se trouvent dans le dossier que vous sélectionnez dans le **[!UICONTROL Conteneur de configuration]** lorsque vous créez un formulaire adaptatif.
 
 1. Sélectionnez l’ordre de signature dans la boîte de dialogue **[!UICONTROL Les destinataires peuvent remplir]**. Les destinataires peuvent signer un formulaire adaptatif de manière **[!UICONTROL séquentielle]** (l’un après l’autre) ou **[!UICONTROL simultanée]** (dans n’importe quel ordre).
 
    En ordre séquentiel, un seul destinataire reçoit le contrat Adobe Sign à la fois. Une fois que le destinataire a terminé l’action assignée, le contrat est envoyé au prochain destinataire, et ainsi de suite.
 
-   En ordre simultané, tous les destinataires reçoivent le contrat Adobe Sign et peuvent agir en parallèle les uns des autres.
+   Dans un ordre simultané, tous les destinataires reçoivent le contrat Adobe Sign et peuvent agir en parallèle les uns avec les autres.
 
 1. Utilisez le champ ID de contrat pour associer un bindref à l’ID de contrat (AgreementId). Celui-ci ajoute l’ID de contrat à la section afBoundData des données d’envoi pour les formulaires basés sur un schéma. L’ID de contrat est également ajouté à la section afSubmissionInfo dans les données envoyées pour tous les formulaires compatibles avec Adobe Sign. Vous pouvez utiliser l’ID de contrat pour le suivi de l’état de contrat à l’aide de code personnalisé (requiert une implémentation personnalisée).
 
@@ -286,7 +286,7 @@ Vous pouvez également associer un bindref à l’ID de contrat (agreementId). I
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs de bloc [!DNL Adobe Sign] sont affichés lorsqu’un destinataire reçoit le formulaire à signer dans un e-mail. Lorsque l’option **[!UICONTROL Le destinataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** si Oui est sélectionné et que la condition est remplie, l’utilisateur est redirigé vers le contrat Adobe Sign après les envois. Il peut signer le document immédiatement, au lieu d’attendre que le contrat apparaisse dans l’e-mail.

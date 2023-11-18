@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: Le navigateur de référentiel fournit une vue en lecture seule dans le référentiel pour tous les environnements sur les niveaux de création, de publication et de prévisualisation.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ Le navigateur de référentiel peut être lancé en suivant les étapes ci-desso
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Cliquez ensuite sur l’onglet **Navigateur de référentiel**.
-1. Sélectionnez une capsule à créer, à publier ou à prévisualiser en cliquant sur la liste déroulante **Capsule**.
+1. Sélectionnez une capsule correspondant à l’auteur, à la publication ou à la prévisualisation en cliquant sur le bouton **Capsule** liste déroulante.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 

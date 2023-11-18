@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: Découvrez comment utiliser AEM Developer Tools for Eclipse, un module externe Eclipse basé sur le module externe Eclipse pour Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 91%
+source-wordcount: '1191'
+ht-degree: 88%
 
 ---
 
@@ -64,7 +64,7 @@ Dans Eclipse, une perspective détermine les actions et les vues disponibles dan
 
 Les _outils de développement Experience Manager pour Eclipse_ offrent une perspective AEM qui vous permet de contrôler intégralement vos projets et instances AEM. Pour ouvrir la perspective AEM :
 
-1. Dans la barre de menus Eclipse, sélectionnez **Fenêtre** > **Perspective** > **Ouvrir une perspective** > **Autre**.
+1. Dans la barre de menus Eclipse, sélectionnez **Fenêtre** > **Perspective** > **Open Perspective** > **Autre**.
 1. Sélectionnez **AEM** dans la boîte de dialogue et cliquez sur **Ouvrir**.
 
 ![La perspective AEM dans Eclipse](assets/eclipse-aem-perspective.png)
@@ -83,7 +83,7 @@ Pour créer l’exemple de projet, procédez comme suit :
 
    >[!NOTE]
    >
-   >Cette étape peut prendre un certain temps, car m2eclipse doit analyser les catalogues d’archétype.
+   >Cette étape peut prendre un certain temps car m2eclipse doit analyser les catalogues de l’archétype.
 
 1. Sélectionnez `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` dans le menu, puis cliquez sur **Next** (Suivant).
 
@@ -139,7 +139,7 @@ Vous pouvez utiliser la fonction **Nouveau projet** pour créer la structure qui
 1. Faites ensuite de même pour `PROJECT.ui.content` et remplacez son dossier de contenu par celui de vos packages :
 
    1. Dans le panneau Project Explorer (Explorateur de projets), développez `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. Cliquez avec le bouton droit de la souris sur le dossier de contenu profond et choisissez **Afficher dans** -> **Explorateur de systèmes**.
+   1. Cliquez avec le bouton droit de la souris sur le dossier de contenu profond et choisissez **Afficher dans** > **Explorateur de systèmes**.
    1. Supprimez le dossier de contenu que vous devriez voir maintenant et placez ici le dossier de contenu de votre package de contenu.
    1. Dans Eclipse, cliquez avec le bouton droit sur la `PROJECT.ui.content` projet et choisissez **Actualiser**.
 
@@ -194,7 +194,7 @@ Vous pouvez utiliser la fonction **Nouveau projet** pour créer la structure qui
 
 Une fois cette opération terminée, votre package devrait être exécuté sur votre instance. Lors de l’enregistrement, toute modification est automatiquement synchronisée avec l’instance.
 
-Si vous souhaitez recréer un module à partir de votre projet, cliquez avec le bouton droit de la souris sur le `PROJECT.ui.apps` ou `PROJECT.ui.content` et choisissez **Exécutez comme** -> **Installation de Maven**.
+Si vous souhaitez recréer un module à partir de votre projet, cliquez avec le bouton droit de la souris sur le `PROJECT.ui.apps` ou `PROJECT.ui.content` et choisissez **Exécutez comme** > **Installation de Maven**.
 
 Vous disposez désormais d’un dossier cible contenant votre package (nommé `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`, par exemple).
 
@@ -206,7 +206,7 @@ Pour résoudre des dépendances et une définition de projet non valides, procé
 
 1. Sélectionnez tous les projets créés.
 1. Faites un clic-droit.
-1. Dans le menu contextuel, sélectionnez **Maven** > **Update Projects** (Mettre à jour les projets).
+1. Dans le menu contextuel, sélectionnez **Maven** > **Mettre à jour les projets**.
 1. Cochez **Force Updates of Snapshot/Releases** (Forcer les mises à jour d’instantané/de versions).
 1. Cliquez sur **OK**.
 

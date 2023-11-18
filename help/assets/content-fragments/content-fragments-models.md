@@ -2,10 +2,10 @@
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2935'
-ht-degree: 96%
+source-wordcount: '2931'
+ht-degree: 94%
 
 ---
 
@@ -88,7 +88,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône de la corbeille. Le système vous invite à confirmer l’action.
+   Sélectionnez le champ requis, puis l’icône représentant une corbeille. Le système vous invite à confirmer l’action.
 
    ![supprimer](assets/cfm-models-06.png)
 
@@ -113,7 +113,7 @@ Une sélection de types de données est disponible pour la définition de votre 
 * **Date et heure**
    * Ajoutez une date et/ou une heure
 * **Énumération**
-   * Ajoutez un ensemble de cases à cocher, de boutons radio ou de champs déroulants
+   * Ajouter un ensemble de cases à cocher, boutons radio ou champs de liste déroulante
 * **Balises**
    * Permet aux auteurs de fragments d’accéder à des zones de balises et de les sélectionner.
 * **Référence de contenu**
@@ -331,9 +331,9 @@ Pour un contrôle total de l’utilisation de vos modèles de fragments de conte
 
 ### Activation d’un modèle de fragment de contenu {#enabling-a-content-fragment-model}
 
-Une fois qu’un modèle a été créé, il doit être activé pour :
+Lorsqu’un modèle est créé, il doit être activé afin qu’il :
 
-* Être disponible afin d’être sélectionné lors de la création d’un fragment de contenu.
+* Peut être sélectionné lors de la création d’un fragment de contenu.
 * Pouvoir être référencé à partir d’un modèle de fragment de contenu.
 * Être disponible pour GraphQL ; le schéma est ensuite généré.
 

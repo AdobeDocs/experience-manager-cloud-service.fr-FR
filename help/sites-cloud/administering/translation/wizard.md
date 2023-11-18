@@ -4,10 +4,10 @@ description: Découvrez comment utiliser l’Assistant Copie de la langue dans A
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 89%
+source-wordcount: '270'
+ht-degree: 59%
 
 ---
 
@@ -21,19 +21,19 @@ L’assistant Copie de la langue est une expérience guidée pour créer et gér
 
 >[!NOTE]
 >
->L’utilisateur doit être membre du groupe `project-administrators` pour pouvoir créer la copie de langue d’un site.
+>L’utilisateur doit être membre du `project-administrators` pour créer une copie de langue d’un site.
 
 Pour accéder à cet assistant :
 
-1. Dans la console des sites, sélectionnez une page et appuyez ou cliquez sur **Créer** et sélectionnez **Copie de la langue**.
+1. Dans la console Sites, sélectionnez une page, puis **Créer** et sélectionnez **Copie de la langue**.
 
    ![Création d’une copie de langue à partir de l’assistant](../assets/language-copy-wizard.png)
 
-1. L’assistant s’ouvre sur la **Sélectionner la source** pour ajouter ou supprimer des pages. Vous avez également la possibilité d’inclure ou d’exclure les sous-pages. Sélectionnez les pages à inclure et appuyez ou cliquez sur **Suivant**.
+1. L’assistant s’ouvre sur la **Sélectionner la source** pour ajouter ou supprimer des pages. Vous avez également la possibilité d’inclure ou d’exclure les sous-pages. Sélectionnez les pages à inclure et sélectionnez **Suivant**.
 
    ![Ajout de pages avec l’assistant](../assets/language-copy-wizard-add-pages.png)
 
-1. La variable **Configurer** de l&#39;assistant, vous pouvez ajouter/supprimer des langues et sélectionner une méthode de traduction. Cliquez ou appuyez sur **Suivant**.
+1. La variable **Configurer** de l&#39;assistant, vous pouvez ajouter/supprimer des langues et sélectionner une méthode de traduction. Sélectionnez **Suivant**.
 
    ![Étape Configurer de l’assistant](../assets/language-copy-wizard-configure.png)
 
@@ -41,7 +41,7 @@ Pour accéder à cet assistant :
    >
    >Par défaut, il n’y a qu’un seul paramètre de traduction. Pour pouvoir sélectionner d’autres paramètres, vous devez d’abord configurer les configurations cloud. Voir [Configuration de la structure d’intégration de traduction](integration-framework.md).
 
-1. À l’étape **Traduire** de l’assistant, vous pouvez choisir entre créer uniquement la structure, créer un nouveau projet de traduction ou ajouter la structure à un projet de traduction existant.
+1. Dans le **Traduire** de l’assistant, vous pouvez choisir entre la création de la structure uniquement, la création d’un projet de traduction ou l’ajout à un projet de traduction existant.
 
    >[!NOTE]
    >
@@ -49,6 +49,6 @@ Pour accéder à cet assistant :
 
    ![Étape de traduction de l’assistant](../assets/language-copy-wizard-translate.png)
 
-1. Le bouton **Créer** ferme l’assistant. Appuyez ou cliquez sur **Terminé** pour fermer l’assistant ou sur **Ouvrir** pour afficher le résultat du projet de traduction.
+1. Le bouton **Créer** ferme l’assistant. Sélectionner **Terminé** pour fermer l’assistant ou **Ouvrir** pour afficher le projet de traduction résultant.
 
    ![Terminer l’assistant](../assets/language-copy-wizard-done.png)

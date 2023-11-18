@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 96%
+source-wordcount: '776'
+ht-degree: 87%
 
 ---
 
@@ -34,7 +34,7 @@ Ce document vous aide à comprendre comment utiliser les règles de traduction d
 
 ## Règles de traduction {#translation-rules}
 
-Les pages AEM Sites peuvent contenir de nombreuses informations. Selon les besoins de votre projet, il est probable que toutes les informations d’une page n’aient pas besoin d’être traduits.
+Les pages AEM Sites peuvent contenir de nombreuses informations. Selon les besoins de votre projet, il est probable que toutes les informations d’une page ne doivent pas être traduites.
 
 Les règles de traduction identifient le contenu à inclure dans les projets de traduction ou à exclure. Lorsque le contenu est traduit, AEM extrait ou récupère le contenu en fonction de ces règles. Ainsi, seul le contenu à traduire est envoyé au service de traduction.
 
@@ -57,22 +57,22 @@ Il existe une console **Configuration de traduction** disponible pour la configu
 
 Pour y accéder :
 
-1. Accédez à **Outils** -> **Général**.
-1. Appuyez ou cliquez sur **Configuration de traduction**.
+1. Accédez à **Outils** > **Général**.
+1. Sélectionnez **Configuration de traduction**.
 
 AEM crée automatiquement des règles de traduction pour tout le contenu. Pour afficher ces règles :
 
-1. Sélectionnez le contexte `/content` puis l’option **Modifier** dans la barre d’outils.
+1. Sélectionnez la variable `/content` contexte.
+1. Dans la barre d’outils, sélectionnez la **Modifier**.
 1. L’éditeur de règles de traduction s’ouvre avec les règles créées automatiquement par AEM pour le chemin d’accès `/content`.
 
    ![Éditeur de règles de traduction](assets/translation-rules-editor.png)
 
 1. Les propriétés de page qui sont traduites se trouvent dans la section **Général** de la liste. Vous pouvez ajouter ou mettre à jour des noms de propriété existants que vous souhaitez inclure explicitement dans la traduction.
-   1. Saisissez le nom de la propriété dans le champ **Nouvelle propriété**.
-   1. Les options **Traduire** et **Hériter** sont cochées automatiquement.
-   1. Appuyez ou cliquez sur **Ajouter**.
+   1. Dans le **Nouvelle propriété** , saisissez le nom de la propriété. Les options **Traduire** et **Hériter** sont cochées automatiquement.
+   1. Sélectionnez **Ajouter**.
    1. Répétez ces étapes pour tous les champs que vous devez traduire.
-   1. Cliquez ou appuyez sur **Enregistrer**.
+   1. Sélectionnez **Enregistrer**.
 
 Vous avez maintenant configuré vos règles de traduction.
 

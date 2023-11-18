@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.8.0.
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 87%
+source-wordcount: '1036'
+ht-degree: 90%
 
 ---
 
@@ -76,13 +76,13 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 ### Nouveautés {#what-is-new-cloud-manager}
 
-* L’audit de contenu est une fonctionnalité activée sur les pipelines de production de sites Cloud Manager. La configuration du pipeline de production pour les programmes utilisant Sites comprend désormais un troisième onglet nommé **Audit de contenu**. Chaque fois qu’un pipeline de production est exécuté, une nouvelle étape de contrôle du contenu est incluse dans le pipeline après des tests fonctionnels personnalisés qui évaluent le site par rapport à un certain nombre de dimensions, y compris les performances, l’optimisation du référencement (SEO), l’accessibilité, les bonnes pratiques et le PWA (application web progressive).
+* L’audit de contenu est une fonctionnalité activée sur les pipelines de production de sites Cloud Manager. La configuration du pipeline de production pour les programmes utilisant Sites comprend désormais un troisième onglet nommé **Audit de contenu**. Chaque fois qu’un pipeline de production est exécuté, une nouvelle étape de contrôle du contenu est incluse dans le pipeline après des tests fonctionnels personnalisés qui évaluent le site par rapport à plusieurs dimensions, y compris les performances, le SEO (Search Engine Optimization, optimisation du moteur de recherche), l’accessibilité, les bonnes pratiques et le PWA (application web progressive).
 
 
   >[!NOTE]
-  >L’audit de contenu a depuis été renommé contrôle de l’expérience.
+  >L’audit de contenu a depuis été renommé audit de l’expérience.
 
-  Voir [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md) pour plus d’informations.
+  Pour plus d’informations, voir [Tests d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 * Les nouveaux environnements créés dans les programmes Assets seront désormais automatiquement configurés avec Smart Content Services.
 
@@ -116,7 +116,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 * L’onglet Audit du contenu affiche incorrectement l’URL de base en utilisant le domaine d’auteur au lieu du domaine de publication.
 
-* Pour activer l’étape Audit du contenu, les utilisateurs doivent modifier le pipeline et, éventuellement, ajouter des pages. Si aucune page n’est ajoutée, la page d’accueil est contrôlée.
+* Pour activer l’étape d’audit du contenu, les personnes utilisatrices doivent modifier le pipeline et éventuellement ajouter des pages. Si aucune page n’est ajoutée, la page d’accueil fait l’objet d’un audit.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 

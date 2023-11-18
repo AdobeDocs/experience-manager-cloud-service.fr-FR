@@ -2,10 +2,10 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2601'
-ht-degree: 85%
+source-wordcount: '2585'
+ht-degree: 83%
 
 ---
 
@@ -87,9 +87,9 @@ Lorsque vous ajoutez un environnement, vous pouvez choisir de configurer des ré
 1. Sélectionnez l’option **Ajout de zones de publication** pour afficher de nouvelles **Zones de publication supplémentaires**.
 1. Dans le menu déroulant **Zones de publication supplémentaires**, sélectionnez une zone supplémentaire.
 1. La zone géographique sélectionnée est ajoutée sous la liste déroulante pour indiquer sa sélection.
-   * Appuyez ou cliquez sur le bouton `X` en regard de la zone géographique sélectionnée pour la désélectionner.
+   * Sélectionnez la variable `X` en regard de la région sélectionnée afin de pouvoir la désélectionner.
 1. Sélectionnez une autre zone géographique dans le menu déroulant **Zones de publication supplémentaires** pour ajouter une autre zone géographique.
-1. Appuyez ou cliquez sur **Enregistrer** lorsque vous désirez créer votre environnement.
+1. Sélectionner **Enregistrer** lorsque vous êtes prêt à créer votre environnement.
 
 ![Sélection de plusieurs zones géographiques](assets/select-multiple-regions.png)
 
@@ -115,7 +115,7 @@ Vous pouvez également supprimer d’autres zones géographiques de publication.
 
    ![Modifier l’environnement](assets/edit-environment.png)
 
-1. Appuyez ou cliquez sur **Enregistrer** pour enregistrer les modifications.
+1. Sélectionner **Enregistrer** pour enregistrer les modifications.
 
 Les modifications apportées à l’environnement de production s’appliquent aux environnements de production et d’évaluation. Les modifications apportées à plusieurs zones géographiques de publication ne peuvent être modifiées que dans l’environnement de production.
 
@@ -189,7 +189,7 @@ Vous pouvez également accéder aux mêmes informations à partir du **Environne
 
 1. Sur le **Présentation** , sélectionnez **Environnements** .
 
-1. Sur le **Environnements** , sélectionnez l’environnement que vous souhaitez interroger dans le panneau de navigation de gauche.
+1. Sur le **Environnements** , sélectionnez l’environnement à interroger dans le panneau de navigation de gauche.
 
 1. Une fois qu’un environnement est sélectionné :
 
@@ -200,12 +200,12 @@ Vous pouvez également accéder aux mêmes informations à partir du **Environne
 
 Si des problèmes sont signalés avec des régions de publication supplémentaires :
 
-1. Sois patient, je te prie. Cloud Manager tente continuellement de récupérer la région et elle peut être disponible à tout moment.
-1. Si le problème persiste après un certain nombre d’heures, vous pouvez supprimer la région de publication supplémentaire et la rajouter (la même région ou une autre) pour déclencher un déploiement complet.
+1. Sois patient ! Cloud Manager tente continuellement de récupérer la région et elle peut être disponible à tout moment.
+1. Si le problème persiste après plusieurs heures, vous pouvez supprimer la région de publication supplémentaire et la rajouter (la même région ou une autre) pour déclencher un déploiement complet.
 
 La durée d’attente nécessaire pour que le système se remette seul avant d’entreprendre des actions supplémentaires dépend de l’impact de l’échec de cette région sur vos systèmes.
 
-Veuillez noter que dans tous les cas, [le trafic sera toujours acheminé vers l’autre région la plus proche qui soit en ligne.](/help/operations/additional-publish-regions.md) Si vous rencontrez toujours des problèmes, contactez l’assistance clientèle pour Adobe.
+Dans tous les cas, [le trafic est toujours acheminé vers l’autre région la plus proche qui est en ligne.](/help/operations/additional-publish-regions.md) Si vous rencontrez toujours des problèmes, contactez l’assistance clientèle d’Adobe.
 
 ## Mise à jour des environnements {#updating-dev-environment}
 
@@ -333,7 +333,7 @@ La liste d’adresses IP autorisée doit exister dans Cloud Manager pour pouvo
 **Pour appliquer une liste d’adresses IP autorisée :**
 
 1. Accédez à l’environnement spécifique à partir de l’onglet **Environnements** de l’écran de programme **Aperçu** et accédez au tableau **Liste d’adresses IP autorisées**.
-1. Utilisez les champs d’entrée en haut du tableau des listes d’adresses IP autorisée pour sélectionner la liste d’adresses IP autorisée et le service de création ou de publication auquel vous souhaitez l’appliquer.
+1. Utilisez les champs de saisie situés en haut du tableau liste autorisée IP pour sélectionner la liste autorisée IP et le service de création ou de publication auquel vous souhaitez l’appliquer.
 1. Cliquez sur **Appliquer** et confirmez votre soumission.
 
 ### Annulation de l’application d’une liste d’adresses IP autorisée {#unapply-ip-allow-list}

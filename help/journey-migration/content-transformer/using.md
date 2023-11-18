@@ -2,10 +2,10 @@
 title: Utilisation du Transformateur de contenu
 description: Découvrez comment transformer votre structure de contenu en vue de la migration vers AEM as a Cloud Service.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 93%
+source-wordcount: '642'
+ht-degree: 89%
 
 ---
 
@@ -63,7 +63,7 @@ Le Transformateur de contenu est fourni avec l’[Outil de transfert de contenu]
    >[!NOTE]
    > Toute opération pouvant modifier le contenu source (`move`/`remove`/`rename`) crée par défaut un package de sauvegarde des chemins sources sous `/etc/packages/content-transformation` avant la transformation. Bien que chaque boîte de dialogue d’opération dispose d’une option pour désactiver/activer la création de package de sauvegarde, il est strictement recommandé de toujours activer la création de package.
 
-1. Un exemple de package de sauvegarde créé pour l’opération de déplacement des chemins est présenté ci-dessous. Cliquez sur Installer pour rétablir les chemins sources. Notez que l’installation ramènera uniquement les chemins sources à leur emplacement d’origine. Elle ne supprimera pas les chemins où ils ont été déplacés pendant la transformation. Pour supprimer les chemins dans l’emplacement déplacé, cliquez sur **Ajouter des chemins** pour ajouter l’emplacement (par exemple, `/etc/packages/content-transformation/paths`), sélectionnez l’emplacement et cliquez sur **Supprimer**.
+1. Un exemple de package de sauvegarde créé pour l’opération de déplacement des chemins est présenté ci-dessous. Cliquez sur Installer pour rétablir les chemins sources. L’installation ramène uniquement les chemins source à leur emplacement d’origine et ne supprime pas les chemins dans lesquels ils ont été déplacés pendant la transformation. Pour supprimer les chemins dans l’emplacement déplacé, cliquez sur **Ajouter des chemins** pour ajouter l’emplacement (par exemple, `/etc/packages/content-transformation/paths`), sélectionnez l’emplacement et cliquez sur **Supprimer**.
 
    >[!CAUTION]
    > Ne supprimez pas `/etc/packages/content-transformation`, car il s’agit de l’emplacement où se trouvent les packages de sauvegarde. Vous pourrez supprimer cet emplacement uniquement lorsque vous aurez la certitude de ne plus avoir besoin de ces packages. Cela vous permettra de réduire la taille du référentiel.

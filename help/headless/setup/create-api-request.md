@@ -2,10 +2,10 @@
 title: Création d’une requête API - Configuration découplée
 description: Découvrez comment utiliser l’API GraphQL pour une diffusion découplée du contenu du fragment de contenu et l’API REST AEM Assets pour gérer les fragments de contenu.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 95%
+source-wordcount: '652'
+ht-degree: 93%
 
 ---
 
@@ -31,8 +31,8 @@ Avant de pouvoir utiliser les API GraphQL, un point d’entrée GraphQL doit êt
 1. Sélectionnez **Créer**.
 1. La boîte de dialogue **Créer un point d’entrée GraphQL** s’ouvre. Vous pouvez spécifier ici les éléments suivants :
    * **Nom** : nom du point d’entrée ; vous pouvez saisir du texte.
-   * **Utiliser le schéma GraphQL fourni par** : utilisez la liste déroulante pour sélectionner la configuration requise.
-1. Confirmez avec **Créer**.
+   * **Utiliser le schéma GraphQL fourni par**: utilisez la liste déroulante pour sélectionner la configuration requise.
+1. Confirmez en sélectionnant **Créer**.
 1. Dans la console, un **Chemin d’accès** s’affiche désormais en fonction de la configuration créée précédemment. Ce chemin d’accès est utilisé pour exécuter des requêtes GraphQL.
 
    ```

@@ -2,10 +2,10 @@
 title: Prise en main de l’éditeur universel dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 84%
+source-wordcount: '920'
+ht-degree: 76%
 
 ---
 
@@ -43,7 +43,7 @@ Cliquez sur **Demande d’accès** et remplissez le formulaire selon les instruc
 
 ## Inclure la bibliothèque principale de l’éditeur universel {#core-library}
 
-Avant de pouvoir être instrumentée pour une utilisation avec l’éditeur universel, votre application doit inclure la dépendance suivante.
+Avant que votre application puisse être instrumentée pour être utilisée avec l’éditeur universel, elle doit inclure la dépendance suivante.
 
 ```javascript
 @adobe/universal-editor-cors
@@ -103,7 +103,7 @@ Cette propriété doit être définie dans la configuration OSGi `org.apache.sli
 
 Le service de l’éditeur universel requiert un [nom de ressource uniforme (URN)](https://fr.wikipedia.org/wiki/Uniform_Resource_Name) pour identifier et utiliser le système principal approprié pour le contenu de l’application en cours de modification. Par conséquent, un schéma URN est nécessaire pour mapper le contenu aux ressources de contenu.
 
-Les attributs d’instrumentation ajoutés à la page se composent principalement de [microdonnées HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Microdata), une norme du secteur qui peut également être utilisée pour rendre le HTML plus sémantique, rendre les documents de HTML indexables, etc.
+Les attributs d’instrumentation ajoutés à la page se composent principalement de [Microdonnées de HTML,](https://developer.mozilla.org/fr/docs/Web/HTML/Microdata) une norme du secteur qui peut également être utilisée pour rendre le HTML plus sémantique, rendre les documents de HTML indexables, etc.
 
 ### Création de connexions {#connections}
 

@@ -3,13 +3,13 @@ title: Fragments de contenu – considérations sur la suppression
 description: Examinez ces points importants avant de définir vos politiques de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 47%
+source-wordcount: '450'
+ht-degree: 57%
 
 ---
-
 
 # Considérations sur la suppression des fragments de contenu {#delete-considerations-content-fragments}
 
@@ -47,7 +47,7 @@ Par exemple, lors de la manipulation des variantes, mais également lors de la m
 >
 >Les autorisations de suppression, requises pour modifier/mettre à jour un fragment de contenu, sont incluses dans l’autorisation Supprimer affectée via la gestion des utilisateurs et/ou des groupes.
 
-Les autorisations nécessaires pour modifier/mettre à jour un fragment doivent être appliquées au noeud contenant le fragment de contenu ou à un noeud parent approprié (à n’importe quel niveau sous `/content/dam`). Lorsqu’elles sont affectées à ce noeud parent, les autorisations sont appliquées à tous les noeuds de cette branche.
+Les autorisations nécessaires pour modifier/mettre à jour un fragment doivent être appliquées au noeud contenant le fragment de contenu ou à un noeud parent approprié (à n’importe quel niveau sous `/content/dam`). Lorsqu’elles sont affectées à ce nœud parent, les autorisations sont appliquées à tous les noeuds de cette branche.
 
 Par exemple, un dossier contenant tous les fragments de contenu, comme :
 
@@ -57,13 +57,13 @@ Par exemple, un dossier contenant tous les fragments de contenu, comme :
 >
 >Définition des autorisations sur `/content/dam` est également possible, car tous les fragments de contenu y sont stockés.
 >
->Toutefois, cette action applique les mêmes autorisations de suppression à *all* d’autres types de ressources.
+>Toutefois, cette action applique les mêmes autorisations de suppression à *tous* les autres types de ressources.
 
 Les conditions préalables aux autorisations pour permettre à un utilisateur et/ou à un groupe spécifique de modifier/mettre à jour un fragment de contenu sont les suivantes :
 
 >[!NOTE]
 >
->Cette liste répertorie tous les privilèges requis, et pas seulement les privilèges de suppression.
+>Cette liste répertorie tous les privilèges requis, pas uniquement les privilèges de suppression.
 
 * Pour les nœuds ou dossiers de fragments de contenu :
 
@@ -76,4 +76,3 @@ Les conditions préalables aux autorisations pour permettre à un utilisateur et
 * Pour tous les nœuds situés sous `jcr:content` de tous les fragments de contenu :
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`, et `jcr:removeChildNodes`, `jcr:removeNode`
-

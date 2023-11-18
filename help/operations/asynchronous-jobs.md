@@ -2,10 +2,10 @@
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources en tant qu’opérations en arrière-plan.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 100%
+source-wordcount: '863'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Ces opérations comprennent :
 * Récupération des ressources dépassant la limite de seuil définie à partir d’un déploiement Experience Manager distant
 * Déploiement de Live Copies
 
-Vous pouvez afficher le statut des tâches asynchrones dans le tableau de bord **[!UICONTROL Opérations en arrière-plan]** dans **Navigation globale** -> **Outils** -> **Général** -> **Tâches**.
+Vous pouvez afficher l’état des tâches asynchrones à partir du **[!UICONTROL Opérations de fond]** tableau de bord à **Navigation globale** > **Outils** > **Général** > **Tâches**.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez 
 
 Pour afficher le statut des opérations asynchrones en détail, accédez à la page **[!UICONTROL Opérations en arrière-plan]**.
 
-1. Dans l’interface Experience Manager, sélectionnez **Navigation globale** -> **Outils** -> **Général** -> **Tâches**.
+1. Dans l’interface du Experience Manager, sélectionnez **Navigation globale** > **Outils** > **Général** > **Tâches**.
 
 1. Sur la page **[!UICONTROL Opérations en arrière-plan]**, passez en revue les détails des opérations.
 
@@ -71,7 +71,7 @@ Pour afficher le statut des opérations asynchrones en détail, accédez à la p
 
 ## Configuration des options de traitement des tâches asynchrones {#configure}
 
-Vous pouvez configurer un certain nombre d’options relatives aux tâches asynchrones. Les exemples suivants montrent comment y parvenir à l’aide de Configuration Manager sur un système de développement local.
+Il existe plusieurs options concernant les tâches asynchrones qui peuvent être configurées. Les exemples suivants montrent comment y parvenir à l’aide de Configuration Manager sur un système de développement local.
 
 >[!NOTE]
 >

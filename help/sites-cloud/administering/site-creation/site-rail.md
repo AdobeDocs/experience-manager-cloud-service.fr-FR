@@ -4,10 +4,10 @@ description: Découvrez les puissantes fonctionnalités du rail Site qui vous ai
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 95%
+source-wordcount: '583'
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,7 @@ Avec le rail Site affiché dans la console Sites, sélectionnez la racine de vot
 
 ![Téléchargement de sources de thème](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Appuyez ou cliquez sur **Télécharger des sources de thème** pour télécharger une copie locale du thème du site sous forme de fichier `.zip` à des fins de personnalisation.
+Sélectionner **Télécharger des sources de thème** pour télécharger une copie locale du thème du site en tant que `.zip` à des fins de personnalisation.
 
 ## Télécharger les ressources de modèle {#downloading-template-resources}
 
@@ -48,7 +48,7 @@ Si votre site est basé sur un modèle de site, avec le rail Site affiché dans 
 
 ![Téléchargement de sources de thème](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Appuyez ou cliquez sur le ou les boutons situés sous l’en-tête **Télécharger des ressources de modèle supplémentaires** pour télécharger une copie locale des fichiers disponibles.
+Sélectionnez le ou les boutons situés sous l’en-tête **Télécharger des ressources de modèle supplémentaires** pour télécharger une copie locale des fichiers disponibles.
 
 ## Affichage et modification des versions d’un thème {#them-versions}
 
@@ -60,11 +60,11 @@ Avec le rail Site affiché dans la console Sites, sélectionnez la racine de vot
 
 La version actuelle du thème s’affiche avec son hachage de validation et l’horodatage de sa dernière mise à jour.
 
-Appuyez ou cliquez sur **Sélectionner la version** pour afficher les versions précédentes du thème.
+Sélectionner **Sélectionner la version** pour afficher les versions précédentes du thème.
 
 ![Sélection de la version du thème](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Appuyez ou cliquez sur la version à modifier, puis appuyez ou cliquez sur **Appliquer** pour effectuer la modification.
+Sélectionnez la version que vous souhaitez modifier, puis sélectionnez **Appliquer** pour effectuer la modification.
 
 Si AEM détecte qu’une version plus récente du thème a été déployée via le pipeline front-end, mais n’est pas appliquée à votre site, une icône de notification s’affiche.
 
@@ -78,7 +78,7 @@ Si votre site n’a pas été créé à l’aide d’un modèle de site, il n’
 
 Vous pouvez toutefois activer le pipeline front-end pour votre site à l’aide du rail Site.
 
-Avec le rail Site affiché dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site, puis appuyez ou cliquez sur **Activation du pipeline front-end**.
+Le rail Site s’affichant dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site, puis sélectionnez **Activation du pipeline front-end**.
 
 ![Activation du pipeline front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 

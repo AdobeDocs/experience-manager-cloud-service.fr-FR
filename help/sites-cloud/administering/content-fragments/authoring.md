@@ -4,9 +4,9 @@ description: Découvrez comment créer du contenu pour vos fragments de contenu,
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2251'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ Lorsque vous ouvrez l’éditeur de fragments de contenu pour la première fois,
    * dans le **Propriétés** vous pouvez mettre à jour l’onglet **Titre** et **Description** pour le fragment, ou **Variation**
 * panneau central : affiche les champs réels et le contenu de la variation sélectionnée.
    * permet de modifier le contenu.
-   * if **Espace réservé de tabulation** Les champs sont définis dans le modèle qu’ils sont affichés ici et peuvent être utilisés pour naviguer ; ils seront présentés horizontalement ou sous forme de liste déroulante.
+   * if **Espace réservé de tabulation** Les champs sont définis dans le modèle qu’ils sont affichés ici et peuvent être utilisés pour naviguer ; ils seront présentés horizontalement ou sous la forme d’une liste déroulante.
 
 ![Éditeur de fragment de contenu - Aperçu](assets/cf-authoring-overview.png)
 
@@ -399,7 +399,7 @@ L’éditeur de fragment de contenu permet aux auteurs de prévisualiser leurs m
 Pour utiliser cette fonctionnalité, vous devez d’abord :
 
 * Contactez votre équipe informatique pour configurer l’application frontale externe qui effectuera le rendu du fragment de contenu en utilisant sa sortie JSON.
-* Une fois l’application front-end externe configurée, la variable **Modèle d’URL d’aperçu par défaut** doit être défini comme une [de la propriété du modèle de fragment de contenu approprié.](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Lorsque l’application front-end externe est configurée, la variable **Modèle d’URL d’aperçu par défaut** doit être défini comme une [de la propriété du modèle de fragment de contenu approprié.](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 Une fois l’URL définie, la variable **Aperçu** est actif. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin de générer le fragment de contenu.
 
@@ -475,8 +475,6 @@ La variable **Champs** répertorie tous les champs du fragment de contenu. L’i
 </table>
 
 ## Bon à savoir {#good-to-know}
-
-En outre:
 
 * Pour modifier un fragment de contenu, vous devez [les autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administration système.
 

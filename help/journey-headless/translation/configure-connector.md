@@ -2,10 +2,10 @@
 title: Configuration de l’intégration de traduction pour le contenu sans affichage
 description: Découvrez comment connecter AEM à un service de traduction.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 93%
+source-wordcount: '1216'
+ht-degree: 83%
 
 ---
 
@@ -42,7 +42,7 @@ Les sections suivantes décrivent ces étapes de manière plus détaillée.
 
 ## Connexion à un fournisseur de services de traduction {#connect-translation-provider}
 
-La première étape consiste à choisir le service de traduction que vous souhaitez utiliser. Il existe de nombreux choix pour les services de traduction humaine et automatique, disponibles pour AEM. La plupart des fournisseurs proposent un package de traducteur à installer. Consultez la section [Ressources supplémentaires](#additional-resources) pour découvrir une sélection d’options disponibles.
+La première étape consiste à choisir le service de traduction à utiliser. Il existe de nombreux choix pour les services de traduction humaine et automatique, disponibles pour AEM. La plupart des fournisseurs proposent un package de traducteur à installer. Consultez la section [Ressources supplémentaires](#additional-resources) pour découvrir une sélection d’options disponibles.
 
 >[!NOTE]
 >
@@ -70,22 +70,22 @@ Une fois installé le package de connecteur correspondant au service de traducti
 
 Pour créer une configuration de traduction :
 
-1. Dans le menu de navigation globale, cliquez ou appuyez sur **Outils** > **Cloud Service** > **Cloud Service de traduction**.
+1. Dans le menu de navigation globale, sélectionnez **Outils** > **Cloud Service** > **Cloud Service de traduction**.
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Cet emplacement est souvent basé sur un projet en particulier, mais peut également être global.
    * Par exemple, dans ce cas, une configuration peut être effectuée globalement pour s’appliquer à tout le contenu, ou uniquement au projet WKND.
 
    ![Emplacement de configuration de traduction](assets/translation-configuration-location.png)
 
-1. Fournissez les informations suivantes dans les champs requis, puis cliquez ou appuyez sur **Créer**.
+1. Indiquez les informations suivantes dans les champs, puis sélectionnez **Créer**.
    1. Sélectionnez **Type de configuration** dans la liste déroulante. Sélectionnez **Intégration de traduction** dans la liste.
    1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud**, ainsi que dans les listes déroulantes de propriétés de la page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
 
    ![Créer une configuration de traduction](assets/create-translation-configuration.png)
 
-1. Appuyez ou cliquez sur **Créer** et la fenêtre **Modifier la configuration**, dans laquelle vous pouvez configurer les propriétés de configuration.
+1. Sélectionner **Créer** et la variable **Modifier la configuration** s’affiche, dans laquelle vous pouvez configurer les propriétés de configuration.
 
-1. N’oubliez pas que les fragments de contenu sont stockés en tant que ressources dans AEM. Appuyez ou cliquez sur l’onglet **Ressources**.
+1. N’oubliez pas que les fragments de contenu sont stockés en tant que ressources dans AEM. Sélectionnez la variable **Ressources** .
 
 ![Propriétés de Configuration de traduction](assets/translation-configuration.png)
 
@@ -102,7 +102,7 @@ Pour créer une configuration de traduction :
    1. **Désactiver Traduction uniquement des champs mis à jour** - Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. La mise à jour de votre projet de traduction est traitée ultérieurement dans le parcours.
    1. **Activer les champs de modèle de contenu pour la traduction** - Cochez cette option pour que la configuration de traduction reconnaisse automatiquement les champs des modèles de contenu en fonction de l’indicateur **Traduisible**.
 
-1. Appuyez et cliquez sur **Enregistrer et fermer**.
+1. Sélectionnez **Enregistrer et fermer**.
 
 Vous avez maintenant configuré le connecteur pour votre service de traduction.
 
@@ -116,12 +116,12 @@ Pour ce faire, accédez à la racine de langue de votre contenu. Dans notre exem
 /content/dam/<your-project>/en
 ```
 
-1. Accédez à la navigation globale et accédez à **Navigation** -> **Ressources** -> **Fichiers**.
-1. Dans la console Ressources, sélectionnez la racine de langue à configurer et cliquez ou appuyez sur **Propriétés**.
-1. Appuyez ou cliquez sur l’onglet **Services cloud**.
-1. Sous **Configurations des services cloud** dans la liste déroulante **Ajouter une configuration**, sélectionnez votre connecteur. Il doit s’afficher dans la liste déroulante lorsque vous avez installé son package comme [décrit précédemment.](#connect-translation-provider)
-1. Sous **Configurations des services cloud** dans la liste déroulante **Ajouter une configuration**, sélectionnez également votre configuration.
-1. Appuyez et cliquez sur **Enregistrer et fermer**.
+1. Accédez à la navigation globale et à **Navigation** > **Ressources** > **Fichiers**.
+1. Dans la console Ressources, sélectionnez la racine de langue à configurer et sélectionnez **Propriétés**.
+1. Sélectionnez l’onglet **Services cloud**.
+1. Sous **Configurations de Cloud Service** dans le **Ajouter une configuration** , sélectionnez votre connecteur dans la liste déroulante. Il doit apparaître dans la liste déroulante lorsque vous avez installé son package sous la forme [décrits précédemment.](#connect-translation-provider)
+1. Sous **Configurations de Cloud Service** dans le **Ajouter une configuration** , sélectionnez également votre configuration.
+1. Sélectionnez **Enregistrer et fermer**.
 
 ![Sélection des configurations de services cloud](assets/select-cloud-service-configurations.png)
 

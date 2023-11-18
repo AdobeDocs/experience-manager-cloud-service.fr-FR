@@ -2,10 +2,10 @@
 title: Utilisation de Sling Resource Merger dans Adobe Experience Manager as a Cloud Service
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
+source-wordcount: '1157'
+ht-degree: 95%
 
 ---
 
@@ -188,7 +188,7 @@ Ceux-ci, associés aux fonctionnalités standard, vous permettent d’effectuer 
 
 * **Masquer les enfants d’un nœud (tout en conservant les propriétés du nœud)**
 
-  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le nœud et ses propriétés sont requis dans le recouvrement/remplacement de `/apps`, tandis que la totalité ou une partie des nœuds enfants ne sont pas requis dans le recouvrement/remplacement de `/apps`.
+  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le noeud et ses propriétés sont requis dans la variable `/apps` overlay/override, mais certains ou tous les noeuds enfants ne sont pas nécessaires dans la variable `/apps` superposition/remplacement.
 
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
@@ -220,7 +220,7 @@ Sling Resource Merger comprend deux fournisseurs de ressources personnalisés�
 >
 >Lors de l’accès à votre ressource, il est recommandé d’utiliser le point de montage approprié.
 >
->De cette manière, vous avez la garantie que Sling Resource Merger est appelé et que la ressource entièrement fusionnée est renvoyée (réduction de la structure qui doit être répliquée à partir de `/libs`).
+>Cela garantit que Sling Resource Merger est appelé et que la ressource entièrement fusionnée est renvoyée (ce qui réduit la structure à partir de laquelle la réplication doit être effectuée. `/libs`).
 
 * Recouvrement :
 

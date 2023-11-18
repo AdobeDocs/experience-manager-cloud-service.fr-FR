@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1704'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -61,7 +61,7 @@ Comme mentionné précédemment, vous devrez planifier une période de gel du co
 
 Pour répondre à la première question, prenez en compte le temps nécessaire pour effectuer des essais dans des environnements de non-production. Pour répondre à la seconde question, il faut une collaboration étroite entre l’équipe qui ajoute de nouvelles fonctionnalités et l’équipe qui remanie le code. L’objectif est de s’assurer que tout le code qui est ajouté au déploiement existant est également ajouté, testé et déployé dans la branche des services cloud. En général, cela signifie que la quantité de code gelé est inférieure.
 
-En outre, vous devez prévoir un gel du contenu lorsque le dernier complément de contenu est programmé.
+En outre, vous devez prévoir un gel du contenu lorsque le complément final de contenu est planifié.
 
 ## Bonnes pratiques {#best-practices}
 

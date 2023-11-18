@@ -2,10 +2,10 @@
 title: Comment partager des liens vers des ressources ?
 description: Générez un lien et partagez les ressources avec d’autres personnes qui n’ont pas accès à l’application  [!DNL Assets view] .
 exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Pour générer un lien pour une ressource ou un dossier contenant des ressources :
 
-1. Sélectionnez la ou les ressources et/ou le ou les dossiers contenant des ressources, puis cliquez sur **[!UICONTROL Partager le lien]**.
+1. Sélectionnez les ressources, ou les dossiers, ou les deux, qui contiennent des ressources et cliquez sur **[!UICONTROL Partager le lien]**.
 
 1. Si vous souhaitez l’ajuster, cliquez sur l’icône Calendrier pour définir une date d’expiration pour le lien à l’aide du champ **[!UICONTROL Date d’expiration]**. Vous pouvez également spécifier une date directement au format `yyyy-mm-dd`. Par défaut, la date d’expiration d’un lien est fixée à 2 semaines à compter de la date de partage.
 

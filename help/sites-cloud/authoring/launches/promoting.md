@@ -2,9 +2,9 @@
 title: Conversion de lancements
 description: Vous devez convertir des pages de lancement afin de renvoyer le contenu dans la source (production) avant de le publier.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '811'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
       1. Sélectionnez la page de lancement requise à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md).
       1. L’action **Promouvoir** est disponible dans la barre d’outils.
    * La console **Lancements :**
-      1. Sélectionnez votre lancement (appuyez/cliquez sur la miniature).
+      1. Sélectionnez votre lancement (sélectionnez la miniature).
       1. Sélectionnez **Convertir**.
 1. Dans la première étape, vous pouvez spécifier :
    * **Cible**

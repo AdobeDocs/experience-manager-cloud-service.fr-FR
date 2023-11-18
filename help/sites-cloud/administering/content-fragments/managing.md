@@ -4,10 +4,10 @@ description: Découvrez comment gérer vos fragments de contenu AEM à partir de
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 52%
+source-wordcount: '2531'
+ht-degree: 51%
 
 ---
 
@@ -124,7 +124,7 @@ Certaines actions sont disponibles à partir de la console, sans sélectionner d
 
   >[!NOTE]
   >
-  >La console **Ressources** permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
+  >La variable **Ressources** La console permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
   >
   >* en utilisant le lien **Ouvrir dans Assets** (dans la console Fragments de contenu) ;
   >* directement à partir de la **Navigation** volet
@@ -201,7 +201,7 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
 
      ![Console Fragments de contenu - Indicateur de langue](assets/cf-managing-console-language-indicator.png)
 
-   * Cliquez/appuyez sur le décompte pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
+   * Sélectionnez le nombre pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
 
      ![Console Fragments de contenu - Boîte de dialogue Langue](assets/cf-managing-console-languages-dialog.png)
 
@@ -414,7 +414,7 @@ L’icône indique les paramètres régionaux du fragment de contenu, ainsi que 
 
 ![Console Fragments de contenu - Indicateur de langue](assets/cfc-console-language-indicator.png)
 
-Cliquez/appuyez sur le décompte pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
+Sélectionnez le nombre pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
 
 ![Console Fragments de contenu - Boîte de dialogue Langue](assets/cf-managing-console-languages-dialog.png)
 

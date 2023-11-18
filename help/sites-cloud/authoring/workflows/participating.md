@@ -2,10 +2,10 @@
 title: Participation aux workflows
 description: Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 93%
+source-wordcount: '1507'
+ht-degree: 86%
 
 ---
 
@@ -37,7 +37,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
    * Toute action disponible pour l’utilisateur actuel ou l’utilisatrice actuelle à l’étape du workflow en cours. Par exemple, Terminer, Déléguer, Afficher les détails.
    * Le nombre de workflows auxquels la page est soumise. Vous pouvez effectuer les actions suivantes :
       * utiliser les flèches gauche/droite pour parcourir les informations sur le statut des différents workflows ;
-      * cliquer/appuyer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre d’état.
+      * sélectionnez sur le nombre réel pour ouvrir une liste déroulante de tous les workflows applicables, puis sélectionnez le workflow à afficher dans la barre d&#39;état.
 
   ![Page avec plusieurs workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
@@ -48,7 +48,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
   >
   >Les actions s’affichent lorsque la personnes utilisatrice actuelle est directement impliquée dans l’étape actuelle du workflow.
 
-* Lorsque la **chronologie** est ouverte pour la ressource, l’étape du workflow s’affiche. Lorsque vous cliquez ou appuyez sur la bannière d’alerte, les actions disponibles s’affichent également :
+* Lorsque la **chronologie** est ouverte pour la ressource, l’étape du workflow s’affiche. Lorsque vous sélectionnez sur la bannière d’alerte, les actions disponibles s’affichent également :
 
   ![Workflow dans la chronologie](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
@@ -73,7 +73,7 @@ Vous pouvez terminer une étape de participant à partir des éléments suivants
 Utilisez la procédure suivante pour terminer l’élément de travail :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Terminer** dans la barre d’outils.
 1. La variable **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire**, le cas échéant.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
@@ -95,7 +95,7 @@ Vous pouvez également utiliser la chronologie pour terminer et avancer d’une 
 
    ![Réalisation d’une étape](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
 
-1. Cliquez ou appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Avancer** :
+1. Sélectionnez la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Avancer** :
 
    ![Progression de l’étape](/help/sites-cloud/authoring/assets/workflows-timeline-advance.png)
 
@@ -107,7 +107,7 @@ Vous pouvez également utiliser la chronologie pour terminer et avancer d’une 
 
 ### Délégation d’une étape de participant {#delegating-a-participant-step}
 
-Si une étape vous a été affectée, mais que vous ne pouvez pas effectuer d’action pour une raison quelconque, vous pouvez la déléguer à un autre utilisateur, une autre utilisatrice ou à un autre groupe.
+Si une étape vous a été assignée, mais que vous ne pouvez pas agir pour une raison quelconque, vous pouvez la déléguer à un autre utilisateur ou groupe.
 
 Les utilisateurs et les utilisatrices pouvant faire l’objet d’une délégation dépendent de la personne à qui l’élément de travail a été affecté :
 
@@ -132,7 +132,7 @@ Vous pouvez déléguer une étape de participant depuis :
 Utilisez la procédure suivante pour déléguer un élément de travail :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Déléguer** dans la barre d’outils.
 1. La boîte de dialogue s’ouvre. Définissez l’**utilisateur ou l’utilisatrice** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire**, le cas échéant.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
@@ -151,7 +151,7 @@ Utilisez la procédure suivante pour déléguer un élément de travail :
 Vous pouvez également utiliser la chronologie pour déléguer et/ou attribuer une étape :
 
 1. Sélectionnez la page requise et ouvrez la **chronologie** (ou ouvrez la **chronologie** et sélectionnez la page).
-1. Cliquez ou appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Modifier la personne désignée** :
+1. Sélectionnez la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Modifier la personne désignée** :
 
    ![Délégation de l’étape](/help/sites-cloud/authoring/assets/workflows-delegate.png)
 
@@ -163,7 +163,7 @@ Vous pouvez également utiliser la chronologie pour déléguer et/ou attribuer u
 
 ### Revenir d’une étape de participant en arrière {#performing-step-back-on-a-participant-step}
 
-Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir à une étape antérieure. Vous pouvez ainsi sélectionner une étape, qui s’est produite plus tôt dans le workflow, pour le retraitement. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
+Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir en arrière. Vous pouvez ainsi sélectionner une étape, qui s’est produite plus tôt dans le workflow, pour le retraitement. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
 
 Sur cette action, vous pouvez indiquer :
 
@@ -182,7 +182,7 @@ Vous pouvez revenir en arrière sur une étape de participant ou participante de
 Procédez comme suit pour revenir en arrière :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Revenir en arrière** pour ouvrir la boîte de dialogue.
 1. Définissez l’**étape précédente** et ajoutez un **commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
@@ -201,7 +201,7 @@ Procédez comme suit pour revenir en arrière :
 Vous pouvez également utiliser la chronologie pour revenir à une étape précédente et la restaurer :
 
 1. Sélectionnez la page requise et ouvrez la **chronologie** (ou ouvrez la **chronologie** et sélectionnez la page).
-1. Cliquez ou appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Restaurer** :
+1. Sélectionnez la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Restaurer** :
 
    ![Restauration d’une étape](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
 
@@ -243,7 +243,7 @@ Vous pouvez ouvrir les détails de l’élément de travail à partir de :
 Pour ouvrir un élément de workflow et afficher les détails :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Ouvrir** pour ouvrir les onglets d’informations.
 1. Si nécessaire, choisissez l’action appropriée, saisissez les informations et confirmez avec **OK** (ou **Annuler**).
 1. Utilisez **Enregistrer** ou **Annuler** pour quitter.
@@ -264,7 +264,7 @@ Vous pouvez afficher les détails de la charge utile associée à l’instance d
 Pour afficher la charge utile et les ressources de l’instance de workflow :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel vous souhaitez effectuer une action (appuyez/cliquez sur la miniature).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Afficher la charge utile** dans la barre d’outils pour ouvrir la boîte de dialogue.
    * Un package de workflow étant simplement un ensemble de pointeurs vers les chemins d’accès au sein du référentiel, vous pouvez y ajouter, supprimer ou modifier les entrées pour définir ce qu’il référence. Utilisez le composant **Définition de ressource** pour ajouter de nouvelles entrées.
 1. Les liens peuvent être utilisés pour ouvrir individuellement les pages.

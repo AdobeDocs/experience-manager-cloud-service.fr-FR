@@ -2,10 +2,10 @@
 title: Activation des fonctionnalités d’application web progressive
 description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que par un codage.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 67%
+source-wordcount: '1998'
+ht-degree: 66%
 
 ---
 
@@ -102,8 +102,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 Avec [les conditions préalables](#prerequisites) Réalisée, il est facile pour un auteur de contenu d’activer des fonctionnalités de PWA sur un site. Vous trouverez ci-dessous un aperçu basique de la procédure. Les options individuelles sont présentées dans la section [Options détaillées.](#detailed-options)
 
 1. Connectez-vous à AEM.
-1. Dans le menu principal, appuyez ou cliquez sur **Navigation** -> **Sites**.
-1. Sélectionnez le projet de vos sites et appuyez ou cliquez sur [**Propriétés**](/help/sites-cloud/authoring/fundamentals/page-properties.md) ou utilisez la touche d’accès rapide `p`.
+1. Dans le menu principal, sélectionnez **Navigation** > **Sites**.
+1. Sélectionnez votre projet de sites et sélectionnez [**Propriétés**](/help/sites-cloud/authoring/fundamentals/page-properties.md) ou utiliser la touche de raccourci `p`.
 1. Sélectionnez l’onglet **Application web progressive** et configurez les propriétés concernées. Vous souhaitez au minimum :
    1. sélectionner l’option **Activer PWA** ;
    1. définir l’**URL de la page d’accueil** ;
@@ -123,7 +123,7 @@ Avec [les conditions préalables](#prerequisites) Réalisée, il est facile pour
 
       ![Définir des chemins hors ligne PWA](../assets/pwa-offline.png)
 
-1. appuyer et cliquer sur **Enregistrer et fermer**.
+1. Sélectionnez **Enregistrer et fermer**.
 
 Votre site est maintenant configuré et vous pouvez [l’installer en tant qu’application locale.](#using-pwa-enabled-site)
 

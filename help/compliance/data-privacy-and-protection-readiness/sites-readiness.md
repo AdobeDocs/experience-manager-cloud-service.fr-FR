@@ -2,10 +2,10 @@
 title: Règlement sur la protection et la confidentialité des données – Niveau de préparation d’Adobe Experience Manager as a Cloud Service Sites
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Sites relative aux différents règlements sur la protection et la confidentialité des données ; notamment le Règlement général sur la protection des données (RGPD) de l’UE et la Loi sur la protection de la vie privée des consommateurs de Californie, ainsi que la manière de se conformer à ces règlements lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 98%
+source-wordcount: '1023'
+ht-degree: 96%
 
 ---
 
@@ -96,7 +96,7 @@ Par défaut, ces données de visiteur ou de visiteuse ne sont pas stockées dans
 
 ### Mise en œuvre de la souscription/l’exclusion {#implementing-opt-in-opt-out}
 
-Le ou la propriétaire du site doit mettre en œuvre un composant d’exclusion conformément aux instructions suivantes.
+Le propriétaire du site doit mettre en oeuvre un composant d’exclusion conformément aux instructions suivantes.
 
 Ces instructions implémentent l’inclusion comme valeur par défaut. Ainsi, un visiteur du site web doit clairement donner son accord avant que toute donnée personnelle soit stockée dans la persistance du navigateur (côté client).
 

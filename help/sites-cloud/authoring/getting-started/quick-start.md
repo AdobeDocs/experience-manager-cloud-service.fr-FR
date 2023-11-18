@@ -2,10 +2,10 @@
 title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 90%
+source-wordcount: '1541'
+ht-degree: 84%
 
 ---
 
@@ -51,7 +51,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
 
 >[!NOTE]
 >
->Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
+>Plusieurs raccourcis clavier peuvent faciliter la création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -87,17 +87,17 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
 ### Sélection de la page pour d’autres actions {#selecting-your-page-for-further-action}
 
-Vous pouvez sélectionner une page afin d’agir sur celle-ci. La sélection d’une page met automatiquement à jour la barre d’outils afin que les actions relatives à cette ressource s’affichent.
+Vous pouvez sélectionner une page pour y agir. La sélection d’une page met automatiquement à jour la barre d’outils afin que les actions relatives à cette ressource s’affichent.
 
 La sélection d’une page dépend de la vue utilisée dans la console :
 
 1. Mode Colonnes :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
+   * Sélectionnez la miniature de la ressource requise. Une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
 
 1. Vue Liste :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
+   * Sélectionnez la miniature de la ressource requise. Une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
 
 1. Mode Carte :
 
@@ -114,7 +114,7 @@ La sélection d’une page dépend de la vue utilisée dans la console :
 
 Les [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) sont disponibles :
 
-1. [Accédez à la page](#finding-your-page) sur laquelle vous souhaitez effectuer une action.
+1. [Accédez à la page](#finding-your-page) vous voulez agir.
 1. Placez le pointeur de la souris sur la carte qui représente la ressource requise. Les actions rapides s’affichent :
 
    ![Actions de carte](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -147,7 +147,7 @@ Pour modifier votre page :
 
    * [Modifier le contenu d’un composant existant](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) sur la page :
 
-      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant dessus. Utilisez l’icône **Modifier** (crayon) pour ouvrir la boîte de dialogue.
+      * Ouvrez la barre d’outils du composant en sélectionnant . Utilisez l’icône **Modifier** (crayon) pour ouvrir la boîte de dialogue.
       * Ouvrez l’éditeur statique du composant en maintenant appuyé ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, la sélection est limitée).
       * Pour afficher toutes les actions disponibles, passez en mode plein écran en cliquant sur l’icône suivante :
 
@@ -155,16 +155,16 @@ Pour modifier votre page :
 
    * [Configurez les propriétés d’un composant existant :](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant dessus. Utilisez l’icône **Configurer** (clé à molette) pour ouvrir la boîte de dialogue.
+      * Ouvrez la barre d’outils du composant en sélectionnant . Utilisez l’icône **Configurer** (clé à molette) pour ouvrir la boîte de dialogue.
 
    * [Déplacer un composant](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) d’une des manières suivantes :
 
       * Faites glisser le composant vers son nouvel emplacement.
-      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Couper** puis **Coller** suivant vos besoins.
+      * Ouvrez la barre d’outils du composant en sélectionnant . Utilisez la variable **Couper** then **Coller** au besoin.
 
    * [Copiez (et collez)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
-      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
+      * Ouvrez la barre d’outils du composant en sélectionnant . Utilisez la variable **Copier** then **Coller** au besoin.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ Pour modifier votre page :
 
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
-      * Ouvrez la barre d’outils du composant (en appuyant ou en cliquant), puis cliquez sur l’icône **Supprimer**.
+      * Ouvrez la barre d’outils du composant en sélectionnant , puis en utilisant la fonction **Supprimer** Icône
 
    * [Ajouter des annotations](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) à la page :
 
@@ -292,7 +292,7 @@ Un [accès rapide aux références](/help/sites-cloud/authoring/fundamentals/env
 
    ![Mode Références](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Appuyez/cliquez sur le type de référence requis pour afficher plus de détails et (le cas échéant) prendre d’autres mesures.
+1. Sélectionnez le type de référence requis pour afficher plus de détails et (le cas échéant) prendre d’autres mesures.
 
 ### Création d’une version d’une page {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ Pour créer une [version](/help/sites-cloud/authoring/features/page-versions.md)
 
    ![Option du mode Chronologie](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Appuyez/cliquez sur les points de suspension en bas à droite de la colonne Frise chronologique pour afficher d’autres boutons, notamment **Enregistrer comme version**.
+1. Sélectionnez les points de suspension en bas à droite de la colonne Frise chronologique pour afficher d’autres boutons, notamment **Enregistrer comme version**.
 
    ![Mode Chronologie](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ Le même mécanisme de base est appliqué pour restaurer ou pour comparer des ve
 
    Si une version de votre page a déjà été enregistrée, elle est répertoriée dans la chronologie.
 
-1. Appuyez/cliquez sur la version à restaurer, ce qui permet d’afficher d’autres boutons d’action :
+1. Sélectionnez la version à restaurer, ce qui affichera des boutons d’action supplémentaires :
 
    * **Revenir à cette version**
 

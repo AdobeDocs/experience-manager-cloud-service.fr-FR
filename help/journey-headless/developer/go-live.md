@@ -2,10 +2,10 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement découplé AEM, apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -67,7 +67,7 @@ Une fois que vous avez vérifié que tout a été testé et fonctionne correctem
 
 Une fois les mises à jour chargées vers Cloud Manager, elles peuvent être déployées vers AEM as a Cloud Service à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
 
-Vous pouvez commencer à déployer votre code en exploitant le pipeline CI/CD de Cloud Manager, qui est traité en détail [ici](/help/implementing/deploying/overview.md).
+Vous pouvez commencer à déployer votre code à l’aide du pipeline CI/CD de Cloud Manager, qui est largement couvert. [here](/help/implementing/deploying/overview.md).
 
 ## Surveillance des performances {#performance-monitoring}
 
@@ -126,7 +126,7 @@ Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous dis
 
 Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels) nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles complets traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
 
-Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours intitulée [Comment créer des applications sur une seule page (SPA) avec AEM.](create-spa.md)
+Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours intitulée [Comment créer des applications monopages avec AEM](create-spa.md).
 
 ## Ressources supplémentaires {#additional-resources}
 

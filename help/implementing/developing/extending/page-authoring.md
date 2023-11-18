@@ -1,13 +1,13 @@
 ---
 title: Personnaliser la création de pages
 description: Découvrez les mécanismes proposés par AEM as a Cloud Service pour personnaliser la fonctionnalité de création de pages.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 31%
+source-wordcount: '969'
+ht-degree: 32%
 
 ---
-
 
 # Personnaliser la création de pages {#customizing-page-authoring}
 
@@ -22,7 +22,7 @@ Lors de la personnalisation, vous pouvez créer votre propre bibliothèque clien
 * Dépend de la bibliothèque cliente de création `cq.authoring.editor.sites.page`.
 * Faites partie des `cq.authoring.editor.sites.page.hook` catégorie.
 
-Pour plus d’informations sur clientlibs, consultez le document . [Utilisation des bibliothèques côté client sur AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Voir [Utilisation des bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Recouvrements {#overlays}
 
@@ -30,9 +30,9 @@ Les superpositions sont basées sur des définitions de noeud et vous permettent
 
 Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car la fonction [fusion de ressources sling](/help/implementing/developing/introduction/sling-resource-merger.md) autorise l’héritage.
 
-Pour plus d’informations, voir la section [Jeu de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+Pour plus d’informations, voir [Jeu de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-Pour plus d’informations sur les recouvrements, consultez le document [Recouvrements pour Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Pour plus d’informations sur les superpositions, voir [Recouvrements pour Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Ajouter un nouveau calque (mode) {#add-new-layer-mode}
 

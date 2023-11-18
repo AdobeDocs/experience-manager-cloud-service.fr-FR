@@ -4,10 +4,10 @@ description: Une fois vos ressources cloud configurées, accordez à votre équi
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 79%
+source-wordcount: '885'
+ht-degree: 77%
 
 ---
 
@@ -24,7 +24,7 @@ Dans cette partie du [parcours d&#39;intégration,](overview.md) vous apprenez �
 
 Après avoir lu le document précédent dans ce parcours d’intégration, [Création d’environnements,](create-environments.md) et configurez vos ressources cloud de manière à ce que votre équipe ait accès à AEM elle-même à l’aide de profils de produits AEM. En tant qu’administrateur système, vous pouvez le faire en attribuant des profils de produit AEM.
 
-Après avoir lu ce document, vous comprendrez :
+Après avoir lu ce document, vous devez comprendre :
 
 * Ce que sont les profils de produits AEM.
 * Comment ajouter des membres de l’équipe à un profil de produit utilisateur AEM.
@@ -88,7 +88,7 @@ Ces tâches nécessitent que vous soyez un administrateur système avec le profi
 
    ![Gérer l’accès](/help/journey-onboarding/assets/add-team1.png)
 
-1. Un nouvel onglet vous permet d’accéder à Admin Console, à partir de laquelle vous avez accès à l’instance de création de l’environnement. Sélectionnez **Administrateurs AEM** ou **Utilisateurs AEM** en fonction des autorisations que l’individu concerné doit se voir attribuer.
+1. Un nouvel onglet vous permet d’accéder à Admin Console, à partir de laquelle vous avez accès à l’instance de création de l’environnement. Sélectionner **Administrateurs AEM** ou **Utilisateurs AEM** en fonction des autorisations que cette personne doit recevoir.
 
    ![Attribuer l’accès](/help/journey-onboarding/assets/add-team2.png)
 

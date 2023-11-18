@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -224,7 +224,7 @@ Vous pouvez dépublier une ou plusieurs pages de la destination souhaitée en pr
 
 ### Dépublication à partir de l’éditeur {#unpublishing-from-the-editor}
 
-Lors de la modification d’une page, si vous la dépubliez, sélectionnez **Dépublier la page** dans le menu **Informations sur la page**, comme vous le feriez pour [publier la page](#publishing-from-the-editor).
+Lorsque vous modifiez une page, si vous souhaitez en annuler la publication, sélectionnez **Annuler la publication de la page** dans le **Informations sur la page** , comme vous le feriez [publier la page ;](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ Lorsque vous avez saisi ou mis à jour un nombre considérable de pages de conte
 
 Vous pouvez utiliser l’option [Gérer la publication](#manage-publication) sur la console des sites.
 
-1. Dans la console Sites, sélectionnez la page racine de l’arborescence que vous souhaitez publier ou dépublier, puis sélectionnez **Gérer la publication**.
+1. Dans la console Sites, sélectionnez la page racine de l’arborescence que vous souhaitez publier ou dont vous souhaitez annuler la publication, puis sélectionnez **Gérer la publication**.
 1. L’assistant **Gérer la publication** démarre. Choisissez la publication ou la dépublication, puis sélectionnez **Suivant** pour continuer.
 1. À l’étape **Portée**, sélectionnez la page racine, puis **Inclure les enfants**.
 

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '5564'
+source-wordcount: '5562'
 ht-degree: 90%
 
 ---
@@ -509,11 +509,11 @@ Créez une version pour les ressources qui s’affichent dans les résultats de 
 
 ### Créer un workflow {#create-workflow}
 
-Comme pour la fonction de création de version, vous pouvez créer un workflow pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Workflow]**. Sélectionnez le modèle de workflow, spécifiez un titre pour le workflow, puis cliquez sur **[!UICONTROL Démarrer]**.
+Comme pour la fonction de création de version, vous pouvez créer un workflow pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez les ressources et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Workflow]**. Sélectionnez le modèle de workflow, spécifiez un titre pour le workflow, puis cliquez sur **[!UICONTROL Démarrer]**.
 
 ### Lier et dissocier des ressources {#relate-unrelate-assets}
 
-Liez et dissociez les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Lier]** ou **[!UICONTROL Dissocier]**.
+Liez et dissociez les ressources qui s’affichent dans les résultats de recherche. Sélectionnez les ressources et cliquez sur **[!UICONTROL Relate]** ou **[!UICONTROL Sans relation]**.
 
 ### Accédez à l’emplacement du dossier de ressources {#navigate-asset-folder-location}
 

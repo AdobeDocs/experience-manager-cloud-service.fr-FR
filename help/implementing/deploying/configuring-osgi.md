@@ -3,10 +3,10 @@ title: Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service
 description: Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3318'
-ht-degree: 100%
+source-wordcount: '3317'
+ht-degree: 97%
 
 ---
 
@@ -79,9 +79,9 @@ Les modes d’exécution AEM as a Cloud Service sont bien définis en fonction d
 Les valeurs de configuration OSGi spécifiées par le mode d’exécution peuvent être vérifiées en :
 
 1. Ouvrant [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr) pour les environnements AEM as a Cloud Services
-1. Sélectionnant le ou les niveaux de service à inspecter, à l’aide du menu déroulant __Capsule__.
+1. En sélectionnant le ou les niveaux de service à inspecter, à l’aide du __Capsule__ liste déroulante
 1. Sélectionnant l’onglet __Statut__ 
-1. Sélectionnant des __Configurations__ du menu déroulant __Export de statut__ 
+1. Sélection __Configurations__ de la __Saut d’état__ liste déroulante
 1. Cliquant sur le bouton __Obtenir le statut__
 
 La vue résultante affiche toutes les configurations de composant OSGi pour le ou les niveaux sélectionnés avec leurs valeurs de configuration OSGi applicables. Ces valeurs peuvent être référencées de manière croisée avec les valeurs de configuration OSGi dans le code source du projet AEM sous `/apps/example/osgiconfig/config.<runmode(s)>`.
@@ -157,7 +157,7 @@ Lorsque vous définissez une valeur de configuration OSGi, commencez avec des va
 N’utilisez des configurations spécifiques à un environnement (`$[env:ENV_VAR_NAME]`) que pour les valeurs de configuration non secrètes lorsque les valeurs varient pour le niveau d’aperçu ou varient selon les environnements de développement. Cela inclut les instances de développement en local et les environnements de développement Adobe Experience Manager as a Cloud Service. Outre la définition de valeurs uniques pour le niveau d’aperçu, évitez d’utiliser des configurations non secrètes spécifiques à des environnements d’évaluation ou de production d’Adobe Experience Manager as a Cloud Service.
 
 * N’utilisez des configurations non secrètes spécifiques à un environnement que pour les valeurs de configuration qui diffèrent entre le niveau de publication et de prévisualisation, ou pour les valeurs qui diffèrent entre les environnements de développement, y compris les instances de développement locales.
-* Outre le scénario où le niveau d’aperçu doit varier du niveau de publication, utilisez les valeurs intégrées standard dans les configurations OSGi pour les valeurs non secrètes d’évaluation et de production. À cet égard, il n’est pas recommandé d’utiliser des configurations spécifiques à un environnement pour faciliter les modifications de configuration au moment de l’exécution dans les environnements d’évaluation et de production ; ces modifications doivent être introduites par le biais du processus de gestion du code source.
+* Outre le scénario où le niveau d’aperçu doit varier du niveau de publication, utilisez les valeurs intégrées standard dans les configurations OSGi pour les valeurs non secrètes de test et de production. À cet égard, il n’est pas recommandé d’utiliser des configurations spécifiques à un environnement pour faciliter les modifications de configuration au moment de l’exécution dans les environnements d’évaluation et de production ; ces modifications doivent être introduites par le biais du processus de gestion du code source.
 
 ### Cas d’utilisation de valeurs secrètes de configuration spécifiques à un environnement {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -594,7 +594,7 @@ Jusqu’à 200 variables peuvent être déclarées par environnement.
 
 Les valeurs de configuration secrètes et spécifiques à chaque environnement étant situées en dehors de Git, et ne faisant pas partie des mécanismes de déploiement officiels d’Adobe Experience Manager as a Cloud Service, le client doit les gérer, les administrer et les intégrer dans le processus de déploiement d’Adobe Experience Manager as a Cloud Service.
 
-Comme mentionné ci-dessus, l’appel à l’API déploie les nouvelles variables et valeurs dans des environnements cloud, comme pour un pipeline de déploiement de code client classique. Les services de création et de publication sont redémarrés et font référence aux nouvelles valeurs, généralement en quelques minutes. Notez que les points de contrôle et tests de qualité exécutés par Cloud Manager pour un déploiement normal de code ne sont pas effectués pendant ce processus.
+Comme mentionné ci-dessus, l’appel à l’API déploie les nouvelles variables et valeurs dans des environnements cloud, comme pour un pipeline de déploiement de code client classique. Les services de création et de publication sont redémarrés et font référence aux nouvelles valeurs, généralement en quelques minutes. Les points de contrôle et tests de qualité exécutés par Cloud Manager lors d’un déploiement de code standard ne sont pas effectués pendant ce processus.
 
 En règle générale, les clients appellent l’API pour définir les variables d’environnement avant de déployer le code associé dans Cloud Manager. Dans certains cas, vous pouvez modifier une variable existante après le déploiement du code.
 

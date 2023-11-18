@@ -4,10 +4,10 @@ description: Utilisez le sélecteur de destination AEM pour afficher et sélecti
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 93%
+source-wordcount: '1904'
+ht-degree: 92%
 
 ---
 
@@ -274,7 +274,7 @@ Le sélecteur de destination vous permet d’afficher la ressource dans quatre v
 
 ### Infos {#info}
 
-L’icône d’informations ou d’informations vous permet d’afficher les métadonnées de la ressource sélectionnée. Il comprend divers détails tels que les dimensions, la taille, la description, le chemin, la date de modification et la date de création. Les informations de métadonnées sont fournies lors du chargement, de la copie ou de la création d’une ressource.
+L’icône d’informations ou d’informations vous permet d’afficher les métadonnées de la ressource sélectionnée. Il comprend divers détails tels que les dimensions, la taille, la description, le chemin, la date de modification et la date de création. Les informations de métadonnées sont fournies lors du chargement ou de la copie ou de la création d’une ressource.
 
 ### Sélectionner un dossier {#select-folder}
 

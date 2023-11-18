@@ -2,10 +2,10 @@
 title: Créer un programme
 description: Découvrez comment configurer un nouveau programme et un nouveau pipeline pour déployer le module complémentaire.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 42%
+source-wordcount: '696'
+ht-degree: 39%
 
 ---
 
@@ -44,32 +44,32 @@ Après vous être connecté à Cloud Manager, vous pouvez créer un programme d�
 
 1. Une fois connecté, vérifiez que vous vous trouvez dans la bonne organisation en la cochant dans le coin supérieur droit de l’écran. Si vous n’êtes membre que d’une seule organisation, cette étape n’est pas nécessaire.
 
-   ![Présentation de Cloud Manager](assets/cloud-manager.png)
+   ![Aperçu de Cloud Manager](assets/cloud-manager.png)
 
-1. Appuyez ou cliquez sur **Ajouter un programme** en haut à droite de la fenêtre.
+1. Sélectionner **Ajout d’un programme** en haut à droite de la fenêtre.
 
 1. Dans le **Créons votre programme** dialog :
 
    1. Fournissez un **Nom du programme** pour décrire votre programme.
-   1. Appuyez ou cliquez sur **Configurer un sandbox** pour votre **Objectif de programme**.
-   1. Cliquez ou appuyez sur **Continuer**.
+   1. Sélectionner **Configuration d’un environnement de test** pour votre **Objectif du programme**
+   1. Sélectionnez **Continuer**.
 
    ![Boîte de dialogue Créer un programme](assets/create-program.png)
 
 1. Dans le **Configuration de votre environnement de test** dans la boîte de dialogue **Solutions et modules complémentaires** , développez le tableau **Sites** entrée dans la liste en appuyant ou en cliquant dessus, puis en cochant **Démonstrations de référence**.
 
-   * Si vous souhaitez également créer des démonstrations pour AEM Screens, cochez la case **Screens** dans la liste. Cliquez ou appuyez sur **Mettre à jour**.
+   * Si vous souhaitez également créer des démonstrations pour AEM Screens, cochez la case **Screens** dans la liste. Sélectionner **Mettre à jour**.
 
    ![Sélection du module complémentaire pour la démonstration de référence dans la configuration du programme](assets/select-reference-demo-add-on.png)
 
 
-1. Appuyez ou cliquez sur **Créer** et Cloud Manager commence à configurer votre programme d’environnement de test. Vous accédez à l’écran de présentation du programme et une courte notification de bannière indique que le processus a commencé. Une carte a été ajoutée à la page d’aperçu de votre nouveau programme. Le processus de configuration prend quelques minutes.
+1. Sélectionner **Créer** et Cloud Manager commence à configurer votre programme d’environnement de test. Vous accédez à l’écran de présentation du programme et une courte notification de bannière indique que le processus a commencé. Une carte a été ajoutée à la page d’aperçu de votre nouveau programme. Le processus de configuration prend quelques minutes.
 
-1. Une fois la configuration terminée, la carte de l’environnement sur la page d’aperçu affiche son état comme **Prêt**. Appuyez ou cliquez sur la carte pour ouvrir l’environnement.
+1. Une fois la configuration terminée, la carte de l’environnement sur la page d’aperçu affiche son état comme **Prêt**. Sélectionnez la carte pour ouvrir l’environnement.
 
    ![Création de programme terminée](assets/ready.png)
 
-1. Votre environnement est prêt et le module complémentaire est désormais activé en tant qu’option, mais le contenu de la démonstration doit être déployé pour AEM être disponible. Pour ce faire, appuyez ou cliquez sur le bouton représentant des points de suspension en regard du pipeline Déployer vers le développement dans le **Pipelines** carte et sélectionnez **Exécuter**.
+1. Votre environnement est prêt et le module complémentaire est désormais activé en tant qu’option, mais le contenu de la démonstration doit être déployé pour AEM être disponible. Pour ce faire, sélectionnez le bouton représentant des points de suspension en regard du pipeline Déployer vers le développement dans la variable **Pipelines** carte et sélectionnez **Exécuter**.
 
    ![Démarrer](assets/run.png)
 

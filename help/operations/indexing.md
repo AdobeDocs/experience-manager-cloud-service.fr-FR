@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Découvrez la recherche et l’indexation de contenu dans AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 71%
+source-wordcount: '2428'
+ht-degree: 70%
 
 ---
 
@@ -61,7 +61,7 @@ Une définition d’index peut appartenir à l’une des catégories suivantes :
 
 >[!NOTE]
 >
->Présentation de nouveaux index sur la `dam:Asset` Le type de noeud (en particulier les index en texte intégral) est fortement déconseillé, car il peut entrer en conflit avec les fonctionnalités du produit prêtes à l’emploi, ce qui entraîne des problèmes de fonctionnalité et de performances. En général, l’ajout de propriétés supplémentaires à la propriété actuelle `damAssetLucene-*` La version d’index est la méthode la plus appropriée pour indexer des requêtes sur la variable `dam:Asset` type de noeud (ces modifications seront automatiquement fusionnées dans une nouvelle version de produit de l’index s’il est publié par la suite). En cas de doute, veuillez contacter le support Adobe pour obtenir des conseils.
+>Présentation de nouveaux index sur la `dam:Asset` Le type de noeud (en particulier les index en texte intégral) est fortement déconseillé, car il peut entrer en conflit avec les fonctionnalités du produit prêtes à l’emploi, ce qui entraîne des problèmes de fonctionnalité et de performances. En général, l’ajout de propriétés supplémentaires à la propriété actuelle `damAssetLucene-*` La version d’index est la méthode la plus appropriée pour indexer des requêtes sur la variable `dam:Asset` type de noeud (ces modifications seront automatiquement fusionnées dans une nouvelle version de produit de l’index s’il est publié par la suite). En cas de doute, contactez le support Adobe pour obtenir des conseils.
 
 ## Préparation de la nouvelle définition d’index {#preparing-the-new-index-definition}
 
@@ -240,7 +240,7 @@ Après avoir ajouté la nouvelle définition d’index, déployez la nouvelle ap
 
 >[!TIP]
 >
->Pour plus de détails sur la structure de package requise pour AEM as a Cloud Service, reportez-vous au document [Structure de projets AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Pour plus d’informations sur la structure de package requise pour AEM as a Cloud Service, voir [AEM structure de projet](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Gestion des index à l’aide de déploiements en continu {#index-management-using-rolling-deployments}
 

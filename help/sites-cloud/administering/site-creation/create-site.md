@@ -4,10 +4,10 @@ description: Découvrez comment utiliser AEM pour créer un site à l’aide de 
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 93%
+source-wordcount: '756'
+ht-degree: 77%
 
 ---
 
@@ -55,19 +55,19 @@ L’utilisation d’un modèle pour créer un site est simple.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Appuyez ou cliquez sur **Créer** en haut à droite de l’écran et, dans le menu déroulant, sélectionnez **Site à partir d’un modèle**.
+1. Sélectionner **Créer** en haut à droite de l’écran et, dans le menu déroulant, sélectionnez **Site à partir du modèle**.
 
    ![Création d’un site à partir d’un modèle](../assets/create-site-from-template.png)
 
-1. Dans l’assistant Créer un site , appuyez ou cliquez sur un modèle existant dans le panneau de gauche ou sur **Importer** en haut de la colonne gauche pour importer un nouveau modèle.
+1. Dans l’assistant Créer un site , sélectionnez un modèle existant dans le panneau de gauche ou sur **Importer** en haut de la colonne gauche pour importer un nouveau modèle.
 
-   ![Assistant de création de site](../assets/site-creation-wizard.png)
+   ![Assistant Création de site](../assets/site-creation-wizard.png)
 
-   1. Si vous choisissez d’importer, dans l’explorateur de fichiers, recherchez le modèle que vous souhaitez utiliser, puis appuyez ou cliquez sur **Charger**.
+   1. Si vous choisissez d’importer, recherchez le modèle à utiliser dans l’explorateur de fichiers, puis sélectionnez **Télécharger**.
 
    1. Une fois chargé, il s’affiche dans la liste des modèles disponibles.
 
-1. Lors de la sélection d’un modèle, il affiche des informations sur le modèle dans la colonne de droite. Une fois le modèle souhaité sélectionné, appuyez ou cliquez sur **Suivant**.
+1. Lors de la sélection d’un modèle, il affiche des informations sur le modèle dans la colonne de droite. Avec le modèle sélectionné, sélectionnez **Suivant**.
 
    ![Sélectionner un modèle](../assets/select-site-template.png)
 
@@ -77,11 +77,11 @@ L’utilisation d’un modèle pour créer un site est simple.
    * Le nom du site fait alors partie de l’URL.
    * Le nom du site doit respecter les [conventions de dénomination des pages d’AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. Appuyez ou cliquez sur **Créer** pour que le site soit créé à partir du modèle de site.
+1. Sélectionner **Créer** et le site est créé à partir du modèle de site.
 
    ![Détails du nouveau site](../assets/create-site-details.png)
 
-1. Dans la boîte de dialogue de confirmation qui s’affiche, appuyez ou cliquez sur **Terminé**.
+1. Dans la boîte de dialogue de confirmation qui s’affiche, sélectionnez **Terminé**.
 
    ![Boîte de dialogue Succès](../assets/success.png)
 
@@ -93,10 +93,10 @@ Les auteurs de contenu peuvent maintenant commencer la création !
 
 ## Personnalisation du site {#site-customization}
 
-Si votre site nécessite une personnalisation au-delà des modèles disponibles, plusieurs options s’offrent à vous.
+Si votre site nécessite une personnalisation au-delà des modèles disponibles, vous disposez de plusieurs options.
 
-* Si la structure du site ou le contenu initial doit être ajusté, [le modèle de site peut être personnalisé selon vos besoins](site-templates.md).
-* Si le style du site doit être adapté, [le thème du site peut être téléchargé et personnalisé](/help/journey-sites/quick-site/overview.md).
-* Si la fonctionnalité du site doit être ajustée, [le site peut être entièrement personnalisé](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* Si la structure du site ou le contenu initial doit être ajusté, [le modèle de site peut être personnalisé en fonction de vos besoins.](site-templates.md).
+* Si le style du site doit être adapté, [le thème du site peut être téléchargé et personnalisé.](/help/journey-sites/quick-site/overview.md).
+* Si la fonctionnalité du site doit être ajustée, [le site peut être entièrement personnalisé.](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Toute personnalisation doit être effectuée avec l’aide d’une équipe de développement.

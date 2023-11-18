@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2970'
-ht-degree: 95%
+source-wordcount: '2943'
+ht-degree: 91%
 
 ---
 
@@ -31,21 +31,21 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 
 ![Panneau de navigation](/help/sites-cloud/authoring/assets/navigation.png)
 
-La console **Sites** est utilisée dans ce document pour garantir une bonne compréhension de l’utilisation de base d’AEM. Cliquez ou appuyez sur **Sites** pour commencer.
+La console **Sites** est utilisée dans ce document pour garantir une bonne compréhension de l’utilisation de base d’AEM. Sélectionner sur **Sites** pour commencer.
 
 ## Navigation dans le produit {#product-navigation}
 
-Lorsqu’une personne utilisatrice accède à une console pour la première fois, un tutoriel sur la navigation dans le produit en question s’affiche. Cliquez ou appuyez pour obtenir une vue d’ensemble de la gestion de base d’AEM.
+Lorsqu’une personne utilisatrice accède à une console pour la première fois, un tutoriel sur la navigation dans le produit en question s’affiche. Prenez quelques instants pour obtenir un bon aperçu de la gestion de base des AEM.
 
 ![Tutoriel de navigation](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Cliquez ou appuyez sur **Suivant** pour accéder à la page suivante de l’aperçu. Cliquez ou appuyez sur **Fermer** ou à l’extérieur de la boîte de dialogue de l’aperçu pour la fermer.
+Sélectionner **Suivant** pour accéder à la page suivante de la présentation. Sélectionner **Fermer** ou sélectionnez en dehors de la boîte de dialogue de présentation à fermer.
 
 Si vous ne désactivez pas l’option **Ne plus afficher ce message**, l’aperçu redémarrera la prochaine fois que vous accéderez à la console.
 
 ## Navigation globale {#global-navigation}
 
-Pour passer d’une console à une autre, utilisez le panneau de navigation globale. Cliquez ou appuyez sur le lien Adobe Experience Manager, dans le coin supérieur gauche de l’écran, pour accéder au menu déroulant, qui s’affiche en mode plein écran.
+Pour passer d’une console à une autre, utilisez le panneau de navigation globale. Cela se déclenche sous la forme d’une liste déroulante plein écran lorsque vous sélectionnez le lien Adobe Experience Manager dans le coin supérieur gauche de l’écran.
 
 Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant sur **Fermer** pour revenir à votre position précédente.
 
@@ -79,7 +79,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
 
 ## Panneau Outils {#tools-panel}
 
-Dans le panneau Outils se trouve un panneau latéral contenant un éventail de catégories, qui regroupe des consoles Outils similaires. Les consoles Outils vous donnent accès à un certain nombre d’outils et de consoles spécialisés pour la gestion des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+Dans le panneau Outils se trouve un panneau latéral contenant un éventail de catégories, qui regroupe des consoles Outils similaires. Les consoles Outils vous donnent accès à plusieurs outils et consoles spécialisés pour la gestion des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Panneau Outils](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -304,7 +304,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
    * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous appuyez ou cliquez dessus.
    * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de celle-ci.
-   * Si vous appuyez ou cliquez sur un nom de ressource sans enfant, ses détails s’affichent dans la colonne finale.
+   * Si vous sélectionnez un nom de ressource sans enfant, ses détails s’affichent dans la dernière colonne.
 
 * Appuyez ou cliquez sur la miniature pour sélectionner la ressource.
 
@@ -331,7 +331,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
    * le titre de la page ;
    * des dates importantes (telles que la date de la dernière modification ou publication) ;
    * si la page est verrouillée, masquée ou fait partie d’une Live Copy ;
-   * le cas échéant, le moment auquel vous devez effectuer une action dans le cadre d’un workflow.
+   * Le cas échéant, lorsque vous devez agir dans le cadre d’un workflow
       * Les marques qui indiquent les actions requises peuvent être liées aux entrées de votre [boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 * Les [actions rapides](#quick-actions) sont également disponibles dans ce mode, comme la sélection et les actions courantes, telles que la modification.
@@ -352,12 +352,12 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
    * Cette case apparaît cochée lorsque tous les éléments de la liste sont sélectionnés.
 
-      * Cliquez ou appuyez sur la case à cocher pour tout désélectionner.
+      * Cochez la case pour tout désélectionner.
 
    * Lorsque seuls certains éléments sont sélectionnés, le signe moins apparaît.
 
-      * Cliquez ou appuyez sur la case à cocher pour tout sélectionner.
-      * Cliquez ou appuyez à nouveau sur la case à cocher pour tout désélectionner.
+      * Cochez la case pour tout sélectionner.
+      * Cochez à nouveau la case pour tout désélectionner.
 
 * Sélectionnez les colonnes à afficher à l’aide de l’option **Afficher les paramètres** située sous le bouton Vues. Vous pouvez afficher les colonnes suivantes :
 
@@ -383,7 +383,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
   ![Ordre des colonnes](/help/sites-cloud/authoring/assets/column-order.png)
 
-  Cliquez ou appuyez sur la barre de sélection verticale, puis faites glisser l’élément vers un nouvel emplacement dans la liste.
+  Sélectionnez la barre de sélection verticale et faites glisser l’élément vers un nouvel emplacement dans la liste.
 
   ![Liste d’ordre](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -471,7 +471,7 @@ Consultez le document [Utilisation du rail Site pour gérer le thème de votre s
 
 >[!TIP]
 >
->Vous trouverez une description de bout en bout du processus de création d’un nouveau site à partir d’un modèle et de personnalisation de son thème dans le [Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md).
+>Vous trouverez une description de bout en bout du processus de création d’un site à partir d’un modèle et de personnalisation de son thème dans le [Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md).
 
 ### Filtrer {#filter}
 

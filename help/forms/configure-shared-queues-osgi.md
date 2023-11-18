@@ -4,17 +4,17 @@ description: Découvrez comment utiliser les files d’attente partagées pour l
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 97%
+source-wordcount: '839'
+ht-degree: 95%
 
 ---
 
 
 # Partager et demander l’accès aux éléments de la boîte de réception d’un utilisateur {#share-and-request-access}
 
-Une file d’attente est une liste d’éléments dans une boîte de réception AEM d’un utilisateur. Il peut s’agir d’éléments affectés à un utilisateur ou d’éléments partagés avec le groupe auquel un utilisateur appartient. Vous pouvez accéder à votre boîte de réception pour afficher un l’élément et exécuter une action dessus, par exemple le partager avec un autre utilisateur.
+Une file d’attente est une liste d’éléments dans une boîte de réception AEM d’un utilisateur. Il peut s’agir d’éléments affectés à un utilisateur ou d’éléments partagés avec le groupe auquel un utilisateur appartient. Vous pouvez accéder à votre boîte de réception pour afficher et agir sur l’élément de boîte de réception. par exemple le partager avec un autre utilisateur.
 
 Vous pouvez également partager vos éléments de boîte de réception avec un autre utilisateur. Une fois qu’un autre utilisateur a accès à vos éléments de boîte de réception, il peut demander des éléments partagés et exécuter des actions dessus. De même, vous pouvez demander l’accès aux éléments de boîte de réception à d’autres utilisateurs.
 

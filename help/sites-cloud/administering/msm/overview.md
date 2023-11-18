@@ -4,10 +4,10 @@ description: Découvrez comment réutiliser du contenu avec les puissantes fonct
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 96%
+source-wordcount: '2702'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Cette page présente un aperçu de la réutilisation du contenu avec MSM. Les pa
 
 >[!NOTE]
 >
->MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Pour plus d’informations, voir [Réutiliser les fragments de contenu à l’aide de MSM pour Assets](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Assets).
+>MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Voir [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Ressources).
 
 ## Scénarios possibles {#possible-scenarios}
 
@@ -106,7 +106,7 @@ Il existe de nombreux cas d’utilisation pour MSM et les Live Copies. Voici qu
   >
   >De l’autre :
   >
-  >* Le nombre de copies individuelles qu’il faudra adapter.
+  >* La quantité de copies individuelles à ajuster.
 
 ## MSM à partir de l’interface utilisateur {#msm-from-the-ui}
 
@@ -172,7 +172,7 @@ Le tableau suivant donne une vue d’ensemble des principaux termes utilisés av
 
 >[!TIP]
 >
->Consultez le document [Extension du Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) pour les noms d’objet.
+>Voir [Extension du Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) pour les noms d’objet.
 
 ## Live Copies {#live-copies}
 
@@ -278,7 +278,7 @@ Le déploiement est l’action MSM centrale qui synchronise les Live Copies ave
 Une configuration de déploiement définit quand et comment une Live Copy est synchronisée avec le contenu source. Une configuration de déploiement se compose d’un déclencheur et d’une ou de plusieurs actions de synchronisation :
 
 * **Déclencheur** – Un déclencheur est un événement qui provoque la synchronisation d’une action en direct, comme l’activation d’une page source. MSM définit les déclencheurs que vous pouvez utiliser.
-* **Actions de synchronisation** : les actions de synchronisation sont exécutées sur Live Copy pour la synchroniser avec la source. Par exemple, la copie de contenu, l’organisation de nœuds enfants et l’activation de la page Live Copy sont des actions de synchronisation. MSM propose un certain nombre d’actions de synchronisation.
+* **Actions de synchronisation** : les actions de synchronisation sont exécutées sur Live Copy pour la synchroniser avec la source. Par exemple, la copie de contenu, l’organisation de nœuds enfants et l’activation de la page Live Copy sont des actions de synchronisation. MSM fournit plusieurs actions de synchronisation.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ Les étapes suivantes décrivent la procédure standard d’utilisation de MSM p
 1. Développez le contenu du site source.
 1. Déterminez la configuration de déploiement à utiliser.
 
-   1. MSM [installe plusieurs configurations de déploiement](live-copy-sync-config.md#installed-rollout-configurations) pouvant répondre à un certain nombre de cas d’utilisation.
+   1. MSM [installe plusieurs configurations de déploiement](live-copy-sync-config.md#installed-rollout-configurations) qui peuvent répondre à plusieurs cas d’utilisation.
    1. Vous pouvez éventuellement [créer une configuration de déploiement](live-copy-sync-config.md#creating-a-rollout-configuration), le cas échéant.
 
 1. Déterminez où vous devez [spécifier les configurations de déploiement à utiliser](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) et effectuez la configuration selon vos besoins.

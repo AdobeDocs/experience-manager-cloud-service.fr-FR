@@ -5,10 +5,10 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 75%
+source-wordcount: '726'
+ht-degree: 74%
 
 ---
 
@@ -76,7 +76,7 @@ Vous pouvez appuyer sur le bouton **Configurer** ![icône de configuration](asse
    * **Message du modèle :** Spécifiez le message à afficher pendant le chargement du PDF de signatures. Les services Adobe Sign prennent du temps pour préparer et charger le PDF de signatures.
    * **Service de signature :** sélectionnez l’option **Signature tactile**.
 
-   * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Il est recommandé d’utiliser des [thèmes](themes.md) et des [styles en ligne](inline-style-adaptive-forms.md) au lieu de la classe CSS.
+   * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Adobe recommande d’utiliser [thèmes](themes.md) et [styles en ligne](inline-style-adaptive-forms.md) au lieu de la classe CSS.
 
    Appuyez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications. La signature est correctement configurée.
 

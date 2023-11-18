@@ -5,7 +5,7 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 95%
@@ -89,7 +89,7 @@ Pour connecter PWA Studio au point d’entrée GraphQL d’AEM, vous pouvez util
 
 ## Configuration d’AEM {#setup-aem}
 
-Consultez la documentation relatives aux fragments de contenu AEM pour configurer un point d’entrée GraphQL pour votre projet AEM. De plus, dans votre projet AEM, ajoutez les configurations suivantes pour permettre à votre application PWA Studio d’accéder au point d’entrée GraphQL :
+Consultez la documentation relatives aux fragments de contenu AEM pour configurer un point d’entrée GraphQL pour votre projet AEM. De plus, dans votre projet AEM, ajoutez les configurations suivantes pour permettre à votre application PWA Studio d’accéder au point d’entrée GraphQL :
 
 * Politique de partage des ressources cross-origin Adobe Granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 

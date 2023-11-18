@@ -3,10 +3,10 @@ title: Opérations Exploitation et maintenance d’Adobe Experience Manager as
 description: Découvrez les opérations réalisées en arrière-plan par Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance, et obtenez des réponses à vos requêtes.
 landing-page-description: Découvrez les opérations réalisées en arrière-plan par Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance, et obtenez des réponses à vos requêtes.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 100%
+source-wordcount: '400'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Découvrez les opérations réalisées en arrière-plan par Experience Manager�
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, sa terminologie, son architecture, etc. |
+| [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, l’architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version d’Experience Manager as a Cloud Service, notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les rubriques importantes relatives à la sécurité concernant Experience Manager as a Cloud Service. |
 | [Parcours d’intégration](/help/journey-onboarding/overview.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |

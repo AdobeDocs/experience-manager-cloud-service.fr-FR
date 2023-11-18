@@ -2,10 +2,10 @@
 title: Votre boîte de réception
 description: Découvrez comment utiliser les notifications qui arrivent dans votre boîte de réception pour gérer vos tâches.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 97%
+source-wordcount: '910'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris d
       * Ils sont générés par l’étape **Participant** du workflow.
    * Éléments d’échec, pour permettre aux administrateurs de relancer l’étape qui a échoué.
 
-Vous recevez ces notifications dans votre propre boîte de réception où vous pouvez les afficher et prendre des mesures.
+Vous recevez ces notifications dans votre propre boîte de réception, où vous pouvez les afficher et agir sur la base de celles-ci.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 
 Pour ouvrir la boîte de réception des notifications AEM :
 
-1. Cliquez/appuyez sur l’indicateur dans la barre d’outils.
+1. Sélectionnez l’indicateur dans la barre d’outils.
 
 1. Sélectionnez **Afficher tout**. La variable **Boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
 1. La vue par défaut est [Liste](#inbox-list-view), mais vous pouvez également passer à la vue [Calendrier](#inbox-calendar-view). Pour ce faire, utilisez le sélecteur de vue (barre d’outils, en haut à droite).

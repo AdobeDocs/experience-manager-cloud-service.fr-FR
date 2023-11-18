@@ -2,10 +2,10 @@
 title: Présentation de l’éditeur universel
 description: Découvrez comment l’éditeur universel permet la modification WYSIWYG (What-you-get) de n’importe quelle expérience headless et headful. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 88%
+source-wordcount: '925'
+ht-degree: 81%
 
 ---
 
@@ -34,7 +34,7 @@ Les utilisateurs pensent souvent qu’une mise en oeuvre sans interface limite l
 
 Les exigences d’une mise en œuvre pour utiliser l’éditeur universel sont très simples et prennent en charge :
 
-* **N’importe quelle architecture** - Rendu côté serveur, rendu côté périphérie, rendu côté client, etc.
+* **N’importe quelle architecture** - Rendu côté serveur, rendu côté serveur, rendu côté client, etc.
 * **N’importe quel framework** - AEM Vanilla, ou tout framework tiers comme React, Next.js, Angular, etc.
 * **N’importe quel hébergement** - Peut être hébergé localement sur AEM ou sur un domaine distant
 
@@ -50,7 +50,7 @@ Un créateur ou une créatrice de contenu doit avoir la même expérience puissa
 
 Pour un créateur ou une créatrice de contenu, le contenu ne concerne pas seulement les informations contenues, mais aussi leur rendu et leur réception. Le contenu est fourni avec des métadonnées et des règles d’instrumentation supplémentaires, que l’éditeur universel peut comprendre et modifier, notamment :
 
-* **Application de la mise en page et du style** - En utilisant un système de style, le professionnel ou la professionnelle du marketing et le créateur ou la créatrice de contenu peuvent appliquer différents styles à leur contenu et créer différentes mises en page pour le contenu, telles que des colonnes, des carrousels, des onglets, des accordéons, etc.
+* **Application de la mise en page et du style** - En utilisant un système de style, le professionnel du marketing et l’auteur de contenu peuvent appliquer différents styles à leur contenu et créer différentes mises en page pour le contenu, telles que des colonnes, des carrousels, des onglets, des accordéons, etc.
 
 ## Valeur {#value}
 

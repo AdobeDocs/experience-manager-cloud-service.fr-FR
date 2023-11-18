@@ -2,10 +2,10 @@
 title: Présentation de l’éditeur de SPA
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 100%
+source-wordcount: '1632'
+ht-degree: 96%
 
 ---
 
@@ -21,13 +21,13 @@ Les sites créés à l’aide de frameworks SPA courantes, telles que React et A
 
 Pour activer la modification d’applications sur une seule page dans AEM, il faut qu’il y ait une correspondance entre la sortie JSON de l’application et le modèle de contenu dans le répertoire AEM afin d’enregistrer les modifications apportées au contenu.
 
-La prise en charge des applications sur une seule page dans AEM s’accompagne d’une fine couche JS qui interagit avec le code JS de l’application lorsqu’elle est chargée dans l’éditeur de pages avec lequel des événements peuvent être envoyés. L’emplacement des commandes d’édition peut être activé pour permettre une modification en contexte. Cette fonction repose sur le concept de point d’entrée de l’API Content Services, étant donné que le contenu de l’application sur une seule page doit être chargé par le biais de Content Services.
+La prise en charge des applications sur une seule page dans AEM s’accompagne d’une fine couche JS qui interagit avec le code JS de l’application lorsqu’elle est chargée dans l’éditeur de pages avec lequel des événements peuvent être envoyés. L’emplacement des commandes d’édition peut être activé pour permettre une modification en contexte. Cette fonctionnalité repose sur le concept de point de terminaison de l’API Content Services, car le contenu du SPA doit être chargé au moyen de Content Services.
 
-Pour plus d’informations sur les applications monopages (SPA) dans AEM, consultez les documents suivants :
+Pour plus d’informations sur SPA dans AEM, voir :
 
-* [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) pour connaître les exigences techniques d’une SPA
-* [Prise en main des SPA dans AEM avec React](getting-started-react.md) pour une présentation rapide d’une SPA simple avec React
-* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md) pour une présentation rapide d’une SPA simple avec Angular
+* [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) pour connaître les exigences techniques d’une SPA.
+* [Prise en main des SPA dans AEM avec React](getting-started-react.md) pour une présentation rapide d’une SPA simple avec React.
+* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md) pour une présentation rapide d’une SPA simple avec Angular.
 
 ## Conception {#design}
 
@@ -185,6 +185,6 @@ Le SDK de l’éditeur de SPA d’AEM est entièrement pris en charge par Adobe 
 * Modification des configurations (ex. listeners)
 * Annuler/rétablir
 * Outil de comparaison des pages et déformation temporelle
-* Fonctionnalités de réécriture HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.
+* Fonctionnalités de réécriture de HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.
 * Mode Développeur
 * Lancements AEM

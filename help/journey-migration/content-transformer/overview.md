@@ -2,10 +2,10 @@
 title: Présentation du Transformateur de contenu
 description: Découvrez comment détecter et corriger les problèmes liés au contenu signalés par la BPA à l’aide de Content Transformer.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 94%
+source-wordcount: '388'
+ht-degree: 87%
 
 ---
 
@@ -34,4 +34,4 @@ Le Transformateur de contenu offre les avantages suivants :
 
 * Sûr : un package est créé par le Transformateur de contenu chaque fois qu’il apporte une modification au référentiel pour résoudre les problèmes. Si nécessaire, vous pouvez revenir à l’état précédent en installant le package.
 * Facile à utiliser : le Transformateur de contenu a été intégré à l’outil de transfert de contenu et s’accompagne d’une interface utilisateur simple et intuitive.
-* Permet de gagner du temps : lorsque vous rencontrez un grand nombre de problèmes de contenu appartenant à une catégorie de modèle, vous pouvez tous les résoudre en quelques clics seulement à l’aide du Transformateur de contenu.
+* Gagne du temps : lorsque vous rencontrez un grand nombre de problèmes de contenu qui relèvent d’une catégorie de modèle, vous pouvez tous les résoudre en plusieurs clics à l’aide du transformateur de contenu.

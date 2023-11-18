@@ -4,10 +4,10 @@ description: Configuration de  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1770'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 
@@ -61,7 +61,7 @@ Pour vous abonner aux événements, procédez comme suit :
 ### Configuration de la structure de dossiers liés {#linked-folder-structure}
 
 1. Accédez à l’onglet Dossiers liés au projet dans les services cloud.
-1. Chemin d’accès parent du dossier lié : sélectionnez un dossier dans la gestion des ressources numériques (DAM) où vous souhaitez créer les dossiers liés. Si ce paramètre n’est pas renseigné, il est défini par défaut sur /content/dam. Assurez-vous que le schéma de métadonnées des outils Workfront et le schéma de métadonnées du dossier Dossier lié Workfront ont été appliqués au dossier sélectionné.
+1. Chemin d’accès parent du dossier lié : sélectionnez un dossier dans la gestion des actifs numériques où vous souhaitez créer les dossiers liés. Si ce paramètre n’est pas renseigné, il est défini par défaut sur /content/dam. Assurez-vous que le schéma de métadonnées des outils Workfront et le schéma de métadonnées du dossier Dossier lié Workfront ont été appliqués au dossier sélectionné.
 1. Structure de dossiers liés : entrez des valeurs séparées par des virgules. Chaque valeur doit être `DE:<some-project-custom-form-field>`, Portfolio, Programme, Année, Nom ou une « valeur de chaîne littérale » (cette dernière avec des guillemets). Elle est actuellement définie sur Portfolio,Program,Year,DE:Project Type,Name.
 1. Créez le titre du dossier lié dans Workfront à l’aide de la case à cocher Noms de structure de dossiers doit être cochée si le titre du dossier dans Workfront doit inclure tous les dossiers de la structure. Sinon, il s’agit du titre du dernier dossier.
 1. Le multichamp Sous-dossiers permet de spécifier une liste de dossiers à créer en tant que dossier enfant du dossier lié.
@@ -76,15 +76,15 @@ Pour vous abonner aux événements, procédez comme suit :
 
 ### Configuration du mappage des métadonnées de dossier {#folder-metadata-mapping}
 
-Le mappage des métadonnées entre les projets Workfront et les dossiers AEM est défini dans les schémas de métadonnées de dossier AEM. Les schémas de métadonnées de dossier doivent être créés et configurés comme vous le faites habituellement dans AEM. Les outils Workfront ajoutent une liste déroulante de saisie automatique à l’onglet Configuration des paramètres de chaque champ de formulaire de schéma de métadonnées de dossier. Ce menu déroulant de saisie automatique vous permet de spécifier le champ Workfront auquel chaque propriété de dossier AEM doit être mappée.
+Le mappage des métadonnées entre les projets Workfront et les dossiers AEM est défini dans les schémas de métadonnées de dossier AEM. Les schémas de métadonnées de dossier doivent être créés et configurés comme vous le faites habituellement dans AEM. Workfront Tools ajoute une liste déroulante de saisie automatique à l’onglet Configuration des paramètres de chaque champ de formulaire de schéma de métadonnées de dossier. Ce menu déroulant de saisie automatique vous permet de spécifier le champ Workfront auquel chaque propriété de dossier AEM doit être mappée.
 
 Pour configurer les mappages, procédez comme suit :
 
 1. Ajouter `jcr:read` autorisations pour `/conf/global/settings/dam/adminui-extension/foldermetadataschema` pour `wf-workfront-users` groupe.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
-1. Sélectionnez le formulaire de schéma de métadonnées de dossier que vous souhaitez modifier, puis cliquez sur Modifier.
+1. Sélectionnez le formulaire de schéma de métadonnées de dossier à modifier, puis cliquez sur Modifier.
 1. Sélectionnez le champ de formulaire de schéma de métadonnées de dossier que vous souhaitez modifier, puis sélectionnez l’onglet Paramètres dans le panneau de droite.
-1. Dans le champ [!UICONTROL Mappé depuis le champ Workfront], sélectionnez le nom du champ Workfront que vous souhaitez mapper à la propriété du dossier AEM sélectionné. Les options disponibles sont les suivantes :
+1. Dans [!UICONTROL Mappé à partir du champ Workfront] , sélectionnez le nom du champ Workfront que vous souhaitez mapper à la propriété de dossier AEM sélectionnée. Les options disponibles sont les suivantes :
 
    * Champs de formulaire personnalisé du projet
    * Champs de présentation du projet (ID, nom, description, numéro de référence, date d’achèvement prévue, propriétaire du projet, parrain du projet, Portfolio ou programme)
@@ -99,8 +99,8 @@ Pour configurer les mappages, procédez comme suit :
 
 1. Accédez à **Outils** > **Ressources** > **Schémas de métadonnées**.
 1. Sélectionnez le formulaire de schéma de métadonnées à modifier, puis cliquez sur **Modifier** ou créer entièrement un schéma de métadonnées.
-1. Sélectionnez le champ de formulaire de schéma de métadonnées que vous souhaitez modifier, puis sélectionnez l’onglet **Paramètres** dans le panneau de droite.
-1. Dans Champ de formulaire personnalisé [!DNL Workfront], sélectionnez le nom du champ [!DNL Workfront] que vous souhaitez mapper à la propriété AEM sélectionnée. Les options disponibles sont les suivantes :
+1. Sélectionnez le champ de formulaire de schéma de métadonnées à modifier, puis sélectionnez **Paramètres** dans le panneau de droite.
+1. Dans [!DNL Workfront] Champ de formulaire personnalisé : sélectionnez le nom du champ [!DNL Workfront] champ à mapper à la propriété AEM sélectionnée. Les options disponibles sont les suivantes :
 
    * Champs de formulaire personnalisé du document
    * Champs de formulaire personnalisé du projet
@@ -108,7 +108,7 @@ Pour configurer les mappages, procédez comme suit :
    * Champs de formulaire personnalisé de la tâche
    * Champs de présentation du projet (ID, nom, description ou numéro de référence)
 
-1. Dans le cas où le champ [!DNL Workfront] sélectionné dans le [!UICONTROL champ de formulaire personnalisé Workfront] est un champ de saisie semi-automatique des utilisateurs et utilisatrices Workfront, il est nécessaire de préciser quel champ Utilisateur Workfront vous souhaitez mapper.  Pour ce faire, cochez la case Obtenir la valeur du champ d’objet référencé de Workfront, puis indiquez le nom du [!UICONTROL Champ de formulaire personnalisé Utilisateur Workfront] à partir duquel récupérer la valeur à mapper.
+1. Dans le cas où la variable [!DNL Workfront] champ sélectionné dans [!UICONTROL Champ de formulaire personnalisé Workfront] est un champ de type Utilisateur Workfront , il est nécessaire de spécifier le champ Utilisateur Workfront à mapper. Pour ce faire, cochez la case Obtenir la valeur du champ d’objet référencé de Workfront, puis indiquez le nom du [!UICONTROL Champ de formulaire personnalisé Utilisateur Workfront] à partir duquel récupérer la valeur à mapper.
 
    ![configuration du mappage de métadonnées](/help/assets/assets/wf-metadata-mapping-config1.png)
 

@@ -2,10 +2,10 @@
 title: Mise en veille et réactivation d’environnements Sandbox
 description: Découvrez comment les environnements d’un programme Sandbox passent automatiquement en mode veille et comment les réactiver.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 93%
+source-wordcount: '683'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ Une fois la mise en veille terminée, vous voyez la notification de fin du proce
 
 ![Confirmation de veille](assets/hibernate-4.png)
 
-Dans la Developer Console, vous pouvez également cliquer sur le lien **Environments** (Environnements) dans les chemins de navigation au-dessus du menu déroulant **Pod** pour obtenir une liste des environnements à mettre en veille.
+Dans Developer Console, vous pouvez également cliquer sur le **Environnements** dans les chemins de navigation au-dessus de la balise **Capsule** Liste déroulante pour une liste des environnements à mettre en veille.
 
 ![Liste des environnements à mettre en veille](assets/hibernate-1b.png)
 
@@ -88,7 +88,7 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
    ![Fin de la réactivation](assets/de-hibernation-img4.png)
 
 
-Dans la Developer Console, vous pouvez également cliquer sur le lien **Environments** (Environnements) dans les chemins de navigation au-dessus du menu déroulant **Pod** pour obtenir une liste des environnements à réactiver.
+Dans Developer Console, vous pouvez également cliquer sur le **Environnements** dans les chemins de navigation au-dessus de la balise **Capsule** Liste déroulante pour une liste des environnements à réactiver.
 
 ![Liste des capsules en veille](assets/de-hibernate-1b.png)
 

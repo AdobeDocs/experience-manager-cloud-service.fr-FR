@@ -2,9 +2,9 @@
 title: Console des composants
 description: La console Composants vous permet de parcourir tous les composants définis pour votre instance.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 69%
 
 ---
@@ -29,7 +29,7 @@ Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir l
 
 ### Détails des composants {#component-details}
 
-Pour afficher des détails sur un composant spécifique, appuyez/cliquez sur la ressource requise. Trois onglets sont proposés :
+Pour afficher des détails sur un composant spécifique, sélectionnez la ressource requise. Trois onglets sont proposés :
 
 * **Propriétés**
 

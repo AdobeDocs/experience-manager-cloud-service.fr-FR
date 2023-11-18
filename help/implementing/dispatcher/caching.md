@@ -3,9 +3,9 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Découvrez les principes de base de la mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2873'
 ht-degree: 95%
 
 ---
@@ -238,7 +238,7 @@ Pour les environnements créés en octobre 2023 ou version ultérieure, afin de 
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
 
-Veuillez envoyer un ticket d’assistance si vous souhaitez que ce comportement soit désactivé.
+Envoyez un ticket d’assistance si vous souhaitez que ce comportement soit désactivé.
 
 Pour les environnements créés avant octobre 2023, il est recommandé de configurer le `ignoreUrlParams` property as [documenté ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
 

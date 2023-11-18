@@ -2,10 +2,10 @@
 title: Parcours de création rapide de site AEM
 description: Commencez ici votre parcours guidé à travers l’outil convivial de création rapide de site AEM, qui vous permet de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement ce site sans aucune connaissance du back-end AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 96%
+source-wordcount: '1029'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Ce parcours de documentation vous guide à travers les fonctionnalités en vidé
 
 ## Parcours de documentation AEM {#documentation-journeys}
 
-Un [Parcours de documentation](/help/journey-documentation/documentation-journeys.md) relie de nombreux sujets et fonctionnalités différents et parfois complexes en aidant le lecteur, parfois débutant dans AEM, à comprendre et à résoudre un problème d’activité du début à la fin, tout en présupposant un minimum de connaissances préalables concernant le sujet ou AEM.
+[Un Parcours de documentation](/help/journey-documentation/documentation-journeys.md) Il relie de nombreux sujets et caractéristiques complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau pour AEM, comprendre et résoudre un problème commercial du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
 
 Les parcours de documentation sont conçus autour des principes de bonne pratique, reposent sur les dernières recherches d’Adobe, sur l’expérience éprouvée de mise en œuvre des consultants Adobe, ainsi que sur les retours de projets clients.
 
@@ -67,7 +67,7 @@ Vous êtes maintenant prêt à commencer votre parcours de création rapide de s
 
 * Si vous faites partie de l’administration d’AEM ou de Cloud Manager, ou si vous jouez à la fois les rôles de développement front-end et d’administration, ou encore si vous souhaitez simplement comprendre le processus de bout en bout dans AEM, commencez au début du parcours par [Comprendre Cloud Manager](cloud-manager.md) comme indiqué ci-dessous.
 * Si vous n’êtes responsable que du développement front-end et que vous interagissez avec les administrateurs AEM et Cloud Manager, vous pouvez passer directement à [Récupération des informations d’accès au référentiel Git](retrieve-access.md) pour accéder au référentiel Git d’AEM et commencer la personnalisation.
-* Si vous comprenez déjà qu’AEM Sites et Cloud Manager fonctionnent ensemble et que vous souhaitez commencer directement la configuration, vous pouvez [passer directement à la création d’un site à partir d’un modèle](create-site.md).
+* Si vous comprenez déjà qu’AEM Sites et Cloud Manager fonctionnent ensemble et que vous souhaitez commencer directement la configuration, vous pouvez [passez directement à la création d’un site à partir d’un modèle.](create-site.md)
 
 ## Ressources supplémentaires {#additional-resources}
 

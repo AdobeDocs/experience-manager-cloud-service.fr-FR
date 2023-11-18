@@ -2,10 +2,10 @@
 title: Récupérer des informations d’accès au référentiel Git
 description: Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 93%
+source-wordcount: '880'
+ht-degree: 83%
 
 ---
 
@@ -24,7 +24,7 @@ Si vous détenez également le rôle d’administration Cloud Manager ou AEM et
 
 Dans cet article, nous allons passer à lʼétape suivante et découvrir comment le développeur front-end utilise l’accès à Cloud Manager pour récupérer les informations d’identification lui permettant d’accéder au référentiel Git d’AEM.
 
-Les étapes suivantes ont été vues : création dʼun site sur la base dʼun modèle, configuration dʼun pipeline et intégration du développeur, qui dispose de toutes les informations nécessaires. A présent, cet article ne va plus traiter du rôle des administrateurs mais du rôle du développeur front-end.
+Maintenant qu’un site est créé à partir d’un modèle, il existe un pipeline configuré, le développeur front-end est intégré et contient toutes les informations dont il a besoin, cet article déplace la perspective des administrateurs et exclusivement vers le rôle de développeur front-end.
 
 ## Objectif {#objective}
 
@@ -78,7 +78,7 @@ Si vous n’avez pas reçu cet e-mail, contactez l’administration Cloud Manag
 
 1. Connectez-vous à Adobe Experience Cloud à [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) ou cliquez sur le lien fourni dans l’e-mail de bienvenue.
 
-1. Cloud Manager répertorie les différents programmes disponibles. Appuyez ou cliquez sur celui auquel vous devez accéder, comme indiqué par l’administrateur Cloud Manager. S’il s’agit de votre premier projet front-end pour AEMaaCS, vous nʼavez probablement quʼun seul programme disponible.
+1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celle à laquelle vous devez accéder, comme fourni par l’administrateur de Cloud Manager. S’il s’agit de votre premier projet front-end pour AEMaaCS, vous nʼavez probablement quʼun seul programme disponible.
 
    ![Sélection d’un programme dans Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -88,7 +88,7 @@ Vous voyez maintenant un aperçu de votre programme. Votre page sera différente
 
 ## Récupération des informations d’accès au référentiel {#repo-access}
 
-1. Dans la section **Pipelines** de la page Cloud Manager, appuyez ou cliquez sur le bouton **Accéder aux informations sur le référentiel**.
+1. Dans le **Pipelines** de la page Cloud Manager , sélectionnez la variable **Accès aux informations sur le référentiel** bouton .
 
    ![Pipelines](assets/pipelines-repo-info.png)
 
@@ -96,13 +96,13 @@ Vous voyez maintenant un aperçu de votre programme. Votre page sera différente
 
    ![Informations du référentiel](assets/repo-info.png)
 
-1. Appuyez ou cliquez sur le bouton **Générer un mot de passe** pour créer un mot de passe.
+1. Sélectionnez la variable **Générer un mot de passe** pour créer un mot de passe.
 
 1. Enregistrez le mot de passe généré dans un gestionnaire de mots de passe sécurisé. Le mot de passe ne sera plus jamais affiché.
 
 1. Copiez également les champs **Nom d’utilisateur** et **Ligne de commande Git**. Utilisez ces informations plus tard pour accéder au référentiel.
 
-1. Appuyez ou cliquez sur **Fermer**.
+1. Sélectionner **Fermer**.
 
 ## Prochaines étapes {#what-is-next}
 

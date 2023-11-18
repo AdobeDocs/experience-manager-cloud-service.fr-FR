@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 94%
+source-wordcount: '443'
+ht-degree: 69%
 
 ---
 
@@ -24,13 +24,13 @@ Pour modifier les métadonnées :
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Dans l’interface utilisateur d’Assets, sélectionnez la ressource et cliquez/appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
+   * Dans l’interface utilisateur d’Assets, sélectionnez la ressource et sélectionnez le **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
    * À partir de la miniature de la ressource, sélectionnez l’action rapide **[!UICONTROL Afficher les propriétés]**.
-   * Sur la page de la ressource, cliquez/appuyez sur **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
+   * Sur la page Ressource, sélectionnez **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
 
-   La page de la ressource affiche toutes les métadonnées de celle-ci. Ces métadonnées sont automatiquement extraites lorsqu’elles sont chargées (assimilées) dans Experience Manager Assets.
+   La page Ressource affiche les métadonnées de la ressource. Ces métadonnées sont automatiquement extraites lorsqu’elles sont chargées (assimilées) dans Experience Manager Assets.
 
-1. Apportez des modifications aux métadonnées dans les différents onglets, le cas échéant. Une fois que vous avez terminé, cliquez/appuyez sur **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer vos modifications. Cliquez/appuyez sur **[!UICONTROL Fermer]** pour revenir à l’interface web d’Assets.
+1. Apportez les modifications nécessaires aux métadonnées sous les différents onglets. Une fois l’opération terminée, sélectionnez **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer vos modifications. Sélectionner **[!UICONTROL Fermer]** pour revenir à l’interface web d’Assets.
 
    >[!NOTE]
    >
@@ -49,10 +49,10 @@ Pour en savoir plus sur la modification d’un schéma de métadonnées, consult
 Vous pouvez ajouter vos propres espaces de noms à Experience Manager. Tout comme il existe des espaces de noms prédéfinis tels que cq, jcr et sling, vous pouvez disposer d’un espace de noms pour le traitement des données XML et des métadonnées de votre référentiel.
 
 1. Accédez à la page d’administration du type de nœud *https://&lt;hôte>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. Cliquez ou appuyez sur **[!UICONTROL Espaces de noms]** en haut de la page. La page d’administration des espaces de noms s’affiche dans une fenêtre.
+1. Sélectionner **[!UICONTROL Espaces de noms]** en haut de la page. La page d’administration des espaces de noms s’affiche dans une fenêtre.
 
-1. Pour ajouter un espace de noms, cliquez ou appuyez sur **[!UICONTROL Nouveau]** en bas de la page.
-1. Spécifiez un espace de noms personnalisé dans la convention des espaces de noms XML (spécifiez l’identifiant sous la forme d’un URI et d’un préfixe), puis cliquez ou appuyez sur **[!UICONTROL Enregistrer]**.
+1. Pour ajouter un espace de noms, sélectionnez **[!UICONTROL Nouveau]** en bas.
+1. Spécifiez un espace de noms personnalisé dans la convention de l’espace de noms XML (indiquez l’identifiant sous la forme d’un URI et d’un préfixe associé pour l’identifiant), puis sélectionnez **[!UICONTROL Enregistrer]**.
 
 **Voir également**
 

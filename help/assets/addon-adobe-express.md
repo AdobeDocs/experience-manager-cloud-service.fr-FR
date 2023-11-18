@@ -1,9 +1,10 @@
 ---
 title: Module complémentaire AEM Assets pour Adobe Express
 description: Le module complémentaire AEM Assets pour Adobe Express vous permet d’accéder directement aux ressources stockées dans AEM Assets depuis l’interface utilisateur d’Adobe Express.
-source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
+exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -64,4 +65,3 @@ Après avoir incorporé les modifications appropriées dans la zone de travail e
 1. Cliquez sur **[!UICONTROL Télécharger]** pour charger la ressource dans AEM Assets.
 
    ![Enregistrement des ressources dans AEM](assets/aem-assets-add-on-save.png)
-

@@ -2,10 +2,10 @@
 title: Comment intégrer DocuSign à un formulaire adaptatif ?
 description: Découvrez comment utiliser DocuSign avec un formulaire adaptatif pour collecter des signatures électroniques.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -186,7 +186,7 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
 1. Appuyez sur **[!UICONTROL Créer.]** Un formulaire adaptatif prenant en charge les signatures est créé. Vous pouvez y ajouter vos champs [!DNL DocuSign] et envoyer le formulaire pour signature.
 1. Ouvrez le formulaire adaptatif en mode d’édition. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur **[!UICONTROL Conteneur de formulaires]** et appuyez sur ![Configurer](assets/configure-icon.svg).
 
-1. Dans la section **[!UICONTROL Envoi]**, sélectionnez **[!UICONTROL Envoyer avec les signatures électroniques DocuSign]** dans la liste déroulante **[!UICONTROL Action d’envoi]**.
+1. Dans le **[!UICONTROL Envoi]** , sélectionnez **[!UICONTROL Envoyer avec les signatures électroniques DocuSign]** de la **[!UICONTROL Action Envoyer]** liste déroulante.
 
 1. Dans la section **[!UICONTROL Configuration d’action]**, appuyez sur **[!UICONTROL Ajouter]** pour ajouter un destinataire et indiquer son adresse e-mail. Appuyer de nouveau sur **[!UICONTROL Ajouter]** pour ajouter d’autres destinataires.
 
@@ -211,7 +211,7 @@ Pour utiliser [!DNL DocuSign] dans un formulaire adaptatif existant :
 
 1. Ouvrez le formulaire adaptatif en mode d’édition. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur **[!UICONTROL Conteneur de formulaires]** et appuyez sur ![Configurer](assets/configure-icon.svg).
 
-1. Dans la section **[!UICONTROL Envoi]**, sélectionnez **[!UICONTROL Envoyer avec les signatures électroniques DocuSign]** dans la liste déroulante **[!UICONTROL Action d’envoi]**.
+1. Dans le **[!UICONTROL Envoi]** , sélectionnez **[!UICONTROL Envoyer avec les signatures électroniques DocuSign]** de la **[!UICONTROL Action Envoyer]** liste déroulante.
 
 1. Dans la section **[!UICONTROL Configuration d’action]**, appuyez sur **[!UICONTROL Ajouter]** pour ajouter un destinataire et indiquer son adresse e-mail. Appuyer de nouveau sur **[!UICONTROL Ajouter]** pour ajouter d’autres destinataires.
 

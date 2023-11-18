@@ -2,10 +2,10 @@
 title: Présentation de l’installation du module complémentaire de démonstration de référence
 description: Découvrez Cloud Manager et comment il est utilisé pour installer le module complémentaire.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager est utilisé pour administrer les ressources cloud qui prennent e
 
 >[!TIP]
 >
->Si vous souhaitez en savoir plus sur Cloud Manager, reportez-vous à la section [Ressources supplémentaires](#additional-resources) de cet article qui contient des liens vers des informations complémentaires.
+>Si vous souhaitez en savoir plus sur Cloud Manager, voir [Ressources supplémentaires](#additional-resources) pour obtenir des liens vers d’autres informations.
 
 ### Programmes {#programs}
 

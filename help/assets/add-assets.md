@@ -4,7 +4,7 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 5dfcf1c5484b978c1a778eb99a09421533234734
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 98%
@@ -175,7 +175,7 @@ Pour configurer l’outil dʼimportation en bloc, procédez comme suit :
 
 1. Indiquez un titre pour la configuration de lʼimportation en bloc dans le champ **[!UICONTROL Titre]**.
 
-1. Sélectionnez le type de source de données dans la liste déroulante **[!UICONTROL Importer la source]**.
+1. Sélectionnez le type de source de données dans la **[!UICONTROL Importer la source]** liste déroulante.
 
 1. Indiquez les valeurs permettant de créer une connexion avec la source de données. Par exemple, si vous sélectionnez **Stockage Azure Blob** comme source de données, spécifiez les valeurs du compte de stockage Azure, du conteneur dʼobjets blob Azure et de la clé d’accès Azure.
 

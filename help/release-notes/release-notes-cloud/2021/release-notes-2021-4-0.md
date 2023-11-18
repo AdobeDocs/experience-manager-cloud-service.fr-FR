@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 89%
+source-wordcount: '1533'
+ht-degree: 87%
 
 ---
 
@@ -83,7 +83,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Lorsqu’une sélection est effectuée dans la page Propriétés pour mettre à jour les métadonnées, l’interface tarde à répondre lorsque de nombreuses options sont fournies par le schéma. (CQ-4318538)
 
-* Lors de la mise à jour et de l’enregistrement de la valeur de métadonnées dans un champ de texte d’une seule ligne, les valeurs du menu déroulant sont supprimées, même si les modifications sont désactivées dans le menu déroulant. (CQ-4317077)
+* Lors de la mise à jour et de l’enregistrement de la valeur de métadonnées dans un champ de texte d’une seule ligne, les valeurs du menu de liste déroulante sont supprimées, même si les modifications sont désactivées dans le menu de liste déroulante. (CQ-4317077)
 
 * Vous pouvez utiliser des points de suspension comme annotation pour passer en revue les ressources. Lorsqu’une petite ellipse est utilisée, elle chevauche le numéro de l’annotation dans la version imprimée. (CQ-4316792)
 

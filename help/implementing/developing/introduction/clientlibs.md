@@ -2,17 +2,17 @@
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2552'
-ht-degree: 98%
+source-wordcount: '2551'
+ht-degree: 96%
 
 ---
 
 
 # Utilisation des bibliothèques côté client dans AEM as a Cloud Service {#using-client-side-libraries}
 
-Les expériences digitales reposent largement sur un traitement côté client piloté par un code JavaScript et CSS complexe. Les bibliothèques côté client (clientlibs) vous permettent d’organiser et de stocker de manière centrale ces bibliothèques côté client dans le référentiel. Associée au [processus de génération frontale dans l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr), la gestion de votre code frontal pour votre projet AEM devient simple.
+Les expériences digitales reposent largement sur un traitement côté client piloté par un code JavaScript et CSS complexe. Les bibliothèques côté client (clientlibs) vous permettent d’organiser et de stocker de manière centrale ces bibliothèques côté client dans le référentiel. Associée au [processus de génération front-end dans l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr), la gestion de votre code front-end pour votre projet AEM devient simple.
 
 Les avantages de l’utilisation de bibliothèques clientlibs dans AEM incluent les suivants :
 
@@ -33,7 +33,7 @@ Les sites requièrent du code JavaScript et CSS, ainsi que des ressources statiq
 
 AEM collecte le CSS et code JavaScript du site dans un seul fichier, à un emplacement central, afin de s’assurer qu’une seule copie d’une ressource est incluse dans la sortie HTML. Cela optimise l’efficacité de la diffusion et permet à ces ressources d’être conservées de façon centralisée dans le référentiel par le biais d’un proxy, en assurant la sécurité de l’accès.
 
-## Développement frontal pour AEM as a Cloud Service {#fed-for-aemaacs}
+## Développement front-end pour AEM as a Cloud Service {#fed-for-aemaacs}
 
 Toutes les ressources JavaScript, CSS et autres ressources front-end doivent être conservées dans le [module ui.frontend de l’archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) La flexibilité de l’archétype vous permet d’utiliser vos outils web modernes de choix pour créer et gérer ces ressources.
 
@@ -63,8 +63,8 @@ Si le dossier de bibliothèques clientes contient un ou plusieurs fichiers sourc
 
 Les dossiers de bibliothèques clientes contiennent les éléments suivants :
 
-* Les fichiers sources JS et/ou CSS
-* Les ressources statiques prenant en charge les styles CSS, telles que les icônes, les polices web, etc.
+* Les fichiers sources JS et/ou CSS 
+* Ressources statiques prenant en charge les styles CSS, telles que les icônes, les polices web, etc.
 * Un fichier `js.txt` et/ou un fichier `css.txt` qui identifie les fichiers sources à fusionner dans les fichiers JS et/ou CSS générés
 
 ![Architecture de la bibliothèque cliente](assets/clientlib-architecture.drawio.png)
@@ -90,7 +90,7 @@ Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, u
 1. Si vous devez gérer des ressources statiques, créez un sous-dossier nommé `resources` sous le dossier de bibliothèques clientes.
    * Si vous stockez des ressources statiques ailleurs que sous le dossier `resources`, ils ne peuvent pas être référencés sur une instance de publication.
 1. Ajoutez les fichiers sources dans le dossier de bibliothèques.
-   * Cela est généralement effectué par le processus de création frontale de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr).
+   * Cela est généralement effectué par le processus de création front-end de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr).
    * Si vous le souhaitez, vous pouvez organiser les fichiers sources dans des sous-dossiers.
 1. Sélectionnez le dossier de bibliothèques clientes et cliquez ensuite sur **Créer > Créer un fichier**.
 1. Dans la zone du nom de fichier, saisissez l’un des noms suivants et cliquez ensuite sur OK :
@@ -170,7 +170,7 @@ Le composant `dumplibs` comprend un sélecteur de test qui affiche le code sourc
 
 ## Autres fonctionnalités du dossier de bibliothèque cliente {#additional-features}
 
-D’autres fonctionnalités sont prises en charge par les dossiers de bibliothèque cliente dans AEM. Toutefois, ces fonctionnalités ne sont pas requises dans AEM as a Cloud Service et, par conséquent, leur utilisation est découragée. À des fins d’exhaustivité, elles sont répertoriées ici.
+Il existe plusieurs autres fonctionnalités prises en charge par les dossiers de bibliothèques clientes dans AEM. Toutefois, ces fonctionnalités ne sont pas requises dans AEM as a Cloud Service et, par conséquent, leur utilisation est découragée. À des fins d’exhaustivité, elles sont répertoriées ici.
 
 >[!WARNING]
 >
@@ -339,7 +339,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Pour plus d’informations sur les options GCC, consultez la [documentation de GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Pour plus d’informations sur les options GCC, voir [Documentation GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Définition de l’outil de minification par défaut du système {#set-system-default-minifier}
 

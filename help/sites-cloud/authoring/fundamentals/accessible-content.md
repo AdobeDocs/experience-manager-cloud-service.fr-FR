@@ -2,10 +2,10 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '13861'
-ht-degree: 100%
+source-wordcount: '13859'
+ht-degree: 99%
 
 ---
 
@@ -110,7 +110,7 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 >[!NOTE]
 >
->Le niveau de contraste entre l’arrière-plan et le texte au premier plan doit être suffisant. Cela est décrit de manière plus détaillée à la section [Contraste (minimum) (1.4.3)](#contrast-minimum).
+Le niveau de contraste entre l’arrière-plan et le texte au premier plan doit être suffisant. Cela est décrit de manière plus détaillée à la section [Contraste (minimum) (1.4.3)](#contrast-minimum).
 
 #### En savoir plus – Contenu non textuel (1.1.1) {#more-information-non-text-content}
 
@@ -158,7 +158,7 @@ Fournir ces informations dans un format différent, tel que du texte (ou de l’
 
 >[!NOTE]
 >
->Si le contenu audio ou vidéo est fourni comme alternative à un contenu existant, mais dans un autre format, sur la même page web, une autre alternative peut ne pas s’avérer nécessaire.
+Si le contenu audio ou vidéo est fourni comme alternative à un contenu existant, mais dans un autre format, sur la même page web, une autre alternative peut ne pas s’avérer nécessaire.
 >
 Les règles, décrites par la section [Présentation de WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html), fournissent d’autres informations.
 
@@ -166,7 +166,7 @@ L’insertion d’un contenu multimédia dans vos pages web AEM est similaire à
 
 >[!NOTE]
 >
->Si vous utilisez un contenu multimédia informatif, vous devez également créer des liens vers les équivalents. Par exemple, pour inclure une transcription textuelle, créez une page HTML où afficher la transcription, puis ajoutez un lien en regard ou en dessous du contenu audio.
+Si vous utilisez un contenu multimédia informatif, vous devez également créer des liens vers les équivalents. Par exemple, pour inclure une transcription textuelle, créez une page HTML où afficher la transcription, puis ajoutez un lien en regard ou en dessous du contenu audio.
 
 #### En savoir plus – Contenu seulement audio ou vidéo (pré-enregistré) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
@@ -335,7 +335,7 @@ Veillez à ce que vos pages web aient la structure appropriée en utilisant, le 
 
   >[!NOTE]
   >
-  >Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau** (voir [Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+  Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau** (voir [Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
   Pour ouvrir la boîte de dialogue **Tableau** dans laquelle vous pouvez sélectionner l’onglet **Propriétés du tableau** :
 
@@ -350,7 +350,7 @@ Veillez à ce que vos pages web aient la structure appropriée en utilisant, le 
 
      >[!NOTE]
      >
-     >Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
+     Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
      >
      * `<b>` pour `<strong>`
      * `<i>` pour `<em>`
@@ -361,7 +361,7 @@ Veillez à ce que vos pages web aient la structure appropriée en utilisant, le 
 
   >[!NOTE]
   >
-  >L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
+  L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
 
   Par exemple, dans le tableau ci-dessous, les attributs header et id correspondent de façon à créer une association de programmation pour les utilisateurs de technologies d’assistance.
 
@@ -396,7 +396,7 @@ Veillez à ce que vos pages web aient la structure appropriée en utilisant, le 
 
   >[!NOTE]
   >
-  >Cette fonctionnalité n’est pas disponible immédiatement dans une installation standard. Il faut pour cela configurer l’éditeur de texte enrichi, les règles de HTML et le sérialiseur.
+  Cette fonctionnalité n’est pas disponible immédiatement dans une installation standard. Il faut pour cela configurer l’éditeur de texte enrichi, les règles de HTML et le sérialiseur.
 
 #### En savoir plus – Informations et relations (1.3.1) {#more-information-info-and-relationships}
 
@@ -436,7 +436,7 @@ De la même manière, les informations qui impliquent de distinguer différents 
 
 >[!NOTE]
 >
->Pour connaître les conditions requises en rapport avec les alternatives aux couleurs, voir [Utilisation de la couleur](#use-of-color).
+Pour connaître les conditions requises en rapport avec les alternatives aux couleurs, voir [Utilisation de la couleur](#use-of-color).
 
 #### Comment procéder – Caractéristiques sensorielles (1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -447,7 +447,7 @@ Assurez-vous que toutes les informations qui reposent sur les caractéristiques 
 
 >[!NOTE]
 >
->L’utilisation de termes descriptifs est acceptable s’ils ont une signification dans un contexte non visuel. Par exemple, les termes *ci-dessus* et *ci-dessous* sont généralement acceptables, puisqu’ils impliquent respectivement le contenu juste avant ou après un élément de contenu particulier ; ils restent donc significatifs si le contenu est lu à haute voix.
+L’utilisation de termes descriptifs est acceptable s’ils ont une signification dans un contexte non visuel. Par exemple, les termes *ci-dessus* et *ci-dessous* sont généralement acceptables, puisqu’ils impliquent respectivement le contenu juste avant ou après un élément de contenu particulier ; ils restent donc significatifs si le contenu est lu à haute voix.
 
 #### En savoir plus – Caractéristiques sensorielles (1.3.3) {#more-information-sensory-characteristics}
 
@@ -466,7 +466,7 @@ Assurez-vous que toutes les informations qui reposent sur les caractéristiques 
 
 >[!NOTE]
 >
->Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées à la règle [Adaptable (1.3)](#adaptable), comme l’accès à la couleur par programme informatique et les autres formes de codage de la présentation visuelle.
+Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées à la règle [Adaptable (1.3)](#adaptable), comme l’accès à la couleur par programme informatique et les autres formes de codage de la présentation visuelle.
 
 #### Objectif – Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
 
@@ -476,7 +476,7 @@ Par exemple, une personne ayant un daltonisme rouge-vert ne peut pas distinguer 
 
 En outre, les personnes qui utilisent des navigateurs de texte seul, des appareils d’affichage monochromes ou qui visualisent une impression en noir et blanc de la page ne peuvent pas percevoir les couleurs.
 
-De plus, l’état *sélectionné* d’un élément d’interface (par exemple, les onglets, boutons bascule, etc.) doit également être transmis d’une autre manière que par la couleur, et au-delà de la seule présentation visuelle. Pour ces éléments, l’utilisation supplémentaire de modèles, de formes et d’informations de programmation est utile pour créer une expérience utilisateur pleinement inclusive non limitée à un sens spécifique.
+De plus, l’état *sélectionné* d’un élément d’interface (par exemple, les onglets, boutons (bascule), etc.) doit également être transmis d’une autre manière que par la couleur, et au-delà de la seule présentation visuelle. Pour ces éléments, l’utilisation supplémentaire de modèles, de formes et d’informations de programmation est utile pour créer une expérience utilisateur pleinement inclusive non limitée à un sens spécifique.
 
 #### Comment procéder – Utilisation de la couleur (1.4.1) {#how-to-meet-use-of-color}
 
@@ -505,7 +505,7 @@ Il est donc important que l’utilisateur ou l’utilisatrice puisse désactiver
 
 >[!NOTE]
 >
->La maîtrise du volume englobe la possibilité de réduire le son à zéro.
+La maîtrise du volume englobe la possibilité de réduire le son à zéro.
 
 #### Comment procéder – Commande audio (1.4.2) {#how-to-meet-audio-control}
 
@@ -527,7 +527,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
   >[!NOTE]
   >
-  >Pour plus d’informations, consultez [Présentation du contraste non textuel](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) afin de vous assurer que les personnes chargées de la création de contenu comprennent les autres exigences relatives aux éléments non textuels (notamment les icônes et les éléments d’interface).
+  Pour plus d’informations, consultez [Présentation du contraste non textuel](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) afin de vous assurer que les personnes chargées de la création de contenu comprennent les autres exigences relatives aux éléments non textuels (notamment les icônes et les éléments d’interface).
 
 #### Objectif – Contraste (minimum) (1.4.3) {#purpose-contrast-minimum}
 
@@ -538,7 +538,7 @@ Les personnes avec certaines déficiences visuelles peuvent ne pas être en mesu
 
 >[!NOTE]
 >
->Le texte utilisé uniquement à des fins décoratives est exclu de ce critère de succès.
+Le texte utilisé uniquement à des fins décoratives est exclu de ce critère de succès.
 
 #### Comment procéder – Contraste (minimum) (1.4.3) {#how-to-meet-contrast-minimum}
 
@@ -550,13 +550,13 @@ Veillez à ce que le texte soit suffisamment contrasté par rapport à son arri�
 
 >[!NOTE]
 >
->N’oubliez pas que les polices peuvent différer en matière de rendu du dimensionnement PT/PX/EM équivalent.
+N’oubliez pas que les polices peuvent différer en matière de rendu du dimensionnement PT/PX/EM équivalent.
 >
 Pour la sélection des polices et du dimensionnement appropriés du contenu web, il est recommandé de faire preuve de bon sens et de privilégier la lisibilité et la convivialité.
 
 >[!NOTE]
 >
->Effectuez une recherche web sur les expressions suivantes pour trouver des outils qui peuvent vous aider à effectuer une conversion vers d’autres unités :
+Effectuez une recherche web sur les expressions suivantes pour trouver des outils qui peuvent vous aider à effectuer une conversion vers d’autres unités :
 >
 * Calculateur de Px à Em <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
 * Conversion des tailles de polices : pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
@@ -602,7 +602,7 @@ En plus de suivre les directives données dans la section [Comprendre le critèr
 
 >[!NOTE]
 >
->Les logotypes (texte faisant partie d’un logo ou d’un nom de marque) sont considérés comme essentiels.
+Les logotypes (texte faisant partie d’un logo ou d’un nom de marque) sont considérés comme essentiels.
 
 #### Objectif – Texte sous forme d’image (1.4.5) {#purpose-images-of-text}
 
@@ -671,7 +671,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
 [Règle 2.2 – Accorder un temps suffisant : donner aux utilisateurs suffisamment de temps pour lire et utiliser le contenu.](https://www.w3.org/TR/WCAG/#enough-time)
 
-Il s’agit de s’assurer que les utilisateurs disposent d’un temps suffisant pour lire et agir.
+Il s’agit de s’assurer que les utilisateurs disposent de suffisamment de temps pour lire et agir.
 
 ### Réglage du minutage (2.2.1)  {#timing-adjustable}
 
@@ -738,7 +738,7 @@ Selon la nature du contenu, vous pouvez appliquer une ou plusieurs des suggestio
 
 >[!NOTE]
 >
->Comme tout contenu qui ne remplit pas ce critère de succès peut interférer avec la capacité de l’utilisateur ou de l’utilisatrice à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour remplir d’autres critères de réussite ou non) doit remplir ce critère de succès. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG/#cc5).
+Comme tout contenu qui ne remplit pas ce critère de succès peut interférer avec la capacité de l’utilisateur ou de l’utilisatrice à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour remplir d’autres critères de réussite ou non) doit remplir ce critère de succès. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG/#cc5).
 
 #### Objectif – Pas plus de trois flashs ou sous le seuil critique (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -865,7 +865,7 @@ John Smith's publications
 
 >[!NOTE]
 >
->L’extrait de code ci-dessus est une illustration. Il est recommandé d’utiliser le composant **Image**.
+L’extrait de code ci-dessus est une illustration. Il est recommandé d’utiliser le composant **Image**.
 
 Bien qu’il soit conseillé de fournir un texte de lien qui identifie l’objectif du lien sans avoir besoin de contexte supplémentaire, ce n’est pas toujours possible. Il est possible d’utiliser des liens sans contexte dans les cas suivants. Un certain nombre d’exemples HTML figurent dans la section [Comprendre le critère de succès 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
@@ -983,7 +983,7 @@ Dans AEM, la langue par défaut de la page est définie lors de la création de 
 
 >[!NOTE]
 >
->AEM offre des fonctions de réglage supplémentaires pour les variations d’une langue racine ; par exemple, l’anglais américain (en-us), l’anglais britannique (en-gb) et l’anglais canadien (en-ca). Ce niveau de détail est souvent superflu pour les technologies d’assistance, même s’il est utile pour les variantes régionales du contenu des pages.
+AEM offre des fonctions de réglage supplémentaires pour les variations d’une langue racine ; par exemple, l’anglais américain (en-us), l’anglais britannique (en-gb) et l’anglais canadien (en-ca). Ce niveau de détail est souvent superflu pour les technologies d’assistance, même s’il est utile pour les variantes régionales du contenu des pages.
 
 #### En savoir plus – Langue de la page (3.1.1) {#more-information-language-of-page}
 
@@ -1019,7 +1019,7 @@ L’attribut `lang` peut être utilisé pour identifier les changements de langu
 
 >[!NOTE]
 >
->Les attributs blockquote ne sont pas pris en charge dans une instance prête à l’emploi. Il est toutefois possible de développer un composant personnalisé pour prendre cette fonction en charge.
+Les attributs blockquote ne sont pas pris en charge dans une instance prête à l’emploi. Il est toutefois possible de développer un composant personnalisé pour prendre cette fonction en charge.
 
 De même, le navigateur peut restituer correctement un mot ou une expression emprunté peu courant si l’élément `span` est utilisé comme suit :
 
@@ -1029,7 +1029,7 @@ De même, le navigateur peut restituer correctement un mot ou une expression emp
 
 >[!NOTE]
 >
->Il n’est pas nécessaire d’adhérer à ce critère de réussite pour les noms ou villes dans différentes langues ou lors de l’utilisation de mots ou d’expressions empruntés qui sont devenus courants dans la langue par défaut (tel que *diktat* en français).
+Il n’est pas nécessaire d’adhérer à ce critère de réussite pour les noms ou villes dans différentes langues ou lors de l’utilisation de mots ou d’expressions empruntés qui sont devenus courants dans la langue par défaut (tel que *diktat* en français).
 
 Pour ajouter l’élément span, avec un langage approprié, vous pouvez modifier manuellement votre balisage HTML en mode d’édition source de l’éditeur de texte enrichi afin qu’il se lise comme ci-dessus. Vous pouvez également inclure l’attribut `lang` dans l’éditeur de texte enrichi par un administrateur système (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 

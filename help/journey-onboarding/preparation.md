@@ -2,10 +2,10 @@
 title: Préparation à l’intégration
 description: Avant que le processus d’intégration ne commence, l’administrateur système doit comprendre un certain nombre d’étapes préparatoires avant de se connecter au système.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 96%
+source-wordcount: '760'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Maintenant que vous savez ce qui vous attend dans le processus d’intégration 
 
 AEM as a Cloud Service est un outil puissant et flexible qui propose de nombreuses solutions, modules complémentaires et modèles de déploiement. La solution que votre entreprise est autorisée à utiliser est définie dans votre contrat avec Adobe. Cette information vous permet de démarrer le processus d’intégration.
 
-Après avoir lu ce document, vous comprendrez
+Après avoir lu ce document, vous devez comprendre
 
 * Ce que votre contrat avec Adobe définit.
 * Quelles sont les dispositions d’Adobe.
@@ -34,7 +34,7 @@ Cette vidéo résume le processus d’intégration décrit dans ce parcours et e
 
 ## Votre contrat {#contract}
 
-L’intégration à AEM as a Cloud Service commence par un contrat signé entre votre entreprise et Adobe. En effet, le contrat spécifie un certain nombre d’accords importants entre Adobe et votre entreprise, tels que :
+L’intégration à AEM as a Cloud Service commence par un contrat signé entre votre entreprise et Adobe. Cela est dû au fait que le contrat spécifie plusieurs accords importants entre l’Adobe et votre organisation, tels que :
 
 * Les solutions et modules complémentaires que votre entreprise peut utiliser.
 * Le nombre et les types d’environnements auxquels vous pouvez accéder
@@ -73,7 +73,7 @@ L’objectif de l’appel est de vous donner l’opportunité de poser des quest
 
 Une fois le processus de configuration de l’environnement terminé, l’administrateur système client désigné dans le contrat reçoit un e-mail de bienvenue confirmant que l’accès à Adobe Experience Cloud lui a été accordé. Si vous lisez ce parcours de documentation, cette personne est probablement vous !
 
-L’e-mail contient des informations détaillées sur la prise en main des services Experience Cloud et du portail en libre-service Cloud Manager. De plus, l’e-mail contient des informations importantes, telles que la façon d’accéder aux ressources d’assistance, aux forums, aux questions fréquentes, etc. La liste des ressources fournies dans l’e-mail contient également des informations sur la façon d’accéder à vos environnements cloud AEM.
+L’e-mail contient des informations détaillées sur la prise en main des services Experience Cloud et du portail en libre-service Cloud Manager. Il contient également des informations importantes, telles que les ressources d’assistance, les forums, les questions fréquentes, etc. La liste des ressources fournies dans l’e-mail contient également des informations sur la façon d’accéder à vos environnements cloud AEM.
 
 >[!TIP]
 >

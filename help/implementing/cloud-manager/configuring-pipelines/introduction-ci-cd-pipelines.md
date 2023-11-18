@@ -3,10 +3,10 @@ title: Pipelines CI/CD
 description: Découvrez les pipelines CI/CD de Cloud Manager et comment les utiliser pour déployer votre code efficacement.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 92%
+source-wordcount: '1418'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Ceux-ci sont décrits en détail plus loin dans ce document.
 
 ### Présentation des pipelines CI-CD dans Cloud Manager {#understand-pipelines}
 
-Le tableau suivant récapitule tous les pipelines disponibles dans Cloud Manager et leur utilisation.
+Le tableau suivant résume les pipelines disponibles dans Cloud Manager et leur utilisation.
 
 | Type de pipeline | Déploiement ou qualité du code | Code source | Objectif | Remarques |
 |--- |--- |--- |---|---|
@@ -115,7 +115,7 @@ Pour savoir comment configurer des pipelines full stack, reportez-vous aux docum
 
 Avec un pipeline de configuration, vous pouvez configurer et déployer des règles de filtrage du trafic, y compris des règles WAF, en quelques minutes.
 
-Consultez le document [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
+Voir [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
 
 ### Configuration des pipelines de configuration {#configure-config-deployment}
 

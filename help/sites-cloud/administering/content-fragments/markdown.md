@@ -3,13 +3,13 @@ title: Markdown
 description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu pour la création de pages et la diffusion headless.
 feature: Content Fragments
 role: User
-source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
+exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '559'
 ht-degree: 65%
 
 ---
-
 
 # Markdown {#markdown}
 
@@ -17,7 +17,7 @@ Quand vous êtes [création](/help/sites-cloud/administering/content-fragments/a
 
 ![Champ de texte multiligne Markdown dans l’éditeur](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
-Vous pouvez définir :
+Vous pouvez définir :
 
 * [Notation d’en-tête](/help/sites-cloud/administering/content-fragments/markdown.md#heading-notation)
 * [Paragraphes et sauts de ligne](/help/sites-cloud/administering/content-fragments/markdown.md#paragraphs-and-line-breaks)
@@ -31,7 +31,7 @@ Vous pouvez définir :
 
 ## Notation d’en-tête {#heading-notation}
 
-Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Un hashtag (#) est utilisé pour un H1, deux hashtags (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
+Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Une balise de hachage (#) est utilisée pour un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
 
     `## This is an H2`
 

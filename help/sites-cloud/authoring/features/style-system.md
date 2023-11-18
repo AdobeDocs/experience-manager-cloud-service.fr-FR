@@ -2,10 +2,10 @@
 title: Système de style
 description: Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 98%
+source-wordcount: '1317'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Cela évite d’avoir à développer un composant personnalisé pour chaque styl
 
 ## Cas d’utilisation {#use-case}
 
-Les créateurs et créatrices de modèles doivent non seulement pouvoir configurer le fonctionnement des composants pour les créateurs et créatrices de contenu, mais aussi configurer un certain nombre de variantes visuelles d’un composant.
+Les créateurs de modèles doivent non seulement pouvoir configurer le fonctionnement des composants pour les créateurs de contenu, mais aussi configurer plusieurs variantes visuelles d’un composant.
 
 De même, les créateurs et créatrices de contenu doivent non seulement pouvoir structurer et organiser leur contenu, mais aussi sélectionner la manière dont il est présenté visuellement.
 
@@ -60,10 +60,10 @@ Pour démontrer la fonctionnalité, nous utiliserons comme exemple l’implémen
 
 Les sections suivantes, [En tant qu’auteur de contenu](#as-a-content-author) et [En tant qu’auteur de modèles](#as-a-template-author), décrivent comment tester les fonctionnalités du système de style à l’aide du système de style de WKND.
 
-Si vous souhaitez utiliser le système de style pour vos propres composants, procédez comme suit :
+Si vous souhaitez utiliser le système de style pour vos propres composants, procédez comme suit :
 
 1. Installez le CSS en tant que bibliothèques clientes, comme décrit dans la section [Vue d’ensemble](#overview).
-1. Configurez les classes CSS que vous souhaitez mettre à la disposition des créateurs et créatrices de contenu, comme décrit dans la section [En tant que créateur ou créatrice de modèles](#as-a-template-author).
+1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section . [En tant qu’auteur de modèles](#as-a-template-author).
 1. Les créateurs et créatrices de contenu peuvent alors utiliser les styles comme décrit dans la section [En tant que créateur ou créatrice de contenu](#as-a-content-author).
 
 ### En tant qu’auteur de contenu {#as-a-content-author}
@@ -73,7 +73,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
    ![Système de style pour l’auteur](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Appuyez ou cliquez sur le bouton **Styles** dans la barre d’outils du composant **Liste** pour ouvrir le menu des styles et changer l’apparence du composant.
+1. Sélectionnez la variable **Styles** dans la barre d’outils de la fonction **Liste** pour ouvrir le menu de style et modifier l’aspect du composant.
 
    ![Sélection de styles](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
 ### En tant qu’auteur de modèles {#as-a-template-author}
 
-1. Alors que vous modifiez la page d’accueil de WKND (`http://<host>:<port>/sites.html/content/wknd/language-masters/en`) (en anglais), modifiez le modèle de la page via **Informations sur la page -> Modifier le modèle**.
+1. Lors de la modification de la page d’accueil principale en anglais de WKND à l’adresse `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifiez le modèle de la page via **Informations sur la page > Modifier le modèle**.
 
    ![Modifier le modèle](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -159,4 +159,4 @@ Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 
 Cette capacité à définir des noms de styles est utile pour les composants génériques, tels que le conteneur de mise en page ou le composant Fragment de contenu. Cela permet de leur donner davantage de sens.
 
-Cela permet, par exemple, d’attribuer au conteneur de dispositions des balises comme `<main>`, `<aside>`, `<nav>`, etc.
+Par exemple, il permet d’attribuer une sémantique à un conteneur de mises en page, comme `<main>`, `<aside>`, `<nav>`, etc.

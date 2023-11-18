@@ -4,10 +4,10 @@ description: Découvrez comment préparer le contenu à traduire lors du dévelo
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 98%
+source-wordcount: '751'
+ht-degree: 86%
 
 ---
 
@@ -71,20 +71,20 @@ Pour créer la racine de langue, créez une page, puis utilisez le code de langu
 * `<language-code>` – Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple `en`.
 * `<language-code>_<country-code>` ou `<language-code>-<country-code>` – Le code pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, défini par la norme ISO-3166, par exemple `en_US`, `en_us`, `en-gb`, `en_GB`.
 
-Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. Notez que la propriété **Nom** est utilisée comme nom du nœud de page dans le référentiel et détermine donc le chemin d’accès à la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. La variable **Nom** est utilisée comme nom du noeud de page dans le référentiel et détermine donc le chemin d’accès de la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Accédez aux sites.
-1. Cliquez ou appuyez sur le site pour lequel vous souhaitez créer une copie de langue.
-1. Cliquez ou appuyez sur **Créer** puis sur **Page**.
+1. Sélectionnez le site pour lequel vous souhaitez créer une copie de langue.
+1. Sélectionner **Créer**, puis sélectionnez **Page**.
 
    ![Créer une page](../assets/create-page.png)
 
-1. Sélectionnez le modèle de page, puis cliquez ou appuyez sur **Suivant**.
+1. Sélectionnez le modèle de page, puis sélectionnez **Suivant**.
 1. Dans le champ **Nom**, entrez le code de pays au format `<language-code>` ou `<language-code>_<country-code>`, par exemple `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
 
    ![Création d’une page racine de langue](../assets/create-language-root.png)
 
-1. Cliquez ou appuyez sur **Créer**. Dans la boîte de dialogue de confirmation, cliquez ou appuyez sur **Terminé** pour revenir à la console Sites ou sur **Ouvrir** pour ouvrir la copie de langue.
+1. Sélectionnez **Créer**. Dans la boîte de dialogue de confirmation, sélectionnez l’une des options suivantes : **Terminé** pour revenir à la console Sites, ou **Ouvrir** pour ouvrir la copie de langue.
 
 ## Affichage de le statut des racines de langue {#seeing-the-status-of-language-roots}
 
@@ -94,11 +94,11 @@ AEM contient un rail **Références** qui affiche une liste des racines de langu
 
 Utilisez la vue de procédure suivante pour les copies de langue d’une page à l’aide du [sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
-1. Dans la console de sites, sélectionnez une page du site, puis cliquez ou appuyez sur **Références**.
+1. Dans la console Sites, sélectionnez une page du site, puis sélectionnez **Références**.
 
    ![Ouverture du rail des références](../assets/opening-references-rail.png)
 
-1. Dans le rail des références, cliquez ou appuyez sur **Copies de langue**. Le rail affiche les copies de langue du site web.
+1. Dans le rail de références, sélectionnez **Copies de langue**. Le rail affiche les copies de langue du site web.
 
 ## Copies de langue à plusieurs niveaux {#multiple-levels}
 

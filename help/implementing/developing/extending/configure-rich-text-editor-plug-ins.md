@@ -4,10 +4,10 @@ description: Découvrez comment configurer l’éditeur de texte enrichi [!DNL A
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4299'
-ht-degree: 85%
+source-wordcount: '4298'
+ht-degree: 84%
 
 ---
 
@@ -376,7 +376,7 @@ Les formats de paragraphe sont mis à disposition pour être sélectionnés :
 
    * **Nom** `tag`
    * **Type** `String`
-   * **Valeur** La balise block pour le format, par exemple : p, h1, h2, etc.
+   * **Valeur** Balise block pour le format, par exemple : p, h1, h2, etc.
 
      Vous n’avez pas besoin de saisir les crochets de séparation.
 
@@ -586,9 +586,9 @@ Pour ajouter d’autres dictionnaires, le cas échéant, procédez comme suit.
 >
 Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
 >
-Pour exécuter le vérificateur orthographique, appuyez/cliquez sur le bouton Vérificateur orthographique de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
+Pour exécuter le vérificateur orthographique, sélectionnez le bouton Vérificateur orthographique dans la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
 >
-Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
+Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, cliquez de nouveau sur le bouton Vérificateur orthographique .
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 

@@ -2,10 +2,10 @@
 title: Personnalisation des consoles
 description: Découvrez les différentes options fournies par AEM pour personnaliser les consoles de votre instance de création.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 10%
+source-wordcount: '525'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ AEM fournit des options pour personnaliser les consoles (et la variable [fonctio
 
 Les bibliothèques côté client vous permettent d’étendre l’implémentation par défaut afin d’offrir de nouvelles fonctionnalités, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation avec clientlibs, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, il peut contenir le code requis pour votre composant personnalisé.
 
-Pour plus d’informations sur clientlibs, consultez le document . [Utilisation des bibliothèques côté client sur AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Voir [Utilisation des bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Recouvrements {#overlays}
 
@@ -25,11 +25,11 @@ Les superpositions sont basées sur des définitions de noeud et vous permettent
 
 Les incrustations peuvent être utilisées de différentes manières pour étendre vos consoles AEM. Plusieurs exemples sont présentés dans les sections suivantes.
 
-Pour plus d’informations sur les recouvrements, consultez le document [Recouvrements pour Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Voir aussi [Recouvrements pour Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->Si les options de personnalisation de l’expérience de création vous intéressent, consultez le document . [Personnalisation de la création de pages.](/help/implementing/developing/extending/page-authoring.md)
+>Si les options de personnalisation de l’expérience de création vous intéressent, voir [Personnalisation de la création de pages](/help/implementing/developing/extending/page-authoring.md).
 
 ## Personnalisation de l’affichage par défaut d’une console {#customizing-the-default-view-for-a-console}
 
@@ -117,4 +117,4 @@ Si vous souhaitez insérer des données supplémentaires, vous devez écrire une
 
 Lors de l’utilisation d’une console, l’utilisateur doit souvent effectuer une sélection dans des ressources telles que des pages, des composants ou des ressources. Cela peut prendre la forme d’une liste à partir de laquelle l’auteur doit choisir un élément.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Consultez le document[Personnalisation de la création de pages](/help/implementing/developing/extending/page-authoring.md#filtering-resources) pour plus d’informations.
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Voir [Personnalisation de la création de pages](/help/implementing/developing/extending/page-authoring.md#filtering-resources) pour plus d’informations.

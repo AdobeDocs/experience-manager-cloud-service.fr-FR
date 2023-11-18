@@ -4,10 +4,10 @@ description: Découvrez comment utiliser Dynamic Media afin de diffuser des res
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 95%
+source-wordcount: '397'
+ht-degree: 84%
 
 ---
 
@@ -81,7 +81,7 @@ Les ressources prises en charge par Dynamic Media comprennent `pyramid.tiffs`.
 
 ### Modification des vues des ressources {#asset-views-change}
 
-Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant et arrière en cliquant sur les boutons `+` et `-`. Vous pouvez également cliquer/appuyer pour effectuer un zoom sur une zone spécifique. L’option Revenir à cette version rétablit la version originale, et vous pouvez afficher l’image en mode plein écran en cliquant sur les flèches diagonales. Lorsque Dynamic Media est activé, cette fonctionnalité ressemble à celle-ci :
+Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant ou arrière en cliquant sur le `+` et `-` des boutons. Vous pouvez également choisir d’effectuer un zoom sur certaines zones. L’option Rétablir vous ramène à la version d’origine. Vous pouvez afficher l’image en plein écran en cliquant sur les flèches diagonales. Lorsque Dynamic Media est activé, cette fonctionnalité ressemble à celle-ci :
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

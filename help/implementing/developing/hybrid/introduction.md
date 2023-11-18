@@ -2,10 +2,10 @@
 title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 100%
+source-wordcount: '2066'
+ht-degree: 94%
 
 ---
 
@@ -167,7 +167,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
    ![Aperçu du projet SPA WKND](assets/wknd-preview.png)
 
 1. Utilisez l’outil intégré de votre navigateur pour afficher la source de la page.
-1. Notez que le contenu de la source est limité.
+1. Le contenu de la source est limité.
    * Le corps de la page ne renferme aucun contenu. La page est principalement composée de feuilles de styles et d’un appel à divers scripts tels que `clientlib-react.min.js`.
    * Ces scripts sont les pilotes principaux de cette application et sont responsables du rendu de tout le contenu.
 
@@ -207,9 +207,9 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 ### Interaction avec l’éditeur de SPA {#interaction-with-the-spa-editor}
 
-L’exemple d’application de projet SPA WKND montre clairement comment l’application se comporte et est chargée lorsqu’elle est publiée, en exploitant les services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
+À l’aide de l’exemple d’application de projet WKND SPA, il est clair comment l’application se comporte et est chargée lorsqu’elle est publiée, à l’aide des services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
 
-De plus, pour le créateur de contenu, la création de contenu à l’aide d’un éditeur de SPA est transparente dans AEM.
+En outre, pour l’auteur de contenu, la création de contenu à l’aide d’un éditeur de SPA est transparente dans AEM.
 
 Dans la section suivante, nous allons examiner le contrat qui permet à l’éditeur de SPA de relier les composants de la SPA aux composants d’AEM et d’offrir cette expérience de modification transparente.
 
@@ -219,7 +219,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
 1. À l’aide des outils de développement intégrés de votre navigateur, inspectez le contenu de la page. À l’aide de l’outil de sélection, sélectionnez un composant modifiable sur la page et affichez le détail de l’élément.
 
-   Notez que le composant possède un nouvel attribut de données `data-cq-data-path`.
+   Le composant comporte un nouvel attribut de données `data-cq-data-path`.
 
    ![Inspection des éléments du projet SPA WKND](assets/wknd-inspector.png)
 
@@ -229,7 +229,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
    Ce chemin d’accès permet de récupérer et d’associer l’objet de configuration de contexte de modification de chaque composant.
 
-   Il s’agit du seul attribut de balisage nécessaire à l’éditeur pour reconnaître ce composant comme un composant modifiable dans la SPA. En fonction de cet attribut, l’éditeur de SPA détermine quelle configuration modifiable est associée au composant, de sorte que l’image, la barre d’outils correctes, etc., sont chargées.
+   Il s’agit du seul attribut de balisage nécessaire à l’éditeur pour reconnaître ce composant comme un composant modifiable dans la SPA. En fonction de cet attribut, l’éditeur de SPA détermine la configuration modifiable qui est associée au composant, de sorte que le cadre, la barre d’outils appropriés, etc., soient chargés.
 
    Certains noms de classe spécifiques sont également ajoutés en vue de marquer les espaces réservés, ainsi que pour la fonctionnalité de glisser-déposer des ressources.
 
@@ -237,11 +237,11 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
    >
    >Ce comportement diffère des pages générées côté serveur dans AEM, où un élément `cq` est inséré pour chaque composant modifiable.
    >
-   >Cette approche dans l’éditeur de SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur frontal.
+   >Cette approche dans l’éditeur d’application monopage élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développement front-end.
 
 ## Couplage et découplage dans AEM {#headful-headless}
 
-Les SPA peuvent être activées avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développées et gérées en dehors d’AEM. De plus, les SPA peuvent être exploitées dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points d’entrée, et ce, en mode découplé.
+Les SPA peuvent être activées avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développées et gérées en dehors d’AEM. En outre, SPA peut être utilisé dans AEM tout en utilisant l’utilisation d’ pour diffuser du contenu vers d’autres points de terminaison sans interface.
 
 >[!TIP]
 >

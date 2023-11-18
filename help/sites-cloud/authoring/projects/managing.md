@@ -2,10 +2,10 @@
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 99%
+source-wordcount: '876'
+ht-degree: 84%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Les projets vous permettent d’organiser votre projet en regroupant les ressources dans une seule entité.
 
-Dans la console **Projets**, vous pouvez accéder à vos projets et réaliser des actions sur ces derniers :
+Dans le **Projets** console, vous accédez à vos projets et vous agissez en conséquence :
 
 ![Console Projets](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -33,7 +33,7 @@ AEM fournit les modèles prêts à l’emploi suivants à utiliser lors de la cr
 
 Les étapes de création d’un projet sont identiques d’un projet à l’autre. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-cloud/authoring/projects/overview.md) et les [workflows](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Pour créer un projet :
 
-1. Dans **Projets**, appuyez/cliquez sur **Créer** pour ouvrir l’assistant **Créer un projet** :
+1. Dans **Projets**, sélectionnez **Créer** pour ouvrir le **Créer un projet** assistant :
 1. Sélectionnez le modèle, puis cliquez sur **Suivant**.
 
    ![Création d’un projet](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -42,7 +42,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
    ![Ajout des détails du projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Cliquez/appuyez sur **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
+1. Sélectionnez **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
 
 ### Association de ressources à un projet {#associating-resources-with-your-project}
 
@@ -51,7 +51,7 @@ Comme les projets vous permettent de regrouper des ressources dans une seule ent
 Pour associer des ressources à votre projet :
 
 1. Ouvrez votre projet à partir de la console **Projets**.
-1. Appuyez/cliquez sur **Ajouter une mosaïque** et sélectionnez la mosaïque à lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
+1. Sélectionner **Ajouter une mosaïque** et sélectionnez la mosaïque à lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
 
    ![Ajout d’une mosaïque à un projet](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -59,7 +59,7 @@ Pour associer des ressources à votre projet :
    >
    >Les mosaïques de projet qui peuvent être associées à un projet sont décrites en détail dans la rubrique [Mosaïques de projet](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-1. Cliquez/appuyez sur **Créer**. La ressource est désormais associée à votre projet et vous pouvez y accéder à partir du projet.
+1. Sélectionnez **Créer**. La ressource est désormais associée à votre projet et vous pouvez y accéder à partir du projet.
 
 ### Suppression d’un projet ou d’un lien vers une ressource {#deleting-a-project-or-resource-link}
 
@@ -71,9 +71,9 @@ La méthode permettant de supprimer un projet à partir de la console est la mê
    * Pour supprimer un lien vers une ressource dans un projet, ouvrez le projet dans la console **Projets**.
 
 1. Activez le mode de sélection en cliquant sur **Sélectionner** et sélectionnez le projet ou le lien vers une ressource.
-1. Cliquez/appuyez sur **Supprimer**.
+1. Sélectionnez **Supprimer**.
 
-1. Vous devez confirmer la suppression dans une boîte de dialogue. Si cette opération est confirmée, le projet ou le lien vers la ressource est supprimé. Cliquez/appuyez sur **Désélectionner** pour quitter le mode de sélection.
+1. Vous devez confirmer la suppression dans une boîte de dialogue. Si cette opération est confirmée, le projet ou le lien vers la ressource est supprimé. Sélectionner **Désélectionner** pour quitter le mode de sélection.
 
 >[!NOTE]
 >
@@ -85,11 +85,11 @@ Dans certaines mosaïques, vous pouvez ajouter plusieurs éléments. Par exemple
 
 Pour ajouter des éléments à une mosaïque, procédez comme suit :
 
-1. Dans la console **Projets**, accédez au projet, puis appuyez ou cliquez sur le chevron de la mosaïque à laquelle vous souhaitez ajouter un élément.
+1. Dans **Projets**, accédez au projet et sélectionnez le chevron inférieur sur la mosaïque à laquelle vous souhaitez ajouter un élément.
 
    ![Ajout d’un élément à une mosaïque](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Les mosaïques de projets sont décrites [ici](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Dans cet exemple, un autre workflow a été ajouté.
+1. Ajoutez un élément à la mosaïque comme vous le feriez lors de la création d’une mosaïque. Les mosaïques de projets sont décrites [ici](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Dans cet exemple, un autre workflow a été ajouté.
 
 ### Ouverture d’une mosaïque {#opening-a-tile}
 
@@ -97,7 +97,7 @@ Vous pouvez afficher les éléments inclus dans une mosaïque actuelle ou modifi
 
 Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
-1. Dans la console Projets, cliquez/appuyez sur les points de suspension (...) au bas de la carte.
+1. Dans la console Projets, sélectionnez l’icône représentant des points de suspension (..) au bas de la carte.
 
    ![Ouverture d’une mosaïque](/help/sites-cloud/authoring/assets/project-links.png)
 
@@ -111,7 +111,7 @@ Vous pouvez afficher les statistiques d’un projet dans la console des **Projet
 
 ### Affichage d’une chronologie de projet {#viewing-a-project-timeline}
 
-La chronologie du projet fournit des informations sur le moment auquel les ressources du projet ont été utilisées pour la dernière fois. Pour afficher la chronologie du projet, cliquez/appuyez sur **Chronologie**, puis activez le mode de sélection et sélectionnez le projet. Les ressources sont affichées dans le volet de gauche. Cliquez/appuyez sur **Chronologie** pour revenir à la console **Projets**.
+La chronologie du projet fournit des informations sur le moment auquel les ressources du projet ont été utilisées pour la dernière fois. Pour afficher la chronologie du projet, sélectionnez **Chronologie**, puis passez en mode de sélection et sélectionnez le projet. Les ressources sont affichées dans le volet de gauche. Sélectionner **Chronologie** pour revenir au **Projets** console.
 
 ![Chronologie du projet](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -137,9 +137,9 @@ Pour activer/désactiver un projet :
    >
    Vous devrez peut-être ajouter cette mosaïque si elle ne figure pas déjà dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
 
-1. Appuyez/cliquez sur **Modifier**.
+1. Sélectionnez **Modifier**.
 1. Basculez la valeur du sélecteur entre **Actif** et **Inactif**.
 
    ![Activation d’un projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Cliquez/appuyez sur **Terminé** pour enregistrer vos modifications.
+1. Sélectionner **Terminé** pour enregistrer vos modifications.

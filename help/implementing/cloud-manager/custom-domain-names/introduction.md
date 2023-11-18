@@ -2,10 +2,10 @@
 title: Introduction aux noms de domaine personnalisés
 description: L’interface utilisateur Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 89%
+source-wordcount: '753'
+ht-degree: 86%
 
 ---
 
@@ -66,7 +66,7 @@ L’ajout d’un nom de domaine personnalisé nécessite une interaction entre l
 
 ## Limites {#limitations}
 
-L’utilisation de noms de domaine personnalisés avec AEMaaCS présente certaines limites.
+L’utilisation de noms de domaine personnalisés avec AEMaaCS présente plusieurs limites.
 
 * Les noms de domaines personnalisés sont pris en charge dans Cloud Manager pour les services de publication et de prévisualisation pour les programmes Sites. Les domaines personnalisés pour les services de création ne sont pas pris en charge.
 * Chaque environnement Cloud Manager peut héberger jusqu’à 500 domaines personnalisés.

@@ -4,10 +4,10 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3769'
-ht-degree: 98%
+source-wordcount: '3771'
+ht-degree: 92%
 
 ---
 
@@ -97,7 +97,7 @@ Pour créer, modifier, charger et installer des packages, les utilisateurs doive
 
 Vous pouvez accéder au gestionnaire de packages de trois façons :
 
-1. À partir du menu principal d’AEM -> **Outils** -> **Déploiement** -> **Packages**
+1. À partir du menu principal AEM > **Outils** > **Déploiement** > **Packages**
 1. Depuis [CRXDE Lite](crxde.md) en utilisant la barre de sélection supérieure
 1. Directement en accédant à `http://<host>:<port>/crx/packmgr/`
 
@@ -304,7 +304,7 @@ En fonction des modifications que vous avez apportées, vous devrez peut-être [
 
 ### Réencapsuler un package {#rewrapping-a-package}
 
-Une fois qu’un package a été créé, il peut être réencapsulé. La réencapsulation modifie les informations du package telles que la miniature, la description, etc. sans toucher à son contenu.
+Une fois qu’un package a été créé, il peut être réencapsulé. Le retour à la ligne modifie les informations du module sans qu’il y ait de miniature, de description, etc., sans modifier le contenu du module.
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 
@@ -314,7 +314,7 @@ Une fois qu’un package a été créé, il peut être réencapsulé. La réenca
 
 1. Cliquez sur **Enregistrer**.
 
-1. Cliquez sur **Plus** -> **Réencapsuler**. Une boîte de dialogue vous demandera une confirmation.
+1. Cliquez sur **Plus** > **Réencapsuler** et une boîte de dialogue de confirmation s’affiche.
 
 ### Afficher d’autres versions de package {#other-versions}
 
@@ -324,7 +324,7 @@ Comme chaque version d’un package apparaît dans la liste comme n’importe qu
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Cliquez sur **Plus** -> **Autres versions** et une boîte de dialogue s’ouvre avec une liste d’autres versions du même package avec des informations sur le statut.
+1. Cliquez sur **Plus** > **Autres versions** et une boîte de dialogue s’ouvre avec une liste d’autres versions du même package avec des informations d’état.
 
 ### Afficher le contenu du package et test de l’installation {#viewing-package-contents-and-testing-installation}
 
@@ -334,11 +334,11 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Pour afficher le contenu, cliquez sur **Plus** -> **Contenu**, et le gestionnaire de packages répertorie l’intégralité du contenu du package dans le journal des activités.
+1. Pour afficher le contenu, cliquez sur **Plus** > **Contenu** et Package Manager répertorie l’intégralité du contenu du module dans le journal d’activité.
 
    ![Contenu du package](assets/package-contents.png)
 
-1. Pour exécuter un essai de l’installation, cliquez sur **Plus** -> **Test de l’installation** et le Gestionnaire de packages établit un rapport sur les résultats dans le journal d’activité comme si l’installation avait été effectuée.
+1. Pour exécuter une exécution d’essai de l’installation, cliquez sur **Plus** > **Test de l’installation** et les rapports Gestionnaire de modules dans l’activité consignent les résultats comme si l’installation avait été effectuée.
 
    ![Test de l’installation](assets/test-install.png)
 
@@ -478,7 +478,7 @@ La validation doit toujours avoir lieu après le chargement du package, mais ava
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Pour valider le package, cliquez sur **Plus** -> **Valider**.
+1. Pour valider le package, cliquez sur **Plus** > **Valider**,
 
 1. Dans la boîte de dialogue modale qui s’affiche alors, utilisez les cases à cocher pour sélectionner le ou les types de validation et commencez la validation en cliquant sur **Valider**.
 
@@ -516,7 +516,7 @@ Les packages sont définis par leurs filtres. Vous pouvez demander au Gestionnai
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Cliquez sur **Plus** -> **Couverture**.
+1. Cliquez sur **Plus** > **Couverture**.
 
 1. Les détails de la couverture sont répertoriés dans le journal d’activité.
 
@@ -532,7 +532,7 @@ Avant l’installation de votre package, le gestionnaire de modules crée automa
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 
-1. Ouvrez les détails du package que vous souhaitez installer à partir de la liste des packages en cliquant sur le nom du package.
+1. Ouvrez les détails du package que vous souhaitez installer dans la liste des packages en cliquant sur le nom du package.
 
 1. Cliquez soit sur le bouton **Installer** dans les détails de l’élément, soit sur le lien **Installer** dans le statut du package.
 
@@ -574,9 +574,9 @@ La désinstallation d’un package ramène le contenu du référentiel à l’in
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 
-1. Ouvrez les détails du package que vous souhaitez désinstaller à partir de la liste des packages en cliquant sur le nom du package.
+1. Ouvrez les détails du package que vous souhaitez désinstaller dans la liste des packages en cliquant sur le nom du package.
 
-1. Pour supprimer le contenu de ce package du référentiel, cliquez sur **Plus** -> **Désinstaller**.
+1. Cliquez sur **Plus** > **Désinstaller**, pour supprimer le contenu de ce module du référentiel.
 
 1. Une boîte de dialogue vous invite à confirmer et énumère toutes les modifications apportées.
 
@@ -588,7 +588,7 @@ La suppression d’un package supprime uniquement ses détails du gestionnaire d
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 
-1. Ouvrez les détails du package que vous souhaitez supprimer de la liste des packages en cliquant sur le nom du package.
+1. Ouvrez les détails du module à supprimer de la liste des modules en cliquant sur son nom.
 
 1. AEM vous invite à confirmer que vous souhaitez supprimer le package. Cliquez sur **OK** pour confirmer la suppression.
 
@@ -600,9 +600,9 @@ Répliquez le contenu d’un package afin de l’installer dans l’instance de 
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 
-1. Ouvrez les détails du package que vous souhaitez répliquer depuis la liste des packages en cliquant sur le nom du package.
+1. Ouvrez les détails du module que vous souhaitez répliquer dans la liste des modules en cliquant sur le nom du module.
 
-1. Cliquez sur **Plus** -> **Répliquer**.
+1. Cliquez sur **Plus** > **Répliquer**.
 
 1. Le package est répliqué et les détails sont signalés dans le journal d’activité.
 

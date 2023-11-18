@@ -2,10 +2,10 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu permet de copier du contenu modifiable à la demande à partir des environnements de production depuis AEM as a Cloud Service vers des environnements inférieurs, et ce à des fins de test.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 87%
+source-wordcount: '1292'
+ht-degree: 84%
 
 ---
 
@@ -41,7 +41,7 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 | Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Requis |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
-Pour plus d’informations sur les autorisations et sur la manière de les définir, consultez le document . [AEM l’équipe as a Cloud Service et les profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md)
+Pour plus d’informations sur les autorisations et leur définition, voir [AEM équipe as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Créer un jeu de contenu {#create-content-set}
 
@@ -57,7 +57,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
    ![Jeux de contenu](assets/content-sets.png)
 
-1. Dans l’onglet **Détails** de l’assistant, indiquez le nom et la description du jeu de contenu, puis appuyez ou cliquez sur **Continuer**.
+1. Sur le **Détails** dans l’assistant, indiquez le nom et la description du jeu de contenu, puis sélectionnez **Continuer**.
 
    ![Détails du jeu de contenu](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
    1. Dans la liste des chemins d’accès inclus, appuyez ou cliquez sur l’icône **Ajouter des sous-chemins à exclure** en regard du chemin que vous devez limiter.
    1. Saisissez le sous-chemin d’accès à exclure sous le chemin d’accès sélectionné.
-   1. Appuyez ou cliquez sur **Exclure le chemin**.
-   1. Appuyez ou cliquez encore sur **Ajouter des sous-chemins à exclure** pour ajouter d’autres chemins à exclure si nécessaire.
+   1. Sélectionner **Exclure le chemin**.
+   1. Sélectionner **Ajouter des sous-chemins d’exclusion** pour ajouter d’autres chemins à exclure, le cas échéant.
       * Les chemins exclus doivent être relatifs au chemin inclus.
       * Le nombre de chemins exclus n’est pas limité.
 
@@ -88,7 +88,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
    ![Modification de la liste de chemins](assets/add-content-set-excluded-paths.png)
 
-1. Appuyez ou cliquez sur **Créer** pour créer le jeu de contenu.
+1. Sélectionner **Créer** pour créer le jeu de contenu.
 
 Le jeu de contenu peut désormais être utilisé pour copier du contenu entre des environnements.
 
@@ -136,7 +136,7 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
 
 1. Si nécessaire, vous pouvez également sélectionner **Inclure les listes de contrôle d’accès** dans votre processus de copie.
 
-1. Appuyez ou cliquez sur **Copier**.
+1. Sélectionnez **Copie**.
 
 Le processus de copie démarre. Le statut du processus de copie est répercuté dans la console pour le jeu de contenu sélectionné.
 
@@ -185,7 +185,7 @@ Pour ce faire, sur la page **Copie de l’activité de contenu** , sélectionnez
 
 ![Accès aux journaux du processus de copie de contenu](assets/copy-content-logs.png)
 
-Les journaux sont téléchargés sur votre ordinateur local. Si le téléchargement ne démarre pas, vérifiez les paramètres du bloqueur de fenêtres contextuelles.
+Les journaux sont téléchargés sur votre ordinateur local. Si le téléchargement ne commence pas, vérifiez les paramètres du bloqueur de fenêtres contextuelles.
 
 ## Limites {#limitations}
 

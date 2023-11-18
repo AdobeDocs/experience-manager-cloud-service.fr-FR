@@ -2,10 +2,10 @@
 title: Phase de préparation
 description: Découvrez les étapes à suivre pour vous assurer que votre installation AEM est prête à être déplacée vers le cloud.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   <tr>
     <td>Réseau de diffusion de contenu intégré et Obtention de votre propre réseau de diffusion de contenu</td>
     <td></td>
-    <td>AEM as a Cloud Service inclut le réseau de diffusion de contenu pour tous les environnements, optimisé pour la plupart des cas d’utilisation.<br>Si vous souhaitez configurer votre propre réseau CDN, vous devez soumettre une demande à l’assistance Adobe pour qu’il soit approuvé.<br>Si votre demande est approuvée, le réseau CDN pointe vers Fastly et non vers les instances AEM, quel que soit lʼenvironnement.</td>
+    <td>AEM as a Cloud Service inclut le réseau de diffusion de contenu pour tous les environnements, optimisé pour la plupart des cas d’utilisation.<br>Si vous souhaitez configurer votre propre réseau de diffusion de contenu, vous devez envoyer une demande à l’assistance Adobe pour qu’il soit approuvé.<br>Si votre demande est approuvée, le réseau CDN pointe vers Fastly et non vers les instances AEM, quel que soit lʼenvironnement.</td>
   </tr>
   <tr>
     <td>Tâches de longue durée</td>

@@ -4,10 +4,10 @@ description: Découvrez comment créer et synchroniser des Live Copies pour uti
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 99%
+source-wordcount: '4270'
+ht-degree: 95%
 
 ---
 
@@ -84,7 +84,7 @@ Vous pouvez modifier ou supprimer une configuration de plan directeur existante�
 
 ## Création d’une Live Copy {#creating-a-live-copy}
 
-Il existe plusieurs façons de créer une Live Copy.
+Il existe plusieurs façons de créer une Live Copy.
 
 ### Création d’une Live Copy d’une page {#creating-a-live-copy-of-a-page}
 
@@ -110,11 +110,11 @@ Pour créer une Live Copy :
 
    ![Créer une Live Copy](../assets/create-live-copy.png)
 
-1. Sélectionnez la page source et appuyez ou cliquez sur **Suivant**. Par exemple :
+1. Sélectionnez la page source, puis sélectionnez **Suivant**. Par exemple :
 
    ![sélectionnez la source de la Live Copy](../assets/live-copy-from.png) ;
 
-1. spécifiez le chemin de destination de la Live Copy (ouvrez le dossier/la page parent de la Live Copy), puis appuyez ou cliquez sur **Suivant**.
+1. Spécifiez le chemin de destination de la Live Copy (ouvrez le dossier/la page parent de la Live Copy), puis sélectionnez **Suivant**.
 
    ![Sélectionner la destination de la Live Copy](../assets/live-copy-to.png)
 
@@ -135,7 +135,7 @@ Pour créer une Live Copy :
    * Non cochée : crée une Live Copy qui comprend tous les descendants de la page sélectionnée (Live Copy profonde)
 
 1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la liste déroulante **Configurations de déploiement** pour les sélectionner. Les configurations sélectionnées s’affichent sous le sélecteur déroulant.
-1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche où vous pouvez sélectionner **Ouvrir** ou **Terminé**.
+1. Sélectionnez **Créer**. Un message de confirmation s’affiche où vous pouvez sélectionner **Ouvrir** ou **Terminé**.
 
    >[!NOTE]
    >
@@ -169,9 +169,9 @@ Pour créer une Live Copy d’un site à partir d’une configuration de plan d
 
    ![Création d’un site à partir d’un plan directeur](../assets/create-site-from-blueprint.png)
 
-1. Utilisez le sélecteur **Langues initiales** pour spécifier la ou les langues du site de plan directeur à utiliser pour la Live Copy.
+1. Utilisez la variable **Langues initiales** sélecteur permettant de spécifier les langues du site de plan directeur à utiliser pour la Live Copy.
 
-   Toutes les langues disponibles sont sélectionnées par défaut. Pour supprimer une langue, cliquez ou appuyez sur le bouton **X** qui s’affiche en regard de la langue.
+   Toutes les langues disponibles sont sélectionnées par défaut. Pour supprimer une langue, sélectionnez l’option **X** qui apparaît en regard de la langue.
 
    Par exemple :
 
@@ -217,7 +217,7 @@ Les pages de plan directeur (référencées dans la configuration de plan direct
 
 ## Synchronisation de votre Live Copy {#synchronizing-your-live-copy}
 
-Il existe plusieurs façons de synchroniser votre Live Copy.
+Il existe plusieurs façons de synchroniser votre Live Copy.
 
 ### Déploiement d’un plan directeur {#rolling-out-a-blueprint}
 
@@ -252,7 +252,7 @@ Les déploiements sont traités comme des tâches asynchrones et peuvent être v
 1. Dans la console **Sites**, sélectionnez la page dans la Live Copy et ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (via la barre d’outils).
 1. Sélectionnez l’option **Plans directeurs** dans la liste pour afficher les plans directeurs associés à cette page.
 1. Sélectionnez le plan directeur requis dans la liste.
-1. Cliquez ou appuyez sur **Déploiement**.
+1. Sélectionnez **Déploiement**.
 
    ![Plan directeur de déploiement à partir du rail des références](../assets/rollout-blueprint-from-references.png)
 
@@ -305,7 +305,7 @@ Synchronisez une Live Copy pour extraire des modifications de la source vers la
 
 1. Dans la console **Sites**, sélectionnez la page Live Copy et ouvrez les propriétés.
 1. Ouvrez l’onglet **Live Copy**.
-1. Cliquez ou appuyez sur **Syncroniser**.
+1. Sélectionner **Synchroniser**.
 
    ![Bouton Synchroniser](../assets/synchronize.png)
 
@@ -368,7 +368,7 @@ Vous pouvez suspendre l’héritage de Live Copy d’une page Live Copy afin d
 Pour suspendre l’héritage sur une page, procédez comme suit :
 
 1. Ouvrez les propriétés de la page Live Copy à l’aide de la commande **Afficher les propriétés** de la console **Sites** ou des **Informations sur la page** de la barre d’outils de la page.
-1. Cliquez ou appuyez sur l’onglet **Live Copy**.
+1. Sélectionnez l’onglet **Live Copy**.
 1. Sélectionnez **Suspendre** dans la barre d’outils. Vous pouvez ensuite sélectionner l’une des options suivantes :
 
    * **Suspendre** : pour suspendre uniquement la page active.
@@ -451,7 +451,7 @@ Sur une Live Copy existante, vous pouvez changer la profondeur d’une page, c�
 Pour spécifier ou changer la profondeur :
 
 1. Ouvrez les propriétés de la page Live Copy à l’aide de la commande **Afficher les propriétés** de la console **Sites** ou des **Informations sur la page** de la barre d’outils de la page.
-1. Cliquez ou appuyez sur l’onglet **Live Copy**.
+1. Sélectionnez l’onglet **Live Copy**.
 1. Dans la section **Configuration**, définissez ou effacez l’option **Héritage de Live Copy** selon l’inclusion ou non des pages enfants :
 
    * Cochée : Live Copy profonde (les pages enfants sont incluses)
@@ -463,7 +463,7 @@ Pour spécifier ou changer la profondeur :
    >
    >Voir [Live Copies – Composition](overview.md#live-copies-composition) pour plus d’informations.
 
-1. Cliquez ou appuyez sur **Enregistrer** pour conserver vos mises à jour.
+1. Sélectionner **Enregistrer** pour conserver vos mises à jour.
 
 ### Annulation de l’héritage pour un composant {#cancelling-inheritance-for-a-component}
 
@@ -475,11 +475,11 @@ Annulez l’héritage Live Copy d’un composant afin que ce composant ne soit 
 
 Annulez l’héritage pour modifier le contenu du composant ou supprimer le composant :
 
-1. Cliquez ou appuyez sur le composant pour lequel vous souhaitez annuler l’héritage.
+1. Sélectionnez le composant pour lequel vous souhaitez annuler l’héritage.
 
    ![Héritage dans la barre d’outils des composants](../assets/inheritance-toolbar.png)
 
-1. Sur la barre d’outils du composant, appuyez ou cliquez sur l’icône **Annuler l’héritage**.
+1. Dans la barre d’outils du composant, sélectionnez l’option **Annuler l’héritage** Icône
 
    ![Icône d’annulation de l’héritage](../assets/cancel-inheritance-icon.png)
 
@@ -489,7 +489,7 @@ Annulez l’héritage pour modifier le contenu du composant ou supprimer le comp
 
 ### Réactivation de l’héritage pour un composant {#re-enabling-inheritance-for-a-component}
 
-Pour activer l’héritage pour un composant, appuyez ou cliquez sur **Réactiver l’héritage** dans la barre d’outils du composant.
+Pour activer l’héritage d’un composant, sélectionnez l’option **Réactiver l’héritage** dans la barre d’outils du composant.
 
 ![Réactivation de l’icône d’héritage](../assets/re-enable-inheritance-icon.png)
 
@@ -530,15 +530,15 @@ Vous pourrez par la suite réactiver l’héritage pour une propriété, si néc
 >Lorsque vous réactivez l’héritage, la propriété de page de la Live Copy n’est pas automatiquement synchronisée avec la propriété source. Vous pouvez demander manuellement une synchronisation si nécessaire.
 
 1. Ouvrez les propriétés de la page Live Copy à l’aide de l’option **Afficher les propriétés** de la console **Sites** ou de l’icône **Informations sur la page** de la barre d’outils de la page.
-1. Pour annuler l’héritage d’une propriété, appuyez ou cliquez sur l’icône de lien qui s’affiche à droite de la propriété.
+1. Pour annuler l’héritage d’une propriété, sélectionnez l’icône de lien qui s’affiche à droite de la propriété.
 
    ![Bouton Annuler l’héritage](../assets/cancel-inheritance-button.png)
 
-1. Dans la boîte de dialogue de confirmation **Annuler l’héritage**, cliquez ou appuyez sur **Oui**.
+1. Dans le **Annuler l’héritage** boîte de dialogue de confirmation, sélectionnez **Oui**.
 
 ### Rétablissement des propriétés d’une page de la Live Copy {#revert-properties-of-a-live-copy-page}
 
-Pour activer l’héritage d’une propriété, appuyez ou cliquez sur l’icône **Inverser l’héritage** qui apparaît en regard de la propriété.
+Pour activer l’héritage d’une propriété, sélectionnez l’option **Rétablir l’héritage** qui s’affiche en regard de la propriété .
 
 ![Bouton Restaurer l’héritage](../assets/revert-inheritance-button.png)
 
@@ -635,7 +635,7 @@ Il existe des implications liées à l’endroit dans l’arborescence où vous 
 
 Pour désolidariser une Live Copy :
 
-1. Dans la console **Sites**, sélectionnez la page Live Copy, puis cliquez ou appuyez sur **Afficher les propriétés**.
+1. Dans la console **Sites**, sélectionnez la page Live Copy, puis sélectionnez **Afficher les propriétés**.
 1. Ouvrez l’onglet **Live Copy**.
 1. Dans la barre d’outils, sélectionnez **Désolidariser**.
 

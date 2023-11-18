@@ -2,10 +2,10 @@
 title: Diagnostic ContextHub
 description: ContextHub fournit une page de diagnostic où vous avez accès à une vue d’ensemble du framework ContextHub
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ La section Modules répertorie tous les modules d’IU ContextHub qui ont été 
 
 ## Clientlibs {#clientlibs}
 
-La section Clientlibs répertorie tous les [dossiers de bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md) chargés par ContextHub. Les bibliothèques clientes sont classées comme suit :
+La section Clientlibs répertorie toutes les[dossiers de bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md) que ContextHub a été chargé. Les bibliothèques clientes sont classées comme suit :
 
 * **kernel.js :** bibliothèques clientes qui implémentent le framework ContextHub, le moteur de segment et les types de stockage.
 * **ui.js :** bibliothèques clientes qui implémentent les types de modules d’IU et l’IU ContextHub.

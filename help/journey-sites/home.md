@@ -2,10 +2,10 @@
 title: Parcours AEM Sites
 description: Commencez ici pour obtenir un aperçu des parcours guidés disponibles pour comprendre les fonctionnalités puissantes AEM en matière de sites.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 82%
 
 ---
 
@@ -19,7 +19,7 @@ Commencez ici pour obtenir un aperçu des parcours guidés disponibles pour comp
 
 ## Parcours de documentation AEM {#documentation-journeys}
 
-Un [Parcours de documentation](/help/journey-documentation/documentation-journeys.md) relie de nombreux sujets et fonctionnalités différents et parfois complexes en aidant le lecteur, parfois débutant dans AEM, à comprendre et à résoudre un problème d’activité du début à la fin, tout en présupposant un minimum de connaissances préalables concernant le sujet ou AEM.
+[Un Parcours de documentation](/help/journey-documentation/documentation-journeys.md) Il relie de nombreux sujets et caractéristiques complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau pour AEM, comprendre et résoudre un problème commercial du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
 
 Les parcours de documentation sont conçus autour des principes de bonne pratique, reposent sur les dernières recherches d’Adobe, sur l’expérience éprouvée de mise en œuvre des consultants Adobe, ainsi que sur les retours de projets clients.
 
@@ -31,7 +31,7 @@ Les parcours AEM Sites ont été conçus pour différents types de profils et e
 
 Chaque parcours a été conçu pour une personne ou une audience spécifique, mais définit également les autres profils avec lesquels le lecteur doit interagir.
 
-Les informations contenues dans les parcours peuvent bien sûr être utiles à plusieurs profils, mais un parcours est ciblé sur un profil spécifique et certaines informations peuvent être superflues pour certains rôles.
+Les informations contenues dans les parcours peuvent s’avérer utiles pour plusieurs acteurs, mais un parcours est ciblé sur un personnage spécifique, et certaines informations peuvent se révéler superflues pour certains rôles.
 
 ## Parcours AEM Sites {#sites-journeys}
 

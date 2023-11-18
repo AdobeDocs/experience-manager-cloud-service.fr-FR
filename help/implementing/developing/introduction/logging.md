@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
-ht-degree: 92%
+source-wordcount: '2753'
+ht-degree: 91%
 
 ---
 
@@ -279,7 +279,7 @@ AEM as a Cloud Service fournit trois journaux pour les serveurs web Apache et l
 * Journal des erreurs du serveur web Apache HTTPD
 * Journal de Dispatcher
 
-Notez que ces journaux ne sont disponibles que pour le niveau Publication.
+Ces journaux ne sont disponibles que pour le niveau Publication.
 
 Cet ensemble de journaux fournit des informations sur les requêtes HTTP envoyées au niveau Publication d’AEM as a Cloud Service avant que celles-ci n’atteignent l’application AEM. Il est important de comprendre cela, car, dans l’idéal, la plupart des requêtes HTTP envoyées aux serveurs de niveau Publication sont servies par du contenu mis en cache par le serveur web Apache HTTPD et le Dispatcher AEM, et n’atteignent jamais l’application AEM elle-même. Il n’existe donc aucune instruction de journal pour ces requêtes dans les journaux Java, de requêtes ou des accès d’AEM.
 
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service permet d’accéder aux journaux CDN, qui sont utiles pour les cas d’utilisation, notamment l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de le définir sur différents modes tels que les informations, les avertissements ou les erreurs.
 
-Notez que la fonction de transfert Splunk ne prend pas encore en charge les journaux CDN.
+La fonction de transfert Splunk ne prend pas encore en charge les journaux CDN.
 
 **Exemple**
 
@@ -643,7 +643,7 @@ Vous trouverez ci-dessous un exemple de demande d’assistance :
 Programme 123, environnement de production
 
 * Adresse du point d’entrée Splunk HEC : `splunk-hec-ext.acme.com`
-* Index Splunk : acme_123prod (le client peut choisir la convention d’affectation de nom qu’il souhaite)
+* Index Splunk : acme_123prod (le client peut choisir la convention d’affectation des noms qu’il souhaite)
 * Port Splunk : 443
 * Jeton Splunk HEC : ABC123
 

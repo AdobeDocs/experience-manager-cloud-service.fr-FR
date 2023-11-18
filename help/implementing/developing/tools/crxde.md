@@ -2,10 +2,10 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 95%
+source-wordcount: '1685'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ L’interface utilisateur de CRXDE Lite s’affiche comme suit dans votre navig
 
 >[!TIP]
 >
->Vous pouvez également accéder à CRXDE Lite à partir du menu AEM. Dans le menu principal, sélectionnez **Outils** -> **Général** -> **CRXDE Lite**.
+>Vous pouvez également accéder à CRXDE Lite à partir du menu AEM. Dans le menu principal, sélectionnez **Outils** > **Général** > **CRXDE Lite**.
 
 ## Présentation de l’interface utilisateur {#overview-of-the-user-interface}
 
@@ -163,7 +163,7 @@ Le **widget de connexion** affiche l’utilisateur actuellement connecté.
 
 Cliquez dessus pour vous connecter ou vous reconnecter en tant qu’un autre utilisateur. `@crx.default` indique que vous vous trouvez dans l’espace de travail par défaut (et unique) du référentiel.
 
-L’option **Préférences** permet de définir la langue de l’interface utilisateur et de consulter et personnaliser les touches d’accès rapide pour diverses actions telles que l’enregistrement, la recherche, la création de notes, etc.
+La variable **Préférences** peut être utilisée pour définir la langue de l’interface utilisateur et pour afficher et personnaliser les touches d’accès rapide pour diverses actions telles que l’enregistrement, la recherche, la création de notes, etc.
 
 ## Création d’un dossier {#creating-a-folder}
 

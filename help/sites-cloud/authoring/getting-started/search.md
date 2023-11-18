@@ -2,10 +2,10 @@
 title: Rechercher
 description: Trouvez votre contenu plus rapidement grâce à une recherche complète
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 98%
+source-wordcount: '492'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ La recherche est disponible dans la barre d’outils supérieure :
 Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
 * Rechercher un mot-clé, un chemin ou une balise
-* Filtrer selon des critères spécifiques aux ressources, dates de modification, état de la page, taille du fichier, etc.
+* Filtrez selon des critères spécifiques à une ressource, tels que les dates de modification, l’état de la page, la taille du fichier, etc.
 * Définir et utiliser une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus
 
 >[!NOTE]

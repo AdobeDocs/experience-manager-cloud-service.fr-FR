@@ -2,10 +2,10 @@
 title: Balises de couleurs pour les images
 description: Adobe Experience Manager Assets vous permet de distinguer les couleurs d’une image et de les appliquer automatiquement sous forme de balises. Vous pouvez ensuite utiliser ces balises pour rechercher et filtrer des images.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -169,7 +169,7 @@ Pour rechercher des images en fonction des couleurs :
 
 1. Accédez à **[!UICONTROL Ressources > Fichiers]**.
 
-1. Sélectionnez **[!UICONTROL Filtrer]** dans la liste déroulante.
+1. Sélectionner **[!UICONTROL Filtrer]** dans la liste déroulante.
    ![Filtrer les ressources](assets/filter-assets.png)
 
 1. Sélectionnez le [prédicat de couleur d’AEM Assets](#configure-search-predicate).

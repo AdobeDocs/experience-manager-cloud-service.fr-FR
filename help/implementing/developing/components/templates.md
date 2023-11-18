@@ -2,10 +2,10 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
-ht-degree: 97%
+source-wordcount: '3279'
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ Ce document :
 
 La création de modèles de page s’effectue essentiellement à l’aide de la [console de modèles et de l’éditeur de modèles](/help/sites-cloud/authoring/features/templates.md). Cette tâche est de la responsabilité du créateur de modèles. Cette section vous donne un aperçu de ce processus. Elle décrit ensuite ce qui se passe au niveau technique.
 
-Lors de la création d’un modèle modifiable :
+Lors de la création d’un modèle modifiable :
 
 1. Créez un [dossier pour les modèles](#template-folders). Cela n’est pas obligatoire, mais cela fait partie des bonnes pratiques recommandées.
 1. Sélectionnez un [type de modèle](#template-type). Il est copié afin de créer la [définition du modèle](#template-definitions).
@@ -191,13 +191,13 @@ Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes 
 
 1. Outre les autorisations et les droits de création standard (par exemple, `content-authors`), vous devez maintenant attribuer le(s) groupe(s) et définir les droits d’accès nécessaires (listes de contrôle d’accès, ACL) pour que les créateurs puissent créer des modèles dans le nouveau dossier.
 
-   Le groupe `template-authors` est le groupe par défaut qui doit être affecté. Pour plus d’informations, consultez la section [ACL et groupes](#acls-and-groups).
+   Le groupe `template-authors` est le groupe par défaut qui doit être attribué. Pour plus d’informations, consultez la section [ACL et groupes](#acls-and-groups).
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
 ### Utilisation de l’explorateur de configurations {#using-the-configuration-browser}
 
-1. Accédez à **Navigation globale** > **Outils** > [**Explorateur de configurations**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. Accédez à **Navigation globale** > **Outils** > [**Explorateur de configuration**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    Les dossiers existants sont répertoriés à gauche, y compris le dossier `global`.
 
@@ -211,7 +211,7 @@ Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes 
 
 >[!NOTE]
 >
->Dans l’[explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), vous pouvez modifier le dossier global et activer l’option **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier. Il ne s’agit toutefois pas de la méthode recommandée.
+>Dans le [Navigateur de configuration,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) vous pouvez modifier le dossier global et activer le **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier, il n’est toutefois pas recommandé de le faire.
 
 ### ACL et groupes {#acls-and-groups}
 
@@ -289,9 +289,9 @@ Ce groupe `template-authors` par défaut couvre les configurations de projet dan
 
 ## Type de modèle {#template-type}
 
-Lors de la création d’un modèle, vous devez indiquer un type de modèle :
+Lors de la création d’un modèle, vous devez indiquer un type de modèle :
 
-* Les types de modèle fournissent de façon efficace des modèles pour un modèle. Lors de la création d’un modèle, la structure et le contenu initial du type de modèle sélectionné sont utilisés pour créer le nouveau modèle.
+* Les types de modèle fournissent de façon efficace des modèles pour un modèle. Lors de la création d&#39;un modèle, la structure et le contenu initial du type de modèle sélectionné sont utilisés pour créer le nouveau modèle.
 
    * Le type de modèle est copié pour créer le modèle.
    * Une fois la copie effectuée, la seule connexion entre le modèle et le type de modèle est une référence statique à des fins d’information.
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -432,7 +432,7 @@ Ce nœud contient des propriétés pour le modèle :
 
 Définit la structure de la page créée :
 
-* Est fusionné avec le contenu (`/initial`) lors de la création d’une page.
+* Est fusionnée avec le contenu (`/initial`) lors de la création d’une page.
 * Les modifications apportées à la structure sont répercutées dans toutes les pages créées avec le modèle.
 * Le nœud `root` (`structure/jcr:content/root`) définit la liste des composants qui seront disponibles dans la page créée.
    * Les composants définis dans la structure du modèle ne peuvent être ni déplacés ni supprimés dans les pages créées.
@@ -545,7 +545,7 @@ Lors du rendu d’une page :
 
 ### Disponibilité des modèles {#template-availability}
 
-Lors de la création d’une page dans l’interface admin du site, la liste des modèles disponibles dépend de l’emplacement de la nouvelle page et des restrictions de positionnement spécifiées dans chaque modèle.
+Lors de la création d’une page dans l’interface d’administration du site, la liste des modèles disponibles dépend de l’emplacement de la nouvelle page et des restrictions d’emplacement spécifiées dans chaque modèle.
 
 Les propriétés suivantes déterminent si un modèle `T` peut être utilisé pour qu’une nouvelle page soit placée en tant qu’enfant de la page `P`. Chacune de ces propriétés est une chaîne à valeurs multiples contenant aucune ou plusieurs expressions régulières utilisées pour la correspondance avec les chemins :
 

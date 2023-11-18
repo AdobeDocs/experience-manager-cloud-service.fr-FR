@@ -2,10 +2,10 @@
 title: Générer des jetons d’accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
-source-wordcount: '2090'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2089'
+ht-degree: 98%
 
 ---
 
@@ -49,7 +49,7 @@ Une fois les informations d’identification créées, elles s’affichent sous 
 
 ![Afficher les informations d’identification](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Les utilisateurs ou utilisatrices peuvent ensuite afficher les informations d’identification à l’aide de l’action Afficher. En outre, comme décrit plus loin dans l’article, les personnes utilisatrices peuvent modifier les informations d’identification du même compte technique. Pour ce faire, elles créent une clé privée ou un certificat, dans les cas où le certificat doit être renouvelé ou révoqué.
+Les utilisateurs ou utilisatrices peuvent ensuite afficher les informations d’identification à l’aide de l’action Afficher. En outre, comme décrit plus loin dans l’article, les personnes utilisatrices peuvent modifier les informations d’identification du même compte technique. Pour ce faire, ils créent une clé privée ou un certificat, lorsque le certificat doit être renouvelé ou révoqué.
 
 Les personnes utilisatrices disposant du rôle d’administration d’environnement d’AEM as a Cloud Service peuvent ensuite créer des informations d’identification pour des comptes techniques supplémentaires. Cette fonctionnalité est utile lorsque plusieurs API ont des exigences d’accès différentes. Par exemple, lecture et lecture-écriture.
 

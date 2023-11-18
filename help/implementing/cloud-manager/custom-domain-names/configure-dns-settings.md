@@ -2,10 +2,10 @@
 title: Configuration des paramètres DNS
 description: Découvrez comment configurer les paramètres DNS pour vos noms de domaine personnalisés.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 96%
+source-wordcount: '337'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Connectez-vous au serveur d’enregistrement de votre domaine et créez un enreg
 
 Un domaine apex est un domaine personnalisé qui ne contient pas de sous-domaine, tel que `example.com`. Un domaine apex est configuré avec un enregistrement `A`, `ALIAS` ou `ANAME` via votre fournisseur DNS. Des domaines apex doivent pointer vers des adresses IP spécifiques.
 
-Ajoutez tous les enregistrements `A` suivants aux paramètres DNS de votre domaine via votre fournisseur de domaine. 
+Ajoutez ce qui suit : `A` des enregistrements des paramètres DNS de votre domaine par l’intermédiaire de votre fournisseur de domaine.
 
 * `A RECORD`
 

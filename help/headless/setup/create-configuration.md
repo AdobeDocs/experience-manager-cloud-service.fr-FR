@@ -2,10 +2,10 @@
 title: Création d’une configuration - Configuration découplée
 description: Créez une configuration comme première étape de prise en main d’AEM as a Cloud Service en mode découplé.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '327'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
@@ -25,11 +25,11 @@ Si vous connaissez les modèles de page [dans une implémentation AEM complète,
 
 Un administrateur n’a besoin de créer une configuration qu’une seule fois, ou très rarement lorsqu’un nouvel espace de travail est nécessaire pour organiser vos modèles de contenu. Pour les besoins de ce guide de prise en main, il suffit de créer une configuration.
 
-1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils -> Général -> Explorateur de configurations**.
+1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils > Général > Explorateur de configuration**.
 1. Indiquez un **Titre** et un **Nom** pour votre configuration.
    * Le **Titre** doit être descriptif.
-   * Le **nom** devient le nom du nœud dans le référentiel.
-      * Il sera généré automatiquement en fonction du titre et ajusté selon les [conventions de nommage d’AEM](/help/implementing/developing/introduction/naming-conventions.md).
+   * Le **nom** deviendra celui du nœud dans le référentiel.
+      * Il sera généré automatiquement en fonction du titre et ajusté selon les [conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Il peut être adapté si nécessaire.
 1. Vérifiez les options suivantes :
    * **Modèles de fragment de contenu**
@@ -37,7 +37,7 @@ Un administrateur n’a besoin de créer une configuration qu’une seule fois, 
 
    ![Création d’une configuration](../assets/create-configuration.png)
 
-1. Appuyez ou cliquez sur **Créer**
+1. Sélectionnez **Créer**
 
 Vous pouvez créer plusieurs configurations si nécessaire. Les configurations peuvent également être imbriquées.
 

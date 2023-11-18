@@ -2,9 +2,9 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3435'
 ht-degree: 97%
 
 ---
@@ -112,8 +112,8 @@ Le paramètre `kind` doit être défini sur `CDN` et la version doit être défi
 
 1. Pour les types d’environnements autres que RDE, créez un pipeline de configuration de déploiement ciblé dans Cloud Manager.
 
-   * [Consultez ce document pour les pipelines de production.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [Consultez ce document pour les pipelines hors production.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [Voir Configuration des pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [Voir Configuration de pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 Pour les RDE, il faut utiliser la ligne de commande, mais le RDE n’est pas pris en charge pour le moment.
 

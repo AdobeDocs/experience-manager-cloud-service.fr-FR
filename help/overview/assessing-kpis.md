@@ -2,10 +2,10 @@
 title: Accès aux indicateurs de performance clés
 description: Découvrez comment accéder à vos indicateurs clés de performance et définir le processus de création de rapports
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 97%
+source-wordcount: '544'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Avant de vous engager dans le lancement d’Adobe Experience Manager, toutes l
 
 Dans une étude de 2018, IDC a analysé la valeur commerciale que plusieurs grandes sociétés ont observé lors de leur utilisation d’Adobe Experience Manager. En moyenne, les organisations qui utilisaient les Experience Manager Sites ont augmenté la productivité de leurs équipes d’expérience digitale de 23 %, ont réduit le temps nécessaire à leurs modifications rédactionnelles mineures de 64 % et ont augmenté le nombre des visites mensuelles sur leurs sites de 10 %. Les sociétés qui utilisaient Experience Manager Assets ont augmenté de 19 % la productivité de leurs équipes de ressources numériques, réduit de 47 % le temps nécessaire à la création de nouvelles ressources et réduit de 20 % le délai de lancement des campagnes marketing.
 
-Pour obtenir les mêmes bénéfices spectaculaires, votre entreprise doit définir des objectifs clairs pour la mise en œuvre de votre Experience Manager. Vous devez également définir des indicateurs de performance clés qui aident tous vos collaborateurs à garder le cap sur ces objectifs.
+Pour réaliser les mêmes gains spectaculaires, votre organisation doit avoir des objectifs clairs pour votre mise en oeuvre Experience Manager. Vous devez également définir des indicateurs de performance clés qui aident tous vos collaborateurs à garder le cap sur ces objectifs.
 
 ## Accès aux indicateurs de performance clés
 

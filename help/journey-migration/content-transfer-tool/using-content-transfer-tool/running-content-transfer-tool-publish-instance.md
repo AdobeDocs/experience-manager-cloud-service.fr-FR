@@ -2,10 +2,10 @@
 title: Exécution de l’outil de transfert de contenu sur une instance de publication
 description: Exécution de l’outil de transfert de contenu sur une instance de publication
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '251'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Suivez l’approche recommandée, comme décrit ci-dessous :
 
 * Utilisez la même version de l’outil de transfert de contenu qui a été utilisée sur l’instance d’auteur.
 
-* Un seul nœud de publication doit être migré. Il doit être supprimé de l’équilibreur de charge avant de commencer l’extraction.
+* Un seul noeud de publication doit être migré. Il doit être supprimé de l’équilibreur de charge avant de commencer l’extraction.
 
 * Lors de l’ingestion pour la publication, le niveau de publication ne sera pas réduit (contrairement à l’instance de création).
 

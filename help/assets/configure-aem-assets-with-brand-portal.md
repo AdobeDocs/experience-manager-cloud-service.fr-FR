@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 94%
+source-wordcount: '2584'
+ht-degree: 93%
 
 ---
 
@@ -237,7 +237,7 @@ La clé publique (certificat) authentifie votre profil sur Adobe Developer Con
 1. Connectez-vous à Experience Manager Assets.
 1. Dans le panneau **Outils**, accédez à **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**.
 1. Dans la page Configurations d’Adobe IMS, cliquez sur **[!UICONTROL Créer]**. Vous êtes redirigé vers la page **[!UICONTROL Configuration du compte technique Adobe IMS]**. Par défaut, l’onglet **Certificat** s’ouvre.
-1. Sélectionnez **[!UICONTROL Adobe Brand Portal]** dans la liste déroulante **[!UICONTROL Solution cloud]**.
+1. Sélectionner **[!UICONTROL Adobe Brand Portal]** dans le **[!UICONTROL Solution cloud]** liste déroulante.
 1. Cochez la case **[!UICONTROL Créer un certificat]** et spécifiez un **alias** pour la clé publique. L’alias constitue le nom de la clé publique.
 1. Cliquez sur **[!UICONTROL Créer un certificat]**. Cliquez sur **[!UICONTROL OK]** pour générer la clé publique.
 
@@ -266,7 +266,7 @@ Procédez comme suit pour générer les informations d’identification du compt
 
    >[!NOTE]
    >
-   >Assurez-vous d’avoir sélectionné l’organisation IMS appropriée (client Brand Portal) dans la liste déroulante (liste d’organisations) située dans l’angle supérieur droit.
+   >Assurez-vous d’avoir sélectionné l’organisation IMS appropriée (client Brand Portal) dans la liste déroulante (organisation) située dans le coin supérieur droit.
 
 1. Cliquez sur **[!UICONTROL Create new project]** (Créer un projet). Un projet vierge portant un nom généré par le système est créé pour votre organisation.
 
@@ -313,7 +313,7 @@ Vous pouvez maintenant utiliser l’ID client (clé API), le secret client et la
 
    ![Create New Integration](assets/create-new-integration1.png)
 
-1. Create a new integration page opens. 
+1. Create an integration page. 
    
    Select your organization from the drop-down list.
 
@@ -377,7 +377,7 @@ Effectuez les étapes suivantes pour configurer le compte IMS.
 >
 >Vous ne devez avoir qu’une seule configuration IMS.
 >
->Assurez-vous que la configuration IMS réussit le contrôle d’intégrité. Si tel n’est pas le cas, elle n’est pas valide. Vous devez la supprimer et créer une configuration valide.
+>Assurez-vous que la configuration IMS réussit le contrôle d’intégrité. Si tel n’est pas le cas, elle n’est pas valide. Vous devez le supprimer et créer une autre configuration valide.
 
 ### Configuration du service cloud {#configure-the-cloud-service}
 

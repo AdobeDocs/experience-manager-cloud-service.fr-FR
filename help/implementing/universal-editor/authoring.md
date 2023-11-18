@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 31%
+source-wordcount: '2398'
+ht-degree: 26%
 
 ---
 
@@ -68,7 +68,7 @@ Sélectionnez le lien Adobe Experience Cloud à gauche de l’en-tête pour acc�
 
 #### Organisation {#organization}
 
-L’organisation dans laquelle vous êtes actuellement connecté s’affiche. Appuyez ou cliquez sur pour passer à une autre organisation si votre Adobe ID est associé à plusieurs d’entre elles.
+L’organisation dans laquelle vous êtes actuellement connecté s’affiche. Sélectionnez cette option pour passer à une autre organisation si votre Adobe ID est associé à plusieurs.
 
 ![Indicateur d’organisation](assets/organization.png)
 
@@ -92,7 +92,7 @@ Cette icône comporte un badge indiquant le nombre d’éléments incomplets act
 
 #### Propriétés de l’utilisateur ou de l’utilisatrice {#user-properties}
 
-Appuyez ou cliquez sur l’icône représentant votre utilisateur ou votre utilisatrice pour accéder à vos paramètres utilisateur. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
+Sélectionnez l’icône représentant votre utilisateur pour accéder à vos paramètres utilisateur. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
 
 ![Propriétés de l’utilisateur](assets/user-properties.png)
 
@@ -114,11 +114,11 @@ Sur la page de début, vous pouvez saisir l’URL du site à modifier à l’aid
 
 >[!NOTE]
 >
->Toute page que vous souhaitez modifier à l’aide de l’éditeur universel doit être [instrumentée pour prendre en charge l’éditeur universel.](getting-started.md)
+>Toute page que vous souhaitez modifier à l’aide d’Universal Editor doit être [instrumenté pour prendre en charge l’éditeur universel.](getting-started.md)
 
 #### Barre d’emplacement {#location-bar}
 
-La barre d’emplacement affiche l’adresse de la page que vous modifiez. Appuyez ou cliquez pour saisir l’adresse d’une autre page à modifier.
+La barre d’emplacement affiche l’adresse de la page que vous modifiez. Sélectionnez cette option pour saisir l’adresse d’une autre page à modifier.
 
 ![Barre d’emplacement](assets/location-bar.png)
 
@@ -128,17 +128,17 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Appuy
 
 >[!NOTE]
 >
->Toute page que vous souhaitez modifier à l’aide de l’éditeur universel doit être [instrumentée pour prendre en charge l’éditeur universel.](getting-started.md)
+>Toute page que vous souhaitez modifier à l’aide d’Universal Editor doit être [instrumenté pour prendre en charge l’éditeur universel.](getting-started.md)
 
 #### Paramètres d’en-tête d’authentification {#authentication-settings}
 
-Appuyez ou cliquez sur l’icône des paramètres d’en-tête d’authentification si vous devez définir un secret d’authentification.
+Sélectionnez l’icône des paramètres d’en-tête d’authentification si vous devez définir un secret d’authentification.
 
 ![Bouton Paramètres de l’en-tête d’authentification](assets/authentication-header-settings.png)
 
 #### Paramètres de l&#39;émulateur {#emulator}
 
-Appuyez ou cliquez sur l’icône d’émulation pour définir la manière dont l’éditeur universel effectue le rendu de la page.
+Sélectionnez l’icône d’émulation pour définir comment l’éditeur universel effectue le rendu de la page.
 
 ![Icône Émulateur](assets/emulator.png)
 
@@ -156,7 +156,7 @@ Vous pouvez également choisir d’émuler un appareil mobile et dans l’édite
 
 #### Ouvrir l’aperçu de l’application {#open-app-preview}
 
-Appuyez ou cliquez sur l’icône d’aperçu de l’application ouverte pour ouvrir la page que vous êtes en train de modifier dans son propre onglet de navigateur, sans l’éditeur pour prévisualiser votre contenu.
+Sélectionnez l’icône d’aperçu de l’application ouverte pour ouvrir la page que vous êtes en train de modifier dans son propre onglet de navigateur, sans l’éditeur pour prévisualiser votre contenu.
 
 ![Ouvrir l’aperçu de l’application](assets/open-app-preview.png)
 
@@ -166,7 +166,7 @@ Appuyez ou cliquez sur l’icône d’aperçu de l’application ouverte pour ou
 
 #### Publier {#publish}
 
-Appuyez ou cliquez sur le bouton Publier pour pouvoir publier en direct les modifications apportées au contenu pour que vos lecteurs et lectrices puissent les utiliser.
+Sélectionnez le bouton Publier pour que vous puissiez publier les modifications apportées au contenu en direct pour que vos lecteurs puissent les utiliser.
 
 ![Bouton Publier](assets/publish.png)
 
@@ -182,7 +182,7 @@ Le rail de mode se trouve juste sous le bouton d’accueil et est toujours prés
 
 #### Mode Aperçu {#preview-mode}
 
-En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtrait sur votre service publié. Cela permet à la personne en charge de la création de contenu de parcourir le contenu en cliquant sur des liens, etc.
+En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtrait sur votre service publié. Cela permet à l’auteur de contenu de parcourir le contenu en cliquant sur des liens, etc.
 
 ![Mode Aperçu](assets/preview-mode.png)
 
@@ -254,7 +254,7 @@ Lors de la sélection d’un élément dans l’arborescence de contenu, l’éd
 
 ##### Modifier {#edit}
 
-Dans [mode Composants,](#component-mode) les options de modification du composant sélectionné s’affichent dans le rail des propriétés. Dans le rail des propriétés, vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également appuyer ou cliquer sur le bouton Modifier.
+Dans [mode Composants,](#component-mode) les options de modification du composant sélectionné s’affichent dans le rail des propriétés. Dans le rail des propriétés, vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également sélectionner le bouton Modifier .
 
 ![Icône Modifier](assets/edit.png)
 
@@ -300,7 +300,7 @@ La modification du contenu est simple et intuitive. Dans [mode Composants](#comp
 
 >[!TIP]
 >
->Notez qu’en mode Composants, appuyer ou cliquer sur le contenu le sélectionne pour le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez en [mode Aperçu.](#preview-mode)
+>Notez qu’en mode Composants, appuyer ou cliquer sur le contenu le sélectionne pour le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez à [mode aperçu.](#preview-mode)
 
 Selon le contenu que vous sélectionnez, vous pouvez avoir différentes options de modification statique et des informations et options supplémentaires pour le contenu dans la variable [rail de propriétés.](#properties-rail)
 
@@ -310,19 +310,19 @@ Si vous êtes dans [mode Composants](#component-mode) et sélectionnez un compos
 
 ![Modification du contenu](assets/editing-content.png)
 
-Appuyez sur Entrée/Retour ou appuyez ou cliquez en dehors de la zone de texte pour enregistrer vos modifications.
+Appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour enregistrer vos modifications.
 
-Lorsque vous appuyez ou cliquez pour sélectionner le composant de texte, ses détails s’affichent dans le rail des propriétés. Vous pouvez également modifier le texte dans le rail.
+Lorsque vous sélectionnez le composant de texte, ses détails s’affichent dans le rail des propriétés. Vous pouvez également modifier le texte dans le rail.
 
 ![Modification de texte dans le rail des propriétés](assets/ue-editing-text-component-rail.png)
 
-De plus, des détails sur votre texte sont disponibles dans le rail de propriétés. Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le rail des propriétés.
+En outre, des détails sur votre texte sont disponibles dans le rail de propriétés. Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le rail des propriétés.
 
 ### Modification de texte enrichi {#edit-rich-text}
 
 Si vous êtes dans [mode Composants](#component-mode) et sélectionnez un composant de texte enrichi, vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fois sur le composant.
 
-Appuyez sur Entrée/Retour ou appuyez ou cliquez en dehors de la zone de texte pour enregistrer vos modifications.
+Appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour enregistrer vos modifications.
 
 ![Modification d’un composant de texte enrichi](assets/rich-text-editing.png)
 
@@ -334,11 +334,11 @@ Si vous êtes dans [mode Composants](#component-mode) et si vous sélectionnez u
 
 ![Modification du média](assets/ue-edit-media.png)
 
-Appuyez ou cliquez sur le bouton **Remplacer** en dessous de l’aperçu de l’image sélectionnée dans le rail de propriétés pour remplacer l’image par une autre de votre bibliothèque de ressources.
+Sélectionnez la variable **Remplacer** en dessous de l’aperçu de l’image sélectionnée dans le rail de propriétés pour remplacer l’image par une autre de votre bibliothèque de ressources.
 
 1. La variable [sélecteur de ressources](/help/assets/asset-selector.md#using-asset-selector) s’ouvre pour vous permettre de sélectionner une ressource.
-1. Appuyez ou cliquez sur pour sélectionner une nouvelle ressource.
-1. Appuyez ou cliquez sur **Sélectionner** pour revenir au rail des propriétés où la ressource a été remplacée.
+1. Sélectionnez cette option pour sélectionner une nouvelle ressource.
+1. Sélectionner **Sélectionner** pour revenir au rail des propriétés où la ressource a été remplacée.
 
 Les modifications sont automatiquement enregistrées dans votre contenu.
 
@@ -365,7 +365,7 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 ### Ajout de composants aux conteneurs {#adding-components}
 
 1. Sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur.
-1. Appuyez ou cliquez ensuite sur l’icône d’ajout dans le rail des propriétés.
+1. Sélectionnez ensuite l’icône d’ajout dans le rail des propriétés.
 
    ![Sélectionner un composant à ajouter à un conteneur](assets/ue-add-component.png)
 
@@ -378,9 +378,9 @@ Le composant est inséré dans le conteneur et peut être modifié dans l’édi
 ### Suppression de composants des conteneurs {#deleting-components}
 
 1. Sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur.
-1. Appuyez ou cliquez sur l’icône chevron du conteneur pour développer son contenu dans l’arborescence de contenu.
+1. Sélectionnez l’icône chevron du conteneur pour développer son contenu dans l’arborescence de contenu.
 1. Sélectionnez ensuite, dans l’arborescence de contenu, un composant dans le conteneur.
-1. Appuyez ou cliquez sur l’icône de suppression dans le rail des propriétés.
+1. Sélectionnez l’icône de suppression dans le rail des propriétés.
 
    ![Suppression d’un composant](assets/ue-delete-component.png)
 
@@ -394,7 +394,7 @@ Le composant sélectionné a été supprimé.
 
 1. Sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur.
 1. Si ce n’est pas déjà fait dans [le mode arborescence de contenu,](#content-tree-mode) passez-y.
-1. Appuyez ou cliquez sur l’icône chevron du conteneur pour développer son contenu dans l’arborescence de contenu.
+1. Sélectionnez l’icône chevron du conteneur pour développer son contenu dans l’arborescence de contenu.
 1. Faites glisser les icônes de poignée en regard des composants dans le conteneur pour afficher que vous puissiez les réorganiser. Faites glisser les composants pour les réorganiser dans le conteneur.
 
    ![Réorganisation des composants](assets/ue-reordering-components.png)

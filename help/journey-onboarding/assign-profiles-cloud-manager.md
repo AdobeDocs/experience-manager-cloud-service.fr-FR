@@ -4,10 +4,10 @@ description: Consultez cette page pour savoir comment affecter des membres de l�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 94%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Après avoir lu ce document, vous devriez :
 
 ## Conditions préalables {#prerequisites}
 
-Pour affecter des membres de l’équipe à des profils de produit, vous devez disposer de détails sur les membres de l’équipe qui doivent accéder à AEM as a Cloud Service, notamment :
+Pour affecter des membres de l’équipe à des profils de produit, vous devez disposer d’informations sur les membres de l’équipe qui doivent accéder à AEM as a Cloud Service, notamment :
 
 * leur nom ;
 * leur adresse e-mail ;
@@ -181,7 +181,7 @@ Vous êtes maintenant prêt à poursuivre votre parcours d’intégration en con
 
 ## Ressources supplémentaires {#additional-resources}
 
-Il est recommandé de continuer votre parcours d’intégration comme décrit précédemment. Voici quelques ressources supplémentaires si vous souhaitez approfondir un sujet particulier de ce parcours.
+Il est recommandé de continuer votre parcours d’intégration comme décrit précédemment. Il s’agit de ressources supplémentaires si vous souhaitez approfondir un sujet particulier à partir de ce parcours.
 
 * [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md) : découvrez Cloud Manager, les programmes et les environnements.
 * [Profils de produits Cloud Manager](/help/onboarding/aem-cs-team-product-profiles.md) : découvrez l’équipe et les profils de produits AEM as a Cloud Service.

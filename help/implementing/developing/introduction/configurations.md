@@ -2,10 +2,10 @@
 title: Configurations et l’explorateur de configurations
 description: Découvrez les configurations Adobe Experience Manager (AEM) et comment elles gèrent les paramètres de l’espace de travail dans AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 60%
+source-wordcount: '1487'
+ht-degree: 56%
 
 ---
 
@@ -68,8 +68,8 @@ L’explorateur de configurations permet à un administrateur de créer, gérer 
 
 Il est simple de créer une configuration dans AEM à l’aide du navigateur de configuration.
 
-1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils** -> **Général** -> **Explorateur de configurations**.
-1. Appuyez ou cliquez sur **Créer**.
+1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils** > **Général** > **Explorateur de configuration**.
+1. Sélectionnez **Créer**.
 1. Indiquez un **Titre** et un **Nom** pour votre configuration.
 
    ![Création d’une configuration](assets/configuration-create.png)
@@ -83,7 +83,7 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
    * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Modèles modifiables](/help/sites-cloud/authoring/features/templates.md)
    * diverses configurations de cloud
-1. Appuyez ou cliquez sur **Créer**.
+1. Sélectionnez **Créer**.
 
 >[!TIP]
 >
@@ -93,9 +93,9 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
 
 Si vous considérez les configurations comme des espaces de travail, les droits d’accès peuvent être définis sur ces configurations afin de définir qui peut ou non accéder à ces espaces de travail.
 
-1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils** -> **Général** -> **Explorateur de configurations**.
+1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils** > **Général** > **Explorateur de configuration**.
 1. Sélectionnez la configuration à modifier, puis cliquez sur **Propriétés** dans la barre d’outils.
-1. Sélectionnez les fonctionnalités supplémentaires que vous souhaitez ajouter à la configuration.
+1. Sélectionnez les fonctionnalités supplémentaires à ajouter à la configuration.
 
    >[!NOTE]
    >
@@ -110,7 +110,7 @@ Si vous considérez les configurations comme des espaces de travail, les droits 
 1. Vérifiez les options d’accès qu’un ou plusieurs utilisateurs ou rôles sélectionnés doivent posséder, puis cliquez sur **Ajouter**.
    ![Ajout de droits d’accès à une configuration](assets/configuration-edit.png)
 1. Répétez les étapes pour sélectionner des utilisateurs ou des rôles et attribuer des droits d’accès supplémentaires si nécessaire.
-1. Appuyez ou cliquez sur **Enregistrer et fermer** une fois terminé.
+1. Sélectionner **Enregistrer et fermer** lorsque vous avez terminé.
 
 ## Configurations en tant que développeur {#configurations-developer}
 
@@ -198,7 +198,7 @@ Pour prendre en charge cette recherche de configuration, AEM dispose d’un méc
 
 Les configurations dans AEM reposent sur les configurations basées sur le contexte Sling. Les lots Sling fournissent une API de service qui peut être utilisée pour obtenir des configurations basées sur le contexte. Les configurations basées sur le contexte sont des configurations qui sont liées à une ressource de contenu ou à une arborescence de ressources, comme [décrit dans l’exemple précédent](#developer-example).
 
-Pour plus d’informations sur les configurations basées sur le contexte, des exemples et leur utilisation, [consultez la documentation Sling](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
+Pour plus d’informations sur les configurations basées sur le contexte, des exemples et la manière de les utiliser, voir la section [Documentation Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### Console Web ConfMgr {#confmgr-web-console}
 

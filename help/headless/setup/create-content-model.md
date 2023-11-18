@@ -2,10 +2,10 @@
 title: Création de modèles de fragment de contenu - Configuration découplée
 description: Définissez la structure du contenu que vous allez créer et diffuser à l’aide des fonctionnalités découplées AEM à l’aide des modèles de fragment de contenu.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 97%
+source-wordcount: '478'
+ht-degree: 91%
 
 ---
 
@@ -24,14 +24,14 @@ Les modèles de fragments de contenu définissent la structure des données et d
 Un architecte de l’information ne réaliserait ces tâches qu’occasionnellement, lorsque de nouveaux modèles sont nécessaires. Pour les besoins de ce guide de prise en main, nous n’avons besoin de créer qu’un modèle.
 
 1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Outils**, **Général**, **Modèles de fragments de contenu**.
-1. Appuyez ou cliquez sur le dossier créé lors de la création de votre configuration.
+1. Sélectionnez le dossier créé lors de la création de votre configuration.
 
    ![Le dossier de modèles](../assets/models-folder.png)
-1. Appuyez ou cliquez sur **Créer**.
+1. Sélectionnez **Créer**.
 1. Définissez le **Titre du modèle**, les **Balises** et la **Description**. Vous pouvez également sélectionner/désélectionner l’option **Activer le modèle** pour contrôler si le modèle est immédiatement activé lors de sa création.
 
    ![Création d’un modèle](../assets/models-create.png)
-1. Dans la fenêtre de confirmation, appuyez ou cliquez sur **Ouvrir** pour configurer votre modèle.
+1. Dans la fenêtre de confirmation, sélectionnez **Ouvrir** pour configurer votre modèle.
 
    ![Fenêtre de confirmation](../assets/models-confirmation.png)
 1. Utilisez l’**Éditeur de modèles de fragment de contenu** pour créer votre modèle de fragment de contenu en faisant glisser des champs depuis la colonne **Types de données**.
@@ -42,14 +42,14 @@ Un architecte de l’information ne réaliserait ces tâches qu’occasionnellem
 
    ![Configuration des propriétés](../assets/models-configure-properties.png)
 
-1. Lorsque vous avez fini de créer votre modèle, appuyez ou cliquez sur **Enregistrer**.
+1. Lorsque vous avez terminé de créer votre modèle, sélectionnez **Enregistrer**.
 
 1. Le mode du modèle que vous venez de créer varie selon que vous avez sélectionné ou non **Activer le modèle** lors de la création du modèle :
    * sélectionné - le nouveau modèle sera déjà **Activé**
    * non sélectionné - le nouveau modèle sera créé en mode **Brouillon**
 
 1. S’il n’est pas déjà activé, le modèle doit être **Activé** pour pouvoir l’utiliser.
-   1. Sélectionnez le modèle que vous venez de créer, puis appuyez ou cliquez sur **Activer**.
+   1. Sélectionnez le modèle que vous venez de créer, puis sélectionnez **Activer**.
 
       ![Activation du modèle](../assets/models-enable.png)
    1. Confirmez l’activation du modèle en appuyant ou en cliquant sur **Activer** dans la boîte de dialogue de confirmation.

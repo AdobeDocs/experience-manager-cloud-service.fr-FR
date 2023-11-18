@@ -2,10 +2,10 @@
 title: Externalisation d’URL
 description: L’externaliseur est un service OSGi qui vous permet de transformer par programmation un chemin d’accès aux ressources en une URL absolue et externe.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 86%
+source-wordcount: '651'
+ht-degree: 84%
 
 ---
 
@@ -72,7 +72,7 @@ Pour définir un mappage de domaine pour le service Externalizer, procédez comm
 
    * **`scheme`** est généralement http ou https, mais peut être un autre protocole.
 
-      * Il est recommandé d’utiliser https pour appliquer les liens https.
+      * Adobe recommande d’utiliser https pour appliquer les liens https.
       * Il est utilisé si le code client ne remplace pas le schéma lors de la demande d’externalisation d’une URL.
 
    * **`server`** est le nom d’hôte (un nom de domaine ou une adresse IP).

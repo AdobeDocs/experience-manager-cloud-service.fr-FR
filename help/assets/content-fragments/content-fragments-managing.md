@@ -2,9 +2,9 @@
 title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1876'
 ht-degree: 89%
 
 ---
@@ -149,7 +149,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
    >[!NOTE]
    >
-   >L’option **Enregistrer et fermer** est disponible dans la liste déroulante **Enregistrer**.
+   >**Enregistrer et fermer** est disponible au moyen de la fonction **Enregistrer** liste déroulante.
 
    >[!NOTE]
    >

@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Découvrez comment définir les propriétés requises pour gérer une page dans AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 96%
+source-wordcount: '2270'
+ht-degree: 94%
 
 ---
 
@@ -87,9 +87,9 @@ Les propriétés sont réparties sur plusieurs onglets.
   >* Elles ne prennent pas en charge les modèles d’expression régulière.
   >* ne doit pas être définie sur une page existante.
 
-   * **Ajouter** – Appuyez ou cliquez pour afficher un champ afin de définir une URL d’origine pour la page.
-      * Appuyez ou cliquez de nouveau pour ajouter plusieurs éléments.
-      * Appuyez ou cliquez sur l’icône **Supprimer** pour supprimer l’URL Vanity.
+   * **Ajouter** - Sélectionnez cette option pour afficher un champ permettant de définir une URL de redirection vers un microsite pour la page.
+      * Sélectionnez à nouveau pour ajouter plusieurs.
+      * Sélectionnez la variable **Supprimer** pour supprimer l’URL Vanity.
    * **Rediriger l’URL Vanity** – Indique si vous souhaitez que la page utilise l’URL Vanity.
 
 ### Avancé {#advanced}
@@ -105,7 +105,7 @@ Les propriétés sont réparties sur plusieurs onglets.
       * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
       * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
       * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
-      * Pour plus d’informations, consultez [Noms de page localisés dans les Bonnes pratiques de SEO et de gestion des URL](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Voir [Noms de page localisés sous Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**
 
@@ -147,7 +147,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Image en vedette**
 
-  Sélectionnez et configurez l’image à afficher. Cette option est utilisée dans les composants qui référencent la page, par exemple, les teasers, les listes de pages, etc.
+  Sélectionnez et configurez l’image à afficher. Il est utilisé dans les composants qui référencent la page ; par exemple, les teasers, les listes de pages, etc.
 
    * **Image**
 
@@ -237,7 +237,7 @@ Grâce à une configuration simple, une personne en charge de la création de co
 
 >[!NOTE]
 >
->Pour plus d’informations, consultez la section [Activation des fonctionnalités d’applications web progressives](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Voir [Activation des fonctionnalités d’applications web progressives](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configurer l’expérience d’installation**
 

@@ -2,9 +2,9 @@
 title: Mappage des utilisateurs et utilisatrices et migration des entités principales
 description: Présentation du mappage des utilisateurs et de la migration des entités de sécurité dans AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1004'
 ht-degree: 45%
 
 ---
@@ -34,7 +34,7 @@ L’outil de transfert de contenu et Cloud Acceleration Manager migreront vers l
 Les utilisateurs et utilisatrices AEM peuvent être mappés aux utilisateurs et utilisatrices Adobe IMS correspondants avec la même adresse e-mail.  Ce mapping peut être effectué automatiquement dans CTT (lors de l’étape d’extraction) et s’il est effectué ou non peut être contrôlé par un bouton bascule avant le démarrage de l’extraction. Le paramètre par défaut du bouton (bascule) peut être remplacé par l’utilisateur ou l’utilisatrice lors du démarrage de l’extraction.
 
 * Si le système source est une instance de création, le choix par défaut consistant à effectuer le mappage est _activé_, puisqu’il s’agit du processus recommandé.
-* Si le système source est une instance de publication, le choix par défaut d’effectuer le mappage est _off_, car les utilisateurs ne sont normalement pas migrés ou utilisés sur les instances de publication ; ou s’ils sont utilisés, un autre système d’authentification (c’est-à-dire pas IMS) est généralement utilisé à leur place.
+* Si le système source est une instance de publication, le choix par défaut d’effectuer le mappage est _off_, car les utilisateurs ne sont normalement pas migrés ou utilisés sur les instances de publication ; ou s’ils sont utilisés, un autre système d’authentification (c’est-à-dire pas IMS) est généralement utilisé pour eux.
 
 Que les utilisateurs soient mappés ou non lors de l’extraction, ils sont migrés, avec les groupes, vers le système cloud lors de l’ingestion s’ils sont associés au contenu en cours de migration.
 

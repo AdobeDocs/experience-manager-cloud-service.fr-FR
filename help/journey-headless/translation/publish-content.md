@@ -2,10 +2,10 @@
 title: Publication du contenu découplé traduit
 description: Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1387'
-ht-degree: 97%
+source-wordcount: '1360'
+ht-degree: 83%
 
 ---
 
@@ -63,13 +63,13 @@ La méthode la plus simple pour publier les traductions consiste à accéder au 
 
 Ce chemin d’accès mène aux sous-dossiers pour chaque langue de traduction et vous pouvez choisir laquelle publier.
 
-1. Naviguez vers **Navigation** -> **Assets** -> **Fichiers** et ouvrez le dossier du projet.
+1. Accédez à **Navigation** > **Ressources** > **Fichiers** et ouvrez le dossier du projet.
 1. Vous pouvez y voir le dossier racine de langue et tous les autres dossiers de langue. Sélectionnez la ou les langues localisées que vous souhaitez publier.
    ![Sélectionner le dossier de langue](assets/select-language-folder.png)
-1. Appuyez ou cliquez sur **Gérer la publication**.
-1. Dans la fenêtre **Gérer la publication**, assurez-vous que **Publier** est automatiquement sélectionné sous **Action** et que **Maintenant** est sélectionné sous **Planification**. Cliquez ou appuyez sur **Suivant**.
+1. Sélectionner **Gérer la publication**.
+1. Dans la fenêtre **Gérer la publication**, assurez-vous que **Publier** est automatiquement sélectionné sous **Action** et que **Maintenant** est sélectionné sous **Planification**. Sélectionnez **Suivant**.
    ![Gérer les options de publication](assets/manage-publication-options.png)
-1. Dans la fenêtre **Gérer la publication**, vérifiez que le ou les chemins appropriés sont sélectionnés. Cliquez ou appuyez sur **Publier**.
+1. Dans la fenêtre **Gérer la publication**, vérifiez que le ou les chemins appropriés sont sélectionnés. Sélectionner **Publier**.
    ![Gérer la portée de la publication](assets/manage-publication-scope.png)
 1. AEM confirme l’action de publication avec un message pop-up en bas de l’écran.
    ![Bannière Ressources publiées](assets/resources-published-message.png)
@@ -92,29 +92,29 @@ Cependant, comme auparavant, le processus est légèrement différent si vous av
 
 ### Mise à jour d’un projet de traduction créé automatiquement {#updating-automatic-project}
 
-1. Accédez à **Navigation** -> **Ressources** -> **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
+1. Accédez à **Navigation** > **Ressources** > **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
 1. Sélectionnez la racine de langue de votre projet. Dans ce cas, nous avons sélectionné `/content/dam/wknd/en`.
-1. Appuyez ou cliquez sur le sélecteur de rail et affichez le panneau **Références**.
-1. Appuyez ou cliquez sur **Copies de langue**.
+1. Sélectionnez le sélecteur de rail et affichez le **Références** du panneau.
+1. Sélectionner **Copies de langue**.
 1. Cochez l’option **Copies de langue**.
 1. Développez la section **Mise à jour des copies de langue** en bas du panneau des références.
-1. Dans le menu déroulant **Projet**, sélectionnez **Ajouter à un projet de traduction existant**.
-1. Dans le menu déroulant **Projet de traduction existant**, sélectionnez le projet créé pour la traduction initiale.
-1. Appuyez ou cliquez sur **Démarrer**.
+1. Dans le **Projet** liste déroulante, sélectionnez **Ajouter à un projet de traduction existant**.
+1. Dans le **Projet de traduction existant** , sélectionnez le projet créé pour la traduction initiale.
+1. Sélectionner **Début**.
 
 ![Ajouter des éléments à un projet de traduction existant](assets/add-to-existing-project.png)
 
 Le contenu est ajouté au projet de traduction existant. Pour afficher le projet de traduction :
 
-1. Accédez à **Navigation** -> **Projets**.
-1. Appuyez ou cliquez sur le projet que vous venez de mettre à jour.
-1. Appuyez ou cliquez sur la langue ou l’une des langues que vous avez mises à jour.
+1. Accédez à **Navigation** > **Projets**.
+1. Sélectionnez le projet que vous venez de mettre à jour.
+1. Sélectionnez la langue ou l’une des langues mises à jour.
 
 Vous voyez qu’une nouvelle carte de tâche a été ajoutée au projet. Dans cet exemple, un autre traduction en espagnol a été ajoutée.
 
 ![Tâche de traduction supplémentaire ajoutée](assets/additional-translation-job.png)
 
-Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle carte (nombre de ressources et de fragments de contenu) sont différentes. En effet, AEM reconnaît ce qui a changé depuis la dernière traduction et n’inclut que le contenu qui doit être traduit. Cela inclut la retraduction du contenu mis à jour et la première traduction du nouveau contenu.
+Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle carte (nombre de ressources et de fragments de contenu) sont différentes. En effet, AEM reconnaît ce qui a changé depuis la dernière traduction et inclut uniquement le contenu qui doit être traduit. Cela inclut la retraduction du contenu mis à jour et la première traduction du nouveau contenu.
 
 À partir de là, vous pouvez [démarrer et gérer votre tâche de traduction comme vous l’avez fait pour la traduction originale.](translate-content.md#using-translation-project)
 
@@ -122,22 +122,22 @@ Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle 
 
 Pour mettre à jour une traduction, vous pouvez ajouter à votre projet existant une nouvelle tâche chargée de traduire le contenu mis à jour.
 
-1. Accédez à **Navigation** -> **Projets**.
-1. Appuyez ou cliquez sur le projet que vous devez mettre à jour.
-1. Appuyez ou cliquez sur le bouton **Ajouter** en haut de la fenêtre.
-1. Dans la fenêtre **Ajouter une mosaïque**, appuyez ou cliquez sur **Tâche de traduction** puis sur **Envoyer**.
+1. Accédez à **Navigation** > **Projets**.
+1. Sélectionnez le projet que vous devez mettre à jour.
+1. Sélectionnez la variable **Ajouter** en haut de la fenêtre.
+1. Dans le **Ajouter une mosaïque** fenêtre, sélectionnez **Tâche de traduction** puis **Envoyer**.
 
    ![Ajouter une mosaïque](assets/add-translation-job-tile.png)
 
-1. Sur la carte de la nouvelle tâche de traduction, appuyez ou cliquez sur le bouton chevron situé en haut de la carte, puis sélectionnez **Mettre à jour la cible** pour définir la langue cible de la nouvelle tâche.
+1. Sur la carte de la nouvelle tâche de traduction, cliquez sur le bouton chevron situé en haut de la carte, puis sélectionnez **Mettre à jour Target** pour définir la langue cible de la nouvelle tâche.
 
    ![Mettre à jour la cible](assets/update-target.png)
 
-1. Dans la boîte de dialogue **Sélectionner la langue cible**, utilisez la liste déroulante pour sélectionner la langue, puis appuyez ou cliquez sur **Terminé**.
+1. Dans le **Sélectionner la langue cible** , utilisez la liste déroulante pour sélectionner la langue et sélectionnez **Terminé**.
 
    ![Sélectionner la langue cible](assets/select-target-language.png)
 
-1. Une fois la langue cible de la nouvelle tâche de traduction définie, appuyez ou cliquez sur le bouton représentant des points de suspension en bas de la carte de la tâche pour afficher les détails de la tâche.
+1. Une fois la langue cible de la nouvelle tâche de traduction définie, cliquez sur le bouton représentant des points de suspension en bas de la carte de la tâche pour afficher les détails de la tâche.
 1. La tâche est vide lors de sa première création. Ajoutez du contenu à la tâche en appuyant ou en cliquant sur le bouton **Ajouter** et à l’aide de l’explorateur de chemins d’accès [comme vous l’avez fait lors de la création initiale du projet de traduction.](translate-content.md##manually-creating)
 
 >[!TIP]

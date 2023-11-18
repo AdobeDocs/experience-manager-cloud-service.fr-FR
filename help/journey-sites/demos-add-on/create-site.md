@@ -2,10 +2,10 @@
 title: Créer un site de démonstration
 description: Créez un site de démonstration dans AEM basé sur une bibliothèque de modèles préconfigurés.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 89%
+source-wordcount: '815'
+ht-degree: 72%
 
 ---
 
@@ -21,7 +21,7 @@ Dans le document précédent du parcours du module complémentaire de démonstra
 * Savoir comment activer le module complémentaire de démonstration de référence pour le nouveau programme.
 * Être en mesure d’exécuter un pipeline pour déployer le contenu du module complémentaire.
 
-Cet article décrit l’étape suivante du processus en créant un nouveau site ou un projet AEM Screens dans AEM à partir des modèles du module complémentaire de démonstration de référence.
+Cet article décrit l’étape suivante du processus en créant un site ou un projet AEM Screens dans AEM en fonction des modèles du module complémentaire de démonstration de référence.
 
 ## Objectif {#objective}
 
@@ -35,23 +35,23 @@ Ce document vous aide à comprendre comment créer un site à partir des modèle
 
 Une fois que le pipeline a déployé le module complémentaire de démonstration de référence, vous pouvez accéder à l’environnement de création AEM pour créer des sites de démonstration basés sur le contenu du module complémentaire.
 
-1. Dans la page de présentation du programme de Cloud Manager, appuyez ou cliquez sur le lien vers l’environnement de création AEM.
+1. Dans la page de présentation du programme de Cloud Manager, sélectionnez le lien vers l’environnement de création AEM.
 
    ![Accès à l’environnement de création](assets/access-author.png)
 
-1. Dans le menu principal d’AEM, appuyez ou cliquez sur **Sites**.
+1. Dans le menu principal de l’AEM, sélectionnez **Sites**.
 
    ![Accès aux sites](assets/access-sites.png)
 
-1. Dans la console Sites, appuyez ou cliquez sur **Créer** dans le coin supérieur droit de l’écran, puis sélectionnez **Site à partir d’un modèle** dans la liste déroulante.
+1. Dans la console Sites, sélectionnez **Créer** dans le coin supérieur droit de l’écran, puis sélectionnez **Site à partir du modèle** dans la liste déroulante.
 
    ![Créer un site à partir d’un modèle](assets/create-site-from-template.png)
 
-1. L’assistant Création de site démarre. Dans la colonne de gauche, vous pouvez voir les modèles de démonstration que le pipeline a déployés sur votre instance de création. Appuyez ou cliquez sur l’un d’eux pour le sélectionner et afficher les détails dans la colonne de droite. Si vous souhaitez faire un test ou une démonstration AEM Screens, veillez à choisir le **modèle de site We.Cafe**. Appuyez ou cliquez sur **Suivant**.
+1. L’assistant Création de site démarre. Dans la colonne de gauche, vous pouvez voir les modèles de démonstration que le pipeline a déployés sur votre instance de création. Sélectionnez-en un pour le sélectionner et afficher les détails dans la colonne de droite. Si vous souhaitez tester ou démontrer AEM Screens, veillez à choisir la variable **Modèle de site We.Cafe**. Sélectionnez **Suivant**.
 
-   ![Assistant de création de site](assets/site-creation-wizard.png)
+   ![Assistant Création de site](assets/site-creation-wizard.png)
 
-1. Dans l’écran suivant, indiquez un titre pour votre site ou votre projet Screens. Un nom de site peut être fourni ou généré à partir du titre s’il est omis. Appuyez ou cliquez sur **Créer**.
+1. Dans l’écran suivant, indiquez un titre pour votre site ou votre projet Screens. Un nom de site peut être fourni ou généré à partir du titre s’il est omis. Sélectionnez **Créer**.
 
    * Le titre du site s’affiche dans la barre de titre des navigateurs.
    * Le nom du site fait alors partie de l’URL.
@@ -59,7 +59,7 @@ Une fois que le pipeline a déployé le module complémentaire de démonstration
 
    ![Détails du site](assets/site-details.png)
 
-1. La création du site est confirmée par une boîte de dialogue. Appuyez ou cliquez sur **Terminé**.
+1. La création du site est confirmée par une boîte de dialogue. Sélectionnez **Terminé**.
 
    ![Fin de la création du site](assets/site-creation-complete.png)
 
@@ -77,11 +77,11 @@ Maintenant que votre site de démonstration est créé, vous pouvez le parcourir
 
    ![Mode Colonnes](assets/column-view.png)
 
-1. Appuyez ou cliquez sur le site pour en explorer la structure et le contenu. Le mode Colonnes se développe en permanence lorsque vous naviguez dans l’arborescence de contenu du site de démonstration.
+1. Sélectionnez le site pour explorer sa structure et son contenu. Le mode Colonnes se développe en permanence lorsque vous naviguez dans l’arborescence de contenu du site de démonstration.
 
    ![Structure du site](assets/site-structure.png)
 
-1. Appuyez ou cliquez sur une page pour la sélectionner, puis appuyez ou cliquez sur **Modifier** dans la barre d’outils.
+1. Sélectionnez une page pour la sélectionner, puis sélectionnez **Modifier** dans la barre d’outils.
 
    ![Sélectionner une page](assets/select-page.png)
 
@@ -103,7 +103,7 @@ Maintenant que vous avez terminé cette partie du parcours de module complément
 
 Vous pouvez désormais tester les fonctionnalités d’AEM à l’aide du contenu du module complémentaire. Vous disposez de deux options pour poursuivre votre parcours :
 
-* Si vous souhaitez effectuer une démonstration complète et tester le contenu AEM Screens, assurez-vous d’avoir déployé un site en fonction du **modèle de site We.Cafe** comme décrit précédemment et continuez pour [Activer AEM Screens pour votre site de démonstration.](screens.md)
+* Si vous souhaitez effectuer une démonstration complète et tester le contenu AEM Screens, assurez-vous d’avoir déployé un site en fonction de la variable **Modèle de site We.Cafe** comme décrit précédemment et continuer [Activez AEM Screens pour votre site de démonstration.](screens.md)
 * Si vous utilisez uniquement pour la démonstration du contenu de Sites, continuez à [Gérer vos sites de démonstration,](manage.md) où vous découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 
 ## Ressources supplémentaires {#additional-resources}

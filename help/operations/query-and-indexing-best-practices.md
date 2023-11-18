@@ -3,10 +3,10 @@ title: Bonnes pratiques en matière de requête et d’indexation
 description: Découvrez comment optimiser vos index et requêtes en fonction des bonnes pratiques d’Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 49%
+source-wordcount: '3128'
+ht-degree: 47%
 
 ---
 
@@ -24,7 +24,7 @@ Lors de la conception de la taxonomie d’un référentiel, plusieurs facteurs d
 
 Lors de la conception d’une taxonomie qui tient compte de ces facteurs, il est également important de penser à la « traversabilité » de la conception de l’indexation. Dans ce contexte, la traversabilité est la capacité d’une taxonomie à permettre un accès prévisible au contenu en fonction de son chemin d’accès. Cela permet d’obtenir un système plus efficace, plus facile à gérer qu’un système nécessitant l’exécution de plusieurs requêtes.
 
-De plus, lors de la conception d’une taxonomie, il faut considérer si l’ordre importe. Dans les cas où un ordre explicite n’est pas nécessaire et qu’un grand nombre de nœuds frères est attendu, il est préférable d’utiliser un type de nœud non ordonné tel que `sling:Folder` ou `oak:Unstructured`. Dans les cas où un ordre est obligatoire, `nt:unstructured` et `sling:OrderedFolder` serait plus approprié.
+En outre, lors de la conception d’une taxonomie, il est important de déterminer si l’ordre est important. Dans les cas où un ordre explicite n’est pas nécessaire et qu’un grand nombre de nœuds frères est attendu, il est préférable d’utiliser un type de nœud non ordonné tel que `sling:Folder` ou `oak:Unstructured`. Dans les cas où un ordre est obligatoire, `nt:unstructured` et `sling:OrderedFolder` serait plus approprié.
 
 ### Requêtes dans les composants {#queries-in-components}
 
@@ -46,7 +46,7 @@ Par exemple, si le contenu est stocké dans une taxonomie similaire à :
 
 Le nœud `/content/myUnstructuredContent/parentCategory/childCategory` peut simplement être récupéré ; ses tâches enfants peuvent être analysées et utilisées pour le rendu du composant.
 
-En outre, lorsque vous traitez un ensemble de résultats petit ou homogène, il peut être plus rapide de parcourir le référentiel et de rassembler les nœuds requis, plutôt que de concevoir une requête pour renvoyer le même ensemble de résultats. En règle générale, les requêtes doivent être évitées lorsque cela est possible.
+En outre, lorsque vous avez affaire à un jeu de résultats petit ou homogène, il peut être plus rapide de parcourir le référentiel et de rassembler les noeuds requis, plutôt que de concevoir une requête pour renvoyer le même jeu de résultats. En règle générale, les requêtes doivent être évitées lorsque cela est possible.
 
 ### Prérécupération des résultats {#prefetching-results}
 
@@ -85,7 +85,7 @@ La contrainte principale sur toute requête doit être une correspondance de pro
 
 Le moteur de requête ne prend en compte qu’un seul index. Cela signifie qu’un index existant peut et doit être personnalisé en y ajoutant d’autres propriétés d’index personnalisées.
 
-La section [Aide-mémoire pour les requêtes JCR](#jcr-query-cheatsheet) de ce document répertorie les contraintes disponibles et décrit également ce à quoi une définition d’index doit ressembler pour être récupérée. Utilisez l’[outil Performances des requêtes](#query-performance-tool) pour tester la requête et vous assurer que l’index approprié est utilisé et que le moteur de requête n’a pas besoin d’évaluer les contraintes en dehors de l’index.
+La variable [Aide-mémoire pour les requêtes JCR](#jcr-query-cheatsheet) la section de ce document répertorie les contraintes disponibles et décrit également l’aspect qu’une définition d’index doit avoir pour être récupérée. Utilisez l’[outil Performances des requêtes](#query-performance-tool) pour tester la requête et vous assurer que l’index approprié est utilisé et que le moteur de requête n’a pas besoin d’évaluer les contraintes en dehors de l’index.
 
 ### Commande {#ordering}
 
@@ -138,7 +138,7 @@ L’outil Expliquer la requête permet aux développeurs de comprendre le plan d
 
 Pour expliquer une requête, procédez comme suit :
 
-* Sélectionnez la langue de requête appropriée à l’aide du `Language` menu déroulant.
+* Sélectionnez la langue de requête appropriée à l’aide du `Language` liste déroulante.
 * Saisissez l’instruction de requête dans le champ `Query` champ .
 * Si nécessaire, sélectionnez le mode d’exécution de la requête à l’aide des cases à cocher fournies.
    * Par défaut, les requêtes JCR n’ont pas besoin d’être exécutées pour identifier le plan d’exécution de la requête (ce n’est pas le cas pour les requêtes QueryBuilder).
@@ -309,6 +309,7 @@ Les requêtes qui utilisent un index, mais qui lisent toujours un grand nombre d
 ```
 
 Cela peut se produire pour plusieurs raisons :
+
 1. Toutes les restrictions de la requête ne peuvent pas être traitées à l’index.
    * Dans ce cas, un sur-ensemble du jeu de résultats final est lu à partir de l’index et ensuite filtré dans le moteur de requête.
    * Cette opération est beaucoup plus lente que l’application de restrictions dans la requête d’index sous-jacente.

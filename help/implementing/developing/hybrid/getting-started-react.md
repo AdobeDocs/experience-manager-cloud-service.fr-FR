@@ -2,10 +2,10 @@
 title: Prise en main des SPA dans AEM avec React
 description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 97%
+source-wordcount: '1139'
+ht-degree: 94%
 
 ---
 
@@ -117,7 +117,7 @@ Un composant image simplifié est utilisé à titre d’exemple, mais tous les c
 
 ### index.js {#index-js}
 
-Le point d’entrée dans la SPA est bien entendu le fichier `index.js` présenté ici de manière simplifiée afin que l’accent porte sur le contenu important.
+Le point d’entrée dans la SPA est le fichier `index.js` présenté ici de manière simplifiée afin que l’accent porte sur le contenu important.
 
 ```
 import ReactDOM from 'react-dom';
@@ -266,4 +266,4 @@ Il est régulièrement nécessaire que les composants d’une application sur un
 * La section [Présentation de l’éditeur de SPA](editor-overview.md) examine de plus près le modèle de communication entre AEM et la SPA.
 * Le tutoriel [Projet SPA WKND](wknd-tutorial.md) est un tutoriel détaillé qui met en œuvre un projet SPA simple dans AEM.
 * La section [Mappage d’un modèle dynamique sur un composant pour les SPA](model-to-component-mapping.md) explique le mappage d’un modèle dynamique sur un composant et présente son fonctionnement au sein des SPA dans AEM.
-* La section [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) aborde en détail le fonctionnement du SDK SPA pour AEM si vous souhaitez mettre en œuvre des SPA dans AEM pour un framework autre que React ou Angular ou recherchez simplement une compréhension plus approfondie.
+* [Blueprint SPA](blueprint.md) offre un aperçu détaillé du fonctionnement du SDK SPA pour AEM si vous souhaitez mettre en oeuvre des  dans pour un framework autre que React ou Angular ou souhaitez simplement une compréhension plus approfondie.

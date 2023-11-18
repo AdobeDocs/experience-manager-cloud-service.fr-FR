@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 95%
+source-wordcount: '1390'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ Ce document vous aide à comprendre comment commencer à traduire le contenu d�
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
-Un certain nombre d’exigences s’imposent avant de vous lancer dans la traduction de votre contenu AEM.
+Avant de commencer à traduire votre contenu AEM, plusieurs exigences s’appliquent.
 
 ### Connaissances {#knowledge}
 
@@ -65,7 +65,7 @@ La console Sites fournit un aperçu de la structure de votre contenu, ce qui fac
 
 Pour accéder à la console Sites, procédez comme suit :
 
-1. Dans le menu de navigation globale, cliquez ou appuyez sur **Navigation** -> **Sites**.
+1. Dans le menu de navigation globale, sélectionnez **Navigation** > **Sites**.
 1. La console Sites s’ouvre au niveau supérieur de votre contenu.
 1. Assurez-vous que le **Mode Colonnes** est sélectionné à l’aide du sélecteur d’affichage situé en haut à droite de la fenêtre.
 
@@ -75,7 +75,7 @@ Pour accéder à la console Sites, procédez comme suit :
 
    ![Hiérarchie du contenu](assets/sites-console-hierarchy.png)
 
-1. Lorsque vous appuyez ou cliquez sur la case à cocher d’un élément dans une colonne, vous sélectionnez cet élément et affichez les détails de l’élément sélectionné dans la colonne de droite, ainsi que le nombre d’actions disponibles pour l’élément sélectionné dans la barre d’outils ci-dessus.
+1. En appuyant ou en cliquant sur la case à cocher d’un élément dans une colonne, il sélectionne cet élément et affiche les détails de l’élément sélectionné dans la colonne de droite, ainsi que plusieurs actions disponibles pour l’élément sélectionné dans la barre d’outils ci-dessus.
 
    ![Sélection de contenu](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ La console Sites vous permet de parcourir votre contenu et fournit un aperçu de
 
 Pour modifier votre page :
 
-1. Utilisez la console Sites pour localiser et sélectionner une page. N’oubliez pas que vous devez appuyer ou cliquer sur la case à cocher d’une page pour la sélectionner.
+1. Utilisez la console Sites pour localiser et sélectionner une page. N’oubliez pas que vous devez cocher la case d’une page pour la sélectionner.
 
    ![Sélection d’une page à modifier](assets/sites-editor-select-page.png)
 

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 94%
+source-wordcount: '1072'
+ht-degree: 87%
 
 ---
 
@@ -88,12 +88,12 @@ Consultez la vidéo [Aperçu de la version de décembre 2022](https://video.tv.a
 * Amélioration des composants myAccount
 * Le composant de recommandation de produit prend en charge d’autres types de page (page d’accueil, panier, confirmation de commande).
 * **Liste de souhaits**
-   * Les visiteurs connectés peuvent ajouter des produits à une liste de souhaits.
-   * La gestion de la liste des souhaits et de ses produits est possible via Mon compte.
-   * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une politique (par exemple un teaser de produit ou les informations de produit).
+   * Les visiteurs connectés peuvent ajouter des produits à une liste bloquée.
+   * La gestion de la liste de attente et de ses produits est possible via myAccount
+   * Le bouton &quot;Ajouter à la liste bloquée&quot; peut être activé/désactivé au niveau des composants via une stratégie (exemple de teaser de produit, détails du produit).
    * Disponible en tant que composant principal et dans AEM Venia Storefront
 
-![Liste de souhaits](/help/assets/CIF/wishlist.png)
+<!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
 
 ## Cloud Manager {#cloud-manager}
 
@@ -123,7 +123,7 @@ La date de publication de l’outil de transfert de contenu version v1.8.6 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Validation du contenu : les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, activez-la dans la `System Console` de l’environnement d’AEM source. Consultez [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr#getting-started) pour plus d’informations.
+* Validation du contenu : les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, activez-la dans la `System Console` de l’environnement d’AEM source. Consultez [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr#getting-started) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-ctt}
 

@@ -2,10 +2,10 @@
 title: Architecture de l’éditeur universel
 description: Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et couches.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 89%
+source-wordcount: '650'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ Ce document décrit tous les blocs de création et la manière dont ils échange
 
 >[!TIP]
 >
->Pour voir Universal Editor et son architecture en action, consultez le document . [Prise en main d’Universal Editor dans AEM](getting-started.md) pour savoir comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
+>Pour voir l’éditeur universel et son architecture en action, reportez-vous à [Prise en main de l’éditeur universel dans AEM](getting-started.md). Vous apprendrez à accéder à l’éditeur universel et à commencer à instrumenter votre première application AEM pour l’utiliser.
 
 ### Éditeurs {#editors}
 
@@ -50,7 +50,7 @@ L’éditeur universel s’efforce d’obtenir un SDK minimal. Par conséquent, 
 ### Couche de persistance {#persistence-layer}
 
 * **Modèle de fragment de contenu** – Pour prendre en charge le rail de modification des propriétés de fragment de contenu, l’éditeur de fragment de contenu et les éditeurs basés sur des formulaires, des modèles par composant et fragment de contenu sont requis.
-* **Contenu** – Le contenu peut être stocké n’importe où, par exemple dans AEM, Magento, etc.
+* **Contenu** - Le contenu peut être stocké n’importe où, par exemple dans AEM, Magento, etc.
 
 ![Couche de persistance](assets/persistence-layer.png)
 

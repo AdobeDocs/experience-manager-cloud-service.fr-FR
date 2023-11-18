@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu servent de b
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3060'
-ht-degree: 60%
+source-wordcount: '3058'
+ht-degree: 59%
 
 ---
 
@@ -129,7 +129,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône de la corbeille. Le système vous invite à confirmer l’action.
+   Sélectionnez le champ requis, puis l’icône représentant une corbeille. Le système vous invite à confirmer l’action.
 
    ![Supprimez](assets/cf-cfmodels-remove-icon.png)
 
@@ -374,7 +374,7 @@ Vous pouvez **Activer** ou **Désactiver** vos modèles de fragment de contenu, 
 
 Une fois qu’un modèle a été créé, il doit être activé afin qu’il :
 
-* Être disponible afin d’être sélectionné lors de la création d’un fragment de contenu.
+* Peut être sélectionné lors de la création d’un fragment de contenu.
 * Pouvoir être référencé à partir d’un modèle de fragment de contenu.
 * Être disponible pour GraphQL ; le schéma est ensuite généré.
 

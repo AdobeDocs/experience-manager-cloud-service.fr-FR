@@ -2,10 +2,10 @@
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Les conditions préalables sont simples.
 * Créez un projet de base de SPA AEM à l’aide de [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr?#available-properties).
    * Il s’agit de la base du projet AEM qui est mis à jour pour inclure la SPA externe.
    * Pour les exemples de ce document, nous utilisons [le projet SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=fr#spa-editor) comme point de départ.
-* Gardez la SPA React externe que vous souhaitez intégrer active et à portée de main.
+* Ayez les SPA React externes et opérationnelles que vous souhaitez intégrer à votre disposition.
 
 ## Chargement de la SPA vers le projet AEM {#upload-spa-to-aem-project}
 

@@ -2,10 +2,10 @@
 title: Raccourcis clavier pour les consoles
 description: Gagnez du temps lors de la création grâce à ces raccourcis clavier
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '376'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 94%
 
 ---
 
@@ -65,9 +65,9 @@ En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régi
 
 ## Désactivation des raccourcis clavier {#deactivating-keyboard-shortcuts}
 
-AEM propose des raccourcis clavier pour certaines des fonctions courantes (modification, propriétés, copier/coller, affichage de plusieurs menus de rail latéral, etc.).
+AEM fournit des raccourcis clavier pour certaines des fonctionnalités les plus utilisées (modification, propriétés, copier/coller, affichage de divers menus de rail latéral, etc.).
 
-Pour les utilisateurs et utilisatrices qui n’utilisent pas les raccourcis clavier ou qui ont certaines exigences d’accessibilité, tous les raccourcis clavier peuvent être désactivés.
+Pour les utilisateurs et utilisatrices qui n’utilisent pas de raccourcis clavier ou qui ont certaines exigences d’accessibilité, tous les raccourcis clavier peuvent être désactivés.
 
 Vous pouvez désactiver les raccourcis clavier à deux emplacements :
 

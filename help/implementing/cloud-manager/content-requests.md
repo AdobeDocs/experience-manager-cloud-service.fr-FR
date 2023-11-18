@@ -2,9 +2,9 @@
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 9%
 
 ---
@@ -33,7 +33,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 
 ## Compréhension des requêtes de contenu Cloud Service {#about-content-request}
 
-Les demandes de contenu sont automatiquement suivies en périphérie de Adobe Experience Manager (AEM) as a Cloud Service, par le biais d’une analyse automatisée des fichiers journaux provenant du réseau de diffusion de contenu as a Cloud Service AEM, isolant les demandes renvoyant le contenu du HTML (texte/html) ou JSON (application/json) du réseau de diffusion de contenu, et en fonction d’un certain nombre de règles d’inclusion et d’exclusion détaillées ci-dessous. Une demande de contenu se produit indépendamment du contenu renvoyé qui est diffusé à partir des caches CDN ou en revenant à l’origine du CDN (AEM dispatchers).
+Les demandes de contenu sont automatiquement suivies en périphérie de Adobe Experience Manager (AEM) as a Cloud Service, par le biais d’une analyse automatisée des fichiers journaux provenant du réseau de diffusion de contenu as a Cloud Service AEM, isolant les demandes renvoyant le contenu du HTML (texte/html) ou JSON (application/json) du réseau de diffusion de contenu, et en fonction de plusieurs règles d’inclusion et d’exclusion détaillées ci-dessous. Une demande de contenu se produit indépendamment du contenu renvoyé qui est diffusé à partir des caches CDN ou en revenant à l’origine du CDN (AEM dispatchers).
 
 Pour les clients qui placent leur propre réseau de diffusion de contenu au-dessus d’AEM as a Cloud Service, ce suivi se traduira par des nombres qui ne peuvent pas être utilisés à des fins de comparaison avec les demandes de contenu sous licence, qui devront être mesurées par le client à la périphérie du réseau de diffusion de contenu externe.
 

@@ -2,10 +2,10 @@
 title: Étendre Multi Site Manager
 description: Découvrez comment étendre les fonctionnalités de Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 66%
+source-wordcount: '2425'
+ht-degree: 65%
 
 ---
 
@@ -106,11 +106,11 @@ La `LiveActionFactory` crée des instances de la classe `LiveAction` pour une co
 
 Utilisez le nœud de configuration `LiveAction` dans le référentiel pour stocker les informations qui affectent le comportement d’exécution de l’instance `LiveAction`. Le nœud du référentiel qui stocke la configuration `LiveAction` est disponible pour l’objet `LiveActionFactory` lors de l’exécution. Par conséquent, vous pouvez ajouter des propriétés au nœud de configuration et les utiliser dans votre implémentation `LiveActionFactory` si nécessaire.
 
-Par exemple, une `LiveAction` doit stocker le nom de l’auteur du plan directeur. Une propriété du nœud de configuration inclut le nom de la propriété de la page plan directeur qui stocke les informations. Lorsqu’elle est exécutée, la `LiveAction` récupère le nom de la propriété à partir de la configuration, puis obtient la valeur de la propriété.
+Par exemple, un `LiveAction` doit stocker le nom de l’auteur du plan directeur. Une propriété du nœud de configuration inclut le nom de la propriété de la page plan directeur qui stocke les informations. Lorsqu’elle est exécutée, la `LiveAction` récupère le nom de la propriété à partir de la configuration, puis obtient la valeur de la propriété.
 
 Le paramètre de la méthode [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) est un objet `Resource`. Ceci `Resource` représente l’objet `cq:LiveSyncAction` pour cette action en direct dans la configuration du déploiement.
 
-Consultez le document [Création d’une configuration de déploiement](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) pour plus d’informations.
+Voir [Création d’une configuration de déploiement](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) pour plus d’informations.
 
 Comme d’habitude, lorsque vous utilisez un nœud de configuration, vous devez l’adapter à un objet `ValueMap` :
 
@@ -136,7 +136,7 @@ Les objets suivants sont fournis en tant que paramètres de la méthode `execute
    * La valeur `autoSave` indique si votre `LiveAction` doit enregistrer les modifications apportées au référentiel
    * La variable `reset` indique le mode de réinitialisation du déploiement.
 
-À partir de ces objets, vous pouvez obtenir toutes les informations sur la `LiveCopy`. Vous pouvez également utiliser les objets `Resource` pour obtenir les objets `ResourceResolver`, `Session` et `Node`. Ces objets sont utiles pour manipuler le contenu du référentiel :
+À partir de ces objets, vous pouvez obtenir des informations sur la variable `LiveCopy`. Vous pouvez également utiliser les objets `Resource` pour obtenir les objets `ResourceResolver`, `Session` et `Node`. Ces objets sont utiles pour manipuler le contenu du référentiel :
 
 Dans la première ligne du code suivant, source est l’objet `Resource` de la page source :
 
@@ -349,7 +349,7 @@ Ajoutez des dépendances pour que le compilateur Eclipse puisse référencer les
 
 La classe `LiveActionFactory` suivante implémente une `LiveAction` qui enregistre les messages sur les pages source et cible et copie la propriété `cq:lastModifiedBy` du nœud source vers le nœud cible. Le nom de la live action est `exampleLiveAction`.
 
-1. Dans l’Explorateur de projets Eclipse, cliquez avec le bouton droit sur la `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` module et cliquez sur **Nouveau** -> **Classe**.
+1. Dans l’explorateur de projet Eclipse, cliquez avec le bouton droit sur le package `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` et cliquez sur **Nouveau** > **Classe**.
 
 1. Comme **nom**, entrez `ExampleLiveActionFactory`, puis cliquez sur **Terminer**.
 
@@ -617,7 +617,7 @@ Assurez-vous ensuite que les propriétés suivantes sont correctement configuré
 * Contact e-mail :
 
    * Est exclu des propriétés déployées.
-   * Consultez le document [Configuration de la synchronisation des Live Copies](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) pour plus d’informations.
+   * Voir [Configuration de la synchronisation des Live Copies](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) pour plus d’informations.
 
 * Style visuel clé :
 

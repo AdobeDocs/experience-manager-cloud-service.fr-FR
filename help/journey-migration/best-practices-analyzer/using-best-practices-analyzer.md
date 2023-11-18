@@ -2,10 +2,10 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour comprendre la préparation à la mise à niveau.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 95%
+source-wordcount: '2476'
+ht-degree: 94%
 
 ---
 
@@ -161,7 +161,7 @@ Lorsque vous cliquez sur l’option **CSV** de votre instance AEM, le format CSV
 
 Si le cache a atteint son délai d’expiration, le rapport est de nouveau généré avant la création et le téléchargement du fichier CSV.
 
-Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance. Son format est adapté pour permettre l’affichage et la modification dans une application comme Microsoft Excel. La finalité du rapport est de donner toutes les informations relatives aux résultats sous une forme reproductible. Cette démarche peut s’avérer utile lors de la comparaison des rapports au fil du temps pour mesurer les progrès réalisés.
+Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance. Son format est adapté pour permettre l’affichage et la modification dans une application comme Microsoft Excel. Il est prévu de fournir toutes les informations sur les résultats sous une forme reproductible, ce qui peut s’avérer utile lors de la comparaison des rapports au fil du temps afin de mesurer les progrès réalisés.
 
 Les colonnes du rapport au format CSV sont les suivantes :
 

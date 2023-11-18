@@ -4,10 +4,10 @@ description: Les processus orientés formulaire vous permettent de créer rapide
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser AEM workflows, en utilisant affecter des étapes de tâche, convertir en étape de PDF/A, Générer un document d’étape enregistrée, utiliser des workflows, Signer une étape de document, Générer une étape de sortie imprimée, Générer une sortie de PDF non interactive
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '7446'
-ht-degree: 79%
+source-wordcount: '7444'
+ht-degree: 78%
 
 ---
 
@@ -396,7 +396,7 @@ L’étape Signer le document possède les propriétés suivantes :
 * **[!UICONTROL Processus de signature :]** vous pouvez signer un document dans un ordre séquentiel ou parallèle. Dans un ordre séquentiel, un signataire à la fois reçoit le document pour signature. Une fois que le premier signataire a terminé la signature du document, le document est envoyé au second signataire, etc. Dans l’ordre parallèle, plusieurs signataires signent un document en même temps.
 * **[!UICONTROL URL de redirection :]** spécifiez une URL de redirection. Une fois le document signé, vous pouvez rediriger la personne désignée vers une URL. En règle générale, cette URL contient un message de remerciement ou d’autres instructions.
 * **[!UICONTROL Phase de processus :]** un processus peut avoir plusieurs étapes. Ces phases sont affichées dans la boîte de réception AEM. Vous pouvez définir ces phases dans les propriétés du modèle (**[!UICONTROL Sidekick]** > **[!UICONTROL Page]** > **[!UICONTROL Propriétés de la page]** > **[!UICONTROL Phases]**).
-* **[!UICONTROL Sélectionner les destinataires]**: indiquez la méthode de sélection des destinataires pour le document. Vous pouvez affecter dynamiquement le workflow à un utilisateur ou à un groupe ou ajouter manuellement les détails d’un destinataire. Lorsque vous sélectionnez Manuellement dans la liste déroulante, vous ajoutez les détails du destinataire tels que Email, Role et Authentication method (E-mail, rôle et méthode d’authentification).
+* **[!UICONTROL Sélectionner les destinataires]**: indiquez la méthode de sélection des destinataires pour le document. Vous pouvez affecter dynamiquement le workflow à un utilisateur ou à un groupe ou ajouter manuellement les détails d’un destinataire. Lorsque vous sélectionnez Manuellement dans la liste déroulante, vous ajoutez les détails des destinataires, tels que la méthode Email, Role et Authentication.
 
   >[!NOTE]
   >
@@ -546,7 +546,7 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
 * **[!UICONTROL Sélectionner l’emplacement racine du contenu à l’aide de]** : la racine du contenu est une valeur de chaîne qui spécifie l’URI, la référence absolue ou l’emplacement dans le référentiel pour récupérer les ressources relatives utilisées par la conception de formulaire. Par exemple, si la conception de formulaire fait référence à une image, comme `../myImage.gif`, `myImage.gif` doit être dans le référentiel `repository://`. La valeur par défaut est `repository://`, qui pointe vers le niveau racine du référentiel.
 
-  Lorsque vous sélectionnez une ressource dans votre application, le chemin d’URI racine du contenu doit avoir la structure appropriée. Par exemple, si un formulaire est sélectionné à partir d’une application nommée SampleApp et placé dans `SampleApp/1.0/forms/Test.xdp`, l’URI de la racine du contenu doit être spécifié comme `repository://administrator@password/Applications/SampleApp/1.0/forms/` ou `repository:/Applications/SampleApp/1.0/forms/` (lorsque l’autorité est nulle). Lorsque l’URI de la racine de contenu est spécifié de cette manière, les chemins d’accès de toutes les ressources référencées dans le formulaire seront résolus par rapport à cet URI.
+  Lorsque vous sélectionnez une ressource dans votre application, le chemin d’URI racine du contenu doit avoir la structure appropriée. Par exemple, si un formulaire est sélectionné à partir d’une application nommée SampleApp et placé dans `SampleApp/1.0/forms/Test.xdp`, l’URI de la racine du contenu doit être spécifié comme `repository://administrator@password/Applications/SampleApp/1.0/forms/` ou `repository:/Applications/SampleApp/1.0/forms/` (lorsque l’autorité est nulle). Lorsque l’URI racine du contenu est spécifié de cette manière, les chemins d’accès de toutes les ressources référencées dans le formulaire sont résolus par rapport à cet URI.
 
 * **[!UICONTROL Sélectionner un fichier XCI à l’aide de]** : les fichiers XCI sont utilisés pour décrire les polices et les autres propriétés utilisées pour les éléments de conception de formulaire. Vous pouvez conserver un fichier XCI relatif à la payload, à un chemin d’accès absolu ou à l’aide d’une variable de type de données Document.
 
@@ -574,7 +574,7 @@ saisissez le code de paramètre régional dans la zone littérale ou sélectionn
 
 * **Fichier modèle** : spécifie l’emplacement du modèle XDP. Ce champ est obligatoire.
 
-* **Document de données** : spécifie l’emplacement du fichier XML de données à fusionner avec le modèle.
+* **Document de données**: indique l’emplacement du fichier XML de données qui doit être fusionné avec le modèle.
 
 ### Document de sortie {#output-document}
 

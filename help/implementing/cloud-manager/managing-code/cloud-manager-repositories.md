@@ -2,10 +2,10 @@
 title: Référentiels Cloud Manager
 description: Découvrez comment créer, afficher et supprimer vos référentiels Git dans Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 87%
+source-wordcount: '582'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ Suivez ces étapes pour afficher et gérer les référentiels dans Cloud Manage
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Dans la **Aperçu du programme** , appuyez ou cliquez sur l’icône **Référentiels** pour basculer vers l’onglet **Référentiels** page.
+1. Dans la **Aperçu du programme** , sélectionnez **Référentiels** pour basculer vers l’onglet **Référentiels** page.
 
 1. Cliquez sur **Ajouter un référentiel**.
 

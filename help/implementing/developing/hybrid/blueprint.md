@@ -2,10 +2,10 @@
 title: Plan directeur d’applications sur une seule page (SPA)
 description: Ce document décrit le contrat général et indépendant du framework que tout framework SPA devrait respecter afin de mettre en œuvre des composants SPA modifiables dans AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 100%
+source-wordcount: '2055'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Pour que l’auteur puisse utiliser l’éditeur de page AEM pour modifier les d
 >
 >Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, un calque spécifique au framework composé de modules, composants et services peut être fourni.
 >
->**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous voulez mettre en œuvre un autre framework à utiliser avec AEM.
+>**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous souhaitez mettre en oeuvre un autre framework à utiliser avec AEM.
 
 >[!CAUTION]
 >
@@ -63,7 +63,7 @@ Le reste de ce document, supposé être indépendant du framework, décrit les e
 
 La structure de contenu de la page est stockée dans AEM. Le modèle de la page est utilisé pour mapper et instancier les composants de l’application sur une seule page (SPA). Les développeurs d’applications sur une seule page créent des composants SPA qu’ils mappent sur des composants AEM. Ils utilisent pour cela le type de ressource (ou le chemin d’accès au composant AEM) comme clé unique.
 
-Les composants de la SPA doivent être synchronisés avec le modèle de page et mis à jour avec toute modification apportée au contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
+Les composants de la SPA doivent être synchronisés avec le modèle de page et mis à jour avec toute modification apportée au contenu. Un modèle utilisant des composants dynamiques doit être utilisé pour instancier des composants à la volée en suivant la structure de modèle de page fournie.
 
 ### Champs Meta {#meta-fields}
 
@@ -259,7 +259,7 @@ Le fragment suivant illustre la représentation HTML type d’une structure de c
 
 ## Navigation et routage {#navigation-and-routing}
 
-L’application assure le routage. Le développeur front-end doit commencer par implémenter un composant Navigation (mappé à un composant de navigation AEM). Ce composant doit assurer le rendu des liens URL à utiliser avec une série de chemins d’accès qui afficheront ou masqueront des fragments de contenu.
+L’application assure le routage. Le développeur front-end doit d’abord implémenter un composant Navigation (mappé à un composant de navigation AEM). Ce composant doit assurer le rendu des liens URL à utiliser avec une série de chemins d’accès qui afficheront ou masqueront des fragments de contenu.
 
 La bibliothèque [`PageModelManager`](#pagemodelmanager) sous-jacente et son module [`ModelRouter`](routing.md) (activé par défaut) assurent la prérécupération et l’accès au modèle associé à un chemin de ressource donné.
 

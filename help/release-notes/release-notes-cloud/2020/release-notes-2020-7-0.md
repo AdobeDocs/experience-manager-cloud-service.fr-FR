@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2020.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.7.0. »
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1032'
 ht-degree: 93%
 
 ---
@@ -39,7 +39,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 * La publication des ressources dans [!DNL Dynamic Media] est simplifiée et rendue plus robuste en faisant une partie intégrante du processus de traitement global des ressources à l’aide de microservices de ressources et en améliorant le serveur principal de publication par lots.
 
-* Les étapes de workflow qui ne sont pas compatibles avec un déploiement de Cloud Service sont désormais signalées par un avertissement dans l’éditeur de [!UICONTROL modèle de workflow]. De plus, lors de l’exécution des workflows existants dans un environnement Cloud Service, les étapes de workflow incompatibles sont ignorées.
+* Les étapes de workflow qui ne sont pas compatibles avec un déploiement de Cloud Service sont désormais signalées par un avertissement dans l’éditeur de [!UICONTROL modèle de workflow]. En outre, lors de l’exécution des workflows existants dans un environnement de Cloud Service, les étapes de workflow incompatibles sont ignorées.
 
 * Les modèles de workflow créés par les clients qui sont déployés vers `/conf/global` dans le projet Git associé à l’environnement dans [!DNL Cloud Manager] sont automatiquement déployés vers `/var` et sont donc disponibles dans [!DNL Experience Manager]. Les modèles de workflow de produit sous `/libs` ayant été modifiés par le client ne sont pas automatiquement déployés vers `/var`.
 
@@ -88,12 +88,12 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 
 * Les pipelines de Cloud Manager prennent désormais en charge les variables et les secrets définis par le client.
 
-  Pour plus d’informations, voir Variables de pipeline .
+  Pour plus d’informations, consultez la section Variables de pipeline.
 
 * Les référentiels Maven privés liés à l’authentification sont désormais pris en charge.
 
 * Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
-Pour plus d’informations, voir Utilisation de la prise en charge de Java 11 .
+Consultez Utilisation de la prise en charge de Java 11 pour plus d’informations.
 
 ### Correctifs {#bug-fixes-cm}
 
@@ -121,7 +121,7 @@ Pour plus d’informations, voir Utilisation de la prise en charge de Java 11 .
 
 ### Nouveautés {#what-is-new-foundations}
 
-* [Les journaux peuvent être transférés vers des comptes Splunk.](/help/implementing/developing/introduction/logging.md#splunk-logs), qui permet aux entreprises d’utiliser leur investissement Splunk.
+* [Les journaux peuvent être transférés vers des comptes Splunk.](/help/implementing/developing/introduction/logging.md#splunk-logs), ce qui permet aux entreprises d’utiliser leur investissement Splunk.
 
 * [Une adresse IP de sortie statique et dédiée](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) peut être affectée au trafic sortant programmé dans le code Java, ce qui peut s’avérer utile pour certaines intégrations.
 

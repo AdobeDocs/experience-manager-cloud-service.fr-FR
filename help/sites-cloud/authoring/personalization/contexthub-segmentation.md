@@ -2,10 +2,10 @@
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 95%
+source-wordcount: '1652'
+ht-degree: 88%
 
 ---
 
@@ -86,13 +86,13 @@ Les références suivantes sont disponibles clé en main pour établir un lien d
 
 Pour définir votre nouveau segment, procédez comme suit :
 
-1. Une fois que vous avez [accédé aux segments](#accessing-segments), [sélectionnez le dossier](#organizing-segments) dans lequel vous souhaitez créer le segment.
+1. Après avoir [accédé aux segments](#accessing-segments), [naviguez jusqu’au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment.
 
-1. Appuyez ou cliquez sur le bouton **Créer** et sélectionnez **Créer un segment ContextHub**.
+1. Sélectionnez la variable **Créer** et sélectionnez **Créer un segment ContextHub**.
 
    ![Ajouter un segment](../assets/contexthub-create-segment.png)
 
-1. Dans la section **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
+1. Dans le **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis sélectionnez **Créer**.
 
    ![Nouveau segment](../assets/contexthub-new-segment.png)
 
@@ -103,7 +103,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
 1. Dans la console des segments, modifiez le segment que vous venez de créer pour l’ouvrir dans l’éditeur de segments.
 1. Faites glisser une comparaison ou une référence vers l’éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
-1. Double-cliquez ou appuyez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour modifier les paramètres spécifiques. Dans cet exemple, des personnes situées à Bâle font l’objet d’un test.
+1. Double-sélectionnez l’option de configuration de la nouvelle référence ou du nouveau segment pour éditer les paramètres spécifiques. Dans cet exemple, des personnes situées à Bâle font l’objet d’un test.
 
    ![Test de personnes à Bâle](../assets/contexthub-comparing-property-value.png)
 
@@ -193,7 +193,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Créer un dossier {#create-folder}
 
-1. Après [accès aux segments](#accessing-segments), appuyez ou cliquez sur le bouton **Créer** et sélectionnez **Dossier**.
+1. Après [accès aux segments](#accessing-segments), sélectionnez la variable **Créer** et sélectionnez **Dossier**.
 
    ![Ajouter un dossier](../assets/contexthub-create-segment.png)
 
@@ -205,24 +205,24 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
    ![Créer un dossier](../assets/contexthub-create-folder.png)
 
-1. Appuyez ou cliquez sur **Créer**.
+1. Sélectionnez **Créer**.
 
    ![Confirmer le dossier](../assets/contexthub-confirm-folder.png)
 
 1. Le dossier s’affiche dans la liste des segments.
    * La manière dont vous triez vos colonnes aura une incidence sur l’emplacement d’affichage du nouveau dossier dans la liste.
-   * Vous pouvez appuyer ou cliquer sur les en-têtes de colonne pour adapter votre tri.
+   * Vous pouvez sélectionner les en-têtes de colonne pour ajuster votre tri.
      ![Le nouveau dossier](../assets/contexthub-folder.png)
 
 ### Modifier les dossiers existants {#modify-folders}
 
-1. Après [accès aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
+1. Après [accès aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
 
-1. Appuyez ou cliquez sur **Renommer** dans la barre d’outils pour renommer le dossier.
+1. Sélectionner **Renommer** dans la barre d’outils pour renommer le dossier.
 
-1. Saisissez un nouveau **Titre du dossier** et appuyez ou cliquez sur **Enregistrer**.
+1. Fournissez un nouveau **Titre du dossier** et sélectionnez **Enregistrer**.
 
    ![Renommer un dossier](../assets/contexthub-rename-folder.png)
 
@@ -232,25 +232,25 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Supprimer un dossier
 
-1. Après [accès aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
+1. Après [accès aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
 
-1. Appuyez ou cliquez sur **Supprimer** dans la barre d’outils pour supprimer le dossier.
+1. Sélectionner **Supprimer** dans la barre d’outils pour supprimer le dossier.
 
 1. Une boîte de dialogue présente une liste de dossiers sélectionnés pour suppression.
 
    ![Confirmer la suppression](../assets/contexthub-confirm-segment-delete.png)
 
-   * Appuyez ou cliquez sur **Supprimer** pour confirmer.
-   * Appuyez ou cliquez sur **Annuler** pour abandonner.
+   * Sélectionner **Supprimer** pour confirmer.
+   * Sélectionner **Annuler** pour abandonner.
 
 1. Si l’un des dossiers sélectionnés contient des sous-dossiers ou des segments, leur suppression doit être confirmée.
 
    ![Confirmer la suppression des enfants](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Appuyez ou cliquez sur **Forcer la suppression** pour confirmer.
-   * Appuyez ou cliquez sur **Annuler** pour abandonner.
+   * Sélectionner **Forcer la suppression** pour confirmer.
+   * Sélectionner **Annuler** pour abandonner.
 
 >[!NOTE]
 >

@@ -3,10 +3,10 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.06.0
 feature: Release Information
 exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
-source-wordcount: '237'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 84%
 
 ---
 
@@ -26,4 +26,4 @@ La date de publication de l’outil de transfert de contenu version v2.0.20 est
 Les avantages du Transformateur de contenu sont les suivants :
    * Sûr : un package est créé par le Transformateur de contenu chaque fois qu’il apporte une modification au référentiel pour résoudre les problèmes. Si nécessaire, vous pouvez revenir à l’état précédent en installant le package.
    * Facile à utiliser : le Transformateur de contenu a été intégré à l’outil de transfert de contenu et s’accompagne d’une interface utilisateur simple et intuitive.
-   * Permet de gagner du temps : lorsque vous rencontrez un grand nombre de problèmes de contenu appartenant à une catégorie de modèle, vous pouvez tous les résoudre en quelques clics seulement à l’aide du Transformateur de contenu, afin de réduire de manière significative la durée du processus et la complexité de la migration.
+   * Gagne du temps : lorsque vous rencontrez un grand nombre de problèmes de contenu qui relèvent d’une catégorie de modèle, vous pouvez tous les résoudre en plusieurs clics à l’aide du transformateur de contenu, ce qui réduit considérablement le temps et la complexité de la migration.

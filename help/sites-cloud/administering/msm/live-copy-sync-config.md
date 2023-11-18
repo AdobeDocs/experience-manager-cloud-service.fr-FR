@@ -4,17 +4,17 @@ description: Découvrez les puissantes options de synchronisation des Live Copie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 97%
+source-wordcount: '2414'
+ht-degree: 95%
 
 ---
 
 
-# Configuration de la synchronisation des Live Copies {#configuring-live-copy-synchronization}
+# Configuration de la synchronisation des Live Copies  {#configuring-live-copy-synchronization}
 
-Adobe Experience Manager apporte un certain nombre de configurations de synchronisation prêtes à l’emploi. Avant d’utiliser les Live Copies, tenez compte des points suivants pour définir comment et quand elles sont synchronisées avec leur contenu source.
+Adobe Experience Manager fournit plusieurs configurations de synchronisation prêtes à l’emploi. Avant d’utiliser les Live Copies, tenez compte des points suivants pour définir comment et quand elles sont synchronisées avec leur contenu source.
 
 1. Déterminez si les configurations de déploiement existantes répondent à vos besoins.
 1. Si les configurations de déploiement existantes ne répondent pas à vos besoins, décidez si vous devez créer les vôtres.
@@ -68,7 +68,7 @@ Si les actions installées ne répondent pas à vos exigences, vous pouvez [cré
 | `contentDelete` | Cette action supprime les nœuds de la Live Copy qui n’existent pas sur la source. [Configurez le service **CQ MSM Content Delete Action**](#excluding-properties-and-node-types-from-synchronization) pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. |  |
 | `contentUpdate` | Cette action met à jour le contenu de la Live Copy avec les modifications provenant de la source. [Configurez le service **CQ MSM Content Update Action**](#excluding-properties-and-node-types-from-synchronization) pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. |  |
 | `editProperties` | Cette action modifie les propriétés de la Live Copy. La propriété `editMap` détermine les propriétés modifiées et leur valeur. La valeur de la propriété `editMap` doit utiliser le format suivant : <br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` et `new_value` sont des expressions régulières et `n` est un entier incrémenté.<br>Par exemple, tenez compte de la valeur suivante pour `editMap` :<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Cette valeur modifie les propriétés des nœuds Live Copy comme suit : <br>Les propriétés `sling:resourceType` qui sont définies sur `contentpage` ou sur `homepage` sont configurées sur `mobilecontentpage`.<br>Les propriétés `cq:template` qui sont définies sur `contentpage` sont configurées sur `mobilecontentpage`. | `editMap: (String)` identifie la propriété, la valeur actuelle et la nouvelle valeur. Pour plus d’informations, voir la description. |
-| `notify` | Cette action envoie un événement de page que la page a déployé. Pour recevoir une notification, la personne utilisatrice doit d’abord s’abonner aux événements de déploiement. |  |
+| `notify` | Cette action envoie un événement de page que la page a déployé. Pour être averti, vous devez d’abord vous abonner aux événements de déploiement. |  |
 | `orderChildren` | Cette action commande les nœuds enfants en fonction du plan directeur. |  |
 | `referencesUpdate` | Cette action de synchronisation met à jour les références sur la Live Copy.<br>Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy. Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées. <br>[Configurez le service **CQ MSM References Update Action**](#excluding-properties-and-node-types-from-synchronization) pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. |  |
 | `targetVersion` | Cette action crée une version de la Live Copy.<br>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement. |  |
@@ -156,8 +156,8 @@ La liste ci-après des emplacements où vous pouvez spécifier les configuration
 
 Par exemple, un plan directeur utilise le site [Tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comme contenu source. Un site est créé à partir du plan directeur. Chaque élément de la liste suivante décrit un scénario différent concernant l’utilisation des configurations de déploiement :
 
-* Aucune des pages de plan directeur ou des pages Live Copy n’est configurée pour utiliser une configuration du déploiement. MSM utilise la configuration du déploiement système par défaut pour toutes les pages Live Copy.
-* La page principale du site WKND est configurée avec plusieurs configurations de déploiement. MSM utilise ces configurations de déploiement pour toutes les pages Live Copy.
+* Aucune des pages de plan directeur ou des pages Live Copy n’est configurée pour utiliser une configuration du déploiement. MSM utilise la configuration de déploiement par défaut du système pour toutes les pages Live Copy.
+* La page principale du site WKND est configurée avec plusieurs configurations de déploiement. MSM utilise ces configurations de déploiement pour toutes les pages Live Copy.
 * La page principale du site WKND est configurée avec plusieurs configurations de déploiement et la page principale du site Live Copy est configurée avec un autre ensemble de configurations de déploiement. MSM utilise les configurations de déploiement configurées sur la page principale du site Live Copy.
 
 ### Définition des configurations de déploiement pour une page Live Copy {#setting-the-rollout-configurations-for-a-live-copy-page}
@@ -182,13 +182,13 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
    ![Remplacement de l’héritage de configuration de Live Copy](../assets/live-copy-inherit-override.png)
 
-1. Cliquez/appuyez sur **Enregistrer et fermer**.
+1. Sélectionnez **Enregistrer et fermer**.
 
 ### Définition de la configuration du déploiement pour une page de plan directeur {#setting-the-rollout-configuration-for-a-blueprint-page}
 
 Configurez une page de plan directeur avec les configurations de déploiement à utiliser lorsque la page de plan directeur est déployée.
 
-Notez que les pages enfants de la page de plan directeur héritent de la configuration. Lorsque vous configurez la configuration du déploiement à utiliser, vous risquez de remplacer la configuration qui a été héritée par la page de son parent.
+Les pages enfants de la page de plan directeur héritent de la configuration. Lorsque vous configurez la configuration du déploiement à utiliser, vous risquez de remplacer la configuration qui a été héritée par la page de son parent.
 
 1. Utilisez la console **Sites** pour sélectionner la page racine du plan directeur.
 1. Sélectionnez **Propriétés** dans la barre d’outils.

@@ -2,10 +2,10 @@
 title: Suppression des index Lucene génériques
 description: Découvrez la planification de la suppression des index Lucene génériques et en quoi elle peut vous affecter.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 100%
+source-wordcount: '1335'
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,7 @@ Par exemple, les requêtes de recherche de référence, comme dans l’exemple s
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Afin de prendre en charge des volumes de données client plus importants, Adobe ne crée plus l’index Lucene générique sur de nouveaux environnements AEM as a Cloud Service. De plus, Adobe supprime l’index des référentiels existants. [Consultez la chronologie](#timeline) à la fin de ce document pour plus de détails.
+Afin de prendre en charge des volumes de données client plus importants, Adobe ne crée plus l’index Lucene générique sur de nouveaux environnements AEM as a Cloud Service. En outre, Adobe supprime l’index des référentiels existants. [Consultez la chronologie](#timeline) à la fin de ce document pour plus de détails.
 
 Adobe a déjà ajusté les coûts de lʼindex via les propriétés « `costPerEntry` » et « `costPerExecution` » afin de garantir que dʼautres index tels que `/oak:index/pathreference` soient utilisés de préférence, dans la mesure du possible.
 
@@ -74,7 +74,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## Dépendances potentielles de l’index Lucene générique {#potential-dependencies}
 
-Il existe un certain nombre de domaines dans lesquels vos applications et installations AEM peuvent dépendre d’index Lucene génériques, à la fois sur les instances de création et de publication.
+Il existe plusieurs domaines dans lesquels vos applications et installations d’AEM peuvent dépendre d’index Lucene génériques, à la fois sur les instances de création et de publication.
 
 ### Instance de publication {#publish-instance}
 
@@ -121,7 +121,7 @@ Ainsi, la requête se rabat sur lʼindex de recherche en texte intégral génér
 
 ### Instance d’auteur {#author-instance}
 
-Outre les requêtes dans les servlets dʼapplication client, les composants OSGi et les scripts de rendu, il peut y avoir un certain nombre dʼutilisations spécifiques à lʼauteur de lʼindex Lucene générique.
+Outre les requêtes dans les servlets d’application client, les composants OSGi et les scripts de rendu, il peut y avoir plusieurs utilisations spécifiques à l’auteur de l’index Lucene générique.
 
 #### Recherche par référence {#reference-search}
 

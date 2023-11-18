@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1690'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -65,7 +65,7 @@ Une fois que les [!DNL Azure Media Services] sont configurés dans Experience M
 
 Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]** et cliquez sur le bouton **[!UICONTROL Créer]** pour créer un profil de traitement basé sur l’IA afin de générer la transcription de vos fichiers audio et vidéo. Par défaut, la page du profil de traitement ne reflète que trois onglets (Image, Vidéo et Personnalisé). Cependant, un onglet **[!UICONTROL IA dédiée au contenu]** est visible si vous avez configuré les [!DNL Azure Media Services] dans votre instance [!DNL Experience Manager Assets]. Vérifiez vos informations d’identification [!DNL Azure] si vous ne voyez pas l’onglet **[!UICONTROL IA dédiée au contenu]** lors de la création d’un profil de traitement.
 
-Dans le **[!UICONTROL IA dédiée au contenu]** , cliquez sur l’onglet **[!UICONTROL Ajouter]** pour configurer la transcription. Ici, vous pouvez inclure et exclure les formats de fichiers (types MIME) pour la génération des transcriptions en sélectionnant les types de fichiers dans la liste déroulante. Dans l’illustration suivante, tous les fichiers audio et vidéo pris en charge sont inclus et les fichiers texte sont exclus.
+Dans le **[!UICONTROL IA dédiée au contenu]** , cliquez sur l’onglet **[!UICONTROL Ajouter]** pour configurer la transcription. Ici, vous pouvez inclure et exclure les formats de fichiers (types MIME) pour générer les transcriptions en sélectionnant les types de fichiers dans la liste déroulante. Dans l’illustration suivante, tous les fichiers audio et vidéo pris en charge sont inclus et les fichiers texte sont exclus.
 
 Activez le bouton (bascule) **[!UICONTROL Créer une transcription VTT dans le même répertoire]** pour créer et stocker le rendu de transcription (fichier .vtt) dans le même dossier que la ressource d’origine. Les autres rendus sont également générés par le workflow de traitement des ressources de la gestion des actifs numériques par défaut, quel que soit ce paramètre.
 

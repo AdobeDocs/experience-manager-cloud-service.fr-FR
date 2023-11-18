@@ -2,10 +2,10 @@
 title: Configuration de ContextHub
 description: Découvrez comment configurer ContextHub, un framework pour stocker, manipuler et présenter des données contextuelles.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 99%
+source-wordcount: '1629'
+ht-degree: 87%
 
 ---
 
@@ -43,10 +43,10 @@ Les icônes sont des références de la [bibliothèque d’icônes CoralUI](http
 
 Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsque vous créez le mode d’interface utilisateur, vous fournissez le titre et l’icône qui s’affichent dans la barre d’outils ContextHub.
 
-1. Sur le rail d’Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
-1. Cliquez ou appuyez sur le conteneur de configuration par défaut.
-1. Cliquez ou appuyez sur Configuration ContextHub.
-1. Cliquez ou appuyez sur le bouton Créer, puis sur Mode d’interface utilisateur ContextHub.
+1. Sur le rail du Experience Manager, sélectionnez Outils > Sites > ContextHub.
+1. Sélectionnez le conteneur de configuration par défaut.
+1. Sélectionnez la configuration ContextHub.
+1. Sélectionnez le bouton Créer , puis le mode d’IU ContextHub.
 
    ![Ajout d’un mode d’IU](assets/contexthub-ui-mode.png)
 
@@ -56,7 +56,7 @@ Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsq
    * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
    * Activé : sélectionnez cette option pour afficher le mode d’interface utilisateur dans la barre d’outils ContextHub
 
-1. Cliquez ou appuyez sur Enregistrer.
+1. Sélectionnez Enregistrer.
 
 ### Ajout d’un module d’IU {#adding-a-ui-module}
 
@@ -76,11 +76,11 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Affiche des statistiques sur les balises de page. | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | Affiche les informations de profil de l’utilisateur actuel, y compris `authorizableID`, `displayName` et `familyName`. Vous pouvez modifier la valeur de `displayName` et de `familyName`. | `profile` |
 
-1. Sur le rail d’Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
-1. Cliquez ou appuyez sur le conteneur de configuration auquel vous souhaitez ajouter un module d’UI.
+1. Sur le rail du Experience Manager, sélectionnez Outils > Sites > ContextHub.
+1. Sélectionnez le conteneur de configuration auquel vous souhaitez ajouter un module d’IU.
 1. Cliquez ou saisissez la configuration ContextHub à laquelle vous souhaitez ajouter le module d’UI.
-1. Cliquez ou appuyez sur le mode d’UI auquel vous ajoutez le module d’UI.
-1. Cliquez ou appuyez sur le bouton Créer, puis sur Module d’UI ContextHub (générique).
+1. Sélectionnez le mode d’IU auquel vous ajoutez le module d’IU.
+1. Sélectionnez le bouton Créer , puis le module d’IU ContextHub (générique).
 
    ![Module d’IU ContextHub](assets/contexthub-ui-module.png)
 
@@ -91,7 +91,7 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
    * Activé : sélectionnez cette option pour afficher le module d’UI dans la barre d’outils ContextHub
 
 1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON pour configurer le module d’UI.
-1. Cliquez ou appuyez sur Enregistrer.
+1. Sélectionnez Enregistrer.
 
 ## Création d’un magasin ContextHub {#creating-a-contexthub-store}
 
@@ -111,18 +111,18 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | Magasin pour les segments ContextHub résolus et non résolus. Récupère automatiquement les segments de SegmentManager ContextHub |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | Stocke la latitude et la longitude de l’emplacement du navigateur. |
-| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | Définit les propriétés et les fonctionnalités d’un certain nombre d’appareils et détecte l’appareil client actuel. |
+| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | Définit les propriétés et les fonctionnalités de plusieurs appareils et détecte l’appareil client actuel. |
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | Stocke les données de profil de l’utilisateur actuel. |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Stocke des informations sur le client, telles que les informations relatives à l’appareil, le type de navigateur et l’orientation de la fenêtre. |
 
-1. Sur le rail d’Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
-1. Cliquez ou appuyez sur le conteneur de configuration par défaut.
-1. Cliquez ou appuyez sur Configuration ContextHub
-1. Pour ajouter un magasin, cliquez ou appuyez sur l’icône Créer, puis sur Configuration de magasin ContextHub.
+1. Sur le rail du Experience Manager, sélectionnez Outils > Sites > ContextHub.
+1. Sélectionnez le conteneur de configuration par défaut.
+1. Sélectionnez Configuration ContextHub
+1. Pour ajouter un magasin, cliquez sur l’icône Créer , puis sélectionnez Configuration de magasin ContextHub.
 
    ![Configuration du magasin ContextHub](assets/contexthub-store-configuration.png)
 
-1. Indiquez les valeurs des propriétés de configuration de base, puis cliquez ou appuyez sur Suivant :
+1. Indiquez les valeurs des propriétés de configuration de base, puis sélectionnez Suivant :
 
    * **Titre de configuration :** le titre qui identifie le magasin
    * **Type de magasin :** la valeur de la propriété storeType du magasin candidat sur laquelle baser le magasin
@@ -130,7 +130,7 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
    * **Activé :** sélectionnez cette option pour activer le magasin
 
 1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON dans la zone Configuration des détails (JSON).
-1. Cliquez ou appuyez sur Enregistrer.
+1. Sélectionnez Enregistrer.
 
 ## Exemple : en utilisant un service JSONP  {#example-using-a-jsonp-service}
 
@@ -205,10 +205,10 @@ Une procédure de débogage pour ContextHub peut être activée afin de permettr
 
 Modifiez la configuration de ContextHub et cochez l’option **Débogage**.
 
-1. Dans le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**
-1. Cliquez ou appuyez sur le **Conteneur de configuration** par défaut
-1. Sélectionnez la **Configuration ContextHub** et cliquez ou appuyez sur **Modifier l’élément sélectionné**
-1. Cliquez ou appuyez sur **Débogage** et cliquez ou appuyez sur **Enregistrer**.
+1. Dans le rail, sélectionnez **Outils > Sites > ContextHub**
+1. Sélectionnez la valeur par défaut **Conteneur de configuration**
+1. Sélectionnez la variable **Configuration ContextHub** et sélectionnez **Modifier l’élément sélectionné**
+1. Sélectionner **Déboguer** et sélectionnez **Enregistrer**
 
 ### Via CRXDE {#via-crxde}
 
@@ -243,10 +243,10 @@ ContextHub peut être désactivé pour éviter qu’il charge js/css et s’init
 
 * Modifiez la configuration de ContextHub et cochez l’option **Désactiver ContextHub**
 
-   1. Dans le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**
-   1. Cliquez ou appuyez sur le **Conteneur de configuration** par défaut
-   1. Sélectionnez la **Configuration ContextHub** et cliquez ou appuyez sur **Modifier l’élément sélectionné**
-   1. Cliquez ou appuyez sur **Désactiver ContextHub** et cliquez ou appuyez sur **Enregistrer**
+   1. Dans le rail, sélectionnez **Outils > Sites > ContextHub**
+   1. Sélectionnez la valeur par défaut **Conteneur de configuration**
+   1. Sélectionnez la variable **Configuration ContextHub** et sélectionnez **Modifier l’élément sélectionné**
+   1. Sélectionner **Désactivation de ContextHub** et sélectionnez **Enregistrer**
 
 ou
 

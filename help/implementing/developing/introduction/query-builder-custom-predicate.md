@@ -2,10 +2,10 @@
 title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 97%
 
 ---
 
@@ -101,7 +101,7 @@ Le regroupement des prédicats de métadonnées de réplication avec un évaluat
 >
 >La configuration de nouveaux projets AEM incluant l’utilisation de Maven est expliquée en détail dans [le tutoriel WKND.](develop-wknd-tutorial.md)
 
-Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet. `PredicateEvaluator` fait partie de l’artefact `cq-search` et doit donc être ajouté à votre fichier pom Maven.
+Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet. La variable `PredicateEvaluator` fait partie de la `cq-search` artefact afin qu’il soit ajouté à votre fichier pom Maven.
 
 >[!NOTE]
 >

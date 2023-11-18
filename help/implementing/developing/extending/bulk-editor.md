@@ -1,19 +1,19 @@
 ---
 title: Configuration de la modification en bloc des propriétés de page
 description: Découvrez comment configurer la modification en masse afin de pouvoir modifier les propriétés de plusieurs pages à la fois.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '250'
 ht-degree: 19%
 
 ---
-
 
 # Configuration de la modification en bloc des propriétés de page {#configuring-bulk-editing-of-page-properties}
 
 [Modification en masse des propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) permet de modifier les propriétés de plusieurs pages à la fois.
 
-## Remarques {#considerations}
+## Considérations {#considerations}
 
 Par défaut, les propriétés de page ne sont pas activées pour la modification en masse. Ils doivent être explicitement activés. Lors de la définition des propriétés de page à mettre à disposition pour la modification en masse, vous devez tenir compte de certaines implications, telles que :
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 99%
+source-wordcount: '2316'
+ht-degree: 97%
 
 ---
 
@@ -686,7 +686,7 @@ Navigateur d’onglets en haut :
 
 `}`
 
-En outre, il existe des classes pour définir le style des navigateurs d’onglets (gauche et haut) en fonction de la présence de navigateurs imbriqués ou enfants ou de sous-navigateurs.
+Il existe également des classes pour mettre en forme les navigateurs d’onglets (gauche et haut) selon qu’ils disposent de navigateurs imbriqués/enfants/sous-navigateurs.
 
 <table>
  <tbody>

@@ -1,12 +1,12 @@
 ---
 title: En quoi la vue Assets dans AEM vous est-elle bénéfique ?
-description: En savoir plus sur les principaux avantages de la vue Assets dans AEM. Adobe, qui tire parti de son expertise en matière d’autonomisation des professionnelles et professionnels du marketing et de la création, propose aujourd’hui une nouvelle expérience client révolutionnaire.
+description: En savoir plus sur les principaux avantages de la vue Assets dans AEM. Adobe, qui utilise son expertise pour autonomiser les professionnels du marketing et de la création, propose une nouvelle expérience utilisateur qui change tout le monde.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 86%
+ht-degree: 83%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 86%
 
 ![Déploiment d’Assets Essentials](assets/banner-image.jpg)
 
-Dans le paysage numérique actuel, où la création et la diffusion de contenu en temps réel sont essentielles, une expérience de gestion des actifs numériques (DAM) conçue pour la vitesse marketing en aval est primordiale. Adobe, qui tire parti de son expertise en matière d’autonomisation des professionnelles et professionnels du marketing et de la création, propose aujourd’hui une nouvelle expérience client révolutionnaire. Cette approche axée sur les workflows permet de révolutionner la manière dont les entreprises gèrent leurs ressources numériques dynamiques, en permettant aux personnes spécialisées dans le marketing d’optimiser l’efficacité dans la recherche, la collaboration, la personnalisation et la diffusion des ressources. Ces workflows rationalisés accélèrent la vitesse du contenu et propulsent vos efforts marketing vers de nouveaux sommets.
+Dans le paysage numérique actuel, où la création et la diffusion de contenu en temps réel sont essentielles, une expérience de gestion des actifs numériques (DAM) conçue pour la vitesse marketing en aval est primordiale. Adobe, qui utilise son expertise pour autonomiser les professionnels du marketing et de la création, propose une nouvelle expérience utilisateur qui change tout le monde. Cette approche axée sur les workflows permet de révolutionner la manière dont les entreprises gèrent leurs ressources numériques dynamiques, en permettant aux personnes spécialisées dans le marketing d’optimiser l’efficacité dans la recherche, la collaboration, la personnalisation et la diffusion des ressources. Ces workflows rationalisés accélèrent la vitesse du contenu et propulsent vos efforts marketing vers de nouveaux sommets.
 
 Pour en savoir plus sur les expériences personnalisées disponibles pour Assets as a Cloud Service, voir [Présentation d’Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 

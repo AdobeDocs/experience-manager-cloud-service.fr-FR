@@ -3,9 +3,9 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1676'
 ht-degree: 98%
 
 ---
@@ -396,7 +396,7 @@ le point d’entrée renvoie `400` ou `500`, le cas échéant, lorsqu’il exist
 
   >[!NOTE]
   >
-  >Pour plus d’informations, consultez https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes.
+  >Voir https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoder l’URL de requête devant être utilisé par une application {#encoding-query-url}
 

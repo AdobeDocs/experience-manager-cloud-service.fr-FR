@@ -2,10 +2,10 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3646'
-ht-degree: 99%
+source-wordcount: '3642'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Ainsi, vous avez seulement besoin de redéfinir les modifications à apporter et
 
 ### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
 
-Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir les balises HTML nécessaires pour réaliser le rendu du contenu selon les besoins, dans les environnements de création et de publication.
+Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir le HTML nécessaire pour prendre le contenu requis, puis le rendre selon les besoins, dans les environnements de création et de publication.
 
 Il est recommandé de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
@@ -181,7 +181,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
 | `component.html` | `nt:file` | Fichier de script HTL du composant. |
 | `cq:icon` | `String` | Cette valeur pointe vers l’[icône du composant](#component-icon) et apparaît dans le navigateur de composants. |
 
-Si nous examinons le composant **Texte**, nous voyons plusieurs de ces éléments :
+Si vous observez le **Texte** vous pouvez voir plusieurs de ces éléments :
 
 ![Structure du composant Texte](assets/components-text.png)
 
@@ -250,7 +250,7 @@ Content not found
 
 Pour créer un widget à utiliser dans une boîte de dialogue de composant, vous devez créer un composant de champ de l’IU Granite.
 
-Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. La création d’un champ de formulaire nécessite la création d’un type de ressource. Cela équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
+Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. Pour créer un champ de formulaire, vous devez créer un type de ressource, ce qui équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -441,7 +441,7 @@ La validation du champ dans l’IU Granite et les widgets de l’IU Granite est 
 
 ### Détection de la disponibilité de la boîte de dialogue {#dialog-ready}
 
-Si vous utilisez un script JavaScript personnalisé qui doit être exécuté uniquement lorsque la boîte de dialogue est disponible et prête, vous devez écouter l’événement `dialog-ready`.
+Si vous disposez d’un code JavaScript personnalisé qui ne doit être exécuté que lorsque la boîte de dialogue est disponible et prête, vous devez écouter le message `dialog-ready` .
 
 Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prête à l’emploi, soit chaque fois qu’une modification (création ou mise à jour) a lieu dans le DOM de la boîte de dialogue.
 

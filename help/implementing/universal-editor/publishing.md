@@ -2,10 +2,10 @@
 title: Publication de contenu avec l’éditeur universel
 description: Découvrez comment Universal Editor publie du contenu et comment vos applications peuvent gérer le contenu publié.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 73%
+source-wordcount: '359'
+ht-degree: 67%
 
 ---
 
@@ -34,4 +34,4 @@ Une autre option consiste à déployer l’application dans deux environnements 
 
 L’objectif de l’éditeur universel est de ne pas imposer de modèle particulier, de sorte que l’implémentation puisse atteindre ses objectifs de manière complètement découplée tout en restant la plus simple et directe possible.
 
-L’éditeur universel n’impose pas non plus d’obligation quant à la manière dont un projet particulier doit déterminer à partir de quel niveau diffuser le contenu. Il ouvre plutôt un certain nombre de possibilités et permet au projet de déterminer la solution la mieux adaptée à ses besoins.
+L’éditeur universel n’impose pas non plus d’obligation quant à la manière dont un projet particulier doit déterminer à partir de quel niveau diffuser le contenu. Il active plutôt plusieurs possibilités et permet au projet de déterminer la solution qui convient le mieux à ses propres besoins.

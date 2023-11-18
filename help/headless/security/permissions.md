@@ -3,10 +3,10 @@ title: Considérations relatives aux autorisations pour le contenu découplé
 description: Découvrez les différentes considérations relatives aux autorisations et aux listes de contrôle d’accès pour une mise en œuvre découplée avec Adobe Experience Manager. Découvrez les différentes personnes et les niveaux d’autorisation potentiels nécessaires pour les environnements de création et de publication.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ La possibilité de modifier les **modèles de fragment de contenu** doit être r
 >
 >Les modifications apportées aux modèles de fragment de contenu modifient l’API GraphQL sous-jacente sur laquelle s’appuient les applications découplées.
 
-Si vous souhaitez créer un groupe qui gère les modèles de fragment de contenu, mais sans lui donner un accès administrateur complet, vous pouvez créer un groupe avec les entrées de contrôle d’accès suivantes :
+Si vous souhaitez créer un groupe qui gère les modèles de fragment de contenu sans accès administrateur complet, vous pouvez créer un groupe avec les entrées de contrôle d’accès suivantes :
 
 | Chemin  | Autorisation | Autorisations |
 |-----| -------------| ---------|

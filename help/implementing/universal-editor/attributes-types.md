@@ -2,10 +2,10 @@
 title: Attributs et types
 description: Découvrez les attributs et les types de données requis par l’éditeur universel.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 87%
+source-wordcount: '679'
+ht-degree: 85%
 
 ---
 
@@ -20,7 +20,7 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 
 >[!NOTE]
 >
->La validation du contenu se produit côté serveur. L’éditeur universel fonctionne simplement avec les attributs de données. La validation de leur adéquation au modèle/à la structure doit être traitée au niveau de l’API.
+>La validation du contenu se produit côté serveur. L’éditeur universel fonctionne simplement avec les attributs de données. La validation qu’elles correspondent au modèle/à la structure doit être traitée au niveau de l’API.
 
 ## Propriétés des données {#data-properties}
 

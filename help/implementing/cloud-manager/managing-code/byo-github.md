@@ -2,9 +2,9 @@
 title: Utilisation de vos propres référentiels GitHub dans Cloud Manager
 description: Découvrez comment configurer Cloud Manager pour utiliser vos propres référentiels GitHub.
 feature: Release Information
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '721'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ La configuration se compose de deux étapes principales :
 
 ### Ajouter un référentiel {#add-repo}
 
-1. Dans Cloud Manager, à partir du **Aperçu du programme** , appuyez ou cliquez sur l’icône **Référentiels** pour basculer vers l’onglet **Référentiels** page et clic **Ajouter un référentiel**.
+1. Dans Cloud Manager, à partir du **Aperçu du programme** , sélectionnez **Référentiels** pour basculer vers l’onglet **Référentiels** page et clic **Ajouter un référentiel**.
 
 1. Dans le **Ajouter un référentiel** boîte de dialogue, sélectionnez **Référentiel privé** comme type de référentiel.
 
@@ -39,11 +39,11 @@ La configuration se compose de deux étapes principales :
 
    ![Ajouter son propre référentiel](/help/implementing/cloud-manager/assets/repos/add-own-github.png)
 
-1. Cliquez ou appuyez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 >[!TIP]
 >
->Pour plus d’informations sur la gestion des référentiels dans Cloud Manager, consultez le document . [Référentiels Cloud Manager.](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+>Pour plus d’informations sur la gestion des référentiels dans Cloud Manager, voir [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
 ### Validation de la propriété du référentiel privé {#validate-ownership}
 
@@ -55,9 +55,9 @@ Cloud Manager connaît désormais votre référentiel GitHub, mais il doit toujo
 
 1. Cloud Manager utilise une application GitHub pour interagir de manière sécurisée avec votre référentiel.
    * Un propriétaire de votre organisation GitHub doit installer l’application située à l’adresse `https://github.com/apps/cloud-manager-for-aem-stage` et accordez l’accès au référentiel.
-   * Reportez-vous à la documentation de GitHub pour plus d’informations sur la manière dont cela est effectué.
+   * Consultez la documentation de GitHub pour plus d’informations sur la manière dont cela est effectué.
 
-1. Pour améliorer la sécurité, vous devez créer un fichier secret dans la branche par défaut de votre référentiel. Appuyez ou cliquez sur **Générer**.
+1. Pour améliorer la sécurité, vous devez créer un fichier secret dans la branche par défaut de votre référentiel. Sélectionner **Générer**.
 
 1. Confirmez la génération du fichier secret en appuyant ou en cliquant **Confirmer**.
 
@@ -71,7 +71,7 @@ Cloud Manager connaît désormais votre référentiel GitHub, mais il doit toujo
 
 1. Créez un fichier dans la branche par défaut de votre référentiel GitHub appelé `.well-known/adobe/cloud-manager-challenge` et collez le contenu du fichier secret dans ce fichier et enregistrez-le.
 
-1. Une fois l’application installée et que le fichier secret existe dans le référentiel, vous pouvez appuyer ou cliquer sur **Valider** dans le **Validation de la propriété du référentiel privé** boîte de dialogue.
+1. Une fois l’application installée et le fichier secret présent dans le référentiel, vous pouvez sélectionner **Valider** dans le **Validation de la propriété du référentiel privé** boîte de dialogue.
 
 L’application peut être installée et un fichier secret peut être créé dans n’importe quel ordre. Toutefois, vous devez effectuer les deux étapes avant de pouvoir valider.
 
@@ -79,9 +79,9 @@ Jusqu’à la validation, le référentiel est répertorié avec une icône roug
 
 ![Référentiel non validé](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-Notez que la variable **Type** identifie facilement les référentiels fournis par l’Adobe (**Adobe**) et vos propres référentiels GitHub (**GitHub**).
+La variable **Type** identifie facilement les référentiels fournis par l’Adobe (**Adobe**) et vos propres référentiels GitHub (**GitHub**).
 
-Si vous devez revenir au référentiel à une date ultérieure pour terminer la validation, sur la page **Référentiels** , appuyez ou cliquez sur le bouton représentant des points de suspension dans la ligne représentant le référentiel GitHub que vous venez d’ajouter et sélectionnez **Validation de propriété** dans le menu déroulant.
+Si vous devez revenir au référentiel à une date ultérieure pour terminer la validation, sur la page **Référentiels** , sélectionnez le bouton représentant des points de suspension dans la ligne représentant le référentiel GitHub que vous venez d’ajouter, puis sélectionnez **Validation de propriété** dans le menu déroulant.
 
 ## Utilisation de vos propres référentiels GitHub avec Cloud Manager {#using}
 
@@ -101,7 +101,7 @@ Lorsque la requête de tirage est fermée ou fusionnée, le pipeline de qualité
 
 ## Limites {#limitations}
 
-Gardez les limites suivantes à l’esprit lorsque vous utilisez vos propres référentiels GitHub avec Cloud Manager.
+Limites lors de l’utilisation de vos propres référentiels GitHub avec Cloud Manager.
 
 * Vous ne pouvez pas utiliser les référentiels GitHub comme source directe de référentiel pour les pipelines que vous gérez.
    * Cette fonctionnalité est prévue.

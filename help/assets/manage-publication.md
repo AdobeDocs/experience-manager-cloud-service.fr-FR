@@ -5,10 +5,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez publier ou dépublier des ressources au niveau de la ressource ou du
 
 ## Publication de ressources à l’aide de la publication rapide {#quick-publish}
 
-La publication rapide permet de publier immédiatement le contenu vers la destination sélectionnée. Dans la console [!DNL Experience Manager Assets], accédez au dossier parent et sélectionnez toutes les ressources ou tous les dossiers à publier. Cliquez sur **[!UICONTROL Publication rapide]** dans la barre d’outils, puis sélectionnez dans la liste déroulante la destination où vous souhaitez publier les ressources.
+La publication rapide permet de publier immédiatement le contenu vers la destination sélectionnée. Dans la console [!DNL Experience Manager Assets], accédez au dossier parent et sélectionnez toutes les ressources ou tous les dossiers à publier. Cliquez sur **[!UICONTROL Publication rapide]** dans la barre d’outils, puis sélectionnez destination dans la liste déroulante où vous souhaitez publier les ressources.
 
 ![Publication rapide](assets/quick-publish-to-aem.png)
 
@@ -96,7 +96,7 @@ Après avoir appliqué les filtres, cliquez sur **[!UICONTROL OK]**, puis clique
 
 Dans l’illustration ci-dessus, vous pouvez voir différentes valeurs pour l’attribut **[!UICONTROL Cible de publication]**. Rappelons-nous que vous avez choisi de publier vers [!DNL Experience Manager Assets] (`Destination: Publish`). Alors, pourquoi indique-t-il que seuls un dossier et une ressource sont publiés vers `AEM`, et que les deux autres ressources sont publiées à la fois vers `AEM` et `Dynamic Media` ?
 
-Ici, vous devez comprendre le rôle des propriétés du dossier. Le **[!UICONTROL Mode de publication Dynamic Media]** d’un dossier joue un rôle important dans la publication. Pour afficher les propriétés d’un dossier, sélectionnez-le, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Pour une ressource, consultez les propriétés de son dossier parent.
+Ici, vous devez comprendre le rôle des propriétés du dossier. Le **[!UICONTROL mode de publication Dynamic Media]** d’un dossier joue un rôle important dans la publication. Pour afficher les propriétés d’un dossier, sélectionnez-le, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Pour une ressource, consultez les propriétés de son dossier parent.
 
 Le tableau suivant explique comment la publication se produit en fonction de la **[!UICONTROL Destination]** et du **[!UICONTROL Mode de publication Dynamic Media]** définis :
 
@@ -133,7 +133,6 @@ Changeons maintenant la **[!UICONTROL Destination]** dans le cas d’utilisation
 >Si vous avez personnalisé l’assistant [!DNL Manage Publication], votre personnalisation continue de fonctionner avec les fonctionnalités existantes.
 >
 >Cependant, vous pouvez supprimer la personnalisation existante pour utiliser les nouvelles fonctions [!DNL Manager Publication].
-
 
 ## Publication ultérieure des ressources {#publish-assets-later}
 
@@ -179,9 +178,10 @@ Vous pouvez publier des ressources, des dossiers et des collections dans l’ins
 
 ## Demander la publication {#request-publication}
 
-L’option `Request Publication` permet d’authentifier le workflow des ressources avant de les publier sur l’environnement [!DNL AEM] Assets. [!DNL AEM] fournit différents niveaux d’autorisations à différents utilisateurs et utilisatrices. Vous pouvez être *contributeur ou contributrice*, c’est-à-dire que vous pouvez charger des ressources, mais vous ne pouvez pas les publier tant que les chargements ne sont pas vérifiés. Vous pouvez aussi être *administrateur ou administratrice*, c’est-à-dire que vous pouvez gérer la lecture et l’écriture des workflows des ressources.
+L’option `Request Publication` permet d’authentifier le workflow des ressources avant de les publier sur l’environnement [!DNL AEM] Assets. [!DNL AEM] fournit différents niveaux d’autorisations à différents utilisateurs et utilisatrices. Vous pouvez être *contributeur ou contributrice*, c’est-à-dire que vous pouvez charger des ressources, mais vous ne pouvez pas les publier tant que les chargements ne sont pas vérifiés. En outre, être un *Administration* vous pouvez gérer les workflows de lecture et d’écriture des ressources.
 
 L’option Demander la publication est disponible pour les personnes suivantes :
+
 * **Contributeur ou contributrice :** si vous êtes un utilisateur ou une utilisatrice pouvant contribuer aux ressources [!DNL AEM], vous disposez alors d’un accès limité au workflow [!DNL AEM] Assets. Pour vous, le bouton `Manage publication` est masqué. En tant que contributeur ou contributrice, vous ne pouvez contribuer qu’en ajoutant des ressources, mais vous ne pouvez pas les publier ni disposer d’un accès en lecture au workflow.
 
 * **Utilisateur ou utilisatrice du workflow :** cet utilisateur ou utilisatrice ne peut pas publier de ressources, mais dispose d’un accès en lecture au workflow. En tant qu’utilisateur ou utilisatrice de workflow, vous pouvez :

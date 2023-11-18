@@ -1,13 +1,13 @@
 ---
 title: Personnaliser les vues des propriétés de la page
 description: Découvrez comment les propriétés de page sont affichées et modifiées par les auteurs.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '361'
 ht-degree: 43%
 
 ---
-
 
 # Personnaliser les vues des propriétés de la page{#customizing-views-of-page-properties}
 
@@ -70,10 +70,10 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-cloud/authoring/fun
 
 >[!NOTE]
 >
->Lors de la configuration des propriétés de page à utiliser avec des Live Copies, consultez le document . [Extension du Multi Site Manager](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) pour plus d’informations.
+>Lors de la configuration des propriétés de page à utiliser avec des Live Copies, voir [Extension du Multi Site Manager](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) pour plus d’informations.
 
 ## Exemple de configuration des propriétés de page {#sample-configuration-of-page-properties}
 
 Cet exemple illustre la technique de comparaison des boîtes de dialogue de [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) y compris l’utilisation de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Il illustre également l’utilisation de `cq:showOnCreate` et de `cq:hideOnEdit`.
 
-Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+Vous trouverez le code de cette page sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

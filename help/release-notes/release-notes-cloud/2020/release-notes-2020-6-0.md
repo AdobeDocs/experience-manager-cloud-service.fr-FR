@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.6.0. »
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 91%
+source-wordcount: '1932'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ La version 2.9.0 des [composants principaux](https://experienceleague.adobe.com
 
 ### Correctifs {#sites-bug-fixes}
 
-* Les composants du conteneur de mises en page ne sont pas visibles lorsqu’il est copié et collé de nouveau sur une page.
+* Les composants du conteneur de mise en page ne sont pas visibles lorsqu’il est copié et collé de nouveau sur une page.
 
 * Correction d’un problème lié au redimensionnement du composant de mise en page.
 
@@ -58,13 +58,13 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 ### Nouveautés {#what-is-new-cloud-manager}
 
-* Un utilisateur possédant le rôle *Propriétaire de l’entreprise* dans Cloud Manager peut désormais supprimer un programme Sandbox depuis la page de destination (par le biais d’un bouton d’action rapide sur la carte Programme) ou depuis le programme.
+* Un utilisateur ou une utilisatrice possédant le rôle *Propriétaire de l’entreprise* dans Cloud Manager peut désormais supprimer un programme Sandbox depuis la page de destination (par le biais d’un bouton d’action rapide sur la carte Programme) ou depuis le programme.
 
-  Voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr) pour plus d’informations.
+  Pour plus d’informations, voir [Suppression d’un programme de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr).
 
-* Un utilisateur du programme Sandbox possédant le rôle *Propriétaire d’entreprise* ou *Responsable de déploiement* dans Cloud Manager peut désormais supprimer ses jeux d’environnements de production et d’évaluation via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la carte Environnement de la **Présentation des programmes** et la **Environnements** page. La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
+* Un utilisateur ou une utilisatrice du programme Sandbox possédant le rôle *Propriétaire d’entreprise* ou *Responsable de déploiement* dans Cloud Manager peut désormais supprimer ses jeux d’environnements de production et d’évaluation via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la vignette Environnement dans la page **Vue d’ensemble du programme** et dans la page **Environnements**. La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
 
-  Voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr) pour plus d’informations.
+  Pour plus d’informations, voir [Suppression d’un programme de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr).
 
 * Repères sur la page de destination pour informer l’utilisateur sur la navigation de base.
 
@@ -72,19 +72,19 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Une page **APPRENDRE** est désormais disponible dans Cloud Manager, accessible par le biais de la navigation supérieure. Cette page comprend des ressources destinées à aider les utilisateurs à en savoir plus sur les workflows les plus fréquemment utilisés en fonction du rôle qui leur est attribué dans Cloud Manager.
 
-* Les programmes Sandbox sont maintenant identifiés au moyen d’un **Sandbox** badge affiché sur la carte du programme sur la landing page et en regard du nom du programme dans la variable **Aperçu du programme** page.
+* Les programmes de sandbox sont maintenant identifiés au moyen d’un badge **Sandbox**, affiché dans la vignette du programme sur la page de destination, en regard du nom du programme sur la page **Vue d’ensemble du programme**.
 
 * Un utilisateur possédant le rôle SysAdmin dispose désormais d’un accès d’un simple clic à l’emplacement d’Admin Console d’où peuvent être gérés les rôles des utilisateurs ou les autorisations d’accès à Cloud Manager. Un bouton **Gérer l’accès** est désormais disponible dans la page de destination en regard du bouton **Ajouter le programme**.
 
-  Voir [Tâches SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#sysadmin-tasks) pour plus d’informations.
+  Consultez [Tâches SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#sysadmin-tasks) pour plus d’informations.
 
-* Un utilisateur possédant le rôle SysAdmin dispose désormais d’un accès en un clic à l’instance d’auteur directement à partir de Cloud Manager.
+* Un utilisateur ou une utilisatrice possédant le rôle SysAdmin dispose désormais d’un accès en un clic à l’instance de création directement à partir de Cloud Manager.
 
-  Voir [Gestion de l’accès à l’instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#manage-access-aem) pour plus d’informations.
+  Pour plus d’informations, voir [Gestion de l’accès à l’instance de création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#manage-access-aem).
 
 * Le journal de génération inclut désormais la liste des artefacts détectés, y compris les packages de contenu ignorés.
 
-* L’étape de création valide désormais que tous les packages de contenu générés comprennent toutes les propriétés obligatoires : nom, groupe et version.
+* L’étape Créer valide désormais que tous les packages de contenu générés incluent toutes les propriétés obligatoires : nom, groupe et version.
 
 * L’étape de génération confirme désormais qu’elle a produit au moins un package de contenu.
 
@@ -98,7 +98,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 ### Problèmes connus {#known-issues-cm}
 
-* Les environnements d’un programme Sandbox sont mis en veille lorsqu’aucune activité n’est détectée pendant une certaine durée. Cet état ne sera pas appliqué dans Cloud Manager. Il peut toutefois être appliqué par le biais de Developer Console. Ce problème sera traité dans une prochaine version.
+* Les environnements d’un programme de sandbox sont mis en veille lorsqu’aucune activité n’est détectée pendant une certaine durée. Cet état ne sera pas appliqué dans Cloud Manager. Il peut toutefois être appliqué par le biais de Developer Console. Ce problème sera traité dans une prochaine version.
 
 * Le lien vers Developer Console directement à partir de Cloud Manager n’affiche pas l’option permettant de mettre en veille/réactiver un environnement de programme Sandbox. Pour résoudre ce problème, une fois dans Developer Console, ajoutez le motif `#release-cm-p1234-e5678` à la fin de l’URL, où *1234* correspond à l’identifiant de programme et *5678* à l’identifiant d’environnement. Ce problème sera traité dans une prochaine version.
 

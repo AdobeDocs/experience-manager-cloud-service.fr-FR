@@ -2,10 +2,10 @@
 title: Configurer le pipeline
 description: Créez un pipeline front-end pour gérer la personnalisation du thème de votre site.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 96%
+source-wordcount: '956'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Ainsi, le développement front-end peut fonctionner séparément et parallèleme
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Cloud Manager répertorie les différents programmes disponibles. Appuyez ou cliquez sur celui que vous souhaitez gérer. Si vous commencez avec AEM as a Cloud Service, il est probable qu’un seul programme soit disponible.
+1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celle que vous souhaitez gérer. Si vous commencez avec AEM as a Cloud Service, il est probable qu’un seul programme soit disponible.
 
    ![Sélection d’un programme dans Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -71,7 +71,7 @@ Notez le nom du programme auquel vous avez accédé ou copiez l’URL. Vous devr
 
 Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipeline pour le déploiement front-end.
 
-1. Dans la section **Pipelines** de la page Cloud Manager, appuyez ou cliquez sur le bouton **Ajouter**.
+1. Dans le **Pipelines** de la page Cloud Manager , sélectionnez la variable **Ajouter** bouton .
 
    ![Pipelines](assets/pipelines-add.png)
 
@@ -83,7 +83,7 @@ Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipel
 
    ![Ajouter la configuration du pipeline](assets/add-pipeline-configuration.png)
 
-1. Cliquez ou appuyez sur **Continuer**.
+1. Sélectionnez **Continuer**.
 
 1. Dans l’onglet **Code source** :
    * Sélectionnez **Code frontal** comme type de code à déployer.
@@ -94,7 +94,7 @@ Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipel
 
    ![Informations sur le code source pour l’ajout de pipeline](assets/add-pipeline-source-code.png)
 
-1. Cliquez ou appuyez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 Le nouveau pipeline est créé et visible dans la section **Pipelines** de la fenêtre Cloud Manager. Lorsque vous cliquez ou appuyez sur les points de suspension après le nom du pipeline, les options s’affichent pour modifier ou afficher les détails, si nécessaire.
 

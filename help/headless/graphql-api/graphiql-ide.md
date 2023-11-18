@@ -3,10 +3,10 @@ title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 95%
+source-wordcount: '1137'
+ht-degree: 94%
 
 ---
 
@@ -82,7 +82,7 @@ Vous pouvez exécuter une nouvelle requête immédiatement ou charger et exécut
 
 Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la requête qui sera exécutée lorsque vous :
 
-* cliquez ou appuyez sur l’icône **Exécuter la requête** ;
+* sélectionnez dans la **Exécuter la requête** icon
 * utilisez la combinaison de clavier `Control-Enter`.
 
 ## Variables de requête {#query-variables}
@@ -99,7 +99,7 @@ Les [requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) so
 
 >[!NOTE]
 >
->Pour plus d’informations, consultez [Mise en cache de vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Voir [Mise en cache de vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

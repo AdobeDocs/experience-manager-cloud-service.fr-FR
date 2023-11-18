@@ -2,16 +2,16 @@
 title: Composants
 description: Les composants sont le bloc de création fondamental des pages de contenu dans AEM
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 100%
+source-wordcount: '349'
+ht-degree: 94%
 
 ---
 
 # Composants {#components}
 
-Les composants sont le bloc de création fondamental des pages de contenu dans Adobe Experience Manager (AEM). Composants tels que les images, le texte, les titres, etc. Vous pouvez facilement faire glisser et déposer le contenu pour le créer.
+Les composants sont le bloc de création fondamental des pages de contenu dans Adobe Experience Manager (AEM). Les composants tels que les images, le texte, les titres, etc., peuvent être facilement glissés-déposés pour créer votre contenu.
 
 AEM est fourni avec tout un éventail de composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites web. Ils sont disponibles lors de la [modification d’une page](/help/sites-cloud/authoring/fundamentals/editing-content.md) et sont regroupés par domaine fonctionnel principal (appelé groupe de composants) pour faciliter le filtrage.
 

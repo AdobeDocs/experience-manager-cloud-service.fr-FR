@@ -2,9 +2,9 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2326'
 ht-degree: 48%
 
 ---
@@ -139,7 +139,7 @@ Si les &quot;Mises à jour de version AEM&quot; sont intégrées dans le program
 >
 > Il n’est plus nécessaire de consigner un ticket d’assistance pour que &quot;AEM mises à jour de version&quot; soit désactivé.
 
-Si &quot;AEM mises à jour de version&quot; est actif (c’est-à-dire que les mises à jour sont en cours d’exécution ou en file d’attente pour être exécutées), l’ingestion ne démarre pas et l’interface utilisateur présente le message suivant. Une fois les mises à jour terminées, l’ingestion peut être lancée. Cloud Manager peut être utilisé pour afficher l’état actuel des pipelines du programme.
+Si &quot;AEM mises à jour de version&quot; est actif (c’est-à-dire que les mises à jour sont en cours d’exécution ou sont placées en file d’attente pour être exécutées), l’ingestion ne démarre pas et l’interface utilisateur présente le message suivant. Une fois les mises à jour terminées, l’ingestion peut être lancée. Cloud Manager peut être utilisé pour afficher l’état actuel des pipelines du programme.
 
 >[!NOTE]
 >
@@ -162,6 +162,7 @@ Ce conflit doit être résolu manuellement. Une personne qui connait le contenu 
 ### Échec de l’ingestion de complément en raison de l’impossibilité de supprimer le noeud référencé
 
 Une autre cause commune d&#39;une [Ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) L’échec est un conflit de version pour un noeud particulier sur l’instance de destination. Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
+
 >java.lang.RuntimeException : org.apache.jackrabbit.oak.api.CommitFailedException : OakIntegrity0001 : impossible de supprimer le noeud référencé : 8a289f4-b904-4bd0-8410-15e41e0976a8
 
 Cela peut se produire si un noeud de la destination est modifié entre une ingestion et une **Non effacé** de sorte qu’une nouvelle version ait été créée. Si le jeu de migration a été extrait avec l’option &quot;Inclure les versions&quot; activée, un conflit peut se produire, car la destination possède désormais une version plus récente qui est référencée par l’historique des versions et d’autres contenus. Le processus d’ingestion ne pourra pas supprimer le noeud de version offensante car il est référencé.

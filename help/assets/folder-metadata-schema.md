@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '1090'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1069'
+ht-degree: 78%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
-1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
-1. Sur la page Formulaires de schéma de métadonnées de dossier, appuyez/cliquez sur **[!UICONTROL Créer]**.
-1. Indiquez un nom pour le formulaire, puis appuyez/cliquez sur **[!UICONTROL Créer]**. Le nouveau formulaire de schéma est répertorié dans la page Formulaires de schéma.
+1. Sélectionnez la variable [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
+1. Sur la page Forms de schéma de métadonnées de dossier, sélectionnez **[!UICONTROL Créer]**.
+1. Attribuez un nom au formulaire, puis sélectionnez **[!UICONTROL Créer]**. Le nouveau formulaire de schéma est répertorié dans la page Formulaires de schéma.
 
 ## Modification des formulaires de schéma de métadonnées de dossier {#edit-folder-metadata-schema-forms}
 
@@ -33,18 +33,18 @@ Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouve
 
 Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter des onglets ou des éléments de formulaire au formulaire de schéma de métadonnées.
 
-1. Sur la page Formulaires de schéma, sélectionnez le formulaire que vous avez créé, puis appuyez/cliquez sur l’icône **[!UICONTROL Modifier]** dans la barre d’outils.
-1. Sur la page Éditeur de schéma de métadonnées de dossier, appuyez/cliquez sur l’icône **[!UICONTROL +]** pour ajouter un onglet au formulaire. Pour renommer l’onglet, appuyez/cliquez sur le nom par défaut, puis indiquez le nouveau nom sous **[!UICONTROL Paramètres]**.
+1. Sur la page Forms du schéma, sélectionnez le formulaire que vous avez créé, puis sélectionnez le **[!UICONTROL Modifier]** dans la barre d’outils.
+1. Sur la page Éditeur de schéma de métadonnées de dossier, sélectionnez l’option **[!UICONTROL +]** pour ajouter un onglet au formulaire. Pour renommer l’onglet, sélectionnez le nom par défaut et indiquez le nouveau nom sous **[!UICONTROL Paramètres]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   Pour ajouter d’autres onglets, appuyez/cliquez sur l’icône **[!UICONTROL +]**. Pour supprimer un onglet, appuyez/cliquez sur **[!UICONTROL X]**.
+   Pour ajouter d’autres onglets, sélectionnez le **[!UICONTROL +]** Icône Sélectionner **[!UICONTROL X]** pour supprimer un onglet.
 
 1. Dans l’onglet actif, ajoutez un ou plusieurs composants de l’onglet **[!UICONTROL Créer le formulaire]**.
 
    ![adding_components](assets/adding_components.png)
 
-   Si vous créez plusieurs onglets, appuyez/cliquez sur un onglet spécifique pour ajouter des composants.
+   Si vous créez plusieurs onglets, sélectionnez un onglet particulier pour ajouter des composants.
 
 1. Pour configurer un composant, sélectionnez-le et modifiez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**.
 
@@ -52,7 +52,7 @@ Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Appuyez/cliquez sur **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer les modifications.
+1. Sélectionner **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer les modifications.
 
 ### Composants de création de formulaires {#components-to-build-forms}
 
@@ -101,7 +101,7 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 
 ### Modification d’éléments de formulaire {#editing-form-items}
 
-Pour modifier les propriétés d’éléments de formulaire, appuyez/cliquez sur le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans l’onglet **[!UICONTROL Paramètres.]** Il est recommandé de ne mapper qu’un champ à une propriété donnée dans le schéma de métadonnées. Sinon, le dernier champ ajouté mappé à la propriété est sélectionné par le système.
+Pour modifier les propriétés d’éléments de formulaire, sélectionnez le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans le **[!UICONTROL Paramètres]** . Il est recommandé de ne mapper qu’un champ à une propriété donnée dans le schéma de métadonnées. Sinon, le dernier champ ajouté mappé à la propriété est sélectionné par le système.
 
 **[!UICONTROL Libellé du champ]** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés du dossier.
 
@@ -127,7 +127,7 @@ Pour vous assurer que le composant est affiché correctement dans le formulaire 
 
 ## Suppression de formulaires de schéma de métadonnées de dossier {#delete-folder-metadata-schema-forms}
 
-Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur la page Formulaires de schéma de métadonnées de dossier. Pour supprimer un formulaire, sélectionnez-le, puis appuyez/cliquez sur l’icône Supprimer dans la barre d’outils.
+Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur la page Formulaires de schéma de métadonnées de dossier. Pour supprimer un formulaire, sélectionnez-le et sélectionnez l’icône Supprimer dans la barre d’outils.
 
 ![delete_form](assets/delete_form.png)
 
@@ -139,16 +139,16 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 ### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
+1. Sélectionnez la variable [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**> **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, sélectionnez le formulaire à appliquer à un dossier.
-1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Appliquer au(x) dossier(s)]**.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Appliquer au(x) dossier(s)]**.
 
-1. Sélectionnez le dossier auquel appliquer le schéma, puis appuyez/cliquez sur **[!UICONTROL Appliquer]**. Si un schéma de métadonnées est déjà appliqué au dossier, un message d’avertissement vous informe que vous êtes sur le point de remplacer le schéma existant. Appuyez/cliquez sur **[!UICONTROL Remplacer]**.
+1. Sélectionnez le dossier auquel appliquer le schéma, puis sélectionnez **[!UICONTROL Appliquer]**. Si un schéma de métadonnées est déjà appliqué au dossier, un message d’avertissement vous informe que vous êtes sur le point de remplacer le schéma existant. Sélectionner **[!UICONTROL Remplacer]**.
 1. Ouvrez les propriétés des métadonnées pour le dossier auquel vous avez appliqué le schéma de métadonnées.
 
    ![folder_properties](assets/folder_properties.png)
 
-   Pour afficher les champs de métadonnées du dossier, appuyez/cliquez sur l’onglet **[!UICONTROL Métadonnées du dossier]**.
+   Pour afficher les champs de métadonnées du dossier, sélectionnez la variable **[!UICONTROL Métadonnées de dossier]** .
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
@@ -156,20 +156,20 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 Vous pouvez attribuer un schéma de métadonnées de dossier lors de la création d’un dossier. Si au moins un schéma de métadonnées de dossier existe dans le système, une liste supplémentaire s’affiche dans la boîte de dialogue **[!UICONTROL Créer un dossier]**. Vous pouvez sélectionner le schéma souhaité. Par défaut, aucun schéma n’est sélectionné.
 
-1. Dans l’interface utilisateur [!DNL Experience Manager Assets], appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
+1. Dans la [!DNL Experience Manager Assets] interface utilisateur, sélectionnez **[!UICONTROL Créer]** dans la barre d’outils.
 1. Indiquez un titre et un nom de dossier.
-1. Dans la liste Schéma de métadonnées de dossier, sélectionnez le schéma souhaité. Ensuite, appuyez/cliquez sur **[!UICONTROL Créer]**.
+1. Dans la liste Schéma de métadonnées de dossier, sélectionnez le schéma souhaité. Sélectionnez ensuite **[!UICONTROL Créer]**.
 
    ![select_schema](assets/select_schema.png)
 
 1. Ouvrez les propriétés des métadonnées pour le dossier auquel vous avez appliqué le schéma de métadonnées.
-1. Pour afficher les champs de métadonnées du dossier, appuyez/cliquez sur l’onglet **[!UICONTROL Métadonnées du dossier]**.
+1. Pour afficher les champs de métadonnées du dossier, sélectionnez la variable **[!UICONTROL Métadonnées de dossier]** .
 
 ## Utilisation du schéma de métadonnées de dossier {#use-the-folder-metadata-schema}
 
 Ouvrez les propriétés d’un dossier configuré avec un schéma de métadonnées de dossier. Un onglet **[!UICONTROL Métadonnées de dossier]** s’affiche sur la page des propriétés du dossier. Pour afficher le formulaire de schéma de métadonnées de dossier, sélectionnez cet onglet.
 
-Saisissez les valeurs de métadonnées dans les différents champs, puis appuyez/cliquez sur **[!UICONTROL Enregistrer]** pour les stocker. Les valeurs renseignées sont stockées dans le nœud de dossier du référentiel CRX.
+Saisissez les valeurs de métadonnées dans les différents champs et sélectionnez **[!UICONTROL Enregistrer]** pour stocker les valeurs. Les valeurs renseignées sont stockées dans le nœud de dossier du référentiel CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 

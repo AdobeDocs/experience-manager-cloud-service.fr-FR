@@ -2,10 +2,10 @@
 title: Configuration de l’équipe de développement d’entreprise
 description: Découvrez comment configurer et mettre à l’échelle votre équipe de développement d’entreprise et comment AEM as a Cloud Service peut prendre en charge votre processus de développement.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager prend en charge des configurations multi-équipes flexibles, ajust
 
 Chaque entreprise a des exigences différentes, notamment la configuration de l’équipe, les processus et les processus de développement. La configuration décrite ci-dessous est utilisée par Adobe pour plusieurs projets qui assurent la mise en œuvre d’expériences en s’appuyant sur AEM as a Cloud Service.
 
-Par exemple, les applications Adobe Creative Cloud comme Adobe Photoshop ou Adobe Illustrator, contiennent des ressources de contenu, notamment des tutoriels, des exemples et des guides mis à la disposition des utilisateurs finaux. Ce contenu est consommé par les applications clientes à l’aide d’AEM as a Cloud Service en mode découplé. Pour cela, elles effectuent des appels d’API vers le niveau de publication d’AEM Cloud afin de récupérer le contenu structuré en flux JSON. Par ailleurs, elles exploitent le [réseau de diffusion de contenu (CDN) d’AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) pour diffuser des contenus structurés et non structurés avec des performances optimales.
+Par exemple, les applications Adobe Creative Cloud comme Adobe Photoshop ou Adobe Illustrator, contiennent des ressources de contenu, notamment des tutoriels, des exemples et des guides mis à la disposition des utilisateurs finaux. Ce contenu est consommé par les applications clientes à l’aide d’AEM as a Cloud Service sans interface utilisateur, en effectuant des appels d’API vers le niveau de publication AEM Cloud pour récupérer le contenu structuré en tant que flux JSON et en utilisant la variable [Réseau de diffusion de contenu (CDN) dans AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) pour diffuser du contenu structuré et non structuré avec des performances optimales.
 
 Les équipes qui contribuent à ce projet suivent le processus suivant.
 

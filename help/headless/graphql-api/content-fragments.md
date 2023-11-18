@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4922'
-ht-degree: 98%
+source-wordcount: '4921'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ GraphQL est :
   Voir [GraphQL Foundation](https://foundation.graphql.org/).
 
 <!--
-"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world the tools they need to understand and adopt GraphQL.*". 
 -->
 
 Pour plus d’informations sur l’API GraphQL, voir les sections suivantes (parmi de nombreuses autres ressources) :
@@ -156,13 +156,13 @@ Les autorisations sont celles requises pour accéder aux ressources.
 
 Les requêtes GraphQL sont exécutées avec l’autorisation de l’utilisateur ou utilisatrice AEM de la requête sous-jacente. Si l’utilisateur ou l’utilisatrice ne dispose pas d’un accès en lecture à certains fragments (stockés en tant que ressources), ils ne feront pas partie du jeu de résultats.
 
-En outre, l’utilisateur ou l’utilisatrice doit avoir accès à un point d’entrée GraphQL pour pouvoir exécuter des requêtes GraphQL.
+En outre, l’utilisateur doit avoir accès à un point de terminaison GraphQL pour pouvoir exécuter des requêtes GraphQL.
 
 ## Génération de schémas {#schema-generation}
 
 GraphQL est une API fortement typée, ce qui signifie que les données doivent être clairement structurées et organisées par type.
 
-La spécification GraphQL fournit une série de directives sur la création d’une API robuste pour interroger les données sur une certaine instance. Un client doit pour cela récupérer le [Schéma](#schema-generation), qui contient tous les types nécessaires pour une requête.
+La spécification GraphQL fournit une série de directives sur la création d’une API robuste pour interroger les données sur une certaine instance. Pour ce faire, un client doit récupérer la variable [Schéma](#schema-generation), qui contient tous les types nécessaires à une requête.
 
 Pour les fragments de contenu, les schémas GraphQL (structure et types) reposent sur des [Modèles de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) **activés** et leurs types de données
 
@@ -235,9 +235,9 @@ Le schéma comporte des champs individuels de deux catégories de base :
 
   Une sélection de [types de données](#Data-types) est utilisée pour créer des champs en fonction de la configuration du modèle de fragment de contenu. Les noms des champs proviennent du champ **Nom de la propriété** de l’onglet **Type de données**.
 
-   * Prenez également en compte le paramètre **Rendre en tant que**, car les utilisateurs et utilisatrices peuvent configurer certains types de données. Par exemple, pour configurer un champ de texte monoligne afin de contenir plusieurs textes monolignes, choisissez `multifield` dans la liste déroulante.
+   * Prenez également en compte le paramètre **Rendre en tant que**, car les utilisateurs et utilisatrices peuvent configurer certains types de données. Par exemple, un champ de texte d’une seule ligne peut être configuré pour contenir plusieurs textes d’une seule ligne en choisissant `multifield` dans la liste déroulante.
 
-* GraphQL pour AEM génère également un certain nombre de [champs d’assistance](#helper-fields).
+* GraphQL pour AEM génère également plusieurs [champs d’assistance](#helper-fields).
 
 ### Types de données {#data-types}
 
@@ -245,7 +245,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 | Modèle de fragment de contenu – Type de données | Type GraphQL | Description |
 |--- |--- |--- |
-| Une seule ligne de texte | `String`, `[String]` | Utilisé pour les chaînes simples telles que les noms de créateur ou de créatrice, les noms d’emplacements, etc. |
+| Une seule ligne de texte | `String`, `[String]` | Utilisé pour les chaînes simples telles que les noms d’auteur, les noms d’emplacement, etc. |
 | Plusieurs lignes de texte | `String`, `[String]` | Utilisé pour la sortie de texte, telle que le corps d’un article |
 | Nombre | `Float`, `[Float]` | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
 | Booléen | `Boolean` | Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
@@ -259,7 +259,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 ### Champs d’assistant {#helper-fields}
 
-Outre les types de données des champs générés par l’utilisateur, GraphQL pour AEM génère également un certain nombre de champs *d’assistance* afin de faciliter l’identification d’un fragment de contenu ou de fournir des informations supplémentaires sur un fragment de contenu.
+Outre les types de données pour les champs générés par l’utilisateur, GraphQL pour AEM génère également plusieurs *assistance* pour identifier un fragment de contenu ou fournir des informations supplémentaires sur ce dernier.
 
 Ces [champs d’assistance](#helper-fields) sont précédés d’un `_` pour distinguer ce qui a été défini par l’utilisateur ou l’utilisatrice de ce qui a été généré automatiquement.
 
@@ -365,7 +365,7 @@ Le champ `_variations` a été implémenté pour simplifier la recherche de vari
 
 >[!NOTE]
 >
->Notez que le champ `_variations` ne contient pas de variation `master`, car techniquement les données d’origine (référencées comme *Principal* dans l’interface utilisateur) ne sont pas considérées comme une variation explicite.
+>Le champ `_variations` ne contient pas de variation `master`, car techniquement les données d’origine (référencées comme *Principal* dans l’interface utilisateur) ne sont pas considérées comme une variation explicite.
 
 Voir [Exemple de requête – Toutes les villes avec une variation nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
@@ -571,8 +571,8 @@ Cette fonctionnalité vous permet de trier les résultats de la requête en fonc
 Les critères de tri sont les suivants :
 
 * il s’agit d’une liste de valeurs séparées par des virgules représentant le chemin du champ,
-   * le premier champ de la liste définit l’ordre de tri principal, le second est utilisé si deux valeurs du critère de tri principal sont égales, le troisième si les deux premiers critères sont égaux, etc.
-   * valeur séparée par des points, c’est-à-dire field1.subfield.subfield, etc.
+   * le premier champ de la liste définit l’ordre de tri principal, le second champ est utilisé si deux valeurs du critère de tri principal sont égales, le troisième si les deux premiers critères sont égaux, etc.
+   * notation pointillée, c’est-à-dire field1.subfield.subfield, etc..
 * avec un sens d’ordre optionnel,
    * ASC (croissant) ou DESC (décroissant) ; la valeur par défaut est ASC,
    * le sens d’ordre peut être spécifié par champ : vous pouvez trier un champ par ordre croissant et un autre par ordre décroissant (name, firstName DESC).

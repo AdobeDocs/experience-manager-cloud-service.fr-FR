@@ -2,10 +2,10 @@
 title: Configuration du projet
 description: Découvrez comment les projets AEM sont créés avec Maven et les normes que vous devez respecter lors de la création de votre propre projet.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1404'
-ht-degree: 100%
+source-wordcount: '1399'
+ht-degree: 97%
 
 ---
 
@@ -110,7 +110,7 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
 
 >[!NOTE]
 >
->Les artefacts d’un référentiel Maven protégé par mot de passe ne doivent être utilisés que très prudemment, car le code déployé par ce mécanisme ne passe actuellement pas par les [règles de qualité de code](/help/implementing/cloud-manager/custom-code-quality-rules.md) intégrées aux points de contrôle de qualité de Cloud Manager. Par conséquent, ce mécanisme ne devrait être utilisé que dans de rares cas et pour le code non lié à AEM. Il est conseillé de déployer les sources Java et l’ensemble du code source du projet avec le binaire.
+>Les artefacts d’un référentiel Maven protégé par mot de passe doivent être utilisés avec prudence, car le code déployé par ce mécanisme ne passe actuellement pas par [règles de qualité du code](/help/implementing/cloud-manager/custom-code-quality-rules.md) implémenté dans les points de contrôle qualité de Cloud Manager. Par conséquent, ce mécanisme ne devrait être utilisé que dans de rares cas et pour le code non lié à AEM. Il est conseillé de déployer les sources Java et l’ensemble du code source du projet avec le binaire.
 
 Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager :
 

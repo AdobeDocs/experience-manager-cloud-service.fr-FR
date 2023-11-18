@@ -2,10 +2,10 @@
 title: Mise en page réactive
 description: AEM permet de créer une mise en page réactive pour vos pages.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 86%
+source-wordcount: '1731'
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 * masquer des composants pour des mises en page spécifiques à certains appareils ;
 * contrôler les colonnes.
 
-En fonction de votre projet, le conteneur de mise en page peut être utilisé en tant que système de paragraphes par défaut pour vos pages ou en tant que composant pouvant être ajouté à votre page via l’explorateur de composants (ou les deux).
+Selon votre projet, le conteneur de mises en page peut être utilisé comme système de paragraphes par défaut pour vos pages ou comme composant pouvant être ajouté à votre page par le biais de l’explorateur de composants (ou les deux).
 
 >[!TIP]
 >
@@ -108,7 +108,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
 
    * utiliser l’icône Sélectionner un périphérique et sélectionner l’appareil dans la liste déroulante ;
-   * Appuyez/cliquez sur l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
+   * Sélectionnez l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
 
    ![Menu déroulant Sélectionner un appareil](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -143,7 +143,7 @@ Un **conteneur de mise en page** est un système de paragraphes qui présente le
 
 ## Sélection et exécution d’une action sur un conteneur de mise en page (mode d’édition) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-À l’instar des autres composants, vous pouvez sélectionner un conteneur de mise en page, puis effectuer une opération (couper, copier, supprimer) sur ce dernier (en mode d’**édition**) :
+Comme pour les autres composants, vous pouvez sélectionner un conteneur de mises en page, puis agir sur ce dernier (couper, copier, supprimer) (en cas d’insertion dans **Modifier** mode) :
 
 >[!CAUTION]
 >
@@ -195,14 +195,14 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
   >
   >Les proportions et les rapports sont conservés lorsque des composants, tels que des **images**, sont redimensionnés.
 
-* Cliquez/appuyez sur un composant de contenu. La barre d’outils vous permet d’effectuer les opérations suivantes :
+* Sélectionnez un composant de contenu. La barre d&#39;outils permet d&#39;effectuer les opérations suivantes :
    * **Parent** - Permet de sélectionner l’intégralité du composant Conteneur de mises en page pour effectuer une action.
    * **Flotter sur une nouvelle ligne** : le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
    * **Masquer le composant** : le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
 
   ![Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* Dans **Disposition** vous pouvez appuyer/cliquer sur le mode **Faire glisser des composants ici** pour sélectionner le composant entier. La barre d’outils s’affiche pour ce mode.
+* Dans **Disposition** vous pouvez sélectionner le mode **Faire glisser des composants ici** pour sélectionner le composant entier. La barre d’outils s’affiche pour ce mode.
 
   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 

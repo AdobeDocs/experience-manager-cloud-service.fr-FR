@@ -2,10 +2,10 @@
 title: Gestion des noms de domaine personnalisés
 description: Découvrez comment utiliser Cloud Manager pour afficher, mettre à jour, remplacer et supprimer des noms de domaine personnalisés.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 96%
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ Utilisez le menu **Affichage et mise à jour** pour afficher simplement les dét
 
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 
-1. Identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez afficher ou mettre à jour.
+1. Identifiez la ligne du nom de domaine personnalisé que vous souhaitez afficher ou mettre à jour.
 
 1. Cliquez sur le bouton représentant des points de suspension à l’extrémité droite de la ligne.
 
@@ -47,7 +47,7 @@ Un utilisateur avec le rôle **Propriétaire de l’entreprise** ou **Responsabl
 
 1. Accédez à la page **Paramètres de domaine** à partir de l’écran **Environnements**.
 
-1. Identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez supprimer.
+1. Identifiez la ligne du nom de domaine personnalisé que vous souhaitez supprimer.
 
 1. Cliquez sur le bouton représentant des points de suspension à l’extrémité droite de la ligne.
 
@@ -62,7 +62,7 @@ Un utilisateur avec le rôle **Propriétaire de l’entreprise** ou **Responsabl
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 1. Sur la page **Environnements**, accédez à l’écran des détails de l’environnement qui vous intéresse.
-1. Dans le tableau des noms de domaines, identifiez la ligne où figure le nom de domaine personnalisé que vous souhaitez supprimer.
+1. Dans le tableau des noms de domaine, identifiez la ligne du nom de domaine personnalisé que vous souhaitez supprimer.
 1. Cliquez sur le bouton représentant des points de suspension à l’extrémité droite de la ligne.
 1. Sélectionnez **Supprimer**.
 1. Confirmez votre envoi.

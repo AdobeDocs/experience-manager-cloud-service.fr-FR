@@ -2,10 +2,10 @@
 title: Utilisation de conditions de masquage
 description: Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '615'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '617'
+ht-degree: 94%
 
 ---
 
@@ -51,7 +51,7 @@ Lors de la définition de votre expression de masquage, veuillez tenir compte de
 
 Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, considérez le [composant principal Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=fr) tel qu’il est implémenté dans le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-[En utilisant l’éditeur de modèles](/help/sites-cloud/authoring/features/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Des options telles que l’autorisation ou non d’une liste statique, d’une liste de pages enfants, d’une liste de pages balisées, etc. peuvent être activées ou désactivées.
+[En utilisant l’éditeur de modèles](/help/sites-cloud/authoring/features/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Des options telles que l’autorisation d’une liste statique, d’une liste de pages enfants, d’une liste de pages balisées, etc., peuvent être activées ou désactivées.
 
 Si un créateur ou une créatrice de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à cette propriété, ce qui fait que l’option ne s’affiche pas pour le créateur ou la créatrice de la page.
 

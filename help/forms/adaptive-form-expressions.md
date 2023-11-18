@@ -1,10 +1,10 @@
 ---
 title: Que sont les expressions de formulaire adaptatif ?
 description: Utilisez des expressions de formulaires adaptatifs pour ajouter la validation et le calcul automatiques ainsi que pour activer ou désactiver la visibilité d’une section.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2697'
-ht-degree: 99%
+source-wordcount: '2698'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ L’expression d’options est utilisée pour remplir dynamiquement les options 
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Dès lors que la valeur du champ **marital_status** est modifiée, l’expression est redéclenchée. Vous pouvez également renseigner la liste déroulante d’un service REST. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+Dès lors que la valeur du champ **marital_status** est modifiée, l’expression est redéclenchée. Vous pouvez également remplir la liste déroulante à partir d’un service REST. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### Expression récapitulative {#summary}
 

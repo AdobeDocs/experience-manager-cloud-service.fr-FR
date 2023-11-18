@@ -2,10 +2,10 @@
 title: Traduction du contenu découplé
 description: Utilisez le connecteur de traduction pour traduire votre contenu découplé.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 95%
+source-wordcount: '2119'
+ht-degree: 73%
 
 ---
 
@@ -53,15 +53,15 @@ Les deux approches sont explorées dans les sections suivantes.
 
 Pour les propriétaires de contenu qui sont également responsables de la traduction, il est souvent plus facile de laisser AEM créer automatiquement le projet de traduction. Pour permettre à AEM de créer automatiquement un projet de traduction en fonction de votre chemin d’accès au contenu :
 
-1. Accédez à **Navigation** -> **Ressources** -> **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
+1. Accédez à **Navigation** > **Ressources** > **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
 1. Sélectionnez la racine de langue de votre projet. Dans ce cas, nous avons sélectionné `/content/dam/wknd/en`.
-1. Appuyez ou cliquez sur le sélecteur de rail et affichez le panneau **Références**.
-1. Appuyez ou cliquez sur **Copies de langue**.
+1. Sélectionnez le sélecteur de rail et affichez le **Références** du panneau.
+1. Sélectionner **Copies de langue**.
 1. Cochez l’option **Copies de langue**.
 1. Développez la section **Mise à jour des copies de langue** en bas du panneau des références.
-1. Dans le menu déroulant **Projet**, sélectionnez **Créer un ou plusieurs projets de traduction**.
+1. Dans le **Projet** liste déroulante, sélectionnez **Créer un ou plusieurs projets de traduction**.
 1. Attribuez un titre approprié à votre projet de traduction.
-1. Appuyez ou cliquez sur **Démarrer**.
+1. Sélectionner **Début**.
 
 ![Créer un projet de traduction](assets/create-translation-project.png)
 
@@ -77,16 +77,16 @@ Vous recevez un message indiquant que le projet a été créé.
 
 Pour les gestionnaires de projets de traduction, il est souvent nécessaire de sélectionner manuellement un contenu spécifique à inclure dans un projet de traduction. Pour créer un projet de traduction manuel, vous devez commencer par créer un projet vierge, puis sélectionner le contenu à y ajouter.
 
-1. Accédez à **Navigation** -> **Projets**.
-1. Appuyez ou cliquez sur **Créer** -> **Dossier** pour créer un dossier pour vos projets.
+1. Accédez à **Navigation** > **Projets**.
+1. Sélectionner **Créer** > **Dossier** pour créer un dossier pour vos projets.
    * Cette étape est facultative, mais elle est utile pour organiser vos efforts de traduction.
-1. Dans la fenêtre **Créer un projet**, ajoutez un **Titre** pour le dossier, puis appuyez ou cliquez sur **Créer**.
+1. Dans le **Créer un projet** , ajoutez une **Titre** pour le dossier, puis sélectionnez **Créer**.
 
    ![Créer un dossier de projet](assets/create-project-folder.png)
 
-1. Appuyez ou cliquez sur le dossier pour l’ouvrir.
-1. Dans le dossier du nouveau projet, appuyez ou cliquez sur **Créer** -> **Projet**.
-1. Les projets sont basés sur des modèles. Appuyez ou cliquez sur le modèle **Projet de traduction** pour le sélectionner, puis appuyez ou cliquez sur **Suivant**.
+1. Sélectionnez le dossier à ouvrir.
+1. Dans le dossier du nouveau projet, sélectionnez **Créer** > **Projet**.
+1. Les projets sont basés sur des modèles. Sélectionnez la variable **Projet de traduction** modèle pour le sélectionner, puis sélectionnez **Suivant**.
 
    ![Sélectionner le modèle de projet de traduction](assets/select-translation-project-template.png)
 
@@ -94,11 +94,11 @@ Pour les gestionnaires de projets de traduction, il est souvent nécessaire de s
 
    ![Onglet De base du projet](assets/project-basic-tab.png)
 
-1. Dans l’onglet **Avancé**, utilisez le menu déroulant **Langue cible** pour sélectionner la ou les langues dans lesquelles votre contenu doit être traduit. Appuyez ou cliquez sur **Créer**.
+1. Sur le **Avancé** , utilisez l’onglet **Langue cible** pour sélectionner les langues dans lesquelles votre contenu doit être traduit. Sélectionnez **Créer**.
 
    ![Onglet Avancé du projet](assets/project-advanced-tab.png)
 
-1. Appuyez ou cliquez sur **Ouvrir** dans la fenêtre de confirmation.
+1. Sélectionner **Ouvrir** dans la boîte de dialogue de confirmation.
 
    ![Boîte de dialogue de confirmation de projet](assets/project-confirmation-dialog.png)
 
@@ -106,19 +106,19 @@ Le projet a été créé, mais ne contient aucun contenu à traduire. La section
 
 ## Utilisation d’un projet de traduction {#using-translation-project}
 
-Les projets de traduction sont conçus pour collecter en un seul endroit l’ensemble du contenu et des tâches liés à un effort de traduction afin de rendre votre tâche de traduction simple et facile à gérer.
+Les projets de traduction sont conçus pour collecter dans un même endroit le contenu et les tâches liés à un effort de traduction afin de rendre votre traduction simple et facile à gérer.
 
 Pour afficher le projet de traduction :
 
-1. Accédez à **Navigation** -> **Projets**.
-1. Appuyez ou cliquez sur le projet qui a été créé dans la section précédente.
+1. Accédez à **Navigation** > **Projets**.
+1. Sélectionnez le projet qui a été créé dans la section précédente.
 
 ![Projet de traduction](assets/translation-project.png)
 
 Le projet est divisé en plusieurs cartes.
 
 * **Résumé** : cette carte affiche les informations d’en-tête de base du projet, parmi lesquelles le propriétaire, la langue et le fournisseur de traduction.
-* **Tâche de traduction** : cette carte ou ces cartes présentent un aperçu de la tâche de traduction proprement dite, notamment son statut, le nombre de ressources, etc. En règle générale, il existe une tâche par langue, avec le code de langue ISO-2 ajouté au nom de la tâche.
+* **Tâche de traduction** - Cette carte ou ces cartes présentent un aperçu de la tâche de traduction proprement dite, y compris son état, le nombre de ressources, etc. En règle générale, il existe une tâche par langue, avec le code de langue ISO-2 ajouté au nom de la tâche.
 * **Équipe** : cette carte montre les utilisateurs qui collaborent à ce projet de traduction. Ce parcours ne couvre pas cette rubrique.
 * **Tâches** : les tâches supplémentaires associées à la traduction du contenu, telles que les éléments à réaliser ou les éléments de workflow. Ce parcours ne couvre pas cette rubrique.
 
@@ -130,17 +130,17 @@ Lors de la création automatique du projet de traduction, AEM évalue le contenu
 
 Pour afficher le détail du contenu découplé inclus dans ce projet :
 
-1. Appuyez ou cliquez sur le bouton représentant des points de suspension en bas de la page **Tâche de traduction** carte.
+1. Sélectionnez le bouton représentant des points de suspension en bas de la page **Tâche de traduction** carte.
 1. La fenêtre **Tâche de traduction** répertorie tous les éléments de la tâche.
    ![Détails de la tâche de traduction](assets/translation-job-detail.png)
-1. Appuyez ou cliquez sur une ligne pour afficher le détail de cette ligne, en gardant à l’esprit qu’une ligne peut représenter plusieurs éléments de contenu à traduire.
-1. Appuyez ou cliquez sur la case à cocher de sélection d’un élément de ligne pour afficher d’autres options, telles que la possibilité de le supprimer de la tâche ou de l’afficher dans la console Fragments de contenu ou Ressources.
+1. Sélectionnez une ligne pour afficher le détail de cette ligne, en gardant à l’esprit qu’une ligne peut représenter plusieurs éléments de contenu à traduire.
+1. Cochez la case de sélection d’un élément de ligne pour afficher d’autres options, telles que la possibilité de le supprimer de la tâche ou de l’afficher dans les consoles Fragments de contenu ou Ressources.
 
 ![Options de tâche de traduction](assets/translation-job-options.png)
 
 En règle générale, le contenu de la tâche de traduction commence en statut **Version préliminaire** comme indiqué par la colonne **Statut** dans la fenêtre **Tâche de traduction**.
 
-Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et appuyez ou cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
+Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et au bouton Sélectionner le chevron en haut de la page **Tâche de traduction** carte et sélectionnez **Début**.
 
 ![Démarrer la tâche de traduction](assets/start-translation-job.png)
 
@@ -156,17 +156,17 @@ Lors de la création manuelle d’un projet de traduction, AEM crée les tâches
 
 Pour ajouter du contenu à une tâche de traduction :
 
-1. Appuyez ou cliquez sur le bouton ... en bas de l’une des cartes **Tâche de traduction**.
-1. Vérifiez que la tâche ne contient aucun contenu. Appuyez ou cliquez sur le bouton **Ajouter** en haut de la fenêtre, puis sur **Ressources/Pages** dans la liste déroulante.
+1. Sélectionnez le bouton représentant des points de suspension en bas de l’une des **Tâche de traduction** cartes.
+1. Vérifiez que la tâche ne contient aucun contenu. Sélectionnez la variable **Ajouter** en haut de la fenêtre, puis **Ressources/Pages** dans la liste déroulante.
 
    ![Tâche de traduction vide](assets/empty-translation-job.png)
 
-1. Un navigateur de chemins d’accès s’ouvre, vous permettant de sélectionner spécifiquement le contenu à ajouter. Recherchez votre contenu et appuyez ou cliquez dessus pour le sélectionner.
+1. Un navigateur de chemins d’accès s’ouvre, vous permettant de sélectionner spécifiquement le contenu à ajouter. Recherchez votre contenu et sélectionnez cette option.
 
    ![Explorateur de chemins d’accès](assets/path-browser.png)
 
-1. Appuyez ou cliquez sur **Sélectionner** pour ajouter le contenu sélectionné à la tâche.
-1. Dans la boîte de dialogue **Traduire**, indiquez que vous souhaitez **Créer une copie de langue**.
+1. Sélectionner **Sélectionner** pour ajouter le contenu sélectionné à la tâche.
+1. Dans le **Traduire** , indiquez que vous souhaitez **Créer une copie de langue**.
 
    ![Créer une copie de langue](assets/translate-copy-master.png)
 
@@ -174,7 +174,7 @@ Pour ajouter du contenu à une tâche de traduction :
 
    ![Contenu ajouté à la tâche de traduction](assets/content-added.png)
 
-1. Appuyez ou cliquez sur la case à cocher de sélection d’un élément de ligne pour afficher d’autres options, telles que la possibilité de le supprimer de la tâche ou de l’afficher dans la console Fragments de contenu ou Ressources.
+1. Cochez la case de sélection d’un élément de ligne pour afficher d’autres options, telles que la possibilité de le supprimer de la tâche ou de l’afficher dans les consoles Fragments de contenu ou Ressources.
 
 ![Options de tâche de traduction](assets/translation-job-options.png)
 
@@ -182,15 +182,15 @@ Pour ajouter du contenu à une tâche de traduction :
 
 >[!TIP]
 >
->L’explorateur de chemins d’accès est un outil puissant qui vous permet de rechercher, de filtrer et de parcourir votre contenu. Appuyez ou cliquez sur le bouton **Contenu uniquement/Filtres** pour activer ou désactiver le panneau latéral et afficher les filtres avancés tels que la **Date de modification** ou le **Statut de traduction**.
+>L’explorateur de chemins d’accès est un outil puissant qui vous permet de rechercher, de filtrer et de parcourir votre contenu. Sélectionnez la variable **Contenu uniquement/filtres** pour activer ou désactiver le panneau latéral et afficher les filtres avancés tels que **Date de modification** ou **État de traduction**.
 >
 >Pour en savoir plus sur l’explorateur de chemins d’accès, consultez la [section des ressources supplémentaires.](#additional-resources)
 
-Vous pouvez utiliser les étapes précédentes pour ajouter le contenu nécessaire à toutes les langues (tâches) du projet. Une fois que vous avez sélectionné tout le contenu, vous pouvez commencer la traduction.
+Vous pouvez utiliser les étapes précédentes pour ajouter le contenu nécessaire à toutes les langues (tâches) du projet. Après avoir sélectionné tout le contenu, vous pouvez commencer la traduction.
 
 En règle générale, le contenu de la tâche de traduction commence en statut **Version préliminaire** comme indiqué par la colonne **Statut** dans la fenêtre **Tâche de traduction**.
 
-Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et appuyez ou cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
+Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et sélectionnez le bouton chevron en haut de la page **Tâche de traduction** carte et sélectionnez **Début**.
 
 ![Démarrer la tâche de traduction](assets/start-translation-job.png)
 
@@ -202,13 +202,13 @@ Les traductions automatiques sont renvoyées automatiquement avec un statut **Ap
 
 ## Vérification du contenu traduit {#reviewing}
 
-[Comme nous l’avons vu précédemment,](#using-translation-project) le contenu traduit automatiquement revient dans AEM en statut **Approuvé**, en partant de l’hypothèse que la traduction automatique étant utilisée, aucune intervention humaine n’est nécessaire. Cependant, il est bien sûr toujours possible de consulter le contenu traduit.
+[Comme nous l’avons vu précédemment,](#using-translation-project) le contenu traduit automatiquement revient dans AEM en statut **Approuvé**, en partant de l’hypothèse que la traduction automatique étant utilisée, aucune intervention humaine n’est nécessaire. Cependant, il est toujours possible de consulter le contenu traduit.
 
 Il vous suffit d’accéder à la tâche de traduction terminée et de sélectionner un élément de ligne en appuyant ou en cliquant sur la case à cocher. L’icône **Afficher dans le fragment de contenu** s’affiche dans la barre d’outils.
 
 ![Afficher dans le fragment de contenu](assets/reveal-in-content-fragment.png)
 
-Appuyez ou cliquez sur cette icône pour ouvrir le fragment de contenu traduit dans la console éditeur afin d’afficher les détails du contenu traduit.
+Sélectionnez cette icône pour ouvrir le fragment de contenu traduit dans la console de l’éditeur afin d’afficher les détails du contenu traduit.
 
 ![Un fragment de contenu traduit](assets/translated-content-fragment.png)
 
@@ -220,7 +220,7 @@ Le but du projet est de collecter toutes les ressources liées à une traduction
 /content/dam/wknd/es
 ```
 
-Si vous accédez à ce dossier via **Navigation** -> **Fichiers** -> **Ressources**, le contenu traduit s’affiche.
+Si vous accédez à ce dossier au moyen de la fonction **Navigation** > **Fichiers** > **Ressources**, le contenu traduit s’affiche.
 
 ![Structure de dossiers de contenu traduit](assets/translated-file-content.png)
 

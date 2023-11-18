@@ -2,10 +2,10 @@
 title: Créer et gérer des offres (console Offres)
 description: Utiliser la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 96%
+source-wordcount: '1351'
+ht-degree: 83%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 La console **Offres** sera abandonnée à l’avenir. Donc, à partir de maintenant :
 
-* Elle n’est disponible que pour les client(e)s qui ont des offres *héritées* déjà définies (c’est-à-dire préexistantes).
+* Uniquement disponibles pour les clients qui ont *hérité* offres déjà définies (c’est-à-dire préexistantes)
 * Il est recommandé de convertir de telles offres héritées en offres de fragments d’expérience.
    * Dès que la dernière offre héritée est convertie/supprimée, la console **Offres** n’est plus disponible.
 
@@ -116,7 +116,7 @@ Pour les clients et clientes qui disposent d’offres héritées préexistantes,
 Utiliser la console Offres pour créer des offres que vous pourrez [utiliser dans le cadre d’expériences associées à des activités](/help/sites-cloud/authoring/personalization/targeted-content.md). La création d’offres dans la console Offres permet de gagner du temps lorsque plusieurs expériences nécessitent la même offre :
 
 * Créez l’offre une fois dans la bibliothèque et utilisez-la pour plusieurs expériences associées aux activités de votre marque.
-* La modification de l’offre dans la bibliothèque a un impact sur toutes les expériences qui l’utilisent.
+* La modification de l’offre dans la bibliothèque affecte toutes les expériences qui l’utilisent.
 
 La console Offres classe les offres par marque. Chaque marque contient une bibliothèque d’offres qui peut être utilisée dans les expériences d’une marque. Utilisez des dossiers pour organiser hiérarchiquement les offres dans chaque bibliothèque. Une structure de dossiers logique permet aux auteurs et autrices de trouver facilement des offres en naviguant. Les outils de balisage et de recherche permettent également aux auteurs et autrices de trouver des offres.
 
@@ -126,21 +126,21 @@ Créez une marque à laquelle vos offres sont associées. Ouvrez une marque dans
 
 Lorsque vous créez une marque à l’aide de la console Offres, elle apparaît également dans la [console Activités](/help/sites-cloud/authoring/personalization/activities.md) où vous pouvez ajouter et administrer des activités pour la marque.
 
-1. Dans la console de navigation, cliquez ou appuyez sur **Personnalisation** > **Offres**.
+1. Dans la console Navigation, sélectionnez **Personnalisation** > **Offres**.
 
    ![Accès à la console Offres](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Cliquez ou appuyez sur **Créer**, puis sur **Créer** **une marque**.
-1. Sélectionnez le modèle de la marque, puis cliquez ou appuyez sur **Suivant**.
+1. Sélectionner **Créer** puis **Créer** **Marque**.
+1. Sélectionnez le modèle de marque et choisissez **Suivant**.
 1. Saisissez le titre de la marque qui apparaîtra dans les consoles Activités et Offres. Vous pouvez également saisir ou sélectionner une ou plusieurs balises à associer à la marque.
-1. Cliquez ou appuyez sur **Créer**.
+1. Sélectionnez **Créer**.
 
 ### Ajout d’un fichier à une bibliothèque d’offres {#add-a-folder-to-an-offer-library}
 
 Ajoutez un dossier à la bibliothèque des offres d’une marque pour organiser et stocker les offres. Vous pouvez créer un dossier sous la marque ou sous d’autres dossiers.
 
 1. Dans la console Offres, ouvrez l’emplacement où créer le dossier. Par exemple, ouvrez la marque pour créer un dossier de niveau supérieur ou ouvrez un autre dossier dans la bibliothèque.
-1. Cliquez ou appuyez sur **Créer** > **Créer un dossier ou une offre**.
+1. Sélectionner **Créer** > **Créer un dossier ou une offre**.
 
    ![Création du dossier d’offres](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
@@ -149,7 +149,7 @@ Ajoutez un dossier à la bibliothèque des offres d’une marque pour organiser 
 
    ![Définition des propriétés du dossier](/help/sites-cloud/authoring/assets/offers-folder-properties.png)
 
-1. Cliquez ou appuyez sur **Créer**.
+1. Sélectionnez **Créer**.
 
 ### Ajout d’une offre à une bibliothèque d’offres {#add-an-offer-to-an-offer-library}
 
@@ -158,13 +158,13 @@ Ajoutez une offre à la bibliothèque des offres d’une marque afin qu’elle p
 Après avoir créé l’offre, vous pouvez l’ouvrir pour créer le contenu.
 
 1. Dans la console Offres, ouvrez l’emplacement où créer l’offre. Par exemple, ouvrez la marque pour créer une offre de niveau supérieur ou ouvrez un dossier dans la bibliothèque.
-1. Cliquez ou appuyez sur **Créer** > **Créer un dossier ou une offre**.
+1. Sélectionner **Créer** > **Créer un dossier ou une offre**.
 
    ![Création du dossier d’offres](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. Sélectionnez le modèle **Page d’offre**, puis cliquez ou appuyez sur **Suivant**.
-1. Saisissez un titre pour l’offre, sélectionnez ou saisissez éventuellement une ou plusieurs balises à associer à l’offre, puis cliquez ou appuyez sur **Créer**.
-1. Dans la boîte de dialogue de confirmation, pour ouvrir l’offre à modifier, cliquez ou appuyez sur **Ouvrir la page**.
+1. Sélectionnez la variable **Page d’offres** modèle , puis sélectionnez **Suivant**.
+1. Saisissez un titre pour l’offre et, éventuellement, sélectionnez ou saisissez une ou plusieurs balises à associer à l’offre, puis sélectionnez **Créer**.
+1. Dans la boîte de dialogue de confirmation, pour ouvrir l’offre à modifier, sélectionnez **Ouvrir la page**.
 
 ### Modification d’une offre {#editing-an-offer}
 
@@ -172,7 +172,7 @@ Ouvrez une offre et modifiez le contenu tel que vous souhaitez le voir apparaît
 
 Vous pouvez ouvrir une offre à partir d’un dossier dans une bibliothèque d’offres ou à partir des résultats de recherche. Vous pouvez également ouvrir une offre à partir d’une expérience qui utilise l’offre.
 
-1. Dans la console Offres, appuyez ou cliquez sur l’icône en regard de l’offre, puis cliquez ou appuyez sur **Modifier**.
+1. Dans la console Offres, sélectionnez l’icône située en regard de l’offre et choisissez **Modifier**.
 1. Ajoutez des composants à l’offre et modifiez le contenu du composant comme vous le faites habituellement. 
 
 ### Suppression d’une offre {#deleting-an-offer}
@@ -181,15 +181,15 @@ Supprimez une offre lorsqu’elle n’est plus nécessaire. Lorsque vous tentez 
 
 Vous pouvez supprimer une offre tout en affichant le contenu d’un dossier dans une bibliothèque d’offres ou les résultats de la recherche.
 
-1. Dans la console Offres, appuyez ou cliquez sur l’icône en regard de l’offre, puis cliquez ou appuyez sur **Supprimer**.
+1. Dans la console Offres, sélectionnez l’icône située en regard de l’offre et choisissez **Supprimer**.
 
-   Sélectionnez l’offre et cliquez ou appuyez sur **Supprimer**.
+   Sélectionnez l’offre et sélectionnez **Supprimer**.
 
-1. Dans la boîte de dialogue qui s’affiche, cliquez ou appuyez sur **Supprimer** pour confirmer la suppression.
+1. Dans la boîte de dialogue qui s’affiche, sélectionnez **Supprimer** pour confirmer la suppression.
 1. Si l’offre est utilisée dans une ou plusieurs expériences, une boîte de dialogue s’affiche pour indiquer que l’offre est référencée :
 
-   * Pour supprimer l’offre et la retirer des expériences, cliquez ou appuyez sur **Forcer la suppression**.
-   * Pour conserver l’offre, cliquez ou appuyez sur **Annuler**.
+   * Pour supprimer l’offre et la supprimer des expériences, sélectionnez **Forcer la suppression**.
+   * Pour conserver l’offre, sélectionnez **Annuler**.
 
 ### Recherche d’offres {#searching-for-offers}
 
@@ -201,5 +201,5 @@ Les critères de recherche actuels s’affichent en regard des résultats de rec
 
 Pour rechercher des offres :
 
-1. En haut de la console Offres, cliquez ou appuyez sur l’icône en forme de loupe. Par défaut, la recherche se limite aux offres.
+1. Dans la partie supérieure de la console Offres, sélectionnez l’icône en forme de loupe. Par défaut, la recherche se limite aux offres.
 1. Saisissez votre mot-clé pour rechercher des offres. Effectuez votre sélection dans les résultats.

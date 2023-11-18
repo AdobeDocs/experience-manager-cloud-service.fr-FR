@@ -2,10 +2,10 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez en modifier le contenu pour effectuer les mises à jour nécessaires
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 93%
+source-wordcount: '2973'
+ht-degree: 92%
 
 ---
 
@@ -341,7 +341,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
    ![Barre d’outils d’un composant de page](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Cliquez ou appuyez sur l’action **Disposition** pour ajuster la mise en page du composant.
+   Sélectionnez la variable **Disposition** pour ajuster la mise en page du composant.
 
    ![Bouton Disposition de la barre d’outils d’un composant](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

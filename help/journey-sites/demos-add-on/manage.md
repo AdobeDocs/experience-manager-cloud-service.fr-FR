@@ -2,10 +2,10 @@
 title: Gestion de vos sites de démonstration
 description: Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 94%
+source-wordcount: '936'
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ Ce document vous aide à comprendre comment gérer les sites de démonstration q
 
 Maintenant que vous disposez de vos propres sites de démonstration, vous souhaitez probablement savoir comment les gérer. Le pipeline a non seulement déployé les modèles de site pour fournir le contenu de vos sites de démonstration, mais a également déployé un ensemble d’utilitaires pour gérer ces sites.
 
-1. Dans la barre de navigation globale dʼAEM, sélectionnez **Outils** -> **Démonstrations de référence** -> **Utilitaires de démonstration de référence**.
+1. Dans la barre de navigation globale AEM, sélectionnez **Outils** > **Démonstrations de référence** > **Utilitaires de démonstration de référence**.
 
    ![Utilitaires de démonstration en libre-service](assets/demo-utilities.png)
 
@@ -49,7 +49,7 @@ Maintenant que vous disposez de vos propres sites de démonstration, vous souhai
 
    ![Tableau de bord](assets/dashboard.png)
 
-Les utilitaires de démonstration en libre-service fournissent un certain nombre d’outils.
+Les utilitaires de démonstration en libre-service fournissent plusieurs outils.
 
 * **Suppression de sites** : sélection du site à supprimer dans cette instance Adobe Experience Manager. Gardez à l’esprit qu’il s’agit d’une action destructrice qui ne peut pas être annulée une fois lancée.
 * **Suppression de modèles de site** : sélection du modèle de site à supprimer dans cette instance Adobe Experience Manager. Avant de supprimer un modèle de site, assurez-vous que tous les sites qui font référence à ce modèle sont également supprimés. Gardez à l’esprit qu’il s’agit d’une action destructrice qui ne peut pas être annulée une fois lancée.
@@ -62,11 +62,11 @@ Les utilitaires de démonstration en libre-service fournissent un certain nombre
 
 Vous avez à présent testé tout un panel de fonctionnalités dʼAEM. Vous nʼavez sans doute plus besoin de votre site de démonstration, ni même du modèle sur lequel il est basé. La suppression des sites et modèles de démonstration est une tâche facile.
 
-1. Accédez au menu **Utilitaires de démonstration de référence** et appuyez ou cliquez sur **Supprimer des sites**.
+1. Accédez au **Utilitaires de démonstration de référence** et sélectionnez **Supprimer des sites**.
 
    ![Suppression de sites](assets/delete-sites.png)
 
-1. Les sites disponibles sont présentés dans une liste. Cochez le ou les sites à supprimer, puis appuyez ou cliquez sur **Supprimer**.
+1. Les sites disponibles sont présentés dans une liste. Vérifiez le ou les sites que vous souhaitez supprimer, puis sélectionnez **Supprimer**.
 
    >[!CAUTION]
    >

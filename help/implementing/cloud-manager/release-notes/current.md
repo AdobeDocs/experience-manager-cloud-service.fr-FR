@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2023.11.0 dans Adobe Experience
 description: Consultez les notes de mise à jour de Cloud Manager 2023.11.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 14%
+source-wordcount: '740'
+ht-degree: 13%
 
 ---
 
@@ -50,7 +50,7 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commenta
 
 [Autorisations personnalisées de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) vous permet de créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs de Cloud Manager.
 
-si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail. `Grp-CloudManager-custom-permissions@adobe.com` de votre adresse électronique associée à votre Adobe ID.
+si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `Grp-CloudManager-custom-permissions@adobe.com` de votre adresse électronique associée à votre Adobe ID.
 
 ### Restauration de contenu en libre-service {#content-restore}
 
@@ -59,7 +59,7 @@ si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commenta
 * Restauration de sauvegarde ponctuelle des dernières 24 heures
 * Restauration de la période fixe pendant sept jours au maximum
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-restorefrombackup-adopter@adobe.com` de votre email associé à votre Adobe ID. Remarque :
+Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-restorefrombackup-adopter@adobe.com` de votre email associé à votre Adobe ID.
 
 * Le programme d’adoption précoce est limité aux environnements de développement uniquement.
 * La disponibilité du programme d’adoption précoce de cette fonction est limitée.
@@ -71,7 +71,7 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commenta
 
 Le tableau de bord tire parti de Google Lighthouse, un outil automatisé et open source permettant d’améliorer la qualité de vos applications web. Vous pouvez l’exécuter sur n’importe quelle page web, publique ou nécessitant une authentification. Il comporte des audits des performances, de l’accessibilité, des applications web progressives, de l’optimisation pour les moteurs de recherche, etc.
 
-Vous souhaitez tester le nouveau tableau de bord ? Veuillez envoyer un e-mail à `aem-lighthouse-pilot@adobe.com` à partir de votre email associé à votre Adobe ID et nous pouvons vous aider à démarrer.
+Vous souhaitez tester le nouveau tableau de bord ? Envoi d’un courrier électronique à `aem-lighthouse-pilot@adobe.com` à partir de votre email associé à votre Adobe ID et nous pouvons vous aider à démarrer.
 
 ## Problèmes connus {#known-issues}
 

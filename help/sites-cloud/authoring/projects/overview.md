@@ -2,10 +2,10 @@
 title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1255'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 ![Console Projets](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Sélectionnez **Chronologie**, puis un projet pour afficher sa chronologie.
-* Cliquez/appuyez sur **Sélectionner** pour passer en mode de sélection.
+* Sélectionner **Sélectionner** pour passer en mode de sélection.
 * Cliquez sur **Créer** pour ajouter des projets.
 * **Activer/désactiver les projets actifs** permet de basculer entre tous les projets actifs.
 * **Afficher la vue Statistiques** permet d’afficher les statistiques de projet concernant les tâches terminées.

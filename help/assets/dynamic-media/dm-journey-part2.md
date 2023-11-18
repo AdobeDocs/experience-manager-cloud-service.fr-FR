@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2872'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2870'
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ Maintenant imaginez que le directeur artistique regarde les images et dise :
 
 _« Je voulais vraiment que sur cette photo la grande aiguille pointe vers le quatre et la petite main vers le 1, pour que l’on voie mieux le cadran »._
 
-Le spécialiste de la création ne pourra que réorganiser une séance photo pour obtenir toutes ces nouvelles images statiques.
+Le créatif devra redémarrer toutes les nouvelles images statiques.
 
 Toutefois, avec Dynamic Media, si vous disposez de paramètres d’image prédéfinis différents, vous pouvez utiliser ces images où vous en avez besoin. Ce sont les paramètres d’image prédéfinis qui appliquent les normes.
 

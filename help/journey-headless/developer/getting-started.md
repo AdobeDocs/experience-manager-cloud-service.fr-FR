@@ -2,9 +2,9 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3095'
+source-wordcount: '3093'
 ht-degree: 94%
 
 ---
@@ -123,7 +123,7 @@ Avec cet éditeur, la SPA consomme non seulement des contenus issus d’AEM, mai
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
-Un certain nombre d’exigences s’imposent avant de vous engager dans votre projet AEM découplé.
+Plusieurs conditions sont requises avant de commencer votre projet AEM sans interface utilisateur.
 
 ### Connaissances {#knowledge}
 

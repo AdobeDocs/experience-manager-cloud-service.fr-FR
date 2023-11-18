@@ -2,10 +2,10 @@
 title: Conseils de développement sur AEM as a Cloud Service
 description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2733'
-ht-degree: 94%
+source-wordcount: '2732'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ Le statut ne doit pas être conservé dans la mémoire, mais conservé dans le r
 
 Le système de fichiers de l’instance ne doit pas être utilisé dans AEM as a Cloud Service. Le disque est éphémère et est effacé lorsque les instances sont recyclées. L’utilisation limitée du système de fichiers pour le stockage temporaire lié au traitement des demandes uniques est possible, mais ne doit pas être excessive dans le cas des fichiers volumineux. En effet, elle peut avoir un impact négatif sur le quota d’utilisation des ressources et rencontrer des limitations de disque.
 
-Par exemple, si l’utilisation du système de fichiers n’est pas prise en charge, le niveau de publication doit s’assurer que toutes les données qui doivent être conservées sont transférées vers un service externe pour un stockage à plus long terme.
+Par exemple, si l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publication doit s’assurer que toutes les données qui doivent être conservées sont transférées vers un service externe pour un stockage à plus long terme.
 
 ## Observation {#observation}
 
@@ -243,7 +243,7 @@ Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/exp
 
 Le port du serveur SMTP doit être défini comme jeu de valeur `portDest` dans le paramètre portForwards utilisé dans l’appel API lors de la configuration de la mise en réseau avancée et la valeur `portOrig` doit être une valeur significative comprise entre 30 000 et 30 099, selon la plage requise. Par exemple, si le port du serveur SMTP est 465, le port 30465 doit être utilisé en tant que valeur `portOrig`.
 
-Dans ce cas, et en supposant que le SSL doive être activé, dans la configuration du **service de messagerie Day CQ OSGi** :
+Dans ce cas, en supposant que SSL doive être activé, dans la configuration de la variable **Day CQ Mail Service OSGI** service :
 
 * Définissez `smtp.port` sur `30465`.
 * Définissez `smtp.ssl` sur `true`.

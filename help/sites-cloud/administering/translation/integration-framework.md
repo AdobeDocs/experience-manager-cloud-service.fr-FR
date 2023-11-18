@@ -4,10 +4,10 @@ description: Découvrez comment configurer la structure d’intégration de trad
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1517'
-ht-degree: 99%
+source-wordcount: '1499'
+ht-degree: 91%
 
 ---
 
@@ -69,13 +69,13 @@ Une fois que vous avez configuré une structure d’intégration de traduction, 
 
 Une configuration unique de la structure contrôle la manière dont le contenu de page et les ressources sont traduits. Pour créer une configuration de traduction :
 
-1. Dans le [menu de navigation global,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) cliquez ou appuyez sur **Outils -> Cloud Services et services cloud de traduction**.
+1. Dans le [menu de navigation globale,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) select **Outils > Cloud Service et Cloud Service de traduction**.
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Il est souvent basé sur un site particulier, mais peut également être global.
-1. Fournissez les informations suivantes dans les champs requis, puis cliquez ou appuyez sur **Créer** :
+1. Indiquez les informations suivantes dans les champs, puis sélectionnez **Créer**.
    1. Sélectionnez **Type de configuration** dans la liste déroulante.
    1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud**, ainsi que dans les listes déroulantes de propriétés de la page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
-1. Dans la fenêtre **Modifier la configuration**, configurez les propriétés sur les onglets **Sites** et **Ressources**, puis cliquez ou appuyez sur **Enregistrer et fermer**.
+1. Dans le **Modifier la configuration** , configurez les propriétés sur la fenêtre **Sites** et **Ressources** onglets, puis sélectionnez **Enregistrer et fermer**.
 
 ### Propriétés de configuration des sites {#sites-configuration-properties}
 
@@ -118,7 +118,7 @@ Pour configurer la traduction de vos pages source dans d’autres langues, assoc
 * La configuration cloud qui connecte AEM à votre fournisseur de services de traduction.
 * Le framework d’intégration de traduction qui configure les détails de la traduction.
 
-Notez que la configuration de cloud de la structure d’intégration de traduction identifie la configuration de cloud à utiliser pour la connexion au fournisseur de services. Lorsque vous associez une page source à une configuration cloud de framework, la page doit être associée à la configuration cloud du fournisseur utilisée par la configuration cloud de framework.
+La configuration cloud de la structure d’intégration de traduction identifie la configuration cloud à utiliser pour la connexion au fournisseur de services. Lorsque vous associez une page source à une configuration cloud de framework, la page doit être associée à la configuration cloud du fournisseur utilisée par la configuration cloud de framework.
 
 Lorsque vous associez une page à une configuration de cloud, les descendants de la page héritent de l’association. Par exemple, si vous associez la page `/content/wknd/language-masters/en/magazine` à une structure d’intégration de traduction, la page `magazine` et toutes les pages en dessous sont converties en fonction de la structure.
 
@@ -128,16 +128,16 @@ Lorsque cela est nécessaire, vous pouvez remplacer l’association dans une pag
 
 Associez une page au fournisseur de traduction que vous utilisez pour traduire la page et les pages descendantes.
 
-1. Dans la console Sites, sélectionnez la page à configurer et cliquez ou appuyez sur **Afficher les propriétés**.
-1. Cliquez ou appuyez sur l’onglet **Cloud Services**.
-1. Dans la liste déroulante **Ajouter la configuration**, sélectionnez la configuration.
-1. Cliquez ou appuyez sur **Enregistrer et fermer**.
+1. Dans la console Sites, sélectionnez la page à configurer et sélectionnez **Afficher les propriétés**.
+1. Sélectionnez l’onglet **Services cloud**.
+1. Dans le **Ajouter une configuration** , sélectionnez la configuration.
+1. Sélectionnez **Enregistrer et fermer**.
 
 ### Association des pages à une structure d’intégration de traduction {#associating-pages-with-a-translation-integration-framework}
 
 Associez une page au framework d’intégration de traduction qui définit la façon dont vous souhaitez effectuer la traduction de la page et des pages descendantes.
 
-1. Dans la console Sites, sélectionnez la page à configurer et cliquez ou appuyez sur **Afficher les propriétés**.
-1. Cliquez ou appuyez sur l’onglet **Cloud Services**.
-1. Dans la liste déroulante **Ajouter la configuration**, sélectionnez la configuration.
-1. Cliquez ou appuyez sur **Enregistrer et fermer**.
+1. Dans la console Sites, sélectionnez la page à configurer et sélectionnez **Afficher les propriétés**.
+1. Sélectionnez l’onglet **Services cloud**.
+1. Dans le **Ajouter une configuration** , sélectionnez la configuration.
+1. Sélectionnez **Enregistrer et fermer**.

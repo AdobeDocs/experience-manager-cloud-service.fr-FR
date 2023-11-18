@@ -2,10 +2,10 @@
 title: Création et gestion des affichages dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des affichages dans Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -118,7 +118,7 @@ Vous pouvez déplacer du contenu vers vos nouveaux dossiers pour mieux organiser
 
 ![image](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Remarque** : Le dossier doit être sélectionné dans le rail latéral de dossiers. De plus, la navigation dans le chemin de navigation doit afficher le nom du dossier actif en face des **Affichages**.
+**Remarque** : Le dossier doit être sélectionné dans le rail latéral de dossiers. En outre, la navigation dans le chemin de navigation doit afficher le nom du dossier actif en regard de **Affichages**.
 
 ## Comment supprimer du contenu d’un dossier {#delete-folder}
 

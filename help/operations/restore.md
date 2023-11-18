@@ -2,10 +2,10 @@
 title: Restauration de contenu dans AEM as a Cloud Service
 description: Découvrez comment restaurer votre contenu AEM as a Cloud Service à partir de la sauvegarde à l’aide de Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 71%
+source-wordcount: '1158'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ Découvrez comment restaurer votre contenu AEM as a Cloud Service à partir 
 >* Cette fonctionnalité n’est disponible que dans les environnements de développement.
 >* Les restaurations de contenu sont limitées à deux par mois et par programme.
 >
->Pour plus d’informations sur le système de sauvegarde et de restauration existant pour AEM as a Cloud Service, consultez le document . [Sauvegarde et restauration dans AEM as a Cloud Service](/help/operations/backup.md)
+>Pour plus d’informations sur le système de sauvegarde et de restauration existant pour AEM as a Cloud Service, voir [Sauvegarde et restauration dans AEM as a Cloud Service](/help/operations/backup.md).
 
 ## Présentation {#overview}
 
@@ -42,7 +42,7 @@ Dans les deux cas, la version de votre code personnalisé et la version AEM rest
 
 ## Restaurer du contenu {#restoring-content}
 
-Déterminez d’abord la période du contenu que vous souhaitez restaurer. Ensuite, pour restaurer le contenu de votre environnement à partir d’une sauvegarde, procédez comme suit.
+Déterminez d’abord la période du contenu à restaurer. Ensuite, pour restaurer le contenu de votre environnement à partir d’une sauvegarde, procédez comme suit.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Déterminez d’abord la période du contenu que vous souhaitez restaurer. Ensui
 
    * Vous pouvez également accéder directement à l’onglet **Restaurer le contenu** de la page des détails de l’environnement d’un environnement spécifique.
 
-1. Sous l’onglet **Restaurer le contenu** de la page Détails de l’environnement, sélectionnez d’abord la période de restauration sous le menu déroulant du **Temps de restauration**.
+1. Sur le **Restaurer le contenu** de la page détails de l’environnement, sélectionnez d’abord la période de restauration sous l’onglet **Temps de restauration** liste déroulante.
 
    1. Si vous sélectionnez **24 dernières heures** le voisin **Heure** vous permet de spécifier l’heure exacte des dernières 24 heures à restaurer.
 
@@ -72,13 +72,13 @@ Déterminez d’abord la période du contenu que vous souhaitez restaurer. Ensui
 
    ![Sauvegardes disponibles](assets/backup-available.png)
 
-1. Recherchez la sauvegarde que vous souhaitez restaurer à l’aide de l’icône d’information pour afficher les informations concernant la version du code et la version d’AEM incluse dans cette sauvegarde et tenez compte des implications d’une restauration lors du [choix de la sauvegarde.](#choosing-the-right-backup)
+1. Recherchez la sauvegarde à restaurer à l’aide de l’icône d’information pour afficher les informations concernant la version du code et la version d’AEM incluse dans cette sauvegarde et tenir compte des implications d’une restauration lors de la [choix de la sauvegarde.](#choosing-the-right-backup)
 
    ![Informations de sauvegarde](assets/backup-info.png)
 
-   * Notez que l’horodatage affiché pour les options de restauration est basé sur le fuseau horaire de l’ordinateur de l’utilisateur.
+   * L’horodatage affiché pour les options de restauration dépend du fuseau horaire de l’ordinateur de l’utilisateur.
 
-1. Cliquez sur l’icône **Restaurer** à l’extrémité droite de la ligne représentant la sauvegarde que vous souhaitez restaurer pour démarrer le processus de restauration.
+1. Cliquez sur le bouton **Restaurer** à l’extrémité droite de la ligne représentant la sauvegarde à restaurer pour lancer le processus de restauration.
 
 1. Consultez les détails de la boîte de dialogue **Restaurer le contenu** avant de confirmer votre requête en cliquant sur **Restaurer**.
 
@@ -103,7 +103,7 @@ Il existe plusieurs scénarios.
    * Dans ce cas, un identifiant de validation ne s’affiche pas.
    * Il est vivement recommandé de cloner les deux référentiels et d’utiliser un outil de comparaison des branches.
 
-En outre, gardez à l’esprit qu’une restauration peut entraîner une désynchronisation de vos environnements de production et d’évaluation. Vous êtes responsable des conséquences de la restauration du contenu.
+En outre, gardez à l’esprit qu’une restauration peut entraîner la désynchronisation de vos environnements de production et d’évaluation. Vous êtes responsable des conséquences de la restauration du contenu.
 
 ## Restaurer l’activité {#restore-activity}
 

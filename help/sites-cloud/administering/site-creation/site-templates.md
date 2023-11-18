@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de site AEM peuvent être utilisés
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '568'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -37,15 +37,15 @@ Vous pouvez ajouter plusieurs modèles à AEM, qui peuvent ensuite être utilis�
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Appuyez ou cliquez sur **Créer** en haut à droite de l’écran et, dans le menu déroulant, sélectionnez **Site à partir d’un modèle**.
+1. Sélectionner **Créer** en haut à droite de l’écran et, dans le menu déroulant, sélectionnez **Site à partir du modèle**.
 
    ![Création d’un site à partir d’un modèle](../assets/create-site-from-template.png)
 
-1. Dans l’assistant Créer un site, appuyez ou cliquez sur **Importer** en haut de la colonne de gauche.
+1. Dans l’assistant Créer un site , sélectionnez **Importer** en haut de la colonne de gauche.
 
    ![Assistant Création de site](../assets/site-creation-wizard.png)
 
-1. Dans l’explorateur de fichiers, recherchez le modèle que vous souhaitez utiliser, puis appuyez ou cliquez sur **Charger**.
+1. Dans l’explorateur de fichiers, recherchez le modèle que vous souhaitez utiliser et sélectionnez **Télécharger**.
 
 1. Une fois chargé, il s’affiche dans la liste des modèles disponibles.
 
@@ -61,8 +61,8 @@ Les modèles de site sont simplement des packages avec une structure logique qui
 
 * `files` : dossier contenant le kit d’interface utilisateur, le fichier XD et éventuellement d’autres fichiers.
 * `previews` : dossier contenant des captures d’écran du modèle de site.
-* `site` : package de contenu du contenu copié pour chaque site créé à partir de ce modèle, tel que des modèles de page, des pages, etc.
-* `theme` : sources de [thème du site](site-themes.md) pour modifier l’aspect du site, y compris CSS, JavaScript, etc.
+* `site`: module de contenu du contenu copié pour chaque site créé à partir de ce modèle, tel que les modèles de page, les pages, etc.
+* `theme`: sources de la variable [thème du site](site-themes.md) pour modifier l’aspect du site, notamment CSS, JavaScript, etc.
 
 ## Modèle de site standard {#standard-site-template}
 

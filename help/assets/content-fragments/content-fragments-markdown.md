@@ -4,10 +4,10 @@ description: Découvrez comment l’éditeur de fragment de contenu utilise la s
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 65%
+source-wordcount: '578'
+ht-degree: 66%
 
 ---
 
@@ -23,7 +23,7 @@ Lors du processus de [création](/help/assets/content-fragments/content-fragment
 
 ![Éditeur de balisage](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
-Vous pouvez définir :
+Vous pouvez définir :
 
 * [Notation d’en-tête](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
 * [Paragraphes et sauts de ligne](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
@@ -37,7 +37,7 @@ Vous pouvez définir :
 
 ## Notation d’en-tête {#heading-notation}
 
-Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Un hashtag (#) est utilisé pour un H1, deux hashtags (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
+Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Une balise de hachage (#) est utilisée pour un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
 
     `## This is an H2`
 

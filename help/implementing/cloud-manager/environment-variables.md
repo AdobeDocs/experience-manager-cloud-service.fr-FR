@@ -2,10 +2,10 @@
 title: Variables d’environnement Cloud Manager
 description: Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Elle sont fournies à l’environnement d’exécution, pour une utilisation dans la configuration OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 96%
+source-wordcount: '1010'
+ht-degree: 85%
 
 ---
 
@@ -37,7 +37,7 @@ Les cas d’utilisation les plus courants des variables d’environnement inclue
 >Vous devez être membre du rôle [**Responsable de déploiement** ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) pour ajouter ou de modifier des variables d’environnement.
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celui que vous souhaitez gérer.
+1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celle que vous souhaitez gérer.
 1. Sélectionnez l’onglet **Environnements** pour le programme choisi, puis sélectionnez l’environnement pour lequel vous souhaitez créer une variable d’environnement dans le panneau de navigation de gauche.
 1. Dans le détail de l’environnement, sélectionnez l’onglet **Configuration**, puis sélectionnez **Ajouter** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
    * Si vous ajoutez une variable d’environnement pour la première fois, une **Ajouter une configuration** au centre de la page. Vous pouvez utiliser ce bouton ou **Ajouter** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
@@ -65,20 +65,20 @@ Un indicateur avec le statut **Mise à jour en cours** s’affiche en haut du ta
 
 >[!TIP]
 >
->Si vous souhaitez ajouter plusieurs variables, il est recommandé d’ajouter la première variable, puis d’utiliser le bouton **Ajouter** dans la boîte de dialogue **Configuration de l’environnement** pour ajouter les variables supplémentaires. De cette façon, vous pouvez les ajouter en une seule mise à jour de lʼenvironnement.
+>Si vous souhaitez ajouter plusieurs variables, il est recommandé d’ajouter la première variable, puis d’utiliser la variable **Ajouter** dans le **Configuration de l’environnement** pour ajouter les variables supplémentaires. De cette façon, vous pouvez les ajouter en une seule mise à jour de lʼenvironnement.
 
 ## Mettre à jour les variables d’environnement {#update-variables}
 
 Une fois les variables d’environnement créées, vous pouvez les mettre à jour à l’aide du bouton **Ajouter/mettre à jour** pour lancer la boîte de dialogue **Configuration de l’environnement**.
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celui que vous souhaitez gérer.
+1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celle que vous souhaitez gérer.
 1. Sélectionnez l’onglet **Environnements** pour le programme choisi, puis sélectionnez l’environnement pour lequel vous souhaitez créer une variable d’environnement dans le panneau de navigation de gauche.
 1. Dans le détail de l’environnement, sélectionnez l’onglet **Configuration**, puis sélectionnez **Ajouter/mettre à jour** dans le coin supérieur droit pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
 
    ![Bouton Ajouter/mettre à jour pour les variables](assets/add-update-variables.png)
 
-1. À l’aide du bouton représentant des points de suspension qui se trouve dans la dernière colonne de la ligne de la variable à modifier, sélectionnez **Modifier** ou **Supprimer**.
+1. À l’aide du bouton représentant des points de suspension dans la dernière colonne de la ligne de la variable à modifier, sélectionnez **Modifier** ou **Supprimer**.
 
    ![Modifier ou supprimer une variable](assets/edit-delete-variable.png)
 
@@ -88,13 +88,13 @@ Une fois les variables d’environnement créées, vous pouvez les mettre à jou
 
    ![Modifier la variable](assets/edit-variable.png)
 
-1. Une fois toutes les modifications de configuration requises effectuées, sélectionnez **Enregistrer**.
+1. Après avoir apporté les modifications de configuration requises, sélectionnez **Enregistrer**.
 
 [Comme lors de l’ajout de variables](#add-variables), un indicateur avec le statut **Mise à jour** sʼaffiche en haut du tableau et en regard de la ou des variables nouvellement mises à jour pour indiquer que l’environnement est mis à jour avec la configuration. Une fois l’opération terminée, les variables d’environnement mises à jour sont visibles dans le tableau.
 
 >[!TIP]
 >
->Si vous souhaitez mettre à jour plusieurs variables, il est recommandé d’utiliser la boîte de dialogue **Configuration de l’environnement** pour mettre à jour toutes les variables nécessaires en une seule fois avant d’appuyer ou de cliquer sur **Enregistrer**. De cette façon, vous pouvez les ajouter en une seule mise à jour de lʼenvironnement.
+>Si vous souhaitez mettre à jour plusieurs variables, il est recommandé d’utiliser la variable **Configuration de l’environnement** pour mettre à jour toutes les variables nécessaires à la fois avant d’appuyer ou de cliquer sur **Enregistrer**. De cette façon, vous pouvez les ajouter en une seule mise à jour de lʼenvironnement.
 
 ## Utilisation de variables d’environnement {#using}
 

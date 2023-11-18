@@ -2,10 +2,10 @@
 title: Variations – création de contenu de fragment (Ressources - Fragments de contenu)
 description: Découvrez comment les variations peuvent rendre votre contenu découplé dans AEM encore plus flexible en vous permettant de créer du contenu pour un fragment, puis de créer des variantes de ce contenu selon vos besoins.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 58%
+source-wordcount: '2530'
+ht-degree: 57%
 
 ---
 
@@ -79,7 +79,7 @@ Vous pouvez effectuer les actions suivantes :
 
 ### Éditeur plein écran {#full-screen-editor}
 
-Lors de la modification d’un champ de plusieurs lignes de texte, vous pouvez ouvrir l’éditeur plein écran ; appuyez ou cliquez dans le texte, puis sélectionnez l’icône d’action suivante :
+Lors de la modification d’un champ de texte multiligne, vous pouvez ouvrir l’éditeur plein écran ; sélectionnez dans le texte réel, puis sélectionnez l’icône d’action suivante :
 
 ![Icône de l’éditeur plein écran](assets/cfm-variations-03.png)
 

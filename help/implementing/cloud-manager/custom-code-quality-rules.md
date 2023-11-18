@@ -2,9 +2,9 @@
 title: Règles de qualité du code personnalisé
 description: Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du test de qualité du code. Elles sont basées sur les bonnes pratiques de l’ingénierie Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4097'
+source-wordcount: '4095'
 ht-degree: 87%
 
 ---
@@ -542,7 +542,7 @@ AEM applications atteignent souvent d’autres applications à l’aide du proto
 
 Cette règle vérifie qu’un tel objet HttpClient n’est pas privé dans une méthode, mais global au niveau de la classe, afin qu’il puisse être réutilisé. Dans ce cas, le champ httpClient doit être défini dans le constructeur de la classe ou de la propriété `activate()` (si cette classe est un composant/service OSGi).
 
-Veuillez également vérifier les [Guide d’optimisation](https://hc.apache.org/httpclient-legacy/performance.html) de HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation de HttpClient.
+Vérifiez les [Guide d’optimisation](https://hc.apache.org/httpclient-legacy/performance.html) de HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation de HttpClient.
 
 #### Code non conforme {#non-compliant-code-14}
 
@@ -1038,7 +1038,7 @@ Experience Manager as a Cloud Service interdit aux définitions d’index d
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0
 
-Pour les index personnalisés, les deux `includedPaths` et `queryPaths` doit être configuré avec des valeurs identiques. Si l’un est spécifié, l’autre doit correspondre à l’autre. Cependant, il existe un cas spécial pour les index de `damAssetLucene`, y compris ses versions personnalisées. Pour ceux-ci, vous devez uniquement fournir `includedPaths`.
+Pour les index personnalisés, les deux `includedPaths` et `queryPaths` doit être configuré avec des valeurs identiques. Si l’un est spécifié, l’autre doit correspondre à l’autre. Cependant, il existe un cas particulier pour les index de `damAssetLucene`, y compris ses versions personnalisées. Pour ceux-ci, vous devez uniquement fournir `includedPaths`.
 
 ### Le noeud d’index spécifiant nodeScopeIndex sur le type de noeud générique doit également spécifier includedPaths et queryPaths {#oakpal-full-text-on-generic-node-type}
 

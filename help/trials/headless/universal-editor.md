@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’éditeur universel pour modifier n�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '936'
 ht-degree: 11%
 
 ---
@@ -39,9 +39,9 @@ La modification en place et dans le contexte peut souvent s’avérer préférab
 
 L’éditeur universel vous permet de modifier facilement votre texte en contexte et en place, ce qui vous permet de créer du contenu simple et intuitif.
 
-1. L’éditeur doit se charger par défaut dans **Composants** mode . Si ce n’est pas le cas, appuyez ou cliquez sur le bouton **Composants** dans le rail de mode sur le côté gauche de l’éditeur.
+1. L’éditeur doit se charger par défaut dans **Composants** mode . Si ce n’est pas le cas, sélectionnez la variable **Composants** dans le rail de mode sur le côté gauche de l’éditeur.
 
-1. Appuyez ou cliquez deux fois sur le titre du dernier article pour le modifier.
+1. Double-sélectionnez le titre du dernier article pour le modifier.
 
    ![Éditeur universel](assets/do-not-localize/ue-component-mode.png)
 
@@ -49,7 +49,7 @@ L’éditeur universel vous permet de modifier facilement votre texte en context
 
    ![Modification de texte dans Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Appuyez sur la touche Entrée/Retour ou appuyez ou cliquez en dehors du composant de texte pour enregistrer automatiquement vos modifications.
+1. Appuyez sur la touche Entrée/Retour ou sélectionnez en dehors du composant de texte pour que vos modifications soient enregistrées automatiquement.
 
 Universal Editor enregistre automatiquement vos modifications dans l’environnement de création. Vous devez toujours les publier pour que vos lecteurs puissent le voir, ce que nous ferons ultérieurement.
 
@@ -57,15 +57,15 @@ Universal Editor enregistre automatiquement vos modifications dans l’environne
 
 Vous pouvez également permuter des images tout en restant dans le contexte de votre contenu à l’aide de l’éditeur universel.
 
-1. Reste dans **Composants** , appuyez ou cliquez sur l’image du surfeur pour la sélectionner.
+1. Reste dans **Composants** , sélectionnez l’image du surfeur pour la sélectionner.
 
-1. Dans le rail des composants, vous pouvez voir le détail de la ressource. Appuyez ou cliquez sur le bouton **Image en vedette** miniature.
+1. Dans le rail des composants, vous pouvez voir le détail de la ressource. Sélectionnez la variable **Image en vedette** miniature.
 
    ![Sélectionner une image à modifier](assets/do-not-localize/ue-edit-media.png)
 
-1. Dans le **Sélectionner les ressources** , faites défiler la page vers le bas et appuyez ou cliquez sur `surfer-wave-02.JPG` image pour la sélectionner.
+1. Dans le **Sélectionner les ressources** , faites défiler la fenêtre vers le bas et sélectionnez `surfer-wave-02.JPG` image pour la sélectionner.
 
-1. Appuyez ou cliquez sur **Sélectionner** dans le **Sélectionner les ressources** fenêtre.
+1. Sélectionner **Sélectionner** dans le **Sélectionner les ressources** fenêtre.
 
    ![Utilisation de la fenêtre Sélectionner une ressource pour sélectionner une image](assets/do-not-localize/ue-select-asset.png)
 
@@ -75,7 +75,7 @@ L’image est remplacée par celle que vous avez sélectionnée.
 
 L’éditeur universel vous permet d’interagir avec votre contenu dans son contexte, en voyant le contenu tel qu’il est diffusé sur les appareils de vos utilisateurs.
 
-1. Par défaut, l’éditeur effectue le rendu de la version de bureau de votre contenu. Appuyez ou cliquez sur le bouton de l’émulateur en haut à droite de l’éditeur pour modifier l’appareil cible.
+1. Par défaut, l’éditeur effectue le rendu de la version de bureau de votre contenu. Sélectionnez le bouton de l’émulateur en haut à droite de l’éditeur pour modifier l’appareil cible.
 
    ![Élément de menu de l’émulateur](assets/do-not-localize/ue-emulator-1.png)
 
@@ -83,7 +83,7 @@ L’éditeur universel vous permet d’interagir avec votre contenu dans son con
 
    ![Élément de menu de l’émulateur](assets/do-not-localize/ue-emulator-2.png)
 
-1. Voir la modification du contenu dans l’éditeur. L’icône de l’émulateur change également pour refléter le mode dans lequel il se trouve. Appuyez ou cliquez n’importe où en dehors du menu de l’émulateur pour le fermer et interagir avec votre contenu.
+1. Voir la modification du contenu dans l’éditeur. L’icône de l’émulateur change également pour refléter le mode dans lequel il se trouve. Sélectionnez n’importe où en dehors du menu de l’émulateur pour le fermer et interagir avec votre contenu.
 
 1. Revenez à l’émulateur en mode bureau.
 
@@ -91,11 +91,11 @@ Vous pouvez également spécifier des dimensions exactes pour l’émulateur et 
 
 ## Prévisualisation et publication {#preview}
 
-Comme vous devez appuyer ou cliquer sur votre contenu pour le sélectionner dans l’éditeur, celui-ci ne vous permet pas de suivre les liens ou d’interagir avec votre contenu en appuyant ou en cliquant dessus lorsqu’il est en mode d’édition. En mode Aperçu, vous pouvez suivre les liens de votre contenu et l’expérimenter comme le feraient vos utilisateurs avant de le publier.
+Comme vous devez sélectionner votre contenu pour le sélectionner dans l’éditeur, celui-ci ne vous permet pas de suivre les liens ou d’interagir avec votre contenu en appuyant ou en cliquant sur lorsqu’il est en mode d’édition. En mode Aperçu, vous pouvez suivre les liens de votre contenu et l’expérimenter comme le feraient vos utilisateurs avant de le publier.
 
-1. Dans le rail de mode sur le côté gauche de l’éditeur, appuyez ou cliquez sur **Aperçu**.
+1. Dans le rail de mode sur le côté gauche de l’éditeur, sélectionnez **Aperçu**.
 
-1. Appuyez ou cliquez maintenant sur le bouton **En savoir plus** lien de l’article principal.
+1. Sélectionnez maintenant la variable **En savoir plus** lien de l’article principal.
 
    ![Mode Aperçu](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -103,7 +103,7 @@ Comme vous devez appuyer ou cliquer sur votre contenu pour le sélectionner dans
 
    ![Revenir à la page principale à l’aide du lien Précédent](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Appuyez ou cliquez maintenant sur le bouton **Publier** en haut à droite de l’éditeur pour publier votre contenu.
+1. Sélectionnez maintenant la variable **Publier** en haut à droite de l’éditeur pour publier votre contenu.
 
    ![Éléments du menu Aperçu et publication](assets/do-not-localize/ue-preview-publish-4.png)
 
@@ -117,12 +117,12 @@ Pour accélérer votre expérience de création de contenu lorsque l’édition 
 
 1. Dans le rail de mode sur le côté gauche de l’éditeur, sélectionnez **Composants**. Vous pouvez ainsi sélectionner des composants de page dans l’éditeur.
 
-1. Appuyez ou cliquez sur l’une des aventures telles que **Le camp de surf de Bali** pour la sélectionner.
+1. Sélectionnez l’une des aventures telles que **Le camp de surf de Bali** pour la sélectionner.
 
    * Notez le contour bleu du composant sélectionné. L’onglet doit afficher le nom du fragment de contenu lorsqu’un fragment de contenu est sélectionné. Dans ce cas **Le camp de surf de Bali**.
-   * Etant donné que l’éditeur universel permet de sélectionner n’importe quel objet de la page, les composants qui font partie d’un fragment de contenu peuvent également être sélectionnés individuellement. Appuyez ou cliquez à l’emplacement indiqué dans l’illustration pour sélectionner l’intégralité du composant Fragment de contenu.
+   * Etant donné que l’éditeur universel permet de sélectionner n’importe quel objet de la page, les composants qui font partie d’un fragment de contenu peuvent également être sélectionnés individuellement. Sélectionnez l’emplacement indiqué dans l’illustration pour sélectionner l’intégralité du composant Fragment de contenu.
 
-1. La variable **Modifier** s’affiche sur le rail des composants. Appuyez ou cliquez sur le bouton **Modifier** pour ouvrir l’éditeur de fragment de contenu sur un nouvel onglet.
+1. La variable **Modifier** s’affiche sur le rail des composants. Sélectionnez la variable **Modifier** pour ouvrir l’éditeur de fragment de contenu sur un nouvel onglet.
 
 ![Sélection de fragments de contenu dans l’éditeur universel](assets/do-not-localize/ue-content-fragments.png)
 

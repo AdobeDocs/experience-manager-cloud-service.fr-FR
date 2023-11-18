@@ -2,9 +2,9 @@
 title: Optimisation des requêtes GraphQL.
 description: Découvrez comment optimiser vos requêtes GraphQL lors du filtrage, de la pagination et du tri de vos fragments de contenu dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu découplée.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1876'
 ht-degree: 65%
 
 ---
@@ -89,7 +89,7 @@ Cette fonctionnalité permet à AEM de mettre en cache le contenu dans le cadre 
 
 **Référence supplémentaire**
 
-Veuillez contacter Adobe pour activer cette fonctionnalité pour votre programme et vos environnements AEM Cloud Service.
+Contactez l’Adobe pour activer cette fonctionnalité pour votre programme et vos environnements AEM Cloud Service.
 
 ### Optimisation des requêtes GraphQL {#graphql-query-optimization}
 

@@ -2,10 +2,10 @@
 title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2035'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,7 @@ Les configurations par défaut (classées dans l’ordre alphabétique) disponib
 
 >[!NOTE]
 >
->Le rendu du contenu est effectué par le navigateur, qui peut également le mettre en cache, selon les en-têtes[Ressources – Facettes de recherche](/help/assets/search-facets.md)
+>Pour plus d’informations sur les formulaires de recherche liés aux ressources, voir [Ressources - Facettes de recherche](/help/assets/search-facets.md).
 
 
 ## Prédicats et paramètres associés {#predicates-and-their-settings}

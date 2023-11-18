@@ -4,10 +4,10 @@ description: Découvrez comment les règles de traduction identifient le contenu
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 99%
+source-wordcount: '1288'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Les règles de traduction décrites dans ce document s’appliquent aux fragment
 
 Si l’option **Activer les champs de modèle de contenu pour la traduction** est active, AEM utilisera le champ **Traduisible** dans les [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) pour déterminer si le champ doit être traduit et crée automatiquement des règles de traduction en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées et ne nécessite aucune intervention ni aucune étape supplémentaire.
 
-Si vous souhaitez utiliser des règles de traduction pour traduire vos fragments de contenu, l’option **Activer les champs de modèle de contenu pour la traduction** dans la configuration de la structure d’intégration de traduction doit être désactivée et vous devez suivre les étapes décrites ci-dessous pour créer vos règles.
+Si vous souhaitez utiliser des règles de traduction pour traduire vos fragments de contenu, la variable **Activation des champs de modèle de contenu pour la traduction** sur la configuration de la structure d’intégration de traduction doit être désactivée et vous devez suivre les étapes décrites ci-dessous pour créer vos règles.
 
 ## Vue d’ensemble {#overview}
 
@@ -167,7 +167,7 @@ Dans l’interface utilisateur des règles de traduction, vous pouvez effectuer 
 
    ![Ajouter le contexte de traduction](../assets/add-translation-context.png)
 
-1. Utilisez le navigateur de chemins d’accès pour sélectionner le contexte requis et appuyez ou cliquez sur le bouton **Confirmer** pour enregistrer.
+1. Utilisez l’explorateur de chemins d’accès pour sélectionner le contexte requis et sélectionnez l’option **Confirmer** pour enregistrer.
 
    ![Sélectionner le contexte](../assets/select-context.png)
 
