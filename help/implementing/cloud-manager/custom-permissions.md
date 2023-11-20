@@ -2,9 +2,9 @@
 title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer de nouveaux profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs responsables de cloud.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 33d14ac66fa46c25f1e027aa86848768fd0271ff
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1559'
 ht-degree: 2%
 
 ---
@@ -96,11 +96,6 @@ Maintenant que vous disposez d’un nouveau profil de produit, vous pouvez lui a
 
 1. Sélectionnez la variable **Tout ajouter** en haut de la page **Autorisations disponibles** pour ajouter toutes les autorisations.
 
-1. Si le profil doit toujours comporter tous les éléments d’autorisation, pensez à utiliser la variable **Inclure automatiquement** .
-
-   * **Activé** - Tous les éléments d’autorisation actuels et les futurs éléments d’autorisation seront déplacés vers les éléments d’autorisation inclus et, à l’enregistrement, seront applicables en conséquence.
-   * **Off** - Tous les éléments d’autorisation seront déplacés vers les éléments d’autorisation disponibles et, lors de l’enregistrement, seront applicables en conséquence.
-
 1. Sélectionner **Enregistrer** lorsque vous avez terminé de définir les éléments d’autorisation pour votre nouveau profil de produit.
 
 Votre nouveau profil de produit est maintenant enregistré avec ses autorisations personnalisées.
@@ -129,6 +124,10 @@ Les autorisations suivantes sont disponibles pour créer des profils personnalis
 | Création d’environnement | Autoriser les utilisateurs à créer un environnement |
 | Modification de l’environnement | Autoriser les utilisateurs à mettre à jour et à modifier des environnements |
 | Journaux d’environnement lus | Autoriser les utilisateurs à lire les journaux d’environnement |
+| Gestion des variables d’environnement | Autoriser les utilisateurs à créer/modifier/supprimer des configurations d’environnement |
+| Création d’une restauration d’environnement | Autoriser les utilisateurs à créer une restauration de l’environnement |
+| Réinitialisation de l’environnement de développement rapide | Autoriser les utilisateurs à réinitialiser l’environnement de développement rapide |
+| Gestion de la copie de contenu | Autoriser les utilisateurs à gérer les opérations de copie de contenu |
 | Création d’un pipeline | Autoriser les utilisateurs à créer des pipelines |
 | Suppression de pipeline | Autorisation de la suppression des pipelines par les utilisateurs |
 | Modification du pipeline | Autoriser les utilisateurs à modifier les pipelines |
@@ -138,6 +137,15 @@ Les autorisations suivantes sont disponibles pour créer des profils personnalis
 | Échecs de mesures importantes de remplacement/rejet | Autoriser les utilisateurs à remplacer/rejeter les échecs de mesures importantes |
 | Planification des déploiements en production | Autorisation des utilisateurs à planifier une étape de déploiement en production |
 | Accès aux informations sur le référentiel | Autoriser les utilisateurs à accéder aux informations du référentiel et à générer un mot de passe d’accès |
+| Repository Create | Autoriser les utilisateurs à créer de nouveaux référentiels Git |
+| Repository Delete | Autorisation de la suppression des référentiels Git par les utilisateurs |
+| Repository Edit | Autoriser les utilisateurs à modifier les référentiels Git |
+| Génération du code du référentiel | Autoriser les utilisateurs à générer un projet à partir de l’archétype |
+| Gestion des noms de domaine | Autoriser les utilisateurs à créer/modifier/supprimer des noms de domaine |
+| Gestion des Listes autorisées IP | Autoriser les utilisateurs à créer/modifier/supprimer des liaisons de liste autorisée IP et de liste autorisée IP |
+| Gestion de l’infrastructure réseau | Autoriser les utilisateurs à créer/modifier/supprimer une infrastructure réseau |
+| Gestion des certificats SSL | Autoriser les utilisateurs à créer/modifier/supprimer un certificat SSL |
+| Gestion des utilisateurs du sous-compte New Relic | Autoriser les utilisateurs à lire/modifier de nouveaux utilisateurs de sous-compte relic |
 
 ### Autorisations au niveau de l’organisation {#organization-level}
 
