@@ -2,7 +2,7 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: ede877212de3394cbdc81e1097d3d6eaf9f390cc
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 97%
@@ -26,7 +26,7 @@ Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Servi
    ![Démarrage du processus d’enregistrement de l’application](assets/oauth-outlook1.png)
 
 1. Renseignez les informations selon vos besoins puis cliquez sur **Enregistrement**.
-1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations d’API**.
+1. Accédez à l’application créée, puis sélectionnez **Autorisations d’API**.
 1. Cliquez sur **Ajouter une autorisation** > **Autorisation Graph** > **Autorisations déléguées**.
 1. Sélectionnez les autorisations ci-dessous pour votre application, puis cliquez sur **Ajouter une autorisation** :
    * `https://outlook.office.com/SMTP.Send`

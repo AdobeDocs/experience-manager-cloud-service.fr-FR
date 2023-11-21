@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 96%
@@ -271,7 +271,7 @@ Vous pouvez créer un groupe d’utilisateurs ou attribuer des autorisations à 
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Adobe Stock]**. Sélectionnez la configuration du cloud d’[!DNL Adobe Stock] et cliquez sur **[!UICONTROL Propriétés]**.
 
-1. Ajoutez le groupe d’utilisateurs nouvellement créé au [!DNL Adobe Stock] configuration. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+1. Ajoutez le groupe d’utilisateurs créé au [!DNL Adobe Stock] configuration. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
    ![affecter-utilisateur](assets/aem-stock-adduser.png)
 

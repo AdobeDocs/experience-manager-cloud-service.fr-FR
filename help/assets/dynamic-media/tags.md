@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6663'
+source-wordcount: '6661'
 ht-degree: 99%
 
 ---
@@ -52,7 +52,7 @@ L’intégration tire parti de deux types distincts et indépendants de suivi de
 
 ### À propos du suivi à l’aide d’Adobe Analytics   {#about-tracking-using-adobe-analytics}
 
-Adobe Analytics vous permet d’effectuer le suivi des actions exécutées par l’utilisateur final lorsqu’il interagit avec les visionneuses Dynamic Media de votre site web. Adobe Analytics vous permet également d’effectuer le suivi des données propres à la visionneuse. Vous pouvez, par exemple, effectuer le suivi et enregistrer les événements de chargement des vues avec le nom de la ressource, les actions de zoom survenues et les actions de lecture vidéo.
+Adobe Analytics vous permet d’effectuer le suivi des actions effectuées par l’utilisateur lorsqu’il interagit avec les visionneuses Dynamic Media de votre site web. Adobe Analytics vous permet également d’effectuer le suivi des données propres à la visionneuse. Vous pouvez, par exemple, effectuer le suivi et enregistrer les événements de chargement des vues avec le nom de la ressource, les actions de zoom survenues et les actions de lecture vidéo.
 
 Dans Experience Platform Tags, les concepts d’*éléments de données* et de *règles* fonctionnent ensemble pour activer le suivi Adobe Analytics.
 
@@ -221,9 +221,9 @@ La valeur exacte renvoyée par l’élément de données dépend du contexte. Si
    * Utilise l’événement de pression de touche de l’extension Core d’Experience Platform Tags comme déclencheur.
    * Envoie la valeur de l’élément de données **[!UICONTROL ZoomScale]** à Adobe Analytics.
 
-Supposons maintenant que l’utilisateur final charge la page web avec les deux visionneuses. Dans la *visionneuse1*, il effectue un zoom avant à une échelle de 50 % ; ensuite, dans la *visionneuse2*, il effectue un zoom avant à une échelle de 25 %. Dans la *visionneuse1*, il effectue un panoramique sur l’image et appuie sur une touche du clavier.
+Maintenant, supposons que l’utilisateur charge la page web avec les deux visionneuses. Dans la *visionneuse1*, il effectue un zoom avant à une échelle de 50 % ; ensuite, dans la *visionneuse2*, il effectue un zoom avant à une échelle de 25 %. Dans la *visionneuse1*, il effectue un panoramique sur l’image et appuie sur une touche du clavier.
 
-L’activité de l’utilisateur final génère les deux appels de suivi suivants vers Adobe Analytics :
+L’activité de l’utilisateur entraîne l’exécution des deux appels de suivi suivants vers Adobe Analytics :
 
 * Le premier appel se produit, car la règle **[!UICONTROL TrackPan]** est déclenchée lorsque l’utilisateur effectue un panoramique dans la *visionneuse1*. Cet appel envoie 50 % en tant que valeur de l’élément de données **[!UICONTROL ZoomScale]** car l’élément de données sait que la règle est déclenchée par la *visionneuse1* et récupère la valeur d’échelle correspondante.
 * Le second appel se produit, car la règle **[!UICONTROL TrackKey]** est déclenchée lorsque l’utilisateur appuie sur une touche du clavier. Cet appel envoie 25 % en tant que valeur de l’élément de données **[!UICONTROL ZoomScale]**, car la règle n’a pas été déclenchée par la visionneuse. L’élément de données renvoie donc la valeur la plus récente.
@@ -257,7 +257,7 @@ La méthode la plus simple consiste à effectuer le processus en deux étapes :
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement de visionneuse Dynamic Media. Saisissez le nom qualifié complet de l’argument d’événement dans la variable **[!UICONTROL value]** champ d’entrée de l’affectation de variable Analytics. Veillez à entourer votre entrée par des signes de pourcentage (%). Par exemple,
+Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement de visionneuse Dynamic Media. Entrez le nom complet de l’argument d’événement dans le champ d’entrée **[!UICONTROL valeur]** de l’affectation de variable Analytics. Veillez à entourer votre entrée par des signes de pourcentage (%). Par exemple,
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -519,7 +519,7 @@ Consultez également la section [Configurer une propriété de balise](https://e
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-   Sélectionnez la propriété nouvellement créée, puis passez à *Installation et configuration des extensions*.
+   Sélectionnez la propriété créée, puis passez à *Installation et configuration des extensions*.
 
 ### Installation et configuration des extensions {#installing-and-setup-of-extensions}
 

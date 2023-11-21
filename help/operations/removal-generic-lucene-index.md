@@ -2,10 +2,10 @@
 title: Suppression des index Lucene génériques
 description: Découvrez la planification de la suppression des index Lucene génériques et en quoi elle peut vous affecter.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 91%
+ht-degree: 87%
 
 ---
 
@@ -154,6 +154,7 @@ Avant la suppression de lʼindex Lucene générique, le composant `pathfield` se
 >[!NOTE]
 >
 >L’éditeur de modèle de fragment de contenu utilise des champs de chemin spécialisés avec le type de ressource Sling `dam/cfm/models/editor/components/contentreference`. 
+>
 > * Actuellement, ils effectuent des requêtes sans spécifier de type de nœuds spécifié, ce qui entraîne l’enregistrement d’un WARN en raison de l’utilisation de l’index Lucene générique.
 > * Les instances de ces composants utiliseront bientôt automatiquement les types de nœuds `cq:Page` et `dam:Asset` par défaut, sans autre intervention du client.
 > * La propriété `nodeTypes` peut être ajoutée pour remplacer ces types de nœuds par défaut.
@@ -167,6 +168,6 @@ Adobe adoptera une approche en deux phases pour supprimer l’index générique 
 
 Adobe surveillera les messages de journal mentionnés ci-dessus et tentera de contacter les clients qui dépendent toujours de lʼindex Lucene générique.
 
-À court terme, Adobe ajoutera des définitions dʼindex personnalisées directement dans les systèmes des clients. Cela permettra dʼéviter si nécessaire les problèmes de fonctionnement ou de performance liés à la suppression de lʼindex Lucene générique.
+Pour limiter les risques à court terme, Adobe ajoute directement des définitions d’index personnalisées aux systèmes clients afin d’éviter des problèmes de performance ou de fonctionnement suite à la suppression de l’index Lucene générique si nécessaire.
 
-Le client recevra alors la définition dʼindex mise à jour et sera invité à lʼinclure dans les versions ultérieures de son application via Cloud Manager.
+Dans ce cas, le client reçoit la définition d’index mise à jour et est informé qu’il l’inclut dans les prochaines versions de son application via Cloud Manager.

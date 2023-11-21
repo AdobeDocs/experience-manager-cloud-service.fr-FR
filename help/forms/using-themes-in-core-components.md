@@ -2,7 +2,7 @@
 title: Comment créer et utiliser des thèmes dans Forms adaptatif ?
 description: Vous pouvez utiliser des thèmes pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif à l’aide de composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 18%
@@ -319,7 +319,7 @@ Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous �
 
 ##### 5.2. Envoyez les modifications au référentiel. {#committing-the-changes}
 
-Maintenant, envoyez les modifications au référentiel de thème de votre Cloud Service AEM Forms. .
+Maintenant, envoyez les modifications au référentiel de thème de votre Cloud Service AEM Forms.
 
 1. Accédez à la racine du dossier de thème.  Dans ce cas, le nom du dossier de thème est `aem-forms-theme-canvas`.
 1. Ouvrez l’invite de commande ou le terminal.

@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '3708'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '3706'
+ht-degree: 99%
 
 ---
 
@@ -88,7 +88,7 @@ Au fur et à mesure que vous lisez, vous allez en apprendre plus sur l’importa
 
 Lorsque vous êtes prêt à publier une ressource image ou vidéo, elle est prise en charge par la colonne vertébrale de Dynamic Media, composée d’un puissant réseau de diffusion de premier niveau. Le réseau sert des centaines de clients dans le monde entier tous les jours. Les ressources sont distribuées sur le réseau de diffusion de contenu (CDN), hébergé par Akamai. Le réseau de diffusion de contenu est un système de services informatiques en réseau qui coopèrent de manière transparente pour diffuser du contenu, en particulier du contenu multimédia volumineux, aux utilisateurs finaux.
 
-Dans le système du CDN, le contenu web est stocké dans des caches web sur Internet. Il est ensuite diffusé à partir du cache web vers les utilisateurs finaux afin de permettre une diffusion plus rapide. Ainsi, la première fois qu’une personne télécharge une page web, les ressources qu’elle voit sont placées dans un cache CDN. Elles sont stockées sur le serveur, de sorte que la prochaine fois qu’une personne se trouvant dans la même zone accédera à la page web, le même contenu de cache sera diffusé plus rapidement. Le contenu est diffusé plus rapidement, car il se trouve plus près de l’utilisateur final. Un réseau de diffusion de contenu accélère l’affichage des pages web, tout en réduisant la demande de bande passante sur le serveur central, car le contenu est diffusé à partir d’un réseau de cache, et non d’un serveur central dans chaque instance. Ce flux optimisé offre une meilleure expérience utilisateur, ce qui entraîne une augmentation des ventes.
+Dans le système du CDN, le contenu web est stocké dans des caches web sur Internet. Il est ensuite diffusé à partir du cache web vers les utilisateurs finaux afin de permettre une diffusion plus rapide. Ainsi, la première fois qu’une personne télécharge une page web, les ressources qu’elle voit sont placées dans un cache CDN. Elles sont stockées sur le serveur, de sorte que la prochaine fois qu’une personne se trouvant dans la même zone accédera à la page web, le même contenu de cache sera diffusé plus rapidement. Le contenu est diffusé plus rapidement car il se trouve plus près de l’utilisateur. Un réseau de diffusion de contenu accélère l’affichage des pages web, tout en réduisant la demande de bande passante sur le serveur central, car le contenu est diffusé à partir d’un réseau de cache, et non d’un serveur central dans chaque instance. Ce flux optimisé offre une meilleure expérience utilisateur, ce qui entraîne une augmentation des ventes.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
@@ -176,7 +176,7 @@ Un autre cas d’utilisation résolu par Dynamic Media est la vidéo. La vidéo
 | **Problème** | **Solution Dynamic Media** |
 |---|---|
 | Difficulté à gérer et diffuser des vidéos optimisées pour divers appareils. | Utilisez une seule vidéo qui prend automatiquement en charge la taille de tous les appareils. |
-| Les vidéos sont bloquées ou lues en basse qualité en raison de la faible bande passante disponible pour l’utilisateur final. | Diffusez de la vidéo par le biais d’un lecteur HTML qui détecte automatiquement la bande passante disponible et adapte la qualité pour garantir une lecture fluide et une haute fidélité. |
+| Les vidéos sont bloquées ou lues en basse qualité en raison de la bande passante disponible de l’utilisateur. | Diffusez de la vidéo par le biais d’un lecteur HTML qui détecte automatiquement la bande passante disponible et adapte la qualité pour garantir une lecture fluide et une haute fidélité. |
 | La création manuelle de toutes les versions d’une vidéo n’est pas réalisable et prend trop de temps pour garantir un affichage et une lecture corrects sur tous les appareils. | Économisez des heures de travail de transcodage fastidieux grâce à un workflow simplifié. |
 | | Libérez du temps pour un travail à plus forte valeur ajoutée. |
 

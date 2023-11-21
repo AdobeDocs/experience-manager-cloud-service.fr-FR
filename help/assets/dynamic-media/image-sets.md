@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 89%
@@ -190,7 +190,7 @@ Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
    >
    >Lors de la création de la visionneuse d’images, vous pouvez modifier la miniature de la visionneuse. Vous pouvez également laisser Experience Manager sélectionner automatiquement la miniature en fonction des ressources de la visionneuse d’images. Pour sélectionner une miniature, sélectionnez **[!UICONTROL Modifier la miniature]** au-dessus du champ Titre de la page de l’Éditeur de visionneuse d’images. Sélectionnez ensuite une image (vous pouvez également accéder à d’autres dossiers pour rechercher des images). Si vous avez sélectionné une miniature, puis que vous souhaitez qu’Experience Manager génère une miniature depuis la visionneuse d’images, sélectionnez **[!UICONTROL Basculer vers]** **[!UICONTROL les miniatures automatiques]**.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**. La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. La visionneuse d’images créée apparaît dans le dossier dans lequel vous l’avez créée.
 
 ## Affichage de visionneuses d’images {#viewing-image-sets}
 

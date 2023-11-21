@@ -2,10 +2,10 @@
 title: Quelles sont les fonctionnalités de mise en page d’Adaptive Forms ?
 description: La disposition et l’apparence des formulaires adaptatifs sur différents appareils sont déterminées par les paramètres de disposition. Comprenez les différentes dispositions et leur mode d’application.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 80%
+source-wordcount: '860'
+ht-degree: 78%
 
 ---
 
@@ -71,7 +71,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Cette disposition permet de placer le composant **[!UICONTROL Panneau de formulaire adaptatif]** dans un panneau avec un style de navigation en accordéon. Cette disposition permet également de créer des panneaux reproductibles. Ces panneaux permettent d’ajouter ou de supprimer des panneaux de manière dynamique en fonction de vos besoins. Vous pouvez définir le nombre minimal et maximal de répétitions d’un panneau. Le titre du panneau peut également être déterminé de manière dynamique en fonction des informations fournies dans les éléments du panneau.
 
-Une expression récapitulative peut être utilisée pour afficher les valeurs fournies par l’utilisateur final dans le titre du panneau réduit.
+L’expression récapitulative peut être utilisée pour afficher les valeurs fournies par l’utilisateur dans le titre du panneau réduit.
 
 ![Panneaux reproductibles utilisant une disposition de type Accordéon dans des formulaires adaptatifs](assets/accordion-layout.png)
 

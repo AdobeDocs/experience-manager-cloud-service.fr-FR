@@ -4,7 +4,7 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 92%
@@ -113,9 +113,9 @@ Lorsque vous envisagez de déplacer des pages dans une Live Copy, tenez compte 
    * N’ajoutez pas d’autres actions à cette configuration.
 1. Placez la nouvelle configuration.
    * Pour déployer entièrement le déplacement de page tout en supprimant les pages respectives de leur ancien emplacement dans la Live Copy :
-      * Placez la configuration nouvellement créée avant la configuration de déploiement standard. La configuration de déploiement standard se charge de supprimer les pages de leurs anciens emplacements.
+      * Placez la configuration créée avant la configuration de déploiement standard. La configuration de déploiement standard se charge de supprimer les pages de leurs anciens emplacements.
       * Pour déployer le déplacement de page tout en conservant les pages respectives à leurs anciens emplacements dans les Live Copies (ce qui revient essentiellement à dupliquer le contenu) :
-         * Positionnez la configuration nouvellement créée après la configuration de déploiement standard. Cela permet de s’assurer qu’aucun contenu n’est supprimé dans la Live Copy ni désactivé sur l’instance de publication.
+         * Positionnez la configuration créée après la configuration de déploiement standard. Cela permet de s’assurer qu’aucun contenu n’est supprimé dans la Live Copy ni désactivé sur l’instance de publication.
 
 ## Personnalisation des déploiements {#customizing-rollouts}
 

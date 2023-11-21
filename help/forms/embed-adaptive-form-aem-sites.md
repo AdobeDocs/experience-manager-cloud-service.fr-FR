@@ -4,7 +4,7 @@ description: Incorporez en toute transparence le Forms adaptatif dans une page A
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3164'
 ht-degree: 43%
@@ -265,7 +265,7 @@ Vous pouvez personnaliser les paramètres avancés du composant **[!UICONTROL Fo
 
 * **Le formulaire couvre toute la largeur du cadre.**: un cadre intégré (iframe) est un élément de HTML qui charge un formulaire adaptatif sur une page AEM Sites.
 
-   * Si la variable **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** est cochée, un formulaire adaptatif occupe toute la largeur du conteneur dans lequel il est placé. Dans ce cas, un iframe n’est pas utilisé pour générer le formulaire. La mise en page et la conception d’un formulaire adaptatif s’adaptent à toute la largeur du conteneur, ce qui le rend réactif et capable de s’adapter à différentes tailles d’écran. Cette option permet d’incorporer plusieurs Forms adaptatives dans une page AEM Sites.
+   * Si la variable **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** est cochée, un formulaire adaptatif occupe toute la largeur du conteneur dans lequel il est placé. Dans ce cas, un iframe n’est pas utilisé pour générer le formulaire. La mise en page et la conception d’un formulaire adaptatif s’adaptent à toute la largeur du conteneur, ce qui le rend réactif et capable de s’adapter à différentes tailles d’écran. Cette option vous permet d’incorporer plusieurs Forms adaptatives dans une page AEM Sites.
 
      >[!NOTE]
      >

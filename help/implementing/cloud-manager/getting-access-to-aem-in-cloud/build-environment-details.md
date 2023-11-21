@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -20,8 +20,8 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
 
 * L’environnement de génération est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.8.8 est installé.
-* Les versions Java installées sont Oracle JDK 8u371 et Oracle JDK 11.0.20.
-* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_371` qui contient le JDK Oracle 8u371. Consultez la [Autre version du JDK d’exécution de Maven](#alternate-maven-jdk-version) pour plus de détails.
+* Les versions Java installées sont Oracle JDK 8u371 et Oracle JDK 11.0.20.
+* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_371` qui contient le Oracle JDK 8u371. Consultez la [Autre version du JDK d’exécution de Maven](#alternate-maven-jdk-version) pour plus de détails.
 * D’autres packages système nécessaires sont installés.
    * `bzip2`
    * `unzip`
@@ -157,9 +157,9 @@ Les noms de variables doivent respecter les conventions suivantes.
 * Les variables ne peuvent contenir que des caractères alphanumériques et un trait de soulignement (`_`).
 * Les noms doivent être en majuscules.
 * Il existe une limite de 200 variables par pipeline.
-* Chaque nom doit comporter moins de 100 caractères.
+* Chaque nom doit comporter 100 caractères ou moins.
 * La valeur `string` de chaque variable doit comporter moins de 2 048 caractères.
-* La valeur `secretString` de chaque variable type doit comporter moins de 500 caractères.
+* Chaque `secretString` La valeur de la variable type doit comporter 500 caractères ou moins.
 
 En cas d’utilisation dans un fichier `pom.xml` Maven, il est généralement utile de mapper ces variables aux propriétés Maven en utilisant une syntaxe similaire à celle-ci.
 

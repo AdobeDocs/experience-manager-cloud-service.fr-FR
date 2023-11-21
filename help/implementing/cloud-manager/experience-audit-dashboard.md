@@ -2,10 +2,10 @@
 title: Tableau de bord du contrôle de l’expérience
 description: Découvrez comment le contrôle de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en termes de performances, d’accessibilité, de bonnes pratiques et d’optimisation pour les moteurs de recherche par le biais d’une interface de tableau de bord claire et informative.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 23%
+source-wordcount: '830'
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ Découvrez comment le contrôle de l’expérience valide votre processus de dé
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est disponible que pour [le programme d&#39;adoption précoce.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
 >Pour plus d’informations sur la fonction d’audit d’expérience existante pour AEM as a Cloud Service, voir [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
 
@@ -28,7 +28,7 @@ L’audit de l’expérience est une fonctionnalité disponible dans les pipelin
 
 1. N’introduisent pas de régressions.
 
-L’audit de l’expérience dans Cloud Manager garantit que l’expérience de l’utilisateur final sur le site est de la plus haute qualité.
+Le contrôle de l’expérience dans Cloud Manager garantit que l’expérience de l’utilisateur sur le site est de la plus haute qualité.
 
 Les résultats sont informatifs et permettent au responsable de déploiement de voir les scores et les différences existant entre les scores précédents et actuels. Ces informations sont utiles pour déterminer si une régression a été introduite avec le déploiement actuel.
 

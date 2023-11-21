@@ -3,7 +3,7 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Découvrez la validation locale, le débogage, la structure de fichiers du mode flexible et comment migrer du mode hérité vers le mode flexible.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2990'
 ht-degree: 94%
@@ -398,7 +398,7 @@ En mode flexible, d’autres fichiers peuvent également être inclus, à condit
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-Par exemple, vous pouvez inclure un fichier dans un répertoire nouvellement créé sous `conf.d/includes` comme suit :
+Par exemple, vous pouvez inclure un fichier dans un répertoire créé sous `conf.d/includes` comme suit :
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

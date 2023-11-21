@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement des workflows de processus d’entreprise. Par exemple, révision et approbation, génération de PDF, workflows Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2392'
 ht-degree: 68%
@@ -66,7 +66,7 @@ L’exemple crée un modèle de workflow dans lequel une demande de prêt immobi
 1. Ouvrez la console Modèles de processus. L’URL par défaut est `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Sélectionnez **Créer**, puis **Créer un modèle**. La boîte de dialogue Ajouter un modèle de processus s’ouvre.
 1. Saisissez **Titre** et **Nom** (facultatif). par exemple, une demande de prêt immobilier. Appuyez sur **Terminé**.
-1. Sélectionnez le modèle de workflow nouvellement créé et appuyez sur **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
+1. Sélectionnez le modèle de processus créé et appuyez sur **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
 
    * Les étapes : Début du flux et Fin du flux. Ces étapes représentent le début et la fin du workflow. Ces étapes sont requises et ne peuvent pas être modifiées ni supprimées.
    * Un exemple d’étape Participant, dont le nom est Étape 1. Cette étape est configurée pour affecter un élément de travail à l’utilisateur administrateur. Supprimez cette étape.

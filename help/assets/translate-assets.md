@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2603'
 ht-degree: 80%
 
 ---
@@ -59,7 +59,7 @@ Les ressources multilingues sont des ressources comportant des fichiers binaires
 
 Dans Adobe Experience Manager Assets, les ressources multilingues se trouvent dans des dossiers, chaque dossier contenant les ressources dans une langue différente.
 
-Chaque dossier de langue est appelé « copie de langue ». Le dossier racine d’une copie de langue, appelé « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/dam/it` est la racine de langue italienne de la copie en italien. Les copies de langue doivent utiliser une [racine de langue correctement configurée](#create-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
+Chaque dossier de langue est appelé « copie de langue ». Le dossier racine d’une copie de langue, appelé « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/dam/it` est la racine de langue italienne de la copie en italien. Les copies de langue doivent utiliser une [racine de langue correctement configurée](#create-a-language-root) afin que la langue correcte soit ciblée lors de la traduction des ressources sources.
 
 La copie de langue pour laquelle vous ajoutez initialement des ressources est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues. L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
 

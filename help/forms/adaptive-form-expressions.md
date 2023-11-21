@@ -1,10 +1,10 @@
 ---
 title: Que sont les expressions de formulaire adaptatif ?
 description: Utilisez des expressions de formulaires adaptatifs pour ajouter la validation et le calcul automatiques ainsi que pour activer ou désactiver la visibilité d’une section.
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -121,7 +121,7 @@ L’expression récapitulative est généralement utilisée pour répéter les e
 
 **Type de valeur renvoyée :** l’expression renvoie une chaîne qui devient le titre de l’accordéon.
 
-**Exemple :** “Numéro de compte : “ + textbox1.value
+**Exemple :** « Numéro de compte : » + textbox1.value
 
 ### Expression de validation {#validate-expression}
 
@@ -205,7 +205,7 @@ Le format d’affichage peut être utilisé pour afficher les données dans diff
 
 ### GuideBridge - API et événements {#guidebridge-apis-and-events}
 
-GuideBridge se compose d’un ensemble d’API qui peuvent être utilisées en interaction avec les formulaires adaptatifs dans un modèle de mémoire d’un navigateur. Pour en savoir plus sur les API GuideBridge, les méthodes de classe, les événements exposés, consultez la [référence d’API de bibliothèque JavaScript™ pour les formulaires adaptatifs](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/).
+GuideBridge est un ensemble d’API qui peut être utilisé pour interagir avec le Forms adaptatif dans un modèle de mémoire dans un navigateur. Pour en savoir plus sur les API GuideBridge, les méthodes de classe, les événements exposés, consultez la [référence d’API de bibliothèque JavaScript™ pour les formulaires adaptatifs](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >

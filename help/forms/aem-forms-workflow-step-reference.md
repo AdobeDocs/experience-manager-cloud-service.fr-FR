@@ -4,9 +4,9 @@ description: Les processus orientés formulaire vous permettent de créer rapide
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser AEM workflows, en utilisant affecter des étapes de tâche, convertir en étape de PDF/A, Générer un document d’étape enregistrée, utiliser des workflows, Signer une étape de document, Générer une étape de sortie imprimée, Générer une sortie de PDF non interactive
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '7444'
+source-wordcount: '7448'
 ht-degree: 78%
 
 ---
@@ -55,8 +55,8 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **[!UICONTROL Priorité :]** la priorité sélectionnée s’affiche dans la boîte de réception AEM. Les options disponibles sont les suivantes : Élevée, Moyenne et Faible. La valeur par défaut est Moyenne.
 * **[!UICONTROL Date d’expiration :]** spécifiez le nombre de jours ou d’heures restant avant que la tâche soit affichée comme En retard. Si vous sélectionnez **[!UICONTROL Désactivé]**, la tâche n’est jamais marquée comme En retard. Vous pouvez également spécifier un gestionnaire de dépassement de délai pour effectuer des tâches spécifiées dès que la tâche est marquée comme En retard.
 
-* **[!UICONTROL Jours :]** le nombre de jours restants pour terminer la tâche. Le nombre de jours est calculé à partir du jour de l’affectation de la tâche à un utilisateur. Si cette option est sélectionnée, si une tâche n’est pas terminée et dépasse le nombre de jours spécifié dans le champ Jours, un gestionnaire de dépassement de délai est déclenché après la date d’expiration.
-* **[!UICONTROL Heures :]** le nombre d’heures restantes pour terminer la tâche. Le nombre d’heures est calculé à partir de l’heure de l’affectation de la tâche à un utilisateur. Si cette option est sélectionnée, si une tâche n’est pas terminée et dépasse le nombre d’heures spécifié dans le champ Heures, un gestionnaire de dépassement de délai est déclenché après l’heure de l’expiration.
+* **[!UICONTROL Jours :]** le nombre de jours restants pour terminer la tâche. Le nombre de jours est calculé à partir du jour de l’affectation de la tâche à un utilisateur. Si une tâche n’est pas terminée et dépasse le nombre de jours spécifié dans le champ Jours , si cette option est sélectionnée, un gestionnaire de délai d’expiration est déclenché après la date d’échéance.
+* **[!UICONTROL Heures :]** le nombre d’heures restantes pour terminer la tâche. Le nombre d’heures est calculé à partir de l’heure de l’affectation de la tâche à un utilisateur. Si une tâche n’est pas terminée et dépasse le nombre d’heures spécifié dans le champ Heures , alors s’il est sélectionné, un gestionnaire de dépassement de délai est déclenché après les heures d’expiration.
 * **[!UICONTROL Expiration après l’échéance :]** sélectionnez cette option pour activer le champ Sélection du gestionnaire de dépassement de délai.
 * **[!UICONTROL Gestionnaire de dépassement de délai :]** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin d’accès spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
 * **[!UICONTROL Sélectionner l’action et ajouter un commentaire depuis la dernière tâche dans Détails de la tâche :]** sélectionnez cette option pour afficher la dernière action qui a été effectuée et le dernier commentaire reçu dans la section Détails de la tâche.

@@ -4,9 +4,9 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3771'
+source-wordcount: '3774'
 ht-degree: 92%
 
 ---
@@ -401,7 +401,7 @@ Le gestionnaire de packages peut effectuer les validations suivantes :
 
 Cette validation inspecte le package pour tous les fichiers JAR (lots OSGi), extrait leur `manifest.xml` (qui contient les dépendances de version sur lesquelles le lot OSGi repose) et vérifie que l’instance AEM exporte lesdites dépendances avec les versions correctes.
 
-**Comment c’est rapporté ?**
+**Comment les rapports sont-ils générés**
 
 Toutes les dépendances de version qui ne peuvent pas être satisfaites par l’instance AEM est répertoriées dans le journal d’activité du Gestionnaire de packages.
 
@@ -425,7 +425,7 @@ Cette validation détermine si le package en cours d’installation contient un 
 
 Par exemple, étant donné un recouvrement présent dans `/apps/sling/servlet/errorhandler/404.jsp`, un package contenant `/libs/sling/servlet/errorhandler/404.jsp`, il modifiera donc le fichier existant dans `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Comment sont-ils signalés ?**
+**Comment les rapports sont-ils générés**
 
 Ces recouvrements sont décrits dans le Journal d’activités du Gestionnaire de packages.
 
@@ -447,7 +447,7 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 
 Cette validation vérifie quelles autorisations sont ajoutées, comment elles sont gérées (fusion/remplacement) et si les autorisations actuelles sont affectées.
 
-**Comment est-ce rapporté ?**
+**Comment les rapports sont-ils générés**
 
 Les autorisations sont décrites dans le Journal d’activités du Gestionnaire de packages.
 

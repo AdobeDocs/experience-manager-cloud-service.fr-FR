@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 96%
+source-wordcount: '988'
+ht-degree: 94%
 
 ---
 
@@ -59,14 +59,16 @@ Les ressources vidéo 360 chargées dans [!DNL Experience Manager] sont consid�
 
       * 1080p – 1920 x 1080, connu sous le nom de résolution Full HD ou FHD ou,
       * 2160p – 3840 x 2160, connu sous le nom de résolution 4K, UHD ou Ultra HD. Cette résolution d’affichage importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée « 4K », car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
+
    * [Créez un profil de vidéo adaptative personnalisé](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) avec des rendus de qualité supérieure. Par exemple, vous pouvez créer un profil de vidéo adaptative qui contient les trois paramètres suivants :
 
       * Width=auto; Height=720; Bit rate=2500 kbps
       * Width=auto; Height=1080; Bit rate=5000 kbps
       * Width=auto; Height=1440; Bit rate=6600 kbps
+
    * Traitez le contenu vidéo 360 dans un dossier destiné exclusivement aux ressources vidéo 360.
 
-   Cette approche impose des exigences plus élevées au réseau et au processeur de l’utilisateur final.
+   Cette approche impose des exigences plus élevées au réseau et au processeur de l’utilisateur.
 
 1. [Chargez votre vidéo dans le dossier](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
@@ -124,7 +126,8 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/
 
    * Dans la liste des visionneuses, sélectionnez **[!UICONTROL Video360VR]**.
 
-      Une vidéo de réalité virtuelle (VR) est un contenu vidéo immersif accessible grâce à un casque de réalité virtuelle. À l’instar des vidéos ordinaires, vous créez une vidéo de réalité virtuelle au début, lorsqu’elle est en cours d’enregistrement ou capturée à l’aide de caméras à 360°.
+     Une vidéo de réalité virtuelle (VR) est un contenu vidéo immersif accessible grâce à un casque de réalité virtuelle. À l’instar des vidéos ordinaires, vous créez une vidéo de réalité virtuelle au début, lorsqu’elle est en cours d’enregistrement ou capturée à l’aide de caméras à 360°.
+
    ![Capture d’écran d’une personne pointant sa souris sur l’option Visionneuse Video360VR.](assets/6_5_360video-preview-video360vr.png)
    *Capture d’écran d’une vidéo 360 VR.*
 

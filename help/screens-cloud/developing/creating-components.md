@@ -2,10 +2,10 @@
 title: Création de composants
 description: Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages web. Consultez cette page pour en savoir plus sur la création de canaux et le rendu de composants.
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '288'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Cependant, dans la mesure où les composants d’un canal sont généralement re
 
 Par exemple, `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
-L’utilisateur ne doit pas se charger de l’ajout du sélecteur à l’URL au cours de l’édition. Une logique côté client écoute l’événement de changement de calque et ajoute le sélecteur si le canal présente le type de ressource dédié *screens/core/components/channel.*
+L’utilisateur ne doit pas se charger de l’ajout du sélecteur à l’URL au cours de l’édition. Une logique côté client écoute l’événement de changement de calque et ajoute le sélecteur si le canal possède le type de ressource dédié. *screens/core/components/channel.*
 
 ## Rendu des composants {#rendering-components}
 

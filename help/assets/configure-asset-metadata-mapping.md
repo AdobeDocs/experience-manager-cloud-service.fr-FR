@@ -2,10 +2,10 @@
 title: Configurer le mappage des métadonnées de ressources entre Workfront et Experience Manager Assets
 description: Mappez les champs de métadonnées des ressources entre les applications Adobe Workfront et Experience Manager as a Cloud Service. Suite au mappage des champs de métadonnées, lorsque vous envoyez une ressource de Workfront à Experience Manager Assets, vous pouvez afficher les métadonnées de ressource mappées dans Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 97%
+source-wordcount: '1024'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Pour définir le mappage des métadonnées pour les champs Nom du projet, Nom du
 
 1. Sélectionnez l’intégration Experience Manager Assets et cliquez sur **[!UICONTROL Modifier]**.
 
-1. Cliquez sur **[!UICONTROL Métadonnées]**. Sous l’onglet **[!UICONTROL Ressources]**, mappez le champ Workfront [!UICONTROL Projet] > [!UICONTROL Nom] au champ Experience Manager Assets `wm:projectName`. Si vous ne trouvez pas la correspondance exacte, Adobe recommande de rechercher la meilleure correspondance pour mapper les champs Workfront et Experience Manager Assets. Vous pouvez éviter de mapper des champs ayant différents types de données. Par exemple, le mappage d’un champ de date Workfront à un champ Ressources de description.
+1. Cliquez sur **[!UICONTROL Métadonnées]**. Sous l’onglet **[!UICONTROL Ressources]**, mappez le champ Workfront [!UICONTROL Projet] > [!UICONTROL Nom] au champ Experience Manager Assets `wm:projectName`. Si vous ne trouvez pas la correspondance exacte, Adobe vous recommande de rechercher la meilleure correspondance pour mapper le champ Workfront et Experience Manager Assets. Vous pouvez éviter de mapper des champs ayant différents types de données. Par exemple, le mappage d’un champ de date Workfront à un champ Ressources de description.
 1. Mappez le champ Workfront [!UICONTROL Document] > [!UICONTROL Nom] au champ Experience Manager Assets `wm:documentName`.
 
    ![Mappage dans Workfront](assets/workfront-metadata-mapping.png)

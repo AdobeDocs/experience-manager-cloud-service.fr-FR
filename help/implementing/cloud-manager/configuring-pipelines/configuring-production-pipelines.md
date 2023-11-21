@@ -3,10 +3,10 @@ title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 79%
+source-wordcount: '1412'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,7 @@ Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onbo
 
 >[!NOTE]
 >
->Un pipeline de production ne peut être configuré que lorsqu’un programme a été créé, que si le référentiel Git comporte au moins une branche et que si un ensemble d’environnements de production et d’évaluation a été créé.
+>Un pipeline de production ne peut pas être configuré tant que la création du programme n’est pas terminée, qu’un référentiel git ne comporte pas au moins une branche et qu’un ensemble d’environnements de production et d’évaluation n’est pas créé.
 
 Avant de commencer le déploiement du code, vous devez configurer les paramètres de votre pipeline à partir de [!UICONTROL Cloud Manager].
 

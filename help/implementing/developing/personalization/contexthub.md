@@ -2,16 +2,16 @@
 title: ContextHub
 description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 # ContextHub {#contexthub}
 
-ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. Il vise principalement à offrir la possibilité d’[afficher des données contextuelles tout en simulant divers personnages et en passant de l’un à l’autre](/help/sites-cloud/authoring/personalization/contexthub.md).
+ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. Sa principale fonctionnalité est d’offrir la possibilité de [afficher les données contextuelles lors de la simulation et du changement entre différentes personas ;](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 ContextHub vous permet d’effectuer les opérations suivantes :
 

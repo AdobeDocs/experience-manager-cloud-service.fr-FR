@@ -3,9 +3,9 @@ title: Configuration d’une action Envoyer pour un formulaire adaptatif?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres
 keywords: comment sélectionner une action d’envoi pour un formulaire adaptatif, connecter un formulaire adaptatif à la liste sharepoint, connecter un formulaire adaptatif à la bibliothèque de documents sharepoint, connecter un formulaire adaptatif au modèle de données de formulaire
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3635'
+source-wordcount: '3634'
 ht-degree: 81%
 
 ---
@@ -473,7 +473,7 @@ Utilisez **[!UICONTROL Revalider sur le serveur]** sous le conteneur de formulai
 
 Activer la validation côté serveur
 
-Si l’utilisateur final ou l’utilisatrice finale contourne ces validations et soumet les formulaires, le serveur effectue à nouveau la validation. Si la validation échoue du côté du serveur, la transaction d’envoi est arrêtée. L’utilisateur final voit de nouveau s’afficher le formulaire d’origine. Pour l’utilisateur, les données capturées et les données envoyées s’affichent en tant qu’erreurs.
+Si l’utilisateur final ou l’utilisatrice finale contourne ces validations et soumet les formulaires, le serveur effectue à nouveau la validation. Si la validation échoue du côté du serveur, la transaction d’envoi est arrêtée. Le formulaire d’origine est de nouveau présenté à l’utilisateur. Pour l’utilisateur, les données capturées et les données envoyées s’affichent en tant qu’erreurs.
 
 >[!NOTE]
 >

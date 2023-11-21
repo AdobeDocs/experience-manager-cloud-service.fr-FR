@@ -2,7 +2,7 @@
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
 description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 23%
@@ -145,7 +145,7 @@ Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez n
    <filter root="/etc/languages"/>
    ```
 
-   ![Ajoutez les dossiers nouvellement créés dans le `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+   ![Ajoutez les dossiers créés dans le `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 ### 6. Validez les modifications et déployez le pipeline {#commit-changes-in-repo-deploy-pipeline}
 

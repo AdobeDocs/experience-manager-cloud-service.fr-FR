@@ -2,10 +2,10 @@
 title: Comment créer un portail Formulaires sur une page Experience Manager Sites?
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1841'
-ht-degree: 94%
+source-wordcount: '1840'
+ht-degree: 93%
 
 ---
 
@@ -32,8 +32,8 @@ Les composants du portail Formulaires vous permettent d’ajouter les fonctionna
 * Autorisez les utilisateurs finaux à afficher les formulaires aux formats HTML et PDF.
 * Recherchez des formulaires en fonction du titre et de la description.
 * Utilisez des feuilles CSS personnalisées pour la personnalisation de l’apparence du portail.
-* Créez des liens vers des formulaires.
-* Énumèrez les versions préliminaires et les envois associés aux formulaires adaptatifs créés par l’utilisateur final.
+* Création de liens vers des formulaires.
+* Répertorie les brouillons et les envois liés à la Forms adaptative créée par l’utilisateur.
 
 ## Composants d’une page du portail Formulaires {#forms-portal-components}
 

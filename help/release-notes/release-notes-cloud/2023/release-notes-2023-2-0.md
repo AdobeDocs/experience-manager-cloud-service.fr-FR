@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2023.2.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.2.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 98%
 
 ---
-
 
 # Notes de mise à jour de la version 2023.2.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -45,7 +45,7 @@ Consultez la vidéo Aperçu de la mise à jour de février 2023 pour un résum�
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
 * Prise en charge du nouveau protocole (DASH, Dynamic Adaptive Streaming over HTTP) pour le streaming adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF activé) :
-   * Le streaming adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos à l’utilisateur ou l’utilisatrice final.
+   * La diffusion en continu adaptative (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos par les utilisateurs.
    * Largement adopté dans le secteur, DASH est le protocole standard international pour le streaming à débit adaptatif de vidéos
    * Disponible en Amérique du Nord, pour activation via un ticket d’assistance, bientôt disponible en APAC, EMEA
 
@@ -57,7 +57,7 @@ Consultez la vidéo Aperçu de la mise à jour de février 2023 pour un résum�
 
 * **[Utiliser des composants principaux de capture de données pour créer des formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr)** : [utilisez l’éditeur de formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) pour créer des formulaires basés sur des composants de capture de données normalisés (composants principaux). Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique.
 
-* **[Prise en charge du pipeline frontal pour la mise en forme des formulaires adaptatifs basés sur des composants principaux](/help/forms/using-themes-in-core-components.md)**: utilisez des thèmes basés sur la méthodologie AEM pour les formulaires adaptatifs basés sur les composants principaux en les déployant avec le pipeline de déploiement frontal afin d’améliorer l’aspect de vos formulaires et respecter les directives de conception approuvées de votre organisation.
+* **[Prise en charge du pipeline front-end pour la mise en forme des formulaires adaptatifs basés sur des composants principaux](/help/forms/using-themes-in-core-components.md)** : utilisez des thèmes basés sur la méthodologie AEM pour les formulaires adaptatifs basés sur les composants principaux en les déployant avec le pipeline de déploiement front-end afin d’améliorer l’aspect de vos formulaires et de respecter les directives de conception approuvées de votre organisation.
 
 * **[Génération d’un document d’enregistrement pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/generate-document-of-record-core-components.md)**: créez un document d’enregistrement contenant les données envoyées pour les formulaires adaptatifs créés à l’aide des composants principaux pour l’archivage ou la référence aux utilisateurs et utilisatrices finaux, sur papier ou au format document.
 

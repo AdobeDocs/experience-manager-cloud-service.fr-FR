@@ -4,7 +4,7 @@ description: Découvrez la configuration de Dynamic Media dans Adobe Experience
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3794'
 ht-degree: 98%
@@ -84,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    Le nouveau mot de passe est enregistré si vous sélectionnez **[!UICONTROL Enregistrer]** dans l’angle supérieur droit de la page **[!UICONTROL Créer une configuration Dynamic Media]**.
 
-   Si vous avez sélectionné **[!UICONTROL Annuler]** dans le **[!UICONTROL Modifier le mot de passe]** , vous devez toujours saisir un nouveau mot de passe lorsque vous enregistrez la configuration Dynamic Media nouvellement créée.
+   Si vous avez sélectionné **[!UICONTROL Annuler]** dans le **[!UICONTROL Modifier le mot de passe]** , vous devez toujours saisir un nouveau mot de passe lorsque vous enregistrez la configuration Dynamic Media créée.
 
    Voir aussi [Modifier le mot de passe pour Dynamic Media](#change-dm-password).
 
@@ -129,7 +129,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 Vous avez à présent terminé la configuration de base ; vous pouvez utiliser Dynamic Media.
 
-Si vous souhaitez personnaliser davantage votre configuration, en activant par exemple les autorisations des listes de contrôles d’accès (ACL), vous pouvez éventuellement effectuer l’une des tâches de la rubrique [Configurer les paramètres avancés dans Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Si vous souhaitez personnaliser davantage votre configuration, en activant par exemple les autorisations de liste de contrôles d’accès (ACL), vous pouvez éventuellement effectuer l’une des tâches de la rubrique [Configuration des paramètres avancés dans Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### Résolution des problèmes liés à une nouvelle configuration Dynamic Media {#troubleshoot-dm-config}
 

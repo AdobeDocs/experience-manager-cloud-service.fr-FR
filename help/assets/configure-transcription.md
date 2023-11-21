@@ -1,8 +1,6 @@
 ---
 title: Configuration du service de transcription
-seo-title: Configure transcription service
 description: Adobe Experience Manager Assets est configuré avec les  [!DNL Azure Media Services]  qui génèrent automatiquement une transcription textuelle de la langue parlée dans un fichier audio ou vidéo pris en charge au format WebVTT (Vtt).
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 93%
+source-wordcount: '1689'
+ht-degree: 92%
 
 ---
 
@@ -158,7 +156,7 @@ Les formats de fichiers audio et vidéo suivants sont pris en charge pour la tra
 ## Limites connues {#known-limitations}
 
 * La fonction de transcription est prise en charge pour les vidéos d’une durée maximale de 10 minutes.
-* Le titre de la vidéo doit comporter moins de 80 caractères.
+* Le titre de la vidéo doit comporter 80 caractères ou moins.
 * La taille de fichier prise en charge peut aller jusqu’à 15 Go.
 * La durée de traitement maximale prise en charge est de 60 minutes.
 * Avec un compte payant [!DNL Azure], vous pouvez charger jusqu’à 50 films par minute. Cependant, dans un compte d’évaluation, vous pouvez télécharger jusqu’à cinq films par minute.

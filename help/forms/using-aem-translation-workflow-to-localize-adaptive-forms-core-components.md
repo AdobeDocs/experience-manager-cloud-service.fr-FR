@@ -3,7 +3,7 @@ title: Comment pouvons-nous traduire un formulaire adaptatif basé sur les compo
 description: Découvrez comment créer un modèle de données de formulaire dans AEM Forms, tester le modèle avec des exemples de données et de services et configurer diverses options pour un modèle.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 93%
@@ -25,7 +25,7 @@ Le service de traduction automatique traduit directement le contenu de vos formu
    * Pour ajouter un nouveau dictionnaire à un projet de traduction existant, sélectionnez l’option **[!UICONTROL Ajouter à un projet de traduction existant]** et sélectionnez un **[!UICONTROL Projet de traduction existant]**.
 1. Dans le champ **Langues cibles**, spécifiez un paramètre régional (par exemple `German(de)`). Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**. Cliquez sur **Terminé**.
 1. Dans la boîte de dialogue Dictionnaire ajouté, cliquez sur **Ouvrir des projets**.
-1. Dans l’écran Projets , cliquez sur le projet nouvellement créé. Par exemple, cliquez sur la mosaïque **Site de référence du gouvernement - langue allemande**.
+1. Dans l’écran Projets , cliquez sur le projet créé. Par exemple, cliquez sur la mosaïque **Site de référence du gouvernement - langue allemande**.
 1. Dans le volet **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Démarrer**. Le statut de la mosaïque passe à Brouillon. Une fois la traduction terminée, le statut passe à **Approuvé**. Actualisez la page après quelques minutes et vérifiez le statut.
 
    ![Début de la traduction](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
@@ -68,7 +68,7 @@ Effectuez les étapes suivantes pour localiser un formulaire et son document d�
    * Pour ajouter un nouveau dictionnaire à un projet de traduction existant, sélectionnez l’option **[!UICONTROL Ajouter à un projet de traduction existant]** et sélectionnez un **[!UICONTROL Projet de traduction existant]**.
 1. Dans le champ **Langues cibles**, spécifiez un paramètre régional (par exemple `German(de)`). Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**. Cliquez sur **Terminé**.
 1. Dans la boîte de dialogue Dictionnaire ajouté, cliquez sur **Ouvrir des projets**.
-1. Dans l’écran Projets , cliquez sur le projet nouvellement créé. Par exemple, cliquez sur la mosaïque **Site de référence du gouvernement - langue allemande**.
+1. Dans l’écran Projets , cliquez sur le projet créé. Par exemple, cliquez sur la mosaïque **Site de référence du gouvernement - langue allemande**.
 1. Au bas de la mosaïque **Résumé**, cliquez sur les **points de suspension**. L’écran Propriétés du projet de traduction s’affiche.
 1. Ouvrez l’onglet **[!UICONTROL Avancé]** dans la partie supérieure de l’écran **Propriétés du projet de traduction**. Pour le **[!UICONTROL champ Traduction]**, sélectionnez **[!UICONTROL Traduction humaine]**. Cliquez sur **Enregistrer et fermer** en haut de l’écran.
 1. Dans la mosaïque **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Exporter**. Dans la boîte de dialogue Exporter, cliquez sur l’option Télécharger le fichier exporté. Un fichier ZIP est téléchargé.

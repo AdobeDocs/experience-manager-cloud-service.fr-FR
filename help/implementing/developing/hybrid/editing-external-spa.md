@@ -2,10 +2,10 @@
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -111,7 +111,7 @@ Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est cr�
 
    ![Propriétés du composant texte](assets/external-spa-text-properties.png)
 
-   Ces valeurs sont transmises en tant que propriétés au nouveau du composant React `AEMText` et peuvent être utilisées pour générer le contenu.
+   Ces valeurs sont transmises en tant que propriétés à la propriété créée. `AEMText` React et peut être utilisé pour effectuer le rendu du contenu.
 
    ```javascript
    import React from 'react';
@@ -343,7 +343,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 1. Ajoutez des assistants pour le routage de la SPA.
 
-   * La page nouvellement créée ne peut pas encore afficher le contenu attendu dans AEM. En effet, le routeur cherche le chemin d’accès `/test` alors que le chemin d’accès actif d’AEM est `/wknd-spa-react/us/en/test`. Pour prendre en compte la partie spécifique à AEM de l’URL, vous devez ajouter des fonctions d’aide côté SPA.
+   * La page créée ne peut pas encore afficher le contenu attendu dans AEM. En effet, le routeur cherche le chemin d’accès `/test` alors que le chemin d’accès actif d’AEM est `/wknd-spa-react/us/en/test`. Pour prendre en compte la partie spécifique à AEM de l’URL, vous devez ajouter des fonctions d’aide côté SPA.
 
    ![Assistant de routage](assets/external-spa-router-helper.png)
 

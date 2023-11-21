@@ -3,10 +3,10 @@ title: Découvrez comment rechercher des ressources dans [!DNL Assets view]?
 description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 97%
+source-wordcount: '922'
+ht-degree: 94%
 
 ---
 
@@ -123,7 +123,7 @@ Pour supprimer des filtres personnalisés :
 
 ## Recherches enregistrées {#saved-search}
 
-La fonctionnalité de recherche est assez facile à utiliser dans [!DNL Assets view]. Dans la zone de recherche, vous pouvez non seulement saisir un mot-clé et appuyer sur Entrée pour afficher les résultats, mais vous pouvez également rechercher rapidement vos mots-clés recherchés récemment en un seul clic.
+La fonctionnalité de recherche est assez facile à utiliser dans [!DNL Assets view]. Dans la zone de recherche, vous pouvez simplement saisir un mot-clé et appuyer sur Retour pour afficher les résultats. Vous pouvez également rechercher rapidement vos mots-clés récemment recherchés en un seul clic.
 
 Vous pouvez également filtrer les résultats de la recherche en fonction de critères spécifiques relatifs aux métadonnées et au type de ressources. Pour les filtres fréquemment utilisés, [!DNL Assets view] permet d’enregistrer les paramètres de recherche afin d’améliorer l’expérience de recherche. Vous pouvez ensuite sélectionner la recherche enregistrée pour l’utiliser et appliquer le filtre, en un seul clic.
 

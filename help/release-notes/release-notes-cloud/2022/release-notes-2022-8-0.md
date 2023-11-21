@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 59%
+source-wordcount: '623'
+ht-degree: 55%
 
 ---
 
-# Notes de mise à jour 2022.8.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2022.8.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.8.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -67,7 +67,7 @@ Regardez la vidéo Aperçu de la version d’août 2022 pour un résumé des fon
 
    * Utilisation de modèles statiques : les client(e)s qui utilisent toujours les modèles statiques hérités peuvent poursuivre leur migration vers le cloud en utilisant des modèles statiques dans l’assistant pour créer des formulaires adaptatifs. Les client(e)s disposent ainsi de temps supplémentaire pour migrer des anciens modèles statiques vers des modèles modifiables modernes.
 
-* [Suppression des champs masqués d’un document d’enregistrement (DoR) lors du traitement serveur](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) : vous pouvez générer le document d’enregistrement au format PDF à destination des utilisateurs et utilisatrices finaux contenant uniquement les champs qui leur étaient visibles lors de l’expérience de capture de données. Lors de l’envoi du formulaire, le serveur valide les champs qui étaient masqués à l’utilisateur ou l’utilisatrice final(e) en fonction des données envoyées et les exclut du document d’enregistrement par souci de cohérence.
+* [Suppression des champs masqués d’un document d’enregistrement (DoR) lors du traitement serveur](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) : vous pouvez générer le document d’enregistrement au format PDF à destination des utilisateurs et utilisatrices finaux contenant uniquement les champs qui leur étaient visibles lors de l’expérience de capture de données. Lors de l’envoi du formulaire, le serveur valide les champs qui ont été masqués à l’utilisateur en fonction des données envoyées et exclut du document d’enregistrement par souci de cohérence.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 

@@ -2,7 +2,7 @@
 title: Réplication
 description: Découvrez la distribution et le dépannage de la réplication dans AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 97%
@@ -64,7 +64,7 @@ Vous pouvez également créer un modèle de workflow qui utilise l’étape du p
 1. Sur la page d’accueil d’AEM as a Cloud Service, accédez à **Outils – Workflow – Modèles**.
 1. Sur la page Modèles de workflow, appuyez sur **Créer** dans l’angle supérieur droit de l’écran.
 1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
-1. Sélectionnez le modèle nouvellement créé dans la liste, puis appuyez sur **Modifier**
+1. Sélectionnez le modèle créé dans la liste, puis appuyez sur **Modifier**
 1. Dans la fenêtre suivante, faites un glisser-déposer de l’étape du processus dans le flux de modèle actuel :
 
    ![Étape du processus](/help/operations/assets/processstep.png)

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 97%
@@ -118,7 +118,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 1. Pour supprimer une ressource, sélectionnez la case correspondante, puis sélectionnez **[!UICONTROL Supprimer la ressource]**.
 1. Pour appliquer un paramètre prédéfini aux ressources, sélectionnez **[!UICONTROL Paramètre prédéfini]** dans le coin supérieur droit, puis sélectionnez le paramètre prédéfini de votre choix.
-1. Sélectionnez **[!UICONTROL Enregistrer]**. La visionneuse de médias mixtes nouvellement créée apparaît dans le dossier dans lequel vous l’avez créée.
+1. Sélectionnez **[!UICONTROL Enregistrer]**. La visionneuse de médias mixtes créée apparaît dans le dossier dans lequel vous l’avez créée.
 
 ## Modification d’une visionneuse de médias mixtes {#editing-mixed-media-sets}
 

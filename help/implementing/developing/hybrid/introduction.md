@@ -2,10 +2,10 @@
 title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 94%
+source-wordcount: '2065'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ D’autres outils de création, tels que le glisser-déposer de composants suppl
 
 ## Applications SPA et éditeur de SPA AEM {#spa-apps-and-the-aem-spa-editor}
 
-Expérimenter le comportement d’une SPA pour l’utilisateur final puis inspecter la page SPA permet de mieux comprendre le fonctionnement d’une SPA avec l’éditeur de SPA dans AEM.
+L’expérience du comportement d’un SPA pour l’utilisateur, puis l’inspection de la page SPA, vous permettent de mieux comprendre le fonctionnement d’une application SAP avec l’éditeur d’outils de la page d’accès aux ressources dans.
 
 ### Utilisation d’une SPA {#using-an-spa-application}
 

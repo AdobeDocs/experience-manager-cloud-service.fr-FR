@@ -2,10 +2,10 @@
 title: Équipe et profils de produits AEM as a Cloud Service
 description: Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service accordent et limitent l’accès à vos solutions Adobe sous licence.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 85%
+source-wordcount: '847'
+ht-degree: 81%
 
 ---
 
@@ -42,7 +42,7 @@ Vos personnes membres de l’équipe d’AEM as a Cloud Service sont ajouté
 
 >[!TIP]
 >
->* Pour en savoir plus sur les profils de produits d’AEM, consultez [Attribuer des profils de produit d’AEM](/help/journey-onboarding/assign-profiles-aem.md).
+>* Pour en savoir plus sur AEM profils de produit, voir [Attribution de profils de produit AEM](/help/journey-onboarding/assign-profiles-aem.md).
 >* Pour plus d’informations sur le processus d’intégration, voir [parcours d’intégration](/help/journey-onboarding/overview.md).
 
 ## Profils de produit Cloud Manager {#cloud-manager-product-profiles}
@@ -82,5 +82,5 @@ Votre équipe Cloud Manager comprend au moins :
 
 >[!TIP]
 >
->* Pour en savoir plus sur les profils de produits Cloud Manager, consultez [Attribuer des membres d’équipe à des profils de produit Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Pour en savoir plus sur les profils de produit Cloud Manager, voir [Affectation de membres d’équipe à des profils de produit Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* Pour plus d’informations sur le processus d’intégration, voir [parcours d’intégration](/help/journey-onboarding/overview.md).

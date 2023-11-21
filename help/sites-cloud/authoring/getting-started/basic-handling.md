@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 91%
+source-wordcount: '2945'
+ht-degree: 90%
 
 ---
 
@@ -231,7 +231,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 
 Dans la [vue Carte](#card-view), certaines actions sont disponibles sous forme d’icônes d’action rapide ou dans la barre d’outils. Les icônes d’action rapide sont disponibles pour un seul élément à la fois, ce qui évite d’avoir à effectuer une présélection.
 
-Les actions rapides sont visibles lorsque vous pointez (ordinateur de bureau) sur une carte de ressource avec la souris. Les actions rapides disponibles dépendent de la console et du contexte. Voici, par exemple, les actions rapides d’une page dans la console **Sites** :
+Les actions rapides sont visibles lorsque vous placez le pointeur de la souris sur une carte de ressource (ordinateur de bureau). Les actions rapides disponibles dépendent de la console et du contexte. Voici, par exemple, les actions rapides d’une page dans la console **Sites** :
 
 ![Options supplémentaires](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -366,7 +366,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
    * **Publié** : statut de la publication.
    * **Prévisualisation** : prévisualisation du statut
    * **Modèle** : modèle sur lequel la page est basée.
-   * **Workflow** : workflow actuellement appliqué à la page. D’autres informations sont disponibles lorsque vous déplacez la souris ou lorsque vous ouvrez la chronologie.
+   * **Workflow** : workflow actuellement appliqué à la page. Plus d’informations sont disponibles lorsque vous placez le pointeur de la souris ou ouvrez la chronologie.
    * **Analyse de la page**
    * **Visiteurs ou visiteuses uniques**
    * **Temps passé sur la page**

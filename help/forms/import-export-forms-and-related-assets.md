@@ -1,7 +1,7 @@
 ---
 title: Importation et exportation de ressources dans [!DNL AEM Forms]?
 description: Découvrez comment utiliser DocuSign avec un formulaire adaptatif pour collecter des signatures électroniques.
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 81%
@@ -200,7 +200,7 @@ Pour créer un dossier, procédez comme suit :
 
    Si un dossier portant le même nom que celui spécifié existe déjà, l’envoi échoue avec une erreur. Vous pouvez afficher le message d’erreur en pointant sur l’icône d’erreur ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) qui s’affiche en regard du champ Nom.
 
-   Vous pouvez appuyer sur le dossier nouvellement créé pour accéder au dossier et créer des ressources ou des dossiers dans le dossier. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
+   Vous pouvez appuyer sur le dossier créé pour l’insérer dans le dossier et créer des ressources ou des dossiers dans le dossier. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 

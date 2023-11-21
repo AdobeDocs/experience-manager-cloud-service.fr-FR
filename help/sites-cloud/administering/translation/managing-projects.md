@@ -4,7 +4,7 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3971'
 ht-degree: 86%
@@ -455,7 +455,7 @@ Dans ce scénario, la bonne pratique consiste à procéder comme suit :
 1. Annulez la publication des copies dans la langue associées à la page source que vous souhaitez déplacer.
 1. Supprimez-les.
 1. Créez de nouvelles copies dans la langue à partir de la page source nouvellement déplacée.
-1. Publiez les copies de langue nouvellement créées.
+1. Publiez les copies de langue créées.
 
 ## Importation et exportation de tâches de traduction {#import-export}
 

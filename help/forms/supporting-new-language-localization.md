@@ -2,7 +2,7 @@
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants de base ?
 description: Pour le Forms adaptatif, vous pouvez ajouter des paramètres régionaux pour plus de langues, à l’exception de celui fourni d’usine.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 80%
@@ -104,7 +104,7 @@ Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez n
 1. Ajoutez les valeurs des paramètres régionaux par défaut `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, si elles ne sont pas déjà présentes.
 
 1. Ajoutez `<locale>` aux valeurs de la propriété `languages` de `/etc/languages`.
-1. Ajoutez les dossiers nouvellement créés dans le `filter.xml` sous etc/META-INF/[hiérarchie de dossiers] en tant que :
+1. Ajoutez les dossiers créés dans le `filter.xml` sous etc/META-INF/[hiérarchie de dossiers] en tant que :
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

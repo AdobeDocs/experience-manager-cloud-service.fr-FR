@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 65%
@@ -36,7 +36,7 @@ Pour modifier les métadonnées :
    >
    >Si un champ de texte est vide, cela signifie qu’aucune métadonnée n’a été définie. Vous pouvez saisir une valeur dans le champ et l’enregistrer pour ajouter cette propriété de métadonnées.
 
-Toute modification apportée aux métadonnées d’une ressource est écrite dans les données XMP du binaire d’origine. Cette modification est apportée par le biais du workflow d’écriture différée des métadonnées d’Experience Manager. Modifications apportées aux propriétés existantes (telles que `dc:title`) sont remplacées et les propriétés nouvellement créées (y compris les propriétés personnalisées telles que `cq:tags`) sont ajoutés avec le schéma.
+Toute modification apportée aux métadonnées d’une ressource est écrite dans les données XMP du binaire d’origine. Cette modification est apportée par le biais du workflow d’écriture différée des métadonnées d’Experience Manager. Modifications apportées aux propriétés existantes (telles que `dc:title`) sont remplacées et créées (y compris les propriétés personnalisées telles que `cq:tags`) sont ajoutés avec le schéma.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

@@ -2,10 +2,10 @@
 title: Installation et configuration des lecteurs dans Screens as a Cloud Service
 description: Cette page décrit comment installer et configurer des lecteurs dans Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '582'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ La surveillance de base de la lecture dans un lecteur AEM Screens nous permet d�
 
 * Améliorer la réactivité des écrans vierges ou des expériences rompues dans ce champ
 
-* Réduire les risques d’afficher une expérience rompue à l’utilisateur final
+* Réduit le risque d’afficher une expérience rompue à l’utilisateur.
 
 ### Présentation des propriétés {#understand-properties}
 

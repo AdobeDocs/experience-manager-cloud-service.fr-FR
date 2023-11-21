@@ -2,10 +2,10 @@
 title: Personnalisation et ciblage de contenu
 description: Découvrez comment créer du contenu personnalisé et ciblé avec AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 93%
+source-wordcount: '1054'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ AEM fournit un framework d’outils pour :
 * La définition de règles utilisées pour résoudre les informations utilisateur connues par rapport à une définition d’audience.
 * La configuration de vos pages pour présenter des expériences personnalisées ciblées ; pour rendre le contenu spécifique applicable à l’utilisateur final actuel.
 
-La présentation suivante introduit certains termes utilisés pour la personnalisation dans AEM as a Cloud Service, suivis d’un ordre d’action recommandé.
+L’aperçu suivant présente certains des termes utilisés pour la personnalisation dans AEM as a Cloud Service, suivis d’un ordre d’action recommandé.
 
 ## Expérience {#experience}
 

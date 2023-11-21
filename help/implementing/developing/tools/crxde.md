@@ -2,10 +2,10 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 92%
+source-wordcount: '1683'
+ht-degree: 91%
 
 ---
 
@@ -192,7 +192,7 @@ Vous pouvez désormais adapter le nœud à vos besoins en modifiant les proprié
 >
 La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
 >
-La validation du fait que le noeud nouvellement créé est autorisé par le type de noeud du noeud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer de nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
+La validation portant sur l’autorisation du noeud créé par le type de noeud du noeud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer de nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
 
 ## Création d’une propriété {#creating-a-property}
 
@@ -242,7 +242,7 @@ Pour importer une définition de type de nœud :
 CRXDE Lite permet d’afficher le fichier `error.log` qui se trouve sur le système de fichiers sous `<aem-install-dir>/crx-quickstart/logs` et de filtrer selon le niveau de journalisation approprié. Procédez comme suit :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. Dans le menu déroulant situé à droite de l’[**onglet Console**](#console-tab) au bas de la fenêtre, sélectionnez **Journaux du serveur**.
+1. Dans le menu déroulant situé à droite de la [**Onglet Console**](#console-tab) au bas de la fenêtre, sélectionnez **Journaux du serveur**.
 1. Cliquez sur l’icône **Arrêter** pour afficher les messages.
 
 Vous pouvez effectuer les actions suivantes :

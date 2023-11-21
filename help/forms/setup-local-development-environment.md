@@ -2,10 +2,10 @@
 title: Comment configurer un environnement de développement local pour AEM Forms ?
 description: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2846'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -286,7 +286,7 @@ Pour configurer le Dispatcher local et y ajouter ensuite des règles spécifique
 
 ### Configuration du Dispatcher local {#setup-local-dispatcher}
 
-Le SDK [!DNL Experience Manager] as a Cloud Service comprend la version recommandée des outils du Dispatcher qui facilite la configuration, la validation et la simulation locale du Dispatcher. Les outils du Dispatcher sont basés sur Docker et fournissent des outils en ligne de commandes pour transpiler les fichiers de configuration du serveur web HTTP Apache et du Dispatcher dans un format compatible et les déployer sur le Dispatcher s’exécutant dans le conteneur Docker.
+La variable [!DNL Experience Manager] Le SDK as a Cloud Service inclut la version recommandée des outils Dispatcher qui facilite la configuration, la validation et la simulation locale de Dispatcher. Les outils du Dispatcher sont basés sur Docker et fournissent des outils en ligne de commandes pour transpiler les fichiers de configuration du serveur web HTTP Apache et du Dispatcher dans un format compatible et les déployer sur le Dispatcher s’exécutant dans le conteneur Docker.
 
 La mise en cache sur le Dispatcher permet à [!DNL AEM Forms] de préremplir les formulaires adaptatifs sur un client. Elle améliore la vitesse de rendu des formulaires préremplis.
 

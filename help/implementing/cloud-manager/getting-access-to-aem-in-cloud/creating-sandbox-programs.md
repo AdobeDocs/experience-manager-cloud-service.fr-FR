@@ -2,10 +2,10 @@
 title: Création de programmes Sandbox
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme Sandbox à des fins de formation, de démonstration, de point de vente ou à d’autres fins hors production.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -49,7 +49,7 @@ Une nouvelle carte de programme Sandbox s’affiche sur la page de destination a
 
 Vous pouvez afficher les détails de la configuration de votre sandbox et accéder à l’environnement (une fois disponible) en consultant la page d’aperçu du programme.
 
-1. Dans la page de destination de Cloud Manager, cliquez sur le bouton représentant des points de suspension du programme que vous venez de créer.
+1. Dans la page d’entrée de Cloud Manager, cliquez sur le bouton représentant des points de suspension du programme créé.
 
    ![Accès à l’aperçu du programme](assets/program-overview-sandbox.png)
 

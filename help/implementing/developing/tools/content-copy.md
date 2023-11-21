@@ -2,7 +2,7 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu permet de copier du contenu modifiable à la demande à partir des environnements de production depuis AEM as a Cloud Service vers des environnements inférieurs, et ce à des fins de test.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 84%
@@ -197,7 +197,7 @@ L’outil de copie de contenu présente les limites suivantes.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
-* L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou le contenu nouvellement créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
+* L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou le contenu créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
 

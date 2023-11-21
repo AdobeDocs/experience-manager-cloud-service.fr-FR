@@ -2,10 +2,10 @@
 title: Quelles sont les considérations, les problèmes connus et les bonnes pratiques dans AEM Forms ?
 description: Considérations sur les problèmes connus et les bonnes pratiques pour les API de communication AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 96%
+source-wordcount: '1749'
+ht-degree: 94%
 
 ---
 
@@ -80,7 +80,7 @@ Un design de formulaire utilisé avec les API Communications peut contenir des s
 
 Pour concevoir un formulaire qui utilise des polices installées sur l’imprimante, choisissez dans Designer un nom de police correspondant aux polices disponibles sur l’imprimante. La liste des polices prises en charge pour PCL ou PostScript se trouve dans les profils d’appareils correspondants (fichiers XDC). Vous pouvez également créer un mappage des polices pour mapper les polices non installées sur l’imprimante aux polices installées sur l’imprimante d’un autre nom de police. Par exemple, dans un scénario PostScript, les références à la police Arial® peuvent être mappées à la police Helvetica® installée sur l’imprimante.
 
-Si une police est installée sur un ordinateur client, elle est disponible dans la liste déroulante de Designer. Si la police n’est pas installée, il est nécessaire de la spécifier manuellement. L’option « Remplacer définitivement les polices non disponibles » dans Designer peut être désactivée. Dans le cas contraire, lorsque le fichier XDP est enregistré dans Designer, le nom de la police de substitution est écrit dans le fichier XDP. Cela signifie que la police installée sur l’imprimante n’est pas utilisée.
+Si une police est installée sur un ordinateur client, elle est disponible dans la liste déroulante de Designer. Si la police n’est pas installée, il est nécessaire de la spécifier manuellement. L’option &quot;Remplacer définitivement les polices non disponibles&quot; dans Designer peut être désactivée. Dans le cas contraire, lorsque le fichier XDP est enregistré dans Designer, le nom de la police de substitution est écrit dans le fichier XDP. Cela signifie que la police installée sur l’imprimante n’est pas utilisée.
 
 Il existe deux types de polices OpenType®. Un type est une police OpenType® TrueType prise en charge par PCL. L’autre est l’OpenType CFF®. Les sorties PDF et PostScript prennent en charge les polices Type-1, TrueType et OpenType® incorporées. La sortie PCL prend en charge les polices TrueType incorporées.
 
@@ -171,7 +171,7 @@ Le tableau suivant indique les options XCI.
 
 ## Bonnes pratiques
 
-* Adobe recommande l’hébergement du magasin de conteneurs blob de fichiers de données dans la région cloud utilisée par AEM Cloud Service.
+* Adobe recommande d’héberger le magasin de conteneurs blob de fichiers de données dans la région cloud utilisée par AEM Cloud Service.
 
 ## Questions fréquemment posées  {#faq}
 

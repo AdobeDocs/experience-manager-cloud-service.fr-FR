@@ -2,10 +2,10 @@
 title: Enregistrement, connexion et profil utilisateur
 description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '1165'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ La mise en œuvre de l’enregistrement repose sur deux approches, décrites ci-
 
 ### Gestion par AEM {#aem-managed-registration}
 
-Il est possible d’écrire un code d’enregistrement personnalisé qui reprend, au minimum, le nom d’utilisateur et le mot de passe de l’utilisateur final et crée un enregistrement d’utilisateur dans AEM, utilisable ensuite pour s’authentifier au moment de la connexion. Les étapes suivantes sont généralement utilisées pour construire ce mécanisme d’enregistrement :
+Il est possible d’écrire un code d’enregistrement personnalisé qui prend, au minimum, le nom d’utilisateur et le mot de passe de l’utilisateur et crée un enregistrement de l’utilisateur dans AEM qui peut ensuite être utilisé pour s’authentifier lors de la connexion. Les étapes suivantes sont généralement utilisées pour construire ce mécanisme d’enregistrement :
 
 1. Affichez un composant d’AEM personnalisé qui collecte les informations d’enregistrement.
 1. Lors de l’envoi, un utilisateur de service correctement configuré est utilisé pour :
@@ -67,7 +67,7 @@ Les clients peuvent intégrer un IdP (fournisseur d’identités), chargé d’a
 
 **BASÉ SUR SAML**
 
-Les clients peuvent utiliser l’authentification SAML par le biais de leur IdP SAML préféré. Si vous utilisez un IdP avec AEM, il est chargé d’authentifier les informations d’identification de l’utilisateur final et de négocier l’authentification de cet utilisateur avec AEM, de créer, le cas échéant, l’enregistrement de l’utilisateur dans AEM et de gérer l’appartenance de l’utilisateur au groupe dans AEM, comme décrit par l’assertion SAML.
+Les clients peuvent utiliser l’authentification SAML par le biais de leur IdP SAML préféré. Lors de l’utilisation d’un IdP avec AEM, l’IdP est chargé d’authentifier les informations d’identification de l’utilisateur et d’arbitrer l’authentification de l’utilisateur avec AEM, de créer l’enregistrement de l’utilisateur dans l’ selon les besoins et de gérer l’appartenance de l’utilisateur au groupe dans, comme décrit par l’assertion SAML.
 
 >[!NOTE]
 >

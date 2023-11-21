@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2870'
-ht-degree: 99%
+source-wordcount: '2872'
+ht-degree: 98%
 
 ---
 
@@ -121,7 +121,7 @@ _Création d’un paramètre d’image prédéfini en sélectionnant des options
 
 Vous vous rappelez que, dans le chapitre précédent [Anatomie d’une URL Dynamic Media](#dm-journey-d), vous avez lu des informations sur l’URL Dynamic Media et sur la manière dont elle est créée. Dans la boîte de dialogue **[!UICONTROL Modificateur d’image]**, vous pouvez saisir les paramètres de traitement d’image supplémentaires de votre choix dans la zone de texte. Les paramètres sont inclus dans le nom du paramètre prédéfini de l’URL lors de la diffusion de vos images, à l’aide du paramètre prédéfini. Dans la capture d’écran ci-dessus, le paramètre `bgc=451B15` a été ajouté. En réalité, une couleur de fond marron foncé a été ajoutée.
 
-Vous pouvez considérer un paramètre d’image prédéfini comme une recette pour vos images. Il permettra de rendre toutes les images qui utilisent le paramètre prédéfini de manière cohérente à chaque fois ; elles auront les mêmes paramètres. Le paramètre `&op_brightness=+10` a également été ajouté pour augmenter légèrement la luminosité.
+Vous pouvez considérer un paramètre d’image prédéfini comme une recette pour vos images. Il va fournir n&#39;importe quelle image qui utilise le paramètre prédéfini de manière cohérente à chaque fois ; il va être le même. Le paramètre `&op_brightness=+10` a également été ajouté pour augmenter légèrement la luminosité.
 
 Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, nous souhaitons appliquer le paramètre d’image prédéfini _Medium_ à l’image d’une casserole de chocolat fondu.
 
@@ -154,7 +154,7 @@ Parmi les utilisations les plus courantes de Dynamic Media figure la possibilit
 
 Les visionneuses d’images sont généralement composées d’une série de ressources d’image présentées comme une seule entité. Ces ensembles offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément et offrent des outils pour zoomer et examiner les images de plus près. [Afficher une visionneuse d’images appelée « Running » utilisant la visionneuse Fenêtre déroulante](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running)
 
-Dans Dynamic Media, vous pouvez voir plusieurs images de chaussures de course. Il s’agit d’une gamme de produits que les ventes et le marketing voir affichés pour leurs clients dans une seule présentation, c’est-à-dire une visionneuse d’images.
+Dans Dynamic Media, vous pouvez voir plusieurs images de chaussures de course. Il s’agit d’une série de produits que les ventes et le marketing souhaitent voir les clients comme une seule présentation ; une visionneuse d’images.
 
 ![Création d’une visionneuse d’images](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _Début de la création d’une visionneuse d’images_

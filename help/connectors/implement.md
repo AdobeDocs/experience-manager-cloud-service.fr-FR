@@ -2,10 +2,10 @@
 title: Implémentation d’un connecteur AEM
 description: Découvrez comment créer, tester et mettre en oeuvre un connecteur AEM. En outre, vous découvrez les modèles d’intégration courants.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 98%
+source-wordcount: '980'
+ht-degree: 95%
 
 ---
 
@@ -63,7 +63,7 @@ En outre, seul Adobe doit écrire du code dans `/libs` ; les clients et les par
 
 Les connecteurs existants peuvent également être restructurés pour déplacer toute configuration qui aurait pu placer `/etc` dans d’autres dossiers de niveau supérieur, tels que `/conf`. Cette restructuration a été effectuée dans le cadre d’AEM 6.5 et est décrite dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
-Il est recommandé de placer la majorité du code du connecteur sous `/apps/connectors/<vendor>` afin de promouvoir une structure de référentiel nette pour les clients qui ont plusieurs connecteurs.
+Il est recommandé de placer la majorité du code du connecteur sous `/apps/connectors/<vendor>` afin de promouvoir une structure de référentiel propre pour les clients qui disposent de plusieurs connecteurs.
 
 Configuration de Cloud Services
 -----------------------------

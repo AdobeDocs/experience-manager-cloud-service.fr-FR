@@ -2,7 +2,7 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 95%
@@ -191,7 +191,7 @@ Un groupe de conditions est composé de plusieurs conditions simples et/ou de gr
 
 | **Propriété** | **Type** | **Description** |
 |---|---|---|
-| reqProperty | `string` | Propriété de requête.<br><br>L’un de :<br><ul><li>`path` : renvoie le chemin d&#39;accès complet d’une URL sans les paramètres de requête.</li><li>`queryString` : renvoie la partie requête d’une URL.</li><li>`method` : renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier` : renvoie l’un de `author`, `preview` ou `publish`.</li><li>`domain` : renvoie la propriété de domaine (telle que définie dans l’en-tête `Host`) en minuscules.</li><li>`clientIp` : renvoie l’adresse IP du client ou de la cliente.</li><li>`clientCountry` : renvoie un code à deux lettres ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) qui identifie le pays dans lequel se trouve le client ou la cliente.</li></ul> |
+| reqProperty | `string` | Propriété de requête.<br><br>L’un de :<br><ul><li>`path`: renvoie le chemin complet d’une URL sans les paramètres de requête.</li><li>`queryString`: renvoie la partie requête d’une URL</li><li>`method` : renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier` : renvoie l’un de `author`, `preview` ou `publish`.</li><li>`domain` : renvoie la propriété de domaine (telle que définie dans l’en-tête `Host`) en minuscules.</li><li>`clientIp` : renvoie l’adresse IP du client ou de la cliente.</li><li>`clientCountry` : renvoie un code à deux lettres ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) qui identifie le pays dans lequel se trouve le client ou la cliente.</li></ul> |
 | reqHeader | `string` | Renvoie l’en-tête de requête avec le nom spécifié. |
 | queryParam | `string` | Renvoie le paramètre de requête avec le nom spécifié. |
 | reqCookie | `string` | Renvoie le cookie avec le nom spécifié. |

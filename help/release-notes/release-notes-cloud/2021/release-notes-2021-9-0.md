@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 52%
+source-wordcount: '1572'
+ht-degree: 58%
 
 ---
 
@@ -111,10 +111,10 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 ### Nouveautés {#what-is-new-screens}
 
-* Screens as a Cloud Service prend désormais en charge la surveillance de base de la lecture. Le lecteur signale désormais diverses mesures de lecture pour chaque ping (30 secondes par défaut). Selon les mesures, il peut détecter différents cas de périphérie (expérience bloquée, écran vide, problème de planification, etc.). Cette fonctionnalité permet à l’équipe de surveiller à distance la lecture correcte du contenu d’un lecteur. Cela améliore la réactivité aux écrans vierges ou aux expériences rompues dans le champ et réduit le risque d’afficher une expérience rompue à l’utilisateur final.
+* Screens as a Cloud Service prend désormais en charge la surveillance de base de la lecture. Le lecteur signale désormais diverses mesures de lecture pour chaque ping (30 secondes par défaut). Selon les mesures, il peut détecter différents cas de périphérie (expérience bloquée, écran vide, problème de planification, etc.). Cette fonctionnalité permet à l’équipe de surveiller à distance la lecture correcte du contenu d’un lecteur. Cela améliore la réactivité aux écrans vierges ou aux expériences rompues dans le champ et réduit le risque d’afficher une expérience rompue à l’utilisateur.
 Pour plus d’informations, voir [Suivi de base de la lecture](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring).
 
-* Les miniatures pour les vidéos sont désormais prises en charge dans Screens as a Cloud Service. Un auteur de contenu peut définir une miniature pour les vidéos afin que l’image soit utilisée comme espace réservé et tester correctement la lecture et le ciblage du contenu, pendant que la vidéo réelle est en cours de finalisation par l’équipe appropriée. L’image peut également être utilisée si la lecture de la vidéo échoue.
+* Les miniatures pour les vidéos sont désormais prises en charge dans Screens as a Cloud Service. Un auteur ou une autrice de contenu peut définir une miniature de vidéos afin de pouvoir utiliser l’image en tant qu’espace réservé et de pouvoir tester correctement la lecture et le ciblage du contenu, pendant que l’équipe concernée peut s’occuper de la finalisation de la vidéo elle-même. L’image peut également être utilisée si la lecture de la vidéo échoue.
 Pour plus d’informations, voir [Prise en charge des miniatures de vidéos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html).
 
 ### Correctifs {#bug-fixes-screens}
@@ -160,11 +160,11 @@ La prochaine version est prévue pour le 7 octobre 2021.
 
 * L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 30.
 
-* Les cartes de programme de la page d’entrée de Cloud Manager et l’expérience associée ont été actualisées.
+* Les cartes de programme de la page de destination de Cloud Manager et l’expérience associée ont été actualisées.
 
 * Le journal des étapes de qualité du code comprend désormais des informations de journalisation en mode verbeux sur le processus d’analyse OakPal.
 
-* Les options de menu de la page Activité incluent désormais une option permettant d’ **Journal de téléchargement** pour les exécutions du Générateur de code terminées. La sélection de cette option télécharge le journal de l’étape de création.
+* Les options de menu de la page Activité comprennent désormais une option **Télécharger le journal** pour les exécutions du générateur de code terminées. En sélectionnant cette , le journal de l’étape de compilation est téléchargé.
 
 * Cliquez directement sur la carte Programme pour accéder à la page Aperçu de Cloud Manager .
 
@@ -192,7 +192,7 @@ La date de publication de l’outil de transfert de contenu version v1.6.0 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Amélioration de l’outil de mappage des utilisateurs pour une expérience client simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, voir [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=fr#using-user-mapping-tool).
+* Amélioration de l’outil de mappage des utilisateurs pour une expérience client simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, consultez la section [Utilisation de l’outil de mappage des utilisateurs et utilisatrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=fr#using-user-mapping-tool).
    * Test de la connexion à l’API User Management avant d’exécuter le mappage des utilisateurs
    * Ignorer les erreurs de manière appropriée et poursuivre l’activité de mappage des utilisateurs
    * Le mappage utilisateur n’échoue plus si le jeton d’accès expire (après 24 heures). Le mappage des utilisateurs et des utilisatrices peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.

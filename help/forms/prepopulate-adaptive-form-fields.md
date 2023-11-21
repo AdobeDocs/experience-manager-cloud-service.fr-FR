@@ -3,10 +3,10 @@ title: Comment préremplir les champs de formulaire adaptatif ?
 description: Pour préremplir les champs d’un formulaire adaptatif à l’aide de données existantes, les utilisateurs peuvent préremplir les informations de base d’un formulaire en se connectant à leur profil de réseau social.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 95%
+source-wordcount: '2041'
+ht-degree: 94%
 
 ---
 
@@ -261,7 +261,7 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 
 >[!NOTE]
 >
-> En règle générale, vous ne devez pas mélanger de champs liés et non liés s’ils sont recoupés dans les données remplies dans les champs non liés par l’utilisatrice ou utilisateur final. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés pour qu’ils deviennent également liés et que ses données soient disponibles comme tout autre champ dans les données envoyées.
+> En règle générale, ne mélangez pas les champs liés et non liés s’ils sont recoupés dans les données renseignées par l’utilisateur dans les champs non liés. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés pour qu’ils deviennent également liés et que ses données soient disponibles comme tout autre champ dans les données envoyées.
 
 ## Protocoles pris en charge pour le préremplissage des données utilisateur {#supported-protocols-for-prefilling-user-data}
 

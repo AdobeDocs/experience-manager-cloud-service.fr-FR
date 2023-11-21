@@ -4,10 +4,10 @@ description: Découvrez comment préparer le contenu à traduire lors du dévelo
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 86%
+source-wordcount: '752'
+ht-degree: 83%
 
 ---
 
@@ -52,7 +52,7 @@ Le [site de démonstration WKND](/help/implementing/developing/introduction/deve
 
 La copie de langue pour laquelle vous créez initialement le contenu du site est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues.
 
-Chaque branche de langue d’un site est appelée « copie de langue ». La page racine d’une copie de langue, appelée « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/wknd/fr` est la racine de langue de la copie en français. Les copies de langue doivent utiliser une [racine de langue configurée correctement](preparation.md#creating-a-language-root) afin que la langue appropriée soit ciblée lorsque des sources sont traduites.
+Chaque branche de langue d’un site est appelée « copie de langue ». La page racine d’une copie de langue, appelée « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/wknd/fr` est la racine de langue de la copie en français. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparation.md#creating-a-language-root) afin que la langue correcte soit ciblée lors de la traduction d’un site source.
 
 Procédez comme suit pour préparer la traduction de vos ressources :
 

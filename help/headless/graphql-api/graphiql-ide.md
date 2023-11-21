@@ -3,10 +3,10 @@ title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 94%
+source-wordcount: '1138'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ La variable **GraphiQL** vous permet de tester et de déboguer vos requêtes Gra
 * sélectionner le **Point d’entrée** approprié pour la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
 * saisir directement de nouvelles requêtes ;
 * créer et accéder aux **[Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md)** ;
-* exécuter vos requêtes pour afficher immédiatement les résultats ;
+* Exécutez vos requêtes pour afficher immédiatement les résultats.
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
 * publier ou dépublier, **Requêtes persistantes**, sur votre service de **Publication** ou de **Prévisualisation** ; par exemple, vers/depuis `dev-publish` ;
@@ -105,7 +105,7 @@ Les [requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) so
 >
 >Les règles de réécriture personnalisées sur le Dispatcher peuvent remplacer les valeurs par défaut de la publication AEM.
 >
->Si vous envoyez des en-têtes de contrôle du cache TTL à partir du Dispatcher, en fonction d’un modèle de correspondance d’emplacement, vous pouvez alors, si nécessaire, exclure `/graphql/execute.json/*` des correspondances.
+>Dans le cas où vous envoyez des en-têtes de contrôle du cache TTL à partir du Dispatcher, en fonction d’un modèle de correspondance d’emplacement, vous pouvez alors, si nécessaire, exclure . `/graphql/execute.json/*` des correspondances.
 
 Avec GraphQL, vous pouvez configurer les en-têtes de cache HTTP pour contrôler ces paramètres pour votre propre requête persistante.
 

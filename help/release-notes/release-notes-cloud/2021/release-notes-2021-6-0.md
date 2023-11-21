@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 94%
+source-wordcount: '1435'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Nouveautés {#what-is-new-junecm}
 
-* Le service de prévisualisation sera déployé de manière progressive dans tous les programmes. Les clients sont avertis dans le produit lorsque leur programme est activé pour le service de prévisualisation. Voir [Accès au service de prévisualisation](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) pour plus d’informations.
+* Le service de prévisualisation sera déployé de manière progressive dans tous les programmes. Les clientes et clients seront avertis dans le produit lorsque leur programme est activé pour le service d‘aperçu. Pour plus d’informations, voir [Accès au service d’aperçu](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 * Les dépendances Maven téléchargées lors de l’étape de création seront désormais mises en cache entre les exécutions de pipeline. Cette fonctionnalité sera activée pour les clients au cours des prochaines semaines.
 
@@ -60,13 +60,13 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * La règle de qualité `ImmutableMutableMixCheck` a été mise à jour afin de classer les nœuds `/oak:index` comme étant immuables.
 
-* Les règles de qualité `CQBP-84` et `CQBP-84--dependencies` ont été consolidées dans une seule règle. Dans le cadre de cette consolidation, l’analyse des dépendances identifie plus précisément les problèmes des dépendances tierces qui sont déployés sur le runtime AEM.
+* Les règles de qualité `CQBP-84` et `CQBP-84--dependencies` ont été consolidées dans une seule règle. Dans le cadre de cette consolidation, l’analyse des dépendances identifie plus précisément les problèmes des dépendances tierces qui sont déployées sur l’environnement d’exécution AEM.
 
-* Pour éviter toute confusion, les lignes de segment de l’instance de publication AEM et de l’instance de publication de Dispatcher sur la page Détails de l’environnement ont été consolidées.
+* Pour éviter toute confusion, les lignes de segment de l’instance de publication d’AEM et de l’instance de publication du Dispatcher sur la page Détails de l’environnement ont été consolidées.
 
   ![Environnements de Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* Une nouvelle règle de qualité du code a été ajoutée pour valider la structure des index `damAssetLucene`. Voir [Index Lucene Oak de ressource DAM personnalisés](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) pour plus d’informations.
+* Une nouvelle règle de qualité du code a été ajoutée pour valider la structure des index `damAssetLucene`. Pour plus d’informations, voir [Index Lucene Oak des ressources DAM personnalisées](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
 
 * La page Détails de l’environnement affiche désormais plusieurs noms de domaine pour les services de publication et de prévisualisation (le cas échéant). Voir [Détails de l’environnement](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) pour plus d’informations.
 
@@ -102,7 +102,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 * Les paramètres d’affichage sont améliorés pour permettre aux utilisateurs de choisir une vue par défaut et un paramètre de tri par défaut.
 * La fonctionnalité de téléchargement de Linkshare utilise des téléchargements asynchrones qui augmentent la vitesse de téléchargement.
 * Les utilisateurs peuvent rechercher et filtrer les dossiers en fonction des prédicats de propriété.
-* [!DNL Experience Manager Assets] incorpore la visionneuse PDF optimisée par [!DNL Adobe Document Cloud] pour prévisualiser les documents pris en charge. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incorpore la visionneuse du PDF optimisée par [!DNL Adobe Document Cloud] pour prévisualiser les documents pris en charge. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5.
 
 ### Correctifs d’[!DNL Assets]  {#bugs-fixed-assets}
 

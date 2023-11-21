@@ -2,10 +2,10 @@
 title: Référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4612'
-ht-degree: 99%
+source-wordcount: '4613'
+ht-degree: 98%
 
 ---
 
@@ -219,7 +219,7 @@ Récupère les clés du magasin. Vous pouvez éventuellement récupérer les cl�
 
 ##### Paramètres {#parameters-getkeys}
 
-* **`includeInternals` :** une valeur `true` inclut les clés utilisées en interne dans les résultats. Ces clés commencent par le caractère de soulignement (`_`). La valeur par défaut est `false`.
+* **`includeInternals`:** Une valeur de `true` inclut les clés utilisées en interne dans les résultats. Ces clés commencent par le caractère de soulignement (`_`). La valeur par défaut est `false`.
 
 ##### Renvoie {#returns-getkeys}
 
@@ -242,7 +242,7 @@ Récupère l’arbre de données du magasin. Vous pouvez éventuellement inclure
 
 ##### Paramètres {#parameters-gettree}
 
-* `includeInternals:` une valeur de `true` inclut les paires clé/valeur utilisées en interne dans les résultats. Les clés de ces données commencent par le caractère de soulignement (`_`). La valeur par défaut est `false`.
+* `includeInternals:` Une valeur de `true` inclut les paires clé/valeur utilisées en interne dans les résultats. Les clés de ces données commencent par le caractère de soulignement (`_`). La valeur par défaut est `false`.
 
 ##### Renvoie {#returns-gettree}
 
@@ -856,7 +856,7 @@ Une copie de l’arborescence qui est nettoyée.
 
 #### getItem() {#getitem}
 
-Récupère la valeur d’un objet pour une clé donnée.
+Récupère la valeur d’un objet pour la clé.
 
 ##### Paramètres {#parameters-getitem-2}
 

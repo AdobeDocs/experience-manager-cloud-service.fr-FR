@@ -2,10 +2,10 @@
 title: API Query Builder
 description: La fonctionnalité du générateur de requêtes de partage de ressources est exposée par le biais d’une API Java™ et d’une API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2006'
-ht-degree: 98%
+source-wordcount: '2008'
+ht-degree: 100%
 
 ---
 
@@ -351,7 +351,7 @@ Vous pouvez également consulter le [JavaDoc relatif aux `PredicateEvaluator`cla
 
 Le préfixe du nom de classe (par exemple, `similar` dans [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)), est la *propriété principale* de la classe. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
 
-Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser `similar=/content/en` au lieu de la variante entièrement qualifiée `similar.similar=/content/en`. Le formulaire complet doit être utilisé pour toutes les propriétés non principales d’une classe.
+Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser `similar=/content/en` au lieu de la variante complète `similar.similar=/content/en`. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
 
 ## Exemple d’utilisation de l’API Query Builder {#example-query-builder-api-usage}
 

@@ -2,7 +2,7 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 93%
@@ -356,7 +356,7 @@ When creating an editable template, the value is copied from the template type t
 Si vous avez créé un modèle qui peut servir de base pour d’autres modèles, vous pouvez le copier en tant que type de modèle.
 
 1. Créez un modèle qui servira de base pour votre type de modèle. Pour ce faire, procédez comme vous le feriez pour n’importe quel modèle de page, [en suivant ces instructions](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author).
-1. À l’aide de CRXDE Lite, copiez le nouveau modèle depuis le nœud `templates` dans le nœud `template-types` sous le [dossier de modèles](#template-folders).
+1. À l’aide de CRXDE Lite, copiez le modèle créé à partir du `templates` au noeud `template-types` sous [dossier de modèles](#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](#template-folders).
 1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` de tous les nœuds `jcr:content`.
 
@@ -595,6 +595,6 @@ Le diagramme suivant illustre le processus d’évaluation de modèle :
 
 Pour limiter les modèles servant à créer des pages enfants sous une page donnée, utilisez la propriété `cq:allowedTemplates` du nœud `jcr:content` de la page pour spécifier la liste des modèles à autoriser en tant que pages enfants. Chaque valeur de la liste doit être un chemin absolu vers un modèle pour une page enfant autorisée, par exemple `/apps/wknd/templates/page-content`.
 
-Vous pouvez utiliser la variable `cq:allowedTemplates` sur la propriété  `jcr:content` pour que cette configuration soit appliquée à toutes les pages nouvellement créées qui utilisent ce modèle.
+Vous pouvez utiliser la variable `cq:allowedTemplates` sur la propriété  `jcr:content` pour que cette configuration soit appliquée à toutes les pages créées qui utilisent ce modèle.
 
 Si vous souhaitez ajouter d’autres contraintes, par exemple concernant la hiérarchie des modèles, vous pouvez appliquer les propriétés `allowedParents/allowedChildren` sur le modèle. Vous pouvez ensuite spécifier explicitement que les pages créées à partir d’un modèle T doivent être des parents/enfants de pages créées à partir d’un modèle T.

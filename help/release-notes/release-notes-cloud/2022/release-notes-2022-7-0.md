@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 27%
 
 ---
 
-# Notes de mise à jour 202278.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 202278.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.7.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -39,7 +39,7 @@ Regardez la vidéo Aperçu de la version de juillet 2022 pour un résumé des fo
 
 * La variable [Console de fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) prend désormais en charge [raccourcis clavier](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM en tant que Cloud Service [diffusion d’images optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) permet d’améliorer considérablement la vitesse de page en fournissant des formats tels que WebP. Ce nouveau service offre également des options de redimensionnement et de transformation d’image plus flexibles. Toutes les versions de [Composant d’image principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr) permettre d’utiliser ce service et de diffuser des images sous forme WebP en cliquant sur une option de la stratégie du composant image.
+* AEM en tant que Cloud Service [diffusion d’images optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) permet d’améliorer considérablement la vitesse de page en fournissant des formats tels que WebP. Ce nouveau service offre également des options de redimensionnement et de transformation d’image plus flexibles. Toutes les versions de [Composant d’image principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr) vous permet d’utiliser ce service et de diffuser des images en tant que WebP en cliquant sur une option de la stratégie du composant image.
 
 * Les activités de personnalisation AEM peuvent désormais utiliser des fragments d’expérience au lieu de nos offres héritées. Cette fonctionnalité :
    * active un chemin de migration dans lequel AEM contenu promouvrait des offres de fragments d’expérience plutôt que des offres de bibliothèque héritées afin de fournir un contenu stylisé de manière appropriée et conforme à la personnalisation à grande échelle.

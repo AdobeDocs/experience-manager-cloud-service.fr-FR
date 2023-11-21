@@ -2,10 +2,10 @@
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1652'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
@@ -101,7 +101,7 @@ Pour définir votre nouveau segment, procédez comme suit :
    * Valeur minimale : `0`
    * Valeur maximale : `1000000`
 
-1. Dans la console des segments, modifiez le segment que vous venez de créer pour l’ouvrir dans l’éditeur de segments.
+1. Dans la console des segments, modifiez le segment créé pour l’ouvrir dans l’éditeur de segments.
 1. Faites glisser une comparaison ou une référence vers l’éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
 1. Double-sélectionnez l’option de configuration de la nouvelle référence ou du nouveau segment pour éditer les paramètres spécifiques. Dans cet exemple, des personnes situées à Bâle font l’objet d’un test.
 

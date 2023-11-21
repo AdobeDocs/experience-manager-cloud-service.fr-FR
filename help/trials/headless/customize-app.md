@@ -4,10 +4,10 @@ description: Utilisez un exemple d’application React pour découvrir comment p
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 88%
+source-wordcount: '1019'
+ht-degree: 87%
 
 ---
 
@@ -89,7 +89,7 @@ Maintenant que vous avez modifié un titre dans l’application, essayez de chan
 
 1. Sélectionner **Aperçu** en haut à droite de la fenêtre pour afficher vos modifications. L’aperçu de l’application de démonstration s’ouvre dans un nouvel onglet. Cliquez sur Actualiser dans le navigateur pour afficher votre nouvelle image du cycliste avec un short jaune dans l’application.
 
-Mettez à jour facilement les images et les ressources de vos applications avec le CMS découplé d’AEM.
+Il est facile de mettre à jour des images et des ressources dans vos applications avec AEM CMS sans interface.
 
 ## Ajouter une référence à un nouveau fragment de contenu dans l’application {#create-moment}
 

@@ -2,16 +2,16 @@
 title: Utilisation de conditions de masquage
 description: Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
 # Utilisation de conditions de masquage {#using-hide-conditions}
 
-Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non. Par exemple, lorsqu’un créateur ou créatrice de modèles configure le composant principal [composant de liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=fr) dans l’[éditeur de modèles](/help/sites-cloud/authoring/features/templates.md) et décide de désactiver les options pour créer la liste en fonction des pages enfants. La désactivation de cette option dans la boîte de dialogue de conception définit une propriété de sorte que lorsque le rendu du composant de liste est effectué, la condition de masquage est évaluée et l’option d’affichage des pages enfants n’est pas affichée.
+Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non. Par exemple, lorsqu’un créateur de modèles configure le composant principal [composant de liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=fr) dans le [éditeur de modèles](/help/sites-cloud/authoring/features/templates.md) et décide de désactiver les options pour créer la liste en fonction des pages enfants. La désactivation de cette option dans la boîte de dialogue de conception définit une propriété de sorte que lorsque le rendu du composant de liste est effectué, la condition de masquage est évaluée et l’option d’affichage des pages enfants n’est pas affichée.
 
 ## Vue d’ensemble {#overview}
 
