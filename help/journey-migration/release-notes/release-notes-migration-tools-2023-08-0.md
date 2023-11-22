@@ -1,8 +1,9 @@
 ---
 title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.08.0
-description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.08.0
+description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.08.0
 feature: Release Information
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+exl-id: 1c822ece-620a-4866-be5a-065cb6a90204
+source-git-commit: b2322ff4ce27265b7eac37fcc0ea8235cd015ae0
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 77%
@@ -11,7 +12,7 @@ ht-degree: 77%
 
 # Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.08.0 {#release-notes}
 
-Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2022.08.0.
+Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2023.08.0.
 
 ## Analyseur des bonnes pratiques {#bpa-release}
 

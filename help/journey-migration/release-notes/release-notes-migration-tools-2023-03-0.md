@@ -1,9 +1,10 @@
 ---
 title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.03.0
-description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.03.0
+description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.03.0
 feature: Release Information
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
+source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
+workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 100%
 
@@ -11,7 +12,7 @@ ht-degree: 100%
 
 # Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.03.0 {#release-notes}
 
-Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2022.03.0.
+Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2023.03.0.
 
 ## Analyseur des bonnes pratiques {#bpa-release}
 
@@ -32,7 +33,7 @@ La date de publication de l’analyseur de bonnes pratiques v2.1.40 est le 03 m
 
 ### Date de publication {#release-date-ctt}
 
-La date de publication de l’outil de transfert de contenu version v2.0.16 est le 08 mars 2022.
+La date de publication de l’outil de transfert de contenu version v2.0.16 est le 08 mars 2023.
 
 ### Nouveautés {#what-is-new-ctt}
 
