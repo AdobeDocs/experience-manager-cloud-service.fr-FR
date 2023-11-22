@@ -2,7 +2,7 @@
 title: Comment générer un document d’enregistrement (DE) pour AEM Forms ?
 description: Découvrez comment générer un modèle de document d’enregistrement (DE) pour Forms adaptatif.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 94%
@@ -500,7 +500,7 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
 ### Utilisez un fichier XCI personnalisé dans votre environnement de développement Forms as a Cloud Service local
 
 1. Chargez le fichier XCI dans votre environnement de développement local.
-1. Ouvrez le gestionnaire de configuration du SDK Cloud Service. L’URL par défaut est : <http://localhost:4502/system/console/configMgr>.
+1. Ouvrez le gestionnaire de configuration du SDK Cloud Service. L’URL par défaut est : <http://localhost:4502/system/console/configMgr>.
 1. Recherchez et ouvrez la configuration **[!UICONTROL du canal web pour la communication interactive et les formulaires adaptatifs]**.
 1. Spécifiez le chemin d’accès du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.
 
