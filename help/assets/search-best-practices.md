@@ -3,14 +3,14 @@ title: Bonnes pratiques de recherche pour [!DNL Adobe Experience Manager] as a [
 description: Bonnes pratiques pour rechercher, rechercher et récupérer les métadonnées des ressources dans votre application.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
+source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2521'
 ht-degree: 11%
 
 ---
 
-# Bonnes pratiques de recherche AEM
+# Bonnes pratiques de recherche AEM Assets
 
 [!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Parfois, trouver la bonne ressource peut être ardu et chronophage. Par conséquent, la fonctionnalité de recherche de ressources dans [!DNL Adobe Experience Manager Assets] est au coeur de l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs professionnels et les marketeurs ou pour une administration par les administrateurs DAM.
 

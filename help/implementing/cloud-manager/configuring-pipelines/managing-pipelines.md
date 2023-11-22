@@ -6,7 +6,7 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 45%
+ht-degree: 68%
 
 ---
 
@@ -37,35 +37,35 @@ Au bas de la liste des pipelines, vous disposez d’options générales.
 
 ## Fenêtre Pipelines {#pipelines}
 
-La variable **Pipelines** affiche une liste complète de tous les pipelines pour le programme sélectionné. Cela s’avère utile, car il présente des informations plus complètes que celles disponibles dans la variable [Pipeline Card.](#pipeline-card)
+La fenêtre **Pipelines** affiche la liste complète de tous les pipelines du programme sélectionné. Cela s’avère utile, car elle présente des informations plus complètes que celles disponibles dans la [Vignette de pipeline.](#pipeline-card)
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Dans la **Aperçu du programme** , sélectionnez **Pipelines** pour basculer vers l’onglet **Pipelines** fenêtre.
 
-1. Vous y trouverez une liste de tous les pipelines pour le programme ainsi que le démarrage et l’arrêt de l’exécution du pipeline, comme vous le feriez dans la section **Pipelines Card**.
+1. Vous y trouverez une liste de tous les pipelines du programme, ainsi que le début et l’arrêt de l’exécution du pipeline, comme vous le feriez dans la **Vignette des pipelines**.
 
-Si un pipeline est en cours d’exécution, survolez son **État** affiche des détails sur l’exécution.
+Si un pipeline est en cours d’exécution, survolez sa colonne **Statut** pour afficher des détails sur l’exécution.
 
-![Détails de l’exécution du pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
+![Détails de l’exécution du pipeline.](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-Appuyez ou cliquez sur **Afficher les détails** vous emmènera au [détails de l’exécution du pipeline.](#view-details)
+Appuyez ou cliquez sur **Afficher les détails** pour accéder aux [détails de l’exécution du pipeline.](#view-details)
 
-## Fenêtre d’activité {#activity}
+## Fenêtre Activité {#activity}
 
-La variable **Activités** affiche une liste complète de toutes les exécutions de pipelines pour le programme sélectionné.
+La fenêtre **Activités** affiche la liste complète de toutes les exécutions de pipelines du programme sélectionné.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Dans la **Aperçu du programme** , sélectionnez **Activité** pour basculer vers l’onglet **Activité** fenêtre.
 
-1. Vous y trouverez une liste de toutes les exécutions de pipeline pour le programme, y compris les exécutions actuelles et historiques.
+1. Vous y trouverez une liste de toutes les exécutions de pipeline du programme, y compris les exécutions actuelles et historiques.
 
-Si un pipeline est en cours d’exécution, survolez son **État** affiche des détails sur l’exécution.
+Si un pipeline est en cours d’exécution, survolez sa colonne **Statut** pour afficher des détails sur l’exécution.
 
-![Détails de l’exécution du pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
+![Détails de l’exécution du pipeline.](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Appuyez ou cliquez sur **Afficher les détails** vous emmènera au [détails de l’exécution du pipeline.](#view-details)
+Appuyez ou cliquez sur **Afficher les détails** pour accéder aux [détails de l’exécution du pipeline.](#view-details)
 
 ## Exécution des pipelines {#running-pipelines}
 
@@ -121,15 +121,15 @@ Vous pouvez afficher les détails d’un pipeline pour afficher l’état et les
 
 Vous pouvez y voir le statut des différentes étapes du pipeline et récupérer les journaux de génération à des fins de diagnostic. Voir le document [Déploiement de votre code](/help/implementing/cloud-manager/deploy-code.md) pour plus d’informations sur le déploiement du code et l’exécution des tests.
 
-Toutes les étapes d’exécution d’un pipeline s’affichent avec celles qui n’ont pas encore commencé en grisé. Les étapes terminées affichent leur durée.
+Toutes les étapes d’exécution d’un pipeline s’affichent, celles n’ayant pas encore commencé étant grisées. Les étapes terminées affichent leur durée.
 
 Une fois une étape de pipeline terminée, un résumé est présenté.
 
-![Synthèse des étapes](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
+![Résumé des étapes.](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
 Sélectionnez la variable **Afficher les détails** pour afficher le lien **Durée** . Cela inclut la durée moyenne du pipeline en fonction de la tendance historique de ce programme.
 
-![Durée](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+![Durée.](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
 >[!NOTE]
 >
