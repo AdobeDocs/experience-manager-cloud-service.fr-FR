@@ -2,10 +2,10 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 97%
+source-wordcount: '712'
+ht-degree: 91%
 
 ---
 
@@ -29,10 +29,12 @@ Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Servi
 1. Accédez à l’application créée, puis sélectionnez **Autorisations d’API**.
 1. Cliquez sur **Ajouter une autorisation** > **Autorisation Graph** > **Autorisations déléguées**.
 1. Sélectionnez les autorisations ci-dessous pour votre application, puis cliquez sur **Ajouter une autorisation** :
+
+   >[!NOTE]
+   >
+   >La configuration des autorisations peut évoluer au fil du temps. Veuillez travailler avec Microsoft s’ils ne fonctionnent pas comme prévu.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
@@ -134,16 +136,18 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
 
 1. Renseignez les champs `authUrl`, `tokenUrl` et `refreshURL` en les construisant comme décrit dans la section précédente.
 1. Ajoutez les portées suivantes à la configuration :
+
+   >[!NOTE]
+   >
+   >Les portées peuvent évoluer au fil du temps. Veuillez travailler avec Microsoft s’ils ne fonctionnent pas comme prévu.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. Créez un fichier de propriétés OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. Les valeurs `smtp.host` et `smtp.port` correspondent à une configuration réseau avancée, comme décrit dans le [tutoriel sur le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=fr).
+1. Création d’un fichier de propriétés OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
+under `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. Les valeurs `smtp.host` et `smtp.port` correspondent à une configuration réseau avancée, comme décrit dans le [tutoriel sur le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=fr).
 
    ```
    {
