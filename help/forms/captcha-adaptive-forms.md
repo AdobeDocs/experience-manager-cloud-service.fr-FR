@@ -6,10 +6,10 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 9d2f8794a061c44cab016ab049c8c8ac7b3b2784
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 75%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -291,11 +291,13 @@ Vous pouvez appeler la servlet personnalisée qui inclut l’API `ValidateCAPTCH
 
 De même, vous pouvez utiliser l’éditeur de règles pour inclure une méthode personnalisée pour valider le CAPTCHA dans un formulaire adaptatif.
 
-### Ajout de services CAPTCHA personnalisés {#add-custom-captcha-service}
+<!--
 
-[!DNL Experience Manager Forms] fournit reCAPTCHA en tant que service CAPTCHA. Cependant, vous pouvez ajouter un service personnalisé à afficher dans la liste déroulante **[!UICONTROL Service CAPTCHA]**.
+### Add custom CAPTCHA services {#add-custom-captcha-service}
 
-Voici un exemple de mise en œuvre de l’interface pour ajouter un service CAPTCHA supplémentaire à votre formulaire adaptatif :
+[!DNL Experience Manager Forms] provides reCAPTCHA as the CAPTCHA service. However, you can add a custom service to display in the **[!UICONTROL CAPTCHA Service]** drop-down list.  
+
+The following is a sample implementation of the interface to add additional CAPTCHA service to your Adaptive Form:
 
 ```javascript
 package com.adobe.aemds.guide.service;
@@ -325,15 +327,15 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` fait référence au chemin des ressources du composant CAPTCHA dans le référentiel Sling. Utilisez cette propriété pour inclure des détails spécifiques au composant CAPTCHA. Par exemple, `captchaPropertyNodePath` contient des informations pour la configuration du cloud reCAPTCHA configurée sur le composant CAPTCHA. Les informations de configuration du cloud fournissent les paramètres **[!UICONTROL Clé du site]** et **[!UICONTROL Clé secrète]** pour la mise en œuvre du service reCAPTCHA.
+`captchaPropertyNodePath` refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` fait référence au `g_recaptcha_response` qui est généré après la résolution d’un CAPTCHA dans un formulaire.
+`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form.
 
-### Modifier le domaine de service reCAPTCHA {#reCAPTCHA-service-domain}
+### Edit reCAPTCHA service domain {#reCAPTCHA-service-domain}
 
-Le service reCAPTCHA utilise `https://www.recaptcha.net/` comme domaine par défaut. Vous pouvez modifier les paramètres pour définir `https://www.google.com/` ou tout nom de domaine personnalisé pour le chargement, le rendu et la validation du service reCAPTCHA.
+reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
 
-Définissez la propriété **[!UICONTROL af.cloudservices.recaptcha.domain]** de la **[!UICONTROL configuration du formulaire adaptatif et du canal web de communication interactive]** pour spécifier `https://www.google.com/` ou tout autre nom de domaine personnalisé. Le fichier JSON suivant affiche un exemple :
+Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** configuration to specify `https://www.google.com/` or any other custom domain name. The following JSON file displays a sample:
 
 ```json
 {
@@ -341,9 +343,9 @@ Définissez la propriété **[!UICONTROL af.cloudservices.recaptcha.domain]** de
 }
 ```
 
-Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
-## Voir également {#see-also}
+## See Also {#see-also}
 
 {{see-also}}
 
