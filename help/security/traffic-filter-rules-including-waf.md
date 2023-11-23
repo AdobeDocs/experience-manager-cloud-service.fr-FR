@@ -2,10 +2,10 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
 workflow-type: tm+mt
-source-wordcount: '3437'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -258,7 +258,6 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | JSON-ERROR | Erreur d’encodage JSON | Corps de requête POST, PUT ou PATCH spécifié comme contenant JSON dans l’en-tête de requête « Content-Type », mais contenant des erreurs d’analyse JSON. Cela est souvent lié à une erreur de programmation ou à une requête automatisée ou malveillante. |
 | MALFORMED-DATA | Données incorrectes dans le corps de la requête | Corps de requête POST, PUT ou PATCH incorrect selon l’en-tête de requête « Content-Type ». Par exemple, si un en-tête de requête « Content-Type: application/x-www-form-urlencoded » est spécifié et contient un corps de POST qui est json. Il s’agit souvent d’une erreur de programmation, d’une requête automatisée ou malveillante. Nécessite l’agent 3.2 ou version ultérieure. |
 | SANS | Trafic IP malveillant | [Internet Storm Center SANS](https://isc.sans.edu/) liste des adresses IP qui ont été signalées comme ayant participé à une activité malveillante. |
-| SIGSCI-IP | Effet réseau | IP marquée par SignalSciences : chaque fois qu’une adresse IP est marquée en raison d’un signal malveillant du moteur de décision, cette adresse IP est propagée à tous les clientes et clients. Les requêtes suivantes provenant de ces adresses IP qui contiennent un signal supplémentaire pour la durée de l’indicateur sont ensuite consignées. |
 | NO-CONTENT-TYPE | En-tête de requête « Content-Type » manquant | Requête POST, PUT ou PATCH ne comportant pas d’en-tête de requête « Content-Type ». Par défaut, les serveurs d’applications doivent assumer « Content-Type: text/plain; charset=us-ascii » dans ce cas. De nombreuses requêtes automatisées et malveillantes peuvent ne pas disposer de « Content-Type ». |
 | NOUA | Aucun agent utilisateur | De nombreuses requêtes automatisées et malveillantes utilisent de faux agents utilisateurs ou des agents utilisateurs manquants pour rendre difficile l’identification du type d’appareil qui effectue les requêtes. |
 | TORNODE | Trafic Tor | Tor est un logiciel qui cache l’identité d’un utilisateur ou d’une utilisatrice. Un pic de trafic Tor peut indiquer qu’une personne malveillante essaie de masquer sa localisation. |
@@ -638,7 +637,6 @@ data:
         type: log
         wafFlags:
           - SANS
-          - SIGSCI-IP
           - TORNODE
           - NOUA
           - SCANNER
