@@ -2,7 +2,7 @@
 title: API obsolètes
 description: Notes de mise à jour dédiées aux API obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d2c7e3d88b5545eee3e6f1c511088c0f6638cfe7
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 100%
@@ -14,9 +14,8 @@ ht-degree: 100%
 Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur date de suppression prévue. Il est attendu des clients qu’ils suppriment de leur code les API d’ici la date de suppression cible. Toute utilisation de l’API après la date de suppression générera des erreurs dans l’environnement de développement/SDK local et le processus de création Cloud Manager.
 
 
-<table>
-<thead>
 <table style="table-layout:auto">
+<thead>
   <tr>
     <th>Package/classe</th>
     <th>Commentaires</th>
