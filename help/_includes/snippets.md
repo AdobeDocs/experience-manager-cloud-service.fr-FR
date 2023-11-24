@@ -2,7 +2,7 @@
 source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 # Fragments de code {#snippets}
@@ -11,9 +11,9 @@ ht-degree: 77%
 
 [![Découvrez notre CMS découplé en bénéficiant d’un essai de 30 jours](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=fr)
 
-## Edge Delivery Services Création {#edge-delivery-authoring}
+## Création Edge Delivery Services {#edge-delivery-authoring}
 
-[!BADGE Pour créer AEM contenu pour les Edge Delivery Services, cliquez ici.]{type=Positive url="/help/edge/overview.md" tooltip="Création de contenu AEM pour les Edge Delivery Services"}
+[!BADGE Pour créer du contenu AEM pour Edge Delivery Services, cliquez ici.]{type=Positive url="/help/edge/overview.md" tooltip="Création de contenu AEM pour Edge Delivery Services"}
 
 ## Prise en charge IMS de l’affectation de groupes à des profils {#ims-group-profiles}
 
@@ -23,15 +23,15 @@ ht-degree: 77%
 
 ## Version limitée de la configuration WAF {#waf-limited-release}
 
-[!BADGE La protection WAF-DDOS sera disponible fin 2023.]{type=Caution tooltip="La protection WAF-DDOS sera disponible fin 2023."}
+[!BADGE La protection WAF-DDOS sera disponible fin 2023.]{type=Caution tooltip="La protection WAF-DDOS sera disponible fin 2023."}
 
 ## Voir également {#see-also}
 
 * [Créer un formulaire adaptatif AEM](/help/forms/creating-adaptive-form-core-components.md)
 * [Ajouter un formulaire adaptatif AEM à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Appliquer des thèmes à un formulaire adaptatif AEM](/help/forms/using-themes-in-core-components.md)
-* [Ajouter des composants à un formulaire adaptatif AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
-* [Utilisation de CAPTCHA dans un formulaire adaptatif AEM](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Ajouter des composants à un formulaire adaptatif AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr#components)
+* [Utiliser reCAPTCHA dans un formulaire adaptatif AEM](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Générer une version PDF (document d’enregistrement) d’un formulaire adaptatif AEM](/help/forms/generate-document-of-record-core-components.md)
 * [Traduire un formulaire adaptatif AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Activer Adobe Analytics sur un formulaire adaptatif pour suivre son utilisation](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
