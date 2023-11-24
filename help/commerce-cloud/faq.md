@@ -3,9 +3,9 @@ title: Intégration d’AEM et de Commerce à l’aide de Commerce Integration F
 description: Intégration d’AEM et de Commerce à l’aide de Commerce Integration Framework – FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '967'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Les données dynamiques telles que le prix ou l’inventaire ne sont pas mises e
 
 ## 9. Comment l’invalidation du cache pour le Dispatcher AEM fonctionne-t-elle avec AEM et la solution de commerce ?
 
-Nous vous recommandons de configurer l’invalidation de cache TTL pour les pages mises en cache dans le Dispatcher. Pour les informations dynamiques telles que le prix ou le stock, Adobe recommande de rendre les données côté client. Pour plus d’informations sur l’invalidation du cache TTL, voir [Optimisation du cache de Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=fr) et [Optimisation des performances AEM](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html?lang=fr).
+Nous vous recommandons de configurer l’invalidation de cache TTL pour les pages mises en cache dans le Dispatcher. Pour les informations dynamiques telles que le prix ou l’inventaire, Adobe recommande d’effectuer le rendu des données côté client. Pour plus d’informations sur l’invalidation du cache TTL, voir [Optimisation du cache de Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=fr) et [Optimisation des performances AEM](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html?lang=fr).
 
 ## 10. Y a-t-il une recommandation sur la recherche unifiée dans le contenu AEM avec Commerce ?
 
@@ -63,7 +63,7 @@ Les données de produit sont déjà traduites dans PIM ou dans Adobe Commerce. 
 
 ## 13. Existe-t-il un moyen d’améliorer les données de produit avec le texte commercial ? Où effectuer cette opération ? Dans AEM ou dans la solution de commerce ?
 
-Adobe recommande de gérer les données et le contenu liés au marketing dans AEM. Décorez les données de produit de votre solution commerciale avec des attributs supplémentaires à l’aide de fragments de contenu ou créez et liez des fragments d’expérience pour le contenu non structuré avec vos produits.
+Nous vous recommandons de gérer les données et le contenu liés au marketing dans AEM. Décorez les données de produit de votre solution commerciale avec des attributs supplémentaires à l’aide de fragments de contenu ou créez et liez des fragments d’expérience pour le contenu non structuré avec vos produits.
 
 ## 14. Comment pouvons-nous garantir la conformité PCI lors de l’utilisation d’AEM pour toute la couche de présentation ?
 
