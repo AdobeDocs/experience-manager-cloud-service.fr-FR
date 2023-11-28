@@ -3,7 +3,7 @@ title: Configuration d’une action Envoyer pour un formulaire adaptatif?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres
 keywords: comment sélectionner une action d’envoi pour un formulaire adaptatif, connecter un formulaire adaptatif à la liste sharepoint, connecter un formulaire adaptatif à la bibliothèque de documents sharepoint, connecter un formulaire adaptatif au modèle de données de formulaire
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
 workflow-type: tm+mt
 source-wordcount: '3634'
 ht-degree: 81%
@@ -101,7 +101,6 @@ Pour activer la variable [!UICONTROL Joindre un document d’enregistrement] , r
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
-
 -->
 
 ## Envoyer à SharePoint {#submit-to-sharedrive}
@@ -111,8 +110,7 @@ L’action d’envoi **[!UICONTROL Soumettre à SharePoint]** connecte un formul
 <!--
 Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list)
--->
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
 
 ### Connexion d’un formulaire adaptatif à la bibliothèque de documents SharePoint {#connect-af-sharepoint-doc-library}
 
