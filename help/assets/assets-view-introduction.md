@@ -3,10 +3,10 @@ title: En quoi la vue Assets dans AEM vous est-elle bénéfique ?
 description: En savoir plus sur les principaux avantages de la vue Assets dans AEM. Adobe, qui utilise son expertise pour autonomiser les professionnels du marketing et de la création, propose une nouvelle expérience utilisateur qui change tout le monde.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
@@ -95,7 +95,7 @@ Configurez rapidement une structure de dossiers pour votre organisation à l’a
 
 ### Approche axée sur la recherche en priorité pour une efficacité accrue {#search-first}
 
-Déverrouillez tout le potentiel de la bibliothèque de ressources numériques de votre entreprise grâce à la puissance des recherches et aux fonctionnalités de pointe. Fini le tri manuel d’innombrables fichiers et dossiers. Les utilisateurs et utilisatrices peuvent immédiatement localiser l’image, la vidéo ou le document dont ils ont besoin pour créer des campagnes marketing à couper le souffle, des présentations captivantes et du contenu engageant. Notre premier moteur de recherche vous permet de naviguer facilement entre les types de ressources, les métadonnées, les balises intelligentes, et même le contenu lui-même sans connaître le mot-clé exact. Préparez l’avenir de la gestion des ressources numériques avec notre approche axée sur la recherche et libérez tout le potentiel de votre bibliothèque de ressources numériques.
+Déverrouillez tout le potentiel de la bibliothèque de ressources numériques de votre entreprise grâce à la puissance des recherches et aux fonctionnalités de pointe. Vous pouvez faire vos adieux au problème de navigation manuelle dans un nombre incalculable de fichiers et de dossiers. Les utilisateurs et utilisatrices peuvent immédiatement localiser l’image, la vidéo ou le document dont ils ont besoin pour créer des campagnes marketing à couper le souffle, des présentations captivantes et du contenu engageant. Notre premier moteur de recherche vous permet de naviguer facilement entre les types de ressources, les métadonnées, les balises intelligentes, et même le contenu lui-même sans connaître le mot-clé exact. Préparez l’avenir de la gestion des ressources numériques avec notre approche axée sur la recherche et libérez tout le potentiel de votre bibliothèque de ressources numériques.
 
 ![Approche axée sur la recherche](assets/search-first.gif)
 
