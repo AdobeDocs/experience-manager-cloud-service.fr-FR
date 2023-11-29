@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: Le navigateur de référentiel fournit une vue en lecture seule dans le référentiel pour tous les environnements sur les niveaux de création, de publication et de prévisualisation.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 98%
+source-wordcount: '866'
+ht-degree: 87%
 
 ---
 
@@ -25,20 +25,20 @@ ht-degree: 98%
 
 Le navigateur de référentiels est un outil de développement qui fournit une vue en lecture seule dans le référentiel pour tous les environnements sur les niveaux de création, de publication et d’aperçu. Il est conçu pour faciliter l’affichage de la structure de contenu afin de consulter ou de déboguer plus facilement du contenu.
 
-Accessible à partir de la Developer Console, il peut être utilisé pour parcourir le référentiel d’une instance de création ou de publication pour un environnement sélectionné.
+Accessible à partir du [AEM Developer Console as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), il peut être utilisé pour parcourir le référentiel d’une instance d’auteur ou de publication pour un environnement sélectionné.
 
 ### Conditions préalables d’accès {#access-prerequisites}
 
-Ces conditions suivantes doivent être remplies pour accéder à la Developer Console ou au navigateur de référentiels
+Ces conditions suivantes doivent être remplies pour accéder à AEM Developer Console as a Cloud Service ou au navigateur Repository
 
-Pour accéder à la Developer Console :
+Pour accéder à AEM Developer Console as a Cloud Service :
 
-* Pour les programmes de production, les utilisateurs doivent disposer du rôle **Développeur Cloud Manager** dans l’Admin Console
+* Pour les programmes de production, les utilisateurs doivent disposer de la variable **Cloud Manager - Rôle de développeur** dans Adobe Admin Console
 * Pour les programmes Sandbox, il est disponible pour tout utilisateur disposant d’un profil de produit qui lui donne accès à AEM as a Cloud Service.
 
 Pour accéder au navigateur de référentiels :
 
-* Les utilisateurs doivent disposer du rôle **Développeur Cloud Manager** dans l’Admin Console pour afficher les instances de création et de publication.
+* Les utilisateurs doivent avoir la variable **Cloud Manager - Développeur** Rôle dans AEM Developer Console as a Cloud Service pour afficher les instances d’auteur et de publication.
 * En outre, pour la création, les utilisateurs disposant du profil de produit Utilisateurs AEM peuvent afficher le navigateur de référentiel avec un accès en lecture minimal ; les autorisations de l’utilisateur sont respectées lors de la navigation dans le référentiel. Les utilisateurs disposant du profil produit Administrateurs AEM peuvent afficher le navigateur de référentiel avec un accès en lecture complet.
 
 Pour plus d’informations sur la configuration des autorisations des utilisateurs, consultez la [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=fr).
