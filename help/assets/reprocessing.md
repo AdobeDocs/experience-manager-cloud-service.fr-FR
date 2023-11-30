@@ -1,0 +1,94 @@
+---
+title: Retraitement des ressources numériques
+description: Découvrez les différentes méthodes de retraitement des ressources numériques
+contentOwner: KK
+source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 49%
+
+---
+
+# Retraitement des ressources numériques {#reprocessing-digital-assets}
+
+Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié. Si vous souhaitez que ce paramètre prédéfini modifié soit réappliqué aux ressources existantes du dossier, vous devez retraiter le dossier. Vous pouvez retraiter autant de ressources que nécessaire.
+
+Retraitez les fichiers d’un dossier si vous rencontrez l’une des deux situations suivantes :
+
+* Vous souhaitez appliquer un paramètre prédéfini de lot à un dossier de ressources existant dans lequel des ressources ont déjà été téléchargées.
+* Vous modifiez ensuite un paramètre prédéfini de lot existant qui était précédemment appliqué à un dossier de ressources.
+
+## Retraiter les ressources {#reprocessing-steps}
+
+Pour retraiter des ressources dans un dossier :
+
+1. Dans [!DNL Experience Manager], sur la page Ressources, sélectionnez les ressources nouvellement ajoutées ou les ressources que vous souhaitez retraiter.
+Si vous sélectionnez un dossier :
+
+   * Le workflow prend en compte tous les fichiers du dossier sélectionné, de manière récursive.
+   * Si le dossier principal sélectionné contient un ou plusieurs sous-dossiers avec des ressources, le workflow retraite chaque ressource de la hiérarchie de dossiers.
+   * Il est conseillé d’éviter d’exécuter ce workflow sur une hiérarchie de dossiers contenant plus de 1 000 ressources.
+
+1. Sélectionner **[!UICONTROL Retraiter les ressources]**. Choisissez parmi les deux options suivantes :
+
+   ![Options de retraitement des ressources](assets/reprocessing-assets-options.png)
+
+* **[!UICONTROL Processus complet]:** Sélectionnez cette option lorsque vous souhaitez exécuter le processus global, notamment le profil par défaut, le profil personnalisé, le traitement dynamique (s’il est configuré) et les workflows de post-traitement.
+* **[!UICONTROL Avancé]:** Sélectionnez cette option pour choisir un retraitement avancé.
+
+  ![Options de retraitement des ressources avancées](assets/reprocessing-assets-options-advanced.png)
+
+Sélectionnez l’une des options avancées suivantes :
+
+* **[!UICONTROL Prévisualisation des rendus par défaut]:** Choisissez cette option lorsque vous souhaitez retraiter les rendus prévisualisés par défaut.
+
+* **[!UICONTROL Métadonnées]:** Choisissez cette option lorsque vous souhaitez extraire des informations de métadonnées et des balises intelligentes pour les ressources sélectionnées.
+
+* **[!UICONTROL Profils de traitement]:** Choisissez cette option lorsque vous souhaitez retraiter un profil sélectionné. Vous pouvez choisir **[!UICONTROL Processus complet]** pour inclure le traitement par défaut et le profil personnalisé affecté au niveau du dossier.
+  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+
+* **[!UICONTROL Processus de post-traitement]:** Sélectionnez cette option si un traitement supplémentaire des ressources est nécessaire et ne peut pas être réalisé à l’aide des profils de traitement. D’autres workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
+
+Voir [utilisation des microservices de ressources et des profils de traitement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr) pour en savoir plus sur les profils de traitement et le workflow de post-traitement.
+
+![Options de retraitement des ressources avancées 2](assets/reprocessing-assets-options-advanced-2.png)
+
+Après avoir sélectionné les options appropriées, cliquez sur **[!UICONTROL Retraiter]**. Le message de réussite s’affiche.
+
+## Scénarios de retraitement des ressources numériques {#scenarios-reprocessing}
+
+[!DNL Experience Manager] permet le retraitement des ressources numériques pour les composants suivants.
+
+### Balises intelligentes {#reprocessing-smart-tags}
+
+Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il s’agit essentiellement d’une liste des mots-clés que les employés, les partenaires et les clients et clientes utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec un vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources sont facilement identifiées et récupérées.
+
+Comparé aux vocabulaires des langages naturels, le balisage des ressources numériques basé sur la taxonomie métier aide à les aligner avec les activités d’une entreprise et à assurer que les ressources les mieux adaptées apparaissent dans les recherches.
+
+En savoir plus sur [Balises intelligentes pour les ressources vidéo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=en).
+
+En savoir plus sur [Retraiter les balises de couleur pour les images existantes dans la gestion des ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images).
+
+### Recadrage intelligent {#reprocessing-smart-crop}
+
+En savoir plus sur [Recadrage intelligent Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=fr) qui permet d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et le recadrage de pixels) et la configuration de l’accentuation aux ressources chargées.
+
+### Métadonnées {#reprocessing-metadata}
+
+[!DNL Adobe Experience Manager Assets] conserve les métadonnées de chaque fichier. Cela permet d’obtenir une catégorisation et une organisation plus simples des ressources, ainsi que d’aider les personnes qui recherchent une ressource spécifique. Grâce à la possibilité d’extraire les métadonnées à partir des fichiers chargés dans Experience Manager Assets, la gestion des métadonnées s’intègre au workflow créatif. La possibilité de conserver et de gérer les métadonnées de vos fichiers permet aussi d’organiser et de traiter automatiquement les fichiers en fonction de leurs métadonnées.
+
+En savoir plus sur [Retraitement des profils de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=fr).
+
+### Retraitement de ressources Dynamic Media dans un dossier {#reprocessing-dynamic-media}
+
+Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez ensuite modifié. Pour plus d’informations, voir [retraiter les ressources Dynamic Media dans un dossier.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+
+>[!NOTE]
+>
+>Vous devez configurer [!DNL Dynamic Media] dans l’environnement pour activer la boîte de dialogue Dynamic Media.
+>
+
+### Workflows
+
+En savoir plus sur [profils de traitement et workflows de post-traitement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr).
+
