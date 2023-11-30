@@ -4,9 +4,9 @@ description: Découvrez comment les modèles de fragment de contenu servent de b
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3121'
 ht-degree: 59%
 
 ---
@@ -198,8 +198,9 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
   >
   >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
-* **Rendu comme**
-Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cela vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances.
+* **Afficher comme**
+
+  Les différentes options permettant de réaliser/restituer le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances. When **Champ multiple** est utilisé. Vous pouvez définir le nombre minimal et maximal d’éléments. Voir [Validation](#validation) pour plus de détails.
 
 * **Libellé du champ**
 Saisie d’un **Libellé du champ** autogénère une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
@@ -257,6 +258,14 @@ Différents types de données incluent désormais la possibilité de définir le
    * Seules peuvent être référencées les images d’une plage prédéfinie de largeur et/ou de hauteur (en pixels).
 * **Référence du fragment**
    * Testez un modèle de fragment de contenu spécifique.
+* **Nombre min. d’éléments** / **Nombre max. d’éléments**
+
+  Champs définis comme une **Champ multiple** (définie avec **Render As**) comportent les options suivantes :
+
+   * **Nombre minimum d’éléments**
+   * **Nombre maximum d’éléments**
+
+  Ils sont validés dans la variable [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Utilisation de références pour former un contenu imbriqué {#using-references-to-form-nested-content}
 

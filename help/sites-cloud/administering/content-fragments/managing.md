@@ -4,10 +4,10 @@ description: Découvrez comment gérer vos fragments de contenu AEM à partir de
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 49%
+source-wordcount: '2622'
+ht-degree: 48%
 
 ---
 
@@ -143,10 +143,7 @@ La sélection d’un fragment spécifique ouvre une barre d’outils axée sur l
 * **[Déplacer](/help/assets/manage-digital-assets.md)**
 * **[Renommer](/help/assets/manage-digital-assets.md)**
 * **[Supprimer](#deleting-a-fragment)**
-
-<!--
-* **[Replace](#find-and-replace)**
--->
+* **[Remplacer](#find-and-replace)**
 
 >[!NOTE]
 >
@@ -369,13 +366,22 @@ Lorsque la boîte de dialogue correspondante s’ouvre, vous pouvez sélectionne
 >
 >Si le fragment est déjà référencé à partir d’un autre fragment ou d’une page, alors un message d’avertissement s’affiche et vous devez confirmer que vous souhaitez poursuivre.
 
-<!--
-## Find and Replace {#find-and-replace}
+## Rechercher et remplacer {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+La variable **Remplacer** est disponible (dans la barre d’outils supérieure) pour rechercher et remplacer du texte spécifié dans les fragments de contenu sélectionnés.
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![Rechercher et remplacer](assets/cf-managing-find-replace.png)
+
+Avant le remplacement, les critères de validation sont vérifiés et vous êtes informé de tout conflit, ce qui vous permet de modifier la chaîne de remplacement ou de remplacer uniquement les instances validées.
+
+>[!NOTE]
+>
+>L’action de recherche et de remplacement ne peut être exécutée que sur un maximum de 20 fragments de contenu sélectionnés (à la fois).
+>
+>Si vous sélectionnez plus de 20 fragments de contenu, le message s’affiche. **Impossible de trouver et de remplacer**.
+
+![Confirmer le remplacement](assets/cf-managing-confirm-replace.png)
+
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 

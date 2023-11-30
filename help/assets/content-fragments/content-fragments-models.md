@@ -2,10 +2,10 @@
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2931'
-ht-degree: 94%
+source-wordcount: '3005'
+ht-degree: 92%
 
 ---
 
@@ -150,7 +150,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
   >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
-Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur ou l’autrice voit une seule instance du champ ou si cette personne est autorisée à créer plusieurs instances.
+Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur ou l’autrice voit une seule instance du champ ou si cette personne est autorisée à créer plusieurs instances. When **Champ multiple** est utilisé. Vous pouvez définir le nombre minimal et maximal d’éléments. Voir [Validation](#validation) pour plus de détails.
 
 * **Libellé du champ**
 Saisie d’un **Libellé du champ** génère automatiquement une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
@@ -212,6 +212,17 @@ Différents types de données incluent désormais la possibilité de définir le
    * Seules peuvent être référencées les images d’une plage prédéfinie de largeur et/ou de hauteur (en pixels).
 * **Référence du fragment**
    * Test d’un modèle de fragment de contenu spécifique.
+* **Nombre min. d’éléments** / **Nombre max. d’éléments**
+
+  Champs définis comme une **Champ multiple** (définie avec **Render As**) comportent les options suivantes :
+
+   * **Nombre minimum d’éléments**
+   * **Nombre maximum d’éléments**
+
+  Ils sont validés :
+
+   * La valeur maximale est validée dans la variable [Éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md).
+   * Les deux sont validés dans la variable [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Utilisation de références pour former un contenu imbriqué {#using-references-to-form-nested-content}
 

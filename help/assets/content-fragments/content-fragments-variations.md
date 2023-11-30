@@ -2,10 +2,10 @@
 title: Variations – création de contenu de fragment (Ressources - Fragments de contenu)
 description: Découvrez comment les variations peuvent rendre votre contenu découplé dans AEM encore plus flexible en vous permettant de créer du contenu pour un fragment, puis de créer des variantes de ce contenu selon vos besoins.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 57%
+source-wordcount: '2546'
+ht-degree: 56%
 
 ---
 
@@ -76,6 +76,10 @@ Vous pouvez effectuer les actions suivantes :
   >Vous pouvez également ajouter des **balises** (à la variation **principale**) dans le cadre des [métadonnées](/help/assets/content-fragments/content-fragments-metadata.md).
 
 * [Créez et gérez les variations](#managing-variations) du contenu **principal**.
+
+>[!NOTE]
+>
+>Selon les définitions du modèle sous-jacent, les champs peuvent être soumis à certains types de [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### Éditeur plein écran {#full-screen-editor}
 

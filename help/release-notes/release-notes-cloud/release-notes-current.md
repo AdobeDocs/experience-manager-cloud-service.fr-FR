@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 0290e40094147a1c85eacf157904c7ef7388c5e7
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 29%
+source-wordcount: '1299'
+ht-degree: 14%
 
 ---
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle des fonctionnalités (2023.10.0) date du 26 octobre 2023. La prochaine version de la fonctionnalité (2023.11.0) est prévue pour le 30 novembre 2023.
+La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle des fonctionnalités (2023.11.0) date du 30 novembre 2023. La prochaine version de la fonctionnalité (2023.12.0) est prévue pour le 14 décembre 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -34,48 +34,80 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo de présentation de la version d’octobre 2023 pour un résumé des fonctionnalités ajoutées dans la version 2023.10.0 :
+Regardez la vidéo Présentation de la version de novembre 2023 pour un résumé des fonctionnalités ajoutées à la version 2023.11.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Programme d&#39;adoption précoce {#sites-early-adopter}
+
+**[Recherche et remplacement de chaînes dans des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: la console de fragments de contenu offre aux utilisateurs un moyen simple et intuitif de remplacer une chaîne apparaissant simultanément dans plusieurs fragments de contenu afin d’accélérer la vitesse du contenu.
+
+![Rechercher et remplacer](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
+
+Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-headless-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouvelles fonctionnalités {#assets-features}
-
-**Module complémentaire AEM Assets pour Adobe Express**: Experience Manager Assets fournit désormais un [module complémentaire pour Adobe Express](/help/assets/addon-adobe-express.md). Le module complémentaire vous permet d’accéder directement aux ressources stockées dans Experience Manager Assets à partir de l’interface utilisateur de l’Adobe Express. Vous pouvez placer du contenu géré dans AEM Assets dans la zone de travail express, puis enregistrer du contenu nouveau ou modifié dans un référentiel AEM Assets. Le module complémentaire offre les avantages clés suivants :
-
-* Réutilisation accrue du contenu en modifiant et en enregistrant de nouvelles ressources dans AEM
-
-* Réduction du temps et des efforts généraux pour créer de nouvelles ressources ou créer de nouvelles versions des ressources existantes
-
-  ![Inclure des ressources à partir du module complémentaire Assets](/help/assets/assets/aem-assets-add-on-include-assets.png)
-
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-features}
 
-* **Importation en masse de ressources à partir de la source de données OneDrive**: les administrateurs peuvent désormais [importer un grand nombre de ressources de OneDrive vers AEM Assets ;](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). La liste mise à jour des sources de données prises en charge pour l’importation en bloc comprend Azure, AWS, Google Cloud, Dropbox et OneDrive.
+* **Éditeur d’Adobe Express intégré dans AEM Assets**: les utilisateurs ayant accès à Express disposent désormais d’outils intégrés d’édition et de création d’images d’Adobe Express et d’Adobe Firefly disponibles directement dans AEM Assets pour améliorer la réutilisation du contenu et accélérer la vitesse de diffusion du contenu.
 
-  ![affecter un formulaire de métadonnées à un dossier](/help/assets/assets/bulk-import-source-details-onedrive.png)
+  ![affecter un formulaire de métadonnées à un dossier](/help/assets/assets/adobe-express-aem-assets.png)
 
-* **Prise en charge des droits inter-organisations pour les bibliothèques**: Experience Manager Assets vous permet désormais de configurer l’accès aux bibliothèques de Creative Cloud dans une autre organisation IMS. Cela permet d’accéder plus facilement aux derniers workflows inter-produits entre Creative Cloud et Experience Manager et réduit le temps et les efforts pour les créatifs.
+<!--
 
-### Fonctionnalités de préversion disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
+* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
-* **Dynamic Media**: [Prise en charge du suivi multititre et multiaudio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
+  ![storage usage insights](/help/assets/assets/block-tags.png)
 
-  ![Onglet Sous-titres et Suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et Suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.*
+-->
+
+
+* **Rapports sur l’utilisation du stockage dans Insights**: les administrateurs ont désormais la possibilité d’afficher les rapports sur l’utilisation du stockage disponibles dans le cadre d’ Insights .
+
+  ![informations sur l’utilisation du stockage](/help/assets/assets/storage-usage-insights.png)
+
+* **Recherche de la première configuration de page d’accueil**: Experience Manager Assets vous permet désormais de configurer l’expérience de la page d’accueil pour votre entreprise. Si vous sélectionnez d’abord la recherche comme page d’accueil, vous pouvez configurer l’alignement de la barre de recherche, l’image d’arrière-plan et le logo de votre entreprise.
+
+  ![première configuration de recherche](/help/assets/assets/search-first-configuration.png)
+
+### Nouvelles fonctionnalités de la version préliminaire pour la vue d’administrateur {#admin-view-features-prerelease}
+
+**Aperçu vidéo**: AEM Assets génère désormais par défaut des rendus d’aperçu de tous les formats vidéo pris en charge, sans avoir à configurer de profil de traitement.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nouvelles fonctionnalités de [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Propriétés personnalisées pour le Forms adaptatif](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: vous pouvez associer des attributs personnalisés (paires clé-valeur) à un modèle de formulaire ou à un composant de formulaires adaptatifs pour permettre aux développeurs de formulaires de fournir des comportements de formulaire dynamiques qui s’adaptent en fonction des valeurs de ces attributs personnalisés. Par exemple, les développeurs peuvent concevoir différents rendus d’un composant Forms sans affichage sur des plateformes mobiles, de bureau ou web, en fonction des valeurs des attributs personnalisés, améliorant ainsi considérablement l’expérience utilisateur sur un large éventail d’appareils.
+* **[Composant de case à cocher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Forms adaptatif basé sur les composants principaux peut désormais inclure un composant de case à cocher. Il permet aux utilisateurs de faire des choix binaires, en sélectionnant ou en désélectionnant une option particulière. Il s’affiche généralement sous la forme d’une petite case sur laquelle vous pouvez cliquer ou appuyer pour basculer entre deux états : cochée et décochée. La case à cocher est un élément de formulaire courant utilisé pour présenter un choix oui/non ou vrai/faux.
 
-* **Thèmes et modèles**: lancez le processus de création de formulaires grâce à nos nouveaux thèmes et modèles, conçus pour permettre aux professionnels chevronnés et aux nouveaux auteurs de formulaires de s’épanouir. Créés en toute simplicité à l’aide des composants principaux de Forms adaptatif, ces thèmes et modèles soigneusement traités vous permettent de commencer rapidement à créer des formulaires pour des cas d’utilisation courants.
+* **[Composant Termes et conditions](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adaptatif basé sur les composants principaux peut désormais inclure un composant Conditions générales. Il permet aux auteurs de formulaires d’introduire une section spécifique dans le formulaire, dans laquelle les utilisateurs reçoivent les conditions ou les accords juridiques associés à l’utilisation d’un service, d’un produit ou d’une plateforme. Ce composant est conçu pour informer les utilisateurs des règles, des réglementations et des obligations auxquelles ils acceptent d’envoyer le formulaire.
 
-  ![Modèles prêts à l’emploi](/help/forms/assets/form-templates-ootb.png)
+  ![Composants des onglets Case à cocher, Termes et conditions et Vertical](/help/forms/assets/forms-components.png)
 
+* **[Composant Onglets verticaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adaptatif basé sur les composants principaux peut désormais organiser le contenu du formulaire dans une liste verticale d’onglets, fournissant ainsi une disposition structurée et navigable. L’utilisation d’onglets verticaux dans un formulaire peut améliorer l’expérience globale de l’utilisateur en simplifiant la navigation et en améliorant l’organisation du contenu du formulaire, en particulier lorsqu’un formulaire contient plusieurs sections ou des informations complexes.
+
+
+
+### Nouvelles fonctionnalités de la version préliminaire d’[!DNL Forms] {#prerelease-features-forms}
+
+* **[Connexion d’une Forms adaptative à une liste Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms fournit une intégration prête à l’emploi pour envoyer directement les données de formulaire à la liste SharePoint, ce qui vous permet d’exploiter les fonctionnalités de listes SharePoint. Vous pouvez configurer Microsoft SharePoint List en tant que source de données pour un modèle de données de formulaire et utiliser la variable **Envoyer à l’aide du modèle de données de formulaire** Action d’envoi pour connecter un formulaire adaptatif à une liste SharePoint.
+
+<!-- 
+
+* **Configure a shard for Adobe Sign for AEM Forms**: Adobe distributes Acrobat Sign API around the globe in many deployment units called "shards." Each shard serves a customer's account, such as NA1, NA2, NA3, EU1, JP1, AU1, IN1, and others. The shard names correspond to geographic locations. You can now use more than one shard while using Adobe Sign integration with AEM Forms. 
+
+-->
 
 ### Programme d&#39;adoption précoce {#forms-early-adopter}
+
+* **Envoyer un formulaire adaptatif au scénario de fusion Adobe Workfront**: Forms as a Cloud Service propose des options prêtes à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui vous permet de déclencher un scénario de fusion Workfront lors de l’envoi d’un formulaire adaptatif.
+
+* **Prise en charge des langues de droite à gauche**: les Forms adaptatives reposant sur les composants principaux peuvent désormais être présentées dans une langue de droite à gauche (RTL) telle que l’arabe, le persan et l’ourdou. Les langues de la durée de vie sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire en langage RTL vous permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et d’appuyer sur les marchés RTL. Dans certaines régions, il est également légal de fournir des formulaires dans la langue locale. En s&#39;adaptant aux langues locales, vous ouvrez non seulement les portes à un public plus large, mais vous garantissez également le respect des lois et réglementations pertinentes.
+
+  ![Prise en charge de la langue de droite à gauche](/help/forms/assets/right-to-left-language-support.png)
 
 * **[Protect de vos documents avec les API DocAssurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de protéger la sécurité et la confidentialité des documents Adobe PDF qu’elle distribue et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seuls les destinataires prévus peuvent modifier les documents.
 
@@ -83,15 +115,26 @@ Regardez la vidéo de présentation de la version d’octobre 2023 pour un rés
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Règles de filtre de trafic, y compris WAF {#traffic-filter-rules-waf}
+### Les règles de filtre de trafic WAF peuvent désormais être sous licence {#cdn-waf-license}
 
-[Filtrage du trafic sur le réseau de diffusion de contenu géré par Adobe](/help/security/traffic-filter-rules-including-waf.md) en déclarant des règles correspondant au trafic du site web par des propriétés, y compris l’url, l’adresse IP et l’agent utilisateur, ou en définissant des limites de taux de trafic personnalisées pour se protéger des attaques DoS. Les clients peuvent également acquérir sous licence un ensemble de règles WAF (Web Application Firewall) avancées afin d’obtenir une protection supplémentaire contre les menaces de sites web complexes.
+Les règles de filtrage du trafic ont été publiées en octobre et incluent une note indiquant que la catégorie spéciale des règles de pare-feu d’applications web (WAF) serait disponible plus tard dans l’année pour compléter les règles déjà disponibles pour les clients Sites et Forms. À titre de mise à jour, l’offre de protection WAF-DDoS peut désormais être mise sous licence.
 
-Nous vous encourageons à vous familiariser avec les règles de filtrage du trafic en [test d’un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=fr)! Il vous guide tout au long des étapes nécessaires pour configurer un nouveau pipeline de configuration Cloud Manager, déclarer des règles dans un fichier de configuration et analyser les journaux de réseau de diffusion de contenu à la recherche de trafic malveillant.
+Une fois sous licence, ces règles WAF avancées peuvent être déployées sur le réseau de diffusion de contenu à l’aide du pipeline de configuration de Cloud Manager pour ajouter une couche supplémentaire de protection contre les attaques web.
 
-Les règles de filtrage du trafic sont désormais disponibles dans les environnements de développement, avec un déploiement progressif dans les environnements d’évaluation et de production en novembre. Vous pouvez demander un accès anticipé à l’évaluation et la production en envoyant un courrier électronique à **aemcs-waf-adopter@adobe.com**.
+En savoir plus [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), y compris WAF. Contactez votre équipe de compte AEM au sujet de la licence de la protection WAF-DDoS ou de la sécurité renforcée.
 
-Les règles de filtrage du trafic WAF avancé peuvent être autorisées au cours de l’année via les offres Sécurité améliorée ou Protection WAF-DDoS .
+### Programme d’adoption précoce de la configuration CDN {#cdn-config-early-adopter}
+
+Outre la version récemment publiée [Règles de filtre de trafic (y compris WAF)](/help/security/traffic-filter-rules-including-waf.md), il est possible d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration CDN. Nous aimerions bien connaître vos cas pratiques, notamment :
+* 301/302 redirections côté client
+* proxy des requêtes en périphérie vers des origines arbitraires
+* Conversion d’URL
+* définition ou modification des en-têtes de requête ou de réponse
+* pages d’erreur personnalisées lorsque le réseau de diffusion de contenu ne peut pas atteindre AEM
+* authentification par nom d’utilisateur/mot de passe
+* toute autre configuration CDN utile
+
+Envoi d’un courrier électronique à **aemcs-cdn-config-adopter@adobe.com** de votre e-mail officiel avec vos commentaires.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -100,3 +143,9 @@ Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici
 ## Outils de migration {#migration-tools}
 
 Vous trouverez une liste complète des versions des outils de migration [ici](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
+## Problèmes connus {#known-issues}
+
+* Les utilisateurs ne peuvent pas envoyer de Forms adaptatif en fonction des composants principaux. Le problème se produit pour les Forms adaptatives créées à l’aide des versions 2.0.38 à 2.0.60 des composants principaux.
+
+  Pour résoudre le problème. vous pouvez passer à la version 2.0.62 ou ultérieure des composants principaux de formulaire adaptatif. Pour définir une version des composants principaux de Forms adaptatif pour votre environnement, [Définissez les versions du composant core.forms.components.version, core.forms.components.af.version et core.wcm.components.version .](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) les dépendances dans votre projet Forms as a Cloud Service ou basé sur AEM Archetype et [déployer les modifications dans votre environnement Forms as a Cloud Service ;](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Vous trouverez la dernière version des dépendances des composants principaux de Forms adaptatif à l’adresse [Référentiel Git des composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components#system-requirements).
