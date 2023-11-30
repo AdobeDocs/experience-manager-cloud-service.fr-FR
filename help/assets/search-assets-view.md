@@ -3,10 +3,10 @@ title: Découvrez comment rechercher des ressources dans [!DNL Assets view]?
 description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 94%
+source-wordcount: '1321'
+ht-degree: 76%
 
 ---
 
@@ -141,6 +141,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## Utiliser des résultats de recherche {#work-with-search-results}
+
+Vous pouvez sélectionner les ressources qui s’affichent dans les résultats de recherche et effectuer les opérations suivantes :
+
+* **Détails** : affichez et modifiez les propriétés de la ressource.
+
+* **Ajouter à la collection** : ajoutez la ressource sélectionnée à une collection.
+
+* **Télécharger** : téléchargez une ressource.
+
+* **Supprimer** : supprimez une ressource.
+
+* **Copier** : copiez une ressource vers un autre emplacement de dossier.
+
+* **Déplacer** : déplacez une ressource vers un autre emplacement de dossier.
+
+* **Renommer** : renommez une ressource.
+
+* **Affecter des tâches** : affectez des tâches aux utilisateurs et utilisatrices pour une ressource.
+
+* **Partager le lien** : [partagez des liens](share-links-for-assets-view.md) d’une ressource avec d’autres personnes utilisatrices, afin qu’elles puissent y accéder et la télécharger.
+
+* **Surveiller** : [surveillez les opérations](manage-notifications-assets-view.md) effectuées sur une ressource.
+
+* **Afficher l’emplacement du fichier** : accédez à l’emplacement du dossier de ressources.
+
+* **Épingler à l’accès rapide**: [Épinglez une ressource](my-workspace-assets-view.md) pour y accéder plus rapidement lorsque vous en aurez besoin ultérieurement. Tous les éléments épinglés s’affichent dans la section **Accès rapide** de Mon espace de travail.
+
+## Configuration de la première page d’accueil de la recherche {#configuring-search-first-homepage}
+
+La première page d’accueil de la recherche vous permet de parcourir instantanément différents fichiers et dossiers. Il vous permet de parcourir facilement les types de ressources, les métadonnées, les balises intelligentes, et même le contenu sans connaître le mot-clé exact. [!DNL Assets view] vous permet de configurer votre page d’accueil en contrôlant ce qui doit apparaître lorsque vous vous connectez à [!DNL Assets view].
+
+Pour configurer la première page d’accueil de la recherche, procédez comme suit :
+
+1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
+1. Sélectionner **[!UICONTROL Recherche d’abord]**. Il ouvre ensuite la première configuration associée à la recherche. Vous pouvez définir [alignement](#setting-alignment-search-bar) ou [définir l’image d’arrière-plan et de logo ;](#setting-background-image-and-logo) de votre page d’accueil.
+
+### Alignement de la barre de recherche {#setting-alignment-search-bar}
+
+[!DNL Assets view] permet de modifier l’alignement de la barre de recherche. Vous pouvez faire apparaître la barre de recherche au centre ou en haut. Sélectionnez l’alignement approprié et cliquez sur **[!UICONTROL Enregistrer]**.
+
+![Recherche de l’alignement de la première page d’accueil](assets/search-first-alignment.png)
+
+### Définition de l’image d’arrière-plan et du logo de la page d’accueil {#setting-background-image-and-logo}
+
+Vous pouvez ajouter le logo de la marque et l’image d’arrière-plan à la première page d’accueil de votre recherche. Procédez comme suit :
+
+1. Accédez à **[!UICONTROL Image d’arrière-plan et logo]** section sous **[!UICONTROL Page d’accueil]**.
+1. Cliquez sur **[!UICONTROL Remplacer]** pour parcourir les images du référentiel de ressources existant.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. [Aperçu](#preview-configured-homepage) les modifications à apporter.
+
+### Aperçu de la page d’accueil configurée {#preview-configured-homepage}
+
+Vous pouvez prévisualiser pour vérifier la mise en page et le formatage de la première page d’accueil de la recherche. Utilisation **[!UICONTROL Aperçu]**, vous pouvez corriger la mise en page ou apporter des modifications en fonction des besoins. Pour prévisualiser la page d’accueil configurée, procédez comme suit :
+
+1. Cliquez sur **[!UICONTROL Paramètres généraux]** et sélectionnez **[!UICONTROL Recherche d’abord]**.
+1. Accédez à **[!UICONTROL Personnalisation de la première page d’accueil de la recherche]** et cliquez sur **[!UICONTROL Aperçu]**. Basculer **[!UICONTROL Thème sombre]** pour prévisualiser la page d’accueil sur un thème sombre ou clair.
+1. Cliquez sur **[!UICONTROL Fermer]** pour fermer l’écran de prévisualisation.
+
+   ![Recherche de l’aperçu de la première page d’accueil](assets/search-first-preview.gif)
 
 ## Étapes suivantes {#next-steps}
 

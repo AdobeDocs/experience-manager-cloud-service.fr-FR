@@ -2,10 +2,10 @@
 title: Gérer les rapports dans la vue Assets
 description: Accédez aux données de la section des rapports de la vue Assets pour évaluer l’utilisation des produits et des fonctionnalités et déduire des informations sur les mesures de succès clés.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 100%
+source-wordcount: '825'
+ht-degree: 97%
 
 ---
 
@@ -24,15 +24,25 @@ Tous les utilisateurs et toutes les utilisatrices affectés au profil de produit
 
 ## Afficher les insights {#view-live-statistics}
 
-La vue Assets vous permet d’afficher des données en temps réel pour votre environnement Assets à l’aide du tableau de bord Insights. Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
+La vue Assets vous permet d’afficher des données en temps réel pour votre environnement Assets à l’aide du tableau de bord Insights. Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
 
-![Options de la barre d’outils lors de la sélection d’une ressource](assets/assets-essentials-live-statistics.png)
+<!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
 Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigation de gauche pour afficher les graphiques générés automatiquement suivants :
+
+![Insights](assets/insights.png)
 
 * **Téléchargements** : nombre de ressources téléchargées à partir de l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représenté à l’aide d’un graphique en courbes.
 
 * **Transferts** : nombre de ressources chargées dans l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représenté à l’aide d’un graphique en courbes.
+
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+
+* **Utilisation du stockage**: utilisation du stockage, en octets, pour l’environnement de vue Ressources représenté à l’aide d’un graphique à barres.
+
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+
+<!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Principales recherches** : affichez les termes recherchés les plus fréquemment, ainsi que le nombre de fois où ces termes ont été recherchés dans l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représentés sous forme de tableau.
 
