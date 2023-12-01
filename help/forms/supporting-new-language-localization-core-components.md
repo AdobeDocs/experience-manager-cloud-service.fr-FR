@@ -2,9 +2,9 @@
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
 description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1348'
 ht-degree: 23%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 23%
 | Composants de base | [Cliquez ici](supporting-new-language-localization.md) |
 | Composants principaux | Cet article |
 
-AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN).
+AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN). Vous pouvez également présenter Adaptive Forms dans une langue de droite à gauche (RTL) telle que l’arabe, le persan et l’ourdou en ajoutant ces paramètres régionaux.
 
 ## Comment le paramètre régional est-il sélectionné pour un formulaire adaptatif ?
 

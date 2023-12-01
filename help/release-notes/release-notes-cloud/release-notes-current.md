@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0290e40094147a1c85eacf157904c7ef7388c5e7
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 14%
 
 ---
@@ -146,6 +146,6 @@ Vous trouverez une liste complète des versions des outils de migration [ici](/h
 
 ## Problèmes connus {#known-issues}
 
-* Les utilisateurs ne peuvent pas envoyer de Forms adaptatif en fonction des composants principaux. Le problème se produit pour les Forms adaptatives créées à l’aide des versions 2.0.38 à 2.0.60 des composants principaux.
+* Impossible d’envoyer le Forms adaptatif en fonction des composants principaux. Le problème se produit pour les Forms adaptatives créées à l’aide des versions 2.0.38 à 2.0.60 des composants principaux.
 
   Pour résoudre le problème. vous pouvez passer à la version 2.0.62 ou ultérieure des composants principaux de formulaire adaptatif. Pour définir une version des composants principaux de Forms adaptatif pour votre environnement, [Définissez les versions du composant core.forms.components.version, core.forms.components.af.version et core.wcm.components.version .](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) les dépendances dans votre projet Forms as a Cloud Service ou basé sur AEM Archetype et [déployer les modifications dans votre environnement Forms as a Cloud Service ;](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Vous trouverez la dernière version des dépendances des composants principaux de Forms adaptatif à l’adresse [Référentiel Git des composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components#system-requirements).
