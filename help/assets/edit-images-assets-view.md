@@ -3,10 +3,10 @@ title: Modification des images
 description: Modifiez les images à l’aide des options optimisées d’ [!DNL Adobe Photoshop Express] et enregistrez les images mises à jour sous forme de versions.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 72%
+source-wordcount: '1171'
+ht-degree: 71%
 
 ---
 
@@ -82,12 +82,12 @@ Vous pouvez rapidement convertir une image JPEG au format PNG à l’aide d’Ad
 
 ## Modification d’images à l’aide de l’éditeur intégré Adobe Express {#edit-using-embedded-editor}
 
-[!DNL Assets view] permet d’effectuer des modifications complètes des images directement à partir de votre référentiel de ressources. L’éditeur intégré permet de modifier facilement et intuitivement une image à l’aide de [!DNL Adobe Express]. Cela accélère la réutilisation des ressources en utilisant des modèles ou en modifiant les ressources existantes. Vous pouvez utiliser des éléments prédéfinis pour donner à votre ressource un aspect époustouflant ou exécuter des actions rapides pour modifier votre image en quelques clics seulement.
+Les utilisateurs ayant accès à Express disposent désormais d’outils intégrés d’édition et de création d’images d’Adobe Express et d’Adobe Firefly disponibles directement dans AEM Assets afin d’améliorer la réutilisation du contenu et d’accélérer la vitesse du contenu. Vous pouvez également utiliser des éléments prédéfinis pour donner à votre ressource un aspect époustouflant ou exécuter des actions rapides pour modifier votre image en quelques clics seulement.
 
 Pour modifier des images à l’aide de [!DNL Adobe Express] incorporez l’éditeur, procédez comme suit :
 
 1. Sélectionnez une image parmi les [!DNL Experience Manager] Référentiel de ressources.
-1. Cliquez sur **[!UICONTROL Ouvrir dans Adobe Express]**. [!DNL Adobe Express] s’affiche.
+1. Cliquez sur **[!UICONTROL Ouvrir dans Adobe Express]**.
 
    ![Adobe Express de l’éditeur incorporé](assets/embedded-editor.png)
 
@@ -95,20 +95,20 @@ Pour modifier des images à l’aide de [!DNL Adobe Express] incorporez l’édi
 
 1. Une fois la modification d’image terminée, vous pouvez télécharger une ressource en tant que nouvelle ressource ou l’enregistrer en tant que nouvelle version.
 
-## Création d’une ressource à l’aide d’Adobe Express {#create-new-embedded-editor}
+## Création de ressources à l’aide d’Adobe Express {#create-new-embedded-editor}
 
-[!DNL Assets view] fournit une fonctionnalité permettant de créer un modèle entièrement nouveau à l’aide de [!DNL Adobe Express] éditeur incorporé. Pour créer une ressource à l’aide de [!DNL Adobe Expresss], exécutez les étapes suivantes :
+[!DNL Assets view] fournit une fonctionnalité permettant de créer un modèle entièrement nouveau à l’aide de [!DNL Adobe Express] éditeur incorporé. Pour créer une ressource à l’aide de [!DNL Adobe Express], exécutez les étapes suivantes :
 
-1. Accédez à **[!UICONTROL Mon espace de travail]** et cliquez sur **[!UICONTROL Créer]**. [!DNL Adobe Express] la zone de travail vierge s’affiche dans la [!DNL Assets view] de l’interface utilisateur.
+1. Accédez à **[!UICONTROL Mon espace de travail]** et cliquez sur **[!UICONTROL Créer]** dans la bannière d’Adobe Express qui s’affiche au-dessus de la balise [!UICONTROL Accès rapide] . [!DNL Adobe Express] la zone de travail vierge s’affiche dans la [!DNL Assets view] de l’interface utilisateur.
 1. Créez votre contenu à l’aide de [Modèles](https://helpx.adobe.com/in/express/using/work-with-templates.html). Sinon, accédez à **[!UICONTROL Vos trucs]** pour modifier le contenu existant.
 1. Une fois les modifications terminées, cliquez sur **[!UICONTROL Enregistrer en tant que nouvelle ressource]**.
-1. Spécifiez le chemin de destination de la ressource créée.
+1. Spécifiez le chemin de destination de la ressource créée, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 >[!NOTE]
 >
->* Vous pouvez uniquement modifier `JPEG` et `PNG` formats.
+>* Vous ne pouvez modifier que les images de `JPEG` et `PNG` types de format.
 >* La taille de la ressource doit être inférieure à 14 Mo.
->* Vous pouvez enregistrer une image en tant que `PDF`, `JPEG`, ou `PNG` formats.
+>* Vous pouvez enregistrer une image dans `PDF`, `JPEG`, ou `PNG` formats.
 
 ## Modifier des images à l’aide d’[!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 

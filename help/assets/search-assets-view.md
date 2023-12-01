@@ -3,10 +3,10 @@ title: Découvrez comment rechercher des ressources dans [!DNL Assets view]?
 description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 76%
+source-wordcount: '1314'
+ht-degree: 77%
 
 ---
 
@@ -172,7 +172,7 @@ Vous pouvez sélectionner les ressources qui s’affichent dans les résultats d
 
 ## Configuration de la première page d’accueil de la recherche {#configuring-search-first-homepage}
 
-La première page d’accueil de la recherche vous permet de parcourir instantanément différents fichiers et dossiers. Il vous permet de parcourir facilement les types de ressources, les métadonnées, les balises intelligentes, et même le contenu sans connaître le mot-clé exact. [!DNL Assets view] vous permet de configurer votre page d’accueil en contrôlant ce qui doit apparaître lorsque vous vous connectez à [!DNL Assets view].
+Experience Manager Assets vous permet de sélectionner la page d’entrée par défaut de votre entreprise. Lors de l’utilisation de la fonction Rechercher d’abord comme page d’accueil, vous avez également la possibilité de personnaliser l’identité graphique de la page en configurant les images d’arrière-plan et de logo en fonction de votre marque.
 
 Pour configurer la première page d’accueil de la recherche, procédez comme suit :
 
@@ -191,7 +191,7 @@ Vous pouvez ajouter le logo de la marque et l’image d’arrière-plan à la pr
 
 1. Accédez à **[!UICONTROL Image d’arrière-plan et logo]** section sous **[!UICONTROL Page d’accueil]**.
 1. Cliquez sur **[!UICONTROL Remplacer]** pour parcourir les images du référentiel de ressources existant.
-1. Cliquez sur **[!UICONTROL Enregistrer]**. [Aperçu](#preview-configured-homepage) les modifications à apporter.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. [Aperçu](#preview-configured-homepage) les modifications pour passer en revue les modifications.
 
 ### Aperçu de la page d’accueil configurée {#preview-configured-homepage}
 
