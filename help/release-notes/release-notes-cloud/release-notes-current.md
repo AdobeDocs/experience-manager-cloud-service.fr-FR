@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8eb087bdda335b0a33e616eb534615396b220369
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1279'
 ht-degree: 14%
 
 ---
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle des fonctionnalités (2023.11.0) date du 30 novembre 2023. La prochaine version de la fonctionnalité (2023.12.0) est prévue pour le 14 décembre 2023.
+La date de publication de la version actuelle (2023.11.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 30 novembre 2023. La prochaine mise à jour des fonctionnalités (2023.12.0) est prévue pour le vendredi 14 décembre 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -103,7 +103,7 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d�
 
 ### Programme d&#39;adoption précoce {#forms-early-adopter}
 
-* **Envoyer un formulaire adaptatif au scénario de fusion Adobe Workfront**: Forms as a Cloud Service propose des options prêtes à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui vous permet de déclencher un scénario de fusion Workfront lors de l’envoi d’un formulaire adaptatif.
+* **[Envoyer un formulaire adaptatif au scénario de fusion Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service propose des options prêtes à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui vous permet de déclencher un scénario de fusion Workfront lors de l’envoi d’un formulaire adaptatif.
 
 * **[Prise en charge des langues de droite à gauche](/help/forms/supporting-new-language-localization-core-components.md)**: les Forms adaptatives reposant sur les composants principaux peuvent désormais être présentées dans une langue de droite à gauche (RTL) telle que l’arabe, le persan et l’ourdou. Les langues de la durée de vie sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire en langage RTL vous permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et d’appuyer sur les marchés RTL. Dans certaines régions, il est également légal de fournir des formulaires dans la langue locale. En s&#39;adaptant aux langues locales, vous ouvrez non seulement les portes à un public plus large, mais vous garantissez également le respect des lois et réglementations pertinentes.
 

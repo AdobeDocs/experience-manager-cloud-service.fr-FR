@@ -2,10 +2,10 @@
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
 description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 23%
+source-wordcount: '1335'
+ht-degree: 18%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 23%
 | Composants de base | [Cliquez ici](supporting-new-language-localization.md) |
 | Composants principaux | Cet article |
 
-AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN). Vous pouvez également présenter Adaptive Forms dans une langue de droite à gauche (RTL) telle que l’arabe, le persan et l’ourdou en ajoutant ces paramètres régionaux.
+<span class="preview"> La fonctionnalité de prise en charge de la langue de droite à gauche est disponible dans le cadre du programme d’adoption précoce. Vous pouvez écrire à aem-forms-early-adopter-program@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité. </span>
+
+AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux, comme Hindi(hi_IN). Vous pouvez également présenter Adaptive Forms dans une langue de droite à gauche (RTL) telle que l’arabe, le persan et l’ourdou en ajoutant ces paramètres régionaux.
 
 ## Comment le paramètre régional est-il sélectionné pour un formulaire adaptatif ?
 
@@ -171,7 +173,7 @@ Effectuez les étapes suivantes pour prévisualiser un fichier adaptatif avec le
 * Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif.
 
 * Lorsque de nouveaux champs sont ajoutés dans un formulaire adaptatif existant :
-   * **Pour la traduction automatique**[ : recréez le dictionnaire et exécutez le projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Les champs ajoutés à un formulaire adaptatif après la création d’un projet de traduction ne sont pas traduits.
+   * **Pour la traduction automatique**: recréez le dictionnaire et [exécution du projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Les champs ajoutés à un formulaire adaptatif après la création d’un projet de traduction ne sont pas traduits.
    * **Pour la traduction humaine**: exportez le dictionnaire à l’aide de l’interface utilisateur à l’adresse `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire avec les champs nouvellement ajoutés et téléchargez-le.
 
 ## En savoir plus
