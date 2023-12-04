@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
 workflow-type: tm+mt
-source-wordcount: '4393'
-ht-degree: 92%
+source-wordcount: '4420'
+ht-degree: 93%
 
 ---
 
@@ -77,11 +77,11 @@ ht-degree: 92%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Notes de mise à jour de la maintenance 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md)
-         + [Notes de mise à jour de la maintenance 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
-         + [Notes de mise à jour de la maintenance 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
-         + [Notes de mise à jour de la maintenance 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
-         + [Notes de mise à jour de la maintenance 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
+         + [Notes de mise à jour de la maintenance de la version 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md)
+         + [Notes de mise à jour de la maintenance de la version 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
+         + [Notes de mise à jour de la maintenance de la version 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
+         + [Notes de mise à jour de la maintenance de la version 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
+         + [Notes de mise à jour de la maintenance de la version 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
          + [Notes de mise à jour de la maintenance 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [Notes de mise à jour de la maintenance 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [Notes de mise à jour de la maintenance 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
@@ -178,7 +178,7 @@ ht-degree: 92%
 + Intégration {#onboarding}
    + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)
    + Parcours d’intégration {#journey}
-      + [Parcours d’intégration Présentation](/help/journey-onboarding/overview.md)
+      + [Présentation du parcours d’intégration](/help/journey-onboarding/overview.md)
       + [Préparation à l’intégration](/help/journey-onboarding/preparation.md)
       + [Terminologie d’AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
@@ -314,7 +314,7 @@ ht-degree: 92%
          + [Utilisation des workflows](/help/sites-cloud/authoring/workflows/overview.md)
          + [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md)
          + [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
-      + Personnalisation  {#personalization}
+      + Personnalisation {#personalization}
          + [Présentation de la personnalisation](/help/sites-cloud/authoring/personalization/overview.md)
          + [Aperçu des pages à l’aide des données ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
          + [Création de contenu ciblé en mode Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md)
@@ -322,7 +322,7 @@ ht-degree: 92%
          + [Structuration de la gestion multisite du contenu ciblé](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Gestion des activités](/help/sites-cloud/authoring/personalization/activities.md)
          + [Gestion des audiences](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [Création et gestion d’offres (Console Offres)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [Créer et gérer des offres (console Offres)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Compréhension de la segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configuration de la segmentation avec ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Enregistrement, connexion et profil utilisateur](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -385,7 +385,7 @@ ht-degree: 92%
       + [Administration des workflows](/help/sites-cloud/administering/workflows-administering.md)
    + Intégration d’AEM as a Cloud Service {#integrations}
       + [Intégration à Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
-      + [Intégration à Adobe Analytics  Configuration automatisée](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Intégration à la configuration automatisée d’Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Intégration à Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
@@ -469,7 +469,7 @@ ht-degree: 92%
       + [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [Réutiliser les fragments de contenu à l’aide de MSM pour Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
    + Dynamic Media {#dynamicmedia}
       + Parcours Dynamic Media : principes de base {#dm-journey}
          + [Première partie : présentation de Dynamic Media - Cas d’utilisation - Flux des ressources dans le système](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -504,7 +504,7 @@ ht-degree: 92%
       + [Images panoramiques](/help/assets/dynamic-media/panoramic-images.md)
       + [Visionneuses de médias mixtes](/help/assets/dynamic-media/mixed-media-sets.md)
       + [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md)
-      + [Vidéo dans Dynamic Media](/help/assets/dynamic-media/video.md)
+      + [Vidéo dans Dynamic Media](/help/assets/dynamic-media/video.md)
       + [Bannières de carrousel](/help/assets/dynamic-media/carousel-banners.md)
       + [Images interactives](/help/assets/dynamic-media/interactive-images.md)
       + [Vidéos interactives](/help/assets/dynamic-media/interactive-videos.md)
@@ -585,6 +585,7 @@ ht-degree: 92%
          + [Incorporer un formulaire adaptatif basé sur les composants principaux à une page web externe](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Incorporation d’un formulaire adaptatif basé sur des composants Foundation à une page web externe](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modèle de données de formulaire {#use-form-data-model}
+         + [Envoyer un formulaire adaptatif à Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Connexion d’AEM Forms à la base de données ou à la source de données](/help/forms/data-integration.md)
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -751,7 +752,7 @@ ht-degree: 92%
    + [Migration](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Prise en main d’Edge Delivery ](/help/edge/overview.md)
+   + [Prise en main d’Edge Delivery](/help/edge/overview.md)
    + [Utilisation de la diffusion Edge](/help/edge/using.md)
 + Découplé {#headless}
    + [Qu’est-ce qu’un CMS Headless ?](/help/headless/what-is-headless.md)
@@ -788,7 +789,7 @@ ht-degree: 92%
       + [Authentification](/help/headless/security/authentication.md)
    + Déploiement {#deployment}
       + [Architecture](/help/headless/deployment/architecture.md)
-      + [Dispatcher - Points de fin](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - Points de terminaison](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - Activation de la mise en cache pour les requêtes persistantes](/help/headless/deployment/dispatcher-caching.md)
       + [Configuration CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtre Référent](/help/headless/deployment/referrer-filter.md)
@@ -968,7 +969,7 @@ ht-degree: 92%
       + [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md)
       + [L’externaliseur de liens](/help/implementing/developing/tools/externalizer.md)
       + [Le navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md)
-   + Personnalisation  {#personalization}
+   + Personnalisation {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [Configuration de ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
       + [Ajout de ContextHub aux pages](/help/implementing/developing/personalization/adding-contexthub.md)
