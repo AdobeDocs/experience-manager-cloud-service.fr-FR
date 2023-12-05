@@ -3,9 +3,9 @@ title: Intégration d’Adobe Workfront Fusion avec envoi AEM Forms
 description: Adobe Workfront Fusion vous permet de vous concentrer sur de nouvelles tâches plutôt que de vous concentrer sur des tâches répétitives. Vous pouvez connecter Adobe Workfront Fusion à un formulaire adaptatif à l’aide de l’envoi de formulaire.
 keywords: Envoyer un formulaire adaptatif à Adobe Workfront Fusion, Intégration d’Adobe Workfront Fusion à l’envoi d’AEM Forms, Adobe Workfront Fusion avec AEM Forms, Workfront Fusion avec AEM Forms, Connecter la fusion Workfront à AEM Forms, AEM Forms et à la fusion, Comment connecter la fusion à ?, Connecter la fusion de  à un formulaire
 topic-tags: author, developer
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1240'
 ht-degree: 1%
 
 ---
@@ -144,7 +144,7 @@ Vous pouvez configurer l’action d’envoi pour la fusion de polices de travail
 - [Nouvelle Forms adaptative](#new-af-submit-action)
 - [Formulaires adaptatifs existants](#existing-af-submit-action)
 
-#### 2.1 Configuration de l’action d’envoi du nouveau formulaire adaptatif pour Workfront Fusion {#new-af-submit-action}
+#### Configuration de l’action d’envoi du nouveau formulaire adaptatif pour Workfront Fusion {#new-af-submit-action}
 
 Pour configurer l’action d’envoi du nouveau formulaire adaptatif pour Workfront Fusion :
 
@@ -165,7 +165,7 @@ Pour configurer l’action d’envoi du nouveau formulaire adaptatif pour Workfr
 1. Cliquez sur **[!UICONTROL Créer]**.
 1. Indiquez le nom de votre nouveau formulaire adaptatif, puis cliquez sur **[!UICONTROL Créer]**.
 
-#### 2.2 Configuration de l’action d’envoi du formulaire adaptatif existant pour Workfront Fusion {#existing-af-submit-action}
+#### Configuration de l’action d’envoi du formulaire adaptatif existant pour Workfront Fusion {#existing-af-submit-action}
 
 Pour configurer l’action d’envoi du formulaire adaptatif existant pour Workfront Fusion :
 
@@ -178,7 +178,7 @@ Pour configurer l’action d’envoi du formulaire adaptatif existant pour Workf
    ![Action Envoyer pour Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. Ouvrez l’onglet **[!UICONTROL Soumission]**.
-1. Sélectionnez la variable **[Action Envoyer]** as **[!UICONTROL Appeler un scénario de fusion Workfront]**
+1. Sélectionnez la variable **[!UICONTROL Action Envoyer]** as **[!UICONTROL Appeler un scénario de fusion Workfront]**
 1. Sélectionner **[!UICONTROL Scénario de Workfront Fusion]** dans la liste déroulante.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
