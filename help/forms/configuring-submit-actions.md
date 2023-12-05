@@ -2,10 +2,10 @@
 title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 85%
+source-wordcount: '3913'
+ht-degree: 82%
 
 ---
 
@@ -28,6 +28,7 @@ Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bout
 * [Envoyer à OneDrive](#submit-to-onedrive)
 * [Envoyer au stockage Blob Azure](#azure-blob-storage)
 * [Envoyer à Power Automate](#microsoft-power-automate)
+* [Envoyer à Workfront Fusion](#workfront-fusion)
 
 Vous pouvez également [étendre les actions d’envoi par défaut](custom-submit-action-form.md) pour créer votre propre action d’envoi.
 
@@ -404,6 +405,13 @@ Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Powe
 L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un flux Microsoft® Power Automate** pour envoyer des données de formulaires adaptatifs et des pièces jointes, et un document d’enregistrement est envoyé au flux de cloud Power Automate. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [connectez votre instance Forms as a Cloud Service à Microsoft® Power Automate](forms-microsoft-power-automate-integration.md).
 
 Après une configuration réussie, utilisez la méthode [Appeler un flux Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Action d’envoi pour envoyer des données à un flux d’automatisation Power.
+
+## Envoyer à Workfront Fusion {#workfront-fusion}
+
+Vous pouvez configurer un formulaire adaptatif pour envoyer des données à Workfront Fusion lors de l’envoi. Workfront Fusion permet l’automatisation des processus afin que l’utilisateur puisse se concentrer sur de nouvelles tâches plutôt que de répéter les mêmes tâches encore et encore. Il automatise les tâches simples et complexes, ce qui permet de gagner du temps et d’assurer une exécution cohérente des processus.
+
+L’éditeur de Forms adaptatif fournit la variable **Appeler un scénario de fusion Workfront** Action d’envoi pour envoyer des données ou des pièces jointes Adaptive Forms à un scénario de fusion Workfront. Pour utiliser l’action d’envoi pour envoyer des données capturées à un scénario de fusion Workfront, reportez-vous à la section [Envoyer un formulaire adaptatif à Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+
 
 ## Utiliser l’envoi synchrone ou asynchrone {#use-synchronous-or-asynchronous-submission}
 
