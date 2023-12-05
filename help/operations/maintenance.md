@@ -4,8 +4,8 @@ description: Découvrez les tâches de maintenance dans AEM as a Cloud Service e
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 35223fba365cf55fca51eb8420b7217ec3e95ccc
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 83%
+source-wordcount: '1127'
+ht-degree: 84%
 
 ---
 
