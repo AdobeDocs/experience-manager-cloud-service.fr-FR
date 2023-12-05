@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 91%
+source-wordcount: '2720'
+ht-degree: 90%
 
 ---
 
@@ -190,14 +190,14 @@ Vous trouverez ci-dessous des exemples de configurations de journalisation recom
 
 La journalisation des requêtes HTTP dans AEM as a Cloud Service fournit des informations sur les requêtes HTTP envoyées à AEM et leurs réponses HTTP par ordre d’arrivée. Ce journal permet de comprendre les requêtes HTTP envoyées à AEM ainsi que l’ordre dans lequel elles sont traitées et reçoivent une réponse.
 
-La clé pour comprendre ce journal est de mapper les paires de requête HTTP et réponse selon leur ID, identifié par la valeur numérique entre crochets. Notez que, dans le journal, les différentes requêtes HTTP et leurs réponses se chevauchent souvent.
+La clé pour comprendre ce journal est de mapper les paires de requête HTTP et réponse selon leur ID, identifié par la valeur numérique entre crochets. Souvent, les requêtes et leurs réponses correspondantes ont d’autres requêtes et réponses HTTP interjoncées dans le journal.
 
 **Exemple de journal**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -285,7 +285,7 @@ Cet ensemble de journaux fournit des informations sur les requêtes HTTP envoyé
 
 ### Journal des accès au serveur web Apache HTTPD {#apache-httpd-web-server-access-log}
 
-Le journal des accès au serveur web Apache HTTPD fournit des instructions pour chaque requête HTTP qui atteint le serveur web/Dispatcher du niveau Publication. Notez que les requêtes diffusées à partir d’un réseau CDN en amont ne sont pas reflétées dans ces journaux.
+Le journal des accès au serveur web Apache HTTPD fournit des instructions pour chaque requête HTTP qui atteint le serveur web/Dispatcher du niveau Publication. Les requêtes diffusées à partir d’un réseau de diffusion de contenu en amont ne sont pas reflétées dans ces journaux.
 
 Consultez les informations sur le format du journal des erreurs dans la [documentation officielle d’Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -534,7 +534,7 @@ Les journaux CDN sont différents des autres journaux dans la mesure où ils res
 
 | **Nom du champ** | **Description** |
 |---|---|
-| *timestamp* | Heure à laquelle la requête a commencé, après la fin de TLS |
+| *timestamp* | Heure à laquelle la demande a commencé, après la fin de TLS |
 | *ttfb* | Abréviation de *Time To First Byte*. Intervalle entre le démarrage de la requête et le début de la diffusion du corps de la réponse. |
 | *cli_ip* | Adresse IP du client ou de la cliente. |
 | *cli_country* | Code de pays alpha-2 à deux lettres [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1) pour le pays du client ou de la cliente. |
@@ -611,13 +611,13 @@ Les clients disposant d’un compte Splunk peuvent demander, via un ticket de se
 
 La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l’utilisation des E/S réseau du client ou de la cliente.
 
-Notez que le transfert Splunk ne prend pas encore en charge les journaux CDN.
+Le transfert Splunk ne prend pas encore en charge les journaux CDN.
 
 ### Activation du transfert Splunk {#enabling-splunk-forwarding}
 
 Dans la demande d’assistance, les clients doivent indiquer :
 
-* l’adresse du point d’entrée Splunk HEC ; : Ce point d’entrée doit disposer d’un certificat SSL valide et être accessible au public.
+* Adresse du point d’entrée Splunk HEC. Ce point d’entrée doit disposer d’un certificat SSL valide et être accessible au public.
 * l’index Splunk ;
 * le port Splunk ;
 * le jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).

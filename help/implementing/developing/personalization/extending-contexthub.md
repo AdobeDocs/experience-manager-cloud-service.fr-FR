@@ -2,10 +2,10 @@
 title: Extension de ContextHub
 description: Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux qui sont fournis ne répondent pas à vos besoins.
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 84%
+source-wordcount: '625'
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,7 @@ Pour créer un candidat de magasin, vous utilisez la fonction [`ContextHub.Utils
 * [`ContextHub.Store.JSONPStore`](contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Notez que chaque magasin de base étend le magasin [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core).
+Chaque magasin de base étend la variable [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) magasin.
 
 L’exemple suivant crée l’extension la plus simple du candidat de magasin `ContextHub.Store.PersistedStore` :
 

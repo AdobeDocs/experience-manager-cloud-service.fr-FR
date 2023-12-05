@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 89%
+source-wordcount: '2145'
+ht-degree: 87%
 
 ---
 
 # Visionneuses d’images {#image-sets}
 
-Visionneuses d’images  : elles offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
+Les visionneuses d’images offrent aux utilisateurs une expérience de visionnage intégrée, dans laquelle ils peuvent visualiser différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
 
 Les visionneuses d’images sont désignées par une bannière comportant le mot `IMAGESET`. En outre, si la visionneuse d’images est publiée, la date de publication, indiquée par l’icône **[!UICONTROL Monde]**, est sur la bannière. En outre, la dernière date de modification, indiquée par l’icône **[!UICONTROL Crayon]**, s’affiche.
 
@@ -148,7 +148,7 @@ Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
 **Pour créer une visionneuse d’images** :
 
 1. Dans Adobe Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale.
-1. Appuyez sur **[!UICONTROL Navigation]** > **[!UICONTROL Ressources]**. Naviguez jusqu’à l’emplacement où vous souhaitez créer une visionneuse d’images, puis accédez à **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse d’images]** pour ouvrir la page de l’éditeur de visionneuse d’images.
+1. Sélectionner **[!UICONTROL Navigation]** > **[!UICONTROL Ressources]**. Naviguez jusqu’à l’emplacement où vous souhaitez créer une visionneuse d’images, puis accédez à **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse d’images]** pour ouvrir la page de l’éditeur de visionneuse d’images.
 
    Vous pouvez également la créer depuis un dossier qui contient les ressources.
 
@@ -164,7 +164,7 @@ Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
 
    * Au milieu de la page de l’éditeur de visionneuse d’images, sélectionnez **[!UICONTROL Appuyer pour ouvrir le sélecteur de ressources]**.
 
-   Appuyez pour sélectionner les ressources que vous souhaitez inclure dans la visionneuse d’images. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, sélectionnez **[!UICONTROL Sélectionner]**.
+   Sélectionnez cette option pour sélectionner les ressources à inclure dans la visionneuse d’images. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, sélectionnez **[!UICONTROL Sélectionner]**.
 
    Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en sélectionnant **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis sélectionnez l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en sélectionnant l’icône Affichage et en sélectionnant **[!UICONTROL Vue Colonnes]**, **[!UICONTROL Vue Carte]** ou **[!UICONTROL Vue Liste]**.
 
@@ -236,7 +236,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 
    * Pointez sur une ressource d’image, puis sélectionnez **[!UICONTROL Modifier]** (icône de crayon).
    * Pointez sur une ressource de visionneuse d’image, sélectionnez **[!UICONTROL Sélectionner]** (icône de coche), puis sélectionnez **[!UICONTROL Modifier]** dans la barre d’outils.
-   * Appuyez sur une ressource de visionneuse d’images, puis sélectionnez **[!UICONTROL Modifier]** (icône de crayon) dans la barre d’outils.
+   * Sélectionnez sur une ressource de visionneuse d’images, puis sélectionnez **[!UICONTROL Modifier]** (icône crayon) dans la barre d’outils.
 
 1. Pour modifier les images de la visionneuse d’images, effectuez l’une des opérations suivantes :
 
@@ -255,7 +255,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
    >
    >Vous pouvez modifier les images dans une visionneuse d’images. Accédez à la visionneuse et sélectionnez **[!UICONTROL Définir les membres]** dans le rail de gauche. Pour ouvrir la fenêtre de modification, sélectionnez l’icône représentant un crayon dans une ressource.
 
-1. Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
+1. Sélectionnez **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
 ## Prévisualisez une visionneuse d’images {#previewing-image-sets}
 

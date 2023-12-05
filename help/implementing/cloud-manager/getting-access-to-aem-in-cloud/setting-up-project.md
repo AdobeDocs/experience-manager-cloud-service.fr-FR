@@ -2,10 +2,10 @@
 title: Configuration du projet
 description: Découvrez comment les projets AEM sont créés avec Maven et les normes que vous devez respecter lors de la création de votre propre projet.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -120,7 +120,7 @@ Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Mana
 Lorsque le processus de création de Cloud Manager démarre :
 
 * L’élément `<servers>` dans ce fichier est fusionné dans le fichier `settings.xml` par défaut fourni par Cloud Manager.
-   * Les ID de serveur commençant par `adobe` et `cloud-manager` sont considérés comme réservés et ne doivent pas être utilisés par des serveurs personnalisés.
+   * ID de serveur commençant par `adobe` et `cloud-manager` sont considérées comme réservées. Ne les utilisez pas sur des serveurs personnalisés.
    * Les ID de serveur ne correspondant pas à l’un de ces préfixes ou à l’ID par défaut `central` ne seront jamais mis en miroir par Cloud Manager.
 * Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’un élément `<repository>` et `<pluginRepository>` dans le fichier `pom.xml`.
 * En règle générale, ces éléments `<repository>` et `<pluginRepository>` sont contenus dans un [profil spécifique à Cloud Manager](#activating-maven-profiles-in-cloud-manager), bien que cela ne soit pas strictement nécessaire.

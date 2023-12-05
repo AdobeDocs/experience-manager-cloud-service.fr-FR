@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2398'
-ht-degree: 26%
+source-wordcount: '2387'
+ht-degree: 25%
 
 ---
 
@@ -232,7 +232,7 @@ Selon le type de composant sélectionné, les détails peuvent être affichés e
 
 ![Détails du composant](assets/component-details.png)
 
-Notez que tous les composants ne comportent pas de détails qui peuvent être affichés et/ou modifiés.
+Tous les composants ne comportent pas de détails qui peuvent être affichés et/ou modifiés.
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ La modification du contenu est simple et intuitive. Dans [mode Composants](#comp
 
 >[!TIP]
 >
->Notez qu’en mode Composants, appuyer ou cliquer sur le contenu le sélectionne pour le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez à [mode aperçu.](#preview-mode)
+>En mode Composants, appuyez ou cliquez sur le contenu pour le sélectionner en vue de le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez à [mode aperçu.](#preview-mode)
 
 Selon le contenu que vous sélectionnez, vous pouvez avoir différentes options de modification statique et des informations et options supplémentaires pour le contenu dans la variable [rail de propriétés.](#properties-rail)
 
@@ -407,7 +407,7 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 
 Une fois le contenu modifié, vous aimez généralement le parcourir pour voir à quoi il ressemble dans le contenu d’autres pages. En [mode Aperçu](#preview-mode), vous pouvez cliquer sur les liens pour parcourir votre contenu comme le ferait un lecteur ou une lectrice. Le contenu est rendu dans l’éditeur tel qu’il serait publié.
 
-Notez qu’en mode Aperçu, le fait d’appuyer ou de cliquer sur le contenu fait réagir ce dernier comme il le ferait avec un lecteur ou une lectrice du contenu. Si vous souhaitez sélectionner le contenu à modifier, passez à [mode Composants .](#component-mode)
+En mode d’aperçu, appuyer ou cliquer sur le contenu réagit comme il le ferait à un lecteur du contenu. Si vous souhaitez sélectionner le contenu à modifier, passez à [mode Composants .](#component-mode)
 
 ## Ressources supplémentaires {#additional-resources}
 

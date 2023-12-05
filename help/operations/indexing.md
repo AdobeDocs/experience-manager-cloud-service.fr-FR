@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Découvrez la recherche et l’indexation de contenu dans AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2427'
-ht-degree: 68%
+source-wordcount: '2442'
+ht-degree: 65%
 
 ---
 
@@ -67,7 +67,7 @@ Une définition d’index peut appartenir à l’une des catégories suivantes :
 
 >[!NOTE]
 >
->Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-8`, copiez la dernière définition d’index d’usine à partir d’un *Environnement Cloud Service* à l’aide du gestionnaire de packages CRX DE (`/crx/packmgr/`). Renommez-le en `damAssetLucene-8-custom-1` (ou version ultérieure) et ajoutez vos personnalisations dans le fichier XML. Ainsi, les configurations requises ne sont pas supprimées par inadvertance. Par exemple, la variable `tika` noeud sous `/oak:index/damAssetLucene-8/tika` est requis dans l’index personnalisé déployé dans un environnement AEM Cloud Service, mais n’existe pas dans le SDK AEM local.
+>Si vous personnalisez un index prêt à l’emploi, par exemple : `damAssetLucene-8`, copiez la dernière définition d’index d’usine à partir d’un *Environnement Cloud Service* à l’aide du gestionnaire de modules CRX DE (`/crx/packmgr/`) . Renommez-le en `damAssetLucene-8-custom-1` (ou version ultérieure) et ajoutez vos personnalisations dans le fichier XML. Ainsi, les configurations requises ne sont pas supprimées par inadvertance. Par exemple, la variable `tika` noeud sous `/oak:index/damAssetLucene-8/tika` est requis dans l’index personnalisé déployé dans un environnement AEM Cloud Service, mais n’existe pas dans le SDK AEM local.
 
 Pour les personnalisations d’un index prêt à l’emploi, préparez un nouveau package contenant la définition d’index actuelle qui suit ce modèle de dénomination :
 
@@ -188,7 +188,7 @@ Il est vivement recommandé d’utiliser version >= `1.3.2` du Jackrabbit `filev
 
    Voici un exemple des principaux niveaux du projet : `pom.xml` avec les configurations mentionnées ci-dessus :
 
-   Nom de fichier: `pom.xml`
+   Nom de fichier : `pom.xml`
 
    ```xml
    <plugin>
@@ -274,7 +274,7 @@ Lors du développement ou de l’utilisation d’installations on-premise, les i
 
 ### Gestion des index avec déploiements en continu {#index-management-with-rolling-deployments}
 
-Avec des déploiements en continu, il n’existe pas de temps d’arrêt. Pendant un certain temps lors d’une mise à jour, l’ancienne version (par exemple, la version 1) de l’application et la nouvelle version (la version 2) s’exécutent simultanément sur le même référentiel. Si la version 1 nécessite la disponibilité d’un certain index, celui-ci ne doit pas être supprimé dans la version 2. L’index doit être supprimé ultérieurement, par exemple dans la version 3. À ce stade, vous devez avoir la certitude que la version 1 de l’application n’est plus en cours d’exécution. En outre, les applications doivent être écrites de manière à ce que la version 1 fonctionne correctement, même si la version 2 est en cours d’exécution et si des index de la version 2 sont disponibles.
+Avec des déploiements en continu, il n’existe pas de temps d’arrêt. Pendant un certain temps lors d’une mise à jour, l’ancienne version (par exemple, la version 1) de l’application et la nouvelle version (la version 2) s’exécutent simultanément sur le même référentiel. Si la version 1 nécessite qu’un certain index soit disponible, cet index ne doit pas être supprimé dans la version 2. L’index doit être supprimé ultérieurement, par exemple, dans la version 3. À ce stade, il est garanti que la version 1 de l’application n’est plus en cours d’exécution. En outre, les applications doivent être écrites de manière à ce que la version 1 fonctionne correctement, même si la version 2 est en cours d’exécution et si des index de la version 2 sont disponibles.
 
 Une fois la mise à niveau vers la nouvelle version terminée, les anciens index peuvent être récupérés par le système. Les anciens index peuvent rester disponibles un certain temps afin d’accélérer les restaurations, le cas échéant.
 

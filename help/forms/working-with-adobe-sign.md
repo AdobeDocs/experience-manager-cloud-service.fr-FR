@@ -6,10 +6,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3172'
-ht-degree: 94%
+source-wordcount: '3131'
+ht-degree: 89%
 
 ---
 
@@ -76,7 +76,7 @@ Vous pouvez activer [!DNL Adobe Sign] pour un formulaire adaptatif existant ou c
 Pour créer un formulaire adaptatif prenant en charge les signatures :
 
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Appuyez sur **[!UICONTROL Créer]** et sélectionner **[!UICONTROL Formulaire adaptatif]**. Une liste de modèles s’affiche. Sélectionnez un modèle, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Sélectionner **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Formulaire adaptatif]**. Une liste de modèles s’affiche. Sélectionnez un modèle, puis **[!UICONTROL Suivant]**.
 1. Dans l’onglet **[!UICONTROL De base]** :
 
    1. Précisez les **[!UICONTROL Nom]** et **[!UICONTROL Titre]** pour le formulaire adaptatif.
@@ -91,14 +91,14 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
 
    * Si vous ne disposez pas d’un modèle de formulaire personnalisé, sélectionnez l’option **[!UICONTROL Générer un document d’enregistrement]**. Lorsque vous utilisez cette option, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
-1. Appuyez sur **[!UICONTROL Créer.]** Un formulaire adaptatif prenant en charge les signatures est créé. Vous pouvez y ajouter vos champs [!DNL Adobe Sign] et envoyer le formulaire pour signature.
+1. Sélectionner **[!UICONTROL Créez.]** Un formulaire adaptatif prenant en charge les signatures est créé. Vous pouvez y ajouter vos champs [!DNL Adobe Sign] et envoyer le formulaire pour signature.
 
 #### Activation d’[!DNL Adobe Sign] pour un formulaire adaptatif {#editafsign}
 
 Pour utiliser [!DNL Adobe Sign] dans un formulaire adaptatif existant :
 
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Sélectionnez le document adaptatif et appuyez sur **[!UICONTROL Propriétés]**.
+1. Sélectionnez le formulaire adaptatif et choisissez **[!UICONTROL Propriétés]**.
 1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’intégration d’[!DNL Adobe Sign] à [!DNL AEM Forms].
 1. Dans l’onglet **[!UICONTROL Mode Formulaire]**, sélectionnez l’une des options suivantes :
 
@@ -106,7 +106,7 @@ Pour utiliser [!DNL Adobe Sign] dans un formulaire adaptatif existant :
 
    * Si vous ne disposez pas d’un modèle de formulaire personnalisé, sélectionnez l’option **[!UICONTROL Générer un document d’enregistrement]**. Lorsque vous utilisez cette option, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
-1. Appuyez sur **[!UICONTROL Enregistrer et fermer]**. Le formulaire adaptatif est activé pour [!DNL Adobe Sign]. Vous pouvez maintenant y ajouter vos champs [!DNL Adobe Sign] et envoyer le formulaire pour signature.
+1. Sélectionner **[!UICONTROL Enregistrer et fermer]**. Le formulaire adaptatif est activé pour [!DNL Adobe Sign]. Vous pouvez maintenant y ajouter vos champs [!DNL Adobe Sign] et envoyer le formulaire pour signature.
 
 ### Ajout de champs [!DNL Adobe Sign] à un formulaire adaptatif {#addadobesignfieldstoanadaptiveform}
 
@@ -126,15 +126,15 @@ Pour ajouter des champs à un formulaire adaptatif et personnaliser diverses opt
    >  * Utilisez le bloc [!DNL Adobe Sign] seulement pour les formulaires adaptatifs qui génèrent automatiquement un document d’enregistrement. Si vous utilisez un fichier XDP personnalisé pour générer un document d’enregistrement ou un formulaire adaptatif basé sur un modèle de formulaire, le bloc [!DNL Adobe Sign] n’est pas pris en charge.
 
 
-1. Sélectionnez le composant **[!UICONTROL Bloc Adobe Sign]** et appuyez sur l’icône **[!UICONTROL Modifier]** ![Modifier](assets/Smock_Edit_18_N.svg). Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
+1. Sélectionnez la variable **[!UICONTROL Bloc Adobe Sign]** et sélectionnez le composant **[!UICONTROL Modifier]** ![Modifier](assets/Smock_Edit_18_N.svg) Icône Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** Sélection et ajout de champs [!DNL Adobe Sign]. **B.** Développement du bloc [!DNL Adobe Sign] en mode plein écran
 
-1. Appuyez sur le champ **[!UICONTROL Adobe Sign]** icône ![Adobe Sign](assets/adobesign.png). Il affiche des options permettant de sélectionner et d’ajouter des champs [!DNL Adobe Sign].
+1. Sélectionnez la variable **[!UICONTROL Adobe Sign]** Champ ![Adobe Sign](assets/adobesign.png) Icône Il affiche des options permettant de sélectionner et d’ajouter des champs [!DNL Adobe Sign].
 
-   Développez le champ déroulant **[!UICONTROL Type]** pour sélectionner un champ [!DNL Adobe Sign], puis appuyez sur l’icône Terminé ![Enregistrer](assets/save_icon.svg) pour ajouter le champ sélectionné au bloc [!DNL Adobe Sign]. Le champ déroulant **[!UICONTROL Type]** comprend les types de champs Signature, Informations du destinataire et Données. Intégration d’[!DNL Adobe Sign] aux champs de prise en charge [!DNL Forms] d’AEM répertoriés dans la liste déroulante [!UICONTROL Type] uniquement. Pour plus d’informations sur les champs [!DNL Adobe Sign], voir la [documentation Adobe Sign](https://helpx.adobe.com/fr/sign/help/field-types.html).
+   Développez l’objet **[!UICONTROL Type]** champ déroulant pour sélectionner un [!DNL Adobe Sign] et sélectionnez Terminé . ![Enregistrer](assets/save_icon.svg) pour ajouter le champ sélectionné à [!DNL Adobe Sign] bloque. Le champ déroulant **[!UICONTROL Type]** comprend les types de champs Signature, Informations du destinataire et Données. Intégration d’[!DNL Adobe Sign] aux champs de prise en charge [!DNL Forms] d’AEM répertoriés dans la liste déroulante [!UICONTROL Type] uniquement. Pour plus d’informations sur les champs [!DNL Adobe Sign], voir la [documentation Adobe Sign](https://helpx.adobe.com/fr/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -149,7 +149,7 @@ Pour ajouter des champs à un formulaire adaptatif et personnaliser diverses opt
 
 Par défaut, [!DNL Adobe Sign] n’est pas activé pour un formulaire adaptatif. Pour l’activer :
 
-1. Dans l’explorateur de contenu, appuyez sur **[!UICONTROL Conteneur de formulaires]**, puis sur l’icône **[!UICONTROL Configurer]** ![configure](assets/Smock_Wrench_18_N.svg). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs.
+1. Dans l’explorateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaires]**, puis sélectionnez la variable **[!UICONTROL Configurer]** ![configure](assets/Smock_Wrench_18_N.svg) Icône L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs.
 1. Dans l’explorateur de propriétés, développez l’accordéon **[!UICONTROL Signature électronique]** et sélectionnez l’option **[!UICONTROL Activer Adobe Sign]**. Elle active [!DNL Adobe Sign] pour un formulaire adaptatif.
 
 ### Sélection d’[!DNL Adobe Sign] Cloud Service et d’un ordre de signature {#select-adobe-sign-cloud-service-and-signing-order}
@@ -162,7 +162,7 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
 
 ![Cloud-service](assets/cloud-service.png)
 
-1. Dans l’explorateur de contenu, appuyez sur **[!UICONTROL Conteneur de formulaires]**, puis sur l’icône **[!UICONTROL Configurer]** ![configure](assets/Smock_Wrench_18_N.svg). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs.
+1. Dans l’explorateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaires]**, puis sélectionnez la variable **[!UICONTROL Configurer]** ![configure](assets/Smock_Wrench_18_N.svg) Icône L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs.
 1. Dans l’explorateur de propriétés, développez l’accordéon **[!UICONTROL Signature électronique]** et sélectionnez l’option **[!UICONTROL Activer Adobe Sign]**. Elle active [!DNL Adobe Sign] pour un formulaire adaptatif.
 1. Sélectionnez un Cloud Service dans la liste des Cloud Services [!DNL Adobe Sign] déjà configurés.
 
@@ -178,15 +178,15 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
 
 1. Utilisez le champ ID de contrat pour associer un bindref à l’ID de contrat (AgreementId). Celui-ci ajoute l’ID de contrat à la section afBoundData des données d’envoi pour les formulaires basés sur un schéma. L’ID de contrat est également ajouté à la section afSubmissionInfo dans les données envoyées pour tous les formulaires compatibles avec Adobe Sign. Vous pouvez utiliser l’ID de contrat pour le suivi de l’état de contrat à l’aide de code personnalisé (requiert une implémentation personnalisée).
 
-1. [Ajoutez des destinataires à un formulaire adaptatif](working-with-adobe-sign.md#addsignerstoanadaptiveform) et appuyez sur l’icône Terminé ![Enregistrer](assets/save_icon.svg) pour enregistrer les modifications.
+1. [Ajout de destinataires à un formulaire adaptatif](working-with-adobe-sign.md#addsignerstoanadaptiveform) et sélectionnez Terminé . ![Enregistrer](assets/save_icon.svg) pour enregistrer les modifications.
 
 ### Ajout de destinataires à un formulaire adaptatif {#addsignerstoanadaptiveform}
 
 Vous pouvez avoir un ou plusieurs destinataires pour un contrat Adobe Sign. Lorsque vous ajoutez un destinataire, vous pouvez également configurer les informations d’authentification du destinataire et choisir si l’utilisateur et le destinataire du formulaire sont la même personne. Suivez les étapes suivantes pour ajouter et fournir diverses informations sur un destinataire :
 
-1. Dans l’explorateur de contenu, appuyez sur **[!UICONTROL Conteneur de formulaires]**, puis sur l’icône **[!UICONTROL Configurer]** ![configure](assets/Smock_Wrench_18_N.svg). Il ouvre l’explorateur de propriétés avec les propriétés du conteneur de formulaires adaptatifs.
+1. Dans l’explorateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaires]**, puis sélectionnez la variable **[!UICONTROL Configurer]** ![configure](assets/Smock_Wrench_18_N.svg) Icône Il ouvre l’explorateur de propriétés avec les propriétés du conteneur de formulaires adaptatifs.
 1. Dans l’explorateur de propriétés, développez l’accordéon **[!UICONTROL Signature électronique]** et sélectionnez l’option **[!UICONTROL Activer Adobe Sign]**. Elle active [!DNL Adobe Sign] pour un formulaire adaptatif.
-1. Appuyez sur **[!UICONTROL Ajouter un destinataire]**. Un destinataire est ajouté au formulaire adaptatif. Vous pouvez ajouter plusieurs destinataires à un formulaire adaptatif. Tous les destinataires reçoivent un contrat Adobe Sign lors de l’envoi du formulaire adaptatif.
+1. Sélectionner **[!UICONTROL Ajouter un destinataire]**. Un destinataire est ajouté au formulaire adaptatif. Vous pouvez ajouter plusieurs destinataires à un formulaire adaptatif. Tous les destinataires reçoivent un contrat Adobe Sign lors de l’envoi du formulaire adaptatif.
    ![phone-details](assets/recipient-settings.png)
 
 1. Cliquez sur l’icône **[!UICONTROL Modifier]** ![Modifier](assets/Smock_Edit_18_N.svg) pour spécifier les informations suivantes sur le destinataire :
@@ -216,7 +216,7 @@ Vous pouvez avoir un ou plusieurs destinataires pour un contrat Adobe Sign. Lors
 
    L’image ci-dessus a deux exemples de blocs [!DNL Adobe Sign] : Personal-Information (informations personnelles) et Office-details (détails du bureau)
 
-   Appuyez sur l’icône ![Enregistrer](assets/save_icon.svg). Le destinataire est ajouté.
+   Sélectionnez la variable ![Enregistrer](assets/save_icon.svg) Icône Le destinataire est ajouté.
 
 ### Sélection d’une action d’envoi pour un formulaire adaptatif {#selectsubmitactionforanadaptiveform}
 
@@ -301,15 +301,15 @@ Après [modification des propriétés de formulaire adaptatif pour Adobe Sign](w
 
    ![Bloc de signature](assets/sign-block-new.png)
 
-1. Sélectionnez le composant **[!UICONTROL Bloc Adobe Sign]** et appuyez sur l’icône **[!UICONTROL Modifier]** ![Modifier](assets/Smock_Edit_18_N.svg). Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
+1. Sélectionnez la variable **[!UICONTROL Bloc Adobe Sign]** et sélectionnez le composant **[!UICONTROL Modifier]** ![Modifier](assets/Smock_Edit_18_N.svg) Icône Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
-   **A.** Sélection et ajout de champs [!DNL Adobe Sign]. **B.** Développement du bloc en mode plein écran[!DNL Adobe Sign]
+   **A.** Sélection et ajout de champs [!DNL Adobe Sign]. **B.** Développement du bloc [!DNL Adobe Sign] en mode plein écran
 
-1. Appuyez sur l’icône **[!UICONTROL Champ Adobe Sign]** ![Adobe Sign](assets/adobesign.png). Elle affiche des options permettant de sélectionner et d’ajouter des champs [!DNL Adobe Sign].
+1. Sélectionnez la variable **[!UICONTROL Champ Adobe Sign]** ![Adobe Sign](assets/adobesign.png) Icône Il affiche des options permettant de sélectionner et d’ajouter des champs [!DNL Adobe Sign].
 
-   Développez le champ déroulant **[!UICONTROL Type]** pour sélectionner **[!UICONTROL Signature numérique]**, puis appuyez sur l’icône **[!UICONTROL Terminé]** pour ajouter le champ sélectionné au bloc [!DNL Adobe Sign].
+   Développez l’objet **[!UICONTROL Type]** champ déroulant à sélectionner **[!UICONTROL Signature numérique]** et sélectionnez la variable **[!UICONTROL Terminé]** pour ajouter le champ sélectionné à [!DNL Adobe Sign] bloque.
 
    ![Signatures numériques](assets/digital_signatures_new.png)
 
@@ -363,7 +363,7 @@ Lorsque le service [!DNL Adobe Sign] est configuré pour un formulaire adaptatif
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Adobe Sign] Intégration avec [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [Intégrer [!DNL Adobe Sign] avec [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
 >* [Recommandations relatives à l’utilisation d’ [!DNL Adobe Sign] avec les formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
 

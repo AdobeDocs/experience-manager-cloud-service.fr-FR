@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 51%
+source-wordcount: '364'
+ht-degree: 46%
 
 ---
 
-# Commerce Configuration multi-magasin {#multi-store}
+# Configuration multi-magasin Commerce {#multi-store}
 
 Les composants principaux Adobe Experience Manager (AEM) CIF peuvent être utilisés sur plusieurs structures de site d’ et l’implémentation du client GraphQL sous-jacent peut se connecter à différents magasins/vues de magasin Adobe Commerce. Cela permet aux projets de mettre en œuvre des configurations multi-magasin/multi-site complexes.
 
@@ -25,7 +25,7 @@ Présentation vidéo détaillant les options d’intégration de plusieurs vues 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Les fonctionnalités de gestion multisite de Live Copy et de Language Copy sont utilisées avec Commerce Integration Framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
+Les fonctionnalités de gestion multisite de Live Copy et de Language Copy sont utilisées avec le Commerce integration framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
 
 La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue de magasin Adobe Commerce.
 
@@ -39,11 +39,11 @@ Pour connecter un site AEM et AEM composants principaux à une vue de magasin d�
 
 3. Créez une configuration enfant de la configuration de CIF Cloud Service en procédant comme suit :
 
-   * Dans AEM, accédez à Outils > Général > [Explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * Dans AEM, accédez à Outils > Général > [Explorateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Sélectionnez la configuration de base que vous avez créée.
    * Créez une configuration en suivant les étapes décrites au point 2 ci-dessus.
 
-   Cette nouvelle configuration est créée en tant que configuration enfant de la configuration de base. Vous pouvez maintenant accéder à Outils -> Général -> Explorateur de configurations et créer les paramètres de configuration.
+   Cette nouvelle configuration est créée en tant que configuration enfant de la configuration de base. Vous pouvez maintenant accéder à Outils > Général > Explorateur de configurations et créer les paramètres de configuration.
 
    >[!TIP]
    >

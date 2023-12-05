@@ -2,10 +2,10 @@
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 98%
+source-wordcount: '1800'
+ht-degree: 96%
 
 ---
 
@@ -179,7 +179,7 @@ Les entrées de journal d’AzCopy apparaissent dans le journal d’extraction e
 > Pendant les premières minutes d’une extraction, regardez attentivement les logs d’extraction pour savoir s’il y a un problème. Par exemple, voici ce qui serait consigné si le conteneur Azure source était introuvable :
 
 ```
-[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
+[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason > github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
 [AzCopy pre-copy] ===== RESPONSE ERROR (ServiceCode=ContainerNotFound) =====
 [AzCopy pre-copy] Description=The specified container does not exist.
 [AzCopy pre-copy] RequestId:5fb674b9-201e-001b-2a5b-527400000000
@@ -201,9 +201,7 @@ Lorsque AzCopy est en cours d’exécution pour le fichier source dataStore, vou
 
 ### 5. Ingestion avec AzCopy {#ingesting-azcopy}
 
-Consultez la section [Ingérer du contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-pour obtenir des informations générales sur l’ingestion de contenu dans Target à partir de Cloud Acceleration Manager (CAM), y compris des
-instructions sur l’utilisation d’AzCopy (précopie), ou non, dans la boîte de dialogue « Nouvelle ingestion ».
+Voir [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour obtenir des informations générales sur l’ingestion de contenu dans la cible à partir de Cloud Acceleration Manager (CAM), y compris des instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte de dialogue &quot;Nouvelle ingestion&quot;.
 
 Pour tirer parti d’AzCopy lors de l’ingestion, la version 2021.6.5561 d’AEM as a Cloud Service ou ultérieure est nécessaire.
 

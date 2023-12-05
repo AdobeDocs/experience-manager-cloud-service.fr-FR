@@ -1,14 +1,13 @@
 ---
 title: Comment prévisualiser un formulaire adaptatif ?
 description: Les utilisateurs peuvent prévisualiser les formulaires avant leur publication ou leur activation, afin de s’assurer qu’ils répondent aux attentes. Les options d’aperçu peuvent varier selon les types de formulaire pris en charge.
-uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 35%
+source-wordcount: '359'
+ht-degree: 34%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 35%
 
 Dans [!DNL AEM Forms], vous pouvez prévisualiser les formulaires et les documents figurant dans le référentiel. L’aperçu permet de savoir exactement à quoi ressemblent les formulaires lorsqu’ils sont publiés pour les utilisateurs finaux.
 
-Lors de la prévisualisation de formulaires, ils sont rendus dans l’interface interactive et l’utilisateur peut les remplir avec des données. Lors de la prévisualisation de documents, ils sont rendus en mode non interactif et l’utilisateur peut uniquement afficher le document. Pour les formulaires, une option supplémentaire d’aperçu personnalisé est disponible. Grâce à cette option, vous pouvez prévisualiser le formulaire à l’aide des données d’un fichier XML. Les données remplissent certains ou tous les champs du formulaire prévisualisé.
+Lors de la prévisualisation de formulaires, ils sont rendus dans l’interface interactive et l’utilisateur peut les remplir avec des données. Lors de la prévisualisation de documents, ils sont rendus en mode non interactif et l’utilisateur peut uniquement afficher le document. Pour les formulaires, une option supplémentaire d’aperçu personnalisé est disponible. Grâce à cette option, vous pouvez prévisualiser le formulaire à l’aide des données d’un fichier XML. Les données remplissent certains champs ou tous les champs du formulaire prévisualisé.
 
 Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les différents types de formulaire pris en charge :
 
@@ -60,7 +59,7 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
 
    Vous avez le choix entre :
 
-   * Aperçu comme HTML
+   * Prévisualiser au format HTML
    * Aperçu avec des données
    * Aperçu au format PDF (disponible pour les modèles de formulaire)
 

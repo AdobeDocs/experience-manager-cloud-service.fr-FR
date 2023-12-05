@@ -2,10 +2,10 @@
 title: Personnalisation et ciblage de contenu
 description: Découvrez comment créer du contenu personnalisé et ciblé avec AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1054'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -88,7 +88,7 @@ Vous pouvez [créer du contenu ciblé](/help/sites-cloud/authoring/personalizati
 
 Un ensemble groupé de composants qui constituent une expérience.
 
-Les [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) sont constitués de contenu et d’informations (style, etc.) permettant de créer une expérience ; ils peuvent être utilisés directement lors de la création de pages. Ils peuvent être considérés comme un sous-ensemble d’une page AEM. Ils permettent aux auteurs et aux autrices de contenu de réutiliser du contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
+[Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) sont constitués de contenu et d’informations (mise en forme, etc.) pour créer une expérience ; ils peuvent être utilisés directement lors de la création de pages. Ils peuvent être considérés comme un sous-ensemble d’une page AEM. Ils permettent aux auteurs et aux autrices de contenu de réutiliser du contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
 
 À titre d’exemple de personnalisation, un titre, une image, une description et un bouton d’appel à l’action peuvent être combinés pour former une expérience de teaser. L’utilisation des Fragments d’expérience est un élément clé de l’utilisation de la personnalisation d’Adobe Target.
 

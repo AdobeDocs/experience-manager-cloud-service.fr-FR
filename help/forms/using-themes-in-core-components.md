@@ -2,10 +2,10 @@
 title: Comment créer et utiliser des thèmes dans Forms adaptatif ?
 description: Vous pouvez utiliser des thèmes pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif à l’aide de composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 18%
+source-wordcount: '2610'
+ht-degree: 17%
 
 ---
 
@@ -60,7 +60,7 @@ La personnalisation d’un thème fait référence au processus de modification 
 
 * Se familiariser avec [configuration d’un pipeline dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) et posséder des connaissances de base sur la configuration d’un pipeline vous aide à gérer et déployer efficacement vos personnalisations de thème.
 * Découvrez comment [configuration d’un utilisateur avec le rôle de contributeur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=fr). Comprendre comment configurer un utilisateur avec le rôle de contributeur vous permet d’accorder les autorisations nécessaires à la personnalisation du thème.
-* Installez la dernière version d’[Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de génération couramment utilisé pour les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
+* Installez la dernière version de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de génération couramment utilisé pour les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
 * Installez un éditeur de texte brut. Par exemple, Microsoft® Visual Studio Code. L’utilisation d’un éditeur de texte brut tel que Microsoft® Visual Studio Code fournit un environnement convivial pour la modification et la modification de fichiers de thème.
 
 ### Configuration de votre environnement
@@ -377,7 +377,7 @@ Les étapes pour appliquer un thème à un formulaire adaptatif sont les suivant
 
 1. Connectez-vous à votre instance de création AEM Forms.
 
-1. Appuyez sur **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Sélectionner **Adobe Experience Manager** > **Forms** > **Forms et documents**.
 
 1. Cliquez sur **Créer** > **Formulaires adaptatifs**. L’assistant de création de formulaires adaptatifs s’ouvre.
 

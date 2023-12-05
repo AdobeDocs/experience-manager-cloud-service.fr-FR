@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 69%
+source-wordcount: '1327'
+ht-degree: 54%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 69%
 * Fragments de formulaire adaptatif
 * Thèmes
 * Modèles de formulaire <!-- (XFA forms) -->
-* PDF forms
+* Formulaires PDF
 * Document (documents de PDF plats)
 * Ensembles de formulaire
 * Ressource (images, schémas et feuilles de style)
@@ -62,19 +62,19 @@ Un élément peut présenter les états suivants :
 1. Connectez-vous au serveur [!DNL AEM Forms].
 1. Utilisez l’une des méthodes suivantes pour sélectionner et publier un élément.
 
-   1. Positionnez le pointeur sur un élément et appuyez sur **[!UICONTROL Publier]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. Effectuez l’une des actions suivantes, puis appuyez sur Publier :
+   1. Déplacez le pointeur sur une ressource et sélectionnez **[!UICONTROL Publier]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. Effectuez l’une des opérations suivantes, puis sélectionnez Publier :
 
-      * Si le mode d’affichage Carte est actif, appuyez sur **[!UICONTROL Passer en mode de sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis sur l’élément. L’élément est sélectionné.
+      * Si le mode Carte est actif, sélectionnez **[!UICONTROL Entrer la sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis sélectionnez la ressource. L’élément est sélectionné.
       * Si vous êtes en mode Liste, cochez la case d’une ressource. L’élément est sélectionné.
-      * Appuyez sur un élément pour en afficher les détails.
+      * Sélectionnez une ressource pour afficher ses détails.
       * Affichez les propriétés d’un élément en appuyant sur Afficher les propriétés ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
       >Ne sélectionnez pas plusieurs éléments. La publication simultanée de plusieurs éléments n’est pas prise en charge.
 
-1. Au lancement de la procédure de publication, une boîte de dialogue de confirmation s’ouvre. Elle répertorie l’ensemble des éléments et des ressources connexes. Dans la boîte de dialogue contenant les éléments connexes, appuyez sur **[!UICONTROL Publier]**. L’élément est publié et la boîte de dialogue Publication réussie apparaît.
+1. Au lancement de la procédure de publication, une boîte de dialogue de confirmation s’ouvre. Elle répertorie l’ensemble des éléments et des ressources connexes. Dans la boîte de dialogue contenant les ressources connexes, sélectionnez **[!UICONTROL Publier]**. L’élément est publié et la boîte de dialogue Publication réussie apparaît.
 
    >[!NOTE]
    >
@@ -99,9 +99,9 @@ Un élément peut présenter les états suivants :
 Procédez comme suit pour publier tous les éléments de Correspondence Management sur un serveur :
 
 1. Connectez-vous au serveur [!DNL AEM Forms].
-1. Appuyez sur **Adobe Experience Manager** dans la barre de navigation générale.
-1. Appuyez sur ![Outils](assets/tools.png) puis sur **Formulaires**.
-1. Appuyez sur **Publier les actifs de gestion correspondance**.
+1. Sélectionner **Adobe Experience Manager** dans la barre de navigation globale.
+1. Sélectionner ![outils](assets/tools.png), puis sélectionnez **Forms**.
+1. Sélectionner **Publication des actifs de Correspondence Management**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -109,7 +109,7 @@ Procédez comme suit pour publier tous les éléments de Correspondence Manageme
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. Appuyez sur **Publier** puis, dans le message de confirmation, appuyez sur **OK**.
+1. Sélectionner **Publier** et, dans le message de confirmation, sélectionnez **OK**.
 
    A la fin du traitement par lot, vous pouvez afficher les détails de la dernière exécution. Cela inclut des informations telles que la connexion de l’administrateur et si le lot a réussi ou échoué.
 
@@ -123,27 +123,27 @@ Procédez comme suit pour publier tous les éléments de Correspondence Manageme
 
 Procédez comme suit pour planifier la date et l’heure de publication et de dépublication des éléments de formulaires et documents :
 
-1. Sélectionnez un élément et appuyez ensuite sur **[!UICONTROL Afficher les propriétés]**. La page Propriétés des métadonnées s’ouvre.
-1. Dans la page Propriétés des métadonnées, appuyez sur **[!UICONTROL Paramètres avancés]**, puis sur **[!UICONTROL Modifier]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Sélectionnez une ressource et sélectionnez **[!UICONTROL Afficher les propriétés]**. La page Propriétés des métadonnées s’ouvre.
+1. Sur la page Propriétés des métadonnées, sélectionnez **[!UICONTROL Avancé]**, puis sélectionnez **[!UICONTROL Modifier]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. Sélectionnez la date et l’heure dans les champs **[!UICONTROL Heure de début de publication]** et **[!UICONTROL Heure de fin de publication]**.\
-   Appuyez sur **[!UICONTROL Terminé]** ![aem6forms_check](assets/aem6forms_check.png).
+   Sélectionner **[!UICONTROL Terminé]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Dépublication d’un élément {#unpublish-an-asset}
 
-1. Sélectionnez un élément publié et appuyez sur **[!UICONTROL Annuler la publication]** ![unpublish](assets/unpublish.png).
+1. Sélectionnez une ressource publiée, puis sélectionnez **[!UICONTROL Dépublier]** ![dépublier](assets/unpublish.png).
 1. Utilisez l’une des actions suivantes pour sélectionner et dépublier un élément.
 
-   1. Positionnez le pointeur sur un élément et appuyez sur **[!UICONTROL Annuler la publication]** ![unpublish](assets/unpublish.png).
-   1. Effectuez l’une des actions suivantes, puis appuyez sur Dépublier :
+   1. Déplacez le pointeur sur une ressource et sélectionnez **[!UICONTROL Dépublier]** ![dépublier](assets/unpublish.png).
+   1. Effectuez l’une des opérations suivantes, puis sélectionnez Annuler la publication :
 
-      * Si le mode d’affichage Carte est actif, appuyez sur **[!UICONTROL Passer en mode de sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis sur l’élément. L’élément est sélectionné.
+      * Si le mode Carte est actif, sélectionnez **[!UICONTROL Entrer la sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis sélectionnez la ressource. L’élément est sélectionné.
 
-      * Si la vue Liste est active, placez le pointeur de la souris sur un élément et appuyez sur ![selectassetcheckmark](assets/selectassetcheckmark.png). L’élément est sélectionné.
+      * Si vous êtes en mode Liste, passez la souris sur une ressource et sélectionnez ![selectassetcheckmark](assets/selectassetcheckmark.png) . L’élément est sélectionné.
 
-      * Appuyez sur un élément pour en afficher les détails.
+      * Sélectionnez une ressource pour afficher ses détails.
       * Affichez les propriétés d’un élément en appuyant sur Afficher les propriétés ![viewproperties](assets/viewproperties.png).
 
-1. Au lancement de la procédure de dépublication, une boîte de dialogue de confirmation s’ouvre. Appuyez sur **[!UICONTROL Dépublier]**.
+1. Au lancement de la procédure de dépublication, une boîte de dialogue de confirmation s’ouvre. Sélectionner **[!UICONTROL Dépublier]**.
 
    >[!NOTE]
    >
@@ -157,8 +157,8 @@ Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifi
 >
 >Ne pas rétablir l’état de publication d’une lettre si une ressource dépendante utilisée dans cette lettre publiée est supprimée du système.
 
-1. Sélectionnez un élément et appuyez sur **[!UICONTROL Restaurer la version publiée précédemment]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. Avant que l’élément ne soit rétabli, une boîte de dialogue de confirmation s’affiche. Appuyez sur **[!UICONTROL Rétablir]**.
+1. Sélectionnez une ressource et sélectionnez **[!UICONTROL Revenir à la version précédemment publiée]** ![inverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Avant que l’élément ne soit rétabli, une boîte de dialogue de confirmation s’affiche. Sélectionner **[!UICONTROL Rétablir]**.
 
    La version précédemment publiée de l’élément ou de la lettre est rétablie.
 
@@ -168,17 +168,17 @@ Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifi
 >
 >La suppression d’une ressource la supprime de l’instance de publication. La suppression d’une ressource supprime également son historique des versions, à l’exception de la version de base.
 
-1. Sélectionnez un élément et appuyez sur **[!UICONTROL Supprimer]** ![delete](assets/delete.png).
+1. Sélectionnez une ressource et sélectionnez **[!UICONTROL Supprimer]** ![delete](assets/delete.png).
 
    >[!NOTE]
    >
    >L’option de suppression est également disponible quand vous affichez les détails de l’élément en appuyant sur l’élément ou quand vous affichez les propriétés d’un élément en appuyant sur Afficher les propriétés ![viewproperties](assets/viewproperties.png).
 
-1. Avant que l’élément soit supprimé, une boîte de dialogue de confirmation s’affiche. Appuyez sur **[!UICONTROL Supprimer]**.
+1. Avant que l’élément soit supprimé, une boîte de dialogue de confirmation s’affiche. Sélectionnez **[!UICONTROL Supprimer]**.
 
    >[!NOTE]
    >
-   >Seul l’élément sélectionné est supprimé et les éléments dépendants ne sont pas supprimés. Pour vérifier les références d’un élément, appuyez sur ![références](assets/references.png) puis sélectionnez un élément.
+   >Seul l’élément sélectionné est supprimé et les éléments dépendants ne sont pas supprimés. Pour vérifier les références d’une ressource, sélectionnez ![références](assets/references.png) puis sélectionnez une ressource.
    >
    >
    >Si la ressource que vous tentez de supprimer est une ressource enfant d’une autre ressource, elle n’est pas supprimée. Pour supprimer une telle ressource, supprimez les références de cette ressource des autres ressources, puis réessayez.

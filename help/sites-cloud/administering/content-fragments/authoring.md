@@ -4,10 +4,10 @@ description: Découvrez comment créer du contenu pour vos fragments de contenu,
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2267'
-ht-degree: 5%
+source-wordcount: '2266'
+ht-degree: 4%
 
 ---
 
@@ -241,7 +241,7 @@ Le champ multiligne s’ouvre alors en plein écran et :
 
 * les différences sont indiquées par la couleur :
 
-   * le contenu ajouté figure en vert (ajouté à la variation) ;
+   * le vert indique le contenu ajouté (à la variation)
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
 
@@ -472,7 +472,7 @@ La variable **Champs** répertorie tous les champs du fragment de contenu. L’i
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Espace réservé pour tabulation</b></p><p>Même si elle n’est pas représentée par une icône réelle, une <b>Espace réservé de tabulation</b> est représenté dans le panneau de gauche. <br>Il est également représenté dans le panneau central, horizontalement comme affiché, ou dans une liste déroulante (s’il y en a trop à afficher horizontalement).</p> </td>
+   <td><p><b>Espace réservé pour tabulation</b></p><p>Même si elle n’est pas représentée par une icône réelle, une <b>Espace réservé de tabulation</b> est représenté dans le panneau de gauche. <br>Il est également représenté dans le panneau central, horizontalement comme affiché, ou dans une liste déroulante (lorsqu’il y en a trop à afficher horizontalement).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>

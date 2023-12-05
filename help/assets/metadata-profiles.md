@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 100%
+source-wordcount: '1396'
+ht-degree: 92%
 
 ---
 
@@ -27,14 +27,14 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**, puis cliquez sur **[!UICONTROL Créer]**.
-1. Saisissez un titre pour le profil de métadonnées (Exemple de métadonnées, par exemple), puis appuyez sur **[!UICONTROL Envoyer]**. La page Modifier le formulaire pour le profil de métadonnées s’affiche.
-1. Cliquez sur un composant, puis configurez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**. Cliquez par exemple sur le composant **[!UICONTROL Description]** et modifiez ses propriétés.
+1. Saisissez un titre pour le profil de métadonnées, par exemple, Exemples de métadonnées, puis sélectionnez **[!UICONTROL Envoyer]**. La page Modifier le formulaire pour le profil de métadonnées s’affiche.
+1. Cliquez sur un composant et configurez ses propriétés dans le **[!UICONTROL Paramètres]** . Par exemple, cliquez sur le bouton **[!UICONTROL Description]** et modifiez ses propriétés.
 Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]** :
 
    * **[!UICONTROL Libellé du champ]** : nom sous lequel s’affiche la propriété des métadonnées. Il est uniquement disponible à titre de référence.
-   * **[!UICONTROL Associer à la propriété]** : la valeur de cette propriété fournit le nom/chemin relatif au nœud de la ressource où elle est enregistrée dans le référentiel. Cette valeur doit toujours commencer par `./`, car cela indique que le chemin d’accès se situe sous le nœud de la ressource.
+   * **[!UICONTROL Associer à la propriété]** - La valeur de cette propriété fournit le chemin/nom relatif au noeud de ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par `./` car cela indique que le chemin d’accès se trouve sous le nœud de la ressource.
 
-     La valeur que vous indiquez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom pour **[!UICONTROL Associer à la propriété]**, [!DNL Adobe Experience Manager Assets] stocke la valeur `dc:desc` comme nœud de métadonnées de la ressource.
+     La valeur que vous spécifiez pour **[!UICONTROL Mapper à la propriété]** est conservée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez `/jcr:content/metadata/dc:desc` comme nom pour **[!UICONTROL Associer à la propriété]**, [!DNL Adobe Experience Manager Assets] stocke la valeur `dc:desc` comme nœud de métadonnées de la ressource.
 
    * **[!UICONTROL Valeur par défaut]** : utilisez cette propriété pour ajouter une valeur par défaut pour le composant des métadonnées. Par exemple, si vous indiquez « Ma description », cette valeur est affectée à la propriété `dc:desc` au niveau du nœud de métadonnées de la ressource.
 
@@ -42,7 +42,7 @@ Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]
      >
      >Si vous ajoutez une valeur par défaut à une nouvelle propriété de métadonnées (qui n’existe pas au niveau du nœud `/jcr:content/metadata`), la propriété et sa valeur ne s’affichent pas, par défaut, sur la page Propriétés de la ressource. Pour afficher la nouvelle propriété sur la page [!UICONTROL Propriétés], modifiez le formulaire de schéma correspondant.
 
-1. (Facultatif) Ajoutez d’autres composants à la page Modifier le formulaire depuis l’onglet **[!UICONTROL Créer le formulaire]**, puis configurez leurs propriétés dans l’onglet **[!UICONTROL Paramètres]**. Les propriétés suivantes sont disponibles à partir de l’onglet **[!UICONTROL Créer le formulaire]** :
+1. (Facultatif) Ajoutez d’autres composants au formulaire à modifier depuis l’onglet **[!UICONTROL Créer un formulaire]**, puis configurez leurs propriétés dans l’onglet **[!UICONTROL Paramètres]**. Les propriétés suivantes sont disponibles dans l’onglet **[!UICONTROL Créer un formulaire]** :
 
 | Composant | Propriétés |
 |------------------|----------------------------------------------------|
@@ -90,12 +90,12 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 1. Accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à appliquer à un ou à plusieurs dossiers.
-1. Cliquez sur **[!UICONTROL Appliquer le profil de métadonnées au ou aux dossiers]** et sélectionnez ensuite le ou les dossiers que vous souhaitez utiliser pour recevoir les ressources récemment chargées. Ensuite, cliquez sur **[!UICONTROL Terminé]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Cliquez sur **[!UICONTROL Application d’un profil de métadonnées à des dossiers]** et sélectionnez le ou les dossiers que vous souhaitez utiliser pour recevoir les ressources récemment chargées, puis cliquez sur **[!UICONTROL Terminé]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 #### Application de profils de métadonnées aux dossiers à partir des propriétés {#applying-metadata-profiles-to-folders-from-properties}
 
 1. Dans le rail de gauche, cliquez sur **[!UICONTROL Ressources]**, puis accédez au dossier auquel vous souhaitez appliquer un profil de métadonnées.
-1. Dans le dossier, cliquez sur la coche afin de la sélectionner, puis cliquez sur **Propriétés**.
+1. Dans le dossier, sélectionnez sa coche pour le sélectionner, puis **Propriétés**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, sélectionnez le profil dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 ### Application d’un profil de métadonnées à l’ensemble des ressources {#applying-a-metadata-profile-globally}
@@ -108,7 +108,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 * Accédez à `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` et appliquez le profil approprié, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
-* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Cliquez sur **Enregistrer tout**.
+* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajouter la propriété `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Cliquez sur **Enregistrer tout**.
 
 ## Suppression d’un profil de métadonnées d’un dossier {#removing-a-metadata-profile-from-folders}
 
@@ -120,7 +120,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 1. Cliquez sur le logo Experience Manager et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
-1. Cliquez sur **[!UICONTROL Supprimer le profil de métadonnées du ou des dossiers]**, puis sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil. Ensuite, cliquez sur **[!UICONTROL Terminé]**.
+1. Cliquez sur **[!UICONTROL Suppression d’un profil de métadonnées d’un dossier]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer un profil, puis cliquez sur **[!UICONTROL Terminé]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil de métadonnées n’est plus appliqué à un dossier.
 

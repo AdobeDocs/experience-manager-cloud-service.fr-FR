@@ -2,10 +2,10 @@
 title: Restauration de contenu dans AEM as a Cloud Service
 description: Découvrez comment restaurer votre contenu AEM as a Cloud Service à partir de la sauvegarde à l’aide de Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 60%
+source-wordcount: '1157'
+ht-degree: 57%
 
 ---
 
@@ -111,7 +111,7 @@ La variable **Restaurer l’activité** La liste affiche l’état des dix deman
 
 ![Restaurer l’activité](assets/backup-activity.png)
 
-En cliquant sur l’icône d’informations d’une sauvegarde, vous pouvez télécharger les journaux de cette sauvegarde et inspecter les détails du code, y compris les différences entre l’instantané et les données au moment où la restauration a été lancée.
+En cliquant sur l’icône d’informations d’une sauvegarde, vous pouvez télécharger les journaux de cette sauvegarde et examiner les détails du code, y compris les différences entre l’instantané et les données au moment où la restauration a été lancée.
 
 ## Sauvegarde hors site {#offsite-backup}
 

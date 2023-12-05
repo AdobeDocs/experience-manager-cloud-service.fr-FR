@@ -4,10 +4,10 @@ description: La révision est un mécanisme qui permet aux réviseurs d’effect
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 88%
+source-wordcount: '338'
+ht-degree: 83%
 
 ---
 
@@ -25,7 +25,7 @@ En suivant l’[Étape Attribuer](https://experienceleague.adobe.com/docs/experi
 1. Ouvrez votre instance de création en mode d’édition.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]** > **[!UICONTROL Créer]** > **[!UICONTROL Créer un modèle]**.
 1. Indiquez le titre du workflow et ajoutez l’étape **[Affecter une tâche]**.
-1. Appuyez sur ![settings_icon](assets/settings_icon.png) dans la barre d’actions. La boîte de dialogue **[!UICONTROL Affecter une tâche]** s’ouvre.
+1. Sélectionner ![settings_icon](assets/settings_icon.png) dans la barre d’actions. La boîte de dialogue **[!UICONTROL Affecter une tâche]** s’ouvre.
 1. Ouvrez l’onglet [!UICONTROL Formulaire et document], ouvrez le menu déroulant [!UICONTROL Pré-renseigné] et indiquez :
 
    * Sélectionner le fichier de données d’entrée en utilisant
@@ -44,7 +44,7 @@ En suivant l’[Étape Attribuer](https://experienceleague.adobe.com/docs/experi
 Maintenant, configurez l’action Envoyer d’un composant Conteneur de formulaires adaptatifs sur la page Sites :
 
 1. Accédez à la page Sites.
-1. Appuyez sur l’icône ![settings_icon](assets/settings_icon.png) d’un conteneur de formulaires adaptatifs. Le **[!UICONTROL conteneur de formulaires adaptatifs]** s’ouvre.
+1. Sélectionner ![settings_icon](assets/settings_icon.png) d’un conteneur de formulaires adaptatifs. Le **[!UICONTROL conteneur de formulaires adaptatifs]** s’ouvre.
 1. Ouvrez l’onglet **[!UICONTROL Envoi]** et indiquez l’**[!UICONTROL Action Envoyer]** pour [Appeler un wokflow AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow?lang=fr).
 
 1. Pour enregistrer les paramètres, cliquez sur [Terminé].

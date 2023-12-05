@@ -2,10 +2,10 @@
 title: Externalisation d’URL
 description: L’externaliseur est un service OSGi qui vous permet de transformer par programmation un chemin d’accès aux ressources en une URL absolue et externe.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 84%
+source-wordcount: '630'
+ht-degree: 83%
 
 ---
 
@@ -99,7 +99,7 @@ Cette section illustre quelques exemples d’utilisation du service Externalizer
 
 >[!NOTE]
 >
->Aucun lien absolu ne doit être créé dans le contexte du code HTML. Par conséquent, cet utilitaire ne doit pas être utilisé dans de tels cas.
+>Aucun lien absolu ne doit être créé dans le contexte du code HTML. Par conséquent, n’utilisez pas cet utilitaire dans de tels cas.
 
 * **Pour externaliser un chemin d’accès avec le domaine « publish » :**
 

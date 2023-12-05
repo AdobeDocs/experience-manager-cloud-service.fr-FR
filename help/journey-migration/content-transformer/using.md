@@ -2,10 +2,10 @@
 title: Utilisation du Transformateur de contenu
 description: Découvrez comment transformer votre structure de contenu en vue de la migration vers AEM as a Cloud Service.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 87%
+source-wordcount: '630'
+ht-degree: 75%
 
 ---
 
@@ -55,7 +55,7 @@ Le Transformateur de contenu est fourni avec l’[Outil de transfert de contenu]
 1. Vous pouvez sélectionner tous les problèmes ou des problèmes spécifiques et les déplacer, les supprimer ou les renommer pour les résoudre. Des chemins personnalisés peuvent également être ajoutés à l’aide du bouton **Ajouter des chemins** dans le coin supérieur droit.
 
    >[!NOTE]
-   > Lors de l’utilisation de l’opération de déplacement, il est recommandé de déplacer tous les chemins vers un seul dossier (par exemple, sous `/etc/packages/content-transformation/paths`). Ainsi, lorsque les packages de sauvegarde sont installés pour ramener l’instance à son état d’origine, le dossier (`/etc/packages/content-transformation/paths`) peut être supprimé à l’aide de l’opération de suppression afin de réduire la taille du référentiel.
+   > Lors de l’utilisation de l’opération de déplacement, il est recommandé de déplacer tous les chemins vers un seul dossier (par exemple, sous `/etc/packages/content-transformation/paths`), donc, lorsque les packages de sauvegarde sont installés pour ramener l’instance à l’état d’origine, le dossier (`/etc/packages/content-transformation/paths`) peut être supprimé à l’aide de l’opération remove pour réduire la taille du référentiel.
 
    ![image](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![image](/help/journey-migration/content-transformer/assets/ct-6.png)
@@ -63,7 +63,7 @@ Le Transformateur de contenu est fourni avec l’[Outil de transfert de contenu]
    >[!NOTE]
    > Toute opération pouvant modifier le contenu source (`move`/`remove`/`rename`) crée par défaut un package de sauvegarde des chemins sources sous `/etc/packages/content-transformation` avant la transformation. Bien que chaque boîte de dialogue d’opération dispose d’une option pour désactiver/activer la création de package de sauvegarde, il est strictement recommandé de toujours activer la création de package.
 
-1. Un exemple de package de sauvegarde créé pour l’opération de déplacement des chemins est présenté ci-dessous. Cliquez sur Installer pour rétablir les chemins sources. L’installation ramène uniquement les chemins source à leur emplacement d’origine et ne supprime pas les chemins dans lesquels ils ont été déplacés pendant la transformation. Pour supprimer les chemins dans l’emplacement déplacé, cliquez sur **Ajouter des chemins** pour ajouter l’emplacement (par exemple, `/etc/packages/content-transformation/paths`), sélectionnez l’emplacement et cliquez sur **Supprimer**.
+1. Un exemple de package de sauvegarde créé pour l’opération de déplacement des chemins est présenté ci-dessous. Cliquez sur Installer pour rétablir les chemins sources. L’installation ramène uniquement les chemins source à leur emplacement d’origine et ne supprime pas les chemins dans lesquels ils ont été déplacés pendant la transformation. Pour supprimer les chemins à l’emplacement déplacé, cliquez sur **Ajouter des chemins** pour ajouter l’emplacement (par exemple, `/etc/packages/content-transformation/paths`), sélectionnez l’emplacement et cliquez sur **Supprimer**.
 
    >[!CAUTION]
    > Ne supprimez pas `/etc/packages/content-transformation`, car il s’agit de l’emplacement où se trouvent les packages de sauvegarde. Vous pourrez supprimer cet emplacement uniquement lorsque vous aurez la certitude de ne plus avoir besoin de ces packages. Cela vous permettra de réduire la taille du référentiel.

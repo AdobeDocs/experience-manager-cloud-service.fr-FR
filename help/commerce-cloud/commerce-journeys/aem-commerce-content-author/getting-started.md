@@ -1,11 +1,11 @@
 ---
 title: Prise en main de la création de contenu à lʼaide de lʼextension CIF
-description: Prise en main de la création de contenu à lʼaide de lʼextension CIF.
+description: Prise en main de la création CIF.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 55%
+ht-degree: 54%
 
 ---
 

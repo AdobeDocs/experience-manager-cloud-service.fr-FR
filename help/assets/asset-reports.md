@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 100%
+source-wordcount: '935'
+ht-degree: 96%
 
 ---
 
@@ -105,7 +105,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
    ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/custom_columns.png)
 
 1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
-1. Sur la page [!UICONTROL Rapports de ressources], l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport ; par exemple [!UICONTROL Réussite], [!UICONTROL Échec], [!UICONTROL En file d’attente] ou [!UICONTROL Planifié]. Le même état s’affiche dans la boîte de réception des notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
+1. Sur le [!UICONTROL Rapports de ressources] , l’état de génération de rapport est basé sur l’état actuel de la tâche de rapport, par exemple : [!UICONTROL Succès], [!UICONTROL En échec], [!UICONTROL En file d&#39;attente], ou [!UICONTROL Planifié]. Le même état s’affiche dans la boîte de réception des notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
 
    ![Un rapport généré](assets/report_page.png)
 
@@ -115,7 +115,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
    >
    >Vous pouvez générer des rapports en fonction des événements générés au cours des 360 derniers jours. Experience Manager conserve les données d’ID utilisateur pendant 30 jours.
 
-## Ajout de colonnes personnalisées  aux rapports {#add-custom-columns}
+## Ajout de colonnes personnalisées aux rapports {#add-custom-columns}
 
 Vous pouvez également ajouter des colonnes personnalisées à ces rapports pour adapter l’affichage des données à vos besoins :
 

@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -108,7 +108,7 @@ L’explorateur de ressources est un onglet du panneau latéral (de même que l�
 
 ![Bascule du panneau latéral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez l’onglet **Ressources** si nécessaire.
+Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez la variable **Ressources** si nécessaire.
 
 ![Bouton de l’explorateur de ressources](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -125,7 +125,7 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
 >[!NOTE]
 >
->Vous pouvez agir ainsi pour des ressources et des types de composants spécifiques. Voir [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) pour en savoir plus.
+>Cette option est disponible pour des ressources et des types de composants spécifiques. Voir [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) pour plus d’informations.
 
 Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouvez filtrer les ressources en procédant comme suit :
 
@@ -224,9 +224,9 @@ Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez *
 
 Sélectionnez le type de référence approprié pour en savoir plus. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence particulière, notamment :
 
-* **Liens entrants**, fournit la liste de pages qui font référence à cette page, ainsi qu’un lien direct vers l’option **Modifier** pour l’une de ces deux pages lorsque vous sélectionnez un lien spécifique..
+* **Liens entrants**, fournit une liste des pages qui font référence à la page, ainsi qu’un accès direct à **Modifier** l’une de ces pages lorsque vous sélectionnez un lien spécifique.
 
-   * Cela peut uniquement afficher des liens statiques, et non des liens générés dynamiquement, par exemple à partir du composant Liste .
+   * Cela peut uniquement afficher des liens statiques, et non des liens générés dynamiquement, par exemple, à partir du composant Liste .
 
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md) donne accès aux lancements associés.

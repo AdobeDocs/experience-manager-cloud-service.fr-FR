@@ -2,10 +2,10 @@
 title: Prise en main des SPA dans AEM avec Angular
 description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre en main votre propre SPA rapidement à l’aide de la structure d’Angular.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 90%
+source-wordcount: '981'
+ht-degree: 88%
 
 ---
 
@@ -266,7 +266,7 @@ Enfin, l’image peut être rendue dans `image.component.html`.
 
 Il est régulièrement nécessaire que les composants d’une application sur une seule page partagent des informations. Il existe plusieurs méthodes recommandées pour cela, énumérées ci-dessous dans un ordre de complexité croissant.
 
-* **Option 1 :** centralisez la logique et procédez à une diffusion vers les composants nécessaires ; par exemple, en utilisant une classe util comme solution orientée objet pure.
+* **Option 1 :** Centralisez la logique et procédez à une diffusion vers les composants nécessaires, par exemple en utilisant une classe util comme solution orientée objet pure.
 * **Option 2 :** partagez des états de composant en utilisant une bibliothèque d’états telle que NgRx.
 * **Option 3 :** tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
 

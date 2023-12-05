@@ -2,10 +2,10 @@
 title: Comment créer et utiliser des thèmes pour mettre en forme un formulaire adaptatif ?
 description: Utilisez les thèmes de formulaire adaptatif pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5578'
-ht-degree: 98%
+source-wordcount: '5558'
+ht-degree: 97%
 
 ---
 
@@ -362,7 +362,7 @@ Lorsque vous sélectionnez un composant dans la zone de travail, la barre d’ou
 * **[!UICONTROL Widget de zone numérique]** : vous permet de sélectionner le composant pour personnaliser son aspect dans la barre latérale.
 * **[!UICONTROL Widget de champ]** : vous permet de sélectionner le composant générique pour la mise en forme. Dans cet exemple, tous les composants de saisie de texte (zone de texte/zone numérique/exécution numérique pas à pas/saisie de date) sont sélectionnés pour la mise en forme.
 
-* ![field-level](assets/select_parent_icon.svg) : permet de sélectionner le composant parent pour la mise en forme. Si vous sélectionnez une zone numérique et appuyez sur cette icône, le composant de champ est sélectionné. Si vous sélectionnez le composant de champ et appuyez sur cette icône, le panneau est sélectionné. Si vous continuez à appuyer sur cette icône pour la sélection, vous finissez par sélectionner le style de la mise en forme.
+* ![field-level](assets/select_parent_icon.svg) : permet de sélectionner le composant parent pour la mise en forme. Si vous sélectionnez une zone numérique et cliquez sur cette icône, le composant de champ est sélectionné. Si vous sélectionnez un composant de champ et que vous sélectionnez cette icône, le panneau est sélectionné. Si vous continuez à appuyer sur cette icône pour la sélection, vous finissez par sélectionner le style de la mise en forme.
 
 >[!NOTE]
 >
@@ -588,7 +588,7 @@ Pour copier un thème, procédez comme suit :
 
 1. Dans l’instance de création, accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Thèmes]**.
 1. Ouvrez le dossier de la bibliothèque des thèmes.
-1. Dans le dossier de la bibliothèque de thèmes, placez le pointeur sur le thème prêt à l’emploi correspondant, puis appuyez sur **[!UICONTROL Copier]**.
+1. Dans le dossier de la bibliothèque de thèmes, placez le pointeur sur le thème prêt à l’emploi correspondant, puis sélectionnez **[!UICONTROL Copier]**.
 1. Collez le thème copié en dehors du dossier de la bibliothèque de thèmes.
 1. Personnalisez le thème copié.
 

@@ -3,10 +3,10 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2023.11.0
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: e2ab119315e18bbef40efb712bdf6397cfa8adfc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 51%
+source-wordcount: '143'
+ht-degree: 50%
 
 ---
 
@@ -18,11 +18,11 @@ Cette page présente les notes de mise à jour pour les outils de migration dans
 
 ### Date de publication {#release-date-ctt}
 
-La date de publication de l’outil de transfert de contenu version v3.0.6 est le 21 novembre 2023.
+La date de publication de l’outil de transfert de contenu v3.0.6 est le 21 novembre 2023.
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Cloud Acceleration Manager (CAM) a été mis à jour afin de démarrer automatiquement une ingestion une fois l’extraction d’un jeu de migration terminée.  L’utilisateur n’a plus à attendre que l’extraction soit terminée pour lancer manuellement l’ingestion. Pour plus d’informations sur les assimilations de contenu dans CAM, voir [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process)
+* Cloud Acceleration Manager (CAM) a été mis à jour afin de démarrer automatiquement une ingestion une fois l’extraction d’un jeu de migration terminée. L’utilisateur n’a plus à attendre que l’extraction soit terminée pour lancer manuellement l’ingestion. Pour plus d’informations sur les assimilations de contenu dans CAM, voir [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process).
 
 ### Correctifs {#bug-fixes-ctt}
 

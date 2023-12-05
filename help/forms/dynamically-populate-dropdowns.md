@@ -5,10 +5,10 @@ uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 53%
+source-wordcount: '337'
+ht-degree: 49%
 
 ---
 
@@ -146,7 +146,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
    ![Création d’un nœud de liste déroulante](assets/dropdown-node.png)
 
-1. Regroupez le noeud de contenu et incorporez le fichier .jar à un emplacement spécifique (par exemple /apps/myfolder/demo/install/). Déployez le même fichier sur le serveur.
+1. Regroupez le noeud de contenu et incorporez le fichier .jar à un emplacement spécifique (par exemple, /apps/myfolder/demo/install/). Déployez le même fichier sur le serveur.
 1. Créez un formulaire adaptatif et ajoutez deux listes déroulantes, Pays et État, à ce dernier. La liste Pays peut inclure les noms des pays. La liste Etat peut remplir de manière dynamique les noms des états du pays sélectionné dans la première liste.
 
    Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir en fonction du nom du pays dans la liste Pays.
@@ -176,4 +176,4 @@ Le package de contenu qui contient un exemple de formulaire adaptatif (demo/AFde
 
 >[!MORELIKETHIS]
 >
->* [Préremplissage des champs de formulaires adaptatifs](/help/forms/prepopulate-adaptive-form-fields.md)
+>* [Préremplir les champs de formulaire adaptatif](/help/forms/prepopulate-adaptive-form-fields.md)

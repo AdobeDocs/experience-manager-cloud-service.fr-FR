@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 85%
+source-wordcount: '1329'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 85%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-Vous pouvez télécharger des ressources, dont des rendus statiques et dynamiques. Vous pouvez également envoyer des liens vers des ressources par courrier électronique, directement depuis [!DNL Adobe Experience Manager Assets]. Les ressources téléchargées sont compressées dans un fichier ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
+Vous pouvez télécharger des ressources, dont des rendus statiques et dynamiques. Vous pouvez également envoyer des liens vers des ressources par courrier électronique, directement depuis [!DNL Adobe Experience Manager Assets]. Les ressources téléchargées sont regroupées dans un fichier ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 <!--
 >[!NOTE]
@@ -40,7 +40,7 @@ Vous pouvez télécharger des ressources à partir d’Experience Manager à l�
 
 ## Télécharger des ressources à l’aide de l’interface [!DNL Experience Manager]  {#download-assets}
 
-Experience Manager optimise l’expérience de téléchargement en fonction de la quantité et de la taille des ressources. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] télécharge directement les requêtes de ressources uniques pour le fichier original au lieu de compresser les ressources uniques dans une archive ZIP afin de permettre des téléchargements plus rapides. Experience Manager prend en charge les téléchargements volumineux avec des requêtes asynchrones. Les demandes de téléchargement d’une taille supérieure à 100 Go sont divisées en plusieurs archives ZIP d’une taille maximale de 100 Mo chacune.
+Experience Manager optimise l’expérience de téléchargement en fonction de la quantité et de la taille des ressources. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] télécharge directement les requêtes de ressources uniques pour le fichier original au lieu de compresser les ressources uniques dans une archive ZIP afin de permettre des téléchargements plus rapides. Experience Manager prend en charge les téléchargements volumineux avec des requêtes asynchrones. Les requêtes de téléchargement dʼune taille supérieure à 100 Go sont divisées en plusieurs archives ZIP, dʼune taille maximale de 100 Go chacune.
 
 Par défaut, [!DNL Experience Manager] déclenche une notification dans la [[!DNL Experience Manager] Boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) lorsque qu’une archive de téléchargement est générée.
 
@@ -139,7 +139,7 @@ Pour activer la variable `OnOffTimeAssetAccessFilter` , vous devez créer une co
 1. Dans le code de votre projet dans Git, créez un fichier de configuration à l’adresse `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Le fichier doit contenir `{}` comme son contenu, ce qui signifie une configuration OSGi vide pour le composant OSGi correspondant. Cette action active le service.
 1. Déployez votre code, y compris cette nouvelle configuration, via [!DNL Cloud Manager].
 1. Une fois déployé, les rendus et les métadonnées sont accessibles en fonction des paramètres d’heure d’activation/de désactivation des ressources. Si la date ou l’heure actuelle est antérieure à l’heure actuelle ou après l’heure de désactivation, un message d’erreur s’affiche.
-Pour plus d’informations sur l’ajout d’une configuration OSGi vide, reportez-vous à cette section [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr).
+Pour plus d’informations sur l’ajout d’une configuration OSGi vide, voir ceci [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr).
 
 ## Conseils et restrictions {#tips-limitations}
 

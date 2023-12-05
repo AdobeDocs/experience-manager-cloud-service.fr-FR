@@ -3,10 +3,10 @@ title: Déploiement sur AEM as a Cloud Service
 description: Découvrez les principes de base et les bonnes pratiques de déploiement dans AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3470'
-ht-degree: 99%
+source-wordcount: '3429'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ Les modifications d’application dues au modèle de déploiement étant activé
 
 Pour les clients et clientes qui disposent de bases de code, il est essentiel de passer par l’exercice de restructuration du référentiel décrit dans la documentation d’AEM en vue de s’assurer que le contenu qui se trouvait auparavant sous /etc est déplacé vers le bon emplacement.
 
-Certaines restrictions supplémentaires s’appliquent à ces packages de code, les [hooks d’installation](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont par exemple pas pris en charge.
+Certaines restrictions supplémentaires s’appliquent à ces modules de code, par exemple : [installer des hooks](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas prises en charge.
 
 ## Configuration OSGI {#osgi-configuration}
 
@@ -108,7 +108,7 @@ Après le basculement vers la nouvelle version de l’application :
    * Dossiers (ajout, modification, suppression)
    * Modèles modifiables (ajout, modification, suppression)
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
-   * Scripts (les packages peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de package : Consultez la [documentation Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sur les hooks d’installation. AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs et administratrices, aux utilisateurs et utilisatrices système et aux membres du groupe administrateurs).
+   * Scripts (les packages peuvent déclencher des hooks d’installation à différentes étapes du processus d’installation du package. Consultez la [documentation Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sur les hooks d’installation. AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs et administratrices, aux utilisateurs et utilisatrices système et aux membres du groupe administrateurs).
 
 Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été réalisée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
@@ -134,7 +134,7 @@ Dans les cas suivants, il est préférable d’utiliser l’approche du codage m
   >
   >La définition des listes de contrôle d’accès requiert que les structures de nœud soient déjà présentes. Par conséquent, il peut être nécessaire de créer au préalable des instructions de chemin.
 
-* Ajout d’un chemin (par exemple, pour les structures de dossiers racine)
+* Ajouter un chemin (par exemple, pour les structures de dossiers racine)
 * Ajout de CND (définitions de types de nœuds)
 
 Il est préférable d’opter pour repoinit pour ces scénarios de modification de contenu pris en charge en raison des avantages suivants :
@@ -295,7 +295,7 @@ Dans les solutions AEM existantes, les clients et les clientes peuvent exécuter
 
 AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécution disponibles et sur la manière dont les bundles OSGI et la configuration OSGI peuvent être mappés sur ces modes :
 
-* Les modes d’exécution de configuration OSGI doivent faire référence au RDE, au développement, à l’évaluation, à la production de l’environnement, ou à la création et à la publication pour le service. La combinaison de `<service>.<environment_type>` est prise en charge, alors que ces environnements doivent être utilisés dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Les modes d’exécution de configuration OSGI doivent faire référence au RDE, au développement, à l’évaluation, à la production de l’environnement, ou à la création et à la publication pour le service. Une combinaison de `<service>.<environment_type>` est pris en charge, alors que ces environnements doivent être utilisés dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le package de contenu sous `install.author` ou `install.publish`.
 
 AEM as a Cloud Service ne permet pas d’utiliser des modes d’exécution pour installer du contenu destiné à des environnements ou des services spécifiques. Si un environnement de développement doit être alimenté avec des données ou un HTML qui ne se trouvent pas dans les environnements d’évaluation ou de production, le gestionnaire de modules peut être utilisé.

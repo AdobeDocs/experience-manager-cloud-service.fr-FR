@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '1870'
 ht-degree: 95%
 
 ---
@@ -266,7 +266,7 @@ Pour initialiser les composants principaux de CIF et Peregrine basés sur React,
        useDataLayerEvents();
    
        useEffect(() => {
-           // implement a proper marketing opt-in, for demo purpose we hard-set the consent cookie
+           // implement a proper marketing opt-in, for demo purpose you hard-set the consent cookie
            if (document.cookie.indexOf('mg_dnt') < 0) {
                document.cookie += '; mg_dnt=track';
            }
@@ -502,6 +502,6 @@ __Événements XDM de profil :__
 Pour plus d’informations, consultez les ressources suivantes :
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- Présentation d’[[!DNL Data Connection]  ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] aperçu](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
 - [[!DNL Data Connection] Événements](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Vue d’ensemble d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)

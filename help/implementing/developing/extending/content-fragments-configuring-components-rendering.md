@@ -2,10 +2,10 @@
 title: Fragments de contenu – Configuration des composants pour le rendu
 description: Fragments de contenu – Configuration des composants pour le rendu
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 96%
+source-wordcount: '519'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Pour ce faire, définissez la [Configuration du composant de fragment de contenu
 Ces informations sont requises dans les cas suivants :
 
 * Vous devez mettre en œuvre votre propre composant basé sur les fragments de contenu.
-* Vous devez utiliser les services avancés.
+* Et doivent utiliser les services avancés.
 
 Adobe recommande d’utiliser les composants principaux.
 

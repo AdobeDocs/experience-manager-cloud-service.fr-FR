@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3528'
+source-wordcount: '3555'
 ht-degree: 99%
 
 ---
@@ -178,7 +178,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 #### Application de profils d’image Dynamic Media aux dossiers à partir des propriétés {#applying-image-profiles-to-folders-from-properties}
 
-1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Ressources]**.
+1. Sélectionnez le logo du Experience Manager et accédez à **[!UICONTROL Ressources]**.
 1. Accédez à un *dossier* (et non à une ressource) auquel vous souhaitez appliquer un profil d’image.
 1. Selon l’affichage dossier dans lequel vous êtes, procédez comme suit :
    * En mode Carte, placez le pointeur sur le dossier, puis cochez la case pour le sélectionner.

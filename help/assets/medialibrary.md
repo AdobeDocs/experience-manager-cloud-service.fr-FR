@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 100%
+source-wordcount: '578'
+ht-degree: 95%
 
 ---
 
@@ -94,7 +94,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez le service clientèle.
 
-Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL Asset], de sélecteur [!DNL Asset], de balisage en masse, des workflows de modification des ressources ou l’interface utilisateur standard [!DNL Adobe Experience Manager] pour accéder à Media Library sans licence [!DNL Assets].
+Vous ne pouvez pas utiliser de balises intelligentes, [!DNL Asset] lien, [!DNL Asset] sélecteur, balisage en masse, modification des workflows de ressources ou standard [!DNL Adobe Experience Manager] interface utilisateur pour accéder à Media Library sans [!DNL Assets] licence.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
@@ -115,5 +115,5 @@ Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL As
 
 >[!MORELIKETHIS]
 >
->* [Fonctionnalités de gestion des actifs numériques dans [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=fr)
->* Description du produit [[!DNL Experience Manager] as a [!DNL Cloud Service] ](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [Fonctionnalités de gestion des ressources numériques dans  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=fr)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

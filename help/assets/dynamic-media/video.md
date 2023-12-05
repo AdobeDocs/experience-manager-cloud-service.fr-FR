@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '9461'
+source-wordcount: '9454'
 ht-degree: 63%
 
 ---
@@ -29,7 +29,7 @@ Le workflow décrit en détail ci-après vise à vous aider à maîtriser rapide
 
 1. **Chargez les vidéos Dynamic Media** en procédant comme suit :
 
-   * Créez votre propre profil de codage vidéo. Vous pouvez également utiliser le profil _Codage vidéo adaptatif_ prédéfini fourni avec Dynamic Media.
+   * Créez votre propre profil de codage vidéo. Vous pouvez également simplement utiliser la variable prédéfinie _Codage vidéo adaptatif_ qui est fourni avec Dynamic Media.
 
       * [Création d’un profil de codage vidéo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * En savoir plus sur les [bonnes pratiques relatives au codage vidéo](#best-practices-for-encoding-videos).
@@ -556,8 +556,8 @@ Au moment même où vous créez un cas de prise en charge des Adobes pour que le
    * Votre région Dynamic Media : Amérique du Nord (NA), Asie-Pacifique (APAC) ou Europe-Moyen-Orient-Asie (EMEA).
    * Sur Experience Manager 6.5, indiquez que la prise en charge du suivi DASH, multisous-titres et multiaudio doit être activée sur votre compte Dynamic Media.
 
-1. Le service clientèle d’Adobe vous inscrira sur la liste d’attente des clients et clientes en se basant sur l’ordre dans lequel les demandes ont été envoyées.
-1. Dès qu’Adobe sera prêt à traiter votre demande, le service clientèle vous contactera pour se coordonner avec vous et programmer une date cible d’activation 
+1. Le service clientèle d’Adobe vous ajoute à la liste d’attente des clients en fonction de l’ordre dans lequel les demandes sont envoyées.
+1. Lorsque Adobe est prêt à traiter votre demande, le service clientèle vous contacte pour coordonner et définir une date cible pour l’activation.
 1. Une fois la procédure achevée, l’équipe du service clientèle vous en informera.
 1. Vous pouvez désormais effectuer l’une des opérations suivantes :
 
@@ -764,7 +764,7 @@ L’onglet Aperçu du Experience Manager par défaut n’affiche pas plusieurs p
 
    ![La liste contextuelle Audio et sous-titres dans la visionneuse de vidéos.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulation d’un utilisateur sélectionnant le contenu audio et le sous-titre pour la lecture vidéo.*
 
-1. Pour commencer la lecture, sélectionnez le bouton **[!UICONTROL Lecture]** de la vidéo.
+1. Pour commencer la lecture, sélectionnez le **[!UICONTROL Play]** bouton .
 Notez que **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** dans le coin inférieur gauche. Utilisez ces boutons pour [lier l’URL de la vidéo à votre application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporer la vidéo dans une page web ;](/help/assets/dynamic-media/embed-code.md), respectivement.
 1. Dans le coin supérieur droit de la page d’aperçu, sélectionnez **[!UICONTROL Fermer]**.
 
@@ -810,7 +810,7 @@ La piste audio d’origine extraite d’un fichier principal ne peut pas être t
    | Option | Description |
    |--- |--- |
    | Enregistrer sous | Utilisez le nom de fichier par défaut spécifié dans le champ de texte Enregistrer sous ou indiquez votre propre nom. |
-   | Créez un dossier distinct pour chaque ressource | Créez un dossier pour chaque fichier de sous-titre ou fichier de suivi audio que vous avez sélectionné pour téléchargement. |
+   | Création d’un dossier distinct pour chaque ressource | Créez un dossier pour chaque fichier de sous-titre ou fichier de suivi audio que vous avez sélectionné pour téléchargement. |
    | E-mail | Utilisez votre programme de messagerie par défaut pour envoyer le fichier .zip à une adresse électronique spécifique. |
    | Ressources | Indique le nombre de fichiers à télécharger et la taille totale combinée de tous les fichiers sélectionnés. La désélection de cette option réduit (désactive) la variable **[!UICONTROL Télécharger]** , vous empêchant de télécharger un fichier. |
 1. Sélectionner **[!UICONTROL Télécharger]**.
@@ -874,7 +874,7 @@ Voir [Diffusion de contenu statique (sans image)](https://experienceleague.adobe
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pour une expérience de visionneuse de vidéos pop-up, sélectionnez **[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
+   * Pour une expérience de visionneuse de vidéos contextuelle, sélectionnez **[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -1063,7 +1063,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
    if the directory panel is not visible, you may need to select the >> icon to the left of the Home tab.
 
-1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
+1. On the lower-right panel, in the Properties tab, double-select `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
 
     * Select the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.

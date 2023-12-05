@@ -2,10 +2,10 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 91%
+source-wordcount: '1678'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,7 @@ Le widget de chemin de nœud affiche le chemin d’accès au nœud actuellement 
 
 Vous pouvez également l’utiliser pour sauter vers un nœud en entrant le chemin à la main ou en le collant à partir d’un autre endroit et en appuyant sur Entrée.
 
-Il permet aussi de rechercher des nœuds par nom de nœud. Entrez le nom du nœud que vous souhaitez rechercher et patientez (ou sélectionnez l’icône de recherche sur le côté droit). Si un ou plusieurs nœuds sont chargés dans le volet de l’explorateur, la liste s’affiche. Vous pouvez sélectionner le chemin et appuyer sur Entrée pour y accéder. Notez que la recherche ne fonctionne que pour les nœuds actuellement chargés dans l’application cliente CRXDE dans le navigateur. Pour effectuer une recherche dans tout le référentiel, utilisez **Outils** > **Requête**.
+Il permet aussi de rechercher des nœuds par nom de nœud. Entrez le nom du nœud que vous souhaitez rechercher et patientez (ou sélectionnez l’icône de recherche sur le côté droit). Si un ou plusieurs nœuds sont chargés dans le volet de l’explorateur, la liste s’affiche. Vous pouvez sélectionner le chemin et appuyer sur Entrée pour y accéder. Il ne fonctionne que pour les noeuds actuellement chargés dans l’application cliente CRXDE dans le navigateur. Pour effectuer une recherche dans tout le référentiel, utilisez **Outils** > **Requête**.
 
 ### Volet de l’explorateur {#explorer-pane}
 

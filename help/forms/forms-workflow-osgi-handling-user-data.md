@@ -5,10 +5,10 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 96%
+source-wordcount: '994'
+ht-degree: 95%
 
 ---
 
@@ -137,7 +137,7 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
 
    1. Accédez à `https://'[server]:[port]'/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Workflow > Instances]**.
-   1. Sélectionnez les instances de workflow appropriées pour l’utilisateur ou l’utilisatrice et appuyez sur **[!UICONTROL Arrêter]** pour arrêter les instances en cours d’exécution.
+   1. Sélectionnez les instances de workflow appropriées pour l’utilisateur et sélectionnez **[!UICONTROL Arrêter]** pour arrêter les instances en cours d’exécution.
 
       Pour plus d’informations sur l’utilisation des instances de workflow, voir [Gestion des instances de workflow](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=fr#authoring).
 

@@ -2,10 +2,10 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement découplé AEM, apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 97%
+source-wordcount: '1060'
+ht-degree: 91%
 
 ---
 
@@ -83,7 +83,7 @@ Pour que les utilisateurs disposent de la meilleure expérience possible lorsqu�
       * Pour vérifier le nombre d’utilisateurs, de demandes et de chargements
 * Accédez aux rapports de performances spécifiques à l’application et à la surface.
    * Une fois le serveur ouvert, vérifiez si les mesures générales apparaissent en vert/orange/rouge, puis identifiez les problèmes spécifiques à l’application.
-   * Ouvrez les rapports ci-dessus filtrés par application ou par surface (par exemple, la version bureau de Photoshop, un paywall).
+   * Ouvrir les mêmes rapports ci-dessus filtrés dans l’application ou l’espace (par exemple, bureau Photoshop, paywall)
    * Utilisez des API de journal Splunk pour accéder aux performances du service et de l’application.
    * Contactez le service clientèle si d’autres problèmes se produisent.
 
@@ -124,7 +124,7 @@ Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous dis
 
 ### Découvrez les applications sur une seule page {#explore-spa}
 
-Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels) nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles complets traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
+Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souviendrez peut-être dans le [Prise en main dans le parcours](getting-started.md#integration-levels) nous avons discuté brièvement de la manière dont AEM prend non seulement en charge la livraison sans interface utilisateur et les modèles traditionnels de pile complète, mais peut également prendre en charge les modèles hybrides qui combinent les avantages des deux.
 
 Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours intitulée [Comment créer des applications monopages avec AEM](create-spa.md).
 
@@ -132,7 +132,7 @@ Si ce type de flexibilité est nécessaire pour votre projet, passez à la secti
 
 * [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Tutorials pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
 * [Présentation du déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr)
 * [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr)

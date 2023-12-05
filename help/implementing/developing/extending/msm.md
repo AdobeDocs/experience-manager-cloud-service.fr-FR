@@ -2,10 +2,10 @@
 title: Étendre Multi Site Manager
 description: Découvrez comment étendre les fonctionnalités de Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 63%
+source-wordcount: '2337'
+ht-degree: 55%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 63%
 
 Ce document vous aide à comprendre comment étendre les fonctionnalités de Multi Site Manager et couvre les rubriques suivantes.
 
-* Découvrez les principaux membres de l’API Java MSM
-* Créez une nouvelle action de synchronisation pouvant être utilisée dans une configuration de déploiement
-* Modifiez la langue et les codes pays par défaut
+* En savoir plus sur les principaux membres de l’API Java MSM
+* Création d’une action de synchronisation pouvant être utilisée dans une configuration de déploiement
+* Modification de la langue et des codes pays par défaut
 
 >[!TIP]
 >
@@ -36,7 +36,7 @@ Les principaux objets API MSM interagissent comme suit (voir aussi la section [T
 
 ![Principaux objets de l’API MSM](assets/msm-api-interaction.png)
 
-* **`Blueprint`** - Un `Blueprint` (comme dans une [configuration de plan directeur](/help/sites-cloud/administering/msm/overview.md#source-blueprints-and-blueprint-configurations)) spécifie les pages à partir desquelles une Live Copy peut hériter du contenu.
+* **`Blueprint`** - A `Blueprint` (comme dans [configuration du plan directeur](/help/sites-cloud/administering/msm/overview.md#source-blueprints-and-blueprint-configurations)) indique les pages à partir desquelles une Live Copy peut hériter du contenu.
 
   ![Plan directeur](assets/msm-blueprint-interaction.png)
 
@@ -61,7 +61,7 @@ Les principaux objets API MSM interagissent comme suit (voir aussi la section [T
 
 * **`LiveStatus`** - `LiveStatus` permet d’accéder à l’état d’exécution d’un `LiveRelationship`. Permet d’interroger le statut de synchronisation d’une Live Copy.
 
-* **`LiveAction`** - Une `LiveAction` est une action qui est exécutée sur chaque ressource impliquée dans le déploiement.
+* **`LiveAction`** - A `LiveAction` est une action exécutée sur chaque ressource impliquée dans le déploiement.
 
    * `LiveAction`s sont uniquement générés par `RolloutConfig`s.
 
@@ -86,7 +86,7 @@ La `LiveActionFactory` crée des instances de la classe `LiveAction` pour une co
 
    * `getName` - Renvoie le nom de l’action
 
-      * Le nom est utilisé pour faire référence à l’action, par exemple dans les configurations de déploiement.
+      * Le nom est utilisé pour faire référence à l’action, par exemple, dans les configurations de déploiement.
 
    * `execute` - Effectue les tâches de l’action
 
@@ -132,8 +132,8 @@ Les objets suivants sont fournis en tant que paramètres de la méthode `execute
 
 * A [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) qui représente la source de la Live Copy ;
 * A `Resource` qui représente la cible de la Live Copy.
-* L’objet [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) pour la Live Copy
-   * La valeur `autoSave` indique si votre `LiveAction` doit enregistrer les modifications apportées au référentiel
+* La variable [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) pour la Live Copy
+   * La variable `autoSave` indique si la variable `LiveAction` doit enregistrer les modifications apportées au référentiel.
    * La variable `reset` indique le mode de réinitialisation du déploiement.
 
 À partir de ces objets, vous pouvez obtenir des informations sur la variable `LiveCopy`. Vous pouvez également utiliser les objets `Resource` pour obtenir les objets `ResourceResolver`, `Session` et `Node`. Ces objets sont utiles pour manipuler le contenu du référentiel :
@@ -154,8 +154,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 Vous pouvez créer une configuration de déploiement lorsque les configurations de déploiement installées ne répondent pas aux exigences de votre application en procédant comme suit :
 
-* [Créez la configuration de déploiement](#create-the-rollout-configuration)
-* [Ajoutez des actions de synchronisation à la configuration de déploiement](#add-synchronization-actions-to-the-rollout-configuration)
+* [Création de la configuration de déploiement](#create-the-rollout-configuration)
+* [Ajout d’actions de synchronisation à la configuration de déploiement](#add-synchronization-actions-to-the-rollout-configuration)
 
 La nouvelle configuration de déploiement est alors disponible pour vous lors de la définition des configurations de déploiement sur une page de plan directeur ou de Live Copy.
 
@@ -175,7 +175,7 @@ Pour créer une configuration de déploiement :
 
 1. Sous cet emplacement, créez un noeud avec les propriétés suivantes :
 
-   * **Nom**: nom de noeud de la configuration de déploiement, par exemple `contentCopy` ou `workflow`
+   * **Nom**: nom de noeud de la configuration de déploiement, par exemple, `contentCopy` ou `workflow`
    * **Type** : `cq:RolloutConfig`
 
 1. Ajoutez les propriétés suivantes à ce nœud :
@@ -190,7 +190,7 @@ Pour créer une configuration de déploiement :
 
    * **Nom** : `cq:trigger`
      **Type** : `String`
-     **Valeur** : le [Déclencheur de déploiement](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) à utiliser
+     **Valeur**: la variable [Déclencheur de déploiement](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) à utiliser
       * `rollout`
       * `modification`
       * `publish`
@@ -204,17 +204,17 @@ Les configurations de déploiement sont stockées sous le [noeud de configuratio
 
 Ajoutez des nœuds enfants de type `cq:LiveSyncAction` pour ajouter des actions de synchronisation à la configuration de déploiement. L’ordre des nœuds d’action de synchronisation détermine l’ordre dans lequel les actions se produisent.
 
-1. Dans CRXDE Lite, sélectionnez votre [Configuration du déploiement](#create-the-rollout-configuration) noeud, par exemple `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. Dans CRXDE Lite, sélectionnez votre [Configuration du déploiement](#create-the-rollout-configuration) noeud, par exemple : `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
-1. Créez un nœud avec les propriétés de nœud suivantes :
+1. Créez un noeud avec les propriétés de noeud suivantes :
 
-   * **Nom** : nom de nœud de l’action de synchronisation
+   * **Nom**: nom de noeud de l’action de synchronisation.
       * Le nom doit être identique au nom **Nom de l’action** dans le tableau sous [Actions de synchronisation](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-synchronization-actions) par exemple `contentCopy` ou `workflow`.
    * **Type** : `cq:LiveSyncAction`
 
-1. Ajoutez et configurez autant de nœuds d’action de synchronisation que vous le souhaitez.
+1. Ajoutez et configurez autant de noeuds d’action de synchronisation que nécessaire.
 
-1. Réorganisez les nœuds d’action afin que leur ordre corresponde à celui dans lequel vous souhaitez qu’ils se produisent.
+1. Réorganisez les noeuds d’action de sorte que leur ordre corresponde à l’ordre dans lequel vous souhaitez qu’ils se produisent.
    * Le nœud d’action le plus haut se produit en premier.
 
 ## Création et utilisation d’une classe LiveActionFactory simple {#creating-and-using-a-simple-liveactionfactory-class}
@@ -227,7 +227,7 @@ Suivez les procédures de cette section pour développer une `LiveActionFactory`
 1. [Créez la configuration de déploiement](#create-the-example-rollout-configuration).
 1. [Créez la Live Copy](#create-the-live-copy).
 
-[Le projet Maven et le code source de la classe Java sont disponibles dans le référentiel public Git.](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
+[Le projet Maven et le code source de la classe Java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout) est disponible dans le référentiel Git public.
 
 ### Créer le projet Maven {#create-the-maven-project}
 
@@ -349,7 +349,7 @@ Ajoutez des dépendances pour que le compilateur Eclipse puisse référencer les
 
 La classe `LiveActionFactory` suivante implémente une `LiveAction` qui enregistre les messages sur les pages source et cible et copie la propriété `cq:lastModifiedBy` du nœud source vers le nœud cible. Le nom de la live action est `exampleLiveAction`.
 
-1. Dans l’explorateur de projet Eclipse, cliquez avec le bouton droit sur le package `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` et cliquez sur **Nouveau** > **Classe**.
+1. Dans l’Explorateur de projets Eclipse, cliquez avec le bouton droit sur la `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` module et cliquez sur **Nouveau** > **Classe**.
 
 1. Comme **nom**, entrez `ExampleLiveActionFactory`, puis cliquez sur **Terminer**.
 
@@ -588,7 +588,7 @@ Pour modifier les langues :
 
 1. Nommez le nouveau dossier `wcm`.
 
-1. Répétez l’étape précédente pour créer l’arborescence de dossiers `/apps/wcm/core`. Créez un nœud de type `sling:Folder` dans `core` appelé `resources`.
+1. Répétez l’étape précédente pour créer l’arborescence de dossiers `/apps/wcm/core`. Création d’un noeud de type `sling:Folder` in `core` appelé `resources`.
 
 1. Cliquez avec le bouton droit sur le nœud `/libs/wcm/core/resources/languages` et cliquez sur **Copier**.
 1. Cliquez avec le bouton droit sur le dossier `/apps/wcm/core/resources` et cliquez sur **Coller**. Modifiez les nœuds enfants selon les besoins.

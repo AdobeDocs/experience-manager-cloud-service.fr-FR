@@ -2,10 +2,10 @@
 title: Rechercher
 description: Trouvez votre contenu plus rapidement grâce à une recherche complète
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 90%
+ht-degree: 83%
 
 ---
 
@@ -44,7 +44,7 @@ Pour rechercher et filtrer vos ressources :
 1. Si nécessaire, vous pouvez supprimer le filtre d’emplacement (sélectionnez **X** sur le filtre que vous souhaitez supprimer) pour effectuer une recherche dans toutes les consoles/tous les types de ressources.
 1. Les résultats s’affichent, regroupés selon la console et le type de ressource associé.
 
-   Vous pouvez sélectionner une ressource spécifique (pour appliquer d’autres actions) ou accéder à d’autres actions en sélectionnant le type de ressource concerné, par exemple **Afficher tous les sites** :
+   Vous pouvez sélectionner une ressource spécifique (pour effectuer d’autres actions) ou effectuer une analyse en sélectionnant le type de ressource requis ; par exemple : **Afficher tous les sites**:
 
    ![Résultats de la recherche](/help/sites-cloud/authoring/assets/search-results.png)
 
@@ -59,7 +59,7 @@ Pour rechercher et filtrer vos ressources :
    * Recherches enregistrées
    * Répertoire de recherche
    * Balises
-   * Critères de recherche, par exemple, les dates de modification, l’état de publication, l’état LiveCopy
+   * Critères de recherche, par exemple, dates de modification, état de publication, état LiveCopy
 
    >[!NOTE]
    >

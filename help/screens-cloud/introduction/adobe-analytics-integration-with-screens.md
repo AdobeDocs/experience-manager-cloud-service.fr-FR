@@ -1,22 +1,18 @@
 ---
 title: Intégration d’Adobe Analytics à AEM Screens Cloud
-seo-title: Adobe Analytics Integration with AEM Screens
 description: Consultez cette page pour en savoir plus sur l’intégration immédiate d’AEM Screens avec Adobe Analytics. AEM Screens vous fournit également une preuve de lecture.
-seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
-uuid: 80d61af7-bf4d-46ca-a026-99a666c2e1a0
 contentOwner: trushton
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Cloud/SCREENS
 topic-tags: administering
-discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
-source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 82%
+source-wordcount: '408'
+ht-degree: 75%
 
 ---
 
@@ -49,7 +45,7 @@ Ainsi, l’intégration d’Adobe Analytics avec AEM Screens permet de réalise
 
 ## Particularités architecturales {#architectural-details}
 
-Un client AEM Screens souhaite connaître les données affichées, ainsi que leurs durée et date et/ou heure d’affichage (affichage global). Il s’agit d’une fonctionnalité courante de la solution d’affichage numérique. AEM Screens tire parti d’Adobe Analytics au lieu d’élaborer vos analyses ; vous obtenez ainsi une solution unique sur le marché : des analyses multicanaux permettant de mettre le contenu affiché à l’emplacement concerné en corrélation avec d’autres sources de données.
+Un client AEM Screens souhaite connaître les données affichées, ainsi que leurs durée et date et/ou heure d’affichage (affichage global). Il s’agit d’une fonctionnalité courante de la solution d’affichage numérique. Au lieu de créer nos propres analyses, AEM Screens utilise Adobe Analytics. Avec cette solution, vous pouvez obtenir un résultat unique sur le marché : des analyses cross-canal qui permettent de mettre en relation le contenu affiché à l’emplacement avec d’autres sources de données.
 
 Le diagramme architectural suivant explique comment Adobe Analytics s’intègre avec AEM Screens :
 
@@ -57,7 +53,7 @@ Le diagramme architectural suivant explique comment Adobe Analytics s’intègr
 
 ## Activation d’Adobe Analytics dans AEM Screens Cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
-Contactez votre responsable de relations avec les Adobes pour activer les analyses d’Adobe dans Screens Cloud.
+Contactez votre gestionnaire de relations d’Adobe pour activer les analyses d’Adobe dans Screens Cloud.
 
 ## Utilisation du service Adobe Analytics dans AEM Screens Cloud {#using-adobe-analytics-service-in-aem-screens}
 
@@ -66,4 +62,4 @@ Ce scénario appelle l’API Analytics en lançant des appels REST depuis un se
 Les événements Analytics sont stockés hors ligne dans indexedDB, puis segmentés et envoyés ultérieurement vers le cloud.
 
 >[!NOTE]
->Pour en savoir plus sur le séquencement et le modèle de données standard pour les événements, reportez-vous à la section [Configuration d’Adobe Analytics pour AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) pour plus d’informations.
+>Pour en savoir plus sur le séquencement et le modèle de données standard pour les événements, voir [Configuration d’Adobe Analytics pour AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) pour plus d’informations.

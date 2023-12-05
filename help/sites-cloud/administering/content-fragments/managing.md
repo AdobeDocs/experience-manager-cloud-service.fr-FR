@@ -4,10 +4,10 @@ description: Découvrez comment gérer vos fragments de contenu AEM à partir de
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 48%
+source-wordcount: '2617'
+ht-degree: 44%
 
 ---
 
@@ -31,7 +31,7 @@ Après avoir défini votre [Modèles de fragment de contenu](#creating-a-content
 >
 >Il est possible d’utiliser les fragments de contenu comme suit :
 >
->* pour la [Diffusion de contenu découplé utilisant des fragments de contenu avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
+>* pour [Diffusion de contenu sans affichage à l’aide de fragments de contenu avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
 >* lors de la création de pages ; voir [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!NOTE]
@@ -58,7 +58,7 @@ Pour plus d’informations, consultez la section suivante :
 
 * [Rechercher et filtrer dans la console Fragments de contenu](#filtering-fragments)
 
-* Une sélection de [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)raccourcis clavier peuvent être utilisés dans cette console
+* Une sélection de [raccourcis clavier](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) sont disponibles dans cette console.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Vous pouvez constater ici qu’il existe trois zones principales :
    * Vous pouvez sélectionner une branche spécifique de l’arborescence.
    * Il peut être redimensionné pour afficher les dossiers imbriqués.
 * Le panneau principal/droit, à partir duquel vous pouvez :
-   * Consulter la liste de tous les fragments de contenu dans la branche sélectionnée de l’arborescence. :
+   * Consultez la liste de tous les fragments de contenu dans la branche sélectionnée de l’arborescence :
       * Les fragments de contenu du dossier sélectionné et tous les dossiers enfants s’affichent :
          * L’emplacement est indiqué par les chemins de navigation ; ils peuvent également être utilisés pour modifier l’emplacement :
       * [Les informations s’affichent sur chaque fragment.](#information-content-fragments)
@@ -223,10 +223,10 @@ Pour créer un fragment de contenu :
 
 1. La variable **Nouveau fragment de contenu** La boîte de dialogue s’ouvre. Vous pouvez spécifier les éléments suivants :
 
-   * **Emplacement** : l’emplacement actuel sera renseigné automatiquement, mais vous pouvez sélectionner un autre emplacement si nécessaire.
-   * **Modèle de fragment de contenu** : sélectionnez le modèle à utiliser comme base du fragment dans la liste déroulante.
+   * **Emplacement** : saisie automatique avec l’emplacement actuel, mais vous pouvez sélectionner un autre emplacement si nécessaire.
+   * **Modèle de fragment de contenu** - Sélectionnez le modèle à utiliser comme base du fragment dans la liste déroulante.
    * **Titre**
-   * **Nom** : cette opération sera automatiquement effectuée en fonction de la variable **Titre**, mais vous pouvez la modifier si nécessaire.
+   * **Nom** : saisie automatiquement en fonction de la variable **Titre**, mais vous pouvez la modifier, si nécessaire.
    * **Description**
 
    ![Boîte de dialogue Nouveau fragment de contenu](assets/cf-managing-new-cf-dialog.png)
@@ -293,7 +293,7 @@ Vous pouvez publier vos fragments de contenu dans :
 
   >[!CAUTION]
   >
-  >La publication de fragments de contenu dans le **Service de prévisualisation** n’est disponible que depuis la console Fragments de contenu, via l’action **Publier**.
+  >Publication de fragments de contenu dans le **Service de prévisualisation** est uniquement disponible à partir de la console Fragments de contenu ; à l’aide de la fonction **Publier** action.
 
   >[!NOTE]
   >
@@ -332,7 +332,7 @@ Après avoir sélectionné **Publier** action :
 
    >[!NOTE]
    >
-   >Si nécessaire, vous devrez spécifier les références à publier. Par défaut, les références sont également publiées dans le service de prévisualisation pour s’assurer qu’il n’y a aucune coupure dans le contenu.
+   >Si nécessaire, vous devrez spécifier les références à publier. Par défaut, les références sont également publiées dans le service Preview pour s’assurer qu’il n’y a aucune coupure dans le contenu.
 
 1. Confirmez l’action de publication.
 

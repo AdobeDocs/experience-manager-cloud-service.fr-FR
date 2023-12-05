@@ -2,10 +2,10 @@
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
 description: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 13%
+source-wordcount: '2658'
+ht-degree: 11%
 
 ---
 
@@ -56,7 +56,7 @@ Il existe quatre types [environnement](/help/implementing/cloud-manager/manage-e
       * Cela est indépendant des modifications initiées par Adobe dans le cadre d’une mise à jour de maintenance ou par vos déploiements de code.
       * Vous pouvez également effectuer des tests manuels dans le cas d’un déploiement de code.
    * Le contenu de l’environnement intermédiaire est généralement conservé synchronisé avec le contenu de production à l’aide de la fonction de copie de contenu en libre-service.
-* Environnement de développement:
+* Environnement de développement :
    * Un environnement de développement permet aux développeurs de mettre en oeuvre et de tester AEM applications dans les mêmes conditions d’exécution que les environnements d’évaluation et de production.
    * Les modifications passent par un pipeline de déploiement qui permet les mêmes points de contrôle de sécurité et de qualité de code que dans les pipelines de déploiement de production.
 * Environnement de développement rapide (RDE) :
@@ -133,7 +133,7 @@ Il existe d’autres services adjacents :
    * est chargé d’exposer les données client, telles que les mesures de licence (par exemple, les demandes de contenu, le stockage, les utilisateurs) ou les rapports d’utilisation (tels que le nombre de chargements, de téléchargements) ;
    * Les données client peuvent être exposées via des API et dans des interfaces utilisateur de produit (telles que Cloud Manager).
 * Le service de mesure de l’utilisateur réel (RUM) :
-   * est chargé de collecter les mesures clés d’une expérience client (telles que les pages vues, les éléments vitaux du web de base, les événements de conversion) et de répondre aux requêtes associées (par exemple, les principales pages vues d’un domaine donné au cours des 7 derniers jours) ;
+   * est chargé de collecter les mesures clés d’une expérience client (telles que les pages vues, les vitales du web principal, les événements de conversion) et de répondre aux requêtes associées (par exemple, les principales pages vues d’un domaine donné au cours des 7 derniers jours) ;
 * Le service Asset Compute :
    * est responsable du traitement des images, vidéos et documents téléchargés ; par exemple, des fichiers PDF et Adobe Photoshop. Le traitement peut utiliser Adobe Sensei pour extraire des métadonnées image et vidéo (telles que des balises descriptives ou des tons de couleur primaires), puis générer des rendus (tels que des tailles ou des formats différents), avec accès aux API telles que les API Adobe Photoshop et Adobe Lightroom.
 * Le service Identity Management (IMS) :
@@ -190,7 +190,7 @@ Les développeurs et les administrateurs gèrent l’application as a Cloud Serv
 
 Cloud Manager gère toutes les mises à jour apportées à vos instances de l’AEM as a Cloud Service. Il est obligatoire, car il s’agit du seul moyen de créer, de tester et de déployer l’application cliente sur les niveaux Auteur, Aperçu et Publication. Ces mises à jour peuvent être déclenchées par Adobe, lorsqu’une nouvelle version d’AEM Cloud Service est prête, ou par vous-même, lorsqu’une nouvelle version de votre application est prête.
 
-Ceci est mis en oeuvre par un pipeline de déploiement, couplé à chaque environnement au sein d’un programme. Lorsqu’un pipeline Cloud Manager est en cours d’exécution, il crée une version de l’application du client, tant pour le niveau Auteur que pour le niveau Publication. Pour ce faire, il combine les packages clients les plus récents à la dernière image de base Adobe.
+Ceci est mis en oeuvre par un pipeline de déploiement, couplé à chaque environnement au sein d’un programme. Lorsqu’un pipeline Cloud Manager est en cours d’exécution, il crée une version de l’application du client, tant pour le niveau Auteur que pour le niveau Publication. Pour ce faire, combinez les derniers packages client à la dernière image de base de l’Adobe.
 
 Le pipeline de déploiement est déclenché lorsque les clients apportent des modifications au code ou lorsque Adobe déploie une nouvelle version de maintenance.
 
@@ -225,8 +225,8 @@ La dernière architecture d&#39;AEM as a Cloud Service introduit quelques modifi
 
 Voir également :
 
-* Edge Delivery Services:
+* EDGE DELIVERY SERVICES :
 
    * [AEM Aperçu as a Cloud Service - avec les Edge Delivery Services](/help/edge/overview.md)
    * [Utiliser Edge Delivery Services](/help/edge/using.md)
-   * [Explorez l’architecture sous-jacente et les éléments importants d’AEM as a Cloud Service avec Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=fr)
+   * [Explorez l’architecture sous-jacente et les éléments importants de l’AEM as a Cloud Service avec les Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=fr)

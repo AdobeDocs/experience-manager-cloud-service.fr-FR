@@ -2,10 +2,10 @@
 title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 89%
+source-wordcount: '1873'
+ht-degree: 87%
 
 ---
 
@@ -54,7 +54,7 @@ La méthode de création d’un fragment de contenu est la suivante :
 1. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
 1. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
-   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) : utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Adventure**.
+   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) - utilisé pour créer un fragment qui nécessite du contenu structuré ; par exemple, la fonction **Adventure** model
 
       * Tous les modèles disponibles s’affichent.
 

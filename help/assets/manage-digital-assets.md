@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4301'
-ht-degree: 84%
+source-wordcount: '4270'
+ht-degree: 81%
 
 ---
 
@@ -69,13 +69,13 @@ Pour extraire les fichiers ZIP, procédez comme suit :
 Pour prévisualiser une ressource, procédez comme suit.
 
 1. Dans l’interface utilisateur d’Assets, accédez à l’emplacement de la ressource à prévisualiser.
-1. Appuyez sur la ressource concernée pour l’ouvrir.
+1. Sélectionnez la ressource de votre choix pour l’ouvrir.
 
 1. En mode Aperçu, les options de zoom sont disponibles pour les [types d’images pris en charge](/help/assets/file-format-support.md) (avec modification interactive).
 
    Pour effectuer un zoom avant sur une ressource, sélectionnez `+` (ou sélectionnez la loupe sur la ressource). Pour effectuer un zoom arrière, sélectionnez `-`. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche de réinitialisation du zoom rétablit la vue initiale.
 
-   Appuyez sur **[!UICONTROL Réinitialiser]** pour réinitialiser la vue à sa taille d’origine.
+   Sélectionner **[!UICONTROL Réinitialiser]** pour rétablir la taille d’origine de la vue.
 
 ## Modification des propriétés {#editing-properties}
 
@@ -270,7 +270,7 @@ De plus, désactivez l’option Forcer la suppression à l’aide d’un recouvr
    * **[!UICONTROL Supprimer]** pour confirmer l’action :
 
       * Si la ressource ne comporte aucune référence, elle est supprimée.
-      * Si la ressource comporte des références, un message d’erreur vous informe qu’**[!UICONTROL une ou plusieurs ressources sont référencées.]** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+      * Si la ressource comporte des références, un message d’erreur vous informe que **[!UICONTROL Une ou plusieurs ressources sont référencées.]**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
 
    >[!NOTE]
    >
@@ -340,7 +340,7 @@ Pour des recherches simples, avancées et personnalisées pour découvrir et uti
 
 Les icônes d’action rapide sont disponibles pour une ressource à la fois. Selon l’appareil, effectuez les actions suivantes pour afficher les icônes d’action rapide :
 
-* Appareils tactiles : appuyez longuement. Par exemple, sur un iPad, vous pouvez appuyer longuement sur une ressource pour afficher les actions rapides.
+* Appareils tactiles : appuyez longuement. Par exemple, sur une iPad, vous pouvez sélectionner une ressource et la maintenir enfoncée afin que les actions rapides s’affichent.
 * Appareils non tactiles : survolez avec le pointeur. Par exemple, sur un poste de travail, la barre d’actions rapides s’affiche si vous survolez la miniature de la ressource avec le pointeur de la souris.
 
 <!-- Hiding this topic via cqdoc-18707
@@ -428,7 +428,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Sélectionnez la variable **[!UICONTROL Annoter]** de l’une des options suivantes :
 
    * [Actions rapides](#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource    ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils après avoir sélectionné la ressource ou accédé à la page de la ressource.
 
    <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
@@ -543,7 +543,7 @@ Pour imprimer les annotations et l’état de révision, sélectionnez l’optio
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des statuts, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-digital-assets.md#annotating).
+   Pour modifier l’aspect du fichier de PDF rendu, par exemple, la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, ouvrez le **[!UICONTROL Configuration du PDF d’annotation]** dans Configuration Manager, puis modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-digital-assets.md#annotating).
 
    Revenez au fichier PDF rendu et actualisez-le. Le PDF actualisé reflète les modifications que vous avez apportées.
 

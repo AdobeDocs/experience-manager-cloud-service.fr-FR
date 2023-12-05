@@ -2,10 +2,10 @@
 title: Participation aux workflows
 description: Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -33,7 +33,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
   ![Notifications dans la boîte de réception](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Lorsque vous utilisez l’éditeur de page, la barre d’état affiche :
-   * Le nom du ou des workflows appliqués à la page. Par exemple, Demande d’activation.
+   * Nom du ou des workflows appliqués à la page ; par exemple, Demande d’activation.
    * Toute action disponible pour l’utilisateur actuel ou l’utilisatrice actuelle à l’étape du workflow en cours. Par exemple, Terminer, Déléguer, Afficher les détails.
    * Le nombre de workflows auxquels la page est soumise. Vous pouvez effectuer les actions suivantes :
       * utiliser les flèches gauche/droite pour parcourir les informations sur le statut des différents workflows ;

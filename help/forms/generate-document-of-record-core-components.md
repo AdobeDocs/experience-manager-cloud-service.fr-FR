@@ -2,10 +2,10 @@
 title: Comment générer un document d’enregistrement pour Forms adaptatif ?
 description: Découvrez comment générer un modèle pour un document d’enregistrement (DE) pour les composants principaux de Forms adaptatif.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 93%
+source-wordcount: '3108'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Vous pouvez :
 
 Avant de commencer à apprendre et à préparer les ressources requises pour un document d’enregistrement :
 
-**Modèle de base :** un modèle XFA (fichier XDP) créé dans Forms Designer ou un formulaire Acrobat Form (AcroForm). Le [modèle de base](#base-template-of-a-document-of-record), également appelé métamodèle, est utilisé pour spécifier les informations de style et de marque pour un document d’enregistrement. Chargez votre modèle XFA (fichier XDP) sur votre instance AEM Forms au préalable..
+**Modèle de base :** un modèle XFA (fichier XDP) créé dans Forms Designer ou un formulaire Acrobat Form (AcroForm). Le [modèle de base](#base-template-of-a-document-of-record), également appelé métamodèle, est utilisé pour spécifier les informations de style et de marque pour un document d’enregistrement. Transférez votre modèle XFA (fichier XDP) vers votre instance AEM Forms avant.
 
 **Formulaire adaptatif :** le formulaire adaptatif pour lequel le document d’enregistrement doit être généré.
 
@@ -39,7 +39,7 @@ Chargez votre modèle XFA (fichier XDP) vers votre instance AEM Forms. Suivez le
 
 1. Dans l’instance d’auteur Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
 1. Sélectionnez un formulaire ou créez un formulaire adaptatif, puis cliquez sur **[!UICONTROL Propriétés]**.
-1. Dans la fenêtre Propriétés, appuyez sur **[!UICONTROL Modèle de formulaire]**.
+1. Dans la fenêtre Propriétés, sélectionnez **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Modèle de données de formulaire]**, **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez **Associer le modèle de formulaire en tant que modèle de document d’enregistrement**. Lorsque vous sélectionnez cette option, tous les modèles XFA (fichiers XDP) disponibles sur votre ordinateur s’affichent. Sélectionnez le fichier approprié. Assurez-vous également que le même schéma (schéma de données) est utilisé pour le formulaire adaptatif et le modèle XFA sélectionné (fichier XDP).
 1. Cliquez sur **[!UICONTROL Terminé]**.
@@ -52,7 +52,7 @@ Chargez votre PDF Adobe Acrobat (Acroform) sur votre instance AEM Forms. Suivez 
 
 1. Dans l’instance d’auteur Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
 1. Sélectionnez un formulaire ou **[!UICONTROL Créez un formulaire adaptatif]**, puis cliquez sur **[!UICONTROL Propriétés]**.
-1. Dans la fenêtre Propriétés, appuyez sur **[!UICONTROL Modèle de formulaire]**.
+1. Dans la fenêtre Propriétés, sélectionnez **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Modèle de données de formulaire]**, **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez **Associer le modèle de formulaire en tant que modèle de document d’enregistrement**. Lorsque vous sélectionnez cette option, tous les fichiers Acrobat PDF (Acroform) disponibles sur votre ordinateur s’affichent. Sélectionnez l’Acroform que vous souhaitez utiliser.
 1. Cliquez sur **[!UICONTROL Terminé]**.
@@ -73,7 +73,7 @@ Suivez les étapes suivantes pour configurer un formulaire adaptatif afin de gé
 
 1. Dans l’instance d’auteur Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
 1. Sélectionnez un formulaire ou créez un formulaire adaptatif, puis cliquez sur **[!UICONTROL Propriétés]**.
-1. Dans la fenêtre Propriétés, appuyez sur **[!UICONTROL Modèle de formulaire]**.
+1. Dans la fenêtre Propriétés, sélectionnez **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Modèle de données de formulaire]**, **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez **Générer un document d’enregistrement**.
 1. Cliquez sur **[!UICONTROL Terminé]**.
@@ -317,10 +317,10 @@ Lors de la génération d’un document d’enregistrement, vous pouvez modifier
 
 Pour localiser les informations de branding que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, suivez les étapes suivantes :
 
-1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis appuyez sur ![configurer](assets/configure.png).
-1. Appuyez sur ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
+1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis sélectionnez ![configure](assets/configure.png).
+1. Sélectionner ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
 1. Sélectionnez le modèle par défaut ou un modèle personnalisé pour le rendu du document d’enregistrement. Si vous sélectionnez le modèle par défaut, une vignette d’aperçu du document d’enregistrement s’affiche sous la liste déroulante Modèle.
-1. Si vous sélectionnez un modèle par défaut ou un modèle personnalisé, une partie ou la totalité des propriétés suivantes s’affichent sous l’onglet Document d’enregistrement. Spécifiez les propriétés mentionnées ci-dessous pour définir l’apparence du document d’enregistrement :
+1. Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines des propriétés suivantes, ou toutes les propriétés, apparaissent dans l’onglet Document d’enregistrement. Spécifiez les propriétés mentionnées ci-dessous pour définir l’apparence du document d’enregistrement :
 
    1. **Propriétés de base** :
       * **Modèle** : si vous choisissez de sélectionner un modèle personnalisé, recherchez et sélectionnez un fichier XDP sur votre serveur [!DNL AEM Forms]. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur [!DNL AEM Forms], vous devez au préalable charger le fichier XDP sur votre serveur [!DNL AEM Forms].
@@ -369,7 +369,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
    </proto>
    ```
 
-1. Pour enregistrer les modifications d’identité graphique, appuyez sur **[!UICONTROL Terminé]**.
+1. Pour enregistrer les modifications de marque, sélectionnez **[!UICONTROL Terminé]**.
 
 
 

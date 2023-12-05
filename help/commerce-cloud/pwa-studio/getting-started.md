@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 92%
+source-wordcount: '719'
+ht-degree: 89%
 
 ---
 
@@ -105,7 +105,7 @@ Consultez la documentation relatives aux fragments de contenu AEM pour configure
 
 Vous trouverez des exemples complets des deux configurations ici : <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Pour présenter le point d’entrée GraphQL, nous avons préparé quelques exemples de données et de modèles de fragments de contenu via un package de contenu. Ces composants fonctionnent bien avec les composants React fournis avec l’extension PWA Studio.
+Pour présenter le point de terminaison GraphQL, il existe des exemples de données et de modèles de fragments de contenu préparés via un module de contenu. Ces composants fonctionnent bien avec les composants React fournis avec l’extension PWA Studio.
 
 ## Utilisation {#how-to-use}
 

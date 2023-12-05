@@ -2,10 +2,10 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 91%
+source-wordcount: '672'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Servi
 
    >[!NOTE]
    >
-   >La configuration des autorisations peut évoluer au fil du temps. Veuillez travailler avec Microsoft s’ils ne fonctionnent pas comme prévu.
+   >La configuration des autorisations peut évoluer au fil du temps. Travaillez avec Microsoft s’ils ne fonctionnent pas comme prévu.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -58,7 +58,7 @@ Pour effectuer une récapitulation, utilisez les informations suivantes pour con
 
 Ensuite, générez le jeton d’actualisation qui fait partie de la configuration OSGi lors d’une étape suivante en procédant comme suit :
 
-1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` et `tenantID` par les valeurs propres à votre compte : 
+1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` et `tenantID` avec les valeurs propres à votre compte :
 
    ```
    https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
@@ -139,7 +139,7 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
 
    >[!NOTE]
    >
-   >Les portées peuvent évoluer au fil du temps. Veuillez travailler avec Microsoft s’ils ne fonctionnent pas comme prévu.
+   >Les portées peuvent évoluer au fil du temps. Travaillez avec Microsoft s’ils ne fonctionnent pas comme prévu.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`

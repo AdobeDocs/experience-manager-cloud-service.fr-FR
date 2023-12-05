@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 66%
+source-wordcount: '761'
+ht-degree: 49%
 
 ---
 
@@ -27,8 +27,8 @@ Vous pouvez définir l’aspect général et le style d’un formulaire adaptati
 
 Pour ajouter des styles intégrés à un composant :
 
-1. Ouvrez votre formulaire dans l’éditeur de formulaires, puis choisissez le mode Style. Pour choisir le mode Style, dans la barre d’outils de la page, appuyez sur ](assets/Smock_ChevronDown.svg)canvas-drop-down![ > **[!UICONTROL Style]**.
-1. Sélectionnez un composant dans la page, puis appuyez sur le bouton Modifier ![edit-button](assets/edit.svg). Les propriétés de style s’ouvrent dans la barre latérale.
+1. Ouvrez votre formulaire dans l’éditeur de formulaires, puis choisissez le mode Style. Pour passer en mode Style, dans la barre d’outils de la page, sélectionnez ![liste déroulante canevas](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
+1. Sélectionnez un composant dans la page, puis cliquez sur le bouton Modifier . ![edit-button](assets/edit.svg). Les propriétés de style s’ouvrent dans la barre latérale.
 
    Vous pouvez également sélectionner des composants dans l’arborescence de hiérarchie de formulaire dans la barre latérale. L’arborescence de hiérarchie de formulaires est disponible sous forme d’objets de formulaire dans la barre latérale.
 
@@ -46,7 +46,7 @@ Pour ajouter des styles intégrés à un composant :
    * [!UICONTROL Avancé] (permet de saisir un CSS personnalisé pour le composant)
 
 1. De même, vous pouvez appliquer des styles pour d’autres parties d’un composant tels que [!UICONTROL Widget], [!UICONTROL Légende] et [!UICONTROL Aide].
-1. Appuyez sur **[!UICONTROL Terminé]** pour confirmer les modifications ou sur **[!UICONTROL Annuler]** pour annuler les modifications.
+1. Sélectionner **[!UICONTROL Terminé]** pour confirmer les modifications ou **[!UICONTROL Annuler]** pour ignorer les modifications.
 
 ## Exemple : styles intégrés pour un composant de champ {#example-inline-styles-for-a-field-component}
 
@@ -81,7 +81,7 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
   <tr>
    <td><p>Libellé</p> </td>
    <td><p>Dimensions et position &gt; largeur</p> </td>
-   <td><p>100 px</p> </td>
+   <td><p>100 px</p> </td>
    <td><p>Définit la largeur sur 100 px pour le libellé.</p> </td>
   </tr>
   <tr>
@@ -111,9 +111,9 @@ En suivant les étapes ci-dessus, vous pouvez sélectionner et mettre en forme d
 
 ## Copie et collage de styles {#copy-paste-styles}
 
-Vous pouvez également copier un style et le coller d’un composant à un autre dans un formulaire adaptatif. En mode **[!UICONTROL Style]**, appuyez sur le composant, puis sur l’icône Copier ![Copier](assets/property-copy-icon.svg).
+Vous pouvez également copier un style et le coller d’un composant à un autre dans un formulaire adaptatif. Dans le **[!UICONTROL Style]** en mode , sélectionnez le composant, puis cliquez sur l’icône Copier ![Copier](assets/property-copy-icon.svg).
 
-Appuyez sur l’autre composant du même type, puis sur l’icône Coller ![Copier](assets/Smock_Paste_18_N.svg) pour coller le style copié. Vous pouvez également appuyer sur l’icône Effacer le style ![Copier](assets/clear-style-icon.svg) pour effacer le style appliqué.
+Sélectionnez l’autre composant du même type, puis cliquez sur l’icône Coller . ![Copier](assets/Smock_Paste_18_N.svg) pour copier le style. Vous pouvez également sélectionner l’icône Effacer le style . ![Copier](assets/clear-style-icon.svg) pour effacer le style appliqué.
 
 ## Définition des styles pour les différents états d’un composant {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ Vous pouvez définir des styles pour différents états d’un type de composant
 
 Pour définir la mise en forme d’un état d’un composant :
 
-1. En mode **[!UICONTROL Style]**, appuyez sur le composant, puis sur l’icône Modifier ![Modifier](assets/Smock_Edit_18_N.svg).
+1. Dans le **[!UICONTROL Style]** en mode , sélectionnez le composant, puis cliquez sur l’icône Modifier ![Modifier](assets/Smock_Edit_18_N.svg).
 
 1. Sélectionnez l’état du composant à l’aide de la liste déroulante **[!UICONTROL État]**.
 
    ![Sélectionner l’état](assets/select-state.png)
 
-1. Définissez la mise en forme de l’état sélectionné du composant et appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+1. Définissez la mise en forme de l’état sélectionné du composant et sélectionnez ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
 
-Vous pouvez également simuler les états de succès et d’erreur. Appuyez sur l’icône Développer pour afficher les options **[!UICONTROL Simuler la réussite]** et **[!UICONTROL Simuler l’erreur]**.
+Vous pouvez également simuler les états de succès et d’erreur. Cliquez sur l’icône Développer pour afficher le **[!UICONTROL Simuler la réussite]** et **[!UICONTROL Simuler une erreur]** options.
 
 ![Simuler les états](assets/simulate-states.png)
 

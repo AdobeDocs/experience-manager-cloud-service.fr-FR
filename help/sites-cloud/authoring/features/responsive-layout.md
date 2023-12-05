@@ -2,10 +2,10 @@
 title: Mise en page réactive
 description: AEM permet de créer une mise en page réactive pour vos pages.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 82%
+source-wordcount: '1737'
+ht-degree: 79%
 
 ---
 
@@ -49,7 +49,7 @@ Selon votre projet, le conteneur de mises en page peut être utilisé comme syst
 
 >[!TIP]
 >
->Adobe propose une [documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) sur la mise en page réactive. Celle-ci peut servir de référence et être distribuée aux équipes de développement d’applications front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lors de la création de maquettes HTML statiques pour un site AEM en préparation.
+>Adobe fournit [Documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la mise en page réactive en tant que référence pouvant être fournie aux développeurs front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple, lors de la création de maquettes de HTML statiques pour un site d’ futur.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    La barre d’outils de l’émulateur affiche des options de mise en page supplémentaires :
 
-   * **Rotation du périphérique** - Permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage), et inversement.
+   * **Rotation du périphérique** - Permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage) et inversement.
 
    ![Bouton Rotation de l’appareil - Paysage](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Bouton Rotation de l’appareil - Portrait](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -149,7 +149,7 @@ Comme pour les autres composants, vous pouvez sélectionner un conteneur de mise
 >
 >Un conteneur de mise en page étant un système de paragraphes, la suppression du composant entraîne la suppression de la grille de mise en page et de tous les composants (ainsi que de leur contenu) qu’il contient.
 
-1. Si vous pointez ou appuyez sur l’espace réservé de la grille, le menu d’actions s’affiche.
+1. Si vous placez le pointeur de la souris ou sélectionnez l’espace réservé de la grille, le menu d’actions s’affiche.
 
    ![Ajout au conteneur de mise en page](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -210,7 +210,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
      ![Bouton Parent](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   * **Afficher les composants masqués** : affiche tous les composants ou des composants individuels. Le chiffre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
+   * **Afficher les composants masqués** - Affiche tous les composants, ou individuellement certains composants. Le nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
 
      ![Bouton Afficher les composants masqués](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 

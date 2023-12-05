@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 66%
+source-wordcount: '1063'
+ht-degree: 63%
 
 ---
 
@@ -52,8 +52,8 @@ Les formulaires incluent certains champs et sections qui ne s’appliquent pas �
 Suivez les étapes ci-après pour activer le chargement différé sur un fragment de formulaire adaptatif :
 
 1. Ouvrez le formulaire adaptatif en mode création contenant le fragment que vous souhaitez activer pour le chargement différé.
-1. Sélectionnez le fragment de formulaire adaptatif et appuyez sur ![configure](assets/configure-icon.svg).
-1. Dans la barre latérale, activez **[!UICONTROL Chargement tardif d’un fragment]** et appuyez sur **Terminé**.
+1. Sélectionnez le fragment de formulaire adaptatif et sélectionnez ![configure](assets/configure-icon.svg).
+1. Dans la barre latérale, activez **[!UICONTROL Chargement différé du fragment]** et sélectionnez **Terminé**.
 
    ![Activation du chargement différé du fragment de formulaire adaptatif](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Suivez les étapes ci-après pour activer le chargement différé sur un fragmen
 Vous pouvez marquer les valeurs des objets du fragment chargé en différé comme étant globales, de sorte qu’elles puissent être utilisées dans des scripts lorsque le fragment contenant n’est pas chargé. Procédez comme suit :
 
 1. Ouvrez le fragment de formulaire adaptatif en mode création.
-1. Appuyez sur le champ dont la valeur est à marquer comme globale, puis appuyez sur ![configure](assets/configure-icon.svg).
+1. Sélectionnez le champ dont vous souhaitez marquer la valeur comme globale, puis sélectionnez ![configure](assets/configure-icon.svg).
 1. Dans la barre latérale, activez **[!UICONTROL Utiliser la valeur pendant le chargement différé]**.
 
    ![Champ de chargement différé dans la barre latérale](assets/enable-lazy-loading.png)

@@ -2,10 +2,10 @@
 title: Exemples de magasins candidats ContextHub
 description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions.
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 92%
 
 ---
 
@@ -19,11 +19,11 @@ ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez util
 
 >[!WARNING]
 >
->Les exemples de magasins candidats sont fournis comme configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet. Ils ne doivent donc pas être utilisés directement.
+>Les exemples de candidats de magasin sont fournis en tant que configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet. Ne les utilisez pas directement.
 
 ## Exemple de magasin candidat aem.segmentation {#aem-segmentation-sample-store-candidate}
 
-Magasin pour les segments ContextHub résolus et non résolus. Récupère automatiquement les segments de SegmentManager ContextHub.
+Magasin pour les segments ContextHub résolus et non résolus. Récupère automatiquement les segments à partir de ContextHub SegmentManager.
 
 ### Emplacement du code source {#source-location-segmentation}
 

@@ -2,10 +2,10 @@
 title: Administration des balises
 description: Découvrez comment administrer des balises dans AEM pour organiser votre contenu.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 5%
+source-wordcount: '2200'
+ht-degree: 4%
 
 ---
 
@@ -62,7 +62,7 @@ La console de balisage est utilisée pour créer et gérer des balises et leurs 
 Pour accéder à la console de balisage :
 
 1. Connectez-vous à un environnement de création avec les privilèges d’administrateur.
-1. Dans le menu de navigation globale, sélectionnez **`Tools`** > **`General`** ->
+1. Dans le menu de navigation globale, sélectionnez **`Tools`** > **`General`** >
    **`Tagging`**.
 
 ![La console Balisage dans AEM](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ Un espace de noms est utilisé pour organiser d’autres balises. Elle peut êtr
 
 1. Une fois que les informations requises sont saisies, sélectionnez **Créer**.
 
-L’espace de noms est créé. Notez que dans la console de balisage, les espaces de noms se trouvent au niveau le plus bas (dans la colonne l’extrémité gauche de la console) et sont représentés par des icônes de dossier, reflétant leur nature comme &quot;conteneur&quot; ou regroupement d’autres balises.
+L’espace de noms est créé. Dans la console Balisage, les espaces de noms se trouvent au niveau le plus bas (dans la colonne l’extrémité gauche de la console) et sont représentés par des icônes de dossier, reflétant leur nature de &quot;conteneur&quot; ou regroupement d’autres balises.
 
 Vous pouvez désormais [créer de nouvelles balises ;](#creating-tags) dans cet espace de noms ou [gérer les balises existantes.](#managing-tags)
 
@@ -163,7 +163,7 @@ Il existe plusieurs actions que vous pouvez effectuer sur les balises et espaces
 * [Fusionner](#merging-tags)
 * [Supprimer](#deleting-tags)
 
-Notez que lorsque la barre d’outils dispose d’un espace suffisant, des options supplémentaires sont disponibles derrière l’icône représentant des points de suspension.
+Lorsque la barre d’outils dispose d’un espace suffisant, d’autres options sont disponibles derrière l’icône représentant des points de suspension.
 
 ### Affichage des propriétés de balise {#viewing-tag-properties}
 
@@ -243,7 +243,7 @@ Il peut s’avérer utile de déterminer le contenu appliqué à une balise part
 
    ![Affichage du détail des références de la balise](assets/tag-references-detail.png)
 
-Passez la souris ou appuyez sur un contenu de référence dans la liste pour afficher le chemin d’accès complet du contenu.
+Passez la souris ou sélectionnez un contenu de référence dans la liste pour afficher le chemin d’accès complet du contenu.
 
 Pour plus d’informations sur la sélection des modes d’affichage et le rail, voir [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -268,7 +268,7 @@ Il peut être nécessaire de nettoyer ou de réorganiser votre taxonomie de bali
       * Ce champ est prérenseigné avec l’emplacement actuel de la balise.
       * Ne modifiez pas la balise si vous souhaitez uniquement la renommer et ne pas la déplacer.
 
-   ![Déplacer le tag](assets/move-tag.png)
+   ![Déplacer la balise](assets/move-tag.png)
 
 1. Sélectionnez **Envoyer**.
 
@@ -304,7 +304,7 @@ Si votre taxonomie de balisage change et rend une balise ou un espace de noms in
 
 1. AEM vérifie que la balise n’est pas référencée.
 
-   1. Si aucune référence n’est trouvée, AEM demande une confirmation finale de suppression. Sélectionnez **Supprimer**
+   1. Si aucune référence n’est trouvée, AEM demande une confirmation finale de suppression. Sélectionner **Supprimer**
 
       ![Aucune référence trouvée](assets/no-references-found.png)
 
@@ -351,7 +351,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 ## Gestion des balises dans différentes langues {#managing-tags-in-different-languages}
 
-La propriété `title` d’une balise peut être traduite en plusieurs langues. Une fois traduit, le titre de la balise approprié peut s’afficher en fonction de l’utilisateur ou de la langue du contenu.
+La variable `title` d’une balise peut être traduite en plusieurs langues. Une fois traduit, le titre de la balise approprié peut s’afficher en fonction de l’utilisateur ou de la langue du contenu.
 
 Supposons que nous ayons une balise appelée `Animals` que nous voulons traduire en allemand et en français.
 

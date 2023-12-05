@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2400'
-ht-degree: 81%
+source-wordcount: '2391'
+ht-degree: 80%
 
 ---
 
@@ -221,7 +221,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
    >
    >La collection mise le plus récemment à jour est sélectionnée par défaut sur la page **[!UICONTROL Ajouter à la collection]**.
 
-1. Sélectionnez **[!UICONTROL Ajouter]**. Un message confirme l’ajout de la collection à la collection cible sur la page **[!UICONTROL Sélectionner la destination]**. Fermez le message pour terminer le processus.
+1. Sélectionner **[!UICONTROL Ajouter]**. Un message confirme l’ajout de la collection à la collection cible sur la page **[!UICONTROL Sélectionner la destination]**. Fermez le message pour terminer le processus.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la 
 
 1. Dans la console Collections, sélectionnez une collection sur laquelle exécuter un workflow.
 1. Sélectionnez l’icône de navigation globale, puis choisissez **[!UICONTROL Chronologie]** dans la liste.
-1. Dans la chronologie, sélectionnez ou appuyez sur l’icône en forme de signe circonflexe située en bas, puis sélectionnez **[!UICONTROL Démarrer le processus]**.
+1. Dans la chronologie, sélectionnez l’icône en forme de signe circonflexe située en bas, puis sélectionnez **[!UICONTROL Démarrer le processus]**.
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste. Par exemple, sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de DAM]**.
 1. Saisissez un titre pour le workflow, puis sélectionnez **[!UICONTROL Début]**.
 1. Dans la boîte de dialogue, sélectionnez **[!UICONTROL Continuer]**. Le workflow s’exécute sur toutes les ressources de la collection.

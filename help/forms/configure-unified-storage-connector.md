@@ -2,10 +2,10 @@
 title: Comment configurer Unified Storage Connector (USC) pour AEM Forms ?
 description: Découvrez comment gérer Unified Storage Connector (USC) pour AEM Forms. Utilisez le connecteur de stockage unifié (USC) pour connecter AEM Forms à des entrepôts de données externes.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 78%
+source-wordcount: '642'
+ht-degree: 72%
 
 ---
 
@@ -26,10 +26,10 @@ Avant d’exécuter ces étapes, vérifiez que vous disposez d’un compte de st
 Pour créer une configuration de stockage [!DNL Azure], procédez comme suit :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Stockage Azure]**.
-1. Sélectionnez un dossier pour créer la configuration et appuyez sur **[!UICONTROL Créer]**.
+1. Sélectionnez un dossier pour créer la configuration, puis sélectionnez **[!UICONTROL Créer]**.
 1. Indiquez un titre pour la configuration dans le champ **[!UICONTROL Titre]**.
 1. Indiquez le nom du compte de stockage [!DNL Azure] dans le champ **[!UICONTROL Compte de stockage Azure]**.
-1. Indiquez la clé pour accéder au compte de stockage Azure dans le champ **[!UICONTROL Clé d’accès Azure]** et appuyez sur **[!UICONTROL Enregistrer]**.
+1. Spécifiez la clé pour accéder au compte de stockage Azure dans le **[!UICONTROL Clé d’accès Azure]** champ et sélectionnez **[!UICONTROL Enregistrer]**.
 
 ### Configuration du connecteur de stockage unifié (USC) pour les processus AEM {#configure-unified-storage-connector-workflows}
 
@@ -39,17 +39,17 @@ Effectuez les étapes suivantes pour configurer Unified Storage Connector (USC) 
 
 1. Dans la section **[!UICONTROL Workflow]**, sélectionnez **[!UICONTROL Azure]** dans la liste déroulante Stockage.
 1. Spécifiez le [chemin de configuration pour la configuration de stockage Azure](#create-azure-storage-configuration) dans le champ **[!UICONTROL Chemin de configuration de stockage]**.
-1. Appuyez sur **[!UICONTROL Publier]**, puis sur **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
+1. Sélectionner **[!UICONTROL Publier]** puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
 ### Configuration d’un modèle de workflow AEM pour le stockage de données externe {#configure-workflow-external-data-storage}
 
 Suivez les étapes suivantes pour configurer un modèle de workflow AEM pour un stockage de données externe :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflows]** > **[!UICONTROL Modèles]**.
-1. Sélectionnez un nom de modèle et appuyez sur **[!UICONTROL Modifier]**.
-1. Appuyez sur l’icône Informations sur la page et appuyez sur **[!UICONTROL Ouvrir les propriétés]**.
+1. Sélectionnez un nom de modèle et sélectionnez **[!UICONTROL Modifier]**.
+1. Sélectionnez l’icône Informations sur la page, puis **[!UICONTROL Ouvrir les propriétés]**.
 1. Sélectionnez **[!UICONTROL Externaliser le stockage des données de workflow]**.
-1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer les propriétés.
+1. Sélectionnez **[!UICONTROL Enregistrer et fermer]** pour enregistrer les propriétés.
 
 >[!NOTE]
 >

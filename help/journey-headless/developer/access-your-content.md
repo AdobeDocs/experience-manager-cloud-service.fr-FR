@@ -2,10 +2,10 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 98%
+source-wordcount: '1335'
+ht-degree: 97%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Avant de commencer à lancer des requêtes sur votre contenu, suivez les étapes suivantes :
 
 * Activez votre point d’entrée ;
-   * Utilisez Outils -> Général -> GraphQL.
+   * Utilisez Outils > Général > GraphQL
    * [Activer votre point d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
       * Cela permet également d’activer l’IDE GraphiQL.
 
@@ -269,7 +269,7 @@ Les modèles de fragment sont utilisés :
 
 Les requêtes peuvent être saisies dans l’interface GraphiQL. Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
-* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
+* **Outils** > **Général** > **Éditeur de requêtes GraphQL**
 * directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/graphiql-interface.png "Interface GraphiQL")

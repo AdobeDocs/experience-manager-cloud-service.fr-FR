@@ -2,10 +2,10 @@
 title: Comment ajouter une note de bas de page à un formulaire adaptatif ?
 description: Utilisez l’éditeur de texte enrichi pour les notes de bas de page dans un formulaire adaptatif.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 78%
+source-wordcount: '429'
+ht-degree: 77%
 
 ---
 
@@ -33,7 +33,7 @@ Dans les formulaires adaptatifs, [!UICONTROL la note de bas de page] est utilis�
 Pour ajouter une note de bas de page dans les formulaires adaptatifs, procédez comme suit :
 1. Ouvrez un formulaire adaptatif en mode **Édition**.
 1. À partir du navigateur de composant, faites glisser et déposez le composant **[!UICONTROL Texte]** sur le formulaire adaptatif.
-1. Sélectionnez la variable **[!UICONTROL Texte]** composant que vous avez ajouté et appuyez sur ![cmppr](assets/configure-icon.svg) pour modifier ses propriétés.
+1. Sélectionnez la variable **[!UICONTROL Texte]** composant que vous avez ajouté et sélectionnez ![cmppr](assets/configure-icon.svg) pour modifier ses propriétés.
 
    ![Note de bas de page dans les formulaires adaptatifs.](/help/forms/assets/footnote_rte.png)
 

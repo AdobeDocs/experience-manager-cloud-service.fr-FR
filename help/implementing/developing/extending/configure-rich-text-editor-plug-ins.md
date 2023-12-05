@@ -4,10 +4,10 @@ description: Découvrez comment configurer l’éditeur de texte enrichi [!DNL A
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4298'
-ht-degree: 84%
+source-wordcount: '4303'
+ht-degree: 82%
 
 ---
 
@@ -59,7 +59,7 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
 
 Après activation d’un module externe, suivez ces instructions pour configurer la propriété `features`.
 
-| | Activer toutes les fonctions | Activer des fonctions spécifiques. | Désactiver toutes les fonctions. |
+| | Activer toutes les fonctions | Activez quelques fonctions spécifiques. | Désactiver toutes les fonctions. |
 |---|---|---|---|
 | Nom | features | features | features |
 | Type | Chaîne | `String` (multichaîne ; définissez le type sur `String` et cliquez sur `Multi` dans CRXDE Lite) | Chaîne |
@@ -95,7 +95,7 @@ Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs d
 
 Pour configurer l’éditeur de texte enrichi afin qu’il affiche les icônes requises, procédez comme suit.
 
-1. Accédez à votre composant, par exemple `/apps/<myProject>/components/text`.
+1. Accédez à votre composant, par exemple : `/apps/<myProject>/components/text`.
 1. Accédez au nœud `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
 1. Créez la propriété `features` sur le nœud `edit` et ajoutez une ou plusieurs des fonctions. Enregistrez toutes les modifications.
 
@@ -228,7 +228,7 @@ Cette opération et effectuée en activant le module externe Styles.
 
 Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référencer :
 
-1. Accédez au nœud racine de votre composant Texte, par exemple. `/apps/<myProject>/components/text`
+1. Accédez au noeud racine de votre composant Texte, par exemple : `/apps/<myProject>/components/text`.
 1. Ajoutez la propriété `externalStyleSheets` au nœud parent de `<rtePlugins-node>` :
 
    * **Nom** `externalStyleSheets`
@@ -302,8 +302,8 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
    * Valeur : `jpn-word-wrap` (sans préfixe `.`)
 
 1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que les auteurs voient lors de la sélection du style.
-   * Nom : `text`
-*Type : `String`
+   * Nom : `text`
+*Type : `String`
    * Valeur : `Japanese word-wrap`
 
 1. Créez une feuille de style et spécifiez son chemin d’accès. Consultez [spécification de l’emplacement de la feuille de style](#locationofstylesheet). Ajoutez le contenu suivant à la feuille de style. Modifiez la couleur d’arrière-plan selon vos besoins.
@@ -329,7 +329,7 @@ Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise b
 
 >[!NOTE]
 >
->Si une balise block (par exemple, une balise `<hr>`) ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe `paraformat`.
+>Si une balise block, par exemple, une `<hr>` balise, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour une balise `paraformat` plug-in .
 
 Lorsque le module externe Formats de paragraphe est activé pour la première fois, aucun format de paragraphe par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
 
@@ -584,7 +584,7 @@ Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.
 
 >[!NOTE]
 >
-Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
+Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il ne s’exécute pas automatiquement lorsque vous commencez à saisir du texte.
 >
 Pour exécuter le vérificateur orthographique, sélectionnez le bouton Vérificateur orthographique dans la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
 >

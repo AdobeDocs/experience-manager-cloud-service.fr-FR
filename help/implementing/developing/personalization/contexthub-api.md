@@ -2,9 +2,9 @@
 title: Référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4602'
 ht-degree: 98%
 
 ---
@@ -162,7 +162,7 @@ Fusionne un objet de données ou un tableau contenant les données de magasin. C
 * **Objet :** les clés sont les noms des propriétés.
 * **Table :** les clés sont les index de tableau.
 
-Notez que les valeurs peuvent être des objets.
+Les valeurs peuvent être des objets.
 
 ##### Paramètres {#parameters-addallitems}
 

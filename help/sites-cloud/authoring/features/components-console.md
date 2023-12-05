@@ -2,10 +2,10 @@
 title: Console des composants
 description: La console Composants vous permet de parcourir tous les composants définis pour votre instance.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 69%
+ht-degree: 66%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 69%
 
 La console Composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés de chaque composant.
 
-Elle est accessible via **Outils** -> **Général** -> **Composants**. En l’absence d’arborescence, seul la vue Liste est disponible.
+Il est accessible à partir de **Outils >** **Général >** **Composants**. En l’absence d’arborescence, seul la vue Liste est disponible.
 
 ![Console Composants](/help/sites-cloud/authoring/assets/components-console.png)
 

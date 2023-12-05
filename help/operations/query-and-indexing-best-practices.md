@@ -3,10 +3,10 @@ title: Bonnes pratiques en matière de requête et d’indexation
 description: Découvrez comment optimiser vos index et requêtes en fonction des bonnes pratiques d’Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 47%
+source-wordcount: '3088'
+ht-degree: 46%
 
 ---
 
@@ -171,7 +171,7 @@ Examinez la requête suivante :
 
 ...qui contient -
 * 3 restrictions
-   * Type de nœud (`dam:Asset`)
+   * Type de noeud (`dam:Asset`)
    * Chemin (descendants) `/content/dam`)
    * Propriété (`jcr:content/metadata/dc:title = "My Title"`)
 * Classement par `jcr:created` property
@@ -211,7 +211,7 @@ Considérer une requête différente -
 
 ...qui contient -
 * 3 restrictions
-   * Type de nœud (`dam:Asset`)
+   * Type de noeud (`dam:Asset`)
    * Chemin (descendants) `/content/dam`)
    * Propriété (`jcr:content/metadata/myProperty = "My Property Value"`)
 * Classement par `jcr:created` property**
@@ -319,7 +319,7 @@ Cela peut se produire pour plusieurs raisons :
 1. L’exécuteur de la requête tente d’itérer un jeu de résultats volumineux.
    * Cette situation peut se produire pour plusieurs raisons, comme indiqué ci-dessous :
 
-| Cause  | Atténuation |
+| Cause | Atténuation |
 |----------|--------------|
 | La Commission de `p.guessTotal` (ou l’utilisation d’un paramètre guessTotal très volumineux) provoquant l’itération de QueryBuilder sur un grand nombre de résultats comptant les résultats. | Fournir `p.guessTotal` avec une valeur appropriée |
 | Utilisation d’une limite importante ou illimitée dans Query Builder (c’est-à-dire `p.limit=-1`) | Utilisez la valeur appropriée pour `p.limit` (idéalement, 1 000 ou moins) |

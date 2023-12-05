@@ -4,10 +4,10 @@ description: Découvrez comment préparer le contenu à traduire lors du dévelo
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 83%
+source-wordcount: '756'
+ht-degree: 73%
 
 ---
 
@@ -68,8 +68,8 @@ Créez une racine de langue comme page racine d’une copie de langue qui identi
 
 Pour créer la racine de langue, créez une page, puis utilisez le code de langue ISO comme valeur de la propriété **Nom**. Le code de la langue doit être dans l’un des formats suivants :
 
-* `<language-code>` – Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple `en`.
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>` – Le code pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, défini par la norme ISO-3166, par exemple `en_US`, `en_us`, `en-gb`, `en_GB`.
+* `<language-code>` - Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple : `en`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - Le code de pays pris en charge est un code à deux lettres en minuscules ou en majuscules, comme défini par la norme ISO 3166, par exemple : `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. La variable **Nom** est utilisée comme nom du noeud de page dans le référentiel et détermine donc le chemin d’accès de la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -80,7 +80,7 @@ Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie p
    ![Créer une page](../assets/create-page.png)
 
 1. Sélectionnez le modèle de page, puis sélectionnez **Suivant**.
-1. Dans le champ **Nom**, entrez le code de pays au format `<language-code>` ou `<language-code>_<country-code>`, par exemple `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
+1. Dans le **Nom** saisissez le code pays au format de `<language-code>` ou `<language-code>_<country-code>`, par exemple : `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
 
    ![Création d’une page racine de langue](../assets/create-language-root.png)
 
@@ -102,7 +102,7 @@ Utilisez la vue de procédure suivante pour les copies de langue d’une page à
 
 ## Copies de langue à plusieurs niveaux {#multiple-levels}
 
-Les racines de langues peuvent désormais être regroupées dans des nœuds, par exemple par région, tout en restant reconnues en tant que racines de copies de langue.
+Les racines de langue peuvent également être regroupées sous des noeuds, par exemple, par région, tout en étant toujours reconnues comme racines de copies de langue.
 
 ```text
 /content

@@ -2,10 +2,10 @@
 title: Gérer les pages et les modèles de catalogue de produits
 description: Découvrez comment gérer les pages et les modèles de catalogue de produits
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -89,7 +89,7 @@ Le modèle peut être prévisualisé avec n’importe quelle catégorie/produit.
 
 ![créer un modèle ](assets/create-template-picker.png)
 
-Nous devons maintenant affecter ce modèle à la catégorie spécifique. Ouvrez les propriétés dans le menu **Informations sur la page** et passez à l’onglet commerce. Cliquez sur l’icône de dossier pour sélectionner la variable **Magasiner le look** dans le sélecteur de catégorie. Il est possible d’affecter plusieurs catégories à un modèle et d’inclure également des sous-catégories en activant la case à cocher.
+Vous devez maintenant attribuer ce modèle à la catégorie spécifique. Ouvrez les propriétés dans le menu **Informations sur la page** et passez à l’onglet commerce. Cliquez sur l’icône de dossier pour sélectionner la variable **Magasiner le look** dans le sélecteur de catégorie. Il est possible d’affecter plusieurs catégories à un modèle et d’inclure également des sous-catégories en activant la case à cocher.
 
 ![créer un modèle associé](assets/create-template-associate.png)
 

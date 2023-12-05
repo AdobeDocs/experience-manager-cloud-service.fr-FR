@@ -3,7 +3,7 @@ title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres
 keywords: comment sélectionner une action d’envoi pour un formulaire adaptatif, connecter un formulaire adaptatif à la liste sharepoint, connecter un formulaire adaptatif à la bibliothèque de documents sharepoint, connecter un formulaire adaptatif au modèle de données de formulaire
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '4006'
 ht-degree: 74%
@@ -198,7 +198,7 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint, procédez comme 
 
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, le message `Connection Successful` s’affiche.
 1. Sélectionner **[!UICONTROL Site SharePoint]** et **[!UICONTROL Liste SharePoint]** dans la liste déroulante.
-1. Appuyer **[!UICONTROL Créer]** pour créer la configuration cloud pour Microsoft® SharePointList.
+1. Sélectionner **[!UICONTROL Créer]** pour créer la configuration cloud pour Microsoft® SharePointList.
 
 
 #### Utilisation de l’option Envoyer à l’aide d’un modèle de données de formulaire dans un formulaire adaptatif {#use-submit-using-fdm}

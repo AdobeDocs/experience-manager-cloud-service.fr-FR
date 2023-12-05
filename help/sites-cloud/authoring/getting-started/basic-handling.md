@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2945'
-ht-degree: 90%
+source-wordcount: '2943'
+ht-degree: 88%
 
 ---
 
@@ -17,13 +17,13 @@ Ce document donne un aperçu des opérations de gestion de base dans l’environ
 >[!NOTE]
 >
 >* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles uniquement. Vous trouverez des informations spécifiques et plus détaillées sur les consoles individuelles et leurs fonctionnalités associées sur d’autres pages.
->* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* Des raccourcis clavier sont disponibles dans toute AEM. En particulier lorsque [utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) et [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
 ## Interface utilisateur pour écrans tactiles {#a-touch-enabled-ui}
 
-L’interface utilisateur d’AEM est adaptée aux écrans tactiles. Une interface tactile vous permet d’interagir avec le logiciel en appuyant sur l’écran, en maintenant la touche enfoncée et en le faisant glisser. L’interface utilisateur d’AEM étant tactile, vous pouvez utiliser les mouvements des doigts sur vos appareils tactiles, tels que votre téléphone mobile ou votre tablette. Cependant, les actions de la souris sur un poste de travail traditionnel sont également disponibles, ce qui vous offre davantage de flexibilité pour créer votre contenu.
+L’interface utilisateur d’AEM est adaptée aux écrans tactiles. Une interface tactile vous permet d’interagir avec le logiciel par des gestes tels que la sélection, le toucher et le glissement. L’interface utilisateur d’AEM étant tactile, vous pouvez utiliser les mouvements des doigts sur vos appareils tactiles, tels que votre téléphone mobile ou votre tablette. Cependant, les actions de la souris sur un poste de travail traditionnel sont également disponibles, ce qui vous offre davantage de flexibilité pour créer votre contenu.
 
 ## Premiers pas {#first-steps}
 
@@ -53,7 +53,7 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](#navigation-panel)** : représenté par une boussole  et le panneau par défaut lorsque vous vous connectez à AEM
+* **[Navigation](#navigation-panel)** - Représenté par une boussole et le panneau par défaut lorsque vous vous connectez à AEM
 * **[Outils](#tools-panel)** : représenté par un marteau
 
 Consultez les options disponibles dans ces panneaux ci-dessous.
@@ -255,9 +255,9 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
 
 | Mode | Sélectionner Tactile | Sélectionner Bureau | Désélectionner Tactile | Désélectionner Bureau |
 |---|---|---|---|---|
-| Colonnes | Appuyer sur la miniature | Cliquer sur la miniature | Appuyer sur la miniature | Cliquer sur la miniature |
-| Carte | Appuyer sur la carte et maintenir la pression | Placer le pointeur de la souris dessus, puis utiliser l’action rapide sous forme de coche | Appuyer sur la carte | Cliquer sur la carte |
-| Liste | Appuyer sur la miniature | Cliquer sur la miniature | Appuyer sur la miniature | Cliquer sur la miniature |
+| Colonnes | Sélectionner la miniature | Cliquer sur la miniature | Sélectionner la miniature | Cliquer sur la miniature |
+| Carte | Sélectionner la carte et la maintenir enfoncée | Placer le pointeur de la souris dessus, puis utiliser l’action rapide sous forme de coche | Sélectionner la carte | Cliquer sur la carte |
+| Liste | Sélectionner la miniature | Cliquer sur la miniature | Sélectionner la miniature | Cliquer sur la miniature |
 
 #### Tout sélectionner {#select-all}
 
@@ -436,7 +436,7 @@ La colonne Chronologie permet d’effectuer les opérations suivantes :
          * À l’exception des workflows transitoires, car aucune information historique n’est enregistrée pour ceux-ci <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * Tout afficher
 
-* Ajouter/afficher des commentaires sur l’élément sélectionné. La zone **Commentaire** s’affiche dans la partie inférieure de la liste des événements. Saisissez un commentaire, puis appuyez sur Entrée pour l’enregistrer. Il s’affiche si vous sélectionnez l’option **Commentaires** ou **Tout afficher**.
+* Ajouter/afficher des commentaires sur l’élément sélectionné. La zone **Commentaire** s’affiche dans la partie inférieure de la liste des événements. Saisissez un commentaire suivi d’un retour à la ligne pour enregistrer le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
 
 * Certaines consoles possèdent des fonctionnalités supplémentaires. Par exemple, dans la console Sites, vous pouvez :
 

@@ -1,15 +1,15 @@
 ---
-source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 56%
+source-wordcount: '739'
+ht-degree: 51%
 
 ---
 # Instructions relatives à la contribution à la documentation d’Adobe Experience Manager
 
 ## Philosophie de la documentation
 
-Les utilisateurs d’Adobe Experience Manager travaillent dans des environnements très concurrentiels, afin de créer des expériences numériques qui les distingueront de leurs concurrents. Par conséquent, il est essentiel que, lorsque Adobe fournit de nouveaux outils avancés dans AEM, ces outils soient complétés par une documentation précise et claire pour permettre au client d’utiliser immédiatement son investissement AEM et maximiser le ROI.
+Les utilisateurs de Adobe Experience Manager travaillent dans des environnements très concurrentiels, afin de créer des expériences numériques qui les distingueront de leurs concurrents. Par conséquent, il est essentiel que, lorsque Adobe fournit de nouveaux outils avancés dans AEM, ces outils soient complétés par une documentation précise et claire pour permettre au client d’utiliser immédiatement son investissement AEM et maximiser le ROI.
 
 L’objectif de la documentation AEM est de la placer entre les mains des utilisateurs d’AEM dès que possible. Par conséquent, l’équipe de documentation AEM donne la priorité à une documentation précise et utilisable, et s’efforce de la mettre à jour et de l’améliorer continuellement.
 
@@ -27,7 +27,7 @@ Les contributions qui ne satisfont pas à ces normes peuvent être rejetées.
 
 La documentation d’AEM couvre les cas d’utilisation standard. Les cas d’utilisation au-delà de la portée de l’installation et de l’utilisation standard du produit ne font pas partie de la documentation AEM.
 
-### L’équipe de documentation du Experience Manager ne documente généralement pas les bogues ni leurs solutions.
+### En règle générale, l’équipe de documentation du Experience Manager ne documente pas les bogues ni leurs solutions.
 
 La documentation d’AEM couvre les cas d’utilisation standard. Pour cette raison, les bogues, les effets causés par les bogues et les solutions aux bogues ne sont pas documentés,
 
@@ -39,7 +39,7 @@ Toute opinion susceptible d’améliorer la documentation AEM est la bienvenue s
 
 Toute question relative à l’utilisation d’AEM ou à la résolution d’erreurs techniques doit être soumise au moyen du processus d’assistance classique via le [Portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#home) ou posée à la [communauté Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr).
 
-***Les contributions à la documentation AEM ne remplacent pas le service clientèle d’Adobe*** et toute contribution de ce type visant à obtenir des réponses aux questions d’assistance est refusée.
+***Les contributions à la documentation AEM ne remplacent pas le service clientèle d’Adobe*** et toute contribution de ce type visant à obtenir des réponses à des questions d’assistance est refusée.
 
 ### Les contributions doivent clairement référencer les pages de documentation concernées.
 
@@ -63,7 +63,7 @@ Suivez ces instructions pour simplifier la révision de votre contribution et, p
 
 N’oubliez pas que les lecteurs de la documentation AEM sont internationaux et ne peuvent pas être des locuteurs anglais natifs ou bilingues. Évitez les expressions familières et restez aussi clair et simple que possible.
 
-#### Suivez le guide de style Microsoft®
+#### Suivez le guide de style de Microsoft®
 
 [Le guide de style de Microsoft®](https://learn.microsoft.com/en-us/style-guide/welcome/) est un guide de style de documentation gratuit qui se concentre sur la documentation logicielle et AEM documentation suit ce guide dans la mesure du possible.
 
@@ -79,7 +79,7 @@ N’oubliez pas que les lecteurs de la documentation AEM sont internationaux et 
 
 Les captures d’écran doivent être utilisées de manière judicieuse et uniquement lorsqu’une description textuelle est insuffisante.
 
-Les marqueurs ou autres annotations dans les captures d’écran (comme les cadres rouges, les flèches ou le texte) ne doivent pas être utilisés. Ainsi, les captures d’écran sont plus faciles à réutiliser ou à répliquer dans les versions localisées de la documentation.
+N’utilisez pas de marqueurs ni d’autres annotations dans les captures d’écran (comme les cadres rouges, les flèches ou le texte). Ainsi, les captures d’écran sont plus faciles à réutiliser ou à répliquer dans les versions localisées de la documentation.
 
 ### Références spécifiques à la version
 
@@ -87,6 +87,6 @@ Dans la mesure du possible, évitez toute référence directe à une version sp�
 
 ### Utilisation de Day, AEM, CQ, CRX
 
-Le produit doit toujours être appelé par son nom complet **Adobe Experience Manager** pour la première fois dans un article et peut ensuite être appelé **AEM**.
+Le produit doit toujours être appelé par son nom complet. **Adobe Experience Manager** pour la première fois dans un article et peut ensuite être appelé **AEM**.
 
-Day, logiciel Day, CQ et CRX ne doivent pas être utilisés, sauf lorsqu’ils sont inévitables, par exemple dans les noms de classe ou en faisant référence à l’historique d’AEM.
+N’utilisez pas Day, Day Software, CQ et CRX, sauf lorsque cela est inévitable, par exemple dans les noms de classe ou en faisant référence à l’historique de l’AEM.

@@ -2,10 +2,10 @@
 title: Ajout de ContextHub à des pages et accès à des magasins
 description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 96%
+source-wordcount: '897'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Pour activer les fonctionnalités ContextHub et créer un lien vers les biblioth
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Notez que vous devez également configurer si la barre d’outils ContextHub s’affiche ou non en mode Aperçu. Voir [Affichage et masquage de l’UI ContextHub](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+Vous devez également configurer si la barre d’outils ContextHub s’affiche en mode Aperçu. Voir [Affichage et masquage de l’UI ContextHub](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## À propos des magasins ContextHub {#about-contexthub-stores}
 
@@ -103,7 +103,7 @@ Les éléments de données individuels sont stockés sous la forme d’un ensemb
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Notez que les magasins candidats personnalisés peuvent définir des fonctions supplémentaires qui permettent d’accéder aux données du magasin.
+Les candidats de magasin personnalisés peuvent définir des fonctions supplémentaires qui permettent d’accéder aux données de magasin.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
 >[!WARNING]
 >
->Les segments installés sont fournis en tant que configurations de référence afin de vous aider à créer votre propre configuration dédiée pour votre projet et, en tant que tels, ne doivent pas être utilisés directement.
+>Les segments installés sont fournis en tant que configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet. Ne les utilisez pas directement.
 
 ## Débogage de ContextHub {#debugging-contexthub}
 

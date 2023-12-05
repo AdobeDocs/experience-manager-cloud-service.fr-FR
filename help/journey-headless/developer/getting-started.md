@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3093'
-ht-degree: 94%
+source-wordcount: '3057'
+ht-degree: 93%
 
 ---
 
@@ -82,7 +82,7 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 
-* L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
+* L’API GraphQL vous permet de créer des demandes d’accès et de diffusion de fragments de contenu.
 * L’API REST Assets vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours sans interface AEM. Ou, voir [ressources supplémentaires](#additional-resources) pour plus d’informations.
@@ -181,7 +181,7 @@ Créez un plan pour la traduction de contenu dont vous avez besoin.
 
 Clarifiez la situation concernant votre workflow de mise à jour de contenu. Quel est le processus d’approbation que le système doit prendre en charge ? Est-il possible d’utiliser des workflows AEM pour automatiser ce processus ?
 
-Notez qu’il est possible d’utiliser votre [hiérarchie de contenu](#content-hierarchy) pour faciliter la traduction.
+Votre [hiérarchie du contenu](#content-hierarchy) peut être utilisé pour faciliter la traduction.
 
 Consultez la section des [ressources supplémentaires](#additional-resources) pour obtenir de la documentation supplémentaire sur les workflows AEM et les outils de traduction, y compris des liens vers le parcours de traduction découplée AEM.
 

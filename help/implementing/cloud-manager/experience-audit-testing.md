@@ -2,10 +2,10 @@
 title: Tests d’audit de l’expérience
 description: Découvrez comment l’audit de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation des moteurs de recherche.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 90%
+source-wordcount: '585'
+ht-degree: 82%
 
 ---
 
@@ -35,7 +35,7 @@ L’audit de l’expérience est optimisé par Google Lighthouse, un outil open
 
 >[!INFO]
 >
->À compter du 31 août 2023, le contrôle de l’expérience effectuera la transition vers la présentation des résultats spécifiques à la plateforme mobile. Notez que les mesures de performances mobiles s’inscrivent généralement en dessous de celles des ordinateurs de bureau. Vous devez donc anticiper un changement des performances signalées suite à ce changement.
+>À compter du 31 août 2023, le contrôle de l’expérience effectuera la transition vers la présentation des résultats spécifiques à la plateforme mobile. Les mesures de performances mobiles s’inscrivent généralement en dessous de celles des ordinateurs de bureau. Vous devez donc anticiper un changement des performances signalées suite à ce changement.
 
 >[!TIP]
 >
@@ -58,11 +58,11 @@ Il existe pour chaque type de test un score au niveau agrégé, tel que les perf
 
 La mesure de modification peut avoir l’une des valeurs suivantes.
 
-* **Valeur positive** : la ou les pages ont été améliorées sur le test sélectionné depuis la dernière exécution du pipeline de production.
+* **Valeur positive** - Les pages ont été améliorées sur le test sélectionné depuis la dernière exécution du pipeline de production.
 
-* **Valeur négative** : la ou les pages ont régressé sur le test sélectionné depuis la dernière exécution du pipeline de production.
+* **Valeur négative** : les pages ont régressé sur le test sélectionné depuis la dernière exécution du pipeline de production.
 
-* **Aucune modification** : la ou les pages ont obtenu le même score depuis la dernière exécution du pipeline de production.
+* **Aucune modification** - Les pages ont obtenu le même score depuis la dernière exécution du pipeline de production.
 
 * **N/A** : il n’y a pas de score précédent avec lequel effectuer la comparaison.
 

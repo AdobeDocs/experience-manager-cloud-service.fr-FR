@@ -2,10 +2,10 @@
 title: Personnaliser la création de pages
 description: Découvrez les mécanismes proposés par AEM as a Cloud Service pour personnaliser la fonctionnalité de création de pages.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 32%
+source-wordcount: '937'
+ht-degree: 24%
 
 ---
 
@@ -68,12 +68,12 @@ Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Mark
 
 Lors de la création de pages, l’utilisateur doit souvent effectuer une sélection dans les ressources d’une liste.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Par exemple, si le composant `pathbrowser` Granite est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource spécifique, les chemins d’accès présentés peuvent être filtrés comme suit :
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Par exemple, si la variable `pathbrowser` Le composant Granite permet à l’utilisateur de sélectionner le chemin d’accès à une ressource particulière. Les chemins présentés peuvent être filtrés comme suit :
 
 * Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Spécifiez un nom pour le prédicat et faites-y référence lors de l’utilisation de `pathbrowser`.
 
-Pour plus d’informations sur la création d’un prédicat personnalisé, consultez [cet article.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+Pour plus d’informations sur la création d’un prédicat personnalisé, voir [cet article.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
 
 ## Ajouter une nouvelle action à une barre d’outils de composant {#add-new-action-to-a-component-toolbar}
 
@@ -109,7 +109,7 @@ Dans une installation AEM standard :
 1. Vous pouvez configurer d’autres détails de configuration de l’éditeur à l’aide d’un `config` noeud contenant des configurations et un `plugin` pour contenir les détails de configuration du module externe nécessaires.
 
 
-Voici un exemple de définition des proportions pour le module externe de recadrage d’image du composant d’image.
+Voici un exemple de définition des proportions pour le module externe de recadrage d’image du composant image.
 
 ```xml
    <cq:inplaceEditing
@@ -158,7 +158,7 @@ Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Mark
 
 ## Ajout d’une action Nouvelle page {#add-a-new-page-action}
 
-Pour ajouter une nouvelle action de page à la barre d’outils de la page, par exemple une **Retour à Sites** (console).
+Pour ajouter une nouvelle action de page à la barre d’outils de la page, par exemple, une **Retour à Sites** (console).
 
 ### Exemple de code {#code-sample-3}
 
@@ -180,5 +180,5 @@ Pour appliquer un comportement personnalisé à une telle activation, vous pouve
 
    * Cette opération remplace l’instance commune de `/libs/cq/gui/content/common/managepublicationwizard`.
 
-1. Mettez à jour le modèle de workflow et les configurations/scripts associés suivant les besoins.
+1. Mettez à jour le modèle de workflow et les configurations/scripts associés selon les besoins.
 1. Retirer le droit au `replicate` action de tous les utilisateurs appropriés pour toutes les pages pertinentes. Pour que ce workflow soit déclenché comme action par défaut lorsque l’un des utilisateurs est concerné, essayez de publier (ou de répliquer) une page.

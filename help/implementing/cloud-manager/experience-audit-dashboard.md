@@ -2,9 +2,9 @@
 title: Tableau de bord du contrôle de l’expérience
 description: Découvrez comment le contrôle de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en termes de performances, d’accessibilité, de bonnes pratiques et d’optimisation pour les moteurs de recherche par le biais d’une interface de tableau de bord claire et informative.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '824'
 ht-degree: 22%
 
 ---
@@ -77,7 +77,7 @@ Dans le **Scores de Lighthouse** , vous trouverez une vue de tendance des diffé
 
 ![Graphique de scores de Lighthouse](assets/lighthouse-scores.png)
 
-Notez que chaque point du graphique est la moyenne de tous les déploiements pendant le mois d’intérêt.
+Chaque point du graphique est la moyenne de tous les déploiements pendant le mois d’intérêt.
 
 Pour revenir à la page d’exécution du pipeline de production, sélectionnez simplement la flèche Précédent sur votre navigateur.
 

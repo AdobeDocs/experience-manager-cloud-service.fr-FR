@@ -4,10 +4,10 @@ description: Découvrez comment ajouter des informations aux métadonnées d’u
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 69%
+source-wordcount: '693'
+ht-degree: 65%
 
 ---
 
@@ -27,8 +27,8 @@ Prenons un autre exemple de formulaire qui capture l’ID de courrier électroni
 Effectuez les étapes suivantes pour ajouter un élément aux métadonnées :
 
 1. Ouvrez votre formulaire adaptatif en mode d’édition.\
-   Pour ouvrir le formulaire en mode d’édition, dans Forms Manager, sélectionnez le formulaire, puis appuyez sur **[!UICONTROL Ouvrir]**.
-1. Dans le mode d’édition, sélectionnez un composant, appuyez sur ![field-level](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**, puis sur ![cmppr](assets/configure-icon.svg).
+   Pour ouvrir le formulaire en mode d’édition, dans le gestionnaire de formulaires, sélectionnez le formulaire et sélectionnez **[!UICONTROL Ouvrir]**.
+1. En mode d’édition, sélectionnez un composant, puis sélectionnez ![champ-level](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**, puis sélectionnez ![cmppr](assets/configure-icon.svg).
 1. Dans la barre latérale, cliquez sur **[!DNL Metadata]**.
 1. Dans la section Métadonnées, cliquez sur **[!DNL Add]**.
 1. Utilisez le champ Valeur de l’onglet Métadonnées pour ajouter des scripts. Les scripts que vous ajoutez collectent des données à partir d’éléments sur le formulaire et calculent les valeurs qui sont ajoutées aux métadonnées.

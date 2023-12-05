@@ -5,10 +5,10 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 80%
+source-wordcount: '1084'
+ht-degree: 69%
 
 ---
 
@@ -30,8 +30,8 @@ En résumé, la boîte de réception vous permet de créer une application et de
 ## Création d’une application {#create-application}
 
 1. Accédez à la boîte de réception AEM à l’adresse https://’[serveur]:[port/]’/aem/inbox.
-1. Dans l’interface utilisateur de la boîte de réception, appuyez sur **[!UICONTROL Créer > Application]**. La page Sélectionner l’application s’affiche.
-1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations dans le formulaire adaptatif et appuyez sur **[!UICONTROL Soumettre]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
+1. Dans l’interface utilisateur de la boîte de réception, sélectionnez **[!UICONTROL Créer > Application]**. La page Sélectionner l’application s’affiche.
+1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations du formulaire adaptatif et sélectionnez **[!UICONTROL Envoyer]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
 
 ## Gestion des tâches {#manage-tasks}
 
@@ -41,17 +41,17 @@ Lorsqu’un workflow Forms se déclenche et que vous êtes une personne désign�
 
 Les tâches affectées à un groupe apparaissent dans la boîte de réception de toutes les personnes membres du groupe. Toute personne membre du groupe peut demander la tâche ou la déléguer à une autre personne membre du groupe. Pour ce faire :
 
-1. Appuyez pour sélectionner la miniature de la tâche. Les options d’ouverture ou de délégation de la tâche s’affichent en haut.
+1. Sélectionnez cette option pour sélectionner la miniature de la tâche. Les options d’ouverture ou de délégation de la tâche s’affichent en haut.
 
    ![select-task](assets/select-task.png)
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pour déléguer la tâche, appuyez sur **[!UICONTROL Déléguer]**. La boîte de dialogue Déléguer l’élément s’affiche. Sélectionnez un utilisateur (vous pouvez également ajouter un commentaire) puis appuyez sur **[!UICONTROL OK]**.
+   * Pour déléguer la tâche, sélectionnez **[!UICONTROL Déléguer]**. La boîte de dialogue Déléguer l’élément s’affiche. Sélectionnez un utilisateur, ajoutez éventuellement un commentaire, puis cliquez sur **[!UICONTROL OK]**.
 
    ![déléguer](assets/delegate.png)
 
-   * Pour demander la tâche, appuyez sur **[!UICONTROL Ouvrir]**. La boîte de dialogue Auto-affecter s’affiche. Appuyer sur **[!UICONTROL Continuer]** pour demander la tâche. La tâche demandée apparaît dans votre boîte de réception, avec vous en tant que personne désignée.
+   * Pour demander la tâche, sélectionnez **[!UICONTROL Ouvrir]**. La boîte de dialogue Auto-affecter s’affiche. Sélectionner **[!UICONTROL Continuer]** pour demander la tâche. La tâche demandée apparaît dans votre boîte de réception, avec vous en tant que personne désignée.
 
    ![claim](assets/claim.png)
 
@@ -59,7 +59,7 @@ Les tâches affectées à un groupe apparaissent dans la boîte de réception de
 
 Lorsque vous ouvrez une tâche, vous pouvez afficher les détails de celle-ci et exécuter les actions disponibles. Les actions disponibles pour une tâche sont définies à l’étape Affecter une tâche du Forms Workflow associé.
 
-1. Appuyez pour sélectionner la miniature de la tâche. Les options pour ouvrir ou déléguer la tâche sélectionnée s’affichent en haut.
+1. Sélectionnez cette option pour sélectionner la miniature de la tâche. Les options pour ouvrir ou déléguer la tâche sélectionnée s’affichent en haut.
 1. Sélectionner **Ouvrir** pour afficher les détails de la tâche et les actions disponibles. La vue détaillée de la tâche s’ouvre. Dans cette vue, vous pouvez afficher les détails de la tâche et agir sur une tâche.
 
    >[!NOTE]
@@ -87,7 +87,7 @@ L’onglet Formulaire dans la zone de contenu principale affiche le formulaire e
 
 L’onglet Détails du workflow en haut affiche la progression de la tâche via différentes étapes du worflow. Il affiche les étapes terminées, en cours et en attente pour la tâche. Les étapes d’un processus sont définies à [l’étape Affecter une tâche](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem) du processus associé.
 
-En outre, l’onglet affiche l’historique de la tâche pour chaque étape terminée dans le workflow. Vous pouvez appuyer sur **[!UICONTROL Afficher les détails]** d’une étape terminée afin d’en connaître les détails. Cette action permet d’afficher les détails de la tâche : les commentaires, les pièces jointes de formulaire et de tâches, le statut, les dates de début et de fin, etc.
+En outre, l’onglet affiche l’historique de la tâche pour chaque étape terminée dans le workflow. Vous pouvez sélectionner **[!UICONTROL Afficher les détails]** pour une étape terminée afin de connaître les détails de cette étape. Cette action permet d’afficher les détails de la tâche : les commentaires, les pièces jointes de formulaire et de tâches, le statut, les dates de début et de fin, etc.
 
 ![workflow-details](assets/workflow-details.png)
 
@@ -101,12 +101,12 @@ Lorsque vous agissez sur la tâche, celle-ci se poursuit plus loin dans le workf
 
 La boîte de réception AEM affiche uniquement les tâches actives. Les tâches terminées n’apparaissent pas dans la liste. Cependant, vous pouvez utiliser les filtres de boîte de réception pour filtrer les tâches en fonction de plusieurs paramètres, tels que le type de tâche, l’état, les dates de début et de fin. Pour afficher les tâches terminées :
 
-1. Dans la boîte de réception AEM, appuyez sur ![toggle-side-panel1](assets/toggle-side-panel1.png) pour ouvrir le sélecteur de filtres.
-1. Appuyez sur l’accordéon **[!UICONTROL Statut de la tâche]** et choisissez **[!UICONTROL Terminé]**. Toutes vos tâches terminées s’affichent.
+1. Dans AEM boîte de réception, sélectionnez ![toggle-side-panel1](assets/toggle-side-panel1.png) pour ouvrir le sélecteur de filtre.
+1. Sélectionner **[!UICONTROL État de la tâche]** accordéon et sélectionnez **[!UICONTROL Terminer]**. Toutes vos tâches terminées s’affichent.
 
    ![filter](assets/filter.png)
 
-1. Appuyez pour sélectionner une tâche et appuyez sur **[!UICONTROL Ouvrir]**.
+1. Sélectionnez une tâche et cliquez sur **[!UICONTROL Ouvrir]**.
 
 La tâche s’ouvre pour afficher le document ou le formulaire adaptatif associé à la tâche. Pour les formulaires adaptatifs, la tâche affiche le formulaire adaptatif en lecture seule ou son document d’enregistrement PDF tel que configuré dans l’onglet Formulaire/Document de l’[étape Affecter une tâche du processus](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem).
 
@@ -114,7 +114,7 @@ La section de détails de la tâche affiche des informations telles qu’une mes
 
 ![completed-task](assets/completed-task.png)
 
-L’onglet **[!UICONTROL Détails du processus]** affiche chaque étape du processus. Appuyez sur **[!UICONTROL Afficher les détails]** d’une étape pour obtenir des informations détaillées.
+L’onglet **[!UICONTROL Détails du processus]** affiche chaque étape du processus. Sélectionner **[!UICONTROL Afficher les détails]** pour obtenir des informations détaillées.
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 

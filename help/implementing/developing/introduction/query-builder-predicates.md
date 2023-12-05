@@ -2,10 +2,10 @@
 title: Référence des prédicats de Query Builder
 description: Référence de prédicat pour l’API Query Builder dans AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 97%
+source-wordcount: '2270'
+ht-degree: 88%
 
 ---
 
@@ -23,13 +23,13 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
 * **`p.offset`** – Nombre indiquant le début de la page de résultats, c’est-à-dire le nombre d’éléments à ignorer.
 * **`p.limit`** – Nombre indiquant la taille de la page.
-* **`p.guessTotal`** – Recommandé : évite de calculer le total des résultats, une opération qui peut s’avérer fastidieuse. Il s’agit soit d’un nombre qui indique la limite de comptage maximale (par exemple 1 000, un nombre qui offre aux utilisateurs et utilisatrices suffisamment d’informations sur la taille approximative et des valeurs exactes pour des résultats plus petits), soit de `true` pour compter seulement jusqu’au minimum requis, `p.offset`+`p.limit`.
+* **`p.guessTotal`** - recommandé : évitez de calculer le total du résultat, ce qui peut être coûteux. Soit un nombre indiquant le total maximal à compter (par exemple, 1 000, un nombre qui donne aux utilisateurs suffisamment de commentaires sur la taille brute et les nombres exacts pour obtenir des résultats plus modestes). Ou, `true` pour ne compter que le minimum nécessaire `p.offset` + `p.limit`.
 * **`p.excerpt`** – Si la valeur est définie sur `true`, l’extrait de texte complet est inclus dans les résultats.
 * **`p.indexTag`** - si la valeur est définie, une option de balise d’index est incluse dans la requête (voir [Balise d’index d’option de requête](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
 * **`p.facetStrategy`** - si la valeur est définie sur `oak`, Query Builder délègue l’extraction des facettes à Oak (voir [Facettes](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** – (Uniquement pour le servlet JSON) sélectionne la manière dont les accès sont écrits au format JSON, avec ces éléments standard (extensibles via le service ResultHitWriter).
    * **`simple`** – Éléments minimaux tels que `path`, `title`, `lastmodified`, `excerpt` (s’ils sont définis).
-   * **`full`** – Rendu JSON Sling du nœud, avec `jcr:path` qui indique le chemin de l’accès. Par défaut, seules les propriétés directes du nœud sont répertoriées, inclure une arborescence plus profonde avec `p.nodedepth=N`, 0 signifiant l’ensemble de la sous-arborescence infinie. Ajoutez `p.acls=true` pour inclure les autorisations JCR de la session en cours sur l’élément de résultat donné (mappages : `create`=`add_node`, `modify`=`set_property`, `delete`=`remove`).
+   * **`full`** - rendu Sling JSON du noeud, avec `jcr:path` indiquant le chemin de l’accès. Par défaut, répertorie uniquement les propriétés directes du noeud, incluez une arborescence plus profonde avec la propriété `p.nodedepth=N`, avec 0 signifiant la sous-arborescence entière et infinie. Ajouter `p.acls=true` pour inclure les autorisations JCR de la session en cours sur l’élément de résultat donné (mappages : `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
    * **`selective`** – Uniquement les propriétés spécifiées dans `p.properties`, qui est une liste séparée par des espaces (utilisez `+` dans les URL) des chemins relatifs. Si le chemin relatif a une profondeur de `>1`, ces propriétés sont représentées sous la forme d’objets enfants. La propriété spéciale `jcr:path` inclut le chemin d’accès de l’accès.
 
 ### groupe {#group}
@@ -76,7 +76,7 @@ Ce prédicat permet de trier les résultats. Si un classement basé sur plusieur
 
 #### Propriétés {#properties-13}
 
-* **`orderby`** – Nom de propriété JCR indiqué par un caractère @ initial, par exemple `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou un autre prédicat dans la requête, par exemple `2_property`, sur la base duquel le tri doit être effectué.
+* **`orderby`** - soit le nom de propriété JCR indiqué par un caractère @ de début, par exemple, `@jcr:lastModified` ou `@jcr:content/jcr:title`ou un autre prédicat dans la requête, par exemple : `2_property`, sur laquelle trier
 * **`sort`** – Sens du tri, soit `desc` pour décroissant, soit `asc` pour croissant (valeur par défaut).
 * **`case`** – Si cette valeur est définie sur `ignore`, le tri ne respecte pas la casse, ce qui signifie que `a` vient avant `B` ; si cette valeur est vide ou ignorée, le tri respecte la casse, ce qui signifie que `B` vient avant `a`
 
@@ -92,7 +92,7 @@ Ce prédicat prend en charge l’extraction des facettes et fournit des interval
 
 #### Propriétés {#properties}
 
-* **`boolproperty`** – Chemin d’accès relatif à la propriété ; par exemple, `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
+* **`boolproperty`** - chemin relatif à la propriété, par exemple, `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
 * **`value`** – Valeur dont la propriété doit être vérifiée : `true` ou `false`
 
 ### contentfragment {#contentfragment}
@@ -134,10 +134,10 @@ Il ne prend pas en charge le filtrage.
 
 #### Propriétés {#properties-3}
 
-* **`property`** – Chemin d’accès relatif à une propriété `DATE` ; par exemple, `jcr:lastModified`
-* **`lowerBound`** – Limite de date inférieure pour laquelle la propriété doit être vérifiée ; par exemple, `2014-10-01`
+* **`property`** - chemin relatif à un `DATE` par exemple, `jcr:lastModified`
+* **`lowerBound`** - limite de date inférieure pour laquelle la propriété doit être vérifiée, par exemple : `2014-10-01`
 * **`lowerOperation`** – `>` (plus récent) ou `>=` (à cette date ou plus récent) ; applicable à `lowerBound`. La valeur par défaut est de `>`
-* **`upperBound`** – Limite supérieure pour laquelle la propriété doit être vérifiée ; par exemple, `2014-10-01T12:15:00`
+* **`upperBound`** - limite supérieure pour laquelle vérifier la propriété, par exemple : `2014-10-01T12:15:00`
 * **`upperOperation`** – `<` (antérieur) ou `<=` (à cette date ou antérieur) ; applicable à `upperBound`. La valeur par défaut est de `<`
 * **`timeZone`** – ID du fuseau horaire à utiliser lorsqu’il n’est pas indiqué sous la forme d’une chaîne de date ISO-8601. La valeur par défaut est le fuseau horaire par défaut du système.
 
@@ -186,7 +186,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
 
 #### Propriétés {#properties-8}
 
-* **`language`** – Code de langue ISO ; par exemple, `de`
+* **`language`** - Code de langue ISO, par exemple, `de`
 
 ### mainasset {#mainasset}
 
@@ -249,7 +249,7 @@ Il ne prend pas en charge l’extraction de facettes.
 &lt;!--- * Si la propriété `self` est définie, une recherche est appliquée à l’ensemble de la sous-arborescence, y compris le nœud de base.--->
 * **`exact`** : si la propriété `exact` est définie sur `true`, le chemin d’accès exact doit correspondre, mais il peut contenir des caractères génériques simples (`*`), qui correspondent aux noms, mais pas `/` ; si elle est définie sur `false` (par défaut) tous les descendants sont inclus (facultatif).
 * **`flat`** – Effectue uniquement des recherches dans les enfants directs (ce qui revient à ajouter `/*` dans xpath) (utilisé uniquement si `exact` n’est pas défini sur « true », facultatif).
-* **`self`** – Effectue des recherches dans la sous-arborescence, mais inclut le nœud de base indiqué comme chemin d’accès (pas de caractères génériques).
+* **`self`** - effectue une recherche dans la sous-arborescence, mais inclut le noeud de base indiqué comme chemin (aucun caractère générique).
    * *Remarque importante* : un problème a été identifié avec la propriété `self` dans l’implémentation actuelle de Query Builder et son utilisation dans les requêtes peut ne pas retourner des résultats de recherche corrects. Il n’est pas non plus possible de modifier l’implémentation actuelle de la propriété `self`, car cela pourrait interrompre l’exécution des applications existantes qui reposent dessus. En raison de cette fonctionnalité, la propriété `self` a été abandonnée et il est recommandé d’éviter de l’utiliser.
 
 ### property {#property}
@@ -260,12 +260,12 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
 
 #### Propriétés {#properties-15}
 
-* **`property`** – Chemin d’accès relatif à une propriété ; par exemple, `jcr:title`.
+* **`property`** - chemin relatif à la propriété, par exemple, `jcr:title`.
 * **`value`** – Valeur dont la propriété doit être vérifiée ; suit le type de propriété JCR pour les conversions de chaînes.
 * **`N_value`** – Utilisez `1_value`, `2_value`, etc. pour vérifier plusieurs valeurs (combinées avec `OR` par défaut, avec `AND` si `and=true`).
 * **`and`** – défini sur `true` pour la combinaison de plusieurs valeurs (`N_value`) avec `AND`
 * **`operation`**
-   * `equals` pour la correspondance exacte (par défaut).
+   * `equals` pour une correspondance exacte (par défaut).
    * `unequals` pour la comparaison des inégalités.
    * `like` pour utiliser la fonction xpath `jcr:like` (facultatif).
    * `not` pour l’absence de correspondance (par exemple, `not(@prop)` dans xpath, le paramètre de valeur est ignoré).
@@ -347,7 +347,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
 
 #### Propriétés {#properties-21}
 
-* **`tag`** – Chemin d’accès au titre de la balise à rechercher, par exemple `properties:orientation/landscape`
+* **`tag`** - chemin d’accès au titre de la balise à rechercher, par exemple : `properties:orientation/landscape`
 * **`N_value`** – Utilisez `1_value`, `2_value`, ... pour vérifier plusieurs balises (combinées avec `OR` par défaut, avec `AND` si `and=true`)
 * **`property`** – Propriété (ou chemin d’accès relatif à la propriété) à examiner (par défaut : `cq:tags`)
 
@@ -359,7 +359,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
 
 #### Propriétés {#properties-22}
 
-* **`tagid`** – ID de balise à rechercher ; par exemple `properties:orientation/landscape`
+* **`tagid`** - ID de balise à rechercher, par exemple : `properties:orientation/landscape`
 * **`N_value`** – Utilisez `1_value`, `2_value`, ... pour vérifier plusieurs identifiants de balises (combinées avec `OR` par défaut, avec `AND` si `and=true`)
 * **`property`** – Propriété (ou chemin d’accès relatif à la propriété) à examiner (par défaut : `cq:tags`)
 
@@ -384,4 +384,4 @@ Ce prédicat prend en charge l’extraction des facettes et fournit des interval
 
 #### Propriétés {#Properties-2}
 
-* **`type`** – Type de nœud ou nom de `mixin` à rechercher ; par exemple, `cq:Page`
+* **`type`** - type de noeud ou `mixin` nom à rechercher, par exemple : `cq:Page`

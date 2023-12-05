@@ -2,10 +2,10 @@
 title: Fondements techniques d’AEM
 description: Présentation des fondements techniques d’AEM, y compris la manière dont AEM est structuré et les technologies fondamentales comme JCR, Sling et OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 100%
+source-wordcount: '2130'
+ht-degree: 98%
 
 ---
 
@@ -248,7 +248,7 @@ Utilise le package d’API Sling, `org.apache.sling.*` et des bibliothèques de 
 
 En dernier lieu, il faut considérer la nécessité de référencer les éléments existants dans les scripts.
 
-Des scripts plus complexes (agrégation de scripts) accèdent à plusieurs ressources (par exemple, navigation, barre latérale, pied de page, éléments d’une liste) en ajoutant *resource*.
+Des scripts plus complexes (agrégation de scripts) accèdent à plusieurs ressources (par exemple, navigation, barre latérale, pied de page, éléments d’une liste), en incluant la variable *resource*.
 
 Dans ce cas, vous pouvez utiliser la commande `sling:include("/<path>/<resource>")`. Elle inclut effectivement la définition de la ressource référencée.
 

@@ -3,10 +3,10 @@ title: Gérer les points d’entrée GraphQL dans AEM
 description: Découvrez comment gérer les points d’entrée GraphQL dans Adobe Experience Manager as a Cloud Service pour la diffusion de contenu découplé.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 90%
+source-wordcount: '512'
+ht-degree: 88%
 
 ---
 
@@ -91,4 +91,4 @@ Sélectionnez le nouveau point d’entrée et **Publier** pour le rendre entièr
 >
 >Cela peut entraîner un problème de sécurité sur les instances de publication, car les requêtes GraphQL peuvent imposer une charge importante au serveur.
 >
->Vous devez configurer des [listes de contrôle d’accès](/help/headless/security/permissions.md) pour le point d’entrée en fonction de votre cas d’utilisation
+>Configuration [Listes ACL adaptées à votre cas d’utilisation](/help/headless/security/permissions.md) sur le point de terminaison .

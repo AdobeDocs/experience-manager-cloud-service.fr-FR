@@ -3,10 +3,10 @@ title: Comment pouvons-nous traduire un formulaire adaptatif basé sur les compo
 description: Découvrez comment créer un modèle de données de formulaire dans AEM Forms, tester le modèle avec des exemples de données et de services et configurer diverses options pour un modèle.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 93%
+source-wordcount: '884'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ Les formulaires localisés permettent de servir un public plus large dans plusie
 
 Le service de traduction automatique traduit directement le contenu de vos formulaires adaptatifs et [documents d’enregistrement](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service est préconfiguré pour utiliser une version d’évaluation de Microsoft Translator pour la traduction automatique. Procédez comme suit pour activer la traduction automatique pour les formulaires adaptatifs et le document d’enregistrement :
 
-1. Dans l’interface utilisateur AEM Forms, sélectionnez un formulaire, puis appuyez sur l’option **[!UICONTROL Ajouter un dictionnaire]**.
+1. Dans l’interface utilisateur d’AEM Forms, sélectionnez un formulaire, puis le **[!UICONTROL Ajouter un dictionnaire]** .
 1. Dans l’écran Ajouter un dictionnaire au projet de traduction, pour l’option **[!UICONTROL Projet]** :
 
    * Pour créer un projet de traduction, sélectionnez l’option **[!UICONTROL Créer un projet de traduction]**. Dans le champ **Titre du projet**, indiquez le titre. Par exemple, `Government Reference Site - German locale.`.
@@ -49,7 +49,7 @@ Le service de traduction automatique traduit directement le contenu de vos formu
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 -->
 
@@ -61,7 +61,7 @@ Pour la traduction, un dictionnaire contenant les fichiers au format XLIFF est p
 
 Effectuez les étapes suivantes pour localiser un formulaire et son document d’enregistrement à l’aide de traducteurs et traductrices humains :
 
-1. Dans l’interface utilisateur AEM Forms, sélectionnez un formulaire, puis appuyez sur l’option **[!UICONTROL Ajouter un dictionnaire]**.
+1. Dans l’interface utilisateur d’AEM Forms, sélectionnez un formulaire, puis le **[!UICONTROL Ajouter un dictionnaire]** .
 1. Dans l’écran Ajouter un dictionnaire au projet de traduction, pour l’option **[!UICONTROL Projet]** :
 
    * Pour créer un projet de traduction, sélectionnez l’option **[!UICONTROL Créer un projet de traduction]**. Dans le champ **Titre du projet**, indiquez le titre. Par exemple, `Government Reference Site - German locale.`.

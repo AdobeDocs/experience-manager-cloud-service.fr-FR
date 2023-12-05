@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1397'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,6 @@ Cependant, cette invalidation ne concerne pas les domaines génériques qui ne p
    >Le modèle d’invalidation du réseau CDN peut enregistrer du texte jusqu’à 2 500 caractères.
 
 1. Dans le coin supérieur droit de la page **[!UICONTROL Modèle d’invalidation du réseau CDN]**, sélectionnez **[!UICONTROL Enregistrer]**, puis **[!UICONTROL OK]**.<br>
-
    *Partie 2 de 2 : définition des options d’invalidation du réseau CDN*
    <br>
 
@@ -102,4 +101,4 @@ Dans tous les cas, soit le lot entier est traité pour invalidation, soit le lot
 | *Aucune URL entrée pour être invalidée.* | Se produit si aucune URL n’est présente sur la page **[!UICONTROL Invalidation du réseau CDN]** – **[!UICONTROL Confirmer]** et que vous sélectionnez **[!UICONTROL Envoyer]**. |
 
 
-<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
+<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. While you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->

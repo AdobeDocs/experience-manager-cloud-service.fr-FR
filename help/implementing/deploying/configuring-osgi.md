@@ -3,9 +3,9 @@ title: Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service
 description: Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3265'
 ht-degree: 97%
 
 ---
@@ -176,7 +176,7 @@ Les fichiers de configuration OSGi au format JSON peuvent être écrits manuelle
 1. Dans votre IDE, ouvrez le projet `ui.apps`, recherchez ou créez le dossier de configuration (`/apps/.../config.<runmode>`) qui cible les modes d’exécution auxquels la nouvelle configuration OSGi doit s’appliquer
 1. Dans ce dossier de configuration, créez un fichier `<PID>.cfg.json`. Le PID est l’identité persistante du composant OSGi. Il s’agit généralement du nom de classe complet de l’implémentation du composant OSGi. Par exemple :
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Notez que les noms des fichiers de configuration OSGi d’usine appliquent la convention de dénomination `<factoryPID>-<name>.cfg.json`.
+Les noms de fichiers de configuration OSGi d’usine utilisent la variable `<factoryPID>-<name>.cfg.json` convention de dénomination
 1. Ouvrez le nouveau fichier `.cfg.json` et définissez les combinaisons clé/valeur pour les paires propriété et valeur OSGi, en appliquant le [format de configuration OSGi JSON](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Enregistrez les modifications dans le nouveau fichier `.cfg.json`.
 1. Ajoutez et validez votre nouveau fichier de configuration OSGi sur Git.
@@ -191,14 +191,14 @@ Il est possible d’utiliser la console web AEM de l’environnement d’exécut
 
 1. Connectez-vous en tant qu’administrateur ou administratrice à la console Web de Quickstart Jar du SDK AEM à l’adresse `https://<host>:<port>/system/console`.
 1. Accédez à **OSGi** > **Configuration**.
-1. Pour configurer, recherchez le composant OSGi et appuyez sur son titre pour le modifier.
+1. Pour configurer, recherchez le composant OSGi et sélectionnez son titre à modifier.
    ![Configuration OSGi](./assets/configuring-osgi/configuration.png)
 1. Modifiez, si nécessaire, les valeurs des propriétés de configuration OSGi à l’aide de l’interface utilisateur web.
 1. Enregistrez l’identité persistante (PID) en lieu sûr. Cette méthode est utilisée ultérieurement pour générer le fichier JSON de configuration OSGi.
-1. Appuyez sur Enregistrer.
+1. Sélectionner Enregistrer
 1. Accédez à OSGi > OSGi Installer Configuration Printer (Imprimante de configuration du programme d’installation OSGi).
 1. Collez le PID copié à l’étape 5 et assurez-vous que le format de sérialisation est défini sur OSGi Configurator JSON (Configurateur OSGi au format JSON).
-1. Appuyez sur Imprimer.
+1. Sélectionner Imprimer
 1. La configuration OSGi au format JSON s’affichera dans la section Propriétés de configuration sérialisées.
    ![Imprimante de configuration du programme d’installation OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. Dans votre IDE, ouvrez le projet `ui.apps`, recherchez ou créez le dossier de configuration (`/apps/.../config.<runmode>`) qui cible les modes d’exécution auxquels la nouvelle configuration OSGi doit s’appliquer.

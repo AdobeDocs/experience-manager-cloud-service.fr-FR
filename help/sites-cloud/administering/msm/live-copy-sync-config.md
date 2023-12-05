@@ -4,10 +4,10 @@ description: Découvrez les puissantes options de synchronisation des Live Copie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -60,7 +60,7 @@ Si les actions de configuration de déploiement installées ne répondent pas à
 
 Le tableau ci-dessous répertorie les actions de synchronisation prêtes à l’emploi d’AEM.
 
-Si les actions installées ne répondent pas à vos exigences, vous pouvez [créer une action de synchronisation.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Si les actions installées ne répondent pas à vos besoins, vous pouvez [Créez une action de synchronisation.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | Nom de l’action | Description | Propriétés |
 |---|---|---|
@@ -86,8 +86,8 @@ Si les actions installées ne répondent pas à vos exigences, vous pouvez [cré
 
 Vous pouvez [créer une configuration de déploiement ;](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) lorsque les configurations de déploiement installées ne répondent pas aux exigences de votre application en procédant comme suit.
 
-1. [Créez la configuration de déploiement-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [Ajoutez des actions de synchronisation à la configuration de déploiement.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [Création de la configuration de déploiement -](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [Ajoutez des actions de synchronisation à la configuration du déploiement.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
 La nouvelle configuration de déploiement est alors disponible pour vous lors de la configuration des configurations de déploiement sur un plan directeur ou une page Live Copy.
 
@@ -95,7 +95,7 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 
 Vous pouvez configurer différents services OSGi qui prennent en charge les actions de synchronisation correspondantes afin qu’ils n’affectent pas des types de nœuds et des propriétés spécifiques. Par exemple, nombre de propriétés et de sous-nœuds associés au fonctionnement interne d’AEM ne doivent pas être inclus dans une Live Copy. Seul le contenu pertinent pour l’utilisateur de la page doit être copié.
 
-Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
+Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. Voir [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour plus d’informations et les pratiques recommandées.
 
 Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier les nœuds à exclure. Le tableau fournit les noms des services à configurer à l’aide de la console web et le PID pour la configuration à l’aide d’un nœud de référentiel.
 
@@ -134,7 +134,7 @@ Par exemple, si vous souhaitez que le **titre** de la page soit inclus dans les 
 
 Vous pouvez configurer différents services OSGi qui prennent en charge les actions de synchronisation correspondantes associées à la mise à jour des références.
 
-Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
+Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. Voir [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour plus d’informations et les pratiques recommandées.
 
 Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier la mise à jour des références. Le tableau fournit les noms des services à configurer à l’aide de la console web et le PID pour la configuration à l’aide d’un nœud de référentiel.
 

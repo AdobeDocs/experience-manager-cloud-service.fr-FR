@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3489'
-ht-degree: 96%
+source-wordcount: '3431'
+ht-degree: 94%
 
 ---
 
@@ -93,13 +93,13 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 * **Ressources prêtes après création :** ressources prêtes à être partagées avec l’équipe élargie ou sélectionnées/approuvées par l’équipe créative pour le partage avec les équipes marketing ou métier.
 
 * **Approbation des ressources** : processus d’approbation traitant des ressources déjà chargées dans la gestion des ressources numériques, qui inclut généralement les approbations de marque, les validations juridiques, etc.
-* **Ressource finale :** ressource qui a passé l’ensemble des approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
+* **Fichier final :** ressource qui a fait l’objet de toutes les approbations/balises de métadonnées et qui est prête à être utilisée par la grande équipe. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
 
 * **Mise à jour/modification mineure des ressources :** modification rapide et petite d’une ressource numérique. Cette opération est souvent effectuée en réponse à une demande de retouche ou de modification mineure, de révision ou d’approbation de fichier (par exemple, repositionnement, modification de la taille du texte, ajustement de la saturation/luminosité, couleur, etc.).
 * **Mise à jour/modification majeure des ressources :** modification d’une ressource numérique qui nécessite un travail considérable et qui doit parfois être effectuée sur une plus longue période de temps. Celle-ci implique généralement plusieurs modifications. La ressource doit être enregistrée plusieurs fois lors de la mise à jour. En règle générale, les mises à jour majeures de la ressource entraînent le passage à une étape en cours.
 * **DAM :** gestion des ressources numériques (en anglais, Digital Asset Management). Dans ce document, il est synonyme d’Adobe Experience Manager () Assets, sauf mention contraire.
 * **Utilisateur créatif :** professionnel de la création, qui crée des ressources numériques à l’aide des applications et services Creative Cloud. Dans certains cas, un utilisateur créatif peut faire partie d’une équipe créative qui peut utiliser Creative Cloud, mais ne crée pas de ressources numériques (comme un directeur créatif ou un chef d’équipe créative).
-* **Utilisateur de la gestion des ressources numériques :** utilisateur ordinaire d’un système de gestion des ressources numériques (DAM, Digital Asset Management). Selon l’organisation, l’utilisateur de gestion des ressources numériques (DAM) peut être un utilisateur marketing ou non, par exemple, un utilisateur métier, un bibliothécaire, un commercial, etc.
+* **Utilisateur de la gestion des ressources numériques :** utilisateur ordinaire d’un système de gestion des ressources numériques (DAM, Digital Asset Management). En fonction de l’organisation, un utilisateur DAM peut être un utilisateur marketing ou non marketing, par exemple un utilisateur métier, un bibliothécaire, un commercial, etc.
 
 ### Remarques concernant l’utilisation de l’intégration Experience Manager et Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -181,7 +181,7 @@ Experience Manager Assets prend en charge deux types d’utilisateurs selon leu
 
 #### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques (DAM) {#creative-users-with-direct-access-to-dam}
 
-En règle générale, les équipes créatives internes ou les agences/créatifs professionnels Intégrés au réseau interne ont accès à une instance de la gestion des actifs numériques, y compris la connexion à Experience Manager. Experience Manager et l’infrastructure réseau peuvent être configurés afin d’autoriser un accès direct aux parties externes (généralement, des entreprises de confiance telles que des agences travaillant pour un client) pour disposer d’un accès à Experience Manager via le réseau (par le biais de la liste adresses IP autorisées ou d’un VPN, par exemple).
+En règle générale, les équipes créatives internes ou les agences/professionnels de la création intégrés au réseau interne ont accès à l’instance DAM, y compris la connexion au Experience Manager. Experience Manager et l’infrastructure réseau peuvent être configurés afin d’autoriser un accès direct aux parties externes (généralement, des entreprises de confiance telles que des agences travaillant pour un client) pour disposer d’un accès à Experience Manager via le réseau (par le biais de la liste adresses IP autorisées ou d’un VPN, par exemple).
 
 Dans ce cas, Adobe Asset Link ou l’application de bureau Experience Manager permet d’accéder facilement aux ressources finales/approuvées et d’enregistrer les ressources préparées par les créatifs dans la gestion des ressources numériques (DAM).
 
@@ -216,11 +216,11 @@ L’approche recommandée consiste à utiliser une option dans l’appli de bure
 
 Dans certains cas, il est possible que vous deviez charger simultanément un plus grand nombre de fichiers dans la gestion des ressources numériques (DAM), par exemple :
 
-* Chargement des résultats de séances photo ou de projets de plus grande envergure
+* Chargement des résultats de projets de séance photo ou plus volumineux
 * Chargement de ressources fournies par les agences de création
 * Chargement de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des ressources numériques (DAM)
 
-Notez que cette description fait référence aux chargements de fichiers du point de vue des opérations (par exemple, chaque semaine ou à chaque séance photo), comme composante normale du workflow de l’utilisateur de bureau. Les migrations de ressources volumineuses ne sont pas abordées ici.
+Cette description fait référence aux chargements de fichiers sur le plan opérationnel (par exemple, chaque semaine ou avec chaque séance photo ), en tant qu’élément normal du processus de l’utilisateur de bureau. Les migrations de ressources volumineuses ne sont pas abordées ici.
 
 Vous pouvez utiliser les fonctionnalités de chargement suivantes :
 

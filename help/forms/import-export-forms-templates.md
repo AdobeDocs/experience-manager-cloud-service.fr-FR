@@ -3,10 +3,10 @@ title: Comment importer, exporter et organiser des PDF forms ou des Forms adapta
 description: Découvrez comment migrer les PDF forms, les thèmes et autres ressources adaptatives de Forms vers et depuis une instance d’AEM.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 85%
+source-wordcount: '1193'
+ht-degree: 73%
 
 ---
 
@@ -21,15 +21,15 @@ Lorsque vous exportez un formulaire adaptatif, les politiques de contenu et les 
 Pour télécharger des formulaires ou des ressources connexes :
 
 1. Connectez-vous à l’instance [!DNL AEM Forms].
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** icône ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** icône ![compass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Sélectionnez les ressources et appuyez sur l’icône de **[!UICONTROL téléchargement]**.
-1. Dans Télécharger la ou les ressources, choisissez l’une des options suivantes, puis cliquez sur **[!UICONTROL Télécharger]**.
+1. Sélectionner **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > **[!UICONTROL Navigation]** ![boussole](assets/Smock_Compass_18_N.svg) icon > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
+1. Sélectionnez les ressources et sélectionnez l’option **[!UICONTROL Télécharger]** Icône
+1. Dans la ou les ressources de téléchargement, choisissez l’une des options suivantes, puis sélectionnez **[!UICONTROL Télécharger]**.
 
    * **Télécharger en tant que package CRX :** utilisez cette option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance [!DNL AEM Forms] vers une autre. Cette option permet de télécharger toutes les ressources et tous les dossiers sous la forme d’un package CRX, y compris les formulaires créés dans AEM (formulaires adaptatifs et fragments de formulaire adaptatif), les ensembles de formulaires, le modèle de données de formulaire, les modèles de formulaire, les documents PDF et les ressources référencées (schémas XSD et images).
 L’avantage du téléchargement des ressources sous la forme d’un package est que les ressources référencées par les ressources sélectionnées sont également téléchargées. C’est le cas par exemple si vous disposez d’un formulaire adaptatif qui utilise un modèle de formulaire, le schéma XSD et une image. Lorsque vous sélectionnez ce formulaire adaptatif et que vous le téléchargez sous forme de package, le package téléchargé contient également le modèle de formulaire, le schéma XSD et l’image. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées.
 
-   * **Télécharger la/les ressources sous forme de fichiers binaires :** utilisez cette option pour télécharger uniquement les modèles de formulaire (XDP), les formulaires PDF (PDF), les documents (PDF) et les ressources (images, schémas, feuilles de style). Vous pouvez modifier ces ressources dans des applications externes. Il télécharge les ressources comportant des fichiers binaires, tels que des images, des fichiers PDF et d’autres formats pris en charge sous la forme d’un fichier .zip.
-Vous ne pouvez pas télécharger de formulaires adaptatifs, de fragments de formulaires adaptatifs, de thèmes ni d’ensembles de formulaires avec l’option **[!UICONTROL Télécharger des ressources en tant que fichiers binaires]**. Pour télécharger ces ressources, vous devez utiliser l’option **[!UICONTROL Télécharger sous forme de package CRX]**.
+   * **Téléchargement de ressources sous forme de fichiers binaires :** Utilisez l’option pour télécharger uniquement les modèles de formulaire (XDP), les PDF forms (PDF), le document (PDF) et les ressources (images, schémas, feuilles de style). Vous pouvez modifier ces ressources dans des applications externes. Il télécharge les ressources comportant des fichiers binaires, tels que des images, des fichiers PDF et d’autres formats pris en charge sous la forme d’un fichier .zip.
+Vous ne pouvez pas télécharger de Forms adaptatif, de fragments de formulaire adaptatif, de thèmes et de jeux de formulaires avec **[!UICONTROL Téléchargement de ressources en tant que fichiers binaires]** . Pour télécharger ces ressources, vous devez utiliser l’option **[!UICONTROL Télécharger sous forme de package CRX]**.
 
    Les ressources sélectionnées sont téléchargées sous forme d’archive (fichier .zip).
 
@@ -43,11 +43,11 @@ Vous pouvez charger les types de ressource pris en charge individuellement ou so
 Pour charger un formulaire ou une ressource connexe :
 
 1. Connectez-vous à l’instance [!DNL AEM Forms].
-1. Cliquez sur **[!UICONTROL Adobe Experience Manager]** icône ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** icône ![compass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Appuyez sur **[!UICONTROL Créer]** > **[!UICONTROL Chargement de fichier]**. Une boîte de dialogue s’affiche.
-1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner d’autres types de fichiers pris en charge. Appuyez sur **[!UICONTROL Ouvrir]**. Le dossier ou le nom de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
+1. Sélectionner **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > **[!UICONTROL Navigation]** ![boussole](assets/Smock_Compass_18_N.svg) icon > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
+1. Sélectionner **[!UICONTROL Créer]** > **[!UICONTROL Téléchargement du fichier]**. Une boîte de dialogue s’affiche.
+1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner d’autres types de fichiers pris en charge. Sélectionner **[!UICONTROL Ouvrir]**. Le dossier ou le nom de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
 
-   Dans la boîte de dialogue, vérifiez les détails des ressources en cours de chargement, puis appuyez sur **[!UICONTROL Charger]**.
+   Dans la boîte de dialogue, vérifiez les détails des ressources en cours de chargement, puis sélectionnez **[!UICONTROL Télécharger]**.
 
    Si vous chargez une ressource de formulaires existants, la ressource est mise à jour.
 
@@ -64,8 +64,8 @@ Vous pouvez exporter des thèmes dans [!DNL AEM Forms] que vous pouvez utiliser 
 Pour télécharger un thème :
 
 1. Connectez-vous à l’instance [!DNL AEM Forms].
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** icône ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** icône ![compass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulaires]** > **[!UICONTROL Thèmes]**.
-1. Sélectionnez le composant et appuyez sur **[!UICONTROL Télécharger]**. Le thème est téléchargé sous forme d’archive (fichier .zip).
+1. Sélectionner **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > **[!UICONTROL Navigation]** ![boussole](assets/Smock_Compass_18_N.svg) icon > **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**.
+1. Sélectionnez le thème et sélectionnez **[!UICONTROL Télécharger]**. Le thème est téléchargé sous forme d’archive (fichier .zip).
 
 ## Charger un thème {#uploading-a-theme}
 
@@ -81,15 +81,15 @@ To share assets, such as data dictionaries, letters, and document fragments, bet
 
 ### Export Document Fragments, Letters, and/or Data Dictionaries {#export-document-fragments-letters-and-or-data-dictionaries}
 
-1. In the letters, document fragments, or data dictionary pages, tap and select the assets you want to export to a single package, and then tap Queue For Download. The assets are lined-up for export.
+1. In the letters, document fragments, or data dictionary pages, select and select the assets you want to export to a single package, and then select Queue For Download. The assets are lined-up for export.
 1. As required, repeat the above step to add letters, document fragments, and data dictionaries.
-1. Tap **Download**.
+1. Select **Download**.
 1. Correspondence Management displays Download Asset(s) dialog with a list of assets in the export list.
 
    ![export](assets/export.png)
 
-1. To view the dependencies that are exported, Tap Resolve. Or skip to the next step. Even if you do not tap resolve, the dependencies are still exported.
-1. To download the .cmp file, tap **OK**.
+1. To view the dependencies that are exported, Select Resolve. Or skip to the next step. Even if you do not select resolve, the dependencies are still exported.
+1. To download the .cmp file, select **OK**.
 1. Correspondence Management downloads a .cmp file to your computer.
 
    The .cmp file includes the exported assets. You can share the .cmp file with others. Other users can import the .cmp file in a different server to get all the assets in the new server.
@@ -103,9 +103,9 @@ For example, if Correspondence Management has a letter that uses an image and te
 To download all the Correspondence Management assets and related dependencies as a package, complete the following steps:
 
 1. Log in to [!DNL AEM Forms] server as a forms user.
-1. Tap **Adobe Experience Manager** in the Global Navigation bar.
-1. Tap tools ( ![tools](assets/tools.png)) and then tap **Forms**.
-1. Tap **Export Correspondence Management Assets**.
+1. Select **Adobe Experience Manager** in the Global Navigation bar.
+1. Select tools ( ![tools](assets/tools.png)) and then select **Forms**.
+1. Select **Export Correspondence Management Assets**.
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
@@ -113,7 +113,7 @@ To download all the Correspondence Management assets and related dependencies as
 
    ![export-last-run-details](assets/export-last-run-details.png)
 
-1. Tap **Export** and, in the confirm message, tap **OK**.
+1. Select **Export** and, in the confirm message, select **OK**.
 
    After a batch process is complete, the last run details and the link to download the package are updated. This includes information such as the Administrator login and if the batch run successfully or failed. The assets are exported to a package and the Download Exported Package link appears.
 
@@ -121,7 +121,7 @@ To download all the Correspondence Management assets and related dependencies as
    >
    >The Export All Assets process cannot be canceled once initiated. Also, while the export all operation is in process, do not create, delete, modify, or publish any assets or initiate Publish All Assets process.a
 
-1. Tap the **Download Exported Package** link to download the package file.
+1. Select the **Download Exported Package** link to download the package file.
 
    To add the assets in the package to another instance of Correspondence Management, [import the package to an [!DNL AEM Forms] instance](import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
@@ -133,8 +133,8 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 >
 >While importing old Correspondence Management assets for migration, log in using an Admin account. For more information on Migrating old Correspondence Management assets, see [Migrate Correspondence Management assets to AEM 6.1 forms](migration-utility.md).
 
-1. On the data dictionary, letters, or document fragments page, tap **Create &gt; File Upload** and select the .cmp file.
-1. Correspondence Management displays the Import Assets dialog with the list of assets that are imported. Tap **Import**.
+1. On the data dictionary, letters, or document fragments page, select **Create &gt; File Upload** and select the .cmp file.
+1. Correspondence Management displays the Import Assets dialog with the list of assets that are imported. Select **Import**.
 
    After importing the assets, the following properties of the assets are updated while the other properties remain the same:
 
@@ -170,8 +170,8 @@ Vous pouvez utiliser des dossiers pour classer et organiser les fichiers. L’or
 ### Créer un dossier {#create-a-folder}
 
 1. Connectez-vous à l’instance [!DNL AEM Forms].
-1. Cliquez sur Experience Manager icône ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation icône ![compass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Appuyez sur **[!UICONTROL Créer]** > **[!UICONTROL Dossier]**.
+1. Sélectionner un Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icône > navigation ![boussole](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
+1. Sélectionner **[!UICONTROL Créer]** > **[!UICONTROL Dossier]**.
 1. Saisissez les informations suivantes :
 
    * **[!UICONTROL Titre]** : nom d’affichage du dossier
@@ -185,7 +185,7 @@ Vous pouvez utiliser des dossiers pour classer et organiser les fichiers. L’or
 
    Si un dossier portant le même nom que celui spécifié existe déjà, l’envoi échoue avec une erreur. Vous pouvez afficher le message d’erreur en pointant sur l’icône d’erreur ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) qui s’affiche en regard du champ Nom.
 
-   Vous pouvez appuyer sur le dossier créé pour l’insérer dans le dossier et créer des ressources ou des dossiers dans le dossier. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
+   Vous pouvez sélectionner le dossier créé pour y accéder et y créer des ressources ou des dossiers. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
@@ -195,17 +195,17 @@ You can use an existing assets to quickly create an asset with similar propertie
 Complete the following steps to create copies of assets and letters:
 
 1. On the relevant assets page, select one or more assets. The UI displays the Copy icon.
-1. Tap **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
-1. Tap **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
+1. Select **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
+1. Select **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
 
    If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
 
 1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
-1. Tap **[!UICONTROL Paste]**. New copies of the copied assets are created.
+1. Select **[!UICONTROL Paste]**. New copies of the copied assets are created.
 
 ## Search {#search-forms}
 
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
+You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also select ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 

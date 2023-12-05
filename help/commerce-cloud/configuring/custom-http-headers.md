@@ -2,10 +2,10 @@
 title: En-têtes HTTP personnalisés
 description: Découvrez comment configurer des en-têtes HTTP personnalisés qui seraient envoyés au moteur de commerce, ainsi que ceux déjà envoyés par CIF.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 89%
+source-wordcount: '279'
+ht-degree: 84%
 
 ---
 
@@ -26,7 +26,7 @@ Pour configurer les en-têtes HTTP personnalisés, vous devez d’abord les déf
 
 Vous pouvez configurer les valeurs des en-têtes HTTP dans la page Configuration du service cloud pour votre projet :
 
-1. Accédez à la page de configuration du service cloud dans Outils -> Cloud Services -> Configuration CIF.
+1. Accédez à la page de configuration du Cloud Service dans Outils > Cloud Services > Configuration CIF
 1. Ouvrir une configuration existante ou en créer une
 1. Accédez à l’onglet « Avancé » et recherchez le champ multiple « En-têtes HTTP personnalisés ». Vous pouvez sélectionner les en-têtes que vous avez définis précédemment et leur attribuer des valeurs.
 

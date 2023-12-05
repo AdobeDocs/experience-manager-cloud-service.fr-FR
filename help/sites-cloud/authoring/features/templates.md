@@ -2,10 +2,10 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée. Grâce à l’éditeur de modèles, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs et développeuses.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4535'
-ht-degree: 86%
+source-wordcount: '4523'
+ht-degree: 84%
 
 ---
 
@@ -69,7 +69,7 @@ Les tâches présentées dans ce document sont répertoriées avec le rôle resp
 
 Lors de la création d’un modèle modifiable :
 
-* Utilisez la **console de modèles**. Elle est accessible dans la section **Général** de la console **Outils**.
+* Utilisez la variable **Modèle** console. Cette option est disponible dans la **Général** de la **Outils** console.
    * Ou directement à l’adresse : `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
 * [Créez un modèle](#creating-a-new-template-template-author), qui est initialement vide.
@@ -95,11 +95,11 @@ Lors de la création d’un modèle modifiable :
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
-Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. Il s’agit d’une tâche de l’administrateur qui est décrite dans le document [Modèles de page](/help/implementing/developing/components/templates.md#template-folders).
+Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. Il s’agit d’une tâche de l’administrateur qui est décrite dans le document . [Modèles de page](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Création d’un modèle - Créateur de modèles {#creating-a-new-template-template-author}
 
-1. Ouvrez la **console de modèles** (en sélectionnant **Outils ->** **Général**), puis accédez au dossier souhaité.
+1. Ouvrez le **Console de modèles** (par **Outils >** **Général**), puis accédez au dossier requis.
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ Un modèle peut avoir les propriétés suivantes :
 * Titre
    * Un titre utilisé pour identifier le modèle, tel que dans l’assistant **Créer une page**.
 * Description
-   * Description facultative permettant de fournir des informations supplémentaires sur le modèle et son utilisation. Elle peut s’afficher, par exemple, dans l’assistant **Créer une page**.
+   * Description facultative permettant de fournir plus d’informations sur le modèle et son utilisation. Elle peut être affichée, par exemple, dans la variable **Créer une page** assistant.
 
 Pour afficher et/ou modifier les propriétés :
 
@@ -226,7 +226,7 @@ Le modèle étant référencé lors du rendu d’une page, il doit être publié
 1. Sélectionnez les **Politiques de contenu** à publier en tandem.
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles   – Créateurs de modèles {#editing-templates-template-authors}
+## Modification de modèles - Créateurs de modèles {#editing-templates-template-authors}
 
 Lorsque vous créez ou modifiez un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -415,7 +415,7 @@ Par exemple, pour un composant d’image, vous pouvez définir les proportions d
 
 >[!CAUTION]
 >
->Remarque : Dans AEM, les rapports de recadrage sont définis sous forme de **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur, à des fins de compatibilité avec les versions héritées. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
+>Dans AEM rapports de recadrage, les proportions **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur, à des fins de compatibilité avec les versions héritées. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
 
 >[!NOTE]
 >
@@ -459,7 +459,7 @@ Dans l’onglet **Composants autorisés**, vous définissez les composants dispo
 
 ###### Composants par défaut {#default-components}
 
-Dans l’onglet **Composants par défaut**, vous définissez les composants qui sont automatiquement associés à des types de médias donnés. Ainsi, lorsqu’un créateur fait glisser une ressource depuis le navigateur des ressources, AEM sait avec quel composant l’associer. Notez que seuls les composants avec des zones de dépôt sont disponibles pour cette configuration.
+Dans l’onglet **Composants par défaut**, vous définissez les composants qui sont automatiquement associés à des types de médias donnés. Ainsi, lorsqu’un créateur fait glisser une ressource depuis le navigateur des ressources, AEM sait avec quel composant l’associer. Seuls les composants avec des zones de dépôt sont disponibles pour cette configuration.
 
 Sélectionner **Ajouter un mappage** pour ajouter un nouveau mappage de composant et de type MIME.
 

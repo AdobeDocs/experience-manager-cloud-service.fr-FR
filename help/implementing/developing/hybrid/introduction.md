@@ -2,9 +2,9 @@
 title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2045'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ La présentation repose sur les fonctionnalités AEM standard et l’exemple d�
 
 >[!CAUTION]
 >
->Ce document n’utilise l’[exemple d’application de projet SPA WKND](https://github.com/adobe/aem-guides-wknd-spa) qu’à des fins de démonstration. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
+>Ce document n’utilise l’[exemple d’application de projet SPA WKND](https://github.com/adobe/aem-guides-wknd-spa) qu’à des fins de démonstration. Ne l’utilisez pas pour un travail de projet.
 
 >[!TIP]
 >

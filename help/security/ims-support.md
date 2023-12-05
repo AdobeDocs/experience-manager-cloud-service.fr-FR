@@ -2,10 +2,10 @@
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge du système de gestion des images pour Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 100%
+source-wordcount: '1917'
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Dès qu’un client ou une cliente existe en tant qu’organisation IMS, il ou e
 ![Intégration IMS](/help/security/assets/ims2.png)
 
 1. L’administrateur système désigné reçoit une invitation à se connecter à Cloud Manager. Une fois connecté à Cloud Manager, l’administrateur système peut soit configurer les programmes et environnements AEM, soit accéder à Admin Console pour effectuer des tâches d’administration.
-1. L’administrateur système demande à un domaine de confirmer la propriété du domaine concerné (acme.com, par exemple).
+1. L’administrateur système demande à un domaine de confirmer la propriété du domaine concerné (par exemple, acme.com).
 1. L’administrateur système configure les répertoires utilisateur.
 1. L’administrateur ou l’administratrice système effectue la configuration IDP dans Admin Console afin de configurer l’authentification unique.
 1. L’administrateur AEM gère les groupes locaux, les autorisations et les droits comme d’habitude.

@@ -3,10 +3,10 @@ title: Comment activer Adobe Analytics pour un formulaire adaptatif ?
 description: L’automatisation de la configuration des Experience Cloud permet de connecter Adobe Analytics à un formulaire adaptatif afin d’effectuer le suivi des informations sur les interactions et l’engagement des visiteurs.
 keywords: Activation d’Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration de l’Experience Cloud, de l’activation d’Adobe Analytics dans Forms, d’Adobe Analytics dans le Forms adaptatif, de l’intégration de Forms Analytics, de Forms et d’Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 7%
+source-wordcount: '1555'
+ht-degree: 6%
 
 ---
 
@@ -93,7 +93,7 @@ Pour activer et configurer Adobe Analytics pour votre Forms adaptatif, procédez
 1. Créez un conteneur de configuration pour les services cloud :
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
    1. Sélectionnez ou créez un conteneur de configuration, puis activez le dossier pour **[!UICONTROL Configurations du cloud]**.
-   1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
+   1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et quitter la boîte de dialogue.
 1. Sur votre instance AEM, accédez à **[Forms]** &quot; **[Forms et document]**.
 1. Sélectionnez votre **[!UICONTROL Formulaire]** &quot; **[!UICONTROL Propriétés]**, dans la variable **[!UICONTROL Conteneur de configuration]**, sélectionnez le conteneur de configuration que vous avez créé ou sélectionné dans le **[!UICONTROL Explorateur de configuration]** à l’étape 1.
 1. Sélectionnez le panneau Tâche sur le rail de gauche, puis cliquez sur **Configuration d’Analytics** et **Activer Adobe Analytics**.
@@ -210,7 +210,7 @@ Une fois que vous avez lié les règles de formulaire et de sites par le biais d
 
 1. Cliquez sur **Flux de publication** sur la gauche.
 1. Cliquez sur **Ajouter une bibliothèque** et saisissez le nom que vous préférez.
-1. Dans le **Environnement** , sélectionnez **development**.
+1. Dans le **Environnement** menu déroulant à droite, sélectionnez **development**.
 1. Cliquez sur **Add All Changed Resources** (Ajouter toutes les ressources modifiées).
 1. Cliquez sur **Enregistrement et création pour le développement**.
 

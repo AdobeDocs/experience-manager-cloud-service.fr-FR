@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 94%
+source-wordcount: '1430'
+ht-degree: 86%
 
 ---
 
@@ -105,20 +105,20 @@ Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et le
 
 1. Utilisez l’option une après l’autre pour rendre vos ressources [!DNL AEM Forms] compatibles avec [!DNL AEM] as a Cloud Service :
 
-   1. Appuyez sur **[!UICONTROL Migration de ressources AEM Forms]** et, dans l’écran suivant, appuyez sur **[!UICONTROL Commencer la migration]**. Cela rend les formulaires adaptatifs et les thèmes dans votre environnement [!DNL AEM Forms] compatible avec [!DNL AEM] as a Cloud Service.
+   1. Sélectionner **[!UICONTROL Migration des ressources AEM Forms]**, puis, dans l’écran suivant, sélectionnez **[!UICONTROL Démarrer la migration]**. Cela rend les formulaires adaptatifs et les thèmes dans votre environnement [!DNL AEM Forms] compatible avec [!DNL AEM] as a Cloud Service.
 
-   1. Appuyez sur **[!UICONTROL Migration des composants de formulaire adaptatif personnalisés]** et, dans la page Migration des composants personnalisés, appuyez sur **[!UICONTROL Lancer la migration]**. Cela rend les composants personnalisés développés pour des formulaires adaptatifs et les superpositions de composants dans votre environnement [!DNL AEM Forms] compatibles avec [!DNL AEM] as a Cloud Service.
+   1. Sélectionner **[!UICONTROL Migration des composants personnalisés de Forms adaptatif]** et dans la page Migration des composants personnalisés, sélectionnez **[!UICONTROL Démarrer la migration]**. Cela rend les composants personnalisés développés pour des formulaires adaptatifs et les superpositions de composants dans votre environnement [!DNL AEM Forms] compatibles avec [!DNL AEM] as a Cloud Service.
 
-   1. Appuyez sur **[!UICONTROL Migration de modèles de formulaire adaptatif]** et dans la page Migration des composants personnalisés, appuyez sur **[!UICONTROL Lancer la migration]**. Cela rend les modèles de formulaire adaptatif dans `/apps` ou `/conf` et créés à l’aide de l’éditeur de modèles AEM compatibles avec [!DNL AEM] as a Cloud Service.
+   1. Sélectionner **[!UICONTROL Migration de modèles de Forms adaptatif]** et dans la page Migration des composants personnalisés, sélectionnez **[!UICONTROL Démarrer la migration]**. Cela rend les modèles de formulaire adaptatif dans `/apps` ou `/conf` et créés à l’aide de l’éditeur de modèles AEM compatibles avec [!DNL AEM] as a Cloud Service.
 
-   1. Appuyez sur **[!UICONTROL Migration des configurations cloud AEM Forms]**, puis dans la page Migration de la configuration, appuyez sur **[!UICONTROL Commencer la migration]**. Il met à jour et déplace les Cloud Services suivants vers un nouvel emplacement :
+   1. Sélectionner **[!UICONTROL Migration des configurations du cloud AEM Forms]** puis, sur la page Migration de la configuration, sélectionnez **[!UICONTROL Démarrer la migration]**. Il met à jour et déplace les Cloud Services suivants vers un nouvel emplacement :
 
       * Cloud Service de modèle de données de formulaire
       * Google reCAPTCHA Cloud Service
       * [!DNL Adobe Sign] Cloud Service
       * Adobe Fonts Cloud Service
 
-   1. Appuyez sur **[!UICONTROL Migration des scripts de l’éditeur de code]**, spécifiez un emplacement pour enregistrer les fonctions réutilisables, puis appuyez sur **[!UICONTROL Commencer la migration].
+   1. Sélectionner **[!UICONTROL Migration du script de l’éditeur de code]**, spécifiez un emplacement pour enregistrer les fonctions réutilisables, puis sélectionnez **[!UICONTROL Démarrer la migration].
 
    Cloud Service ne prend pas en charge les scripts de l’éditeur de règles. L’outil **[!UICONTROL Migration des scripts de l’éditeur de code]** convertit tous les scripts de règle de votre environnement en fonctions réutilisables et applique les fonctions réutilisables à l’éditeur visuel à l’emplacement approprié. Ces fonctions réutilisables sont enregistrées sous forme de bibliothèques clientes et vous aident à conserver les fonctionnalités existantes intactes. L’outil applique automatiquement les fonctions réutilisables générées aux formulaires adaptatifs correspondants.
 

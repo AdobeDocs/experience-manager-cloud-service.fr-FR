@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 92%
+source-wordcount: '1663'
+ht-degree: 91%
 
 ---
 
@@ -83,7 +83,7 @@ Nous allons maintenant configurer la transcription dans ce profil vidéo. Accéd
 
 Une fois le profil de traitement configuré pour la transcription des fichiers audio et vidéo, vous pouvez appliquer ce profil de traitement aux dossiers à l’aide de l’une des méthodes suivantes :
 
-* Sélectionnez une définition de profil de traitement dans **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]** et utilisez l’action **[!UICONTROL Appliquer le profil au(x) dossier(s)]**. L’explorateur de contenu vous permet d’accéder à un dossier spécifique, de sélectionner un dossier et de confirmer l’application du profil.
+* Sélection d’une définition de profil de traitement dans **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]** et utilisez **[!UICONTROL Application d’un profil à des dossiers]** action. L’explorateur de contenu vous permet d’accéder à un dossier spécifique, de sélectionner un dossier et de confirmer l’application du profil.
 * Sélectionnez un dossier dans l’interface utilisateur d’Assets, puis cliquez sur **[!UICONTROL Propriétés]** pour ouvrir les propriétés du dossier. Cliquez sur l’onglet **[!UICONTROL Traitement des ressources]** et sélectionnez le profil de traitement approprié pour le dossier dans la liste **[!UICONTROL Profil de traitement]**. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
   ![configure-transcription-service](assets/video-processing-profile3.png)

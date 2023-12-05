@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 75%
+source-wordcount: '2526'
+ht-degree: 73%
 
 ---
 
@@ -57,7 +57,7 @@ Pour les propriétaires de contenu qui sont également responsables de la traduc
 
 1. Accédez à **Navigation** > **Sites** et sélectionnez votre projet.
 1. Recherchez la racine de langue de votre projet. Par exemple, si la racine de langue est l’anglais, `/content/<your-project>/en`.
-   * Notez qu’avant la première traduction, les autres dossiers de langue sont des espaces réservés vides. Elles ont normalement été créées par l’architecte de contenu.
+   * Avant la première traduction, que les autres dossiers de langue sont des espaces réservés vides. Elles ont normalement été créées par l’architecte de contenu.
 1. Recherchez la racine de langue de votre projet.
 1. Sélectionnez le sélecteur de rail et affichez le **Références** du panneau.
 1. Sélectionner **Copies de langue**.
@@ -123,7 +123,7 @@ Le projet est divisé en plusieurs cartes.
 
 * **Résumé** : cette carte affiche les informations d’en-tête de base du projet, parmi lesquelles le propriétaire, la langue et le fournisseur de traduction.
 * **Tâche de traduction** - Cette carte ou ces cartes présentent un aperçu de la tâche de traduction proprement dite, y compris son état, le nombre de ressources, etc. En règle générale, il existe une tâche par langue, avec le code de langue ISO-2 ajouté au nom de la tâche.
-   * Notez que lors de [la création automatique de tâches de traduction](#automatically-creating), AEM crée les tâches de manière asynchrone et elles peuvent ne pas apparaître immédiatement dans le projet.
+   * When [la création automatique de tâches de traduction,](#automatically-creating) AEM crée les tâches de manière asynchrone et elles peuvent ne pas apparaître immédiatement dans le projet.
 * **Équipe** : cette carte montre les utilisateurs qui collaborent à ce projet de traduction. Ce parcours ne couvre pas cette rubrique.
 * **Tâches** : les tâches supplémentaires associées à la traduction du contenu, telles que les éléments à réaliser ou les éléments de workflow. Ce parcours ne couvre pas cette rubrique.
 

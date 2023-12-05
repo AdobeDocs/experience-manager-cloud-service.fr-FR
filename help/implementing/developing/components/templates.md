@@ -2,10 +2,10 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 93%
+source-wordcount: '3267'
+ht-degree: 92%
 
 ---
 
@@ -502,7 +502,7 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
    * [Définissez le ou les chemins d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
      `cq:allowedTemplates`
-Sur le nœud `jcr:content` de la branche requise.
+Sur le `jcr:content` noeud de la branche requise.
 
    Par exemple, avec la valeur suivante :
 
@@ -593,7 +593,7 @@ Le diagramme suivant illustre le processus d’évaluation de modèle :
 
 #### Limitation des modèles utilisés dans les pages enfants {#limiting-templates-used-in-child-pages}
 
-Pour limiter les modèles servant à créer des pages enfants sous une page donnée, utilisez la propriété `cq:allowedTemplates` du nœud `jcr:content` de la page pour spécifier la liste des modèles à autoriser en tant que pages enfants. Chaque valeur de la liste doit être un chemin absolu vers un modèle pour une page enfant autorisée, par exemple `/apps/wknd/templates/page-content`.
+Pour limiter les modèles servant à créer des pages enfants sous une page donnée, utilisez la propriété `cq:allowedTemplates` du nœud `jcr:content` de la page pour spécifier la liste des modèles à autoriser en tant que pages enfants. Chaque valeur de la liste doit être un chemin absolu vers un modèle pour une page enfant autorisée, par exemple : `/apps/wknd/templates/page-content`.
 
 Vous pouvez utiliser la variable `cq:allowedTemplates` sur la propriété  `jcr:content` pour que cette configuration soit appliquée à toutes les pages créées qui utilisent ce modèle.
 

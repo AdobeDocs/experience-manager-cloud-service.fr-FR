@@ -2,10 +2,10 @@
 title: Implémentation d’un connecteur AEM
 description: Découvrez comment créer, tester et mettre en oeuvre un connecteur AEM. En outre, vous découvrez les modèles d’intégration courants.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 95%
+source-wordcount: '935'
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ Implémentation d’un connecteur AEM
 
 Les informations fournies ci-dessous vous seront d’une grande utilité pour la création de [connecteurs AEM](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html). Elles doivent être lues parallèlement aux conseils sur l’[envoi](submit.md) et la [maintenance](maintain.md) des connecteurs.
 
-Notez qu’une licence de développeur pour AEM peut être obtenue via le [programme Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+Une licence de développeur pour AEM peut être obtenue via le [Programme Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 Modèles d’intégration courants
 ---------------------------

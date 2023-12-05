@@ -5,10 +5,10 @@ uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 35%
+source-wordcount: '313'
+ht-degree: 32%
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez utiliser le mode Mise en page pour définir le nombre de colonnes su
 
 Pour spécifier les propriétés d’un composant de séparateur :
 
-1. Sélectionnez un composant séparateur et appuyez sur ![cmppr](assets/cmppr.png). Les propriétés s’ouvrent dans la barre latérale.
+1. Sélectionnez un composant de séparateur et sélectionnez ![cmppr](assets/cmppr.png). Les propriétés s’ouvrent dans la barre latérale.
 1. Cliquez sur un onglet dans la section Propriétés CSS intégrées afin de spécifier les propriétés CSS. Par exemple, a. Dans l’onglet Champ, cliquez sur **Ajouter un élément**. Une ligne avec deux champs est ajoutée.
 1. Dans le premier champ de gauche, spécifiez une propriété CSS3 à appliquer. Par exemple : **border**. Vous pouvez également sélectionner une propriété en cliquant sur la flèche vers le bas. La liste déroulante n’est pas exhaustive et vous pouvez spécifier n’importe quel nom de propriété CSS3 prise en charge dans ce champ.
 1. Dans le champ adjacent, spécifiez une valeur valide pour la propriété CSS3 spécifiée. Par exemple : **noir uni 3 pixels**.

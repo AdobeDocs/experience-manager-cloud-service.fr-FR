@@ -1,15 +1,13 @@
 ---
 title: Comment modifier le contenu de la page zéro dans Designer ?
 description: Modifiez le message affiché sur la page zéro d’un PDF XFA pour les visionneuses non Adobe PDF.
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 62%
+source-wordcount: '246'
+ht-degree: 57%
 
 ---
 
@@ -44,9 +42,9 @@ Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de vis
 
 >[!NOTE]
 >
->La propriété personnalisée que vous venez de créer peut ne pas s’afficher correctement dans la boîte de dialogue Propriétés du formulaire lors de la réouverture du formulaire. Cependant, il fonctionne correctement et le formulaire affiche le message mis à jour de la page zéro.
+>La propriété personnalisée que vous avez créée peut ne pas s’afficher correctement dans la boîte de dialogue Propriétés du formulaire lors de la réouverture du formulaire. Cependant, il fonctionne correctement et le formulaire affiche le message mis à jour de la page zéro.
 
 >[!MORELIKETHIS]
 >
 >* [Télécharger et installer Forms Designer pour créer des modèles de document d’enregistrement](/help/forms/installing-configuring-designer.md)
->* [Utilisation de Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire?](/help/forms/use-forms-designer.md)
+>* [Utilisez Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire ?](/help/forms/use-forms-designer.md)

@@ -3,10 +3,10 @@ title: Modification des images
 description: Modifiez les images à l’aide des options optimisées d’ [!DNL Adobe Photoshop Express] et enregistrez les images mises à jour sous forme de versions.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 71%
+source-wordcount: '1136'
+ht-degree: 72%
 
 ---
 
@@ -91,7 +91,7 @@ Pour modifier des images à l’aide de [!DNL Adobe Express] incorporez l’édi
 
    ![Adobe Express de l’éditeur incorporé](assets/embedded-editor.png)
 
-   Vous pouvez tirer parti des fonctionnalités de [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/in/express/using/resize-image.html), [suppression ou modification de la couleur d’arrière-plan](https://helpx.adobe.com/in/express/using/remove-background.html), [image de recadrage](https://helpx.adobe.com/in/express/using/crop-image.html), et bien plus encore.
+   Vous pouvez utiliser les fonctionnalités de [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/in/express/using/resize-image.html), [suppression ou modification de la couleur d’arrière-plan](https://helpx.adobe.com/in/express/using/remove-background.html), [image de recadrage](https://helpx.adobe.com/in/express/using/crop-image.html), et bien plus encore.
 
 1. Une fois la modification d’image terminée, vous pouvez télécharger une ressource en tant que nouvelle ressource ou l’enregistrer en tant que nouvelle version.
 

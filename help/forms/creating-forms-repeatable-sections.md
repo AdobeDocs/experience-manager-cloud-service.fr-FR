@@ -5,10 +5,10 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 64%
+source-wordcount: '1109'
+ht-degree: 60%
 
 ---
 
@@ -23,7 +23,7 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 ## Utilisation du gestionnaire d’instances via des scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. En mode d’édition, sélectionnez panneau, puis appuyez sur ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **[!UICONTROL Activer la répétition du panneau]**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
+1. En mode d’édition, sélectionnez un panneau, puis sélectionnez ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **[!UICONTROL Activer la répétition du panneau]**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
 
    Le champ Maximum spécifie le nombre maximal de fois qu’un panneau peut apparaître sur la page. Vous pouvez spécifier -1 dans le champ Nombre maximum pour que le panneau s’affiche un nombre infini de fois.
 
@@ -35,7 +35,7 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 1. Le parent du panneau, qui doit être répété, doit contenir des boutons d’ajout et de suppression pour gérer les instances des panneaux répétables. Pour insérer des boutons dans le parent et activer des scripts sur les boutons, procédez comme suit :
 
-   1. A partir de la barre latérale, faites glisser un composant Bouton jusqu’au parent du panneau. Sélectionnez le composant et appuyez sur ![edit-rules](assets/edit-rules.png). Les règles du bouton s’ouvrent dans l’éditeur de règles.
+   1. A partir de la barre latérale, faites glisser un composant Bouton jusqu’au parent du panneau. Sélectionnez le composant, puis sélectionnez ![edit-rules](assets/edit-rules.png). Les règles du bouton s’ouvrent dans l’éditeur de règles.
    1. Dans la fenêtre Éditeur de règles, cliquez sur **Créer**.
 
       Sélectionnez **Éditeur visuel** dans la ligne Objets et fonctions de formulaire.
@@ -95,8 +95,8 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 Un panneau présente différentes options de disposition. La mise en page de l’option de conception en accordéon prend en charge les panneaux répétables. Effectuez les étapes suivantes pour créer un panneau répétable avec la mise en page de l’option de conception en accordéon :
 
-1. Dans le parent du panneau à répéter, appuyez sur ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Dans le menu déroulant **Disposition**, sélectionnez **Accordéon**.
-1. Dans un panneau à répéter, appuyez sur ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Activez la variable **Rendre le panneau répétable** et spécifiez les valeurs de la variable **Maximum** et **Minimum** des champs.
+1. Sur le parent du panneau à répéter, sélectionnez ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Dans le menu déroulant **Disposition**, sélectionnez **Accordéon**.
+1. Dans un panneau à répéter, sélectionnez ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Activez la variable **Rendre le panneau répétable** et spécifiez les valeurs de la variable **Maximum** et **Minimum** des champs.
 
    Vous pouvez désormais utiliser les boutons plus (+) et Supprimer (![delete-panel](assets/delete-panel.png)) pour ajouter ou supprimer des panneaux.
 

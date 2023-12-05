@@ -2,9 +2,9 @@
 title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs responsables de cloud.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1525'
 ht-degree: 38%
 
 ---
@@ -40,7 +40,7 @@ Pour créer et utiliser vos propres autorisations personnalisées, trois étapes
 1. [Attribuez des autorisations personnalisées au profil de produit.](#assign-permissions)
 1. [Affectez des utilisateurs au profil de produit.](#assign-users)
 
-Cette section décrit ces étapes. Il peut s’avérer utile de consulter les sections [Termes](#terms) et [Autorisations configurables](#configurable-permissions) lors de la création de vos propres autorisations personnalisées.
+Cette section décrit ces étapes. Il peut s’avérer utile de consulter [Termes](#terms) et [Autorisations configurables](#configurable-permissions) lors de la création de vos propres autorisations personnalisées.
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Les autorisations suivantes sont disponibles pour créer des profils personnalis
 | Gestion des variables d’environnement | Autoriser les utilisateurs à créer/modifier/supprimer des configurations d’environnement |
 | Création d’une restauration d’environnement | Autoriser les utilisateurs à créer une restauration de l’environnement |
 | Réinitialisation de l’environnement de développement rapide | Autoriser les utilisateurs à réinitialiser l’environnement de développement rapide |
-| Gestion de la copie de contenu | Autoriser les utilisateurs à gérer les opérations de copie de contenu |
+| Gestion de la copie de contenu | Autoriser les personnes à gérer les opérations de copie de contenu |
 | Création d’un pipeline | Autorisation des utilisateurs à créer des pipelines |
 | Suppression de pipeline | Autoriser les personnes à supprimer des pipelines |
 | Modification du pipeline | Autoriser les personnes à modifier les pipelines |
@@ -137,10 +137,10 @@ Les autorisations suivantes sont disponibles pour créer des profils personnalis
 | Remplacement et rejet d’échecs de mesures importantes | Autoriser les personnes à remplacer et à rejeter les échecs de mesures importantes |
 | Planification des déploiements en production | Autoriser des personnes à planifier une étape de déploiement en production |
 | Accès aux informations sur le référentiel | Autoriser les personnes à accéder aux informations du référentiel et à générer un mot de passe d’accès |
-| Repository Create | Autoriser les utilisateurs à créer des référentiels Git |
-| Repository Delete | Autorisation de la suppression des référentiels Git par les utilisateurs |
-| Repository Edit | Autoriser les utilisateurs à modifier les référentiels Git |
-| Génération du code du référentiel | Autoriser les utilisateurs à générer des projets à partir de l’archétype |
+| Création de référentiel | Autoriser les utilisateurs à créer des référentiels Git |
+| Suppression de référentiel | Autoriser les personnes à supprimer des référentiels Git |
+| Modification de référentiel | Autoriser les personnes à modifier les référentiels Git |
+| Génération de code de référentiel | Autoriser les utilisateurs à générer des projets à partir de l’archétype |
 | Gestion des noms de domaine | Autoriser les utilisateurs à créer/modifier/supprimer des noms de domaine |
 | Gestion des Listes autorisées IP | Autoriser les utilisateurs à créer/modifier/supprimer des liaisons de liste autorisée IP et de liste autorisée IP |
 | Gestion de l’infrastructure réseau | Autoriser les utilisateurs à créer/modifier/supprimer une infrastructure réseau |
@@ -166,7 +166,7 @@ Les termes suivants sont utilisés pour créer et gérer des autorisations perso
 |---|---|
 | Autorisations prédéfinies | Rôles prédéfinis tels que **Propriétaire de l’entreprise** et **Responsable de déploiement** pour régir différentes fonctionnalités de Cloud Manager. Pour plus d’informations sur les rôles prédéfinis, voir [AEM l’équipe as a Cloud Service et les profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md) |
 | Autorisations personnalisées | Les fonctionnalités de Cloud Manager permettent aux utilisateurs de créer des profils d’autorisation afin de définir des rôles pour régir les fonctionnalités prises en charge de Cloud Manager. |
-| Profil du produit | Créé dans le Admin Console pour gérer les autorisations configurables applicables aux utilisateurs faisant partie du profil d’autorisation. |
+| Profil de produits | Créé dans le Admin Console pour gérer les autorisations configurables applicables aux utilisateurs faisant partie du profil d’autorisation. |
 | Autorisation configurable | Autorisations de Cloud Manager qui peuvent être configurées dans le profil d’autorisation. |
 | Élément d’autorisation | Un programme, un environnement ou une ressource de pipeline sur lequel une autorisation peut être appliquée |
 

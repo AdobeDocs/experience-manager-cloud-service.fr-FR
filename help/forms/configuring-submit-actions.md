@@ -1,11 +1,11 @@
 ---
-title: Configuration d’une action Envoyer pour un formulaire adaptatif?
+title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 0e6c4e6745a03e0d48c535e2e113d2a7e5ff4e78
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3859'
-ht-degree: 86%
+source-wordcount: '3805'
+ht-degree: 85%
 
 ---
 
@@ -264,7 +264,7 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint, procédez comme 
 
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, le message `Connection Successful` s’affiche.
 1. Sélectionner **[!UICONTROL Site SharePoint]** et **[!UICONTROL Liste SharePoint]** dans la liste déroulante.
-1. Appuyer **[!UICONTROL Créer]** pour créer la configuration cloud pour Microsoft® SharePointList.
+1. Sélectionner **[!UICONTROL Créer]** pour créer la configuration cloud pour Microsoft® SharePointList.
 
 
 #### Utilisation de l’option Envoyer à l’aide d’un modèle de données de formulaire dans un formulaire adaptatif {#use-submit-using-fdm}
@@ -350,7 +350,7 @@ La structure du dossier pour l’enregistrement des données est `/folder_name/f
 L’action d’envoi **[!UICONTROL Envoyer au stockage Azure Blob]** connecte un formulaire adaptatif à un portail Microsoft® Azure. Vous pouvez envoyer les données de formulaire, le fichier, les pièces jointes ou le document d’enregistrement aux conteneurs de stockage Azure connectés. Pour utiliser l’action Envoyer pour le stockage Azure Blob :
 
 1. [Créer un conteneur de stockage Azure Blob](#create-a-azure-blob-storage-container-create-azure-configuration) : connecte AEM Forms aux conteneurs de stockage Azure.
-2. [Utiliser la configuration de stockage Azure dans un formulaire adaptatif ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af) : connecte votre formulaire adaptatif aux conteneurs de stockage Azure configurés.
+2. [Utilisation de la configuration de stockage Azure dans un formulaire adaptatif](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): il connecte votre formulaire adaptatif aux conteneurs de stockage Azure configurés.
 
 ### Créer un conteneur de stockage Azure Blob {#create-azure-configuration}
 
@@ -463,4 +463,4 @@ Lorsque vous préremplissez un modèle de données de formulaire ou un formulair
 
 >[!MORELIKETHIS]
 >
->* [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](/help/forms/custom-submit-action-form.md)
+>* [Création d’une action Envoyer personnalisée pour Forms adaptatif](/help/forms/custom-submit-action-form.md)

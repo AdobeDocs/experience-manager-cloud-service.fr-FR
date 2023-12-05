@@ -2,10 +2,10 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du Parcours de développement Adobe Experience Manager (AEM) sans affichage, apprenez à modéliser votre contenu pour AEM diffusion sans affichage à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 68%
+source-wordcount: '1814'
+ht-degree: 66%
 
 ---
 
@@ -210,7 +210,7 @@ Au début, vous devez activer les modèles de fragment de contenu pour votre sit
 >
 >Voir Ressources supplémentaires – Fragments de contenu dans l’explorateur de configurations
 
-Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez effectuer cette action sous **Outils** -> **Général** -> **Modèles de fragment de contenu**. Par exemple :
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez effectuer cette opération sous **Outils** > **Général** > **Modèles de fragment de contenu**. Par exemple :
 
 ![Modèle de fragment de contenu ](assets/cfm-model.png)
 
@@ -224,7 +224,7 @@ Les fragments de contenu sont toujours basés sur un modèle de fragment de cont
 
 ### Sélection du modèle approprié {#select-model}
 
-La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer -> Fragment de contenu dans le dossier requis sous Ressources -> Fichiers. L’assistant vous guide tout au long des étapes.
+La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer > Fragment de contenu dans le dossier requis sous Ressources > Fichiers . L’assistant vous guide tout au long des étapes.
 
 Un fragment de contenu est basé sur un modèle de fragment de contenu spécifique que vous sélectionnez comme première étape du processus de création.
 

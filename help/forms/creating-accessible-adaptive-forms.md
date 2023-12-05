@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 96%
+source-wordcount: '2018'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Le thème Ultramarine-Accessible est un thème de référence. Il permet de mont
 
 1. Téléchargez le package du thème.
 1. Sélectionnez **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** dans votre instance AEM.
-1. Appuyez sur **[!UICONTROL Créer]** > **[!UICONTROL Chargement de fichier]**. Sélectionnez et chargez le fichier x Ultramarine-Accessible-Theme.zip. Il télécharge le thème dans votre instance AEM.
+1. Sélectionner **[!UICONTROL Créer]** > **[!UICONTROL Téléchargement du fichier]**. Sélectionnez et chargez le fichier x Ultramarine-Accessible-Theme.zip. Il télécharge le thème dans votre instance AEM.
 
 ## Rendre un formulaire adaptatif accessible
 
@@ -58,8 +58,8 @@ Vous devez vous focaliser sur quatre aspects clés : navigation au clavier, con
 Appliquez le thème Ultramarine-Accessible à votre formulaire adaptatif existant. Pour appliquer le thème :
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
-1. Sélectionnez un composant et appuyez sur l’icône parent. Dans le menu contextuel, appuyez sur **[!UICONTROL Conteneur de formulaire adaptatif]**, puis sur l’icône Configurer.
-1. Sélectionnez le thème Ultramarine-Accessible dans le navigateur de propriétés et appuyez sur l’icône **[!UICONTROL Enregistrer]**.
+1. Sélectionnez un composant et l’icône parent. Dans le menu contextuel, sélectionnez **[!UICONTROL Conteneur de formulaires adaptatifs]** puis sélectionnez l’icône de configuration.
+1. Sélectionnez le thème Ultramarine-Accessible dans l’explorateur de propriétés et sélectionnez **[!UICONTROL Enregistrer]** Icône
 1. Actualisez la fenêtre du navigateur. Le thème est appliqué au formulaire adaptatif.
 
 Après avoir appliqué un thème accessible, effectuez les corrections supplémentaires mentionnées ci-dessous. Les corrections s’ajoutent aux corrections liées à l’accessibilité couvertes dans le thème accessible :
@@ -100,7 +100,7 @@ Le libellé perçu par les lecteurs d’écran ne doit pas nécessairement être
 
 Pour utiliser l’option d’accessibilité, procédez comme suit :
 
-1. Sélectionnez un composant et appuyez sur ](assets/cmppr.png)cmppr![.
+1. Sélectionnez un composant et sélectionnez ![cmppr](assets/cmppr.png).
 1. Cliquez sur **[!UICONTROL Accessibilité]** dans la barre latérale pour sélectionner l’option d’accessibilité de votre choix.
 
 ### Options d’accessibilité dans des composants de formulaire {#accessibility-options-in-form-components}
@@ -128,7 +128,7 @@ Les images peuvent aider à améliorer la compréhension pour certaines personne
 
 Assurez-vous que le texte décrit l’objet et son rôle dans le formulaire. Un lecteur d’écran lit ce texte alternatif lorsqu’il rencontre une image. Un texte alternatif doit toujours être spécifié pour une image.
 
-Sélectionnez un composant d’image et appuyez sur ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, indiquez le texte alternatif d’une image.
+Sélectionnez un composant d’image, puis ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, indiquez le texte alternatif d’une image.
 
 ![Texte alternatif d’une image](assets/image-properties.png)
 
@@ -157,7 +157,7 @@ Les raccourcis clavier suivants sont disponibles dans [!DNL AEM Forms].
 | Réinitialiser les données saisies dans un formulaire | Alt+R |
 | Envoyer un formulaire | Alt+S |
 
-En outre, plusieurs raccourcis clavier sont disponibles pour le composant **[!UICONTROL Sélecteur de date]** dans les formulaires adaptatifs. Pour activer les touches de raccourci, appuyez sur le composant **[!UICONTROL Sélecteur de date]** et sur ![Configurer](assets/configure-icon.svg) pour ouvrir les propriétés. Dans le **[!UICONTROL Modèles]** , sélectionnez un modèle d’affichage à l’aide de la fonction **[!UICONTROL Type]** et **[!UICONTROL Modèle]** listes déroulantes. Enregistrez les propriétés pour activer l’utilisation de raccourcis clavier pour le composant **[!UICONTROL Sélecteur de date]**.
+En outre, plusieurs raccourcis clavier sont disponibles pour le composant **[!UICONTROL Sélecteur de date]** dans les formulaires adaptatifs. Pour activer les raccourcis clavier, sélectionnez l’option **[!UICONTROL Sélecteur de date]** composant et sélectionnez ![Configurer](assets/configure-icon.svg) pour ouvrir les propriétés. Dans le **[!UICONTROL Modèles]** , sélectionnez un modèle d’affichage à l’aide de la fonction **[!UICONTROL Type]** et **[!UICONTROL Modèle]** listes déroulantes. Enregistrez les propriétés pour activer l’utilisation de raccourcis clavier pour le composant **[!UICONTROL Sélecteur de date]**.
 
 Les touches de raccourci clavier suivantes sont disponibles pour le composant Sélecteur de date dans les formulaires adaptatifs :
 

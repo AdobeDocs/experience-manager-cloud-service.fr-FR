@@ -2,10 +2,10 @@
 title: Quelles sont les fonctionnalités de mise en page d’Adaptive Forms ?
 description: La disposition et l’apparence des formulaires adaptatifs sur différents appareils sont déterminées par les paramètres de disposition. Comprenez les différentes dispositions et leur mode d’application.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 78%
+source-wordcount: '847'
+ht-degree: 75%
 
 ---
 
@@ -43,7 +43,7 @@ Pour modifier la disposition d’un formulaire adaptatif, utilisez le mode Créa
 
 L’auteur d’un formulaire peut associer une disposition à chaque panneau d’un formulaire adaptatif, y compris le panneau racine.
 
-Les dispositions de panneau sont disponibles à l’emplacement `/libs/fd/af/layouts/panel`suivant. Appuyez sur le panneau et sélectionnez ![cmppr1](assets/configure-icon.svg) pour afficher les propriétés du panneau.
+Les dispositions de panneau sont disponibles à l’emplacement `/libs/fd/af/layouts/panel`suivant. Sélectionnez le panneau, puis sélectionnez ![cmppr1](assets/configure-icon.svg) pour afficher les propriétés du panneau.
 
 ![Liste des dispositions de panneau pour le panneau racine d’un formulaire adaptatif](assets/layouts.png)
 
@@ -75,7 +75,7 @@ L’expression récapitulative peut être utilisée pour afficher les valeurs fo
 
 ![Panneaux reproductibles utilisant une disposition de type Accordéon dans des formulaires adaptatifs](assets/accordion-layout.png)
 
-### [!UICONTROL Disposition avec onglets – Les onglets s’affichent à gauche ] {#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Disposition avec onglets : les onglets s’affichent à gauche.]{#tabbed-layout-tabs-appear-on-the-left}
 
 Cette disposition permet de placer le composant **[!UICONTROL Panneau de formulaire adaptatif]** dans un panneau avec une navigation par onglets. Les onglets sont placés à gauche du contenu du panneau.
 
@@ -109,7 +109,7 @@ Cette disposition, comme son nom l’indique, affiche les titres des panneaux av
 
 ![Dispositions pour appareils mobiles avec affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile-layout1.png)
 
-### [!UICONTROL Disposition sans titres de panneau dans l’en-tête de formulaire ] {#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Disposition sans titres de panneau dans l’en-tête de formulaire]{#layout-without-panel-titles-in-the-form-header}
 
 Cette disposition, comme son nom l’indique, affiche uniquement le menu de navigation et la barre de navigation sans titre de panneau. Cette disposition fournit également les icônes Suivant et Précédent pour la navigation.
 

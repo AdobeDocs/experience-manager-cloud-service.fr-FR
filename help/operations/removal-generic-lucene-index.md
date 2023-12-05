@@ -2,10 +2,10 @@
 title: Suppression des index Lucene génériques
 description: Découvrez la planification de la suppression des index Lucene génériques et en quoi elle peut vous affecter.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 87%
+source-wordcount: '1345'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ Dans AEM, les requêtes en texte intégral sont celles qui utilisent les fonctio
 
 Ces requêtes ne peuvent pas renvoyer de résultats sans utiliser dʼindex. Contrairement à une requête ne contenant que des restrictions de chemin ou de propriété, une requête contenant une restriction de texte intégral pour laquelle aucun index ne peut être trouvé (et donc une traversée est effectuée) ne retournera jamais aucun résultat.
 
-L’index Lucene générique (`/oak:index/lucene-*`) existe depuis AEM 6.0/Oak 1.0 afin de fournir une recherche de texte intégral dans la plus grande partie de la hiérarchie du référentiel, bien que certains chemins, tels que `/jcr:system` et `/var`, aient toujours été exclus. Cependant, cet index a été largement remplacé par des index sur des types de nœuds plus spécifiques (par exemple, `damAssetLucene-*` pour le type de nœud `dam:Asset`), qui prend en charge les recherches de texte intégral et de propriétés.
+L’index Lucene générique (`/oak:index/lucene-*`) existe depuis AEM 6.0/Oak 1.0 afin de fournir une recherche de texte intégral dans la plus grande partie de la hiérarchie du référentiel, bien que certains chemins, tels que `/jcr:system` et `/var`, aient toujours été exclus. Cependant, cet index a été largement remplacé par des index sur des types de noeuds plus spécifiques (par exemple, `damAssetLucene-*` pour le `dam:Asset` type de noeud), qui prend en charge les recherches de texte intégral et de propriétés.
 
 Dans AEM 6.5, l’index Lucene générique a été marqué comme obsolète, indiquant qu’il serait supprimé dans les versions ultérieures. Depuis, un avertissement est consigné lorsque l’index est utilisé, comme illustré par le fragment de code de journal suivant :
 

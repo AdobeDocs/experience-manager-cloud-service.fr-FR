@@ -2,9 +2,9 @@
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 9%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 ## Écarts entre les demandes de contenu de Cloud Service{#content-requests-variances}
 
-Les requêtes de contenu peuvent présenter des écarts avec les outils de création de rapports Analytics d’une organisation, comme illustré dans le tableau suivant. En général, les outils Analytics collectent des données par le biais d’une instrumentation côté client. <b>ne doit pas être utilisé</b> pour signaler le nombre de demandes de contenu pour un site donné, simplement parce qu’elles dépendent souvent du consentement de l’utilisateur pour être déclenchées, ce qui fait défaut à une fraction significative du trafic. Les outils Analytics qui collectent les données côté serveur dans les fichiers journaux ou les rapports CDN pour les clients qui ajoutent leur propre CDN en plus de l’AEM as a Cloud Service, offrent de meilleurs décomptes. Pour la création de rapports sur les pages vues et leurs performances associées, le service de données Adobe RUM est l’option recommandée pour les Adobes.
+Les requêtes de contenu peuvent présenter des écarts avec les outils de création de rapports Analytics d’une organisation, comme illustré dans le tableau suivant. En général, *ne pas* utiliser des outils analytics qui collectent des données au moyen d’une instrumentation côté client pour générer des rapports sur le nombre de demandes de contenu pour un site donné, simplement parce qu’elles dépendent souvent du consentement de l’utilisateur pour être déclenchées, ce qui fait qu’elles ne couvrent qu’une partie significative du trafic. Les outils Analytics qui collectent les données côté serveur dans les fichiers journaux ou les rapports CDN pour les clients qui ajoutent leur propre CDN en plus de l’AEM as a Cloud Service, offrent de meilleurs décomptes. Pour la création de rapports sur les pages vues et leurs performances associées, le service de données Adobe RUM est l’option recommandée par Adobe.
 
 | Raison de l’écart | Explication |
 |---|---|

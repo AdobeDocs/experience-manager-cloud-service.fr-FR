@@ -4,10 +4,10 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3971'
-ht-degree: 86%
+source-wordcount: '3960'
+ht-degree: 85%
 
 ---
 
@@ -463,7 +463,7 @@ Bien qu’AEM propose plusieurs solutions et interfaces de traduction, il est é
 
 ### Exportation d’une tâche de traduction {#exporting-a-translation-job}
 
-Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, pour l’envoyer à un fournisseur de traduction qui n’est pas intégré à AEM par le biais d’un connecteur ou pour réviser le contenu.
+Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, pour l’envoyer à un fournisseur de traduction qui n’est pas intégré à AEM via un connecteur, ou pour revoir le contenu.
 
 1. Dans le menu déroulant de la mosaïque de la tâche de traduction, sélectionnez **Exporter**.
 1. Dans la boîte de dialogue, sélectionnez **Télécharger le fichier exporté** et, au besoin, utilisez la boîte de dialogue du navigateur web pour enregistrer le fichier.
@@ -471,7 +471,7 @@ Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, 
 
 ### Importation d’une tâche de traduction {#importing-a-translation-job}
 
-Vous pouvez importer du contenu traduit dans AEM, par exemple, lorsque votre fournisseur de traduction vous l’envoie, car il n’est pas intégré à AEM par le biais d’un connecteur.
+Vous pouvez importer du contenu traduit dans AEM, par exemple, lorsque votre fournisseur de traduction vous l’envoie, car il n’est pas intégré à AEM via un connecteur.
 
 1. Dans le menu déroulant de la mosaïque de la tâche de traduction, sélectionnez **Importer**.
 1. Utilisez la boîte de dialogue du navigateur web pour sélectionner le fichier à importer.

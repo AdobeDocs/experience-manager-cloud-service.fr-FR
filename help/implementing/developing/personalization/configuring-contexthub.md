@@ -2,10 +2,10 @@
 title: Configuration de ContextHub
 description: Découvrez comment configurer ContextHub, un framework pour stocker, manipuler et présenter des données contextuelles.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 87%
+source-wordcount: '1609'
+ht-degree: 85%
 
 ---
 
@@ -53,7 +53,7 @@ Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsq
 1. Saisissez les valeurs pour les propriétés suivantes :
 
    * Titre du mode d’IU : titre qui identifie le mode d’IU.
-   * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
+   * Icône de mode : sélecteur pour [Icône de l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) pour utiliser, par exemple, `coral-Icon--user`
    * Activé : sélectionnez cette option pour afficher le mode d’interface utilisateur dans la barre d’outils ContextHub
 
 1. Sélectionnez Enregistrer.
@@ -78,7 +78,7 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 
 1. Sur le rail du Experience Manager, sélectionnez Outils > Sites > ContextHub.
 1. Sélectionnez le conteneur de configuration auquel vous souhaitez ajouter un module d’IU.
-1. Cliquez ou saisissez la configuration ContextHub à laquelle vous souhaitez ajouter le module d’UI.
+1. Sélectionnez ou saisissez la configuration ContextHub à laquelle vous souhaitez ajouter le module d’IU.
 1. Sélectionnez le mode d’IU auquel vous ajoutez le module d’IU.
 1. Sélectionnez le bouton Créer , puis le module d’IU ContextHub (générique).
 

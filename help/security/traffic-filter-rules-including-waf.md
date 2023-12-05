@@ -2,10 +2,10 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3357'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,7 @@ Cet article comprend les sections suivantes :
 * **Vue d’ensemble de la protection du trafic :** découvrez votre protection contre le trafic malveillant.
 * **Processus suggéré pour la configuration des règles :** découvrez une méthodologie de haut niveau pour la protection de votre site web.
 * **Configuration :** découvrez comment paramétrer, configurer et déployer des règles de filtre de trafic, y compris les règles WAF avancées.
-* **Syntaxe des règles :** découvrez comment déclarer des règles de filtre de trafic dans le fichier de configuration `cdn.yaml`. Cela inclut les règles de filtre de trafic disponibles pour tous les clientes et clients Sites et Forms, ainsi que la sous-catégorie des règles WAF pour ceux qui détiennent une licence pour cette fonctionnalité.
+* **Syntaxe des règles :** découvrez comment déclarer des règles de filtre de trafic dans le fichier de configuration `cdn.yaml`. Cela inclut les règles de filtrage du trafic disponibles pour tous les clients Sites et Forms, ainsi que la sous-catégorie des règles WAF pour ceux qui détiennent une licence pour cette fonctionnalité.
 * **Exemples de règles :** consultez des exemples de règles déclarées pour vous lancer.
 * **Règles de limite de débit :** découvrez comment utiliser des règles de limitation de débit pour protéger votre site contre les attaques à volume élevé.
 * **Journaux du réseau CDN :** découvrez les règles déclarées et les indicateurs WAF qui correspondent à votre trafic.
@@ -78,7 +78,7 @@ Voici un processus de bout en bout de haut niveau recommandé pour obtenir les r
         cdn.yaml
    ```
 
-1. `cdn.yaml` doit contenir des métadonnées ainsi qu’une liste de règles de filtres de trafic et de règles WAF.
+1. `cdn.yaml` doit contenir des métadonnées et une liste des règles de filtres de trafic et des règles WAF.
 
    ```
    kind: "CDN"
@@ -148,7 +148,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-Format des règles de filtrage du trafic dans le fichier `cdn.yaml` décrit ci-dessous. Voir quelques [autres exemples](#examples) dans une section ultérieure, ainsi qu’une section distincte sur [Règles de limite de taux](#rate-limit-rules).
+Format des règles de filtrage du trafic dans le fichier `cdn.yaml` décrit ci-dessous. Voir quelques [autres exemples](#examples) dans une section ultérieure et une section distincte sur [Règles de limite de taux](#rate-limit-rules).
 
 
 | **Propriété** | **La plupart des règles de filtrage de trafic** | **Règles de filtre de trafic WAF** | **Type** | **Valeur par défaut** | **Description** |
@@ -415,9 +415,9 @@ Les limites de débit sont calculées par POP de réseau CDN. Supposons, par exe
 | **Propriété** | **Type** | **Par défaut** | **SIGNIFICATION** |
 |---|---|---|---|
 | limite | entier compris entre 10 et 10 000 | obligatoire | Débit de requête (par POP de réseau CDN) dans les requêtes par seconde pour lesquelles la règle est déclenchée. |
-| fenêtre | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le débit de requête est calculé. La précision des compteurs dépend de la taille de la fenêtre (plus la fenêtre est grande, plus la précision est élevée). Par exemple, on peut s’attendre à une précision de 50 % pour la fenêtre d’une seconde et de 90 % pour la fenêtre de 60 secondes. |
+| fenêtre | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le débit de requête est calculé. La précision des compteurs dépend de la taille de la fenêtre (plus la fenêtre est grande, plus la précision est élevée). Par exemple, on peut s’attendre à une précision de 50 % pour la fenêtre d’une seconde et de 90 % pour la fenêtre de 60 secondes. |
 | pénalité | entier compris entre 60 et 3 600 | 300 (5 minutes) | Période en secondes pendant laquelle les requêtes correspondantes sont bloquées (arrondie à la minute la plus proche). |
-| groupBy | tableau [Getter] | aucun | Le compteur de limiteur de débit sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
+| groupBy | tableau [Getter] | aucun | le compteur de limiteurs de débit sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
 
 
 ### Exemples {#ratelimiting-examples}
@@ -470,7 +470,7 @@ data:
 
 AEM as a Cloud Service permet d’accéder aux journaux de réseau CDN qui sont utiles pour les cas d’utilisation, notamment l’optimisation du rapport d’accès au cache et la configuration des règles de filtre de trafic. Les journaux de réseau CDN s’affichent dans la boîte de dialogue **Journaux de téléchargement** de Cloud Manager, lors de la sélection du service de création ou de publication.
 
-Notez que les journaux de réseau CDN peuvent être retardés jusqu’à 5 minutes.
+Les journaux CDN peuvent être retardés de cinq minutes au maximum.
 
 La propriété `rules` décrit les règles de filtre de trafic correspondantes et présente le modèle suivant :
 

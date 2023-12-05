@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2872'
-ht-degree: 98%
+source-wordcount: '2677'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ Dynamic Media propose de nombreux paramètres de traitement des images que vous
 
 Essayez maintenant d’ajouter un paramètre de rotation à l’image de montre. Et la fin du chemin de l’URL, qui suit immédiatement `wid=1000`, saisissez `&rotate=90`, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
 
-La montre est encore légèrement inclinée à gauche. Remplacez la valeur de rotation de `90` par `92`, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9).{target="_blank"}.
+La montre est encore légèrement inclinée à gauche. Remplacez la valeur de rotation de `90` par `92`, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
 
 Encore une fois, au moment où vous appuyez **[!UICONTROL Entrée]**, un nouveau rendu de la montre est généré presque instantanément. Voilà le type de performances auxquelles vous pouvez vous attendre, ce qui explique pourquoi Dynamic Media peut envoyer plus de 800 000 requêtes d’image, _par seconde_, lors d’un week-end chargé ou d’un jour férié majeur.
 
@@ -123,7 +123,7 @@ Vous vous rappelez que, dans le chapitre précédent [Anatomie d’une URL Dynam
 
 Vous pouvez considérer un paramètre d’image prédéfini comme une recette pour vos images. Il va fournir n&#39;importe quelle image qui utilise le paramètre prédéfini de manière cohérente à chaque fois ; il va être le même. Le paramètre `&op_brightness=+10` a également été ajouté pour augmenter légèrement la luminosité.
 
-Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, nous souhaitons appliquer le paramètre d’image prédéfini _Medium_ à l’image d’une casserole de chocolat fondu.
+Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, vous souhaitez appliquer la variable _Volume moyen_ image prédéfinie en image d&#39;un bol de chocolat liquide.
 
 ![Application du paramètre d’image prédéfini *Medium* pour générer un rendu d’image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Application du paramètre d’image prédéfini Medium pour générer un rendu d’image_

@@ -2,10 +2,10 @@
 title: Autres régions de publication
 description: Découvrez comment AEM as a Cloud Service prend en charge des régions de publication supplémentaires pour une disponibilité accrue et une latence réduite.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 80%
+source-wordcount: '638'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ Les organisations peuvent acquérir sous licence jusqu’à trois régions de pu
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement disponible uniquement pour AEM Sites. Elle ne peut pas non plus être appliquée aux programmes sandbox. En outre, sachez que d’autres fonctionnalités de régions de publication nécessitent que votre programme soit mis à jour vers AEM version 12142 ou ultérieure.
+>Cette fonctionnalité est actuellement disponible uniquement pour AEM Sites. Elle ne peut pas non plus être appliquée aux programmes sandbox. En outre, la fonctionnalité d’autres régions de publication nécessite que votre programme soit mis à jour pour AEM version 12142 ou ultérieure.
 
 ## Cas d’utilisation {#use-cases}
 

@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1413'
 ht-degree: 92%
 
 ---
@@ -119,7 +119,7 @@ Lorsque vous envisagez de déplacer des pages dans une Live Copy, tenez compte 
 
 ## Personnalisation des déploiements {#customizing-rollouts}
 
-Les configurations de déploiement MSM sont fortement personnalisables. Vous devez savoir que l’automatisation des déploiements peut avoir des conséquences importantes. En règle générale, il est recommandé de vous préparer soigneusement avant de vous engager dans les activités suivantes :
+Les configurations de déploiement MSM sont fortement personnalisables. L’automatisation des déploiements peut avoir des conséquences de grande envergure. En règle générale, il est recommandé de vous préparer soigneusement avant de vous engager dans les activités suivantes :
 
 * Automatisation des déploiements, par exemple avec des [déclencheurs onModify](#onmodify)
 * Personnalisation des [propriétés ou des types de nœuds](#node-types-properties)

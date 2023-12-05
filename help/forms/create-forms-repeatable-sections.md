@@ -3,10 +3,10 @@ title: Comment créer des panneaux répétables dans les composants principaux d
 description: Découvrez comment créer des sections ou des champs répétables dans un formulaire adaptatif.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 93%
+source-wordcount: '1256'
+ht-degree: 91%
 
 ---
 
@@ -48,7 +48,7 @@ Pour répéter un panneau dans le formulaire ou supprimer les panneaux répétab
 ![Onglet Accessibilité](/help/forms/assets/repeat-panel.png)
 
 Pour activer la répétition d’un panneau, procédez comme suit :
-1. Sélectionnez un conteneur de panneaux et appuyez sur ![cmppr](/help/forms/assets/cmppr.png).
+1. Sélectionnez un conteneur de panneau, puis sélectionnez ![cmppr](/help/forms/assets/cmppr.png).
 1. Cliquez sur **Répéter le panneau** et mettez le bouton (bascule) sur **Activer la répétition du panneau**.
 1. Définissez les **répétitions minimales** comme requis pour les sections répétables minimales. Vous pouvez définir les **répétitions minimales** sur zéro pour ne pas répéter de panneaux ou pour supprimer les panneaux répétés. Par défaut, la valeur de répétition minimale est zéro.
 1. Définissez les **répétitions maximales** pour répéter le panneau autant de fois que nécessaire. La valeur est par défaut infinie.
@@ -63,7 +63,7 @@ Pour activer la répétition d’un panneau, procédez comme suit :
 
 Le parent du panneau à répéter doit contenir un bouton d’ajout pour gérer l’instance de répétition du panneau. Pour insérer des boutons dans le parent et activer des scripts sur les boutons, procédez comme suit :
 
-1. Ajoutez un **composant de bouton** au parent du panneau. Dans la vidéo d’exemple ci-dessous, un composant de bouton avec le nom de libellé **Ajouter** et le nom de champ **AddPanel** est utilisé. Sélectionnez le composant et appuyez sur ![edit-rules](/help/forms/assets/edit-rules.png). Les règles du composant de bouton s’ouvrent dans l’éditeur de règles.
+1. Ajoutez un **composant de bouton** au parent du panneau. Dans la vidéo d’exemple ci-dessous, un composant de bouton avec le nom de libellé **Ajouter** et le nom de champ **AddPanel** est utilisé. Sélectionnez le composant, puis sélectionnez ![edit-rules](/help/forms/assets/edit-rules.png). Les règles du composant de bouton s’ouvrent dans l’éditeur de règles.
 1. Dans la fenêtre Éditeur de règles, cliquez sur **Créer**.
 
    Sélectionnez **Éditeur visuel** dans la ligne Objets et fonctions de formulaire.
@@ -84,7 +84,7 @@ Le parent du panneau à répéter doit contenir un bouton d’ajout pour gérer 
 
 Le parent du panneau doit contenir un bouton de suppression pour supprimer l’instance des panneaux répétables. Pour insérer des boutons dans le parent et activer des scripts sur les boutons pour supprimer les panneaux répétables, procédez comme suit :
 
-1. Ajoutez un **composant de bouton** au parent du panneau. Dans la vidéo ci-dessous, un composant de bouton avec le nom de libellé **Supprimer** et le nom de champ **DeletePanel** est utilisé. Sélectionnez le composant et appuyez sur ![edit-rules](/help/forms/assets/edit-rules.png). Les règles du composant de bouton s’ouvrent dans l’éditeur de règles.
+1. Ajoutez un **composant de bouton** au parent du panneau. Dans la vidéo ci-dessous, un composant de bouton avec le nom de libellé **Supprimer** et le nom de champ **DeletePanel** est utilisé. Sélectionnez le composant, puis sélectionnez ![edit-rules](/help/forms/assets/edit-rules.png). Les règles du composant de bouton s’ouvrent dans l’éditeur de règles.
 1. Dans la fenêtre Éditeur de règles, cliquez sur **Créer**.
 
    Sélectionnez **Éditeur visuel** dans la ligne Objets et fonctions de formulaire.
@@ -151,8 +151,8 @@ Le parent du panneau doit contenir un bouton de suppression pour supprimer l’i
 
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
+1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

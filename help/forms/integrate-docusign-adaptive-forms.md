@@ -2,10 +2,10 @@
 title: Comment intégrer DocuSign à un formulaire adaptatif ?
 description: Découvrez comment utiliser DocuSign avec un formulaire adaptatif pour collecter des signatures électroniques.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 97%
+source-wordcount: '1534'
+ht-degree: 87%
 
 ---
 
@@ -126,8 +126,8 @@ Une fois les prérequis réunis, procédez comme suit pour intégrer [!DNL DocuS
 
 1. Accédez à **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Services cloud]** > **[!UICONTROL DocuSign]** et sélectionnez un dossier pour héberger la configuration.
 
-1. Sur la page des configurations, appuyez sur **[!UICONTROL Créer]** pour créer une configuration [!DNL DocuSign] dans AEM Forms.
-1. Dans l’onglet **[!UICONTROL Général]** de la page **[!UICONTROL Créer une configuration DocuSign]**, spécifiez un **[!UICONTROL nom]** de configuration et appuyez sur **[!UICONTROL Suivant]**. Vous pouvez éventuellement spécifier un **[!UICONTROL Titre]**.
+1. Sur la page des configurations, sélectionnez **[!UICONTROL Créer]** pour créer [!DNL DocuSign] dans AEM Forms.
+1. Dans le **[!UICONTROL Général]** de la **[!UICONTROL Création d’une configuration DocuSign]** , spécifiez une **[!UICONTROL Nom]** pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**. Vous pouvez éventuellement spécifier un **[!UICONTROL Titre]**.
 
 1. Copiez l’URL dans la fenêtre active du navigateur dans un bloc-notes. L’URL est nécessaire pour configurer l’application [!DNL DocuSign] avec [!DNL AEM Forms] à une étape ultérieure.
 
@@ -146,9 +146,9 @@ Une fois les prérequis réunis, procédez comme suit pour intégrer [!DNL DocuS
 
 1. Spécifiez l’**[!UICONTROL ID client]** (la clé d’intégration DocuSign) et la **[!UICONTROL Secret client]** (clé secrète DocuSign).
 
-1. Appuyez sur **[!UICONTROL Se connecter à DocuSign]**. Lorsque vous êtes invité à fournir vos informations d’identification, indiquez le nom d’utilisateur et le mot de passe du compte utilisé lors de la création de l’application [!DNL DocuSign]. Lorsque vous êtes invité à confirmer l’accès à `your developer account`, cliquez sur **[!UICONTROL Autoriser l’accès]**. Si les informations d’identification sont correctes, un message de réussite s’affiche.
+1. Sélectionner **[!UICONTROL Connexion à DocuSign]**. Lorsque vous êtes invité à fournir vos informations d’identification, indiquez le nom d’utilisateur et le mot de passe du compte utilisé lors de la création de l’application [!DNL DocuSign]. Lorsque vous êtes invité à confirmer l’accès à `your developer account`, cliquez sur **[!UICONTROL Autoriser l’accès]**. Si les informations d’identification sont correctes, un message de réussite s’affiche.
 
-1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration [!DNL DocuSign].
+1. Sélectionner **[!UICONTROL Créer]** pour créer la variable [!DNL DocuSign] configuration.
 
 1. Sélectionnez la configuration, cliquez sur **[!UICONTROL Publier]**, sélectionnez la configuration, puis cliquez sur **[!UICONTROL Publier]**. La configuration sera ainsi répliquée sur les environnements de publication correspondants.
 
@@ -168,7 +168,7 @@ Vous pouvez activer [!DNL DocuSign] pour un formulaire adaptatif existant ou cr�
 Pour créer un formulaire adaptatif prenant en charge les signatures :
 
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Appuyez sur **[!UICONTROL Créer]** et sélectionner **[!UICONTROL Formulaire adaptatif]**. Une liste de modèles s’affiche. Sélectionnez un modèle, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Sélectionner **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Formulaire adaptatif]**. Une liste de modèles s’affiche. Sélectionnez un modèle, puis **[!UICONTROL Suivant]**.
 1. Dans l’onglet **[!UICONTROL De base]** :
 
    1. Précisez les **[!UICONTROL Nom]** et **[!UICONTROL Titre]** pour le formulaire adaptatif.
@@ -183,23 +183,23 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
 
    - Si vous ne disposez pas d’un modèle de formulaire personnalisé, sélectionnez l’option **[!UICONTROL Générer un document d’enregistrement]**. Lorsque vous utilisez cette option, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
-1. Appuyez sur **[!UICONTROL Créer.]** Un formulaire adaptatif prenant en charge les signatures est créé. Vous pouvez y ajouter vos champs [!DNL DocuSign] et envoyer le formulaire pour signature.
-1. Ouvrez le formulaire adaptatif en mode d’édition. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur **[!UICONTROL Conteneur de formulaires]** et appuyez sur ![Configurer](assets/configure-icon.svg).
+1. Sélectionner **[!UICONTROL Créez.]** Un formulaire adaptatif prenant en charge les signatures est créé. Vous pouvez y ajouter vos champs [!DNL DocuSign] et envoyer le formulaire pour signature.
+1. Ouvrez le formulaire adaptatif en mode d’édition. Dans le **[!UICONTROL Contenu]** , sélectionnez l’onglet **[!UICONTROL Conteneur de formulaires]** et sélectionnez ![Configurer](assets/configure-icon.svg).
 
 1. Dans le **[!UICONTROL Envoi]** , sélectionnez **[!UICONTROL Envoyer avec les signatures électroniques DocuSign]** de la **[!UICONTROL Action Envoyer]** liste déroulante.
 
-1. Dans la section **[!UICONTROL Configuration d’action]**, appuyez sur **[!UICONTROL Ajouter]** pour ajouter un destinataire et indiquer son adresse e-mail. Appuyer de nouveau sur **[!UICONTROL Ajouter]** pour ajouter d’autres destinataires.
+1. Dans le **[!UICONTROL Configuration d’action]** , sélectionnez **[!UICONTROL Ajouter]** pour ajouter un destinataire et indiquer son adresse email. Sélectionner **[!UICONTROL Ajouter]** pour ajouter d’autres destinataires.
 
 1. Indiquez l’objet de l’e-mail dans le champ **[!UICONTROL Objet du message]**. Sélectionnez **Inclure des pièces jointes** pour inclure des pièces jointes à l’e-mail.
 
-1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+1. Sélectionner ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
 
 #### Activation d’[!DNL DocuSign] pour un formulaire adaptatif {#editafsign}
 
 Pour utiliser [!DNL DocuSign] dans un formulaire adaptatif existant :
 
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Sélectionnez le document adaptatif et appuyez sur **[!UICONTROL Propriétés]**.
+1. Sélectionnez le formulaire adaptatif et choisissez **[!UICONTROL Propriétés]**.
 1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’intégration d’[!DNL DocuSign] à [!DNL AEM Forms].
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, sélectionnez l’une des options suivantes :
 
@@ -207,14 +207,14 @@ Pour utiliser [!DNL DocuSign] dans un formulaire adaptatif existant :
 
    - Si vous ne disposez pas d’un modèle de formulaire personnalisé, sélectionnez l’option **[!UICONTROL Générer un document d’enregistrement]**. Lorsque vous utilisez cette option, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
-1. Appuyez sur **[!UICONTROL Enregistrer et fermer]**. Le formulaire adaptatif est activé pour [!DNL DocuSign]. Vous pouvez maintenant y ajouter vos champs [!DNL DocuSign] et envoyer le formulaire pour signature.
+1. Sélectionner **[!UICONTROL Enregistrer et fermer]**. Le formulaire adaptatif est activé pour [!DNL DocuSign]. Vous pouvez maintenant y ajouter vos champs [!DNL DocuSign] et envoyer le formulaire pour signature.
 
-1. Ouvrez le formulaire adaptatif en mode d’édition. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur **[!UICONTROL Conteneur de formulaires]** et appuyez sur ![Configurer](assets/configure-icon.svg).
+1. Ouvrez le formulaire adaptatif en mode d’édition. Dans le **[!UICONTROL Contenu]** , sélectionnez l’onglet **[!UICONTROL Conteneur de formulaires]** et sélectionnez ![Configurer](assets/configure-icon.svg).
 
 1. Dans le **[!UICONTROL Envoi]** , sélectionnez **[!UICONTROL Envoyer avec les signatures électroniques DocuSign]** de la **[!UICONTROL Action Envoyer]** liste déroulante.
 
-1. Dans la section **[!UICONTROL Configuration d’action]**, appuyez sur **[!UICONTROL Ajouter]** pour ajouter un destinataire et indiquer son adresse e-mail. Appuyer de nouveau sur **[!UICONTROL Ajouter]** pour ajouter d’autres destinataires.
+1. Dans le **[!UICONTROL Configuration d’action]** , sélectionnez **[!UICONTROL Ajouter]** pour ajouter un destinataire et indiquer son adresse email. Sélectionner **[!UICONTROL Ajouter]** pour ajouter d’autres destinataires.
 
 1. Indiquez l’objet de l’e-mail dans le champ **[!UICONTROL Objet du message]**. Sélectionnez **Inclure des pièces jointes** pour inclure des pièces jointes à l’e-mail.
 
-1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+1. Sélectionner ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.

@@ -2,10 +2,10 @@
 title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 84%
+ht-degree: 78%
 
 ---
 
@@ -47,7 +47,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
       * [Mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [Afficher comme publié(e)](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* Les versions ne sont pas lancées/créées à partir de l’éditeur de pages. Cette opération s’effectue dans la console **Sites** (via l’option **Créer** ou [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) pour une ressource sélectionnée).
+* Les versions ne sont pas lancées/créées à partir de l’éditeur de page. Cela est maintenant effectué à partir de la fonction **Sites** (via **Créer** ou [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) pour une ressource sélectionnée).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
 1. Ouvrez la console **Sites** (à l’aide de l’option **Sites** dans [Navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation). Pour cela, une liste déroulante s’affiche lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche).
 
-1. Naviguez dans l’arborescence en appuyant/cliquant sur la page appropriée. La représentation des ressources de page dépend du mode d’affichage activé : [Carte, Liste ou Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) :
+1. Naviguez dans l’arborescence en appuyant/cliquant sur la page appropriée. La représentation des ressources de page dépend de la vue que vous utilisez - [Carte, Liste ou Colonne](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
    ![Menu déroulant de sélection du mode](/help/sites-cloud/authoring/assets/views.png)
 
@@ -103,7 +103,7 @@ La sélection d’une page dépend de la vue utilisée dans la console :
 
    * Passez en mode de sélection en [sélectionnant la ressource requise](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). La marche à suivre dépend de l’appareil utilisé :
 
-      * Sur un appareil mobile : appuyez de manière prolongée sur la carte
+      * Sur un appareil mobile : sélectionnez la carte et maintenez-la enfoncée.
       * Sur un ordinateur de bureau : utilisez l’[action rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) représentée par l’icône illustrant une coche :
 
    * Une coche apparaît sur la carte afin d’indiquer que la page a été sélectionnée.
@@ -148,7 +148,7 @@ Pour modifier votre page :
    * [Modifier le contenu d’un composant existant](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) sur la page :
 
       * Ouvrez la barre d’outils du composant en sélectionnant . Utilisez l’icône **Modifier** (crayon) pour ouvrir la boîte de dialogue.
-      * Ouvrez l’éditeur statique du composant en maintenant appuyé ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, la sélection est limitée).
+      * Ouvrez l’éditeur statique pour le composant en le sélectionnant et en le maintenant enfoncé ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, la sélection est limitée).
       * Pour afficher toutes les actions disponibles, passez en mode plein écran en cliquant sur l’icône suivante :
 
         ![Bouton Plein écran](/help/sites-cloud/authoring/assets/full-screen.png)
@@ -176,7 +176,7 @@ Pour modifier votre page :
 
    * [Ajouter des annotations](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) à la page :
 
-      * En mode **Annotation** (icône de bulle), ajoutez des annotations à l’aide de l’icône **Ajouter une annotation** (plus). Quittez le mode Annotation en cliquant sur la croix (X) en haut à droite.
+      * Sélectionnez la variable **Annoter** mode (icône de bulle vocale). Ajoutez des annotations à l’aide de la fonction **Ajouter une annotation** (plus) . Quittez le mode d’annotation en cliquant sur X en haut à droite.
 
         ![Bouton Annotations](/help/sites-cloud/authoring/assets/annotations.png)
 

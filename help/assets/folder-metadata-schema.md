@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 78%
+source-wordcount: '1059'
+ht-degree: 77%
 
 ---
 
@@ -141,7 +141,7 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 1. Sélectionnez la variable [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**> **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, sélectionnez le formulaire à appliquer à un dossier.
-1. Dans la barre d’outils, sélectionnez **[!UICONTROL Appliquer au(x) dossier(s)]**.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Appliquer aux dossiers]**.
 
 1. Sélectionnez le dossier auquel appliquer le schéma, puis sélectionnez **[!UICONTROL Appliquer]**. Si un schéma de métadonnées est déjà appliqué au dossier, un message d’avertissement vous informe que vous êtes sur le point de remplacer le schéma existant. Sélectionner **[!UICONTROL Remplacer]**.
 1. Ouvrez les propriétés des métadonnées pour le dossier auquel vous avez appliqué le schéma de métadonnées.

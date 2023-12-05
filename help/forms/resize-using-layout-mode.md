@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 89%
+source-wordcount: '1138'
+ht-degree: 71%
 
 ---
 
@@ -37,7 +37,7 @@ Sélectionnez **[!UICONTROL Mise en page]** dans la liste déroulante qui s’af
 
 ## Redimensionnement des composants {#resize-components}
 
-1. En mode Mise en page, appuyez sur le composant pour le redimensionner. Les points bleus s’affichent au début et à la fin de la grille réactive.
+1. En mode Mise en page, sélectionnez le composant à redimensionner. Les points bleus s’affichent au début et à la fin de la grille réactive.
 1. Faites glisser les points bleus pour définir la position du composant dans la grille réactive.
 
    ![Redimensionnement en mode Mise en page](assets/layout_mode_resize_new_updated1.png)
@@ -59,7 +59,7 @@ Sélectionnez **[!UICONTROL Mise en page]** dans la liste déroulante qui s’af
 **Objectif :** vous souhaitez insérer un composant de tableau ainsi qu’un composant d’image et les positionner en parallèle dans un formulaire adaptatif.
 
 1. Insérez les composants de tableau et d’image en utilisant le mode [!UICONTROL Édition] dans le formulaire adaptatif. Le composant d’image s’affiche après le composant de tableau.
-1. Passez en mode [!UICONTROL Mise en page] et appuyez sur le composant [!UICONTROL Tableau]. Les points bleus pour redimensionner le composant s’affichent aux colonnes 1 et 12.
+1. Basculer vers [!UICONTROL Disposition] et sélectionnez l’option [!UICONTROL Tableau] composant. Les points bleus pour redimensionner le composant s’affichent aux colonnes 1 et 12.
 1. Faites glisser le point bleu de la colonne 12 vers la colonne 6 de la grille réactive.
 
    ![Définition du point de fin du tableau](assets/layout_mode_end_point_table_new.png)
@@ -68,13 +68,13 @@ Sélectionnez **[!UICONTROL Mise en page]** dans la liste déroulante qui s’af
 
    ![Tableau et image en parallèle en mode Mise en page](assets/table_image_parallel_new.png)
 
-   Vous pouvez sélectionner le composant d’image et appuyer sur l’option **[!UICONTROL Flotter jusqu’à la nouvelle ligne]** disponible dans la barre d’outils pour déplacer le composant d’image vers la ligne suivante.
+   Vous pouvez sélectionner le composant Image et sélectionner la variable **[!UICONTROL Flotter sur une nouvelle ligne]** option disponible dans la barre d’outils pour déplacer le composant Image vers la ligne suivante.
 
 ## Redimensionnement des panneaux {#resize-panels-layout-mode}
 
 Effectuez les étapes suivantes si vous souhaitez redimensionner l’ensemble du panneau au lieu de composants distincts :
 
-1. Appuyez sur l’un des composants du panneau à redimensionner, sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg), puis la première option dans la liste déroulante, si le panneau est le parent immédiat du composant.
+1. Sélectionnez l’un des composants du panneau que vous souhaitez redimensionner, puis sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg), puis sélectionnez la première option de la liste déroulante, si le panneau est le parent immédiat du composant.
 
    Les points bleus s’affichent au début et à la fin de la grille réactive.
 
@@ -85,13 +85,13 @@ Vous pouvez répéter les étapes 1 et 2 et sélectionner ![Sélectionner le pa
 
 Pour définir le nombre de colonnes d’un panneau, procédez comme suit :
 
-1. En mode **[!UICONTROL Édition]**, appuyez sur le panneau, sélectionnez ![Configurer](assets/configure-icon.svg), puis **[!UICONTROL Réactif - tout sur la page sans navigation]** dans la liste déroulante **[!UICONTROL Disposition du panneau]**.
+1. Dans **[!UICONTROL Modifier]** mode, sélectionnez le panneau, sélectionnez ![Configurer](assets/configure-icon.svg), puis sélectionnez **[!UICONTROL Réactif : tout sur la page sans navigation]** de l’option **[!UICONTROL Disposition du panneau]** liste déroulante.
 
-1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+1. Sélectionner ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
 
-1. En mode **[!UICONTROL Mise en page]**, appuyez sur l’un des composants du panneau, sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg), puis le panneau.
+1. Dans le **[!UICONTROL Disposition]** , sélectionnez l’un des composants du panneau, puis ![Sélectionner le parent](assets/select_parent_icon.svg), puis sélectionnez le panneau .
 
-1. Appuyez sur ![plusieurs colonnes](assets/multi-column.svg) et sélectionnez le nombre de colonnes dans la liste déroulante. Le nombre de colonnes peut être compris entre 1 et 12. Le panneau est divisé en une disposition à plusieurs colonnes.
+1. Sélectionner ![multi-colonne](assets/multi-column.svg) et sélectionnez le nombre de colonnes dans la liste déroulante. Le nombre de colonnes peut être compris entre 1 et 12. Le panneau est divisé en une disposition à plusieurs colonnes.
 
 ![plusieurs colonnes en mode de mise en page](assets/multi-column-layout.png)
 
@@ -106,7 +106,7 @@ Activez la nouvelle grille réactive pour les formulaires que vous créez à l�
 Pour activer la nouvelle grille réactive, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Mise en page]** dans la liste déroulante qui s’affiche en haut à côté de l’option **[!UICONTROL Prévisualiser]**. Une confirmation s’affiche pour activer le mode Mise en page.
-1. Appuyez sur **[!UICONTROL Oui]** pour activer le mode **[!UICONTROL Mise en page]** pour le formulaire.
+1. Sélectionner **[!UICONTROL Oui]** pour activer la variable **[!UICONTROL Disposition]** du formulaire.
 
 ### Incorporation d’un ancien fragment dans un formulaire adaptatif avec une nouvelle disposition réactive {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -116,7 +116,7 @@ La nouvelle disposition réactive du formulaire adaptatif permet d’ajouter au 
 
 Si vous incorporez un fragment avec la nouvelle disposition réactive dans un formulaire adaptatif avec une ancienne disposition réactive, le système vous invite à activer le mode Mise en page du formulaire et à réincorporer le fragment.
 
-Pour activer le mode Mise en page, sélectionnez **[!UICONTROL Mise en page]** dans la liste déroulante qui s’affiche en haut à côté de l’option **[!UICONTROL Prévisualiser]** et appuyez sur **[!UICONTROL Oui]** pour confirmer. Sélectionnez le mode **[!UICONTROL Édition]** pour réincorporer le fragment.
+Pour activer le mode Mise en page, sélectionnez **[!UICONTROL Disposition]** dans la liste déroulante qui s’affiche en haut à côté de la **[!UICONTROL Aperçu]** et sélectionnez **[!UICONTROL Oui]** pour confirmer. Sélectionnez le mode **[!UICONTROL Édition]** pour réincorporer le fragment.
 
 ## Désactivation du mode Mise en page pour les formulaires avec une ancienne disposition réactive {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -125,12 +125,12 @@ Vous pouvez désactiver le mode Mise en page pour les formulaires avec une ancie
 Pour désactiver le mode Mise en page, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]** et ouvrez le modèle utilisé dans le formulaire en mode **[!UICONTROL Édition]**.
-1. Sélectionnez le conteneur de formulaires dans le volet de gauche et appuyez sur **[!UICONTROL Politique]**.
+1. Sélectionnez le conteneur de formulaires dans le volet de gauche, puis sélectionnez **[!UICONTROL Stratégie.]**
 
    ![Désactivation du mode Mise en page](assets/policy_disable_layout_mode.png)
 
-1. Appuyez sur l’onglet **[!UICONTROL Paramètres de mise en page]** et sélectionnez **[!UICONTROL Désactiver le mode Mise en page]**.
-1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+1. Sélectionnez la variable **[!UICONTROL Paramètres de mise en page]** et sélectionnez **[!UICONTROL Désactiver le mode Mise en page]**.
+1. Sélectionner ![Enregistrer les modifications](assets/save_icon.svg) pour enregistrer les propriétés du modèle.
 
 ## Voir également {#see-also}
 

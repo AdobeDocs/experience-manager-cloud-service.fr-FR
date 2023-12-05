@@ -2,10 +2,10 @@
 title: Exportateur JSON pour Content Services
 description: AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web. Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 97%
+source-wordcount: '383'
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ Avec AEM, la diffusion s’effectue à l’aide du sélecteur `model` et de l’
 
 Vous pouvez également diffuser le contenu d’un fragment de contenus structuré en le ciblant spécifiquement.
 
-Pour ce faire, utilisez le chemin du fragment dans son intégralité (via `jcr:content`), par exemple avec un suffixe comme :
+Cette opération s’effectue à l’aide du chemin d’accès complet au fragment (via l’ `jcr:content`) ; par exemple, avec un suffixe tel que .
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 

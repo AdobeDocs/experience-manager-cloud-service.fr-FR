@@ -2,10 +2,10 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez en modifier le contenu pour effectuer les mises à jour nécessaires
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 92%
+source-wordcount: '2974'
+ht-degree: 91%
 
 ---
 
@@ -322,7 +322,7 @@ Par exemple, le composant **textuel** :
 
 Pour déplacer un composant de paragraphe :
 
-1. Sélectionnez le paragraphe à déplacer en appuyant ou en cliquant longuement.
+1. Sélectionnez le paragraphe à déplacer en maintenant la souris enfoncée ou en cliquant et en maintenant la souris enfoncée.
 1. Faites glisser le paragraphe vers son nouvel emplacement. AEM indique où le paragraphe peut être déposé. Déposez-le à l’emplacement de votre choix.
 
    ![Déplacement d’un composant](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -541,5 +541,5 @@ Vous pouvez utiliser les options Annuler et Rétablir pour les types de modifica
 >
 >* Des autorisations spéciales sont nécessaires pour annuler et rétablir des modifications affectant des fichiers et des images.
 >* L’historique des modifications apportées aux fichiers et aux images dure au moins dix heures. Au-delà de cette période, l’annulation des modifications n’est toutefois pas garantie. Votre administrateur ou administratrice peut modifier la durée par défaut de dix heures.
->* L’administrateur système peut configurer divers aspects des fonctions Annuler/Rétablir en fonction des exigences de votre instance.
+>* L’administrateur système peut configurer différents aspects des fonctions Annuler/Rétablir en fonction des exigences de votre instance.
 <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

@@ -2,10 +2,10 @@
 title: Prise en main des SPA dans AEM avec React
 description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 91%
+source-wordcount: '1130'
+ht-degree: 90%
 
 ---
 
@@ -256,7 +256,7 @@ Pour plus d’informations, voir le document [Plan directeur d’applications su
 
 Il est régulièrement nécessaire que les composants d’une application sur une seule page partagent des informations. Il existe plusieurs méthodes recommandées pour cela, énumérées ci-dessous dans un ordre de complexité croissant.
 
-* **Option 1 :** Centralisez la logique et procédez à une diffusion vers les composants nécessaires ; par exemple en utilisant React Context.
+* **Option 1 :** Centralisez la logique et procédez à une diffusion vers les composants nécessaires, par exemple à l’aide de React Context.
 * **Option 2 :** Partagez des états de composant en utilisant une bibliothèque d’états telle que Redux.
 * **Option 3 :** Tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
 

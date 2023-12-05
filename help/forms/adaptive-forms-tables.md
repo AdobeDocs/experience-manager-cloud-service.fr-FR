@@ -4,10 +4,10 @@ description: Utilisez le composant Tableau pour ajouter des tableaux à un formu
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2494'
-ht-degree: 92%
+source-wordcount: '2476'
+ht-degree: 90%
 
 ---
 
@@ -89,7 +89,7 @@ Pour ajouter ou supprimer une colonne, cliquez sur la cellule de texte dans la s
 
 Vous pouvez ajouter une description du tableau pour expliquer l’organisation des informations que les lecteurs d’écran peuvent interpréter et lire. Pour ajouter la description :
 
-1. Sélectionnez le tableau, puis appuyez sur ![cmppr](assets/cmppr.png) pour afficher ses propriétés dans la barre latérale.
+1. Sélectionnez le tableau, puis choisissez ![cmppr](assets/cmppr.png) pour afficher ses propriétés dans la barre latérale.
 1. Spécifiez le résumé dans l’onglet Accessibilité.
 1. Cliquez sur **Terminé**.
 
@@ -107,9 +107,9 @@ Pour appliquer le tri sur les colonnes du tableau, les cellules des colonnes du 
 
 Pour activer le tri :
 
-1. Sélectionnez le tableau et appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **Contenu** dans le panneau latéral de la communication interactive.
+1. Sélectionnez le tableau, puis choisissez ![configure_icon](assets/configure_icon.png) (Configuration). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **Contenu** dans le panneau latéral de la communication interactive.
 1. Sélectionnez **Activer le tri**.
-1. Appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les propriétés. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
+1. Sélectionner ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du tableau. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
 
    ![Activer le tri](assets/enable_sorting_new.png)
 
@@ -128,7 +128,7 @@ Pour activer le tri :
 
 Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
-1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur la touche **[!UICONTROL Tableau]** et appuyez sur l’icône Configure (![Configurer](assets/configure-icon.svg)).
+1. Dans le **[!UICONTROL Contenu]** , sélectionnez l’onglet **[!UICONTROL Tableau]** et sélectionnez Configurer (![Configurer](assets/configure-icon.svg)).
 
 1. Saisissez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, en spécifiant 2, 4, 6 comme valeurs dans le champ **[!UICONTROL Largeur de colonne]**, la largeur des colonnes est définie sur 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième. 2/12 comme largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
 
@@ -136,9 +136,9 @@ Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
 Vous pouvez définir le style d’un tableau à l’aide du mode Style de la barre d’outils de la page. Effectuez les étapes suivantes pour passer en mode Style et modifier le style du tableau.
 
-1. Dans la barre d’outils de la page, avant l’aperçu, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre d’outils de la page, avant Aperçu, sélectionnez ![liste déroulante canevas](assets/canvas-drop-down.png) > **Style**.
 
-1. Dans la barre latérale, sélectionnez le tableau, puis appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png).
+1. Dans la barre latérale, sélectionnez le tableau et le bouton Modifier . ![edit-button](assets/edit-button.png).
 Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 ![Propriétés de style d’un tableau](assets/style-table.png)
@@ -151,7 +151,7 @@ Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou la suppression dynamique de lignes au moment de l’exécution.
 
-1. Sélectionnez une ligne de tableau et appuyez sur ![cmppr](assets/cmppr.png).
+1. Sélectionnez une rangée de tableau, puis ![cmppr](assets/cmppr.png).
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes dans le tableau.
 1. Cliquez sur **Terminé**.
 
@@ -328,7 +328,7 @@ Vous pouvez aussi faire glisser et déposer un groupe d’éléments de type com
 * Si vous déplacez des lignes vers le haut et vers le bas lors de la création d’un tableau basé sur XSD, une perte de données des lignes du tableau est visible dans les données XML générées lors de l’envoi du formulaire.
 * Dans un tableau par défaut, chaque cellule de contenu est associée à un nom d’élément prédéfini. Si vous ajoutez un autre tableau dans le formulaire adaptatif, les cellules de contenu par défaut du nouveau tableau auront le même nom d’élément que dans le premier. Dans ce cas, les données générées lors de l’envoi du formulaire incluront les données des cellules de contenu par défaut de l’un des tableaux. Par conséquent, assurez-vous que vous renommez les noms d’élément pour les cellules de contenu par défaut pour qu’elles restent uniques dans les tableaux et éviter ainsi toute perte de données.
 
-  Notez que cela s’applique uniquement aux cellules de contenu par défaut. Si vous ajoutez d’autres lignes ou colonnes à un tableau, des noms d’éléments uniques seront générés automatiquement pour les cellules de contenu non définies par défaut.
+  Applicable uniquement aux cellules de contenu par défaut. Si vous ajoutez d’autres lignes ou colonnes à un tableau, des noms d’éléments uniques seront générés automatiquement pour les cellules de contenu non définies par défaut.
 
 ## Voir également {#see-also}
 

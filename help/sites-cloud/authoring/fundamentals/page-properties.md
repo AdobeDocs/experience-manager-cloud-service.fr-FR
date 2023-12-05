@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Découvrez comment définir les propriétés requises pour gérer une page dans AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 93%
+source-wordcount: '2268'
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Titre et balises**
 
-   * **Titre** – Le titre de la page est affiché à divers emplacements ; dans la liste de l’onglet **Sites web** et les vues Carte/Liste **Sites**, par exemple
+   * **Titre** - Le titre de la page s’affiche à différents emplacements. Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
       * Ce champ est obligatoire.
    * **Balises** : vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
       * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
@@ -98,7 +98,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * **Langue** – Langue de la page.
    * **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
-   * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée. avec un statut HTML `302 Found`.
+   * **Rediriger** - Indique la page vers laquelle cette page doit automatiquement être redirigée avec un HTML. `302 Found` statut.
       * **Redirection permanente** - Lorsque cette case est cochée, la page redirige vers le chemin cible fourni avec un statut HTML `301 Moved Permanently`.
    * **Conception** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
    * **Alias** – Indique un alias à utiliser avec cette page.
@@ -323,12 +323,12 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
       * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.
    * Propriétés communes partageant une valeur commune
       * Seules les propriétés qui partagent une valeur commune sont visibles en mode Affichage.
-      * Si le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que lorsque *toutes* sont communes. Si seulement quelques-unes sont communes, elles sont visibles lors de la phase de modification.
+      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que lorsque *all* sont courantes. Si seulement certaines sont courantes, elles s’affichent uniquement lors de la modification.
       * En l’absence de propriétés avec une valeur commune, un message s’affiche.
 
 * **Modifier**
 
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
-      * Lorsque le champ comporte plusieurs valeurs (les balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
+      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
    * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.

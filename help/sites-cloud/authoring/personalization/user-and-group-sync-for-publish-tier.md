@@ -2,10 +2,10 @@
 title: Enregistrement, connexion et profil utilisateur
 description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 93%
+source-wordcount: '1132'
+ht-degree: 90%
 
 ---
 
@@ -113,7 +113,7 @@ Indépendamment de la connexion, le code personnalisé peut également être con
 
 ## La synchronisation des données. {#data-synchronization}
 
-Les utilisateurs finaux du site web attendent une expérience cohérente pour chaque requête de page web ou même lorsqu’ils se connectent à l’aide d’un navigateur différent. Même s’ils ne le savent pas, ils sont conduits vers différents nœuds de serveur de l’infrastructure du niveau Publication. AEM as a Cloud Service effectue cette opération en synchronisant rapidement la hiérarchie de dossiers `/home` (informations de profil d’utilisateur, appartenance à un groupe, etc.) sur tous les nœuds du niveau Publication.
+Les utilisateurs finaux du site web attendent une expérience cohérente pour chaque requête de page web ou même lorsqu’ils se connectent à l’aide d’un navigateur différent. Même s’ils ne le savent pas, ils sont conduits vers différents nœuds de serveur de l’infrastructure du niveau Publication. AEM as a Cloud Service effectue cette opération en synchronisant rapidement la variable `/home` hiérarchie de dossiers (informations sur le profil utilisateur, appartenance à un groupe, etc.) sur tous les noeuds du niveau publication.
 
 Contrairement à d’autres solutions AEM, la synchronisation des utilisateurs et de l’appartenance à un groupe dans AEM as a Cloud Service n’utilise pas une approche de messagerie point à point, mais plutôt une approche publication-abonnement qui ne nécessite pas de configuration client.
 

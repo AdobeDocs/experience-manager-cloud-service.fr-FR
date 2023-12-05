@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 86%
+source-wordcount: '1512'
+ht-degree: 72%
 
 ---
 
@@ -37,17 +37,17 @@ L’intégration de données [!DNL Experience Manager Forms] fournit une interfa
 Assurez-vous d’avoir configuré les sources de données que vous avez l’intention d’utiliser dans le modèle de formulaire de données, comme décrit dans [Configurer les sources de données](configure-data-sources.md). Pour créer un modèle de données de formulaire basé sur des sources de données configurées, procédez comme suit :
 
 1. Dans l’instance d’auteur [!DNL Experience Manager], accédez à **[!UICONTROL Formulaires > Intégrations de données]**.
-1. Appuyez sur **[!UICONTROL Créer > Modèle de données de formulaire]**.
+1. Sélectionner **[!UICONTROL Créer > Modèle de données de formulaire]**.
 1. Dans la boîte de dialogue Créer un modèle de données de formulaire :
 
    * Spécifiez un nom pour le modèle de données de formulaire.
    * (**Facultatif**) Spécifiez le titre, la description et les balises du modèle de données de formulaire.
-   * (**Facultatif et applicable uniquement si les sources de données sont configurées**) Appuyez sur l’icône en forme de coche en regard de l’option **[!UICONTROL Configuration des sources de données]** et sélectionnez le noeud de configuration où résident les services cloud pour les sources de données que vous souhaitez utiliser. Elle limite la liste des sources de données disponibles pour sélection sur la page suivante à celles disponibles dans le noeud de configuration sélectionné. Cependant, toutes les sources de données des profils d’utilisateurs [!DNL Experience Manager] sont répertoriées par défaut. Si vous ne sélectionnez pas de noeud de configuration, les sources de données de tous les noeuds de configuration sont répertoriées.
+   * (**Facultatif et applicable uniquement si les sources de données sont configurées**) Sélectionnez l’icône en forme de coche en regard de l’option **[!UICONTROL Configuration des sources de données]** et sélectionnez le noeud de configuration où résident les services cloud pour les sources de données que vous souhaitez utiliser. Elle limite la liste des sources de données disponibles pour sélection sur la page suivante à celles disponibles dans le noeud de configuration sélectionné. Cependant, toutes les sources de données des profils d’utilisateurs [!DNL Experience Manager] sont répertoriées par défaut. Si vous ne sélectionnez pas de noeud de configuration, les sources de données de tous les noeuds de configuration sont répertoriées.
 
-1. Appuyez sur **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Suivant]**.
 
 1. (**Applicable uniquement si les sources de données sont configurées**) **[!UICONTROL Sélectionner la source de données]** répertorie les sources de données disponibles, le cas échéant ; Sélectionnez les sources de données à utiliser dans le modèle de données de formulaire.
-1. Appuyez sur **[!UICONTROL Créer]** et, dans la boîte de dialogue de confirmation, appuyez sur **[!UICONTROL Ouvrir]** pour lancer l’éditeur de modèle de données de formulaire.
+1. Sélectionner **[!UICONTROL Créer]** et dans la boîte de dialogue de confirmation, sélectionnez **[!UICONTROL Ouvrir]** pour ouvrir l’éditeur de modèle de données de formulaire.
 
    Passons en revue les différents composants de l’interface utilisateur de l’éditeur de modèle de données de formulaire.
 
@@ -71,21 +71,21 @@ Pour plus d’informations sur l’éditeur de modèle de données de formulaire
 
 Pour ajouter ou mettre à jour des sources de données dans un modèle de données de formulaire existant, procédez comme suit.
 
-1. Accédez à **[!UICONTROL Formulaires > Intégrations de données]**, sélectionnez le modèle de données de formulaire dans lequel vous souhaitez ajouter ou mettre à jour des sources de données et appuyez sur **[!UICONTROL Propriétés]**.
+1. Accédez à **[!UICONTROL Forms > Intégrations de données]**, sélectionnez le modèle de données de formulaire dans lequel vous souhaitez ajouter ou mettre à jour des sources de données, puis sélectionnez **[!UICONTROL Propriétés]**.
 1. Dans les propriétés du modèle de données de formulaire, accédez à l’onglet **[!UICONTROL Mettre à jour la source]**.
 
    Dans l’onglet **[!UICONTROL Mettre à jour la source]** :
 
-   * Appuyez sur l’icône de navigation dans le champ **[!UICONTROL Configuration tenant compte du contexte]** et sélectionnez un nœud de configuration où se trouve la configuration cloud de la source de données que vous voulez utiliser. Si vous ne sélectionnez pas de nœud, les configurations cloud qui se trouvent uniquement dans le nœud `global` sont répertoriées lorsque vous appuyez sur **[!UICONTROL Ajouter des sources]**.
+   * Sélectionnez l’icône de navigation dans le **[!UICONTROL Configuration tenant compte du contexte]** et sélectionnez un noeud de configuration où réside la configuration cloud pour la source de données que vous souhaitez ajouter. Si vous ne sélectionnez pas de noeud, les configurations cloud résidant uniquement dans le `global` sont répertoriés lorsque vous sélectionnez **[!UICONTROL Ajouter des sources]**.
 
-   * Pour ajouter une nouvelle source de données, appuyez sur **[!UICONTROL Ajouter des sources]** et sélectionnez les sources de données à ajouter au modèle de données de formulaire. Toutes les sources de données configurées en `global` et le nœud de configuration sélectionné, le cas échéant, s’affichent.
+   * Pour ajouter une nouvelle source de données, sélectionnez **[!UICONTROL Ajouter des sources]** et sélectionnez les sources de données à ajouter au modèle de données de formulaire. Toutes les sources de données configurées en `global` et le nœud de configuration sélectionné, le cas échéant, s’affichent.
 
-   * Pour remplacer une source de données existante par une autre source de données du même type, appuyez sur l’icône **[!UICONTROL Modifier]** de la source de données et sélectionnez-en une dans la liste des sources de données disponibles.
-   * Pour supprimer une source de données existante, appuyez sur l’icône **[!UICONTROL Supprimer]** de la source de données. L’icône Supprimer est désactivée si un objet de modèle de données dans la source de données est ajouté au modèle de données de formulaire.
+   * Pour remplacer une source de données existante par une autre source de données du même type, sélectionnez l’option **[!UICONTROL Modifier]** pour la source de données et sélectionnez dans la liste des sources de données disponibles.
+   * Pour supprimer une source de données existante, sélectionnez l’option **[!UICONTROL Supprimer]** pour la source de données. L’icône Supprimer est désactivée si un objet de modèle de données dans la source de données est ajouté au modèle de données de formulaire.
 
      ![fdm-properties](assets/fdm-properties.png)
 
-1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer les mises à jour.
+1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour enregistrer les mises à jour.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Pour ajouter ou mettre à jour des sources de données dans un modèle de donné
 
 Le [!UICONTROL Modèle de données de formulaire] utilise des [configurations basées sur le contexte Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=fr) pour prendre en charge différents paramètres de source de données afin de se connecter à des sources de données pour différents modes d’exécution d’[!DNL Experience Manager].
 
-Lorsque le [!UICONTROL modèle de données de formulaire] utilise les configurations cloud pour stocker les paramètres qui, lorsqu’ils sont archivés et déployés par le biais du contrôle de code source (référentiel GIT Cloud-Manager), créent une configuration cloud avec les mêmes paramètres pour tous les modes d’exécution (développement, évaluation et production). Toutefois, pour les cas d’utilisation où des jeux de données différents sont nécessaires pour les environnements d’évaluation et de production, nous utilisons des paramètres de source de données (par exemple, l’URL de la source de données) pour différents modes d’exécution d’[!DNL Experience Manager].
+Lorsque le [!UICONTROL modèle de données de formulaire] utilise les configurations cloud pour stocker les paramètres qui, lorsqu’ils sont archivés et déployés par le biais du contrôle de code source (référentiel GIT Cloud-Manager), créent une configuration cloud avec les mêmes paramètres pour tous les modes d’exécution (développement, évaluation et production). Cependant, dans les cas d’utilisation où des jeux de données différents sont nécessaires pour les environnements de test et de production, nous utilisons des paramètres de source de données (par exemple, l’URL de la source de données) pour différents [!DNL Experience Manager] Modes d’exécution.
 
 Pour ce faire, vous devez créer une configuration OSGi contenant des paires paramètres-valeur de source de données. Cette option remplace la même paire de la configuration cloud du [!UICONTROL modèle de données de formulaire] au moment de l’exécution. Comme les configurations OSGi prennent en charge ces modes d’exécution par défaut, vous pouvez remplacer un paramètre de source de données par des valeurs différentes en fonction du mode d’exécution.
 
@@ -114,7 +114,7 @@ Pour activer les configurations cloud spécifiques au déploiement dans le [!UIC
 
 1. Créez une configuration basée sur le contexte Apache Sling. Pour créer la configuration OSGi :
    1. **Configurez les fichiers de configuration OSGi dans le projet d’archétype d’[!DNL Experience Manager].**
-Créez les fichiers de configuration OSGi d’usine avec le PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Créez un fichier portant le même nom sous chaque dossier de mode d’exécution où les valeurs doivent être modifiées par mode d’exécution. Pour plus d’informations, consultez la [Configuration de l’OSGi pour  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+Création de fichiers de configuration d’usine OSGi avec PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Créez un fichier portant le même nom sous chaque dossier de mode d’exécution où les valeurs doivent être modifiées par mode d’exécution. Pour plus d’informations, consultez la [Configuration de l’OSGi pour  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **Configurez le fichier json de configuration OSGI.** Pour utiliser le fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling :
       1. Sur l’instance de développement locale `/system/console/configMgr`, sélectionnez la configuration OSGi d’usine avec le nom **[!UICONTROL Fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling : configuration OSGi]**.

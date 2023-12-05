@@ -2,10 +2,10 @@
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 98%
+source-wordcount: '2035'
+ht-degree: 96%
 
 ---
 
@@ -64,11 +64,11 @@ Les fragments d’expérience doivent être utilisés :
 * Lorsque vous souhaitez réutiliser des expériences.
    * Expériences qui sont réutilisées avec un même contenu ou un contenu similaire.
 * Lorsque vous utilisez AEM en tant que plateforme de diffusion de contenu à des tiers.
-   * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu.
+   * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu.
    * Incorporation de contenu dans des points de contact tiers.
 * Si vous disposez d’une expérience avec des variations ou des rendus différents.
    * Variations spécifiques au canal ou au contexte.
-   * Expériences qu’il y a lieu de regrouper ; par exemple, une campagne avec des expériences différentes en fonction des canaux.
+   * Expériences qu’il est logique de regrouper ; par exemple, une campagne avec des expériences différentes selon les canaux.
 * Lorsque vous avez recours au commerce omnicanal.
    * Conversion des points de contact en points de transaction.
 

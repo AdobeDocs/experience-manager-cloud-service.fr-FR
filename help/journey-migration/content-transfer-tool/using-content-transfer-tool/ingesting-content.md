@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 48%
+source-wordcount: '2275'
+ht-degree: 45%
 
 ---
 
@@ -49,7 +49,7 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
 
    * **Wipe :** Choisissez la `Wipe` value
       * La variable **Wipe** définit le point de départ de la destination de l’ingestion. If **Wipe** est activée, la destination, y compris tout son contenu, est réinitialisée à la version d’AEM spécifiée dans Cloud Manager. Si elle n’est pas activée, la destination conserve son contenu actuel comme point de départ.
-      * Notez que cette option **NOT** affectent la manière dont l’ingestion du contenu sera effectuée. L’ingestion utilise toujours une stratégie de remplacement de contenu et _not_ une stratégie de fusion de contenu, de sorte que dans les deux **Wipe** et **Non effacé** dans certains cas, l’ingestion d’un jeu de migration remplace le contenu situé dans le même chemin sur la destination. Par exemple, si le jeu de migration contient `/content/page1` et la destination contient déjà `/content/page1/product1`, l’ingestion supprime l’intégralité de la `page1` chemin et ses sous-pages, y compris `product1`et remplacez-le par le contenu du jeu de migration. Cela signifie qu’une planification minutieuse doit être effectuée lors de l’exécution d’une **Non effacé** l’ingestion vers une destination contenant tout contenu à conserver.
+      * Cette option permet de **NOT** affectent la manière dont l’ingestion du contenu sera effectuée. L’ingestion utilise toujours une stratégie de remplacement de contenu et _not_ une stratégie de fusion de contenu, de sorte que dans les deux **Wipe** et **Non effacé** dans certains cas, l’ingestion d’un jeu de migration remplace le contenu situé dans le même chemin sur la destination. Par exemple, si le jeu de migration contient `/content/page1` et la destination contient déjà `/content/page1/product1`, l’ingestion supprime l’intégralité de la `page1` chemin et ses sous-pages, y compris `product1`et remplacez-le par le contenu du jeu de migration. Cela signifie qu’une planification minutieuse doit être effectuée lors de l’exécution d’une **Non effacé** l’ingestion vers une destination contenant tout contenu à conserver.
 
    >[!IMPORTANT]
    > Si le paramètre **Wipe** est activé pour l’ingestion, elle réinitialise l’ensemble du référentiel existant, y compris les autorisations utilisateur sur l’instance du Cloud Service cible. Cette réinitialisation est également vraie pour un utilisateur administrateur ajouté à la variable **administrateurs** et cet utilisateur doivent être à nouveau ajoutés au groupe administrateurs pour démarrer une ingestion.
@@ -131,7 +131,7 @@ Ce message indique que Cloud Acceleration Manager n’a pas pu atteindre le se
 
 ### AEM des mises à jour et des ingérations de version
 
-[AEM mises à jour de version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=fr) sont automatiquement appliqués aux environnements afin de les mettre à jour avec la version la plus récente AEM as a Cloud Service. Si la mise à jour est déclenchée au cours d’une ingestion, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement.
+[AEM mises à jour de version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=fr) sont automatiquement appliqués aux environnements afin de les mettre à jour avec la version la plus récente AEM as a Cloud Service. Si la mise à jour est déclenchée lorsqu’une ingestion est effectuée, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement.
 
 Si les &quot;Mises à jour de version AEM&quot; sont intégrées dans le programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant de commencer. Une fois l’ingestion terminée, l’état du mise à jour de version est renvoyé à son état avant le début de l’ingestion.
 
@@ -147,7 +147,7 @@ Si &quot;AEM mises à jour de version&quot; est actif (c’est-à-dire que les m
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Échec de l’ingestion complémentaire En raison d’une violation de contrainte d’unicité
+### Échec de l’ingestion de complément en raison d’une violation de contrainte d’unicité
 
 Les conflits entre identifiants de nœud sont une cause courante de l’échec de l’[Ingestion complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
@@ -167,7 +167,7 @@ Une autre cause commune d&#39;une [Ingestion de complément](/help/journey-migra
 
 Cela peut se produire si un noeud de la destination est modifié entre une ingestion et une **Non effacé** de sorte qu’une nouvelle version ait été créée. Si le jeu de migration a été extrait avec l’option &quot;Inclure les versions&quot; activée, un conflit peut se produire, car la destination possède désormais une version plus récente qui est référencée par l’historique des versions et d’autres contenus. Le processus d’ingestion ne pourra pas supprimer le noeud de version offensante car il est référencé.
 
-La solution peut nécessiter que l’extraction complémentaire soit effectuée à nouveau sans le nœud fautif. Vous pouvez également créer un petit jeu de migration du noeud incriminé, mais en désactivant l’option &quot;Versions d’inclusion&quot;.
+La solution peut nécessiter que l’extraction de complément soit effectuée à nouveau sans le noeud offensif. Vous pouvez également créer un petit jeu de migration du noeud incriminé, mais en désactivant l’option &quot;Versions d’inclusion&quot;.
 
 Les bonnes pratiques indiquent que si une **Non effacé** l’ingestion doit être exécutée à l’aide d’un jeu de migration qui inclut des versions (c’est-à-dire extraites avec &quot;include versions&quot;=true), il est essentiel que le contenu de la destination soit modifié le moins possible, jusqu’à ce que le parcours de migration soit terminé. Sinon, ces conflits peuvent se produire.
 

@@ -2,10 +2,10 @@
 title: SDK AEM as a Cloud Service
 description: Aperçu du SDK AEM as a Cloud Service
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 94%
+source-wordcount: '1213'
+ht-degree: 89%
 
 ---
 
@@ -69,7 +69,7 @@ Il est *facultatif* de l’actualiser après une version de maintenance quotidie
 
 Voici la procédure recommandée pour actualiser un environnement local :
 
-1. Assurez-vous que tout contenu utile est soit validé dans le projet dans le contrôle de code source, soit disponible dans un package de contenu modifiable pour importation ultérieure..
+1. Assurez-vous que tout contenu utile est validé dans le projet dans le contrôle de code source ou disponible dans un module de contenu modifiable pour importation ultérieure.
 1. Le contenu du test de développement local doit être stocké séparément afin qu’il ne soit pas déployé dans le cadre de la création du pipeline de Cloud Manager. La raison en est qu’il n’est utilisé que pour le développement local.
 1. Arrêtez le fichier QuickStart en cours d’exécution.
 1. Déplacez le dossier `crx-quickstart` vers un autre dossier pour le conserver en lieu sûr.
@@ -78,14 +78,14 @@ Voici la procédure recommandée pour actualiser un environnement local :
 1. Créez un dossier et placez-y le nouveau fichier QuickStart Jar.
 1. Démarrez le nouveau fichier QuickStart avec les modes d’exécution de votre choix (renommez le fichier ou transmettez les modes d’exécution à l’aide de `-r`).
    * Assurez-vous qu’il n’y a aucun vestige de l’ancien fichier quickstart dans le dossier.
-1. Créez votre application AEM..
+1. Créez votre application AEM.
 1. Déployez votre application AEM sur une instance AEM locale à l’aide du gestionnaire de packages.
 1. Installez tous les packages de contenu modifiable nécessaires au test de l’environnement local via le gestionnaire de packages.
 1. Poursuivez le développement et déployez les modifications si nécessaire.
 
 Si du contenu doit être installé avec chaque nouvelle version de quickstart d’AEM, incluez-le dans un package de contenu et dans le contrôle de code source du projet. Installez-le ensuite à chaque fois.
 
-Il est recommandé de mettre à jour fréquemment le SDK (par exemple, toutes les deux semaines) et de supprimer quotidiennement l’état local complet pour ne pas dépendre accidentellement de données avec état dans l’application.
+Il est recommandé de mettre à jour fréquemment le SDK (par exemple, toutes les deux semaines) et de supprimer quotidiennement l’état local complet afin de ne pas dépendre accidentellement de données avec état dans l’application.
 
 Si vous dépendez de CryptoSupport ([en configurant les informations d’identification des services Cloud ou du service de messagerie SMTP dans AEM ou en utilisant l’API CryptoSupport dans votre application](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), les propriétés chiffrées sont chiffrées par une clé. Cette clé est générée automatiquement lors du premier démarrage d’un environnement AEM. Bien que la configuration du cloud s’occupe de réutiliser automatiquement la clé de chiffrement (CryptoKey) spécifique à l’environnement, il est nécessaire d’injecter la clé de chiffrement dans l’environnement de développement local.
 

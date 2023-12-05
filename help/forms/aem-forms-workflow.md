@@ -4,17 +4,17 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement des workflows de processus d’entreprise. Par exemple, révision et approbation, génération de PDF, workflows Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 68%
+source-wordcount: '2373'
+ht-degree: 63%
 
 ---
 
 
 # Processus basé sur l’utilisation de Forms sur OSGi {#forms-centric-workflow-on-osgi}
 
-![Image à forte identification](do-not-localize/header.png)
+![Hero Image](do-not-localize/header.png)
 
 Les entreprises collectent des données à partir de centaines, de milliers de formulaires, de divers systèmes principaux et de sources de données en ligne ou hors ligne. Ils disposent également d’un ensemble dynamique d’utilisateurs pour prendre des décisions sur les données, ce qui implique des processus itératifs de révision et d’approbation.
 
@@ -65,8 +65,8 @@ L’exemple crée un modèle de workflow dans lequel une demande de prêt immobi
 
 1. Ouvrez la console Modèles de processus. L’URL par défaut est `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Sélectionnez **Créer**, puis **Créer un modèle**. La boîte de dialogue Ajouter un modèle de processus s’ouvre.
-1. Saisissez **Titre** et **Nom** (facultatif). par exemple, une demande de prêt immobilier. Appuyez sur **Terminé**.
-1. Sélectionnez le modèle de processus créé et appuyez sur **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
+1. Saisissez **Titre** et **Nom** (facultatif). par exemple, une demande de prêt immobilier. Sélectionnez **Terminé**.
+1. Sélectionnez le modèle de workflow créé et sélectionnez **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
 
    * Les étapes : Début du flux et Fin du flux. Ces étapes représentent le début et la fin du workflow. Ces étapes sont requises et ne peuvent pas être modifiées ni supprimées.
    * Un exemple d’étape Participant, dont le nom est Étape 1. Cette étape est configurée pour affecter un élément de travail à l’utilisateur administrateur. Supprimez cette étape.
@@ -79,7 +79,7 @@ L’exemple crée un modèle de workflow dans lequel une demande de prêt immobi
 
 1. Créez des étapes de workflow. Un workflow peut comporter plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et signalent la progression du workflow.
 
-   Pour définir une étape, appuyez sur l’icône ![info-circle](assets/info-circle.png) pour ouvrir les propriétés de modèle de processus, ouvrez l’onglet **Étapes**, ajoutez des étapes au modèle de processus et appuyez sur **Enregistrer et fermer**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
+   Pour définir une étape, sélectionnez la ![info-circle](assets/info-circle.png) pour ouvrir les propriétés du modèle de processus, ouvrez l’icône **Phases** , ajoutez des étapes pour le modèle de workflow, puis sélectionnez **Enregistrer et fermer**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
 
 1. Glissez-déposez l’explorateur d’étapes **Affecter une tâche** dans le modèle de processus. Faites-en la première étape du modèle.
 
@@ -91,7 +91,7 @@ L’exemple crée un modèle de workflow dans lequel une demande de prêt immobi
 
    Pour l’exemple de demande de prêt immobilier, configurez l’étape Affecter une tâche pour utiliser un formulaire adaptatif en lecture seule et afficher le document PDF une fois la tâche terminée. Par ailleurs, sélectionnez le groupe d’utilisateurs autorisé à approuver la demande de prêt. Dans l’onglet **Actions**, désactivez l’option **Envoyer**. Créez une variable **actionTaken** de type de données de chaîne et spécifiez la variable en tant que **Variable d’itinéraire**. Par exemple, actionTaken. Ajoutez également les itinéraires Approuver et Rejeter . Les itinéraires sont affichés sous forme d’actions distinctes (boutons) dans AEM boîte de réception. Le workflow sélectionne une branche en fonction de l’action (bouton) sur laquelle appuie l’utilisateur.
 
-   Vous pouvez importer l’exemple de package, disponible pour téléchargement au début de la section, pour l’ensemble complet des valeurs de tous les champs de l’étape Affecter une tâche configurée, par exemple la demande de prêt immobilier.
+   Vous pouvez importer l’exemple de package, disponible au téléchargement au début de la section, pour l’ensemble complet des valeurs de tous les champs de l’étape Affecter une tâche configurée par exemple, une demande de prêt immobilier.
 
 1. Faites glisser et déposez le composant Division OU de l’explorateur d’étapes vers le modèle de workflow. L’étape de division OU divise le processus et une seule branche est active par la suite. Cette étape permet d’ajouter des chemins de traitement conditionnels dans le processus. Vous ajoutez des étapes de processus à chaque branche selon vos besoins.
 
@@ -117,7 +117,7 @@ L’exemple crée un modèle de workflow dans lequel une demande de prêt immobi
 
    Pour l’exemple de prêt immobilier, ajoutez un document d’enregistrement généré, deux étapes Affecter une tâche et une étape de signature de document pour la Branche 1 du modèle, comme affiché dans l’image ci-dessous. Une étape Affecter une tâche consiste à afficher et envoyer des **documents de prêt à signer au demandeur** et un autre composant de tâche consiste à **afficher les documents signés**. Ajoutez également un composant Affecter une tâche à la branche 2. Il est activé lorsqu’un utilisateur clique sur Refuser dans la boîte de réception AEM.
 
-   Pour obtenir l’ensemble complet des valeurs de tous les champs des étapes Affecter une tâche, de l’étape Document d’enregistrement et de l’étape Signer le document configurées pour l’exemple de demande de prêt immobilier, importez l’exemple de package, disponible au téléchargement au début de cette section.
+   Pour obtenir l’ensemble complet des valeurs de tous les champs des étapes Affecter une tâche, l’étape Document d’enregistrement et l’étape Signer un document configurée par exemple, la demande de prêt immobilier, importez l’exemple de package, disponible au téléchargement au début de cette section.
 
    Le modèle de workflow est prêt. Vous pouvez lancer le workflow de différentes manières. Pour plus d’informations, voir [Lancement d’un processus Forms sur OSGi](#launch).
 
@@ -214,7 +214,7 @@ Vous pouvez configurer des actions d’envoi d’un formulaire adaptatif pour d�
 An administrator (a member of fd-administrators group) can configure a network folder to run a pre-configured workflow when a user places a file (such as a PDF file) in the folder. After the workflow completes, it can save the result file to a specified output folder. Such a folder is known as [Watched Folder](watched-folder-in-aem-forms.md). Perform the following procedure to configure a watched folder to launch a workflow:
 
 1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. A list of already configured watched folders is displayed.
-1. Tap **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
+1. Select **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
 
 <table>
  <tbody>
@@ -245,7 +245,7 @@ An administrator (a member of fd-administrators group) can configure a network f
  </tbody>
 </table>
 
-1. Tap **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
+1. Select **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
 
    | Field |Description |
    |---|---|
@@ -275,4 +275,4 @@ Réduire le nombre d’instances de processus améliore les performances du mote
 >[!MORELIKETHIS]
 >
 >* [Utilisation AEM processus de traduction pour localiser le Forms adaptatif et le document d’enregistrement](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* [Variables dans les workflows AEM basés sur l’utilisation de Forms](/help/forms/variable-in-aem-workflows.md)
+>* [Variables dans les processus d’AEM basés sur Forms](/help/forms/variable-in-aem-workflows.md)

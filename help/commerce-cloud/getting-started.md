@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 92%
+source-wordcount: '1066'
+ht-degree: 90%
 
 ---
 
@@ -107,7 +107,7 @@ Le module complémentaire et les [Composants principaux CIF](https://github.com/
 
 Cette configuration peut être ajustée pour le projet par le biais de la configuration de Cloud Service CIF en procédant comme suit :
 
-1. Dans AEM, accédez à Outils -> Cloud Services -> Configuration CIF.
+1. Dans AEM, accédez à Outils > Cloud Service > CIF Configuration.
 
 2. Sélectionnez la configuration de commerce que vous souhaitez modifier.
 

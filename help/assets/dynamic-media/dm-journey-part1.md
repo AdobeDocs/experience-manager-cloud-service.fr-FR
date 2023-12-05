@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '3706'
-ht-degree: 99%
+source-wordcount: '3685'
+ht-degree: 97%
 
 ---
 
@@ -182,7 +182,7 @@ Un autre cas d’utilisation résolu par Dynamic Media est la vidéo. La vidéo
 
 Les clients espèrent résoudre le problème suivant grâce à Dynamic Media :
 
-« _Nous avons la vidéo et nous avons dépensé beaucoup d’argent pour la créer. Mais nous avons toujours peur de la placer sur des pages ou de la diffuser, parce que nos tests ne nous permettent pas de garantir la qualité de la vidéo ou sa lecture correcte. Cela finit par affecter nos marques et potentiellement notre capacité à réaliser des conversions_ ».
+&quot;_Mon entreprise a la vidéo, et notre département a dépensé une grosse somme d&#39;argent pour la créer, mais s&#39;est abstenu de la placer sur des pages, ou de la diffuser. La raison était que, à partir de nos tests, la qualité de la vidéo n&#39;était pas garantie, ou même si elle allait vraiment jouer. Cela finit par affecter nos marques et potentiellement notre capacité à réaliser des conversions_ ».
 
 La solution de Dynamic Media consiste à prendre ce fichier vidéo principal et à confier à Dynamic Media la création de toutes les tailles nécessaires grâce à son processus de transcodage. Vous pouvez ensuite l’ajouter au lecteur vidéo intelligent de Dynamic Media. Ce workflow garantit que si vous utilisez cette vidéo sur votre page de destination principale ou sur une page de détails de catégorie ou de produit, elle sera diffusée de façon cohérente et avec une qualité élevée.
 

@@ -2,9 +2,9 @@
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux ?
 description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1333'
 ht-degree: 18%
 
 ---
@@ -74,7 +74,7 @@ Pour ajouter la prise en charge d’un nouveau paramètre régional, procédez c
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   Remplacer `<my-org>` et `<my-program>` dans l’URL ci-dessus avec le nom de votre organisation et le nom du programme. Pour obtenir des instructions détaillées sur le nom de l’organisation, le nom du programme ou le chemin d’accès complet à votre référentiel Git et les informations d’identification requises pour cloner le référentiel, reportez-vous à la section [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article.
+   Remplacer `<my-org>` et `<my-program>` dans l’URL ci-dessus avec le nom de votre organisation et le nom du programme. Pour obtenir des instructions détaillées sur le nom de l’organisation, le nom du programme ou le chemin d’accès complet à votre référentiel Git et les informations d’identification requises pour cloner le référentiel, voir [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article.
 
    Une fois la commande terminée, un dossier `<my-program>` est créée. Il contient le contenu cloné à partir du référentiel Git. Dans le reste de l’article, le dossier est appelé : `[AEM Forms as a Cloud Service Git repository]`.
 

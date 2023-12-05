@@ -2,9 +2,9 @@
 title: Configuration des règles de traduction pour le contenu découplé
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 73%
 
 ---
@@ -73,7 +73,7 @@ Dans le **Configuration de traduction** Dans l’interface utilisateur, plusieur
    ![Ajoutez du contexte](assets/add-translation-context.png)
 1. Utilisez l’explorateur de chemins d’accès pour sélectionner le chemin d’accès requis et sélectionnez **Confirmer** pour enregistrer. N’oubliez pas que les fragments de contenu, qui contiennent du contenu découplé, se trouvent généralement sous `/content/dam/<your-project>`.
    ![Sélectionnez le chemin d’accès](assets/select-context.png)
-1. Sélectionnez le contexte que vous venez de créer, puis sélectionnez **Modifier**. Vous ouvrez ainsi la fenêtre de l’**Éditeur de règles de traduction** pour configurer les propriétés.
+1. Sélectionnez le contexte que vous avez créé, puis sélectionnez **Modifier**. Vous ouvrez ainsi la fenêtre de l’**Éditeur de règles de traduction** pour configurer les propriétés.
    ![Éditeur de règles de traduction](assets/translation-rules-editor.png)
 1. Par défaut, toutes les configurations sont héritées du chemin d’accès parent, dans ce cas `/content/dam`. Désélectionnez l’option **Hériter de`/content/dam`** afin d’ajouter des champs supplémentaires à la configuration.
 1. Lorsque cette option est désactivée, sous la variable **Général** dans la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous souhaitez [précédemment identifié comme champs à traduire.](getting-started.md#content-models)

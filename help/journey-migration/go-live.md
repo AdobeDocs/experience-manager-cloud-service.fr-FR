@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1704'
-ht-degree: 95%
+source-wordcount: '1697'
+ht-degree: 94%
 
 ---
 
@@ -86,7 +86,7 @@ Lors de la migration de production, évitez d’exécuter l’outil de transfert
 
 **Optimiser la charge de votre source AEM lors de la migration du contenu**
 
-Souvenez-vous que la charge sur la source AEM est plus importante pendant la phase d’extraction. Vous devez savoir que :
+Souvenez-vous que la charge sur la source AEM est plus importante pendant la phase d’extraction. Tenez compte des points suivants :
 
 * L’outil de transfert de contenu est un processus Java externe qui utilise un tas JVM de 4 Go.
 * La version non-AzCopy télécharge les fichiers binaires, les stocke dans un espace temporaire sur l’auteur de l’AEM source, consommant des E/S de disque, puis les charge dans le conteneur Azure, ce qui consomme de la bande passante réseau.
@@ -107,7 +107,7 @@ Veuillez tenir compte du fait que l’ingestion entière échoue si l’une des 
 Comparé à la section ci-dessus, l’ingestion n’échoue **pas** en raison des problèmes de ressources suivants. Toutefois, il est vivement recommandé de prendre les mesures appropriées dans ces scénarios :
 
 * Toute ressource dont le rendu original est manquant.
-* Tout dossier dont le nœud `jcr:content` est manquant..
+* Tout dossier manquant `jcr:content` noeud .
 
 Les deux éléments ci-dessus sont identifiés et signalés dans le rapport de [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
