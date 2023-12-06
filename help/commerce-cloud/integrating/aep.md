@@ -11,10 +11,10 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 95%
+source-wordcount: '1866'
+ht-degree: 90%
 
 ---
 
@@ -215,10 +215,9 @@ Pour initialiser les composants principaux de CIF et Peregrine basés sur React,
            baseUrl: storeConfig.storeRootUrl
        },
        eventsCollector: {
-           // Enable the Experience Platform Connector and define the org and datastream to use
-           aep: {
-               orgId: // TODO: add your orgId
-               datastreamId: // TODO: add your datastreamId
+           eventForwarding: {
+               commerce: true,
+               aep: false,
            }
        }
    };
@@ -432,7 +431,7 @@ Une fois que vous avez terminé la configuration d’Experience Platform présen
 
 ## Déclencher l’événement `addToCart` et vérifier la collecte de données {#event-trigger-verify}
 
-Les étapes ci-dessus terminent la configuration d’AEM Commerce et d’Experience Platform. Vous pouvez désormais déclencher un événement `addToCart` et vérifier la collecte de données à l’aide du débogueur Experience Platform et du bouton __Mesures et graphiques__ correspondant au jeu de données dans l’interface utilisateur du produit.
+Les étapes ci-dessus terminent la configuration d’AEM Commerce et d’Experience Platform. Vous pouvez désormais déclencher une `addToCart` et vérifier la collecte des données à l’aide de l’événement [Inspecteur de déploiement de neige](https://chromewebstore.google.com/detail/snowplow-inspector/maplkdomeamdlngconidoefjpogkmljm?pli=1) et jeu de données __Mesures et graphiques__ dans l’interface utilisateur du produit.
 
 Pour déclencher l’événement, vous pouvez utiliser le service de création ou de publication d’AEM à partir de votre configuration locale. Pour cet exemple, utilisez le service de création d’AEM en vous connectant à votre compte.
 
@@ -443,9 +442,7 @@ Pour déclencher l’événement, vous pouvez utiliser le service de création o
 1. Cliquez sur n’importe quelle carte de produit préférée dans la __Page de produit__, puis sélectionnez __couleur, taille__ pour activer la variable __Ajouter au panier__ bouton .
 
 
-1. Ouvrez l’extension __Adobe Experience Platform Debugger__ dans le panneau d’extensions du navigateur et sélectionnez le __SDK Web Experience Platform__ dans le rail de gauche.
-
-   ![AEP Debugger](../assets/aep-integration/AEP-Debugger.png)
+1. Ouvrez le __Inspecteur de déploiement de neige__ dans le panneau d’extension du navigateur et sélectionnez __SDK Experience Platform Wed__ dans le rail de gauche.
 
 
 1. Revenez à la __Page produit__ et cliquez sur le bouton __Ajouter au panier__. Cela envoie les données à Experience Platform. L’extension __Adobe Experience Platform Debugger__ affiche les détails de l’événement.
@@ -462,9 +459,9 @@ Pour déclencher l’événement, vous pouvez utiliser le service de création o
 
 ## Détails d’implémentation {#implementation-details}
 
-Le [connecteur Experience Platform CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) repose sur le [connecteur Experience Platform pour Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), qui fait partie du projet [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
+La variable [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) repose sur la fonction [Connexion aux données pour Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), qui fait partie de la fonction [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) projet.
 
-Le projet PWA Studio vous permet de créer des storefronts de Progressive Web Application (PWA) alimentés par Adobe Commerce ou Magento Open Source. Le projet contient également une bibliothèque de composants appelée [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) pour ajouter une logique aux composants visuels. La [bibliothèque Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fournit également les crochets React personnalisés utilisés par le [connecteur Experience Platform](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) pour une intégration facile à Experience Platform.
+Le projet PWA Studio vous permet de créer des storefronts de Progressive Web Application (PWA) alimentés par Adobe Commerce ou Magento Open Source. Le projet contient également une bibliothèque de composants appelée [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) pour ajouter une logique aux composants visuels. La variable [Bibliothèque de pré-génération](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fournit également les hooks React personnalisés utilisés par [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) pour une intégration transparente avec Experience Platform.
 
 
 ## Événements pris en charge {#supported-events}
