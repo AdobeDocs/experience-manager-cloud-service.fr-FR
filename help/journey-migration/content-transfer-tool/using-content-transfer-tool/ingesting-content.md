@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 45%
+source-wordcount: '2313'
+ht-degree: 44%
 
 ---
 
@@ -78,7 +78,7 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestion de complément"
->abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis l&#39;activité de transfert de contenu précédente. Une fois l’ingestion terminée, recherchez dans les journaux les erreurs/avertissements éventuels. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance clientèle d’Adobe."
+>abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis l’activité de transfert de contenu précédente. Une fois l’ingestion terminée, recherchez dans les journaux les erreurs/avertissements éventuels. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance clientèle d’Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=fr" text="Affichage des journaux"
 
 L’outil de transfert de contenu dispose d’une fonctionnalité qui permet d’extraire du contenu différentiel en exécutant une *complément* du jeu de migration. Cela permet de modifier le jeu de migration pour inclure uniquement le contenu qui a changé depuis l’extraction précédente sans avoir à extraire à nouveau tout le contenu.
@@ -93,6 +93,12 @@ Commencez par créer une tâche d’ingestion et assurez-vous que **Wipe** est d
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## Résolution des problèmes {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="Dépannage de l’ingestion de contenu"
+>abstract="Reportez-vous aux journaux d’ingestion et à la documentation pour trouver des solutions aux raisons courantes de l’échec d’une ingestion, trouver le moyen de résoudre le problème et relancer l’ingestion."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr" text="Validation des transferts de contenu "
 
 ### Impossible pour CAM de récupérer le jeton de migration {#cam-unable-to-retrieve-the-migration-token}
 

@@ -2,10 +2,10 @@
 title: Indexation après migration de contenu
 description: Découvrez comment le processus de migration va indexer le contenu ingéré sur l’instance du Cloud Service de destination.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 58195fcb10312c89042f555665d4c8b3642f82ba
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 8%
+source-wordcount: '538'
+ht-degree: 7%
 
 ---
 
@@ -18,15 +18,13 @@ ht-degree: 8%
 >title="Indexation de contenu"
 >abstract="L’Indexation AEM fait référence à l’indexation du contenu sur l’instance de Cloud Service après la migration du contenu vers celle-ci. L’indexation est nécessaire pour prendre en charge la recherche de contenu sur cette instance."
 
-Une fois que Cloud Acceleration Manager a terminé l’ingestion de contenu dans votre instance de Cloud Service, il est prêt à être utilisé. Au départ, le contenu n’est pas indexé, ce qui entraîne probablement un environnement instable dans lequel des problèmes tels que le contenu non indexable et les performances dégradées peuvent être attendus.
-Pour des performances optimales sur l&#39;instance, le processus de migration démarre automatiquement l&#39;indexation du contenu. Il n&#39;y a rien à faire, à part surveiller la progression de l&#39;indexation.
+Une fois que Cloud Acceleration Manager a terminé l’ingestion de contenu dans votre instance de Cloud Service, il est prêt à être utilisé. Au départ, le contenu n’est pas indexé, ce qui entraîne probablement un environnement instable dans lequel des problèmes tels que le contenu non indexable et les performances dégradées peuvent être attendus. Pour des performances optimales sur l&#39;instance, le processus de migration démarre automatiquement l&#39;indexation du contenu. Il n&#39;y a rien à faire, à part surveiller la progression de l&#39;indexation.
 
 > Pour plus d’informations sur le démarrage d’une ingestion, voir [Ingestion de contenu dans Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
 Les étapes suivantes indiquent le flux général que vous pouvez prévoir dans l’interface utilisateur lors de l’indexation. Certains libellés fournissent un contexte utile dans les info-bulles. Par conséquent, veillez à pointer sur les éléments pour en savoir plus sur l’état d’indexation actuel.
 
-Pour commencer, accédez à Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu . Accédez à **Tâches d’ingestion**
-et voir les tâches répertoriées.
+Pour commencer, accédez à Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu . Accédez à **Tâches d’ingestion** et voir les tâches répertoriées.
 
 >[!NOTE]
 >Vous pouvez afficher ou télécharger les journaux d’indexation à l’aide des actions de la tâche d’ingestion, à l’aide de la liste déroulante ... Les journaux seront disponibles dans la variable
@@ -53,6 +51,10 @@ Lorsque la tâche d’indexation réussit, l’instance est prête à être util
 ### Erreurs
 
 L’indexation de l’instance du Cloud Service de destination réussira très probablement. Dans certains cas, il peut échouer et la ligne de tâche d’ingestion apparaîtra comme suit. Dans tous les cas, vous pouvez trouver des détails sur l’échec en pointant la souris sur l’état de l’échec et il peut fournir plus d’informations pour vous aider à déterminer les prochaines étapes. À ce stade, les journaux des tâches d’indexation sont disponibles pour affichage ou téléchargement afin de découvrir la source de l’échec. Si l’étape suivante n’est pas claire, contactez le support Adobe avec les détails de l’ingestion et du journal d’indexation.
+
+>[!TIP]
+>
+> Si la tâche d’indexation semble être trop longue, assurez-vous qu’une [La Liste autorisée IP n’a pas été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager , car il empêche Cloud Acceleration Manager d’accéder au service de migration.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
