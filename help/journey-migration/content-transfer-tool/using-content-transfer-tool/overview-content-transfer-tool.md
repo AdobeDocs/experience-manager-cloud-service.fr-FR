@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’outil de transfert de contenu pour 
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '655'
 ht-degree: 93%
 
 ---
