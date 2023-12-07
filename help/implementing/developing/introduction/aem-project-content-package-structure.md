@@ -4,7 +4,7 @@ description: Découvrez comment définir des structures de package en vue d’un
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: ht
-source-wordcount: '2918'
+source-wordcount: '2859'
 ht-degree: 100%
 
 ---
@@ -175,7 +175,7 @@ Bien que les scripts Repo Init résident eux-mêmes dans le projet `ui.config` 
 + Utilisateurs du service
 + Utilisateurs
 + Groupes
-+ Listes ACL
++ ACL
 
 Les scripts Repo Init sont stockés sous la forme d’entrées `scripts` de configurations d’usine OSGi `RepositoryInitializer`. Ils peuvent donc être implicitement ciblés par le mode d’exécution, ce qui permet d’établir des différences entre les scripts Repo Init des services de création et de publication AEM, voire entre les environnements (développement, évaluation et production).
 
