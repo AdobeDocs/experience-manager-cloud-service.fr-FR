@@ -1,8 +1,9 @@
 ---
 title: Comment créer un modèle de formulaire adaptatif ?
 description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
+feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 90%

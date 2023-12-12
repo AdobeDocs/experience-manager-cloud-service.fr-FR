@@ -1,11 +1,11 @@
 ---
 title: Comment créer un Forms adaptatif ?
 description: Découvrez comment créer un formulaire adaptatif pour simplifier la collecte et le traitement des informations. Découvrez également comment créer un formulaire adaptatif basé sur un modèle de données de formulaire.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 83%

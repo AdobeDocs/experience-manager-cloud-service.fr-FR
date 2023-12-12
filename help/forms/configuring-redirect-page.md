@@ -1,14 +1,14 @@
 ---
 title: Comment configurer une page de redirection ?
 description: Les utilisateurs peuvent être redirigés vers une page Web que les auteurs de formulaires peuvent configurer lors de la phase de création.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 85%
+source-wordcount: '209'
+ht-degree: 88%
 
 ---
 

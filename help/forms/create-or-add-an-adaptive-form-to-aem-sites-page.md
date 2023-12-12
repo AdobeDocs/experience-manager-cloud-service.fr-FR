@@ -1,10 +1,10 @@
 ---
 title: Comment ajouter un formulaire adaptatif à une page AEM Sites ?
 description: Découvrez comment créer ou ajouter un formulaire adaptatif à votre page AEM Sites. Découvrez également les avantages et les différentes façons d’intégrer des formulaires à votre site web.
-feature: Adaptive Forms, Page Editor, Authoring
+feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '3177'
 ht-degree: 79%
@@ -206,7 +206,7 @@ Une action Envoyer permet de choisir la destination des données capturées via 
 
 ## Configurer un schéma ou un modèle de données de formulaire pour un formulaire dans une page AEM Sites ou un fragment d’expérience {#configure-schema-or-data-model-for-form}
 
-Vous pouvez utiliser le modèle de données de formulaire pour connecter un formulaire à une source de données afin d’envoyer et de recevoir des données en fonction des actions de l’utilisateur ou de l’utilisatrice. Vous pouvez également connecter un formulaire à un schéma JSON pour recevoir les données envoyées dans un format prédéfini. Selon les besoins, connectez votre formulaire à un schéma JSON ou à un modèle de données de formulaire :
+Vous pouvez utiliser le modèle de données de formulaire pour connecter un formulaire à une source de données afin d’envoyer et de recevoir des données en fonction des actions de l’utilisateur ou de l’utilisatrice. Vous pouvez également connecter un formulaire à un schéma JSON pour recevoir les données envoyées dans un format prédéfini. Selon les besoins, connectez votre formulaire à un schéma JSON ou à un modèle de données de formulaire :
 
 * [Créez un schéma JSON et chargez-le dans votre environnement](/help/forms/adaptive-form-json-schema-form-model.md) ou,
 * [Créer un modèle de données de formulaire](/help/forms/create-form-data-models.md)

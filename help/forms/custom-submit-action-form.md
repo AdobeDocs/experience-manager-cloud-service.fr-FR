@@ -1,13 +1,13 @@
 ---
 title: Comment créer une action Envoyer personnalisée pour un formulaire adaptatif ?
 description: Découvrez comment créer une action Envoyer personnalisée pour un formulaire adaptatif afin de retarder l’envoi et traiter les données avant envoi à un point d’entrée Rest, les enregistrer dans un magasin de données et exécuter d’autres fonctions personnalisées.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1670'
 ht-degree: 99%
 
 ---

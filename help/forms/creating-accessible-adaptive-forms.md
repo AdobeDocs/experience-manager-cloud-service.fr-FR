@@ -3,9 +3,8 @@ title: Comment créer un Forms adaptatif accessible ?
 description: AEM Forms vous fournit des outils pour créer un Forms adaptatif accessible et vous aide à vous conformer aux normes d’accessibilité.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
-exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Foundation Components
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 93%

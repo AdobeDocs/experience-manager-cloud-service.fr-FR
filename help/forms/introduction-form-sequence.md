@@ -1,14 +1,14 @@
 ---
 title: Comment créer une séquence de formulaires en plusieurs étapes ?
-description: Avec [!DNL Experience Manager Forms], vous pouvez définir une séquence de panneaux de formulaires pour que les utilisateurs puissent naviguer entre ceux-ci et remplir un formulaire adaptatif.
-feature: Adaptive Forms
+description: Avec [!DNL Experience Manager Forms], vous pouvez définir une séquence de panneaux de formulaire pour que les utilisateurs puissent parcourir et remplir un formulaire adaptatif.
 role: User
 level: Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 0eac90a8f120a9c7655e68533d4b0a32292621e1
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 59%
+source-wordcount: '537'
+ht-degree: 56%
 
 ---
 

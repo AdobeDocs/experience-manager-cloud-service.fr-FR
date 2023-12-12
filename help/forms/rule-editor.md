@@ -1,11 +1,11 @@
 ---
 title: Comment utiliser l’éditeur de règles pour ajouter des règles aux champs de formulaire pour ajouter un comportement dynamique et créer une logique complexe à un formulaire adaptatif ?
 description: L’éditeur de règles de Forms adaptatif vous permet d’ajouter un comportement dynamique et de créer une logique complexe dans des formulaires sans codage ni script.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '6457'
 ht-degree: 87%

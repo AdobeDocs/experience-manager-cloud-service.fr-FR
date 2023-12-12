@@ -1,12 +1,13 @@
 ---
 title: Comment créer un modèle de formulaire adaptatif basé sur un composant principal ?
 description: Créez des modèles de formulaire adaptatif basés sur le composant principal pour définir la structure de base et le contenu initial à l’aide de l’éditeur de modèles.
+feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1961'
-ht-degree: 53%
+ht-degree: 56%
 
 ---
 
@@ -200,7 +201,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### Ajout de propriétés personnalisées aux composants de formulaire adaptatif à l’aide de la stratégie de modèle
 
-Les propriétés personnalisées vous permettent d’associer des attributs personnalisés (paires clé-valeur) à un composant de base de formulaire adaptatif à l’aide du modèle de formulaire. Les propriétés personnalisées sont répercutées dans la variable **[!UICONTROL properties]** du rendu sans affichage du composant. Il permet de créer un comportement de formulaire dynamique qui s’adapte en fonction des valeurs d’attributs personnalisés. Par exemple, les développeurs peuvent concevoir différents rendus d’un composant Forms sans affichage pour les plateformes mobiles, de bureau ou web, ce qui améliore considérablement l’expérience utilisateur sur un large éventail d’appareils.
+Les propriétés personnalisées vous permettent d’associer des attributs personnalisés (paires clé-valeur) à un composant principal de formulaire adaptatif à l’aide du modèle de formulaire. Les propriétés personnalisées sont répercutées dans la variable **[!UICONTROL properties]** du rendu sans affichage du composant. Cela permet de créer un comportement de formulaire dynamique qui s’adapte en fonction des valeurs d’attributs personnalisés. Par exemple, les développeurs et développeuses peuvent concevoir plusieurs rendus d’un composant de formulaires découplés pour des plateformes mobiles, de bureau ou web, ce qui améliore considérablement l’expérience client sur un large éventail d’appareils.
 
 Les étapes pour ajouter des propriétés personnalisées aux champs de composant principal de formulaire adaptatif sont les suivantes :
 

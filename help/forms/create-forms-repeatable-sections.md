@@ -2,8 +2,9 @@
 title: Comment créer des panneaux répétables dans les composants principaux de formulaire adaptatif ?
 description: Découvrez comment créer des sections ou des champs répétables dans un formulaire adaptatif.
 role: Architect, Developer, Admin, User
+feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 91%

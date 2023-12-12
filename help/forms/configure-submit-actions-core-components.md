@@ -2,8 +2,9 @@
 title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres
 keywords: comment sélectionner une action d’envoi pour un formulaire adaptatif, connecter un formulaire adaptatif à la liste sharepoint, connecter un formulaire adaptatif à la bibliothèque de documents sharepoint, connecter un formulaire adaptatif au modèle de données de formulaire
+feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: e9110b5f5b46d38712b7462490afc1052fb8d00c
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '4114'
 ht-degree: 72%

@@ -1,11 +1,11 @@
 ---
 title: Comment concevoir un schéma JSON pour un formulaire adaptatif ?
 description: Découvrez comment créer un schéma JSON pour un formulaire adaptatif et créer un formulaire adaptatif basé sur le schéma pour produire des données de réclamation de schéma.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 53%

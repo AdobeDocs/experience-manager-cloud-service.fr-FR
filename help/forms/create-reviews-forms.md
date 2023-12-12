@@ -2,10 +2,11 @@
 title: Comment créer et gérer des révisions dans les formulaires ?
 description: Utilisez le mécanisme de révision pour ajouter des réviseurs et permettre aux réviseurs de commenter un formulaire.
 topic-tags: forms-manager
+feature: Adaptive Forms, Foundation Components
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '706'
 ht-degree: 85%
 
 ---

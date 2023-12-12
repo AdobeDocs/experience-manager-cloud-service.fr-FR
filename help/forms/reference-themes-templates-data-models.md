@@ -1,11 +1,12 @@
 ---
 title: Comment obtenir des thèmes de référence et des modèles pour les formulaires AEM ?
 description: AEM Forms fournit des exemples de thèmes de formulaires adaptatifs, de modèles et de modèles de données de formulaire pour vous aider à créer rapidement des formulaires.
+feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 86%
+source-wordcount: '772'
+ht-degree: 85%
 
 ---
 

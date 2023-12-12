@@ -1,11 +1,12 @@
 ---
 title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants de base ?
 description: Pour le Forms adaptatif, vous pouvez ajouter des paramètres régionaux pour plus de langues, à l’exception de celui fourni d’usine.
+feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 80%
+source-wordcount: '1220'
+ht-degree: 79%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 80%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | Composants principaux | [Cliquez ici](supporting-new-language-localization-core-components.md) |
 | Composants de base | Cet article |
 

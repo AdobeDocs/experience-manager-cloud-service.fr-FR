@@ -1,8 +1,9 @@
 ---
 title: Comment créer et utiliser des thèmes pour mettre en forme un formulaire adaptatif ?
 description: Utilisez les thèmes de formulaire adaptatif pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
+feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 97%
