@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
 workflow-type: tm+mt
-source-wordcount: '4937'
+source-wordcount: '4905'
 ht-degree: 99%
 
 ---
@@ -61,7 +61,7 @@ Vous pouvez également [dépublier des vidéos pour les supprimer de YouTube](#u
 
 ### Configuration des paramètres de Google Cloud {#configuring-google-cloud-settings}
 
-Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Google. Si vous disposez d’un compte GMAIL, alors vous disposez déjà d’un compte Google ; si vous ne disposez pas d’un compte Google, vous pouvez facilement en créer un. Un compte est nécessaire, car vous avez besoin des informations d’identification pour publier des ressources vidéo sur YouTube. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
+Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Google. Si vous disposez d’un compte GMAIL, alors vous disposez déjà d’un compte Google ; si vous ne disposez pas d’un compte Google, vous pouvez facilement en créer un. Vous avez besoin du compte, car vous avez besoin d’informations d’identification pour publier des ressources vidéo dans YouTube. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 Il n’est pas nécessaire que le compte utilisé avec Google Cloud et le compte Google utilisé pour YouTube soient les mêmes.
 
@@ -73,8 +73,7 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
 **Pour configurer les paramètres de Google Cloud, procédez comme suit :**
 
-1. Créez un compte Google.
-   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+1. [Création d’un compte Google](https://accounts.google.com/lifecycle/flows/signup?flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;dsh=S-1878016829%3A1702493284416645&amp;theme=glif).
 
    Si vous disposez déjà d’un compte Google, vous pouvez passer à l’étape suivante.
 

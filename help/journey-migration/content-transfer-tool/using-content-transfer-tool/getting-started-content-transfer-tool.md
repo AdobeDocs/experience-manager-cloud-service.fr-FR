@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Découvrez comment commencer à utiliser l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 90%
+source-wordcount: '1362'
+ht-degree: 76%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 90%
 >id="aemcloud_ctt_download"
 >title="Télécharger"
 >abstract="Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du gestionnaire de packages sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr" text="Notes de mise à jour"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=fr" text="Notes de mise à jour"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portail de distribution de logiciels"
 
-Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus de détails sur la dernière version, voir [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
+Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module à l’aide de [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus de détails sur la dernière version, voir [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 Seules les versions 2.0.0 et ultérieures seront prises en charge. Il est conseillé d’utiliser la version la plus récente.
 
 >[!NOTE]
->Téléchargez l’outil de transfert de contenu depuis le portail de [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Téléchargez l’outil de transfert de contenu depuis le portail de [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr).
 
 ## Connectivité de l’environnement source {#source-environment-connectivity}
 
@@ -45,7 +45,7 @@ L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle n
 
 Comprendre les problèmes de connexion SSL/TLS peut parfois être difficile. Pour résoudre les problèmes de connexion lors d’un processus d’extraction, vous pouvez activer la journalisation SSL via la console système de l’environnement AEM source en procédant comme suit :
 
-1. Accédez à la console web Adobe Experience Manager sur votre instance source en accédant à **Outils - Opérations - Console web** ou directement à l’URL à l’adresse *https://serveraddress:serverport/system/console/configMgr*
+1. Accédez à la console web Adobe Experience Manager sur votre instance source en accédant à **Outils > Opérations > Console web** ou directement à l’URL à l’adresse *https://serveraddress:serverport/system/console/configMgr*
 1. Recherchez **Configuration du service d’extraction de l’outil de transfert de contenu**
 1. Utilisez le bouton représentant un crayon pour modifier ses valeurs de configuration.
 1. Activez la variable **Activation de la journalisation SSL pour l’extraction** , puis appuyez sur **Enregistrer**:
@@ -78,7 +78,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
 1. Connectez-vous à Cloud Acceleration Manager (CAM) et cliquez sur le projet CAM que vous avez créé précédemment pour évaluer votre préparation à AEM as a Cloud Service. Si vous n’avez pas créé de projet CAM, reportez-vous à la section Création et gestion d’un projet dans CAM.
 
-1. Cliquez sur le bouton **Transfert de contenu** carte. Vous accédez alors à la vue Liste des jeux de migration.
+1. Cliquez sur le bouton **Transfert de contenu** pour ouvrir la vue Liste des jeux de migration.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -86,11 +86,11 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
    >[!NOTE]
    >
-   >Dans Cloud Acceleration Manager, vous pouvez créer au maximum vingt jeux de migration, y compris les jeux expirés, par projet.
+   >Dans Cloud Acceleration Manager, vous pouvez créer un maximum de 20 jeux de migration, y compris les jeux expirés, par projet.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   La boîte de dialogue suivante s’affiche. Notez qu’un jeu de migration expire après une longue période d’inactivité. Une fois les avertissements affichés sur la carte du projet et les lignes du tableau des tâches de migration pendnat un certain temps, le jeu de migration expire et ses données deviennent indisponibles. Consultez [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
+   La boîte de dialogue suivante s’affiche. Notez qu’un jeu de migration expire après une longue période d’inactivité. Une fois les avertissements affichés sur la carte du projet et les lignes du tableau des tâches de migration pour une période donnée, le jeu de migration expire et ses données ne sont plus disponibles. Consultez [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -114,11 +114,11 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 >abstract="Lorsque vous avez créé un jeu de migration, celui-ci doit être renseigné avec le contenu de l’instance source qui doit être déplacée vers l’environnement AEM as a Cloud Service. Pour ce faire, l’outil de transfert de contenu doit être installé sur l’instance source."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=fr" text="Extraction de contenu"
 
-Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration Manager, vous devez installer la dernière version de l’outil de transfert de contenu sur votre instance source Adobe Experience Manager (AEM). Consultez cette section pour savoir comment renseigner le jeu de migration.
+Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration Manager, installez la dernière version de l’outil de transfert de contenu sur votre instance Adobe Experience Manager (AEM) source. Pour savoir comment renseigner le jeu de migration, suivez cette section.
 
 1. Après avoir installé la dernière version de l’outil de transfert de contenu sur votre instance Adobe Experience Manager source, accédez à **Opérations - Migration de contenu**.
 
-1. Cliquez sur **Créer un jeu de migration**
+1. Cliquez sur **Créer un jeu de migration**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -126,7 +126,7 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleratio
 
    >[!NOTE]
    >
-   >Assurez-vous que la clé d’extraction est valide et n’est pas proche de son expiration. Vous pouvez obtenir ces informations dans la boîte de dialogue **Créer un jeu de migration** après avoir collé la clé d’extraction. Si vous obtenez une erreur de connexion, reportez-vous à [Connectivité de l’environnement source](#source-environment-connectivity) pour plus d’informations.
+   >Assurez-vous que la clé d&#39;extraction est valide et qu&#39;elle n&#39;est pas proche de son expiration. Vous pouvez obtenir ces informations dans la boîte de dialogue **Créer un jeu de migration** après avoir collé la clé d’extraction. Si vous obtenez une erreur de connexion, reportez-vous à [Connectivité de l’environnement source](#source-environment-connectivity) pour plus d’informations.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
@@ -202,4 +202,4 @@ Pour exécuter une vérification de taille, procédez comme suit :
 
 ## Prochaines étapes {#whats-next}
 
-Maintenant que vous avez appris à créer un jeu de migration, vous êtes prêt à en apprendre plus sur les processus d’extraction et d’ingestion dans l’outil de transfert de contenu. Avant d’en apprendre plus sur ces processus, vous devez consulter la section [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service.
+Maintenant que vous avez appris à créer un jeu de migration, vous êtes prêt à en apprendre plus sur les processus d’extraction et d’ingestion dans l’outil de transfert de contenu. Avant d’apprendre ces processus, vous devez consulter [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service.
