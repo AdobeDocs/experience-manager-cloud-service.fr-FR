@@ -3,10 +3,10 @@ title: Prise en charge des fragments de contenu d’Adobe Experience Manager as
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion Adobe Experience Manager sans interface utilisateur.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 38cb2605e2133e858c60644084cf515a03b54f60
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 59%
+source-wordcount: '1747'
+ht-degree: 58%
 
 ---
 
@@ -29,6 +29,10 @@ Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets,
 >* Prise en charge des fragments de contenu
 >
 >L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
+
+>[!NOTE]
+>
+>Pour obtenir les informations les plus récentes sur les API de Experience Manager, consultez également la page [API ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 La variable [API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs d’Adobe Experience Manager as a Cloud Service d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, au moyen des opérations CRUD (Create, Read, Update, Delete).
 
@@ -149,7 +153,7 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >Pour en savoir plus, voir :
 >
->* [CORS/AEM expliqué](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr?lang=fr)
+>* [CORS/AEM expliqué](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
 >* [Vidéo - Développement pour CORS avec AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
 >
 

@@ -2,9 +2,9 @@
 title: Comment mettre à jour votre contenu à l’aide des API AEM Assets
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1061'
 ht-degree: 89%
 
 ---
@@ -321,6 +321,7 @@ Continuez votre parcours AEM découplé en consultant ensuite le document. [Tout
 
 ## Ressources supplémentaires {#additional-resources}
 
+* [API ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 * [API REST de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Référence d’API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)

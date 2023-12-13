@@ -2,10 +2,10 @@
 title: Documents de référence sur les API
 description: AEM dispose d’API complètes et puissantes que vous pouvez utiliser pour votre projet d’expérience digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 91%
+source-wordcount: '594'
+ht-degree: 87%
 
 ---
 
@@ -26,6 +26,10 @@ Les API suivantes sont essentielles pour AEM.
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
 --->
+
+>[!NOTE]
+>
+>Pour obtenir les informations les plus récentes sur les API de Experience Manager, consultez également la page [API ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## Autres frameworks {#additional-apis}
 

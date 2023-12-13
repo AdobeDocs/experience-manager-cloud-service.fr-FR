@@ -2,9 +2,9 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 0d0b91551582040c39d57b29c8f2141c2ff6d553
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1344'
 ht-degree: 97%
 
 ---
@@ -356,6 +356,7 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
 
 ## Ressources supplémentaires {#additional-resources}
 
+* [API ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [GraphQL.org](https://graphql.org)
    * [Schémas](https://graphql.org/learn/schema/)
    * [Variables](https://graphql.org/learn/queries/#variables)
