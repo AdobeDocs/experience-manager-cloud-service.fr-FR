@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 42%
+source-wordcount: '2392'
+ht-degree: 40%
 
 ---
 
@@ -45,7 +45,7 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
       * Si la source était `Author`, il est recommandé de l’ingérer dans la variable `Author` niveau sur la cible. De même, si la source était `Publish`, la cible doit être `Publish` ainsi que .
 
    >[!NOTE]
-   > Si le niveau cible est `Author`, l’instance de création est arrêtée pendant la durée de l’ingestion et n’est pas disponible pour les utilisateurs et utilisatrices (par exemple, les auteurs ou autrices ou toute personne effectuant la maintenance). Cela permet de protéger le système et d’empêcher toute modification qui pourrait être perdue ou qui pourrait entraîner un conflit d’ingestion. Assurez-vous d’en informer votre équipe. Notez également que l’environnement apparaît en veille pendant l’ingestion de l’instance de création.
+   > Si le niveau cible est `Author`, l’instance de création est arrêtée pendant la durée de l’ingestion et n’est pas disponible pour les utilisateurs et utilisatrices (par exemple, les auteurs ou autrices ou toute personne effectuant la maintenance). La raison est de protéger le système et d’empêcher toute modification qui pourrait être perdue ou provoquer un conflit d’ingestion. Assurez-vous d’en informer votre équipe. Notez également que l’environnement apparaît en veille pendant l’ingestion de l’instance de création.
 
    * **Wipe :** Choisissez la `Wipe` value
       * La variable **Wipe** définit le point de départ de la destination de l’ingestion. If **Wipe** est activée, la destination, y compris tout son contenu, est réinitialisée à la version d’AEM spécifiée dans Cloud Manager. Si elle n’est pas activée, la destination conserve son contenu actuel comme point de départ.
@@ -78,7 +78,7 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestion de complément"
->abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis l’activité de transfert de contenu précédente. Une fois l’ingestion terminée, recherchez dans les journaux les erreurs/avertissements éventuels. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance clientèle d’Adobe."
+>abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis l’activité de transfert de contenu précédente. Une fois l’ingestion terminée, recherchez les erreurs ou les avertissements dans les journaux. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance clientèle d’Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=fr" text="Affichage des journaux"
 
 L’outil de transfert de contenu dispose d’une fonctionnalité qui permet d’extraire du contenu différentiel en exécutant une *complément* du jeu de migration. Cela permet de modifier le jeu de migration pour inclure uniquement le contenu qui a changé depuis l’extraction précédente sans avoir à extraire à nouveau tout le contenu.
@@ -97,7 +97,7 @@ Commencez par créer une tâche d’ingestion et assurez-vous que **Wipe** est d
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Dépannage de l’ingestion de contenu"
->abstract="Reportez-vous aux journaux d’ingestion et à la documentation pour trouver des solutions aux raisons courantes de l’échec d’une ingestion, trouver le moyen de résoudre le problème et relancer l’ingestion."
+>abstract="Reportez-vous aux journaux d’ingestion et à la documentation pour trouver des solutions aux raisons courantes de l’échec d’une ingestion et trouver le moyen de résoudre le problème. Une fois corrigée, l’ingestion peut être exécutée à nouveau."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr" text="Validation des transferts de contenu "
 
 ### Impossible pour CAM de récupérer le jeton de migration {#cam-unable-to-retrieve-the-migration-token}
@@ -135,11 +135,11 @@ Ce message indique que Cloud Acceleration Manager n’a pas pu atteindre le se
 * Si une [liste autorisée d’adresses IP a été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager, cela empêche Cloud Acceleration Manager d’accéder au service de migration. Une adresse IP ne peut pas être ajoutée pour les ingestions, car leur adresse est dynamique. Actuellement, la seule solution est de désactiver la liste autorisée IP pendant le processus d’ingestion et d’indexation.
 * D’autres raisons peuvent nécessiter un examen. Si l’ingestion ou l’indexation continue d’échouer, contactez l’assistance clientèle d’Adobe.
 
-### AEM des mises à jour et des ingérations de version
+### AEM des mises à jour et des ingérations de version {#aem-version-updates-and-ingestions}
 
 [AEM mises à jour de version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=fr) sont automatiquement appliqués aux environnements afin de les mettre à jour avec la version la plus récente AEM as a Cloud Service. Si la mise à jour est déclenchée lorsqu’une ingestion est effectuée, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement.
 
-Si les &quot;Mises à jour de version AEM&quot; sont intégrées dans le programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant de commencer. Une fois l’ingestion terminée, l’état du mise à jour de version est renvoyé à son état avant le début de l’ingestion.
+Si les &quot;Mises à jour de version AEM&quot; sont intégrées dans le programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant de commencer. Une fois l’ingestion terminée, l’état du mise à jour de version est renvoyé à son état avant le début des ingérations.
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ Si &quot;AEM mises à jour de version&quot; est actif (c’est-à-dire que les m
 
 >[!NOTE]
 >
-> &quot;AEM mises à jour de version&quot; est exécuté dans le pipeline de l’environnement et attend que le pipeline soit clair. Si les mises à jour sont mises en file d’attente plus longtemps que prévu, assurez-vous qu’un workflow personnalisé ne verrouille pas involontairement le pipeline.
+> &quot;AEM les mises à jour de version&quot; est exécuté dans le pipeline de l’environnement et attend que le pipeline soit clair. Si les mises à jour sont mises en file d’attente plus longtemps que prévu, assurez-vous qu’un workflow personnalisé ne verrouille pas involontairement le pipeline.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Échec de l’ingestion de complément en raison d’une violation de contrainte d’unicité
+### Échec de l’ingestion de complément en raison d’une violation de contrainte d’unicité {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 Les conflits entre identifiants de nœud sont une cause courante de l’échec de l’[Ingestion complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
@@ -165,7 +165,7 @@ Cela peut également se produire si un noeud de la destination est déplacé ent
 
 Ce conflit doit être résolu manuellement. Une personne qui connait le contenu doit décider lequel des deux nœuds doit être supprimé, sans oublier tout autre contenu qui y fait référence. La solution peut nécessiter que l’extraction complémentaire soit effectuée à nouveau sans le nœud fautif.
 
-### Échec de l’ingestion de complément en raison de l’impossibilité de supprimer le noeud référencé
+### Échec de l’ingestion de complément en raison de l’impossibilité de supprimer le noeud référencé {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 Une autre cause commune d&#39;une [Ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) L’échec est un conflit de version pour un noeud particulier sur l’instance de destination. Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
@@ -175,11 +175,17 @@ Cela peut se produire si un noeud de la destination est modifié entre une inges
 
 La solution peut nécessiter que l’extraction de complément soit effectuée à nouveau sans le noeud offensif. Vous pouvez également créer un petit jeu de migration du noeud incriminé, mais en désactivant l’option &quot;Versions d’inclusion&quot;.
 
-Les bonnes pratiques indiquent que si une **Non effacé** l’ingestion doit être exécutée à l’aide d’un jeu de migration qui inclut des versions (c’est-à-dire extraites avec &quot;include versions&quot;=true), il est essentiel que le contenu de la destination soit modifié le moins possible, jusqu’à ce que le parcours de migration soit terminé. Sinon, ces conflits peuvent se produire.
+Les bonnes pratiques indiquent que si une **Non effacé** l’ingestion doit être exécutée à l’aide d’un jeu de migration qui inclut des versions. Il est essentiel que le contenu de la destination soit modifié le moins possible jusqu’à ce que le parcours de migration soit terminé. Sinon, ces conflits peuvent se produire.
 
-### Ingestion annulée
+### Échec de l’ingestion en raison de valeurs de propriété de noeud volumineuses {#ingestion-failure-due-to-large-node-property-values}
 
-Une ingestion créée avec une extraction en cours d’exécution comme jeu de migration source attend patiemment que cette extraction réussisse, et démarre normalement à ce stade. Si l’extraction échoue ou est arrêtée, l’ingestion et sa tâche d’indexation ne démarrent pas, mais sont annulées. Dans ce cas, vérifiez l’extraction pour déterminer pourquoi elle a échoué, corrigez le problème et recommencez à extraire. Une fois l’extraction fixe en cours d’exécution, une nouvelle ingestion peut être planifiée.
+La valeur des propriétés de nœud stockées dans MongoDB ne doit pas dépasser 16 Mo. Si une valeur de noeud dépasse la taille prise en charge, l’ingestion échoue et le journal contient une `BSONObjectTooLarge` et indiquez le noeud qui a dépassé le maximum. Notez qu’il s’agit d’une restriction MongoDB.
+
+Voir `Node property value in MongoDB` remarque dans [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) pour plus d’informations et un lien vers un outil Oak qui peut aider à trouver tous les noeuds volumineux. Une fois tous les noeuds de grande taille corrigés, exécutez à nouveau l’extraction et l’ingestion.
+
+### Ingestion annulée {#ingestion-rescinded}
+
+Une ingestion créée avec une extraction en cours d’exécution comme jeu de migration source attend patiemment jusqu’à ce que cette extraction réussisse, et démarre normalement à ce moment. Si l’extraction échoue ou est arrêtée, l’ingestion et sa tâche d’indexation ne démarrent pas, mais sont annulées. Dans ce cas, vérifiez l’extraction pour déterminer pourquoi elle a échoué, corrigez le problème et recommencez à extraire. Une fois l’extraction fixe en cours d’exécution, une nouvelle ingestion peut être planifiée.
 
 ## Prochaines étapes {#whats-next}
 
