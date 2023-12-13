@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
-source-wordcount: '3131'
-ht-degree: 89%
+source-wordcount: '3242'
+ht-degree: 86%
 
 ---
 
@@ -160,7 +160,7 @@ Un document peut également avoir plusieurs destinataires. Par exemple, une dema
 
 Pour sélectionner un Cloud Service et l’ordre de signature :
 
-![Cloud-service](assets/cloud-service.png)
+![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. Dans l’explorateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaires]**, puis sélectionnez la variable **[!UICONTROL Configurer]** ![configure](assets/Smock_Wrench_18_N.svg) Icône L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs.
 1. Dans l’explorateur de propriétés, développez l’accordéon **[!UICONTROL Signature électronique]** et sélectionnez l’option **[!UICONTROL Activer Adobe Sign]**. Elle active [!DNL Adobe Sign] pour un formulaire adaptatif.
@@ -170,6 +170,10 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
 
    La liste déroulante répertorie les Cloud Service qui existent dans la variable `global` dossier dans Outils > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. En outre, la liste déroulante répertorie également les Cloud Service qui se trouvent dans le dossier que vous sélectionnez dans le **[!UICONTROL Conteneur de configuration]** lorsque vous créez un formulaire adaptatif.
 
+1. Sélectionnez l’option permettant de configurer l’action d’envoi à l’aide de **[!UICONTROL Envoyer le formulaire]**. Vous pouvez sélectionner l’une des deux options parmi les suivantes :
+   * **Envoyer le formulaire (et envoyer le contrat à signer)**: cette option envoie immédiatement le formulaire, puis l’envoie pour signature aux destinataires.
+   * **Envoyer le formulaire (une fois que chaque destinataire a terminé la cérémonie de signature)**: cette option n’envoie le Forms adaptatif qu’une fois que tous les signataires ont terminé le processus de signature. Vous pouvez configurer l’intervalle pour vérifier l’état de signature de tous les signataires. Pour plus d’informations, voir  [Configurer [!DNL Adobe Acrobat Sign] planificateur](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+
 1. Sélectionnez l’ordre de signature dans la boîte de dialogue **[!UICONTROL Les destinataires peuvent remplir]**. Les destinataires peuvent signer un formulaire adaptatif de manière **[!UICONTROL séquentielle]** (l’un après l’autre) ou **[!UICONTROL simultanée]** (dans n’importe quel ordre).
 
    En ordre séquentiel, un seul destinataire reçoit le contrat Adobe Sign à la fois. Une fois que le destinataire a terminé l’action assignée, le contrat est envoyé au prochain destinataire, et ainsi de suite.
@@ -177,6 +181,10 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
    Dans un ordre simultané, tous les destinataires reçoivent le contrat Adobe Sign et peuvent agir en parallèle les uns avec les autres.
 
 1. Utilisez le champ ID de contrat pour associer un bindref à l’ID de contrat (AgreementId). Celui-ci ajoute l’ID de contrat à la section afBoundData des données d’envoi pour les formulaires basés sur un schéma. L’ID de contrat est également ajouté à la section afSubmissionInfo dans les données envoyées pour tous les formulaires compatibles avec Adobe Sign. Vous pouvez utiliser l’ID de contrat pour le suivi de l’état de contrat à l’aide de code personnalisé (requiert une implémentation personnalisée).
+
+   >[!NOTE]
+   >
+   > Si un formulaire adaptatif est créé à l’aide d’un modèle de données de formulaire, le champ ID de contrat devient visible dans la boîte de dialogue.
 
 1. [Ajout de destinataires à un formulaire adaptatif](working-with-adobe-sign.md#addsignerstoanadaptiveform) et sélectionnez Terminé . ![Enregistrer](assets/save_icon.svg) pour enregistrer les modifications.
 

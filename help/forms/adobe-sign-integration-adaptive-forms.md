@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 83%
+source-wordcount: '2033'
+ht-degree: 79%
 
 ---
 
@@ -231,9 +231,12 @@ La personne représentante génère et partage alors les informations d’identi
 
 Vous pouvez maintenant [utiliser l’ajout de champs Adobe Acrobat Sign dans un formulaire adaptatif](working-with-adobe-sign.md) ou dans un [workflow AEM](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Veillez à ajouter le conteneur de configurations utilisé pour la configuration du service cloud à tous les formulaires adaptatifs activés pour [!DNL Adobe Acrobat Sign]. Vous pouvez spécifier un conteneur de configurations à partir des propriétés d’un formulaire adaptatif.
 
-## (Pour les workflows AEM uniquement) Configurez le planificateur [!DNL Adobe Acrobat Sign] pour synchroniser le statut de la signature {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## Configurer le planificateur [!DNL Adobe Acrobat Sign] pour synchroniser l’état de signature {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-Lorsque vous utilisez l’étape de processus [!DNL Adobe Acrobat Sign] pour signer un formulaire adaptatif, le formulaire peut être transmis aux signataires l’un après l’autre ou envoyé à tous les signataires simultanément, selon la configuration de l’étape de processus. Les formulaires adaptatifs avec [!DNL Adobe Acrobat Sign] activé ne sont envoyés à Experience Manager Forms Server qu’une fois que tous les signataires ont terminé le processus de signature.
+AEM Forms as a Cloud Service fournit un service de planificateur qui vérifie l’état des signataires à des intervalles définis. Les scénarios dans lesquels vous configurez le service du planificateur :
+
+* Si vous utilisez [Envoyer le formulaire (une fois que chaque destinataire a terminé la cérémonie de signature)](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) pour signer un document, le formulaire n’est envoyé qu’une fois que tous les signataires ont signé le formulaire.
+* Si vous utilisez la variable [Connexion à une étape dans un processus AEM](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) pour signer un document, l’étape de signature attend que tous les signataires signent le document avant de passer à l’étape suivante du processus.
 
 Par défaut, les services de Planificateur [!DNL Adobe Acrobat Sign] vérifient la réponse du signataire (sondages) toutes les 24 heures. Vous pouvez modifier l’intervalle par défaut pour votre environnement.
 
