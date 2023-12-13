@@ -2,9 +2,9 @@
 title: Création de contenu pour les Edge Delivery Services
 description: Découvrez comment la création de contenu fonctionne avec des Edge Delivery Services et comment créer AEM contenu avec des Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ Avec les Edge Delivery Services, la création est facile, rapide et flexible. Vo
 
 Dans le cas de la création basée sur des documents, vous pouvez utiliser diverses sources telles que Microsoft Word et Google Docs. Les documents provenant de ces sources deviennent des pages de votre site web. Les en-têtes, listes, images, éléments de police et vidéos peuvent tous être transférés de la source initiale vers votre site web. Vous pouvez ajouter des métadonnées à des fins d’optimisation pour les moteurs de recherche ou utiliser des blocs pour travailler avec du contenu structuré et ajouter des fonctionnalités.
 
-Pour plus d’informations sur la création basée sur des documents, reportez-vous à la section [ce document dans la documentation Edge Delivery Services.](https://www.aem.live/docs/authoring)
+Pour plus d’informations sur la création basée sur des documents, reportez-vous à la section [ce document dans la documentation Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Création universelle de l’éditeur {#universal-editor}
 
@@ -40,7 +40,7 @@ Lorsque vous utilisez des Edge Delivery Services avec AEM as a Cloud Service, le
    * Le contenu reste stocké dans AEM.
    * AEM effectue le rendu du HTML sémantique nécessaire à l’ingestion.
    * Le contenu est publié pour les Edge Delivery Services.
-1. [Services de diffusion Edge](https://www.aem.live/home) vérifiez un score Lighthouse 100 %.
+1. [Services de diffusion Edge](/help/edge/developer/keeping-it-100.md) vérifiez un score Lighthouse 100 %.
 
 Les blocs sont des composants fondamentaux d’une page fournie par des Edge Delivery Services. Les auteurs peuvent choisir parmi les blocs par défaut fournis en standard par Adobe ou parmi les blocs personnalisés pour votre projet par vos développeurs.
 
