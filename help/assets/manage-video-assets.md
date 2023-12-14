@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
+source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
 workflow-type: tm+mt
-source-wordcount: '4905'
+source-wordcount: '4904'
 ht-degree: 99%
 
 ---
@@ -73,7 +73,7 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
 **Pour configurer les paramètres de Google Cloud, procédez comme suit :**
 
-1. [Création d’un compte Google](https://accounts.google.com/lifecycle/flows/signup?flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;dsh=S-1878016829%3A1702493284416645&amp;theme=glif).
+1. Créez un compte Google.
 
    Si vous disposez déjà d’un compte Google, vous pouvez passer à l’étape suivante.
 
