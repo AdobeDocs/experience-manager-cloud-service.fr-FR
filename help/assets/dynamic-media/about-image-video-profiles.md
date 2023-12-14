@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1377'
-ht-degree: 100%
+source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
+workflow-type: tm+mt
+source-wordcount: '1391'
+ht-degree: 85%
 
 ---
 
@@ -40,7 +40,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 
 Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez ensuite modifié.
 
-Supposons que vous ayez créé un profil d’image Dynamic Media et que vous l’ayez affecté à un dossier. Le profil d’image a été automatiquement appliqué aux ressources d’image que vous avez chargées dans le dossier. Cependant, vous décidez par la suite d’ajouter un nouveau rapport de recadrage intelligent au profil d’image. Désormais, au lieu de devoir sélectionner et charger à nouveau les ressources dans le dossier, il vous suffit d’exécuter le workflow *Scene7 : Retraiter les ressources*.
+Supposons que vous ayez créé un profil d’image Dynamic Media et que vous l’ayez affecté à un dossier. Le profil d’image a été automatiquement appliqué aux ressources d’image que vous avez chargées dans le dossier. Cependant, vous décidez par la suite d’ajouter un nouveau rapport de recadrage intelligent au profil d’image. Désormais, au lieu d’avoir à sélectionner et charger à nouveau les ressources dans le dossier, il vous suffit d’exécuter la fonction *Retraitement Dynamic Media* workflow.
 
 Vous pouvez exécuter le workflow de retraitement sur une ressource pour laquelle le traitement a échoué la première fois. Même si vous n’avez pas modifié de profil d’image ou vidéo, ou si vous avez déjà appliqué un profil d’image ou vidéo, vous pouvez toujours exécuter, à tout moment, le workflow de retraitement sur un dossier de ressources.
 
@@ -56,13 +56,13 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
-Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
 -->
 
 **Pour retraiter des ressources Dynamic Media dans un dossier :**
 
-1. Dans [!DNL Experience Manager], à partir de la page des Ressources, accédez à un dossier de ressources auquel un profil d’image ou vidéo est affecté et pour lequel vous souhaitez appliquer le workflow **Scene7 : Retraiter les ressources**.
+1. Dans [!DNL Experience Manager], à partir de la page Ressources, accédez à un dossier de ressources auquel un profil d’image ou vidéo est affecté et pour lequel vous souhaitez appliquer l’événement **Retraitement Dynamic Media** workflow.
 
    Le nom du profil s’affiche directement sous le nom du dossier dans le Mode Carte lorsque le Profil d’image ou le Profil vidéo lui est affecté.
 
@@ -78,10 +78,10 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    ![Copie d’écran des ressources dans Experience Manager, présentant un dossier sélectionné de ressources, la liste déroulante Journal (en surbrillance), le bouton Démarrer le workflow (en surbrillance) et l’icône en forme de caret à droite du champ Commentaire (également en surbrillance).](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. Sélectionnez **[!UICONTROL Démarrer le workflow]**.
-1. Dans la liste déroulante **[!UICONTROL Démarrer le processus]**, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
+1. Dans la **[!UICONTROL Démarrer le processus]** liste déroulante, choisissez **[!UICONTROL Retraitement Dynamic Media]**.
 1. (Facultatif) Dans la zone de texte **Entrer le titre du processus**, saisissez le nom du workflow. Si nécessaire, vous pouvez utiliser le nom pour faire référence à l’instance de workflow.
 
-   ![Copie d’écran de l’interface utilisateur du journal avec « Scene7 : retraiter les ressources » sélectionné dans la liste déroulante Démarrer le workflow et le bouton Démarrer (en surbrillance).](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![Capture d’écran de l’interface utilisateur de la chronologie avec &quot;Retraitement Dynamic Media&quot; sélectionné dans la liste déroulante Démarrer le processus . Le bouton Démarrer est surligné.](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Sélectionnez **[!UICONTROL Démarrer]**, puis **[!UICONTROL Confirmer]**.
 
@@ -94,15 +94,15 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
 1. Dans [!DNL Experience Manager], sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow > Modèles]**.
-1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
+1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Retraitement Dynamic Media]**.
 
-   ![Copie d’écran de la page des Modèles de Workflow avec le workflow « Scene7 : retraiter les ressources » sélectionné dans le mode Carte d’Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
+   ![Capture d’écran de la page Modèles de processus avec le workflow &quot;Retraitement Dynamic Media&quot; sélectionné dans le mode Carte du Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
-1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Un nouvel onglet de navigateur ouvre la page du modèle de processus Scene7 : Retraiter les ressources.
-1. Dans le coin supérieur droit de la page du modèle de processus Scene7 : Retraiter les ressources, sélectionnez **[!UICONTROL Modifier]** pour « déverrouiller » le workflow.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Un nouvel onglet du navigateur ouvre la page du modèle de processus de retraitement Dynamic Media.
+1. Sur la page du processus de retraitement Dynamic Media, près du coin supérieur droit, sélectionnez **[!UICONTROL Modifier]** pour &quot;déverrouiller&quot; le workflow.
 1. Dans le workflow, sélectionnez le composant Chargement par lots Scene7 pour ouvrir la barre d’outils, puis sélectionnez l’icône **[!UICONTROL Configurer]** de cette barre d’outils.
 
-   ![Copie d’écran du composant « Chargement par lots de Scene7 » sur la page « Scene7 : retraiter les ressources » avec le pointeur de la souris survolant l’icône « Configurer ».](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![Capture d’écran du composant &quot;Transfert par lots Scene7&quot; sur la page &quot;Retraitement Dynamic Media&quot; avec le pointeur de la souris survolant l’icône &quot;Configurer&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. Dans la boîte de dialogue **[!UICONTROL Chargement par lots vers Scene7 – Propriétés des étapes]**, définissez les éléments suivants :
    * Dans les zones de texte **[!UICONTROL Titre]** et **[!UICONTROL Description]**, saisissez un titre et une description pour la tâche, le cas échéant.
@@ -116,11 +116,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Chargement par lots vers Scene7 – Propriétés des étapes]**, sélectionnez **[!UICONTROL Terminé]**.
 
-1. Dans le coin supérieur droit de la page du modèle de workflow Scene7 : Retraiter les ressources, sélectionnez **[!UICONTROL Synchroniser]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
+1. Dans le coin supérieur droit de la page du modèle de processus de retraitement Dynamic Media, sélectionnez **[!UICONTROL Synchronisation]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
 
    ![Copie d’écran des ressources dans Experience Manager, présentant un dossier sélectionné de ressources, la liste déroulante Journal (en surbrillance), le bouton Démarrer le workflow (en surbrillance) et l’icône en forme de caret à droite du champ Commentaire (également en surbrillance).](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. Fermez l’onglet du navigateur qui affiche le modèle de workflow Scene7 : retraiter les ressources.
+1. Fermez l’onglet du navigateur qui affiche le modèle de workflow Retraitement Dynamic Media .
 
 <!-- MAY BE NEEDED IN THE FUTURE
 
@@ -142,6 +142,6 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
 
 -->
