@@ -2,20 +2,17 @@
 title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs responsables de cloud.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1515'
 ht-degree: 38%
 
 ---
 
+
 # Autorisations personnalisées {#custom-permissions}
 
 Découvrez comment utiliser des autorisations personnalisées pour créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs responsables de cloud.
-
->[!NOTE]
->
->Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 
 ## Présentation {#introduction}
 
