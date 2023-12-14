@@ -1,15 +1,21 @@
 ---
 title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Utilisez le sélecteur de ressources pour rechercher, trouver et récupérer les métadonnées et les rendus des ressources dans votre application.
-contentOwner: Adobe
+contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2371'
 ht-degree: 96%
 
 ---
+
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Cet article |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
 
 # Sélecteur de ressources micro front-end {#Overview}
 
