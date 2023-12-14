@@ -6,7 +6,7 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
-source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 93%
@@ -14,12 +14,12 @@ ht-degree: 93%
 ---
 
 
+# Détection des ressources en double {#detect-duplicate-assets}
+
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | Cet article |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
-
-# Détection des ressources en double {#detect-duplicate-assets}
+| AEM as a Cloud Service | Cet article |
 
 Si un utilisateur DAM charge une ou plusieurs ressources qui existent déjà dans le référentiel, [!DNL Experience Manager] détecte la duplication et en informe l’utilisateur. La fonctionnalité de détection des doublons est désactivée par défaut, car elle peut avoir un impact sur les performances en fonction de la taille du référentiel et du nombre de ressources chargées.
 

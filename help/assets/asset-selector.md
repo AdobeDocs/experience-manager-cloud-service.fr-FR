@@ -4,20 +4,19 @@ description: Utilisez le sélecteur de ressources pour rechercher, trouver et r�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 96%
 
 ---
 
+# Sélecteur de ressources micro front-end {#Overview}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | Cet article |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
-
-# Sélecteur de ressources micro front-end {#Overview}
+| AEM as a Cloud Service | Cet article |
 
 Le sélecteur de ressources micro front-end fournit une interface utilisateur qui s’intègre facilement au référentiel [!DNL Experience Manager Assets as a Cloud Service] afin que vous puissiez parcourir ou rechercher des ressources numériques disponibles dans le référentiel et les utiliser dans votre expérience de création d’applications.
 
