@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 94%
+source-wordcount: '1721'
+ht-degree: 93%
 
 ---
 
@@ -152,6 +152,8 @@ Passez en revue cette liste d’activités pour vous assurer d’effectuer une m
       * Le TTL est la durée pendant laquelle un enregistrement DNS reste dans un cache avant de demander une mise à jour au serveur.
       * Avec un TTL très élevé, les mises à jour de votre enregistrement DNS prendront plus de temps à se propager.
 * Exécutez des tests de performance et de sécurité qui répondent aux besoins et aux objectifs de votre entreprise.
+   * Effectuez des tests dans un environnement intermédiaire.  Il a la même taille que la production.
+   * Les environnements de développement n’ont pas la même taille que l’évaluation et la production.
 * Effectuez une coupure et assurez-vous que la mise en service réelle est effectuée sans aucun nouveau déploiement ni mise à jour du contenu.
 * Créez des profils de notification pour les utilisateurs et les utilisatrices de l’Admin Console. Consultez [Profils de notification](/help/journey-onboarding/notification-profiles.md)
 
