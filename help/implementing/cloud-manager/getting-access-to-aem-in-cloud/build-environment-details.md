@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 89%
+source-wordcount: '1177'
+ht-degree: 78%
 
 ---
 
@@ -20,6 +20,7 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
 
 * L’environnement de génération est basé sur Linux, dérivé d’Ubuntu 22.04.
 * Apache Maven 3.8.8 est installé.
+   * Adobe recommande aux utilisateurs [mettez à jour leurs référentiels Maven pour utiliser HTTPS au lieu de HTTP.](#https-maven)
 * Les versions Java installées sont Oracle JDK 8u371 et Oracle JDK 11.0.20.
 * Par défaut, la variable `JAVA_HOME` La variable d’environnement est définie sur `/usr/lib/jvm/jdk1.8.0_371` qui contient l’Oracle JDK 8u371. Voir [Autre version du JDK d’exécution Maven](#alternate-maven-jdk-version) pour plus d’informations.
 * D’autres packages système nécessaires sont installés.
@@ -40,6 +41,14 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
 >[!NOTE]
 >
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
+
+## Référentiels Maven HTTPS {#https-maven}
+
+Cloud Manager [version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) a commencé une mise à jour continue de l’environnement de génération (avec la version 2023.12.0), qui incluait une mise à jour de Maven 3.8.8. Un changement significatif introduit dans Maven 3.8.1 a été une amélioration de la sécurité visant à atténuer les vulnérabilités potentielles. Plus précisément, Maven désactive désormais toutes les variables non sécurisées. `http://*` les miroirs par défaut, comme indiqué dans la section [Notes de mise à jour de Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+Suite à cette amélioration de la sécurité, certains utilisateurs peuvent rencontrer des problèmes lors de l’étape de création, en particulier lors du téléchargement d’artefacts à partir de référentiels Maven qui utilisent des connexions HTTP non sécurisées.
+
+Pour garantir une expérience fluide avec la version mise à jour, Adobe recommande aux utilisateurs de mettre à jour leurs référentiels Maven pour utiliser HTTPS au lieu de HTTP. Cet ajustement s&#39;aligne sur la transition croissante du secteur vers des protocoles de communication sécurisés et contribue à maintenir un processus de construction sécurisé et fiable.
 
 ### Utilisation d’une version de Java spécifique {#using-java-support}
 
