@@ -2,9 +2,9 @@
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
 description: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3e40832ee4351c92ffc4eb22540223e331323821
 workflow-type: tm+mt
-source-wordcount: '2658'
+source-wordcount: '2696'
 ht-degree: 11%
 
 ---
@@ -56,9 +56,11 @@ Il existe quatre types [environnement](/help/implementing/cloud-manager/manage-e
       * Cela est indépendant des modifications initiées par Adobe dans le cadre d’une mise à jour de maintenance ou par vos déploiements de code.
       * Vous pouvez également effectuer des tests manuels dans le cas d’un déploiement de code.
    * Le contenu de l’environnement intermédiaire est généralement conservé synchronisé avec le contenu de production à l’aide de la fonction de copie de contenu en libre-service.
+   * Effectuez des tests de performance et de sécurité dans un environnement intermédiaire.  Il a la même taille que la production.
 * Environnement de développement :
    * Un environnement de développement permet aux développeurs de mettre en oeuvre et de tester AEM applications dans les mêmes conditions d’exécution que les environnements d’évaluation et de production.
    * Les modifications passent par un pipeline de déploiement qui permet les mêmes points de contrôle de sécurité et de qualité de code que dans les pipelines de déploiement de production.
+   * Les environnements de développement n’ont pas la même taille que l’évaluation et la production et ne doivent pas être utilisés pour effectuer des tests de performance et de sécurité.
 * Environnement de développement rapide (RDE) :
    * Un environnement RDE permet des itérations de développement rapides lors du déploiement de code nouveau ou existant dans les instances RDE, sans passer par un pipeline de déploiement officiel, comme dans les environnements de développement standard.
 
