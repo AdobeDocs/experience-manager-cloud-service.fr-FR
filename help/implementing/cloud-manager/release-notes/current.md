@@ -3,9 +3,9 @@ title: Notes de mise à jour de Cloud Manager 2023.12.0 dans Adobe Experience
 description: Consultez les notes de mise à jour de Cloud Manager 2023.12.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71ce915413cd968a78a33b7a52d02e09841e1707
+source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '784'
 ht-degree: 17%
 
 ---
@@ -32,8 +32,8 @@ La date de publication de la version 2023.12.0 de Cloud Manager dans AEM as a Cl
 * Pour les programmes Cloud Manager nouvellement créés, [le sous-compte New Relic associé](/help/implementing/cloud-manager/user-access-new-relic.md) n’est pas activée par défaut.
    * Pour les programmes existants dans lesquels le sous-compte New Relic n’a pas été accessible depuis plus de 90 jours, il sera désactivé.
    * Si vous souhaitez utiliser le sous-compte New Relic, vous devez vous inscrire via Cloud Manager.
-* Déploiements des versions mineures pour java 8 et 11 et mises à jour vers maven [annoncé et commencé avec la version d’octobre de Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) ont été terminées.
-   * La prise en charge du noeud 18 a été ajoutée pour les pipelines front-end et de pile complète.
+* Déploiement de mises à jour dans la variable [environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) that [annoncé et commencé avec la version d’octobre de Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) ont été terminées.
+   * Ajout de la prise en charge du noeud 18 pour [pipelines front-end et pile complète.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * La version mineure de Java 8 a été mise à jour vers `jdk1.8.0_371`.
    * La version mineure de Java 11 a été mise à jour vers `jdk-11.0.20`.
    * Maven a été mis à jour vers la version 3.8.8.
