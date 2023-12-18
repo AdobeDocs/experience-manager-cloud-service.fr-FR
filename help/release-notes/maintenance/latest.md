@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2677e8fbdf6b21ce2d1d848000401c826bc5f289
+source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 37%
+source-wordcount: '355'
+ht-degree: 29%
 
 ---
 
@@ -13,20 +13,20 @@ ht-degree: 37%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 14538 {#release-14538}
+## Version 14697 {#release-14697}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 14538, rendue publique le jeudi 6 décembre 2023. Cette mise à jour de maintenance est une mise à jour de la version de maintenance 14227 précédente.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 14697, rendue publique le mardi 18 décembre 2023. Il remplace la version 14538 qui présentait un problème. La version de maintenance précédente était la version 14227.
 
-L’activation des fonctionnalités de la version 2023.12.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
+2023.12.0 Feature Activation fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
-### Améliorations {#enhancements-14538}
+### Améliorations {#enhancements-14697}
 
 * GRANITE-46723 : synchronisation des utilisateurs - migration SAML de la synchronisation par défaut vers la synchronisation basée sur IDP.
 * OAK-10311 : Réplication - Optimisez la comparaison des objets blob pour réduire le temps de réplication d’un lot volumineux de ressources dans AEM.
 * OAK-10511 : Réplication : réduisez les allers-retours réseau pour réduire le temps de réplication des ressources volumineuses dans AEM.
 * GRANITE-48334 : Éditeurs - Le script de collection est manquant pour RUM.
 
-### Problèmes résolus {#fixed-issues-14538}
+### Problèmes résolus {#fixed-issues-14697}
 
 * CQ-4354867 : La référence ToggleCondition fait référence à un champ inexistant dans InstanceActionServlet.
 * CQ-4349948 : localisation des chaînes &quot;Propriétés du profil&quot; dans Modifier les paramètres utilisateur sous Outils → Sécurité → utilisateurs.
@@ -40,11 +40,11 @@ L’activation des fonctionnalités de la version 2023.12.0 fournit l’ensembl
 * ASSETS-30811 : Mises à jour de référence pour le lien du service Blocktag.
 * GRANITE-46418 : Mise à jour des événements Sling dans AEM : GaugeSupport a une récursion infinie dans registerWithSuffix (SLING-11918).
 
-### Problèmes connus {#known-issues-14538}
+### Problèmes connus {#known-issues-14697}
 
 Aucun.
 
-### Technologies intégrées {#embedded-tech-14538}
+### Technologies intégrées {#embedded-tech-14697}
 
 | Technologie | Version | Lien |
 |---|---|---|
