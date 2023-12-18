@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 40%
+source-wordcount: '2407'
+ht-degree: 39%
 
 ---
 
@@ -159,9 +159,11 @@ Les conflits entre identifiants de nœud sont une cause courante de l’échec d
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Chaque nœud d’AEM doit disposer d’un UUID unique. Cette erreur indique qu’un noeud en cours d’ingestion possède le même uuid que celui qui existe ailleurs sur un autre chemin sur l’instance de destination.
-Cette situation peut se produire si un nœud est déplacé sur la source entre une extraction et une [extraction complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) suivante.
-Cela peut également se produire si un noeud de la destination est déplacé entre une ingestion et une ingestion de complément ultérieure.
+Chaque nœud d’AEM doit disposer d’un UUID unique. Cette erreur indique qu’un noeud en cours d’ingestion possède le même uuid que celui qui existe à un autre chemin sur l’instance de destination. Cette situation peut se produire pour deux raisons :
+
+* Un noeud est déplacé sur la source entre une extraction et une [Extraction de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _RAPPELER_: pour les extractions de complément, le noeud existe toujours dans le jeu de migration, même s’il n’existe plus sur la source.
+* Un noeud sur la destination est déplacé entre une ingestion et une ingestion de complément ultérieure.
 
 Ce conflit doit être résolu manuellement. Une personne qui connait le contenu doit décider lequel des deux nœuds doit être supprimé, sans oublier tout autre contenu qui y fait référence. La solution peut nécessiter que l’extraction complémentaire soit effectuée à nouveau sans le nœud fautif.
 
@@ -171,7 +173,7 @@ Une autre cause commune d&#39;une [Ingestion de complément](/help/journey-migra
 
 >java.lang.RuntimeException : org.apache.jackrabbit.oak.api.CommitFailedException : OakIntegrity0001 : impossible de supprimer le noeud référencé : 8a289f4-b904-4bd0-8410-15e41e0976a8
 
-Cela peut se produire si un noeud de la destination est modifié entre une ingestion et une **Non effacé** de sorte qu’une nouvelle version ait été créée. Si le jeu de migration a été extrait avec l’option &quot;Inclure les versions&quot; activée, un conflit peut se produire, car la destination possède désormais une version plus récente qui est référencée par l’historique des versions et d’autres contenus. Le processus d’ingestion ne pourra pas supprimer le noeud de version offensante car il est référencé.
+Cela peut se produire si un noeud de la destination est modifié entre une ingestion et une **Non effacé** de sorte qu’une nouvelle version ait été créée. Si le jeu de migration a été extrait avec l’option &quot;Inclure les versions&quot; activée, un conflit peut se produire, car la destination possède désormais une version plus récente qui est référencée par l’historique des versions et d’autres contenus. Le processus d’ingestion ne parvient pas à supprimer le noeud de version offensante, car il est référencé.
 
 La solution peut nécessiter que l’extraction de complément soit effectuée à nouveau sans le noeud offensif. Vous pouvez également créer un petit jeu de migration du noeud incriminé, mais en désactivant l’option &quot;Versions d’inclusion&quot;.
 
@@ -179,7 +181,7 @@ Les bonnes pratiques indiquent que si une **Non effacé** l’ingestion doit êt
 
 ### Échec de l’ingestion en raison de valeurs de propriété de noeud volumineuses {#ingestion-failure-due-to-large-node-property-values}
 
-La valeur des propriétés de nœud stockées dans MongoDB ne doit pas dépasser 16 Mo. Si une valeur de noeud dépasse la taille prise en charge, l’ingestion échoue et le journal contient une `BSONObjectTooLarge` et indiquez le noeud qui a dépassé le maximum. Notez qu’il s’agit d’une restriction MongoDB.
+La valeur des propriétés de nœud stockées dans MongoDB ne doit pas dépasser 16 Mo. Si une valeur de noeud dépasse la taille prise en charge, l’ingestion échoue et le journal contient une `BSONObjectTooLarge` et indiquez le noeud qui a dépassé le maximum. Il s’agit d’une restriction MongoDB.
 
 Voir `Node property value in MongoDB` remarque dans [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) pour plus d’informations et un lien vers un outil Oak qui peut aider à trouver tous les noeuds volumineux. Une fois tous les noeuds de grande taille corrigés, exécutez à nouveau l’extraction et l’ingestion.
 
