@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: a63a237e8da9260fa5f88060304b8cf9f508da7f
+source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 99%
+source-wordcount: '1931'
+ht-degree: 97%
 
 ---
 
@@ -184,6 +184,243 @@ Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
 Le processus de chargement d’un binaire n’est pas terminé tant que l’URL complète n’est pas appelée pour le fichier. Une ressource est traitée une fois le processus de chargement terminé. Le traitement ne commence pas même si le fichier binaire de la ressource est complètement chargé, mais que le processus de chargement n’est pas terminé. Si le téléchargement aboutit, le serveur répond avec un code d’état `200`.
+
+### Exemple de script Shell pour charger des ressources dans AEM as a Cloud Service {#upload-assets-shell-script}
+
+Le processus de chargement en plusieurs étapes pour un accès binaire direct dans AEM as a Cloud Service est illustré dans l’exemple shell-script suivant. `aem-upload.sh`:
+
+```bash
+#!/bin/bash
+
+# Check if pv is installed
+if ! command -v pv &> /dev/null; then
+    echo "Error: 'pv' command not found. Please install it before running the script."
+    exit 1
+fi
+
+# Check if jq is installed
+if ! command -v jq &> /dev/null; then
+    echo "Error: 'jq' command not found. Please install it before running the script."
+    exit 1
+fi
+
+# Set DEBUG to true to enable debug statements
+DEBUG=true
+
+# Function for printing debug statements
+function debug() {
+    if [ "${DEBUG}" = true ]; then
+        echo "[DEBUG] $1"
+    fi
+}
+
+# Function to check if a file exists
+function file_exists() {
+    [ -e "$1" ]
+}
+
+# Function to check if a path is a directory
+function is_directory() {
+    [ -d "$1" ]
+}
+
+# Check if the required number of parameters are provided
+if [ "$#" -ne 4 ]; then
+    echo "Usage: $0 <aem-url> <asset-folder> <file-to-upload> <bearer-token>"
+    exit 1
+fi
+
+AEM_URL="$1"
+ASSET_FOLDER="$2"
+FILE_TO_UPLOAD="$3"
+BEARER_TOKEN="$4"
+
+# Extracting file name or folder name from the file path
+NAME=$(basename "${FILE_TO_UPLOAD}")
+
+# Step 1: Check if "file-to-upload" is a folder
+if is_directory "${FILE_TO_UPLOAD}"; then
+    echo "Uploading files from the folder recursively..."
+    
+    # Recursively upload files in the folder
+    find "${FILE_TO_UPLOAD}" -type f | while read -r FILE_PATH; do
+        FILE_NAME=$(basename "${FILE_PATH}")
+        debug "Uploading file: ${FILE_PATH}"
+        
+        # You can choose to initiate upload for each file here
+        # For simplicity, let's assume you use the same ASSET_FOLDER for all files
+        ./aem-upload.sh "${AEM_URL}" "${ASSET_FOLDER}" "${FILE_PATH}" "${BEARER_TOKEN}"
+    done
+else
+    # "file-to-upload" is a single file
+    FILE_NAME="${NAME}"
+
+    # Step 2: Calculate File Size
+    FILE_SIZE=$(stat -c %s "${FILE_TO_UPLOAD}")
+
+    # Step 3: Initiate Upload
+    INITIATE_UPLOAD_ENDPOINT="${AEM_URL}/content/dam/${ASSET_FOLDER}.initiateUpload.json"
+
+    debug "Initiating upload..."
+    debug "Initiate Upload Endpoint: ${INITIATE_UPLOAD_ENDPOINT}"
+    debug "File Name: ${FILE_NAME}"
+    debug "File Size: ${FILE_SIZE}"
+
+    INITIATE_UPLOAD_RESPONSE=$(curl -X POST \
+        -H "Authorization: Bearer ${BEARER_TOKEN}" \
+        -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+        -d "fileName=${FILE_NAME}" \
+        -d "fileSize=${FILE_SIZE}" \
+        ${INITIATE_UPLOAD_ENDPOINT})
+
+    # Continue with the rest of the script...
+fi
+
+
+# Check if the response body contains the specified HTML content for a 404 error
+if echo "${INITIATE_UPLOAD_RESPONSE}" | grep -q "<title>404 Specified folder not found</title>"; then
+    echo "Folder not found. Creating the folder..."
+
+    # Attempt to create the folder
+    CREATE_FOLDER_ENDPOINT="${AEM_URL}/api/assets/${ASSET_FOLDER}"
+
+    debug "Creating folder..."
+    debug "Create Folder Endpoint: ${CREATE_FOLDER_ENDPOINT}"
+
+    CREATE_FOLDER_RESPONSE=$(curl -X POST \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${BEARER_TOKEN}" \
+        -d '{"class":"'${ASSET_FOLDER}'","properties":{"title":"'${ASSET_FOLDER}'"}}' \
+        ${CREATE_FOLDER_ENDPOINT})
+
+    # Check the response code and inform the user accordingly
+    STATUS_CODE_CREATE_FOLDER=$(echo "${CREATE_FOLDER_RESPONSE}" | jq -r '.properties."status.code"')
+    case ${STATUS_CODE_CREATE_FOLDER} in
+        201)
+            echo "Folder created successfully. Initiating upload again..."
+
+            # Retry Initiate Upload after creating the folder
+            INITIATE_UPLOAD_RESPONSE=$(curl -X POST \
+                -H "Authorization: Bearer ${BEARER_TOKEN}" \
+                -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+                -d "fileName=${FILE_NAME}" \
+                -d "fileSize=${FILE_SIZE}" \
+                ${INITIATE_UPLOAD_ENDPOINT})
+            ;;
+        409)
+            echo "Error: Folder already exists."
+            ;;
+        412)
+            echo "Error: Precondition failed. Root collection cannot be found or accessed."
+            exit 1
+            ;;
+        500)
+            echo "Error: Internal Server Error. Something went wrong."
+            exit 1
+            ;;
+        *)
+            echo "Error: Unexpected response code ${STATUS_CODE_CREATE_FOLDER}"
+            exit 1
+            ;;
+    esac
+fi
+
+# Extracting values from the response
+FOLDER_PATH=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.folderPath')
+UPLOAD_URIS=($(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].uploadURIs[]'))
+UPLOAD_TOKEN=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].uploadToken')
+MIME_TYPE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].mimeType')
+MIN_PART_SIZE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].minPartSize')
+MAX_PART_SIZE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].maxPartSize')
+COMPLETE_URI=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.completeURI')
+
+# Extracting "Affinity-cookie" from the response headers
+AFFINITY_COOKIE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | grep -i 'Affinity-cookie' | awk '{print $2}')
+
+debug "Folder Path: ${FOLDER_PATH}"
+debug "Upload Token: ${UPLOAD_TOKEN}"
+debug "MIME Type: ${MIME_TYPE}"
+debug "Min Part Size: ${MIN_PART_SIZE}"
+debug "Max Part Size: ${MAX_PART_SIZE}"
+debug "Complete URI: ${COMPLETE_URI}"
+debug "Affinity Cookie: ${AFFINITY_COOKIE}"
+if $DEBUG; then
+    i=1
+    for UPLOAD_URI in "${UPLOAD_URIS[@]}"; do
+        debug "Upload URI $i: "$UPLOAD_URI
+        i=$((i+1))
+    done
+fi
+
+
+# Calculate the number of parts needed
+NUM_PARTS=$(( (FILE_SIZE + MAX_PART_SIZE - 1) / MAX_PART_SIZE ))
+debug "Number of Parts: $NUM_PARTS"
+
+# Calculate the part size for the last chunk
+LAST_PART_SIZE=$(( FILE_SIZE % MAX_PART_SIZE ))
+if [ "${LAST_PART_SIZE}" -eq 0 ]; then
+    LAST_PART_SIZE=${MAX_PART_SIZE}
+fi
+
+# Step 4: Upload binary to the blob store in parts
+PART_NUMBER=1
+for i in $(seq 1 $NUM_PARTS); do
+    PART_SIZE=${MAX_PART_SIZE}
+    if [ ${PART_NUMBER} -eq ${NUM_PARTS} ]; then
+        PART_SIZE=${LAST_PART_SIZE}
+        debug "Last part size: ${PART_SIZE}"
+    fi
+
+    PART_FILE="/tmp/${FILE_NAME}_part${PART_NUMBER}"
+
+    # Creating part file 
+    SKIP=$((PART_NUMBER - 1))
+    SKIP=$((MAX_PART_SIZE * SKIP))
+    dd if="${FILE_TO_UPLOAD}" of="${PART_FILE}"  bs="${PART_SIZE}" skip="${SKIP}" count="${PART_SIZE}" iflag=skip_bytes,count_bytes  > /dev/null 2>&1
+    debug "Creating part file: ${PART_FILE} with size ${PART_SIZE}, skipping first ${SKIP} bytes."
+
+    
+    UPLOAD_URI=${UPLOAD_URIS[$PART_NUMBER-1]}
+
+    debug "Uploading part ${PART_NUMBER}..."
+    debug "Part Size: $PART_SIZE"
+    debug "Part File: ${PART_FILE}"
+    debug "Part File Size: $(stat -c %s "${PART_FILE}")"
+    debug "Upload URI: ${UPLOAD_URI}"
+
+    # Upload the part in the background
+    if command -v pv &> /dev/null; then
+        pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" &
+    else
+        curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}" &
+    fi
+
+    PART_NUMBER=$((PART_NUMBER + 1))
+done
+
+# Wait for all background processes to finish
+wait
+
+# Step 5: Complete the upload in AEM
+COMPLETE_UPLOAD_ENDPOINT="${AEM_URL}${COMPLETE_URI}"
+
+debug "Completing the upload..."
+debug "Complete Upload Endpoint: ${COMPLETE_UPLOAD_ENDPOINT}"
+
+RESPONSE=$(curl -X POST \
+    -H "Authorization: Bearer ${BEARER_TOKEN}" \
+    -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+    -H "Affinity-cookie: ${AFFINITY_COOKIE}" \
+    --data-urlencode "uploadToken=${UPLOAD_TOKEN}" \
+    --data-urlencode "fileName=${FILE_NAME}" \
+    --data-urlencode "mimeType=${MIME_TYPE}" \
+    "${COMPLETE_UPLOAD_ENDPOINT}")
+    
+debug $RESPONSE
+
+echo "File upload completed successfully."
+```
 
 ### Bibliothèque de chargement Open Source {#open-source-upload-library}
 
