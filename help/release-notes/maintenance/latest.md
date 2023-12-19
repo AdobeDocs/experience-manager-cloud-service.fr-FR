@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
+source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 29%
+source-wordcount: '371'
+ht-degree: 28%
 
 ---
 
@@ -39,6 +39,7 @@ Vous trouverez ci-dessous un résumé des améliorations continues de la version
 * ASSETS-31297 : empêche la suppression de la ressource copiée dans Dynamic Media.
 * ASSETS-30811 : Mises à jour de référence pour le lien du service Blocktag.
 * GRANITE-46418 : Mise à jour des événements Sling dans AEM : GaugeSupport a une récursion infinie dans registerWithSuffix (SLING-11918).
+* GRANITE-48937 : Régression des correctifs de la version de maintenance 14538 où Omnisearch ne fonctionne pas sur la page aem/start.html.
 
 ### Problèmes connus {#known-issues-14697}
 
