@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
 workflow-type: tm+mt
-source-wordcount: '3217'
-ht-degree: 100%
+source-wordcount: '3166'
+ht-degree: 99%
 
 ---
 
@@ -239,7 +239,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en sélectionnant 
 
   Vous pouvez modifier les paramètres avancés ci-après en sélectionnant **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Activer la correspondance du rapport d’aspect]** : sélectionnez cette option pour laisser Dynamic Media sélectionner un rendu de recadrage intelligent avec le rapport d’aspect correspondant le mieux à celui de l’image d’origine.
+* **[!UICONTROL Activer la correspondance du rapport d’aspect]** - Pour permettre à Dynamic Media de sélectionner un rendu de recadrage intelligent avec un format correspondant le mieux aux proportions de l’image d’origine, sélectionnez cette option.
 
 * **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** : sélectionnez (par défaut) la case pour autoriser l’optimisation du rapport DPR (Device Pixel Ratio).
 
