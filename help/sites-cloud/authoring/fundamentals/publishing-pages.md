@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 91%
+source-wordcount: '1847'
+ht-degree: 89%
 
 ---
 
@@ -49,6 +49,12 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 >* Un workflow est déclenché pour informer la personne appropriée de votre demande de publication.
 >* Ce workflow a peut-être été personnalisé par votre équipe de développement.
 >* Un message s’affiche brièvement pour vous informer que le workflow a été déclenché.
+
+>[!NOTE]
+>
+>Si vous souhaitez préserver l’ordre des pages, vous devez publier la page parente lors de la publication d’une page enfant.
+>
+>L’ordre des pages n’est pas garanti si seules les pages enfants sont sélectionnées pour publication (car les informations de commande sont conservées sur la page parente).
 
 >[!NOTE]
 >
@@ -124,7 +130,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    ![Sélection de pages en vue de la publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. L’assistant **Gérer la publication** démarre. la première étape, **Options**, vous permet :
+1. L’assistant **Gérer la publication** démarre. La première étape, **Options**, vous permet d’effectuer les opérations suivantes :
 
    * **Action**
 
