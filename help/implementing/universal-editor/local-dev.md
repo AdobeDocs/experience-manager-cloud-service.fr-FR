@@ -2,9 +2,9 @@
 title: Développement d’AEM locales avec l’éditeur universel
 description: Découvrez comment Universal Editor prend en charge la modification sur les instances d’AEM locales à des fins de développement.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,8 @@ Universal Editor sait quel service d’éditeur universel utiliser pour modifier
 
 Pour qu’une page soit modifiée à l’aide de votre service Universal Editor local, la balise meta suivante doit être définie :
 
-```
-<meta name="urn:adobe:aem:editor:endpoint" content="https://localhost:8000">
+```html
+<meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
 Une fois défini, vous devriez voir chaque appel de mise à jour de contenu envoyé à `https://localhost:8000` au lieu du service Universal Editor par défaut.
