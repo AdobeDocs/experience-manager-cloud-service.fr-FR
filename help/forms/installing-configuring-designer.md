@@ -2,11 +2,12 @@
 title: Comment télécharger et installer Forms Designer pour créer des modèles de documents d’enregistrement ?
 description: Utilisez Forms Designer pour créer des modèles XDP et de PDF Form qui servent de modèle pour un document d’enregistrement.
 keywords: Installation de Designer, installation de Forms Designer, configuration requise pour l’installation de Forms Designer
+feature: Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 62%
+source-wordcount: '409'
+ht-degree: 68%
 
 ---
 
@@ -49,7 +50,7 @@ Pour installer la dernière version d’AEM Forms Designer 64 bits ou 32 bits, v
 * Accélération matérielle de la vidéo (facultatif)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
 * Droits d’administrateur pour l’installation de Designer.
-* Microsoft® Visual C++ 2019 (VC 14.28 ou version ultérieure) Exécution 32 bits
+* Microsoft® Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
 
 +++
 
@@ -72,7 +73,7 @@ Pour installer Designer, procédez comme suit :
 ## Voir également {#see-also}
 
 * [Utiliser des polices personnalisées](/help/forms/use-custom-fonts.md)
-* [Création d’un formulaire adaptatif basé sur des composants principaux autonomes](/help/forms/creating-adaptive-form-core-components.md)
+* [Création d’un formulaire adaptatif autonome basé sur des composants principaux](/help/forms/creating-adaptive-form-core-components.md)
 * [Créer ou ajouter un formulaire adaptatif à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Utilisation de Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire](/help/forms/use-forms-designer.md)
 

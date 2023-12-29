@@ -1,11 +1,11 @@
 ---
 title: Comment utiliser Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire ?
 description: Utilisation [!DNL AEM Forms] concepteur pour créer des modèles de document d’enregistrement et des fragments de formulaire.
-exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+feature: Forms Designer
+source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 63%
+source-wordcount: '123'
+ht-degree: 49%
 
 ---
 
