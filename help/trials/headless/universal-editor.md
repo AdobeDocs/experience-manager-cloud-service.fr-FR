@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’éditeur universel pour modifier n�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '886'
 ht-degree: 6%
 
 ---
@@ -39,9 +39,7 @@ La modification en place et dans le contexte peut souvent s’avérer préférab
 
 L’éditeur universel vous permet de modifier facilement votre texte en contexte et en place, ce qui vous permet de créer du contenu simple et intuitif.
 
-1. L’éditeur doit se charger par défaut dans **Composants** mode . Si ce n’est pas le cas, sélectionnez la variable **Composants** dans le rail de mode sur le côté gauche de l’éditeur.
-
-1. Double-sélectionnez le titre du dernier article pour le modifier.
+1. Double-cliquez pour sélectionner le titre du dernier article à modifier.
 
    ![Éditeur universel](assets/do-not-localize/ue-component-mode.png)
 
@@ -49,7 +47,7 @@ L’éditeur universel vous permet de modifier facilement votre texte en context
 
    ![Modification de texte dans Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Appuyez sur la touche Entrée/Retour ou sélectionnez en dehors du composant de texte pour que vos modifications soient enregistrées automatiquement.
+1. Sélectionnez en dehors du composant de texte et vos modifications sont enregistrées automatiquement.
 
 Universal Editor enregistre automatiquement vos modifications dans l’environnement de création. Vous devez toujours les publier pour que vos lecteurs puissent le voir, ce que nous ferons ultérieurement.
 
@@ -57,7 +55,7 @@ Universal Editor enregistre automatiquement vos modifications dans l’environne
 
 Vous pouvez également permuter des images tout en restant dans le contexte de votre contenu à l’aide de l’éditeur universel.
 
-1. Reste dans **Composants** , sélectionnez l’image du surfeur pour la sélectionner.
+1. Sélectionnez l’image du surfeur pour la sélectionner.
 
 1. Dans le rail des composants, vous pouvez voir le détail de la ressource. Sélectionnez la variable **Image en vedette** miniature.
 
@@ -75,7 +73,7 @@ L’image est remplacée par celle que vous avez sélectionnée.
 
 L’éditeur universel vous permet d’interagir avec votre contenu dans son contexte, en voyant le contenu tel qu’il est diffusé sur les appareils de vos utilisateurs.
 
-1. Par défaut, l’éditeur effectue le rendu de la version de bureau de votre contenu. Sélectionnez le bouton de l’émulateur en haut à droite de l’éditeur pour modifier l’appareil cible.
+1. Par défaut, l’éditeur effectue le rendu de la version de bureau de votre contenu. Sélectionnez le bouton de l’émulateur en haut à droite de la barre d’outils de l’éditeur universel pour modifier l’appareil cible.
 
    ![Élément de menu de l’émulateur](assets/do-not-localize/ue-emulator-1.png)
 
@@ -91,9 +89,9 @@ Vous pouvez également spécifier des dimensions exactes pour l’émulateur et 
 
 ## Prévisualisation et publication {#preview}
 
-Comme vous devez sélectionner votre contenu pour le sélectionner dans l’éditeur, celui-ci ne vous permet pas de suivre les liens ou d’interagir avec votre contenu en appuyant ou en cliquant sur lorsqu’il est en mode d’édition. En mode Aperçu, vous pouvez suivre les liens de votre contenu et l’expérimenter comme le feraient vos utilisateurs avant de le publier.
+Comme vous devez sélectionner votre contenu pour le modifier dans l’éditeur, celui-ci ne vous permet pas de suivre les liens ou d’interagir avec votre contenu en appuyant ou en cliquant. En mode Aperçu, vous pouvez suivre les liens de votre contenu et l’expérimenter comme le feraient vos utilisateurs avant de le publier.
 
-1. Dans le rail de mode sur le côté gauche de l’éditeur, sélectionnez **Aperçu**.
+1. Dans la barre d’outils de l’éditeur universel, sélectionnez **Aperçu**.
 
 1. Sélectionnez maintenant la variable **En savoir plus** lien de l’article principal.
 
@@ -113,9 +111,11 @@ Votre contenu est publié.
 
 Pour accélérer votre expérience de création de contenu lorsque l’édition structurée de contenu sans tête est plus avantageuse que l’édition statique, l’éditeur universel vous donne également un accès rapide à l’éditeur de fragments de contenu.
 
-1. Faites défiler la page vers le bas jusqu’à la **Aventures** .
+1. Désactivez le mode d’aperçu en appuyant sur **Aperçu** dans la barre d’outils de l’éditeur universel.
 
-1. Dans le rail de mode sur le côté gauche de l’éditeur, sélectionnez **Composants**. Vous pouvez ainsi sélectionner des composants de page dans l’éditeur.
+   ![Désactivation du mode Aperçu](assets/do-not-localize/ue-toggle-off-preview.png)
+
+1. Faites défiler la page vers le bas jusqu’à la **Aventures** .
 
 1. Sélectionnez l’une des aventures telles que **Le camp de surf de Bali** pour la sélectionner.
 
