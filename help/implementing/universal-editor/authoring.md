@@ -2,9 +2,9 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2179'
 ht-degree: 25%
 
 ---
@@ -44,11 +44,10 @@ Une fois connecté, saisissez l’URL de la page à modifier dans le [la barre d
 
 ## Présentation de l’interface utilisateur {#ui}
 
-L’interface utilisateur est divisée en cinq zones principales.
+L’interface utilisateur est divisée en deux zones principales.
 
 * [En-tête Experience Cloud](#experience-cloud-header)
-* [En-tête de l’éditeur universel](#universal-editor-header)
-* [Le rail de mode](#mode-rail)
+* [Barre d’outils de l’éditeur universel](#universal-editor-toolbar)
 * [L’éditeur](#editor)
 * [Rail Propriétés](#properties-rail)
 
@@ -96,11 +95,11 @@ Sélectionnez l’icône représentant votre utilisateur pour accéder à vos pa
 
 ![Propriétés de l’utilisateur](assets/user-properties.png)
 
-### En-tête de l’éditeur universel {#universal-editor-header}
+### Barre d’outils de l’éditeur universel {#universal-editor-toolbar}
 
-L’en-tête de l’éditeur universel est toujours présent en haut de l’écran, juste en dessous de [l’en-tête Experience Cloud.](#experience-cloud-header) Il vous permet d’accéder rapidement à une autre page à modifier et de publier la page active.
+La barre d’outils de l’éditeur universel est toujours présente en haut de l’écran, juste en dessous. [l’en-tête de l’Experience Cloud.](#experience-cloud-header) Il vous permet d’accéder rapidement à une autre page à modifier et de publier la page active.
 
-![En-tête de l’éditeur universel](assets/universal-editor-header.png)
+![Barre d’outils de l’éditeur universel](assets/universal-editor-toolbar.png)
 
 #### Bouton Accueil {#home-button}
 
@@ -132,7 +131,7 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Séle
 
 #### Paramètres d’en-tête d’authentification {#authentication-settings}
 
-Sélectionnez l’icône des paramètres d’en-tête d’authentification si vous devez définir un secret d’authentification.
+Sélectionnez l’icône des paramètres d’en-tête d’authentification si vous devez [définissez un en-tête d’authentification personnalisé à des fins de développement local.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![Bouton Paramètres de l’en-tête d’authentification](assets/authentication-header-settings.png)
 
@@ -154,6 +153,16 @@ Vous pouvez également choisir d’émuler un appareil mobile et dans l’édite
 * Définir la largeur et la hauteur
 * Modification de l’orientation
 
+#### Mode Aperçu {#preview-mode}
+
+En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtrait sur votre service publié. Cela permet à l’auteur de contenu de parcourir le contenu en cliquant sur des liens, etc.
+
+![Mode Aperçu](assets/preview-mode.png)
+
+>[!TIP]
+>
+>Utiliser la touche chaude `P` pour basculer vers et depuis le mode aperçu.
+
 #### Ouvrir l’aperçu de l’application {#open-app-preview}
 
 Sélectionnez l’icône d’aperçu de l’application ouverte pour ouvrir la page que vous êtes en train de modifier dans son propre onglet de navigateur, sans l’éditeur pour prévisualiser votre contenu.
@@ -174,47 +183,13 @@ Sélectionnez le bouton Publier pour que vous puissiez publier les modifications
 >
 >Voir le document [Publication de contenu avec l’éditeur universel](publishing.md) pour plus d’informations sur la publication avec Universal Editor.
 
-### Rail de mode {#rail}
-
-Le rail de mode se trouve juste sous le bouton d’accueil et est toujours présent le long du côté gauche de l’éditeur. Il permet de basculer facilement l’éditeur entre différents modes d’utilisation.
-
-![Le rail de mode](assets/mode-rail.png)
-
-#### Mode Aperçu {#preview-mode}
-
-En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtrait sur votre service publié. Cela permet à l’auteur de contenu de parcourir le contenu en cliquant sur des liens, etc.
-
-![Mode Aperçu](assets/preview-mode.png)
-
->[!TIP]
->
->Utilisez la touche de raccourci `P` pour passer en mode Aperçu.
-
-#### Mode Composants {#component-mode}
-
-En mode Composants, l’auteur du contenu peut sélectionner les composants à modifier, notamment :
-
-* [Modification de texte brut](#editing-content) en place.
-* [Modification de texte enrichi](#editing-rich-text) en place avec des options de mise en forme supplémentaires affichées dans le rail des propriétés.
-* [Modification du contenu multimédia](#editing-media)
-* [Modification de fragments de contenu](#edit-content-fragment)
-
-![Mode Composants](assets/component-mode.png)
-
-Lorsque vous sélectionnez un composant, les détails de son contenu s’affichent dans le [rail de propriétés.](#properties-rail) Selon le type de contenu, vous pouvez modifier le contenu statique ou dans le rail de propriétés.
-
->[!TIP]
->
->Utiliser la touche chaude `C` pour passer en mode composants.
-
 ### L’éditeur {#editor}
 
 L’éditeur occupe la majeure partie de la fenêtre et est l’endroit où la page indiquée dans [la barre d’emplacement ;](#location-bar) est rendue.
 
-* Si l’éditeur se trouve dans [mode Composants,](#component-mode) le contenu sera modifiable, mais vous ne pouvez pas suivre les liens.
-* Si l’éditeur se trouve dans [mode aperçu,](#preview-mode) le contenu sera navigable et vous pouvez suivre les liens, mais vous ne pouvez pas le modifier.
-
 ![Éditeur](assets/editor.png)
+
+Si l’éditeur se trouve dans [mode aperçu,](#preview-mode) le contenu sera navigable et vous pouvez suivre les liens, mais vous ne pouvez pas le modifier.
 
 ### Rail des propriétés {#properties-rail}
 
@@ -254,7 +229,7 @@ Lors de la sélection d’un élément dans l’arborescence de contenu, l’éd
 
 ##### Modifier {#edit}
 
-Dans [mode Composants,](#component-mode) les options de modification du composant sélectionné s’affichent dans le rail des propriétés. Dans le rail des propriétés, vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également sélectionner le bouton Modifier .
+Lors de la modification, les options du composant sélectionné s’affichent dans le rail des propriétés, où vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également sélectionner le bouton Modifier .
 
 ![Icône Modifier](assets/edit.png)
 
@@ -284,7 +259,7 @@ Appuyez ou cliquez sur le bouton d’ajout pour ouvrir un menu déroulant des co
 
 Si vous sélectionnez un composant dans un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option de suppression s’affiche sur le rail des propriétés.
 
-![Icône Supprimer](assets/ue-delete-component-icon.png)
+![Icône de suppression](assets/ue-delete-component-icon.png)
 
 Appuyez ou cliquez sur le bouton de suppression [supprime le composant.](#deleting-components)
 
@@ -294,19 +269,19 @@ Appuyez ou cliquez sur le bouton de suppression [supprime le composant.](#deleti
 
 ## Modification du contenu {#editing-content}
 
-La modification du contenu est simple et intuitive. Dans [mode Composants](#component-mode), lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable est mis en surbrillance avec une zone bleue.
+La modification du contenu est simple et intuitive. Lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable est mis en surbrillance avec une zone bleue.
 
 ![Le contenu modifiable est mis en surbrillance dans une case bleue.](assets/editable-content.png)
 
 >[!TIP]
 >
->En mode Composants, appuyez ou cliquez sur le contenu pour le sélectionner en vue de le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez à [mode aperçu.](#preview-mode)
+>Par défaut, appuyer ou cliquer sur le contenu le sélectionne pour le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez à [mode aperçu.](#preview-mode)
 
 Selon le contenu que vous sélectionnez, vous pouvez avoir différentes options de modification statique et des informations et options supplémentaires pour le contenu dans la variable [rail de propriétés.](#properties-rail)
 
 ### Modification de texte brut {#edit-plain-text}
 
-Si vous êtes dans [mode Composants](#component-mode) et sélectionnez un composant de texte brut, vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fois sur le composant.
+Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fois sur le composant.
 
 ![Modification du contenu](assets/editing-content.png)
 
@@ -320,7 +295,7 @@ En outre, des détails sur votre texte sont disponibles dans le rail de proprié
 
 ### Modification de texte enrichi {#edit-rich-text}
 
-Si vous êtes dans [mode Composants](#component-mode) et sélectionnez un composant de texte enrichi, vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fois sur le composant.
+Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fois sur le composant.
 
 Appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour enregistrer vos modifications.
 
@@ -330,25 +305,20 @@ En outre, les options de mise en forme et les détails de votre texte sont dispo
 
 ### Modification du média {#edit-media}
 
-Si vous êtes dans [mode Composants](#component-mode) et si vous sélectionnez une image, vous pouvez afficher ses détails dans le rail de propriétés.
+Vous pouvez afficher ses détails dans le rail des propriétés.
 
 ![Modification du média](assets/ue-edit-media.png)
 
-Sélectionnez la variable **Remplacer** en dessous de l’aperçu de l’image sélectionnée dans le rail de propriétés pour remplacer l’image par une autre de votre bibliothèque de ressources.
-
+1. Appuyez ou cliquez sur l’aperçu de l’image sélectionnée dans le rail des propriétés.
 1. La variable [sélecteur de ressources](/help/assets/asset-selector.md#using-asset-selector) s’ouvre pour vous permettre de sélectionner une ressource.
 1. Sélectionnez cette option pour sélectionner une nouvelle ressource.
 1. Sélectionner **Sélectionner** pour revenir au rail des propriétés où la ressource a été remplacée.
 
 Les modifications sont automatiquement enregistrées dans votre contenu.
 
->[!TIP]
->
->Utiliser la touche chaude `R` pour ouvrir le sélecteur de ressources afin de remplacer l’image sélectionnée.
-
 ### Modification de fragments de contenu {#edit-content-fragment}
 
-Si vous êtes dans [mode Composants](#component-mode) et vous sélectionnez une [Fragment de contenu,](/help/sites-cloud/administering/content-fragments/overview.md) vous pouvez modifier ses détails dans le rail des propriétés.
+Si vous sélectionnez une [Fragment de contenu,](/help/sites-cloud/administering/content-fragments/overview.md) vous pouvez modifier ses détails dans le rail des propriétés.
 
 ![Modification d’un fragment de contenu](assets/ue-edit-cf.png)
 
@@ -407,7 +377,7 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 
 Une fois le contenu modifié, vous aimez généralement le parcourir pour voir à quoi il ressemble dans le contenu d’autres pages. En [mode Aperçu](#preview-mode), vous pouvez cliquer sur les liens pour parcourir votre contenu comme le ferait un lecteur ou une lectrice. Le contenu est rendu dans l’éditeur tel qu’il serait publié.
 
-En mode d’aperçu, appuyer ou cliquer sur le contenu réagit comme il le ferait à un lecteur du contenu. Si vous souhaitez sélectionner le contenu à modifier, passez à [mode Composants .](#component-mode)
+En mode d’aperçu, appuyer ou cliquer sur le contenu réagit comme il le ferait à un lecteur du contenu. Si vous souhaitez sélectionner le contenu à modifier, désactivez l’option [mode aperçu.](#preview-mode)
 
 ## Ressources supplémentaires {#additional-resources}
 
