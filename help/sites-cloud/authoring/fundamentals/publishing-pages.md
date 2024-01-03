@@ -2,9 +2,9 @@
 title: Publication de pages
 description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
+source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1927'
 ht-degree: 85%
 
 ---
@@ -52,7 +52,7 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 
 >[!NOTE]
 >
->Si vous souhaitez conserver l’ordre des pages, utilisez [Gérer la publication](#manage-publication) pour publier la page parente avec toutes les pages enfants dans une seule action.
+>Si vous souhaitez conserver l’ordre des pages, vous devez utiliser [Gérer la publication](#manage-publication) pour publier la page parente avec toutes les pages enfants dans une seule action.
 >
 >La commande de page n’est pas garantie :
 >* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
@@ -128,7 +128,7 @@ La méthode **Gérer la publication** propose plus d’options que **Publication
 
 >[!NOTE]
 >
->Si vous souhaitez conserver l’ordre des pages, utilisez **Gérer la publication** pour publier la page parente avec toutes les pages enfants d’une seule action.
+>Si vous souhaitez conserver l’ordre des pages, vous devez utiliser **Gérer la publication** pour publier la page parente avec toutes les pages enfants d’une seule action.
 >
 >La commande de page n’est pas garantie :
 >* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
