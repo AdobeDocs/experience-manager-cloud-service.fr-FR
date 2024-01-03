@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
+source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 89%
+source-wordcount: '1925'
+ht-degree: 85%
 
 ---
 
@@ -52,9 +52,11 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 
 >[!NOTE]
 >
->Si vous souhaitez préserver l’ordre des pages, vous devez publier la page parente lors de la publication d’une page enfant.
+>Si vous souhaitez conserver l’ordre des pages, utilisez [Gérer la publication](#manage-publication) pour publier la page parente avec toutes les pages enfants dans une seule action.
 >
->L’ordre des pages n’est pas garanti si seules les pages enfants sont sélectionnées pour publication (car les informations de commande sont conservées sur la page parente).
+>La commande de page n’est pas garantie :
+>* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
+>* si les pages parents et enfants sont publiées dans des actions distinctes ;
 
 >[!NOTE]
 >
@@ -123,6 +125,14 @@ Pour publier une page avec publication rapide :
 #### Gérer la publication {#manage-publication}
 
 La méthode **Gérer la publication** propose plus d’options que **Publication rapide**, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
+
+>[!NOTE]
+>
+>Si vous souhaitez conserver l’ordre des pages, utilisez **Gérer la publication** pour publier la page parente avec toutes les pages enfants d’une seule action.
+>
+>La commande de page n’est pas garantie :
+>* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
+>* si les pages parents et enfants sont publiées dans des actions distinctes ;
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
