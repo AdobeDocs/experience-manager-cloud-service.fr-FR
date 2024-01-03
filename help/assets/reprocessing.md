@@ -2,10 +2,10 @@
 title: Retraitement des ressources numériques
 description: Découvrez les différentes méthodes de retraitement des ressources numériques
 contentOwner: KK
-source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 49%
+source-wordcount: '685'
+ht-degree: 43%
 
 ---
 
@@ -20,7 +20,7 @@ Retraitez les fichiers d’un dossier si vous rencontrez l’une des deux situat
 
 ## Retraiter les ressources {#reprocessing-steps}
 
-Pour retraiter des ressources dans un dossier :
+Pour retraiter des ressources dans un dossier :
 
 1. Dans [!DNL Experience Manager], sur la page Ressources, sélectionnez les ressources nouvellement ajoutées ou les ressources que vous souhaitez retraiter.
 Si vous sélectionnez un dossier :
@@ -33,21 +33,21 @@ Si vous sélectionnez un dossier :
 
    ![Options de retraitement des ressources](assets/reprocessing-assets-options.png)
 
-* **[!UICONTROL Processus complet]:** Sélectionnez cette option lorsque vous souhaitez exécuter le processus global, notamment le profil par défaut, le profil personnalisé, le traitement dynamique (s’il est configuré) et les workflows de post-traitement.
-* **[!UICONTROL Avancé]:** Sélectionnez cette option pour choisir un retraitement avancé.
+   * **[!UICONTROL Processus complet]:** Sélectionnez cette option lorsque vous souhaitez exécuter le processus global, notamment le profil par défaut, le profil personnalisé, le traitement dynamique (s’il est configuré) et les workflows de post-traitement.
+   * **[!UICONTROL Avancé]:** Sélectionnez cette option pour choisir un retraitement avancé.
 
-  ![Options de retraitement des ressources avancées](assets/reprocessing-assets-options-advanced.png)
+     ![Options de retraitement des ressources avancées](assets/reprocessing-assets-options-advanced.png)
 
-Sélectionnez l’une des options avancées suivantes :
+     Sélectionnez l’une des options avancées suivantes :
 
-* **[!UICONTROL Prévisualisation des rendus par défaut]:** Choisissez cette option lorsque vous souhaitez retraiter les rendus prévisualisés par défaut.
+      * **[!UICONTROL Prévisualisation des rendus par défaut]:** Choisissez cette option lorsque vous souhaitez retraiter les rendus prévisualisés par défaut.
 
-* **[!UICONTROL Métadonnées]:** Choisissez cette option lorsque vous souhaitez extraire des informations de métadonnées et des balises intelligentes pour les ressources sélectionnées.
+      * **[!UICONTROL Métadonnées]:** Choisissez cette option lorsque vous souhaitez extraire des informations de métadonnées et des balises intelligentes pour les ressources sélectionnées.
 
-* **[!UICONTROL Profils de traitement]:** Choisissez cette option lorsque vous souhaitez retraiter un profil sélectionné. Vous pouvez choisir **[!UICONTROL Processus complet]** pour inclure le traitement par défaut et le profil personnalisé affecté au niveau du dossier.
-  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL Profils de traitement]:** Choisissez cette option lorsque vous souhaitez retraiter un profil sélectionné. Vous pouvez choisir **[!UICONTROL Processus complet]** pour inclure le traitement par défaut et le profil personnalisé affecté au niveau du dossier.
+        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL Processus de post-traitement]:** Sélectionnez cette option si un traitement supplémentaire des ressources est nécessaire et ne peut pas être réalisé à l’aide des profils de traitement. D’autres workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
+      * **[!UICONTROL Processus de post-traitement]:** Sélectionnez cette option si un traitement supplémentaire des ressources est nécessaire et ne peut pas être réalisé à l’aide des profils de traitement. D’autres workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
 Voir [utilisation des microservices de ressources et des profils de traitement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr) pour en savoir plus sur les profils de traitement et le workflow de post-traitement.
 
@@ -71,7 +71,7 @@ En savoir plus sur [Retraiter les balises de couleur pour les images existantes 
 
 ### Recadrage intelligent {#reprocessing-smart-crop}
 
-En savoir plus sur [Recadrage intelligent Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=fr) qui permet d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et le recadrage de pixels) et la configuration de l’accentuation aux ressources chargées.
+En savoir plus sur [Recadrage intelligent Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) qui permet d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et le recadrage de pixels) et la configuration de l’accentuation aux ressources chargées.
 
 ### Métadonnées {#reprocessing-metadata}
 
@@ -81,7 +81,7 @@ En savoir plus sur [Retraitement des profils de métadonnées](https://experienc
 
 ### Retraitement de ressources Dynamic Media dans un dossier {#reprocessing-dynamic-media}
 
-Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez ensuite modifié. Pour plus d’informations, voir [retraiter les ressources Dynamic Media dans un dossier.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez modifié. Pour plus d’informations, voir [retraiter les ressources Dynamic Media dans un dossier.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
 
 >[!NOTE]
 >

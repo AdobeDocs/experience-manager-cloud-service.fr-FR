@@ -4,7 +4,7 @@ description: Découvrez les bonnes pratiques en matière de métadonnées pour g
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 8434cb580ba8afc018a5a4357a4d249a06c566c2
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
@@ -97,25 +97,25 @@ La stratégie de gouvernance peut inclure :
 
 Déterminez d’où proviennent les informations et examinez les détails de la stratégie de métadonnées, y compris les propriétés et leurs sources. Elle peut évoluer en fonction de la complexité de la stratégie. Dans les grandes entreprises, il y a un système de gestion des métadonnées maître qui supervise plusieurs systèmes dans la pile maître.
 
-<br>
-
 >[!NOTE]
 >
 >Découvrez comment [gestion des métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Respecter la stratégie de métadonnées
 
-Une stratégie de métadonnées cohérente garantit une organisation et une récupération efficaces des ressources numériques. Adoptez une approche stratégique pour capturer et mettre en oeuvre les valeurs de métadonnées, ce qui vous permet d’optimiser l’évolution sans changements inutiles. <br>
-Dans la gestion des métadonnées à l’échelle de l’entreprise, la cohérence est importante lors de l’attribution des noms et du référencement des ressources. Par exemple, lors de la gestion simultanée de plusieurs ressources, pensez à ajouter des métadonnées en bloc. <br>
+Une stratégie de métadonnées cohérente garantit une organisation et une récupération efficaces des ressources numériques. Adoptez une approche stratégique pour capturer et mettre en oeuvre les valeurs de métadonnées, ce qui vous permet d’optimiser l’évolution sans changements inutiles.
+
+Dans la gestion des métadonnées à l’échelle de l’entreprise, la cohérence est importante lors de l’attribution des noms et du référencement des ressources. Par exemple, lors de la gestion simultanée de plusieurs ressources, pensez à ajouter des métadonnées en bloc.
+
 Voici quelques-unes des bonnes pratiques à suivre :
 
-* **Évitez les doublons de valeurs :** Si vous disposez d’une collection d’images issues d’une campagne marketing, utilisez des noms cohérents et évitez les doublons.<br>
+* **Évitez les doublons de valeurs :** Si vous disposez d’une collection d’images issues d’une campagne marketing, utilisez des noms cohérents et évitez les doublons.
 Par exemple, au lieu d’utiliser des noms en double comme *campaign_image_001* et *campaign_image_002*, mettre en oeuvre une convention de dénomination systématique telle que *product_launch_001* et *product_launch_002*, en veillant à une identification claire et ordonnée.
 
-* **Utiliser efficacement des vocabulaires contrôlés :** Mettez en oeuvre des vocabulaires contrôlés en utilisant des termes normalisés pour les balises. <br>
+* **Utiliser efficacement des vocabulaires contrôlés :** Mettez en oeuvre des vocabulaires contrôlés en utilisant des termes normalisés pour les balises.
 Par exemple, utilisez systématiquement des termes tels que *product_launch* ou *event_promotion* lors du balisage des images avec des thèmes pour maintenir une séquence systématique.
 
-* **Conserver la précision et l’exhaustivité :** Il est essentiel de préserver la cohérence, la précision, l’exhaustivité et l’alignement des métadonnées entre les différentes sources.<br>
+* **Conserver la précision et l’exhaustivité :** Il est essentiel de préserver la cohérence, la précision, l’exhaustivité et l’alignement des métadonnées entre les différentes sources.
 Par exemple, lors de l’ajout de métadonnées à un document de PDF, vérifiez que les détails tels que les noms d’auteur et les mots-clés sont exacts et complets.
 
 #### Vidéo : Ajout de métadonnées en bloc à des ressources
@@ -124,7 +124,8 @@ Par exemple, lors de l’ajout de métadonnées à un document de PDF, vérifiez
 
 ### Évaluation et amélioration de la recherche de métadonnées
 
-Évaluez votre stratégie de métadonnées pour améliorer la recherche de métadonnées. Simplifiez les workflows et améliorez les fonctionnalités de recherche pour une réutilisation efficace. Évitez de gérer des métadonnées qui n’ont pas un objectif clair.<br>
+Évaluez votre stratégie de métadonnées pour améliorer la recherche de métadonnées. Simplifiez les workflows et améliorez les fonctionnalités de recherche pour une réutilisation efficace. Évitez de gérer des métadonnées qui n’ont pas un objectif clair.
+
 Vous pouvez tenir compte des bonnes pratiques suivantes pour optimiser la recherche de métadonnées :
 
 * **Optimisation des mots-clés :** Améliorez la recherche des métadonnées en optimisant les mots-clés associés aux ressources. Vous pouvez améliorer la pertinence des mots-clés pour des ressources spécifiques dans le Gestionnaire de ressources en procédant comme suit :
@@ -132,9 +133,9 @@ Vous pouvez tenir compte des bonnes pratiques suivantes pour optimiser la recher
    1. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichier]** > **[!UICONTROL [Dossier de ressources]]**.
    1. Sélectionnez la ressource pour laquelle mettre à jour les métadonnées, puis cliquez sur **[!UICONTROL Propriétés]**.
    1. Accédez au **[!UICONTROL Avancé]** puis cliquez sur **[!UICONTROL Ajouter]** sous le **[!UICONTROL Élever pour les mots-clés de recherche]**.
-   1. Saisissez le mot-clé pour lequel vous souhaitez améliorer la recherche, puis cliquez sur **[!UICONTROL Ajouter]**.<br>
+   1. Saisissez le mot-clé pour lequel vous souhaitez améliorer la recherche, puis cliquez sur **[!UICONTROL Ajouter]**.
 Vous pouvez ajouter plusieurs mots-clés et les classer selon votre priorité.
-   1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.<br>
+   1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 Recherchez la ressource à l’aide des mots-clés que vous avez ajoutés. La ressource apparaît parmi les principaux résultats de recherche.
 
   Découvrez comment [amélioration de la recherche dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
@@ -151,7 +152,7 @@ Recherchez la ressource à l’aide des mots-clés que vous avez ajoutés. La re
 
 ### Simplification et compréhension des métadonnées
 
-Simplifiez les métadonnées pour une meilleure gouvernance et une meilleure adoption par les utilisateurs. Soyez clair et facile à comprendre, en encourageant les utilisateurs à ajouter des informations essentielles. <br>
+Simplifiez les métadonnées pour une meilleure gouvernance et une meilleure adoption par les utilisateurs. Soyez clair et facile à comprendre, en encourageant les utilisateurs à ajouter des informations essentielles.
 Pour simplifier les métadonnées, appliquez les bonnes pratiques suivantes :
 
 * **Optimiser les options de propriété :** Concentrez-vous sur la mise en surbrillance des propriétés essentielles sans charger les utilisateurs avec trop de champs de métadonnées à remplir. Par exemple, lors de l’ajout de métadonnées pour une image, incluez uniquement des champs clés tels que le titre, la description et les balises pour une catégorisation efficace.
