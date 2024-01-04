@@ -1,15 +1,15 @@
 ---
 title: Fragments de contenu - Configuration
-description: Découvrez comment activer la fonctionnalité Fragment de contenu et GraphQL pour utiliser AEM fonctionnalités de diffusion sans interface utilisateur.
+description: Découvrez comment activer les fonctionnalités de fragment de contenu et de GraphQL à utiliser avec AEM fonctionnalités de diffusion sans interface utilisateur et de création de pages.
 feature: Content Fragments
 role: Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
+exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 27%
+source-wordcount: '392'
+ht-degree: 39%
 
 ---
-
 
 # Fragments de contenu - Configuration {#content-fragments-setup}
 
@@ -23,7 +23,7 @@ Pour activer votre instance pour la fonctionnalité de fragment de contenu, vous
   >
   >Si vous n’activez pas les **modèles de fragment de contenu** :
   >
-  >* la valeur **Créer** ne sera pas disponible pour la création de modèles.
+  >* L’option **Créer** ne sera pas disponible pour la création de modèles.
   >* Vous ne pourrez pas [sélectionner la configuration Sites pour créer le point d’entrée](/help/headless/graphql-api/graphql-endpoint.md) associé.
 
 * **Requêtes persistantes GraphQL** – facultatif
@@ -43,11 +43,11 @@ Pour utiliser la fonctionnalité Fragment de contenu des modèles de fragment de
 
 >[!NOTE]
 >
->[Sous-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (une configuration imbriquée dans une autre configuration) sont entièrement prises en charge pour une utilisation avec des fragments de contenu, des modèles de fragment de contenu et des requêtes GraphQL.
+>Les [sous-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (une configuration imbriquée dans une autre) sont entièrement prises en charge pour une utilisation avec les fragments de contenu, les modèles de fragment de contenu et les requêtes GraphQL.
 >
 >Il faut juste noter que :
 >
->* Après la création de modèles dans une sous-configuration, il n’est PAS possible de déplacer ou de copier le modèle dans une autre sous-configuration.
+>* Après la création de modèles dans une sous-configuration, il N’est PAS possible de déplacer ou de copier le modèle vers une autre sous-configuration.
 >
 >* Un point d’entrée GraphQL est (toujours) basé sur une configuration parent (racine).
 >

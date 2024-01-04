@@ -1,15 +1,15 @@
 ---
 title: Raccourcis clavier de la console Fragments de contenu
-description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la gestion des fragments de contenu.
+description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment une sélection pour la gestion des fragments de contenu.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
+exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 94%
+source-wordcount: '223'
+ht-degree: 88%
 
 ---
-
 
 # Raccourcis clavier de la console Fragments de contenu {#keyboard-shortcuts-content-fragments-console}
 

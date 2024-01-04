@@ -1,15 +1,15 @@
 ---
 title: Analyse des fragments de contenu
-description: Découvrez la structure et la diffusion de contenu de vos fragments de contenu. Cela permet d’assurer la diffusion sans interface utilisateur et la création de pages.
+description: Découvrez la structure de vos fragments de contenu utilisés pour la diffusion de contenu. Vous obtenez ainsi des informations pertinentes pour la diffusion sans en-tête et la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '132'
 ht-degree: 2%
 
 ---
-
 
 # Analyse de la structure de fragments de contenu {#analyzing-content-fragments-structure}
 
@@ -19,7 +19,7 @@ Experience Manager (AEM) propose plusieurs méthodes pour visualiser et analyser
 
 ## Références {#references}
 
-La structure est construite à l’aide de Références :
+La structure à plusieurs niveaux est construite à l’aide de Références :
 
 * [Les types de données pour les références sont définis dans le modèle de fragment de contenu.](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
 * Lors de la création, vous pouvez :

@@ -1,13 +1,13 @@
 ---
 title: Modèles de fragment de contenu
-description: Découvrez comment les modèles de fragment de contenu servent de base pour vos fragments de contenu dans AEM. Ces fragments permettent de créer du contenu structuré à utiliser dans une diffusion sans interface utilisateur ou dans la création de pages.
+description: Découvrez comment les modèles de fragment de contenu constituent la base de vos fragments de contenu dans AEM, ce qui vous permet de créer du contenu structuré à utiliser dans une diffusion sans interface ou dans la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 59%
+source-wordcount: '3125'
+ht-degree: 60%
 
 ---
 
@@ -32,9 +32,9 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
    >
    >Si la variable [l’utilisation des modèles de fragment de contenu n’a pas été activée.](/help/sites-cloud/administering/content-fragments/setup.md), la variable **Créer** ne sera pas disponible.
 
-1. Spécifiez le **Titre du modèle**.
+1. Spécifiez la variable **Titre du modèle**.
 Vous pouvez également définir différentes propriétés ; par exemple, ajouter **Balises**, un **Description**, sélectionnez **Activer le modèle** to [activer le modèle ;](#enabling-disabling-a-content-fragment-model) si nécessaire et définissez
-   **Modèle d’URL de prévisualisation par défaut**.
+   **Modèle d’URL d’aperçu par défaut**.
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ Vous pouvez également définir différentes propriétés ; par exemple, ajouter
 
    ![Titre et description](assets/cf-cfmodels-create.png)
 
-1. Utilisez **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ; ou **Terminé** pour revenir à la console.
+1. Utilisez **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ou **Terminé** pour revenir à la console.
 
 ### Modèle de fragment de contenu – Propriétés {#content-fragment-model-properties}
 
@@ -112,10 +112,10 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
      ![Faire glisser le type de données pour créer un champ](assets/cf-cfmodels-create-field.png)
 
-   * Une fois qu’un champ a été ajouté au modèle, le panneau de droite affiche la variable **Propriétés** qui peuvent être définis pour ce type de données spécifique. Vous pouvez définir ce qui est obligatoire pour ce champ.
+   * Une fois qu’un champ a été ajouté au modèle, le panneau de droite affiche les **propriétés** qui peuvent être définies pour ce type de données spécifique. Vous pouvez définir ce qui est obligatoire pour ce champ.
 
       * De nombreuses propriétés s’expliquent d’elles-mêmes. Pour plus d’informations, voir [Propriétés](#properties).
-      * Saisissez un **Libellé du champ** effectue automatiquement l’événement **Nom de la propriété**  - s’il est vide et qu’il peut être mis à jour manuellement par la suite.
+      * Si vous entrez un **libellé de champ**, le **nom de propriété** est automatiquement renseigné. S’il est vide, il peut être mis à jour manuellement par la suite.
 
         >[!CAUTION]
         >
@@ -131,7 +131,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
    Sélectionnez le champ requis, puis l’icône représentant une corbeille. Le système vous invite à confirmer l’action.
 
-   ![Supprimez](assets/cf-cfmodels-remove-icon.png)
+   ![Supprimer](assets/cf-cfmodels-remove-icon.png)
 
 1. Ajoutez tous les champs obligatoires et définissez les propriétés connexes, le cas échéant. Par exemple :
 
@@ -146,7 +146,7 @@ Une sélection de types de données est disponible pour la définition de votre 
 * **Une seule ligne de texte**
    * Ajoutez un ou plusieurs champs d’une seule ligne de texte ; il est possible de définir la longueur maximale.
 * **Plusieurs lignes de texte**
-   * Zone de texte pouvant être de type texte enrichi, texte brut ou Markdown
+   * Zone de texte pouvant contenir du texte enrichi, du texte brut ou du texte Markdown.
 
   >[!NOTE]
   >
@@ -198,9 +198,9 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
   >
   >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
-* **Afficher comme**
+* **Render As**
 
-  Les différentes options permettant de réaliser/restituer le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances. When **Champ multiple** est utilisé. Vous pouvez définir le nombre minimal et maximal d’éléments. Voir [Validation](#validation) pour plus de détails.
+  Les différentes options permettant de réaliser/restituer le champ dans un fragment. Cela vous permet souvent de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances. When **Champ multiple** est utilisé. Vous pouvez définir le nombre minimal et maximal d’éléments. Voir [Validation](#validation) pour plus de détails.
 
 * **Libellé du champ**
 Saisie d’un **Libellé du champ** autogénère une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
@@ -262,8 +262,8 @@ Différents types de données incluent désormais la possibilité de définir le
 
   Champs définis comme une **Champ multiple** (définie avec **Render As**) comportent les options suivantes :
 
-   * **Nombre minimum d’éléments**
-   * **Nombre maximum d’éléments**
+   * **Nombre min. d’éléments**
+   * **Nombre max. d’éléments**
 
   Ils sont validés dans la variable [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md).
 
@@ -363,7 +363,7 @@ Indique un chemin racine pour tout fragment référencé.
 
 * **Autoriser la création de fragments**
 
-  Cela permet à l’auteur du fragment de créer un fragment en fonction du modèle approprié.
+  Cette propriété permet à la personne chargée de la création du fragment de créer un fragment en fonction du modèle approprié.
 
    * **fragmentreferencecomposite** : permet à l’auteur du fragment de créer un composite en sélectionnant plusieurs fragments.
 
@@ -373,7 +373,7 @@ Indique un chemin racine pour tout fragment référencé.
 >
 >Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actuel dans la référence du fragment et peut entraîner une boîte de dialogue de sélecteur de référence du fragment vide.
 >
->Il existe également une protection de périodicité pour les références de fragments dans GraphQL. Si vous créez une requête profonde sur deux fragments de contenu qui se font référence, elle renvoie null.
+>Il existe également une protection de périodicité pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
 
@@ -409,7 +409,7 @@ Un modèle peut également être désactivé afin que :
    * Tout fragment de contenu basé sur le modèle peut toujours être interrogé et renvoyé à partir du point d’entrée GraphQL.
 * Le modèle ne peut plus être référencé, mais les références existantes sont conservées intactes et peuvent toujours être interrogées et renvoyées à partir du point d’entrée GraphQL.
 
-Pour désactiver un modèle marqué comme **Activé**, vous utilisez le **Désactiver** à partir de l’une des options suivantes :
+Pour désactiver un modèle marqué comme **Activé**, utilisez l’option **Désactiver** de l’une des deux manières suivantes :
 
 * La barre d’outils supérieure, lorsque le modèle concerné est sélectionné.
 * L’action rapide correspondante (placez le pointeur de la souris sur le modèle concerné).
@@ -495,7 +495,7 @@ Pour annuler la publication d’un modèle de fragment de contenu :
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option **Dépublier** dans la barre d’outils.
-L’état publié est indiqué dans la console.
+Le statut publié est indiqué dans la console.
 
 Si vous essayez d’annuler la publication d’un modèle actuellement utilisé par un ou plusieurs fragments, un avertissement d’erreur s’affiche. Par exemple :
 

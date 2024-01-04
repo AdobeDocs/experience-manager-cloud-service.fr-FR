@@ -1,13 +1,13 @@
 ---
 title: Gérer des fragments de contenu
-description: Découvrez comment gérer vos fragments de contenu AEM à partir de la console et de l’éditeur, comme base de votre contenu sans interface utilisateur, ou pour la création de pages.
+description: Découvrez comment gérer vos fragments de contenu AEM à partir de la console et de l’éditeur, pour créer du contenu comme base de votre contenu sans interface utilisateur ou pour la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '2617'
-ht-degree: 44%
+source-wordcount: '2620'
+ht-degree: 43%
 
 ---
 

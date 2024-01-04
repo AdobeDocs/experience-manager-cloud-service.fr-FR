@@ -1,15 +1,15 @@
 ---
 title: Présentation de l’utilisation des fragments de contenu
-description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour une diffusion sans en-tête et la création de pages.
+description: Découvrez comment les fragments de contenu dans AEM as a Cloud Service vous permettent de créer et d’utiliser du contenu, idéal pour la diffusion sans interface utilisateur et la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 40%
+source-wordcount: '1792'
+ht-degree: 41%
 
 ---
-
 
 # Présentation de l’utilisation des fragments de contenu {#overview-working-with-content-fragments}
 
@@ -85,7 +85,7 @@ Ces fragments de contenu peuvent ensuite être assemblés afin de fournir des ex
 Cette page et les suivantes portent sur les tâches de création, de configuration, de maintenance et d’utilisation de vos fragments de contenu :
 
 * [Activation de la fonctionnalité de fragments de contenu pour votre instance](/help/sites-cloud/administering/content-fragments/setup.md)
-* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - activation, création et définition de vos modèles
+* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) : activation, création et définition de vos modèles.
 * [Création de fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (à l’aide de la console de fragments de contenu)
 
 Une fois les fragments créés, vous pouvez :
@@ -260,7 +260,7 @@ Pour utiliser vos fragments de contenu pour la création de pages, vous avez ég
    * Obligatoire pour [référencer le fragment sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
    * Responsable de la mise en page et de la diffusion d’un fragment ; canaux, par exemple.
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
-   * Le fait de faire glisser un fragment sur une page dans la création associe automatiquement le composant requis.
+   * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
    * Voir [Composant principal de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr).
 
 ## Exemple d’utilisation {#example-usage}
