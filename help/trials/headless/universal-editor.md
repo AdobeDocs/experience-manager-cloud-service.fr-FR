@@ -7,7 +7,7 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Modifier en contexte avec l’éditeur universel"
->abstract="Découvrez comment vos applications sans interface utilisateur graphique peuvent utiliser l’éditeur universel pour apporter de la faible friction, dans l’édition contextuelle, au bout des doigts de vos auteurs."
+>abstract="Découvrez comment vos applications découplées peuvent utiliser l’éditeur universel pour permettre une modification fluide et en contexte à la portée de vos auteurs et autrices."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="Lancer l’éditeur universel"
->abstract="Dans ce guide, vous découvrez l’éditeur universel et comment il permet à quiconque de modifier tous les aspects de votre contenu dans n’importe quelle mise en oeuvre, ce qui entraîne une vitesse de contenu améliorée.<br><br>Lancez ce module dans un nouvel onglet en cliquant ci-dessous, puis suivez ce guide."
+>abstract="Dans ce guide, vous allez découvrir l’éditeur universel et la manière dont il permet à quiconque de modifier tous les aspects de votre contenu dans n’importe quelle implémentation, permettant ainsi une vitesse de diffusion améliorée.<br><br>Lancez ce module dans un nouvel onglet en cliquant ci-dessous, puis suivez ce guide."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
