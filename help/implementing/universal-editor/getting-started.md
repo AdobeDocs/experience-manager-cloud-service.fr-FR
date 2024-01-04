@@ -2,9 +2,9 @@
 title: Prise en main de l’éditeur universel dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '900'
 ht-degree: 76%
 
 ---
@@ -17,6 +17,8 @@ Découvrez comment accéder à l’éditeur universel et comment commencer à in
 >[!TIP]
 >
 >Si vous préférez plonger directement dans un exemple, vous pouvez consulter la section [Exemple d’application de l’éditeur universel sur GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+
+{{universal-editor-status}}
 
 ## Étapes d’intégration {#onboarding}
 

@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 25%
+source-wordcount: '2165'
+ht-degree: 26%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 25%
 # Création de contenu avec l’éditeur universel {#authoring}
 
 Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
+
+{{universal-editor-status}}
 
 ## Présentation {#introduction}
 
@@ -23,10 +25,6 @@ Pour ce faire, l’éditeur universel offre aux auteurs de contenu une interface
 >[!TIP]
 >
 >Pour une présentation plus détaillée de l’éditeur universel, consultez le document [Présentation de l’éditeur universel.](introduction.md)
-
->[!NOTE]
->
->L’éditeur universel est encore en cours de développement. Actuellement, il ne peut pas modifier tous les types de contenu.
 
 ## Préparer l’application {#prepare-app}
 
