@@ -2,10 +2,10 @@
 title: Conditions préalables pour l’outil de transfert de contenu
 description: Familiarisez-vous avec les conditions préalables requises pour l’outil de transfert de contenu
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 5964801192fc4a50b7f04852e3128f8218ca4cc5
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 98%
+source-wordcount: '500'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 >title="Points importants concernant l’utilisation de l’outil de transfert de contenu"
 >abstract="Examinez les points à prendre en compte lors de l’utilisation de l’outil de transfert de contenu, notamment les versions Java™ et AEM, les types de magasins de données pris en charge, les considérations relatives aux groupes d’utilisateurs, etc."
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=fr" text="Points importants concernant l’utilisation de l’outil de transfert de contenu"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr#best-practices" text="Bonnes pratiques et consignes"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="Bonnes pratiques et consignes"
 
 Le tableau suivant résume les conditions préalables requises pour l’utilisation de l’outil de transfert de contenu.
 
@@ -25,7 +25,7 @@ Consultez toutes les considérations ci-dessous :
 | Considérations | Éléments actuellement pris en charge |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Version d’AEM | L’outil de transfert de contenu ne peut être exécuté que sur AEM version 6.3 ou ultérieure. |
-| Taille de l’entrepôt de segments | Un référentiel existant qui contient moins de 750 millions de nœuds JCR et jusqu’à 500 Go (taille compactée en ligne) sur l’instance de *Création* et 50 Go sur l’instance de *Publication* est actuellement pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille de la banque de segments au-dessus de ces limites. |
+| Taille de l’entrepôt de segments | Référentiel existant contenant moins de 750 millions de noeuds JCR et jusqu’à 500 Go (taille de compactage en ligne) sur *Auteur* et 50 Go sur *Publier* sont actuellement pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille de la banque de segments au-dessus de ces limites. |
 | Taille totale du référentiel de contenu <br>*(magasin de segments + magasin de données)* | L’outil de transfert de contenu est conçu pour transférer jusqu’à 20 téraoctets de contenu pour le type de magasin de données Magasin de données de fichiers. Tout ce qui dépasse 20 téraoctets n’est actuellement pas pris en charge. Créez un ticket de support auprès de l’assistance clientèle d’Adobe pour discuter des options relatives au contenu de plus de 20 téraoctets. <br>Pour accélérer considérablement le processus de transfert de contenu pour les référentiels volumineux, une étape de [précopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr#setting-up-pre-copy-step) facultative peut être utilisée. Ce processus s’applique aux types de magasin de données Magasin de données de fichiers, Amazon S3 et magasin de données Azure. Pour Amazon S3 et le magasin de données Azure, les tailles de référentiel supérieures à 20 téraoctets sont prises en charge. |
 | Taille totale de l’index Lucene | La taille totale de l’index Lucene pris en charge, `/oak:index/lucene` et `/oak:index/damAssetLucene` non compris, est de 25 Go au maximum. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille d’index supérieure à cette limite. |
 | Longueur d’un nom du nœud | La longueur d’un nom de nœud doit être de 150 octets maximum lorsque le chemin d’accès parent du nœud est >= (supérieur ou égal à) 350 octets. Ces noms de nœud doivent être raccourcis pour être &lt;= 150 octets afin d’être pris en charge par le magasin de nœuds Document dans AEM as a Cloud Service. Les ingestions échouent si ces noms de nœud longs ne sont pas corrigés. |

@@ -2,7 +2,7 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour comprendre la préparation à la mise à niveau.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 92%
@@ -126,7 +126,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="Interprétation du rapport de l’analyseur des bonnes pratiques"
 >abstract="Il existe deux options pour afficher les sorties de rapport de l’analyseur des bonnes pratiques : IU et CSV. Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport de l’IU s’affiche sous la forme de résultats dans la fenêtre des outils. Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#analysis-report" text="Consultation du rapport d’analyse des bonnes pratiques"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Consultation du rapport d’analyse des bonnes pratiques"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=fr" text="Présentation des catégories de rapports de l’analyseur des bonnes pratiques"
 
 Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport s’affiche sous la forme de résultats dans la fenêtre des outils.
