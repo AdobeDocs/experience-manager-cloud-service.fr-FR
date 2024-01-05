@@ -1,29 +1,29 @@
 ---
-title: Types de champ pour l’éditeur universel
-description: Découvrez les différents types de champs pris en charge par Universal Editor et les outils que vous pouvez utiliser pour vos propres applications.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+title: Types de champs
+description: Découvrez les différents types de champs que l’éditeur universel peut modifier dans le rail de composants avec des exemples d’utilisation de votre propre application.
+source-git-commit: b1a188d01371665b4375087847625d89e47d8927
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 7%
+source-wordcount: '278'
+ht-degree: 8%
 
 ---
 
 
-# Types de champ pour l’éditeur universel {#field-types}
+# Types de champs {#field-types}
 
-Découvrez les différents types de champs pris en charge par Universal Editor et les outils que vous pouvez utiliser pour vos propres applications.
+Découvrez les différents types de champs que l’éditeur universel peut modifier dans le rail de composants avec des exemples d’utilisation de votre propre application.
 
 {{universal-editor-status}}
 
 ## Vue d’ensemble {#overview}
 
-Lorsque vous adaptez vos propres applications pour les utiliser avec l’éditeur universel, vous devez instrumenter les composants et définir les types de données qu’ils peuvent manipuler dans l’éditeur.
+Lorsque vous adaptez vos propres applications pour les utiliser avec l’éditeur universel, vous devez instrumenter les composants et définir les types de données qu’ils peuvent manipuler dans le rail des composants de l’éditeur.
 
-Ce document présente les types de champs disponibles dans l’éditeur.
+Ce document présente un aperçu des types de champ disponibles, ainsi que des exemples de configuration.
 
 >[!TIP]
 >
->Si vous ne savez pas comment utiliser votre application pour l’éditeur universel, consultez le document . [Présentation d’Universal Editor pour AEM Developers.](help/implementing/universal-editor/developer-overview.md)
+>Si vous ne savez pas comment utiliser votre application pour l’éditeur universel, consultez le document . [Présentation d’Universal Editor pour AEM Developers.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Booléen {#boolean}
 

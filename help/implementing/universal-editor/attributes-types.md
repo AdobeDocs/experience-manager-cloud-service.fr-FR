@@ -1,24 +1,24 @@
 ---
-title: Attributs et types
-description: Découvrez les attributs et les types de données requis par l’éditeur universel.
+title: Attributs et types d’éléments
+description: Découvrez les attributs de données et les types d’éléments requis par Universal Editor.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 78%
+source-wordcount: '686'
+ht-degree: 72%
 
 ---
 
 
 # Attributs et types {#attributes-types}
 
-Découvrez les attributs et les types de données requis par l’éditeur universel.
+Découvrez les attributs de données et les types d’éléments requis par Universal Editor.
 
 {{universal-editor-status}}
 
 ## Présentation {#introduction}
 
-Pour que l’éditeur universel puisse modifier une application, cette dernière doit être correctement instrumentée. L’application doit inclure des métadonnées appropriées afin que l’éditeur puisse en modifier le contenu. Ce document décrit les attributs et les types de ces métadonnées.
+Pour que l’éditeur universel puisse modifier une application, cette dernière doit être correctement instrumentée. L’application doit inclure des métadonnées appropriées afin que l’éditeur puisse en modifier le contenu. Ce document décrit les attributs et les types d’éléments de ces métadonnées.
 
 >[!NOTE]
 >
