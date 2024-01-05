@@ -1,17 +1,17 @@
 ---
 title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
-description: Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
+description: Découvrez comment utiliser la console Ressources pour gérer vos fragments de contenu AEM, comme base de votre contenu headless ou pour la création de pages.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1885'
 ht-degree: 87%
 
 ---
 
-# Gestion des fragments de contenu {#managing-content-fragments}
+# Gérer des fragments de contenu {#managing-content-fragments}
 
-Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
+Découvrez comment utiliser la console Ressources pour gérer vos fragments de contenu AEM, comme base de votre contenu headless ou pour la création de pages.
 
 Après avoir défini vos [modèles de fragment de contenu](#creating-a-content-model), vous pouvez les utiliser pour [créer vos fragments de contenu](#creating-a-content-fragment).
 
@@ -113,7 +113,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 * **Modifier**
 
-   * Permet : [ouvrir le fragment pour modifier le contenu ;](/help/assets/content-fragments/content-fragments-variations.md) ainsi que ses éléments, variations, contenu et métadonnées associés.
+   * Permet [d’ouvrir le fragment afin d’en modifier le contenu](/help/assets/content-fragments/content-fragments-variations.md) ainsi que ses variations, contenu, métadonnées et éléments associés.
 
 * **Publication rapide**
 * **Gérer la publication**
@@ -333,7 +333,7 @@ Ces dernières sont affichées dans des versions côte à côte dans lesquelles�
    * le texte inséré est en vert ;
    * le texte remplacé est en bleu.
 
-* L’icône plein écran vous permet d’ouvrir l’une des versions seule, puis de revenir à la vue parallèle.
+* L’icône Plein écran vous permet d’ouvrir l’une des versions seule puis de basculer à nouveau sur la vue parallèle.
 * Vous pouvez **rétablir** la version spécifique
 * **Terminé** vous ramène à la console.
 

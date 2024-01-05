@@ -1,17 +1,23 @@
 ---
 title: Contenu associé (Ressources - Fragments de contenu)
-description: Découvrez comment la fonctionnalité de contenu associé d’AEM assure la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment.
+description: Découvrez comment la fonction de contenu associée pour les fragments de contenu AEM fournit la connexion afin que les ressources puissent être éventuellement utilisées avec le fragment.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 92%
+source-wordcount: '281'
+ht-degree: 46%
 
 ---
 
 # Contenu associé{#associated-content}
 
-La fonctionnalité de contenu associé d’AEM assure la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse pour la diffusion de votre contenu découplé, [car vous disposez d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page.](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) Cela permet aussi de réduire le temps nécessaire pour rechercher la ressource appropriée.
+Pour les fragments de contenu d’Adobe Experience Manager (AEM) as a Cloud Service, la fonctionnalité de contenu associée (disponible dans l’éditeur d’origine) fournit la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment. Vous bénéficiez ainsi d’une flexibilité de [fournir une gamme de ressources à accéder lors de l’utilisation du fragment de contenu ;](/help/assets/content-fragments/content-fragments.md#using-associated-content), tout en contribuant à réduire le temps nécessaire à la recherche de la ressource appropriée. Cette fonctionnalité peut être utilisée à la fois pour la diffusion de contenu sans interface utilisateur graphique et pour la création de pages.
+
+>[!NOTE]
+>
+>Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
+>
+>Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console.
 
 ## Ajout de contenu associé {#adding-associated-content}
 
@@ -45,6 +51,6 @@ Pour créer l’association, vous devez d’abord [ajouter vos ressources multim
 Une fois que vous avez associé une collection, vous pouvez :
 
 * **Supprimer** l’association.
-* **Ajouter de ressources** à la collection.
+* **Ajouter des ressources** à la collection.
 * Sélectionner une ressource pour effectuer d’autres actions.
 * Modifier la ressource.

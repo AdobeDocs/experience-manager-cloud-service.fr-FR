@@ -1,16 +1,16 @@
 ---
-title: Prise en charge des fragments de contenu d’Adobe Experience Manager as a Cloud Service dans l’API Assets HTTP
+title: Prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion Adobe Experience Manager sans interface utilisateur.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 38cb2605e2133e858c60644084cf515a03b54f60
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 58%
+source-wordcount: '1749'
+ht-degree: 57%
 
 ---
 
-# Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+# Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 ## Vue d’ensemble {#overview}
 
@@ -84,7 +84,7 @@ La méthode HTTP détermine l’opération à exécuter :
 * **GET** : pour récupérer une représentation JSON d’une ressource ou d’un dossier
 * **POST** - pour créer des ressources ou des dossiers
 * **PUT** : pour mettre à jour les propriétés d’une ressource ou d’un dossier
-* **DELETE** : pour supprimer une ressource ou un dossier
+* **SUPPRIMER** - pour supprimer une ressource ou un dossier.
 
 >[!NOTE]
 >

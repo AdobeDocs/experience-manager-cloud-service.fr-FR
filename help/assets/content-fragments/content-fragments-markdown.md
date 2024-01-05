@@ -4,16 +4,16 @@ description: Découvrez comment l’éditeur de fragment de contenu utilise la s
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 66%
+source-wordcount: '586'
+ht-degree: 83%
 
 ---
 
-# Texte (Markdown) {#markdown}
+# Markdown {#markdown}
 
-Lors du processus de [création](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragments de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire aisément du contenu découplé :
+Quand vous êtes [création](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragment de contenu utilise *markdown* pour vous permettre d’écrire facilement du contenu pour une diffusion sans interface utilisateur ou la création de pages :
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Vous pouvez définir :
 
 ## Notation d’en-tête {#heading-notation}
 
-Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Une balise de hachage (#) est utilisée pour un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
+Pour créer un en-tête en plaçant un hashtag (#) devant le titre, Une balise de hachage (#) est utilisée pour un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à six hashtags. Par exemple :
 
     `## This is an H2`
 
@@ -57,7 +57,7 @@ Si vous le souhaitez, vous pouvez créer une balise H1 en soulignant le texte pa
 
 ## Paragraphes et sauts de ligne {#paragraphs-and-line-breaks}
 
-Un paragraphe est simplement une ou plusieurs lignes consécutives de texte, séparées par une ou plusieurs lignes vierges. Une ligne vierge est une ligne ne contenant rien d’autre que des espaces ou des onglets. Les paragraphes normaux ne doivent pas être mis en retrait avec des espaces ou des tabulations.
+Un paragraphe est simplement une ou plusieurs lignes consécutives de texte séparées par une ou plusieurs lignes vierges. Une ligne vierge est une ligne ne contenant rien d’autre que des espaces ou des tabulations. Les paragraphes normaux ne doivent pas être mis en retrait avec des espaces ou des tabulations.
 
 Un saut de ligne est créé en terminant une ligne par deux espaces ou plus puis un retour.
 
@@ -111,7 +111,7 @@ Où « id » est le nom d’une référence d’image définie. Les référenc
 
 ## Blocs de citations {#block-quotes}
 
-Vous pouvez placer un texte entre guillemets en ajoutant le symbole > avant le texte. Par exemple :
+Vous pouvez transformer un texte en citation en ajoutant le symbole > avant le texte. Par exemple :
 
     `>This is block quotes`
 
@@ -119,7 +119,7 @@ Vous pouvez placer un texte entre guillemets en ajoutant le symbole > avant le t
 
     `>asdfahsdlfasdfj`
 
-Vous pouvez avoir des guillemets de bloc imbriqués. Par exemple :
+Vous pouvez avoir des blocs de citation imbriqués. Par exemple :
 
     `> This is the first level of quoting.`
 
@@ -179,7 +179,7 @@ Par exemple :
 
 ## Blocs de code {#code-blocks}
 
-Les blocs de code sont généralement utilisés pour illustrer le code source. Vous pouvez créer des blocs de code en mettant le code en retrait à l’aide d’un onglet ou d’un minimum de 4 espaces. Par exemple :
+Les blocs de code sont généralement utilisés pour illustrer le code source. Vous pouvez créer des blocs de code en mettant le code en retrait avec une tabulation ou un minimum de 4 espaces. Par exemple :
 
     `This is a normal paragraph.`
 

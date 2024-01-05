@@ -2,20 +2,20 @@
 title: Arborescence de la structure du fragment de contenu (Ressources - Fragments de contenu)
 description: Utilisez la fonction Arborescence de structure de l’éditeur de fragment de contenu dans AEM pour mieux comprendre votre contenu découplé.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 55%
+source-wordcount: '172'
+ht-degree: 43%
 
 ---
 
 # Arborescence de la structure du fragment de contenu {#content-fragment-structure-tree}
 
-Utilisez la fonction Arborescence de structure de l’éditeur de fragment de contenu dans AEM pour mieux comprendre votre contenu découplé.
+Utilisez la fonction Arborescence de structure de l’éditeur de fragments de contenu dans AEM pour mieux comprendre votre contenu, en particulier pour une diffusion sans interface.
 
 >[!NOTE]
 >
->Fragments de contenu sont une fonctionnalité de sites, mais sont stockées sous la forme **Ressources**.
+>Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
 >Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ).
 

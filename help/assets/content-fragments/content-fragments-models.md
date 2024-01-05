@@ -1,11 +1,11 @@
 ---
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
-description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
+description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu headless dans AEM, ce qui vous permet de créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 92%
+source-wordcount: '3011'
+ht-degree: 90%
 
 ---
 
@@ -30,7 +30,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
    >
    >Si l’[utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
 
-1. Spécifiez le **Titre du modèle**.
+1. Spécifiez la variable **Titre du modèle**.
 Vous pouvez également définir différentes propriétés ; par exemple, ajouter **Balises**, un **Description**, puis sélectionnez **Activer le modèle** to [activer le modèle ;](#enabling-disabling-a-content-fragment-model) si nécessaire.
 
    >[!NOTE]
@@ -150,7 +150,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
   >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
-Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur ou l’autrice voit une seule instance du champ ou si cette personne est autorisée à créer plusieurs instances. When **Champ multiple** est utilisé. Vous pouvez définir le nombre minimal et maximal d’éléments. Voir [Validation](#validation) pour plus de détails.
+Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances. When **Champ multiple** est utilisé. Vous pouvez définir le nombre minimal et maximal d’éléments. Voir [Validation](#validation) pour plus de détails.
 
 * **Libellé du champ**
 Saisie d’un **Libellé du champ** génère automatiquement une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
@@ -216,8 +216,8 @@ Différents types de données incluent désormais la possibilité de définir le
 
   Champs définis comme une **Champ multiple** (définie avec **Render As**) comportent les options suivantes :
 
-   * **Nombre minimum d’éléments**
-   * **Nombre maximum d’éléments**
+   * **Nombre min. d’éléments**
+   * **Nombre max. d’éléments**
 
   Ils sont validés :
 
@@ -234,7 +234,7 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 
 * **[Référence du fragment](#fragment-reference-nested-fragments)** (fragments imbriqués)
    * Fait référence à d’autres fragments, en fonction des modèles spécifiques spécifiés.
-   * Vous permet d’inclure/de récupérer des données structurées.
+   * Permet d’intégrer ou de récupérer des données structurées.
      >[!NOTE]
      >
      >Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -308,7 +308,7 @@ Indique un chemin racine pour tout fragment référencé.
 
 * **Autoriser la création de fragments**
 
-  Cela permet à l’auteur du fragment de créer un fragment en fonction du modèle approprié.
+  Cette propriété permet à la personne chargée de la création du fragment de créer un fragment en fonction du modèle approprié.
 
    * **fragmentreferencecomposite** : permet à l’auteur du fragment de créer un composite en sélectionnant plusieurs fragments.
 
@@ -329,7 +329,7 @@ Vous pouvez modifier les **propriétés** d’un modèle de fragment de contenu�
    * **Balises**
    * **Description**
    * **Télécharger l’image**
-   * **Modèle d’URL de prévisualisation par défaut**
+   * **Modèle d’URL d’aperçu par défaut**
 
      >[!NOTE]
      >
@@ -440,7 +440,7 @@ Pour publier un modèle de fragment de contenu :
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option de **publication** dans la barre d’outils.
-L’état publié est indiqué dans la console.
+Le statut publié est indiqué dans la console.
 
    >[!NOTE]
    >

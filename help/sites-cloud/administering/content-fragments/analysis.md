@@ -1,12 +1,12 @@
 ---
 title: Analyse des fragments de contenu
-description: Découvrez la structure de vos fragments de contenu utilisés pour la diffusion de contenu. Vous obtenez ainsi des informations pertinentes pour la diffusion sans en-tête et la création de pages.
+description: Comprenez la structure de vos fragments de contenu. Vous obtenez ainsi des informations pertinentes pour la diffusion sans en-tête et la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '128'
 ht-degree: 2%
 
 ---
