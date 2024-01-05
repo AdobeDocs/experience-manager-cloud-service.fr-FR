@@ -1,10 +1,10 @@
 ---
 title: Rôles et responsabilités
 description: Rôles et responsabilités
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 91%
+source-wordcount: '484'
+ht-degree: 90%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 91%
 >id="aemcloud_raci"
 >title="Rôles et responsabilités"
 >abstract="Adobe fournit un ensemble de services concernant la configuration, le développement, l’évaluation et la production d’Experience Manager as a Cloud Service. Pour que le développement et le déploiement de la solution se déroulent de la manière la plus efficace possible, il est important que le client et le personnalisateur comprennent et remplissent leurs rôles, comme décrit ici."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=fr" text="Choisir les bonnes personnes, les bonnes fonctions"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=fr" text="Alignement des indicateurs de performance clés"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Choisir les bonnes personnes, les bonnes fonctions"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alignement des indicateurs de performance clés"
 
 <br></br>
 Adobe fournit un ensemble de services concernant la configuration, le développement, l’évaluation et la production d’Experience Manager as a Cloud Service. Pour que le développement et le déploiement de la solution se déroulent de la manière la plus efficace possible, il est important que le client et le personnalisateur comprennent et remplissent leurs rôles, comme décrit ci-dessous.

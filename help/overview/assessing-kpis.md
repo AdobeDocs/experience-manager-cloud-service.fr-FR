@@ -2,9 +2,9 @@
 title: Accès aux indicateurs de performance clés
 description: Découvrez comment accéder à vos indicateurs clés de performance et définir le processus de création de rapports
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '532'
 ht-degree: 94%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 94%
 >id="aemcloud_assesskpis"
 >title="Évaluation des indicateurs de performance clés"
 >abstract="Avant de vous engager dans le lancement d’Adobe Experience Manager, toutes les personnes impliquées dans le projet doivent connaître vos trois principaux indicateurs de performance clés et la raison pour laquelle ils sont importants."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=fr" text="Alignement des indicateurs de performance clés"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=fr" text="Choix de la bonne équipe"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alignement des indicateurs de performance clés"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Choix de la bonne équipe"
 
 Avant de vous engager dans le lancement d’Adobe Experience Manager, toutes les personnes impliquées dans le projet doivent connaître vos trois principaux indicateurs de performance clés et la raison pour laquelle ils sont importants.
 
