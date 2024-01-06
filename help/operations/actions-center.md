@@ -2,7 +2,7 @@
 title: Centre d’actions
 description: Tirez parti du Centre d’actions pour agir facilement sur les incidents et d’autres informations importantes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 73%
@@ -72,5 +72,5 @@ Le tableau suivant répertorie les types de notifications actuellement pris en c
 | Type de notification | Profil de produit associé | Mesure corrective |
 |---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | File d’attente de réplication bloquée | Incident | Débloquer la file d’attente en suivant les instructions de la [documentation de réplication](/help/operations/replication.md#troubleshooting) |
-| Requête GraphQL persistante non valide | Incident | Correction d’une requête GraphQL non valide en référençant [Documentation de dépannage des requêtes GraphQL persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
+| Requête GraphQL persistante non valide | Incident | Correction d’une requête GraphQL non valide en référençant [Documentation de dépannage des requêtes GraphQL persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Expiration du certificat S2S | Proactif | Découvrez comment actualiser des informations d’identification dans la [documentation sur la génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials). |

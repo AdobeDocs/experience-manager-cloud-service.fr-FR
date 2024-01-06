@@ -1,13 +1,13 @@
 ---
 title: Administration d’instances de workflow
-description: Découvrez comment administrer des instances de workflow à l’aide de la console de workflow
+description: Découvrez comment gérer les instances de workflow à l’aide de la console de workflow
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 99%
+source-wordcount: '1286'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
    >[!NOTE]
    >
-   > Pour maintenir une instance de workflow saine, consultez les rubriques [Purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [Bonnes pratiques en matière de workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=fr).
+   > Pour maintenir une instance de workflow saine, consultez les rubriques [Purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [Bonnes pratiques en matière de workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Rechercher des instances de workflow {#search-workflow-instances}
 
@@ -111,7 +111,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher le **message d’échec**, l’**étape et la **pile des échecs**.
+Ouvre une fenêtre pour afficher le **Message d’échec**, **Step et **Pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.

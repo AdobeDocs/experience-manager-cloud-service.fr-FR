@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Découvrez les principes de base de la mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 95%
+source-wordcount: '2775'
+ht-degree: 93%
 
 ---
 
@@ -42,7 +42,7 @@ Cette méthode peut se révéler utile, par exemple, lorsque votre logique comme
   ```
 
   >[!NOTE]
-  >L’en-tête Surrogate-Control s’applique au réseau de diffusion de contenu géré par Adobe. Si vous utilisez un [réseau CDN géré par le client ou la cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=fr#point-to-point-CDN), un en-tête différent peut être requis en fonction de votre fournisseur de réseau CDN.
+  >L’en-tête Surrogate-Control s’applique au réseau de diffusion de contenu géré par Adobe. Si vous utilisez un [réseau CDN géré par le client ou la cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), un en-tête différent peut être requis en fonction de votre fournisseur de réseau CDN.
 
   Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou des en-têtes de cache similaires qui correspondent à une expression régulière (regex) large, afin qu’ils ne soient pas appliqués au contenu que vous devez garder privé. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Pour autant, AEM as a Cloud Service supprime l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer AEM à toujours appliquer les en-têtes de mise en cache, vous pouvez ajouter l’option **`always`** comme suit :
 
@@ -87,7 +87,7 @@ Cette méthode peut se révéler utile, par exemple, lorsque votre logique comme
 
 ### Images et tout contenu suffisamment volumineux pour être stocké dans le stockage blob {#images}
 
-Le comportement par défaut des programmes créés après la mi-mai 2022 (en particulier, pour les identifiants de programme supérieurs à 65 000) est de mettre en cache par défaut, tout en respectant le contexte d’authentification de la requête. Les programmes plus anciens (id de programme égal ou inférieur à 65 000) ne mettent pas en cache le contenu de l’objet Blob par défaut.
+Le comportement par défaut des programmes créés après la mi-mai 2022 (en particulier, pour les identifiants de programme supérieurs à 65 000) est de mettre en cache par défaut, tout en respectant le contexte d’authentification de la requête. Les programmes plus anciens (id de programme égal ou inférieur à 65 000) ne mettent pas en cache le contenu de l’objet Blob par défaut.
 
 Dans les deux cas, les en-têtes de mise en cache peuvent être remplacés à un niveau plus fin au niveau de la couche Apache ou du Dispatcher à l’aide des directives Apache `mod_headers`, par exemple :
 
@@ -230,7 +230,7 @@ Lorsqu’une requête HEAD est reçue sur le réseau CDN Adobe pour une ressourc
 
 ### Paramètres de campagne marketing {#marketing-parameters}
 
-Les URL de site web incluent souvent des paramètres de campagne marketing qui permettent de suivre la réussite d’une campagne.
+Les URL de site Web incluent souvent des paramètres de campagne marketing qui servent à suivre le succès d’une campagne.
 
 Pour les environnements créés en octobre 2023 ou version ultérieure, afin de mieux mettre en cache les requêtes, le réseau de diffusion de contenu supprimera les paramètres de requête liés au marketing courants, en particulier ceux qui correspondent au modèle regex suivant :
 

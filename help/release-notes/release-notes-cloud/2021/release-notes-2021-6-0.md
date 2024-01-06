@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1432'
 ht-degree: 97%
 
 ---
@@ -182,7 +182,7 @@ La date de publication de l’outil de transfert de contenu version v1.5.4 est 
 
 ### Nouveautés {#what-is-new-ctt-latest}
 
-* Prise en charge d’une étape facultative [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) ajoutée à l’utilisation avec le CTT. L’étape de pré-copie peut être utilisée pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu lorsque l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3 ou Azure Blob Storage.
+* Prise en charge d’une étape facultative [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) ajoutée à l’utilisation avec le CTT. L’étape de pré-copie peut être utilisée pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu lorsque l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3 ou Azure Blob Storage.
 
 * Une barrière de sécurité a été ajoutée au CTT pour empêcher les utilisateurs d’arrêter une ingestion et de potentiellement corrompre les données une fois qu’elles ont atteint le point critique pendant la phase d’ingestion.
 

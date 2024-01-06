@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2023.4.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.4.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 99%
+source-wordcount: '1122'
+ht-degree: 98%
 
 ---
 
@@ -42,8 +42,8 @@ Consultez la vidéo Aperçu de la version d’avril 2023 pour obtenir un résum�
 
 ### Nouvelles fonctionnalités de la version préliminaire d’[!DNL Experience Manager Sites] {#prerelease-sites}
 
-* Les fragments de contenu et leurs références peuvent désormais être publiés dans le [service d’aperçu AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=fr#access-preview-service) en utilisant la [console de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=fr). Cela permet aux utilisateurs et utilisatrices de prévisualiser l’expérience finale sur une application d’aperçu découplée avant la mise en ligne.
-* Les images peuvent désormais être optimisées dynamiquement pour une diffusion web dans des scénarios découplés via GraphQL d’AEM. Les [variables de requête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=fr#query-variables) peuvent être définies dans les requêtes GraphQL pour permettre aux applications clientes découplées de demander à AEM des images optimisées en conséquence.
+* Les fragments de contenu et leurs références peuvent désormais être publiés dans le [service d’aperçu AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service) en utilisant la [console de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=fr). Cela permet aux utilisateurs et utilisatrices de prévisualiser l’expérience finale sur une application d’aperçu découplée avant la mise en ligne.
+* Les images peuvent désormais être optimisées dynamiquement pour une diffusion web dans des scénarios découplés via GraphQL d’AEM. Les [variables de requête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) peuvent être définies dans les requêtes GraphQL pour permettre aux applications clientes découplées de demander à AEM des images optimisées en conséquence.
 * Les balises sur les [variations de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=fr) peuvent désormais être générées au format JSON à l’aide de l’API de diffusion de contenu GraphQL d’AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -71,7 +71,7 @@ Consultez la vidéo Aperçu de la version d’avril 2023 pour obtenir un résum�
 
 ### Fonctionnalité dans la pré-version d’[!DNL Assets] {#prerelease-feature-assets}
 
-* Dynamic Media : l’interface utilisateur de certains champs liés au recadrage intelligent dans un profil d’image est désormais mise à jour pour prendre en compte les instructions actuelles pour définir un recadrage intelligent. Voir [Options de recadrage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=fr#crop-options).
+* Dynamic Media : l’interface utilisateur de certains champs liés au recadrage intelligent dans un profil d’image est désormais mise à jour pour prendre en compte les instructions actuelles pour définir un recadrage intelligent. Voir [Options de recadrage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

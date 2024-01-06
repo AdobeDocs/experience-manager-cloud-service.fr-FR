@@ -2,7 +2,7 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 88%

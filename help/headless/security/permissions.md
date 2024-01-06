@@ -3,9 +3,9 @@ title: Considérations relatives aux autorisations pour le contenu découplé
 description: Découvrez les différentes considérations relatives aux autorisations et aux listes de contrôle d’accès pour une mise en œuvre découplée avec Adobe Experience Manager. Découvrez les différentes personnes et les niveaux d’autorisation potentiels nécessaires pour les environnements de création et de publication.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -22,7 +22,7 @@ Le service de création permet aux utilisateurs internes de créer, gérer et pu
 
 Il est recommandé de définir les autorisations en fonction des groupes dans AEM. Également appelés groupes locaux, ces groupes peuvent être gérés dans l’environnement de création AEM.
 
-Le moyen le plus simple de gérer l’appartenance à un groupe consiste à utiliser les groupes Adobe Identity Management System (IMS) et à attribuer des [Groupes IMS aux groupes AEM locaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=fr#managing-permissions-in-aem).
+Le moyen le plus simple de gérer l’appartenance à un groupe consiste à utiliser les groupes Adobe Identity Management System (IMS) et à attribuer des [Groupes IMS aux groupes AEM locaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem).
 
 ![Flux d’autorisation Admin Console](assets/admin-console-aem-group-permissions.png)
 

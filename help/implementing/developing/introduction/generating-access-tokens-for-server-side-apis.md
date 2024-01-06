@@ -2,7 +2,7 @@
 title: Générer des jetons d’accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 98%
@@ -19,7 +19,7 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
 
@@ -110,12 +110,12 @@ Tout d’abord, un nouveau profil de produit doit être créé dans l’Adobe A
 
 1. Accédez à l’Adobe Admin Console depuis la page [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
 1. Cliquez sur le lien **Gérer** sous la colonne **Produits et services** sur la gauche.
-1. Sélectionnez **AEM as a Cloud Service**.
+1. Sélectionner **AEM as a Cloud Service**.
 1. Appuyez sur le bouton **Nouveau profil**.
 
    ![Nouveau profil](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
 
-1. Donnez un nom au profil et appuyez sur **Enregistrer**.
+1. Nommez le profil et appuyez sur **Enregistrer**.
 
    ![Enregistrement du profil](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
 

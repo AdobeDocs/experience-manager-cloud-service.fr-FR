@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '975'
 ht-degree: 100%
 
 ---
@@ -65,7 +65,7 @@ Consultez la vidéo Aperçu de la version de janvier 2023 pour un résumé des 
 ### Nouvelles fonctionnalités de la préversion de [!DNL Forms] {#prerelease-features-forms}
 
 * **[Utiliser des composants principaux de capture de données pour créer des formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr)** : [utilisez l’éditeur de formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) pour créer des formulaires basés sur des composants de capture de données normalisés (composants principaux). Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique.
-* **[Prise en charge du pipeline frontal pour la mise en forme des formulaires adaptatifs basés sur des composants principaux](/help/forms/using-themes-in-core-components.md)** : utilisez des thèmes basés sur la méthodologie BEM facilement personnalisables pour les formulaires adaptatifs basés sur les composants principaux en les déployant avec le pipeline de déploiement frontal afin d’améliorer l’aspect de vos formulaires.
+* **[Prise en charge du pipeline front-end pour la mise en forme des formulaires adaptatifs basés sur des composants principaux](/help/forms/using-themes-in-core-components.md)** : utilisez des thèmes basés sur la méthodologie BEM facilement personnalisables pour les formulaires adaptatifs basés sur les composants principaux en les déployant avec le pipeline de déploiement front-end afin d’améliorer l’aspect de vos formulaires.
 * **[Générer un document d’enregistrement pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/generate-document-of-record-core-components.md)** : créez un enregistrement pour un formulaire adaptatif basé sur les composants principaux lors de son envoi pour un archivage à long terme, en version imprimée ou au format de document.
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)

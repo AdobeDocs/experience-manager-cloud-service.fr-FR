@@ -2,10 +2,10 @@
 title: Réplication
 description: Découvrez la distribution et le dépannage de la réplication dans AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 97%
+source-wordcount: '1312'
+ht-degree: 96%
 
 ---
 
@@ -57,13 +57,13 @@ Vous pouvez déclencher une réplication d’arborescence en choisissant **Outil
 
 N’appelez pas le modèle d’origine. Veillez plutôt à copier d’abord le modèle et à appeler cette copie.
 
-Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=fr#extending-aem).
+Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 Vous pouvez également créer un modèle de workflow qui utilise l’étape du processus `Publish Content Tree` :
 
 1. Sur la page d’accueil d’AEM as a Cloud Service, accédez à **Outils – Workflow – Modèles**.
 1. Sur la page Modèles de workflow, appuyez sur **Créer** dans l’angle supérieur droit de l’écran.
-1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
+1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de processus](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
 1. Sélectionnez le modèle créé dans la liste, puis appuyez sur **Modifier**
 1. Dans la fenêtre suivante, faites un glisser-déposer de l’étape du processus dans le flux de modèle actuel :
 

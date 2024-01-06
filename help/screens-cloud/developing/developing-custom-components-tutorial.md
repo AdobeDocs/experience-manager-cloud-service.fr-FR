@@ -2,10 +2,10 @@
 title: Développement d’un composant personnalisé pour Screens as a Cloud Service
 description: Le tutoriel suivant décrit les étapes à suivre pour créer un composant personnalisé pour AEM Screens. AEM Screens réutilise de nombreux modèles de conception et technologies existants d’autres produits AEM. Ce tutoriel met en évidence les différences et les considérations spéciales lors du développement pour AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 97%
+source-wordcount: '2042'
+ht-degree: 96%
 
 ---
 
@@ -129,7 +129,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Les composants Screens nécessitent deux rendus différents selon le [mode de création](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=fr#page-modes) utilisé :
+   Les composants Screens nécessitent deux rendus différents selon le [mode de création](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) utilisé :
 
    1. **Production**: Mode Aperçu ou Publication (wcmmode=disabled)
    1. **Modifier**: utilisé pour tous les autres modes de création, c’est-à-dire l’édition, la conception, la génération de modèles automatique, le développeur...
@@ -155,7 +155,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
 
    Le composant effectue le rendu d’un `div` et d’une balise `h1` avec du texte. `${properties.message}` est une partie de script HTL qui génère le contenu d’une propriété JCR nommée `message`. Une boîte de dialogue est créée ultérieurement pour permettre à l’utilisateur de saisir une valeur pour le texte de la propriété `message`.
 
-   Notez également que la notation BEM (Block Element Modifier) est utilisée avec le composant. BEM est une convention de codage CSS qui facilite la création de composants réutilisables. Il s’agit de la notation utilisée par les [composants de base d’AEM](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
+   Notez également que la notation BEM (Block Element Modifier) est utilisée avec le composant. BEM est une convention de codage CSS qui facilite la création de composants réutilisables. BEM est la notation utilisée par [Composants principaux d’AEM](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. Sous `/apps/weretail-run/components/content/helloworld`, créez un fichier appelé `edit.html.`
 
@@ -329,7 +329,7 @@ Les composants d’AEM Screens s’affichent différemment en mode d’édition
 
 1. Copiez et collez le dossier de bibliothèque cliente `shared` pour créer une bibliothèque cliente nommée `production`.
 
-   ![Copiez la bibliothèque cliente partagée pour créer une bibliothèque cliente de production](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![Copiez la bibliothèque cliente partagée pour créer une bibliothèque cliente de production.](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Copiez la bibliothèque cliente partagée pour créer une bibliothèque cliente de production.
 
@@ -376,7 +376,7 @@ Une troisième catégorie de bibliothèque cliente : `cq.screens.components.edi
 
 ## Création d’une page de conception {#design-page}
 
-AEM Screens utilise des [Modèles de page statiques](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=fr) et des [Configurations de conception](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=fr) pour les modifications globales. Les configurations de conception sont fréquemment utilisées pour configurer les composants autorisés pour le Parsys sur un canal. Il est recommandé de stocker ces configurations d’une manière spécifique à l’application.
+AEM Screens utilise des [Modèles de page statiques](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) et des [Configurations de conception](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) pour les modifications globales. Les configurations de conception sont fréquemment utilisées pour configurer les composants autorisés pour le Parsys sur un canal. Il est recommandé de stocker ces configurations d’une manière spécifique à l’application.
 
 Une page de conception d’exécution We.Retail est créée ci-dessous pour stocker toutes les configurations spécifiques au projet d’exécution We.Retail.
 

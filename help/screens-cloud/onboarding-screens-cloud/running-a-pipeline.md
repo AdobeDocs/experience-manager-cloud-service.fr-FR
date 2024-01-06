@@ -2,10 +2,10 @@
 title: Exécution d’un pipeline
 description: Cette page décrit l’exécution d’un pipeline pour un projet Screens as a Cloud Service dans Cloud Manager.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 93%
+source-wordcount: '271'
+ht-degree: 91%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 Cette section décrit comment exécuter le pipeline et déployer le code pour votre programme dans Cloud Manager.
 
 >[!NOTE]
->Voir [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=fr) et [Déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=fr) pour savoir comment exécuter le pipeline pour votre programme dans Cloud Manager.
+>Voir [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) et [Déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=fr) pour savoir comment exécuter le pipeline pour votre programme dans Cloud Manager.
 
 ## Objectif {#objective}
 
@@ -35,7 +35,7 @@ La section suivante décrit comment configurer le pipeline CI/CD et déployer vo
 1. Sélectionnez vos options dans l’assistant **Configurer le pipeline**. Cliquez sur **Enregistrer**.
 
    >[!NOTE]
-   >Pour en savoir plus sur les options de l’assistant de configuration du pipeline, voir [Configuration des paramètres du pipeline à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=fr) pour plus d’informations.
+   >Pour en savoir plus sur les options de l’assistant de configuration du pipeline, voir [Configuration des paramètres du pipeline à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) pour plus d’informations.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 

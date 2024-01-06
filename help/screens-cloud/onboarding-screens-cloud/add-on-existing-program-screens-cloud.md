@@ -2,9 +2,9 @@
 title: Ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager
 description: Découvrez comment ajouter un module complémentaire Screens à un programme existant dans Cloud Manager pour Screens as a Cloud Service.
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '244'
 ht-degree: 53%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 53%
 Cette section décrit comment ajouter Screens en tant que module complémentaire à un programme existant dans Cloud Manager.
 
 >[!NOTE]
->Pour en savoir plus sur les programmes Cloud Manager, voir [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en).
+>Pour en savoir plus sur les programmes Cloud Manager, voir [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=fr).
 
 ## Objectif {#objective}
 

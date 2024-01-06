@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Découvrez la validation locale, le débogage, la structure de fichiers du mode flexible et comment migrer du mode hérité vers le mode flexible.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 94%
+source-wordcount: '2971'
+ht-degree: 95%
 
 ---
 

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.1.0.
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 93%
+source-wordcount: '791'
+ht-degree: 92%
 
 ---
 
@@ -52,9 +52,9 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 * Gestion de l’expérience des produits : nouvel onglet de propriétés Commerce pour les ressources et les fragments d’expérience. Cet onglet permet de lier des produits/catégories à des ressources et fragments d’expérience. L’onglet affiche également des données en temps réel pour les produits/catégories liés ainsi qu’un lien permettant d’afficher des détails dans la console du produit.
 
-* Site de référence CIF Venia - 2021.02.02 qui comprend la dernière version des composants principaux CIF v1.7.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) pour plus d’informations.
+* Publication CIF site de référence Venia - 2021.02.02 qui comprend la dernière version de CIF Core Components v1.7.0. Voir [Site de référence Venia CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) pour plus d’informations.
 
-* Composants principaux CIF version 1.7.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) pour plus d’informations.
+* Publication CIF composants principaux v1.7.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) pour plus d’informations.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -74,7 +74,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 
 
 ### Nouveautés d’[!DNL Code Refactoring Tools]  {#what-is-new-crt}
 
-* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in comprend des correctifs pour le Dispatcher Converter et le Repository Modernizer AEM et prend également en charge un nouvel utilitaire : Index Converter. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce module externe.
+* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in comprend des correctifs pour le Dispatcher Converter et le Repository Modernizer AEM et prend également en charge un nouvel utilitaire : Index Converter. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) pour en savoir plus sur ce module externe.
 
 * Index Converter est un utilitaire qui permet de transformer les définitions d’index OAK personnalisées d’un client en définitions d’index OAK compatibles avec AEM as a Cloud Service. Voir [Convertisseur d’index](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) pour plus d’informations.
 
@@ -88,7 +88,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Appels d’API authentifiés de serveur à serveur : générez les jetons d’accès appropriés pour effectuer des appels d’API authentifiés de serveur à serveur entre vos applications externes et les environnements AEM as a Cloud Service. Pour en savoir plus, accédez à la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultez le [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication).
+* Appels d’API authentifiés de serveur à serveur : générez les jetons d’accès appropriés pour effectuer des appels d’API authentifiés de serveur à serveur entre vos applications externes et les environnements AEM as a Cloud Service. Pour en savoir plus, accédez à la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultez le [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
 
 ### Analyseurs de build de SDK {#sdk-build-analyzers}
 

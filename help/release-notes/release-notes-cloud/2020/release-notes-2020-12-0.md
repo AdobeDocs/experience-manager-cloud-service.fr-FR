@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.12.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2020.12.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 51%
+source-wordcount: '652'
+ht-degree: 50%
 
 ---
 
@@ -48,9 +48,9 @@ La date de publication de Cloud Manager dans Adobe Experience Manager (AEM) as a
 
 ### Nouveautés de [!DNL Cloud Manager]  {#what-is-new-cm}
 
-* Gestion en libre-service de [Certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) et [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Gestion en libre-service des [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) et des [noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Gestion en libre-service de [LISTES AUTORISÉES IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Gestion en libre-service des [listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * La mise à jour **Environnement** La page détails permet désormais aux utilisateurs de gérer les noms de domaine personnalisés et les Listes autorisées IP dans leurs environnements.
 
@@ -64,7 +64,7 @@ La date de publication de Cloud Manager dans Adobe Experience Manager (AEM) as a
 
 ### Nouveautés d’[!DNL Code Refactoring Tools]  {#what-is-new-crt}
 
-* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in inclut des correctifs pour le convertisseur du Dispatcher AEM et Repository Modernizer et prend également en charge un nouvel utilitaire : le convertisseur d’index. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) où vous pouvez en savoir plus sur ce module externe.
+* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in inclut des correctifs pour le convertisseur du Dispatcher AEM et Repository Modernizer et prend également en charge un nouvel utilitaire : le convertisseur d’index. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) où vous pouvez en savoir plus sur ce module externe.
 
 * Le convertisseur d’index est un utilitaire qui permet de transformer les définitions d’index Oak personnalisées d’un client en définitions d’index Oak compatibles as a Cloud Service AEM. Voir [Convertisseur d’index](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) pour plus d’informations.
 

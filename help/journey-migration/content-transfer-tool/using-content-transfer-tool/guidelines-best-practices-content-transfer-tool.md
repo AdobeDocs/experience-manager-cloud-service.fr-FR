@@ -2,10 +2,10 @@
 title: Instructions et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
 description: Découvrez les instructions et les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 64%
+source-wordcount: '1401'
+ht-degree: 62%
 
 ---
 
@@ -35,7 +35,7 @@ Les versions antérieures à la version 2.0.0 ne sont pas prises en charge et il
 
 Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
 
-* Exécuter [Nettoyage des révisions](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et [contrôles de cohérence de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=fr) sur le **source** afin que vous puissiez identifier les problèmes potentiels et réduire la taille du référentiel.
+* Exécuter [Nettoyage des révisions](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et [contrôles de cohérence de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) sur le **source** afin que vous puissiez identifier les problèmes potentiels et réduire la taille du référentiel.
 
 * Lors de la phase d’ingestion, Adobe vous recommande d’exécuter l’ingestion à l’aide de la variable *essuyer* le mode activé où le référentiel existant (auteur ou publication) dans l’environnement de Cloud Service Adobe Experience Manager (AEM) cible est supprimé. Ensuite, mettez à jour avec les données du jeu de migration. Ce mode est plus rapide que le mode sans effacement, où le jeu de migration est appliqué en plus du contenu actuel.
 
@@ -75,7 +75,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur ou utilisatrice peut ingérer un jeu de migration dans une instance de création ou de publication, ou les deux. Adobe recommande que, lors du déplacement du contenu vers une instance de production, CTT soit installé sur l’instance d’auteur source pour déplacer le contenu vers l’instance d’auteur cible. De même, installez le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour en savoir plus, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#running-tool).
 
-* Les utilisateurs, utilisatrices et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’_extraction_ copie l’intégralité de `/home` dans le jeu de migration et effectue le mappage des utilisateurs et utilisatrices en ajoutant un champ provenant de l’adresse e-mail de chaque utilisateur ou utilisatrice. Pour plus d’informations, consultez [Mappage des utilisateurs et utilisatrices et migration principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Le processus d’_ingestion_ copie tous les utilisateurs et utilisatrices ainsi que les groupes référencés dans les listes de contrôle d’accès (ACL) du contenu migré. Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur les groupes utilisés dans une stratégie de groupe d’utilisateurs fermé (CUG).
+* Les utilisateurs, utilisatrices et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’_extraction_ copie l’intégralité de `/home` dans le jeu de migration et effectue le mappage des utilisateurs et utilisatrices en ajoutant un champ provenant de l’adresse e-mail de chaque utilisateur ou utilisatrice. Pour plus d’informations, consultez [Mappage des utilisateurs et utilisatrices et migration principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). La variable _Ingestion_ Le processus copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur les groupes utilisés dans une stratégie de groupe d’utilisateurs fermé (CUG).
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 

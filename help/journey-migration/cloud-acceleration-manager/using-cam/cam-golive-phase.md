@@ -2,10 +2,10 @@
 title: Phase d’activation dans Cloud Acceleration Manager
 description: Cette page présente un aperçu de la phase d’activation dans Cloud Acceleration Manager.
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 78%
+source-wordcount: '137'
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet e
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->Pour en savoir plus, consultez la section [Créer et gérer un projet dans Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=fr#create-project).
+>Pour en savoir plus, consultez la section [Créer et gérer un projet dans Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project).
 
 
 ## Utilisation de la carte d’activité d’activation {#go-live}

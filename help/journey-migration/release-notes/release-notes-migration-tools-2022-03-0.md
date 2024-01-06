@@ -3,9 +3,9 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.3.0
 feature: Release Information
 exl-id: ab43605d-d46e-43de-b71f-fab610609550
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '351'
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '349'
 ht-degree: 100%
 
 ---

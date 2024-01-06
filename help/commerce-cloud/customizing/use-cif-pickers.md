@@ -8,10 +8,10 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
-source-wordcount: '620'
-ht-degree: 100%
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Le champ produit vous permet d’accéder au produit qu’un utilisateur ou qu�
 Le champ de sélecteur de produits prend en charge les propriétés facultatives suivantes :
 
 - selectionId (id, uid, SKU, slg, combinedSlug, combinedSku) : vous permet de choisir l’attribut de produit à renvoyer par le sélecteur (par défaut = id). L’utilisation du SKU renvoie le SKU du produit sélectionné. L’utilisation de combinedSku renvoie une chaîne comme base#variant avec les SKU du produit de base et la variante sélectionnée, ou un seul SKU si un produit de base est sélectionné.
-- filter (folderOrProduct, folderOrProductOrVariant) : filtre le contenu que le sélecteur soit rendre lors de la navigation dans l’arborescence du produit. folderOrProduct : effectue le rendu des dossiers et des produits. folderOrProductOrVariant : effectue le rendu des dossiers, du produit et des variantes de produits. Si un produit ou une variante de produit est rendu, il ou elle devient également sélectionnable dans le sélecteur. (par défaut = folderOrProduct)
+- filter (folderOrProduct, folderOrProductOrVariant) : filtre le contenu que le sélecteur soit rendre lors de la navigation dans l’arborescence du produit. folderOrProduct : effectue le rendu des dossiers et des produits. folderOrProductOrVariant : effectue le rendu des dossiers, du produit et des variantes de produit. Si un produit ou une variante de produit est rendu, il ou elle devient également sélectionnable dans le sélecteur. (par défaut = folderOrProduct)
 - multiple (true, false) : permet de sélectionner un ou plusieurs produits (par défaut = false).
 - emptyText : pour configurer la valeur de texte vide du champ de sélecteur.
 
@@ -51,7 +51,7 @@ En outre, les propriétés standard des champs de boîte de dialogue, telles que
 >
 >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Adobe recommande d’utiliser `sku` ou `slug` comme identifiant de produit. Adobe continue à prendre en charge `id` uniquement pour les projets utilisant les composants principaux CIF version 1.x.
 
-Vous trouverez un exemple complet de `cifproductfield` dans le projet [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consultez également la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr#customizing-dialogs) dans la documentation sur les composants principaux AEM.
+Vous trouverez un exemple complet de `cifproductfield` dans le projet [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consultez également la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) dans la documentation sur les composants principaux AEM.
 
 ## Sélecteur de catégories {#category-picker}
 
@@ -76,7 +76,7 @@ En outre, les propriétés standard des champs de boîte de dialogue, telles que
 
 >[!CAUTION]
 >
->Comme le composant `cifproductfield`, le composant `cifcategoryfield` nécessite également la bibliothèque clif `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs`. Consultez la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr#customizing-dialogs) dans la documentation sur les composants principaux AEM.
+>Comme le composant `cifproductfield`, le composant `cifcategoryfield` nécessite également la bibliothèque clif `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs`. Consultez la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) dans la documentation sur les composants principaux AEM.
 >[!CAUTION]
 >
 >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Adobe recommande d’utiliser `uid` ou `urlPath` comme identifiant de catégorie. Adobe continue à prendre en charge `id` et `idAndUrlPath` uniquement pour les projets utilisant les composants principaux CIF version 1.x.

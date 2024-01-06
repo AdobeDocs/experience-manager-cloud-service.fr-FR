@@ -3,8 +3,8 @@ title: Générer des jetons d’accès pour les API côté serveur (hérité)
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
 <!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
 
@@ -123,7 +123,7 @@ Pour plus d’informations sur les autorisations requises pour utiliser la Devel
 
 >[!NOTE]
 >
->Le jeton d’accès de développement local est valide pendant 24 heures au maximum, après quoi il doit être régénéré selon la même méthode.
+Le jeton d’accès de développement local est valide pendant 24 heures au maximum, après quoi il doit être régénéré selon la même méthode.
 
 Les développeurs peuvent utiliser ce jeton pour émettre des appels depuis leur application de test non AEM vers l’environnement AEM as a Cloud Service. En règle générale, une personne chargée du développement utilise ce jeton avec l’application non AEM sur son propre ordinateur portable. En outre, AEM as a Cloud Service est généralement un environnement distinct de la production.
 
@@ -152,7 +152,7 @@ En appuyant sur ce bouton, vous générez un ensemble d’informations d’ident
 
 >[!NOTE]
 >
->Après avoir cliqué sur le bouton **Refresh Service Credentials** (Actualiser les informations d’identification du service), les anciennes informations d’identification restent enregistrées jusqu’à leur expiration, mais seul le jeu le plus récent est visible à tout moment à partir de la Developer Console.
+Après avoir cliqué sur le bouton **Refresh Service Credentials** (Actualiser les informations d’identification du service), les anciennes informations d’identification restent enregistrées jusqu’à leur expiration, mais seul le jeu le plus récent est visible à tout moment à partir de la Developer Console.
 
 ## Révocation des informations d’identification du service {#service-credentials-revocation}
 

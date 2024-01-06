@@ -1,10 +1,10 @@
 ---
 title: Processus de configuration - Présentation
 description: Processus de configuration - Présentation
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '330'
-ht-degree: 100%
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 98%
 
 ---
 
@@ -39,8 +39,8 @@ Pour plus d’informations, consultez [Intégration d’Experience Manager as a
 ### Ressources et liens
 
 * [Prise en charge IMS d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=fr)
-* [Autorisations basées sur les rôles dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=fr#what-is-required)
-* [Accès à Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#getting-access)
+* [Autorisations basées sur les rôles dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html#what-is-required)
+* [Accès à Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#getting-access)
 
 
 ## Intégration d’Adobe Experience Manager as a Cloud Service
@@ -75,4 +75,4 @@ de l’enterprise
 ## l’aide et les ressources.
 
 * [Première connexion – Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-* [Configuration de l’accès à AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=fr#accessing)
+* [Configuration de l’accès à AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#accessing)

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 30%
+source-wordcount: '1691'
+ht-degree: 28%
 
 ---
 
@@ -15,7 +15,7 @@ La section suivante concerne les notes de mise à jour techniques de la version�
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle des fonctionnalités (2023.8.0) est le 31 août 2023. La prochaine version de la fonctionnalité (2023.9.0) est prévue pour le 28 septembre 2023.
+La date de publication de la version actuelle (2023.8.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 31 août 2023. La prochaine mise à jour des fonctionnalités (2023.9.0) est prévue pour le vendredi 28 septembre 2023.
 
 ## Vidéo de mise à jour {#release-video}
 
@@ -70,17 +70,17 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Import de ressources en bloc à partir d’une source de données.](/help/release-notes/assets/bulk-import.png)
 
-* **Outils de retouche d’images optimisés par Adobe Express**: Facile et intuitive [outils de retouche d’images optimisés par Adobe Express](/help/assets/edit-images-assets-view.md) disponible directement dans AEM Assets pour augmenter la réutilisation du contenu et accélérer la vitesse du contenu.
+* **Outils de retouche d’images optimisés par Adobe Express**: Facile et intuitive [outils de retouche d’images optimisés par Adobe Express](/help/assets/edit-images-assets-view.md) disponible directement dans AEM Assets pour augmenter la réutilisation du contenu et accélérer la vitesse du contenu.
 
   ![Modification d’images avec Adobe Express.](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibilité lors de l’épinglage d’éléments pour l’accès rapide à Mon espace de travail**: possibilité de sélectionner et d’épingler des éléments pour vous, pour l’ensemble de l’organisation ou pour une liste de groupes afin qu’ils s’affichent dans la variable [Section Accès rapide de My Workspace](/help/assets/my-workspace-assets-view.md) en fonction de votre sélection.
+* **Flexibilité lors de l’épinglage d’éléments pour l’accès rapide à My Workspace**: possibilité de sélectionner et d’épingler des éléments pour vous, pour l’ensemble de l’organisation ou pour une liste de groupes afin qu’ils s’affichent dans la variable [Section Accès rapide de My Workspace](/help/assets/my-workspace-assets-view.md) en fonction de votre sélection.
 
   ![Épinglage d’éléments pour les groupes.](/help/release-notes/assets/pin-items-for-groups.png)
 
 ### Nouvelles fonctionnalités dans la vue d’administration {#admin-view-features}
 
-**Améliorations de la recherche**
+**Amélioration de la recherche**
 
 * Les administrateurs peuvent désormais [configuration de la taille de lot des ressources](/help/assets/search-assets.md#configure-asset-batch-size) qui s’affichent lorsque vous effectuez une recherche. Les résultats de recherche de ressources s’affichent en multiples de la taille de lot configurée lorsque vous faites défiler la page vers le bas pour charger les résultats. Vous pouvez sélectionner les tailles de lot disponibles (200, 500 et 1 000 ressources). Si vous définissez un nombre de lots inférieur, les temps de réponse de la recherche sont plus rapides.
 
@@ -110,7 +110,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Adobe Analytics avec automatisation de la configuration Experience Cloud pour Forms**: vous pouvez désormais activer Adobe Analytics avec l’automatisation de la configuration de l’Experience Cloud à l’aide d’un saut de page de deux boutons. Il vous permet de connecter AEM Forms as a Cloud Service à des balises Experience Platform et à Adobe Analytics afin de capturer et de suivre les mesures de performances des formulaires que vous avez publiés.
 
-* **Modèle de rapport Adobe Analytics pour Forms adaptatif**: Forms as a Cloud Service fournit désormais un rapport Adobe Analytics prêt à l’emploi. Cela vous permet de comprendre facilement les performances de vos formulaires. Les mesures au niveau du formulaire vous donnent des informations relatives aux performances du formulaire sur plusieurs indicateurs de performances clés (KPI) tels que les rendus, les visiteurs et visiteuses, les envois, le temps de remplissage moyen. En suivant le comportement et les commentaires de l’utilisateur, vous pouvez identifier les zones du formulaire qui causent des confusion et guider les améliorations de la conception et de la fonctionnalité du formulaire.
+* **Modèle de rapport Adobe Analytics pour Forms adaptatif**: Forms as a Cloud Service fournit désormais un rapport Adobe Analytics prêt à l’emploi. Cela vous permet de comprendre facilement les performances de vos formulaires. Les mesures au niveau du formulaire vous donnent un aperçu des performances du formulaire par rapport à plusieurs indicateurs de performances clés (IPC) tels que, les rendus, les visiteurs, les envois, le temps de remplissage moyen. En suivant le comportement et les commentaires de l’utilisateur, vous pouvez identifier les zones du formulaire qui causent des confusion et guider les améliorations de la conception et de la fonctionnalité du formulaire.
 
   ![Rapport adobe analytics d’engagement des utilisateurs de formulaires adaptatifs](/help/forms/assets/forms-analytics-report.png)
 

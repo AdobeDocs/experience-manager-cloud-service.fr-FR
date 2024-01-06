@@ -2,10 +2,10 @@
 title: Envoi d’un connecteur AEM
 description: Découvrez comment référencer et déployer correctement les connecteurs dans Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 30%
+source-wordcount: '296'
+ht-degree: 32%
 
 ---
 
@@ -20,7 +20,7 @@ Dans les solutions AEM précédentes, le [Gestionnaire de packages](/help/implem
 Il existe différentes options pour inclure les packages dans un projet :
 
 1. Référentiel public du partenaire : un partenaire héberge le package de contenu dans un référentiel expert accessible au public.
-1. Référentiel protégé par mot de passe du partenaire : un partenaire héberge le module de contenu dans un référentiel Maven protégé par mot de passe. Voir [Référentiels Maven protégés par mot de passe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) pour obtenir des instructions.
+1. Référentiel protégé par mot de passe du partenaire : un partenaire héberge le module de contenu dans un référentiel Maven protégé par mot de passe. Voir [Référentiels Maven protégés par mot de passe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=fr#password-protected-maven-repositories) pour obtenir des instructions.
 1. Artefact assemblé : dans ce cas, le package de connecteur est inclus localement dans le projet expert du client.
 
 Où qu’ils soient hébergés, les modules doivent être référencés en tant que dépendances dans le fichier pom.xml, tel qu’il est fourni par le fournisseur.

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.2.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.2.0. »
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 90%
+source-wordcount: '1185'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 * **[Composant RemotePage](/help/implementing/developing/hybrid/remote-page.md)** : ajout de la prise en charge de l’affichage et de la modification des SPA externes dans AEM.
 
-* **[Modification d’une SPA externe dans AEM](/help/implementing/developing/hybrid/editing-external-spa.md)** : ajout de la possibilité de charger une application sur une seule page dans une instance AEM, d’ajouter des sections de contenu modifiables et d’activer la création.
+* **[Modification d’une application monopage externe dans AEM](/help/implementing/developing/hybrid/editing-external-spa.md)** : ajout de la possibilité de charger une application monopage dans une instance AEM, d’ajouter des sections de contenu modifiables et d’activer la création.
 
 * Amélioration de la sortie JSON à partir de l’API GraphQL, notamment la possibilité de générer du texte enrichi au format JSON et dans différentes langues.
 
@@ -78,9 +78,9 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 * Propriétés étendues de la console de produits pour afficher les ressources liées et les fragments d’expérience, y compris les actions permettant d’accéder rapidement au contenu associé.
 
-* Site de référence CIF Venia - 2021.02.24 qui comprend la dernière version des composants principaux CIF v1.8.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) pour plus d’informations.
+* Publication CIF site de référence Venia - 2021.02.24 qui comprend la dernière version de CIF Core Components v1.8.0. Voir [Site de référence Venia CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) pour plus d’informations.
 
-* Composants principaux CIF version 1.8.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) pour plus d’informations.
+* Publication CIF composants principaux v1.8.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) pour plus d’informations.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -91,7 +91,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est
 ### Nouveautés {#what-is-new-cloud-manager}
 
 
-* Les clients Assets peuvent désormais choisir quand et où déployer leur instance de Brand Portal en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme ordinaire (autre qu’un environnement de test) avec la solution Assets, Brand Portal peut désormais être configuré dans l’environnement de production. L’approvisionnement ne peut être effectué qu’une seule fois sur l’environnement de production.
+* Les clients et clientes d’Assets peuvent désormais choisir quand et où déployer leur instance de Brand Portal en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme standard (autre que l’environnement de test Sandbox) avec la solution Assets, Brand Portal peut désormais être mis en service sur l’environnement de production. L’approvisionnement ne peut être effectué qu’une seule fois sur l’environnement de production.
 
 * L’archétype de projet AEM utilisé dans la création de projet et de sandbox a été mis à jour à la version 25.
 
@@ -101,7 +101,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est
 
 * L’interface utilisateur de Cloud Manager informe un utilisateur qui ne pourrait pas temporairement ajouter/mettre à jour le nom de domaine, car l’environnement associé dispose soit d’un pipeline en cours d’exécution qui lui est associé, soit une étape d’approbation en attente.
 
-* Propriétés définies dans le client `pom.xml` les fichiers dotés du préfixe sonar sont désormais supprimés dynamiquement afin d’éviter les échecs d’analyse de génération et de qualité.
+* Les propriétés définies dans les fichiers `pom.xml` clients précédés d’un préfixe sonar sont désormais supprimées dynamiquement pour éviter les échecs d’analyse de la génération et de la qualité.
 
 * L’interface utilisateur de Cloud Manager informe un utilisateur qui ne peut pas temporairement sélectionner un certificat SSL s’il est utilisé par un nom de domaine en cours de déploiement.
 
@@ -159,7 +159,7 @@ La date de publication de l’analyseur de bonnes pratiques v2.1.2 est le 18 f�
 ### Nouveautés des outils de refactorisation du code {#what-is-new-crt}
 
 * Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce module comprend plusieurs correctifs pour Repository Modernizer.
-Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce module externe.
+Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) pour en savoir plus sur ce module externe.
 
 ### Correctifs {#bug-fixes-crt}
 

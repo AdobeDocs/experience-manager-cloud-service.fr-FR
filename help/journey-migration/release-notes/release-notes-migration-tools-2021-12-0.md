@@ -3,10 +3,10 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2021.12.0
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 99%
 
 ---
 
@@ -43,5 +43,5 @@ La date de publication de l’outil de transfert de contenu version v1.7.10 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Bouton bascule ajouté à la phase d’extraction dans l’outil de transfert de contenu pour permettre aux utilisateurs de désactiver la [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) lors de l’extraction. Pour des vitesses d’ingestion optimales, la pré-copie lors de l’ingestion doit être désactivée pour les petits jeux de migration ou si seulement quelques objets Blob ont été ajoutés depuis la dernière ingestion.
+* Bouton bascule ajouté à la phase d’extraction dans l’outil de transfert de contenu pour permettre aux utilisateurs de désactiver la [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) lors de l’extraction. Pour des vitesses d’ingestion optimales, la pré-copie lors de l’ingestion doit être désactivée pour les petits jeux de migration ou si seulement quelques objets Blob ont été ajoutés depuis la dernière ingestion.
 * Mappage des utilisateurs mis à jour afin d’utiliser une API de gestion des utilisateurs améliorée qui lui permet d’obtenir 2 000 utilisateurs à la fois, ce qui améliore considérablement les performances.

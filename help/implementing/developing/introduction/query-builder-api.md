@@ -2,10 +2,10 @@
 title: API Query Builder
 description: La fonctionnalité du générateur de requêtes de partage de ressources est exposée par le biais d’une API Java™ et d’une API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2008'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 99%
 
 ---
 
@@ -27,9 +27,9 @@ L’API REST permet d’accéder aux mêmes fonctionnalités via HTTP avec les r
 
 ## Session Gem {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=fr) est une série de sessions techniques approfondies sur Adobe Experience Manager dispensées par des experts Adobe.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) est une série de sessions techniques approfondies sur Adobe Experience Manager dispensées par des experts Adobe.
 
-Vous pouvez [examiner la session dédiée à Query Builder](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=fr) pour une présentation et utiliser l’outil.
+Vous pouvez [examiner la session dédiée à Query Builder](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) pour une présentation et utiliser l’outil.
 
 ## Exemples de requêtes {#sample-queries}
 

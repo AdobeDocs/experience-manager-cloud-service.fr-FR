@@ -2,9 +2,9 @@
 title: Création et gestion des affichages dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des affichages dans Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '649'
 ht-degree: 89%
 
 ---
@@ -133,4 +133,4 @@ Toutes les opérations de dossier sont accessibles via la barre d’actions de s
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez appris à créer et gérer des affichages pour votre projet, vous devez continuer votre parcours Screens as a Cloud Service en consultant le document [Attribution d’un canal à un affichage dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=fr).
+Maintenant que vous avez appris à créer et gérer des affichages pour votre projet, vous devez continuer votre parcours Screens as a Cloud Service en consultant le document [Attribution d’un canal à un affichage dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

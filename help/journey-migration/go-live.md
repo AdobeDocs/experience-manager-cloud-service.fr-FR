@@ -2,7 +2,7 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 93%
@@ -126,7 +126,7 @@ Passez en revue cette liste d’activités pour vous assurer d’effectuer une m
 * Effectuez la dernière mise à jour du contenu.
 * Validez les configurations du Dispatcher.
    * Utilisez un programme de validation de Dispatcher local qui facilite la configuration, la validation et la simulation locale du Dispatcher.
-      * [Configurez les outils du Dispatcher local.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=fr#prerequisites)
+      * [Configurez les outils du Dispatcher local.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
    * Examinez attentivement la configuration de l’hôte virtuel.
       * La solution la plus simple (et celle par défaut) est d’inclure `ServerAlias *` dans votre fichier d’hôte virtuel dans le `/dispatcher/src/conf.d/available_vhostsfolder`.
          * Ainsi, les alias d’hôte utilisés par les tests fonctionnels du produit, l’invalidation du cache du Dispatcher et les clones pourront tous fonctionner.

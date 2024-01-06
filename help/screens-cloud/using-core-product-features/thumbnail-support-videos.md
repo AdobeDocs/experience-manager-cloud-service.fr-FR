@@ -3,10 +3,10 @@ title: Prise en charge des miniatures pour les vidéos dans Screens as a Cloud 
 description: Cette page décrit comment ajouter la prise en charge des miniatures pour les vidéos dans Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '557'
-ht-degree: 100%
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Pour utiliser des miniatures dans les vidéos, procédez comme suit :
 1. Accédez à un canal Screens existant ou créez-en un.
 
    >[!NOTE]
-   >Pour savoir comment créer un canal et ajouter du contenu à un canal, consultez [Création et gestion d’un canal dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=fr).
+   >Pour savoir comment créer un canal et ajouter du contenu à un canal, consultez [Création et gestion d’un canal dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
 
 1. Sélectionnez le canal. Dans la barre d’actions, cliquez sur **Modifier** pour ouvrir l’éditeur.
 

@@ -3,10 +3,10 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.1.0
 feature: Release Information
 exl-id: cbd0c316-bda3-48fb-89d6-a8f97bad1970
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 100%
+source-wordcount: '133'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ La date de publication de l’outil de transfert de contenu version v1.7.18 est
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Bouton bascule ajouté à la phase d’extraction dans l’outil de transfert de contenu pour permettre aux utilisateurs de désactiver la [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) lors de l’extraction. Pour des vitesses d’extraction optimales, la pré-copie lors de l’extraction doit être désactivée pour les petits jeux de migration ou si seulement quelques objets Blob ont été ajoutés depuis la dernière extraction.
+* Bouton bascule ajouté à la phase d’extraction dans l’outil de transfert de contenu pour permettre aux utilisateurs de désactiver la [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) lors de l’extraction. Pour des vitesses d’extraction optimales, la pré-copie lors de l’extraction doit être désactivée pour les petits jeux de migration ou si seulement quelques objets Blob ont été ajoutés depuis la dernière extraction.
 
 ### Correctifs {#bug-fixes-ctt}
 
