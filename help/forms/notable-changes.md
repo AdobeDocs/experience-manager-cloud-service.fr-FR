@@ -3,10 +3,10 @@ title: Quelles sont les différences entre AEM 6.5 Forms et les Cloud Service AE
 description: Comparez AEM Forms 6.5 et AEM Cloud Services et découvrez les modifications les plus importantes avant de procéder à la mise à niveau ou à la migration vers Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 69%
+source-wordcount: '1317'
+ht-degree: 64%
 
 ---
 
@@ -52,7 +52,9 @@ Adobe Experience Manager Forms as a Cloud Service apporte des modificatio
 
   La variable [utilitaire de migration](/help/forms/migrate-to-forms-as-a-cloud-service.md) vous aide à migrer vos formulaires contenant des règles personnalisées (créées dans l’éditeur de code). L’utilitaire convertit ces règles en fonctions personnalisées prises en charge sur Forms as a Cloud Service. Vous pouvez utiliser les fonctions réutilisables avec l’éditeur de règles pour continuer à accéder aux résultats obtenus avec les scripts de règles. Les fonctions `onSubmitError` ou `onSubmitSuccess` sont désormais disponibles en tant qu’actions dans l’éditeur de règles.
 
-* **Service de préremplissage :** par défaut, le service de préremplissage fusionne les données avec un formulaire adaptatif au niveau du client plutôt que de fusionner les données sur le serveur dans AEM Forms 6.5. Cette fonctionnalité permet de réduire le temps nécessaire au préremplissage d’un formulaire adaptatif. Vous pouvez toujours procéder à la configuration pour exécuter l’action de fusion sur le serveur Adobe Experience Manager Forms.
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **Service de préremplissage :** Le service de préremplissage récupère les données du serveur et les fusionne pour préremplir votre Forms adaptatif côté client. Cette fonctionnalité permet d’améliorer le temps nécessaire au remplissage d’un formulaire adaptatif. Vous pouvez toujours configurer la variable [service prefill](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) pour exécuter l’action de fusion sur le serveur Adobe Experience Manager Forms.
 
 * **Actions d’envoi :** l’action d’envoi **Envoyer par e-mail** fournit des options pour envoyer des pièces jointes et joindre un document d’enregistrement (DE) par e-mail. Vous pouvez l’utiliser à la place de la fonction **Email en tant que PDF** action disponible dans AEM 6.5 Forms.
 
