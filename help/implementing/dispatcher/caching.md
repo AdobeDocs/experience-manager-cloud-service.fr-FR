@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Découvrez les principes de base de la mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
-ht-degree: 93%
+source-wordcount: '2865'
+ht-degree: 90%
 
 ---
 
@@ -241,6 +241,28 @@ Pour les environnements créés en octobre 2023 ou version ultérieure, afin de 
 Envoyez un ticket d’assistance si vous souhaitez que ce comportement soit désactivé.
 
 Pour les environnements créés avant octobre 2023, il est recommandé de configurer le `ignoreUrlParams` property as [documenté ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
+
+Il existe deux possibilités d&#39;ignorer les paramètres marketing. (Où la première est préférée pour ignorer le cache via les paramètres de requête) :
+
+1. Ignorez tous les paramètres et autorisez de manière sélective les paramètres utilisés.
+Dans l’exemple suivant uniquement `page` et `product` Les paramètres ne sont pas ignorés et les requêtes sont transférées à l’éditeur.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. Autoriser tous les paramètres à l&#39;exception des paramètres marketing. Le fichier [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) définit une liste des paramètres marketing couramment utilisés qui seront ignorés. Adobe ne mettra pas à jour ce fichier. Il peut être étendu par les utilisateurs en fonction de leurs fournisseurs marketing.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Invalidation du cache du Dispatcher {#disp}
