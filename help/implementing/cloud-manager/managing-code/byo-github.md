@@ -3,12 +3,13 @@ title: Utiliser vos propres référentiels GitHub dans Cloud Manager
 description: Découvrez comment configurer Cloud Manager pour qu’il fonctionne avec vos propres référentiels GitHub.
 feature: Release Information
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: ce9d65179d9cc1f02f786516554e07c95a89484d
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 70%
 
 ---
+
 
 # Utiliser vos propres référentiels GitHub dans Cloud Manager {#byo-github}
 
@@ -54,7 +55,7 @@ Cloud Manager connaît désormais votre référentiel GitHub, mais il doit touj
    ![Validation de la propriété du référentiel privé.](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
 1. Cloud Manager utilise une application GitHub pour interagir de manière sécurisée avec votre référentiel.
-   * Une personne propriétaire de votre organisation GitHub doit installer l’application qui se trouve à l’adresse `https://github.com/apps/cloud-manager-for-aem-stage` et accordez l’accès au référentiel.
+   * Une personne propriétaire de votre organisation GitHub doit installer l’application qui se trouve à l’adresse `https://github.com/apps/cloud-manager-for-aem` et accordez l’accès au référentiel.
    * Consultez la documentation de GitHub pour plus d’informations sur la manière dont cela est effectué.
 
 1. Pour renforcer la sécurité, vous devez créer un fichier secret dans la branche par défaut de votre référentiel. Sélectionner **Générer**.
