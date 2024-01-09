@@ -4,26 +4,27 @@ description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une acti
 keywords: comment sélectionner une action d’envoi pour un formulaire adaptatif, connecter un formulaire adaptatif à la liste sharepoint, connecter un formulaire adaptatif à la bibliothèque de documents sharepoint, connecter un formulaire adaptatif au modèle de données de formulaire
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
+source-git-commit: 3cd10760fa48f4aa1810877f79476be744f048d1
 workflow-type: tm+mt
-source-wordcount: '4102'
-ht-degree: 72%
+source-wordcount: '4090'
+ht-degree: 76%
 
 ---
 
 # Action Envoyer pour formulaire adaptatif {#configuring-the-submit-action}
 
-<span class="preview"> Adobe recommande d’utiliser les composants principaux pour [Ajout d’un Forms adaptatif à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer une Forms adaptative autonome](/help/forms/creating-adaptive-form-core-components.md). </span>
+<span class="preview"> Adobe recommande d’utiliser les composants principaux pour [ajouter des formulaires adaptatifs à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer des formulaires adaptatifs autonomes](/help/forms/creating-adaptive-form-core-components.md). </span>
 
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Cet article |
-| Application | ✅ Composants principaux de formulaire adaptatif, ❎ [Composants de base de formulaires adaptatifs](/help/forms/configuring-submit-actions.md) |
+
+<!--| Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |-->
 
 
-Une action Envoyer permet de choisir la destination des données capturées via un formulaire adaptatif. Elle se déclenche lorsqu’un utilisateur clique sur la variable **[!UICONTROL Envoyer]** sur un formulaire adaptatif. Forms as a Cloud Service, pour Adaptive Forms basé sur les composants principaux, offre un tableau d’actions d’envoi préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
+Une action Soumettre vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle se déclenche lorsqu’un utilisateur clique sur la variable **[!UICONTROL Envoyer]** sur un formulaire adaptatif. Forms as a Cloud Service, pour Adaptive Forms basé sur les composants principaux, offre un tableau d’actions d’envoi préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
 
 * Envoyez facilement des données de formulaire par courrier électronique.
 * Lancez Microsoft Power Automatisez les flux ou les flux de AEM lors de la transmission des données.
@@ -37,14 +38,14 @@ Vous pouvez également [étendre les actions d’envoi par défaut ;](custom-sub
 
 Pour sélectionner et configurer une action Envoyer pour votre formulaire :
 
-1. Ouvrez l’explorateur de contenu , puis sélectionnez l’option **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
-1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
+1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
 
-1. Cliquez sur le bouton  **[!UICONTROL Envoi]** .
+1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
 
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une action d’envoi.](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Sélectionnez et configurez un **[!UICONTROL Action Envoyer]**, en fonction de vos besoins. Pour plus d’informations sur l’action Envoyer sélectionnée, voir :
+1. Sélectionnez et configurez une **[!UICONTROL action d’envoi]** en fonction de vos besoins. Pour plus d’informations sur l’action Envoyer sélectionnée, voir :
 
    * [Envoyer un e-mail](#send-email)
    * [Envoyer à SharePoint](#submit-to-sharedrive)
@@ -53,7 +54,7 @@ Pour sélectionner et configurer une action Envoyer pour votre formulaire :
    * [Envoyer vers le point d’entrée REST](#submit-to-rest-endpoint)
    * [Envoyer à OneDrive](#submit-to-onedrive)
    * [Appeler un processus AEM](#invoke-an-aem-workflow)
-   * [Envoyer à Power Automate](#microsoft-power-automate)
+   * [Envoyer à Power Automate](#microsoft-power-automate)
    * [Envoyer à Workfront Fusion](#workfront-fusion)
 
 ## Envoyer un e-mail {#send-email}
@@ -421,7 +422,7 @@ Pour définir les valeurs d’une configuration, [générez des configurations O
 
 
 
-## Envoyer à Power Automate {#microsoft-power-automate}
+## Envoyer à Power Automate {#microsoft-power-automate}
 
 Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client. Voici quelques exemples de ce que vous pouvez faire après l’intégration d’un formulaire adaptatif à Microsoft® Power Automate :
 
@@ -430,9 +431,9 @@ Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Powe
 * Exécuter des calculs complexes sur les données capturées
 * Enregistrer des données de formulaires adaptatifs dans les systèmes de stockage selon un planning prédéfini
 
-L’éditeur de Forms adaptatif fournit la variable **Appeler un flux Microsoft® Power Automate** Action d’envoi pour envoyer des données de formulaires adaptatifs, des pièces jointes et un document d’enregistrement à Power Automate Cloud Flow. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [connectez votre instance Forms as a Cloud Service à Microsoft® Power Automate](forms-microsoft-power-automate-integration.md).
+L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un flux Microsoft® Power Automate** pour envoyer des données de formulaires adaptatifs, des pièces jointes et un document d’enregistrement au flux de cloud Power Automate. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [connectez votre instance Forms as a Cloud Service à Microsoft® Power Automate](forms-microsoft-power-automate-integration.md).
 
-Après une configuration réussie, utilisez la méthode [Appeler un flux Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Action d’envoi pour envoyer des données à un flux d’automatisation Power.
+Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un flux Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) pour envoyer des données à un flux Power Automate.
 
 ## Envoyer à Workfront Fusion {#workfront-fusion}
 
