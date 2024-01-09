@@ -1,12 +1,12 @@
 ---
 title: Découvrez comment rechercher des ressources dans [!DNL Assets view]?
-description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
+description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. La puissante fonctionnalité de recherche vous permet de découvrir rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 77%
+source-wordcount: '1470'
+ht-degree: 65%
 
 ---
 
@@ -29,6 +29,20 @@ Pour rechercher des ressources,
    * Effectuez une recherche à l’aide d’un mot-clé ou vous pouvez changer de dossier. Appuyez sur Entrée.
 
    * Commencez à travailler avec une ressource récemment consultée en la recherchant directement. Cliquez dans la zone de recherche et sélectionnez une ressource récemment consultée parmi les suggestions.
+
+## Recherche de ressources à l’aide d’Adobe Firefly
+
+Si vous recherchez une ressource non disponible dans l’un des dossiers de ressources, utilisez la variable [!UICONTROL Adobe Firefly] fonctionnalité de recherche de ressources dans [!UICONTROL Adobe Experience Manager Assets]. Il vous permet de rechercher efficacement des ressources qui ne sont peut-être pas stockées dans les dossiers désignés. Cette fonctionnalité est actuellement accessible uniquement aux utilisateurs disposant du droit express. <br> Par exemple, vous pouvez rechercher une ressource à l’aide du mot-clé `Bugatti Type 57`. Lors de la recherche de `Bugatti Type 57`, aucun résultat n’est trouvé.
+
+![Intégration de Firefly](assets/firefly-integration.jpg)
+*Figure : Aucun résultat trouvé pour le type Bugatti 57 dans le dossier de ressources.*
+
+Dans la barre de recherche, saisissez le nom de la ressource, puis cliquez sur **[!UICONTROL Générer]**.
+
+![Intégration de Firefly](assets/bugatti-type-57.jpg)
+*Figure : Ressources de référence recherchées à l’aide de la fonctionnalité de recherche de ressources d’Adobe Firefly.*
+
+Les exemples de ressources s’affichent à l’écran. Vous pouvez charger ces ressources dans le dossier de votre choix pour un accès facile.
 
 ## Filtrer les résultats de la recherche {#refine-search-results}
 
@@ -120,7 +134,6 @@ Pour supprimer des filtres personnalisés :
 
 1. Cliquez sur **[!UICONTROL Confirmer]** pour supprimer les filtres de l’interface utilisateur.
 
-
 ## Recherches enregistrées {#saved-search}
 
 La fonctionnalité de recherche est assez facile à utiliser dans [!DNL Assets view]. Dans la zone de recherche, vous pouvez simplement saisir un mot-clé et appuyer sur Retour pour afficher les résultats. Vous pouvez également rechercher rapidement vos mots-clés récemment recherchés en un seul clic.
@@ -146,11 +159,21 @@ When userA is searching and userB add an asset that matches search results, will
 
 Vous pouvez sélectionner les ressources qui s’affichent dans les résultats de recherche et effectuer les opérations suivantes :
 
+* **Rechercher une image similaire**: recherchez une ressource image similaire dans l’interface utilisateur Assets en fonction des métadonnées et des balises intelligentes.
+
 * **Détails** : affichez et modifiez les propriétés de la ressource.
+
+* **Télécharger** : téléchargez une ressource.
 
 * **Ajouter à la collection** : ajoutez la ressource sélectionnée à une collection.
 
-* **Télécharger** : téléchargez une ressource.
+* **Épingler à l’accès rapide**: [Épinglez une ressource](my-workspace-assets-view.md) pour y accéder plus rapidement lorsque vous en aurez besoin ultérieurement. Tous les éléments épinglés s’affichent dans la section **Accès rapide** de Mon espace de travail.
+
+* **Ouvrir dans Adobe Express**: modifiez une image dans l’Adobe Express intégré à partir de l’écran Adobe Experience Manager Assets.
+
+* **Modifier**: modifiez l’image à l’aide de Adobe Express.
+
+* **Partager le lien** : [partagez des liens](share-links-for-assets-view.md) d’une ressource avec d’autres personnes utilisatrices, afin qu’elles puissent y accéder et la télécharger.
 
 * **Supprimer** : supprimez une ressource.
 
@@ -160,15 +183,11 @@ Vous pouvez sélectionner les ressources qui s’affichent dans les résultats d
 
 * **Renommer** : renommez une ressource.
 
+* **Copier vers les bibliothèques**: ajoutez une ressource à la bibliothèque.
+
 * **Affecter des tâches** : affectez des tâches aux utilisateurs et utilisatrices pour une ressource.
 
-* **Partager le lien** : [partagez des liens](share-links-for-assets-view.md) d’une ressource avec d’autres personnes utilisatrices, afin qu’elles puissent y accéder et la télécharger.
-
 * **Surveiller** : [surveillez les opérations](manage-notifications-assets-view.md) effectuées sur une ressource.
-
-* **Afficher l’emplacement du fichier** : accédez à l’emplacement du dossier de ressources.
-
-* **Épingler à l’accès rapide**: [Épinglez une ressource](my-workspace-assets-view.md) pour y accéder plus rapidement lorsque vous en aurez besoin ultérieurement. Tous les éléments épinglés s’affichent dans la section **Accès rapide** de Mon espace de travail.
 
 ## Configuration de la première page d’accueil de la recherche {#configuring-search-first-homepage}
 
