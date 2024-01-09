@@ -5,7 +5,7 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 73%
+ht-degree: 99%
 
 ---
 
@@ -15,12 +15,12 @@ Découvrez comment définir des règles de traduction pour identifier le contenu
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours de traduction AEM, [Configuration de l’intégration de traduction](configure-connector.md) vous avez appris à installer et configurer votre intégration de traduction et vous devez maintenant :
+Dans le document précédent du parcours de traduction découplée AEM, [Configuration du connecteur de traduction](configure-connector.md), vous avez appris à installer et configurer votre connecteur de traduction et vous devez maintenant :
 
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
-Maintenant que votre intégration est configurée, cet article vous guide tout au long de l’étape suivante d’identification du contenu à traduire.
+Maintenant que votre connecteur est configuré, cet article vous guide tout au long de l’étape suivante pour identifier le contenu à traduire.
 
 >[!CAUTION]
 >
@@ -39,7 +39,7 @@ Ce document vous aide à comprendre comment utiliser les règles de traduction d
 
 ## Règles de traduction {#translation-rules}
 
-Les fragments de contenu, qui représentent votre contenu découplé, peuvent contenir de nombreuses informations organisées dans des champs structurés. Selon les besoins de votre projet, il est probable que tous les champs d’un fragment de contenu ne doivent pas être traduits.
+Les fragments de contenu, qui représentent votre contenu découplé, peuvent contenir de nombreuses informations organisées dans des champs structurés. Selon les besoins de votre projet, il est probable que tous les champs d’un fragment de contenu n’aient pas besoin d’être traduits.
 
 Les règles de traduction identifient le contenu à inclure dans les projets de traduction ou à exclure. Lorsque le contenu est traduit, AEM extrait ou récupère le contenu en fonction de ces règles. Ainsi, seul le contenu à traduire est envoyé au service de traduction.
 
@@ -54,7 +54,7 @@ Les modèles de fragment de contenu, qui définissent la structure de vos fragme
 
 >[!TIP]
 >
->En règle générale, l’architecte de contenu met à la disposition du spécialiste de la traduction les **Nom de la propriété** de tous les champs nécessaires à la traduction. Ces noms sont nécessaires pour configurer les règles de traduction. En tant que spécialiste de la traduction, vous [pouvez trouver vous-même les **Noms de la propriété**](getting-started.md#content-modlels) comme décrit précédemment dans ce parcours.
+>En règle générale, l’architecte de contenu met à la disposition du spécialiste de la traduction les **noms de la propriété** de tous les champs nécessaires à la traduction. Ces noms sont nécessaires pour configurer les règles de traduction. En tant que spécialiste de la traduction, vous [pouvez trouver vous-même les **Noms de la propriété**](getting-started.md#content-modlels) comme décrit précédemment dans ce parcours.
 
 ## Création de règles de traduction {#creating-rules}
 
@@ -64,10 +64,10 @@ Les règles de traduction sont conçues pour gérer ces scénarios. Cependant, d
 
 Il existe une console **Configuration de traduction** disponible pour la configuration des règles de traduction. Pour y accéder :
 
-1. Accédez à **Outils** > **Général**.
+1. Accédez à **Outils** -> **Général**.
 1. Sélectionnez **Configuration de traduction**.
 
-Dans le **Configuration de traduction** Dans l’interface utilisateur, plusieurs options sont disponibles pour vos règles de traduction. Dans cette partie, nous mettons en évidence les étapes les plus nécessaires et les plus courantes requises pour une configuration de localisation découplée de base.
+Dans l’IU **Configuration de traduction**, plusieurs options sont disponibles pour vos règles de traduction. Dans cette partie, nous mettons en évidence les étapes les plus nécessaires et les plus courantes requises pour une configuration de localisation découplée de base.
 
 1. Sélectionner **Ajouter un contexte** pour ajouter un chemin. Il s’agit du chemin d’accès du contenu qui sera affecté par la règle.
    ![Ajoutez du contexte](assets/add-translation-context.png)
@@ -76,8 +76,8 @@ Dans le **Configuration de traduction** Dans l’interface utilisateur, plusieur
 1. Sélectionnez le contexte que vous avez créé, puis sélectionnez **Modifier**. Vous ouvrez ainsi la fenêtre de l’**Éditeur de règles de traduction** pour configurer les propriétés.
    ![Éditeur de règles de traduction](assets/translation-rules-editor.png)
 1. Par défaut, toutes les configurations sont héritées du chemin d’accès parent, dans ce cas `/content/dam`. Désélectionnez l’option **Hériter de`/content/dam`** afin d’ajouter des champs supplémentaires à la configuration.
-1. Lorsque cette option est désactivée, sous la variable **Général** dans la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous souhaitez [précédemment identifié comme champs à traduire.](getting-started.md#content-models)
-   1. Dans le **Nouvelle propriété** , saisissez le nom de la propriété. Notez que les options **Traduire** et **Hériter** sont cochées automatiquement.
+1. Une fois la case désélectionnée, dans la section **Général** de la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous avez [précédemment identifiés comme des champs à traduire.](getting-started.md#content-models)
+   1. Dans le **Nouvelle propriété** , saisissez le nom de la propriété. Les options **Traduire** et **Hériter** sont cochées automatiquement.
    1. Sélectionnez **Ajouter**.
    1. Répétez ces étapes pour tous les champs que vous devez traduire.
    1. Sélectionnez **Enregistrer**.
@@ -98,7 +98,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * comprendre ce que font les règles de traduction ;
 * être capable de définir vos propres règles de traduction.
 
-Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Traduire le contenu](translate-content.md) où vous découvrez comment votre intégration et vos règles fonctionnent ensemble pour traduire du contenu headless.
+Tirez parti de ces connaissances et continuez à progresser sur votre parcours de traduction découplée AEM en consultant le document [Traduire le contenu](translate-content.md), dans lequel vous découvrirez comment votre connecteur et vos règles s’associent pour traduire du contenu découplé.
 
 ## Ressources supplémentaires {#additional-resources}
 

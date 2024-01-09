@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
 source-wordcount: '4570'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 90%
          + [Notes de mise à jour de la version 2023.8.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
          + [Notes de mise à jour de la version 2023.7.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
          + [Notes de mise à jour de la version 2023.6.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
-         + [Notes de mise à jour de 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
+         + [Notes de mise à jour de la version 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [Notes de mise à jour de la version 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
          + [Notes de mise à jour de la version 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
       + 2022 {#2022}
@@ -78,11 +78,11 @@ ht-degree: 90%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Notes de mise à jour de la maintenance de la version 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md)
-         + [Notes de mise à jour de la maintenance de la version 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
-         + [Notes de mise à jour de la maintenance de la version 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
-         + [Notes de mise à jour de la maintenance de la version 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
-         + [Notes de mise à jour de la maintenance de la version 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
+         + [Notes de mise à jour de la maintenance 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md)
+         + [Notes de mise à jour de la maintenance 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
+         + [Notes de mise à jour de la maintenance 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
+         + [Notes de mise à jour de la maintenance 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
+         + [Notes de mise à jour de la maintenance 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
          + [Notes de mise à jour de la maintenance 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [Notes de mise à jour de la maintenance 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [Notes de mise à jour de la maintenance 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
@@ -335,11 +335,11 @@ ht-degree: 90%
          + [Configuration du fragment de contenu](/help/sites-cloud/administering/content-fragments/setup.md)
          + [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
-         + [Création de contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [ – créer du contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Suppression de considérations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Structure d’analyse](/help/sites-cloud/administering/content-fragments/analysis.md)
-         + [Raccourcis clavier ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
+         + [Raccourcis clavier](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Création de site {#site-creation}
          + [Création d’un site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Activation du pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -471,7 +471,7 @@ ht-degree: 90%
       + [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [Réutiliser les fragments de contenu à l’aide de MSM pour Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=fr)
    + Dynamic Media {#dynamicmedia}
       + Parcours Dynamic Media : principes de base {#dm-journey}
          + [Première partie : présentation de Dynamic Media - Cas d’utilisation - Flux des ressources dans le système](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -554,7 +554,7 @@ ht-degree: 90%
       + [Configurer le  [!DNL enhanced connector]  pour  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Mettre à jour  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
-   + Intégration à Adobe Express {#integration-adobe-express}
+   + Intégration avec Adobe Workfront {#integration-adobe-express}
       + [Module complémentaire AEM Assets pour Adobe Express](/help/assets/addon-adobe-express.md)
 
    + Intégration avec Creative Cloud {#integration-creative-cloud}
@@ -593,26 +593,26 @@ ht-degree: 90%
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Connexion d’un formulaire adaptatif à l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-         + [Configuration du stockage [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuration du stockage  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurer les services cloud  [!DNL Microsoft Dynamics 365] et [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
          + [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
    + Formulaires adaptatifs {#adaptive-forms-authoring}
       + [Créer un formulaire adaptatif](/help/forms/create-an-adaptive-form.md)
-      + [Création d’un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments.md)
+      + [Créer un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments.md)
       + [Ajouter un formulaire adaptatif à une page AEM Sites ou un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Composants principaux {#authoring-adaptive-forms-core-components}
          + Création d’un formulaire adaptatif {#create-an-adaptive-form-on-forms-cs}
-            + [Création d’un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)
-            + [Création d’un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments-core-components.md)
-            + [Création de thèmes pour un formulaire adaptatif - Composants principaux](/help/forms/using-themes-in-core-components.md)
-            + [Création d’un modèle de formulaire adaptatif basé sur les composants principaux](/help/forms/template-editor-core-components.md)
+            + [Créer un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)
+            + [Créer un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments-core-components.md)
+            + [Création de thèmes pour un formulaire adaptatif – Composants principaux](/help/forms/using-themes-in-core-components.md)
+            + [Créer un formulaire adaptatif basé sur les composants principaux](/help/forms/template-editor-core-components.md)
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
             + [Utiliser la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Créer des formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
-            + [Configurer l’action Envoyer pour un formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)
+            + [Définition de l’action Envoyer pour un formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)
             + [Utilisation de Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
@@ -676,7 +676,7 @@ ht-degree: 90%
       + [Référence de l’API Adaptive Forms](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Référence de l’API Communications du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [Référence de l’API JavaScript du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [Référence de l’API Java du Service Cloud d’AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
+      + [Référence de l’API Java du Service Cloud d’AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
    + Résolution des problèmes {#troubleshooting-aem-forms-cloud-service}
       + [Installation et configuration](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Mise en cache du Dispatcher et du CDN](/help/forms/troubleshooting-caching-performance.md)
@@ -685,7 +685,7 @@ ht-degree: 90%
    + Présentation de Screens as a Cloud Service {#overview}
       + [Présentation](/help/screens-cloud/introduction/introduction.md)
       + [Comprendre les définitions de rôle](/help/screens-cloud/introduction/personas-screens-cloud.md)
-      + [Intégration d’Adobe Analytics avec Screens Cloud](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
+      + [Intégration d’Adobe Analytics avec Screens](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
    + Intégration de Screens as a Cloud Service {#onboarding-screens-cloud}
       + [Première connexion](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + Ajout du programme Screens en tant que module complémentaire dans Cloud Manager {#adding-screens-addon}
@@ -756,9 +756,9 @@ ht-degree: 90%
    + [PWA Studio dans Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migration](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services {#edge-delivery}
++ Edge Delivery Services {#edge-delivery}
    + [AEM et Edge Delivery Services](/help/edge/overview.md)
-   + [Utilisation de la diffusion Edge](/help/edge/using.md)
+   + [Utiliser Edge Delivery](/help/edge/using.md)
    + [Création de contenu pour une diffusion Edge](/help/edge/authoring.md)
    + [Publication de contenu pour la diffusion Edge](/help/edge/publishing.md)
    + [Développement pour la diffusion Edge](/help/edge/developing.md)
@@ -815,13 +815,13 @@ ht-degree: 90%
       + [Fragment de contenu](/help/headless/setup/create-content-fragment.md)
       + [Point d’entrée GraphQL](/help/headless/setup/create-api-request.md)
    + Fragments de contenu {#content-fragments}
-      + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
-      + [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
-      + [Gestion des fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
+      + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=fr)
+      + [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=fr)
+      + [Gestion des fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=fr)
       + Création {#authoring}
-         + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
-         + [Éditeur de balisage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
-      + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+         + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=fr)
+         + [Éditeur de balisage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=fr)
+      + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=fr)
       + [Prévisualisation JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=fr)
    + API GraphQL {#graphql-api}
       + [API GraphQL pour les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
@@ -1057,7 +1057,7 @@ ht-degree: 90%
       + [Extension de la création de pages](/help/implementing/developing/extending/page-authoring.md)
       + [Extension des consoles](/help/implementing/developing/extending/consoles.md)
       + [Étendre les propriétés de page](/help/implementing/developing/extending/page-properties.md)
-      + [Extension de l’éditeur en bloc](/help/implementing/developing/extending/bulk-editor.md)
+      + [Développer l’éditeur en bloc](/help/implementing/developing/extending/bulk-editor.md)
       + [Extension de MSM](/help/implementing/developing/extending/msm.md)
    + Déploiement sur AEM as a Cloud Service {#deploying}
       + [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md)

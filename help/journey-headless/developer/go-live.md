@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -65,9 +65,9 @@ Pour préparer votre application AEM découplée pour son lancement, suivez les 
 
 Une fois que vous avez vérifié que tout a été testé et fonctionne correctement, vous êtes prêt à envoyer vos mises à jour de code vers un [référentiel Git centralisé dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=fr).
 
-Une fois les mises à jour chargées vers Cloud Manager, elles peuvent être déployées vers AEM as a Cloud Service à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
+Une fois les mises à jour chargées vers Cloud Manager, elles peuvent être déployées vers AEM as a Cloud Service à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
 
-Vous pouvez commencer à déployer votre code à l’aide du pipeline CI/CD de Cloud Manager, qui est largement couvert. [here](/help/implementing/deploying/overview.md).
+Vous pouvez commencer à déployer votre code en exploitant le pipeline CI/CD de Cloud Manager, qui est traité en détail [ici](/help/implementing/deploying/overview.md).
 
 ## Surveillance des performances {#performance-monitoring}
 
@@ -130,9 +130,9 @@ Si ce type de flexibilité est nécessaire pour votre projet, passez à la secti
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutorials pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
+* [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
 * [Présentation du déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr)
 * [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr)

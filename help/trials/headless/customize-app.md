@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1017'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 85%
 
 Commencez dans l’éditeur de fragment de contenu avec l’exemple d’application fourni avec votre essai d’AEM découplé déjà chargé. L’exemple d’application est optimisé par les fragments de contenu fournis via GraphQL. Utilisez l’éditeur de fragment de contenu pour vous familiariser avec l’éditeur en prévisualisant l’exemple d’application.
 
-1. Sélectionnez la variable **Aperçu** en haut à droite de l’écran de l’éditeur.
+1. Appuyez ou cliquez sur le bouton **Aperçu** en haut à droite de l’écran de l’éditeur.
 
 1. L’application de démonstration s’ouvre dans un nouvel onglet. L’application est pour la marque fictive de plein air WKND. Faites défiler la page vers le bas pour parcourir l’exemple de contenu.
 
@@ -45,7 +45,7 @@ Commencez dans l’éditeur de fragment de contenu avec l’exemple d’applicat
 
 L’éditeur de fragment de contenu affiche la disposition de base de l’application sous la forme d’un fragment de contenu de page. Les **Panneaux** représentent différentes pages de l’application, chacune d’elles étant son propre fragment de contenu. En modifiant ces fragments, vous pouvez changer le contenu de l’application.
 
-1. Sélectionner **Mtn Biker à Canyon** dans le **Panneaux** .
+1. Appuyez ou cliquez sur **Mtn Biker in Canyon** dans la section **Panneaux**.
 
    ![Sélectionner le panneau de texte](assets/do-not-localize/edit-header-1.png)
 
@@ -57,7 +57,7 @@ L’éditeur de fragment de contenu affiche la disposition de base de l’applic
 
 1. Remplacez le texte `Your next great adventure is calling` par `Choose your own adventure`. La modification est enregistrée automatiquement par l’éditeur.
 
-1. Sélectionner **Aperçu** en haut à droite de la fenêtre pour afficher vos modifications. L’aperçu de l’application de démonstration s’ouvre dans un nouvel onglet.
+1. Appuyez ou cliquez sur **Aperçu** en haut à droite de la fenêtre pour voir vos modifications. L’aperçu de l’application de démonstration s’ouvre dans un nouvel onglet.
 
    ![Aperçu de l’application de démonstration](assets/do-not-localize/edit-header-5-6.png)
 
@@ -87,9 +87,9 @@ Maintenant que vous avez modifié un titre dans l’application, essayez de chan
 
 1. L’image du cycliste est remplacée par l’image sélectionnée. L’éditeur enregistre automatiquement les modifications.
 
-1. Sélectionner **Aperçu** en haut à droite de la fenêtre pour afficher vos modifications. L’aperçu de l’application de démonstration s’ouvre dans un nouvel onglet. Cliquez sur Actualiser dans le navigateur pour afficher votre nouvelle image du cycliste avec un short jaune dans l’application.
+1. Appuyez ou cliquez sur **Aperçu** en haut à droite de la fenêtre pour voir vos modifications. L’aperçu de l’application de démonstration s’ouvre dans un nouvel onglet. Cliquez sur Actualiser dans le navigateur pour afficher votre nouvelle image du cycliste avec un short jaune dans l’application.
 
-Il est facile de mettre à jour des images et des ressources dans vos applications avec AEM CMS sans interface.
+Mettez à jour facilement les images et les ressources de vos applications avec le CMS découplé d’AEM.
 
 ## Ajouter une référence à un nouveau fragment de contenu dans l’application {#create-moment}
 
@@ -99,13 +99,13 @@ Maintenant que vous avez mis à jour l’image du cycliste, nous allons découvr
 
 1. Revenez à l’onglet du navigateur de l’éditeur de fragments de contenu depuis l’onglet Aperçu.
 
-1. Vous devez revenir au bon endroit dans l’éditeur de fragments de contenu. Les chemins de navigation situés en haut à gauche de l’éditeur indiquent où vous vous trouvez dans la hiérarchie du contenu. Sélectionner **Accueil WKND** dans les chemins de navigation pour revenir à cette page.
+1. Vous devez revenir au bon endroit dans l’éditeur de fragments de contenu. Les chemins de navigation situés en haut à gauche de l’éditeur indiquent où vous vous trouvez dans la hiérarchie du contenu. Appuyez ou cliquez sur **Accueil WKND** dans les chemins de navigation pour revenir à cette page.
 
 1. Sélectionnez le panneau **Mtn Biker on WKND Yellow**.
 
 1. Sélectionnez le calque **Mtn Biking - Shoppable**.
 
-1. Pour créer un appel à l’extérieur sur ce panneau, créez un fragment de contenu à moment Shoppable. Sélectionnez la variable **+ Créer un fragment** bouton .
+1. Pour créer un nouvel appel à l’extérieur sur ce panneau, vous devez créer un fragment de contenu de moment d’achat. Sélectionnez la variable **+ Créer un fragment** bouton .
 
    ![Ajouter un moment d’achat](assets/do-not-localize/add-reference-1-5.png)
 
@@ -126,7 +126,7 @@ Maintenant que vous avez mis à jour l’image du cycliste, nous allons découvr
    * **X** : `-5`
    * **Y** : `-10`
 
-1. Sélectionner **Aperçu** en haut à droite de la fenêtre pour afficher vos modifications. L’aperçu de l’application de démonstration s’ouvre dans un nouvel onglet. Cliquez sur Actualiser dans le navigateur pour tester le positionnement et effectuer les ajustements nécessaires dans l’éditeur.
+1. Appuyez ou cliquez sur **Aperçu** en haut à droite de la fenêtre pour voir vos modifications. L’aperçu de l’application de démonstration s’ouvre dans un nouvel onglet. Cliquez sur Actualiser dans le navigateur pour tester le positionnement et effectuer les ajustements nécessaires dans l’éditeur.
 
    ![Aperçu](assets/do-not-localize/add-reference-10-11-12.png)
 

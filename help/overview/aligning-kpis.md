@@ -5,7 +5,7 @@ exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Dans un monde numérique, il est possible de presque tout mesurer. Choisir des K
 
 1. **En fonction de votre objectif commercial, déterminez vos objectifs.** Vos objectifs représentent les résultats spécifiques que vous espérez réaliser en adoptant Experience Manager en tant que plateforme de gestion de contenu. Si votre objectif est d’augmenter les recettes en ligne, votre cible peut être d’atteindre une augmentation de 2 points de conversion pour toutes les pages accueillant du contenu marketing. Si votre objectif est de réduire les dépenses d’exploitation, votre cible pourrait être d’améliorer de 20 % la productivité des équipes responsables de la création du contenu numérique.
 
-   Idéalement, chaque cible doit avoir un chiffre de référence, tel que votre taux de conversion actuel pour une catégorie de pages donnée. Les chiffres de référence relatifs aux visites sur le site, aux conversions ou aux recettes en ligne sont relativement faciles à trouver. Pour les objectifs relatifs à la productivité ou au délai de mise sur le marché, il vous faudra certainement travailler à calculer un niveau de référence. Cela vaut la peine, cependant, parce qu&#39;avoir des objectifs clairs vous aide à tirer davantage parti de votre investissement en Experience Manager.
+   Idéalement, chaque cible doit avoir un chiffre de référence, tel que votre taux de conversion actuel pour une catégorie de pages donnée. Les chiffres de référence relatifs aux visites sur le site, aux conversions ou aux recettes en ligne sont relativement faciles à trouver. Pour les objectifs relatifs à la productivité ou au délai de mise sur le marché, il vous faudra certainement travailler à calculer un niveau de référence. Cette étape vaut la peine d’être réalisée, car des objectifs clairs vous aident à optimiser la valeur de votre investissement dans Experience Manager.
 
 1. **Pour chaque objectif, identifiez des indicateurs de performance.** Par exemple, votre objectif est peut-être de réduire de 100 000 $ les coûts juridiques associés aux violations de DRM. Un bon indicateur de performance peut être « 100 % des ressources expirées sont supprimées des propriétés numériques au plus tard à la date d’expiration ». Essayez de trouver plusieurs indicateurs pour chaque cible. Si vous commencez avec 2 à 3 objectifs commerciaux et 3 à 5 cibles, vous pourriez obtenir une liste de 15 à 20 indicateurs de performances.
 

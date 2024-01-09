@@ -6,7 +6,7 @@ exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Cette page vous aide à mieux comprendre AEM Screens et le fonctionnement de ce
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, l’architecture, etc. |
+| [Présentation](/help/overview/home.md) | Ce guide présente une vue d’ensemble d’Experience Manager as a Cloud Service, avec une introduction, sa terminologie, son architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version d’Experience Manager as a Cloud Service, notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les rubriques importantes relatives à la sécurité concernant Experience Manager as a Cloud Service. |
 | [Parcours d’intégration](/help/journey-onboarding/overview.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |

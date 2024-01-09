@@ -5,7 +5,7 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échel
 
 ![CMS full stack classique](assets/full-stack.png)
 
-Dans un CMS en pile complète, la fonctionnalité de manipulation de votre contenu se trouve dans le CMS. Les fonctionnalités de ce système constituent différents composants de la pile CMS. Une solution full stack présente de nombreux avantages.
+Dans un CMS full stack, toutes les fonctionnalités de manipulation de votre contenu se trouvent dans le système. Les fonctionnalités de ce système constituent différents composants de la pile CMS. Une solution full stack présente de nombreux avantages.
 
 * Vous n’avez qu’un seul système à administrer.
 * Le contenu est géré de manière centralisée.
@@ -62,7 +62,7 @@ Lorsque nous parlons d’un CMS découplé (ou sans tête), il s’agit d’un s
 
 ![CMS découplé](assets/headless-cms.png)
 
-Les services consommateurs, qu’il s’agisse d’expériences AR, d’un webshop, d’expériences mobiles, d’applications web progressives (PWA), etc., récupèrent le contenu du CMS sans interface utilisateur graphique et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
+Les services consommateurs (expériences de réalité augmentée, boutiques web, expériences mobiles, applications web progressives (PWA), etc.) récupèrent le contenu du CMS découplé et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
 
 Omettre la tête (en mode découplé) permet de simplifier le CMS en éliminant sa complexité. Vous pouvez ainsi transférer la responsabilité de rendu du contenu vers les services qui en ont réellement besoin et qui sont souvent mieux adaptés pour cela.
 
@@ -76,7 +76,7 @@ Ce découplage signifie que chaque service consommateur (frontal) peut créer so
 
 ## Les fondements technologiques {#technology}
 
-Une approche sans interface vous permet de créer une pile de technologies qui peut s’adapter facilement et rapidement aux futurs besoins d’expérience numérique.
+Une approche découplée permet de créer une pile technologique qui peut s’adapter facilement et rapidement aux besoins futurs en matière d’expérience digitale.
 
 Dans le passé, les API pour CMS étaient généralement basées sur REST. L’architecture REST (Representational state transfer) fournit des ressources sous la forme de texte sans état. Ce qui permet de lire et de modifier les ressources moyennant un ensemble d’opérations prédéfini. L’architecture REST a permis une grande interopérabilité entre les services sur le web en assurant une représentation sans état du contenu.
 
@@ -96,7 +96,7 @@ Le mode découplé offre toute la flexibilité nécessaire pour proposer vos exp
 
 Disposer de nombreuses chaînes différentes signifie qu’elles ont chacune leur propre système de présentation. Même s’ils consomment tous le même contenu par le biais d’API identiques, l’expérience peut varier en raison de présentations différentes. Il faut accorder toute l’attention et le soin nécessaires à assurer la cohérence de l’expérience client.
 
-En implémentant des systèmes de conception soignés, en partageant des bibliothèques de modèles et en utilisant des composants de conception réutilisables et des structures côté client établies et ouvertes, des expériences homogènes peuvent être assurées, mais cela doit être planifié.
+Il est possible d’assurer des expériences homogènes, ce qui nécessite de les planifier. Pour cela, vous devez mettre en œuvre des systèmes de conception soignés, partager des bibliothèques de modèles et exploiter des composants de conception réutilisables ainsi que des structures (côté client) ouvertes et bien établies.
 
 ## L’avenir est dans le mode découplé, et cela commence dès maintenant. {#future}
 
@@ -106,7 +106,7 @@ Il est impossible de prédire l’avenir, mais le mode découplé apporte l’ag
 
 ## AEM et mode découplé {#aem-and-headless}
 
-Au fur et à mesure que vous continuez à parcourir ce parcours de développement, vous découvrez comment AEM prend en charge la diffusion sans interface en même temps que ses fonctionnalités de remise en pile complète.
+Au fur et à mesure de ce parcours de développement, vous allez découvrir comment AEM prend en charge la diffusion en mode découplé, mais aussi ses fonctionnalités full stack de diffusion.
 
 En tant que leader du secteur de la gestion de l’expérience digitale, Adobe sait que la solution idéale pour répondre aux défis du monde réel auxquels les créateurs d’expériences sont confrontés est rarement tranchée. AEM ne prend donc pas seulement en charge les deux modèles, mais permet également leur association hybride en toute transparence, alliant ainsi les avantages des modes Découplé et Full stack pour vous aider à mieux diffuser votre contenu vers les consommateurs, où qu’ils se trouvent.
 
@@ -120,13 +120,13 @@ Merci de vous être engagé sur ce parcours découplé AEM ! Maintenant que vou
 * comprendre pourquoi et quand le mode découplé est nécessaire ;
 * savoir de manière plus large comment les concepts de découplage sont utilisés et interagissent.
 
-Tirez parti de ces connaissances et continuez votre parcours sans tête AEM en consultant le document. [Prise en main d’AEM sans affichage as a Cloud Service](getting-started.md) où vous apprenez à configurer les outils nécessaires et à commencer à réfléchir à la manière dont AEM aborde la diffusion de contenu sans interface et ses conditions préalables.
+Appuyez-vous sur ces connaissances et continuez votre parcours découplé AEM en consultant le document [Prise en main d’AEM découplé as a Cloud Service](getting-started.md). Vous y découvrirez comment configurer les outils nécessaires et de quelle manière réfléchir à l’utilisation d’un contenu découplé, ainsi que les conditions préalables qui s’y rapportent.
 
 ## Ressources supplémentaires {#additional-resources}
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en examinant le document [Prise en main d’AEM découplé as a Cloud Service](getting-started.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours découplé.
 
-* [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Comprendre la structure d’AEM as a Cloud Service
+* [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Comprendre la structure d’AEM as a Cloud Service
 * Un [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
 * La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels sur AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
+* [Tutoriels sur AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.

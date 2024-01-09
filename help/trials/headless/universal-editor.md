@@ -7,7 +7,7 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 12%
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ L’éditeur universel vous permet de modifier facilement votre texte en context
 
 1. Double-cliquez pour sélectionner le titre du dernier article à modifier.
 
-   ![Éditeur universel](assets/do-not-localize/ue-component-mode.png)
+   ![Interface utilisateur de l’éditeur universel](assets/do-not-localize/ue-component-mode.png)
 
 1. Le composant est sélectionné comme indiqué par une bordure bleue avec un onglet indiquant qu’il s’agit d’un composant de texte. Un curseur se trouve dans la bordure en attente de saisie de texte. Remplacez le texte par `Aloha Spirit in Lofoten`.
 
@@ -95,7 +95,7 @@ Comme vous devez sélectionner votre contenu pour le modifier dans l’éditeur,
 
 1. Sélectionnez maintenant la variable **En savoir plus** lien de l’article principal.
 
-   ![Mode Aperçu](assets/do-not-localize/ue-preview-publish-1.png)
+   ![Mode Aperçu.](assets/do-not-localize/ue-preview-publish-1.png)
 
 1. Parcourez l’article, puis utilisez le **Précédent** pour revenir à la page principale.
 

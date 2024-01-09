@@ -5,7 +5,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Confirmez en cliquant sur **Créer** et vous pourrez **Ouvrir** votre modèle po
 
 ## Définition de modèles de fragment de contenu {#defining-content-fragment-models}
 
-Lorsque vous ouvrez un nouveau modèle pour la première fois, un grand espace vide s’affiche à gauche et une longue liste de **Types de données** à droite :
+Lorsque vous ouvrez un nouveau modèle pour la première fois, vous verrez un grand espace vide à gauche et une longue liste de **Types de données** à droite :
 
 ![Modèle vide](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 

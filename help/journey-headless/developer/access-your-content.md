@@ -49,7 +49,7 @@ GraphQL est une spécification open source qui fournit les éléments suivants 
 * un langage de requête qui permet de sélectionner du contenu spécifique à partir d’objets structurés
 * une exécution permettant de répondre à ces requêtes avec votre contenu structuré
 
-GraphQL est une API fortement typée. Cela signifie que *tout* le contenu doit être clairement structuré et organisé par type, de sorte que GraphQL *comprenne* ce à quoi accéder et comment. Les champs de données sont définis dans les schémas GraphQL qui définissent ainsi la structure de vos objets de contenu.
+GraphQL est une API pour laquelle le type est très important. Cela signifie que *tout* le contenu doit être clairement structuré et organisé par type, de sorte que GraphQL *comprenne* ce à quoi accéder et comment. Les champs de données sont définis dans les schémas GraphQL qui définissent ainsi la structure de vos objets de contenu.
 
 Les points d’entrée GraphQL fournissent ensuite les chemins qui répondent aux requêtes GraphQL.
 
@@ -375,6 +375,6 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
    * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Sortie JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Comprendre le partage des ressources cross-origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors))
-* [Requêtes persistantes GraphQL - Activation de la mise en cache dans Dispatcher](/help/headless/deployment/dispatcher-caching.md)
+* [Requêtes persistantes GraphQL – Activation de la mise en cache dans Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) – Une courte série de tutoriels vidéo qui donne un aperçu de l’utilisation des fonctionnalités d’AEM découplé, notamment la modélisation de contenu et GraphQL.

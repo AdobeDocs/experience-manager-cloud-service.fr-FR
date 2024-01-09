@@ -5,7 +5,7 @@ exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1122'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -63,8 +63,8 @@ Consultez la vidéo Aperçu de la version d’avril 2023 pour obtenir un résum�
 * Améliorations de la convivialité des facettes de recherche de couleurs : le champ d’entrée pour les valeurs de couleur est désormais modifiable et les résultats de recherche ne sont mis à jour que lorsque vous quittez le sélecteur de couleurs.
 
 * Prise en charge du nouveau protocole (DASH, Dynamic Adaptive Streaming over HTTP) pour le streaming adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF activé) :
-   * La diffusion en continu adaptative (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos par les utilisateurs.
-   * Largement adopté dans le secteur, DASH est le protocole standard international pour le streaming à débit adaptatif de vidéos
+   * La diffusion en continu à débit adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos aux utilisateurs et utilisatrices finaux
+   * Largement adopté dans le secteur, DASH est le protocole standard international pour le streaming à débit adaptatif de vidéos.
    * Disponible dans toutes les régions, à activer via un ticket d’assistance
 
 * _Instantané_ Dynamic Media : testez des images de test ou des URL Dynamic Media pour voir la sortie de différents modificateurs d’image et évaluez les optimisations de l’imagerie dynamique pour la taille de fichier (avec diffusion WebP et AVIF), la bande passante réseau et le rapport de pixels de l’appareil. Voir [Instantané Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=fr).
@@ -108,7 +108,7 @@ Utilisez les formulaires adaptatifs découplés pour permettre à vos développe
 
 Vous pouvez envoyer un e-mail à `aem-forms-headless@adobe.com` à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Nouveautés {#what-is-new-foundation}
 

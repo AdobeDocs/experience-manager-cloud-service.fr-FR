@@ -1,17 +1,17 @@
 ---
-title: Notes de mise à jour de la version 2023.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour de la version 2023.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notes de mise à jour de la version 2023.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2023.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 47%
+ht-degree: 97%
 
 ---
 
-# Notes de mise à jour de la version 2023.7.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2023.7.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour techniques de la version 2023.7.0 d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour techniques de la version 2023.7.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -25,11 +25,11 @@ La section suivante concerne les notes de mise à jour techniques de la version�
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2023.7.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 27 juillet 2023. La prochaine mise à jour des fonctionnalités (2023.8.0) est prévue pour le vendredi 31 août 2023.
+La date de publication de la version actuelle (2023.7.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 27 juin 2023. La prochaine disponibilité des fonctionnalités (2023.8.0) est prévue pour le 31 mars 2023.
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo Aperçu de la version de juillet 2023 pour un résumé des fonctionnalités ajoutées dans la version 2023.7.0 :
+Consultez la vidéo Aperçu de la version de mai 2023 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2023.7.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
@@ -45,7 +45,7 @@ Regardez la vidéo Aperçu de la version de juillet 2023 pour un résumé des fo
 
 ![Balisage dans la console de fragments de contenu](/help/assets/content-fragments-console-tags.png)
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-features}
 
@@ -82,10 +82,10 @@ Assets Essentials trie désormais les résultats de la recherche en fonction de
 
 * **[Composants React pour Forms sans affichage](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: vous pouvez désormais prévisualiser et personnaliser les rendus de formulaire adaptatif sans affichage avec les composants React prêts à l’emploi. Ces composants utilisent les classes BEM des composants principaux de Forms adaptatif pour la mise en forme, ce qui vous permet de personnaliser facilement leur aspect en fonction de vos besoins spécifiques.
 
-* [**Création d’un Forms adaptatif avec des sections répétables**](/help/forms/create-forms-repeatable-sections.md): vous pouvez désormais effectuer les opérations suivantes : [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr), [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr), et [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr) formulaire adaptatif basé sur des composants répétable pour plusieurs enregistrements de données.  Ces sections répétables vous permettent de fournir facilement plusieurs entrées de données. Cela est utile lorsque les instances de données requises sont inconnues à l’avance. L’utilisateur d’un formulaire peut facilement ajouter ou supprimer des sections, ce qui rend les formulaires adaptables à différents scénarios de saisie de données et simplifie la collecte de plusieurs occurrences d’un même enregistrement de données.
+* [**Création d’un Forms adaptatif avec des sections répétables**](/help/forms/create-forms-repeatable-sections.md): vous pouvez désormais effectuer les opérations suivantes : [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr), [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr), et [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr) formulaire adaptatif basé sur des composants répétable pour plusieurs enregistrements de données.  Ces sections répétables vous permettent de fournir facilement plusieurs entrées de données. Cela est utile lorsque les instances de données requises sont inconnues à l’avance. Les utilisateurs et les utilisatrices de Forms peuvent facilement ajouter ou supprimer des sections, ce qui permet d’adapter les formulaires à différents scénarios de saisie de données et de simplifier la collecte de plusieurs occurrences des mêmes données.
 
 
-### Fonctionnalités de préversion disponibles dans [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### Nouvelles fonctionnalités disponibles dans [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
 * [**Support aux entreprises pour Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): utilisez Google reCAPTCHA Enterprise dans un formulaire adaptatif pour offrir une meilleure protection contre les activités frauduleuses et les spams, offrant ainsi une expérience utilisateur plus sûre. Grâce à une analyse avancée des risques et à une intégration transparente, les utilisateurs authentiques peuvent facilement envoyer des formulaires lorsque les robots sont effectivement bloqués.
 
@@ -102,7 +102,7 @@ Utilisez les [formulaires adaptatifs découplés](https://experienceleague.adobe
 
 Vous pouvez envoyer un e-mail à `aem-forms-headless@adobe.com` à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Centre d’actions {#actions-center}
 
@@ -116,7 +116,7 @@ Filtrez le trafic sur le réseau de diffusion de contenu selon :
 * en-têtes de requête et propriétés (par exemple, adresse IP) ;
 * schémas de trafic connus pour être associés à un trafic malveillant
 
-Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-waf-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs. L&#39;espace est limité.
+Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez un e-mail à **headlessadaptiveforms@adobe.com** à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces. L&#39;espace est limité.
 
 En savoir plus sur la fonctionnalité de l’article [here](/help/security/traffic-filter-rules-including-waf.md).
 

@@ -1,25 +1,25 @@
 ---
-title: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 28%
+ht-degree: 95%
 
 ---
 
-# Notes de mise à jour de la version 2023.8.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2023.8.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour techniques de la version 2023.8.0 d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour techniques de la version 2023.8.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2023.8.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 31 août 2023. La prochaine mise à jour des fonctionnalités (2023.9.0) est prévue pour le vendredi 28 septembre 2023.
+La date de publication de la version actuelle (2023.8.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 31 février 2023. La prochaine disponibilité des fonctionnalités (2023.9.0) est prévue pour le 28 mai 2023.
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo Aperçu de la version d’août 2023 pour un résumé des fonctionnalités ajoutées dans la version 2023.8.0 :
+Consultez la vidéo Aperçu de la version de janvier 2023 pour un résumé des fonctionnalités ajoutées dans la version 2023.8.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423535/?quality=12)
 
@@ -31,7 +31,7 @@ Regardez la vidéo Aperçu de la version d’août 2023 pour un résumé des fon
 
   ![Balisage dans la console de fragments de contenu](/help/assets/content-fragments-console-tags.png)
 * Le nouvel éditeur de fragment de contenu est désormais disponible sur AEM as a Cloud Service. Cela permet aux auteurs de contenu d’être plus productifs en rationalisant leurs tâches de création et en réduisant la nécessité de basculer entre différentes applications lors de la modification du contenu.
-  ![Nouvel éditeur de fragments de contenu](/help/release-notes/assets/newCFEditor.png)
+  ![Boîte de dialogue modale Nouveau fragment de contenu.](/help/release-notes/assets/newCFEditor.png)
 
 Le nouvel éditeur de fragment de contenu offre les avantages suivants, qui ne sont pas disponibles dans l’éditeur d’origine :
 * Enregistrement automatique pour une meilleure efficacité de création et pour éviter toute perte accidentelle de modifications.
@@ -42,7 +42,7 @@ Le nouvel éditeur de fragment de contenu offre les avantages suivants, qui ne s
 * Aperçu ad hoc de l’expérience rendue par le fragment de contenu pour aider les auteurs à visualiser l’aspect du contenu sur l’application frontale
 * Publication en 1 clic et annulation de publication du fragment de contenu à partir de l’éditeur
 * Affichage et navigation vers des copies de langue lors de la modification d’un fragment de contenu
-  ![Copies de langue dans l’éditeur de fragments de contenu](/help/release-notes/assets/newCFEditor_LanguageCopies.PNG)
+  ![Copies de langue - Éditeur de fragments de contenu](/help/release-notes/assets/newCFEditor_LanguageCopies.PNG)
 
 * Affichage des versions pour tracker la chronologie d’un fragment de contenu
 
@@ -52,7 +52,7 @@ Le nouvel éditeur de fragment de contenu offre les avantages suivants, qui ne s
 
   ![Références parentes dans l’éditeur de fragments de contenu](/help/release-notes/assets/newCFEditor_Parentreferences.PNG)
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-features}
 
@@ -78,9 +78,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Épinglage d’éléments pour les groupes.](/help/release-notes/assets/pin-items-for-groups.png)
 
-### Nouvelles fonctionnalités dans la vue d’administration {#admin-view-features}
+### Nouvelles fonctionnalités de la vue Assets {#admin-view-features}
 
-**Amélioration de la recherche**
+**Améliorations de la recherche**
 
 * Les administrateurs peuvent désormais [configuration de la taille de lot des ressources](/help/assets/search-assets.md#configure-asset-batch-size) qui s’affichent lorsque vous effectuez une recherche. Les résultats de recherche de ressources s’affichent en multiples de la taille de lot configurée lorsque vous faites défiler la page vers le bas pour charger les résultats. Vous pouvez sélectionner les tailles de lot disponibles (200, 500 et 1 000 ressources). Si vous définissez un nombre de lots inférieur, les temps de réponse de la recherche sont plus rapides.
 
@@ -88,9 +88,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * Experience Manager Assets inclut désormais la nouvelle version 9 de `damAssetLucene` index. `damAssetLucene-9` modifie le comportement du comptage des facettes Oak Query en [n’évalue plus le contrôle d’accès sur les comptes de facettes](/help/assets/search-assets.md) renvoyée par l’index de recherche sous-jacent, ce qui entraîne des temps de réponse de recherche plus rapides.
 
-### Fonctionnalités de préversion disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Nouvelles fonctionnalités disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [Prise en charge du suivi multititre et multiaudio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
+* **, Dynamic Media -**[Prise en charge du suivi de sous-titres et d’audio multiples pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) : vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
 
   ![Onglet Sous-titres et Suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et Suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.*
 
@@ -106,28 +106,28 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * [**Support aux entreprises pour Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): utilisez Google reCAPTCHA Enterprise dans un formulaire adaptatif pour offrir une meilleure protection contre les activités frauduleuses et les spams, offrant ainsi une expérience utilisateur plus sûre. Grâce à une analyse avancée des risques et à une intégration transparente, les utilisateurs authentiques peuvent facilement envoyer des formulaires lorsque les robots sont effectivement bloqués.
 
 
-### Fonctionnalités de préversion disponibles dans [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### Nouvelles fonctionnalités disponibles dans [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
-* **Adobe Analytics avec automatisation de la configuration Experience Cloud pour Forms**: vous pouvez désormais activer Adobe Analytics avec l’automatisation de la configuration de l’Experience Cloud à l’aide d’un saut de page de deux boutons. Il vous permet de connecter AEM Forms as a Cloud Service à des balises Experience Platform et à Adobe Analytics afin de capturer et de suivre les mesures de performances des formulaires que vous avez publiés.
+* **Adobe Analytics avec automatisation de la configuration Experience Cloud pour Forms**: vous pouvez désormais activer Adobe Analytics avec l’automatisation de la configuration de l’Experience Cloud à l’aide d’un saut de page de deux boutons. Vous pouvez ainsi connecter AEM Forms as a Cloud Service à des balises Experience Platform et à Adobe Analytics afin de capturer et de suivre les mesures de performances des formulaires que vous avez publiés.
 
-* **Modèle de rapport Adobe Analytics pour Forms adaptatif**: Forms as a Cloud Service fournit désormais un rapport Adobe Analytics prêt à l’emploi. Cela vous permet de comprendre facilement les performances de vos formulaires. Les mesures au niveau du formulaire vous donnent un aperçu des performances du formulaire par rapport à plusieurs indicateurs de performances clés (IPC) tels que, les rendus, les visiteurs, les envois, le temps de remplissage moyen. En suivant le comportement et les commentaires de l’utilisateur, vous pouvez identifier les zones du formulaire qui causent des confusion et guider les améliorations de la conception et de la fonctionnalité du formulaire.
+* **Modèle de rapport Adobe Analytics pour Forms adaptatif**: Forms as a Cloud Service fournit désormais un rapport Adobe Analytics prêt à l’emploi. Cela vous permet de comprendre facilement les performances de vos formulaires. Les mesures au niveau du formulaire vous donnent des informations relatives aux performances du formulaire sur plusieurs indicateurs de performances clés (KPI) tels que les rendus, les visiteurs et visiteuses, les envois, le temps de remplissage moyen. En suivant le comportement et les commentaires des utilisateurs et utilisatrices, les analyses peuvent identifier les zones du formulaire sources de frustration ou confusion, ce qui permet d’en améliorer la conception et les fonctionnalités.
 
   ![Rapport adobe analytics d’engagement des utilisateurs de formulaires adaptatifs](/help/forms/assets/forms-analytics-report.png)
 
 * **[Fragment de formulaire dans Forms adaptatif basé sur les composants principaux](/help/forms/adaptive-form-fragments-core-components.md)**: dites adieu à la duplication, optimisez votre inventaire numérique et améliorez la collaboration lorsque vous augmentez votre expérience de création de formulaires avec les fragments de formulaire. Ces composants réutilisables s’intègrent facilement à plusieurs formulaires, ce qui rationalise la création de formulaires cohérents et d’apparence professionnelle. Les fragments de formulaire assurent la réutilisation, la normalisation et la cohérence de la marque grâce à la fonctionnalité &quot;changer une fois et refléter partout&quot;. Expérimentez une plus grande maintenabilité et une plus grande efficacité, car les mises à jour effectuées à un emplacement donné sont automatiquement propagées à tous les formulaires qui utilisent ces fragments.
 
 * **[Étape de processus Adobe Sign améliorée](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: l’étape Processus Adobe Sign a été améliorée afin d’inclure les éléments suivants :
-   * **Authentification basée sur les ID de gouvernement pour Adobe Sign**: Adobe Acrobat Sign Government ID-Based Authentication offre une couche supplémentaire de vérification en permettant aux utilisateurs d&#39;authentifier leur identité à l&#39;aide de cartes d&#39;identité délivrées par le gouvernement (permis de conduire, carte d&#39;identité nationale, passeport). En utilisant des documents d’identification approuvés, cette amélioration ajoute un niveau de confiance supplémentaire au processus de signature, ce qui en fait une solution idéale pour les scénarios qui nécessitent une sécurité, une conformité et une validation des utilisateurs et utilisatrices renforcées.
+   * **Amélioration de la sécurité avec l’authentification par pièce d’identité officielle pour Adobe Sign :** l’authentification par pièce d’identité officielle d’Adobe Acrobat Sign offre un niveau supplémentaire de vérification en permettant aux utilisateurs et utilisatrices de s’authentifier à l’aide de pièces d’identité délivrées par l’État (permis de conduire, carte d’identité nationale, passeport). En utilisant des documents d’identification approuvés, cette amélioration ajoute un niveau de confiance supplémentaire au processus de signature, ce qui en fait une solution idéale pour les scénarios qui nécessitent une sécurité, une conformité et une validation des utilisateurs et utilisatrices renforcées.
 
-   * **Journal d’audit des documents Adobe Sign**: utilisez la fonction Journal d’audit pour obtenir des informations détaillées sur le cycle de vie de vos documents Adobe Sign. Grâce au journal d’audit, vous pouvez désormais conserver un enregistrement complet de toutes les actions et interactions liées à vos documents. Cela inclut des détails tels que les personnes qui ont consulté, modifié ou signé le document, ainsi que l’heure et la date de chaque événement. Cette amélioration est essentielle pour maintenir la conformité, résoudre les litiges et assurer l’intégrité de vos accords numériques.
+   * **Amélioration de la transparence avec le journal d’audit pour les documents Adobe Sign** – Utilisez la fonction Journal d’audit pour obtenir des informations détaillées sur le cycle de vie de vos documents Adobe Sign. Grâce au journal d’audit, vous pouvez désormais conserver un enregistrement complet de toutes les actions et interactions liées à vos documents. Cela inclut des détails tels que les personnes qui ont consulté, modifié ou signé le document, ainsi que l’heure et la date de chaque événement. Cette amélioration est essentielle pour maintenir la conformité, résoudre les litiges et assurer l’intégrité de vos accords numériques.
 
-   * **Nouveaux rôles pour les destinataires du contrat au-delà du simple signataire**: Adobe Acrobat Sign a la possibilité de développer les rôles des destinataires du contrat au-delà du simple signataire pour mieux répondre aux exigences de leur workflow. Lorsque cette option est activée, le rôle de chaque personne destinataire d’un contrat peut être configuré individuellement, la personne signataire étant la valeur par défaut.
+   * **Extension des rôles des personnes destinataires du contrat au-delà de la seule personne signataire :** Adobe Acrobat Sign a la possibilité d’étendre les rôles des personnes destinataires du contrat au-delà de la seule personne signataire afin de mieux répondre aux exigences de leur workflow.Lorsque cette option est activée, le rôle de chaque personne destinataire d’un contrat peut être configuré individuellement, la personne signataire étant la valeur par défaut.
 
-* **[Protect de vos documents avec les API Document Assurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API Document Assurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de protéger la sécurité et la confidentialité des documents Adobe PDF qu’elle distribue et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seuls les destinataires prévus peuvent modifier les documents.
+* **[Protect de vos documents avec les API Document Assurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API Document Assurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Le service Signature permet à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
 * **Prise en charge du nombre de pages dans les API de communication**: maintenant, en plus de récupérer votre document par le biais des API de communication, vous pouvez également recevoir des informations précieuses sur le nombre de pages contenues dans le document.
 
-* **[Gestion des erreurs avec des gestionnaires d’erreurs personnalisés dans l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: vous pouvez désormais appeler une fonction personnalisée en réponse à une erreur renvoyée par un service externe et fournir une réponse personnalisée aux utilisateurs finaux. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client ou la cliente que le service est indisponible.
+* **[Amélioration de la gestion des erreurs avec les gestionnaires d’erreurs personnalisés dans l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)** : vous pouvez désormais appeler une fonction personnalisée (à l’aide de la bibliothèque cliente) en réponse à une erreur renvoyée par un service externe et fournir une réponse personnalisée aux utilisateurs et utilisatrices finaux. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client ou la cliente que le service est indisponible.
 
 
 ### Programme des formulaires adaptatifs découplés destiné aux utilisateurs et utilisatrices précoces {#forms-early-adopter}
@@ -142,7 +142,7 @@ Utilisez les [formulaires adaptatifs découplés](https://experienceleague.adobe
 Vous pouvez envoyer un e-mail à `aem-forms-headless@adobe.com` à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces.
 
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Journaux de réseau CDN {#cdn-logs}
 
@@ -155,7 +155,7 @@ Filtrez le trafic sur le réseau de diffusion de contenu selon :
 * en-têtes de requête et propriétés (par exemple, adresse IP) ;
 * schémas de trafic connus pour être associés à un trafic malveillant
 
-Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-waf-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs. L&#39;espace est limité.
+Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez un e-mail à **headlessadaptiveforms@adobe.com** à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces. L&#39;espace est limité.
 
 En savoir plus sur la fonctionnalité de l’article [here](/help/security/traffic-filter-rules-including-waf.md).
 

@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -82,10 +82,10 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 
-* L’API GraphQL vous permet de créer des demandes d’accès et de diffusion de fragments de contenu.
-* L’API REST Assets vous permet de créer et de modifier des fragments de contenu (et d’autres ressources).
+* L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
+* L’API REST Assets permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
-Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours sans interface AEM. Ou, voir [ressources supplémentaires](#additional-resources) pour plus d’informations.
+Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Vous pouvez également consulter la section [Ressources supplémentaires](#additional-resources) pour plus d’informations.
 
 ## Niveaux d’intégration en mode découplé {#integration-levels}
 
@@ -117,13 +117,13 @@ Ce niveau d’intégration repose sur le niveau 2 en permettant de modifier l�
 
 ### Vous n’avez pas encore de consommateur externe de contenu découplé, par exemple les applications monopages. {#do-not-have-a-spa}
 
-Si votre objectif est de créer un SPA qui consomme du contenu en toute sécurité à partir d’AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu sans affichage et créer également un  avec la structure de l’éditeur d’.
+Si votre objectif est de créer une SPA qui consomme du contenu en toute sécurité depuis AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu découplé et créer également une SPA avec le framework de l’éditeur de SPA d’AEM.
 
-Avec cet éditeur, la SPA consomme non seulement des contenus issus d’AEM, mais elle est en outre entièrement modifiable dans AEM par les auteurs de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
+Avec cet éditeur, la SPA consomme non seulement des contenus issus d’AEM, mais elle est en outre entièrement modifiable dans AEM par les personnes chargées de la création de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
-Plusieurs conditions sont requises avant de commencer votre projet AEM sans interface utilisateur.
+Un certain nombre d’exigences s’imposent avant de vous engager dans votre projet AEM découplé.
 
 ### Connaissances {#knowledge}
 
@@ -143,9 +143,9 @@ Pour la réussite d’un projet, il est important de définir clairement non seu
 
 ### Portée {#scope}
 
-Il est très important de définir clairement la portée du projet. La portée informe les critères d’acceptation et vous permet d’établir une définition de &quot;terminé&quot;.
+Il est très important de définir clairement la portée du projet. La portée définit les critères d’acceptation et permet d’établir une définition de l’état « terminé ».
 
-La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM découplé ? » En général, la réponse devrait indiquer que vous disposez ou disposerez d’une application d’expérience créée avec vos propres outils de développement, et non avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
+La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM Headless ? » En général, la réponse devrait indiquer que vous disposez ou disposerez d’une application d’expérience créée avec vos propres outils de développement, et non avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
 
 ### Rôles et responsabilités {#roles-responsibilities}
 
@@ -166,9 +166,9 @@ L’administrateur doit être l’utilisateur qui a installé AEM et préparé l
 
 #### Auteur de contenu {#content-author}
 
-Les auteurs de contenu créent et gèrent le contenu diffusé de manière découplée par AEM. Les auteurs de contenu utilisent AEM fonctionnalités telles que l’éditeur de fragments de contenu et diverses consoles pour gérer leur contenu.
+Les personnes chargées de la création de contenu créent et gèrent le contenu diffusé de manière découplée par AEM. Les auteurs de contenu utilisent AEM fonctionnalités telles que l’éditeur de fragments de contenu et diverses consoles pour gérer leur contenu.
 
-Ils doivent garder à l’esprit les bonnes pratiques suivantes.
+Elles doivent garder à l’esprit les bonnes pratiques suivantes.
 
 #### Planification de la traduction {#translation}
 
@@ -259,7 +259,7 @@ Pour comprendre le trafic et les schémas de trafic, commencez par recueillir de
 
 #### Fréquence de mise à jour {#update-frequency}
 
-Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Comprendre cela est important pour pouvoir affiner les configurations du réseau de diffusion de contenu et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
+Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Il est important de comprendre cela pour pouvoir affiner les configurations du réseau de diffusion de contenu (CDN) et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
 
 * Certains types de contenu doivent-ils expirer au-delà d’une certaine période ?
 * Certains éléments sont-ils spécifiques à l’utilisateur, donc sans pouvoir être mis en cache ?
@@ -273,17 +273,17 @@ Maintenant que vous avez terminé cette partie du parcours de développement dé
 * avoir conscience des niveaux d’intégration AEM découplé ;
 * être en mesure de définir la portée de votre projet.
 
-Continuez votre parcours AEM sans interface utilisateur graphique en consultant le document. [Chemin d’accès à votre première expérience à l’aide d’AEM sans affichage](path-to-first-experience.md) où vous apprenez à configurer les outils nécessaires et à commencer à réfléchir à la modélisation de vos données dans AEM.
+Vous devriez poursuivre votre parcours avec AEM découplé en consultant le document [Accès à votre première expérience à l’aide d’AEM découplé](path-to-first-experience.md). Vous pourrez y découvrir comment configurer les outils nécessaires et commencer à réfléchir à la modélisation de vos données dans AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en mode découplé en examinant le document [Accès à votre première expérience à l’aide d’AEM découplé](path-to-first-experience.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours en mode découplé.
 
 * [Parcours de traduction découplé AEM](/help/journey-headless/translation/overview.md) – Ce parcours de documentation vous donne une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
-* [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Comprendre la structure d’AEM as a Cloud Service
+* [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Comprendre la structure d’AEM as a Cloud Service
 * Un [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
 * La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels sur AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
+* [Tutoriels sur AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
 * [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
 * [AEM Guides WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – Ce projet GitHub comprend des exemples d’applications qui mettent en évidence les API GraphQL d’AEM.
 * [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md) – Documentation technique pour l’environnement de création d’AEM, avec notamment des détails sur la configuration auteur-publication.

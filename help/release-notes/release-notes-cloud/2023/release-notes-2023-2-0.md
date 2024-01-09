@@ -5,7 +5,7 @@ exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Consultez la vidéo Aperçu de la mise à jour de février 2023 pour un résum�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelles fonctionnalités d’ [!DNL Experience Manager Sites] premise {#prerelease-sites}
 
@@ -45,8 +45,8 @@ Consultez la vidéo Aperçu de la mise à jour de février 2023 pour un résum�
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
 * Prise en charge du nouveau protocole (DASH, Dynamic Adaptive Streaming over HTTP) pour le streaming adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF activé) :
-   * La diffusion en continu adaptative (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos par les utilisateurs.
-   * Largement adopté dans le secteur, DASH est le protocole standard international pour le streaming à débit adaptatif de vidéos
+   * La diffusion en continu à débit adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos aux utilisateurs et utilisatrices finaux
+   * Largement adopté dans le secteur, DASH est le protocole standard international pour le streaming à débit adaptatif de vidéos.
    * Disponible en Amérique du Nord, pour activation via un ticket d’assistance, bientôt disponible en APAC, EMEA
 
 * Ajout de la prise en charge des images WebP pour extraire automatiquement les métadonnées, générer des miniatures et des rendus personnalisés. Les fonctionnalités de balisage et de recadrage intelligents sont désormais également prises en charge pour ces fichiers.

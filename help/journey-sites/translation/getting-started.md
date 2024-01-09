@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Ce document vous aide à comprendre comment commencer à traduire le contenu d�
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
-Avant de commencer à traduire votre contenu AEM, plusieurs exigences s’appliquent.
+Un certain nombre d’exigences s’imposent avant de vous lancer dans la traduction de votre contenu AEM.
 
 ### Connaissances {#knowledge}
 
@@ -75,7 +75,7 @@ Pour accéder à la console Sites, procédez comme suit :
 
    ![Hiérarchie du contenu](assets/sites-console-hierarchy.png)
 
-1. En appuyant ou en cliquant sur la case à cocher d’un élément dans une colonne, il sélectionne cet élément et affiche les détails de l’élément sélectionné dans la colonne de droite, ainsi que plusieurs actions disponibles pour l’élément sélectionné dans la barre d’outils ci-dessus.
+1. Lorsque vous appuyez ou cliquez sur la case à cocher d’un élément dans une colonne, vous sélectionnez cet élément et affichez les détails de l’élément sélectionné dans la colonne de droite, ainsi que le nombre d’actions disponibles pour l’élément sélectionné dans la barre d’outils ci-dessus.
 
    ![Sélection de contenu](assets/sites-console-selection.png)
 
@@ -93,11 +93,11 @@ Pour accéder à la console Sites, procédez comme suit :
 
 ### Éditeur de page {#page-editor}
 
-La console Sites vous permet de parcourir votre contenu et fournit un aperçu de sa structure. Pour afficher les détails d’une page, vous devez utiliser l’éditeur Sites.
+La console Sites vous permet de parcourir votre contenu et offre un aperçu de sa structure. Pour afficher les détails d’une page, vous devez utiliser l’éditeur Sites.
 
 Pour modifier votre page :
 
-1. Utilisez la console Sites pour localiser et sélectionner une page. N’oubliez pas que vous devez cocher la case d’une page pour la sélectionner.
+1. Utilisez la console Sites pour localiser et sélectionner une page. N’oubliez pas que vous devez appuyer ou cliquer sur la case à cocher d’une page pour la sélectionner.
 
    ![Sélection d’une page à modifier](assets/sites-editor-select-page.png)
 
@@ -107,7 +107,7 @@ Pour modifier votre page :
 
    ![Modification d’une page](assets/sites-editor-title.png)
 
-Vous pouvez revenir à la console Sites en revenant à cet onglet dans votre navigateur à tout moment. L’éditeur de sites vous permet d’afficher rapidement le contenu de la page, car les auteurs de contenu et votre audience peuvent le voir.
+Vous pouvez revenir à la console Sites en revenant à cet onglet dans votre navigateur à tout moment. L’éditeur Sites vous permet d’afficher rapidement le contenu de la page de la même manière que les auteurs de contenu et votre audience la verront.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * comprendre comment AEM stocke le contenu ;
 * vous être familiarisé avec les outils de traduction AEM.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de traduction AEM Sites en consultant le document. [Configuration du connecteur de traduction](configure-connector.md) où vous apprenez à connecter AEM à un service de traduction.|
+Tirez parti de ces connaissances et poursuivez votre parcours de traduction AEM Sites en consultant le document [Configuration du connecteur de traduction](configure-connector.md) où vous apprendrez à connecter AEM à un service de traduction.
 
 ## Ressources supplémentaires {#additional-resources}
 
