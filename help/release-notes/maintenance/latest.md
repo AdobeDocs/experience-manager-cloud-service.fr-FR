@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
+source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 28%
+source-wordcount: '381'
+ht-degree: 34%
 
 ---
 
@@ -15,9 +15,9 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 14697 {#release-14697}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 14697, rendue publique le mardi 18 décembre 2023. Il remplace la version 14538 qui présentait un problème. La version de maintenance précédente était la version 14227.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 14697, publiée le mardi 18 décembre 2023.  Il remplace la version 14538 qui présentait un problème. La version de maintenance précédente était la version 14227.
 
-2023.12.0 Feature Activation fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
+L’activation des fonctionnalités de la version 2023.12.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
 ### Améliorations {#enhancements-14697}
 
@@ -43,13 +43,13 @@ Vous trouverez ci-dessous un résumé des améliorations continues de la version
 
 ### Problèmes connus {#known-issues-14697}
 
-Aucun.
+* GRANITE-49031 : régression générant `@JsonIgnore` annotation étant ignorée sur les champs transitoires.
 
 ### Technologies intégrées {#embedded-tech-14697}
 
 | Technologie | Version | Lien |
 |---|---|---|
 | AEM OAK | 1.58-T20231123092841-619e1bd | [API 1.58.0 Oak](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html) |
-| API SLING AEM | Version 2.27.2 | [API Apache Sling 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| API Sling AEM | Version 2.27.2 | [API Apache Sling 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version 1.4.20-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
-| Composants principaux d’AEM | Version 2.23.4 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Composants principaux d’AEM | Version 2.23.4 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
