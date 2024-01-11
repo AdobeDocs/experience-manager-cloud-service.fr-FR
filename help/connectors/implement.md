@@ -1,13 +1,14 @@
 ---
 title: Implémentation d’un connecteur AEM
-description: Découvrez comment créer, tester et mettre en oeuvre un connecteur AEM. En outre, vous découvrez les modèles d’intégration courants.
+description: Découvrez les connecteurs, ce qu’ils peuvent faire et comment mettre en œuvre ces précieux outils dans Experience Manager.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
+
 
 Implémentation d’un connecteur AEM
 =============================

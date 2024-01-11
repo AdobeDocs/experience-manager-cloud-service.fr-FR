@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -102,13 +102,13 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 ## Explorateur de ressources {#assets-browser}
 
-L’explorateur de ressources présente toutes les [ressources](/help/assets/home.md) que vous pouvez utiliser directement sur la page active.
+L’explorateur de ressources présente toutes les [ressources](/help/assets/overview.md) que vous pouvez utiliser directement sur la page active.
 
 L’explorateur de ressources est un onglet du panneau latéral (de même que l’[explorateur de composants](#components-browser) et l’[arborescence de contenu](#content-tree)). Pour ouvrir ou fermer le panneau latéral, utilisez l’icône en haut à gauche de la barre d’outils :
 
 ![Bascule du panneau latéral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez la variable **Ressources** si nécessaire.
+Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez l’onglet **Ressources** si nécessaire.
 
 ![Bouton de l’explorateur de ressources](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -120,7 +120,7 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
 * d’un composant existant du type approprié.
    * Par exemple, vous pouvez faire glisser une ressource de type image sur un composant Image ;
-* A [espace réservé](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) dans le système de paragraphes pour créer un composant du type approprié.
+* d’un [espace réservé](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) dans le système de paragraphes où créer un composant du type approprié :
    * Par exemple, vous pouvez faire glisser une ressource de type image sur le système de paragraphes afin de créer un composant Image.
 
 >[!NOTE]
@@ -273,7 +273,7 @@ Plusieurs modes sont possibles lors de la modification d’une page, ce qui perm
 * [Modifier](/help/sites-cloud/authoring/fundamentals/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
 * [Disposition](/help/sites-cloud/authoring/features/responsive-layout.md) - vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil (si la page est basée sur un conteneur de mises en page).
 * [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) : accroît la pertinence du contenu grâce au ciblage et à la mesure sur tous les canaux.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - vous permet d’afficher l’état d’une page à un moment donné.
+* [Distorsion du temps](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
 * [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
 * [Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : permet d’afficher la page comme elle est présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.

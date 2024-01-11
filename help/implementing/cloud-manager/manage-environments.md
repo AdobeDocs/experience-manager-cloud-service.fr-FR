@@ -2,7 +2,7 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: efca024511b5d79553864fbcefda3649ab7af7b6
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2607'
 ht-degree: 81%
@@ -26,10 +26,10 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
 Les fonctionnalités de chaque environnement dépendent des solutions activées dans son [programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
-* [Sites](/help/sites-cloud/home.md)
-* [Assets](/help/assets/home.md)
+* [Sites](/help/overview/introduction.md)
+* [Assets](/help/assets/overview.md)
 * [Forms](/help/forms/home.md)
-* [Screens](/help/screens-cloud/home.md)
+* [Screens](/help/screens-cloud/introduction/introduction.md)
 
 >[!NOTE]
 >
