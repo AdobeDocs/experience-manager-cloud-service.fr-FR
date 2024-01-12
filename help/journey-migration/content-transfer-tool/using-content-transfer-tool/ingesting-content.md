@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
 source-wordcount: '2407'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -78,7 +78,7 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestion de complément"
->abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis la précédente activité de transfert de contenu. Une fois l’ingestion terminée, recherchez les erreurs ou les avertissements dans les journaux. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance clientèle d’Adobe."
+>abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis la précédente activité de transfert de contenu. Une fois l’ingestion terminée, recherchez les erreurs/avertissements éventuels dans les journaux. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance clientèle d’Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=fr" text="Affichage des journaux"
 
 L’outil de transfert de contenu dispose d’une fonctionnalité qui permet d’extraire du contenu différentiel en exécutant une *complément* du jeu de migration. Cela permet de modifier le jeu de migration pour inclure uniquement le contenu qui a changé depuis l’extraction précédente sans avoir à extraire à nouveau tout le contenu.
@@ -97,7 +97,7 @@ Commencez par créer une tâche d’ingestion et assurez-vous que **Wipe** est d
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Dépannage pour l’ingestion de contenu"
->abstract="Reportez-vous aux journaux d’ingestion et à la documentation pour trouver des solutions aux raisons courantes de l’échec d’une ingestion et trouver le moyen de résoudre le problème. Une fois corrigée, l’ingestion peut être exécutée à nouveau."
+>abstract="Reportez-vous aux journaux d’ingestion et à la documentation afin de trouver des solutions aux raisons courantes de l’échec d’une ingestion ainsi que le moyen de résoudre le problème. Une fois corrigée, l’ingestion peut être exécutée à nouveau."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr" text="Validation des transferts de contenu "
 
 ### Impossible pour CAM de récupérer le jeton de migration {#cam-unable-to-retrieve-the-migration-token}

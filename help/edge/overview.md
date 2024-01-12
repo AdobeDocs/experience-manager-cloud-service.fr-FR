@@ -1,12 +1,12 @@
 ---
 title: AEM et Edge Delivery Services
-description: Découvrez comment AEM as a Cloud Service peut bénéficier des performances et des scores Lighthouse parfaits proposés par les Edge Delivery Services.
+description: Comprendre comment AEM as a Cloud Service peut bénéficier des performances et des bons scores Lighthouse proposés par Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 9d26a4835dc331f2ff8b741a4c14847ead611874
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 40%
+ht-degree: 43%
 
 ---
 
