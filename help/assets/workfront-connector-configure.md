@@ -4,9 +4,9 @@ description: Configuration de  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
+source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1767'
 ht-degree: 88%
 
 ---
@@ -69,6 +69,7 @@ Pour vous abonner aux événements, procédez comme suit :
 1. Statut du projet : sélectionnez le statut pour lequel le projet doit être défini afin de créer le dossier lié.
 1. Créer un dossier lié dans les projets avec un portfolio : liste des portfolios auxquels le projet doit appartenir pour créer le dossier lié. Laissez cette liste vide pour créer le dossier lié pour l’ensemble du portefeuille de projets.
 1. Créer un dossier lié dans les projets avec un champ de formulaire personnalisé : champ de formulaire personnalisé et valeur correspondante que le projet doit avoir pour créer le dossier lié. Cette configuration est ignorée si elle n’est pas renseignée. Sélectionnez `CUSTOM FORMS: Create DAM Linked Folder` pour le champ et saisissez `Yes` pour la valeur.
+1. Configurer l’autorisation : configurez ces autorisations. `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` pour le `wf-workfront-users group`.
 1. Cliquez sur Activer la création automatique de dossiers liés. Si vous revenez à l’onglet Abonnements aux événements, un événement de création est désormais disponible.
 
 ![configuration des dossiers liés](/help/assets/assets/wf-linked-folder-config.png)

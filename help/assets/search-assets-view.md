@@ -3,10 +3,10 @@ title: Découvrez comment rechercher des ressources dans [!DNL Assets view]?
 description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. La puissante fonctionnalité de recherche vous permet de découvrir rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
+source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 65%
+source-wordcount: '1543'
+ht-degree: 63%
 
 ---
 
@@ -29,20 +29,6 @@ Pour rechercher des ressources,
    * Effectuez une recherche à l’aide d’un mot-clé ou vous pouvez changer de dossier. Appuyez sur Entrée.
 
    * Commencez à travailler avec une ressource récemment consultée en la recherchant directement. Cliquez dans la zone de recherche et sélectionnez une ressource récemment consultée parmi les suggestions.
-
-## Recherche de ressources à l’aide d’Adobe Firefly
-
-Si vous recherchez une ressource non disponible dans l’un des dossiers de ressources, utilisez la variable [!UICONTROL Adobe Firefly] fonctionnalité de recherche de ressources dans [!UICONTROL Adobe Experience Manager Assets]. Il vous permet de rechercher efficacement des ressources qui ne sont peut-être pas stockées dans les dossiers désignés. Cette fonctionnalité est actuellement accessible uniquement aux utilisateurs disposant du droit express. <br> Par exemple, vous pouvez rechercher une ressource à l’aide du mot-clé `Bugatti Type 57`. Lors de la recherche de `Bugatti Type 57`, aucun résultat n’est trouvé.
-
-![Intégration de Firefly](assets/firefly-integration.jpg)
-*Figure : Aucun résultat trouvé pour le type Bugatti 57 dans le dossier de ressources.*
-
-Dans la barre de recherche, saisissez le nom de la ressource, puis cliquez sur **[!UICONTROL Générer]**.
-
-![Intégration de Firefly](assets/bugatti-type-57.jpg)
-*Figure : Ressources de référence recherchées à l’aide de la fonctionnalité de recherche de ressources d’Adobe Firefly.*
-
-Les exemples de ressources s’affichent à l’écran. Vous pouvez charger ces ressources dans le dossier de votre choix pour un accès facile.
 
 ## Filtrer les résultats de la recherche {#refine-search-results}
 
@@ -134,6 +120,38 @@ Pour supprimer des filtres personnalisés :
 
 1. Cliquez sur **[!UICONTROL Confirmer]** pour supprimer les filtres de l’interface utilisateur.
 
+## Recherche de ressources à l’aide de [!DNL Adobe Firefly] {#search-firefly}
+
+Vous pouvez rechercher une ressource qui n’est disponible dans aucun des dossiers de ressources à l’aide de l’option [!DNL Adobe Firefly] fonctionnalité de recherche de ressources dans [!DNL Experience Manager Assets]. Vous pouvez ainsi générer efficacement des ressources en temps réel qui ne sont pas stockées dans les dossiers de ressources.
+
+### Avant de commencer
+
+Vous devez disposer d’un [!DNL Adobe Express] abonnement.
+
+### Génération de ressources
+
+Pour générer de nouvelles ressources à l’aide de [!DNL Adobe Firefly]:
+
+1. Accédez au [!DNL AEM Assets] workspace.
+1. Saisissez le nom de la ressource dans la barre de recherche située en haut de la page.<br>
+Par exemple, vous pouvez rechercher une ressource à l’aide du mot-clé `Bugatti Type 57`. Lors de la recherche de la ressource, aucun résultat n’est trouvé, car la ressource n’est présente dans aucun des dossiers de ressources.
+1. Saisissez le nom de la ressource dans la barre de recherche au milieu de la page, puis cliquez sur **[!UICONTROL Générer]**.
+   ![Intégration de Firefly](assets/firefly-integration.jpg)
+   *Figure : Aucun résultat trouvé pour le type Bugatti 57 dans le dossier de ressources.* <br>
+Les nouvelles ressources sont générées avec succès.
+   ![Intégration de Firefly](assets/bugatti-type-57.jpg)
+   *Figure : Ressources de référence recherchées à l’aide de [!DNL Adobe Firefly] fonction de recherche de ressources.* <br>
+Vous pouvez charger ces ressources dans le dossier de votre choix pour un accès facile.
+
+### Chargement de ressources
+
+Pour charger la ressource générée dans le référentiel de ressources :
+
+1. Cliquez sur **[!UICONTROL Charger]**.
+1. Sélectionnez le dossier de ressources vers lequel vous devez charger la ressource, puis cliquez sur **[!UICONTROL Sélectionner un dossier]**.
+   ![Chargement d’une ressource](assets/upload-asset-firefly.jpg)
+   *Figure : Sélectionnez le dossier dans lequel charger la ressource.*
+
 ## Recherches enregistrées {#saved-search}
 
 La fonctionnalité de recherche est assez facile à utiliser dans [!DNL Assets view]. Dans la zone de recherche, vous pouvez simplement saisir un mot-clé et appuyer sur Retour pour afficher les résultats. Vous pouvez également rechercher rapidement vos mots-clés récemment recherchés en un seul clic.
@@ -169,7 +187,7 @@ Vous pouvez sélectionner les ressources qui s’affichent dans les résultats d
 
 * **Épingler à l’accès rapide**: [Épinglez une ressource](my-workspace-assets-view.md) pour y accéder plus rapidement lorsque vous en aurez besoin ultérieurement. Tous les éléments épinglés s’affichent dans la section **Accès rapide** de Mon espace de travail.
 
-* **Ouvrir dans Adobe Express**: modifiez une image dans l’Adobe Express intégré à partir de l’écran Adobe Experience Manager Assets.
+* **Ouvrir dans Adobe Express**: modifiez une image dans l’Adobe Express intégré à partir de l’écran Experience Manager Assets.
 
 * **Modifier**: modifiez l’image à l’aide de Adobe Express.
 
