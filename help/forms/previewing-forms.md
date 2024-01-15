@@ -1,13 +1,13 @@
 ---
 title: Comment prévisualiser un formulaire adaptatif ?
-description: Les utilisateurs peuvent prévisualiser les formulaires avant leur publication ou leur activation, afin de s’assurer qu’ils répondent aux attentes. Les options d’aperçu peuvent varier selon les types de formulaire pris en charge.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: Les utilisateurs peuvent prévisualiser le formulaire avant de le publier ou de l’activer, afin de s’assurer qu’il répond aux attentes. Les options d’aperçu peuvent varier selon les types de formulaire pris en charge.
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 34%
+source-wordcount: '336'
+ht-degree: 27%
 
 ---
 
@@ -28,28 +28,28 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
    <td><strong>Type de ressource</strong><br /> </td>
    <td><strong>Options d’aperçu disponibles</strong><br /> </td>
   </tr>
-  <tr>
+  <!--<tr>
    <td>Document</td>
-   <td>Aperçu du PDF</td>
-  </tr>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
-   <td>Formulaire de PDF</td>
+   <td>Formulaire PDF</td>
    <td>Aperçu au format PDF et aperçu avec des données<br /> </td>
   </tr>
   <tr>
    <td>Formulaire adaptatif</td>
    <td>Aperçu des HTMLs et aperçu des HTMLS avec des données</td>
   </tr>
-  <tr>
-   <td>Modèle de formulaire</td>
-   <td>Aperçu au format PDF, aperçu au format PDF avec des données, aperçu HTML, aperçu au format HTML avec des données<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
 ## Prévisualisation d’un formulaire {#previewing-a-form-1}
 
-1. Sélectionnez une ressource à prévisualiser, puis cliquez sur Aperçu de ![aem6forms_preview](assets/aem6forms_preview.png) dans la barre d’outils Actions.
+1. Sélectionnez une ressource à prévisualiser, puis cliquez sur Aperçu. ![aem6forms_preview](assets/aem6forms_preview.png) dans la barre d’outils actions.
 
    >[!NOTE]
    >
@@ -61,7 +61,7 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
 
    * Prévisualiser au format HTML
    * Aperçu avec des données
-   * Aperçu au format PDF (disponible pour les modèles de formulaire)
+     <!--* Preview as PDF (available for form templates)-->
 
 ## Aperçu avec des données {#preview-with-data}
 

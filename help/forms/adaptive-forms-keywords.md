@@ -1,14 +1,13 @@
 ---
 title: Que sont les mots-clés réservés Adaptive Forms ?
 description: Mots-clés réservés que vous ne pouvez pas utiliser comme identifiants dans votre Forms adaptative.
-uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 44%
+source-wordcount: '205'
+ht-degree: 91%
 
 ---
 
@@ -47,7 +46,7 @@ Les mots-clés des formulaires adaptatifs sont prédéfinis, les identifiants r�
   <tr>
    <td><p>resetData</p> </td>
    <td><p>runPendingExpressions</p> </td>
-   <td><p>répétable</p> </td>
+   <td><p>repeatable</p> </td>
   </tr>
   <tr>
    <td><p>calcExp</p> </td>
@@ -62,7 +61,7 @@ Les mots-clés des formulaires adaptatifs sont prédéfinis, les identifiants r�
   <tr>
    <td><p>valueCommitScript</p> </td>
    <td><p>autoSaveStart</p> </td>
-   <td><p>visite</p> </td>
+   <td><p>visit</p> </td>
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
@@ -200,7 +199,7 @@ Les mots-clés des formulaires adaptatifs sont prédéfinis, les identifiants r�
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
-   <td><p>instanceManager</p> </td>
+   <td><p>InstanceManager</p> </td>
    <td><p>completionAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>
