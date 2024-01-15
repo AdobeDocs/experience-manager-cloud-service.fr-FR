@@ -1,11 +1,12 @@
 ---
 title: Comment configurer une [!DNL AEM Forms] en tant qu’environnement de service cloud ?
-description: Découvrez comment configurer un environnement [!DNL AEM Forms] as a Cloud Service.
-exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+description: Découvrez comment configurer et configurer une [!DNL AEM Forms] Environnement as a Cloud Service.
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 66%
+source-wordcount: '602'
+ht-degree: 61%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 66%
 
 * **praticien de Forms**: un spécialiste Forms crée des Forms adaptatifs, des thèmes et des modèles en fonction du style, de la mise en page et de la marque fournis par le concepteur de l’expérience utilisateur. Il crée et intègre également un formulaire adaptatif à un modèle de données de formulaire et des processus AEM. Il effectue généralement des tâches front-end.
 
-* **Développeur Forms** : il développe une solution de formulaires personnalisée. En règle générale, un développeur Forms s’engage dans le développement d’un serveur principal, comme le développement de composants personnalisés, les processus d’AEM, les services de préremplissage, etc.
+* **Développeur Forms**: un développeur Forms développe une solution de formulaires personnalisée. En règle générale, un développeur Forms s’engage dans le développement d’un serveur principal, comme le développement de composants personnalisés, les processus d’AEM, les services de préremplissage, etc.
 
 * **Administration AEM** : la personne est chargée de la configuration globale, comme la configuration des utilisateurs et des utilisatrices, le renforcement de l’environnement, la configuration des sources de données, la configuration des e-mails et des logiciels tiers. Il aide également à réaliser les intégrations à Adobe Analytics, Adobe Target et Adobe Sign.
 

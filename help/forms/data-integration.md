@@ -1,11 +1,13 @@
 ---
 title: Comment connecter une base de données à [!DNL AEM Forms] as a Cloud Service ?
 description: Récupérez et enregistrez des données dans les services Web RESTful, les services Web SOAP et les services OData d’un formulaire adaptatif ou d’un processus AEM.
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 596cd08a98b1d9d47825438e1d64b6db3f847271
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 59%
+source-wordcount: '537'
+ht-degree: 57%
 
 ---
 
@@ -32,8 +34,8 @@ Alors qu’un système modulaire distribué a des avantages propres, le défi co
 
 L’intégration de données [!DNL AEM Forms] permet de configurer et de connecter des sources de données disparates à [!DNL AEM Forms]. Elle fournit une interface utilisateur intuitive qui permet de créer un schéma de représentation de données unifiée des entités d’entreprise dans les sources de données connectées. La représentation unifiée est appelée modèle de données de formulaire, qui est une extension du schéma JSON. Les entités d’un modèle de données de formulaire sont appelées objets de modèle de données. Un modèle de données de formulaire permet :
 
-* Accédez aux objets de modèle de données, aux propriétés et aux services à partir de sources de données connectées.
-* Créez des objets et des propriétés de modèle de données personnalisés
+* Accéder aux objets de modèle de données, aux propriétés et aux services à partir de sources de données connectées.
+* Créer des objets et des propriétés de modèle de données personnalisés.
 * Créez des associations entre les objets de modèle de données dans et entre les sources de données.
 * Appelez les services d’objet de modèle de données pour interroger ou écrire des données vers et depuis des sources de données.
 
@@ -50,7 +52,7 @@ La première étape de l’implémentation de l’intégration de données pour 
 
 [!DNL AEM Forms] vous permet également de créer un modèle de données de formulaire indépendant des sources de données et d’associer ou de lier ultérieurement des objets et des propriétés de modèle de données dans le modèle de données de formulaire à la source de données. Il élimine les dépendances sur les sources de données lorsque vous travaillez sur un modèle de données de formulaire.
 
-Examinez les éléments suivants pour commencer, comprendre et implémenter l’intégration de données:
+Consultez les sections suivantes pour commencer, comprendre et mettre en oeuvre l’intégration des données :
 
 * [Configuration des sources de données](configure-data-sources.md)
 * [Création d’un modèle de données de formulaire](create-form-data-models.md)

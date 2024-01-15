@@ -3,11 +3,11 @@ title: Comment activer les composants principaux de Forms adaptatif dans l’env
 description: Découvrez comment activer les composants principaux de Forms adaptatif sur AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
-role: Admin
-exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+role: Admin, Developer, User
+feature: Adaptive Forms, Core Components
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '985'
 ht-degree: 91%
 
 ---
@@ -358,4 +358,4 @@ Pour vérifier que les composants principaux des formulaires adaptatifs sont act
 
 >[!MORELIKETHIS]
 >
->* [Création d’un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)
+>* [Créer un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)

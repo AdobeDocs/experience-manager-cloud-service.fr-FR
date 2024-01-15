@@ -4,15 +4,15 @@ description: Adaptive Forms s’intègre de manière transparente à Adobe Analy
 keywords: Affichage et compréhension des rapports d’analyse Forms adaptatif, rapport d’analyse d’Adobe, rapport Forms Analytics
 topic-tags: develop
 feature: Adaptive Forms
-role: User
+role: Admin, User
 level: Intermediate
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 1%
+source-wordcount: '976'
+ht-degree: 2%
 
 ---
-
 
 # Affichage et compréhension des rapports d’analyse Forms adaptatif {#viewing-and-understanding-aem-forms-analytics-reports}
 
@@ -110,5 +110,5 @@ Il permet d’analyser les champs de formulaire dans lesquels les utilisateurs o
 ## Voir également {#see-also}
 
 * [Activation d’Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-* [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Ajouter un formulaire adaptatif à une page AEM Sites ou un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Intégration d’AEM Forms à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

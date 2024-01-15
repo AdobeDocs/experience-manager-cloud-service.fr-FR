@@ -2,10 +2,12 @@
 title: Comment ajouter des variables aux étapes AEM workflow ?
 description: Découvrez comment créer une variable, définir une valeur pour la variable et l’utiliser dans les étapes de processus [!DNL AEM Forms]
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Workflow
+role: Admin, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1928'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -167,7 +169,7 @@ De même, sélectionnez un chemin d’accès au script externe ou spécifiez le 
 
 #### Étape d’accès {#go-to-step}
 
-La variable **Atteindre l’étape** permet de spécifier l’étape suivante du modèle de workflow à exécuter, en fonction du résultat d’une expression de routage.
+L’**étape d’accès** permet de spécifier l’étape suivante du modèle de workflow à exécuter, selon le résultat d’une expression de routage.
 
 Tout comme l’étape de division OU, vous pouvez définir l’expression de routage de l’étape d’accès à l’aide d’une définition de règle, d’un script ECMA ou d’un script externe.
 

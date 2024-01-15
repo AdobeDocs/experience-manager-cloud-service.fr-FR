@@ -3,13 +3,15 @@ title: Intégration d’Adobe Workfront Fusion avec envoi AEM Forms
 description: Adobe Workfront Fusion vous permet de vous concentrer sur de nouvelles tâches plutôt que de vous concentrer sur des tâches répétitives. Vous pouvez connecter Adobe Workfront Fusion à un formulaire adaptatif à l’aide de l’envoi de formulaire.
 keywords: Envoyer un formulaire adaptatif à Adobe Workfront Fusion, Intégration d’Adobe Workfront Fusion à l’envoi d’AEM Forms, Adobe Workfront Fusion avec AEM Forms, Workfront Fusion avec AEM Forms, Connecter la fusion Workfront à AEM Forms, AEM Forms et à la fusion, Comment connecter la fusion à ?, Connecter la fusion de  à un formulaire
 topic-tags: author, developer
-source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
+feature: Adaptive Forms
+role: Admin, User
+exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1240'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Envoyer un formulaire adaptatif à Adobe Workfront Fusion
 
@@ -173,12 +175,12 @@ Pour configurer l’action d’envoi du formulaire adaptatif existant pour Workf
 1. Connectez-vous à votre instance AEM.
 1. Accédez à **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
 1. Sélectionnez un formulaire adaptatif et ouvrez-le en mode d’édition.
-1. Ouvrez l’explorateur de contenu , puis sélectionnez l’option **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
-1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
+1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
 
    ![Action Envoyer pour Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 
-1. Ouvrez l’onglet **[!UICONTROL Soumission]**.
+1. Ouvrez l’onglet **[!UICONTROL Envoi]**.
 1. Sélectionnez la variable **[!UICONTROL Action Envoyer]** as **[!UICONTROL Appeler un scénario de fusion Workfront]**
 1. Sélectionner **[!UICONTROL Scénario de Workfront Fusion]** dans la liste déroulante.
 1. Cliquez sur **[!UICONTROL Terminé]**.
@@ -189,5 +191,3 @@ Pour configurer l’action d’envoi du formulaire adaptatif existant pour Workf
 - Un scénario peut comporter plusieurs liens webhook, mais à la fois, un seul lien webhook est actif. Il est recommandé de supprimer le webhook non lié afin qu’il n’apparaisse pas dans la liste déroulante Action d’envoi AEM Forms.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
-
-

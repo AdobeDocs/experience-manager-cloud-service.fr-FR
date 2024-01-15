@@ -2,9 +2,11 @@
 title: Quelles sont les considérations, les problèmes connus et les bonnes pratiques dans AEM Forms ?
 description: Considérations sur les problèmes connus et les bonnes pratiques pour les API de communication AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1733'
 ht-degree: 94%
 
 ---
@@ -69,7 +71,7 @@ La marge non imprimable de 0,25 pouces par défaut n’est pas exacte pour les 
 
 Assurez-vous toujours d’utiliser le fichier XDC approprié pour l’imprimante. Par exemple, évitez de choisir un fichier XDC pour une imprimante 300 dpi et d’envoyer le document vers une imprimante 200 dpi.
 
-### Scripts  pour les formulaires XFA (XDP/PDF) uniquement {#scripts}
+### Scripts pour les formulaires XFA (XDP/PDF uniquement) {#scripts}
 
 Un design de formulaire utilisé avec les API Communications peut contenir des scripts qui s’exécutent sur le serveur. Assurez-vous qu’un design de formulaire ne contient pas de scripts exécutés sur le client. Pour plus d’informations sur la création de scripts de design de formulaire, voir l’[aide de Designer](use-forms-designer.md).
 

@@ -1,14 +1,14 @@
 ---
 title: Quel est le processus pour utiliser un modèle de données de formulaire dans AEM Forms ?
 description: Ajoutez des objets de modèle de données, des services, créez des objets de modèle de données et des propriétés enfants, configurez des services, utilisez les propriétés de navigation des services OData.
-feature: Form Data Model
-role: User
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '4087'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -82,7 +82,7 @@ Pour ajouter des objets et services de modèle de données :
 
 ### Création des objets de modèle de données {#create-data-model-objects}
 
-Vous pouvez ajouter des objets de modèle de données à partir de sources de données configurées et vous pouvez également créer des objets ou des entités de modèle de données sans sources de données. Cette action est particulièrement utile si vous n’avez pas configuré de sources de données dans le modèle de données de formulaire.
+Vous pouvez ajouter des objets de modèle de données à partir de sources de données configurées et vous pouvez également créer des objets ou des entités de modèle de données sans sources de données. C’est particulièrement utile si vous n’avez pas configuré de sources de données dans le modèle de données de formulaire.
 
 Pour créer un objet de modèle de données sans sources de données :
 
@@ -128,7 +128,7 @@ Lorsque les sources de données que vous souhaitez intégrer au modèle de donn�
 
 ## Configuration des services {#configure-services}
 
-Pour lire et écrire des données pour un objet de modèle de données, procédez comme suit pour configurer les services de lecture et d’écriture :
+Pour lire et écrire des données pour un objet de modèle de données, procédez comme suit pour configurer les services en lecture et en écriture :
 
 1. Cochez la case en haut d’un objet de modèle de données pour le sélectionner et sélectionnez **[!UICONTROL Modifier les propriétés]**.
 
@@ -153,7 +153,7 @@ Pour lire et écrire des données pour un objet de modèle de données, procéde
 
    Les objets de modèle de données configurés dans un modèle de données de formulaire peuvent être utilisés dans l’onglet Objets de modèle de données de l’explorateur de contenu d’un formulaire adaptatif basé sur le modèle de données de formulaire. Lorsque vous ajoutez une association entre deux objets de modèle de données, l’objet de modèle de données à associer est imbriqué sous l’objet de modèle de données auquel vous l’associez dans l’onglet **[!UICONTROL Objets de modèle de données]**. Si le modèle de données imbriqué est un objet de niveau supérieur, il apparaît également séparément dans l’onglet **[!UICONTROL Objets de modèle de données]**. Par conséquent, vous en voyez deux entrées, l’une à l’intérieur et l’autre à l’extérieur de la hiérarchie imbriquée, ce qui pourrait perturber les auteurs de formulaires. Pour que l’objet de modèle de données associé apparaisse uniquement dans la hiérarchie imbriquée, désactivez la propriété Objet de niveau supérieur.
 
-1. Sélectionnez les services de lecture et d’écriture pour les objets de modèle de données sélectionnés. Les arguments des services s’affichent.
+1. Sélectionnez les services de lecture et d’écriture pour les objets de modèle de données sélectionnés. Les arguments pour les services apparaissent.
 
    ![read-write-services](assets/read-write-services.png)
 
@@ -252,7 +252,7 @@ Pour ajouter une association :
 
    Boîte de dialogue Ajouter une association
 
-1. Dans le panneau Ajouter une association :
+1. Dans le volet Ajouter une association :
 
    * Spécifiez un titre pour l’association.
    * Sélectionnez le type d’association : **[!UICONTROL un à un]** ou **[!UICONTROL un à plusieurs]**.
@@ -294,12 +294,12 @@ Pour modifier les propriétés :
 1. Sélectionner **[!UICONTROL Modifier les propriétés]**. Le volet **[!UICONTROL Modifier les propriétés]** de l’objet de modèle, de la propriété ou du service sélectionné s’ouvre.
 
    * **[!UICONTROL Objet de modèle de données]** : spécifiez les services de lecture et d’écriture et modifiez les arguments.
-   * **[!UICONTROL Propriété]** : spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé primaire de l’objet de modèle de données.
+   * **[!UICONTROL Propriété]** : spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé principale de l’objet de modèle de données.
    * **[!UICONTROL Service]** : spécifiez l’objet de modèle d’entrée, le type de sortie et les arguments du service. Pour un service Get, vous pouvez spécifier s’il doit renvoyer un tableau.
 
      ![edit-properties-service](assets/edit-properties-service.png)
 
-   Boîte de dialogue Modifier les propriétés pour un service get
+   Boîte de dialogue Modifier les propriétés pour un service Get
 
 1. Sélectionner **[!UICONTROL Terminé]** pour enregistrer les propriétés, puis **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire.
 

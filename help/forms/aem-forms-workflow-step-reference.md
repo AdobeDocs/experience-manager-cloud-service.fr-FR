@@ -4,10 +4,12 @@ description: Les processus orientés formulaire vous permettent de créer rapide
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser AEM workflows, en utilisant affecter des étapes de tâche, convertir en étape de PDF/A, Générer un document d’étape enregistrée, utiliser des workflows, Signer une étape de document, Générer une étape de sortie imprimée, Générer une sortie de PDF non interactive
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Workflow
+role: Admin, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '7367'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -23,7 +25,7 @@ Vous utilisez des modèles de workflow . Un modèle permet de définir et d’ex
 
 ## Étapes orientées formulaire {#forms-workflow-steps}
 
-Les étapes de processus orientés formulaire effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement un processus Forms basé sur Adaptive Forms sur OSGi. Ces processus peuvent être utilisés pour développer des processus de révision et d’approbation de base, des processus métier internes et sur le pare-feu. Vous pouvez également suivre les étapes de processus de Forms pour :
+Les étapes de workflows basés sur l’utilisation de Forms effectuent des opérations spécifiques à AEM Forms dans un workflow AEM. Ces étapes vous permettent de créer rapidement un processus Forms basé sur Adaptive Forms sur OSGi. Ces processus peuvent être utilisés pour développer des processus de révision et d’approbation de base, des processus métier internes et sur le pare-feu. Vous pouvez également suivre les étapes de processus de Forms pour :
 
 * créer des processus métier, des processus après envoi et des processus back-end pour gérer les processus d’inscription ;
 
@@ -39,7 +41,7 @@ Les étapes de processus orientés formulaire effectuent des opérations spécif
 
 >[!NOTE]
 >
->Si le modèle de workflow est marqué pour un stockage externe, alors pour toutes les étapes du Forms Workflow, vous ne pouvez sélectionner que l’option de variable pour stocker ou récupérer les fichiers de données et les pièces jointes.
+>Si le modèle de workflow est marqué pour un stockage externe, alors pour toutes les étapes de Forms Workflow, vous pouvez sélectionner uniquement l’option de variable pour stocker ou récupérer les fichiers de données et les pièces jointes.
 
 ## Étape Affecter une tâche {#assign-task-step}
 
@@ -121,9 +123,9 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **[!UICONTROL Personne désignée]** > **[!UICONTROL Options d’affectation]** : indiquez la méthode à utiliser pour affecter la tâche à un utilisateur. Vous pouvez affecter la tâche de manière dynamique à un utilisateur ou un groupe à l’aide du script Programme de sélection des participants ou affecter la tâche à un utilisateur ou à un groupe AEM spécifique.
 * **[!UICONTROL Programme de sélection des participants :]** cette option est disponible lorsque l’option **[!UICONTROL Sélectionner de manière dynamique un utilisateur ou un groupe]** est activée dans le champ Options d’affectation. Vous pouvez utiliser un ECMAScript ou un service pour sélectionner un utilisateur ou une utilisatrice, ou un groupe de manière dynamique. Pour en savoir plus, veuillez consulter [Affectation dynamique d’un workflow aux utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape de participant dynamique Adobe Experience Manager personnalisée.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
 
-* **[!UICONTROL Participants]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ Programme de **[!UICONTROL sélection des participants]**. Le champ vous permet de sélectionner des utilisateurs ou des groupes pour l’option RandomParticipantChooser .
+* **[!UICONTROL Participants]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ Programme de **[!UICONTROL sélection des participants]**. Le champ vous permet de sélectionner des utilisateurs, des utilisatrices ou des groupes pour l’option RandomParticipantChooser.
 
-* **[!UICONTROL Personne désignée]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** est sélectionnée dans le champ **[!UICONTROL Programme de sélection des participants]**. Le champ vous permet de sélectionner une variable de type Données de chaîne pour définir la personne désignée.
+* **[!UICONTROL Personne désignée]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** est sélectionnée dans le champ **[!UICONTROL Programme de sélection des participants]**. Ce champ vous permet de sélectionner une variable de type Chaîne pour définir la personne désignée.
 
 * **[!UICONTROL Arguments :]** le champ est disponible lorsqu’un script autre que le script RandomParticipantChoose est sélectionné dans le champ Programme de sélection des participants. Le champ vous permet de fournir une liste d’arguments séparés par des virgules pour le script sélectionné dans le champ Programme de sélection des participants .
 
@@ -396,17 +398,17 @@ L’étape Signer le document possède les propriétés suivantes :
 * **[!UICONTROL Processus de signature :]** vous pouvez signer un document dans un ordre séquentiel ou parallèle. Dans un ordre séquentiel, un signataire à la fois reçoit le document pour signature. Une fois que le premier signataire a terminé la signature du document, le document est envoyé au second signataire, etc. Dans l’ordre parallèle, plusieurs signataires signent un document en même temps.
 * **[!UICONTROL URL de redirection :]** spécifiez une URL de redirection. Une fois le document signé, vous pouvez rediriger la personne désignée vers une URL. En règle générale, cette URL contient un message de remerciement ou d’autres instructions.
 * **[!UICONTROL Phase de processus :]** un processus peut avoir plusieurs étapes. Ces phases sont affichées dans la boîte de réception AEM. Vous pouvez définir ces phases dans les propriétés du modèle (**[!UICONTROL Sidekick]** > **[!UICONTROL Page]** > **[!UICONTROL Propriétés de la page]** > **[!UICONTROL Phases]**).
-* **[!UICONTROL Sélectionner les destinataires]**: indiquez la méthode de sélection des destinataires pour le document. Vous pouvez affecter dynamiquement le workflow à un utilisateur ou à un groupe ou ajouter manuellement les détails d’un destinataire. Lorsque vous sélectionnez Manuellement dans la liste déroulante, vous ajoutez les détails des destinataires, tels que la méthode Email, Role et Authentication.
+* **[!UICONTROL Sélectionner les destinataires]**: indiquez la méthode de sélection des destinataires pour le document. Vous pouvez affecter de manière dynamique le workflow à un utilisateur ou utilisatrice ou à un groupe ou ajouter manuellement les informations d’un ou une destinataire. Lorsque vous sélectionnez Manuellement dans la liste déroulante, vous ajoutez les détails des destinataires, tels que la méthode Email, Role et Authentication.
 
   >[!NOTE]
   >
-  >* Dans la section Rôle , vous pouvez spécifier le rôle du destinataire en tant que Signataire, Approbateur, Accepteur, Destinataire certifié, Utilisateur de formulaire et Délégué.
+  >* Dans la section Rôle, vous pouvez indiquer le rôle du destinataire : signataire, approbateur, accepteur, destinataire certifié, utilisateur de formulaire et délégué.
   >* Si vous sélectionnez Délégué dans l’option Rôle , le Délégué peut affecter la tâche de signature à un autre destinataire.
-  >* Si vous avez configuré une méthode d’authentification pour [!DNL Adobe Sign], en fonction de votre configuration, vous sélectionnez une méthode d’authentification telle que l’authentification téléphonique, l’authentification basée sur les identités sociales, l’authentification basée sur les connaissances et l’authentification basée sur les identités gouvernementales.
+  >* Si vous avez configuré une méthode d’authentification pour [!DNL Adobe Sign], en fonction de votre configuration, vous pouvez sélectionner une méthode d’authentification telle que l’authentification par téléphone, l’authentification basée sur les identités sociales ou gouvernementales et l’authentification basée sur les connaissances.
 
 * **[!UICONTROL Script ou service pour sélectionner les destinataires]**: l’option n’est disponible que si vous sélectionnez l’option Dynamiquement dans le champ Sélectionner les destinataires . Vous pouvez spécifier un script ECMAScript ou un service pour sélectionner des signataires et des options de vérification pour un document.
 * **[!UICONTROL Détails du destinataire]**: l’option n’est disponible que si l’option Manuellement est sélectionnée dans le champ Sélectionner les destinataires . Indiquez une adresse électronique et choisissez un mécanisme de vérification facultatif. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte [!DNL Adobe Sign] configuré. Vous pouvez utiliser une variable de type Chaîne pour définir des valeurs pour les champs Courriel, Code de pays et Numéro de téléphone. Les champs Code pays et Numéro de téléphone ne s’affichent que si vous sélectionnez Vérification téléphonique dans la liste déroulante de vérification en 2 étapes.
-* **[!UICONTROL Signed Document]**: vous pouvez enregistrer l’état du document signé dans la variable . Pour ajouter un journal d’audit des signatures électroniques afin d’accroître la sécurité et la légalité de votre document signé, vous pouvez inclure le rapport d’audit. Vous pouvez enregistrer le document signé à l’aide du dossier Variable ou Charge utile .
+* **[!UICONTROL Document signé]** : vous pouvez enregistrer le statut du document signé dans la variable. Pour ajouter un journal d’audit des signatures électroniques afin d’accroître la sécurité et la légalité de votre document signé, vous pouvez inclure le rapport d’audit. Vous pouvez enregistrer le document signé à l’aide du dossier Variable ou Charge utile .
 
   >[!NOTE]
   >
