@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a74f027c7fe16c3bd23a8627bc9c82e8840cb77
+source-git-commit: e25f3e74fa7fa18b92ffe0c40a19f20442d4c7a0
 workflow-type: tm+mt
 source-wordcount: '4544'
 ht-degree: 96%
@@ -164,8 +164,7 @@ ht-degree: 96%
       + [Notes de mise à jour actuelles de Workfront pour le connecteur amélioré Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Nouveautés](/help/release-notes/what-is-new.md)
    + [Changements notables dans AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-   + [Fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md)
-   + [API obsolètes](/help/release-notes/deprecated-apis.md)
+   + [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md)
    + [Canal de version préliminaire](/help/release-notes/prerelease.md)
 + Sécurité {#security}
    + [Présentation de la sécurité dans AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
