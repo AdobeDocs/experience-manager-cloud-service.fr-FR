@@ -2,10 +2,10 @@
 title: Création de programmes de production
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 73%
+source-wordcount: '599'
+ht-degree: 64%
 
 ---
 
@@ -22,7 +22,7 @@ Pour créer un programme de production, procédez comme suit.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Cliquez sur **Ajout d’un programme** dans le coin supérieur droit de l’écran.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** écran, appuyez ou cliquez **Ajout d’un programme** dans le coin supérieur droit de l’écran.
 
    ![Page de destination de Cloud Manager](assets/log-in.png)
 
@@ -37,8 +37,6 @@ Pour créer un programme de production, procédez comme suit.
    * HIPAA ne peut pas être activé ni désactivé après la création du programme.
       * [En savoir plus](https://www.adobe.com/go/hipaa-ready) sur la mise en œuvre de la solution conforme à la norme HIPAA d’Adobe.
    * Une fois activée, la protection WAF-DDOS peut ensuite être configurée en configurant une [pipeline hors production.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
 
    ![Options de sécurité](assets/create-production-program-security.png)
 
@@ -60,7 +58,7 @@ Pour créer un programme de production, procédez comme suit.
    ![Définir la date de mise en production planifiée](assets/setup-go-live.png)
 
    * Cette date peut être modifiée à tout moment.
-   * Cette date est uniquement à usage informatif et déclenche le widget de mise en production sur la page de présentation du programme dans le but de fournir des liens internes au produit vers la documentation sur les bonnes pratiques d’AEM as a Cloud Service en temps opportun, afin de vous aligner sur votre parcours, offrant ainsi une expérience de mise en production réussie et fluide.
+   * Cette date est fournie à titre d’information uniquement et déclenche le widget GoLive sur la page [**Aperçu du programme** page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) fournir des liens internes aux produits vers AEM documentation des bonnes pratiques as a Cloud Service en temps opportun afin de vous aligner sur votre parcours et d’offrir ainsi une expérience d’activation fluide et réussie.
 
 1. Cliquez sur **Créer**.
 

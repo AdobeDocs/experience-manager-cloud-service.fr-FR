@@ -2,10 +2,10 @@
 title: Vérification du statut du nom de domaine
 description: Découvrez comment déterminer si Cloud Manager a vérifié votre nom de domaine personnalisé avec succès.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 85%
+source-wordcount: '651'
+ht-degree: 84%
 
 ---
 
@@ -14,9 +14,11 @@ ht-degree: 85%
 
 Vous pouvez déterminer le statut de votre nom de domaine personnalisé dans Cloud Manager.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** sélectionnez le programme.
+
+1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
 
 1. Cliquez sur **Paramètres de domaine** dans le panneau de navigation de gauche.
 
