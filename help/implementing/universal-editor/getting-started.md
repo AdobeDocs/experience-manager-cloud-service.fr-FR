@@ -2,10 +2,10 @@
 title: Prise en main de l’éditeur universel dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 76%
+source-wordcount: '903'
+ht-degree: 71%
 
 ---
 
@@ -35,7 +35,7 @@ Ce document vous guidera tout au fil de ces étapes.
 
 ## Demande d’accès à l’éditeur universel {#request-access}
 
-Vous devez d’abord demander l’accès à l’éditeur universel. Accédez à [https://experience.adobe.com?lang=fr/#/aem/editor](https://experience.adobe.com/#/aem/editor), connectez-vous et vérifiez si vous avez accès à l’éditeur universel.
+Vous devez d’abord demander l’accès à l’éditeur universel. Ouvrir [&quot;https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor), connectez-vous et validez si vous avez accès à l’éditeur universel.
 
 Si vous n’y avez pas accès, vous pouvez le demander via un formulaire lié sur la même page.
 
@@ -59,7 +59,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternative pour les applications autres que React {#alternative}
 
-Si vous ne mettez pas en œuvre d’application React ou que avez besoin d’un rendu côté serveur, une autre méthode consiste à inclure les éléments suivants dans le corps du document.
+Si vous ne mettez pas en oeuvre d’application React et/ou avez besoin d’un rendu côté serveur, une autre méthode consiste à inclure les éléments suivants dans le corps du document.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -124,10 +124,10 @@ Les connexions utilisées dans l’application sont stockées sous la forme de b
 
 L’identifiant `urn:adobe:aue:system` représente la connexion à l’éditeur universel d’Adobe.
 
-Les `itemid` utilisent le préfixe `urn` pour raccourcir l’identifiant.
+Les `data-aue-resource` utilisent le préfixe `urn` pour raccourcir l’identifiant.
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` : il s’agit de la référence nommée mentionnée dans la balise `<meta>`. Par ex. `aemconnection`
