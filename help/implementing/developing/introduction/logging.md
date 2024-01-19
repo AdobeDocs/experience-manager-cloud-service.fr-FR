@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
+source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
 workflow-type: tm+mt
-source-wordcount: '2755'
-ht-degree: 88%
+source-wordcount: '2776'
+ht-degree: 87%
 
 ---
 
@@ -611,7 +611,7 @@ Les clients disposant d’un compte Splunk peuvent demander, via un ticket de se
 
 La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l’utilisation des E/S réseau du client ou de la cliente.
 
-Le transfert Splunk ne prend pas encore en charge les journaux CDN.
+Les journaux CDN seront transférés vers Splunk pour les nouvelles demandes de ticket d’assistance ; les clients qui ont déjà activé le transfert Splunk pourront ajouter des journaux CDN à l’avenir.
 
 ### Activation du transfert Splunk {#enabling-splunk-forwarding}
 
