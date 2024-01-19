@@ -5,10 +5,10 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 74%
+source-wordcount: '482'
+ht-degree: 66%
 
 ---
 
@@ -24,6 +24,8 @@ Vous pouvez utiliser les informations d’identification du client OAuth 2.0 po
 ![Workflow lors de la définition de la communication entre AEM Forms et l’application Salesforce](/help/forms/assets/salesforce-workflow.png).
 
 AEM Forms échange les informations d’identification du client (consumer key et secret du client), définies dans l’application connectée Salesforce, pour obtenir un jeton d’accès.
+
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Pour en savoir plus sur ces options, voir [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) article.
 
 L’utilisation des informations d’identification du client OAuth 2.0 présente plusieurs avantages par rapport à l’authentification à l’aide du flux de code d’autorisation :
 
@@ -69,6 +71,9 @@ Pour connecter le formulaire adaptatif à l’application Salesforce à l’aide
 1. Cliquez sur **[!UICONTROL Tester la connexion]**.
 1. Si la connexion est établie, cliquez sur le bouton **[!UICONTROL Créer]**.
 
-Maintenant, vous pouvez [création du modèle de données de formulaire](/help/forms/create-form-data-models.md) pour envoyer le formulaire adaptatif à l’application Salesforce.
+
+Après avoir configuré l’application Salesforce, vous pouvez utiliser la configuration lors de la création de modèles de données de formulaire. Pour plus d’informations, voir [Créer un modèle de données de formulaire](create-form-data-models.md). [Configuration de l’action d’envoi de modèle de données de formulaire](/help/forms/using-form-data-model.md) pour un formulaire adaptatif afin d’envoyer des données aux applications Salesforce.
+
+Pour plus d’informations sur la création et l’utilisation d’un modèle de données de formulaire dans les processus métier, voir [Intégration de données](data-integration.md).
 
 

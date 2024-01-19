@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1273'
 ht-degree: 3%
 
 ---
@@ -21,21 +21,23 @@ ht-degree: 3%
 
 Par exemple, avec Workfront Fusion, vous pouvez créer un scénario pour rassembler des données avec le formulaire adaptatif, traiter les données et envoyer les données à un entrepôt de données en vue de les archiver. Une fois qu’un scénario est configuré, Workfront Fusion exécute automatiquement les tâches chaque fois qu’un utilisateur remplit un formulaire, en mettant à jour facilement l’entrepôt de données.
 
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Pour en savoir plus sur ces options, voir [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)  article.
+
 ## Avantages de l’utilisation d’Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
 Certains des avantages de l’utilisation d’Adobe Workfront Fusion avec AEM Forms :
 
-- Envoi de données capturées avec le Forms adaptatif à un scénario de fusion Workfront
-- Automatisation des tâches moins sujettes aux erreurs.
-- Personnalisation des exigences spécifiques à une organisation qui n’est pas directement incluse dans Workfront.
-- Gestion de logiques simples et de décisions simples, par exemple des instructions if/then.
+* Envoi de données capturées avec le Forms adaptatif à un scénario de fusion Workfront
+* Automatisation des tâches moins sujettes aux erreurs.
+* Personnalisation des exigences spécifiques à une organisation qui n’est pas directement incluse dans Workfront.
+* Gestion de logiques simples et de décisions simples, par exemple des instructions if/then.
 
 ## Conditions préalables pour intégrer AEM Forms à Adobe Workfront Fusion {#prerequisites}
 
 Les conditions préalables requises pour connecter Workfront Fusion à AEM Forms sont les suivantes :
 
-- Un valide [Licence Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- Un utilisateur AEM ayant le droit d’accéder [Console de développement](https://my.cloudmanager.adobe.com/) to [récupération des informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr).
+* Un valide [Licence Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Un utilisateur AEM ayant le droit d’accéder [Console de développement](https://my.cloudmanager.adobe.com/) to [récupération des informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr).
 
 ## Intégration d’AEM Forms à Adobe Workfront Fusion
 
@@ -100,16 +102,16 @@ Pour ajouter une connexion :
    > Conservez la variable `https://` dans le **Point d’entrée IMS** textbox lors de l’ajout de la propriété `imsEndpoint` URL.
 
 1. Spécifiez les valeurs suivantes dans la variable **[!UICONTROL Création d’une connexion]** boîte de dialogue :
-   - Spécifier **ID client** avec la valeur de **clientId** à partir des informations d’identification du service dans Developer Console.
-   - Spécifier **Secret du client** avec la valeur de **clientSecret** à partir des informations d’identification du service dans Developer Console.
-   - Spécifier **Identifiant du compte technique**  avec la valeur de **id** à partir des informations d’identification du service dans Developer Console.
-   - Spécifier **ID d’organisation**  avec la valeur de **org** à partir des informations d’identification du service dans Developer Console.
-   - **Métadonnées**  avec la valeur de **métascopes** à partir des informations d’identification du service dans Developer Console.
-   - **Clés privées**  avec la valeur de **privateKey** à partir des informations d’identification du service dans Developer Console.
+   * Spécifier **ID client** avec la valeur de **clientId** à partir des informations d’identification du service dans Developer Console.
+   * Spécifier **Secret du client** avec la valeur de **clientSecret** à partir des informations d’identification du service dans Developer Console.
+   * Spécifier **Identifiant du compte technique**  avec la valeur de **id** à partir des informations d’identification du service dans Developer Console.
+   * Spécifier **ID d’organisation**  avec la valeur de **org** à partir des informations d’identification du service dans Developer Console.
+   * **Métadonnées**  avec la valeur de **métascopes** à partir des informations d’identification du service dans Developer Console.
+   * **Clés privées**  avec la valeur de **privateKey** à partir des informations d’identification du service dans Developer Console.
 
    >[!NOTE]
    >
-   >- Pour **Clé privée**, supprimer `\r\n` de sa valeur.
+   >* Pour **Clé privée**, supprimer `\r\n` de sa valeur.
    >  Par exemple, si la valeur de la clé privée est :
    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, puis après avoir supprimé la variable `\r\n` à partir de la clé privée, la clé ressemblerait à ce qui suit, les deux valeurs apparaissant dans une ligne distincte :
    >
@@ -117,7 +119,7 @@ Pour ajouter une connexion :
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >- Vous avez également la possibilité de récupérer une clé privée ou un certificat à partir du fichier en sélectionnant l’option **Extract** bouton .
+   >* Vous avez également la possibilité de récupérer une clé privée ou un certificat à partir du fichier en sélectionnant l’option **Extract** bouton .
 
 1. Cliquez sur **Continuer**.
 
@@ -144,8 +146,8 @@ Une fois que vous avez cliqué sur le bouton bascule, le scénario Workfront com
 ### 2. Configuration de l’action d’envoi d’un formulaire adaptatif pour Workfront Fusion
 
 Vous pouvez configurer l’action d’envoi pour la fusion de polices de travail pour :
-- [Nouvelle Forms adaptative](#new-af-submit-action)
-- [Formulaires adaptatifs existants](#existing-af-submit-action)
+* [Nouvelle Forms adaptative](#new-af-submit-action)
+* [Formulaires adaptatifs existants](#existing-af-submit-action)
 
 #### Configuration de l’action d’envoi du nouveau formulaire adaptatif pour Workfront Fusion {#new-af-submit-action}
 
@@ -187,7 +189,11 @@ Pour configurer l’action d’envoi du formulaire adaptatif existant pour Workf
 
 ## Bonnes pratiques {#best-practices}
 
-- Il est recommandé de choisir soigneusement votre nom de webhook, car il n’est pas possible d’obtenir le nom du scénario dans l’instance AEM. Si vous modifiez le nom du webhook à l’avenir, il n’est plus pris en compte dans la liste déroulante Action d’envoi d’AEM Forms.
-- Un scénario peut comporter plusieurs liens webhook, mais à la fois, un seul lien webhook est actif. Il est recommandé de supprimer le webhook non lié afin qu’il n’apparaisse pas dans la liste déroulante Action d’envoi AEM Forms.
+* Il est recommandé de choisir soigneusement votre nom de webhook, car il n’est pas possible d’obtenir le nom du scénario dans l’instance AEM. Si vous modifiez le nom du webhook à l’avenir, il n’est plus pris en compte dans la liste déroulante Action d’envoi d’AEM Forms.
+* Un scénario peut comporter plusieurs liens webhook, mais à la fois, un seul lien webhook est actif. Il est recommandé de supprimer le webhook non lié afin qu’il n’apparaisse pas dans la liste déroulante Action d’envoi AEM Forms.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## Articles connexes
+
+{{af-submit-action}}

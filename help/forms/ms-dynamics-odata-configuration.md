@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 86%
+source-wordcount: '1000'
+ht-degree: 78%
 
 ---
 
@@ -35,6 +35,9 @@ ht-degree: 86%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour un événement [!DNL Experience Manager] instance, voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
+
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Pour en savoir plus sur ces options, voir [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)  article.
+
 
 ## Conditions préalables {#prerequisites}
 
@@ -70,7 +73,7 @@ Pour définir l’URL de réponse de l’application [!DNL Microsoft Dynamics] e
 
 >[!NOTE]
 >
->N’utilisez cette procédure que lors de l’intégration d’[!DNL Experience Manager Forms] au serveur [!DNL Microsoft Dynamics] local.
+> N’utilisez cette procédure que lors de l’intégration d’[!DNL Experience Manager Forms] au serveur [!DNL Microsoft Dynamics] local.
 
 1. Configurez l’instance locale d’[!DNL Microsoft Dynamics] pour IFD, comme décrit dans [Configurer IFD pour [!DNL Microsoft Dynamics]](https://technet.microsoft.com/fr-fr/library/dn609803.aspx).
 1. Exécutez les commandes ci-dessous à l’aide de Windows PowerShell pour configurer les paramètres de réclamation sur [!DNL Microsoft Dynamics] compatible avec IFD :
@@ -158,14 +161,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Après avoir configuré le service cloud MS Dynamics OData, vous pouvez utiliser le service lors de la création de modèles de données de formulaire. Pour plus d’informations, voir [Créer un modèle de données de formulaire](create-form-data-models.md).
+Après avoir configuré le service cloud OData de MS Dynamics, vous pouvez utiliser le service lors de la création de modèles de données de formulaire. Pour plus d’informations, voir [Créer un modèle de données de formulaire](create-form-data-models.md).
 
-Ensuite, vous pouvez créer un formulaire adaptatif reposant sur le modèle de données de formulaire et l’utiliser dans différents cas d’utilisation de formulaires adaptatifs, comme :
+Ensuite, vous pouvez créer un modèle de données de formulaire adaptatif et l’utiliser dans divers cas d’utilisation de formulaire adaptatif, tels que :
 
 * Remplir le formulaire adaptatif en obtenant des informations des entités et des services [!DNL Microsoft Dynamics]
 * Appeler des opérations du serveur [!DNL Microsoft Dynamics] définies dans un modèle de données de formulaire à l’aide de règles de formulaires adaptatifs
 * Écrire les données de formulaire envoyées dans les entités [!DNL Microsoft Dynamics]
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+Vous pouvez [configuration de l’action d’envoi de modèle de données de formulaire](/help/forms/using-form-data-model.md) pour un formulaire adaptatif pour envoyer des données à Microsoft Dynamics OData.
 
 Pour plus d’informations sur la création et l’utilisation d’un modèle de données de formulaire dans les processus métier, voir [Intégration de données](data-integration.md).

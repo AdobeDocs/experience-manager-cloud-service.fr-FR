@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 96%
+source-wordcount: '4600'
+ht-degree: 95%
 
 ---
 
@@ -609,6 +609,12 @@ ht-degree: 96%
             + [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Créer des formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
             + [Définition de l’action Envoyer pour un formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)
+            + [Envoyer un formulaire adaptatif au stockage Azure Blob](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Envoyer un formulaire adaptatif à Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+            + [Configuration du stockage SharePoint pour un formulaire adaptatif](/help/forms/configure-submit-action-sharepoint.md)
+            + [Intégrer le formulaire adaptatif AEM au processus AEM](/help/forms/configure-submit-action-workflow.md)
+            + [Configuration de l’action d’envoi Envoyer vers le point de fin REST pour le Forms adaptatif](/help/forms/configure-submit-action-restpoint.md)
+            + [Configuration de l’action Envoyer un courrier électronique pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
             + [Utilisation de Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)

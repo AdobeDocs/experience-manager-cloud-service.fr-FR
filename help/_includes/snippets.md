@@ -1,8 +1,8 @@
 ---
-source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
+source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 87%
+source-wordcount: '264'
+ht-degree: 81%
 
 ---
 # Fragments de code {#snippets}
@@ -43,5 +43,16 @@ ht-degree: 87%
 * [Envoyer des données de formulaire adaptatif à un workflow AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utiliser le Portail Formulaires pour répertorier des formulaires adaptatifs AEM sur un site web AEM](/help/forms/configure-forms-portal.md)
 
+## Actions d’envoi de formulaire adaptatif {#af-submit-action}
 
-
+* [Envoyer un e-mail](/help/forms/configure-submit-action-send-email.md)
+* [Envoyer à SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Envoyer à l’aide du modèle de données de formulaire](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Envoyer au stockage Blob Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Envoyer vers le point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
+* [Envoyer à OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Appeler un processus AEM](/help/forms/configure-submit-action-workflow.md)
+* [Envoyer à Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Envoyer à Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Connexion d’un formulaire adaptatif à une application Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connexion d’un formulaire adaptatif à Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
