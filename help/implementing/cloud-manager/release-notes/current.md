@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2024.1.0 dans Adobe Experience�
 description: Consultez les notes de mise à jour de Cloud Manager 2024.1.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 24%
+source-wordcount: '673'
+ht-degree: 20%
 
 ---
 
@@ -21,7 +21,12 @@ Cette page présente les notes de mise à jour de Cloud Manager version 2024.
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2024.1.0 de Cloud Manager dans AEM as a Cloud Service est le 18 janvier 2024.
+La date de publication de la version 2024.1.0 de Cloud Manager dans AEM as a Cloud Service est le 18 janvier 2024. La prochaine version est prévue pour le 16 février 2024.
+
+## Nouveautés {#what-is-new}
+
+* Cloud Manager valide désormais les dates d’expiration non seulement pour la [certificat,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) mais également pour les certificats intermédiaires.
+* CDN [logs](/help/implementing/cloud-manager/manage-logs.md) sont désormais renvoyés dans un format compressé.
 
 ## Programme d’adoption précoce {#early-adoption}
 
@@ -61,3 +66,8 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commenta
 Le tableau de bord utilise Google Lighthouse, un outil automatisé Open Source permettant d’améliorer la qualité de vos applications web. Vous pouvez l’exécuter sur n’importe quelle page web, publique ou nécessitant une authentification. Il comporte des audits des performances, de l’accessibilité, des applications web progressives, de l’optimisation pour les moteurs de recherche, etc.
 
 Vous souhaitez tester le nouveau tableau de bord ? Pour commencer, envoyez un courrier électronique à l’adresse `aem-lighthouse-pilot@adobe.com` de votre email associé à votre Adobe ID.
+
+## Correctifs {#bug-fixes}
+
+* Une erreur a été corrigée lorsque les pipelines de configuration échouaient à l’étape de création avec un message d’erreur non clair si l’emplacement des fichiers de configuration n’était pas correctement défini. Le message d’erreur est maintenant clair et indique que l’utilisateur doit vérifier que l’emplacement des fichiers de configuration est correct.
+* Lorsqu’une étape de création se termine par un état `FAILED` en raison d’un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, il est désormais correctement décrit comme une erreur en raison de conflits de fusion avec la branche de destination.
