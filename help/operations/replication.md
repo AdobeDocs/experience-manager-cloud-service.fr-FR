@@ -2,7 +2,7 @@
 title: Réplication
 description: Découvrez la distribution et le dépannage de la réplication dans AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 96%
@@ -89,7 +89,7 @@ Vous pouvez également créer un modèle de workflow qui utilise l’étape du p
 
 * `includeChildren` (valeur booléenne, valeur par défaut : `false`). La valeur `false` signifie que seul le chemin est publié. `true` signifie que les enfants sont également publiés.
 * `replicateAsParticipant` (valeur booléenne, valeur par défaut : `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` du principal qui a exécuté l’étape de participant.
-* `enableVersion` (valeur booléenne, valeur par défaut : `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
+* `enableVersion` (valeur booléenne, valeur par défaut : `false`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
 * `agentId` (valeur de chaîne, la valeur par défaut signifie que seuls les agents pour la publication sont utilisés). Il est recommandé d’être explicite concernant agentId ; par exemple, attribuez-lui la valeur : publier. L’application à l’agent de la valeur `preview` entraîne la publication sur le service d’aperçu.
 * `filters` (valeur de chaîne, la valeur par défaut signifie que tous les chemins sont activés). Les valeurs disponibles sont les suivantes :
    * `onlyActivated` - activez uniquement les pages qui ont (déjà) été activées. Cette option agit, en quelque sorte, comme une réactivation.
