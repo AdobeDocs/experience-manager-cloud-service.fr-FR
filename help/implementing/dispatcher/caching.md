@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Découvrez les principes de base de la mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
-ht-degree: 90%
+source-wordcount: '2894'
+ht-degree: 89%
 
 ---
 
@@ -223,6 +223,10 @@ Actuellement, les images dans l’espace de stockage blob marquées comme privé
         Header set Age 0
      </LocationMatch>
      ```
+
+### Analyse du ratio d’accès au cache du réseau CDN {#analyze-chr}
+
+Voir [tutoriel sur l’analyse du taux d’accès au cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) pour plus d’informations sur le téléchargement des journaux CDN et l’analyse du taux d’accès au cache de votre site, à l’aide d’un tableau de bord.
 
 ### Comportement de la requête HEAD {#request-behavior}
 
