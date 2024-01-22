@@ -2,12 +2,13 @@
 title: Ajout d’un nom de domaine personnalisé
 description: Découvrez comment ajouter un nom de domaine personnalisé à l’aide de Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 77%
+source-wordcount: '680'
+ht-degree: 71%
 
 ---
+
 
 # Ajout d’un nom de domaine personnalisé {#adding-cdn}
 
@@ -60,15 +61,19 @@ Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT
 
 Consultez [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents statuts et sur la manière de résoudre des problèmes potentiels.
 
+>[!TIP]
+>
+>Consultez l’article suivant sur la nécessité de [Ajouter un CNAME ou un enregistrement suivant](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) pour éviter de doubler l’effort lors de l’ajout d’enregistrements DNS à votre domaine personnalisé. L’entrée TXT et le CNAME ou un enregistrement peuvent être définis simultanément sur le serveur DNS qui gouverne.
+
+>[!TIP]
+>
+>Consultez [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.
+
 >[!NOTE]
 >
 >La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.
 >
 >Cloud Manager vérifie la propriété et met à jour le statut visible dans le tableau des paramètres du domaine. Consultez [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
-
->[!TIP]
->
->Consultez [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.
 
 ## Ajout d’un nom de domaine personnalisé à partir de la page Environnements {#adding-cdn-environments}
 
