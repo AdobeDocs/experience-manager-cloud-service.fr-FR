@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 98%
+source-wordcount: '1953'
+ht-degree: 88%
 
 ---
 
@@ -60,18 +60,53 @@ Ainsi, [!DNL Assets] vous fournit les moyens adéquats pour créer, gérer et é
 
 ## Types de métadonnées {#types-of-metadata}
 
-Les deux types de métadonnées de base sont les métadonnées techniques et les métadonnées descriptives.
+Les métadonnées sont classées comme métadonnées techniques, d’information et administratives.
 
-Les métadonnées techniques sont utiles pour les applications logicielles qui traitent des ressources numériques. Elles ne doivent pas être gérées manuellement. [!DNL Experience Manager Assets] et d’autres logiciels déterminent automatiquement les métadonnées techniques qui peuvent changer lorsque la ressource est modifiée. Les métadonnées techniques disponibles d’une ressource dépendent largement de son type de fichier. Voici quelques exemples de métadonnées techniques :
+### Métadonnées techniques
 
-* taille d’un fichier ;
-* dimensions (hauteur et largeur) d’une image ;
-* débit d’un fichier audio ou vidéo ;
-* résolution (niveau de détail) d’une image.
+Les métadonnées techniques se concentrent sur les aspects techniques des ressources numériques, fournissant des informations essentielles relatives aux éléments suivants :
 
-Les métadonnées descriptives concernent le domaine d’application (par exemple, l’entreprise d’où provient une ressource) et ne peuvent pas être déterminées automatiquement. Elles sont créées manuellement ou semi-automatiquement. Par exemple, une caméra GPS peut automatiquement suivre la latitude et la longitude et ajouter un balisage géographique à l’image.
+* Taille du fichier
+* Format
+* Résolution
+* Dimensions
+* Mode colorimétrique
 
-La création manuelle d’informations descriptives de métadonnées coûte cher. Des normes ont donc été mises en place pour faciliter l’échange de métadonnées entre les systèmes logiciels et les organisations. [!DNL Experience Manager Assets] prend en charge l’ensemble des normes pertinentes pour la gestion des métadonnées.
+Ce type de métadonnées permet aux utilisateurs de comprendre et d’utiliser efficacement les ressources numériques.
+
+### Métadonnées d’information
+
+Les métadonnées d’information fournissent des informations descriptives pour améliorer la compréhension du contenu, ce qui facilite la découverte de contenu et la recherche. Il comprend des mots-clés, des légendes et des descriptions. <br>Par exemple, lors de la gestion d’une vidéo dans Experience Manager Assets, nous pouvons inclure les métadonnées d’information suivantes :
+
+* **Mots-clés**: marketing, lancement de produit, promotion
+* **Légende**: présentation de notre dernier produit avec des fonctionnalités intéressantes
+* **Description**: présentation détaillée du contenu vidéo.
+
+### Métadonnées administratives
+
+Les métadonnées administratives traitent des aspects de gestion des ressources numériques. Il assure le contrôle d’accès, la conformité et la gestion du cycle de vie global des ressources dans le système de gestion des ressources numériques. Il comprend des informations relatives à :
+
+* Propriété des ressources
+* Droits d’utilisation
+* Autorisations
+* Autres détails administratifs
+
+Ce type de métadonnées garantit une gestion, un contrôle d’accès et une conformité efficaces des ressources.
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+
+* Size of a file.
+* Dimensions (height and width) of an image.
+* Bit rate of an audio or video file.
+* Resolution (level of detail) of an image.
+
+Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
+
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## Métadonnées et dernière modification {#last-modification}
 
@@ -115,7 +150,7 @@ Les balises ID3 sont conçues pour le format de fichier MP3. Informations suppl�
 
 ### Exif {#exif}
 
-Le format de fichier d’image échangeable (Exif) est le plus utilisé dans la photographie numérique pour les métadonnées. Il permet d’incorporer un vocabulaire fixe de propriétés de métadonnées dans de nombreux formats de fichiers, tels que JPEG, TIFF, RIFF et WAV. Le format Exif stocke chaque métadonnée sous la forme d’une paire constituée du nom et de la valeur de la métadonnée. Ces paires de nom et de valeur de métadonnées sont également appelées des balises, que l’on ne doit pas confondre avec le balisage dans [!DNL Experience Manager]. Les caméras numériques modernes créent des métadonnées Exif que les logiciels graphiques modernes savent prendre en charge. Le format Exif est le plus petit dénominateur commun pour la gestion des métadonnées, en particulier concernant les images.
+Le format de fichier d’image échangeable (Exif) est le plus utilisé dans la photographie numérique pour les métadonnées. Il permet d’incorporer un vocabulaire fixe de propriétés de métadonnées dans de nombreux formats de fichiers, tels que JPEG, TIFF, RIFF et WAV. Exif stocke les métadonnées sous la forme de paires d’un nom de métadonnées et d’une valeur de métadonnées. Ces paires nom-valeur-métadonnées sont également appelées balises, à ne pas confondre avec le balisage dans [!DNL Experience Manager]. Les caméras numériques modernes créent des métadonnées Exif que les logiciels graphiques modernes savent prendre en charge. Le format Exif est le plus petit dénominateur commun pour la gestion des métadonnées, en particulier concernant les images.
 
 Le fait que ce format ne soit pas pris en charge par quelques formats de fichiers image très appréciés comme BMP, GIF ou PNG constitue une limite majeure.
 
