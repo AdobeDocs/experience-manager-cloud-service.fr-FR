@@ -2,10 +2,10 @@
 title: Sauvegarde et restauration dans AEM as a Cloud Service
 description: En savoir plus sur la sauvegarde et la restauration dans AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: b77ee0697e8f6f4aeaa6651336588f1c5321abd1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 97%
+source-wordcount: '539'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ Si le déploiement d’un client, c’est-à-dire le code de l’application dé
 
 >[!CAUTION]
 >
->Cette fonction ne doit être utilisée que lorsqu’il existe de graves problèmes de code ou de contenu. Les données récentes entre l’exécution de la sauvegarde restaurée et le moment présent sont perdues. L’évaluation est également restaurée vers l’ancienne version.
+>Cette fonction ne doit être utilisée que lorsqu’il existe de graves problèmes de code ou de contenu. Les données récentes entre l’exécution de la sauvegarde restaurée et le moment présent sont perdues. L’évaluation est également restaurée à l’ancienne version. Si des données récentes sont conservées, elles doivent être exportées par le biais d’un package de contenu avant la restauration, puis réinstallées sur le référentiel restauré.
 
 ## Utilisation {#how-to-use}
 
