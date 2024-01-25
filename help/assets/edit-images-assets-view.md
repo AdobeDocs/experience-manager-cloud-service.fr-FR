@@ -3,18 +3,18 @@ title: Modification des images
 description: Modifiez les images à l’aide des options optimisées d’ [!DNL Adobe Photoshop Express] et enregistrez les images mises à jour sous forme de versions.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: e9092054062f01eac51bd79c680f4012653f88e7
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 72%
+source-wordcount: '1251'
+ht-degree: 79%
 
 ---
 
 # Modifier des images dans [!DNL Assets view] {#edit-images}
 
-[!DNL Assets view] fournit des options de modification conviviales, optimisées par [!DNL Adobe Express] et [!DNL Adobe Photoshop Express]. Les actions de modification disponibles à l’aide d’[!DNL Adobe Express] sont Redimensionner l’image, Supprimer l’arrière-plan, Recadrer l’image et Convertir le JPEG en PNG.
+[!DNL Assets view] fournit des options de modification conviviales, optimisées par [!DNL Adobe Express] et [!DNL Adobe Photoshop Express]. Les actions de modification disponibles à l’aide de [!DNL Adobe Express] Les options Redimensionner l’image, Supprimer l’arrière-plan, Recadrer l’image et Convertir le JPEG en PNG ou vice versa sont disponibles.
 
-Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en tant que nouvelle version de cette image. Le contrôle de version vous permet de revenir ultérieurement à la ressource d’origine, si nécessaire. Pour modifier une image, [ouvez son aperçu](/help/assets/navigate-assets-view.md) et cliquez sur **[!UICONTROL Modifier l’image]**.
+Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en tant que nouvelle version de cette image. Le contrôle de version vous permet de revenir ultérieurement à la ressource d’origine, si nécessaire. En outre, le contrôle de version est disponible uniquement pour les types de fichiers PNG, ce qui signifie que lorsque vous essayez de supprimer l’arrière-plan d’un type de fichier JPG, JPG est automatiquement converti en PNG. Pour modifier une image, [ouvez son aperçu](navigate-assets-view.md) et cliquez sur **[!UICONTROL Modifier l’image]**.
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en ta
 
 Le redimensionnement d’une image à une taille spécifique est un cas d’utilisation courant. [!DNL Assets view] permet de redimensionner rapidement l’image pour l’adapter aux tailles de photo courantes en fournissant de nouvelles résolutions précalculées pour des tailles de photo spécifiques. Pour redimensionner l’image à l’aide d’[!DNL Assets view], procédez comme suit :
 
-1. Sélectionnez une image, puis cliquez sur **Modifier**.
-2. Cliquez sur **[!DNL Resize Image]** dans les actions rapides disponibles dans le volet de gauche.
+1. Sélectionnez une image parmi les [!DNL Experience Manager] Référentiel de ressources et cliquez sur **Modifier**.
+2. Cliquez sur **[!UICONTROL Redimensionner l’image]** dans les actions rapides disponibles du volet de gauche.
 3. Sélectionnez la plateforme de médias sociaux appropriée dans la liste déroulante **[!UICONTROL Redimensionner pour]** et sélectionnez la taille de l’image parmi les options qui s’affichent.
-4. Mettez l’image à l’échelle, si nécessaire, à l’aide de la fonction **[!UICONTROL Échelle d’image]** champ .
-5. Cliquez sur **[!DNL Apply]** pour appliquer vos modifications.
+4. Mettez l’image à l’échelle, le cas échéant, à l’aide du champ **[!UICONTROL Échelle d’image]**.
+5. Cliquez sur **[!UICONTROL Appliquer]** pour appliquer vos modifications.
    ![Modification d’images avec Adobe Express.](assets/adobe-express-resize-image.png)
 
    Votre image modifiée peut être téléchargée. Vous pouvez enregistrer la ressource modifiée en tant que nouvelle version de la même ressource ou l’enregistrer en tant que nouvelle ressource.
@@ -47,21 +47,19 @@ Le redimensionnement d’une image à une taille spécifique est un cas d’util
 
 Vous pouvez supprimer l’arrière-plan d’une image en quelques étapes simples, comme indiqué ci-dessous :
 
-1. Sélectionnez une image, puis cliquez sur **Modifier**.
-2. Cliquez sur **[!DNL Remove Background]** dans les actions rapides disponibles dans le volet de gauche. Experience Manager Assets affiche l’image sans arrière-plan.
-3. Cliquez sur **[!DNL Apply]** pour appliquer vos modifications.
+1. Sélectionnez une image parmi les [!DNL Experience Manager] Référentiel de ressources et cliquez sur **Modifier**.
+2. Cliquez sur **[!UICONTROL Supprimer l’arrière-plan]** dans les actions rapides disponibles du volet de gauche. Experience Manager Assets affiche l’image sans arrière-plan.
+3. Cliquez sur **[!UICONTROL Appliquer]** pour appliquer vos modifications.
    ![Enregistrement d’image avec Adobe Express.](assets/adobe-express-remove-background.png)
-
-   Votre image modifiée peut être téléchargée. Vous pouvez enregistrer la ressource modifiée en tant que nouvelle version de la même ressource ou l’enregistrer en tant que nouvelle ressource.
 
 ### Recadrer l’image {#crop-image-using-express}
 
 La transformation d’une image en taille parfaite est facile à l’aide des actions rapides d’[!DNL Adobe Express] intégrées.
 
-1. Sélectionnez une image, puis cliquez sur **Modifier**.
-2. Cliquez sur **[!DNL Crop Image]** dans les actions rapides disponibles dans le volet de gauche.
+1. Sélectionnez une image parmi les [!DNL Experience Manager] Référentiel de ressources et cliquez sur **Modifier**.
+2. Cliquez sur **[!UICONTROL Recadrer l’image]** dans les actions rapides disponibles du volet de gauche.
 3. Faites glisser les poignées sur les coins de l’image pour créer le recadrage souhaité.
-4. Cliquez sur **[!DNL Apply]**.
+4. Cliquez sur **[!UICONTROL Appliquer]**.
    ![Enregistrement d’image avec Adobe Express.](assets/adobe-express-crop-image.png)
 L’image recadrée peut être téléchargée. Vous pouvez enregistrer la ressource modifiée en tant que nouvelle version de la même ressource ou l’enregistrer en tant que nouvelle ressource.
 
@@ -69,10 +67,20 @@ L’image recadrée peut être téléchargée. Vous pouvez enregistrer la ressou
 
 Vous pouvez rapidement convertir une image JPEG au format PNG à l’aide d’Adobe Express. Procédez comme suit :
 
-1. Sélectionnez une image, puis cliquez sur **Modifier**.
-2. Cliquez sur **[!DNL JPEG to PNG]** dans les actions rapides disponibles dans le volet de gauche.
-   ![Conversion d’un PNG avec Adobe Express.](assets/adobe-express-convert-image.png)
-3. Cliquez sur **[!UICONTROL Télécharger]**.
+1. Sélectionnez une image parmi les [!DNL Experience Manager] Référentiel de ressources et cliquez sur **Modifier**.
+2. Cliquez sur **[!UICONTROL Convertir en PNG]** dans les actions rapides disponibles dans le volet de gauche.
+   <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
+3. Cliquez sur **[!UICONTROL Appliquer]**.
+4. Accédez à **[!UICONTROL Enregistrer sous en haut à droite]** et cliquez sur **[!UICONTROL Enregistrer en tant que nouvelle ressource]**.
+
+### Convertir PNG en JPEG {#convert-png-to-jpeg-using-express}
+
+Vous pouvez rapidement convertir une image PNG au format JPEG à l’aide d’Adobe Express. Procédez comme suit :
+
+1. Sélectionnez une image parmi les [!DNL Experience Manager] Référentiel de ressources et cliquez sur **Modifier**.
+2. Cliquez sur **[!UICONTROL Convertir en JPEG]** dans les actions rapides disponibles dans le volet de gauche.
+3. Cliquez sur **[!UICONTROL Appliquer]**.
+4. Accédez à **[!UICONTROL Enregistrer sous en haut à droite]** et cliquez sur **[!UICONTROL Enregistrer en tant que nouvelle ressource]**.
 
 ### Limites {#limitations-adobe-express}
 
@@ -80,47 +88,47 @@ Vous pouvez rapidement convertir une image JPEG au format PNG à l’aide d’Ad
 
 * Taille de fichier maximale : 17 Mo
 
-## Modification d’images à l’aide de l’éditeur intégré Adobe Express {#edit-using-embedded-editor}
+## Modifier des images à l’aide de l’éditeur intégré Adobe Express {#edit-using-embedded-editor}
 
-Les utilisateurs ayant accès à Express disposent désormais d’outils intégrés d’édition et de création d’images d’Adobe Express et d’Adobe Firefly disponibles directement dans AEM Assets afin d’améliorer la réutilisation du contenu et d’accélérer la vitesse du contenu. Vous pouvez également utiliser des éléments prédéfinis pour donner à votre ressource un aspect époustouflant ou exécuter des actions rapides pour modifier votre image en quelques clics seulement.
+Les organisations ayant accès à Adobe Express peuvent utiliser des outils intégrés d’édition et de création d’images à partir de l’Adobe Express et de l’Adobe Firefly disponibles directement dans la vue Ressources afin d’améliorer la réutilisation du contenu et d’accélérer la vitesse de diffusion du contenu. Vous pouvez également utiliser des éléments prédéfinis pour optimiser l’aspect de vos ressources ou exécuter des actions rapides pour modifier vos images en quelques clics seulement.
 
-Pour modifier des images à l’aide de [!DNL Adobe Express] incorporez l’éditeur, procédez comme suit :
+Pour modifier des images à l’aide de l’éditeur intégré [!DNL Adobe Express], procédez comme suit :
 
-1. Sélectionnez une image parmi les [!DNL Experience Manager] Référentiel de ressources.
-1. Cliquez sur **[!UICONTROL Ouvrir dans Adobe Express]**.
+1. Sélectionnez une image dans le référentiel Assets [!DNL Experience Manager].
+1. Cliquez sur **[!UICONTROL Ouvrir dans Adobe Express]**.
 
-   ![Adobe Express de l’éditeur incorporé](assets/embedded-editor.png)
+   ![Éditeur intégré Adobe Express](assets/embedded-editor.png)
 
-   Vous pouvez utiliser les fonctionnalités de [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/in/express/using/resize-image.html), [suppression ou modification de la couleur d’arrière-plan](https://helpx.adobe.com/in/express/using/remove-background.html), [image de recadrage](https://helpx.adobe.com/in/express/using/crop-image.html), et bien plus encore.
+   Vous pouvez tirer parti des fonctionnalités d’[!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que le [redimensionnement d’image](https://helpx.adobe.com/fr/express/using/resize-image.html), la [suppression ou modification de la couleur d’arrière-plan](https://helpx.adobe.com/fr/express/using/remove-background.html), le [recadrage d’image](https://helpx.adobe.com/fr/express/using/crop-image.html) et bien plus encore.
 
 1. Une fois la modification d’image terminée, vous pouvez télécharger une ressource en tant que nouvelle ressource ou l’enregistrer en tant que nouvelle version.
 
-## Création de ressources à l’aide d’Adobe Express {#create-new-embedded-editor}
+## Créer des ressources à l’aide d’Adobe Express {#create-new-embedded-editor}
 
-[!DNL Assets view] fournit une fonctionnalité permettant de créer un modèle entièrement nouveau à l’aide de [!DNL Adobe Express] éditeur incorporé. Pour créer une ressource à l’aide de [!DNL Adobe Express], exécutez les étapes suivantes :
+[!DNL Assets view] vous permet de créer un modèle entièrement nouveau à l’aide de l’éditeur intégré [!DNL Adobe Express]. Pour créer une ressource à l’aide d’[!DNL Adobe Express], exécutez les étapes suivantes :
 
-1. Accédez à **[!UICONTROL Mon espace de travail]** et cliquez sur **[!UICONTROL Créer]** dans la bannière d’Adobe Express qui s’affiche au-dessus de la balise [!UICONTROL Accès rapide] . [!DNL Adobe Express] la zone de travail vierge s’affiche dans la [!DNL Assets view] de l’interface utilisateur.
-1. Créez votre contenu à l’aide de [Modèles](https://helpx.adobe.com/in/express/using/work-with-templates.html). Sinon, accédez à **[!UICONTROL Vos trucs]** pour modifier le contenu existant.
+1. Accédez à **[!UICONTROL Mon espace de travail]** et cliquez sur **[!UICONTROL Créer]** dans la bannière d’Adobe Express qui s’affiche en haut. La zone de travail vierge d’[!DNL Adobe Express] s’affiche dans l’interface utilisateur d’[!DNL Assets view].
+1. Créez votre contenu à l’aide de [modèles](https://helpx.adobe.com/fr/express/using/work-with-templates.html). Sinon, accédez à **[!UICONTROL Vos créations]** pour modifier le contenu existant.
 1. Une fois les modifications terminées, cliquez sur **[!UICONTROL Enregistrer en tant que nouvelle ressource]**.
-1. Spécifiez le chemin de destination de la ressource créée, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Spécifiez un chemin de destination pour la ressource créée, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 >[!NOTE]
 >
->* Vous ne pouvez modifier que les images de `JPEG` et `PNG` types de format.
->* La taille de la ressource doit être inférieure à 14 Mo.
->* Vous pouvez enregistrer une image dans `PDF`, `JPEG`, ou `PNG` formats.
+>* Vous ne pouvez modifier que les images dont les types de format sont `JPEG` et `PNG`.
+>* La taille de la ressource doit être inférieure à 17 Mo.
+>* Vous pouvez enregistrer une image dans `PDF`, `JPEG`, ou `PNG` formats ; alors que, lorsqu’il existe plusieurs pages, vous pouvez les enregistrer sous la forme `PDF`.
 
 ## Modifier des images à l’aide d’[!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
-After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](//help/navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
+After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
 
 ![Options to edit an image](assets/edit-image2.png)
 
 *Figure: The options to edit images are powered by [!DNL Adobe Photoshop Express].*
 -->
 
-### Supprimer les imperfections des images {#spot-heal-images-using-photoshop-express}
+### Retoucher des images {#spot-heal-images-using-photoshop-express}
 
 S’il existe des petites taches ou des éléments indésirables mineurs sur une image, vous pouvez modifier et supprimer ces zones grâce à la fonction de suppression des imperfections fournie par Adobe Photoshop.
 
@@ -177,4 +185,5 @@ TBD: Insert a video of the available social media options.
 
 >[!MORELIKETHIS]
 >
->* [Affichage de l’historique des versions d’une ressource](/help/assets/navigate-assets-view.md)
+>* [Actions rapides dans Adobe Express](https://helpx.adobe.com/fr/express/using/resize-image.html)
+>* [Affichage de l’historique des versions d’une ressource](navigate-assets-view.md)

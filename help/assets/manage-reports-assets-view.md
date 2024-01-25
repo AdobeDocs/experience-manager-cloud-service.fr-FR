@@ -2,25 +2,34 @@
 title: Gérer les rapports dans la vue Assets
 description: Accédez aux données de la section des rapports de la vue Assets pour évaluer l’utilisation des produits et des fonctionnalités et déduire des informations sur les mesures de succès clés.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 97%
+source-wordcount: '814'
+ht-degree: 92%
 
 ---
 
 # Gérer les rapports {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="Rapports"
->abstract="Les rapports de ressources offrent aux administrateurs et administratrices une visibilité sur l’activité de l’environnement Adobe Experience Manager Assets. Ces données fournissent des informations utiles sur la façon dont les utilisateurs interagissent avec le contenu et le produit. Tous les utilisateurs et toutes les utilisatrices affectés au profil de produit Administration d’Assets Essentials peuvent accéder au tableau de bord des insights ou créer des rapports définis par l’utilisateur ou l’utilisatrice."
-
-Les rapports de ressources offrent aux administrateurs et administratrices une visibilité sur l’activité de l’environnement Adobe Experience Manager Assets. Ces données fournissent des informations utiles sur la façon dont les utilisateurs interagissent avec le contenu et le produit.
+Les rapports de ressources offrent aux administrateurs et administratrices une visibilité sur l’activité de l’environnement Adobe Experience Manager Assets. Ces données fournissent des informations utiles sur la façon dont les utilisateurs interagissent avec le contenu et le produit. Tous les utilisateurs et utilisatrices peuvent accéder au tableau de bord Insights et ceux qui sont affectés au profil de produit Administrateurs et administratrices peuvent créer des rapports définis par l’utilisateur ou l’utilisatrice.
 
 ## Accéder aux rapports {#access-reports}
 
 Tous les utilisateurs et toutes les utilisatrices affectés au profil de produit Administration de la vue Assets peuvent accéder au tableau de bord des Insights ou créer des rapports définis par l’utilisateur dans la vue Assets.
+
+Pour accéder aux rapports, accédez à **[!UICONTROL Rapports]** sous **[!UICONTROL Paramètres]**.
+
+![Rapports.](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
 
 ## Afficher les insights {#view-live-statistics}
 
@@ -30,11 +39,11 @@ La vue Assets vous permet d’afficher des données en temps réel pour votre en
 
 Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigation de gauche pour afficher les graphiques générés automatiquement suivants :
 
-![Insights](assets/insights.png)
+![Insights.](assets/insights.png)
 
-* **Téléchargements** : nombre de ressources téléchargées à partir de l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représenté à l’aide d’un graphique en courbes.
+* **Téléchargements**: nombre de ressources téléchargées à partir de l’environnement de vue Ressources au cours des 30 ou 12 derniers jours représentés à l’aide d’un graphique linéaire.
 
-* **Transferts** : nombre de ressources chargées dans l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représenté à l’aide d’un graphique en courbes.
+* **Téléchargements**: nombre de ressources chargées dans l’environnement de vue Ressources au cours des 30 ou 12 derniers jours représentés à l’aide d’un graphique linéaire.
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -46,11 +55,10 @@ Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigatio
 
 * **Principales recherches** : affichez les termes recherchés les plus fréquemment, ainsi que le nombre de fois où ces termes ont été recherchés dans l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représentés sous forme de tableau.
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
 
 ## Créer un rapport de téléchargement {#create-download-report}
 

@@ -4,10 +4,10 @@ description: Découvrez comment gérer les métadonnées dans la vue Assets. Une
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 96%
+source-wordcount: '1667'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Pour ces raisons, Assets vous offre des moyens pertinents pour créer, gérer et
 
 Pour afficher les métadonnées d’une ressource, accédez à la ressource ou recherchez-la, sélectionnez-la, puis cliquez sur **[!UICONTROL Détails]** dans la barre d’outils.
 
-![Afficher les métadonnées d’une ressource](assets/metadata-view1.png)
+![Afficher les métadonnées d’une ressource](assets/metadata-view.png)
 
 *Image : pour afficher une ressource et ses métadonnées, cliquez sur **[!UICONTROL Détails]** dans la barre d’outils ou double-cliquez sur la ressource.*
 
@@ -71,14 +71,15 @@ Les balises peuvent également être imbriquées dans une hiérarchie pour prend
 La vue Assets fournit par défaut de nombreux champs de métadonnées standard. Les entreprises ont d’autres besoins en métadonnées et ont besoin de davantage de champs de métadonnées pour ajouter des métadonnées spécifiques à leur entreprise. Les formulaires de métadonnées permettent aux entreprises d’ajouter des champs de métadonnées personnalisés à la page [!UICONTROL Détails] d’une ressource. Les métadonnées spécifiques à l’entreprise améliorent la gouvernance et la découverte de ses ressources. Vous pouvez créer des formulaires entièrement ou réutiliser un formulaire existant.
 
 Vous pouvez configurer des formulaires de métadonnées pour différents types de ressources (différents types MIME). Utilisez le même nom de formulaire que le type MIME du fichier. La vue Assets fait automatiquement correspondre le type MIME des ressources chargées au nom du formulaire et met à jour les métadonnées des ressources téléchargées en fonction des champs du formulaire.
-
-Par exemple, s’il existe un formulaire de métadonnées portant le nom `PDF` ou `pdf`, les documents PDF chargés contiennent les champs de métadonnées définis dans le formulaire.
-
+<!--
+For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
+-->
 La vue Assets utilise la séquence suivante pour rechercher des noms de formulaires de métadonnées existants afin d’appliquer les champs de métadonnées aux ressources chargées d’un type particulier :
 
 Formulaire de sous-type MIME > Type MIME > `default` > Formulaire prêt à l’emploi
 
-Par exemple, si un formulaire de métadonnées portant le nom `PDF` ou `pdf` existe, les documents PDF chargés contiennent des champs de métadonnées tels que définis dans le formulaire. Si un formulaire de métadonnées du nom de `PDF` ou `pdf` n’existe pas, la vue Assets vérifie s’il existe un formulaire de métadonnées du nom de `application`. S’il existe un formulaire de métadonnées du nom de `application`, les documents PDF chargés contiennent les champs de métadonnées définis dans le formulaire. Si la vue Assets ne trouve toujours pas de formulaire de métadonnées correspondant, il recherche le formulaire de métadonnées `default` pour appliquer les champs de métadonnées définis dans le formulaire aux documents PDF chargés. Si aucune de ces étapes ne fonctionne, la vue Assets applique les champs de métadonnées définis dans le formulaire prêt à l’emploi à tous les documents PDF chargés.
+Par exemple, si un formulaire de métadonnées portant le nom `PDF` ou `pdf` existe, les documents PDF chargés contiennent des champs de métadonnées tels que définis dans le formulaire. Si un formulaire de métadonnées du nom de `PDF` ou `pdf` n’existe pas, la vue Assets vérifie s’il existe un formulaire de métadonnées du nom de `application`. S’il existe un formulaire de métadonnées du nom de `application`, les documents PDF chargés contiennent les champs de métadonnées définis dans le formulaire. Si la vue Assets ne trouve toujours pas de formulaire de métadonnées correspondant, il recherche le formulaire de métadonnées `default` pour appliquer les champs de métadonnées définis dans le formulaire aux documents PDF chargés. Si aucune de ces étapes ne fonctionne, la vue Assets applique les champs de métadonnées définis dans le formulaire d’usine à tous les documents de PDF chargés.
+Si vous souhaitez affecter un formulaire de métadonnées à un dossier [see](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -111,9 +112,9 @@ Regardez cette vidéo pour voir la séquence d’étapes :
 
 Une fois qu’un formulaire est créé, il est automatiquement appliqué lorsque les utilisateurs chargent une ressource du type MIME correspondant.
 
-Pour réutiliser un formulaire existant afin de le créer, sélectionnez-le, puis cliquez sur **[!UICONTROL Copier]** dans la barre d’outils, attribuez un nom, puis cliquez sur **[!UICONTROL Confirmer]**. Vous pouvez modifier un formulaire de métadonnées. Lorsque vous modifiez un formulaire, il est utilisé pour les ressources chargées après la modification. Les ressources existantes ne sont pas modifiées.
+Pour réutiliser un formulaire existant afin d’en créer un nouveau, sélectionnez un formulaire de métadonnées, cliquez sur **[!UICONTROL Copier]** dans la barre d’outils, choisissez un nom, puis cliquez sur **[!UICONTROL Confirmer]**. Vous pouvez modifier un formulaire de métadonnées. Lorsque vous modifiez un formulaire, il est utilisé pour les ressources chargées après la modification. Les ressources existantes ne sont pas modifiées.
 
-## Composants de propriété {#property-components}
+### Composants de propriété {#property-components}
 
 Vous pouvez personnaliser votre formulaire de métadonnées à l’aide de l’un des composants de propriété suivants. Il vous suffit de faire glisser et de déposer le type de composant sur le formulaire à l’emplacement souhaité et de modifier les paramètres du composant.
 Vous trouverez ci-dessous un aperçu de chaque type de propriété et de leur mode de stockage.
@@ -133,6 +134,24 @@ Vous trouverez ci-dessous un aperçu de chaque type de propriété et de leur mo
 | Balises | Permettent d’ajouter une balise à partir des valeurs stockées dans la Gestion de la taxonomie (mappée sur xcm:tags). |
 | Mots-clés | Permettent d’ajouter des mots-clés de forme libre (mappés sur dc:subject). |
 | Balises intelligentes | Ajoutez ce composant pour augmenter les capacités de recherche en ajoutant automatiquement des balises de métadonnées. |
+
+### Attribuer un formulaire de métadonnées à un dossier {#assign-metadata-form-folder}
+
+Vous pouvez également affecter un formulaire de métadonnées à un dossier dans le déploiement de la vue Assets. Le formulaire de métadonnées attribué à un dossier selon le type MIME est remplacé lorsque vous appliquez manuellement un formulaire de métadonnées à un dossier. Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent ensuite les propriétés définies dans le formulaire de métadonnées.
+
+Pour attribuer un formulaire de métadonnées à un dossier :
+
+1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Formulaires de métadonnées]** et sélectionnez un formulaire de métadonnées.
+
+2. Cliquez sur **[!UICONTROL Attribuer au dossier]**.
+
+3. Sélectionnez le dossier et cliquez sur **[!UICONTROL Attribuer]**.
+
+   ![attribuer un formulaire de métadonnées à un dossier](assets/assign-to-folder.png)
+
+   Vous pouvez également accéder à la page des détails du dossier et sélectionner un formulaire de métadonnées dans les propriétés du dossier disponibles dans le volet de droite pour attribuer le formulaire de métadonnées au dossier.
+
+   ![Formulaire de métadonnées à partir des propriétés du dossier](assets/metadata-from-folder-props.png)
 
 ## Étapes suivantes {#next-steps}
 

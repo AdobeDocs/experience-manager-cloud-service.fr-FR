@@ -2,10 +2,10 @@
 title: Vue Mon espace de travail pour Assets
 description: La page Mon espace de travail est composée de modules visuels personnalisables permettant d’accéder facilement aux éléments clés de l’interface utilisateur d’Assets et aux informations les plus pertinentes pour l’utilisateur et l’utilisatrice.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
+source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 100%
+source-wordcount: '745'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Assets comprend désormais un espace de travail personnalisable, composé de widgets permettant d’accéder facilement aux éléments clés de l’interface utilisateur d’Assets et aux informations qui vous intéressent le plus. Sur une page unique, bénéficiez d’un aperçu de vos tâches et d’un accès rapide aux principaux workflows. Grâce à un accès rapide et convivial aux menus pertinents, vous gagnez en efficacité et en vitesse de contenu.
 
-Pour accéder à Mon espace de travail, cliquez sur **[!UICONTROL Mon espace de travail]** à partir des éléments disponibles dans le volet de navigation de gauche. Mon espace de travail comprend différents widgets qui affichent des informations sur l’accès rapide, les informations, les tâches et le contenu. Vous pouvez configurer l’affichage de ces widgets dans votre espace de travail en fonction de vos préférences.
+Pour accéder à Mon espace de travail, cliquez sur **[!UICONTROL Mon espace de travail]** à partir des éléments disponibles dans le volet de navigation de gauche. Mon espace de travail comprend différents widgets qui affichent les widgets Accès rapide, Insights, Tâches et Contenu. Vous pouvez configurer l’affichage de ces widgets dans votre espace de travail en fonction de vos préférences.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Pour épingler une ressource, un dossier ou une collection :
 
 1. Sélectionnez l’élément et cliquez sur **[!UICONTROL Épingler à l’accès rapide]**.
 
-1. Sélectionnez cette option si vous devez épingler l’élément uniquement pour vous, pour l’ensemble de l’organisation ou pour les groupes sélectionnés. Si vous sélectionnez **[!UICONTROL Pour les groupes]**, définissez les noms des groupes dans le champ **[!UICONTROL Épingler pour les groupes]**.
+1. Sélectionnez cette option si vous devez épingler l’élément uniquement pour vous, pour l’ensemble de l’organisation ou pour les groupes sélectionnés. Si vous sélectionnez **[!UICONTROL Groupes]**, choisissez des noms de groupe existants dans le **[!UICONTROL Epinglage pour les groupes]** champ .
 
    ![Épinglage d’éléments pour les groupes.](assets/pin-items-for-groups.png)
 1. Cliquez sur **[!UICONTROL Épingler]**.
@@ -62,7 +62,7 @@ Vous pouvez également afficher les principaux termes recherchés, ainsi que le 
 
 **Tâches**
 
-Ce widget affiche les listes de tâches suivantes : les tâches qui vous sont actuellement affectées (sous l’onglet **[!UICONTROL Mes tâches]**), les tâches que avez créées (sous l’onglet **[!UICONTROL Tâches affectées]**) et les tâches que vous avez déjà effectuées (sous l’onglet **[!UICONTROL Terminé]**). Vous pouvez sélectionner une tâche et cliquer sur **[!UICONTROL Terminer la tâche]** pour l’approuver ou la rejeter. Vous pouvez également sélectionner une tâche et cliquer sur **[!UICONTROL Afficher les détails de la tâche]** pour afficher la tâche et l’approuver, la rejeter, la modifier ou la supprimer.
+Affiche la liste des tâches qui vous sont actuellement affectées dans le **[!UICONTROL Mes tâches]** , créé par vous dans la variable **[!UICONTROL Tâches affectées]** et les tâches déjà effectuées par vous dans la **[!UICONTROL Tâches terminées]** . Vous pouvez sélectionner une tâche et cliquer sur **[!UICONTROL Demande complète]** pour approuver ou rejeter une tâche. Vous pouvez également sélectionner une tâche et cliquer sur **[!UICONTROL Afficher les détails de la tâche]** pour afficher la tâche et l’approuver, la rejeter, la modifier ou la supprimer.
 
 ![Tâches dans l’espace de travail](assets/tasks-workspace.png)
 

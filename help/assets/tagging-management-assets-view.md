@@ -2,10 +2,10 @@
 title: Comment gérer les balises dans la vue Assets ?
 description: Découvrez comment gérer les balises dans la vue Assets. Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ea0978d09ce74d37487cd921496b03acbfd632d0
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1256'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et utilisatrices et workflows.
 
-Les listes plates de vocabulaires contrôlés peuvent devenir ingérables au fil du temps. Les administrateurs et administratrices peuvent utiliser la structure de balisage hiérarchique, qui facilite l’application des métadonnées pertinentes, la classification des ressources, la prise en charge de la recherche, la réutilisation des balises, l’amélioration de la visibilité, etc.
+Les listes plates de vocabulaires contrôlés peuvent devenir ingérables au fil du temps. Les administrateurs et administratrices ont la possibilité d’utiliser la structure de balisage hiérarchique, qui facilite l’application des métadonnées pertinentes, la classification des ressources, la prise en charge de la recherche, la réutilisation des balises, l’amélioration de la visibilité, etc.
 
 Vous pouvez créer un espace de noms au niveau racine et créer une structure hiérarchique de sous-balises dans l’espace de noms. Par exemple, vous pouvez créer un espace de noms `Activities` au niveau racine et placer les balises `Cycling`, `Hiking` et `Running` dans l’espace de noms. Vous pouvez placer d’autres sous-balises `Clothing` et `Shoes` dans `Running`.
 
@@ -33,7 +33,7 @@ Le balisage offre de nombreux avantages :
 
 * Les balises peuvent évoluer au fil du temps à mesure qu’un vocabulaire organisationnel change.
 
-* Les balises gérées dans la vue Admin restent synchronisées avec les balises gérées dans la vue Assets, ce qui garantit la gouvernance et l’intégrité des métadonnées.
+* Les balises gérées dans Assets as a Cloud Service restent synchronisées avec les balises gérées dans la vue Assets, ce qui garantit la gouvernance et l’intégrité des métadonnées.
 
 Pour pouvoir appliquer des balises à des ressources, vous devez d’abord créer un espace de noms, puis créer et ajouter des balises. Vous pouvez également créer des balises et les ajouter à un espace de noms existant. Toutes les balises que vous créez au niveau racine sont automatiquement ajoutées à l’espace de noms des balises standard. Vous pouvez ensuite ajouter le champ Balises au formulaire de métadonnées afin qu’il s’affiche sur la page Détails de la ressource. Après avoir configuré ces paramètres, vous pouvez commencer à appliquer des balises aux ressources.
 
@@ -43,7 +43,7 @@ Pour pouvoir appliquer des balises à des ressources, vous devez d’abord crée
 
 ![Gestion du balisage](assets/tagging-taxonomy-management.png)
 
-D’autres fonctionnalités non mentionnées dans cet article, dont la fusion, le changement de nom, la localisation et la publication de balises, sont disponibles dans la vue Admin.
+D’autres fonctionnalités non mentionnées dans cet article, dont la fusion, le changement de nom, la localisation et la publication de balises, sont disponibles dans Assets as a Cloud Service.
 
 ## Créer un espace de noms {#creating-a-namespace}
 
@@ -59,7 +59,6 @@ Pour créer un espace de noms, procédez comme suit :
 
    <!--
     >[!NOTE]
-    >
     >You can use `Name` as a primary key if you are using any other metadata management tool is the source of truth for taxonomy values, you can use the name as a primary key.
     >
     -->
@@ -77,13 +76,6 @@ Pour ajouter des balises à un espace de noms, procédez comme suit :
    Dans cet exemple, l’image à gauche représente la balise directement sous l’espace de noms `automobile-four-wheeler` affiché dans le champ `Path`. L’image à droite est un exemple de sous-balises ajoutées dans une balise. En effet, il y a plus de noms de balise, `jeep` et `jeep-meridian`, affichés dans le champ `Path` en plus de l’espace de noms.
 1. Indiquez le titre, le nom et la description de la balise, puis cliquez sur `Save`.
 
-
-   >[!NOTE]
-   >
-   >* Les champs `Title` et `Name` sont obligatoires, tandis que le champ `Description` est facultatif.
-   >* Par défaut, l’outil copie le texte saisi dans le champ Titre, supprime les espaces vides ou les caractères spéciaux (. &amp; / \ : * ? [ ] | &quot; %) et le stocke en tant que nom.
-   >* Vous pouvez mettre à jour le champ `Title` plus tard, mais le champ `Name` est en lecture seule.
-
 ## Ajouter des balises aux balises standard {#adding-tags-to-standard-tags}
 
 Les balises non structurées ou qui n’ont pas de hiérarchie sont stockées dans l’espace de noms `Standard Tags`. De plus, lorsque vous souhaitez ajouter des termes descriptifs supplémentaires sans affecter la taxonomie régie, vous pouvez stocker cette valeur sous `Standard Tags`. Vous pouvez déplacer ces valeurs dans des espaces de noms structurés au fil du temps. De plus, vous pouvez utiliser l’espace de noms `Standard Tags` comme entrée de formulaire libre pour les mots-clés.
@@ -91,10 +83,11 @@ Les balises non structurées ou qui n’ont pas de hiérarchie sont stockées da
 Pour créer une balise standard, cliquez sur `Create Tag` au niveau racine. Indiquez le titre, le nom et la description, puis cliquez sur `Save`.
 
 ![Ajout de balises aux balises standard](assets/adding-tags-to-standard-tags.png)
-
+<!--
 >[!NOTE]
 >
->Si vous supprimez l’espace de noms `Standard Tags` à l’aide de la vue Admin, les balises créées au niveau racine ne s’affichent pas dans la liste des balises disponibles.
+>If you delete `Standard Tags` namespace using Assets as a Cloud Service, the tags created at the root-level do not display in the list of available tags. 
+-->
 
 ## Déplacement des balises {#moving-tags}
 
@@ -117,7 +110,7 @@ Pour modifier le titre de la balise, sélectionnez cette dernière, puis cliquez
 >[!NOTE]
 >
 >* Le `Name` d’une balise ne peut pas être mis à jour. Le chemin d’accès racine d’une balise est également basé sur le nom de la balise. Le chemin d’accès reste le même, même si vous mettez à jour le champ `Title`.
->* D’autres opérations telles que la fusion, la localisation et la publication, sont disponibles dans la vue Admin.
+>* D’autres opérations telles que la fusion, la localisation et la publication, sont disponibles dans Assets as a Cloud Service.
 
 ## Suppression des balises {#deleting-tags}
 
@@ -136,7 +129,7 @@ Pour supprimer des balises, procédez comme suit :
 
 ## Ajout du composant Balises au formulaire de métadonnées {#adding-tags-to-metadata-form}
 
-Le composant Balises est ajouté automatiquement au formulaire de métadonnées `default`. Vous pouvez concevoir un [formulaire de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=fr#metadata-forms) soit en utilisant un modèle, soit à partir de zéro. Si vous n’utilisez pas de modèle de formulaire de métadonnées existant, vous pouvez modifier votre formulaire de métadonnées et ajouter le composant Balises. Le mappage des propriétés de métadonnées est renseigné automatiquement et ne peut pas être modifié pour le moment. Les personnes utilisant la vue Admin peuvent mettre à jour le mappage pour stocker les valeurs de balise à l’aide d’espaces de noms personnalisés et n’exposer que les sous-ensembles de hiérarchies à l’aide des chemins d’accès racine.
+Le composant Balises est ajouté automatiquement au formulaire de métadonnées `default`. Vous pouvez concevoir un [formulaire de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=fr#metadata-forms) soit en utilisant un modèle, soit à partir de zéro. Si vous n’utilisez pas de modèle de formulaire de métadonnées existant, vous pouvez modifier votre formulaire de métadonnées et ajouter le composant Balises. Le mappage des propriétés de métadonnées est renseigné automatiquement et ne peut pas être modifié pour le moment. Les personnes utilisant Assets as a Cloud Service peuvent mettre à jour le mappage pour stocker les valeurs de balise à l’aide d’espaces de noms personnalisés et n’exposer que les sous-ensembles de hiérarchies à l’aide des chemins d’accès racine.
 
 Regardez cette vidéo rapide pour découvrir comment ajouter le composant Balises à votre formulaire de métadonnées :
 
@@ -151,32 +144,10 @@ Regardez cette vidéo rapide pour découvrir comment ajouter le composant Balise
    ![Balisage des ressources](assets/adding-tags-to-assets.png)
 
 1. Sélectionnez une ou plusieurs balises. La sous-balise est sélectionnée automatiquement avec la balise ou l’espace de noms parent.
-Les balises modifiées dans la vue Ressources sont également appliquées dans la vue Admin.
+Les balises modifiées dans la vue Assets sont également appliquées dans Assets as a Cloud Service.
 
-## Limites {#limitations}
-
-Les fonctionnalités de taxonomie avancée suivantes ne sont actuellement pas disponibles dans la vue Ressources et ne sont accessibles que via la vue Admin :
-
-* **Localisation :** toute localisation doit se produire dans la vue Admin.
-* **Chemin d’accès racine :** les chemins d’accès racine ne peuvent pas être configurés. Tous les espaces de noms stockés dans la Gestion de la taxonomie sont exposés sur la propriété Balises dans la vue Ressources.
-* **Balises standard :** les balises standard appliquées dans la vue Admin sont visibles dans la vue Ressources. Vous ne pouvez pas ajouter de nouvelles balises standard dans la vue Ressources de la page Détails de la ressource. Les valeurs existantes qui sont stockées dans des balises standard sont appliquées à la page Détails des ressources.
-* **Espaces de noms personnalisés :** les balises ne peuvent pas être mappées à des espaces de noms personnalisés.
-* **Affichage des références :** les personnes administratrices peuvent voir l’utilisation des balises dans la vue Ressources. Cela fait référence à toutes les ressources qui utilisent activement une balise. Toutefois, les personnes administratrices ne peuvent pas voir les ressources individuelles à l’aide de la balise dans les références.
-
-<!--
-*   Overview
-*   Benefits
-*   Prerequisites and Permissions
-*   Configuration
-*   Managing Tags
-    *   Creating a Namespace
-    *   Adding Tags to a Namespace
-    *   Adding Tags to Standard Tags
-    *   Moving Tags
-    *   Editing Tags
-    *   Deleting Tags
-*   Applying Tags
-    *   Adding Tags to the Metadata form
-    *   Adding Tags to Assets
-*   Limitations
--->
+>[!NOTE]
+>
+>* Les champs `Title` et `Name` sont obligatoires, tandis que le champ `Description` est facultatif.
+>* Par défaut, l’outil copie le texte saisi dans le champ Titre, supprime les espaces vides ou les caractères spéciaux (. &amp; / \ : * ? [ ] | &quot; %) et le stocke en tant que nom.
+>* Vous pouvez mettre à jour le champ `Title` plus tard, mais le champ `Name` est en lecture seule.
