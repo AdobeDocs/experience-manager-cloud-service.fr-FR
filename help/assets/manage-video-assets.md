@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4975'
+source-wordcount: '4976'
 ht-degree: 95%
 
 ---
@@ -41,7 +41,7 @@ En savoir plus sur [chargement de ressources](manage-digital-assets.md#uploading
 
 ### Prévisualisation de ressources vidéo
 
-Vous pouvez prévisualiser les rendus MP4 dans le [!DNL Assets] de l’interface utilisateur. Pour prévisualiser une ressource vidéo, procédez comme suit :
+Vous pouvez prévisualiser des vidéos dans les rendus pris en charge dans la [!DNL Assets] de l’interface utilisateur. Pour prévisualiser une ressource vidéo, procédez comme suit :
 
 1. Chargement d’une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [formats vidéo pris en charge](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
 1. Cliquez sur la ressource, puis sélectionnez ![option détails](assets/do-not-localize/details_icon.svg) **[!UICONTROL Détails]**  dans la barre d’outils supérieure. La ressource vidéo s’ouvre dans la visionneuse de vidéos.
