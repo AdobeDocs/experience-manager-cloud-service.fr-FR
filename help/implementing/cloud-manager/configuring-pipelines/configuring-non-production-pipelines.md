@@ -3,10 +3,10 @@ title: Configurer des pipelines hors production
 description: Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 78%
+source-wordcount: '1297'
+ht-degree: 77%
 
 ---
 
@@ -112,18 +112,17 @@ Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](man
 
 Un déploiement ciblé déploie le code uniquement pour les parties sélectionnées de votre application AEM. Dans un tel déploiement, vous pouvez choisir **Inclure** l’un des types de code suivants :
 
-* **[Config](#config)** - Configurez les paramètres de votre environnement AEM, les tâches de maintenance, les règles CDN, etc.
+* **Config** - Configurez les paramètres des règles de filtrage du trafic sur votre environnement AEM.
    * Voir le document [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les règles de filtrage du trafic dans votre référentiel afin qu’elles soient déployées correctement.
-* **[Code front-end](#front-end-code)** - Configurez JavaScript et CSS pour le front-end de votre application AEM.
+   * Lors de l’exécution d’un pipeline de déploiement ciblé, les configurations [telles que les configurations WAF ;](/help/security/traffic-filter-rules-including-waf.md) seront déployés, à condition qu’ils soient enregistrés dans l’environnement, le référentiel et la branche que vous avez définis dans le pipeline.
+   * À tout moment, il ne peut y avoir qu’un seul pipeline de configuration par environnement.
+* **Code front-end** - Configurez JavaScript et CSS pour le front-end de votre application AEM.
    * Avec les pipelines front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut être accéléré.
    * Consultez le document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus ainsi que certaines considérations à prendre en compte pour en tirer le meilleur parti.
-* **[Configuration du niveau web](#web-tier-config)** - Configurez les propriétés du dispatcher pour stocker, traiter et diffuser des pages web au client.
-
->[!NOTE]
->
->* Si un pipeline de code de niveau web existe pour l’environnement sélectionné, cette sélection est désactivée.
->* Si vous disposez déjà d’un pipeline full stack se déployant vers un environnement, la création d’un pipeline de configuration de niveau web pour le même environnement entraîne l’exclusion de la configuration de niveau web existante dans le pipeline full stack.
-> * À tout moment, il ne peut y avoir qu’un seul pipeline de configuration par environnement.
+* **Configuration du niveau web** - Configurez les propriétés du dispatcher pour stocker, traiter et diffuser des pages web au client.
+   * Voir le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) pour plus d’informations.
+   * Si un pipeline de code de niveau web existe pour l’environnement sélectionné, cette sélection est désactivée.
+   * Si vous disposez déjà d’un pipeline full stack se déployant vers un environnement, la création d’un pipeline de configuration de niveau web pour le même environnement entraîne l’exclusion de la configuration de niveau web existante dans le pipeline full stack.
 
 Les étapes de création de votre pipeline de déploiement ciblé hors production sont les mêmes une fois que vous avez choisi un type de déploiement.
 
@@ -151,9 +150,7 @@ Les étapes de création de votre pipeline de déploiement ciblé hors productio
 
 1. Cliquez sur **Enregistrer**.
 
-Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) sur la carte **Pipelines** sur la page **Aperçu du programme**.
-
-Lors de l’exécution d’un pipeline de déploiement ciblé, les configurations [telles que les configurations WAF ;](/help/security/traffic-filter-rules-including-waf.md) seront déployés, à condition qu’ils soient enregistrés dans l’environnement, le référentiel et la branche que vous avez définis dans le pipeline.
+Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans la carte **Pipelines** dans la page **Aperçu du programme**.
 
 ## Ignorer les packages du Dispatcher {#skip-dispatcher-packages}
 
