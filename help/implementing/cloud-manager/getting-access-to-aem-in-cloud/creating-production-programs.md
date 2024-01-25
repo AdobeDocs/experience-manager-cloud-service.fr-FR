@@ -2,10 +2,10 @@
 title: Création de programmes de production
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
+source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 64%
+source-wordcount: '1047'
+ht-degree: 33%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez-en plus sur les types de programme dans le document [Présentation de
 
 ## Création d’un programme de production {#create}
 
-Pour créer un programme de production, procédez comme suit.
+Pour créer un programme de production, procédez comme suit. Notez que selon les droits de votre organisation, vous pouvez voir [options supplémentaires](#options) lors de l’ajout de votre programme.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
@@ -32,18 +32,11 @@ Pour créer un programme de production, procédez comme suit.
 
 1. Vous pouvez éventuellement ajouter une image au programme en faisant glisser un fichier image et en le déposant sur la cible **Ajouter une image de programme** ou en cliquant dessus pour sélectionner une image dans l’explorateur de fichiers. Sélectionnez **Continuer**.
 
-1. Si vous disposez des droits nécessaires, la variable **Sécurité** s’affiche et permet d’activer **HIPAA** et/ou **Protection WAF-DDOS** pour votre programme de production. Si nécessaire pour le programme que vous créez, cochez la ou les options applicables, puis sélectionnez **Continuer**.
-
-   * HIPAA ne peut pas être activé ni désactivé après la création du programme.
-      * [En savoir plus](https://www.adobe.com/go/hipaa-ready) sur la mise en œuvre de la solution conforme à la norme HIPAA d’Adobe.
-   * Une fois activée, la protection WAF-DDOS peut ensuite être configurée en configurant une [pipeline hors production.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   ![Options de sécurité](assets/create-production-program-security.png)
-
 1. Dans l’onglet **Solutions et modules complémentaires**, sélectionnez les solutions à inclure dans le programme.
 
    * Si vous ne savez pas si vous avez besoin d’un ou de plusieurs programmes pour les différentes solutions disponibles, sélectionnez celle qui vous intéresse le plus. Vous pouvez activer des solutions supplémentaires en [modifiant le programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) plus tard. Consultez le [document Présentation des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus de recommandations sur la configuration des programmes.
-   * Si vous avez coché la case **Activer la sécurité renforcée** à l’étape précédente, vous ne pourrez sélectionner que les solutions conformes à la norme HIPAA.
+   * Au moins une solution est nécessaire pour la création du programme.
+   * Si vous avez sélectionné la variable **[Activation de la sécurité](#security)** , vous pouvez sélectionner uniquement autant de solutions pour lesquelles des droits HIPAA sont disponibles.
 
    ![Solutions sélectionnées](assets/setup-prod-select.png)
 
@@ -65,6 +58,52 @@ Pour créer un programme de production, procédez comme suit.
 Votre programme est créé par Cloud Manager, s’affiche et peut être sélectionné dans la page de destination.
 
 ![Aperçu de Cloud Manager](assets/navigate-cm.png)
+
+## Options de programme de production supplémentaires {#options}
+
+En fonction des droits dont dispose votre organisation, vous disposez peut-être d’autres options lorsque vous créez un programme de production.
+
+### Sécurité {#security}
+
+Si vous disposez des droits nécessaires, la variable **Sécurité** s’affiche comme le premier onglet dans la **Configuration pour la production** boîte de dialogue.
+
+La variable **Sécurité** fournit les options d’activation. **HIPAA** et/ou **Protection WAF-DDOS** pour votre programme de production.
+
+Adobe Conformité à la HIPAA et pare-feu d’applications web (WAF) facilite la sécurité dans le cloud dans le cadre d’une approche à plusieurs niveaux pour la protection contre les vulnérabilités.
+
+* **HIPAA** - Cette option active la mise en oeuvre de la solution prête pour HIPPA de l’Adobe.
+   * [En savoir plus](https://www.adobe.com/go/hipaa-ready) sur la mise en œuvre de la solution conforme à la norme HIPAA d’Adobe.
+   * HIPAA ne peut pas être activé ni désactivé après la création du programme.
+* **Protection WAF-DDOS** - Cette option active le pare-feu d’application web via des règles pour protéger votre application.
+   * Une fois activée, la protection WAF-DDOS peut ensuite être configurée en configurant une [pipeline hors production.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * Voir le document [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les règles de filtrage du trafic dans votre référentiel afin qu’elles soient déployées correctement.
+
+![Options de sécurité](assets/create-production-program-security.png)
+
+### SLA {#sla}
+
+Si vous disposez des droits nécessaires, la variable **SLA** s’affiche sous la forme du deuxième ou du troisième onglet dans la **Configuration pour la production** boîte de dialogue.
+
+AEM Sites offre un contrat de niveau de service (SLA) standard de 99,9 %. La variable **99,99 % du contrat de niveau de service** active un pourcentage de temps de disponibilité minimal de 99,99 % pour vos environnements de production.
+
+Le contrat SLA de 99,99 % offre des avantages, notamment une disponibilité supérieure et une latence inférieure, et requiert une [région de publication supplémentaire](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) à appliquer à l&#39;environnement de production dans le programme.
+
+![Options SLA](assets/create-production-program-sla.png)
+
+Une fois que la variable [conditions requises](#sla-requirements) pour activer 99,99 % des contrats de niveau de service (SLA), vous devez exécuter une [pipeline de pile complète](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) pour l’activer.
+
+#### Conditions requises pour un contrat SLA de 99,99 % {#sla-requirements}
+
+Outre les droits requis, 99,99 % des contrats de niveau de service (SLA) ont des exigences supplémentaires d’utilisation.
+
+* L’organisation doit avoir accès aux droits SLA de 99,99 % et aux autres droits de région de publication au moment de l’application de 99,99 % SLA au programme.
+* Pour appliquer un contrat de niveau de service 99,99 % au programme, Cloud Manager vérifie qu’une [région de publication supplémentaire](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) Les droits sont également disponibles et peuvent être appliqués au programme.
+* Lors de la modification d’un programme, s’il contient déjà un environnement de production avec au moins une région de publication supplémentaire, Cloud Manager vérifie uniquement la disponibilité d’un droit SLA de 99,99 %.
+* Pour que le contrat de niveau de service 99,99 % et la création de rapports soient activés, la variable [environnement de production/d’évaluation](/help/implementing/cloud-manager/manage-environments.md#adding-environments) doivent avoir été créés et au moins une région de publication supplémentaire doit avoir été appliquée à l’environnement de production/d’évaluation.
+   * Si vous utilisez [mise en réseau avancée](/help/security/configuring-advanced-networking.md) Assurez-vous de vérifier la variable [Ajout de plusieurs régions de publication à un nouvel environnement](/help/implementing/cloud-manager/manage-environments.md#adding-regions) document pour les recommandations afin que la connectivité soit maintenue en cas d’échec régional.
+* Au moins une région de publication supplémentaire doit rester dans votre programme SLA de 99,99 %. Les utilisateurs ne sont pas autorisés à supprimer la dernière région de publication supplémentaire de votre programme SLA 99,99 %.
+* Le contrat SLA de 99,99 % est pris en charge pour les programmes de production pour lesquels la solution Sites est activée.
+* Vous devez exécuter une [pipeline de pile complète](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) afin d’activer (ou, lors de la modification d’un programme, de désactiver) le contrat de niveau de service de 99,99 %.
 
 ## Accès à votre programme {#accessing}
 
