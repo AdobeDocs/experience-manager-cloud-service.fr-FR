@@ -2,10 +2,10 @@
 title: Environnements de développement rapide
 description: Découvrez comment utiliser des environnements de développement rapide pour réaliser des itérations de développement rapides dans un environnement cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
 workflow-type: tm+mt
-source-wordcount: '3304'
-ht-degree: 67%
+source-wordcount: '3414'
+ht-degree: 62%
 
 ---
 
@@ -310,6 +310,56 @@ The analyser found the following errors for publish :
 
 L’exemple de code ci-dessus illustre le comportement si un lot ne se résout pas. Dans ce cas, il est &quot;intermédiaire&quot; et n’est installé que si ses exigences (importations manquantes, dans ce cas) sont satisfaites par l’installation d’un autre code.
 
+<u>Déploiement du code frontal en fonction des thèmes du site et des modèles de site</u>
+
+>[!NOTE]
+>
+>Cette fonctionnalité n’est pas encore disponible en version GA, mais peut être utilisée par les utilisateurs avancés. Veuillez contacter **aemcs-rde-support@adobe.com** pour essayer et fournir des commentaires.
+
+Les RDE prennent en charge le code frontal basé sur [thèmes du site](/help/sites-cloud/administering/site-creation/site-themes.md) et [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md). Avec les RDE, cette opération s’effectue à l’aide d’une directive de ligne de commande pour déployer les packages front-end, plutôt que Cloud Manager. [Pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) utilisé pour d’autres types d’environnements.
+
+Comme d’habitude, créez votre package front-end à l’aide de npm :
+
+`npm run build`
+
+Elle doit générer une `dist/` de sorte que votre dossier de modules front-end contienne une `package.json` et `dist` folder:
+
+```
+ls ./path-to-frontend-pkg-folder/
+...
+dist
+package.json
+```
+Vous êtes maintenant prêt à déployer le package front-end sur l’éditeur de texte enrichi en pointant vers le dossier du package front-end :
+
+```
+aio aem:rde:install -t frontend ./path-to-frontend-pkg-folder/
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+Vous pouvez également compresser l’événement `package.json` et `dist` et déployez ce fichier zip :
+
+`zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
+
+```
+aio aem:rde:install -t frontend frontend-pkg.zip
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+>[!NOTE]
+>
+>L’affectation de noms des fichiers dans le package front-end doit respecter les conventions d’affectation de noms suivantes :
+> * dossier &quot;dist&quot;, pour le dossier du package de sortie npm build
+> * fichier &quot;package.json&quot;, pour le package de dépendances npm
+
 ### Vérification du statut du RDE {#checking-rde-status}
 
 Vous pouvez utiliser l’interface de ligne de commande de RDE pour vérifier si l’environnement est prêt à être déployé sur , comme les déploiements effectués par le biais du module externe de RDE.
@@ -470,8 +520,9 @@ Pour ces raisons, il est recommandé, après la validation du code dans un envir
 Notez également les points suivants :
 
 * Les RDE n’incluent pas de niveau d’aperçu
-* Les RDE ne prennent actuellement pas en charge l’affichage et le débogage du code frontal déployé à l’aide du pipeline front-end de Cloud Manager.
 * Les RDE ne prennent actuellement pas en charge le canal de version préliminaire.
+* Tandis que la prise en charge de RDE pour l’affichage et le débogage du code frontal basé sur [thèmes du site](/help/sites-cloud/administering/site-creation/site-themes.md) et [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md) déployé n’est pas encore prêt pour la GA, il peut être utilisé par les utilisateurs avancés. Veuillez contacter **aemcs-rde-support@adobe.com** pour essayer et fournir des commentaires.
+
 
 
 ## De combien de RDE ai-je besoin ? {#how-many-rds-do-i-need}

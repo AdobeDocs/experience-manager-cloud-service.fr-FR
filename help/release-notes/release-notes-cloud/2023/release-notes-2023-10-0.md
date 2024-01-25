@@ -1,17 +1,17 @@
 ---
-title: Notes de mise à jour de la version 2023.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour de la version 2023.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: d79335bde72a2517939e9bfc07a75ab7a8b6b0b9
+title: Notes de mise à jour de la version 2023.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2023.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
+source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 29%
+source-wordcount: '918'
+ht-degree: 50%
 
 ---
 
+# Notes de mise à jour de la version 2023.10.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-# Notes de mise à jour de la version 2023.10.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
-
-La section suivante concerne les notes de mise à jour techniques de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour techniques de la version 2023.10.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle des fonctionnalités (2023.10.0) date du 26 octobre 2023. La prochaine version de la fonctionnalité (2023.11.0) est prévue pour le 30 novembre 2023.
+La date de publication de la version actuelle (2023.10.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 26 octobre 2023. La prochaine mise à jour des fonctionnalités (2023.11.0) est prévue pour le vendredi 30 novembre 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -37,7 +37,7 @@ Regardez la vidéo de présentation de la version d’octobre 2023 pour un rés
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités {#assets-features}
 
@@ -53,13 +53,13 @@ Regardez la vidéo de présentation de la version d’octobre 2023 pour un rés
 
 * **Importation en masse de ressources à partir de la source de données OneDrive**: les administrateurs peuvent désormais [importer un grand nombre de ressources de OneDrive vers AEM Assets ;](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). La liste mise à jour des sources de données prises en charge pour l’importation en bloc comprend Azure, AWS, Google Cloud, Dropbox et OneDrive.
 
-  ![affecter un formulaire de métadonnées à un dossier](/help/assets/assets/bulk-import-source-details-onedrive.png)
+  ![attribuer un formulaire de métadonnées à un dossier](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **Prise en charge des droits inter-organisations pour les bibliothèques**: Experience Manager Assets vous permet désormais de configurer l’accès aux bibliothèques de Creative Cloud dans une autre organisation IMS. Cela permet d’accéder plus facilement aux derniers workflows inter-produits entre Creative Cloud et Experience Manager et réduit le temps et les efforts pour les créatifs.
+* **Prise en charge des droits inter-organisations pour les bibliothèques**: Experience Manager Assets vous permet désormais de configurer l’accès aux bibliothèques de Creative Cloud dans une autre organisation IMS. Cela permet d’accéder plus facilement aux derniers workflows inter-produits entre Creative Cloud et Experience Manager et réduit le temps et les efforts pour les personnes responsables de la création.
 
-### Fonctionnalités de préversion disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Nouvelles fonctionnalités disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [Prise en charge du suivi multititre et multiaudio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
+* **, Dynamic Media -**[Prise en charge du suivi de sous-titres et d’audio multiples pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) : vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
 
   ![Onglet Sous-titres et Suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et Suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.*
 
@@ -76,11 +76,11 @@ Regardez la vidéo de présentation de la version d’octobre 2023 pour un rés
 
 ### Programme d&#39;adoption précoce {#forms-early-adopter}
 
-* **[Protect de vos documents avec les API DocAssurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de protéger la sécurité et la confidentialité des documents Adobe PDF qu’elle distribue et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seuls les destinataires prévus peuvent modifier les documents.
+* **[Protect de vos documents avec les API DocAssurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Le service Signature permet à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
   Vous pouvez écrire sur `aem-forms-early-adopter-program@adobe.com` de votre e-mail officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Règles de filtre de trafic, y compris WAF {#traffic-filter-rules-waf}
 

@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 055d510f8bd3a227c2c51d7f0dea561f06f9b4fd
+source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 91%
+source-wordcount: '4994'
+ht-degree: 89%
 
 ---
 
@@ -121,7 +121,7 @@ Les requêtes GraphQL utilisant des requêtes POST ne sont pas recommandées, ca
 
 Bien que GraphQL prenne également en charge les requêtes de GET, celles-ci peuvent atteindre des limites (par exemple, la longueur de l’URL) qui peuvent être évitées à l’aide des requêtes persistantes.
 
-Voir [Activation de la mise en cache des requêtes persistantes](/help/headless/deployment/dispatcher-caching.md) pour plus de détails.
+Voir [Activer le cache des requêtes persistantes](/help/headless/deployment/dispatcher-caching.md) pour plus de détails.
 
 >[!NOTE]
 >
@@ -715,7 +715,7 @@ query {
 
 La diffusion d&#39;images optimisées pour le Web permet d&#39;utiliser une requête Graphql pour :
 
-* Demander une URL à une image AEM Asset
+* Demande d’une URL à une image de ressource DAM (référencée par une **Référence de contenu**)
 
 * Transmettez des paramètres avec la requête, de sorte qu’un rendu spécifique de l’image soit automatiquement généré et renvoyé.
 
@@ -735,9 +735,19 @@ Vous pouvez ainsi créer dynamiquement des rendus d’image pour la diffusion JS
 
 La solution de GraphQL vous permet :
 
-* d’utiliser `_dynamicUrl` sur la référence `ImageRef` ;
+* Demander une URL : utilisez `_dynamicUrl` sur le `ImageRef` reference
 
-* d’ajouter `_assetTransform` dans l’en-tête de liste où vos filtres sont définis ;
+* Pass parameters : add `_assetTransform` dans l’en-tête de liste où vos filtres sont définis ;
+
+<!-- 
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : a Dynamic Media asset
+> 
+>If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
+-->
 
 ### Structure de la demande de transformation {#structure-transformation-request}
 
@@ -902,7 +912,7 @@ Par exemple, pour exécuter directement les exemples précédents (enregistrés 
      >
      >Le chiffre `;`est obligatoire pour terminer correctement la liste des paramètres.
 
-### Limites de la diffusion d’images {#image-delivery-limitations}
+### Limites de la diffusion d’images optimisée pour le web {#web-optimized-image-delivery-limitations}
 
 Les restrictions suivantes s’appliquent :
 
@@ -912,6 +922,58 @@ Les restrictions suivantes s’appliquent :
 
    * Aucune mise en cache sur l’instance de création
    * Mise en cache lors de la publication : 10 minutes max. (non modifiable par les clients).
+
+<!--
+## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+
+The solution in GraphQL means you can:
+
+* use `_dmS7Url` on the `ImageRef` reference
+
+>[!NOTE]
+>
+>For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>
+>This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
+>* `_dmS7Url` : a Dynamic Media asset
+>* `_dynamicUrl` : a DAM asset
+> 
+>If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+
+### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+} 
+```
+-->
 
 ## GraphQL pour AEM – Résumé des extensions {#graphql-extensions}
 
@@ -985,19 +1047,28 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
          * Voir [Exemple de requête – Toutes les villes avec une variante nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-   * Pour la [diffusion d’images](#image-delivery) :
+   * Pour la diffusion d&#39;images :
 
-      * `_dynamicUrl` : dans la référence `ImageRef`.
+      * `_authorURL`: URL complète de la ressource image sur l’auteur AEM
+      * `_publishURL`: URL complète de la ressource image sur AEM Publier
 
-      * `_assetTransform` : dans l’en-tête de liste où vos filtres sont définis.
+      * Pour [diffusion d’images optimisée pour le web](#web-optimized-image-delivery-in-graphql-queries) (des ressources DAM) :
 
-      * Voir :
+         * `_dynamicUrl`: URL complète de la ressource de gestion des actifs numériques optimisée pour le web sur la page `ImageRef` reference
 
-         * [Exemple de requête pour la diffusion d’images avec des paramètres complets](#image-delivery-full-parameters)
+           >[!NOTE]
+           >
+           >`_dynamicUrl` est l’URL préférée à utiliser pour les ressources DAM optimisées pour le web et doit remplacer l’utilisation de la fonction `_path`, `_authorUrl`, et `_publishUrl` dans la mesure du possible.
 
-         * [Exemple de requête pour la diffusion d’images avec un seul paramètre spécifié](#image-delivery-single-specified-parameter)
+         * `_assetTransform`: pour transférer des paramètres sur l’en-tête de liste dans lequel vos filtres sont définis.
 
-   * `_tags` : pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau d’identifiants `cq:tags`.
+         * Voir :
+
+            * [Exemple de requête pour une diffusion d’images optimisée pour le web avec des paramètres complets](#web-optimized-image-delivery-full-parameters)
+
+            * [Exemple de requête pour une diffusion d’image optimisée pour le web avec un seul paramètre spécifié](#web-optimized-image-delivery-single-query-variable)
+
+   * `_tags`: pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau de `cq:tags` identifiants.
 
       * Reportez-vous à [Exemple de requête : noms de toutes les villes balisées en tant qu’Escapades en ville](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks).
       * Reportez-vous à [Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag).
@@ -1028,6 +1099,13 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 * Secours lors de l’interrogation de fragments imbriqués :
 
    * Si une variation donnée n’existe pas dans un fragment imbriqué, la variation **Principal** est renvoyée.
+
+<!-- between dynamicURL and tags -->
+<!--
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+-->
 
 ## Requête du point d’entrée GraphQL à partir d’un site web externe {#query-graphql-endpoint-from-external-website}
 

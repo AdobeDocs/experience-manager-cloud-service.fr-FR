@@ -1,17 +1,17 @@
 ---
-title: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: c33874869bccae1e9837b30827a655e70636dd56
+title: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 29%
+ht-degree: 38%
 
 ---
 
+# Notes de mise à jour de la version 2023.11.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-# Notes de mise à jour de la version 2023.11.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
-
-La section suivante concerne les notes de mise à jour techniques de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour techniques de la version 2023.11.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Regardez la vidéo Présentation de la version de novembre 2023 pour un résumé
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Programme d&#39;adoption précoce {#sites-early-adopter}
 
@@ -47,13 +47,13 @@ Regardez la vidéo Présentation de la version de novembre 2023 pour un résumé
 
 Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-headless-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-features}
 
 * **Éditeur d’Adobe Express intégré dans AEM Assets**: les utilisateurs ayant accès à Express disposent désormais d’outils intégrés d’édition et de création d’images d’Adobe Express et d’Adobe Firefly disponibles directement dans AEM Assets pour améliorer la réutilisation du contenu et accélérer la vitesse de diffusion du contenu.
 
-  ![affecter un formulaire de métadonnées à un dossier](/help/assets/assets/adobe-express-aem-assets.png)
+  ![attribuer un formulaire de métadonnées à un dossier](/help/assets/assets/adobe-express-aem-assets.png)
 
 <!--
 
@@ -66,17 +66,17 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d�
 
 * **Rapports sur l’utilisation du stockage dans Insights**: les administrateurs ont désormais la possibilité d’afficher les rapports sur l’utilisation du stockage disponibles dans le cadre d’ Insights .
 
-  ![informations sur l’utilisation du stockage](/help/assets/assets/storage-usage-insights.png)
+  ![Informations sur l’utilisation du stockage](/help/assets/assets/storage-usage-insights.png)
 
-* **Recherche de la première configuration de page d’accueil**: Experience Manager Assets vous permet désormais de configurer l’expérience de la page d’accueil pour votre entreprise. Si vous sélectionnez d’abord la recherche comme page d’accueil, vous pouvez configurer l’alignement de la barre de recherche, l’image d’arrière-plan et le logo de votre entreprise.
+* **Recherche de la première configuration de page d’accueil**: Experience Manager Assets vous permet désormais de configurer l’expérience de la page d’accueil pour votre entreprise. Si vous sélectionnez l’approche axée sur la recherche pour votre page d’accueil, vous pouvez configurer l’alignement de la barre de recherche, l’image d’arrière-plan et le logo de votre organisation.
 
-  ![première configuration de recherche](/help/assets/assets/search-first-configuration.png)
+  ![Configuration de l’approche axée sur la recherche.](/help/assets/assets/search-first-configuration.png)
 
 ### Nouvelles fonctionnalités de la version préliminaire pour la vue d’administration {#admin-view-features-prerelease}
 
 **Aperçu vidéo**: AEM Assets génère désormais par défaut des rendus d’aperçu de tous les formats vidéo pris en charge, sans avoir à configurer de profil de traitement.
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nouvelles fonctionnalités d’ [!DNL Experience Manager Forms] {#forms-features}
 
@@ -108,11 +108,11 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d�
 
   ![Prise en charge de la langue de droite à gauche](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect de vos documents avec les API DocAssurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de protéger la sécurité et la confidentialité des documents Adobe PDF qu’elle distribue et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seuls les destinataires prévus peuvent modifier les documents.
+* **[Protect de vos documents avec les API DocAssurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Le service Signature permet à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
   Vous pouvez écrire sur `aem-forms-early-adopter-program@adobe.com` de votre e-mail officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Les Règles De Filtre De Trafic WAF Peuvent Désormais Être Sous Licence. {#cdn-waf-license}
 
