@@ -3,10 +3,10 @@ title: Bonnes pratiques de recherche pour [!DNL Adobe Experience Manager] as a [
 description: Bonnes pratiques pour rechercher, rechercher et récupérer les métadonnées des ressources dans votre application.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
+source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 11%
+source-wordcount: '2527'
+ht-degree: 8%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 11%
 
 [!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Parfois, trouver la bonne ressource peut être ardu et chronophage. Par conséquent, la fonctionnalité de recherche de ressources dans [!DNL Adobe Experience Manager Assets] est au coeur de l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs professionnels et les marketeurs ou pour une administration par les administrateurs DAM.
 
-Ce document d’aide contient les bonnes pratiques de recherche AEM avec l’aide de divers scénarios afin d’aider AEM utilisateurs à effectuer une recherche de base à niveau avancé.
+Ce document d’aide contient AEM bonnes pratiques de recherche, à l’aide de divers scénarios, pour aider AEM utilisateurs à effectuer une recherche de base à avancée.
 
 ## Accès à la recherche de Experience Manager {#access-experience-manager-search}
 
@@ -255,11 +255,15 @@ ou sélectionnez la ressource > accédez aux points de suspension en haut à dro
 
 1. Remarquez la barre de recherche. La miniature de la ressource sélectionnée s’affiche dans la barre de recherche pour indiquer vos besoins en termes de recherche. Par conséquent, elle renvoie les ressources avec des balises intelligentes similaires.
 
-**[!UICONTROL Affichage des ressources]** ne prend pas en charge la variable [!UICONTROL Rechercher semblable] .
+Exécutez les étapes suivantes dans **[!UICONTROL Affichage des ressources]**:
+
+1. Recherchez la ressource selon vos besoins.
+1. Sélectionnez l’image > accédez à [!UICONTROL Rechercher une image similaire] dans la barre de navigation supérieure.
+Vous accédez alors à la collection de ressources avec des couleurs et des métadonnées similaires.
 
 ## Facettes de recherche personnalisées {#custom-search-facets}
 
-Les facettes de recherche de Adobe Experience Manager vous permettent de rechercher des ressources de plusieurs manières plutôt que dans un seul ordre taxonomique, prédéterminé ou prédéfini. Vous pouvez personnaliser les facettes de recherche et ajouter des prédicats selon vos besoins. Lecture [Facettes de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr#) pour le guide détaillé sur l’ajout d’un prédicat personnalisé.
+Les facettes de recherche de Adobe Experience Manager vous permettent de rechercher des ressources de plusieurs manières plutôt que dans un seul ordre taxonomique, prédéterminé ou prédéfini. Vous pouvez personnaliser les facettes de recherche et ajouter des prédicats selon vos besoins. Lecture [Facettes de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) pour le guide détaillé sur l’ajout d’un prédicat personnalisé.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -278,7 +282,7 @@ La recherche affiche des résultats similaires si vous travaillez dans le [!UICO
 Vous pouvez améliorer la pertinence des mots-clés pour des ressources particulières afin d’améliorer les recherches basées sur les mots-clés. En d’autres termes, les images pour lesquelles vous convertissez des mots-clés spécifiques apparaissent en haut des résultats de la recherche lorsque vous effectuez une recherche en fonction de ces mots-clés.
 
 1. Dans l’interface utilisateur d’Assets, ouvrez la page des propriétés de la ressource. Cliquez sur [!UICONTROL Avancé] et cliquez sur [!UICONTROL Ajouter] sous [!UICONTROL Élever pour les mots-clés de recherche].
-2. Dans la boîte de dialogue Rechercher une promotion, indiquez un mot-clé pour lequel vous souhaitez améliorer la recherche d’image, puis cliquez sur [!UICONTROL Ajouter]. Vous pouvez indiquer plusieurs mots-clés de la même manière.
+2. Dans la zone Rechercher une promotion , indiquez un mot-clé pour lequel vous souhaitez améliorer la recherche d’image, puis cliquez sur [!UICONTROL Ajouter]. Vous pouvez indiquer plusieurs mots-clés de la même manière.
 3. Cliquez sur [!UICONTROL Enregistrer et fermer]. La ressource pour laquelle vous avez promu ce mot-clé apparaît en tête des résultats de recherche.
 
 ## Éléments notables lors de l’exécution d’une recherche dans Experience Manager {#notable-things}
@@ -391,7 +395,7 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> Taille de fichier </td>
+        <td> Taille du fichier </td>
         <td>
         Les options prises en charge sont les suivantes :
             <ul>
@@ -415,11 +419,6 @@ The newly added assets are not indexed.
             <li> Modèle de fragment de contenu
             </ul> 
         </td>
-        <td> Pas de prise en charge </td>
-    </tr>
-     <tr>
-        <td> Rechercher similaire </td>
-        <td> Pris en charge </td>
         <td> Pas de prise en charge </td>
     </tr>
 </table>
