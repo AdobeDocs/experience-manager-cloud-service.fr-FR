@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Ajouter des fragments de formulaire adaptatif, des fragments de formulaire adaptatif, Créer un fragment de formulaire, Ajouter un fragment à un formulaire adaptatif, Gérer des fragments
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 5d9cf5d4dee5122263b15cee8874975887c57219
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 28%
+source-wordcount: '1789'
+ht-degree: 33%
 
 ---
 
@@ -28,6 +28,10 @@ Les fragments de formulaire s’intègrent facilement à plusieurs formulaires, 
 
 Vous pouvez ajouter un fragment plusieurs fois à un document et utiliser les propriétés de liaison de données de ses composants pour le lier à différentes sources de données ou à différents schémas. Par exemple, vous pouvez utiliser le même fragment d’adresse pour les adresses permanentes, de communication et de facturation et le connecter à différents champs d’une source de données ou d’un schéma.
 
+>[!NOTE]
+>
+> Vous pouvez facilement personnaliser votre expérience de fragment pour les utilisateurs qui utilisent le [Boîte de dialogue de configuration et boîte de dialogue de conception du composant Fragment de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
+
 ## Création d’un fragment de formulaire {#create-a-fragment}
 
 Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistrer un panneau dans un formulaire adaptatif existant en tant que fragment. Pour créer un fragment de formulaire :
@@ -45,14 +49,14 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
 
    ![Affiche le type de modèle dans l’onglet Modèle de formulaire.](assets/create-af-1-1.png)
 
-   * **Aucun** : indique de créer le fragment à partir de zéro sans utiliser de modèle de formulaire.
+   * **Aucun** : indique que le fragment doit être créé de zéro sans utiliser de modèle de formulaire.
 
      >[!NOTE]
      >
      > Dans Adaptive Forms, vous pouvez utiliser plusieurs fois un fragment de formulaire unique (basé sur les composants principaux). Il prend en charge les fragments de formulaire basés sur des schémas et sur des éléments non basés sur des schémas.
 
    * **Schéma**: indique de créer le fragment à l’aide d’un schéma XML ou JSON téléchargé dans AEM Forms. Vous pouvez charger ou sélectionner dans les schémas XML ou JSON disponibles comme modèle de formulaire pour le fragment. Lorsque vous sélectionnez un schéma XML, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant un type complexe présent dans le schéma sélectionné à partir de la propriété **[!UICONTROL Type complexe de schéma XML]** menu déroulant. Lorsque vous sélectionnez un schéma JSON, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant une définition de schéma présente dans le schéma sélectionné à partir du **[!UICONTROL Définitions de schéma JSON]** menu déroulant.
-   * **Modèle de données de formulaire**: indique de créer le fragment à l’aide d’un modèle de données de formulaire. Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire. Développez la liste déroulante Définitions de modèle de données de formulaire . Il répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié. Sélectionnez un objet de modèle de données dans la liste.
+   * **Modèle de données de formulaire**: indique de créer le fragment à l’aide d’un modèle de données de formulaire. Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire. Développez la liste déroulante Définitions de modèle de données de formulaire . Elle répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié. Sélectionnez un objet de modèle de données dans la liste.
 
    ![Modèle de données de formulaire](assets/create-af-3.png)
 
@@ -60,7 +64,7 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
 
 1. Cliquez sur **Créer** puis cliquez sur **Ouvrir** pour ouvrir le fragment, avec un modèle par défaut, en mode d’édition. En mode d’édition, vous pouvez ajouter n’importe quel composant de formulaire adaptatif au fragment.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire XDP comme modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire apparaît dans l’outil de recherche de contenu. Il vous permet de faire glisser des éléments de modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du fichier XDP ou XSD associé.
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire XDP comme modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire apparaît dans l’outil de recherche de contenu. Il vous permet de faire glisser des éléments du modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du modèle XDP ou XSD associé.
 
 Une fois le fragment de formulaire adaptatif basé sur un schéma ou un modèle de données de formulaire créé, les éléments de modèle de données de formulaire ou de schéma apparaissent dans l’onglet Sources de données du navigateur de contenu de l’éditeur de formulaire adaptatif. Vous pouvez faire glisser des éléments de modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du schéma associé.
 
@@ -141,7 +145,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
   </tr>
   <tr>
    <td><p>Propriétés</p> </td>
-   <td><p>Ouvre le panneau Propriétés. Dans le panneau Propriétés, vous pouvez afficher et modifier les propriétés, générer un aperçu, et télécharger une vignette du fragment sélectionné. Pour plus d’informations, consultez la <a>gestion des métadonnées</a>.<br /> <br /> </p> </td>
+   <td><p>Ouvre le panneau Propriétés. Dans le panneau Propriétés, vous pouvez afficher et modifier les propriétés, générer un aperçu et charger une miniature pour le fragment sélectionné. Pour plus d’informations, consultez la section <a>Gestion des métadonnées</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Copier</p> </td>
@@ -165,7 +169,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
   </tr>
   <tr>
    <td><p>Publier/Dépublier</p> </td>
-   <td><p>Publie/dépublie le fragment sélectionné.<br /> <br /> </p> </td>
+   <td><p>Publie/annule la publication du fragment sélectionné.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Supprimer</p> </td>
