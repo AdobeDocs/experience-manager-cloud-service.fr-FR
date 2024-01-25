@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
+source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
 workflow-type: tm+mt
-source-wordcount: '4904'
-ht-degree: 99%
+source-wordcount: '4975'
+ht-degree: 95%
 
 ---
 
@@ -25,12 +25,34 @@ Découvrez comment gérer et modifier les ressources vidéo dans [!DNL Adobe Exp
 
 ## Chargement et prévisualisation des ressources vidéo {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] génère des aperçus pour les contenus vidéo dotés de l’extension MP4. Vous pouvez prévisualiser les rendus dans l’interface utilisateur [!DNL Assets].
+Vous pouvez charger et prévisualiser des ressources vidéo au format pris en charge dans [!DNL Experience Manager Assets].
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. Dans le dossier Ressources numériques ou ses sous-dossiers, accédez à l’emplacement où vous souhaitez ajouter les ressources numériques.
-1. Pour charger le contenu, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Fichiers]**. Vous pouvez également faire glisser un fichier vers l’interface utilisateur. Voir [Ressources chargées](manage-digital-assets.md#uploading-assets) pour plus d’informations.
-1. Pour prévisualiser une vidéo en mode carte, cliquez sur l’option **[!UICONTROL Lecture]** ![option de lecture](assets/do-not-localize/play.png) du contenu vidéo. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. Les options [!UICONTROL Lecture] et [!UICONTROL Pause] ne sont pas disponibles dans la vue Liste.
-1. Pour prévisualiser la vidéo dans la page des détails de la ressource, sélectionnez **[!UICONTROL Modifier]** sur la carte. La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
+### Chargement de ressources vidéo
+
+Pour charger une ressource vidéo, procédez comme suit :
+
+1. Dans le dossier Ressources numériques ou les sous-dossiers, accédez à l’emplacement où vous devez ajouter la ressource.
+1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis choisissez **[!UICONTROL Fichiers]**. <br>Vous pouvez également faire glisser un fichier sur l’interface utilisateur.
+En savoir plus sur [chargement de ressources](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### Prévisualisation de ressources vidéo
+
+Vous pouvez prévisualiser les rendus MP4 dans le [!DNL Assets] de l’interface utilisateur. Pour prévisualiser une ressource vidéo, procédez comme suit :
+
+1. Chargement d’une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [formats vidéo pris en charge](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
+1. Cliquez sur la ressource, puis sélectionnez ![option détails](assets/do-not-localize/details_icon.svg) **[!UICONTROL Détails]**  dans la barre d’outils supérieure. La ressource vidéo s’ouvre dans la visionneuse de vidéos.
+1. Cliquez sur le bouton ![option de lecture](assets/do-not-localize/play.png) sur la miniature de la vidéo. <br>Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
+
+Pour les ressources vidéo existantes dans [!DNL Experience Manager Assets], vous devez **[!UICONTROL Retraiter]** les ressources dans [!DNL Experience Manager] pour activer la fonction d’aperçu vidéo. Découvrez comment [retraitement des ressources numériques](reprocessing.md) in [!DNL Experience Manager].
+
+### Limites de l’aperçu vidéo
+
+* Les fichiers MXF n’affichent pas d’aperçus vidéo même si le rendu est généré.
+* Les fichiers WebM ne génèrent pas de rendus d’aperçu, car ils peuvent être lus en mode natif par les navigateurs Web.
 
 ## Publication de ressources vidéo {#publish-video-assets}
 
