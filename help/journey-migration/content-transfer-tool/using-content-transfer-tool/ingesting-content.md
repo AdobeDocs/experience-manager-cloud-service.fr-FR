@@ -2,9 +2,9 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
+source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2410'
 ht-degree: 42%
 
 ---
@@ -38,7 +38,7 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
    > Si l’extraction est en cours d’exécution, la boîte de dialogue l’indique. Une fois l’extraction terminée, l’ingestion démarre automatiquement. Si l’extraction échoue ou est arrêtée, la tâche d’ingestion est annulée.
 
    * **Destination :** Sélectionnez l’environnement de destination. C’est dans cet environnement que le contenu du jeu de migration est ingéré.
-      * Les intuitions ne prennent pas en charge une destination RDE (Rapid Development Environment) et n’apparaissent pas comme un choix de destination possible, même si l’utilisateur y a accès.
+      * Les ingestion ne prennent pas en charge les destinations de type Environnement de développement rapide (RDE) ou Aperçu, et elles n’apparaissent pas comme un choix de destination possible, même si l’utilisateur y a accès.
       * Bien qu’un jeu de migration puisse être ingéré simultanément dans plusieurs destinations, une destination peut être la cible d’une seule ingestion en cours d’exécution ou en attente à la fois.
 
    * **Niveau :** Sélectionnez le niveau. (Auteur/Publication).
