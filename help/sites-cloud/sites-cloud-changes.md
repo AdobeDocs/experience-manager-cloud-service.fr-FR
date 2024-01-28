@@ -1,11 +1,11 @@
 ---
 title: Modifications notables apportées à AEM Sites dans AEM Cloud Service
-description: Découvrez comment créer et administrer AEM Sites as a Cloud Service ainsi que les modifications notables apportées à AEM Sites dans AEM Cloud Service.
+description: Découvrez comment créer et administrer AEM Sites as a Cloud Service et découvrez les modifications essentielles apportées à AEM Sites dans AEM Cloud Service.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 85%
+ht-degree: 90%
 
 ---
 

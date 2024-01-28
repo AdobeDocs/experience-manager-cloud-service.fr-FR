@@ -56,9 +56,9 @@ Pour plus d’informations sur l’accès à la vue Assets et sur certaines des 
 
 ## Intégration à la création basée sur des documents pour les Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
 
-Grâce à Edge Delivery, vous pouvez créer rapidement des environnements de développement dans lesquels les personnes créant du contenu peuvent rapidement mettre à jour et publier du contenu, et de nouveaux sites peuvent être lancés rapidement.
+Edge Delivery permet de créer rapidement des sites web dans lesquels les auteurs et autrices peuvent rapidement mettre à jour et publier du contenu, afin de lancer rapidement de nouveaux sites.
 
-Intégrez AEM Assets à la création basée sur des documents pour que les Edge Delivery Services puissent permettre aux créateurs de sites web d’utiliser les images disponibles dans les référentiels AEM Assets lors de la création de documents dans Microsoft Word ou Google Docs. Pour plus d’informations, voir [Intégration d’AEM Assets à la création basée sur des documents](/help/edge/using.md#integrate-assets-edge).
+Intégrez AEM Assets à la création basée sur des documents pour que les Edge Delivery Services puissent permettre aux créateurs et créatrices de sites web d’utiliser les images disponibles dans les référentiels AEM Assets lors de la création de documents dans Microsoft Word ou Google Docs. Pour plus d’informations, voir [Intégration d’AEM Assets à la création basée sur des documents](/help/edge/using.md#integrate-assets-edge).
 
 ## Nouvelles fonctionnalités d’Assets {#whats-new-assets}
 
