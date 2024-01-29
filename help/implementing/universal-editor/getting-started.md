@@ -2,10 +2,10 @@
 title: Prise en main de l’éditeur universel dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: f9d584d7b117c24224079f581802f5f126890304
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 71%
+source-wordcount: '871'
+ht-degree: 73%
 
 ---
 
@@ -104,8 +104,6 @@ Cette propriété doit être définie dans la configuration OSGi `org.apache.sli
 ## Instrumenter la page {#instrument-page}
 
 Le service de l’éditeur universel requiert un [nom de ressource uniforme (URN)](https://fr.wikipedia.org/wiki/Uniform_Resource_Name) pour identifier et utiliser le système principal approprié pour le contenu de l’application en cours de modification. Par conséquent, un schéma URN est nécessaire pour mapper le contenu aux ressources de contenu.
-
-Les attributs d’instrumentation ajoutés à la page se composent principalement de [Microdonnées de HTML,](https://developer.mozilla.org/fr/docs/Web/HTML/Microdata) une norme du secteur qui peut également être utilisée pour rendre le HTML plus sémantique, rendre les documents de HTML indexables, etc.
 
 ### Création de connexions {#connections}
 
