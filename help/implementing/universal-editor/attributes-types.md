@@ -2,7 +2,7 @@
 title: Attributs et types d’éléments
 description: Découvrez les attributs de données et les types d’éléments requis par Universal Editor.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
+source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 72%
@@ -38,7 +38,7 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 
 ## Types d’éléments {#item-types}
 
-| `itemtype` | Description | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
+| `data-aue-type` | Description | `data-aue-resource` | `data-aue-prop` | `data-aue-filter` | `data-aue-label` | `data-aue-model` | `data-aue-behavior` |
 |---|---|---|---|---|---|---|---|
 | `text` | Le texte est modifiable dans les balises HTML, mais uniquement dans un format de texte simple, sans mise en forme de texte enrichi. Ce format est généralement utilisé sur les composants de titre. | Facultatif | Requis | n/a | Facultatif | n/a | Facultatif |
 | `richtext` | Le texte est modifiable avec des fonctionnalités de texte enrichi complètes. L’éditeur de texte enrichi s’affiche dans le panneau de droite | Facultatif | Requis | n/a | Facultatif | n/a | Facultatif |
