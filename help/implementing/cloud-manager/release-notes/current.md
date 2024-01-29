@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 20%
+ht-degree: 47%
 
 ---
 
@@ -21,7 +21,7 @@ Cette page présente les notes de mise à jour de Cloud Manager version 2024.
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2024.1.0 de Cloud Manager dans AEM as a Cloud Service est le 18 janvier 2024. La prochaine version est prévue pour le 16 février 2024.
+La date de publication de la version 2024.1.0 de Cloud Manager dans AEM as a Cloud Service est le 18 janvier 2024. La prochaine version est prévue pour le 16 février 2024.
 
 ## Nouveautés {#what-is-new}
 
@@ -38,7 +38,7 @@ Vous pouvez utiliser la variable [Service de données de surveillance des utilis
 
 Le service de données de surveillance des utilisateurs réels (RUM) offre un reflet plus précis des interactions des utilisateurs, assurant une mesure fiable de l’engagement du site web. C’est une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Cela est bénéfique pour les clients qui utilisent un réseau de diffusion de contenu géré par Adobe ou un réseau de diffusion de contenu géré par non Adobe. Pour les clients qui utilisent un réseau de diffusion de contenu non géré par un Adobe, la création de rapports automatisés sur le trafic peut désormais leur être activée, ce qui évite d’avoir à partager n’importe quel rapport de trafic avec un Adobe.
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com` à partir de l’adresse électronique associée à votre Adobe ID. Indiquez le nom de domaine des environnements de production, d’évaluation et de développement dans votre email.  La disponibilité du programme d’adoption précoce de cette fonction est limitée.
+Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com` à partir de l’adresse électronique associée à votre Adobe ID. Indiquez le nom de domaine des environnements de production, d’évaluation et de développement dans votre email.  La disponibilité du programme d’adoption précoce de cette fonctionnalité est limitée.
 
 ### Apporter votre propre GitHub {#byo-github}
 
@@ -46,28 +46,28 @@ Si vous utilisez GitHub pour gérer vos référentiels, [vous pouvez désormais 
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `Grp-CloudManager_BYOG@adobe.com` de votre adresse électronique associée à votre Adobe ID.
 
-### Restauration de contenu en libre-service {#content-restore}
+### Restaurer le contenu en libre-service {#content-restore}
 
-[Nouvelle fonctionnalité de restauration de contenu en libre-service](/help/operations/restore.md) fournit désormais une restauration de sauvegarde pendant sept jours au maximum et est disponible pour les utilisateurs précoces à des fins d’évaluation, notamment :
+[Une nouvelle fonctionnalité de restauration du contenu en libre-service](/help/operations/restore.md) fournit désormais une restauration de sauvegarde pendant sept jours au maximum et est disponible pour les utilisateurs et utilisatrices précoces à des fins d’évaluation, notamment les éléments suivants :
 
-* Restauration de sauvegarde ponctuelle des dernières 24 heures
-* Restauration de la période fixe pendant sept jours au maximum
+* Restauration de sauvegarde ponctuelle des dernières 24 heures.
+* Restaurations de périodes fixes pendant sept jours au maximum.
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-restorefrombackup-adopter@adobe.com` de votre email associé à votre Adobe ID.
 
-* Le programme d’adoption précoce est limité aux environnements de développement uniquement.
-* La disponibilité du programme d’adoption précoce de cette fonction est limitée.
-* Cette fonctionnalité est destinée à la récupération de contenu supprimé accidentellement et n’est pas destinée à la reprise après sinistre.
+* le programme d’adoption précoce est limité aux environnements de développement uniquement.
+* La disponibilité du programme d’adoption précoce de cette fonctionnalité est limitée.
+* Cette fonctionnalité est destinée à la récupération du contenu supprimé accidentellement et n’est pas destinée à la restauration après sinistre.
 
-### Tableau de bord du contrôle de l’expérience {#experience-audit-dashboard}
+### Tableau de bord d’audit de l’expérience {#experience-audit-dashboard}
 
-[Tableau de bord du contrôle de l’expérience de Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) inclut une vue de tendance des scores de performances de votre page, ainsi que des informations et des recommandations pour vous aider à les améliorer. Le contrôle de l’expérience est inclus en tant qu’étape dans le pipeline de production de Cloud Manager.
+[Le tableau de bord d’audit de l’expérience de Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) inclut une vue de tendance des scores de performances de votre page, ainsi que des informations et des recommandations pour vous aider à les améliorer. L’audit de l’expérience est inclus en tant qu’étape dans le pipeline de production de Cloud Manager.
 
-Le tableau de bord utilise Google Lighthouse, un outil automatisé Open Source permettant d’améliorer la qualité de vos applications web. Vous pouvez l’exécuter sur n’importe quelle page web, publique ou nécessitant une authentification. Il comporte des audits des performances, de l’accessibilité, des applications web progressives, de l’optimisation pour les moteurs de recherche, etc.
+Le tableau de bord utilise Google Lighthouse, un outil automatisé Open Source permettant d’améliorer la qualité de vos applications web. Vous pouvez l’exécuter sur n’importe quelle page web, publique ou nécessitant une authentification. Il comporte des audits des performances, de l’accessibilité, des applications web progressives, de l’optimisation du moteur de recherche et plus encore.
 
-Vous souhaitez tester le nouveau tableau de bord ? Pour commencer, envoyez un courrier électronique à l’adresse `aem-lighthouse-pilot@adobe.com` de votre email associé à votre Adobe ID.
+Vous souhaitez tester le nouveau tableau de bord ? Pour commencer, envoyez un courrier électronique à l’adresse `aem-lighthouse-pilot@adobe.com` de votre email associé à votre Adobe ID.
 
 ## Correctifs {#bug-fixes}
 
 * Une erreur a été corrigée lorsque les pipelines de configuration échouaient à l’étape de création avec un message d’erreur non clair si l’emplacement des fichiers de configuration n’était pas correctement défini. Le message d’erreur est maintenant clair et indique que l’utilisateur doit vérifier que l’emplacement des fichiers de configuration est correct.
-* Lorsqu’une étape de création se termine par un état `FAILED` en raison d’un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, il est désormais correctement décrit comme une erreur en raison de conflits de fusion avec la branche de destination.
+* Lorsqu’une étape de création se termine avec le statut `FAILED` en raison d’une `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, elle est désormais décrite comme une erreur due à des conflits de fusion avec la branche de destination.

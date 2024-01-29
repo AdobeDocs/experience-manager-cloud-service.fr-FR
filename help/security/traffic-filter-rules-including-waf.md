@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
 workflow-type: tm+mt
 source-wordcount: '3350'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Une sous-catégorie de règles de filtrage du trafic nécessite une licence de s
 
 Les règles de filtre de trafic peuvent être déployées par le biais de pipelines de configuration de Cloud Manager vers des types d’environnements de développement, d’évaluation et de production dans des programmes de production (hors sandbox). La prise en charge des RDE sera assurée à l’avenir.
 
-[Suivre un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=fr) pour développer rapidement une expertise concrète sur cette fonctionnalité.
+[Suivez un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=fr) pour développer rapidement une expertise concrète sur cette fonctionnalité.
 
 ## Organisation de cet article {#how-organized}
 
@@ -226,7 +226,7 @@ when:
 
 ### Structure d’action {#action-structure}
 
-Un `action` peut être soit une chaîne spécifiant l’action (autoriser, bloquer ou consigner), soit un objet composé du type d’action (autoriser, bloquer ou consigner) et d’options telles que wafFlags et/ou l’état.
+Une `action` peut être soit une chaîne spécifiant l’action (autoriser, bloquer ou consigner), soit un objet composé à la fois du type d’action (autoriser, bloquer ou consigner) et d’options telles que wafFlags et/ou le statut.
 
 **Types d’actions**
 
@@ -277,7 +277,7 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 
 * Les liste d’adresses IP autorisées définies dans Cloud Manager sont prioritaires sur les règles de filtres de trafic.
 
-* Les correspondances de règles WAF apparaissent uniquement dans les journaux de réseau de diffusion de contenu pour les échecs et les passes du réseau de diffusion de contenu, et non les accès.
+* Les correspondances de règles WAF apparaissent uniquement dans les journaux de réseau CDN pour les échecs et les réussites du réseau CDN, et non les accès.
 
 ## Exemples de règles {#examples}
 
@@ -491,7 +491,7 @@ Les règles se comportent comme suit :
 * Si le WAF est sous licence et activé, la variable `waf` répertorie tous les indicateurs WAF (par exemple, SQLI) détectés, que les indicateurs WAF aient été répertoriés dans des règles ou non. Cela permet de fournir des informations sur les nouvelles règles potentielles à déclarer.
 * Si aucune règle déclarée par le client ou la cliente ni aucune règle WAF ne correspond, la propriété `rules` est vide.
 
-Comme nous l’avons vu plus haut, les correspondances de règles WAF apparaissent uniquement dans les journaux de réseau de diffusion de contenu pour les échecs et les passes du réseau de diffusion de contenu, et non les accès.
+Comme nous l’avons vu plus haut, les correspondances de règles WAF apparaissent uniquement dans les journaux de réseau CDN pour les échecs et les réussites du réseau CDN, et non les accès.
 
 L’exemple ci-dessous illustre un exemple de `cdn.yaml` et deux entrées de journal de réseau CDN :
 
