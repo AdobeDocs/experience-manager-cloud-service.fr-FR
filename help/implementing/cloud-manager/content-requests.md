@@ -2,10 +2,10 @@
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
+source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 4%
+source-wordcount: '2683'
+ht-degree: 5%
 
 ---
 
@@ -96,9 +96,13 @@ La surveillance des utilisateurs réels (RUM) fournit des informations détaill�
 
 ### Qui peut bénéficier du service de surveillance des données RUM ? {#who-can-benefit-from-rum-data-monitoring-service}
 
-Le service de données RUM est bénéfique pour ceux qui utilisent le réseau de diffusion de contenu d’Adobe, car il offre un reflet plus précis des interactions utilisateur, ce qui garantit une mesure fiable de l’engagement du site web en reflétant le nombre de pages vues côté client qui peuvent être comparées aux pages vues du journal de contenu côté serveur existantes. En outre, pour les clients qui utilisent leur propre réseau de diffusion de contenu, Adobe peut désormais rationaliser la création de rapports de trafic automatique qui inclut les pages vues pour eux, ce qui signifie qu’ils n’ont pas à partager de rapport de trafic avec Adobe.
+Le service de données RUM est bénéfique pour tous les clients, que ce soit l’utilisation de l’Adobe ou de leur propre réseau de diffusion de contenu. Il offre un reflet plus précis des interactions utilisateur, ce qui garantit une mesure fiable de l’engagement du site web en reflétant le nombre de pages vues côté client.
 
-C’est également une excellente opportunité d’obtenir des informations avancées sur les performances de votre page pour les clients qui utilisent le réseau de diffusion de contenu d’Adobe et ceux qui utilisent leur propre réseau de diffusion de contenu.
+En particulier, pour les utilisateurs du réseau de diffusion de contenu Adobe, il effectue le suivi précis des interactions utilisateur pour une comparaison directe des pages vues côté client avec les journaux du réseau de diffusion de contenu côté serveur.
+
+Pour les clients qui utilisent leur propre réseau de diffusion de contenu, ils peuvent bénéficier de rapports de trafic simplifiés, car Adobe intègre désormais directement ces pages vues, rendant ainsi inutile la création de rapports distincts.
+
+En outre, tous les clients bénéficient d’informations approfondies sur les performances de la page, afin d’optimiser efficacement leurs expériences numériques.
 
 ### Comprendre le fonctionnement du service de données Real User Monitoring (RUM) {#understand-how-the-rum-data-service-works}
 
