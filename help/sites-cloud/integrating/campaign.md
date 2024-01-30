@@ -4,17 +4,17 @@ description: Découvrez la prise en charge par AEM as a Cloud Service des in
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: c4daf04d5520da1e646f35ba72c9f53cb1d97d36
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 95%
+source-wordcount: '159'
+ht-degree: 86%
 
 ---
 
 
 # Intégration d’AEM as a Cloud Service à Adobe Campaign {#integrating-campaign}
 
-Découvrez la prise en charge par AEM as a Cloud Service des intégrations à Adobe Campaign.
+Découvrez la prise en charge d’AEM as a Cloud Service pour les intégrations avec Adobe Campaign.
 
 >[!NOTE]
 >

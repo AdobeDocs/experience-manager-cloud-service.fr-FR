@@ -2,9 +2,9 @@
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
 workflow-type: tm+mt
-source-wordcount: '3526'
+source-wordcount: '3540'
 ht-degree: 92%
 
 ---
@@ -351,6 +351,7 @@ La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge.
 
 * La prise en charge est limitée à une VPN unique.
 * La fonctionnalité de transfert Splunk n’est pas possible via une connexion VPN.
+* Les résolveurs DNS doivent être répertoriés dans l’espace Adresse de passerelle pour résoudre les noms d’hôtes privés.
 
 ### Création {#vpn-creation}
 
