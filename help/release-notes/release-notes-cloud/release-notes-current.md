@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8c33426c38b087c83b945572374089ad9cb44daf
+source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 40%
+source-wordcount: '781'
+ht-degree: 46%
 
 ---
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2024.1.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 25 janvier 2024. La prochaine mise à jour des fonctionnalités (2024.2.0) est prévue pour le vendredi 29 février 2024.
+La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.1.0) est le vendredi 25 janvier 2024. La prochaine version des fonctionnalités (2024.2.0) est prévue pour le vendredi 29 février 2024.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -46,7 +46,7 @@ Consultez la vidéo Aperçu de la version de janvier 2024 pour un résumé des 
 
 ![Extension Manager dans AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
-L’Extension Manager dans AEM Sites permet aux développeurs et aux professionnels d’accéder aux extensions de l’interface utilisateur, de les gérer et de les personnaliser afin d’améliorer les fonctionnalités d’AEM Sites.
+L’Extension Manager dans AEM Sites permet aux développeurs et aux professionnels d’accéder à, de gérer et de personnaliser les [Extensions d’interface utilisateur](https://developer.adobe.com/uix/docs/) créé avec [Adobe App Builder](https://developer.adobe.com/app-builder/) pour améliorer les fonctionnalités d’AEM Sites.
 Avec l’Extension Manager, vous pouvez :
 
 * Activer ou désactiver des extensions pour chaque instance ;
@@ -90,9 +90,9 @@ Assets Essentials vous permet désormais de définir une liste bloquée contena
 
   ![Prise en charge de la langue de droite à gauche](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect de vos documents avec les API DocAssurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Le service Signature permet à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
+* **[Protégez vos documents avec les API DocAssurance (qui font partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)** : les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seules les personnes autorisées peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
-  Vous pouvez écrire sur `aem-forms-early-adopter-program@adobe.com` de votre e-mail officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité.
+  Vous pouvez écrire à `aem-forms-early-adopter-program@adobe.com` depuis votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
