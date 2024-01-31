@@ -2,7 +2,7 @@
 title: Gestion des certificats SSL
 description: Découvrez comment utiliser Cloud Manager pour vérifier le statut de vos certificats SSL et comment les modifier, les remplacer, les mettre à jour et les supprimer.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 73%
@@ -18,9 +18,9 @@ Découvrez comment utiliser Cloud Manager pour vérifier le statut de vos certi
 
 Le statut de vos certificats SSL se comprend d’un seul coup d’œil grâce à la page de certificat SSL.
 
-* **Vert** - Ce statut indique que votre certificat est valide pendant au moins 60 jours à compter de la date actuelle.
+* **Vert** - Ce statut indique que votre certificat est valide pendant au moins 14 jours à compter de la date actuelle.
 
-* **Orange** - Ce statut indique que votre certificat va expirer dans moins de 60 jours.
+* **Orange** - Ce statut indique que votre certificat va expirer dans moins de 14 jours.
    * Il est temps de vous assurer que vous disposez d’un plan de renouvellement de votre certificat afin de le remplacer via l’interface utilisateur de Cloud Manager et d’éviter d’éventuelles interruptions d’accès au site.
    * Cloud Manager envoie régulièrement des notifications dans l’interface utilisateur pour vous avertir d’une expiration imminente du certificat.
 
