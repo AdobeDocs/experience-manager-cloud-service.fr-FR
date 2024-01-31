@@ -2,13 +2,13 @@
 title: Création de contenu pour les Edge Delivery Services
 description: Découvrez comment la création de contenu fonctionne avec des Edge Delivery Services et comment créer AEM contenu avec des Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
+source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 14%
+source-wordcount: '491'
+ht-degree: 13%
 
 ---
-
 
 # Création de contenu pour les Edge Delivery Services {#authoring-edge}
 
@@ -40,7 +40,7 @@ Lorsque vous utilisez des Edge Delivery Services avec AEM as a Cloud Service, le
    * Le contenu reste stocké dans AEM.
    * AEM effectue le rendu du HTML sémantique nécessaire à l’ingestion.
    * Le contenu est publié pour les Edge Delivery Services.
-1. [Services de diffusion Edge](/help/edge/developer/keeping-it-100.md) vérifiez un score Lighthouse 100 %.
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) vérifiez un score Lighthouse 100 %.
 
 Les blocs sont des composants fondamentaux d’une page fournie par des Edge Delivery Services. Les auteurs peuvent choisir parmi les blocs par défaut fournis en standard par Adobe ou parmi les blocs personnalisés pour votre projet par vos développeurs.
 
@@ -53,6 +53,8 @@ Les détails des blocs peuvent ensuite être configurés dans le rail Propriét�
 ![Configuration des propriétés de bloc](assets/block-properties.png)
 
 Pour plus d’informations sur la création à l’aide d’Universal Editor, consultez le document . [Création de contenu avec l’éditeur universel.](/help/implementing/universal-editor/authoring.md)
+
+Veuillez consulter la [Guide de prise en main du développeur pour la création AEM avec des Edge Delivery Services](/help/edge/edge-dev-getting-started.md) pour savoir comment démarrer votre propre projet pour créer avec des Edge Delivery Services et des AEM.
 
 ## Prise en main {#how-to-get-started}
 
