@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 97%
+source-wordcount: '732'
+ht-degree: 91%
 
 ---
 
@@ -60,6 +60,10 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc
 * Partagez des métadonnées de ressources avec une équipe de projet plus large.
 * Testez ou effectuez un audit des métadonnées à des fins de conformité.
 * Externalisez les métadonnées pour une localisation distincte.
+
+>[!NOTE]
+>
+>Les exportations de métadonnées sont limitées à 1 048 575 ressources, ce qui correspond à la taille maximale des feuilles de calcul dans Microsoft Excel. Si une hiérarchie exportée contient plus de ressources que ce nombre, seules les métadonnées des 1 048 575 premières ressources seront incluses dans le fichier CSV.
 
 1. Sélectionnez le dossier de ressources pour lequel vous souhaitez exporter des métadonnées. Dans la barre d’outils, sélectionnez **[!UICONTROL Exporter les métadonnées]**.
 1. Dans la boîte de dialogue Exportation des métadonnées, indiquez un nom pour le fichier CSV. Pour exporter des métadonnées des ressources dans les sous-dossiers, sélectionnez **[!UICONTROL Inclure les ressources dans les sous-dossiers]**.
