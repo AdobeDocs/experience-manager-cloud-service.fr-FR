@@ -2,9 +2,9 @@
 title: Guide de prise en main du développeur pour la création AEM avec des Edge Delivery Services
 description: Ce guide vous permet de maîtriser l’exécution d’un nouveau site Adobe Experience Manager à l’aide d’Edge Delivery Services et d’Universal Editor pour la création de contenu.
 feature: Edge Delivery Services
-source-git-commit: eae751441435949296eb76a7e9b4103393860a8d
+source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,6 @@ Vous devez d’abord créer un projet sur GitHub, basé sur le modèle d’Adobe
    ![Copie du projet de référentiel](assets/edge-dev-getting-started/use-template-project.png)
 
 1. Par défaut, le référentiel vous sera affecté. Modifiez ce paramètre selon les besoins. Saisissez un nom et une description pour le référentiel, puis cliquez sur **Créer un référentiel**.
-
-   * Le référentiel doit être **Public**.
 
    ![Création du référentiel](assets/edge-dev-getting-started/create-repo.png)
 
