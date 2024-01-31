@@ -1,95 +1,298 @@
 ---
-title: Types de champs
-description: Découvrez les différents types de champs que l’éditeur universel peut modifier dans le rail de composants avec des exemples d’utilisation de votre propre application.
+title: Définition des modèles, champs et types de composants
+description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 7%
+source-wordcount: '1000'
+ht-degree: 11%
 
 ---
 
 
-# Types de champs {#field-types}
+# Définition des modèles, champs et types de composants {#field-types}
 
-Découvrez les différents types de champs que l’éditeur universel peut modifier dans le rail de composants avec des exemples d’utilisation de votre propre application.
+Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 
 {{universal-editor-status}}
 
 ## Vue d’ensemble {#overview}
 
-Lorsque vous adaptez vos propres applications pour les utiliser avec l’éditeur universel, vous devez instrumenter les composants et définir les types de données qu’ils peuvent manipuler dans le rail des composants de l’éditeur.
+Lorsque vous adaptez vos propres applications pour les utiliser avec l’éditeur universel, vous devez instrumenter les composants et définir les champs et les types de composants qu’ils peuvent manipuler dans le rail des propriétés de l’éditeur. Pour ce faire, créez un modèle et liez-le à partir du composant.
 
-Ce document présente un aperçu des types de champ disponibles, ainsi que des exemples de configuration.
+Ce document présente la définition d’un modèle, ainsi que les champs et les types de composants disponibles, avec des exemples de configuration.
 
 >[!TIP]
 >
 >Si vous ne savez pas comment utiliser votre application pour l’éditeur universel, consultez le document . [Présentation d’Universal Editor pour AEM Developers.](/help/implementing/universal-editor/developer-overview.md)
 
-## Booléen {#boolean}
+## Structure de la définition de modèle {#model-structure}
 
-Un champ booléen stocke une simple valeur true/false rendue en tant que case à cocher.
+Pour configurer un composant via le rail de propriétés de l’éditeur universel, une définition de modèle doit exister et être liée au composant.
 
-### Échantillon {#sample-boolean}
+La définition de modèle est une structure JSON, commençant par un tableau de modèles.
+
+```json
+[
+  {
+    "id": "model-id",        // must be unique
+    "fields": []             // array of fields which shall be rendered in the properties rail
+  }
+]
+```
+
+Voir **[Champs](#fields)** section de ce document pour plus d’informations sur la définition de votre `fields` tableau.
+
+Pour utiliser la définition de modèle avec un composant, la méthode `data-aue-model` peut être utilisé.
+
+```html
+<div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
+```
+
+## Chargement d’une définition de modèle {#loading-model}
+
+Une fois créé, un modèle peut être référencé en tant que fichier externe.
+
+```html
+<script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
+```
+
+Vous pouvez également définir le modèle intégré.
+
+```html
+<script type="application/vnd.adobe.aue.model+json">
+  { ... model definition ... }
+</script>
+```
+
+## Champs {#fields}
+
+Un objet de champ possède la définition de type suivante.
+
+| Configuration | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `component` | `ComponentType` | Rendu du composant | Oui |
+| `name` | `string` | Propriété où les données doivent être conservées | Oui |
+| `label` | `FieldLabel` | Libellé du champ | Oui |
+| `description` | `FieldDescription` | Description du champ | Non |
+| `placeholder` | `string` | Espace réservé pour le champ | Non |
+| `value` | `FieldValue` | Valeur par défaut | Non |
+| `valueType` | `ValueType` | La validation standard peut être `string`, `string[]`, `number`, `date`, `boolean` | Non |
+| `required` | `boolean` | Le champ est-il obligatoire ? | Non |
+| `readOnly` | `boolean` | Le champ est-il en lecture seule ? | Non |
+| `hidden` | `boolean` | Le champ est-il masqué par défaut ? | Non |
+| `condition` | `RulesLogic` | Règle pour afficher ou masquer le champ | Non |
+| `multi` | `boolean` | Le champ est-il un champ multiple ? | Non |
+| `validation` | `ValidationType` | Règle ou règles de validation du champ | Non |
+| `raw` | `unknown` | Données brutes pouvant être utilisées par le composant | Non |
+
+### Types de composants {#component-types}
+
+Vous trouverez ci-dessous les types de composants que vous pouvez utiliser pour les champs de rendu.
+
+#### AEM balise {#aem-tag}
+
+Un type de composant de balise AEM active un sélecteur de balise AEM, qui peut être utilisé pour joindre des balises au composant.
+
+##### Échantillon {#sample-aem-tag}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "aem-tag-picker",
+  "fields": [
+    {
+      "component": "aem-tag",
+      "label": "AEM Tag Picker",
+      "name": "cq:tags",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### Capture d’écran {#screenshot-aem-tag}
+
+![Capture d’écran du type de composant de balise AEM](assets/component-types/aem-tag-picker.png)
+
+#### Contenu AEM {#aem-content}
+
+Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peut être utilisé pour définir des références de contenu.
+
+##### Échantillon {#sample-aem-content}
+
+```json
+{
+  "id": "aem-content-picker",
+  "fields": [
+    {
+      "component": "aem-content",
+      "name": "reference",
+      "value": "",
+      "label": "AEM Content Picker",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### Capture d’écran {#screenshot-aem-content}
+
+![Capture d’écran du type de composant de contenu AEM](assets/component-types/aem-content-picker.png)
+
+#### Booléen {#boolean}
+
+Un type de composant booléen stocke une simple valeur true/false rendue en tant que basculement. Il offre un type de validation supplémentaire.
+
+| Type de validation | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `customErrorMsg` | `string` | Message qui s&#39;affiche si la valeur saisie n&#39;est pas une valeur booléenne | Non |
+
+##### Échantillon {#sample-boolean}
+
+```json
+{
+  "id": "boolean",
+  "fields": [
+    {
       "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
+      "valueType": "boolean"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-boolean",
+  "fields": [
+    {
+      "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
       "valueType": "boolean",
-      "name": "field1",
-      "label": "Boolean Field",
-      "description": "This is a boolean field.",
-      "required": true,
-      "placeholder": null,
       "validation": {
-        "customErrorMsg": "This is an error."
+        "customErrorMsg": "Think, McFly. Think!"
       }
     }
   ]
 }
 ```
 
-## Groupe de cases à cocher {#checkbox-group}
+##### Capture d’écran {#screenshot-boolean}
 
-Tout comme une valeur booléenne, un groupe de cases à cocher permet de sélectionner plusieurs éléments true/false.
+![Capture d’écran du type de composant booléen](assets/component-types/boolean.png)
 
-### Échantillon {#sample-checkbox-group}
+#### Groupe de cases à cocher {#checkbox-group}
+
+Tout comme une valeur booléenne, un type de composant de groupe de cases à cocher permet de sélectionner plusieurs éléments true/false, rendus sous la forme de plusieurs cases à cocher.
+
+##### Échantillon {#sample-checkbox-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "checkbox-group",
+  "fields": [
+    {
       "component": "checkbox-group",
-      "valueType": "string-array",
-      "name": "field1",
       "label": "Checkbox Group",
-      "description": "This is a checkbox group.",
-      "required": true,
-      "placeholder": null,
+      "name": "checkbox",
+      "valueType": "string[]",
       "options": [
-        { "name": "First option", "value": "one" },
-        { "name": "Second option", "value": "two" },
-        { "name": "Third option", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## Heure de date {#date-time}
+#### Capture d’écran {#screenshot-checkbox-group}
 
-Un champ de date et d’heure permet de spécifier une date ou une heure, ou une combinaison de dates.
+![Capture d’écran du type de composant Groupe de cases à cocher](assets/component-types/checkbox-group.png)
 
-### Échantillon {#sample-date-time}
+#### Conteneur {#container}
+
+Un type de composant de conteneur permet le regroupement de composants. Il propose une configuration supplémentaire.
+
+| Configuration | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `collapsible` | `boolean` | Le conteneur est-il réductible ? | Non |
+
+##### Échantillon {#sample-container}
+
+```json
+ {
+  "id": "container",
+  "fields": [
+    {
+      "component": "container",
+      "label": "Container",
+      "name": "container",
+      "valueType": "string",
+      "collapsible": true,
+      "fields": [
+        {
+          "component": "text-input",
+          "label": "Simple Text 1",
+          "name": "text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "label": "Simple Text 2",
+          "name": "text2",
+          "valueType": "string"
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### Capture d’écran {#screenshot-container}
+
+![Capture d’écran du type de composant de conteneur](assets/component-types/container.png)
+
+#### Heure de date {#date-time}
+
+Un type de composant de date et d’heure permet de spécifier une date, une heure ou une combinaison de celles-ci. Il propose des configurations supplémentaires.
+
+| Configuration | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `displayFormat` | `string` | Format avec lequel afficher la chaîne de date | Oui |
+| `valueFormat` | `string` | Format dans lequel stocker la chaîne de date | Oui |
+
+Il propose également un type de validation supplémentaire.
+
+| Type de validation | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `customErrorMsg` | `string` | Message qui s’affiche si `valueFormat` n&#39;est pas satisfait | Non |
+
+##### Échantillon {#sample-date-time}
 
 ```json
 {
-  "fields": [   
-      {
+  "id": "date-time",
+  "fields": [
+    {
       "component": "date-time",
-      "valueType": "date-time",
+      "label": "Date & Time",
+      "name": "date",
+      "valueType": "date"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-date-time",
+  "fields": [
+    {
+      "component": "date-time",
+       "valueType": "date-time",
       "name": "field1",
       "label": "Date Time",
       "description": "This is a date time field that stores both date and time.",
@@ -133,15 +336,103 @@ Un champ de date et d’heure permet de spécifier une date ou une heure, ou une
 }
 ```
 
-## Nombre {#number}
+##### Capture d’écran {#screenshot-date-time}
 
-Un champ de nombre permet la saisie d’un nombre.
+![Capture d’écran du type de composant d’heure de date](assets/component-types/date-time.png)
 
-### Échantillon {#sample-number}
+#### Multisélection {#multiselect}
+
+Un type de composant à sélection multiple présente plusieurs éléments à sélectionner dans une liste déroulante, notamment la possibilité de regrouper les éléments sélectionnables.
+
+##### Exemples {#sample-multiselect}
 
 ```json
 {
-  "fields": [   
+  "id": "multiselect",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "multiselect",
+      "label": "Multi Select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "multiselect-grouped",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "property",
+      "label": "Multiselect field",
+      "valueType": "string",
+      "required": true,
+      "maxSize": 2,
+      "options": [
+        {
+          "name": "Theme",
+          "children": [
+            { "name": "Light", "value": "light" },
+            { "name": "Dark",  "value": "dark" }
+          ]
+        },
+        {
+          "name": "Type",
+          "children": [
+            { "name": "Alpha", "value": "alpha" },
+            { "name": "Beta", "value": "beta" },
+            { "name": "Gamma", "value": "gamma" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### Captures d’écran {#screenshot-multiselect}
+
+![Capture d’écran du type de composant à sélection multiple](assets/component-types/multiselect.png)
+![Capture d’écran du type de composant à sélection multiple avec regroupement](assets/component-types/multiselect-group.png)
+
+#### Nombre {#number}
+
+Un type de composant numérique permet la saisie d’un nombre. Il offre des types de validation supplémentaires.
+
+| Type de validation | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `numberMin` | `number` | Nombre minimum autorisé | Non |
+| `numberMax` | `number` | Nombre maximal autorisé | Non |
+| `customErrorMsg` | `string` | Message qui s’affiche si `numberMin` ou `numberMax` n&#39;est pas satisfait | Non |
+
+##### Échantillon {#sample-number}
+
+```json
+{
+  "id": "number",
+  "fields": [
+    {
+      "component": "number",
+      "name": "number",
+      "label": "Number",
+      "valueType": "number",
+      "value": 0
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-number",
+  "fields": [
    {
       "component": "number",
       "valueType": "number",
@@ -151,189 +442,239 @@ Un champ de nombre permet la saisie d’un nombre.
       "required": true,
       "placeholder": null,
       "validation": {
-        "numberMin": null,
-        "numberMax": null,
-        "customErrorMsg": "Please don't do that."
+        "numberMin": 0,
+        "numberMax": 88,
+        "customErrorMsg": "You also need 1.21 gigawatts."
       }
     }
   ]
 }
 ```
 
-## Groupe de cases d’option {#radio-group}
+##### Capture d’écran {#screenshot-number}
 
-Un groupe de cases d’option permet une sélection mutuellement exclusive à partir de plusieurs options rendues sous la forme d’un groupe semblable à un groupe de cases à cocher.
+![Capture d’écran du type de composant numérique](assets/component-types/number.png)
 
-### Échantillon {#sample-radio-group}
+#### Groupe de cases d’option {#radio-group}
+
+Un type de composant de groupe de cases d’option permet une sélection mutuellement exclusive de plusieurs options rendues sous la forme d’un groupe semblable à un groupe de cases à cocher.
+
+##### Échantillon {#sample-radio-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "radio-group",
+  "fields": [
+    {
       "component": "radio-group",
-      "valueType": "string",
-      "name": "field1",
       "label": "Radio Group",
-      "description": "This is a radio group.",
-      "required": true,
-      "placeholder": null,
+      "name": "radio",
+      "valueType": "string",
       "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## Référence {#reference}
+##### Capture d’écran {#screenshot-radio-group}
 
-Une référence permet de spécifier un autre objet de données comme référence à partir de l’objet actif.
+![Capture d’écran du type de composant Groupe radio](assets/component-types/radio.png)
 
-## Sélectionner {#select}
+#### Référence {#reference}
 
-Une sélection permet de sélectionner une ou plusieurs options prédéfinies dans un menu déroulant.
+Un type de composant de référence permet une référence à un autre objet de données de l’objet actif.
 
-### Échantillon {#sample-select}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "select",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Select",
-      "description": "This is a select.",
-      "required": true,
-      "placeholder": null,
-      "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
-      ],
-      "emptyOption": true
-    }
-  ]
-}
-```
-
-## Zone de texte {#text-area}
-
-Une zone de texte permet la saisie de texte multiligne.
-
-### Échantillon {#sample-text-area}
+##### Échantillon {#sample-reference}
 
 ```json
 {
-  "fields": [   
-   {
-      "component": "text-area",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Area",
-      "description": "This is a text area.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "mimeType": "text/x-markdown"
-    }
-  ]
-}
-```
-
-## Entrée de texte {#text-input}
-
-Une saisie de texte permet de saisir une seule ligne de texte.
-
-### Échantillon {#sample-text-input}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Input",
-      "description": "This is a text input.",
-      "required": true,
-      "multi": true,
-      "placeholder": null
-    },
+  "id": "reference",
+  "fields": [
     {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field2",
-      "label": "Another Text Input",
-      "description": "This is a text input with validation.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "validation": {
-        "minLength": 5,
-        "maxLength": 10,
-        "regExp": "^foo:.*",
-        "customErrorMsg": "I'm sorry, Dave. I can't do that."
-      }
+      "component": "reference",
+      "label": "Reference",
+      "name": "reference",
+      "valueType": "string"
     }
   ]
 }
 ```
 
-## Tabulation {#tab}
+##### Capture d’écran {#screenshot-reference}
 
-Un onglet vous permet de regrouper d’autres champs de saisie sur plusieurs onglets afin d’améliorer l’organisation de la mise en page pour les auteurs.
+![Capture d’écran du type de composant de référence](assets/component-types/reference.png)
+
+#### Sélectionner {#select}
+
+Un type de composant sélectionné permet de sélectionner une seule option dans une liste d’options prédéfinies d’un menu déroulant.
+
+##### Échantillon {#sample-select}
+
+```json
+{
+  "id": "select",
+  "fields": [
+    {
+      "component": "select",
+      "label": "Select",
+      "name": "select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+##### Capture d’écran {#screenshot-select}
+
+![Capture d’écran du type de composant sélectionné](assets/component-types/select.png)
+
+#### Tabulation {#tab}
+
+Un type de composant Onglets vous permet de regrouper d’autres champs de saisie sur plusieurs onglets afin d’améliorer l’organisation de la mise en page pour les auteurs.
 
 A `tab` peut être considérée comme un séparateur dans le tableau de `fields`. Tout ce qui vient après une `tab` sera placé sur cet onglet jusqu’à ce qu’un nouveau `tab` se produit, où les éléments suivants seront placés sur le nouvel onglet.
 
 Si vous souhaitez que les éléments apparaissent au-dessus de tous les onglets, ils doivent être définis avant les onglets.
 
-### Échantillon {#sample-tab}
+##### Échantillon {#sample-tab}
 
 ```json
 {
-  "id": "title",
+  "id": "tab",
   "fields": [
     {
       "component": "tab",
-      "label": "Tab",
+      "label": "Tab 1",
       "name": "tab1"
     },
     {
       "component": "text-input",
-      "name": "tab-response",
-      "value": "",
-      "placeholder": "Tab? I can't give you a tab unless you order something.",
-      "label": "Lou",
+      "label": "Text 1",
+      "name": "text1",
       "valueType": "string"
     },
     {
       "component": "tab",
-      "label": "Pepsi Free",
+      "label": "Tab 2",
       "name": "tab2"
     },
     {
       "component": "text-input",
-      "name": "pepsi-free-response",
-      "value": "",
-      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
-      "label": "Mr. Carruthers",
+      "label": "Text 2",
+      "name": "text2",
       "valueType": "string"
-    },
-    {
-      "component": "select",
-      "name": "without-sugar",
-      "value": "coffee",
-      "label": "Something without sugar",
-      "valueType": "string",
-      "options": [
-        { "name": "Coffee", "value": "coffee" },
-        { "name": "Hot Coffee", "value": "hot-coffee" },
-        { "name": "Hotter Coffee", "value": "hotter-coffee" }
-      ]
     }
   ]
 }
 ```
+
+##### Capture d’écran {#screenshot-tab}
+
+![Capture d’écran du type de composant Onglet](assets/component-types/tab.png)
+
+#### Zone de texte {#text-area}
+
+Une zone de texte permet une saisie de texte enrichi multiligne. Il offre des types de validation supplémentaires.
+
+| Type de validation | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `maxSize` | `number` | Nombre maximal de caractères autorisés | Non |
+| `customErrorMsg` | `string` | Message qui s’affiche si `maxSize` est dépassé | Non |
+
+##### Échantillon {#sample-text-area}
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+##### Capture d’écran {#screenshot-text-area}
+
+![Capture d’écran du type de composant Zone de texte](assets/component-types/richtext.png)
+
+#### Entrée de texte {#text-input}
+
+Une saisie de texte permet de saisir une seule ligne de texte.  Elle comprend des types de validation supplémentaires.
+
+| Type de validation | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `minLength` | `number` | Nombre minimum de caractères autorisés | Non |
+| `maxLength` | `number` | Nombre maximal de caractères autorisés | Non |
+| `regExp` | `string` | Expression régulière à laquelle le texte d’entrée doit correspondre | Non |
+| `customErrorMsg` | `string` | Message qui s’affiche si `minLength`, `maxLength`, et/ou `regExp` est/sont violées | Non |
+
+##### Échantillon {#sample-text-input}
+
+```json
+{
+  "id": "simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string",
+      "description": "This is a text input with validation.",
+      "required": true,
+      "validation": {
+        "minLength": 1955,
+        "maxLength": 1985,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
+      }
+    }
+  ]
+}
+```
+
+##### Capture d’écran {#screenshot-text-input}
+
+![Capture d’écran du type de composant de saisie de texte](assets/component-types/simpletext.png)
