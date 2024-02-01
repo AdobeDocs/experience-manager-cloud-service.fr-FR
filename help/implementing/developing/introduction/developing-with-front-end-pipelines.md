@@ -2,10 +2,10 @@
 title: Développer des sites avec le pipeline front-end
 description: Grâce au pipeline front-end, les développeurs et développeuses front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certains éléments particuliers du processus de création front-end qui doivent être pris en compte.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
+source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 98%
+source-wordcount: '1169'
+ht-degree: 90%
 
 ---
 
@@ -20,17 +20,22 @@ ht-degree: 98%
 
 ## Contrat de création front-end {#front-end-build-contract}
 
-Tout comme l’[environnement de création full-stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) le pipeline front-end possède son propre environnement. Les développeurs et développeuses disposent d’une certaine flexibilité dans ce pipeline tant que le contrat de création front-end suivant est respecté.
+Tout comme l’[environnement de création full-stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) le pipeline front-end possède son propre environnement. Les développeurs disposent d’une certaine flexibilité à l’aide de ce pipeline tant que le contrat de version front-end suivant est respecté.
 
-Le pipeline front-end requiert le projet front-end Node.js pour utiliser la directive de script `build` afin de générer la version déployée par le pipeline front-end. C’est-à-dire que Cloud Manager utilise la commande `npm run build` pour générer le projet déployable dans le dossier `dist`.
+Le pipeline front-end requiert le projet front-end Node.js pour utiliser la variable `build` directive de script pour générer la version qu’il déploie. En effet, Cloud Manager utilise la commande . `npm run build` pour générer le projet déployable pour la version front-end.
 
-Le contenu du dossier `dist` est ce qui est finalement déployé vers AEM as a Cloud Service à partir du pipeline Cloud Manager.
+Le contenu obtenu de la variable `dist` est ce qui est finalement déployé par Cloud Manager, en les traitant comme des fichiers statiques. Ces fichiers sont hébergés en externe sur AEM, mais sont disponibles via un `/content/...` URL de l’environnement déployé.
 
-### Versions de Node {#node-versions}
+## Versions de Node {#node-versions}
 
-Par défaut, le pipeline front-end utilise le noeud 14, mais les versions 12, 16 et 18 sont également disponibles.
+L’environnement de génération front-end prend en charge les versions suivantes de Node.js.
 
-Vous pouvez utiliser la variable d’environnement `NODE_VERSION` pour définir la version souhaitée.
+* 12
+* 14 (par défaut)
+* 16
+* 18
+
+Vous pouvez utiliser la variable `NODE_VERSION` [variable d&#39;environnement](/help/implementing/cloud-manager/environment-variables.md) pour définir la version souhaitée.
 
 ## Source unique de vérité {#single-source-of-truth}
 
