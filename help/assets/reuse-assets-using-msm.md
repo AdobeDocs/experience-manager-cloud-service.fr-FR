@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
 workflow-type: tm+mt
-source-wordcount: '3403'
+source-wordcount: '3400'
 ht-degree: 99%
 
 ---
@@ -248,8 +248,8 @@ Pour afficher les états et les informations liés à une action de synchronisat
 Vous pouvez annuler l’héritage de la Live Copy pour :
 
 * un champ de métadonnées ;
-* une variation de fragment de contenu ;
-* un champ de données de fragment de contenu
+* [une variation de fragment de contenu ;](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [un champ de données de fragment de contenu](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
 Cela signifie que l’élément n’est plus synchronisé avec le composant source. Vous pouvez activer l’héritage ultérieurement, si nécessaire.
 
