@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: a616b27c5212b00d3b51778402ed52a68028fdaf
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 26%
+source-wordcount: '2189'
+ht-degree: 25%
 
 ---
 
@@ -155,7 +155,7 @@ Vous pouvez également choisir d’émuler un appareil mobile et dans l’édite
 
 En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtrait sur votre service publié. Cela permet à l’auteur de contenu de parcourir le contenu en cliquant sur des liens, etc.
 
-![Mode Aperçu](assets/preview-mode.png)
+![Mode Aperçu.](assets/preview-mode.png)
 
 >[!TIP]
 >
@@ -295,11 +295,14 @@ En outre, des détails sur votre texte sont disponibles dans le rail de proprié
 
 Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fois sur le composant.
 
-Appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour enregistrer vos modifications.
-
 ![Modification d’un composant de texte enrichi](assets/rich-text-editing.png)
 
-En outre, les options de mise en forme et les détails de votre texte sont disponibles dans le rail des propriétés. Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le rail des propriétés.
+Pour votre commodité, les options de mise en forme et les détails de votre texte sont disponibles à deux endroits.
+
+* La variable **menu contextuel** s’ouvre au-dessus du bloc de texte enrichi et propose des options de mise en forme de base en contexte. En raison des restrictions d’espace, certaines options peuvent être masquées derrière le bouton représentant des points de suspension.
+* La variable **rail des propriétés** affiche toutes les options de formatage disponibles avec le texte.
+
+Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié.
 
 ### Modification du média {#edit-media}
 
