@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: d2090fd8bee3ec3d25eb3a00925a61404d2f8b8d
 workflow-type: tm+mt
-source-wordcount: '4635'
+source-wordcount: '4630'
 ht-degree: 98%
 
 ---
@@ -1056,7 +1056,6 @@ ht-degree: 98%
       + [Extension des fragments d’expérience](/help/implementing/developing/extending/experience-fragments.md)
       + [Personnalisation et extensions de fragments de contenu](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [Personnaliser la console Fragments de contenu](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + [Personnalisation de la console de fragments de contenu et de l’éditeur](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + Gestion des formulaires de recherche {#manage-search-forms}
          + [Configuration des formulaires de recherche](/help/implementing/developing/extending/search-forms.md)
