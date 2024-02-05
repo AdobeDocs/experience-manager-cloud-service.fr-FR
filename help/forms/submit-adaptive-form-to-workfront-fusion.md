@@ -6,14 +6,14 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
+source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# Envoyer un formulaire adaptatif à Adobe Workfront Fusion
+# Envoyer un formulaire adaptatif à Adobe Workfront Fusion
 
 <span class="preview"> La fonctionnalité est disponible sous le programme des premiers adopteurs. Vous pouvez écrire à aem-forms-early-adopter-program@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité. </span>
 
@@ -22,6 +22,7 @@ ht-degree: 3%
 Par exemple, avec Workfront Fusion, vous pouvez créer un scénario pour rassembler des données avec le formulaire adaptatif, traiter les données et envoyer les données à un entrepôt de données en vue de les archiver. Une fois qu’un scénario est configuré, Workfront Fusion exécute automatiquement les tâches chaque fois qu’un utilisateur remplit un formulaire, en mettant à jour facilement l’entrepôt de données.
 
 AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Pour en savoir plus sur ces options, voir [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)  article.
+
 
 ## Avantages de l’utilisation d’Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
