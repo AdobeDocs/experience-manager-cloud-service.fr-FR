@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: deed2af943290bfab0a20b50083e2a741e7e8dfe
+source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
 workflow-type: tm+mt
-source-wordcount: '4623'
-ht-degree: 94%
+source-wordcount: '4635'
+ht-degree: 98%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 94%
    + [Terminologie – Nouveaux termes pour le cloud](/help/overview/terminology.md)
    + [Présentation de l’architecture d’AEM as a Cloud Service](/help/overview/architecture.md)
    + [Gestion de l’optimisation du moteur de recherche et des URL](/help/overview/seo-and-url-management.md)
-   + [AEM as a Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
-   + [Évaluation des indicateurs de performance clés](/help/overview/assessing-kpis.md)
-   + [Alignement des indicateurs de performance clés](/help/overview/aligning-kpis.md)
+   + [AEM as a Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
+   + [Évaluer les KPI](/help/overview/assessing-kpis.md)
+   + [Aligner des KPI](/help/overview/aligning-kpis.md)
    + [Choix de la bonne équipe](/help/overview/choose-right-team.md)
    + [Parcours de documentation](/help/journey-documentation/documentation-journeys.md)
 + Notes de mise à jour {#release-notes}
@@ -179,7 +179,7 @@ ht-degree: 94%
 + Intégration {#onboarding}
    + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)
    + Parcours d’intégration {#journey}
-      + [Présentation du parcours d’intégration](/help/journey-onboarding/overview.md)
+      + [Vue d’ensemble du parcours d’intégration](/help/journey-onboarding/overview.md)
       + [Préparation à l’intégration](/help/journey-onboarding/preparation.md)
       + [Terminologie d’AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
@@ -385,7 +385,7 @@ ht-degree: 94%
       + [Administration des workflows](/help/sites-cloud/administering/workflows-administering.md)
    + Intégration d’AEM as a Cloud Service {#integrations}
       + [Intégration à Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
-      + [Intégration à la configuration automatisée d’Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Intégration à la configuration automatisée d’Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Intégration à Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
@@ -581,7 +581,7 @@ ht-degree: 94%
          + [Intégrer AEM Forms as a Cloud Service à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Intégration de Forms adaptatif à Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Affichage et compréhension du rapport Analyses de Forms adaptatif](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Envoyer un formulaire adaptatif à Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Envoyer un formulaire adaptatif à Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Intégrer un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporer un formulaire adaptatif dans une page AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incorporer un formulaire adaptatif basé sur les composants principaux à une page web externe](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
@@ -678,6 +678,9 @@ ht-degree: 94%
       + [Utiliser Forms Designer pour créer des modèles](/help/forms/use-forms-designer.md)
       + [Utilisation des polices personnalisées dans les documents PDF](/help/forms/use-custom-fonts.md)
       + [Problèmes connus, bonnes pratiques et questions fréquemment posées](/help/forms/communications-known-issues-limitations.md)
+   + Rapports de transaction {#using-communications}
+      + [API de rapports de transactions facturables](/help/forms/transaction-reports-billable-apis.md)
+      + [Enregistrer une transaction pour les implémentations personnalisées](/help/forms/record-transaction-custom-implementation.md)
    + Référence de l’API du développeur {#aem-forms-developer-api-reference}
       + [Référence de l’API Adaptive Forms](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Référence de l’API Communications du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -761,51 +764,51 @@ ht-degree: 94%
    + [Migration](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [AEM et Edge Delivery Services](/help/edge/overview.md)
-   + [Utiliser Edge Delivery](/help/edge/using.md)
-   + [Création de contenu pour une diffusion Edge](/help/edge/authoring.md)
-   + [Publication de contenu pour la diffusion Edge](/help/edge/publishing.md)
-   + [Développement pour la diffusion Edge](/help/edge/developing.md)
-   + [Projets existants et diffusion Edge](/help/edge/existing-projects.md)
+   + [AEM et Edge Delivery Services](/help/edge/overview.md)
+   + [Utiliser Edge Delivery](/help/edge/using.md)
+   + [Créer du contenu pour Edge Delivery](/help/edge/authoring.md)
+   + [Publier du contenu pour Edge Delivery](/help/edge/publishing.md)
+   + [Développer pour Edge Delivery](/help/edge/developing.md)
+   + [Projets existants et Edge Delivery](/help/edge/existing-projects.md)
    + [Guide de prise en main du développeur](/help/edge/edge-dev-getting-started.md)
-   + Création d’applications de diffusion Edge {#build}
-      + [Prise en main - Tutoriel du développeur](/help/edge/developer/tutorial.md)
+   + Créer des applications Edge Delivery {#build}
+      + [Prise en main – Tutoriel pour l’équipe de développement](/help/edge/developer/tutorial.md)
       + [Anatomie d’un projet](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [Collection de bloc](/help/edge/developer/block-collection.md)
+      + [Collection de blocs](/help/edge/developer/block-collection.md)
       + [Feuilles de calcul](/help/edge/developer/spreadsheets.md)
-      + [Forms](/help/edge/developer/forms.md)
+      + [Formulaires](/help/edge/developer/forms.md)
       + [Indexation](/help/edge/developer/indexing.md)
-      + [Le garder 100](/help/edge/developer/keeping-it-100.md)
-      + [Balisage - Sections](/help/edge/developer/markup-sections-blocks.md)
+      + [Maintien d’un score de 100](/help/edge/developer/keeping-it-100.md)
+      + [Balisage – Sections](/help/edge/developer/markup-sections-blocks.md)
       + [Favicon](/help/edge/developer/favicon.md)
       + [En-têtes personnalisés](/help/edge/docs/custom-headers.md)
-      + [Bonnes pratiques pour les développeurs](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Publication d’applications de diffusion Edge {#publish}
+      + [Bonnes pratiques pour l’équipe de développement](/help/edge/docs/dev-collab-and-good-practices.md)
+   + Publier des applications Edge Delivery {#publish}
       + [Création](/help/edge/docs/authoring.md)
       + [Métadonnées en bloc](/help/edge/docs/bulk-metadata.md)
       + [Espaces réservés](/help/edge/docs/placeholders.md)
       + [Plan du site](/help/edge/developer/sitemap.md)
       + [Configuration de SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
       + [Robot Slack](/help/edge/docs/slack.md)
-   + Lancement d’applications de diffusion Edge {#launch}
-      + [Go Live Checklist](/help/edge/docs/go-live-checklist.md)
+   + Lancement d’applications Edge Delivery {#launch}
+      + [Liste de contrôle de mise en production](/help/edge/docs/go-live-checklist.md)
       + [Invalidation push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
-      + [Configuration du traitement du cloud](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+      + [Configuration de programmes de travail Cloudfare](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Configuration d’Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Configuration rapide](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [Configuration de Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Redirections](/help/edge/docs/redirects.md)
-   + Ressources pour la diffusion Edge {#resources}
+   + Ressources pour Edge Delivery {#resources}
       + Sidekick {#sidekick}
-         + [Utilisation de Sidekick](/help/edge/docs/sidekick.md)
-         + [Installation de l’extension](/help/edge/docs/sidekick-extension.md)
+         + [Utiliser Sidekick](/help/edge/docs/sidekick.md)
+         + [Installer l’extension](/help/edge/docs/sidekick-extension.md)
          + [Configurateur de projet](https://www.aem.live/tools/sidekick/)
          + [Bibliothèque de Sidekick](/help/edge/docs/sidekick-library.md)
       + [FAQ](/help/edge/docs/faq.md)
-      + [API d’administration](https://www.aem.live/docs/admin.html)
-      + [État AEM](https://www.aemstatus.net)
+      + [API Admin](https://www.aem.live/docs/admin.html)
+      + [Statut AEM](https://www.aemstatus.net)
       + Outils {#tools}
-         + [Extension Sidekick Chrome](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Github Robt](https://github.com/apps/aem-code-sync)
+         + [Extension Chrome Sidekick](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Robot Github](https://github.com/apps/aem-code-sync)
          + [Journal d’audit](/help/edge/docs/auditlog.md)
 + Découplé {#headless}
    + [Qu’est-ce qu’un CMS Headless ?](/help/headless/what-is-headless.md)
@@ -836,14 +839,14 @@ ht-degree: 94%
       + [Optimisation des requêtes GraphQL.](/help/headless/graphql-api/graphql-optimization.md)
       + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Exemples de requêtes GraphQL](/help/headless/graphql-api/sample-queries.md)
-      + [Dépannage des requêtes GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
+      + [Résolution de problèmes liés aux requêtes GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [API REST de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
    + Sécurité {#security}
       + [Autorisations](/help/headless/security/permissions.md)
       + [Authentification](/help/headless/security/authentication.md)
    + Déploiement {#deployment}
       + [Architecture](/help/headless/deployment/architecture.md)
-      + [Dispatcher - Points de terminaison](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher – Points d’entrée](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - Activation de la mise en cache pour les requêtes persistantes](/help/headless/deployment/dispatcher-caching.md)
       + [Configuration CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtre Référent](/help/headless/deployment/referrer-filter.md)
@@ -1118,10 +1121,10 @@ ht-degree: 94%
       + [Publication de contenu avec l’éditeur universel](/help/implementing/universal-editor/publishing.md)
    + Développement {#developing}
       + [Prise en main de l’éditeur universel dans AEM](/help/implementing/universal-editor/getting-started.md)
-      + [Présentation du développeur de l’éditeur universel](/help/implementing/universal-editor/developer-overview.md)
-      + [Attributs et types d’éléments](/help/implementing/universal-editor/attributes-types.md)
+      + [Vue d’ensemble de développement de l’éditeur universel](/help/implementing/universal-editor/developer-overview.md)
+      + [Attributs et types d’élément](/help/implementing/universal-editor/attributes-types.md)
       + [Définition des modèles, champs et types de composants](/help/implementing/universal-editor/field-types.md)
       + [Authentification de l’éditeur universel](/help/implementing/universal-editor/authentication.md)
       + [Développement d’AEM locales avec l’éditeur universel](/help/implementing/universal-editor/local-dev.md)
-      + [Appels universels de l’éditeur](/help/implementing/universal-editor/calls.md)
+      + [Appels de l’éditeur universel](/help/implementing/universal-editor/calls.md)
       + [Personnalisation de l’interface utilisateur](/help/implementing/universal-editor/customizing.md)
