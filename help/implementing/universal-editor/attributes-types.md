@@ -1,11 +1,11 @@
 ---
-title: Attributs et types d’éléments
+title: Attributs et types d’élément
 description: Découvrez les attributs de données et les types d’éléments requis par Universal Editor.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: ff8a832d61e42ac17ca37e5a3c41e39119879af6
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -30,11 +30,11 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 |---|---|
 | `data-aue-resource` | URN de la ressource : consultez la section [Instrumenter la page du document Prise en main de l’éditeur universel dans AEM](getting-started.md#instrument-thepage). |
 | `data-aue-prop` | Attribut de la ressource : consultez la section [Instrumenter la page du document Prise en main de l’éditeur universel dans AEM](getting-started.md#instrument-thepage). |
-| `data-aue-type` | Type de l’élément modifiable (par exemple, texte, image et référence) |
+| `data-aue-type` | [Type de l’élément modifiable](#item-types) (par exemple, texte, image et référence) |
 | `data-aue-filter` | Définit les références qui peuvent être utilisées |
 | `data-aue-label` | Définit un libellé personnalisé pour un élément sélectionnable affiché dans l’éditeur. <br>Si `itemmodel` est défini, le libellé est récupéré via le modèle. |
 | `data-aue-model` | Définit un modèle qui est utilisé pour la modification basée sur les formulaires dans le rail des propriétés |
-| `data-aue-behavior` | Définit le comportement d’une instrumentation ; par exemple, un texte ou une image autonome peut également imiter un composant pour le rendre modifiable ou pouvant être supprimé. |
+| `data-aue-behavior` | Définit la variable [le comportement d&#39;une instrumentation,](#behaviors) par exemple, le texte ou l’image autonome peut également imiter un composant pour le rendre modifiable ou pouvant être supprimé. |
 
 ## Types d’éléments {#item-types}
 
