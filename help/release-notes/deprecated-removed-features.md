@@ -3,9 +3,9 @@ title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2068'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +37,11 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | [!DNL Sites] | Propriétés des fragments d’expérience pour **Statut des médias sociaux**. | La fonctionnalité sera bientôt supprimée. |
 | [!DNL Sites] | Fragments de contenu simples basés sur des modèles. | [Fragments de contenu structuré basés sur des modèles](/help/assets/content-fragments/content-fragments-models.md) maintenant. |
 | [!DNL Assets] | Workflow `DAM Asset Update` pour traiter les images ingérées. | L’assimilation de ressources utilise maintenant les [microservices de ressources](/help/assets/asset-microservices-overview.md). |
-| [!DNL Assets] | Transfert direct de ressources vers [!DNL Experience Manager]. Voir [API de chargement de ressources obsolètes](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le [chargement de binaire direct](/help/assets/add-assets.md). Pour plus d’informations techniques, consultez [API de chargement direct](/help/assets/developer-reference-material-apis.md#upload-binary). |
+| [!DNL Assets] | Chargez des ressources directement dans [!DNL Experience Manager]. Voir [API de chargement des ressources obsolètes](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le [chargement de binaire direct](/help/assets/add-assets.md). Pour plus d’informations techniques, consultez [API de chargement direct](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Certaines étapes](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) du workflow `DAM Asset Update` ne sont pas prises en charge, notamment l’appel d’outils de ligne de commande tels que [!DNL ImageMagick]. | [Les microservices de ressources](/help/assets/asset-microservices-overview.md) remplacent de nombreux workflows. Pour le traitement personnalisé, utilisez des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les [microservices de ressources](/help/assets/asset-microservices-overview.md). Pour le transcodage FFmpeg, utilisez [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet Distribuer de l’agent de réplication (suppression après le 30 septembre 2021) | Approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Ni l’onglet Distribute de l’écran de l’administrateur de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer les packages de contenu de plus de 10 Mo. À la place, utilisez l’une des méthodes suivantes : [Gérer la publication](/help/operations/replication.md#manage-publication) ou [workflow de l’arborescence de contenu de publication](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Ni l’onglet Distribution de l’écran de l’administrateur ou de l’administratrice de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer les packages de contenu de plus de 10 Mo. Utilisez plutôt l’une des méthodes suivantes : [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [workflow Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow). |
 
 ## Fonctionnalités supprimées {#removed-features}
 
@@ -72,7 +72,7 @@ Ces règles sont validées pendant le processus de création de Cloud Manager. D
 
 Vous trouverez des informations supplémentaires sur la configuration OSGI à [cet emplacement](/help/implementing/deploying/configuring-osgi.md).
 
-+++Configurations OSGi qui ne peuvent pas être modifiées.
++++Configurations OSGi qui ne peuvent pas être modifiées.
 * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
@@ -80,7 +80,7 @@ Vous trouverez des informations supplémentaires sur la configuration OSGI à [c
 * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Date d’annonce : 25/08/2021, Date d’application : 26/11/2021)
 +++
 
-+++Configurations OSGi soumises aux règles de validation de build.
++++Configurations OSGi soumises aux règles de validation de version.
 * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * Type : entier
@@ -92,7 +92,7 @@ Vous trouverez des informations supplémentaires sur la configuration OSGI à [c
 * `org.apache.felix.eventadmin.RequireTopic`
    * Type : booléen
 * `org.apache.felix.eventadmin.IgnoreTimeout`
-   * Requis
+   * Obligatoire
    * Type : tableau de chaînes
    * Plage requise : doit inclure au moins tous les éléments `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
 * `org.apache.felix.eventadmin.IgnoreTopic`
@@ -165,7 +165,7 @@ Vous trouverez des informations supplémentaires sur la configuration OSGI à [c
       * Type : entier
       * Plage requise : >= 2048
    * `org.apache.sling.scripting.cache.additional_extensions`
-      * Requis
+      * Obligatoire
       * Type : tableau de chaînes
       * Plage requise : doit inclure js
 * **`com.day.cq.mailer.DefaultMailService`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)

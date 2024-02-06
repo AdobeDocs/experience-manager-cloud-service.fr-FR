@@ -3,9 +3,9 @@ title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Servi
    ![Démarrage du processus d’enregistrement de l’application](assets/oauth-outlook1.png)
 
 1. Renseignez les informations selon vos besoins puis cliquez sur **Enregistrement**.
-1. Accédez à l’application créée, puis sélectionnez **Autorisations d’API**.
+1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations d’API**.
 1. Cliquez sur **Ajouter une autorisation** > **Autorisation Graph** > **Autorisations déléguées**.
 1. Sélectionnez les autorisations ci-dessous pour votre application, puis cliquez sur **Ajouter une autorisation** :
 
    >[!NOTE]
    >
-   >La configuration des autorisations peut évoluer au fil du temps. Travaillez avec Microsoft s’ils ne fonctionnent pas comme prévu.
+   >La configuration des autorisations peut évoluer au fil du temps. Travaillez avec Microsoft si elles ne fonctionnent pas comme prévu.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -140,15 +140,15 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
 
    >[!NOTE]
    >
-   >Les portées peuvent évoluer au fil du temps. Travaillez avec Microsoft s’ils ne fonctionnent pas comme prévu.
+   >Les portées peuvent évoluer au fil du temps. Travaillez avec Microsoft si elles ne fonctionnent pas comme prévu.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. Création d’un fichier de propriétés OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. Les valeurs `smtp.host` et `smtp.port` correspondent à une configuration réseau avancée, comme décrit dans le [tutoriel sur le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=fr).
+1. Créez un fichier de propriétés OSGI appelé `called com.day.cq.mailer.DefaultMailService.cfg.json`
+sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe suivante : Les valeurs `smtp.host` et `smtp.port` correspondent à une configuration réseau avancée, comme décrit dans le [tutoriel sur le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=fr).
 
    ```
    {
@@ -165,8 +165,8 @@ under `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. Les val
    }
    ```
 
-1. Pour Outlook, la valeur de configuration `smtp.host` est `smtp.office365.com`
-1. Au moment de l’exécution, transmettez la variable `refreshToken values` et `clientSecret` secrets à l’aide de l’API des variables Cloud Manager, comme décrit [here](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) ou en utilisant [Cloud Manager pour ajouter des variables.](/help/implementing/cloud-manager/environment-variables.md) Les valeurs des variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  et `SECRET_SMTP_OAUTH_CLIENT_SECRET` doit être définie.
+1. Pour Outlook, la valeur de configuration `smtp.host` est `smtp.office365.com`.
+1. Au moment de l’exécution, transmettez les secrets `refreshToken values` et `clientSecret` à l’aide de l’API des variables Cloud Manager comme décrit [ici](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) ou en utilisant [Cloud Manager pour ajouter des variables.](/help/implementing/cloud-manager/environment-variables.md) Les valeurs des variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN` et `SECRET_SMTP_OAUTH_CLIENT_SECRET` doivent être définies.
 
 ### Résolution des problèmes {#troubleshooting}
 

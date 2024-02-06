@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Pour prendre en charge les opérations cryptographiques asymétriques, AEM stock
 
 ### Caractéristiques du Trust Store {#truststore-characteristics}
 
-* Le Trust Store se trouve sous `/etc/truststore` et se compose d’un fichier de stockage de clés Java, du mot de passe du stockage de clés et des métadonnées du référentiel. Le mot de passe et le KeyStore sont chiffrés pour des raisons techniques, même si les certificats contenus sont accessibles à tous par défaut via l’API.
+* Le Trust Store se trouve sous `/etc/truststore` et se compose d’un fichier de stockage de clés Java, du mot de passe du stockage de clés et des métadonnées du référentiel. Le mot de passe et le stockage de clés lui-même sont chiffrés pour des raisons techniques, même si les certificats contenus sont accessibles à toutes les personnes par défaut via l’API.
 * Les certificats prêts à l’emploi sont utilisés uniquement pour la prise en charge HTTPS et SAML et le magasin doit d’abord être créé manuellement.
 * Les clients et clientes peuvent l’utiliser dans leur propre code par l’intermédiaire de l’[API Keystore](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * Le Trust Store peut être géré via l’interface utilisateur dans **Outils** - **Sécurité** - **Trust Store** ou en accédant à *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, tel qu’illustré ci-dessous :

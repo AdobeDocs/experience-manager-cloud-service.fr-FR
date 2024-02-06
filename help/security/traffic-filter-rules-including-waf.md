@@ -3,9 +3,9 @@ title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3350'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Les règles de filtre de trafic peuvent être utilisées pour bloquer ou autoris
 
 La plupart de ces règles de filtre de trafic sont disponibles pour tous les clientes et clients d’AEM as a Cloud Service Sites et Forms. Elles fonctionnent principalement sur les propriétés de requête et les en-têtes de requête, notamment l’adresse IP, le nom d’hôte, le chemin d’accès et l’agent utilisateur.
 
-Une sous-catégorie de règles de filtrage du trafic nécessite une licence de sécurité améliorée ou une licence de protection WAF-DDoS. Ces règles puissantes sont connues sous le nom de règles de filtre de trafic WAF (pare-feu d’application web, ou règles WAF, en abrégé) et ont accès aux [Indicateurs WAF](#waf-flags-list) décrits plus loin dans cet article.
+Une sous-catégorie de règles de filtre de trafic nécessite une licence Sécurité renforcée ou une licence Protection WAF-DDoS. Ces règles puissantes sont connues sous le nom de règles de filtre de trafic WAF (pare-feu d’application web, ou règles WAF, en abrégé) et ont accès aux [Indicateurs WAF](#waf-flags-list) décrits plus loin dans cet article.
 
 Les règles de filtre de trafic peuvent être déployées par le biais de pipelines de configuration de Cloud Manager vers des types d’environnements de développement, d’évaluation et de production dans des programmes de production (hors sandbox). La prise en charge des RDE sera assurée à l’avenir.
 
@@ -33,7 +33,7 @@ Cet article comprend les sections suivantes :
 * **Vue d’ensemble de la protection du trafic :** découvrez votre protection contre le trafic malveillant.
 * **Processus suggéré pour la configuration des règles :** découvrez une méthodologie de haut niveau pour la protection de votre site web.
 * **Configuration :** découvrez comment paramétrer, configurer et déployer des règles de filtre de trafic, y compris les règles WAF avancées.
-* **Syntaxe des règles :** découvrez comment déclarer des règles de filtre de trafic dans le fichier de configuration `cdn.yaml`. Cela inclut les règles de filtrage du trafic disponibles pour tous les clients Sites et Forms, ainsi que la sous-catégorie des règles WAF pour ceux qui détiennent une licence pour cette fonctionnalité.
+* **Syntaxe des règles :** découvrez comment déclarer des règles de filtre de trafic dans le fichier de configuration `cdn.yaml`. Cela inclut les règles de filtre de trafic disponibles pour l’ensemble de la clientèle Sites et Forms, ainsi que la sous-catégorie des règles WAF pour les personnes qui détiennent une licence pour cette fonctionnalité.
 * **Exemples de règles :** consultez des exemples de règles déclarées pour vous lancer.
 * **Règles de limite de débit :** découvrez comment utiliser des règles de limitation de débit pour protéger votre site contre les attaques à volume élevé.
 * **Journaux du réseau CDN :** découvrez les règles déclarées et les indicateurs WAF qui correspondent à votre trafic.
@@ -53,7 +53,7 @@ Par défaut, Adobe prend des mesures pour empêcher la dégradation des performa
 
 Les clientes et clients peuvent prendre des mesures proactives pour limiter les attaques de couche d’application (couche 7) en configurant des règles à différents niveaux du flux de diffusion de contenu.
 
-Par exemple, au niveau de la couche Apache, les clientes et clients peuvent configurer l’une des options suivantes : [module dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) pour limiter l’accès à certains contenus.
+Par exemple, au niveau de la couche Apache, les clientes et clients peuvent configurer l’une des options suivantes : [module dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=fr) pour limiter l’accès à certains contenus.
 
 Comme le décrit cet article, des règles de filtre de trafic peuvent être déployées sur le réseau CDN géré par Adobe à l’aide du pipeline de configuration de Cloud Manager. Outre les règles de filtre de trafic basées sur des propriétés telles que l’adresse IP, le chemin d&#39;accès et les en-têtes, ou des règles basées sur la définition de limites de débit, les clientes et clients peuvent également acquérir sous licence une sous-catégorie puissante de règles de filtre de trafic appelées règles WAF.
 
@@ -78,7 +78,7 @@ Voici un processus de bout en bout de haut niveau recommandé pour obtenir les r
         cdn.yaml
    ```
 
-1. `cdn.yaml` doit contenir des métadonnées et une liste des règles de filtres de trafic et des règles WAF.
+1. `cdn.yaml` doit contenir des métadonnées, ainsi qu’une liste de règles de filtres de trafic et de règles WAF.
 
    ```
    kind: "CDN"
@@ -113,13 +113,13 @@ Le paramètre `kind` doit être défini sur `CDN` et la version doit être défi
 1. Pour les types d’environnements autres que RDE, créez un pipeline de configuration de déploiement ciblé dans Cloud Manager.
 
    * [Voir Configuration des pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Voir Configuration de pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * [Voir Configuration des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 Pour les RDE, il faut utiliser la ligne de commande, mais le RDE n’est pas pris en charge pour le moment.
 
 **Remarques**
 
-* Vous pouvez utiliser `yq` pour valider localement la mise en forme YAML de votre fichier de configuration (par exemple, `yq cdn.yaml`).
+* Vous pouvez utiliser `yq` pour valider localement le format YAML de votre fichier de configuration (par exemple, `yq cdn.yaml`).
 
 ## Syntaxe des règles de filtre de trafic {#rules-syntax}
 
@@ -148,7 +148,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-Format des règles de filtrage du trafic dans le fichier `cdn.yaml` décrit ci-dessous. Voir quelques [autres exemples](#examples) dans une section ultérieure et une section distincte sur [Règles de limite de taux](#rate-limit-rules).
+Format des règles de filtrage du trafic dans le fichier `cdn.yaml` décrit ci-dessous. Voir quelques [autres exemples](#examples) dans une section ultérieure, ainsi qu’une section distincte sur les [Règles de limite de taux](#rate-limit-rules).
 
 
 | **Propriété** | **La plupart des règles de filtrage de trafic** | **Règles de filtre de trafic WAF** | **Type** | **Valeur par défaut** | **Description** |
@@ -191,7 +191,7 @@ Un groupe de conditions est composé de plusieurs conditions simples et/ou de gr
 
 | **Propriété** | **Type** | **Description** |
 |---|---|---|
-| reqProperty | `string` | Propriété de requête.<br><br>L’un de :<br><ul><li>`path`: renvoie le chemin complet d’une URL sans les paramètres de requête.</li><li>`queryString`: renvoie la partie requête d’une URL</li><li>`method` : renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier` : renvoie l’un de `author`, `preview` ou `publish`.</li><li>`domain` : renvoie la propriété de domaine (telle que définie dans l’en-tête `Host`) en minuscules.</li><li>`clientIp` : renvoie l’adresse IP du client ou de la cliente.</li><li>`clientCountry` : renvoie un code à deux lettres ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) qui identifie le pays dans lequel se trouve le client ou la cliente.</li></ul> |
+| reqProperty | `string` | Propriété de requête.<br><br>L’un de :<br><ul><li>`path` : renvoie le chemin d’accès complet d’une URL sans les paramètres de requête.</li><li>`queryString` : renvoie la partie requête d’une URL.</li><li>`method` : renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier` : renvoie l’un de `author`, `preview` ou `publish`.</li><li>`domain` : renvoie la propriété de domaine (telle que définie dans l’en-tête `Host`) en minuscules.</li><li>`clientIp` : renvoie l’adresse IP du client ou de la cliente.</li><li>`clientCountry` : renvoie un code à deux lettres ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) qui identifie le pays dans lequel se trouve le client ou la cliente.</li></ul> |
 | reqHeader | `string` | Renvoie l’en-tête de requête avec le nom spécifié. |
 | queryParam | `string` | Renvoie le paramètre de requête avec le nom spécifié. |
 | reqCookie | `string` | Renvoie le cookie avec le nom spécifié. |
@@ -415,9 +415,9 @@ Les limites de débit sont calculées par POP de réseau CDN. Supposons, par exe
 | **Propriété** | **Type** | **Par défaut** | **SIGNIFICATION** |
 |---|---|---|---|
 | limite | entier compris entre 10 et 10 000 | obligatoire | Débit de requête (par POP de réseau CDN) dans les requêtes par seconde pour lesquelles la règle est déclenchée. |
-| fenêtre | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le débit de requête est calculé. La précision des compteurs dépend de la taille de la fenêtre (plus la fenêtre est grande, plus la précision est élevée). Par exemple, on peut s’attendre à une précision de 50 % pour la fenêtre d’une seconde et de 90 % pour la fenêtre de 60 secondes. |
+| fenêtre | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le débit de requête est calculé. La précision des compteurs dépend de la taille de la fenêtre (plus la fenêtre est grande, plus la précision est élevée). Par exemple, on peut s’attendre à une précision de 50 % pour la fenêtre d’une seconde et de 90 % pour la fenêtre de 60 secondes. |
 | pénalité | entier compris entre 60 et 3 600 | 300 (5 minutes) | Période en secondes pendant laquelle les requêtes correspondantes sont bloquées (arrondie à la minute la plus proche). |
-| groupBy | tableau [Getter] | aucun | le compteur de limiteurs de débit sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
+| groupBy | tableau [Getter] | aucun | Le compteur de limiteur de taux sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
 
 
 ### Exemples {#ratelimiting-examples}
@@ -470,7 +470,7 @@ data:
 
 AEM as a Cloud Service permet d’accéder aux journaux de réseau CDN qui sont utiles pour les cas d’utilisation, notamment l’optimisation du rapport d’accès au cache et la configuration des règles de filtre de trafic. Les journaux de réseau CDN s’affichent dans la boîte de dialogue **Journaux de téléchargement** de Cloud Manager, lors de la sélection du service de création ou de publication.
 
-Les journaux CDN peuvent être retardés de cinq minutes au maximum.
+Les journaux de réseau CDN peuvent être retardés jusqu’à 5 minutes.
 
 La propriété `rules` décrit les règles de filtre de trafic correspondantes et présente le modèle suivant :
 
@@ -488,7 +488,7 @@ Les règles se comportent comme suit :
 
 * Le nom de règle déclaré par le client ou la cliente de toutes les règles correspondantes sera répertorié dans l’attribut `match`.
 * L’attribut `action` détermine si les règles ont eu pour effet de bloquer, d’autoriser ou de consigner.
-* Si le WAF est sous licence et activé, la variable `waf` répertorie tous les indicateurs WAF (par exemple, SQLI) détectés, que les indicateurs WAF aient été répertoriés dans des règles ou non. Cela permet de fournir des informations sur les nouvelles règles potentielles à déclarer.
+* Si le WAF est sous licence et activé, l’attribut `waf` répertorie tous les indicateurs WAF (par exemple, SQLI) détectés, que les indicateurs WAF aient été répertoriés dans des règles ou non. Cela permet de fournir des informations sur les nouvelles règles potentielles à déclarer.
 * Si aucune règle déclarée par le client ou la cliente ni aucune règle WAF ne correspond, la propriété `rules` est vide.
 
 Comme nous l’avons vu plus haut, les correspondances de règles WAF apparaissent uniquement dans les journaux de réseau CDN pour les échecs et les réussites du réseau CDN, et non les accès.

@@ -3,15 +3,15 @@ title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge du système de gestion des images pour Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Prise en charge IMS d’Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
-## Présentation {#introduction}
+## Introduction {#introduction}
 
 * AEM as a Cloud Service inclut la prise en charge des instances AEM et de l’authentification basée sur Adobe IMS (Identity Management System) par Admin Console.
 * Admin Console permet aux administrateurs de gérer de manière centralisée tous les utilisateurs d’Experience Cloud.
@@ -53,8 +53,8 @@ Dès qu’un client ou une cliente existe en tant qu’organisation IMS, il ou e
 ![Intégration IMS](/help/security/assets/ims2.png)
 
 1. L’administrateur système désigné reçoit une invitation à se connecter à Cloud Manager. Une fois connecté à Cloud Manager, l’administrateur système peut soit configurer les programmes et environnements AEM, soit accéder à Admin Console pour effectuer des tâches d’administration.
-1. L’administrateur système demande à un domaine de confirmer la propriété du domaine concerné (par exemple, acme.com).
-1. L’administrateur système configure les répertoires utilisateur.
+1. L’administrateur ou l’administratrice système demande à un domaine de confirmer la propriété du domaine concerné (acme.com, par exemple).
+1. L’administrateur ou l’administratrice système configure les répertoires d’utilisateur ou d’utilisatrice.
 1. L’administrateur ou l’administratrice système effectue la configuration IDP dans Admin Console afin de configurer l’authentification unique.
 1. L’administrateur AEM gère les groupes locaux, les autorisations et les droits comme d’habitude.
 
@@ -102,7 +102,7 @@ Vous trouverez plus d’informations sur les nouvelles fonctionnalités de group
 
 **Documentation de synchronisation des utilisateurs**
 
-Voir la [documentation de l’outil UST](https://adobe-apiplatform.github.io/user-sync.py/en/) pour plus d’informations.
+Voir la [documentation de l’outil UST](https://adobe-apiplatform.github.io/user-sync.py/fr/) pour plus d’informations.
 
 L’outil de synchronisation des utilisateurs et utilisatrices doit s’enregistrer en tant que UMAPI client d’Adobe Developer en suivant la procédure décrite [ici](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -213,7 +213,7 @@ Pour pouvoir accéder à Cloud Manager ou à des environnements sur AEM as a�
 Reportez-vous à Définitions de rôle pour en savoir plus sur les rôles des utilisateurs et utilisatrices qui régissent la disponibilité de fonctionnalités spécifiques dans Cloud Manager.
 
 >[!NOTE]
->Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur les rôles dotés d’autorisations spécifiques, de tâches préconfigurées ou d’autorisations associées à chaque rôle, consultez [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html).
+>Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur les rôles dotés d’autorisations spécifiques, de tâches préconfigurées ou d’autorisations associées à chaque rôle, consultez [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=fr).
 
 **Procédure d’ajout d’un utilisateur**
 

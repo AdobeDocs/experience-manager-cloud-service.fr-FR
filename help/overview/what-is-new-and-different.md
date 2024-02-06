@@ -3,9 +3,9 @@ title: Nouveautés et différences – Adobe Experience Manager as a Cloud Servi
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: d4502c7558fca7ecee89b2ce9429fd1c749d8e92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1883'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Il existe des différences intrinsèques entre ces approches antérieures et AEM
 
 >[!NOTE]
 >
->Ces présentations non exhaustives constituent une simple introduction.
+>Ces vues d’ensemble non exhaustives constituent une simple introduction.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les versions On-Premise et Managed Service, voir la section [Documentation AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) .
+>Pour plus d’informations sur les versions On-Premise et Managed Service, voir la [documentation AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr).
 
 ## Architecture {#architecture}
 
@@ -87,7 +87,7 @@ Il existe deux types de mises à jour de la version d’AEM :
 
 >[!TIP]
 >
->Pour plus d’informations, voir [AEM mises à jour de version](/help/implementing/deploying/aem-version-updates.md).
+>Pour plus d’informations, voir [Mises à jour de version d’AEM](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -144,7 +144,7 @@ Les opérations sont également très différentes du fait des éléments suivan
 
 * Conditions requises pour le déploiement :
 
-   * Mises à jour du code ; toutes les applications client développées pour une version précédente d’AEM doivent être examinées et éventuellement mises à jour.
+   * Mises à jour du code ; toutes les applications clientes développées pour une version précédente d’AEM doivent être examinées et éventuellement mises à jour.
 
    * Migration du contenu
 
@@ -156,7 +156,7 @@ Les opérations sont également très différentes du fait des éléments suivan
 
 >[!NOTE]
 >
->Pour plus d’informations, vous pouvez commencer par [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) et [Développement - Tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>Pour plus d’informations, vous pouvez consulter [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) et [Développement – Tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 La nouvelle architecture qui prend en charge AEM as a Cloud Service implique un certain nombre de changements clés dans l’expérience globale des développeurs. L’un des principaux objectifs d’AEM as a Cloud Service est de permettre aux clients expérimentés (qui ont utilisé AEM On-Premise ou dans le contexte des Adobe Managed Services) de migrer vers AEM as a Cloud Service le plus rapidement possible sans avoir à réécrire la majeure partie de leur code personnalisé. Toutefois, certains ajustements peuvent encore être nécessaires.
 
@@ -182,7 +182,7 @@ L’accès rapide aux fichiers journaux des différents environnements est une a
 
 En raison de la séparation stricte du code et du contenu, les développeurs peuvent utiliser un processus particulier de mise à jour du contenu dans le cadre d’un déploiement. Les cas d’utilisation standard des contenus modifiables sont les suivants :
 
-* Standard *default* contenu faisant partie du projet client (dossiers, modèles, workflows, etc.)
+* Contenu *par défaut* standard faisant partie du projet du client ou de la cliente (dossiers, modèles, workflows, etc.)
 
 * Rechercher les définitions d’index
 
@@ -206,7 +206,7 @@ Pour assurer la rapidité des itérations et du développement, il est égalemen
 
 >[!NOTE]
 >
->Pour plus d’informations, commencez par [restauration du contenu](/help/operations/backup.md), [Indexation](/help/operations/indexing.md), et [autres tâches de maintenance](/help/operations/maintenance.md).
+>Pour plus d’informations, commencez par les sections [Restauration de contenu](/help/operations/backup.md), [Indexation](/help/operations/indexing.md) et [Autres tâches de maintenance](/help/operations/maintenance.md).
 
 Avec AEM as a Cloud Service, ces opérations sont automatisées pour éviter toute interruption de service.
 
@@ -224,7 +224,7 @@ Les opérations d’AEM as a Cloud Service sont également assurées par une nou
 
 >[!NOTE]
 >
->Voir [Sécurité - Prise en charge IMS](/help/security/ims-support.md).
+>Voir [Sécurité – Prise en charge IMS](/help/security/ims-support.md).
 
 L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création.
 
@@ -240,7 +240,7 @@ Cela a pour effet de combiner les avantages suivants :
 
 >[!NOTE]
 >
->Pour plus d’informations, la variable [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) est un bon point de départ.
+>Pour plus de détails, la section [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) est un bon point de départ.
 
 Les principes de base de l’interface utilisateur de création, tant pour Sites que pour Assets, seront très familiers pour toute personne ayant utilisé AEM dans le passé.
 
@@ -274,6 +274,6 @@ Pour en savoir plus, voir :
 
 >[!TIP]
 >
->Lorsque vous disposez d’une vue d’ensemble d’AEM as a Cloud Service, vous pouvez rapidement intégrer en examinant la [Parcours d’intégration](/help/journey-onboarding/overview.md).
+>Une fois que vous disposez d’une vue d’ensemble d’AEM as a Cloud Service, vous pouvez rapidement vous mettre au travail en examinant le [Parcours d’intégration](/help/journey-onboarding/overview.md).
 >
 >Votre intégration est déjà faite ou vous êtes prêt à tester les fonctionnalités d’AEM ? Installez le [Module complémentaire des démonstrations de référence d’AEM](/help/journey-sites/demos-add-on/overview.md) pour explorer les fonctionnalités puissantes d’AEM à l’aide d’exemples enrichis.

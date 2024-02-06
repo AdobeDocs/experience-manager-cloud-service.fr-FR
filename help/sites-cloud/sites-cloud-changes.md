@@ -3,16 +3,16 @@ title: Modifications notables apportées à AEM Sites dans AEM Cloud Service
 description: Découvrez comment créer et administrer AEM Sites as a Cloud Service et découvrez les modifications essentielles apportées à AEM Sites dans AEM Cloud Service.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # Modifications notables apportées à AEM Sites as a Cloud Service {#notable-changes}
 
-AEM Sites as a Cloud Service offre des fonctionnalités de gestion de l’expérience intégrées de façon natives au cloud à la plateforme AEM as a Cloud Service. Outre les avantages principaux d’AEM as a Cloud Service, tels que l’évolutivité native du cloud, le temps de disponibilité et la mise à jour permanente, AEM Sites as a Cloud Service fournit également plusieurs modifications et ajouts spécifiques à Sites.
+AEM Sites as a Cloud Service offre des fonctionnalités de gestion de l’expérience intégrées de façon natives au cloud à la plateforme AEM as a Cloud Service. Outre les principaux avantages d’AEM as a Cloud Service, tels que l’évolutivité native du cloud, le temps de disponibilité et la mise à jour permanente d’AEM Sites as a Cloud Service, vous pouvez également apporter plusieurs modifications et ajouts propres à AEM Sites.
 
 >[!NOTE]
 >Ce document met en évidence les modifications notables apportées à AEM Sites. Pour les modifications générales apportées à AEM as a Cloud Service et à d’autres modules, voir :
@@ -41,7 +41,7 @@ L’initiateur de ces actions peut vérifier leur état dans une nouvelle interf
 
 >[!NOTE]
 >
->Aucune modification n’est requise de la part de l’utilisateur du système pour utiliser cette nouvelle fonctionnalité. Cette modification est simplement consignée dans ce document, car elle constitue un changement de comportement par rapport aux versions sur site précédentes d’AEM.
+>L’utilisateur ou l’utilisatrice du système n’a pas besoin de modifier cette nouvelle fonctionnalité pour pouvoir l’utiliser. Cette modification est simplement consignée dans ce document, car elle constitue un changement de comportement par rapport aux versions On-Premise précédentes d’AEM.
 
 ## Nouveau site de référence et tutoriel {#new-reference-site-and-tutorial}
 
