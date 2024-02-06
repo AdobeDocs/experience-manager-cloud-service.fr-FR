@@ -1,18 +1,18 @@
 ---
-title: Personnalisation de l’interface utilisateur
-description: Découvrez les différents points d’extension qui vous permettent de personnaliser l’interface utilisateur d’Universal Editor afin de prendre en charge les besoins de vos auteurs de contenu.
+title: Personnalisation de l’expérience de création de l’éditeur universel
+description: Découvrez les différents points d’extension et autres fonctionnalités qui vous permettent de personnaliser l’interface utilisateur d’Universal Editor afin de prendre en charge les besoins de vos auteurs de contenu.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: 1bc65e65e6ce074a050e21137ce538b5c086665f
+source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
 
-# Personnalisation de l’interface utilisateur {#customizing-ui}
+# Personnalisation de l’expérience de création de l’éditeur universel {#customizing-ue}
 
-Découvrez les différents points d’extension qui vous permettent de personnaliser l’interface utilisateur d’Universal Editor afin de prendre en charge les besoins de vos auteurs de contenu.
+Découvrez les différents points d’extension et autres fonctionnalités qui vous permettent de personnaliser l’expérience de création d’Universal Editor afin de prendre en charge les besoins de vos auteurs de contenu.
 
 ## Désactivation de la publication {#disable-publish}
 
@@ -59,3 +59,40 @@ La définition de la variable `components` dans une définition de filtre à `nu
    }
 ]
 ```
+
+## Afficher et masquer les composants de manière conditionnelle dans le rail des propriétés {#conditionally-hide}
+
+Bien qu’un ou plusieurs composants puissent généralement être disponibles pour les auteurs, il peut arriver qu’ils n’aient pas de sens dans certains cas. Dans ce cas, vous pouvez masquer des composants dans le rail de propriétés en ajoutant une `condition` à l’attribut [des champs du modèle de composant.](/help/implementing/universal-editor/field-types.md#fields)
+
+Les conditions peuvent être définies à l’aide de [Schéma JsonLogic.](https://jsonlogic.com/) Si la condition est vraie, le champ s’affiche. Si la condition est fausse, le champ est masqué.
+
+### Exemple de modèle {#sample-model}
+
+```json
+ {
+    "id": "conditionally-revealed-component",
+    "fields": [
+      {
+        "component": "boolean",
+        "label": "Shall the text field be revealed?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Hidden text field",
+        "name": "hidden-text",
+        "valueType": "string",
+        "condition": { "===": [{"var" : "reveal"}, true] }
+      }
+    ]
+ }
+```
+
+#### Condition False {#false}
+
+![Champ de texte masqué](assets/hidden.png)
+
+#### Condition True {#true}
+
+![Champ de texte affiché](assets/shown.png)
