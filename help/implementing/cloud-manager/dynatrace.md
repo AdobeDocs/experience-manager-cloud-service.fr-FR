@@ -2,9 +2,9 @@
 title: Dynatrace
 description: Découvrez comment utiliser la synchronisation avec AEM as a Cloud Service
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: a234f2a00c51bcb23b0c52feac9971259d26b8c3
+source-git-commit: fec3aa6debec49014406ab241c3ce0338ec5a1d2
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Les détails requis pour les demandes de connectivité sont décrits ci-dessous 
 
 | **Champ** | **Description** |
 |---|---|
-| URL de l’environnement de synchronisation | URL de votre environnement de synchronisation.<br><br>Pour les clients Dynamic Media, le format est `https://<your-environment-id>.live.dynatrace.com`.<br><br>Pour les clients gérés par Dynamic Tag Management, le format est `https://<your-managed-url>/e/<environmentId>` |
-| ID d’environnement de synchronisation | Identifiant de votre environnement de synchronisation. Veuillez consulter [Obtention des informations sur l’environnement de synchronisation](#get-dynatrace-env-info) pour savoir comment obtenir ceci. |
-| Jeton d’environnement de synchronisation | Jeton d’environnement de synchronisation. Veuillez consulter [Obtention des informations sur l’environnement de synchronisation](#get-dynatrace-env-info) pour savoir comment obtenir ceci.<br><br>Cela doit être considéré comme un secret. Utilisez donc les pratiques de sécurité appropriées. Par exemple, un mot de passe le protège dans un site web tel que **zerobin.net**, à laquelle le ticket d’assistance clientèle peut faire référence, ainsi que le mot de passe. |
-| Jeton d’accès de l’API de synchronisation | Jeton d’accès API de votre environnement de synchronisation.  Veuillez consulter [Création d’un jeton d’accès à l’API de synchronisation](#create-dynatrace-access-token) pour savoir comment créer ceci.<br><br>Ce secret doit être considéré comme un secret. Utilisez donc les pratiques de sécurité appropriées. Par exemple, un mot de passe le protège dans un site web tel que **zerobin.net**, à laquelle le ticket d’assistance clientèle peut faire référence, ainsi que le mot de passe.<br><br>Remarque : Cela n’est nécessaire que pour Dynatrace Managed. |
-| Synchronisation du port ActiveGate | Votre port Dynamic ActiveGate auquel l’intégration d’AEM doit se connecter.<br><br>Remarque : Cela n’est nécessaire que pour Dynatrace Managed. |
-| Synchronisation de la zone réseau ActiveGate | Votre [Synchronisation de la zone de réseau ActiveGate](https://docs.dynatrace.com/docs/manage/network-zones) pour acheminer efficacement les données de surveillance AEM entre les centres de données et les régions de réseau.<br><br>Remarque : Une zone de réseau Dynamic ActiveGate est facultative. |
-| AEM ID d’environnement | Les identifiants d’environnement AEM que Dynamic doit surveiller. |
+| [!DNL Dynatrace Environment URL] | URL de votre environnement de synchronisation.<br><br>Pour les clients Dynamic Media, le format est `https://<your-environment-id>.live.dynatrace.com`.<br><br>Pour les clients gérés par Dynamic Tag Management, le format est `https://<your-managed-url>/e/<environmentId>` |
+| [!DNL Dynatrace Environment ID] | Identifiant de votre environnement de synchronisation. Veuillez consulter [Obtention des informations sur l’environnement de synchronisation](#get-dynatrace-env-info) pour savoir comment obtenir ceci. |
+| [!DNL Dynatrace Environment Token] | Jeton d’environnement de synchronisation. Veuillez consulter [Obtention des informations sur l’environnement de synchronisation](#get-dynatrace-env-info) pour savoir comment obtenir ceci.<br><br>Cela doit être considéré comme un secret. Utilisez donc les pratiques de sécurité appropriées. Par exemple, un mot de passe le protège dans un site web tel que **zerobin.net**, à laquelle le ticket d’assistance clientèle peut faire référence, ainsi que le mot de passe. |
+| [!DNL Dynatrace API access token] | Jeton d’accès API de votre environnement de synchronisation.  Veuillez consulter [Création d’un jeton d’accès à l’API de synchronisation](#create-dynatrace-access-token) pour savoir comment créer ceci.<br><br>Ce secret doit être considéré comme un secret. Utilisez donc les pratiques de sécurité appropriées. Par exemple, un mot de passe le protège dans un site web tel que **zerobin.net**, à laquelle le ticket d’assistance clientèle peut faire référence, ainsi que le mot de passe.<br><br>Remarque : Cela n’est nécessaire que pour Dynatrace Managed. |
+| [!DNL Dynatrace ActiveGate Port] | Votre port Dynamic ActiveGate auquel l’intégration d’AEM doit se connecter.<br><br>Remarque : Cela n’est nécessaire que pour Dynatrace Managed. |
+| [!DNL Dynatrace ActiveGate Network Zone] | Votre [Synchronisation de la zone de réseau ActiveGate](https://docs.dynatrace.com/docs/manage/network-zones) pour acheminer efficacement les données de surveillance AEM entre les centres de données et les régions de réseau.<br><br>Remarque : Une zone de réseau Dynamic ActiveGate est facultative. |
+| [!DNL AEM Environment ID(s)] | Les identifiants d’environnement AEM que Dynamic doit surveiller. |
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Les détails requis pour les demandes de connectivité sont décrits ci-dessous 
 ## Création d’un jeton d’accès à l’API de synchronisation {#create-dynatrace-access-token}
 
 1. Connectez-vous à votre environnement de synchronisation.
-1. Dans le menu Synchronisation, accédez à Gérer > Accéder aux jetons.
-1. Sélectionnez Générer un nouveau jeton.
-1. Définissez un nom de jeton.
+1. Dans le [!DNL Dynatrace] , accédez à [!DNL Manage] > [!DNL Access tokens].
+1. Sélectionner [!DNL Generate new token].
+1. Définition d’une [!DNL token name].
 
-1. Facultatif : définissez une date d’expiration. Veillez à générer un nouveau jeton avant son expiration.
-1. Définissez la portée du jeton sur Intégration PaaS - Téléchargement du programme d’installation
-1. Sélectionnez Générer un jeton.
+1. Facultatif : définissez une [!DNL expiration date]. Veillez à générer un nouveau jeton avant son expiration.
+1. Définissez la variable [!DNL token scope] to [!DNL PaaS integration - Installer download]
+1. Sélectionner [!DNL Generate token].
 1. Copiez le jeton d’accès généré et stockez-le dans un emplacement sécurisé.
 
 
