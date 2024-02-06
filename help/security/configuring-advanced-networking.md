@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
 workflow-type: tm+mt
 source-wordcount: '3540'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ Cet article vise à vous présenter les différentes fonctionnalités de mise en
 
 >[!INFO]
 >
->Vous trouverez également à cet [emplacement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html) une série d’articles conçus pour vous guider dans les différentes options avancées de mise en réseau.
+>Vous trouverez également à cet [emplacement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=fr) une série d’articles conçus pour vous guider dans les différentes options avancées de mise en réseau.
 
 ## Vue d’ensemble {#overview}
 
@@ -40,7 +40,7 @@ Un programme peut fournir une variation réseau avancée unique. Lorsque vous h�
 
 ## Sortie de port flexible {#flexible-port-egress}
 
-Cette fonctionnalité de mise en réseau avancée vous permet de configurer AEM as a Cloud Service pour récupérer le trafic via des ports autres que HTTP (port 80) et HTTPS (port 443), qui sont ouverts par défaut.
+Cette fonctionnalité de mise en réseau avancée vous permet de configurer AEM as a Cloud Service pour récupérer le trafic par des ports autres que HTTP (port 80) et HTTPS (port 443), qui sont ouverts par défaut.
 
 ### Considérations {#flexible-port-egress-considerations}
 
@@ -54,8 +54,8 @@ Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau p
 
 Si la configuration de sortie de port flexible à l’échelle du programme est prête, le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit être invoqué pour chaque environnement afin d’activer la mise en réseau au niveau de l’environnement et de déclarer éventuellement toute règle de transfert de port. Les paramètres sont configurables par environnement afin d’offrir une certaine flexibilité.
 
-Les règles de transfert de port doivent être déclarées pour tout port de destination autre que le port 80/443, uniquement si le protocole http ou https n’est pas utilisé,
-en spécifiant le jeu d’hôtes de destination (noms ou adresses IP, avec les ports). La connexion client utilisant le port 80/443 via http/https doit toujours utiliser les paramètres proxy dans leur connexion pour que les propriétés de la mise en réseau avancée soient appliquées à la connexion. Pour chaque hôte de destination, les clients doivent mapper le port de destination prévu à un port entre 30 000 et 30 999.
+Les règles de transfert de port doivent être déclarées pour tout port de destination autre que le port 80/443, uniquement si les protocoles HTTP ou HTTPS ne sont pas utilisés,
+en spécifiant le jeu d’hôtes de destination (noms ou adresses IP, avec les ports). La connexion cliente utilisant le port 80/443 via http/https doit toujours utiliser les paramètres proxy dans leur connexion pour que les propriétés de la mise en réseau avancée soient appliquées à la connexion. Pour chaque hôte de destination, les clients doivent mapper le port de destination prévu à un port entre 30 000 et 30 999.
 
 L’API doit répondre en quelques secondes seulement et indiquer un statut de mise à jour et, après environ 10 minutes, le point d’entrée `GET` indique que la mise en réseau avancée est activée.
 
@@ -196,9 +196,9 @@ Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant
 
 La configuration de l’adresse IP de sortie dédiée est identique à celle d’une [sortie de port flexible](#configuring-flexible-port-egress-provision).
 
-La principale différence est que le trafic sortira toujours d’une adresse IP dédiée et unique. Pour trouver cette adresse IP, utilisez un résolveur DNS pour identifier l’adresse IP associée à `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’adresse IP ne doit pas changer, mais si elle doit changer à l’avenir, une notification avancée est fournie.
+La principale différence est que le trafic sortira toujours d’une adresse IP dédiée et unique. Pour trouver cette adresse IP, utilisez un résolveur DNS pour identifier l’adresse IP associée à `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’adresse IP n’est pas censée changer, mais si elle le doit malgré tout, vous recevez une notification avancée.
 
-Outre les règles de routage prises en charge par la sortie de port flexible dans le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, l’adresse IP sortante dédiée prend en charge un paramètre `nonProxyHosts`. Cela vous permet de déclarer un ensemble d’hôtes qui doivent passer par une plage d’adresses IP partagées plutôt que par l’adresse IP dédiée, ce qui peut s’avérer utile puisque le trafic passant par les adresses IP partagées peut être encore optimisé. Les URL `nonProxyHost` peuvent être calquées sur `example.com` ou `*.example.com`, le caractère générique n’étant pris en charge qu’au début du domaine.
+Outre les règles de routage prises en charge par la sortie de port flexible dans le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, l’adresse IP sortante dédiée prend en charge un paramètre `nonProxyHosts`. Cela vous permet de déclarer un ensemble d’hôtes qui doivent passer par une plage d’adresses IP partagées plutôt que par l’adresse IP dédiée, ce qui peut se révéler utile, puisque le trafic passant par les adresses IP partagées peut être encore optimisé. Les URL `nonProxyHost` peuvent être calquées sur `example.com` ou `*.example.com`, le caractère générique n’étant pris en charge qu’au début du domaine.
 
 Lorsque vous hésitez entre une adresse IP de sortie de port flexible et de sortie dédiée, il est recommandé de choisir une sortie de port flexible si aucune adresse IP spécifique n’est requise, car Adobe peut optimiser les performances du trafic de sortie de port flexible.
 
@@ -337,7 +337,7 @@ Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédi
 ## Clients avec une adresse sortante dédiée héritée {#legacy-dedicated-egress-address-customers}
 
 Si vous avez reçu une adresse IP de sortie dédiée avant le 30/09/2021, votre fonction d’adresse IP de sortie dédiée ne prend en charge que les ports HTTP et HTTPS.
-Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés. En outre, un point de terminaison de sortie dédié peut uniquement parler à une cible via HTTP/HTTPS sur les ports 80/443, respectivement.
+Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés. De plus, un point d’entrée de sortie dédié peut uniquement communiquer avec une cible via HTTP/HTTPS sur les ports 80/443, respectivement.
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
@@ -367,13 +367,13 @@ Les règles de transfert de port doivent être déclarées pour tout trafic TCP 
 
 L’API doit répondre en quelques secondes seulement et indiquer un statut `updating` et, au bout d’environ 10 minutes, un appel au point d’entrée de l’environnement de Cloud Manager affiche le statut `ready`, indiquant que la mise à jour de l’environnement a été appliquée.
 
-Même en l’absence de règles de routage du trafic de l’environnement (hôtes ou contours), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit toujours être appelé, avec une charge utile vide.
+Notez que même en l’absence de règles de routage du trafic de l’environnement (hôtes ou contournements), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit toujours être appelé mais avec une payload vide.
 
 ### Mise à jour du VPN {#updating-the-vpn}
 
 La configuration VPN au niveau du programme peut être mise à jour en invoquant le point d’entrée `PUT /api/program/<program_id>/network/<network_id>`.
 
-L’espace d’adresse ne peut pas être modifié après l’approvisionnement initial du VPN. En cas de besoin, contactez le service clientèle. En outre, le paramètre `kind` (`flexiblePortEgress`, `dedicatedEgressIP` ou `VPN`) ne peut pas être modifié. Contactez le service clientèle pour obtenir de l’aide, en décrivant ce qui a déjà été créé et la raison du changement.
+L’espace d’adresse ne peut pas être modifié après la configuration VPN initiale. En cas de besoin, contactez le service clientèle. En outre, le paramètre `kind` (`flexiblePortEgress`, `dedicatedEgressIP` ou `VPN`) ne peut pas être modifié. Contactez le service clientèle pour obtenir de l’aide, en décrivant ce qui a déjà été créé et la raison du changement.
 
 Les règles de routage par environnement peuvent être mises à jour en invoquant à nouveau le point d’entrée `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`, en veillant à inclure l’ensemble complet des paramètres de configuration, plutôt qu’un sous-ensemble. Les mises à jour d’environnement prennent généralement 5 à 10 minutes avant d’être appliquées.
 
@@ -557,9 +557,9 @@ Lorsqu’une région supplémentaire est ajoutée à un environnement qui dispos
 
 Si une configuration de mise en réseau avancée est déjà activée dans la région principale, procédez comme suit :
 
-1. Si vous avez verrouillé votre infrastructure de sorte que l’adresse IP AEM dédiée soit répertoriée, il est recommandé de désactiver temporairement toute règle de refus dans cette infrastructure. Si ce n’est pas fait, il y a une courte période pendant laquelle les demandes provenant des adresses IP de la nouvelle région sont refusées par votre propre infrastructure. Cela n’est pas nécessaire si vous avez verrouillé votre infrastructure au moyen d’un nom de domaine complet (FQDN) (`p1234.external.adobeaemcloud.com`, par exemple), car toutes les régions AEM reçoivent un trafic réseau avancé du même nom de domaine complet (FQDN).
+1. Si vous avez verrouillé votre infrastructure de sorte que l’adresse IP AEM dédiée soit répertoriée, il est recommandé de désactiver temporairement toute règle de refus dans cette infrastructure. Si ce n’est pas fait, il y a une courte période pendant laquelle les demandes provenant des adresses IP de la nouvelle région sont refusées par votre propre infrastructure. Notez que cela n’est pas nécessaire si vous avez verrouillé votre infrastructure via le nom de domaine complet (`p1234.external.adobeaemcloud.com`, par exemple), car toutes les régions AEM émettent un trafic de mise réseau avancée du même nom de domaine complet.
 1. Créez l’infrastructure de mise en réseau à portée de programme pour la région secondaire par le biais d’un appel POST à l’API de création d’infrastructure réseau de Cloud Manager, comme décrit dans la documentation de mise en réseau avancée. La seule différence dans la configuration JSON du payload par rapport à la région principale est la propriété de la région
-1. Si votre infrastructure doit être verrouillée par adresse IP pour autoriser AEM trafic, ajoutez les adresses IP qui correspondent `p1234.external.adobeaemcloud.com`. Il devrait y en avoir une par région.
+1. Si votre infrastructure doit être verrouillée par IP pour autoriser le trafic AEM, ajoutez les adresses IP qui correspondent à `p1234.external.adobeaemcloud.com`. Il devrait y en avoir une par région.
 
 #### Mise en réseau avancée non configurée dans une région {#not-yet-configured}
 
@@ -567,7 +567,7 @@ La procédure est essentiellement similaire aux instructions précédentes. Cepe
 
 1. Créez une infrastructure de mise en réseau pour toutes les régions à l’aide d’un appel POST à l’[API de création d’infrastructure réseau de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). La seule différence dans la configuration JSON du payload par rapport à la région principale est la propriété de la région.
 1. Pour l’environnement d’évaluation, activez et configurez l’environnement mis en réseau avancé en exécutant `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Pour plus d’informations, voir la documentation de l’API [ici](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. Si nécessaire, verrouiller l’infrastructure externe, de préférence par le nom de domaine complet (par exemple, `p1234.external.adobeaemcloud.com`). Vous pouvez également le faire par adresse IP
+1. Si nécessaire, verrouillez l’infrastructure externe, de préférence par le nom de domaine complet (par exemple, `p1234.external.adobeaemcloud.com`). Vous pouvez également le faire par adresse IP
 1. Si l’environnement d’évaluation fonctionne comme prévu, activez et configurez la configuration de mise en réseau avancée de l’environnement pour la production.
 
 #### VPN {#vpn-regions}

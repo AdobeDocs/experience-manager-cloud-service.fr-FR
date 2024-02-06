@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 46%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.1.0) est le vendredi 25 janvier 2024. La prochaine version des fonctionnalités (2024.2.0) est prévue pour le vendredi 29 février 2024.
+La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.1.0) est le 25 janvier 2024. La prochaine version des fonctionnalités (2024.2.0) est prévue pour le 29 février 2024.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -34,44 +34,44 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 ## Vidéo de mise à jour {#release-video}
 
-Consultez la vidéo Aperçu de la version de janvier 2024 pour un résumé des fonctionnalités ajoutées dans la version 2024.1.0 :
+Consultez la vidéo Vue d’ensemble de la version de janvier 2024 pour un résumé des fonctionnalités ajoutées dans la version 2024.1.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Extension Manager dans AEM Sites {#sites-extension-manager}
+### Extension Manager dans AEM Sites {#sites-extension-manager}
 
-**Découvrez la nouvelle [Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** pour personnaliser votre configuration AEM en configurant les extensions de l’interface utilisateur.
+**Découvrez le nouveau gestionnaire [Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)**, permettant de personnaliser votre configuration AEM en configurant les extensions de l’interface utilisateur.
 
-![Extension Manager dans AEM Sites](/help/assets/sites/extension-manager/homepage.png)
+![Extension Manager dans AEM Sites.](/help/assets/sites/extension-manager/homepage.png)
 
 L’Extension Manager dans AEM Sites permet aux développeurs et aux professionnels d’accéder à, de gérer et de personnaliser les [Extensions d’interface utilisateur](https://developer.adobe.com/uix/docs/) créé avec [Adobe App Builder](https://developer.adobe.com/app-builder/) pour améliorer les fonctionnalités d’AEM Sites.
-Avec l’Extension Manager, vous pouvez :
+Avec Extension Manager, vous pouvez :
 
-* Activer ou désactiver des extensions pour chaque instance ;
-* Configuration des paramètres d’extension ;
-* Prévisualisez les extensions et générez un lien d’aperçu partageable.
-* Découvrez les fonctionnalités d’extensibilité de l’interface utilisateur au moyen de démonstrations interactives ;
-* Accédez aux fonctionnalités expérimentales d’Adobe par le biais d’extensions propriétaires.
+* activer ou désactiver des extensions pour chaque instance ;
+* configurer les paramètres d’extension ;
+* prévisualiser les extensions et générer un lien d’aperçu partageable ;
+* découvrir les fonctionnalités d’extensibilité de l’interface utilisateur au moyen de démonstrations interactives ;
+* accéder aux fonctionnalités expérimentales d’Adobe par le biais d’extensions propriétaires.
 
-Nous recherchons activement des commentaires et de nouveaux cas d’utilisation pour les extensions de l’interface utilisateur. Si vous souhaitez vous connecter, veuillez envoyer un email à `uix@adobe.com`.
+Nous recherchons activement des commentaires et de nouveaux cas d’utilisation pour les extensions de l’interface utilisateur. Si vous souhaitez vous connecter, veuillez envoyer un e-mail à `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Fonctionnalités de préversion de la vue d’administration {#admin-view-prerelease}
+### Fonctionnalités de la version préliminaire de la vue d’administration {#admin-view-prerelease}
 
-**Aperçu des rendus pour tous les types de vidéo pris en charge**
+**Rendus d’aperçu pour tous les types de vidéo pris en charge.**
 
-Experience Manager Assets génère désormais par défaut des rendus d’aperçu de tous les types de vidéo pris en charge sans nécessiter de configuration de profil de traitement.
+Experience Manager Assets génère désormais par défaut des rendus d’aperçu de tous les types de vidéo pris en charge sans nécessiter de configuration de profil de traitement.
 
-### Affichage des ressources {#assets-view-features}
+### Vue Assets {#assets-view-features}
 
 **Liste bloquée des balises intelligentes**
 
 Assets Essentials vous permet désormais de définir une liste bloquée contenant des mots qui ne doivent pas être ajoutés en tant que balises intelligentes aux ressources chargées dans le référentiel. Cette fonctionnalité vous aide à maintenir la conformité de la marque et réduit les efforts de modération des balises intelligentes.
 
-![Liste bloquée Balises intelligentes](/help/assets/assets/block-tags.png)
+![Liste bloquée des balises intelligentes.](/help/assets/assets/block-tags.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -82,13 +82,13 @@ Assets Essentials vous permet désormais de définir une liste bloquée contena
 
 -->
 
-### Programme d&#39;adoption précoce {#forms-early-adopter}
+### Programme d’adoption précoce {#forms-early-adopter}
 
-* **[Envoyer un formulaire adaptatif au scénario de fusion Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service propose des options prêtes à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui vous permet de déclencher un scénario de fusion Workfront lors de l’envoi d’un formulaire adaptatif.
+* **[Envoi d’un formulaire adaptatif au scénario Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)** : Forms as a Cloud Service propose des options prêtes à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui permet de déclencher un scénario Workfront Fusion lors de l’envoi d’un formulaire adaptatif.
 
-* **[Prise en charge des langues de droite à gauche](/help/forms/supporting-new-language-localization-core-components.md)**: les Forms adaptatives reposant sur les composants principaux peuvent désormais être présentées dans une langue de droite à gauche (RTL) telle que l’arabe, le persan et l’ourdou. Les langues de la durée de vie sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire en langage RTL vous permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et les sélectionner dans les marchés RTL. Dans certaines régions, il est également légal de fournir des formulaires dans la langue locale. En s&#39;adaptant aux langues locales, vous ouvrez non seulement les portes à un public plus large, mais vous garantissez également le respect des lois et réglementations pertinentes.
+* **[Prise en charge des langues de droite à gauche](/help/forms/supporting-new-language-localization-core-components.md)** : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire pour les langues s’écrivant de droite à gauche permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et aux marchés correspondants. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à un public plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
 
-  ![Prise en charge de la langue de droite à gauche](/help/forms/assets/right-to-left-language-support.png)
+  ![Prise en charge des langues de droite à gauche.](/help/forms/assets/right-to-left-language-support.png)
 
 * **[Protégez vos documents avec les API DocAssurance (qui font partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)** : les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seules les personnes autorisées peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
@@ -96,13 +96,13 @@ Assets Essentials vous permet désormais de définir une liste bloquée contena
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Prise en charge de la synchronisation {#dynatrace}
+### Prise en charge de Dynatrace {#dynatrace}
 
-Les clients de la synchronisation peuvent surveiller leur utilisation AEM. [Lire comment](/help/implementing/cloud-manager/dynatrace.md) pour demander la connectivité à votre environnement de synchronisation afin de surveiller les performances de l’application. Notez que l’API New Relic, disponible pour tous les clients, cessera de collecter des données si la synchronisation est activée.
+La clientèle Dynatrace peut surveiller son utilisation d’AEM. [Découvrez comment](/help/implementing/cloud-manager/dynatrace.md) demander la connectivité à votre environnement Dynatrace afin de surveiller les performances de l’application. Notez que l’APM New Relic, disponible pour l’ensemble de la clientèle, cessera de collecter des données si Dynatrace est activé.
 
-### Prise en charge de RDE pour le code frontal à l’aide des thèmes du site et des modèles de site : programme des Adopteurs anticipés {#rde-frontend-early-adopter}
+### Prise en charge de RDE pour le code en front-end à l’aide des thèmes du site et des modèles de site : programme d’adoption précoce {#rde-frontend-early-adopter}
 
-[Environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prend désormais en charge le code frontal basé sur [thèmes du site](/help/sites-cloud/administering/site-creation/site-themes.md) et [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les utilisateurs qui ont adopté l’heure. Avec les RDE, cela se fait à l’aide d’une directive de ligne de commande, plutôt que d’une [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **aemcs-rde-support@adobe.com** pour essayer et fournir des commentaires.
+Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prennent désormais en charge le code en front-end basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les utilisateurs et utilisatrices bénéficiant de l’adoption précoce. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **aemcs-rde-support@adobe.com** pour essayer et fournir des commentaires.
 
 ## Cloud Manager {#cloud-manager}
 
