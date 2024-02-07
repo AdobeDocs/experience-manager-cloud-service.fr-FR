@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3d5901e6543b0b5d3214e69c5119367eeb71bf07
+source-git-commit: c986f817b2dc81e03b9c6f725d8754f017a585dd
 workflow-type: tm+mt
 source-wordcount: '4633'
 ht-degree: 98%
@@ -78,15 +78,15 @@ ht-degree: 98%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Notes de mise à jour de la maintenance 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md)
-         + [Notes de mise à jour de la maintenance 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
-         + [Notes de mise à jour de la maintenance 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
-         + [Notes de mise à jour de la maintenance 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
-         + [Notes de mise à jour de la maintenance 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
-         + [Notes de mise à jour de la maintenance 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
-         + [Notes de mise à jour de la maintenance 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
-         + [Notes de mise à jour de la maintenance 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
-         + [Notes de mise à jour de la maintenance 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [Notes de mise à jour de la maintenance 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md)
+         + [Notes de mise à jour de la maintenance 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
+         + [Notes de mise à jour de la maintenance 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md)
+         + [Notes de mise à jour de la maintenance 2023.8.0](/help/release-notes/maintenance/2023/2023-8-0.md)
+         + [Notes de mise à jour de la maintenance 2023.7.0](/help/release-notes/maintenance/2023/2023-7-0.md)
+         + [Notes de mise à jour de la maintenance 2023.6.0](/help/release-notes/maintenance/2023/2023-6-0.md)
+         + [Notes de mise à jour de la maintenance 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
+         + [Notes de mise à jour de la maintenance 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
+         + [Notes de mise à jour de la maintenance 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
