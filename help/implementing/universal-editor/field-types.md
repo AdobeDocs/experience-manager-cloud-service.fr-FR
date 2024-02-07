@@ -2,9 +2,9 @@
 title: Définition des modèles, champs et types de composants
 description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
+source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1004'
 ht-degree: 11%
 
 ---
@@ -81,7 +81,7 @@ Un objet de champ possède la définition de type suivante.
 | `required` | `boolean` | Le champ est-il obligatoire ? | Non |
 | `readOnly` | `boolean` | Le champ est-il en lecture seule ? | Non |
 | `hidden` | `boolean` | Le champ est-il masqué par défaut ? | Non |
-| `condition` | `RulesLogic` | Règle pour afficher ou masquer le champ | Non |
+| `condition` | `RulesLogic` | Règle pour afficher ou masquer le champ en fonction d’une [condition](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Non |
 | `multi` | `boolean` | Le champ est-il un champ multiple ? | Non |
 | `validation` | `ValidationType` | Règle ou règles de validation du champ | Non |
 | `raw` | `unknown` | Données brutes pouvant être utilisées par le composant | Non |
