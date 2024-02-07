@@ -3,9 +3,9 @@ title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ Créez un plan pour la traduction de contenu dont vous avez besoin.
 
 Clarifiez la situation concernant votre workflow de mise à jour de contenu. Quel est le processus d’approbation que le système doit prendre en charge ? Est-il possible d’utiliser des workflows AEM pour automatiser ce processus ?
 
-Votre [hiérarchie du contenu](#content-hierarchy) peut être utilisé pour faciliter la traduction.
+Il est possible d’utiliser votre [hiérarchie de contenu](#content-hierarchy) pour faciliter la traduction.
 
 Consultez la section des [ressources supplémentaires](#additional-resources) pour obtenir de la documentation supplémentaire sur les workflows AEM et les outils de traduction, y compris des liens vers le parcours de traduction découplée AEM.
 

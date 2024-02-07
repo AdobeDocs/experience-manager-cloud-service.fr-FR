@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ La modification en place et dans le contexte peut souvent s’avérer préférab
 
 L’éditeur universel vous permet de modifier facilement votre texte en contexte et en place, ce qui vous permet de créer du contenu simple et intuitif.
 
-1. Double-cliquez pour sélectionner le titre du dernier article à modifier.
+1. Double-cliquez sur le titre du dernier article pour le modifier.
 
    ![Interface utilisateur de l’éditeur universel](assets/do-not-localize/ue-component-mode.png)
 
@@ -55,7 +55,7 @@ Universal Editor enregistre automatiquement vos modifications dans l’environne
 
 Vous pouvez également permuter des images tout en restant dans le contexte de votre contenu à l’aide de l’éditeur universel.
 
-1. Sélectionnez l’image du surfeur pour la sélectionner.
+1. Sélectionnez l’image de la personne en train de surfer pour la sélectionner.
 
 1. Dans le rail des composants, vous pouvez voir le détail de la ressource. Sélectionnez la variable **Image en vedette** miniature.
 
@@ -73,7 +73,7 @@ L’image est remplacée par celle que vous avez sélectionnée.
 
 L’éditeur universel vous permet d’interagir avec votre contenu dans son contexte, en voyant le contenu tel qu’il est diffusé sur les appareils de vos utilisateurs.
 
-1. Par défaut, l’éditeur effectue le rendu de la version de bureau de votre contenu. Sélectionnez le bouton de l’émulateur en haut à droite de la barre d’outils de l’éditeur universel pour modifier l’appareil cible.
+1. Par défaut, l’éditeur effectue le rendu de la version de bureau de votre contenu. Sélectionnez le bouton de l’émulateur en haut à droite de la barre d’outils de l’éditeur pour modifier l’appareil cible.
 
    ![Élément de menu de l’émulateur](assets/do-not-localize/ue-emulator-1.png)
 
@@ -89,7 +89,7 @@ Vous pouvez également spécifier des dimensions exactes pour l’émulateur et 
 
 ## Prévisualisation et publication {#preview}
 
-Comme vous devez sélectionner votre contenu pour le modifier dans l’éditeur, celui-ci ne vous permet pas de suivre les liens ou d’interagir avec votre contenu en appuyant ou en cliquant. En mode Aperçu, vous pouvez suivre les liens de votre contenu et l’expérimenter comme le feraient vos utilisateurs avant de le publier.
+Comme vous devez sélectionner votre contenu pour le modifier dans l’éditeur, celui-ci ne vous permet pas de suivre les liens ou d’interagir avec votre contenu en appuyant ou en cliquant dessus. En mode Aperçu, vous pouvez suivre les liens de votre contenu et l’expérimenter comme le feraient vos utilisateurs et utilisatrices avant de le publier.
 
 1. Dans la barre d’outils de l’éditeur universel, sélectionnez **Aperçu**.
 
@@ -111,11 +111,11 @@ Votre contenu est publié.
 
 Pour accélérer votre expérience de création de contenu lorsque l’édition structurée de contenu sans tête est plus avantageuse que l’édition statique, l’éditeur universel vous donne également un accès rapide à l’éditeur de fragments de contenu.
 
-1. Désactivez le mode d’aperçu en appuyant sur **Aperçu** dans la barre d’outils de l’éditeur universel.
+1. Désactivez le mode d’aperçu en appuyant sur le bouton **Aperçu** dans la barre d’outils de l’éditeur universel.
 
-   ![Désactivation du mode Aperçu](assets/do-not-localize/ue-toggle-off-preview.png)
+   ![Désactivation du mode Aperçu.](assets/do-not-localize/ue-toggle-off-preview.png)
 
-1. Faites défiler la page vers le bas jusqu’à la **Aventures** .
+1. Faites défiler la page vers le bas jusqu’à la section **Aventures**.
 
 1. Sélectionnez l’une des aventures telles que **Le camp de surf de Bali** pour la sélectionner.
 

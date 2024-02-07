@@ -1,11 +1,11 @@
 ---
 title: Les bonnes personnes, les bonnes fonctions
-description: Découvrez comment choisir les personnes appropriées et les affecter aux rôles appropriés pour votre projet.
+description: Découvrez comment choisir les bonnes personnes et leur attribuer les bons rôles pour votre projet.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 96%
 >id="aemcloud_chooseteam"
 >title="Choisir la bonne équipe"
 >abstract="Placer les bonnes personnes aux bons postes pour aider à la réussite de votre déploiement Adobe Experience Manager."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=fr" text="Alignement des indicateurs de performance clés"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=fr" text="Évaluation des indicateurs de performance clés"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=fr" text="Aligner des KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=fr" text="Évaluer les KPI"
 
 Il est probable qu’au sein de votre organisation, plusieurs départements possèdent différents aspects de l’expérience digitale. Sans gouvernance, cette phase est propice à un débat sans fin, à des querelles intestines et à la confusion.
 
@@ -74,7 +74,7 @@ Maintenant que vous connaissez les fonctions requises, consultez le graphique ci
 
 <br>
 
-![Graphique à barres horizontales présentant les rôles fictifs et leur niveau d’implication dans l’équipe AEM Assets.](/help/overview/assets/team_involvement2.png)
+![Graphique à barres horizontales présentant les rôles fictifs et leur niveau d’implication dans l’équipe AEM Assets.](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >

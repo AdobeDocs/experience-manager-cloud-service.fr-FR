@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '975'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Consultez la vidéo Aperçu de la version de janvier 2023 pour un résumé des 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelles fonctionnalités de la préversion de [!DNL Sites] {#prerelease-features-sites}
 

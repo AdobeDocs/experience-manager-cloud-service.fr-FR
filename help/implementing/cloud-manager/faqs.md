@@ -3,7 +3,7 @@ title: FAQ relatives à Cloud Manager
 description: Trouvez des réponses aux questions les plus fréquentes sur Cloud Manager dans AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '961'
 ht-degree: 100%
 

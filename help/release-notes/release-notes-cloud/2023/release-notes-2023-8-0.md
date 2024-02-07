@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Import de ressources en bloc à partir d’une source de données.](/help/release-notes/assets/bulk-import.png)
 
-* **Outils de retouche d’images optimisés par Adobe Express**: Facile et intuitive [outils de retouche d’images optimisés par Adobe Express](/help/assets/edit-images-assets-view.md) disponible directement dans AEM Assets pour augmenter la réutilisation du contenu et accélérer la vitesse du contenu.
+* **Outils d’édition d’image optimisés par Adobe Express** : des outils simples et intuitifs [d’édition d’images optimisés par Adobe Express](/help/assets/edit-images-assets-view.md) sont disponibles directement dans AEM Assets pour augmenter la réutilisation du contenu et accélérer sa vitesse de diffusion.
 
   ![Modification d’images avec Adobe Express.](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibilité lors de l’épinglage d’éléments pour l’accès rapide à My Workspace**: possibilité de sélectionner et d’épingler des éléments pour vous, pour l’ensemble de l’organisation ou pour une liste de groupes afin qu’ils s’affichent dans la variable [Section Accès rapide de My Workspace](/help/assets/my-workspace-assets-view.md) en fonction de votre sélection.
+* **Flexibilité lors de l’épinglage d’éléments pour l’accès rapide de Mon espace de travail** : possibilité de sélectionner et d’épingler des éléments pour vous, pour l’ensemble de votre organisation ou pour une liste de groupes afin qu’ils s’affichent dans la [section Accès rapide de Mon espace de travail](/help/assets/my-workspace-assets-view.md) en fonction de votre sélection.
 
   ![Épinglage d’éléments pour les groupes.](/help/release-notes/assets/pin-items-for-groups.png)
 

@@ -1,9 +1,9 @@
 ---
-title: Alignement des indicateurs de performance clés
+title: Aligner des KPI
 description: Découvrez comment choisir les IPC appropriés pour votre mise en oeuvre AEM
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '482'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
->title="Alignement des indicateurs de performance clés"
+>title="Aligner des KPI"
 >abstract="Dans un monde numérique, il est possible de presque tout mesurer. Choisir des KPI appropriés pour votre implémentation d’Adobe Experience Manager aide votre équipe à se concentrer sur ce qui compte le plus."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=fr" text="Évaluer les KPI"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=fr" text="Choix de la bonne équipe"

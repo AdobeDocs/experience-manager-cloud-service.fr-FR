@@ -3,9 +3,9 @@ title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement découplé AEM, apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Pour que les utilisateurs disposent de la meilleure expérience possible lorsqu�
       * Pour vérifier le nombre d’utilisateurs, de demandes et de chargements
 * Accédez aux rapports de performances spécifiques à l’application et à la surface.
    * Une fois le serveur ouvert, vérifiez si les mesures générales apparaissent en vert/orange/rouge, puis identifiez les problèmes spécifiques à l’application.
-   * Ouvrir les mêmes rapports ci-dessus filtrés dans l’application ou l’espace (par exemple, bureau Photoshop, paywall)
+   * Ouvrez les rapports ci-dessus filtrés par application ou par espace (par exemple, la version bureau de Photoshop, un paywall).
    * Utilisez des API de journal Splunk pour accéder aux performances du service et de l’application.
    * Contactez le service clientèle si d’autres problèmes se produisent.
 
@@ -124,7 +124,7 @@ Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous dis
 
 ### Découvrez les applications sur une seule page {#explore-spa}
 
-Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souviendrez peut-être dans le [Prise en main dans le parcours](getting-started.md#integration-levels) nous avons discuté brièvement de la manière dont AEM prend non seulement en charge la livraison sans interface utilisateur et les modèles traditionnels de pile complète, mais peut également prendre en charge les modèles hybrides qui combinent les avantages des deux.
+Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels), nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles full-stack traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
 
 Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours intitulée [Comment créer des applications monopages avec AEM](create-spa.md).
 

@@ -1,17 +1,17 @@
 ---
-title: Notes de mise à jour de la version 2023.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour de la version 2023.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notes de mise à jour de la version 2023.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2023.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1357'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour de la version 2023.6.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2023.6.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour techniques de la version 2023.6.0 d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour de la version 2023.6.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -33,15 +33,15 @@ Consultez la vidéo Aperçu de la version de juin 2023 pour obtenir un résumé 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420971/?quality=12)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelles fonctionnalités de [!DNL Experience Manager Sites] {#sites-features}
 
 * Les fragments de contenu et leurs références peuvent désormais être publiés dans le [service de prévisualisation AEM](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) en utilisant la [console de fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console). Cela permet aux utilisateurs et utilisatrices de prévisualiser l’expérience finale sur une application de prévisualisation découplée avant la mise en ligne.
 
-![Aperçu dans la console de fragments de contenu](/help/assets/content-fragments-console-preview.png)
+![Aperçu dans la console de fragments de contenu.](/help/assets/content-fragments-console-preview.png)
 
-* Les images peuvent désormais être optimisées dynamiquement pour une diffusion web dans des scénarios découplés via GraphQL d’AEM. Les [variables de requête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) peuvent être définies dans les requêtes GraphQL pour permettre aux applications clientes découplées de demander à AEM des images optimisées en conséquence.
+* Les images peuvent désormais être optimisées dynamiquement pour une diffusion web dans des scénarios découplés via GraphQL d’AEM. Les [variables de requête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=fr#query-variables) peuvent être définies dans les requêtes GraphQL pour permettre aux applications clientes découplées de demander à AEM des images optimisées en conséquence.
 * Les balises sur les [variations de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=fr) peuvent désormais être générées au format JSON à l’aide de l’API de diffusion de contenu GraphQL d’AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -58,9 +58,9 @@ La [nouvelle vue Assets](/help/assets/assets-view-introduction.md) est désormai
 
 Experience Manager Assets vous permet maintenant d’en faire plus à partir de l’interface utilisateur des résultats de recherche. Vous pouvez désormais :
 
-* [Effectuer une recherche dans l’emplacement actuel du référentiel](/help/assets/search-assets.md) par défaut au lieu de rechercher le mot-clé dans le référentiel entier.
+* [Effectuez une recherche dans l’emplacement actuel du référentiel](/help/assets/search-assets.md) par défaut au lieu de rechercher le mot-clé dans le référentiel entier.
 
-* [Accédez à l’emplacement du dossier](/help/assets/search-assets.md#aftersearch) pour les ressources qui s’affichent dans les résultats de recherche.
+* [Accédez à l’emplacement du dossier](/help/assets/search-assets.md#aftersearch) des ressources qui s’affichent dans les résultats de recherche.
 
 **Aperçus de miniatures pour les ressources 3D**
 
@@ -74,7 +74,7 @@ Une nouvelle expérience client améliorée pour la [création de partages de li
 
 **Dynamic Media : mise à jour des champs liés au recadrage intelligent dans le profil d’image**
 
-L’interface utilisateur de certains champs liés au redrage intelligent dans un profil d’image est désormais mise à jour pour prendre en compte les instructions actuelles pour définir un recadrage intelligent. Voir [Options de recadrage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
+L’interface utilisateur de certains champs liés au redrage intelligent dans un profil d’image est désormais mise à jour pour prendre en compte les instructions actuelles pour définir un recadrage intelligent. Voir [Options de recadrage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=fr#crop-options).
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-features}
 

@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1017'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Maintenant que vous avez modifié un titre dans l’application, essayez de chan
 
 1. Revenez à l’onglet du navigateur de l’éditeur de fragments de contenu à partir de l’aperçu.
 
-1. Vous devez revenir au bon endroit dans l’éditeur de fragment de contenu. Les chemins de navigation situés en haut à gauche de l’éditeur indiquent où vous vous trouvez dans la hiérarchie du contenu. Sélectionner **Mtn Biker à Canyon** dans les chemins de navigation pour revenir à cette page.
+1. Vous devez revenir au bon endroit dans l’éditeur de fragment de contenu. Les chemins de navigation situés en haut à gauche de l’éditeur indiquent où vous vous trouvez dans la hiérarchie du contenu. Sélectionnez **Mtn Biker in Canyon** dans le chemin de navigation pour revenir à cette page.
 
    ![Chemin de navigation](assets/do-not-localize/swap-image-2.png)
 

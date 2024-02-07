@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2023.7.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2023.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Consultez la vidéo Aperçu de la version de mai 2023 pour obtenir un résumé 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelles fonctionnalités de [!DNL Experience Manager Sites] {#sites-features}
 
@@ -80,7 +80,7 @@ Assets Essentials trie désormais les résultats de la recherche en fonction de
 
 * [**Thèmes prêts à l’emploi**](/help/forms/using-themes-in-core-components.md) **et modèles**: lancez le processus de création de formulaires grâce à nos thèmes et modèles prêts à l’emploi, conçus pour offrir aux professionnels chevronnés et aux nouveaux auteurs de formulaires les moyens d’agir. Créés en toute simplicité à l’aide des composants principaux de Forms adaptatif, ces thèmes et modèles soigneusement traités vous permettent de commencer rapidement à créer des formulaires pour des cas d’utilisation courants.
 
-* **[Composants React pour Forms sans affichage](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: vous pouvez désormais prévisualiser et personnaliser les rendus de formulaire adaptatif sans affichage avec les composants React prêts à l’emploi. Ces composants utilisent les classes BEM des composants principaux de Forms adaptatif pour la mise en forme, ce qui vous permet de personnaliser facilement leur aspect en fonction de vos besoins spécifiques.
+* **[Composants React pour Forms sans affichage](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: vous pouvez désormais prévisualiser et personnaliser les rendus de formulaire adaptatif sans affichage avec les composants React prêts à l’emploi. Ces composants utilisent des classes BEM des composants principaux de formulaires adaptatifs pour la mise en forme, ce qui vous permet de personnaliser facilement leur apparence en fonction de vos besoins spécifiques.
 
 * [**Création d’un Forms adaptatif avec des sections répétables**](/help/forms/create-forms-repeatable-sections.md): vous pouvez désormais effectuer les opérations suivantes : [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr), [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr), et [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr) formulaire adaptatif basé sur des composants répétable pour plusieurs enregistrements de données.  Ces sections répétables vous permettent de fournir facilement plusieurs entrées de données. Cela est utile lorsque les instances de données requises sont inconnues à l’avance. Les utilisateurs et les utilisatrices de Forms peuvent facilement ajouter ou supprimer des sections, ce qui permet d’adapter les formulaires à différents scénarios de saisie de données et de simplifier la collecte de plusieurs occurrences des mêmes données.
 
