@@ -2,7 +2,7 @@
 source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 71%
+ht-degree: 80%
 
 ---
 # Fragments de code {#snippets}
@@ -15,7 +15,7 @@ ht-degree: 71%
 
 [!BADGE Pour créer du contenu AEM pour Edge Delivery Services, cliquez ici.]{type=Positive url="/help/edge/overview.md" tooltip="Création de contenu AEM pour Edge Delivery Services"}
 
-## État de l’éditeur universel {#universal-editor-status}
+## Statut de l’éditeur universel {#universal-editor-status}
 
 >[!NOTE]
 >
