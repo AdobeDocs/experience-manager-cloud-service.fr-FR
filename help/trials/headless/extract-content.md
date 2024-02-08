@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1069'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Vous venez de valider une requête de liste afin d’obtenir une liste complète
 
 ## Requête pour obtenir un fragment de contenu spécifique {#bypath-query}
 
-L’exécution d’une requête byPath vous permet de récupérer du contenu pour un fragment de contenu spécifique. Les pages Détails du produit et celles qui se concentrent sur un jeu de contenu spécifique nécessitent généralement ce type de requête.
+L’exécution d’une requête byPath vous permet de récupérer le contenu d’un fragment de contenu spécifique. Les pages Détails du produit et celles qui se concentrent sur un jeu de contenu spécifique nécessitent généralement ce type de requête.
 
 1. Copiez le fragment de code suivant pour une requête byPath du point d’entrée préchargé **Ressources de démonstration AEM**.
 
@@ -119,9 +119,9 @@ Maintenant que vous avez exécuté les deux principaux types de requêtes, vous 
 
 1. Définissez les éléments que la requête doit contenir pour le modèle de fragment de contenu que vous avez sélectionné. Saisissez une nouvelle fois le crochet ouvert `{`, puis appuyez sur Ctrl + Espace ou Option + Espace pour obtenir une liste de saisie automatique. Sélectionnez `items` dans le menu des options.
 
-1. Sélectionnez la variable **Prettify** pour formater automatiquement votre code afin qu’il soit plus facile à lire.
+1. Appuyez ou cliquez sur le bouton **Enjoliver** pour mettre automatiquement en forme votre code afin qu’il soit plus facile à lire.
 
-1. Une fois l’opération terminée, sélectionnez la variable **Play** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement les `items`, qui sont brièvement surlignées en jaune, et la requête s’exécute.
+1. Une fois l’opération terminée, appuyez ou cliquez sur le bouton **Lecture** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement les `items`, qui sont brièvement surlignées en jaune, et la requête s’exécute.
 
 1. Les résultats s’affichent dans le panneau de droite, à côté de l’éditeur de requêtes.
 
@@ -163,7 +163,7 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
 
    >[!NOTE]
    >
-   >Si vous n’avez pas utilisé les mêmes descriptions de champ que celles décrites dans les modules précédents, mettez à jour les noms de champ dans cette requête.
+   >Si vous n’avez pas utilisé les mêmes descriptions de champ que celles décrites dans les modules précédents, vous devez mettre à jour les noms de champ dans cette requête.
    >
    >Utilisez la fonction de saisie automatique GraphQL (Ctrl+Espace ou Option+Espace) comme décrit précédemment pour identifier les propriétés disponibles.
 
@@ -177,13 +177,13 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
 
 1. Dans le pop-up **Nom de la requête**, attribuez le nom `adventure-list` à votre requête.
 
-1. Sélectionner **Enregistrer sous**.
+1. Sélectionnez **Enregistrer comme**.
 
    ![Conserver la requête](assets/do-not-localize/persist-query.png)
 
 1. La persistance de la requête est confirmée par un message de bannière en bas de l’écran. La requête apparaît désormais également dans le panneau de gauche des requêtes persistantes dans la fenêtre.
 
-1. Pour que la requête persistante soit disponible publiquement, elle doit être publiée, tout comme la manière dont vos fragments de contenu doivent être publiés. Cliquez sur **Publier** en haut à droite de l’éditeur de requêtes pour publier la requête.
+1. Pour que la requête persistante soit disponible publiquement, vous devez la publier, tout comme pour vos fragments de contenu. Cliquez sur le bouton **Publier** en haut à droite de l’éditeur de requêtes pour publier la requête.
 
 1. La publication est confirmée par une notification de bannière.
 

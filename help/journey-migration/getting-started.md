@@ -4,8 +4,8 @@ description: Commencez votre Parcours de migration en vous familiarisant avec le
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 94%
+source-wordcount: '560'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ Avec AEM as a Cloud Service, vos équipes peuvent se concentrer sur l’innovati
 
 Le parcours de migration vers Cloud Service comprend les phases suivantes :
 
-* Commencez par déterminer si votre déploiement est prêt à être déplacé vers AEM as a Cloud Service avec la [Phase de préparation](/help/journey-migration/readiness.md). Au cours de cette phase, vous devez également vous familiariser avec les modifications apportées par AEM as a Cloud Service..
+* Commencez par déterminer si votre déploiement est prêt à être déplacé vers AEM as a Cloud Service avec la [Phase de préparation](/help/journey-migration/readiness.md). Au cours de cette phase, vous devriez également vous familiariser avec les modifications apportées par AEM as a Cloud Service.
 * Ensuite, la [Phase d’implémentation](/help/journey-migration/implementation.md) vous permet de préparer votre code et votre contenu cloud. Au cours de cette phase, vous allez explorer les outils fournis par Adobe pour faciliter la transition vers le cloud.
 * Une fois que tout est en place, vous pouvez effectuer la migration lors de la [Phase d’activation](/help/journey-migration/go-live.md).
 * Enfin, veillez à surveiller les problèmes et à améliorer les performances une fois la migration terminée, lors de la [Phase de post-activation](/help/journey-migration/post-go-live.md).

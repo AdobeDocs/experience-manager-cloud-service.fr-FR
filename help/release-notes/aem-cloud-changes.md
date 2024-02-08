@@ -3,7 +3,7 @@ title: Modifications notables apportées à Adobe Experience Manager (AEM) as a 
 description: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 100%
 

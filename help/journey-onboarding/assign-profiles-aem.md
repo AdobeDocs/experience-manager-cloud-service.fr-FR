@@ -1,13 +1,13 @@
 ---
 title: Attribuer des profils de produit AEM
-description: Une fois vos ressources cloud configurées, accordez à votre équipe l’accès à AEM elle-même à l’aide de profils de produits AEM.
+description: Une fois que vos ressources Cloud sont configurées, vous devez accorder à votre équipe l’accès à AEM lui-même à l’aide de profils de produits AEM.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 77%
+source-wordcount: '878'
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 77%
 >title="Attribuer les profils de produits AEM"
 >abstract="Vous ne disposez pas de l’autorisation requise pour utiliser Experience Manager Assets. Contactez l’administration."
 
-Dans cette partie du [parcours d&#39;intégration,](overview.md) vous apprenez à accorder l’accès à AEM à votre équipe à l’aide de profils de produit AEM.
+Dans cette partie du [parcours d’intégration,](overview.md) vous apprendrez comment accorder l’accès à AEM à votre équipe à l’aide de profils de produits AEM.
 
 ## Objectif {#objective}
 
-Après avoir lu le document précédent dans ce parcours d’intégration, [Création d’environnements,](create-environments.md) et configurez vos ressources cloud de manière à ce que votre équipe ait accès à AEM elle-même à l’aide de profils de produits AEM. En tant qu’administrateur système, vous pouvez le faire en attribuant des profils de produit AEM.
+Une fois que vous aurez lu le document précédent dans ce parcours d’intégration, [Créer des environnements,](create-environments.md) et que vos ressources Cloud seront configurées, vous devrez accorder à votre équipe l’accès à AEM lui-même à l’aide des profils de produit AEM. En tant qu’administrateur ou administratrice système, vous pouvez le faire en attribuant des profils de produit AEM.
 
-Après avoir lu ce document, vous devez comprendre :
+Après avoir lu ce document, vous comprendrez :
 
 * Ce que sont les profils de produits AEM.
 * Comment ajouter des membres de l’équipe à un profil de produit utilisateur AEM.
@@ -74,7 +74,7 @@ Suivez ces étapes pour afficher les profils de produits AEM depuis Admin Consol
 
    ![Sélectionner une instance](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. Vous pouvez voir la liste des profils de produits as a Cloud Service AEM qui peuvent être affectés à un utilisateur en fonction de son rôle.
+1. La liste des profils de produit AEM as a Cloud Service qui devront être attribués à un utilisateur en fonction de son rôle s’affiche.
 
    ![Profils de produits](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -88,11 +88,11 @@ Ces tâches nécessitent que vous soyez un administrateur système avec le profi
 
    ![Gérer l’accès](/help/journey-onboarding/assets/add-team1.png)
 
-1. Un nouvel onglet vous permet d’accéder à Admin Console, à partir de laquelle vous avez accès à l’instance de création de l’environnement. Sélectionner **Administrateurs AEM** ou **Utilisateurs AEM** en fonction des autorisations que cette personne doit recevoir.
+1. Un nouvel onglet vous permet d’accéder à Admin Console, à partir de laquelle vous avez accès à l’instance de création de l’environnement. Sélectionnez **Administrateurs AEM** ou **Utilisateurs AEM** en fonction des autorisations que l’individu concerné doit se voir attribuer.
 
-   ![Attribuer l’accès](/help/journey-onboarding/assets/add-team2.png)
+   ![Attribution de l’accès.](/help/journey-onboarding/assets/add-team2.png)
 
-1. Sélectionner `AEM Administrator` ou `AEM User` et cliquez sur **Ajouter un utilisateur** comme illustré ci-dessous et envoyez les détails nécessaires pour terminer l’ajout du membre de l’équipe.
+1. Sélectionnez `AEM Administrator` ou `AEM User` et cliquez sur **Ajouter un utilisateur** comme illustré ci-dessous et envoyez les détails nécessaires pour terminer l’ajout du membre de l’équipe.
 
    ![Ajouter un membre de l’équipe](/help/journey-onboarding/assets/add-team3.png)
 
@@ -106,8 +106,8 @@ Félicitations ! Les utilisateurs que vous avez affectés aux profils de produi
 
 Cependant, si vous souhaitez mieux comprendre comment les créateurs et les développeurs utilisent le système, vous pouvez continuer avec deux parties facultatives de ce parcours d’intégration :
 
-* [Tâches du développeur et du responsable de déploiement](developers.md) - Où vous découvrez comment les développeurs accèdent à Git pour stocker leur code personnalisé et le déployer à l’aide des pipelines de Cloud Manager.
-* [Tâches utilisateur AEM](aem-users.md) - Où vous apprenez à accéder à l’environnement AEM où vous pouvez commencer à créer du contenu.
+* [Tâches du développeur et du responsable de déploiement](developers.md) - Où vous découvrirez comment les développeurs accèdent à Git pour stocker leur code personnalisé et le déployer à l’aide des pipelines de Cloud Manager.
+* [Tâches utilisateur d’AEM](aem-users.md) - Où vous apprendrez à accéder à l’environnement AEM où vous pouvez commencer à créer du contenu.
 
 ## Ressources supplémentaires {#additional-resources}
 

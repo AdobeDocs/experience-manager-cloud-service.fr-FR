@@ -15,8 +15,8 @@ ht-degree: 92%
 >id="aemcloud_ctt_prereqs"
 >title="Points importants concernant l’utilisation de l’outil de transfert de contenu"
 >abstract="Examinez les points à prendre en compte lors de l’utilisation de l’outil de transfert de contenu, notamment les versions Java™ et AEM, les types de magasins de données pris en charge, les considérations relatives aux groupes d’utilisateurs, etc."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=fr" text="Points importants concernant l’utilisation de l’outil de transfert de contenu"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices?lang=fr" text="Bonnes pratiques et consignes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=fr" text="Points importants concernant l’utilisation de l’outil de transfert de contenu"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices?lang=fr" text="Bonnes pratiques et consignes"
 
 Le tableau suivant résume les conditions préalables requises pour l’utilisation de l’outil de transfert de contenu.
 
