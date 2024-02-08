@@ -4,10 +4,10 @@ description: Liste de toutes les API comptabilisées comme des transactions
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 60%
+source-wordcount: '1598'
+ht-degree: 50%
 
 ---
 
@@ -31,44 +31,42 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Suivi des envois de formulaire"
->abstract="Effectuez sans effort le suivi des envois de formulaire avec une vue consolidée pour le nombre total ou examinez les détails spécifiques à l’instance. Utilisez le graphique à barres intuitif pour identifier les tendances, comparer les instances et prendre des décisions éclairées en un coup d’oeil."
+>abstract="Surveillez facilement les envois de formulaire sur votre instance de publication AEM Forms à l’aide de notre tableau de bord de suivi intuitif. Le graphique fournit des données spécifiques à l’instance actuelle, ce qui vous permet d’analyser rapidement les tendances et de prendre des décisions éclairées. Pour les données d’envoi d’autres instances, accédez simplement au tableau de bord de l’instance correspondante."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="Suivi des conversions de formulaires"
->abstract="Conserver les onglets sur les conversions de formulaires sans effort grâce à un résumé du nombre total de décomptes ou explorer les détails de chaque instance AEM Forms. Le graphique à barres facile à lire permet de repérer les tendances, de comparer les instances et de prendre des décisions rapides et éclairées."
+>abstract="Soyez informé des conversions de formulaire avec un résumé du nombre total de conversions. Le graphique fournit des données spécifiques à l’instance de publication AEM Forms actuelle, ce qui vous permet d’analyser rapidement les tendances et de prendre des décisions éclairées. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Durée moyenne de génération de formulaire"
->abstract="Le graphique illustre le temps moyen nécessaire à la création d’un formulaire. Chaque barre du graphique représente un formulaire spécifique et la hauteur de la barre indique la durée moyenne de création de formulaire pendant cette période. L’analyse de ce graphique permet aux utilisateurs de comprendre l’efficacité et la vitesse de création de formulaires sur différentes périodes ou dans différents contextes, ce qui permet d’obtenir des informations sur les améliorations potentielles."
+>abstract="Le graphique illustre le temps moyen nécessaire à la création d’un formulaire. Chaque barre du graphique représente un formulaire spécifique et la hauteur de la barre indique la durée moyenne de création de formulaire pendant cette période. L’analyse de ce graphique permet aux utilisateurs de comprendre l’efficacité et la vitesse de création de formulaires sur différentes périodes ou dans différents contextes, ce qui permet d’obtenir des informations sur les améliorations potentielles. Le graphique fournit des données spécifiques à l’instance d’auteur AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de l’instance correspondante."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Durée moyenne de création de formulaire"
->abstract="Le graphique affiche la durée moyenne de création et de publication d’un formulaire, mesurée à partir du jour initial où le formulaire a été ouvert pour modification. Chaque barre correspond à une période spécifique pour un formulaire, la hauteur de la barre indiquant la durée moyenne passée du début du développement du formulaire à sa finalisation et publication."
+>abstract="Le graphique affiche la durée moyenne de création et de publication d’un formulaire, mesurée à partir du jour initial où le formulaire a été ouvert pour modification. Chaque barre correspond à une période spécifique pour un formulaire, la hauteur de la barre indiquant la durée moyenne passée du début du développement du formulaire à sa finalisation et publication. Le graphique fournit des données spécifiques à l’instance d’auteur AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de l’instance correspondante."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Nouveau suivi Forms"
->abstract="Le graphique fournit des informations sur le nombre ou la fréquence des formulaires nouvellement créés au cours de périodes spécifiques. Chaque barre du graphique représente une unité de mesure distincte, comme les jours, les semaines ou les mois. La hauteur de chaque barre indique la quantité ou la fréquence des nouveaux formulaires créés au cours de cet intervalle particulier."
+>abstract="Le graphique fournit des informations sur le nombre ou la fréquence des formulaires nouvellement créés au cours de périodes spécifiques. Chaque barre du graphique représente une unité de mesure distincte, comme les jours, les semaines ou les mois. La hauteur de chaque barre indique la quantité ou la fréquence des nouveaux formulaires créés au cours de cet intervalle particulier. Le graphique fournit des données spécifiques à l’instance d’auteur AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de l’instance correspondante."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Suivi Forms publié"
->abstract="Le graphique fournit des informations sur le nombre ou la fréquence de publication des formulaires au cours de périodes spécifiques. Cela vous permet de comprendre les tendances, les modèles ou les variations de la publication des formulaires au fil du temps, d’aider à surveiller la productivité, d’identifier les pics de publication ou d’évaluer la réussite des modifications apportées au processus de publication des formulaires."
+>abstract="Le graphique fournit des informations sur le nombre ou la fréquence de publication des formulaires au cours de périodes spécifiques. Cela vous permet de comprendre les tendances, les modèles ou les variations de la publication des formulaires au fil du temps, d’aider à surveiller la productivité, d’identifier les pics de publication ou d’évaluer la réussite des modifications apportées au processus de publication des formulaires. Le graphique fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
-<!-- 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Form Fragments Tracker"
->abstract="This graph helps you see how many form fragments people use in their forms. It gives you a sense of how popular or common these reusable parts are in form building."
+>title="Suivi Forms publié"
+>abstract="Ce graphique vous permet de voir le nombre de fragments de formulaire que les utilisateurs utilisent dans leurs formulaires. Cela vous donne une idée de la popularité ou de la banalité de ces parties réutilisables dans la création de formulaires. Le graphique fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Average Duration for Form Fragments Creation"
->abstract= "The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. Each bar corresponds to a specific time frame for a form fragment, with the bar height indicating the average time taken from the start of form fragment development to its finalization and publication."
-
+>title="Suivi Forms publié"
+>abstract="Le graphique affiche la durée moyenne de création d’un fragment de formulaire, mesurée à partir du jour initial où le fragment de formulaire a été ouvert pour modification. Chaque barre correspond à une période spécifique pour un fragment de formulaire, la hauteur de la barre indiquant la durée moyenne passée du début du développement du fragment de formulaire à sa finalisation et à sa publication. Le graphique fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
 <!-- 
 
