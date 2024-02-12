@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: 03293f49e583d8b40bafd95bbc89c9ba5c024da8
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 86%
 
 ---
 
@@ -93,6 +93,11 @@ Assets Essentials vous permet désormais de définir une liste bloquée contena
 * **[Protégez vos documents avec les API DocAssurance (qui font partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)** : les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seules les personnes autorisées peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
   Vous pouvez écrire à `aem-forms-early-adopter-program@adobe.com` depuis votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.
+
+* **[Vous pouvez tirer parti du service de données Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** pour activer la collecte côté client pour AEM as a Cloud Service.
+Le Service de données Real User Monitoring (RUM) offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Bien que cela soit bénéfique pour les clients qui utilisent un réseau de diffusion de contenu géré par l’Adobe ou un réseau de diffusion de contenu non géré par l’Adobe. En outre, pour les clients qui utilisent un réseau de diffusion de contenu non géré par un Adobe, les rapports de trafic automatisés peuvent désormais être activés pour eux, ce qui évite d’avoir à partager n’importe quel rapport de trafic avec un Adobe.
+
+  Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com`, ainsi que le nom de domaine de chacun des environnements pour lesquels vous souhaitez activer l’utilisation de RUM depuis votre adresse électronique associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance des utilisateurs réels (RUM) pour vous.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
