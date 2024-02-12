@@ -2,16 +2,16 @@
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
+source-git-commit: 13a2aad1fc8080fb0d5060fcc31c9b71f1a833ca
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2682'
 ht-degree: 5%
 
 ---
 
 # Demandes de contenu Cloud Service
 
-## Présentation {#introduction}
+## Introduction {#introduction}
 
 Les demandes de contenu de Cloud Service sont mesurées par le biais d’une collecte de données côté serveur. La collection est activée via l’analyse des journaux CDN.
 
@@ -81,7 +81,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 
 ## Collection côté client {#cliendside-collection}
 
-### Surveillance des utilisateurs réels (RUM) pour AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### Service de surveillance des utilisateurs réels pour AEM as a Cloud Service {#real-user-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
@@ -94,7 +94,7 @@ La surveillance des utilisateurs réels (RUM) est un type de technologie de surv
 
 La surveillance des utilisateurs réels (RUM) fournit des informations détaillées sur les principales mesures de performances, depuis le lancement de l’URL jusqu’à ce que la demande soit renvoyée au navigateur. Cela aide les développeurs à améliorer l’application afin qu’elle soit facile à utiliser pour les utilisateurs finaux.
 
-### Qui peut bénéficier du service de surveillance des données RUM ? {#who-can-benefit-from-rum-data-monitoring-service}
+### Qui peut bénéficier de Real User Monitoring Service ? {#who-can-benefit-from-rum-service}
 
 Le service de données RUM est bénéfique pour tous les clients, que ce soit l’utilisation de l’Adobe ou de leur propre réseau de diffusion de contenu. Il offre un reflet plus précis des interactions utilisateur, ce qui garantit une mesure fiable de l’engagement du site web en reflétant le nombre de pages vues côté client.
 
@@ -104,17 +104,17 @@ Pour les clients qui utilisent leur propre réseau de diffusion de contenu, ils 
 
 En outre, tous les clients bénéficient d’informations approfondies sur les performances de la page, afin d’optimiser efficacement leurs expériences numériques.
 
-### Comprendre le fonctionnement du service de données Real User Monitoring (RUM) {#understand-how-the-rum-data-service-works}
+### Comprendre le fonctionnement de Real User Monitoring Service {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager utilise la surveillance des utilisateurs réels (RUM) pour aider les clients et les Adobes à comprendre la manière dont les visiteurs interagissent avec les sites utilisant Adobe Experience Manager, à diagnostiquer les problèmes de performances et à mesurer l’efficacité des expériences. RUM protège la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues sera surveillée) et une exclusion judicieuse de toutes les informations d’identification personnelle (PII).
 
-### Surveillance des utilisateurs réels (RUM) et confidentialité {#rum-and-privacy}
+### Real User Monitoring Service et confidentialité {#rum-service-and-privacy}
 
 La surveillance des utilisateurs réels dans Adobe Experience Manager est conçue pour préserver la confidentialité des visiteurs et minimiser la collecte de données. En tant que visiteur, cela signifie qu’aucune information personnelle ne sera collectée par le site que vous visitez ou mise à disposition de l’Adobe.
 
 En tant qu’opérateur de site, cela signifie qu’aucun opt-in supplémentaire n’est nécessaire pour activer la surveillance par le biais de cette fonctionnalité. Par conséquent, il n’y aura pas de pop-up supplémentaire que les utilisateurs finaux pourront accepter pour activer la surveillance RUM.
 
-### Etapes des données RUM {#rum-data-sampling}
+### Échantillonnage des données du service de surveillance des utilisateurs réel {#rum-service-data-sampling}
 
 Les solutions d’analyse web traditionnelles tentent de collecter des données sur chaque visiteur. La surveillance des utilisateurs réels de Adobe Experience Manager ne capture que les informations provenant d’une petite fraction des pages vues. La surveillance des utilisateurs réels (RUM) est destinée à être échantillonnée et rendue anonyme plutôt qu’un remplacement pour les analyses. Par défaut, le ratio d’échantillonnage des pages est de 1:100. Les opérateurs du site ne peuvent pas configurer ce nombre pour augmenter ou diminuer le taux d&#39;échantillonnage à ce jour. Pour estimer précisément le trafic total, nous rassemblons des données détaillées d’une seule page pour chaque centaine de pages vues, ce qui vous permet d’approximer de manière fiable le trafic global.&quot;
 
@@ -136,14 +136,14 @@ La surveillance des utilisateurs réels (RUM) est conçue pour empêcher la coll
 * La cible, ou le lien vers une page ou une ressource externe avec laquelle l’utilisateur interagit pour le point de contrôle mentionné ci-dessus. Par exemple : `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * Les mesures de performances des principales caractéristiques du web (CWV), la plus grande peinture de contenu (LCP), le premier délai d’entrée (FID) et le changement de mise en page cumulatif (CLS) qui décrivent la qualité de l’expérience du visiteur.
 
-### Configuration du service de données de surveillance des utilisateurs réels (RUM) {#how-to-set-up-them-rum-data-service}
+### Configuration du service de surveillance des utilisateurs réel {#how-to-set-up-the-rum-service}
 
 * Si vous souhaitez faire partie de notre programme d&#39;adoption précoce, veuillez envoyer un email à `aemcs-rum-adopter@adobe.com`, ainsi que le nom de domaine de l’environnement de production, d’évaluation et de développement à partir de l’adresse électronique associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance des utilisateurs réels (RUM) pour vous.
 * Une fois cette opération terminée, l’équipe produit de l’Adobe crée un canal de collaboration client.
 * L’équipe produit de l’Adobe vous contactera pour vous fournir la clé de domaine et l’URL du tableau de bord de données dans lesquelles vous pouvez afficher les pages vues et [Les principales vitales du Web (CWV)](https://web.dev/vitals/) mesures collectées par la collection Real User Monitoring (RUM) côté client.
 * Vous recevrez alors des conseils sur l’utilisation de la clé de domaine pour accéder à l’URL du tableau de bord de données et afficher les mesures.
 
-### Utilisation des données de surveillance des utilisateurs réels (RUM) {#how-rum-data-is-being-used}
+### Utilisation des données Real User Monitoring Service {#how-rum-service-data-is-being-used}
 
 Les données RUM sont bénéfiques aux fins suivantes :
 
