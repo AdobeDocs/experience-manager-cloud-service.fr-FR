@@ -3,10 +3,10 @@ title: « Interface utilisateur dʼ[!DNL Assets view] »
 description: Comprendre l’interface utilisateur et de la navigation dans [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
+source-git-commit: 39166f59eb773a149ba28be2b34d0c1aa6c831b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 85%
+source-wordcount: '912'
+ht-degree: 67%
 
 ---
 
@@ -24,15 +24,7 @@ Lorsque vous vous connectez à [!DNL Assets view], l’interface suivante s’af
 
 ![[!DNL Assets view]Interface utilisateur](assets/assets-view-interface.png)
 
-    *A : barre latérale gauche pour parcourir le référentiel et qui permet d’accéder à d’autres options.*
-    *B : afficher ou réduire la barre latérale gauche pour augmenter la zone d’affichage des ressources.*
-    *C : filtrer les résultats de la recherche.*
-    *D : sélectionner tout le contenu du dossier sélectionné.*
-    *E : options de tri des ressources.*
-    *F : zone de recherche.*
-    *G : télécharger ou glisser-déposer des fichiers à l’aide du bouton `Add Assets`.*
-    *H : créer un nouveau dossier.*
-    *I : basculer entre différentes vues.*
+**A**: barre latérale gauche pour parcourir le référentiel et donne accès à quelques autres options. **B**: affiche ou réduit la barre latérale gauche pour augmenter la zone d’affichage des ressources. **C**: filtrage des résultats de recherche **D**: sélectionnez tout le contenu du dossier sélectionné. **E**: options de tri des ressources **F**: zone de recherche **G**: téléchargez ou faites glisser et déposez des fichiers à l’aide de `Add Assets` button **h**: création d’un dossier **I**: bascule entre différentes vues
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -82,23 +74,7 @@ Pour prévisualiser une ressource, sélectionnez-la et cliquez sur ![icône de d
 
 ![Aperçu d’une ressource](assets/preview-asset-2.png)
 
-*A : revenir au dossier actuel ou au résultat de la recherche actuel dans le référentiel.*
-*B : nom et format du fichier que vous prévisualisez.*
-*C : affecter des tâches.*
-*D : télécharger une ressource.*
-*E : prévisualiser la ressource et afficher les informations de métadonnées.*
-*D : métadonnées avancées.*
-*E : mots-clés et balises intelligentes.*
-*F : commenter et annoter.*
-*G : afficher les tâches liées à la ressource sélectionnée.*
-*H : afficher et gérer les versions.*
-*I : afficher les rendus de l’image.*
-*J : modifier l’image.*
-*K : métadonnées de base.*
-*L : métadonnées avancées.*
-*M : mots-clés et balises intelligentes.*
-*N : aperçu plus détaillé. Zoom, plein écran et autres options*
-*O : passer à la ressource précédente ou suivante dans le dossier actif sans revenir au dossier.*
+**A**: revenez au dossier actif ou au résultat de la recherche dans le référentiel **B**: nom et format du fichier prévisualisé **C**: affecter des tâches **D**: métadonnées avancées **E**: mots-clés et balises intelligentes **F**: commentaire et annotation **G**: affiche les tâches liées à la ressource sélectionnée. **h**: affichage et gestion des versions **I**: affiche les rendus de l’image. **J**: Modifier l’image **k**: métadonnées de base **L**: métadonnées avancées **M**: mots-clés et balises intelligentes **N**: aperçu plus précis. Zoom, plein écran et autres options **O**: passez à la ressource précédente ou suivante dans le dossier actif sans revenir au dossier
 
 Vous pouvez également prévisualiser des vidéos.
 
