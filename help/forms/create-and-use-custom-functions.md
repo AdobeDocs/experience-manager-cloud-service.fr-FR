@@ -5,10 +5,10 @@ keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalis
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 94a290964a92f8c6ed353d9c77f3dd3b8a5598a4
+source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 14%
+source-wordcount: '763'
+ht-degree: 15%
 
 ---
 
@@ -64,11 +64,11 @@ Vous pouvez créer une fonction personnalisée avec ou sans commentaires jsdoc.
             // code to be executed
         }
 ```
+<!--
 
-* **Fonction Flèche avec commentaire jsdoc obligatoire**
+* **Arrow function with mandatory jsdoc comment**
 
-Voici quelques exemples de création de fonctions Flèche :
-
+Some of the examples to create Arrow functions are:
 ```javascript
     /**
     * test function
@@ -82,7 +82,6 @@ Voici quelques exemples de création de fonctions Flèche :
     };
 ```
 
-<!-- 
     * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
