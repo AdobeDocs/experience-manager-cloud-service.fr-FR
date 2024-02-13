@@ -2,9 +2,9 @@
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 13a2aad1fc8080fb0d5060fcc31c9b71f1a833ca
+source-git-commit: 9033820fa0dc8eee181e3f581675f45cf11e694a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2688'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 5%
 Les demandes de contenu de Cloud Service sont mesurées par le biais d’une collecte de données côté serveur. La collection est activée via l’analyse des journaux CDN.
 
 >[!NOTE]
->En outre, pour un nombre limité de [Clients Adopteurs anticipés](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter), la collecte côté client sera également activée via la mesure RUM (surveillance des utilisateurs réels). Pour en savoir plus, consultez la documentation de la section [cet article](#real-user-monitoring-for-aem-as-a-cloud-service).
+>En outre, pour un nombre limité de [Clients Adopteurs anticipés](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter), la collecte côté client sera également activée par le biais de la mesure du service de surveillance des utilisateurs réels. Pour en savoir plus, consultez la documentation de la section [cet article](#real-user-monitoring-for-aem-as-a-cloud-service).
 
 ## Compréhension des requêtes de contenu Cloud Service {#understaing-cloud-service-content-requests}
 
 Les demandes de contenu sont automatiquement collectées côté serveur à la périphérie d’Adobe Experience Manager as a Cloud Service, via une analyse automatisée des fichiers journaux provenant du réseau de diffusion de contenu as a Cloud Service AEM. Pour ce faire, isolez le HTML de renvoi des demandes. `(text/html)` ou JSON `(application /Json)` contenu du réseau de diffusion de contenu, et selon plusieurs règles d’inclusion et d’exclusion détaillées ci-dessous. Une demande de contenu se produit indépendamment du contenu renvoyé qui est diffusé à partir des caches CDN ou du contenu qui retourne à l’origine du CDN (AEM dispatchers).
 
-Le service de données de surveillance des utilisateurs réels (RUM), la collection côté client, offre un reflet plus précis des interactions utilisateur, assurant une mesure fiable de l’engagement du site web. Les clients disposent ainsi d’informations avancées sur le trafic et les performances de leurs pages. Bien que cela soit bénéfique pour les clients qui utilisent le réseau de diffusion de contenu géré par Adobe ou un réseau de diffusion de contenu géré par non Adobe. En outre, la création de rapports de trafic automatique peut désormais être activée pour les clients qui utilisent un réseau de diffusion de contenu géré par un autre Adobe, ce qui évite d’avoir à partager les rapports de trafic avec Adobe.
+Le service de surveillance des utilisateurs réels , la collection côté client, offre un reflet plus précis des interactions utilisateur, assurant une mesure fiable de l’engagement du site web. Les clients disposent ainsi d’informations avancées sur le trafic et les performances de leurs pages. Bien que cela soit bénéfique pour les clients qui utilisent le réseau de diffusion de contenu géré par Adobe ou un réseau de diffusion de contenu géré par non Adobe. En outre, la création de rapports de trafic automatique peut désormais être activée pour les clients qui utilisent un réseau de diffusion de contenu géré par un autre Adobe, ce qui évite d’avoir à partager les rapports de trafic avec Adobe.
 
 Pour les clients qui placent leur propre réseau de diffusion de contenu en plus des rapports as a Cloud Service côté serveur, les nombres ne peuvent pas être utilisés pour comparer les demandes de contenu sous licence. Ces chiffres devront être mesurés par le client au bord du réseau de diffusion de contenu externe. Pour ces clients, la création de rapports côté client et les performances associées, la variable [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) est l’option recommandée pour l’Adobe. Voir [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) pour obtenir des informations sur la manière de souscrire.
 
@@ -90,9 +90,9 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 
 ### Vue d’ensemble {#overview}
 
-La surveillance des utilisateurs réels (RUM) est un type de technologie de surveillance des performances qui capture et analyse en temps réel les expériences utilisateur numériques d’un site web ou d’une application. Il offre une visibilité sur les performances en temps réel d’une application web et fournit des informations précises sur l’expérience de l’utilisateur final.
+Le service de surveillance des utilisateurs réels est un type de technologie de surveillance des performances qui capture et analyse en temps réel les expériences utilisateur numériques d’un site web ou d’une application. Il offre une visibilité sur les performances en temps réel d’une application web et fournit des informations précises sur l’expérience de l’utilisateur final.
 
-La surveillance des utilisateurs réels (RUM) fournit des informations détaillées sur les principales mesures de performances, depuis le lancement de l’URL jusqu’à ce que la demande soit renvoyée au navigateur. Cela aide les développeurs à améliorer l’application afin qu’elle soit facile à utiliser pour les utilisateurs finaux.
+Le service de surveillance des utilisateurs réels fournit des informations détaillées sur les mesures de performances clés, depuis le lancement de l’URL jusqu’à ce que la demande soit renvoyée au navigateur, ce qui aide les développeurs à améliorer l’application afin qu’elle soit facile à utiliser pour les utilisateurs finaux.
 
 ### Qui peut bénéficier de Real User Monitoring Service ? {#who-can-benefit-from-rum-service}
 
@@ -110,19 +110,19 @@ Adobe Experience Manager utilise la surveillance des utilisateurs réels (RUM) p
 
 ### Real User Monitoring Service et confidentialité {#rum-service-and-privacy}
 
-La surveillance des utilisateurs réels dans Adobe Experience Manager est conçue pour préserver la confidentialité des visiteurs et minimiser la collecte de données. En tant que visiteur, cela signifie qu’aucune information personnelle ne sera collectée par le site que vous visitez ou mise à disposition de l’Adobe.
+Le service de surveillance des utilisateurs réels de Adobe Experience Manager est conçu pour préserver la confidentialité des visiteurs et minimiser la collecte de données. En tant que visiteur, cela signifie qu’aucune information personnelle ne sera collectée par le site que vous visitez ou mise à disposition de l’Adobe.
 
 En tant qu’opérateur de site, cela signifie qu’aucun opt-in supplémentaire n’est nécessaire pour activer la surveillance par le biais de cette fonctionnalité. Par conséquent, il n’y aura pas de pop-up supplémentaire que les utilisateurs finaux pourront accepter pour activer la surveillance RUM.
 
 ### Échantillonnage des données du service de surveillance des utilisateurs réel {#rum-service-data-sampling}
 
-Les solutions d’analyse web traditionnelles tentent de collecter des données sur chaque visiteur. La surveillance des utilisateurs réels de Adobe Experience Manager ne capture que les informations provenant d’une petite fraction des pages vues. La surveillance des utilisateurs réels (RUM) est destinée à être échantillonnée et rendue anonyme plutôt qu’un remplacement pour les analyses. Par défaut, le ratio d’échantillonnage des pages est de 1:100. Les opérateurs du site ne peuvent pas configurer ce nombre pour augmenter ou diminuer le taux d&#39;échantillonnage à ce jour. Pour estimer précisément le trafic total, nous rassemblons des données détaillées d’une seule page pour chaque centaine de pages vues, ce qui vous permet d’approximer de manière fiable le trafic global.&quot;
+Les solutions d’analyse web traditionnelles tentent de collecter des données sur chaque visiteur. Le service de surveillance des utilisateurs réels de Adobe Experience Manager ne capture que les informations provenant d’une petite fraction des pages vues. Les données du service de surveillance des utilisateurs réels sont censées être échantillonnées et rendues anonymes plutôt qu’un remplacement pour les analyses. Par défaut, le ratio d’échantillonnage des pages est de 1:100. Les opérateurs du site ne peuvent pas configurer ce nombre pour augmenter ou diminuer le taux d&#39;échantillonnage à ce jour. Pour estimer précisément le trafic total, nous rassemblons des données détaillées d’une seule page pour chaque centaine de pages vues, ce qui vous permet d’approximer de manière fiable le trafic global.&quot;
 
 Comme la décision de collecter les données est prise sur une page vue par page, il devient pratiquement impossible de suivre les interactions sur plusieurs pages. RUM n’a aucun concept de visites, de visiteurs ou de sessions, uniquement des pages vues. C&#39;est par conception.
 
 ### Données en cours de collecte {#what-data-is-being-collected}
 
-La surveillance des utilisateurs réels (RUM) est conçue pour empêcher la collecte d’informations d’identification personnelle. L’ensemble complet des informations pouvant être collectées par la surveillance des utilisateurs réels de Adobe Experience Manager est répertorié ci-dessous :
+Le service de surveillance des utilisateurs réels est conçu pour empêcher la collecte d’informations d’identification personnelle. L’ensemble complet des informations pouvant être collectées par le service de surveillance des utilisateurs réels de Adobe Experience Manager est répertorié ci-dessous :
 
 * Nom d’hôte du site visité, par exemple : `experienceleague.adobe.com`
 * Type d’agent utilisateur large utilisé pour afficher la page, par exemple : bureau ou mobile
@@ -140,7 +140,7 @@ La surveillance des utilisateurs réels (RUM) est conçue pour empêcher la coll
 
 * Si vous souhaitez faire partie de notre programme d&#39;adoption précoce, veuillez envoyer un email à `aemcs-rum-adopter@adobe.com`, ainsi que le nom de domaine de l’environnement de production, d’évaluation et de développement à partir de l’adresse électronique associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance des utilisateurs réels (RUM) pour vous.
 * Une fois cette opération terminée, l’équipe produit de l’Adobe crée un canal de collaboration client.
-* L’équipe produit de l’Adobe vous contactera pour vous fournir la clé de domaine et l’URL du tableau de bord de données dans lesquelles vous pouvez afficher les pages vues et [Les principales vitales du Web (CWV)](https://web.dev/vitals/) mesures collectées par la collection Real User Monitoring (RUM) côté client.
+* L’équipe produit de l’Adobe vous contactera pour vous fournir la clé de domaine et l’URL du tableau de bord de données dans lesquelles vous pouvez afficher les pages vues et [Les principales vitales du Web (CWV)](https://web.dev/vitals/) mesures collectées par la collection de services de surveillance des utilisateurs réels côté client.
 * Vous recevrez alors des conseils sur l’utilisation de la clé de domaine pour accéder à l’URL du tableau de bord de données et afficher les mesures.
 
 ### Utilisation des données Real User Monitoring Service {#how-rum-service-data-is-being-used}
@@ -157,11 +157,11 @@ Lorsque vous analyserez ces données, il se peut qu’il y ait ou non des écart
 
 1. **Blocage des dispositifs de suivi**
 
-   * Les utilisateurs finaux qui utilisent des bloqueurs de suivi ou des extensions de confidentialité peuvent empêcher la collecte de données de Real User Monitoring (RUM), car ces outils limitent l’exécution des scripts de suivi. Cette restriction peut entraîner des pages vues et des interactions utilisateur sous-estimées, ce qui crée une incohérence entre l’activité réelle du site et les données capturées par RUM.
+   * Les utilisateurs finaux qui utilisent des bloqueurs de suivi ou des extensions de confidentialité peuvent empêcher la collecte de données du service de surveillance des utilisateurs réels, car ces outils limitent l’exécution des scripts de suivi. Cette restriction peut entraîner des pages vues et des interactions utilisateur sous-estimées, ce qui crée une incohérence entre l’activité réelle du site et les données capturées par RUM.
 
 1. **Limites de la capture d’appels API/JSON**
 
-   * Le service de données RUM se concentre sur l’expérience côté client et ne capture pas actuellement l’API principal ou les appels JSON. L’exclusion de ces appels des données de surveillance des utilisateurs réels (RUM) créera des écarts par rapport aux demandes de contenu mesurées par CDN Analytics.
+   * Le service de données RUM se concentre sur l’expérience côté client et ne capture pas actuellement l’API principal ou les appels JSON. L’exclusion de ces appels des données du service de surveillance des utilisateurs réel créera des écarts par rapport aux demandes de contenu mesurées par CDN Analytics.
 
 ### FAQ {#faq}
 
