@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Découvrez la validation locale, le débogage, la structure de fichiers du mode flexible et comment migrer du mode hérité vers le mode flexible.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
 workflow-type: tm+mt
-source-wordcount: '2971'
-ht-degree: 95%
+source-wordcount: '3028'
+ht-degree: 93%
 
 ---
 
@@ -300,7 +300,7 @@ Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `http
 
 >[!NOTE]
 >
-Consultez la section [Rechargement et validation automatiques](#automatic-loading) pour une alternative efficace à l’exécution de `validate.sh` après chaque modification de la configuration.
+>Consultez la section [Rechargement et validation automatiques](#automatic-loading) pour une alternative efficace à l’exécution de `validate.sh` après chaque modification de la configuration.
 
 ### Phase 1 {#first-phase}
 
@@ -443,8 +443,8 @@ Cette phase vérifie la syntaxe Apache en démarrant Apache HTTPD dans un conten
 
 >[!NOTE]
 >
-Les utilisateurs et utilisatrices de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Cette exigence est un prérequis pour l’exécution et le débogage du Dispatcher sur un ordinateur local.
-Pour Windows et macOS, Adobe vous recommande d’utiliser Docker Desktop.
+>Les utilisateurs et utilisatrices de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Cette exigence est un prérequis pour l’exécution et le débogage du Dispatcher sur un ordinateur local.
+>Pour Windows et macOS, Adobe vous recommande d’utiliser Docker Desktop.
 
 Cette phase peut également être exécutée indépendamment via `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -513,13 +513,13 @@ Les journaux des environnements cloud sont exposés par le biais du service de j
 
 >[!NOTE]
 >
-Pour les environnements sur AEM as a Cloud Service, le débogage est le niveau maximal de verbosité. Le niveau de journalisation de trace n’étant pas pris en charge, évitez de le définir lorsque vous travaillez dans des environnements cloud.
+>Pour les environnements sur AEM as a Cloud Service, le débogage est le niveau maximal de verbosité. Le niveau de journalisation de trace n’étant pas pris en charge, évitez de le définir lorsque vous travaillez dans des environnements cloud.
 
 ### Rechargement et validation automatiques {#automatic-reloading}
 
 >[!NOTE]
 >
-En raison d’une limitation du système d’exploitation Windows, cette fonctionnalité est uniquement disponible pour les utilisateurs et utilisatrices de Linux® et macOS.
+>En raison d’une limitation du système d’exploitation Windows, cette fonctionnalité est uniquement disponible pour les utilisateurs et utilisatrices de Linux® et macOS.
 
 Au lieu d’exécuter la validation locale (`validate.sh`) et de démarrer le conteneur Docker (`docker_run.sh`) chaque fois que la configuration est modifiée, vous pouvez également exécuter le script `docker_run_hot_reload.sh`. Le script recherche toutes les modifications apportées à la configuration et la recharge automatiquement, puis exécute à nouveau la validation. L’utilisation de cette option vous permet de gagner beaucoup de temps lors du débogage.
 
@@ -549,6 +549,25 @@ Cloud manager validator 2.0.43
 2022/07/04 09:53:55 No issues found
 INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
+
+### Injection de variables d’environnement personnalisées {#environment-variables}
+
+Les variables d’environnement personnalisées peuvent être utilisées avec le SDK du Dispatcher en les définissant dans un fichier distinct et en le référençant dans la variable `ENV_FILE` Variable d’environnement avant de démarrer le dispatcher local.
+
+Un fichier contenant des variables d’environnement personnalisées ressemblerait à ceci :
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+Et il peut être utilisé dans le SDK du Dispatcher local avec les commandes suivantes :
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
 ```
 
 ## Différentes configurations du Dispatcher par environnement {#different-dispatcher-configurations-per-environment}
@@ -624,7 +643,7 @@ Avec la version 2021.7.0 de Cloud Manager, les nouveaux programmes génèrent 
 
    >[!NOTE]
    >
-   En mode flexible, vous devez utiliser des chemins d’accès relatifs plutôt que des chemins absolus.
+   >En mode flexible, vous devez utiliser des chemins d’accès relatifs plutôt que des chemins absolus.
 1. **Déploiement en production :**
    * Validez le fichier `opt-in/USE_SOURCES_DIRECTLY` dans une branche git déployée par le pipeline de production vers les environnements d’évaluation et de production Cloud.
    * Utilisez Cloud Manager pour effectuer le déploiement vers l’évaluation.
