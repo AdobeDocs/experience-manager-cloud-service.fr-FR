@@ -1,9 +1,9 @@
 ---
 title: Modélisation de contenu pour la création AEM avec des projets Edge Delivery Services
 description: Découvrez comment la modélisation de contenu fonctionne pour la création AEM avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
-source-git-commit: 8f3c7524ae8ee642a9aee5989e03e6584a664eba
+source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '2097'
 ht-degree: 1%
 
 ---
@@ -109,16 +109,19 @@ Pour chaque bloc, le développeur :
 
 * Doit utiliser la variable `core/franklin/components/block/v1/block` type de ressource, l’implémentation générique de la logique de bloc dans AEM.
 * Doit définir le nom du bloc, qui sera rendu dans l’en-tête du tableau du bloc.
+   * Le nom du bloc est utilisé pour récupérer le style et le script appropriés pour décorer le bloc.
 * Peut définir une [ID de modèle.](/help/implementing/universal-editor/field-types.md#model-structure)
+   * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour l’auteur dans le rail des propriétés.
 * Peut définir une [ID de filtre.](/help/implementing/universal-editor/customizing.md#filtering-components)
+   * L’ID de filtre est une référence au filtre du composant, qui permet de modifier le comportement de création, par exemple en limitant les enfants pouvant être ajoutés au bloc ou à la section, ou les fonctionnalités d’éditeur de texte enrichi activées.
 
-Toutes ces informations sont stockées dans AEM lorsqu’un bloc est ajouté à une page.
+Toutes ces informations sont stockées dans AEM lorsqu’un bloc est ajouté à une page. Si le type de ressource ou le nom du bloc est manquant, le bloc ne s’affiche pas sur la page.
 
 >[!WARNING]
 >
->Bien que cela soit possible, il n’est pas nécessaire d’implémenter des composants d’AEM personnalisés. Les composants des Edge Delivery Services fournis par AEM sont suffisants et offrent certains rails de garde pour faciliter le développement.
+>Bien que cela soit possible, il n’est pas nécessaire ni recommandé de mettre en oeuvre des composants d’AEM personnalisés. Les composants des Edge Delivery Services fournis par AEM sont suffisants et offrent certains rails de garde pour faciliter le développement.
 >
->Pour cette raison, Adobe ne recommande pas d’utiliser des types de ressources AEM personnalisés.
+>Les composants fournis par AEM génèrent un balisage qui peut être utilisé par [helix-html2md](https://github.com/adobe/helix-html2md) lors de la publication sur des Edge Delivery Services et en [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) lors du chargement d’une page dans Universal Editor. Les balises constituent le contrat stable entre AEM et les autres parties du système et ne permettent pas les personnalisations. Pour cette raison, les projets ne doivent pas modifier les composants et ne doivent pas utiliser de composants personnalisés.
 
 ### Structure de bloc {#block-structure}
 
@@ -130,7 +133,9 @@ Dans le formulaire le plus simple, un bloc effectue le rendu de chaque propriét
 
 Dans l’exemple suivant, l’image est définie en premier dans le modèle et en second dans le texte. Ils sont ainsi rendus avec l’image en premier et le texte en second.
 
-##### Données {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB Données]
 
 ```json
 {
@@ -142,7 +147,7 @@ Dans l’exemple suivant, l’image est définie en premier dans le modèle et e
 }
 ```
 
-##### Balisage {#markup-simple}
+>[!TAB Balisage]
 
 ```html
 <div class="hero">
@@ -161,6 +166,20 @@ Dans l’exemple suivant, l’image est définie en premier dans le modèle et e
 </div>
 ```
 
+>[!TAB Tableau]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 Vous remarquerez peut-être que certains types de valeurs autorisent la sémantique inférente dans les balises et que les propriétés sont combinées dans des cellules uniques. Ce comportement est décrit dans la section [Type Inférence.](#type-inference)
 
 #### Bloc clé-valeur {#key-value}
@@ -171,7 +190,9 @@ Dans d&#39;autres cas, cependant, le bloc est lu comme une configuration de type
 
 Voici un exemple : [métadonnées de section.](/help/edge/developer/markup-sections-blocks.md#sections) Dans ce cas pratique, le bloc peut être configuré pour effectuer le rendu en tant que table de paires clé-valeur. Consultez la section [Métadonnées de sections](#sections-metadata) pour plus d’informations.
 
-##### Données {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB Données]
 
 ```json
 {
@@ -184,7 +205,7 @@ Voici un exemple : [métadonnées de section.](/help/edge/developer/markup-secti
 }
 ```
 
-##### Balisage {#markup-key-value}
+>[!TAB Balisage]
 
 ```html
 <div class="featured-articles">
@@ -203,13 +224,31 @@ Voici un exemple : [métadonnées de section.](/help/edge/developer/markup-secti
 </div>
 ```
 
+>[!TAB Tableau]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### Blocs de conteneur {#container}
 
 Les deux structures précédentes ont une seule dimension : la liste des propriétés. Les blocs de conteneur permettent d’ajouter des enfants (généralement du même type ou modèle) et sont donc bidimensionnels. Ces blocs prennent toujours en charge leurs propres propriétés générées sous forme de lignes avec une seule colonne en premier. Elles permettent également d’ajouter des enfants, pour lesquels chaque élément est rendu en ligne et chaque propriété en colonne dans cette ligne.
 
 Dans l&#39;exemple suivant, un bloc accepte une liste d&#39;icônes liées en tant qu&#39;enfants, où chaque icône liée comporte une image et un lien. Remarquez que la variable [identifiant de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) défini dans les données du bloc afin de référencer la configuration du filtre.
 
-##### Données {#data-container}
+>[!BEGINTABS]
+
+>[!TAB Données]
 
 ```json
 {
@@ -232,7 +271,7 @@ Dans l&#39;exemple suivant, un bloc accepte une liste d&#39;icônes liées en ta
 }
 ```
 
-##### Balisage {#markup-container}
+>[!TAB Balisage]
 
 ```html
 <div class="our-partners">
@@ -263,6 +302,22 @@ Dans l&#39;exemple suivant, un bloc accepte une liste d&#39;icônes liées en ta
   </div>
 </div>
 ```
+
+>[!TAB Tableau]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### Création de modèles de contenu sémantique pour les blocs {#creating-content-models}
 
@@ -300,7 +355,9 @@ La réduction des champs est le mécanisme qui permet de combiner plusieurs vale
 
 ##### Images {#image-collapse}
 
-###### Données {#data-image}
+>[!BEGINTABS]
+
+>[!TAB Données]
 
 ```json
 {
@@ -309,7 +366,7 @@ La réduction des champs est le mécanisme qui permet de combiner plusieurs vale
 }
 ```
 
-###### Balisage {#markup-image}
+>[!TAB Balisage]
 
 ```html
 <picture>
@@ -317,9 +374,19 @@ La réduction des champs est le mécanisme qui permet de combiner plusieurs vale
 </picture>
 ```
 
+>[!TAB Tableau]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### Liens et boutons {#links-buttons-collapse}
 
-###### Données {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB Données]
 
 ```json
 {
@@ -330,7 +397,7 @@ La réduction des champs est le mécanisme qui permet de combiner plusieurs vale
 }
 ```
 
-###### Balisage {#markup-links-buttons}
+>[!TAB Balisage]
 
 Non `linkType`, ou `linkType=default`
 
@@ -354,9 +421,21 @@ Non `linkType`, ou `linkType=default`
 </em>
 ```
 
+>[!TAB Tableau]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### Titres {#headings-collapse}
 
-###### Données {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB Données]
 
 ```json
 {
@@ -365,19 +444,31 @@ Non `linkType`, ou `linkType=default`
 }
 ```
 
-###### Balisage {#markup-headings}
+>[!TAB Balisage]
 
 ```html
 <h2>Getting started</h2>
 ```
 
+>[!TAB Tableau]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
+
 #### Regroupement d’éléments {#element-grouping}
 
 while [effondrement de champ](#field-collapse) Il s’agit de combiner plusieurs propriétés en un seul élément sémantique. Le regroupement d’éléments consiste à concaténer plusieurs éléments sémantiques en une seule cellule. Cela s’avère particulièrement utile dans les cas d’utilisation où l’auteur doit être limité dans le type et le nombre d’éléments qu’il peut créer.
 
-Par exemple, l’auteur ne doit créer qu’un sous-titre, un titre et une seule description de paragraphe combinés avec un maximum de deux boutons d’appel à l’action. Le regroupement de ces éléments génère un balisage sémantique qui peut être stylisé sans autre action.
+Par exemple, un composant de teaser peut uniquement permettre à l’auteur de créer un sous-titre, un titre et une description de paragraphe unique, combinés avec un maximum de deux boutons d’appel à l’action. Le regroupement de ces éléments génère un balisage sémantique qui peut être stylisé sans autre action.
 
-##### Données {#data-grouping}
+Le regroupement d’éléments utilise une convention d’affectation des noms, selon laquelle le nom du groupe est séparé de chaque propriété du groupe par un trait de soulignement. La réduction des champs des propriétés d’un groupe fonctionne comme décrit précédemment.
+
+>[!BEGINTABS]
+
+>[!TAB Données]
 
 ```json
 {
@@ -397,7 +488,7 @@ Par exemple, l’auteur ne doit créer qu’un sous-titre, un titre et une seule
 }
 ```
 
-##### Balisage {#markup-grouping}
+>[!TAB Balisage]
 
 ```html
 <div class="teaser">
@@ -419,6 +510,24 @@ Par exemple, l’auteur ne doit créer qu’un sous-titre, un titre et une seule
   </div>
 </div>
 ```
+
+>[!TAB Tableau]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ## Métadonnées de sections {#sections-metadata}
 
@@ -500,18 +609,17 @@ Il est possible de définir des métadonnées par chemin ou par modèle de chemi
 
 Pour créer ce tableau, créez une page et utilisez le modèle Métadonnées dans la console Sites.
 
->[!NOTE]
->
->Lors de la modification de la feuille de calcul de métadonnées, veillez à passer à **Aperçu** car la création se produit sur la page elle-même, et non dans l’éditeur.
-
-Dans les propriétés de page de la feuille de calcul, définissez les champs de métadonnées dont vous avez besoin, ainsi que l’URL. Ajoutez ensuite des métadonnées par chemin de page ou modèle de chemin de page, où le champ URL se rapporte aux chemins mappés, aux chemins publics, et non au chemin de contenu dans AEM.
+Dans les propriétés de page de la feuille de calcul, définissez les champs de métadonnées dont vous avez besoin, ainsi que l’URL. Ajoutez ensuite des métadonnées par chemin de page ou modèle de chemin de page.
 
 Assurez-vous également que la feuille de calcul est ajoutée à votre mappage de chemin avant de la publier.
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### Propriétés de page {#page-properties}
