@@ -4,9 +4,9 @@ description: Consultez les notes de mise à jour de Cloud Manager 2024.1.0 dan
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Pour avoir la possibilité de tester certaines fonctionnalités à venir, partic
 
 ### Collecte côté client via Real User Monitoring (RUM) {#rum}
 
-Vous pouvez utiliser le [Service de données Real User Monitoring (RUM) ](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) pour activer la collecte côté client pour AEM as a Cloud Service.
+Vous pouvez utiliser le [Service de données Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) pour activer la collecte côté client pour AEM as a Cloud Service.
 
 Le Service de données Real User Monitoring (RUM) offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Pour les personnes utilisant un réseau CDN non géré par Adobe, la création de rapports automatisés sur le trafic peut désormais être activée, leur évitant ainsi d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
 
@@ -42,7 +42,7 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 
 ### Apporter votre propre GitHub {#byo-github}
 
-Si vous utilisez GitHub pour gérer vos référentiels, [vous pouvez désormais valider le code directement dans vos référentiels GitHub via Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Cette intégration élimine la nécessité de synchroniser de manière cohérente le code avec le référentiel d’Adobe et vous permet de vérifier les requêtes d’extraction avant de les fusionner dans les branches principales. Cette fonctionnalité est réservée au GitHub public. La prise en charge de GitHub auto-hébergé n’est pas disponible.
+Si vous utilisez GitHub pour gérer vos référentiels, [vous pouvez désormais valider le code directement dans vos référentiels GitHub via Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Cette intégration élimine la nécessité de constamment synchroniser le code avec le référentiel Adobe et vous permet de vérifier les requêtes d’extraction avant de les fusionner dans les branches principales. Cette fonctionnalité est réservée au GitHub public. La prise en charge du GitHub auto-hébergé n’est pas disponible.
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à `Grp-CloudManager_BYOG@adobe.com` à partir de l’adresse e-mail associée à votre Adobe ID.
 
