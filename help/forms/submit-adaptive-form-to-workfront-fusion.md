@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1238'
 ht-degree: 4%
 
 ---
@@ -41,6 +41,8 @@ Les conditions préalables requises pour connecter Workfront Fusion à AEM Forms
 * Un utilisateur AEM ayant le droit d’accéder [Console de développement](https://my.cloudmanager.adobe.com/) to [récupération des informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr).
 
 ## Intégration d’AEM Forms à Adobe Workfront Fusion
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 Pour se connecter [Fusion Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) pour créer un formulaire, procédez comme suit :
 
@@ -129,16 +131,7 @@ Pour ajouter une connexion :
 1. Sélectionner la connexion créée **[!UICONTROL Connexion]** dans la liste déroulante.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Cliquez sur **[!UICONTROL OK]** et enregistrez les modifications pour le scénario.
-
-#### 1.3 Activation du scénario Workfront {#activate-scenario}
-
-Pour activer le scénario :
-
-1. Cliquez sur **[!UICONTROL Scénarios]** ![Icône Partager](/help/forms/assets/Smock_ShareAndroid_18_N.svg) dans le panneau de gauche.
-1. Cliquez sur le bouton **[!UICONTROL Scénario inactif]** .
-1. Cliquez sur le bouton **ON/OFF** bouton bascule pour votre scénario AEM Forms.
-
-Une fois que vous avez cliqué sur le bouton bascule, le scénario Workfront commence à apparaître dans la **[!UICONTROL Scénario actif]** .
+1. Pour activer le scénario, cliquez sur le bouton d’activation/de désactivation dans l’éditeur de scénarios.
 
 >[!NOTE]
 >
