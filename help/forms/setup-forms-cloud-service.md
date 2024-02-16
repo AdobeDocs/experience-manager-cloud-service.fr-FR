@@ -3,10 +3,11 @@ title: Comment configurer une [!DNL AEM Forms] en tant qu’environnement de ser
 description: Découvrez comment configurer et configurer une [!DNL AEM Forms] Environnement as a Cloud Service.
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
+source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 61%
+source-wordcount: '609'
+ht-degree: 48%
 
 ---
 
@@ -46,21 +47,24 @@ ht-degree: 61%
 
 * (Pour les sandbox uniquement) Après l’intégration du service, [créez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) et [exécutez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=fr) les pipelines de production et hors production. Elle active et apporte les dernières fonctionnalités d’ [!DNL AEM Forms] as a Cloud Service à votre environnement.
 
-Vous pouvez utiliser Forms as a Cloud Service pour créer un formulaire adaptatif (inscription numérique) ou pour générer une communication client. Après avoir terminé l’[Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr) à [!DNL Adobe Experience Manager] as a Cloud Service, effectuez l’une des actions suivantes pour activer les fonctionnalités d’inscription numérique ou de communication client. Vous pouvez également activer les deux fonctionnalités :
+Vous pouvez utiliser Forms as a Cloud Service pour créer un formulaire adaptatif (inscription numérique) ou pour générer une communication client. Après avoir terminé [Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr) à la fonction [!DNL Adobe Experience Manager] as a Cloud Service, effectuez les actions suivantes pour activer les fonctionnalités Forms - Inscription numérique ou Communications client. <!--You can also enable both the features-->:
 
 1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service.
+1. Ouvrez l’option Modifier le programme , accédez à l’onglet Solutions et modules complémentaires :
 
-1. Ouvrez l’option Modifier le programme, accédez à l’onglet Solutions et modules complémentaires, puis sélectionnez l’option **[!UICONTROL Formulaires - Communications]**.
+   * Si vous disposez d’un environnement de production, sélectionnez **[!UICONTROL Forms - Communications]** pour activer Forms - Digital Enrollment (inscription numérique) et Forms - Communications Add-on (module complémentaire des communications).
 
-   ![Communications](assets/communications.png)
+     ![Communications](assets/communications.png)
 
-   Si vous avez déjà activé l’option **[!UICONTROL Forms - Inscription numérique]**, sélectionnez l’option **[!UICONTROL Forms - Module complémentaire Communications]**.
+   <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   ![Module complémentaire](assets/add-on.png)
+   * Si vous disposez d’un environnement de test, sélectionnez **[!UICONTROL Forms]** pour activer Forms - Inscription numérique et Forms - Module complémentaire Communications.
+
+     ![Sélection d’une inscription numérique de formulaire](assets/forms-digital-enrollment1.png)
+
 
 1. Cliquez sur **[!UICONTROL Mettre à jour]**.
-
-1. Exécutez le pipeline de build. Une fois que le pipeline de build a réussi, les API Communications sont activées pour votre environnement.
+1. Exécutez le pipeline de build. Une fois le pipeline de génération réussi, la solution sélectionnée est activée pour votre environnement.
 
 >[!NOTE]
 >
