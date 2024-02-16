@@ -2,10 +2,10 @@
 title: Accéder aux journaux et les gérer
 description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 71%
+source-wordcount: '346'
+ht-degree: 68%
 
 ---
 
@@ -43,8 +43,6 @@ Pour télécharger les journaux, procédez comme suit :
 Vous pouvez également accéder à vos journaux à partir de la page **Environnements**.
 
 ![Journaux depuis l’écran Environnements](assets/download-logs.png)
-
-
 
 ## Journaux via l’API {#logs-through-api}
 
@@ -86,6 +84,10 @@ Environment Id Service    Name
 ```
 
 ### Ressources supplémentaires {#resources}
+
+>[!TIP]
+>
+>Consulter [cette ressource vidéo](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) pour en savoir plus sur le débogage AEM as a Cloud Service.
 
 Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande d’Adobe I/O :
 
