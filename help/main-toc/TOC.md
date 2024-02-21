@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '4711'
-ht-degree: 96%
+source-wordcount: '4692'
+ht-degree: 97%
 
 ---
 
@@ -810,13 +810,13 @@ ht-degree: 96%
          + [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-eds-forms.md)
          + [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
          + [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)
-      + Fonctionnalités avancées {#advanced-features-eds-forms}
-         + [Création et ajout de fragments de formulaire à un formulaire](/help/edge/docs/forms/form-fragments.md)
-         + [Traduire un formulaire](/help/edge/docs/forms/translate-forms.md)
-         + [Ajout de sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
-         + [Appliquer reCAPTCHA à un formulaire](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Création de composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
-         + [Ajouter une page de remerciement](/help/edge/docs/forms/thank-you-page-form.md)
+      + Fonctionnalités {#advanced-features-eds-forms}
+         + [Fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
+         + [Sections répétables](/help/edge/docs/forms/repeatable-forms.md)
+         + [Traduction](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Page de remerciement](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
    + Ressources pour Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utiliser Sidekick](/help/edge/docs/sidekick.md)

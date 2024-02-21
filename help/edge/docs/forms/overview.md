@@ -4,9 +4,9 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms Edge Delivery Service vous aide à :
 
 * **Simplification de la création et des envois**: créez des formulaires à l’aide d’outils familiers tels que Microsoft Excel ou Google Sheets au lieu des environnements de création traditionnels. Envoyez des formulaires directement à vos feuilles Microsoft Excel ou Google et utilisez leur écosystème pour traiter facilement les données envoyées.
 
-## Prise en main du service de diffusion Edge d’AEM Forms
+## Commencer par les principes de base
 
 <div>
 

@@ -4,9 +4,9 @@ description: Concevez des formes parfaites, vite ! ⚡ Création basée sur des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,8 @@ Ces formulaires envoient directement des données à un fichier Microsoft Excel 
 
 ![Prise en main d’Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
-## Ajoutez le bloc Form à votre projet Edge Delivery Service (EDS). {#add-forms-block-to-an-eds-project}
+
+## Étape 1 : Ajout du bloc Form à votre projet Edge Delivery Service (EDS) {#add-forms-block-to-an-eds-project}
 
 AEM Forms Edge Delivery comprend un bloc de formulaire qui permet de créer facilement des formulaires pour capturer et stocker les données capturées. Pour inclure le bloc Form à votre projet Edge Delivery Service :
 
@@ -81,7 +82,7 @@ AEM Forms Edge Delivery comprend un bloc de formulaire qui permet de créer faci
    > * Si vous rencontrez une erreur &quot;Impossible de résoudre le chemin d’accès au module &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, ouvrez la `[EDS Project]/blocks/forms/form.js` fichier . Dans l’instruction d’importation, remplacez la variable `franklin-lib.js` avec le fichier `aem.js` fichier .
    > * Si vous rencontrez des erreurs de linting, n&#39;hésitez pas à les ignorer. Pour contourner les contrôles d’alignement, ouvrez le `[EDS Project]\package.json` et mettre à jour le script &quot;lint&quot; à partir de `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Enregistrez le fichier et validez-le dans votre projet GitHub.
 
-## Créer un formulaire à l’aide de Microsoft Excel ou d’une feuille de calcul Google {#create-a-form-for-an-eds-project}
+## Étape 2 : création d’un formulaire à l’aide de Microsoft Excel ou de Google Sheet
 
 Au lieu de processus complexes, vous pouvez facilement créer un formulaire à l’aide d’une feuille de calcul. Vous pouvez commencer par ajouter les lignes et les en-têtes de colonne à une feuille de calcul. Chaque ligne définit un champ de formulaire et chaque en-tête de colonne définit les propriétés des champs de formulaire correspondants.
 
@@ -123,7 +124,7 @@ Pour créer un formulaire :
 
 
 
-## Prévisualisez le formulaire à l’aide de votre page Edge Delivery Service (EDS). {#add-a-form-to-your-eds-page}
+## Étape 3 : aperçu du formulaire à l’aide de votre page Edge Delivery Service (EDS)
 
 Jusqu’à présent, vous avez activé le bloc de formulaire pour votre projet EDS et préparé la structure du formulaire. Maintenant, pour prévisualiser le formulaire :
 
@@ -153,8 +154,9 @@ Jusqu’à présent, vous avez activé le bloc de formulaire pour votre projet E
 
    ![erreur lors de l’envoi du formulaire](/help/edge/assets/form-error.png)
 
+## Étape suivante
 
-   L’étape suivante consiste à [préparer votre feuille de calcul pour accepter les données ;](/help/edge/docs/forms/submit-forms.md).
+L’étape suivante consiste à [préparer votre feuille de calcul pour accepter les données ;](/help/edge/docs/forms/submit-forms.md).
 
 
 
