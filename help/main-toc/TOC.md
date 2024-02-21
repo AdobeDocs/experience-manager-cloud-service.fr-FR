@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
+source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
 workflow-type: tm+mt
-source-wordcount: '4648'
-ht-degree: 98%
+source-wordcount: '4711'
+ht-degree: 96%
 
 ---
 
@@ -614,8 +614,8 @@ ht-degree: 98%
             + [Créer des formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
             + [Définition de l’action Envoyer pour un formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)
             + [Envoyer un formulaire adaptatif au stockage Azure Blob](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Envoyer un formulaire adaptatif à Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
-            + [Configuration du stockage SharePoint pour un formulaire adaptatif](/help/forms/configure-submit-action-sharepoint.md)
+            + [Envoyer un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-onedrive.md)
+            + [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [Intégrer le formulaire adaptatif AEM au processus AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configuration de l’action d’envoi Envoyer vers le point de fin REST pour le Forms adaptatif](/help/forms/configure-submit-action-restpoint.md)
             + [Configuration de l’action Envoyer un courrier électronique pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
@@ -802,6 +802,21 @@ ht-degree: 98%
       + [Configuration d’Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configuration de Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Redirections](/help/edge/docs/redirects.md)
+   + Création de Edge Delivery Forms {#build-forms}
+      + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
+      + Prise en main {#getting-started-eds-forms}
+         + [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
+         + [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)
+         + [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-eds-forms.md)
+         + [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
+         + [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)
+      + Fonctionnalités avancées {#advanced-features-eds-forms}
+         + [Création et ajout de fragments de formulaire à un formulaire](/help/edge/docs/forms/form-fragments.md)
+         + [Traduire un formulaire](/help/edge/docs/forms/translate-forms.md)
+         + [Ajout de sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
+         + [Appliquer reCAPTCHA à un formulaire](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Création de composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
+         + [Ajouter une page de remerciement](/help/edge/docs/forms/thank-you-page-form.md)
    + Ressources pour Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utiliser Sidekick](/help/edge/docs/sidekick.md)

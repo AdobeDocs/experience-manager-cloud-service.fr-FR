@@ -2,10 +2,10 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 55%
+source-wordcount: '984'
+ht-degree: 44%
 
 ---
 
@@ -60,14 +60,17 @@ Suivez les étapes ci-dessous pour accéder à la phase de préparation :
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
+   >[!NOTE]
+   >Si plusieurs rapports sont téléchargés, le rapport qui s’affiche en détail est toujours celui qui a la date de création la plus récente (et non la date de téléchargement).
+
 1. Consultez et explorez le tableau de bord d’analyse des bonnes pratiques dans CAM. Reportez-vous à la section [Affichage du rapport d’analyse des bonnes pratiques](#analysis-report) pour plus d’informations.
 
    >[!NOTE]
-   >Le chargement d’un nouveau rapport réinitialise toutes les évaluations.
+   >Le téléchargement d’un nouveau rapport réinitialise toutes les évaluations s’il est plus récent que le rapport précédemment chargé.
 
 ### Utilisation de l’aperçu avant impression {#print-preview-cam}
 
-Vous pouvez sélectionner l’option d’aperçu avant impression dans Cloud Acceleration Manager pour obtenir un aperçu imprimable des rapports ou pour imprimer le rapport au format PDF afin d’en faciliter la partage.
+Vous pouvez sélectionner l’option d’aperçu avant impression dans Cloud Acceleration Manager pour un aperçu imprimable des rapports ou pour imprimer le rapport dans un format PDF afin d’en faciliter la partage.
 
 Suivez les étapes ci-dessous :
 
@@ -86,12 +89,12 @@ Suivez les étapes ci-dessous :
 
 ### Utiliser l’option Afficher la tendance {#trendline-view-cam}
 
-Lorsque vous chargez plusieurs rapports de l’analyseur de bonnes pratiques (BPA) dans un projet, vous pouvez sélectionner l’option **Afficher la tendance** pour afficher et comparer les résultats des rapports BPA historiques.
+Lorsque vous chargez plusieurs rapports BPA (Best Practices Analyzer) distincts dans un projet, vous pouvez sélectionner la variable **Afficher la tendance** pour afficher et comparer les résultats des rapports BPA historiques.
 
 Pour afficher les rapports à partir de l’option de tendance, procédez comme suit :
 
 >[!NOTE]
->Lorsque vous transférez plusieurs rapports d’application monopage dans un projet, le **..** Icône
+>Lorsque vous transférez plusieurs rapports BPA distincts dans un projet, le **..** Icône Les rapports sont considérés comme identiques (non distincts) si leur hôte et leur heure de création sont identiques.
 
 1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
 
@@ -100,9 +103,6 @@ Pour afficher les rapports à partir de l’option de tendance, procédez comme 
 1. Cliquez sur **..**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >Le rapport affiché est toujours celui dont la date de rapport est la plus récente.
 
 1. Dans la liste déroulante, cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
 

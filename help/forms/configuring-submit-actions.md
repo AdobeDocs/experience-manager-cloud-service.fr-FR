@@ -3,10 +3,10 @@ title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '3913'
-ht-degree: 82%
+source-wordcount: '3901'
+ht-degree: 83%
 
 ---
 
@@ -28,7 +28,7 @@ Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bout
 * [Envoyer à SharePoint](#submit-to-sharedrive)
 * [Envoyer à OneDrive](#submit-to-onedrive)
 * [Envoyer au stockage Blob Azure](#azure-blob-storage)
-* [Envoyer à Power Automate](#microsoft-power-automate)
+* [Envoyer à Power Automate](#microsoft-power-automate)
 * [Envoyer à Workfront Fusion](#workfront-fusion)
 
 Vous pouvez également [étendre les actions d’envoi par défaut](custom-submit-action-form.md) pour créer votre propre action d’envoi.
@@ -238,8 +238,6 @@ La structure du dossier pour l’enregistrement des données est `/folder_name/f
 
 ### Connexion d’un formulaire adaptatif à une liste SharePoint Microsoft® {#connect-af-sharepoint-list}
 
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 Pour utiliser la variable [!UICONTROL Envoyer à la liste SharePoint] Action d’envoi dans un formulaire adaptatif :
@@ -394,7 +392,7 @@ La structure du dossier pour l’enregistrement des données est `/configuration
 Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
 
 
-## Envoyer à Power Automate {#microsoft-power-automate}
+## Envoyer à Power Automate {#microsoft-power-automate}
 
 Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client. Voici quelques exemples de ce que vous pouvez faire après l’intégration d’un formulaire adaptatif à Microsoft® Power Automate :
 
@@ -405,7 +403,7 @@ Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Powe
 
 L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un flux Microsoft® Power Automate** pour envoyer des données de formulaires adaptatifs et des pièces jointes, et un document d’enregistrement est envoyé au flux de cloud Power Automate. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [connectez votre instance Forms as a Cloud Service à Microsoft® Power Automate](forms-microsoft-power-automate-integration.md).
 
-Après une configuration réussie, utilisez la méthode [Appeler un flux Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) Action d’envoi pour envoyer des données à un flux d’automatisation Power.
+Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un flux Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) pour envoyer des données à un flux Power Automate.
 
 ## Envoyer à Workfront Fusion {#workfront-fusion}
 

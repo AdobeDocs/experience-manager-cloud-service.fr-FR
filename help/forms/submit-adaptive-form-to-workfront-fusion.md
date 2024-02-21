@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1255'
 ht-degree: 4%
 
 ---
@@ -40,11 +40,17 @@ Pour établir une connexion entre Workfront Fusion et AEM Forms, les éléments 
 
 ## Intégration d’AEM Forms à Adobe Workfront Fusion
 
-Pour se connecter [Fusion Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) pour créer un formulaire, procédez comme suit :
-
 ### 1. Création d’un scénario Workfront {#workflow-scenario}
 
-Pour créer un scénario Workfront :
+Pour créer un scénario Workfront, procédez comme suit :
+
+1. [Création d’un scénario](#create-scenario)
+1. [Ajout d’un point d’extension Web à un scénario](#add-webhook)
+1. [Ajout d’une connexion à un point d’extension Web](#add-connection)
+
+#### Création d’un scénario {#create-scenario}
+
+Pour créer un scénario :
 1. Se connecter à [Compte Workfront Fusion](https://app-qa.workfrontfusion.com/).
 1. Cliquez sur **[!UICONTROL Scénarios]** ![Icône Partager](/help/forms/assets/Smock_ShareAndroid_18_N.svg) dans le panneau de gauche.
 1. Cliquez sur **[!UICONTROL Création d’un scénario]** dans le coin supérieur droit de la page. Une page pour créer un scénario s’affiche à l’écran.
@@ -61,7 +67,7 @@ Pour créer un scénario Workfront :
 
 1. Sélectionnez la variable **[!UICONTROL Surveillance des événements de formulaire]** s’affiche, ainsi qu’une fenêtre permettant d’ajouter un webhook.
 
-#### 1.1 Ajout d’un webhook {#add-webhook}
+#### Ajout d’un webhook {#add-webhook}
 
 ![Ajout d’un webhook](/help/forms/assets/workfront-add-webhook.png)
 
@@ -76,7 +82,7 @@ Pour ajouter un webhook :
 
 1. Cliquez sur **[!UICONTROL Ajouter]** pour ajouter une nouvelle connexion. La variable **[!UICONTROL Création d’une connexion]** s’affiche.
 
-#### 1.2 Ajout d’une connexion à un webhook {#add-connection}
+#### Ajout d’une connexion à un webhook {#add-connection}
 
 ![Ajout d’une connexion](/help/forms/assets/workfront-add-connection.png)
 
