@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -21,16 +21,16 @@ Cette page présente les notes de mise à jour de Cloud Manager version 2024.
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2024.2.0 de Cloud Manager dans AEM as a Cloud Service est le 15 février 2024. La prochaine version est prévue pour le 16 mars 2024.
+La date de publication de la version 2024.2.0 de Cloud Manager dans AEM as a Cloud Service est le 15 février 2024. La prochaine version est prévue pour le 16 mars 2024.
 
 ## Nouveautés {#what-is-new}
 
-* Cloud Manager prend désormais en charge la gestion en libre-service de [variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) via l’interface utilisateur de Cloud Manager.
-* [Le service d’aperçu](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) sera désormais activé pour les environnements créés avant le déploiement de la fonction de service d’aperçu.
-* [Autorisations personnalisées de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) vous permet de créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs de Cloud Manager.
-   * Cette fonction a commencé à être déployée par étapes, avec la fonction [Version de décembre 2023](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) et se termineront le 20 février 2024.
-* Pour tous les nouveaux environnements, la variable [profil de produit d’environnement](/help/onboarding/aem-cs-team-product-profiles.md) les noms seront un format plus convivial basé sur une combinaison de description du profil, type d’environnement, nombre et numéro de programme.
-* [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) a été mis à jour vers les versions Maven 3.9.4 et JDK jdk-11.0.22 et jdk1.8.0_401.
+* Cloud Manager prend désormais en charge la gestion en libre-service des [variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) via l’interface utilisateur de Cloud Manager.
+* [Le service de prévisualisation](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) sera désormais activé pour les environnements créés avant le déploiement de la fonctionnalité du service de prévisualisation.
+* Les [autorisations personnalisées de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) vous permettent de créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs et utilisatrices de Cloud Manager.
+   * Cette fonctionnalité a commencé à être déployée progressivement avec la [version de décembre 2023](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) et sera complète le 20 février 2024.
+* Pour tous les nouveaux environnements, les noms du [profil du produit d’environnement](/help/onboarding/aem-cs-team-product-profiles.md) seront dans un format plus convivial basé sur une combinaison de description de profil, de type d’environnement, de numéro et de numéro de programme.
+* [L’environnement de version](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) a été mis à jour vers la version Maven 3.9.4 et les versions JDK jdk-11.0.22 et jdk1.8.0_401.
 
 ## Programme d’adoption précoce {#early-adoption}
 
@@ -73,4 +73,4 @@ Vous souhaitez tester le nouveau tableau de bord ? Pour commencer, envoyez un e
 
 ## Correctifs {#bug-fixes}
 
-* Le JDK des conteneurs de génération a été mis à jour vers une version qui résout [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
+* Le JDK des conteneurs de version a été mis à jour vers une version qui résout [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
