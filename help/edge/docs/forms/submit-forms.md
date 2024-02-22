@@ -4,9 +4,9 @@ description: Créez des formulaires puissants plus rapidement à l’aide des fe
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '989'
 ht-degree: 1%
 
 ---
@@ -14,65 +14,72 @@ ht-degree: 1%
 
 # Activation de votre formulaire pour envoyer des données
 
-Après avoir créé et prévisualisé le formulaire, activez la feuille correspondante pour accepter les données. Pour commencer à accepter des données, configurez votre feuille de calcul afin d’inclure les en-têtes qui correspondent aux données que vous avez l’intention de collecter. Tous les en-têtes ajoutés à la feuille &#39;shared-default&#39; doivent également être présents dans la feuille &#39;incoming&#39; sous un tableau.
+Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données.
 
-L’exemple suivant affiche les champs d’un formulaire &quot;contact-us&quot; :
+>[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-![Champs d’un formulaire de contact](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+Pour activer la feuille de calcul :
 
-
-Une fois cette configuration terminée, votre formulaire devient prêt à accepter les envois. Vous pouvez utiliser l’une des méthodes suivantes pour permettre à votre feuille de calcul d’accepter les données :
-
-* [Configuration manuelle d’une feuille de calcul pour accepter les données](#manually-configure-a-spreadsheet-to-receive-data)
-
-* [Utilisation des API d’administration pour permettre à une feuille de calcul d’accepter des données](#use-admin-apis-to-enable-a-spreadsheet-to-receive-data-use-admin-apis-to-enable-a-spreadsheet-to-recieve-data)
-
-## Configuration manuelle d’une feuille de calcul pour accepter les données
-
-Pour configurer manuellement une feuille de calcul afin d’accepter les données :
-
-
-1. Ouvrez le classeur que vous avez créé et remplacez le nom de la feuille par défaut par &quot;entrant&quot;.
+1. Ouvrez la feuille de calcul qui contient votre formulaire, ajoutez-y une feuille, puis modifiez le nom de la feuille en `incoming`.
 
    >[!WARNING]
    >
-   > Si la feuille &quot;entrante&quot; n’existe pas, AEM n’enverra aucune donnée à ce classeur.
+   > Si la variable `incoming` n’existe pas, AEM n’envoie aucune donnée à ce classeur.
 
-1. Préparez la feuille en ajoutant des en-têtes correspondant aux données que vous insérez. L’exemple suivant affiche les champs d’un formulaire &quot;contact-us&quot; :
+1. Dans le `incoming` mettre en miroir tous les en-têtes de colonne `Name` (noms de champ de formulaire) dans la variable `shared-default` feuille.
+
+   L’exemple suivant affiche les en-têtes d’un formulaire &quot;contact-us&quot; :
 
    ![Champs d’un formulaire de contact](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Aperçu de la feuille dans le sidekick.
+1. Utilisez le sidekick pour prévisualiser la feuille.
 
    >[!NOTE]
    >
-   >Même si vous avez déjà prévisualisé la feuille, vous devez la prévisualiser à nouveau après avoir créé la feuille &quot;entrante&quot; pour la première fois.
+   >Même si vous avez déjà prévisualisé la feuille, vous devez la prévisualiser à nouveau après avoir créé la `incoming` feuille pour la première fois.
 
 
-## Utilisation des API d’administration pour permettre à une feuille de calcul d’accepter des données
+Une fois que les noms de champ sont ajoutés au `incoming` , votre formulaire devient prêt à accepter les envois. Vous pouvez prévisualiser le formulaire et envoyer les données à la feuille à l’aide de celui-ci.
 
-Vous pouvez lancer une requête de POST vers l’itinéraire du formulaire au sein du service d’administration AEM. Lors de la réception des données du corps du POST, le service d’administration les analyse et génère de manière autonome les en-têtes, les tableaux et les feuilles essentiels nécessaires à l’ingestion des données, optimisant ainsi les fonctionnalités du service Forms.
+Vous constatez également les modifications suivantes dans votre feuille de calcul :
+
+Une feuille nommée &quot;Slack&quot; est ajoutée à votre classeur Excel ou à votre feuille de calcul Google. Dans cette feuille, vous pouvez configurer des notifications automatiques pour un canal de Slack désigné chaque fois que de nouvelles données sont ingérées dans votre feuille de calcul. Actuellement, AEM prend en charge les notifications exclusivement destinées à l’organisation de Slack d’ingénierie AEM et à l’Adobe d’assistance aux entreprises.
+
+1. Pour configurer les notifications de Slack, saisissez l’&quot;TeamId&quot; de l’espace de travail du Slack et le &quot;nom du canal&quot; ou &quot;ID&quot;. Vous pouvez également demander au slack-bot (avec la commande debug) pour &quot;TeamId&quot; et &quot;channel ID&quot;. Il est préférable d’utiliser &quot;l’identifiant du canal&quot; plutôt que le &quot;nom du canal&quot;, car cela permet de survivre aux renommes du canal.
+
+   >[!NOTE]
+   >
+   > Les formulaires plus anciens ne contenaient pas la colonne &quot;TeamId&quot;. L’ID d’équipe a été inclus dans la colonne du canal, séparé par un &quot;#&quot; ou &quot;/&quot;.
+
+1. Saisissez le titre de votre choix et sous les champs , saisissez le nom des champs que vous souhaitez voir dans la notification du Slack. Chaque en-tête doit être séparé par une virgule (par exemple, nom, email).
+
+   >[!WARNING]
+   >
+   >  Jamais les feuilles &quot;shared-default&quot; ne devraient contenir d’informations d’identification personnelle ou de données sensibles que vous ne connaissez pas lorsque vous êtes connecté au public.
+
+
+## (Facultatif) Utilisez les API d’administration pour activer une feuille de calcul afin d’accepter des données.
+
+Vous pouvez également envoyer une demande de POST au formulaire pour lui permettre d’accepter des données et de configurer des en-têtes pour le `incoming` feuille. Lors de la réception de la demande du POST, le service analyse le corps de la demande et génère de manière autonome les en-têtes et les feuilles essentiels nécessaires à l’ingestion des données.
 
 Pour utiliser les API d’administration afin d’activer une feuille de calcul pour accepter des données :
 
 
-1. Ouvrez le classeur que vous avez créé et remplacez le nom de la feuille par défaut par &quot;entrant&quot;.
+1. Ouvrez le classeur que vous avez créé et modifiez le nom de la feuille par défaut en `incoming`.
 
    >[!WARNING]
    >
-   > Si la feuille &quot;entrante&quot; n’existe pas, AEM n’enverra aucune donnée à ce classeur.
+   > Si la variable `incoming` n’existe pas, AEM n’enverra aucune donnée à ce classeur.
 
 1. Aperçu de la feuille dans le sidekick.
 
    >[!NOTE]
    >
-   >Même si vous avez déjà prévisualisé la feuille, vous devez la prévisualiser à nouveau après avoir créé la feuille &quot;entrante&quot; pour la première fois.
+   >Même si vous avez déjà prévisualisé la feuille, vous devez la prévisualiser à nouveau après avoir créé la `incoming` feuille pour la première fois.
 
-1. Préparez la feuille en ajoutant des en-têtes correspondant aux données que vous insérez.
+1. Envoyez la demande au POST pour générer les en-têtes appropriés dans la `incoming` , puis ajoutez le `shared-default` des feuilles à votre feuille de calcul, si elle n’existe pas déjà.
 
-   Pour ce faire, envoyez une demande de POST à l’itinéraire du formulaire dans le service d’administration AEM. Le service d’administration examine les données du corps du POST et génère les en-têtes, tableaux et feuilles appropriés nécessaires pour ingérer efficacement les données et tirer le meilleur parti du service Forms.
-
-   Pour comprendre comment formater la requête du POST pour configurer votre feuille, reportez-vous à la section [Documentation de l’API d’administration](https://www.hlx.live/docs/admin.html#tag/form). Examinez également l’exemple fourni ci-dessous :
+   Pour comprendre comment formater la requête du POST pour configurer votre feuille, reportez-vous à la section [Documentation de l’API d’administration](https://www.hlx.live/docs/admin.html#tag/form). Vous pouvez consulter l’exemple ci-dessous :
 
    **Requête**
 
@@ -135,27 +142,26 @@ Pour utiliser les API d’administration afin d’activer une feuille de calcul 
    }'
    ```
 
-   La requête de POST mentionnée précédemment fournit des données d’exemple, y compris les champs de formulaire et leurs valeurs d’exemple respectives. Ces données sont utilisées par le service d’administration pour configurer le formulaire.
+   La requête de POST mentionnée ci-dessus fournit des données d’exemple, y compris les champs de formulaire et leurs valeurs d’exemple respectives. Ces données sont utilisées par le service d’administration pour configurer le formulaire.
 
-   Lors de l’envoi de la demande de POST au service d’administration, vous constatez les modifications suivantes dans votre classeur :
+   Votre formulaire peut maintenant accepter des données. Vous constatez également les modifications suivantes dans votre feuille de calcul :
 
-* Une nouvelle feuille nommée &quot;shared-default&quot; est ajoutée à votre classeur Excel ou feuille Google. Les données présentes dans la feuille &quot;shared-default&quot; sont récupérées lors d’une demande de GET à la feuille. Cette feuille constitue un emplacement optimal pour utiliser des formules de feuille de calcul afin de résumer les données entrantes, ce qui les rend propices à la consommation dans d’autres contextes.
+Une feuille nommée &quot;Slack&quot; est ajoutée à votre classeur Excel ou à votre feuille de calcul Google. Dans cette feuille, vous pouvez configurer des notifications automatiques pour un canal de Slack désigné chaque fois que de nouvelles données sont ingérées dans votre feuille de calcul. Actuellement, AEM prend en charge les notifications exclusivement destinées à l’organisation de Slack d’ingénierie AEM et à l’Adobe d’assistance aux entreprises.
 
-  Jamais les feuilles &quot;shared-default&quot; ne devraient contenir d’informations d’identification personnelle ou de données sensibles que vous ne connaissez pas lorsque vous êtes connecté au public.
+1. Pour configurer les notifications de Slack, saisissez l’&quot;TeamId&quot; de l’espace de travail du Slack et le &quot;nom du canal&quot; ou &quot;ID&quot;. Vous pouvez également demander au slack-bot (avec la commande debug) pour &quot;TeamId&quot; et &quot;channel ID&quot;. Il est préférable d’utiliser &quot;l’identifiant du canal&quot; plutôt que le &quot;nom du canal&quot;, car cela permet de survivre aux renommes du canal.
 
-* Une feuille nommée &quot;Slack&quot; est ajoutée à votre classeur Excel ou à votre feuille de calcul Google. Dans cette feuille, vous pouvez configurer des notifications automatiques pour un canal de Slack désigné chaque fois que de nouvelles données sont ingérées dans votre feuille de calcul. Actuellement, AEM prend en charge les notifications exclusivement destinées à l’organisation de Slack d’ingénierie AEM et à l’Adobe d’assistance aux entreprises.
+   >[!NOTE]
+   >
+   > Les formulaires plus anciens ne contenaient pas la colonne &quot;TeamId&quot;. L’ID d’équipe a été inclus dans la colonne du canal, séparé par un &quot;#&quot; ou &quot;/&quot;.
 
-   1. Pour configurer les notifications de Slack, saisissez l’&quot;TeamId&quot; de l’espace de travail du Slack et le &quot;nom du canal&quot; ou &quot;ID&quot;. Vous pouvez également demander au slack-bot (avec la commande debug) pour &quot;TeamId&quot; et &quot;channel ID&quot;. Il est préférable d’utiliser &quot;l’identifiant du canal&quot; plutôt que le &quot;nom du canal&quot;, car cela permet de survivre aux renommes du canal.
+1. Saisissez le titre de votre choix et sous les champs , saisissez le nom des champs que vous souhaitez voir dans la notification du Slack. Chaque en-tête doit être séparé par une virgule (par exemple, nom, email).
 
-      >[!NOTE]
-      >
-      > Les formulaires plus anciens ne contenaient pas la colonne &quot;TeamId&quot;. L’ID d’équipe a été inclus dans la colonne du canal, séparé par un &quot;#&quot; ou &quot;/&quot;.
-
-   1. Saisissez le titre de votre choix et sous les champs , saisissez le nom des champs que vous souhaitez voir dans la notification du Slack. Chaque en-tête doit être séparé par une virgule (par exemple, nom, email).
 
 La feuille est maintenant configurée pour recevoir des données, vous pouvez [aperçu du formulaire à l’aide du bloc de formulaires](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [utilisation de requêtes de POST](#use-admin-apis-to-send-data-to-your-sheet) pour commencer à envoyer des données à la feuille.
 
-
+>[!WARNING]
+>
+>  Jamais les feuilles &quot;shared-default&quot; ne devraient contenir d’informations d’identification personnelle ou de données sensibles que vous ne connaissez pas lorsque vous êtes connecté au public.
 
 ## Envoi de données à votre feuille {#send-data-to-your-sheet}
 
