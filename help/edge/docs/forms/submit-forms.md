@@ -1,18 +1,18 @@
 ---
-title: De feuilles de calcul à Forms - Gestion des validations des champs de bloc de formulaire
-description: Créez des formulaires puissants plus rapidement à l’aide des feuilles de calcul et des champs de bloc de formulaire. Ce guide vous aide à créer des validations personnalisées pour les champs Bloc Forms d’EDS.
+title: Préparation de votre feuille de calcul pour l’acceptation des données
+description: Créez des formulaires puissants plus rapidement à l’aide des feuilles de calcul et des champs de bloc de formulaire.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
 
 
-# Activation de votre formulaire pour envoyer des données
+# Préparation de votre feuille de calcul pour l’acceptation des données
 
 Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données.
 
@@ -20,15 +20,15 @@ Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs
 
 Pour activer la feuille de calcul :
 
-1. Ouvrez la feuille de calcul qui contient votre formulaire, ajoutez-y une feuille, puis modifiez le nom de la feuille en `incoming`.
+1. Ouvrez la feuille de calcul qui comporte votre formulaire et ajoutez-y une nouvelle feuille en la renommant `incoming`.
 
    >[!WARNING]
    >
-   > Si la variable `incoming` n’existe pas, AEM n’envoie aucune donnée à ce classeur.
+   > Si la variable `incoming` n’est pas présente, AEM n’envoie aucune donnée à la feuille de calcul.
 
-1. Dans le `incoming` mettre en miroir tous les en-têtes de colonne `Name` (noms de champ de formulaire) dans la variable `shared-default` feuille.
+1. Faire correspondre les noms des champs de formulaire, les valeurs de `Name` dans la colonne`shared-default` en-tête de la feuille `incoming` feuille.
 
-   L’exemple suivant affiche les en-têtes d’un formulaire &quot;contact-us&quot; :
+   Chaque valeur de la variable `Name` de la colonne `shared-default` , à l’exception du bouton d’envoi, sert d’en-tête dans la `incoming` feuille. Prenons l’exemple de l’image suivante illustrant les en-têtes d’un formulaire de &quot;contact-us&quot; :
 
    ![Champs d’un formulaire de contact](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -79,7 +79,7 @@ Pour utiliser les API d’administration afin d’activer une feuille de calcul 
 
 1. Envoyez la demande au POST pour générer les en-têtes appropriés dans la `incoming` , puis ajoutez le `shared-default` des feuilles à votre feuille de calcul, si elle n’existe pas déjà.
 
-   Pour comprendre comment formater la requête du POST pour configurer votre feuille, reportez-vous à la section [Documentation de l’API d’administration](https://www.hlx.live/docs/admin.html#tag/form). Vous pouvez consulter l’exemple ci-dessous :
+   Pour comprendre comment formater la requête du POST pour configurer votre feuille, reportez-vous à la section [Documentation de l’API d’administration](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Vous pouvez consulter l’exemple ci-dessous :
 
    **Requête**
 

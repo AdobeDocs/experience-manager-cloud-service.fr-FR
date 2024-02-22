@@ -4,25 +4,35 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
 
 # Service de diffusion Edge AEM Forms {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service est un service composable proposé par Adobe qui vous permet de créer et de diffuser des formulaires web à fort impact et performants. Ce service composable s’intègre parfaitement à Adobe Experience Manager (AEM) pour vous permettre de concevoir, de créer et de déployer des formulaires web à fort impact et à la vitesse d’éclair avec un workflow intuitif et efficace.
-
-AEM Forms Edge Delivery Service vous aide à :
+AEM Forms Edge Delivery Service est un service composable proposé par Adobe qui vous permet de créer et de diffuser des formulaires web à fort impact et performants. Vous pouvez utiliser le service pour effectuer les opérations suivantes :
 
 * **Concevoir des formulaires étonnants**: décompressez les conceptions fades et découpeuses de cookies et séduisez les utilisateurs avec des formulaires dynamiques et modernes qui reflètent l’identité de votre marque. Tirez parti des composants prédéfinis ou créez vos propres composants personnalisés pour donner vie rapidement et facilement à votre vision.
 
 * **Créer des formulaires avec un score parfait pour Lightouse**: créez des formulaires qui se chargent et s’affichent rapidement, même avec des connexions Internet lentes. Des temps de chargement plus rapides et une expérience utilisateur optimisée contribuent à des taux d’achèvement de formulaire plus élevés et à de meilleurs taux de conversion.
 
 * **Simplification de la création et des envois**: créez des formulaires à l’aide d’outils familiers tels que Microsoft Excel ou Google Sheets au lieu des environnements de création traditionnels. Envoyez des formulaires directement à vos feuilles Microsoft Excel ou Google et utilisez leur écosystème pour traiter facilement les données envoyées.
+
+
+Ce service composable est découplé de la source de contenu et offre la flexibilité nécessaire à la création de contenu en permettant aux utilisateurs d’utiliser leurs outils de création préférés.
+
+![Outils de création de formulaires Edge Delivery](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+Les créateurs de contenu peuvent tirer parti des outils dont ils disposent, tels que Microsoft Excel ou Google Sheets (création basée sur des documents), les éditeurs JSON ou l’éditeur AEM Forms Adaptive Forms pour l’édition WYSIWYG (projets AEM Forms), pour concevoir et créer leurs formulaires.
+
+>[!NOTE]
+>
+>
+> Fonctionnalité d’édition WYSIWYG et espaces de traversée disponibles sous le programme d’adoption précoce. Vous pouvez écrire à aem-forms-early-adopter-program@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité.
 
 ## Commencer par les principes de base
 
@@ -47,7 +57,7 @@ AEM Forms Edge Delivery Service vous aide à :
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Création d’un formulaire à l’aide de formulaires AEM" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Création d’un formulaire</b>
+            <br><b style="margin-top: 5px;">Création d’un formulaire à l’aide de feuilles de calcul Google ou de Microsoft Excel</b>
         </a>
         <p>Créez des formulaires qui se chargent et s’affichent rapidement et automatiquement sur les périphériques mobiles.</p>
     </div>
