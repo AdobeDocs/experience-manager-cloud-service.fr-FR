@@ -2,10 +2,10 @@
 title: Utilisation du fournisseur de contenu Screens
 description: Cette page décrit comment utiliser le fournisseur de contenu Screens pour créer du contenu.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 82%
+source-wordcount: '383'
+ht-degree: 72%
 
 ---
 
@@ -17,7 +17,7 @@ Le **fournisseur de contenu Screens** permet à l’auteur de contenu de créer 
 
 ## Objectif {#objective}
 
-La section suivante décrit l’utilisation du fournisseur de contenu Screens, une fois que vous avez configuré le [fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
+La section suivante décrit comment créer des canaux dans le fournisseur de contenu Screens, une fois que vous avez configuré la [Fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=fr).
 
 ## Utilisation du fournisseur de contenu Screens {#screens-content-provider}
 
@@ -46,7 +46,7 @@ Pour vous connecter au fournisseur de contenu Screens, procédez comme suit :
 
    ![Lien mis en surbrillance à partir de la carte Environnements qui vous permet d’accéder au fournisseur de contenu Screens.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
-   Une fois votre connexion au fournisseur de contenu Screens établie, vous pouvez créer votre contenu lors de la lecture du contenu.
+   Après vous être connecté au fournisseur de contenu Screens, accédez à Screens > Fournisseur de contenu. Vous êtes maintenant prêt à créer votre contenu pour la lecture du contenu.
 
    Utilisez le fournisseur de contenu Screens pour créer et gérer les éléments suivants :
 
