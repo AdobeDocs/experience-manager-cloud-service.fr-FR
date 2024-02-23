@@ -2,10 +2,10 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
-workflow-type: ht
-source-wordcount: '3350'
-ht-degree: 100%
+source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
+workflow-type: tm+mt
+source-wordcount: '3376'
+ht-degree: 99%
 
 ---
 
@@ -252,6 +252,7 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | USERAGENT | Outils d’attaque | Les outils d’attaque consistent à utiliser des logiciels automatisés pour identifier des vulnérabilités de sécurité ou pour tenter d’exploiter une vulnérabilité découverte. |
 | LOG4J-JNDI | Log4J JNDI | Les attaques Log4J JNDI tentent d’exploiter la [Vulnérabilité Log4Shell](https://fr.wikipedia.org/wiki/Log4Shell) présente dans les versions de Log4J antérieures à la version 2.16.0 |
 | BHH | En-têtes de saut incorrects | Les en-têtes de saut incorrects indiquent une tentative de passage HTTP via un en-tête de transcodage (TE) ou de longueur de contenu (CL) mal formé, ou un en-tête de TE et de CL bien formé. |
+| CODEINJECTION | Injection de code | L’injection de code est une tentative d’obtention de contrôle ou d’endommagement d’un système cible par le biais de commandes de code d’application arbitraires par le biais d’entrées utilisateur. |
 | ABNORMALPATH | Chemin d’accès anormal | Le chemin d’accès anormal indique que le chemin d’accès d’origine est différent du chemin d’accès normalisé (par exemple, `/foo/./bar` est normalisé en `/foo/bar`). |
 | DOUBLEENCODING | Encodage double | L’encodage double vérifie la technique d’évasion du double encodage des caractères HTML. |
 | NOTUTF8 | Encodage non valide | Un encodage non valide peut entraîner la traduction par le serveur de caractères malveillants d’une requête dans une réponse, provoquant un déni de service ou un XSS. |
