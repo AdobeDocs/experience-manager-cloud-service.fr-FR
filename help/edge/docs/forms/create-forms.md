@@ -4,9 +4,9 @@ description: Concevez des formes parfaites, vite ! ⚡ Création basée sur des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ Ces formulaires envoient directement des données à un fichier Microsoft Excel 
 
 Avant de commencer, vérifiez que vous avez suivi les étapes suivantes :
 
-* Configurez et clonez votre projet Edge Delivery Service (EDS). Voir [tutoriel pour les développeurs](https://www.aem.live/developer/tutorial) pour plus d’informations. Le dossier local de votre projet Edge Delivery Service (EDS) est présenté comme `[EDS Project repository]` dans ce document.
-* Cloner le [Référentiel de bloc Forms](https://github.com/adobe/afb). Il contient le code permettant d’effectuer le rendu du formulaire sur une page web EDS. Le dossier local de votre référentiel de bloc Forms est présenté comme `[Forms Block repository]` dans ce document.
+* Configurez et clonez votre projet Edge Delivery Service (EDS). Voir [tutoriel pour les développeurs](https://www.aem.live/developer/tutorial) pour plus d’informations. Dans ce document, le dossier local de votre projet Edge Delivery Service (EDS) est appelé `[EDS Project repository]` .
+* Cloner le [Référentiel de bloc Forms](https://github.com/adobe/afb). Il contient le code permettant d’effectuer le rendu du formulaire sur une page web EDS. Dans ce document, le dossier local de votre référentiel de bloc Forms est appelé `[Forms Block repository]` dans ce document.
 * Assurez-vous que vous avez accès aux feuilles de calcul Google Sheets ou à Microsoft SharePoint.
 
 
@@ -42,7 +42,7 @@ AEM Forms Edge Delivery comprend un bloc de formulaire qui permet de créer faci
 
 1. Archivez les `form` dossier et fichiers sous-jacents à votre projet Edge Delivery Service sur GitHub.
 
-   Le bloc Form est ajouté au référentiel de projet EDS sur Github. Assurez-vous que la version Github n’échoue pas :
+   Le bloc Form est ajouté au référentiel de projet EDS sur GitHub. Assurez-vous que la version GitHub n’échoue pas :
 
    * Si vous rencontrez une erreur &quot;Impossible de résoudre le chemin d’accès au module &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, ouvrez la `[EDS Project]/blocks/forms/form.js` fichier . Dans l’instruction d’importation, remplacez la variable `lib-franklin.js` avec le fichier `aem.js` fichier .
 

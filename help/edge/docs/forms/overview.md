@@ -4,9 +4,9 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
@@ -27,12 +27,12 @@ Ce service composable est découplé de la source de contenu et offre la flexibi
 
 ![Outils de création de formulaires Edge Delivery](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Les créateurs de contenu peuvent tirer parti des outils dont ils disposent, tels que Microsoft Excel ou Google Sheets (création basée sur des documents), les éditeurs JSON ou l’éditeur AEM Forms Adaptive Forms pour l’édition WYSIWYG (projets AEM Forms), pour concevoir et créer leurs formulaires.
+Les créateurs de contenu peuvent tirer parti des outils dont ils disposent, tels que Microsoft Excel ou Google Sheets (création basée sur des documents), les fichiers JSON (création sans affichage) ou l’éditeur AEM Forms Adaptive Forms (création WYSIWYG), pour concevoir et créer leurs formulaires.
 
 >[!NOTE]
 >
 >
-> Fonctionnalité d’édition WYSIWYG et espaces de traversée disponibles sous le programme d’adoption précoce. Vous pouvez écrire à aem-forms-early-adopter-program@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité.
+> La fonctionnalité de création WYSIWYG est disponible dans le cadre du programme d’adoption précoce. Vous pouvez écrire à aem-forms-early-adopter-program@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité.
 
 ## Commencer par les principes de base
 
@@ -67,13 +67,12 @@ Les créateurs de contenu peuvent tirer parti des outils dont ils disposent, tel
             <br><b style="margin-top: 5px;">Appliquer les validations de champ</b>
         </a>
         <p>Réduisez les erreurs et les frustrations en vérifiant les entrées du formulaire pour une mise en forme correcte.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Utilisation de fragments de formulaire dans un formulaire EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Créer des fragments de formulaire</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Application de styles ou de thèmes à un formulaire de texte" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Personnalisation d’un thème</b>
         </a>
-        <p>Réutilisation de fragments préconfigurés dans plusieurs formulaires.</p>
+        <p>Créez une image de marque cohérente en appliquant le même thème à tous les formulaires.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -83,11 +82,11 @@ Les créateurs de contenu peuvent tirer parti des outils dont ils disposent, tel
         <p>Étendez la portée de vos formulaires tout en surveillant les coûts.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Application de styles ou de thèmes à un formulaire de texte" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Personnalisation d’un thème</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Utilisation de fragments de formulaire dans un formulaire EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Créer des fragments de formulaire</b>
         </a>
-        <p>Créez une image de marque cohérente en appliquant le même thème à tous les formulaires.</p>
+        <p>Réutilisation de fragments préconfigurés dans plusieurs formulaires.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
