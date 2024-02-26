@@ -2,10 +2,10 @@
 title: Définition des modèles, champs et types de composants
 description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
+source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 11%
+source-wordcount: '1126'
+ht-degree: 9%
 
 ---
 
@@ -94,7 +94,9 @@ Vous trouverez ci-dessous les types de composants que vous pouvez utiliser pour 
 
 Un type de composant de balise AEM active un sélecteur de balise AEM, qui peut être utilisé pour joindre des balises au composant.
 
-##### Échantillon {#sample-aem-tag}
+>[!BEGINTABS]
+
+>[!TAB Exemple]
 
 ```json
 {
@@ -110,15 +112,19 @@ Un type de composant de balise AEM active un sélecteur de balise AEM, qui peut 
 }
 ```
 
-##### Capture d’écran {#screenshot-aem-tag}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant de balise AEM](assets/component-types/aem-tag-picker.png)
+
+>[!ENDTABS]
 
 #### Contenu AEM {#aem-content}
 
 Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peut être utilisé pour définir des références de contenu.
 
-##### Échantillon {#sample-aem-content}
+>[!BEGINTABS]
+
+>[!TAB Exemple]
 
 ```json
 {
@@ -135,9 +141,11 @@ Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peu
 }
 ```
 
-##### Capture d’écran {#screenshot-aem-content}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant de contenu AEM](assets/component-types/aem-content-picker.png)
+
+>[!ENDTABS]
 
 #### Booléen {#boolean}
 
@@ -147,7 +155,9 @@ Un type de composant booléen stocke une simple valeur true/false rendue en tant
 |---|---|---|---|
 | `customErrorMsg` | `string` | Message qui s&#39;affiche si la valeur saisie n&#39;est pas une valeur booléenne | Non |
 
-##### Échantillon {#sample-boolean}
+>[!BEGINTABS]
+
+>[!TAB Exemple 1]
 
 ```json
 {
@@ -162,6 +172,8 @@ Un type de composant booléen stocke une simple valeur true/false rendue en tant
   ]
 }
 ```
+
+>[!TAB Exemple 2]
 
 ```json
 {
@@ -180,15 +192,19 @@ Un type de composant booléen stocke une simple valeur true/false rendue en tant
 }
 ```
 
-##### Capture d’écran {#screenshot-boolean}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant booléen](assets/component-types/boolean.png)
+
+>[!ENDTABS]
 
 #### Groupe de cases à cocher {#checkbox-group}
 
 Tout comme une valeur booléenne, un type de composant de groupe de cases à cocher permet de sélectionner plusieurs éléments true/false, rendus sous la forme de plusieurs cases à cocher.
 
-##### Échantillon {#sample-checkbox-group}
+>[!BEGINTABS]
+
+>[!TAB Exemple]
 
 ```json
 {
@@ -208,9 +224,11 @@ Tout comme une valeur booléenne, un type de composant de groupe de cases à coc
 }
 ```
 
-#### Capture d’écran {#screenshot-checkbox-group}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant Groupe de cases à cocher](assets/component-types/checkbox-group.png)
+
+>[!ENDTABS]
 
 #### Conteneur {#container}
 
@@ -220,7 +238,9 @@ Un type de composant de conteneur permet le regroupement de composants. Il propo
 |---|---|---|---|
 | `collapsible` | `boolean` | Le conteneur est-il réductible ? | Non |
 
-##### Échantillon {#sample-container}
+>[!BEGINTABS]
+
+>[!TAB Exemple]
 
 ```json
  {
@@ -251,9 +271,44 @@ Un type de composant de conteneur permet le regroupement de composants. Il propo
 }
 ```
 
-##### Capture d’écran {#screenshot-container}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant de conteneur](assets/component-types/container.png)
+
+#### Fragment de contenu {#content-fragment}
+
+Le sélecteur de fragment de contenu peut être utilisé pour sélectionner une [Fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) et ses variations (si nécessaire). Il propose une configuration supplémentaire.
+
+| Configuration | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `variationName` | `string` | Nom de variable pour stocker la variation sélectionnée. Si non défini, aucun sélecteur de variation n’est affiché. | Non |
+
+>[!BEGINTABS]
+
+>[!TAB Exemple 1]
+
+```json
+[
+  {
+    "id": "aem-content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Capture d’écran]
+
+![Capture d’écran du sélecteur de fragment de contenu](assets/component-types/aem-content-fragment.png)
+
+>[!ENDTABS]
 
 #### Heure de date {#date-time}
 
@@ -270,7 +325,9 @@ Il propose également un type de validation supplémentaire.
 |---|---|---|---|
 | `customErrorMsg` | `string` | Message qui s’affiche si `valueFormat` n&#39;est pas satisfait | Non |
 
-##### Échantillon {#sample-date-time}
+>[!BEGINTABS]
+
+>[!TAB Exemple 1]
 
 ```json
 {
@@ -285,6 +342,8 @@ Il propose également un type de validation supplémentaire.
   ]
 }
 ```
+
+>[!TAB Exemple 2]
 
 ```json
 {
@@ -336,15 +395,55 @@ Il propose également un type de validation supplémentaire.
 }
 ```
 
-##### Capture d’écran {#screenshot-date-time}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant d’heure de date](assets/component-types/date-time.png)
+
+>[!ENDTABS]
+
+#### Fragment d’expérience {#experience-fragment}
+
+Le sélecteur de fragment d’expérience peut être utilisé pour sélectionner une [Fragment d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) et ses variations (si nécessaire). Il propose une configuration supplémentaire.
+
+| Configuration | Type de valeur | Description | Requis |
+|---|---|---|---|
+| `variationName` | `string` | Nom de variable pour stocker la variation sélectionnée. Si non défini, aucun sélecteur de variation n’est affiché. | Non |
+
+>[!BEGINTABS]
+
+>[!TAB Exemple 1]
+
+```json
+[
+  {
+    "id": "aem-experience-fragment",
+    "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "name": "picker",
+        "label": "Experience Fragment Picker",
+        "valueType": "string",
+        "variationName": "experienceFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Capture d’écran]
+
+![Capture d’écran du sélecteur de fragment d’expérience](assets/component-types/aem-experience-fragment.png)
+
+>[!ENDTABS]
+
 
 #### Multisélection {#multiselect}
 
 Un type de composant à sélection multiple présente plusieurs éléments à sélectionner dans une liste déroulante, notamment la possibilité de regrouper les éléments sélectionnables.
 
-##### Exemples {#sample-multiselect}
+>[!BEGINTABS]
+
+>[!TAB Exemple 1]
 
 ```json
 {
@@ -363,6 +462,8 @@ Un type de composant à sélection multiple présente plusieurs éléments à s�
   ]
 }
 ```
+
+>[!TAB Exemple 2]
 
 ```json
 {
@@ -397,10 +498,12 @@ Un type de composant à sélection multiple présente plusieurs éléments à s�
 }
 ```
 
-##### Captures d’écran {#screenshot-multiselect}
+>[!TAB Captures d’écran]
 
 ![Capture d’écran du type de composant à sélection multiple](assets/component-types/multiselect.png)
 ![Capture d’écran du type de composant à sélection multiple avec regroupement](assets/component-types/multiselect-group.png)
+
+>[!ENDTABS]
 
 #### Nombre {#number}
 
@@ -412,7 +515,9 @@ Un type de composant numérique permet la saisie d’un nombre. Il offre des typ
 | `numberMax` | `number` | Nombre maximal autorisé | Non |
 | `customErrorMsg` | `string` | Message qui s’affiche si `numberMin` ou `numberMax` n&#39;est pas satisfait | Non |
 
-##### Échantillon {#sample-number}
+>[!BEGINTABS]
+
+>[!TAB Exemple 1]
 
 ```json
 {
@@ -428,6 +533,8 @@ Un type de composant numérique permet la saisie d’un nombre. Il offre des typ
   ]
 }
 ```
+
+>[!TAB Exemple 2]
 
 ```json
 {
@@ -451,15 +558,19 @@ Un type de composant numérique permet la saisie d’un nombre. Il offre des typ
 }
 ```
 
-##### Capture d’écran {#screenshot-number}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant numérique](assets/component-types/number.png)
+
+>[!ENDTABS]
 
 #### Groupe de cases d’option {#radio-group}
 
 Un type de composant de groupe de cases d’option permet une sélection mutuellement exclusive de plusieurs options rendues sous la forme d’un groupe semblable à un groupe de cases à cocher.
 
-##### Échantillon {#sample-radio-group}
+>[!BEGINTABS]
+
+>[!TAB Exemple]
 
 ```json
 {
@@ -479,15 +590,19 @@ Un type de composant de groupe de cases d’option permet une sélection mutuell
 }
 ```
 
-##### Capture d’écran {#screenshot-radio-group}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant Groupe radio](assets/component-types/radio.png)
+
+>[!ENDTABS]
 
 #### Référence {#reference}
 
 Un type de composant de référence permet une référence à un autre objet de données de l’objet actif.
 
-##### Échantillon {#sample-reference}
+>[!BEGINTABS]
+
+>[!TAB Exemple]
 
 ```json
 {
@@ -503,15 +618,19 @@ Un type de composant de référence permet une référence à un autre objet de 
 }
 ```
 
-##### Capture d’écran {#screenshot-reference}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant de référence](assets/component-types/reference.png)
+
+>[!ENDTABS]
 
 #### Sélectionner {#select}
 
 Un type de composant sélectionné permet de sélectionner une seule option dans une liste d’options prédéfinies d’un menu déroulant.
 
-##### Échantillon {#sample-select}
+>[!BEGINTABS]
+
+>[!TAB Exemple]
 
 ```json
 {
@@ -531,9 +650,11 @@ Un type de composant sélectionné permet de sélectionner une seule option dans
 }
 ```
 
-##### Capture d’écran {#screenshot-select}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant sélectionné](assets/component-types/select.png)
+
+>[!ENDTABS]
 
 #### Tabulation {#tab}
 
@@ -543,7 +664,9 @@ A `tab` peut être considérée comme un séparateur dans le tableau de `fields`
 
 Si vous souhaitez que les éléments apparaissent au-dessus de tous les onglets, ils doivent être définis avant les onglets.
 
-##### Échantillon {#sample-tab}
+>[!BEGINTABS]
+
+>[!TAB Exemple]
 
 ```json
 {
@@ -575,9 +698,11 @@ Si vous souhaitez que les éléments apparaissent au-dessus de tous les onglets,
 }
 ```
 
-##### Capture d’écran {#screenshot-tab}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant Onglet](assets/component-types/tab.png)
+
+>[!ENDTABS]
 
 #### Zone de texte {#text-area}
 
@@ -588,7 +713,9 @@ Une zone de texte permet une saisie de texte enrichi multiligne. Il offre des ty
 | `maxSize` | `number` | Nombre maximal de caractères autorisés | Non |
 | `customErrorMsg` | `string` | Message qui s’affiche si `maxSize` est dépassé | Non |
 
-##### Échantillon {#sample-text-area}
+>[!BEGINTABS]
+
+>[!TAB Exemple 1]
 
 ```json
 {
@@ -603,6 +730,8 @@ Une zone de texte permet une saisie de texte enrichi multiligne. Il offre des ty
   ]
 }
 ```
+
+>[!TAB Exemple 2]
 
 ```json
 {
@@ -622,9 +751,11 @@ Une zone de texte permet une saisie de texte enrichi multiligne. Il offre des ty
 }
 ```
 
-##### Capture d’écran {#screenshot-text-area}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant Zone de texte](assets/component-types/richtext.png)
+
+>[!ENDTABS]
 
 #### Entrée de texte {#text-input}
 
@@ -637,7 +768,9 @@ Une saisie de texte permet de saisir une seule ligne de texte.  Elle comprend de
 | `regExp` | `string` | Expression régulière à laquelle le texte d’entrée doit correspondre | Non |
 | `customErrorMsg` | `string` | Message qui s’affiche si `minLength`, `maxLength`, et/ou `regExp` est/sont violées | Non |
 
-##### Échantillon {#sample-text-input}
+>[!BEGINTABS]
+
+>[!TAB Exemple 1]
 
 ```json
 {
@@ -652,6 +785,8 @@ Une saisie de texte permet de saisir une seule ligne de texte.  Elle comprend de
   ]
 }
 ```
+
+>[!TAB Exemple 2]
 
 ```json
 {
@@ -675,6 +810,8 @@ Une saisie de texte permet de saisir une seule ligne de texte.  Elle comprend de
 }
 ```
 
-##### Capture d’écran {#screenshot-text-input}
+>[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant de saisie de texte](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
