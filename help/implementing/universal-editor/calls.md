@@ -1,16 +1,16 @@
 ---
-title: Appels universels de l’éditeur
+title: Appels de l’éditeur universel
 description: Découvrez les différents types d’appels effectués sur votre application par l’éditeur universel pour vous aider lors du débogage.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '615'
+ht-degree: 2%
 
 ---
 
 
-# Appels universels de l’éditeur {#calls}
+# Appels de l’éditeur universel {#calls}
 
 Découvrez les différents types d’appels effectués sur votre application par l’éditeur universel pour vous aider lors du débogage.
 
@@ -27,6 +27,8 @@ Toutefois, pour le développeur, la compréhension de ces appels et de ce qu’i
 * La variable **Payload** de l’appel contient des détails sur les éléments mis à jour par l’éditeur, y compris l’identification des éléments à mettre à jour et la manière de les mettre à jour.
 * La variable **Réponse** inclut des détails sur ce qui a été mis à jour exactement par le service d’éditeur. Cela facilite l’actualisation du contenu dans l’éditeur. Dans certains cas, comme une `move` , la page entière doit être actualisée.
 
+Une fois qu’un appel est terminé avec succès, les événements sont déclenchés et incluent la charge utile de la requête et de la réponse, qui peut être personnalisée pour votre propre application. Consultez le document [Événements d’éditeur universels](/help/implementing/universal-editor/events.md) pour plus d’informations.
+
 Vous trouverez ci-dessous une liste des types d’appels effectués par l’éditeur universel vers votre application, ainsi que des exemples de payloads et de réponses.
 
 ## Mettre à jour {#update}
@@ -40,7 +42,9 @@ Sa charge utile inclut des détails sur les éléments à écrire dans le JCR.
 * `type`: type de valeur JCR de la propriété mise à jour.
 * `value`: données mises à jour
 
-### Exemple de charge utile {#update-payload}
+>[!BEGINTABS]
+
+>[!TAB Exemple de charge utile]
 
 ```json
 {
@@ -60,7 +64,7 @@ Sa charge utile inclut des détails sur les éléments à écrire dans le JCR.
 }
 ```
 
-### Exemple de réponse {#update-response}
+>[!TAB Exemple de réponse]
 
 ```json
 {
@@ -74,6 +78,8 @@ Sa charge utile inclut des détails sur les éléments à écrire dans le JCR.
 }
 ```
 
+>[!ENDTABS]
+
 ## Détails {#details}
 
 A `details` survient lors du chargement de votre application dans l’éditeur universel pour récupérer le contenu de l’application.
@@ -83,7 +89,9 @@ Sa charge utile inclut les données à générer ainsi que des détails sur ce q
 * Pour un composant, l’éditeur universel récupère uniquement une `data` , puisque le schéma des données est défini dans l’application.
 * Pour les fragments de contenu, l’éditeur universel récupère également une `schema` car le modèle de fragment de contenu est défini dans le JCR.
 
-### Exemple de charge utile {#details-payload}
+>[!BEGINTABS]
+
+>[!TAB Exemple de charge utile]
 
 ```json
 {
@@ -102,7 +110,7 @@ Sa charge utile inclut les données à générer ainsi que des détails sur ce q
 }
 ```
 
-### Exemple de réponse {#details-response}
+>[!TAB Exemple de réponse]
 
 ```json
 {
@@ -134,6 +142,8 @@ Sa charge utile inclut les données à générer ainsi que des détails sur ce q
 }
 ```
 
+>[!ENDTABS]
+
 ## Ajouter {#add}
 
 Un `add` Cet appel se produit lorsque vous placez un nouveau composant dans votre application à l’aide d’Universal Editor.
@@ -142,7 +152,9 @@ Sa payload comprend une `path` contenant l’emplacement d’ajout du contenu.
 
 Elle comprend également une `content` avec des objets supplémentaires pour les détails spécifiques au point de fin du contenu à stocker. [pour chaque module externe.](/help/implementing/universal-editor/architecture.md) Par exemple, si votre application est basée sur le contenu d’AEM et de Magento, la payload contiendra un objet de données pour chaque système.
 
-### Exemple de charge utile {#add-payload}
+>[!BEGINTABS]
+
+>[!TAB Exemple de charge utile]
 
 ```json
 {
@@ -174,7 +186,7 @@ Elle comprend également une `content` avec des objets supplémentaires pour les
 }
 ```
 
-### Exemple de réponse {#add-response}
+>[!TAB Exemple de réponse]
 
 ```json
 {
@@ -188,13 +200,17 @@ Elle comprend également une `content` avec des objets supplémentaires pour les
 }
 ```
 
+>[!ENDTABS]
+
 ## Déplacer {#move}
 
 A `move` Cet appel se produit lorsque vous déplacez un composant dans votre application à l’aide d’Universal Editor.
 
 Sa payload comprend une `from` définissant l’emplacement du composant et un `to` définissant l’emplacement de déplacement.
 
-### Exemple de charge utile {#move-payload}
+>[!BEGINTABS]
+
+>[!TAB Exemple de charge utile]
 
 ```json
 {
@@ -227,7 +243,7 @@ Sa payload comprend une `from` définissant l’emplacement du composant et un `
 }
 ```
 
-### Exemple de réponse {#move-response}
+>[!TAB Exemple de réponse]
 
 ```json
 {
@@ -240,13 +256,17 @@ Sa payload comprend une `from` définissant l’emplacement du composant et un `
 }
 ```
 
+>[!ENDTABS]
+
 ## Supprimez {#remove}
 
 A `remove` Cet appel se produit lorsque vous supprimez un composant dans votre application à l’aide d’Universal Editor.
 
 Sa charge utile inclut le chemin d’accès de l’objet qui est supprimé.
 
-### Exemple de charge utile {#remove-payload}
+>[!BEGINTABS]
+
+>[!TAB Exemple de charge utile]
 
 ```json
 {
@@ -272,7 +292,7 @@ Sa charge utile inclut le chemin d’accès de l’objet qui est supprimé.
 }
 ```
 
-### Exemple de réponse {#remove-response}
+>[!TAB Exemple de réponse]
 
 ```json
 {
@@ -286,13 +306,17 @@ Sa charge utile inclut le chemin d’accès de l’objet qui est supprimé.
 }
 ```
 
+>[!ENDTABS]
+
 ## Publier {#publish}
 
 A `publish` survient lorsque vous cliquez sur le bouton **Publier** dans l’éditeur universel pour publier le contenu que vous avez modifié.
 
 L’éditeur universel effectue une itération sur le contenu et génère une liste de références qui doit également être publiée.
 
-### Exemple de charge utile {#publish-payload}
+>[!BEGINTABS]
+
+>[!TAB Exemple de charge utile]
 
 ```json
 {
@@ -332,7 +356,7 @@ L’éditeur universel effectue une itération sur le contenu et génère une li
 }
 ```
 
-### Exemple de réponse {#publish-response}
+>[!TAB Exemple de réponse]
 
 ```json
 {
@@ -355,3 +379,9 @@ L’éditeur universel effectue une itération sur le contenu et génère une li
   ]
 }
 ```
+
+>[!ENDTABS]
+
+## Ressources supplémentaires {#additional-resources}
+
+* [Événements d’éditeur universels](/help/implementing/universal-editor/events.md)
