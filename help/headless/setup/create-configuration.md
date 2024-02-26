@@ -2,7 +2,7 @@
 title: Création d’une configuration - Configuration découplée
 description: Créez une configuration comme première étape de prise en main d’AEM as a Cloud Service en mode découplé.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 92%
@@ -19,7 +19,7 @@ L’explorateur de configurations fournit une API de configuration générique, 
 
 Dans le contexte d’une gestion de contenu découplée dans AEM, considérez une configuration comme un espace de travail dans AEM où vous pouvez créer vos modèles de contenu, qui définissent la structure de votre futur contenu et des fragments de contenu. Vous pouvez avoir plusieurs configurations pour séparer ces modèles.
 
-Si vous connaissez les modèles de page [dans une implémentation AEM complète,](/help/sites-cloud/authoring/features/templates.md) l’utilisation des configurations pour la gestion des modèles de contenu est similaire.
+Si vous connaissez les modèles de page [dans une implémentation AEM complète,](/help/sites-cloud/authoring/sites-console/templates.md) l’utilisation des configurations pour la gestion des modèles de contenu est similaire.
 
 ## Création d’une configuration {#how-to-create-a-configuration}
 
@@ -37,7 +37,7 @@ Un administrateur n’a besoin de créer une configuration qu’une seule fois, 
 
    ![Création d’une configuration](../assets/create-configuration.png)
 
-1. Sélectionnez **Créer**
+1. Sélectionner **Créer**
 
 Si nécessaire, vous pouvez créer plusieurs configurations. Les configurations peuvent également être imbriquées.
 

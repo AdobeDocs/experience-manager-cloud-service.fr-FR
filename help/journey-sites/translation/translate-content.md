@@ -5,8 +5,8 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 100%
 
@@ -285,4 +285,4 @@ Appuyez-vous sur ces connaissances pour poursuivre votre parcours de traduction 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en mode découplé en consultant le document [Publication du contenu traduit](publish-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, bien qu’ils ne soient pas obligatoires pour poursuivre le parcours en mode découplé.
 
 * [Gestion des projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) : découvrez les détails des projets de traduction et des fonctionnalités supplémentaires telles que les processus de traduction humaine et les projets multilingues.
-* [Environnements et outils de création](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) – AEM fournit divers mécanismes d’organisation et de modification de votre contenu, notamment un puissant navigateur de chemins d’accès.
+* [Environnements et outils de création](/help/sites-cloud/authoring/path-selection.md#path-selection) – AEM fournit divers mécanismes d’organisation et de modification de votre contenu, notamment un puissant navigateur de chemins d’accès.

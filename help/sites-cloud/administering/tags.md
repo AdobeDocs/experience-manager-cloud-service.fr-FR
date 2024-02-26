@@ -2,7 +2,7 @@
 title: Administration des balises
 description: Découvrez comment administrer des balises dans AEM pour organiser votre contenu.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 4%
@@ -16,7 +16,7 @@ Les balises constituent une méthode intuitive de classification de contenu. Ils
 Dans Adobe Experience Manager (AEM), une balise peut être une propriété de :
 
 * Noeud de contenu pour une page
-   * Voir le document [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md) pour plus d’informations.
+   * Voir le document [Utilisation des balises](/help/sites-cloud/authoring/sites-console/tags.md) pour plus d’informations.
 * Noeud de métadonnées d’une ressource
    * Voir le document [Gestion des métadonnées des ressources numériques](/help/assets/manage-metadata.md) pour plus d’informations.
 
@@ -183,7 +183,7 @@ Vous pouvez afficher plus de détails sur la balise, y compris le dernier utilis
 
    ![Affichage des propriétés de balise](assets/tag-properties.png)
 
-Pour plus d’informations sur la sélection des modes d’affichage et le rail, voir [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Pour plus d’informations sur la sélection des modes d’affichage et le rail, voir [Manipulation de base](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Modification des balises {#editing-tags}
 
@@ -245,7 +245,7 @@ Il peut s’avérer utile de déterminer le contenu appliqué à une balise part
 
 Passez la souris ou sélectionnez un contenu de référence dans la liste pour afficher le chemin d’accès complet du contenu.
 
-Pour plus d’informations sur la sélection des modes d’affichage et le rail, voir [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Pour plus d’informations sur la sélection des modes d’affichage et le rail, voir [Manipulation de base](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Déplacement des balises {#moving-tags}
 

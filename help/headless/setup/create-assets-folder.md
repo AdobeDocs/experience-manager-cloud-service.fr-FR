@@ -2,7 +2,7 @@
 title: Création d’un dossier de ressources - Configuration découplée
 description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 83%
@@ -34,7 +34,7 @@ Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pou
       * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](../assets/assets-folder-create.png)
-1. Sélectionnez le dossier que vous avez créé en survolant et en appuyant sur la coche. Puis sélectionnez **Propriétés** dans la barre d’outils (ou utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
+1. Sélectionnez le dossier que vous avez créé en survolant et en appuyant sur la coche. Puis sélectionnez **Propriétés** dans la barre d’outils (ou utilisez le [raccourci clavier](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `p`).
 1. Dans la fenêtre **Propriétés**, sélectionnez l’onglet **Services cloud**.
 1. Pour la **configuration du cloud**, sélectionnez la[ configuration que vous avez créée précédemment.](create-configuration.md)
    ![Configurer le dossier de ressources](../assets/assets-folder-configure.png)

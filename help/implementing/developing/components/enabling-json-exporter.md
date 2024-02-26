@@ -2,10 +2,10 @@
 title: Activation de l’exportateur JSON pour un composant
 description: Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 91%
+source-wordcount: '421'
+ht-degree: 90%
 
 ---
 
@@ -78,5 +78,5 @@ Pour obtenir un exemple, consultez la mise en œuvre du modèle Sling sur le com
 
 * [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)

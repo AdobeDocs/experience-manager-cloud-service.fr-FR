@@ -4,7 +4,7 @@ description: Découvrez comment gérer vos fragments de contenu AEM à partir de
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '2620'
 ht-degree: 43%
@@ -32,7 +32,7 @@ Après avoir défini votre [Modèles de fragment de contenu](#creating-a-content
 >Il est possible d’utiliser les fragments de contenu comme suit :
 >
 >* pour [Diffusion de contenu sans affichage à l’aide de fragments de contenu avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
->* lors de la création de pages ; voir [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* lors de la création de pages ; voir [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ Après la publication, l’état du fragment est mis à jour et visible dans l�
 
 >[!NOTE]
 >
->De plus, lorsque vous [publiez une page qui utilise ce fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
+>De plus, lorsque vous [publiez une page qui utilise ce fragment](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 ## Annuler la publication d’un fragment {#unpublishing-a-fragment}
 

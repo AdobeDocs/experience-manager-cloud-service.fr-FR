@@ -2,10 +2,10 @@
 title: Participation aux workflows
 description: Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
@@ -24,11 +24,11 @@ Les workflows incluent généralement des étapes qui nécessitent qu’une pers
 
 Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**), diverses alertes et/ou notifications s’affichent :
 
-* Votre indicateur de [notification](/help/sites-cloud/authoring/getting-started/inbox.md) (barre d’outils) est incrémenté :
+* Votre indicateur de [notification](/help/sites-cloud/authoring/inbox.md) (barre d’outils) est incrémenté :
 
   ![Barre d’outils Notification](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* L’élément est répertorié dans votre [boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) de notifications :
+* L’élément est répertorié dans votre [boîte de réception](/help/sites-cloud/authoring/inbox.md) de notifications :
 
   ![Notifications dans la boîte de réception](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ Vous pouvez terminer une étape de participant à partir des éléments suivants
 
 Utilisez la procédure suivante pour terminer l’élément de travail :
 
-1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Terminer** dans la barre d’outils.
 1. La variable **Terminer l’élément de travail** s’ouvre. Sélectionnez la variable **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
@@ -82,7 +82,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 
 Utilisez la procédure suivante pour terminer l’élément de travail :
 
-1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Terminer** dans la barre d’état en haut.
 1. La variable **Terminer l’élément de travail** s’ouvre. Sélectionnez la variable **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
@@ -131,7 +131,7 @@ Vous pouvez déléguer une étape de participant depuis :
 
 Utilisez la procédure suivante pour déléguer un élément de travail :
 
-1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Déléguer** dans la barre d’outils.
 1. La boîte de dialogue s’ouvre. Spécifiez la variable **Utilisateur** à partir du sélecteur de liste déroulante (il peut également s’agir d’un groupe) et ajoutez une **Commentaire** si nécessaire.
@@ -141,7 +141,7 @@ Utilisez la procédure suivante pour déléguer un élément de travail :
 
 Utilisez la procédure suivante pour déléguer un élément de travail :
 
-1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Déléguer** dans la barre d’état en haut.
 1. La boîte de dialogue s’ouvre. Spécifiez la variable **Utilisateur** à partir du sélecteur de liste déroulante (il peut également s’agir d’un groupe) et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
@@ -163,7 +163,7 @@ Vous pouvez également utiliser la chronologie pour déléguer et/ou attribuer u
 
 ### Revenir d’une étape de participant en arrière {#performing-step-back-on-a-participant-step}
 
-Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir en arrière. Vous pouvez ainsi sélectionner une étape, qui s’est produite plus tôt dans le workflow, pour le retraitement. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
+Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir en arrière. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
 
 Sur cette action, vous pouvez indiquer :
 
@@ -181,7 +181,7 @@ Vous pouvez revenir en arrière sur une étape de participant ou participante de
 
 Procédez comme suit pour revenir en arrière :
 
-1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Revenir en arrière** pour ouvrir la boîte de dialogue.
 1. Spécifiez la variable **Étape précédente** et ajoutez une **Commentaire** si nécessaire.
@@ -191,7 +191,7 @@ Procédez comme suit pour revenir en arrière :
 
 Procédez comme suit pour revenir en arrière :
 
-1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Revenir en arrière** dans la barre d’état en haut.
 1. Spécifiez la variable **Étape précédente** et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
@@ -242,7 +242,7 @@ Vous pouvez ouvrir les détails de l’élément de travail à partir de :
 
 Pour ouvrir un élément de workflow et afficher les détails :
 
-1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Ouvrir** pour ouvrir les onglets d’informations.
 1. Si nécessaire, sélectionnez l’action appropriée, fournissez les détails et confirmez avec **OK** (ou **Annuler**).
@@ -252,7 +252,7 @@ Pour ouvrir un élément de workflow et afficher les détails :
 
 Pour ouvrir un élément de workflow et afficher les détails :
 
-1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Afficher les détails** dans la barre d’état pour ouvrir les onglets d’informations.
 1. Si nécessaire, sélectionnez l’action appropriée, fournissez les détails et confirmez avec **OK** (ou **Annuler**).
 1. Utilisez **Enregistrer** ou **Annuler** pour quitter.
@@ -263,7 +263,7 @@ Vous pouvez afficher les détails de la charge utile associée à l’instance d
 
 Pour afficher la charge utile et les ressources de l’instance de workflow :
 
-1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Afficher la charge utile** dans la barre d’outils pour ouvrir la boîte de dialogue.
    * Un package de workflow étant simplement un ensemble de pointeurs vers les chemins d’accès au sein du référentiel, vous pouvez y ajouter, supprimer ou modifier les entrées pour définir ce qu’il référence. Utilisez le composant **Définition de ressource** pour ajouter de nouvelles entrées.

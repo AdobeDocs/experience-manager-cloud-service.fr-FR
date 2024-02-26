@@ -2,9 +2,9 @@
 title: Exportation de fragments de contenu vers Adobe Target
 description: Découvrez comment exporter vos fragments de contenu vers Adobe Target pour tester et personnaliser des expériences.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2159'
 ht-degree: 96%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 96%
 >* Les fragments de contenu AEM sont exportés dans l’espace de travail par défaut d’Adobe Target.
 >* AEM doit être intégré à Adobe Target conformément aux instructions de la section [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-Vous pouvez exporter les [Fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md), créés dans Adobe Experience Manager as a Cloud Service (AEM) dans Adobe Target (Target). Ceux-ci peuvent ensuite être utilisés comme offres dans les activités Target, pour tester et personnaliser les expériences en fonction des besoins.
+Vous pouvez exporter les [Fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md), créés dans Adobe Experience Manager as a Cloud Service (AEM) dans Adobe Target (Target). Ceux-ci peuvent ensuite être utilisés comme offres dans les activités Target, pour tester et personnaliser les expériences en fonction des besoins.
 
 Il existe une option pour exporter un fragment de contenu vers Adobe Target :
 
@@ -286,7 +286,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -300,7 +300,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -352,7 +352,7 @@ Pour exporter un fragment de contenu d’AEM vers Target (après avoir spécifi�
 
    >[!NOTE]
    >
-   >[Divers détails](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment) sur l’exportation sont visibles dans la vue **Liste** de la console et dans les **Propriétés**.
+   >[Divers détails](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-content-fragment) sur l’exportation sont visibles dans la vue **Liste** de la console et dans les **Propriétés**.
 
    >[!NOTE]
    >
@@ -360,7 +360,7 @@ Pour exporter un fragment de contenu d’AEM vers Target (après avoir spécifi�
 
 >[!NOTE]
 >
->Vous pouvez également effectuer l’exportation à partir de l’éditeur de page à l’aide de commandes comparables dans le menu [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information).
+>Vous pouvez également effectuer l’exportation à partir de l’éditeur de page à l’aide de commandes comparables dans le menu [Informations sur la page](/help/sites-cloud/authoring/page-editor/introduction.md#page-information).
 
 ## Utiliser vos fragments de contenu dans Adobe Target {#using-your-content-fragments-in-adobe-target}
 

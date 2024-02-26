@@ -2,10 +2,10 @@
 title: Métadonnées - Propriétés des fragments (Ressources - Fragments de contenu)
 description: Vous pouvez afficher et modifier les propriétés des métadonnées des fragments de contenu.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 79%
+ht-degree: 82%
 
 ---
 
@@ -15,7 +15,7 @@ Découvrez comment afficher et modifier les propriétés de métadonnées des fr
 
 >[!NOTE]
 >
->Fragments de contenu sont une fonctionnalité de sites, mais sont stockées sous la forme **Ressources**.
+>Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
 >Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ).
 
@@ -38,7 +38,7 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
    * **Titre**
    * **Description**
    * **Balises**
-      * Les [balises](/help/sites-cloud/authoring/features/tags.md) sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
+      * Les [balises](/help/sites-cloud/authoring/sites-console/tags.md) sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
 Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancement de Noël » pour ne les parcourir que sous forme de sous-ensemble, ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
 
         >[!NOTE]

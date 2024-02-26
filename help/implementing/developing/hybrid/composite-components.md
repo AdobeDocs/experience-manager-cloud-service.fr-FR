@@ -2,9 +2,9 @@
 title: Composants composites dans les applications d’une seule page (SPA)
 description: Découvrez comment créer vos propres composants composites, composants constitués eux-mêmes d’autres composants, qui fonctionnent avec l’éditeur d’application monopage AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '782'
 ht-degree: 94%
 
 ---
@@ -156,7 +156,7 @@ Vous pouvez ensuite l’ajouter à votre SPA et récupérer son contenu.
     itemPath='root/responsivegrid' />
    ```
 
-1. Ajoutez le composant `wknd-spa/components/imagecard` créé aux composants autorisés pour le composant de conteneur [dans le modèle de page](/help/sites-cloud/authoring/features/templates.md).
+1. Ajoutez le composant `wknd-spa/components/imagecard` créé aux composants autorisés pour le composant de conteneur [dans le modèle de page](/help/sites-cloud/authoring/sites-console/templates.md).
 
 Désormais, le composant `imagecard` peut être directement ajouté au conteneur dans l’éditeur d’AEM.
 

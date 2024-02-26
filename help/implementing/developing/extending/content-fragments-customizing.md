@@ -2,10 +2,10 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard. Découvrez comment les personnaliser.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 56%
+source-wordcount: '1689'
+ht-degree: 60%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 56%
 
 Dans Adobe Experience Manager as a Cloud Service, un fragment de contenu étend une ressource standard ; voir :
 
-* [Création et gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) et [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md) pour plus d’informations sur les fragments de contenu.
+* [Création et gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) et [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) pour plus d’informations sur les fragments de contenu.
 
 * [Gestion des ressources](/help/assets/manage-digital-assets.md) pour plus d’informations sur les ressources standard.
 
@@ -96,11 +96,11 @@ Pour une intégration au composant de base Assets :
 >
 >Le [composant Fragment de contenu fait partie des composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr). Consultez la section [Développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour plus d’informations.
 
-Les fragments de contenu peuvent être référencés à partir des pages AEM, comme tout autre type de ressource. AEM fournit la variable **[Composant principal Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr)** - a [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant de base de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr)**.
+Les fragments de contenu peuvent être référencés à partir des pages AEM, comme tout autre type de ressource. AEM fournit la variable **[Composant principal Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr)** - a [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant de base de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr)**.
 
 * Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
-* Le composant permet de sélectionner la variation à afficher.
+* Le composant vous permet de sélectionner la variation à afficher.
 
 * En outre, une plage de paragraphes peut être sélectionnée pour limiter la sortie ; par exemple, elle peut être utilisée pour la sortie à plusieurs colonnes.
 
@@ -124,11 +124,11 @@ Les fragments de contenu peuvent être référencés à partir des pages AEM, co
 
 ### Intégration à d’autres structures {#integration-with-other-frameworks}
 
-Les fragments de contenu peuvent être intégrés avec :
+Les fragments de contenu peuvent être intégrés aux éléments suivants :
 
 * **Des traductions**
 
-  Les fragments de contenu sont entièrement intégrés au [workflow de traduction AEM](/help/sites-cloud/administering/translation/overview.md). Au niveau architectural, cela se traduit par les éléments suivants :
+  Les fragments de contenu sont entièrement intégrés au [workflow de traduction AEM](/help/sites-cloud/administering/translation/overview.md). Sur le plan architectural, cela signifie :
 
    * Les traductions individuelles d’un fragment de contenu sont des fragments distincts, par exemple :
 
@@ -162,9 +162,9 @@ Les fragments de contenu peuvent être intégrés avec :
 
 ## API de gestion des fragments de contenu – côté serveur {#the-content-fragment-management-api-server-side}
 
-Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu ; consultez :
+Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu, voir :
 
-[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description).
+[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -176,27 +176,27 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 * **Fragment de contenu** ([ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-  Cette interface vous permet d’utiliser un fragment de contenu de manière abstraite.
+  Cette interface vous permet d’utiliser un fragment de contenu de façon abstraite.
 
   L’interface permet les actions suivantes :
 
    * Gestion des informations de base (par exemple, obtenir le nom ou obtenir/définir le titre/la description)
-   * Accès aux métadonnées
-   * Accès aux éléments :
+   * Accéder aux métadonnées
+   * Accéder aux éléments :
 
-      * Éléments de liste
-      * Obtention des éléments par nom
+      * Répertorier les éléments
+      * Obtenir les éléments par nom
       * Création d’éléments (voir [Avertissements](#caveats))
 
       * Accès aux données des éléments (voir `ContentElement`)
 
-   * Variations de liste définies pour le fragment
+   * Répertorier les variations définies pour le fragment
    * Créer des variations globalement
-   * Gestion du contenu associé :
+   * Gérer le contenu associé :
 
-      * Liste des collections
-      * Ajout de collections
-      * Suppression de collections
+      * Répertorier les collections
+      * Ajouter des collections
+      * Supprimer des collections
 
    * Accès au modèle du fragment
 
@@ -205,11 +205,11 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
    * **Élément de contenu** ([ContentElement](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Obtention des informations de base (nom, titre et description)
-      * Obtention/définition du contenu
-      * Accès aux variations d’un élément :
+      * Obtenir/définir du contenu
+      * Accéder aux variations d’un élément :
 
-         * Liste des variations
-         * Obtention des variations par nom
+         * Répertorier des variations
+         * Obtentir les variations par nom
          * Création de variations (voir [Avertissements](#caveats))
          * Suppression de variations (voir [Restrictions](#caveats))
          * Accès aux données de variation (voir `ContentVariation`)
@@ -219,7 +219,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
    * **Variation de contenu** ([ContentVariation](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Obtention des informations de base (nom, titre et description)
-      * Obtention/définition du contenu
+      * Obtenir/définir du contenu
       * Synchronisation simple, basée sur la dernière information modifiée
 
   Chacune des trois interfaces (`ContentFragment`, `ContentElement` et `ContentVariation`) étend l’interface `Versionable`, ce qui ajoute des fonctionnalités de contrôle de version, requises pour les fragments de contenu :

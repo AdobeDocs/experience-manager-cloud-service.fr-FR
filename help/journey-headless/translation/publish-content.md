@@ -2,10 +2,10 @@
 title: Publication du contenu découplé traduit
 description: Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,9 @@ La méthode la plus simple pour publier les traductions consiste à accéder au 
 
 Ce chemin d’accès mène aux sous-dossiers pour chaque langue de traduction et vous pouvez choisir laquelle publier.
 
-1. Accédez à **Navigation** > **Ressources** > **Fichiers** et ouvrez le dossier du projet.
+1. Naviguez vers **Navigation** -> **Assets** -> **Fichiers** et ouvrez le dossier du projet.
 1. Vous pouvez y voir le dossier racine de langue et tous les autres dossiers de langue. Sélectionnez la ou les langues localisées que vous souhaitez publier.
-   ![Sélectionner le dossier de langue](assets/select-language-folder.png)
+   ![Sélection du dossier de langue.](assets/select-language-folder.png)
 1. Sélectionner **Gérer la publication**.
 1. Dans la fenêtre **Gérer la publication**, assurez-vous que **Publier** est automatiquement sélectionné sous **Action** et que **Maintenant** est sélectionné sous **Planification**. Sélectionnez **Suivant**.
    ![Gérer les options de publication](assets/manage-publication-options.png)
@@ -80,7 +80,7 @@ Votre contenu découplé traduit est maintenant publié ! Il peut désormais ê
 >
 >Vous pouvez sélectionner plusieurs éléments (c’est-à-dire plusieurs dossiers de langues) lors de la publication afin de publier plusieurs traductions à la fois.
 
-D’autres options s’offrent à vous lors de la publication de votre contenu, telles que la planification d’une heure de publication, mais elles dépassent la portée de ce parcours. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin du document pour obtenir plus d’informations.
+D’autres options s’offrent à vous lors de la publication de votre contenu, telles que la planification d’une heure de publication, mais elles dépassent la portée de ce parcours. Pour plus d’informations, consultez la section [Ressources supplémentaires](#additional-resources) à la fin du document.
 
 ## Mise à jour de votre contenu traduit {#updating-translations}
 
@@ -92,29 +92,29 @@ Cependant, comme auparavant, le processus est légèrement différent si vous av
 
 ### Mise à jour d’un projet de traduction créé automatiquement {#updating-automatic-project}
 
-1. Accédez à **Navigation** > **Ressources** > **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
+1. Accédez à **Navigation** -> **Ressources** -> **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
 1. Sélectionnez la racine de langue de votre projet. Dans ce cas, nous avons sélectionné `/content/dam/wknd/en`.
 1. Sélectionnez le sélecteur de rail et affichez le **Références** du panneau.
-1. Sélectionner **Copies de langue**.
+1. **Sélectionner des copies de langue**.
 1. Cochez l’option **Copies de langue**.
 1. Développez la section **Mise à jour des copies de langue** en bas du panneau des références.
-1. Dans le **Projet** liste déroulante, sélectionnez **Ajouter à un projet de traduction existant**.
-1. Dans le **Projet de traduction existant** , sélectionnez le projet créé pour la traduction initiale.
+1. Dans le menu déroulant **Projet**, sélectionnez **Ajouter à un projet de traduction existant**.
+1. Dans le menu déroulant **Projet de traduction existant**, sélectionnez le projet créé pour la traduction initiale.
 1. Sélectionner **Début**.
 
 ![Ajouter des éléments à un projet de traduction existant](assets/add-to-existing-project.png)
 
 Le contenu est ajouté au projet de traduction existant. Pour afficher le projet de traduction :
 
-1. Accédez à **Navigation** > **Projets**.
+1. Accédez à **Navigation** -> **Projets**.
 1. Sélectionnez le projet que vous venez de mettre à jour.
-1. Sélectionnez la langue ou l’une des langues mises à jour.
+1. Appuyez ou cliquez sur la langue ou l’une des langues que vous avez mises à jour.
 
 Vous voyez qu’une nouvelle carte de tâche a été ajoutée au projet. Dans cet exemple, un autre traduction en espagnol a été ajoutée.
 
 ![Tâche de traduction supplémentaire ajoutée](assets/additional-translation-job.png)
 
-Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle carte (nombre de ressources et de fragments de contenu) sont différentes. En effet, AEM reconnaît ce qui a changé depuis la dernière traduction et inclut uniquement le contenu qui doit être traduit. Cela inclut la retraduction du contenu mis à jour et la première traduction du nouveau contenu.
+Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle carte (nombre de ressources et de fragments de contenu) sont différentes. En effet, AEM reconnaît ce qui a changé depuis la dernière traduction et n’inclut que le contenu qui doit être traduit. Cela inclut la retraduction du contenu mis à jour et la première traduction du nouveau contenu.
 
 À partir de là, vous pouvez [démarrer et gérer votre tâche de traduction comme vous l’avez fait pour la traduction originale.](translate-content.md#using-translation-project)
 
@@ -122,22 +122,22 @@ Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle 
 
 Pour mettre à jour une traduction, vous pouvez ajouter à votre projet existant une nouvelle tâche chargée de traduire le contenu mis à jour.
 
-1. Accédez à **Navigation** > **Projets**.
-1. Sélectionnez le projet que vous devez mettre à jour.
-1. Sélectionnez la variable **Ajouter** en haut de la fenêtre.
-1. Dans le **Ajouter une mosaïque** fenêtre, sélectionnez **Tâche de traduction** puis **Envoyer**.
+1. Accédez à **Navigation** -> **Projets**.
+1. Sélectionnez le projet que vous souhaitez supprimer.
+1. Appuyez ou cliquez sur le bouton **Ajouter** en haut de la fenêtre.
+1. Dans la fenêtre **Ajouter une mosaïque**, appuyez ou cliquez sur **Tâche de traduction** puis sur **Envoyer**.
 
-   ![Ajouter une mosaïque](assets/add-translation-job-tile.png)
+   ![Ajout d’une mosaïque.](assets/add-translation-job-tile.png)
 
-1. Sur la carte de la nouvelle tâche de traduction, cliquez sur le bouton chevron situé en haut de la carte, puis sélectionnez **Mettre à jour Target** pour définir la langue cible de la nouvelle tâche.
+1. Sur la carte de la nouvelle tâche de traduction, appuyez ou cliquez sur le bouton chevron situé en haut de la carte, puis sélectionnez **Mettre à jour la cible** pour définir la langue cible de la nouvelle tâche.
 
-   ![Mettre à jour la cible](assets/update-target.png)
+   ![Mise à jour de la cible.](assets/update-target.png)
 
-1. Dans le **Sélectionner la langue cible** , utilisez la liste déroulante pour sélectionner la langue et sélectionnez **Terminé**.
+1. Dans la boîte de dialogue **Sélectionner la langue cible**, utilisez la liste déroulante pour sélectionner la langue, puis appuyez ou cliquez sur **Terminé**.
 
-   ![Sélectionner la langue cible](assets/select-target-language.png)
+   ![Sélection de la langue cible.](assets/select-target-language.png)
 
-1. Une fois la langue cible de la nouvelle tâche de traduction définie, cliquez sur le bouton représentant des points de suspension en bas de la carte de la tâche pour afficher les détails de la tâche.
+1. Une fois la langue cible de la nouvelle tâche de traduction définie, appuyez ou cliquez sur le bouton représentant des points de suspension en bas de la carte de la tâche pour afficher les détails de la tâche.
 1. La tâche est vide lors de sa première création. Ajoutez du contenu à la tâche en appuyant ou en cliquant sur le bouton **Ajouter** et à l’aide de l’explorateur de chemins d’accès [comme vous l’avez fait lors de la création initiale du projet de traduction.](translate-content.md##manually-creating)
 
 >[!TIP]
@@ -162,6 +162,6 @@ Vous êtes maintenant prêt à traduire votre propre contenu découplé dans AEM
 ## Ressources supplémentaires {#additional-resources}
 
 * [Gestion des projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) – Découvrez les détails des projets de traduction et des fonctionnalités supplémentaires telles que les processus de traduction humaine et les projets multilingues.
-* [Création de concepts](/help/sites-cloud/authoring/getting-started/concepts.md) – Apprenez-en plus sur le modèle de création et de publication d’AEM. Ce document se concentre sur la création de pages plutôt que sur les fragments de contenu, mais les mêmes principes s’appliquent.
-* [Publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) – Apprenez-en plus sur les fonctionnalités supplémentaires disponibles lors de la publication de contenu. Ce document se concentre sur la création de pages plutôt que sur les fragments de contenu, mais les mêmes principes s’appliquent.
-* [Environnements et outils de création](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) – AEM fournit divers mécanismes d’organisation et de modification de votre contenu, notamment un puissant navigateur de chemins d’accès.
+* [Création de concepts](/help/sites-cloud/authoring/author-publish.md) – Apprenez-en plus sur le modèle de création et de publication d’AEM. Ce document se concentre sur la création de pages plutôt que sur les fragments de contenu, mais les mêmes principes s’appliquent.
+* [Publication de pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) – Apprenez-en plus sur les fonctionnalités supplémentaires disponibles lors de la publication de contenu. Ce document se concentre sur la création de pages plutôt que sur les fragments de contenu, mais les mêmes principes s’appliquent.
+* [Environnements et outils de création](/help/sites-cloud/authoring/path-selection.md#path-selection) – AEM fournit divers mécanismes d’organisation et de modification de votre contenu, notamment un puissant navigateur de chemins d’accès.

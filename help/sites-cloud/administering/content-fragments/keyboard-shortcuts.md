@@ -4,7 +4,7 @@ description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment u
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 88%
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 Une sélection de raccourcis clavier est disponible à l’utilisation dans la console Fragments de contenu.
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certaines s’appliquent lorsque [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), d’autres au [utilisation générale des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certaines s’appliquent lorsque [modification de pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), d’autres au [utilisation générale des consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certaines s’appliquent
 | Sélectionner un ou plusieurs fragments de contenu | `u` | Ouvrir la boîte de dialogue de dépublication immédiate |
 | Toute boîte de dialogue ouverte | `esc` | Boîte de dialogue désactivée |
 
-Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs et utilisatrices de poste de travail. Certains s’appliquent à la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), tandis que d’autres correspondent à l’[utilisation générale des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs et utilisatrices de poste de travail. Certains s’appliquent à la [modification de pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), tandis que d’autres correspondent à l’[utilisation générale des consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Les raccourcis clavier de l’éditeur sont toujours actifs, même si les [raccourcis de la console ont été désactivés](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Les raccourcis clavier de l’éditeur sont toujours actifs, même si les [raccourcis de la console ont été désactivés](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Touches de modification spécifiques aux systèmes d’exploitation {#os-specific-modifier-keys}
 

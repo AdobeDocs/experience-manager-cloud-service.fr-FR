@@ -2,7 +2,7 @@
 title: Framework de balisage AEM
 description: Balisez le contenu et utilisez l’infrastructure de balisage AEM pour le classer et l’organiser.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 97%
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 Le balisage permet de catégoriser et d’organiser le contenu. Les balises peuvent être classées par un espace de noms et par une taxonomie. Pour obtenir des informations détaillées sur l’utilisation des balises :
 
-* Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md) pour plus d’informations sur le balisage du contenu en tant qu’auteur de contenu.
+* Voir [Utilisation des balises](/help/sites-cloud/authoring/sites-console/tags.md) pour plus d’informations sur le balisage du contenu en tant qu’auteur de contenu.
 * Consultez Administration des balises pour savoir comment un administrateur ou une administratrice peut créer et gérer des balises et déterminer à quel contenu elles ont été appliquées.
 
 Cet article se concentre sur le cadre sous-jacent qui prend en charge le balisage dans AEM et explique comment l’utiliser en tant que développeur ou développeuse.

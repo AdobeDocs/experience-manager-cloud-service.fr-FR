@@ -3,16 +3,16 @@ title: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DN
 description: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 100%
+source-wordcount: '1858'
+ht-degree: 99%
 
 ---
 
 # Configuration de l’éditeur de texte enrichi {#configure-the-rich-text-editor}
 
-L’éditeur de texte enrichi met à la disposition des auteurs de nombreuses fonctionnalités pour modifier leur contenu textuel. Les icônes, les boîtes de dialogue de sélection, la barre d’outils et les menus apportent une expérience WYSIWYG de la modification des textes. Les administrateurs configurent l’éditeur de texte enrichi pour activer, désactiver et étendre les fonctions disponibles dans les composants de création. Découvrez comment les auteurs [utilisent l’éditeur de texte enrichi pour créer](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) du contenu web.
+L’éditeur de texte enrichi met à la disposition des auteurs de nombreuses fonctionnalités pour modifier leur contenu textuel. Les icônes, les boîtes de dialogue de sélection, la barre d’outils et les menus apportent une expérience WYSIWYG de la modification des textes. Les administrateurs configurent l’éditeur de texte enrichi pour activer, désactiver et étendre les fonctions disponibles dans les composants de création. Découvrez comment les auteurs [utilisent l’éditeur de texte enrichi pour créer](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) du contenu web.
 
 Les concepts et les étapes de configuration de l’éditeur de texte enrichi sont répertoriés ci-dessous.
 
@@ -24,7 +24,7 @@ Les concepts et les étapes de configuration de l’éditeur de texte enrichi so
 
 ## Présentation de l’interface utilisateur disponible pour les auteurs {#understand-rte-ui}
 
-L’interface de l’éditeur de texte enrichi s’appuie sur une approche de [responsive design](/help/sites-cloud/authoring/features/responsive-layout.md) pour l’environnement de création. Elle est conçue pour être utilisée sur les appareils tactiles et de bureau.
+L’interface de l’éditeur de texte enrichi s’appuie sur une approche de [responsive design](/help/sites-cloud/authoring/page-editor/responsive-layout.md) pour l’environnement de création. Elle est conçue pour être utilisée sur les appareils tactiles et de bureau.
 
 ![Barre d’outils de l’éditeur de texte enrichi](assets/rte-toolbar-full-screen-mode.png)
 
@@ -41,7 +41,7 @@ Les auteurs peuvent créer et modifier du contenu textuel dans [!DNL Experience 
 | En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une boîte de dialogue. | Fonctions minimales d’éditeur de texte enrichi. |
 | Éditeur de texte enrichi en plein écran | Couvre la page entière. | Toutes les fonctions requises d’éditeur de texte enrichi. |
 | Boîte de dialogue | Boîte de dialogue située en haut du contenu de page sans couvrir la page entière. | Activation judicieuse des fonctionnalités. |
-| Boîte de dialogue plein écran | Identique au mode plein écran ; contient des champs de la boîte de dialogue à côté de l’éditeur de texte enrichi. | Toutes les fonctions requises d’éditeur de texte enrichi. |
+| Boîte de dialogue plein écran | Identique au mode Plein écran ; contient des champs de la boîte de dialogue à côté de l’éditeur de texte enrichi. | Toutes les fonctions requises d’éditeur de texte enrichi. |
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Pour obtenir des configurations détaillées des plug-ins d’éditeur de texte 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Le [composant textuel Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans l’interface utilisateur, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
+Le [composant textuel Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans l’interface utilisateur, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/sites-console/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
 >À titre de référence, les composants Texte par défaut (fournis dans le cadre d’une installation standard) se trouvent sous :
 >
@@ -218,7 +218,7 @@ Le nœud pop-up sous le mode en ligne ou plein écran contient la liste des él�
 
 ## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu {#rtecontentpolicies}
 
-L’administration peut contrôler les options de l’éditeur de texte enrichi à l’aide de politiques de contenu, par exemple au lieu d’effectuer la configuration décrite ci-dessus. Les politiques de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’un [modèle modifiable](/help/sites-cloud/authoring/features/templates.md). Par exemple, si un composant de texte qui utilise l’éditeur de texte enrichi est utilisé avec un modèle modifiable, la politique de contenu peut définir que l’option gras est disponible, à l’instar de quelques options de mise en forme de paragraphe. Les politiques de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
+L’administration peut contrôler les options de l’éditeur de texte enrichi à l’aide de politiques de contenu, par exemple au lieu d’effectuer la configuration décrite ci-dessus. Les politiques de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’un [modèle modifiable](/help/sites-cloud/authoring/sites-console/templates.md). Par exemple, si un composant de texte qui utilise l’éditeur de texte enrichi est utilisé avec un modèle modifiable, la politique de contenu peut définir que l’option gras est disponible, à l’instar de quelques options de mise en forme de paragraphe. Les politiques de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
 
 Les options disponibles dans l’éditeur de texte enrichi sont transmises depuis les configurations de l’interface utilisateur en amont vers les politiques de contenu.
 
@@ -280,5 +280,5 @@ Les fonctionnalités de l’éditeur de texte enrichi de [!DNL Experience Manage
 >[!MORELIKETHIS]
 >
 >* [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
->* [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
 >* [Configuration de l’éditeur de texte enrichi pour les sites accessibles](rte-accessible-content.md)

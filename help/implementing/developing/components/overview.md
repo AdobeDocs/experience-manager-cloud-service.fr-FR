@@ -2,16 +2,16 @@
 title: Aperçu des composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 58%
+source-wordcount: '376'
+ht-degree: 57%
 
 ---
 
 # Aperçu des composants {#components-overview}
 
-Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels que ceux [utilisés pour la création de pages](/help/sites-cloud/authoring/fundamentals/components.md).
+Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels que ceux [utilisés pour la création de pages](/help/sites-cloud/authoring/page-editor/components.md).
 
 ## Que sont les composants ?  {#what-are-components}
 
@@ -48,7 +48,7 @@ Les composants principaux sont fournis avec AEM as a Cloud Service et le [tutori
 
 ### Affichage des composants disponibles {#viewing-available-components}
 
-Pour un aperçu de tous les composants disponibles dans votre instance AEM, utilisez la méthode [Console Composants](/help/sites-cloud/authoring/features/components-console.md).
+Pour un aperçu de tous les composants disponibles dans votre instance AEM, utilisez la méthode [Console Composants](/help/sites-cloud/authoring/components-console.md).
 
 Vous pouvez également utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
 

@@ -2,7 +2,7 @@
 title: Utilisation de tâches
 description: Les tâches représentent des éléments de travail à effectuer sur le contenu et sont utilisées dans les projets pour déterminer le niveau d’achèvement des tâches en cours
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 95%
@@ -76,6 +76,6 @@ Une autre méthode d’accès aux tâches consiste à utiliser la boîte de réc
 
 ![Tâches dans la boîte de réception](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Pour terminer une tâche, sélectionnez-la et cliquez sur **Terminé**. Ajoutez des informations à la tâche, puis cliquez sur **Terminé**. Voir [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) pour plus d’informations.
+Pour terminer une tâche, sélectionnez-la et cliquez sur **Terminé**. Ajoutez des informations à la tâche, puis cliquez sur **Terminé**. Voir [Votre boîte de réception](/help/sites-cloud/authoring/inbox.md) pour plus d’informations.
 
 ![Notifications de tâche](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

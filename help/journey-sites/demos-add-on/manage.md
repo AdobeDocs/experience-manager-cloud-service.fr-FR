@@ -2,10 +2,10 @@
 title: Gestion de vos sites de démonstration
 description: Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 89%
+source-wordcount: '927'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Ce document vous aide à comprendre comment gérer les sites de démonstration q
 
 Maintenant que vous disposez de vos propres sites de démonstration, vous souhaitez probablement savoir comment les gérer. Le pipeline a non seulement déployé les modèles de site pour fournir le contenu de vos sites de démonstration, mais a également déployé un ensemble d’utilitaires pour gérer ces sites.
 
-1. Dans la barre de navigation globale AEM, sélectionnez **Outils** > **Démonstrations de référence** > **Utilitaires de démonstration de référence**.
+1. Dans la barre de navigation globale dʼAEM, sélectionnez **Outils** -> **Démonstrations de référence** -> **Utilitaires de démonstration de référence**.
 
    ![Utilitaires de démonstration en libre-service](assets/demo-utilities.png)
 
@@ -51,8 +51,8 @@ Maintenant que vous disposez de vos propres sites de démonstration, vous souhai
 
 Les utilitaires de démonstration en libre-service fournissent plusieurs outils.
 
-* **Suppression de sites** : sélection du site à supprimer dans cette instance Adobe Experience Manager. Gardez à l’esprit qu’il s’agit d’une action destructrice qui ne peut pas être annulée une fois lancée.
-* **Suppression de modèles de site** : sélection du modèle de site à supprimer dans cette instance Adobe Experience Manager. Avant de supprimer un modèle de site, assurez-vous que tous les sites qui font référence à ce modèle sont également supprimés. Gardez à l’esprit qu’il s’agit d’une action destructrice qui ne peut pas être annulée une fois lancée.
+* **Suppression de sites** : sélection du site à supprimer dans cette instance Adobe Experience Manager. Gardez à l’esprit qu’il s’agit d’une action destructrice, elle ne peut être annulée une fois lancée.
+* **Suppression de modèles de site** : sélection du modèle de site à supprimer dans cette instance Adobe Experience Manager. Avant de supprimer un modèle de site, assurez-vous que tous les sites qui font référence à ce modèle sont également supprimés. Gardez à l’esprit qu’il s’agit d’une action destructrice, elle ne peut être annulée une fois lancée.
 * **Cache dʼauteur principal** : cet outil permet de récupérer plusieurs ressources au sein de l’instance Adobe Experience Manager, en accélérant leur temps de récupération. Cette opération peut prendre plusieurs secondes.
 * **Application Android** : outils d’installation et de lancement de l’application Android de démonstration. Permet de créer un site basé sur lʼ&#x200B;**Application monopage WKND** pour alimenter cette page. Utilisation à partir d’un appareil Android, d’un émulateur ou de la plateforme Bluestacks.
 * **Préférences utilisateur** : désactivation des boîtes de dialogue contextuelles de tutoriel.
@@ -70,7 +70,7 @@ Vous avez à présent testé tout un panel de fonctionnalités dʼAEM. Vous nʼa
 
    >[!CAUTION]
    >
-   >La suppression de site et de modèle est une action destructrice qui ne peut pas être annulée une fois lancée.
+   >La suppression dʼun site ou dʼun modèle est une action destructrice, elle ne peut être annulée une fois lancée.
 
 1. Confirmez la suppression du site dans la boîte de dialogue.
 
@@ -93,7 +93,7 @@ Pour supprimer des modèles, effectuez une procédure identique sous lʼen-tête
 Félicitations ! Vous avez terminé le parcours du module complémentaire de démonstration d’AEM ! Vous devez maintenant :
 
 * Posséder une connaissance de base de Cloud Manager et comprendre comment les pipelines diffusent du contenu et de la configuration vers AEM.
-* Découvrez comment utiliser Cloud Manager pour créer un programme.
+* Découvrir comment utiliser Cloud Manager pour créer un programme.
 * Savoir comment activer le module complémentaire de démonstration de référence pour le nouveau programme et être capable d’exécuter un pipeline pour déployer le contenu du module complémentaire.
 * Découvrir comment accéder à l’environnement de création AEM pour créer un site basé sur un modèle.
 * Découvrir comment accéder aux utilitaires de démonstration en libre-service.
@@ -105,7 +105,7 @@ Vous êtes maintenant prêt à explorer les fonctionnalités d’AEM à l’aide
 
 * [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
 * [Créer un site](/help/sites-cloud/administering/site-creation/create-site.md) - Découvrez comment utiliser AEM pour créer un site à l’aide de modèles de site afin de définir le style et la structure de votre site.
-* [Conventions de dénomination des pages d’AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Reportez-vous à cette page pour mieux comprendre les conventions d’organisation des pages AEM.
-* [Manipulation de base d’AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Explorez ce document si vous êtes un nouvel utilisateur ou une nouvelle utilisatrice d’AEM pour comprendre les concepts de base tels que la navigation et l’organisation des consoles.
+* [Conventions de dénomination des pages d’AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Reportez-vous à cette page pour mieux comprendre les conventions d’organisation des pages AEM.
+* [Manipulation de base d’AEM](/help/sites-cloud/authoring/basic-handling.md) - Explorez ce document si vous êtes un nouvel utilisateur ou une nouvelle utilisatrice d’AEM pour comprendre les concepts de base tels que la navigation et l’organisation des consoles.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) - Si vous avez déjà une bonne compréhension d’AEM, vous pouvez consulter directement notre documentation technique détaillée.
 * [Modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md) - Si vous souhaitez en savoir plus sur la structure des modèles de site et leur utilisation pour créer des sites, consultez ce document.

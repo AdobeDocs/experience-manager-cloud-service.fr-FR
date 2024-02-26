@@ -2,8 +2,8 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '3057'
 ht-degree: 100%
 
@@ -286,8 +286,8 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [Tutoriels sur AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
 * [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
 * [AEM Guides WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – Ce projet GitHub comprend des exemples d’applications qui mettent en évidence les API GraphQL d’AEM.
-* [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md) – Documentation technique pour l’environnement de création d’AEM, avec notamment des détails sur la configuration auteur-publication.
-* [Publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) – Documentation technique pour la publication de contenu sur AEM
+* [Concepts de création](/help/sites-cloud/authoring/author-publish.md) – Documentation technique pour l’environnement de création d’AEM, avec notamment des détails sur la configuration auteur-publication.
+* [Publication de pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) – Documentation technique pour la publication de contenu sur AEM
 * [Convention d’affectation de noms](/help/implementing/developing/introduction/naming-conventions.md) – Documentation technique relative aux restrictions d’affectation de noms de pages dans AEM
 * [Multi Site Manager et traduction](/help/sites-cloud/administering/msm-and-translation.md) – Documentation technique sur les puissantes fonctionnalités de traduction d’AEM
 * [Workflows AEM](/help/sites-cloud/authoring/workflows/overview.md) – Documentation technique sur l’automatisation des workflows dans AEM

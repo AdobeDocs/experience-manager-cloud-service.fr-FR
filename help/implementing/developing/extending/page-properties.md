@@ -2,16 +2,16 @@
 title: Personnaliser les vues des propriétés de la page
 description: Découvrez comment les propriétés de page sont affichées et modifiées par les auteurs.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 43%
+source-wordcount: '352'
+ht-degree: 37%
 
 ---
 
 # Personnaliser les vues des propriétés de la page{#customizing-views-of-page-properties}
 
-Chaque page comporte un ensemble de [properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) qui peuvent être affichés et modifiés par les utilisateurs. Certaines sont requises lors de la création de la page (création d’une vue), d’autres peuvent être affichées et modifiées ultérieurement (modification d’une vue). Ces propriétés de page sont définies et mises à la disposition des utilisateurs dans la boîte de dialogue (`cq:dialog`) du composant de page approprié.
+Chaque page comporte un ensemble de [properties](/help/sites-cloud/authoring/sites-console/page-properties.md) qui peuvent être affichés et modifiés par les utilisateurs. Certaines sont requises lors de la création de la page (création d’une vue), d’autres peuvent être affichées et modifiées ultérieurement (modification d’une vue). Ces propriétés de page sont définies et rendues disponibles par la boîte de dialogue (`cq:dialog`) du composant de page approprié.
 
 Le statut par défaut de chaque propriété de la page est :
 
@@ -39,7 +39,7 @@ Les champs doivent être configurés spécifiquement si une modification est req
 
 Vous pouvez également configurer les champs disponibles en configurant la boîte de dialogue de votre composant de page et en appliquant les propriétés de noeud appropriées.
 
-Par exemple, l’assistant [**Créer une page**](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) affiche, par défaut, les champs regroupés sous **Autres titres et description**. Pour masquer ces derniers, définissez la configuration suivante :
+Par exemple, l’assistant [**Créer une page**](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) affiche, par défaut, les champs regroupés sous **Autres titres et description**. Pour masquer ces derniers, définissez la configuration suivante :
 
 1. Créez votre composant de page sous `/apps`.
 1. Créez un remplacement (à l’aide de la méthode *dialog diff* fournie par [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)) pour la section `basic` de votre composant de page ; par exemple :

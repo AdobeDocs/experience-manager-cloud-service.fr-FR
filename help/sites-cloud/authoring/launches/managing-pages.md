@@ -2,10 +2,10 @@
 title: Gestion des pages dans votre lancement
 description: Vous pouvez créer des pages dans votre lancement. Vous pouvez également supprimer des pages indésirables.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 89%
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ Les lancements vous permettent de :
 * à partir de la console [Ajouter de nouvelles pages à](#add-pages-to-launch), ou [supprimer des pages non souhaitées](#remove-pages-from-launch) d’un lancement ;
 * effectuer d’autres actions standard sur les pages du lancement.
 
-## Navigation dans la structure de votre lancement {#navigate-structure-of-launch}
+## Exploration de la structure de votre lancement {#navigate-structure-of-launch}
 
 Vous pouvez naviguer parmi la structure de votre lancement depuis :
 
@@ -60,7 +60,7 @@ Pour ajouter de nouvelles pages à votre lancement :
 
 1. [Accédez à l’emplacement requis dans votre lancement](#navigate-structure-of-launch).
 
-1. Sélectionnez **Créer** pour [créer une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) comme d’habitude.
+1. Sélectionnez **Créer** pour [créer une page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) comme d’habitude.
 
 ## Suppression de pages de votre lancement {#remove-pages-from-launch}
 
@@ -68,4 +68,4 @@ Pour supprimer des pages de votre lancement :
 
 1. [Accédez à l’emplacement requis dans votre lancement](#navigate-structure-of-launch).
 
-1. Sélectionnez **Supprimer** pour [supprimer une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) comme d’habitude.
+1. Sélectionnez **Supprimer** pour [supprimer une page](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) comme d’habitude.

@@ -4,10 +4,10 @@ description: Découvrez la configuration de Dynamic Media dans Adobe Experience
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3811'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Une fois la nouvelle configuration Dynamic Media terminée, vous recevez une notification d’état dans la boîte de réception d’Experience Manager as a Cloud Service.
    >
    >Cette notification de boîte de réception vous informe si la configuration a réussi ou non.
-   > Pour plus d’informations, voir [Dépannage d’une nouvelle configuration Dynamic Media](#troubleshoot-dm-config) et [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
+   > Pour plus d’informations, voir [Dépannage d’une nouvelle configuration Dynamic Media](#troubleshoot-dm-config) et [Votre boîte de réception](/help/sites-cloud/authoring/inbox.md).
 
 1. Pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, Experience Manager as a Cloud Service utilise la validation basée sur les jetons et donc l’auteur Experience Manager prévisualise le contenu Dynamic Media par défaut. Cependant, vous pouvez également placer en *liste autorisée* d’autres adresses IP pour permettre aux utilisateurs d’accéder à l’aperçu sécurisé du contenu. Pour configurer cette action dans Experience Manager as a Cloud Service, consultez [Configurer la configuration de publication Dynamic Media pour Image Server - Onglet Sécurité](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -139,7 +139,7 @@ Une fois la nouvelle configuration Dynamic Media terminée, vous recevez une not
 
 ![Échec de la boîte de réception du Experience Manager](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-Voir aussi [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
+Voir aussi [Votre boîte de réception](/help/sites-cloud/authoring/inbox.md).
 
 **Pour résoudre les problèmes liés à une nouvelle configuration Dynamic Media :**
 
@@ -289,7 +289,7 @@ Cela permet d’effectuer les opérations suivantes :
 Vous pouvez définir les types de ressources traités par Dynamic Media et personnaliser les paramètres de traitement des ressources avancé. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
 
 * Conversion d’un Adobe PDF en ressource de catalogue électronique.
-* Convertissez un document Adobe Photoshop (.PSD) en ressource de modèle de bannière pour la personnalisation.
+* Convertissez un document Adobe Photoshop (.PSD) en ressource de modèle de bannière pour la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript® encapsulé Adobe Photoshop (.eps).
 * Des [profils vidéo](/help/assets/dynamic-media/video-profiles.md) et des [profils d’images](/help/assets/dynamic-media/image-profiles.md) peuvent être utilisés pour définir le traitement des vidéos et des images.
 

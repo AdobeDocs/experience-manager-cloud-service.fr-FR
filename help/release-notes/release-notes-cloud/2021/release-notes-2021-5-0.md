@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -39,7 +39,7 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
 ### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
-* Vous pourrez bientôt vérifier le contenu sur un nouveau [niveau Aperçu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) pour simuler l’aspect final de l’expérience comme vous le feriez sur le niveau Publication. Cette fonctionnalité est activée par l’assistant de publication gérée d’AEM Sites qui vous permet désormais de choisir une destination de publication entre Publication ou Aperçu. Les expériences sur la prévisualisation sont ensuite accessibles via une URL dédiée. Après la validation sur Aperçu, le contenu peut être publié d’Auteur vers Publication, comme d’habitude. L’activation du service d’aperçu dans des environnements AEM as a Clou Service sera progressivement déployée au cours des prochaines semaines.
+* Vous pourrez bientôt vérifier le contenu sur un nouveau [niveau Aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md) pour simuler l’aspect final de l’expérience comme vous le feriez sur le niveau Publication. Cette fonctionnalité est activée par l’assistant de publication gérée d’AEM Sites qui vous permet désormais de choisir une destination de publication entre Publication ou Aperçu. Les expériences sur la prévisualisation sont ensuite accessibles via une URL dédiée. Après la validation sur Aperçu, le contenu peut être publié d’Auteur vers Publication, comme d’habitude. L’activation du service d’aperçu dans des environnements AEM as a Clou Service sera progressivement déployée au cours des prochaines semaines.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -80,7 +80,7 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
 ### Fonctionnalité bêta à venir de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Output as a Cloud service : le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode batch synchrone et asynchrone. Le service Output vous permet de créer des applications qui vous permettent :
+Output as a Cloud service : le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode par lots synchrones et asynchrones. Le service de sortie permet de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
 * Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
 * Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.

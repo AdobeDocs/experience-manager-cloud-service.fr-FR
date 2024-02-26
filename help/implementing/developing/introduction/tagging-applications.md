@@ -2,10 +2,10 @@
 title: Création d’un balisage dans des applications AEM
 description: Utiliser des balises ou étendre des balises par programmation dans une application AEM personnalisée
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 95%
+source-wordcount: '717'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ qui interagit avec le
 
 Pour plus d’informations sur le balisage :
 
-* Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md) pour plus d’informations sur le balisage du contenu en tant qu’auteur de contenu.
+* Voir [Utilisation des balises](/help/sites-cloud/authoring/sites-console/tags.md) pour plus d’informations sur le balisage du contenu en tant qu’auteur de contenu.
 * Consultez Administration des balises pour savoir comment un administrateur ou une administratrice peut créer et gérer des balises et déterminer à quel contenu elles ont été appliquées.
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}

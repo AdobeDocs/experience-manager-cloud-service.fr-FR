@@ -4,7 +4,7 @@ description: Découvrez comment créer des sections ou des champs répétables d
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 91%
@@ -163,16 +163,16 @@ A panel has various layouts options. The Layout for accordian design option has 
 
 Un sous-formulaire répétable est similaire aux panneaux répétables dans les formulaires adaptatifs. Dans AEM Forms Designer, suivez la procédure suivante pour créer un sous-formulaire qui se répète :
 
-1. Dans la palette Hiérarchie, sélectionnez le sous-formulaire parent du sous-formulaire à répéter.
+1. Dans la palette Hiérarchie, sélectionner le sous-formulaire parent du sous-formulaire à répéter.
 1. Dans la palette Objet, cliquez sur l’onglet Sous-formulaire et sélectionnez Distribué dans la liste Contenu.
 1. Sélectionnez le sous-formulaire à répéter.
 1. Dans la palette Objet, cliquez sur l’onglet Sous-formulaire et sélectionnez Positionné ou Distribué dans la liste Contenu.
 1. Cliquez sur l’onglet Liaison et sélectionnez Sous-formulaire pour chaque élément.
-1. Pour spécifier le nombre minimum de répétitions, sélectionnez Nombre minimum de répétitions et saisissez un nombre dans la zone associée. Si cette option est définie sur 0 et qu’aucune donnée n’est fournie pour les objets du sous-formulaire au moment de la fusion des données, le sous-formulaire n’est pas placé lors de la génération du formulaire.
-1. Pour spécifier le nombre maximum de répétitions du sous-formulaire, sélectionnez Nombre maximum de répétitions et saisissez un nombre dans la zone associée. Si vous n’indiquez pas de valeur dans la zone Nombre maximum de répétitions, le nombre de répétitions du sous-formulaire est illimité.
-1. Pour spécifier un nombre précis de répétitions du sous-formulaire, quelle que soit la quantité de données, sélectionnez l’option Quantité initiale et tapez un nombre dans la zone associée. Si vous sélectionnez cette option et qu’aucune donnée n’est disponible ou qu’il existe moins d’entrées de données par rapport à la valeur Nombre initial spécifiée, des instances vides du sous-formulaire sont quand même placées sur le formulaire.
+1. Pour spécifier le nombre minimum de répétitions, sélectionnez Nombre minimum de répétitions et saisissez un nombre dans la zone associée. Si cette option est définie sur 0 et qu’aucune donnée n’est fournie pour les objets du sous-formulaire au moment de la fusion, le sous-formulaire n’est pas placé lors de la génération du formulaire.
+1. Pour spécifier le nombre maximum de répétitions du sous-formulaire, sélectionnez Nombre maximum de répétitions et saisissez un nombre dans la zone associée. Si vous ne spécifiez aucune valeur dans la zone Nombre maximum, le nombre de répétitions du sous-formulaire est illimité.
+1. Pour spécifier un nombre précis de répétitions du sous-formulaire, quelle que soit la quantité de données, sélectionnez l’option Quantité initiale et tapez un nombre dans la zone associée. Si vous sélectionnez cette option et qu’aucune donnée n’est disponible ou qu’il existe moins d’entrées de données par rapport à la valeur Quantité initiale spécifiée, des instances vides du sous-formulaire sont toujours placées sur le formulaire.
 1. Ajoutez deux boutons dans le sous-formulaire parent : un pour ajouter une instance et un autre pour supprimer une instance du sous-formulaire répétable. Pour obtenir des instructions détaillées, voir [Création d’une action](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Liez maintenant le modèle de formulaire au formulaire adaptatif. Pour obtenir des instructions détaillées, voir [Création d’un formulaire adaptatif basé sur un modèle](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=fr#create-an-adaptive-form-based-on-an-xfa-form-template).
+1. Liez maintenant le modèle de formulaire au formulaire adaptatif. Pour les étapes détaillées, voir [Création d’un formulaire adaptatif basé sur un modèle](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=fr#create-an-adaptive-form-based-on-an-xfa-form-template).
 1. Utilisez les boutons créés à l’étape 9 pour ajouter et supprimer des sous-formulaires.
 
 Le fichier .zip joint contient un exemple de sous-formulaire répétable.
@@ -237,6 +237,6 @@ Dans le code suivant, le panneau`SampleType` utilise la propriété minOccurs &a
 >* [Create an Adaptive Form](creating-adaptive-form-core-components.md)
 >* [Create style or themes for your forms](using-themes-in-core-components.md)
 >* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
->* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+>* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/console-layout.md)
 
 -->

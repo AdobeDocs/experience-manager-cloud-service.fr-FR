@@ -1,7 +1,7 @@
 ---
 title: Création de blocs instrumentés pour une utilisation avec l’éditeur universel
 description: Découvrez comment créer des blocs instrumentés pour une utilisation avec l’éditeur universel dans AEM création avec des projets Edge Delivery Services.
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 0%
@@ -130,7 +130,7 @@ L’exemple de bloc de citations suivant suit cette approche.
 
 Maintenant que votre bloc de guillemet de base est défini et validé dans l’exemple de projet, vous pouvez ajouter un bloc de guillemet à une page existante.
 
-1. Dans un navigateur, connectez-vous à AEM as a Cloud Service. [À l’aide de la console Sites,](/help/sites-cloud/authoring/getting-started/basic-handling.md) accédez au site que vous avez créé dans la [Guide de prise en main du développeur pour la création AEM avec des Edge Delivery Services](/help/edge/edge-dev-getting-started.md) et sélectionnez une page.
+1. Dans un navigateur, connectez-vous à AEM as a Cloud Service. [À l’aide de la console Sites,](/help/sites-cloud/authoring/basic-handling.md) accédez au site que vous avez créé dans la [Guide de prise en main du développeur pour la création AEM avec des Edge Delivery Services](/help/edge/edge-dev-getting-started.md) et sélectionnez une page.
 
    * Dans ce cas, `index` est utilisé à des fins d’illustration.
 

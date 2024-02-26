@@ -2,7 +2,7 @@
 title: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 description: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 92%
@@ -38,6 +38,6 @@ Vous pouvez maintenant mettre toutes ces connaissances à profit et commencer à
 
 * [Métadonnées – propriétés des fragments](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
-* [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md)
+* [Utilisation des balises](/help/sites-cloud/authoring/sites-console/tags.md)
 
 * [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

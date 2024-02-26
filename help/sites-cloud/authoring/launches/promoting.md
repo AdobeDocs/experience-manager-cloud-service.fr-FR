@@ -2,9 +2,9 @@
 title: Conversion de lancements
 description: Vous devez convertir des pages de lancement afin de renvoyer le contenu dans la source (production) avant de le publier.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 98%
 
 ---
@@ -44,12 +44,12 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 
 1. Ouvrez :
    * La console **Sites** lors de la navigation dans les pages source :
-      1. Ouvrez le [rail de références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références s’affichent.
+      1. Ouvrez le [rail de références](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-cloud/authoring/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références s’affichent.
       1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements particuliers.
       1. Sélectionnez le lancement pour afficher les actions disponibles.
       1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
    * La console **Sites** lors de la navigation dans les pages de lancement :
-      1. Sélectionnez la page de lancement requise à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. Sélectionnez la page de lancement requise à l’aide du [mode de sélection](/help/sites-cloud/authoring/basic-handling.md).
       1. L’action **Promouvoir** est disponible dans la barre d’outils.
    * La console **Lancements :**
       1. Sélectionnez votre lancement (sélectionnez la miniature).

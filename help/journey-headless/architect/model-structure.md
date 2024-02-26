@@ -2,8 +2,8 @@
 title: En savoir plus sur la création de modèles de fragment de contenu dans AEM
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 100%
 
@@ -108,9 +108,9 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Concepts de création](/help/sites-cloud/authoring/author-publish.md)
 
-* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) : cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la navigation et l’exécution d’actions sur les **Modèles de fragment de contenu** dans la console **Général**.
+* [Manipulation de base](/help/sites-cloud/authoring/basic-handling.md) : cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la navigation et l’exécution d’actions sur les **Modèles de fragment de contenu** dans la console **Général**.
 
 * [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
 

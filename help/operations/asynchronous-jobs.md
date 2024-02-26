@@ -2,10 +2,10 @@
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources en tant qu’opérations en arrière-plan.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 93%
+source-wordcount: '854'
+ht-degree: 92%
 
 ---
 
@@ -31,7 +31,7 @@ Vous pouvez afficher l’état des tâches asynchrones à partir du **[!UICONTRO
 
 ## Surveillance du statut des opérations asynchrones {#monitor-the-status-of-asynchronous-operations}
 
-Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez une notification dans votre [boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) et par e-mail (si activé).
+Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez une notification dans votre [boîte de réception](/help/sites-cloud/authoring/inbox.md) et par e-mail (si activé).
 
 Pour afficher le statut des opérations asynchrones en détail, accédez à la page **[!UICONTROL Opérations en arrière-plan]**.
 
@@ -136,6 +136,6 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 
 >[!MORELIKETHIS]
 >
->* [Création et organisation des pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [Gestion des pages](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Importation et exportation des métadonnées de ressources par lot](/help/assets/metadata-import-export.md).
 >* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).

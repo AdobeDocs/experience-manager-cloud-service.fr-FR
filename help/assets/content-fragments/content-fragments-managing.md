@@ -2,7 +2,7 @@
 title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment utiliser la console Ressources pour gérer vos fragments de contenu AEM, comme base de votre contenu headless ou pour la création de pages.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 87%
@@ -29,7 +29,7 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 >
 >Il est possible d’utiliser les fragments de contenu comme suit :
 >
->* lors de la création de pages ; voir [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* lors de la création de pages ; voir [Création de pages avec des fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* pour la [Diffusion de contenu découplé utilisant des fragments de contenu avec GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 >[!NOTE]
@@ -94,7 +94,7 @@ La méthode de création d’un fragment de contenu est la suivante :
 Dans la console **Ressources**, vous pouvez exécuter diverses actions pour vos fragments de contenu :
 
 * Dans la barre d’outils, une fois le fragment sélectionné, toutes les actions appropriées sont disponibles :
-* Comme [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) ; un sous-ensemble d’actions disponibles pour les cartes de fragments individuelles.
+* Comme [actions rapides](/help/sites-cloud/authoring/basic-handling.md#quick-actions) ; un sous-ensemble d’actions disponibles pour les cartes de fragments individuelles.
 
 ![Actions dans la barre d’outils](assets/cfm-managing-02.png)
 
@@ -299,16 +299,16 @@ Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.
 
 >[!NOTE]
 >
-Les commentaires sont les suivants :
+>Les commentaires sont les suivants :
 >
-* Fonctionnalité standard de toutes les ressources
-* Créé dans le journal
-* Lié à la ressource de fragment
+>* Fonctionnalité standard de toutes les ressources
+>* Créé dans le journal
+>* Lié à la ressource de fragment
 >
-Les annotations (pour les fragments de contenu) sont les suivantes :
+>Les annotations (pour les fragments de contenu) sont les suivantes :
 >
-* Entré dans l’éditeur de fragments
-* Spécifique à un segment de texte sélectionné dans le fragment
+>* Entré dans l’éditeur de fragments
+>* Spécifique à un segment de texte sélectionné dans le fragment
 >
 
 Par exemple :
@@ -339,7 +339,7 @@ Ces dernières sont affichées dans des versions côte à côte dans lesquelles�
 
 >[!NOTE]
 >
-Vous ne pouvez pas modifier le contenu d’un fragment lors de la comparaison de fragments.
+>Vous ne pouvez pas modifier le contenu d’un fragment lors de la comparaison de fragments.
 
 ![Comparaison des variations](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ Vous pouvez rétablir une version spécifique de votre fragment :
 
 >[!CAUTION]
 >
-Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique. Elle précise également que le modèle est publié avec le fragment.
+>Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique. Elle précise également que le modèle est publié avec le fragment.
 
 Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Pour ce faire, utilisez la fonctionnalité Assets standard :
 
@@ -371,11 +371,11 @@ Vous pouvez y accéder des façons suivantes :
 * Après la création, en utilisant les actions [disponibles dans la console de ressources](#actions-for-a-content-fragment-assets-console).
 * Dans l’[éditeur de fragment de contenu](#toolbar-actions-in-the-content-fragment-editor).
 
-De plus, lorsque vous [publiez une page qui utilise ce fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
+De plus, lorsque vous [publiez une page qui utilise ce fragment](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
 >
-Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
+>Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ Pour supprimer un fragment :
 
    >[!NOTE]
    >
-   L’action **Supprimer** n’est pas proposée comme action rapide.
+   >L’action **Supprimer** n’est pas proposée comme action rapide.
 
 3. Sélectionnez **Supprimer** dans la barre d’outils.
 4. Confirmez l’action **Supprimer**.
 
    >[!CAUTION]
    >
-   Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu sont supprimés de toutes les pages de contenu.
+   >Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu sont supprimés de toutes les pages de contenu.

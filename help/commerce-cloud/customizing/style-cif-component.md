@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 99%
+source-wordcount: '2342'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Le [projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) est une bas
 
 ## Ce que vous allez créer
 
-Dans ce tutoriel, un nouveau style ressemblant à une carte est mis en œuvre pour le composant Teaser de produit. Ce que vous apprenez dans le tutoriel peut être appliqué à d’autres composants principaux CIF.
+Dans ce tutoriel, un nouveau style est mis en œuvre pour le composant Teaser de produit ressemblant à une carte. Ce que vous apprenez dans le tutoriel peut être appliqué à d’autres composants principaux CIF.
 
 ![Ce que vous allez créer](../assets/style-cif-component/what-you-will-build.png)
 
@@ -77,7 +77,7 @@ Le module `ui.frontend` est également un module Maven. Il est intégré au proj
 
 ![ui.frontend dans l’architecture ui.apps](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*Les fichiers CSS et Javascript compilés sont copiés du module `ui.frontend` vers le module `ui.apps` en tant que bibliothèque cliente lors d’une génération Maven*
+*Les fichiers CSS et Javascript compilés sont copiés du module `ui.frontend` vers le module `ui.apps` en tant que bibliothèque cliente lors d’une génération Maven.*
 
 ## Mettre le style du teaser à jour {#ui-frontend-module}
 
@@ -182,7 +182,7 @@ Apportez ensuite une légère modification au style du teaser pour voir comment 
 
    **clientlib-cif** : bibliothèque cliente vide qui incorpore simplement les dépendances nécessaires des [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components). La catégorie est `venia.cif`.
 
-   **clientlib-grid** : inclut le fichier CSS nécessaire pour activer la fonction de grille réactive d’AEM. Utiliser la grille AEM active le [mode de disposition](/help/sites-cloud/authoring/features/responsive-layout.md) dans l’éditeur AEM et permet aux personnes qui créent du contenu de redimensionner les composants. La catégorie est `venia.grid` et est incorporée dans la bibliothèque `venia.base`.
+   **clientlib-grid** : inclut le fichier CSS nécessaire pour activer la fonction de grille réactive d’AEM. Utiliser la grille AEM active le [mode de disposition](/help/sites-cloud/authoring/page-editor/responsive-layout.md) dans l’éditeur AEM et permet aux personnes qui créent du contenu de redimensionner les composants. La catégorie est `venia.grid` et est incorporée dans la bibliothèque `venia.base`.
 
 1. Inspectez les fichiers `customheaderlibs.html` et `customfooterlibs.html` sous `ui.apps/src/main/content/jcr_root/apps/venia/components/page` :
 
@@ -227,7 +227,7 @@ Vérifiez ensuite l’inclusion des bibliothèques clientes sur la page.
 
    ![Afficher comme publié(e) ](../assets/style-cif-component/view-as-published.png)
 
-   La page s’ouvre sans aucun code JavaScript AEM de création chargé, lequel apparaîtrait sur le site publié. Notez que le paramètre de requête `?wcmmode=disabled` est ajouté à l’URL. Lors du développement du code CSS et JavaScript, il est recommandé d’utiliser ce paramètre pour simplifier la page sans intervention sur la création AEM.
+   La page s’ouvre sans aucun code JavaScript AEM de création chargé, lequel apparaîtrait sur le site publié. Notez que le paramètre de requête `?wcmmode=disabled` est ajouté à l’URL. Lors du développement du code CSS et JavaScript, il est recommandé d’utiliser ce paramètre pour simplifier la page sans intervention sur l’environnement de création AEM.
 
 1. Affichez la source de la page ; vous devriez pouvoir constater que plusieurs bibliothèques clientes sont incluses :
 
@@ -447,7 +447,7 @@ Revenez à l’IDE et au projet généré.
    >[!NOTE]
    >Il existe d’autres [outils et programmes d’installation IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr#set-up-an-integrated-development-environment) pouvant synchroniser les fichiers de projet directement dans une instance d’AEM locale sans avoir à créer une version Maven entière.
 
-## Afficher le teaser de produit mis à jour {#view-updated-product-teaser}
+## Afficher le teaser de produit mis à jour. {#view-updated-product-teaser}
 
 Une fois le code du projet déployé dans AEM, les modifications apportées au teaser de produit devraient être visibles.
 
@@ -473,7 +473,7 @@ Vous avez terminé de mettre en forme votre premier composant principal AEM CIF 
 
 ## Défi bonus {#bonus-challenge}
 
-Utilisez le [système de style AEM](/help/sites-cloud/authoring/features/style-system.md) pour créer deux styles pouvant être activés/désactivés par une personne créant du contenu. Le document [Développement avec le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=fr) comprend des étapes détaillées et des informations sur la façon d’y parvenir.
+Utilisez le [système de style AEM](/help/sites-cloud/authoring/page-editor/style-system.md) pour créer deux styles pouvant être activés/désactivés par une personne créant du contenu. Le document [Développement avec le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=fr) comprend des étapes détaillées et des informations sur la façon d’y parvenir.
 
 ![Défi bonus – Système de style](../assets/style-cif-component/bonus-challenge.png)
 

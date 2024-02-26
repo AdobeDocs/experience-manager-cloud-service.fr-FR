@@ -1,25 +1,26 @@
 ---
-title: Utilisation du rail Site pour gérer le thème de votre site
-description: Découvrez les puissantes fonctionnalités du rail Site qui vous aidera à personnaliser et gérer facilement le thème de votre site.
+title: Utilisation du panneau Site pour gérer le thème de votre site
+description: Découvrez les puissantes fonctionnalités du panneau Site pour vous aider à personnaliser et gérer facilement le thème de votre site.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 81%
+ht-degree: 38%
 
 ---
 
-# Utilisation du rail Site pour gérer le thème de votre site {#site-rail}
 
-Découvrez les puissantes fonctionnalités du rail Site qui vous aidera à personnaliser et gérer facilement le thème de votre site.
+# Utilisation du panneau Site pour gérer le thème de votre site {#site-panel}
 
-## Présentation {#overview}
+Découvrez les puissantes fonctionnalités du panneau Site pour vous aider à personnaliser et gérer facilement le thème de votre site.
 
-Le rail Site vous permet de gérer le thème et les ressources de modèle de votre site. [Comme les autres rails](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) tels que les rails Arborescence de contenu, Références ou Chronologie, le rail Site s’affiche dans le panneau le plus à gauche de la console Sites et affiche des informations sur l’élément sélectionné. Contrairement aux autres rails, le rail Site s’applique uniquement aux racines du site.
+## Vue d’ensemble {#overview}
 
-Le rail Site permet de gérer les informations relatives aux thèmes et aux modèles pour votre site, notamment les éléments suivants :
+Le panneau Site vous permet de gérer le thème et les ressources de modèle de votre site. [Comme d’autres panneaux](/help/sites-cloud/authoring/sites-console/console-side-panel.md) (Arborescence de contenu, Références ou Chronologie, par exemple), le panneau Site s’affiche en tant que panneau le plus à gauche de la console Sites, affichant des informations sur l’élément sélectionné. Contrairement aux autres panneaux, le panneau Site s’applique uniquement aux racines du site.
+
+Le panneau Site permet de gérer les informations relatives aux thèmes et aux modèles pour votre site, notamment :
 
 * [Le téléchargement des sources de thème](#downloading-theme-sources)
 * [Le téléchargement de ressources de modèle telles que des structures filaires](#downloading-template-resources)
@@ -32,9 +33,9 @@ Le rail Site permet de gérer les informations relatives aux thèmes et aux mod�
 
 ## Télécharger les sources de thème {#downloading-theme-sources}
 
-Lorsque vous créez un site dans AEM d’après un [modèle de site,](site-templates.md) vous pouvez télécharger votre [thème du site](site-themes.md) à l’aide du rail Site.
+Lorsque vous créez un site dans AEM en fonction d’une [modèle de site,](site-templates.md) vous pouvez télécharger votre [thème du site](site-themes.md) à l’aide du panneau Site.
 
-Avec le rail Site affiché dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site.
+Le panneau Site s’affichant dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site.
 
 ![Téléchargement de sources de thème](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
@@ -44,7 +45,7 @@ Sélectionner **Télécharger des sources de thème** pour télécharger une cop
 
 Les [modèles de site](site-templates.md) peuvent contenir des informations en plus de la structure de contenu de votre site et du [thème du site.](site-themes.md) Les modèles de site peuvent contenir des designs de structure filaire ou d’autres fichiers liés au site, par exemple.
 
-Si votre site est basé sur un modèle de site, avec le rail Site affiché dans la console Sites, sélectionnez la racine de votre site pour afficher les informations de thème sur le site, y compris des ressources supplémentaires.
+Si votre site est basé sur un modèle de site, le panneau Site s’affichant dans la console Sites , sélectionnez la racine de votre site pour afficher les informations de thème sur le site, y compris des ressources supplémentaires.
 
 ![Téléchargement de sources de thème](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
@@ -52,11 +53,11 @@ Sélectionnez le ou les boutons situés sous l’en-tête **Télécharger des re
 
 ## Affichage et modification des versions d’un thème {#them-versions}
 
-Si votre site est basé sur un modèle de site, il est possible que son thème ait déjà été personnalisé par votre développeur front-end. À l’aide du rail Site, vous pouvez afficher la version du thème du site actuellement déployé et passer aux versions précédentes.
+Si votre site est basé sur un modèle de site, il est possible que son thème ait déjà été personnalisé par votre développeur front-end. À l’aide du panneau Site, vous pouvez afficher la version du thème du site actuellement déployée et passer aux versions précédentes.
 
-Avec le rail Site affiché dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site.
+Le panneau Site s’affichant dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site.
 
-![Versions du site dans le rail](/help/sites-cloud/administering/assets/theme-versions.png)
+![Versions du site dans le panneau](/help/sites-cloud/administering/assets/theme-versions.png)
 
 La version actuelle du thème s’affiche avec son hachage de validation et l’horodatage de sa dernière mise à jour.
 
@@ -76,9 +77,9 @@ Vous pouvez utiliser le bouton **Sélectionner la version** pour mettre à jour 
 
 Si votre site n’a pas été créé à l’aide d’un modèle de site, il n’est pas possible d’utiliser le pipeline front-end pour personnaliser et déployer son thème.
 
-Vous pouvez toutefois activer le pipeline front-end pour votre site à l’aide du rail Site.
+Vous pouvez toutefois activer le pipeline frontal pour votre site à l’aide du panneau Site.
 
-Le rail Site s’affichant dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site, puis sélectionnez **Activation du pipeline front-end**.
+Le panneau Site s’affichant dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site, puis sélectionnez **Activation du pipeline front-end**.
 
 ![Activation du pipeline front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 

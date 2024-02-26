@@ -1,7 +1,7 @@
 ---
 title: Configuration du conteneur de mises en page et du mode Mise en page
 description: Découvrez comment configurer le conteneur de mises en page et le mode de mise en page pour activer les mises en page réactives pour vos auteurs de contenu.
-source-git-commit: 4ae0ae4fbf8f6a97434628f5f6049720c6c43118
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 50%
@@ -11,11 +11,11 @@ ht-degree: 50%
 
 # Configuration du conteneur de mises en page et du mode Mise en page {#configuring-layout-container-and-layout-mode}
 
-[Mise en page réactive](/help/sites-cloud/authoring/features/responsive-layout.md) est un mécanisme de réalisation [responsive web design.](https://fr.wikipedia.org/wiki/Site_web_réactif) Cela permet à l’auteur de contenu de créer des pages web dont la mise en page et les dimensions dépendent des appareils utilisés par leurs utilisateurs.
+[Mise en page réactive](/help/sites-cloud/authoring/page-editor/responsive-layout.md) est un mécanisme de réalisation [responsive web design.](https://fr.wikipedia.org/wiki/Site_web_réactif) Cela permet à l’auteur de contenu de créer des pages web dont la mise en page et les dimensions dépendent des appareils utilisés par leurs utilisateurs.
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
-* **[Conteneur de mises en page](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Ce composant fournit un système de paragraphes/grille qui vous permet d’ajouter et de positionner des composants dans une grille réactive.
+* **[Conteneur de mises en page](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Ce composant fournit un système de paragraphes/grille qui vous permet d’ajouter et de positionner des composants dans une grille réactive.
    * Il peut être utilisé comme système de paragraphes (parsys) par défaut pour votre page et mis à la disposition des créateurs dans l’explorateur de composants.
    * Par défaut **Conteneur de mises en page** est défini sous `/libs/wcm/foundation/components/responsivegrid`.
    * Vous pouvez définir des conteneurs de mise en page en tant que :
@@ -23,8 +23,8 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
       * système de paragraphes par défaut de la page ;
       * En tant que composant et le parsys par défaut.
          * Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
-* **[Mode Mise en page](/help/sites-cloud/authoring/fundamentals/environment-tools.md)** - Une fois le conteneur de mises en page positionné sur la page, vous pouvez utiliser la variable **Disposition** pour positionner le contenu dans la grille réactive.
-* **[Émulateur](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)** - Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
+* **[Mode Mise en page](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Une fois le conteneur de mises en page positionné sur la page, vous pouvez utiliser la variable **Disposition** pour positionner le contenu dans la grille réactive.
+* **[Émulateur](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
 
 Grâce à ces mécanismes de grille réactive, vous pouvez :
 
@@ -220,9 +220,9 @@ Pour une mise en page réactive efficace, l’auteur du contenu doit pouvoir fai
 
 Pour permettre aux créateurs d’ajouter d’autres grilles réactives dans des pages de contenu, vous devez activer le composant conteneur de mise en page pour la page. Vous pouvez effectuer cette opération à l’aide de l’une des fonctions suivantes :
 
-* **Via l’environnement de création** - [Modifier vos modèles de page](/help/sites-cloud/authoring/features/templates.md) pour activer le conteneur de mises en page pour une page.
+* **Via l’environnement de création** - [Modifier vos modèles de page](/help/sites-cloud/authoring/sites-console/templates.md) pour activer le conteneur de mises en page pour une page.
 * **Définition du composant** - Utilisation `allowedComponent` ou une inclusion statique lors de la définition du composant.
 
 ### Configurer la grille du Conteneur de mise en page {#configure-the-grid-of-the-layout-container}
 
-Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de mises en page. [en modifiant vos modèles de page.](/help/sites-cloud/authoring/features/templates.md)
+Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de mises en page. [en modifiant vos modèles de page.](/help/sites-cloud/authoring/sites-console/templates.md)

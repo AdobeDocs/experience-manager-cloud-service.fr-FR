@@ -2,10 +2,10 @@
 title: Créer un site à partir d’un modèle
 description: Découvrez comment créer rapidement un site AEM à l’aide d’un modèle de site.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 78%
+source-wordcount: '1485'
+ht-degree: 96%
 
 ---
 
@@ -20,14 +20,14 @@ Dans le document précédent du parcours de création rapide de site AEM, [Prés
 * Découvrez comment AEM Sites et le Cloud Manager travaillent ensemble pour faciliter le développement front-end.
 * Découvrez comment l’étape de personnalisation front-end est entièrement découplée de l’AEM et ne nécessite aucune connaissance AEM.
 
-Cet article s’appuie sur ces principes de base afin que vous puissiez effectuer la première étape de configuration et créer un site pour un modèle que vous pourrez ensuite personnaliser à l’aide des outils front-end.
+Cet article s’appuie sur ces principes de base afin que vous puissiez effectuer la première étape de configuration et créer un site à partir d’un modèle que vous pourrez ensuite personnaliser à l’aide d’outils front-end.
 
 ## Objectif {#objective}
 
 Ce document vous aide à comprendre comment créer rapidement un site AEM à l’aide d’un modèle de site. Après avoir lu ce document, vous devriez :
 
 * Découvrir comment obtenir des modèles de site AEM.
-* Découvrez comment créer un site à l’aide d’un modèle.
+* Apprendre à créer un nouveau site à l’aide d’un modèle.
 * Découvrir comment télécharger le modèle de votre nouveau site pour le fournir au développeur front-end.
 
 ## Rôle responsable {#responsible-role}
@@ -40,8 +40,8 @@ Les modèles de site permettent de combiner du contenu de site de base dans un p
 
 * `files` : dossier contenant le kit d’interface utilisateur, le fichier XD et éventuellement d’autres fichiers.
 * `previews` : dossier contenant des captures d’écran du modèle de site.
-* `site`: module de contenu du contenu copié pour chaque site créé à partir de ce modèle, tel que les modèles de page, les pages, etc.
-* `theme`: sources du thème du modèle pour modifier l’aspect du site, y compris CSS, JavaScript, etc.
+* `site` : package de contenu du contenu copié pour chaque site créé à partir de ce modèle, tel que des modèles de page, des pages, etc.
+* `theme` : sources du thème du modèle pour modifier l’aspect du site, y compris CSS, JavaScript, etc.
 
 Les modèles sont efficaces car ils sont réutilisables afin que vos auteurs de contenu puissent créer rapidement un site. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de répondre à divers besoins professionnels.
 
@@ -63,23 +63,23 @@ Une fois le téléchargement effectué, vous pouvez le charger dans votre enviro
 >
 >Vous pouvez également choisir de créer le modèle à partir de la source dans le cadre du workflow de votre projet. Cette rubrique dépasse toutefois le cadre de ce parcours. Pour plus d’informations, consultez la documentation GitHub du modèle de site standard.
 
-## Installation d’un modèle de site {#installing-template}
+## Installer un modèle de site {#installing-template}
 
-Utiliser un modèle pour créer un site est facile.
+L’utilisation d’un modèle pour créer un site est simple.
 
 1. Connectez-vous à votre environnement de création AEM et accédez à la console Sites.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Sélectionner **Créer** en haut à droite de l’écran et, dans le menu déroulant, sélectionnez **Site à partir du modèle**.
+1. Appuyez ou cliquez sur **Créer** en haut à droite de l’écran et, dans le menu déroulant, sélectionnez **Site à partir d’un modèle**.
 
-   ![Création d’un nouveau site à partir d’un modèle](assets/create-site-from-template.png)
+   ![Création d’un nouveau site à partir d’un modèle.](assets/create-site-from-template.png)
 
-1. Dans l’assistant Créer un site , sélectionnez **Importer** en haut de la colonne de gauche.
+1. Dans l’assistant Créer un site, appuyez ou cliquez sur **Importer** en haut de la colonne de gauche.
 
    ![Assistant Création de site](assets/site-creation-wizard.png)
 
-1. Dans l’explorateur de fichiers, recherchez le modèle. [que vous avez téléchargé précédemment](#obtaining-template) et sélectionnez **Télécharger**.
+1. Dans l’explorateur de fichiers, recherchez le modèle [que vous avez téléchargé précédemment](#obtaining-template) et appuyez ou cliquez sur **Charger**.
 
 1. Une fois chargé, il s’affiche dans la liste des modèles disponibles. Sélectionnez-la pour la sélectionner (qui affiche également des informations sur le modèle dans la colonne de droite), puis sélectionnez **Suivant**.
 
@@ -90,9 +90,9 @@ Utiliser un modèle pour créer un site est facile.
    * Le titre du site s’affiche dans la barre de titre des navigateurs.
    * Le nom du site fait alors partie de l’URL.
 
-1. Sélectionner **Créer** et le nouveau site est créé à partir du modèle de site.
+1. Appuyez ou cliquez sur **Créer** pour créer le nouveau site à partir du modèle de site.
 
-   ![Détails du nouveau site](assets/create-site-details.png)
+   ![Détails du nouveau site.](assets/create-site-details.png)
 
 1. Dans la boîte de dialogue de confirmation qui s’affiche, sélectionnez **Terminé**.
 
@@ -115,7 +115,7 @@ Les modèles de site sont très efficaces et flexibles, et tout nombre peut êtr
 
 Si vous avez besoin d’une personnalisation front-end supplémentaire, gardez à l’esprit que le développeur front-end ne connaît peut-être pas les détails de votre contenu. Par conséquent, il est préférable de fournir au développeur un chemin d’accès au contenu type qui peut être utilisé comme base de référence lorsque le thème est personnalisé. La page d’accueil de la langue principale du site en est un exemple type.
 
-1. Dans l’explorateur de sites, accédez à la page d’accueil de la langue principale du site, puis sélectionnez la page à sélectionner, puis sélectionnez **Modifier** dans la barre de menus.
+1. Dans l’explorateur de sites, accédez à la page d’accueil de la langue principale du site, appuyez ou cliquez sur la page pour la sélectionner, puis appuyez ou cliquez sur **Modifier** dans la barre de menus.
 
    ![Page d’accueil standard](assets/home-page-in-console.png)
 
@@ -147,7 +147,7 @@ Vous disposez désormais d’une copie des fichiers sources du thème dans vos f
 
 Pour que le développeur front-end puisse prévisualiser les personnalisations à l’aide du contenu d’AEM réel de votre site, vous devez configurer un utilisateur proxy.
 
-1. Dans AEM de la navigation principale, accédez à **Outils** > **Sécurité** > **Utilisateurs**.
+1. Dans AEM, à partir de la barre de navigation principale, accédez à **Outils** > **Sécurité** > **Utilisateurs**.
 1. Dans la console de gestion des utilisateurs, sélectionnez **Créer**.
 
    ![Console de gestion des utilisateurs](assets/user-management-console.png)
@@ -171,7 +171,7 @@ Vous avez maintenant terminé la configuration. Les auteurs de contenu peuvent m
 Maintenant que vous avez terminé cette partie du parcours de création rapide de site AEM vous devriez :
 
 * Découvrir comment obtenir des modèles de site AEM.
-* Découvrez comment créer un site à l’aide d’un modèle.
+* Apprendre à créer un nouveau site à l’aide d’un modèle.
 * Découvrir comment télécharger le modèle de votre nouveau site pour le fournir au développeur front-end.
 
 Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Configuration de votre pipeline,](pipeline-setup.md) où vous allez créer un pipeline front-end pour gérer la personnalisation du thème de votre site.
@@ -181,7 +181,9 @@ Tirez parti de ces connaissances et poursuivez votre parcours de création rapid
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Configuration de votre pipeline,](pipeline-setup.md) vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
 
 * [Modèle de site standard AEM](https://github.com/adobe/aem-site-template-standard) - Il s’agit du référentiel GitHub du modèle de site standard d’AEM.
-* [Création et organisation des pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - Ce guide explique comment gérer les pages de votre site AEM si vous souhaitez le personnaliser davantage après l’avoir créé à partir du modèle.
+* [Organisation des pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Ce guide explique comment organiser les pages de votre site AEM.
+* [Création de pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Ce guide explique comment ajouter de nouvelles pages à votre site.
+* [Gestion des pages](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Ce guide explique comment gérer les pages de votre site, y compris le déplacement, la copie et la suppression.
 * [Utilisation d’un package](/help/implementing/developing/tools/package-manager.md) - Les packages permettent l’importation et l’exportation de contenu de référentiel. Ce document explique comment utiliser les packages dans AEM 6.5, qui s’applique également à AEMaaCS.
 * [Documentation relative à l’administration du site](/help/sites-cloud/administering/site-creation/create-site.md) - Consultez la documentation technique sur la création de site pour plus d’informations sur les fonctionnalités de l’outil de création rapide de site.
 * [Création ou ajout de formulaires à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Découvrez les techniques et les bonnes pratiques étape par étape pour intégrer des formulaires à votre site web, en optimisant vos expériences numériques pour un impact maximal.

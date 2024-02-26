@@ -2,7 +2,7 @@
 title: Développement et outil de comparaison des pages
 description: Découvrez le fonctionnement de l’outil de comparaison des pages et son impact sur un développeur
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 93%
@@ -15,11 +15,11 @@ ht-degree: 93%
 
 La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. L’affichage d’une version de page, puis de l’autre, est inefficace et source d’erreurs. Les personnes qui créent du contenu doivent pouvoir comparer la page active à une version précédente en même temps que les différences mises en évidence.
 
-L’outil de comparaison des pages permet de comparer la page active aux lancements, versions précédentes, etc. Pour plus d’informations sur cette fonctionnalité utilisateur, voir [Outil de comparaison des pages](/help/sites-cloud/authoring/features/page-diff.md).
+L’outil de comparaison des pages permet de comparer la page active aux lancements, versions précédentes, etc. Pour plus d’informations sur cette fonctionnalité utilisateur, voir [Outil de comparaison des pages](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Détails de l’opération {#operation-details}
 
-Lors de la comparaison des versions d’une page, la version précédente à comparer est recréée en arrière-plan par AEM pour faciliter la comparaison. Cette version précédente est nécessaire pour rendre le contenu [pour la comparaison côte à côte](/help/sites-cloud/authoring/features/page-diff.md).
+Lors de la comparaison des versions d’une page, la version précédente à comparer est recréée en arrière-plan par AEM pour faciliter la comparaison. Cette version précédente est nécessaire pour rendre le contenu [pour la comparaison côte à côte](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 Cette opération de recréation, réalisée par AEM en interne, est transparente pour l’utilisateur ou l’utilisatrice et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel, par exemple en CRXDE Lite, voit ces versions recréées dans la structure de contenu.
 

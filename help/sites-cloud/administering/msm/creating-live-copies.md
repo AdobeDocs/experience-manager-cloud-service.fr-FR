@@ -4,7 +4,7 @@ description: Découvrez comment créer et synchroniser des Live Copies pour uti
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -53,7 +53,7 @@ Les étapes suivantes ne sont mises à la disposition d’un administrateur sur 
 
 Pour créer une configuration de plan directeur :
 
-1. [Accédez](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) au menu **Outils**, puis sélectionnez le menu **Sites**.
+1. [Accédez](/help/sites-cloud/authoring/basic-handling.md#global-navigation) au menu **Outils**, puis sélectionnez le menu **Sites**.
 1. Sélectionnez **Plans directeurs** pour ouvrir la console **Configurations de plans directeurs** :
 
    ![Configurations de plans directeurs](../assets/blueprint-configurations.png)
@@ -68,11 +68,11 @@ Pour créer une configuration de plan directeur :
 
 1. L’option **Créer** permet de créer la configuration de plan directeur en fonction de votre spécification.
 
-### Modification ou suppression d’une configuration de plan directeur  Localement{#editing-or-deleting-a-blueprint-configuration}
+### Modification ou suppression locale d’une configuration de plan directeur{#editing-or-deleting-a-blueprint-configuration}
 
 Vous pouvez modifier ou supprimer une configuration de plan directeur existante :
 
-1. [Accédez](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) au menu **Outils**, puis sélectionnez le menu **Sites**.
+1. [Accédez](/help/sites-cloud/authoring/basic-handling.md#global-navigation) au menu **Outils**, puis sélectionnez le menu **Sites**.
 1. Sélectionnez **Plans directeurs** pour ouvrir la console **Configurations de plans directeurs** :
 
    ![Configurations de plans directeurs](../assets/blueprint-configurations.png)
@@ -160,7 +160,7 @@ Lorsque vous créez le site, saisissez des valeurs pour les propriétés suivant
 * **Nom** : (facultatif) nom du nœud JCR qui stocke la page racine de la Live Copy (la valeur par défaut est basée sur le titre)
 * **Propriétaire du site** : (facultatif) informations sur le responsable de la Live Copy
 * **Live Copy** : sélectionnez cette option pour établir une relation en direct avec le site source. Si vous ne sélectionnez pas cette option, une copie du plan directeur est créée, mais n’est pas synchronisée ultérieurement avec la source.
-* **Configurations de déploiement** : (facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur. Pour plus d’informations, consultez [Spécification de la configuration de déploiement à utiliser](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
+* **Configurations de déploiement** : (facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur. Voir [Spécification des configurations de déploiement à utiliser](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) pour plus d’informations.
 
 Pour créer une Live Copy d’un site à partir d’une configuration de plan directeur :
 
@@ -211,7 +211,7 @@ Pour afficher les propriétés :
 
 ### Affichage des Live Copies d’une page de plan directeur {#seeing-the-live-copies-of-a-blueprint-page}
 
-Les pages de plan directeur (référencées dans la configuration de plan directeur) fournissent une liste des pages Live Copy qui utilisent la page (plan directeur) actuelle comme source. Utilisez cette liste pour conserver la trace des Live Copies. La liste s’affiche dans l’onglet **Plan directeur** des [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+Les pages de plan directeur (référencées dans la configuration de plan directeur) fournissent une liste des pages Live Copy qui utilisent la page (plan directeur) actuelle comme source. Utilisez cette liste pour conserver la trace des Live Copies. La liste s’affiche dans l’onglet **Plan directeur** des [propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md).
 
 ![Onglet Plan directeur des propriétés de page](../assets/live-copy-blueprint-tab.png)
 
@@ -249,7 +249,7 @@ Les déploiements sont traités comme des tâches asynchrones et peuvent être v
 
 #### Déploiement d’un plan directeur à partir du rail de référence {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Dans la console **Sites**, sélectionnez la page dans la Live Copy et ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (via la barre d’outils).
+1. Dans la console **Sites**, sélectionnez la page dans la Live Copy et ouvrez le panneau **[Références](/help/sites-cloud/authoring/basic-handling.md#references)** (via la barre d’outils).
 1. Sélectionnez l’option **Plans directeurs** dans la liste pour afficher les plans directeurs associés à cette page.
 1. Sélectionnez le plan directeur requis dans la liste.
 1. Sélectionnez **Déploiement**.
@@ -575,8 +575,8 @@ L’action [**Réinitialiser** est également disponible dans l’aperçu de la 
 
 Pour suivre les modifications que vous avez apportées, vous pouvez afficher la page de plan directeur dans la section **Références** et la comparer à sa page Live Copy :
 
-1. Dans la console **Sites**, [accédez à une page Live Copy ou de plan directeur et sélectionnez-la](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** et, selon le contexte, sélectionnez l’une des options suivantes :
+1. Dans la console **Sites**, [accédez à une page Live Copy ou de plan directeur et sélectionnez-la](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Ouvrez le panneau **[Références](/help/sites-cloud/authoring/basic-handling.md#references)** et, selon le contexte, sélectionnez l’une des options suivantes :
 
    * **Plan directeur**
    * **Live Copies**
@@ -592,7 +592,7 @@ Pour suivre les modifications que vous avez apportées, vous pouvez afficher la 
 
 1. Les pages Live Copy et les pages du plan directeur s’ouvrent côte à côte.
 
-   Pour obtenir des informations complètes sur l’utilisation de cette fonctionnaité, consultez [Différence entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
+   Pour obtenir des informations complètes sur l’utilisation de cette fonctionnaité, consultez [Différence entre les pages](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Désolidarisation d’une Live Copy {#detaching-a-live-copy}
 

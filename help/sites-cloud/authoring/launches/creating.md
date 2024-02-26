@@ -2,10 +2,10 @@
 title: Création de lancements
 description: Vous pouvez créer un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source :
 
-* Le titre apparaît dans le rail [Références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), à partir duquel les auteurs peuvent accéder aux références afin de les modifier.
+* Le titre apparaît dans le rail [Références](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references), à partir duquel les auteurs peuvent accéder aux références afin de les modifier.
 * Les pages enfants de la page source sont incluses par défaut dans le lancement. Si vous le souhaitez, vous pouvez n’utiliser que la page source.
 * Par défaut, [Live Copy](/help/sites-cloud/administering/msm/overview.md) met automatiquement à jour les pages de lancement au fur et à mesure des modifications des pages source. Vous pouvez spécifier qu’une copie statique soit créée afin d’empêcher les modifications automatiques.
 
@@ -48,7 +48,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    >[!NOTE]
    >
-   >Dans la console **Sites**, vous pouvez également utiliser le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) pour choisir une page avant de sélectionner **Créer**.
+   >Dans la console **Sites**, vous pouvez également utiliser le [mode de sélection](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) pour choisir une page avant de sélectionner **Créer**.
    >
    >La page sélectionnée sera alors utilisée comme page source initiale.
 
@@ -114,7 +114,7 @@ La sélection de cette option va :
 >
 >Étant donné qu’un modèle différent est utilisé, la nouvelle page est vide. En raison de la différence de structure de page, aucun contenu n’est copié.
 >
->Ce mécanisme peut être utilisé pour modifier le modèle d’une [page existante](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), bien que la perte du contenu doit être envisagée.
+>Ce mécanisme peut être utilisé pour modifier le modèle d’une [page existante](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), bien que la perte du contenu doit être envisagée.
 
 ### Création d’un lancement imbriqué {#creating-a-nested-launch}
 

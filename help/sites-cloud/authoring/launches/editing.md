@@ -2,7 +2,7 @@
 title: Modification de lancements
 description: Après avoir créé un lancement pour votre page (ou ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 91%
@@ -48,15 +48,15 @@ Pour plus d’informations, voir [Modification du contenu d’une Live Copy](/h
 
 Pour suivre les modifications que vous avez apportées, vous pouvez afficher le lancement dans **Références** et comparer la page de lancement à sa page source :
 
-1. Dans la console **Sites**, [accédez aux pages source de votre lancement et sélectionnez-en une](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** et sélectionnez **Lancements**.
+1. Dans la console **Sites**, [accédez aux pages source de votre lancement et sélectionnez-en une](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Ouvrez le panneau **[Références](/help/sites-cloud/authoring/basic-handling.md#references)** et sélectionnez **Lancements**.
 1. Sélectionnez votre lancement spécifique, puis **Comparaison avec la source** :
 
    ![Comparaison du lancement à la source](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. Les deux pages (lancement et source) s’ouvrent côte à côte.
 
-   Pour obtenir des informations complètes sur l’utilisation de cette fonctionnalité, consultez [Différences entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
+   Pour obtenir des informations complètes sur l’utilisation de cette fonctionnalité, consultez [Différences entre les pages](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Modification des pages source utilisées {#changing-the-source-pages-used}
 

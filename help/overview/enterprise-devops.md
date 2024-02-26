@@ -2,8 +2,8 @@
 title: Opérations de développement d’entreprise (DevOps)
 description: Découvrez les processus, les méthodes et la communication nécessaires pour faciliter le déploiement et simplifier la collaboration.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ L’environnement d’évaluation doit être un miroir de l’environnement de p
 
 ### Production : création et publication  {#production-author-and-publish}
 
-L’environnement de production est constitué des environnements requis pour [créer et publier](/help/sites-cloud/authoring/getting-started/concepts.md) votre mise en œuvre.
+L’environnement de production est constitué des environnements requis pour [créer et publier](/help/sites-cloud/authoring/author-publish.md) votre mise en œuvre.
 
 Un environnement de production comprend au moins une instance de création et une instance de publication :
 

@@ -2,10 +2,10 @@
 title: Personnaliser la création de pages
 description: Découvrez les mécanismes proposés par AEM as a Cloud Service pour personnaliser la fonctionnalité de création de pages.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 24%
+ht-degree: 52%
 
 ---
 
@@ -30,17 +30,17 @@ Les superpositions sont basées sur des définitions de noeud et vous permettent
 
 Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car la fonction [fusion de ressources sling](/help/implementing/developing/introduction/sling-resource-merger.md) autorise l’héritage.
 
-Pour plus d’informations, voir [Jeu de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+Pour plus d’informations, voir [Jeu de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=fr).
 
 Pour plus d’informations sur les superpositions, voir [Recouvrements pour Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Ajouter un nouveau calque (mode) {#add-new-layer-mode}
 
-Lorsque vous modifiez une page, il existe plusieurs [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) disponible. Ces modes sont implémentés à l’aide de [calques](/help/implementing/developing/introduction/ui-structure.md#layer). Ils permettent d’accéder à différents types de fonctionnalités pour le même contenu de page. Les modes d’AEM standard incluent Modifier, Disposition, Développeur, Timewarp, État de Live Copy et Ciblage.
+Lorsque vous modifiez une page, plusieurs [modes](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) sont disponibles. Ces modes sont implémentés à l’aide de [calques](/help/implementing/developing/introduction/ui-structure.md#layer). Ils permettent d’accéder à différents types de fonctionnalités pour le même contenu de page. Les modes d’AEM standard incluent Modifier, Disposition, Développeur, Timewarp, État de Live Copy et Ciblage.
 
-### Exemple de calque : État de Live Copy {#layer-example-live-copy-status}
+### Exemple de calque : statut de Live Copy {#layer-example-live-copy-status}
 
-Une instance AEM standard fournit la couche MSM. Il accède aux données relatives à [gestion multisite](/help/sites-cloud/administering/msm/overview.md) et le met en surbrillance dans le calque.
+Une instance AEM standard fournit la couche MSM. Cela permet d’accéder aux données relatives à la [gestion multisite](/help/sites-cloud/administering/msm/overview.md) et de les mettre en évidence dans le calque.
 
 Pour l’afficher en action, vous pouvez modifier n’importe quelle copie de langue dans le [Exemple de contenu WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et sélectionnez la variable **État de Live Copy** mode .
 
@@ -54,21 +54,21 @@ Il s’agit d’un exemple de package montrant comment créer un calque (mode) p
 
 Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 
-## Ajout d’une nouvelle catégorie de sélection à l’explorateur de ressources {#add-new-selection-category-to-asset-browser}
+## Ajouter une nouvelle catégorie de sélection à l’explorateur de ressources {#add-new-selection-category-to-asset-browser}
 
 L’explorateur de ressources affiche des ressources de différents types/catégories (par exemple, des images et des documents). Les ressources peuvent également être filtrées par ces catégories.
 
 ### Exemple de code {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` est un exemple de module montrant comment ajouter un groupe à l’outil de recherche de ressources. Cet exemple se connecte à [Flickr](https://www.flickr.com)est un flux public et les affiche dans le panneau latéral.
+`aem-authoring-extension-assetfinder-flickr` est un exemple de package qui montre comment ajouter un groupe à l’outil de recherche de ressources. Cet exemple se connecte au flux public de [Flickr](https://www.flickr.com) et l’affiche dans le panneau latéral.
 
 Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
 
-## Filtrage des ressources {#filtering-resources}
+## Filtrer les ressources {#filtering-resources}
 
 Lors de la création de pages, l’utilisateur doit souvent effectuer une sélection dans les ressources d’une liste.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Par exemple, si la variable `pathbrowser` Le composant Granite permet à l’utilisateur de sélectionner le chemin d’accès à une ressource particulière. Les chemins présentés peuvent être filtrés comme suit :
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Par exemple, si la variable `pathbrowser` Le composant Granite permet à l’utilisateur de sélectionner le chemin d’accès à une ressource particulière. Les chemins présentés peuvent être filtrés comme suit :
 
 * Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Spécifiez un nom pour le prédicat et faites-y référence lors de l’utilisation de `pathbrowser`.
@@ -85,7 +85,7 @@ Chaque composant dispose généralement d’une barre d’outils qui permet d’
 
 Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 
-## Ajout d’un nouvel éditeur statique {#add-new-in-place-editor}
+## Ajouter un nouvel éditeur statique {#add-new-in-place-editor}
 
 ### Éditeur statique standard {#standard-in-place-editor}
 
@@ -93,7 +93,7 @@ Dans une installation AEM standard :
 
 1. `/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js` contient les définitions des différents éditeurs disponibles.
 
-1. Il existe une connexion entre l’éditeur et chaque type de ressource (comme dans le composant) qui peut l’utiliser :
+1. Il existe une connexion entre l’éditeur et chaque type de ressource (comme dans le composant) qui peut l’utiliser :
 
    * `cq:inplaceEditing`
 
@@ -104,7 +104,7 @@ Dans une installation AEM standard :
 
          * property : `editorType`
 
-           Définit le type d’éditeur intégré utilisé lorsque la modification statique est déclenchée pour ce composant ; par exemple, `text`, `textimage`, `image`, `title`.
+           Définit le type d’éditeur en ligne utilisé lorsqu’une édition statique est déclenchée pour ce composant ; par exemple, `text`, `textimage`, `image`, `title`.
 
 1. Vous pouvez configurer d’autres détails de configuration de l’éditeur à l’aide d’un `config` noeud contenant des configurations et un `plugin` pour contenir les détails de configuration du module externe nécessaires.
 
@@ -133,7 +133,7 @@ Voici un exemple de définition des proportions pour le module externe de recadr
 
 >[!NOTE]
 >
->AEM les rapports de recadrage, tels que définis par `ratio` sont définies comme **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur. Cela a été créée pour des raisons de compatibilité héritée. Les utilisateurs chargés de la création ne percevront aucune différence, à condition que vous définissiez clairement la propriété `name`, car c’est cette dernière qui s’affiche dans l’interface utilisateur.
+>Dans AEM, les rapports de recadrage, tels qu’ils sont définis par la propriété `ratio`, sont définis sous la forme **hauteur/largeur**.  Cela diffère de la définition conventionnelle de la largeur/hauteur. Cela a été créée pour des raisons de compatibilité héritée. Les utilisateurs chargés de la création ne percevront aucune différence, à condition que vous définissiez clairement la propriété `name`, car c’est cette dernière qui s’affiche dans l’interface utilisateur.
 
 #### Création d’un éditeur statique {#creating-a-new-in-place-editor}
 
@@ -152,11 +152,11 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
 #### Exemple de code pour la création d’un éditeur statique {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` est un exemple de package montrant comment créer un éditeur statique dans AEM.
+`aem-authoring-extension-inplace-editor` est un exemple de package qui montre comment créer un éditeur statique dans AEM.
 
 Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 
-## Ajout d’une action Nouvelle page {#add-a-new-page-action}
+## Ajouter une nouvelle action de page {#add-a-new-page-action}
 
 Pour ajouter une nouvelle action de page à la barre d’outils de la page, par exemple, une **Retour à Sites** (console).
 
@@ -172,9 +172,9 @@ Le workflow d’usine, **Demande d’activation** :
 
 * apparaît automatiquement dans le menu approprié lorsqu’un auteur de contenu **n’a pas** les droits de réplication appropriés, mais **dispose** de l’abonnement des utilisateurs et auteurs de la gestion des ressources numériques ;
 
-* Sinon, rien ne s’affiche, car les droits de réplication ont été supprimés.
+* sinon, rien ne s’affiche, car les droits de réplication ont été supprimés.
 
-Pour appliquer un comportement personnalisé à une telle activation, vous pouvez superposer la variable **Demande d’activation** workflow :
+Pour bénéficier d’un comportement personnalisé lors d’une telle activation, vous pouvez incruster le workflow **Demande d’activation** :
 
 1. Dans `/apps` recouvrez la propriété **Sites** assistant `/libs/wcm/core/content/common/managepublicationwizard`
 

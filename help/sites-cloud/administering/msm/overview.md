@@ -4,9 +4,9 @@ description: Découvrez comment réutiliser du contenu avec les puissantes fonct
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2702'
 ht-degree: 92%
 
 ---
@@ -106,7 +106,7 @@ Il existe de nombreux cas d’utilisation pour MSM et les Live Copies. Voici qu
   >
   >De l’autre :
   >
-  >* La quantité de copies individuelles à ajuster.
+  >* Le nombre de copies individuelles qu’il faudra adapter.
 
 ## MSM à partir de l’interface utilisateur {#msm-from-the-ui}
 
@@ -132,7 +132,7 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Références** (**Sites**)
 
-   * Le rail [Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) fournit des informations sur les **Live Copies** ainsi que l’accès aux actions appropriées.
+   * Le rail [Références](/help/sites-cloud/authoring/basic-handling.md#references) fournit des informations sur les **Live Copies** ainsi que l’accès aux actions appropriées.
 
 * **Aperçu de la Live Copy** (**Sites**)
 
@@ -245,7 +245,7 @@ Une Live Copy est appelée Live Copy empilée lorsqu’elle est créée en tan
 
 ### Source, plans directeurs et configurations de plan directeur {#source-blueprints-and-blueprint-configurations}
 
-N’importe quelle page ou branche de pages peut être utilisée comme source d’une Live Copy. Cependant, MSM vous permet également de définir une configuration de plan directeur qui spécifie un chemin source. Les avantages liés à l’utilisation d’une configuration de plan directeur sont les suivants :
+N’importe quelle page ou branche de pages peut être utilisée comme source d’une Live Copy. Toutefois, MSM vous permet également de définir une configuration de plan directeur qui spécifie un chemin d’accès source. Les avantages liés à l’utilisation d’une configuration de plan directeur sont les suivants :
 
 * Permet à l’auteur d’utiliser l’option **Déployer** sur un plan directeur. C’est-à-dire envoyer explicitement les modifications aux Live Copies qui héritent de ce plan.
 * Permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.
@@ -288,7 +288,7 @@ Les configurations de déploiement peuvent être réutilisées, de sorte que plu
 
 ### Conflits de déploiement {#rollout-conflicts}
 
-Les déploiements peuvent devenir complexes. en particulier lorsque les auteurs publient du contenu à la fois dans la source et la Live Copy. Il est donc utile de savoir comment AEM gère les [conflits susceptibles de se produire pendant le déploiement.](rollout-conflicts.md)
+Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs modifient du contenu dans la source et dans la Live Copy. Il est donc utile de savoir comment AEM gère les [conflits pouvant survenir pendant le déploiement.](rollout-conflicts.md)
 
 ### Suspension et annulation de l’héritage et de la synchronisation {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -320,7 +320,7 @@ Les étapes suivantes décrivent la procédure standard d’utilisation de MSM p
 1. Déterminez la configuration de déploiement à utiliser.
 
    1. MSM [installe plusieurs configurations de déploiement](live-copy-sync-config.md#installed-rollout-configurations) qui peuvent répondre à plusieurs cas d’utilisation.
-   1. Vous pouvez éventuellement [créer une configuration de déploiement ;](live-copy-sync-config.md#creating-a-rollout-configuration) si nécessaire.
+   1. Vous pouvez éventuellement [créer une configuration de déploiement](live-copy-sync-config.md#creating-a-rollout-configuration), le cas échéant.
 
 1. Déterminez où vous devez [spécifier les configurations de déploiement à utiliser](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) et effectuez la configuration selon vos besoins.
 1. Si nécessaire, [créer une configuration de plan directeur ;](creating-live-copies.md#creating-a-blueprint-configuration) qui identifie le contenu source de la Live Copy.

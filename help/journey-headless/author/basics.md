@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Comme pour la plupart des systèmes, vous devez vous connecter. En tant qu’aut
 * Mot de passe
 * Lien d’accès à l’écran de connexion
 
-Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, Adobe vous recommande de contacter votre équipe d’assistance pour les projets interne.
+Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, nous vous recommandons de contacter votre équipe interne d’assistance projet.
 
 ### Navigation {#navigation}
 
@@ -135,7 +135,7 @@ Pour ce faire, créez une série de dossiers dans la section **Fichiers** de la 
 
 ![Option Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Une boîte de dialogue s’ouvre, dans laquelle vous pouvez saisir les détails, puis confirmer avec **Créer**:
+Une boîte de dialogue s’ouvre dans laquelle vous pouvez saisir les informations ; confirmez ensuite en sélectionnant **Créer** :
 
 ![Boîte de dialogue Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s
 
 Par exemple, un fragment peut :
 
-* Nécessite plusieurs informations, dont certaines avec un type spécifique. Pour le contenu sans interface utilisateur, les références sont essentielles (vous en apprendrez plus loin dans votre parcours).
+* Nécessite plusieurs informations, dont certaines avec un type spécifique. Pour le contenu découplé, les références sont essentielles (vous en apprendrez plus sur votre parcours ultérieurement).
 
 * Permet d&#39;écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
 
@@ -267,21 +267,21 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Concepts de création](/help/sites-cloud/authoring/author-publish.md)
 
-* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) : cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la création de **Fragments de contenu** dans la console **Assets**.
+* [Manipulation de base](/help/sites-cloud/authoring/basic-handling.md) : cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la création de **Fragments de contenu** dans la console **Assets**.
 
-   * [Panneau de navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [Panneau de navigation](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-   * [En-tête](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+   * [En-tête](/help/sites-cloud/authoring/basic-handling.md#the-header)
 
-   * [Barre d’outils d’Actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+   * [Barre d’outils d’Actions](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-   * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
 
-   * [Affichage et sélection de ressources](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+   * [Affichage et sélection de ressources](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+   * [Sélecteur de rail](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
 
 * [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
 

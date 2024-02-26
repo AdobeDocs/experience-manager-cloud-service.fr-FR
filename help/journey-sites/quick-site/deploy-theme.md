@@ -2,10 +2,10 @@
 title: Déploiement de votre thème personnalisé
 description: Découvrez comment déployer le thème du site à l’aide du pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 88%
+source-wordcount: '1002'
+ht-degree: 95%
 
 ---
 
@@ -36,13 +36,13 @@ Cette partie du parcours s’applique au développeur front-end.
 
 ## Démarrer le pipeline {#start-pipeline}
 
-Après avoir validé les modifications de personnalisation du thème dans le référentiel git d’AEM, vous pouvez exécuter [le pipeline créé par l’administrateur](pipeline-setup.md) pour déployer les modifications.
+Une fois que vous avez validé les modifications de personnalisation du thème dans le référentiel Git d’AEM, vous pouvez exécuter [le pipeline créé par l’administrateur](pipeline-setup.md) pour déployer les modifications.
 
-1. Connectez-vous à Cloud Manager [comme vous l’avez fait pour récupérer vos informations d’accès Git](retrieve-access.md) et accédez à votre programme. Sur le **Présentation** vous verrez une carte pour **Pipelines**.
+1. Connectez-vous à Cloud Manager [comme vous l’avez fait pour récupérer vos informations d’accès Git](retrieve-access.md) et accédez à votre programme. Sur l’onglet **Aperçu** vous verrez une vignette pour **Pipelines**.
 
-   ![Aperçu de Cloud Manager](assets/cloud-manager-overview.png)
+   ![Vue d’ensemble de Cloud Manager.](assets/cloud-manager-overview.png)
 
-1. Sélectionnez les points de suspension en regard du pipeline que vous devez démarrer. Dans le menu déroulant, sélectionnez **Exécuter**.
+1. Appuyez ou cliquez sur les points de suspension en regard du pipeline que vous devez démarrer. Dans le menu déroulant, sélectionnez **Exécuter**.
 
    ![Exécution du pipeline](assets/run-pipeline.png)
 
@@ -68,7 +68,7 @@ Vous pouvez vérifier le statut du pipeline pour afficher le détail de sa progr
 
 >[!TIP]
 >
->Dans la fenêtre des détails du pipeline, vous pouvez sélectionner **Journal de téléchargement** pour toute étape du pipeline à des fins de débogage si une étape doit échouer. Le débogage du pipeline dépasse la portée de ce parcours. Consultez la documentation technique de Cloud Manager dans la section [Ressources supplémentaires](#additional-resources) de cette page.
+>Dans la fenêtre Détails du pipeline, vous pouvez appuyer ou cliquer sur **Télécharger le journal** à n’importe quelle étape du pipeline à des fins de débogage si une étape venait à échouer. Le débogage du pipeline dépasse la portée de ce parcours. Consultez la documentation technique de Cloud Manager dans la section [Ressources supplémentaires](#additional-resources) de cette page.
 
 ## Validation des personnalisations déployées {#view-customizations}
 
@@ -112,7 +112,9 @@ Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondisse
 * [Thème de site AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - Il s’agit du référentiel GitHub du thème de site AEM.
 * [npm](https://www.npmjs.com) : les thèmes AEM utilisés pour créer rapidement des sites sont basés sur npm.
 * [webpack](https://webpack.js.org) - Les thèmes AEM utilisés pour construire rapidement des sites reposent sur webpack.
-* [Création et organisation des pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - Ce guide explique comment gérer les pages de votre site AEM si vous souhaitez le personnaliser davantage après l’avoir créé à partir du modèle.
+* [Organisation des pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Ce guide explique comment organiser les pages de votre site AEM.
+* [Création de pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Ce guide explique comment ajouter de nouvelles pages à votre site.
+* [Gestion des pages](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Ce guide explique comment gérer les pages de votre site, y compris le déplacement, la copie et la suppression.
 * [Utilisation d’un package](/help/implementing/developing/tools/package-manager.md) - Les packages permettent l’importation et l’exportation de contenu de référentiel. Ce document explique comment utiliser les packages dans AEM 6.5, qui s’applique également à AEMaaCS.
 * [Parcours d’intégration](/help/journey-onboarding/overview.md) - Ce guide constitue votre point de départ pour vous assurer que vos équipes sont configurées et ont accès à AEM as a Cloud Service.
 * [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) - Consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.

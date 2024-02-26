@@ -2,9 +2,9 @@
 title: Présentation des fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1642'
 ht-degree: 98%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 ## Principes élémentaires {#the-basics}
 
-Un [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages.
+Un [fragment d’expérience](/help/sites-cloud/authoring/fragments/content-fragments.md) est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages.
 
 Un gabarit de fragment d’expérience, ou une variante, ou encore les deux, utilise :
 
@@ -47,7 +47,7 @@ Par exemple :
 
 ![Rendu HTML brut](assets/xf-14.png)
 
-Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires. Le module [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Ce transformateur est configuré comme suit :
+Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires. La variable [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Ce transformateur est configuré comme suit :
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -89,7 +89,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
       `experience-fragments`
 Ce modèle permet de créer des fragments d’expérience dans /content/experience-fragments, étant donné que la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
-1. Les [modèles autorisés](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
+1. Les [modèles autorisés](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -119,7 +119,7 @@ Dans AEM, vous avez la possibilité de créer des fragments d’expérience. Un 
 * est constitué d’un groupe de composants avec une mise en page ;
 * peut exister indépendamment d’une page AEM.
 
-De tels groupes sont notamment utilisés pour incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
+De tels groupes sont notamment utilisés pour incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
 
 ### Réécriture de liens par défaut {#default-link-rewriting}
 
@@ -172,7 +172,7 @@ Pour ces cas d’utilisation, AEM propose l’interface du fournisseur de rééc
 
 ### Interface du fournisseur de réécriture de liens {#link-rewriter-provider-interface}
 
-Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos lots sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens de HTML interne afin de l’adapter aux besoins de votre entreprise.
+Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos lots sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
 
 Voici quelques exemples d’implémentation de cette interface en tant que service :
 

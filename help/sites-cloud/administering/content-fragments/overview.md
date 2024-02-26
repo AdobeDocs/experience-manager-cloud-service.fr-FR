@@ -4,7 +4,7 @@ description: Découvrez comment les fragments de contenu dans AEM as a Cloud Ser
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 41%
@@ -13,7 +13,7 @@ ht-degree: 41%
 
 # Présentation de l’utilisation des fragments de contenu {#overview-working-with-content-fragments}
 
-Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux, idéal pour une diffusion sans interface et la création de pages.
+Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fragments/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux, idéal pour une diffusion sans interface et la création de pages.
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 >
 >* l’utilisation de la fonction **Ressources** console pour [gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
 >* l’utilisation de la fonction [*original* Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-variations.md),
->* using [Fragments de contenu pour la création de pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* using [Fragments de contenu pour la création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 
 Les fragments de contenu contiennent du contenu structuré :
@@ -74,7 +74,7 @@ Ces fragments de contenu peuvent ensuite être assemblés afin de fournir des ex
 
 >[!NOTE]
 >
->Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
+>Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-cloud/authoring/fragments/content-fragments.md)** représentent deux fonctions distinctes d’AEM :
 >* Les **fragments de contenu** sont des contenus éditoriaux, avec définition et structure, mais sans conception visuelle et/ou mise en page supplémentaires. Ils peuvent être utilisés pour accéder à des données structurées, notamment du texte, des nombres et des dates.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 >
@@ -94,7 +94,7 @@ Une fois les fragments créés, vous pouvez :
 * [Utilisation de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) - pour modifier, publier (pour prévisualiser ou produire) et référencer vos fragments
 * [Analyser](/help/sites-cloud/administering/content-fragments/analysis.md)  la structure de votre fragment de contenu, à l’aide de l’éditeur ;
 * [Accédez à vos fragments avec GraphQL pour une diffusion sans en-tête vers vos applications.](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
-* [Ou utilisez vos fragments pour la création de pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Ou utilisez vos fragments pour la création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Une fois les fragments créés, vous pouvez :
 >* [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
->* [Création de page à partir de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [Création de page à partir de fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 ## Principales et variations {#main-and-variations}
 
@@ -172,7 +172,7 @@ Les fragments de contenu sont :
 
 * Accessible pour la diffusion de contenu à l’aide du [API GRAPHQL AEM](/help/headless/graphql-api/content-fragments.md).
 
-* Disponible dans le [éditeur de page à l’aide du composant Fragment de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (composant de référencement) :
+* Disponible dans le [éditeur de page à l’aide du composant Fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) (composant de référencement) :
 
    * La variable [Composant principal de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr) est disponible pour les auteurs de pages. Il leur permet de référencer et de diffuser le fragment de contenu requis au format HTML ou JSON.
 
@@ -257,7 +257,7 @@ Pour utiliser vos fragments de contenu pour la création de pages, vous avez ég
 * A **Composant de fragment de contenu**
 
    * Utilitaire de diffusion du fragment au format HTML et/ou JSON.
-   * Obligatoire pour [référencer le fragment sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+   * Obligatoire pour [référencer le fragment sur une page](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Responsable de la mise en page et de la diffusion d’un fragment ; canaux, par exemple.
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.

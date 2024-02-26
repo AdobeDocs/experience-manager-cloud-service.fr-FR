@@ -4,9 +4,9 @@ description: Découvrez comment activer le pipeline front-end pour les sites exi
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 98%
 
 ---
@@ -51,7 +51,7 @@ L’activation de votre site s’effectue à partir de la console Sites à l’a
 
 1. Connectez-vous à AEM et naviguez sur votre site via **Navigation globale** > **Sites**.
 1. Sélectionnez votre site dans la console. Sélectionnez la racine du site et non les pages enfants.
-1. Une fois votre site sélectionné, ouvrez le [sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) à gauche et choisissez **Site**.
+1. Une fois votre site sélectionné, ouvrez le [sélecteur de rail](/help/sites-cloud/authoring/basic-handling.md#rail-selector) à gauche et choisissez **Site**.
 1. Dans le rail **Site** cliquez sur le bouton **Activer le pipeline front-end**.
 
    ![Activation du pipeline front-end](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)

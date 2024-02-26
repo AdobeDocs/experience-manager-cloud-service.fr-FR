@@ -4,7 +4,7 @@ description: Découvrez comment préparer le contenu à traduire lors du dévelo
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 73%
@@ -92,7 +92,7 @@ AEM contient un rail **Références** qui affiche une liste des racines de langu
 
 ![Racines linguistiques](../assets/language-roots.png)
 
-Utilisez la vue de procédure suivante pour les copies de langue d’une page à l’aide du [sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Utilisez la vue de procédure suivante pour les copies de langue d’une page à l’aide du [sélecteur de rail](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 1. Dans la console Sites, sélectionnez une page du site, puis sélectionnez **Références**.
 

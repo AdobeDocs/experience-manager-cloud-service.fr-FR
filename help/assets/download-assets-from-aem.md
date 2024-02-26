@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 86%
@@ -42,7 +42,7 @@ Vous pouvez télécharger des ressources à partir d’Experience Manager à l�
 
 Experience Manager optimise l’expérience de téléchargement en fonction de la quantité et de la taille des ressources. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] télécharge directement les requêtes de ressources uniques pour le fichier original au lieu de compresser les ressources uniques dans une archive ZIP afin de permettre des téléchargements plus rapides. Experience Manager prend en charge les téléchargements volumineux avec des requêtes asynchrones. Les requêtes de téléchargement dʼune taille supérieure à 100 Go sont divisées en plusieurs archives ZIP, dʼune taille maximale de 100 Go chacune.
 
-Par défaut, [!DNL Experience Manager] déclenche une notification dans la [[!DNL Experience Manager] Boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) lorsque qu’une archive de téléchargement est générée.
+Par défaut, [!DNL Experience Manager] déclenche une notification dans la [[!DNL Experience Manager] Boîte de réception](/help/sites-cloud/authoring/inbox.md) lorsque qu’une archive de téléchargement est générée.
 
 ![Notification dans la boîte de réception](assets/inbox-notification-for-large-downloads.png)
 

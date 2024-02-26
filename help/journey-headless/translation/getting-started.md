@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 93%
+source-wordcount: '1409'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Ce document vous aide à comprendre comment commencer à traduire le contenu dé
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
-Avant de commencer à traduire votre contenu d’AEM sans interface utilisateur graphique, plusieurs exigences s’appliquent.
+Un certain nombre d’exigences s’imposent avant de vous engager dans la traduction de votre contenu AEM découplé.
 
 ### Connaissances {#knowledge}
 
@@ -44,7 +44,7 @@ Avant de commencer à traduire votre contenu d’AEM sans interface utilisateur 
 
 >[!TIP]
 >
->Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Par conséquent, revenez à cette page une fois l’opération terminée.
+>Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Par conséquent, revenez à cette page une fois l’opération terminée.
 
 ### Outils {#tools}
 
@@ -88,7 +88,7 @@ Comme les modèles de contenu définissent la structure de votre contenu, vous d
       ![Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor.png)
 1. Sélectionnez l’un des champs du modèle. AEM le coche et les détails de ce champ s’affichent dans la colonne de droite.
    ![Détail de l’Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor-detail.png)
-1. L’architecte de contenu active la propriété **Traductible** sur chaque champ de modèle de contenu qui doit être traduit.
+1. L’architecte de contenu active la propriété **Traduisible** sur chaque champ de modèle de contenu qui doit être traduit.
 
 >[!TIP]
 >
@@ -178,15 +178,15 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * savoir comment AEM stocke du contenu découplé ;
 * être familiarisé avec les outils de traduction AEM.
 
-Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Configuration de l’intégration de traduction](configure-connector.md) où vous apprenez à connecter AEM à un service de traduction.|
+Tirez parti de ces connaissances et continuez de progresser sur votre parcours de traduction découplée AEM en consultant le document, [Configuration du connecteur de traduction](configure-connector.md) dans lequel vous apprendrez à connecter AEM à un service de traduction. 
 
 ## Ressources supplémentaires {#additional-resources}
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en consultant le document [Configuration du connecteur de traduction](configure-connector.md), vous trouverez ci-après quelques ressources supplémentaires qui, bien que facultatives, vous aideront à approfondir un certain nombre de concepts mentionnés dans ce document, sans qu’ils soient obligatoires pour poursuivre votre parcours en mode découplé.
 
-* [Manipulation de base d’AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md) : découvrez les principes de base de l’interface utilisateur d’AEM pour pouvoir naviguer facilement et effectuer les tâches essentielles, comme celles vous permettant de trouver votre contenu.
+* [Manipulation de base d’AEM](/help/sites-cloud/authoring/basic-handling.md) : découvrez les principes de base de l’interface utilisateur d’AEM pour pouvoir naviguer facilement et effectuer les tâches essentielles, comme celles vous permettant de trouver votre contenu.
 * [Identification du contenu à traduire](/help/sites-cloud/administering/translation/rules.md) : découvrez comment les règles de traduction identifient le contenu à traduire.
 * [Configuration du framework d’intégration de la traduction](/help/sites-cloud/administering/translation/integration-framework.md) : découvrez comment configurer le framework d’intégration de la traduction pour l’intégrer à des services de traduction tiers.
 * [Gestion de projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
-* [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
-* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
+* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

@@ -2,20 +2,20 @@
 title: Configuration de la modification en bloc des propriétés de page
 description: Découvrez comment configurer la modification en masse afin de pouvoir modifier les propriétés de plusieurs pages à la fois.
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 19%
+ht-degree: 43%
 
 ---
 
 # Configuration de la modification en bloc des propriétés de page {#configuring-bulk-editing-of-page-properties}
 
-[Modification en masse des propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) permet de modifier les propriétés de plusieurs pages à la fois.
+La [modification en masse des propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages) permet de modifier les propriétés de plusieurs pages à la fois.
 
 ## Considérations {#considerations}
 
-Par défaut, les propriétés de page ne sont pas activées pour la modification en masse. Ils doivent être explicitement activés. Lors de la définition des propriétés de page à mettre à disposition pour la modification en masse, vous devez tenir compte de certaines implications, telles que :
+Par défaut, les propriétés de page ne sont pas activées pour la modification en masse. Ils doivent être explicitement activés. Lorsque vous définissez les propriétés de la page qui seront disponibles pour la modification en masse, vous devez tenir compte de certaines implications, comme :
 
 * Certains champs sont généralement uniques. Vous devez décider s’il est utile d’activer ces champs pour la modification en masse, lorsqu’une valeur sera appliquée.
    * Par exemple, les titres de page sont presque toujours uniques.
@@ -31,7 +31,7 @@ En raison de la possibilité de plusieurs valeurs, il est recommandé de n’act
 * `/libs/granite/ui/components/foundation/form/pathbrowser`
 * `/libs/granite/ui/components/foundation/form/checkbox`
 
-## Activation d’un champ {#enabling-a-field}
+## Activer un champ {#enabling-a-field}
 
 Ces étapes utilisent la méthode `/apps/core/wcm/components/page/v1/page` de la [Exemple de contenu WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comme exemple pour activer la modification en masse sur un champ dans un environnement de développement.
 
@@ -47,7 +47,7 @@ Ces étapes utilisent la méthode `/apps/core/wcm/components/page/v1/page` de la
 
 ## Limites {#limitations}
 
-La modification en masse des propriétés de page est la suivante :
+La modification en masse des propriétés de page est :
 
 * Non disponible pour les pages d’une Live Copy.
 * Uniquement disponible pour les pages avec le même type de ressource.

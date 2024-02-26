@@ -2,7 +2,7 @@
 title: Variations - création de contenu de fragment (ressources - fragments de contenu)
 description: Découvrez comment les variations de fragment de contenu vous permettent de créer du contenu pour le fragment, puis de créer des variantes de ce contenu en fonction de vos besoins, augmentant ainsi la flexibilité.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 71%
@@ -64,7 +64,7 @@ Vous pouvez effectuer les actions suivantes :
 
 * Attribuer **Balises** à la variation actuelle ; les balises peuvent être ajoutées, mises à jour et supprimées.
 
-   * Les [balises](/help/sites-cloud/authoring/features/tags.md) sont puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées pour rechercher du contenu (par balises) et appliquer des opérations en bloc.
+   * Les [balises](/help/sites-cloud/authoring/sites-console/tags.md) sont puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées pour rechercher du contenu (par balises) et appliquer des opérations en bloc.
 
       * Les recherches d’une balise renvoient le fragment avec la variation balisée en surbrillance.
       * Vous pouvez également utiliser les balises de variation pour regrouper des variations pour un profil de réseau de diffusion de contenu (CDN) spécifique (pour la mise en cache CDN), au lieu d’utiliser le nom de la variation.
@@ -242,14 +242,14 @@ Le résumé de texte a été conçu pour permettre aux utilisateurs et utilisatr
 
 >[!CAUTION]
 >
-L’anglais est disponible par défaut.
+>L’anglais est disponible par défaut.
 >
-D’autres langues sont disponibles en tant que packages de modèle de langue à partir de la Distribution logicielle :
+>D’autres langues sont disponibles en tant que packages de modèle de langue à partir de la Distribution logicielle :
 >
-* [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. Sélectionnez **Principal** ou la variation requise.
@@ -318,7 +318,7 @@ Les annotations :
 
   >[!NOTE]
   >
-  Un sélecteur en liste déroulante est fourni si plusieurs annotations ont été appliquées à une partie du texte.
+  >Un sélecteur en liste déroulante est fourni si plusieurs annotations ont été appliquées à une partie du texte.
 
 * Lorsque vous supprimez tout le texte auquel l’annotation a été appliquée, cette dernière est également supprimée.
 
@@ -332,17 +332,17 @@ Les annotations :
 
 Pour simplifier le processus de création de fragments de contenu, vous pouvez ajouter directement des [Ressources](/help/assets/manage-digital-assets.md) (images) au fragment.
 
-Elles sont ajoutées à la séquence de paragraphes du fragment sans aucune mise en forme ; le formatage peut être effectué lorsque le [fragment est utilisé/référencé sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Elles sont ajoutées à la séquence de paragraphes du fragment sans aucune mise en forme ; le formatage peut être effectué lorsque le [fragment est utilisé/référencé sur une page](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!CAUTION]
 >
-Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
+>Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
 >
-Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+>Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fragments/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
 >
-Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+>Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
 1. Positionnez le curseur à l’endroit où vous souhaitez ajouter l’image.
 1. Utilisez l’icône **Insérer une ressource** pour ouvrir la boîte de dialogue de recherche.
@@ -357,10 +357,10 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 
    >[!CAUTION]
    >
-   Après l’ajout d’une ressource, si vous modifiez le format en :
+   >Après l’ajout d’une ressource, si vous modifiez le format en :
    >
-   * **Texte brut** : la ressource est effacée du fragment.
-   * **Markdown** : le fichier n’est pas visible, mais il est toujours présent lorsque vous revenez au **texte enrichi**.
+   >* **Texte brut** : la ressource est effacée du fragment.
+   >* **Markdown** : le fichier n’est pas visible, mais il est toujours présent lorsque vous revenez au **texte enrichi**.
 
 ### Insertion d’un fragment de contenu dans votre fragment {#inserting-content-fragment-into-your-fragment}
 
@@ -370,17 +370,17 @@ Elles sont ajoutées comme référence à l’emplacement actuel dans votre frag
 
 >[!NOTE]
 >
-Cette option est disponible lorsque la variable **Texte multi-lignes** est configuré avec **Autoriser la référence du fragment**.
+>Cette option est disponible lorsque la variable **Texte multi-lignes** est configuré avec **Autoriser la référence du fragment**.
 
 >[!CAUTION]
 >
-Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
+>Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
 >
-Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+>Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fragments/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
 >
-Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+>Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
 1. Positionnez le curseur à l’endroit où vous souhaitez ajouter le fragment.
 1. Utilisez l’icône **Insérer un fragment de contenu** pour ouvrir la boîte de dialogue de recherche.
@@ -395,10 +395,10 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 
    >[!CAUTION]
    >
-   Après l’ajout d’une référence à un autre fragment, si vous modifiez le format en :
+   >Après l’ajout d’une référence à un autre fragment, si vous modifiez le format en :
    >
-   * **Texte brut** : la référence est effacée du fragment.
-   * **Markdown** : la référence reste.
+   >* **Texte brut** : la référence est effacée du fragment.
+   >* **Markdown** : la référence reste.
 
 ## Héritage {#inheritance}
 
@@ -440,11 +440,11 @@ Les variations vous permettent de prendre le contenu **principal** et le varier 
 
    >[!NOTE]
    >
-   Lors de la création d’une variation, il s’agit toujours de la variable **Principal** qui est copié, et non la variation ouverte.
+   >Lors de la création d’une variation, il s’agit toujours de la variable **Principal** qui est copié, et non la variation ouverte.
 
    >[!NOTE]
    >
-   Lorsque vous créez une variation, toutes les **balises** actuellement affectées au contenu **principal** sont copiées dans la nouvelle variation.
+   >Lorsque vous créez une variation, toutes les **balises** actuellement affectées au contenu **principal** sont copiées dans la nouvelle variation.
 
 ### Modifier une variation {#editing-a-variation}
 
@@ -467,7 +467,7 @@ Vous pouvez modifier le contenu de la variation après l’une des opérations s
 
 >[!NOTE]
 >
-Cela affecte uniquement la variation **Titre**.
+>Cela affecte uniquement la variation **Titre**.
 
 ### Suppression d’une variation {#deleting-a-variation}
 
@@ -479,7 +479,7 @@ Cela affecte uniquement la variation **Titre**.
 
 >[!NOTE]
 >
-Vous ne pouvez pas supprimer le **Maître**.
+>Vous ne pouvez pas supprimer le **Maître**.
 
 ### Synchronisation avec le maître {#synchronizing-with-master}
 
@@ -489,13 +489,13 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 
 >[!CAUTION]
 >
-La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
+>La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
 >
-Seul l’élément actif de la variation est synchronisé.
+>Seul l’élément actif de la variation est synchronisé.
 >
-La synchronisation ne fonctionne que sur le **Texte multi-lignes** type de données.
+>La synchronisation ne fonctionne que sur le **Texte multi-lignes** type de données.
 >
-Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
+>Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
 
 1. Ouvrez votre fragment de contenu dans l’éditeur de fragments. Assurez-vous que le **contenu principal** a été modifié.
 

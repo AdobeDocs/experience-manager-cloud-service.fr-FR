@@ -4,7 +4,7 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3960'
 ht-degree: 85%
@@ -196,7 +196,7 @@ Les mises à jour de la mémoire de traduction peuvent être interceptées et en
 
 Une propriété peut être sélectionnée dans la vue Liste de la console Sites. Cette propriété indique si une page a été traduite, si elle est en cours de traduction ou si elle n’a pas encore été traduite.
 
-1. Dans la console Sites, basculez vers la vue [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Dans la console Sites, basculez vers la vue [Liste](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Sélectionner, **Paramètres d’affichage** dans la liste déroulante des vues.
 1. Dans la boîte de dialogue, cochez la case **Traduit** et sélectionnez **Mettre à jour**.
 
@@ -437,18 +437,18 @@ Lorsque le contenu est traduit pour une copie de langue existante, révisez les 
 Pour comparer des copies de langue au gabarit de langue :
 
 1. Dans la console Sites, accédez à la copie de langue à comparer.
-1. Ouvrez le [rail Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
+1. Ouvrez le [rail Références](/help/sites-cloud/authoring/basic-handling.md#references).
 1. Sous le titre **Copies**, sélectionnez **Copies de langue**.
 1. Sélectionnez votre copie de langue. Ensuite, vous pouvez cliquer sur **Comparer au gabarit** ou **Comparer au précédent**, le cas échéant.
 
    ![Comparer les copies de langue](../assets/language-copy-compare.png)
 
 1. Les deux pages (lancement et source) s’ouvrent côte à côte.
-   * Pour des informations complètes sur l’utilisation de cette fonction, consultez la section [Comparaison entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
+   * Pour des informations complètes sur l’utilisation de cette fonction, consultez la section [Comparaison entre les pages](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Déplacement ou modification du nom d’une page source {#move-source}
 
-Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie de langue basée sur le nouveau nom/emplacement de la page. L’ancienne copie dans la langue basée sur le nom et l’emplacement précédent sera toujours là.
+Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie de langue basée sur le nouveau nom/emplacement de la page. L’ancienne copie dans la langue basée sur le nom et l’emplacement précédent sera toujours là.
 
 Dans ce scénario, la bonne pratique consiste à procéder comme suit :
 

@@ -2,10 +2,10 @@
 title: En savoir plus sur les bases de la modélisation de contenu
 description: Découvrez les bases de la modélisation du contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Dans un modèle :
 1. **Types de données** vous permet de définir les attributs individuels.
 Par exemple, définissez le champ portant le nom d’un enseignant comme **Texte** et ses années de service comme **Nombre**.
 1. Les types de données **Référence de contenu** et **Référence du fragment** permettent de créer des relations avec d’autres contenus dans AEM.
-1. La variable **Référence de fragment** Le type de données vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Ceci est essentiel pour la modélisation de contenu.
+1. Le type de données **Référence du fragment** vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Ceci est essentiel pour la modélisation de contenu.
 
 Par exemple :
 
@@ -109,11 +109,11 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
 
 >[!NOTE]
 >
->Vous pouvez également créer des références improvisées à l’aide de liens dans des blocs de texte.
+>Vous pouvez également créer des références ad hoc à l’aide de liens dans des blocs de texte.
 
 ## Niveaux de structure (fragments imbriqués) {#levels-of-structure-nested-fragments}
 
-Pour la modélisation de contenu, le **Référence de fragment** type de données permet de créer plusieurs niveaux de structure et de relations.
+Pour la modélisation de contenu, le type de données **Référence de fragment** vous permet de créer plusieurs niveaux de structure et de relations.
 
 Ce référencement vous permet de *connecter* divers modèles de fragment de contenu pour représenter les interrelations. Il permet à l’application découplée de suivre les connexions et d’accéder au contenu si nécessaire.
 
@@ -130,7 +130,7 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble assez simple, mais une entreprise a à la fois un PDG et des employés....Et chaque élément d’entre eux est défini en tant que personne.
+Cela semble évident, bien sûr, mais une entreprise compte à la fois un PDG et des employés...Et chaque élément d’entre eux est défini en tant que personne.
 
 Et une personne peut recevoir une distinction (ou peut-être deux).
 
@@ -153,8 +153,8 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
    * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-* [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Concepts de création](/help/sites-cloud/authoring/author-publish.md)
 
-* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) – Cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la création de **Fragments de contenu** dans la console **Ressources**.
+* [Manipulation de base](/help/sites-cloud/authoring/basic-handling.md) – Cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la création de **Fragments de contenu** dans la console **Ressources**.
 
 * [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)

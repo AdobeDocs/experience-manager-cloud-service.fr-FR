@@ -4,7 +4,7 @@ description: Découvrez comment gérer les instances de workflow à l’aide de 
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 98%
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 La console de workflows fournit plusieurs outils permettant d’administrer les instances de workflow pour vérifier qu’elles s’exécutent comme prévu.
 
-Différentes consoles sont à votre disposition pour administrer les workflows. Utilisez la [navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) pour ouvrir le panneau **Outils**, puis sélectionnez **Workflows** :
+Différentes consoles sont à votre disposition pour administrer les workflows. Utilisez la [navigation globale](/help/sites-cloud/authoring/basic-handling.md#global-navigation) pour ouvrir le panneau **Outils**, puis sélectionnez **Workflows** :
 
 * **Modèles** : gérez les définitions des workflows
 * **Instances** : affichez et gérez l’exécution des instances de workflow.

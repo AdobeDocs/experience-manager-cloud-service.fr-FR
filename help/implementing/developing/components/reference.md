@@ -2,9 +2,9 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '3642'
+source-wordcount: '3481'
 ht-degree: 96%
 
 ---
@@ -64,7 +64,7 @@ Cette approche est compatible avec [HTL](https://experienceleague.adobe.com/docs
 Cette logique (facultative) peut être mise en œuvre de différentes manières et est appelée à partir de HTL avec des commandes spécifiques :
 
 * Utilisation de Java : [Use-API Java HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
-* Utiliser JavaScript  : [Use-API JavaScript HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=fr) permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript. Vous pouvez ainsi utiliser du code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+* Utilisation de JavaScript : [Le HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=fr) permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript. Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 * Utilisation de bibliothèques côté client : les sites web modernes sont très dépendants du traitement côté client effectué par du code JavaScript et CSS complexe. Pour plus d’informations, consultez le document [Utilisation de bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Structure des composants {#structure}
@@ -103,7 +103,7 @@ La définition d’un composant peut être décomposée comme suit :
 * **Nœud racine** :
    * `<mycomponent> (cq:Component)` – Nœud de hiérarchie du composant.
 * **Propriétés vitales** :
-   * `jcr:title` – Titre du composant, utilisé par exemple comme une étiquette lorsque le composant est répertorié dans le [navigateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) et la [console des composants](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:title` – Titre du composant, utilisé par exemple comme une étiquette lorsque le composant est répertorié dans le [navigateur de composants](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) et la [console des composants](/help/sites-cloud/authoring/components-console.md)
    * `jcr:description` – Description du composant affichée lorsque l’on place le curseur de la souris au-dessus dans le navigateur de composants et la console de composants
    * Voir la section [Icône de composant](#component-icon) pour plus de détails.
 * **Nœuds enfants essentiels** :
@@ -141,7 +141,7 @@ Si aucune des propriétés ci-dessus (`cq:icon.png`, `cq:icon`, `abbreviation` o
 
 Pour annuler l’héritage des icônes à partir de super-composants, la définition d’une propriété `abbreviation` vide sur le composant rétablit le comportement par défaut.
 
-La [console des composants](/help/sites-cloud/authoring/features/components-console.md#component-details) affiche la façon dont est définie l’icône d’un composant particulier.
+La [console des composants](/help/sites-cloud/authoring/components-console.md#component-details) affiche la façon dont est définie l’icône d’un composant particulier.
 
 #### Exemple d’icône SVG {#svg-icon-example}
 
@@ -166,7 +166,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
 | Nom | Type | Description |
 |---|---|---|
 | `.` | `cq:Component` | Ceci représente le composant actuel. Un composant possède le type de noeud `cq:Component`. |
-| `componentGroup` | `String` | Il s’agit du groupe sous lequel le composant peut être sélectionné dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Une valeur commençant par `.` est utilisée pour les composants qui ne peuvent pas être sélectionnés dans l’interface utilisateur, tels que les composants de base dont héritent d’autres composants. |
+| `componentGroup` | `String` | Il s’agit du groupe sous lequel le composant peut être sélectionné dans l’[explorateur de composants](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Une valeur commençant par `.` est utilisée pour les composants qui ne peuvent pas être sélectionnés dans l’interface utilisateur, tels que les composants de base dont héritent d’autres composants. |
 | `cq:isContainer` | `Boolean` | Cela indique si le composant est un composant de type « container » qui peut donc contenir d’autres composants, tels qu’un système de paragraphes. |
 | `cq:dialog` | `nt:unstructured` | Définition de la boîte de dialogue de modification du composant. |
 | `cq:design_dialog` | `nt:unstructured` | Définition de la boîte de dialogue de conception du composant. |
@@ -199,7 +199,7 @@ Les nœuds d’enfant d’un intérêt particulier sont les suivants :
 
 ### Boîtes de dialogue {#dialogs}
 
-Les boîtes de dialogue constituent un élément majeur de votre composant car elles fournissent une interface permettant aux auteurs de configurer le composant sur une page de contenu et de commenter ce composant. Voir la [documentation de création](/help/sites-cloud/authoring/fundamentals/editing-content.md) pour en savoir plus sur la façon dont les auteurs de contenu interagissent avec les composants.
+Les boîtes de dialogue constituent un élément majeur de votre composant car elles fournissent une interface permettant aux auteurs de configurer le composant sur une page de contenu et de commenter ce composant. Voir la [documentation de création](/help/sites-cloud/authoring/page-editor/edit-content.md) pour en savoir plus sur la façon dont les auteurs de contenu interagissent avec les composants.
 
 Selon la complexité du composant, votre boîte de dialogue peut nécessiter un ou plusieurs onglets.
 
@@ -221,9 +221,9 @@ Dans la boîte de dialogue, des champs individuels sont définis :
 
 ### Boîtes de dialogue de conception {#design-dialogs}
 
-Les boîtes de dialogue de conception sont similaires aux boîtes de dialogue utilisées pour modifier et configurer le contenu, mais elles fournissent une interface permettant aux auteurs de modèles de configurer et de fournir des détails de conception pour ce composant sur un modèle de page. Les modèles de page sont ensuite utilisés par les auteurs de contenu pour créer des pages de contenu. Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/features/templates.md) pour plus de détails sur la création des modèles.
+Les boîtes de dialogue de conception sont similaires aux boîtes de dialogue utilisées pour modifier et configurer le contenu, mais elles fournissent une interface permettant aux auteurs de modèles de configurer et de fournir des détails de conception pour ce composant sur un modèle de page. Les modèles de page sont ensuite utilisés par les auteurs de contenu pour créer des pages de contenu. Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/sites-console/templates.md) pour plus de détails sur la création des modèles.
 
-[Les boîtes de dialogue de création sont utilisées lors de la modification d’un modèle de page](/help/sites-cloud/authoring/features/templates.md), bien qu’elles ne soient pas nécessaires pour tous les composants. Par exemple, les composants **Titre** et **Image** ont tous deux des boîtes de dialogue de conception, contrairement au composant **Partage sur les réseaux sociaux**.
+[Les boîtes de dialogue de création sont utilisées lors de la modification d’un modèle de page](/help/sites-cloud/authoring/sites-console/templates.md), bien qu’elles ne soient pas nécessaires pour tous les composants. Par exemple, les composants **Titre** et **Image** ont tous deux des boîtes de dialogue de conception, contrairement au composant **Partage sur les réseaux sociaux**.
 
 ### IU Coral et IU Granite {#coral-and-granite}
 
@@ -278,7 +278,7 @@ Après avoir créé un composant, vous devez l’activer pour l’utiliser. Son 
 
 Une fois qu’un composant a été défini, il doit être disponible pour utilisation. Pour permettre l’utilisation d’un composant dans un modèle, vous devez activer ce composant dans les politiques du conteneur de disposition du modèle.
 
-Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/features/templates.md) pour plus de détails sur la création des modèles.
+Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/sites-console/templates.md) pour plus de détails sur la création des modèles.
 
 ### Composants et contenu qu’ils créent {#components-and-the-content-they-create}
 
@@ -469,7 +469,7 @@ Il suffit de placer un fichier `README.md` dans la structure du composant.
 
 ![README.md dans la structure de composants](assets/components-documentation.png)
 
-Ce Markdown est ensuite affiché dans la [console du composant](/help/sites-cloud/authoring/features/components-console.md).
+Ce Markdown est ensuite affiché dans la [console du composant](/help/sites-cloud/authoring/components-console.md).
 
 ![README.md visible dans la console de composants.](assets/components-documentation-console.png)
 

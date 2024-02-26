@@ -4,17 +4,17 @@ description: Une fois que l’administrateur système a configuré les ressource
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 93%
+source-wordcount: '576'
+ht-degree: 100%
 
 ---
 
 
 # Tâches utilisateur d’AEM {#aem-user-tasks}
 
-Dans cette partie facultative de la fonction [parcours d&#39;intégration,](overview.md) vous découvrez comment AEM utilisateurs peuvent accéder à AEM as a Cloud Service pour créer du contenu.
+Dans cette partie facultative du [parcours d’intégration](overview.md), vous découvrirez comment les utilisateurs AEM peuvent accéder à AEM as a Cloud Service pour créer du contenu.
 
 ## Un peu d’histoire… {#story-so-far}
 
@@ -52,7 +52,7 @@ En tant qu’auteur AEM, vous devez vous connecter à AEM pour commencer à cré
 
 1. Sélectionnez le programme approprié dans la page **Programmes et produits** de Cloud Manager pour lancer la page **Aperçu**. Demandez à votre administrateur système si vous n’êtes pas sûr du programme auquel vous devez accéder.
 
-1. Dans la **Présentation** dans Cloud Manager, cliquez sur le lien de création dans la **Environnements** carte.
+1. Sur la page **Aperçu** de Cloud Manager, cliquez sur le lien de création à partir de la vignette **Environnements**.
 
    ![Vignette Environnement](/help/journey-onboarding/assets/author-environ.png)
 
@@ -83,5 +83,5 @@ Si vous souhaitez découvrir comment les développeurs et les responsables de d�
 
 Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez aller au delà du contenu du parcours d’intégration.
 
-[Guide de démarrage rapide pour la création de pages](/help/sites-cloud/authoring/getting-started/quick-start.md) : commencez ici pour un aperçu rapide des principes de base de la création dans AEM.
+[Guide de démarrage rapide pour la création de pages](/help/sites-cloud/authoring/quick-start.md) : commencez ici pour un aperçu rapide des principes de base de la création dans AEM.
 [Parcours de création découplé](/help/journey-headless/author/overview.md) : si vous souhaitez créer du contenu découplé, suivez cette introduction guidée.

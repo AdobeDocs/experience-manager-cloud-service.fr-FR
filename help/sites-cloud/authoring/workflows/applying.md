@@ -2,7 +2,7 @@
 title: Appliquer des workflows aux pages
 description: Lors de la création, vous pouvez appeler des workflows pour agir sur vos pages. Il est également possible d’appliquer plusieurs workflows.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 83%
@@ -70,7 +70,7 @@ Vous pouvez démarrer un workflow à partir de la barre d’outils de la console
 
 Dans la **Chronologie**, vous pouvez démarrer un workflow à appliquer à la ressource sélectionnée.
 
-1. [Sélectionnez la ressource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) et ouvrez la [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (ou ouvrez la chronologie, puis sélectionnez la ressource).
+1. [Sélectionnez la ressource](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) et ouvrez la [Chronologie](/help/sites-cloud/authoring/basic-handling.md#timeline) (ou ouvrez la chronologie, puis sélectionnez la ressource).
 1. La pointe de la flèche située en regard du champ de commentaire peut être utilisée pour afficher **Démarrer le workflow** :
 
    ![Créer un workflow à partir de la chronologie](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -116,7 +116,7 @@ Indiquez les détails suivants :
 
 1. À l’étape **Domaine**, vous pouvez sélectionner :
 
-   * **Ajouter du contenu** pour ouvrir le [navigateur de chemin](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) et sélectionner des ressources supplémentaires ; lorsque vous vous trouvez dans le navigateur, sélectionnez **Sélectionner** pour ajouter le contenu à l’instance de workflow.
+   * **Ajouter du contenu** pour ouvrir le [navigateur de chemin](/help/sites-cloud/authoring/path-selection.md) et sélectionner des ressources supplémentaires ; lorsque vous vous trouvez dans le navigateur, sélectionnez **Sélectionner** pour ajouter le contenu à l’instance de workflow.
 
    * Une ressource existante pour afficher d’autres actions :
 

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1916'
 ht-degree: 99%
 
 ---
@@ -80,7 +80,7 @@ De nombreux éléments de l’interface utilisateur exploitables ou sur lesquels
 
 ### Raccourcis clavier dans [!DNL Assets] {#keyboard-shortcuts}
 
-Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier répertoriés. La plupart des raccourcis clavier qui s’appliquent aux consoles [!DNL Experience Manager] s’appliquent également à [!DNL Assets]. Voir la section [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Découvrez comment [activer ou désactiver les raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier répertoriés. La plupart des raccourcis clavier qui s’appliquent aux consoles [!DNL Experience Manager] s’appliquent également à [!DNL Assets]. Voir la section [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). Découvrez comment [activer ou désactiver les raccourcis clavier](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | Interface utilisateur ou scénario | Raccourci clavier | Action |
 |---|---|---|

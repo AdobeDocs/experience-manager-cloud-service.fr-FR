@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 97%
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 # Mode Développeur {#developer-mode}
 
-Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) sont disponibles, y compris le mode Développeur. Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations techniques sur la page en cours.
+Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) sont disponibles, y compris le mode Développeur. Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations techniques sur la page en cours.
 
 Deux onglets sont disponibles :
 
@@ -41,7 +41,7 @@ Le mode Développeur est implémenté sous la forme d’un panneau latéral dans
 
 Le panneau est divisé en deux onglets :
 
-* **[Composants](#components)** : il présente une arborescence de composants, similaire à l’[arborescence de contenu](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) pour les auteurs.
+* **[Composants](#components)** : il présente une arborescence de composants, similaire à l’[arborescence de contenu](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) pour les auteurs.
 * **[Erreurs](#errors)** : lorsque des problèmes se produisent, les détails sont affichés pour chaque composant.
 
 ### Onglet Composants {#components}
@@ -55,7 +55,7 @@ Il présente une arborescence de composants qui :
 * Permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, par exemple :
    * le chemin du référentiel ;
    * les liens vers les scripts (accessibles dans CRXDE Lite)
-   * Les informations sur le composant, comme indiqué dans la section [Console des composants](/help/sites-cloud/authoring/features/components-console.md)
+   * Les informations sur le composant, comme indiqué dans la section [Console des composants](/help/sites-cloud/authoring/components-console.md)
 * Les composants sélectionnés dans l’arborescence sont indiqués par une bordure bleue dans l’éditeur.
 
 Cet onglet de composants permet d’effectuer les opérations suivantes :
@@ -76,7 +76,7 @@ Chaque entrée de composant peut comporter les options suivantes :
 
 * **Modifier le script :** lien qui ouvre le script du composant dans CRXDE Lite.
 
-* **Afficher les détails du composant :** : affiche les informations sur le composant dans la [Console des composants](/help/sites-cloud/authoring/features/components-console.md).
+* **Afficher les détails du composant :** : affiche les informations sur le composant dans la [Console des composants](/help/sites-cloud/authoring/components-console.md).
 
 Le développement d’une entrée de composant en appuyant ou en cliquant sur le chevron peut également afficher :
 
