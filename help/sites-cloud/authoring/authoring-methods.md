@@ -2,7 +2,7 @@
 title: Méthodes de création de contenu dans AEM
 description: Découvrez les différentes manières de créer du contenu dans AEM et de les différencier.
 feature: Authoring
-source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Pour en savoir plus sur l’éditeur de fragments de contenu AEM, consultez les 
 
 >[!NOTE]
 >
->La variable *new* l’éditeur mis en évidence dans cette section n’est disponible que dans Adobe Experience Manager en ligne (AEM) as a Cloud Service.
+>La variable *new* l’éditeur surligné dans cette section n’est pas disponible lors du développement local pour AEM as a Cloud Service.
 >
 >La variable [*original* Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-variations.md) est également disponible.
 
@@ -61,11 +61,11 @@ Universal Editor est une interface utilisateur moderne qui vous permet de créer
 
 L’éditeur universel est accessible par le biais de la console Sites dans AEM, mais offre la puissance et la flexibilité agnostique du contenu pour créer non seulement votre contenu AEM, mais également du contenu externe correctement instrumenté.
 
-Pour en savoir plus sur Universal Editor, consultez le document [Création de contenu avec l’éditeur universel.](/help/implementing/universal-editor/authoring.md)
+Pour en savoir plus sur Universal Editor, consultez le document [Création de contenu avec l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## Création basée sur des documents {#document-based}
 
-Si vous utilisez les services de diffusion Edge, vous pouvez choisir de créer votre contenu en tant que documents conventionnels tels que Microsoft Word ou Google Docs entièrement en dehors de la console AEM.
+Si vous utilisez les services Edge Delivery, vous pouvez choisir de créer votre contenu en tant que documents conventionnels tels que Microsoft Word ou Google Docs entièrement en dehors de [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Modification de contenu basé sur un document](assets/authoring-methods-document.jpg)
 

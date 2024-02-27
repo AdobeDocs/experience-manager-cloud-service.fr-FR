@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 85%
+source-wordcount: '1936'
+ht-degree: 82%
 
 ---
 
@@ -39,8 +39,9 @@ Dans le cadre de votre utilisation d’Adobe Experience Manager (AEM) as a Cloud
 
 Selon votre emplacement, vous pouvez effectuer la publication :
 
-* [À partir de l’éditeur de page](#publishing-from-the-editor)
-* [À partir de la console Sites](#publishing-from-the-console)
+* [À partir de l’éditeur de page](#publishing-from-the-page-editor)
+* [Dans la ](#publishing-from-the-sites-console)
+* [À partir de l’éditeur universel](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 >
 > Pour les autres possibilités, reportez-vous à **Heure d’activation** et **Heure de désactivation** dans l’[onglet De base des propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
-### Publication à partir de l’éditeur {#publishing-from-the-editor}
+### Publication à partir de l’éditeur de page {#publishing-from-the-page-editor}
 
-Si vous modifiez une page, vous pouvez la publier directement à partir de l’éditeur.
+Si vous modifiez une page dans la variable [éditeur de page,](/help/sites-cloud/authoring/page-editor/introduction.md) il peut être publié directement à partir de l’éditeur.
 
 1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu, puis sélectionnez l’option **Publier la page**.
 
@@ -89,15 +90,15 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 >[!NOTE]
 >
->Une publication à partir de l’éditeur est dite superficielle ; en d’autres termes, seules la ou les pages sélectionnées sont publiées (les éventuelles pages enfants ne le sont pas).
+>La publication à partir de l’éditeur de page est une publication superficielle, c’est-à-dire que seule la ou les pages sélectionnées sont publiées et que les pages enfants ne le sont pas.
 
 >[!NOTE]
 >
 >Pages accessibles par [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) dans l’éditeur ne peut pas être publié. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
-### Publication à partir de la console {#publishing-from-the-console}
+### Publication à partir de la console Site {#publishing-from-the-sites-console}
 
-La console Sites propose deux options de publication :
+Dans le **Sites** La console propose deux options de publication :
 
 * [Publication rapide](#quick-publish)
 * [Gérer la publication](#manage-publication)

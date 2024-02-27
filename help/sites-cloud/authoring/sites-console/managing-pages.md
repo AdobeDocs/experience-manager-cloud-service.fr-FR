@@ -1,10 +1,10 @@
 ---
 title: Gestion des pages
 description: Découvrez comment gérer les pages de votre site web en AEM, notamment le déplacement, la copie et la suppression.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 68%
+source-wordcount: '1271'
+ht-degree: 65%
 
 ---
 
@@ -42,7 +42,9 @@ Après [créer une page](/help/sites-cloud/authoring/sites-console/creating-page
 
    ![Bouton Modifier](/help/sites-cloud/authoring/assets/edit.png)
 
-1. La page s’ouvre ; vous pouvez la [modifier](/help/sites-cloud/authoring/page-editor/edit-content.md) selon vos besoins.
+1. La page s’ouvre et vous pouvez la modifier selon vos besoins. Selon la manière dont la page sélectionnée a été créée, la variable **Modifier** ouvre l’éditeur approprié.
+   * [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) - Pour les pages créées avec l’éditeur de page AEM
+   * [Éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) - Pour les pages créées avec l’éditeur universel
 
 ## Copier et coller une page {#copying-and-pasting-a-page}
 
