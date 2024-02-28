@@ -1,13 +1,17 @@
 ---
-description: Ce tutoriel comprend toutes les informations relatives aux composants d’EDS.
-title: Composants de formulaire pris en charge dans le bloc de formulaire - Tutoriel du développeur
+title: Composants de formulaire du service de diffusion Edge AEM Forms
+description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des performances optimales, vous permet d’envisager l’avenir d’une collecte de données rationalisée et de l’engagement des utilisateurs. L’article répertorie tous les composants de formulaire disponibles prêts à l’emploi pour les formulaires EDD.
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 6%
+source-wordcount: '871'
+ht-degree: 5%
 
 ---
+
+
 
 
 # Composants de HTML pris en charge dans la diffusion Edge du bloc de formulaire
