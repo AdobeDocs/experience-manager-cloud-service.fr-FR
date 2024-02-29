@@ -2,12 +2,13 @@
 title: Accéder aux référentiels
 description: Découvrez comment accéder à votre référentiel Git et comment le gérer à l’aide de la gestion de compte Git en libre-service à partir de Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1b24fa084577f2ba0dc718ee35d12e42ac9d609c
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 94%
+source-wordcount: '270'
+ht-degree: 85%
 
 ---
+
 
 # Accéder aux référentiels {#accessing-repos}
 
@@ -23,7 +24,7 @@ Cloud Manager facilite la récupération des informations de votre référentie
 
    ![Bouton Accéder aux informations sur le référentiel de la vignette d’environnements](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Cliquez sur le bouton **Afficher les informations sur le référentiel** pour ouvrir une boîte de dialogue afin d’afficher :
+1. Cliquez sur le bouton **Afficher les informations sur le référentiel** pour ouvrir une boîte de dialogue affichant les éléments suivants :
 
    * L’URL vers le référentiel Git de Cloud Manager.
    * Le nom d’utilisateur Git.
@@ -40,3 +41,9 @@ L’option **Accéder aux informations sur le référentiel** est également dis
 >[!NOTE]
 >
 >L’option **Accéder aux informations sur le référentiel** est visible par les utilisateurs et utilisatrices possédant les rôles **Développeur** ou **Responsable de déploiement**.
+
+## Révocation d’un mot de passe d’accès {#revoke-password}
+
+Vous pouvez révoquer un mot de passe d’accès à tout moment. Pour ce faire, veuillez [créez un ticket d’assistance pour cette requête.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+
+Le ticket sera traité en priorité et doit être révoqué dans la journée.
