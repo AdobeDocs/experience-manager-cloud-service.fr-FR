@@ -4,15 +4,15 @@ description: Concevez des formes parfaites, vite ! ⚡ Création basée sur des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1120'
 ht-degree: 1%
 
 ---
 
 
-# Création d’un formulaire pour un site Edge Delivery Service (EDS)
+# Créer un formulaire pour un site de service de diffusion Edge (EDS)
 
 A l&#39;ère numérique actuelle, la création de formulaires conviviaux est essentielle pour toute entreprise. AEM Forms Edge Delivery permet de créer des formulaires à l’aide d’outils familiers tels que Word ou Google Docs.
 
@@ -79,7 +79,7 @@ Pour poursuivre la création du formulaire :
 
    ![renommer la feuille par défaut en &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Pour ajouter les champs du formulaire, insérez les lignes et les en-têtes de colonne dans la feuille &#39;shared-default&#39;. Chaque ligne doit représenter un champ de formulaire, avec les en-têtes de colonne définissant le champ correspondant [properties](/help/edge/docs/forms/eds-form-field-properties).
+1. Pour ajouter les champs du formulaire, insérez les lignes et les en-têtes de colonne dans la feuille &#39;shared-default&#39;. Chaque ligne doit représenter une [champ de formulaire](/help/edge/docs/forms/form-components.md), avec des en-têtes de colonne définissant le champ correspondant [properties](/help/edge/docs/forms/eds-form-field-properties).
 
    Pour un démarrage rapide, pensez à copier le contenu de la variable [Feuille de calcul de requête](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) dans votre feuille de calcul. Après avoir copié le contenu, enregistrez votre feuille de calcul.
 
@@ -153,6 +153,7 @@ Jusqu’à présent, vous avez ajouté le bloc de formulaire à votre projet EDS
 
 ## En savoir plus
 
+* [Composants de formulaire](/help/edge/docs/forms/form-components.md)
 * [Propriétés des champs de formulaire](/help/edge/docs/forms/eds-form-field-properties)
 * [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
 * [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)

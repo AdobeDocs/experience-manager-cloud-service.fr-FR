@@ -4,7 +4,7 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 1%
@@ -16,8 +16,6 @@ ht-degree: 1%
 
 Rationalisez la création de formulaires et augmentez les taux d’achèvement grâce au service de diffusion AEM Forms Edge d’Adobe. Ce service puissant et composable vous permet de créer des formulaires d’entreprise avec des performances exceptionnelles et un attrait visuel exceptionnel. AEM donne la priorité à l’expérience utilisateur et à vos objectifs professionnels, en assurant des temps de chargement rapides et en augmentant les remplissages de formulaires.
 
-![Fonctionnalités clés d’EDS Forms](/help/edge/assets/eds-forms-key-features.png){width="70%"}
-
 Vous pouvez utiliser le service pour effectuer les opérations suivantes :
 
 * **Utilisateurs Captivate avec des formulaires époustouflants**: créez facilement des formulaires complexes et attrayants à l’aide d’une bibliothèque de composants prédéfinis. Intégrez facilement reCAPTCHA, envoyez des formulaires directement par e-mail et autorisez des téléchargements de fichiers transparents pour des solutions de stockage sécurisées telles que Sharepoint, Azure Storage et Amazon S3. Créez même vos propres composants de formulaires personnalisés pour donner vie à votre vision unique.
@@ -26,6 +24,7 @@ Vous pouvez utiliser le service pour effectuer les opérations suivantes :
 
 * **Créer des formulaires avec un score Lighthouse parfait**: créez des formulaires qui se chargent et s’affichent rapidement, même avec des connexions Internet lentes. Des temps de chargement plus rapides et une expérience utilisateur optimisée contribuent à des taux d’achèvement de formulaire plus élevés et à de meilleurs taux de conversion.
 
+  <img src="/help/edge/assets/eds-forms-key-features.png" alt="Fonctionnalités clés d’EDS Forms" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
 
 <!-- >
 * **Captivate users with stunning forms**: 
