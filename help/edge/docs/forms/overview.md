@@ -4,39 +4,27 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 6%
+source-wordcount: '419'
+ht-degree: 1%
 
 ---
 
 
-# Service de diffusion Edge AEM Forms {#aem-forms-edge-delivery-service-overview}
+# Service de diffusion Edge AEM Forms
 
+AEM Forms Edge Delivery Service est un service composable proposé par Adobe qui vous permet de créer et de diffuser des formulaires web à fort impact et performants.
 
-<div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
-        <main class="content">
-            <section class="content-section">
-                <p style="line-height: 1.5;">AEM Forms Edge Delivery Service est un service composable proposé par Adobe qui vous permet de créer et de diffuser des formulaires web à fort impact et performants. Vous pouvez utiliser le service pour effectuer les opérations suivantes :</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Utilisateurs Captivate avec des formulaires époustouflants</h2>
-                <img src="/help/edge/assets/enrollment-form.png" alt="Formulaire d’inscription" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">Créez facilement des formulaires complexes et attrayants à l’aide d’une bibliothèque de composants prédéfinis. Intégrez facilement reCAPTCHA, envoyez des formulaires directement par e-mail et autorisez des téléchargements de fichiers transparents pour des solutions de stockage sécurisées telles que Sharepoint, Azure Storage et Amazon S3. Créez même vos propres composants de formulaires personnalisés pour donner vie à votre vision unique.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Créer des formulaires avec un score parfait pour Lightouse</h2>
-                <img src="/help/edge/assets/lighthouse-forms.png" alt="score de phare parfait pour vos formulaires" style="float: right; margin: 20px 0 0 20px; width: 30%;">
-                <p style="line-height: 1.5;"> Créez des formulaires qui se chargent et s’affichent rapidement, même avec des connexions Internet lentes. Des temps de chargement plus rapides et une expérience utilisateur optimisée contribuent à des taux d’achèvement de formulaire plus élevés et à de meilleurs taux de conversion.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Créer des expériences d’inscription numérique avec les outils de votre choix</h2>
-                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Formulaire d’inscription" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">Augmenter l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser nativement les instances de création AEM et la création basée sur des documents. Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou AEM Editors.</p>
-            </section>
-        </main>
-    </div>
+![Fonctionnalités clés d’EDS Forms](/help/edge/assets/eds-forms-key-features.png)
+
+Vous pouvez utiliser le service pour effectuer les opérations suivantes :
+
+* **Utilisateurs Captivate avec des formulaires époustouflants**: créez facilement des formulaires complexes et attrayants à l’aide d’une bibliothèque de composants prédéfinis. Intégrez facilement reCAPTCHA, envoyez des formulaires directement par e-mail et autorisez des téléchargements de fichiers transparents pour des solutions de stockage sécurisées telles que Sharepoint, Azure Storage et Amazon S3. Créez même vos propres composants de formulaires personnalisés pour donner vie à votre vision unique.
+
+* **Créer des expériences d’inscription numérique avec les outils de votre choix**: augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur des documents (Microsoft 365 et Google Workspace) et AEM la création (AEM Editors). Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou Adaptive Forms Editor.
+
+* **Créer des formulaires avec un score Lighthouse parfait**: créez des formulaires qui se chargent et s’affichent rapidement, même avec des connexions Internet lentes. Des temps de chargement plus rapides et une expérience utilisateur optimisée contribuent à des taux d’achèvement de formulaire plus élevés et à de meilleurs taux de conversion.
 
 
 <!-- >
@@ -66,7 +54,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
 
     -->
 
-## Commencer par les principes de base
+## Commencer à créer des formulaires
 
 <div>
 
