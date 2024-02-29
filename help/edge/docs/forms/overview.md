@@ -4,9 +4,9 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
+source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 # Service de diffusion Edge AEM Forms
 
-AEM Forms Edge Delivery Service est un service composable proposé par Adobe qui vous permet de créer et de diffuser des formulaires web à fort impact et performants.
+Rationalisez la création de formulaires et augmentez les taux d’achèvement grâce au service de diffusion AEM Forms Edge d’Adobe. Ce service puissant et composable vous permet de créer des formulaires d’entreprise avec des performances exceptionnelles et un attrait visuel exceptionnel. AEM donne la priorité à l’expérience utilisateur et à vos objectifs professionnels, en assurant des temps de chargement rapides et en augmentant les remplissages de formulaires.
 
-![Fonctionnalités clés d’EDS Forms](/help/edge/assets/eds-forms-key-features.png)
+![Fonctionnalités clés d’EDS Forms](/help/edge/assets/eds-forms-key-features.png){width="70%"}
 
 Vous pouvez utiliser le service pour effectuer les opérations suivantes :
 
