@@ -4,9 +4,9 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 5%
 
 ---
@@ -57,8 +57,8 @@ Les propriétés suivantes sont prises en charge pour les composants de formulai
    </td>
   </tr>
       <tr>
-   <td>Espace réservé</td>
-   <td>Texte, Recherche, URL, Tel, Adresse électronique, Mot de passe et Numéro</td>
+   <td>Description</td>
+   <td>Applicable à tous les champs</td>
    <td> L’attribut d’espace réservé fournit un bref indice à l’utilisateur sur le type d’informations attendu dans le champ.
    </td>
   </tr>

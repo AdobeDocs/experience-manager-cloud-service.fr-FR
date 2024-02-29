@@ -4,9 +4,9 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 AEM Forms Edge Delivery comprend un bloc de formulaire. Le bloc de formulaire vous permet de créer facilement des formulaires pour capturer et stocker des données capturées.
 
-Le bloc Formulaire prend en charge les composants HTML 5 (texte, courrier électronique, numéro, date, etc.). Il prend également en charge les éléments de zone de texte, de sélection et d’ensemble de champs. Il comprend également des fonctions de validation d’entrée natives de HTML-5. Le bloc de formulaire crée une structure de HTML uniforme pour tous les types de champs et conteneurs, assurant ainsi la cohérence. Vous pouvez également [style des types de champ](https://adobe-rnd.github.io/form-block/customization/styling_form) en utilisant la variable `form.css` fichier .
+Le bloc Formulaire prend en charge les composants HTML-5 prêts à l’emploi tels que le texte, l’email, le numéro, la date, etc. Il prend également en charge les éléments de zone de texte, de sélection et d’ensemble de champs. Il comprend également des fonctions de validation d’entrée natives de HTML-5. Le bloc de formulaire crée une structure de HTML uniforme pour tous les types de champs et conteneurs, assurant ainsi la cohérence. Vous pouvez également [style des types de champ](https://adobe-rnd.github.io/form-block/customization/styling_form) en utilisant la variable `form.css` fichier .
 
 ## Types d’entrée de HTML 5 pris en charge dans le bloc de formulaire
 
