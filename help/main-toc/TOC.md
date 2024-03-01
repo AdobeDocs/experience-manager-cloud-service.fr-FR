@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
+source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4751'
 ht-degree: 95%
 
 ---
@@ -781,8 +781,8 @@ ht-degree: 95%
    + [PWA Studio dans Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migration](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services {#edge-delivery}
-   + [AEM et Edge Delivery Services](/help/edge/overview.md)
++ AEM avec des Edge Delivery Services {#edge-delivery}
+   + [Prise en main des Edge Delivery Services](/help/edge/overview.md)
    + [Utiliser Edge Delivery](/help/edge/using.md)
    + [Guide de prise en main du développeur](/help/edge/edge-dev-getting-started.md)
    + [Créer du contenu pour Edge Delivery](/help/edge/authoring.md)
