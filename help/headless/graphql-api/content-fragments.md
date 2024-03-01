@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 89%
+source-wordcount: '5135'
+ht-degree: 87%
 
 ---
 
@@ -1125,6 +1125,31 @@ Pour vous protéger contre les problèmes potentiels, vos requêtes sont soumise
 * La requête ne peut pas contenir plus de 1M (1 024 x 1 024) caractères
 * La requête ne peut pas contenir plus de 15 000 jetons
 * La requête ne peut pas contenir plus de 200000 jetons d’espace blanc
+
+Vous devez également savoir :
+
+* Une erreur de conflit de champ sera renvoyée lorsque votre requête GraphQL contient des champs portant le même nom dans deux modèles (ou plus) :
+
+   * Où :
+
+      * Deux (ou plusieurs modèles) sont utilisés comme références possibles, lorsqu’ils sont définis comme étant autorisés. **Type de modèle** dans la référence Fragment de contenu.
+
+     et :
+
+      * Ces deux modèles ont des champs ayant un nom commun ; cela signifie que le même nom apparaît dans les deux modèles.
+
+     et
+
+      * Ces champs sont de différents types de données.
+
+   * Par exemple :
+
+      * Lorsque deux fragments (ou plus) avec des modèles différents (par exemple, `M1`, `M2`) sont utilisées comme références possibles (référence de contenu ou référence de fragment) à partir d’un autre fragment ; par exemple, `Fragment1` `MultiField/List`
+      * Et ces deux fragments avec des modèles différents (`M1`, `M2`) comportent des champs portant le même nom, mais avec des types différents.
+Illustration :
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * Une erreur de conflit de champ se produira si la requête GraphQL contient le paramètre `Title` champ .
 
 ## FAQ {#faqs}
 

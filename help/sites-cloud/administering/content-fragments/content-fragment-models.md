@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
 workflow-type: tm+mt
-source-wordcount: '3125'
-ht-degree: 60%
+source-wordcount: '3209'
+ht-degree: 58%
 
 ---
 
@@ -43,6 +43,12 @@ Vous pouvez également définir différentes propriétés ; par exemple, ajouter
    ![Titre et description](assets/cf-cfmodels-create.png)
 
 1. Utilisez **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ou **Terminé** pour revenir à la console.
+
+>[!CAUTION]
+>
+>Si vous interrogez plusieurs fragments référencés, il n’est pas recommandé que les différents modèles de fragments portent des noms de champ portant le même nom, mais des types différents.
+>
+>Pour plus d’informations, voir [API GraphQL AEM à utiliser avec des fragments de contenu - Limites](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Modèle de fragment de contenu – Propriétés {#content-fragment-model-properties}
 
@@ -290,6 +296,12 @@ AEM dispose d’une protection de périodicité pour :
 * Références de contenu Cela empêche l’utilisateur d’ajouter une référence au fragment actif et peut entraîner une boîte de dialogue de sélecteur de référence de fragment vide.
 >
 * Références de fragment dans GraphQL Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie null à la première occurrence.
+
+>[!CAUTION]
+>
+Si vous interrogez plusieurs fragments référencés, il n’est pas recommandé que les différents modèles de fragments portent des noms de champ portant le même nom, mais des types différents.
+>
+Pour plus d’informations, voir [API GraphQL AEM à utiliser avec des fragments de contenu - Limites](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Référence de contenu {#content-reference}
 
