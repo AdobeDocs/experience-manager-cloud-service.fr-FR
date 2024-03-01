@@ -2,10 +2,10 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Découvrez les tâches de maintenance dans AEM as a Cloud Service et comment les configurer.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4b6f1233b8b21c511b9495151d812e4ededfce11
+source-git-commit: af690ee4c1c0c13bffa179c68423993361385a45
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 84%
+source-wordcount: '1123'
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ Les tâches de maintenance sont des processus qui s’exécutent selon un calend
 
 ## Configuration des tâches de maintenance {#maintenance-tasks-configuring}
 
-Dans les versions précédentes d’AEM, vous pouviez configurer les tâches de maintenance à l’aide de la carte de maintenance (Outils > Opérations > Maintenance). Dans AEM as a Cloud Service, la carte de maintenance n’est plus disponible. Les configurations doivent donc être validées pour le contrôle source et déployées à l’aide de Cloud Manager. Adobe gère les tâches de maintenance dont les paramètres ne peuvent pas être configurés par les clients (par exemple, la récupération de l’espace mémoire du magasin de données, la purge du journal d’audit, la purge des versions). D’autres tâches de maintenance peuvent être configurées par les clients, comme décrit dans le tableau ci-dessous.
+Dans les versions précédentes d’AEM, vous pouviez configurer les tâches de maintenance à l’aide de la carte de maintenance (Outils > Opérations > Maintenance). Dans AEM as a Cloud Service, la carte de maintenance n’est plus disponible. Les configurations doivent donc être validées pour le contrôle source et déployées à l’aide de Cloud Manager. Adobe gère les tâches de maintenance dont les paramètres ne peuvent pas être configurés par les clients (par exemple, le nettoyage de la mémoire d’entrepôt de données). D’autres tâches de maintenance peuvent être configurées par les clients, comme décrit dans le tableau ci-dessous.
 
 >[!CAUTION]
 >
