@@ -4,9 +4,9 @@ description: Personnalisation du thème et du style d’un formulaire de service
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Style des champs de formulaire
 
-Forms est essentiel pour les interactions utilisateur sur les sites web, ce qui leur permet de saisir des données. Ce guide décrit les principes de base de la mise en forme de divers champs de formulaire dans le [Bloc de formulaire](/help/edge/docs/forms/create-forms.md), vous aidant à créer des formulaires visuellement attrayants et conviviaux.
+Forms est essentiel pour les interactions utilisateur sur les sites web, ce qui leur permet de saisir des données. Ce guide décrit les principes de base de la mise en forme de divers champs de formulaire dans le [Bloc de formulaire adaptatif](/help/edge/docs/forms/create-forms.md), vous aidant à créer des formulaires visuellement attrayants et conviviaux.
 
 ## Présentation des types de champ de formulaire
 
-Avant de passer à la mise en forme, examinons les types de champ de formulaire courants pris en charge par le bloc de formulaire :
+Avant de passer à la mise en forme, examinons les types de champs de formulaire courants pris en charge par le bloc Formulaire adaptatif :
 
 * Input Fields : ces champs incluent des entrées de texte, des entrées d’e-mail, des entrées de mot de passe, etc.
 * Groupes de cases à cocher : utilisés pour sélectionner plusieurs options.
@@ -35,7 +35,7 @@ Il est essentiel de comprendre les concepts CSS fondamentaux avant de mettre en 
 * Modèle de zone : le modèle de zone CSS décrit la structure des éléments de HTML sous la forme d’une zone de contenu entourée de marge intérieure, de bordures et de marges.
 * Flexbox/Grid : les mises en page Flexbox et Grille CSS sont des outils puissants pour créer des conceptions réactives et flexibles.
 
-## Style d’un formulaire pour un bloc de formulaire
+## Style d’un formulaire pour un bloc de formulaire adaptatif
 
 Le bloc de formulaire offre une structure de HTML normalisée, ce qui simplifie le processus de sélection et de mise en forme des composants de formulaire :
 
