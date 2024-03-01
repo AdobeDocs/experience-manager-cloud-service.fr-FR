@@ -1,12 +1,12 @@
 ---
-title: Configuration de la page de remerciement pour EDS Forms
-description: Découvrez comment configurer les pages de remerciement et la redirection pour EDS Forms afin d’optimiser l’expérience utilisateur et de rationaliser les parcours utilisateur.
+title: Configuration d’une page de remerciement ou d’un formulaire de redirection après envoi
+description: Découvrez comment configurer les pages de remerciement et la redirection pour le bloc Forms afin d’optimiser l’expérience utilisateur et de rationaliser les parcours utilisateur.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
+source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '608'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Une fois qu’un utilisateur a envoyé un formulaire, il est essentiel de fourni
 Dans le bloc Forms adaptatif, le comportement par défaut est d’afficher une page de remerciement. Vous avez toutefois la possibilité de personnaliser cette expérience en fonction de vos besoins spécifiques. Les options incluent :
 
 * [Configuration de la page de remerciement et du message pour vous aligner sur vos objectifs en matière de marque et de communication](#configuring-the-thank-you-page-and-message)
-* [Redirection des utilisateurs vers une autre page après envoi](#redirect-users-to-another-page-post-submission), en améliorant davantage leur parcours
+* [Redirection des utilisateurs vers une autre page après envoi pour effectuer d’autres actions](#redirect-users-to-another-page-post-submission)
 
 ## Configuration de la page de remerciement et du message
 
@@ -43,10 +43,10 @@ Votre bloc Forms adaptatif affiche la page de remerciement lors de l’envoi du 
 
 Par défaut, le bloc Forms adaptatif redirige les utilisateurs vers la page de remerciement. Pour rediriger les utilisateurs vers une page autre que la page de remerciement par défaut, deux options s’offrent à vous :
 
-* soit remplacer la page &quot;Merci&quot; existante par une autre page, soit
-* redirigez la page &quot;thankyou&quot; vers une autre page de votre choix.
+* [Remplacez la page &quot;Merci&quot; par une autre page.](#replace-the-existing-thankyou-page)
+* [Utiliser les redirections de site web pour la redirection de page &quot;Merci&quot;](#use-website-redirects-for-thankyou-page-redirection)
 
-### Remplacez la page &quot;Merci&quot; existante.
+### Remplacez la page &quot;Merci&quot;.
 
 1. Ouvrez le[Projet EDS]/blocks/form/form.js&quot; pour modification.
 1. Modifiez la variable `thankyou` dans la ligne suivante à la page de votre choix :
@@ -70,9 +70,15 @@ Par défaut, le bloc Forms adaptatif redirige les utilisateurs vers la page de r
 1. Assurez-vous que la page existe dans votre dossier de projet EDS et publiez-la.
 
 
-### Utilisation des redirections de site web
+### Utiliser les redirections de site web pour la redirection de page &quot;Merci&quot;
 
-Configurez une redirection de site web pour rediriger la page &quot;Merci&quot; vers une autre page. Voir [Documentation sur les redirections](https://www.aem.live/docs/redirects) pour obtenir des instructions détaillées.
+La redirection d’un utilisateur vers une autre page après l’envoi du formulaire peut améliorer l’expérience utilisateur en fournissant des informations pertinentes, en confirmant les actions et en guidant les utilisateurs vers les résultats souhaités. Par exemple,
+
+* une fois qu’un utilisateur a rempli un formulaire d’achat, il est redirigé vers une page de paiement pour terminer la transaction en toute sécurité.
+* lors de l’envoi d’un formulaire d’enregistrement pour un événement ou un webinaire, les utilisateurs sont redirigés vers une page de confirmation qui affiche les détails de l’événement, tels que la date, l’heure et l’emplacement.
+
+Pour rediriger la page &quot;Merci&quot; vers une autre page, utilisez la méthode [redirections de site web](https://www.aem.live/docs/redirects) feuille de calcul.
+
 
 ## En savoir plus
 
