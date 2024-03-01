@@ -4,9 +4,9 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '3774'
+source-wordcount: '3769'
 ht-degree: 92%
 
 ---
@@ -105,7 +105,7 @@ Vous pouvez accéder au gestionnaire de packages de trois façons :
 
 Le gestionnaire de packages est divisé en quatre zones fonctionnelles principales :
 
-* **Panneau de navigation gauche** - Ce panneau vous permet de filtrer et de trier la liste des packages.
+* **Panneau de navigation de gauche** - Ce panneau vous permet de filtrer et de trier la liste des packages.
 * **Liste de packages** - Il s’agit de la liste des packages de votre instance, filtrée et triée selon les sélections effectuées dans le panneau de navigation de gauche.
 * **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de packages, comme lorsqu’un package est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
    * **Effacer le journal**
@@ -387,7 +387,7 @@ Les packages pouvant modifier le contenu existant, il est souvent utile de valid
 
 Le gestionnaire de packages peut effectuer les validations suivantes :
 
-* [Importations de packages OSGi](#osgi-package-imports)
+* [Imports de packages OSGi](#osgi-package-imports)
 * [Recouvrements](#overlays)
 * [ACL](#acls)
 
@@ -612,4 +612,4 @@ Les packages AEM peuvent être utilisés pour créer et partager du contenu dans
 
 [Distribution logicielle](https://downloads.experiencecloud.adobe.com) fournit des packages AEM à utiliser sur le SDK AEM de développement local. Les packages AEM fournis sur la distribution logicielle ne doivent pas être installés sur les environnements cloud AEMaaCS, sauf approbation expresse de l’assistance clientèle Adobe.
 
-Pour plus d’informations, reportez-vous à la [Documentation sur la distribution logicielle](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr).
+Pour plus d’informations, voir la section [Distribution logicielle .](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
