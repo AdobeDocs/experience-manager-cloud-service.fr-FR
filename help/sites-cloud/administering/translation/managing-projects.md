@@ -4,10 +4,10 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: ae500923bac34689a28b9ff0bc78586f725829de
 workflow-type: tm+mt
-source-wordcount: '3960'
-ht-degree: 85%
+source-wordcount: '4011'
+ht-degree: 84%
 
 ---
 
@@ -448,14 +448,26 @@ Pour comparer des copies de langue au gabarit de langue :
 
 ## Déplacement ou modification du nom d’une page source {#move-source}
 
-Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie de langue basée sur le nouveau nom/emplacement de la page. L’ancienne copie dans la langue basée sur le nom et l’emplacement précédent sera toujours là.
+Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), la traduction de la page une fois le déplacement effectué crée une copie de langue basée sur le nouveau nom/emplacement de la page. L’ancienne copie de langue basée sur le nom/l’emplacement précédent est toujours là. Pour éviter cela, vous pouvez utiliser la fonctionnalité de mise à jour de la copie de langue après le déplacement :
 
-Dans ce scénario, la bonne pratique consiste à procéder comme suit :
+1. Déplacez une page qui comporte une copie de langue.
+1. Sélectionnez la racine de la copie de langue.
+1. Ouvrez le panneau **Références**.
+1. Sélectionnez **Copies de langue**.
+1. Sélectionnez les langues cibles à mettre à jour.
+1. Sélectionnez **Mettre à jour les copies de langue**.
 
-1. Annulez la publication des copies dans la langue associées à la page source que vous souhaitez déplacer.
-1. Supprimez-les.
-1. Créez de nouvelles copies dans la langue à partir de la page source nouvellement déplacée.
-1. Publiez les copies de langue créées.
+   ![update-language-copies](../assets/translation-move-to.png)
+
+1. Cliquez sur **Mettre à jour**. Un [lancement](/help/sites-cloud/authoring/launches/promoting.md) est créé.
+1. Accédez à la racine de langue requise et sélectionnez-la.
+1. Dans le panneau **Références**, sélectionnez **Lancements**.
+
+   ![promote-launch-translation](../assets/promote-launch-translation.png)
+
+1. Cliquez sur le lancement qui a été créé, puis sur **Convertir le lancement**.
+
+Désormais, la page source a été déplacée et la copie de langue associée.
 
 ## Importation et exportation de tâches de traduction {#import-export}
 
