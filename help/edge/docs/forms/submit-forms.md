@@ -4,9 +4,9 @@ description: Créez des formulaires puissants plus rapidement à l’aide de feu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,10 @@ ht-degree: 1%
 
 # Préparation de votre feuille de calcul pour l’acceptation des données
 
+![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données.
+
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -43,6 +46,7 @@ Pour activer la feuille de calcul :
 
 
 Une fois que les noms de champ sont ajoutés au `incoming` , votre formulaire devient prêt à accepter les envois. Vous pouvez prévisualiser le formulaire et envoyer les données à la feuille à l’aide de celui-ci.
+
 
 Vous constatez également les modifications suivantes dans votre feuille de calcul :
 

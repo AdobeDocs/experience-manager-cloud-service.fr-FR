@@ -4,7 +4,7 @@ description: Concevez des formes parfaites, vite ! ⚡ Création basée sur des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 1%
@@ -18,7 +18,7 @@ A l&#39;ère numérique actuelle, la création de formulaires conviviaux est ess
 
 Ces formulaires envoient directement des données à un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser un écosystème dynamique et des API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou lancer un processus d’entreprise existant.
 
-![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow.png)
+![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 AEM Forms Edge Delivery fournit un bloc, appelé Bloc de formulaire adaptatif, qui vous permet de créer facilement des formulaires pour capturer et stocker les données capturées. Vous pouvez inclure le bloc de formulaire adaptatif dans votre projet AEM EDS pour commencer à créer un formulaire. C’est parti !
 

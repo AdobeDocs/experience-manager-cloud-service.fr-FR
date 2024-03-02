@@ -4,9 +4,9 @@ description: Publication d’un formulaire AEM Forms Edge Delivery Services
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '557'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 1%
 # Publier le formulaire
 
 Une fois que vous êtes prêt à partager votre formulaire avec vos clients pour la collecte ou l’envoi de données, vous pouvez simplement le publier, ce qui rend le formulaire facilement disponible pour que vos clients l’utilisent.
+
+![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## Prérequis
 
