@@ -1,12 +1,12 @@
 ---
 title: Préparation de votre feuille de calcul pour l’acceptation des données
-description: Créez des formulaires puissants plus rapidement à l’aide des feuilles de calcul et des champs de bloc de formulaire.
+description: Créez des formulaires puissants plus rapidement à l’aide de feuilles de calcul et de champs de bloc de formulaire adaptatif !
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '997'
 ht-degree: 1%
 
 ---

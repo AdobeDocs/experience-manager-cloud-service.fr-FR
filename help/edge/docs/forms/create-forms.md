@@ -4,7 +4,7 @@ description: Concevez des formes parfaites, vite ! ⚡ Création basée sur des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 68b60d33e6ccfe27452cfea76603e4d7d29f0c6e
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 1%
@@ -18,7 +18,7 @@ A l&#39;ère numérique actuelle, la création de formulaires conviviaux est ess
 
 Ces formulaires envoient directement des données à un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser un écosystème dynamique et des API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou lancer un processus d’entreprise existant.
 
-![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring.png)
+![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow.png)
 
 AEM Forms Edge Delivery fournit un bloc, appelé Bloc de formulaire adaptatif, qui vous permet de créer facilement des formulaires pour capturer et stocker les données capturées. Vous pouvez inclure le bloc de formulaire adaptatif dans votre projet AEM EDS pour commencer à créer un formulaire. C’est parti !
 
@@ -34,17 +34,17 @@ Avant de commencer, vérifiez que vous avez suivi les étapes suivantes :
 
 ## Création d’un formulaire
 
-+++ Étape 1 : ajoutez le bloc Formulaire adaptatif à votre projet Edge Delivery Service (EDS).
++++ Étape 1 : ajoutez le bloc de formulaire adaptatif à votre projet Edge Delivery Service (EDS).
 
-L’outil adaptatif permet aux utilisateurs de créer des formulaires pour un site de service de diffusion Edge. Cependant, ce bloc n’est pas inclus dans le standard d’AEM par défaut (utilisé pour créer un projet de service de diffusion Edge). Pour intégrer de manière transparente le bloc Formulaire adaptatif à votre projet de service de diffusion Edge :
+L’outil adaptatif permet aux utilisateurs de créer des formulaires pour un site de service de diffusion Edge. Cependant, ce bloc n’est pas inclus dans le standard d’AEM par défaut (utilisé pour créer un projet de service de diffusion Edge). Pour intégrer de manière transparente le bloc de formulaire adaptatif à votre projet de service de diffusion Edge :
 
-1. **Cloner le référentiel de bloc de formulaire adaptatif**: clonez la variable [Référentiel de bloc de formulaire adaptatif](https://github.com/adobe/afb) sur votre ordinateur local. Il contient le code permettant d’effectuer le rendu du formulaire sur une page web EDS. Dans ce document, le dossier local de votre référentiel de bloc Forms est appelé `[Adaptive Form block repository]`.
-1. **Recherchez le bloc de formulaire adaptatif Repository :** Accédez au [Référentiel de bloc de formulaire adaptatif]/block sur votre ordinateur local et copiez le dossier `form` dossier.
-1. **Collez le bloc Formulaire adaptatif dans votre projet EDS :**
+1. **Clonage du référentiel de bloc de formulaire adaptatif**: clonez la variable [Référentiel de bloc de formulaire adaptatif](https://github.com/adobe/afb) sur votre ordinateur local. Il contient le code permettant d’effectuer le rendu du formulaire sur une page web EDS. Dans ce document, le dossier local de votre référentiel de bloc Forms est appelé `[Adaptive Form Block repository]`.
+1. **Localisez le référentiel de bloc de formulaire adaptatif :** Accédez au [Référentiel de bloc de formulaire adaptatif]/block sur votre ordinateur local et copiez le dossier `form` dossier.
+1. **Collez le bloc de formulaire adaptatif dans votre projet EDS :**
 Accédez au [Référentiel de projet EDS]/block/ sur votre ordinateur local et collez le dossier du formulaire.
 1. **Validez les modifications apportées à GitHub :** Archivez le dossier de formulaire et ses fichiers sous-jacents à votre projet de service de diffusion Edge sur GitHub.
 
-Une fois ces étapes terminées, le bloc Formulaire adaptatif est ajouté au référentiel de projet du service de diffusion Edge (EDS) sur GitHub. Vous pouvez désormais créer et ajouter des formulaires à une page de sites EDS.
+Une fois ces étapes terminées, le bloc de formulaire adaptatif est ajouté au référentiel de projet du service de diffusion Edge (EDS) sur GitHub. Vous pouvez désormais créer et ajouter des formulaires à une page de sites EDS.
 
 
 **Résolution des problèmes de génération GitHub**
@@ -113,7 +113,7 @@ Pour poursuivre la création du formulaire :
 +++ Étape 3 : prévisualisez le formulaire à l’aide de votre page Edge Delivery Service (EDS).
 
 
-Jusqu’à présent, vous avez ajouté le bloc Formulaire adaptatif à votre projet EDS et préparé la structure du formulaire. Maintenant, pour prévisualiser le formulaire :
+Jusqu’à présent, vous avez ajouté le bloc de formulaire adaptatif à votre projet EDS et préparé la structure du formulaire. Maintenant, pour prévisualiser le formulaire :
 
 1. **Accédez au répertoire de votre projet :** Ouvrez votre compte Microsoft SharePoint ou Google Drive et accédez au répertoire de votre projet Edge Delivery AEM.
 

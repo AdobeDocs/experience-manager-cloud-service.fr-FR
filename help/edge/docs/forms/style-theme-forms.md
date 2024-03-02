@@ -4,9 +4,9 @@ description: Personnalisation du thème et du style d’un formulaire de service
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Forms est essentiel pour les interactions utilisateur sur les sites web, ce qui 
 
 ## Présentation des types de champ de formulaire
 
-Avant de passer à la mise en forme, examinons les types de champs de formulaire courants pris en charge par le bloc Formulaire adaptatif :
+Avant de passer à la mise en forme, examinons les types de champ de formulaire courants pris en charge par le bloc de formulaire adaptatif :
 
 * Input Fields : ces champs incluent des entrées de texte, des entrées d’e-mail, des entrées de mot de passe, etc.
 * Groupes de cases à cocher : utilisés pour sélectionner plusieurs options.
@@ -37,9 +37,9 @@ Il est essentiel de comprendre les concepts CSS fondamentaux avant de mettre en 
 
 ## Style d’un formulaire pour un bloc de formulaire adaptatif
 
-Le bloc de formulaire offre une structure de HTML normalisée, ce qui simplifie le processus de sélection et de mise en forme des composants de formulaire :
+Le bloc de formulaire adaptatif offre une structure de HTML normalisée, ce qui simplifie le processus de sélection et de mise en forme des composants de formulaire :
 
-* **Mettre à jour les styles par défaut**: vous pouvez modifier les styles par défaut d’un formulaire en modifiant les `/blocks/form/form.css file`. Ce fichier fournit un style complet pour un formulaire, prenant en charge les formulaires de l’assistant en plusieurs étapes. Il met l’accent sur l’utilisation de variables CSS personnalisées pour faciliter la personnalisation, la maintenance et le style uniforme dans les formulaires. Pour plus d’informations sur l’ajout du bloc de formulaire à votre projet, reportez-vous à la section [création d’un formulaire](/help/edge/docs/forms/create-forms.md).
+* **Mettre à jour les styles par défaut**: vous pouvez modifier les styles par défaut d’un formulaire en modifiant les `/blocks/form/form.css file`. Ce fichier fournit un style complet pour un formulaire, prenant en charge les formulaires de l’assistant en plusieurs étapes. Il met l’accent sur l’utilisation de variables CSS personnalisées pour faciliter la personnalisation, la maintenance et le style uniforme dans les formulaires. Pour plus d’informations sur l’ajout du bloc de formulaire adaptatif à votre projet, reportez-vous à la section [création d’un formulaire](/help/edge/docs/forms/create-forms.md).
 
 * **Personnalisation**: utilisez la valeur par défaut `forms.css` en tant que base et personnalisez-la pour modifier l’apparence de vos composants de formulaire, ce qui le rend visuellement attrayant et convivial. La structure du fichier encourage l’organisation et conserve les styles pour les formulaires, ce qui favorise la cohérence des conceptions sur votre site web.
 
@@ -60,7 +60,7 @@ Le bloc de formulaire offre une structure de HTML normalisée, ce qui simplifie 
 
 ## Structure des composants
 
-Le bloc de formulaire offre une structure de HTML cohérente pour divers éléments de formulaire, ce qui facilite la mise en forme et la gestion. Vous pouvez manipuler les composants à l’aide de CSS à des fins de style.
+Le bloc de formulaire adaptatif offre une structure de HTML cohérente pour divers éléments de formulaire, assurant ainsi un style et une gestion plus simples. Vous pouvez manipuler les composants à l’aide de CSS à des fins de style.
 
 ### Composants généraux (à l’exception des listes déroulantes, des groupes radio et des groupes de cases à cocher) :
 
@@ -421,6 +421,6 @@ Vous pouvez également cibler des champs individuels par nom pour appliquer des 
 }
 ```
 
-Ce CSS cible tous les éléments d’entrée situés dans un élément qui possède la classe . `form-otp`. La structure de HTML de votre formulaire suit les conventions du bloc de formulaire, ce qui implique qu’il existe un conteneur marqué avec la classe &quot;form-top&quot; qui contient le champ nommé &quot;top&quot;.
+Ce CSS cible tous les éléments d’entrée situés dans un élément qui possède la classe . `form-otp`. La structure de HTML de votre formulaire suit les conventions du bloc de formulaire adaptatif, ce qui signifie qu’il existe un conteneur marqué par la classe &quot;form-top&quot; qui contient le champ nommé &quot;top&quot;.
 
 

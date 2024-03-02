@@ -1,77 +1,74 @@
 ---
-title: Service de diffusion Edge AEM Forms
-description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des performances optimales, vous permet d’envisager l’avenir d’une collecte de données rationalisée et de l’engagement des utilisateurs. L’article répertorie tous les composants de formulaire disponibles prêts à l’emploi pour les formulaires EDD.
+title: Composants et propriétés de formulaire
+description: Ce document présente les composants de formulaire et leurs propriétés disponibles dans le service de diffusion Edge AEM Forms.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 5%
+source-wordcount: '865'
+ht-degree: 3%
 
 ---
 
 
-
-
 # Composants de formulaire
 
-Le bloc de formulaire vous permet de créer facilement des formulaires pour capturer et stocker des données capturées. Il prend en charge les composants en fonction de tous les HTMLS5 [input-types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) comme le texte, l’email, le numéro, la date, etc. Elle prend également en charge [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), [select](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select), et [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) et inclut des fonctionnalités de validation d’entrée natives à HTML5.
+AEM Forms Edge Delivery Service vous permet de créer des formulaires interactifs et conviviaux à l’aide de divers composants. Ces composants répondent à différents types de collecte de données et peuvent être facilement personnalisés en fonction de vos besoins.
 
-Le bloc de formulaire génère une structure de HTML uniforme pour tous les types de champs et conteneurs (panneaux), ce qui garantit la cohérence. Cette structure cohérente facilite la [style d’un formulaire](/help/edge/docs/forms/style-theme-forms.md).
+Le bloc de formulaire adaptatif génère une [structure de HTML uniforme](/help/edge/docs/forms/style-theme-forms.md) pour tous les types de champ et conteneurs (panneaux), en assurant la cohérence. Cette structure cohérente facilite la [style d’un formulaire](/help/edge/docs/forms/style-theme-forms.md).
+
+
+## Composants disponibles
+
+Voici un aperçu des composants disponibles :
+
+### Champs d’entrée
+
+- Tout le HTML valide5 [types d’entrée](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) et [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Par exemple, un bouton, une case à cocher, une couleur, une date, une heure-locale, un email, un fichier, masqué, une image, un mois, un numéro, un mot de passe, une radio, une plage, une réinitialisation, un envoi, un tel, un texte, une heure, une URL et une semaine.
+
+### Contrôles de sélection
+
+- [Groupes de cases à cocher](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): pour sélectionner plusieurs options.
+- [Groupes de cases d&#39;option](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): pour sélectionner une seule option dans un groupe.
+- [Menus déroulants](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): pour afficher un menu d’options. Par exemple, une liste déroulante.
+
+### Conteneurs
+
+- Panneaux/Conteneurs : pour regrouper les éléments de formulaire associés pour une meilleure organisation. Il s’agit d’une combinaison de [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) et [légende](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## Propriétés des composants
 
-Les propriétés suivantes sont prises en charge pour les composants de formulaire du bloc de formulaire :
+Chaque composant de formulaire est fourni avec différentes propriétés qui vous permettent de contrôler son comportement et son aspect. Ici, les propriétés prises en charge par les composants Bloc de formulaire adaptatif :
 
-<table>
- <tbody>
-  <tr>
-   <td><b>Propriété</b> </td>
-   <td><b>Composants de formulaire (type d’entrée)</b> </td>
-   <td><b>Détails</b></td>
-  </tr>
-  <tr>
-   <td>Nom</td>
-   <td>Tous les composants</td>
-   <td> Chaîne spécifiant un nom pour le composant. Les données du composant sont envoyées par rapport à ce nom.
-   </td>
-  </tr>
-  <tr>
-   <td>Libellé</td>
-   <td>Tous les composants</td>
-   <td> Le libellé sert de légende au champ.
-   </td>
-  </tr>
-  <tr>
-   <td>Valeur</td>
-   <td>Tous les composants</td>
-   <td> La valeur initiale du contrôle. Pour les composants radio et case à cocher, il s’agit de la valeur/des données qui est envoyée lorsqu’ils sont sélectionnés. L’attribut value est toujours facultatif, bien que doit être considéré comme obligatoire pour les cases à cocher et les cases d’option.
-   </td>
-  </tr>
-    <tr>
-   <td>Espace réservé</td>
-   <td>Texte, Recherche, URL, Tel, Adresse électronique, Mot de passe et Numéro</td>
-   <td> L’attribut d’espace réservé fournit un bref indice à l’utilisateur sur le type d’informations attendu dans le champ.
-   </td>
-  </tr>
-      <tr>
-   <td>Description</td>
-   <td>Applicable à tous les champs</td>
-   <td> L’attribut d’espace réservé fournit un bref indice à l’utilisateur sur le type d’informations attendu dans le champ.
-   </td>
-  </tr>
-  </tbody>
-</table>
 
-<!-- 
-## Supported HTML 5 input types in Form Block
+| Propriété | Composants applicables | Détails |
+|--------------|------------------------------|----------------------------------------------------------------------|
+| Type | Tous | Indique le type du composant. Cette propriété détermine le comportement et l’aspect du champ de saisie. Par exemple, pour les entrées de texte, le type peut être &quot;texte&quot;, &quot;email&quot; pour les entrées d’email, &quot;mot de passe&quot; pour les entrées de mot de passe. Le bloc de formulaire adaptatif prend en charge tous les HTMLS valides5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">types d’entrée</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> comme type. |
+| Nom | Tous | Identifie le composant pour l’envoi du formulaire. L’attribut name est utilisé lors de l’envoi des données de formulaire au serveur, associant la saisie de l’utilisateur à un champ spécifique. |
+| Libellé | Tous | Fournit des informations contextuelles aux utilisateurs. Le libellé est le texte affiché en regard du composant, qui fournit aux utilisateurs des conseils sur les informations à saisir. |
+| Valeur | Texte, Mot de passe, Email, Numéro, Plage, Date et ses variantes (datetime-local, mois, semaine, heure), Case à cocher, Radio, Masqué, Envoyer, Bouton | Indique la valeur initiale du composant. Pour les entrées de texte, la zone de texte et les éléments de sélection, il s’agit du texte ou de l’option par défaut qui s’affiche. Pour les composants radio et case à cocher, il s’agit de la valeur/des données envoyées lorsqu’elles sont sélectionnées. L’attribut value est facultatif, mais doit être considéré comme obligatoire pour les entrées de case à cocher et de radio. |
+| Espace réservé | Texte, Tel, Email, Mot de passe, Date (et ses variantes telles que mois, semaine, heure, datetime-local), Nombre, Plage | Offre des conseils pour une entrée attendue. L’attribut d’espace réservé fournit un bref indice qui décrit la valeur attendue du champ de saisie. Il disparaît lorsque l’utilisateur commence à saisir du texte. |
+| Description | Tous | Fournit des informations supplémentaires sur le composant et sert de texte d’aide. Le champ de description permet d’obtenir des explications supplémentaires sur l’objectif ou les instructions de remplissage du composant. Cela aide les utilisateurs à comprendre le contexte du champ de saisie. |
+| Visible | Tous | Contrôle la visibilité initiale. L’attribut visible est une propriété booléenne qui détermine si le composant est initialement visible ou masqué au chargement du formulaire. S’il est défini sur true, le champ s’affiche ; dans le cas contraire, il est masqué. |
+| Obligatoire | Texte, Tel, Email, Mot de passe, Date et ses variantes (datetime-local, mois, semaine, heure), Nombre, Case à cocher, Radio, Fichier, Sélectionner (liste déroulante), Zone de texte | Indique si le champ doit être renseigné avant envoi. L’attribut mandatory est une propriété booléenne utilisée pour spécifier si l’utilisateur doit fournir une entrée pour le champ avant d’envoyer le formulaire. |
+| Min. | Date (et ses variantes telles que le mois, la semaine, l’heure, la date, l’heure-locale), nombre, plage | Indique la valeur minimale autorisée. L’attribut min définit la valeur minimale que l’utilisateur peut entrer dans le champ. Par exemple, pour les entrées de nombre, il définit le nombre acceptable le plus petit. |
+| Max | Date (et ses variantes telles que le mois, la semaine, l’heure, la date, l’heure-locale), nombre, plage | Indique la valeur maximale autorisée. L’attribut max définit la valeur maximale que l’utilisateur peut entrer dans le champ. Par exemple, pour les entrées de date, il définit la date acceptable la plus élevée. |
+| Accepter | Fichier | Définit les types de fichiers autorisés. L’attribut accept est une liste séparée par des virgules de caractères de type de fichier uniques qui limite les types de fichiers que les utilisateurs peuvent sélectionner dans un champ de saisie de fichier. |
+| Multiple | Fichier | Permet plusieurs sélections. L’attribut multiple est une propriété booléenne utilisée avec les champs d’entrée de fichier. Lorsqu’elle est définie sur true, elle permet aux utilisateurs de sélectionner plusieurs fichiers. |
+| Options | Liste déroulante | Spécifie les options des menus déroulants. La propriété options est une liste de choix séparés par des virgules pour les menus déroulants, qui définit les options sélectionnables affichées pour l’utilisateur. |
+| Cochée | Case à cocher, Radio | Détermine si le champ est sélectionné par défaut. L’attribut coché est une propriété booléenne utilisée avec les entrées de case à cocher et de radio. Lorsque la valeur est définie sur true, elle indique que le champ est sélectionné par défaut au chargement du formulaire. |
+| FileSet | Tous | Regroupe les champs pour créer des sections visuellement distinctes dans un formulaire. L’élément fieldset regroupe les champs associés dans un formulaire, les séparant visuellement afin d’améliorer l’organisation et l’expérience utilisateur. </br> Pour organiser un ensemble de champs dans un jeu de champs, utilisez simplement la variable `fieldset` et indiquez son attribut name . Dans l’exemple ci-dessous, nous montrons comment les boutons radio sont encapsulés dans un seul jeu de champs pour une meilleure organisation. ![Exemple de champ](/help/edge/assets/fieldset-example.png) |
 
-The Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 
+
+<!--
+
+## Supported HTML 5 input types in Adaptive Form Block
+
+The Adaptive Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 Here is the table which outlines how core components correspond to their HTML-5 input types in Edge Delivery:
-
 <table>
  <tbody>
   <tr>
@@ -172,26 +169,26 @@ Here is the table which outlines how core components correspond to their HTML-5 
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html">Accordion<a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Allows user to create expandable and collapsible sections in a form. </td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html">Horizontal tabs</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td>Organizes multiple sections of a form into separate tabs which are displayed horizontally.</td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/image.html">Image</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Allows user to include images in a form.</td>
   </tr><tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/title.html">Title</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Refers to the text that appears at the top of the form. </td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">Switch</td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>
