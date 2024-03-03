@@ -4,9 +4,9 @@ description: Créez des formulaires puissants plus rapidement à l’aide de feu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 1%
 
 Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données.
 
+![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -46,6 +47,7 @@ Pour activer la feuille de calcul :
 
 
 Une fois que les noms de champ sont ajoutés au `incoming` , votre formulaire devient prêt à accepter les envois. Vous pouvez prévisualiser le formulaire et envoyer les données à la feuille à l’aide de celui-ci.
+
 
 
 Vous constatez également les modifications suivantes dans votre feuille de calcul :
@@ -290,6 +292,6 @@ Vous pouvez ensuite personnaliser le message de remerciement, [configurer une pa
 
 * [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
 * [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)
-* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-forms.md)
 * [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
 * [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)

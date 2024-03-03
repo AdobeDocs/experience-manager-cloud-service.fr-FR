@@ -4,17 +4,18 @@ description: Ce document présente les composants de formulaire et leurs propri�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '965'
 ht-degree: 2%
 
 ---
 
 
-# Guide du développeur relatif aux composants et propriétés de formulaire : service de diffusion Edge AEM Forms
+# Composants et propriétés de formulaire : service de diffusion AEM Forms Edge
 
 AEM Forms Edge Delivery Service vous permet de créer des formulaires interactifs et conviviaux à l’aide de divers composants. Ces composants répondent à différents types de collecte de données et peuvent être facilement personnalisés en fonction de vos besoins.
+
 
 ![Un exemple de feuille de calcul avec quelques composants et propriétés](/help/edge/assets/sample-form-in-spreadsheet.png)
 
@@ -41,6 +42,8 @@ Voici un aperçu des composants disponibles :
 
 
 
+
+
 ## Propriétés des composants
 
 Chaque composant de formulaire est fourni avec différentes propriétés qui vous permettent de contrôler son comportement et son aspect. Ici, les propriétés prises en charge par les composants Bloc de formulaire adaptatif :
@@ -48,6 +51,7 @@ Chaque composant de formulaire est fourni avec différentes propriétés qui vou
 
 | Propriété | Composants applicables | Détails |
 |--------------|------------------------------|----------------------------------------------------------------------|
+| Type | Tous | Indique le type du composant. Cette propriété détermine le comportement et l’aspect du champ de saisie. Par exemple, pour les entrées de texte, le type peut être &quot;texte&quot;, &quot;email&quot; pour les entrées d’email, &quot;mot de passe&quot; pour les entrées de mot de passe. Prise en charge des blocs de formulaire adaptatif  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tous les types d’entrée HTML5 valides</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> comme type. |
 | Type | Tous | Indique le type du composant. Cette propriété détermine le comportement et l’aspect du champ de saisie. Par exemple, pour les entrées de texte, le type peut être &quot;texte&quot;, &quot;email&quot; pour les entrées d’email, &quot;mot de passe&quot; pour les entrées de mot de passe. Prise en charge des blocs de formulaire adaptatif  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tous les types d’entrée HTML5 valides</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> comme type. |
 | Nom | Tous | Identifie le composant pour l’envoi du formulaire. L’attribut name est utilisé lors de l’envoi des données de formulaire au serveur, associant la saisie de l’utilisateur à un champ spécifique. |
 | Libellé | Tous | Fournit des informations contextuelles aux utilisateurs. Le libellé est le texte affiché en regard du composant, qui fournit aux utilisateurs des conseils sur les informations à saisir. |
@@ -201,6 +205,6 @@ Here is the table which outlines how core components correspond to their HTML-5 
 
 - [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
 - [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)
-- [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-eds-forms.md)
+- [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-forms.md)
 - [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
 - [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)

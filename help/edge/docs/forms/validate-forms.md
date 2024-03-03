@@ -4,7 +4,7 @@ description: Créez des formulaires puissants plus rapidement à l’aide de feu
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -33,6 +33,6 @@ Tel : ce type de champ est spécialement conçu pour les numéros de téléphone
 
 * [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
 * [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)
-* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-forms.md)
 * [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
 * [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)

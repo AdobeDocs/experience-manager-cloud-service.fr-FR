@@ -4,7 +4,7 @@ description: Découvrez comment configurer les pages de remerciement et la redir
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -86,6 +86,6 @@ Pour rediriger la page &quot;Merci&quot; vers une autre page, utilisez la métho
 * [Propriétés des champs de formulaire](/help/edge/docs/forms/eds-form-field-properties)
 * [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
 * [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)
-* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-forms.md)
 * [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
 * [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)

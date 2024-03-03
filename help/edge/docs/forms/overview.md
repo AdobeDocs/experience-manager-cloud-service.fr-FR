@@ -4,9 +4,9 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,10 @@ Vous pouvez utiliser le service pour effectuer les opérations suivantes :
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,6 +39,8 @@ Vous pouvez utiliser le service pour effectuer les opérations suivantes :
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -62,25 +61,33 @@ Vous pouvez utiliser le service pour effectuer les opérations suivantes :
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
     -->
 
-## Fonctionnalités essentielles
+## Fonctions clés
 
-* **Composants de champ de formulaire basés sur un HTML5**: AEM Forms Edge Delivery Service vous permet de créer des formulaires interactifs et conviviaux à l’aide de champs de formulaire basés sur un HTML valide5 [types d’entrée](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  composants. Ces composants répondent à différents types de collecte de données et peuvent être facilement personnalisés en fonction de vos besoins.
+* **Composants de champ de formulaire basés sur un HTML5**: AEM Forms Edge Delivery Service vous permet de créer des formulaires interactifs et conviviaux à l’aide de composants de formulaire basés sur HTML5. [types d’entrée](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  éléments . Ces composants répondent à différents types de collecte de données et peuvent être facilement personnalisés en fonction de vos besoins.
 
 * **Accessibilité**: les champs du bloc de formulaire sont accessibles. Chaque libellé est associé à son élément d’entrée respectif et les identifiants sont générés automatiquement pour la liaison. Les descriptions associées aux champs sont liées via l’attribut aria-description par . La navigation au clavier à l’aide des touches Tab/Maj + Tab standard est prise en charge.
 
-* **Règles de formulaire**: créez une logique qui ajuste la visibilité, la validation et le comportement des champs en fonction des entrées de l’utilisateur ou des conditions prédéfinies. Les règles offrent un moyen flexible et intuitif d’ajouter des informations à vos formulaires, en s’assurant qu’elles s’adaptent facilement en fonction des entrées des utilisateurs.
+* **Style**: chaque champ de formulaire a une structure de HTML fixe qui peut être facilement décorée à l’aide de fichiers CSS ou JavaScript personnalisés. Les sélecteurs pour les champs de ciblage dans CSS et JS sont fournis en fonction du type et du nom. Vous pouvez facilement créer de nouveaux sélecteurs en raison de la structure normalisée.
 
-* **Téléchargements de fichiers**: améliorez vos formulaires grâce à des fonctionnalités de pièce jointe transparente. Que vous ayez besoin de rassembler des documents, des images ou d’autres fichiers auprès de vos utilisateurs, le bloc de formulaire adaptatif vous permet d’intégrer facilement la fonctionnalité de téléchargement de fichiers. Les options de gestion personnalisées étant disponibles, vous pouvez personnaliser le processus de chargement des fichiers en fonction de vos besoins.
+* **Règles**: créez facilement une logique qui ajuste la visibilité, la validation et le comportement des champs en fonction des entrées de l’utilisateur ou des conditions prédéfinies. Les règles offrent un moyen flexible et intuitif d’ajouter des informations à vos formulaires, en s’assurant qu’elles s’adaptent facilement en fonction des entrées des utilisateurs.
 
-* **Validation de formulaire**: avant envoi, le formulaire est validé et les champs non valides sont correctement marqués avec les messages d’erreur affichés à l’utilisateur. Différents modèles sont disponibles pour l’affichage de ces erreurs.
+* **Validations**: avant envoi, le formulaire est validé et les champs non valides sont correctement marqués avec les messages d’erreur affichés à l’utilisateur. Différents modèles sont disponibles pour l’affichage de ces erreurs.
 
-* **Style de Forms**: chaque champ de formulaire a une structure de HTML fixe qui peut être décorée de manière plus détaillée à l’aide de fichiers CSS ou JavaScript personnalisés. Les sélecteurs pour les champs de ciblage dans CSS/JS sont fournis en fonction du type et du nom.
+Certaines fonctionnalités avancées sont disponibles sur demande :
+
+* **Téléchargements de fichiers**: vous pouvez ajouter des fonctions de pièce jointe à vos formulaires. Que vous ayez besoin de rassembler des documents, des images ou d’autres fichiers auprès de vos utilisateurs, la fonctionnalité de téléchargement de fichiers vous est utile sans effort. Les options de gestion personnalisées étant disponibles, vous pouvez personnaliser le processus de chargement des fichiers en fonction de vos besoins.
+
+* **reCAPTCHA**: profitez de l’intégration transparente de Google reCAPTCHA dans vos formulaires grâce à notre prise en charge prête à l’emploi. Protégez vos formulaires contre les activités frauduleuses, les spams et les abus, tout en maintenant une expérience utilisateur fluide et ininterrompue.
+
+* **Envoyer une notification par courrier électronique lors de l’envoi du formulaire**: évitez les problèmes liés aux suivis manuels et garantissez une communication opportune avec notre automatisation intégrée des courriers électroniques pour les envois de formulaire. Cette solution intégrée vous permet d’informer sans effort les parties concernées, y compris d’envoyer des données de formulaire, chaque fois qu’une personne remplit un formulaire sur votre site web. Pas besoin de configurations complexes ni d’outils supplémentaires. Ils sont prêts à l’emploi.
+
 
 ## Workflow
 

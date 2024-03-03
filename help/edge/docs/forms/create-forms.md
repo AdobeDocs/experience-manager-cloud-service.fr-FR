@@ -4,7 +4,7 @@ description: Concevez des formes parfaites, vite ! ⚡ Création basée sur des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Pour poursuivre la création du formulaire :
 
    ![renommer la feuille par défaut en &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Pour ajouter les champs du formulaire, insérez les lignes et les en-têtes de colonne dans la feuille &#39;shared-default&#39;. Chaque ligne doit représenter une [champ de formulaire](/help/edge/docs/forms/form-components.md), avec des en-têtes de colonne définissant le champ correspondant [properties](/help/edge/docs/forms/eds-form-field-properties).
+1. Pour ajouter les champs du formulaire, insérez les lignes et les en-têtes de colonne dans la feuille &#39;shared-default&#39;. Chaque ligne doit représenter une [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components), avec des en-têtes de colonne définissant le champ correspondant [properties](/help/edge/docs/forms/form-components.md#components-properties).
 
    Pour un démarrage rapide, pensez à copier le contenu de la variable [Feuille de calcul de requête](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) dans votre feuille de calcul. Après avoir copié le contenu, enregistrez votre feuille de calcul.
 
@@ -159,6 +159,6 @@ Jusqu’à présent, vous avez ajouté le bloc de formulaire adaptatif à votre 
 * [Propriétés des champs de formulaire](/help/edge/docs/forms/eds-form-field-properties)
 * [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
 * [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)
-* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-forms.md)
 * [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
 * [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)

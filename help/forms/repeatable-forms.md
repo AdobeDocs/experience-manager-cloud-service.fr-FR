@@ -2,9 +2,9 @@
 description: Ce tutoriel comprend des instructions pour rendre une section d’un formulaire répétable.
 title: Sections répétables dans les Edge Delivery Services
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Prenons l’exemple d’un formulaire utilisé pour recueillir des informations 
 
 ## Conditions préalables
 
-Configurez le projet Github du service de diffusion Edge (EDS) à l’aide d’AEM standard et clonez le référentiel Github correspondant sur votre ordinateur local. Voir [tutoriel pour les développeurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) pour plus d’informations.
+Configurez le projet GitHub du service de diffusion Edge (EDS) à l’aide AEM standard et clonez le référentiel GitHub correspondant sur votre ordinateur local. Voir [tutoriel pour les développeurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) pour plus d’informations.
 
 ## Sections répétables dans la diffusion Edge
 
@@ -56,7 +56,7 @@ Dans cet exemple, nous utilisons une feuille Excel nommée `loan-application.xls
 1. Ouvrez ou créez un fichier document dans un site Microsoft SharePoint afin d’y incorporer la feuille Excel à l’aide d’une `Form Block`. Par exemple, ouvrez le `index` et ajouter un `Form Block`.
 2. Ouvrez l’invite de commande, accédez au répertoire de votre projet Edge Delivery AEM sur votre ordinateur local, puis exécutez la commande en tant que `aem up`.
 
-Le formulaire est accessible à l’adresse `https://localhost:3000`, où vous cliquez sur le bouton `Add` ajoute une nouvelle section répétable pour saisir les détails du co-demandeur. Vous pouvez également supprimer la section répétable en cliquant sur le bouton `Delete` bouton .
+Le formulaire est accessible à l’adresse `https://localhost:3000`, où vous cliquez sur le bouton `Add` ajoute une nouvelle section répétable pour saisir les détails du co-demandeur. Vous pouvez également supprimer la section répétable en cliquant sur le `Delete` bouton .
 
 >[!NOTE]
 >
