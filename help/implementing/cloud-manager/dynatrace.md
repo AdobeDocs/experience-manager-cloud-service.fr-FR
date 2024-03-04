@@ -2,7 +2,7 @@
 title: Dynatrace
 description: Découvrez comment utiliser Dynatrace avec AEM as a Cloud Service
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: d6f5a365a48a8b20b69db6895f895c9d172d58a7
+source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -56,19 +56,22 @@ Pour en savoir plus sur les licences Dynatrace, voir [Abonnement à Dynatrace Pl
 
 1. Exécutez la requête d’API suivante sur votre environnement Dynatrace :
 
-`curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"`
+   ```
+   curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
+   ```
 
-Remplacer `<environmentUrl>` avec l’URL de votre environnement Dynatrace et `<accessToken>` avec votre jeton d’accès API créé.
+
+   Remplacer `<environmentUrl>` avec l’URL de votre environnement Dynatrace et `<accessToken>` avec votre jeton d’accès API créé.
 
 1. Copiez le `<environmentId>` et `<environmentToken>` à partir du payload de la réponse et stockez-les dans un emplacement sécurisé.
 
-```
-{
-   "tenantUUID": "<environmentId>",
-   "tenantToken": "<environmentToken>",
-   "communicationEndpoints": [...]
-}
-```
+   ```
+   {
+      "tenantUUID": "<environmentId>",
+      "tenantToken": "<environmentToken>",
+      "communicationEndpoints": [...]
+   }
+   ```
 
 ### Création d’un jeton d’accès API Dynatrace {#create-dynatrace-access-token}
 
