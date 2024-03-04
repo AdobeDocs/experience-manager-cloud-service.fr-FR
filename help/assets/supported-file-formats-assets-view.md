@@ -3,10 +3,9 @@ title: Formats de fichiers pris en charge
 description: Formats de fichiers pris en charge pour les différents cas d’utilisation d’ [!DNL Assets view]
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
-workflow-type: ht
-source-wordcount: '363'
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+workflow-type: tm+mt
+source-wordcount: '515'
 ht-degree: 100%
 
 ---
@@ -122,7 +121,7 @@ Les utilisateurs de [!DNL Adobe Asset Link] peuvent charger et enregistrer (char
 
 ## Étapes suivantes {#next-steps}
 
-* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur d’Assets.
+* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 

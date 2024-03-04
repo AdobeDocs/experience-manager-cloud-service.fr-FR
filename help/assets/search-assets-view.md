@@ -2,11 +2,10 @@
 title: Découvrez comment rechercher des ressources dans [!DNL Assets view]?
 description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. La puissante fonctionnalité de recherche vous permet de découvrir rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
-exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 63%
+ht-degree: 94%
 
 ---
 
@@ -120,37 +119,37 @@ Pour supprimer des filtres personnalisés :
 
 1. Cliquez sur **[!UICONTROL Confirmer]** pour supprimer les filtres de l’interface utilisateur.
 
-## Recherche de ressources à l’aide de [!DNL Adobe Firefly] {#search-firefly}
+## Rechercher des ressources à l’aide d’[!DNL Adobe Firefly] {#search-firefly}
 
-Vous pouvez rechercher une ressource qui n’est disponible dans aucun des dossiers de ressources à l’aide de l’option [!DNL Adobe Firefly] fonctionnalité de recherche de ressources dans [!DNL Experience Manager Assets]. Vous pouvez ainsi générer efficacement des ressources en temps réel qui ne sont pas stockées dans les dossiers de ressources.
+Vous pouvez rechercher une ressource qui n’est disponible dans aucun des dossiers en utilisant la fonction de recherche de ressources [!DNL Adobe Firefly] dans [!DNL Experience Manager Assets]. Vous pouvez ainsi générer efficacement des ressources en temps réel qui ne sont pas stockées dans les dossiers de ressources.
 
 ### Avant de commencer
 
-Vous devez disposer d’un [!DNL Adobe Express] abonnement.
+Vous devez disposer d’un abonnement [!DNL Adobe Express] actif.
 
-### Génération de ressources
+### Générer des ressources
 
-Pour générer de nouvelles ressources à l’aide de [!DNL Adobe Firefly]:
+Pour générer de nouvelles ressources en utilisant [!DNL Adobe Firefly] :
 
-1. Accédez au [!DNL AEM Assets] workspace.
-1. Saisissez le nom de la ressource dans la barre de recherche située en haut de la page.<br>
-Par exemple, vous pouvez rechercher une ressource à l’aide du mot-clé `Bugatti Type 57`. Lors de la recherche de la ressource, aucun résultat n’est trouvé, car la ressource n’est présente dans aucun des dossiers de ressources.
-1. Saisissez le nom de la ressource dans la barre de recherche au milieu de la page, puis cliquez sur **[!UICONTROL Générer]**.
+1. Accédez à l’espace de travail [!DNL AEM Assets].
+1. Saisissez le nom de la ressource dans la barre de recherche en haut de la page.<br>
+Par exemple, vous pouvez rechercher une ressource à l’aide du mot-clé `Bugatti Type 57`. Lors de la recherche de la ressource, aucun résultat n’est renvoyé, car la ressource n’est présente dans aucun des dossiers.
+1. Tapez le nom de la ressource dans la barre de recherche au milieu de la page et cliquez sur **[!UICONTROL Générer]**.
    ![Intégration de Firefly](assets/firefly-integration.jpg)
-   *Figure : Aucun résultat trouvé pour le type Bugatti 57 dans le dossier de ressources.* <br>
+   *Illustration : aucun résultat renvoyé pour Bugatti Type 57 dans le dossier des ressources.* <br>
 Les nouvelles ressources sont générées avec succès.
    ![Intégration de Firefly](assets/bugatti-type-57.jpg)
-   *Figure : Ressources de référence recherchées à l’aide de [!DNL Adobe Firefly] fonction de recherche de ressources.* <br>
-Vous pouvez charger ces ressources dans le dossier de votre choix pour un accès facile.
+   *Illustration : ressources de référence recherchées à l’aide de la fonction de recherche de ressources [!DNL Adobe Firefly].* <br>
+Vous pouvez charger ces ressources dans votre dossier préféré pour un accès facilité.
 
 ### Chargement de ressources
 
-Pour charger la ressource générée dans le référentiel de ressources :
+Pour télécharger la ressource générée dans le référentiel de ressources :
 
 1. Cliquez sur **[!UICONTROL Charger]**.
-1. Sélectionnez le dossier de ressources vers lequel vous devez charger la ressource, puis cliquez sur **[!UICONTROL Sélectionner un dossier]**.
-   ![Chargement d’une ressource](assets/upload-asset-firefly.jpg)
-   *Figure : Sélectionnez le dossier dans lequel charger la ressource.*
+1. Sélectionnez le dossier de ressources dans lequel vous devez télécharger la ressource et cliquez sur **[!UICONTROL Sélectionner le dossier]**.
+   ![Charger la ressource](assets/upload-asset-firefly.jpg)
+   *Illustration : sélectionnez le dossier dans lequel télécharger la ressource.*
 
 ## Recherches enregistrées {#saved-search}
 
@@ -177,7 +176,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 Vous pouvez sélectionner les ressources qui s’affichent dans les résultats de recherche et effectuer les opérations suivantes :
 
-* **Rechercher une image similaire**: recherchez une ressource image similaire dans l’interface utilisateur Assets en fonction des métadonnées et des balises intelligentes.
+* **Rechercher une image similaire** : recherchez une ressource d’image similaire dans l’interface utilisateur d’Assets en fonction des métadonnées et des balises intelligentes.
 
 * **Détails** : affichez et modifiez les propriétés de la ressource.
 
@@ -187,11 +186,11 @@ Vous pouvez sélectionner les ressources qui s’affichent dans les résultats d
 
 * **Épingler à l’accès rapide**: [Épinglez une ressource](my-workspace-assets-view.md) pour y accéder plus rapidement lorsque vous en aurez besoin ultérieurement. Tous les éléments épinglés s’affichent dans la section **Accès rapide** de Mon espace de travail.
 
-* **Ouvrir dans Adobe Express**: modifiez une image dans l’Adobe Express intégré à partir de l’écran Experience Manager Assets.
+* **Ouvrir dans Adobe Express** : modifiez une image dans Adobe Express intégré à partir de l’écran Experience Manager Assets.
 
-* **Modifier**: modifiez l’image à l’aide de Adobe Express.
+* **Modifier** : modifiez l’image à l’aide d’Adobe Express.
 
-* **Partager le lien** : [partagez des liens](share-links-for-assets-view.md) d’une ressource avec d’autres personnes utilisatrices, afin qu’elles puissent y accéder et la télécharger.
+* **Partager le lien** : [partagez des liens](share-links-for-assets-view.md) d’une ressource avec d’autres personnes, afin qu’elles puissent y accéder et la télécharger.
 
 * **Supprimer** : supprimez une ressource.
 
@@ -201,44 +200,44 @@ Vous pouvez sélectionner les ressources qui s’affichent dans les résultats d
 
 * **Renommer** : renommez une ressource.
 
-* **Copier vers les bibliothèques**: ajoutez une ressource à la bibliothèque.
+* **Copier vers les bibliothèques** : ajoutez une ressource à la bibliothèque.
 
 * **Affecter des tâches** : affectez des tâches aux utilisateurs et utilisatrices pour une ressource.
 
 * **Surveiller** : [surveillez les opérations](manage-notifications-assets-view.md) effectuées sur une ressource.
 
-## Configuration de la première page d’accueil de la recherche {#configuring-search-first-homepage}
+## Configurer la page d’accueil axée sur la recherche {#configuring-search-first-homepage}
 
-Experience Manager Assets vous permet de sélectionner la page d’entrée par défaut de votre entreprise. Lors de l’utilisation de la fonction Rechercher d’abord comme page d’accueil, vous avez également la possibilité de personnaliser l’identité graphique de la page en configurant les images d’arrière-plan et de logo en fonction de votre marque.
+Experience Manager Assets vous permet de sélectionner la page d’entrée par défaut de votre entreprise. Lorsque vous utilisez l’approche axée sur la recherche pour votre page d’accueil, vous disposez également d’options pour personnaliser l’image de marque de la page en configurant les images d’arrière-plan et du logo en fonction de votre marque.
 
-Pour configurer la première page d’accueil de la recherche, procédez comme suit :
+Pour configurer la page d’accueil axée sur la recherche, exécutez les étapes ci-dessous :
 
-1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
-1. Sélectionner **[!UICONTROL Recherche d’abord]**. Il ouvre ensuite la première configuration associée à la recherche. Vous pouvez définir [alignement](#setting-alignment-search-bar) ou [définir l’image d’arrière-plan et de logo ;](#setting-background-image-and-logo) de votre page d’accueil.
+1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
+1. Sélectionnez **[!UICONTROL Approche axée sur la recherche]**. La configuration de l’approche axée sur la recherche s’ouvre. Vous pouvez définir l’[alignement](#setting-alignment-search-bar) ou l’[image de l’arrière-plan et du logo](#setting-background-image-and-logo) de votre page d’accueil.
 
-### Alignement de la barre de recherche {#setting-alignment-search-bar}
+### Définir l’alignement de la barre de recherche {#setting-alignment-search-bar}
 
-[!DNL Assets view] permet de modifier l’alignement de la barre de recherche. Vous pouvez faire apparaître la barre de recherche au centre ou en haut. Sélectionnez l’alignement approprié et cliquez sur **[!UICONTROL Enregistrer]**.
+[!DNL Assets view] vous permet de modifier l’alignement de la barre de recherche. Vous pouvez afficher la barre de recherche soit au centre, soit en haut. Sélectionnez l’alignement approprié et cliquez sur **[!UICONTROL Sauvegarder]**.
 
-![Recherche de l’alignement de la première page d’accueil](assets/search-first-alignment.png)
+![Alignement de la page d’accueil axée sur la recherche.](assets/search-first-alignment.png)
 
-### Définition de l’image d’arrière-plan et du logo de la page d’accueil {#setting-background-image-and-logo}
+### Définir l’image d’arrière-plan et le logo de la page d’accueil {#setting-background-image-and-logo}
 
-Vous pouvez ajouter le logo de la marque et l’image d’arrière-plan à la première page d’accueil de votre recherche. Procédez comme suit :
+Vous pouvez ajouter le logo de votre marque et une image d’arrière-plan à votre page d’accueil axée sur la recherche. Procédez comme suit :
 
-1. Accédez à **[!UICONTROL Image d’arrière-plan et logo]** section sous **[!UICONTROL Page d’accueil]**.
-1. Cliquez sur **[!UICONTROL Remplacer]** pour parcourir les images du référentiel de ressources existant.
-1. Cliquez sur **[!UICONTROL Enregistrer]**. [Aperçu](#preview-configured-homepage) les modifications pour passer en revue les modifications.
+1. Accédez à la section **[!UICONTROL Image d’arrière-plan et de logo]** sous **[!UICONTROL Page d’accueil]**.
+1. Cliquez sur **[!UICONTROL Remplacer]** pour parcourir les images du référentiel de ressources.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. [Prévisualisez](#preview-configured-homepage) vos modifications.
 
-### Aperçu de la page d’accueil configurée {#preview-configured-homepage}
+### Prévisualiser la page d’accueil configurée {#preview-configured-homepage}
 
-Vous pouvez prévisualiser pour vérifier la mise en page et le formatage de la première page d’accueil de la recherche. Utilisation **[!UICONTROL Aperçu]**, vous pouvez corriger la mise en page ou apporter des modifications en fonction des besoins. Pour prévisualiser la page d’accueil configurée, procédez comme suit :
+Vous pouvez prévisualiser votre page d’accueil axée sur la recherche afin d’en vérifier la disposition et le formatage. La fonction d’**[!UICONTROL Aperçu]** permet de corriger la mise en page ou d’apporter des modifications selon les besoins. Pour prévisualiser la page d’accueil configurée, exécutez les étapes ci-dessous :
 
-1. Cliquez sur **[!UICONTROL Paramètres généraux]** et sélectionnez **[!UICONTROL Recherche d’abord]**.
-1. Accédez à **[!UICONTROL Personnalisation de la première page d’accueil de la recherche]** et cliquez sur **[!UICONTROL Aperçu]**. Basculer **[!UICONTROL Thème sombre]** pour prévisualiser la page d’accueil sur un thème sombre ou clair.
-1. Cliquez sur **[!UICONTROL Fermer]** pour fermer l’écran de prévisualisation.
+1. Cliquez sur **[!UICONTROL Paramètres généraux]** et sélectionnez **[!UICONTROL Approche axée sur la recherche]**.
+1. Accédez à **[!UICONTROL Personnaliser la page d’accueil axée sur la recherche]** et cliquez sur **[!UICONTROL Aperçu]**. Activez le bouton **[!UICONTROL Thème sombre]** pour prévisualiser la page d’accueil avec un thème sombre ou clair.
+1. Cliquez sur **[!UICONTROL Fermer]** pour quitter l’écran d’aperçu.
 
-   ![Recherche de l’aperçu de la première page d’accueil](assets/search-first-preview.gif)
+   ![Aperçu de la page d’accueil axée sur la recherche.](assets/search-first-preview.gif)
 
 ## Étapes suivantes {#next-steps}
 

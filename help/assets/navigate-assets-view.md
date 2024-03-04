@@ -2,11 +2,10 @@
 title: « Interface utilisateur dʼ[!DNL Assets view] »
 description: Comprendre l’interface utilisateur et de la navigation dans [!DNL Assets view].
 role: User
-exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 39166f59eb773a149ba28be2b34d0c1aa6c831b4
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 67%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +23,7 @@ Lorsque vous vous connectez à [!DNL Assets view], l’interface suivante s’af
 
 ![[!DNL Assets view]Interface utilisateur](assets/assets-view-interface.png)
 
-**A**: barre latérale gauche pour parcourir le référentiel et donne accès à quelques autres options. **B**: affiche ou réduit la barre latérale gauche pour augmenter la zone d’affichage des ressources. **C**: filtrage des résultats de recherche **D**: sélectionnez tout le contenu du dossier sélectionné. **E**: options de tri des ressources **F**: zone de recherche **G**: téléchargez ou faites glisser et déposez des fichiers à l’aide de `Add Assets` button **h**: création d’un dossier **I**: bascule entre différentes vues
+**A** : barre latérale gauche pour parcourir le référentiel et accéder à d’autres options. **B** : afficher ou réduire la barre latérale gauche pour augmenter la zone d’affichage des ressources. **C** : filtrer les résultats de la recherche. **D** : sélectionner tout le contenu du dossier sélectionné. **E** : options de tri des ressources. **F** : zone de recherche. **G** : charger ou glisser-déposer des fichiers à l’aide du bouton `Add Assets`. **H** : créer un nouveau dossier. **I** : basculer entre différentes vues.
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -39,7 +38,7 @@ Vous pouvez accéder aux dossiers requis à partir de l’interface utilisateur 
 * [Collections](/help/assets/manage-collections-assets-view.md) : une collection est un ensemble de ressources, de dossiers ou d’autres collections dans la vue Assets d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs et utilisatrices. Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
 
 * [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics) : dans [!DNL Assets view], vous pouvez afficher des insights en temps réel sur votre tableau de bord. La vue Assets vous permet d’afficher des données en temps réel pour votre environnement Assets à l’aide du tableau de bord Insights. Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
-* **Corbeille** : répertorie les ressources supprimées du dossier racine **[!UICONTROL Ressources]**. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à son emplacement d’origine ou la supprimer définitivement. Vous pouvez spécifier un mot-clé ou appliquer des filtres tels que l’état, le type de fichier, le type MIME, la taille de l’image, la création, la modification et les dates d’expiration de la ressource, ainsi que le filtrage par ressources ignorées par l’utilisateur actuel. Vous pouvez également appliquer des filtres personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille . Pour plus d’informations sur l’utilisation de filtres standard et personnalisés, voir Comment [Recherche de ressources dans la vue Assets](/help/assets/search-assets-view.md).
+* **Corbeille** : répertorie les ressources supprimées du dossier racine **[!UICONTROL Ressources]**. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à son emplacement d’origine ou la supprimer définitivement. Vous pouvez spécifier un mot-clé ou appliquer des filtres tels que le statut de la ressource, le type de fichier, le type MIME, la taille de l’image, la création, la modification et les dates d’expiration des ressources, ainsi que le filtrage par ressources ignorées par la personne actuelle. Vous pouvez également appliquer des filtres personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille. Pour plus d’informations sur l’utilisation de filtres standard et personnalisés, voir Comment [Recherche de ressources dans la vue Assets](/help/assets/search-assets-view.md).
 * **Paramètres** : vous pouvez configurer différentes options de la vue Assets à l’aide des **Paramètres**, par exemple, les formulaires de métadonnées, les rapports et la gestion de la taxonomie.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -74,7 +73,7 @@ Pour prévisualiser une ressource, sélectionnez-la et cliquez sur ![icône de d
 
 ![Aperçu d’une ressource](assets/preview-asset-2.png)
 
-**A**: revenez au dossier actif ou au résultat de la recherche dans le référentiel **B**: nom et format du fichier prévisualisé **C**: affecter des tâches **D**: métadonnées avancées **E**: mots-clés et balises intelligentes **F**: commentaire et annotation **G**: affiche les tâches liées à la ressource sélectionnée. **h**: affichage et gestion des versions **I**: affiche les rendus de l’image. **J**: Modifier l’image **k**: métadonnées de base **L**: métadonnées avancées **M**: mots-clés et balises intelligentes **N**: aperçu plus précis. Zoom, plein écran et autres options **O**: passez à la ressource précédente ou suivante dans le dossier actif sans revenir au dossier
+**A** : revenir au dossier actuel ou au résultat de recherche actuel dans le référentiel. **B** : nom et format du fichier que vous prévisualisez. **C** : affecter des tâches. **D** : métadonnées avancées. **E** : mots-clés et balises intelligentes. **F** : commenter et annoter. **G** : afficher les tâches liées à la ressource sélectionnée. **H** : afficher et gérer les versions. **I** : afficher les rendus de l’image. **J** : modifier l’image. **K** : métadonnées de base **L** : métadonnées avancées. **M** : mots-clés et balises intelligentes. **N** : aperçu plus détaillé. Zoom, plein écran et autres options. **O** : passer à la ressource précédente ou suivante dans le dossier actif sans revenir au dossier.
 
 Vous pouvez également prévisualiser des vidéos.
 

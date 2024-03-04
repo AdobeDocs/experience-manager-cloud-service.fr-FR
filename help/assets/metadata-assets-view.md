@@ -3,8 +3,7 @@ title: Comment gérer les métadonnées dans la vue Assets ?
 description: Découvrez comment gérer les métadonnées dans la vue Assets. Une meilleure gestion des métadonnées rend une ressource plus accessible, plus facile à gérer et à compléter.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 95%

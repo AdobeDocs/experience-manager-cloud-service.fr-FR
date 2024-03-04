@@ -2,10 +2,9 @@
 title: Prise en main d’ [!DNL Assets View]
 description: Accès, connexion, cas d’utilisation pris en charge et problèmes connus dans [!DNL Assets View].
 role: User, Leader
-exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '334'
 ht-degree: 95%
 
 ---

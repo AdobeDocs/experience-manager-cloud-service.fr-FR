@@ -1,9 +1,8 @@
 ---
 title: Gérer les notifications
 description: Surveillez toute opération effectuée sur les ressources ou dossiers du répertoire à l’aide des notifications de la vue Assets.
-exl-id: 5c0039a2-caa2-4b55-b963-0e7e9e542c47
-source-git-commit: bdbe47a8f06d2ec1cd75103905677fcd3955632d
-workflow-type: ht
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 100%
 
