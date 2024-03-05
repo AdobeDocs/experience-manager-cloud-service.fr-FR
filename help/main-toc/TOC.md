@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2359f66c961d7678d07af12aa8173ad9169dff9c
+source-git-commit: 68f8f93b4310f29eef79ec933af4926d32a1b7a0
 workflow-type: tm+mt
-source-wordcount: '4761'
+source-wordcount: '4767'
 ht-degree: 95%
 
 ---
@@ -78,6 +78,7 @@ ht-degree: 95%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Notes de mise à jour de la maintenance 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md)
          + [Notes de mise à jour de la maintenance 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md)
          + [Notes de mise à jour de la maintenance 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
          + [Notes de mise à jour de la maintenance 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md)
@@ -783,7 +784,7 @@ ht-degree: 95%
    + [Migration](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + AEM avec des Edge Delivery Services {#edge-delivery}
-   + [Prise en main des Edge Delivery Services](/help/edge/overview.md)
+   + [Prise en main d’Edge Delivery Services](/help/edge/overview.md)
    + [Utiliser Edge Delivery](/help/edge/using.md)
    + [Guide de prise en main du développeur](/help/edge/edge-dev-getting-started.md)
    + [Créer du contenu pour Edge Delivery](/help/edge/authoring.md)
