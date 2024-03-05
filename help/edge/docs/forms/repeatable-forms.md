@@ -4,9 +4,9 @@ description: Ajout de sections répétables à un formulaire EDS
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 13%
 
 ---
@@ -14,9 +14,7 @@ ht-degree: 13%
 
 # Ajout de sections répétables à un formulaire
 
-Le bloc de formulaire adaptatif permet d’ajouter ou de rendre répétable une section ou un composant d’un formulaire.
-
-Une section répétable est un composant d’un formulaire qui est dupliqué ou répliqué plusieurs fois afin de collecter des informations pour plusieurs occurrences de données similaires.
+Le bloc de formulaire adaptatif permet d’ajouter ou de rendre répétable une section ou un composant d’un formulaire. Cela permet aux utilisateurs de saisir plusieurs fois des informations pour le même type de données, ce qui facilite la collecte d’informations telles que l’expérience professionnelle ou le cursus de formation.
 
 Prenons l’exemple d’un formulaire utilisé pour collecter des informations sur l’expérience professionnelle d’une personne. Vous pouvez avoir une section répétable pour capturer les détails de chaque emploi précédent. La section répétable contient généralement des champs tels que le nom de l’entreprise, l’intitulé du poste, les dates de début et de fin d’emploi, et les responsabilités. La personne utilisatrice peut ajouter plusieurs instances de la section répétable pour saisir des informations sur chaque emploi qu’elle a effectué.
 
@@ -27,46 +25,51 @@ Prenons l’exemple d’un formulaire utilisé pour collecter des informations s
 * [Création d’une section répétable dans un formulaire](#add-repeatable-sections-to-a-form)
 * [Définir le nombre minimum ou maximum de répétitions dans un formulaire](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
 
-## Création d’une section répétable dans un formulaire
+## Création d’une section répétable
 
 La création d’une section répétable dans un formulaire permet aux utilisateurs de saisir plusieurs instances d’un même ensemble de données, ce qui permet une collecte efficace d’informations répétitives. Pour créer une section répétable dans un formulaire :
 
-1. Accédez au dossier de projet Edge Deliver sur Microsoft SharePoint ou Google Workspace et ouvrez votre feuille de calcul. Par exemple, ouvrez une feuille de calcul nommée `job-application.xlsx`.
+1. Accédez au dossier de projet Edge Deliver sur Microsoft SharePoint ou Google Workspace et ouvrez votre feuille de calcul.
 
-1. Ajoutez un champ de formulaire avec la fonction `type` définie sur `fieldset` et activer la répétabilité en définissant `repeatable` to `true`. En outre, spécifiez une description `label` pour le champ , car il sert d’en-tête pour la section répétable.
+1. Ajoutez un champ de formulaire avec la fonction `type` définie sur `fieldset`
+1. Spécifier `Name` du champ . La propriété name est utilisée pour créer une section répétable.
+1. Activation de la répétabilité en définissant `repeatable` to `true`.
+1. Spécification d’une description `label` pour le champ . Il sert d’en-tête à la section répétable.
 
    Reportez-vous à l’image ci-dessous pour obtenir l’illustration d’une section de l’historique de l’emploi dans un formulaire de demande d’emploi.
 
    ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
 
-1. Dans le `Fieldset` de tous les champs destinés à être inclus dans une section répétable, spécifiez la propriété `Name` de l’ensemble de champs correspondant.
+1. Pour chaque champ que vous souhaitez inclure dans la section , définissez ses `Fieldset` du même nom que celui choisi à l’étape 3.
 
    Par exemple, désigner `experience` dans la propriété Fieldset de tous les champs pertinents à inclure dans la propriété `employment history` .
 
-   ![](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
+   ![exemple d’un champ de section répétable et ses propriétés](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
 1. Utilisation [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser et publier la feuille. La section répétable est ajoutée au formulaire.
 
    Sous la section répétable, les utilisateurs trouvent une **Ajouter** , ce qui facilite l’ajout de plusieurs sections.
 
-   ![section répétable, rechercher une **Ajouter** pour ajouter plusieurs sections ](/help/edge/assets/repeatable-section-example.png)
+   ![section répétable, bouton Ajouter pour ajouter plusieurs sections ](/help/edge/assets/repeatable-section-example.png)
 
 
-## Définir le nombre minimal ou maximal de répétitions pour une section répétable
+## Définition des répétitions minimales et maximales
 
 Dans la conception de formulaire, il est préférable de définir des répétitions minimales et maximales pour les sections répétables. Ce faisant, vous établissez le contrôle et la cohérence tout en guidant efficacement les utilisateurs. Pour définir un nombre minimal ou maximal de répétitions :
 
 1. Accédez au dossier de projet Edge Deliver sur Microsoft SharePoint ou Google Workspace et ouvrez votre feuille de calcul.
 
-1. Définissez la variable `min` pour spécifier le nombre minimal de répétitions de la section.
+1. Pour un champ de `type` `fieldset` et `repeatable` définie sur `true`:
+
+   * définissez la variable `min` pour spécifier le nombre minimal de répétitions de la section.
+
+   * définissez la variable `max` pour spécifier le nombre maximal de répétitions possibles de la section.
 
    ![Définissez les propriétés min. et max. pour spécifier le nombre de répétitions de la section.](/help/edge/assets/repeatable-section-set-min-max.png)
 
-1. Définissez la variable `max` pour spécifier le nombre maximal de répétitions possibles de la section.
-
 1. Utilisation [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser et publier la feuille.
 
-   Désormais, lors de l’ajout de sections répétables, les utilisateurs trouvent une **Supprimer** , ce qui simplifie le processus de suppression des sections répétables. Une fois ajoutées, ces sections ne peuvent pas être réduites à moins d’instances que spécifié par la variable `min` . Cela garantit le respect des exigences minimales définies pour la fin du formulaire.
+   Lors de l’ajout d’une section répétable, les utilisateurs trouvent une **Supprimer** , ce qui facilite la suppression des sections répétables. Une fois ajoutées, ces sections ne peuvent pas être réduites à moins d’instances que spécifié par la variable `min` . Cela garantit le respect des exigences minimales définies pour la fin du formulaire.
 
 <!--
 

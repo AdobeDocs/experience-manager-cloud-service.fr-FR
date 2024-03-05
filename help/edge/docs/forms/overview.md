@@ -4,10 +4,10 @@ description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 1%
+source-wordcount: '1120'
+ht-degree: 0%
 
 ---
 
@@ -89,9 +89,36 @@ Certaines fonctionnalités avancées sont disponibles sur demande :
 * **Envoyer une notification par courrier électronique lors de l’envoi du formulaire**: évitez les problèmes liés aux suivis manuels et garantissez une communication opportune avec notre automatisation intégrée des courriers électroniques pour les envois de formulaire. Cette solution intégrée vous permet d’informer sans effort les parties concernées, y compris d’envoyer des données de formulaire, chaque fois qu’une personne remplit un formulaire sur votre site web. Pas besoin de configurations complexes ni d’outils supplémentaires. Ils sont prêts à l’emploi.
 
 
-## Workflow
+## Blocs Forms disponibles
 
-![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow.png)
+AEM Forms Edge Delivery Service offre deux types de blocs de formulaires pour répondre à différents besoins :
+
+* **Bloc Forms de base**: il s’agit d’une option polyvalente adaptée à la création de formulaires simples avec des fonctionnalités essentielles. Il vous permet d’intégrer différents types de saisie, tels que des champs de texte, des menus déroulants et des boutons radio, ce qui vous permet de collecter efficacement les données utilisateur.
+
+* **Bloc Forms adaptatif**: ce bloc avancé déverrouille des fonctionnalités supplémentaires au-delà du bloc Forms de base, ce qui vous permet de créer des formulaires plus complexes et interactifs. Voici une liste de ses principales fonctionnalités :
+
+   * Règles : définissez des actions logiques dans vos formulaires. Vous pouvez utiliser des règles pour afficher ou masquer de manière conditionnelle des sections de formulaire, préremplir des champs en fonction des entrées de l’utilisateur et effectuer diverses validations pour garantir l’intégrité des données.
+
+   * Extensibilité côté serveur : étendez les fonctionnalités de vos formulaires en les intégrant à la logique côté serveur. Vous pouvez ainsi effectuer des calculs complexes, interagir avec des systèmes externes et automatiser des tâches spécifiques en fonction des actions de l’utilisateur dans le formulaire.
+
+   * Cross-Walk : workflows et gestion des données rationalisés : utilisez la puissance de l’AEM pour :
+
+      * Concevez des formulaires conviviaux à l’aide d’éditeurs AEM.
+
+      * Générez un &quot;document d’enregistrement&quot; pour l’archivage sécurisé et à l’épreuve des modifications des données envoyées.
+
+      * Facilitez la signature électronique avec Adobe Sign pour une expérience de signature fluide et sécurisée.
+
+      * Automatisez les processus d’entreprise par le biais de processus AEM, déclenchant des actions basées sur les envois de formulaire.
+
+      * S’intégrer facilement à diverses sources de données, vous permet un flux de données et des échanges fluides.
+
+  L’utilisation du bloc de Forms adaptatif nécessite une licence supplémentaire.
+
+### Choisir le bon bloc Forms
+
+La sélection entre les blocs Forms de base et adaptatif dépend de vos besoins spécifiques. Si vous avez besoin d’une solution simple pour collecter des informations de base sur les utilisateurs, le bloc Forms de base est idéal. Toutefois, si vos formulaires nécessitent une logique complexe, une manipulation de données, une intégration à des systèmes externes ou des processus rationalisés à l’aide de fonctionnalités AEM, et **vous disposez de la licence nécessaire.**, le bloc de Forms adaptatif offre la puissance et la flexibilité nécessaires pour atteindre vos objectifs.
+
 
 ## Commencer à créer des formulaires
 
