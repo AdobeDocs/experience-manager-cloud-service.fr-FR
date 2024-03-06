@@ -2,10 +2,10 @@
 title: Tests fonctionnels Java™
 description: Découvrez comment écrire des tests fonctionnels Java™ pour AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 100%
+source-wordcount: '877'
+ht-degree: 92%
 
 ---
 
@@ -111,6 +111,25 @@ Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ]
 >
 > Si vous avez besoin de davantage de ressources, créez un cas d’assistance clientèle et décrivez votre cas d’utilisation. L’équipe d’Adobe examine votre demande et fournit une assistance appropriée.
 
+#### Dépendances
+
+* aem-cloud-testing-clients:
+
+Les modifications à venir de l’infrastructure en conteneur utilisée pour exécuter des tests fonctionnels nécessiteront la bibliothèque . [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) utilisé dans votre test fonctionnel personnalisé pour le mettre à jour vers au moins la version **1.2.1**
+Assurez-vous que votre dépendance dans `it.tests/pom.xml` a été mis à jour.
+
+```
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+>[!NOTE]
+>
+>Cette modification sera requise après le 6 avril 2024.
+>Si vous ne mettez pas à jour la bibliothèque de dépendances, des échecs de pipeline se produiront à l’étape &quot;Tests fonctionnels personnalisés&quot;.
 
 ### Exécution locale du test {#local-test-execution}
 
@@ -153,3 +172,4 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
+
