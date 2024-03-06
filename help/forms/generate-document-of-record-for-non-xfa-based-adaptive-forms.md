@@ -3,16 +3,16 @@ title: Comment générer un document d’enregistrement (DE) pour AEM Forms ?
 description: Découvrez comment générer un modèle de document d’enregistrement (DE) pour Forms adaptatif.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
 workflow-type: tm+mt
-source-wordcount: '4124'
+source-wordcount: '4170'
 ht-degree: 92%
 
 ---
 
 # Générer un document d’enregistrement pour les formulaires adaptatifs
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 
 | Version | Lien de l’article |
@@ -345,13 +345,18 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Modèle** : si vous choisissez de sélectionner un modèle personnalisé, recherchez et sélectionnez un fichier XDP sur votre serveur [!DNL AEM Forms]. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur [!DNL AEM Forms], vous devriez au préalable charger le fichier XDP sur votre serveur [!DNL AEM Forms].
       * **Couleur d’accentuation** : la couleur dans laquelle le texte de l’en-tête et les lignes de séparation sont affichés dans le document ou l’enregistrement PDF.
       * **Famille de polices** : famille de polices du texte dans le document d’enregistrement au format PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms offre une variété de polices intégrées qui s’intègrent facilement aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
+
       * **Inclure les objets de formulaire qui ne sont pas liés au modèle de données** : la définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans le document d’enregistrement.
       * **Exclure les champs masqués du document d’enregistrement** : la définition de la propriété identifie les champs masqués à exclure du document d’enregistrement.
       * **Masquer la description des panneaux** : la définition de la propriété exclut la description du panneau/tableau du document d’enregistrement. Applicable au panneau et au tableau.
 
       ![Propriétés de base](/help/forms/assets/basicpropertiesdor.png)
 
-   1. **Propriétés des champs de formulaire** :
+   2. **Propriétés des champs de formulaire** :
       * **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées** : la définition de la propriété affiche uniquement les valeurs sélectionnées de la case à cocher et du bouton radio dans [!UICONTROL document d’enregistrement].
       * **Séparateur pour plusieurs valeurs** : vous pouvez choisir n’importe quel séparateur, tel qu’une virgule ou un saut de ligne, pour afficher plusieurs valeurs.
       * **Alignement des options** : vous pouvez sélectionner l’alignement de votre choix (horizontal, vertical, identique au formulaire adaptatif) pour définir l’alignement des champs (case à cocher ou bouton radio, par exemple) à afficher sur le [!UICONTROL document d’enregistrement]. Par défaut, l’alignement vertical est défini pour les champs du [!UICONTROL document d’enregistrement]. La définition des propriétés à partir des [!UICONTROL Propriétés des champs de formulaire] du document d’enregistrement remplace les propriétés définies dans la variable [!UICONTROL Alignement des éléments] pour les champs d’un formulaire adaptatif. Si vous sélectionnez l’option [!UICONTROL Identique au formulaire adaptatif], l’alignement tel que configuré dans une instance d’auteur de formulaire adaptatif est utilisé pour les champs du [!UICONTROL document d’enregistrement].
@@ -359,7 +364,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
       ![Propriétés des champs de formulaire](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **Propriétés du gabarit de page** :
+   3. **Propriétés du gabarit de page** :
       * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, sélectionner une image dans le gestionnaire des ressources numériques (DAM) ou en charger une à partir de votre ordinateur.
       * **Titre du formulaire** : titre du document d’enregistrement.
       * **Texte d’en-tête** : texte qui apparaît dans la section d’en-tête du document d’enregistrement.
@@ -476,6 +481,11 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
 | config/present/pdf/pdfa/conformance | Spécifie le niveau de conformité avec la spécification PDF/A. |
 | config/present/pdf/version | Spécifie la version du document PDF à générer |
 | config/present/pdf/version/map | Spécifie les polices de secours pour le document. |
+
+>[!NOTE]
+>
+> AEM Forms offre une variété de polices intégrées qui s’intègrent facilement aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### Utilisez un fichier XCI personnalisé dans votre environnement Forms as a Cloud Service
 

@@ -3,10 +3,10 @@ title: Comment générer un document d’enregistrement pour Forms adaptatif ?
 description: Découvrez comment générer un modèle pour un document d’enregistrement (DE) pour les composants principaux de Forms adaptatif.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '3108'
-ht-degree: 91%
+source-wordcount: '3131'
+ht-degree: 90%
 
 ---
 
@@ -327,6 +327,10 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Modèle** : si vous choisissez de sélectionner un modèle personnalisé, recherchez et sélectionnez un fichier XDP sur votre serveur [!DNL AEM Forms]. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur [!DNL AEM Forms], vous devez au préalable charger le fichier XDP sur votre serveur [!DNL AEM Forms].
       * **Couleur d’accentuation** : la couleur dans laquelle le texte de l’en-tête et les lignes de séparation sont affichés dans le document ou l’enregistrement PDF.
       * **Famille de polices** : famille de polices du texte dans le document d’enregistrement au format PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms offre une variété de polices intégrées qui s’intègrent facilement aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Inclure les objets de formulaire qui ne sont pas associés à un modèle de données** : la définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans le document d’enregistrement.
 
