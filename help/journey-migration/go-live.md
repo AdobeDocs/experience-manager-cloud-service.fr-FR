@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
 workflow-type: tm+mt
-source-wordcount: '1721'
-ht-degree: 93%
+source-wordcount: '1771'
+ht-degree: 91%
 
 ---
 
@@ -156,6 +156,9 @@ Passez en revue cette liste d’activités pour vous assurer d’effectuer une m
    * Les environnements de développement n’ont pas la même taille que l’évaluation et la production.
 * Effectuez une coupure et assurez-vous que la mise en service réelle est effectuée sans aucun nouveau déploiement ni mise à jour du contenu.
 * Créez des profils de notification pour les utilisateurs et les utilisatrices de l’Admin Console. Consultez [Profils de notification](/help/journey-onboarding/notification-profiles.md)
+* Envisagez de configurer des règles de filtrage du trafic afin de contrôler le trafic qui ne doit pas être autorisé sur votre site web.
+   * Les règles de filtrage du trafic de limite de taux peuvent être un outil efficace contre les attaques DDoS. Une catégorie spéciale de règles de filtrage du trafic, appelée règles WAF, nécessite une licence distincte.
+   * Voir la documentation pour certains [règles de démarrage suggérées](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 Vous pouvez toujours vous référer à cette liste au cas où vous auriez besoin de recalibrer vos tâches lors de la migration.
 
