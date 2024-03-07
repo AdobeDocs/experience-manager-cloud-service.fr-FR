@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 75767d4553e44a73154c28b3a8ff4c9267b6f863
+source-git-commit: ca65bb637c70e35ff7d7749ed7e1e66e11cdb315
 workflow-type: tm+mt
 source-wordcount: '4774'
 ht-degree: 95%
@@ -420,7 +420,7 @@ ht-degree: 95%
       + [Sélecteur de ressources micro front-end](/help/assets/asset-selector.md)
       + [Sélecteur de destinations micro front-end](/help/assets/destination-selector.md)
       + [Partager des ressources](/help/assets/share-assets.md)
-      + [Réorganisation des ressources](/help/assets/reprocessing.md)
+      + [Retraitement des ressources](/help/assets/reprocessing.md)
       + [Surveillance des activités et des tâches de gestion des ressources numériques (DAM)](/help/assets/assets-activity-history.md)
       + [Prise en main des microservices de ressources](/help/assets/asset-microservices-configure-and-use.md)
       + [Ajout et chargement de ressources](/help/assets/add-assets.md)
