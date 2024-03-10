@@ -4,10 +4,10 @@ description: Ce tutoriel vous aide à vous familiariser avec un nouveau projet A
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 0%
+source-wordcount: '1786'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ Le modèle standard AEM Forms vous permet de commencer rapidement avec un projet
 
 ### Prise en main du modèle de référentiel standard AEM Forms
 
-1. Créez un référentiel Github pour votre projet AEM. Pour créer un référentiel :
+1. Créez un référentiel GitHub pour votre projet AEM. Pour créer un référentiel :
    1. Accédez à [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
@@ -65,7 +65,7 @@ Le modèle standard AEM Forms vous permet de commencer rapidement avec un projet
    >[!NOTE]
    >
    >
-   > Si vous utilisez Github Enterprise avec le filtrage IP, vous pouvez ajouter l’adresse IP suivante à la liste autorisée : 3.227.118.73
+   > Si vous utilisez GitHub Enterprise avec le filtrage IP, vous pouvez ajouter l’adresse IP suivante à la liste autorisée : 3.227.118.73
 
    Félicitations. Un nouveau site web est en cours d’exécution sur `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -79,11 +79,11 @@ Le modèle standard AEM Forms vous permet de commencer rapidement avec un projet
 
 ### Lier votre propre source de contenu
 
-Votre référentiel Github nouvellement créé pointe vers [exemple de contenu stocké dans un dossier de lecteur Google](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Ce contenu en lecture seule constitue un excellent point de départ pour vos formulaires. N’hésitez pas à le copier dans votre propre lecteur Google et à le personnaliser en fonction de vos besoins.
+Votre référentiel GitHub nouvellement créé pointe vers [exemple de contenu stocké dans un dossier de lecteur Google](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Ce contenu en lecture seule constitue un excellent point de départ pour vos formulaires. N’hésitez pas à le copier dans votre propre lecteur Google et à le personnaliser en fonction de vos besoins.
 
 ![Exemple de contenu sur Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-Pour copier l’exemple de contenu dans votre propre dossier de contenu et pointer votre référentiel Github vers votre propre dossier de contenu :
+Pour copier l’exemple de contenu dans votre propre dossier de contenu et pointer votre référentiel GitHub vers votre propre dossier de contenu :
 
 1. Créez un dossier spécifique à votre contenu AEM dans Google Drive ou Microsoft SharePoint. Ce document utilise un dossier créé sur Microsoft SharePoint.
 
@@ -106,7 +106,7 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
 
       ![Télécharger un exemple de contenu](/help/edge/assets/download-sample-content.png)
 
-      La variable `index`, `nav`, et `footer` Les fichiers définissent la disposition de base de vos pages et changent rarement dans l’ensemble d’un projet. Ils ont également une structure spécifique différente de la plupart des autres fichiers de contenu. En examinant ces fichiers, vous vous rendrez compte de l’organisation du contenu dans AEM projets.
+      La variable `index`, `nav`, et `footer` Les fichiers définissent la disposition de base de vos pages et changent rarement dans l’ensemble d’un projet. Ils ont également une structure spécifique différente de la plupart des autres fichiers de contenu. En examinant ces fichiers, vous vous rendrez compte de l’organisation du contenu dans AEM Projets.
 
 
    1. Chargez ces fichiers dans le dossier SharePoint Microsoft ou Google Drive.
@@ -168,7 +168,7 @@ Pour prévisualiser du contenu non publié :
 
    ![AEM Sidekick - Ajout d’un projet](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-   Dès que l’extension est installée et que votre projet est ajouté, vous êtes prêt à prévisualiser et publier votre contenu à partir de votre lecteur Google.
+   Une fois l’extension installée et votre projet ajouté, vous êtes prêt à prévisualiser et publier votre contenu à partir de votre lecteur Google.
 
 1. Sélectionnez tous les documents du dossier SharePoint Microsoft ou Lecteur Google . Vous pouvez sélectionner plusieurs documents en maintenant la touche Ctrl (Windows/Linux) ou Cmd (Mac) enfoncée tout en cliquant.
 
@@ -204,7 +204,7 @@ L’exemple de contenu comprend une feuille &quot;enquête&quot; qui sert de mod
 
 ![Demander](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Commençons par mettre à jour une table de champ. Ouvrez la feuille &quot;Requête&quot; pour la modifier, modifiez le libellé du bouton Envoyer en `Let's Chat`et utilisez le sidekick pour le publier.
+Commençons par mettre à jour un libellé de champ. Ouvrez la feuille &quot;Requête&quot; pour la modifier, modifiez le libellé du bouton Envoyer en `Let's Chat`et utilisez le sidekick pour le publier.
 
 ![Demander](/help/edge/assets/enquiry-form-preview-publish.png)
 
@@ -233,7 +233,7 @@ Pour être opérationnel avec un environnement de développement AEM local en un
        npm install -g @adobe/aem-cli
    ```
 
-1. Cloner votre projet Github : clonez votre référentiel de projet depuis GitHub à l’aide de la commande suivante, en remplaçant <owner> avec le propriétaire du référentiel et <repo> avec le nom du référentiel :
+1. Cloner votre projet GitHub : clonez votre référentiel de projet depuis GitHub à l’aide de la commande suivante, en remplaçant <owner> avec le propriétaire du référentiel et <repo> avec le nom du référentiel :
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,7 +281,7 @@ Assurez-vous d’un processus de création GitHub fluide en résolvant les probl
 Si vous rencontrez l’erreur &quot;Impossible de résoudre le chemin d’accès au module &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, accédez au [Projet EDS]fichier /blocks/forms/form.js . Mettez à jour l’instruction d’importation en remplaçant le fichier lib-franklin.js par le fichier aem.js .
 
 * **Gérer les erreurs de liaison :**
-Si vous rencontrez des erreurs de ligne, vous pouvez les contourner. Ouvrez le [Projet EDS]/package.json et modifiez le script &quot;lint&quot; à partir de &quot;lint&quot; : &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; à &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Enregistrez le fichier et validez les modifications apportées à votre projet GitHub.
+Si vous rencontrez des erreurs de ligne, vous pouvez les contourner. Ouvrez le [Projet EDS]/package.json et modifiez le script &quot;lint&quot; depuis `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Enregistrez le fichier et validez les modifications apportées à votre projet GitHub.
 
 
 ## Voir également
@@ -289,9 +289,4 @@ Si vous rencontrez des erreurs de ligne, vous pouvez les contourner. Ouvrez le [
 * [Création d’un formulaire à l’aide de feuilles de calcul Google ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Envoyer des formulaires directement à vos feuilles Microsoft Excel ou Google](/help/edge/docs/forms/submit-forms.md)
 * [Modifier l’aspect de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 

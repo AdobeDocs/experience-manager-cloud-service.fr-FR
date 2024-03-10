@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '652'
 ht-degree: 17%
 
 ---
@@ -31,7 +31,7 @@ Le diagramme suivant illustre comment modifier du contenu dans Microsoft Excel o
 
 ![Architecture d’Edge Delivery.](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery Services est un ensemble de services composables qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Comme mentionné précédemment, vous pouvez utiliser les deux [Gestion de contenu AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=fr) avec [Création AEM](/help/implementing/universal-editor/introduction.md) ainsi que [création basée sur des documents](https://www.aem.live/docs/authoring)
+Edge Delivery Services est un ensemble de services composables qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Vous pouvez utiliser AEM gestion de contenu avec [Création AEM](/help/forms/creating-adaptive-form-core-components.md) ainsi que [création basée sur des documents](/help/edge/docs/forms/create-forms.md)
 
 Par exemple, vous pouvez utiliser du contenu directement à partir de Microsoft Excel ou de feuilles de calcul Google. Cela signifie que le contenu provenant de ces sources peut devenir des formulaires sur votre site web. Le nouveau contenu est ajouté instantanément sans nouveau processus de création.
 
