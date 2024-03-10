@@ -1,130 +1,134 @@
 ---
-title: Présentation du service de diffusion Edge AEM Forms
-description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des performances optimales, vous permet d’envisager l’avenir d’une collecte de données rationalisée et de l’engagement des utilisateurs.
+title: Présentation des Edge Delivery Services AEM Forms
+description: Les Edge Delivery Services AEM Forms conçus pour des performances optimales vous permettent d’envisager l’avenir de la collecte de données rationalisée et de l’engagement des utilisateurs.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
+exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 0%
+source-wordcount: '662'
+ht-degree: 17%
 
 ---
 
+# Edge Delivery Services AEM Forms
 
-# Service de diffusion Edge AEM Forms
-
-Rationalisez la création de formulaires et augmentez les taux d’achèvement grâce au service de diffusion AEM Forms Edge d’Adobe. Ce service puissant et composable vous permet de créer des formulaires d’entreprise avec des performances exceptionnelles et un attrait visuel exceptionnel. AEM donne la priorité à l’expérience utilisateur et à vos objectifs professionnels, en assurant des temps de chargement rapides et en augmentant les remplissages de formulaires.
+Rationalisez la création de formulaires et augmentez les taux d’achèvement avec les Edge Delivery Services AEM Forms d’Adobe. Ce service puissant et composable vous permet de créer des formulaires d’entreprise avec des performances exceptionnelles et un attrait visuel exceptionnel. AEM donne la priorité à l’expérience utilisateur et à vos objectifs professionnels, ce qui permet d’accélérer le chargement et d’augmenter les conversions de formulaires.
 
 Vous pouvez utiliser le service pour effectuer les opérations suivantes :
 
-* **Utilisateurs Captivate avec des formulaires époustouflants**: créez facilement des formulaires complexes et attrayants à l’aide d’une bibliothèque de composants prédéfinis. Intégrez facilement reCAPTCHA, envoyez des formulaires directement par e-mail et autorisez des téléchargements de fichiers transparents pour des solutions de stockage sécurisées telles que Sharepoint, Azure Storage et Amazon S3. Créez même vos propres composants de formulaires personnalisés pour donner vie à votre vision unique.
+* **Créer des expériences d’inscription exceptionnelles**: créez des expériences d’inscription qui se chargent et s’affichent rapidement, même sur des connexions Internet lentes. Des temps de chargement plus rapides et une expérience utilisateur optimisée contribuent à des taux d’achèvement de formulaire plus élevés et à de meilleurs taux de conversion.
 
-* **Créer des expériences d’inscription numérique avec les outils de votre choix**: augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur des documents (Microsoft 365 et Google Workspace) et AEM la création (AEM Editors). Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou Adaptive Forms Editor.
+* **Créer des expériences d’inscription avec les outils de votre choix**: augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser les deux **création basée sur des documents** (Microsoft SharePoint ou Google Drive) et **Création AEM** (Éditeur de Forms adaptatif). Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même formulaire et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou Adaptive Forms Editor.
 
-* **Créer des formulaires avec un score Lighthouse parfait**: créez des formulaires qui se chargent et s’affichent rapidement, même avec des connexions Internet lentes. Des temps de chargement plus rapides et une expérience utilisateur optimisée contribuent à des taux d’achèvement de formulaire plus élevés et à de meilleurs taux de conversion.
-
-  <div>
-    <style>
-    .image-container {
-    text-align: center; 
-    }
-    .image-container img {
-        width: 100%; /* Set image width to 100% of the container 
-    }
-</style>
-    <div class="image-container">
-    <img src="/help/edge/assets/eds-forms-key-features.png" alt="Fonctionnalités clés d’EDS Forms">
-    </div>
+* **Utilisez l’ensemble d’outils destiné aux développeurs :** AEM Forms utilise du HTML brut, du code CSS moderne et du code JavaScript vanille pour créer des expériences exceptionnelles sans la surcharge habituelle. Tout développeur possédant des connaissances de base en HTML, CSS et JS doit être en mesure de créer ses propres composants et n’avoir besoin d’apprendre aucune langue ou structure spécifique. Aucun pipeline ni aucune attente n’est nécessaire, archivez votre code dans Github et vos modifications sont en ligne. De plus, il n’est pas nécessaire d’avoir un pipeline ou d’attendre, d’archiver votre code dans Github et vos modifications sont en ligne.
 
 
-</div>
+## Présentation des Edge Delivery Services AEM Forms {#edge-overview}
 
-<!--
+Le diagramme suivant illustre comment modifier du contenu dans Microsoft Excel ou Google Sheets (modification basée sur des documents) et le publier dans des Edge Delivery Services. Il affiche également la méthode de publication AEM à l’aide de l’éditeur de Forms adaptatif.
 
-<!--
+![Architecture d’Edge Delivery.](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
+Edge Delivery Services est un ensemble de services composables qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Comme mentionné précédemment, vous pouvez utiliser les deux [Gestion de contenu AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=fr) avec [Création AEM](/help/implementing/universal-editor/introduction.md) ainsi que [création basée sur des documents](https://www.aem.live/docs/authoring)
 
-* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+Par exemple, vous pouvez utiliser du contenu directement à partir de Microsoft Excel ou de feuilles de calcul Google. Cela signifie que le contenu provenant de ces sources peut devenir des formulaires sur votre site web. Le nouveau contenu est ajouté instantanément sans nouveau processus de création.
 
-    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
+Edge Delivery Services utilise GitHub afin que les clientes et les clients puissent gérer et déployer du code directement à partir de leur référentiel GitHub. Par exemple, vous pouvez écrire des formulaires dans Google Sheets ou Microsoft Excel et les composants de vos formulaires peuvent être développés à l’aide de CSS et de JavaScript dans GitHub. Lorsque tout est prêt, vous pouvez utiliser l’extension de navigateur Sidekick pour prévisualiser et publier les mises à jour de contenu.
 
-* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+AEM Forms Edge Delivery Services fournit un bloc de formulaires, appelé [Bloc Forms adaptatif](/help/edge/docs/forms/create-forms.md) pour ajouter un formulaire à votre site d’Edge Delivery Services.
 
-    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-    
-<!--
-* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
+### Principales fonctionnalités des Edge Delivery Services AEM Forms
 
-* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
+La création basée sur les documents d’un ensemble de fonctions de base et la création AEM déverrouillent des fonctionnalités supplémentaires au-delà de la création basée sur les documents, ce qui vous permet de créer des formulaires interactifs et plus complexes. Le tableau suivant met en évidence les principales fonctionnalités de ces deux solutions :
 
-    
-    >[!NOTE]
-    >[!NOTE]
-    >
-    >
-    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+<!-- 
 
-    -->
+>[!BEGINTABS]
 
-## Fonctions clés
+>[!TAB Document-based authoring]
 
-* **Composants de champ de formulaire basés sur un HTML5**: AEM Forms Edge Delivery Service vous permet de créer des formulaires interactifs et conviviaux à l’aide de composants de formulaire basés sur HTML5. [types d’entrée](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  éléments . Ces composants répondent à différents types de collecte de données et peuvent être facilement personnalisés en fonction de vos besoins.
+Document-based authoring is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based authoring are: 
 
-* **Accessibilité**: les champs du bloc de formulaire sont accessibles. Chaque libellé est associé à son élément d’entrée respectif et les identifiants sont générés automatiquement pour la liaison. Les descriptions associées aux champs sont liées via l’attribut aria-description par . La navigation au clavier à l’aide des touches Tab/Maj + Tab standard est prise en charge.
+* **[HTML5-based Form Field components](/help/edge/docs/forms/form-components.md)**: AEM Forms Edge Delivery Services allow you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
 
-* **Style**: chaque champ de formulaire a une structure de HTML fixe qui peut être facilement décorée à l’aide de fichiers CSS ou JavaScript personnalisés. Les sélecteurs pour les champs de ciblage dans CSS et JS sont fournis en fonction du type et du nom. Vous pouvez facilement créer de nouveaux sélecteurs en raison de la structure normalisée.
+* **Accessibility**: The fields in the form block are accessible. Each label is linked with its respective input element, and IDs are auto-generated for linking. Descriptions associated with fields are linked via the aria-describedby attribute. Keyboard navigation using the standard Tab/Shift + Tab keys is supported.
 
-* **Règles**: créez facilement une logique qui ajuste la visibilité, la validation et le comportement des champs en fonction des entrées de l’utilisateur ou des conditions prédéfinies. Les règles offrent un moyen flexible et intuitif d’ajouter des informations à vos formulaires, en s’assurant qu’elles s’adaptent facilement en fonction des entrées des utilisateurs.
+* **[Styling](/help/edge/docs/forms/style-theme-forms.md)**: Each form field has a fixed HTML structure that can be easily decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS and JS are provided based on type and name. You can easily create new selectors due to the standradized structure and style your form. 
 
-* **Validations**: avant envoi, le formulaire est validé et les champs non valides sont correctement marqués avec les messages d’erreur affichés à l’utilisateur. Différents modèles sont disponibles pour l’affichage de ces erreurs.
+* **Basic Rules**: Easily create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
 
-Certaines fonctionnalités avancées sont disponibles sur demande :
+* **Validations**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Adaptive Forms block support all the HTML form validation, supported by modern browsers, and provide additional validation mechanism like validation script, file size, file type, overall file size, and more. 
 
-* **Téléchargements de fichiers**: vous pouvez ajouter des fonctions de pièce jointe à vos formulaires. Que vous ayez besoin de rassembler des documents, des images ou d’autres fichiers auprès de vos utilisateurs, la fonctionnalité de téléchargement de fichiers vous est utile sans effort. Les options de gestion personnalisées étant disponibles, vous pouvez personnaliser le processus de chargement des fichiers en fonction de vos besoins.
+* **File Uploads**: You can add file attachment capabilities to your forms. Whether you need to gather documents, images, or other files from your users, file upload functionality serves you effortlessly. With custom handling options available, you can tailor the file upload process to suit your specific requirements.
 
-* **reCAPTCHA**: profitez de l’intégration transparente de Google reCAPTCHA dans vos formulaires grâce à notre prise en charge prête à l’emploi. Protégez vos formulaires contre les activités frauduleuses, les spams et les abus, tout en maintenant une expérience utilisateur fluide et ininterrompue.
+* **reCAPTCHA**: Benefit from seamless integration of Google reCAPTCHA into your forms with our out-of-the-box (OOTB) support. Safeguard your forms against fraudulent activities, spam, and abuse, while maintaining a smooth and uninterrupted user experience. Adaptive Forms block supports reCaptcha V3 and reCaptcha Enterprise. 
 
-* **Envoyer une notification par courrier électronique lors de l’envoi du formulaire**: évitez les problèmes liés aux suivis manuels et garantissez une communication opportune avec notre automatisation intégrée des courriers électroniques pour les envois de formulaire. Cette solution intégrée vous permet d’informer sans effort les parties concernées, y compris d’envoyer des données de formulaire, chaque fois qu’une personne remplit un formulaire sur votre site web. Pas besoin de configurations complexes ni d’outils supplémentaires. Ils sont prêts à l’emploi.
+* **Send email notification on form submission**: Eliminate the hassle of manual follow-ups and ensure timely communication with our built-in email automation for form submissions. This integrated solution lets you effortlessly notify relevant parties, including sending form data, whenever someone fills out a form on your website. No need for complex configurations or additional tools – it's ready to use out of the box.
+
+>[!TAB AEM Authoring]
+
+AEM Authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. In additon to the features of Document-based authoring, AEM authoring offers the following additional features:  
+
+* Advanced Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
+
+* Server-side extensibility: Extend the functionalities of your forms by integrating them with server-side logic. This allows you to perform complex calculations, interact with external systems, and automate specific tasks based on user actions within the form.
+* Streamline workflows and data management: Leverage the power of AEM to:
+    * Design user-friendly forms using AEM editors.
+    * Generate a "Document of Record" for secure and tamper-proof archiving of submitted data.
+    * Facilitate e-signing with Adobe Sign for a smooth and secure signing experience.
+    * Automate business processes through AEM workflows, triggering actions based on form submissions.
+    * Effortlessly integrate with various data sources, enabling seamless data flow and exchange.
+
+>[!ENDTABS]
 
 
-## Blocs Forms disponibles
 
-AEM Forms Edge Delivery Service offre deux types de blocs de formulaires pour répondre à différents besoins :
+## Start creating forms
 
-* **Bloc Forms de base**: il s’agit d’une option polyvalente adaptée à la création de formulaires simples avec des fonctionnalités essentielles. Il vous permet d’intégrer différents types de saisie, tels que des champs de texte, des menus déroulants et des boutons radio, ce qui vous permet de collecter efficacement les données utilisateur.
+-->
 
-* **Bloc Forms adaptatif**: ce bloc avancé déverrouille des fonctionnalités supplémentaires au-delà du bloc Forms de base, ce qui vous permet de créer des formulaires plus complexes et interactifs. Voici une liste de ses principales fonctionnalités :
-
-   * Règles : définissez des actions logiques dans vos formulaires. Vous pouvez utiliser des règles pour afficher ou masquer de manière conditionnelle des sections de formulaire, préremplir des champs en fonction des entrées de l’utilisateur et effectuer diverses validations pour garantir l’intégrité des données.
-
-   * Extensibilité côté serveur : étendez les fonctionnalités de vos formulaires en les intégrant à la logique côté serveur. Vous pouvez ainsi effectuer des calculs complexes, interagir avec des systèmes externes et automatiser des tâches spécifiques en fonction des actions de l’utilisateur dans le formulaire.
-
-   * Cross-Walk : workflows et gestion des données rationalisés : utilisez la puissance de l’AEM pour :
-
-      * Concevez des formulaires conviviaux à l’aide d’éditeurs AEM.
-
-      * Générez un &quot;document d’enregistrement&quot; pour l’archivage sécurisé et à l’épreuve des modifications des données envoyées.
-
-      * Facilitez la signature électronique avec Adobe Sign pour une expérience de signature fluide et sécurisée.
-
-      * Automatisez les processus d’entreprise par le biais de processus AEM, déclenchant des actions basées sur les envois de formulaire.
-
-      * S’intégrer facilement à diverses sources de données, vous permet un flux de données et des échanges fluides.
-
-  L’utilisation du bloc de Forms adaptatif nécessite une licence supplémentaire.
-
-### Choisir le bon bloc Forms
-
-La sélection entre les blocs Forms de base et adaptatif dépend de vos besoins spécifiques. Si vous avez besoin d’une solution simple pour collecter des informations de base sur les utilisateurs, le bloc Forms de base est idéal. Toutefois, si vos formulaires nécessitent une logique complexe, une manipulation de données, une intégration à des systèmes externes ou des processus rationalisés à l’aide de fonctionnalités AEM, et **vous disposez de la licence nécessaire.**, le bloc de Forms adaptatif offre la puissance et la flexibilité nécessaires pour atteindre vos objectifs.
+|                                           | Création basée sur des documents | Création d’AEM (éditeur de Forms adaptatif) |
+| ----------------------------------------- | ------------------------ | ------------------------------------ |
+| **Fonctionnalité de formulaire** |                          |                                      |
+| Composants accessibles | ✓ | ✓ |
+| Structure de HTML normalisée | ✓ | ✓ |
+| Règles et validations | ✓ | ✓ |
+| Pièces jointes (téléchargement de fichier) | ✓ | ✓ |
+| reCAPTCHA de Google | ✓ | ✓ |
+| Composants personnalisés | ✓ | ✓ |
+| Envoyer par courrier électronique | ✓ | ✓ |
+| **Fonctionnalités avancées** |                          |                                      |
+| Règles avancées avec éditeur de règles visuel |                          | ✓ |
+| Extensibilité côté serveur |                          | ✓ |
+| Actions d’envoi multiples |                          | ✓ |
+| **Conception et gestion de formulaires** |                          |                                      |
+| Éditeur Forms adaptatif pour la modification WYSIWYG |                          | ✓ |
+| **Intégrations** |                          |                                      |
+| Document d’enregistrement |                          | ✓ |
+| Intégration à Adobe Sign |                          | ✓ |
+| Intégration avec Adobe Analytics |                          | ✓ |
+| Intégration à Marketo |                          | ✓ |
+| Intégration à plusieurs sources de données |                          | ✓ |
+| Actions d’envoi multiples |                          | ✓ |
 
 
 ## Commencer à créer des formulaires
 
+* [Prise en main - tutoriel pour les développeurs](/help/edge/docs/forms/tutorial.md)
+* [Création d’un formulaire à l’aide de feuilles de calcul Google ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Envoyer des formulaires directement à vos feuilles Microsoft Excel ou Google](/help/edge/docs/forms/submit-forms.md)
+* [Amélioration de l’aspect de vos formulaires : guide de mise en forme](/help/edge/docs/forms/style-theme-forms.md)
+
+
+<!-- 
+
+## Start creating forms
+
 <div>
 
-<style>
+  <style>
     .card-container {
         width: calc(33.33% - 10px);;
         margin: 5px;
@@ -142,66 +146,66 @@ La sélection entre les blocs Forms de base et adaptatif dépend de vos besoins 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Création d’un formulaire à l’aide de formulaires AEM" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Création d’un formulaire à l’aide de feuilles de calcul Google ou de Microsoft Excel</b>
+            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Create a form using eds forms" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Create a form using Google Sheets or Microsoft Excel</b>
         </a>
-        <p>Créez des formulaires qui se chargent et s’affichent rapidement et automatiquement sur les périphériques mobiles.</p>
+        <p>Create forms that load and render quickly and automatically reflows on mobile devices.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Envoyer le formulaire" alt="Utilisation de fragments de formulaire dans un formulaire EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Envoyer le formulaire à la feuille de calcul</b>
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Submit form to spreadsheet</b>
         </a>
-        <p>Envoyez des formulaires directement à vos feuilles Microsoft Excel ou Google.</p>
+        <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
     </div>
      <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Application de styles ou de thèmes à un formulaire de texte" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Personnalisation d’un thème</b>
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Customize a theme</b>
         </a>
-        <p>Créez une image de marque cohérente en appliquant le même thème à tous les formulaires.</p>
+        <p>Create a consistent brand image by applying the same theme across forms.</p>
     </div>
       <div class="card-container">
         <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Ajouter des validations à des champs de formulaire" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Appliquer les validations de champ</b>
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Apply field validations</b>
         </a>
-        <p>Réduisez les erreurs et les frustrations en vérifiant les entrées du formulaire pour une mise en forme correcte.</p>
+        <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
     </div> 
             <div class="card-container">
         <a href="/help/edge/docs/forms/rules-forms.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Utilisation de règles pour ajouter un comportement dynamique à un formulaire" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Utilisation de règles pour ajouter un comportement dynamique à un formulaire</b>
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use rules to add dynamic behaviour to a form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Use rules to add dynamic behaviour to a form</b>
         </a>
-        <p>Réutilisation de fragments préconfigurés dans plusieurs formulaires.</p>
+        <p>Reuse preconfigured fragments across multiple forms.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
-            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Traduire un formulaire EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Traduire un formulaire</b>
+            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Translate a form</b>
         </a>
-        <p>Étendez la portée de vos formulaires tout en surveillant les coûts.</p>
+        <p>Extend the reach of your forms while keeping costs in check.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
-            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Ajout de sections répétables à un formulaire EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Ajout de sections répétables</b>
+            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Add repeatable sections</b>
         </a>
-        <p>Créez et ajoutez facilement des sections répétables à un formulaire.</p>
+        <p>Effortlessly create and add repeatable sections to a form.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/custom-components-forms.md"> 
-            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Création de composants de formulaires personnalisés à l’aide du code JavaScript et CSS standard"  style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Création de composants personnalisés</b>
+            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Create custom forms components using standard JavaScript and CSS"  style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Create custom components</b>
         </a>
-        <p>Utilisez JavaScript et CSS standard pour créer des composants et des thèmes.</p>
+        <p>Use standard JavaScript and CSS to create components and themes.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Utiliser reCAPTCHA dans un formulaire EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Utiliser reCAPTCHA</b>
+            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Use reCAPTCHA</b>
         </a>
-        <p>Utilisez l’intégration reCAPTCHA prête à l’emploi pour une protection robuste contre les spams et les robots.</p>
+        <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>
     </div>
 
 
@@ -211,10 +215,4 @@ La sélection entre les blocs Forms de base et adaptatif dépend de vos besoins 
 </br>
 
 
-
-
-
-
-
-
-
+-->
