@@ -4,10 +4,10 @@ description: Ce tutoriel vous aide à vous familiariser avec un nouveau projet A
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 1%
+source-wordcount: '1803'
+ht-degree: 0%
 
 ---
 
@@ -198,31 +198,29 @@ Pour prévisualiser du contenu non publié :
 
    [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### Mettre à jour votre formulaire
+### Création d’un formulaire
 
-1. Accédez à votre dossier SharePoint Microsoft ou Lecteur Google .
+L’exemple de contenu comprend une feuille &quot;enquête&quot; qui sert de modèle pour le formulaire &quot;enquête&quot;. Chaque ligne de la feuille représente une [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components)et les en-têtes de colonne définissent la variable [propriétés de champ](/help/edge/docs/forms/form-components.md#available-components). Cet exemple de formulaire vous donne un aperçu de la création de votre formulaire.
 
-1. Ouvrez le `enquiry.xlsx` pour édition.
+![Demander](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-   ![Demander](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+Commençons par mettre à jour une table de champ. Ouvrez la feuille &quot;Requête&quot; pour la modifier, modifiez le libellé du bouton Envoyer en `Let's Chat`et utilisez le sidekick pour le publier.
 
-1. Remplacez le libellé du bouton d’envoi par `Let's Chat`.
+![Demander](/help/edge/assets/enquiry-form-preview-publish.png)
 
-   ![Demander](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. Utilisez AEM Sidekick pour prévisualiser et publier le `enquiry.xlsx` fichier .
-
-   ![Demander](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. Pour prévisualiser le formulaire de demande, accédez à l&#39;URL suivante :
+Pour prévisualiser le formulaire de demande mis à jour, accédez à l&#39;URL suivante :
 
 
-   ```HTML
-   https://<branch>--<repository>--<owner>.hlx.page/enquiry
-   ```
+```HTML
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+```
 
-   Le libellé du bouton d’envoi est mis à jour. Maintenant, remplissez le formulaire et cliquez sur le bouton d’envoi. Vous rencontrez une erreur, semblable à la suivante, car la feuille de calcul n’est pas [défini pour accepter les données](/help/edge/docs/forms/submit-forms.md).
+Le libellé du bouton d’envoi est mis à jour vers `Let's Chat`.
 
+![Demander](/help/edge/assets/updated-form.png)
+
+Pour plus d’informations sur la création et la publication d’un nouveau formulaire, passez à la section [création d’un formulaire](/help/edge/docs/forms/create-forms.md) guide.
 
 ### Commencer à développer le style et les fonctionnalités
 
