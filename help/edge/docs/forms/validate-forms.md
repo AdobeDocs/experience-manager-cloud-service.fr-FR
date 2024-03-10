@@ -1,24 +1,24 @@
 ---
-title: De feuilles de calcul à Forms - Maîtriser les validations de champs de bloc de formulaire adaptatif
-description: Créez des formulaires puissants plus rapidement à l’aide de feuilles de calcul et de champs de bloc de formulaire adaptatif ! Ce guide vous aide à créer des validations personnalisées pour les champs Bloc Forms d’EDS.
+title: De feuilles de calcul à Forms - Maîtriser les validations de champs de bloc Forms adaptatif
+description: Créez des formulaires puissants plus rapidement à l’aide de feuilles de calcul et de champs de bloc Forms adaptatifs ! Ce guide vous aide à créer des validations personnalisées pour les champs Bloc Forms d’EDS.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-
 # Ajouter des validations à des champs de formulaire
 
-Le bloc de formulaire adaptatif comporte des fonctions de validation intégrées. Ces validations sont automatiquement appliquées dans les navigateurs modernes en fonction du type de champ choisi et des propriétés supplémentaires fournies.
+Le bloc de Forms adaptatif dispose de fonctionnalités de validation intégrées. Ces validations sont automatiquement appliquées dans les navigateurs modernes en fonction du type de champ choisi et des propriétés supplémentaires fournies.
 
 ## Présentation des types de champ et validation
 
-Le bloc de formulaire adaptatif prend en charge un large éventail de [Types d’entrée HTML-5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), y compris le texte, l’adresse électronique, le numéro, la date, etc. Il prend également en charge [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), sélectionnez et le jeu de champs, ainsi que des fonctionnalités complètes de validation des entrées inhérentes au HTML-5.
+Le bloc de Forms adaptatif prend en charge un large éventail de [Types d’entrée HTML-5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), y compris le texte, l’adresse électronique, le numéro, la date, etc. Il prend également en charge [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), sélectionnez et le jeu de champs, ainsi que des fonctionnalités complètes de validation des entrées inhérentes au HTML-5.
 
 utilise les types de champs de HTML pour définir le type de données qu’un utilisateur peut entrer. Les différents types de champ ont des règles de validation intégrées différentes :
 
@@ -29,10 +29,4 @@ URL : ce type de champ valide la saisie de l’utilisateur par rapport à un for
 Tel : ce type de champ est spécialement conçu pour les numéros de téléphone et peut déclencher une validation en fonction de formats de pays spécifiques (non pris en charge universellement).
 
 
-## En savoir plus
 
-* [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
-* [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)
-* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-forms.md)
-* [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
-* [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)

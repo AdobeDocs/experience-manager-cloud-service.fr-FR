@@ -4,13 +4,13 @@ description: Découvrez comment configurer les pages de remerciement et la redir
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
 
 ---
-
 
 # Afficher la page de remerciement ou le formulaire de redirection après envoi
 
@@ -20,14 +20,14 @@ Une fois qu’un utilisateur a envoyé un formulaire, il est essentiel de fourni
 
 * **Rediriger**: une redirection joue un rôle essentiel pour orienter les utilisateurs vers des destinations pertinentes, optimiser l’engagement et, en fin de compte, augmenter les taux de conversion. En guidant de manière transparente les utilisateurs vers l’étape suivante de leur parcours, une redirection garantit une navigation fluide. Par exemple, rediriger l’utilisateur vers la page des paiements après avoir collecté les détails initiaux.
 
-Dans le bloc Forms adaptatif, le comportement par défaut est d’afficher une page de remerciement. Vous avez toutefois la possibilité de personnaliser cette expérience en fonction de vos besoins spécifiques. Les options incluent :
+Dans le bloc Forms adaptatif, le comportement par défaut consiste à afficher une page de remerciement. Vous avez toutefois la possibilité de personnaliser cette expérience en fonction de vos besoins spécifiques. Les options incluent :
 
 * [Configuration de la page de remerciement et du message pour vous aligner sur vos objectifs en matière de marque et de communication](#configuring-the-thank-you-page-and-message)
 * [Redirection des utilisateurs vers une autre page après envoi pour effectuer d’autres actions](#redirect-users-to-another-page-post-submission)
 
 ## Configuration de la page de remerciement et du message
 
-Le comportement par défaut du bloc Forms adaptatif est d’afficher la page de remerciement lors de l’envoi. Pour configurer la page de remerciement de votre bloc Adaptive Forms, procédez comme suit :
+Le comportement par défaut du bloc Forms adaptatif est d’afficher la page &quot;Merci&quot; lors de l’envoi. Pour configurer la page de remerciement de votre bloc de Forms adaptatif, procédez comme suit :
 
 1. Accédez à votre dossier de projet de diffusion Edge AEM sur Microsoft SharePoint ou Google Workspace.
 1. Créez un fichier Microsoft Word ou Google Docs nommé &quot;Merci&quot; dans le répertoire de votre projet.
@@ -37,11 +37,11 @@ Le comportement par défaut du bloc Forms adaptatif est d’afficher la page de 
 
 1. Utilisez AEM Sidekick pour prévisualiser et publier le fichier &quot;thankyou&quot;.
 
-Votre bloc Forms adaptatif affiche la page de remerciement lors de l’envoi du formulaire.
+Votre bloc de Forms adaptatif affiche la page de remerciement lors de l’envoi du formulaire.
 
 ## Rediriger les utilisateurs vers une autre page après envoi
 
-Par défaut, le bloc Forms adaptatif redirige les utilisateurs vers la page de remerciement. Pour rediriger les utilisateurs vers une page autre que la page de remerciement par défaut, deux options s’offrent à vous :
+Par défaut, le bloc de Forms adaptatif redirige les utilisateurs vers la page de remerciement. Pour rediriger les utilisateurs vers une page autre que la page de remerciement par défaut, deux options s’offrent à vous :
 
 * [Remplacez la page &quot;Merci&quot; par une autre page.](#replace-the-existing-thankyou-page)
 * [Utiliser les redirections de site web pour la redirection de page &quot;Merci&quot;](#use-website-redirects-for-thankyou-page-redirection)
@@ -63,9 +63,9 @@ Par défaut, le bloc Forms adaptatif redirige les utilisateurs vers la page de r
 
    >[!NOTE]
    >
-   > Assurez-vous qu’il existe une page portant le même nom dans le dossier de projet du service de diffusion Edge sur Microsoft SharePoint ou Google Workspace. Si la page n’existe pas, créez-la et publiez-la.
+   > Assurez-vous qu’il existe une page portant le même nom dans le dossier du projet Edge Delivery Services sur Microsoft SharePoint ou Google Workspace. Si la page n’existe pas, créez-la et publiez-la.
 
-1. Continuez pour archiver le dossier &quot;form.js&quot; mis à jour et ses fichiers sous-jacents dans votre projet de service de diffusion Edge sur GitHub. Cette mise à jour garantit que le formulaire redirige désormais vers la page mise à jour, comme indiqué.
+1. Continuez à archiver le dossier &quot;form.js&quot; mis à jour et ses fichiers sous-jacents dans votre projet Edge Delivery Services sur GitHub. Cette mise à jour garantit que le formulaire redirige désormais vers la page mise à jour, comme indiqué.
 
 1. Assurez-vous que la page existe dans votre dossier de projet EDS et publiez-la.
 

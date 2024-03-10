@@ -1,20 +1,19 @@
 ---
 title: Préparation de votre feuille de calcul pour l’acceptation des données
-description: Créez des formulaires puissants plus rapidement à l’aide de feuilles de calcul et de champs de bloc de formulaire adaptatif !
+description: Créez des formulaires puissants plus rapidement à l’aide de feuilles de calcul et de champs de bloc Forms adaptatifs !
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '971'
 ht-degree: 1%
 
 ---
 
-
 # Préparation de votre feuille de calcul pour l’acceptation des données
 
-![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données.
 
@@ -33,13 +32,21 @@ Pour activer la feuille de calcul :
    >
    > Si la variable `incoming` n’est pas présente, AEM n’envoie aucune donnée à la feuille de calcul.
 
-1. Faire correspondre les noms des champs de formulaire, les valeurs de `Name` dans la colonne`shared-default` en-tête de la feuille `incoming` feuille.
+1. Dans cette feuille, insérez un tableau nommé &quot;prise_forme&quot;. Sélectionnez le nombre de colonnes requis pour correspondre aux noms des champs de votre formulaire. Ensuite, dans la barre d’outils, accédez à Insérer > Tableau et cliquez sur OK.
 
-   Chaque valeur de la variable `Name` de la colonne `shared-default` , à l’exception du bouton d’envoi, sert d’en-tête dans la `incoming` feuille. Prenons l’exemple de l’image suivante illustrant les en-têtes d’un formulaire de &quot;contact-us&quot; :
+1. Remplacez le nom de la table par &quot;ingestion_form&quot;. Dans Microsoft Excel, pour modifier le nom du tableau, sélectionnez-le, puis cliquez sur Conception de tableau.
+
+1. Ajoutez ensuite les noms des champs de formulaire en tant qu’en-têtes de tableau. Pour vous assurer que les champs sont exactement les mêmes, vous pouvez les copier et les coller à partir de la feuille &quot;shared-default&quot;.  Dans votre feuille &quot;shared-default&quot;, sélectionnez et copiez les ID de formulaire répertoriés sous la colonne &quot;Nom&quot;, à l’exception du champ d’envoi.
+
+1. Dans la feuille &quot;entrante&quot;, sélectionnez Coller spécial > Transposer les lignes en colonnes pour copier les identifiants de champ sous forme d’en-têtes de colonne dans cette nouvelle feuille. Conservez uniquement les champs dont les données doivent capturer d’autres champs qui peuvent être ignorés.
+
+   Chaque valeur de la variable `Name` de la colonne `shared-default` , à l’exception du bouton d’envoi, peut servir d’en-tête dans la `incoming` feuille. Prenons l’exemple de l’image suivante illustrant les en-têtes d’un formulaire de &quot;contact-us&quot; :
 
    ![Champs d’un formulaire de contact](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Utilisez le sidekick pour prévisualiser la feuille.
+
+
+1. Utilisez l’extension AEM Sidekick pour prévisualiser les mises à jour du formulaire. Votre feuille est maintenant prête à accepter les envois de formulaire entrants.
 
    >[!NOTE]
    >
@@ -48,23 +55,11 @@ Pour activer la feuille de calcul :
 
 Une fois que les noms de champ sont ajoutés au `incoming` , votre formulaire devient prêt à accepter les envois. Vous pouvez prévisualiser le formulaire et envoyer les données à la feuille à l’aide de celui-ci.
 
+Une fois la feuille configurée pour recevoir des données, vous pouvez [prévisualiser le formulaire à l’aide du bloc Forms adaptatif](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [utilisation de requêtes de POST](#use-admin-apis-to-send-data-to-your-sheet) pour commencer à envoyer des données à la feuille.
 
-
-Vous constatez également les modifications suivantes dans votre feuille de calcul :
-
-Une feuille nommée &quot;Slack&quot; est ajoutée à votre classeur Excel ou à votre feuille de calcul Google. Dans cette feuille, vous pouvez configurer des notifications automatiques pour un canal de Slack désigné chaque fois que de nouvelles données sont ingérées dans votre feuille de calcul. Actuellement, AEM prend en charge les notifications exclusivement destinées à l’organisation de Slack d’ingénierie AEM et à l’Adobe d’assistance aux entreprises.
-
-1. Pour configurer les notifications de Slack, saisissez l’&quot;TeamId&quot; de l’espace de travail du Slack et le &quot;nom du canal&quot; ou &quot;ID&quot;. Vous pouvez également demander au slack-bot (avec la commande debug) pour &quot;TeamId&quot; et &quot;channel ID&quot;. Il est préférable d’utiliser &quot;l’identifiant du canal&quot; plutôt que le &quot;nom du canal&quot;, car cela permet de survivre aux renommes du canal.
-
-   >[!NOTE]
-   >
-   > Les formulaires plus anciens ne contenaient pas la colonne &quot;TeamId&quot;. L’ID d’équipe a été inclus dans la colonne du canal, séparé par un &quot;#&quot; ou &quot;/&quot;.
-
-1. Saisissez le titre de votre choix et sous les champs , saisissez le nom des champs que vous souhaitez voir dans la notification du Slack. Chaque en-tête doit être séparé par une virgule (par exemple, nom, email).
-
-   >[!WARNING]
-   >
-   >  Jamais les feuilles &quot;shared-default&quot; ne devraient contenir d’informations d’identification personnelle ou de données sensibles que vous ne connaissez pas lorsque vous êtes connecté au public.
+>[!WARNING]
+>
+>  Jamais les feuilles &quot;shared-default&quot; ne devraient contenir d’informations d’identification personnelle ou de données sensibles que vous ne connaissez pas lorsque vous êtes connecté au public.
 
 
 ## (Facultatif) Utilisez les API d’administration pour activer une feuille de calcul afin d’accepter des données.
@@ -155,6 +150,11 @@ Pour utiliser les API d’administration afin d’activer une feuille de calcul 
 
    Votre formulaire peut maintenant accepter des données. Vous constatez également les modifications suivantes dans votre feuille de calcul :
 
+## Modifications automatiques de la feuille une fois qu’elle est activée pour accepter les données.
+
+
+Une fois que la feuille est configurée pour recevoir des données, vous constatez les modifications suivantes dans votre feuille de calcul :
+
 Une feuille nommée &quot;Slack&quot; est ajoutée à votre classeur Excel ou à votre feuille de calcul Google. Dans cette feuille, vous pouvez configurer des notifications automatiques pour un canal de Slack désigné chaque fois que de nouvelles données sont ingérées dans votre feuille de calcul. Actuellement, AEM prend en charge les notifications exclusivement destinées à l’organisation de Slack d’ingénierie AEM et à l’Adobe d’assistance aux entreprises.
 
 1. Pour configurer les notifications de Slack, saisissez l’&quot;TeamId&quot; de l’espace de travail du Slack et le &quot;nom du canal&quot; ou &quot;ID&quot;. Vous pouvez également demander au slack-bot (avec la commande debug) pour &quot;TeamId&quot; et &quot;channel ID&quot;. Il est préférable d’utiliser &quot;l’identifiant du canal&quot; plutôt que le &quot;nom du canal&quot;, car cela permet de survivre aux renommes du canal.
@@ -165,16 +165,14 @@ Une feuille nommée &quot;Slack&quot; est ajoutée à votre classeur Excel ou à
 
 1. Saisissez le titre de votre choix et sous les champs , saisissez le nom des champs que vous souhaitez voir dans la notification du Slack. Chaque en-tête doit être séparé par une virgule (par exemple, nom, email).
 
+   >[!WARNING]
+   >
+   >  Jamais les feuilles &quot;shared-default&quot; ne devraient contenir d’informations d’identification personnelle ou de données sensibles que vous ne connaissez pas lorsque vous êtes connecté au public.
 
-La feuille est maintenant configurée pour recevoir des données, vous pouvez [prévisualiser le formulaire à l’aide du bloc de formulaire adaptatif](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [utilisation de requêtes de POST](#use-admin-apis-to-send-data-to-your-sheet) pour commencer à envoyer des données à la feuille.
-
->[!WARNING]
->
->  Jamais les feuilles &quot;shared-default&quot; ne devraient contenir d’informations d’identification personnelle ou de données sensibles que vous ne connaissez pas lorsque vous êtes connecté au public.
 
 ## Envoi de données à votre feuille {#send-data-to-your-sheet}
 
-Une fois la feuille définie pour recevoir des données, vous pouvez [prévisualiser le formulaire à l’aide du bloc de formulaire adaptatif](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [Utilisation des API d’administration](#use-admin-apis-to-send-data-to-your-sheet) pour commencer à envoyer des données à la feuille.
+Une fois la feuille définie pour recevoir des données, vous pouvez [prévisualiser le formulaire à l’aide du bloc Forms adaptatif](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [Utilisation des API d’administration](#use-admin-apis-to-send-data-to-your-sheet) pour commencer à envoyer des données à la feuille.
 
 ### Utiliser les API d’administration pour envoyer des données à votre feuille
 
@@ -288,10 +286,3 @@ Il existe plusieurs manières de formater les données de formulaire dans le cor
 
 Vous pouvez ensuite personnaliser le message de remerciement, [configurer une page de remerciement](/help/edge/docs/forms/thank-you-page-form.md), ou [redirections de jeux](/help/edge/docs/forms/thank-you-page-form.md).
 
-## En savoir plus
-
-* [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
-* [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)
-* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-forms.md)
-* [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
-* [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)

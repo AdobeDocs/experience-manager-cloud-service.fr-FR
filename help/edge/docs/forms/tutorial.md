@@ -4,9 +4,9 @@ description: Ce tutoriel vous aide à vous familiariser avec un nouveau projet A
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ A l&#39;ère numérique actuelle, la création de formulaires conviviaux est ess
 
 Ces formulaires envoient directement des données à un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser un écosystème dynamique et des API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou lancer un processus d’entreprise existant.
 
-AEM Forms fournit un bloc, appelé Bloc de formulaire adaptatif, pour vous aider à créer facilement des formulaires pour capturer et stocker les données capturées.
+AEM Forms fournit un bloc, appelé Bloc Forms adaptatif, qui vous aide à créer facilement des formulaires pour capturer et stocker les données capturées. Vous pouvez créer un projet AEM prééquipé avec le bloc Forms adaptatif ou ajouter le bloc Forms adaptatif à un projet AEM existant.
 
 Ce tutoriel AEM Forms vous guide tout au long des étapes de création, de prévisualisation et de publication de votre propre formulaire personnalisé avec un nouveau projet Adobe Experience Manager (AEM) Forms. Vous apprendrez également à ajouter un bloc Forms adaptatif à un projet AEM existant.
 
@@ -39,18 +39,19 @@ Ce tutoriel AEM Forms vous guide tout au long des étapes de création, de prév
 
 ## Créez un projet AEM prééquipé avec le bloc Forms adaptatif
 
-Le modèle standard AEM Forms vous permet de commencer rapidement avec un projet AEM préconfiguré avec le bloc de formulaire adaptatif. Il s’agit de la méthode la plus rapide et la plus simple pour suivre AEM bonnes pratiques et passer directement à la création de vos formulaires.
+Le modèle standard AEM Forms vous permet de commencer rapidement avec un projet AEM préconfiguré avec le bloc Forms adaptatif. Il s’agit de la méthode la plus rapide et la plus simple pour suivre AEM bonnes pratiques et passer directement à la création de vos formulaires.
 
 ### Prise en main du modèle de référentiel standard AEM Forms
 
-1. Connectez-vous à votre compte Github.
-1. Accédez à [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
+1. Créez un référentiel Github pour votre projet AEM. Pour créer un référentiel :
+   1. Accédez à [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
-   ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
-1. Cliquez sur **Utiliser ce modèle** et sélectionnez la variable **Création d’un référentiel** et sélectionnez l’emplacement où vous souhaitez créer ce référentiel.
-   ![Création d’un référentiel à l’aide du standard AEM Forms](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+      ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
+   1. Cliquez sur le bouton **Utiliser ce modèle** et sélectionnez l’option **Création d’un référentiel** . L’écran Créer un référentiel s’affiche.
 
-   Adobe recommande que le référentiel soit défini sur public. Dans l’écran Créer un référentiel , sélectionnez l’option **public** .
+      ![Création d’un référentiel à l’aide du standard AEM Forms](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+
+   1. Dans l’écran de création d’un référentiel, sélectionnez l’option **propriétaire**, et spécifiez **Nom du référentiel** . Adobe recommande que le référentiel soit défini sur **Public**. Ainsi, sélectionnez la variable **public** puis cliquez sur **Créer un référentiel**.
 
    ![Définir le référentiel public](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
@@ -61,35 +62,43 @@ Le modèle standard AEM Forms vous permet de commencer rapidement avec un projet
 
    ![Définir le référentiel public](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
 
-       >[!REMARQUE]
-       >
-       >
-       > Si vous utilisez Github Enterprise avec le filtrage IP, vous pouvez ajouter l’adresse IP suivante à la liste autorisée : 3.227.118.73
-   
-   Félicitations. Un nouveau site web est en cours d’exécution sur `https://<branch>--<repo>--<owner>.hlx.page/`. Dans l’exemple ci-dessus, cela signifie que [https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   >[!NOTE]
+   >
+   >
+   > Si vous utilisez Github Enterprise avec le filtrage IP, vous pouvez ajouter l’adresse IP suivante à la liste autorisée : 3.227.118.73
+
+   Félicitations. Un nouveau site web est en cours d’exécution sur `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>` fait référence à la branche de votre référentiel GitHub.
    * `<repository>` indique votre référentiel GitHub.
    * `<owner>` fait référence au nom d’utilisateur de votre compte GitHub qui héberge votre référentiel GitHub.
 
+   Par exemple, si le nom de la branche est `main`, le référentiel `wefinance`, et le propriétaire est `wkndforms`, le site web serait opérationnel sur [https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
 
-### Lier votre propre source de contenu à l’aide de Google Drive
 
-Votre référentiel Boilerplate dupliqué de GitHub pointe vers certains [exemple de contenu stocké dans un dossier de lecteur Google](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Ce contenu en lecture seule constitue un excellent point de départ pour vos formulaires. N’hésitez pas à le copier dans votre propre lecteur Google et à le personnaliser en fonction de vos besoins.
+
+### Lier votre propre source de contenu
+
+Votre référentiel Github nouvellement créé pointe vers [exemple de contenu stocké dans un dossier de lecteur Google](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Ce contenu en lecture seule constitue un excellent point de départ pour vos formulaires. N’hésitez pas à le copier dans votre propre lecteur Google et à le personnaliser en fonction de vos besoins.
 
 ![Exemple de contenu sur Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-Pour lier votre propre contenu, procédez comme suit :
+Pour copier l’exemple de contenu dans votre propre dossier de contenu et pointer votre référentiel Github vers votre propre dossier de contenu :
 
 1. Créez un dossier spécifique à votre contenu AEM dans Google Drive ou Microsoft SharePoint. Ce document utilise un dossier créé sur Microsoft SharePoint.
 
 1. Partagez le dossier avec l’utilisateur Adobe Experience Manager (helix@adobe.com).
 
-   ![Utilisez l’option Gérer l’accès pour partager un dossier avec AEM utilisateur.](/help/edge/assets/share-folder-with-aem-user.png)
+   ![Utilisez l’option Gérer l’accès pour partager un dossier avec AEM User - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
+
+   ![Utilisez l’option Gérer l’accès pour partager un dossier avec AEM User - Google Drive](/help/edge/assets/share-google-drive-folder.png)
+
 
    Assurez-vous que vous avez fourni des droits de modification sur le dossier à l’utilisateur Adobe Experience Manager.
 
-   ![Partager le dossier avec AEM utilisateur, accorder des droits d’édition](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![Partager le dossier avec AEM utilisateur, fournir les droits d’édition - SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+
+   ![Partager le dossier avec l’utilisateur AEM, fournir les droits d’édition - Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
 
 1. Copiez le [exemple de contenu stocké dans le dossier de lecteur Google](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) dans votre dossier . Pour copier :
 
@@ -108,7 +117,6 @@ Pour lier votre propre contenu, procédez comme suit :
 
 1. Maintenant que votre dossier de contenu est configuré, il est temps de le lier à votre projet sur GitHub que vous avez créé à l’aide du standard AEM Forms. Pour vous connecter :
 
-   1. Connectez-vous à votre compte Github.
    1. Accédez au référentiel GitHub que vous avez créé précédemment à l’aide d’AEM Forms Boilerplate.
    1. Ouvrez le `fstab.yaml` pour édition.
    1. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec l’utilisateur AEM (helix@adobe.com).
@@ -132,17 +140,15 @@ Pour lier votre propre contenu, procédez comme suit :
 
 
 
-   1. Validez le fichier &#39;fsatb.yaml mis à jour, une fois que vous avez mis à jour la référence et que tout semble correct. Vous enregistrez ainsi votre travail et connectez votre dossier de contenu à votre site web.
+   1. Valider la mise à jour `fsatb.yaml` une fois que vous avez mis à jour la référence et que tout semble correct. Si vous rencontrez des problèmes de version, reportez-vous à la section [Résolution des problèmes de génération GitHub](#troubleshooting-github-build-issues).
+
+
 
       ![Validez le fichier fsatab.yaml mis à jour](/help/edge/assets/commit-updated-fstab-yaml.png)
 
+      Cela connecte votre dossier de contenu à votre site web. Après la mise à jour de la référence, vous pouvez rencontrer des erreurs &quot;404 Not Found&quot; (404 introuvable). En effet, votre contenu n’a pas encore été prévisualisé. La section suivante explique comment commencer à créer et prévisualiser votre contenu.
 
-      >[!NOTE]
-      >
-      >
-      >Après la mise à jour de la référence, vous pouvez rencontrer des erreurs &quot;404 Not Found&quot; (404 introuvable). En effet, votre contenu n’a pas encore été prévisualisé. La section suivante explique comment commencer à créer et prévisualiser votre contenu.
-
-
+      ![Validez le fichier fsatab.yaml mis à jour](/help/edge/assets/aem-forms-project-folder-error.png)
 
 ### Prévisualiser et publier votre contenu
 
@@ -175,8 +181,8 @@ Pour prévisualiser du contenu non publié :
    Lors de la prévisualisation des fichiers, les nouveaux onglets du navigateur affichent les documents. Pour prévisualiser l’exemple de formulaire, accédez à l’URL suivante :
 
 
-   ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.live
    ```
 
    * `<branch>` fait référence à la branche de votre référentiel GitHub.
@@ -190,7 +196,32 @@ Pour prévisualiser du contenu non publié :
 
 
 
-   [https://main—wefinance—wkndforms.hlx.page/enquiry](https://main--wefinance--wkndforms.hlx.page/enquiry).
+   [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+
+### Mettre à jour votre formulaire
+
+1. Accédez à votre dossier SharePoint Microsoft ou Lecteur Google .
+
+1. Ouvrez le `enquiry.xlsx` pour édition.
+
+   ![Demander](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. Remplacez le libellé du bouton d’envoi par `Let's Chat`.
+
+   ![Demander](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. Utilisez AEM Sidekick pour prévisualiser et publier le `enquiry.xlsx` fichier .
+
+   ![Demander](/help/edge/assets/enquiry-form-preview-publish.png)
+
+1. Pour prévisualiser le formulaire de demande, accédez à l&#39;URL suivante :
+
+
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.page/enquiry
+   ```
+
+   Le libellé du bouton d’envoi est mis à jour. Maintenant, remplissez le formulaire et cliquez sur le bouton d’envoi. Vous rencontrez une erreur, semblable à la suivante, car la feuille de calcul n’est pas [défini pour accepter les données](/help/edge/docs/forms/submit-forms.md).
 
 
 ### Commencer à développer le style et les fonctionnalités
@@ -232,9 +263,9 @@ Félicitations ! Vous avez correctement configuré votre environnement de dével
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-Si vous disposez déjà d’un projet AEM, vous pouvez intégrer le bloc de formulaire adaptatif à votre projet actuel pour commencer à créer le formulaire. Pour intégrer :
+Si vous disposez déjà d’un projet AEM, vous pouvez intégrer le bloc Forms adaptatif à votre projet actuel pour commencer à créer le formulaire. Pour intégrer :
 
-1. Cloner le référentiel de bloc de formulaire adaptatif : https://github.com/adobe-rnd/aem-boilerplate-forms sur votre ordinateur.
+1. Cloner le référentiel de bloc de Forms adaptatif : https://github.com/adobe-rnd/aem-boilerplate-forms sur votre ordinateur.
 
 1. Dans le dossier téléchargé, recherchez le `blocks/form` dossier. Copiez ce dossier. Maintenant, accédez au site local de votre projet AEM `blocks` et collez le dossier de formulaire copié ici.
 
@@ -244,7 +275,7 @@ Si vous disposez déjà d’un projet AEM, vous pouvez intégrer le bloc de form
 C’est terminé ! Le bloc Forms adaptatif fait désormais partie de votre projet AEM. Vous pouvez commencer à créer et ajouter des formulaires à vos pages d’AEM.
 
 
-### Résolution des problèmes de génération GitHub
+## Résolution des problèmes de génération GitHub
 
 Assurez-vous d’un processus de création GitHub fluide en résolvant les problèmes potentiels :
 
@@ -253,6 +284,14 @@ Si vous rencontrez l’erreur &quot;Impossible de résoudre le chemin d’accès
 
 * **Gérer les erreurs de liaison :**
 Si vous rencontrez des erreurs de ligne, vous pouvez les contourner. Ouvrez le [Projet EDS]/package.json et modifiez le script &quot;lint&quot; à partir de &quot;lint&quot; : &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; à &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Enregistrez le fichier et validez les modifications apportées à votre projet GitHub.
+
+
+## Voir également
+
+* [Création d’un formulaire à l’aide de feuilles de calcul Google ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Envoyer des formulaires directement à vos feuilles Microsoft Excel ou Google](/help/edge/docs/forms/submit-forms.md)
+* [Modifier l’aspect de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
+
 
 
 

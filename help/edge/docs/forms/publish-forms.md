@@ -4,13 +4,13 @@ description: Publication d’un formulaire AEM Forms Edge Delivery Services
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '530'
 ht-degree: 1%
 
 ---
-
 
 # Publier le formulaire
 
@@ -20,7 +20,7 @@ Une fois que vous êtes prêt à partager votre formulaire avec vos clients pour
 
 ## Prérequis
 
-* La variable [Le bloc de formulaire adaptatif est activé pour votre projet EDS sur GitHub.](/help/edge/docs/forms/create-forms.md).
+* La variable [Le bloc Forms adaptatif est activé pour votre projet EDS sur GitHub.](/help/edge/docs/forms/create-forms.md).
 * Votre formulaire est entièrement testé et prêt à l’emploi.
 * Votre [la feuille de calcul est configurée.](/help/edge/docs/forms/submit-forms.md) pour accepter les données.
 
@@ -112,10 +112,6 @@ Si vous rencontrez une erreur ressemblant au message suivant, cela indique que l
 +++
 
 
-## En savoir plus
 
-* [Créer et prévisualiser un formulaire](/help/edge/docs/forms/create-forms.md)
-* [Activer le formulaire pour envoyer des données](/help/edge/docs/forms/submit-forms.md)
-* [Publier un formulaire sur la page de sites](/help/edge/docs/forms/publish-forms.md)
-* [Ajouter des validations à des champs de formulaire](/help/edge/docs/forms/validate-forms.md)
-* [Modifier les thèmes et le style du formulaire](/help/edge/docs/forms/style-theme-forms.md)
+
+## En savoir plus
