@@ -2,10 +2,10 @@
 title: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
+source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 96%
+source-wordcount: '1648'
+ht-degree: 97%
 
 ---
 
@@ -13,17 +13,14 @@ ht-degree: 96%
 
 La section suivante présente les notes de mise à jour générales de [!DNL Workfront for Experience Manager enhanced connector].
 
-## Date de publication {#release-date}
-
-La date de publication de la dernière version 1.9.17 de [!DNL Workfront for Experience Manager enhanced connector] est le jeudi 7 février 2024.
+La date de publication de la dernière version 1.9.18 de [!DNL Workfront for Experience Manager enhanced connector] est le samedi 8 mars 2024.
 
 ## Principaux éléments de la mise à jour {#release-highlights}
 
-La dernière version de [!DNL Workfront for Experience Manager enhanced connector] comprend les correctifs de bug suivants :
+La dernière version de la variable [!DNL Workfront for Experience Manager enhanced connector] inclut le correctif de bogue suivant :
 
-* Activez la fonction de basculement pour permettre aux clients AEM Cloud de configurer et de configurer un connecteur.
-
-* Fermer la `resourceResolver` sans fermer explicitement la session sous-jacente, des fuites de session se produisent dans les instances AEM. Il est essentiel de fermer explicitement la session, car la fermeture automatique du résolveur de ressources ne ferme pas implicitement la session.
+* Le traitement des téléchargements de ressources multiples à partir de Workfront rencontre des problèmes.
+* Si vous n’ajoutez pas de guillemets de fermeture lors de l’utilisation de Workfront pour rechercher des dossiers dans Experience Manager, le résultat `SERVER_ERROR`.
 
 >[!NOTE]
 >
@@ -32,7 +29,7 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!IMPORTANT]
 >
->Adobe vous recommande [mise à niveau vers la dernière version 1.9.17](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe vous recommande [mise à niveau vers la dernière version 1.9.18](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problèmes connus {#known-issues}
 
@@ -41,6 +38,12 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 * Lorsque vous utilisez l’expérience Workfront classique, l’option **[!UICONTROL Envoyer à]** disponible dans la liste déroulante **[!UICONTROL Plus]** ne vous permet pas de sélectionner la destination cible dans Experience Manager. L’option **[!UICONTROL Envoyer à]** fonctionne correctement avec la liste déroulante **[!UICONTROL Actions de document]**. L’option **[!UICONTROL Envoyer à]** fonctionne correctement pour la liste déroulante **[!UICONTROL Plus]**. La liste déroulante **[!UICONTROL Actions de document]** est disponible dans la nouvelle expérience Workfront.
 
 ## Versions précédentes {#previous-releases}
+
+### Version de février 2024 {#february-2023-release}
+
+* Activez la fonction de basculement pour permettre aux clientes et clients AEM Cloud de configurer et de paramétrer un connecteur.
+
+* Fermer `resourceResolver` sans fermer explicitement la session sous-jacente provoque des fuites de session dans les instances AEM. Il est essentiel de fermer explicitement la session, car la fermeture automatique du résolveur de ressources ne ferme pas implicitement la session.
 
 ### Version de janvier 2024 {#january-2023-release}
 
