@@ -2,13 +2,13 @@
 title: Méthodes de création de contenu dans AEM
 description: Découvrez les différentes manières de créer du contenu dans AEM et de les différencier.
 feature: Authoring
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Méthodes de création de contenu dans AEM {#authoring-methods}
 
@@ -63,12 +63,12 @@ L’éditeur universel est accessible par le biais de la console Sites dans AEM,
 
 Pour en savoir plus sur Universal Editor, consultez le document [Création de contenu avec l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-## Création basée sur des documents {#document-based}
+## Création basée sur des documents  {#document-based}
 
 Si vous utilisez les services Edge Delivery, vous pouvez choisir de créer votre contenu en tant que documents conventionnels tels que Microsoft Word ou Google Docs entièrement en dehors de [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Modification de contenu basé sur un document](assets/authoring-methods-document.jpg)
 
-Avec la création basée sur des documents, les auteurs peuvent utiliser les outils qu’ils connaissent déjà et bénéficier de la vitesse et des performances des Edge Delivery Services AEM pour publier leur contenu. La création basée sur des documents ne nécessite aucune utilisation de la console AEM.
+Avec la création basée sur les documents , les auteurs peuvent utiliser les outils qu’ils connaissent déjà et bénéficier de la vitesse et des performances des Edge Delivery Services AEM pour publier leur contenu. La création basée sur les documents ne nécessite aucune utilisation de la console AEM.
 
-Pour en savoir plus sur la création basée sur des documents, consultez le document . [Création de contenu pour les Edge Delivery Services.](/help/edge/authoring.md)
+Pour en savoir plus sur la création basée sur les documents , consultez le document . [Création de contenu pour les Edge Delivery Services.](/help/edge/authoring.md)

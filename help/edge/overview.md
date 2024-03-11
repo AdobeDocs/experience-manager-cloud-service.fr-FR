@@ -3,10 +3,10 @@ title: Prise en main d’AEM et d’Edge Delivery Services
 description: Découvrez comment AEM as a Cloud Service peut bénéficier des performances et des scores Lighthouse parfaits proposés par Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
-workflow-type: ht
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Avec Edge Delivery Services, AEM offre des expériences exceptionnelles qui fa
 En utilisant Edge Delivery Services, vous pouvez accomplir ce qui suit :
 
 * Créer des sites rapides avec un score Lighthouse parfait et surveiller en permanence les performances de votre site grâce à la surveillance des utilisateurs et utilisatrices réels (RUM).
-* Augmenter l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser nativement les instances de création AEM et la création basée sur des documents. Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web.
+* Augmenter l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser AEM création et la création basée sur les documents prêts à l’emploi . Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web.
 * Utiliser un framework d’expérimentation intégré qui permet la création rapide de tests, l’exécution sans impact sur les performances et la mise en production rapide de la meilleure version.
 
 ## Vue d’ensemble d’Edge Delivery Services {#edge-overview}
@@ -27,7 +27,7 @@ Le diagramme suivant illustre comment modifier du contenu dans Microsoft Word (
 
 ![Architecture d’Edge Delivery.](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery Services est un ensemble de services composables qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Comme mentionné précédemment, vous pouvez utiliser la [Gestion de contenu AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=fr) avec la [création avec l’éditeur universel](/help/implementing/universal-editor/introduction.md) et la [création basée sur des documents](https://www.aem.live/docs/authoring).
+Edge Delivery Services est un ensemble de services composables qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Comme mentionné précédemment, vous pouvez utiliser les deux [Gestion de contenu AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=fr) avec [Création Universal Editor](/help/implementing/universal-editor/introduction.md) ainsi que [Création basée sur les documents .](https://www.aem.live/docs/authoring)
 
 Par exemple, vous pouvez utiliser du contenu directement à partir de documents Microsoft Word ou Google Docs. Cela signifie que les documents provenant de ces sources peuvent devenir des pages de votre site web. De plus, les en-têtes, listes, images et éléments de police peuvent tous être transférés de la source initiale vers le site web. Le nouveau contenu est ajouté instantanément sans nouveau processus de création.
 
@@ -63,7 +63,7 @@ Adobe fournit trois canaux pour vous aider avec Edge Delivery Services :
 
 ### Accéder aux ressources de la communauté {#community-resource}
 
-Adobe s’engage à vous donner les moyens d’engager et de soutenir la communauté au mieux pour Edge Delivery Services et la création basée sur les documents.
+Adobe s’engage à vous donner les moyens d’engager et de soutenir la communauté au mieux pour les Edge Delivery Services et la création basée sur les documents .
 
 * Participez à la [Communauté Experience League](https://adobe.ly/3Q6kTKl) pour poser des questions, partager vos commentaires, lancer des discussions, demander l’aide de personnes spécialisées d’Adobe et de personnes conseillères/championnes AEM, et communiquer en temps réel avec des personnes partageant les mêmes opinions.
 * Rejoignez également notre [canal Discord](https://discord.gg/aem-live), une plateforme plus décontractée pour des interactions en temps réel et des échanges d’idées rapides.

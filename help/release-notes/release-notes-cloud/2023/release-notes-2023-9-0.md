@@ -2,17 +2,17 @@
 title: Notes de mise à jour de la version 2023.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 79%
+ht-degree: 82%
 
 ---
 
 
 # Notes de mise à jour de la version 2023.9.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour techniques de la version 2023.9.0 d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour de la version 2023.9.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour techniques de la version�
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2023.9.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 28 septembre 2023. La prochaine mise à jour des fonctionnalités (2023.10.0) est prévue pour le vendredi 26 octobre 2023.
+La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) est le vendredi 28 septembre 2023. La prochaine disponibilité des fonctionnalités (2023.10.0) est prévue pour le vendredi 26 octobre 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -56,19 +56,19 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 ### Nouvelles fonctionnalités de la vue Assets {#admin-view-features}
 
-* **Intégration d’AEM Assets as a Cloud Service à la création de documents pour les Edge Delivery Services**: intégration d’AEM Assets à la création basée sur des documents pour que les Edge Delivery Services puissent permettre aux créateurs de sites web d’ [utiliser des images disponibles dans les référentiels AEM Assets lors de la création de documents dans les documents Microsoft Word ou Google ;](/help/edge/using.md#integrate-assets-edge).
+* **Intégration d’AEM Assets as a Cloud Service à la création basée sur les documents pour les Edge Delivery Services**: intégration d’AEM Assets à la création basée sur les documents pour que les Edge Delivery Services puissent permettre aux créateurs de sites web d’ [utiliser des images disponibles dans les référentiels AEM Assets lors de la création de documents dans les documents Microsoft Word ou Google ;](/help/edge/using.md#integrate-assets-edge).
 
 * **Extraction des archives ZIP**: possibilité de sélectionner les archives ZIP gérées en Experience Manager et [extraction directe des fichiers dans Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sans les télécharger.
 
   ![Épinglage d’éléments pour les groupes.](/help/release-notes/assets/extract-archive.png)
 
-### Nouvelles fonctionnalités disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Fonctionnalités de pré-version disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **, Dynamic Media -**[Prise en charge du suivi de sous-titres et d’audio multiples pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) : vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
+* **Dynamic Media** : [prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
 
-  ![Onglet Sous-titres et Suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et Suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.*
+  ![Onglet Sous-titres et Pistes audio de la page Propriétés d’une ressource vidéo sélectionnée.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et Pistes audio de la page Propriétés d’une ressource vidéo sélectionnée.*
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nouvelles fonctionnalités de [!DNL Experience Manager Forms] {#forms-features}
 
@@ -97,11 +97,11 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 * **[Version 64 bits d’AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour vous permettre de créer des formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
 
-### Programme d&#39;adoption précoce {#forms-early-adopter}
+### Programme d’adoption précoce {#forms-early-adopter}
 
-* **[Protect de vos documents avec les API DocAssurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Le service Signature permet à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
+* **[Protégez vos documents avec les API DocAssurance (qui font partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)** : les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seules les personnes autorisées peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
-  Vous pouvez écrire sur `aem-forms-early-adopter-program@adobe.com` de votre e-mail officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité.
+  Vous pouvez écrire à `aem-forms-early-adopter-program@adobe.com` depuis votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.
 
 * **[Forms adaptatif sans affichage](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr)**: utilisez le Forms adaptatif sans affichage pour permettre aux développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs via les API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
 

@@ -4,7 +4,7 @@ description: Concevez des formes parfaites, vite ! ⚡ AEM Forms Edge Delivery +
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Création d’un formulaire à l’aide de la création de documents pour le service de diffusion AEM Forms Edge
 
-A l&#39;ère numérique actuelle, la création de formulaires conviviaux est essentielle pour toute entreprise. La création basée sur des documents d’AEM Forms Edge Delivery vous permet de créer des formulaires à l’aide d’outils familiers tels que Word ou Google Docs. Ces formulaires envoient des données directement à un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser un écosystème dynamique et des API robustes de Google Sheets, Microsoft Excel et Microsoft Share pour traiter facilement les données envoyées ou lancer un processus d’entreprise existant.
+A l&#39;ère numérique actuelle, la création de formulaires conviviaux est essentielle pour toute entreprise. La création basée sur les documents d’AEM Forms Edge Delivery vous permet de créer des formulaires à l’aide d’outils familiers tels que Word ou Google Docs. Ces formulaires envoient des données directement à un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser un écosystème dynamique et des API robustes de Google Sheets, Microsoft Excel et Microsoft Share pour traiter facilement les données envoyées ou lancer un processus d’entreprise existant.
 
 Ce guide vous guide tout au long des étapes suivantes :
 
