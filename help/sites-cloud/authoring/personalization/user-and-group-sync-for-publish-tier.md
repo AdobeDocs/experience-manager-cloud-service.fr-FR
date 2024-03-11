@@ -2,7 +2,7 @@
 title: Enregistrement, connexion et profil utilisateur
 description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%
@@ -37,7 +37,7 @@ Il est possible d’écrire un code d’enregistrement personnalisé qui prend, 
 
 1. Affichez un composant d’AEM personnalisé qui collecte les informations d’enregistrement.
 1. Lors de l’envoi, un utilisateur de service correctement configuré est utilisé pour :
-   1. vérifier qu’un utilisateur n’existe pas déjà, en utilisant l’une des méthodes `findAuthorizables()` de l’API UserManager ;
+   1. vérifier qu’un utilisateur n’existe pas déjà, en utilisant l’une des méthodes `findAuthorizables ()` de l’API UserManager ;
    1. créer un enregistrement utilisateur à l’aide de l’une des méthodes `createUser()` de l’API UserManager ;
    1. conserver toutes les données de profil capturées à l’aide des méthodes `setProperty()` de l’interface Authorizable.
 1. Flux facultatifs, comme l’obligation pour l’utilisateur de valider son courrier électronique.

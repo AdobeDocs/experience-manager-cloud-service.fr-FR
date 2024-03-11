@@ -1,13 +1,13 @@
 ---
 title: '''[!DNL Live Search] Fenêtre contextuelle CIF composant'
 description: Utilisation de CIF composants pour activer [!DNL Live Search] Composant contextuel sur un site AEM
-source-git-commit: bf0dadb0300c56bd8fe46ea7318146d3b56e6e83
+exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Live Search] Composant CIF de fenêtre contextuelle {#live-search-popover}
 
@@ -404,10 +404,10 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
         `${dataServicesStorefrontInstanceContext.store_url}catalogsearch/result`
       );
       // initialize store event after live-search
-      this._initMetrics();
+      this._initMetrics ();
     }
   
-    async _initMetrics() {
+    async _initMetrics () {
       //  Magento Store event
   
       // wait until script is magentoStorefrontEvents is found

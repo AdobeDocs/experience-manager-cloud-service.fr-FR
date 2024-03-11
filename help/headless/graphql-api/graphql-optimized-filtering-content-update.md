@@ -2,10 +2,10 @@
 title: Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.
 description: Découvrez comment mettre à jour vos fragments de contenu pour le filtrage GraphQL optimisé dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu découplée.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 60%
+source-wordcount: '886'
+ht-degree: 58%
 
 ---
 
@@ -18,7 +18,7 @@ Pour optimiser les performances de vos filtres GraphQL, exécutez une procédure
 >Après avoir mis à jour vos fragments de contenu, vous pouvez suivre les recommandations relatives à la [Optimisation des requêtes GraphQL](/help/headless/graphql-api/graphql-optimization.md).
 
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Il existe des conditions préalables pour cette tâche :
 
@@ -57,7 +57,7 @@ Il existe des conditions préalables pour cette tâche :
       <td>Tous </td>
       <td> </td>
       <td>Variable </td>
-      <td>Active(!=0) ou désactive (0) le déclenchement du traitement de la migration des fragments de contenu. </td>
+      <td>Active (!=0) ou désactive (0) le déclenchement de la tâche de migration de fragments de contenu. </td>
      </tr>
      <tr>
       <td>2</td>
@@ -211,7 +211,7 @@ Il existe des conditions préalables pour cette tâche :
       <td>Tous </td>
       <td> </td>
       <td>Variable </td>
-      <td>Désactive(0) (ou Active(!= 0) le déclenchement de la tâche de migration de fragment de contenu. </td>
+      <td>Désactive (0) (ou active (!= 0) le déclenchement de la tâche de migration de fragment de contenu. </td>
      </tr>
     </tbody>
    </table>

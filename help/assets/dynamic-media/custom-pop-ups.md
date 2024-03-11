@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 90%
+source-wordcount: '944'
+ht-degree: 89%
 
 ---
 
@@ -84,12 +84,12 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Le gestionnaire est chargé dans la visionneuse à l’aide de `setHandlers` :
 
-   `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
+   `*viewerInstance*.setHandlers ({ *handler 1*, *handler 2*}, ...`
 
    **En utilisant l’exemple de code d’intégration ci-dessus, vous obtenez le code suivant :**
 
    ```xml {.line-numbers}
-   s7interactiveimageviewer.setHandlers({
+   s7interactiveimageviewer.setHandlers ({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
            var genericVariable1=inData.genericVariable1;
@@ -99,7 +99,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    })
    ```
 
-   Pour en savoir plus sur la méthode `setHandlers()`, rendez-vous sur la page suivante :
+   Pour en savoir plus sur la méthode `setHandlers ()`, rendez-vous sur la page suivante :
 
    * Visionneuse d’images interactive – [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
    * Visionneuse de vidéos interactives – [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
@@ -233,7 +233,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 1. Votre code complet de setHandlers ressemble à ceci (la visionneuse de vidéo interactive a été utilisée) :
 
    ```xml {.line-numbers}
-   s7interactivevideoviewer.setHandlers({
+   s7interactivevideoviewer.setHandlers ({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
            loadQuickView(sku);

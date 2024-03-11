@@ -1,12 +1,12 @@
 ---
-title: Composants de formulaire du service de diffusion Edge AEM Forms
-description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des performances optimales, vous permet d’envisager l’avenir d’une collecte de données rationalisée et de l’engagement des utilisateurs. L’article répertorie tous les composants de formulaire disponibles prêts à l’emploi pour les formulaires EDD.
+title: Composants de formulaire des services de diffusion Edge AEM Forms
+description: Les services de diffusion Edge d’AEM Forms, conçus pour des performances élevées, vous permettent d’envisager l’avenir d’une collecte de données rationalisée et de l’engagement des utilisateurs. L’article répertorie tous les composants de formulaire disponibles prêts à l’emploi pour les formulaires EDD.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '870'
 ht-degree: 5%
 
 ---

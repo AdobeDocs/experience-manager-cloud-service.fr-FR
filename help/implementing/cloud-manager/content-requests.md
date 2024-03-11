@@ -2,7 +2,7 @@
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 9033820fa0dc8eee181e3f581675f45cf11e694a
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%
@@ -11,7 +11,7 @@ ht-degree: 5%
 
 # Demandes de contenu Cloud Service
 
-## Introduction {#introduction}
+## Présentation {#introduction}
 
 Les demandes de contenu de Cloud Service sont mesurées par le biais d’une collecte de données côté serveur. La collection est activée via l’analyse des journaux CDN.
 
@@ -138,9 +138,9 @@ Le service de surveillance des utilisateurs réels est conçu pour empêcher la 
 
 ### Configuration du service de surveillance des utilisateurs réel {#how-to-set-up-the-rum-service}
 
-* Si vous souhaitez faire partie de notre programme d&#39;adoption précoce, veuillez envoyer un email à `aemcs-rum-adopter@adobe.com`, ainsi que le nom de domaine de l’environnement de production, d’évaluation et de développement à partir de l’adresse électronique associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance des utilisateurs réels (RUM) pour vous.
+* Si vous souhaitez faire partie de notre programme d&#39;adoption précoce, veuillez envoyer un email à `aemcs-rum-adopter@adobe.com`, ainsi que le nom de domaine de l’environnement de production, d’évaluation et de développement à partir de l’adresse électronique associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données Real User Monitoring (RUM) pour vous.
 * Une fois cette opération terminée, l’équipe produit de l’Adobe crée un canal de collaboration client.
-* L’équipe produit de l’Adobe vous contactera pour vous fournir la clé de domaine et l’URL du tableau de bord de données dans lesquelles vous pouvez afficher les pages vues et [Les principales vitales du Web (CWV)](https://web.dev/vitals/) mesures collectées par la collection de services de surveillance des utilisateurs réels côté client.
+* L’équipe produit de l’Adobe vous contactera pour vous fournir la clé de domaine et l’URL du tableau de bord de données dans lesquelles vous pouvez afficher les pages vues et [Les vitales du Web principal (CWV)](https://web.dev/vitals/) mesures collectées par la collection de services de surveillance des utilisateurs réels côté client.
 * Vous recevrez alors des conseils sur l’utilisation de la clé de domaine pour accéder à l’URL du tableau de bord de données et afficher les mesures.
 
 ### Utilisation des données Real User Monitoring Service {#how-rum-service-data-is-being-used}
@@ -175,7 +175,7 @@ Lorsque vous analyserez ces données, il se peut qu’il y ait ou non des écart
 
    Oui.
 
-1. **Les clients seront-ils en mesure d’intégrer les scripts du service de données RUM à des systèmes tiers tels que Dynatrace ?**
+1. **Les clients pourront-ils intégrer les scripts du service de données RUM à des systèmes tiers tels que Dynatrace ?**
 
    Oui.
 

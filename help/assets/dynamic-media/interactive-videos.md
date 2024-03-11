@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '5863'
 ht-degree: 99%
@@ -626,7 +626,7 @@ Le code intégré renvoyé par Experience Manager comporte déjà un descripteur
    "asset" : "/content/dam/marketing/shoppable-video/john-lewis/shoppable-video-john-lewis-2014.mp4" }
  })
  /* // Example of interactive video event for quickview.
-   s7interactivevideoviewer.setHandlers({
+   s7interactivevideoviewer.setHandlers ({
    "quickViewActivate": function(inData) {
      var sku=inData.sku; //SKU for product ID
     //To pass other parameter from the hotspot, you need to add custom parameter during the hotspot setup as parameterName=value
@@ -657,7 +657,7 @@ La procédure de construction de l’URL de l’aperçu rapide est la procédure
   <tbody>
   <tr>
     <td><p>SKU unique, trouvé dans la chaîne de requête</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
+    <td><code class="code">s7interactivevideoviewer.setHandlers ({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
       },
@@ -665,7 +665,7 @@ La procédure de construction de l’URL de l’aperçu rapide est la procédure
   </tr>
   <tr>
     <td>SKU unique, trouvé dans le chemin d’accès à l’URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
+    <td><code class="code">s7interactivevideoviewer.setHandlers ({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
       },
@@ -673,7 +673,7 @@ La procédure de construction de l’URL de l’aperçu rapide est la procédure
   </tr>
   <tr>
     <td><p>SKU et ID de catégorie dans la chaîne de requête</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
+    <td><code class="code">s7interactivevideoviewer.setHandlers ({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
       },
@@ -748,7 +748,7 @@ Le code source complet est le suivant :
    "asset" : "/content/dam/marketing/shoppable-video/john-lewis/shoppable-video-john-lewis-2014.mp4" }
  })
  // Example of interactive video event for quickview.
-   s7interactivevideoviewer.setHandlers({
+   s7interactivevideoviewer.setHandlers ({
    "quickViewActivate": function(inData) {
      var sku=inData.sku; //SKU for product ID
      var categoryId=inData.categoryId; //categoryId

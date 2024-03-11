@@ -1,16 +1,15 @@
 ---
 title: Utilisation de règles pour ajouter un comportement dynamique à un formulaire
-description: Le service de diffusion Edge d’AEM Forms, conçu pour offrir des performances optimales, vous permet d’envisager l’avenir d’une collecte de données rationalisée et de l’engagement des utilisateurs. Utilisation de règles pour ajouter un comportement dynamique à un formulaire
+description: Les services de diffusion Edge d’AEM Forms, conçus pour des performances élevées, vous permettent d’envisager l’avenir d’une collecte de données rationalisée et de l’engagement des utilisateurs. Utilisation de règles pour ajouter un comportement dynamique à un formulaire
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+exl-id: 58042016-e655-446f-a2bf-83f1811525e3
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '49'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
 
-
 # Utilisation de règles pour ajouter un comportement dynamique à un formulaire
-
