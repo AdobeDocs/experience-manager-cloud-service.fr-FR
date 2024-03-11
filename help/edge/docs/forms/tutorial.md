@@ -4,10 +4,10 @@ description: Ce tutoriel vous aide à vous familiariser avec un nouveau projet A
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 1%
+source-wordcount: '1878'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +106,7 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
 
       ![Télécharger un exemple de contenu](/help/edge/assets/download-sample-content.png)
 
-      La variable `index`, `nav`, et `footer` Les fichiers définissent la disposition de base de vos pages et changent rarement dans l’ensemble d’un projet. Ils ont également une structure spécifique différente de la plupart des autres fichiers de contenu. En examinant ces fichiers, vous vous rendrez compte de l’organisation du contenu dans AEM Projets.
+      La variable `nav` et `footer` Les fichiers définissent la disposition de base de vos pages et changent rarement dans l’ensemble d’un projet. Ils ont également une structure spécifique différente de la plupart des autres fichiers de contenu. En examinant ces fichiers, vous vous rendrez compte de l’organisation du contenu dans AEM Projets.
 
 
    1. Chargez ces fichiers dans le dossier SharePoint Microsoft ou Google Drive.
@@ -148,7 +148,7 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
 
       Cela connecte votre dossier de contenu à votre site web. Après la mise à jour de la référence, vous pouvez rencontrer des erreurs &quot;404 Not Found&quot; (404 introuvable). En effet, votre contenu n’a pas encore été prévisualisé. La section suivante explique comment commencer à créer et prévisualiser votre contenu.
 
-      ![Validez le fichier fsatab.yaml mis à jour](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### Prévisualiser et publier votre contenu
 
@@ -204,9 +204,22 @@ L’exemple de contenu comprend une feuille &quot;enquête&quot; qui sert de mod
 
 ![Demander](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Commençons par mettre à jour un libellé de champ. Ouvrez la feuille &quot;Requête&quot; pour la modifier, modifiez le libellé du bouton Envoyer en `Let's Chat`et utilisez le sidekick pour le publier.
+Commençons par mettre à jour un libellé de champ. Ouvrez la feuille &quot;Requête&quot; pour la modifier, modifiez le libellé du bouton Envoyer en `Let's Chat` et utilisez AEM Sidekick pour prévisualiser et publier le fichier.
 
 ![Demander](/help/edge/assets/enquiry-form-preview-publish.png)
+
+Lorsque vous prévisualisez ou publiez le fichier, une version JSON du fichier s’affiche dans un nouvel onglet. Copiez l’URL d’aperçu (.hlx.page) ou de publication (.hlx.live) du fichier.
+
+![JSON de la feuille de calcul du formulaire](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+Ouvrez le `enquiry` et remplacez l’URL du bloc de formulaire par l’URL du fichier copié à l’étape précédente. Assurez-vous que l’URL est un lien hypertexte.
+
+![Fichier de recherche avec l’URL .json de l’URL de la feuille de calcul](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+Utilisez AEM Sidekick pour prévisualiser et publier le document d&#39;enquête.
+
+![Fichier de recherche avec l’URL .json de l’URL de la feuille de calcul](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 Pour prévisualiser le formulaire de demande mis à jour, accédez à l&#39;URL suivante :
 
