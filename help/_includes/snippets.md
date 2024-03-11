@@ -1,8 +1,8 @@
 ---
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 # Fragments de code {#snippets}
@@ -61,7 +61,7 @@ ht-degree: 65%
 
 [!BADGE TECHNOLOGIE D’ACCÈS ANTICIPÉ - Posez-nous des questions sur cette fonctionnalité dans les laboratoires AEM Sites de votre canal Slack !]{type=Informative url="/help/edge/docs/slack.md" tooltip="La création AEM avec des Edge Delivery Services est une technologie d’accès anticipé."}
 
-## En savoir plus {#see-more-forms-eds}
+## Voir également {#see-more-forms-eds}
 
 * [Prise en main des Edge Delivery Services AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Création d’un formulaire à l’aide de feuilles de calcul Google ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)

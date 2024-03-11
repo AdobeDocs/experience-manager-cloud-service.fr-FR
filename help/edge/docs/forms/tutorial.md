@@ -4,9 +4,9 @@ description: Ce tutoriel vous aide à vous familiariser avec un nouveau projet A
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -127,16 +127,16 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
       Si vous utilisez Microsoft SharePoint, le chemin du dossier utilise le format suivant :
 
       ```HTML
-      https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Par exemple,
 
       ```HTML
-      https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+      https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Pour plus d’informations sur la gestion des fichiers avec Microsoft SharePoint, voir [Utilisation d’Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      Pour plus d’informations sur la gestion des fichiers avec Microsoft SharePoint, voir [Utilisation d’Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -299,7 +299,5 @@ Si vous rencontrez des erreurs de ligne, vous pouvez les contourner. Ouvrez le [
 
 ## Voir également
 
-* [Création d’un formulaire à l’aide de feuilles de calcul Google ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Envoyer des formulaires directement à vos feuilles Microsoft Excel ou Google](/help/edge/docs/forms/submit-forms.md)
-* [Modifier l’aspect de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 

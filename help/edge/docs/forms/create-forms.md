@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Avant de commencer, vérifiez que vous avez suivi les étapes suivantes :
 
 * Configurez une [AEM projet à l’aide du standard AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [Ajout d’un bloc Forms adaptatif à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) et cloner le référentiel GitHub correspondant sur votre ordinateur local.
 Dans ce document, le dossier local de votre projet Edge Delivery Services (EDS) est désigné sous la forme `[EDS Project repository]`.
-* Assurez-vous que vous avez accès aux feuilles de calcul Google Sheets ou à Microsoft SharePoint. Pour configurer Microsoft SharePoint en tant que source de contenu, voir [Utilisation de SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
+* Assurez-vous que vous avez accès aux feuilles de calcul Google Sheets ou à Microsoft SharePoint. Pour configurer Microsoft SharePoint en tant que source de contenu, voir [Utilisation de SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -82,7 +82,7 @@ Pour poursuivre la création du formulaire :
 
    ![Exemple de contenu sur Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Assurez-vous que la feuille est partagée avec l’utilisateur AEM approprié (par exemple `helix@adobe.com`) [selon les configurations spécifiées pour votre projet.](https://www.aem.live/docs/setup-customer-sharepoint). Octroyez à l’utilisateur l’autorisation de modification de la feuille.
+1. Assurez-vous que la feuille est partagée avec l’utilisateur AEM approprié (par exemple `helix@adobe.com`) [selon les configurations spécifiées pour votre projet.](https://www.aem.live/docs/setup-customer-SharePoint). Octroyez à l’utilisateur l’autorisation de modification de la feuille.
 
 1. Ouvrez la feuille de calcul créée et renommez la feuille par défaut &quot;shared-default&quot;.
 
@@ -165,4 +165,6 @@ Jusqu’à présent, vous avez préparé la structure du formulaire. Maintenant,
 [Préparation de votre feuille de calcul](/help/edge/docs/forms/submit-forms.md) pour commencer à accepter les données lors de l’envoi du formulaire.
 
 
+## Voir également
 
+{{see-more-forms-eds}}

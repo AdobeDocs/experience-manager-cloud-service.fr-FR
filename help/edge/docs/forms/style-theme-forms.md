@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -823,3 +823,6 @@ Vous pouvez également cibler des champs individuels par nom pour appliquer des 
 
 Ce CSS cible tous les éléments d’entrée situés dans un élément qui possède la classe . `field-otp`. La structure de HTML de votre formulaire suit les conventions du bloc Forms adaptatif, ce qui implique qu’il existe un conteneur marqué avec la classe &quot;field-top&quot; qui contient le champ nommé &quot;top&quot;.
 
+## Voir également
+
+{{see-more-forms-eds}}
