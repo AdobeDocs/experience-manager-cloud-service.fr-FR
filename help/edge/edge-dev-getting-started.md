@@ -3,7 +3,7 @@ title: Guide de prise en main du développeur pour la création AEM avec des Edg
 description: Ce guide vous permet de maîtriser l’exécution d’un nouveau site Adobe Experience Manager à l’aide d’Edge Delivery Services et d’Universal Editor pour la création de contenu.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: d29e1c588937d18dea2fe851df3818b6438d41c4
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
