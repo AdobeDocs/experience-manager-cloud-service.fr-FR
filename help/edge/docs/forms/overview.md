@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,17 @@ ht-degree: 0%
 
 AEM Forms Edge Delivery Services est un ensemble de services composable qui permet un environnement de développement rapide dans lequel les auteurs peuvent rapidement mettre à jour, publier et lancer de nouveaux formulaires. Ces services offrent des expériences de formulaires exceptionnelles et à fort impact qui favorisent l’engagement et les conversions. Ces expériences de formulaires sont faciles à créer et à développer.
 
-
 Ces services permettent d’effectuer les opérations suivantes :
 
-* **Créez des expériences d’inscription avec les outils de votre choix :** Augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur les documents (Microsoft SharePoint ou Google Drive) et la création AEM (Adaptive Forms Editor). Vous pouvez utiliser plusieurs sources de contenu sur le même site de formulaires et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou Adaptive Forms Editor.
+* **Créez des expériences d’inscription avec les outils de votre choix :** Augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur les documents (lecteur Microsoft SharePoint ou Google) et la création AEM (éditeur de Forms adaptatif). Vous pouvez utiliser plusieurs sources de contenu sur le même site de formulaires et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou Adaptive Forms Editor.
 
 * **Offrir des expériences d’inscription numérique exceptionnelles :** Proposez des expériences d’inscription numérique qui se chargent et s’affichent rapidement. Des temps de chargement plus rapides et une expérience utilisateur optimisée contribuent à des taux de remplissage et de conversion plus élevés du formulaire.
 
-* **Utilisez l’ensemble d’outils destiné aux développeurs :** AEM Forms utilise du HTML brut, du code CSS moderne et du code JavaScript vanille pour créer des expériences exceptionnelles, en évitant la courbe d’apprentissage détaillée d’une structure spécifique. Un développeur disposant de compétences de développement web de base peut personnaliser et créer facilement des composants de formulaire et des expériences. Il n’est pas nécessaire d’attendre l’exécution d’un pipeline. Il vous suffit d’archiver votre code dans Github pour que vos modifications soient en ligne.
+* **Utilisez l’ensemble d’outils destiné aux développeurs :** AEM Forms Edge Delivery Services utilise du HTML brut, du code CSS moderne et du code JavaScript vanille pour créer des expériences exceptionnelles, en évitant la courbe d’apprentissage détaillée d’une structure spécifique. Un développeur disposant de compétences de développement web de base peut personnaliser et créer facilement des composants de formulaire et des expériences. Il n’est pas nécessaire d’attendre l’exécution d’un pipeline. Il vous suffit d’archiver votre code dans GitHub pour que vos modifications soient activées.
 
 ## Présentation des Edge Delivery Services AEM Forms {#edge-overview}
 
-AEM Forms Edge Delivery Services est un ensemble de services composables qui offre une grande flexibilité quant à la manière dont vous créez des formulaires sur votre site web. Vous pouvez utiliser AEM gestion de contenu avec [Création AEM](/help/forms/creating-adaptive-form-core-components.md) ainsi que [Création basée sur des documents](/help/edge/docs/forms/create-forms.md). Les Edge Delivery Services AEM Forms fournissent également un bloc de formulaires, appelé [Bloc Forms adaptatif](/help/edge/docs/forms/create-forms.md) pour ajouter un formulaire à votre site d’Edge Delivery Services.
+Les services de diffusion Edge d’AEM Forms offrent une grande flexibilité quant à la manière dont vous créez des formulaires sur votre site web. Vous pouvez créer du contenu et des formulaires avec [Création AEM](/help/forms/creating-adaptive-form-core-components.md) ainsi que [Création basée sur des documents](/help/edge/docs/forms/create-forms.md). Les Edge Delivery Services AEM Forms fournissent un bloc de formulaires, appelé [Bloc Forms adaptatif](/help/edge/docs/forms/create-forms.md) pour ajouter un formulaire à votre site d’Edge Delivery Services.
 
 Par exemple, vous créez des formulaires directement dans Microsoft Excel ou Google Sheets et ces feuilles de calcul sont transformées en formulaires pour votre site web. Tout nouveau contenu de formulaire ou de formulaire, tel qu’un nouveau champ de formulaire, est instantanément disponible sur votre site web sans qu’un processus de reconstruction ne soit nécessaire.
 
@@ -35,69 +34,22 @@ Le diagramme suivant illustre la manière dont vous pouvez modifier des formulai
 
 ![Architecture d’Edge Delivery.](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
+AEM Forms Edge Delivery Services utilise GitHub pour permettre aux clients de gérer et déployer le code directement à partir de leur référentiel GitHub. Par exemple, vous pouvez écrire des formulaires dans : [Google Sheets](/help/edge/docs/forms/create-forms.md) ou [Microsoft Excel](/help/edge/docs/forms/create-forms.md) et les composants de vos formulaires peuvent être développés en utilisant CSS et JavaScript dans un référentiel GitHub.
 
-AEM Forms Edge Delivery Services utilise GitHub pour permettre aux clients de gérer et déployer le code directement à partir de leur référentiel GitHub. Par exemple, vous pouvez écrire des formulaires dans : [Google Sheets ou Microsoft Excel](/help/edge/docs/forms/create-forms.md) et les composants de vos formulaires peuvent être développés en utilisant CSS et JavaScript dans GitHub.
+Lorsque vos formulaires sont prêts, vous pouvez utiliser la variable [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), une extension de navigateur Chrome, pour prévisualiser et publier des mises à jour de contenu.
 
-Lorsque vous êtes prêt, vous pouvez utiliser la variable [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), une extension de navigateur Chrome, pour prévisualiser et publier des mises à jour de contenu.
+![Installer AEM Sidekick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-![Installer AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
+Le choix entre [Création basée sur des documents](#document-based-authoring-features) et [Création AEM](#aem-authoring-features) dépend de vos besoins spécifiques :
 
-Le choix entre [Création basée sur des documents](#document-based-authoring-features) et [Création AEM](#aem-authoring-features) dépend de vos besoins spécifiques.
+* Pour les formulaires simples qui ne collectent que des informations de base avec quelques champs (pensez à nous contacter par exemple, des formulaires de génération de pistes ou des formulaires de demande de service), et pour lesquels vous avez besoin d’une connectivité aux données rapide à l’aide d’une feuille de calcul, la variable [Création basée sur des documents](#document-based-authoring-features) est un bon ajustement. Vous pouvez créer ces formulaires comme vous le feriez pour créer un document dans Google Sheets ou Microsoft Excel.
 
-Pour les formulaires simples qui collectent des informations de base comme des noms et des courriers électroniques (pensez à nous contacter par des formulaires, des formulaires de génération de prospects ou des formulaires de demande de service), et où vous n’avez besoin que des données pour accéder à une feuille de calcul, la variable [Création basée sur des documents](/help/edge/docs/forms/create-forms.md) est parfaite. Vous pouvez créer ces formulaires comme vous le feriez pour créer un document dans Google Sheets ou Microsoft Excel.
-
-Si vos formulaires deviennent plus complexes, par exemple s’ils nécessitent plusieurs panneaux, des règles complexes et une logique métier, une manipulation de données, une intégration à des systèmes externes ou des workflows rationalisés à l’aide des fonctionnalités d’AEM, [Création AEM](/help/forms/creating-adaptive-form-core-components.md) est une meilleure option.
+* Pour les formulaires complexes, tels que les formulaires qui nécessitent plusieurs panneaux, des règles complexes et une logique métier, la manipulation de données, l’intégration à des systèmes externes ou des processus simplifiés à l’aide de fonctionnalités d’AEM, [Création AEM](#aem-authoring-features) est une meilleure option.
 
 
 ### Fonctions clés de la création basée sur les documents et de la création AEM
 
 La création basée sur les documents offre un ensemble de fonctionnalités de base et AEM création déverrouille des fonctionnalités supplémentaires au-delà de la création basée sur les documents , ce qui vous permet de créer des formulaires interactifs et plus complexes. Les principales fonctionnalités de la création basée sur les documents et de la création AEM sont les suivantes :
-
-<!-- 
-
->[!BEGINTABS]
-
->[!TAB Document-based Authoring ]
-
-Document-based Authoring  is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based Authoring  are: 
-
-* **[HTML5-based Form Field components](/help/edge/docs/forms/form-components.md)**: AEM Forms Edge Delivery Services allow you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
-
-* **Accessibility**: The fields in the form block are accessible. Each label is linked with its respective input element, and IDs are auto-generated for linking. Descriptions associated with fields are linked via the aria-describedby attribute. Keyboard navigation using the standard Tab/Shift + Tab keys is supported.
-
-* **[Styling](/help/edge/docs/forms/style-theme-forms.md)**: Each form field has a fixed HTML structure that can be easily decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS and JS are provided based on type and name. You can easily create new selectors due to the standradized structure and style your form. 
-
-* **Basic Rules**: Easily create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
-
-* **Validations**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Adaptive Forms Block support all the HTML form validation, supported by modern browsers, and provide additional validation mechanism like validation script, file size, file type, overall file size, and more. 
-
-* **File Uploads**: You can add file attachment capabilities to your forms. Whether you need to gather documents, images, or other files from your users, file upload functionality serves you effortlessly. With custom handling options available, you can tailor the file upload process to suit your specific requirements.
-
-* **reCAPTCHA**: Benefit from seamless integration of Google reCAPTCHA into your forms with our out-of-the-box (OOTB) support. Safeguard your forms against fraudulent activities, spam, and abuse, while maintaining a smooth and uninterrupted user experience. Adaptive Forms Block supports reCaptcha V3 and reCaptcha Enterprise. 
-
-* **Send email notification on form submission**: Eliminate the hassle of manual follow-ups and ensure timely communication with our built-in email automation for form submissions. This integrated solution lets you effortlessly notify relevant parties, including sending form data, whenever someone fills out a form on your website. No need for complex configurations or additional tools – it's ready to use out of the box.
-
->[!TAB AEM Authoring]
-
-AEM Authoring unlocks additional capabilities beyond the Document-based Authoring , empowering you to build more complex and interactive forms. In additon to the features of Document-based Authoring , AEM authoring offers the following additional features:  
-
-* Advanced Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
-
-* Server-side extensibility: Extend the functionalities of your forms by integrating them with server-side logic. This allows you to perform complex calculations, interact with external systems, and automate specific tasks based on user actions within the form.
-* Streamline workflows and data management: Leverage the power of AEM to:
-    * Design user-friendly forms using AEM editors.
-    * Generate a "Document of Record" for secure and tamper-proof archiving of submitted data.
-    * Facilitate e-signing with Adobe Sign for a smooth and secure signing experience.
-    * Automate business processes through AEM workflows, triggering actions based on form submissions.
-    * Effortlessly integrate with various data sources, enabling seamless data flow and exchange.
-
->[!ENDTABS]
-
-
-
-## Start creating forms
-
--->
 
 #### Fonctionnalités de création basées sur des documents
 
@@ -123,11 +75,16 @@ AEM Authoring fournit une interface WYSIWYG (Adaptive Forms Editor) pour la cré
 * Intégration à Adobe Workfront Fusion pour déclencher des scénarios de fusion Adobe Workfront lors de l’envoi du formulaire.
 * Intégration à différentes sources de données pour préremplir les formulaires et envoyer des données.
 * Modèle de données de formulaire pour définir la structure des données et les interactions avec diverses sources de données.
-* Possibilité de configurer plusieurs actions d’envoi pour gérer les envois de formulaire, y compris envoyer des données à Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, et bien plus de sources de données.
+* Possibilité de choisir parmi plusieurs actions d’envoi pour gérer les envois de formulaire, y compris envoyer des données à Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, et bien plus de sources de données.
 
-Essentiellement, la création d’AEM s’appuie sur les bases de la création basée sur les documents , qui offre une boîte à outils plus avancée pour la création et la gestion de formulaires complexes.
+Essentiellement, [Création AEM](/help/forms/creating-adaptive-form-core-components.md) s&#39;appuie sur les principes fondamentaux de [Création basée sur des documents](/help/edge/docs/forms/create-forms.md), fournissant une boîte à outils plus avancée pour la création et la gestion de formulaires complexes.
 
-### Workflow de création
+### Edge Delivery Services AEM Forms : création. Publication et envoi de Forms
+
+Les diagrammes suivants illustrent le processus de création, de publication et d’envoi de formulaires à l’aide de la création et de la création AEM basées sur des documents.
+
+
+
 
 ![Création basée sur des documents ](/help/edge/assets/document-based-authoring-workflow.png)
 
@@ -144,6 +101,7 @@ Essentiellement, la création d’AEM s’appuie sur les bases de la création b
 * [Ajout de sections répétables à un &#x200B; de formulaire](/help/edge/docs/forms/repeatable-forms.md)
 * [Afficher un message de remerciement personnalisé après l’envoi du formulaire &#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
+
 
 
 
