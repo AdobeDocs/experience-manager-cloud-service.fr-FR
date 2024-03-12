@@ -2,7 +2,7 @@
 title: Règles de qualité du code personnalisé
 description: Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du test de qualité du code. Elles sont basées sur les bonnes pratiques de l’ingénierie Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4167'
 ht-degree: 87%
@@ -101,7 +101,7 @@ L’utilisation d’une chaîne de format provenant d’une source externe (tell
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
   request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
-  response.sendStatus (HttpServletResponse.SC_OK);
+  response.sendStatus(HttpServletResponse.SC_OK);
 }
 ```
 
@@ -120,7 +120,7 @@ Lors de l’exécution de requêtes HTTP à partir d’une application Experienc
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void dontDoThis () {
+public void dontDoThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
 
@@ -149,7 +149,7 @@ public void dontDoThisEither() {
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void doThis () {
+public void doThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
     .setConnectTimeout(5000)
@@ -194,7 +194,7 @@ Une idée relativement répandue est que les objets `ResourceResolver` créés �
 #### Code non conforme {#non-compliant-code-4}
 
 ```java
-public void dontDoThis (Session session) throws Exception {
+public void dontDoThis(Session session) throws Exception {
   ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
   // do some stuff with the resolver
 }
@@ -203,7 +203,7 @@ public void dontDoThis (Session session) throws Exception {
 #### Code conforme {#compliant-code-2}
 
 ```java
-public void doThis (Session session) throws Exception {
+public void doThis(Session session) throws Exception {
   ResourceResolver resolver = null;
   try {
     resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
@@ -215,7 +215,7 @@ public void doThis (Session session) throws Exception {
   }
 }
 
-public void orDoThis (Session session) throws Exception {
+public void orDoThis(Session session) throws Exception {
   try (ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object) session))){
     // do something with the resolver
   }
@@ -254,7 +254,7 @@ En règle générale, une exception doit être consignée une seule fois. Journa
 #### Code non conforme {#non-compliant-code-6}
 
 ```java
-public void dontDoThis () throws Exception {
+public void dontDoThis() throws Exception {
   try {
     someOperation();
   } catch (Exception e) {
@@ -267,7 +267,7 @@ public void dontDoThis () throws Exception {
 #### Code conforme {#compliant-code-3}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someOperation();
   } catch (Exception e) {
@@ -275,7 +275,7 @@ public void doThis () {
   }
 }
 
-public void orDoThis () throws MyCustomException {
+public void orDoThis() throws MyCustomException {
   try {
     someOperation();
   } catch (Exception e) {
@@ -296,7 +296,7 @@ Un autre schéma courant à éviter consiste à consigner un message, puis à é
 #### Code non conforme {#non-compliant-code-7}
 
 ```java
-public void dontDoThis () throws Exception {
+public void dontDoThis() throws Exception {
   logger.error("something went wrong");
   throw new RuntimeException("something went wrong");
 }
@@ -305,7 +305,7 @@ public void dontDoThis () throws Exception {
 #### Code conforme {#compliant-code-4}
 
 ```java
-public void doThis () throws Exception {
+public void doThis() throws Exception {
   throw new RuntimeException("something went wrong");
 }
 ```
@@ -350,7 +350,7 @@ Il est recommandé que les messages de journal fournissent des informations cont
 #### Code non conforme {#non-compliant-code-9}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -362,7 +362,7 @@ public void dontDoThis () {
 #### Code conforme {#compliant-code-6}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -383,7 +383,7 @@ Comme le suggère leur nom, les exceptions Java™ doivent toujours être utilis
 #### Code non conforme {#non-compliant-code-10}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -395,7 +395,7 @@ public void dontDoThis () {
 #### Code conforme {#compliant-code-7}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -416,7 +416,7 @@ Comme nous l’avons mentionné, le contexte est essentiel lors de la compréhen
 #### Code non conforme {#non-compliant-code-11}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -428,7 +428,7 @@ public void dontDoThis () {
 #### Code conforme {#compliant-code-8}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -449,7 +449,7 @@ La journalisation sur Experience Manager doit toujours être effectuée via le c
 #### Code non conforme {#non-compliant-code-12}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -461,7 +461,7 @@ public void dontDoThis () {
 #### Code conforme {#compliant-code-9}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -482,7 +482,7 @@ En règle générale, les chemins qui commencent par `/libs` et `/apps` ne doive
 #### Code non conforme {#non-compliant-code-13}
 
 ```java
-public boolean dontDoThis (Resource resource) {
+public boolean dontDoThis(Resource resource) {
   return resource.isResourceType("/libs/foundation/components/text");
 }
 ```
@@ -490,7 +490,7 @@ public boolean dontDoThis (Resource resource) {
 #### Code conforme {#compliant-code-10}
 
 ```java
-public void doThis (Resource resource) {
+public void doThis(Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```

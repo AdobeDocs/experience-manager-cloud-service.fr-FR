@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -79,16 +79,20 @@ AEM Authoring fournit une interface WYSIWYG (Adaptive Forms Editor) pour la cré
 
 Essentiellement, [Création AEM](/help/forms/creating-adaptive-form-core-components.md) s&#39;appuie sur les principes fondamentaux de [Création basée sur des documents](/help/edge/docs/forms/create-forms.md), fournissant une boîte à outils plus avancée pour la création et la gestion de formulaires complexes.
 
+>[!NOTE]
+>
+>
+> La fonctionnalité de création d’AEM est disponible dans le cadre du programme d’adoption précoce. Si vous êtes intéressé, envoyez un email rapide à l’adresse aem-forms-ea@adobe.com pour demander l’accès à la fonctionnalité.
+
 ### Edge Delivery Services AEM Forms : création. Publication et envoi de Forms
 
 Les diagrammes suivants illustrent le processus de création, de publication et d’envoi de formulaires à l’aide de la création et de la création AEM basées sur des documents.
 
-
-
-
 ![Création basée sur des documents ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![Création AEM](/help/edge/assets/aem-authoring-workflow.png)
+
+
 
 
 ## Commencer à créer des formulaires
@@ -101,6 +105,17 @@ Les diagrammes suivants illustrent le processus de création, de publication et 
 * [Ajout de sections répétables à un &#x200B; de formulaire](/help/edge/docs/forms/repeatable-forms.md)
 * [Afficher un message de remerciement personnalisé après l’envoi du formulaire &#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

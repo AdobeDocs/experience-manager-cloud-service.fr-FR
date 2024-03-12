@@ -2,7 +2,7 @@
 title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 96%
@@ -87,7 +87,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 SonarQube lèvera alors une vulnérabilité de blocage. Mais après avoir examiné le code, vous identifiez qu’il ne s’agit pas d’une vulnérabilité et vous pouvez l’annoter avec l’identifiant de règle approprié.
 
 ```java
-@SuppressWarnings ("squid:S2068")
+@SuppressWarnings("squid:S2068")
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```

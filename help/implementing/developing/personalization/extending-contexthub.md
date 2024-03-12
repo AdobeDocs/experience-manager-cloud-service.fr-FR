@@ -2,7 +2,7 @@
 title: Extension de ContextHub
 description: Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux qui sont fournis ne répondent pas à vos besoins.
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 83%
@@ -76,7 +76,7 @@ Créez et enregistrez la classe du moteur de rendu dans une fonction anonyme aut
 ```javascript
 ;(function() {
 
-    var SurferinfoRenderer = new Class ({
+    var SurferinfoRenderer = new Class({
         extend: ContextHub.UI.BaseModuleRenderer,
 
         defaultConfig: {

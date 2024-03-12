@@ -1,9 +1,9 @@
 ---
 title: Que sont les expressions de formulaire adaptatif ?
 description: Utilisez des expressions de formulaires adaptatifs pour ajouter la validation et le calcul automatiques ainsi que pour activer ou désactiver la visibilité d’une section.
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2686'
 ht-degree: 97%
 
 ---
@@ -215,7 +215,7 @@ GuideBridge est un ensemble d’API qui peut être utilisé pour interagir avec 
 
 * Pour réinitialiser les champs de formulaire, vous pouvez déclencher l’API `guideBridge.reset()` dans l’expression de clic d’un bouton. De même, il existe une API d’envoi qui peut être appelée expression de clic `guideBridge.submit()`**.**
 
-* Vous pouvez utiliser l’API `setFocus ()` pour définir la cible d’action sur différents champs et panneaux (car la cible d’action du panneau est définie sur le premier champ automatiquement). Le paramètre `setFocus ()` offre toute une série d’options pour naviguer sur différents panneaux, passer à la traversée précédente/suivante, régler la cible d’action sur un champ en particulier, etc. Par exemple, pour accéder au panneau suivant, utilisez :`guideBridge.setFocus (this.panel.somExpression, 'nextItem').`
+* Vous pouvez utiliser l’API `setFocus()` pour définir la cible d’action sur différents champs et panneaux (car la cible d’action du panneau est définie sur le premier champ automatiquement). Le paramètre `setFocus()` offre toute une série d’options pour naviguer sur différents panneaux, passer à la traversée précédente/suivante, régler la cible d’action sur un champ en particulier, etc. Par exemple, pour passer au panneau suivant, vous pouvez utiliser : guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
 
 * Pour valider un formulaire adaptatif ou ses panneaux spécifiques, utilisez `guideBridge.validate(errorList, somExpression).`
 

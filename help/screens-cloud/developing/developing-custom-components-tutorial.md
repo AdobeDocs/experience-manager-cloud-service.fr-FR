@@ -2,7 +2,7 @@
 title: Développement d’un composant personnalisé pour Screens as a Cloud Service
 description: Le tutoriel suivant décrit les étapes à suivre pour créer un composant personnalisé pour AEM Screens. AEM Screens réutilise de nombreux modèles de conception et technologies existants d’autres produits AEM. Ce tutoriel met en évidence les différences et les considérations spéciales lors du développement pour AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 96%
@@ -478,7 +478,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
   */
  @Nonnull
  @Override
- public String[] getSupportedResourceTypes () {
+ public String[] getSupportedResourceTypes() {
      return new String[] { … };
  }
 

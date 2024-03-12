@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1063'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -89,7 +89,7 @@ Voici des aspects importants à garder à l’esprit lors du développement des 
 * Utilisez plutôt la propriété disponible globalement des champs pour modifier la valeur des champs situés dans un panneau de chargement différé à la disposition de tous les autres panneaux d’un formulaire.
 * Ne transférez pas la valeur de référence d’un champ dans un panneau différé, peu importe que le champ soit ou non marqué globalement sur tous les fragments.
 * Utilisez la fonction de réinitialisation des panneaux pour réinitialiser tout élément visible sur le panneau à l’aide de l’expression de clic suivante.\
-  guideBridge.resolveNode(guideBridge.getFocus ({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
 
 
 ## Voir également {#see-also}

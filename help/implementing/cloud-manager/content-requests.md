@@ -2,7 +2,7 @@
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%
@@ -140,7 +140,7 @@ Le service de surveillance des utilisateurs réels est conçu pour empêcher la 
 
 * Si vous souhaitez faire partie de notre programme d&#39;adoption précoce, veuillez envoyer un email à `aemcs-rum-adopter@adobe.com`, ainsi que le nom de domaine de l’environnement de production, d’évaluation et de développement à partir de l’adresse électronique associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données Real User Monitoring (RUM) pour vous.
 * Une fois cette opération terminée, l’équipe produit de l’Adobe crée un canal de collaboration client.
-* L’équipe produit de l’Adobe vous contactera pour vous fournir la clé de domaine et l’URL du tableau de bord de données dans lesquelles vous pouvez afficher les pages vues et [Les vitales du Web principal (CWV)](https://web.dev/vitals/) mesures collectées par la collection de services de surveillance des utilisateurs réels côté client.
+* L’équipe produit de l’Adobe vous contactera pour vous fournir la clé de domaine et l’URL du tableau de bord de données dans lesquelles vous pouvez afficher les pages vues et [Les principales vitales du Web (CWV)](https://web.dev/vitals/) mesures collectées par la collection de services de surveillance des utilisateurs réels côté client.
 * Vous recevrez alors des conseils sur l’utilisation de la clé de domaine pour accéder à l’URL du tableau de bord de données et afficher les mesures.
 
 ### Utilisation des données Real User Monitoring Service {#how-rum-service-data-is-being-used}

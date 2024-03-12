@@ -2,9 +2,9 @@
 title: Création de blocs instrumentés pour une utilisation avec l’éditeur universel
 description: Découvrez comment créer des blocs instrumentés pour une utilisation avec l’éditeur universel dans AEM création avec des projets Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Ce guide fournit des instructions détaillées sur la création de blocs instrum
 
 Ce guide nécessite nécessairement des connaissances existantes sur la création AEM avec des projets Edge Delivery Services ainsi que sur l’éditeur universel. Avant de commencer ce guide, vous devez déjà avoir accès aux Edge Delivery Services et vous familiariser avec ses principes de base, notamment :
 
-* Vous avez terminé la [Le service de diffusion Edge.](/help/edge/developer/tutorial.md)
+Vous avez terminé la [Tutoriel sur le service de diffusion Edge.](/help/edge/developer/tutorial.md)
 * Vous avez accès à une [Environnement de test AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Vous avez [Activation d’Universal Editor dans le même environnement de test.](/help/implementing/universal-editor/getting-started.md)
 * Vous avez terminé la [Guide de prise en main du développeur pour la création AEM avec des Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide.

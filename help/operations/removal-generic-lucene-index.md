@@ -2,7 +2,7 @@
 title: Suppression des index Lucene génériques
 description: Découvrez la planification de la suppression des index Lucene génériques et en quoi elle peut vous affecter.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 85%
@@ -17,7 +17,7 @@ Adobe prévoit de supprimer l’index « Lucene générique » (`/oak:index/lu
 
 Dans AEM, les requêtes en texte intégral sont celles qui utilisent les fonctions suivantes :
 
-* `jcr:contains ()` dans JCR XPATH
+* `jcr:contains()` dans JCR XPATH
 * `CONTAINS` dans JCR-SQL2
 
 Ces requêtes ne peuvent pas renvoyer de résultats sans utiliser dʼindex. Contrairement à une requête ne contenant que des restrictions de chemin ou de propriété, une requête contenant une restriction de texte intégral pour laquelle aucun index ne peut être trouvé (et donc une traversée est effectuée) ne retournera jamais aucun résultat.
@@ -27,7 +27,7 @@ L’index Lucene générique (`/oak:index/lucene-*`) existe depuis AEM 6.0/Oak�
 Dans AEM 6.5, l’index Lucene générique a été marqué comme obsolète, indiquant qu’il serait supprimé dans les versions ultérieures. Depuis, un avertissement est consigné lorsque l’index est utilisé, comme illustré par le fragment de code de journal suivant :
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains (.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
 ```
 
 Dans les versions récentes dʼAEM, lʼemploi de lʼindex Lucene générique sʼest limité à un nombre très restreint de fonctionnalités. Ces dernières subissent actuellement des refontes afin dʼutiliser d’autres index ou sont modifiées afin de supprimer leur dépendance à cet index.
@@ -35,7 +35,7 @@ Dans les versions récentes dʼAEM, lʼemploi de lʼindex Lucene générique sʼ
 Par exemple, les requêtes de recherche de référence, comme dans l’exemple suivant, doivent maintenant utiliser l’index à l’adresse `/oak:index/pathreference`, qui indexe uniquement les valeurs de propriété `String` correspondant à une expression régulière qui recherche des chemins JCR.
 
 ```text
-//*[jcr:contains (., '"/content/dam/mysite"')]
+//*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
 Afin de prendre en charge des volumes de données client plus importants, Adobe ne crée plus l’index Lucene générique sur de nouveaux environnements AEM as a Cloud Service. En outre, Adobe supprime l’index des référentiels existants. [Consultez la chronologie](#timeline) à la fin de ce document pour plus de détails.
@@ -49,7 +49,7 @@ Les applications client qui utilisent des requêtes qui dépendent toujours de c
 L’index Lucene générique est actuellement utilisé comme index de « secours » si aucun autre index de recherche en texte intégral ne peut traiter une requête. Lorsque cet index obsolète est utilisé, un message similaire au suivant est consigné au niveau Avertissement :
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') /* xpath: //*[jcr:contains (.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
 ```
 
 Dans certaines circonstances, Oak peut essayer d’utiliser un autre index de recherche en texte intégral (comme `/oak:index/pathreference`) pour prendre en charge la requête en texte intégral, mais si la chaîne de requête ne correspond pas à l’expression régulière de la définition de l’index, un message est enregistré au niveau Avertissement et la requête ne retournera probablement pas de résultats.
@@ -61,7 +61,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak
 Une fois lʼindex Lucene générique supprimé, un message comme indiqué ci-dessous est enregistré au niveau Avertissement si une requête en texte intégral nʼest pas capable de localiser une définition dʼindex appropriée :
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') /* xpath: //*[jcr:contains (.,"test")] */ fullText="test", path=*); no results are returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -85,8 +85,8 @@ Sur une instance de publication, lʼindex Lucene générique est le plus souvent
 Dans les cas les plus simples, il peut sʼagir de requêtes pour lesquelles aucun type de nœud nʼest spécifié ce qui implique que ni `nt:base` ni `nt:base` n’est spécifié explicitement, comme par exemple :
 
 ```text
-/jcr:root/content/mysite//*[jcr:contains (., 'search term')]
-/jcr:root/content/mysite//element(*, nt:base)[jcr:contains (., 'search term')]
+/jcr:root/content/mysite//*[jcr:contains(., 'search term')]
+/jcr:root/content/mysite//element(*, nt:base)[jcr:contains(., 'search term')]
 ```
 
 >[!IMPORTANT]
@@ -98,13 +98,13 @@ Dans les cas les plus simples, il peut sʼagir de requêtes pour lesquelles aucu
 Par exemple, les requêtes peuvent être modifiées pour renvoyer les résultats correspondant aux pages ou à l’un des agrégats situés sous la propriété `cq:Page node`. La requête pourrait ainsi devenir :
 
 ```text
-/jcr:root/content/mysite//element(*, cq:Page)[jcr:contains (., 'search term')]
+/jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
 ```
 
 Dans dʼautres cas, une requête peut spécifier un type de nœud, mais contenir une restriction de texte intégral qui ne peut pas être traitée par un autre index de recherche en texte intégral, comme par exemple :
 
 ```text
-/jcr:root/content/dam//element(*, dam:Asset)[jcr:contains (jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
+/jcr:root/content/dam//element(*, dam:Asset)[jcr:contains(jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
 ```
 
 Dans ce cas, la requête a le type de nœud `dam:Asset`, mais contient une restriction de texte intégral sur la propriété connexe `jcr:content/metadata/@cq:tags`.
@@ -136,7 +136,7 @@ Les types de nœud sur lesquels porter la recherche peuvent être spécifiés à
 À l’heure actuelle, si aucune propriété `nodeTypes` est présente, la requête de recherche sous-jacente utilisera le type de nœud `nt:base` et est donc susceptible d’utiliser l’index Lucene générique, qui consigne généralement des messages WARN similaires à ce qui suit.
 
 ```text
-20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains (., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
+20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
 ```
 
 Avant la suppression de lʼindex Lucene générique, le composant `pathfield` sera mis à jour afin que la zone de recherche soit masquée pour les composants utilisant le sélecteur par défaut et qui ne fournissent pas de propriété `nodeTypes`.

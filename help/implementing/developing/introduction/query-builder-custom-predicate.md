@@ -2,7 +2,7 @@
 title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 97%
@@ -216,7 +216,7 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
     static final String PREDICATE_SINCE_OP = " >= ";
     static final String PREDICATE_ACTION = "action";
 
-    Logger log = LoggerFactory.getLogger(getClass ());
+    Logger log = LoggerFactory.getLogger(getClass());
 
     /**
      * Returns a XPath expression filtering by replication metadata.
