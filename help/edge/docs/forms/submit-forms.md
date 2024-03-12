@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 # Préparation de votre feuille de calcul pour l’acceptation des données
 
 
-Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données.
+Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données. Vous pouvez activer manuellement la feuille de calcul pour accepter les données ou utiliser les API d’administration pour permettre à une feuille de calcul d’accepter les données.
 
 ![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs
 
 -->
 
-Pour activer la feuille de calcul :
+
+## Activer manuellement la feuille de calcul pour accepter les données
+
+Pour permettre à la feuille de calcul d’accepter les données
 
 1. Ouvrez la feuille de calcul qui comporte votre formulaire et ajoutez-y une nouvelle feuille en la renommant `incoming`.
 
@@ -61,8 +64,7 @@ Une fois la feuille configurée pour recevoir des données, vous pouvez [prévis
 >
 >  Jamais les feuilles &quot;shared-default&quot; ne devraient contenir d’informations d’identification personnelle ou de données sensibles que vous ne connaissez pas lorsque vous êtes connecté au public.
 
-
-## (Facultatif) Utilisez les API d’administration pour activer une feuille de calcul afin d’accepter des données.
+### Utilisation des API d’administration pour permettre à une feuille de calcul d’accepter des données
 
 Vous pouvez également envoyer une demande de POST au formulaire pour lui permettre d’accepter des données et de configurer des en-têtes pour le `incoming` feuille. Lors de la réception de la demande du POST, le service analyse le corps de la demande et génère de manière autonome les en-têtes et les feuilles essentiels nécessaires à l’ingestion des données.
 
@@ -151,7 +153,6 @@ Pour utiliser les API d’administration afin d’activer une feuille de calcul 
    Votre formulaire peut maintenant accepter des données. Vous constatez également les modifications suivantes dans votre feuille de calcul :
 
 ## Modifications automatiques de la feuille une fois qu’elle est activée pour accepter les données.
-
 
 Une fois que la feuille est configurée pour recevoir des données, vous constatez les modifications suivantes dans votre feuille de calcul :
 
@@ -284,7 +285,7 @@ Il existe plusieurs manières de formater les données de formulaire dans le cor
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-Vous pouvez ensuite personnaliser le message de remerciement, [configurer une page de remerciement](/help/edge/docs/forms/thank-you-page-form.md), ou [redirections de jeux](/help/edge/docs/forms/thank-you-page-form.md).
+Ensuite, vous pouvez [personnaliser le message de remerciement ;](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Voir également
 

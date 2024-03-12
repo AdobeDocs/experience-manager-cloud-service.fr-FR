@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '545'
 ht-degree: 2%
 
 ---
@@ -20,9 +20,10 @@ Une fois que vous êtes prêt à partager votre formulaire avec vos clients pour
 
 ## Prérequis
 
-* La variable [Le bloc Forms adaptatif est activé pour votre projet EDS sur GitHub.](/help/edge/docs/forms/create-forms.md).
+* Vous avez un projet AEM basé sur [AEM Forms standard](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [Ajout d’un bloc Forms adaptatif à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * Votre formulaire est entièrement testé et prêt à l’emploi.
 * Votre [la feuille de calcul est configurée.](/help/edge/docs/forms/submit-forms.md) pour accepter les données.
+
 
 ## Publier le formulaire
 
@@ -74,7 +75,9 @@ Pour ajouter le formulaire à votre page web :
 
    | Formulaire |
    |---|
-   | [https://main—portal—wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main—wefinance—wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+   ![Ajouter au fichier un bloc nommé &quot;Formulaire&quot;](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    Ce bloc sert d’espace réservé où le formulaire est incorporé. Dans la deuxième ligne du bloc, ajoutez l’URL de votre `<form>.json` comme lien hypertexte.
 
@@ -86,16 +89,16 @@ Pour ajouter le formulaire à votre page web :
    Utilisez l’URL d’aperçu (.page URL) à des fins de développement ou de test, ou l’URL de publication (.live) en production. Voici quelques exemples d’URL de prévisualisation et de publication :
 
    **URL de prévisualisation**
-| Formulaire | |— | [https://main—portal—wkndforms.hlx.page/enquiry.json](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
+| Formulaire | |— | [https://main—wefinance—wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
    **URL de publication**
-| Formulaire | |— | [https://main—portal—wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+| Formulaire | |— | [https://main—wefinance—wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. Utilisation [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser la page web. La page affiche désormais le formulaire. Par exemple, voici le formulaire basé sur le [feuille de calcul d&#39;enquête](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
-   [![Exemple de formulaire EDS](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   ![Exemple de formulaire EDS](/help/edge/assets/eds-form.png)
 
 1. Utilisez AEM Sidekick pour publier le formulaire. Désormais, vos clients peuvent remplir le formulaire et l’envoyer.
 

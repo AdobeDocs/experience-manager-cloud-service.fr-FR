@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 3%
 
 ---
 
@@ -64,3 +64,6 @@ Chaque composant de formulaire est fourni avec différentes propriétés qui vou
 | Cochée | Case à cocher, Radio | Détermine si le champ est sélectionné par défaut. L’attribut coché est une propriété booléenne utilisée avec les entrées de case à cocher et de radio. Lorsque la valeur est définie sur true, elle indique que le champ est sélectionné par défaut au chargement du formulaire. |
 | FileSet | Tous | Regroupe les champs pour créer des sections visuellement distinctes dans un formulaire. L’élément fieldset regroupe les champs associés dans un formulaire, les séparant visuellement afin d’améliorer l’organisation et l’expérience utilisateur. </br> Pour organiser un ensemble de champs dans un jeu de champs, utilisez simplement la variable `fieldset` et indiquez son attribut name . Dans l’exemple ci-dessous, nous montrons comment les boutons radio sont encapsulés dans un seul jeu de champs pour une meilleure organisation. ![Exemple de champ](/help/edge/assets/fieldset-example.png) |
 
+## Voir également
+
+{{see-more-forms-eds}}

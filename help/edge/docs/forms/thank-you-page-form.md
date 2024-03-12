@@ -1,18 +1,18 @@
 ---
-title: Configuration d’une page de remerciement ou d’un formulaire de redirection après envoi
+title: Afficher un message de remerciement personnalisé après l’envoi du formulaire
 description: Découvrez comment configurer les pages de remerciement et la redirection pour le bloc Forms afin d’optimiser l’expérience utilisateur et de rationaliser les parcours utilisateur.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '195'
 ht-degree: 4%
 
 ---
 
-# Afficher la page de remerciement ou le formulaire de redirection après envoi
+# Afficher un message de remerciement personnalisé après l’envoi du formulaire
 
 Une fois qu’un utilisateur a envoyé un formulaire, il est essentiel de fournir une expérience transparente au moyen d’un message de remerciement. Cela confirme non seulement la réussite de l’envoi, mais améliore également la satisfaction des utilisateurs et les guide davantage dans leur parcours.
 
