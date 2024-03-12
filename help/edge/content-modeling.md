@@ -1,13 +1,13 @@
 ---
 title: Modélisation de contenu pour la création AEM avec des projets Edge Delivery Services
 description: Découvrez comment la modélisation de contenu fonctionne pour la création AEM avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
-source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
+source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2095'
 ht-degree: 1%
 
 ---
-
 
 # Modélisation de contenu pour la création AEM avec des projets Edge Delivery Services {#content-modeling}
 
@@ -351,7 +351,7 @@ Tout le reste est rendu en texte brut.
 
 #### Réduire le champ {#field-collapse}
 
-La réduction des champs est le mécanisme qui permet de combiner plusieurs valeurs de champ en un seul élément sémantique, selon une convention d’affectation de nom utilisant les suffixes. `Title`, `Type`, `Alt`, et `Text` (toutes les valeurs sensibles à la casse). Toute propriété se terminant par l’un de ces suffixes ne sera pas considérée comme une valeur, mais comme un attribut d’une autre propriété.
+La réduction des champs est le mécanisme qui permet de combiner plusieurs valeurs de champ en un seul élément sémantique, selon une convention d’affectation de nom utilisant les suffixes. `Title`, `Type`, `MimeType`, `Alt`, et `Text` (toutes les valeurs sensibles à la casse). Toute propriété se terminant par l’un de ces suffixes ne sera pas considérée comme une valeur, mais comme un attribut d’une autre propriété.
 
 ##### Images {#image-collapse}
 
@@ -624,7 +624,13 @@ Assurez-vous également que la feuille de calcul est ajoutée à votre mappage d
 
 ### Propriétés de page {#page-properties}
 
-Il est également possible de définir un modèle de composant pour les métadonnées de page, qui sera mis à la disposition de l’auteur sous forme d’onglet dans la boîte de dialogue Propriétés de la page AEM Sites.
+La plupart des propriétés de page par défaut disponibles dans AEM sont mappées aux métadonnées de page respectives dans un document. Cela inclut par exemple `title`, `description`, `robots`, `canonical url` ou `keywords`. Certaines propriétés spécifiques à AEM sont également disponibles :
+
+* `cq:lastModified` as `modified-time` au format ISO8601
+* Heure de la dernière publication du document en tant que `published-time` au format ISO8601
+* `cq:tags` as `cq-tags` comme liste séparée par des virgules des ID de balise.
+
+Il est également possible de définir un modèle de composant pour les métadonnées de page personnalisées, qui sera mis à la disposition de l’auteur sous forme d’onglet dans la boîte de dialogue Propriétés de la page AEM Sites.
 
 Pour ce faire, créez un modèle de composant avec l’ID . `page-metadata`.
 
@@ -633,15 +639,10 @@ Pour ce faire, créez un modèle de composant avec l’ID . `page-metadata`.
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-Certains noms de champ ont une signification spéciale et seront ignorés lors de l’activation de l’interface utilisateur de la boîte de dialogue de création :
-
-* **`cq:tags`** - Par défaut : `cq:tags` ne sont pas ajoutées aux métadonnées. Les ajouter au `page-metadata` ajoute les ID de balise sous la forme d’une liste séparée par des virgules sous la forme `tags` meta tag à la tête.
-* **`cq:lastModified`** - `cq:lastModified` ajoute ses données sous la forme `last-modified` à la tête.
