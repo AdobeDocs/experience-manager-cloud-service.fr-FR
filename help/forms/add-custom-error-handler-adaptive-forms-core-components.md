@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: e0607ff37572a586f5a83f2974054ebfb4b7d98f
+source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 92%
+source-wordcount: '2331'
+ht-degree: 91%
 
 ---
 
@@ -255,6 +255,7 @@ Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les 
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
+   Dans le code ci-dessus, `return true` appelle automatiquement le gestionnaire d’erreurs par défaut. Pour empêcher l’appel du gestionnaire d’erreur par défaut, incluez `return false`.
 
    >[!NOTE]
    >
