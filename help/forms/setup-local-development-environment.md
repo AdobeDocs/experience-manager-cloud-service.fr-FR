@@ -4,10 +4,10 @@ description: Configuration d’un environnement de développement local pour Ado
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
+source-git-commit: e84d3ad2d7b549092ab7c616bead2f14f59be8c9
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 92%
+source-wordcount: '2723'
+ht-degree: 91%
 
 ---
 
@@ -220,10 +220,21 @@ AEM Forms as a Cloud Services fournit un environnement SDK Docker qui facilite
 
 1. Ouvrez une invite de commandes et accédez au dossier `aem-forms-addon-native-<version>`.
 
-1. Assurez-vous que votre instance d’auteur AEM locale est en cours d’exécution. Exécutez la commande suivante pour démarrer le SDK :
+1. Assurez-vous que votre instance d’auteur AEM locale est en cours d’exécution. Exécutez les commandes suivantes pour démarrer le SDK :
 
-   * (sous Microsoft® Windows) `sdk.bat start`
-   * (sous Linux® ou Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * Sous Microsoft® Windows
+
+     ```shell
+     sdk.bat start
+     ```
+
+
+   * Linux® ou Apple macOS
+
+   ```Shell
+       export AEM_HOME=[local AEM Author installation]
+       ./sdk.sh start
+   ```
 
    >[!NOTE]
    >
