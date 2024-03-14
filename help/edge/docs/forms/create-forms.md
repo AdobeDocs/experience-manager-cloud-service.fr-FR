@@ -2,10 +2,8 @@
 title: Prise en main d’AEM Forms Edge Delivery Service. Créez un formulaire.
 description: Concevez des formes parfaites, vite ! ⚡ Création basée sur des documents de diffusion AEM Forms Edge = vitesse époustouflante et formulaires compatibles avec l’optimisation pour les moteurs de recherche et les utilisateurs plus heureux.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%

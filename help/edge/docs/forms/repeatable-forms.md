@@ -2,10 +2,8 @@
 title: Ajout de sections répétables à un formulaire
 description: Ajout de sections répétables à un formulaire EDS
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 14%
@@ -17,8 +15,6 @@ ht-degree: 14%
 Le bloc Forms adaptatif permet d’ajouter ou de rendre répétable une section ou un composant d’un formulaire. Cela permet aux utilisateurs de saisir plusieurs fois des informations pour le même type de données, ce qui facilite la collecte d’informations telles que l’expérience professionnelle ou le cursus de formation.
 
 Prenons l’exemple d’un formulaire utilisé pour collecter des informations sur l’expérience professionnelle d’une personne. Vous pouvez avoir une section répétable pour capturer les détails de chaque emploi précédent. La section répétable contient généralement des champs tels que le nom de l’entreprise, l’intitulé du poste, les dates de début et de fin d’emploi, et les responsabilités. La personne utilisatrice peut ajouter plusieurs instances de la section répétable pour saisir des informations sur chaque emploi qu’elle a effectué.
-
-
 
 À la fin de cet article, vous saurez :
 

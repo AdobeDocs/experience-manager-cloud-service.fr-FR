@@ -2,10 +2,8 @@
 title: Afficher un message de remerciement personnalisé après l’envoi du formulaire
 description: Découvrez comment configurer les pages de remerciement et la redirection pour le bloc Forms afin d’optimiser l’expérience utilisateur et de rationaliser les parcours utilisateur.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 4%
