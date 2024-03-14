@@ -3,14 +3,14 @@ title: Publication d’un formulaire AEM Forms Edge Delivery Services
 description: Publication d’un formulaire AEM Forms Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '549'
 ht-degree: 2%
 
 ---
 
-# Publier le formulaire
+# Publier votre formulaire et commencer à collecter des données
 
 Une fois que vous êtes prêt à partager votre formulaire avec vos clients pour la collecte ou l’envoi de données, vous pouvez simplement le publier, ce qui rend le formulaire facilement disponible pour que vos clients l’utilisent.
 

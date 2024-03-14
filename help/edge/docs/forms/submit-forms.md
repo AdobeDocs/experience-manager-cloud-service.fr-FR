@@ -3,14 +3,14 @@ title: Préparation de votre feuille de calcul pour l’acceptation des données
 description: Créez des formulaires puissants plus rapidement à l’aide de feuilles de calcul et de champs de bloc Forms adaptatifs !
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
 
-# Préparation de votre feuille de calcul pour l’acceptation des données
+# Configurez vos feuilles de calcul Google Sheets ou fichiers Excel Microsoft pour commencer à accepter les données.
 
 
 Une fois que vous [création et prévisualisation du formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données. Vous pouvez activer manuellement la feuille de calcul pour accepter les données ou utiliser les API d’administration pour permettre à une feuille de calcul d’accepter les données.

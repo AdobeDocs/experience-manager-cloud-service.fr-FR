@@ -3,20 +3,21 @@ title: Personnalisation du thème et du style d’un formulaire de services de d
 description: Personnalisation du thème et du style d’un formulaire de services de diffusion AEM Forms Edge
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
-# Style des champs de formulaire
+
+# Personnalisation de l’aspect de vos formulaires
 
 Forms est essentiel pour les interactions utilisateur sur les sites web, ce qui leur permet de saisir des données. Vous pouvez utiliser des feuilles de style en cascade (CSS) pour mettre en forme les champs d’un formulaire, améliorer la présentation visuelle de vos formulaires et améliorer l’expérience utilisateur.
 
 Le bloc de Forms adaptatif produit une structure cohérente pour tous les champs de formulaire. La structure cohérente facilite le développement de sélecteurs CSS pour sélectionner et mettre en forme les champs de formulaire en fonction du type de champ et des noms de champ.
 
-Ce document décrit la structure de HTML pour divers composants de formulaire. Il vous aide à comprendre comment créer des sélecteurs CSS pour divers champs de formulaire afin de mettre en forme les champs de formulaire d’un bloc de Forms adaptatif.
+Ce document décrit la structure de HTML pour divers composants de formulaire. Il vous aide à mieux comprendre comment créer des sélecteurs CSS pour divers champs de formulaire afin de mettre en forme les champs de formulaire d’un bloc de Forms adaptatif.
 
 À la fin de l’article :
 
@@ -203,7 +204,7 @@ Pour les menus déroulants, la variable `select` est utilisé à la place d’un
 
 +++ Sélecteurs CSS pour le composant déroulant
 
-La page CSS suivante répertorie des exemples de sélecteurs CSS pour les composants déroulants.
+La page CSS suivante répertorie des exemples de sélecteurs CSS pour les composants de liste déroulante.
 
 ```CSS
 /* Target the outer wrapper */
@@ -262,7 +263,7 @@ La page CSS suivante répertorie des exemples de sélecteurs CSS pour les compos
 
 Tout comme les composants de liste déroulante, les groupes radio ont leur propre structure de HTML et structure CSS :
 
-+++ Structure de HTML de groupe de cases d’option
++++ Structure de HTML du groupe de cases d’option
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,7 +301,7 @@ Tout comme les composants de liste déroulante, les groupes radio ont leur propr
 
 +++
 
-+++ Sélecteurs CSS pour le composant déroulant
++++ Sélecteurs CSS pour les groupes radio
 
 * Ciblage du jeu de champs
 
@@ -334,7 +335,7 @@ Ce sélecteur cible n’importe quel champ avec la classe radiogroup-wrapper. Ce
 
 ### Groupes de cases à cocher
 
-+++ Structure de HTML de groupe de cases à cocher
++++ Structure de HTML du groupe de cases à cocher
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,7 +371,7 @@ Ce sélecteur cible n’importe quel champ avec la classe radiogroup-wrapper. Ce
 
 +++
 
-+++ Exemples de sélecteurs CSS pour les groupes de cases d’option et de cases à cocher**
++++ Sélecteurs CSS pour les groupes de cases à cocher
 
 * Ciblage du wrapper externe : ces sélecteurs ciblent les conteneurs les plus éloignés des groupes de cases d’option et de cases à cocher, ce qui vous permet d’appliquer des styles généraux à l’ensemble de la structure du groupe. Cela s’avère utile pour définir l’espacement, l’alignement ou d’autres propriétés liées à la mise en page.
 
@@ -798,7 +799,7 @@ Vous pouvez mettre en forme les champs de formulaire en fonction de leur type sp
 
 Vous pouvez utiliser des sélecteurs CSS pour cibler des types de champ spécifiques et appliquer les styles de manière cohérente.
 
-**Structure de HTML**
++++ Structure HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ Vous pouvez utiliser des sélecteurs CSS pour cibler des types de champ spécifi
 * Chaque champ comporte un libellé, un élément d’entrée et des éléments supplémentaires potentiels, tels que des espaces réservés et des descriptions.
 
 
++++
 
-**Exemple de sélecteurs CSS**
+
++++ Exemple de sélecteurs CSS
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ Vous pouvez utiliser des sélecteurs CSS pour cibler des types de champ spécifi
 }
 ```
 
-
++++
 
 ### Style basé sur le nom du champ
 
 Vous pouvez également cibler des champs individuels par nom pour appliquer des styles uniques.
 
-**Structure de HTML**
++++ Structure HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ Vous pouvez également cibler des champs individuels par nom pour appliquer des 
 </div>
 ```
 
-**Exemple de sélecteur CSS**
++++
+
++++ Exemple de sélecteur CSS
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ Vous pouvez également cibler des champs individuels par nom pour appliquer des 
 }
 ```
 
+
+
 Ce CSS cible tous les éléments d’entrée situés dans un élément qui possède la classe . `field-otp`. La structure de HTML de votre formulaire suit les conventions du bloc Forms adaptatif, ce qui implique qu’il existe un conteneur marqué avec la classe &quot;field-top&quot; qui contient le champ nommé &quot;top&quot;.
+
++++
 
 ## Voir également
 
