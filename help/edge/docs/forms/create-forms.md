@@ -5,24 +5,22 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '805'
 ht-degree: 1%
 
 ---
 
 # Création d’un formulaire à l’aide d’un bloc Forms adaptatif
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
+
 AEM Forms Edge Delivery fournit un bloc, appelé Bloc Forms adaptatif, qui vous permet de créer facilement des formulaires pour capturer et stocker les données capturées. Vous pouvez [créer un projet AEM préconfiguré avec le bloc Forms adaptatif](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouter le bloc Forms adaptatif à un projet AEM existant ;](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Ces formulaires envoient directement des données à un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser un écosystème dynamique et des API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou lancer un processus d’entreprise existant.
 
 ![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow-create-form.png)
-
-
-![VIDÉO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
-
 
 
 ## Conditions préalables
