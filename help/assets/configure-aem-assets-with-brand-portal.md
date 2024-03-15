@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 93%
+source-wordcount: '2568'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-La configuration de Adobe Experience Manager Assets Brand Portal vous permet de publier des ressources de marque approuvées à partir de Adobe Experience Manager Assets as a [!DNL Cloud Service] à Brand Portal et distribuez-les aux utilisateurs de Brand Portal.
+La configuration de Adobe Experience Manager Assets Brand Portal vous permet de publier des ressources de marque approuvées depuis Adobe Experience Manager Assets as a [!DNL Cloud Service] à Brand Portal et distribuez-les aux utilisateurs de Brand Portal.
 
 ## Activation de Brand Portal à l’aide de Cloud Manager {#activate-brand-portal}
 
@@ -290,11 +290,12 @@ Procédez comme suit pour générer les informations d’identification du compt
 
    ![Sélectionner le profil de produit](assets/service-account4.png)
 
-1. Après la configuration de l’API, vous êtes redirigé vers sa page d’aperçu. Dans la navigation de gauche sous **[!UICONTROL Informations d’identification]**, cliquez sur le **[!UICONTROL Compte de service (JWT)]** .
+1. Après la configuration de l’API, vous êtes redirigé vers sa page d’aperçu. Dans la navigation de gauche, sous **[!UICONTROL Identifiants]**, cliquez sur **[!UICONTROL Compte de service (JWT)]**.
 
    >[!NOTE]
    >
-   >Vous pouvez voir les informations d’identification et effectuer des actions (générer des jetons JWT, copier les informations d’identification, récupérer le secret client, etc.).
+   >* Vous pouvez voir les informations d’identification et effectuer des actions (générer des jetons JWT, copier les informations d’identification, récupérer le secret client, etc.).
+   >* Actuellement, seul le type d’informations d’identification du compte de service Developer Console (JWT) de l’Adobe est pris en charge. N’utilisez pas le type d’informations d’identification OAuth Server-to-Server tant qu’il n’est pas pris en charge à la mi-avril. En savoir plus sur [Obsolescence des informations d’identification JWT dans la console Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. Dans l’onglet **[!UICONTROL Client Credentials]** (Informations d’identification client), copiez l’**[!UICONTROL ID client]**.
 
