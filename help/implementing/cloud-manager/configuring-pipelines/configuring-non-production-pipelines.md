@@ -3,10 +3,10 @@ title: Configurer des pipelines hors production
 description: Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 77%
+source-wordcount: '1371'
+ht-degree: 73%
 
 ---
 
@@ -145,10 +145,16 @@ Les étapes de création de votre pipeline de déploiement ciblé hors productio
    * **Branche Git** – Cette option définit à partir de quelle branche le pipeline sélectionné doit récupérer le code.
       * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Elle trouve les branches correspondantes que vous pouvez sélectionner.
    * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
+   * **Pipeline** - Pour les pipelines front-end hors production, vous avez la possibilité d’activer **[Audit de l’expérience.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![Configuration du pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Configuration du pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Cliquez sur **Enregistrer**.
+1. Si vous avez activé le contrôle de l’expérience, appuyez ou cliquez sur **Continuer** pour accéder au **Audit de l’expérience** vous permettant de définir les chemins qui doivent toujours être inclus dans le contrôle de l’expérience.
+
+   * Si vous avez activé **Audit de l’expérience**, veuillez consulter le document . [Audit de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) pour plus d’informations sur la configuration.
+   * Si ce n’est pas le cas, ignorez cette étape.
+
+1. Appuyez ou cliquez sur **Enregistrer** pour enregistrer le pipeline.
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans la carte **Pipelines** dans la page **Aperçu du programme**.
 

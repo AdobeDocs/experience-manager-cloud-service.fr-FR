@@ -3,10 +3,10 @@ title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 72%
+source-wordcount: '1338'
+ht-degree: 67%
 
 ---
 
@@ -93,25 +93,13 @@ Pour terminer la configuration du pipeline de production de code full stack, pro
 
    ![Code full stack](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Cliquez sur **Continuer** pour accéder à l’onglet **contrôle de l’expérience** qui vous permet de définir les chemins qui doivent toujours être inclus dans le contrôle de l’expérience.
+1. Appuyez ou cliquez sur **Continuer** pour accéder au **Audit de l’expérience** vous permettant de définir les chemins qui doivent toujours être inclus dans le contrôle de l’expérience.
 
    ![Ajout d’un contrôle de l’expérience](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. Indiquer une à inclure dans le contrôle de l’expérience.
+1. Indiquez les chemins à inclure dans le contrôle de l’expérience.
 
-   * Les chemins d’accès doivent commencer par `/`.
-   * Par exemple, si vous souhaitez inclure `https://wknd.site/us/en/about-us.html` dans le contrôle de l’expérience, saisissez le chemin d’accès `/us/en/about-us.html`.
-
-   ![Définition d’un chemin pour le contrôle de l’expérience](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. Cliquez sur **Ajouter une page** et le chemin est renseigné automatiquement avec l’adresse de votre environnement, puis ajouté à la table des chemins.
-
-   ![Enregistrement du chemin d’accès dans la table](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. Continuez à ajouter des chemins selon vos besoins en répétant les deux étapes précédentes.
-
-   * Vous pouvez ajouter 25 chemins au maximum.
-   * Si vous ne définissez aucun chemin, la page d’accueil du site sera incluse par défaut dans l’audit de l’expérience.
+   * Voir le document [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) pour plus d’informations.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 

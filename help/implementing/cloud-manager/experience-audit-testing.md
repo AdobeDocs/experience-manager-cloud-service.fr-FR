@@ -2,10 +2,10 @@
 title: Tests d’audit de l’expérience
 description: Découvrez comment l’audit de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation des moteurs de recherche.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 82%
+source-wordcount: '890'
+ht-degree: 56%
 
 ---
 
@@ -31,15 +31,57 @@ Le contrôle de l’expérience dans Cloud Manager garantit que l’expérience 
 
 Les résultats sont informatifs et permettent au responsable de déploiement de voir les scores et les différences existant entre les scores précédents et actuels. Ces informations sont utiles pour déterminer si une régression a été introduite avec le déploiement actuel.
 
-L’audit de l’expérience est optimisé par Google Lighthouse, un outil open source de Google qui est activé dans tous les pipelines de production de Cloud Manager.
+Le contrôle de l’expérience est optimisé par Google Lighthouse, un outil Open Source de Google.
 
 >[!INFO]
 >
 >À compter du 31 août 2023, le contrôle de l’expérience effectuera la transition vers la présentation des résultats spécifiques à la plateforme mobile. Les mesures de performances mobiles s’inscrivent généralement en dessous de celles des ordinateurs de bureau. Vous devez donc anticiper un changement des performances signalées suite à ce changement.
 
->[!TIP]
->
->Vous configurez les pages incluses dans l’audit de l’expérience lorsque vous [configurez votre pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+## Disponibilité {#availability}
+
+Le contrôle de l’expérience est disponible pour Cloud Manager :
+
+* Pipelines de production de sites, par défaut.
+* Des pipelines de développement front-end, éventuellement.
+
+Voir [Section de configuration](#configuration) pour plus d’informations sur la configuration de l’audit pour les environnements facultatifs.
+
+## Configuration {#configuration}
+
+Le contrôle de l’expérience est disponible par défaut pour les pipelines de production. Elle peut être activée éventuellement pour les pipelines de développement front-end. Dans tous les cas, vous devez définir les chemins de contenu évalués lors de l’exécution du pipeline.
+
+Vous configurez les pages incluses dans le contrôle de l’expérience lors de la configuration de votre pipeline.
+
+1. Selon le type de pipeline que vous souhaitez configurer, suivez les instructions pour :
+
+   * Ajouter un nouveau [pipeline de production,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) si vous souhaitez définir les chemins à évaluer par l’audit.
+   * Ajouter un nouveau [pipeline hors production,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si vous souhaitez activer l’audit sur un pipeline front-end ou de développement full-stack.
+   * Ou vous pouvez [modifier un pipeline existant,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) et mettre à jour les options existantes.
+
+1. Si vous ajoutez ou modifiez un pipeline hors production pour lequel vous souhaitez utiliser le contrôle de l’expérience, vous devez sélectionner la variable **Audit de l’expérience** de la **Code source** .
+
+   ![Activation du contrôle de l’expérience](assets/experience-audit-enable.jpg)
+
+   * Cela n’est nécessaire que pour les pipelines hors production.
+   * La variable **Audit de l’expérience** s’affiche lorsque la case est cochée.
+
+1. Pour les pipelines de production et hors production, vous définissez les chemins qui doivent être inclus dans le contrôle de l’expérience sur le **Audit de l’expérience** .
+
+   * Les chemins de page doivent commencer par `/` et sont relatifs à votre site.
+   * Par exemple, si votre site est `wknd.site` et souhaite inclure `https://wknd.site/us/en/about-us.html` dans le contrôle de l’expérience, saisissez le chemin d’accès. `/us/en/about-us.html`.
+
+   ![Définition d’un chemin pour le contrôle de l’expérience](assets/experience-audit-add-page.png)
+
+1. Appuyez ou cliquez sur **Ajouter une page** et le chemin est renseigné automatiquement avec l’adresse de votre environnement et ajouté au tableau des chemins.
+
+   ![Enregistrement du chemin d’accès dans la table](assets/experience-audit-page-added.png)
+
+1. Continuez à ajouter des chemins selon vos besoins en répétant les deux étapes précédentes.
+
+   * Vous pouvez ajouter 25 chemins au maximum.
+   * Si vous ne définissez aucun chemin, la page d’accueil du site sera incluse par défaut dans l’audit de l’expérience.
+
+1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
 ## Comprendre les résultats de l’audit de l’expérience {#understanding-experience-audit-results}
 
