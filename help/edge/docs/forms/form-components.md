@@ -3,9 +3,9 @@ title: Composants de bloc de formulaire adaptatif et leurs propriétés
 description: Ce document présente les composants de formulaire et leurs propriétés disponibles dans le service de diffusion Edge AEM Forms.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1006'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,6 @@ Chaque composant de formulaire est fourni avec différentes propriétés qui vou
 | Propriété | Composants applicables | Détails |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | Type | Tous | Indique le type du composant. Cette propriété détermine le comportement et l’aspect du champ de saisie. Par exemple, pour les entrées de texte, le type peut être &quot;texte&quot;, &quot;email&quot; pour les entrées d’email, &quot;mot de passe&quot; pour les entrées de mot de passe. Prise en charge des blocs Forms adaptatifs  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tous les types d’entrée HTML5 valides</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> comme type. |
-| Type | Tous | Indique le type du composant. Cette propriété détermine le comportement et l’aspect du champ de saisie. Par exemple, pour les entrées de texte, le type peut être &quot;texte&quot;, &quot;email&quot; pour les entrées d’email, &quot;mot de passe&quot; pour les entrées de mot de passe. Prise en charge des blocs Forms adaptatifs  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tous les types d’entrée HTML5 valides</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> comme type. |
 | Nom | Tous | Identifie le composant pour l’envoi du formulaire. L’attribut name est utilisé lors de l’envoi des données de formulaire au serveur, associant la saisie de l’utilisateur à un champ spécifique. |
 | Libellé | Tous | Fournit des informations contextuelles aux utilisateurs. Le libellé est le texte affiché en regard du composant, qui fournit aux utilisateurs des conseils sur les informations à saisir. |
 | Valeur | Texte, Mot de passe, Email, Numéro, Plage, Date et ses variantes (datetime-local, mois, semaine, heure), Case à cocher, Radio, Masqué, Envoyer, Bouton | Indique la valeur initiale du composant. Pour les entrées de texte, la zone de texte et les éléments de sélection, il s’agit du texte ou de l’option par défaut qui s’affiche. Pour les composants radio et case à cocher, il s’agit de la valeur/des données envoyées lorsqu’elles sont sélectionnées. L’attribut value est facultatif, mais doit être considéré comme obligatoire pour les entrées de case à cocher et de radio. |
@@ -61,6 +60,10 @@ Chaque composant de formulaire est fourni avec différentes propriétés qui vou
 | Options | Liste déroulante | Spécifie les options des menus déroulants. La propriété options est une liste de choix séparés par des virgules pour les menus déroulants, qui définit les options sélectionnables affichées pour l’utilisateur. |
 | Cochée | Case à cocher, Radio | Détermine si le champ est sélectionné par défaut. L’attribut coché est une propriété booléenne utilisée avec les entrées de case à cocher et de radio. Lorsque la valeur est définie sur true, elle indique que le champ est sélectionné par défaut au chargement du formulaire. |
 | FileSet | Tous | Regroupe les champs pour créer des sections visuellement distinctes dans un formulaire. L’élément fieldset regroupe les champs associés dans un formulaire, les séparant visuellement afin d’améliorer l’organisation et l’expérience utilisateur. </br> Pour organiser un ensemble de champs dans un jeu de champs, utilisez simplement la variable `fieldset` et indiquez son attribut name . Dans l’exemple ci-dessous, nous montrons comment les boutons radio sont encapsulés dans un seul jeu de champs pour une meilleure organisation. ![Exemple de champ](/help/edge/assets/fieldset-example.png) |
+| Répétable | Tous | Une propriété booléenne pour `fieldset` indiquant qu’un jeu de champs particulier peut être répété pour spécifié `Min` et `Max` nombre de fois. La variable `Min` doit être définie sur 1 ou supérieur, ne définissez pas la variable `Min` à 0. |
+| Expression visible | Tous | Une expression visible fait référence à une formule de feuille de calcul, indiquée par la balise &#39;=&#39;, utilisée pour contrôler la visibilité d’un champ. Dans cette formule, seule la propriété value des autres champs peut être utilisée, ce qui permet de gérer facilement la visibilité des champs dans le système. |
+| Expression de valeur | Tous | Une expression de valeur fait référence à une formule de feuille de calcul, indiquée par la balise &#39;=&#39;, utilisée pour contrôler la valeur d’un champ. Dans cette formule, seule la propriété value des autres champs peut être utilisée, ce qui permet une gestion simple de la valeur des champs dans le système. |
+
 
 ## Voir également
 
