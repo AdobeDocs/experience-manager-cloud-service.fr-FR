@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 4fdca70b3a711f747e44ac2a6c1d117ac990d49b
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 91%
 
 ---
 
@@ -108,6 +108,15 @@ La clientèle Dynatrace peut surveiller son utilisation d’AEM. [Découvrez com
 ### Prise en charge de RDE pour le code en front-end à l’aide des thèmes du site et des modèles de site : programme d’adoption précoce {#rde-frontend-early-adopter}
 
 Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prennent désormais en charge le code en front-end basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les utilisateurs et utilisatrices bénéficiant de l’adoption précoce. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **aemcs-rde-support@adobe.com** pour essayer et fournir des commentaires.
+
+### Configuration du réseau de diffusion de contenu Programme d’adoption précoce {#cdn-config-early-adopter}
+
+Outre la version récemment publiée [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), qui inclut éventuellement les règles WAF (Web Application Firewall) concédables, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration CDN. Rejoindre le programme des premiers adopteurs par courrier électronique **aemcs-cdn-config-adopter@adobe.com** pour accéder à :
+* 301/302 redirections côté client
+* proxy des requêtes en périphérie vers des origines arbitraires
+* Conversion d’URL
+* définition ou modification des en-têtes de requête ou de réponse
+* pages d’erreur personnalisées lorsque le réseau de diffusion de contenu ne peut pas atteindre AEM
 
 ## Cloud Manager {#cloud-manager}
 
