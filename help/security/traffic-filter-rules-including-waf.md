@@ -2,10 +2,10 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: ht
-source-wordcount: '3376'
-ht-degree: 100%
+source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+workflow-type: tm+mt
+source-wordcount: '3382'
+ht-degree: 98%
 
 ---
 
@@ -286,7 +286,7 @@ Voici quelques exemples de règles. Voir la [section de limite de débit](#rules
 
 **Exemple 1**
 
-Cette règle bloque les requêtes provenant de l’adresse IP 192.168.1.1 :
+Cette règle bloque les requêtes provenant de **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -425,7 +425,7 @@ Les limites de débit sont calculées par POP de réseau CDN. Supposons, par exe
 
 **Exemple 1**
 
-Cette règle bloque une personne cliente pendant 5 minutes lorsqu’elle dépasse 100 req/s (par POP de réseau CDN) au cours des 60 dernières secondes :
+Cette règle bloque un client pendant 5 m lorsqu’il dépasse une moyenne de 60 req/s (par CDN POP) au cours des 10 dernières secondes :
 
 ```
 kind: "CDN"
@@ -450,7 +450,7 @@ data:
 
 **Exemple 2**
 
-Bloquer les requêtes pendant 60 secondes sur le chemin d’accès /critical/resource lorsqu’il dépasse 100 req/s (par POP de réseau CDN) au cours des 60 dernières secondes :
+Bloquer les requêtes sur le chemin /critique/resource pendant 60 s lorsqu’elles dépassent une moyenne de 100 req/s (par POP CDN) dans les 60 dernières secondes :
 
 ```
 kind: "CDN"
