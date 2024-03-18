@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
+source-git-commit: b0198fee3fb8c2f02f50819bea5757e5b8373ac1
 workflow-type: tm+mt
-source-wordcount: '1240'
-ht-degree: 88%
+source-wordcount: '1241'
+ht-degree: 87%
 
 ---
 
@@ -131,7 +131,7 @@ Assurez-vous que votre dépendance dans `it.tests/pom.xml` a été mis à jour.
 </dependency>
 ```
 
-Cette modification sera requise après le 6 avril 2024.
+Cette modification doit être effectuée avant le 6 avril 2024.
 
 Si vous ne mettez pas à jour la bibliothèque de dépendances, des échecs de pipeline se produiront à l’étape « Tests fonctionnels personnalisés ».
 
