@@ -2,10 +2,10 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
 workflow-type: tm+mt
-source-wordcount: '3382'
-ht-degree: 98%
+source-wordcount: '3634'
+ht-degree: 90%
 
 ---
 
@@ -234,9 +234,9 @@ Les actions sont classées par ordre de priorité en fonction de leurs types dan
 
 | **Nom** | **Propriétés autorisées** | **Signification** |
 |---|---|---|
-| **autoriser** | `wafFlags` (facultatif) | Si wafFlags n’est pas présent, arrête le traitement des règles et passe à la diffusion de la réponse. Si wafFlags est présent, désactive les protections WAF spécifiées et poursuit le traitement des règles plus poussé. |
-| **block** | `status, wafFlags` (facultatif et mutuellement exclusif) | Si wafFlags n’est pas présent, renvoie une erreur HTTP en contournant toutes les autres propriétés, le code d’erreur est défini par la propriété de statut ou sur la valeur par défaut 406. Si wafFlags est présent, active les protections WAF spécifiées et poursuit le traitement des règles plus poussé. |
-| **log** | `wafFlags` (facultatif) | Consigne le fait que la règle a été déclenchée, sinon n’affecte pas le traitement. wafFlags n’a aucun effet. |
+| **autoriser** | `wafFlags` (facultatif), `alert` (facultatif, pas encore publié) | Si wafFlags n’est pas présent, arrête le traitement des règles et passe à la diffusion de la réponse. Si wafFlags est présent, il désactive les protections WAF spécifiées et poursuit le traitement des règles plus poussé. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans une fenêtre de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
+| **block** | `status, wafFlags` (facultatif et mutuellement exclusif), `alert` (facultatif, pas encore publié) | Si wafFlags n’est pas présent, renvoie une erreur HTTP en contournant toutes les autres propriétés, le code d’erreur est défini par la propriété de statut ou sur la valeur par défaut 406. Si wafFlags est présent, il active les protections WAF spécifiées et poursuit le traitement des règles plus poussé. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans une fenêtre de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
+| **log** | `wafFlags` (facultatif), `alert` (facultatif, pas encore publié) | Consigne le fait que la règle a été déclenchée, sinon n’affecte pas le traitement. wafFlags n’a aucun effet. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans une fenêtre de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
 
 ### Liste des indicateurs WAF {#waf-flags-list}
 
@@ -465,6 +465,34 @@ data:
         action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
+```
+
+## Alertes sur les règles de filtrage de trafic {#traffic-filter-rules-alerts}
+
+>[!NOTE]
+>
+>Cette fonctionnalité n’est pas encore disponible. Pour obtenir un accès par le biais du programme d’adoption précoce, envoyez un courrier électronique à l’adresse **aemcs-waf-adopter@adobe.com**.
+
+Une règle peut être configurée pour envoyer une notification du Centre d’actions si elle est déclenchée 10 fois dans une fenêtre de 5 minutes, vous alertant ainsi lorsque certains schémas de trafic se produisent afin que vous puissiez prendre les mesures nécessaires. En savoir plus sur [Centre d’actions](/help/operations/actions-center.md), notamment comment configurer les profils de notification requis pour recevoir des emails.
+
+![Notification du centre d’actions](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+
+
+La propriété alert (précédée du préfixe *expérimental* puisque la fonctionnalité n’est pas encore publiée) peut être appliquée au noeud action pour tous les types d’action (autoriser, bloquer, consigner).
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action:
+          type: block
+          experimental_alert: true
 ```
 
 ## Journaux de réseau CDN {#cdn-logs}
