@@ -1,23 +1,36 @@
 ---
-title: Adobe prend en charge les polices d’usine pour le document d’enregistrement et les PDF.
-description: Adobe prend en charge les polices d’usine pour le document d’enregistrement et les PDF.
+title: AEM Forms as a Cloud Service prend en charge les polices d’usine pour la génération de PDF.
+description: AEM Forms as a Cloud Service prend en charge les polices d’usine pour les documents d’enregistrement et les PDF.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
+source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
+# Polices prises en charge prêtes à l’emploi pour la génération de PDF sur Forms as a Cloud Service  {#ootb-supported-fonts-overview}
 
-# Polices prises en charge pour les communications interactives et le document d’enregistrement
+AEM Forms as a Cloud Service propose différentes polices prises en charge intégrées, qui peuvent être facilement utilisées dans [API de communication](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Document d’enregistrement des composants principaux](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), et [Document d’enregistrement des composants de base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
-AEM Forms propose différentes polices intégrées qui peuvent être facilement utilisées dans des fichiers de document d’enregistrement et de PDF.
+<!--
 
-Vous pouvez utiliser les communications as a Cloud Service Forms pour combiner différents types de fichiers, tels que des modèles XDP ou des PDF, avec des données XML pour générer des documents de PDF. Vous pouvez manipuler les PDF en combinant, réorganisant ou fusionnant des fichiers PDF ou XDP. Vous pouvez également utiliser le document d’enregistrement pour archiver les formulaires AEM et le contenu ensemble au format PDF. De plus, vous pouvez utiliser des polices prises en charge ou des polices personnalisées pour donner aux PDF un aspect spécifique.
+AEM Forms as a Cloud Service offers various built-in fonts that can be seamlessly used within a Document of Record and PDF files for any file formats to generate PDF documents. Additionally, you can use supported fonts or custom fonts to give the PDFs a specific look and feel. The OOTB supported fonts are:
 
-## Polices prises en charge
+AEM Forms offers various OOTB supported fonts that can be seamlessly used within a Document of Recordhttps://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms] and communication APIs[]. The OOTB supported fonts are available for PDF generation in Forms as a Cloud Service for any use cases such as:
+
+* To combine a template (XFA or PDF) with customer data (XML) to generate documents in various formats ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation)).
+
+* To manipulate the PDFs by combining, rearranging, or merging PDF or XDP files ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation)).
+
+* To generate Document of Record to archive AEM forms and content together in PDF format ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)).
+-->
+
+## Polices prises en charge prêtes à l’emploi {#ootb-supported-fonts}
+
+La liste des polices prises en charge en standard est la suivante :
 
 * AdobeArabic
 * AdobeFanHeitiStd
@@ -38,4 +51,6 @@ Vous pouvez utiliser les communications as a Cloud Service Forms pour combiner d
 * KozGoProVI
 * eurosign.ttf
 
-Outre les polices mentionnées, si vous devez inclure d’autres polices, la variable [ajout de polices personnalisées à votre Forms dans l’environnement du Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts.html) avec une licence valide.
+
+Outre les polices mentionnées ci-dessus, vous pouvez utiliser des polices personnalisées pour donner aux PDF un aspect spécifique. Pour activer les polices personnalisées, vous devez [ajouter des polices personnalisées à votre environnement Forms as a Cloud Service ;](/help/forms/use-custom-fonts.md) avec une licence valide.
+
