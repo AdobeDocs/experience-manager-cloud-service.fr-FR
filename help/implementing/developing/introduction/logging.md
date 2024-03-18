@@ -2,9 +2,9 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
+source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2797'
 ht-degree: 87%
 
 ---
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service permet d’accéder aux journaux CDN, qui sont utiles pour les cas d’utilisation, notamment l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de le définir sur différents modes tels que les informations, les avertissements ou les erreurs.
 
-La fonction de transfert Splunk ne prend pas encore en charge les journaux CDN.
+Les journaux CDN seront transférés vers Splunk pour les nouvelles demandes de ticket de transfert Splunk. Les clients qui ont déjà activé le transfert Splunk pourront ajouter des journaux CDN à l’avenir.
 
 **Exemple**
 
