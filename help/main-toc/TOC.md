@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4822'
 ht-degree: 94%
 
 ---
@@ -1144,7 +1144,9 @@ ht-degree: 94%
       + [Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service](/help/implementing/dispatcher/ams-aem.md)
       + [Validation et débogage à l’aide de l’héritage des outils Dispatcher](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [Réseau de diffusion de contenu dans AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
-      + [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
+      + [Configuration du trafic sur le réseau de diffusion de contenu](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [Configuration des pages d’erreur CDN](/help/implementing/dispatcher/cdn-error-pages.md)
+      + [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connecteurs {#connectors}
    + [Implémentation d’un connecteur AEM](/help/connectors/implement.md)
    + [Envoi d’un connecteur AEM](/help/connectors/submit.md)
