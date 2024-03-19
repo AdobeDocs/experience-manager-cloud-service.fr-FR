@@ -2,9 +2,9 @@
 title: Utilisation de feuilles de calcul pour gérer les données tabulaires
 description: Découvrez comment utiliser des feuilles de calcul pour gérer les données tabulaires pour diverses valeurs, telles que les métadonnées et les redirections pour votre AEM avec le site des Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 0fa88453a7d7c58a3ccb2a4baf7d2b143acf7ad5
+source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '958'
 ht-degree: 2%
 
 ---
@@ -81,25 +81,9 @@ Dans cet exemple, vous allez créer une feuille de calcul pour gérer les redire
    * L’éditeur ajoute de nouvelles lignes à la feuille de calcul selon les besoins.
    * Pour supprimer ou déplacer une ligne, utilisez la méthode **Supprimer** à la fin de chaque ligne et le déplacement se fait au début de chaque ligne, respectivement.
 
-1. Lorsque vous avez terminé de définir vos redirections, fermez l’onglet et revenez au **Sites** console.
+## Publication d’une feuille de calcul paths.json {#paths-json}
 
-1. Appuyez ou cliquez pour sélectionner la feuille de calcul de redirections que vous avez créée dans la console, puis appuyez ou cliquez sur **Publication rapide** dans la barre d’actions pour publier la feuille de calcul.
-
-   ![Sélectionnez la feuille de calcul dans la console Sites .](assets/tabular-data/tabular-data-select-publish.png)
-
-1. Dans le **Publication rapide** boîte de dialogue, appuyez ou cliquez **Publier**.
-
-   ![Confirmer la publication](assets/tabular-data/tabular-data-quick-publish.png)
-
-1. Une bannière confirme la publication.
-
-   ![Confirmation de publication de la bannière](assets/tabular-data/tabular-data-publish-banner.png)
-
-La feuille de calcul des redirections est maintenant publiée et accessible au public.
-
-## Mise à jour de paths.json {#paths-json}
-
-Pour que AEM puisse utiliser les données de votre feuille de calcul, vous devez également mettre à jour la variable `paths.json` du projet.
+Pour que AEM puisse publier les données dans votre feuille de calcul, vous devez également mettre à jour la variable `paths.json` du projet.
 
 1. Ouvrez la racine de votre projet dans GitHub.
 
@@ -122,7 +106,21 @@ Pour que AEM puisse utiliser les données de votre feuille de calcul, vous devez
 
    * soit s’engager à `main` ou créez une requête d’extraction conformément à votre processus.
 
-Une fois que la variable `paths.json` sont fusionnées, les redirections sont en direct pour votre site.
+1. Lorsque vous avez terminé de définir vos redirections et que vous avez mis à jour le mappage du chemin, revenez à la **Sites** console.
+
+1. Appuyez ou cliquez pour sélectionner la feuille de calcul de redirections que vous avez créée dans la console, puis appuyez ou cliquez sur **Publication rapide** dans la barre d’actions pour publier la feuille de calcul.
+
+   ![Sélectionnez la feuille de calcul dans la console Sites .](assets/tabular-data/tabular-data-select-publish.png)
+
+1. Dans le **Publication rapide** boîte de dialogue, appuyez ou cliquez **Publier**.
+
+   ![Confirmer la publication](assets/tabular-data/tabular-data-quick-publish.png)
+
+1. Une bannière confirme la publication.
+
+   ![Confirmation de publication de la bannière](assets/tabular-data/tabular-data-publish-banner.png)
+
+La feuille de calcul des redirections est maintenant publiée et accessible au public.
 
 ## Autres types de feuilles de calcul {#other}
 
@@ -134,6 +132,12 @@ Maintenant que vous savez comment créer une feuille de calcul de redirection, v
 * Configuration
 
 Suivez simplement les mêmes étapes dans les sections . [Créer une feuille de calcul](#spreadsheet) et [Mise à jour de paths.json](#paths-json) et choisissez le modèle approprié, puis mettez à jour le `paths.json` de manière appropriée.
+
+Pour [Configuration](https://www.aem.live/docs/configuration), [En-têtes](https://www.aem.live/docs/custom-headers) et [Métadonnées](https://www.aem.live/docs/bulk-metadata) veillez à ajouter un mappage pour les publier à leurs emplacements par défaut :
+
+* Configuration : `/.helix/config.json`
+* En-têtes : `/.helix/headers.json`
+* Métadonnées `/metadata.json`
 
 En outre, vous pouvez [créer votre propre feuille de calcul ;](#own-spreadsheet) avec des colonnes arbitraires pour votre propre utilisation.
 
