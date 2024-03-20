@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 64%
+source-wordcount: '926'
+ht-degree: 63%
 
 ---
 
@@ -36,7 +36,7 @@ La console **Sites** est utilisée dans ce document pour garantir une bonne comp
 
 Lorsqu’une personne utilisatrice accède à une console pour la première fois, un tutoriel sur la navigation dans le produit en question s’affiche. Prenez quelques instants pour obtenir un bon aperçu de la gestion de base des AEM.
 
-![Tutoriel de navigation](assets/tutorial.png)
+![Tutoriel de navigation](assets/basic-handling-tutorial.png)
 
 Sélectionner **Suivant** pour accéder à la page suivante de la présentation. Sélectionner **Fermer** ou sélectionnez en dehors de la boîte de dialogue de présentation à fermer.
 
@@ -48,7 +48,7 @@ Pour passer d’une console à une autre, utilisez le panneau de navigation glob
 
 Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant sur **Fermer** pour revenir à votre position précédente.
 
-![Barre supérieure du panneau de navigation](assets/basic-handling-navigation-bar.png)
+![Barre supérieure du panneau de navigation](assets/basic-handling-navigation-options.png)
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
@@ -86,31 +86,37 @@ Dans le **Outils** Le panneau comporte un panneau latéral contenant un éventai
 
 L’en-tête est toujours présent en haut de l’écran. Bien que la plupart des options de l’en-tête restent les mêmes, quel que soit l’endroit où vous vous trouvez dans le système, certaines dépendent du contexte.
 
-![En-tête de navigation](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![En-tête de navigation](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [Navigation globale](#global-navigation) - Sélectionnez la variable **Adobe Experience Manager** pour naviguer entre les consoles.
 
-  ![Navigation globale](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Navigation globale](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [Rechercher](/help/sites-cloud/authoring/search.md) - Vous pouvez également utiliser la variable [raccourci clavier](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (barre oblique) pour appeler la recherche depuis n’importe quelle console.
+* Feedback
 
-  ![Icône Rechercher](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Bouton Commentaires](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* Votre organisation IMS : sélectionnez cette option si nécessaire.
 
 * [Solutions](https://www.adobe.com/fr/experience-cloud.html) - Sélectionnez cette option pour accéder à vos autres solutions Adobe.
 
-  ![Bouton Solutions](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Bouton Solutions](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [Rechercher](/help/sites-cloud/authoring/search.md) - Vous pouvez également utiliser la variable [raccourci clavier](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (barre oblique) pour appeler la recherche depuis n’importe quelle console.
+
+  ![Icône Rechercher](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [Aide](#accessing-help)
 
-  ![Bouton Aide](/help/sites-cloud/authoring/assets/help.png)
+  ![Bouton Aide](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [Notifications](/help/sites-cloud/authoring/inbox.md) - Cette icône comporte un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
 
-  ![Bouton Notifications](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Bouton Notifications](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [Propriétés de l’utilisateur](/help/sites-cloud/authoring/account-environment.md) - Sélectionnez cette option pour modifier vos paramètres utilisateur.
 
-  ![Bouton Propriétés de l’utilisateur](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Bouton Propriétés de l’utilisateur](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## Accès à l’Aide {#accessing-help}
 
