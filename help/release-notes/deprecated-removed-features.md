@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 1da8d9395df3dd2efee7f6a57197aa3f2b27b1a4
+source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 100%
+source-wordcount: '2146'
+ht-degree: 96%
 
 ---
 
@@ -42,6 +42,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | [!DNL Assets] | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les [microservices de ressources](/help/assets/asset-microservices-overview.md). Pour le transcodage FFmpeg, utilisez [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet Distribuer de l’agent de réplication (suppression après le 30 septembre 2021) | Approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) |
 | [!DNL Foundation] | Ni l’onglet Distribution de l’écran de l’administrateur ou de l’administratrice de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer les packages de contenu de plus de 10 Mo. Utilisez plutôt l’une des méthodes suivantes : [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [workflow Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow). |
+| [!DNL Foundation] | Les intégrations qui utilisent des informations d’identification générées à partir des projets Adobe Developer Console perdront progressivement la prise en charge des informations d’identification du compte de service (JWT). Les informations d’identification du nouveau compte de service (JWT) ne peuvent pas être créées dans la console Adobe Developer le ou après le 1er mai 2024, bien que les informations d’identification existantes du compte de service (JWT) puissent toujours être utilisées pour les intégrations déjà configurées jusqu’au 1er janvier 2025. À ce moment-là, les informations d’identification existantes du compte de service (JWT) ne fonctionneront plus) et les clients doivent migrer vers les informations d’OAuth Server vers les informations d’authentification OAuth. [En savoir plus](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrer](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) aux informations d’identification OAuth serveur à serveur. |
 
 ## Fonctionnalités supprimées {#removed-features}
 
