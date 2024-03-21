@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5f780f5e8fa9289b35eefbbd4c3a71d37a7f465a
+source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 91%
@@ -111,7 +111,7 @@ Les [environnements de développement rapide (RDE)](/help/implementing/developin
 
 ### Configuration du réseau de diffusion de contenu Programme d’adoption précoce {#cdn-config-early-adopter}
 
-Outre la version récemment publiée [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), qui inclut éventuellement les règles WAF (Web Application Firewall) concédables, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration CDN. Rejoindre le programme des premiers adopteurs par courrier électronique **aemcs-cdn-config-adopter@adobe.com** pour accéder à :
+Outre la version récemment publiée [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), qui inclut les règles WAF (Web Application Firewall) concédables, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer. [autres types de configuration CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Rejoindre le programme des premiers adopteurs par courrier électronique **aemcs-cdn-config-adopter@adobe.com** pour accéder à :
 * 301/302 redirections côté client
 * proxy des requêtes en périphérie vers des origines arbitraires
 * Conversion d’URL
