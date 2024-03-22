@@ -2,10 +2,10 @@
 title: Importer des ressources en bloc à l’aide de la vue Assets
 description: Découvrez comment importer des ressources en bloc à l’aide de la nouvelle interface utilisateur d’Assets (vue Assets). Elle permet aux administrateurs et administratrices d’importer un grand nombre de ressources d’une source de données vers AEM Assets.
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
-source-git-commit: 88198e9333a7f706fc99e487d8cde84647fa111f
+source-git-commit: cd4435247505e5067d09631b29a29e26d60eb09a
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 53%
+source-wordcount: '1761'
+ht-degree: 66%
 
 ---
 
@@ -32,38 +32,34 @@ Vous pouvez importer des ressources à partir des sources de données suivantes�
 | Azure | <ul> <li>Compte de stockage Azure </li> <li> Conteneur d’objets blob Azure <li> Clé d’accès Azure ou jeton SAS en fonction du mode d’authentification </li></ul> |
 | AWS | <ul> <li>Région AWS </li> <li> Compartiment AWS <li> Clé d’accès AWS </li><li> Secret d’accès AWS </li></ul> |
 | Google Cloud | <ul> <li>Compartiment GCP </li> <li> Adresse e-mail du compte de service GCP <li> Clé privée du compte de service GCP</li></ul> |
-| Dropbox | <ul> <li>ID client Dropbox (Clé de l’application) </li> <li> Secret client Dropbox (secret d’application)</li></ul> |
-| OneDrive | <ul> <li>Identifiant du tenant OneDrive  </li> <li> Identifiant du client OneDrive</li><li> Secret client OneDrive</li></ul> |
+| Dropbox | <ul> <li>Identifiant du client Dropbox (clé d’application) </li> <li> Secret client Dropbox (secret d’application)</li></ul> |
+| OneDrive | <ul> <li>Identifiant locataire OneDrive  </li> <li> Identifiant client OneDrive</li><li> Clé secrète client OneDrive</li></ul> |
 
 Outre ces conditions préalables en fonction de la source de données, vous devez connaître le nom du dossier source disponible dans votre source de données, qui contient toutes les ressources à importer dans AEM Assets.
 
-## Configuration de l’application de développement de Dropbox {#dropbox-developer-application}
+## Configurer l’application de développement Dropbox {#dropbox-developer-application}
 
-Avant d’importer des ressources de votre compte de Dropbox vers AEM Assets, créez et configurez l’application de développement de Dropbox.
+Avant d’importer des ressources de votre compte Dropbox vers AEM Assets, créez et configurez l’application de développement Dropbox.
 
 Procédez comme suit :
 
-1. Connectez-vous à [Compte Dropbox](https://www.dropbox.com/developers) et cliquez sur **[!UICONTROL Création d’applications]**.
+1. Se connecter à [Compte Dropbox](https://www.dropbox.com/developers) et cliquez sur **[!UICONTROL Création d’applications]**. <br>Si vous utilisez un compte Enterprise Dropbox, vous devez avoir accès au rôle d’administrateur de contenu.
 
-1. Dans le **[!UICONTROL Choix d’une API]** , sélectionnez le seul bouton radio disponible.
+1. Dans la section **[!UICONTROL Choisir une API]**, sélectionnez le seul bouton radio disponible.
 
-1. Dans le **[!UICONTROL Choisissez le type d&#39;accès dont vous avez besoin]** , sélectionnez l’une des options suivantes :
+1. Dans la section **[!UICONTROL Choisir le type d’accès dont vous avez besoin]**, sélectionnez l’une des options suivantes :
 
-   * Sélectionner **[!UICONTROL Dossier de l’application]**, si vous avez besoin d’accéder à un seul dossier créé dans votre application dans votre compte de Dropbox.
+   * Sélectionnez **[!UICONTROL Dossier d’application]** si vous avez besoin d’accéder à un dossier unique créé dans votre application, dans votre compte Dropbox.
 
-   * Sélectionner **[!UICONTROL Dropbox complet]**, si vous devez accéder à tous les fichiers et dossiers de votre compte de Dropbox.
+   * Sélectionnez **[!UICONTROL Full Dropbox]** si vous avez besoin d’accéder à tous les fichiers et dossiers de votre compte Dropbox.
 
-1. Indiquez un nom pour votre application, puis cliquez sur **[!UICONTROL Créer une application]**.
+1. Indiquez un nom pour votre application, puis cliquez sur **[!UICONTROL Créer l’application]**.
 
-1. Dans le **[!UICONTROL Paramètres]** dans l’onglet de votre application, ajoutez ce qui suit au **[!UICONTROL URI de redirection]** section :
+1. Dans le **[!UICONTROL Paramètres]** de votre application, ajoutez https://experience.adobe.com au **[!UICONTROL URI de redirection]** .
 
-   * https://exc-unifiedcontent.experience.adobe.net
+1. Copiez les valeurs des champs **[!UICONTROL Clé d’application]** et **[!UICONTROL Secret d’application]**. Les valeurs sont requises lors de la configuration de l’outil d’import en bloc dans AEM Assets.
 
-   * https://exc-unifiedcontent.experience-stage.adobe.net (valide uniquement pour les environnements intermédiaires)
-
-1. Copiez les valeurs de la variable **[!UICONTROL Clé de l’application]** et **[!UICONTROL Secret de l’application]** des champs. Les valeurs sont requises lors de la configuration de l’outil d’importation en bloc dans AEM Assets.
-
-1. Sur le **[!UICONTROL Autorisations]** , ajoutez les autorisations suivantes dans la **[!UICONTROL Portées individuelles]** .
+1. Dans l’onglet **[!UICONTROL Autorisations]**, ajoutez les autorisations suivantes dans la section **[!UICONTROL Portées individuelles]**.
 
    * account_info.read
 
@@ -73,65 +69,65 @@ Procédez comme suit :
 
    * files.content.write
 
-1. Cliquez sur **[!UICONTROL Envoyer]** pour enregistrer les modifications.
+1. Cliquez sur **[!UICONTROL Soumettre]** pour enregistrer les modifications.
 
-## Configuration de l’application de développement OneDrive {#onedrive-developer-application}
+## Configurer l’application de développement OneDrive {#onedrive-developer-application}
 
-Avant d’importer des ressources de votre compte OneDrive vers AEM Assets, créez et configurez l’application de développement OneDrive.
+Avant d’importer des ressources de votre compte OneDrive vers AEM Assets, créez et configurez l’application de développement OneDrive.
 
-Procédez comme suit :
+### Création d’une application
 
-1. Connectez-vous à [Compte OneDrive](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) et cliquez sur **[!UICONTROL Nouvelle inscription]**.
+1. Se connecter à [Compte OneDrive](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) et cliquez sur **[!UICONTROL Nouvelle inscription]**.
 
-1. Indiquez un nom pour l’application, puis sélectionnez **[!UICONTROL Comptes dans cet annuaire organisationnel uniquement (Adobe uniquement - client unique)]** de **[!UICONTROL Types de compte pris en charge]**, puis cliquez sur **[!UICONTROL Enregistrer]**. L’application est créée avec succès.
+1. Indiquez un nom pour l’application, puis sélectionnez **[!UICONTROL Comptes dans cet annuaire organisationnel uniquement (Adobe uniquement - client unique)]** de **[!UICONTROL Types de compte pris en charge]**.
 
-1. Copiez les valeurs des champs ID client de l’application et ID client. Les valeurs sont requises lors de la configuration de l’outil d’importation en bloc dans AEM Assets.
+1. Suivez les étapes ci-après pour ajouter des URI de redirection :
 
-1. Pour ajouter un certificat, procédez comme suit :
-   1. Sur la page d’aperçu de l’application, cliquez sur **[!UICONTROL Ajouter un certificat ou un secret]** puis cliquez sur **[!UICONTROL Nouveau secret client]**.
-   1. Indiquez la description et l’expiration du secret client, puis cliquez sur **[!UICONTROL Ajouter]**.
-   1. Après avoir créé le secret client, copiez la variable **[!UICONTROL Valeur]** (Ne copiez pas le champ Identifiant secret ). Elle est requise lors de la configuration de l’importation en bloc dans AEM Assets.
+   1. Dans le **[!UICONTROL Sélectionner une plateforme]** menu déroulant, sélectionnez **[!UICONTROL Web]**.
 
-1. Exécutez les étapes suivantes pour ajouter des URI de redirection :
-   1. Sur la page d’aperçu de l’application, cliquez sur **[!UICONTROL Ajout d’un URI de redirection]** > **[!UICONTROL Ajouter une plate-forme]** > **[!UICONTROL Web]**.
-   1. Ajoutez ce qui suit au **[!UICONTROL URI de redirection]** section :
+   1. Ajoutez https://experience.adobe.com au **[!UICONTROL URI de redirection]** .
+   <!-- Add the first URI and click **[!UICONTROL Configure]** to add it. You can add more by clicking **[!UICONTROL Add URI]** option available in the **[!UICONTROL Web]** section on the **[!UICONTROL Authentication]** page. -->
 
-      * https://exc-unifiedcontent.experience.adobe.net
+1. Cliquez sur **[!UICONTROL Enregistrer]**. L’application est créée avec succès.
 
-      * https://exc-unifiedcontent.experience-stage.adobe.net (valide uniquement pour les environnements intermédiaires)
+1. Copiez les valeurs de la variable **[!UICONTROL ID d’application (client)]** et **[!UICONTROL ID de répertoire (client)]** des champs. Les valeurs sont requises lors de la configuration de l’outil d’import en bloc dans AEM Assets.
 
-      Ajoutez le premier URI et cliquez sur **[!UICONTROL Configurer]** pour l’ajouter. Vous pouvez en ajouter d’autres en cliquant sur **[!UICONTROL Ajouter un URI]** , disponible dans la variable **[!UICONTROL Web]** de la section **[!UICONTROL Authentification]** page.
+1. Cliquez sur **[!UICONTROL Ajouter un certificat ou un secret]** correspondant à **[!UICONTROL Informations d’identification client]** .
 
-1. Pour ajouter des autorisations d’API à l’application, procédez comme suit :
-   1. Cliquez sur **[!UICONTROL Autorisations d’API]** dans le volet de gauche, puis cliquez sur **[!UICONTROL Ajouter une autorisation]**.
-   1. Cliquez sur **[!UICONTROL Graphique Microsoft]** > **[!UICONTROL Autorisations déléguées]**. La variable **[!UICONTROL Sélectionner l’autorisation]** affiche les autorisations disponibles.
-   1. Sélectionner `offline_access` autorisation de `OpenId permissions` et `Files.ReadWrite.All` autorisation de `Files`.
-   1. Cliquez sur **[!UICONTROL Ajout d’autorisations]** pour enregistrer les mises à jour.
+1. Cliquez sur **[!UICONTROL Nouveau secret client]**, indiquez la description du secret client, l’expiration et cliquez sur **[!UICONTROL Ajouter]**.
 
+1. Après avoir créé le secret client, copiez le champ **[!UICONTROL Valeur]** (ne copiez pas le champ ID de secret). Ce dernier est requis lors de la configuration de l’import en bloc dans AEM Assets.
 
+### Ajout d’autorisations API
 
+Exécutez les étapes suivantes pour ajouter des autorisations d’API pour l’application :
+
+1. Cliquez sur **[!UICONTROL Autorisations d’API]** dans le volet de gauche et cliquez sur **[!UICONTROL Ajouter une autorisation]**.
+1. Cliquez sur **[!UICONTROL Microsoft Graph]** > **[!UICONTROL Autorisations déléguées]**. La section **[!UICONTROL Sélectionner l’autorisation]** affiche les autorisations disponibles.
+1. Sélectionnez l’autorisation `offline_access` à partir d’`OpenId permissions` et l’autorisation `Files.ReadWrite.All` à partir de `Files`.
+1. Cliquez sur **[!UICONTROL Ajouter des autorisations]** pour enregistrer les mises à jour.
 
 ## Créer une configuration d’import en bloc {#create-bulk-import-configuration}
 
-Pour créer une configuration d’import en bloc, procédez comme suit :
+Pour créer une configuration d’importation en bloc dans le [!DNL Experience Manager Assets]:
 
-1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Import en bloc]** et cliquez sur **[!UICONTROL Créer un import]**.
-1. Sélectionnez la source de données. Les options disponibles comprennent Azure, AWS, Google Cloud et Dropbox.
+1. Cliquez sur **[!UICONTROL Importation en bloc]** dans le volet de gauche, puis cliquez sur **[!UICONTROL Créer un import]**.
+1. Sélectionnez la source de données. Les options disponibles incluent **[!UICONTROL Azure]**, **[!UICONTROL AWS]**, **[!UICONTROL Google Cloud]**, **[!UICONTROL Dropbox]** et **[!UICONTROL OneDrive]**.
 1. Indiquez un nom pour la configuration de lʼimport en bloc dans le champ **[!UICONTROL Nom]**.
 1. Indiquez les informations d’identification spécifiques à la source de données, comme mentionné dans les [conditions préalables](#prerequisites).
-1. Indiquez le nom du dossier contenant les ressources dans la source de données dans la variable **[!UICONTROL Dossier source]** champ .
+1. Indiquez le nom du dossier racine qui contient les ressources de la source de données dans la variable **[!UICONTROL Dossier source]** champ .
 
    >[!NOTE]
    >
-   >Si vous utilisez Dropbox comme source de données, spécifiez le chemin du dossier source en fonction des règles suivantes :
-   >* Si vous sélectionnez **Dropbox complet** lors de la création de l’application de Dropbox et le dossier contenant les ressources existe à l’adresse `https://www.dropbox.com/home/bulkimport-assets`, puis spécifiez `bulkimport-assets` dans le **[!UICONTROL Dossier source]** champ .
-   >* Si vous sélectionnez **Dossier de l’application** lors de la création de l’application de Dropbox et le dossier contenant les ressources existe à l’adresse `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`, puis spécifiez `bulkimport-assets` dans le **[!UICONTROL Dossier source]** champ, où `BulkImportAppFolderScope` fait référence au nom de l’application. `Apps` est automatiquement ajouté après `home` dans ce cas.
+   >Si vous utilisez Dropbox comme source de données, spécifiez le chemin du dossier source en fonction des règles suivantes :
+   >* Si vous sélectionnez **Full Dropbox** lors de la création de l’application Dropbox et que le dossier contenant les ressources existe dans `https://www.dropbox.com/home/bulkimport-assets`, indiquez `bulkimport-assets` dans le champ **[!UICONTROL Dossier source]**.
+   >* Si vous sélectionnez **Dossier d’application** lors de la création de l’application Dropbox et que le dossier contenant les ressources existe dans `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`, indiquez `bulkimport-assets` dans le champ **[!UICONTROL Dossier source]**, où `BulkImportAppFolderScope` fait référence au nom de l’application. `Apps` est automatiquement ajouté après `home` dans ce cas.
 
 1. (Facultatif) Sélectionnez lʼoption **[!UICONTROL Supprimer le fichier source après lʼimport]** afin de supprimer les fichiers originaux du magasin de données source après lʼimport des fichiers dans Experience Manager Assets.
 1. Sélectionnez le **[!UICONTROL Mode d’importation]**. Les modes suivants sont disponibles : **[!UICONTROL Ignorer]**, **[!UICONTROL Remplacer]** ou **[!UICONTROL Créer une version]**. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’import d’une ressource si elle existe déjà.
    ![Import des détails de la source.](/help/assets/assets/bulk-import-source-details.png)
 
-1. (Facultatif) Indiquez le fichier de métadonnées à importer, fourni au format CSV, dans le champ Fichier de métadonnées, puis cliquez sur **[!UICONTROL Suivant]** pour accéder à **[!UICONTROL Emplacement et filtres]**.
+1. (Facultatif) Spécifiez le fichier de métadonnées à importer, fourni au format CSV, dans le champ **[!UICONTROL Fichier de métadonnées]**. Le fichier source des métadonnées doit se trouver dans le dossier source. Cliquez sur **[!UICONTROL Suivant]** pour accéder à **[!UICONTROL Emplacement et filtres]**.
 1. Pour définir un emplacement dans la gestion des ressources numériques (DAM) où les ressources doivent être importées à l’aide du champ **[!UICONTROL Dossier cible des ressources]**, indiquez un chemin d’accès. Par exemple, `/content/dam/imported_assets`.
 1. (Facultatif) Dans la section **[!UICONTROL Choisir des filtres]**, indiquez la taille de fichier minimale des ressources en Mo à inclure dans le processus d’ingestion dans le champ **[!UICONTROL Filtrer par taille minimale]**.
 1. (Facultatif) Indiquez la taille de fichier maximale des ressources en Mo à inclure dans le processus d’ingestion dans le champ **[!UICONTROL Filtrer par taille maximale]**.
@@ -141,9 +137,13 @@ Pour créer une configuration d’import en bloc, procédez comme suit :
 
    ![Filtres d’import en bloc.](assets/bulk-import-location.png)
 
-1. Cliquez sur **[!UICONTROL Suivant]**. Sélectionnez **[!UICONTROL Enregistrer et exécuter l’import]** pour enregistrer la configuration et exécuter l’import en bloc. Sélectionnez **[!UICONTROL Enregistrer l’import]** pour enregistrer la configuration afin de pouvoir l’exécuter ultérieurement.
+1. Cliquez sur **[!UICONTROL Suivant]**. Sélectionnez l’une des options suivantes en fonction de vos préférences :
 
-   ![Exécution de l’import en bloc.](assets/bulk-import-run.png)
+   * **[!UICONTROL Enregistrer l&#39;import]** pour enregistrer la configuration pour maintenant afin de pouvoir l’exécuter ultérieurement.
+   * **[!UICONTROL Enregistrer et exécuter l’import]** pour enregistrer la configuration et exécuter l’importation en bloc.
+   * **[!UICONTROL Enregistrement et planification de l’import]** pour enregistrer la configuration et planifier l’importation en bloc pour une heure ultérieure. Vous pouvez choisir la fréquence de l’importation en bloc et définir la date et l’heure de l’importation. L’importation en bloc s’exécute à la date et à l’heure définies dans la fréquence choisie.
+
+   ![Exécution de l’import en bloc.](assets/save-run.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour exécuter l’option sélectionnée.
 
@@ -157,27 +157,22 @@ Pour plus d’informations sur les noms interdits, la gestion des noms de ressou
 
 ## Afficher les configurations d’import en bloc existantes {#view-import-configuration}
 
-Si vous choisissez d’enregistrer la configuration après sa création, celle-ci s’affiche dans l’onglet **[!UICONTROL Imports enregistrés]**.
+Pour afficher les imports en masse existants, sélectionnez le **[!UICONTROL Imports en bloc]** dans le volet de gauche. La page Imports en bloc s’affiche avec la liste des **[!UICONTROL Imports exécutés]**. <br>
+Vous pouvez également afficher la variable **[!UICONTROL Imports enregistrés]** et **[!UICONTROL Imports planifiés]** dans la liste déroulante.
 
-![Enregistrement de la configuration d’import en bloc.](assets/bulk-import-save.png)
-
-Si vous choisissez d’enregistrer et d’exécuter l’import, la configuration de celui-ci s’affiche dans l’onglet **[!UICONTROL Imports exécutés]**.
-
-![Enregistrement de la configuration d’import en bloc.](assets/bulk-import-executed.png)
-
-Si vous planifiez un import, il s’affiche dans l’onglet **[!UICONTROL Imports planifiés]**.
+![Enregistrement de la configuration d’import en bloc.](assets/bulk-import-options.png)
 
 ## Modifier la configuration d’import en bloc {#edit-import-configuration}
 
-Pour modifier les détails de configuration, cliquez sur Plus d’options (...) correspondant au nom de la configuration, puis cliquez sur **[!UICONTROL Modifier]**. Notez que certains éléments ne sont pas modifiables, tels que le titre de la configuration et la source de données d’import. Vous pouvez modifier la configuration à l’aide des onglets Imports exécutés, planifiés ou enregistrés.
+Pour modifier les détails de configuration, cliquez sur ![Icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de la configuration et cliquez sur **[!UICONTROL Modifier]**. Notez que certains éléments ne sont pas modifiables, tels que le titre de la configuration et la source de données d’import. Vous pouvez modifier la configuration à l’aide des onglets Imports exécutés, planifiés ou enregistrés.
 
-![Modification de la configuration d’import en bloc.](assets/bulk-import-edit.png)
+![Modification de la configuration d’import en bloc.](assets/edit-bulk-import.png)
 
 ## Planifier des imports ponctuels ou récurrents {#schedule-imports}
 
 Pour planifier un import en bloc ponctuel ou récurrent, procédez comme suit :
 
-1. Cliquez sur Plus d’options (...) correspondant au nom de configuration disponible dans la **[!UICONTROL Imports exécutés]** ou **[!UICONTROL Imports enregistrés]** et cliquez sur **[!UICONTROL Planification]**. Vous pouvez également replanifier un import planifié existant en accédant à l’onglet **[!UICONTROL Imports planifiés]** et en cliquant sur **[!UICONTROL Planifier]**.
+1. Cliquez sur ![Icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de configuration disponible dans la variable **[!UICONTROL Imports exécutés]** ou **[!UICONTROL Imports enregistrés]** et cliquez sur **[!UICONTROL Planification]**. Vous pouvez également replanifier un import planifié existant en accédant à l’onglet **[!UICONTROL Imports planifiés]** et en cliquant sur **[!UICONTROL Planifier]**.
 
 1. Définissez une ingestion ponctuelle ou planifiez une planification horaire, quotidienne ou hebdomadaire. Cliquez sur **[!UICONTROL Envoyer]**.
 
@@ -185,21 +180,21 @@ Pour planifier un import en bloc ponctuel ou récurrent, procédez comme suit :
 
 ## Exécuter un contrôle de l’intégrité de l’import {#import-health-check}
 
-Pour valider la connexion à la source de données, cliquez sur Autres options (...) correspondant au nom de la configuration, puis cliquez sur **[!UICONTROL Vérifier]**. Si la connexion est établie, Experience Manager Assets affiche le message suivant :
+Pour valider la connexion à la source de données, cliquez sur ![Icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de la configuration, puis cliquez sur **[!UICONTROL Vérifier]**. Si la connexion est établie, Experience Manager Assets affiche le message suivant :
 
 ![Vérification de l’intégrité de l’import en bloc.](assets/bulk-import-health-check.png)
 
 ## Effectuer un essai avant l’exécution d’un import {#dry-run-bulk-import}
 
-Cliquez sur Autres options (...) correspondant au nom de la configuration, puis cliquez sur **[!UICONTROL Exécution d’essai]** pour appeler une exécution de test pour la tâche d’importation en bloc. Experience Manager Assets affiche les informations suivantes sur la tâche d’import en bloc :
+Cliquez sur ![Icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de la configuration et cliquez sur **[!UICONTROL Exécution d’essai]** pour appeler une exécution de test pour la tâche d’importation en bloc. Experience Manager Assets affiche les informations suivantes sur la tâche d’import en bloc :
 
 ![Vérification de l’intégrité de l’import en bloc.](assets/bulk-import-dry-run.png)
 
 ## Exécuter un import en bloc {#run-bulk-import}
 
-Si vous avez enregistré l’importation lors de la création de la configuration, vous pouvez accéder à l’onglet Imports enregistrés , cliquer sur Plus d’options (...) correspondant à la configuration et cliquer sur **[!UICONTROL Exécuter]**.
+Si vous avez enregistré l’importation lors de la création de la configuration, vous pouvez accéder à l’onglet Imports enregistrés , puis cliquer sur ![Icône Plus](assets/do-not-localize/more-icon.svg) correspondant à la configuration et cliquez sur **[!UICONTROL Exécuter]**.
 
-De même, si vous devez exécuter un import déjà exécuté, accédez à l&#39;onglet Imports exécutés , cliquez sur Plus d&#39;options (...) correspondant au nom de la configuration et cliquez sur **[!UICONTROL Exécuter]**.
+De même, si vous devez exécuter un import déjà exécuté, accédez à l&#39;onglet Imports exécutés , cliquez sur ![Icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de la configuration et cliquez sur **[!UICONTROL Exécuter]**.
 
 ## Arrêter ou planifier un import en cours {#schedule-stop-ongoing-report}
 
@@ -209,11 +204,14 @@ Vous pouvez planifier ou arrêter un import en bloc en cours à l’aide de la b
 
 Vous pouvez également afficher les ressources importées dans le dossier cible en cliquant sur **[!UICONTROL Afficher les ressources]**.
 
-
 ## Supprimer une configuration d’import en bloc {#delete-bulk-import-configuration}
 
-Cliquez sur Autres options (...) correspondant au nom de configuration existant dans **[!UICONTROL Imports exécutés]**, **[!UICONTROL Imports planifiés]**, ou **[!UICONTROL Imports enregistrés]** onglets et clic **[!UICONTROL Supprimer]** pour supprimer la configuration Import en bloc .
+Cliquez sur ![Icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de configuration existant dans **[!UICONTROL Imports exécutés]**, **[!UICONTROL Imports planifiés]**, ou **[!UICONTROL Imports enregistrés]** onglets et clic **[!UICONTROL Supprimer]** pour supprimer la configuration Import en bloc .
 
 ## Accéder aux ressources après l’exécution de l’import en bloc {#view-assets-after-bulk-import}
 
-Pour afficher l’emplacement cible Ressources où les ressources sont importées après l’exécution de la tâche d’importation en bloc, cliquez sur Autres options (...) correspondant au nom de la configuration, puis cliquez sur **[!UICONTROL Affichage des ressources]**.
+Pour afficher l’emplacement cible Ressources où les ressources sont importées après l’exécution de la tâche d’importation en bloc, cliquez sur ![Icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de la configuration, puis cliquez sur **[!UICONTROL Affichage des ressources]**.
+
+## Vidéo : Importation en bloc de ressources à l’aide de la vue Assets
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428012)
