@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
+source-git-commit: d0b7ec258a7a2c1d83f4d9a8983945a81c83aa2f
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 91%
@@ -125,4 +125,3 @@ Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici
 ## Outils de migration {#migration-tools}
 
 Vous trouverez une liste complète des versions des outils de migration [ici](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
-
