@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
+source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 40%
+source-wordcount: '2752'
+ht-degree: 37%
 
 ---
 
@@ -211,6 +211,14 @@ Voir `Node property value in MongoDB` remarque dans [Conditions préalables pour
 >abstract="L’extraction en attente d’ingestion ne s’est pas terminée correctement. L’ingestion a été annulée car elle n’a pas pu être exécutée."
 
 Une ingestion créée avec une extraction en cours d’exécution comme jeu de migration source attend patiemment jusqu’à ce que cette extraction réussisse, et démarre normalement à ce moment. Si l’extraction échoue ou est arrêtée, l’ingestion et sa tâche d’indexation ne démarrent pas, mais sont annulées. Dans ce cas, vérifiez l’extraction pour déterminer pourquoi elle a échoué, corrigez le problème et recommencez à extraire. Une fois l’extraction fixe en cours d’exécution, une nouvelle ingestion peut être planifiée.
+
+### Ressource supprimée non présente après la réexécution de l’ingestion
+
+En règle générale, il n’est pas recommandé de modifier les données de l’environnement cloud entre les ingestion.
+
+Lorsqu’une ressource est supprimée de la destination du Cloud Service à l’aide de l’interface utilisateur tactile d’Assets, les données de noeud sont supprimées, mais l’objet Blob de la ressource avec l’image n’est pas immédiatement supprimé. Il est marqué pour suppression de sorte qu’il n’apparaisse plus dans l’interface utilisateur. Cependant, il reste dans l’entrepôt de données jusqu’à ce que le nettoyage de la mémoire se produise et que l’objet blob soit supprimé.
+
+Dans le cas où une ressource précédemment migrée est supprimée et que l’ingestion suivante est exécutée avant que le garbage collector n’ait terminé la suppression de la ressource, l’ingestion du même jeu de migration ne restaurera pas la ressource supprimée. Lorsque l’ingestion recherche la ressource dans l’environnement cloud, il n’existe aucune donnée de noeud. Par conséquent, l’ingestion copie les données de noeud dans l’environnement cloud. Cependant, lorsqu’il vérifie l’objet blob, il constate que l’objet blob est présent et ignore la copie de l’objet blob. C’est pourquoi les métadonnées sont présentes après l’ingestion lorsque vous examinez la ressource à partir de l’interface utilisateur tactile, mais pas l’image. N’oubliez pas que les jeux de migration et l’ingestion de contenu n’ont pas été conçus pour gérer ce cas. Ils visent à ajouter du nouveau contenu à l’environnement cloud et à ne pas restaurer le contenu précédemment migré.
 
 ## Prochaines étapes {#whats-next}
 
