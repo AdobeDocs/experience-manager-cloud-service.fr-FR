@@ -4,9 +4,9 @@ description: Consultez les notes de mise à jour de Cloud Manager 2024.3.0 dan
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4bae300f653ae6b84cf798f4fe9e8c9326963718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Cette page présente les notes de mise à jour de Cloud Manager version 2024.
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2024.3.0 de Cloud Manager dans AEM as a Cloud Service est le 14 mars 2024. La prochaine version est prévue pour le 11 avril 2024.
+La date de publication de Cloud Manager version 2024.3.0 dans AEM as a Cloud Service est le 14 mars 2024. La prochaine version est prévue pour le 11 avril 2024.
 
 ## Nouveautés {#what-is-new}
 
-* [Vous pouvez désormais créer une infrastructure réseau avancée.](/help/security/configuring-advanced-networking.md) dans votre programme Cloud Manager et configurez-le en libre-service à l’aide de l’interface utilisateur de Cloud Manager.
-* [Détails de l’étape d’exécution du pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) inclura l’étape actuelle du déploiement et ce qui doit suivre.
+* [Vous pouvez désormais créer une infrastructure réseau avancée](/help/security/configuring-advanced-networking.md) dans votre programme Cloud Manager et la configurer en libre-service à l’aide de l’interface utilisateur de Cloud Manager.
+* [Les détails de l’étape d’exécution du pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) incluront l’étape actuelle du déploiement et ce qui doit suivre.
 
 ## Programme d’adoption précoce {#early-adoption}
 
@@ -69,4 +69,4 @@ Vous souhaitez tester le nouveau tableau de bord ? Pour commencer, envoyez un e
 
 ## Correctifs {#bug-fixes}
 
-* Un bogue a été corrigé lorsqu’un utilisateur définit la variable `COMMERCE_ENDPOINT` avec un espace de fin, le dispatcher ne parvient pas à se charger.
+* Un bug a été corrigé : lorsqu’une personne définit la variable `COMMERCE_ENDPOINT` avec un espace de fin, le Dispatcher ne parvient pas à se charger.

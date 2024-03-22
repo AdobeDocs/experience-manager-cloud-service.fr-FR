@@ -4,9 +4,9 @@ description: Découvrez comment AEM as a Cloud Service peut être utilisé a
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ L’ingestion de plusieurs sources de contenu offre une flexibilité maximale. A
 
 Dans certains cas, la source de contenu est prédéfinie ou n’est pas flexible (par exemple, le projet ne peut pas utiliser SharePoint ou Google Drive). Mais dans de nombreux cas, l’outil n’est pas prédéterminé et son choix n’est pas si simple.
 
-Le principe directeur d’Adobe est la simplicité. Commencez par la création basée sur les documents et ajoutez de la complexité si nécessaire. Si un changement d’outil est nécessaire, l’intégration d’Edge Delivery Services d’AEM couvre la migration de contenu.
+Le principe directeur d’Adobe est la simplicité. Commencez par la création basée sur des documents et ajoutez de la complexité si nécessaire. Si un changement d’outil est nécessaire, l’intégration d’Edge Delivery Services d’AEM couvre la migration de contenu.
 
 ![Flexibilité de la source de contenu.](assets/content-source-flexiblity.png)
 
 ## Création {#authoring-edge}
 
-Avec Edge Delivery Services, la création est facile, rapide et flexible. Vous pouvez choisir de créer à l’aide de la création basée sur un document ou de la création dans AEM avec l’éditeur universel.
+Avec Edge Delivery Services, la création est facile, rapide et flexible. Vous pouvez choisir la création basée sur les documents ou la création dans AEM avec l’éditeur universel.
 
 Consultez le document [Création de contenu pour Edge Delivery Services](authoring.md) pour plus d’informations.
 
