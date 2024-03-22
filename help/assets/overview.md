@@ -1,6 +1,6 @@
 ---
 title: Présentation d’Assets as a  [!DNL Cloud Service]
-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
+description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect

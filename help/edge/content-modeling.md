@@ -1,23 +1,23 @@
 ---
-title: Modélisation de contenu pour la création AEM avec des projets Edge Delivery Services
-description: Découvrez comment la modélisation de contenu fonctionne pour la création AEM avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
+title: Modéliser du contenu pour la création AEM avec des projets Edge Delivery Services
+description: Découvrez le fonctionnement de la modélisation de contenu pour la création AEM avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
 workflow-type: tm+mt
 source-wordcount: '2095'
-ht-degree: 1%
+ht-degree: 81%
 
 ---
 
-# Modélisation de contenu pour la création AEM avec des projets Edge Delivery Services {#content-modeling}
+# Modéliser du contenu pour la création AEM avec des projets Edge Delivery Services {#content-modeling}
 
-Découvrez comment la modélisation de contenu fonctionne pour la création AEM avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
+Découvrez le fonctionnement de la modélisation de contenu pour la création AEM avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
 
 {{aem-authoring-edge-early-access}}
 
 ## Conditions préalables {#prerequisites}
 
-Les projets utilisant la création AEM avec des Edge Delivery Services héritent de la majorité des mécanismes de tout autre projet Edge Delivery Services, indépendamment de la source de contenu ou [méthode de création.](/help/edge/authoring.md)
+Les projets utilisant la création AEM avec Edge Delivery Services héritent de la majorité des mécanismes de tout autre projet Edge Delivery Services, indépendamment de la source de contenu ou de la [méthode de création](/help/edge/authoring.md).
 
 Avant de commencer à modéliser le contenu de votre projet, veillez à lire la documentation suivante.
 
@@ -25,32 +25,32 @@ Avant de commencer à modéliser le contenu de votre projet, veillez à lire la 
 * [Balisage, sections, blocs et blocage automatique](/help/edge/developer/markup-sections-blocks.md)
 * [Collection de blocs](/help/edge/developer/block-collection.md)
 
-Il est essentiel de comprendre ces concepts afin de trouver un modèle de contenu convaincant qui fonctionne de manière non dépendante des sources de contenu. Ce document fournit des détails sur les mécanismes mis en oeuvre spécifiquement pour la création AEM.
+Il est essentiel de comprendre ces concepts afin de trouver un modèle de contenu convaincant qui fonctionne indépendamment des sources de contenu. Ce document fournit des détails sur les mécanismes mis en œuvre spécifiquement pour la création AEM.
 
 ## Contenu par défaut {#default-content}
 
-**Contenu par défaut** est le contenu qu’un auteur place intuitivement sur une page sans ajouter de sémantique supplémentaire. Cela inclut du texte, des en-têtes, des liens et des images. Un tel contenu s&#39;explique d&#39;elle-même par sa fonction et son objectif.
+Le **contenu par défaut** est le contenu qu’un auteur ou une autrice place intuitivement sur une page, sans ajouter de sémantique supplémentaire. Cela inclut du texte, des en-têtes, des liens et des images. Le fonctionnement et l’objectif de ce contenu sont simples et ne nécessitent guère d’explications.
 
-Dans AEM, ce contenu est implémenté sous la forme de composants avec des modèles prédéfinis très simples, qui incluent tout ce qui peut être sérialisé dans Markdown et HTML.
+Dans AEM, ce contenu est implémenté sous la forme de composants avec des modèles prédéfinis très simples, qui incluent tout ce qui peut être sérialisé en Markdown et HTML.
 
-* **Texte**: texte enrichi (y compris les éléments de liste et le texte en italique ou fort)
-* **Titre**: texte, type (h1-h6)
-* **Image**: source, description
-* **Bouton**: texte, titre, url, type (par défaut, principal, secondaire)
+* **Texte** : texte enrichi (y compris les éléments de liste et le texte en gras ou en italique)
+* **Titre** : texte, type (h1-h6)
+* **Image** : source, description
+* **Bouton** : texte, titre, URL, type (par défaut, principal, secondaire)
 
-Le modèle de ces composants fait partie de la [Modèle standard pour la création AEM avec des Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+Le modèle de ces composants fait partie du [modèle standard pour la création AEM avec Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
 
 ## Blocs {#blocks}
 
-Les blocs sont utilisés pour créer un contenu plus riche avec des styles et des fonctionnalités spécifiques. Contrairement au contenu par défaut, les blocs nécessitent une sémantique supplémentaire. Les blocs peuvent être associés à [composants dans l’éditeur de page d’AEM.](/help/implementing/developing/components/overview.md)
+Les blocs sont utilisés pour créer un contenu plus riche avec des styles et des fonctionnalités spécifiques. Contrairement au contenu par défaut, les blocs nécessitent bien une sémantique supplémentaire. Les blocs peuvent être associés à des [composants dans l’éditeur de page d’AEM](/help/implementing/developing/components/overview.md).
 
-Les blocs sont essentiellement des éléments de contenu décorés par JavaScript et stylisés avec une feuille de style.
+Les blocs sont fondamentalement des éléments de contenu décorés par JavaScript et mis en forme avec une feuille de style.
 
 ### Définition du modèle de bloc {#model-definition}
 
-Lors de l’utilisation de la création AEM avec des Edge Delivery Services, le contenu des blocs doit être modélisé explicitement afin de fournir à l’auteur l’interface de création de contenu. Essentiellement, vous devez créer un modèle pour que l’interface utilisateur de création sache quelles options présenter à l’auteur en fonction du bloc.
+Lorsque l’on utilise la création AEM avec Edge Delivery Services, le contenu des blocs doit être explicitement modélisé afin de fournir à l’auteur ou à l’autrice l’interface pour la création de contenu. Pour l’essentiel, vous devez créer un modèle permettant à l’interface utilisateur de création de connaître les options à présenter à l’auteur ou l’autrice en fonction du bloc.
 
-La variable [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) définit le modèle des blocs. Les champs définis dans le modèle de composant sont conservés sous forme de propriétés dans AEM et générés sous forme de cellules dans le tableau qui constitue un bloc.
+Le fichier [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) définit le modèle des blocs. Les champs définis dans le modèle de composant sont conservés sous forme de propriétés dans AEM et rendus sous forme de cellules dans le tableau qui constitue un bloc.
 
 ```json
 {
@@ -81,9 +81,9 @@ La variable [`component-models.json`](https://github.com/adobe-rnd/aem-boilerpla
 }
 ```
 
-Notez que tous les blocs ne doivent pas avoir de modèle. Certains blocs sont simplement [conteneurs](#container) pour une liste d’enfants, où chaque enfant a son propre modèle.
+Notez que tous les blocs n’ont pas nécessairement un modèle. Certains sont simplement des [conteneurs](#container) pour une liste d’enfants, où chaque enfant a son propre modèle.
 
-Il est également nécessaire de définir les blocs existants et qui peuvent être ajoutés à une page à l’aide de l’éditeur universel. La variable [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) répertorie les composants tels qu’ils sont rendus disponibles par l’éditeur universel.
+Il est également nécessaire de définir les blocs qui existent et qui peuvent être ajoutés à une page à l’aide de l’éditeur universel. Le fichier [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) répertorie les composants à mesure qu’ils sont rendus disponibles par l’éditeur universel.
 
 ```json
 {
@@ -103,35 +103,35 @@ Il est également nécessaire de définir les blocs existants et qui peuvent êt
 }
 ```
 
-Il est possible d&#39;utiliser un modèle pour de nombreux blocs. Par exemple, certains blocs peuvent partager un modèle qui définit un texte et une image.
+Il est possible d’utiliser un même modèle pour de nombreux blocs. Par exemple, certains blocs peuvent partager un modèle qui définit un texte et une image.
 
-Pour chaque bloc, le développeur :
+Pour chaque bloc, l’équipe de développement :
 
-* Doit utiliser la variable `core/franklin/components/block/v1/block` type de ressource, l’implémentation générique de la logique de bloc dans AEM.
-* Doit définir le nom du bloc, qui sera rendu dans l’en-tête du tableau du bloc.
+* doit utiliser le type de ressource `core/franklin/components/block/v1/block`, l’implémentation générique de la logique de bloc dans AEM ;
+* doit définir le nom du bloc, qui sera rendu dans l’en-tête de tableau du bloc ;
    * Le nom du bloc est utilisé pour récupérer le style et le script appropriés pour décorer le bloc.
-* Peut définir une [ID de modèle.](/help/implementing/universal-editor/field-types.md#model-structure)
+* peut définir un [ID de modèle.](/help/implementing/universal-editor/field-types.md#model-structure) ;
    * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour l’auteur dans le rail des propriétés.
-* Peut définir une [ID de filtre.](/help/implementing/universal-editor/customizing.md#filtering-components)
+* peut définir un [ID de filtre](/help/implementing/universal-editor/customizing.md#filtering-components).
    * L’ID de filtre est une référence au filtre du composant, qui permet de modifier le comportement de création, par exemple en limitant les enfants pouvant être ajoutés au bloc ou à la section, ou les fonctionnalités d’éditeur de texte enrichi activées.
 
 Toutes ces informations sont stockées dans AEM lorsqu’un bloc est ajouté à une page. Si le type de ressource ou le nom du bloc est manquant, le bloc ne s’affiche pas sur la page.
 
 >[!WARNING]
 >
->Bien que cela soit possible, il n’est pas nécessaire ni recommandé de mettre en oeuvre des composants d’AEM personnalisés. Les composants des Edge Delivery Services fournis par AEM sont suffisants et offrent certains rails de garde pour faciliter le développement.
+>Bien que cela soit possible, il n’est pas nécessaire ni recommandé de mettre en oeuvre des composants d’AEM personnalisés. Les composants pour Edge Delivery Services fournis par AEM sont suffisants et offrent certains rails de protection pour faciliter le développement.
 >
 >Les composants fournis par AEM génèrent un balisage qui peut être utilisé par [helix-html2md](https://github.com/adobe/helix-html2md) lors de la publication sur des Edge Delivery Services et en [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) lors du chargement d’une page dans Universal Editor. Les balises constituent le contrat stable entre AEM et les autres parties du système et ne permettent pas les personnalisations. Pour cette raison, les projets ne doivent pas modifier les composants et ne doivent pas utiliser de composants personnalisés.
 
 ### Structure de bloc {#block-structure}
 
-Les propriétés des blocs sont les suivantes : [défini dans les modèles de composant](#model-definition) et ont persisté en tant que telle dans AEM. Les propriétés sont rendues sous forme de cellules dans la structure de type tableau du bloc.
+Les propriétés des blocs sont [définies dans les modèles de composant](#model-definition) et conservées en tant que telles dans AEM. Les propriétés sont rendues sous forme de cellules dans la structure de bloc sous forme de tableau.
 
 #### Blocs simples {#simple}
 
 Dans le formulaire le plus simple, un bloc effectue le rendu de chaque propriété sur une seule ligne/colonne dans l’ordre dans lequel les propriétés sont définies dans le modèle.
 
-Dans l’exemple suivant, l’image est définie en premier dans le modèle et en second dans le texte. Ils sont ainsi rendus avec l’image en premier et le texte en second.
+Dans l’exemple suivant, l’image est d’abord définie dans le modèle, puis le texte est défini. Le rendu contient ainsi l’image en premier et le texte en second.
 
 >[!BEGINTABS]
 
@@ -180,15 +180,15 @@ Dans l’exemple suivant, l’image est définie en premier dans le modèle et e
 
 >[!ENDTABS]
 
-Vous remarquerez peut-être que certains types de valeurs autorisent la sémantique inférente dans les balises et que les propriétés sont combinées dans des cellules uniques. Ce comportement est décrit dans la section [Type Inférence.](#type-inference)
+Vous remarquerez peut-être que certains types de valeurs autorisent la déduction de la sémantique dans les balises et que les propriétés sont combinées dans des cellules uniques. Ce comportement est décrit dans la section [Déduction du type](#type-inference).
 
 #### Bloc clé-valeur {#key-value}
 
-Dans de nombreux cas, il est recommandé de décorer le balisage sémantique rendu, d’ajouter des noms de classe CSS, d’ajouter de nouveaux noeuds ou de les déplacer dans le modèle DOM et d’appliquer des styles.
+Dans de nombreux cas, il est recommandé de décorer le balisage sémantique rendu, d’ajouter des noms de classe CSS, d’ajouter de nouveaux nœuds ou de les déplacer dans le modèle DOM et d’appliquer des styles.
 
-Dans d&#39;autres cas, cependant, le bloc est lu comme une configuration de type paire clé-valeur.
+Dans d’autres cas, cependant, le bloc est lu comme une configuration de type paire clé-valeur.
 
-Voici un exemple : [métadonnées de section.](/help/edge/developer/markup-sections-blocks.md#sections) Dans ce cas pratique, le bloc peut être configuré pour effectuer le rendu en tant que table de paires clé-valeur. Consultez la section [Métadonnées de sections](#sections-metadata) pour plus d’informations.
+En voici un exemple : [métadonnées de section.](/help/edge/developer/markup-sections-blocks.md#sections) Dans ce cas d’utilisation, le bloc peut être configuré pour effectuer le rendu en tant que tableau de paires clé-valeur. Pour en savoir plus, consultez la rubrique [Sections et métadonnées de sections](#sections-metadata).
 
 >[!BEGINTABS]
 
@@ -242,9 +242,9 @@ Voici un exemple : [métadonnées de section.](/help/edge/developer/markup-secti
 
 #### Blocs de conteneur {#container}
 
-Les deux structures précédentes ont une seule dimension : la liste des propriétés. Les blocs de conteneur permettent d’ajouter des enfants (généralement du même type ou modèle) et sont donc bidimensionnels. Ces blocs prennent toujours en charge leurs propres propriétés générées sous forme de lignes avec une seule colonne en premier. Elles permettent également d’ajouter des enfants, pour lesquels chaque élément est rendu en ligne et chaque propriété en colonne dans cette ligne.
+Les deux structures précédentes ont une seule dimension : la liste des propriétés. Les blocs de conteneur permettent d’ajouter des enfants (généralement du même type ou modèle) et sont donc bidimensionnels. Ces blocs continuent de prendre en charge leurs propres propriétés rendues sous forme de lignes, avec une seule colonne au départ. Ils permettent également d’ajouter des enfants, pour lesquels chaque élément est rendu sous forme de ligne et chaque propriété est rendue sous forme de colonne dans cette ligne.
 
-Dans l&#39;exemple suivant, un bloc accepte une liste d&#39;icônes liées en tant qu&#39;enfants, où chaque icône liée comporte une image et un lien. Remarquez que la variable [identifiant de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) défini dans les données du bloc afin de référencer la configuration du filtre.
+Dans l’exemple suivant, un bloc accepte une liste d’icônes liées en tant qu’enfants, chaque icône liée comportant une image et un lien. Remarquez l’[identifiant de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) défini dans les données du bloc afin de référencer la configuration du filtre.
 
 >[!BEGINTABS]
 
@@ -319,37 +319,37 @@ Dans l&#39;exemple suivant, un bloc accepte une liste d&#39;icônes liées en ta
 
 >[!ENDTABS]
 
-### Création de modèles de contenu sémantique pour les blocs {#creating-content-models}
+### Créer des modèles de contenu sémantique pour les blocs {#creating-content-models}
 
-Avec la variable [la mécanique de la structure en bloc,](#block-structure) il est possible de créer un modèle de contenu qui mappe le contenu persistant AEM un à un au niveau de la diffusion.
+Une fois la [mécanique de la structure de bloc expliquée](#block-structure), il est possible de créer un modèle de contenu qui mappe le contenu conservé dans AEM avec le niveau de diffusion, de manière biunivoque.
 
-Au début de chaque projet, un modèle de contenu doit être soigneusement pris en compte pour chaque bloc. Il doit être indépendant de la source de contenu et de l’expérience de création afin de permettre aux auteurs de les changer ou de les combiner tout en réutilisant les mises en oeuvre et les styles de bloc. Vous trouverez plus de détails et de conseils généraux dans la section [David&#39;s Model (prenez 2).](https://www.aem.live/docs/davidsmodel) Plus précisément, la [collection de blocs](/help/edge/developer/block-collection.md) contient un vaste ensemble de modèles de contenu pour des cas d’utilisation spécifiques de modèles d’interface utilisateur courants.
+Au début de chaque projet, il convient d’envisager attentivement le modèle de contenu de chaque bloc. Ceux-ci doivent être indépendants de la source de contenu et de l’expérience de création afin de permettre aux auteurs et autrices de les changer ou de les combiner, tout en réutilisant les implémentations et les styles de bloc. Vous trouverez plus de détails et de conseils généraux dans la section [Modèle de David (version 2).](https://www.aem.live/docs/davidsmodel) Plus précisément, la [collection de blocs](/help/edge/developer/block-collection.md) contient un vaste ensemble de modèles de contenu pour des cas d’utilisation spécifiques de modèles d’interface utilisateur courants.
 
-Pour AEM la création avec des Edge Delivery Services, cela soulève la question de savoir comment servir un modèle de contenu sémantique convaincant lorsque les informations sont créées avec des formulaires composés de plusieurs champs au lieu de modifier le balisage sémantique dans un contexte tel que du texte enrichi.
+Pour la création AEM avec Edge Delivery Services, cela soulève la question de savoir comment servir un modèle de contenu sémantique convaincant lorsque les informations sont créées avec des formulaires composés de plusieurs champs au lieu de modifier le balisage sémantique dans un contexte tel que du texte enrichi.
 
-Pour résoudre ce problème, trois méthodes permettent de créer un modèle de contenu attrayant :
+Pour résoudre ce problème, trois méthodes permettent de créer un modèle de contenu convaincant :
 
-* [Inférence de type](#type-inference)
-* [Réduire le champ](#field-collapse)
+* [Déduction de type](#type-inference)
+* [Réduction du champ](#field-collapse)
 * [Regroupement d’éléments](#element-grouping)
 
 >[!NOTE]
 >
->Les implémentations de blocs peuvent déconstruire le contenu et remplacer le bloc par un DOM rendu côté client. Bien que cela soit possible et intuitif pour un développeur, ce n’est pas la bonne pratique pour les Edge Delivery Services.
+>Les implémentations de blocs peuvent déconstruire le contenu et remplacer le bloc par un DOM rendu côté client. Bien que cela soit possible et intuitif pour un développeur ou une développeuse, il ne s’agit pas d’une bonne pratique pour Edge Delivery Services.
 
-#### Inférence de type {#type-inference}
+#### Déduction de type {#type-inference}
 
-Pour certaines valeurs, nous pouvons déduire la signification sémantique à partir des valeurs elles-mêmes. Ces valeurs comprennent :
+Pour certaines valeurs, la signification sémantique peut être déduite des valeurs elles-mêmes. Ces valeurs incluent les suivantes :
 
-* **Images** - Si une référence à une ressource dans AEM est une ressource avec un type MIME commençant par `image/`, la référence est rendue comme `<picture><img src="${reference}"></picture>`.
-* **Liens** - Si une référence existe dans AEM et n’est pas une image, ou si la valeur commence par `https?://`  ou `#`, la référence est rendue comme `<a href="${reference}">${reference}</a>` .
-* **Texte enrichi** - Si une valeur rognée commence par un paragraphe (`p`, `ul`, `ol`, `h1`-`h6`, etc.), la valeur est rendue en texte enrichi.
-* **Noms de classe** - La variable `classes` est traitée comme des options de bloc et rendue dans l’en-tête du tableau pour [des blocs simples,](#simple) ou en tant que liste de valeurs pour les éléments d’une [bloc conteneur.](#container)
-* **Listes de valeurs** - Si une valeur est une propriété à plusieurs valeurs et que la première valeur ne correspond à aucune des valeurs précédentes, toutes les valeurs sont concaténées sous la forme d’une liste séparée par des virgules.
+* **Images** : si une référence à une ressource dans AEM est une ressource avec un type MIME commençant par `image/`, la référence est rendue sous la forme `<picture><img src="${reference}"></picture>`.
+* **Liens** : si une référence existe dans AEM et n’est pas une image, ou si la valeur commence par `https?://` ou `#`, la référence est rendue sous la forme `<a href="${reference}">${reference}</a>`.
+* **Texte enrichi** : si une valeur rognée commence par un paragraphe (`p`, `ul`, `ol`, `h1`-`h6`, etc.), la valeur est rendue sous forme de texte enrichi.
+* **Noms de classe** : la propriété `classes` est traitée sous forme d’options de bloc et rendue dans l’en-tête du tableau pour des [blocs simples](#simple), ou en tant que liste de valeurs pour les éléments d’un [bloc conteneur](#container).
+* **Listes de valeurs** : si une valeur est une propriété à plusieurs valeurs et que la première valeur ne correspond à aucune des valeurs précédentes, toutes les valeurs sont concaténées sous la forme d’une liste séparée par des virgules.
 
 Tout le reste est rendu en texte brut.
 
-#### Réduire le champ {#field-collapse}
+#### Réduction du champ {#field-collapse}
 
 La réduction des champs est le mécanisme qui permet de combiner plusieurs valeurs de champ en un seul élément sémantique, selon une convention d’affectation de nom utilisant les suffixes. `Title`, `Type`, `MimeType`, `Alt`, et `Text` (toutes les valeurs sensibles à la casse). Toute propriété se terminant par l’un de ces suffixes ne sera pas considérée comme une valeur, mais comme un attribut d’une autre propriété.
 
@@ -399,7 +399,7 @@ La réduction des champs est le mécanisme qui permet de combiner plusieurs vale
 
 >[!TAB Balisage]
 
-Non `linkType`, ou `linkType=default`
+Pas de `linkType` ni `linkType=default`
 
 ```html
 <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
@@ -460,9 +460,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 #### Regroupement d’éléments {#element-grouping}
 
-while [effondrement de champ](#field-collapse) Il s’agit de combiner plusieurs propriétés en un seul élément sémantique. Le regroupement d’éléments consiste à concaténer plusieurs éléments sémantiques en une seule cellule. Cela s’avère particulièrement utile dans les cas d’utilisation où l’auteur doit être limité dans le type et le nombre d’éléments qu’il peut créer.
+La [réduction des champs](#field-collapse) a pour but de combiner plusieurs propriétés en un seul élément sémantique. Quant au regroupement d’éléments, il consiste à concaténer plusieurs éléments sémantiques en une seule cellule. Cela se révèle particulièrement utile dans les cas d’utilisation où la personne chargée de la création doit être limitée en termes de type et de nombre d’éléments qu’il est possible de créer.
 
-Par exemple, un composant de teaser peut uniquement permettre à l’auteur de créer un sous-titre, un titre et une description de paragraphe unique, combinés avec un maximum de deux boutons d’appel à l’action. Le regroupement de ces éléments génère un balisage sémantique qui peut être stylisé sans autre action.
+Par exemple, un composant de teaser peut uniquement permettre à l’auteur de créer un sous-titre, un titre et une description de paragraphe unique, combinés avec un maximum de deux boutons d’appel à l’action. Le regroupement de ces éléments génère un balisage sémantique qui peut être mis en forme sans aucune autre action.
 
 Le regroupement d’éléments utilise une convention d’affectation des noms, selon laquelle le nom du groupe est séparé de chaque propriété du groupe par un trait de soulignement. La réduction des champs des propriétés d’un groupe fonctionne comme décrit précédemment.
 
@@ -529,15 +529,15 @@ Le regroupement d’éléments utilise une convention d’affectation des noms, 
 
 >[!ENDTABS]
 
-## Métadonnées de sections {#sections-metadata}
+## Sections et métadonnées de sections {#sections-metadata}
 
-De la même manière qu’un développeur peut définir et modéliser plusieurs [blocs,](#blocks) ils peuvent définir différentes sections.
+De la même manière qu’une équipe de développement peut définir et modéliser plusieurs [blocs](#blocks), elle peut définir différentes sections.
 
-Le modèle de contenu des Edge Delivery Services autorise délibérément un seul niveau d’imbrication, qui est tout contenu ou bloc par défaut contenu par une section. Cela signifie que pour disposer de composants visuels plus complexes pouvant contenir d’autres composants, ils doivent être modélisés en tant que sections et combinés à l’aide du blocage automatique côté client. Les exemples types sont les onglets et les sections réductibles, tels que les accordéons.
+Le modèle de contenu de Edge Delivery Services n’autorise, à dessein, qu’un seul niveau d’imbrication, c’est-à-dire un contenu ou un bloc par défaut figurant dans une section. Cela signifie que, pour disposer de composants visuels plus complexes pouvant contenir d’autres composants, il convient de les modéliser sous forme de sections et de les combiner à l’aide du blocage automatique côté client. Les exemples types sont les onglets et les sections réductibles, comme les accordéons.
 
-Une section peut être définie de la même manière qu’un bloc, mais avec le type de ressource `core/franklin/components/section/v1/section`. Les sections peuvent avoir un nom et un [identifiant du filtre,](/help/implementing/universal-editor/customizing.md#filtering-components) qui sont utilisés par la variable [Éditeur universel](/help/implementing/universal-editor/introduction.md) uniquement, ainsi qu’un [ID de modèle,](/help/implementing/universal-editor/field-types.md#model-structure) qui est utilisé pour effectuer le rendu des métadonnées de section. Le modèle est ainsi le modèle du bloc de métadonnées de section, qui sera automatiquement ajouté à une section en tant que bloc clé-valeur s’il n’est pas vide.
+Une section peut être définie de la même manière qu’un bloc, mais avec le type de ressource `core/franklin/components/section/v1/section`. Les sections peuvent avoir un nom et un [identifiant de filtre](/help/implementing/universal-editor/customizing.md#filtering-components), qui sont utilisés par l’[éditeur universel](/help/implementing/universal-editor/introduction.md) uniquement, ainsi qu’un [identifiant de modèle](/help/implementing/universal-editor/field-types.md#model-structure), qui est utilisé pour effectuer le rendu des métadonnées de section. Dans ce cas, le modèle est le modèle du bloc de métadonnées de section, qui sera automatiquement ajouté à une section en tant que bloc clé-valeur s’il n’est pas vide.
 
-La variable [ID de modèle](/help/implementing/universal-editor/field-types.md#model-structure) et [identifiant de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) de la section par défaut est `section`. Il peut être utilisé pour modifier le comportement de la section par défaut. L’exemple suivant ajoute des styles et une image d’arrière-plan au modèle de métadonnées de section.
+L’[identifiant de modèle](/help/implementing/universal-editor/field-types.md#model-structure) et l’[identifiant de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) de la section par défaut sont `section`. Ils peuvent être utilisés pour modifier le comportement de la section par défaut. L’exemple suivant ajoute des styles et une image d’arrière-plan au modèle de métadonnées de section.
 
 ```json
 {
@@ -571,7 +571,7 @@ La variable [ID de modèle](/help/implementing/universal-editor/field-types.md#m
 }
 ```
 
-L&#39;exemple suivant définit une section d&#39;onglets qui peut être utilisée pour créer un bloc d&#39;onglets en combinant des sections consécutives avec un attribut de données de titre d&#39;onglet dans un bloc d&#39;onglets lors du blocage automatique.
+L’exemple suivant définit une section d’onglets qui peut être utilisée pour créer un bloc d’onglets en combinant des sections consécutives avec un attribut de données de titre d’onglet dans un bloc d’onglets lors du blocage automatique.
 
 ```json
 {
@@ -594,9 +594,9 @@ L&#39;exemple suivant définit une section d&#39;onglets qui peut être utilisé
 
 ## Métadonnées de page {#page-metadata}
 
-Les documents peuvent avoir une page [bloc de métadonnées,](/help/edge/authoring.md#metadata--seo) qui est utilisé pour définir laquelle `<meta>` Les éléments sont rendus dans la variable `<head>` d’une page. Les propriétés de page des pages dans AEM mappage as a Cloud Service à celles disponibles prêtes à l’emploi pour les Edge Delivery Services, comme `title`, `description`, `keywords`, etc.
+Les documents peuvent avoir un [bloc de métadonnées](/help/edge/authoring.md#metadata--seo) de page, qui est utilisé pour définir les éléments `<meta>` qui sont rendus en `<head>` d’une page. Les propriétés de page des pages dans AEM as a Cloud Service sont mappées à celles disponibles et prêtes à l’emploi pour Edge Delivery Services, comme `title`, `description`, `keywords`, etc.
 
-Avant d’explorer plus en détail la manière de définir vos propres métadonnées, consultez les documents suivants pour comprendre d’abord le concept de métadonnées de page.
+Avant d’explorer plus en détail la manière de définir vos propres métadonnées, consultez les documents suivants pour comprendre au préalable le concept de métadonnées de page.
 
 * [Métadonnées](https://www.aem.live/developer/block-collection/metadata)
 * [Métadonnées en bloc](/help/edge/docs/bulk-metadata.md)
@@ -605,9 +605,9 @@ Il est également possible de définir des métadonnées de page supplémentaire
 
 ### Feuilles de calcul de métadonnées {#metadata-spreadsheets}
 
-Il est possible de définir des métadonnées par chemin ou par modèle de chemin d’accès d’une manière similaire à un tableau dans AEM as a Cloud Service. Il existe une interface utilisateur de création pour les données de type tableau, similaire à Excel ou Google Sheets.
+Il est possible de définir des métadonnées pour chaque chemin ou pour chaque modèle de chemin de manière similaire à un tableau dans AEM as a Cloud Service. Il existe une interface utilisateur de création pour les données de type tableau, similaire aux feuilles de calcul Excel ou Google.
 
-Pour créer ce tableau, créez une page et utilisez le modèle Métadonnées dans la console Sites.
+Pour créer ce type de tableau, créez une page, puis utilisez le modèle de métadonnées de la console Sites.
 
 Dans les propriétés de page de la feuille de calcul, définissez les champs de métadonnées dont vous avez besoin, ainsi que l’URL. Ajoutez ensuite des métadonnées par chemin de page ou modèle de chemin de page.
 
@@ -632,7 +632,7 @@ La plupart des propriétés de page par défaut disponibles dans AEM sont mappé
 
 Il est également possible de définir un modèle de composant pour les métadonnées de page personnalisées, qui sera mis à la disposition de l’auteur sous forme d’onglet dans la boîte de dialogue Propriétés de la page AEM Sites.
 
-Pour ce faire, créez un modèle de composant avec l’ID . `page-metadata`.
+Pour ce faire, créez un modèle de composant avec l’identifiant `page-metadata`.
 
 ```json
 {

@@ -2,7 +2,7 @@
 source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 66%
+ht-degree: 80%
 
 ---
 # Fragments de code {#snippets}
@@ -43,23 +43,23 @@ ht-degree: 66%
 * [Envoyer des données de formulaire adaptatif à un workflow AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utiliser le Portail Formulaires pour répertorier des formulaires adaptatifs AEM sur un site web AEM](/help/forms/configure-forms-portal.md)
 
-## Actions d’envoi de formulaire adaptatif {#af-submit-action}
+## Actions d’envoi pour les formulaires adaptatifs {#af-submit-action}
 
 * [Envoyer un e-mail](/help/forms/configure-submit-action-send-email.md)
 * [Envoyer à SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Envoyer à l’aide du modèle de données de formulaire](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
-* [Envoyer au stockage Blob Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Envoyer au stockage Blob Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Envoyer vers le point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
 * [Envoyer à OneDrive](/help/forms/configure-submit-action-onedrive.md)
-* [Appeler un processus AEM](/help/forms/configure-submit-action-workflow.md)
+* [Appeler un workflow AEM](/help/forms/configure-submit-action-workflow.md)
 * [Envoyer à Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Envoyer à Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Connexion d’un formulaire adaptatif à une application Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Envoyer vers Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-## Création AEM avec accès anticipé des Edge Delivery Services {#aem-authoring-edge-early-access}
+## Création AEM avec accès anticipé à Edge Delivery Services {#aem-authoring-edge-early-access}
 
-[!BADGE TECHNOLOGIE D’ACCÈS ANTICIPÉ - Posez-nous des questions sur cette fonctionnalité dans les laboratoires AEM Sites de votre canal Slack !]{type=Informative url="/help/edge/docs/slack.md" tooltip="La création AEM avec des Edge Delivery Services est une technologie d’accès anticipé."}
+[!BADGE TECHNOLOGIE D’ACCÈS ANTICIPÉ – Posez-nous des questions sur cette fonctionnalité dans les laboratoires AEM Sites de votre canal Slack.]{type=Informative url="/help/edge/docs/slack.md" tooltip="La création AEM avec Edge Delivery Services est une technologie d’accès anticipé."}
 
 ## Voir également {#see-more-forms-eds}
 

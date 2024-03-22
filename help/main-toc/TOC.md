@@ -3,13 +3,13 @@ cloud: Experience Cloud
 product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
-user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
+user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
 workflow-type: tm+mt
 source-wordcount: '4829'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -175,8 +175,8 @@ ht-degree: 94%
    + [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md)
    + [Canal de version préliminaire](/help/release-notes/prerelease.md)
 + Sécurité {#security}
-   + [Présentation de la sécurité dans AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
-   + [Configuration de la mise en réseau avancée pour AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
+   + [Vue d’ensemble de la sécurité dans AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
+   + [Configurer la mise en réseau avancée pour AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
    + [Prise en charge IMS d’AEM as a Cloud Service](/help/security/ims-support.md)
    + [Prise en charge des mêmes cookies de site pour AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Prise en charge d’OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md)
@@ -630,12 +630,12 @@ ht-degree: 94%
             + [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Créer des formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
             + [Définition de l’action Envoyer pour un formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)
-            + [Envoyer un formulaire adaptatif au stockage Azure Blob](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Envoyer un formulaire adaptatif à Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Envoyer un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [Intégrer le formulaire adaptatif AEM au processus AEM](/help/forms/configure-submit-action-workflow.md)
-            + [Configuration de l’action d’envoi Envoyer vers le point de fin REST pour le Forms adaptatif](/help/forms/configure-submit-action-restpoint.md)
-            + [Configuration de l’action Envoyer un courrier électronique pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
+            + [Intégrer un formulaire adaptatif AEM au workflow AEM](/help/forms/configure-submit-action-workflow.md)
+            + [Configurer l’action Envoyer vers le point d’entrée REST pour les formulaires adaptatifs](/help/forms/configure-submit-action-restpoint.md)
+            + [Configurer l’action Envoyer un e-mail pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
             + [Utilisation de Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
@@ -686,7 +686,7 @@ ht-degree: 94%
          + [Configurer le Portail Formulaires](/help/forms/configure-forms-portal.md)
          + [Créer et gérer des révisions](/help/forms/create-reviews-forms.md)
       + [Mots-clés de formulaires adaptatifs](/help/forms/adaptive-forms-keywords.md)
-      + [Prévisualisation d’un formulaire](/help/forms/previewing-forms.md)
+      + [Prévisualiser un formulaire](/help/forms/previewing-forms.md)
    + Workflows basés sur Forms {#create-form-centric-workflows}
       + [Utilisation d’étapes basées sur l’utilisation de Forms dans une référence des étapes du workflow](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilisation de variables dans un processus orienté Forms](/help/forms/variable-in-aem-workflows.md)
@@ -703,7 +703,7 @@ ht-degree: 94%
    + Rapports de transaction {#using-communications}
       + [API de rapports de transactions facturables](/help/forms/transaction-reports-billable-apis.md)
       + [Enregistrer une transaction pour les implémentations personnalisées](/help/forms/record-transaction-custom-implementation.md)
-   + Référence de l’API du développeur {#aem-forms-developer-api-reference}
+   + Référence de l’API de développement {#aem-forms-developer-api-reference}
       + [Référence de l’API Adaptive Forms](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Référence de l’API Communications du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [Référence de l’API JavaScript du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
@@ -750,8 +750,8 @@ ht-degree: 94%
       + [Développement d’un composant personnalisé pour Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Questions fréquentes sur Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
-   + [Présentation et aperçu](/help/commerce-cloud/introduction.md)
-   + [Modifications notables apportées à AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
+   + [Présentation et vue d’ensemble](/help/commerce-cloud/introduction.md)
+   + [Modifications notables apportées à AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
    + Parcours de Commerce {#journeys}
       + Parcours de création de contenu {#author}
          + [Parcours de création de contenu AEM Content and Commerce](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
@@ -790,7 +790,7 @@ ht-degree: 94%
 + AEM avec des Edge Delivery Services {#edge-delivery}
    + [Prise en main d’Edge Delivery Services](/help/edge/overview.md)
    + [Utiliser Edge Delivery](/help/edge/using.md)
-   + [Guide de prise en main du développeur](/help/edge/edge-dev-getting-started.md)
+   + [Guide de prise en main pour le développement](/help/edge/edge-dev-getting-started.md)
    + [Créer du contenu pour Edge Delivery](/help/edge/authoring.md)
    + [Publier du contenu pour Edge Delivery](/help/edge/publishing.md)
    + [Développer pour Edge Delivery](/help/edge/developing.md)
@@ -937,7 +937,7 @@ ht-degree: 94%
          + [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [Programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [Gestion et modification des programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Gérer et modifier des programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Mise en veille des environnements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Création d’un projet d’application AEM {#create-application-project}
          + [Assistant de création du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
@@ -996,7 +996,7 @@ ht-degree: 94%
          + [Gestion des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md)
       + [Compréhension des requêtes de contenu Cloud Service](/help/implementing/cloud-manager/content-requests.md)
-      + [Tableau de bord des performances du réseau CDN](/help/implementing/cloud-manager/cdn-performance.md)
+      + [Tableau de bord des performances du réseau CDN](/help/implementing/cloud-manager/cdn-performance.md)
       + [FAQ relatives à Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Développement pour AEM as a Cloud Service {#developing}
       + [Structure de projet AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
@@ -1051,12 +1051,12 @@ ht-degree: 94%
          + [Prise en main de l’éditeur universel dans AEM](/help/implementing/universal-editor/getting-started.md)
          + [Vue d’ensemble de développement de l’éditeur universel](/help/implementing/universal-editor/developer-overview.md)
          + [Attributs et types d’élément](/help/implementing/universal-editor/attributes-types.md)
-         + [Définition des modèles, champs et types de composants](/help/implementing/universal-editor/field-types.md)
+         + [Définitions de modèles, champs et types de composants](/help/implementing/universal-editor/field-types.md)
          + [Authentification de l’éditeur universel](/help/implementing/universal-editor/authentication.md)
          + [Développement d’AEM locales avec l’éditeur universel](/help/implementing/universal-editor/local-dev.md)
          + [Appels de l’éditeur universel](/help/implementing/universal-editor/calls.md)
          + [Événements](/help/implementing/universal-editor/events.md)
-         + [Personnalisation de l’éditeur universel](/help/implementing/universal-editor/customizing.md)
+         + [Personnaliser l’éditeur universel](/help/implementing/universal-editor/customizing.md)
       + [Gestion de l’expérience découplée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=fr)
       + Développement hybride et SPA {#hybrid}
          + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1079,7 +1079,7 @@ ht-degree: 94%
          + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=fr)
          + [Intégration de Launch](/help/implementing/developing/hybrid/launch-integration.md)
          + [Documents de référence SPA](/help/implementing/developing/hybrid/reference-materials.md)
-         + [Interdire la sérialisation des ResourceResolvers via l’exportateur de modèle Sling](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
+         + [Interdire la sérialisation des ResourceResolvers via l’exporteur de modèle Sling](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + Outils de développement {#developer-tools}
       + [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
       + [Outils de développement AEM pour Eclipse](/help/implementing/developing/tools/eclipse.md)
