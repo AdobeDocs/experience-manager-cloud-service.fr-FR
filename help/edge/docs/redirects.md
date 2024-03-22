@@ -1,11 +1,12 @@
 ---
-description: Chaque site web a besoin de redirections. Par exemple, si vous déplacez ou supprimez du contenu, vous souhaitez que vos utilisateurs puissent toujours le trouver ou la meilleure chose suivante. Voir le document Création et publication de contenu pour plus d’informations sur la suppression de contenu.
+description: Chaque site web a besoin de redirections. Par exemple, si vous déplacez ou supprimez du contenu, vos utilisateurs et utilisatrices doivent pouvoir toujours le retrouver, lui ou son équivalent. Voir le document Créer et publier du contenu pour en savoir plus sur la suppression de contenu.
 title: Redirections
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: a41e08bb-2488-494d-8abd-b271e0cd4c34
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

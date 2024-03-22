@@ -1,11 +1,12 @@
 ---
-description: Adobe Experience Manager permet de conserver un index de toutes les pages publiées dans une section spécifique de votre site web. Il est généralement utilisé pour créer des listes, des flux et activer des cas d’utilisation de recherche et de filtrage pour vos pages ou fragments de contenu.
+description: Adobe Experience Manager permet de conserver un index de toutes les pages publiées dans une section spécifique de votre site web. Il est généralement utilisé pour créer des listes, des flux et activer des cas d’utilisation de recherche et de filtrage pour vos pages ou fragments de contenu.
 title: Indexation
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 8ca968fd-73af-4082-bfc5-0737fdd8a5be
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 

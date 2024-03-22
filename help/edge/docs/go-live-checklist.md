@@ -1,11 +1,12 @@
 ---
-description: La liste de contrôle d’activation est un résumé des bonnes pratiques à prendre en compte lors du lancement d’un site web. Ces étapes sont généralement de bonnes pratiques, mais présentent certains aspects spécifiques à Adobe Experience Manager.
+description: La liste de contrôle de mise en production est un résumé des bonnes pratiques à prendre en compte lors du lancement d’un site web. Ces étapes sont généralement considérées comme des bonnes pratiques, mais présentent certains aspects spécifiques à Adobe Experience Manager.
 title: Liste de contrôle de mise en production
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 7f22d7f5-39b8-4b91-a1ef-24f89b5ded14
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '34'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 

@@ -1,13 +1,14 @@
 ---
-description: Nous sommes disponibles sur Slack sur des canaux Slack dédiés. L’équipe d’Adobe et les robots Slack sont à votre disposition pour répondre à vos questions.
+description: Nous sommes disponibles sur Slack, sur des canaux dédiés. L’équipe Adobe et le robot Slack sont à votre disposition pour répondre à vos questions.
 title: Robot Slack
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c04b9391059e66b343fe2ecab90e26179b2172ac
-workflow-type: tm+mt
+exl-id: 22633bb5-35e9-4d56-b7a4-ecf6128da5e0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

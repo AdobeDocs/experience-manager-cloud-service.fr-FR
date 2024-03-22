@@ -1,14 +1,15 @@
 ---
-description: L’invalidation push purge automatiquement le contenu sur le réseau de diffusion de contenu de production du client (par exemple "www.yourdomain.com"), chaque fois qu’un auteur publie des modifications de contenu.
-title: Configuration de l’invalidation push pour le réseau de diffusion de contenu de production BYO
+description: L’invalidation push purge automatiquement le contenu sur le réseau CDN de production du client ou de la cliente (par exemple « www.votredomaine.com »), à chaque fois qu’un auteur ou une autrice publie des modifications de contenu.
+title: Configurer l’invalidation push pour le réseau CDN de production BYO
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 026960f1-78e6-4a25-a94e-a1d0c61536c1
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '32'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configuration de l’invalidation push pour le réseau de diffusion de contenu de production BYO
+# Configurer l’invalidation push pour le réseau CDN de production BYO
 
 {{$include c9a05615-270b-4cec-84e5-1583ddfe2b8e}}

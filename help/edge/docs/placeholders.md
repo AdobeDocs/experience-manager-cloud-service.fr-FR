@@ -1,11 +1,12 @@
 ---
-description: Sur la plupart des sites web, il existe des chaînes ou des variables qui seront utilisées sur l’ensemble du site. En particulier sur les sites qui doivent prendre en charge plusieurs langues, il n’est pas judicieux de coder en dur de telles valeurs. Au lieu de cela, les espaces réservés peuvent être utilisés et gérés de manière centralisée.
+description: Sur la plupart des sites web, il existe des chaînes ou des variables qui seront utilisées sur l’ensemble du site. Il n’est pas judicieux de coder en dur de telles valeurs, notamment sur les sites qui doivent prendre en charge plusieurs langues. Au lieu de cela, il est possible d’utiliser et de gérer des espaces réservés de manière centralisée.
 title: Espaces réservés
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 392e2323-8d6f-40eb-a68e-51baeee7fc2d
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

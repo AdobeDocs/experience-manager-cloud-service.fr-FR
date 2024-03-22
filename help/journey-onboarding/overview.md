@@ -4,9 +4,9 @@ description: Commencez ici pour avoir un aperçu du parcours guidé tout au long
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 source-git-commit: 98618765b405316b18110182c221ddd968c70e96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -103,4 +103,4 @@ Si vous souhaitez savoir comment Adobe recommande d’intégrer votre équipe à
 
 Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez aller au delà du contenu du parcours d’intégration.
 
-* [Intégration à AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - Cette courte vidéo donne un aperçu du processus d’intégration du Cloud Service pour AEM.
+* [Intégration dans AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html?lang=fr) : cette courte vidéo propose une vue d’ensemble du processus d’intégration du service cloud pour AEM.

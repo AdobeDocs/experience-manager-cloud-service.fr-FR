@@ -1,14 +1,15 @@
 ---
-title: Questions fréquentes sur AEM Forms as a Cloud Service
-description: FAQ sur Forms as a Cloud Service
+title: Questions fréquentes sur AEM Forms as a Cloud Service
+description: Questions fréquentes sur Forms as a Cloud Service
 contentOwner: khsingh
 role: User
 feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -123,5 +124,3 @@ Créez le formulaire adaptatif basé sur le schéma JSON de l’environnement Ex
     A sample Service Credential JSON file fields mapped to Adobe Experience Manager connector for Microsoft Power Automate.
 
     -->
-
-
