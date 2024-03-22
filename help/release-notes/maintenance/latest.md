@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: dbdc63db9a9ac954ce6359d3643231d6e195fd53
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 65%
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Aucun.
 ### Problèmes résolus {#fixed-issues-15575}
 
 * ASSETS-36358 : le rapport de chargement ne peut pas être rendu.
-* GRANITE-50774 : GraniteContent doit utiliser l’ordre déterministe des valeurs de propriété au moment de l’initialisation.
+* GRANITE-50774 : GraniteContent doit utiliser l’ordre déterministe des valeurs de propriété au moment de l’initialisation.
 
 ### Problèmes connus {#known-issues-15575}
 
@@ -36,13 +36,13 @@ Aucun.
 
 **Actions requises**
 
-#### Définir la version Java de CM sur 11 {#set-java-version-11}
+#### Définir la version CM Java sur 11 {#set-java-version-11}
 
-La nouvelle version d’aem-sdk-api contient des classes compilées avec une cible Java 11, qui n’est pas compatible avec le JDK version 1.8 par défaut de l’environnement de génération de Cloud Manager. Cette mise à jour nécessite que Maven soit exécuté à l’aide de JDK 11.
+La nouvelle version d’aem-sdk-api contient des classes compilées avec une cible Java 11, qui n’est pas compatible avec le JDK version 1.8 par défaut de l’environnement de génération de Cloud Manager. Cette mise à jour nécessite que Maven soit exécuté à l’aide de JDK 11.
 
-Il est conseillé aux clients d’ajouter une `.cloudmanager/java-version` à la racine de leur référentiel git avec le contenu : `11`. Voir [Environnement de création / Définition de la version du JDK Maven](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
+Il est conseillé aux clientes et clients d’ajouter un fichier `.cloudmanager/java-version` à la racine de leur référentiel git avec le contenu : `11`. Voir [Environnement de création / Définition de la version du JDK Maven](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
 
-#### Mise à jour d’aem-cloud-testing-clients vers 1.2.1 {#update-aem-cloud-testing-clients}
+#### Mise à jour d’aem-cloud-testing-clients vers 1.2.1 {#update-aem-cloud-testing-clients}
 
 Les modifications à venir nécessiteront la bibliothèque [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) utilisée dans vos tests fonctionnels personnalisés pour les mettre à jour vers au moins la version **1.2.1**
 
