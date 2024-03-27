@@ -3,9 +3,9 @@ title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experie
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: dbdc63db9a9ac954ce6359d3643231d6e195fd53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '302'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 15575 {#release-15575}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 15575, publiée le mercredi 19 mars 2024. La version de maintenance précédente était la version 15262.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 15575, publiée le 19 mars 2024. La version de maintenance précédente était la version 15262.
 
 L’activation des fonctionnalités de la version 2024.3.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
@@ -25,7 +25,7 @@ Aucun.
 
 ### Problèmes résolus {#fixed-issues-15575}
 
-* ASSETS-36358 : le rapport de chargement ne peut pas être rendu.
+* ASSETS-36358 : le rapport de chargement ne peut pas être rendu.
 * GRANITE-50774 : GraniteContent doit utiliser l’ordre déterministe des valeurs de propriété au moment de l’initialisation.
 
 ### Problèmes connus {#known-issues-15575}
@@ -40,7 +40,7 @@ Aucun.
 
 La nouvelle version d’aem-sdk-api contient des classes compilées avec une cible Java 11, qui n’est pas compatible avec le JDK version 1.8 par défaut de l’environnement de génération de Cloud Manager. Cette mise à jour nécessite que Maven soit exécuté à l’aide de JDK 11.
 
-Il est conseillé aux clientes et clients d’ajouter un fichier `.cloudmanager/java-version` à la racine de leur référentiel git avec le contenu : `11`. Voir [Environnement de création / Définition de la version du JDK Maven](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
+Il est conseillé aux clientes et clients d’ajouter un fichier `.cloudmanager/java-version` à la racine de leur référentiel git avec le contenu : `11`. Voir [Environnement de création/Définition de la version du JDK Maven](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
 
 #### Mise à jour d’aem-cloud-testing-clients vers 1.2.1 {#update-aem-cloud-testing-clients}
 
@@ -56,7 +56,7 @@ Assurez-vous que votre dépendance dans `it.tests/pom.xml` a été mis à jour.
 </dependency>
 ```
 
-Cette modification doit être effectuée avant le 6 avril 2024.
+Cette modification doit être effectuée avant le 6 avril 2024.
 
 Si vous ne mettez pas à jour la bibliothèque de dépendances, des échecs de pipeline se produiront à l’étape « Tests fonctionnels personnalisés ».
 

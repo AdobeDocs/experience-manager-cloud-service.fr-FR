@@ -3,9 +3,9 @@ title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5142'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Lors de la configuration de fonctionnalités de mise en réseau avancée, les re
 L’utilisation de fonctionnalités de mise en réseau avancée nécessite deux étapes :
 
 1. Configuration de l’option de mise en réseau avancée, selon la priorité d’application de la [sortie de port flexible,](#flexible-port-egress) de l’[adresse IP de sortie dédiée,](#dedicated-egress-ip-address) ou du [VPN,](#vpn) au niveau du programme.
-1. Pour être utilisée, l’option de mise en réseau avancée doit alors être [activée au niveau de l’environnement.](#enabling)
+1. Pour être utilisée, l’option de mise en réseau avancée doit ensuite être [activée au niveau de l’environnement.](#enabling)
 
 Les deux étapes peuvent être effectuées à l’aide de l’interface utilisateur de Cloud Manager ou de l’API Cloud Manager.
 
@@ -212,7 +212,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## Adresse IP Egress dédiée {#dedicated-egress-ip-address}
 
-Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration aux fournisseurs SaaS (comme un fournisseur de solutions de gestion de la relation client) ou d’autres intégrations en dehors d’AEM as a Cloud Service qui offrent une liste d’adresses IP autorisées. En ajoutant l’adresse IP dédiée à la liste autorisée, elle garantit que seul le trafic provenant de votre AEM Cloud Service est autorisé à s’écouler vers le service externe. Cela s’ajoute au trafic provenant de toute autre adresse IP autorisée.
+Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration aux fournisseurs SaaS (comme un fournisseur de solutions de gestion de la relation client) ou d’autres intégrations en dehors d’AEM as a Cloud Service qui offrent une liste d’adresses IP autorisées. L’ajout de l’adresse IP dédiée à la liste autorisée garantit que seul le trafic provenant de votre instance AEM as a Cloud Service est autorisé à circuler dans le service externe. Cela s’ajoute au trafic provenant de toute autre adresse IP autorisée.
 
 La même adresse IP dédiée est appliquée à tous les programmes dans votre organisation Adobe ainsi qu’à tous les environnements de chacun de vos programmes. Elle s’applique aux services de création et de publication.
 
@@ -425,7 +425,7 @@ La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge.
 1. Dans l’assistant **Ajouter une infrastructure réseau** qui démarre, sélectionnez **Réseau privé virtuel** et fournissez les informations nécessaires avant d’appuyer ou de cliquer sur **Continuer**.
 
    * **Région** : il s’agit de la région dans laquelle l’infrastructure doit être créée.
-   * **Emplacement de l’adresse** - L’espace d’adresse ne peut être que d’un /26 CIDR (64 adresses IP) ou d’une plage d’adresses IP plus grande dans votre propre espace.
+   * **Espace d’adresses** : l’espace d’adresse ne peut être qu’un /26 CIDR (64 adresses IP) ou une plage d’adresses IP plus grande dans l’espace client.
       * Cette valeur ne peut pas être modifiée ultérieurement.
    * **Informations DNS** : il s’agit d’une liste de résolveurs DNS distants.
       * Appuyez sur `Enter` après avoir saisi une adresse de serveur DNS pour en ajouter une autre.
@@ -462,7 +462,7 @@ Un nouvel enregistrement s’affiche sous l’en-tête **Infrastructure réseau*
 
 ### Configuration de l’API {#configuring-vpn-api}
 
-Une fois par programme, le POST `/program/<programId>/networkInfrastructures` Le point de terminaison est appelé, transmettant un payload d’informations de configuration, notamment : la valeur de **vpn** pour le `kind` paramètre, région, espace d’adresse (liste des CIDR - notez que cela ne peut pas être modifié plus tard), les résolveurs DNS (pour résoudre les noms dans votre réseau) et les informations de connexion VPN telles que la configuration de la passerelle, la clé VPN partagée et la politique de sécurité IP. Le point d’entrée répond avec l’`network_id` et d’autres informations, y compris le statut.
+Une fois par programme, le point d’entrée `/program/<programId>/networkInfrastructures` POST est appelé, transmettant une payload d’informations de configuration, notamment : la valeur de **vpn** pour le paramètre `kind`, la zone géographique, l’emplacement d’adresse (liste des CIDR ; notez que cela ne pourra pas être modifié ultérieurement), les résolveurs DNS (pour résoudre les noms dans votre réseau) et les informations de connexion VPN telles que la configuration de la passerelle, la clé VPN partagée et la politique de sécurité des adresses IP. Le point d’entrée répond avec l’`network_id` et d’autres informations, y compris le statut.
 
 Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau prend généralement entre 45 et 60 minutes. La méthode GET de l’API peut être appelée pour renvoyer le statut actuel, qui finira par passer de `creating` à `ready`. Consultez la documentation de l’API pour connaître tous les statuts.
 
@@ -582,12 +582,12 @@ Le diagramme ci-dessous offre une représentation visuelle d’un ensemble de do
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>S/O</td>
-    <td>L’adresse IP de la passerelle VPN côté AEM. Votre équipe d’ingénieurs réseau peut l’utiliser pour autoriser uniquement les connexions VPN à votre passerelle VPN à partir d’une adresse IP spécifique. </td>
+    <td>L’adresse IP de la passerelle VPN côté AEM. Votre équipe d’ingénierie réseau peut l’utiliser pour autoriser uniquement les connexions VPN à votre passerelle VPN à partir d’une adresse IP spécifique. </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>L’adresse IP du trafic provenant du côté AEM du VPN vers votre côté. Cela peut être placé sur la liste autorisée dans votre configuration pour vous assurer que les connexions ne peuvent être établies qu’à partir d’AEM.</td>
-    <td>Si vous souhaitez autoriser l’accès VPN à AEM, vous devez configurer les entrées DNS CNAME pour mapper votre domaine personnalisé et/ou <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> et/ou <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> à cela.</td>
+    <td>L’adresse IP du trafic provenant du côté AEM du VPN vers vous. Elle peut être placée dans la liste autorisée de votre configuration pour garantir que les connexions ne peuvent être établies qu’à partir d’AEM.</td>
+    <td>Pour autoriser l’accès VPN à AEM, vous devez configurer les entrées DNS CNAME pour mapper votre domaine personnalisé et/ou <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> et/ou <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> à celui-ci.</td>
   </tr>
 </tbody>
 </table>
@@ -616,7 +616,7 @@ Lorsque vous activez une configuration de mise en réseau avancée pour un envir
 * **Transfert de port** : les règles de transfert de port doivent être déclarées pour les ports de destination autres que le port 80/443, mais uniquement si vous n’utilisez pas le protocole http ou https.
    * Les règles de transfert de port sont définies en spécifiant l’ensemble des hôtes de destination (noms ou adresses IP et ports).
    * La connexion cliente utilisant le port 80/443 via http/https doit toujours utiliser les paramètres proxy dans leur connexion pour que les propriétés de la mise en réseau avancée soient appliquées à la connexion.
-   * Pour chaque hôte de destination, vous devez mapper le port de destination prévu à un port entre 30 000 et 30 999.
+   * Pour chaque hôte de destination, vous devez mapper le port de destination prévu à un port entre 30 000 et 30 999.
    * Les règles de transfert de port sont disponibles pour tous les types de mise en réseau avancée.
 
 * **Hôtes non proxy** : les hôtes non proxy vous permettent de déclarer un ensemble d’hôtes qui doivent passer par une plage d’adresses IP partagées plutôt que par l’adresse IP dédiée.
@@ -648,7 +648,7 @@ Lorsque vous activez une configuration de mise en réseau avancée pour un envir
 
    ![Ajout d’hôtes non-proxy](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. Sur le **Port en avant** , vous pouvez éventuellement définir des règles de transfert de port pour les ports de destination autres que le port 80/443 si vous n’utilisez pas le protocole HTTP ou HTTPS. Fournissez un **Nom**, une **Origine du port**, et une **Destination du port** et appuyez ou cliquez sur **Ajouter**.
+1. Sur l’onglet **Transferts de port**, vous pouvez éventuellement définir des règles de transfert de port pour les ports de destination autres que le port 80/443 si vous n’utilisez pas le protocole HTTP ou HTTPS. Fournissez un **Nom**, une **Origine du port**, et une **Destination du port** et appuyez ou cliquez sur **Ajouter**.
 
    * La règle est ajoutée à la liste des règles de l’onglet.
    * Répétez cette étape pour ajouter plusieurs règles.
