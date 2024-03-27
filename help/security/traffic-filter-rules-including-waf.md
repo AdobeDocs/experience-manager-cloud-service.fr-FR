@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
 workflow-type: tm+mt
 source-wordcount: '3669'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Les règles de filtre de trafic peuvent être déployées par le biais de pipeli
 [Suivez un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) pour développer rapidement une expertise concrète sur cette fonctionnalité.
 
 >[!NOTE]
->Vous souhaitez utiliser d’autres options pour configurer le trafic sur le réseau de diffusion de contenu, notamment modifier la requête/réponse, déclarer des redirections et établir un proxy vers une origine non AEM ? [Découvrez comment et essayez](/help/implementing/dispatcher/cdn-configuring-traffic.md) en rejoignant le programme des premiers adopteurs.
+>Vous souhaitez utiliser d’autres options pour configurer le trafic sur le réseau CDN, notamment modifier la requête/réponse, déclarer des redirections et établir un proxy vers une origine non AEM ? [Découvrez comment et essayez](/help/implementing/dispatcher/cdn-configuring-traffic.md) en rejoignant le programme d’adoption précoce.
 
 
 ## Organisation de cet article {#how-organized}
@@ -238,9 +238,9 @@ Les actions sont classées par ordre de priorité en fonction de leurs types dan
 
 | **Nom** | **Propriétés autorisées** | **Signification** |
 |---|---|---|
-| **autoriser** | `wafFlags` (facultatif), `alert` (facultatif, pas encore publié) | Si wafFlags n’est pas présent, arrête le traitement des règles et passe à la diffusion de la réponse. Si wafFlags est présent, il désactive les protections WAF spécifiées et poursuit le traitement des règles plus poussé. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans une fenêtre de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
-| **block** | `status, wafFlags` (facultatif et mutuellement exclusif), `alert` (facultatif, pas encore publié) | Si wafFlags n’est pas présent, renvoie une erreur HTTP en contournant toutes les autres propriétés, le code d’erreur est défini par la propriété de statut ou sur la valeur par défaut 406. Si wafFlags est présent, il active les protections WAF spécifiées et poursuit le traitement des règles plus poussé. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans une fenêtre de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
-| **log** | `wafFlags` (facultatif), `alert` (facultatif, pas encore publié) | Consigne le fait que la règle a été déclenchée, sinon n’affecte pas le traitement. wafFlags n’a aucun effet. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans une fenêtre de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
+| **autoriser** | `wafFlags` (facultatif), `alert` (facultatif, pas encore publié) | Si wafFlags n’est pas présent, arrête le traitement des règles et passe à la diffusion de la réponse. Si wafFlags est présent, désactive les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir la section [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
+| **bloquer** | `status, wafFlags` (facultatif et mutuellement exclusif), `alert` (facultatif, pas encore publié) | Si wafFlags n’est pas présent, renvoie une erreur HTTP en contournant toutes les autres propriétés, le code d’erreur est défini par la propriété de statut ou sur la valeur par défaut 406. Si wafFlags est présent, active les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir la section [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
+| **consigner** | `wafFlags` (facultatif), `alert` (facultatif, pas encore publié) | Consigne le fait que la règle a été déclenchée, sinon n’affecte pas le traitement. wafFlags n’a aucun effet. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir la section [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
 
 ### Liste des indicateurs WAF {#waf-flags-list}
 
@@ -290,7 +290,7 @@ Voici quelques exemples de règles. Voir la [section de limite de débit](#rules
 
 **Exemple 1**
 
-Cette règle bloque les requêtes provenant de **IP 192.168.1.1**:
+Cette règle bloque les requêtes provenant de l’**adresse IP 192.168.1.1** :
 
 ```
 kind: "CDN"
@@ -429,7 +429,7 @@ Les limites de débit sont calculées par POP de réseau CDN. Supposons, par exe
 
 **Exemple 1**
 
-Cette règle bloque un client pendant 5 m lorsqu’il dépasse une moyenne de 60 req/s (par CDN POP) au cours des 10 dernières secondes :
+Cette règle bloque un client pendant 5 minutes lorsqu’il dépasse un moyenne de 60 requêtes/s (par POP de réseau CDN) au cours des 10 dernières secondes :
 
 ```
 kind: "CDN"
@@ -454,7 +454,7 @@ data:
 
 **Exemple 2**
 
-Bloquer les requêtes sur le chemin /critique/resource pendant 60 s lorsqu’elles dépassent une moyenne de 100 req/s (par POP CDN) dans les 60 dernières secondes :
+Cette règle bloque les requêtes pendant 60 secondes sur le chemin d’accès /critical/resource lorsqu’il dépasse une moyenne de 100 requêtes/s (par POP de réseau CDN) au cours des 60 dernières secondes :
 
 ```
 kind: "CDN"
@@ -475,14 +475,14 @@ data:
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est pas encore disponible. Pour obtenir un accès par le biais du programme d’adoption précoce, envoyez un courrier électronique à l’adresse **aemcs-waf-adopter@adobe.com**.
+>Cette fonctionnalité n’est pas encore disponible. Pour obtenir un accès par le biais du programme d’adoption précoce, envoyez un e-mail à **aemcs-waf-adopter@adobe.com**.
 
-Une règle peut être configurée pour envoyer une notification du Centre d’actions si elle est déclenchée 10 fois dans une fenêtre de 5 minutes, vous alertant ainsi lorsque certains schémas de trafic se produisent afin que vous puissiez prendre les mesures nécessaires. En savoir plus sur [Centre d’actions](/help/operations/actions-center.md), notamment comment configurer les profils de notification requis pour recevoir des emails.
+Une règle peut être configurée pour envoyer une notification du Centre d’actions si elle est déclenchée 10 fois dans un intervalle de 5 minutes, vous alertant ainsi lorsque certains schémas de trafic se produisent afin que vous puissiez prendre les mesures nécessaires. En savoir plus sur le [Centre d’actions](/help/operations/actions-center.md), notamment comment configurer les profils de notification requis pour recevoir des e-mails.
 
-![Notification du centre d’actions](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+![Notification du Centre d’actions](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-La propriété alert (précédée du préfixe *expérimental* puisque la fonctionnalité n’est pas encore publiée) peut être appliquée au noeud action pour tous les types d’action (autoriser, bloquer, consigner).
+La propriété alerte (assortie du préfixe *expérimental* puisque la fonctionnalité n’est pas encore publiée), peut être appliquée au nœud d’action pour tous les types d’action (autoriser, bloquer, consigner).
 
 ```
 kind: "CDN"

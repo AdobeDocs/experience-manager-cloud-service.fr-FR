@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 47e85190c2aacfb4429408ce159fecb9b0646569
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 >
 >À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes, telles que 2021 ou 2022.
 >
->Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
+>Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Voir [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) pour plus d’informations sur les mises à jour de la documentation qui ne sont pas directement liées à une version.
+>Voir [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) pour plus d’informations sur les mises à jour de la documentation qui ne sont pas directement liées à une version.
 
 ## Date de publication {#release-date}
 
@@ -109,14 +109,14 @@ La clientèle Dynatrace peut surveiller son utilisation d’AEM. [Découvrez com
 
 Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prennent désormais en charge le code en front-end basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les utilisateurs et utilisatrices bénéficiant de l’adoption précoce. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **aemcs-rde-support@adobe.com** pour essayer et fournir des commentaires.
 
-### Configuration du réseau de diffusion de contenu Programme d’adoption précoce {#cdn-config-early-adopter}
+### Programme d’adoption précoce pour la configuration du réseau CDN {#cdn-config-early-adopter}
 
-Outre la version récemment publiée [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), qui inclut les règles WAF (Web Application Firewall) concédables, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer. [autres types de configuration CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Rejoindre le programme des premiers adopteurs par courrier électronique **aemcs-cdn-config-adopter@adobe.com** pour accéder à :
-* 301/302 redirections côté client
-* proxy des requêtes en périphérie vers des origines arbitraires
-* Conversion d’URL
-* définition ou modification des en-têtes de requête ou de réponse
-* pages d’erreur personnalisées lorsque le réseau de diffusion de contenu ne peut pas atteindre AEM
+Outre les [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) récemment publiées qui incluent les règles WAF (Web Application Firewall) sous licence optionnelle, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer d’[autres types de configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Rejoignez le programme d’adoption précoce en envoyant un e-mail à l’adresse **aemcs-cdn-config-adopter@adobe.com** pour accéder aux éléments suivants :
+* Redirections côté client 301/302
+* Établier un proxy des requêtes en périphérie vers des origines arbitraires
+* Transformations d’URL
+* Définir ou modifier des en-têtes de requête ou de réponse
+* Pages d’erreur personnalisées lorsque le réseau CDN ne peut pas atteindre AEM.
 
 ## Cloud Manager {#cloud-manager}
 
