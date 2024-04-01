@@ -1,14 +1,14 @@
 ---
 title: Publication de ressources, de dossiers et de collections sur Brand Portal
 description: Publiez des ressources, des dossiers et des collections sur Brand Portal.
-contentOwner: Vishabh Gupta
+contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
+source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 92%
+source-wordcount: '1280'
+ht-degree: 90%
 
 ---
 
@@ -75,7 +75,9 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 
    Sélectionnez **[!UICONTROL Plus tard]** dans **[!UICONTROL Planification]**.
 
-   ![publishlaterbp-1](assets/publishlaterbp-1.png)
+   <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
+
+   ![publier ultérieurement](assets/publish-later.png)
 
 1. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Cliquez sur **[!UICONTROL Suivant]**.
 
@@ -83,22 +85,20 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 
 1. Spécifiez un **[!UICONTROL Titre de workflow]** sous **[!UICONTROL Processus]**. Cliquez sur **[!UICONTROL Publier ultérieurement]**.
 
-   ![publishworkflow](assets/publishworkflow.png)
+   <!--![publishworkflow](assets/publishworkflow.png)-->
 
-Connectez-vous à l’interface Brand Portal pour afficher les ressources publiées (selon la date ou l’heure planifiée).
-
-![bp_landingpage](assets/bp_landingpage.png)
+   ![workflow de publication](assets/publish-workflow.png)
 
 >[!NOTE]
 >
 > * Les utilisateurs existants du groupe DAM-Users ont un accès en lecture sur le chemin &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
->* Les nouveaux utilisateurs (ou les utilisateurs non-administrateurs) ont besoin des droits suivants pour publier sur Brand Portal :
-> Chemins d’accès:
-> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
->/libs : jcr:read
->/conf : jcr:read
->/content : jcr:read, crx:replicate
->/content/dam/ : jcr:read,modify, crx:replicate
+> * Les nouveaux utilisateurs (ou les utilisateurs non-administrateurs) ont besoin des droits suivants pour publier sur Brand Portal :
+> Chemins :
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal}
 
@@ -131,8 +131,7 @@ Vous pouvez publier ou dépublier des dossiers de ressources immédiatement ou e
    Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir le dossier publié.
 
 1. **Publication ultérieure de dossiers**
-
-   Pour planifier la publication des dossiers de ressources à une date ou une heure ultérieure :
+Pour planifier la publication des dossiers de ressources à une date ou une heure ultérieure :
 
    1. Sélectionnez les dossiers dont vous souhaitez planifier la publication, puis cliquez sur **[!UICONTROL Gérer la publication]** dans la barre d’outils située en haut.
    1. Dans **[!UICONTROL Action]**, sélectionnez **[!UICONTROL Publier sur Brand Portal]**.
@@ -141,13 +140,29 @@ Vous pouvez publier ou dépublier des dossiers de ressources immédiatement ou e
 
    1. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Cliquez sur **[!UICONTROL Suivant]**.
 
-      ![publishlaterbp](assets/publishlaterbp.png)
+      <!--![publishlaterbp](assets/publishlaterbp.png)-->
+
+   ![publier un dossier ultérieur ;](assets/publish-later-folder.png)
 
    1. Confirmez votre sélection dans **[!UICONTROL Portée]**. Cliquez sur **[!UICONTROL Suivant]**.
 
    1. Spécifiez un titre de workflow sous **[!UICONTROL Processus]**. Cliquez sur **[!UICONTROL Publier ultérieurement]**.
 
-      ![manageschedulepub](assets/manageschedulepub.png)
+      <!--![manageschedulepub](assets/manageschedulepub.png)-->
+
+   ![workflow de publication](assets/publish-workflow.png)
+
+### Afficher le fichier ou le dossier publié dans Brand Portal {#view-published-file-folder}
+
+1. Connectez-vous à l’interface Brand Portal pour afficher les ressources publiées (selon la date ou l’heure planifiée).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. Passer en mode Liste ![Mode Liste](assets/list-view.svg) pour afficher l’état de publication actuel de la ressource.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![état du rapport généré](assets/report-status.JPG)
 
 ### Dépublication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
 
