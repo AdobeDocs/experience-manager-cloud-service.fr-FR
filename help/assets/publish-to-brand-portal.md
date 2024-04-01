@@ -5,7 +5,7 @@ contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
+source-git-commit: 9e09dc7a5226a2b8da7c796a8a8c4480b99eeb3b
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 90%
@@ -16,7 +16,7 @@ ht-degree: 90%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | Cet article |
 
 En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources, des dossiers et des collections sur l’instance AEM Assets Brand Portal. Vous pouvez également planifier le workflow de publication d’une ressource ou d’un dossier à une date ou une heure ultérieure. Une fois ces éléments publiés, les utilisateurs de Brand Portal peuvent accéder aux ressources, aux dossiers et aux collections et les distribuer à d’autres utilisateurs.
