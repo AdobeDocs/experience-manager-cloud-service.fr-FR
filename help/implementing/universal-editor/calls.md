@@ -2,7 +2,7 @@
 title: Appels de l’éditeur universel
 description: Découvrez les différents types d’appels effectués sur votre application par l’éditeur universel pour vous aider lors du débogage.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -13,8 +13,6 @@ ht-degree: 2%
 # Appels de l’éditeur universel {#calls}
 
 Découvrez les différents types d’appels effectués sur votre application par l’éditeur universel pour vous aider lors du débogage.
-
-{{universal-editor-status}}
 
 ## Vue d’ensemble {#overview}
 

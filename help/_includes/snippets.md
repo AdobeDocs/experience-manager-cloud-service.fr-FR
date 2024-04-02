@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 80%
+source-wordcount: '340'
+ht-degree: 100%
 
 ---
 # Fragments de code {#snippets}
@@ -14,12 +14,6 @@ ht-degree: 80%
 ## Création Edge Delivery Services {#edge-delivery-authoring}
 
 [!BADGE Pour créer du contenu AEM pour Edge Delivery Services, cliquez ici.]{type=Positive url="/help/edge/overview.md" tooltip="Création de contenu AEM pour Edge Delivery Services"}
-
-## Statut de l’éditeur universel {#universal-editor-status}
-
->[!NOTE]
->
->L’éditeur universel est toujours en cours de développement et ses fonctionnalités peuvent faire l’objet de modifications et différer de ce qui est présenté dans ce document.
 
 ## Voir également {#see-also}
 
@@ -55,7 +49,7 @@ ht-degree: 80%
 * [Envoyer à Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Envoyer vers Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connecter un formulaire adaptatif à Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## Création AEM avec accès anticipé à Edge Delivery Services {#aem-authoring-edge-early-access}
 
@@ -63,11 +57,11 @@ ht-degree: 80%
 
 ## Voir également {#see-more-forms-eds}
 
-* [Prise en main des Edge Delivery Services AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Création d’un formulaire à l’aide de feuilles de calcul Google ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configurez vos feuilles de calcul Google Sheets ou fichiers Excel Microsoft pour commencer à accepter les données &#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [Prise en main d’AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
+* [Créer un formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
 * [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
-* [Personnalisation de l’aspect de vos formulaires &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [Ajout de sections répétables à un &#x200B; de formulaire](/help/edge/docs/forms/repeatable-forms.md)
-* [Afficher un message de remerciement personnalisé après l’envoi du formulaire &#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
+* [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
+* [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
 * [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)

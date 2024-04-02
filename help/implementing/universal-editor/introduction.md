@@ -2,10 +2,10 @@
 title: Présentation de l’éditeur universel
 description: Découvrez comment l’éditeur universel permet la modification WYSIWYG (What-you-get) de n’importe quelle expérience headless et headful. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: b6548d39ce02006d91f1953c878e08a1c0903563
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 81%
+source-wordcount: '868'
+ht-degree: 80%
 
 ---
 
@@ -13,8 +13,6 @@ ht-degree: 81%
 # Présentation de l’éditeur universel {#introduction}
 
 Découvrez comment l’éditeur universel permet la modification WYSIWYG (What-you-get) de n’importe quelle expérience headless et headful. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
-
-{{universal-editor-status}}
 
 ## Contexte {#background}
 
@@ -79,12 +77,6 @@ Un professionnel ou une professionnelle du marketing souhaite créer du contenu 
 Un professionnel ou une professionnelle du marketing souhaite créer du contenu adapté à la mise en page d’un contexte donné pour proposer une expérience exceptionnelle.
 
 * La tâche sous-jacente à accomplir est de communiquer de manière convaincante avec les lecteurs.
-
-## Feuille de route {#road-map}
-
-Il est important de noter que l’éditeur universel est un travail en cours et que certaines des fonctionnalités présentées dans ce document ne sont encore qu’une vision de l’éditeur final et ne sont pas nécessairement représentatives de ses capacités actuelles.
-
-Contactez Adobe pour plus d’informations sur les prochaines fonctionnalités prévues pour l’éditeur universel.
 
 ## Ressources supplémentaires {#additional-resources}
 

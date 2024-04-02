@@ -1,20 +1,18 @@
 ---
-title: Définition des modèles, champs et types de composants
+title: Définitions de modèles, champs et types de composants
 description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
 
-# Définition des modèles, champs et types de composants {#field-types}
+# Définitions de modèles, champs et types de composants {#field-types}
 
 Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
-
-{{universal-editor-status}}
 
 ## Vue d’ensemble {#overview}
 
