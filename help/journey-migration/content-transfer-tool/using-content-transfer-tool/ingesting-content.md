@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
 source-wordcount: '2752'
-ht-degree: 37%
+ht-degree: 42%
 
 ---
 
@@ -153,13 +153,13 @@ Si &quot;AEM mises à jour de version&quot; est actif (c’est-à-dire que les m
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Échec de l’ingestion de complément en raison d’une violation de contrainte d’unicité {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
+### Échec de l’ingestion de complément dû à une violation de contrainte d’unicité {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
->title="Violation des contraintes d’unicité"
->abstract="Une cause courante de l’échec d’ingestion non effacé est un conflit dans les identifiants de noeud. Un seul des noeuds en conflit peut exister."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Ingestion de complément"
+>title="Violation de contrainte d’unicité"
+>abstract="Les conflits entre identifiants de nœud sont une cause courante de l’échec de l’ingestion hors balayage. Un seul des nœuds en conflit peut exister."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process?lang=fr" text="Ingestion de complément"
 
 Les conflits entre identifiants de nœud sont une cause courante de l’échec de l’[Ingestion complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
@@ -173,13 +173,13 @@ Chaque nœud d’AEM doit disposer d’un UUID unique. Cette erreur indique qu�
 
 Ce conflit doit être résolu manuellement. Une personne qui connait le contenu doit décider lequel des deux nœuds doit être supprimé, sans oublier tout autre contenu qui y fait référence. La solution peut nécessiter que l’extraction complémentaire soit effectuée à nouveau sans le nœud fautif.
 
-### Échec de l’ingestion de complément en raison de l’impossibilité de supprimer le noeud référencé {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
+### Échec de l’ingestion de complément dû à l’impossibilité de supprimer le nœud référencé {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
->title="Impossible de supprimer le noeud référencé"
->abstract="Une cause courante de l’échec d’ingestion non effacé est un conflit de version pour un noeud particulier sur l’instance de destination. Les versions du noeud doivent être corrigées."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Ingestion de complément"
+>title="Impossible de supprimer le nœud référencé"
+>abstract="Les conflits entre versions pour un nœud particulier sur l’instance de destination sont une cause courante de l’échec d’ingestion hors balayage. Les versions du nœud doivent être corrigées."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process?lang=fr" text="Ingestion de complément"
 
 Une autre cause commune d&#39;une [Ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) L’échec est un conflit de version pour un noeud particulier sur l’instance de destination. Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
@@ -191,12 +191,12 @@ La solution peut nécessiter que l’extraction de complément soit effectuée �
 
 Les bonnes pratiques indiquent que si une **Non effacé** l’ingestion doit être exécutée à l’aide d’un jeu de migration qui inclut des versions. Il est essentiel que le contenu de la destination soit modifié le moins possible jusqu’à ce que le parcours de migration soit terminé. Sinon, ces conflits peuvent se produire.
 
-### Échec de l’ingestion en raison de valeurs de propriété de noeud volumineuses {#ingestion-failure-due-to-large-node-property-values}
+### Échec de l’ingestion dû à des valeurs élevées de propriété de nœud {#ingestion-failure-due-to-large-node-property-values}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
->title="Propriété de noeud volumineux"
->abstract="Une cause courante de l’échec de l’ingestion est de dépasser la taille maximale des valeurs de propriété de noeud. Consultez la documentation, y compris celles relatives au rapport BPA, pour remédier à cette situation."
+>title="Propriété de nœud élevée"
+>abstract="Le dépassement de la taille maximale des valeurs de propriété de nœud est une cause courante de l’échec de l’ingestion. Consultez la documentation, y compris celle relative au rapport BPA, pour remédier à cette situation."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=fr" text="Conditions préalables à la migration"
 
 La valeur des propriétés de nœud stockées dans MongoDB ne doit pas dépasser 16 Mo. Si une valeur de noeud dépasse la taille prise en charge, l’ingestion échoue et le journal contient une `BSONObjectTooLarge` et indiquez le noeud qui a dépassé le maximum. Il s’agit d’une restriction MongoDB.
@@ -208,7 +208,7 @@ Voir `Node property value in MongoDB` remarque dans [Conditions préalables pour
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_rescinded"
 >title="Ingestion annulée"
->abstract="L’extraction en attente d’ingestion ne s’est pas terminée correctement. L’ingestion a été annulée car elle n’a pas pu être exécutée."
+>abstract="L’extraction que l’ingestion attendait ne s’est pas terminée correctement. L’ingestion a été annulée, car elle n’a pas pu être exécutée."
 
 Une ingestion créée avec une extraction en cours d’exécution comme jeu de migration source attend patiemment jusqu’à ce que cette extraction réussisse, et démarre normalement à ce moment. Si l’extraction échoue ou est arrêtée, l’ingestion et sa tâche d’indexation ne démarrent pas, mais sont annulées. Dans ce cas, vérifiez l’extraction pour déterminer pourquoi elle a échoué, corrigez le problème et recommencez à extraire. Une fois l’extraction fixe en cours d’exécution, une nouvelle ingestion peut être planifiée.
 
