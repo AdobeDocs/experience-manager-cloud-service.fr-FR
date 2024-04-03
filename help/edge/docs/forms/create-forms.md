@@ -1,37 +1,37 @@
 ---
-title: Prise en main d’AEM Forms Edge Delivery Service. Créez un formulaire.
-description: Concevez des formes parfaites, vite ! ⚡ Création basée sur des documents de diffusion AEM Forms Edge = vitesse époustouflante et formulaires compatibles avec l’optimisation pour les moteurs de recherche et les utilisateurs plus heureux.
+title: Prise en main des formulaires AEM Forms Edge Delivery Services. Créez un formulaire.
+description: Créez rapidement des formulaires parfaits. ⚡ Création basée sur des documents de formulaires AEM Forms Edge Delivery = vitesse époustouflante et formulaires compatibles avec l’optimisation du moteur de recherche pour des utilisateurs et utilisatrices plus heureux.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 1%
+ht-degree: 99%
 
 ---
 
-# Création d’un formulaire à l’aide d’un bloc Forms adaptatif
+# Créer un formulaire à l’aide du bloc de formulaires adaptatifs
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
-AEM Forms Edge Delivery fournit un bloc, appelé Bloc Forms adaptatif, qui vous permet de créer facilement des formulaires pour capturer et stocker les données capturées. Vous pouvez [créer un projet AEM préconfiguré avec le bloc Forms adaptatif](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouter le bloc Forms adaptatif à un projet AEM existant ;](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms Edge Delivery fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous permet de créer facilement des formulaires pour capturer et stocker les données capturées. Vous pouvez [créer un projet AEM préconfiguré avec le bloc de formulaires adaptatifs](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouter le bloc de formulaires adaptatifs à un projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-Ces formulaires envoient directement des données à un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser un écosystème dynamique et des API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou lancer un processus d’entreprise existant.
+Ces formulaires envoient directement les données vers un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser l’écosystème dynamique et les API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou pour démarrer un workflow d’entreprise existant.
 
-![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![Écosystème de création basé sur des documents](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## Conditions préalables
 
-Avant de commencer, vérifiez que vous avez suivi les étapes suivantes :
+Avant de commencer, vérifiez que vous avez déjà effectué les étapes suivantes :
 
-* Configurez une [AEM projet à l’aide du standard AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [Ajout d’un bloc Forms adaptatif à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) et cloner le référentiel GitHub correspondant sur votre ordinateur local.
-Dans ce document, le dossier local de votre projet Edge Delivery Services (EDS) est désigné sous la forme `[EDS Project repository]`.
-* Assurez-vous que vous avez accès aux feuilles de calcul Google Sheets ou à Microsoft SharePoint. Pour configurer Microsoft SharePoint en tant que source de contenu, voir [Utilisation de SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
+* Vous avez configuré un [projet AEM à l’aide du modèle standard AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouté un bloc de formulaires adaptatifs à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) et cloné le référentiel GitHub correspondant sur votre ordinateur local.
+Dans ce document, le dossier local de votre projet Edge Delivery Services (EDS) est désigné par `[EDS Project repository]`.
+* Assurez-vous d’avoir accès à Google Sheets ou à Microsoft SharePoint. Pour configurer Microsoft SharePoint en tant que source de contenu, voir [Utilisation de SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
-## Création d’un formulaire
+## Créer un formulaire
 
 <!-- 
 
@@ -64,41 +64,41 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 -->
 
-+++ Étape 1 : créez un formulaire à l’aide de Microsoft Excel ou de la feuille de calcul Google.
++++ Étape 1 : créez un formulaire à l’aide de Microsoft Excel ou Google Sheets.
 
-Au lieu de naviguer dans des processus complexes, il est possible d’obtenir facilement un formulaire à l’aide d’une feuille de calcul. Vous pouvez définir les lignes et les colonnes qui constitueront la structure du formulaire. Chaque ligne représente un individu [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components) et les en-têtes de colonne définissent les [propriétés de champ](/help/edge/docs/forms/form-components.md#components-properties).
+Plutôt que de recourir à des processus complexes, il est possible de créer facilement un formulaire à l’aide d’une feuille de calcul. Vous pouvez définir les lignes et les colonnes qui constitueront la structure du formulaire. Chaque ligne représente un [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components) individuel et les en-têtes de colonne définissent les [propriétés du champ](/help/edge/docs/forms/form-components.md#components-properties) correspondantes.
 
-Prenons l’exemple de la feuille de calcul suivante, dans laquelle les lignes encadrent les champs d’une `enquiry` Les en-têtes de formulaire et de colonne définissent leurs propriétés :
+Prenons l’exemple de la feuille de calcul suivante, dans laquelle les lignes correspondent aux champs d’un formulaire `enquiry` et les en-têtes de colonne définissent leurs propriétés :
 
-![Feuille de calcul de requête](/help/edge/assets/enquiry-form-spreadsheet.png)
+![Feuille de calcul de demande](/help/edge/assets/enquiry-form-spreadsheet.png)
 
-Pour poursuivre la création du formulaire :
+Pour poursuivre la création du formulaire :
 
-1. Accédez à votre dossier de projet Edge Delivery AEM sur Microsoft SharePoint ou Google Drive.
+1. Accédez au dossier de votre projet AEM Edge Delivery sur Microsoft SharePoint ou Google Drive.
 
-1. Créez un classeur Excel Microsoft ou une feuille de calcul Google n’importe où dans votre répertoire de projet Edge Delivery AEM. Par exemple, créez une feuille de calcul nommée `enquiry` sur le répertoire du projet Edge Delivery d’AEM sur Google Drive.
+1. Créez un classeur Microsoft Excel ou une feuille Google Sheets n’importe où dans le répertoire de votre projet AEM Edge Delivery. Par exemple, créez une feuille de calcul nommée `enquiry` dans le répertoire du projet AEM Edge Delivery sur Google Drive.
 
-   ![Exemple de contenu sur Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   ![Exemple de contenu sur Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Assurez-vous que la feuille est partagée avec l’utilisateur AEM approprié (par exemple `helix@adobe.com`) [selon les configurations spécifiées pour votre projet.](https://www.aem.live/docs/setup-customer-SharePoint). Octroyez à l’utilisateur l’autorisation de modification de la feuille.
+1. Assurez-vous que la feuille est partagée avec la personne appropriée utilisant AEM (par exemple, `helix@adobe.com`) [conformément aux configurations spécifiées pour votre projet](https://www.aem.live/docs/setup-customer-sharepoint). Octroyez à l’utilisateur ou l’utilisatrice l’autorisation de modification de la feuille.
 
-1. Ouvrez la feuille de calcul créée et renommez la feuille par défaut &quot;shared-default&quot;.
+1. Ouvrez la feuille de calcul créée et renommez la feuille par défaut en « shared-default ».
 
-   ![renommer la feuille par défaut en &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
+   ![Renommage de la feuille par défaut en « shared-default »](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Pour ajouter les champs du formulaire, insérez les lignes et les en-têtes de colonne dans la feuille &#39;shared-default&#39;. Chaque ligne doit représenter une [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components), avec des en-têtes de colonne définissant le champ correspondant [properties](/help/edge/docs/forms/form-components.md#components-properties).
+1. Pour ajouter les champs du formulaire, insérez les lignes et les en-têtes de colonne dans la feuille « shared-default ». Chaque ligne doit représenter un [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components), avec des en-têtes de colonne définissant les [propriétés](/help/edge/docs/forms/form-components.md#components-properties) du champ correspondantes.
 
 
-   Pour un démarrage rapide, pensez à copier le contenu de la variable [Feuille de calcul de requête](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) dans votre feuille de calcul. Après avoir copié le contenu, enregistrez votre feuille de calcul.
+   Pour un démarrage rapide, pensez à copier le contenu de la [feuille de calcul de demande](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) dans votre feuille de calcul. Après avoir copié le contenu, enregistrez votre feuille de calcul.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 
-1. Utilisation [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser la feuille.
+1. Utilisez [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser la feuille.
 
-   ![Utilisez AEM Sidekick pour prévisualiser la feuille](/help/edge/assets/preview-form.png)
+   ![Utilisation d’AEM Sidekick pour prévisualiser la feuille](/help/edge/assets/preview-form.png)
 
-   Lors de la prévisualisation, les nouveaux onglets du navigateur affichent le contenu de la feuille au format JSON. Veillez à capturer l’URL d’aperçu, car elle est nécessaire pour le rendu du formulaire dans la section suivante. Le format d’URL se présente comme suit :
+   Lors de la prévisualisation, de nouveaux onglets de navigateur affichent le contenu de la feuille au format JSON. Veillez à noter l’URL d’aperçu, car elle sera nécessaire pour le rendu du formulaire dans la section suivante. Le format de l’URL se présente comme suit :
 
 
    ```JSON
@@ -107,21 +107,21 @@ Pour poursuivre la création du formulaire :
 
    * `<branch>` fait référence à la branche de votre référentiel GitHub.
    * `<repository>` indique votre référentiel GitHub.
-   * `<owner>` fait référence au nom d’utilisateur de votre compte GitHub qui héberge votre référentiel GitHub.
+   * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
-   Par exemple, si le référentiel de votre projet est nommé &quot;portal&quot;, il se trouve sous le compte &quot;wkndforms&quot; et que vous utilisez la branche &quot;main&quot;, l’URL ressemble à ce qui suit :
+   Par exemple, si le référentiel de votre projet est nommé « portal », qu’il se trouve dans le compte « wkndforms » et que vous utilisez la branche « main », l’URL ressemble à ceci :
 
    `https://main--portal--wkndforms.hlx.page/enquiry.json`
 
 
 +++
 
-+++ Étape 2 : prévisualisez le formulaire à l’aide de votre page Edge Delivery Services (EDS).
++++ Étape 2 : prévisualisez le formulaire à l’aide de votre page Edge Delivery Services (EDS).
 
 
-Jusqu’à présent, vous avez préparé la structure du formulaire. Maintenant, pour prévisualiser le formulaire :
+À ce stade, vous avez préparé la structure du formulaire. Maintenant, pour prévisualiser le formulaire :
 
-1. Ouvrez votre compte Microsoft SharePoint ou Google Drive et accédez au répertoire de votre projet Edge Delivery AEM.
+1. Ouvrez votre compte Microsoft SharePoint ou votre compte Google Drive et accédez au répertoire de votre projet AEM Edge Delivery.
 
 
 
@@ -129,38 +129,38 @@ Jusqu’à présent, vous avez préparé la structure du formulaire. Maintenant,
 
 1. Accédez à l’emplacement souhaité dans le document où vous avez l’intention d’ajouter le formulaire.
 
-1. Pour créer un bloc de formulaire afin de générer le formulaire. Choisissez Insertion > Tableau, puis créez un tableau d’une colonne et de deux rangées. Nommez le tableau &quot;Formulaire&quot; et collez l’URL d’aperçu dans la deuxième ligne. Assurez-vous que l’URL est formatée en tant que lien hypertexte et non en texte brut, comme illustré ci-dessous :
+1. Pour créer un bloc de formulaire afin d’afficher le formulaire. Sélectionnez Insérer > Tableau, puis créez un tableau à une colonne et deux lignes. Nommez le tableau « Form » (formulaire) et collez l’URL d’aperçu dans la deuxième ligne. Assurez-vous que l’URL se présente sous la forme d’un lien hypertexte et non de texte brut, comme illustré ci-dessous :
 
    | Formulaire |
    |---|
-   | [https://main—wefinance—wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
 
-   ![Ajout d’un bloc Forms adaptatif à une page web](/help/edge/assets/add-adaptive-forms-block.png)
+   ![Ajout d’un bloc Formulaires adaptatifs à votre page web](/help/edge/assets/add-adaptive-forms-block.png)
 
-   Ce bloc sert d’espace réservé où le formulaire est incorporé. Dans la deuxième ligne du bloc, ajoutez l’URL d’aperçu de votre `<form>.json` comme lien hypertexte.
+   Ce bloc sert d’espace réservé à l’emplacement où le formulaire est incorporé. Dans la deuxième ligne du bloc, ajoutez l’URL d’aperçu de votre fichier `<form>.json` sous la forme d’un lien hypertexte.
 
    >[!IMPORTANT]
    >
    >
-   > Assurez-vous que l’URL est formatée en tant que lien hypertexte plutôt que sous la forme de texte brut.
+   > Assurez-vous que l’URL est formatée en tant que lien hypertexte et non sous forme de texte brut.
 
 
-1. Utilisation [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser le document. La page affiche désormais le formulaire. Par exemple, voici le formulaire basé sur le [feuille de calcul d&#39;enquête](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Utilisez [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser le document. La page affiche désormais le formulaire. Par exemple, voici le formulaire basé sur la [feuille de calcul de demande](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) :
 
 
    [![Exemple de formulaire EDS](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
-   Maintenant, remplissez le formulaire et cliquez sur le bouton d’envoi. Vous rencontrez une erreur, semblable à la suivante, car la feuille de calcul n’est pas encore configurée pour accepter les données.
+   Remplissez maintenant le formulaire et cliquez sur le bouton d’envoi. Une erreur semblable à celle ci-dessous s’affiche, car la feuille de calcul n’est pas encore configurée pour accepter les données.
 
-   ![erreur lors de l’envoi du formulaire](/help/edge/assets/form-error.png)
+   ![Erreur lors de l’envoi du formulaire](/help/edge/assets/form-error.png)
 
 +++
 
 
 ## Étape suivante
 
-[Préparation de votre feuille de calcul](/help/edge/docs/forms/submit-forms.md) pour commencer à accepter les données lors de l’envoi du formulaire.
+[Préparez votre feuille de calcul](/help/edge/docs/forms/submit-forms.md) pour commencer à accepter les données lors de l’envoi du formulaire.
 
 
 ## Voir également
