@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f3192858ea6fcf87788fafe07aa8870211dbb637
+source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
 workflow-type: tm+mt
-source-wordcount: '4832'
+source-wordcount: '4844'
 ht-degree: 99%
 
 ---
@@ -641,6 +641,8 @@ ht-degree: 99%
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer et utiliser des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md)
             + [Ajouter des règles à un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components.md)
+            + [Ajout de versions, de commentaires et d’annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [Comparaison d’Adaptive Forms](/help/forms/compare-forms.md)
       + Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)
