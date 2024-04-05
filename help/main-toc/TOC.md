@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '4844'
+source-wordcount: '4842'
 ht-degree: 99%
 
 ---
@@ -803,7 +803,6 @@ ht-degree: 99%
    + Créer des applications Edge Delivery {#build}
       + [Prise en main - Tutoriel pour l’équipe de développement](/help/edge/developer/tutorial.md)
       + [Anatomie d’un projet](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [Collection de blocs](/help/edge/developer/block-collection.md)
       + [Feuilles de calcul](/help/edge/developer/spreadsheets.md)
       + [Formulaires](/help/edge/developer/forms.md)
       + [Indexation](/help/edge/developer/indexing.md)
@@ -930,7 +929,7 @@ ht-degree: 99%
          + [Principes de base de la création en découplage avec AEM](/help/journey-headless/author/basics.md)
          + [En savoir plus sur l’utilisation de références dans les fragments de contenu](/help/journey-headless/author/references.md)
          + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](/help/journey-headless/author/metadata-tagging.md)
-+ IA générique {#generative-ai}
++ IA générative {#generative-ai}
    + [Générer des variations](/help/generative-ai/generate-variations.md)
 + Implémenter {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
@@ -1179,3 +1178,9 @@ ht-degree: 99%
    + Accessibilité {#accessibility}
       + [AEM as a Cloud Service et directives d’accessibilité web](/help/compliance/accessibility/web-accessibility.md)
       + [Guide rapide relatif à WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
+
+
+<!--
+Temporarily remove:
+    + [Block Collection](/help/edge/developer/block-collection.md)
+-->

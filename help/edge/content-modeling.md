@@ -2,10 +2,10 @@
 title: Modéliser du contenu pour la création AEM avec des projets Edge Delivery Services
 description: Découvrez le fonctionnement de la modélisation de contenu pour la création AEM avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 81%
+source-wordcount: '2072'
+ht-degree: 99%
 
 ---
 
@@ -21,9 +21,9 @@ Les projets utilisant la création AEM avec Edge Delivery Services héritent 
 
 Avant de commencer à modéliser le contenu de votre projet, veillez à lire la documentation suivante.
 
-* [Prise en main – Tutoriel pour l’équipe de développement](/help/edge/developer/tutorial.md)
+* [Prise en main - Tutoriel pour l’équipe de développement](/help/edge/developer/tutorial.md)
 * [Balisage, sections, blocs et blocage automatique](/help/edge/developer/markup-sections-blocks.md)
-* [Collection de blocs](/help/edge/developer/block-collection.md)
+  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
 
 Il est essentiel de comprendre ces concepts afin de trouver un modèle de contenu convaincant qui fonctionne indépendamment des sources de contenu. Ce document fournit des détails sur les mécanismes mis en œuvre spécifiquement pour la création AEM.
 
@@ -111,17 +111,17 @@ Pour chaque bloc, l’équipe de développement :
 * doit définir le nom du bloc, qui sera rendu dans l’en-tête de tableau du bloc ;
    * Le nom du bloc est utilisé pour récupérer le style et le script appropriés pour décorer le bloc.
 * peut définir un [ID de modèle.](/help/implementing/universal-editor/field-types.md#model-structure) ;
-   * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour l’auteur dans le rail des propriétés.
+   * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour l’auteur ou l’autrice dans le rail des propriétés.
 * peut définir un [ID de filtre](/help/implementing/universal-editor/customizing.md#filtering-components).
-   * L’ID de filtre est une référence au filtre du composant, qui permet de modifier le comportement de création, par exemple en limitant les enfants pouvant être ajoutés au bloc ou à la section, ou les fonctionnalités d’éditeur de texte enrichi activées.
+   * L’ID de filtre est une référence au filtre du composant, qui permet de modifier le comportement de création, par exemple en limitant les enfants pouvant être ajoutés au bloc ou à la section, ou les fonctionnalités d’éditeur de texte enrichi qui sont activées.
 
-Toutes ces informations sont stockées dans AEM lorsqu’un bloc est ajouté à une page. Si le type de ressource ou le nom du bloc est manquant, le bloc ne s’affiche pas sur la page.
+Toutes ces informations sont stockées dans AEM lorsqu’un bloc est ajouté à une page. Si le type de ressource ou le nom du bloc est manquant, le bloc ne s’affiche pas sur la page.
 
 >[!WARNING]
 >
->Bien que cela soit possible, il n’est pas nécessaire ni recommandé de mettre en oeuvre des composants d’AEM personnalisés. Les composants pour Edge Delivery Services fournis par AEM sont suffisants et offrent certains rails de protection pour faciliter le développement.
+>Bien que cela soit possible, il n’est pas nécessaire ni recommandé d’implémenter des composants AEM personnalisés. Les composants pour Edge Delivery Services fournis par AEM sont suffisants et offrent certains rails de protection pour faciliter le développement.
 >
->Les composants fournis par AEM génèrent un balisage qui peut être utilisé par [helix-html2md](https://github.com/adobe/helix-html2md) lors de la publication sur des Edge Delivery Services et en [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) lors du chargement d’une page dans Universal Editor. Les balises constituent le contrat stable entre AEM et les autres parties du système et ne permettent pas les personnalisations. Pour cette raison, les projets ne doivent pas modifier les composants et ne doivent pas utiliser de composants personnalisés.
+>Les composants fournis par AEM sont accompagnés d’un balisage qui peut être utilisé par [helix-html2md](https://github.com/adobe/helix-html2md) lors de la publication sur Edge Delivery Services et par [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) lors du chargement d’une page dans l’éditeur universel. Le balisage constitue le contrat stable entre AEM et les autres parties du système et n’autorise pas les personnalisations. Pour cette raison, les projets ne doivent pas modifier les composants et ne doivent pas utiliser de composants personnalisés.
 
 ### Structure de bloc {#block-structure}
 
@@ -323,7 +323,7 @@ Dans l’exemple suivant, un bloc accepte une liste d’icônes liées en tant q
 
 Une fois la [mécanique de la structure de bloc expliquée](#block-structure), il est possible de créer un modèle de contenu qui mappe le contenu conservé dans AEM avec le niveau de diffusion, de manière biunivoque.
 
-Au début de chaque projet, il convient d’envisager attentivement le modèle de contenu de chaque bloc. Ceux-ci doivent être indépendants de la source de contenu et de l’expérience de création afin de permettre aux auteurs et autrices de les changer ou de les combiner, tout en réutilisant les implémentations et les styles de bloc. Vous trouverez plus de détails et de conseils généraux dans la section [Modèle de David (version 2).](https://www.aem.live/docs/davidsmodel) Plus précisément, la [collection de blocs](/help/edge/developer/block-collection.md) contient un vaste ensemble de modèles de contenu pour des cas d’utilisation spécifiques de modèles d’interface utilisateur courants.
+Au début de chaque projet, il convient d’envisager attentivement le modèle de contenu de chaque bloc. Ceux-ci doivent être indépendants de la source de contenu et de l’expérience de création afin de permettre aux auteurs et autrices de les changer ou de les combiner, tout en réutilisant les implémentations et les styles de bloc. Vous trouverez plus de détails et de conseils généraux dans la section [David&#39;s Model (prenez 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
 
 Pour la création AEM avec Edge Delivery Services, cela soulève la question de savoir comment servir un modèle de contenu sémantique convaincant lorsque les informations sont créées avec des formulaires composés de plusieurs champs au lieu de modifier le balisage sémantique dans un contexte tel que du texte enrichi.
 
@@ -351,7 +351,7 @@ Tout le reste est rendu en texte brut.
 
 #### Réduction du champ {#field-collapse}
 
-La réduction des champs est le mécanisme qui permet de combiner plusieurs valeurs de champ en un seul élément sémantique, selon une convention d’affectation de nom utilisant les suffixes. `Title`, `Type`, `MimeType`, `Alt`, et `Text` (toutes les valeurs sensibles à la casse). Toute propriété se terminant par l’un de ces suffixes ne sera pas considérée comme une valeur, mais comme un attribut d’une autre propriété.
+La réduction des champs est le mécanisme qui permet de combiner plusieurs valeurs de champ en un seul élément sémantique, selon une convention de nommage utilisant les suffixes `Title`, `Type`, `MimeType`, `Alt` et `Text` (toutes les valeurs étant sensibles à la casse). Toute propriété se terminant par l’un de ces suffixes ne sera pas considérée comme une valeur, mais comme un attribut d’une autre propriété.
 
 ##### Images {#image-collapse}
 
@@ -399,7 +399,7 @@ La réduction des champs est le mécanisme qui permet de combiner plusieurs vale
 
 >[!TAB Balisage]
 
-Pas de `linkType` ni `linkType=default`
+Pas de `linkType` ni de `linkType=default`
 
 ```html
 <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
@@ -462,9 +462,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 La [réduction des champs](#field-collapse) a pour but de combiner plusieurs propriétés en un seul élément sémantique. Quant au regroupement d’éléments, il consiste à concaténer plusieurs éléments sémantiques en une seule cellule. Cela se révèle particulièrement utile dans les cas d’utilisation où la personne chargée de la création doit être limitée en termes de type et de nombre d’éléments qu’il est possible de créer.
 
-Par exemple, un composant de teaser peut uniquement permettre à l’auteur de créer un sous-titre, un titre et une description de paragraphe unique, combinés avec un maximum de deux boutons d’appel à l’action. Le regroupement de ces éléments génère un balisage sémantique qui peut être mis en forme sans aucune autre action.
+Par exemple, un composant Teaser peut autoriser la personne chargée de la création à ne créer qu’un sous-titre, un titre et une description contenant un seul paragraphe, le tout combiné avec un maximum de deux boutons d’appel à l’action. Le regroupement de ces éléments génère un balisage sémantique qui peut être mis en forme sans aucune autre action.
 
-Le regroupement d’éléments utilise une convention d’affectation des noms, selon laquelle le nom du groupe est séparé de chaque propriété du groupe par un trait de soulignement. La réduction des champs des propriétés d’un groupe fonctionne comme décrit précédemment.
+Le regroupement d’éléments utilise une convention de nommage selon laquelle le nom du groupe est séparé de chaque propriété du groupe par un trait de soulignement. La réduction des propriétés d’un groupe fonctionne comme décrit précédemment.
 
 >[!BEGINTABS]
 
@@ -624,13 +624,13 @@ Assurez-vous également que la feuille de calcul est ajoutée à votre mappage d
 
 ### Propriétés de page {#page-properties}
 
-La plupart des propriétés de page par défaut disponibles dans AEM sont mappées aux métadonnées de page respectives dans un document. Cela inclut par exemple `title`, `description`, `robots`, `canonical url` ou `keywords`. Certaines propriétés spécifiques à AEM sont également disponibles :
+La plupart des propriétés de page par défaut disponibles dans AEM sont mappées aux métadonnées de page respectives dans un document. Cela inclut par exemple `title`, `description`, `robots`, `canonical url` ou `keywords`. Certaines propriétés spécifiques à AEM sont également disponibles :
 
-* `cq:lastModified` as `modified-time` au format ISO8601
-* Heure de la dernière publication du document en tant que `published-time` au format ISO8601
-* `cq:tags` as `cq-tags` comme liste séparée par des virgules des ID de balise.
+* `cq:lastModified` en tant que `modified-time` au format ISO8601.
+* Heure de la dernière publication du document en tant que `published-time` au format ISO8601.
+* `cq:tags` en tant que `cq-tags` comme liste séparée par des virgules des ID de balise.
 
-Il est également possible de définir un modèle de composant pour les métadonnées de page personnalisées, qui sera mis à la disposition de l’auteur sous forme d’onglet dans la boîte de dialogue Propriétés de la page AEM Sites.
+Il est également possible de définir un modèle de composant pour les métadonnées de page personnalisées, qui sera mis à la disposition de l’auteur ou de l’autrice sous forme d’onglet dans la boîte de dialogue Propriétés de la page AEM Sites.
 
 Pour ce faire, créez un modèle de composant avec l’identifiant `page-metadata`.
 
