@@ -3,9 +3,9 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2fa76dbe93bcf31901ec0422470b05dadfe4f43f
+source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1869'
 ht-degree: 86%
 
 ---
@@ -264,22 +264,28 @@ Encodage UTF-8 `%3B` est pour `;` et `%3D` est l’encodage pour `=`. Les variab
 Lorsque vous utilisez des variables dans vos requêtes, vous devez suivre quelques bonnes pratiques :
 
 * Codage En règle générale, il est toujours recommandé de coder tous les caractères spéciaux, par exemple : `;`, `=`, `?`, `&`, entre autres.
+
 * Point-virgule Les requêtes persistantes qui utilisent plusieurs variables (séparées par des points-virgules) doivent avoir :
    * les points-virgules codés (`%3B`) ; le codage de l’URL permet également d’y parvenir.
    * ou un point-virgule de fin ajouté à la fin de la requête
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 When `CACHE_GRAPHQL_PERSISTED_QUERIES` est activé pour Dispatcher, puis les paramètres qui contiennent la variable `/` ou `\` les caractères de leur valeur sont codés deux fois au niveau de Dispatcher.
 Pour éviter cette situation :
+
    * Activer `DispatcherNoCanonURL` sur Dispatcher.
 Cela indique à Dispatcher de transférer l’URL d’origine vers AEM afin d’éviter les codages en double.
 Toutefois, ce paramètre fonctionne actuellement uniquement sur la variable `vhost` , donc si vous disposez déjà de configurations Dispatcher pour réécrire des URL (par exemple, lorsque vous utilisez des URL abrégées), vous pouvez avoir besoin d’une `vhost` pour les URL de requête persistantes.
+
    * Envoyer `/` ou `\` caractères non codés.
 Lors de l’appel de l’URL de requête persistante, assurez-vous que tous les `/` ou `\` Les caractères restent non codés dans la valeur des variables de requête persistantes.
      >[!NOTE]
      >
      >Cette option n’est recommandée que lorsque la variable `DispatcherNoCanonURL` La solution ne peut être mise en oeuvre pour aucune raison.
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-When `CACHE_GRAPHQL_PERSISTED_QUERIES` est activé pour Dispatcher, puis la fonction `;` ne peut pas être utilisé dans la valeur d’une variable.
+
+  When `CACHE_GRAPHQL_PERSISTED_QUERIES` est activé pour Dispatcher, puis la fonction `;` ne peut pas être utilisé dans la valeur d’une variable.
 
 ## Mettre en cache vos requêtes persistantes {#caching-persisted-queries}
 
