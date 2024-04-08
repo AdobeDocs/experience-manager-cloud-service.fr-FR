@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ Pour vous assurer de bien comprendre le concept de découplage, ce parcours de d
 
 Toutefois, vous devez tenir compte des possibilités hybrides supplémentaires qui s’offrent à vous une fois que vous avez compris les fonctionnalités découplées d’AEM. Ces cas sont présentés ci-dessous pour que vous puissiez en prendre connaissance. À la fin du parcours, vous découvrirez plus en détail ces concepts si cette flexibilité est nécessaire pour votre projet.
 
-### Vous utilisez déjà de manière externe des contenus découplés, par exemple avec les applications monopage (SPA). {#already-have-a-spa}
+### Vous disposez déjà d’une consommation externe de contenu sans affichage, tel qu’une application d’une seule page (SPA). {#already-have-a-spa}
 
 Supposons que votre besoin de base soit au minimum de diffuser du contenu depuis AEM vers un service externe existant.
 
@@ -119,7 +119,7 @@ Ce niveau d’intégration repose sur le niveau 2 en permettant de modifier l�
 
 Si votre objectif est de créer une SPA qui consomme du contenu en toute sécurité depuis AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu découplé et créer également une SPA avec le framework de l’éditeur de SPA d’AEM.
 
-Avec cet éditeur, la SPA consomme non seulement des contenus issus d’AEM, mais elle est en outre entièrement modifiable dans AEM par les personnes chargées de la création de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
+Avec cet éditeur, la SPA consomme non seulement du contenu issu d’AEM, mais elle est en outre entièrement modifiable dans AEM par les auteurs ou autrices de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
@@ -244,7 +244,7 @@ Pour une [mise en œuvre découplée de type général à l’aide d’AEM,](#le
 
 Pour la réussite d’un projet, les performances doivent être prises en compte avant la création d’un contenu.
 
-Vous devez comprendre les attentes de vos utilisateurs/visiteurs et concevoir le projet pour eux. Définissez des objectifs de niveau de service (SLO) et mesurez-les pour savoir si vous répondez aux attentes de vos utilisateurs.
+Vous devez comprendre les attentes de vos utilisateurs/visiteurs et concevoir le projet pour eux. Définissez des objectifs de niveau de service (SLO) et mesurez-les pour savoir si vous répondez aux attentes de vos utilisateurs et utilisatrices.
 
 #### Modèles de trafic {#traffic-patterns}
 
