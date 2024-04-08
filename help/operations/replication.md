@@ -2,10 +2,10 @@
 title: Réplication
 description: Découvrez la distribution et le dépannage de la réplication dans AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Vous pouvez déclencher une réplication d’arborescence en choisissant **Outil
 
 ![Carte du workflow Publier l’arborescence de contenu](/help/operations/assets/publishcontenttreeworkflow.png)
 
-N’appelez pas le modèle d’origine. Veillez plutôt à copier d’abord le modèle et à appeler cette copie.
+N’appelez pas le modèle d’origine. Au lieu de cela, veillez d’abord à copier le modèle et à appeler cette copie.
 
 Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
@@ -63,7 +63,7 @@ Vous pouvez également créer un modèle de workflow qui utilise l’étape du p
 
 1. Sur la page d’accueil d’AEM as a Cloud Service, accédez à **Outils – Workflow – Modèles**.
 1. Sur la page Modèles de workflow, appuyez sur **Créer** dans l’angle supérieur droit de l’écran.
-1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de processus](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
+1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
 1. Sélectionnez le modèle créé dans la liste, puis appuyez sur **Modifier**
 1. Dans la fenêtre suivante, faites un glisser-déposer de l’étape du processus dans le flux de modèle actuel :
 
@@ -196,14 +196,17 @@ La taille du contenu transmis par appel de réplication ne doit pas dépasser `1
 
 Pour résoudre les problèmes de réplication, accédez aux files d’attente de réplication dans l’interface utilisateur web du service de création AEM :
 
-1. Dans le menu Accueil d’AEM, accédez à **Outils > Déploiement > Distribution**
-2. Sélectionnez la carte **Publication**.
+1. Dans le menu Démarrer AEM, accédez à **Outils** > **Déploiement** > **Répartition**
+1. Sélectionnez la carte **Publication**.
+
    ![État](assets/publish-status.png "État")
-3. Vérifiez l’état de la file d’attente qui doit être de couleur verte.
-4. Vous pouvez tester la connexion au service de réplication.
-5. Sélectionnez l’onglet **Logs** (Journaux) qui affiche l’historique des publications de contenu.
+
+1. Vérifiez l’état de la file d’attente qui doit être de couleur verte.
+1. Vous pouvez tester la connexion au service de réplication.
+1. Sélectionnez l’onglet **Logs** (Journaux) qui affiche l’historique des publications de contenu.
 
 ![Journaux](assets/publish-logs.png "Journaux")
 
-S’il n’a pas été possible de publier le contenu, l’intégralité de la publication est restaurée à partir du service de publication AEM.
+Si la publication du contenu n’a pas pu être effectuée, l’intégralité de la publication est annulée à partir du service de publication AEM.
+
 Dans ce cas, la file d’attente principale modifiable affiche un statut rouge. Elle doit être examinée afin d’identifier le ou les éléments qui ont provoqué l’annulation de la publication. En cliquant sur cette file d’attente, les éléments en attente s’affichent, parmi lesquels il est possible d’effacer, si nécessaire, tous les éléments ou un seul.
