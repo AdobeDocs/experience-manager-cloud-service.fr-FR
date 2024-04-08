@@ -2,7 +2,7 @@
 title: Authentification de l’éditeur universel
 description: Découvrez comment l’éditeur universel utilise le système Identity Management (IMS) d’Adobe pour l’authentification.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 89%
@@ -40,3 +40,4 @@ Pour en savoir plus sur l’éditeur universel, consultez ces documents.
 * [Prise en main de l’éditeur universel dans AEM](getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 * [Architecture de l’éditeur universel](architecture.md) - Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.
 * [Attributs et types](attributes-types.md) : découvrez les attributs et les types de données requis par l’éditeur universel.
+

@@ -2,7 +2,7 @@
 title: Définitions de modèles, champs et types de composants
 description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 11%
@@ -830,3 +830,4 @@ Le texte permet une seule ligne de saisie de texte.  Elle comprend des types de 
 ![Capture d’écran du type de composant Texte](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
+

@@ -2,7 +2,7 @@
 title: Personnalisation de l’expérience de création de l’éditeur universel
 description: Découvrez les différents points d’extension et autres fonctionnalités qui vous permettent de personnaliser l’interface utilisateur d’Universal Editor afin de prendre en charge les besoins de vos auteurs de contenu.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -96,3 +96,4 @@ Les conditions peuvent être définies à l’aide de [Schéma JsonLogic.](https
 #### Condition True {#true}
 
 ![Champ de texte affiché](assets/shown.png)
+

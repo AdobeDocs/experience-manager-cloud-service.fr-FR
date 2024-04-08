@@ -2,7 +2,7 @@
 title: Appels de l’éditeur universel
 description: Découvrez les différents types d’appels effectués sur votre application par l’éditeur universel pour vous aider lors du débogage.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -383,3 +383,4 @@ L’éditeur universel effectue une itération sur le contenu et génère une li
 ## Ressources supplémentaires {#additional-resources}
 
 * [Événements d’éditeur universels](/help/implementing/universal-editor/events.md)
+

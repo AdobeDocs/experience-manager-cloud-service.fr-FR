@@ -2,7 +2,7 @@
 title: Publication de contenu avec l’éditeur universel
 description: Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 69%
@@ -49,3 +49,4 @@ Pour en savoir plus sur les détails techniques d’Universal Editor, consultez 
 * [Architecture de l’éditeur universel](/help/implementing/universal-editor/architecture.md) - Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.
 * [Attributs et types](/help/implementing/universal-editor/attributes-types.md) - Découvrez les attributs et les types de données requis par l’éditeur universel.
 * [Authentification de l’éditeur universel](/help/implementing/universal-editor/authentication.md) - Découvrez comment l’éditeur universel s’authentifie.
+

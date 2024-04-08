@@ -1,19 +1,19 @@
 ---
 title: Événements d’éditeur universels
 description: Découvrez les différents événements que l’éditeur universel envoie et que vous pouvez utiliser pour réagir aux changements de contenu ou d’interface utilisateur dans votre application distante.
-source-git-commit: e92a0be2213e3d5793fd077bd1968852336cc98b
+exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
 
 ---
 
-
 # Événements d’éditeur universels {#events}
 
 Découvrez les différents événements que l’éditeur universel envoie et que vous pouvez utiliser pour réagir aux changements de contenu ou d’interface utilisateur dans votre application distante.
 
-## Introduction {#introduction}
+## Présentation {#introduction}
 
 Les applications peuvent avoir des exigences différentes pour les mises à jour de page ou de composant. Par conséquent, l’éditeur universel envoie des événements définis aux applications distantes. Si l’application distante n’a pas d’écouteur d’événement personnalisé pour l’événement envoyé, une [écouteur d’événement de secours](#fallback-listeners) fourni par la fonction `universal-editor-cors` est exécuté.
 
@@ -279,3 +279,4 @@ La payload est vide pour cet événement.
 ## Ressources supplémentaires {#additional-resources}
 
 * [Appels de l’éditeur universel](/help/implementing/universal-editor/calls.md)
+
