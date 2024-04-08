@@ -5,10 +5,10 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 67d8de3cda921dcaeaac47e64828abbe6abe943f
+source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 79%
+source-wordcount: '2117'
+ht-degree: 87%
 
 ---
 
@@ -43,21 +43,21 @@ Vous avez besoin de la configuration suivante pour intégrer [!DNL Adobe Acrobat
 
 Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adobe Acrobat Sign] avec [!DNL AEM Forms] sur les instances d’auteur.
 
-1. Dans l’instance d’auteur AEM Forms, accédez à **[!UICONTROL Outils]** ![hammer](assets/hammer.png) > **[!UICONTROL Général]** > **[!UICONTROL Navigateur de configuration]**.
-1. Sur le **[!UICONTROL Explorateur de configuration]** page, sélectionnez **[!UICONTROL Créer]**.
-1. Dans le **[!UICONTROL Créer une configuration]** boîte de dialogue, spécifiez une **[!UICONTROL Titre]** pour la configuration, activez **[!UICONTROL Configurations du cloud]**, puis sélectionnez **[!UICONTROL Créer]**. Un conteneur de configurations pour Cloud Services est ainsi créé. Vérifiez que le nom du dossier ne contient aucun espace.
+1. Dans l’instance de création AEM Forms, accédez à **[!UICONTROL Outils]** ![hammer](assets/hammer.png) > **[!UICONTROL Général]** > **[!UICONTROL Navigateur de configuration]**.
+1. Sur la page du **[!UICONTROL navigateur de configuration]**, sélectionnez **[!UICONTROL Créer]**.
+1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, indiquez un **[!UICONTROL titre]** pour la configuration, activez **[!UICONTROL Configurations cloud]** et sélectionnez **[!UICONTROL Créer]**. Un conteneur de configurations pour Cloud Services est ainsi créé. Vérifiez que le nom du dossier ne contient aucun espace.
 1. Accédez à **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Services cloud]** > **[!UICONTROL Adobe Sign]** et ouvrez le conteneur de configurations que vous avez créé à l’étape précédente.
 
    >[!NOTE]
    >
    >Lorsque vous créez un formulaire adaptatif, indiquez le nom du conteneur dans le champ **[!UICONTROL Conteneur de configurations]**.
 
-1. Sur la page de configuration, sélectionnez **[!UICONTROL Créer]** pour créer [!DNL Adobe Acrobat Sign] dans AEM Forms.
+1. Sur la page de configuration, sélectionnez **[!UICONTROL Créer]** pour créer une configuration [!DNL Adobe Acrobat Sign] dans AEM Forms.
 1. Dans le **[!UICONTROL Général]** de la **[!UICONTROL Création d’une configuration Adobe Acrobat Sign]** , spécifiez une **[!UICONTROL Nom]** pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**. Vous avez la possibilité d’indiquer un **[!UICONTROL titre]** et de rechercher et sélectionner une **[!UICONTROL vignette]** pour la configuration.
 
 1. Maintenant, vous pouvez **[!UICONTROL sélectionner une solution]** pour sélectionner [!DNL Adobe Acrobat Sign].
 
-   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
+   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
 
 <!--
 
@@ -66,15 +66,15 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
 
 1. Copiez l’URL présente dans la fenêtre de votre navigateur actuel dans un bloc-notes et supprimez la partie `/ui#/aem` de l’URL. L’URL modifiée est nécessaire pour configurer l’application [!DNL Adobe Acrobat Sign] avec [!DNL AEM Forms] à une étape ultérieure. Sélectionnez **[!UICONTROL Suivant]**.
 
-1. Dans le **[!UICONTROL Paramètres]** onglet,
-   * la valeur **[!UICONTROL URL OAuth]** contient l’URL par défaut qui inclut le partage de base de données Adobe Sign. Le format de l’URL est:
+1. Dans l’onglet **[!UICONTROL Paramètres]**,
+   * le champ **[!UICONTROL URL OAuth]** contient l’URL par défaut qui inclut le partitionnement de base de données Adobe Sign. Le format de l’URL est:
 
      `https://<shard>/public/oauth/v2`
 
      Par exemple :
      `https://secure.na1.echosign.com/public/oauth/v2`
 
-   * la valeur **[!UICONTROL URL du jeton d’accès]** contient l’URL par défaut qui inclut le partage de base de données Adobe Sign. Le format de l’URL est:
+   * le champ **[!UICONTROL URL du jeton d’accès]** contient l’URL par défaut qui inclut le partitionnement de base de données Adobe Sign. Le format de l’URL est:
 
      `https://<shard>/oauth/v2/token`
 
@@ -88,7 +88,7 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
    >[!NOTE]
    >
    >* Gardez la page **Créer une configuration Adobe Sign** ouverte. Ne la fermez pas. Vous pouvez récupérer l’**ID client** et le **secret client** après la configuration des paramètres OAuth pour l’application [!DNL Adobe Acrobat Sign] comme décrit dans les étapes à venir.
-   > * Après vous être connecté à votre compte Adobe Sign, accédez à **[!UICONTROL API ACROBAT SIGN]** > **[!UICONTROL Informations sur l’API]** > **[!UICONTROL Documentation sur les méthodes d’API REST]** > **[!UICONTROL Jeton d’accès OAuth]** pour accéder aux informations relatives à l’URL OAuth d’Adobe Sign et à l’URL du jeton d’accès.
+   > * Après votre connexion à votre compte Adobe Sign, accédez à **[!UICONTROL API Acrobat Sign]** > **[!UICONTROL Informations sur l’API]** > **[!UICONTROL Documentation sur les méthodes d’API REST]** > **[!UICONTROL Jeton d’accès OAuth]** pour accéder aux informations relatives à l’URL OAuth d’Adobe Sign et à l’URL du jeton d’accès.
 
 1. Configurez les paramètres OAuth pour l’application [!DNL Adobe Acrobat Sign] :
 
@@ -126,7 +126,18 @@ Vous pouvez maintenant [utiliser l’ajout de champs Adobe Acrobat Sign à un 
 
 >[!NOTE]
 >
-> Pour configurer l’environnement de test Adobe Sign, vous pouvez suivre les mêmes étapes de configuration que celles décrites dans la section [Adobe Sign](#adobe-sign).
+> Pour configurer le sandbox Adobe Sign, vous pouvez suivre les mêmes étapes de configuration que celles décrites dans [Adobe Sign](#adobe-sign).
+
+#### Résolution des problèmes {#resolve-config-error}
+
+Lorsque vous vous connectez [!DNL Adobe Acrobat Sign] avec [!DNL AEM Forms] et rechercher une erreur `Unable to authorize access because the client configuration is invalid: invalid_request` comme illustré ci-dessous. Pour résoudre ce problème, procédez comme suit :
+
+![Erreur de configuration](/help/forms/assets/config_error_sign.png)
+
+1. Copiez l’URL présente dans la fenêtre de votre navigateur actuel dans un bloc-notes et supprimez la partie `/ui#/aem` de l’URL.
+1. Ouvrez une fenêtre de navigateur et connectez-vous au compte de développeur [!DNL Adobe Acrobat Sign].
+1. Sélectionnez l’application configurée pour [!DNL AEM Forms], puis sélectionnez **[!UICONTROL Configuration d’OAuth pour l’application]**.
+1. Dans le **[!UICONTROL URL de redirection]** , ajoutez l’URL copiée à l’étape précédente et cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Connecter AEM Forms à Adobe Acrobat Sign Solutions pour le gouvernement {#adobe-acrobat-sign-for-government}
 
@@ -152,10 +163,10 @@ Avant de commencer à connecter AEM Forms à la solution Adobe Acrobat Sign, 
 #### Créer une URL de redirection pour votre instance AEM
 
 1. Sur l’instance de création Forms as a Cloud Service, accédez à **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Général]** > **[!UICONTROL Explorateur de configurations]**.
-1. Sur le **[!UICONTROL Explorateur de configuration]** page, sélectionnez **[!UICONTROL Créer]**.
-1. Dans le **[!UICONTROL Créer une configuration]** boîte de dialogue, spécifiez une **[!UICONTROL Titre]** pour la configuration, activez **[!UICONTROL Configurations du cloud]**, puis sélectionnez **[!UICONTROL Créer]**. Un conteneur de configurations pour stocker Cloud Services est ainsi créé. Vérifiez que le nom du dossier ne contient aucun espace.
+1. Dans la page **[!UICONTROL Navigateur de configuration]**, sélectionnez **[!UICONTROL Créer]**.
+1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, indiquez un **[!UICONTROL titre]** pour la configuration, activez **[!UICONTROL Configurations du cloud]** et choisissez **[!UICONTROL Créer]**. Un conteneur de configurations pour stocker Cloud Services est ainsi créé. Vérifiez que le nom du dossier ne contient aucun espace.
 1. Accédez à **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Services cloud]** > **[!UICONTROL Adobe Acrobat Sign]** et ouvrez le conteneur de configurations que vous avez créé à l’étape précédente. Lorsque vous créez un formulaire adaptatif, indiquez le nom du conteneur dans le champ **[!UICONTROL Conteneur de configurations]**.
-1. Sur la page de configuration, sélectionnez **[!UICONTROL Créer]** pour créer [!DNL Adobe Acrobat Sign] dans AEM Forms.
+1. Sur la page de configuration, sélectionnez **[!UICONTROL Créer]** pour créer une configuration [!DNL Adobe Acrobat Sign] dans AEM Forms.
 1. Copiez l’URL de votre fenêtre de navigateur actuelle dans un bloc-notes et supprimez `/ui#/aem` de l’URL. Cette URL est appelée `re-direct URL`.
 Dans la section suivante, partagez l’`re-direct URL` et les `Scopes` avec l’équipe Adobe Sign et demandez des informations d’identification (identifiant client et secret client).
 
@@ -181,7 +192,7 @@ La personne représentante génère et partage alors les informations d’identi
 
 1. Ouvrez l’`re-direct URL` dans votre navigateur. Vous avez créé et noté l’`re-direct URL` dans la dernière étape de la section de [création d’une URL de redirection sur votre instance AEM](#create-a-redirect-url-for-your-aem-instance).
 
-1. Dans le **[!UICONTROL Général]** de la **[!UICONTROL Création d’une configuration Adobe Sign]** , spécifiez une **[!UICONTROL Nom]** pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**. Vous avez la possibilité d’indiquer un **[!UICONTROL titre]** et de rechercher et sélectionner une **[!UICONTROL vignette]** pour la configuration. Cliquez sur **[!UICONTROL Suivant]**.
+1. Dans l’onglet **[!UICONTROL Général]** de la page **[!UICONTROL Créer une configuration Adobe Sign]**, spécifiez un **[!UICONTROL nom]** de configuration et sélectionnez **[!UICONTROL Suivant]**. Vous avez la possibilité d’indiquer un **[!UICONTROL titre]** et de rechercher et sélectionner une **[!UICONTROL vignette]** pour la configuration. Cliquez sur **[!UICONTROL Suivant]**.
 
 1. Dans l’onglet **[!UICONTROL Paramètres]** de la page **[!UICONTROL Créer une configuration Adobe Sign]**, pour l’option **[!UICONTROL Sélectionner une solution]**, sélectionnez [!DNL Adobe Acrobat Sign Solutions for Government].
 
@@ -190,15 +201,15 @@ La personne représentante génère et partage alors les informations d’identi
 
 1. Dans le champ **[!UICONTROL E-mail]**, indiquez l’adresse e-mail associée à votre compte Adobe Acrobat Sign Solutions pour le gouvernement.
 
-1. Dans le **[!UICONTROL Paramètres]** onglet,
-   * la valeur **[!UICONTROL URL OAuth]** contient l’URL par défaut qui inclut le partage de base de données Adobe Sign. Le format de l’URL est:
+1. Dans l’onglet **[!UICONTROL Paramètres]**,
+   * le champ **[!UICONTROL URL OAuth]** contient l’URL par défaut qui inclut le partitionnement de base de données Adobe Sign. Le format de l’URL est:
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
 
      Par exemple :
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
 
-   * la valeur **[!UICONTROL URL du jeton d’accès]** contient l’URL par défaut qui inclut le partage de base de données Adobe Sign. Le format de l’URL est:
+   * le champ **[!UICONTROL URL du jeton d’accès]** contient l’URL par défaut qui inclut le partitionnement de base de données Adobe Sign. Le format de l’URL est:
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
 
@@ -211,19 +222,19 @@ La personne représentante génère et partage alors les informations d’identi
 
    >[!NOTE]
    >
-   > * Après vous être connecté à votre compte Adobe Sign, accédez à **[!UICONTROL API ACROBAT SIGN]** > **[!UICONTROL Informations sur l’API]** > **[!UICONTROL Documentation sur les méthodes d’API REST]** > **[!UICONTROL Jeton d’accès OAuth]** pour accéder aux informations relatives à l’URL oAuth d’Adobe Sign et à l’URL du jeton d’accès.
+   > * Une fois connecté à votre compte Adobe Sign, accédez à **[!UICONTROL API ACROBAT SIGN]** > **[!UICONTROL Informations sur l’API]** > **[!UICONTROL Documentation sur les méthodes d’API REST]** > **[!UICONTROL Jeton d’accès OAuth]** pour accéder aux informations relatives à l’URL oAuth d’Adobe Sign et à l’URL du jeton d’accès.
 
 1. Utilisez les informations d’identification partagées par le représentant ou la représentante Adobe Acrobat Sign Solutions pour le gouvernement ([membre de l’équipe Adobe Professional Services]) dans la section précédente en tant que [**[!UICONTROL ID client]** et **[!UICONTROL Secret client]**].
 
 1. Sélectionnez l’option **[!UICONTROL Activer Adobe Acrobat Sign pour les pièces jointes]** pour ajouter les fichiers joints à un formulaire adaptatif au document [!DNL Adobe Acrobat Sign] correspondant envoyé à des fins de signature.
 
-1. Sélectionner **[!UICONTROL Connexion à Adobe Sign]**. Lorsque vous êtes invité à fournir vos informations d’identification, indiquez le nom d’utilisateur et le mot de passe du compte utilisé lors de la création de l’application [!DNL Adobe Acrobat Sign]. Lorsque vous êtes invité à confirmer l’accès à `your developer account`, cliquez sur **[!UICONTROL Autoriser l’accès]**. Si les informations d’identification sont correctes et que vous autorisez [!DNL AEM Forms] à accéder à votre compte de développement [!DNL Adobe Acrobat Sign], un message, semblable à celui ci-dessous, s’affiche pour vous notifier le succès de l’opération.
+1. Sélectionnez **[!UICONTROL Se connecter à Adobe Sign]**. Lorsqu’il vous est demandé de fournir vos informations d’identification, indiquez le nom d’utilisateur et le mot de passe du compte utilisé lors de la création de l’application [!DNL Adobe Acrobat Sign]. Lorsque vous êtes invité à confirmer l’accès à `your developer account`, cliquez sur **[!UICONTROL Autoriser l’accès]**. Si les informations d’identification sont correctes et que vous autorisez [!DNL AEM Forms] à accéder à votre compte de développement [!DNL Adobe Acrobat Sign], un message, semblable à celui ci-dessous, s’affiche pour vous notifier le succès de l’opération.
 
    ![Succès de la configuration Adobe Acrobat Sign Cloud](assets/adobe-sign-cloud-configuration-success.png)
 
    <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
 
-1. Sélectionner **[!UICONTROL Créer]** pour créer la configuration.
+1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration.
 
 1. Sélectionnez la configuration, cliquez sur **[!UICONTROL Publier]**, sélectionnez la configuration, puis cliquez sur **[!UICONTROL Publier]**. La configuration est ainsi répliquée sur les environnements de publication correspondants.
 
