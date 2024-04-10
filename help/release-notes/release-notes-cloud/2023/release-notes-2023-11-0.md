@@ -2,16 +2,16 @@
 title: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
-source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 38%
+ht-degree: 55%
 
 ---
 
 # Notes de mise à jour de la version 2023.11.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour techniques de la version 2023.11.0 d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour de la version 2023.11.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ La section suivante concerne les notes de mise à jour techniques de la version�
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2023.11.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 30 novembre 2023. La prochaine mise à jour des fonctionnalités (2023.12.0) est prévue pour le vendredi 14 décembre 2023.
+La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) est le vendredi 30 novembre 2023. La prochaine disponibilité des fonctionnalités (2023.12.0) est prévue pour le vendredi 14 décembre 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -39,7 +39,7 @@ Regardez la vidéo Présentation de la version de novembre 2023 pour un résumé
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Programme d&#39;adoption précoce {#sites-early-adopter}
+### Programme d’adoption précoce {#sites-early-adopter}
 
 **[Recherche et remplacement de chaînes dans des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: la console de fragments de contenu offre aux utilisateurs un moyen simple et intuitif de remplacer une chaîne apparaissant simultanément dans plusieurs fragments de contenu afin d’accélérer la vitesse du contenu.
 
@@ -53,7 +53,7 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d�
 
 * **Éditeur d’Adobe Express intégré dans AEM Assets**: les utilisateurs ayant accès à Express disposent désormais d’outils intégrés d’édition et de création d’images d’Adobe Express et d’Adobe Firefly disponibles directement dans AEM Assets pour améliorer la réutilisation du contenu et accélérer la vitesse de diffusion du contenu.
 
-  ![attribuer un formulaire de métadonnées à un dossier](/help/assets/assets/adobe-express-aem-assets.png)
+  ![Affectation d’un formulaire de métadonnées à un dossier.](/help/assets/assets/adobe-express-aem-assets.png)
 
 <!--
 
@@ -100,17 +100,17 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d�
 
 -->
 
-### Programme d&#39;adoption précoce {#forms-early-adopter}
+### Programme d’adoption précoce {#forms-early-adopter}
 
-* **Envoyer un formulaire adaptatif au scénario de fusion Adobe Workfront**: Forms as a Cloud Service propose des options prêtes à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui vous permet de déclencher un scénario de fusion Workfront lors de l’envoi d’un formulaire adaptatif.
+* **Envoi d’un formulaire adaptatif au scénario Adobe Workfront Fusion** : Forms as a Cloud Service propose des options prêtes à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui permet de déclencher un scénario Workfront Fusion lors de l’envoi d’un formulaire adaptatif.
 
-* **Prise en charge des langues de droite à gauche**: les Forms adaptatives reposant sur les composants principaux peuvent désormais être présentées dans une langue de droite à gauche (RTL) telle que l’arabe, le persan et l’ourdou. Les langues de la durée de vie sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire en langage RTL vous permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et d’appuyer sur les marchés RTL. Dans certaines régions, il est également légal de fournir des formulaires dans la langue locale. En s&#39;adaptant aux langues locales, vous ouvrez non seulement les portes à un public plus large, mais vous garantissez également le respect des lois et réglementations pertinentes.
+* **Prise en charge des langues de droite à gauche** : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire en langage RTL vous permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et d’appuyer sur les marchés RTL. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à un public plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
 
-  ![Prise en charge de la langue de droite à gauche](/help/forms/assets/right-to-left-language-support.png)
+  ![Prise en charge des langues de droite à gauche.](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect de vos documents avec les API DocAssurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Le service Signature permet à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
+* **[Protégez vos documents avec les API DocAssurance (qui font partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)** : les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seules les personnes autorisées peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
-  Vous pouvez écrire sur `aem-forms-early-adopter-program@adobe.com` de votre e-mail officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité.
+  Vous pouvez écrire à `aem-forms-ea@adobe.com` depuis votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -122,14 +122,14 @@ Une fois sous licence, ces règles WAF avancées peuvent être déployées sur l
 
 En savoir plus [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), y compris WAF. Contactez votre équipe de compte AEM au sujet de la licence de la protection WAF-DDoS ou de la sécurité renforcée.
 
-### Configuration du réseau de diffusion de contenu Programme d’adoption précoce {#cdn-config-early-adopter}
+### Programme d’adoption précoce pour la configuration du réseau CDN {#cdn-config-early-adopter}
 
 Outre la version récemment publiée [Règles de filtre de trafic (y compris WAF)](/help/security/traffic-filter-rules-including-waf.md), il est possible d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration CDN. Nous aimerions bien connaître vos cas pratiques, notamment :
-* 301/302 redirections côté client
-* proxy des requêtes en périphérie vers des origines arbitraires
-* Conversion d’URL
-* définition ou modification des en-têtes de requête ou de réponse
-* pages d’erreur personnalisées lorsque le réseau de diffusion de contenu ne peut pas atteindre AEM
+* Redirections côté client 301/302
+* Établier un proxy des requêtes en périphérie vers des origines arbitraires
+* Transformations d’URL
+* Définir ou modifier des en-têtes de requête ou de réponse
+* Pages d’erreur personnalisées lorsque le réseau CDN ne peut pas atteindre AEM.
 * authentification par nom d’utilisateur/mot de passe
 * toute autre configuration CDN utile
 

@@ -3,10 +3,10 @@ title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à 
 description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1333'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 18%
 | Composants de base | [Cliquez ici](supporting-new-language-localization.md) |
 | Composants principaux | Cet article |
 
-<span class="preview"> La fonctionnalité de prise en charge de la langue de droite à gauche est disponible dans le cadre du programme d’adoption précoce. Vous pouvez écrire à aem-forms-early-adopter-program@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité de prise en charge de la langue de droite à gauche est disponible dans le cadre du programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité. </span>
 
 AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux, comme Hindi(hi_IN). Vous pouvez également présenter Adaptive Forms dans une langue de droite à gauche (RTL) telle que l’arabe, le persan et l’ourdou en ajoutant ces paramètres régionaux.
 
@@ -40,14 +40,14 @@ Avant de commencer à ajouter un paramètre régional pour le Forms adaptatif, v
   Dans les cas où aucune information locale n’est disponible, le formulaire adaptatif s’affiche dans sa langue d’origine, qui est la langue utilisée lors du développement du formulaire.
 
 
-## Conditions préalables requises {#prerequistes}
+## Conditions préalables {#prerequistes}
 
 Avant de commencer à ajouter un paramètre régional :
 
 * Installez un éditeur de texte brut (IDE) pour faciliter la modification. Les exemples de ce document reposent sur [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
 * Installation d’une version de [Git](https://git-scm.com), si elles ne sont pas disponibles sur votre ordinateur.
 * Cloner le [Composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components) référentiel. Pour cloner le référentiel :
-   1. Ouvrez la ligne de commande ou la fenêtre de terminal et accédez à un emplacement pour stocker le référentiel. Par exemple, `/adaptive-forms-core-components`
+   1. Ouvrez la ligne de commande ou la fenêtre de terminal et accédez à un emplacement pour stocker le référentiel. Par exemple, `/adaptive-forms-core-components`.
    1. Exécutez la commande suivante pour cloner le référentiel :
 
       ```SHELL
