@@ -4,8 +4,8 @@ description: Découvrez comment extraire du contenu d’une instance Adobe Exper
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 43%
+source-wordcount: '728'
+ht-degree: 42%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 43%
 >id="aemcloud_ctt_extraction"
 >title="Extraction de contenu"
 >abstract="L’extraction fait référence à l’extraction de contenu de l’instance Adobe Experience Manager (AEM) source dans une zone temporaire appelée jeu de migration. Un jeu de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process?lang=fr" text="Extraction de complément"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#top-up-extraction-process" text="Extraction de complément"
 
 
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
