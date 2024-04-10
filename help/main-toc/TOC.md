@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
+source-git-commit: aaae2986d0b807b34055a48c810c32167d3715d0
 workflow-type: tm+mt
-source-wordcount: '4857'
+source-wordcount: '4862'
 ht-degree: 99%
 
 ---
@@ -93,6 +93,7 @@ ht-degree: 99%
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [Notes de mise à jour de la version 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
          + [Notes de mise à jour de la version 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
          + [Notes de mise à jour de la version 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023 {#2023}
@@ -572,7 +573,7 @@ ht-degree: 99%
       + [Mettre à jour  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Intégration avec Adobe Workfront {#integration-adobe-express}
-      + [Intégration native à Adobe Express](/help/assets/native-integration-adobe-express.md)
+      + [Intégration native avec Adobe Express](/help/assets/native-integration-adobe-express.md)
 
    + Intégration avec Creative Cloud {#integration-creative-cloud}
       + [Connexion d’AEM Assets à Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
@@ -641,8 +642,8 @@ ht-degree: 99%
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer et utiliser des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md)
             + [Ajouter des règles à un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components.md)
-            + [Ajouter des versions, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [Comparer les Forms adaptatifs](/help/forms/compare-forms.md)
+            + [Ajout de versions, de commentaires et d’annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [Comparaison d’Adaptive Forms](/help/forms/compare-forms.md)
       + Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)
@@ -834,7 +835,7 @@ ht-degree: 99%
          + [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
          + [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
          + [Ajouter des validations à des champs de formulaires](/help/edge/docs/forms/validate-forms.md)
-         + [Charger les options depuis l’URL vers un formulaire](/help/edge/docs/forms/load-options-from-url.md)
+         + [Chargement des options d’une URL vers un formulaire](/help/edge/docs/forms/load-options-from-url.md)
          + [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
          + [Utiliser les règles pour ajouter un comportement dynamique à un formulaire](/help/edge/docs/forms/rules-forms.md)
          + [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
