@@ -2,16 +2,16 @@
 title: Prise en main du Parcours de migration vers AEM as a Cloud Service
 description: Commencez votre Parcours de migration en vous familiarisant avec les principes de base de la transition vers AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: a4e02b64fba591ff6bd4f24e37e01dbbaa7f91cf
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
 # Prise en main du Parcours de migration vers AEM as a Cloud Service {#getting-started}
 
-Dans cette partie du Parcours de migration as a Cloud Service d’AEM, vous découvrez les principes de base du déplacement de votre installation d’AEM sur site ou Adobe Managed Services vers le cloud.
+Dans cette partie du Parcours de migration as a Cloud Service d’AEM, vous découvrirez les principes de base de la migration de votre installation Managed Services on-premise ou Adobe d’AEM vers le cloud.
 
 ## Objectif {#objective}
 
@@ -30,7 +30,7 @@ Avec AEM as a Cloud Service, vos équipes peuvent se concentrer sur l’innovati
 
 Le parcours de migration vers Cloud Service comprend les phases suivantes :
 
-* Commencez par déterminer si votre déploiement est prêt à être déplacé vers AEM as a Cloud Service avec la [Phase de préparation](/help/journey-migration/readiness.md). Au cours de cette phase, vous devriez également vous familiariser avec les modifications apportées par AEM as a Cloud Service.
+* Commencez par déterminer si votre déploiement est prêt à être déplacé vers AEM as a Cloud Service avec la [Phase de préparation](/help/journey-migration/readiness.md). Au cours de cette phase, vous devez également vous familiariser avec les modifications introduites par AEM as a Cloud Service.
 * Ensuite, la [Phase d’implémentation](/help/journey-migration/implementation.md) vous permet de préparer votre code et votre contenu cloud. Au cours de cette phase, vous allez explorer les outils fournis par Adobe pour faciliter la transition vers le cloud.
 * Une fois que tout est en place, vous pouvez effectuer la migration lors de la [Phase d’activation](/help/journey-migration/go-live.md).
 * Enfin, veillez à surveiller les problèmes et à améliorer les performances une fois la migration terminée, lors de la [Phase de post-activation](/help/journey-migration/post-go-live.md).
@@ -49,7 +49,7 @@ Vous pouvez également consulter le diagramme ci-dessous pour obtenir une vue pl
 >id="aemcloud_cam_overview"
 >title="À propos de Cloud Acceleration Manager"
 >abstract="Cloud Acceleration Manager est une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à la mise en ligne sur Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=fr#aem-moving-to-aem-guide" text="Transition vers AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/getting-started#aem-moving-to-aem-guide" text="Transition vers AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=fr" text="Modifications notables apportées à AEM Sites as a Cloud Service"
 
 Outre les étapes décrites dans ce parcours, Adobe fournit Cloud Acceleration Manager, une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à la mise en ligne sur Cloud Service. Préparez vos équipes à une migration réussie grâce aux bonnes pratiques, aux conseils, à la documentation et aux outils recommandés par Adobe pour vous aider à chaque étape du parcours vers AEM as a Cloud Service.
