@@ -1,16 +1,16 @@
 ---
-title: Configuration du trafic sur le réseau de diffusion de contenu
+title: Configurer le trafic sur le réseau CDN
 description: Découvrez comment configurer le trafic CDN en déclarant les règles et les filtres dans un fichier de configuration et en les déployant sur le CDN à l’aide du pipeline de configuration de Cloud Manager.
 feature: Dispatcher
-source-git-commit: 0a0c9aa68b192e8e2a612f50a58ba5f9057c862d
+exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
+source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-
-# Configuration du trafic sur le réseau de diffusion de contenu {#cdn-configuring-cloud}
+# Configurer le trafic sur le réseau CDN {#cdn-configuring-cloud}
 
 >[!NOTE]
 >Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme d’adoption précoce, envoyez un email à `aemcs-cdn-config-adopter@adobe.com` et décrivez votre cas d’utilisation.
@@ -47,6 +47,16 @@ config/
 
 * Deuxièmement, le `cdn.yaml` Le fichier de configuration doit contenir à la fois des métadonnées et les règles décrites dans les exemples ci-dessous.
 
+## Syntaxe {#configuration-syntax}
+
+Les types de règle dans les sections ci-dessous partagent une syntaxe commune.
+
+Une règle est référencée par un nom, une &quot;clause de condition&quot; et des actions.
+
+La clause when détermine si une règle sera évaluée, en fonction de propriétés telles que le domaine, le chemin, les chaînes de requête, les en-têtes et les cookies. La syntaxe est la même pour tous les types de règle. Pour plus d’informations, voir la section [Section Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) dans l’article Règles de filtrage du trafic .
+
+Les détails du noeud actions diffèrent par type de règle et sont décrits dans les sections individuelles ci-dessous.
+
 ## Demander des transformations {#request-transformations}
 
 Les règles de transformation de requêtes vous permettent de modifier les requêtes entrantes. Les règles prennent en charge les chemins d’accès, paramètres de requête et en-têtes (y compris les cookies) de définition, de dédéfinition et de modification en fonction de diverses conditions de correspondance, y compris des expressions régulières. Vous pouvez également définir des variables qui pourront être référencées ultérieurement dans la séquence d’évaluation.
@@ -61,7 +71,7 @@ Exemple de configuration :
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: ["prod", "dev"]
+  envTypes: ["dev", "stage", "prod"]
 data:  
   experimental_requestTransformations:
     removeMarketingParams: true
@@ -74,7 +84,7 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
- 
+            
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -82,24 +92,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
- 
-      - name: set-query-param-rule
-        when:
-          reqProperty: path
-          equals: /set-query-param
-        actions:
-          - type: set
-            queryParam: someParam
-            value: someValue
- 
-      - name: unset-query-param-rule
-        when:
-          reqProperty: path
-          equals: /unset-query-param
-        actions:
-          - type: unset
-            queryParam: someParam
- 
+            
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -107,7 +100,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
- 
+            
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -115,61 +108,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
- 
-      - name: set-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /set-req-cookie
-        actions:
-          - type: set
-            reqCookie: someParam
-            value: someValue
- 
-      - name: unset-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /unset-req-cookie
-        actions:
-          - type: unset
-            reqCookie: someParam
- 
-      - name: set-variable-rule
-        when:
-          reqProperty: path
-          equals: /set-variable
-        actions:
-          - type: set
-            var: some_var_name
-            value: some value
- 
-      - name: unset-variable-rule
-        when:
-          reqProperty: path
-          equals: /unset-variable
-        actions:
-          - type: unset
-            var: some_var_name
- 
-      - name: replace-segment
-        when:
-          reqProperty: path
-          like: /replace-segment/*
-        actions:
-          - type: replace
-            reqProperty: path
-            match: /replace-segment/
-            value: /segment-was-replaced/
- 
-      - name: replace-extension
-        when:
-          reqProperty: path
-          like: /replace-extension/*.html
-        actions:
-          - type: replace
-            reqProperty: path
-            match: \.html
-            value: ''
- 
+            
       - name: multi-action
         when:
           reqProperty: path
@@ -181,6 +120,17 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
+            
+      - name: replace-html
+        when:
+          reqProperty: path
+          like: /mypath
+        actions:
+          - type: transform
+           reqProperty: path
+           op: replace
+           match: \.html$
+           replacement: ""
 ```
 
 **Actions**
@@ -189,16 +139,27 @@ Les actions disponibles sont expliquées dans le tableau ci-dessous.
 
 | Nom | Propriétés | Signification |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader, valeur | Définit un en-tête spécifié sur une valeur donnée. |
-|     | queryParam, valeur | Définit un paramètre de requête spécifié sur une valeur donnée. |
-|     | reqCookie, valeur | Définit un cookie spécifié sur une valeur donnée. |
-|     | var, value | Définit une variable spécifiée sur une valeur donnée. |
-| **unset** | reqHeader | Supprime un en-tête spécifié. |
-|         | queryParam | Supprime un paramètre de requête spécifié. |
-|         | reqCookie | Supprime un cookie spécifié. |
+| **set** | (reqProperty ou reqHeader ou queryParam ou reqCookie), value | Définit un paramètre de requête spécifié (seule la propriété &quot;path&quot; est prise en charge), ou un en-tête de requête, un paramètre de requête ou un cookie, sur une valeur donnée. |
+|     | var, value | Définit une propriété de requête spécifiée sur une valeur donnée. |
+| **unset** | reqProperty | Supprime un paramètre de requête spécifié (seule la propriété &quot;path&quot; est prise en charge), ou un en-tête de requête, un paramètre de requête ou un cookie, à une valeur donnée. |
 |         | var | Supprime une variable spécifiée. |
 |         | queryParamMatch | Supprime tous les paramètres de requête correspondant à une expression régulière spécifiée. |
-| **replace** | reqProperty, match, value | Remplace une partie de la propriété de requête par une nouvelle valeur. Actuellement, seule la propriété &quot;path&quot; est prise en charge. |
+| **transform** | op:replace, (reqProperty ou reqHeader ou queryParam ou reqCookie), match, remplacement | Remplace une partie du paramètre de requête (seule la propriété &quot;path&quot; est prise en charge) ou l’en-tête de requête, le paramètre de requête ou le cookie de requête par une nouvelle valeur. |
+|              | op:tolower, (reqProperty ou reqHeader ou queryParam ou reqCookie) | Définit le paramètre de requête (seule la propriété &quot;path&quot; est prise en charge) ou l’en-tête de requête, le paramètre de requête ou le cookie de requête sur sa valeur en minuscules. |
+
+Les actions peuvent être liées ensemble. Par exemple :
+
+```
+actions:
+    - type: transform
+      reqProperty: path
+      op: replace
+      match: \.html$
+      replacement: ""
+    - type: transform
+      reqProperty: path
+      op: tolower
+```
 
 ### Variables {#variables}
 
