@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '4842'
+source-wordcount: '4857'
 ht-degree: 99%
 
 ---
@@ -572,7 +572,7 @@ ht-degree: 99%
       + [Mettre à jour  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Intégration avec Adobe Workfront {#integration-adobe-express}
-      + [Intégration native avec Adobe Express](/help/assets/native-integration-adobe-express.md)
+      + [Intégration native à Adobe Express](/help/assets/native-integration-adobe-express.md)
 
    + Intégration avec Creative Cloud {#integration-creative-cloud}
       + [Connexion d’AEM Assets à Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
@@ -641,8 +641,8 @@ ht-degree: 99%
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer et utiliser des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md)
             + [Ajouter des règles à un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components.md)
-            + [Ajout de versions, de commentaires et d’annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [Comparaison d’Adaptive Forms](/help/forms/compare-forms.md)
+            + [Ajouter des versions, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [Comparer les Forms adaptatifs](/help/forms/compare-forms.md)
       + Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)
@@ -803,6 +803,7 @@ ht-degree: 99%
    + Créer des applications Edge Delivery {#build}
       + [Prise en main - Tutoriel pour l’équipe de développement](/help/edge/developer/tutorial.md)
       + [Anatomie d’un projet](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [Collection de blocs](/help/edge/developer/block-collection.md)
       + [Feuilles de calcul](/help/edge/developer/spreadsheets.md)
       + [Formulaires](/help/edge/developer/forms.md)
       + [Indexation](/help/edge/developer/indexing.md)
@@ -833,6 +834,7 @@ ht-degree: 99%
          + [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
          + [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
          + [Ajouter des validations à des champs de formulaires](/help/edge/docs/forms/validate-forms.md)
+         + [Charger les options depuis l’URL vers un formulaire](/help/edge/docs/forms/load-options-from-url.md)
          + [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
          + [Utiliser les règles pour ajouter un comportement dynamique à un formulaire](/help/edge/docs/forms/rules-forms.md)
          + [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
@@ -842,6 +844,7 @@ ht-degree: 99%
          + [Traduction](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
+         + [Surveillance des utilisateurs en temps réel pour les formulaires](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Références {#forms-references}
          + [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
    + Ressources pour Edge Delivery {#resources}
@@ -1178,9 +1181,3 @@ ht-degree: 99%
    + Accessibilité {#accessibility}
       + [AEM as a Cloud Service et directives d’accessibilité web](/help/compliance/accessibility/web-accessibility.md)
       + [Guide rapide relatif à WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
-
-
-<!--
-Temporarily remove:
-    + [Block Collection](/help/edge/developer/block-collection.md)
--->

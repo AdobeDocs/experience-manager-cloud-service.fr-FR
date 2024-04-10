@@ -3,9 +3,9 @@ title: Utiliser Edge Delivery Services avec des projets AEM existants
 description: Découvrez comment tirer parti des avantages d’Edge Delivery Services dans vos projets AEM existants.
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ L’éditeur de page AEM fonctionne uniquement avec des [composants AEM](/help
 
 Lors de la première phase, vous pouvez continuer à utiliser la structure, les composants et les outils de création de votre site AEM existant. Le rendu du site web sera reconstruit à l’aide de blocs utilisant JavaScript et CSS et il sera diffusé par l’intermédiaire d’Edge Delivery Services.
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+Consultez la [section Créer](/help/edge/developer/block-collection.md) de la documentation d’Edge Delivery Services pour en savoir plus sur les blocs et sur la manière de développer pour Edge Delivery Services.
 
 Un convertisseur dans le créateur d’applications est nécessaire pour convertir la sortie HTML rendue par AEM et l’envoyer à Edge Delivery Services.
 
