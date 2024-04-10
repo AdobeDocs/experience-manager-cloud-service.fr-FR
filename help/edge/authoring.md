@@ -4,9 +4,9 @@ description: Découvrez le fonctionnement de la création de contenu avec Edge 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 90%
 
 Avec Edge Delivery Services, la création est facile, rapide et flexible. Vous disposez de deux options pour créer du contenu pour Edge Delivery Services :
 
-* [Création basée sur des documents](#document-based) - Documents Microsoft Word ou Google, par exemple
-* [Éditeur universel](#universal-editor) : interface utilisateur moderne pour la création de contenu dans AEM
+* [Création basée sur des documents](#document-based) - Documents Microsoft Word ou Google, par exemple
+* [Éditeur universel](#universal-editor) - Interface utilisateur moderne pour la création de contenu dans AEM
 
 ## Création basée sur des documents  {#document-based}
 
-Dans le cas de la création basée sur les documents , vous pouvez utiliser diverses sources telles que Microsoft Word et Google Docs. Les documents provenant de ces sources deviennent des pages de votre site web. Les en-têtes, listes, images, éléments de police et vidéos peuvent tous être transférés de la source initiale vers votre site web. Vous pouvez ajouter des métadonnées à des fins d’optimisation pour les moteurs de recherche ou utiliser des blocs pour travailler avec du contenu structuré et ajouter des fonctionnalités.
+Dans le cas de la création basée sur des documents, vous pouvez utiliser diverses sources telles que Microsoft Word et Google Docs. Les documents provenant de ces sources deviennent des pages de votre site web. Les en-têtes, listes, images, éléments de police et vidéos peuvent tous être transférés de la source initiale vers votre site web. Vous pouvez ajouter des métadonnées à des fins d’optimisation pour les moteurs de recherche ou utiliser des blocs pour travailler avec du contenu structuré et ajouter des fonctionnalités.
 
-Pour plus d’informations sur la création basée sur les documents , reportez-vous à la section [ce document dans la documentation Edge Delivery Services.](/help/edge/docs/authoring.md)
+Pour plus d’informations sur la création basée sur des documents, reportez-vous à [ce document dans la documentation Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Création avec l’éditeur universel {#universal-editor}
 

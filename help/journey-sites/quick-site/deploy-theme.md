@@ -3,9 +3,9 @@ title: Déploiement de votre thème personnalisé
 description: Découvrez comment déployer le thème du site à l’aide du pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Une fois le pipeline terminé, vous pouvez informer l’administrateur de valide
 
 ## Fin du parcours ? {#end-of-journey}
 
-Félicitations ! Vous avez terminé le parcours de création rapide de site AEM ! Vous devriez maintenant :
+Félicitations. Vous avez terminé le parcours de création rapide de site AEM ! Vous devriez maintenant :
 
 * Découvrez comment Cloud Manager et le pipeline front-end fonctionnent pour gérer et déployer les personnalisations front-end.
 * Savoir comment créer un site AEM basé sur un modèle et comment télécharger le thème du site.
@@ -114,7 +114,7 @@ Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondisse
 * [webpack](https://webpack.js.org) - Les thèmes AEM utilisés pour construire rapidement des sites reposent sur webpack.
 * [Organisation des pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Ce guide explique comment organiser les pages de votre site AEM.
 * [Création de pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Ce guide explique comment ajouter de nouvelles pages à votre site.
-* [Gestion des pages](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Ce guide explique comment gérer les pages de votre site, y compris le déplacement, la copie et la suppression.
+* [Gestion des pages](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Ce guide explique comment gérer les pages de votre site, y compris comment les déplacer, les copier et les supprimer.
 * [Utilisation d’un package](/help/implementing/developing/tools/package-manager.md) - Les packages permettent l’importation et l’exportation de contenu de référentiel. Ce document explique comment utiliser les packages dans AEM 6.5, qui s’applique également à AEMaaCS.
 * [Parcours d’intégration](/help/journey-onboarding/overview.md) - Ce guide constitue votre point de départ pour vous assurer que vos équipes sont configurées et ont accès à AEM as a Cloud Service.
 * [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) - Consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.

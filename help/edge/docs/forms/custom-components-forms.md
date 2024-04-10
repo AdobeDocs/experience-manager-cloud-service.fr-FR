@@ -1,18 +1,15 @@
 ---
-title: Création de composants personnalisés pour un formulaire EDS
-description: Création de composants personnalisés pour un formulaire EDS
+title: Créer des composants personnalisés pour un formulaire EDS
+description: Créer des composants personnalisés pour un formulaire EDS
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0f58950527d68b57ccf8d0d949e707fba5684f76
-workflow-type: tm+mt
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '17'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-
-# Création de composants personnalisés
-
-
-
+# Créer des composants personnalisés

@@ -1,68 +1,68 @@
 ---
 title: Composants de bloc de formulaire adaptatif et leurs propriétés
-description: Ce document présente les composants de formulaire et leurs propriétés disponibles dans le service de diffusion Edge AEM Forms.
+description: Ce document présente une vue d’ensemble des composants de formulaire et de leurs propriétés disponibles dans AEM Forms Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1006'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Composants de bloc de formulaire adaptatif et leurs propriétés
 
-AEM Forms Edge Delivery Services vous permet de créer des formulaires interactifs et conviviaux à l’aide de divers composants. Ces composants répondent à différents types de collecte de données et peuvent être facilement personnalisés en fonction de vos besoins.
+AEM Forms Edge Delivery Services vous permet de créer des formulaires interactifs et conviviaux à l’aide de divers composants. Ces composants répondent à différents types de collecte de données et peuvent être facilement personnalisés en fonction de vos besoins.
 
 
-![Un exemple de feuille de calcul avec quelques composants et propriétés](/help/edge/assets/sample-form-in-spreadsheet.png)
+![Exemple de feuille de calcul avec quelques composants et propriétés](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-Le bloc Forms adaptatif génère une [structure de HTML uniforme](/help/edge/docs/forms/style-theme-forms.md) pour tous les types de champ et conteneurs (panneaux), en assurant la cohérence. Cette structure cohérente facilite la [style d’un formulaire](/help/edge/docs/forms/style-theme-forms.md).
+Le bloc de formulaires adaptatifs génère une [structure HTML uniforme](/help/edge/docs/forms/style-theme-forms.md) pour tous les types de champ et conteneurs (panneaux), garantissant ainsi la cohérence. Cette structure cohérente facilite la [définition du style d’un formulaire](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Composants disponibles
 
-Voici un aperçu des composants disponibles :
+Voici une vue d’ensemble des composants disponibles :
 
 ### Champs d’entrée
 
-* Tout le HTML valide5 [types d’entrée](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) et [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Par exemple, un bouton, une case à cocher, une couleur, une date, une heure-locale, un email, un fichier, masqué, une image, un mois, un numéro, un mot de passe, une radio, une plage, une réinitialisation, un envoi, un tel, un texte, une heure, une URL et une semaine.
+* Tous les [types d’entrées](https://developer.mozilla.org/fr-fr/docs/Web/HTML/Element/input#input_types) HTML5 valides et [textarea](https://developer.mozilla.org/fr-fr/docs/Web/HTML/Element/textarea). Par exemple : bouton, case à cocher, couleur, date, heure locale, e-mail, fichier, contenu masqué, image, mois, nombre, mot de passe, bouton radio, plage, réinitialisation, envoi, numéro de téléphone, texte, heure, URL et semaine.
 
 ### Contrôles de sélection
 
-* [Groupes de cases à cocher](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): pour sélectionner plusieurs options.
-* [Groupes de cases d&#39;option](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): pour sélectionner une seule option dans un groupe.
-* [Menus déroulants](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): pour afficher un menu d’options. Par exemple, une liste déroulante.
+* [Groupes de cases à cocher](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : pour sélectionner plusieurs options.
+* [Groupes de boutons radio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : pour sélectionner une seule option dans un groupe.
+* [Menus déroulants](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) : pour afficher un menu d’options. Par exemple, une zone de liste déroulante.
 
 ### Conteneurs
 
-* Panneaux/Conteneurs : pour regrouper les éléments de formulaire associés pour une meilleure organisation. Il s’agit d’une combinaison de [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) et [légende](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
+* Panneaux/Conteneurs : pour regrouper les éléments de formulaire associés en vue d’une meilleure organisation. Il s’agit d’une combinaison de [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) et de [légende](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## Propriétés des composants
 
-Chaque composant de formulaire est fourni avec différentes propriétés qui vous permettent de contrôler son comportement et son aspect. Ici, les propriétés prises en charge par les composants Bloc de Forms adaptatif :
+Chaque composant de formulaire est accompagné de différentes propriétés qui vous permettent de contrôler son comportement et son apparence. Les propriétés prises en charge par les composants du bloc de formulaires adaptatifs sont présentées ici :
 
 
 | Propriété | Composants applicables | Détails |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Type | Tous | Indique le type du composant. Cette propriété détermine le comportement et l’aspect du champ de saisie. Par exemple, pour les entrées de texte, le type peut être &quot;texte&quot;, &quot;email&quot; pour les entrées d’email, &quot;mot de passe&quot; pour les entrées de mot de passe. Prise en charge des blocs Forms adaptatifs  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tous les types d’entrée HTML5 valides</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> comme type. |
-| Nom | Tous | Identifie le composant pour l’envoi du formulaire. L’attribut name est utilisé lors de l’envoi des données de formulaire au serveur, associant la saisie de l’utilisateur à un champ spécifique. |
-| Libellé | Tous | Fournit des informations contextuelles aux utilisateurs. Le libellé est le texte affiché en regard du composant, qui fournit aux utilisateurs des conseils sur les informations à saisir. |
-| Valeur | Texte, Mot de passe, Email, Numéro, Plage, Date et ses variantes (datetime-local, mois, semaine, heure), Case à cocher, Radio, Masqué, Envoyer, Bouton | Indique la valeur initiale du composant. Pour les entrées de texte, la zone de texte et les éléments de sélection, il s’agit du texte ou de l’option par défaut qui s’affiche. Pour les composants radio et case à cocher, il s’agit de la valeur/des données envoyées lorsqu’elles sont sélectionnées. L’attribut value est facultatif, mais doit être considéré comme obligatoire pour les entrées de case à cocher et de radio. |
-| Espace réservé | Texte, Tel, Email, Mot de passe, Date (et ses variantes telles que mois, semaine, heure, datetime-local), Nombre, Plage | Offre des conseils pour une entrée attendue. L’attribut d’espace réservé fournit un bref indice qui décrit la valeur attendue du champ de saisie. Il disparaît lorsque l’utilisateur commence à saisir du texte. |
-| Description | Tous | Fournit des informations supplémentaires sur le composant et sert de texte d’aide. Le champ de description permet d’obtenir des explications supplémentaires sur l’objectif ou les instructions de remplissage du composant. Cela aide les utilisateurs à comprendre le contexte du champ de saisie. |
-| Visible | Tous | Contrôle la visibilité initiale. L’attribut visible est une propriété booléenne qui détermine si le composant est initialement visible ou masqué au chargement du formulaire. S’il est défini sur true, le champ s’affiche ; dans le cas contraire, il est masqué. |
-| Obligatoire | Texte, Tel, Email, Mot de passe, Date et ses variantes (datetime-local, mois, semaine, heure), Nombre, Case à cocher, Radio, Fichier, Sélectionner (liste déroulante), Zone de texte | Indique si le champ doit être renseigné avant envoi. L’attribut mandatory est une propriété booléenne utilisée pour spécifier si l’utilisateur doit fournir une entrée pour le champ avant d’envoyer le formulaire. |
-| Min. | Date (et ses variantes telles que le mois, la semaine, l’heure, la date, l’heure-locale), nombre, plage | Indique la valeur minimale autorisée. L’attribut min définit la valeur minimale que l’utilisateur peut entrer dans le champ. Par exemple, pour les entrées de nombre, il définit le nombre acceptable le plus petit. |
-| Max | Date (et ses variantes telles que le mois, la semaine, l’heure, la date, l’heure-locale), nombre, plage | Indique la valeur maximale autorisée. L’attribut max définit la valeur maximale que l’utilisateur peut entrer dans le champ. Par exemple, pour les entrées de date, il définit la date acceptable la plus élevée. |
-| Accepter | Fichier | Définit les types de fichiers autorisés. L’attribut accept est une liste séparée par des virgules de caractères de type de fichier uniques qui limite les types de fichiers que les utilisateurs peuvent sélectionner dans un champ de saisie de fichier. |
-| Multiple | Fichier | Permet plusieurs sélections. L’attribut multiple est une propriété booléenne utilisée avec les champs d’entrée de fichier. Lorsqu’elle est définie sur true, elle permet aux utilisateurs de sélectionner plusieurs fichiers. |
-| Options | Liste déroulante | Spécifie les options des menus déroulants. La propriété options est une liste de choix séparés par des virgules pour les menus déroulants, qui définit les options sélectionnables affichées pour l’utilisateur. |
-| Cochée | Case à cocher, Radio | Détermine si le champ est sélectionné par défaut. L’attribut coché est une propriété booléenne utilisée avec les entrées de case à cocher et de radio. Lorsque la valeur est définie sur true, elle indique que le champ est sélectionné par défaut au chargement du formulaire. |
-| FileSet | Tous | Regroupe les champs pour créer des sections visuellement distinctes dans un formulaire. L’élément fieldset regroupe les champs associés dans un formulaire, les séparant visuellement afin d’améliorer l’organisation et l’expérience utilisateur. </br> Pour organiser un ensemble de champs dans un jeu de champs, utilisez simplement la variable `fieldset` et indiquez son attribut name . Dans l’exemple ci-dessous, nous montrons comment les boutons radio sont encapsulés dans un seul jeu de champs pour une meilleure organisation. ![Exemple de champ](/help/edge/assets/fieldset-example.png) |
-| Répétable | Tous | Une propriété booléenne pour `fieldset` indiquant qu’un jeu de champs particulier peut être répété pour spécifié `Min` et `Max` nombre de fois. La variable `Min` doit être définie sur 1 ou supérieur, ne définissez pas la variable `Min` à 0. |
-| Expression visible | Tous | Une expression visible fait référence à une formule de feuille de calcul, indiquée par la balise &#39;=&#39;, utilisée pour contrôler la visibilité d’un champ. Dans cette formule, seule la propriété value des autres champs peut être utilisée, ce qui permet de gérer facilement la visibilité des champs dans le système. |
-| Expression de valeur | Tous | Une expression de valeur fait référence à une formule de feuille de calcul, indiquée par la balise &#39;=&#39;, utilisée pour contrôler la valeur d’un champ. Dans cette formule, seule la propriété value des autres champs peut être utilisée, ce qui permet une gestion simple de la valeur des champs dans le système. |
+| Type | Tous | Indique le type du composant. Cette propriété détermine le comportement et l’apparence du champ d’entrée. Par exemple, pour les entrées de texte, le type peut être « texte », « e-mail » pour les entrées d’e-mail, et « mot de passe » pour les entrées de mot de passe. Le bloc de formulaires adaptatifs prend en charge <a href="https://developer.mozilla.org/fr-fr/docs/Web/HTML/Element/input#input_types">tous les types d’entrée HTML5 valides</a>, <a href="https://developer.mozilla.org/fr-fr/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a> et <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> comme type. |
+| Nom | Tous | Identifie le composant pour l’envoi du formulaire. L’attribut name est utilisé lors de l’envoi des données de formulaire au serveur, en associant l’entrée de l’utilisateur ou de l’utilisatrice à un champ spécifique. |
+| Libellé | Tous | Fournit des informations contextuelles aux utilisateurs et utilisatrices. Le libellé est le texte affiché en regard du composant, qui fournit aux utilisateurs et utilisatrices des conseils sur les informations à saisir. |
+| Valeur | Texte, Mot de passe, E-mail, Nombre, Plage, Date et ses variantes (heure locale, mois, semaine, heure), Case à cocher, Bouton radio, Contenu masqué, Envoyer, Bouton | Indique la valeur initiale du composant. Pour les éléments d’entrées de texte, textarea et de sélection, il s’agit du texte ou de l’option par défaut qui s’affiche. Pour les composants de bouton radio et de case à cocher, il s’agit de la valeur/des données envoyées lorsqu’ils sont sélectionnés. L’attribut value est facultatif, mais doit être considéré comme obligatoire pour les entrées de case à cocher et de bouton radio. |
+| Espace réservé | Texte, Téléphone, E-mail, Mot de passe, Date (et ses variantes telles que mois, semaine, heure, heure locale), Nombre, Plage | Fournit des conseils sur l’entrée attendue. L’attribut placeholder fournit un bref indice qui décrit la valeur attendue du champ d’entrée. Il disparaît lorsque l’utilisateur ou l’utilisatrice commence à saisir. |
+| Description | Tous | Fournit des informations supplémentaires sur le composant et sert de texte d’aide. Le champ de description permet d’obtenir des explications supplémentaires sur l’objectif ou des instructions de remplissage du composant. Cela aide les utilisateurs et utilisatrices à comprendre le contexte du champ d’entrée. |
+| Visible | Tous | Contrôle la visibilité initiale. L’attribut visible est une propriété booléenne qui détermine si le composant est visible initialement ou masqué lors du chargement du formulaire. S’il est défini sur true, le champ s’affiche ; dans le cas contraire, il est masqué. |
+| Obligatoire | Texte, Téléphone, E-mail, Mot de passe, Date et ses variantes (heure locale, mois, semaine, heure), Nombre, Case à cocher, Bouton radio, Fichier, Sélectionner (liste déroulante), Textarea | Indique si le champ doit être renseigné avant l’envoi. L’attribut mandatory est une propriété booléenne utilisée pour spécifier si l’utilisateur ou l’utilisatrice doit fournir une entrée pour le champ avant d’envoyer le formulaire. |
+| Min | Date (et ses variantes telles que mois, semaine, heure, la date, heure locale), Nombre, Plage | Indique la valeur minimale autorisée. L’attribut min définit la valeur minimale que l’utilisateur ou l’utilisatrice peut saisir dans le champ. Par exemple, pour les entrées de nombres, il définit le nombre le plus faible acceptable. |
+| Max | Date (et ses variantes telles que mois, semaine, heure, la date, heure locale), Nombre, Plage | Indique la valeur maximale autorisée. L’attribut max définit la valeur maximale que l’utilisateur ou l’utilisatrice peut saisir dans le champ. Par exemple, pour les entrées de dates, il définit la date la plus élevée acceptable. |
+| Accepter | Fichier | Définit les types de fichiers autorisés. L’attribut accept est une liste séparée par des virgules de spécificateurs de type de fichier uniques qui limite les types de fichiers que les utilisateurs et les utilisatrices peuvent sélectionner dans un champ d’entrée de fichier. |
+| Multiple | Fichier | Autorise plusieurs sélections. L’attribut multiple est une propriété booléenne utilisée avec les champs d’entrée de fichier. Lorsqu’il est défini sur true, il permet aux utilisateurs et utilisatrices de sélectionner plusieurs fichiers. |
+| Options | Liste déroulante | Spécifie les options des menus déroulants. La propriété options est une liste séparée par des virgules d’options pour les menus déroulants, qui définit les options sélectionnables présentées à l’utilisateur ou à l’utilisatrice. |
+| Cochée | Case à cocher, Bouton radio | Détermine si le champ est sélectionné par défaut. L’attribut checked est une propriété booléenne utilisée avec les entrées de case à cocher et de bouton radio. Lorsqu’il est défini sur true, il indique que le champ est sélectionné par défaut lors du chargement du formulaire. |
+| Fieldset | Tous | Regroupe des champs pour créer des sections visuellement distinctes dans un formulaire. L’élément fieldset regroupe les champs associés dans un formulaire, les séparant visuellement afin d’améliorer l’organisation et l’expérience client. </br> Pour organiser un ensemble de champs dans un fieldset, utilisez simplement la propriété `fieldset` et spécifiez son attribut name. Dans l’exemple ci-dessous, nous montrons comment les boutons radio sont encapsulés dans un seul fieldset pour une meilleure organisation. ![Exemple de fieldset](/help/edge/assets/fieldset-example.png) |
+| Répétable | Tous | Propriété booléenne pour `fieldset` indiquant qu’un jeu de champs particulier peut être répété selon le nombre de fois `Min` et `Max` spécifié. La propriété `Min` doit être définie sur 1 ou plus. Ne définissez pas la propriété `Min` sur 0. |
+| Expression visible | Tous | Une expression visible fait référence à une formule de feuille de calcul, indiquée par la balise « = », utilisée pour contrôler la visibilité d’un champ. Dans cette formule, seule la propriété value d’autres champs peut être utilisée, ce qui permet de gérer facilement la visibilité des champs dans le système. |
+| Expression de valeur | Tous | Une expression de valeur fait référence à une formule de feuille de calcul, indiquée par la balise « = », utilisée pour contrôler la valeur d’un champ. Dans cette formule, seule la propriété value d’autres champs peut être utilisée, ce qui permet de gérer facilement la valeur des champs dans le système. |
 
 
 ## Voir également

@@ -3,9 +3,9 @@ title: En savoir plus sur la définition de métadonnées et de balisage pour le
 description: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment utili
 
 ## Ajout de métadonnées et de balises {#adding-metadata-and-tags}
 
-Vous pouvez ajouter des métadonnées et des balises à partir du panneau de droite de l’éditeur de fragments de contenu :
+Vous pouvez ajouter des métadonnées et des balises à partir du panneau de droite de l’éditeur de fragment de contenu :
 
-![Éditeur de fragment de contenu – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![Éditeur de fragment de contenu - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Prochaines étapes {#whats-next}
 

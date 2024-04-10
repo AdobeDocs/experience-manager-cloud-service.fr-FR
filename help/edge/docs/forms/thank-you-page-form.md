@@ -1,39 +1,39 @@
 ---
 title: Afficher un message de remerciement personnalisé après l’envoi du formulaire
-description: Découvrez comment configurer les pages de remerciement et la redirection pour le bloc Forms afin d’optimiser l’expérience utilisateur et de rationaliser les parcours utilisateur.
+description: Découvrez comment configurer les pages de remerciement et la redirection pour le bloc de formulaires afin d’optimiser l’expérience client et de rationaliser les parcours des utilisateurs et utilisatrices.
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # Afficher un message de remerciement personnalisé après l’envoi du formulaire
 
-Une fois qu’un utilisateur a envoyé un formulaire, il est essentiel de fournir une expérience transparente au moyen d’un message de remerciement. Cela confirme non seulement la réussite de l’envoi, mais améliore également la satisfaction des utilisateurs et les guide davantage dans leur parcours.
+Une fois qu’un utilisateur ou une utilisatrice a envoyé un formulaire, il est essentiel de fournir une expérience transparente au moyen d’un message de remerciement. Cela confirme non seulement la réussite de l’envoi, mais améliore également la satisfaction des utilisateurs et utilisatrices et les guide davantage dans leur parcours
 
-## Configuration d’un message de remerciement personnalisé
+## Configurer un message de remerciement personnalisé
 
-Le comportement par défaut du bloc Forms adaptatif est d’afficher le message de remerciement suivant lors de l’envoi. Le message s’affiche en haut du formulaire.
+Le comportement par défaut du bloc de formulaires adaptatifs consiste à afficher le message de remerciement suivant lors de l’envoi. Le message s’affiche en haut du formulaire.
 
-![message de remerciement par défaut](/help/edge/assets/thank-you-message.png)
+![Message de remerciement par défaut](/help/edge/assets/thank-you-message.png)
 
 
-Pour configurer un message de remerciement personnalisé pour votre bloc de Forms adaptatif, procédez comme suit :
+Pour configurer un message de remerciement personnalisé pour votre bloc de formulaires adaptatifs, procédez comme suit :
 
 1. Accédez à votre projet AEM sur votre ordinateur local ou le référentiel GitHub.
 
-1. Accédez à [AEM dossier du projet]\blocks\form\submit.js pour modification.
+1. Accédez au fichier [Dossier du projet AEM]\blocks\form\submit.js à des fins de modification.
 
-1. Recherchez le code suivant :
+1. Recherchez le code suivant.
 
    ```JavaScript
        thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
    ```
 
-1. Remplacez le message par défaut par votre message personnalisé. Par exemple,
+1. Remplacez le message par défaut par votre message personnalisé. par exemple,
 
 
    ```JavaScript
@@ -41,7 +41,7 @@ Pour configurer un message de remerciement personnalisé pour votre bloc de Form
    ```
 
 
-1. Enregistrez le fichier. Validez le fichier mis à jour dans le référentiel GitHub. Désormais, lorsque vous envoyez un formulaire, le message de remerciement personnalisé s’affiche. Par exemple,
+1. Enregistrez le fichier. Validez le fichier mis à jour dans votre référentiel GitHub. Désormais, lorsque vous envoyez un formulaire, le message de remerciement personnalisé s’affiche. par exemple,
 
 ![Message de remerciement personnalisé](/help/edge/assets/custom-thank-you-message.png)
 

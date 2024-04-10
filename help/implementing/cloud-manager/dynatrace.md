@@ -3,9 +3,9 @@ title: Dynatrace
 description: Découvrir comment utiliser Dynatrace avec AEM as a Cloud Service
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -28,8 +28,8 @@ Les détails à fournir pour les demandes de connectivité sont décrits ci-dess
 | **Champ** | **Description** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | URL de votre environnement Dynatrace.<br><br>Pour les clientes et clients Dynatrace, le format est `https://<your-environment-id>.live.dynatrace.com`.<br><br>Pour les clientes et clients de Dynatrace Managed, le format est `https://<your-managed-url>/e/<environmentId>`. |
-| [!DNL Dynatrace Environment ID] | Identifiant de votre environnement Dynatrace. Veuillez consulter [Comment puis-je obtenir mes détails de connexion Dynatrace ?](#how-do-i-get-my-dynatrace-connection-details) pour savoir comment obtenir ceci. |
-| [!DNL Dynatrace Environment Token] | Jeton de votre environnement Dynatrace. Veuillez consulter [Comment puis-je obtenir mes détails de connexion Dynatrace ?](#how-do-i-get-my-dynatrace-connection-details) pour savoir comment obtenir ceci.<br><br>Vous devez traiter ces informations de manière confidentielle. Utilisez donc des pratiques de sécurité appropriées. Par exemple, protégez le système par un mot de passe dans un site web tel que **zerobin.net**, auquel le ticket d’assistance clientèle peut faire référence, mot de passe compris. |
+| [!DNL Dynatrace Environment ID] | Identifiant de votre environnement Dynatrace. Consultez [Comment obtenir mes informations de connexion Dynatrace ?](#how-do-i-get-my-dynatrace-connection-details) pour savoir comment obtenir ces informations. |
+| [!DNL Dynatrace Environment Token] | Jeton de votre environnement Dynatrace. Consultez [Comment obtenir mes informations de connexion Dynatrace ?](#how-do-i-get-my-dynatrace-connection-details) pour savoir comment obtenir ces informations.<br><br>Vous devez traiter ces informations de manière confidentielle. Utilisez donc des pratiques de sécurité appropriées. Par exemple, protégez le système par un mot de passe dans un site web tel que **zerobin.net**, auquel le ticket d’assistance clientèle peut faire référence, mot de passe compris. |
 | [!DNL Dynatrace API access token] | Jeton d’accès à l’API de votre environnement Dynatrace.  Voir [Créer un jeton d’accès à l’API Dynatrace](#create-dynatrace-access-token) pour apprendre à réaliser cette opération.<br><br>Vous devez traiter ces informations de manière confidentielle. Utilisez donc des pratiques de sécurité appropriées. Par exemple, protégez le système par un mot de passe dans un site web tel que **zerobin.net**, auquel le ticket d’assistance clientèle peut faire référence, mot de passe compris.<br><br>Remarque : cela n’est nécessaire que pour Dynatrace Managed. |
 | [!DNL Dynatrace ActiveGate Port] | Votre port Dynamic ActiveGate auquel l’intégration d’AEM doit se connecter.<br><br>Remarque : cela n’est nécessaire que pour Dynatrace Managed. |
 | [!DNL Dynatrace ActiveGate Network Zone] | Votre [zone de réseau Dynatrace ActiveGate](https://docs.dynatrace.com/docs/manage/network-zones) pour acheminer efficacement les données de surveillance AEM entre les centres de données et les régions de réseau.<br><br>Remarque : une zone de réseau Dynatrace ActiveGate est facultative. |
@@ -39,20 +39,20 @@ Les détails à fournir pour les demandes de connectivité sont décrits ci-dess
 >
 >Une fois Dynatrace intégré, les données ne sont plus transmises à d’autres outils APM tels que New Relic, s’il a été activé au préalable.
 
-## FAQ {#faq}
+## Questions fréquentes {#faq}
 
-### De quelle licence ai-je besoin pour Dynatrace AEM Monitoring ? {#which-license-do-i-need-for-AEM-monitoring}
+### De quelle licence ai-je besoin pour la surveillance Dynatrace d’AEM ? {#which-license-do-i-need-for-AEM-monitoring}
 
-La surveillance d’Dynatrace AEM nécessite une licence Dynatrace. Les licences Dynatrace AEM sont basées sur [surveillance complète des piles pour les conteneurs Kubernetes](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). Les tailles de mémoire des conteneurs d’AEM surveillés (services de création et d’éditeur) sont automatiquement détectées.
+La surveillance Dynatrace d’AEM nécessite une licence Dynatrace. Les licences Dynatrace AEM sont basées sur [une surveillance full stack pour les conteneurs Kubernetes](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). Les tailles de la mémoire des conteneurs AEM surveillés (services de création et de publication) sont automatiquement détectées.
 
-Les spécifications de déploiement Adobe par environnement AEM sont les suivantes :
+Les spécifications de déploiement Adobe par environnement AEM sont les suivantes :
 
-* Production : en moyenne, 4 conteneurs, 16 Go de mémoire chacun
-* Non-production : en moyenne, 4 conteneurs, 8 Go de mémoire chacun
+* Production : en moyenne, 4 conteneurs, 16 Go de mémoire chacun.
+* Hors production : en moyenne, 4 conteneurs, 8 Go de mémoire chacun.
 
-Pour en savoir plus sur les licences Dynatrace, voir [Abonnement à Dynatrace Platform](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
+Pour en savoir plus sur les licences Dynatrace, consultez [Abonnement à la plateforme Dynatrace](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
 
-### Comment puis-je obtenir mes détails de connexion Dynatrace ? {#how-do-i-get-my-dynatrace-connection-details}
+### Comment obtenir mes informations de connexion Dynatrace ? {#how-do-i-get-my-dynatrace-connection-details}
 
 1. Exécutez la requête d’API suivante sur votre environnement Dynatrace :
 
@@ -61,9 +61,9 @@ Pour en savoir plus sur les licences Dynatrace, voir [Abonnement à Dynatrace Pl
    ```
 
 
-   Remplacer `<environmentUrl>` avec l’URL de votre environnement Dynatrace et `<accessToken>` avec votre jeton d’accès API créé.
+   Remplacez `<environmentUrl>` par l’URL de votre environnement Dynatrace et `<accessToken>` par votre jeton d’accès à l’API créé.
 
-1. Copiez le `<environmentId>` et `<environmentToken>` à partir du payload de la réponse et stockez-les dans un emplacement sécurisé.
+1. Copiez les éléments `<environmentId>` et `<environmentToken>` à partir de la payload de la réponse et stockez-les dans un emplacement sécurisé.
 
    ```
    {

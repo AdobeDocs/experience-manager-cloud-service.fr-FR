@@ -3,9 +3,9 @@ title: Créer un site de démonstration
 description: Créez un site de démonstration dans AEM basé sur une bibliothèque de modèles préconfigurés.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Ce document vous aide à comprendre comment créer un nouveau site à partir des
 * Savoir comment créer un site à partir d’un modèle.
 * Découvrir les principes de base de la navigation dans la structure du site et de la modification d’une page.
 
-## Création d’un site de démonstration ou d’un projet Screens {#create-site}
+## Créer un site de démonstration ou un projet Screens {#create-site}
 
 Une fois que le pipeline a déployé le module complémentaire de démonstration de référence, vous pouvez accéder à l’environnement de création AEM pour créer des sites de démonstration basés sur le contenu du module complémentaire.
 
@@ -89,7 +89,7 @@ Maintenant que votre site de démonstration est créé, vous pouvez le parcourir
 
    ![Modifier la page](assets/edit-page.png)
 
-Félicitations ! Vous pouvez maintenant explorer davantage le contenu de votre site de démonstration et découvrir tout ce que AEM a à offrir grâce au contenu des bonnes pratiques du module complémentaire de démonstration de référence.
+Félicitations. Vous pouvez maintenant explorer davantage le contenu de votre site de démonstration et découvrir tout ce que AEM a à offrir grâce au contenu des bonnes pratiques du module complémentaire de démonstration de référence.
 
 Créez d’autres sites en fonction d’autres modèles pour explorer d’autres fonctionnalités AEM.
 

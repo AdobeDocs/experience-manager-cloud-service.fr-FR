@@ -3,7 +3,7 @@ title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1409'
 ht-degree: 100%
 

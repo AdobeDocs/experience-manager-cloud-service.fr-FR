@@ -3,9 +3,9 @@ title: Créer un site à partir d’un modèle
 description: Découvrez comment créer rapidement un site AEM à l’aide d’un modèle de site.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1485'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ Tirez parti de ces connaissances et poursuivez votre parcours de création rapid
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Configuration de votre pipeline,](pipeline-setup.md) vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
 
 * [Modèle de site standard AEM](https://github.com/adobe/aem-site-template-standard) - Il s’agit du référentiel GitHub du modèle de site standard d’AEM.
-* [Organisation des pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Ce guide explique comment organiser les pages de votre site AEM.
+* [Organisation des pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Ce guide explique comment organiser les pages de votre site AEM.
 * [Création de pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Ce guide explique comment ajouter de nouvelles pages à votre site.
 * [Gestion des pages](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Ce guide explique comment gérer les pages de votre site, y compris le déplacement, la copie et la suppression.
 * [Utilisation d’un package](/help/implementing/developing/tools/package-manager.md) - Les packages permettent l’importation et l’exportation de contenu de référentiel. Ce document explique comment utiliser les packages dans AEM 6.5, qui s’applique également à AEMaaCS.

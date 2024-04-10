@@ -3,7 +3,7 @@ title: Gestion de vos sites de démonstration
 description: Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
 ht-degree: 100%
 
