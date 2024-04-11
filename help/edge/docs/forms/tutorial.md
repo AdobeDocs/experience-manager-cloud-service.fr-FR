@@ -3,7 +3,7 @@ title: Prise en main d’AEM Forms Edge Delivery Services - Tutoriel pour l�
 description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe Experience Manager Forms (AEM). D’ici dix à vingt minutes, vous aurez créé vos propres formulaires.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 99%
@@ -192,7 +192,7 @@ Pour prévisualiser du contenu non publié :
 
 L’exemple de contenu inclut une feuille « demande » qui sert de modèle pour le formulaire « demande ». Chaque ligne de la feuille représente un [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components) et les en-têtes de colonne définissent les [propriétés des champs](/help/edge/docs/forms/form-components.md#available-components). Cet exemple de formulaire vous offre une base pour la création de votre formulaire.
 
-![Formulaire de demande](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![Formulaire de demande](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 Commençons par mettre à jour un libellé de champ. Ouvrez la feuille « demande » pour effectuer des modifications, modifiez le libellé du bouton Envoyer en `Let's Chat` et utilisez AEM Sidekick pour prévisualiser et publier le fichier.
 
