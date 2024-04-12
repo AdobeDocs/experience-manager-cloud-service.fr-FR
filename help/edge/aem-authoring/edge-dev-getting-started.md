@@ -3,7 +3,7 @@ title: Guide de prise en main du développeur ou de la développeuse pour la cr�
 description: Ce guide vous permet de maîtriser l’exécution d’un nouveau site Adobe Experience Manager avec Edge Delivery Services et l’éditeur universel pour la création de contenu.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 90%
@@ -197,3 +197,4 @@ Consultez le guide [Création de blocs instrumentés pour une utilisation avec l
 >[!TIP]
 >
 >Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création AEM avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

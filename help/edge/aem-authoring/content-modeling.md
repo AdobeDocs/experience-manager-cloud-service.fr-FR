@@ -2,7 +2,7 @@
 title: Modéliser du contenu pour la création AEM avec des projets Edge Delivery Services
 description: Découvrez le fonctionnement de la modélisation de contenu pour la création AEM avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: bf6d0ff2f4aebb6620be46704072743578b096d2
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 93%
@@ -657,3 +657,4 @@ Si vous connaissez déjà la création de blocs, consultez le document . [Guide 
 >[!TIP]
 >
 >Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création AEM avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

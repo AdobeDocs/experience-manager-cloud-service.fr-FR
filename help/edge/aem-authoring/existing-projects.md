@@ -3,7 +3,7 @@ title: Utiliser Edge Delivery Services avec des projets AEM existants
 description: Découvrez comment tirer parti des avantages d’Edge Delivery Services dans vos projets AEM existants.
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%
@@ -39,3 +39,4 @@ La deuxième phase termine le processus en éliminant le chevauchement technolog
 ## Phase 2 – Basculer vers l’éditeur universel {#switch-ue}
 
 Au cours de cette phase, l’éditeur de page d’AEM est remplacé par l’éditeur universel. Étant donné que l’éditeur universel peut fonctionner directement avec des blocs, les composants principaux d’AEM et le convertisseur ne seront plus nécessaires.
+
