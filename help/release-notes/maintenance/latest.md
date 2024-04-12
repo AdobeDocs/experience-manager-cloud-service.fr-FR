@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Aucun.
 
 * [Obsolescence des informations d’identification JWT dans Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-Jetez un coup d’oeil à [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md) pour savoir ce qui a été abandonné ou supprimé dans AEM as a Cloud Service.
+Consultez les [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md) pour savoir ce qui est obsolète ou supprimé dans AEM as a Cloud Service.
 
 ### Avis de modification {#change-notice-15860}
 
@@ -55,4 +55,4 @@ Il est conseillé aux clientes et clients d’ajouter un fichier `.cloudmanager/
 | AEM OAK | 1.60-T20240131102219-0cde853 | [API Oak 1.60.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html) |
 | API SLING AEM | Version 2.27.2 | [API Apache Sling 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version 1.4.20-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
-| Composants principaux d’AEM | Version 2.24.4 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Composants principaux d’AEM | Version 2.24.4 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
