@@ -4,12 +4,20 @@ description: L’éditeur de règles de Forms adaptatif vous permet d’ajouter 
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
+exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '5755'
-ht-degree: 81%
+source-wordcount: '5444'
+ht-degree: 87%
 
 ---
+
+
+<span class="preview"> Cet article contient du contenu pour certaines fonctionnalités de version anticipée. Ces fonctions de préversion sont accessibles uniquement via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). Les fonctionnalités du programme de version préliminaire sont les suivantes :
+* Prise en charge de l’implémentation de conditions imbriquées avec la fonctionnalité Lorsque-alors-autre
+* Validation ou réinitialisation des panneaux et des formulaires, y compris les champs
+* Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions de gauche et de flèche (prise en charge d’ES10) dans les fonctions personnalisées.
+</span>
 
 # Ajout de règles à un formulaire adaptatif (composants principaux) {#adaptive-forms-rule-editor}
 
@@ -328,13 +336,13 @@ L’éditeur de règles offre une interface utilisateur exhaustive et néanmoins
 Pour lancer l’interface utilisateur de l’éditeur de règles :
 
 1. Ouvrez un formulaire adaptatif en mode Création.
-1. Sélectionnez l’objet de formulaire pour lequel vous souhaitez créer une règle, puis, dans la barre d’outils des composants, sélectionnez ![edit-rules](assets/edit-rules-icon.svg). L’interface utilisateur de l’éditeur de règles s’affiche.
+1. Sélectionnez l’objet de formulaire pour lequel vous voulez créer une règle, puis ![edit-rules](assets/edit-rules-icon.svg) de la barre d’outils Composant. L’interface utilisateur de l’éditeur de règles s’affiche.
 
    ![create-rules](assets/create-rules.png)
 
    Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cet écran. Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](rule-editor.md#p-manage-rules-p).
 
-1. Sélectionner **[!UICONTROL Créer]** pour écrire une nouvelle règle. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’affiche par défaut la première fois que vous lancez l’éditeur de règles.
+1. Sélectionnez **[!UICONTROL Créer]** pour créer une règle. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’affiche par défaut la première fois que vous lancez l’éditeur de règles.
 
    ![Interface utilisateur de l’éditeur de règles](assets/rule-editor-ui.png)
 
@@ -414,15 +422,15 @@ Pour créer des règles :
 
 1. Tout d’abord, créez la règle pour contrôler la visibilité du champ Salaire du conjoint en fonction de l’option de l’utilisateur pour le bouton radio État civil.
 
-   Ouvrez le formulaire de demande de prêt en mode Création. Sélectionnez la variable **[!UICONTROL État civil]** composant et sélectionnez ![edit-rules](assets/edit-rules-icon.svg). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
+   Ouvrez le formulaire de demande de prêt en mode Création. Sélectionnez le composant **[!UICONTROL État civil]** et choisissez ![edit-rules](assets/edit-rules-icon.svg). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1-cc.png)
 
    Lorsque vous lancez l’éditeur de règles, la règle Lorsque est sélectionnée par défaut. En outre, l’objet de formulaire (dans ce cas, État civil) d’où vous avez lancé l’éditeur de règles est spécifié dans l’instruction Lorsque.
 
-   Bien que vous ne puissiez pas changer ou modifier l’objet sélectionné, vous pouvez utiliser la liste déroulante de règles, comme indiqué ci-dessous, pour sélectionner un autre type de règle. Si vous souhaitez créer une règle sur un autre objet, sélectionnez Annuler pour quitter l’éditeur de règles et la lancer à nouveau à partir de l’objet de formulaire de votre choix.
+   Bien que vous ne puissiez pas changer ou modifier l’objet sélectionné, vous pouvez utiliser la liste déroulante de règles, comme indiqué ci-dessous, pour sélectionner un autre type de règle. Si vous souhaitez créer une règle sur un autre objet, sélectionnez Annuler pour quitter l’éditeur de règles et relancez-le depuis l’objet de formulaire de votre choix.
 
-1. Sélectionner **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL est égal à]**. Le champ **[!UICONTROL Saisissez une chaîne]** s’affiche.
+1. Sélectionnez le menu déroulant **[!UICONTROL Sélectionner l’état]** et choisissez **[!UICONTROL est égal à]**. Le champ **[!UICONTROL Saisissez une chaîne]** s’affiche.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
@@ -440,7 +448,7 @@ Pour créer des règles :
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
-1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner la variable **[!UICONTROL Déposez l’objet ou sélectionnez ici]** et sélectionnez le champ **[!UICONTROL Salaire du conjoint]** dans le menu contextuel, qui répertorie tous les objets de formulaire du formulaire.
+1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]**, puis le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
@@ -453,7 +461,7 @@ Pour créer des règles :
 1. Dans l’instruction Else, sélectionnez **[!UICONTROL Masquer]** de la **[!UICONTROL Sélectionner une action]** menu déroulant.
    ![when-else](assets/when-else-1.png)
 
-1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner la variable **[!UICONTROL Déposez l’objet ou sélectionnez ici]** et sélectionnez le champ **[!UICONTROL Salaire du conjoint]** dans le menu contextuel, qui répertorie tous les objets de formulaire du formulaire.
+1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]**, puis le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
    ![when-else](assets/when-else-2.png)
 
    La règle s’affiche comme suit dans l’éditeur de règles.
@@ -462,7 +470,7 @@ Pour créer des règles :
 
 
 
-1. Sélectionner **[!UICONTROL Terminé]** pour enregistrer la règle.
+1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
 
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
@@ -477,13 +485,13 @@ Pour créer des règles :
 
 1. Ensuite, créez une règle pour calculer le niveau d’éligibilité de prêt, à hauteur de 50 % du salaire total, puis affichez-la dans le champ Éligibilité de prêt. À cet effet, créez des règles **[!UICONTROL Définir la valeur de]** sur le champ Éligibilité de prêt.
 
-   En mode de création, sélectionnez l’option **[!UICONTROL Éligibilité de prêt]** champ et sélectionnez ![edit-rules](assets/edit-rules-icon.svg). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
+   En mode Création, sélectionnez le champ **[!UICONTROL Éligibilité de prêt]**, puis ![edit-rules](assets/edit-rules-icon.svg). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
 
 1. Sélectionnez la règle **[!UICONTROL Définir la valeur de]** dans la liste déroulante des règles.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. Sélectionner **[!UICONTROL Sélectionner une option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
+1. Choisissez **[!UICONTROL Sélectionner l’option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
@@ -497,7 +505,7 @@ Pour créer des règles :
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Ensuite, sélectionnez dans la zone mise en surbrillance autour du champ d’expression et sélectionnez **[!UICONTROL Expression étendue]**.
+1. Ensuite, sélectionnez la zone en surbrillance autour du champ Expression et choisissez **[!UICONTROL Étendre l’expression]**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
@@ -511,7 +519,7 @@ Pour créer des règles :
 
    Créez ensuite une condition qui, lorsqu’elle renvoie True, permet que l’expression s’exécute.
 
-1. Sélectionner **[!UICONTROL Ajouter une condition]** pour ajouter une instruction Lorsque .
+1. Sélectionnez **[!UICONTROL Ajouter une condition]** pour ajouter une instruction Lorsque.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -563,83 +571,83 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Fonctions personnalisées dans l’éditeur de règles {#custom-functions}
 
-Vous pouvez également utiliser des fonctions personnalisées dans votre éditeur de règles. Pour plus d’informations sur la création de fonctions personnalisées, reportez-vous à l’article [Fonctions personnalisées dans les Forms adaptatives](/help/forms/create-and-use-custom-functions.md).
-
-Outre les fonctionnalités prêtes à l’emploi, comme *Somme de*, qui sont répertoriées sous Fonctions, vous pouvez créer des fonctions personnalisées dont vous avez besoin fréquemment. Assurez-vous de la présence de la balise `jsdoc` au-dessus de la fonction que vous créez.
-
-La balise `jsdoc` associée est nécessaire :
-
-* Si vous souhaitez personnaliser la configuration et la description
-* Parce qu’il y a plusieurs façons de déclarer une fonction dans`JavaScript,` et que les commentaires permettent de conserver une trace des fonctions.
-
-L’éditeur de règles prend en charge la syntaxe JavaScript ES2015 pour les scripts et les fonctions personnalisées.
-Pour plus d’informations, consultez [jsdoc.app](https://jsdoc.app/).
-
-Balises `jsdoc` prises en charge :
-
-* Syntaxe
-**Privé** : `@private`
-Une fonction privée n’est pas incluse comme fonction personnalisée.
-
-* Syntaxe
-**Nom** : `@name funcName <Function Name>`
-Autrement,`,` vous pouvez utiliser : `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
-  `funcName` est le nom de la fonction (les espaces ne sont pas autorisés).
-  `<Function Name>` est le nom d’affichage de la fonction.
-
-* Syntaxe
-**Paramètre** : `@param {type} name <Parameter Description>`
-Autrement, vous pouvez utiliser : `@argument` `{type} name <Parameter Description>` **ou** `@arg` `{type}` `name <Parameter Description>`.
-Affiche les paramètres utilisés par la fonction. Une fonction peut comporter plusieurs balises de paramètre, une balise pour chaque paramètre dans l’ordre d’occurrence.
-  `{type}` représente le type de paramètre. Les types de paramètre sont les suivants :
-
-   1. chaîne
-   1. nombre
-   1. booléen
-   1. portée
-   1. chaîne[]
-   1. nombre[]
-   1. boolean[]
-   1. date
-   1. date[]
-   1. tableau
-   1. objet
-
-  `scope` fait référence à un objet global spécial fourni par le composant d’exécution de formulaires. Il doit s’agir du dernier paramètre et il n’est pas visible par l’utilisateur dans l’éditeur de règles. Vous pouvez utiliser la portée pour accéder à un objet proxy de formulaire et de champ lisible pour lire les propriétés, l’événement qui a déclenché la règle et un ensemble de fonctions pour manipuler le formulaire.
-
-  `object` type est utilisé pour transmettre l’objet de champ lisible dans le paramètre à une fonction personnalisée au lieu de transmettre la valeur.
-
-  Tous les types de paramètre sont classés dans l’une des catégories ci-dessus. Ils sont tous pris en charge. Assurez-vous que vous sélectionnez l’un des types ci-dessus. Les types ne sont pas sensibles à la casse. Les espaces ne sont pas autorisés dans le nom du paramètre.  La description du paramètre peut contenir plusieurs mots.
-
-* **Paramètre facultatif**
-Syntaxe : `@param {type=} name <Parameter Description>`
-Vous pouvez également utiliser : `@param {type} [name] <Parameter Description>`
-Par défaut, tous les paramètres sont obligatoires. Vous pouvez marquer un paramètre facultatif en ajoutant `=` dans le type du paramètre ou en mettant le nom du paramètre entre crochets.
-
-  Par exemple, déclarons `Input1` comme paramètre facultatif :
-   * `@param {type=} Input1`
-   * `@param {type} [Input1]`
-
-* Syntaxe
-**Type de retour** : `@return {type}`
-Autrement, vous pouvez utiliser `@returns {type}`.
-Ajoute des informations sur la fonction, comme son objectif.
-{type} représente le type de valeur renvoyée de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
-
-   1. chaîne
-   2. nombre
-   3. booléen
-   4. chaîne[]
-   5. nombre[]
-   6. boolean[]
-   7. date
-   8. date[]
-   9. tableau
-   10. objet
-
-  Tous les autres types de retour sont classés en dessous de l’un des précédents. Ils sont tous pris en charge. Assurez-vous que vous sélectionnez l’un des types ci-dessus. Les types de valeur renvoyée ne sont pas sensibles à la casse.
+Outre les fonctions prêtes à l’emploi telles que *Somme de* qui sont répertoriés sous **Sortie de fonctions**, vous pouvez également utiliser des fonctions personnalisées dans votre éditeur de règles. L’éditeur de règles prend en charge la syntaxe ECMAScript 2019 JavaScript pour les scripts et les fonctions personnalisées. Pour plus d’informations sur la création de fonctions personnalisées, reportez-vous à l’article [Fonctions personnalisées dans les Forms adaptatives](/help/forms/create-and-use-custom-functions.md).
 
 <!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
+
+Accompanying `jsdoc` is required:
+
+* If you want custom configuration and description
+* Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+  All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
+
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -647,7 +655,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
@@ -739,22 +747,22 @@ var c = {
 
 ## Gestion des règles {#manage-rules}
 
-Toutes les règles existantes sur un objet de formulaire sont répertoriées lorsque vous sélectionnez l’objet et sélectionnez ![edit-rules1](assets/edit-rules-icon.svg). Vous pouvez afficher le titre et un aperçu du résumé de la règle. En outre, l’interface utilisateur vous permet de développer et d’afficher le résumé complet d’une règle, de changer l’ordre des règles, de les modifier et de les supprimer.
+Les règles existantes sur un objet de formulaire sont répertoriées lorsque vous sélectionnez l’objet et ![edit-rules1](assets/edit-rules-icon.svg). Vous pouvez afficher le titre et un aperçu du résumé de la règle. En outre, l’interface utilisateur vous permet de développer et d’afficher le résumé complet d’une règle, de changer l’ordre des règles, de les modifier et de les supprimer.
 
 ![Liste-rules](assets/list-rules-cc.png)
 
 Vous pouvez effectuer les actions suivantes sur les règles :
 
-* **Développer/Réduire** : la colonne Contenu dans la liste des règles affiche le contenu des règles. Si l’intégralité du contenu de la règle n’est pas visible dans la vue par défaut, sélectionnez ![expand-rule-content](assets/Smock_ChevronDown.svg) pour l’étendre.
+* **Développer/Réduire** : la colonne Contenu dans la liste des règles affiche le contenu des règles. Si le contenu entier des règles n’est pas visible dans l’affichage par défaut, sélectionnez ![expand-rule-content](assets/Smock_ChevronDown.svg) pour le développer.
 
 * **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle en haut s’exécute en premier, suivie des autres règles du même type. Par exemple, si vous avez les règles Lorsque, Afficher, Activer et Lorsque en première, deuxième, troisième et quatrième positions depuis le haut respectivement, la règle Lorsque du haut est exécutée en premier, suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
 Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](assets/sort-rules.svg) en regard ou la faire glisser et la déposer dans l’ordre souhaité dans la liste.
 
 * **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. Les options de modification et de suppression de la règle s’affichent. Sélectionner **[!UICONTROL Modifier]** pour ouvrir la règle sélectionnée dans l’éditeur de règles <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
 
-* **Supprimer**: pour supprimer une règle, sélectionnez-la, puis **[!UICONTROL Supprimer]**.
+* **Supprimer** : pour supprimer une règle, sélectionnez-la puis choisissez **[!UICONTROL Supprimer]**.
 
-* **Activer/Désactiver**: lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et sélectionner **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner et sélectionner Activer dans la barre d’outils des actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
+* **Activer/Désactiver**: lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et sélectionner **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
 
 ![Désactiver la règle](assets/disablerule-cc.png)
 
@@ -774,13 +782,13 @@ Pour copier-coller des règles, procédez comme suit :
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Sélectionnez un autre objet de formulaire auquel vous souhaitez coller la règle et sélectionnez **[!UICONTROL Coller]**. De plus, vous pouvez modifier la règle pour y apporter des modifications.
+1. Sélectionnez un autre objet de formulaire dans lequel vous souhaitez coller la règle et choisissez **[!UICONTROL Coller]**. De plus, vous pouvez modifier la règle pour y apporter des modifications.
 
    >[!NOTE]
    >
    >Vous pouvez coller une règle dans un autre objet de formulaire uniquement si cet objet de formulaire prend en charge les événement de la règle copiée. Par exemple, un bouton prend en charge l’événement Cliquer. Vous pouvez coller une règle avec un événement Cliquer sur un bouton mais pas dans une case à cocher.
 
-1. Sélectionner **[!UICONTROL Terminé]** pour enregistrer la règle.
+1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer la règle.
 
 ## Expressions imbriquées {#nestedexpressions}
 
@@ -790,7 +798,7 @@ Voici un exemple de règle imbriquée qui affiche un message concernant l’éli
 
 ![Expression complexe](assets/complexexpression.png)
 
-Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Sélectionnez la poignée et survolez-la avec la souris ( ![handle](assets/drag-handle.svg)) avant une condition. Une fois le pointeur affiché sous forme de main comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
+Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Appuyez et passez le curseur sur la poignée (![handle](assets/drag-handle.svg)) avant une condition. Une fois le pointeur affiché sous forme de main comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
 
 ![Glisser-déposer](assets/drag-and-drop.png)
 

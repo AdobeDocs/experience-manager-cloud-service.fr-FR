@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 82%
+source-wordcount: '1409'
+ht-degree: 80%
 
 ---
 
@@ -110,9 +110,9 @@ Les API de manipulation de documents Communications permettent de combiner, de r
 
 ### Assemblage de documents PDF
 
-Vous pouvez utiliser les API de manipulation de documents pour assembler deux documents PDF ou XDP ou plus dans un seul document PDF ou portfolio PDF. Vous trouverez ci-dessous quelques façons d’assembler des documents PDF :
+Vous pouvez utiliser les API de manipulation de documents pour assembler deux documents PDF ou XDP ou plus dans un seul document PDF ou portfolio PDF. Vous pouvez assembler des documents PDF de différentes façons, dont voici quelques exemples :
 
-* Assemblage d’un document de PDF simple
+* Assemblage d’un document PDF unique
 * Création d’un portfolio PDF
 * Assemblage de documents chiffrés
 * Assemblage de documents à l’aide de la numérotation Bates
@@ -123,9 +123,9 @@ Schéma : assemblage d’un document PDF unique à partir de plusieurs document
 
 ### Désassemblage de documents PDF
 
-Vous pouvez utiliser les API de manipulation de documents pour désassembler un document PDF. Ces API peuvent extraire des pages du document source ou diviser un document source en fonction de signets. En règle générale, cette tâche est utile si le document du PDF a été créé à l’origine à partir de nombreux documents individuels, tels qu’une collection d’instructions.
+Vous pouvez utiliser les API de manipulation de documents pour désassembler un document PDF. Ces API peuvent extraire des pages du document source ou diviser un document source en fonction de signets. Cette tâche est particulièrement utile lorsque le document PDF d’origine a été créé à partir de plusieurs documents séparés, par exemple un ensemble d’instructions.
 
-* Extraction de pages d’un document source
+* Extraire des pages d’un document source
 * Division d’un document source en fonction de signets
 
 ![Division d’un document source en plusieurs documents en fonction de signets](assets/as_intro_pdfsfrombookmarks.png)
@@ -171,21 +171,22 @@ Le service DocAssurance comprend les API Signature et Encyption :
 
 ### API de signature
 
-Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seuls les destinataires prévus peuvent modifier les documents. Les fonctions de sécurité étant appliquées au document lui-même, celui-ci reste sécurisé et contrôlé pendant tout son cycle de vie. Un document reste sécurisé au-delà du pare-feu, lorsqu’il est téléchargé hors ligne et lorsqu’il est renvoyé à votre entreprise. Vous pouvez accomplir les tâches suivantes à l’aide des API de signature :
+Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Les fonctions de sécurité sont appliquées au document lui-même, le document reste sécurisé et contrôlé pendant tout son cycle de vie. Le document reste sécurisé au-delà du pare-feu, lorsqu’il est téléchargé hors ligne et lorsqu’il est renvoyé à votre entreprise. Vous pouvez accomplir les tâches suivantes à l’aide des API de signature :
 
-* Ajoutez un champ de signature à un document de PDF.
+* Ajoutez un champ de signature visible à un document de PDF.
+* Ajoutez un champ de signature invisible à un document de PDF.
 * Signez le champ de signature spécifié dans un document de PDF.
 * Certifier un document de PDF
 
 ### API de chiffrement
 
-Les API Encryption vous permettent de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Une personne autorisée peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur ou l’utilisatrice doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. De même, si un document PDF est chiffré avec un certificat, l’utilisateur ou l’utilisatrice doit déchiffrer le document PDF avec la clé publique correspondant au certificat (clé privée) qui a été utilisé pour chiffrer le document PDF.
+Les API Encryption vous permettent de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Une personne autorisée peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 Vous pouvez accomplir ces tâches à l’aide des API Encryption :
 
 * Chiffrez un document de PDF avec un mot de passe.
 * Supprimez le chiffrement avec mot de passe d’un document de PDF.
-* Récupérez le type de sécurité appliqué à un document de PDF.
+* Renvoyer le type de sécurité appliqué à un document PDF.
 
 Les API de signature et les API de chiffrement sont [API synchrones](#types-of-communications-apis-types).
 
