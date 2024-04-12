@@ -2,9 +2,9 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3057'
+source-wordcount: '3068'
 ht-degree: 99%
 
 ---
@@ -298,3 +298,4 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [API REST Assets](/help/assets/content-fragments/assets-api-content-fragments.md) – Documentation technique expliquant comment créer et modifier des fragments de contenu (et d’autres ressources).
 * [Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) – Documentation technique sur les requêtes persistantes dans AEM
 * [Modes Pile complète et Découplé dans AEM](/help/implementing/developing/headful-headless.md) – Discussion complète sur les niveaux d’intégration en mode découplé disponibles dans AEM.
+* La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.

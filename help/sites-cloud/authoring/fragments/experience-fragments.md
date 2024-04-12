@@ -2,10 +2,10 @@
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 97%
+source-wordcount: '2083'
+ht-degree: 95%
 
 ---
 
@@ -38,6 +38,7 @@ Sans les fragments d’expérience, il doit copier et coller ce fragment. La cr�
 Les fragments d’expérience rendent inutiles les opérations de copier/coller.
 * Pour gérer le scénario d’utilisation CMS sans interface.
 Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système ou un point de contact tiers utiliserait cette expérience, puis la diffuserait à l’utilisateur.
+* Avec [Gestion multisite (MSM)](/help/sites-cloud/administering/msm/overview.md); en tant que fragment d’expérience faisant partie d’une page. Cela s’applique à la fois aux fragments individuels et aux dossiers dans lesquels ils résident.
 
 >[!NOTE]
 >
@@ -237,6 +238,10 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
    * **Variation**
    * **Variation en tant que Live Copy**.
 
+     >[!NOTE]
+     >
+     >La création d’une variation initiale en tant que Live Copy héritera du titre en utilisant la source de Live Copy comme variation de Principal.
+
 1. Définissez les propriétés requises :
 
    * **Modèle**
@@ -279,7 +284,7 @@ Vous pouvez sélectionner un ou plusieurs composants pour créer un bloc de cré
 
 ### Création d’un bloc de création {#creating-a-building-block}
 
-Pour créer un bloc de création :
+Pour créer un bloc de création :
 
 1. Dans l’éditeur de fragments d’expérience, sélectionnez les composants à réutiliser :
 

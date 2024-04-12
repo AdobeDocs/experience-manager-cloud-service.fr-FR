@@ -4,9 +4,9 @@ description: Découvrez comment les fragments de contenu dans AEM as a Cloud Ser
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 46a6f5ace7aa3def8021dd16ea394b780afce2e6
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1803'
 ht-degree: 41%
 
 ---
@@ -105,6 +105,8 @@ Une fois les fragments créés, vous pouvez :
 >* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
 >* [Création de page à partir de fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md).
+>* La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+
 
 ## Principales et variations {#main-and-variations}
 

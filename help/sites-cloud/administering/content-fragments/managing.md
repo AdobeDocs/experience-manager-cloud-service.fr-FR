@@ -4,9 +4,9 @@ description: Découvrez comment gérer vos fragments de contenu AEM à partir de
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2629'
 ht-degree: 43%
 
 ---
@@ -72,6 +72,8 @@ Pour plus d’informations, consultez la section suivante :
 
 Sélection **Fragments de contenu** ouvre la console dans un nouvel onglet.
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Console Fragments de contenu - Aperçu](assets/cf-managing-console-overview.png)
 
 Vous pouvez constater ici qu’il existe trois zones principales :
@@ -84,6 +86,7 @@ Vous pouvez constater ici qu’il existe trois zones principales :
    * Ici, vous pouvez masquer ou afficher l’arborescence de dossiers.
    * Vous pouvez sélectionner une branche spécifique de l’arborescence.
    * Il peut être redimensionné pour afficher les dossiers imbriqués.
+   * Vous pouvez choisir entre l’affichage de fragments de contenu ou [Ressources](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * Le panneau principal/droit, à partir duquel vous pouvez :
    * Consultez la liste de tous les fragments de contenu dans la branche sélectionnée de l’arborescence :
       * Les fragments de contenu du dossier sélectionné et tous les dossiers enfants s’affichent :
@@ -132,6 +135,8 @@ Certaines actions sont disponibles à partir de la console, sans sélectionner d
 #### Actions pour un fragment de contenu (sélectionné) {#actions-selected-content-fragment}
 
 La sélection d’un fragment spécifique ouvre une barre d’outils axée sur les actions disponibles pour ce fragment. Vous pouvez également sélectionner plusieurs fragments. La sélection des actions sera adaptée en conséquence.
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Console Fragments de contenu - Barre d’outils pour un fragment sélectionné](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -254,7 +259,7 @@ Pour ouvrir votre fragment à des fins de modification :
 1. Utilisez la console **Fragments de contenu** afin de naviguer jusqu’à l’emplacement de votre fragment de contenu.
 1. Ouvrez le fragment à modifier en le sélectionnant, puis **Ouvrir dans le nouvel éditeur** dans la barre d’outils.
 
-1. L’éditeur de fragments s’ouvre. Sélectionnez les **Variation** et apportez vos modifications selon les besoins (elles seront automatiquement enregistrées) :
+1. L’éditeur de fragment s’ouvre. Sélectionnez les **Variation** et apportez vos modifications selon les besoins (elles seront automatiquement enregistrées) :
 
    ![Éditeur de fragment](assets/cf-managing-editor.png)
 
@@ -368,6 +373,8 @@ Lorsque la boîte de dialogue correspondante s’ouvre, vous pouvez sélectionne
 
 ## Rechercher et remplacer {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 La variable **Remplacer** est disponible (dans la barre d’outils supérieure) pour rechercher et remplacer du texte spécifié dans les fragments de contenu sélectionnés.
 
 ![Rechercher et remplacer](assets/cf-managing-find-replace.png)
@@ -380,8 +387,9 @@ Avant le remplacement, les critères de validation sont vérifiés et vous êtes
 >
 >Si vous sélectionnez plus de 20 fragments de contenu, le message s’affiche. **Impossible de trouver et de remplacer**.
 
-![Confirmer le remplacement](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![Confirmer le remplacement](assets/cf-managing-confirm-replace.png)
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 
@@ -446,6 +454,8 @@ Le panneau de filtrage offre les options suivantes :
 
 Une fois la sélection effectuée, la fonction **Filtrage par** Les options s’affichent (sous la zone Rechercher). Ils peuvent être désélectionnés de là. Par exemple :
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Console Fragments de contenu - Filtrage](assets/cf-managing-console-filter.png)
 
 ### Filtrage rapide {#fast-filtering}
@@ -468,9 +478,13 @@ Une fois cette option sélectionnée, elle s’affiche sous forme de prédicat d
 
 La zone de recherche prend en charge la recherche de texte intégral. Saisissez vos termes de recherche dans la zone de recherche :
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Console Fragments de contenu - recherche](assets/cf-managing-console-search-specification.png)
 
 Fournit les résultats sélectionnés :
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Console Fragments de contenu - résultats de la recherche](assets/cf-managing-console-search-results.png)
 

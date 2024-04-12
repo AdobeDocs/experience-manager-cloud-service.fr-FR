@@ -3,9 +3,9 @@ title: Prise en charge des fragments de contenu Adobe Experience Manager as a Cl
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion Adobe Experience Manager sans interface utilisateur.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1804'
 ht-degree: 57%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 57%
 | AEM as a Cloud Service | Cet article |
 
 Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion Adobe Experience Manager (AEM) sans interface utilisateur.
+
+>[!NOTE]
+>
+>La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 >[!NOTE]
 >
@@ -91,6 +95,10 @@ La méthode HTTP détermine l’opération à exécuter :
 >Le corps de la requête et/ou les paramètres URL peuvent être utilisés pour configurer certaines de ces opérations ; par exemple, spécifier qu’un dossier ou une ressource doivent être créés par une requête **POST**.
 
 Le format exact des requêtes prises en charge est défini dans la documentation [Référence de l’API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference).
+
+>[!NOTE]
+>
+>La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 ### Comportement transactionnel {#transactional-behavior}
 
@@ -168,6 +176,10 @@ Pour plus d’informations sur les fonctionnalités disponibles via l’API, voi
 * L’[API REST Assets](/help/assets/mac-api-assets.md)
 * [Types d’entité](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), où sont expliquées les fonctionnalités propres à chaque type pris en charge (en fonction des fragments de contenu).
 
+>[!NOTE]
+>
+>La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+
 ### Pagination {#paging}
 
 L’API REST Assets prend en charge la pagination (pour les demandes de GET) au moyen des paramètres d’URL :
@@ -221,7 +233,7 @@ Les ressources peuvent comporter plusieurs rendus. Elles sont généralement exp
 
 ### Fragments de contenu {#content-fragments}
 
-Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Ils peuvent être utilisés pour accéder à des données structurées, telles que des textes, des nombres, des dates, etc.
+Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Il permet d’accéder aux données structurées, telles que les textes, les nombres, les dates, etc.
 
 Comme il existe plusieurs différences au sein des ressources *standard* (telles que les images ou le son), certaines règles supplémentaires s’appliquent pour les gérer.
 
@@ -238,7 +250,7 @@ Les fragments de contenu :
 
 Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, la variable *client* doit connaître le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile, car les types de données, etc., font partie de la définition.
 
-Pour créer un fragment de contenu, le chemin (référentiel interne) du modèle doit être fourni.
+Pour créer un fragment de contenu, le chemin (référentiel interne) du modèle doit être indiqué.
 
 #### Contenu associé {#associated-content}
 
@@ -262,6 +274,8 @@ L’utilisation peut varier selon que vous utilisez un environnement de créatio
 >[!NOTE]
 >
 >Voir [Référence d’API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 ## Limites {#limitations}
 
@@ -352,6 +366,8 @@ Pour accéder aux références d’API détaillées :
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 
    * [Fonctionnalités disponibles](/help/assets/mac-api-assets.md#available-features)
+
+* La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 ## Ressources supplémentaires {#additional-resources}
 

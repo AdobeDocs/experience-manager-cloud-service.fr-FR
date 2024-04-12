@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
-source-wordcount: '4850'
+source-wordcount: '4881'
 ht-degree: 98%
 
 ---
@@ -31,6 +31,8 @@ ht-degree: 98%
    + [Informations sur la version](/help/release-notes/home.md)
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2024 {#2024}
+         + [Notes de mise à jour de la version 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
          + [Notes de mise à jour de la version 2023.12.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
          + [Notes de mise à jour de la version 2023.11.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
@@ -171,6 +173,8 @@ ht-degree: 98%
          + [Notes de mise à jour de la version 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Notes de mise à jour de Workfront pour le connecteur amélioré Experience Manager{#workfront}
       + [Notes de mise à jour actuelles de Workfront pour le connecteur amélioré Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + Notes de mise à jour de la fonction Générer des variations {#generate-variations}
+      + [Notes de mise à jour actuelles pour la génération de variations](/help/generative-ai/release-notes-generate-variations.md)
    + [Nouveautés](/help/release-notes/what-is-new.md)
    + [Changements notables dans AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md)
@@ -356,6 +360,7 @@ ht-degree: 98%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Suppression de considérations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Structure d’analyse](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [Ressources dans la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Raccourcis clavier](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Création de site {#site-creation}
          + [Créer un site](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -891,7 +896,8 @@ ht-degree: 98%
       + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Exemples de requêtes GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Résolution de problèmes liés aux requêtes GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [API REST de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
+   + [API ouvertes de fragments de contenu et de modèles](/help/headless/content-fragment-openapis.md)
+   + [Prise en charge des fragments de contenu dans l’API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
    + Sécurité {#security}
       + [Autorisations](/help/headless/security/permissions.md)
       + [Authentification](/help/headless/security/authentication.md)

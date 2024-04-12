@@ -2,10 +2,10 @@
 title: Documents de référence sur les API
 description: AEM dispose d’API complètes et puissantes que vous pouvez utiliser pour votre projet d’expérience digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 87%
+source-wordcount: '608'
+ht-degree: 85%
 
 ---
 
@@ -72,6 +72,7 @@ AEM propose des composants personnalisables et des options de diffusion de conte
 | [API HTTP de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md) | Accès au contenu de fragment de contenu directement via l’API HTTP via les opérations CRUD |
 | [API GraphQL de fragments de contenu](/help/headless/graphql-api/content-fragments.md) | Activer la diffusion efficace de fragments de contenu vers les clients JavaScript dans les implémentations CMS découplées |
 | [API HTTP ressources de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr) | Format exact des requêtes de ressources HTTP prises en charge |
+| [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) | API ouvertes du modèle de fragment de contenu et de fragment de contenu |
 
 ## API spécifiques à SPA {#spa-apis}
 

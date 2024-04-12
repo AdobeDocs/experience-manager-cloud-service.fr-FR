@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
+source-git-commit: 5771a6afedeb85188e89700d439a9bac18e01fdc
 workflow-type: tm+mt
-source-wordcount: '5135'
-ht-degree: 87%
+source-wordcount: '5359'
+ht-degree: 84%
 
 ---
 
@@ -257,7 +257,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 | Énumération | `String` | Utilisé pour afficher une option à partir d’une liste d’options définies lors de la création du modèle |
 | Balises | `[String]` | Utilisé pour afficher une liste de chaînes représentant les balises utilisées dans AEM |
 | Référence de contenu | `String`, `[String]` | Utilisé pour afficher le chemin vers une autre ressource dans AEM |
-| Référence du fragment |  *Un type de modèle* <br><br>Champ simple : `Model` - Type de modèle, référencé directement <br><br>Multichamp, avec un type référencé : `[Model]` - Tableau de type `Model`, référencé directement à partir du tableau <br><br>Multichamp, avec plusieurs types référencés : `[AllFragmentModels]` - Tableau de tous les types de modèle, référencé à partir d’un tableau avec type d’union | Utilisé pour référencer un ou plusieurs fragments de contenu de certains types de modèles, définis lors de la création du modèle |
+| Référence du fragment | *Type de modèle* <br><br>Champ unique : `Model` - Type de modèle, référencé directement <br><br>Multichamp, avec un type référencé : `[Model]` - Tableau de type `Model`, référencé directement depuis le tableau <br><br>Multichamp, avec plusieurs types référencés : `[AllFragmentModels]` - Tableau de tous les types de modèles, référencé depuis un tableau avec type union | Utilisé pour référencer un ou plusieurs fragments de contenu de certains types de modèles, définis lors de la création du modèle |
 
 {style="table-layout:auto"}
 
@@ -739,15 +739,13 @@ La solution de GraphQL vous permet :
 
 * Pass parameters : add `_assetTransform` dans l’en-tête de liste où vos filtres sont définis ;
 
-<!-- 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
->* `_dynamicUrl` : a DAM asset
->* `_dmS7Url` : a Dynamic Media asset
+>A **Référence de contenu** peut être utilisé pour les ressources DAM et Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
+>* `_dynamicUrl` : ressource DAM
+>* `_dmS7Url` : une ressource Dynamic Media
 > 
->If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
--->
+>Si l’image référencée est une ressource DAM, la valeur de `_dmS7Url` sera `null`. Voir [Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Structure de la demande de transformation {#structure-transformation-request}
 
@@ -923,34 +921,37 @@ Les restrictions suivantes s’appliquent :
    * Aucune mise en cache sur l’instance de création
    * Mise en cache lors de la publication : 10 minutes max. (non modifiable par les clients).
 
-<!--
-## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+## Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL{#dynamic-media-asset-delivery-by-url}
 
-GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+GraphQL pour les fragments de contenu AEM vous permet de demander une URL à une ressource Dynamic Media (Scene7) AEM (référencée par une **Référence de contenu**).
 
-The solution in GraphQL means you can:
+>[!CAUTION]
+>
+>Uniquement *image* Les ressources de Dynamic Media peuvent être référencées.
 
-* use `_dmS7Url` on the `ImageRef` reference
+La solution de GraphQL vous permet :
+
+* d’utiliser `_dmS7Url` sur la référence `ImageRef` ;
 
 >[!NOTE]
 >
->For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>Pour ce faire, vous devez disposer d’un [Configuration du cloud Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 >
->This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+>Cela ajoute le `dam:scene7File` et `dam:scene7Domain` sur les métadonnées de la ressource lors de sa création.
 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>A **Référence de contenu** peut être utilisé pour les ressources DAM et Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
 >
->* `_dmS7Url` : a Dynamic Media asset
->* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : une ressource Dynamic Media
+>* `_dynamicUrl` : ressource DAM
 > 
->If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+>Si l’image référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` sera `null`. Voir [diffusion d’images optimisée pour le web dans des requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
-### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+### Exemple de requête pour la diffusion de ressources Dynamic Media par URL {#sample-query-dynamic-media-asset-delivery-by-url}
 
-The following is a sample query:
-* for multiple Content Fragments of type `team` and `person`
+Voici un exemple de requête :
+* pour plusieurs fragments de contenu de type `team` et `person`
 
 ```graphql
 query allTeams {
@@ -973,7 +974,6 @@ query allTeams {
   }
 } 
 ```
--->
 
 ## GraphQL pour AEM – Résumé des extensions {#graphql-extensions}
 
@@ -1068,6 +1068,10 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
             * [Exemple de requête pour une diffusion d’image optimisée pour le web avec un seul paramètre spécifié](#web-optimized-image-delivery-single-query-variable)
 
+      * `_dmS7Url`: sur la `ImageRef` référence pour la diffusion de l’URL vers une [Ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
+
+         * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL](#sample-query-dynamic-media-asset-delivery-by-url)
+
    * `_tags`: pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau de `cq:tags` identifiants.
 
       * Reportez-vous à [Exemple de requête : noms de toutes les villes balisées en tant qu’Escapades en ville](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks).
@@ -1081,7 +1085,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
    * Et les opérations :
 
-      * `_operator` : appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
+      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
          * Voir [Exemple de requête – Toutes les aventures où `_path` commence par un préfixe spécifique](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
 
@@ -1099,13 +1103,6 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 * Secours lors de l’interrogation de fragments imbriqués :
 
    * Si une variation donnée n’existe pas dans un fragment imbriqué, la variation **Principal** est renvoyée.
-
-<!-- between dynamicURL and tags -->
-<!--
-    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
-
-      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
--->
 
 ## Requête du point d’entrée GraphQL à partir d’un site web externe {#query-graphql-endpoint-from-external-website}
 

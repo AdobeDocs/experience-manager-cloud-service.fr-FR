@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 98%
+source-wordcount: '1631'
+ht-degree: 97%
 
 ---
 
@@ -23,12 +23,16 @@ ht-degree: 98%
 
 L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle comprend la [prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+
 Pour accéder à l’API :
 
 1. Ouvrez le document du service API à l’adresse `https://[hostname]:[port]/api.json`.
 1. Suivez le lien du service [!DNL Assets] pointant vers `https://[hostname]:[server]/api/assets.json`.
 
-La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple, pour les fichiers de PDF. Fiez-vous au code de réponse pour une analyse ou des actions supplémentaires.
+La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Fiez-vous au code de réponse pour une analyse ou des actions supplémentaires.
 
 >[!NOTE]
 >
@@ -40,9 +44,17 @@ Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) es
 
 Pour plus d’informations, consultez [Prise en charge de fragments de contenu dans l’API HTTP d’ [!DNL Experience Manager Assets] ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+
 ## Modèle de données {#data-model}
 
 L’API HTTP d’[!DNL Assets] présente deux éléments principaux : des dossiers et des ressources (pour les ressources standard). Il expose également des éléments plus détaillés pour les modèles de données personnalisés décrivant le contenu structuré dans les fragments de contenu. Pour plus d’informations, consultez [Modèles de données de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
+
+>[!NOTE]
+>
+>La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 ### Dossiers {#folders}
 
@@ -61,7 +73,7 @@ Les dossiers sont comparables aux répertoires dans les systèmes de fichiers tr
 
 Les dossiers **Liens** présentent trois liens :
 
-* `self`: lien vers lui-même.
+* `self` : lien vers lui-même
 * `parent` : lien vers le dossier parent.
 * `thumbnail` : (facultatif) lien vers une miniature de dossier.
 
@@ -75,6 +87,10 @@ Dans [!DNL Experience Manager], une ressource contient les éléments suivants 
 * Commentaires facultatifs.
 
 Pour plus d’informations sur les éléments des fragments de contenu, voir [Prise en charge de fragments de contenu dans l’API HTTP Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 

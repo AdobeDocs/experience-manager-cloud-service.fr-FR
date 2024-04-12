@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
+source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 63%
+source-wordcount: '954'
+ht-degree: 62%
 
 ---
 
@@ -16,7 +16,7 @@ Ce document offre un aperçu des opérations de gestion de base lors de l’util
 
 >[!TIP]
 >
->Des raccourcis clavier sont disponibles dans toute AEM. En particulier lorsque [utilisation de la console sites](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) et [l’éditeur de page](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+>Plusieurs raccourcis clavier sont disponibles dans AEM. En particulier lorsque [utilisation de la console sites](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) et [l’éditeur de page](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
@@ -75,10 +75,11 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
 | Assets | La console Ressources vous permet d’importer et de gérer des [ressources numériques telles que des images, des vidéos, des documents et des fichiers audio](/help/assets/overview.md). Ces ressources peuvent ensuite être utilisées par n’importe quel site s’exécutant sur la même instance AEM. Vous pouvez également créer et gérer des [fragments de contenu](/help/assets/content-fragments/content-fragments.md) à partir de la console Ressources. |
 | Personnalisation  | Cette console propose un ensemble d’outils de [création de contenu ciblé et de présentation d’expériences personnalisées](/help/sites-cloud/authoring/personalization/overview.md). |
 | Fragments de contenu | Les [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer du contenu structuré prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour la création de pages et la diffusion headless. |
+| Générer des variations | [Générer des variations](/help/generative-ai/generate-variations.md) utilise l’intelligence artificielle (IA) générative pour créer des variations de contenu basées sur des invites ; ces invites sont fournies par Adobe ou créées et gérées par les utilisateurs. |
 
 ## Panneau Outils {#tools-panel}
 
-Dans le **Outils** Le panneau comporte un panneau latéral contenant un éventail de catégories, qui regroupe des consoles similaires. La variable **Outils** les consoles permettent d’accéder à plusieurs outils et consoles spécialisés pour la gestion des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+La variable **Outils** Le panneau comporte un panneau latéral contenant un éventail de catégories, qui regroupe des consoles similaires. La variable **Outils** les consoles permettent d’accéder à plusieurs outils et consoles spécialisés pour la gestion des sites web, des ressources numériques et d’autres aspects du référentiel de contenu.
 
 ![Panneau Outils](assets/basic-handling-tools.png)
 

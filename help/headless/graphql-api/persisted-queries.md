@@ -3,10 +3,10 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '1869'
-ht-degree: 86%
+source-wordcount: '1952'
+ht-degree: 80%
 
 ---
 
@@ -408,7 +408,7 @@ Configuration OSGi par défaut pour les instances de publication :
 
 Par défaut, le `PersistedQueryServlet` envoie une réponse `200` lors de l’exécution d’une requête, quel que soit le résultat réel.
 
-Vous pouvez [configurer les paramètres OSGi](/help/implementing/deploying/configuring-osgi.md) pour la **configuration du service de requête persistante** afin de contrôler quel code d’état est renvoyé par le point d’entrée `/execute.json/persisted-query`, en cas d’erreur dans la requête persistante.
+Vous pouvez [configuration des paramètres OSGi](/help/implementing/deploying/configuring-osgi.md) pour le **Configuration de Query Service persistante** pour contrôler si des codes d’état plus détaillés sont renvoyés par la variable `/execute.json/persisted-query` point de terminaison , en cas d’erreur dans la requête persistante.
 
 >[!NOTE]
 >
@@ -417,14 +417,20 @@ Vous pouvez [configurer les paramètres OSGi](/help/implementing/deploying/confi
 Le champ `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) peut être défini selon les besoins :
 
 * `false` (valeur par défaut) :
-peu importe que la requête persistante soit réussie ou non. La `/execute.json/persisted-query` renvoie le code d’état `200` et l’en-tête `Content-Type` renvoyé est `application/json`.
+peu importe que la requête persistante soit réussie ou non. La variable `Content-Type` l’en-tête renvoyé est `application/json`, et la variable `/execute.json/persisted-query` *always* renvoie le code d’état. `200`.
 
-* `true` :
-le point d’entrée renvoie `400` ou `500`, le cas échéant, lorsqu’il existe une forme d’erreur lors de l’exécution de la requête persistante. En outre, le `Content-Type` renvoyé est `application/graphql-response+json`.
+* `true`: la valeur renvoyée `Content-Type` is `application/graphql-response+json`, et le point de terminaison renvoie le code de réponse approprié en cas d’erreur quelle qu’elle soit lors de l’exécution de la requête persistante :
+
+  | Code | Description |
+  |--- |--- |
+  | 200 | Réponse réussie |
+  | 400 | Indique qu’il manque des en-têtes ou qu’il y a un problème avec le chemin de requête persistant. Par exemple, nom de configuration non spécifié, suffixe non spécifié, etc.<br>Voir [Dépannage - point de terminaison GraphQL non configuré](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | La ressource demandée est introuvable. Par exemple, le point d’entrée Graphql n’est pas disponible sur le serveur.<br>Voir [Dépannage - Chemin manquant dans l’URL de requête persistante de GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Erreur interne du serveur. Par exemple, erreurs de validation, erreur de persistance, etc. |
 
   >[!NOTE]
   >
-  >Voir https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Voir aussi https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoder l’URL de requête devant être utilisé par une application {#encoding-query-url}
 

@@ -2,10 +2,10 @@
 title: Utilisation de fragments de contenu (ressources - fragments de contenu)
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour la création de pages et la diffusion sans interface utilisateur. Comment les utiliser avec MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
+source-git-commit: 930eca968807eaa9b322010d582973d431b9fa01
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 74%
+source-wordcount: '2230'
+ht-degree: 73%
 
 ---
 
@@ -61,6 +61,7 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 >* [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
+>* La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md)
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
 

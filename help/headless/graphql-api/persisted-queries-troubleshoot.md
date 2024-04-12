@@ -2,13 +2,13 @@
 title: Dépannage des requêtes GraphQL persistantes
 description: Découvrez comment résoudre les problèmes liés aux requêtes GraphQL persistantes dans Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments,GraphQL API
-source-git-commit: c8ea9846600d1773e6f269973635f5338f31906f
+exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
+source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
-
 
 # Résolution des problèmes liés aux requêtes GraphQL persistantes {#troubleshoot-persisted-graphql-queries}
 
@@ -34,13 +34,13 @@ Pour résoudre ce problème, procédez de l’une des manières suivantes :
 
 ## Point de terminaison GraphQL non configuré {#graphql-endpoint-not-configured}
 
-Lorsque les requêtes conservées renvoient la variable `400` ou `500` code d’erreur, ainsi que les informations `No suitable endpoint found`, cela signifie qu’aucun point de terminaison GraphQL n’est configuré dans l’environnement AEM.
+Lorsque les requêtes conservées renvoient la variable `404` code d’erreur, ainsi que les informations `No suitable endpoint found`, cela signifie qu’aucun point de terminaison GraphQL n’est configuré dans l’environnement AEM.
 
 Pour corriger ce problème, procédez comme suit pour activer et publier votre point de terminaison à partir de [Gestion des points de fin GraphQL dans AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Chemin d’accès manquant dans l’URL de requête persistante de GraphQL {#missing-path-query-url}
 
-Si les requêtes conservées renvoient la variable `400` ou `500` code d’erreur avec les informations `Suffix: '/' does not contain a path`, le servlet GraphQL est appelé sans suffixe de chemin.
+Si les requêtes conservées renvoient la variable `400` code d’erreur avec les informations `Suffix: '/' does not contain a path`, le servlet GraphQL est appelé sans suffixe de chemin.
 
 Le modèle doit être `/graphql/execute.json/thePath`.
 
