@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '3039'
+source-wordcount: '3108'
 ht-degree: 3%
 
 ---
@@ -42,102 +42,112 @@ Les fonctions personnalisées sont essentiellement des bibliothèques clientes a
 
 Les annotations JavaScript sont utilisées pour fournir des métadonnées pour le code JavaScript. Il comprend des commentaires commençant par des symboles spécifiques, par exemple /** et @. Les annotations fournissent des informations importantes sur les fonctions, variables et autres éléments du code. Le formulaire adaptatif prend en charge les annotations JavaScript suivantes pour les fonctions personnalisées :
 
-* **Nom**
+#### Nom
+
 Le nom est utilisé pour identifier la fonction personnalisée dans l’éditeur de règles d’un formulaire adaptatif. Les syntaxes suivantes sont utilisées pour nommer une fonction personnalisée :
-   * `@name [functionName] <Function Name>`
-   * `@function [functionName] <Function Name>`
-   * `@func [functionName] <Function Name>`.
-     `functionName` est le nom de la fonction. Les espaces ne sont pas autorisés.
-     `<Function Name>` est le nom d’affichage de la fonction dans l’éditeur de règles d’un formulaire adaptatif.
+
+* `@name [functionName] <Function Name>`
+* `@function [functionName] <Function Name>`
+* `@func [functionName] <Function Name>`.
+  `functionName` est le nom de la fonction. Les espaces ne sont pas autorisés.
+  `<Function Name>` est le nom d’affichage de la fonction dans l’éditeur de règles d’un formulaire adaptatif.
 Si le nom de la fonction est identique à celui de la fonction elle-même, vous pouvez l’omettre. `[functionName]` de la syntaxe . <!-- For example,  in the `calculateAge` custom function, the name is defined as:
 `* @name calculateAge` -->
 
-* **Paramètre**
+#### Paramètre
+
 Le paramètre est une liste d’arguments utilisés par les fonctions personnalisées. Une fonction peut prendre en charge plusieurs paramètres. Les syntaxes suivantes sont utilisées pour définir un paramètre dans une fonction personnalisée :
-   * `@param {type} name <Parameter Description>`
-   * `@argument` `{type} name <Parameter Description>`
-   * `@arg` `{type}` `name <Parameter Description>`.
-     `{type}` représente le type de paramètre.  Les types de paramètres autorisés sont les suivants :
-      * string : représente une seule valeur de chaîne.
-      * number : représente une seule valeur numérique.
-      * boolean : représente une seule valeur booléenne (true ou false).
-      * string[]: représente un tableau de valeurs de chaîne.
-      * nombre[]: représente un tableau de valeurs numériques.
-      * boolean[]: représente un tableau de valeurs booléennes.
-      * date : représente une seule valeur de date.
-      * date[]: représente un tableau de valeurs de date.
-      * array : représente un tableau générique contenant des valeurs de différents types.
-      * object : représente l’objet de formulaire transmis à une fonction personnalisée au lieu de transmettre directement sa valeur.
-      * scope : représente l’objet global utilisé par les fonctions personnalisées au moment de l’exécution. Il est déclaré comme dernier paramètre dans les annotations JavaScript et n’est pas visible dans l’éditeur de règles d’un formulaire adaptatif. Le paramètre scope accède à l’objet du formulaire ou du composant pour déclencher la règle ou l’événement requis pour le traitement du formulaire.
 
-  Le type de paramètre n’est pas sensible à la casse et les espaces ne sont pas autorisés dans le nom du paramètre.
+* `@param {type} name <Parameter Description>`
+* `@argument` `{type} name <Parameter Description>`
+* `@arg` `{type}` `name <Parameter Description>`.
+  `{type}` représente le type de paramètre.  Les types de paramètres autorisés sont les suivants :
+   * string : représente une seule valeur de chaîne.
+   * number : représente une seule valeur numérique.
+   * boolean : représente une seule valeur booléenne (true ou false).
+   * string[]: représente un tableau de valeurs de chaîne.
+   * nombre[]: représente un tableau de valeurs numériques.
+   * boolean[]: représente un tableau de valeurs booléennes.
+   * date : représente une seule valeur de date.
+   * date[]: représente un tableau de valeurs de date.
+   * array : représente un tableau générique contenant des valeurs de différents types.
+   * object : représente l’objet de formulaire transmis à une fonction personnalisée au lieu de transmettre directement sa valeur.
+   * scope : représente l’objet global utilisé par les fonctions personnalisées au moment de l’exécution. Il est déclaré comme dernier paramètre dans les annotations JavaScript et n’est pas visible dans l’éditeur de règles d’un formulaire adaptatif. Le paramètre scope accède à l’objet du formulaire ou du composant pour déclencher la règle ou l’événement requis pour le traitement du formulaire.
 
-  `<Parameter Description>` contient des détails sur l’objectif du paramètre. Il peut avoir plusieurs mots.
+    Le type de paramètre n’est pas sensible à la casse et les espaces ne sont pas autorisés dans le nom du paramètre.
+    
+    `&lt;parameter description=&quot;&quot;>` contient des détails sur l’objet du paramètre. Il peut avoir plusieurs mots.
+    
+    Par défaut, tous les paramètres sont obligatoires. Vous pouvez définir un paramètre comme facultatif en ajoutant `=` après le type de paramètre ou en encadrant le nom du paramètre dans `[]`. Les paramètres définis comme facultatifs dans les annotations JavaScript sont affichés comme facultatifs dans l’éditeur de règles.
+    Pour définir une variable comme paramètre facultatif, vous pouvez utiliser l’une des syntaxes suivantes :
+    
+    * `@param {type=} Input1`
+    
+    Dans la ligne de code ci-dessus, &quot;Input1&quot; est un paramètre facultatif sans valeur par défaut. Pour déclarer un paramètre facultatif avec la valeur par défaut :
+    `@param {string=&lt;value>} input1`
+    
+    `input1` comme paramètre facultatif avec la valeur par défaut définie sur `value`.
+    
+    * `@param {type} [Input1]`
+    
+    Dans la ligne de code ci-dessus, &quot;Input1&quot; est un paramètre facultatif sans valeur par défaut. Pour déclarer un paramètre facultatif avec la valeur par défaut :
+    `@param {array} [input1=&lt;value>]
+    `input1` est un paramètre facultatif de type tableau avec la valeur par défaut définie sur `value`.
+    Assurez-vous que le type de paramètre est entre accolades. {} et le nom du paramètre est entre crochets [].
+    
+    Examinez le fragment de code suivant, où input2 est défini comme paramètre facultatif :
+    
+    &quot;javascript
+    
+    /**
+    * fonction de paramètre facultative
+    * @name OptionalParameterFunction
+    * @param {string} input1
+    * @param {string=} input2
+    * @return {string}
+    */
+    function OptionalParameterFunction(input1, input2) {
+    let result = &quot;Result: &quot;;
+    result += input1;
+    if (input2)== null) {
+    result += &quot; + input2;
+    }
+    le résultat du retour;
+    }
+    &quot;
+    
+    L’illustration suivante s’affiche à l’aide de la fonction personnalisée &quot;OptionalParameterFunction&quot; dans l’éditeur de règles :
+    
+    &lt;!>— ![Paramètres facultatifs ou obligatoires ](/help/forms/assets/optional-default-params.png) —>
+    
+    Vous pouvez enregistrer la règle sans spécifier de valeur pour les paramètres requis, mais la règle n’est pas exécutée et affiche un message d’avertissement :
+    
+    &lt;!>— ![avertissement de règle incomplète](/help/forms/assets/incomplete-rule.png) —>
+    
+    Lorsque l’utilisateur laisse le paramètre facultatif vide, la valeur &quot;Non défini&quot; est transmise à la fonction personnalisée pour le paramètre facultatif.
 
-  Par défaut, tous les paramètres sont obligatoires. Vous pouvez définir un paramètre comme facultatif en ajoutant `=` après le type de paramètre ou en incluant le nom du paramètre dans  `[]`. Les paramètres définis comme facultatifs dans les annotations JavaScript sont affichés comme facultatifs dans l’éditeur de règles.
-Pour définir une variable comme paramètre facultatif, vous pouvez utiliser l’une des syntaxes suivantes :
+#### Type de retour
 
-   * `@param {type=} Input1`
-Dans la ligne de code ci-dessus, `Input1` est un paramètre facultatif sans valeur par défaut. Pour déclarer un paramètre facultatif avec la valeur par défaut :
-     `@param {string=<value>} input1`
-
-     `input1` comme paramètre facultatif avec la valeur par défaut définie sur `value`.
-
-   * `@param {type} [Input1]`
-Dans la ligne de code ci-dessus, `Input1` est un paramètre facultatif sans valeur par défaut. Pour déclarer un paramètre facultatif avec la valeur par défaut :
-     `@param {array} [input1=<value>]`
-     `input1` est un paramètre facultatif de type tableau avec la valeur par défaut définie sur `value`.
-Assurez-vous que le type de paramètre est entre accolades. {} et le nom du paramètre est entre crochets [].
-
-     Examinez le fragment de code suivant, où input2 est défini comme paramètre facultatif :
-
-     ```javascript
-          /**
-          * optional parameter function
-          * @name OptionalParameterFunction
-          * @param {string} input1 
-          * @param {string=} input2 
-          * @return {string}
-         */
-         function OptionalParameterFunction(input1, input2) {
-         let result = "Result: ";
-         result += input1;
-         if (input2 !== null) {
-             result += " " + input2;
-         }
-         return result;
-         }
-     ```
-
-     L’illustration suivante s’affiche à l’aide de la fonction `OptionalParameterFunction` fonction personnalisée dans l’éditeur de règles :
-
-     ![Paramètres facultatifs ou obligatoires](/help/forms/assets/optional-default-params.png)
-
-     Vous pouvez enregistrer la règle sans spécifier de valeur pour les paramètres requis, mais la règle n’est pas exécutée et affiche un message d’avertissement :
-
-     ![message d’avertissement de règle incomplète](/help/forms/assets/incomplete-rule.png)
-
-     Lorsque l’utilisateur laisse le paramètre facultatif vide, la valeur &quot;Non défini&quot; est transmise à la fonction personnalisée pour le paramètre facultatif.
-
-* **Type de retour**
 Le type de retour spécifie le type de valeur que la fonction personnalisée renvoie après l’exécution. Les syntaxes suivantes sont utilisées pour définir un type de retour dans une fonction personnalisée :
-   * `@return {type}`
-   * `@returns {type}`
-     `{type}` représente le type de retour de la fonction. Les types de retour autorisés sont les suivants :
-      * string : représente une seule valeur de chaîne.
-      * number : représente une seule valeur numérique.
-      * boolean : représente une seule valeur booléenne (true ou false).
-      * string[]: représente un tableau de valeurs de chaîne.
-      * nombre[]: représente un tableau de valeurs numériques.
-      * boolean[]: représente un tableau de valeurs booléennes.
-      * date : représente une seule valeur de date.
-      * date[]: représente un tableau de valeurs de date.
-      * array : représente un tableau générique contenant des valeurs de différents types.
-      * object : représente l’objet de formulaire au lieu de sa valeur directement.
 
-     Le type de retour n’est pas sensible à la casse.
+* `@return {type}`
+* `@returns {type}`
+  `{type}` représente le type de retour de la fonction. Les types de retour autorisés sont les suivants :
+   * string : représente une seule valeur de chaîne.
+   * number : représente une seule valeur numérique.
+   * boolean : représente une seule valeur booléenne (true ou false).
+   * string[]: représente un tableau de valeurs de chaîne.
+   * nombre[]: représente un tableau de valeurs numériques.
+   * boolean[]: représente un tableau de valeurs booléennes.
+   * date : représente une seule valeur de date.
+   * date[]: représente un tableau de valeurs de date.
+   * array : représente un tableau générique contenant des valeurs de différents types.
+   * object : représente l’objet de formulaire au lieu de sa valeur directement.
 
-* **Privé**
+  Le type de retour n’est pas sensible à la casse.
+
+#### Privée
+
 La fonction personnalisée, déclarée comme privée, n’apparaît pas dans la liste des fonctions personnalisées de l’éditeur de règles d’un formulaire adaptatif. Par défaut, les fonctions personnalisées sont publiques. La syntaxe permettant de déclarer une fonction personnalisée comme étant privée est `@private`.
 
 Pour en savoir plus sur la définition de paramètres facultatifs dans JSDocs, [cliquez ici](https://jsdoc.app/tags-param).
@@ -390,7 +400,7 @@ Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1

@@ -4,9 +4,9 @@ description: Utilisez les composants principaux de formulaire adaptatif pour ajo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Le contrôle de version de formulaire adaptatif permet d’ajouter des versions 
 Pour créer une version d’un formulaire, procédez comme suit :
 
 1. Créez un formulaire ou utilisez un formulaire existant.
-1. Dans l’interface utilisateur d’AEM, accédez au **[!UICONTROL Formulaire]**&quot;**[!UICONTROL Forms et documents]** et sélectionnez votre **Formulaire**.
+1. Dans l’interface utilisateur d’AEM, accédez à la **[!UICONTROL Formulaire]**&quot;**[!UICONTROL Forms et documents]** et sélectionnez votre **Formulaire**.
 1. Dans la liste déroulante de sélection du panneau de gauche, sélectionnez **[!UICONTROL Versions]**.
    ![Sélection d’un formulaire](select-a-form.png)
 1. Cliquez sur le bouton **trois points** situé dans le panneau inférieur gauche, cliquez sur **[!UICONTROL Enregistrer comme version]**.
@@ -77,22 +77,15 @@ Dans de nombreux cas, les utilisateurs d’un groupe de formulaires doivent ajou
 1. Cliquez sur le bouton **icône ajouter** situé sur le rail supérieur droit, comme indiqué dans l’image.
    ![Annotation](annotation.png)
 
-1. Cliquez sur le bouton **icône ajouter** situé sur le rail supérieur gauche comme indiqué dans l’image à ajouter à la notation.
+1. Cliquez sur le bouton **icône ajouter** situé sur le rail supérieur gauche, comme indiqué dans l’image pour ajouter l’annotation.
    ![Ajouter une annotation](add-annotation.png)
 
-1. Vous pouvez maintenant ajouter des commentaires, dessiner des esquisses de plusieurs couleurs pour former des composants.
+1. Vous pouvez désormais ajouter des commentaires, dessiner des esquisses de plusieurs couleurs pour former des composants.
 
-1. Pour afficher toutes les annotations ajoutées à un formulaire, sélectionnez le formulaire. Les annotations ajoutées dans le panneau de gauche sont alors visibles dans l’image.
+1. Pour afficher toutes les annotations ajoutées à un formulaire, sélectionnez le formulaire, puis affichez les annotations ajoutées dans le panneau de gauche, comme illustré dans l’image.
 
    ![Voir les annotations ajoutées](see-annotations.png)
 
+## Voir également {#see-also}
 
-
-
-
-
-
-
-
-
-
+{{see-also}}

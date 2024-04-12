@@ -4,10 +4,11 @@ description: Comparez deux formulaires distincts en fonction des champs, du cont
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 0%
+source-wordcount: '153'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +22,11 @@ Lorsque les auteurs de formulaires doivent comparer deux formulaires distincts e
 
    ![Comparaison de formulaires adaptatifs](compare-two-forms.png)
 
-1. Lorsque vous cliquez sur l’utilisateur, deux formulaires s’affichent en mode Aperçu, comme illustré dans l’image.
+1. Lorsque vous cliquez sur , deux formulaires s’affichent en mode Aperçu. Il sélectionne le premier formulaire comme formulaire de base à comparer au second formulaire et compare le contenu entre les deux formulaires, qui sont similaires et différenciés. Le contenu différencié du premier formulaire est marqué en vert comme illustré dans l’image.
 
    ![Formulaires comparés](compared-forms.png)
+
+## Voir également {#see-also}
+
+{{see-also}}
+

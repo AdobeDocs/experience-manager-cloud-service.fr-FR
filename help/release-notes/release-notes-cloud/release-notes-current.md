@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 31%
@@ -134,22 +134,22 @@ Ces services permettent d’effectuer les opérations suivantes :
 
   Vous pouvez désormais rationaliser les interactions de fonctions personnalisées en procédant comme suit :
 
-   * Utilisation de nouvelles annotations pour fournir des définitions de fonction plus claires.
-   * Utilisation de mécanismes de mise en cache pour les fonctions personnalisées, ce qui accélère les performances du formulaire.
-   * Utilisation transparente d’objets globaux dans des fonctions personnalisées.
-   * Définir et utiliser des paramètres facultatifs dans des fonctions personnalisées.
+   * [Utilisation de nouvelles annotations pour fournir des définitions de fonction plus claires](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [Utilisation de mécanismes de mise en cache pour les fonctions personnalisées, ce qui accélère les performances du formulaire](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [Utilisation transparente d’objets globaux dans des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [Définir et utiliser des paramètres facultatifs dans des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md#parameter).
 
   Cette mise à jour apporte également les améliorations suivantes aux fonctionnalités de l’éditeur de règles. Vous pouvez :
 
-   * Implémentez une logique &quot;lorsque-alors-autre&quot; puissante pour l’exécution conditionnelle.
+   * Mise en oeuvre puissante [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) logique d’exécution conditionnelle.
    * Tirez parti des fonctionnalités JavaScript modernes telles que les fonctions de gauche et de flèche (prise en charge d’ES10).
    * Validez ou réinitialisez non seulement des champs, mais également des panneaux et des formulaires entiers, en développant le contrôle sur les interactions utilisateur.
 
   Ces améliorations offrent une expérience plus intuitive et plus puissante pour l’élaboration de règles et de fonctions personnalisées dans l’éditeur de règles visuel.
 
-* **Création de plusieurs versions d’un formulaire adaptatif**: vous pouvez désormais gérer facilement les variantes de formulaires existants. Cela simplifie le contrôle des versions et facilite la comparaison pour l’optimisation des formulaires, le tout au sein d’un seul processus simplifié.
+* **[Création de plusieurs versions d’un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: vous pouvez désormais gérer facilement les variantes de formulaires existants. Cela simplifie le contrôle des versions et facilite la comparaison pour l’optimisation des formulaires, le tout au sein d’un seul processus simplifié.
 
-* **Comparer un formulaire adaptatif**: vous pouvez désormais facilement comparer deux formulaires pour identifier les différences entre deux formulaires. Cela facilite la collaboration en permettant aux membres de l’équipe de comparer les révisions et de discuter efficacement des changements.
+* **[Comparer un formulaire adaptatif](/help/forms/compare-forms.md)**: vous pouvez désormais facilement comparer deux formulaires pour identifier les différences entre deux formulaires. Cela facilite la collaboration en permettant aux membres de l’équipe de comparer les révisions et de discuter efficacement des changements.
 
 * **Améliorations de l’accessibilité pour le composant Signature tactile**: cette mise à jour apporte des améliorations importantes de l’accessibilité au composant Signature tactile :
 
@@ -179,7 +179,7 @@ Cette mise à jour offre une expérience plus inclusive aux utilisateurs présen
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Avec Adobe Workfront Fusion Connector, vous pouvez concevoir des processus qui sont déclenchés automatiquement lors de l’envoi d’un formulaire adaptatif. Par exemple, envisagez un scénario où un processus est lancé pour affecter à une personne spécifique la tâche de vérifier les données envoyées, ce qui permet l’approbation ou le rejet d’une demande en fonction des informations capturées par le biais du formulaire adaptatif. Cette intégration rationalisée améliore l’efficacité et apporte un nouveau niveau d’automatisation à vos processus de workflow.|
 
-* **Service d’extension de Reader**: les API de communication d’AEM Forms ont introduit Reader Extension Service pour vous permettre d’ajouter des fonctionnalités telles que le remplissage de formulaires et les commentaires à des PDF standard, ce qui les rend interactifs pour les utilisateurs disposant d’Adobe Reader gratuit.
+* **[Service d’extension de Reader](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: les API de communication d’AEM Forms ont introduit Reader Extension Service pour vous permettre d’ajouter des fonctionnalités telles que le remplissage de formulaires et les commentaires à des PDF standard, ce qui les rend interactifs pour les utilisateurs disposant d’Adobe Reader gratuit.
 
 * [Prise en charge des langues de droite à gauche](/help/forms/supporting-new-language-localization-core-components.md) : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire pour les langues s’écrivant de droite à gauche permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et aux marchés correspondants. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à un public plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
 
