@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2261'
 ht-degree: 31%
 
 ---
@@ -32,11 +32,13 @@ La date de publication de la version actuelle (2024.3.0) d’[!DNL Adobe Experie
 
 Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
-## Vidéo de mise à jour {#release-video}
+<!-- ## Release Video {#release-video}
 
-Regardez la vidéo Présentation de la version de mars 2024 pour un résumé des fonctionnalités ajoutées dans la version 2024.3.0 :
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -170,8 +172,6 @@ Ces services permettent d’effectuer les opérations suivantes :
    * Lorsqu’une signature est saisie, les utilisateurs du lecteur d’écran peuvent entendre le texte utilisé pour créer la signature.
 
 Cette mise à jour offre une expérience plus inclusive aux utilisateurs présentant un handicap en améliorant la navigation, la clarté et les commentaires pour le composant Signature tactile.
-
-
 
 ### Programme d’adoption précoce {#forms-early-adopter}
 
