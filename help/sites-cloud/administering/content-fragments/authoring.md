@@ -4,10 +4,10 @@ description: Découvrez comment créer du contenu pour vos fragments de contenu 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
 workflow-type: tm+mt
-source-wordcount: '2266'
-ht-degree: 4%
+source-wordcount: '2381'
+ht-degree: 8%
 
 ---
 
@@ -96,7 +96,7 @@ L’icône de lien s’affiche dans différentes parties de l’éditeur. Vous p
 
 ![Éditeur de fragment de contenu - Icône Lien](assets/cf-authoring-link-icon.png)
 
-### Arborescence de structure {#structure-tree}
+### Arborescence de la structure {#structure-tree}
 
 Ouvrez le **Arborescence de structure** de la barre d’outils de l’éditeur pour afficher la structure hiérarchique du fragment de contenu et ses références. Utilisez les icônes de lien pour accéder aux références.
 
@@ -371,6 +371,27 @@ Dans le **Historique des versions** dans le panneau de droite, les détails des 
 
 ![Éditeur de fragment de contenu - Aperçu de l’historique des versions](assets/cf-authoring-version-history-overview.png)
 
+### Comparer la version {#compare-version}
+
+Pour un fragment de contenu, vous pouvez comparer une version précédente à la version actuelle.
+
+Pour comparer une version précédente à la version actuelle :
+
+1. Sélectionnez l’icône de trois points en regard de la version.
+
+1. Sélectionner **Comparer**.
+
+![Éditeur de fragment de contenu - Comparaison de l’historique des versions](assets/cf-authoring-version-history-compare.png)
+
+Cela ouvre une vue qui affiche les différences entre la version actuelle du contenu et la version précédente sélectionnée du fragment de contenu. Dans la **Variations avec modifications** , vous pouvez sélectionner pour afficher les différences du contenu principal et/ou du contenu d’une variation.
+
+Les différences sont indiquées par la couleur :
+
+* Vert : indique le contenu ajouté (à la version actuelle)
+* Rouge : indique le contenu supprimé (de la version actuelle)
+
+![Éditeur de fragment de contenu - Historique des versions Comparaison des versions](assets/cf-authoring-version-history-compare-versions.png)
+
 ### Rétablissement d’une version {#revert-version}
 
 Vous pouvez restaurer n’importe quelle version.
@@ -379,7 +400,7 @@ Pour revenir à une version spécifique :
 
 1. Sélectionnez l’icône de trois points en regard de la version.
 
-1. Sélectionner **Rétablir**.
+1. Sélectionnez **Rétablir**.
 
 ![Éditeur de fragment de contenu - Rétablissement de l’historique des versions](assets/cf-authoring-version-history-revert.png)
 

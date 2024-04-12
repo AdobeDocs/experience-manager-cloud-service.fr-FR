@@ -4,9 +4,9 @@ description: Découvrez comment gérer vos fragments de contenu AEM à partir de
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
+source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2643'
 ht-degree: 43%
 
 ---
@@ -449,6 +449,7 @@ Le panneau de filtrage offre les options suivantes :
 * une sélection de prédicats ;
    * notamment les modèles de fragment de contenu, la localisation, les balises, les champs d’état, etc.
    * un ou plusieurs prédicats peuvent être sélectionnés et combinés pour créer le filtre.
+* **Exclure les éléments de sous-dossier**, ce qui vous donne la possibilité d’exclure les fragments de contenu stockés dans les sous-dossiers
 * l’opportunité d’**Enregistrer** votre configuration ;
 * l’option permettant de récupérer un filtre de recherche enregistré pour réutilisation.
 
