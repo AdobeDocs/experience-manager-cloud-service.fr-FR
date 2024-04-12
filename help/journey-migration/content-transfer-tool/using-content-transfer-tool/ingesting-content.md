@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: de05abac3620b254343196a283cef198f434cfca
+source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
-source-wordcount: '2752'
-ht-degree: 42%
+source-wordcount: '2876'
+ht-degree: 40%
 
 ---
 
@@ -60,6 +60,19 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
 
    >[!IMPORTANT]
    > Vous pouvez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs et administratrices d’AEM** sur le service de création Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
+
+1. Une fois les choix d’ingestion sélectionnés, une estimation de sa durée s’affiche. Il s’agit d’une estimation du meilleur effort basée sur des données historiques d’assimilations similaires.
+
+   * Cette estimation n&#39;est calculée et affichée que si les valeurs &quot;Vérifier la taille&quot; de l&#39;extraction ont été collectées et sont disponibles.
+   * Cette valeur est une estimation qui, bien qu’elle soit calculée intelligemment, ne doit pas être considérée comme exacte. Plusieurs facteurs peuvent modifier la durée réelle.
+   * Pendant l’ingestion, cette valeur est également disponible dans la boîte de dialogue des durées, accessible via le **Afficher les durées**&quot; de l’ingestion.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_estimate"
+>title="Estimation de la durée d’ingestion"
+>abstract="Une durée approximative d’une ingestion spécifique peut être affichée pour donner une idée générale de la durée de cette ingestion. Il existe des limites à sa précision."
+
+![image](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. Cliquez sur **Ingérer**.
 
