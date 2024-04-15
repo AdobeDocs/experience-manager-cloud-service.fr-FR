@@ -2,10 +2,10 @@
 title: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: ht
-source-wordcount: '1648'
-ht-degree: 100%
+source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 98%
 
 ---
 
@@ -13,23 +13,21 @@ ht-degree: 100%
 
 La section suivante présente les notes de mise à jour générales de [!DNL Workfront for Experience Manager enhanced connector].
 
-La date de publication de la dernière version 1.9.18 de [!DNL Workfront for Experience Manager enhanced connector] est le 8 mars 2024.
+La date de publication de la dernière version 1.9.19 de [!DNL Workfront for Experience Manager enhanced connector] est le samedi 12 avril 2024.
 
 ## Principaux éléments de la mise à jour {#release-highlights}
 
 La dernière version de [!DNL Workfront for Experience Manager enhanced connector] comprend les correctifs de bug suivants :
 
-* Le traitement des téléchargements de ressources multiples à partir de Workfront rencontre des problèmes.
-* Si vous n’ajoutez pas de guillemets de fermeture lors de l’utilisation de Workfront pour rechercher des dossiers dans Experience Manager, cela entraîne une `SERVER_ERROR`.
+* L’échec de la fermeture des clients HTTP entraîne des problèmes de mémoire insuffisante.
 
 >[!NOTE]
 >
 >La prise en charge étendue d’AEM 6.4 est terminée. Voir nos [périodes d’assistance technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Recherchez les versions prises en charge [ici](https://experienceleague.adobe.com/docs/?lang=fr).
 
-
 >[!IMPORTANT]
 >
->Adobe vous recommande d’effectuer une [mise à niveau vers la dernière version 1.9.18](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe vous recommande [mise à niveau vers la dernière version 1.9.19](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problèmes connus {#known-issues}
 
@@ -39,13 +37,18 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 
 ## Versions précédentes {#previous-releases}
 
-### Version de février 2024 {#february-2023-release}
+### Version de mars 2024 {#march-2024-release}
+
+* Le traitement des téléchargements de ressources multiples à partir de Workfront rencontre des problèmes.
+* Si vous n’ajoutez pas de guillemets de fermeture lors de l’utilisation de Workfront pour rechercher des dossiers dans Experience Manager, cela entraîne une `SERVER_ERROR`.
+
+### Version de février 2024 {#february-2024-release}
 
 * Activez la fonction de basculement pour permettre aux clientes et clients AEM Cloud de configurer et de paramétrer un connecteur.
 
 * Fermer `resourceResolver` sans fermer explicitement la session sous-jacente provoque des fuites de session dans les instances AEM. Il est essentiel de fermer explicitement la session, car la fermeture automatique du résolveur de ressources ne ferme pas implicitement la session.
 
-### Version de janvier 2024 {#january-2023-release}
+### Version de janvier 2024 {#january-2024-release}
 
 * La configuration de [!DNL Workfront] dans [!DNL CRX DE] ne stocke actuellement pas l’`project ID`, ce qui entraîne des erreurs lors de l’application d’une autorisation en lecture seule. En savoir plus sur la manière de procéder pour [configurer les autorisations](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=fr#linked-folders).
 
@@ -120,7 +123,6 @@ La version 1.9.8 de [!DNL Workfront for Experience Manager enhanced connector],
 * Les suppressions de commentaires dans Workfront sont désormais répercutées dans Experience Manager.
 
 * Possibilité de gérer le blocage des nouveaux clients et des nouvelles clientes sur Experience Manager as a Cloud Service à partir de la configuration du connecteur.
-
 
 ### Version de janvier 2023 {#january-2022-release}
 
