@@ -3,16 +3,14 @@ title: Comparer deux formulaires adaptatifs distincts.
 description: Comparez deux formulaires distincts en fonction des champs, du contenu et des composants de formulaire.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-hidefromtoc: true
-exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 1%
 
 ---
 
-## Comparaison d’Adaptive Forms {#compare-two-forms}
+# Comparaison d’Adaptive Forms {#compare-two-forms}
 
 <span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 

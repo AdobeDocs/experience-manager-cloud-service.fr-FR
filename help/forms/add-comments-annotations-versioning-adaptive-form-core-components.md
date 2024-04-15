@@ -3,8 +3,7 @@ title: Ajoutez des versions, des commentaires et des annotations à un formulair
 description: Utilisez les composants principaux de formulaire adaptatif pour ajouter des commentaires, des annotations et des versions à un formulaire adaptatif.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-hidefromtoc: true
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
