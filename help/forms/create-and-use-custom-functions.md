@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
+source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 3%
@@ -155,7 +155,7 @@ La fonction personnalisée, déclarée comme privée, n’apparaît pas dans la 
 
 Pour répertorier les fonctions personnalisées dans l’éditeur de règles, vous pouvez utiliser l’un des formats suivants :
 
-* **Instruction de fonction avec ou sans commentaires jsdoc**
+### **Instruction de fonction avec ou sans commentaires jsdoc**
 
 Vous pouvez créer une fonction personnalisée avec ou sans commentaires jsdoc.
 
@@ -167,7 +167,7 @@ Vous pouvez créer une fonction personnalisée avec ou sans commentaires jsdoc.
 ```
 Si l’utilisateur n’ajoute aucune annotation JavaScript à la fonction personnalisée, elle est répertoriée dans l’éditeur de règles par son nom de fonction. Toutefois, il est recommandé d’inclure des annotations JavaScript pour améliorer la lisibilité des fonctions personnalisées.
 
-* **Fonction de flèche avec annotations JavaScript ou commentaire obligatoires**
+### **Fonction de flèche avec annotations JavaScript ou commentaire obligatoires**
 
 Vous pouvez créer une fonction personnalisée à l’aide d’une syntaxe de fonction de flèche :
 
@@ -191,7 +191,7 @@ Vous pouvez créer une fonction personnalisée à l’aide d’une syntaxe de fo
 
 Si l’utilisateur n’ajoute aucune annotation JavaScript à la fonction personnalisée, celle-ci n’est pas répertoriée dans l’éditeur de règles d’un formulaire adaptatif.
 
-* **Expression de fonction avec annotations ou commentaire JavaScript obligatoires**
+### **Expression de fonction avec annotations ou commentaire JavaScript obligatoires**
 
 Pour répertorier les fonctions personnalisées dans l’éditeur de règles d’un formulaire adaptatif, créez des fonctions personnalisées au format suivant :
 
