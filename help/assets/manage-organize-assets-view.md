@@ -4,10 +4,10 @@ description: Déplacez, supprimez, copiez, renommez, mettez à jour et gérez la
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
+source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 91%
+source-wordcount: '1177'
+ht-degree: 92%
 
 ---
 
@@ -21,16 +21,40 @@ Utilisez [!DNL Assets view] pour accomplir les tâches de gestion des actifs sui
 
 *Image : options disponibles dans la barre d’outils lors de la sélection d’une image.*
 
-* ![Icône Désélectionner](assets/do-not-localize/close-icon.png) Désélectionne la sélection.
+* ![deselect icon](assets/do-not-localize/close-icon.png) Désélectionnez la sélection.
+
+* ![find similar icon](assets/do-not-localize/find-similar.svg) Recherchez une ressource d’image similaire dans l’interface utilisateur Assets en fonction des métadonnées et des balises intelligentes.
+
 * ![Icône Détails](assets/do-not-localize/edit-in-icon.png) Cliquez pour prévisualiser une ressource et afficher le détail des métadonnées. Lors de la prévisualisation, vous pouvez afficher les versions et modifier une image.
+
 * ![Icône Télécharger](assets/do-not-localize/download-icon.png) Téléchargez la ressource sélectionnée vers votre système de fichiers local.
+
+* ![add collection icon](assets/do-not-localize/add-collection.svg) Ajoutez la ressource sélectionnée à une collection.
+
+* ![Pin assets icon](assets/do-not-localize/pin-quick-access.svg) Épinglez une ressource pour y accéder plus rapidement lorsque vous en aurez besoin ultérieurement. Tous les éléments épinglés s’affichent dans la section **Accès rapide** de Mon espace de travail.
+
+* ![edit in express icon](assets/do-not-localize/edit-e.svg) Modifiez une image dans Adobe Express intégré à Adobe Experience Manager Assets.
+
+* ![edit asset icon](assets/do-not-localize/edit-e.svg) Modifiez l’image à l’aide d’Adobe Express.
+
+* ![share asset link icon](assets/do-not-localize/share-link.svg) Partagez des liens d’une ressource avec d’autres personnes, afin qu’elles puissent y accéder et la télécharger.
+
 * ![Icône Supprimer](assets/do-not-localize/delete-icon.png) Supprimez la ressource ou le dossier sélectionné.
-* ![Icône Extraire](assets/do-not-localize/checkout-icon.png) Extrayez la ressource sélectionnée.
+
 * ![Icône Copier](assets/do-not-localize/copy-icon.png) Copiez le fichier ou le dossier sélectionné.
+
 * ![Icône Déplacer](assets/do-not-localize/move-icon.png) Déplacez la ressource ou le dossier sélectionné vers un autre emplacement de la hiérarchie du référentiel.
+
 * ![Icône renommer](assets/do-not-localize/rename-icon.png) Renommez la ressource ou le dossier sélectionné. Utilisez un nom unique sans quoi le renommage pourrait échouer avec un avertissement. Vous pouvez réessayer avec un nouveau nom.
-Vous pouvez également cliquer sur le titre d’une ressource ou d’un dossier pour la renommer. Mentionnez le nouveau texte dans le **Renommer la ressource** textbox et cliquez sur **Enregistrer**. Cette fonctionnalité est disponible en mode Grille, Galerie, Cascade et Liste. <!--in-place rename-->
-* ![Icône Affecter une tâche](assets/do-not-localize/review-delegate-icon.png) Affectez des tâches à d’autres utilisateurs afin de collaborer sur une ressource.
+Vous pouvez également cliquer sur le titre d’une ressource ou d’un dossier pour la renommer. Mentionnez le nouveau texte dans le **Renommer la ressource** textbox et cliquez sur **Enregistrer**. Cette fonctionnalité est disponible en mode Grille, Galerie, Cascade et Liste.
+
+* ![icône de vue de cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vue de la cascade].
+
+* ![copy library icon](assets/do-not-localize/copy-icon.png) Ajoutez une ressource à la bibliothèque.
+
+* ![assign task icon](assets/do-not-localize/review-delegate-icon.png) Affectez des tâches à d’autres utilisateurs et utilisatrices afin de collaborer sur une ressource.
+
+* ![watch-asset icon](assets/do-not-localize/watch-asset.svg) Surveillez les opérations effectuées sur une ressource.
 
 Vous pouvez afficher les mêmes options sur les miniatures des ressources.
 
