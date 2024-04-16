@@ -95,7 +95,7 @@ Pour vous assurer de bien comprendre le concept de découplage, ce parcours de d
 
 Toutefois, vous devez tenir compte des possibilités hybrides supplémentaires qui s’offrent à vous une fois que vous avez compris les fonctionnalités découplées d’AEM. Ces cas sont présentés ci-dessous pour que vous puissiez en prendre connaissance. À la fin du parcours, vous découvrirez plus en détail ces concepts si cette flexibilité est nécessaire pour votre projet.
 
-### Vous disposez déjà d’une consommation externe de contenu sans affichage, tel qu’une application d’une seule page (SPA). {#already-have-a-spa}
+### Vous utilisez déjà de manière externe des contenus découplés, par exemple avec les applications monopages (SPA). {#already-have-a-spa}
 
 Supposons que votre besoin de base soit au minimum de diffuser du contenu depuis AEM vers un service externe existant.
 
