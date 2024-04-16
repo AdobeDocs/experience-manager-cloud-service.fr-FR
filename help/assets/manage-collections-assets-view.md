@@ -2,9 +2,9 @@
 title: Gérer les collections
 description: Une collection est un ensemble de ressources de la vue Experience Manager Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
-source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
+source-git-commit: b2144820ad549332e8a921744717a77824f9e099
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '910'
 ht-degree: 86%
 
 ---
@@ -191,11 +191,11 @@ Pour supprimer une collection, procédez comme suit :
 ## Gestion des autorisations pour une collection privée{#manage-permissions-private-collection}
 
 Vous pouvez autoriser les administrateurs à gérer [niveaux d’accès](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) pour les collections privées disponibles dans le référentiel. Vous pouvez attribuer des autorisations telles que `Can View` et `Can Edit` aux groupes d’utilisateurs ou aux utilisateurs. Vous pouvez également déléguer des privilèges de gestion des autorisations aux groupes d’utilisateurs. Les utilisateurs qui créent des collections privées sont les propriétaires de ces collections. Ils peuvent utiliser la variable [!UICONTROL Gestion des autorisations] pour accorder l’accès aux autres utilisateurs. En outre, les administrateurs peuvent afficher et gérer les autorisations des collections privées dans la variable [!DNL Experience Manager] référentiel.
-
+<!--
 >[!NOTE]
 >
->Adobe recommande de ne pas attribuer dʼautorisations aux utilisateurs.
-
+>Adobe does not recommend to assign permissions to users.
+-->
 Pour plus d’informations sur l’affectation des autorisations disponibles aux groupes d’utilisateurs, voir [Ajout d’autorisations aux groupes d’utilisateurs](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 Pour plus d’informations sur le workflow de bout en bout, voir [gestion des autorisations](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
