@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
 workflow-type: tm+mt
 source-wordcount: '2285'
-ht-degree: 31%
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2024.3.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 11 avril 2024. La prochaine disponibilité des fonctionnalités (2024.4.0) est prévue pour le vendredi 25 avril 2024.
+La date de publication de la version actuelle (2024.3.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 11 avril 2024. La prochaine disponibilité des fonctionnalités (2024.4.0) est prévue pour le 25 avril 2024.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -42,67 +42,67 @@ Regardez la vidéo Présentation de la version de mars 2024 pour un résumé des
 
 ### Nouvelles fonctionnalités de [!DNL Experience Manager Sites] {#sites-features}
 
-**Création d’AEM pour les Edge Delivery Services**
+**Création AEM pour Edge Delivery Services**
 
-AEM Sites peut désormais être utilisé comme source de contenu pour les Edge Delivery Services. Les auteurs gèrent leurs sites web dans AEM à l’aide du nouvel éditeur universel avec création wysiwyg dans le contexte. Cela permet aux entreprises de créer rapidement des pages web hautes performances avec des Edge Delivery Services tout en tirant parti AEM puissantes fonctionnalités de gestion de contenu.
+AEM Sites peut désormais être utilisé comme source de contenu pour Edge Delivery Services. Les auteurs et les autrices gèrent leurs sites web dans AEM à l’aide du nouvel éditeur universel avec création WYSIWYG en contexte. Cela permet aux entreprises de créer rapidement des pages web hautes performances avec Edge Delivery Services tout en tirant parti des fonctionnalités puissantes de gestion du contenu d’AEM.
 
 ![Création AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Pour plus d’informations, voir [documentation](/help/edge/overview.md) et regardez le [AEM Gems - Prise en main de la création et des Edge Delivery Services AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+Pour plus d’informations, consultez la [documentation](/help/edge/overview.md) et regardez [AEM Gems - Commencer avec la création AEM et Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
-**Éditeur universel pour les implémentations sans affichage**
+**Éditeur universel pour des implémentations découplées**
 
-L’éditeur universel permet également aux applications web découplées d’exploiter la même création WYSIWYG intuitive dans le contexte, auparavant réservée aux sites traditionnels. Les créateurs de contenu peuvent désormais composer visuellement des mises en page à l’aide de fragments de contenu avec la même facilité que les composants dans les pages.
+L’éditeur universel permet également aux applications web découplées d’exploiter la même création WYSIWYG intuitive en contexte, auparavant réservée aux sites traditionnels. Les créateurs et les créatrices de contenu peuvent désormais composer visuellement des dispositions à l’aide de fragments de contenu avec la même facilité que les composants dans les pages.
 
-Ce qui distingue l’éditeur universel, c’est son adaptabilité à différentes architectures web, ce qui permet le rendu côté serveur et côté client, reste indépendant du framework et élimine la nécessité d’AEM hébergement. L’intégration d’applications web existantes à l’éditeur universel pour la modification de contenu est simple, ce qui nécessite principalement que les développeurs incorporent des attributs de données spécifiques dans leurs balises.
+Ce qui distingue l’éditeur universel, c’est son adaptabilité à différentes architectures web, ce qui permet le rendu côté serveur et côté client, de rester indépendant du framework et d’éliminer la nécessité d’un hébergement AEM. L’intégration d’applications web existantes à l’éditeur universel pour la modification de contenu est simple et nécessite principalement que les développeurs et les développeuses incorporent des attributs de données spécifiques dans leurs balisage.
 
-L’éditeur universel assure ainsi une expérience de modification cohérente, quelle que soit la structure de contenu ou la pile technologique sous-jacente. Pour plus d’informations, voir [Présentation de l’éditeur universel](/help/implementing/universal-editor/introduction.md).
+L’éditeur universel assure ainsi une expérience de modification cohérente, quelle que soit la structure du contenu ou la pile technologique sous-jacente. Pour plus d’informations, voir la [Présentation de l’éditeur universel](/help/implementing/universal-editor/introduction.md).
 
-**API ouvertes de la gestion de contenu pour les fragments de contenu et les modèles**
+**API OpenAPI de gestion du contenu pour les fragments de contenu et les modèles**
 
-Les développeurs peuvent désormais interagir par programmation avec les modèles de fragments de contenu et de fragments de contenu et y effectuer des opérations CruD à l’aide des API OpenAPI de la gestion de contenu. Pour plus d’informations, voir [Documentation de l’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+Les développeurs et les développeuses peuvent désormais interagir par programmation avec les fragments de contenu et les modèles de fragment de contenu et effectuer des opérations CruD sur ceux-ci à l’aide des API OpenAPI de gestion du contenu. Pour plus d’informations, voir la [documentation de l’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
 
 **Prise en charge de la gestion multisite pour les fragments d’expérience**
 
-La prise en charge de la gestion multisite a été étendue pour les structures de dossiers qui stockent les fragments d’expérience, ce qui permet aux utilisateurs de déployer une structure de contenu complète avec des fragments d’expérience.
+La prise en charge de la gestion multisite a été étendue pour les structures de dossiers qui stockent des fragments d’expérience, ce qui permet aux utilisateurs et utilisatrices de déployer une structure de contenu complète avec des fragments d’expérience.
 
-**Comparaison des versions de fragments de contenu**
+**Comparer les versions de fragments de contenu**
 
-Le nouvel éditeur de fragment de contenu permet désormais aux auteurs de contenu de comparer et d’afficher les différences entre la version actuelle d’un fragment de contenu et une version précédente.
+Le nouvel éditeur de fragment de contenu permet désormais aux auteurs et autrices de contenu de comparer et d’afficher les différences entre la version actuelle d’un fragment de contenu et une version précédente.
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 
 **Générer des variations**
 
-Tirer parti de GenAI grâce à AEM nouvelle fonctionnalité, [générer des variations ;](/help/generative-ai/generate-variations.md), accessible maintenant en Cloud Service. La génération de variations vous permet de générer et d’adapter la création de contenu grâce à l’utilisation de l’IA générative. Contactez votre équipe de compte d’Adobe pour qu’elle prenne en compte le programme.
+Tirez profit de GenAI grâce à une nouvelle fonctionnalité d’AEM, [générer des variations](/help/generative-ai/generate-variations.md), maintenant accessible dans Cloud Service. La génération de variations vous permet de générer et d’adapter la création de contenu grâce à l’utilisation de l’IA générative. Contactez votre équipe Adobe en charge des comptes pour en savoir plus sur le programme.
 
-**Exploration des ressources dans la console de fragments de contenu**
+**Explorer les ressources dans la console de fragments de contenu**
 
-Les auteurs de contenu peuvent désormais parcourir, afficher et agir sur les images et d’autres ressources sans avoir à quitter la console de fragments de contenu.
+Les auteurs et les autrices de contenu peuvent désormais parcourir, afficher et agir sur les images et d’autres ressources sans avoir à quitter la console de fragments de contenu.
 
-![Exploration des ressources](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
+![Explorer des ressources](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez un courrier électronique à aemcs-headless-adopter@adobe.com à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs.
+Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez un e-mail à aemcs-headless-adopter@adobe.com à partir de votre ID d’e-mail officiel pour en savoir plus le programme d’adoption précoce.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouvelles fonctionnalités de la vue Assets {#admin-view}
+### Nouvelles fonctionnalités de la vue d’administration {#admin-view}
 
-**Intégration native avec Adobe Express**
+**Intégration native à Adobe Express**
 
-AEM Assets s’intègre de manière native à Adobe Express, ce qui vous permet d’accéder directement aux ressources stockées dans AEM Assets depuis l’interface utilisateur d’Adobe Express. Vous pouvez placer du contenu géré dans AEM Assets dans la zone de travail express, puis enregistrer du contenu nouveau ou modifié dans un référentiel AEM Assets.
+AEM Assets s’intègre de manière native à Adobe Express, ce qui vous permet d’accéder directement aux ressources stockées dans AEM Assets depuis l’interface utilisateur d’Adobe Express. Vous pouvez placer du contenu géré dans AEM Assets dans la zone de travail d’Express, puis enregistrer du contenu nouveau ou modifié dans un référentiel AEM Assets.
 
-![Inclusion de ressources à partir du module complémentaire Assets.](/help/assets/assets/adobe-express-native-integration.png)
+![Inclure des ressources à partir du module complémentaire Assets](/help/assets/assets/adobe-express-native-integration.png)
 
-**Rendus d’aperçu pour tous les types de vidéo pris en charge.**
+**Rendus d’aperçu pour tous les types de vidéo pris en charge**
 
-Experience Manager Assets génère désormais par défaut des rendus d’aperçu de tous les types de vidéo pris en charge sans nécessiter de configuration de profil de traitement.
+Experience Manager Assets génère désormais par défaut des rendus d’aperçu de tous les types de vidéo pris en charge sans nécessiter de configuration de profil de traitement.
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view}
 
-**Gestion des autorisations pour les collections**
+**Gérer les autorisations des collections**
 
-Assets Essentials permet aux administrateurs de gérer les niveaux d’accès pour les collections privées disponibles dans le référentiel. En tant qu’administrateur, vous pouvez créer des groupes d’utilisateurs et leur attribuer des autorisations afin de gérer les niveaux d’accès. Vous pouvez également déléguer les privilèges de gestion des autorisations aux groupes d’utilisateurs.
+Grâce à Assets Essentials, les administrateurs et les administratrices peuvent gérer les niveaux d’accès aux collections disponibles dans le référentiel. En tant qu’administrateur ou administratrice, vous pouvez créer des groupes d’utilisateurs et d’utilisatrices et leur attribuer des autorisations afin de gérer les niveaux d’accès. Vous pouvez également déléguer les privilèges de gestion des autorisations aux groupes d’utilisateurs et d’utilisatrices.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -113,71 +113,71 @@ Assets Essentials permet aux administrateurs de gérer les niveaux d’accès po
 
 -->
 
-### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
+### Nouvelles fonctionnalités pour AEM Forms {#forms-new-features}
 
-* **[Edge Delivery Services Adobe Experience Manager Forms](/help/edge/docs/forms/overview.md)**: AEM Forms Edge Delivery Services est un ensemble de services composable qui permet un environnement de développement rapide dans lequel les auteurs peuvent rapidement mettre à jour, publier et lancer de nouveaux formulaires. Ces services offrent des expériences de formulaires exceptionnelles et à fort impact qui favorisent l’engagement et les conversions. Ces expériences de formulaires sont faciles à créer et à développer.
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)** : les services AEM Forms Edge Delivery Services constituent un ensemble de services composable qui permet un environnement de développement rapide où les auteurs et les autrices peuvent mettre à jour, publier et lancer de nouveaux formulaires rapidement. Ces services offrent des expériences de formulaires exceptionnelles et à fort impact qui favorisent l’engagement et les conversions. Ces expériences de formulaires sont faciles à créer et à développer.
 
-  ![Fonctionnalités d’EDS Forms](/help/edge/assets/eds-forms-features.png)
+  ![Fonctionnalités d’EDS Forms](/help/edge/assets/eds-forms-features.png)
 
 Ces services permettent d’effectuer les opérations suivantes :
 
-* Utilisez plusieurs sources de contenu sur le même site de formulaires et utilisez vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou Adaptive Forms Editor.
-* Diffusez des expériences d’inscription numérique qui se chargent et s’affichent rapidement et en permanence pour surveiller les performances de vos formulaires grâce à la surveillance des utilisateurs réels (RUM).
-* Utilisez du HTML brut, du code CSS moderne et du code JavaScript vanille pour créer des expériences exceptionnelles, en évitant la courbe d’apprentissage détaillée d’une structure spécifique.
+* Utilisez plusieurs sources de contenu sur le même site de formulaires et utilisez vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou l’éditeur de formulaires adaptatifs.
+* Proposez des expériences d’inscription numérique qui se chargent et s’affichent rapidement et surveillez en permanence les performances de vos formulaires grâce à la surveillance des utilisateurs et utilisatrices réels (RUM).
+* Utilisez du HTML brut, du code CSS moderne et du code Vanilla JavaScript pour créer des expériences exceptionnelles, en évitant la courbe abrupte d’apprentissage d’un framework spécifique.
 
 
-### Nouvelles fonctionnalités de la version préliminaire d’AEM Forms {#forms-pre-release}
+### Nouvelles fonctionnalités de la version préliminaire pour AEM Forms {#forms-pre-release}
 
-* **Éditeur de règles visuel amélioré pour Forms adaptatif basé sur les composants principaux**: cette version apporte une mise à niveau significative de l’éditeur de règles visuel pour les formulaires adaptatifs basés sur les composants principaux. Cette version apporte une mise à niveau significative de l’éditeur de règles visuel pour les formulaires adaptatifs basés sur les composants principaux. Cette mise à jour porte sur la rationalisation des interactions avec des fonctions personnalisées, ce qui vous permet de créer des formulaires plus robustes et efficaces.
+* **Éditeur de règles visuel amélioré pour les formulaires adaptatifs basés sur les composants principaux** : cette version introduit une mise à niveau significative de l’éditeur de règles visuel pour les formulaires adaptatifs basés sur les composants principaux. Cette version introduit une mise à niveau significative de l’éditeur de règles visuel pour les formulaires adaptatifs basés sur les composants principaux. Cette mise à jour porte sur la rationalisation des interactions avec des fonctions personnalisées, ce qui vous permet de créer des formulaires plus robustes et efficaces.
 
-  Vous pouvez désormais rationaliser les interactions de fonctions personnalisées en procédant comme suit :
+  Vous pouvez désormais rationaliser les interactions de fonctions personnalisées en :
 
    * [Utilisation de nouvelles annotations pour fournir des définitions de fonction plus claires](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
    * [Utilisation de mécanismes de mise en cache pour les fonctions personnalisées, ce qui accélère les performances du formulaire](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
    * [Utilisation transparente d’objets globaux dans des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
    * [Définir et utiliser des paramètres facultatifs dans des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md#parameter).
 
-  Cette mise à jour apporte également les améliorations suivantes aux fonctionnalités de l’éditeur de règles. Vous pouvez :
+  Cette mise à jour introduit également les améliorations suivantes aux fonctionnalités de l’éditeur de règles. Vous pouvez :
 
    * Mise en oeuvre puissante [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) logique d’exécution conditionnelle.
-   * Tirez parti des fonctionnalités JavaScript modernes telles que les fonctions de gauche et de flèche (prise en charge d’ES10).
-   * Validez ou réinitialisez non seulement des champs, mais également des panneaux et des formulaires entiers, en développant le contrôle sur les interactions utilisateur.
+   * tirer profit de fonctionnalités JavaScript modernes telles que les fonctions let et arrow (prise en charge d’ES10) ;
+   * valider ou réinitialiser non seulement des champs, mais également des panneaux et des formulaires entiers, en optimisant le contrôle sur les interactions des utilisateurs et utilisatrices.
 
   Ces améliorations offrent une expérience plus intuitive et plus puissante pour l’élaboration de règles et de fonctions personnalisées dans l’éditeur de règles visuel.
 
-* **[Création de plusieurs versions d’un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: vous pouvez désormais gérer facilement les variantes de formulaires existants. Cela simplifie le contrôle des versions et facilite la comparaison pour l’optimisation des formulaires, le tout au sein d’un seul processus simplifié.
+* **[Créer plusieurs versions d’un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)** : vous pouvez désormais gérer facilement les variations de formulaires existants. Cela simplifie la gestion de versions et facilite la comparaison pour l’optimisation des formulaires, le tout au sein d’un seul workflow simplifié.
 
-* **[Comparer un formulaire adaptatif](/help/forms/compare-forms.md)**: vous pouvez désormais facilement comparer deux formulaires pour identifier les différences entre deux formulaires. Cela facilite la collaboration en permettant aux membres de l’équipe de comparer les révisions et de discuter efficacement des changements.
+* **[Comparer des formulaires adaptatifs](/help/forms/compare-forms.md)** : vous pouvez désormais comparer facilement deux formulaires pour identifier les différences entre eux. Cela facilite la collaboration en permettant aux personnes membres de l’équipe de comparer les révisions et de discuter efficacement des changements.
 
-* **Améliorations de l’accessibilité pour le composant Signature tactile**: cette mise à jour apporte des améliorations importantes de l’accessibilité au composant Signature tactile :
+* **Améliorations de l’accessibilité pour le composant Signature tactile** : cette mise à jour introduit des améliorations importantes de l’accessibilité au composant Signature tactile :
 
-  **Navigation au clavier améliorée :**
-   * Appuyez sur la touche de tabulation pour permettre aux utilisateurs de parcourir tous les éléments interactifs dans la boîte de dialogue de signature.
-   * La signature à l’aide d’une brosse ou d’un clavier et la pression sur Entrée ferme la boîte de dialogue.
-   * Le focus reste sur le contrôle de signature après avoir signé et cliqué sur &quot;OK&quot;.
+  **Navigation au clavier améliorée :**
+   * En appuyant sur la touche de tabulation, les utilisateurs et utilisatrices peuvent parcourir tous les éléments interactifs dans la boîte de dialogue de signature.
+   * Signer avec un pinceau ou un clavier et appuyer sur la touche Entrée entraîne la fermeture de la boîte de dialogue.
+   * Le focus reste sur la commande de signature après avoir signé et cliqué sur « OK ».
 
-  **Effacer la fonctionnalité de signature :**
+  **Fonctionnalité Effacer la signature :**
 
-   * Une croix claire pour effacer la signature est accessible à partir de la touche de tabulation.
-   * La boîte de dialogue &quot;Effacer la confirmation de signature&quot; est également accessible via la navigation par onglets.
+   * Une icône en forme de croix claire pour effacer la signature est accessible via la touche de tabulation.
+   * La boîte de dialogue de confirmation « Effacer la signature » est également accessible via la navigation à l’aide de la touche de tabulation.
 
-  **Étiquettes et contrôles améliorés :**
-   * Le libellé du bouton de signature au clavier est désormais plus clair, avec &quot;aria-label&quot; pour annoncer la fonctionnalité (par exemple &quot;aria-label=&#39;Sign using Keyboard&#39;&quot;).
+  **Libellés et contrôles améliorés :**
+   * Le libellé du bouton de signature au clavier est désormais plus clair, et utilise « aria-label » pour annoncer la fonctionnalité (par exemple, « aria-label=&#39;Signer à l’aide du clavier&#39; »).
    * Un contraste amélioré permet de distinguer facilement tous les contrôles de la signature tactile.
-   * Le bouton OK/Cocher indique désormais visuellement à quel moment il est inactif.
+   * Le bouton OK/coche indique désormais visuellement quand il est inactif.
 
-  **Commentaires de signature pour les Readers d’écran :**
-   * Lorsqu’une signature est saisie, les utilisateurs du lecteur d’écran peuvent entendre le texte utilisé pour créer la signature.
+  **Retour audio de signature pour les lecteurs d’écran :**
+   * Lorsqu’une signature est saisie, les utilisateurs et les utilisatrices du lecteur d’écran peuvent entendre le texte utilisé pour créer la signature.
 
-Cette mise à jour offre une expérience plus inclusive aux utilisateurs présentant un handicap en améliorant la navigation, la clarté et les commentaires pour le composant Signature tactile.
+Cette mise à jour offre une expérience plus inclusive aux utilisateurs et utilisatrices présentant un handicap en améliorant la navigation, la clarté et le retour audio pour le composant Signature tactile.
 
 ### Programme d’adoption précoce {#forms-early-adopter}
 
-* **[Envoyer un formulaire adaptatif au scénario de fusion Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offre une option prête à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui permet de déclencher un scénario Workfront Fusion lors de l’envoi d’un formulaire adaptatif.
+* **[Envoi d’un formulaire adaptatif à un scénario Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)** : Forms as a Cloud Service propose une option prête à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui permet de déclencher un scénario Workfront Fusion lors de l’envoi d’un formulaire adaptatif.
 
-  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Avec Adobe Workfront Fusion Connector, vous pouvez concevoir des processus qui sont déclenchés automatiquement lors de l’envoi d’un formulaire adaptatif. Par exemple, envisagez un scénario où un processus est lancé pour affecter à une personne spécifique la tâche de vérifier les données envoyées, ce qui permet l’approbation ou le rejet d’une demande en fonction des informations capturées par le biais du formulaire adaptatif. Cette intégration rationalisée améliore l’efficacité et apporte un nouveau niveau d’automatisation à vos processus de workflow.|
+  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Avec le connecteur Adobe Workfront Fusion, vous pouvez concevoir des workflows qui sont déclenchés automatiquement lors de l’envoi d’un formulaire adaptatif. Par exemple, envisagez un scénario où un workflow est lancé pour affecter à une personne spécifique la tâche de révision des données envoyées, ce qui permet d’approuver ou de rejeter une application en fonction des informations capturées par le biais du formulaire adaptatif. Cette intégration rationalisée améliore l’efficacité et offre un nouveau niveau d’automatisation à vos processus de workflow.
 
-* **[Service d’extension de Reader](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: les API de communication d’AEM Forms ont introduit Reader Extension Service pour vous permettre d’ajouter des fonctionnalités telles que le remplissage de formulaires et les commentaires à des PDF standard, ce qui les rend interactifs pour les utilisateurs disposant d’Adobe Reader gratuit.
+* **[Reader Extension Service](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)** : les API de communication d’AEM Forms ont introduit Reader Extension Service pour vous permettre d’ajouter des fonctionnalités telles que le remplissage de formulaires et les commentaires dans des PDF standard, ce qui les rend interactifs pour les utilisateurs et les utilisatrices disposant de la version gratuite d’Adobe Reader.
 
 * [Prise en charge des langues de droite à gauche](/help/forms/supporting-new-language-localization-core-components.md) : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire pour les langues s’écrivant de droite à gauche permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et aux marchés correspondants. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à un public plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
 
@@ -192,45 +192,45 @@ Le Service de données Real User Monitoring (RUM) offre un reflet plus précis d
 
 ## Principes de base d’[!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-### Programmes d&#39;adoption précoce {#foundation-early-adopter}
+### Programmes d’adoption précoce {#foundation-early-adopter}
 
-#### Alertes relatives aux règles de filtrage du trafic (programme des premiers adopteurs) {#traffic-filter-rules-alerts-early-adopter}
+#### Alertes relatives aux règles de filtrage du trafic (programme d’adoption précoce) {#traffic-filter-rules-alerts-early-adopter}
 
-La version récemment publiée [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), qui inclut les règles WAF (Web Application Firewall) (Pare-feu d’applications web) facultatives, vous permet de configurer le trafic qui doit être autorisé ou refusé.
+Les [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) récemment publiées qui incluent les règles WAF (Web Application Firewall) sous licence optionnelle vous permettent de configurer le trafic qui doit être autorisé ou refusé.
 
-Maintenant, vous pouvez envoyer un email **<aemcs-cdn-config-adopter@adobe.com>** pour rejoindre le programme des premiers adopteurs afin que vous puissiez être alerté chaque fois que vos règles de filtre de trafic sont déclenchées. Les notifications par e-mail du centre d’actions vous tiendront informé lorsque certaines conditions de trafic se produisent afin que vous puissiez prendre les mesures appropriées.
+Vous pouvez maintenant envoyer un e-mail à **<aemcs-cdn-config-adopter@adobe.com>** pour rejoindre le programme d’adoption précoce pour pouvoir recevoir une alerte chaque fois que vos règles de filtrage du trafic sont déclenchées. Les notifications par e-mail du Centre d’actions vous tiendront au courant lorsque certaines conditions de trafic se produisent afin que vous puissiez prendre les mesures appropriées.
 
-#### Configuration du réseau de diffusion de contenu (Programme des Adopteurs Anticipés) {#cdn-config-early-adopter}
+#### Configuration du réseau CDN (Programme d’adoption précoce) {#cdn-config-early-adopter}
 
-Outre la version récemment publiée [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), qui incluent éventuellement les règles WAF (Web Application Firewall) concédables, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md) et rejoindre le programme des premiers adopteurs en envoyant un courrier électronique **<aemcs-cdn-config-adopter@adobe.com>** pour accéder à :
+Outre les [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) récemment publiées qui incluent les règles WAF (Web Application Firewall) sous licence optionnelle, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration du réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md) et rejoindre le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>** pour accéder aux éléments suivants :
 
 * Redirections côté client 301/302
-* proxy des requêtes en périphérie vers des origines arbitraires (comme des applications non AEM)
+* Établir un proxy des requêtes en périphérie vers des origines arbitraires (comme les applications non AEM)
 * Transformations d’URL
 * Définir ou modifier des en-têtes de requête ou de réponse
 * Pages d’erreur personnalisées lorsque le réseau CDN ne peut pas atteindre AEM.
 
-#### Ingestion du temps d’exécution Apache/Dispatcher des cartes de réécriture (programme d’adoption précoce) {#apache-rewritemaps-early-adopter}
+#### Ingestion d’exécution d’Apache/du Dispatcher des mappages de réécriture (programme d’adoption précoce) {#apache-rewritemaps-early-adopter}
 
-Comme pour AEM 6.5, Apache/dispatcher ingère des cartes de réécriture placées à un emplacement spécifique dans le référentiel de publication et les charge, sans nécessiter d’exécution de pipeline de niveau web. Un utilisateur chargé de la conception de parcours peut ainsi déclarer des redirections à l’aide d’une interface utilisateur, comme celle proposée par ACS Commons Redirect Map Manager. Veuillez contacter **<aemcs-cdn-config-adopter@adobe.com>** pour plus d’informations.
+Comme pour AEM 6.5, Apache/le Dispatcher ingère des mappages de réécriture placées à un emplacement spécifique dans le référentiel de publication et les charge, sans nécessiter d’exécution de pipeline de niveau web. Un utilisateur professionnel ou une utilisatrice professionnelle peut ainsi déclarer des redirections à l’aide d’une interface utilisateur, comme celle proposée par le gestionnaire de mappage de redirection ACS Commons. Contactez **<aemcs-cdn-config-adopter@adobe.com>** pour plus d’informations.
 
-#### Edge Side Inclut (ESI) pour le chargement de contenu dynamique (Programme des premiers adopteurs) {#esi-early-adopter}
+#### Edge Side Includes (ESI) pour le chargement de contenu dynamique (programme d’adoption précoce) {#esi-early-adopter}
 
-Le réseau de diffusion de contenu géré par Adobe prend désormais en charge Edge Side Includes (ESI), un langage de balisage pour l’assemblage de contenu web dynamique de niveau périphérie. En incluant des fragments de code ESI, vous pouvez mettre en cache la page de HTML globale sur le réseau de diffusion de contenu avec des TTL plus élevés, tout en récupérant plus souvent à partir de l’origine les sections plus petites qui nécessitent des mises à jour de cadence plus élevées (TTL moins élevées). Veuillez contacter **<aemcs-cdn-config-adopter@adobe.com>** pour plus d’informations.
+Le réseau CDN géré par Adobe prend désormais en charge Edge Side Includes (ESI), un langage de balisage pour l’assemblage de contenu web dynamique au niveau Edge. En incluant des extraits de code ESI, vous pouvez mettre en cache la page HTML globale sur le réseau CDN avec des TTL plus élevés, tout en récupérant plus fréquemment de l’origine les sections plus petites qui nécessitent des mises à jour à un rythme supérieur (TTL moins élevés). Veuillez contacter **<aemcs-cdn-config-adopter@adobe.com>** pour plus d’informations.
 
-#### Prise en charge de RDE pour le code frontal à l’aide des thèmes du site et des modèles de site (programme des membres précoces) {#rde-frontend-early-adopter}
+#### Prise en charge du RDE pour le code en front-end à l’aide des thèmes du site et des modèles de site (programme d’adoption précoce) {#rde-frontend-early-adopter}
 
-Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prennent désormais en charge le code en front-end basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les utilisateurs et utilisatrices bénéficiant de l’adoption précoce. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **<aemcs-rde-support@adobe.com>** pour essayer et fournir des commentaires.
+Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prennent désormais en charge le code en front-end basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les utilisateurs et utilisatrices bénéficiant de l’adoption précoce. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **<aemcs-rde-support@adobe.com>** pour essayer cette fonctionnalité et fournir des commentaires.
 
-#### Amélioration de la journalisation des RDE (Programme des premiers adopteurs) {#rde-logging-early-adopter}
+#### Amélioration de la journalisation des RDE (programme d’adoption précoce) {#rde-logging-early-adopter}
 
-Lors du débogage du code dans une [Environnement de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), les développeurs peuvent désormais configurer et diffuser plus efficacement les journaux à l’aide de la ligne de commande, et sans modifier les propriétés OSGI dans le contrôle de version. Les fonctionnalités incluent :
+Lors du débogage du code dans un [environnement de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), les développeurs et développeuses peuvent désormais configurer et diffuser plus efficacement les journaux à l’aide de la ligne de commande, et cela sans modifier les propriétés OSGi dans la gestion de versions. Les fonctionnalités incluent les suivantes :
 
-* déclarer des niveaux de journal à chaque niveau de package ou de classe
-* personnaliser le format de sortie du journal ;
-* flux de plusieurs journaux en parallèle
+* déclarer des niveaux de journal par niveau de package ou de classe ;
+* personnaliser le format de sortie du journal ;
+* diffuser plusieurs journaux en parallèle.
 
-Veuillez contacter **<aemcs-rde-support@adobe.com>** pour essayer et fournir des commentaires.
+Veuillez contacter **<aemcs-rde-support@adobe.com>** pour essayer cette fonctionnalité et fournir des commentaires.
 
 ## Cloud Manager {#cloud-manager}
 
