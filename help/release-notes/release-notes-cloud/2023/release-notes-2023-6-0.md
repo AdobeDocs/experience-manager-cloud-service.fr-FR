@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2023.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '1357'
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
+workflow-type: tm+mt
+source-wordcount: '1322'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,7 @@ Consultez la vidéo Aperçu de la version de juin 2023 pour obtenir un résumé 
 * Les images peuvent désormais être optimisées dynamiquement pour une diffusion web dans des scénarios découplés via GraphQL d’AEM. Les [variables de requête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=fr#query-variables) peuvent être définies dans les requêtes GraphQL pour permettre aux applications clientes découplées de demander à AEM des images optimisées en conséquence.
 * Les balises sur les [variations de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=fr) peuvent désormais être générées au format JSON à l’aide de l’API de diffusion de contenu GraphQL d’AEM.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
@@ -65,12 +65,6 @@ Experience Manager Assets vous permet maintenant d’en faire plus à partir de 
 **Aperçus de miniatures pour les ressources 3D**
 
 [!DNL Experience Manager Assets] génère maintenant des [aperçus des miniatures pour les formats de fichiers 3D courants](/help/assets/file-format-support.md), notamment gLB, USDz, FBX, 3DS, OBJ et SBSAR. Lorsque ces fichiers sont chargés, les miniatures sont automatiquement générées par défaut.
-
-**Configuration du partage de lien**
-
-Une nouvelle expérience client améliorée pour la [création de partages de lien](/help/assets/share-assets.md) ainsi qu’un tout nouvel ensemble de configurations qui permet aux administrateurs et administratrices de personnaliser le comportement par défaut de cette fonctionnalité pour vos utilisateurs et utilisatrices.
-
-![Gestion du balisage](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media : mise à jour des champs liés au recadrage intelligent dans le profil d’image**
 
