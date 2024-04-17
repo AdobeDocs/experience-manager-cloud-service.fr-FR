@@ -1,21 +1,21 @@
 ---
-title: Utilisation d’Edge Delivery Services avec des AEM
+title: Utiliser Edge Delivery Services avec AEM
 description: Découvrez comment AEM as a Cloud Service peut être utilisé avec Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: e98ddd8169ffbd407fdd4ff713bda57f693abaf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation d’Edge Delivery Services avec des AEM {#using-edge}
+# Utiliser Edge Delivery Services avec AEM {#using-edge}
 
-Les Edge Delivery Services sont découplés de la source de contenu et peuvent ingérer du contenu provenant de différentes sources de contenu. Cela signifie que vous pouvez utiliser plusieurs sources de contenu sur le même site web avec une publication transparente et rationalisée, quelle que soit la source choisie.
+Edge Delivery Services est découplé de la source de contenu et peut ingérer du contenu provenant de différentes sources. Cela signifie que vous pouvez utiliser plusieurs sources de contenu sur le même site web et obtenir une publication transparente et rationalisée, quelle que soit la source choisie.
 
-Avec les Edge Delivery Services, vous pouvez créer rapidement des environnements de développement dans lesquels les auteurs peuvent mettre à jour et publier du contenu rapidement et où de nouveaux sites peuvent être lancés rapidement. Il ne faut que quelques secondes pour passer de l&#39;édition au contenu en direct sur Internet.
+Grâce à Edge Delivery Services, vous pouvez créer rapidement des environnements de développement dans lesquels les personnes créant du contenu peuvent rapidement mettre à jour et publier du contenu, ou encore lancer de nouveaux sites de manière rapide. Il ne faut que quelques secondes pour passer de l’édition à la vue du contenu en direct sur Internet.
 
 ![Sources de contenu pour Edge Delivery.](assets/content-sources.png)
 
@@ -29,7 +29,7 @@ Le principe directeur d’Adobe est la simplicité. Commencez par la création b
 
 ## Création {#authoring-edge}
 
-Avec Edge Delivery Services, la création est facile, rapide et flexible. Vous pouvez choisir de créer à l’aide de la création basée sur des documents ou de la création basée sur des AEM à l’aide d’Universal Editor.
+Avec Edge Delivery Services, la création est facile, rapide et flexible. Vous pouvez choisir la création basée sur les documents ou la création basée sur AEM avec l’éditeur universel.
 
 Consultez le document [Création de contenu pour Edge Delivery Services](/help/edge/aem-authoring/authoring.md) pour plus d’informations.
 

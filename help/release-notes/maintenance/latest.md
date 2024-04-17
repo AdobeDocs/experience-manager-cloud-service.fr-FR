@@ -3,9 +3,9 @@ title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experie
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 15860 {#release-15860}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 15860, rendue publique le jeudi 10 avril 2024. La version de maintenance précédente était la version 15787.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 15860, rendue publique le 10 avril 2024. La version de maintenance précédente était la version 15787.
 
 L’activation des fonctionnalités de la version 2024.3.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
