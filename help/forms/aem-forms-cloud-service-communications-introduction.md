@@ -1,13 +1,14 @@
 ---
 title: Que sont les API de communication as a Cloud Service Forms ?
 description: Utilisez les API de communication pour signer, certifier ou protéger vos documents, pour automatiser les processus de génération de PDF et pour convertir un document de PDF dans un autre format.
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 64%
+source-wordcount: '1988'
+ht-degree: 61%
 
 ---
 
@@ -190,14 +191,11 @@ Vous pouvez accomplir ces tâches à l’aide des API Encryption :
 
 Les API de signature et les API de chiffrement sont [API synchrones](#types-of-communications-apis-types).
 
-### Service Reader Extension
+### API des droits d’utilisation
 
-<span class="preview"> Le Service de vulgarisation Reader fait partie du Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité Droits d’utilisation est placée sous le Programme des Adopteurs Anticipés. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité. </span>
 
-Le service Reader Extensions permet à votre entreprise de partager facilement des documents de PDF interactifs en étendant la fonctionnalité d’Adobe Reader avec des droits d’utilisation supplémentaires. Le service Reader Extensions fonctionne avec Adobe Reader 7.0 et versions ultérieures. Ce service ajoute des droits d’utilisation dans un document PDF. Cette action active des fonctionnalités qui ne sont généralement pas disponibles lors de l’ouverture d’un document de PDF à l’aide d’Adobe Reader, comme l’ajout de commentaires à un document, le remplissage de formulaires et l’enregistrement du document.
-
->[!NOTE]
->Les utilisateurs tiers n’ont pas besoin de disposer d’un logiciel supplémentaire ni de modules externes pour utiliser les documents définis avec des droits d’utilisation.
+La fonctionnalité Droits d’utilisation permet à votre entreprise de partager facilement des documents de PDF interactifs en étendant la fonctionnalité d’Adobe Reader avec des droits d’utilisation supplémentaires. Le service fonctionne avec Adobe Reader 7.0 ou version ultérieure et ajoute des droits d’utilisation à un document PDF. Cette action active des fonctionnalités qui ne sont généralement pas disponibles lors de l’ouverture d’un document de PDF à l’aide d’Adobe Reader, comme l’ajout de commentaires à un document, le remplissage de formulaires et l’enregistrement du document.
 
 Lorsque les droits d’utilisation appropriés sont ajoutés aux documents PDF, les destinataires peuvent effectuer les activités suivantes depuis Adobe Reader :
 
@@ -208,11 +206,13 @@ Lorsque les droits d’utilisation appropriés sont ajoutés aux documents PDF, 
 * Envoyez les documents PDF complétés ou annotés par voie électronique.
 * Utilisez des documents et des formulaires PDF comme interface de développement intuitive pour les bases de données internes et les services Web.
 * Partage de documents PDF pour que les réviseurs puissent ajouter des commentaires à l’aide d’outils intuitifs d’insertion de commentaires et d’annotations, tels que notes autocollantes, tampons, texte surligné et texte barré. Les mêmes fonctions sont disponibles dans Acrobat.
-* Le décodage de formulaires à code à barres est pris en charge.
+* Prise en charge du décodage Forms à code à barres.
 
 Ces fonctionnalités de droits d’utilisation spéciaux sont automatiquement activées lorsqu’un document de PDF dont les droits sont activés est ouvert dans Adobe Reader. Lorsque l’utilisateur a fini de travailler avec un document dont les droits sont activés, ces fonctions sont à nouveau désactivées dans Adobe Reader. Elles restent désactivées jusqu’à ce que l’utilisateur ou l’utilisatrice reçoive un autre document PDF dont les droits sont activés.
 
-Les différentes fonctionnalités de droits d’utilisation des services d’extension Reader sont les suivantes :
+#### Activation ou désactivation des droits d’utilisation
+
+Les différentes fonctionnalités de droits d’utilisation pour étendre les services de Reader de PDF sont les suivantes :
 
 * **Décodage des codes à barres**: pour décoder les codes à barres dans le document du PDF.
 
@@ -238,7 +238,11 @@ Les différentes fonctionnalités de droits d’utilisation des services d’ext
 
 * **Submit Standalone**: pour envoyer des données de formulaire hors ligne à partir d’un document de PDF.
 
-**Autres fonctionnalités des services d’extension Reader**
+#### Extraction des droits d’utilisation
+
+Il permet de récupérer les droits d’utilisation activés ou désactivés dans un document de PDF pour l’extensibilité de Adobe Acrobat Reader.
+
+#### Autres fonctionnalités
 
 * **Message**: message affiché dans Adobe Acrobat Reader lors de l’ouverture d’un document de PDF avec un ou plusieurs droits d’utilisation appliqués.
 * **Déverrouiller le mot de passe**: mot de passe requis pour l’ouverture d’un document de PDF chiffré. En règle générale, il s’agit du mot de passe d’ouverture du document, mais si le document du PDF est en outre protégé par un mot de passe d’accès, vous pouvez l’utiliser pour l’ouvrir.
