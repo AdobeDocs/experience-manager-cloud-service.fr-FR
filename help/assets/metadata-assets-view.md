@@ -4,10 +4,10 @@ description: Découvrez comment gérer les métadonnées dans la vue Assets. Une
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Les métadonnées sont constituées de données ou de descriptions de données. 
 
 Les métadonnées permettent de classer les fichiers de manière détaillée à mesure que le volume d’informations numériques augmente. Il est ainsi possible de gérer quelques centaines de fichiers en ne prenant en compte que leurs noms, leurs miniature et leur taille. Pour autant, cette approche n’est pas évolutive. Elle est insuffisante si le nombre de personnes concernées et la quantité de ressources gérées augmentent.
 
-Avec l’ajout de métadonnées, la valeur d’une ressource numérique augmente, car elle devient :
+Avec l’ajout de métadonnées, la valeur d’une ressource numérique augmente, car la ressource devient :
 
 * plus accessible : les systèmes et les utilisateurs peuvent la trouver facilement ;
 * plus facile à gérer : vous pouvez rechercher plus facilement des ressources avec un même ensemble de propriétés et leur apporter des modifications ;
