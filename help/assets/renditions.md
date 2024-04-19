@@ -1,7 +1,8 @@
 ---
 title: Affichage et gestion des rendus dans Experience Manager Assets
 description: Découvrez comment AEM Assets et Dynamic Media simplifient la gestion efficace des images avec des rendus d’image statiques et dynamiques.
-source-git-commit: 5c1e2d5388b94243f668f07b1f338f035f00de85
+exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
+source-git-commit: 4627eb00ba910d1ad2920db15a87761bd7e4a0c0
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
@@ -13,7 +14,8 @@ ht-degree: 1%
 Les rendus dans Adobe Experience Manager (AEM) sont des versions personnalisées des ressources numériques, telles que les images, conçues pour différents appareils et plateformes afin d’assurer des performances optimales. AEM facilite la création et la gestion de ces rendus, ce qui améliore l’expérience utilisateur. Vous pouvez créer des miniatures, optimiser les images pour le web ou mobile, ajouter des filigranes, afficher et télécharger des rendus dynamiques ou de recadrage intelligent, et bien plus encore.
 
 Les paramètres d’image prédéfinis Dynamic Media et les rendus de recadrage intelligent favorisent une gestion systématique des images en phase avec les normes de la marque, ce qui optimise la cohésion de la marque. Cela simplifie le processus de localisation et d’utilisation rapide des rendus d’image dynamiques si nécessaire sans accès administrateur.
-<br>Les rendus sont classés comme statiques et dynamiques, chaque type présentant des fonctionnalités et des fonctionnalités uniques qui sont expliquées plus en détail.
+
+Les rendus sont classés comme statiques et dynamiques, chaque type présentant des fonctionnalités et des fonctionnalités uniques qui sont expliquées plus en détail.
 
 ## Rendus statiques {#static-renditions}
 
