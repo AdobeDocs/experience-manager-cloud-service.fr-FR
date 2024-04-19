@@ -2,10 +2,10 @@
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '2083'
-ht-degree: 95%
+source-wordcount: '2098'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Dans Adobe Experience Manager as a Cloud Service, un fragment d’expérience
 Un fragment d’expérience :
 
 * fait partie d’une expérience (page) ;
-* peut être utilisé sur plusieurs pages ;
+* Peut être utilisé sur plusieurs pages (basées sur des modèles modifiables).
 * est basé sur un modèle (modifiable uniquement) pour définir la structure et les composants.
 * Ce modèle est utilisé pour créer la *page racine* du fragment d’expérience.
 * est constitué d’un ou de plusieurs composants, avec disposition, dans un système de paragraphes ;
@@ -262,6 +262,10 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 Vous pouvez désormais utiliser votre fragment d’expérience lors de la création de vos pages :
 
 1. Ouvrez la page à modifier.
+
+   >[!NOTE]
+   >
+   >La page doit être basée sur un modèle modifiable.
 
 1. Créez une instance du composant Fragment d’expérience dans le système de paragraphes de la page :
 
