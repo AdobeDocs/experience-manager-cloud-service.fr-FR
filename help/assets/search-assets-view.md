@@ -2,10 +2,11 @@
 title: Découvrez comment rechercher des ressources dans [!DNL Assets view]?
 description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. La puissante fonctionnalité de recherche vous permet de découvrir rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
+source-git-commit: bd3835980fcada20fbfe2551a5c15cc7c69a5c37
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 94%
+source-wordcount: '1908'
+ht-degree: 76%
 
 ---
 
@@ -238,6 +239,91 @@ Vous pouvez prévisualiser votre page d’accueil axée sur la recherche afin d�
 1. Cliquez sur **[!UICONTROL Fermer]** pour quitter l’écran d’aperçu.
 
    ![Aperçu de la page d’accueil axée sur la recherche.](assets/search-first-preview.gif)
+
+## Recherche contextuelle {#contextual-search}
+
+Vous pouvez également rechercher des ressources disponibles dans le référentiel en définissant des invites de texte. Experience Manager Assets transforme automatiquement ces invites de texte en filtres de recherche et affiche les résultats de la recherche. Vous pouvez afficher et modifier des filtres automatiques à l’aide du volet Filtres pour affiner davantage les résultats de la recherche.
+
+### Accès à la recherche contextuelle {#access-contextual-search}
+
+Pour accéder à la recherche contextuelle dans Experience Manager Assets :
+
+1. Cliquez sur **[!UICONTROL Rechercher]** dans le volet de gauche.
+
+   ![Recherche contextuelle](assets/access-contextual-search.png)
+
+1. Définissez l’invite de texte dans la zone de texte Rechercher et cliquez sur **[!UICONTROL Recherche contextuelle]**.
+
+   ![Invite de texte de recherche contextuelle](assets/contextual-search-text-prompt.png)
+
+   [!DNL Experience Manager Assets] affiche les résultats de la recherche.
+
+
+### Filtres pris en charge {#supported-filters}
+
+La recherche contextuelle prend en charge les filtres prêts à l’emploi suivants. Basez vos invites de texte sur ces filtres pour afficher les résultats de recherche appropriés.
+
+* Hauteur de l’image
+
+* Largeur de l’image
+
+* Type de fichier : image, document, vidéo ou dossier.
+
+* Type MIME : JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX ou XLSX
+
+* Date de création
+
+* Date de modification
+
+* Date d’expiration
+
+* État de la ressource : approuvée, rejetée ou toutes les
+
+* Ressources expirées
+
+### Exemples de invites de texte {#text-prompts-examples}
+
+**Exemple 1**
+
+**Invite de texte**: images créées ce mois-ci.
+
+[!DNL Experience Manager Assets] applique automatiquement les filtres suivants et affiche les résultats de la recherche :
+
+![Exemple de recherche contextuelle 1](assets/contextual-search-example1.png)
+
+**Exemple 2**
+
+**Invite de texte**: images d&#39;au moins 200 px de haut et 100 px de large avec plage et ciel clair.
+
+[!DNL Experience Manager Assets] applique automatiquement les filtres suivants et affiche les résultats de la recherche :
+
+![Exemple de recherche contextuelle 2](assets/contextual-search-example2.png)
+
+**Exemple 3**
+
+**Invite de texte**: j’ai besoin d’images de ciel bleu de 1500 et 2500 pixels de hauteur et créées au cours du dernier mois et qui ne sont pas expirées et approuvées.
+
+[!DNL Experience Manager Assets] applique automatiquement les filtres suivants et affiche les résultats de la recherche :
+
+![Exemple de recherche contextuelle 3](assets/contextual-search-example3.png)
+
+La vidéo suivante illustre le processus de bout en bout, de l’accès à l’interface utilisateur de la recherche contextuelle à la définition d’invites de texte, en passant par l’affichage des résultats de la recherche.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428407)
+
+### Désactiver la recherche contextuelle {#disable-contextual-search}
+
+Les administrateurs ont également la possibilité de désactiver la recherche contextuelle pour les utilisateurs de votre entreprise. Pour ce faire, procédez comme suit :
+
+1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
+
+1. Dans le [!UICONTROL Recherche contextuelle] , désactivez la fonction **[!UICONTROL Activer la recherche contextuelle pour votre organisation]** pour désactiver la fonction de recherche contextuelle pour tous les utilisateurs de votre entreprise.
+
+### Commentaires sur la recherche contextuelle {#contextual-search-feedback}
+
+Si vous devez fournir des commentaires sur la fonction de recherche contextuelle, cliquez sur ![Icône Recherche contextuelle](assets/do-not-localize/contextual-search-icon.png)  et cliquez sur l’icône Commentaires . Sélectionnez le type de commentaire, spécifiez l’objet et la description, puis cliquez sur **[!UICONTROL Envoyer]**.
+
+![Commentaires sur la recherche contextuelle](assets/contextual-search-feedback.png)
 
 ## Étapes suivantes {#next-steps}
 
