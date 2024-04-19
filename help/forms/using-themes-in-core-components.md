@@ -3,10 +3,10 @@ title: Comment créer et utiliser des thèmes dans Forms adaptatif ?
 description: Vous pouvez utiliser des thèmes pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif à l’aide de composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
 workflow-type: tm+mt
-source-wordcount: '2610'
-ht-degree: 39%
+source-wordcount: '2754'
+ht-degree: 38%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 39%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Cet article |
 
-Vous pouvez créer et appliquer des thèmes pour mettre en forme un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires adaptatifs.
+Vous pouvez créer et appliquer des thèmes pour mettre en forme un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires adaptatifs.
 
 ## Thèmes disponibles
 
@@ -55,7 +55,7 @@ Vous pouvez [personnaliser n’importe lequel de ces thèmes pour créer un nouv
 
 ## Personnaliser un thème {#customize-a-theme-core-components}
 
-La personnalisation d’un thème fait référence au processus de modification et de personnalisation de l’aspect d’un thème. Lorsque vous personnalisez un thème, vous modifiez ses éléments de conception, sa mise en page, ses couleurs, sa typographie, et parfois le code sous-jacent. Il vous permet de créer un aspect unique et personnalisé pour votre site web ou votre application tout en conservant la structure et les fonctionnalités de base fournies par le thème.
+La personnalisation d’un thème fait référence au processus de modification et de personnalisation de l’aspect d’un thème. Lorsque vous personnalisez un thème, vous apportez des modifications à ses éléments de conception, à sa disposition, à ses couleurs, à sa typographie et parfois au code sous-jacent. Il vous permet de créer un aspect unique et personnalisé pour votre site web ou votre application tout en conservant la structure et les fonctionnalités de base fournies par le thème.
 
 ### Conditions préalables {#prerequisites-to-customize}
 
@@ -128,7 +128,7 @@ Pour cloner un thème, suivez les instructions suivantes :
 1. Exécutez la commande suivante :
 
    ```
-         code .
+      code .
    ```
 
    ![Ouvrez le dossier de thème dans un éditeur de texte brut.](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
@@ -137,14 +137,31 @@ Pour cloner un thème, suivez les instructions suivantes :
 
 1. Ouvrez le fichier `package.json` en mode d’édition.
 
-1. Définissez les valeurs de la variable `name` et `description` attributs.
+1. Définissez les valeurs de la variable `name` et `version` attributs.
 
-   L’attribut name est utilisé pour identifier de manière unique le thème, par exemple &quot;aem-forms-wknd-theme&quot; et s’affiche dans la variable **Style** de **Assistant de création de formulaires**. L’attribut description fournit des détails supplémentaires sur le thème, y compris son objectif et les scénarios pour lesquels il est conçu. Vous pouvez également spécifier la version, la description et la licence du thème.
+   ![Image de changement du nom du thème de la zone de travail](/help/forms/assets/changename_canvastheme.png)
 
-1. Enregistrez et fermez le fichier.
+   >[!NOTE]
+   >
+   > * L’attribut name est utilisé pour identifier de manière unique le thème et le nom spécifié s’affiche dans la variable **Style** de la **Assistant de création de formulaires**.
+   > * Vous avez la possibilité de sélectionner un nom pour votre thème en fonction de votre choix, par exemple : `mytheme` ou `customtheme`. Cependant, dans ce cas, nous avons spécifié le nom comme `aem-forms-wknd-theme`.
 
-![Image de changement du nom du thème de la zone de travail](/help/forms/assets/changename_canvastheme.png)
+1. Ouvrez le fichier `package-lock.json` en mode d’édition.
+1. Définissez les valeurs de la variable `name` et `version` attributs. Assurez-vous que les valeurs de la variable `name` et `version` dans le `Package-lock`Le fichier .json correspond à ceux du fichier `Package.json` fichier .
 
+   ![Image de changement du nom du thème de la zone de travail](/help/forms/assets/changename_canvastheme-package-lock.png)
+
+1. (Facultatif) Ouvrez le `ReadMe` pour modifier et mettre à jour le nom du thème.
+
+   ![Image de changement du nom du thème de la zone de travail](/help/forms/assets/changename_canvastheme-readme-file.png)
+
+1. Enregistrez et fermez les fichiers.
+
+**Considérations lors de la définition du nom du thème**
+
+* Il est obligatoire de supprimer la variable `@aemforms` du nom du thème dans `Package.json` et `Package-lock.json` fichier . Si vous ne supprimez pas `@aemforms` à partir de votre nom de thème personnalisé, le pipeline frontend échoue pendant le déploiement du thème.
+* Il est recommandé de mettre à jour le thème `version` in `Package.json` et `Package-lock.json` afin de refléter précisément les modifications et améliorations apportées au fil du temps à votre thème.
+* Pour obtenir des informations importantes sur l’utilisation, les instructions d’installation et d’autres détails pertinents, il est recommandé de mettre à jour le nom du thème dans le `ReadMe` fichier .
 
 #### 3. Personnaliser un thème {#customize-the-theme}
 
@@ -378,7 +395,7 @@ Les étapes à suivre pour appliquer un thème à un formulaire adaptatif sont l
 
 1. Connectez-vous à votre instance de création AEM Forms.
 
-1. Sélectionner **Adobe Experience Manager** > **Forms** > **Forms et documents**.
+1. Sélectionnez **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
 
 1. Cliquez sur **Créer** > **Formulaires adaptatifs**. L’assistant de création de formulaires adaptatifs s’ouvre.
 
