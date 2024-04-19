@@ -2,10 +2,10 @@
 title: Règles de filtre de trafic incluant des règles WAF
 description: Configuration des règles de filtre de incluant des règles de pare-feu d’application web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
-workflow-type: ht
-source-wordcount: '3669'
-ht-degree: 100%
+source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+workflow-type: tm+mt
+source-wordcount: '3788'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Une sous-catégorie de règles de filtre de trafic nécessite une licence Sécur
 
 Les règles de filtre de trafic peuvent être déployées par le biais de pipelines de configuration de Cloud Manager vers des types d’environnements de développement, d’évaluation et de production dans des programmes de production (hors sandbox). La prise en charge des RDE sera assurée à l’avenir.
 
-[Suivez un tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) pour développer rapidement une expertise concrète sur cette fonctionnalité.
+[Suivez un tutoriel](#tutorial) pour développer rapidement une expertise concrète sur cette fonctionnalité.
 
 >[!NOTE]
 >Vous souhaitez utiliser d’autres options pour configurer le trafic sur le réseau CDN, notamment modifier la requête/réponse, déclarer des redirections et établir un proxy vers une origine non AEM ? [Découvrez comment et essayez](/help/implementing/dispatcher/cdn-configuring-traffic.md) en rejoignant le programme d’adoption précoce.
@@ -415,6 +415,8 @@ Les règles de limite de débit ne peuvent pas faire référence aux indicateurs
 
 Les limites de débit sont calculées par POP de réseau CDN. Supposons, par exemple, que les POP de Montréal, Miami et Dublin connaissent des débits de trafic de 80, 90 et 120 requêtes par seconde, respectivement, et que la règle de limite de débit soit définie sur une limite de 100. Dans ce cas, seul le trafic vers Dublin serait limité en débit.
 
+Les limites de taux sont évaluées en fonction du trafic qui atteint la périphérie, du trafic qui atteint la périphérie ou du nombre d’erreurs.
+
 ### Structure rateLimit {#ratelimit-structure}
 
 | **Propriété** | **Type** | **Par défaut** | **SIGNIFICATION** |
@@ -422,6 +424,7 @@ Les limites de débit sont calculées par POP de réseau CDN. Supposons, par exe
 | limite | entier compris entre 10 et 10 000 | obligatoire | Débit de requête (par POP de réseau CDN) dans les requêtes par seconde pour lesquelles la règle est déclenchée. |
 | fenêtre | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le débit de requête est calculé. La précision des compteurs dépend de la taille de la fenêtre (plus la fenêtre est grande, plus la précision est élevée). Par exemple, on peut s’attendre à une précision de 50 % pour la fenêtre d’une seconde et de 90 % pour la fenêtre de 60 secondes. |
 | pénalité | entier compris entre 60 et 3 600 | 300 (5 minutes) | Période en secondes pendant laquelle les requêtes correspondantes sont bloquées (arrondie à la minute la plus proche). |
+| nombre | all, récupérer, erreur | Toutes | évaluer en fonction du trafic Edge (tous), du trafic d’origine (récupération) ou du nombre d’erreurs. |
 | groupBy | tableau [Getter] | aucun | Le compteur de limiteur de taux sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
 
 
@@ -447,6 +450,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -468,7 +472,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## Alertes sur les règles de filtrage de trafic {#traffic-filter-rules-alerts}
@@ -615,7 +619,7 @@ Adobe fournit un mécanisme de téléchargement des outils de tableau de bord su
 
 Les outils de tableau de bord peuvent être clonés directement à partir du référentiel GitHub [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool).
 
-[Consultez le tutoriel](#tutorial) pour obtenir des instructions concrètes sur l’utilisation des outils de tableau de bord.
+[Tutorials](#tutorial) sont disponibles pour obtenir des instructions concrètes sur l’utilisation de l’outil de tableau de bord.
 
 ## Règles de démarrage recommandées {#recommended-starter-rules}
 
@@ -700,9 +704,13 @@ data:
           - CMDEXE
 ```
 
-## Tutoriel {#tutorial}
+## Tutoriels {#tutorial}
 
-[Effectuez un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=fr) pour acquérir des connaissances pratiques et de l’expérience sur les règles de filtre de trafic.
+Deux tutoriels sont disponibles.
+
+### Protéger les sites web avec des règles de filtrage du trafic (y compris des règles WAF)
+
+[Utilisation d’un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=fr) pour acquérir des connaissances et une expérience générales et pratiques sur les règles de filtrage du trafic, y compris les règles WAF.
 
 Ce tutoriel vous guide à travers les éléments suivants :
 
@@ -711,3 +719,16 @@ Ce tutoriel vous guide à travers les éléments suivants :
 * Déclaration des règles de filtre de trafic, y compris les règles WAF
 * Analyse des résultats à l’aide des outils de tableau de bord
 * Bonnes pratiques
+
+### Blocage des attaques DoS et DDoS à l’aide de règles de filtrage de trafic
+
+[Exploration approfondie de la façon de bloquer](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Les attaques par déni de service (DoS) et par déni de service (DDoS) utilisant des règles de filtrage de trafic de limite de débit et d’autres stratégies.
+
+Ce tutoriel vous guide à travers les éléments suivants :
+
+* compréhension de la protection
+* recevoir des alertes lorsque les limites de taux sont dépassées
+* analyse des schémas de trafic à l’aide de l’outil de tableau de bord pour configurer les seuils pour les règles de filtrage de trafic limite de taux
+
+
+
