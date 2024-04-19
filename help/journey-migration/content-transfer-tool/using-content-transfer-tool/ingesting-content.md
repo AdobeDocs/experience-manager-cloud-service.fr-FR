@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
 source-wordcount: '2876'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -70,7 +70,7 @@ Suivez les étapes ci-dessous pour ingérer votre jeu de migration à l’aide d
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
 >title="Estimation de la durée d’ingestion"
->abstract="Une durée approximative d’une ingestion spécifique peut être affichée pour donner une idée générale de la durée de cette ingestion. Il existe des limites à sa précision."
+>abstract="Une durée approximative d’une ingestion spécifique peut être affichée pour donner une idée générale de la durée de cette ingestion. Sa précision a toutefois des limites."
 
 ![image](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
