@@ -2,18 +2,19 @@
 title: Modification de vidéos
 description: Modification des vidéos à l’aide de [!DNL Adobe Express] options optimisées et enregistrez les vidéos mises à jour sous forme de versions.
 role: User
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 18%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
 # Modification de vidéos dans [!DNL Assets Essentials] {#edit-videos}
 
-La transformation d’une vidéo en une taille parfaite est facile à l’aide de l’incorporation [!DNL Adobe Express] actions rapides. Actions rapides dans [!DNL Assets Essentials] optimisée par [!DNL Adobe Express] fournit des options d’édition vidéo conviviales, notamment recadrer la vidéo, redimensionner la vidéo, rogner la vidéo et convertir la vidéo en GIF.
+La création de variantes de contenu vidéo est facile pour les utilisateurs d’Assets avec l’élément intégré [!DNL Adobe Express] actions rapides pour la vidéo. Actions rapides dans [!DNL Assets Essentials] optimisée par [!DNL Adobe Express] fournit des options d’édition vidéo conviviales, notamment recadrer la vidéo, redimensionner la vidéo, rogner la vidéo et convertir la vidéo en GIF.
 
-Après avoir modifié une vidéo, vous pouvez enregistrer la nouvelle vidéo en tant que nouvelle version. Le contrôle de version vous permet de revenir ultérieurement à la ressource d’origine, si nécessaire. Pour modifier une vidéo, accédez aux détails de la vidéo et cliquez sur **[!UICONTROL Modifier la vidéo]**. Vous pouvez également sélectionner la ressource et cliquer sur les détails, puis cliquer sur ![ciseaux](assets/do-not-localize/cut.svg) dans le volet de droite.
+Pour modifier une vidéo, accédez aux détails de la vidéo et cliquez sur [!UICONTROL Modifier la vidéo]. Vous pouvez également sélectionner la ressource et cliquer sur les détails, puis cliquer sur ![ciseaux](assets/do-not-localize/cut.svg) dans le volet de droite. Après avoir modifié une vidéo, vous pouvez enregistrer la nouvelle vidéo sous la forme d’une nouvelle version ou d’une nouvelle ressource.
 
 ## Conditions préalables {#prerequisites}
 
@@ -38,7 +39,7 @@ Vous pouvez éliminer les parties indésirables de la vidéo en utilisant l’é
 
 ### Redimensionner la vidéo {#resize-video-using-express}
 
-Le redimensionnement d’une vidéo à une taille spécifique est un cas d’utilisation très courant. [!DNL Assets Essentials] permet de redimensionner rapidement la vidéo pour l’adapter aux dimensions courantes en fournissant de nouvelles résolutions précalculées pour des tailles spécifiques. Pour redimensionner la vidéo à l’aide de [!DNL Assets Essentials], procédez comme suit :
+Le contenu vidéo final dans la gestion des ressources numériques doit souvent être redimensionné pour être distribué à des canaux spécifiques. [!DNL Assets Essentials] vous permet de redimensionner facilement la vidéo pour l’adapter aux dimensions requises par les canaux sociaux courants. Vous pouvez également redimensionner la vidéo selon des résolutions personnalisées. Pour redimensionner la vidéo à l’aide de [!DNL Assets Essentials], exécutez les étapes ci-dessous :
 
 1. Sélectionnez une vidéo, puis cliquez sur **[!UICONTROL Modifier]**.
 2. Cliquez sur **[!UICONTROL Redimensionner la vidéo]** dans les actions rapides disponibles dans le volet de gauche.
@@ -52,7 +53,7 @@ La vidéo redimensionnée peut être téléchargée. Vous pouvez enregistrer la 
 
 ### Vidéo Rogner {#trim-video-using-express}
 
-Rendu vidéo rapide dans [!DNL Assets Essentials] optimisée par [!DNL Adobe Express] vous permet de rogner la vidéo sans effort. Procédez comme suit :
+Si vous devez utiliser un clip d’une vidéo plus grande, vous pouvez utiliser la variable **[!UICONTROL Rogner la vidéo]** pour sélectionner et rogner une section de la vidéo. Procédez comme suit :
 
 1. Sélectionnez une vidéo, puis cliquez sur **[!UICONTROL Modifier]**.
 2. Cliquez sur **[!UICONTROL Rogner la vidéo]** dans les actions rapides disponibles dans le volet de gauche.
@@ -80,13 +81,13 @@ Votre vidéo peut être téléchargée au format GIF. Vous pouvez enregistrer la
 
 ## Limites {#limitations-video-adobe-express}
 
-* Seul le type de vidéo MP4 est pris en charge.
+* Seules les vidéos au format MP4 sont prises en charge pour modification.
 
-* Taille de fichier maximale prise en charge : 200 Mo
+* La taille de fichier source maximale prise en charge est de 200 Mo.
 
-* Les dimensions minimale et maximale de la vidéo sont respectivement de 46 et 3 840 pixels.
+* Les vidéos prises en charge sont supérieures à 46 pixels et inférieures à 3 840 pixels de tous les côtés.
 
-* Les navigateurs web pris en charge sont Google Chrome, Firefox, Safari et Edge.
+* Les navigateurs Web pris en charge sont Google Chrome, Firefox, Safari et Edge.
 
 * Les fonctionnalités ne peuvent pas être ouvertes dans un mode incognito d’un navigateur web.
 
