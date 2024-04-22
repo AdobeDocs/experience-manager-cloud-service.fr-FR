@@ -1,8 +1,8 @@
 ---
 source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 # Fragments de code {#snippets}
@@ -36,8 +36,8 @@ ht-degree: 96%
 * [Envoyer des données de formulaire adaptatif à un point d’entrée REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Envoyer des données de formulaire adaptatif à un workflow AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utiliser le Portail Formulaires pour répertorier des formulaires adaptatifs AEM sur un site web AEM](/help/forms/configure-forms-portal.md)
-* [Ajout de versions, de commentaires et d’annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-* [Comparaison d’Adaptive Forms](/help/forms/compare-forms.md)
+* [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+* [Comparer des formulaires adaptatifs](/help/forms/compare-forms.md)
 
 
 ## Actions d’envoi pour les formulaires adaptatifs {#af-submit-action}

@@ -3,9 +3,9 @@ title: Comment mettre à jour votre contenu à l’aide des API AEM Assets
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -256,7 +256,7 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 >
 >Voir la référence API [API Adobe Experience Manager Assets : fragments de contenu](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 >
->La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+>Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 ### Lecture/Diffusion {#read-delivery}
 
@@ -335,4 +335,4 @@ Continuez votre parcours AEM découplé en consultant ensuite le document. [Tout
 * [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
 * [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
-* La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+* Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.

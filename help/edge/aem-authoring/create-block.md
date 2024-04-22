@@ -3,9 +3,9 @@ title: Créer des blocs instrumentés pour une utilisation avec l’éditeur uni
 description: Découvrez comment créer des blocs instrumentés pour une utilisation avec l’éditeur universel dans l’instance de création AEM avec des projets Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1297'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -248,11 +248,11 @@ La publication de contenu avec un nouveau modèle n’est prise en charge que lo
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous savez comment créer des blocs, il est essentiel de comprendre comment modéliser le contenu d’une manière sémantique pour obtenir une expérience de développement allégée.
+Maintenant que vous savez comment créer des blocs, il est essentiel de comprendre comment modéliser le contenu de manière sémantique pour optimiser l’expérience de développement.
 
-Consultez le document [Modélisation de contenu pour la création AEM avec des projets Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) pour découvrir comment fonctionne la modélisation de contenu pour la création AEM avec des projets Edge Delivery Services.
+Consultez le document [Modélisation de contenu pour la création AEM avec des projets Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) pour découvrir comment fonctionne la modélisation de contenu pour la création AEM avec des projets Edge Delivery Services.
 
 >[!TIP]
 >
->Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création AEM avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Pour une présentation détaillée du processus de création d’un projet Edge Delivery Services activé pour la création AEM avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire AEM Gems.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

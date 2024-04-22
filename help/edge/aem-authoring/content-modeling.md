@@ -3,9 +3,9 @@ title: Modéliser du contenu pour la création AEM avec des projets Edge Deliv
 description: Découvrez le fonctionnement de la modélisation de contenu pour la création AEM avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2233'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -627,7 +627,7 @@ La plupart des propriétés de page par défaut disponibles dans AEM sont mappé
 
 * `cq:lastModified` en tant que `modified-time` au format ISO8601.
 * Heure de la dernière publication du document en tant que `published-time` au format ISO8601.
-* `cq:tags` as `cq-tags` sous la forme d’une liste d’ID de balise séparés par des virgules.
+* `cq:tags` en tant que `cq-tags` comme liste séparée par des virgules des identifiants de balises.
 
 Il est également possible de définir un modèle de composant pour les métadonnées de page personnalisées, qui sera mis à la disposition de l’auteur ou de l’autrice sous forme d’onglet dans la boîte de dialogue Propriétés de la page AEM Sites.
 
@@ -648,13 +648,13 @@ Pour ce faire, créez un modèle de composant avec l’identifiant `page-metadat
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous savez comment modéliser du contenu, vous pouvez créer des blocs pour vos propres Edge Delivery Services avec un projet de création AEM.
+Maintenant que vous savez comment modéliser du contenu, vous pouvez créer des blocs pour votre propre Edge Delivery Services avec un projet de création AEM.
 
-Voir le document [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/aem-authoring/create-block.md) pour savoir comment créer des blocs instrumentés pour une utilisation avec l’éditeur universel dans AEM création avec des projets Edge Delivery Services.
+Voir le document [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/aem-authoring/create-block.md) pour savoir comment créer des blocs instrumentés pour une utilisation avec l’éditeur universel dans l’instance de création AEM avec des projets Edge Delivery Services.
 
-Si vous connaissez déjà la création de blocs, consultez le document . [Guide de prise en main du développeur pour la création AEM avec des Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) pour vous familiariser avec un nouveau site Adobe Experience Manager à l’aide d’Edge Delivery Services et d’Universal Editor pour la création de contenu.
+Si vous savez déjà comment créer des blocs, consultez le document [Guide de prise en main du développement pour la création AEM avec Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) pour vous familiariser avec un nouveau site Adobe Experience Manager en utilisant Edge Delivery Services et l’éditeur universel pour la création de contenu.
 
 >[!TIP]
 >
->Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création AEM avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Pour une présentation détaillée du processus de création d’un projet Edge Delivery Services activé pour la création AEM avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire AEM Gems.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

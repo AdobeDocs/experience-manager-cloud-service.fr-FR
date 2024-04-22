@@ -4,9 +4,9 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -253,8 +253,8 @@ Le dossier du bloc de formulaires adaptatifs `blocks/form` est votre espace rés
 
 Votre création est prête à être dévoilée ? Utilisez Git pour valider et envoyer vos modifications. Cela met à jour les environnements de prévisualisation et de production accessibles aux URL suivantes (remplacez les espaces réservés par les détails de votre projet) :
 
-Aperçu : `https://<branch>--<repo>--<owner>.hlx.page/`
-Production : `https://<branch>--<repo>--<owner>.hlx.live/`
+Prévisualisation : `https://<branch>--<repo>--<owner>.hlx.page/`
+Production : `https://<branch>--<repo>--<owner>.hlx.live/`
 
 Félicitations. Vous avez correctement configuré votre environnement de développement local et déployé vos modifications.
 

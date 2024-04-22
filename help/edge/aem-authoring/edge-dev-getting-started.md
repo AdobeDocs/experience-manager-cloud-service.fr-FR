@@ -1,17 +1,17 @@
 ---
-title: Guide de prise en main du développeur ou de la développeuse pour la création AEM avec Edge Delivery Services
+title: Guide de démarrage de développement pour la création AEM avec Edge Delivery Services
 description: Ce guide vous permet de maîtriser l’exécution d’un nouveau site Adobe Experience Manager avec Edge Delivery Services et l’éditeur universel pour la création de contenu.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1296'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Guide de prise en main du développeur ou de la développeuse pour la création AEM avec Edge Delivery Services {#edge-dev-getting-started}
+# Guide de démarrage de développement pour la création AEM avec Edge Delivery Services {#edge-dev-getting-started}
 
 Ce guide vous permet de maîtriser l’exécution d’un nouveau site Adobe Experience Manager avec Edge Delivery Services et l’éditeur universel pour la création de contenu.
 
@@ -30,9 +30,9 @@ AEM propose deux éditeurs de contenu différents dont le choix dépend de votre
 * **Éditeur universel** : il doit s’agir du choix par défaut pour les nouveaux sites.
 * **Éditeur de page AEM** : cette option doit être sélectionnée pour une migration d’une instance AEM Sites existante vers Edge Delivery Services.
 
-Ce guide porte sur les projets AEM réalisés sur Edge Delivery Services à l’aide de l’éditeur universel. Voir le document [Utilisation d’Edge Delivery Services avec des AEM](/help/edge/using.md) pour plus d’informations sur le choix de l’éditeur approprié et la migration de sites AEM existants vers des Edge Delivery Services.
+Ce guide porte sur les projets AEM réalisés sur Edge Delivery Services à l’aide de l’éditeur universel. Voir le document [Utiliser Edge Delivery Services avec AEM](/help/edge/using.md) pour en savoir plus sur le choix de l’éditeur approprié et la migration d’AEM Sites existants vers Edge Delivery Services.
 
-## Concepts de base lors du développement pour les Edge Delivery Services {#core-concepts}
+## Concepts de base du développement pour Edge Delivery Services {#core-concepts}
 
 Edge Delivery Services est basé sur le concept de blocs. AEM est fourni avec une bibliothèque complète de blocs prédéfinis, qui peut être étendue pour répondre aux besoins de votre projet. Le code pour les projets Edge Delivery Services est géré dans GitHub.
 
@@ -111,7 +111,7 @@ Vous devez d’abord créer un projet sur GitHub, basé sur le modèle Adobe.
 
    ![paths.json](assets/edge-dev-getting-started/paths.png)
 
-1. Le mappage par défaut utilisera le nom du référentiel. Mettez à jour le mappage par défaut selon les besoins de votre projet avec `/content/<site-name>/:/` et cliquez sur **Valider les modifications...**.
+1. Le mappage par défaut portera le nom du référentiel. Mettez à jour le mappage par défaut selon les besoins de votre projet avec `/content/<site-name>/:/` et cliquez sur **Valider les modifications...**.
 
    * Fournissez votre propre `<site-name>`. Vous en aurez besoin ultérieurement.
    * Les mappages indiquent à Edge Delivery Services comment mapper le contenu de votre référentiel AEM à l’URL du site.
@@ -130,7 +130,7 @@ Maintenant que vous disposez d’un projet GitHub, vous devez créer un site AE
 >
 >Pour modifier votre site à l’aide de l’éditeur universel, vous devez utiliser un navigateur basé sur Chromium.
 
-1. Téléchargez la dernière version d’AEM Création avec modèle de site Edge Delivery Services depuis GitHub à l’adresse [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Téléchargez le dernier modèle de site de création AEM avec Edge Delivery Services sur GitHub à l’adresse [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Connectez-vous à votre instance de création AEM as a Cloud Service et accédez à la console Sites, puis appuyez ou cliquez sur **Créer** -> **Site à partir du modèle**.
 
@@ -140,7 +140,7 @@ Maintenant que vous disposez d’un projet GitHub, vous devez créer un site AE
 
    ![Import des modèles](assets/edge-dev-getting-started/site-templates.png)
 
-1. Téléchargez le modèle de site Création d’AEM avec les Edge Delivery Services que vous avez téléchargé à partir de GitHub.
+1. Chargez le modèle de site de création AEM avec Edge Delivery Services que vous venez de télécharger à partir de GitHub.
 
    * Le modèle ne doit être chargé qu’une seule fois. Une fois chargé, il peut être réutilisé pour créer d’autres sites.
 
@@ -192,11 +192,11 @@ Lorsque vous avez terminé de modifier votre nouveau site à l’aide de l’éd
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous disposez d’un projet de création AEM avec des Edge Delivery Services, vous pouvez commencer à créer et à mettre en forme vos propres blocs.
+Maintenant que vous disposez d’un projet de création AEM avec Edge Delivery Services, vous pouvez commencer à créer vos propres blocs et à leur appliquer des styles.
 
 Consultez le guide [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/aem-authoring/create-block.md) pour plus d’informations.
 
 >[!TIP]
 >
->Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création AEM avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Pour une présentation exhaustive de la création d’un projet Edge Delivery Services adapté à la création AEM avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire AEM Gems.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

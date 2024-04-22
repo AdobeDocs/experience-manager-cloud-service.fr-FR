@@ -4,9 +4,9 @@ description: Découvrez le fonctionnement de la création de contenu avec Edge 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 Avec Edge Delivery Services, la création est facile, rapide et flexible. Vous disposez de deux options pour créer du contenu pour Edge Delivery Services :
 
 * [Éditeur universel](#universal-editor) - Interface utilisateur moderne pour la création de contenu dans AEM
-* [Création basée sur des documents](#document-based) - Documents Microsoft Word ou Google, par exemple
+* [Création basée sur des documents](#document-based) - Microsoft Word ou Google Docs, par exemple
 
 ## Création avec l’éditeur universel {#universal-editor}
 
@@ -53,7 +53,7 @@ Veuillez consulter le [Guide de prise en main du développement pour la créatio
 
 ## Création basée sur des documents  {#document-based}
 
-Lors de l’utilisation de la création basée sur des documents, vous pouvez utiliser diverses sources telles que des documents Microsoft Word et Google Docs. Les documents provenant de ces sources deviennent des pages de votre site web. Les en-têtes, listes, images, éléments de police et vidéos peuvent tous être transférés de la source initiale vers votre site web. Vous pouvez ajouter des métadonnées à des fins d’optimisation pour les moteurs de recherche ou utiliser des blocs pour travailler avec du contenu structuré et ajouter des fonctionnalités.
+Dans le cas de la création basée sur des documents, vous pouvez utiliser diverses sources telles que des documents Microsoft Word et Google Docs. Les documents provenant de ces sources deviennent des pages de votre site web. Les en-têtes, listes, images, éléments de police et vidéos peuvent tous être transférés de la source initiale vers votre site web. Vous pouvez ajouter des métadonnées à des fins d’optimisation pour les moteurs de recherche ou utiliser des blocs pour travailler avec du contenu structuré et ajouter des fonctionnalités.
 
 Pour plus d’informations sur la création basée sur des documents, reportez-vous à [ce document dans la documentation Edge Delivery Services.](/help/edge/docs/authoring.md)
 
