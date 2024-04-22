@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 5e7a1ec21cc99963e95e4b0655055b8f38703101
 workflow-type: tm+mt
 source-wordcount: '4893'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -174,8 +174,8 @@ ht-degree: 98%
          + [Notes de mise à jour de la version 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Notes de mise à jour de Workfront pour le connecteur amélioré Experience Manager{#workfront}
       + [Notes de mise à jour actuelles de Workfront pour le connecteur amélioré Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + Notes de mise à jour de la fonction Générer des variations {#generate-variations}
-      + [Notes de mise à jour actuelles pour la génération de variations](/help/generative-ai/release-notes-generate-variations.md)
+   + Notes de mise à jour pour la fonction de génération de variations {#generate-variations}
+      + [Notes de mise à jour actuelles pour la fonction de génération de variations](/help/generative-ai/release-notes-generate-variations.md)
    + [Nouveautés](/help/release-notes/what-is-new.md)
    + [Changements notables dans AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md)
@@ -592,7 +592,7 @@ ht-degree: 98%
       + [Principales innovations d’Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
       + [Modifications notables](/help/forms/notable-changes.md)
       + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
-      + [Questions fréquemment posées](/help/forms/faq.md)
+      + [Questions fréquentes](/help/forms/faq.md)
       + [Problèmes connus](/help/forms/known-issues.md)
    + Configurer et migrer {#setup-configure-migrate}
       + [Intégration d’un environnement Cloud Service](/help/forms/setup-forms-cloud-service.md)
@@ -650,7 +650,7 @@ ht-degree: 98%
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer et utiliser des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md)
             + [Ajouter des règles à un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components.md)
-            + [Ajouter des versions, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
       + Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
@@ -801,10 +801,10 @@ ht-degree: 98%
 + Edge Delivery Services {#edge-delivery}
    + [Vue d’ensemble d’Edge Delivery Services](/help/edge/overview.md)
    + [Utiliser Edge Delivery Services avec AEM](/help/edge/using.md)
-   + Création basée sur AEM {#aem-authoring}
+   + Création de contenu dans AEM {#aem-authoring}
       + [Créer du contenu pour Edge Delivery](/help/edge/aem-authoring/authoring.md)
       + [Publier du contenu pour Edge Delivery](/help/edge/aem-authoring/publishing.md)
-      + [Guide de prise en main pour le développement](/help/edge/aem-authoring/edge-dev-getting-started.md)
+      + [Guide de démarrage pour le développement](/help/edge/aem-authoring/edge-dev-getting-started.md)
       + [Créer des blocs](/help/edge/aem-authoring/create-block.md)
       + [Modélisation de contenu](/help/edge/aem-authoring/content-modeling.md)
       + [Données tabulaires et feuilles de calcul](/help/edge/aem-authoring/tabular-data.md)
@@ -816,7 +816,7 @@ ht-degree: 98%
       + [Plan du site](/help/edge/developer/sitemap.md)
       + [Configuration de SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
       + [Robot Slack](/help/edge/docs/slack.md)
-   + Création d’applications {#build}
+   + Créer des applications {#build}
       + [Prise en main - Tutoriel pour l’équipe de développement](/help/edge/developer/tutorial.md)
       + [Anatomie d’un projet](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [Collection de blocs](/help/edge/developer/block-collection.md)
@@ -828,14 +828,14 @@ ht-degree: 98%
       + [Favicon](/help/edge/developer/favicon.md)
       + [En-têtes personnalisés](/help/edge/docs/custom-headers.md)
       + [Bonnes pratiques pour l’équipe de développement](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Lancement d’applications {#launch}
+   + Lancer des applications {#launch}
       + [Liste de contrôle de mise en production](/help/edge/docs/go-live-checklist.md)
       + [Invalidation push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Configuration de programmes de travail Cloudfare](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Configuration d’Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configuration de Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Redirections](/help/edge/docs/redirects.md)
-   + Création de Forms {#build-forms}
+   + Créer des formulaires {#build-forms}
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
       + Prise en main {#getting-started-eds-forms}
          + [Prise en main](/help/edge/docs/forms/tutorial.md)
@@ -843,7 +843,7 @@ ht-degree: 98%
          + [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
          + [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
          + [Ajouter des validations à des champs de formulaires](/help/edge/docs/forms/validate-forms.md)
-         + [Chargement des options d’une URL vers un formulaire](/help/edge/docs/forms/load-options-from-url.md)
+         + [Charger les options d’une URL vers un formulaire](/help/edge/docs/forms/load-options-from-url.md)
          + [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
          + [Utiliser les règles pour ajouter un comportement dynamique à un formulaire](/help/edge/docs/forms/rules-forms.md)
          + [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
@@ -853,10 +853,10 @@ ht-degree: 98%
          + [Traduction](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
-         + [Surveillance des utilisateurs en temps réel pour les formulaires](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [Surveillance des personnes en temps réel pour les formulaires](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Références {#forms-references}
          + [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
-   + Ressources de diffusion Edge {#resources}
+   + Resources Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utiliser Sidekick](/help/edge/docs/sidekick.md)
          + [Installer l’extension](/help/edge/docs/sidekick-extension.md)
@@ -899,7 +899,7 @@ ht-degree: 98%
       + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Exemples de requêtes GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Résolution de problèmes liés aux requêtes GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [API ouvertes de fragments de contenu et de modèles](/help/headless/content-fragment-openapis.md)
+   + [API OpenAPI de fragments de contenu et de modèles](/help/headless/content-fragment-openapis.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
    + Sécurité {#security}
       + [Autorisations](/help/headless/security/permissions.md)

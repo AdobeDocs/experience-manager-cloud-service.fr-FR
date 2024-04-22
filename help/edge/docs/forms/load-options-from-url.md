@@ -1,16 +1,16 @@
 ---
-title: Charger les options de liste déroulante depuis l’URL
+title: Charger les options de liste déroulante à partir de l’URL
 description: Les options de la liste déroulante sont incluses dans une feuille de calcul distincte, puis importées dans la feuille de calcul principale via l’URL fournie.
 feature: Edge Delivery Services
-source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
+exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
+source-git-commit: e61ef529dc562862bd02d7767e45de3e2ec4983b
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 3%
+ht-degree: 59%
 
 ---
 
-
-# Options de la liste déroulante Charger à partir de l’URL
+# Charger les options de liste déroulante à partir de l’URL
 
 Forms comprend souvent des menus déroulants que les utilisateurs peuvent sélectionner parmi des options prédéfinies. Ces options sont généralement définies dans le formulaire lui-même, mais la gestion de listes longues peut être encombrante. Ce guide explique comment améliorer la création de formulaires en chargeant les options de liste déroulante à partir d’une feuille de calcul distincte via une URL.
 
@@ -26,12 +26,12 @@ Les avantages du chargement d’une liste déroulante depuis une feuille de calc
 ![Options de liste déroulante](/help/forms/assets/drop-down-options.png)
 
 
-À la fin de cet article, vous saurez :
+À la fin de cet article, vous saurez accomplir ce qui suit :
 
-* [Définition des options dans une feuille de calcul distincte](#define-options)
-* [Ajout d’une URL pour charger les options de liste déroulante](#add-url)
+* [Définir les options dans une feuille de calcul distincte](#define-options)
+* [Ajouter l’URL pour charger les options de liste déroulante](#add-url)
 
-## Définition des options dans une feuille distincte {#define-options}
+## Définir les options dans une feuille distincte {#define-options}
 
 Définition des options dans une feuille de calcul distincte
 
@@ -50,40 +50,38 @@ Définition des options dans une feuille de calcul distincte
 
    Reportez-vous à l’exemple ci-dessous pour la structure.
 
-   ![Liste déroulante pour le pays](/help/forms/assets/drop-down-country-options.png)
+   ![Liste déroulante de pays](/help/forms/assets/drop-down-country-options.png)
 
-1. Prévisualiser et publier le `shared-country` feuille utilisant [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Prévisualisez et publiez la feuille `shared-country` à l’aide d’[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Reportez-vous à l’URL qui présente la variable `shared-country` sheet : https://main—wefinance—wkndforms.hlx.live/enquiry.json?sheet=country
+   Consultez l’URL suivante qui présente la feuille `shared-country` : https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
 
 >[!NOTE]
 >
-> `?sheet=country` est un paramètre de requête ajouté à l’URL. Ce paramètre indique le code JSON filtré en fonction de la variable `shared-country` feuille. Il redirige vers le fichier JSON contenant des informations relatives à différents pays.
+> `?sheet=country` est un paramètre de requête ajouté à l’URL. Ce paramètre indique le code JSON filtré en fonction de la feuille `shared-country`. Il redirige vers le fichier JSON contenant des informations relatives à différents pays.
 
-## Ajout d’une URL pour charger les options de liste déroulante{#add-url}
+## Ajouter l’URL pour charger les options de liste déroulante{#add-url}
 
-La variable `Options` d’une propriété `select` accepte une URL. L’URL renvoie un tableau JSON utilisé comme options pour la variable `Destination` liste déroulante. Pour ajouter les options de liste déroulante URL à charger :
+La propriété `Options` d’un champ `select` accepte une URL. L’URL renvoie un tableau JSON qui présente les options de la liste déroulante `Destination`. Pour ajouter l’URL aux options de liste déroulante de chargement, procédez comme suit :
 
-1. Accédez à votre dossier de projet AEM sur Microsoft® SharePoint ou Google Drive et ouvrez votre feuille de calcul. Vous pouvez également créer une feuille de calcul pour un formulaire.
-1. Copiez l’URL de `shared-country` et collez-la dans la feuille `Options` de la colonne `Destination` champ .
+1. Accédez au dossier de votre projet AEM sur Microsoft® SharePoint ou Google Drive et ouvrez votre feuille de calcul. Vous pouvez également créer une feuille de calcul pour un formulaire.
+1. Copiez l’URL de la feuille `shared-country` et collez-la dans la colonne `Options` du champ `Destination`.
 
    ![Feuille de calcul de demande](/help/forms/assets/drop-down-enquiry.png)
 
-1. Prévisualiser et publier la feuille à l’aide de [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Prévisualisez et publiez la feuille à l’aide d’[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
 
-   ![Liste déroulante pour le pays](/help/forms/assets/load-dropdown-options-form.png)
+   ![Liste déroulante de pays](/help/forms/assets/load-dropdown-options-form.png)
 
-Vous pouvez consulter la section [feuille de calcul d&#39;enquête](/help/forms/assets/enquiry-options.xlsx) pour ajouter les options de liste déroulante URL à charger.
+Vous pouvez faire référence à la [feuille de calcul de demande](/help/forms/assets/enquiry-options.xlsx) pour ajouter l’URL aux options de liste déroulante de chargement.
 
-Après l’intégration de l’URL dans la définition de formulaire pour charger les options de liste déroulante, les options de la variable `Destination` début de la liste déroulante à partir de l’URL.
+Après l’intégration de l’URL dans la définition de formulaire pour charger les options de liste déroulante, les options de la liste déroulante `Destination` commencent à s’afficher à partir de l’URL.
 
-Reportez-vous à l’URL ci-dessous, qui affiche la variable `enquiry` formulaire affichant les options enregistrées dans la feuille distincte :
+Consultez l’URL ci-dessous, qui affiche le formulaire `enquiry` avec les options enregistrées dans la feuille distincte :
 
 https://main--wefinance--wkndforms.hlx.live/enquiry-form
 
 ## Voir également
 
 {{see-more-forms-eds}}
-
-
