@@ -4,7 +4,7 @@ description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2321'
 ht-degree: 100%
 
@@ -102,7 +102,7 @@ Experience Manager Assets génère désormais par défaut des rendus d’aper�
 
 Une nouvelle expérience client améliorée pour la [création de partages de lien](/help/assets/share-assets.md) ainsi qu’un tout nouvel ensemble de configurations qui permet aux administrateurs et administratrices de personnaliser le comportement par défaut de cette fonctionnalité pour vos utilisateurs et utilisatrices.
 
-![Configurer le service de messagerie](/help/assets/assets/config-email-service.png)
+![Configurer le service d’e-mail](/help/assets/assets/config-email-service.png)
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view}
 
