@@ -1,19 +1,19 @@
 ---
-title: Présentation d’Assets as a  [!DNL Cloud Service]
-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
+title: Gestion des ressources numériques (DAM) de l’Adobe à l’aide d’AEM
+description: Découvrez comment utiliser et administrer la gestion des ressources numériques (DAM) d’Adobe à l’aide de Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: ht
-source-wordcount: '892'
-ht-degree: 100%
+source-git-commit: d66d645dd039189b34e6e3c4d937b82a14b8b801
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 89%
 
 ---
 
 
-# Présentation d’Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
+# Présentation d’Assets as a [!DNL Cloud Service] pour la gestion des ressources numériques dans AEM {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -23,13 +23,13 @@ L’ingestion simultanée d’un grand nombre de ressources ou de ressources com
 
 Les entreprises ont besoin de la prise en charge d’un large éventail de formats de fichier et de résolutions de contenu pour les cas d’utilisation sur plusieurs appareils, dans plusieurs zones géographiques et plusieurs langues. Les besoins en matière de traitement et de stockage des ressources exigent des ressources et des capacités qui peuvent surcharger une solution traditionnelle. Parfois, les limites techniques du traitement des ressources ne produisent pas les résultats escomptés et, à d’autres moments, le coût du stockage constitue un obstacle aux marges bénéficiaires.
 
-Pour commencer, il faut comprendre les [avantages de l’offre cloud native](#solution-benefits). Découvrez les [modifications notables apportées à Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) qui ont également eu un impact sur Experience Manager Assets, suivies des [modifications notables apportées à Assets](/help/assets/assets-cloud-changes.md).
+Pour commencer, comprenez la variable [avantages d’une offre cloud native](#solution-benefits) pour la gestion des ressources numériques. Découvrez les [modifications notables apportées à Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) qui ont également eu un impact sur Experience Manager Assets, suivies des [modifications notables apportées à Assets](/help/assets/assets-cloud-changes.md).
 
 Lisez la suite pour connaître les [détails sur les nouvelles fonctionnalités Assets](#whats-new-assets) et les [problèmes connus](/help/release-notes/maintenance/latest.md). Consultez la liste des [fonctionnalités obsolètes ou supprimées](/help/release-notes/deprecated-removed-features.md) pour savoir ce qui a été supprimé dans cette version. Enfin, utilisez ce [glossaire](/help/overview/terminology.md) pour mieux comprendre les termes Experience Manager.
 
 ## Avantages de la solution {#solution-benefits}
 
-Voici les principaux avantages d’Assets as a [!DNL Cloud Service]. Pour en savoir plus, reportez-vous à la [présentation d’Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
+Voici les principaux avantages d’Assets en tant que [!DNL Cloud Service] pour la gestion des ressources numériques. Pour en savoir plus, reportez-vous à la [présentation d’Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
 
 * **Services cloud modernes pour le traitement des ressources** : les nouveaux microservices de ressources sont un service de traitement des ressources basé sur le cloud, évolutif, fiable et sans tracas.
 * **Très évolutif** : évolutivité adaptable à tous les types de déploiement. Ressources pratiquement illimitées, disponibles à la demande et au besoin. Réduit les coûts de surconception par rapport à un système traditionnel.
@@ -38,11 +38,11 @@ Voici les principaux avantages d’Assets as a [!DNL Cloud Service]. Pour en sav
 * **Surveillance constante** : la surveillance du système est automatisée et les contrôles et déclencheurs intégrés permettent de maintenir les performances, la disponibilité et la robustesse globales.
 * **Déploiements sans tracas** : les opérations d’Experience Manager en mode cloud sont entièrement automatisées et ne nécessitent aucune intervention manuelle. Pour les déploiements automatisés, le composant Cloud Manager (CM) automatise la création d’images Docker déployables contenant votre code personnalisé.
 
-## Expériences basées sur les rôles disponibles {#persona-based-experiences}
+## Expériences personnalisées disponibles pour la gestion des ressources numériques {#persona-based-experiences}
 
 Adobe propose une solution de Gestion des actifs numériques (DAM) robuste qui vous permet de tirer le meilleur parti de vos ressources numériques. Adobe Experience Manager Assets comporte deux expériences distinctes qui utilisent le même référentiel de Cloud Services :
 
-* **Vue Admin** : interface utilisateur Assets as a Cloud Service existante. Utilisez la vue Admin pour toutes les fonctionnalités avancées de gestion des ressources, notamment les intégrations, les workflows, l’automatisation du contenu, la publication, etc.
+* **Vue Admin** : interface utilisateur Assets as a Cloud Service existante. Utilisez la vue d’administration pour toutes les fonctionnalités avancées de gestion des ressources numériques, notamment les intégrations, les workflows, l’automatisation du contenu, la publication, etc.
 
 * **Vue Assets** : expérience allégée de gestion des ressources numériques d’Adobe permettant de stocker, gérer, découvrir et utiliser des ressources numériques. Interface utilisateur rationalisée contenant les fonctionnalités essentielles de gestion des ressources numériques. Conçue pour les personnes utilisant de la gestion des ressources numériques allégée et qui se concentrent sur le chargement, la gestion des métadonnées, la recherche, le téléchargement et le partage.
 
