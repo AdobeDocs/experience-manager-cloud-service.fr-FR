@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
 workflow-type: tm+mt
 source-wordcount: '3817'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -434,7 +434,7 @@ Les limites de taux sont évaluées en fonction du trafic qui atteint la périph
 | limite | entier compris entre 10 et 10 000 | obligatoire | Débit de requête (par POP de réseau CDN) dans les requêtes par seconde pour lesquelles la règle est déclenchée. |
 | fenêtre | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le débit de requête est calculé. La précision des compteurs dépend de la taille de la fenêtre (plus la fenêtre est grande, plus la précision est élevée). Par exemple, on peut s’attendre à une précision de 50 % pour la fenêtre d’une seconde et de 90 % pour la fenêtre de 60 secondes. |
 | pénalité | entier compris entre 60 et 3 600 | 300 (5 minutes) | Période en secondes pendant laquelle les requêtes correspondantes sont bloquées (arrondie à la minute la plus proche). |
-| nombre | all, récupérations, erreurs | Toutes | évaluer en fonction du trafic Edge (tous), du trafic d’origine (récupérations) ou du nombre d’erreurs (erreurs). |
+| nombre | all, récupérations, erreurs | tout | évaluer en fonction du trafic Edge (tous), du trafic d’origine (récupérations) ou du nombre d’erreurs (erreurs). |
 | groupBy | tableau [Getter] | aucun | Le compteur de limiteur de taux sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
 
 
@@ -635,7 +635,7 @@ Adobe fournit un mécanisme de téléchargement des outils de tableau de bord su
 
 Les outils de tableau de bord peuvent être clonés directement à partir du référentiel GitHub [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool).
 
-[Tutorials](#tutorial) sont disponibles pour obtenir des instructions concrètes sur l’utilisation de l’outil de tableau de bord.
+Les [tutoriels](#tutorial) contiennent des instructions concrètes sur l’utilisation des outils de tableau de bord.
 
 ## Règles de démarrage recommandées {#recommended-starter-rules}
 
@@ -720,11 +720,11 @@ data:
 
 ## Tutoriels {#tutorial}
 
-Deux tutoriels sont disponibles.
+Deux tutoriels sont disponibles.
 
 ### Protéger les sites web avec des règles de filtrage du trafic (y compris des règles WAF)
 
-[Utilisation d’un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=fr) pour acquérir des connaissances et une expérience générales et pratiques sur les règles de filtrage du trafic, y compris les règles WAF.
+[Effectuez un tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=fr) pour acquérir des connaissances générales et pratiques, ainsi que de l’expérience sur les règles de filtrage de trafic incluant des règles WAF.
 
 Ce tutoriel vous guide à travers les éléments suivants :
 
@@ -734,15 +734,15 @@ Ce tutoriel vous guide à travers les éléments suivants :
 * Analyse des résultats à l’aide des outils de tableau de bord
 * Bonnes pratiques
 
-### Blocage des attaques DoS et DDoS à l’aide de règles de filtrage de trafic
+### Bloquer les attaques DoS et DDoS à l’aide de règles de filtrage du trafic
 
-[Exploration approfondie de la façon de bloquer](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Les attaques par déni de service (DoS) et par déni de service (DDoS) utilisant des règles de filtrage de trafic de limite de débit et d’autres stratégies.
+[Découvrez en profondeur comment bloquer](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) les attaques par déni de service (DoS) et par déni de service distribué (DDoS) à l’aide de règles de filtrage du trafic limitant le débit et d’autres stratégies.
 
 Ce tutoriel vous guide à travers les éléments suivants :
 
-* compréhension de la protection
-* recevoir des alertes lorsque les limites de taux sont dépassées
-* analyse des schémas de trafic à l’aide de l’outil de tableau de bord pour configurer les seuils pour les règles de filtrage de trafic limite de taux
+* Comprendre la protection
+* Recevoir des alertes lorsque les limites de débit sont dépassées.
+* Analyser des modèles de trafic à l’aide des outils de tableau de bord pour configurer des seuils pour les règles de filtrage du trafic limitant le débit
 
 
 
