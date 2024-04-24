@@ -1,11 +1,11 @@
 ---
-title: Gestion des ressources numériques (DAM) de l’Adobe à l’aide d’AEM
+title: Gestion des ressources numériques (DAM) d’Adobe à l’aide d’AEM
 description: Découvrez comment utiliser et administrer la gestion des ressources numériques (DAM) d’Adobe à l’aide de Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d66d645dd039189b34e6e3c4d937b82a14b8b801
+source-git-commit: 4844d736d3791b376b7ad9cafa005c856c114837
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 89%
