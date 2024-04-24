@@ -2,10 +2,10 @@
 title: Création d’expériences commerciales
 description: Découvrez comment créer et créer efficacement des expériences liées au commerce en accédant aux données et au contenu des produits sans quitter le contexte.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 89%
+source-wordcount: '721'
+ht-degree: 88%
 
 ---
 
@@ -33,7 +33,7 @@ Cliquer sur la catégorie parent ramène l’auteur au niveau du produit.
 
 ![Composant Teaser sans sélection](../assets/authoring/teaser_component_without_selection.png)
 
-La boîte de dialogue de configuration de ce composant nécessite un produit. CIF utilise le SKU comme identifiant de produit. Les auteurs peuvent saisir le SKU manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de produits. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom du produit sélectionné.
+La boîte de dialogue de configuration de ce composant nécessite un produit. CIF utilise le SKU comme identifiant de produit. Les auteurs et autrices peuvent saisir le SKU manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de produit. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom du produit sélectionné.
 
 ![Composant Teaser avec sélection](../assets/authoring/teaser_component_with_selection.png)
 
@@ -47,13 +47,13 @@ Ce sélecteur permet de parcourir la structure du catalogue pour trouver la cat�
 
 ![Composant Carrousel sans sélection](../assets/authoring/carousel_component_without_selection.png)
 
-La boîte de dialogue de configuration de ce composant nécessite 1 : n catégories. CIF utilise l’UID/ID comme identifiant de catégorie. Les auteurs peuvent saisir l’UID manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de catégorie. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom de la catégorie sélectionnée.
+La boîte de dialogue de configuration de ce composant nécessite 1 : n catégories. CIF utilise l’UID/ID comme identifiant de catégorie. Les auteurs et autrices peuvent saisir l’UID manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de catégorie. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom de la catégorie sélectionnée.
 
 ![Composant Carrousel avec sélection](../assets/authoring/carousel_component_with_selection.png)
 
-## Éditeur universel {#universal-editor}
+## Éditeur de page {#page-editor}
 
-L’éditeur universel est doté de fonctionnalités permettant d’accéder aux données de produit en temps réel et au contenu de produit associé.
+L’ éditeur de page d’AEM est étendu avec des fonctionnalités permettant d’accéder aux données de produit en temps réel et au contenu de produit associé.
 
 ### Accès aux données du produit {#access-product-data}
 
@@ -77,7 +77,7 @@ Cela crée un espace réservé pour un lien qui est remplacé par un lien réel 
 
 ### Accès au contenu des produits associés {#associated-content}
 
-Si l’éditeur universel reconnaît des produits 1:n sur une page, le panneau latéral affiche automatiquement l’onglet « Contenu commercial associé ». Cet onglet permet aux auteurs d’accéder rapidement au contenu AEM qui a été balisé avec le produit (voir [enrichir les données de produit avec le contenu AEM associé](./enrich-product-associated-content.md) pour plus d’informations). Cet onglet propose des listes déroulantes pour filtrer le type de contenu et les produits spécifiques si plusieurs produits se trouvent sur la page. L’utilisation du contenu fonctionne de manière identique à l’utilisation du contenu de l’onglet « Ressources ».
+Si l’éditeur reconnaît des produits 1:n sur une page, le panneau latéral affiche automatiquement l’onglet &quot;Contenu Commerce associé&quot;. Cet onglet permet aux auteurs d’accéder rapidement au contenu AEM qui a été balisé avec le produit (voir [enrichir les données de produit avec le contenu AEM associé](./enrich-product-associated-content.md) pour plus d’informations). Cet onglet propose des listes déroulantes pour filtrer le type de contenu et les produits spécifiques si plusieurs produits se trouvent sur la page. L’utilisation du contenu fonctionne de manière identique à l’utilisation du contenu de l’onglet « Ressources ».
 
 ![Panneau latéral des données du produit](../assets/authoring/associated-commerce-content-tab.png)
 
