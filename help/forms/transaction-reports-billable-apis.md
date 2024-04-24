@@ -2,16 +2,22 @@
 title: API de rapports de transactions facturables
 description: Liste de toutes les API comptabilisées comme des transactions
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
+exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '1598'
-ht-degree: 86%
+source-wordcount: '1411'
+ht-degree: 81%
 
 ---
 
+
 # API de rapports de transactions facturables {#transaction-reports-billable-apis}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM as a Cloud Service | Cet article |
+
 
 AEM Forms fournit plusieurs API permettant d’envoyer des formulaires, de traiter et de générer des documents. Certaines API sont comptabilisées comme des transactions et d’autres sont gratuites. Ce document fournit une liste de toutes les API comptabilisées comme des transactions dans un rapport de transaction. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :
 
@@ -41,32 +47,32 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Durée moyenne de la génération d’un formulaire"
->abstract="Le graphique illustre la durée moyenne nécessaire à la création d’un formulaire. Chaque barre du graphique représente un formulaire spécifique. La hauteur de la barre indique la durée moyenne de création d’un formulaire au cours de cette période. L’analyse de ce graphe aide les utilisateurs et utilisatrices à comprendre l’efficacité et la rapidité de la création de formulaires sur différentes périodes ou dans différents contextes, permettant ainsi d’envisager des améliorations potentielles. Le graphe fournit des données spécifiques à l’instance de création AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de chacune d’elles."
+>abstract="Le graphique illustre la durée moyenne nécessaire à la création d’un formulaire. Chaque barre du graphique représente un formulaire spécifique et la hauteur de la barre indique la durée moyenne de création de formulaire pendant cette période."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Durée moyenne de création de formulaire"
->abstract="Le graphique affiche la durée moyenne nécessaire à la création et à la publication d’un formulaire, mesurée à partir du premier jour où le formulaire a été ouvert pour édition. Chaque barre correspond à une période spécifique pour un formulaire. La hauteur de la barre indique le délai moyen entre le début de l’élaboration du formulaire, sa finalisation et sa publication. Le graphe fournit des données spécifiques à l’instance de création AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de chacune d’elles."
+>abstract="Le graphique affiche la durée moyenne de création et de publication d’un formulaire, mesurée à partir du jour initial où le formulaire a été ouvert pour modification. Le graphique fournit des données spécifiques à l’instance d’auteur AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de chacune d’elles."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Outil de suivi des nouveaux formulaires"
->abstract="Le graphique fournit des informations sur le nombre ou la fréquence des formulaires nouvellement créés au cours de périodes spécifiques. Chaque barre du graphique représente une unité de mesure distincte, comme les jours, les semaines ou les mois. La hauteur de chaque barre indique la quantité de nouveaux formulaires ou leur fréquence de création pendant cet intervalle particulier. Le graphe fournit des données spécifiques à l’instance de création AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de chacune d’elles."
+>abstract="Le graphique fournit des informations sur le nombre ou la fréquence des formulaires nouvellement créés au cours de périodes spécifiques. Le graphe fournit des données spécifiques à l’instance de création AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de chacune d’elles."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Outil de suivi des formulaires publiés"
->abstract="Le graphique fournit des informations sur le nombre de formulaires ou leur fréquence de publication au cours de périodes spécifiques. Vous maîtrisez ainsi les tendances, les modèles ou les variations dans la publication des formulaires au fil du temps, ce qui facilite la surveillance de la productivité, l’identification des périodes de pointe de publication ou l’évaluation de l’aspect positif des changements apportés au processus de publication des formulaires. Le graphe fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
+>abstract="Le graphique fournit des informations sur le nombre de formulaires ou leur fréquence de publication au cours de périodes spécifiques. Le graphe fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="Outil de suivi des formulaires publiés"
->abstract="Ce graphe vous permet de voir combien de fragments de formulaire les personnes utilisent dans leurs formulaires. Il vous donne une idée de la popularité ou de la fréquence de ces parties réutilisables dans la construction de formulaires. Le graphe fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
+>abstract="Ce graphe vous permet de voir combien de fragments de formulaire les personnes utilisent dans leurs formulaires. Le graphe fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="Outil de suivi des formulaires publiés"
->abstract="Le graphe affiche la durée moyenne nécessaire à la création d’un fragment de formulaire, mesurée à partir du premier jour où le fragment de formulaire a été ouvert pour modification. Chaque barre correspond à un délai spécifique pour un fragment de formulaire. La hauteur de la barre indique le délai moyen entre le début de l’élaboration du fragment de formulaire, sa finalisation et sa publication. Le graphe fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
+>abstract="Le graphe affiche la durée moyenne nécessaire à la création d’un fragment de formulaire, mesurée à partir du premier jour où le fragment de formulaire a été ouvert pour modification. Le graphe fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
 <!-- 
 
@@ -450,7 +456,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
  </tbody>
 </table>
 
-L’utilisation de l’API invoke est comptabilisée en tant que transaction lorsque vous effectuez une ou plusieurs des opérations suivantes :
+L’utilisation de l’API d’appel est comptabilisée comme une transaction lorsque vous effectuez une ou plusieurs des opérations suivantes :
 
 1. Conversion de formats non PDF en formats PDF. <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. Conversion du format PDF au format PDF/A.
