@@ -3,9 +3,9 @@ title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experie
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -15,18 +15,18 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 15977 {#release-15977}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 15977, rendue publique le samedi 19 avril 2024. La version de maintenance précédente était la version 15939.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 15977, rendue publique le 19 avril 2024. La version de maintenance précédente était la version 15939.
 
 L’activation des fonctionnalités de la version 2024.4.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
 ### Améliorations {#enhancements-15977}
 
-* GRANITE-51335 : optimisez AEM contrôle de l’intégrité pour accroître la stabilité de l’instance.
+* GRANITE-51335 : optimisation du contrôle d’intégrité d’AEM pour augmenter la stabilité de l’instance.
 
 ### Problèmes résolus {#fixed-issues-15977}
 
-* CQ-4357226 : correction de la régression dans la prise en charge des configurations IMS pour les informations d’identification OAuth.
-* GRANITE-51335 : Mise à niveau de Ratelimit vers la version 5.0.4 Correction des enregistrements de contrôle de l’intégrité Felix.
+* CQ-4357226 : correction de la régression dans la prise en charge des configurations IMS pour les informations d’identification OAuth.
+* GRANITE-51335 : mise à niveau de Ratelimit vers la version 5.0.4, avec correction des enregistrements du contrôle d’intégrité Felix.
 
 ### Problèmes connus {#known-issues-15977}
 
