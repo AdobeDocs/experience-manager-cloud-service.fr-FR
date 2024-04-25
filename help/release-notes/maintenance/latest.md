@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
-workflow-type: ht
-source-wordcount: '213'
-ht-degree: 100%
+source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 79%
 
 ---
 
@@ -30,7 +30,7 @@ L’activation des fonctionnalités de la version 2024.4.0 fournit l’ensemble
 
 ### Problèmes connus {#known-issues-15977}
 
-Aucun.
+* **(Pour AEM Forms uniquement)** Après l’installation de la version de maintenance 1597 d’AEM Cloud Foundation, les champs de formulaire adaptatif sont rendus dans un ordre incorrect lors de la création du formulaire et pour les formulaires publiés. Si vous utilisez AEM Forms, pour éviter tout désagrément, il est recommandé de ne pas effectuer la mise à niveau vers cette version tant que le problème n’aura pas été résolu dans la version de maintenance à venir.
 
 ### Fonctionnalités et API obsolètes {#deprecated-15977}
 
