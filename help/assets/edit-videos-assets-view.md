@@ -1,24 +1,24 @@
 ---
-title: Modification de vidéos
+title: Modifier des vidéos
 description: Modification des vidéos à l’aide de [!DNL Adobe Express] options optimisées et enregistrez les vidéos mises à jour sous forme de versions.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
+source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
-# Modification de vidéos dans [!DNL Assets Essentials] {#edit-videos}
+# Modification de vidéos dans [!DNL Assets view] {#edit-videos}
 
-La création de variantes de contenu vidéo est facile pour les utilisateurs d’Assets avec l’élément intégré [!DNL Adobe Express] actions rapides pour la vidéo. Actions rapides dans [!DNL Assets Essentials] optimisée par [!DNL Adobe Express] fournit des options d’édition vidéo conviviales, notamment recadrer la vidéo, redimensionner la vidéo, rogner la vidéo et convertir la vidéo en GIF.
+La création de variantes de contenu vidéo est facile pour les utilisateurs d’Assets avec l’élément intégré [!DNL Adobe Express] actions rapides pour la vidéo. Actions rapides dans [!DNL Assets view] optimisée par [!DNL Adobe Express] fournit des options d’édition vidéo conviviales, notamment recadrer la vidéo, redimensionner la vidéo, rogner la vidéo et convertir la vidéo en GIF.
 
 Pour modifier une vidéo, accédez aux détails de la vidéo et cliquez sur [!UICONTROL Modifier la vidéo]. Vous pouvez également sélectionner la ressource et cliquer sur les détails, puis cliquer sur ![ciseaux](assets/do-not-localize/cut.svg) dans le volet de droite. Après avoir modifié une vidéo, vous pouvez enregistrer la nouvelle vidéo sous la forme d’une nouvelle version ou d’une nouvelle ressource.
 
 ## Conditions préalables {#prerequisites}
 
-Droits d&#39;accès [!DNL Adobe Express] et au moins un environnement dans AEM Assets. L’environnement peut être l’un des référentiels dans [!DNL Assets as a Cloud Service] ou [!DNL Assets Essentials].
+Droits d&#39;accès [!DNL Adobe Express] et au moins un environnement dans AEM Assets. L’environnement peut être l’un des référentiels dans [!DNL Assets as a Cloud Service] ou [!DNL Assets view].
 
 ## Modification de vidéos à l’aide d’Adobe Express {#edit-video-using-express}
 
@@ -39,7 +39,7 @@ Vous pouvez éliminer les parties indésirables de la vidéo en utilisant l’é
 
 ### Redimensionner la vidéo {#resize-video-using-express}
 
-Le contenu vidéo final dans la gestion des ressources numériques doit souvent être redimensionné pour être distribué à des canaux spécifiques. [!DNL Assets Essentials] vous permet de redimensionner facilement la vidéo pour l’adapter aux dimensions requises par les canaux sociaux courants. Vous pouvez également redimensionner la vidéo selon des résolutions personnalisées. Pour redimensionner la vidéo à l’aide de [!DNL Assets Essentials], exécutez les étapes ci-dessous :
+Le contenu vidéo final dans la gestion des ressources numériques doit souvent être redimensionné pour être distribué à des canaux spécifiques. [!DNL Assets view] vous permet de redimensionner facilement la vidéo pour l’adapter aux dimensions requises par les canaux sociaux courants. Vous pouvez également redimensionner la vidéo selon des résolutions personnalisées. Pour redimensionner la vidéo à l’aide de [!DNL Assets view], exécutez les étapes ci-dessous :
 
 1. Sélectionnez une vidéo, puis cliquez sur **[!UICONTROL Modifier]**.
 2. Cliquez sur **[!UICONTROL Redimensionner la vidéo]** dans les actions rapides disponibles dans le volet de gauche.
@@ -93,7 +93,7 @@ Votre vidéo peut être téléchargée au format GIF. Vous pouvez enregistrer la
 
 ### Étapes suivantes {#next-steps}
 
-* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur d’Assets Essentials.
+* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
@@ -101,5 +101,5 @@ Votre vidéo peut être téléchargée au format GIF. Vous pouvez enregistrer la
 
 >[!MORELIKETHIS]
 >
->* [Modifier des images dans les Assets Essentials](edit-images-assets-view.md)
+>* [Modifier des images dans la vue Ressources](edit-images-assets-view.md)
 >* [Aperçu d’une ressource](navigate-assets-view.md)
