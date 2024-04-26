@@ -3,10 +3,10 @@ title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -35,9 +35,9 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 >
 >Avant de configurer un pipeline front-end, voir [Parcours de création rapide d’un site](/help/journey-sites/quick-site/overview.md) pour une présentation complète de son exécution grâce à l’outil de création rapide de site d’AEM, particulièrement simple d’utilisation. Ce parcours vous aidera à rationaliser le développement front-end de votre site AEM et à personnaliser rapidement votre site sans aucune connaissance AEM du serveur principal.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée
+1. Se connecter à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionner l’organisation appropriée
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** sélectionnez le programme.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
 
 1. Accédez au **Pipelines** de la carte **Aperçu du programme** page et clic **Ajouter** pour sélectionner **Ajout d’un pipeline de production**.
 

@@ -2,10 +2,10 @@
 title: Création de programmes Sandbox
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme Sandbox à des fins de formation, de démonstration, de point de vente ou à d’autres fins hors production.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 86%
+source-wordcount: '434'
+ht-degree: 74%
 
 ---
 
@@ -19,9 +19,9 @@ Découvrez-en plus sur les types de programme dans le document [Présentation de
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** écran, appuyez ou cliquez **Ajout d’un programme** près du coin supérieur droit de l’écran.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** console, appuyez ou cliquez sur **Ajout d’un programme** près du coin supérieur droit de l’écran.
 
-   ![Page de destination de Cloud Manager](assets/cloud-manager-my-programs.png)
+   ![Page de destination de Cloud Manager](assets/log-in.png)
 
 1. Dans l’assistant de création de programme, sélectionnez **Configurer une sandbox** et indiquez un nom de programme.
 
@@ -63,12 +63,12 @@ Vous pouvez afficher les détails de la configuration de votre sandbox et accéd
 
 1. Une fois l’environnement de développement créé, vous pouvez utiliser le lien **Accès à AEM** pour vous connecter à AEM.
 
-   ![Lien Accès à AEM](assets/create-program-5.png)
+   ![Lien Accès à AEM](assets/create-program5.png)
 
-1. Une fois terminé le déploiement du canal hors production vers le développement, l’assistant vous aide à accéder à l’environnement de développement AEM ou à déployer du code vers l’environnement de développement.
+1. Une fois le pipeline hors production se déployant vers le développement terminé, l’assistant de l’ appel à l’action vous guide à accéder à l’environnement de développement AEM ou à déployer du code vers l’environnement de développement.
 
    ![Déploiement d’une Sandbox](assets/create-program-setup-deploy.png)
 
-Si vous devez passer à un autre programme ou revenir à la page d’aperçu pour créer un autre programme, cliquez sur le nom de votre programme dans le coin supérieur gauche de l’écran pour afficher l’option **Accéder à**.
-
-![Accès à](assets/create-program-a1.png)
+>[!TIP]
+>
+>Consultez le document [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md) pour plus d’informations sur la navigation dans Cloud Manager et sur la compréhension de la variable **Mes programmes** console.

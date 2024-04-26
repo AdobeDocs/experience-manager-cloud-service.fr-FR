@@ -2,7 +2,7 @@
 title: Mise en veille et réactivation d’environnements Sandbox
 description: Découvrez comment les environnements d’un programme Sandbox passent automatiquement en mode veille et comment les réactiver.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 84%
@@ -31,7 +31,7 @@ Suivez ces étapes pour mettre vos environnements de programme Sandbox en veille
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** pour afficher ses détails, appuyez ou cliquez sur le programme que vous souhaitez mettre en veille.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , appuyez ou cliquez sur le programme à mettre en veille pour afficher ses détails.
 
 1. Sur la carte **Environnements**, cliquez sur le bouton représentant des points de suspension et sélectionnez la **Developer Console**.
 
@@ -65,7 +65,7 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** pour afficher ses détails, appuyez ou cliquez sur le programme que vous souhaitez réactiver.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , appuyez ou cliquez sur le programme à réactiver pour afficher ses détails.
 
 1. Sur la carte **Environnements**, cliquez sur le bouton représentant des points de suspension et sélectionnez la **Developer Console**.
 

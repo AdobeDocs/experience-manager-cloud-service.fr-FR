@@ -2,10 +2,10 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu permet de copier du contenu modifiable à la demande à partir des environnements de production depuis AEM as a Cloud Service vers des environnements inférieurs, et ce à des fins de test.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 82%
+source-wordcount: '1286'
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,7 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 
 | Fonctionnalité copie de contenu | Groupe d’administrateurs et administratrices AEM | Rôle de responsable de déploiement |
 |---|---|---|
-| Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Requis |
+| Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Obligatoire |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
 Pour plus d’informations sur les autorisations et leur définition, voir [AEM équipe as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md).
@@ -49,9 +49,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
-
-1. Accédez à la page **Jeux de contenu** à partir de l’écran **Environnements**.
+1. À l’aide du panneau de navigation latéral, accédez au **Visionneuses de contenu** à partir de la **Présentation** page.
 
 1. Dans le coin supérieur droit de l’écran, cliquez sur **Ajouter un jeu de contenu**.
 

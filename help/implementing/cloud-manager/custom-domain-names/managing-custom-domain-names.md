@@ -2,10 +2,10 @@
 title: Gestion des noms de domaine personnalisés
 description: Découvrez comment utiliser Cloud Manager pour afficher, mettre à jour, remplacer et supprimer des noms de domaine personnalisés.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 81%
+source-wordcount: '326'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,7 @@ Utilisez le menu **Affichage et mise à jour** pour afficher simplement les dét
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** sélectionnez le programme.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
 
 1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
 
@@ -45,17 +45,13 @@ Un utilisateur avec le rôle **Propriétaire de l’entreprise** ou **Responsabl
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
-
-1. Accédez à la page **Paramètres de domaine** à partir de l’écran **Environnements**.
+1. Accédez au **Paramètres de domaine** de la page **Présentation** écran.
 
 1. Identifiez la ligne du nom de domaine personnalisé que vous souhaitez supprimer.
 
 1. Cliquez sur le bouton représentant des points de suspension à l’extrémité droite de la ligne.
 
 1. Sélectionnez **Supprimer**.
-
-   ![Suppression de noms de domaine personnalisé](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Confirmez votre envoi.
 

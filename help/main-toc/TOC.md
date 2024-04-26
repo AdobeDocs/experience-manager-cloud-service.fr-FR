@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 81b4455bf922ec0f4eb46046b82193ff822b4695
+source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
 workflow-type: tm+mt
-source-wordcount: '4902'
+source-wordcount: '4901'
 ht-degree: 99%
 
 ---
@@ -948,13 +948,14 @@ ht-degree: 99%
 + Implémenter {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
    + Utilisation de Cloud Manager {#using-cloud-manager}
+      + [Navigation](/help/implementing/cloud-manager/navigation.md)
       + Programmes {#programs}
          + [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [Programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [Gérer et modifier des programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Modification de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Mise en veille des environnements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Création d’un projet d’application AEM {#create-application-project}
          + [Assistant de création du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)

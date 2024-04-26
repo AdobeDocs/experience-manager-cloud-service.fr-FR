@@ -2,9 +2,9 @@
 title: Création de rapports de contrat SLA
 description: Découvrez comment voir les performances de votre environnement d’AEM de production par rapport au contrat de niveau de service (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '405'
 ht-degree: 5%
 
 ---
@@ -20,9 +20,9 @@ Les données de rapport SLA sont disponibles pour chaque programme de production
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** sélectionnez le programme dans l’écran .
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
 
-1. Accédez au **Rapports** à partir de la **Présentation** page.
+1. À l’aide du panneau de navigation latéral, accédez au **Rapports** à partir de la **Présentation** page.
 
 1. Cliquez sur l’année souhaitée pour afficher les données SLA sous forme de graphique.
 

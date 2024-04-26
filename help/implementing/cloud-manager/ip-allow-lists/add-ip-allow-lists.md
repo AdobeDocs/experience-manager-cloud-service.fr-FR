@@ -2,10 +2,10 @@
 title: Ajout d’une liste d’adresses IP autorisées
 description: Découvrez comment ajouter votre propre liste d’adresses IP autorisées à l’aide de Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: fa6d0670a011276facc561f62f52c6e69147a49e
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 69%
+source-wordcount: '194'
+ht-degree: 71%
 
 ---
 
@@ -18,11 +18,9 @@ Une personne dotée du rôle **Propriétaire de l’entreprise** ou **Responsabl
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** sélectionnez le programme.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
 
-1. Dans la **Présentation** , accédez à la **Environnements** écran.
-
-1. Dans la **Environnements** , accédez à la **LISTES AUTORISÉES IP** page.
+1. Dans la **Présentation** , accédez à la **LISTES AUTORISÉES IP** à l’aide de l’onglet de navigation latérale.
 
    ![Option de liste d’adresses IP autorisées dans le panneau latéral](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

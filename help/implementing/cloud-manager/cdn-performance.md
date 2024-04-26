@@ -1,15 +1,15 @@
 ---
-title: Tableau de bord des performances du réseau CDN
+title: Tableau de bord des performances du réseau CDN
 description: Découvrez comment Cloud Manager évalue les performances du réseau de diffusion de contenu et ce que vous pouvez apprendre du tableau de bord.
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
-
-# Tableau de bord des performances du réseau CDN {#cdn-performance}
+# Tableau de bord des performances du réseau CDN {#cdn-performance}
 
 Découvrez comment Cloud Manager évalue les performances du réseau de diffusion de contenu et ce que vous pouvez apprendre du tableau de bord.
 
@@ -25,7 +25,7 @@ Le tableau de bord du réseau CDN est disponible sur la page d’aperçu de chaq
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , appuyez ou cliquez sur le programme dont vous souhaitez afficher le tableau de bord CDN.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , appuyez ou cliquez sur le programme dont vous souhaitez afficher le tableau de bord CDN.
 
    ![Page Mes programmes](assets/my-programs.png)
 

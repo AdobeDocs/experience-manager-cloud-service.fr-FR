@@ -2,7 +2,7 @@
 title: Déploiement de votre code
 description: Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 80%
@@ -31,7 +31,7 @@ Une fois que vous avez [configuré votre pipeline de production](/help/implement
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , appuyez ou cliquez sur le programme pour lequel vous souhaitez déployer le code.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , appuyez ou cliquez sur le programme pour lequel vous souhaitez déployer le code.
 
 1. Cliquez sur **Déployer** dans l’appel à l’action de l’écran **Présentation** pour lancer le processus de déploiement.
 

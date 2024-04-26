@@ -2,10 +2,10 @@
 title: Référentiels Cloud Manager
 description: Découvrez comment créer, afficher et supprimer vos référentiels Git dans Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 4bf1d961705ce07c5ae5d33a546a276192f10178
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 85%
+source-wordcount: '575'
+ht-degree: 84%
 
 ---
 
@@ -61,8 +61,6 @@ Pour supprimer un référentiel dans Cloud Manager, procédez comme suit.
 1. Dans la **Aperçu du programme** , cliquez sur **Référentiels** et accédez à la **Référentiels** page.
 
 1. Sélectionnez le référentiel, cliquez sur le bouton représentant des points de suspension, puis sélectionnez **Supprimer** pour supprimer le référentiel.
-
-   ![Supprimer le référentiel](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 ## Prise en charge des sous-modules Git {#git-submodule-support}
 

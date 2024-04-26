@@ -2,10 +2,10 @@
 title: Accéder aux journaux et les gérer
 description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa28d2fa83fb35fe80692c5f94661fa4c32a02a9
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 69%
+ht-degree: 67%
 
 ---
 
@@ -24,7 +24,7 @@ Pour télécharger les journaux, procédez comme suit :
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur l’écran **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**, sélectionnez le programme.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
 
 1. Accédez à la carte **Environnements** à partir de la page **Vue d’ensemble**.
 

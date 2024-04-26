@@ -2,7 +2,7 @@
 title: Gestion des listes d’adresses IP autorisées
 description: Découvrez comment afficher, modifier, supprimer et vérifier l’état des listes autorisées IP dans Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 52%
@@ -18,7 +18,7 @@ Découvrez comment afficher, modifier, supprimer et vérifier l’état des list
 Un utilisateur de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour afficher et mettre à jour une liste autorisée IP.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** sélectionnez le programme.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
 1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
 1. Accédez à la page **Listes d’adresses IP autorisées** à partir de l’écran **Environnements**.
 1. Identifiez la ligne des listes autorisées IP que vous souhaitez afficher ou mettre à jour.

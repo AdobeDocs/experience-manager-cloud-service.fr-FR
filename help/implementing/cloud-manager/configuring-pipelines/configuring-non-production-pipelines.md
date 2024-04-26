@@ -3,7 +3,7 @@ title: Configurer des pipelines hors production
 description: Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 73%
@@ -36,7 +36,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** sélectionnez le programme.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
 
 1. Accédez à la carte **Pipelines** depuis l’écran d’accueil de Cloud Manager. Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline hors production**.
 

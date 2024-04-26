@@ -2,10 +2,10 @@
 title: Création de programmes de production
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 33%
+source-wordcount: '1031'
+ht-degree: 34%
 
 ---
 
@@ -22,7 +22,7 @@ Pour créer un programme de production, procédez comme suit. Notez que selon le
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** écran, appuyez ou cliquez **Ajout d’un programme** dans le coin supérieur droit de l’écran.
+1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** console, appuyez ou cliquez sur **Ajout d’un programme** dans le coin supérieur droit de l’écran.
 
    ![Page de destination de Cloud Manager](assets/log-in.png)
 
@@ -48,7 +48,7 @@ Pour créer un programme de production, procédez comme suit. Notez que selon le
 
 1. Dans l’onglet **Date de mise en production**, saisissez la date de mise en production de votre programme.
 
-   ![Définir la date de mise en production planifiée](assets/setup-go-live.png)
+   ![Définir la date de mise en production planifiée](assets/set-up-go-live.png)
 
    * Cette date peut être modifiée à tout moment.
    * Cette date est fournie à titre d’information uniquement et déclenche le widget GoLive sur la page [**Aperçu du programme** page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) fournir des liens internes aux produits vers AEM documentation des bonnes pratiques as a Cloud Service en temps opportun afin de vous aligner sur votre parcours et d’offrir ainsi une expérience d’activation fluide et réussie.
@@ -117,9 +117,9 @@ Outre les droits requis, 99,99 % des contrats de niveau de service (SLA) ont des
 
    ![Aperçu du programme](assets/set-up-prod5.png)
 
-Si, à tout moment, vous devez passer à un autre programme ou revenir à la page d’aperçu pour créer un autre programme, cliquez sur le nom de votre programme dans le coin supérieur gauche de l’écran pour afficher la variable **Accédez à** .
-
-![Accéder à ](assets/create-program-a1.png)
+>[!TIP]
+>
+>Consultez le document [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md) pour plus d’informations sur la navigation dans Cloud Manager et sur la compréhension de la variable **Mes programmes** console.
 
 >[!NOTE]
 >

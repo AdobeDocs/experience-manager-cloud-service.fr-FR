@@ -1,10 +1,10 @@
 ---
 title: Processus de configuration - Présentation
 description: Processus de configuration - Présentation
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -26,13 +26,10 @@ Cette section répertorie les principaux articles sur les sujets suivants :
 
 Une fois l’approvisionnement automatique terminé :
 
-* Droits d’accès accordés : Adobe créera une organisation au sein du système Identity Management Adobe (IMS)
+* Droits d’accès accordés : Adobe crée une organisation dans Adobe Identity Management System (IMS).
 * Par défaut, l’administrateur désigné disposera des autorisations d’administrateur.
 * L’administrateur peut ajouter des utilisateurs et des rôles pour d’autres membres de l’équipe par l’intermédiaire de l’Admin Console.
 * Examinez les autorisations basées sur les rôles pour les utilisateurs afin de déterminer les affectations d’autorisations dans Cloud Manager.
-
-![processoverview.jpg](assets/processOverview.jpg)
-
 
 Pour plus d’informations, consultez [Intégration d’Experience Manager as a Cloud Service dans Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=fr).
 
@@ -49,8 +46,6 @@ Pour plus d’informations, consultez [Intégration d’Experience Manager as a
 
 ### 2. Intégration des organisations dans l’Adobe Admin Console :
 
-![processoverview2.jpg](assets/processOverview2.jpg)
-
 * Administrateur système :
    * Fournissez les programmes et environnements AEM.
    * Accédez à l’Admin Console pour les tâches d’administration.
@@ -61,8 +56,6 @@ Pour plus d’informations, consultez [Intégration d’Experience Manager as a
    * Gérez les groupes locaux, les autorisations et les privilèges.
 
 ### 3. Intégration d’utilisateurs et gestion des accès dans l’Admin Console :
-
-![processoverview3.jpg](assets/processOverview3.jpg)
 
 Trois méthodes pour intégrer les utilisateurs, en fonction de la taille et des préférences :
 * Création manuelle d’utilisateurs dans l’Admin Console
