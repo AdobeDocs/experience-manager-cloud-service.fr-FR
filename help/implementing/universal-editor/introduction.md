@@ -2,10 +2,10 @@
 title: Présentation de l’éditeur universel
 description: Découvrez comment l’éditeur universel permet la modification WYSIWYG (What-you-get) de n’importe quelle expérience headless et headful. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: bbcf44c585e98f75c558d06edc3c1c030adad2cf
+source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 60%
+source-wordcount: '1066'
+ht-degree: 55%
 
 ---
 
@@ -79,6 +79,16 @@ Un professionnel ou une professionnelle du marketing souhaite créer du contenu 
 Un professionnel ou une professionnelle du marketing souhaite créer du contenu adapté à la mise en page d’un contexte donné pour proposer une expérience exceptionnelle.
 
 * La tâche sous-jacente à accomplir est de communiquer de manière convaincante avec les lecteurs.
+
+## Limites {#limitations}
+
+À mesure que vous explorez l’éditeur universel et passez à l’implémentation dans vos propres projets, gardez à l’esprit les restrictions suivantes.
+
+* Pas plus de 25 ressources AEM (fragments de contenu, pages, fragments d’expérience, ressources, etc.) doit être des références en tant qu’instrumentation sur une seule page.
+* AEM as a Cloud Service est le seul serveur AEM pris en charge.
+* AEM version as a Cloud Service `2023.8.13099` ou supérieur est requis.
+* Les auteurs de contenu doivent disposer de leurs propres comptes Experience Cloud.
+* Chrome et Edge sont les navigateurs pris en charge
 
 ## Ressources supplémentaires {#additional-resources}
 
