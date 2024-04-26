@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 128ca1a00124fa4cb5d008a41a9d0b5a9a5e075e
+source-git-commit: 575e0c661abc2f8b182b3ed35d5d914639dd7f3a
 workflow-type: tm+mt
-source-wordcount: '4894'
+source-wordcount: '4899'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Notes de mise à jour de la version 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [Notes de mise à jour de la version 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
          + [Notes de mise à jour de la version 2023.12.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
@@ -561,9 +562,9 @@ ht-degree: 99%
       + [Recherche et découverte de ressources](/help/assets/search-assets-view.md)
       + [Tâches de gestion des ressources](/help/assets/manage-organize-assets-view.md)
       + [Modification des images](/help/assets/edit-images-assets-view.md)
-      + [Modification de vidéos](/help/assets/edit-videos-assets-view.md)
+      + [Modifier des vidéos](/help/assets/edit-videos-assets-view.md)
       + [Affichage et gestion des rendus](/help/assets/renditions.md)
-      + [Gestion des métadonnées des ressource](/help/assets/metadata-assets-view.md)
+      + [Gérer les métadonnées des ressource](/help/assets/metadata-assets-view.md)
       + [Partager des ressources](/help/assets/share-links-for-assets-view.md)
       + [Gestion des collections](/help/assets/manage-collections-assets-view.md)
       + [Surveiller une ressource, des dossiers et des collections](/help/assets/manage-notifications-assets-view.md)
