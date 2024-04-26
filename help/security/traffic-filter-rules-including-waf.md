@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
 workflow-type: tm+mt
 source-wordcount: '3790'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -254,7 +254,7 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | SQLI | Injection SQL | L’injection SQL est une tentative d’accès à une application ou d’obtention d’informations privilégiées en exécutant des requêtes de base de données arbitraires. |
 | BACKDOOR | Backdoor | Un signal backdoor est une requête qui tente de déterminer si un fichier backdoor commun est présent sur le système. |
 | CMDEXE | Exécution de commande | L’exécution de commande est une tentative de contrôle ou d’endommagement d’un système cible par le biais de commandes système arbitraires au moyen d’entrées de l’utilisateur ou de l’utilisatrice. |
-| CMDEXE-NO-BIN | Exécution de commande, sauf sur `/bin/` | offrir le même niveau de protection que `CMDEXE` lors de la désactivation du faux positif sur `/bin` en raison de l’architecture AEM. |
+| CMDEXE-NO-BIN | Exécution de commande, sauf sur `/bin/` | Fournit le même niveau de protection que `CMDEXE` lors de la désactivation du faux positif sur `/bin` en raison de l’architecture AEM. |
 | XSS | Scripts intersites | Les scripts intersites consistent à tenter de détourner un compte d’utilisateur ou d’utilisatrice ou une session de navigation web par le biais d’un code JavaScript malveillant. |
 | TRAVERSAL | Traversée de répertoire | La traversée de répertoire est une tentative de navigation dans des dossiers privilégiés à travers un système dans l’espoir d’obtenir des informations sensibles. |
 | USERAGENT | Outils d’attaque | Les outils d’attaque consistent à utiliser des logiciels automatisés pour identifier des vulnérabilités de sécurité ou pour tenter d’exploiter une vulnérabilité découverte. |
@@ -334,7 +334,7 @@ data:
 
 **Exemple 3**
 
-Cette règle bloque les requêtes de publication contenant le paramètre de requête. `foo`, mais autorise chaque requête provenant d’IP 192.168.1.1 :
+Cette règle bloque les requêtes à la publication qui contiennent le paramètre de requête `foo`, mais autorise chaque requête provenant de l’adresse IP 192.168.1.1 :
 
 ```
 kind: "CDN"
@@ -359,7 +359,7 @@ data:
 
 **Exemple 4**
 
-Cette règle bloque les demandes de chemin d’accès `/block-me` lors de la publication et bloque chaque requête qui correspond à une `SQLI` ou `XSS` modèle. Cet exemple comprend une règle de filtre de trafic WAF, qui fait référence aux [indicateurs WAF](#waf-flags-list) `SQLI` et `XSS`, et requiert donc une licence distincte.
+Cette règle bloque les requêtes vers le chemin d’accès `/block-me` à la publication et bloque chaque requête qui correspond à un modèle `SQLI` ou `XSS`. Cet exemple comprend une règle de filtre de trafic WAF, qui fait référence aux [indicateurs WAF](#waf-flags-list) `SQLI` et `XSS`, et requiert donc une licence distincte.
 
 ```
 kind: "CDN"
@@ -425,7 +425,7 @@ Les règles de limite de débit ne peuvent pas faire référence aux indicateurs
 
 Les limites de débit sont calculées par POP de réseau CDN. Par exemple, supposons que les POP de Montréal, Miami et Dublin connaissent des taux de trafic de 80, 90 et 120 demandes par seconde, respectivement. Et la règle de limitation de taux est définie sur une limite de 100. Dans ce cas, seul le trafic vers Dublin serait limité en débit.
 
-Les limites de taux sont évaluées en fonction du trafic qui atteint la périphérie, du trafic qui atteint l’origine ou du nombre d’erreurs.
+Les limites de débit sont évaluées en fonction du trafic Edge, du trafic d’origine ou du nombre d’erreurs.
 
 ### Structure rateLimit {#ratelimit-structure}
 
@@ -434,7 +434,7 @@ Les limites de taux sont évaluées en fonction du trafic qui atteint la périph
 | limite | entier compris entre 10 et 10 000 | obligatoire | Débit de requête (par POP de réseau CDN) dans les requêtes par seconde pour lesquelles la règle est déclenchée. |
 | fenêtre | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le débit de requête est calculé. La précision des compteurs dépend de la taille de la fenêtre (plus grande précision de la fenêtre). Par exemple, on peut s’attendre à une précision de 50 % pour la fenêtre d’une seconde et de 90 % pour la fenêtre de 60 secondes. |
 | pénalité | entier compris entre 60 et 3 600 | 300 (5 minutes) | Période en secondes pendant laquelle les requêtes correspondantes sont bloquées (arrondie à la minute la plus proche). |
-| nombre | all, récupérations, erreurs | tout | évaluer en fonction du trafic Edge (tous), du trafic d’origine (récupérations) ou du nombre d’erreurs (erreurs). |
+| nombre | tout, récupérations, erreurs | tout | Évaluer en fonction du trafic Edge (tout), du trafic d’origine (récupérations) ou du nombre d’erreurs (erreurs). |
 | groupBy | tableau [Getter] | aucun | Le compteur de limiteur de taux sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
 
 ### Exemples {#ratelimiting-examples}
