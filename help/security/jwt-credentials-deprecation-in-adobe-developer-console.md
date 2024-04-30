@@ -2,10 +2,10 @@
 title: Obsolescence des informations d’identification JWT dans Adobe Developer Console
 description: Découvrez l’impact de l’obsolescence des informations d’identification JWT dans la console Adobe Developer sur AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
+source-git-commit: 802e29017d3f1e59ee1676b4172292cb3453648a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 72%
+source-wordcount: '557'
+ht-degree: 56%
 
 ---
 
@@ -19,9 +19,9 @@ Les clientes et clients Adobe utilisent [Adobe Developer Console](https://deve
 
 Cet article fournit un contexte supplémentaire sur la manière dont AEM as a Cloud Service doit gérer l’obsolescence.
 
-Actuellement, la principale leçon à retenir est que AEM fonctionnalités ne prennent pas encore en charge les nouvelles informations d’identification OAuth serveur à serveur. La prise en charge sera bientôt assurée d’ici la mi-avril 2024 par le biais d’une version AEM pour AEM as a Cloud Service. Vous avez peut-être reçu un e-mail contenant des instructions pour migrer vos informations d’identification JWT, mais vous pouvez et devriez attendre avant de migrer des informations d’identification jusqu’à ce qu’AEM prenne en charge le nouveau type d’informations d’identification OAuth serveur à serveur.
+Actuellement, la principale leçon à retenir est que AEM fonctionnalités ne prennent pas encore en charge les nouvelles informations d’identification OAuth serveur à serveur. La prise en charge sera bientôt assurée d’ici la mi-mai 2024 par le biais d’une version AEM pour AEM as a Cloud Service. Vous avez peut-être reçu un e-mail contenant des instructions pour migrer vos informations d’identification JWT, mais vous pouvez et devriez attendre la migration des informations d’identification jusqu’à ce qu’AEM prenne en charge le nouveau type d’informations d’identification OAuth serveur à serveur.
 
-Les sections ci-dessous répertorient les scénarios où les clients doivent (ou parfois ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth Server-to-Server, une fois qu’AEM les prend en charge à la mi-avril. [Lisez comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) remplacer les informations d’identification ultérieurement.
+Les sections ci-dessous répertorient les scénarios où les clients doivent (ou parfois ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth Server-to-Server, une fois qu’AEM les prend en charge à la mi-mai. [Lisez comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) remplacer les informations d’identification ultérieurement.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Les sections ci-dessous répertorient les scénarios où les clients doivent (ou
 
 ## Intégrer AEM à d’autres solutions Adobe {#integrating-aem-with-other-adobe-solutions}
 
-**Action** : patientez jusqu’à la fin avril 2024, date à laquelle AEM les prendra en charge (cet article sera mis à jour à ce moment-là).
+**Action**: patientez jusqu’à la mi-mai 2024, date à laquelle AEM le prend en charge (cet article sera mis à jour à ce moment-là).
 
 **Versions d’AEM pertinentes** : AEM as a Cloud Service
 
@@ -38,15 +38,15 @@ Les clientes et clients AEM utilisent l’interface utilisateur de création AEM
 
 ![Intégrer AEM à d’autres solutions](/help/security/assets/jwt-deprecation.png)
 
-Par exemple, voici les [instructions](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=fr) pour configurer l’intégration à Adobe Target. La clé API dans la section [Réalisation de la configuration IMS dans AEM](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=fr#completing-the-ims-configuration-in-aem) doit être migrée vers le type d’informations d’identification OAuth serveur à serveur, une fois qu’AEM prendra en charge ces informations d’identification à la mi-avril. Ces instructions seront mises à jour à la mi-avril pour vous aider à appliquer les nouvelles informations d’identification OAuth serveur à serveur.
+Par exemple, voici les [instructions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims) pour configurer l’intégration à Adobe Target. La clé API dans la variable [Réalisation de la configuration IMS dans AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims#completing-the-ims-configuration-in-aem) doit être migrée vers le type d’informations d’identification OAuth Server-to-Server, une fois qu’AEM prend en charge ces informations d’identification à la mi-mai. Ces instructions seront mises à jour à la mi-mai pour vous aider à appliquer les nouvelles informations d’identification OAuth serveur à serveur.
 
 ## API Cloud Manager {#cloud-manager-apis}
 
-**Action** : patientez jusqu’à la fin avril 2024, date à laquelle AEM les prendra en charge (cet article sera mis à jour à ce moment-là).
+**Action**: migration vers les informations d’identification OAuth serveur à serveur.
 
 **Versions d’AEM pertinentes** : AEM as a Cloud Service
 
-Les clientes et clients créent des projets Adobe Developer Console pour pouvoir appeler les [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). Les informations d’identification du projet Adobe Developer doivent être migrées vers le type OAuth serveur à serveur, une fois qu’AEM et Cloud Manager les prendront en charge.
+Les clientes et clients créent des projets Adobe Developer Console pour pouvoir appeler les [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). Les informations d’identification du projet Adobe Developer doivent être migrées vers le type OAuth Server-to-Server avant que les informations d’identification JWT obsolètes n’expirent en janvier 2025.
 
 ## Projets générés automatiquement {#autogen-projects}
 
