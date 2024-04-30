@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2023.6.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2023.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1322'
 ht-degree: 100%
 

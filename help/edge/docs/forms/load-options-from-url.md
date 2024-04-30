@@ -4,21 +4,21 @@ description: Les options de la liste déroulante sont incluses dans une feuille 
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 source-git-commit: e61ef529dc562862bd02d7767e45de3e2ec4983b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Charger les options de liste déroulante à partir de l’URL
 
-Forms comprend souvent des menus déroulants que les utilisateurs peuvent sélectionner parmi des options prédéfinies. Ces options sont généralement définies dans le formulaire lui-même, mais la gestion de listes longues peut être encombrante. Ce guide explique comment améliorer la création de formulaires en chargeant les options de liste déroulante à partir d’une feuille de calcul distincte via une URL.
+Les formulaires comprennent souvent des menus déroulants que les utilisateurs et utilisatrices peuvent sélectionner parmi des options prédéfinies. Ces options sont généralement définies dans le formulaire lui-même, mais la gestion de longues listes peut être difficile. Ce guide explique comment améliorer la création de formulaires en chargeant les options de liste déroulante à partir d’une feuille de calcul distincte via une URL.
 
 
-Les avantages du chargement d’une liste déroulante depuis une feuille de calcul distincte sont les suivants :
+Les avantages du chargement des options de liste déroulante depuis une feuille de calcul distincte sont les suivants :
 
-* Gestion simplifiée : conservez les options de liste déroulante dans un emplacement centralisé pour des mises à jour et des ajouts plus simples.
-* Efficacité améliorée : évitez d’ajouter manuellement de longues listes d’options dans la définition de formulaire.
+* Gestion simplifiée : conserver les options de liste déroulante dans un emplacement centralisé facilite les mises à jour et les ajouts.
+* Efficacité améliorée : vous évitez de devoir ajouter manuellement de longues listes d’options dans la définition du formulaire.
 
 
 
@@ -33,20 +33,22 @@ Les avantages du chargement d’une liste déroulante depuis une feuille de calc
 
 ## Définir les options dans une feuille distincte {#define-options}
 
-Définition des options dans une feuille de calcul distincte
+Définir les options dans une feuille de calcul distincte
 
-1. Créer une feuille de calcul :
-   1. Recherchez votre dossier de projet AEM dans Microsoft® SharePoint ou Google Drive.
-   1. Ajoutez une nouvelle feuille. Par exemple, &quot;pays partagé&quot;.
-1. Définir les colonnes d’options : ajoutez deux colonnes : &quot;Option&quot; et &quot;Valeur&quot;.
-   * &quot;Option&quot; définit le texte affiché dans le menu déroulant.
-   * &quot;Valeur&quot; définit la valeur envoyée lorsqu’un utilisateur sélectionne l’option.
+1. Créez une feuille de calcul :
+   1. Accédez au dossier de votre projet AEM sur Microsoft® SharePoint ou dans le dossier Google Drive.
+   1. Ajoutez une nouvelle feuille. Par exemple, « shared-country ».
+1. Définissez les colonnes d’options :
+ajoutez deux colonnes : « Option » et « Valeur ».
+   * « Option » définit le texte affiché dans le menu déroulant.
+   * La « Valeur » définit la valeur envoyée lorsqu’une personne sélectionne l’option.
 
    >[!NOTE]
    >
-   >Si l’option et la valeur sont identiques, seule la colonne &quot;Option&quot; est requise.
+   >Si l’option et la valeur sont identiques, seule la colonne « Option » est requise.
 
-1. Renseignez la feuille de calcul : saisissez les options de votre pays dans la colonne &quot;Option&quot; (et la colonne &quot;Valeur&quot; si nécessaire).
+1. Renseignez la feuille de calcul :
+saisissez les options de votre pays dans la colonne « Option » (et la colonne « Valeur » si nécessaire).
 
    Reportez-vous à l’exemple ci-dessous pour la structure.
 
