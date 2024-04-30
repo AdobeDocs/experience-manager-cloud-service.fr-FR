@@ -2,10 +2,10 @@
 title: Prévisualisation du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant sa mise en ligne.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 77%
+source-wordcount: '298'
+ht-degree: 75%
 
 ---
 
@@ -54,11 +54,3 @@ Le contenu peut également être publié pour la prévisualisation à l’aide d
 Dépublier du contenu à partir de l’environnement **Aperçu** est fondamentalement le même processus que la [dépublication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) de l’environnement **Publier**.
 
 La seule différence réside dans le fait que vous pouvez sélectionner la **Destination** à afficher en **aperçu**.
-
-## Informations supplémentaires {#further-information}
-
-Voir également :
-
-* [Configuration des paramètres OSGi pour le niveau de prévisualisation](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-
-* [Débogage de l’aperçu à l’aide de Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

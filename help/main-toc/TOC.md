@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
 workflow-type: tm+mt
-source-wordcount: '4901'
+source-wordcount: '4892'
 ht-degree: 99%
 
 ---
@@ -1156,8 +1156,6 @@ ht-degree: 99%
    + Niveau de création {#author-tier}
       + [Accès au niveau de création](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Sécurisation du niveau de création](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Niveau de vue d’ensemble {#preview-tier}
-      + [Configuration des paramètres OSGi pour le niveau de prévisualisation](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Présentation de la diffusion de contenu {#content-delivery}
       + [Flux de diffusion de contenu](/help/implementing/dispatcher/overview.md)
       + [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md)
