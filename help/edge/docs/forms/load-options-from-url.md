@@ -3,12 +3,13 @@ title: Charger les options de liste déroulante à partir de l’URL
 description: Les options de la liste déroulante sont incluses dans une feuille de calcul distincte, puis importées dans la feuille de calcul principale via l’URL fournie.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: e61ef529dc562862bd02d7767e45de3e2ec4983b
-workflow-type: ht
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%
 
 ---
+
 
 # Charger les options de liste déroulante à partir de l’URL
 
@@ -87,3 +88,5 @@ https://main--wefinance--wkndforms.hlx.live/enquiry-form
 ## Voir également
 
 {{see-more-forms-eds}}
+
+
