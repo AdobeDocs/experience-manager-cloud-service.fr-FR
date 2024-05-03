@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager
 description: Découvrez comment Cloud Manager prend en charge votre projet AEM par le biais de ses programmes, environnements et pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 96%
+source-wordcount: '864'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Vous pouvez également accéder à la page Programmes et produits de Cloud Mana
 
 1. Sélectionnez **Experience Manager**.
 
-1. Sur le **Cloud Manager** carte, cliquez sur **Launch**
+1. Sur la vignette **Cloud Manager**, cliquez sur **Lancer**.
 
 ## Permissions basées sur les rôles dans Cloud Manager {#role-based-permissions}
 
@@ -52,12 +52,16 @@ Vous pouvez également accéder à la page Programmes et produits de Cloud Mana
 | Génération d’un jeton d’accès personnel | Accéder à Git |  | x |  | x |
 | Créer un RDE | Créer un environnement de développement rapide | x |  |  | x |
 | Réinitialiser un RDE | Réinitialiser un environnement de développement rapide | x |  |  | x |
-| Création/modification de jeux de contenu | Création ou modification d’un jeu de contenu pour la copie de contenu |  | x |  |  |
-| Démarrer/annuler la copie de contenu | Démarrer ou annuler un processus de copie de contenu |  | x |  |  |
+| Créer et modifier des jeux de contenu | Créer ou modifier un jeu de contenu pour la copie de contenu |  | x |  |  |
+| Démarrer ou annuler la copie de contenu | Démarrer ou annuler un processus de copie de contenu |  | x |  |  |
 
 >[!NOTE]
 >
 >Un utilisateur peut être affecté à plusieurs rôles. Par exemple, attribuer les deux rôles de **Propriétaire de l’entreprise** et de **Responsable de déploiement** à un utilisateur ou une utilisatrice lui donne la somme de ces autorisations.
+
+>[!TIP]
+>
+>Des profils d’autorisation personnalisés avec des autorisations configurables sont également disponibles. Consultez le document [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md) pour plus d’informations.
 
 ## Programmes Cloud Manager {#cloud-manager-programs}
 

@@ -2,7 +2,7 @@
 title: Définitions de modèles, champs et types de composants
 description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 9f0a3bf5c8d839fa2ab6744c6fa7f97cc5fe8684
+source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 11%
@@ -289,6 +289,8 @@ Un type de composant de conteneur permet le regroupement de composants. Il propo
 >[!TAB Capture d’écran]
 
 ![Capture d’écran du type de composant de conteneur](assets/component-types/container.png)
+
+>[!ENDTABS]
 
 #### Fragment de contenu {#content-fragment}
 
