@@ -1,19 +1,19 @@
 ---
-title: Surveillance en temps réel pour les Edge Delivery Services pour AEM Forms as a Cloud Service
-description: La surveillance de l’utilisation réelle pour les Edge Delivery Services pour AEM Forms as a Cloud Service implique le suivi et l’analyse continus des interactions utilisateur avec les formulaires.
+title: Surveillance à usage réel (RUM) pour les Edge Delivery Services pour AEM Forms as a Cloud Service
+description: La surveillance de l’utilisation réelle (RUM) pour les Edge Delivery Services pour AEM Forms as a Cloud Service implique le suivi et l’analyse continus des interactions utilisateur avec les formulaires.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
+source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '792'
 ht-degree: 45%
 
 ---
 
 
-# Surveillance à usage réel pour les Edge Delivery Services pour AEM Forms as a Cloud Service
+# Surveillance à usage réel (RUM) pour les Edge Delivery Services pour AEM Forms as a Cloud Service
 
 La surveillance de l’utilisation réelle (RUM) vous permet d’obtenir des informations sur la manière dont les visiteurs interagissent avec vos sites web Adobe Experience Manager (AEM). Cet outil intégré fournit des données précieuses pour comprendre le comportement des utilisateurs, diagnostiquer les problèmes de performances et mesurer l’efficacité des expériences sur site web. RUM va au-delà des tests synthétiques en capturant les interactions d’utilisation réelle, offrant une image plus précise des performances de votre site.
 
@@ -75,3 +75,7 @@ L’analyse de ces mesures vous permet d’identifier les opportunités pour :
 * Résoudre les problèmes techniques qui ralentissent le chargement des formulaires.
 
 En vous concentrant sur ces zones, vous pouvez créer des formulaires plus faciles à utiliser et encourager les visiteurs à les remplir, ce qui entraîne des taux de conversion plus élevés.
+
+## Voir également
+
+{{see-more-forms-eds}}
