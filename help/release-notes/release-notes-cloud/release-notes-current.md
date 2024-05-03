@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2024.4.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 25 avril 2024. La prochaine disponibilité des fonctionnalités (2024.5.0) est prévue pour le vendredi 30 mai 2024.
+La date de publication de la version actuelle (2024.4.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 25 avril 2024. La prochaine disponibilité des fonctionnalités (2024.5.0) est prévue pour le 30 mai 2024.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -63,29 +63,29 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez
 
 **Recherche contextuelle**
 
-Vous pouvez désormais également [rechercher des ressources disponibles dans le référentiel en définissant des invites de texte ;](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets transforme automatiquement ces invites de texte en filtres de recherche et affiche les résultats de la recherche. Vous pouvez afficher et modifier des filtres automatiques à l’aide du volet Filtres pour affiner davantage les résultats de la recherche.
+Désormais, vous pouvez également [rechercher des ressources disponibles dans le référentiel en définissant des invites de texte](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets transforme automatiquement ces invites de texte en filtres de recherche et affiche les résultats de la recherche. Vous pouvez afficher et modifier des filtres automatiques à l’aide du volet Filtres pour affiner davantage les résultats de la recherche.
 
 ![Recherche contextuelle](/help/assets/assets/contextual-search-text-prompt1.png)
 
 **Actions rapides sur les vidéos express**
 
-Experience Manager Assets inclut désormais [outils de montage vidéo simples et intuitifs, optimisés par Adobe Express](/help/assets/edit-videos-assets-view.md) pour augmenter la réutilisation du contenu et accélérer la vitesse du contenu. Les options de retouche incluent le rognage, le recadrage, le redimensionnement d’une vidéo, ainsi que la conversion d’un fichier MP4 en fichier GIF.
+Experience Manager Assets comprend désormais des [outils d’édition vidéo simples et intuitifs optimisés par Adobe Express](/help/assets/edit-videos-assets-view.md) pour augmenter la réutilisation du contenu et accélérer sa vitesse de diffusion. Les options de retouche incluent le rognage, le recadrage, le redimensionnement d’une vidéo, ainsi que la conversion d’un fichier MP4 en fichier GIF.
 
 ![Recadrage vidéo avec Adobe Express](/help/assets/assets/adobe-express-crop-video.png)
 
 **Rendus dynamiques**
 
-Vous pouvez désormais [afficher et télécharger des rendus dynamiques (y compris les recadrages intelligents) ;](/help/assets/renditions.md) dans Experience Manager Assets. Les rendus dynamiques sont des versions personnalisées des ressources d’image créées en temps réel pour répondre à des besoins spécifiques, tels que le redimensionnement des images en fonction de la résolution de l’appareil ou le recadrage pour adapter différents formats. Ces rendus permettent aux entreprises de fournir des expériences personnalisées et optimisées à divers besoins d’audience.
+Vous pouvez désormais [afficher et télécharger des rendus dynamiques (recadrages intelligents inclus)](/help/assets/renditions.md) dans Experience Manager Assets. Les rendus dynamiques sont des versions personnalisées des ressources d’image créées en temps réel pour répondre à des besoins spécifiques, tels que le redimensionnement des images en fonction de la résolution de l’appareil ou le recadrage pour adapter différentes proportions. Ces rendus permettent aux entreprises de proposer des expériences personnalisées et optimisées pour des besoins d’audience divers.
 
 ![Rendus dynamiques](/help/assets/assets/preset_smart_crop.png)
 
 **Changement statique du nom des ressources et des dossiers**
 
-Experience Manager Assets offre désormais une expérience utilisateur simplifiée en fournissant des [possibilité de renommer une ressource ou un dossier en un seul clic](/help/assets/manage-organize-assets-view.md).
+Experience Manager Assets offre désormais une expérience client simplifiée [en permettant de renommer une ressource ou un dossier en un seul clic](/help/assets/manage-organize-assets-view.md).
 
 **Affecter un formulaire de métadonnées à plusieurs dossiers ou le supprimer de ceux-ci**
 
-Vous pouvez désormais [affectation ou suppression d’un formulaire de métadonnées à plusieurs dossiers](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
+Vous pouvez désormais [affecter un formulaire de métadonnées à plusieurs dossiers ou le supprimer de ceux-ci](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
 
 
@@ -165,23 +165,23 @@ Le Service de données Real User Monitoring (RUM) offre un reflet plus précis d
 
 ### Configuration du réseau CDN {#cdn-config}
 
-Configurez le trafic sur le réseau de diffusion de contenu d’Adobe comme suit :
+Configurez le trafic sur le réseau CDN d’Adobe comme suit :
 
-* [Transformations de requêtes](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - modifiez les aspects des requêtes entrantes, y compris les chemins, les paramètres de requête et les en-têtes HTTP avant qu’elles ne soient acheminées vers AEM.
-* [Conversion des réponses](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - modifiez les en-têtes HTTP des réponses sortantes avant qu’elles ne soient diffusées au navigateur.
-* [Sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - acheminez le trafic à travers le réseau de diffusion de contenu vers des sites et applications hors AEM.
+* [Transformations des demandes](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) : modifiez l’aspect des demandes entrantes, y compris les chemins, les paramètres de requête et les en-têtes HTTP avant qu’elles ne soient acheminées vers AEM.
+* [Transformations des réponses](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) : modifiez les en-têtes HTTP des réponses sortantes avant qu’elles ne soient présentées au navigateur.
+* [Sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) : acheminez le trafic via le réseau CDN vers des sites et applications en dehors d’AEM.
 
-Une fois ces règles déclarées dans le contrôle de code source (git), vous pouvez les déployer sur le réseau de diffusion de contenu à l’aide du pipeline de configuration de Cloud Manager. Voir également la fonctionnalité de redirections côté client dans la section des premiers adopteurs ci-dessous.
+Une fois ces règles déclarées dans le contrôle de code source (git), vous pouvez les déployer sur le réseau CDN à l’aide du pipeline de configuration de Cloud Manager. Voir également la fonctionnalité de redirections côté client dans la section relative à l’adoption précoce ci-dessous.
 
-### Pages d’erreur CDN personnalisées {#cdn-error-pages}
+### Personnaliser les pages d’erreur du réseau CDN {#cdn-error-pages}
 
-Dans le cas improbable où le réseau de diffusion de contenu ne peut pas acheminer le trafic vers l’origine de l’AEM, une page d’erreur personnalisée peut être déclarée, en remplacement de la version générique. [En savoir plus](/help/implementing/dispatcher/cdn-error-pages.md) sur la manière de traiter les pages d’erreur de marque.
+Dans le cas improbable où le réseau CDN ne pourrait pas acheminer le trafic vers l’origine d’AEM, une page d’erreur personnalisée peut être déclarée, en remplacement de la version générique. [En savoir plus](/help/implementing/dispatcher/cdn-error-pages.md) sur la manière de présenter les pages d’erreur de la marque.
 
 ### Programmes d’adoption précoce {#foundation-early-adopter}
 
-#### Redirections côté client (programme des Adopteurs précoces) {#client-side-redirects-early-adopter}
+#### Redirections côté client (programme d’adoption précoce) {#client-side-redirects-early-adopter}
 
-Configurez 301/302 redirections côté client dans le contrôle de code source et déployez-les sur le réseau de diffusion de contenu. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) et rejoindre le programme des premiers adopteurs en envoyant un courrier électronique **<aemcs-cdn-config-adopter@adobe.com>**.
+Configurez des redirections côté client 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) et rejoindre le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Alertes relatives aux règles de filtrage du trafic (programme d’adoption précoce) {#traffic-filter-rules-alerts-early-adopter}
 
