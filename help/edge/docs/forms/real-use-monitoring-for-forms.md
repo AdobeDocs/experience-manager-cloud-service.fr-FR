@@ -2,11 +2,13 @@
 title: Surveillance en temps réel pour les Edge Delivery Services pour AEM Forms as a Cloud Service
 description: La surveillance de l’utilisation réelle pour les Edge Delivery Services pour AEM Forms as a Cloud Service implique le suivi et l’analyse continus des interactions utilisateur avec les formulaires.
 feature: Edge Delivery Services
+hide: true
+hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 44%
+source-wordcount: '787'
+ht-degree: 45%
 
 ---
 
@@ -30,15 +32,13 @@ Pour vous connecter au tableau de bord de surveillance pour les Edge Delivery Se
 
 * **URL** : l’URL est spécifique au site ou au domaine de l’utilisateur ou de l’utilisatrice. Les utilisateurs et utilisatrices ont la possibilité de filtrer le site ou le domaine pour afficher le tableau de bord en fonction de leurs besoins.
 
-* **Clé domaine**: l’utilisateur génère manuellement la clé de domaine.
-
-Pour obtenir de l’aide sur les clés de domaine, reportez-vous au [Authentification](https://www.aem.live/developer/rum#authentication) la documentation.
+* **Clé domaine** : l’utilisateur ou l’utilisatrice génère manuellement la clé de domaine. Pour obtenir les clés de domaine de vos formulaires, contactez votre représentant d’Adobe.
 
 ### Tableau de bord de surveillance pour les Edge Delivery Services d’AEM Forms as a Cloud Service
 
 Après avoir saisi l’URL et les clés de domaine dans l’écran de connexion, vous accédez au tableau de bord de surveillance pour les Edge Delivery Services d’AEM Forms as a Cloud Service.
 
-L’illustration ci-dessous présente le tableau de bord RUM pour les Edge Delivery Services pour AEM Forms as a Cloud Service :
+L’illustration ci-dessous présente le tableau de bord pour les Edge Delivery Services pour AEM Forms as a Cloud Service :
 
 ![Tableau de bord de formulaires RUM](/help/edge/assets/rum-forms-dashboard.png)
 

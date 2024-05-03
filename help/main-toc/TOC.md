@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '4908'
+source-wordcount: '4907'
 ht-degree: 99%
 
 ---
@@ -716,7 +716,7 @@ ht-degree: 99%
       + [Problèmes connus, bonnes pratiques et questions fréquentes](/help/forms/communications-known-issues-limitations.md)
    + Rapports de transaction {#using-communications}
       + [API de rapports de transactions facturables](/help/forms/transaction-reports-billable-apis.md)
-      + [Enregistrement d’une transaction pour une implémentation personnalisée](/help/forms/record-transaction-custom-implementation.md)
+      + [Enregistrer une transaction pour une implémentation personnalisée](/help/forms/record-transaction-custom-implementation.md)
    + Référence de l’API de développement {#aem-forms-developer-api-reference}
       + [Référence de l’API Adaptive Forms](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Référence de l’API Communications du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -856,7 +856,7 @@ ht-degree: 99%
          + [Traduction](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
-         + [Surveillance des personnes en temps réel pour les formulaires](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Surveillance en temps réel des formulaires](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + Références {#forms-references}
          + [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
    + Resources Edge Delivery {#resources}
