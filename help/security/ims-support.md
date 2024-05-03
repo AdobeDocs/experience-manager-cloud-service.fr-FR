@@ -1,11 +1,11 @@
 ---
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
-description: Prise en charge du système de gestion des images pour Adobe Experience Manager as a Cloud Service.
+description: Prise en charge du système de gestion des images pour Adobe Experience Manager as a Cloud Service.
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1922'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -44,23 +44,23 @@ Le flux d’identifiant de connexion utilisateur est indiqué ci-dessous. La per
 
 L’intégration du client à l’Adobe Admin Console est un prérequis pour utiliser Adobe IMS pour l’authentification AEM.
 
-Pour commencer, les clients doivent disposer d’une organisation configurée dans Adobe IMS. Les clients et clientes Adobe Enterprise sont représentés en tant qu’organisations IMS dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Cette zone est le portail utilisé par les clients et clientes Adobe pour gérer les droits de leurs produits pour leurs utilisateurs, utilisatrices et groupes.
+Pour commencer, les clientes et clients doivent avoir une organisation configurée dans Adobe IMS. Les clients et clientes Adobe Enterprise sont représentés en tant qu’organisations IMS dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Cette zone est le portail utilisé par les clients et clientes Adobe pour gérer les droits de leurs produits pour leurs utilisateurs, utilisatrices et groupes.
 
-AEM clients doivent déjà disposer d’une organisation configurée et, dans le cadre de la mise en service IMS, les instances de client sont mises à disposition dans Admin Console pour gérer les droits et accès des utilisateurs.
+Une organisation doit déjà être configurée pour les clientes et clients AEM. De plus, dans le cadre de l’approvisionnement IMS, les instances des clientes et clients seront mise à disposition dans Admin Console pour gérer les droits et accès des utilisateurs et utilisatrices.
 
 Dès qu’un client ou une cliente existe en tant qu’organisation IMS, il ou elle doit configurer son système comme suit :
 
 ![Intégration IMS](/help/security/assets/ims2.png)
 
-1. L’administrateur système désigné reçoit une invitation à se connecter à Cloud Manager. Après vous être connecté à Cloud Manager, les administrateurs système peuvent choisir de configurer les programmes et environnements d’AEM, ou d’accéder à Admin Console pour les tâches d’administration.
+1. La personne chargée de l’administration système désignée reçoit une invitation à se connecter à Cloud Manager. Une fois connectée à Cloud Manager, la personne chargée de l’administration système peut soit configurer les programmes et environnements AEM, soit accéder à Admin Console pour effectuer des tâches d’administration.
 1. L’administrateur ou l’administratrice système demande à un domaine de confirmer la propriété du domaine concerné (acme.com, par exemple).
 1. L’administrateur ou l’administratrice système configure les répertoires d’utilisateur ou d’utilisatrice.
-1. L’administrateur système effectue la configuration IDP dans Admin Console pour configurer l’authentification unique.
+1. L’administrateur ou l’administratrice système effectue la configuration IDP dans Admin Console afin de configurer l’authentification unique.
 1. L’administrateur AEM gère les groupes locaux, les autorisations et les droits comme d’habitude.
 
 Pour plus d’informations sur les bases d’Adobe IMS, y compris sur la configuration des fournisseurs d’identité, consultez [cette page](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html).
 
-Administration des entreprises et utilisation des Admin Console [here](https://helpx.adobe.com/fr/enterprise/admin-guide.html).
+Pour en savoir plus sur l’utilisation de l’administration d’entreprise et d’Admin Console, consultez [cette page](https://helpx.adobe.com/fr/enterprise/admin-guide.html).
 
 ### Intégrer des utilisateurs et des utilisatrices dans l’Admin Console {#onboarding-users-in-admin-console}
 
@@ -158,7 +158,7 @@ AEM peut continuer à prendre en charge les connexions locales pour les administ
 
 <!-- the above image must be updated for skyline -->
 
-**Connexion basée sur IMS**
+**Connexion via IMS**
 
 Pour les autres utilisateurs et utilisatrices, la connexion IMS est utilisée une fois qu’IMS est configuré sur l’instance. L’utilisateur ou l’utilisatrice clique sur le bouton Se connecter avec Adobe comme illustré ci-dessous :
 
@@ -210,10 +210,10 @@ Comme illustré ci-dessous, le groupe **AEM-GRP_008** hérite des autorisations 
 
 Pour pouvoir accéder à Cloud Manager ou à des environnements sur AEM as a Cloud Service, les profils du produit Cloud Manager doivent vous être attribués.
 
-Voir Définitions de rôle si vous souhaitez en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques dans Cloud Manager.
+Consultez Définitions de rôle pour en savoir plus sur les rôles des utilisateurs et utilisatrices qui régissent la disponibilité de fonctionnalités spécifiques dans Cloud Manager.
 
 >[!NOTE]
->Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur les rôles dotés d’autorisations spécifiques, de tâches préconfigurées ou d’autorisations associées à chaque rôle, consultez [Autorisations basées sur les rôles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions).
+>Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur les rôles dotés d’autorisations spécifiques, de tâches préconfigurées ou d’autorisations associées à chaque rôle, consultez [Autorisations basées sur les rôles](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions).
 
 **Procédure d’ajout d’un utilisateur**
 
