@@ -4,10 +4,10 @@ description: Découvrez comment intégrer Microsoft Dynamics 365 et Salesforce �
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 65%
+source-wordcount: '965'
+ht-degree: 58%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 65%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM as a Cloud Service | Cet article |
 
-L’[[!DNL Experience Manager Forms] intégration de données](data-integration.md) fournit des services cloud [!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] permettant d’intégrer des formulaires adaptatifs aux modèles de données de formulaire prêts à l’emploi. Les formulaires adaptatifs peuvent alors interagir avec les serveurs [!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] pour activer les workflows métier. Par exemple :
+[[!DNL Experience Manager Forms] Intégration de données](data-integration.md) fournit [!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] services cloud pour intégrer des formulaires adaptatifs avec le modèle de données de formulaire (FDM) prêt à l’emploi. Les formulaires adaptatifs peuvent alors interagir avec les serveurs [!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] pour activer les workflows métier. Par exemple :
 
 * Écrire des données dans [!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] lors de la soumission de formulaires adaptatifs.
-* Écriture de données dans [!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] par le biais d’entités personnalisées définies dans le modèle de données de formulaire et inversement.
+* Écriture de données dans [!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] par le biais d’entités personnalisées définies dans le modèle de données de formulaire (FDM) et inversement.
 * Interroger des données sur un serveur [!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] pour préremplir des formulaires adaptatifs.
 * Lire des données à partir de serveurs [!DNL Microsoft® Dynamics 365] et [!DNL Salesforce].
 
-[!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] les services cloud et les modèles de données de formulaire sont disponibles prêts à l’emploi dans le [!DNL AEM Forms] Serveur après vous [Configuration d’un projet de développement pour Forms en fonction de l’archétype du Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+[!DNL Microsoft® Dynamics 365] et [!DNL Salesforce] les services cloud et le modèle de données de formulaire (FDM) sont disponibles prêts à l’emploi dans la [!DNL AEM Forms] Serveur après vous [Configuration d’un projet de développement pour Forms en fonction de l’archétype du Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 >[!NOTE]
 >
->Microsoft® Dynamics 365 et [!DNL Salesforce] les services cloud et les modèles de données de formulaire ne sont disponibles prêts à l’emploi que si vous configurez une [!DNL Experience Manager Forms] as a [!DNL Cloud Service] projet basé sur [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) ou plus tard.
+>Microsoft® Dynamics 365 et [!DNL Salesforce] les services cloud et le modèle de données de formulaire (FDM) ne sont disponibles en standard que si vous configurez une [!DNL Experience Manager Forms] as a [!DNL Cloud Service] projet basé sur [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) ou plus tard.
 
 ## Configuration du service cloud [!DNL Salesforce] {#configure-salesforce-cloud-service}
 
@@ -59,11 +59,11 @@ Pour configurer le service cloud [!DNL Salesforce], procédez comme suit :
    1. Connectez-vous avec vos informations d’identification [!DNL Salesforce] et autorisez la connexion de la configuration du service cloud au service [!DNL Salesforce]. Si la connexion est établie, vous êtes redirigé vers la page de configuration du service cloud [!DNL Salesforce], qui affiche un message de réussite.
 1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour terminer la configuration.
 
-### Accès au modèle de données de formulaire [!DNL Salesforce] prêt à l’emploi
+### Accès prêt à l’emploi [!DNL Salesforce] Modèle de données de formulaire (FDM)
 
-A [!DNL Salesforce] Le modèle de données de formulaire est disponible prêt à l’emploi dans la [!DNL AEM Forms] Serveur après vous [Configuration d’un projet de développement pour Forms en fonction de l’archétype du Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+A [!DNL Salesforce] Le modèle de données de formulaire (FDM) est disponible dans la zone [!DNL AEM Forms] Serveur après vous [Configuration d’un projet de développement pour Forms en fonction de l’archétype du Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
-Pour accéder au modèle de données de formulaire, accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**. La liste des dossiers de disponibles inclut un dossier avec le titre `DappTitle` tout en [générant le projet d’archétype d’AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Sélectionnez le nom du dossier, puis le **[!UICONTROL Modèle de données Salesforce]**, puis sélectionnez Modifier . ![Modifier](assets/edit.png) pour afficher le modèle de données de formulaire.
+Pour accéder au modèle de données de formulaire (FDM), accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Intégrations de données]**. La liste des dossiers de disponibles inclut un dossier avec le titre `DappTitle` tout en [générant le projet d’archétype d’AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Sélectionnez le nom du dossier, puis le **[!UICONTROL Modèle de données Salesforce]**, puis sélectionnez Modifier . ![Modifier](assets/edit.png) pour afficher le modèle de données de formulaire (FDM).
 
 Après avoir configuré le service de configuration du cloud [[!DNL Salesforce] ](#configure-salesforce-cloud-service), vous pouvez intégrer des formulaires adaptatifs avec le modèle de données [!DNL Salesforce] prêt à l’emploi.
 
@@ -86,25 +86,25 @@ Pour configurer le service cloud [!DNL Microsoft® Dynamics 365], procédez comm
 1. Sur l’instance d’auteur [!DNL AEM Forms], accédez à **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Sources de données]**. La liste des dossiers de wrapper disponibles inclut un dossier avec le titre `DappTitle` tout en [générant le projet d’archétype d’AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 1. Sélectionnez le nom du dossier, puis **[!UICONTROL Configuration du cloud Microsoft® Dynamics 365]**, puis sélectionnez **[!UICONTROL Propriétés]**.
 1. Dans l’onglet **[!UICONTROL Paramètres d’authentification]** :
-   1. Saisissez la valeur de la variable **[!UICONTROL Racine du service]** champ . Accédez à l’instance Dynamics et à [Ressources de développement](https://docs.microsoft.com/fr-fr/powerapps/developer/data-platform/view-download-developer-resources) pour afficher la valeur du champ Racine du service. Par exemple, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
+   1. Saisissez la valeur du champ **[!UICONTROL Racine du service]**. Accédez à l’instance Dynamics et à [Ressources de développement](https://docs.microsoft.com/fr-fr/powerapps/developer/data-platform/view-download-developer-resources) pour afficher la valeur du champ Racine du service. Par exemple, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Spécifiez l’ID client (appelé ID d’application) et le secret client pour l’application connectée.
    1. Remplacez `{tenant}` par un ID client dans les champs **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]** et **[!UICONTROL URL de jeton d’accès]**.
-   1. Spécifiez l’URL de l’instance de dynamique dans le **[!UICONTROL Ressource]** champ à configurer [!UICONTROL Microsoft® Dynamics] avec un modèle de données de formulaire. Utilisez l’URL racine du service pour dériver l’URL de l’instance dynamique. Par exemple, `https://<tenant-name>.dynamics.com`.
+   1. Spécifiez l’URL de l’instance de dynamique dans le **[!UICONTROL Ressource]** champ à configurer [!UICONTROL Microsoft® Dynamics] avec un modèle de données de formulaire (FDM). Utilisez l’URL racine du service pour dériver l’URL de l’instance dynamique. Par exemple, `https://<tenant-name>.dynamics.com`.
 
    1. Spécifiez `openid` dans le champ **[!UICONTROL Champ d’application de l’autorisation]** pour la procédure d’autorisation sur [!DNL Microsoft® Dynamics 365].
    1. Connectez-vous avec vos informations d’identification [!DNL Microsoft® Dynamics 365] et autorisez la connexion de la configuration du service cloud au service [!DNL Microsoft® Dynamics 365]. Si la connexion est établie, vous êtes redirigé vers la page de configuration du service cloud [!DNL Microsoft® Dynamics 365], qui affiche un message de réussite.
 1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour terminer la configuration.
 
-### Accès au modèle de données de formulaire [!DNL Microsoft® Dynamics 365] prêt à l’emploi
+### Accès prêt à l’emploi [!DNL Microsoft® Dynamics 365] Modèle de données de formulaire (FDM)
 
-A [!DNL Microsoft® Dynamics 365] Le modèle de données de formulaire est disponible prêt à l’emploi dans la [!DNL AEM Forms] Serveur après vous [Configuration d’un projet de développement pour Forms en fonction de l’archétype du Experience Manager](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+A [!DNL Microsoft® Dynamics 365] Le modèle de données de formulaire (FDM) est disponible dans la zone [!DNL AEM Forms] Serveur après vous [Configuration d’un projet de développement pour Forms en fonction de l’archétype du Experience Manager](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-Pour accéder au modèle de données de formulaire, accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**. La liste des dossiers de disponibles inclut un dossier avec le titre `DappTitle` tout en [générant le projet d’archétype d’AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Sélectionnez le nom du dossier, puis le **[!UICONTROL Modèle de données Microsoft® Dynamics 365]**, puis sélectionnez Modifier . ![Modifier](assets/edit.png) pour afficher le modèle de données de formulaire.
+Pour accéder au modèle de données de formulaire (FDM), accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Intégrations de données]**. La liste des dossiers de disponibles inclut un dossier avec le titre `DappTitle` tout en [générant le projet d’archétype d’AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Sélectionnez le nom du dossier, puis le **[!UICONTROL Modèle de données Microsoft® Dynamics 365]**, puis sélectionnez Modifier . ![Modifier](assets/edit.png) pour afficher le modèle de données de formulaire (FDM).
 
 Après avoir configuré le service de configuration du cloud [[!DNL Microsoft® Dynamics 365] ](#configure-dynamics-cloud-service), vous pouvez intégrer des formulaires adaptatifs avec le modèle de données [!DNL Microsoft® Dynamics 365] prêt à l’emploi.
 
 >[!MORELIKETHIS]
 >
-* [Configuration des sources de données pour AEM Forms](/help/forms/configure-data-sources.md)
-* [Configuration du stockage Azure pour AEM Forms](/help/forms/configure-azure-storage.md)
-[Ajout de Forms Portal à une page AEM Sites](/help/forms/configure-forms-portal.md)
+>* [Configuration des sources de données pour AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configuration du stockage Azure pour AEM Forms](/help/forms/configure-azure-storage.md)
+>  [Ajout de Forms Portal à une page AEM Sites](/help/forms/configure-forms-portal.md)

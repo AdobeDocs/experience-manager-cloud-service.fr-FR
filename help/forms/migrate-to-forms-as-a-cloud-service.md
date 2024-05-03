@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 86%
+source-wordcount: '1433'
+ht-degree: 82%
 
 ---
 
@@ -128,14 +128,14 @@ Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et le
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Exécutez l’[outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#cloud-migration). Lors de la spécification des paramètres dans l’écran **[!UICONTROL Créer un jeu de migration]**, spécifiez le chemin d’accès aux formulaires adaptatif, thèmes, modèles, modèles de données de formulaire, Cloud Services, composants personnalisés et autres ressources spécifiques à AEM Forms sur l’option **[!UICONTROL Chemins à inclure]**. Cela ajoute les ressources [!DNL AEM Forms] spécifiées au jeu de migration.
+1. Exécutez l’[outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#cloud-migration). Lors de la spécification des paramètres sur le **[!UICONTROL Créer un jeu de migration]** sur l’écran, spécifiez le chemin d’accès à Forms adaptatif, aux thèmes, aux modèles, au modèle de données de formulaire (FDM), aux Cloud Service, aux composants personnalisés et à d’autres ressources spécifiques à AEM Forms dans la variable **[!UICONTROL Chemins à inclure]** . Cela ajoute les ressources [!DNL AEM Forms] spécifiées au jeu de migration.
 
 ## Chemins d’accès à différentes ressources spécifiques à AEM Forms
 
 Lorsque vous migrez d’AEM Forms 6.5 vers le service cloud, vous pouvez localiser les ressources spécifiques à AEM Forms à l’adresse :
 
 * **Formulaires adaptatifs** : vous trouverez les formulaires adaptatifs sous `/content/dam/formsanddocuments/` et `/content/forms/af`. Par exemple, pour un formulaire adaptatif appelé « Enregistrement WKND », ajoutez des chemins `/content/dam/formsanddocuments/wknd-registration` et `/content/forms/af/wknd-registration`.
-* **Modèle des données de formulaire** : vous trouverez tous les modèles de données de formulaire sous `/content/dam/formsanddocuments-fdm`. Par exemple, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Modèle de données de formulaire**: vous trouverez tous les modèles de données de formulaire (FDM) à l’adresse `/content/dam/formsanddocuments-fdm`. Par exemple, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Bibliothèques clientes** : le chemin d’accès par défaut aux bibliothèques clientes est `/etc/clientlibs/fd/theme`.
 
@@ -143,7 +143,7 @@ Lorsque vous migrez d’AEM Forms 6.5 vers le service cloud, vous pouvez local
 
 * **Thèmes de formulaires adaptatifs et bibliothèques clientes** : le chemin d’accès par défaut aux thèmes est ` /content/dam/formsanddocuments-themes/` et chemin d’accès par défaut aux bibliothèques clientes est `/etc/clientlibs/fd/theme`. Par exemple, pour un modèle appelé « Thème WKND », ajoutez le chemin d’accès ` /content/dam/formsanddocuments-themes/wkndtheme` et les bibliothèques clientes pour le thème sous `/etc/clientlibs/reference-themes/wkndtheme-3-0`. Vous pouvez également utiliser des thèmes et des bibliothèques clientes sur d’autres chemins d’accès personnalisés.
 
-* **Configurations du cloud** : vous trouverez les configurations de cloud sous `/conf/`. Par exemple, la configuration du cloud de modèles de données de formulaire se trouve sous `/conf/global/settings/cloudconfigs/fdm`.
+* **Configurations du cloud** : vous trouverez les configurations de cloud sous `/conf/`. Par exemple, la configuration cloud du modèle de données de formulaire (FDM) se trouve à l’adresse `/conf/global/settings/cloudconfigs/fdm`.
 
 * **Modèle de processus** : vous trouverez des modèles de processus AEM sous `/conf/global/settings/workflow/models/`. Par exemple, pour un modèle de processus appelé « Enregistrement WKND », ajoutez le chemin d’accès `/conf/global/settings/workflow/models/wknd-registration`.
 

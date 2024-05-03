@@ -6,10 +6,10 @@ role: User
 feature: Adaptive Forms, FAQ
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '986'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 89%
 
 ---
 
@@ -76,15 +76,15 @@ Non, l’étape de vérification n’est pas disponible pour [!DNL Forms] as a C
 * **Puis-je ajouter des graphiques à un formulaire adaptatif ?**
 Oui, vous pouvez ajouter des graphiques aux formulaires adaptatifs. Les formulaires adaptatifs fournissent un composant de graphique. Vous pouvez l’utiliser pour ajouter des graphiques à un formulaire adaptatif.
 
-* **Puis-je connecter un modèle de données de formulaire à un modèle de base de données relationnelle ?**
-Vous pouvez lier un modèle de données de formulaire à [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] et un profil d’utilisateur Experience Manager en tant que source de données. La connexion d’un modèle de données de formulaire à une base de données relationnelle n’est pas prise en charge.
+* **Puis-je connecter un modèle de données de formulaire (FDM) à un modèle de base de données relationnelle ?**
+Vous pouvez connecter un modèle de données de formulaire (FDM) à [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]et profil utilisateur Experience Manager en tant que sources de données. La prise en charge de la connexion d’un modèle de données de formulaire (FDM) à une base de données relationnelle n’est pas disponible.
 
-* **Puis-je utiliser des certificats personnalisés avec le modèle de données de formulaire pour l’authentification ?**
-Le modèle de données de formulaire ne fournit pas de méthode permettant d’utiliser des certificats personnalisés pour l’authentification. Par conséquent, les certificats personnalisés tels que x509 et SSL bidirectionnel ne sont pas pris en charge.
+* **Puis-je utiliser des certificats personnalisés avec le modèle de données de formulaire (FDM) pour l’authentification ?**
+Le modèle de données de formulaire (FDM) ne fournit pas de méthode d’utilisation de certificats personnalisés pour l’authentification. Par conséquent, les certificats personnalisés tels que x509 et SSL bidirectionnel ne sont pas pris en charge.
 
 * **Puis-je utiliser des formulaires adaptatifs à soumettre au portail Formulaires ?**
 
-  Vous pouvez modifier votre formulaire adaptatif existant afin d’utiliser les actions d’envoi [Envoyer au point de d’entrée REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Envoyer un e-mail](configuring-submit-actions.md#send-email), [Envoyer à l’aide du modèle de données de formulaire](configuring-submit-actions.md#submit-using-form-data-model) et [Appeler un processus AEM](configuring-submit-actions.md#invoke-an-aem-workflow). Le portail Formulaires et l’action d’envoi au portail Formulaires ne sont pas encore disponibles. Surveillez les notes de mise à jour mensuelles pour connaître la disponibilité des fonctionnalités.
+  Vous pouvez modifier votre Forms adaptatif existant pour utiliser [Envoyer vers le point de fin REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Envoyer un email](configuring-submit-actions.md#send-email), [Envoyer à l’aide du modèle de données de formulaire (FDM)](configuring-submit-actions.md#submit-using-form-data-model), et [Appeler un workflow d’AEM](configuring-submit-actions.md#invoke-an-aem-workflow) Actions Envoyer. Le portail Formulaires et l’action d’envoi au portail Formulaires ne sont pas encore disponibles. Surveillez les notes de mise à jour mensuelles pour connaître la disponibilité des fonctionnalités.
 
 * **Puis-je utiliser l’application [!DNL AEM Forms] avec [!DNL AEM Forms] as a Cloud Service ?**
 

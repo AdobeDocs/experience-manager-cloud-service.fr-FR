@@ -1,18 +1,18 @@
 ---
-title: Comment créer un modèle de données de formulaire ?
+title: Comment créer un modèle de données de formulaire (FDM) ?
 description: Découvrez comment créer un modèle de données de formulaire (FDM) et envoyer ou récupérer des données à une source de données à l’aide d’un formulaire adaptatif ou d’un processus d’AEM.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 82%
+source-wordcount: '1543'
+ht-degree: 58%
 
 ---
 
-# Créer un modèle de données de formulaire {#create-form-data-model}
+# Créer un modèle de données de formulaire (FDM) {#create-form-data-model}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -22,27 +22,27 @@ ht-degree: 82%
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
-L’intégration de données [!DNL Experience Manager Forms] fournit une interface utilisateur intuitive permettant de créer et d’utiliser des modèles de données de formulaire. Un modèle de données de formulaire se base sur les sources de données pour l’échange des données ; toutefois, vous pouvez créer un modèle de données de formulaire avec ou sans source de données. Il existe deux approches de création d’un modèle de données de formulaire, selon que vous avez ou non configuré les sources de données :
+L’intégration de données [!DNL Experience Manager Forms] fournit une interface utilisateur intuitive permettant de créer et d’utiliser des modèles de données de formulaire. Un modèle de données de formulaire (FDM) repose sur des sources de données pour l’exchange de données. Cependant, vous pouvez créer un modèle de données de formulaire (FDM) avec ou sans source de données. Il existe deux approches de création d’un modèle de données de formulaire, selon que vous avez ou non configuré les sources de données :
 
-* **Utilisation de sources de données préconfigurées** : si vous avez configuré les sources de données comme décrit dans [Configurer les sources de données](configure-data-sources.md), vous pouvez les sélectionner lors de la création d’un modèle de données de formulaire. Il met à disposition tous les objets, propriétés et services de modèle de données issus des sources de données sélectionnées dans le modèle de données de formulaire.
+* **Utilisation de sources de données préconfigurées**: si vous avez configuré des sources de données comme décrit dans la section [Configuration des sources de données](configure-data-sources.md), vous pouvez les sélectionner lors de la création d’un modèle de données de formulaire (FDM). Elle apporte tous les objets, propriétés et services de modèle de données des sources de données sélectionnées, disponibles pour utilisation dans le modèle de données de formulaire (FDM).
 
-* **Sans sources de données** : si vous n’avez pas configuré de sources de données pour votre modèle de données de formulaire, vous pouvez tout de même le créer sans sources de données. Vous pouvez utiliser le modèle de données de formulaire pour créer des formulaires adaptatifs <!--and interactive communication--> et les tester à l’aide des exemples de données. Lorsque des sources de données sont disponibles, vous pouvez lier le modèle de données de formulaire à des sources de données, ce qui se reflète automatiquement dans les formulaires adaptatifs associés<!--and interactive communications-->.
+* **Sans sources de données**: si vous n’avez pas configuré de sources de données pour votre modèle de données de formulaire (FDM), vous pouvez toujours le créer sans sources de données. Vous pouvez utiliser le modèle de données de formulaire (FDM) pour créer un Forms adaptatif. <!--and interactive communication--> et les tester à l’aide de données d’exemple. Lorsque des sources de données sont disponibles, vous pouvez lier le modèle de données de formulaire (FDM) aux sources de données, qui se reflètent automatiquement dans le Forms adaptatif associé.<!--and interactive communications-->.
 
 >[!NOTE]
 >
->Vous devez être membre des deux groupes **fdm-author** et **forms-user** pour pouvoir créer et utiliser le modèle de données de formulaire. Contactez votre administrateur [!DNL Experience Manager] pour devenir membre des groupes.
+>Vous devez être membre des deux **fdm-author** et **forms-user** groupes pour pouvoir créer et utiliser le modèle de données de formulaire (FDM). Contactez votre administrateur [!DNL Experience Manager] pour devenir membre des groupes.
 
-## Création d’un modèle de données de formulaire {#data-sources}
+## Créer un modèle de données de formulaire (FDM) {#data-sources}
 
-Assurez-vous d’avoir configuré les sources de données que vous avez l’intention d’utiliser dans le modèle de formulaire de données, comme décrit dans [Configurer les sources de données](configure-data-sources.md). Pour créer un modèle de données de formulaire basé sur des sources de données configurées, procédez comme suit :
+Assurez-vous d’avoir configuré les sources de données que vous prévoyez d’utiliser dans le modèle de données de formulaire (FDM) comme décrit dans la section [Configuration des sources de données](configure-data-sources.md). Procédez comme suit pour créer un modèle de données de formulaire (FDM) basé sur des sources de données configurées :
 
 1. Dans l’instance d’auteur [!DNL Experience Manager], accédez à **[!UICONTROL Formulaires > Intégrations de données]**.
 1. Sélectionner **[!UICONTROL Créer > Modèle de données de formulaire]**.
 1. Dans la boîte de dialogue Créer un modèle de données de formulaire :
 
-   * Spécifiez un nom pour le modèle de données de formulaire.
-   * (**Facultatif**) Spécifiez le titre, la description et les balises du modèle de données de formulaire.
-   * (**Facultatif et applicable uniquement si les sources de données sont configurées**) Sélectionnez l’icône en forme de coche en regard de l’option **[!UICONTROL Configuration des sources de données]** et sélectionnez le noeud de configuration où résident les services cloud pour les sources de données que vous souhaitez utiliser. Cela limite la liste des sources de données disponibles pour sélection sur la page suivante à celles disponibles dans le nœud de configuration sélectionné. Cependant, toutes les sources de données des profils d’utilisateurs [!DNL Experience Manager] sont répertoriées par défaut. Si vous ne sélectionnez pas de nœud de configuration, les sources de données de tous les nœuds de configuration sont répertoriées.
+   * Spécifiez un nom pour le modèle de données de formulaire (FDM).
+   * (**Facultatif**) Spécifiez le titre, la description et les balises du modèle de données de formulaire (FDM).
+   * (**Facultatif et applicable uniquement si les sources de données sont configurées**) Sélectionnez l’icône en forme de coche en regard du champ **[!UICONTROL Configuration des sources de données]** et sélectionnez le nœud de configuration où résident les services cloud pour les sources de données que vous souhaitez utiliser. Cela limite la liste des sources de données disponibles pour sélection sur la page suivante à celles disponibles dans le nœud de configuration sélectionné. Cependant, toutes les sources de données des profils d’utilisateurs [!DNL Experience Manager] sont répertoriées par défaut. Si vous ne sélectionnez pas de nœud de configuration, les sources de données de tous les nœuds de configuration sont répertoriées.
 
 1. Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -61,45 +61,45 @@ Assurez-vous d’avoir configuré les sources de données que vous avez l’inte
 
    D. **[!UICONTROL Services]** Zone de contenu dans laquelle les opérations ou services de source de données ajoutés s’affichent.
 
-   E. **[!UICONTROL Barre d’outils]** Outils pour l’utilisation d’un modèle de données de formulaire. La barre d’outils affiche plus d’options en fonction de l’objet sélectionné dans le modèle de données de formulaire.
+   E. **[!UICONTROL Barre d’outils]** Outils pour travailler avec le modèle de données de formulaire (FDM) . La barre d’outils affiche d’autres options en fonction de l’objet sélectionné dans le modèle de données de formulaire (FDM).
 
    F. **[!UICONTROL Ajouter la sélection]** Ajoute les objets et les services de modèle de données sélectionnés au modèle de données de formulaire.
 
-Pour plus d’informations sur l’éditeur de modèle de données de formulaire et sur son utilisation en vue de la modification et de la configuration du modèle de données de formulaire, voir [Utilisation d’un modèle de données de formulaire](work-with-form-data-model.md).
+Pour plus d’informations sur l’éditeur de modèle de données de formulaire et sur la manière dont vous pouvez l’utiliser pour modifier et configurer le modèle de données de formulaire (FDM), voir [Utilisation du modèle de données de formulaire](work-with-form-data-model.md).
 
 ## Mise à jour des sources de données {#update}
 
-Pour ajouter ou mettre à jour des sources de données dans un modèle de données de formulaire existant, procédez comme suit.
+Procédez comme suit pour ajouter ou mettre à jour des sources de données à un modèle de données de formulaire (FDM) existant.
 
-1. Accédez à **[!UICONTROL Forms > Intégrations de données]**, sélectionnez le modèle de données de formulaire dans lequel vous souhaitez ajouter ou mettre à jour des sources de données, puis sélectionnez **[!UICONTROL Propriétés]**.
+1. Accédez à **[!UICONTROL Forms > Intégrations de données]**, sélectionnez le modèle de données de formulaire (FDM) dans lequel vous souhaitez ajouter ou mettre à jour des sources de données, puis sélectionnez **[!UICONTROL Propriétés]**.
 1. Dans les propriétés du modèle de données de formulaire, accédez à l’onglet **[!UICONTROL Mettre à jour la source]**.
 
    Dans l’onglet **[!UICONTROL Mettre à jour la source]** :
 
-   * Sélectionnez l’icône de navigation dans le **[!UICONTROL Configuration tenant compte du contexte]** et sélectionnez un noeud de configuration où réside la configuration cloud pour la source de données que vous souhaitez ajouter. Si vous ne sélectionnez pas de noeud, les configurations cloud résidant uniquement dans le `global` sont répertoriés lorsque vous sélectionnez **[!UICONTROL Ajouter des sources]**.
+   * Sélectionnez l’icône de navigation dans le champ **[!UICONTROL Configuration tenant compte du contexte]** et sélectionnez un nœud de configuration où se trouve la configuration cloud de la source de données que vous voulez utiliser. Si vous ne sélectionnez pas de nœud, les configurations cloud qui se trouvent uniquement dans le nœud `global` sont répertoriées lorsque vous sélectionnez **[!UICONTROL Ajouter des sources]**.
 
-   * Pour ajouter une nouvelle source de données, sélectionnez **[!UICONTROL Ajouter des sources]** et sélectionnez les sources de données à ajouter au modèle de données de formulaire. Toutes les sources de données configurées en `global` et le nœud de configuration sélectionné, le cas échéant, s’affichent.
+   * Pour ajouter une nouvelle source de données, sélectionnez **[!UICONTROL Ajouter des sources]** et sélectionnez les sources de données à ajouter au modèle de données de formulaire (FDM). Toutes les sources de données configurées en `global` et le nœud de configuration sélectionné, le cas échéant, s’affichent.
 
-   * Pour remplacer une source de données existante par une autre source de données du même type, sélectionnez l’option **[!UICONTROL Modifier]** pour la source de données et sélectionnez dans la liste des sources de données disponibles.
-   * Pour supprimer une source de données existante, sélectionnez l’option **[!UICONTROL Supprimer]** pour la source de données. L’icône Supprimer est désactivée si un objet de modèle de données dans la source de données est ajouté au modèle de données de formulaire.
+   * Pour remplacer une source de données existante par une autre source de données du même type, sélectionnez l’icône **[!UICONTROL Modifier]** de la source de données et sélectionnez-en une dans la liste des sources de données disponibles.
+   * Pour supprimer une source de données existante, sélectionnez l’icône **[!UICONTROL Supprimer]** de la source de données. L’icône Supprimer est désactivée si un objet de modèle de données de la source de données est ajouté au modèle de données de formulaire (FDM).
 
      ![fdm-properties](assets/fdm-properties.png)
 
-1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour enregistrer les mises à jour.
+1. Sélectionnez **[!UICONTROL Enregistrer et fermer]** pour enregistrer les mises à jour.
 
 >[!NOTE]
 >
->Lorsque vous ajoutez de nouvelles sources de données ou que vous mettez à jour les sources de données existantes dans un modèle de données de formulaire, assurez-vous de mettre à jour les références de liaison, le cas échéant, dans les formulaires adaptatifs<!--and interactive communications--> qui utilisent le modèle de données de formulaire mis à jour.
+>Une fois que vous avez ajouté de nouvelles sources de données ou mis à jour des sources de données existantes dans un modèle de données de formulaire (FDM), veillez à mettre à jour les références de liaison, le cas échéant, dans Forms adaptatif.<!--and interactive communications--> qui utilisent le modèle de données de formulaire mis à jour (FDM).
 
 ## Configurations basées sur le contexte pour des modes d’exécution spécifiques {#runmode-specific-context-aware-config}
 
-Le [!UICONTROL Modèle de données de formulaire] utilise des [configurations basées sur le contexte Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=fr) pour prendre en charge différents paramètres de source de données afin de se connecter à des sources de données pour différents modes d’exécution d’[!DNL Experience Manager].
+[!UICONTROL Modèle de données de formulaire (FDM)] utilitaires [Configurations basées sur le contexte Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=fr) pour prendre en charge différents paramètres de source de données afin de se connecter à des sources de données pour différents [!DNL Experience Manager] Modes d’exécution.
 
-Lorsque le [!UICONTROL modèle de données de formulaire] utilise les configurations cloud pour stocker les paramètres qui, lorsqu’ils sont archivés et déployés par le biais du contrôle de code source (référentiel GIT Cloud-Manager), créent une configuration cloud avec les mêmes paramètres pour tous les modes d’exécution (développement, évaluation et production). Cependant, dans les cas d’utilisation où des jeux de données différents sont nécessaires pour les environnements de test et de production, nous utilisons des paramètres de source de données (par exemple, l’URL de la source de données) pour différents [!DNL Experience Manager] Modes d’exécution.
+When [!UICONTROL Modèle de données de formulaire (FDM)] utilise les configurations cloud pour stocker les paramètres qui, lorsqu’ils sont archivés et déployés par le biais du contrôle de code source (référentiel GIT Cloud-Manager), créent une configuration cloud avec les mêmes paramètres pour tous les modes d’exécution (développement, évaluation et production). Cependant, dans les cas d’utilisation où des jeux de données différents sont nécessaires pour les environnements de test et de production, nous utilisons des paramètres de source de données (par exemple, l’URL de la source de données) pour différents [!DNL Experience Manager] Modes d’exécution.
 
-Pour ce faire, vous devez créer une configuration OSGi contenant des paires paramètres-valeur de source de données. Cette option remplace la même paire de la configuration cloud du [!UICONTROL modèle de données de formulaire] au moment de l’exécution. Comme les configurations OSGi prennent en charge ces modes d’exécution par défaut, vous pouvez remplacer un paramètre de source de données par des valeurs différentes en fonction du mode d’exécution.
+Pour ce faire, vous devez créer une configuration OSGi contenant des paires paramètres-valeur de source de données. Cette option remplace la même paire de [!UICONTROL Modèle de données de formulaire (FDM)] configuration du cloud au moment de l’exécution. Comme les configurations OSGi prennent en charge ces modes d’exécution par défaut, vous pouvez remplacer un paramètre de source de données par des valeurs différentes en fonction du mode d’exécution.
 
-Pour activer les configurations cloud spécifiques au déploiement dans le [!UICONTROL modèle de données de formulaire] :
+Pour activer les configurations cloud spécifiques au déploiement dans [!UICONTROL Modèle de données de formulaire (FDM)]:
 
 1. créez une configuration cloud sur l’instance de développement locale. Pour obtenir des instructions détaillées, consultez [Comment configurer des sources de données](/help/forms/configure-data-sources.md).
 
@@ -136,11 +136,11 @@ Lorsque ce projet d’archétype est déployé via un pipeline CM, le remplaceme
 
 ## Étapes suivantes {#next-steps}
 
-Vous disposez maintenant d’un modèle de données de formulaire auquel des sources de données ont été ajoutées. Vous pouvez ensuite modifier le modèle de données de formulaire pour ajouter et configurer des objets et services de modèle de données, ajouter des associations entre les objets de modèle de données, modifier les propriétés, ajouter des objets et propriétés de modèle de données personnalisés, générer des exemples de données, etc.
+Vous disposez désormais d’un modèle de données de formulaire (FDM) auquel sont ajoutées des sources de données. Ensuite, vous pouvez modifier le modèle de données de formulaire (FDM) pour ajouter et configurer des objets et des services de modèle de données, ajouter des associations entre des objets de modèle de données, modifier des propriétés, ajouter des objets et des propriétés de modèle de données personnalisés, générer des données d’exemple, etc.
 
 Pour plus d’informations, reportez-vous à la section [Utilisation d’un modèle de données de formulaire](work-with-form-data-model.md).
 
 
 >[!MORELIKETHIS]
 >
->* [Utilisation du modèle de données de formulaire](/help/forms/using-form-data-model.md)
+>* [Utilisation du modèle de données de formulaire (FDM)](/help/forms/using-form-data-model.md)

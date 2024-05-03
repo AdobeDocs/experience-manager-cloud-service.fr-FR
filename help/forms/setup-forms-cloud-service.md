@@ -4,10 +4,10 @@ description: Découvrez comment configurer et configurer une [!DNL AEM Forms] En
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 48%
+source-wordcount: '610'
+ht-degree: 45%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 48%
 
 * **Designer d’expérience utilisateur**: un concepteur d’expérience utilisateur (UX) définit le style, la mise en page et la marque pour [!DNL AEM Forms] ressources.
 
-* **praticien de Forms**: un spécialiste Forms crée des Forms adaptatifs, des thèmes et des modèles en fonction du style, de la mise en page et de la marque fournis par le concepteur de l’expérience utilisateur. Il crée et intègre également un formulaire adaptatif à un modèle de données de formulaire et des processus AEM. Il effectue généralement des tâches front-end.
+* **praticien de Forms**: un spécialiste Forms crée des Forms adaptatifs, des thèmes et des modèles en fonction du style, de la mise en page et de la marque fournis par le concepteur de l’expérience utilisateur. Le praticien crée et intègre également un formulaire adaptatif à un modèle de données de formulaire (FDM) et à des processus AEM. Il effectue généralement des tâches front-end.
 
 * **Développeur Forms**: un développeur Forms développe une solution de formulaires personnalisée. En règle générale, un développeur Forms s’engage dans le développement d’un serveur principal, comme le développement de composants personnalisés, les processus d’AEM, les services de préremplissage, etc.
 

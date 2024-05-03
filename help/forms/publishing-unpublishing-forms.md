@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 54%
+source-wordcount: '1328'
+ht-degree: 96%
 
 ---
 
@@ -26,24 +26,24 @@ ht-degree: 54%
 * Fragments de formulaire adaptatif
 * Thèmes
 * Modèles de formulaire <!-- (XFA forms) -->
-* Formulaires PDF
-* Document (documents de PDF plats)
-* Ensembles de formulaire
+* Formulaires PDF
+* Document (documents PDF plats)
+* Ensembles de formulaires
 * Ressource (images, schémas et feuilles de style)
 
-Au départ, toutes les ressources sont disponibles uniquement dans l’instance d’auteur. Un administrateur ou un auteur de formulaires peut publier tous les actifs, à l’exception des ressources.
+Au départ, tous les éléments sont uniquement disponibles dans l’instance de création. Une équipe d’administration ou un créateur ou une créatrice de formulaires peut publier tous les éléments, à l’exception des ressources.
 
-Lorsque vous sélectionnez un formulaire et que vous le publiez, ses actifs et ressources associés sont également publiés. Toutefois, les ressources dépendantes ne sont pas publiées. Dans ce contexte, les ressources et les ressources connexes sont des ressources qu’une ressource publiée utilise ou auxquelles elle fait référence. Les ressources dépendantes sont des ressources qui font référence à une ressource publiée.
+Lorsque vous sélectionnez un formulaire et que vous le publiez, ses éléments et ressources associés sont également publiés. Toutefois, les éléments dépendants ne sont pas publiés. Dans ce contexte, les actifs et ressources connexes sont des actifs qu’un actif publié utilise ou auxquels il fait référence. Les actifs dépendants sont des actifs qui font référence à un actif publié.
 
-Votre Forms adaptatif peut utiliser certaines configurations, paramètres et personnalisations qui ne sont pas publiés automatiquement. Il est recommandé de publier ou d’activer ces ressources avant de publier un formulaire adaptatif.
+Vos formulaires adaptatifs peuvent utiliser certaines configurations ou des paramètres et personnalisations qui ne sont pas publiés automatiquement. Il est recommandé de publier ou d’activer ces ressources avant de publier un formulaire adaptatif.
 
 * Modèles de formulaire adaptatif modifiable
-* Configurations de Cloud Service pour Adobe Sign, Typekit, reCAPTCHA et les modèles de formulaire de données
-* Les autres configurations de services Cloud ne sont activées que si l’utilisateur dispose d’autorisations d’administrateur.
-* Personnalisations. Il s’agit notamment, mais sans s’y limiter :
+* Configurations de Cloud Service pour Adobe Sign, Typekit, reCAPTCHA et le modèle de données de formulaire (FDM)
+* Les autres configurations de service cloud ne sont activées que si l’utilisateur ou l’utilisatrice dispose d’autorisations d’administration.
+* Personnalisations. Il s’agit notamment des éléments suivants, mais sans s’y limiter :
 
    * Dispositions personnalisées
-   * Aspects personnalisés
+   * Apparences personnalisées
    * Fichier CSS : utilisé en tant qu’entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
    * Catégorie de bibliothèque cliente : utilisée en tant qu’entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
    * Toute autre bibliothèque cliente pouvant être incluse dans le modèle de formulaire adaptatif.
@@ -62,19 +62,19 @@ Un élément peut présenter les états suivants :
 1. Connectez-vous au serveur [!DNL AEM Forms].
 1. Utilisez l’une des méthodes suivantes pour sélectionner et publier un élément.
 
-   1. Déplacez le pointeur sur une ressource et sélectionnez **[!UICONTROL Publier]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. Effectuez l’une des opérations suivantes, puis sélectionnez Publier :
+   1. Déplacez le pointeur sur un actif et sélectionnez **[!UICONTROL Publier]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. Effectuez l’une des actions suivantes, puis sélectionnez Publier :
 
-      * Si le mode Carte est actif, sélectionnez **[!UICONTROL Entrer la sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis sélectionnez la ressource. L’élément est sélectionné.
-      * Si vous êtes en mode Liste, cochez la case d’une ressource. L’élément est sélectionné.
-      * Sélectionnez une ressource pour afficher ses détails.
+      * Si la vue Carte est active, sélectionnez **[!UICONTROL Passer en mode de sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis choisissez l’élément. L’élément est sélectionné.
+      * Si vous êtes en mode Liste, cochez la case d’un élément. L’élément est sélectionné.
+      * Sélectionnez un élément pour en afficher les détails.
       * Affichez les propriétés d’un élément en appuyant sur Afficher les propriétés ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
       >Ne sélectionnez pas plusieurs éléments. La publication simultanée de plusieurs éléments n’est pas prise en charge.
 
-1. Au lancement de la procédure de publication, une boîte de dialogue de confirmation s’ouvre. Elle répertorie l’ensemble des éléments et des ressources connexes. Dans la boîte de dialogue contenant les ressources connexes, sélectionnez **[!UICONTROL Publier]**. L’élément est publié et la boîte de dialogue Publication réussie apparaît.
+1. Au lancement de la procédure de publication, une boîte de dialogue de confirmation s’ouvre. Elle répertorie l’ensemble des éléments et des ressources connexes. Dans la boîte de dialogue contenant les éléments connexes, sélectionnez **[!UICONTROL Publier]**. L’élément est publié et la boîte de dialogue Publication réussie apparaît.
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ Un élément peut présenter les états suivants :
    >
    >Pour Forms Manager, si l’utilisateur n’est pas autorisé à publier les éléments répertoriés, l’action Publication est désactivée. Un élément qui nécessite des autorisations supplémentaires est affiché en rouge.
 
-   Une fois l’élément publié, ses propriétés de métadonnées sont copiées dans l’instance Publication et son état passe à Publié. L’état des ressources dépendantes qui sont publiées est également modifié en Publié.
+   Une fois l’élément publié, ses propriétés de métadonnées sont copiées dans l’instance Publication et son état passe à Publié. Le statut des éléments dépendants qui sont publiés passe également à Publié.
 
    <!-- After publishing an asset, you can use the Forms Portal to display all the assets on a web page. For more information, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md).-->
 
@@ -99,9 +99,9 @@ Un élément peut présenter les états suivants :
 Procédez comme suit pour publier tous les éléments de Correspondence Management sur un serveur :
 
 1. Connectez-vous au serveur [!DNL AEM Forms].
-1. Sélectionner **Adobe Experience Manager** dans la barre de navigation globale.
-1. Sélectionner ![outils](assets/tools.png), puis sélectionnez **Forms**.
-1. Sélectionner **Publication des actifs de Correspondence Management**.
+1. Sélectionnez **Adobe Experience Manager** dans la barre de navigation générale.
+1. Sélectionnez les ![outils](assets/tools.png), puis sélectionnez **Formulaires**.
+1. Sélectionnez **Publier les éléments de Correspondence Management**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -109,13 +109,13 @@ Procédez comme suit pour publier tous les éléments de Correspondence Manageme
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. Sélectionner **Publier** et, dans le message de confirmation, sélectionnez **OK**.
+1. Sélectionnez **Publier**, puis, dans le message de confirmation, cliquez sur **OK**.
 
-   A la fin du traitement par lot, vous pouvez afficher les détails de la dernière exécution. Cela inclut des informations telles que la connexion de l’administrateur et si le lot a réussi ou échoué.
+   A la fin du traitement par lot, vous pouvez afficher les détails de la dernière exécution. Cela inclut des informations telles que les identifiants de l’administrateur ou de l’administratrice et la mention de la réussite ou de l’échec de l’exécution par lots.
 
    >[!NOTE]
    >
-   >Le processus de publication ne peut pas être annulé une fois lancé. En outre, pendant que le processus de publication est en cours, ne procédez à aucune création, suppression, modification ou publication d’éléments, ou ne lancez aucune opération d’exportation d’éléments de Correspondence Management.
+   >Le processus de publication ne peut plus être annulé une fois qu’il a été lancé. En outre, pendant que le processus de publication est en cours, ne procédez à aucune création, suppression, modification ou publication d’éléments, ou ne lancez aucune opération d’exportation d’éléments de Correspondence Management.
 
 ## Automatisation de la publication ou de la dépublication de formulaires et documents {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
@@ -123,42 +123,42 @@ Procédez comme suit pour publier tous les éléments de Correspondence Manageme
 
 Procédez comme suit pour planifier la date et l’heure de publication et de dépublication des éléments de formulaires et documents :
 
-1. Sélectionnez une ressource et sélectionnez **[!UICONTROL Afficher les propriétés]**. La page Propriétés des métadonnées s’ouvre.
-1. Sur la page Propriétés des métadonnées, sélectionnez **[!UICONTROL Avancé]**, puis sélectionnez **[!UICONTROL Modifier]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Sélectionnez un élément et cliquez sur **[!UICONTROL Afficher les propriétés]**. La page Propriétés des métadonnées s’ouvre.
+1. Dans la page Propriétés des métadonnées, sélectionnez **[!UICONTROL Avancé]**, puis **[!UICONTROL Modifier]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. Sélectionnez la date et l’heure dans les champs **[!UICONTROL Heure de début de publication]** et **[!UICONTROL Heure de fin de publication]**.\
-   Sélectionner **[!UICONTROL Terminé]** ![aem6forms_check](assets/aem6forms_check.png).
+   Sélectionnez **[!UICONTROL Terminé]** ![aem6forms_check](assets/aem6forms_check.png).
 
-## Dépublication d’un élément {#unpublish-an-asset}
+## Annulation de la publication d’un élément {#unpublish-an-asset}
 
-1. Sélectionnez une ressource publiée, puis sélectionnez **[!UICONTROL Dépublier]** ![dépublier](assets/unpublish.png).
-1. Utilisez l’une des actions suivantes pour sélectionner et dépublier un élément.
+1. Sélectionnez un élément publié, puis **[!UICONTROL Annuler la publication]**![unpublish](assets/unpublish.png).
+1. Utilisez l’une des actions suivantes pour sélectionner et annuler la publication d’un élément.
 
-   1. Déplacez le pointeur sur une ressource et sélectionnez **[!UICONTROL Dépublier]** ![dépublier](assets/unpublish.png).
-   1. Effectuez l’une des opérations suivantes, puis sélectionnez Annuler la publication :
+   1. Positionnez le pointeur sur une ressource puis sélectionnez **[!UICONTROL Annuler la publication]** ![unpublish](assets/unpublish.png).
+   1. Effectuez l’une des actions suivantes, puis sélectionnez Annuler la publication :
 
-      * Si le mode Carte est actif, sélectionnez **[!UICONTROL Entrer la sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis sélectionnez la ressource. L’élément est sélectionné.
+      * Si la vue Carte est active, sélectionnez **[!UICONTROL Passer en mode de sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis choisissez l’élément. L’élément est sélectionné.
 
-      * Si vous êtes en mode Liste, passez la souris sur une ressource et sélectionnez ![selectassetcheckmark](assets/selectassetcheckmark.png) . L’élément est sélectionné.
+      * Si la vue Liste est active, pointez sur un élément et sélectionnez ![selectassetcheckmark](assets/selectassetcheckmark.png). L’élément est sélectionné.
 
-      * Sélectionnez une ressource pour afficher ses détails.
+      * Sélectionnez un élément pour en afficher les détails.
       * Affichez les propriétés d’un élément en appuyant sur Afficher les propriétés ![viewproperties](assets/viewproperties.png).
 
-1. Au lancement de la procédure de dépublication, une boîte de dialogue de confirmation s’ouvre. Sélectionner **[!UICONTROL Dépublier]**.
+1. Au lancement de la procédure de dépublication, une boîte de dialogue de confirmation s’ouvre. Sélectionner **[!UICONTROL Annuler la publication]**.
 
    >[!NOTE]
    >
-   >La dépublication affecte uniquement l’élément sélectionné ; les éléments enfants et référencés ne sont pas concernés.
+   >L’annulation de la publication affecte uniquement l’élément sélectionné ; les éléments enfants et référencés ne sont pas concernés.
 
 ## Rétablissement de la version précédemment publiée d’une ressource ou d’une lettre {#revert-an-asset-or-letter-to-the-previously-published-version}
 
-Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifiée, une version de la ressource ou de la lettre est créée. Vous pouvez rétablir une ressource ou une lettre sur une version précédemment publiée. Vous devrez peut-être le faire si un problème se produit avec la version actuelle de la ressource ou du document.
+Chaque fois que vous publiez un élément ou une lettre après modification, une version de l’élément ou de la lettre est créée. Vous pouvez rétablir la version précédemment publiée d’un élément ou d’une lettre. Cette opération peut être utile si un problème se produit avec la version actuelle de l’élément ou de la lettre.
 
 >[!NOTE]
 >
->Ne pas rétablir l’état de publication d’une lettre si une ressource dépendante utilisée dans cette lettre publiée est supprimée du système.
+>Ne rétablissez pas le dernier état de publication d’une lettre si un élément dépendant utilisé dans cette lettre publiée a été supprimé du système.
 
-1. Sélectionnez une ressource et sélectionnez **[!UICONTROL Revenir à la version précédemment publiée]** ![inverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. Avant que l’élément ne soit rétabli, une boîte de dialogue de confirmation s’affiche. Sélectionner **[!UICONTROL Rétablir]**.
+1. Sélectionnez un élément, puis **[!UICONTROL Restaurer la version publiée précédemment]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Avant que l’élément ne soit rétabli, une boîte de dialogue de confirmation s’affiche. Sélectionnez **[!UICONTROL Rétablir]**.
 
    La version précédemment publiée de l’élément ou de la lettre est rétablie.
 
@@ -166,9 +166,9 @@ Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifi
 
 >[!NOTE]
 >
->La suppression d’une ressource la supprime de l’instance de publication. La suppression d’une ressource supprime également son historique des versions, à l’exception de la version de base.
+>La suppression d’un élément le supprime de l’instance de publication. La suppression d’un élément supprime également son historique des versions, sauf la version de base.
 
-1. Sélectionnez une ressource et sélectionnez **[!UICONTROL Supprimer]** ![delete](assets/delete.png).
+1. Sélectionnez un élément, puis **[!UICONTROL Supprimer]** ![delete](assets/delete.png).
 
    >[!NOTE]
    >
@@ -178,14 +178,14 @@ Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifi
 
    >[!NOTE]
    >
-   >Seul l’élément sélectionné est supprimé et les éléments dépendants ne sont pas supprimés. Pour vérifier les références d’une ressource, sélectionnez ![références](assets/references.png) puis sélectionnez une ressource.
+   >Seul l’élément sélectionné est supprimé. Les éléments dépendants ne le sont pas. Pour vérifier les références d’un élément, sélectionnez ![références](assets/references.png), puis un élément.
    >
    >
-   >Si la ressource que vous tentez de supprimer est une ressource enfant d’une autre ressource, elle n’est pas supprimée. Pour supprimer une telle ressource, supprimez les références de cette ressource des autres ressources, puis réessayez.
+   >Si l’élément que vous essayez de supprimer est un élément enfant d’un autre élément, il n’est pas supprimé. Pour supprimer ce type d’élément, supprimez les références de cet élément des autres éléments et réessayez.
 
 ## Formulaires adaptatifs protégés {#protected-adaptive-forms}
 
-Vous pouvez activer l’authentification pour les formulaires auxquels les utilisateurs sélectionnés doivent accéder. Lorsque vous activez l’authentification pour vos formulaires, les utilisateurs voient un écran de connexion avant d’y accéder. Seuls les utilisateurs disposant d’informations d’identification autorisées peuvent accéder aux formulaires.
+Vous pouvez activer une authentification pour les formulaires auxquels vous souhaitez que des personnes sélectionnées aient accès. Lorsque vous activez une authentification pour vos formulaires, les personnes voient un écran de connexion avant d’y accéder. Seules les personnes dotées d’informations d’identification autorisées peuvent accéder aux formulaires.
 
 Pour activer une authentification pour vos formulaires :
 

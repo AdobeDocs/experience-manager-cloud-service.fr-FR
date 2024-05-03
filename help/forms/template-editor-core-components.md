@@ -4,14 +4,14 @@ description: Créez des modèles de formulaire adaptatif basés sur le composant
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 56%
+source-wordcount: '1962'
+ht-degree: 58%
 
 ---
 
-# Création d’un modèle de formulaire adaptatif basé sur les composants principaux {#adaptive-form-templates}
+# Créer un formulaire adaptatif basé sur les composants principaux {#adaptive-form-templates}
 
 Lorsque vous concevez un formulaire, vous ajoutez des champs et des composants pour définir la structure, le contenu et les actions de formulaire dans l’éditeur. Vous ajoutez des champs et des composants dans le `guideRootPanel` du conteneur de formulaires. Avec l’éditeur de modèles, vous pouvez créer un modèle contenant la structure de base et le contenu initial que les auteurs et autrices peuvent utiliser pour créer des formulaires.
 
@@ -53,7 +53,7 @@ Après avoir créé un dossier, ouvrez-le et suivez les étapes ci-après pour c
 1. Dans le **[!UICONTROL Détails du modèle]** , fournissez une **Titre du modèle** et sélectionnez **[!UICONTROL Créer]**.
 Vous pouvez également fournir une description.
 
-1. Sélectionner **[!UICONTROL Terminé]** pour revenir à la console, ou sélectionnez **[!UICONTROL Ouvrir]** pour ouvrir le modèle dans l’éditeur.
+1. Sélectionnez **[!UICONTROL Terminé]** pour revenir à la console ou **[!UICONTROL Ouvrir]** pour ouvrir le modèle dans l’éditeur.
 
 ## Interface utilisateur de l’éditeur de modèles {#template-editor-ui}
 
@@ -146,7 +146,7 @@ Lorsque vous créez un modèle, il est ajouté en tant que brouillon. Activez le
 
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Modèles]**, puis ouvrez le dossier dans lequel vous avez créé le modèle.
 Le modèle que vous avez créé est marqué comme Brouillon.
-1. Sélectionnez le modèle et choisissez **[!UICONTROL Activer]** dans la barre d’outils.
+1. Sélectionnez le modèle, puis cliquez sur **[!UICONTROL Activer]** dans la barre d’outils.
 Lorsque vous créez un formulaire adaptatif, vous pouvez voir le modèle affiché lorsque vous êtes invité à choisir un modèle.
 
 ## Importation ou exportation d’un modèle {#importing-or-exporting-a-template}
@@ -164,7 +164,7 @@ Vous pouvez associer un [!UICONTROL Schéma de modèle de données de formulaire
 1. Sélectionner **[!UICONTROL Explorateur de contenu]** situé sur le côté gauche.
 1. Accédez au conteneur de formulaires **[!UICONTROL Paramètre]**.
 1. Sélectionnez **[!UICONTROL Modèle de données]**.
-1. Choisissez votre modèle de données de formulaire via **[!UICONTROL Sélectionner un modèle de données de formulaire]** et enregistrez la configuration.
+1. Choisissez votre modèle de données de formulaire (FDM) via **[!UICONTROL Sélectionner un modèle de données de formulaire]** et enregistrez la configuration.
 
 ![Modèle de données d’association avec Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 
@@ -228,7 +228,7 @@ Lorsque vous ajoutez au moins un groupe de propriétés personnalisé à l’aid
 1. Sélectionnez le composant pour lequel les propriétés personnalisées ont été définies dans l’éditeur de modèles, puis sélectionnez ![settings_icon](assets/configure-icon.svg) pour ouvrir la boîte de dialogue de modification du composant.
 1. Sélectionnez l’onglet **[!UICONTROL Avancé]**.
 1. Sélectionnez le nom du groupe de propriétés personnalisé dans **[!UICONTROL Sélection d’une propriété personnalisée]** menu déroulant. Tous les noms de groupes personnalisés définis sont automatiquement renseignés dans la liste déroulante.
-1. Sélectionner **[!UICONTROL Terminé]** pour enregistrer les propriétés.
+1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les propriétés.
 
 ![select custom property group name](/help/forms/assets/select-custom-properties-group-name.png)
 

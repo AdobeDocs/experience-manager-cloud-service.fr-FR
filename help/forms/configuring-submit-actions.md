@@ -3,10 +3,10 @@ title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3901'
-ht-degree: 83%
+source-wordcount: '3914'
+ht-degree: 85%
 
 ---
 
@@ -23,13 +23,13 @@ Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bout
 
 * [Envoyer vers le point d’entrée REST](#submit-to-rest-endpoint)
 * [Envoyer un e-mail](#send-email)
-* [Envoyer à l’aide du modèle de données de formulaire](#submit-using-form-data-model)
-* [Appeler un processus AEM](#invoke-an-aem-workflow)
+* [Envoyer en mode de données de formulaire (FDM) l](#submit-using-form-data-model)
+* [Appeler un workflow AEM](#invoke-an-aem-workflow)
 * [Envoyer à SharePoint](#submit-to-sharedrive)
 * [Envoyer à OneDrive](#submit-to-onedrive)
 * [Envoyer au stockage Blob Azure](#azure-blob-storage)
 * [Envoyer à Power Automate](#microsoft-power-automate)
-* [Envoyer à Workfront Fusion](#workfront-fusion)
+* [Envoyer vers Workfront Fusion](#workfront-fusion)
 
 Vous pouvez également [étendre les actions d’envoi par défaut](custom-submit-action-form.md) pour créer votre propre action d’envoi.
 
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Envoyer à l’aide du modèle de données de formulaire {#submit-using-form-data-model}
+## Envoyer à l’aide du modèle de données de formulaire (FDM) {#submit-using-form-data-model}
 
-L’action d’envoi **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** écrit les données de formulaire adaptatif envoyés pour l’objet de modèle de données spécifié dans un modèle de données de formulaire dans sa source de données. Lors de la configuration de l’action d’envoi, vous pouvez sélectionner un objet de modèle de données dont vous souhaitez écrire les données envoyées dans sa source de données.
+La variable **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** L’action Envoyer écrit les données de formulaire adaptatif envoyées pour l’objet de modèle de données spécifié dans un modèle de données de formulaire (FDM) dans sa source de données. Lors de la configuration de l’action d’envoi, vous pouvez sélectionner un objet de modèle de données dont vous souhaitez écrire les données envoyées dans sa source de données.
 
-En outre, vous pouvez envoyer une pièce jointe de formulaire à l’aide d’un modèle de données de formulaire et d’un document d’enregistrement vers la source de données. Pour plus d’informations sur le modèle de données de formulaire, voir [[!DNL AEM Forms] Intégration de données](data-integration.md).
+En outre, vous pouvez envoyer une pièce jointe de formulaire à l’aide d’un modèle de données de formulaire (FDM) et d’un document d’enregistrement (DoR) à la source de données. Pour plus d’informations sur le modèle de données de formulaire (FDM), voir [[!DNL AEM Forms] Intégration de données](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -172,7 +172,7 @@ Avant d’utiliser l’action Envoyer **[!UICONTROL Appeler un processus AEM]**,
 
 ## Envoyer à SharePoint {#submit-to-sharedrive}
 
-L’action d’envoi **[!UICONTROL Soumettre à SharePoint]** connecte un formulaire adaptatif à un stockage Microsoft® SharePoint. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
+L’action de soumission **[!UICONTROL Soumettre à SharePoint]** connecte un formulaire adaptatif à un stockage Microsoft® SharePoint. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
 
 Grâce à l’option Envoyer à SharePoint, vous pouvez :
 * [Connexion d’un formulaire adaptatif à la bibliothèque de documents SharePoint](#connect-af-sharepoint-doc-library)
@@ -236,26 +236,26 @@ Vous pouvez utiliser la configuration de la bibliothèque de documents SharePoin
 Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage de la bibliothèque de documents Microsoft® SharePoint spécifié.
 La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
 
-### Connexion d’un formulaire adaptatif à une liste SharePoint Microsoft® {#connect-af-sharepoint-list}
+### Connecter un formulaire adaptatif à une liste Microsoft® SharePoint {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-Pour utiliser la variable [!UICONTROL Envoyer à la liste SharePoint] Action d’envoi dans un formulaire adaptatif :
+Pour utiliser l’action de soumission [!UICONTROL Soumettre à la liste SharePoint] dans un formulaire adaptatif :
 
-1. [Création d’une configuration de liste SharePoint](#create-sharepoint-list-configuration): il connecte AEM Forms à votre stockage de liste Microsoft® SharePoint.
-1. [Utilisation de l’option Envoyer à l’aide d’un modèle de données de formulaire dans un formulaire adaptatif](#use-submit-using-fdm): il connecte votre formulaire adaptatif à Microsoft® SharePoint configuré.
+1. [Créer une configuration de liste SharePoint](#create-sharepoint-list-configuration) : connecte AEM Forms à votre stockage de listes Microsoft® SharePoint.
+1. [Utilisation de l’option Submit using Form Data Model (FDM) dans un formulaire adaptatif](#use-submit-using-fdm): il connecte votre formulaire adaptatif à Microsoft® SharePoint configuré.
 
-#### Création d’une configuration de liste SharePoint {#create-sharepoint-list-configuration}
+#### Créer une configuration de liste SharePoint {#create-sharepoint-list-configuration}
 
-Pour connecter AEM Forms à votre liste Microsoft® SharePoint, procédez comme suit :
+Pour connecter AEM Forms à votre liste Microsoft® SharePoint :
 
-1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Sélectionnez un **conteneur de configuration**. La configuration est stockée dans le conteneur de configuration sélectionné.
-1. Cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Liste SharePoint]** dans la liste déroulante. L’assistant de configuration SharePoint s’affiche.
+1. Cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Liste SharePoint]** dans la liste déroulante. L’assistant de configuration SharePoint s’affiche.
 1. Spécifiez le **[!UICONTROL titre]**, l’**[!UICONTROL ID client]**, le **[!UICONTROL secret client]** et l’**[!UICONTROL URL OAuth]**. Pour savoir comment récupérer l’ID client et le secret client pour l’URL OAuth, consultez la [documentation Microsoft®](https://learn.microsoft.com/fr-fr/graph/auth-register-app-v2).
    * Vous pouvez récupérer l’`Client ID` et le `Client Secret` de votre application sur le portail Microsoft® Azure.
    * Sur le portail Microsoft® Azure, ajoutez l’URI de redirection en tant que `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Remplacez `[author-instance]` par l’URL de votre instance de création.
-   * Ajout des autorisations d’API `offline_access` et `Sites.Manage.All` dans le **Graphique Microsoft®** pour fournir des autorisations de lecture/écriture. Ajouter `AllSites.Manage` dans la fonction **Sharepoint** pour interagir à distance avec les données SharePoint.
+   * Ajoutez les autorisations d’API `offline_access` et `Sites.Manage.All` dans l’onglet **Graphique Microsoft®** pour fournir des autorisations de lecture/écriture. Ajouter `AllSites.Manage` dans la fonction **Sharepoint** pour interagir à distance avec les données SharePoint.
    * Utilisez l’URL OAuth `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Remplacez `<tenant-id>` par le `tenant-id` de votre application depuis le portail Microsoft® Azure.
 
      >[!NOTE]
@@ -263,28 +263,28 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint, procédez comme 
      > Le champ du **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Active Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
 
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, le message `Connection Successful` s’affiche.
-1. Sélectionner **[!UICONTROL Site SharePoint]** et **[!UICONTROL Liste SharePoint]** dans la liste déroulante.
+1. Sélectionnez **[!UICONTROL Site SharePoint]** et **[!UICONTROL Liste SharePoint]** dans la liste déroulante.
 1. Sélectionner **[!UICONTROL Créer]** pour créer la configuration cloud pour Microsoft® SharePointList.
 
 
-#### Utilisation de l’option Envoyer à l’aide d’un modèle de données de formulaire dans un formulaire adaptatif {#use-submit-using-fdm}
+#### Utilisation de l’option Submit using Form Data Model (FDM) dans un formulaire adaptatif {#use-submit-using-fdm}
 
-Vous pouvez utiliser la configuration Liste SharePoint créée dans un formulaire adaptatif pour enregistrer des données ou générer un document d’enregistrement dans une liste SharePoint. Effectuez les étapes suivantes pour utiliser une configuration de stockage Liste SharePoint dans un formulaire adaptatif comme suit :
+Vous pouvez utiliser la configuration de liste SharePoint créée dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Suivez les étapes ci-dessous pour utiliser une configuration de stockage de listes SharePoint dans un formulaire adaptatif :
 
-1. [Création d’un modèle de données de formulaire à l’aide de la configuration de liste SharePoint Microsoft®](/help/forms/create-form-data-models.md)
-1. [Configuration du modèle de données de formulaire pour récupérer et envoyer des données](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Création d’un modèle de données de formulaire (FDM) à l’aide de la configuration de liste SharePoint Microsoft®](/help/forms/create-form-data-models.md)
+1. [Configuration du modèle de données de formulaire (FDM) pour récupérer et envoyer des données](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Créer un formulaire adaptatif](/help/forms/creating-adaptive-form.md)
-1. [Configuration de l’action Envoyer à l’aide d’un modèle de données de formulaire](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Configuration de l’action Envoyer à l’aide d’un modèle de données de formulaire (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
-Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage de liste Microsoft® SharePoint spécifié.
+Lorsque vous soumettez le formulaire, les données sont enregistrées dans le stockage de listes Microsoft® SharePoint que vous avez spécifié.
 
 >[!NOTE]
 >
-> Dans Microsoft® SharePoint List, les types de colonnes suivants ne sont pas pris en charge :
-> * colonne image
-> * colonne de métadonnées
-> * colonne person
-> * colonne de données externes
+> Dans la liste Microsoft® SharePoint, les types de colonnes suivants ne sont pas pris en charge :
+> * Colonne image
+> * Colonne métadonnées
+> * Colonne personne
+> * Colonne données externes
 
 
 ## Envoyer à OneDrive {#submit-to-onedrive}
@@ -405,7 +405,7 @@ L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un
 
 Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un flux Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) pour envoyer des données à un flux Power Automate.
 
-## Envoyer à Workfront Fusion {#workfront-fusion}
+## Envoyer vers Workfront Fusion {#workfront-fusion}
 
 Vous pouvez configurer un formulaire adaptatif pour envoyer des données à Workfront Fusion lors de l’envoi. Workfront Fusion permet l’automatisation des processus afin que l’utilisateur puisse se concentrer sur de nouvelles tâches plutôt que de répéter les mêmes tâches encore et encore. Il automatise les tâches simples et complexes, ce qui permet de gagner du temps et d’assurer une exécution cohérente des processus.
 
@@ -463,7 +463,7 @@ L’auteur peut configurer la bibliothèque personnalisée JavaScript pour chaqu
 
 Dans le cadre de la sécurité AEM et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 400.jsp, 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 400, 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication. Vous pouvez également créer des pages JSP pour d’autres codes d’erreur HTTP.
 
-Lorsque vous préremplissez un modèle de données de formulaire ou un formulaire adaptatif basé sur un schéma avec des données XML ou JSON conformes à un schéma, ce qui signifie que les données ne contiennent pas de balises `<afData>`, `<afBoundData>` et `</afUnboundData>`, les données des champs non liés du formulaire adaptatif sont perdues. Le schéma peut être un schéma XML, un schéma JSON ou un modèle de données de formulaire. Les champs non liés sont des champs de formulaire adaptatif sans la propriété `bindref`.
+Lorsque vous préremplissez un modèle de données de formulaire (FDM), ou un formulaire adaptatif basé sur un schéma avec une plainte de données XML ou JSON à un schéma qui ne contient pas de données. `<afData>`, `<afBoundData>`, et `</afUnboundData>` balises, les données des champs non liés du formulaire adaptatif sont perdues. Le schéma peut être un schéma XML, un schéma JSON ou un modèle de données de formulaire (FDM). Les champs non liés sont des champs de formulaire adaptatif sans la propriété `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

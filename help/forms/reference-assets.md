@@ -3,16 +3,16 @@ title: Comment obtenir des thèmes de référence et des modèles pour les formu
 description: Utilisez les thèmes de formulaire adaptatif de référence, les modèles et les modèles de données de formulaire fournis pour commencer rapidement.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 94%
+source-wordcount: '500'
+ht-degree: 90%
 
 ---
 
 # Ressources de référence pour Forms as a Cloud Service {#reference-themes}
 
-Vous pouvez obtenir les thèmes de référence, les modèles et les modèles de données de formulaire en installant le [Package de ressources de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Vous pourrez ainsi commencer rapidement et accélérer votre développement de formulaires adaptatifs. Utilisez le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr) pour déployer ce package dans votre environnement Forms as a Cloud Service.
+Vous pouvez obtenir les thèmes de référence, les modèles et le modèle de données de formulaire (FDM) en installant le [Package de ressources de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Vous pourrez ainsi commencer rapidement et accélérer votre développement de formulaires adaptatifs. Utilisez le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr) pour déployer ce package dans votre environnement Forms as a Cloud Service.
 Le package comprend les ressources de référence suivantes :
 
 ## Thèmes {#themes}

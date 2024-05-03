@@ -4,16 +4,17 @@ description: Découvrez comment migrer les PDF forms, les thèmes et autres ress
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 82%
+source-wordcount: '1195'
+ht-degree: 80%
 
 ---
 
 # Importation ou exportation d’actifs Forms adaptatifs et AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-Vous pouvez déplacer des formulaires adaptatifs et des ressources connexes telles que des thèmes de formulaire adaptatif, des modèles de données de formulaire, des modèles de formulaire adaptatif, des fragments de document et des formulaires PDF entre des instances [!DNL AEM Forms]. Vous pouvez importer et exporter des ressources dans un package CRX ou dans des formats de fichiers binaires.
+Vous pouvez déplacer le Forms adaptatif et les ressources connexes telles que les thèmes de formulaire adaptatif, le modèle de données de formulaire (FDM), les modèles de formulaire adaptatif, les fragments de document et les PDF forms entre [!DNL AEM Forms] instances. Vous pouvez importer et exporter des ressources dans un package CRX ou dans des formats de fichiers binaires.
 
 Lorsque vous exportez un formulaire adaptatif, les politiques de contenu et les modèles ne sont pas exportés. Utilisez le [gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#how-rolling-deployments-work) pour exporter de telles ressources.
 
@@ -24,9 +25,9 @@ Pour télécharger des formulaires ou des ressources connexes :
 1. Connectez-vous à l’instance [!DNL AEM Forms].
 1. Sélectionner **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > **[!UICONTROL Navigation]** ![boussole](assets/Smock_Compass_18_N.svg) icon > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
 1. Sélectionnez les ressources et sélectionnez l’option **[!UICONTROL Télécharger]** Icône
-1. Dans la ou les ressources de téléchargement, choisissez l’une des options suivantes, puis sélectionnez **[!UICONTROL Télécharger]**.
+1. Dans la/les ressources de téléchargement, choisissez l’une des options suivantes, puis sélectionnez **[!UICONTROL Télécharger]**.
 
-   * **Télécharger en tant que package CRX :** utilisez cette option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance [!DNL AEM Forms] vers une autre. Cette option permet de télécharger toutes les ressources et tous les dossiers sous la forme d’un package CRX, y compris les formulaires créés dans AEM (formulaires adaptatifs et fragments de formulaire adaptatif), les ensembles de formulaires, le modèle de données de formulaire, les modèles de formulaire, les documents PDF et les ressources référencées (schémas XSD et images).
+   * **Télécharger en tant que package CRX :** utilisez cette option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance [!DNL AEM Forms] vers une autre. Il télécharge tous les actifs et dossiers sous la forme d’un package CRX, y compris les formulaires créés dans AEM (Adaptive Forms et Fragments de formulaire adaptatif), les jeux de formulaires, le modèle de données de formulaire (FDM), les modèles de formulaire, les documents de PDF et les ressources référencées (fichiers XSD et images).
 L’avantage du téléchargement des ressources sous la forme d’un package est que les ressources référencées par les ressources sélectionnées sont également téléchargées. C’est le cas par exemple si vous disposez d’un formulaire adaptatif qui utilise un modèle de formulaire, le schéma XSD et une image. Lorsque vous sélectionnez ce formulaire adaptatif et que vous le téléchargez sous forme de package, le package téléchargé contient également le modèle de formulaire, le schéma XSD et l’image. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées.
 
    * **Téléchargement de ressources sous forme de fichiers binaires :** Utilisez l’option pour télécharger uniquement les modèles de formulaire (XDP), les PDF forms (PDF), le document (PDF) et les ressources (images, schémas, feuilles de style). Vous pouvez modifier ces ressources dans des applications externes. Il télécharge les ressources comportant des fichiers binaires, tels que des images, des fichiers PDF et d’autres formats pris en charge sous la forme d’un fichier .zip.
@@ -45,10 +46,10 @@ Pour charger un formulaire ou une ressource connexe :
 
 1. Connectez-vous à l’instance [!DNL AEM Forms].
 1. Sélectionner **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > **[!UICONTROL Navigation]** ![boussole](assets/Smock_Compass_18_N.svg) icon > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
-1. Sélectionner **[!UICONTROL Créer]** > **[!UICONTROL Téléchargement du fichier]**. Une boîte de dialogue s’affiche.
-1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner d’autres types de fichiers pris en charge. Sélectionner **[!UICONTROL Ouvrir]**. Le dossier ou le nom de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
+1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Charger un fichier]**. Une boîte de dialogue s’affiche.
+1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner d’autres types de fichiers pris en charge. Sélectionnez **[!UICONTROL Ouvrir]**. Le nom de dossier ou de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
 
-   Dans la boîte de dialogue, vérifiez les détails des ressources en cours de chargement, puis sélectionnez **[!UICONTROL Télécharger]**.
+   Dans la boîte de dialogue, vérifiez les détails des ressources à charger, puis sélectionnez **[!UICONTROL Charger]**.
 
    Si vous chargez une ressource de formulaires existants, la ressource est mise à jour.
 

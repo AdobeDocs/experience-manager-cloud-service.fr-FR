@@ -4,10 +4,10 @@ description: Découvrez comment créer une variable, définir une valeur pour la
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1928'
-ht-degree: 90%
+source-wordcount: '1930'
+ht-degree: 98%
 
 ---
 
@@ -48,8 +48,8 @@ Le type de données ArrayList permet de créer des collections de variables. Vou
 Pour créer une variable :
 
 1. Sur une instance AEM, accédez à Outils ![icône marteau](assets/hammer-icon.svg) > Processus > Modèles.
-1. Sélectionner **[!UICONTROL Créer]** et indiquez le titre et un nom facultatif pour le modèle de workflow. Sélectionnez le modèle, puis sélectionnez **[!UICONTROL Modifier]**.
-1. Sélectionnez l’icône de variables disponible dans le sidekick du modèle de workflow, puis sélectionnez **[!UICONTROL Ajouter une variable]**.
+1. Sélectionnez **[!UICONTROL Créer]**, puis définissez le titre, ainsi qu’un nom facultatif, pour le modèle de workflow. Sélectionnez le modèle, puis **[!UICONTROL Modifier]**.
+1. Sélectionnez l’icône des variables disponible dans le sidekick du modèle de workflow et sélectionnez **[!UICONTROL Ajouter une variable]**.
 
    ![Ajouter une variable](assets/variables_add_variable_new.png)
 
@@ -58,10 +58,10 @@ Pour créer une variable :
 
    * Type de données primitif : indiquez une valeur par défaut facultative pour la variable.
    * JSON ou XML : spécifiez un chemin d’accès facultatif au schéma JSON ou XML. Le système valide le chemin d’accès au schéma lors du mappage et du stockage des propriétés disponibles dans ce schéma sur une autre variable.
-   * Modèle de données de formulaire : indiquez un chemin d’accès au modèle de données de formulaire.
+   * Modèle de données de formulaire (FDM) : spécifiez un chemin d’accès au modèle de données de formulaire.
    * ArrayList : spécifiez un sous-type pour la collection.
 
-1. Spécifiez une description facultative de la variable et sélectionnez ![done_icon](assets/Smock_Checkmark_18_N.svg) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
+1. Spécifiez une description facultative pour la variable et sélectionnez ![done_icon](assets/Smock_Checkmark_18_N.svg) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
 
 Lorsque vous créez des variables, prenez en compte les bonnes pratiques suivantes :
 
@@ -94,11 +94,11 @@ Vous pouvez également mettre à jour des éléments spécifiques d’une variab
 
 Pour ajouter un mappage entre des variables :
 
-1. Sur la page de modification du workflow, sélectionnez l’icône Étapes disponible dans le sidekick du modèle de workflow.
-1. Faites glisser et déposez le **[!UICONTROL Définir la variable]** dans l’éditeur de workflow, sélectionnez l’étape, puis sélectionnez ![configure_icon](assets/Smock_Wrench_18_N.svg) (Configuration).
+1. Dans la page de modification du workflow, sélectionnez l’icône Étapes disponible dans le sidekick du modèle de workflow.
+1. Faites glisser l’étape **[!UICONTROL Définir une variable]** vers l’éditeur de workflow, sélectionnez l’étape, puis ![configure_icon](assets/Smock_Wrench_18_N.svg) (Configurer).
 1. Dans la boîte de dialogue Définir une variable, sélectionnez **[!UICONTROL Mappage]** > **[!UICONTROL Ajouter un mappage]**.
 1. Dans la section **Mapper une variable**, sélectionnez la variable dans laquelle stocker des données, sélectionnez le mode de mappage et spécifiez une valeur à stocker dans la variable. Les modes de mappage varient en fonction du type de variable.
-1. Mappez davantage de variables pour créer une expression significative. Sélectionner ![done_icon](assets/Smock_Checkmark_18_N.svg) pour enregistrer les modifications.
+1. Mappez davantage de variables pour créer une expression significative. Sélectionnez ![done_icon](assets/Smock_Checkmark_18_N.svg) pour enregistrer les modifications.
 
 ### Exemple 1 : Exécutez une requête dans une variable XML pour définir la valeur d’une variable de chaîne {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -163,7 +163,7 @@ Dans cet exemple, avant de définir l’expression de routage, utilisez [exemple
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-De même, sélectionnez un chemin d’accès au script externe ou spécifiez le script ECMA pour les expressions de routage afin d’évaluer la branche principale. Sélectionner **[!UICONTROL Renommer la branche]** pour spécifier un autre nom pour la branche.
+De même, sélectionnez un chemin d’accès au script externe ou spécifiez le script ECMA pour les expressions de routage afin d’évaluer la branche principale. Sélectionnez **[!UICONTROL Renommer la branche]** pour définir un autre nom pour la branche.
 
 <!-- For more examples, see [Create a workflow model](aem-forms-workflow.md#create-a-workflow-model). -->
 
@@ -198,7 +198,7 @@ Les API suivantes dans le script ECMA permettent d’extraire des valeurs de var
 | Primitif (long, doublon, booléen, date et chaîne) | workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
 | Document | Packages.com.adobe.aemfd.docmanager.Document doc = workItem.getWorkflowData().getMetaDataMap().get(&quot;docVar&quot;, Packages.com.adobe.aemfd.docmanager.Document.class); |
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
-| Modèle de données de formulaire | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
+| Modèle de données de formulaire (FDM) | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
 
@@ -269,8 +269,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## Modification d’une variable {#edit-a-variable}
 
-1. Sur la page Modifier le processus , sélectionnez l’icône Variables disponible dans le sidekick du modèle de processus. La section Variables du volet gauche affiche toutes les variables existantes.
-1. Sélectionnez la variable ![edit](assets/edit.svg) (Modifier) en regard du nom de la variable que vous souhaitez modifier.
+1. Dans la page de modification du workflow, sélectionnez l’icône Variables disponible dans le sidekick du modèle de workflow. La section Variables du volet gauche affiche toutes les variables existantes.
+1. Sélectionnez l’icône ![edit](assets/edit.svg) (Modifier) en regard du nom de la variable que vous souhaitez modifier.
 1. Modifiez les informations de la variable et sélectionnez ![done_icon](assets/Smock_Checkmark_18_N.svg) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
 
 ## Supprimer une variable {#delete-a-variable}
@@ -279,9 +279,9 @@ Avant de supprimer la variable, supprimez toutes les références de la variable
 
 Pour supprimer une variable :
 
-1. Sur la page Modifier le processus , sélectionnez l’icône Variables disponible dans le sidekick du modèle de processus. La section Variables du volet gauche affiche toutes les variables existantes.
+1. Dans la page de modification du workflow, sélectionnez l’icône Variables disponible dans le sidekick du modèle de workflow. La section Variables du volet gauche affiche toutes les variables existantes.
 1. Sélectionnez l’icône Supprimer en regard du nom de la variable que vous souhaitez supprimer.
-1. Sélectionner ![done_icon](assets/Smock_Checkmark_18_N.svg) pour confirmer et supprimer la variable.
+1. Sélectionnez ![done_icon](assets/Smock_Checkmark_18_N.svg) pour confirmer et supprimer la variable.
 
 ## Références {#references}
 

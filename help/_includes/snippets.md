@@ -1,6 +1,6 @@
 ---
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
-workflow-type: ht
+source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * [Connecter un formulaire adaptatif à Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [Connecter un formulaire adaptatif à Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [Connecter un formulaire adaptatif au stockage Blob Azure Microsoft](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Connecter un formulaire adaptatif à Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connecter un formulaire adaptatif à Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Utiliser Adobe Sign dans un formulaire adaptatif AEM](/help/forms/working-with-adobe-sign.md)
 * [Ajouter un nouveau paramètre régional pour un formulaire adaptatif](/help/forms/supporting-new-language-localization-core-components.md)
 * [Envoyer des données de formulaire adaptatif à une base de données](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html?lang=fr)
@@ -51,7 +51,7 @@ ht-degree: 100%
 * [Appeler un workflow AEM](/help/forms/configure-submit-action-workflow.md)
 * [Envoyer à Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Envoyer vers Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Connecter un formulaire adaptatif à Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## Voir également {#see-more-forms-eds}

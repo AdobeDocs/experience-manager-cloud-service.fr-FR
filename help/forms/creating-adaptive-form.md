@@ -1,14 +1,14 @@
 ---
 title: Comment créer un Forms adaptatif ?
-description: Découvrez comment créer un formulaire adaptatif pour simplifier la collecte et le traitement des informations. Découvrez également comment créer un formulaire adaptatif basé sur un modèle de données de formulaire.
+description: Découvrez comment créer un formulaire adaptatif pour simplifier la collecte et le traitement des informations. Découvrez également comment créer un formulaire adaptatif basé sur un modèle de données de formulaire (FDM).
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 83%
+source-wordcount: '1500'
+ht-degree: 79%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 83%
 | AEM as a Cloud Service | Cet article |
 
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial pour les utilisateurs professionnels, qui permet de créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
 Avant de commencer, découvrez les types de composants de formulaires disponibles :
 
-* Les [composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) sont des composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer le Forms adaptatif.
+* Les [composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) sont des composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer des formulaires adaptatifs.
 
 * Les [composants de base de formulaires adaptatifs](creating-adaptive-form.md) sont des composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier votre formulaire adaptatif existant basé sur les composants de base. Si vous créez des formulaires, Adobe recommande d’utiliser les [composants principaux de formulaires adaptatifs](creating-adaptive-form-core-components.md).
 
@@ -78,7 +78,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager.
 
-   Une fois connecté, dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
+   Une fois connecté, dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 
 1. Sélectionner **[!UICONTROL Créer]**  > **[!UICONTROL Forms adaptatif]**. Cette action permet d’ouvrir l’assistant.
 1. Dans l’onglet Source, sélectionnez un modèle :
@@ -98,7 +98,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 1. (Facultatif) Dans l’onglet **[!UICONTROL Données]**, sélectionnez un modèle de données :
 
-   * **Modèle de données de formulaire** : un [modèle de données de formulaire](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
+   * **Modèle de données de formulaire** : un [modèle de données de formulaire](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez le modèle de données de formulaire (FDM) si le formulaire adaptatif que vous créez implique de récupérer et d’écrire des données à partir de et vers plusieurs sources de données.
 
    * **Schéma JSON** : [le schéma JSON](adaptive-form-json-schema-form-model.md) représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets de modèle de données de l’explorateur de contenu lors de la création d’un Forms adaptatif et tous les champs sont également ajoutés au formulaire adaptatif créé.
 
@@ -126,7 +126,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 1. Sélectionnez **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et s’ouvre dans l’éditeur de formulaires adaptatifs. L’éditeur affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire créé en fonction des besoins.
 
-   En fonction du type de formulaire adaptatif, les éléments de formulaire présents dans le <!--XFA form template, XML schema or --> schéma JSON ou le modèle de données de formulaire associé sont affichés dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’**[!UICONTROL explorateur de contenu]** dans la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
+   Selon le type de formulaire adaptatif, les éléments de formulaire présents dans le <!--XFA form template, XML schema or --> Le schéma JSON ou le modèle de données de formulaire (FDM) s’affichent dans la **[!UICONTROL Objets de modèle de données]** de la **[!UICONTROL Explorateur de contenu]** dans la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -184,10 +184,10 @@ Vous pouvez modifier le modèle d’un formulaire adaptatif (basé sur JSON ou m
 1. Sélectionnez le formulaire adaptatif et sélectionnez le **Propriétés** Icône
 1. Ouvrez l’onglet **[!UICONTROL Modèle de formulaire]** et effectuez l’une des actions suivantes.
 
-   * Si le formulaire adaptatif ne dispose pas de modèle de formulaire, vous pouvez choisir un autre modèle de formulaire et, ensuite, sélectionner un <!-- a form template, -->schéma XML ou JSON, ou un modèle de formulaire.
-   * Pour un formulaire adaptatif est basé sur un modèle de formulaire, vous pouvez choisir un autre<!-- form template, --> schéma XML ou JSON, ou un autre modèle de données de formulaire pour le même modèle de formulaire.
+   * Si le formulaire adaptatif est dépourvu de modèle de formulaire, vous pouvez choisir un autre modèle de formulaire et sélectionner en conséquence <!-- a form template, --> Schéma XML ou JSON ou modèle de données de formulaire (FDM).
+   * Si le formulaire adaptatif est basé sur un modèle de formulaire, vous pouvez en choisir un autre <!-- form template, --> Schéma XML ou JSON ou modèle de données de formulaire (FDM) pour le même modèle de formulaire.
 
-1. Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer les propriétés.
+1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les propriétés.
 
 Vous pouvez également modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif.
 
@@ -195,9 +195,9 @@ Vous pouvez également modifier les propriétés du modèle de formulaire à par
 1. Cliquez sur l’![icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir les **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.
 1. Sélectionnez l’onglet **[!UICONTROL Modèle de données]** et effectuez l’une des actions suivantes :
 
-   * Si le formulaire adaptatif ne dispose pas de modèle de formulaire, vous pouvez choisir un autre modèle de formulaire et, en conséquence, sélectionner <!-- a form template, -->un schéma XML ou JSON ou un modèle de données de formulaire.
-   * Si le formulaire adaptatif est basé sur un modèle de formulaire, vous ne pouvez pas le modifier. Vous pouvez choisir un autre <!-- form template, --> schéma XML ou JSON ou un autre modèle de données de formulaire pour le même modèle de formulaire, selon le cas.
-1. Sélectionner ![Enregistrer](/help/forms/assets/check-button.png) pour enregistrer les propriétés.
+   * Si le formulaire adaptatif est dépourvu de modèle de formulaire, vous pouvez choisir un modèle de formulaire et sélectionner en conséquence <!-- a form template, --> Schéma XML ou JSON ou modèle de données de formulaire (FDM).
+   * Si le formulaire adaptatif est basé sur un modèle de formulaire, vous ne pouvez pas le modifier. Vous pouvez en choisir un autre <!-- form template, --> Schéma XML ou JSON ou modèle de données de formulaire (FDM) pour le même modèle de formulaire, selon le cas.
+1. Sélectionnez ![Enregistrer](/help/forms/assets/check-button.png) pour enregistrer les propriétés.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
 

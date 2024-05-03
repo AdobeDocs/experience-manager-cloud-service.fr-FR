@@ -4,9 +4,9 @@ description: Configuration d’un environnement de développement local pour Ado
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2726'
 ht-degree: 91%
 
 ---
@@ -135,7 +135,7 @@ L’archive des fonctionnalités Adobe Experience Manager Forms as a Cloud Servi
 
    >[!NOTE]
    >
-   > Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   > Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ### Configuration des utilisateurs et des autorisations {#configure-users-and-permissions}
 
@@ -249,7 +249,7 @@ Vous pouvez maintenant utiliser l’environnement de développement local pour g
 
 Utilisez ce projet pour créer des formulaires adaptatifs, déployer des mises à jour de configuration et des superpositions, créer des composants de formulaire adaptatif personnalisés, effectuer des tests et créer du code personnalisé sur le SDK [!DNL Experience Manager Forms] local. Après avoir effectué des tests localement, vous pouvez déployer le projet sur les environnements [!DNL Experience Manager Forms] as a Cloud Service de production et hors production. Lorsque vous déployez le projet, les ressources AEM Forms suivantes sont également déployées :
 
-| Thèmes | Modèles | Modèle de données de formulaire |
+| Thèmes | Modèles | Modèle de données de formulaire (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | De base | Microsoft® Dynamics 365 |
 | Tranquil | Vide | Salesforce |
@@ -259,7 +259,7 @@ Utilisez ce projet pour créer des formulaires adaptatifs, déployer des mises �
 
 >[!NOTE]
 >
-> Configurez un projet basé sur l’archétype AEM version 30 ou supérieure pour obtenir et utiliser les modèles de données de formulaire Microsoft® Dynamics 365 et Salesforce avec AEM Forms as a Cloud Service.
+> Configurez AEM projet basé sur Archetype version 30 ou ultérieure pour obtenir et utiliser Microsoft® Dynamics 365 et le modèle de données de formulaire Salesforce (FDM) avec AEM Forms as a Cloud Service.
 > Configurez un projet basé sur l’archétype AEM version 32 ou ultérieure pour obtenir et utiliser les thèmes Tranquil, Urbane et Ultramarine avec AEM Forms as a Cloud Service.
 
 Pour configurer le projet :
@@ -399,7 +399,7 @@ Pour sauvegarder et déplacer des ressources du SDK existant vers un nouvel envi
 
 ### Création d’une sauvegarde de votre contenu existant {#create-backup-of-your-existing-content}
 
-Sauvegardez les formulaires adaptatifs, les modèles, le modèle de données de formulaire, le thème, les configurations et le code personnalisé. Vous pouvez exécuter l’action suivante pour créer une sauvegarde :
+Sauvegardez vos Forms adaptatives, modèles, modèle de données de formulaire (FDM), thème, configurations et code personnalisé. Vous pouvez exécuter l’action suivante pour créer une sauvegarde :
 
 1. [Téléchargez](import-export-forms-templates.md#manage-forms-and-related-assets) les formulaires adaptatifs, les thèmes et les formulaires PDF.
 1. Exportez les modèles de formulaire adaptatif.

@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser AEM workflows, en utilisant affecter des étapes de tâche, convertir en étape de PDF/A, Générer un document d’étape enregistrée, utiliser des workflows, Signer une étape de document, Générer une étape de sortie imprimée, Générer une sortie de PDF non interactive
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '7367'
-ht-degree: 79%
+source-wordcount: '7379'
+ht-degree: 77%
 
 ---
 
@@ -85,12 +85,12 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **[!UICONTROL Une fois la tâche terminée, effectuer le rendu du formulaire adaptatif en tant que]** : lorsqu’une tâche est marquée comme terminée, vous pouvez effectuer le rendu du formulaire adaptatif en tant que formulaire adaptatif en lecture seule ou document PDF. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour effectuer le rendu du formulaire adaptatif en tant que Document d’enregistrement.
 * **[!UICONTROL pré-renseignés :]** les champs répertoriés ci-dessous servent de données d’entrées pour la tâche :
 
-   * **[!UICONTROL Sélectionnez le fichier de données d’entrée en utilisant :]** chemin d’accès du fichier de données d’entrée (.json, .xml, .doc ou modèle de données de formulaire). Vous pouvez récupérer le fichier de données d’entrée à l’aide d’un chemin d’accès relatif à la charge utile ou récupérer le fichier stocké dans une variable de type de données Document, XML ou JSON. Par exemple, le fichier contient les données envoyées pour le formulaire via une application de boîte de réception AEM. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/workflow/data.
-   * **[!UICONTROL Sélectionnez les pièces jointes d’entrée en utilisant :]** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la payload ou récupérer la pièce jointe stockée dans une variable d’un document. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la charge utile ou utiliser une variable de type document (Tableau > Liste > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif.
+   * **[!UICONTROL Sélectionnez un fichier de données d’entrée à l’aide de la commande]**: chemin d’accès au fichier de données d’entrée (.json, .xml, .doc ou modèle de données de formulaire (FDM)). Vous pouvez récupérer le fichier de données d’entrée à l’aide d’un chemin d’accès relatif à la charge utile ou récupérer le fichier stocké dans une variable de type de données Document, XML ou JSON. Par exemple, le fichier contient les données envoyées pour le formulaire via une application de boîte de réception AEM. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/workflow/data.
+   * **[!UICONTROL Sélectionnez les pièces jointes d’entrée en utilisant :]** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la payload ou récupérer la pièce jointe stockée dans une variable d’un document. Voici un exemple de chemin d’accès : [Payload_Directory]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la payload ou utiliser une variable de type document (Liste de tableaux > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif.
 
   <!-- 
     
-    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
@@ -108,13 +108,13 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 * **[!UICONTROL Informations envoyées :]** les champs répertoriés ci-dessous servent d’emplacement de sortie pour la tâche :
 
-   * **[!UICONTROL Enregistrez le fichier de données de sortie en utilisant :]** enregistrez le fichier de données (.json, .xml, .doc ou modèle de données de formulaire). Le fichier de données contient des informations envoyées via le formulaire associé. Vous pouvez enregistrer le fichier de données de sortie à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données Document, XML ou JSON. Par exemple, [Répertoire_Charge_utile]/Workflow/data, où les données correspondent à un fichier.
+   * **[!UICONTROL Enregistrer le fichier de données de sortie à l’aide de]**: enregistrez le fichier de données (.json, .xml, .doc ou modèle de données de formulaire (FDM)). Le fichier de données contient des informations envoyées via le formulaire associé. Vous pouvez enregistrer le fichier de données de sortie à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données Document, XML ou JSON. Par exemple, [Répertoire_Charge_utile]/Workflow/data, où les données correspondent à un fichier.
    * **[!UICONTROL Enregistrez les pièces jointes en utilisant :]** enregistrez les pièces jointes de formulaire fournies dans une tâche. Vous pouvez enregistrer les pièces jointes à l’aide d’un chemin d’accès relatif à la charge utile ou les stocker dans une variable de liste de tableau de type de données Document.
    * **[!UICONTROL Enregistrez le document d’enregistrement en utilisant :]** chemin d’accès pour enregistrer un fichier de document d’enregistrement. Par exemple,[ Répertoire_Charge_utile]/DocumentofRecord/credit-card.pdf. Vous pouvez enregistrer le document d’enregistrement à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données Document. Si vous sélectionnez l’option **[!UICONTROL Relatif à la charge utile]** , le document d’enregistrement n’est pas généré si le champ de chemin d’accès est vide. Cette option est disponible uniquement si vous sélectionnez l’option Formulaire adaptatif dans la liste déroulante Type.
 
   <!-- 
     
-    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
     
@@ -273,9 +273,9 @@ L’étape Invoquer DDX présente les propriétés suivantes :
 * **[!UICONTROL Enregistrer la sortie dans payload]** : enregistre les documents de sortie sous le dossier de payload, ou remplace la payload, si celle-ci est un fichier.
 * **[!UICONTROL Mappage du document de sortie]** : spécifie l’emplacement d’enregistrement explicite de chaque fichier de document en ajoutant une entrée par document. Chaque entrée représente le document et l’emplacement où l’enregistrer. S’il existe plusieurs documents de sortie, cette option est utilisée.
 
-## Étape Invoquer le service de modèle de données de formulaire {#invoke-form-data-model-service-step}
+## Étape Invoquer le service de modèle de données de formulaire (FDM) {#invoke-form-data-model-service-step}
 
-Vous pouvez utiliser l’[[!DNL AEM Forms] intégration de données](data-integration.md) pour configurer des sources de données disparates et vous y connecter. Ces sources de données peuvent être un service web, un service REST, un service OData et une solution CRM. [!DNL AEM Forms] L’intégration de données vous permet de créer un modèle de données de formulaire qui englobe divers services pour effectuer des opérations de récupération, d’ajout et de mise à jour de données sur la base de données configurée. Vous pouvez utiliser **[!UICONTROL l’étape Invoquer le service de modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire (FDM) et utiliser les services du FDM pour récupérer, mettre à jour ou ajouter des données aux sources de données disparates.
+Vous pouvez utiliser l’[[!DNL AEM Forms] intégration de données](data-integration.md) pour configurer des sources de données disparates et vous y connecter. Ces sources de données peuvent être un service web, un service REST, un service OData et une solution CRM. [!DNL AEM Forms] L’intégration de données vous permet de créer un modèle de données de formulaire (FDM) englobant divers services pour effectuer des opérations de récupération, d’ajout et de mise à jour de données sur la base de données configurée. Vous pouvez utiliser **[!UICONTROL l’étape Invoquer le service de modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire (FDM) et utiliser les services du FDM pour récupérer, mettre à jour ou ajouter des données aux sources de données disparates.
 
 Pour expliquer les entrées des champs de l’étape, le tableau de base de données et le fichier JSON suivants servent d’exemple :
 
@@ -330,14 +330,14 @@ Pour expliquer les entrées des champs de l’étape, le tableau de base de donn
   }
 ```
 
-L’étape Invoquer le service de modèle de données de formulaire contient les champs suivants pour faciliter les opérations du modèle de données de formulaire :
+L’étape Invoke Form Data Model (FDM) Service comporte les champs répertoriés ci-dessous pour faciliter les opérations de modèle de données de formulaire (FDM) :
 
 * **[!UICONTROL Titre :]** titre de l’étape. Elle permet d’identifier les étapes dans l’éditeur de workflow.
 * **[!UICONTROL Description :]** la description est utile pour d’autres développeurs de processus lorsque vous travaillez dans un environnement de développement partagé.
 
-* **[!UICONTROL Chemin d’accès du modèle de données de formulaire]** : recherchez et sélectionnez un modèle de données de formulaire présent sur le serveur.
+* **[!UICONTROL Chemin du modèle de données de formulaire]**: recherchez et sélectionnez un modèle de données de formulaire (FDM) présent sur le serveur.
 
-* **[!UICONTROL Erreurs et validations]**: l’option permet de capturer les messages d’erreur et de spécifier des options de validation pour les données récupérées et envoyées aux sources de données. Grâce à ces modifications, vous pouvez vous assurer que les données transmises à l’étape Invoquer le service de modèle de données de formulaire respectent les contraintes de données définies par la source de données. Pour plus d’informations, voir [Validation automatisée des données d’entrée](work-with-form-data-model.md#automated-validation-of-input-data).
+* **[!UICONTROL Erreurs et validations]**: l’option permet de capturer les messages d’erreur et de spécifier des options de validation pour les données récupérées et envoyées aux sources de données. Grâce à ces modifications, vous pouvez vous assurer que les données transmises à l’étape de service Invoke Form Data Model (FDM) respectent les contraintes de données définies par la source de données. Pour plus d’informations, voir [Validation automatisée des données d’entrée](work-with-form-data-model.md#automated-validation-of-input-data).
 
 * **[!UICONTROL Niveau de validation]** : il existe trois catégories de validation : De base, Complète et Désactivée :
 
@@ -353,7 +353,7 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 
 * **[!UICONTROL Stocker les détails de l’erreur dans une variable]** : vous pouvez stocker les détails dune erreur dans une [variable de type JSON](variable-in-aem-workflows.md).
 
-* **[!UICONTROL Service]** : liste des services fournit par le modèle de données de formulaire sélectionné.
+* **[!UICONTROL Service]**: liste des services fournis par le modèle de données de formulaire (FDM) sélectionné.
 * **[!UICONTROL Entrée des services]** > **[!UICONTROL Fournir des données d’entrée à l’aide d’un fichier JSON, de l’option Littéral,d’une variable, de métadonnées de processus]** : un service peut avoir plusieurs arguments. Sélectionnez cette option pour obtenir la valeur des arguments de service à partir d’une propriété de métadonnées de processus, d’un objet JSON ou d’une variable, ou saisissez directement la valeur dans la zone prévue à cet effet :
 
    * **[!UICONTROL Littéral]** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, srose@we.info.
@@ -365,16 +365,16 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
      Par exemple, si le dossier Relatif à la charge dans le référentiel CRX inclut un fichier joint à l’emplacement `attachment\attachment-folder`, spécifiez `attachment\attachment-folder` dans la zone de texte après avoir sélectionné l’option **[!UICONTROL Relatif à la charge]**.
 
    * **[!UICONTROL JSON Dot Notation :]** utilisez cette option lorsque la valeur à utiliser figure dans un fichier JSON. Par exemple, insurance.customerDetails.emailAddress. L’option JSON Dot Notation n’est disponible que si l’option Mapper les champs de saisie de l’option JSON d’entrée est sélectionnée.
-   * **[!UICONTROL Mappage des champs de saisie à partir du fichier JSON d’entrée]**: spécifiez le chemin d’accès d’un fichier JSON pour obtenir la valeur d’entrée de certains arguments de service à partir du fichier JSON. Le chemin d’accès du fichier JSON peut être relatif à la charge utile, un chemin d’accès absolu, ou vous pouvez sélectionner un document JSON d’entrée à l’aide d’une variable de type JSON ou Modèle de données de formulaire.
+   * **[!UICONTROL Mappage des champs de saisie à partir du fichier JSON d’entrée]**: spécifiez le chemin d’accès d’un fichier JSON pour obtenir la valeur d’entrée de certains arguments de service à partir du fichier JSON. Le chemin d’accès du fichier JSON peut être relatif à la charge utile, un chemin d’accès absolu, ou vous pouvez sélectionner un document JSON d’entrée à l’aide d’une variable de type JSON ou FDM.
 
 * **[!UICONTROL Entrée pour les services]** > **[!UICONTROL Fournir des données d’entrée à l’aide d’une variable ou d’un fichier JSON]**: sélectionnez l’option permettant d’obtenir des valeurs pour tous les arguments d’un fichier JSON enregistré à un chemin absolu, à un chemin relatif à la charge utile ou dans une variable.
-* **[!UICONTROL Sélectionnez le document JSON d’entrée en utilisant]** : fichier JSON contenant des valeurs pour tous les arguments de service. Le chemin d’accès au fichier JSON peut être **[!UICONTROL par rapport à la charge utile]** ou **[!UICONTROL chemin absolu]**. Vous pouvez également récupérer le document JSON d’entrée à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
+* **[!UICONTROL Sélectionnez le document JSON d’entrée en utilisant]** : fichier JSON contenant des valeurs pour tous les arguments de service. Le chemin d’accès au fichier JSON peut être **[!UICONTROL par rapport à la charge utile]** ou **[!UICONTROL chemin absolu]**. Vous pouvez également récupérer le document JSON d’entrée à l’aide d’une variable de type de données JSON ou Form Data Model (FDM).
 
 * **[!UICONTROL JSON Dot Notation :]** laissez le champ vide pour utiliser tous les objets du fichier JSON spécifié en tant qu’entrée pour les arguments de service. Pour lire un objet JSON spécifique à partir du fichier JSON spécifié en tant qu’entrée pour des arguments de service, spécifiez la notation par point pour l’objet JSON. Par exemple, si vous avez un fichier JSON identique à l’un des fichiers indiqué au début de la section, spécifiez insurance.customerDetails pour fournir tous les détails d’un client en tant qu’entrée du service.
 * **[!UICONTROL Sortie de service]** > **[!UICONTROL Mapper et écrire les valeurs de sortie dans les métadonnées]** : sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de processus dans le référentiel CRX. Indiquez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez le numéro de téléphone renvoyé par le service de sortie avec la propriété phone_number des métadonnées de workflow. De même, vous pouvez stocker la sortie dans une variable de type Long. Lorsque vous sélectionnez une propriété pour l’**[!UICONTROL attribut de sortie de service à mapper]**, seules les variables capables de stocker les données de la propriété sélectionnée sont renseignées pour l’option **[!UICONTROL Enregistrer la sortie dans]**.
 
 * **[!UICONTROL Sortie de service]** > **[!UICONTROL Enregistrer la sortie dans une variable ou un fichier JSON]**: sélectionnez l’option pour enregistrer les valeurs de sortie dans un fichier JSON à un chemin d’accès absolu, à un chemin relatif à la charge utile ou dans une variable .
-* **[!UICONTROL Enregistrez le document JSON de sortie à l’aide des options suivantes :]** enregistrez le fichier JSON de sortie. Le chemin d’accès du fichier JSON peut être relatif à la charge utile ou à un chemin d’accès absolu. Vous pouvez également enregistrer le fichier JSON de sortie à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
+* **[!UICONTROL Enregistrez le document JSON de sortie à l’aide des options suivantes :]** enregistrez le fichier JSON de sortie. Le chemin d’accès du fichier JSON peut être relatif à la charge utile ou à un chemin d’accès absolu. Vous pouvez également enregistrer le fichier JSON de sortie à l’aide d’une variable de type de données JSON ou Form Data Model (FDM).
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Comment créer un modèle de données de formulaire pour un formulaire adaptatif ?
+title: Comment créer un modèle de données de formulaire (FDM) pour un formulaire adaptatif ?
 description: Découvrez comment créer des Forms et des fragments adaptatifs basés sur un modèle de données de formulaire (FDM). Générez et modifiez des exemples de données pour les objets de modèle de données dans le FDM.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 67%
+source-wordcount: '1321'
+ht-degree: 42%
 
 ---
 
-# Utilisation d’un modèle de données de formulaire {#use-form-data-model}
+# Utilisation du modèle de données de formulaire (FDM) {#use-form-data-model}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -22,14 +22,14 @@ ht-degree: 67%
 
 ![data-integration](do-not-localize/data-integeration.png)
 
-L’intégration de données [!DNL Experience Manager Forms] vous permet d’utiliser des sources de données back-end pour créer un modèle de données de formulaire que vous pouvez utiliser comme schéma dans divers processus <!--and interactive communications--> de formulaires adaptatifs. Elle nécessite la configuration des sources de données et la création d’un modèle de données de formulaire basé sur les objets et services de modèle de données disponibles dans les sources de données. Pour plus d’informations, consultez les sections suivantes :
+[!DNL Experience Manager Forms] l’intégration de données vous permet d’utiliser des sources de données principales disparates pour créer un modèle de données de formulaire (FDM) que vous pouvez utiliser comme schéma dans diverses Forms adaptatives. <!--and interactive communications--> workflows. Elle nécessite la configuration des sources de données et la création d’un modèle de données de formulaire (FDM) basé sur les objets de modèle de données et les services disponibles dans les sources de données. Pour plus d’informations, consultez les sections suivantes :
 
 * [Intégration de données [!DNL Experience Manager Forms]](data-integration.md)
-* [Configuration des sources de données](configure-data-sources.md)
-* [Création d’un modèle de données de formulaire](create-form-data-models.md)
-* [Utilisation d’un modèle de données de formulaire](work-with-form-data-model.md)
+* [Configurer des sources de données](configure-data-sources.md)
+* [Créer un modèle de données de formulaire (FDM)](create-form-data-models.md)
+* [Utilisation du modèle de données de formulaire (FDM)](work-with-form-data-model.md)
 
-Un modèle de données de formulaire est une extension du schéma JSON que vous pouvez utiliser pour :
+Un modèle de données de formulaire (FDM) est une extension du schéma JSON que vous pouvez utiliser pour :
 
 * [créer des formulaires adaptatifs et des fragments](#create-af) ;
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
@@ -40,23 +40,23 @@ Un modèle de données de formulaire est une extension du schéma JSON que vous 
 
 ## Création de formulaires adaptatifs et de fragments {#create-af}
 
-Vous pouvez créer des [formulaires adaptatifs](creating-adaptive-form.md) et des fragments de formulaire adaptatif <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> basés sur un modèle de données de formulaire. Pour utiliser un modèle de données de formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif, procédez comme suit :
+Vous pouvez créer [Forms adaptatif](creating-adaptive-form.md) et Fragments de formulaire adaptatif <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> basé sur un modèle de données de formulaire (FDM). Procédez comme suit pour utiliser un modèle de données de formulaire (FDM) lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
 
 1. Dans l’onglet Modèle de formulaire de l’écran Ajouter des propriétés, sélectionnez **[!UICONTROL Modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**.
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Sélectionner pour développer **[!UICONTROL Sélectionner un modèle de données de formulaire]**. Tous les modèles de données de formulaire disponibles sont répertoriés.
+2. Cliquez pour développer **[!UICONTROL Sélectionner le modèle de données de formulaire]**. Tous les modèles de données de formulaire disponibles (FDM) sont répertoriés.
 
    Sélectionnez un modèle de données de formulaire.
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-1. (**Fragments de formulaire adaptatif uniquement**) Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire. Développez la liste déroulante **[!UICONTROL Définitions de modèle de données de formulaire]**. Elle répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié. Sélectionnez un objet de modèle de données dans la liste.
+3. (**Fragments de formulaire adaptatif uniquement**) Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire (FDM). Développez la liste déroulante **[!UICONTROL Définitions de modèle de données de formulaire]**. Il répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié (FDM). Sélectionnez un objet de modèle de données dans la liste.
 
    ![create-af-3](assets/create-af-3.png)
 
-   Une fois le formulaire adaptatif ou le fragment de formulaire adaptatif basé sur un modèle de données de formulaire créé, les objets de modèle de données de formulaire apparaissent dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’explorateur de contenu dans l’éditeur de formulaires adaptatifs.
+   Une fois le formulaire adaptatif ou le fragment de formulaire adaptatif basé sur un modèle de données de formulaire (FDM) créé, les objets de modèle de données de formulaire apparaissent dans la variable **[!UICONTROL Sources de données]** de l’explorateur de contenu dans l’éditeur de formulaire adaptatif.
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ For more information, see:
 
 ## Aperçu avec des exemples de données {#preview-ic}
 
-L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des exemples de données pour les objets de modèle de données dans le modèle de données de formulaire. Vous pouvez utiliser ces données pour prévisualiser et tester les formulaires adaptatifs <!--interactive communications and-->. Vous devez générer les exemples de données avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données de formulaire](work-with-form-data-model.md#sample).
+L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des exemples de données pour les objets de modèle de données dans le modèle de données de formulaire (FDM). Vous pouvez utiliser ces données pour prévisualiser et tester les formulaires adaptatifs <!--interactive communications and-->. Vous devez générer les exemples de données avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données de formulaire](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -104,7 +104,7 @@ Pour prévisualiser un formulaire adaptatif avec des données d’exemple, ouvre
 
 ## Préremplissage à l’aide du service de modèle de données de formulaire {#prefill}
 
-[!DNL Experience Manager Forms] fournit un service de préremplissage de modèle de données de formulaire prêt à l’emploi que vous pouvez activer pour les formulaires adaptatifs <!--and interactive communications-->basés sur un modèle de données de formulaire. Le service de préremplissage récupère les sources de données des objets de modèle de données dans le formulaire adaptatif <!--and interactive communication--> et préremplit les données en conséquence lors du rendu du formulaire ou de la communication.
+[!DNL Experience Manager Forms] fournit un service de préremplissage de modèle de données de formulaire prêt à l’emploi que vous pouvez activer pour le Forms adaptatif. <!--and interactive communications--> basé sur le modèle de données de formulaire (FDM). Le service de préremplissage récupère les sources de données des objets de modèle de données dans le formulaire adaptatif <!--and interactive communication--> et préremplit les données en conséquence lors du rendu du formulaire ou de la communication.
 
 Pour activer le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif, ouvrez les propriétés du conteneur de formulaires adaptatifs et sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Service de préfiltrage]** de l’accordéon De base. Ensuite, enregistrez les propriétés.
 
@@ -118,7 +118,7 @@ Edit Properties dialog for an interactive communication-->
 
 ## Écriture des données de formulaires adaptatifs envoyés dans les sources de données {#write-af}
 
-Lorsqu’un utilisateur envoie un formulaire basé sur un modèle de données de formulaire, vous pouvez configurer le formulaire pour écrire les données envoyées pour un objet de modèle de données dans ses sources de données. Pour réaliser ce cas d’utilisation, [!DNL Experience Manager Forms] fournit une [action d’envoi de modèle de données de formulaire](configuring-submit-actions.md), disponible par défaut uniquement pour les formulaires adaptatifs basés sur un modèle de données de formulaire. Elle écrit les données envoyées pour un objet de modèle de données dans sa source de données.
+Lorsqu’un utilisateur envoie un formulaire basé sur un modèle de données de formulaire (FDM), vous pouvez configurer le formulaire pour écrire les données envoyées pour un objet de modèle de données dans ses sources de données. Pour réaliser ce cas pratique, [!DNL Experience Manager Forms] provided [Action d’envoi du modèle de données de formulaire](configuring-submit-actions.md), disponible en standard uniquement pour les Forms adaptatives basées sur un modèle de données de formulaire (FDM). Elle écrit les données envoyées pour un objet de modèle de données dans sa source de données.
 
 Pour configurer l’action d’envoi du modèle de données de formulaire :
 
@@ -132,7 +132,7 @@ Pour configurer l’action d’envoi du modèle de données de formulaire :
 1. Spécifiez la variable **[!UICONTROL Modèle de données à envoyer]**.
 1. Cliquez sur **[!UICONTROL Terminé]**
 
-Lors de l’envoi du formulaire, les données de l’objet de modèle de données configuré sont écrites dans la source de données correspondante. En outre, vous pouvez envoyer une pièce jointe de formulaire à l’aide d’un modèle de données de formulaire et d’un document d’enregistrement vers la source de données. Pour plus d’informations sur le modèle de données de formulaire, voir [[!DNL AEM Forms] Intégration de données](data-integration.md).
+Lors de l’envoi du formulaire, les données de l’objet de modèle de données configuré sont écrites dans la source de données correspondante. En outre, vous pouvez envoyer une pièce jointe de formulaire à l’aide d’un modèle de données de formulaire (FDM) et d’un document d’enregistrement (DoR) à la source de données. Pour plus d’informations sur le modèle de données de formulaire (FDM), voir [[!DNL AEM Forms] Intégration de données](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
 
@@ -142,18 +142,18 @@ Lors de l’envoi du formulaire, les données de l’objet de modèle de donnée
 
 Vous pouvez également envoyer des pièces jointes de formulaire à une source de données à l’aide de la propriété d’objet de modèle de données binaire. Procédez comme suit pour envoyer des pièces jointes à une source de données JDBC :
 
-1. Ajoutez un objet de modèle de données qui inclut une propriété binaire dans le modèle de données de formulaire.
+1. Ajoutez un objet de modèle de données qui inclut une propriété binaire au modèle de données de formulaire (FDM).
 1. Dans le formulaire adaptatif, faites glisser le composant **[!UICONTROL Pièce jointe]** depuis l’explorateur Composants vers le formulaire adaptatif.
-1. Sélectionnez pour sélectionner le composant ajouté et sélectionnez ![settings_icon](assets/configure-icon.svg) pour ouvrir l’explorateur de propriétés du composant.
-1. Dans le champ Référence de liaison, sélectionnez ![foldersearch_18](assets/folder-search-icon.svg) et accédez à pour sélectionner la propriété binaire que vous avez ajoutée dans le modèle de données de formulaire. Configurez d’autres propriétés en fonction de vos besoins.
+1. Sélectionnez le composant ajouté, puis sélectionnez ![settings_icon](assets/configure-icon.svg) pour ouvrir l’explorateur de propriétés du composant.
+1. Dans le champ Référence de liaison, sélectionnez ![foldersearch_18](assets/folder-search-icon.svg) et accédez à pour sélectionner la propriété binaire que vous avez ajoutée dans le modèle de données de formulaire (FDM). Configurez d’autres propriétés en fonction de vos besoins.
 
-   Sélectionner ![check-button](assets/save_icon.svg) pour enregistrer les propriétés. Le champ de pièce jointe est maintenant lié à la propriété binaire du modèle de données de formulaire.
+   Sélectionnez ![check-button](assets/save_icon.svg) pour enregistrer les propriétés. Le champ de pièce jointe est désormais lié à la propriété binaire du modèle de données de formulaire (FDM).
 
 1. Dans la section Envoi des propriétés du conteneur de formulaires adaptatifs, activez l’option **[!UICONTROL Envoyer les pièces jointes de formulaire]**. Cela permet d’envoyer la pièce jointe dans le champ de propriété binaire à la source de données lors de l’envoi du formulaire.
 
 ## Appel des services dans des formulaires adaptatifs à l’aide de règles {#invoke-services}
 
-Dans un formulaire adaptatif basé sur un modèle de données de formulaire, vous pouvez [créer des règles](rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire. La variable **[!UICONTROL Appeler les services]** dans une règle répertorie tous les services disponibles dans le modèle de données de formulaire et vous permet de sélectionner les champs d’entrée et de sortie du service. Vous pouvez également utiliser le type de règle **[!UICONTROL Définir la valeur]** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
+Dans un formulaire adaptatif basé sur un modèle de données de formulaire, vous pouvez [créer des règles](rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire (FDM). La variable **[!UICONTROL Appeler les services]** dans une règle répertorie tous les services disponibles dans le modèle de données de formulaire (FDM) et vous permet de sélectionner les champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **[!UICONTROL Définir la valeur]** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
 
 Par exemple, la règle suivante appelle un service get qui utilise l’ID d’employé comme entrée et les valeurs renvoyées sont renseignées dans les champs ID, Nom, Prénom et Sexe correspondants du formulaire.
 
@@ -161,15 +161,15 @@ Par exemple, la règle suivante appelle un service get qui utilise l’ID d’em
 
 En outre, vous pouvez utiliser l’API `guidelib.dataIntegrationUtils.executeOperation` pour écrire un code JavaScript dans l’éditeur de code pour l’éditeur de règles. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
 
-### Appeler un modèle de données de formulaire à l’aide de fonctions personnalisées {#invoke-form-data-model-using-custom-functions}
+### Appeler un modèle de données de formulaire (FDM) à l’aide de fonctions personnalisées {#invoke-form-data-model-using-custom-functions}
 
-Vous pouvez [appel d’un modèle de données de formulaire à partir de l’éditeur de règles à l’aide de fonctions personnalisées](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Pour appeler le modèle de données de formulaire, ajoutez un modèle de données de formulaire à la liste autorisée. Pour ajouter un modèle de données de formulaire à une liste autorisée :
+Vous pouvez [appel d’un modèle de données de formulaire à partir de l’éditeur de règles à l’aide de fonctions personnalisées](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Pour appeler le modèle de données de formulaire (FDM), ajoutez un modèle de données de formulaire à la liste autorisée. Pour ajouter un modèle de données de formulaire à une liste autorisée :
 
 1. Accédez à la console web Experience Manager à l’adresse `https://server:host/system/console/configMgr`.
 1. Localiser **[!UICONTROL Liste blanche adaptative au niveau du formulaire du modèle de données de formulaire pour l’appel de service - Fabrique de configuration]**.
 1. Cliquez sur ![icône plus](/help/forms/assets/Smock_Add_18_N.svg) pour ajouter la configuration.
 1. Ajouter **[!UICONTROL Modèle de chemin d’accès au contenu]** pour spécifier l’emplacement de votre Forms adaptatif.  Par défaut, la valeur est `/content/forms/af/(.*)` qui inclut toutes les Forms adaptatives. Vous pouvez également spécifier le chemin d’accès d’un formulaire adaptatif spécifique.
-1. Ajouter **[!UICONTROL Modèle de données de formulaire]** pour spécifier l’emplacement du modèle de données de formulaire. Par défaut, la valeur est `/content/dams/formsanddocuments-fdm/(.*)` qui inclut tous les modèles de données de formulaire. Vous pouvez également spécifier le chemin d’accès d’un modèle de données de formulaire spécifique.
+1. Ajouter **[!UICONTROL Modèle de données de formulaire]** pour spécifier l’emplacement du modèle de données de formulaire (FDM). Par défaut, la valeur est `/content/dams/formsanddocuments-fdm/(.*)` qui inclut tous les modèles de données de formulaire (FDM). Vous pouvez également spécifier le chemin d’accès d’un modèle de données de formulaire (FDM) spécifique.
 1. Enregistrez les paramètres.
 
 La configuration ajoutée est enregistrée sous le **[!UICONTROL Liste blanche adaptative au niveau du formulaire du modèle de données de formulaire pour l’appel de service - Fabrique de configuration]** .
@@ -178,7 +178,7 @@ La configuration ajoutée est enregistrée sous le **[!UICONTROL Liste blanche a
 
 >[!NOTE]
 >
-> Pour appeler un modèle de données de formulaire à partir de l’éditeur de règles à l’aide de fonctions personnalisées par le biais d’un projet d’archétype AEM :
+> Pour appeler un modèle de données de formulaire (FDM) à partir de l’éditeur de règles à l’aide de fonctions personnalisées par le biais d’un projet d’archétype AEM :
 >
 >1. [Création d’un fichier de configuration](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
 >1. Définissez les propriétés de getContentPathPattern et getFormDataModelPathPattern.

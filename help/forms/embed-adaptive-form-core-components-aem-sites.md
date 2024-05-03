@@ -4,10 +4,10 @@ description: Utilisez les composants principaux de formulaire adaptatif dans une
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 91%
+source-wordcount: '2071'
+ht-degree: 89%
 
 ---
 
@@ -110,12 +110,12 @@ Dans la boîte de dialogue [!UICONTROL Modifier le conteneur de formulaires adap
    * **Service de préremplissage** : vous pouvez utiliser le service de préremplissage pour remplir automatiquement les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ouvre un formulaire, les valeurs de ces champs sont préremplies. Pour plus d’informations sur le service de préremplissage, voir [Préremplir les champs de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager.html?lang=fr).
    * **Catégorie de bibliothèque cliente** : spécifiez les [fonctions JavaScript](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=fr#custom-functions) qui sont utilisées dans les expressions et prises en charge par les formulaires adaptatifs.
 * **Modèle de données** : un modèle de données vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez le **[!UICONTROL modèle de données de formulaire]** si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
-   * **Modèle de données de formulaire** : un modèle de données de formulaire permet à un formulaire adaptatif de communiquer avec des sources de données disparates. Pour plus d’informations sur la configuration d’une source de données, voir [Configurer des sources de données](/help/forms/configure-data-sources.md).
+   * **Modèle de données de formulaire**: un modèle de données de formulaire (FDM) permet à un formulaire adaptatif de communiquer avec des sources de données disparates. Pour plus d’informations sur la configuration d’une source de données, voir [Configurer des sources de données](/help/forms/configure-data-sources.md).
    * **Schéma** : le schéma représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation. Vous pouvez [associer le schéma à un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=fr) et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif.
 
      >[!NOTE]
      >
-     > Après avoir configuré le modèle de données de formulaire, vous ne pouvez pas modifier le modèle de formulaire associé. Il est toutefois possible de modifier le schéma associé au modèle de données de formulaire.
+     > Après avoir configuré le modèle de données de formulaire (FDM), vous ne pouvez pas modifier le modèle de formulaire associé. Il est toutefois possible de modifier le schéma associé au modèle de données de formulaire (FDM).
 
 * **Onglet Envoi**
 
@@ -125,8 +125,8 @@ Dans la boîte de dialogue [!UICONTROL Modifier le conteneur de formulaires adap
       * **Action d’envoi** : une action d’envoi est déclenchée lorsqu’un utilisateur ou une utilisatrice clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez [configurer l’action d’envoi sur le formulaire adaptatif](/help/forms/configuring-submit-actions.md). Les formulaire adaptatifs fournissent certaines actions d’envoi prêtes à l’emploi :
          * Envoyer vers le point d’entrée REST
          * Envoyer un e-mail
-         * Envoyer à l’aide du modèle de données de formulaire
-         * Appeler un processus AEM
+         * Envoyer à l’aide du modèle de données de formulaire (FDM)
+         * Appeler un workflow AEM
          * Envoyer à SharePoint
          * Envoyer à OneDrive
          * Envoyer au stockage Blob Azure
