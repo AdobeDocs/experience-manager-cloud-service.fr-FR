@@ -5,10 +5,10 @@ contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 83%
+source-wordcount: '213'
+ht-degree: 69%
 
 ---
 
@@ -53,3 +53,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 Les utilisateurs ne peuvent pas exécuter le pipeline de création. Le pipeline échoue après un certain temps d’exécution.
 
 Pour résoudre ce problème, ouvrez Cloud Manager, sélectionnez l’option **[!UICONTROL Mettre à jour]** pour votre environnement, puis exécutez le pipeline.
+
+
+## Les lots ne sont pas à l’état actif {#bundles-inactive-state}
+
+Pour résoudre le problème, procédez comme suit :
+
+1. Démarrez AEM et attendez qu’il démarre complètement jusqu’à ce que tous les lots soient démarrés.
+1. Arrêtez AEM (Ctrl + C).
+1. Placement de Forms `.far` dans le dossier d’installation.
+1. Redémarrez le serveur AEM.

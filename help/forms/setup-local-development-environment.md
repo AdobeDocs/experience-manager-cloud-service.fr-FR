@@ -4,10 +4,10 @@ description: Configuration d’un environnement de développement local pour Ado
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
 workflow-type: tm+mt
-source-wordcount: '2726'
-ht-degree: 91%
+source-wordcount: '2762'
+ht-degree: 89%
 
 ---
 
@@ -91,6 +91,11 @@ Pour télécharger la dernière version du SDK Adobe Experience Manager as a C
 1. Accédez à l’onglet **[!UICONTROL AEM as a Cloud Service]**.
 1. Effectuez un tri par date de publication dans l’ordre décroissant.
 1. Cliquez sur le dernier SDK Adobe Experience Manager as a Cloud Service, l’archive de fonctionnalités Experience Manager Forms (module complémentaire AEM Forms), les ressources de référence de formulaires ou Forms Designer.
+
+   >[!NOTE]
+   >
+   > Il est recommandé de télécharger la dernière version de l’archive de fonctionnalités Experience Manager Forms (module complémentaire AEM Forms), des ressources de référence de formulaires ou de Forms Designer pour une compatibilité transparente avec le SDK Adobe Experience Manager as a Cloud Service.
+
 1. Examinez et acceptez le contrat de licence de l’utilisateur final. Sélectionnez le bouton **[!UICONTROL Télécharger]**.
 
 ## Configuration des outils de développement pour les projets AEM {#setup-development-tools-for-AEM-projects}
@@ -136,6 +141,13 @@ L’archive des fonctionnalités Adobe Experience Manager Forms as a Cloud Servi
    >[!NOTE]
    >
    > Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+
+<!--**Q**: I've set up a Aem as a Cloud Service environment and added the Forms Add-On for a project. After the .far file addition, the bundles are not in the active state and are in installed state only due to the missing dependencies. How to make the bundles in the active state?
+**A**: To resolve the issue:
+1. Start the AEM and wait for it to start completely (all bundles up)
+1. Stop aem (ctrl + c). Place the forms far in the install folder.
+1. Restart AEM.-->
+
 
 ### Configuration des utilisateurs et des autorisations {#configure-users-and-permissions}
 
