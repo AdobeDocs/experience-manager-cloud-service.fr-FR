@@ -2,7 +2,7 @@
 title: Tests fonctionnels
 description: Découvrez les trois différents types de tests fonctionnels intégrés au processus de déploiement AEM as a Cloud Service pour garantir la qualité et la fiabilité de votre code.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 9%
@@ -45,9 +45,9 @@ Le diagramme suivant présente une vue détaillée des points de contrôle de qu
 
 |                               | Tests unitaires | Personnalisé<br/> Tests fonctionnels | Personnalisé<br/> Tests de l’interface utilisateur | Client<br/> Validations | Manuel<br/> Tests |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Pipeline de production** | Oui<br/>Blocage<br/> | Oui<br/>Blocage<br/>Délai d’expiration de 60 m | Oui<br/>Blocage<br/>Délai d’expiration de 60 m | Non | Non |
-| **Pipeline hors production** | Oui<br/>Blocage<br/> | Opt-in<br/>Blocage<br/>Délai d’expiration de 60 m | Opt-in<br/>Blocage<br/>Délai d’expiration de 60 m | Non | Non |
-| **Validation interne de l’Adobe** | Oui<br/>Blocage<br/> | Oui<br/>Blocage<br/>Délai d’expiration de 60 m | Oui<br/>Blocage<br/>Délai d’expiration de 60 m | Non | Non |
+| **Pipeline de production** | Oui<br/>Blocage<br/> | Oui<br/>Blocage<br/>Délai d’expiration de 60 m | Oui<br/>Blocage<br/>Délai d’expiration de 30 m | Non | Non |
+| **Pipeline hors production** | Oui<br/>Blocage<br/> | Opt-in<br/>Blocage<br/>Délai d’expiration de 60 m | Opt-in<br/>Blocage<br/>Délai d’expiration de 30 m | Non | Non |
+| **Validation interne de l’Adobe** | Oui<br/>Blocage<br/> | Oui<br/>Blocage<br/>Délai d’expiration de 60 m | Oui<br/>Blocage<br/>Délai d’expiration de 30 m | Non | Non |
 | **Client CI/CD** | Oui | Oui | Oui | Oui | Oui |
 | **Développeur local du client** | Oui | Oui | Oui | Oui | Oui |
 
@@ -99,7 +99,7 @@ Voir [exemples de tests open-source](https://github.com/adobe/aem-test-samples/t
 
 Pour plus d’informations, consultez [Tests personnalisés de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
-### Contrôle de l’expérience
+### Audit d’expérience
 
 Le point de contrôle de la qualité de l’expérience est performant [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) audits sur la page web du client.
 
