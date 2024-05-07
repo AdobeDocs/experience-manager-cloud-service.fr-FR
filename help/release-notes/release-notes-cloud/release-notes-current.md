@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
+source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
 workflow-type: tm+mt
-source-wordcount: '1963'
-ht-degree: 99%
+source-wordcount: '2655'
+ht-degree: 73%
 
 ---
 
@@ -210,6 +210,80 @@ Lors du débogage du code dans un [environnement de développement rapide (RDE)]
 * diffuser plusieurs journaux en parallèle.
 
 Veuillez contacter **<aemcs-rde-support@adobe.com>** pour essayer cette fonctionnalité et fournir des commentaires.
+
+
+## Guides d’[!DNL Experience Manager] {#guides}
+
+
+### Possibilité de traduire du contenu dans plusieurs langues à l’aide de groupes de langues préconfigurés
+
+Les Guides du Experience Manager vous permettent désormais de créer des groupes de langues et de traduire facilement votre contenu dans plusieurs langues. Cette fonctionnalité vous permet d’organiser et de gérer les traductions en fonction des besoins de votre entreprise.
+
+Par exemple, si vous devez traduire votre contenu pour certains pays d’Europe, vous pouvez créer un groupe de langues pour les langues européennes telles que l’anglais (EN), le français (FR), l’allemand (DE), l’espagnol (ES) et l’italien (IT).
+
+![panneau de traduction](../assets/guides/translation-languages-2404.png)
+
+*Sélectionnez les groupes de langues ou les langues que vous souhaitez traduire vos documents.*
+
+>[!NOTE]
+>
+>Si le dossier cible d’une langue est manquant ou si la langue cible est identique à la source, elle est grisée et affiche un signe d’avertissement.
+
+En tant qu’administrateur, vous pouvez créer des groupes de langues et les configurer sur plusieurs profils de dossiers. En tant qu’auteur, vous pouvez afficher les groupes de langues configurés sur votre profil de dossier.
+
+
+Dans l’ensemble, la création de groupes de langues améliore l’efficacité et la productivité des projets de traduction, améliorant ainsi le processus de localisation dans plusieurs langues.
+
+
+Découvrez comment [traduire des documents à partir de l’éditeur Web](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+
+### Expérience incorporée pour rechercher et filtrer des fichiers dans la vue du référentiel
+
+Vous disposez désormais d’une expérience améliorée lors du filtrage des fichiers. La nouvelle fonctionnalité de filtrage des fichiers offre un moyen amélioré de rechercher et de parcourir facilement des fichiers.
+
+![fichiers de recherche dans la vue du référentiel](../assets/guides/repository-filter-search-2404.png)
+
+*Recherche des fichiers contenant le texte`general purpose.`*
+
+Profitez des avantages tels qu’un accès plus rapide aux fichiers pertinents et une interface utilisateur plus intuitive, ce qui rend votre expérience de recherche plus fluide et plus efficace.
+
+![filtre de recherche rapide ](../assets/guides/repository-filter-search-quick.png)
+
+*Utilisez les filtres rapides pour rechercher des fichiers DITA et non DITA.*
+
+En savoir plus sur les **Recherche de filtre** de la fonction [Panneau gauche](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) .
+
+### Améliorations apportées aux Data Source Connectors
+
+Les améliorations suivantes ont été apportées aux connecteurs de source de données pour la version 2024.4.0 :
+
+#### Connexion aux sources de données Salsify, Akeneo et Microsoft Azure Dev Ops (ADO)
+
+Outre les connecteurs prêts à l’emploi existants, Experience Manager Guides fournit également des connecteurs pour les sources de données Salsify, Akeneo et Microsoft Azure DevOps (ADO). En tant qu’administrateur, vous pouvez télécharger et installer ces connecteurs. Ensuite, configurez les connecteurs installés.
+
+#### Copie et collage de l’exemple de requête pour créer un fragment de contenu ou une rubrique
+
+Vous pouvez facilement copier et coller un exemple de requête de données dans le générateur pour créer un fragment de contenu ou une rubrique. Avec cette fonction, vous n’avez pas à mémoriser la syntaxe ni à créer une requête manuellement. Au lieu de saisir manuellement la requête, vous pouvez copier et coller un exemple de requête, la modifier et l’utiliser pour récupérer les données selon vos besoins.
+
+![Insérer un fragment de contenu, boîte de dialogue](../assets/guides/insert-content-snippet.png)
+
+*Copiez et modifiez un exemple de requête pour créer le fragment de contenu.*
+
+#### Connexion aux fichiers de données JSON à l’aide d’un connecteur de fichier
+
+
+Désormais, en tant qu’administrateur, vous pouvez configurer un connecteur de fichier JSON pour utiliser les fichiers de données JSON comme source de données. Utilisez le connecteur pour importer les fichiers JSON de votre ordinateur ou d’Adobe Experience Manager Assets. Ensuite, en tant qu’auteur, vous pouvez créer des fragments de contenu ou des rubriques à l’aide des générateurs.
+
+Cette fonctionnalité vous permet d’utiliser les données stockées dans vos fichiers JSON et de les réutiliser dans divers fragments de code. Le contenu est également mis à jour dynamiquement chaque fois que vous mettez à jour les fichiers JSON.
+
+#### Configuration de plusieurs URL de ressource pour un connecteur afin de créer des fragments de contenu ou des rubriques
+
+En tant qu’administrateur, vous pouvez configurer plusieurs URL de ressources pour certains connecteurs tels que Generic REST Client, Salsify, Akeneo et Microsoft Azure DevOps Board (ADO).
+Ensuite, en tant qu’auteur, connectez-vous aux sources de données pour créer des fragments de contenu ou des rubriques à l’aide des générateurs. Cette fonctionnalité est pratique, car vous n’avez pas à créer de source de données pour chaque URL. Cela vous permet de récupérer rapidement des données d’une source de données spécifique dans un fragment de contenu ou une rubrique unique. Afficher plus de détails sur les connecteurs de source de données et comment [configurer un connecteur de source de données à partir de l’interface utilisateur](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Découvrez comment [utiliser les données de votre source de données ;](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+
+Pour plus d’informations sur les nouvelles fonctionnalités et améliorations, voir [Nouveautés de la version 2024.04.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+
+Pour connaître la liste des problèmes résolus dans cette version, consultez [Correction de problèmes dans la version 2024.4.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
 
 ## Cloud Manager {#cloud-manager}
 
