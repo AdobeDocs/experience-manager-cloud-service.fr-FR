@@ -97,7 +97,7 @@ Vous pouvez désormais [affecter un formulaire de métadonnées à plusieurs dos
 
 -->
 
-### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
+### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
 
 * **Éditeur de règles visuel amélioré pour les formulaires adaptatifs basés sur les composants principaux** : cette version introduit une mise à niveau significative de l’éditeur de règles visuel pour les formulaires adaptatifs basés sur les composants principaux. Cette version introduit une mise à niveau significative de l’éditeur de règles visuel pour les formulaires adaptatifs basés sur les composants principaux. Cette mise à jour porte sur la rationalisation des interactions avec des fonctions personnalisées, ce qui vous permet de créer des formulaires plus robustes et efficaces.
 
