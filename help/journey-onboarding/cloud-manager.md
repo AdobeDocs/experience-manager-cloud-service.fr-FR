@@ -3,9 +3,9 @@ title: Accéder à Cloud Manager
 description: Découvrez comment accéder à Cloud Manager afin de pouvoir configurer les ressources de votre projet.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 5c9dbaa25f0142afdae8b09dc18d1e1aaaf4c1fb
+source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
 workflow-type: ht
-source-wordcount: '1044'
+source-wordcount: '1040'
 ht-degree: 100%
 
 ---
@@ -88,7 +88,7 @@ Une fois que vous avez accédé à Cloud Manager, ce que vous voyez dépend de 
 
 ### Lorsqu’il n’existe aucun programme {#no-programs}
 
-S’il n’existe aucun programme dans votre organisation, votre page d’entrée vous invite à créer votre premier programme.
+S’il n’existe aucun programme dans votre organisation, votre page de destination vous invite à créer votre premier programme.
 
 ![Aucun programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
@@ -109,8 +109,6 @@ Si des programmes existent déjà dans votre organisation et que vous êtes admi
 Une fois que vous êtes connecté à Cloud Manager, vous pouvez vérifier que le profil de produit **Propriétaire de l’entreprise** vous a été attribué.
 
 1. Sélectionnez votre profil en haut à droite de la fenêtre.
-
-   ![Profil utilisateur](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. Pour afficher les rôles affectés à votre utilisateur ou utilisatrice, sélectionnez **Rôles utilisateur**.
 
