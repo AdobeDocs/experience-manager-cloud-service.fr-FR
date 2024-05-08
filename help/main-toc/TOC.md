@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
+source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
-source-wordcount: '4915'
-ht-degree: 99%
+source-wordcount: '4917'
+ht-degree: 100%
 
 ---
 
@@ -204,6 +204,7 @@ ht-degree: 99%
       + [Attribuer des profils de produit AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tâches du développeur et du responsable de déploiement](/help/journey-onboarding/developers.md)
       + [Tâches utilisateur d’AEM](/help/journey-onboarding/aem-users.md)
+      + [Liste de contrôle de mise en production](/help/journey-onboarding/go-live-checklist.md)
    + Parcours complémentaire des démonstrations de référence d’AEM {#demo-add-on}
       + [Vue d’ensemble](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -570,7 +571,7 @@ ht-degree: 99%
       + [Surveiller une ressource, des dossiers et des collections](/help/assets/manage-notifications-assets-view.md)
       + [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
       + [Gérer les balises](/help/assets/tagging-management-assets-view.md)
-      + [Publication de ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
    + Bonnes pratiques{#best-practices}
       + [Bonnes pratiques de recherche](/help/assets/search-best-practices.md)
       + [Gestion des métadonnées et bonnes pratiques](/help/assets/metadata-best-practices.md)
@@ -652,7 +653,7 @@ ht-degree: 99%
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer et utiliser des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md)
             + [Ajouter des règles à un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components.md)
-            + [Conception d’un schéma JSON pour un formulaire adaptatif (composants principaux)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+            + [Créer un schéma JSON pour un formulaire adaptatif (composants principaux)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
       + Composants de base {#authoring-adaptive-forms-foundation-components}
@@ -851,12 +852,12 @@ ht-degree: 99%
          + [Utiliser les règles pour ajouter un comportement dynamique à un formulaire](/help/edge/docs/forms/rules-forms.md)
          + [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
       + Fonctionnalités {#advanced-features-edge-delivery-services-forms}
-         + [Utilisation de fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
+         + [Utiliser des fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
          + [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
          + [Traduire votre formulaire](/help/edge/docs/forms/translate-forms.md)
          + [Utiliser reCAPTCHA pour protéger vos formulaires](/help/edge/docs/forms/recaptacha-forms.md)
          + [Composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
-         + [Surveillance de l’utilisation réelle des formulaires](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Surveillance des utilisateurs et utilisatrices réels pour les formulaires](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + Références {#forms-references}
          + [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
    + Resources Edge Delivery {#resources}
