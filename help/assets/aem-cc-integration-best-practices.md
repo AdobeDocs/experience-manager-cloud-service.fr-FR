@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3431'
+source-wordcount: '3438'
 ht-degree: 94%
 
 ---
@@ -99,7 +99,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 * **Mise à jour/modification majeure des ressources :** modification d’une ressource numérique qui nécessite un travail considérable et qui doit parfois être effectuée sur une plus longue période de temps. Celle-ci implique généralement plusieurs modifications. La ressource doit être enregistrée plusieurs fois lors de la mise à jour. En règle générale, les mises à jour majeures de la ressource entraînent le passage à une étape en cours.
 * **DAM :** gestion des ressources numériques (en anglais, Digital Asset Management). Dans ce document, il est synonyme d’Adobe Experience Manager () Assets, sauf mention contraire.
 * **Utilisateur créatif :** professionnel de la création, qui crée des ressources numériques à l’aide des applications et services Creative Cloud. Dans certains cas, un utilisateur créatif peut faire partie d’une équipe créative qui peut utiliser Creative Cloud, mais ne crée pas de ressources numériques (comme un directeur créatif ou un chef d’équipe créative).
-* **Utilisateur de la gestion des ressources numériques :** utilisateur ordinaire d’un système de gestion des ressources numériques (DAM, Digital Asset Management). En fonction de l’organisation, un utilisateur DAM peut être un utilisateur marketing ou non marketing, par exemple un utilisateur métier, un bibliothécaire, un commercial, etc.
+* **Utilisateur de la gestion des ressources numériques :** utilisateur ordinaire d’un système de gestion des ressources numériques (DAM, Digital Asset Management). En fonction de l’organisation, un utilisateur ou une utilisatrice DAM peut être un utilisateur ou une utilisatrice marketing ou non marketing, par exemple un utilisateur ou une utilisatrice du secteur d’activité, un ou une bibliothécaire, un vendeur ou une vendeuse, etc.
 
 ### Remarques concernant l’utilisation de l’intégration Experience Manager et Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -248,3 +248,4 @@ Si vous utilisez des partages de fichiers réseau pour gérer les ressources num
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

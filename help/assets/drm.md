@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '1367'
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '1368'
 ht-degree: 100%
 
 ---
@@ -169,3 +169,4 @@ Une ressource est considérée comme protégée si l’une de ces conditions est
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

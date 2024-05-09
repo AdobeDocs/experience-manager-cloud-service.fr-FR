@@ -4,10 +4,10 @@ description: Effectuez la gestion de vos documents PDF dans [!DNL Adobe Experien
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 89%
+source-wordcount: '838'
+ht-degree: 88%
 
 ---
 
@@ -147,3 +147,4 @@ Pour prévisualiser plusieurs pages dans d’autres formats de documents pris en
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

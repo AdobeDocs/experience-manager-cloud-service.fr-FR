@@ -2,10 +2,10 @@
 title: Balises de couleurs pour les images
 description: Adobe Experience Manager Assets vous permet de distinguer les couleurs d’une image et de les appliquer automatiquement sous forme de balises. Vous pouvez ensuite utiliser ces balises pour rechercher et filtrer des images.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 73%
+source-wordcount: '1244'
+ht-degree: 72%
 
 ---
 
@@ -30,7 +30,7 @@ La figure suivante illustre l’ordre des tâches que vous effectuez pour config
 | TIFF | .tif et .tiff | image/tiff | sRGB | 4 Go (limitée par les spécifications de format) | 2 000 × 2 000 pixels |
 | PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 Go (limitée par les spécifications de format) | 2 000 × 2 000 pixels |
 | GIF | .gif | image/gif | sRVB | 15 Go | 2 000 × 2 000 pixels |
-| BMP | .bmp | image/bmp | sRVB | 4 Go (limitée par les spécifications de format) | 2 000 × 2 000 pixels |
+| BMP | .bmp | image/bmp | sRVB | 4 Go (limitée par les spécifications de format) | 2 000 × 2 000 pixels |
 
 ## Gérer les propriétés du balisage des couleurs {#manage-color-tagging-properties}
 
@@ -42,7 +42,7 @@ Pour gérer les propriétés de balisage des couleurs pour les images :
 
 1. Spécifiez le format d’affichage de la balise de couleur dans le champ **[!UICONTROL Format d’affichage]**. Les options possibles incluent le nom de la couleur, le RGB ou le format HEX.
 
-1. Indiquez le nombre de couleurs que vous souhaitez baliser pour les images dans la variable **[!UICONTROL Limite]** champ . Ces couleurs s’affichent lorsque vous affichez les propriétés d’une image. Vous pouvez définir un nombre compris entre un et 40 dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
+1. Indiquez le nombre de couleurs que vous souhaitez baliser pour les images dans la variable **[!UICONTROL Limite]** champ . Ces couleurs s’affichent lorsque vous consultez les propriétés d’une image. Vous pouvez définir un nombre compris entre un et 40 dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
 
 1. Indiquez le pourcentage de couverture colorimétrique minimal pour inclure une balise de couleur dans les résultats de recherche dans le champ **[!UICONTROL % de seuil de couverture/dominance]**. Par exemple, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 9 % dans ce champ, l’image est incluse lorsque vous recherchez des images de couleur rouge. Cependant, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 11 % dans ce champ, l’image n’est pas incluse lorsque vous recherchez des images comprenant la couleur rouge.
 
@@ -196,3 +196,4 @@ Pour rechercher des images en fonction des couleurs :
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

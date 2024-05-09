@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '777'
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '772'
 ht-degree: 100%
 
 ---
@@ -24,31 +24,31 @@ Les utilisateurs peuvent créer des profils de traitement afin d’automatiser l
 
 * **Correction automatique de la perspective verticale** : utilise l’intelligence artificielle pour analyser le contenu de l’image et corriger la perspective biaisée dans les images. Par exemple, pour créer des horizons de niveau.
 
-   ![Correction automatique de la hauteur de ton](/help/assets/assets/content-automation-autotone.png)
+  ![Correction automatique de la hauteur de ton](/help/assets/assets/content-automation-autotone.png)
 
-   *Image : la correction automatique de la hauteur de ton et le redressement automatique peuvent améliorer les images biaisées.*
+  *Image : la correction automatique de la hauteur de ton et le redressement automatique peuvent améliorer les images biaisées.*
 
 * **Paramètres prédéfinis Lightroom** : applique une apparence définie par l’utilisateur aux images afin d’obtenir un aspect cohérent à l’aide de paramètres prédéfinis personnalisés.
 
-   ![Paramètre prédéfini Lightroom](/help/assets/assets/content-automation-lrpresets.png)
+  ![Paramètre prédéfini Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Image : paramètre prédéfini Lightroom d’Adobe pour améliorer la qualité de l’image de manière cohérente pour de nombreuses images.*
+  *Image : paramètre prédéfini Lightroom d’Adobe pour améliorer la qualité de l’image de manière cohérente pour de nombreuses images.*
 
 * **Découpage d’image** : utilise l’intelligence artificielle pour créer une sélection autour d’objets importants et supprimer l’arrière-plan à l’aide d’une seule commande.
 
-   ![Supprimer l’arrière-plan et couper une image d’une photo](/help/assets/assets/content-automation-backgroundremove.png)
+  ![Supprimer l’arrière-plan et couper une image d’une photo](/help/assets/assets/content-automation-backgroundremove.png)
 
 * **Masque d’image** : utilise l’intelligence artificielle pour créer un masque autour des objets importants à l’aide d’une seule commande.
 
-   ![Masquage d’une image à l’aide de l’IA](/help/assets/assets/content-automation-mask.png)
+  ![Masquage d’une image à l’aide de l’IA](/help/assets/assets/content-automation-mask.png)
 
 * **Actions Photoshop** : applique une série de tâches [!DNL Adobe Photoshop] à un fichier ou à un lot de fichiers.
 
-   ![Actions Photoshop](/help/assets/assets/content-automation-psactions.png)
+  ![Actions Photoshop](/help/assets/assets/content-automation-psactions.png)
 
 * **Remplacement d’objet intelligent** : effectue une personnalisation à grande échelle en vous permettant de permuter des images tout en conservant tous les effets et ajustements appliqués dans un fichier PSD.
 
-   ![Remplacement d’objets de façon intelligente](/help/assets/assets/content-automation-objectreplace.png)
+  ![Remplacement d’objets de façon intelligente](/help/assets/assets/content-automation-objectreplace.png)
 
 ## Activation de l’automatisation du contenu pour le programme AEM as a Cloud Service {#enable-content-automation}
 
@@ -115,10 +115,10 @@ Pour traiter les ressources existantes, sélectionnez les ressources, sélection
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Configuration et utilisation des microservices de ressources via des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
 >* [ [!DNL Experience Manager] Intégration avec [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Ingestion et traitement de ressources à l’aide des microservices de ressources : Vue d’ensemble](/help/assets/asset-microservices-overview.md).
-

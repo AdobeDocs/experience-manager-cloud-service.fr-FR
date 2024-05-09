@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2573'
 ht-degree: 92%
 
 ---
@@ -295,7 +295,7 @@ Procédez comme suit pour générer les informations d’identification du compt
    >[!NOTE]
    >
    >* Vous pouvez voir les informations d’identification et effectuer des actions (générer des jetons JWT, copier les informations d’identification, récupérer le secret client, etc.).
-   >* Actuellement, seul le type d’informations d’identification du compte de service Developer Console (JWT) de l’Adobe est pris en charge. N’utilisez pas la variable `OAuth Server-to-Server` type d’informations d’identification jusqu’à ce qu’il soit pris en charge mi-avril. En savoir plus sur [Obsolescence des informations d’identification JWT dans la console Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >* Actuellement, seul le type d’informations d’identification du compte de service Developer Console (JWT) de l’Adobe est pris en charge. N’utilisez pas la variable `OAuth Server-to-Server` type d’informations d’identification jusqu’à ce qu’il soit pris en charge mi-avril. En savoir plus sur [Obsolescence des informations d’identification JWT dans la console Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html?lang=fr).
 
 1. Dans l’onglet **[!UICONTROL Client Credentials]** (Informations d’identification client), copiez l’**[!UICONTROL ID client]**.
 
@@ -545,3 +545,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

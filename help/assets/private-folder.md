@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 92%
+source-wordcount: '621'
+ht-degree: 97%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 92%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-Vous pouvez créer un dossier privé dans l’interface utilisateur d’[!DNL Adobe Experience Manager Assets] qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents privilèges. En fonction du niveau de privilège que vous attribuez, les utilisateurs peuvent effectuer diverses tâches sur le dossier, comme afficher les ressources du dossier ou les modifier.
+Vous pouvez créer un dossier privé dans l’interface utilisateur d’[!DNL Adobe Experience Manager Assets] qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents privilèges. Selon le niveau de privilège que vous attribuez, les utilisateurs et utilisatrices peuvent effectuer différentes tâches dans le dossier, par exemple consulter ou modifier des ressources du dossier.
 
 >[!NOTE]
 >
->Le dossier privé comporte au moins un membre ayant un rôle Propriétaire.
+>Le dossier privé comporte au moins un ou une membre ayant un rôle Propriétaire.
 >
 >Pour créer un dossier privé, vous avec besoin des autorisations `Read` et `Modify` sur le dossier parent sous lequel vous créez un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut au niveau de `/content/dam`. Dans ce cas, commencez par obtenir ces autorisations pour votre ID utilisateur/groupe avant d’essayer de créer des dossiers privés ou d’afficher les paramètres de dossier.
 
@@ -95,3 +95,4 @@ Vous pouvez supprimer un dossier en le sélectionnant et en sélectionnant [!UIC
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '905'
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '901'
 ht-degree: 100%
 
 ---
@@ -29,15 +29,15 @@ Pour afficher les statistiques d’utilisation des ressources, commencez par con
 
 >[!NOTE]
 >
->Les statistiques sont uniquement prises en charge et fournies pour les images.
+>Les informations sont uniquement prises en charge et fournies pour les images.
 
 ## Affichage des statistiques pour une image {#viewing-statistics-for-an-image}
 
 Vous pouvez afficher les scores de statistiques sur les ressources à partir de la page des métadonnées.
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez l’image, puis appuyez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
-1. Sur la page Propriétés, appuyez sur **[!UICONTROL Statistiques]**.
-1. Consultez les détails d’utilisation de la ressource dans l’onglet **[!UICONTROL Statistiques]**. La section **[!UICONTROL Score]** indique les scores totaux d’utilisation et de performances d’une ressource.
+1. Sur la page Propriétés, appuyez sur **[!UICONTROL Insights]**.
+1. Consultez les détails d’utilisation de la ressource dans l’onglet **[!UICONTROL Insights]**. La section **[!UICONTROL Score]** indique les scores totaux d’utilisation et de performances d’une ressource.
 
    Le score d’utilisation indique le nombre de fois que la ressource est utilisée dans diverses solutions.
 
@@ -70,11 +70,11 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
 ## Affichage des statistiques générales pour les images {#viewing-aggregate-statistics-for-images}
 
-Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Statistiques]**.
+Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Informations]**.
 
-1. Dans l’interface utilisateur d’Assets, accédez au dossier contenant les ressources dont vous souhaitez consulter les statistiques.
+1. Dans l’interface utilisateur d’Assets, accédez au dossier contenant les ressources dont vous souhaitez consulter les informations.
 1. Cliquez sur l’option **[!UICONTROL Mise en page]** de la barre d’outils, puis sélectionnez **[!UICONTROL Mode Statistiques]**.
-1. La page affiche les scores d’utilisation des ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
+1. La page affiche les scores d’utilisation des ressources. Comparez les évaluations des différentes ressources et tirez-en des enseignements.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
@@ -96,13 +96,13 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 >[!NOTE]
 >
->Les statistiques sont uniquement prises en charge et fournies pour les images.
+>Les informations sont uniquement prises en charge et fournies pour les images.
 
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. Cliquez sur la vignette **[!UICONTROL Configuration des statistiques]**.
+1. Cliquez sur la carte **[!UICONTROL Configuration d’Insights]**.
 
 1. Pour obtenir les informations d’accès au service Web Analytics, accédez à **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Outils d’administration]** > **[!UICONTROL Paramètres d’entreprise]** > **[!UICONTROL Services Web]** et copiez la clé **[!UICONTROL Secret partagé]**.
 
@@ -128,7 +128,7 @@ Une fois que vous avez configuré votre compte Adobe Analytics, le code de suivi
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. Sur la page **[!UICONTROL Navigation]**, cliquez sur la carte **[!UICONTROL Dispositif de suivi de la page de statistiques]**.
+1. Sur la page **[!UICONTROL Navigation]**, cliquez sur la carte **[!UICONTROL Dispositif de suivi de la page d’informations]**.
 1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger le code de suivi de page.
 
 <!--
@@ -186,7 +186,7 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
@@ -195,3 +195,4 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '4270'
-ht-degree: 81%
+source-wordcount: '4277'
+ht-degree: 82%
 
 ---
 
@@ -270,7 +270,7 @@ De plus, désactivez l’option Forcer la suppression à l’aide d’un recouvr
    * **[!UICONTROL Supprimer]** pour confirmer l’action :
 
       * Si la ressource ne comporte aucune référence, elle est supprimée.
-      * Si la ressource comporte des références, un message d’erreur vous informe que **[!UICONTROL Une ou plusieurs ressources sont référencées.]**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+      * Si la ressource comporte des références, un message d’erreur vous informe que **[!UICONTROL une ou plusieurs ressources sont référencées.]**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
 
    >[!NOTE]
    >
@@ -340,7 +340,7 @@ Pour des recherches simples, avancées et personnalisées pour découvrir et uti
 
 Les icônes d’action rapide sont disponibles pour une ressource à la fois. Selon l’appareil, effectuez les actions suivantes pour afficher les icônes d’action rapide :
 
-* Appareils tactiles : appuyez longuement. Par exemple, sur une iPad, vous pouvez sélectionner une ressource et la maintenir enfoncée afin que les actions rapides s’affichent.
+* Appareils tactiles : appuyez longuement. Par exemple, sur un iPad, vous pouvez appuyer longuement sur une ressource pour afficher les actions rapides.
 * Appareils non tactiles : survolez avec le pointeur. Par exemple, sur un poste de travail, la barre d’actions rapides s’affiche si vous survolez la miniature de la ressource avec le pointeur de la souris.
 
 <!-- Hiding this topic via cqdoc-18707
@@ -675,3 +675,4 @@ Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide 
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

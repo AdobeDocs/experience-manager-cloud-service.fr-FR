@@ -4,10 +4,10 @@ description: Modifications notables apportées à [!DNL Adobe Experience Manager
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 99%
+source-wordcount: '998'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Le chargement des ressources est optimisé pour bénéficier d’une meilleure e
    * Pour une comparaison des méthodes d’API disponibles pour les opérations CRUD de base, voir [API et opérations relatives aux ressources](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
 * Le workflow par défaut de **[!UICONTROL Mise à jour des ressources DAM]** des versions précédentes d’[!DNL Experience Manager] n’est plus disponible. Au lieu de cela, les microservices de ressources fournissent un service évolutif et facilement disponible qui couvre la plupart du traitement des ressources par défaut (rendus, extraction de métadonnées, extraction de texte pour indexation).
    * Voir [Configuration et utilisation des microservices de ressources](/help/assets/asset-microservices-configure-and-use.md)
-   * Pour que les étapes de workflow personnalisées soient intégrées au traitement, vous pouvez utiliser les [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)..
+   * Pour que les étapes de workflow personnalisées soient intégrées au traitement, [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) peut être utilisé.
 
 * Les composants de site web qui diffusent un fichier binaire sans transformation peuvent utiliser le téléchargement direct. Le servlet GET Sling est mis à jour pour permettre aux développeurs de faire ceci par défaut. Les composants de site web qui diffusent un fichier binaire avec une certaine transformation (par exemple, le redimensionner via un servlet) peuvent continuer à fonctionner en l’état.
 
@@ -81,6 +81,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 * [Facettes de recherche](search-facets.md)
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
