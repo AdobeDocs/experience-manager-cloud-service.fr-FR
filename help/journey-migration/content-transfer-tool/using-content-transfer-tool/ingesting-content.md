@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Cloud Service
 description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance de Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
+source-git-commit: 6372277adfac0700d80a3e6c013f419892822e55
 workflow-type: tm+mt
-source-wordcount: '2876'
-ht-degree: 42%
+source-wordcount: '2905'
+ht-degree: 41%
 
 ---
 
@@ -215,6 +215,8 @@ Les bonnes pratiques indiquent que si une **Non effacé** l’ingestion doit êt
 La valeur des propriétés de nœud stockées dans MongoDB ne doit pas dépasser 16 Mo. Si une valeur de noeud dépasse la taille prise en charge, l’ingestion échoue et le journal contient une `BSONObjectTooLarge` et indiquez le noeud qui a dépassé le maximum. Il s’agit d’une restriction MongoDB.
 
 Voir `Node property value in MongoDB` remarque dans [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) pour plus d’informations et un lien vers un outil Oak qui peut aider à trouver tous les noeuds volumineux. Une fois tous les noeuds de grande taille corrigés, exécutez à nouveau l’extraction et l’ingestion.
+
+Pour éviter toute restriction, exécutez la variable [Analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’AEM source et examiner les résultats qu’elle présente, en particulier le [&quot;Structure de référentiel non prise en charge&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) modèle.
 
 ### Ingestion annulée {#ingestion-rescinded}
 
