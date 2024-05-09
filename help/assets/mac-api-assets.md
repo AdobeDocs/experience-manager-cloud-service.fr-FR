@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+source-git-commit: 835aab546896195c3a2a3355b35b81f2cd385676
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1670'
 ht-degree: 97%
 
 ---
@@ -25,7 +25,7 @@ L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, li
 
 >[!NOTE]
 >
->La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+> Une mise en oeuvre OpenAPI modernisée de l’API de gestion des fragments de contenu est disponible. Pour obtenir une documentation complète, voir [API de gestion des fragments de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Il est recommandé d’utiliser la nouvelle implémentation d’OpenAPI. L’utilisation existante de l’API HTTP Assets pour les fragments de contenu doit être migrée vers la nouvelle API OpenAPI de gestion des fragments de contenu.
 
 Pour accéder à l’API :
 
@@ -46,7 +46,7 @@ Pour plus d’informations, consultez [Prise en charge de fragments de contenu d
 
 >[!NOTE]
 >
->La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+>Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 ## Modèle de données {#data-model}
 
@@ -54,7 +54,7 @@ L’API HTTP d’[!DNL Assets] présente deux éléments principaux : des dossi
 
 >[!NOTE]
 >
->La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+>Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 ### Dossiers {#folders}
 
@@ -90,7 +90,7 @@ Pour plus d’informations sur les éléments des fragments de contenu, voir [Pr
 
 >[!NOTE]
 >
->La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+>Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 
