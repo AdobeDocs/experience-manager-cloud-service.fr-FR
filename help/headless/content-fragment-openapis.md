@@ -1,15 +1,16 @@
 ---
 title: API ouvertes de fragments de contenu et de modèles de fragments de contenu
 description: Découvrez les API OpenAPI des fragments de contenu et des modèles de fragments de contenu.
-source-git-commit: a9e6df69c3753677053a3ecde6b5f04794f748dd
+exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
+source-git-commit: 2921667598201b6087fab3ca5c1ef5b57c1fa18f
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 0%
+source-wordcount: '98'
+ht-degree: 2%
 
 ---
 
 # API ouvertes de fragments de contenu et de modèles de fragments de contenu {#content-fragments-and-content-fragment-models-openapis}
 
-Les API ouvertes des fragments de contenu et des modèles de fragments de contenu permettent aux développeurs d’interagir par programmation avec les fragments de contenu et les modèles de fragments de contenu stockés dans AEM et d’effectuer des opérations CRUD (création, lecture, mise à jour, suppression) sur ces derniers.
+L’implémentation OpenAPI modernisée de l’API de gestion des fragments de contenu permet aux développeurs d’effectuer par programmation des opérations de création, de lecture, de mise à jour et de suppression sur AEM auteur afin de gérer les modèles de fragments de contenu et les fragments de contenu stockés dans AEM. Ces API prennent en charge un certain nombre de cas d’utilisation.
 
-Les API prennent en charge un certain nombre de cas d’utilisation. Pour plus d’informations, voir [API ouvertes de fragments de contenu et de modèles de fragments de concours](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+L’utilisation existante de [API HTTP Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) pour les fragments de contenu doivent être migrés vers la nouvelle API OpenAPI de gestion des fragments de contenu. Pour obtenir une documentation complète, voir [API de gestion des fragments de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
