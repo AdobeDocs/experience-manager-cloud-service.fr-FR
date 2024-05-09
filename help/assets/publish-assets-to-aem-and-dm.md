@@ -2,14 +2,14 @@
 title: Publication rapide sur AEM et Dynamic Media
 description: La publication rapide dans la vue Assets vous permet de publier des ressources sur AEM et Dynamic Media simultanément ou séparément. Vous pouvez sélectionner des ressources et des dossiers et choisir de publier sur Dynamic Media ou AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
+source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# Publication de ressources sur AEM et Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
+# Publier des ressources sur AEM et Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
 Experience Manager Assets vous permet de publier rapidement des ressources dans Experience Manager et Dynamic Media à l’aide de la vue Assets. Cela vous permet de gérer vos ressources, puis de les publier à l’aide de [Mode Ressources sans passer à la vue Admin](/help/assets/overview.md##persona-based-experiences).
 
@@ -40,7 +40,7 @@ Vous pouvez publier des ressources dans AEM et Dynamic Media lors du chargement 
 Pour publier des ressources lors du chargement dans un dossier avec le mode de publication Dynamic Media défini sur **Lors de l’activation**:
 
 1. Cliquez sur **Ajouter des ressources** > **Parcourir** > **Parcourir les fichiers** pour accéder au dossier approprié afin de charger des ressources. La variable **Options de publication** affiche la section **Mode de publication DM** as **Lors de l’activation**.
-   ![Télécharger l’image lors de l’activation](/help/assets/assets/upload-upon-activation.png)
+   ![Télécharger l’image lors de l’activation](/help/assets/assets/upload-upon-activation1.png)
 2. Sélectionner **Publication sur AEM et Dynamic Media** et cliquez sur **Télécharger**. Les ressources sont publiées simultanément sur AEM et Dynamic Media. Pour afficher l’état de publication mis à jour pour ces ressources, voir [Vérification de l’état de publication](#check-publish-status).
 
 ### Mode de publication Dynamic Media défini sur Immédiat {#dynamic-media-publish-mode-set-to-immediate}
