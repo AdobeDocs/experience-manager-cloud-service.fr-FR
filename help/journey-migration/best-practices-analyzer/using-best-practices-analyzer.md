@@ -2,9 +2,9 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour comprendre la préparation à la mise à niveau.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 82%
 
 ---
@@ -61,6 +61,11 @@ L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle n
 ## Affichage du rapport de l’analyseur des bonnes pratiques {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 et versions ultérieures {#aem-later-versions}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="Charger automatiquement le rapport Analyseur des bonnes pratiques dans le mode CAM"
+>abstract="Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers le gestionnaire d’accélération du cloud (CAM)."
 
 Consultez cette section pour savoir comment afficher le rapport de l’analyseur des bonnes pratiques :
 
