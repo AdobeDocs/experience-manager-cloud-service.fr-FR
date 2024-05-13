@@ -2,9 +2,9 @@
 title: Définitions de modèles, champs et types de composants
 description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
+source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1146'
 ht-degree: 11%
 
 ---
@@ -95,6 +95,7 @@ Vous trouverez ci-dessous les types de composants que vous pouvez utiliser pour 
 | [Booléen](#boolean) | `boolean` |
 | [Groupe de cases à cocher](#checkbox-group) | `checkbox-group` |
 | [Conteneur](#container) | `container` |
+| [Fragment de contenu](#content-fragment) | `aem-content-fragment` |
 | [Heure de date](#date-time) | `date-time` |
 | [Multisélection](#multiselect) | `multiselect` |
 | [Nombre](#number) | `number` |
