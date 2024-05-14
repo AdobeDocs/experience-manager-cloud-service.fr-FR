@@ -3,7 +3,7 @@ title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experie
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 3be366e5fa0a7625203a052426be6a2fd2412cf6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '723'
 ht-degree: 100%
 
