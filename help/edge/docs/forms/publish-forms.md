@@ -3,10 +3,10 @@ title: Publier un formulaire AEM Forms Edge Delivery Services
 description: Publier un formulaire AEM Forms Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+source-git-commit: 708b63aca6b1613dbedf193edd07aadc510ff859
+workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -86,16 +86,18 @@ Pour ajouter le formulaire à votre page web :
 
    Utilisez l’URL de prévisualisation (URL .page) à des fins de développement ou de test, ou l’URL de publication (.live) pour la production. Voici quelques exemples d’URL de prévisualisation et de publication :
 
-   **URL de prévisualisation**
-| Formulaire |
-|---|
-| [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+   **URL d’aperçu**
+
+   | Formulaire |
+   |---|
+   | [https://main—wefinance—wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
 
 
    **URL de publication**
-| Formulaire |
-|---|
-| [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+   | Formulaire |
+   |---|
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
 1. Utilisez [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser la page web. La page affiche désormais le formulaire. Par exemple, voici le formulaire basé sur la [feuille de calcul de demande](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) :
 
