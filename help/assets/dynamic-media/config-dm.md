@@ -2,9 +2,10 @@
 title: Configuration de Dynamic Media Cloud Services
 description: Découvrez la configuration de Dynamic Media dans Adobe Experience Manager as a Cloud Service.
 contentOwner: Rick Brough
+feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 96%
@@ -276,9 +277,9 @@ Vous pouvez définir les propriétés de correction des couleurs suivantes :
 
 Par exemple, vous pouvez définir l’**[!UICONTROL Espace colorimétrique RVB par défaut]** sur *sRVB* et l’**[!UICONTROL Espace colorimétrique CMJN par défaut]** sur *WebCoated*.
 
-Cela permet d’effectuer les opérations suivantes :
+Les conséquences sont les suivantes :
 
-* Active la correction des couleurs pour les images RGB et CMJN.
+* Active la correction des couleurs pour les images RVB et CMJN.
 * Les images RVB qui n’ont pas de profil colorimétrique sont considérées comme se trouvant dans l’espace colorimétrique *sRVB*.
 * Les images CMJN qui n’ont pas de profil colorimétrique sont considérées comme se trouvant dans l’espace colorimétrique *WebCoated*.
 * Les rendus dynamiques qui renvoient une sortie RVB le font dans l’espace colorimétrique *sRVB*.
@@ -313,7 +314,7 @@ Voir [Chargement de ressources](/help/assets/add-assets.md).
 
    * Double-sélectionnez l’option **[!UICONTROL enabled]** champ . Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources sont synchronisées avec Dynamic Media pour le traitement. Si vous voulez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
 
-   * Double sélection **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Consultez [Types MIME pris en charge](/help/assets/file-format-support.md) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
+   * Appuyez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Consultez [Types MIME pris en charge](/help/assets/file-format-support.md) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
 
 1. Utilisez l’une des méthodes suivantes :
    * Répétez les étapes 3 et 4 pour modifier d’autres types de MIME.

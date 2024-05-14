@@ -2,11 +2,12 @@
 title: Configuration de Dynamic Media
 description: Pour installer Dynamic Media, vous devez configurer Dynamic Media et gérer les paramètres prédéfinis d’image et de visionneuse.
 contentOwner: Rick Brough
+feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '172'
 ht-degree: 100%
 
 ---
@@ -42,4 +43,3 @@ Voir aussi les rubriques suivantes :
 >**Si vous effectuez une mise à niveau :**
 >
 >* Après la mise en service d’Adobe [!DNL Experience Manager], toutes les ressources que vous chargez sont automatiquement activées pour Dynamic Media (à moins que cela n’ait été explicitement désactivé par votre administrateur système). Si vous utilisez une instance de [!DNL Experience Manager] mise à niveau et que Dynamic Media est nouveau pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media. Voir [Retraitement des ressources dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
-

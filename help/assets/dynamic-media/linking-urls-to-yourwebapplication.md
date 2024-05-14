@@ -2,11 +2,12 @@
 title: Liaison d’URL à votre application web
 description: Apprenez comment lier des URL à votre application web dans Dynamic Media.
 contentOwner: Rick Brough
+feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1281'
 ht-degree: 100%
 
 ---
@@ -63,19 +64,19 @@ Il existe plusieurs manières d’obtenir une chaîne d’URL. Toutefois, les é
 
    * Si vous avez sélectionné une image, dans le menu déroulant, sélectionnez **[!UICONTROL Rendus]**.
 
-      Sous l’en-tête **[!UICONTROL Dynamique]**, sélectionnez un nom de paramètre prédéfini afin d’afficher son rendu dans le cadre de droite. Si nécessaire, faites défiler la liste Rendus pour afficher l’en-tête Dynamic.
+     Sous l’en-tête **[!UICONTROL Dynamique]**, sélectionnez un nom de paramètre prédéfini afin d’afficher son rendu dans le cadre de droite. Si nécessaire, faites défiler la liste Rendus pour afficher l’en-tête Dynamic.
 
-      Dans la partie inférieure du rail gauche, sélectionnez **[!UICONTROL URL]**.
+     Dans la partie inférieure du rail gauche, sélectionnez **[!UICONTROL URL]**.
 
-      ![chlimage_1-270](assets/chlimage_1-270.png)
+     ![chlimage_1-270](assets/chlimage_1-270.png)
 
    * Si vous avez sélectionné une visionneuse à 360°, une visionneuse d’images, un ensemble de carrousel ou une vidéo, dans le menu déroulant, sélectionnez **[!UICONTROL Visionneuses]**.
 
-      Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de la visionneuse. Un aperçu de la visionneuse ou de la vidéo s’ouvre dans une page distincte.
+     Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de la visionneuse. Un aperçu de la visionneuse ou de la vidéo s’ouvre dans une page distincte.
 
-      Dans le rail de gauche, dans la partie inférieure, sélectionnez **[!UICONTROL URL]**.
+     Dans le rail de gauche, dans la partie inférieure, sélectionnez **[!UICONTROL URL]**.
 
-      ![chlimage_1-271](assets/chlimage_1-271.png)
+     ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Pour la prévisualisation du fichier ou pour l’ajouter à votre page de contenu web, sélectionnez et copiez le texte dans votre navigateur web.
 
@@ -109,11 +110,11 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         Par exemple, `https://aem.com/is/content/adobe/image.gif`.
+        Par exemple, `https://aem.com/is/content/adobe/image.gif`.
+
    * Sélectionnez **[!UICONTROL Ressource]** > **[!UICONTROL Rendus dynamiques]**, puis sélectionnez un rendu dynamique de la ressource statique et copiez l’URL.
 
-      Modifiez l’URL copiée afin d’utiliser `is/content` au lieu de `is/image/` dans le chemin d’accès.
-
+     Modifiez l’URL copiée afin d’utiliser `is/content` au lieu de `is/image/` dans le chemin d’accès.
 
 ## Obtention d’une URL de vidéo pour un rendu vidéo publié {#obtaining-a-video-url-for-a-published-video-rendition}
 
@@ -167,8 +168,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    * Sous **[!UICONTROL ID d’enregistrement]**, copiez le nom du client dans la dernière partie de l’ID. Le nom du client copié est nécessaire ultérieurement dans ces étapes.
 
-      Par exemple, si l’ID d’enregistrement est `87654321|demoCo`, le nom du client est `demoCo`.
-
+     Par exemple, si l’ID d’enregistrement est `87654321|demoCo`, le nom du client est `demoCo`.
 
 1. En fonction du protocole de diffusion vidéo que vous utilisez, copiez le sélecteur de protocole correspondant. Le sélecteur de protocole copié est nécessaire ultérieurement au cours de ces étapes.
 

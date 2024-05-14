@@ -2,11 +2,12 @@
 title: FAQ sur la diffusion de contenu HTTP/2
 description: Découvrez la diffusion de contenu HTTP2 et comment elle améliore la communication entre les navigateurs et les serveurs pour accélérer le transfert des informations.
 contentOwner: Rick Brough
+feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '798'
 ht-degree: 97%
 
 ---
@@ -85,7 +86,7 @@ Les demandes sont traitées dans l’ordre dans lequel le service clientèle les
 
 ## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
-La transition vers HTTP/2 efface votre cache sur le réseau CDN, car elle implique de passer à une nouvelle configuration du réseau CDN.
+La transition vers HTTP/2 efface votre cache sur le réseau CDN, car elle implique de passer à une nouvelle configuration de réseau CDN.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. Grâce à cette action, Adobe prévoit de gérer plusieurs transitions client à la fois. Cette méthode garantit des performances acceptables lors de l’extraction de requêtes à partir de l’origine.
 

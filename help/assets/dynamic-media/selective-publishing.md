@@ -5,9 +5,10 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+feature: Publishing,Dynamic Media
 role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
 source-wordcount: '2946'
 ht-degree: 100%
@@ -105,9 +106,9 @@ Reportez-vous à [Créer une configuration Dynamic Media](#configuring-dynamic-m
    * Accédez à un dossier dont vous souhaitez publier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisez la vue **[!UICONTROL Liste]** pour vérifier plus facilement l’état de publication d’un dossier en particulier.
    * Accédez à un dossier dont vous souhaitez publier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisez la vue **[!UICONTROL Liste]** pour vérifier plus facilement l’état de publication d’une ressource en particulier.
 
-      >[!NOTE]
-      >
-      >Si l’option **[!UICONTROL Gérer la publication]** n’est pas visible sur la barre d’outils, sélectionnez le bouton avec les points de suspension à la place, puis sélectionnez **[!UICONTROL Gérer la publication]** dans le menu de liste.
+     >[!NOTE]
+     >
+     >Si l’option **[!UICONTROL Gérer la publication]** n’est pas visible sur la barre d’outils, sélectionnez le bouton avec les points de suspension à la place, puis sélectionnez **[!UICONTROL Gérer la publication]** dans le menu de liste.
 
 1. Sur la page **[!UICONTROL Gérer la publication – Options]**, sous **[!UICONTROL Action]**, sélectionnez le type d’activation souhaité.
 
@@ -136,9 +137,9 @@ Reportez-vous à [Créer une configuration Dynamic Media](#configuring-dynamic-m
    * Accédez à un dossier dont vous souhaitez dépublier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisez la vue **[!UICONTROL Liste]** pour vérifier plus facilement l’état de publication d’un dossier en particulier.
    * Accédez à un dossier dont vous souhaitez dépublier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisez la vue **[!UICONTROL Liste]** pour vérifier plus facilement l’état de publication d’une ressource en particulier.
 
-      >[!NOTE]
-      >
-      >Si l’option **[!UICONTROL Gérer la publication]** n’est pas visible sur la barre d’outils, sélectionnez le bouton avec les points de suspension à la place, puis sélectionnez **[!UICONTROL Gérer la publication]** dans le menu de liste.
+     >[!NOTE]
+     >
+     >Si l’option **[!UICONTROL Gérer la publication]** n’est pas visible sur la barre d’outils, sélectionnez le bouton avec les points de suspension à la place, puis sélectionnez **[!UICONTROL Gérer la publication]** dans le menu de liste.
 
 1. Sur la page **[!UICONTROL Gérer la publication – Options]**, sous **[!UICONTROL Action]**, sélectionnez le type de désactivation souhaité.
 
@@ -175,11 +176,11 @@ Vous pouvez utiliser la fonction **[!UICONTROL Publication rapide]** dans les ca
    * Accédez à un dossier dont vous souhaitez publier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Utilisez la vue **[!UICONTROL Liste]** pour vérifier plus facilement l’état de publication d’un dossier en particulier.
    * Accédez à un dossier dont vous souhaitez publier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Utilisez la vue **[!UICONTROL Liste]** pour vérifier plus facilement l’état de publication d’une ressource en particulier.
 
-      >[!NOTE]
-      >
-      >Si l’option **[!UICONTROL Publication rapide]** n’est pas visible sur la barre d’outils, sélectionnez le bouton avec les points de suspension à la place, puis sélectionnez **[!UICONTROL Publication rapide]** dans le menu de liste.
+     >[!NOTE]
+     >
+     >Si l’option **[!UICONTROL Publication rapide]** n’est pas visible sur la barre d’outils, sélectionnez le bouton avec les points de suspension à la place, puis sélectionnez **[!UICONTROL Publication rapide]** dans le menu de liste.
 
-      ![Publication rapide au niveau du dossier dans Dynamic Media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+     ![Publication rapide au niveau du dossier dans Dynamic Media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
 
 1. Sélectionnez l’une des options suivantes dans la liste de menu **[!UICONTROL Publication rapide]**.
 
@@ -266,7 +267,7 @@ Vous pouvez utiliser **[!UICONTROL Chronologie]** dans la vue **[!UICONTROL Cart
 Lorsque vous utilisez la vue **[!UICONTROL Liste]**, une colonne supplémentaire pour l’état de publication de **[!UICONTROL Dynamic Media]** s’affiche.
    * Un dossier configuré pour la synchronisation avec Dynamic Media affiche la colonne **[!UICONTROL Dynamic Media]** par défaut.
    * Un dossier *non* configuré pour la synchronisation avec Dynamic Media n’affiche pas la colonne Dynamic Media.
-      ![Vue Liste et Chronologie](/help/assets/assets-dm/selective-publish-status-timeline.png)
+     ![Vue Liste et Chronologie](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Résolution des problèmes de publication sélective {#selective-publish-troubleshoot}
 

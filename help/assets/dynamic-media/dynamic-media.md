@@ -2,12 +2,13 @@
 title: Utilisation de Dynamic Media
 description: Découvrez comment utiliser Dynamic Media afin de diffuser des ressources pour une utilisation sur le Web, les appareils mobiles et les réseaux sociaux.
 contentOwner: Rick Brough
+feature: Dynamic Media,Asset Management
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 84%
+source-wordcount: '398'
+ht-degree: 93%
 
 ---
 
@@ -81,7 +82,7 @@ Les ressources prises en charge par Dynamic Media comprennent `pyramid.tiffs`.
 
 ### Modification des vues des ressources {#asset-views-change}
 
-Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant ou arrière en cliquant sur le `+` et `-` des boutons. Vous pouvez également choisir d’effectuer un zoom sur certaines zones. L’option Rétablir vous ramène à la version d’origine. Vous pouvez afficher l’image en plein écran en cliquant sur les flèches diagonales. Lorsque Dynamic Media est activé, cette fonctionnalité ressemble à celle-ci :
+Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant ou arrière en cliquant sur les boutons `+` et `-`. Vous pouvez également choisir d’effectuer un zoom sur certaines zones. L’option Rétablir vous ramène à la version d’origine. Vous pouvez afficher l’image en plein écran en cliquant sur les flèches diagonales. Lorsque Dynamic Media est activé, cette fonctionnalité ressemble à celle-ci :
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

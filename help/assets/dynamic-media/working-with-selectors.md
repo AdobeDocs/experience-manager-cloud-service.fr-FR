@@ -2,11 +2,12 @@
 title: Utilisation de sélecteurs
 description: Découvrez les méthodes que vous pouvez utiliser pour sélectionner des ressources sous forme d’images interactives, de vidéos interactives et de bannières de carrousel dans Dynamic Media.
 contentOwner: Rick Brough
+feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '745'
 ht-degree: 100%
 
 ---
