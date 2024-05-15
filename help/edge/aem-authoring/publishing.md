@@ -4,9 +4,9 @@ description: Découvrez le fonctionnement de la publication de contenu avec Edge
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: c85a82161a7594588290793c89ecbe1f0f60a56d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Le flux d’informations pendant la publication est le suivant. Une fois la publ
 
 >[!NOTE]
 >
->Jusqu’à 5 000 chemins d’accès publiés à partir de l’interface utilisateur de création ou par des workflows sont autorisés par jour. Les intégrations qui créent des charges de travail de publication en bloc ne sont pas prises en charge. Si votre projet nécessite une capacité supérieure, veuillez le proposer pour le [Programme VIP](https://www.aem.live/vip/intake).
+>Jusqu’à 5 000 chemins d’accès publiés à partir de l’interface utilisateur de création ou par des workflows sont autorisés par jour. Les intégrations qui créent des charges de travail de publication en masse ne sont pas prises en charge. Si votre projet nécessite une capacité supérieure, veuillez le proposer pour le [Programme VIP](https://www.aem.live/vip/intake).
 
 ![Flux d’informations lors de la publication d’AEM vers Edge Delivery Services](assets/publishing-flow.png)
 

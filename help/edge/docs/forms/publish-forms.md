@@ -4,9 +4,9 @@ description: Publier un formulaire AEM Forms Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 source-git-commit: 708b63aca6b1613dbedf193edd07aadc510ff859
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -86,11 +86,11 @@ Pour ajouter le formulaire à votre page web :
 
    Utilisez l’URL de prévisualisation (URL .page) à des fins de développement ou de test, ou l’URL de publication (.live) pour la production. Voici quelques exemples d’URL de prévisualisation et de publication :
 
-   **URL d’aperçu**
+   **URL de prévisualisation**
 
    | Formulaire |
    |---|
-   | [https://main—wefinance—wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
 
 
    **URL de publication**

@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4930'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -605,8 +605,8 @@ ht-degree: 99%
       + [Migrer de [!DNL AEM 6.5 Forms] ou une version antérieure à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
       + [Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources](/help/forms/import-export-forms-templates.md)
-   + Prise en main {#getting-started-forms}
-      + [Cas d’utilisation et environnement de développement de configuration](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+   + Commencer {#getting-started-forms}
+      + [Consulter des cas d’utilisation et configurer l’environnement de développement](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Créer le formulaire de demande de prêt](/help/forms/create-adaptive-form-tutorial.md)
    + Intégrer {#integrate}
       + Services {#services}
