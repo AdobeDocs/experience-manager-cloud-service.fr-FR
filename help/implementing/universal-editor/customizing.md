@@ -1,20 +1,33 @@
 ---
-title: Personnalisation de l’expérience de création de l’éditeur universel
+title: Personnalisation et extension de l’éditeur universel
 description: Découvrez les différents points d’extension et autres fonctionnalités qui vous permettent de personnaliser l’interface utilisateur d’Universal Editor afin de prendre en charge les besoins de vos auteurs de contenu.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: bdd67fb383bf20399eacaf9b9c086ea8468ea742
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 0%
+source-wordcount: '578'
+ht-degree: 1%
 
 ---
 
 
-# Personnalisation de l’expérience de création de l’éditeur universel {#customizing-ue}
+# Personnalisation et extension de l’éditeur universel {#customizing-extending}
 
 Découvrez les différents points d’extension et autres fonctionnalités qui vous permettent de personnaliser l’expérience de création d’Universal Editor afin de prendre en charge les besoins de vos auteurs de contenu.
 
-## Désactivation de la publication {#disable-publish}
+## Vue d’ensemble {#overview}
+
+L’éditeur universel permet deux types d’adaptation aux besoins de votre projet.
+
+* [Personnalisation de l’éditeur universel](#customizing) - La fonctionnalité standard d’Universal Editor peut être adaptée via plusieurs configurations de personnalisation.
+* [Extension de l’interface utilisateur de l’éditeur universel](#extending) - L’interface utilisateur de l’éditeur universel peut également être étendue à l’aide du générateur d’applications pour répondre aux besoins de vos projets.
+
+Les deux types sont présentés dans les sections suivantes.
+
+## Personnaliser l’éditeur universel {#customizing}
+
+Universal Editor propose plusieurs options intégrées pour personnaliser ses fonctionnalités.
+
+### Désactivation de la publication {#disable-publish}
 
 Certains workflows de création nécessitent que le contenu soit examiné avant d’être publié. Dans ce cas, l’option de publication ne doit être disponible pour aucun auteur.
 
@@ -24,7 +37,7 @@ La variable **Publier** peut donc être entièrement supprimé dans une applicat
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
 ```
 
-## Filtrage des composants {#filtering-components}
+### Filtrage des composants {#filtering-components}
 
 Lorsque vous utilisez l’éditeur universel, vous pouvez limiter les composants autorisés par composant de conteneur. Pour ce faire, vous devez introduire une balise de script supplémentaire, qui pointe vers la définition de filtre.
 
@@ -60,13 +73,15 @@ La définition de la variable `components` dans une définition de filtre à `nu
 ]
 ```
 
-## Afficher et masquer les composants de manière conditionnelle dans le rail des propriétés {#conditionally-hide}
+### Afficher et masquer les composants de manière conditionnelle dans le rail des propriétés {#conditionally-hide}
 
 Bien qu’un ou plusieurs composants puissent généralement être disponibles pour les auteurs, il peut arriver qu’ils n’aient pas de sens dans certains cas. Dans ce cas, vous pouvez masquer des composants dans le rail de propriétés en ajoutant une `condition` à l’attribut [des champs du modèle de composant.](/help/implementing/universal-editor/field-types.md#fields)
 
 Les conditions peuvent être définies à l’aide de [Schéma JsonLogic.](https://jsonlogic.com/) Si la condition est vraie, le champ s’affiche. Si la condition est fausse, le champ est masqué.
 
-### Exemple de modèle {#sample-model}
+>[!BEGINTABS]
+
+>[!TAB Exemple de modèle]
 
 ```json
  {
@@ -89,11 +104,30 @@ Les conditions peuvent être définies à l’aide de [Schéma JsonLogic.](https
  }
 ```
 
-#### Condition False {#false}
+>[!TAB Condition False]
 
 ![Champ de texte masqué](assets/hidden.png)
 
-#### Condition True {#true}
+>[!TAB Condition True]
 
 ![Champ de texte affiché](assets/shown.png)
 
+>[!ENDTABS]
+
+## Extension de l’interface utilisateur de l’éditeur universel {#extending}
+
+En tant que service Adobe Experience Cloud, l’interface utilisateur de l’éditeur universel peut être étendue à l’aide du générateur d’applications et du Experience Manager.
+
+Les extensions d’IU sont des applications JavaScript créées avec Adobe App Builder qui peuvent être incorporées dans des applications d’IU qui s’exécutent sous le shell unifié Adobe Experience Cloud, comme Universal Editor. Vous pouvez ajouter vos propres boutons et actions au menu d’en-tête et au rail de propriétés, ainsi que créer vos propres événements pour l’éditeur universel.
+
+Si vous souhaitez explorer ces possibilités, consultez les ressources suivantes :
+
+1. [Extensibilité de l’interface utilisateur](https://developer.adobe.com/uix/docs/) - Il s’agit de la documentation destinée aux développeurs concernant l’extension de l’interface utilisateur.
+1. [Guides d’extensibilité de l’interface utilisateur](https://developer.adobe.com/uix/docs/guides/) - Instructions détaillées sur la manière de développer votre propre extension
+1. [Points d’extension Universal Editor](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - Documentation du point d’extension spécifique à l’éditeur universel
+
+>[!TIP]
+>
+>Si vous préférez apprendre par exemple, reportez-vous à la section [Tutoriel sur l’extensibilité de l’interface utilisateur AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Bien qu’il se concentre sur l’extension de la console Fragment de contenu, les concepts de mise en oeuvre d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
+
+[Utilisation des Extensions Manager dans AEM Sites,](https://developer.adobe.com/uix/docs/extension-manager/) vous pouvez activer ou désactiver vos extensions au niveau de chaque instance, accéder aux extensions propriétaires d’Adobe, y compris celles pour l’éditeur universel, et bien plus encore.
