@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
 workflow-type: tm+mt
 source-wordcount: '4946'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -191,7 +191,7 @@ ht-degree: 99%
    + [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considérations relatives à la sécurité d’AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Obsolescence des informations d’identification JWT dans Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [Bonnes pratiques pour le mappage des utilisateurs et la définition d’utilisateur du service Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+   + [Bonnes pratiques pour le mappage des utilisateurs et utilisatrices de services Sling et la définition des utilisateurs et utilisatrices de services](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + Intégration {#onboarding}
    + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)
    + Parcours d’intégration {#journey}
