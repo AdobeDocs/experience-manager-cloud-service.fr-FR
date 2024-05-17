@@ -2,7 +2,7 @@
 title: Configurer la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancée telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '5093'
 ht-degree: 99%
@@ -77,7 +77,7 @@ Cette fonctionnalité de mise en réseau avancée vous permet de configurer AEM�
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
 1. Dans la page **Vue d’ensemble du programme**, accédez à l’onglet **Environnements** et sélectionnez **Infrastructure réseau** dans le panneau de gauche.
 
@@ -242,7 +242,7 @@ La configuration de l’adresse IP de sortie dédiée est identique à celle d�
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
 1. Dans la page **Vue d’ensemble du programme**, accédez à l’onglet **Environnements** et sélectionnez **Infrastructure réseau** dans le panneau de gauche.
 
@@ -394,7 +394,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Considérations relatives au débogage {#debugging-considerations}
 
-Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [http://ifconfig.me/ip](http://ifconfig.me/ip), qui renverra l’adresse IP d’appel.
+Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [https://ifconfig.me/ip](https://ifconfig.me/ip), qui renvoie l’adresse IP d’appel.
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
@@ -414,7 +414,7 @@ La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
 1. Dans la page **Vue d’ensemble du programme**, accédez à l’onglet **Environnements** et sélectionnez **Infrastructure réseau** dans le panneau de gauche.
 
@@ -629,7 +629,7 @@ Lorsque vous activez une configuration de mise en réseau avancée pour un envir
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
 1. Dans la page **Vue d’ensemble du programme**, accédez à l’onglet **Environnements** et sélectionnez l’environnement dans lequel vous souhaitez activer la configuration de mise en réseau avancée sous l’en-tête **Environnements** dans le panneau de gauche. Sélectionnez ensuite l’onglet **Configuration de mise en réseau avancée** de l’environnement sélectionné, puis cliquez sur **Activer l’infrastructure réseau**.
 
@@ -688,7 +688,7 @@ Après l’[activation de configurations de mise en réseau avancée pour les en
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
 1. Dans la page **Vue d’ensemble du programme**, accédez à l’onglet **Environnements** et sélectionnez l’environnement dans lequel vous souhaitez activer la configuration de mise en réseau avancée sous l’en-tête **Environnements** dans le panneau de gauche. Sélectionnez ensuite l’onglet **Configuration de mise en réseau avancée** de l’environnement sélectionné et cliquez sur le bouton représentant des points de suspension.
 
@@ -726,7 +726,7 @@ Une fois l’infrastructure réseau créée pour un programme, seules les propri
 
 1. Se connecter à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionner l’organisation appropriée
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
 1. Dans la page **Vue d’ensemble du programme**, accédez à l’onglet **Environnements** et sélectionnez l’en-tête **Infrastructure réseau** dans le panneau de gauche. Ensuite, cliquez sur le bouton représentant des points de suspension en regard de l’infrastructure que vous souhaitez supprimer.
 

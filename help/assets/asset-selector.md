@@ -3,14 +3,13 @@ title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL
 description: Utilisez le sélecteur de ressources pour rechercher, trouver et récupérer les métadonnées et les rendus des ressources dans votre application.
 contentOwner: KK
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: b9fe6f4c2f74d5725575f225f8d9eb2e5fbfceb7
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '3908'
 ht-degree: 48%
 
 ---
-
 
 # Sélecteur de ressources micro front-end {#Overview}
 
@@ -599,7 +598,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -632,12 +631,12 @@ Le tableau suivant décrit des propriétés importantes de l’objet Ressource s
 | *tiff:imageLength* | nombre | Hauteur d’une ressource. |
 | *computedMetadata* | `Record<string, any>` | Objet qui représente un compartiment pour tous les types de métadonnées de la ressource (référentiel, application ou métadonnées incorporées). |
 | *_links* | `Record<string, any>` | Liens hypermédias pour la ressource associée. Inclut des liens pour des ressources telles que des métadonnées et des rendus. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Tableau d’objets contenant des informations sur les rendus de la ressource. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | chaîne | URI du rendu. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | chaîne | Type MIME du rendu. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | nombre | Taille du rendu en octets. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | nombre | Largeur du rendu. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | nombre | Hauteur du rendu. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Tableau d’objets contenant des informations sur les rendus de la ressource. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | chaîne | URI du rendu. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | chaîne | Type MIME du rendu. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | nombre | Taille du rendu en octets. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | nombre | Largeur du rendu. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | nombre | Hauteur du rendu. |
 
 Pour obtenir la liste complète des propriétés ainsi qu’un exemple détaillé, consultez la page [Exemple de code de sélecteur de ressources](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
