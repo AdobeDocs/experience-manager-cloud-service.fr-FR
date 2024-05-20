@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
+source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
 workflow-type: tm+mt
-source-wordcount: '4946'
-ht-degree: 100%
+source-wordcount: '4964'
+ht-degree: 99%
 
 ---
 
@@ -654,6 +654,8 @@ ht-degree: 100%
             + [Configurer l’action Envoyer vers le point d’entrée REST pour les formulaires adaptatifs](/help/forms/configure-submit-action-restpoint.md)
             + [Configurer l’action Envoyer un e-mail pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
             + [Utilisation de Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [Utilisation de HAPTCHA dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Utiliser le tuteur dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer et utiliser des fonctions personnalisées](/help/forms/create-and-use-custom-functions.md)
@@ -676,6 +678,7 @@ ht-degree: 100%
             + [Amélioration des performances des formulaires volumineux avec le chargement différé](/help/forms/lazy-loading-adaptive-forms.md)
          + Ajout de composants à un formulaire adaptatif {#add-components-to-an-adaptive-form}
             + [Utilisation de CAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms.md)
+            + [Utilisation du captcha dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [Utiliser des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
             + [Appliquer la signature tactile](/help/forms/signing-forms-using-scribble.md)
             + [Ajouter un tableau à un formulaire adaptatif](/help/forms/adaptive-forms-tables.md)
