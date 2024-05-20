@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 40%
+ht-degree: 43%
 
 ---
 
@@ -35,9 +35,9 @@ Suivez les étapes ci-dessous pour accéder à la phase de préparation :
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
->title="Rapport Analyse des bonnes pratiques"
->abstract="Le rapport BPA peut être téléchargé au format CAM afin de fournir une analyse de celui-ci par rapport à la migration vers AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Utilisation de l’analyseur des bonnes pratiques"
+>title="Rapport d’analyse des bonnes pratiques"
+>abstract="Le rapport de l’analyseur des bonnes pratiques peut être chargé vers CAM afin de fournir une analyse de celui-ci par rapport à la migration vers AEM as a Cloud Service."
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Utilisation de l’analyseur des bonnes pratiques"
 
 1. Cliquez sur **Réviser** de la **Analyse des bonnes pratiques** carte.
 

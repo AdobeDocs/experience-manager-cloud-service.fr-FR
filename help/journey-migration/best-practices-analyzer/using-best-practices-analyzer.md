@@ -64,8 +64,8 @@ L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle n
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
->title="Charger automatiquement le rapport Analyseur des bonnes pratiques dans le mode CAM"
->abstract="Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers le gestionnaire d’accélération du cloud (CAM)."
+>title="Charger automatiquement le rapport de l’analyseur des bonnes pratiques vers CAM"
+>abstract="Fournissez la clé de chargement de l’analyseur des bonnes pratiques pour charger automatiquement le rapport généré vers Cloud Acceleration Manager (CAM)."
 
 Consultez cette section pour savoir comment afficher le rapport de l’analyseur des bonnes pratiques :
 
