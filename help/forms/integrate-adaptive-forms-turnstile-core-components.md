@@ -5,10 +5,10 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 4%
+source-wordcount: '891'
+ht-degree: 13%
 
 ---
 
@@ -16,15 +16,28 @@ ht-degree: 4%
 
 <span class="preview"> Cette fonctionnalité est inscrite dans le Programme des Adopteurs Anticipés. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité. </span>
 
-Le captcha de Cloudflare est une mesure de sécurité visant à protéger les formulaires et les sites contre les robots automatisés, les attaques malveillantes, les spams et le trafic automatisé indésirable. Il affiche une case à cocher lors de l’envoi du formulaire pour vérifier qu’il est humain, avant de lui permettre d’envoyer le formulaire. AEM Forms as a Cloud Service prend en charge le captcha de Turnstile dans les composants principaux de Forms adaptatif.
+CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
+
+AEM Forms as a Cloud Service prend en charge les solutions CAPTCHA suivantes :
+
+
+* [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [reCAPTCHA de Google](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## Conditions préalables pour intégrer l’environnement AEM Forms avec Turnstile Captcha {#prerequisite}
+## Intégration de l’environnement AEM Forms à Turnstile Captcha
+
+Le captcha de Cloudflare est une mesure de sécurité visant à protéger les formulaires et les sites contre les robots automatisés, les attaques malveillantes, les spams et le trafic automatisé indésirable. Il affiche une case à cocher lors de l’envoi du formulaire pour vérifier qu’il est humain, avant de lui permettre d’envoyer le formulaire. AEM Forms as a Cloud Service prend en charge le captcha de Turnstile dans les composants principaux de Forms adaptatif.
+
+### Conditions préalables pour intégrer l’environnement AEM Forms avec Turnstile Captcha {#prerequisite}
 
 Pour configurer Turnstile pour les composants principaux AEM Forms, vous devez obtenir [Installation clé en main et clé secrète](https://developers.cloudflare.com/turnstile/get-started/) à partir du site web de Turnstile.
 
-## Étapes de configuration de Turnstile {#steps-to-configure-hcaptcha}
+### Configuration de Turnstile {#steps-to-configure-hcaptcha}
 
 Pour intégrer AEM Forms avec le service Turnstile, procédez comme suit :
 
@@ -57,7 +70,7 @@ Pour intégrer AEM Forms avec le service Turnstile, procédez comme suit :
 
    Une fois le service de captcha Turnstile configuré, il peut être utilisé dans un [Formulaire adaptatif basé sur les composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## Utilisation du tuteur dans un composant principal de Forms adaptatif {#using-turnstile-core-components}
+## Utiliser le tuteur dans un formulaire adaptatif {#using-turnstile-core-components}
 
 1. Ouvrez votre instance AEM Forms as a Cloud Service.
 1. Accédez à **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
