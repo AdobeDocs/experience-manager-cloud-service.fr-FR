@@ -2,16 +2,27 @@
 title: Configuration IMS à utiliser lors de l’intégration à Adobe Analytics
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 94%
+source-wordcount: '931'
+ht-degree: 91%
 
 ---
 
 # Configuration IMS à utiliser lors de l’intégration à Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
 L’intégration d’Adobe Experience Manager as a Cloud Service (AEMaaCS) avec Adobe Analytics via l’API Analytics Standard nécessite la configuration d’Adobe IMS (système d’Identity Management). La configuration est réalisée avec la Developer Console Adobe.
+
+>[!CAUTION]
+>
+>La configuration décrite sur cette page ne peut plus être utilisée pour les intégrations nouvelles ou mises à jour.
+>
+>[Les intégrations IMS sont désormais configurées avec S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>Les configurations précédentes, comme décrit sur cette page, ont été effectuées avec [Informations d’identification JWT désormais obsolètes dans la console Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -35,7 +46,7 @@ Avant de commencer cette procédure :
 * L’administrateur système de votre entreprise doit utiliser l’Admin Console pour donner aux développeurs de votre entreprise l’accès aux profils de produit appropriés.
 
    * Les développeurs spécifiques disposent ainsi des autorisations nécessaires pour activer les intégrations à l’aide de la Developer Console Adobe.
-   * Voir [Gestion des développeurs](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * Voir [Gérer l’équipe de développement](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## Configuration d’une configuration IMS - Génération d’une clé publique {#configuring-ims-generating-a-public-key}
@@ -71,7 +82,7 @@ Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Analyti
 >
 >Actuellement, nous ne prenons en charge que le **Compte de service (JWT)** type d’identification.
 >
->N’utilisez pas la variable **OAuth serveur à serveur** type d’informations d’identification, qui sera pris en charge à l’avenir.
+>N’utilisez pas le type d’identification **OAuth serveur à serveur**, qui sera pris en charge à l’avenir.
 
 1. Ouvrez la Developer Console d’Adobe pour les projets :
 

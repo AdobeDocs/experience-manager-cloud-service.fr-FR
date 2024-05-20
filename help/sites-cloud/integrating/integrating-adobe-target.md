@@ -4,10 +4,10 @@ description: Découvrez comment intégrer Adobe Target à AEM as a Cloud Service
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 96%
+source-wordcount: '1065'
+ht-degree: 86%
 
 ---
 
@@ -20,7 +20,7 @@ Dans le cadre d’Adobe Experience Cloud, Adobe Target vous permet d’améli
 
 Adobe Launch est nécessaire afin de gérer les propriétés côté client pour Analytics et Target dans les pages AEM (bibliothèques/balises JS). Cela dit, l’intégration à Launch est nécessaire au « ciblage d’expérience ».
 
-Pour l’exportation de fragments d’expérience et/ou de fragments de contenu vers Target, vous avez uniquement besoin de la [configuration d’Adobe Target et IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+Pour l’exportation de fragments d’expérience et/ou de fragments de contenu vers Target, vous avez besoin de la variable [Configuration Adobe Target](#create-configuration), y compris le [Intégration IMS](#ims-configuration).
 
 >[!NOTE]
 >
@@ -38,7 +38,20 @@ Pour l’exportation de fragments d’expérience et/ou de fragments de contenu 
 
 ### Configuration IMS {#ims-configuration}
 
-Une configuration IMS pour Launch et Target est nécessaire pour intégrer correctement Target à AEM et Launch. Bien que la configuration IMS de Launch est préconfigurée dans AEM as a Cloud Service, celle de Target doit être créée (une fois Target approvisionné). Consultez la [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) et la vidéo [Intégrer Experience Platform Launch et AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr) pour savoir comment créer la configuration IMS de Target.
+L’intégration d’AEM à Adobe Target à l’aide de l’API Target Standard nécessite la configuration d’Adobe IMS (système d’Identity Management). La configuration IMS de Target doit être créée (une fois Target configuré). Voir [Configuration des intégrations IMS pour AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) et la vidéo [Intégration des Experience Platform Launch et des AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr) pour savoir comment créer la configuration IMS de Target.
+
+>[!NOTE]
+>
+>[Les intégrations IMS sont désormais configurées avec S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>Les configurations précédentes étaient effectuées avec [Informations d’identification JWT désormais obsolètes dans la console Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+>[!NOTE]
+>
+>Lors de la configuration du projet, les profils de produit affichés avec dépendent si vous disposez des éléments suivants :
+>
+>* Adobe Target Standard - Seul l’**espace de travail par défaut** est disponible.
+>* Adobe Target Premium - Tous les espaces de travail disponibles sont répertoriés, comme illustré ci-dessous.
 
 ### ID de client Adobe Target et code client Adobe Target {#tenant-client}
 

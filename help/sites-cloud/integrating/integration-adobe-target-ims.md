@@ -2,9 +2,12 @@
 title: Configuration IMS à utiliser lors de l’intégration à Adobe Target
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '901'
 ht-degree: 93%
 
 ---
@@ -12,6 +15,14 @@ ht-degree: 93%
 # Configuration IMS à utiliser lors de l’intégration à Adobe Target{#ims-configuration-for-integration-with-adobe-target}
 
 L’intégration d’AEM à Adobe Target à l’aide de l’API Target Standard nécessite la configuration d’Adobe IMS (système d’Identity Management). La configuration est réalisée avec la Developer Console Adobe.
+
+>[!CAUTION]
+>
+>La configuration décrite sur cette page ne peut plus être utilisée pour les intégrations nouvelles ou mises à jour.
+>
+>[Les intégrations IMS sont désormais configurées avec S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>Les configurations précédentes, comme décrit sur cette page, ont été effectuées avec [Informations d’identification JWT désormais obsolètes dans la console Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -33,7 +44,7 @@ Avant de commencer cette procédure :
 * L’administrateur système de votre entreprise doit utiliser l’Admin Console pour donner aux développeurs de votre entreprise l’accès aux profils de produit appropriés.
 
    * Les développeurs spécifiques disposent ainsi des autorisations nécessaires pour activer les intégrations à l’aide de la Developer Console Adobe.
-   * Voir [Gestion des développeurs](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * Voir [Gérer l’équipe de développement](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## Configuration d’une configuration IMS - Génération d’une clé publique {#configuring-an-ims-configuration-generating-a-public-key}
@@ -69,7 +80,7 @@ Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Target 
 >
 >Actuellement, nous ne prenons en charge que le **Compte de service (JWT)** type d’identification.
 >
->N’utilisez pas la variable **OAuth serveur à serveur** type d’informations d’identification, qui sera pris en charge à l’avenir.
+>N’utilisez pas le type d’identification **OAuth serveur à serveur**, qui sera pris en charge à l’avenir.
 
 1. Ouvrez la Developer Console d’Adobe pour les projets :
 
@@ -154,7 +165,7 @@ Sélectionnez **Affichage** (à droite d’une entrée de projet spécifique) po
 * Les API
    * Par exemple, Adobe Target
 
-Certains d’entre eux doivent terminer l’intégration d’Adobe Target dans AEM basée sur IMS.
+Pour certains d’entre eux, vous devez terminer l’intégration d’Adobe Target à AEM basée sur l’IMS.
 
 ## Réalisation de la configuration IMS dans AEM {#completing-the-ims-configuration-in-aem}
 
@@ -173,7 +184,7 @@ En retournant sur AEM, vous pouvez terminer la configuration IMS en ajoutant les
 
    ![Configuration du compte technique Adobe IMS](assets/integrate-target-ims-10.png)
 
-1. Confirmez avec **Créer**.
+1. Confirmez en sélectionnant **Créer**.
 
 1. Votre configuration Adobe Target s’affiche dans la console AEM.
 
