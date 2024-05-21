@@ -2,7 +2,7 @@
 title: Inclusions côté périphérie
 description: Le réseau de diffusion de contenu géré par Adobe prend désormais en charge Edge Side Includes (ESI), un langage de balisage pour l’assemblage de contenu web dynamique de niveau périphérie.
 feature: Dispatcher
-source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
+source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 1%
@@ -44,8 +44,8 @@ Voir [Spécification ESI](https://www.w3.org/TR/esi-lang/) pour plus d’informa
 
 * Les balises ESI suivantes sont prises en charge : inclure, commenter, supprimer.
 * Les balises ESI sont traitées sur le réseau de diffusion de contenu de manière séquentielle plutôt que simultanée. De nombreuses balises ESI sur une page avec de faibles TTL peuvent donc ajouter une latence à l’expérience de l’utilisateur final.
-* La profondeur maximale du traitement ESI:include est de 5.
-* Le nombre total maximal de fragments de traitement ESI:include est de 256.
+* La profondeur maximale d’ESI : le traitement d’inclusion est de 5.
+* ESI total maximal : inclure les fragments de traitement est de 256.
 
 
 ## Configuration Apache {#esi-apache}
