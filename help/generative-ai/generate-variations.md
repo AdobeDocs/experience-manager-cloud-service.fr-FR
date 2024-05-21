@@ -2,9 +2,9 @@
 title: Générer des variations
 description: En savoir plus sur la génération de variations, accessible à partir d’AEM as a Cloud Service et du Sidekick des Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3262'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ Vous pouvez [Accès Générer des variations](#access-generate-variations) de :
 
 * [dans Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [le Sidekick des Edge Delivery Services AEM](#access-aem-sidekick)
+* [dans l’éditeur de fragments de contenu](#authoring-content-fragments)
 
 >[!NOTE]
 >
@@ -141,7 +142,7 @@ Si vous devez affiner les entrées ou l’invite, vous pouvez effectuer des ajus
 
 Au-dessus de chaque ensemble de variations se trouve l’invite qui les a créées, ainsi qu’un **Réutiliser** . Si vous avez besoin de réexécuter une invite avec ses entrées, sélectionnez **Réutiliser** pour les recharger dans **Entrées**.
 
-### Générer l’image {#generate-image}
+### Générer une image {#generate-image}
 
 Après avoir généré des variations de texte, vous pouvez générer des images en Adobe Express à l’aide des fonctionnalités Generative AI de Firefly.
 
@@ -291,7 +292,7 @@ L’image suivante présente les avantages de cette opération :
 
 ![Générer des variations - invite avec les options Titre et Description formatées séparément](assets/generate-variations-prompt-formatted.png)
 
-## Invite de sauvegarde {#save-prompt}
+## Enregistrer le prompt {#save-prompt}
 
 Après avoir modifié ou créé des invites, vous pouvez les enregistrer pour une utilisation ultérieure, soit pour votre organisation IMS, soit pour vous-même. L’invite enregistrée apparaît sous la forme d’une **Modèle d’invite** carte.
 

@@ -1,10 +1,11 @@
 ---
 title: Notes de mise à jour de la fonction Générer des variations
 description: Notes de mise à jour de Generate Variations (Générer des variations), accessibles depuis AEM as a Cloud Service et le Sidekick des Edge Delivery Services
-source-git-commit: 8067da7fb65bee6c147f306712eb312323244357
+exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
+source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 11%
+source-wordcount: '225'
+ht-degree: 10%
 
 ---
 
@@ -17,6 +18,15 @@ Cette page documente les notes de mise à jour de Générer des variations, acce
 >Consultez [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour obtenir les notes de mise à jour actuelle d’Adobe Experience Manager as a Cloud Service.
 
 ## Nouveautés des versions {#release-highlights}
+
+La version actuelle est la version 2.2.0.
+
+### 2.2.0 {#release-notes-2-2-0}
+
+* Prise en charge des fragments de contenu mise en oeuvre
+* Possibilité de télécharger les résultats au format CSV à partir des Favoris
+* Amélioration de la liste Récents avec des regroupements temporels
+* Ajout de la prise en charge de la localisation pour plusieurs langues
 
 La version actuelle est la version 2.0.0.
 
