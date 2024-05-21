@@ -2,9 +2,9 @@
 title: Inclusions côté périphérie
 description: Le réseau de diffusion de contenu géré par Adobe prend désormais en charge Edge Side Includes (ESI), un langage de balisage pour l’assemblage de contenu web dynamique de niveau périphérie.
 feature: Dispatcher
-source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
+source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ La syntaxe ESI est la suivante, si une page parente `/content/page.html` inclut 
 
 Voir [Spécification ESI](https://www.w3.org/TR/esi-lang/) pour plus d’informations.
 
-### Considérations (#esi-syntax-considerations}
+### Considérations {#esi-syntax-considerations}
 
 * Les balises ESI suivantes sont prises en charge : inclure, commenter, supprimer.
 * Les balises ESI sont traitées sur le réseau de diffusion de contenu de manière séquentielle plutôt que simultanée. De nombreuses balises ESI sur une page avec de faibles TTL peuvent donc ajouter une latence à l’expérience de l’utilisateur final.
