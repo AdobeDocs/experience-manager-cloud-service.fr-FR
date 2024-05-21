@@ -1,19 +1,19 @@
 ---
-title: Bonnes pratiques pour le mappage des utilisateurs et la définition d’utilisateur du service Sling
-description: Découvrez les bonnes pratiques relatives au mappage des utilisateurs du service sling et à la définition des utilisateurs du service.
+title: Bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling
+description: Découvrir les bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling
 source-git-commit: b6f7b6996b377ecfa372742ce1ad22139547ebdd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1884'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Bonnes pratiques pour le mappage des utilisateurs et la définition d’utilisateur du service Sling {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
+# Bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
-## Mappage des utilisateurs du service {#service-user-mapping}
+## Mappage d’utilisateurs et d’utilisatrices de service {#service-user-mapping}
 
-Pour ajouter un mappage de votre service au ou aux utilisateurs système correspondants, vous devez créer une configuration de fabrique pour la variable `ServiceUserMapper` service. Pour maintenir ce module, de telles configurations peuvent être fournies à l’aide du mécanisme &quot;d’amendement&quot; Sling (voir [SLING-3578](https://issues.apache.org/jira/browse/SLING-3578) pour plus de détails). La méthode recommandée pour installer de telles configurations avec votre lot consiste à l’ajouter au modèle de configuration de démarrage rapide, comme décrit dans l’exemple suivant :
+Pour ajouter un mappage de votre service aux utilisateurs et utilisatrices système correspondants, vous devez créer une configuration d’usine pour le service `ServiceUserMapper`. Afin de rester dans un fonctionnement modulaire, de telles configurations peuvent être fournies à l’aide du mécanisme « d’amendement » Sling (voir [SLING-3578](https://issues.apache.org/jira/browse/SLING-3578) pour plus d’informations). La méthode recommandée pour installer de telles configurations avec votre lot consiste à l’ajouter au modèle d’approvisionnement de démarrage rapide, comme décrit dans l’exemple suivant :
 
 ```
 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-my-mapping
@@ -26,207 +26,207 @@ org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-my-mappin
 
 ### Format de mappage {#mapping-format}
 
-Depuis AEM 6.4, le format de mappage est défini comme suit :
+Depuis AEM 6.4, le format de mappage est défini comme suit :
 
 >[!NOTE]
 >
->La variable `userName` est obsolète et ne doit plus être utilisé.
+>Le composant `userName` est obsolète et ne doit plus être utilisé.
 
 ```
 bundleId [:subserviceName] = userName | [principalNames]   
 ```
 
-`bundleId` et `subserviceName` identifier le service, `userName/principalNames` identifier l’utilisateur du service et `principalNames` est une liste séparée par des virgules.
+`bundleId` et `subserviceName` identifient le service, `userName/principalNames` identifie l’utilisateur ou l’utilisatrice de service et `principalNames` est une liste séparée par des virgules.
 
-Notez également que `principalNames` est la liste des noms principaux des utilisateurs du service qui, prêts à l’emploi, sont identiques à l’identifiant.
+Notez également que `principalNames` est la liste des noms principaux des utilisateurs et des utilisatrices de service qui, par défaut, sont identiques aux identifiants.
 
 
 **Bonne pratique**
 
-* Noms de sous-service pour différentes tâches : si les services de votre lot effectuent différentes tâches, il est recommandé d’identifier `subserviceNames` pour les regrouper par tâches
-* Si un service donné effectue différentes opérations (par exemple, la lecture du contenu d’une ressource et la mise à jour des informations sous une sous-arborescence de `/var`), il est recommandé de refléter cela en agrégeant différentes entités de service reflétant l’opération individuelle, comme l’agrégation de la commune `dam-reader-service` avec votre fonction spécifique `assetreport-writer-service`
+* Noms de sous-service pour différentes tâches : si les services de votre lot effectuent différentes tâches, il est recommandé d’identifier les `subserviceNames` pour les regrouper par tâches.
+* Si un service donné effectue différentes opérations (par exemple, la lecture du contenu d’une ressource et la mise à jour d’informations dans une sous-arborescence de `/var`), il est recommandé de refléter cela en agrégeant différentes entités de service qui reflètent l’opération individuelle, en agrégeant par exemple le `dam-reader-service` commun avec votre `assetreport-writer-service` spécifique à une fonction.
 * Chaque service est idéalement lié à un ensemble d’opérations très spécifique et limité.
-* Le nouveau format avec `[one,or,multiple,principalNames]` est la méthode recommandée pour définir des mappages d’utilisateurs de service à partir d’AEM 6.4.
+* Le nouveau format avec `[one,or,multiple,principalNames]` est la méthode recommandée pour définir des mappages d’utilisateurs et d’utilisatrices de service à partir d’AEM 6.4.
 
-Vous trouverez ci-dessous une liste des raisons de modifier le format et pourquoi Adobe vous recommande de l’utiliser au lieu du mappage de version uniquement pour un seul ID utilisateur :
+Vous trouverez ci-dessous une liste des raisons justifiant de modifier le format et pourquoi Adobe vous recommande de l’utiliser au lieu d’un mappage de version uniquement pour un seul identifiant d’utilisateur ou d’utilisatrice :
 
-* La possibilité de réutiliser les utilisateurs du service en combinant les besoins spécifiques des clients avec les tâches courantes
-* Éviter la duplication de la configuration des autorisations
-* Meilleure compréhension des autorisations (et des tâches) efficaces qu’un service donné effectue
-* Il n’est pas nécessaire d’appartenir à un groupe explicite pour les utilisateurs du service. Cela peut avoir des effets secondaires gênants lorsque les autorisations de groupe changent
+* Possibilité de réutiliser les utilisateurs et les utilisatrices de service en combinant les besoins spécifiques des clientes et des clients avec des tâches courantes
+* Éviter la duplication des configurations d’autorisations
+* Meilleure compréhension des autorisations (et des tâches) réelles gérées par un service donné
+* Pas d’obligation d’appartenance explicite à un groupe pour les utilisateurs et les utilisatrices de service. Cela peut avoir des effets secondaires problématiques lorsque les autorisations du groupe sont modifiées.
 * Améliorations des performances et évolutivité
 
 ## Résolution de mappage et connexion au service {#mapping-resolution-and-service-login}
 
 ### Résolution du mappage des services {#service-mapping-resolution}
 
-La séquence d’appels pour résoudre le mappage de service décrite ci-dessous :
+La séquence d’appels pour résoudre le mappage des services est décrite ci-dessous :
 
-1. Rechercher actif `principalNames` mappage pour le donné `bundleId` et `subserviceName`
-1. `principalNames` mappage pour la variable `bundleId` et nul `subserviceName`
-1. `userName` mappage pour la variable `bundleId` et `subserviceName`
-1. `userName` mappage pour `bundleId` et nul `subserviceName`
+1. Rechercher un mappage `principalNames` actif pour les `bundleId` et `subserviceName` donnés
+1. Mappage de `principalNames` pour le `bundleId` et le `subserviceName` null
+1. Mappage de `userName` pour le `bundleId` et le `subserviceName`
+1. Mappage de `userName` pour le `bundleId` et le `subserviceName` null
 1. Mappage par défaut
-1. Utilisateur par défaut
+1. Utilisateur ou utilisatrice par défaut
 
-### SlingRepository - Service Login {#slingrepository-servicelogin}
+### Référentiel Sling - Connexion au service {#slingrepository-servicelogin}
 
-La séquence d’obtention d’un service `Session/ResourceResolver` fonctionne comme suit :
+La séquence d’obtention d’un service `Session/ResourceResolver` fonctionne comme suit :
 
-1. Obtenir les noms principaux à partir de `ServiceUserMapper` => connexion au référentiel pré-authentification comme décrit ci-dessous
-1. Récupération de l’ID utilisateur depuis `ServiceUserMapper`
-1. Recherchez l’ID utilisateur actuel 1ServiceUserConfiguration obsolète.
-1. Connexion par défaut au service Sling avec l’ID utilisateur (par exemple, une séquence de `createAdministrativeSession` et emprunter l’identité de l’ID utilisateur du service)
+1. Obtenez les noms principaux à partir de `ServiceUserMapper` => connectez-vous au référentiel avec pré-authentification comme décrit ci-dessous.
+1. Récupérez l’identifiant de l’utilisateur ou de l’utilisatrice à partir de `ServiceUserMapper`.
+1. Recherchez une « 1ServiceUserConfiguration » obsolète pour l’identifiant d’utilisateur ou d’utilisatrice actuel.
+1. Connectez-vous au service Sling par défaut avec l’identifiant de l’utilisateur ou de l’utilisatrice (par exemple, une séquence de `createAdministrativeSession` avec emprunt de l’identité de l’identifiant de l’utilisateur ou de l’utilisatrice de service).
 
-Le nouveau mappage avec les noms principaux entraîne la connexion simplifiée suivante au référentiel :
+Le nouveau mappage avec les noms principaux entraîne la connexion simplifiée suivante au référentiel :
 
-* Un jeu de noms principaux est traité comme le ou les principaux actifs à utiliser pour renseigner la variable `Subject`
-* La connexion au référentiel peut donc être préauthentifiée.
-* Aucune résolution d’appartenance à un groupe
+* Un jeu de noms principaux est traité comme la ou les entités à utiliser pour renseigner `Subject`.
+* La connexion au référentiel peut par conséquent être préauthentifiée.
+* Pas de résolution d’appartenance à un groupe.
 
   >[!NOTE]
   >
-  >Toutes les autorisations requises doivent être déclarées pour les utilisateurs du service. &quot;everyone&quot; et autres autorisations de groupe ne seront plus héritées.
+  >Toutes les autorisations requises doivent être déclarées pour les utilisateurs et les utilisatrices de service. L’autorisation « tout le monde » et les autres autorisations de groupe ne sont plus héritées.
 
-* Aucun admin-login supplémentaire pour que le service -`Session/ResourceResolver` sont créées.
+* Aucune connexion d’administration supplémentaire n’est créée pour disposer du service `Session/ResourceResolver`.
 
 ### ServiceUserConfiguration obsolète {#deprecated-serviceUserConfiguration}
 
-Notez que la spécification d’un seul nom d’utilisateur dans le mappage équivaut à la valeur existante `ServiceUserConfiguration.simpleSubjectPopulation`. Avec le nouveau format, la solution fournie par la variable `ServiceUserConfiguration` peuvent être directement répercutés avec le mappage utilisateur du service. La variable `ServiceUserConfiguration` a donc été abandonné pour AEM et toutes les utilisations existantes ont été remplacées.
+Notez que le fait de spécifier un seul nom d’utilisateur ou d’utilisatrice dans le mappage est similaire au `ServiceUserConfiguration.simpleSubjectPopulation` existant. Avec le nouveau format, la solution fournie par `ServiceUserConfiguration` peut être directement appliquée à l’aide du mappage des utilisateurs et des utilisatrices de service. `ServiceUserConfiguration` a donc été abandonné pour AEM et toutes ses utilisations existantes ont été remplacées.
 
 ## Utilisateurs et utilisatrices de service {#service-users}
 
-### Réutilisation d’utilisateurs de service existants {#reusing-existing-service-users}
+### Réutiliser des utilisateurs et des utilisatrices de service existants {#reusing-existing-service-users}
 
-Il est recommandé de réutiliser les utilisateurs existants du service si les conditions suivantes sont remplies :
+Il est recommandé de réutiliser les utilisateurs et utilisatrices de service existants si les conditions suivantes sont remplies :
 
-* Vos besoins correspondent à l’intention de l’utilisateur du service existant.
-* Votre service nécessite d’effectuer une tâche commune qui est couverte par un utilisateur de service commun existant. Dans ce cas, il est recommandé de réutiliser l’utilisateur du service au lieu d’introduire la duplication.
-* Votre service nécessite une tâche spécifique couverte par un utilisateur de service existant. Si vous n’en êtes pas sûr, demandez à l’équipe de fonctionnalités qui la possède.
+* Vos besoins correspondent aux intentions des utilisateurs et utilisatrices de service existants.
+* Votre service nécessite d’effectuer une tâche courante qui est assurée par des utilisateurs et utilisatrices de service courants et existants. Dans ce cas, il est recommandé de réutiliser les utilisateurs et utilisatrices de service au lieu d’impliquer une duplication.
+* Votre service nécessite une tâche spécifique assurée par des utilisateurs et utilisatrices de service existants. Si vous n’en avez pas la certitude, demandez à l’équipe chargée des fonctionnalités qui la possède.
 
-Ne réutilisez pas les utilisateurs du service existant si :
+Ne réutilisez pas les utilisateurs et les utilisatrices de service existants dans les cas suivants :
 
-* Vous devez modifier son autorisation de manière sans rapport avec elle pour qu’elle fonctionne.
-* Si vous n’avez besoin que d’un petit sous-ensemble de l’autorisation qu’il fournit et que vous le réutilisez simplement parce que cela fait fonctionner votre fonctionnalité, non parce qu’il s’agit d’une correspondance réelle.
-* Si son nom indique une intention totalement différente de celle dont vous avez besoin. Le choix de cette option, car elle fonctionne, peut entraîner des problèmes dans le futur, car l’équipe de fonctionnalités propriétaire d’un service spécifique peut modifier les autorisations et interrompre votre fonctionnalité.
+* Vous devez modifier leurs autorisations concernant d’autres éléments pour que cela fonctionne.
+* Si vous n’avez besoin que d’une petite partie des autorisations que ceux-ci fournissent et que vous les réutilisez uniquement parce que cela permet à votre fonctionnalité de fonctionner, et non en raison d’une correspondance réelle.
+* Si leur nom indique une intention totalement différente de celle dont vous avez besoin. Choisir cette option uniquement parce que c’est celle qui fonctionne peut entraîner des problèmes dans le futur, car l’équipe chargée des fonctionnalités qui est propriétaire d’un service spécifique peut modifier les autorisations et entraîner une détérioration du fonctionnement de votre fonctionnalité.
 
-### Création d’un utilisateur de service {#creating-a-service-user}
+### Créer un utilisateur ou une utilisatrice de service {#creating-a-service-user}
 
-Une fois que vous avez vérifié qu’aucun utilisateur de service existant dans AEM n’est applicable à votre cas d’utilisation et que les problèmes RTC correspondants ont été approuvés, vous pouvez poursuivre et ajouter le nouvel utilisateur au contenu par défaut. Idéalement, un membre de l&#39;équipe de sécurité étendue est impliqué dans le vote du RTC, donc veillez à impliquer également les parties prenantes appropriées.
+Après avoir vérifié qu’aucun utilisateur ni aucune utilisatrice de service dans AEM ne peut correspondre à votre cas d’utilisation et que les problèmes RTC correspondants ont été approuvés, vous pouvez poursuivre et ajouter le nouvel utilisateur ou la nouvelle utilisatrice au contenu par défaut. Idéalement, une personne membre de l’équipe de sécurité étendue est impliquée dans le vote RTC, assurez-vous donc d’impliquer également les parties prenantes appropriées.
 
-**Convention d’appellation**
+**Convention de nommage**
 
-L’équipe de sécurité d’AEM a défini la convention d’affectation des noms suivante pour que les utilisateurs du service ajoutent de la cohérence aux nouveaux utilisateurs du service et améliorent leur lisibilité et leur maintenabilité.
+L’équipe de sécurité d’AEM a défini la convention de nommage suivante pour que les utilisateurs et les utilisatrices de service ajoutent de la cohérence pour les nouveaux utilisateurs et les nouvelles utilisatrices de service et améliorent leur lisibilité et leur maintenance.
 
-Un nom d’utilisateur de service se compose de 3 éléments séparés par un tiret **&#39;-&#39;**:
+Un nom d’utilisateur ou d’utilisatrice de service est composé de 3 éléments séparés par un tiret **« - »** :
 
-1. L’entité/la fonctionnalité logique ciblée par les opérations de service (évitez les éléments de chemins qui peuvent changer)
-1. La tâche que les services vont effectuer
-1. Tracking **&#39;service&#39;** pour repérer facilement à partir de l’identifiant et du nom principal que l’utilisateur est un utilisateur du service.
+1. L’entité/la fonctionnalité logique ciblée par les opérations du service (évitez les fragments de chemins susceptibles d’être modifiés).
+1. La tâche que les services vont effectuer.
+1. L’élément **« service »** à la fin pour repérer facilement à partir de l’identifiant et du nom principal que l’utilisateur ou l’utilisatrice est un utilisateur ou une utilisatrice de service.
 
 **Bonnes pratiques**
 
-* Ne mélangez pas différentes entités/fonctionnalités. Partage avec des utilisateurs individuels du service et agrégation dans le mappage si votre service a des besoins différents
-* Limitez-vous à une tâche bien définie par utilisateur de service. Partage si vous finissez par accorder trop d’autorisations ou des autorisations non liées
-* Passez du temps à identifier le besoin réel de votre service.
-* Consacrez du temps à trouver un nom d’utilisateur de service bon, significatif et auto-explicatif
-* Demandez des commentaires et des commentaires : les développeurs qui ne connaissent pas votre fonctionnalité devraient être en mesure de lire et de comprendre vos intentions. Il se pourrait qu&#39;à l&#39;avenir ils soient chargés de le réparer ou de le maintenir.
+* Ne mélangez pas différentes entités/fonctionnalités. Partagez-les entre des utilisateurs et des utilisatrices de service individuels et agrégez-les dans le mappage si votre service a des besoins différents.
+* Limitez-vous à une tâche bien définie par utilisateur ou utilisatrice de service. Partagez-la si vous devez accorder trop d’autorisations ou des autorisations sans rapport avec celle-ci.
+* Prenez le temps d’identifier le besoin réel de votre service.
+* Prenez le temps de trouver un nom d’utilisateur ou d’utilisatrice de service adapté, explicite et représentatif.
+* Demandez des commentaires et des avis : les développeurs et les développeuses qui ne connaissent pas votre fonctionnalité doivent être en mesure de lire et de comprendre vos intentions. Ils pourraient à l’avenir être chargés de réaliser des corrections ou de la maintenance sur celle-ci.
 
-À la fin, le nom d’utilisateur du service doit afficher :
+En fin de compte, le nom d’utilisateur ou d’utilisatrice de service doit montrer les éléments suivants :
 
-* Comment il est destiné à être utilisé et s’il peut être réutilisé :
+* Comment il est destiné à être utilisé et s’il peut être réutilisé :
 
-   * Très générique : `content-writer-service`. Peut être réutilisé dans l’agrégation si votre ou vos services doivent également pouvoir lire tout le contenu
-   * Très spécifique : `asset-linkshare-service`. Il n’est pas si sûr de réutiliser votre service, sauf si celui-ci effectue également un partage de lien des ressources.
+   * Très générique : `content-writer-service`. Il peut être réutilisé sans risque pour une agrégation si votre ou vos services doivent également pouvoir lire tout le contenu.
+   * Très spécifique : `asset-linkshare-service`. Il ne peut pas être réutilisé sans risque, sauf si votre service effectue également un partage de lien des ressources.
 
-* À quoi peuvent ressembler le jeu de fonctionnalités et la configuration des autorisations :
+* Voici à quoi peuvent ressembler le jeu de fonctionnalités et la configuration des autorisations :
 
-   * L’entité logique doit correspondre à la configuration de l’autorisation :
+   * L’entité logique doit correspondre à la configuration des autorisations :
 
-      * A `content-foo-service` ne doit être associé qu’aux opérations sur le contenu. L’attribution des autorisations pour opérer sur d’autres entités telles que la configuration ou les utilisateurs serait incorrecte.
-      * Un service spécifique comme `personalization-foo-service` doit également être fourni avec des autorisations spécifiques. Si vous obtenez des autorisations sur tout le contenu, cela n’est plus spécifique. Réfléchissez-y dans le nom ou réutilisez un utilisateur commun dans l’agrégation.
-      * Un service spécifique à une fonctionnalité, tel que `msm-xyz-service` ne doivent posséder que des autorisations liées à msm. N’étendez pas les autorisations aux fonctionnalités non liées telles que la gestion de la configuration des communautés ou la configuration des utilisateurs Screens.
+      * Un `content-foo-service` ne doit être associé qu’aux opérations sur le contenu. Il serait incorrect de lui attribuer des autorisations pour opérer sur d’autres entités telles que la configuration ou les utilisateurs et les utilisatrices.
+      * Un service spécifique tel que `personalization-foo-service` doit également disposer d’autorisations spécifiques. Si vous accordez des autorisations sur tout le contenu, celles-ci ne sont plus spécifiques. Indiquez cela dans le nom ou réutilisez des utilisateurs et utilisatrices communs dans l’agrégation.
+      * Un service spécifique à une fonctionnalité, tel que `msm-xyz-service`, ne doit posséder que des autorisations liées à MSM. N’étendez pas les autorisations à des fonctionnalités différentes telles que la gestion de la configuration des communautés ou la configuration des utilisateurs et des utilisatrices Screens.
 
-   * La tâche doit correspondre aux autorisations :
+   * La tâche doit correspondre aux autorisations :
 
-      * A `foo-reader-service` ne doit être en mesure de lire que les éléments standard. Ne jamais accorder d’autorisations d’écriture
-      * A `foo-writer-service` peuvent être censés effectuer des opérations d’écriture. Cependant, il ne doit pas lui être accordé d’autorisations de lecture/modification du contenu du contrôle d’accès.
-      * A `foo-replicator-service` peut avoir la valeur `crx:replicate` accordé.
+      * Un `foo-reader-service` ne doit être en mesure de lire que les éléments standard. N’accordez jamais d’autorisations d’écriture.
+      * Un `foo-writer-service` peut être amené à effectuer des opérations d’écriture. Cependant, il ne doit pas lui être accordé d’autorisations de lecture ou de modification du contrôle d’accès au contenu.
+      * Un `foo-replicator-service` peut être amené à devoir disposer de l’autorisation `crx:replicate`.
 
 **Exemples**
 
-Exemples pour `configuration-reader-service`:
+Exemples pour `configuration-reader-service` :
 
-* Le nom indique qu’il fait référence aux configurations en général et non à la configuration d’une fonctionnalité particulière, comme la configuration de l’intégration DM. Un utilisateur de service spécifiquement ciblé pour lire la configuration d’une telle intégration doit plutôt être nommé `dmconfig-reader-service` ou `s7config-reader-service`
+* Le nom indique qu’il fait référence aux configurations en général et non à la configuration d’une fonctionnalité particulière, telle que la configuration de l’intégration DM. Un utilisateur de service spécifiquement ciblé ou une utilisatrice de service spécifiquement ciblée pour lire la configuration d’une telle intégration doit plutôt porter le nom `dmconfig-reader-service` ou `s7config-reader-service`.
 
   >[!NOTE]
   >
-  >Aucune information de chemin n’est incluse dans l’attribution de noms. Les configurations ont été déplacées d’ `/etc` to `/conf`.
+  >Aucune information de chemin n’est incluse dans les noms. Les configurations ont été déplacées de `/etc` vers `/conf`.
 
-* L’élément task-element indique que les services liés à cet utilisateur effectuent uniquement des opérations de lecture.
+* La section task-element indique que les services liés à cet utilisateur ou à cette utilisatrice n’effectuent que des opérations de lecture.
 
-Exemples pour `userproperties-copy-service`:
+Exemples pour `userproperties-copy-service` :
 
-* Les services liés à cet utilisateur de service fonctionneront sur des propriétés d’utilisateur/de groupe telles que des profils ou des préférences.
-* Il est spécifiquement destiné à copier ces informations par opposition à un nom comme `userproperties-writer-service` qui inclurait tous les types d’opérations d’écriture. Par conséquent, il est possible que la configuration des autorisations pour ces tâches de copie autorise uniquement l’ajout d’éléments à un emplacement et la suppression d’éléments à un autre emplacement.
+* Les services liés à cet utilisateur ou à cette utilisatrice de service vont agir sur des propriétés d’utilisateur ou d’utilisatrice ou de groupe, telles que des profils ou des préférences.
+* Il est spécifiquement destiné à uniquement copier ces informations, par opposition à un nom comme `userproperties-writer-service` qui inclut d’autres types d’opérations d’écriture. Par conséquent, il est possible que la configuration des autorisations pour ces tâches de copie autorise uniquement l’ajout d’éléments à un emplacement donné, et la suppression d’éléments à un autre emplacement.
 
-**Bonnes pratiques pour la configuration des autorisations**
+**Bonnes pratiques relatives à la configuration des autorisations**
 
-* Utilisez toujours la configuration du contrôle d’accès basé sur l’entité de sécurité pour les utilisateurs du service. Pour plus d’informations, voir les exemples ci-dessous :
+* Utilisez toujours la configuration de contrôle d’accès basée sur une entité pour les utilisateurs et les utilisatrices de service. Pour plus d’informations, consultez les exemples ci-dessous :
 
-   * Autoriser les utilisateurs du service à marquer et leurs autorisations comme contenu d’application non modifiable dans la ligne d’horizon
-   * Pas besoin de créer des chemins et des structures arborescentes
+   * Autorisez le marquage des utilisateurs et des utilisatrices de service et de leurs autorisations comme du contenu d’application non modifiable dans Skyline.
+   * Il n’est pas nécessaire de créer des chemins et des structures d’arborescence.
 
-* N’octroyez que des autorisations, jamais refusez
-* Limitez les autorisations.
+* Vous devez seulement accorder des autorisations : ne les révoquez jamais.
+* Limiter les autorisations
 
-   * N’accordez que le jeu minimal d’autorisations nécessaire
-   * Pour plus d’informations, consultez la [Mappage des privilèges aux éléments](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) et [Mappage des appels d’API aux privilèges](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html) documentation
-   * N’accordez pas d’autorisation pour `jcr:all`. Ce n&#39;est probablement pas l&#39;ensemble minimal.
+   * N’accordez que l’ensemble minimum d’autorisations nécessaire.
+   * Pour plus d’informations, consultez la documentation relative au [Mappage des privilèges aux éléments](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) et au [Mappage des appels API aux privilèges](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html).
+   * N’accordez pas d’autorisations pour `jcr:all`. Il ne s’agit probablement pas de l’ensemble minimum.
 
 * Réduire la portée
 
-   * Placez des stratégies de contrôle d’accès dans des sous-arborescences spécifiques aux fonctionnalités
-   * En cas d’éléments distribués : utilisez des restrictions pour limiter la portée (consultez [la documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) pour la liste des restrictions intégrées).
+   * Placez des politiques de contrôle d’accès dans des sous-arborescences spécifiques aux fonctionnalités.
+   * En cas d’éléments distribués : utilisez des restrictions pour limiter la portée (consultez [la documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) pour la liste des restrictions intégrées).
 
 * Garantir la cohérence
 
-   * Rendre les autorisations cohérentes avec l’entité et la tâche que vous avez utilisées dans le nom d’utilisateur du service
-   * Évitez d’ajouter des autorisations non liées. Par exemple, il serait étrange d’avoir une `workflow-administration-service` et lui accorder les autorisations d’effectuer des opérations de gestion des utilisateurs à l’adresse `/home/users/screens` ou laissez-le lire s7-config.
+   * Assurez la cohérence des autorisations par rapport à l’entité et à la tâche que vous avez utilisées dans le nom d’utilisateur ou d’utilisatrice de service.
+   * Évitez d’ajouter des autorisations sans rapport. Par exemple, il serait étrange d’accorder à un `workflow-administration-service` l’autorisation d’effectuer des opérations de gestion des utilisateurs et des utilisatrices dans `/home/users/screens` ou de lui permettre de lire s7-config.
 
-* Complétude
+* Exhaustivité
 
-   * Assurez-vous que votre service dispose de toutes les autorisations dont il a besoin pour exécuter les tâches qu’il a été conçu pour exécuter. Votre service doit être prêt à l’emploi, également dans les environnements clients.
-   * Ne vous attendez jamais à ce que les clients développent la configuration des autorisations (par exemple, ci-dessous `/apps`)
+   * Assurez-vous que votre service dispose de toutes les autorisations dont il a besoin pour exécuter les tâches pour lesquelles il est conçu. Votre service doit être prêt à l’emploi, y compris dans les environnements clients.
+   * Ne vous attendez jamais à ce que les clientes et clients étendent la configuration des autorisations, et ne leur demandez pas non plus (voir l’exemple ci-dessous `/apps`).
 
-* Éviter la duplication de la configuration des autorisations
+* Éviter la duplication des configurations d’autorisations
 
-   * Réutiliser les utilisateurs du service commun
-   * Regroupez-les avec les utilisateurs de votre service spécifique qui fournissent l’autorisation spécifique dont vous avez besoin en outre.
+   * Réutilisez les utilisateurs et les utilisatrices de service communs.
+   * Regroupez-les avec vos utilisateurs et vos utilisatrices de service spécifiques à une fonctionnalité qui fournissent en plus l’autorisation spécifique dont vous avez besoin.
 
-* Ne fractionnez pas la configuration des autorisations entre différentes fonctionnalités. La nécessité de le faire indique que l’utilisateur de votre service n’est pas bien défini ou fait trop de choses différentes.
-* Ne placez pas les utilisateurs du service dans des groupes, car :
+* Ne fractionnez pas la configuration des autorisations entre différentes fonctionnalités. Si vous avez à le faire, cela indique que votre utilisateur ou utilisatrice de service n’a pas une définition correcte ou effectue trop d’actions différentes.
+* Ne placez pas les utilisateurs et les utilisatrices de service dans des groupes, pour les raisons suivantes :
 
-   * Il mélange les détails de mise en oeuvre des utilisateurs du service avec des groupes &quot;publics&quot;.
-   * Vous ne contrôlez pas les modifications des autorisations (sujets aux régressions et aux réaffectations de privilèges).
-   * Performances de la connexion et de l’évaluation
-   * Ne fonctionne pas avec la configuration automatique basée sur l’entité
+   * Cela mélange les informations d’implémentation des utilisateurs et des utilisatrices de service avec des groupes « publics ».
+   * Vous ne contrôlez pas les modifications des autorisations (sujettes aux révocations et aux octrois de privilèges).
+   * Performances de connexion et d’évaluation
+   * Ne fonctionne pas avec une configuration de contrôle d’accès basée sur une entité.
 
-* L’accès au noeud user-home (ou à toute sous-arborescence qui y est contenue), qui n’a pas de chemin d’accès prévisible est obtenu dans le référentiel init à l’aide de home(`userId`). Voir l’initialisation du référentiel sling [documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html) pour plus d’informations.
-* RTC : créez un problème RTC dédié si vous modifiez les autorisations d’un utilisateur de service existant et assurez-vous de le faire examiner par l’équipe de sécurité.
+* L’accès au nœud user-home (ou à toute sous-arborescence qu’il contient), qui n’a pas de chemin d’accès prévisible, est obtenu par l’initialisation du référentiel (repo init) à l’aide de home(`userId`). Consultez la [documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html) Sling relative à l’initialisation du référentiel (repo init) pour plus d’informations.
+* RTC : créez un problème RTC dédié si vous modifiez les autorisations d’un utilisateur ou d’une utilisatrice de service qui existe et assurez-vous de le faire examiner par l’équipe de sécurité.
 
-**Création avec initialisation du référentiel**
+**Création avec l’initialisation du référentiel**
 
-Toujours utiliser `repo-init` pour définir les utilisateurs du service, ainsi que leur configuration des autorisations, et les placer dans la section appropriée du modèle de fonctionnalité Quickstart :
+Utilisez toujours `repo-init` pour définir les utilisateurs et les utilisatrices de service, ainsi que la configuration de leurs autorisations, et placez-les dans la section appropriée du modèle de fonctionnalité Quickstart :
 
 **Bonnes pratiques**
 
-* Toujours utiliser `repo-init` pour créer l’utilisateur du service
-* Toujours spécifier un chemin intermédiaire pour la création d’utilisateurs de services
-* Tous les utilisateurs du service intégré pour AEM doivent se trouver sous `system/cq:services/internal`
-* Ajoutez en outre au chemin relatif intermédiaire le chemin d’accès au groupe des utilisateurs du service par fonction : `system/cq:services/internal/<your-feature>`
-* Les utilisateurs du service défini par le client doivent se trouver sous `system/cq:services/<customer-intermediate-rel-path>` et jamais sous l’arborescence interne
-* Utilisation **avec chemin forcé** au lieu de **avec chemin** si un utilisateur existe déjà et doit être déplacé vers le nouvel emplacement qui prend en charge l’autorisation basée sur l’entité.
+* Utilisez toujours `repo-init` pour créer une utilisateur ou une utilisatrice de service.
+* Spécifiez toujours un chemin intermédiaire pour la création d’utilisateurs et d’utilisatrices de service.
+* Tous les utilisateurs et utilisatrices de service intégrés dans AEM doivent se trouver sous `system/cq:services/internal`.
+* Ajoutez ceci au chemin relatif intermédiaire pour regrouper les utilisateurs et les utilisatrices de service par fonctionnalité : `system/cq:services/internal/<your-feature>`.
+* Les utilisateurs et les utilisatrices de service définis par le client ou la cliente doivent se trouver sous `system/cq:services/<customer-intermediate-rel-path>`, et jamais sous l’arborescence interne.
+* Utilisez un **chemin forcé** au lieu d’un **chemin** si un utilisateur ou une utilisatrice existe déjà et doit se voir déplacer vers le nouvel emplacement qui prend en charge l’autorisation basée sur une entité.
 
 **Exemples**
 
@@ -251,9 +251,9 @@ set principal ACL for myfeature-ims-service
 end
 ```
 
-### Utilisateurs et autorisations du service de nettoyage {#cleanup-service-users-and-permissions}
+### Nettoyer les utilisateurs et utilisatrices de service et les autorisations {#cleanup-service-users-and-permissions}
 
-La commande d’initialisation de référentiel suivante peut être utilisée pour nettoyer les utilisateurs de service inutilisés et leurs autorisations :
+La commande d’initialisation de référentiel (repo init) suivante peut être utilisée pour nettoyer les utilisateurs et les utilisatrices de service inutilisés et leurs autorisations :
 
 ```
 # Remove the principal-based access control policy for principal my-feature-service
@@ -269,11 +269,11 @@ disable service user my-feature-service : "My feature is no longer used"
 delete service my-feature-service 
 ```
 
-### Utilisateurs du service de test {#testing-service-users}
+### Tester les utilisateurs et les utilisatrices de service {#testing-service-users}
 
-Il est essentiel d’écrire des tests côté serveur pour les utilisateurs du service et leur configuration des autorisations. Cela permet non seulement de vérifier que votre configuration fonctionne vraiment, mais également de repérer les régressions et les erreurs involontaires lors de la modification du contenu de contrôle d’accès ou des utilisateurs du service.
+Il est essentiel d’écrire des tests côté serveur pour les utilisateurs et les utilisatrices de service et pour la configuration de leurs autorisations. Cela permet non seulement de vérifier que votre configuration fonctionne en pratique, mais également de repérer les révocations et les erreurs imprévues lors de modifications du contenu de contrôle d’accès ou des utilisateurs et des utilisatrices de service.
 
-La variable `com.adobe.granite.testing.clients` La bibliothèque fournit de nombreux utilitaires qui facilitent l’écriture de SST pour les utilisateurs de services.
+La bibliothèque `com.adobe.granite.testing.clients` fournit de nombreux utilitaires qui facilitent l’écriture de SST pour les utilisateurs et les utilisatrices de service.
 
 
 
