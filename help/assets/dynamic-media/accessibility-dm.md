@@ -1,16 +1,16 @@
 ---
 title: Accessibilité dans Dynamic Media
-description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication des vidéos sur YouTube et l’affichage des rapports vidéo. Apprenez également à ajouter des légendes, des sous-titres ou des marqueurs de chapitre aux vidéos.
+description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication des vidéos sur YouTube et l’affichage des rapports vidéo. Découvrez également comment ajouter des sous-titres, des sous-titres ou des marqueurs de chapitre aux vidéos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
-workflow-type: ht
-source-wordcount: '665'
-ht-degree: 100%
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+workflow-type: tm+mt
+source-wordcount: '638'
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ Consultez la rubrique d’aide **Prise en charge des technologies d’assistance
 
 Dynamic Media prend en charge la diffusion de vidéos et de visionneuses de vidéos adaptatives avec sous-titrage. Les sous-titres doivent s’afficher au-dessus du contenu vidéo.
 
-Consultez la section [Vidéo dans Dynamic Media - Ajout de légendes ou de sous-titres à une vidéo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+Voir [Vidéo dans Dynamic Media - Ajout de sous-titres à une vidéo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2023.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 82%
+ht-degree: 77%
 
 ---
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour de la version 2023.9.0 d
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) est le vendredi 28 septembre 2023. La prochaine disponibilité des fonctionnalités (2023.10.0) est prévue pour le vendredi 26 octobre 2023.
+La date de publication de la version actuelle (2023.9.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 28 septembre 2023. La prochaine disponibilité des fonctionnalités (2023.10.0) est prévue pour le vendredi 26 octobre 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -54,7 +54,7 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 ![Attribution d’un formulaire de métadonnées à un dossier.](/help/release-notes/assets/assign-to-folder.png)
 
-### Nouvelles fonctionnalités de la vue Assets {#admin-view-features}
+### Nouvelles fonctionnalités de la vue d’administration {#admin-view-features}
 
 * **Intégration d’AEM Assets as a Cloud Service à la création basée sur les documents pour les Edge Delivery Services**: intégration d’AEM Assets à la création basée sur les documents pour que les Edge Delivery Services puissent permettre aux créateurs de sites web d’ [utiliser des images disponibles dans les référentiels AEM Assets lors de la création de documents dans les documents Microsoft Word ou Google ;](/help/edge/using.md#integrate-assets-edge).
 
@@ -64,9 +64,9 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 ### Fonctionnalités de pré-version disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media** : [prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
+* **Dynamic Media**: [Prise en charge du suivi multilégende et audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): vous pouvez désormais ajouter facilement plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
 
-  ![Onglet Sous-titres et Pistes audio de la page Propriétés d’une ressource vidéo sélectionnée.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et Pistes audio de la page Propriétés d’une ressource vidéo sélectionnée.*
+  ![Onglet Sous-titres et suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.*
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

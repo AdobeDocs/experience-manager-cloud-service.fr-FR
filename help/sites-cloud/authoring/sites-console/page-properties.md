@@ -2,7 +2,7 @@
 title: Modification des propriétés de page
 description: Découvrez comment définir les propriétés requises pour gérer une page dans AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 91%
@@ -52,7 +52,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * **Titre de la page** – Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si rien n’est indiqué, le **titre** est utilisé.
    * **Titre de navigation** – Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si rien n’est indiqué, le **titre** est utilisé.
-   * **Sous-titre** – Sous-titre à utiliser sur la page.
+   * **Légende** - Sous-titre à utiliser sur la page.
    * **Description** – Votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
 
 * **Heure d’activation/de désactivation**
