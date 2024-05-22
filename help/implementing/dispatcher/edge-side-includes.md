@@ -2,9 +2,9 @@
 title: Inclusions côté périphérie
 description: Le réseau de diffusion de contenu géré par Adobe prend désormais en charge Edge Side Includes (ESI), un langage de balisage pour l’assemblage de contenu web dynamique de niveau périphérie.
 feature: Dispatcher
-source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
+source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 1%
 
 ---
@@ -81,9 +81,8 @@ Les propriétés configurées se comportent comme suit :
 |-----------|--------------------------|
 | **no-gzip** | S’il est défini sur 1, la page de HTML est transmise d’Apache au réseau de diffusion de contenu non compressé. Cela est nécessaire pour l’ESI, car le contenu doit être envoyé sur le CDN sans compression pour que le CDN puisse voir et évaluer les balises ESI.<br/><br/>La page parente et les fragments de code inclus doivent définir no-gzip sur 1.<br/><br/>Ce paramètre remplace le paramètre de compression qu’Apache aurait pu utiliser autrement, en fonction de la variable `Accept-Encoding` valeurs. |
 | **x-aem-esi** | S’il est défini sur &quot;activé&quot;, le réseau de diffusion de contenu évalue les balises ESI de la page de HTML parente.  Par défaut, l’en-tête n’est pas défini. |
-| **x-aem-compress** | S’il est défini sur &quot;activé&quot;, le réseau de diffusion de contenu compresse le contenu du réseau de diffusion de contenu vers le navigateur. Étant donné que la transmission de la page parente d’Apache vers le CDN doit être décompressée pour que l’ESI fonctionne (no-gzip défini sur 1), cela peut réduire la latence.<br/><br/>Si cet en-tête n’est pas défini, lorsque le réseau de diffusion de contenu récupère le contenu de l’origine non compressé, il le diffusera également au client non compressé. Il est donc nécessaire de définir cet en-tête si no-gzip est défini sur 1 (obligatoire pour ESI) et qu’il est souhaitable de diffuser du contenu compressé à partir du CDN vers le navigateur. |
+| **x-aem-compress** | S’il est défini sur &quot;activé&quot;, le réseau de diffusion de contenu compresse le contenu du réseau de diffusion de contenu vers le navigateur. Puisque la transmission de la page parente d’Apache vers le CDN doit être décompressée pour que l’ESI fonctionne (`no-gzip` définie sur 1), cela peut réduire la latence.<br/><br/>Si cet en-tête n’est pas défini, lorsque le réseau de diffusion de contenu récupère le contenu de l’origine non compressé, il le diffusera également au client non compressé. Il est donc nécessaire de définir cet en-tête si `no-gzip` est définie sur 1 (obligatoire pour ESI) et vous souhaitez diffuser du contenu compressé du CDN dans le navigateur. |
 
 ## Sling Dynamic Include {#esi-sdi}
 
 Bien que cela ne soit pas nécessaire, [Sling Dynamic Include](https://sling.apache.org/documentation/bundles/dynamic-includes.html) (SDI) peut être utilisé pour générer des fragments de code ESI interprétés sur le réseau de diffusion de contenu.
-
