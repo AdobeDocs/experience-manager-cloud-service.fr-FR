@@ -2,9 +2,9 @@
 title: Générer des variations
 description: En savoir plus sur la génération de variations, accessible à partir d’AEM as a Cloud Service et du Sidekick des Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
+source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3262'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Vous pouvez [Accès Générer des variations](#access-generate-variations) de :
 
 * [dans Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [le Sidekick des Edge Delivery Services AEM](#access-aem-sidekick)
-* [dans l’éditeur de fragments de contenu](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html#generate-variations-ai)
+* [dans l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >

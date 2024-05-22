@@ -4,9 +4,9 @@ description: Découvrez comment créer du contenu pour vos fragments de contenu 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: fc97a51bb20bbf0d438d0f27a2246467a480eb71
+source-git-commit: ec0129b0087e86f50c6c1e65d5445693e63278e0
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2668'
 ht-degree: 7%
 
 ---
@@ -196,7 +196,7 @@ Pour utiliser les variations génériques dans l’éditeur de fragment de conte
 
    ![Affichage Générer des variations dans un fragment de contenu](assets/cfm-generate-variations5.png)
 
-Vous pouvez en savoir plus sur la génération de variations [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
+Vous pouvez en savoir plus sur la génération de variations [here](/help/generative-ai/generate-variations.md).
 
 ### Suppression d’une variation {#delete-variation}
 
