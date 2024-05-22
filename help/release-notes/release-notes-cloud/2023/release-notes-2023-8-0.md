@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -90,9 +90,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### Nouvelles fonctionnalités disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [Prise en charge du suivi multilégende et audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): vous pouvez désormais ajouter facilement plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
+* **Dynamic Media** : [prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface d’utilisation.
 
-  ![Onglet Sous-titres et suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.*
+  ![Onglet Sous-titres et pistes audio de la page Propriétés d’un contenu vidéo sélectionné.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et pistes audio de la page Propriétés d’un contenu vidéo sélectionné.*
 
 * **Ressources**: possibilité de sélectionner les archives ZIP gérées en Experience Manager et [extraction directe des fichiers dans Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sans les télécharger.
 
