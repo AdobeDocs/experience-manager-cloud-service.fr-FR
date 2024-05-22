@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4965'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1175,7 +1175,7 @@ ht-degree: 99%
       + [Validation et débogage à l’aide de l’héritage des outils Dispatcher](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [Réseau CDN dans AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configurer le trafic sur le réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [Inclusions côté périphérie](/help/implementing/dispatcher/edge-side-includes.md)
+      + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
       + [Configurer les pages d’erreur du réseau CDN](/help/implementing/dispatcher/cdn-error-pages.md)
       + [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connecteurs {#connectors}
