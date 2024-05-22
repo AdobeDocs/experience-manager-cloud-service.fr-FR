@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la fonction Générer des variations
 description: Notes de mise à jour de Generate Variations (Générer des variations), accessibles depuis AEM as a Cloud Service et le Sidekick des Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
+source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 10%
+source-wordcount: '218'
+ht-degree: 11%
 
 ---
 
@@ -27,8 +27,6 @@ La version actuelle est la version 2.2.0.
 * Possibilité de télécharger les résultats au format CSV à partir des Favoris
 * Amélioration de la liste Récents avec des regroupements temporels
 * Ajout de la prise en charge de la localisation pour plusieurs langues
-
-La version actuelle est la version 2.0.0.
 
 ### 2.0.0 {#release-notes-2-0-0}
 
