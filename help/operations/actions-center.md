@@ -2,10 +2,10 @@
 title: Centre d’actions
 description: Tirez parti du Centre d’actions pour agir facilement sur les incidents et d’autres informations importantes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: ddf94262c047ea0210b0759176f51d1220ac9c67
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 73%
+source-wordcount: '783'
+ht-degree: 69%
 
 ---
 
@@ -74,3 +74,4 @@ Le tableau suivant répertorie les types de notifications actuellement pris en c
 | File d’attente de réplication bloquée | Incident | Débloquer la file d’attente en suivant les instructions de la [documentation de réplication](/help/operations/replication.md#troubleshooting) |
 | Requête GraphQL persistante non valide | Incident | Correction d’une requête GraphQL non valide en référençant [Documentation de dépannage des requêtes GraphQL persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Expiration du certificat S2S | Proactif | Découvrez comment actualiser des informations d’identification dans la [documentation sur la génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials). |
+| Pic de trafic à l’origine | Incident | Protect votre origine en configurant des règles de filtrage du trafic de limite de taux qui se déclenchent à des seuils inférieurs à ceux du pic de trafic par défaut à l’alerte d’origine.  Voir [Blocage des attaques DoS et DDoS à l’aide de règles de trafic](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentation sur les règles de filtrage du trafic, qui fait référence à un tutoriel. |
