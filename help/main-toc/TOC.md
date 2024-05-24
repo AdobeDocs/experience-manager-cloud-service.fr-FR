@@ -727,7 +727,7 @@ ht-degree: 99%
    + Rapports de transaction {#using-communications}
       + [API de rapports de transactions facturables](/help/forms/transaction-reports-billable-apis.md)
       + [Enregistrer une transaction pour une implémentation personnalisée](/help/forms/record-transaction-custom-implementation.md)
-      + [Présentation du tableau de bord de la réalisation de votre valeur](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [Comprendre votre tableau de bord de réalisation de valeurs](/help/forms/aem-forms-value-realization-dashboard.md)
    + Référence de l’API de développement {#aem-forms-developer-api-reference}
       + [Référence de l’API Adaptive Forms](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Référence de l’API Communications du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
