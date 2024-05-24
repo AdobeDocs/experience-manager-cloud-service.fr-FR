@@ -2,10 +2,10 @@
 title: Gérer les rapports dans la vue Assets
 description: Accédez aux données de la section des rapports de la vue Assets pour évaluer l’utilisation des produits et des fonctionnalités et déduire des informations sur les mesures de succès clés.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
+source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '817'
+ht-degree: 89%
 
 ---
 
@@ -59,11 +59,6 @@ Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigatio
    ![Insights](assets/insights2.png)
    -->
 
-* **Nombre de ressources par taille :** Segmente le nombre total de ressources dans l’environnement Affichage des ressources en différentes plages de tailles, en mettant en surbrillance le nombre et le pourcentage de ressources dans chaque plage de tailles, représentés à l’aide d’un graphique en anneau.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Nombre de ressources par type de ressource :** Segmente le nombre total de ressources dans l’environnement Affichage des ressources , en soulignant le nombre et le pourcentage de ressources en fonction de leurs types de fichiers, représentés par un graphique en anneau.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 ## Créer un rapport de téléchargement {#create-download-report}
 
 Pour créer un rapport de téléchargement, procédez comme suit :
@@ -82,7 +77,7 @@ Pour créer un rapport de téléchargement, procédez comme suit :
    >
    > La vue Assets convertit tous les fuseaux horaires locaux en temps universel coordonné (UTC).
 
-1. Dans le [!UICONTROL Colonnes] sélectionnez les noms des colonnes à afficher dans le rapport.
+1. Sous l’onglet [!UICONTROL Colonnes], sélectionnez les noms des colonnes à afficher dans le rapport.
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
