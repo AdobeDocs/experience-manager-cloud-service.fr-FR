@@ -4,10 +4,10 @@ description: Découvrez comment ajouter de nouveaux paramètres régionaux pour 
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 11%
+source-wordcount: '2028'
+ht-degree: 7%
 
 ---
 
@@ -270,7 +270,7 @@ Maintenant, incorporons le `clientlib-it-custom-locale` dans votre AEM as a Clou
 
 
 
-### 5. Ajout de la prise en charge des paramètres régionaux au dictionnaire
+### Ajout de la prise en charge des paramètres régionaux au dictionnaire
 
 Cette étape s’applique uniquement aux langues autres que les suivantes couramment prises en charge : anglais (en), allemand (de), espagnol (es), français (fr), italien (it), portugais brésilien (pt-br), chinois (simplifié - zh_cn), chinois (traditionnel - zh_tw), japonais (ja) et coréen (ko_kr).
 
@@ -358,8 +358,6 @@ Vous êtes maintenant prêt à utiliser le nouveau paramètre régional avec vot
 Ces étapes vous guident tout au long de l’aperçu d’un formulaire adaptatif avec les paramètres régionaux nouvellement ajoutés :
 
 1. Connectez-vous à votre instance AEM Forms as a Cloud Service.
-
-1. Recherchez la section &quot;Forms&quot; et accédez à &quot;Forms et documents&quot;.
 1. Accédez à **Formulaires** > **Formulaires et documents**.
 1. Sélectionnez un formulaire adaptatif, puis cliquez sur **Ajouter un dictionnaire**. L’assistant **Ajouter un dictionnaire au projet de traduction** s’affiche.
 1. Spécifiez le **Titre du projet** et sélectionnez les **Langues cibles** dans le menu déroulant de l’assistant **Ajouter un dictionnaire au projet de traduction**.
@@ -367,20 +365,6 @@ Ces étapes vous guident tout au long de l’aperçu d’un formulaire adaptatif
 1. Accédez à **Formulaires** > **Formulaires et documents**.
 1. Sélectionnez le formulaire adaptatif et choisissez le **Aperçu comme HTML** .
 1. Ajouter `&afAcceptLang=<locale-name>` dans l’URL d’aperçu et appuyez sur la touche Entrée. Remplacer `<locale-name>` avec votre code de paramètres régionaux réel. Le formulaire adaptatif s’affiche dans les paramètres régionaux spécifiés.
-
-
-## Aperçu d’un formulaire adaptatif avec les paramètres régionaux nouvellement ajoutés {#use-added-locale-in-af}
-
-Effectuez les étapes suivantes pour prévisualiser un fichier adaptatif avec les paramètres régionaux nouvellement ajoutés :
-
-1. Connectez-vous à votre instance AEM Forms as a Cloud Service.
-1. Accédez à **Formulaires** > **Formulaires et documents**.
-1. Sélectionnez un formulaire adaptatif, puis cliquez sur **Ajouter un dictionnaire**. L’assistant **Ajouter un dictionnaire au projet de traduction** s’affiche.
-1. Spécifiez le **Titre du projet** et sélectionnez les **Langues cibles** dans le menu déroulant de l’assistant **Ajouter un dictionnaire au projet de traduction**.
-1. Cliquez sur **Terminé** et exécutez le projet de traduction créé.
-1. Sélectionnez un formulaire adaptatif et cliquez sur **Aperçu au format HTML**.
-1. Ajoutez `&afAcceptLang=<locale-name>` dans l’URL d’un formulaire adaptatif.
-1. Actualisez la page et le formulaire adaptatif est rendu dans un paramètre régional spécifié.
 
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
@@ -393,12 +377,11 @@ Effectuez les étapes suivantes pour prévisualiser un fichier adaptatif avec le
 
    * **Traduction humaine**: pour les processus de traduction humaine, exportez le dictionnaire à l’aide de l’interface utilisateur à l’adresse `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire des nouveaux champs et téléchargez la version révisée.
 
-## En savoir plus
-
-* [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
-* [Ajouter un formulaire adaptatif à une page AEM Sites ou un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## Voir également {#see-also}
 
 {{see-also}}
+
+* [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
+* [Ajouter un formulaire adaptatif à une page AEM Sites ou un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
