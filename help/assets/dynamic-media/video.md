@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
+source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 80%
@@ -642,7 +642,7 @@ Les légendes et les légendes ajoutées sont prises en charge avec les formats 
      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour d’autres fichiers de suivi audio ou de sous-titres. |
      | Langue | Sélectionnez la langue de la piste audio. |
      | Type | Sélectionnez le type de piste audio que vous utilisez.<br>**Original** : piste audio initialement jointe à la vidéo et représentée comme `[Original]` dans le libellé avec la langue `English` sélectionnée par défaut. Bien que **[!UICONTROL Libellé]** et **[!UICONTROL Langue]** peuvent être modifiés dans la boîte de dialogue **[!UICONTROL Modifier la piste audio]**, les valeurs d’origine sont utilisées par défaut si la vidéo principale est retraitée.<br>**Standard** : piste audio complémentaire pour une langue autre que la langue originale.<br>**Audio-description** : piste audio qui comprend également une narration descriptive des actions non verbales et des gestes dans la vidéo, rendant le contenu plus accessible pour les personnes malvoyantes. |
-     | Libellé | Texte affiché comme nom de la piste audio dans la liste déroulante **[!UICONTROL Sélectionner l’audio ou la légende]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste audio. Par exemple, `English [Original]`. Le libellé de l’audio associé à une vidéo est défini sur `[Original|` par défaut. |
+     | Libellé | Texte affiché comme nom de la piste audio dans la liste déroulante **[!UICONTROL Sélectionner l’audio ou la légende]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste audio. Par exemple, `English [Original]`. Le libellé de l’audio associé à une vidéo est défini sur `[Original]` par défaut. |
 
      Vous pouvez modifier ces métadonnées de piste audio ultérieurement, si nécessaire. Lorsque la vidéo est publiée, ces informations sont reflétées dans les URL publiques des vidéos publiées.
 
@@ -815,8 +815,6 @@ La piste audio d’origine extraite d’un fichier principal ne peut pas être t
    | Ressources | Indique le nombre de fichiers à télécharger et la taille totale combinée de tous les fichiers sélectionnés. La désélection de cette option ternit (désactive) le bouton **[!UICONTROL Télécharger]** et vous empêche de télécharger un fichier. |
 1. Sélectionnez **[!UICONTROL Télécharger]**.
 1. Publiez la vidéo. Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
-
-
 
 
 
