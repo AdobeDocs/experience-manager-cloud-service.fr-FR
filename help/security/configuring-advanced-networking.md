@@ -2,10 +2,10 @@
 title: Configurer la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancée telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
+source-git-commit: 3e8a1a8a48fc5ec6bff71062ff740acf98d743d2
 workflow-type: tm+mt
-source-wordcount: '5388'
-ht-degree: 94%
+source-wordcount: '5332'
+ht-degree: 95%
 
 ---
 
@@ -801,6 +801,4 @@ Le pool de connexions est une technique personnalisée pour créer et maintenir 
 
 La mise en oeuvre d’une stratégie de pool de connexions appropriée est une mesure proactive pour corriger une supervision commune dans la configuration du système, ce qui entraîne souvent des performances sous-optimales. En établissant correctement un pool de connexions, Adobe Experience Manager (AEM) peut améliorer l’efficacité des appels externes. Cela permet non seulement de réduire la consommation des ressources, mais aussi d’atténuer le risque de perturbations du service et réduit la probabilité de rencontrer des demandes en échec lors de la communication avec les serveurs en amont.
 
-À la lumière de ces informations, nous vous conseillons de réévaluer votre configuration d’AEM actuelle et d’envisager l’incorporation délibérée du pool de connexions conjointement avec les paramètres de mise en réseau avancé. En mettant en oeuvre ces mesures, la solution est conçue pour empêcher les proxys de devenir surchargés, réduisant ainsi la probabilité que les demandes n’atteignent pas les points de terminaison externes.
-
-À la lumière de ces informations, nous vous conseillons de réévaluer votre configuration d’AEM actuelle et d’envisager l’incorporation délibérée du pool de connexions conjointement avec les paramètres de mise en réseau avancé. En gérant le nombre de connexions parallèles et en minimisant l’occurrence d’éventuelles connexions obsolètes, ces mesures permettent de réduire le risque que les serveurs proxy atteignent leurs limites de connexions. Cette mise en oeuvre stratégique a donc pour but de réduire la probabilité que les demandes ne parviennent pas à des points de terminaison externes.
+À la lumière de ces informations, Adobe vous conseille de réévaluer votre configuration d’AEM actuelle et d’envisager l’incorporation délibérée du pool de connexions conjointement avec les paramètres de mise en réseau avancés. En gérant le nombre de connexions parallèles et en réduisant au minimum la possibilité de connexions obsolètes, ces mesures permettent de réduire le risque que les serveurs proxy atteignent leurs limites de connexions. Cette mise en oeuvre stratégique a donc pour but de réduire la probabilité que les demandes ne parviennent pas à des points de terminaison externes.
