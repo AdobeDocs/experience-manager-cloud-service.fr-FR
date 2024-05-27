@@ -1037,7 +1037,7 @@ ht-degree: 99%
       + [Environnements de développement rapide AEM](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Conseils de développement pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Journalisation](/help/implementing/developing/introduction/logging.md)
-      + [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md)
+      + [Transfert de journaux](/help/implementing/developing/introduction/log-forwarding.md)
       + [Configurations et l’explorateur de configurations](/help/implementing/developing/introduction/configurations.md)
       + [Fondements techniques d’AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [Documents de référence sur les API](/help/implementing/developing/reference-materials.md)
