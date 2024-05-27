@@ -1,11 +1,9 @@
 ---
 title: Transfert de journal pour AEM as a Cloud Service
 description: En savoir plus sur le transfert des journaux vers Splunk et d’autres fournisseurs de journalisation dans AEM as a Cloud Service
-hide: true
-hidefromtoc: true
-source-git-commit: d41390696383f8e430bb31bd8d56a5e8843f1257
+source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '718'
 ht-degree: 3%
 
 ---
@@ -64,11 +62,47 @@ Cet article est organisé de la manière suivante :
          index: "AEMaaCS"
    ```
 
-   Le noeud par défaut doit être inclus pour des raisons de compatibilité ultérieure.
+   La variable **kind** doit être défini sur LogForwarding , la version doit être définie sur la version du schéma, qui est 1.
 
-   Le paramètre type doit être défini sur LogForwarding la version doit être défini sur la version du schéma, qui est 1.
+   Jetons dans la configuration (tels que `${{SPLUNK_TOKEN}}`) représentent des secrets, qui ne doivent pas être stockés dans Git. À la place, déclarez-les comme Cloud Manager  [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md) de type **secret**. Veillez à sélectionner **Tous** comme valeur de liste déroulante pour le champ Service appliqué , afin que les journaux puissent être transférés vers les niveaux d’auteur, de publication et d’aperçu.
 
-   Jetons dans la configuration (tels que `${{SPLUNK_TOKEN}}`) représentent des secrets, qui ne doivent pas être stockés dans Git. À la place, déclarez-les comme Cloud Manager  [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md) de type &quot;secret&quot;. Veillez à sélectionner **Tous** comme valeur de liste déroulante pour le champ Service appliqué , afin que les journaux puissent être transférés vers les niveaux d’auteur, de publication et d’aperçu.
+   Il est possible de définir des valeurs différentes entre les journaux cdn et tout le reste (journaux AEM et apache), en incluant une **cdn** et/ou **aem** après la balise **default** block, où les propriétés peuvent remplacer celles définies dans la variable **default** block ; seule la propriété enabled est requise. Un cas d’utilisation possible peut être l’utilisation d’un index Splunk différent pour les journaux CDN, comme l’exemple ci-dessous.
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          cdn:
+            enabled: true
+            token: "${{SPLUNK_TOKEN_CDN}}"
+            index: "AEMaaCS_CDN"   
+   ```
+
+   Un autre scénario consiste à désactiver le transfert des journaux CDN ou de tout le reste (journaux AEM et apache). Par exemple, pour ne transférer que les journaux CDN, vous pouvez configurer les éléments suivants :
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          aem:
+            enabled: false
+   ```
 
 1. Pour les types d’environnements autres que RDE (qui n’est actuellement pas pris en charge), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager.
 
@@ -96,10 +130,17 @@ data:
       
 ```
 
-Considérations :
+Un jeton SAS doit être utilisé pour l’authentification. Elle doit être créée à partir de la page de signature Accès partagé, plutôt que sur la page Jeton d’accès partagé , et doit être configurée avec les paramètres suivants :
 
-* Authentifiez-vous à l’aide du jeton SAS, qui doit avoir une période de validation minimale.
-* Le jeton SAS doit être créé sur la page du compte et non sur la page conteneur.
+* Services autorisés : l’objet Blob doit être sélectionné.
+* Ressources autorisées : l’objet doit être sélectionné.
+* Autorisations autorisées : l’écriture, l’ajout et la création doivent être sélectionnés.
+* Date/heure de début et d’expiration valides.
+
+Voici une capture d’écran d’un exemple de configuration de jeton SAS :
+
+![Configuration du jeton Azure Blob SAS](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
 
 ### Datadog {#datadog}
 
