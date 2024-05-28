@@ -2,10 +2,10 @@
 title: Centre d’actions
 description: Tirez parti du Centre d’actions pour agir facilement sur les incidents et d’autres informations importantes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: df10d8d210877e166312f66d5c4e74dbe771446a
+source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 68%
+source-wordcount: '829'
+ht-degree: 65%
 
 ---
 
@@ -60,18 +60,19 @@ Comme tous les tickets d’assistance, il apparaîtra dans l’[onglet Cas d’a
 AEM as a Cloud Service comporte plusieurs types de notifications, mais un seul sous-ensemble apparaît dans le Centre d’actions, tel qu’illustré dans le tableau ci-dessous.
 
 | Type de notification | Description | Comment configurer | S’affiche dans le Centre d’actions |
-|---|---|---|---|
+|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Incidents opérationnels | Des incidents critiques nécessitant une action immédiate. | Personne affectée au profil de produit « Notification d’incident - Cloud Service » | X |
 | Recommandations proactives | Optimisations qui doivent être planifiées. | Personne affectée au profil de produit « Notification proactive - Cloud Service » | X |
-| Statuts du pipeline de Cloud Manager | Informations sur l’état de vos pipelines | Utilisateur avec des rôles Propriétaire de l’entreprise, Responsable de programme ou Responsable de déploiement, case à cocher &quot;Autres&quot; sélectionnée dans [Préférences Experience Cloud](https://experience.adobe.com/fr/preferences), comme [décrit ici](/help/implementing/cloud-manager/notifications.md). |   |
+| Statuts du pipeline de Cloud Manager | Informations sur l’état de vos pipelines | Utilisateur avec des rôles Propriétaire de l’entreprise, Responsable de programme ou Responsable de déploiement, case à cocher &quot;Autres&quot; sélectionnée dans [Préférences Experience Cloud](https://experience.adobe.com/fr/preferences), comme [décrit ici](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Types de notifications pris en charge {#supported-notification-types}
 
 Le tableau suivant répertorie les types de notifications actuellement pris en charge dans le Centre d’actions. Les notifications sont actuellement limitées aux environnements de production.
 
 | Type de notification | Profil de produit associé | Mesure corrective |
-|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | File d’attente de réplication bloquée | Incident | Débloquer la file d’attente en suivant les instructions de la [documentation de réplication](/help/operations/replication.md#troubleshooting) |
 | Requête GraphQL persistante non valide | Incident | Correction d’une requête GraphQL non valide en référençant [Documentation de dépannage des requêtes GraphQL persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
-| Expiration du certificat S2S | Proactif | Découvrez comment actualiser des informations d’identification dans la [documentation sur la génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials). | Nombre de connexions élevé | Proactif | En savoir plus sur le pool de connexions [Mise en pool de connexions avec la documentation mise en réseau avancée](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Pic de trafic à l’origine | Incident | Protect votre origine en configurant des règles de filtrage du trafic de limite de taux qui se déclenchent à des seuils inférieurs à ceux du pic de trafic par défaut à l’alerte d’origine.  Voir [Blocage des attaques DoS et DDoS à l’aide de règles de trafic](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentation sur les règles de filtrage du trafic, qui fait référence à un tutoriel. |
+| Expiration du certificat S2S | Proactif | Découvrez comment actualiser des informations d’identification dans la [documentation sur la génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials). | Nombre de connexions élevé | Proactif | En savoir plus sur le pool de connexions [Mise en pool de connexions avec la documentation mise en réseau avancée](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Mappage des utilisateurs du service obsolète | Proactif | Découvrez comment utiliser le nouveau format de mappage des utilisateurs de Sling Service, comme indiqué dans [Bonnes pratiques pour le mappage des utilisateurs et la définition d’utilisateur du service Sling](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
