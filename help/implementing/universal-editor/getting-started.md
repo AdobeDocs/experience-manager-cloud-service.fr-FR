@@ -2,10 +2,10 @@
 title: Prise en main de l’éditeur universel dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: a9a428eb5329bc2aa3d86ac5e0c91f633516446c
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 69%
+source-wordcount: '828'
+ht-degree: 68%
 
 ---
 
@@ -24,22 +24,11 @@ Bien que l’éditeur universel puisse modifier du contenu à partir de n’impo
 
 Il existe plusieurs étapes pour intégrer votre application AEM et l’instrumenter pour utiliser l’éditeur universel.
 
-1. [Demandez l’accès à l’éditeur universel.](#request-access)
 1. [Incluez la bibliothèque principale de l’éditeur universel.](#core-library)
 1. [Ajoutez la configuration OSGi nécessaire.](#osgi-configurations)
 1. [Instrumentez la page.](#instrument-page)
 
 Ce document vous guidera tout au fil de ces étapes.
-
-## Demande d’accès à l’éditeur universel {#request-access}
-
-Vous devez d’abord demander l’accès à l’éditeur universel. Ouvrir [&quot;https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor), connectez-vous et validez si vous avez accès à l’éditeur universel.
-
-Si vous n’y avez pas accès, vous pouvez le demander via un formulaire lié sur la même page.
-
-![Demande d’accès à l’éditeur universel](assets/request-access.png)
-
-Cliquez sur **Demande d’accès** et remplissez le formulaire selon les instructions pour demander l’accès. Un représentant ou une représentante Adobe examinera votre demande et vous contactera pour discuter de votre cas d’utilisation.
 
 ## Inclure la bibliothèque principale de l’éditeur universel {#core-library}
 

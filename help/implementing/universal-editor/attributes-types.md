@@ -2,10 +2,10 @@
 title: Attributs et types d’élément
 description: Découvrez les attributs de données et les types d’éléments requis par Universal Editor.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 36be262a7949bc66f97f5483ff463d755f5f78e5
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 71%
+source-wordcount: '538'
+ht-degree: 67%
 
 ---
 
@@ -56,14 +56,3 @@ Selon le cas d’utilisation, `data-aue-prop` ou `data-aue-resource` peuvent êt
 |---|---|
 | `component` | Utilisé pour autoriser les composants de texte autonome, de texte enrichi et de mimique multimédia afin qu’ils puissent également être déplacés et supprimés sur la page. |
 | `container` | Utilisé pour permettre aux conteneurs d’être traités comme leurs propres composants afin qu’ils soient mobiles et pouvant être supprimés sur la page. |
-
-## Ressources supplémentaires {#additional-resources}
-
-Pour en savoir plus sur l’éditeur universel, consultez ces documents.
-
-* [Présentation de l’éditeur universel](introduction.md) - Découvrez comment l’éditeur universel permet de modifier n’importe quel aspect d’un contenu dans n’importe quelle implémentation afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
-* [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) - Découvrez à quel point il est facile et intuitif pour les créateurs et les créatrices de contenu de créer du contenu à l’aide de l’éditeur universel.
-* [Publication de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
-* [Prise en main de l’éditeur universel dans AEM](getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
-* [Architecture de l’éditeur universel](architecture.md) – Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.
-* [Authentification de l’éditeur universel](authentication.md) – Découvrez comment l’éditeur universel s’authentifie.

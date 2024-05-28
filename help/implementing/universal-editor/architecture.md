@@ -2,10 +2,10 @@
 title: Architecture de l’éditeur universel
 description: Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et couches.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 90%
+source-wordcount: '508'
+ht-degree: 91%
 
 ---
 
@@ -73,15 +73,3 @@ L’éditeur universel distribue toutes les modifications de contenu à un servi
 ### Rendu côté client {#client-side}
 
 ![Rendu côté client](assets/client-side.png)
-
-## Ressources supplémentaires {#additional-resources}
-
-Pour en savoir plus sur l’éditeur universel, consultez ces documents.
-
-* [Présentation de l’éditeur universel](introduction.md) - Découvrez comment l’éditeur universel permet de modifier n’importe quel aspect d’un contenu dans n’importe quelle implémentation afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
-* [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) - Découvrez à quel point il est facile et intuitif pour les créateurs et les créatrices de contenu de créer du contenu à l’aide de l’éditeur universel.
-* [Publication de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
-* [Prise en main de l’éditeur universel dans AEM](getting-started.md) – Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
-* [Attributs et types](attributes-types.md) – Découvrez les attributs et les types de données requis par l’éditeur universel.
-* [Authentification de l’éditeur universel](authentication.md) - Découvrez comment l’éditeur universel s’authentifie.
-

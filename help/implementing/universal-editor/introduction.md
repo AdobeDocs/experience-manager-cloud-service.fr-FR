@@ -2,10 +2,10 @@
 title: Présentation de l’éditeur universel
 description: Découvrez comment l’éditeur universel permet la modification WYSIWYG (What-you-get) de n’importe quelle expérience headless et headful. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 55%
+source-wordcount: '973'
+ht-degree: 50%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 55%
 
 Universal Editor est un éditeur visuel polyvalent qui fait partie d’Adobe Experience Manager Sites. Il permet aux auteurs de modifier n’importe quelle expérience (WYSIWYG) sans tête ou avec des entêtes. Découvrez comment cela peut aider les auteurs de contenu à offrir des expériences exceptionnelles et comment cela offre une liberté inégalée aux développeurs.
 
-## Arrière-plan {#background}
+## Contexte {#background}
 
 Universal Editor offre une expérience de création dans le contexte efficace et intuitive qui nécessite une formation minimale. Grâce à elle, les auteurs peuvent gérer leur contenu directement dans le contexte de l’expérience web, exactement comme il apparaîtra aux visiteurs. En tant que véritable éditeur en tant que service et plus flexible dans l’ensemble, il entend éventuellement remplacer l’éditeur de page.
 
@@ -90,13 +90,6 @@ Un professionnel ou une professionnelle du marketing souhaite créer du contenu 
 * Les auteurs de contenu doivent disposer de leurs propres comptes Experience Cloud.
 * Chrome et Edge sont les navigateurs pris en charge
 
-## Ressources supplémentaires {#additional-resources}
+## Étapes suivantes {#next-steps}
 
-Pour en savoir plus sur l’éditeur universel, consultez ces documents.
-
-* [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) - Découvrez à quel point il est facile et intuitif pour les créateurs et les créatrices de contenu de créer du contenu à l’aide de l’éditeur universel.
-* [Publication de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
-* [Prise en main de l’éditeur universel dans AEM](getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
-* [Architecture de l’éditeur universel](architecture.md) - Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.
-* [Attributs et types](attributes-types.md) - Découvrez les attributs et les types de données requis par l’éditeur universel.
-* [Authentification de l’éditeur universel](authentication.md) - Découvrez comment l’éditeur universel s’authentifie.
+Consultez le document [Cas d’utilisation de l’éditeur universel et chemins d’apprentissage](/help/implementing/universal-editor/use-cases.md) pour en savoir plus sur les cas d’utilisation courants d’Universal Editor et pour découvrir les ressources de documentation appropriées pour vous aider dans votre projet.
