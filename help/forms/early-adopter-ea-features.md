@@ -3,15 +3,14 @@ title: Fonctionnalités actuelles de l’adoption précoce de [!DNL Adobe Experi
 description: Fonctionnalités actuelles de l’adoption précoce de [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1599'
 ht-degree: 9%
 
 ---
 
 # Programme d’adoption précoce d’AEM Forms
-
 
 Le programme d’adoption précoce d’AEM Forms vous offre une occasion unique d’accéder de manière exclusive à des fonctionnalités de pointe avant tout le monde et d’aider à façonner leur développement. Le programme vous offre les possibilités suivantes :
 
@@ -21,7 +20,7 @@ Le programme d’adoption précoce d’AEM Forms vous offre une occasion unique 
 
 ## Comment participer au programme Adopteur anticipé ?
 
-Si vous souhaitez rejoindre notre programme d&#39;adoption anticipée pour toute innovation d&#39;un premier adoptant, envoyez simplement un email depuis votre adresse officielle à aem-forms-ea@adobe.com pour demander l&#39;accès. Vous pouvez demander l’accès à l’ensemble ou à toute innovation spécifique.
+Si vous souhaitez rejoindre notre programme d&#39;adoption précoce pour n&#39;importe quelle innovation d&#39;adoption précoce, envoyez simplement un email depuis votre adresse officielle à `aem-forms-ea@adobe.com` pour demander l’accès. Vous pouvez demander l’accès à l’ensemble ou à toute innovation spécifique.
 
 
 ## Innovations initiales des adopteurs
