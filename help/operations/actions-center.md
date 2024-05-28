@@ -2,10 +2,10 @@
 title: Centre d’actions
 description: Tirez parti du Centre d’actions pour agir facilement sur les incidents et d’autres informations importantes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
+source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 65%
+source-wordcount: '842'
+ht-degree: 64%
 
 ---
 
@@ -76,3 +76,4 @@ Le tableau suivant répertorie les types de notifications actuellement pris en c
 | Pic de trafic à l’origine | Incident | Protect votre origine en configurant des règles de filtrage du trafic de limite de taux qui se déclenchent à des seuils inférieurs à ceux du pic de trafic par défaut à l’alerte d’origine.  Voir [Blocage des attaques DoS et DDoS à l’aide de règles de trafic](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentation sur les règles de filtrage du trafic, qui fait référence à un tutoriel. |
 | Expiration du certificat S2S | Proactif | Découvrez comment actualiser des informations d’identification dans la [documentation sur la génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials). | Nombre de connexions élevé | Proactif | En savoir plus sur le pool de connexions [Mise en pool de connexions avec la documentation mise en réseau avancée](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Mappage des utilisateurs du service obsolète | Proactif | Découvrez comment utiliser le nouveau format de mappage des utilisateurs de Sling Service, comme indiqué dans [Bonnes pratiques pour le mappage des utilisateurs et la définition d’utilisateur du service Sling](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
+| Nombre de connexions élevé | Proactif | En savoir plus sur le pool de connexions dans [Documentation sur les réseaux avancée](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
