@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 13a266e9611fd8eb427c7cc83e99092e66fd8bc5
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 78%
+ht-degree: 94%
 
 ---
 
@@ -29,8 +29,8 @@ Aucun.
 
 ### Problèmes connus {#known-issues-16461}
 
-* SITES-20364 : 302 Redirections ne fonctionnant pas avec le sélecteur dans l’URL.
-* SITES-20547 : Chemins tronqués dans la liste des chemins exclus Live Copy sur AEM as a Cloud Service.
+* SITES-20364 : les redirections 302 ne fonctionnent pas avec le sélecteur dans l’URL.
+* SITES-20547 : chemins tronqués dans la liste des chemins exclus de la live copy sur AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -47,4 +47,4 @@ Pour savoir ce qui est obsolète ou supprimé dans AEM as a Cloud Service, v
 | AEM Oak | 1.62.0 | [API Oak 1.62.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
 | API SLING AEM | 2.27.2 | [API Apache Sling 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.22-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
-| Composants principaux d’AEM | 2.25.4 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Composants principaux d’AEM | 2.25.4 | [Composants principaux de la gestion de contenu Web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
