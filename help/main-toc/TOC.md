@@ -792,7 +792,7 @@ ht-degree: 99%
       + [Solution de commerce tierce](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
-      + [Prise en main](/help/commerce-cloud/getting-started.md)
+      + [Commencer](/help/commerce-cloud/getting-started.md)
       + Création {#authoring}
          + [Expériences de Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
          + [Console du produit](/help/commerce-cloud/authoring/product-cockpit.md)
@@ -853,7 +853,7 @@ ht-degree: 99%
    + Créer des formulaires {#build-forms}
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
       + Prise en main {#getting-started-edge-delivery-services-forms}
-         + [Prise en main](/help/edge/docs/forms/tutorial.md)
+         + [Commencer](/help/edge/docs/forms/tutorial.md)
          + [Créer un formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
          + [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
          + [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
@@ -1088,9 +1088,9 @@ ht-degree: 99%
          + [Personnalisation](/help/implementing/universal-editor/customizing.md)
          + [Architecture](/help/implementing/universal-editor/architecture.md)
          + [Authentification](/help/implementing/universal-editor/authentication.md)
-         + [Prise en main](/help/implementing/universal-editor/getting-started.md)
-         + [Présentation du développeur](/help/implementing/universal-editor/developer-overview.md)
-         + [Développement des AEM locaux](/help/implementing/universal-editor/local-dev.md)
+         + [Commencer](/help/implementing/universal-editor/getting-started.md)
+         + [Vue d’ensemble destinée à l’équipe de développement](/help/implementing/universal-editor/developer-overview.md)
+         + [Développement AEM local](/help/implementing/universal-editor/local-dev.md)
          + [Appels](/help/implementing/universal-editor/calls.md)
       + [Gestion de l’expérience découplée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=fr)
       + Développement hybride et SPA {#hybrid}
