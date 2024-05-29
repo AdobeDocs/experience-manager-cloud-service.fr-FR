@@ -3,9 +3,9 @@ title: Configurer la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancée telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 3e8a1a8a48fc5ec6bff71062ff740acf98d743d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5332'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -793,12 +793,12 @@ La procédure est presque identique aux instructions d’adresses IP sortantes d
 
 ## Résolution des problèmes
 
-Veuillez noter que les points suivants sont fournis à titre informatif et incluent les bonnes pratiques de résolution des problèmes. Ces recommandations visent à aider à diagnostiquer et à résoudre efficacement les problèmes.
+Veuillez noter que les points suivants sont fournis à titre informatif et qu’ils incluent les bonnes pratiques de résolution des problèmes. Ces recommandations visent à aider à diagnostiquer et à résoudre efficacement les problèmes.
 
 ### Mise en pool de connexions {#connection-pooling-advanced-networking}
 
-Le pool de connexions est une technique personnalisée pour créer et maintenir un référentiel de connexions, qui peut être utilisé immédiatement par n’importe quel thread qui peut en avoir besoin. De nombreuses techniques de mise en commun de connexions sont disponibles sur différentes plateformes et ressources en ligne, chacune ayant ses mérites et ses considérations uniques. Nous encourageons nos clients à étudier ces méthodologies afin d’identifier celle qui est le plus compatible avec l’architecture de leur système.
+La mise en pool de connexions est une technique personnalisée visant à créer et à maintenir un référentiel de connexions pouvant immédiatement servir à n’importe quel thread qui en a besoin. De nombreuses techniques de mise en pool de connexions sont disponibles sur différentes plateformes et ressources en ligne, chacune ayant ses mérites et ses considérations uniques. Nous encourageons notre clientèle à étudier ces méthodologies, afin d’identifier celle qui est le plus compatible avec l’architecture de ses système.
 
-La mise en oeuvre d’une stratégie de pool de connexions appropriée est une mesure proactive pour corriger une supervision commune dans la configuration du système, ce qui entraîne souvent des performances sous-optimales. En établissant correctement un pool de connexions, Adobe Experience Manager (AEM) peut améliorer l’efficacité des appels externes. Cela permet non seulement de réduire la consommation des ressources, mais aussi d’atténuer le risque de perturbations du service et réduit la probabilité de rencontrer des demandes en échec lors de la communication avec les serveurs en amont.
+La mise en œuvre d’une stratégie de mise en pool de connexions appropriée est une mesure proactive visant à corriger une supervision commune dans la configuration du système, ce qui entraîne souvent des performances sous-optimales. En établissant correctement un pool de connexions, Adobe Experience Manager (AEM) peut améliorer l’efficacité des appels externes. Cela permet non seulement de réduire la consommation des ressources, mais aussi d’atténuer le risque de perturbations du service et de réduire la probabilité de rencontrer des demandes en échec lors de la communication avec les serveurs en amont.
 
-À la lumière de ces informations, Adobe vous conseille de réévaluer votre configuration d’AEM actuelle et d’envisager l’incorporation délibérée du pool de connexions conjointement avec les paramètres de mise en réseau avancés. En gérant le nombre de connexions parallèles et en réduisant au minimum la possibilité de connexions obsolètes, ces mesures permettent de réduire le risque que les serveurs proxy atteignent leurs limites de connexions. Cette mise en oeuvre stratégique a donc pour but de réduire la probabilité que les demandes ne parviennent pas à des points de terminaison externes.
+À la lumière de ces informations, Adobe vous conseille de réévaluer votre configuration d’AEM actuelle et d’envisager l’incorporation délibérée de la mise en pool de connexions conjointement avec les paramètres de mise en réseau avancée. En gérant le nombre de connexions parallèles et en réduisant au minimum la possibilité de connexions obsolètes, ces mesures permettent de réduire le risque que les serveurs proxy atteignent leurs limites de connexions. Cette mise en œuvre stratégique a donc pour but de réduire la probabilité que les demandes ne parviennent pas à des points d’entrée externes.
