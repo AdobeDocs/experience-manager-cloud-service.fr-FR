@@ -595,7 +595,7 @@ ht-degree: 99%
    + Présentation {#forms-overview}
       + [Présentation](/help/forms/home.md)
       + [Principales innovations d’Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
-      + [Fonctionnalités d’adoption précoce (EA)](/help/forms/early-adopter-ea-features.md)
+      + [Fonctions d’adoption précoce](/help/forms/early-adopter-ea-features.md)
       + [Modifications notables](/help/forms/notable-changes.md)
       + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Questions fréquentes](/help/forms/faq.md)
