@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: 88bfb13f52a807a4cca5566633e2a07cfa6ce7b2
 workflow-type: tm+mt
-source-wordcount: '4961'
+source-wordcount: '4966'
 ht-degree: 99%
 
 ---
@@ -1181,6 +1181,7 @@ ht-degree: 99%
       + [Réseau CDN dans AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configurer le trafic sur le réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
+      + [Configuration des informations d’identification et de l’authentification du réseau de diffusion de contenu](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Configurer les pages d’erreur du réseau CDN](/help/implementing/dispatcher/cdn-error-pages.md)
       + [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connecteurs {#connectors}
