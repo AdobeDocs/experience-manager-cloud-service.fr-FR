@@ -2,9 +2,9 @@
 title: Environnements de développement rapide
 description: Découvrez comment utiliser des environnements de développement rapide pour réaliser des itérations de développement rapides dans un environnement cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
+source-wordcount: '4294'
 ht-degree: 50%
 
 ---
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 L’exemple de code ci-dessus illustre le comportement si un lot ne se résout pas. Dans ce cas, il est &quot;intermédiaire&quot; et n’est installé que si ses exigences (importations manquantes, dans ce cas) sont satisfaites par l’installation d’un autre code.
 
-<u>Déploiement du code frontal en fonction des thèmes du site et des modèles de site</u>
+### Déploiement du code frontal en fonction des thèmes du site et des modèles de site {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est pas encore disponible en version GA, mais peut être utilisée par les utilisateurs avancés. Veuillez contacter **aemcs-rde-support@adobe.com** pour essayer et fournir des commentaires.
+> Cette fonctionnalité n’est pas encore disponible. Il sera déployé au cours du mois de juin.
+>
 
 Les RDE prennent en charge le code frontal basé sur [thèmes du site](/help/sites-cloud/administering/site-creation/site-themes.md) et [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md). Avec les RDE, cette opération s’effectue à l’aide d’une directive de ligne de commande pour déployer les packages front-end, plutôt que Cloud Manager. [Pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) utilisé pour d’autres types d’environnements.
 
@@ -1011,8 +1012,6 @@ Notez également les points suivants :
 
 * Les RDE n’incluent pas de niveau d’aperçu
 * Les RDE ne prennent actuellement pas en charge le canal de version préliminaire.
-* Tandis que la prise en charge de RDE pour l’affichage et le débogage du code frontal basé sur [thèmes du site](/help/sites-cloud/administering/site-creation/site-themes.md) et [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md) déployé n’est pas encore prêt pour la GA, il peut être utilisé par les utilisateurs avancés. Veuillez contacter **aemcs-rde-support@adobe.com** pour essayer et fournir des commentaires.
-
 
 
 ## De combien de RDE ai-je besoin ? {#how-many-rds-do-i-need}
