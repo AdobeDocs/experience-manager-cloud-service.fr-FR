@@ -2,10 +2,10 @@
 title: Obsolescence des informations d’identification JWT dans Adobe Developer Console
 description: Découvrez l’impact de l’obsolescence des informations d’identification JWT dans Adobe Developer Console sur AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: b6e26ecaa73aaee37b6b824426dc0cd65d459502
+source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 62%
+source-wordcount: '479'
+ht-degree: 93%
 
 ---
 
@@ -19,9 +19,9 @@ Les clientes et clients Adobe utilisent [Adobe Developer Console](https://deve
 
 Cet article fournit un contexte supplémentaire sur la manière dont AEM as a Cloud Service doit gérer l’obsolescence.
 
-La principale leçon à retenir est qu’AEM prend désormais en charge les nouvelles informations d’identification OAuth serveur à serveur pour AEM as a Cloud Service. Vous avez peut-être reçu un courrier électronique contenant des instructions pour migrer vos informations d’identification JWT. Cette migration peut maintenant être effectuée.
+Le principal point à retenir est qu’AEM prend désormais en charge les nouvelles informations d’identification OAuth de serveur à serveur pour AEM as a Cloud Service. Vous avez peut-être reçu un courrier électronique contenant des instructions pour migrer vos informations d’identification JWT. Cette migration peut maintenant être effectuée.
 
-Les sections ci-dessous répertorient les scénarios où les clients doivent (ou dans certains cas ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth Server-to-Server, désormais qu’AEM les prend en charge. [Lire comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) pour migrer les identifiants.
+Les sections ci-dessous répertorient les scénarios où les clientes et clients doivent (ou dans certains cas ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth serveur à serveur, maintenant qu’AEM les prend en charge. [Découvrez comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) migrer les informations d’identification.
 
 >[!NOTE]
 >
@@ -29,20 +29,20 @@ Les sections ci-dessous répertorient les scénarios où les clients doivent (ou
 
 ## Intégrer AEM à d’autres solutions Adobe {#integrating-aem-with-other-adobe-solutions}
 
-**Action**: migrez votre configuration car AEM prend désormais en charge les informations d’identification OAuth.
+**Action** : migrez votre configuration, car AEM prend désormais en charge les informations d’identification OAuth.
 
 **Versions d’AEM pertinentes** : AEM as a Cloud Service
 
-AEM clients utilisent AEM pour configurer des intégrations avec de nombreuses autres solutions d’Adobe. Par exemple, Adobe Target, Adobe Analytics, etc.
+Les clientes et clients AEM utilisent AEM pour configurer des intégrations à de nombreuses autres solutions Adobe. Par exemple, Adobe Target, Adobe Analytics et d’autres.
 
-Voir [Configuration des intégrations IMS pour AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) pour plus d’informations sur la façon de :
+Voir [Configuration des intégrations IMS pour AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) pour plus de détails sur la façon d’effectuer ce qui suit :
 
-* créer des configurations avec les informations d’identification OAuth ;
-* migrer des configurations, qui ont été créées avec des informations d’identification JWT, pour utiliser des informations d’identification OAuth ;
+* créer des configurations avec des informations d’identification OAuth ;
+* migrer les configurations créées avec les informations d’identification JWT pour utiliser les informations d’identification OAuth.
 
 ## API Cloud Manager {#cloud-manager-apis}
 
-**Action**: confirmez quand ils peuvent être migrés de JWT vers les informations d’identification OAuth.
+**Action**: migrez vos informations d’identification JWT vers les informations d’identification OAuth, désormais prises en charge par Cloud Manager.
 
 **Versions d’AEM pertinentes** : AEM as a Cloud Service
 
@@ -54,6 +54,6 @@ Les clientes et clients créent des projets Adobe Developer Console pour pouvo
 
 **Versions d’AEM pertinentes** : AEM as a Cloud Service
 
-Lorsque Cloud Manager fournit des environnements AEM as a Cloud Service, un projet Adobe Developer Console est génèré automatiquement avec des informations d’identification JWT. Ce projet est marqué comme en lecture seule, comme illustré dans la copie d’écran ci-dessous. Les clients ne peuvent pas et ne doivent pas tenter de migrer ces projets vers les informations d’identification OAuth serveur à serveur. Au lieu de cela, Adobe migre ces projets tout seul, avant que les informations d’identification ne soient plus utilisables.
+Lorsque Cloud Manager fournit des environnements AEM as a Cloud Service, un projet Adobe Developer Console est génèré automatiquement avec des informations d’identification JWT. Ce projet est marqué comme en lecture seule, comme illustré dans la copie d’écran ci-dessous. Les clientes et clients ne peuvent pas et ne doivent pas tenter de migrer ces projets vers des informations d’identification OAuth de serveur à serveur. Au lieu de cela, Adobe s’occupera de migrer ces projets, avant que les informations d’identification ne soient plus utilisables.
 
 ![Projets générés automatiquement](/help/security/assets/jwt-deprecation-autogen-projects.png)
