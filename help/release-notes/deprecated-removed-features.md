@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
-workflow-type: ht
-source-wordcount: '2146'
-ht-degree: 100%
+source-git-commit: b071cf1d88e702dfdf38c18dc94488e94fc4bc21
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 98%
 
 ---
 
@@ -59,6 +59,8 @@ Cette section répertorie les capacités et fonctionnalités qui ont été suppr
 | [!DNL Foundation] | Prise en charge des modèles de script JST (offre spéciale OSGi org.apache.sling.scripting.jst) | S/O | Supprimé |
 | [!DNL Foundation] | Prise en charge d’Apache Felix Http Whiteboard | OSGi Http Whiteboard | Mars 2022 |
 | [!DNL Foundation] | Prise en charge de com.adobe.granite.oauth.server | Intégration Adobe IMS | Mars 2023 |
+| [!DNL Foundation] | Prise en charge de la fonction org.apache.sling.serviceusermapping pour [obtenir l’identifiant utilisateur du service](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | S/O | 8/30/24 |
+
 
 ## API d’AEM {#aem-apis}
 
@@ -268,6 +270,17 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>15/05/2023</td>
     <td>15/06/2023</td>
   </tr>
+  <tr>
+    <td>org.slf4j.event	</td>
+    <td>Cette API slf4j interne n’est pas prise en charge par AEM as a Cloud Service</td>
+    <td>4/11/2022</td>
+    <td>8/30/2024</td>
+  </tr>
+    <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
+    <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service.</td>
+    <td>5/17/2024</td>
+    <td>6/30/2024</td>
+  </tr>  
 </tbody>
 </table>
 </details>
