@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '6468'
+source-wordcount: '6492'
 ht-degree: 94%
 
 ---
@@ -20,6 +20,12 @@ ht-degree: 94%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 | AEM as a Cloud Service | Cet article |
+
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| Composant principal | [Cliquez ici](/help/forms/rule-editor-core-components.md) |
+| Composant de base | Cet article |
 
 ## Vue d’ensemble {#overview}
 
@@ -38,6 +44,10 @@ L’éditeur de règles fournit une interface utilisateur intuitive et simplifi�
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent créer des scripts et modifier des scripts existants. Les utilisateurs appartenant au groupe [!DNL forms-users] peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
+
+## Différence entre l’éditeur de règles dans les composants principaux et l’éditeur de règles dans les composants de base
+
+{{rule-editor-diff}}
 
 ## Compréhension d’une règle {#understanding-a-rule}
 

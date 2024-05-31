@@ -5,19 +5,18 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '5453'
-ht-degree: 85%
+source-wordcount: '5612'
+ht-degree: 83%
 
 ---
 
 
-<span class="preview"> Cet article contient du contenu pour certaines fonctionnalités de version anticipée. Ces fonctions de préversion sont accessibles uniquement via notre [canal de version préliminaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). Les fonctionnalités du programme de version préliminaire sont les suivantes :
-* Prise en charge de l’implémentation de conditions imbriquées avec la fonctionnalité Lorsque-alors-autre
-* Validation ou réinitialisation des panneaux et des formulaires, y compris les champs
-* Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions de gauche et de flèche (prise en charge d’ES10) dans les fonctions personnalisées.
-</span>
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| Composants de base | [Cliquez ici](/help/forms/rule-editor.md) |
+| Composants principaux | Cet article |
 
 # Ajout de règles à un formulaire adaptatif (composants principaux) {#adaptive-forms-rule-editor}
 
@@ -30,12 +29,20 @@ L’éditeur de règles fournit une interface utilisateur intuitive et simplifi�
 * Définir une valeur pour un objet
 * Valider la valeur d’un objet
 * Exécuter les fonctions de calcul de la valeur d’un objet
-* Appeler un service de modèle de données de formulaire (FDM) et effectuer une opération
+* appeler un service de modèle de données de formulaire (FDM) et exécuter une opération ;
 * Définir la propriété d’un objet
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent créer des scripts et modifier des scripts existants. Les utilisateurs appartenant au groupe [!DNL forms-users] peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
+
+## Différence entre l’éditeur de règles dans les composants principaux et l’éditeur de règles dans les composants de base
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> Pour découvrir comment créer et utiliser des fonctions personnalisées en détail, reportez-vous à la section [Fonctions personnalisées dans le Forms adaptatif (composants principaux)](/help/forms/create-and-use-custom-functions.md) article.
 
 ## Compréhension d’une règle {#understanding-a-rule}
 
@@ -117,13 +124,14 @@ En clair, un type de règle Lorsque standard est structuré comme suit :
 
 `Then, do the following:`
 
-Action 2 sur Objet B ;
-ET 
-Action 3 sur Objet C ;
+`Action 2 on Object B;`
+`AND`
+&quot;Action 3 sur Objet C ;
 
 `Else, do the following:`
 
-Action 2 sur Objet C ; _
+`Action 2 on Object C;`
+_
 
 Lorsque vous avez un composant à valeurs multiples, comme des boutons radio ou une liste, les options sont récupérées automatiquement et mises à disposition du créateur de la règle lorsque vous créez une règle pour ce composant. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
 
@@ -138,6 +146,58 @@ Lorsque vous créez une règle Lorsque, vous pouvez déclencher l’action Effac
 >[!NOTE]
 >
 > Lorsque le type de règle ne prend en charge que les instructions de niveau unique, alors les instructions else.
+
+#### Plusieurs champs autorisés dans [!UICONTROL When] {#allowed-multiple-fields}
+
+Dans le **When** , vous avez la possibilité d’ajouter d’autres champs à l’exception du champ auquel la règle est appliquée.
+
+Par exemple, en utilisant le type de règle Lorsque , vous pouvez évaluer une condition sur différents objets de formulaire et effectuer l’action suivante :
+
+Lorsque :
+
+(Objet A, condition 1)
+
+ET/OU
+
+(Objet B, condition 2)
+
+Ensuite, procédez comme suit :
+
+Action 1 sur Objet A
+
+_
+
+![Champs multiples autorisés dans Lorsque](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### Considérations lors de l’utilisation de plusieurs champs autorisés dans la fonction de condition Quand
+
+* Assurez-vous que la variable [Le composant principal est défini sur la version 3.0.14 ou ultérieure.](https://github.com/adobe/aem-core-forms-components) pour utiliser cette fonction dans l’éditeur de règles.
+* Si des règles sont appliquées à différents champs dans la condition Lorsque , la règle se déclenche même si un seul de ces champs est modifié.
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+Si plusieurs champs autorisés de la fonction de condition Lorsque rencontrent des problèmes, suivez les étapes de dépannage comme suit :
+
+1. Ouvrez le formulaire adaptatif en mode de modification.
+1. Ouvrez l’explorateur de contenu et sélectionnez le **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur Terminé et enregistrez à nouveau la boîte de dialogue.
 
 **[!UICONTROL Masquer]** Masque l’objet spécifié.
 
@@ -899,8 +959,6 @@ Rule in the code editor -->
 Dans le formulaire de bon de commande décrit dans l’exemple précédent, vous souhaitez empêcher l’utilisateur de commander plus d’une quantité d’un produit dont le prix est supérieur à 10 000. À cet effet, vous pouvez créer une règle Valider, comme indiqué ci-dessous.
 
 ![Example-validate](assets/example-validate.png)
-
-Règle dans l’éditeur visuel
 
 <!-- The rule appears as follows in the code editor.
 

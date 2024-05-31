@@ -4,14 +4,15 @@ description: Découvrez comment créer un schéma JSON pour les composants princ
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
+exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 85%
+source-wordcount: '1347'
+ht-degree: 82%
 
 ---
 
-# Conception d’un schéma JSON pour un formulaire adaptatif (composants principaux){#creating-adaptive-forms-using-json-schema}
+# Créer un schéma JSON pour un formulaire adaptatif (composants principaux){#creating-adaptive-forms-using-json-schema}
 
 
 | Version | Lien de l’article |
@@ -36,6 +37,7 @@ Les fonctionnalités clés de l’utilisation d’un schéma JSON sont les suiva
 * La structure du modèle JSON s’affiche sous forme d’arborescence sous l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie JSON vers le formulaire adaptatif en fonction des composants principaux.
 * Vous pouvez préremplir le formulaire avec le code JSON conforme au schéma associé.
 * Au moment de l’envoi, les données saisies par l’utilisateur ou l’utilisatrice sont envoyées au format JSON approprié pour le schéma associé.
+* Vous pouvez également créer le formulaire en fonction du schéma JSON, conformément aux spécifications du [Version 2012-20](https://json-schema.org/draft/2020-12/release-notes).
 
 Un schéma JSON se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés dans un formulaire adaptatif, ils sont automatiquement mappés aux composants de formulaire adaptatif correspondants.
 
@@ -121,181 +123,314 @@ Le formulaire adaptatif utilise les informations disponibles dans le schéma JSO
 
 ## Exemple de schéma JSON {#sample-json-schema}
 
-Vous trouverez ci-dessous un exemple de schéma JSON.
+>[!BEGINTABS]
+
+>[!TAB Schéma JSON v4]
 
 ```json
 {
- "$schema": "https://json-schema.org/draft-04/schema#",
- "definitions": {
+"$schema": "https://json-schema.org/draft-04/schema#",
+"definitions": {
   "employee": {
-   "type": "object",
-   "properties": {
+  "type": "object",
+  "properties": {
     "userName": {
      "type": "string"
-    },
+   },
     "dateOfBirth": {
      "type": "string",
      "format": "date"
     },
     "email": {
-     "type": "string",
-     "format": "email"
+    "type": "string",
+    "format": "email"
     },
     "language": {
      "type": "string"
-    },
+   },
     "personalDetails": {
      "$ref": "#/definitions/personalDetails"
-    },
+   },
     "projectDetails": {
      "$ref": "#/definitions/projectDetails"
     }
-   },
-   "required": [
-    "userName",
-    "dateOfBirth",
-    "language"
-   ]
   },
-  "personalDetails": {
+  "required": [
+   "userName",
+   "dateOfBirth",
+   "language"
+  ]
+  },
+    "personalDetails": {
    "type": "object",
-   "properties": {
-    "GeneralDetails": {
-     "$ref": "#/definitions/GeneralDetails"
-    },
+  "properties": {
+     "GeneralDetails": {
+    "$ref": "#/definitions/GeneralDetails"
+   },
     "Family": {
      "$ref": "#/definitions/Family"
     },
     "Income": {
      "$ref": "#/definitions/Income"
-    }
    }
-  },
+   }
+     },
   "projectDetails": {
    "type": "array",
    "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     },
-     "projects": {
-      "$ref": "#/definitions/projects"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "projects": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     },
-     "projectsAdditional": {
-      "$ref": "#/definitions/projectsAdditional"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "projectsAdditional": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "Additional_name": {
-      "type": "string"
-     },
-     "Additional_areacode": {
-      "type": "number"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "GeneralDetails": {
-   "type": "object",
    "properties": {
-    "age": {
-     "type": "number"
-    },
-    "married": {
-     "type": "boolean"
-    },
-    "phone": {
-     "type": "number"
-    },
-    "address": {
-     "type": "string"
-    }
-   }
-  },
-  "Family": {
-   "type": "object",
-   "properties": {
-    "spouse": {
-     "$ref": "#/definitions/spouse"
-    },
-    "kids": {
-     "$ref": "#/definitions/kids"
-    }
-   }
-  },
-  "Income": {
-   "type": "object",
-   "properties": {
-    "monthly": {
-     "type": "number"
-    },
-    "yearly": {
-     "type": "number"
-    }
-   }
-  },
-  "spouse": {
-   "type": "object",
-   "properties": {
-    "name": {
-     "type": "string"
-    },
-    "Income": {
-     "$ref": "#/definitions/Income"
-    }
-   }
-  },
-  "kids": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     }
-    }
+   "name": {
+    "type": "string"
    },
-   "minItems": 1,
-   "maxItems": 4
+   "age": {
+    "type": "number"
+   },
+   "projects": {
+    "$ref": "#/definitions/projects"
+   }
   }
  },
+ "minItems": 1,
+ "maxItems": 4
+},
+"projects": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "name": {
+    "type": "string"
+   },
+   "age": {
+    "type": "number"
+   },
+   "projectsAdditional": {
+    "$ref": "#/definitions/projectsAdditional"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+},
+"projectsAdditional": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "Additional_name": {
+    "type": "string"
+   },
+   "Additional_areacode": {
+    "type": "number"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+},
+"GeneralDetails": {
  "type": "object",
  "properties": {
-  "employee": {
-   "$ref": "#/definitions/employee"
+  "age": {
+   "type": "number"
+  },
+  "married": {
+   "type": "boolean"
+  },
+  "phone": {
+   "type": "number",
+  },
+  "address": {
+   "type": "string"
   }
  }
+},
+"Family": {
+ "type": "object",
+ "properties": {
+  "spouse": {
+   "$ref": "#/definitions/spouse"
+  },
+  "kids": {
+   "$ref": "#/definitions/kids"
+  }
+ }
+},
+"Income": {
+ "type": "object",
+ "properties": {
+  "monthly": {
+   "type": "number"
+  },
+  "yearly": {
+   "type": "number"
+  }
+ }
+},
+"spouse": {
+ "type": "object",
+ "properties": {
+  "name": {
+   "type": "string"
+  },
+  "Income": {
+   "$ref": "#/definitions/Income"
+  }
+ }
+},
+"kids": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "name": {
+    "type": "string"
+   },
+   "age": {
+    "type": "number"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+}
+},
+"type": "object",
+"properties": {
+"employee": {
+ "$ref": "#/definitions/employee"
+}
+}
 }
 ```
+
+
+>[!TAB Schéma JSON 2012-20]
+
+
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/employee.schema.json",
+  "$defs": {
+    "employee": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "language": {
+          "type": "string"
+        },
+        "personalDetails": {
+          "$ref": "#/$defs/personalDetails"
+        },
+        "projectDetails": {
+          "$ref": "#/$defs/projectDetails"
+        }
+      },
+      "required": [
+        "userName",
+        "dateOfBirth",
+        "language"
+      ]
+    },
+    "personalDetails": {
+      "type": "object",
+      "properties": {
+        "GeneralDetails": {
+          "$ref": "#/$defs/GeneralDetails"
+        },
+        "Family": {
+          "$ref": "#/$defs/Family"
+        },
+        "Income": {
+          "$ref": "#/$defs/Income"
+        }
+      }
+    },
+    "projectDetails": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projects": {
+            "$ref": "#/$defs/projects"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projectsAdditional": {
+            "$ref": "#/$defs/projectsAdditional"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projectsAdditional": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "Additional_name": {
+            "type": "string"
+          },
+          "Additional_areacode": {
+            "type": "number"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "GeneralDetails": {
+      "type": "object",
+      "properties": {
+        "age": {
+          "type": "number"
+        },
+        "married": {
+          "type": "boolean"
+        },
+        "phone": {
+          "type": "number",
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+      }
+  }
+  }
+```
+
+>[!ENDTABS]
+
+Les modifications clés des spécifications du schéma JSON V4 vers la version 2020-12 sont les suivantes :
+* L’identifiant est déclaré comme `$id`
+* Les définitions sont déclarées comme `$defs`
 
 ### Définitions de schéma réutilisables {#reusable-schema-definitions}
 
@@ -739,6 +874,7 @@ Les formulaires adaptatifs ne prennent pas en charge les éléments suivants de 
 * Types d’union tels que n’importe lequel, et
 * OneOf, AnyOf, AllOf, et NOT
 * Seuls les tableaux homogènes sont pris en charge. Par conséquent, la contrainte d’éléments doit être un objet et ne doit pas être un tableau.
+* Références URI dans $ref
 
 ## Questions fréquemment posées {#frequently-asked-questions}
 

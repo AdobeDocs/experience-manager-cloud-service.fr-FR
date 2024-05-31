@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b13310c256fe06210b9c79023972c4e41a241f43
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '4970'
+source-wordcount: '4997'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Notes de mise à jour de la version 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [Notes de mise à jour de la version 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [Notes de mise à jour de la version 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
@@ -664,6 +665,8 @@ ht-degree: 99%
             + [Créer un schéma JSON pour un formulaire adaptatif (composants principaux)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
+            + [Conversion de Forms adaptatif basé sur des composants de base en formulaires basés sur des composants principaux à l’aide de l’outil utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Enregistrement d’un formulaire adaptatif en tant que brouillon](/help/forms/save-core-component-based-form-as-draft.md)
       + Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)

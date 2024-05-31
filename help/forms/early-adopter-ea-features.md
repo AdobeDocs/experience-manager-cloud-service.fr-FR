@@ -3,10 +3,10 @@ title: Fonctionnalités actuelles de l’adoption précoce de [!DNL Adobe Experi
 description: Fonctionnalités actuelles de l’adoption précoce de [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 9%
+source-wordcount: '1731'
+ht-degree: 8%
 
 ---
 
@@ -20,8 +20,7 @@ Le programme d’adoption précoce d’AEM Forms vous offre une occasion unique 
 
 ## Comment participer au programme Adopteur anticipé ?
 
-Si vous souhaitez rejoindre notre programme d&#39;adoption précoce pour n&#39;importe quelle innovation d&#39;adoption précoce, envoyez simplement un email depuis votre adresse officielle à `aem-forms-ea@adobe.com` pour demander l’accès. Vous pouvez demander l’accès à l’ensemble ou à toute innovation spécifique.
-
+Si vous souhaitez rejoindre notre programme d&#39;adoption précoce pour n&#39;importe quelle innovation d&#39;adoption précoce, envoyez simplement un email depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  pour demander l’accès. Vous pouvez demander l’accès à l’ensemble ou à toute innovation spécifique.
 
 ## Innovations initiales des adopteurs
 
@@ -154,6 +153,15 @@ Voici une ventilation de ce que peuvent faire les API Doc Assurance :
 Globalement, [API Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) vous aide à améliorer la sécurité et la conformité des documents en ajoutant une couche de contrôle supplémentaire.
 
 
+### API de service Forms
+
+Le service Forms génère des PDF forms interactifs pour la capture de données. Il peut également être utilisé pour importer/exporter des données vers/depuis un formulaire de PDF interactif existant et valider les données envoyées. Voici une répartition de ses fonctionnalités :
+
+* **Rendu de Forms**: générez un formulaire de PDF interactif à partir d’un modèle créé à l’aide d’AEM Forms Designer et éventuellement de données XML. Cela génère essentiellement un formulaire de PDF à remplir, éventuellement prérempli avec des données.
+
+* **Extraction et importation de données**: importez des données dans un formulaire de PDF existant et extrayez des données d’un formulaire de PDF rempli. Les formats de données XDP et XML sont pris en charge et l’importation dans des PDF forms non XFA (également appelés AcroForms) prend également en charge les données FDF et XFDF.
+
+* **Validation des données**: validez les données envoyées, au format XDP ou XML, par rapport à un modèle créé à l’aide d’AEM Forms Designer.
 
 ## Voir également
 
