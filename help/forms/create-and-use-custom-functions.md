@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
+source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3510'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ Découvrez comment les fonctions personnalisées utilisent les objets champ et g
 
 ![Formulaire de contact](/help/forms/assets/contact-us-form.png)
 
-#### Cas d’utilisation : afficher un panneau à l’aide de la règle SetProperty
+#### Afficher un panneau à l’aide de la règle SetProperty
 
 Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) pour définir le champ de formulaire comme `Required`.
 
@@ -486,7 +486,7 @@ Si des erreurs sont présentes dans les champs de la variable `personaldetails` 
 ![Définir l’aperçu du formulaire de propriété](/help/forms/assets/set-property-panel.png)
 
 
-#### Cas d’utilisation : validez le champ.
+#### Validez un champ.
 
 Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) pour valider le champ.
 
@@ -527,7 +527,7 @@ Si l’utilisateur saisit un numéro de téléphone valide et tous les champs de
 
 
 
-#### Cas pratique : réinitialisation d’un panneau
+#### Réinitialisation d’un panneau
 
 Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) pour réinitialiser le panneau.
 
@@ -561,7 +561,7 @@ Consultez l’illustration ci-dessous pour afficher que si l’utilisateur cliqu
 
 
 
-#### Cas d’utilisation : pour afficher un message personnalisé au niveau du champ et le marquer comme non valide
+#### Pour afficher un message personnalisé au niveau du champ et marquer le champ comme non valide
 
 Vous pouvez utiliser la variable `markFieldAsInvalid()` pour définir un champ comme non valide et définir un message d’erreur personnalisé au niveau du champ. La variable `fieldIdentifier` peut être `fieldId`, ou `field qualifiedName`, ou `field dataRef`. La valeur de l’objet nommé `option` peut être `{useId: true}`, `{useQualifiedName: true}`, ou `{useDataRef: true}`.
 Les syntaxes utilisées pour marquer un champ comme non valide et définir un message personnalisé sont les suivantes :
@@ -604,7 +604,7 @@ Si l’utilisateur saisit plus de 15 caractères dans la zone de texte des comme
 
 
 
-#### Cas d’utilisation : envoi de données modifiées au serveur
+#### Modifier les données capturées avant de les envoyer
 
 La ligne de code suivante :
 `globals.functions.submitForm(globals.functions.exportData(), false);` sert à envoyer les données de formulaire après manipulation.
@@ -649,7 +649,7 @@ Vous pouvez également vérifier la fenêtre de la console pour visualiser les d
 
 
 
-#### Cas d’utilisation : remplacement de la réussite d’envoi du formulaire et des gestionnaires d’erreurs
+#### Remplacer les messages de réussite et d’erreur d’envoi du formulaire
 
 Ajoutez la ligne de code suivante, comme expliqué dans la section [create-custom-function](#create-custom-function) pour personnaliser le message d’envoi ou d’échec des envois de formulaire et afficher les messages d’envoi de formulaire dans une zone modale :
 
