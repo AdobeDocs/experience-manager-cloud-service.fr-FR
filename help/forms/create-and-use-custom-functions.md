@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
+source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
 workflow-type: tm+mt
-source-wordcount: '3510'
+source-wordcount: '3513'
 ht-degree: 4%
 
 ---
@@ -649,7 +649,7 @@ Vous pouvez également vérifier la fenêtre de la console pour visualiser les d
 
 
 
-#### Remplacer les messages de réussite et d’erreur d’envoi du formulaire
+#### Remplacer les messages de réussite et d’erreur d’envoi pour votre formulaire adaptatif
 
 Ajoutez la ligne de code suivante, comme expliqué dans la section [create-custom-function](#create-custom-function) pour personnaliser le message d’envoi ou d’échec des envois de formulaire et afficher les messages d’envoi de formulaire dans une zone modale :
 
