@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: 05b149c60cb8d05489668b13f63ed5b0e1d0bbfb
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3522'
 ht-degree: 4%
 
 ---
@@ -442,7 +442,7 @@ Découvrez comment les fonctions personnalisées utilisent les objets champ et g
 
 ![Formulaire de contact](/help/forms/assets/contact-us-form.png)
 
-+++ Cas d’utilisation : affichage d’un panneau à l’aide de la variable `SetProperty` règle
+#### Cas d’utilisation : afficher un panneau à l’aide de la règle SetProperty
 
 Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) pour définir le champ de formulaire comme `Required`.
 
