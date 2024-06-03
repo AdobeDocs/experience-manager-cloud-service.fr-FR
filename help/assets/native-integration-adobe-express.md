@@ -2,9 +2,9 @@
 title: Intégration native d’AEM Assets avec Adobe Express
 description: L’intégration native d’AEM Assets avec Adobe Express vous permet d’accéder directement aux ressources stockées dans AEM Assets à partir de l’interface utilisateur d’Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
+source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '612'
 ht-degree: 9%
 
 ---
@@ -49,26 +49,19 @@ Après avoir incorporé les modifications appropriées dans la zone de travail e
 
    ![Enregistrement des ressources dans AEM](assets/adobe-express-share.png)
 
-2. Dans la section Stockage du volet de droite, sélectionnez : **AEM Assets**. Adobe Express affiche la boîte de dialogue de chargement.
-3. Spécifiez le nom et le format de la ressource. Vous pouvez enregistrer le contenu du canevas aux formats PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. Le format s’ajuste automatiquement en fonction des ressources.
-
-   >[!NOTE]
-   >
-   >Sélectionnez &quot;Page en cours&quot; pour enregistrer le fichier dans votre dossier de destination. Si vous sélectionnez &quot;Toutes les pages&quot;, un nouveau dossier est créé dans votre destination pour tous les fichiers non PDF et est enregistré dans ce dossier pendant que les fichiers PDF sont enregistrés en tant que fichier unique dans le dossier de destination.
-
-4. Cliquez sur la zone de texte sous **Dossier de destination** pour sélectionner un emplacement et enregistrer la ou les ressources.
+2. Dans la section Stockage du volet de droite, sélectionnez **AEM Assets**. Adobe Express affiche la boîte de dialogue de chargement.
+3. Sélectionnez l’une des **Page en cours** ou **Toutes les pages** option d’enregistrement. Sélection **Page en cours** enregistre le fichier dans votre dossier de destination, mais en sélectionnant **Toutes les pages** crée un dossier dans votre destination pour tous les fichiers non PDF et les enregistre en tant que fichiers distincts lorsque les fichiers PDF sont enregistrés en tant que fichier unique dans le dossier de destination.
+4. Spécifiez le nom et le format de la ressource. Vous pouvez enregistrer le contenu du canevas aux formats PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. Le format s’ajuste automatiquement en fonction des ressources.
+5. Cliquez sur l’icône de dossier sous **Dossier de destination** pour sélectionner un emplacement et enregistrer la ou les ressources.
 
    ![Enregistrement des ressources dans AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. Facultatif : vous pouvez ajouter des métadonnées de campagne pour votre téléchargement à l’aide de la variable **Nom du projet ou de la campagne** champ . Vous pouvez utiliser un nom existant ou en créer un nouveau. Vous pouvez définir plusieurs noms de projet ou de campagne pour votre téléchargement. Pour enregistrer le nom, saisissez simplement le nom et appuyez sur Entrée.
+6. Facultatif : vous pouvez ajouter des métadonnées de campagne pour votre téléchargement à l’aide de la variable **Nom du projet ou de la campagne** champ . Vous pouvez utiliser un nom existant ou en créer un nouveau. Vous pouvez définir plusieurs noms de projet ou de campagne pour votre téléchargement. Pour enregistrer le nom, saisissez simplement le nom et appuyez sur Entrée.
 En règle générale, Adobe recommande de spécifier des valeurs dans le reste des champs et de créer une expérience de recherche améliorée pour vos ressources chargées.
 
-6. De même, définissez les valeurs de la variable **[!UICONTROL Mots-clés]** et **[!UICONTROL Canaux]** des champs.
+7. De même, définissez les valeurs de la variable **[!UICONTROL Mots-clés]** et **[!UICONTROL Canaux]** des champs.
 
-7. Cliquez sur **[!UICONTROL Télécharger]** pour charger la ou les ressources vers AEM Assets.
-
-
-
+8. Cliquez sur **[!UICONTROL Télécharger]** pour charger la ou les ressources vers AEM Assets.
 
 ## Limites {#limitations}
 
@@ -76,11 +69,13 @@ En règle générale, Adobe recommande de spécifier des valeurs dans le reste d
 
 2. Pour l’importation vidéo MP4 :
 
-   a) La taille de fichier maximale prise en charge est de 200 Mo. Si cette limite est supérieure, un message d’alerte s’affiche.
-b) La résolution maximale prise en charge est de 3 840 x 3 840 pixels.
-c) Les vidéos avec arrière-plans transparents (canal alpha) ne sont pas prises en charge.
+   1. La taille de fichier maximale prise en charge est de 200 Mo. Si cette limite est supérieure, un message d’alerte s’affiche.
+   2. La résolution maximale prise en charge est de 3 840 x 3 840 pixels.
+   3. Les vidéos avec des arrière-plans transparents (canal alpha) ne sont pas prises en charge.
 
 3. Pour l’exportation vidéo MP4 :
 
-   a) La taille de fichier maximale prise en charge est de 200 Mo. Si cette limite est supérieure, un message d’alerte s’affiche avec une suggestion de contournement, comme illustré dans l’image ci-dessous.
-   ![alerte avec solution de contournement](/help/assets/assets/alert-with-workaround.png)
+   1. La taille de fichier maximale prise en charge est de 200 Mo. Si cette limite est supérieure, une alerte vous suggère de réduire la vidéo à 200 Mo ou moins, ou de la télécharger manuellement vers le dossier de destination AEM Assets après l’avoir téléchargée.
+
+
+
