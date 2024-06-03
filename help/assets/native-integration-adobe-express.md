@@ -2,7 +2,7 @@
 title: Intégration native d’AEM Assets avec Adobe Express
 description: L’intégration native d’AEM Assets avec Adobe Express vous permet d’accéder directement aux ressources stockées dans AEM Assets à partir de l’interface utilisateur d’Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 9%
@@ -58,7 +58,7 @@ Après avoir incorporé les modifications appropriées dans la zone de travail e
 
 4. Cliquez sur la zone de texte sous **Dossier de destination** pour sélectionner un emplacement et enregistrer la ou les ressources.
 
-   ![Enregistrement des ressources dans AEM](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![Enregistrement des ressources dans AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. Facultatif : vous pouvez ajouter des métadonnées de campagne pour votre téléchargement à l’aide de la variable **Nom du projet ou de la campagne** champ . Vous pouvez utiliser un nom existant ou en créer un nouveau. Vous pouvez définir plusieurs noms de projet ou de campagne pour votre téléchargement. Pour enregistrer le nom, saisissez simplement le nom et appuyez sur Entrée.
 En règle générale, Adobe recommande de spécifier des valeurs dans le reste des champs et de créer une expérience de recherche améliorée pour vos ressources chargées.
@@ -83,4 +83,4 @@ c) Les vidéos avec arrière-plans transparents (canal alpha) ne sont pas prises
 3. Pour l’exportation vidéo MP4 :
 
    a) La taille de fichier maximale prise en charge est de 200 Mo. Si cette limite est supérieure, un message d’alerte s’affiche avec une suggestion de contournement, comme illustré dans l’image ci-dessous.
-   ![alerte avec solution de contournement](/help/assets/assets/alert-with-workaround.png).
+   ![alerte avec solution de contournement](/help/assets/assets/alert-with-workaround.png)
