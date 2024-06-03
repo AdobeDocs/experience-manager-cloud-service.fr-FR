@@ -2,9 +2,9 @@
 title: Intégration native d’AEM Assets avec Adobe Express
 description: L’intégration native d’AEM Assets avec Adobe Express vous permet d’accéder directement aux ressources stockées dans AEM Assets à partir de l’interface utilisateur d’Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
+source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '598'
 ht-degree: 9%
 
 ---
@@ -65,7 +65,7 @@ En règle générale, Adobe recommande de spécifier des valeurs dans le reste d
 
 6. De même, définissez les valeurs de la variable **[!UICONTROL Mots-clés]** et **[!UICONTROL Canaux]** des champs.
 
-7. Cliquez sur **[!UICONTROL Télécharger]** pour charger la ressource dans AEM Assets.
+7. Cliquez sur **[!UICONTROL Télécharger]** pour charger la ou les ressources vers AEM Assets.
 
 
 
