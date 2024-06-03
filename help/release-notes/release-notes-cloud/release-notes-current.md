@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f8fc51051393ef154e02391843fe1e73e6194e6f
+source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 33%
+source-wordcount: '1763'
+ht-degree: 25%
 
 ---
 
@@ -213,10 +213,8 @@ Le réseau de diffusion de contenu géré par Adobe prend désormais en charge [
 
 #### Service de données de surveillance des utilisateurs réels (RUM) (Programme des premiers adopteurs)
 
-* **[Vous pouvez utiliser le Service de données Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** pour activer la collecte côté client pour AEM as a Cloud Service.
-Le Service de données Real User Monitoring (RUM) offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Par ailleurs, pour les personnes utilisant un réseau CDN non géré par Adobe, il est désormais possible de créer automatiquement des rapports sur le trafic, ce qui leur évite d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
-
-  Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com`, avec le nom de domaine de chacun des environnements pour lesquels vous souhaitez activer l’utilisation de RUM depuis votre adresse e-mail associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données Real User Monitoring (RUM) pour vous.
+* **[Le service de données de surveillance à usage réel (RUM) est désormais GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** activation de la collecte de données côté client pour AEM as a Cloud Service.
+Le service de surveillance de l’utilisation réelle , la collection côté client, offre un reflet plus précis des interactions, assurant une mesure fiable de l’engagement du site web. Il permet aux clients disposant d’informations avancées sur le trafic et les performances de leur page. C’est une excellente occasion d’en savoir plus sur les performances de votre page et d’obtenir des informations pour l’améliorer.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
