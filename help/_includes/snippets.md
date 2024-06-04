@@ -1,8 +1,8 @@
 ---
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '516'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 # Fragments de code {#snippets}
@@ -66,33 +66,33 @@ ht-degree: 61%
 * [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
 
 
-## Différence entre l’éditeur de règles dans les composants principaux et l’éditeur de règles dans les composants de base  {#rule-editor-diff}
+## Différences entre l’éditeur de règles dans les composants principaux et l’éditeur de règles dans les composants de base  {#rule-editor-diff}
 
-Le tableau suivant montre la différence entre les fonctionnalités disponibles dans les composants principaux de l’éditeur de règles et les composants de base de l’éditeur de règles :
+Le tableau suivant montre les différences entre les fonctionnalités disponibles dans les composants principaux et les composants de base de l’éditeur de règles :
 
 <table>
   <tbody>
   <tr>
     <td><strong>Fonctions</strong></td>
-    <td><strong>Composants de base de formulaire adaptatif</strong></td>
-    <td><strong>Composants principaux de formulaire adaptatif</strong></td>   
+    <td><strong>Composants de base du formulaire adaptatif</strong></td>
+    <td><strong>Composants principaux du formulaire adaptatif</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>Définition des options de liste déroulante </td>
-    <td>Les options de la liste déroulante sont définies à l’aide du <b>Définir les options de</b> .</td>
+    <td>Définir les options de liste déroulante </td>
+    <td>Les options de liste déroulante sont définies à l’aide de la propriété <b>Définition des options de</b>.</td>
     <td>Les options de liste déroulante sont définies à l’aide des fonctions personnalisées. 
    </td>
    </tr>
      </tr>
    <tr>
-    <td>Exécution d’opérations mathématiques sur le champ de panneau répétable </td>
-    <td>Les fonctions mathématiques prêtes à l’emploi peuvent être appliquées à des champs de panneau répétables pour exécuter des fonctions telles que la somme, la moyenne. </td>
+    <td>Exécuter des opérations mathématiques sur le champ de panneau répétable </td>
+    <td>Les fonctions mathématiques prêtes à l’emploi peuvent être appliquées à des champs de panneau répétables pour exécuter des fonctions telles que la somme et la moyenne. </td>
     <td>Les opérations mathématiques sur le champ de panneau répétable peuvent être effectuées à l’aide des fonctions personnalisées.
    </td>
    </tr>
       <tr>
-    <td>Valider/réinitialiser la règle de champ/panneau/formulaire dans "Then" </td>
+    <td>Valider/réinitialiser la règle de champ/panneau/formulaire dans « Then » (alors) </td>
     <td>Les fonctions Valider et Réinitialiser ne prennent en charge que les objets de formulaire dans l’éditeur de règles. 
    </td>
     <td>Les fonctions Valider et Réinitialiser prennent en charge l’objet de formulaire/panneau/champ dans l’éditeur de règles. 
@@ -101,14 +101,14 @@ Le tableau suivant montre la différence entre les fonctionnalités disponibles 
    <tr>
     <td>Prise en charge d’ES10 </td>
     <td>ES10 n’est pas encore pris en charge. </td>
-    <td>Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions de gauche et de flèche (prise en charge d’ES10) dans les fonctions personnalisées. 
+    <td>Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions let et arrow (prise en charge d’ES10) dans les fonctions personnalisées. 
    </td>
    </tr>
    </tr>
    <tr>
-   <td>Propriété de sortie du service</td>
-   <td> La propriété de sortie Service est prise en charge dans la variable <b>Définir la valeur de</b> de l’éditeur de règles. </td>
-   <td>La variable <b>Définir la valeur de</b> ne prend pas en charge la variable <b>Sortie de service</b> pour appeler des API dans l’éditeur de règles.
+   <td>Propriété de sortie de service</td>
+   <td> La propriété de sortie de service est prise en charge dans l’option <b>Définir la valeur de</b> de l’éditeur de règles. </td>
+   <td>L’option <b>Définir la valeur de</b> ne prend pas en charge la propriété <b>Sortie de service</b> pour appeler des API dans l’éditeur de règles.
    </td>
    </tr>
    </tr>
