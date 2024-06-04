@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 558babc0124a8ee8c1337b91c5ef016ed238c935
+source-git-commit: 624ba716cb2ec2a45b0ed70516d0b2ad1db94912
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 48%
+source-wordcount: '353'
+ht-degree: 46%
 
 ---
 
@@ -31,11 +31,13 @@ L’activation des fonctionnalités de la version 2024.6.0 fournit l’ensemble
 
 ### Problèmes résolus {#fixed-issues-16544}
 
-* DXML-17171 : AEM Guides : l’opération de copier-coller de rubriques supérieures à 15 Ko échoue avec une erreur inattendue.
-* DXML-17088 : AEM Guides : La fonctionnalité permettant de modifier l’état du document à partir de la fonction **Propriétés du fichier** ne fonctionne pas correctement et les modifications apportées au *Version préliminaire* état.
-* DXML-16931 : AEM Guides : les images liées des rubriques ne s’affichent pas dans la ligne de base après la création de la version.
-* DXML-16896 : AEM Guides : les panneaux de contenu réutilisables ne répertorient pas d’éléments lorsque la variable **Préférences utilisateur** sont définies pour afficher les fichiers par **Nom du fichier**.
 * GRANITE-51375 : idp-sync renvoie NPE si aucun chemin intermédiaire n’est spécifié.
+* GUIDES-17171 : l’opération de copier-coller de rubriques de plus de 15 Ko échoue avec une erreur inattendue.
+* GUIDES-17088 : fonctionnalité permettant de modifier l’état du document à partir de la fonction **Propriétés du fichier** ne fonctionne pas correctement et les modifications apportées au *Version préliminaire* état.
+* GUIDES-16931 : les images liées des rubriques ne s’affichent pas dans la ligne de base après la création de la version.
+* GUIDES-16896 : Les panneaux de contenu réutilisables ne répertorient pas d’éléments lorsque la variable **Préférences utilisateur** sont définies pour afficher les fichiers par **Nom du fichier**.
+
+Pour plus d’informations sur les nouvelles fonctionnalités et les problèmes améliorés et les problèmes résolus dans les Guides du Experience Manager, consultez la [Feuille de route de la publication des guides du Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problèmes connus {#known-issues-16544}
 
