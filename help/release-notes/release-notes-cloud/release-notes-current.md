@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
+source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 25%
+source-wordcount: '1865'
+ht-degree: 24%
 
 ---
 
@@ -218,7 +218,12 @@ Le service de surveillance de l’utilisation réelle , la collection côté cli
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version des Guides Adobe Experience Manager. [here](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **Publication d’une rubrique ou de ses éléments sur un fragment d’expérience**
+Désormais, les guides du Experience Manager vous permettent de publier une rubrique ou ses éléments dans un fragment d’expérience. Un fragment d’expérience est une unité de contenu modulaire qui intègre à la fois le contenu et la mise en page.  Les fragments d’expérience sont essentiels et peuvent vous aider à créer des expériences cohérentes et attrayantes.
+* **Possibilité de transmettre les métadonnées de la ressource de rubrique à la sortie du PDF natif.**
+Vous pouvez ajouter les métadonnées de la ressource de rubrique lors de la génération de la sortie de l’PDF natif. Cette fonctionnalité vous permet d’ajouter des métadonnées spécifiques pour différentes rubriques, telles que le titre et l’auteur de la rubrique, dans les en-têtes et pieds de page de la page de la rubrique.
+
+Pour plus d’informations sur les nouvelles fonctionnalités et les problèmes améliorés résolus dans la version, consultez la [Feuille de route de la publication des guides du Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
