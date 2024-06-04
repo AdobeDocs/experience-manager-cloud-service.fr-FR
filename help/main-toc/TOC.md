@@ -665,8 +665,8 @@ ht-degree: 99%
             + [Créer un schéma JSON pour un formulaire adaptatif (composants principaux)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
-            + [Conversion de Forms adaptatif basé sur des composants de base en formulaires basés sur des composants principaux à l’aide de l’outil utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Enregistrement d’un formulaire adaptatif en tant que brouillon](/help/forms/save-core-component-based-form-as-draft.md)
+            + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’outil utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Enregistrer un formulaire adaptatif en tant que brouillon](/help/forms/save-core-component-based-form-as-draft.md)
       + Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)
