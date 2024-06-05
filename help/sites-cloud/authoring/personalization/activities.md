@@ -2,10 +2,13 @@
 title: Gestion des activités
 description: La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques.
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1958'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -105,7 +108,7 @@ Pour ajouter une activité :
 1. Si vous utilisez le ciblage AEM ou le ciblage d’expérience Adobe Target :
    1. Sélectionner **Sélection de l’audience** et sélectionnez le segment ciblé par votre expérience.
    1. Sélectionner **Ajouter une expérience**, saisissez un nom, puis sélectionnez **OK**.
-   1. Sélectionnez **Suivant**.
+   1. Sélectionner **Suivant**.
 Si vous utilisez des tests A/B Adobe Target :
    1. Sélectionnez le crayon dans la zone audiences pour sélectionner une audience.
    1. Sélectionner **Ajouter une expérience**, saisissez un nom, puis sélectionnez **OK**.
@@ -213,7 +216,7 @@ Pour éviter des problèmes de synchronisation, donnez toujours des noms uniques
 
 >[!NOTE]
 >
->Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne ; les noms de campagne ne peuvent pas être réutilisés dans différents types de campagne.
+>Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
 >
 >Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
 >

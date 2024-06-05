@@ -4,10 +4,11 @@ description: Découvrez comment préparer le contenu à traduire lors du dévelo
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 73%
+ht-degree: 77%
 
 ---
 
@@ -52,7 +53,7 @@ Le [site de démonstration WKND](/help/implementing/developing/introduction/deve
 
 La copie de langue pour laquelle vous créez initialement le contenu du site est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues.
 
-Chaque branche de langue d’un site est appelée « copie de langue ». La page racine d’une copie de langue, appelée « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/wknd/fr` est la racine de langue de la copie en français. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparation.md#creating-a-language-root) afin que la langue correcte soit ciblée lors de la traduction d’un site source.
+Chaque branche de langue d’un site est appelée « copie de langue ». La page racine d’une copie de langue, appelée « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/wknd/fr` est la racine de langue de la copie en français. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparation.md#creating-a-language-root) afin que la bonne langue soit ciblée lorsque des traductions d’un site source sont effectuées.
 
 Procédez comme suit pour préparer la traduction de vos ressources :
 
@@ -77,7 +78,7 @@ Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie p
 1. Sélectionnez le site pour lequel vous souhaitez créer une copie de langue.
 1. Sélectionner **Créer**, puis sélectionnez **Page**.
 
-   ![Créer une page](../assets/create-page.png)
+   ![Création d’une page](../assets/create-page.png)
 
 1. Sélectionnez le modèle de page, puis sélectionnez **Suivant**.
 1. Dans le **Nom** saisissez le code pays au format de `<language-code>` ou `<language-code>_<country-code>`, par exemple : `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
@@ -86,7 +87,7 @@ Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie p
 
 1. Sélectionnez **Créer**. Dans la boîte de dialogue de confirmation, sélectionnez l’une des options suivantes : **Terminé** pour revenir à la console Sites, ou **Ouvrir** pour ouvrir la copie de langue.
 
-## Affichage de le statut des racines de langue {#seeing-the-status-of-language-roots}
+## Affichage du statut des racines de langue {#seeing-the-status-of-language-roots}
 
 AEM contient un rail **Références** qui affiche une liste des racines de langue créées.
 

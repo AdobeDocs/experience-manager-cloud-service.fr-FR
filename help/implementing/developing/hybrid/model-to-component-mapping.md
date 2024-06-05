@@ -2,9 +2,11 @@
 title: Mappage du modèle dynamique avec les composants pour les SPA
 description: Cet article décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK JavaScript SPA pour AEM.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
-source-wordcount: '319'
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '315'
 ht-degree: 100%
 
 ---
@@ -25,7 +27,7 @@ Voir aussi le package npm : [@adobe/aem-spa-component-mapping](https://www.npmj
 
 ## SPA pilotée par un modèle {#model-driven-single-page-application}
 
-Les SPA qui utilisent le SDK JavaScript SPA pour AEM sont pilotées par des modèles :
+Les applications monopages qui utilisent le SDK JavaScript d’application monopage pour AEM sont basées sur des modèles :
 
 1. Les composants front-end s’enregistrent eux-mêmes dans le [magasin de mappage de composants](#componentmapping-module).
 1. Ensuite, le [conteneur](blueprint.md#container), qui a reçu un modèle du [fournisseur de modèles](blueprint.md#the-model-provider), effectue une itération sur son contenu de modèle (`:items`).

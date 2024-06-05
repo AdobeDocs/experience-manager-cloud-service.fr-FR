@@ -4,10 +4,11 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: ae500923bac34689a28b9ff0bc78586f725829de
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '4011'
-ht-degree: 84%
+ht-degree: 88%
 
 ---
 
@@ -120,7 +121,7 @@ Après avoir créé un projet de traduction, vous pouvez utiliser le rail **Ress
 
 Lorsque vous ajoutez des pages à un projet de traduction, les pages sont incorporées à une nouvelle tâche de traduction. Vous pouvez également [ajouter des pages à une tâche existante](#adding-pages-assets-to-a-translation-job).
 
-Comme lors de la création d’un projet, lors de l’ajout de pages, des copies des pages sont ajoutées à un lancement si nécessaire afin d’éviter de remplacer des copies de langue existantes. (Voir [Création de projets de traduction pour des copies de langue existantes](#performing-initial-translations-and-updating-existing-translations).)
+Comme lors de la création d’un projet, lorsque vous ajoutez des pages, des copies de pages sont ajoutées à un lancement, si nécessaire, afin d’éviter de remplacer des copies de langue. (Voir [Création de projets de traduction pour des copies de langue existantes](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Utilisez la console Sites pour sélectionner la page que vous ajoutez au projet de traduction.
 
@@ -448,7 +449,7 @@ Pour comparer des copies de langue au gabarit de langue :
 
 ## Déplacement ou modification du nom d’une page source {#move-source}
 
-Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), la traduction de la page une fois le déplacement effectué crée une copie de langue basée sur le nouveau nom/emplacement de la page. L’ancienne copie de langue basée sur le nom/l’emplacement précédent est toujours là. Pour éviter cela, vous pouvez utiliser la fonctionnalité de mise à jour de la copie de langue après le déplacement :
+Si une page source déjà traduite doit être [renommée ou déplacée](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie dans la langue en fonction du nouveau nom ou emplacement de la page. L’ancienne copie dans la langue basée sur le nom et l’emplacement précédent est toujours là. Pour éviter cela, vous pouvez utiliser la fonctionnalité de mise à jour de la copie de langue après le déplacement :
 
 1. Déplacez une page qui comporte une copie de langue.
 1. Sélectionnez la racine de la copie de langue.
@@ -465,9 +466,9 @@ Si une page source déjà traduite doit être [renommé ou déplacé](/help/site
 
    ![promote-launch-translation](../assets/promote-launch-translation.png)
 
-1. Cliquez sur le lancement qui a été créé, puis sur **Convertir le lancement**.
+1. Cliquez sur le lancement que avez créé, puis sur **Promouvoir le lancement**.
 
-Désormais, la page source a été déplacée et la copie de langue associée.
+Désormais, la page source a été déplacée, ainsi que la copie de langue associée.
 
 ## Importation et exportation de tâches de traduction {#import-export}
 
@@ -475,7 +476,7 @@ Bien qu’AEM propose plusieurs solutions et interfaces de traduction, il est é
 
 ### Exportation d’une tâche de traduction {#exporting-a-translation-job}
 
-Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, pour l’envoyer à un fournisseur de traduction qui n’est pas intégré à AEM via un connecteur, ou pour revoir le contenu.
+Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, pour l’envoyer à un fournisseur de traduction qui n’est pas intégré à AEM par le biais d’un connecteur ou pour réviser le contenu.
 
 1. Dans le menu déroulant de la mosaïque de la tâche de traduction, sélectionnez **Exporter**.
 1. Dans la boîte de dialogue, sélectionnez **Télécharger le fichier exporté** et, au besoin, utilisez la boîte de dialogue du navigateur web pour enregistrer le fichier.
@@ -483,7 +484,7 @@ Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, 
 
 ### Importation d’une tâche de traduction {#importing-a-translation-job}
 
-Vous pouvez importer du contenu traduit dans AEM, par exemple, lorsque votre fournisseur de traduction vous l’envoie, car il n’est pas intégré à AEM via un connecteur.
+Vous pouvez importer du contenu traduit dans AEM, par exemple, lorsque votre fournisseur de traduction vous l’envoie, car il n’est pas intégré à AEM par le biais d’un connecteur.
 
 1. Dans le menu déroulant de la mosaïque de la tâche de traduction, sélectionnez **Importer**.
 1. Utilisez la boîte de dialogue du navigateur web pour sélectionner le fichier à importer.

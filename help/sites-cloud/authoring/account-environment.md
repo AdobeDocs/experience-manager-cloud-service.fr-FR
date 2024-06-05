@@ -1,17 +1,20 @@
 ---
 title: Configuration de votre environnement de compte
-description: Adobe Experience Manager (AEM) vous permet de configurer votre compte et certains aspects de l’environnement de création.
+description: Adobe Experience Manager (AEM) vous procure les outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 78%
+ht-degree: 86%
 
 ---
 
 # Configuration de votre environnement de compte {#configuring-your-account-environment}
 
-Adobe Experience Manager (AEM) vous permet de configurer votre compte et certains aspects de l’environnement de création.
+Adobe Experience Manager (AEM) vous procure les outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
 Grâce à l’option [Utilisateur](#user-settings) dans l’[en-tête](/help/sites-cloud/authoring/basic-handling.md#the-header) et à la boîte de dialogue associée [Mes préférences](#my-preferences), vous pouvez modifier vos options utilisateur.
 

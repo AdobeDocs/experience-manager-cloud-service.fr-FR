@@ -1,13 +1,16 @@
 ---
 title: Console Sites
 description: Découvrez comment utiliser la console Sites pour gérer et organiser vos pages d’AEM.
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
+exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1628'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
-
 
 # Console Sites {#sites-console}
 
@@ -172,7 +175,7 @@ En mode Carte, chaque élément au niveau actuel de la hiérarchie s’affiche s
 
 * Les cartes fournissent des informations telles que :
 
-   * Représentation visuelle du contenu de la page.
+   * une représentation visuelle du contenu de la page ;
    * Le titre de la page ;
    * Des dates importantes (telles que la date de la dernière modification ou publication) ;
    * Si la page est verrouillée, masquée ou fait partie d’une Live Copy.
@@ -201,7 +204,7 @@ Le mode Liste fournit des informations pour chaque ressource au niveau actuel da
    * **Prévisualisation** : prévisualisation du statut
    * **Modèle** : modèle sur lequel la page est basée.
    * **Opération**
-   * **Workflow** : workflow actuellement appliqué à la page. Plus d’informations sont disponibles lorsque vous placez le pointeur de la souris ou ouvrez la chronologie.
+   * **Workflow** : workflow actuellement appliqué à la page. Vous pouvez voir davantage d’informations en passant la souris sur un élément ou en ouvrant la chronologie.
    * **Traduit**
    * **Pages vues**
    * **Visiteurs uniques**

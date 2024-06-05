@@ -2,16 +2,18 @@
 title: Accéder à Admin Console
 description: Une fois que vous avez compris la préparation nécessaire à l’intégration et les bases de la structure AEMaaCS, vous êtes prêt à vous connecter pour la première fois à Admin Console.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 84%
+source-wordcount: '1071'
+ht-degree: 100%
 
 ---
 
 # Accéder à Admin Console {#accessing-admin-console}
 
-Dans cette partie du [parcours d&#39;intégration,](overview.md) vous découvrez la préparation nécessaire pour pouvoir vous connecter au système pour la première fois.
+Dans cette partie du [parcours d’intégration](overview.md), vous découvrirez la préparation nécessaire avant de vous connecter pour la première fois au système.
 
 ## Objectif {#objective}
 
@@ -26,11 +28,11 @@ En tant qu’administrateur système, vous êtes responsable de la gestion des u
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console désigne un emplacement central pour administrer et gérer vos utilisateurs et licences de produits Adobe. Le Admin Console vous permet de créer et de gérer des utilisateurs à un seul emplacement plutôt qu’au sein de vos différentes solutions individuelles.
+Adobe Admin Console désigne un emplacement central pour administrer et gérer vos utilisateurs et licences de produits Adobe. Admin Console vous permet de créer et gérer des utilisateurs dans un seul emplacement plutôt qu’au sein de vos différentes solutions individuelles.
 
-## Adobe ID {#adobe-id}
+## Adobe ID {#adobe-id}
 
-Pour vous connecter au Admin Console, vous devez disposer d’un Adobe ID. Un Adobe ID est un compte lié à une adresse e-mail spécifique. C’est nécessaire pour se connecter et accéder à AEM as a Cloud Service ou à une autre solution Adobe. En utilisant votre Adobe ID, vous conservez tous vos plans et produits Adobe associés à un compte donné.
+Pour vous connecter à Admin Console, vous aurez besoin d’un Adobe ID. Un Adobe ID est un compte lié à une adresse e-mail spécifique. C’est nécessaire pour se connecter et accéder à AEM as a Cloud Service ou à une autre solution Adobe. En utilisant votre Adobe ID, vous conservez tous vos plans et produits Adobe associés à un compte donné.
 
 En tant qu’administrateur ou administratrice système, lorsque vous configurez votre équipe dans l’Admin Console, vous indiquez l’adresse e-mail qui est utilisée comme Adobe ID.
 
@@ -40,7 +42,7 @@ Il existe trois types d’Adobe ID :
 
 * **Enterprise ID** : les entreprises souhaitent généralement accroître le contrôle des comptes utilisateurs. Seuls les administrateurs système peuvent créer des Enterprise ID. L’entreprise possède ces comptes, Adobe servant uniquement d’hôte.
 
-* **Federated ID** : ils permettent à l’organisation de prendre pleinement possession des comptes et de les contrôler. Pour ce faire, votre entreprise doit intégrer Adobe Experience Cloud à votre système de connexion unique (SSO) SAML2. Ainsi, les utilisateurs peuvent s’authentifier sur le système d’authentification unique de leur entreprise plutôt que sur un compte hébergé par Adobe.
+* **Federated ID** : ils permettent à l’organisation de prendre pleinement possession des comptes et de les contrôler. Pour ce faire, votre entreprise doit intégrer Adobe Experience Cloud à votre système d’authentification unique (SSO) SAML2. Ainsi, les utilisateurs peuvent s’authentifier sur le système d’authentification unique de leur entreprise plutôt que sur un compte hébergé par Adobe.
 
 En tant qu’administrateur système, vous pouvez décider d’intégrer votre équipe et vous-même à AEM as a Cloud Service à l’aide des Personal ID avant la configuration des Enterprise ID ou des Federated ID. Une fois les Enterprise ID ou les Federated ID configurés, les membres peuvent être transférés à l’utilisation de ces ID.
 
@@ -50,13 +52,13 @@ Avant de pouvoir utiliser Admin Console pour administrer les utilisateurs au sei
 
 1. En tant qu’administrateur système, vous recevrez plusieurs e-mails d’Adobe dans le cadre du processus d’intégration. Recherchez l’e-mail de bienvenue qui fournit des informations sur le nom de l’organisation à laquelle vous avez accès.
 
-1. Cliquez sur le bouton **Prise en main** dans votre e-mail de bienvenue pour accéder à Admin Console. Si vous ne trouvez pas l’adresse électronique, ouvrez un navigateur directement vers Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Cliquez sur le lien **Commencer** de cet e-mail de bienvenue pour accéder à Admin Console. Si vous ne retrouvez pas l’e-mail en question, ouvrez un navigateur directement sur Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![E-mail de bienvenue](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Connectez-vous à l’aide de votre Adobe ID. Une fois la connexion établie, la variable **Présentation** de Adobe Admin Console.
+1. Connectez-vous à l’aide de votre Adobe ID. Une fois la connexion établie, la page **Aperçu** d’Adobe Admin Console s’affiche.
 
-   ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
+   ![Admin Console.](/help/journey-onboarding/assets/get-started1.png)
 
 1. Si vous avez accès à plusieurs organisations, vérifiez que votre connexion est établie avec la bonne organisation. Pour modifier votre organisation, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation à laquelle vous avez besoin d’accéder.
 
@@ -66,7 +68,7 @@ Avant de pouvoir utiliser Admin Console pour administrer les utilisateurs au sei
 
    ![Consulter la liste des administrateurs](/help/journey-onboarding/assets/get-started2.png)
 
-1. Cliquez ensuite sur **Administrateurs** de la **Utilisateurs** , vous pouvez effectuer une recherche en saisissant votre adresse électronique, votre nom d’utilisateur, votre prénom ou votre nom Adobe ID.
+1. Une fois que vous avez cliqué sur **Administrateurs** à partir de la vignette **Utilisateurs**, vous pouvez effectuer une recherche en saisissant votre adresse e-mail Adobe ID, votre nom d’utilisateur, votre prénom ou votre nom.
 
    ![Rechercher des utilisateurs](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +84,7 @@ Pour l’authentification, AEM as a Cloud Service est préconfiguré avec le sys
 
 En utilisant IMS, AEM as a Cloud Service consolide l’expérience de connexion entre AEM et le reste des applications et services d’Adobe Experience Cloud. Les entreprises qui disposent de plusieurs produits Adobe peuvent particulièrement en tirer un avantage à travers la création de groupes basés sur les rôles dans l’Admin Console, puis l’attribution de l’accès à plusieurs produits, y compris AEM as a Cloud Service via IMS.
 
-Pour en savoir plus sur les profils de produit et l’affectation d’utilisateurs, consultez la section suivante de ce parcours d’intégration.
+Vous en apprendrez plus sur les profils de produit et l’affectation d’utilisateurs dans la prochaine partie de ce parcours d’intégration.
 
 ## Contacter l’assistance technique d’Adobe {#support}
 
@@ -90,7 +92,7 @@ Si vous rencontrez des problèmes, l’assistance d’Adobe est accessible via A
 
 ![Onglet Assistance](/help/journey-onboarding/assets/support-menu.png)
 
-L’onglet permet de créer et de gérer des cas, de discuter directement avec des représentants de l’assistance clientèle Adobe et de planifier des sessions avec des experts. Les administrateurs système et les administrateurs de l’assistance doivent se connecter pour accéder aux cas d’assistance et aux options de session d’experts.
+L’interface vous permet de créer et de gérer des cas, de discuter directement avec des représentants de l’assistance clientèle d’Adobe et de planifier des sessions avec des experts. Les administrateurs système et les administrateurs de l’assistance doivent se connecter pour accéder aux cas d’assistance et aux options de session d’experts.
 
 ## Prochaines étapes {#whats-next}
 

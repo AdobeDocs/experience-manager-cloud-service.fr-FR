@@ -2,7 +2,9 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 90%
@@ -167,7 +169,7 @@ La variable **Préférences** peut être utilisée pour définir la langue de l�
 
 ## Création d’un dossier {#creating-a-folder}
 
-Pour créer un fichier avec CRXDE Lite :
+Pour créer un dossier avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier sous lequel vous souhaitez créer le nouveau dossier, sélectionnez **Créer...**, puis **Créer un dossier...**.
@@ -178,7 +180,7 @@ Pour créer un fichier avec CRXDE Lite :
 
 ## Création d’un nœud {#creating-a-node}
 
-Pour créer un nœud avec CRXDE Lite :
+Pour créer un nœud avec CRXDE Lite, procédez comme suit :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le [**volet Explorateur**,](#explorer-pane) cliquez avec le bouton droit sur le nœud où vous souhaitez créer le nouveau nœud, sélectionnez **Créer**, puis **Créer un nœud**.

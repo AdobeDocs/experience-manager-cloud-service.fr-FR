@@ -2,7 +2,9 @@
 title: Présentation d’Universal Editor pour AEM Developers
 description: Si vous êtes un développeur AEM intéressé par le fonctionnement d’Universal Editor et son utilisation dans votre projet, ce document vous présente de bout en bout l’utilisation du projet WKND pour travailler avec Universal Editor.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 1%

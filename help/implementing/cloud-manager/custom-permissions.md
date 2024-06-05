@@ -2,10 +2,13 @@
 title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs responsables de cloud.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -16,7 +19,7 @@ Découvrez comment utiliser des autorisations personnalisées pour créer des pr
 
 ## Présentation {#introduction}
 
-Cloud Manager dispose d’un ensemble de rôles prédéfinis qui régissent l’accès aux différentes fonctionnalités de Cloud Manager :
+Cloud Manager dispose d’un ensemble de rôles prédéfinis qui régissent l’accès aux différentes fonctionnalités de Cloud Manager :
 
 * Propriétaire de l’entreprise
 * Responsable de programme
@@ -83,7 +86,7 @@ Maintenant que vous disposez d’un nouveau profil de produit, vous pouvez lui a
 1. La variable **Modifier l’autorisation** s’ouvre.
    * L’autorisation que vous avez sélectionnée à l’étape précédente est sélectionnée dans la colonne de gauche.
    * Les éléments d’autorisation disponibles pour l’affectation de l’autorisation se trouvent dans la colonne du milieu intitulée **Autorisations disponibles**.
-   * Les éléments d’autorisation affectés se trouvent dans la colonne de droite intitulée **Éléments d’autorisation inclus**.
+   * Les éléments d’autorisation attribués se trouvent dans la colonne de droite intitulée **Éléments d’autorisation inclus**.
 
    ![Modification des éléments d’autorisation.](assets/edit-permission-items.png)
 
@@ -137,7 +140,7 @@ Les autorisations suivantes sont disponibles pour créer des profils personnalis
 | Création de référentiel | Autoriser les utilisateurs à créer des référentiels Git |
 | Suppression de référentiel | Autoriser les personnes à supprimer des référentiels Git |
 | Modification de référentiel | Autoriser les personnes à modifier les référentiels Git |
-| Génération de code de référentiel | Autoriser les utilisateurs à générer des projets à partir de l’archétype |
+| Génération de code de référentiel | Autoriser les personnes à générer des projets à partir de l’archétype |
 | Gestion des noms de domaine | Autoriser les utilisateurs à créer/modifier/supprimer des noms de domaine |
 | Gestion des Listes autorisées IP | Autoriser les utilisateurs à créer/modifier/supprimer des liaisons de liste autorisée IP et de liste autorisée IP |
 | Gestion de l’infrastructure réseau | Autoriser les utilisateurs à créer/modifier/supprimer une infrastructure réseau |
@@ -201,7 +204,7 @@ Les profils de produits et les rôles de Cloud Manager par défaut continuent d
 
 ### Puis-je modifier des profils d’autorisation prédéfinis ?
 
-Non, les profils par défaut ne sont pas modifiables. Vous ne pouvez pas ajouter ni supprimer d’autorisations au profil d’autorisation par défaut. Vous pouvez uniquement ajouter ou supprimer des utilisateurs et utilisatrices aux/des profils prédéfinis.
+Non, les profils par défaut ne sont pas modifiables. Vous ne pouvez pas ajouter d’autorisations au profil d’autorisation par défaut, ni les supprimer de celui-ci. Vous pouvez uniquement ajouter ou supprimer des utilisateurs et utilisatrices aux/des profils prédéfinis.
 
 ### Dois-je supprimer les profils d’autorisation prédéfinis puisque les profils personnalisés sont désormais disponibles ?
 

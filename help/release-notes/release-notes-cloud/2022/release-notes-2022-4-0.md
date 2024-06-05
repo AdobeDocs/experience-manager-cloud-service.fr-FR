@@ -2,14 +2,16 @@
 title: Notes de mise à jour de la version 2022.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 86%
+source-wordcount: '580'
+ht-degree: 85%
 
 ---
 
-# Notes de mise à jour de la version 2022.4.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2022.4.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.4.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -30,13 +32,13 @@ La prochaine version (2022.5.0) est prévue pour le 9 juin 2022.
 
 Consultez la vidéo [Aperçu de la version d’avril 2022](https://video.tv.adobe.com/v/342612?quality=12) pour obtenir un résumé des fonctionnalités ajoutées dans la version 2022.4.0.
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
 * Les types de données de modèle de contenu peuvent désormais être définis comme [traduisible](/help/assets/content-fragments/content-fragments-models.md#properties) à l’aide d’une simple case à cocher dans l’éditeur de modèles de contenu. En outre, les règles et configurations de traduction AEM sont automatiquement mises à jour.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
@@ -72,7 +74,7 @@ Il est vivement recommandé de mettre à jour votre projet Maven avec la derniè
 
 ### Dépréciation de TLS 1.0 et 1.1
 
-À compter du 30 juin 2022, l’as a Cloud Service Experience Manager devra disposer d’une communication réseau plus sécurisée et d’un échange de données avec les systèmes utilisateurs. AEM a l’intention d’utiliser exclusivement le protocole TLS (Transport Layer Security), 1.2. Les anciennes versions de TLS 1.0 et 1.1 sont désormais obsolètes.
+À compter du 30 juin 2022, Experience Manager as a Cloud Service aura besoin d’un exchange de données et de communication réseau plus sécurisé avec les systèmes des utilisateurs. AEM a l’intention d’utiliser exclusivement le protocole TLS (Transport Layer Security), 1.2. Les anciennes versions de TLS 1.0 et 1.1 sont désormais obsolètes.
 
 Si vous continuez à utiliser des versions antérieures à TLS 1.0 et 1.1, vous risquez de perdre l’accès à Experience Manager as a Cloud Service.
 

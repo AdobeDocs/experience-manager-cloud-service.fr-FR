@@ -2,10 +2,12 @@
 title: Configurations et l’explorateur de configurations
 description: Découvrez les configurations Adobe Experience Manager (AEM) et comment elles gèrent les paramètres de l’espace de travail dans AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -68,7 +70,7 @@ L’explorateur de configurations permet à un administrateur de créer, gérer 
 
 Il est simple de créer une configuration dans AEM à l’aide du navigateur de configuration.
 
-1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils** > **Général** > **Explorateur de configuration**.
+1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Outils** > **Général** > **Explorateur de configurations**.
 1. Sélectionnez **Créer**.
 1. Indiquez un **Titre** et un **Nom** pour votre configuration.
 
@@ -93,7 +95,7 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
 
 Si vous considérez les configurations comme des espaces de travail, les droits d’accès peuvent être définis sur ces configurations afin de définir qui peut ou non accéder à ces espaces de travail.
 
-1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils** > **Général** > **Explorateur de configuration**.
+1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils** -> **Général** -> **Explorateur de configurations**.
 1. Sélectionnez la configuration à modifier, puis cliquez sur **Propriétés** dans la barre d’outils.
 1. Sélectionnez les fonctionnalités supplémentaires que vous souhaitez ajouter à la configuration.
 

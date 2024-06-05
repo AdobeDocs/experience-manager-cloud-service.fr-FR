@@ -3,10 +3,13 @@ title: Gestion des pipelines
 description: Découvrez comment gérer vos pipelines existants, notamment en les modifiant, en les exécutant et en les supprimant.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 71ece3b084c3a262cacc62019396138a88a340b9
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 52%
+ht-degree: 53%
 
 ---
 
@@ -41,7 +44,7 @@ La fenêtre **Pipelines** affiche la liste complète de tous les pipelines du pr
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
 1. Dans la **Aperçu du programme** , sélectionnez **Pipelines** pour basculer vers l’onglet **Pipelines** fenêtre.
 

@@ -4,7 +4,8 @@ description: Découvrez comment gérer les instances de workflow à l’aide de 
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 98%
@@ -71,7 +72,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 ## Suspension, reprise ou arrêt d’une instance de workflows {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
+1. Avec la navigation, sélectionnez **Outils**, puis **Workflows**.
 1. Sélectionnez **Instances** pour afficher la liste des instances de workflow en cours.
 
    ![wf-96-1](/help/sites-cloud/administering/assets/wf-96-1.png)
@@ -88,7 +89,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 ## Affichage des workflows archivés {#viewing-archived-workflows}
 
-1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
+1. Avec la navigation, sélectionnez **Outils**, puis **Workflows**.
 
 1. Sélectionnez **Archiver** pour afficher la liste des instances de workflow qui se sont terminées avec succès.
 

@@ -5,8 +5,11 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 100%
 
@@ -110,7 +113,7 @@ Le projet a été créé, mais ne contient aucun contenu à traduire. La section
 
 ## Utilisation d’un projet de traduction {#using-translation-project}
 
-Les projets de traduction sont conçus pour collecter en un seul endroit l’ensemble du contenu et des tâches liés à un effort de traduction afin de rendre votre tâche de traduction simple et facile à gérer.
+Les projets de traduction sont conçus pour collecter en un seul endroit l’ensemble du contenu et des tâches liés à un effort de traduction afin de rendre votre traduction simple et facile à gérer.
 
 Pour afficher le projet de traduction :
 

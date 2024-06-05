@@ -2,10 +2,12 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3267'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -40,7 +42,7 @@ Ce document :
 
 La création de modèles de page s’effectue essentiellement à l’aide de la [console de modèles et de l’éditeur de modèles](/help/sites-cloud/authoring/sites-console/templates.md). Cette tâche est de la responsabilité du créateur de modèles. Cette section vous donne un aperçu de ce processus. Elle décrit ensuite ce qui se passe au niveau technique.
 
-Lors de la création d’un modèle modifiable :
+Lors de la création d’un modèle modifiable :
 
 1. Créez un [dossier pour les modèles](#template-folders). Cela n’est pas obligatoire, mais cela fait partie des bonnes pratiques recommandées.
 1. Sélectionnez un [type de modèle](#template-type). Il est copié afin de créer la [définition du modèle](#template-definitions).
@@ -197,7 +199,7 @@ Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes 
 
 ### Utilisation de l’explorateur de configurations {#using-the-configuration-browser}
 
-1. Accédez à **Navigation globale** > **Outils** > [**Explorateur de configuration**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. Accédez à **Navigation globale** > **Outils** > [**Explorateur de configurations**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    Les dossiers existants sont répertoriés à gauche, y compris le dossier `global`.
 
@@ -502,7 +504,7 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
    * [Définissez le ou les chemins d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
      `cq:allowedTemplates`
-Sur le `jcr:content` noeud de la branche requise.
+Sur le nœud `jcr:content` de la branche requise.
 
    Par exemple, avec la valeur suivante :
 
@@ -593,7 +595,7 @@ Le diagramme suivant illustre le processus d’évaluation de modèle :
 
 #### Limitation des modèles utilisés dans les pages enfants {#limiting-templates-used-in-child-pages}
 
-Pour limiter les modèles servant à créer des pages enfants sous une page donnée, utilisez la propriété `cq:allowedTemplates` du nœud `jcr:content` de la page pour spécifier la liste des modèles à autoriser en tant que pages enfants. Chaque valeur de la liste doit être un chemin absolu vers un modèle pour une page enfant autorisée, par exemple : `/apps/wknd/templates/page-content`.
+Pour limiter les modèles servant à créer des pages enfants sous une page donnée, utilisez la propriété `cq:allowedTemplates` du nœud `jcr:content` de la page pour spécifier la liste des modèles à autoriser en tant que pages enfants. Chaque valeur de la liste doit être un chemin absolu vers un modèle pour une page enfant autorisée, par exemple `/apps/wknd/templates/page-content`.
 
 Vous pouvez utiliser la variable `cq:allowedTemplates` sur la propriété  `jcr:content` pour que cette configuration soit appliquée à toutes les pages créées qui utilisent ce modèle.
 

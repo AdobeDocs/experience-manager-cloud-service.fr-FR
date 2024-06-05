@@ -2,10 +2,12 @@
 title: Configuration de ContextHub
 description: Découvrez comment configurer ContextHub, un framework pour stocker, manipuler et présenter des données contextuelles.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -53,7 +55,7 @@ Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsq
 1. Saisissez les valeurs pour les propriétés suivantes :
 
    * Titre du mode d’IU : titre qui identifie le mode d’IU.
-   * Icône de mode : sélecteur pour [Icône de l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) pour utiliser, par exemple, `coral-Icon--user`
+   * Icône de mode : sélecteur de l’[icône de l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
    * Activé : sélectionnez cette option pour afficher le mode d’interface utilisateur dans la barre d’outils ContextHub
 
 1. Sélectionnez Enregistrer.
@@ -111,7 +113,7 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | Magasin pour les segments ContextHub résolus et non résolus. Récupère automatiquement les segments de SegmentManager ContextHub |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | Stocke la latitude et la longitude de l’emplacement du navigateur. |
-| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | Définit les propriétés et les fonctionnalités de plusieurs appareils et détecte l’appareil client actuel. |
+| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | Définit les propriétés et les fonctionnalités d’un certain nombre d’appareils et détecte l’appareil client actuel. |
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | Stocke les données de profil de l’utilisateur actuel. |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Stocke des informations sur le client, telles que les informations relatives à l’appareil, le type de navigateur et l’orientation de la fenêtre. |
 

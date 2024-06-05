@@ -2,10 +2,12 @@
 title: Personnaliser la création de pages
 description: Découvrez les mécanismes proposés par AEM as a Cloud Service pour personnaliser la fonctionnalité de création de pages.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 52%
+ht-degree: 54%
 
 ---
 
@@ -158,7 +160,7 @@ Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Mark
 
 ## Ajouter une nouvelle action de page {#add-a-new-page-action}
 
-Pour ajouter une nouvelle action de page à la barre d’outils de la page, par exemple, une **Retour à Sites** (console).
+Pour ajouter une nouvelle action de page à la barre d’outils de la page, par exemple une action **Retour à Sites** (console).
 
 ### Exemple de code {#code-sample-3}
 

@@ -1,15 +1,18 @@
 ---
-title: Gestion des pages
+title: Gérer des pages
 description: Découvrez comment gérer les pages de votre site web en AEM, notamment le déplacement, la copie et la suppression.
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 65%
+ht-degree: 71%
 
 ---
 
-
-# Gestion des pages {#managing-pages}
+# Gérer des pages {#managing-pages}
 
 Découvrez comment gérer les pages de votre site web en AEM, notamment le déplacement, la copie et la suppression.
 
@@ -19,13 +22,13 @@ Découvrez comment gérer les pages de votre site web en AEM, notamment le dépl
 
 >[!TIP]
 >
->Il existe plusieurs [raccourcis clavier](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) que vous pouvez utiliser à partir de la console sites web pour organiser vos pages plus efficacement.
+>Il existe un certain nombre de [raccourcis clavier](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) à utiliser à partir de la console Sites web qui facilitent l’organisation des pages.
 
 ## Privilèges d’accès {#access-privileges}
 
 Votre compte doit disposer des droits d’accès et des autorisations appropriés pour agir sur les pages, telles que créer, copier, déplacer, modifier et supprimer.
 
-En cas de problème, contactez votre administrateur système.
+En cas de problème, contactez l’administrateur ou l’administratrice système.
 
 ## Ouverture d’une page pour la modifier {#opening-a-page-for-editing}
 
@@ -168,9 +171,9 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
 ### Actions asynchrones {#asynchronous-actions}
 
-Les actions de déplacement de page sont toujours traitées de manière asynchrone, ce qui permet à l’utilisateur de continuer à créer dans l’interface utilisateur sans entraves.
+Les actions de déplacement de page sont toujours traitées de manière asynchrone, ce qui permet à l’utilisateur ou à l’utilisatrice de continuer à créer dans l’IU sans entraves.
 
-L’état des tâches asynchrones peut être vérifié dans la variable [**État des tâches asynchrones** tableau de bord](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Navigation globale** > **Outils** > **Opérations** > **Tâches**
+Pour consulter le statut des tâches asynchrones, accédez au tableau de bord [**Statut des tâches asynchrones**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations), disponible sous **Navigation globale** > **Outils** > **Opérations** > **Tâches**.
 
 >[!TIP]
 >
@@ -193,15 +196,15 @@ L’état des tâches asynchrones peut être vérifié dans la variable [**État
       * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
 1. Appuyez ou cliquez sur **Annuler** pour abandonner l’action ou **Supprimer** pour confirmer l’action.
    * Si la page ne comporte aucune référence, elle est supprimée.
-   * Si la page comporte des références, un message vous informe que **Une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
+   * Si la page comporte des références, un message vous informe qu’**une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
 
 >[!NOTE]
 >
 >Si une page est déjà publiée, la publication est automatiquement annulée avant la suppression.
 
-### Verrouillage d’une page    {#locking-a-page}
+### Verrouillage d’une page {#locking-a-page}
 
-Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-cloud/authoring/page-editor/edit-content.md#locking-a-page) à partir d’une console ou lorsque vous modifiez une page. Les deux environnements indiquent également si une page est verrouillée ou non.
+Vous pouvez [verrouiller/déverrouiller une page](/help/sites-cloud/authoring/page-editor/edit-content.md#locking-a-page) à partir d’une console ou lors de la modification d’une page individuelle. Les informations sur le verrouillage d’une page s’affichent également aux deux emplacements.
 
 ![Bouton Verrouiller](/help/sites-cloud/authoring/assets/lock.png)
 ![Bouton Déverrouiller](/help/sites-cloud/authoring/assets/unlock.png)

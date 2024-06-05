@@ -2,10 +2,13 @@
 title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2844'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -19,7 +22,7 @@ Si vous devez gérer du contenu ciblé, tel que des activités, des expériences
 
 Ce document contient les informations suivantes :
 
-* Fournit un bref aperçu de la prise en charge multisite d’AEM pour le contenu ciblé.
+* Fournit une brève vue d’ensemble de la prise en charge multisite d’AEM pour le contenu ciblé.
 * Décrit certains scénarios d’utilisation possibles sur la manière de lier des sites (dans une marque).
 * Un exemple détaillé de l’utilisation que peuvent faire les spécialistes marketing de cette fonction
 * Des instructions détaillées sur l’implémentation de la prise en charge de sites multiples pour le contenu ciblé.
@@ -47,26 +50,26 @@ Un site ou une Live Copy est lié(e) à une zone contenant les activités qui do
 >Tenez compte des points suivants lorsque vous utilisez la prise en charge multisite pour le contenu ciblé :
 >
 >* Lorsque vous utilisez des déploiements ou des Live Copy, une licence MSM est requise.
->* Lorsque vous utilisez la synchronisation avec Adobe Target, une licence Adobe Target est requise.
+>* Lorsque vous utilisez la synchronisation avec Adobe Target, une licence Adobe Target est requise.
 >
 
 ## Scénarios d’utilisation {#use-cases}
 
-Vous pouvez configurer la prise en charge de sites multiples pour le contenu ciblé de plusieurs manières, en fonction de votre cas d’utilisation. Cette section décrit comment cela fonctionnerait théoriquement avec une seule marque. En outre, dans [Exemple : ciblage de contenu basé sur la géographie](#example-targeting-content-based-on-geography), vous pouvez découvrir une application réelle du ciblage de contenu sur plusieurs sites.
+Selon votre cas d’utilisation, vous pouvez configurer la prise en charge multisite pour le contenu ciblé de différentes manières. Cette section décrit comment cela fonctionnerait théoriquement avec une seule marque. En outre, dans [Exemple : ciblage de contenu basé sur la géographie](#example-targeting-content-based-on-geography), vous pouvez découvrir une application réelle du ciblage de contenu sur plusieurs sites.
 
 Le contenu ciblé est encapsulé dans ce que l’on appelle des zones qui définissent la portée des sites ou des pages. Ces zones sont définies au niveau de la marque. Une marque peut contenir plusieurs zones. Les zones peuvent être distinctes entre les marques. Bien qu’une marque ne contienne que la zone principale et soit donc partagée entre toutes les marques, une autre marque peut contenir plusieurs marques (par exemple, par zone géographique). Par conséquent, les marques n’ont pas besoin de refléter l’ensemble des zones entre elles.
 
 Avec la prise en charge multisite pour le contenu ciblé, vous pouvez, par exemple, avoir deux sites (ou plus) avec **une** marque qui possède l’une des caractéristiques suivantes :
 
 * Un ensemble complètement *distinct* de contenu ciblé. La modification du contenu ciblé sur un site n’a pas d’incidence sur l’autre site. Les sites qui sont liés à des zones distinctes écrivent et lisent sur leur propre zone configurée. Par exemple :
-   * Le site A est lié à la zone X
-   * Le site B est lié à la zone Y
+   * Le site A est lié à la zone X.
+   * Le site B est lié à la zone Y
 * Un ensemble *partagé* de contenu ciblé : la modification sur un site a un impact direct sur les deux sites. Cela est possible en configurant deux sites de façon à ce qu’ils fassent référence à la même zone. Les sites qui sont liés à la même zone partagent le contenu ciblé au sein de cette zone. Par exemple :
-   * Le site A est lié à la zone X
+   * Le site A est lié à la zone X.
    * Le site B est lié à la zone X
 * Un ensemble distinct de contenu ciblé *hérité* d’un autre site via MSM : le contenu peut être déployé, dans une seule direction, du maître vers la Live Copy. Par exemple :
-   * Le site A est lié à la zone X
-   * Le site B est lié à la zone Y (qui est une Live Copy de la zone X)
+   * Le site A est lié à la zone X.
+   * Le site B est lié à la zone Y (qui est une Live Copy de la zone X).
 
 **Plusieurs** marques peuvent être aussi utilisées sur un site, ce qui peut être plus complexe que cet exemple.
 
@@ -78,12 +81,12 @@ Avec la prise en charge multisite pour le contenu ciblé, vous pouvez, par exemp
 
 ## Exemple : ciblage de contenu basé sur la géographie {#example-targeting-content-based-on-geography}
 
-L’utilisation de sites multiples pour le contenu ciblé vous permet de partager, déployer ou isoler du contenu de personnalisation. Pour mieux illustrer l’utilisation de cette fonctionnalité, imaginez un scénario dans lequel vous souhaitez contrôler la manière dont le contenu ciblé est déployé en fonction de la géographie, par exemple :
+L’utilisation multisite pour le contenu ciblé vous permet de partager, de déployer ou d’isoler du contenu de personnalisation. Pour mieux illustrer l’utilisation de cette fonctionnalité, imaginez un scénario dans lequel vous souhaitez contrôler la manière dont le contenu ciblé est déployé en fonction de la géographie, par exemple :
 
 Il existe quatre versions d’un même site en fonction de la géographie :
 
 * Le site des **États-Unis** se trouve dans le coin supérieur gauche et constitue le site principal. Dans cet exemple, il est ouvert en mode Ciblage.
-* Les trois autres versions de ce site sont les suivantes : **Canada**, **Grande-Bretagne** et **Australie**, qui sont toutes des Live Copy. Ces sites sont ouverts en mode Aperçu.
+* Les trois autres versions de ce site sont les suivantes : **Canada**, **Grande-Bretagne** et **Australie**, qui sont toutes des Live Copy. Ces sites sont ouverts en mode Aperçu.
 
 ![Versions de sites multiples](/help/sites-cloud/authoring/assets/multisite-versions.png)
 
@@ -107,9 +110,9 @@ Le spécialiste marketing souhaite déployer ces modifications dans la région e
 
 ![Déploiement de la Live Copy](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
-L’image sur le site de l’Australie n’est pas affectée, ce qui est le comportement souhaité, car c’est l’été en Australie et le spécialiste marketing ne souhaite pas modifier ce contenu. Le site de l’Australie ne change pas, car il ne partage pas de zone avec une autre zone géographique et qu’il n’est pas une Live Copy d’une autre zone géographique. Le spécialiste marketing n’a pas à se soucier que le contenu ciblé du site australien soit remplacé.
+L’image sur le site de l’Australie n’est pas affectée, ce qui est le comportement souhaité, car c’est l’été en Australie et le spécialiste marketing ne souhaite pas modifier ce contenu. Le site de l’Australie ne change pas, car il ne partage pas de zone avec une autre zone géographique et qu’il n’est pas une Live Copy d’une autre zone géographique. Le spécialiste marketing n’a pas à se soucier que le contenu ciblé du site australien soit remplacé.
 
-En outre, pour la Grande-Bretagne, dont la zone est une Live Copy de la zone principale, vous pouvez voir le statut d’héritage grâce à l’indicateur vert à côté du nom de l’activité. Si une activité est héritée, vous ne pouvez pas la modifier, sauf si vous suspendez ou désolidarisez la Live Copy.
+En outre, pour la Grande-Bretagne, dont la zone est une Live Copy de la zone principale, vous pouvez voir le statut d’héritage grâce à l’indicateur vert à côté du nom de l’activité. Si une activité est héritée, vous ne pouvez pas la modifier, sauf si vous suspendez ou désolidarisez la Live Copy.
 
 Vous pouvez à tout moment suspendre ou désolidariser complètement l’héritage. Vous pouvez également ajouter des expériences locales qui ne sont disponibles que pour cette expérience sans suspendre l’héritage.
 
@@ -119,9 +122,9 @@ Vous pouvez à tout moment suspendre ou désolidariser complètement l’hérita
 
 ### Comparaison de la création d’une zone simple et de la création d’une zone comme Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-Dans AEM, vous avez la possibilité de créer une zone ou de créer une zone en tant que Live Copy. La création d’une zone regroupe les activités et tout ce qui appartient à ces activités, telles que les offres, les expériences, etc. Vous créez une zone lorsque vous souhaitez créer un ensemble complètement distinct de contenu ciblé ou partager un ensemble de contenu ciblé.
+Dans AEM, vous avez la possibilité de créer une nouvelle zone ou de créer une zone en tant que Live Copy. La création d’une zone regroupe les activités et tout ce qui appartient à ces activités, telles que les offres, les expériences, etc. Vous créez une zone lorsque vous souhaitez créer un ensemble complètement distinct de contenu ciblé ou partager un ensemble de contenu ciblé.
 
-Si, toutefois, vous disposez d’un héritage configuré via le MSM entre les deux sites, vous pouvez hériter des activités. Dans ce cas, vous créez une zone comme Live Copy, où Y est une Live Copy de X et hérite donc également de toutes les activités.
+Si, toutefois, vous disposez d’un héritage configuré via le MSM entre les deux sites, vous pouvez hériter des activités. Dans ce cas, vous créez une zone en tant que Live Copy, où Y est une Live Copy de X et hérite donc également de toutes les activités.
 
 >[!NOTE]
 >
@@ -133,10 +136,10 @@ Par exemple, dans le schéma suivant, deux des quatre sites partagent la zone ma
 
 Pour réaliser cette action dans AEM, procédez comme suit :
 
-* Le site A est lié à la zone principale. Aucune création de zone n’est nécessaire. La zone principale est sélectionnée par défaut dans AEM. Les sites A et B partagent des activités, etc.
-* Le site B est lié à la zone principale. Aucune création de zone n’est nécessaire. La zone principale est sélectionnée par défaut dans AEM. Les sites A et B partagent des activités, etc.
+* Le site A est lié à la zone principale. Aucune création de zone n’est nécessaire. La zone principale est sélectionnée par défaut dans AEM. Les sites A et B partagent des activités, etc.
+* Le site B est lié à la zone principale. Aucune création de zone n’est nécessaire. La zone principale est sélectionnée par défaut dans AEM. Les sites A et B partagent des activités, etc.
 * Le site C est lié à la zone héritée, qui est une Live Copy de la zone maître. Créez une zone comme Live Copy (avec une Live Copy reposant sur la zone maître). La zone héritée hérite des activités de la zone principale lors du déploiement.
-* Le site D est lié à sa propre zone isolée. Créez une zone dans laquelle vous créez une zone entièrement nouvelle sans aucune activité encore définie. La zone isolée ne partage aucune activité avec un autre site.
+* Le site D est lié à sa propre zone isolée. Créez une zone dans laquelle vous créez une zone entièrement nouvelle sans aucune activité encore définie. La zone isolée ne partage aucune activité avec un autre site.
 
 ## Création de zones {#creating-new-areas}
 
@@ -146,7 +149,7 @@ Les zones peuvent couvrir des activités et des offres. Après avoir créé une 
 >
 >La zone par défaut appelée Zone de Principal est réduite par défaut lorsque vous sélectionnez le nom d’une marque. **Jusqu’à** vous créez une autre zone. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
 
-Pour créer une zone :
+Pour créer une zone :
 
 1. Accédez à **Personnalisation** > **Activités** ou **Offres** et sélectionnez ensuite votre marque.
 1. Sélectionner **Créer une zone**.
@@ -161,7 +164,7 @@ Pour créer une zone :
 
    ![Créer](/help/sites-cloud/authoring/assets/multisite-create.png)
 
-## Création de zones comme Live Copies {#creating-areas-as-live-copies}
+## Création de zones comme Live Copy {#creating-areas-as-live-copies}
 
 Vous créez une zone en tant que Live Copy pour hériter du contenu ciblé sur l’ensemble des structures du site.
 
@@ -240,7 +243,7 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activité :
 
 1. Accédez à la page sur laquelle vous souhaitez désolidariser ou suspendre l’héritage et sélectionnez **Ciblage** dans le menu déroulant du mode.
-1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir l’état d’héritage. Sélectionnez **Commencer le ciblage**.
+1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir le statut d’héritage. Sélectionnez **Commencer le ciblage**.
 1. Pour suspendre une activité, effectuez l’une des opérations suivantes :
 
    1. Sélectionnez un élément de l’activité, tel que l’audience. AEM affiche automatiquement une boîte de confirmation Suspendre la Live Copy. (Vous pouvez suspendre la Live Copy en appuyant ou en cliquant sur un élément tout au long du processus de ciblage.)
@@ -257,7 +260,7 @@ Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activi
 Pour rompre l’héritage du contenu ciblé dans une activité :
 
 1. Accédez à la page sur laquelle vous souhaitez désolidariser la Live Copy du gabarit et sélectionnez **Ciblage** dans le menu déroulant du mode.
-1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir l’état d’héritage. Sélectionnez **Commencer le ciblage**.
+1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir le statut d’héritage. Sélectionnez **Commencer le ciblage**.
 1. Sélectionnez **Désolidariser une Live Copy** dans le menu déroulant de la barre d’outils. AEM confirme que vous souhaitez détacher la Live Copy.
 1. Sélectionner **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la désolidarisation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est désormais locale.
 

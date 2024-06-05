@@ -2,10 +2,12 @@
 title: Équipe et profils de produits AEM as a Cloud Service
 description: Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service accordent et limitent l’accès à vos solutions Adobe sous licence.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +26,9 @@ AEM as a Cloud Service est une offre entièrement native cloud qui fournit A
 
 Vos personnes membres de l’équipe d’AEM as a Cloud Service sont ajoutées et affectées à un ou plusieurs des profils de produit suivants via l’Admin Console lors de l’intégration.
 
-* **Administrateurs AEM**: un administrateur d’AEM est généralement affecté aux développeurs, en particulier les développeurs qui ont besoin d’accéder, par exemple, aux environnements de développement. Le profil de produit d’administration d’AEM est utilisé pour accorder des privilèges d’administration dans l’instance AEM associée.
+* **Administrateurs et administratrices AEM** : une personne chargée de l’administration AEM est généralement affectée à une équipe de développement, en particulier si celle-ci a besoin d’un accès, par exemple, aux environnements de développement. Le profil de produit d’administration d’AEM est utilisé pour accorder des privilèges d’administration dans l’instance AEM associée.
 
-* **Utilisateurs AEM** : les utilisateurs AEM sont les utilisateurs de votre organisation qui utilisent AEM as a Cloud Service généralement pour créer du contenu. Ces utilisateurs doivent accéder à AEM pour effectuer leurs tâches. Le profil de produit des utilisateurs AEM est généralement attribué à un créateur de contenu AEM qui crée et révise le contenu. Ce contenu peut être de nombreux types, tels que des pages, des ressources, des publications, etc. Le profil de produit Utilisateurs AEM présenté ci-dessous est attribué à ces membres.
+* **Utilisateurs et utilisatrices AEM** : les utilisateurs et les utilisatrices AEM sont les personnes de votre organisation qui utilisent AEM as a Cloud Service généralement pour créer du contenu. Ces personnes devront accéder à AEM pour effectuer leurs tâches. Le profil de produit des utilisateurs AEM est généralement attribué à un créateur de contenu AEM qui crée et révise le contenu. Ce contenu peut être de nombreux types, tels que des pages, des ressources, des publications, etc. Le profil de produit Utilisateurs AEM présenté ci-dessous est attribué à ces membres.
 
 ![Profils de produits](/help/onboarding/assets/admin-console-profiles.png)
 
@@ -42,7 +44,7 @@ Vos personnes membres de l’équipe d’AEM as a Cloud Service sont ajouté
 
 >[!TIP]
 >
->* Pour en savoir plus sur AEM profils de produit, voir [Attribution de profils de produit AEM](/help/journey-onboarding/assign-profiles-aem.md).
+>* Pour en savoir plus sur les profils de produits d’AEM, consultez [Attribuer des profils de produit d’AEM](/help/journey-onboarding/assign-profiles-aem.md).
 >* Pour plus d’informations sur le processus d’intégration, voir [parcours d’intégration](/help/journey-onboarding/overview.md).
 
 ## Profils de produit Cloud Manager {#cloud-manager-product-profiles}
@@ -55,18 +57,18 @@ Cloud Manager dispose de profils de produit préconfigurés qui peuvent être c
 
 Chacun des profils de produit est associé à des autorisations spécifiques.
 
-* **Propriétaire de l’entreprise**
-   * Dans ce rôle, vous avez l’autorisation d’ajouter un nouveau programme ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, de déployer du code dans AEM environnement ou d’exécuter des contrôles qualité du code.
-   * Cet utilisateur est chargé de définir les indicateurs de performance clés, d’approuver les déploiements en production et de remplacer les échecs importants à 3 niveaux si nécessaire.
-* **Responsable de déploiement**
-   * Dans ce rôle, vous avez l’autorisation d’ajouter ou de mettre à jour un environnement, d’exécuter n’importe quel pipeline, de déployer le code dans AEM environnement ou d’exécuter des contrôles qualité du code.
-   * Cet utilisateur gère les opérations de déploiement et utilise Cloud Manager pour exécuter des déploiements d’évaluation/de production, modifier les pipelines CI/CD ou approuver des échecs importants à 3 niveaux si nécessaire. Il peut également accéder au référentiel Git.
-* **Développeur**
-   * Dans ce rôle, vous avez la permission de générer des jetons d’accès personnels pour accéder à git.
-   * Cet utilisateur développe et teste des codes d’application personnalisés et utilise principalement Cloud Manager pour afficher l’état du déploiement. Il peut accéder au référentiel Git pour les validations de code.
-* **Responsable de programme**
-   * Dans ce rôle, vous avez l’autorisation de planifier des pipelines, de remplacer les points de contrôle qualité à trois niveaux et de fournir une approbation de production.
-   * Cet utilisateur utilise Cloud Manager pour effectuer la configuration de l’équipe, réviser l’état, afficher les ICP et approuver les échecs importants à 3 niveaux si nécessaire.
+* **Personne propriétaire de l’entreprise**
+   * Ce rôle vous donne l’autorisation d’ajouter ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, de déployer du code dans un environnement AEM ou d’exécuter des contrôles qualité du code.
+   * Cette personne est chargée de définir les indicateurs de performance clés (KPI), d’approuver les déploiements en production et de remplacer les échecs importants à 3 niveaux si nécessaire.
+* **Personne responsable du déploiement**
+   * Ce rôle vous donne l’autorisation d’ajouter ou de mettre à jour un environnement, d’exécuter n’importe quel pipeline et de déployer du code dans un environnement AEM ou d’exécuter des contrôles qualité du code.
+   * Cette personne gère les opérations de déploiement et utilise Cloud Manager pour exécuter des déploiements d’évaluation/de production, modifier les pipelines CI/CD ou approuver des échecs importants à 3 niveaux si nécessaire. Elle peut également accéder au référentiel Git.
+* **Développeur ou développeuse**
+   * Ce rôle vous donne l’autorisation de générer des jetons d’accès personnel à Git.
+   * Cette personne développe et teste des codes d’application personnalisés et utilise principalement Cloud Manager pour afficher l’état du déploiement. Elle peut accéder au référentiel Git pour les validations de code.
+* **Personne responsable de programme**
+   * Ce rôle vous donne l’autorisation de planifier des pipelines, de remplacer les points de contrôle qualité à 3 niveaux et de fournir l’approbation de production.
+   * Cette personne utilise Cloud Manager pour effectuer la configuration de l’équipe, réviser l’état, afficher les ICP et approuver les échecs importants à 3 niveaux si nécessaire.
 
 Un utilisateur peut être affecté à plusieurs profils de produit. Par exemple, l’attribution des rôles **Propriétaire de l’entreprise** et **Responsable de déploiement** à un utilisateur leur donne la somme de ces autorisations.
 
@@ -82,5 +84,5 @@ Votre équipe Cloud Manager comprend au moins :
 
 >[!TIP]
 >
->* Pour en savoir plus sur les profils de produit Cloud Manager, voir [Affectation de membres d’équipe à des profils de produit Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Pour en savoir plus sur les profils de produits Cloud Manager, consultez [Attribuer des personnes membres de l’équipe à des profils de produit Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* Pour plus d’informations sur le processus d’intégration, voir [parcours d’intégration](/help/journey-onboarding/overview.md).

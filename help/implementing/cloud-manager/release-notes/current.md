@@ -3,10 +3,11 @@ title: Notes de mise à jour de Cloud Manager 2024.5.0 dans Adobe Experience�
 description: Consultez les notes de mise à jour de Cloud Manager 2024.5.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3bab3e77dcc8ffbc3e8891557cbe09de707d64c5
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +22,12 @@ Cette page présente les notes de mise à jour de Cloud Manager version 2024.
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2024.5.0 de Cloud Manager dans AEM as a Cloud Service est le 9 mai 2024. La prochaine version est prévue pour le 6 juin 2024.
+La date de publication de Cloud Manager version 2024.5.0 dans AEM as a Cloud Service est le 9 mai 2024. La prochaine version est prévue pour le 6 juin 2024.
 
 ## Nouveautés {#what-is-new}
 
-* La variable [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md) est désormais accessible via un point d’entrée distinct à gauche. [navigation.](/help/implementing/cloud-manager/navigation.md)
-* Lorsque la mise en service d’un environnement de développement échoue, l’interface utilisateur de Cloud Manager fournit désormais des commentaires.
+* Le [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md) est désormais accessible via un point d’entrée distinct dans la [navigation](/help/implementing/cloud-manager/navigation.md) de gauche.
+* Lorsque la mise en service d’un environnement de développement échoue, l’interface utilisateur de Cloud Manager fournit désormais des commentaires.
 
 ## Programme d’adoption précoce {#early-adoption}
 

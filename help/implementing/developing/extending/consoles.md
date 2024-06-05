@@ -2,10 +2,12 @@
 title: Personnalisation des consoles
 description: Découvrez les différentes options fournies par AEM pour personnaliser les consoles de votre instance de création.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 11%
+ht-degree: 27%
 
 ---
 
@@ -31,9 +33,9 @@ Voir aussi [Recouvrements pour Adobe Experience Manager as a Cloud Service](/hel
 >
 >Si les options de personnalisation de l’expérience de création vous intéressent, voir [Personnalisation de la création de pages](/help/implementing/developing/extending/page-authoring.md).
 
-## Personnalisation de l’affichage par défaut d’une console {#customizing-the-default-view-for-a-console}
+## Personnaliser l’affichage par défaut d’une console {#customizing-the-default-view-for-a-console}
 
-Vous pouvez personnaliser la vue par défaut (colonne, carte, liste) d’une console :
+Vous pouvez personnaliser l’affichage par défaut (colonne, carte, liste) d’une console :
 
 * Vous pouvez réorganiser les vues en recouvrant l’entrée requise sous :
 
@@ -97,7 +99,7 @@ En utilisant des propriétés sur ce nœud, vous pouvez définir les `groups` au
 
 ### Personnalisation des colonnes en mode Liste {#customizing-columns-in-list-view}
 
-Pour personnaliser les colonnes en mode Liste :
+Pour personnaliser les colonnes dans la vue Liste :
 
 1. Recouvrez la liste des colonnes disponibles.
 
@@ -113,8 +115,8 @@ Si vous souhaitez insérer des données supplémentaires, vous devez écrire une
 >
 >Cette fonctionnalité est optimisée pour les colonnes de champs de texte. Pour d’autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
 
-### Filtrage des ressources {#filtering-resources}
+### Filtrer les ressources {#filtering-resources}
 
 Lors de l’utilisation d’une console, l’utilisateur doit souvent effectuer une sélection dans des ressources telles que des pages, des composants ou des ressources. Cela peut prendre la forme d’une liste à partir de laquelle l’auteur doit choisir un élément.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Voir [Personnalisation de la création de pages](/help/implementing/developing/extending/page-authoring.md#filtering-resources) pour plus d’informations.
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Voir [Personnalisation de la création de pages](/help/implementing/developing/extending/page-authoring.md#filtering-resources) pour plus d’informations.

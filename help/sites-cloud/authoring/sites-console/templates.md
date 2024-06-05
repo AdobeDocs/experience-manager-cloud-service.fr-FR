@@ -2,10 +2,13 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée. Avec l’éditeur de modèles, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs et aux développeuses.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '4524'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -32,7 +35,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!NOTE]
 >
->L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais les modèles eux-mêmes ne le peuvent pas.
+>L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais pas les modèles eux-mêmes.
 
 ## Avant de commencer {#before-you-start}
 
@@ -67,13 +70,13 @@ Les tâches présentées dans ce document sont répertoriées avec le rôle resp
 
 ## Création et gestion des modèles {#creating-and-managing-templates}
 
-Lors de la création d’un modèle modifiable :
+Lors de la création d’un modèle modifiable :
 
-* Utilisez la variable **Modèle** console. Cette option est disponible dans la **Général** de la **Outils** console.
+* Utilisez la console **Modèles**. Cette option est disponible dans la section **Général** de la console **Outils**.
    * Ou directement à l’adresse : `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
 * [Créez un modèle](#creating-a-new-template-template-author), qui est initialement vide.
-* [Définition de propriétés supplémentaires](#defining-template-properties-template-author) pour le modèle, si nécessaire
+* [Définissez des propriétés supplémentaires](#defining-template-properties-template-author) pour le modèle, le cas échéant.
 * [Modifiez le modèle](#editing-templates-template-authors) pour définir :
    * [Structure](#editing-a-template-structure-template-author) : contenu prédéfini ne pouvant pas être modifié dans les pages créées avec le modèle.
    * [Contenu initial](#editing-a-template-initial-content-author) : contenu prédéfini pouvant être modifié dans les pages créées avec le modèle.
@@ -97,7 +100,7 @@ Lors de la création d’un modèle modifiable :
 
 Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. Il s’agit d’une tâche de l’administrateur qui est décrite dans le document . [Modèles de page](/help/implementing/developing/components/templates.md#template-folders).
 
-### Création d’un modèle - Créateur de modèles {#creating-a-new-template-template-author}
+### Création d’un modèle - Créateur ou créatrice de modèles {#creating-a-new-template-template-author}
 
 1. Ouvrez le **Console de modèles** (par **Outils >** **Général**), puis accédez au dossier requis.
 
@@ -143,7 +146,7 @@ Un modèle peut avoir les propriétés suivantes :
 * Titre
    * Titre utilisé pour identifier le modèle, comme dans l’assistant **Créer une page**.
 * Description
-   * Description facultative permettant de fournir plus d’informations sur le modèle et son utilisation. Elle peut être affichée, par exemple, dans la variable **Créer une page** assistant.
+   * Description facultative permettant de fournir des informations supplémentaires sur le modèle et son utilisation. Elle peut s’afficher, par exemple, dans l’assistant **Créer une page**.
 
 Pour afficher et/ou modifier les propriétés :
 
@@ -167,7 +170,7 @@ Pour définir la miniature du modèle :
    * Si ce n’est pas le cas, sélectionnez **Effacer** pour charger une autre image ou générer à nouveau la miniature.
 1. Lorsque la miniature vous satisfait, sélectionnez **Enregistrer et fermer**.
 
-### Activation et autorisation d’un modèle – Créateur de modèles {#enabling-and-allowing-a-template-template-author}
+### Activation et autorisation d’un modèle - Créateur ou créatrice de modèles {#enabling-and-allowing-a-template-template-author}
 
 Pour utiliser un modèle lors de la création d’une page, vous devez effectuer les deux tâches suivantes :
 
@@ -226,7 +229,7 @@ Le modèle étant référencé lors du rendu d’une page, il doit être publié
 1. Sélectionnez les **Politiques de contenu** à publier en tandem.
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification de modèles - Créateurs de modèles {#editing-templates-template-authors}
+## Modification de modèles - Créateurs et créatrices de modèles {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -268,7 +271,7 @@ Lorsqu’un composant a été déverrouillé, vous pouvez définir le [contenu i
 >
 >En mode **Contenu initial** (et dans les pages créées), les composants déverrouillés qui possèdent un parent accessible (c’est-à-dire, les composants dans un conteneur de mises en page) peuvent être supprimés.
 
-#### Mise en page {#template-layout}
+#### Disposition {#template-layout}
 
 Vous pouvez prédéfinir la [disposition](#editing-a-template-layout-template-author) du modèle pour les formats d’appareil de votre choix. Le mode **Disposition** pour la création de modèles comporte la même fonctionnalité que le mode [**Disposition** pour la création de pages](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
@@ -530,7 +533,7 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 
 >[!NOTE]
 >
->Le contenu initial est destiné à préparer les composants et la mise en page, point de départ de la création du contenu. Il n’est pas destiné à constituer un contenu réel laissé tel quel. Pour cette raison, le contenu initial ne peut pas être traduit.
+>Le contenu initial est destiné à préparer les composants et la mise en page, point de départ de la création du contenu. Il n’est pas destiné à constituer un contenu réel laissé tel quel. De ce fait, le contenu initial ne peut pas être traduit.
 >
 >Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 

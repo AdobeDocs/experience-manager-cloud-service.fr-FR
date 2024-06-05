@@ -2,10 +2,13 @@
 title: Rechercher
 description: Trouvez votre contenu plus rapidement grâce à une recherche complète
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +25,7 @@ La recherche est disponible dans la barre d’outils supérieure :
 Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
 * Rechercher un mot-clé, un chemin ou une balise
-* Filtrez selon des critères spécifiques à une ressource, tels que les dates de modification, l’état de la page, la taille du fichier, etc.
+* filtrer selon des critères spécifiques aux ressources, tels que dates de modification, statut de la page, taille du fichier, etc. ;
 * Définir et utiliser une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus
 
 >[!NOTE]
@@ -44,7 +47,7 @@ Pour rechercher et filtrer vos ressources :
 1. Si nécessaire, vous pouvez supprimer le filtre d’emplacement (sélectionnez **X** sur le filtre que vous souhaitez supprimer) pour effectuer une recherche dans toutes les consoles/tous les types de ressources.
 1. Les résultats s’affichent, regroupés selon la console et le type de ressource associé.
 
-   Vous pouvez sélectionner une ressource spécifique (pour effectuer d’autres actions) ou effectuer une analyse en sélectionnant le type de ressource requis ; par exemple : **Afficher tous les sites**:
+   Vous pouvez sélectionner une ressource spécifique (pour appliquer d’autres actions) ou accéder à d’autres actions en sélectionnant le type de ressource concerné, par exemple **Afficher tous les sites** :
 
    ![Résultats de la recherche](/help/sites-cloud/authoring/assets/search-results.png)
 

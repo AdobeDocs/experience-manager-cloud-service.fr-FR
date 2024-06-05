@@ -2,10 +2,12 @@
 title: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 57%
+source-wordcount: '1011'
+ht-degree: 58%
 
 ---
 
@@ -30,7 +32,7 @@ La version suivante (2021.9.0) date du 6 octobre 2021.
 
 Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adobe.com/v/336277) pour un résumé des fonctionnalités ajoutées.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
@@ -62,7 +64,7 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 * Le service de conversion automatique des formulaires peut [convertir des formulaires PDF en italien et en portugais](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=fr#language-specific-meta-model) dans les formulaires adaptatifs.
 
-* **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
+* **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
 * **Connecteur Microsoft® Azure Data Store**: vous pouvez désormais [Connectez le modèle de données de formulaire à un stockage Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft® Azure Storage as a BLOB.
 
@@ -78,7 +80,7 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 ### Nouveautés {#what-is-new-cif}
 
-* Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience utilisateur, une efficacité accrue et une meilleure prise en charge d’un catalogue de produits complexe
+* Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience client, une efficacité améliorée et une meilleure prise en charge du catalogue de produits complexe
 
   ![Nouveau sélecteur de catégorie](/help/assets/CIF/category-picker.png)
 

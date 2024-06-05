@@ -2,10 +2,13 @@
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -38,7 +41,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
    ![Création d’un projet](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Définissez la variable **Titre** et **Description** et ajoutez une **Miniature** image si nécessaire. Vous pouvez également ajouter ou supprimer des utilisateurs et utilisatrices et le groupe auquel ils appartiennent. En outre, cliquez sur **Avancé** pour ajouter un nom utilisé dans l’URL.
+1. Définissez le **titre** et la **description**, puis ajoutez une **miniature** s’il y a lieu. Vous pouvez également ajouter ou supprimer des utilisateurs et utilisatrices et le groupe auquel ils appartiennent. En outre, cliquez sur **Avancé** pour ajouter un nom utilisé dans l’URL.
 
    ![Ajout des détails du projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

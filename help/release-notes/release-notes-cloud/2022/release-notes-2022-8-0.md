@@ -1,15 +1,17 @@
 ---
-title: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 55%
+source-wordcount: '604'
+ht-degree: 62%
 
 ---
 
-# Notes de mise à jour de la version 2022.8.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2022.8.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.8.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -23,16 +25,16 @@ La section suivante décrit les notes de mise à jour des fonctionnalités de la
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2022.8.0) est le 1er septembre 2022.
+La date de publication de la version actuelle (2022.8.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 1 septembre 2022.
 La prochaine version (2022.10.0) est prévue pour le 10 novembre 2022.
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo Aperçu de la version d’août 2022 pour un résumé des fonctionnalités ajoutées dans la version 2022.8.0 :
+Consultez la vidéo Aperçu de la version de janvier 2022 pour un résumé des fonctionnalités ajoutées dans la version 2022.8.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
@@ -49,7 +51,7 @@ Regardez la vidéo Aperçu de la version d’août 2022 pour un résumé des fon
 
 ![Langues de fragments de contenu](/help/release-notes/assets/cfconsole-languages.png)
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#features-assets}
 

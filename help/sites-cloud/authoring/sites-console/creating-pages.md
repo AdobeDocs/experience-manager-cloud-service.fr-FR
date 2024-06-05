@@ -1,15 +1,18 @@
 ---
-title: Création de pages
+title: Créer des pages
 description: Découvrez comment créer des pages pour votre site web à l’aide de la console Sites.
-source-git-commit: 0ba8faaa14d09d09fce5846bfff77287bfbd94c7
+exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 28%
+ht-degree: 36%
 
 ---
 
-
-# Création de pages {#creating-pages}
+# Créer des pages {#creating-pages}
 
 Découvrez comment créer des pages pour votre site web à l’aide du **Sites** console.
 
@@ -56,14 +59,14 @@ Si vous rencontrez des problèmes, contactez votre administrateur système.
    * **Nom** :
 
       * Il est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
-      * Si vous fournissez une page **Nom** lors de la création d’une page, AEM [valide le nom en fonction des conventions ;](/help/implementing/developing/introduction/naming-conventions.md) imposé par AEM et JCR.
+      * Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
       * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche pour indiquer les caractères à supprimer/remplacer.
 
    >[!TIP]
    >
    >Voir [Conventions de dénomination de page](#page-naming-conventions).
 
-   Les informations minimales requises pour créer une page sont les suivantes : **Titre**.
+   Le **Titre** est l’une des informations minimales requises pour créer une page.
 
    ![Affichage du titre de la page](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 

@@ -1,15 +1,17 @@
 ---
-title: Interdire la sérialisation des ResourceResolvers via l’exportateur de modèle Sling
-description: Interdire la sérialisation des ResourceResolvers via l’exportateur de modèle Sling
-source-git-commit: 4543a4646719f8433df7589b21344433c43ab432
+title: Interdire la sérialisation des ResourceResolvers via l’exporteur de modèle Sling
+description: Interdire la sérialisation des ResourceResolvers via l’exporteur de modèle Sling
+exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# Interdire la sérialisation des ResourceResolvers via l’exportateur de modèle Sling {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
+# Interdire la sérialisation des ResourceResolvers via l’exporteur de modèle Sling {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
 La fonction d’exportateur de modèle Sling permet de sérialiser des objets de modèles Sling au format JSON. Cette fonctionnalité est largement utilisée car elle permet à SPA (applications d’une seule page) d’accéder facilement aux données d’AEM. Du côté de l’implémentation, la bibliothèque Jacson Databind est utilisée pour sérialiser ces objets.
 
@@ -50,6 +52,3 @@ Adobe demande à tous ses clients de vérifier leurs journaux d’application et
 Dans la plupart des cas, les changements requis sont simples : `ResourceResolver` Les objets ne sont pas du tout requis dans la sortie JSON, car les informations qu’ils contiennent ne sont normalement pas requises par les applications frontend. Cela signifie que, dans la plupart des cas, il devrait suffire d’exclure la variable `ResourceResolver` n’est pas considéré par Jackson (voir [rules](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
 
 Si un modèle Sling est affecté par ce problème mais n’a pas été modifié, la désactivation explicite de la sérialisation de la `ResourceResolver` (tel qu’il est exécuté par Adobe comme deuxième étape) applique une modification à la sortie JSON.
-
-
-

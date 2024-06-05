@@ -2,10 +2,13 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +30,13 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment utili
    * Références du contenu
    * Références de ressources/médias
    * Références à un fragment
-   * Références improvisées dans un bloc de texte
+   * Références ad hoc depuis un bloc de texte
 
 ## Que sont les références {#what-are-references}
 
 Les références sont simplement un mécanisme de connexion de vos ressources, qu’il s’agisse d’autres contenus, ressources (comme dans les images) ou autres fragments. Bien que très similaires, il existe des différences.
 
-Certaines références comportent des types de données dédiés (par exemple, Références de contenu et Références de fragment), tandis que d’autres sont simplement ajoutées comme référence dans un bloc de texte (références de ressources et références improvisées).
+Certaines références comportent des types de données dédiés (par exemple, Références de contenu et Références de fragment), tandis que d’autres sont simplement ajoutées comme référence dans un bloc de texte (références de ressources et références ad hoc).
 
 ![Fragments de contenu – Références](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -43,7 +46,7 @@ Leur nom est clair : les références de contenu vous permettent de faire réf�
 
 ## Références de ressources/médias {#assets-media-references}
 
-Les ressources (images ou médias, par exemple) peuvent être référencées dans un bloc de texte à l’aide de l’option **Insérer une ressource**. Un navigateur s’ouvre alors pour vous permettre de sélectionner la ressource.
+Les ressources (images ou médias, par exemple) peuvent être référencées dans un bloc de texte à l’aide de l’option **Insérer une ressource**. Un navigateur s’ouvre, vous permettant de sélectionner la ressource.
 
 ![Fragments de contenu – Insérer une ressource](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +61,7 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble assez simple, mais une entreprise a à la fois un PDG et des employés....Et chaque élément d’entre eux est défini en tant que personne.
+Cela semble évident, mais une entreprise compte à la fois un ou une PDG et des employées et employés…Et chaque élément d’entre eux est défini en tant que personne.
 
 Et une personne peut recevoir une distinction (ou peut-être deux).
 
@@ -79,7 +82,7 @@ En tant qu’auteur ou autrice, vous n’êtes pas responsable de la définition
 
 ### Création de fragments imbriqués {#author-nested-fragment}
 
-La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus probablement) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet de naviguer et de sélectionner le fragment dont vous avez besoin.
+La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus couramment) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet d’accéder au fragment dont vous avez besoin et de le sélectionner.
 
 ![Fragments de contenu – Références](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -92,11 +95,11 @@ La définition du modèle de fragment de contenu contrôle :
 
 En utilisant la variable **Arborescence de la structure** de l’éditeur de fragment de contenu, vous pouvez parcourir les fragments référencés par votre fragment, puis parcourir toutes les références qu’ils peuvent contenir. La sélection d’une référence ouvre ce fragment en vue de le modifier.
 
-![Arborescence de la structure du fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
+![Arborescence de la structure du fragment de contenu.](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## Références ad hoc {#adhoc-references}
 
-Les références improvisées peuvent être ajoutées sous la forme d’un lien simple dans un bloc de texte :
+Les références ad hoc peuvent être ajoutées sous la forme d’un simple lien dans un bloc de texte :
 
 ![Fragments de contenu – Références ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

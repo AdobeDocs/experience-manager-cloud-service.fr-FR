@@ -2,8 +2,10 @@
 title: Notes de mise à jour de la version 2023.4.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.4.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
 
@@ -46,7 +48,7 @@ Consultez la vidéo Aperçu de la version d’avril 2023 pour obtenir un résum�
 * Les images peuvent désormais être optimisées dynamiquement pour une diffusion web dans des scénarios découplés via GraphQL d’AEM. Les [variables de requête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=fr#query-variables) peuvent être définies dans les requêtes GraphQL pour permettre aux applications clientes découplées de demander à AEM des images optimisées en conséquence.
 * Les balises sur les [variations de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=fr) peuvent désormais être générées au format JSON à l’aide de l’API de diffusion de contenu GraphQL d’AEM.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 

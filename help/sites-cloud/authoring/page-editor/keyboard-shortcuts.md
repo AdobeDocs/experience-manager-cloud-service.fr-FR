@@ -2,10 +2,13 @@
 title: Raccourcis clavier pour la modification de pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 84%
+ht-degree: 93%
 
 ---
 
@@ -35,7 +38,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clav
 
 >[!NOTE]
 >
->Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
+>Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur ou l’utilisatrice doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
 
 Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs et utilisatrices de bureau lorsqu’ils interagissent dans les [consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md), et certains spécifiquement dans la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 

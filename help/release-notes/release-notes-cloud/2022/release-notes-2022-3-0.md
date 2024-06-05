@@ -2,14 +2,16 @@
 title: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 84%
 
 ---
 
-# Notes de mise à jour de la version 2022.3.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2022.3.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.3.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -36,7 +38,7 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 
 * Les types de données de modèle de contenu peuvent désormais être définis comme traduisibles à l’aide d’une simple case à cocher dans l’éditeur de modèles de contenu. En outre, les règles et configurations de traduction AEM sont automatiquement mises à jour.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
@@ -60,7 +62,7 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 
 ### Nouveautés de [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]** : les [API de génération de documents](/help/forms/aem-forms-cloud-service-communications.md) permettent de combiner, de réorganiser et de valider des documents PDF. Le service permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+* **[!DNL Communications - Document Generation APIs]** : les [API de génération de documents](/help/forms/aem-forms-cloud-service-communications.md) permettent de combiner, de réorganiser et de valider des documents PDF. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
    * Assemblage de documents PDF
    * Désassemblage de documents PDF

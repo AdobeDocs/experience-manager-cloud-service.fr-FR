@@ -1,16 +1,19 @@
 ---
-title: Organisation des pages
+title: Organiser des pages
 description: Découvrez comment organiser votre site web avec AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 67%
+ht-degree: 73%
 
 ---
 
 
-# Organisation des pages {#creating-and-organizing-pages}
+# Organiser des pages {#creating-and-organizing-pages}
 
 Découvrez comment organiser votre site web avec AEM. Une fois que vous avez compris comment organiser vos pages, vous pouvez [créer des pages ;](/help/sites-cloud/authoring/sites-console/creating-pages.md) et [gérer les pages de sortie.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 
@@ -52,7 +55,7 @@ Cette structure peut être visualisée à partir du [**Sites** console,](/help/s
 
 ## Conventions de dénomination des pages {#page-naming-conventions}
 
-Lors de la création d’une page, il existe deux champs clés :
+Lors de la création d’une page, il y a deux champs clés :
 
 * **[Titre](#title)** :
    * Il s’affiche pour l’utilisateur dans la console et dans la partie supérieure du contenu de la page lors de la modification.
@@ -74,7 +77,7 @@ Le **Titre** et le **Nom** de la page peuvent être créés séparément, mais i
 >
 >N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique à garder les noms de pages courts.
 
-Lors de la création d’une page AEM [valide le nom de la page en fonction des conventions ;](/help/implementing/developing/introduction/naming-conventions.md) imposé par AEM et le JCR.
+Lors de la création d’une page, AEM [valide le nom de la page selon les conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
 
 Les caractères minimum autorisés sont :
 
@@ -103,7 +106,7 @@ Un champ **Titre** contenant des caractères non valides sera accepté, mais les
 
 ### Nom {#name}
 
-Lorsque vous fournissez une page **Nom** lors de la création d’une page, AEM [valide le nom en fonction des conventions ;](/help/implementing/developing/introduction/naming-conventions.md) imposé par AEM et JCR. Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance avec un message d’explication.
+Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR. Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance avec un message d’explication.
 
 ![Exemple de saisie d’un nom de page non valide](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 

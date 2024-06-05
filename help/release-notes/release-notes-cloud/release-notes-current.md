@@ -3,7 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
+feature: Release Information
+role: Admin
+source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
 workflow-type: tm+mt
 source-wordcount: '1865'
 ht-degree: 24%
@@ -116,7 +118,7 @@ AEM Forms a amélioré ses fonctionnalités de sécurité en ajoutant la prise e
 
 En proposant plusieurs options CAPTCHA, AEM Forms vous permet de sélectionner la solution qui correspond le mieux à vos besoins.
 
-Prêt à intégrer l’une de ces solutions CAPTCHA à votre Forms adaptatif ? Notre documentation fournit des instructions détaillées pour chaque : [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), et [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Prêt à intégrer l’une de ces solutions CAPTCHA à votre Forms adaptatif ? Notre documentation fournit des instructions détaillées pour chaque : [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), et [Google reCAPTCHA](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Service Forms

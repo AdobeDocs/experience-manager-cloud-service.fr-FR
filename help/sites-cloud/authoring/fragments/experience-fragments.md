@@ -2,10 +2,13 @@
 title: Fragments d’expérience
 description: Utilisez les fragments d’expérience dans Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 2fff51075dd1cd2c7e93f61c02615075ae0ffac2
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2099'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -38,7 +41,7 @@ Sans les fragments d’expérience, il doit copier et coller ce fragment. La cr�
 Les fragments d’expérience rendent inutiles les opérations de copier/coller.
 * Pour gérer le scénario d’utilisation CMS sans interface.
 Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système ou un point de contact tiers utiliserait cette expérience, puis la diffuserait à l’utilisateur.
-* Avec [Gestion multisite (MSM)](/help/sites-cloud/administering/msm/overview.md); en tant que fragment d’expérience faisant partie d’une page. Cela s’applique à la fois aux fragments individuels et aux dossiers dans lesquels ils résident.
+* Avec la [gestion multisite (MSM, Multi-Site Management)](/help/sites-cloud/administering/msm/overview.md) en tant que fragment d’expérience faisant partie d’une page. Cela s’applique à la fois aux fragments individuels et aux dossiers dans lesquels ils résident.
 
 >[!NOTE]
 >
@@ -240,7 +243,7 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 
      >[!NOTE]
      >
-     >La création d’une variation initiale en tant que Live Copy héritera du titre en utilisant la source de Live Copy comme variation de Principal.
+     >La création d’une variation en tant que Live Copy initiale héritera du titre en utilisant la source de Live Copy comme variation principale.
 
 1. Définissez les propriétés requises :
 

@@ -2,7 +2,9 @@
 title: Phase dʼimplémentation
 description: Assurez-vous que votre code et contenu sont prêts pour la migration vers le cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 96%
@@ -72,7 +74,7 @@ Tout d’abord, consultez la documentation détaillant les outils de base et com
 
 * Lors de la planification, il est utile de disposer dʼune liste des éléments qui doivent être refactorisés afin d’être compatibles avec AEM as a Cloud Service. Vous pouvez consulter les [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) pour en savoir plus sur la refactorisation et l’optimisation du code pour Cloud Service.
 * Découvrez comment effectuer la [Gestion des configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) dans AEM as a Cloud Service.
-* Découvrez comment configurer un environnement de développement local en téléchargeant le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+* Découvrez comment configurer un environnement de développement local en téléchargeant le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr).
 * Pour terminer, familiarisez-vous avec lʼ[API Java AEM as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Vous pouvez également :

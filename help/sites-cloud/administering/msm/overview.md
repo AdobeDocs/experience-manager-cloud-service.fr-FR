@@ -4,7 +4,8 @@ description: Découvrez comment réutiliser du contenu avec les puissantes fonct
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 92%
@@ -144,7 +145,7 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 >[!NOTE]
 >
->MSM peut être utilisé avec les deux pages et [Fragments d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) car ces fragments font partie d’une expérience (page).
+>MSM peut être utilisé avec les deux pages et les [fragments d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md), car ces fragments font partie d’une expérience (page).
 
 >[!NOTE]
 >

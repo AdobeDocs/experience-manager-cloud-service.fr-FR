@@ -2,10 +2,12 @@
 title: Création d’un balisage dans des applications AEM
 description: Utiliser des balises ou étendre des balises par programmation dans une application AEM personnalisée
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '717'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +53,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Récupération d’un objet Tag {#retrieving-a-tag-object}
 
-A `Tag` peut être récupéré via le `TagManager`, en résolvant une balise existante ou en en créant une :
+Une `Tag` peut être récupérée à l’aide du `TagManager`, en résolvant une balise existante ou en en créant une nouvelle :
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -168,4 +170,4 @@ Le finnois est désormais disponible dans la boîte de dialogue des propriétés
 
 >[!NOTE]
 >
->La nouvelle langue doit être l&#39;une des langues AEM reconnues. En d’autres termes, il doit être disponible sous forme de noeud sous `/libs/wcm/core/resources/languages`.
+>La nouvelle langue doit être une des langues reconnues par AEM. En d’autres termes, elle doit être disponible sous forme de nœud sous `/libs/wcm/core/resources/languages`.

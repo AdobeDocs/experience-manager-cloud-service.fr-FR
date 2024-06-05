@@ -4,10 +4,11 @@ description: Découvrez les puissantes options de synchronisation des Live Copie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -20,9 +21,9 @@ Adobe Experience Manager fournit plusieurs configurations de synchronisation pr�
 1. Si les configurations de déploiement existantes ne répondent pas à vos besoins, décidez si vous devez créer les vôtres.
 1. Spécifiez les configurations de déploiement à utiliser avec les Live Copies.
 
-## Configurations du déploiement installées et personnalisées {#installed-and-custom-rollout-configurations}
+## Configurations de déploiement installées et personnalisées {#installed-and-custom-rollout-configurations}
 
-Cette section fournit des informations sur les configurations de déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la manière de créer des configurations personnalisées si nécessaire.
+Cette section contient des informations sur les configurations de déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la création de configurations personnalisées, si nécessaire.
 
 >[!CAUTION]
 >
@@ -82,7 +83,7 @@ Si les actions installées ne répondent pas à vos besoins, vous pouvez [Créez
 | `PageMoveAction` | L’action `PageMoveAction` s’applique lorsqu’une page a été déplacée dans le plan directeur.<br>L’action copie, plutôt que de la déplacer, la page Live Copy (associée) de l’emplacement précédant le déplacement vers l’emplacement qui le suit.<br>L’action `PageMoveAction` ne modifie pas la page Live Copy à l’emplacement précédant le déplacement. Par conséquent, pour les configurations de déploiement consécutives, elle a le statut d’une relation active sans plan directeur.<br>[Configurez le service **CQ MSM Page Move Action**](#excluding-properties-and-node-types-from-synchronization) pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure.<br>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement. | Définissez `prop_referenceUpdate: (Boolean)` sur true (par défaut) pour mettre à jour les références. |
 | `markLiveRelationship` | Cette action indique qu’il existe une relation en direct pour le contenu créé au lancement. |  |
 
-### Création d’une configuration de déploiement {#creating-a-rollout-configuration}
+### Créer une configuration de déploiement {#creating-a-rollout-configuration}
 
 Vous pouvez [créer une configuration de déploiement ;](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) lorsque les configurations de déploiement installées ne répondent pas aux exigences de votre application en procédant comme suit.
 
@@ -95,7 +96,7 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 
 Vous pouvez configurer différents services OSGi qui prennent en charge les actions de synchronisation correspondantes afin qu’ils n’affectent pas des types de nœuds et des propriétés spécifiques. Par exemple, nombre de propriétés et de sous-nœuds associés au fonctionnement interne d’AEM ne doivent pas être inclus dans une Live Copy. Seul le contenu pertinent pour l’utilisateur de la page doit être copié.
 
-Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. Voir [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour plus d’informations et les pratiques recommandées.
+Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Consultez [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour plus d’informations et pour connaître les pratiques recommandées.
 
 Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier les nœuds à exclure. Le tableau fournit les noms des services à configurer à l’aide de la console web et le PID pour la configuration à l’aide d’un nœud de référentiel.
 
@@ -134,7 +135,7 @@ Par exemple, si vous souhaitez que le **titre** de la page soit inclus dans les 
 
 Vous pouvez configurer différents services OSGi qui prennent en charge les actions de synchronisation correspondantes associées à la mise à jour des références.
 
-Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. Voir [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour plus d’informations et les pratiques recommandées.
+Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Consultez [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour plus d’informations et pour connaître les pratiques recommandées.
 
 Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier la mise à jour des références. Le tableau fournit les noms des services à configurer à l’aide de la console web et le PID pour la configuration à l’aide d’un nœud de référentiel.
 
@@ -174,7 +175,7 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
    ![Héritage de Live Copy à partir de la page parente](../assets/live-copy-inherit.png)
 
-1. Si nécessaire, ajustez la variable **Héritage de Live Copy** Indicateur. Si cette option est activée, la configuration de Live Copy est effective sur tous les enfants.
+1. Si nécessaire, ajustez l’indicateur **Héritage de Live Copy**. Si cette option est activée, la configuration de Live Copy est effective sur tous les enfants.
 
 1. Effacez la variable **Hériter de la configuration de déploiement du parent**, puis sélectionnez une ou plusieurs configurations de déploiement dans la liste.
 

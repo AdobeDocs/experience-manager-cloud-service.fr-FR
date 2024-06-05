@@ -2,7 +2,10 @@
 title: Compréhension des requêtes de contenu Cloud Service
 description: Si vous avez acheté des licences de demande de contenu à Adobe, découvrez les types de demandes de contenu que Adobe Experience Cloud as a Service mesure et les écarts avec les outils de création de rapports d’analyse d’une entreprise.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%
@@ -163,7 +166,7 @@ Lorsque vous analyserez ces données, il se peut qu’il y ait ou non des écart
 
    * Le service de données RUM se concentre sur l’expérience côté client et ne capture pas actuellement l’API principal ou les appels JSON. L’exclusion de ces appels des données du service de surveillance des utilisateurs réel créera des écarts par rapport aux demandes de contenu mesurées par CDN Analytics.
 
-### FAQ {#faq}
+### Questions fréquentes {#faq}
 
 1. **Comment configurer les chemins à inclure ou à exclure dans la surveillance ?**
 

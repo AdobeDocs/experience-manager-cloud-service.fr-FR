@@ -2,7 +2,9 @@
 title: Référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 98%
@@ -242,7 +244,7 @@ Récupère l’arbre de données du magasin. Vous pouvez éventuellement inclure
 
 ##### Paramètres {#parameters-gettree}
 
-* `includeInternals:` Une valeur de `true` inclut les paires clé/valeur utilisées en interne dans les résultats. Les clés de ces données commencent par le caractère de soulignement (`_`). La valeur par défaut est `false`.
+* `includeInternals:` Une valeur `true` inclut les paires clé/valeur utilisées en interne dans les résultats. Les clés de ces données commencent par le caractère de soulignement (`_`). La valeur par défaut est `false`.
 
 ##### Renvoie {#returns-gettree}
 

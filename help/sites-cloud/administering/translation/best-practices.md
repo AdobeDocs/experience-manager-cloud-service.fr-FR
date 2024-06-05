@@ -4,7 +4,8 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 100%
@@ -31,7 +32,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 ## Structure du site {#site-structure}
 
 * Lors de la conception de la structure de votre site, commencez par examiner votre contenu et déterminer où et dans quelle langue il est rédigé. Cet emplacement doit correspondre au niveau supérieur de votre site.
-* Il est recommandé d’adopter une **structure basée sur les langues** ne comportant pas de plus de 3 niveaux entre le niveau supérieur auteur et les sites des pays.
+* Il est recommandé d’adopter une **structure basée sur les langues** ne comportant pas de plus de 3 niveaux entre le niveau supérieur de création et les sites des pays.
 * Utilisez une convention de dénomination des langues/sites des pays qui suit les **[normes W3C](/help/sites-cloud/authoring/page-editor/accessible-content.md)**.
 * Déterminez la manière dont le contenu est distribué par les pays et les régions. Pensez aux pays qui partagent des langues. Il est recommandé de créer des gabarits de langue, un calque de pages non activées, où le contenu traduit peut être révisé et modifié, puis envoyé ou extrait vers un site de pays partageant cette langue.
 * Il existe deux méthodes pour créer des gabarits de langue : à l’aide de copies de langue et à l’aide de MSM/Live Copies.

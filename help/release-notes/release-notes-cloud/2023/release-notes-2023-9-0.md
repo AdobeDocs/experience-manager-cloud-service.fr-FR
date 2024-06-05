@@ -2,10 +2,12 @@
 title: Notes de mise à jour de la version 2023.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 77%
+ht-degree: 82%
 
 ---
 
@@ -64,9 +66,9 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 ### Fonctionnalités de pré-version disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [Prise en charge du suivi multilégende et audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): vous pouvez désormais ajouter facilement plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
+* **Dynamic Media** : [prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface d’utilisation.
 
-  ![Onglet Sous-titres et suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et suivi audio de la page Propriétés d’une ressource vidéo sélectionnée.*
+  ![Onglet Sous-titres et pistes audio de la page Propriétés d’un contenu vidéo sélectionné.](/help/release-notes/assets/msma-aem-cs.png)*Onglet Sous-titres et pistes audio de la page Propriétés d’un contenu vidéo sélectionné.*
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

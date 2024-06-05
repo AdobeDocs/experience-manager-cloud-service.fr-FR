@@ -2,16 +2,18 @@
 title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2045'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
 # Introduction et présentation des applications monopage (SPA) {#spa-introduction}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
+Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 
@@ -38,11 +40,11 @@ La présentation repose sur les fonctionnalités AEM standard et l’exemple d�
 
 >[!CAUTION]
 >
->Ce document n’utilise l’[exemple d’application de projet SPA WKND](https://github.com/adobe/aem-guides-wknd-spa) qu’à des fins de démonstration. Ne l’utilisez pas pour un travail de projet.
+>Ce document n’utilise l’[exemple d’application de projet SPA WKND](https://github.com/adobe/aem-guides-wknd-spa) qu’à des fins de démonstration. Ne l’utilisez pas dans le cadre d’un projet.
 
 >[!TIP]
 >
->Tout projet AEM doit utiliser l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK de SPA.
+>Tout projet AEM doit utiliser l’[archetype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK de SPA.
 
 ### Qu’est-ce qu’une SPA ? {#what-is-a-spa}
 
@@ -207,7 +209,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 ### Interaction avec l’éditeur de SPA {#interaction-with-the-spa-editor}
 
-À l’aide de l’exemple d’application de projet WKND SPA, il est clair comment l’application se comporte et est chargée lorsqu’elle est publiée, à l’aide des services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
+L’exemple d’application de projet SPA WKND montre clairement comment l’application se comporte et est chargée lorsqu’elle est publiée, en exploitant les services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
 
 En outre, pour l’auteur de contenu, la création de contenu à l’aide d’un éditeur de SPA est transparente dans AEM.
 
@@ -219,7 +221,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
 1. À l’aide des outils de développement intégrés de votre navigateur, inspectez le contenu de la page. À l’aide de l’outil de sélection, sélectionnez un composant modifiable sur la page et affichez le détail de l’élément.
 
-   Le composant comporte un nouvel attribut de données `data-cq-data-path`.
+   Le composant possède un nouvel attribut de données `data-cq-data-path`.
 
    ![Inspection des éléments du projet SPA WKND](assets/wknd-inspector.png)
 

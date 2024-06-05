@@ -5,10 +5,13 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +37,7 @@ Ce document vous aide à comprendre comment utiliser les règles de traduction d
 
 ## Règles de traduction {#translation-rules}
 
-Les pages AEM Sites peuvent contenir de nombreuses informations. Selon les besoins de votre projet, il est probable que toutes les informations d’une page ne doivent pas être traduites.
+Les pages AEM Sites peuvent contenir de nombreuses informations. Selon les besoins de votre projet, il est probable que toutes les informations d’une page n’aient pas besoin d’être traduits.
 
 Les règles de traduction identifient le contenu à inclure dans les projets de traduction ou à exclure. Lorsque le contenu est traduit, AEM extrait ou récupère le contenu en fonction de ces règles. Ainsi, seul le contenu à traduire est envoyé au service de traduction.
 
@@ -57,13 +60,13 @@ Il existe une console **Configuration de traduction** disponible pour la configu
 
 Pour y accéder :
 
-1. Accédez à **Outils** > **Général**.
+1. Accédez à **Outils** -> **Général**.
 1. Sélectionnez **Configuration de traduction**.
 
 AEM crée automatiquement des règles de traduction pour tout le contenu. Pour afficher ces règles :
 
 1. Sélectionnez la variable `/content` contexte.
-1. Dans la barre d’outils, sélectionnez la **Modifier**.
+1. Dans la barre d’outils, sélectionnez **Modifier**.
 1. L’éditeur de règles de traduction s’ouvre avec les règles créées automatiquement par AEM pour le chemin d’accès `/content`.
 
    ![Éditeur de règles de traduction](assets/translation-rules-editor.png)
@@ -97,7 +100,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * comprendre ce que font les règles de traduction ;
 * être capable de définir vos propres règles de traduction.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de traduction AEM Sites en consultant le document. [Traduire le contenu](translate-content.md) où vous découvrez comment votre connecteur et vos règles fonctionnent ensemble pour traduire le contenu.
+Tirez parti de ces connaissances et continuez à progresser sur votre parcours de traduction AEM Sites en consultant le document [Traduire le contenu](translate-content.md), dans lequel vous découvrirez comment votre connecteur et vos règles s’associent pour traduire du contenu.
 
 ## Ressources supplémentaires {#additional-resources}
 

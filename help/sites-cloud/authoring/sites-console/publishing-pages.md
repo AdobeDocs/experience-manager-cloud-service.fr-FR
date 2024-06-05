@@ -1,11 +1,14 @@
 ---
-title: Publication de pages
+title: Publier des pages
 description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1936'
-ht-degree: 82%
+ht-degree: 85%
 
 ---
 
@@ -94,7 +97,7 @@ Si vous modifiez une page dans la variable [éditeur de page,](/help/sites-cloud
 
 >[!NOTE]
 >
->Pages accessibles par [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) dans l’éditeur ne peut pas être publié. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
+>Les pages accessibles par [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
 ### Publication à partir de la console Site {#publishing-from-the-sites-console}
 
@@ -109,7 +112,7 @@ L’option **Publication rapide** concerne les cas simples. Elle publie immédia
 
 Pour publier une page avec publication rapide :
 
-1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Publication rapide** bouton .
+1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Publication rapide**.
 
    ![Sélection de pages en vue de la publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -137,7 +140,7 @@ La méthode **Gérer la publication** propose plus d’options que **Publication
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
-1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication** bouton .
+1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication**.
 
    ![Sélection de pages en vue de la publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -245,13 +248,13 @@ Lorsque vous modifiez une page, si vous souhaitez en annuler la publication, sé
 
 >[!NOTE]
 >
->Pages accessibles par [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) dans l’éditeur ne peut pas être dépublié. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
+>Les pages accessibles par [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
 ### Dépublication à partir de la console {#unpublishing-from-the-console}
 
 De la même façon que vous [utilisez l’option Gérer la publication pour publier une page](#manage-publication), vous pouvez l’utiliser pour la dépublication.
 
-1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication** bouton .
+1. Sélectionnez la ou les pages dans la console des sites et cliquez sur le bouton **Gérer la publication**.
 1. L’assistant **Gérer la publication** démarre. Dans la première étape, **Options**, sélectionnez **Dépublier** au lieu de l’option par défaut, à savoir **Publier**.
 
    ![Dépublication - Options](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

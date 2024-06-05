@@ -2,7 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 62%
@@ -93,7 +96,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   ![Navigation globale](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* Feedback
+* Commentaires
 
   ![Bouton Commentaires](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
 

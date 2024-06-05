@@ -2,7 +2,9 @@
 title: Personnalisation et extension de l’éditeur universel
 description: Découvrez les différents points d’extension et autres fonctionnalités qui vous permettent de personnaliser l’interface utilisateur d’Universal Editor afin de prendre en charge les besoins de vos auteurs de contenu.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: bdd67fb383bf20399eacaf9b9c086ea8468ea742
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 1%

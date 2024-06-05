@@ -1,13 +1,16 @@
 ---
 title: Panneau latéral Éditeur de page
 description: Découvrez comment utiliser le panneau latéral dans l’éditeur de sites d’AEM pour ajouter des composants et des ressources à votre page.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1122'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
-
 
 # Panneau latéral Éditeur de page {#side-panel}
 
@@ -123,7 +126,7 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
 >[!NOTE]
 >
->Le glissement et le dépôt de ressources sont disponibles pour des ressources et des types de composants spécifiques. Voir [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-cloud/authoring/page-editor/edit-content.md#adding-a-component-from) pour plus d’informations.
+>Le glissement et le dépôt de ressources sont disponibles pour des ressources et des types de composants spécifiques. Reportez-vous à [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-cloud/authoring/page-editor/edit-content.md#adding-a-component-from) pour plus d’informations.
 
 Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouvez filtrer les ressources en procédant comme suit :
 

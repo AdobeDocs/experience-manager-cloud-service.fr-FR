@@ -2,10 +2,13 @@
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 87%
+source-wordcount: '1653'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +33,7 @@ Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navig
 ## Éditeur de segment {#segment-editor}
 
 <!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-La variable **Éditeur de segment** permet de modifier facilement un segment. Pour modifier un segment, sélectionnez un segment dans la liste de segments et cliquez sur le bouton **Modifier**.
+L&#39;**Éditeur de segment** vous permet de modifier facilement un segment : Pour modifier un segment, sélectionnez un segment dans la liste de segments et cliquez sur le bouton **Modifier**.
 
 ![Éditeur de segment](../assets/contexthub-segment-editor.png)
 
@@ -102,7 +105,7 @@ Pour définir votre nouveau segment, procédez comme suit :
    * Valeur maximale : `1000000`
 
 1. Dans la console des segments, modifiez le segment créé pour l’ouvrir dans l’éditeur de segments.
-1. Faites glisser une comparaison ou une référence vers l’éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
+1. Faites glisser une comparaison ou une référence vers l’Éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
 1. Double-sélectionnez l’option de configuration de la nouvelle référence ou du nouveau segment pour éditer les paramètres spécifiques. Dans cet exemple, des personnes situées à Bâle font l’objet d’un test.
 
    ![Test de personnes à Bâle](../assets/contexthub-comparing-property-value.png)
@@ -110,11 +113,11 @@ Pour définir votre nouveau segment, procédez comme suit :
    Si possible, veillez à toujours définir un **type de données** pour vous assurer que vos comparaisons sont évaluées correctement. Voir [Comparaisons](#comparisons) pour plus d’informations.
 
 1. Cliquez sur **Terminé** pour enregistrer votre définition :
-1. Ajoutez d’autres composants, en fonction de vos besoins. Vous pouvez formuler des expressions booléennes à l’aide des composants de conteneur pour des comparaisons ET et OU (voir la rubrique [Utilisation des conteneurs ET et OU](#using-and-and-or-containers) ci-dessous). Avec l’éditeur de segment, vous pouvez supprimer les composants qui ne sont plus nécessaires ou les faire glisser vers de nouveaux emplacements dans l’instruction.
+1. Ajoutez d’autres composants, en fonction de vos besoins. Vous pouvez formuler des expressions booléennes à l’aide des composants de conteneur pour des comparaisons ET et OU (voir la rubrique [Utilisation des conteneurs ET et OU](#using-and-and-or-containers) ci-dessous). Avec l’Éditeur de segment, vous pouvez supprimer les composants qui ne sont plus nécessaires ou les faire glisser vers de nouveaux emplacements dans l’instruction.
 
 ### Utilisation des conteneurs ET et OU {#using-and-and-or-containers}
 
-Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points importants :
+Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points de base :
 
 * Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé ; cela ne peut pas être changé, mais n’a pas d’effet sur le reste de votre définition de segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme des crochets de votre expression booléenne.
@@ -183,8 +186,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 #### Référencement d’un script {#referencing-a-script}
 
-1. Créez un segment ContextHub.
-1. Ajoutez le composant **Référence de script** à l’emplacement souhaité du segment.
+1. Créer un segment ContextHub.
+1. Ajouter le composant **Référence de script** à l’emplacement souhaité du segment.
 1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. S’il est [correctement configuré](#defining-a-script-to-reference), le script doit être disponible dans le menu déroulant **Nom du script**.
 
 ## Organisation des segments {#organizing-segments}
@@ -262,7 +265,7 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 
 1. Affichez l’aperçu d’une page.
 1. Cliquez sur l’icône ContextHub pour afficher la barre d’outils ContextHub.
-1. Sélectionnez une personne qui correspond au segment que vous avez créé
+1. Sélectionnez une personne qui correspond au segment que vous avez créé.
 1. ContextHub résout les segments applicables pour la personne sélectionnée
 
 Par exemple, notre définition de segment simple identifiant les utilisateurs à Bâle repose sur l’emplacement de l’utilisateur. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :

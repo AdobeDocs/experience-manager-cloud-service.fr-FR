@@ -2,7 +2,10 @@
 title: Fragments de contenu
 description: Les fragments de contenu d’Adobe Experience Manager as a Cloud Service vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 94%
@@ -199,5 +202,5 @@ Les fragments doivent être publiés pour pouvoir être utilisés dans les pages
 
 Pour l’exportation vers Adobe Target, JSON peut être utilisé pour diffuser le fragment. Voir :
 
-* [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [Intégrer à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)

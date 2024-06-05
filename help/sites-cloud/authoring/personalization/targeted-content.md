@@ -2,10 +2,13 @@
 title: Création de contenu ciblé en mode Ciblage
 description: Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '5302'
-ht-degree: 87%
+source-wordcount: '5282'
+ht-degree: 89%
 
 ---
 
@@ -51,7 +54,7 @@ Les activités et les expériences qui s’affichent en mode Cible se répercute
 
 >[!NOTE]
 >
->Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, la propriété thirdPartyId n’est pas supprimée. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne ; les noms de campagne ne peuvent pas être réutilisés dans différents types de campagne.
+>Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, la propriété thirdPartyId n’est pas supprimée. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
 >
 >Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
 >
@@ -102,7 +105,7 @@ Pour ajouter une activité :
 
    >[!NOTE]
    >
-   >Lorsque vous créez une activité et qu’une configuration cloud Adobe Target est associée à la page ou à l’un de ses parents, AEM considère automatiquement Adobe Target comme le moteur.
+   >Lorsque vous créez une activité et qu’une configuration cloud Adobe Target est associée à la page ou à une page parente, AEM considère automatiquement Adobe Target comme le moteur.
 
 1. Dans le menu déroulant du moteur **Ciblage**, sélectionnez votre moteur de ciblage.
 
@@ -345,7 +348,7 @@ Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par d�
 
 1. Sélectionnez l’icône de dossier.
 
-   ![Icône Dossier.](../assets/targeted-folder-button.png)
+   ![Icône Dossier](../assets/targeted-folder-button.png)
 
 1. Sélectionnez l’offre dans la bibliothèque, puis cliquez sur l’icône en forme de coche.
 
@@ -438,8 +441,8 @@ Vous pouvez modifier les pourcentages, à condition que leur somme reste égale 
 ### Association d’audiences et de pourcentages de trafic avec un test A/B {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
 1. Sélectionnez la liste déroulante en regard de l’audience mappée à l’expérience.
-1. (Facultatif) Cliquez sur **Modifier**, puis saisissez un mot-clé pour chercher le segment souhaité.
-1. Sélectionnez **OK.**
+1. (Facultatif) Cliquez sur **Modifier**, puis saisissez un mot-clé pour rechercher le segment souhaité.
+1. Sélectionner **OK.**
 1. Saisissez des pourcentages pour configurer le mode de routage du trafic d’audience vers chaque expérience. Le nombre total doit être égal à 100.
 1. (Facultatif) Modifiez le nom de l’expérience en cliquant sur le menu déroulant en regard de son nom.
 
@@ -585,7 +588,7 @@ Pour simuler l’expérience du visiteur ou de la visiteuse, utilisez les outils
 
    La page se modifie pour afficher le contenu ciblé pour le contexte actuel.
 
-1. Pour modifier les offres affichées, passez en mode Ciblage . Pour l’activité de simulation sélectionnée, modifiez les offres pour le contexte que vous avez configuré en mode Aperçu.
+1. Pour apporter des modifications aux offres affichées, passez en mode Ciblage. Pour l’activité de simulation sélectionnée, modifiez les offres pour le contexte que vous avez configuré en mode Aperçu.
 
 ## Configuration des options du composant cible {#configuring-target-component-options}
 
@@ -621,7 +624,7 @@ Si vous sélectionnez Adobe Target comme moteur :
 | Option | Description |
 |---|---|
 | Ciblage précis | L’activation d’un ciblage précis indique au composant d’attendre que les données ClientContext ou ContextHub soient disponibles avant d’envoyer la demande à Adobe Target. Cela peut augmenter le temps de chargement. Pour la création, le ciblage précis est toujours activé. Si vous cochez la case Ciblage précis, la mbox commence par effectuer une opération mboxDefine, puis une opération mboxUpdate dans une demande Ajax une fois que les données sont disponibles. Si vous ne cochez pas la case Ciblage précis, la mbox effectue une opération mboxCreate entraînant immédiatement une demande synchrone (dans ce cas, les données de contexte ne sont pas toutes encore disponibles). Remarque : L’activation ou la désactivation du ciblage précis sur un composant spécifique n’a aucune incidence sur les paramètres définis globalement. Vous pouvez toujours remplacer les paramètres globaux en sélectionnant Ciblage précis dans le composant. |
-| Inclure les segments résolus | Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans l’infrastructure sont inclus. Cela ne fonctionne que dans les situations où vous utilisez une API XML pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif. |
+| Inclure les segments résolus | Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans l’infrastructure sont inclus. Cela ne fonctionne que dans les situations où vous utilisez une API XML pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif. |
 | Paramètres contextuels hérités | Répertorie les paramètres de contexte hérités de l’infrastructure Adobe Target, le cas échéant, associés à la page sélectionnée. |
 | Paramètres de contexte | Sélectionnez Ajouter un champ pour configurer des paramètres de contexte supplémentaires (comme ceux disponibles dans l’infrastructure Target). Les paramètres de contexte ajoutés au composant ne concernent que le composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres de contexte directement dans l’infrastructure. |
 | Paramètres statiques | Sélectionnez Ajouter un champ pour configurer des paramètres statiques supplémentaires (comme ceux disponibles dans l’infrastructure Target). Les paramètres statiques ajoutés au composant concernent uniquement le composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres statiques directement à la structure. Les paramètres statiques ne proviennent pas du contexte (contexte client du hub de contenu). |

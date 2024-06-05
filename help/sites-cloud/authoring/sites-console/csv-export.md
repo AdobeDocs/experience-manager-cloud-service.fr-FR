@@ -2,10 +2,13 @@
 title: Exporter au format CSV
 description: Exporter des informations sur vos pages dans un fichier CSV sur votre système local
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +49,7 @@ Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre app
 
 Pour créer une exportation CSV :
 
-1. Ouvrez le **Sites** , accédez à l’emplacement requis si nécessaire.
+1. Ouvrez la console **Sites**, puis, le cas échéant, accédez à l’emplacement requis.
    * L’option **Créer un rapport CSV** est disponible lorsque vous parcourez la console **Sites** (dans la vue Liste).
    * Il s’agit d’une option du menu déroulant **Créer** :
 

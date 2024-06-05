@@ -2,16 +2,18 @@
 title: Présentation de l’éditeur de SPA
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
 # Présentation de l’éditeur de SPA {#spa-editor-overview}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
+Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cette page donne une vue d’ensemble de la structure de la prise en charge SPA dans AEM, du fonctionnement de l’éditeur de SPA et de la synchronisation entre le framework SPA et AEM.
 
@@ -25,9 +27,9 @@ La prise en charge des applications sur une seule page dans AEM s’accompagne d
 
 Pour plus d’informations sur SPA dans AEM, voir :
 
-* [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) pour connaître les exigences techniques d’une SPA.
-* [Prise en main des SPA dans AEM avec React](getting-started-react.md) pour une présentation rapide d’une SPA simple avec React.
-* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md) pour une présentation rapide d’une SPA simple avec Angular.
+* [Blueprint SPA](blueprint.md) pour les exigences techniques d’un SPA.
+* [Prise en main de SPA dans AEM avec React](getting-started-react.md) pour une visite rapide d’un SPA simple avec React.
+* [Prise en main de SPA dans AEM avec Angular](getting-started-angular.md) pour une visite rapide d&#39;un SPA simple avec Angular.
 
 ## Conception {#design}
 

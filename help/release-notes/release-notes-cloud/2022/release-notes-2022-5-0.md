@@ -2,14 +2,16 @@
 title: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 77%
+source-wordcount: '800'
+ht-degree: 67%
 
 ---
 
-# Notes de mise à jour de la version 2022.5.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2022.5.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.5.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -39,7 +41,7 @@ Consultez la vidéo Aperçu de la version de mai 2022 pour obtenir un résumé 
 * Diverses fonctionnalités GraphQL
 * [Nouvelle console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) optimisée pour une utilisation headless des fragments de contenu
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
@@ -49,7 +51,7 @@ Consultez la vidéo Aperçu de la version de mai 2022 pour obtenir un résumé 
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#prerelease-features-assets}
 
-Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Adobe Sensei pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs, comprises entre un et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
+Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Adobe Sensei pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs balisées vers une image dans une plage comprise entre 1 et 40 afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -81,7 +83,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 * L’option &quot;Ajouter une arborescence&quot; sous l’écran de l’administrateur de l’agent de réplication **Onglet Répartir**, précédemment annoncé comme obsolète, a été supprimé le 20 juin 2022 ou peu de temps après. Les packages avec arborescence de contenu doivent plutôt être répliqués à l’aide des workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
 
-* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (noeuds avec des propriétés, sans inclure les fichiers binaires) est obsolète et appliquée le 12 septembre 2022 ou peu de temps après. À la place, les workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) seront utilisés pour répliquer ces packages de contenu volumineux. En juillet, un message d’avertissement s’affichera dans l’écran de l’administrateur de l’agent de réplication, sous l’**onglet Distribution**, si vous tentez de répliquer ces packages de contenu volumineux. Il apparaîtra également dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces packages de contenu volumineux. En septembre, les avertissements ont été remplacés par des erreurs. Ajustez vos processus en conséquence.
+* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (noeuds avec des propriétés, sans inclure les fichiers binaires) est obsolète et appliquée le 12 septembre 2022 ou peu de temps après. À la place, les workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) seront utilisés pour répliquer ces packages de contenu volumineux. En juillet, un message d’avertissement s’affiche dans l’écran de l’administrateur de l’agent de réplication. **Onglet Répartir** si vous tentez de répliquer ces packages de contenu volumineux et également dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces packages de contenu volumineux. En septembre, les avertissements ont été remplacés par des erreurs. Ajustez vos processus en conséquence.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Experience Manager] {#prerelease-features-foundation}
 
@@ -91,7 +93,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 ### Dépréciation de TLS 1.0 et 1.1
 
-À compter du 30 juin 2022, l’as a Cloud Service Experience Manager devra disposer d’une communication réseau plus sécurisée et d’un échange de données avec les systèmes utilisateurs. AEM utilisera exclusivement le protocole TLS (Transport Layer Security), version 1.2. Les anciennes versions de TLS 1.0 et 1.1 sont désormais obsolètes.
+À compter du 30 juin 2022, Experience Manager as a Cloud Service aura besoin d’un exchange de données et de communication réseau plus sécurisé avec les systèmes des utilisateurs. AEM utilisera exclusivement le protocole TLS (Transport Layer Security), version 1.2. Les anciennes versions de TLS 1.0 et 1.1 sont désormais obsolètes.
 
 Si vous continuez à utiliser des versions antérieures à TLS 1.0 et 1.1, vous risquez de perdre l’accès à Experience Manager as a Cloud Service.
 

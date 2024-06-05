@@ -4,7 +4,8 @@ description: Découvrez comment créer et synchroniser des Live Copies pour uti
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -523,7 +524,7 @@ Lorsque vous annulez l’héritage, vous pouvez modifier la valeur de la propri�
 
 ![Propriétés non héritées](../assets/properties-not-inherited.png)
 
-Vous pouvez réactiver ultérieurement l’héritage d’une propriété, si nécessaire.
+Vous pourrez par la suite réactiver l’héritage pour une propriété, si nécessaire.
 
 >[!NOTE]
 >
@@ -536,7 +537,7 @@ Vous pouvez réactiver ultérieurement l’héritage d’une propriété, si né
 
 1. Dans le **Annuler l’héritage** boîte de dialogue de confirmation, sélectionnez **Oui**.
 
-### Rétablissement des propriétés d’une page de la Live Copy {#revert-properties-of-a-live-copy-page}
+### Rétablissement des propriétés d’une page Live Copy {#revert-properties-of-a-live-copy-page}
 
 Pour activer l’héritage d’une propriété, sélectionnez l’option **Rétablir l’héritage** qui s’affiche en regard de la propriété .
 

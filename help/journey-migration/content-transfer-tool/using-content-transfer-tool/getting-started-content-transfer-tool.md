@@ -2,7 +2,9 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Découvrez comment commencer à utiliser l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 76%

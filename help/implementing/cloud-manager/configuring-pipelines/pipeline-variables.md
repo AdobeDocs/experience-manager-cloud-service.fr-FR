@@ -1,13 +1,16 @@
 ---
 title: Configuration des variables de pipeline
 description: Découvrez comment utiliser les variables de pipeline dans Cloud Manager pour gérer des variables de configuration spécifiques pour votre version.
-source-git-commit: 7b98883d16893534387fa10665f5fa432d74470f
+exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
 
 ---
-
 
 # Configuration des variables de pipeline {#configuring-pipeline-variables}
 

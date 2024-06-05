@@ -2,7 +2,9 @@
 title: Présentation de l’éditeur universel
 description: Découvrez comment l’éditeur universel permet la modification WYSIWYG (What-you-get) de n’importe quelle expérience headless et headful. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 50%

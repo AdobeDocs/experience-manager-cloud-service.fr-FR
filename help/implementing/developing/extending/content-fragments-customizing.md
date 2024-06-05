@@ -2,10 +2,12 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard. Découvrez comment les personnaliser.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 60%
+ht-degree: 61%
 
 ---
 
@@ -30,7 +32,7 @@ Les fragments de contenu individuels sont basés sur des modèles de fragment de
 * Les modèles de fragment de contenu définissent la structure d’un fragment de contenu lors de sa création.
 * Un fragment fait référence au modèle. Par conséquent, les modifications apportées au modèle peuvent avoir un impact ou avoir un impact sur les fragments dépendants.
 * Les modèles sont composés de types de données.
-* Les fonctions permettant d’ajouter de nouvelles variations, etc., doivent mettre à jour le fragment en conséquence.
+* Les fonctions pour ajouter des variations, etc., doivent mettre à jour le fragment en conséquence.
 
   >[!NOTE]
   >
@@ -309,7 +311,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Exemple : création d’un fragment de contenu {#example-creating-a-new-content-fragment}
+### Exemple : création d’un fragment de contenu {#example-creating-a-new-content-fragment}
 
 Pour créer un fragment de contenu par programmation, utilisez une `FragmentTemplate` adapté d’une ressource de modèle.
 

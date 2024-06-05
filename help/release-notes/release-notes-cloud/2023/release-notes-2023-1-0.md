@@ -2,8 +2,10 @@
 title: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 100%
 
@@ -39,7 +41,7 @@ Consultez la vidéo Aperçu de la version de janvier 2023 pour un résumé des 
 
 * L’API de diffusion de contenu AEM GraphQL prend désormais en charge la [pagination](/help/headless/graphql-api/content-fragments.md#paging) et le [tri](/help/headless/graphql-api/content-fragments.md#sorting) GraphQL, afin de rendre la récupération et le rendu des jeux de contenu volumineux plus efficaces. La pagination GraphQL permet d’améliorer le temps de réponse des requêtes en renvoyant les résultats dans des sous-ensembles et non tous en même temps. Le tri GraphQL permet de placer les jeux de contenu dans l’ordre souhaité, ce qui facilite le traitement du contenu par une application cliente.  Le temps de réponse des requêtes est également amélioré avec le filtrage hybride dans le moteur GraphQL AEM. Le contenu est maintenant lu à partir de JCR dans des jeux plus petits qui correspondent aux filtres de requête.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 

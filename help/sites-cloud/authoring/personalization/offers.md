@@ -2,7 +2,10 @@
 title: Créer et gérer des offres (console Offres)
 description: Utiliser la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 82%
@@ -135,7 +138,7 @@ Lorsque vous créez une marque à l’aide de la console Offres, elle apparaît 
 1. Saisissez le titre de la marque qui apparaîtra dans les consoles Activités et Offres. Vous pouvez également saisir ou sélectionner une ou plusieurs balises à associer à la marque.
 1. Sélectionnez **Créer**.
 
-### Ajout d’un fichier à une bibliothèque d’offres {#add-a-folder-to-an-offer-library}
+### Ajout d’un dossier à une bibliothèque d’offres {#add-a-folder-to-an-offer-library}
 
 Ajoutez un dossier à la bibliothèque des offres d’une marque pour organiser et stocker les offres. Vous pouvez créer un dossier sous la marque ou sous d’autres dossiers.
 

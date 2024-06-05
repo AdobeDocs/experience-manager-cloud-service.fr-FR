@@ -2,10 +2,12 @@
 title: Obsolescence des informations d’identification JWT dans Adobe Developer Console
 description: Découvrez l’impact de l’obsolescence des informations d’identification JWT dans Adobe Developer Console sur AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +21,7 @@ Les clientes et clients Adobe utilisent [Adobe Developer Console](https://deve
 
 Cet article fournit un contexte supplémentaire sur la manière dont AEM as a Cloud Service doit gérer l’obsolescence.
 
-Le principal point à retenir est qu’AEM prend désormais en charge les nouvelles informations d’identification OAuth de serveur à serveur pour AEM as a Cloud Service. Vous avez peut-être reçu un courrier électronique contenant des instructions pour migrer vos informations d’identification JWT. Cette migration peut maintenant être effectuée.
+Le principal point à retenir est qu’AEM prend désormais en charge les nouvelles informations d’identification OAuth de serveur à serveur pour AEM as a Cloud Service. Vous avez peut-être reçu un e-mail contenant des instructions pour migrer vos informations d’identification JWT. Cette migration peut maintenant être effectuée.
 
 Les sections ci-dessous répertorient les scénarios où les clientes et clients doivent (ou dans certains cas ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth serveur à serveur, maintenant qu’AEM les prend en charge. [Découvrez comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) migrer les informations d’identification.
 
@@ -42,7 +44,7 @@ Voir [Configuration des intégrations IMS pour AEM as a Cloud Service](/help
 
 ## API Cloud Manager {#cloud-manager-apis}
 
-**Action**: migrez vos informations d’identification JWT vers les informations d’identification OAuth, désormais prises en charge par Cloud Manager.
+**Action** : migrez vos informations d’identification JWT vers les informations d’identification OAuth, désormais prises en charge par Cloud Manager.
 
 **Versions d’AEM pertinentes** : AEM as a Cloud Service
 

@@ -2,10 +2,13 @@
 title: Système de style
 description: Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -17,7 +20,7 @@ Cela évite d’avoir à développer un composant personnalisé pour chaque styl
 
 ## Cas d’utilisation {#use-case}
 
-Les créateurs de modèles doivent non seulement pouvoir configurer le fonctionnement des composants pour les créateurs de contenu, mais aussi configurer plusieurs variantes visuelles d’un composant.
+Les créateurs et créatrices de modèles doivent non seulement pouvoir configurer le fonctionnement des composants pour les créateurs et créatrices de contenu, mais aussi configurer un certain nombre de variantes visuelles d’un composant.
 
 De même, les créateurs et créatrices de contenu doivent non seulement pouvoir structurer et organiser leur contenu, mais aussi sélectionner la manière dont il est présenté visuellement.
 
@@ -83,7 +86,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
 ### En tant qu’auteur de modèles {#as-a-template-author}
 
-1. Lors de la modification de la page d’accueil principale en anglais de WKND à l’adresse `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifiez le modèle de la page via **Informations sur la page > Modifier le modèle**.
+1. Alors que vous modifiez la page d’accueil de WKND (`http://<host>:<port>/sites.html/content/wknd/language-masters/en`) (en anglais), modifiez le modèle de la page via **Informations sur la page -> Modifier le modèle**.
 
    ![Modifier le modèle](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -159,4 +162,4 @@ Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 
 Cette capacité à définir des noms de styles est utile pour les composants génériques, tels que le conteneur de mise en page ou le composant Fragment de contenu. Cela permet de leur donner davantage de sens.
 
-Par exemple, il permet d’attribuer une sémantique à un conteneur de mises en page, comme `<main>`, `<aside>`, `<nav>`, etc.
+Cela permet, par exemple, d’attribuer au conteneur de disposition des sémantiques telles que `<main>`, `<aside>`, `<nav>`, etc.

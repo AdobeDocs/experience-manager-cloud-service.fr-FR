@@ -1,15 +1,17 @@
 ---
-title: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '935'
 ht-degree: 27%
 
 ---
 
-# Notes de mise à jour de la version 202278.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 202278.0 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.7.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -23,17 +25,17 @@ La section suivante décrit les notes de mise à jour des fonctionnalités de la
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.7.0) est le 8 août 2022.
+La date de publication de la version actuelle (2022.7.0) de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le mardi 8 août 2022.
 
 La prochaine version (2022.8.0) est prévue pour le 1er septembre 2022.
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo Aperçu de la version de juillet 2022 pour un résumé des fonctionnalités ajoutées dans la version 2022.7.0 :
+Consultez la vidéo Aperçu de la version de mai 2022 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2022.7.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
@@ -58,7 +60,7 @@ Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreind
 
 ![Restrictions de téléchargement des ressources](/help/assets/assets/asset-upload-restrictions.png)
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nouvelles fonctionnalités de [!DNL Forms] {#forms-features}
 
@@ -114,9 +116,9 @@ Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreind
 
 * AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
 
-## Connecteurs Adobe Learning Manager {#learn-manage}
+## Adobe Learning Manager Connectors {#learn-manage}
 
-* Le nouveau gestionnaire d’apprentissage Adobe dispose de connecteurs vers Adobe Experience Manager Sites, Marketo Engage et Adobe Commerce. Pour en savoir plus, voir : [Guide de l’utilisateur d’Adobe Learning Manager](https://helpx.adobe.com/learning-manager/user-guide.html).
+* Le nouveau Adobe Learning Manager dispose de connecteurs à Adobe Experience Manager Sites, Marketo Engage et Adobe Commerce. Pour en savoir plus, voir : [Guide de l’utilisateur de Adobe Learning Manager](https://helpx.adobe.com/learning-manager/user-guide.html).
 
 ## Cloud Manager {#cloud-manager}
 

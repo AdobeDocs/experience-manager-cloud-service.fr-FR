@@ -1,8 +1,10 @@
 ---
 title: Limites de l’éditeur
-description: L’éditeur de l’interface utilisateur optimisée pour les écrans tactiles emploie des recouvrements pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
+description: L’éditeur de l’interface utilisateur optimisée pour les écrans tactiles emploie des recouvrements pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs et développeuses.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 99%

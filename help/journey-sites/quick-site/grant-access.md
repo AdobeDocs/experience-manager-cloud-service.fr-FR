@@ -2,10 +2,13 @@
 title: Accorder l’accès au développeur front-end
 description: Intégrez les développeurs front-end à Cloud Manager afin qu’ils aient accès au référentiel Git et au pipeline de votre site AEM.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 91%
+source-wordcount: '776'
+ht-degree: 100%
 
 ---
 
@@ -65,7 +68,7 @@ Vous devez d’abord ajouter le développeur front-end en tant qu’utilisateur 
 
    ![Profils de produits](assets/product-profiles.png)
 
-1. Pour affecter le développeur front-end aux profils corrects, sélectionnez l’option **Utilisateurs** puis l’onglet **Ajouter un utilisateur** bouton .
+1. Pour affecter le développeur front-end aux profils corrects, appuyez ou cliquez sur l’onglet **Utilisateurs** puis sur le bouton **Ajouter un utilisateur**.
 
    ![Ajouter un utilisateur](assets/add-user.png)
 
@@ -73,11 +76,11 @@ Vous devez d’abord ajouter le développeur front-end en tant qu’utilisateur 
 
    ![Ajout d’un utilisateur à l’équipe](assets/add-to-team.png)
 
-1. Dans le **Produit** sélectionnez le signe plus, puis sélectionnez **Adobe Experience Manager as a Cloud Service** et affectez la variable **Responsable de déploiement** et **Développeur** profils de produit pour l’utilisateur.
+1. Dans la sélection de **Produits**, appuyez ou cliquez sur le signe plus, puis sélectionnez **Adobe Experience Manager as a Cloud Service** et affectez les profils de produits **Gestionnaire de déploiement** et **Développeur** à l’utilisateur.
 
-   ![Affectation de profils d’équipe](assets/assign-team.png)
+   ![Affectation de profils d’équipe.](assets/assign-team.png)
 
-1. Sélectionner **Enregistrer** et un e-mail de bienvenue est envoyé au développeur front-end que vous avez ajouté en tant qu’utilisateur.
+1. Appuyez ou cliquez sur **Enregistrer** pour envoyer un e-mail de bienvenue au développeur front-end que vous avez ajouté en tant qu’utilisateur.
 
 Le développeur front-end invité peut accéder à Cloud Manager en cliquant sur le lien contenu dans l’e-mail de bienvenue et en se connectant à l’aide de son Adobe ID.
 

@@ -2,7 +2,10 @@
 title: Mise en veille et réactivation d’environnements Sandbox
 description: Découvrez comment les environnements d’un programme Sandbox passent automatiquement en mode veille et comment les réactiver.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 84%

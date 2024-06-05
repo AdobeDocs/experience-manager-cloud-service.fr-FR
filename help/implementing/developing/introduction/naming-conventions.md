@@ -1,11 +1,13 @@
 ---
 title: Conventions de dénomination
-description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository
+description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination du référentiel de contenu Java.
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 53%
+source-wordcount: '201'
+ht-degree: 100%
 
 ---
 
@@ -15,18 +17,18 @@ Les nœuds dans le référentiel sont soumis aux conventions de dénomination de
 
 ## Conventions de dénomination pour les pages {#naming-conventions-for-pages}
 
-Ces conventions de dénomination sont mises en oeuvre à différents niveaux :
+Ces conventions de dénomination sont implémentées à différents niveaux :
 
-* JcrUtil : la mise en oeuvre AEM de la [Utilitaires JCR](#jcr-utilities).
-* PageManager : la valeur [Gestionnaire de pages](#page-manager) fournit des méthodes pour les opérations au niveau de la page.
+* JcrUtil : l’implémentation AEM des [utilitaires JCR](#jcr-utilities).
+* PageManager : le [Gestionnaire de pages](#page-manager) fournit des méthodes pour les opérations au niveau de la page.
 * Dans l’interface utilisateur d’AEM {#ui-behavior}
 
 ### Utilitaires JCR {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères qu’il contrôle et les validations suivantes présentent un intérêt particulier pour la validation des noms :
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères qu’il contrôle et les validations suivantes présentent un intérêt particulier pour la validation des noms :
 
 * `isValidName`
-   * Vérifie si le nom n’est pas vide et contient uniquement des caractères valides.
+   * Vérifie si le nom n’est pas vide et s’il contient uniquement des caractères valides.
    * Peut être utilisé pour vérifier si un nom proposé est valide.
 * `createValidName`
    * Crée un libellé valide à partir d’une chaîne arbitraire.
@@ -40,6 +42,6 @@ Ces conventions de dénomination sont mises en oeuvre à différents niveaux :
 
 Au cours de la gestion du contenu, l’interface utilisateur AEM :
 
-* Valide le nom en fonction des restrictions imposées par PageManager lorsque :
-   * un titre de page est fourni pour la conversion dans le nom de noeud.
-   * un nom de noeud explicite est fourni.
+* Valide le nom en fonction des restrictions imposées par PageManager quand :
+   * un titre de page est fourni pour être converti en nom de nœud ;
+   * un nom de nœud explicite est fourni.

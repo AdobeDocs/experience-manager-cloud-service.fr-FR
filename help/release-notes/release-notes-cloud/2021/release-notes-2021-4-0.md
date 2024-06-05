@@ -2,10 +2,12 @@
 title: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 87%
+source-wordcount: '1545'
+ht-degree: 93%
 
 ---
 
@@ -93,11 +95,11 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
 
-* **Utilisation de la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign**
+* **Utiliser la méthode d’authentification par pièce d’identité officielle dans les formulaires adaptatifs prenant en charge Adobe Sign**
 
-  Optimisé par des algorithmes d’apprentissage automatique avancés, le processus Adobe Sign Government ID permet aux entreprises du monde entier d’assurer une authentification de haute qualité de l’identité de leur destinataire. Vous pouvez maintenant utiliser la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign.
+  Optimisé par des algorithmes de machine learning avancés, le processus d’identification par pièce d’identité officielle d’Adobe Sign permet aux entreprises du monde entier de sécuriser une authentification de grande qualité de l’identité de leur personne destinataire. Vous pouvez maintenant utiliser la méthode d’authentification par pièce d’identité officielle dans les formulaires adaptatifs prenant en charge Adobe Sign.
 
-  L’ID de gouvernement est une méthode d’authentification d’identité premium qui indique au destinataire de [télécharger l&#39;image d&#39;un document d&#39;identité délivré par le gouvernement (permis de conduire, carte d&#39;identité nationale, passeport)](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html), puis évalue ce document pour s’assurer qu’il est authentique.
+  Le processus d’identification par pièce d’identité officielle est une méthode d’authentification d’identité de haute qualité qui demande aux personnes destinataires de [charger l’image d’un document d’identité émis par le gouvernement (permis de conduire, carte d’identité nationale, passeport)](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html), puis qui évalue ce document pour s’assurer qu’il est authentique.
 
 * **Prise en charge de l’utilisation de l’expérience de signature dans les formulaires pour les envois asynchrones de formulaires adaptatifs**
 
@@ -109,7 +111,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * **Prise en charge de l’utilisation de l’option littérale pour définir la valeur d’une variable de type JSON**
 
-  Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un processus AEM. L’option littérale permet de spécifier un fichier JSON sous la forme d’une chaîne.
+  Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un processus AEM. L’option littérale vous permet de spécifier un fichier JSON sous la forme d’une chaîne.
 
 * **Utilisation de l’environnement de développement local pour créer un document d’enregistrement**
 
@@ -128,7 +130,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Prise en charge de l’UID de catégorie : cette fonctionnalité déclenche les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
+* Prise en charge de l’UID de catégorie – Cette option ouvre les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
 
 * Extension AEM pour PWA Studio, avec un exemple d’intégration
 

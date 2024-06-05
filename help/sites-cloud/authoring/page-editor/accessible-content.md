@@ -2,10 +2,13 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '13685'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -83,7 +86,7 @@ Il existe diverses formes de contenus non textuels. Par conséquent, la valeur d
 
 * Les textes secondaires doivent être succincts, tout en communiquant clairement l’information essentielle du contenu non textuel.
 * Il est préférable d’éviter les descriptions trop longues (plus de 100 caractères). Si un texte secondaire doit être plus détaillé :
-   * donnez une brève description dans le texte secondaire ;
+   * fournissez une brève description dans le texte secondaire ;
    * proposez une description plus longue, ailleurs sur la même page ou dans une page web distincte. Créez un lien vers cette description distincte en faisant de l’image un lien ou en plaçant un lien textuel en regard de l’image.
 * Le texte secondaire ne doit pas répliquer le contenu fourni sous forme de texte à proximité sur la même page. N’oubliez pas que de nombreuses images sont des illustrations de points déjà couverts dans le texte d’une page. Il existe donc peut-être déjà un texte secondaire détaillé.
 * Si le contenu non textuel est un lien vers une autre page ou un autre document et qu’il n’existe pas de texte faisant partie dudit lien, le texte secondaire de l’image doit indiquer la destination du lien. Il ne doit pas décrire l’image.
@@ -98,7 +101,7 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 * Photos illustratives : il s’agit de photos de personnes, d’objets ou de lieux. Il est important de réfléchir au rôle de la photo dans la page et à la description recommandée du contenu de l’image, car la technologie d’assistance annonce le type d’élément (par exemple, `graphic` ou `image`). Cela peut améliorer la clarté d’utilisation du `screenshot` ou de l’`illustration` dans les descriptions de texte secondaire, mais cela dépend du contexte. La cohérence est un facteur important. Il faut prendre la même décision pour l’ensemble de l’équipe de création et l’appliquer tout au long de l’expérience utilisateur.
 * Icônes : certains petits pictogrammes (images) communiquent parfois des informations spécifiques. Ils doivent être utilisés de manière uniforme sur une page et un site. Toutes les instances de l’icône sur une page ou un site doivent avoir le même texte secondaire bref et succinct, sauf si cela duplique de manière superflue le texte adjacent.
-* Tableaux et graphiques : ils représentent généralement des données numériques. Ainsi, une option permettant de fournir un texte secondaire peut être d’inclure un bref résumé des principales tendances affichées dans le graphique ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet **Propriétés d’image avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
+* Graphiques et diagrammes : il représentent habituellement des données numériques. Il est donc possible de fournir un texte alternatif en fournissant, par exemple, un bref résumé des principales tendances affichées dans le graphique ou le diagramme. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet des propriétés d’image **Avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
 * Cartes, diagrammes, organigrammes : pour les graphiques produisant des données spatiales (par exemple, pour la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte et que ces informations textuelles sont placées à proximité de chaque point de données associé. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas adaptée. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, alors le texte secondaire de l’image de la carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement en texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
 * CAPTCHA : CAPTCHA signifie *Completely Automated Public Turing test to tell Computers and Humans Apart*. Il s’agit d’un contrôle de sécurité utilisé sur les pages web pour distinguer les humains des logiciels malveillants, mais qui peut causer des problèmes en matière d’accessibilité. Le CAPTCHA, sous forme d’images, nécessite que les utilisateurs et utilisatrices décrivent ce qu’ils voient pour réussir le test de sécurité. Il n’est évidemment pas possible de fournir un texte secondaire à l’image. Vous devrez donc envisager d’autres solutions non graphiques. Le W3C offre plusieurs suggestions. Chacune de ces approches a ses avantages et ses inconvénients.
 
@@ -285,7 +288,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 
 ### Adaptable (1.3) {#adaptable}
 
-[Règle 1.3 - Adaptable : créer du contenu qui peut être présenté de différentes manières (par exemple, avec une mise en page plus simple) sans perdre d’informations ni de structure.](https://www.w3.org/TR/WCAG/#adaptable)
+[Règle 1.3 - Adaptable : créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG/#adaptable)
 
 Cette règle couvre les exigences nécessaires pour proposer un contenu adapté aux personnes qui :
 
@@ -466,9 +469,9 @@ Assurez-vous que toutes les informations qui reposent sur les caractéristiques 
 
 >[!NOTE]
 >
->Ce critère de réussite traite spécifiquement de la perception des couleurs. D’autres formes de perception sont abordées dans la section [Adaptable (1.3)](#adaptable); y compris l’accès programmatique à la couleur et à d’autres codes de présentation visuelle.
+>Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées dans la règle [Adaptable (1.3)](#adaptable), incluant l’accès à la couleur via un programme informatique et les autres formes de codage de la présentation visuelle.
 
-#### Objectif – Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
+#### Objectif - Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
 
 La couleur est un moyen efficace d’améliorer l’aspect esthétique des pages web et est également utile pour véhiculer l’information. Cependant, il existe une plage de déficiences visuelles, de la cécité au daltonisme, ce qui signifie que certaines personnes sont incapables de distinguer certaines couleurs. Cela fait du codage par couleur un moyen peu fiable de fournir des informations.
 
@@ -703,7 +706,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 Remarques :
 
 1. Pour les exigences relatives au contenu scintillant ou flashant, se référer à la règle Ne pas concevoir de contenu susceptible de provoquer des crises (2.3).
-1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à utiliser la page entière, tout le contenu de la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire à ce critère de réussite. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
+1. Comme tout contenu qui ne remplit pas ce critère de réussite peut interférer avec la capacité de l’utilisateur ou de l’utilisatrice à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour remplir d’autres critères de réussite ou non) doit remplir ce critère de réussite. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
 1. Le contenu mis à jour régulièrement par un logiciel ou diffusé en continu à l’utilisateur ou l’utilisatrice n’est pas tenu de conserver ou présenter des informations générées ou reçues entre la mise en pause et la reprise de la présentation. En effet, cela peut être techniquement impossible et peut induire en erreur dans de nombreuses situations.
 1. Une animation dans le cadre d’une phase de préchargement ou d’une situation similaire peut être considérée comme essentielle si l’interaction ne peut pas se produire au cours de cette phase pour tous les utilisateurs et utilisatrices, et si le fait de ne pas indiquer la progression risque de dérouter les utilisateurs et les utilisatrices ou de leur faire croire que le contenu a été figé ou interrompu.
 
@@ -842,7 +845,7 @@ Avant tout, veillez à ce que l’objectif d’un lien soit clairement décrit d
    * Texte : Cours du soir de l’automne 2010 – Détails.
    * Motif : il est possible d’améliorer le texte du lien en adaptant légèrement le texte et sa position.
 
-Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Par exemple, si un lien vers une page spécifique est nommé **Publications** sur une page, utilisez ce texte sur d’autres pages pour garantir la cohérence.
+Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Par exemple, si un lien vers une page spécifique est nommé **Publications** sur une page, utilisez ce texte sur les autres pages pour garantir la cohérence.
 
 Au moment de la rédaction de cet article, l’utilisation des attributs de titre pose certains problèmes. Ils ne permettent pas de s’assurer que des liens similaires présentés sur une page donnent des informations uniques sur la destination (par exemple, la mention « en savoir plus » se rapporte souvent à plusieurs destinations différentes) :
 
@@ -852,7 +855,7 @@ Au moment de la rédaction de cet article, l’utilisation des attributs de titr
 
 Ainsi, bien que l’attribut de titre puisse fournir un contexte supplémentaire à un lien, gardez à l’esprit ses limites et ne l’utilisez pas comme alternative au texte du lien approprié.
 
-Lorsque le lien est composé d’une image, assurez-vous que le texte secondaire de l’image décrit la destination du lien. Par exemple, si une image d’une bibliothèque est définie comme lien vers les publications d’une personne, le texte secondaire doit être lu : **Publications de John Smith** et non **Bibliothèque**.
+Lorsque le lien est composé d’une image, assurez-vous que le texte de remplacement de l’image décrit la destination du lien. Par exemple, si une image représentant une bibliothèque est définie comme lien vers les publications d’une personne, le texte alternatif doit stipuler : **Publications de John Smith** et non **Bibliothèque**.
 
 Si l’ancre de lien contient du texte qui décrit la destination du lien en plus de l’élément image (et donc que le texte apparaît à côté de l’image), utilisez un attribut de remplacement vide pour l’image :
 
@@ -989,9 +992,9 @@ Dans AEM, la langue par défaut de la page est définie lors de la création de 
 
 * [Compréhension du critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 * [Comment remplir le critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
-* Les codes sont basés sur la norme ISO 639-1. Vous trouverez une liste plus complète de codes pour chaque langue à l’adresse [Site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
+* Les codes sont basés sur la norme ISO 639-1. Une liste plus exhaustive des codes pour chaque langue est disponible sur le [Site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-### Langue d’un passage (3.1.2)  {#language-of-parts}
+### Langue des parties (3.1.2)  {#language-of-parts}
 
 * Critère de réussite 3.1.2
 * Niveau AA

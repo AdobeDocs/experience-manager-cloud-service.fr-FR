@@ -2,10 +2,12 @@
 title: Personnaliser les vues des propriétés de la page
 description: Découvrez comment les propriétés de page sont affichées et modifiées par les auteurs.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 37%
+ht-degree: 58%
 
 ---
 
@@ -19,9 +21,9 @@ Le statut par défaut de chaque propriété de la page est :
 
 * Disponible dans la vue d’édition (par exemple, **Afficher les propriétés**)
 
-Les champs doivent être configurés spécifiquement si une modification est requise. Pour ce faire, utilisez les propriétés de noeud appropriées :
+Les champs doivent être configurés spécifiquement si une modification est requise. Pour ce faire, utilisez la les propriétés de nœud appropriées :
 
-* Propriété de page à rendre disponible dans la vue de création (par exemple : **Créer une page** assistant) :
+* Propriété de page qui doit être disponible en mode de création (assistant **Créer une page**, par exemple) :
 
    * Nom : `cq:showOnCreate`
    * Type : `Boolean`
@@ -37,7 +39,7 @@ Les champs doivent être configurés spécifiquement si une modification est req
 
 ## Configuration des propriétés de page {#configuring-your-page-properties}
 
-Vous pouvez également configurer les champs disponibles en configurant la boîte de dialogue de votre composant de page et en appliquant les propriétés de noeud appropriées.
+Vous pouvez également configurer les champs disponibles en configurant la boîte de dialogue de votre composant de page et en appliquant les propriétés de nœud appropriées.
 
 Par exemple, l’assistant [**Créer une page**](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) affiche, par défaut, les champs regroupés sous **Autres titres et description**. Pour masquer ces derniers, définissez la configuration suivante :
 
@@ -66,7 +68,7 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-cloud/authoring/sit
    * **Type** : `Boolean`
    * **Valeur** : `false`
 
-   La variable **Autres titres et description** ne s’affichera plus dans la section **Créer une page** assistant.
+   La section **Autres titres et description** ne s’affichera plus dans l’assistant **Créer une page**.
 
 >[!NOTE]
 >

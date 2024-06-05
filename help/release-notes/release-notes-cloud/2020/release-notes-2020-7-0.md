@@ -2,9 +2,11 @@
 title: Notes de mise à jour de la version 2020.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.7.0. »
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1012'
 ht-degree: 93%
 
 ---
@@ -55,7 +57,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 AEM Commerce est désormais disponible dans Cloud Service.
 
-Voir [Prise en main d’AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=fr) pour plus d’informations.
+Voir [Prise en main de Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=fr) pour plus d’informations.
 
 ## Composants principaux {#core-components}
 

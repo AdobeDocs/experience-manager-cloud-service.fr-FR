@@ -2,10 +2,12 @@
 title: Activez AEM Screens pour votre site de démonstration
 description: Découvrez les étapes pour activer l’expérience complète AEM Screens as a Cloud Service sur votre site de démonstration.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 93%
+source-wordcount: '2654'
+ht-degree: 100%
 
 ---
 
@@ -100,9 +102,9 @@ Une fois l’assistant terminé, le contenu est déployé sous Sites et vous pou
 
 ![Contenu We.Cafe](assets/wecafe-content.png)
 
-Maintenant que vous disposez du contenu de démonstration We.Cafe, vous avez le choix de la manière dont vous souhaitez tester AEM Screens :
+Maintenant que vous disposez du contenu de démonstration We.Cafe, vous pouvez choisir comment tester AEM Screens :
 
-* Si vous souhaitez uniquement explorer le contenu dans la console AEM Sites, commencez simplement à explorer et à en découvrir plus dans la section [Ressources supplémentaires](#additional-resources) section . aucune autre action n’est requise.
+* Si vous souhaitez uniquement explorer le contenu dans la console AEM Sites, commencez simplement par en découvrir plus dans la section [Ressources supplémentaires](#additional-resources). aucune autre action n’est requise.
 * Si vous souhaitez découvrir toutes les fonctionnalités dynamiques d’AEM Screens, passez à la section suivante, [Modifier de manière dynamique du contenu Screens.](#dynamically-change)
 
 ## Modifier de manière dynamique du contenu Screens {#dynamically-change}
@@ -145,7 +147,7 @@ Tout d’abord, vous devez créer une clé d’API Google pour faciliter l’éc
 
 Pour permettre l’échange de données de Google Sheets à l’aide de votre clé d’API, vous devez activer l’API Google Sheets.
 
-1. Revenez à la console cloud Google à l’adresse `https://console.cloud.google.com` pour votre projet, puis utilisez le menu hamburger pour sélectionner **API et services > Bibliothèque**.
+1. Revenez sur la console Google Cloud à l’adresse `https://console.cloud.google.com` pour votre projet, puis utilisez le menu Hamburger pour sélectionner **API et services > Bibliothèque**.
 
    ![Bibliothèque d’API](assets/api-library.png)
 
@@ -221,9 +223,9 @@ Lorsque le contenu de l’écran s’affiche, ContextHub appelle votre service m
 
 À des fins de démonstration, les valeurs de la feuille peuvent être modifiées. ContextHub reconnaît cette information et le contenu s’ajuste dans le canal en fonction de la température mise à jour.
 
-1. Sur l’instance d’auteur AEMaaCS, accédez à **Navigation globale > Outils > Sites > ContextHub**.
-1. Sélectionnez le conteneur de configuration qui porte le même nom que celui que vous avez donné au projet lorsque vous avez créé le projet Screens à partir de **Modèle de site web We.Cafe**.
-1. Sélectionner **Configuration > Configuration ContextHub > Sheets Google** puis cliquez sur **Suivant** en haut à droite.
+1. Sur l’instance de création AEMaaCS, accédez à **Navigation globale > Outils > ContextHub**.
+1. Sélectionnez le conteneur de configuration qui porte le même nom que celui que vous avez donné au projet lorsque vous avez créé le projet Screens à partir du **modèle de site web We.Cafe**.
+1. Sélectionnez **Configuration > Configuration de ContextHub > Google Sheets** puis cliquez sur **Suivant** en haut à droite.
 1. La configuration doit déjà comporter des données JSON préconfigurées. Deux valeurs doivent être modifiées :
    1. Remplacez `[your Google Sheets id]` avec l’ID de feuille que [vous avez enregistré précédemment](#create-spreadsheet).
    1. Remplacez `[your Google API Key]` avec la clé d’API que [vous avez enregistrée précédemment](#create-api-key).
@@ -235,10 +237,10 @@ Vous pouvez désormais modifier la valeur de la température dans votre feuille 
 
 Maintenant qu’AEM Screens et ContextHub sont connectés à votre service météorologique, vous pouvez tester ce dernier pour voir la façon dont les écrans peuvent mettre à jour le contenu de manière dynamique.
 
-1. Accédez à votre instance d’auteur sandbox.
-1. Accédez à la console Sites via **Navigation globale > Sites** et sélectionnez la page suivante : **Screens > &lt;project-name> > Canaux > Matin d’entrée (portrait)**.
+1. Accédez à votre instance de création de sandbox.
+1. Accédez à la console Sites via **Navigation globale > Sites** et sélectionnez la page suivante : **Screens > &lt;project-name> > Canaux > Entrée du matin (Portrait)**.
 
-   ![Sélectionnez le contenu du projet de démonstration](assets/project-content.png)
+   ![Sélection du contenu du projet de démonstration.](assets/project-content.png)
 
 1. Cliquez sur **Modifier** dans la barre d’outils ou tapez sur la touche de raccourci `e` pour modifier la page.
 
@@ -325,7 +327,7 @@ Vous devrez d’abord créer un code d’enregistrement pour connecter un lecteu
 
    ![Vérification de votre organisation Screens](assets/screens-org.png)
 
-1. Dans le panneau de gauche, cliquez sur **Gestion du lecteur > Codes d’enregistrement** puis cliquez sur **Créer du code** dans le coin supérieur droit de l’écran.
+1. Dans le panneau de gauche, cliquez sur **Gestion du lecteur > Codes d’enregistrement** puis cliquez sur **Créer un code** en haut à droite de l’écran.
 
 ![Codes d’enregistrement](assets/registration-codes.png)
 
@@ -360,7 +362,7 @@ Vous devrez d’abord créer un code d’enregistrement pour connecter un lecteu
 
    ![Vérification de votre organisation Screens](assets/screens-org.png)
 
-1. Dans le panneau de gauche, cliquez sur **Gestion du lecteur > Lecteurs** et vous voyez le lecteur que vous avez précédemment installé et enregistré.
+1. Dans le panneau de gauche, cliquez sur **Gestion du lecteur > Lecteurs** et vous verrez le lecteur que vous avez installé et enregistré précédemment.
 
    ![Lecteurs](assets/players.png)
 
@@ -388,7 +390,7 @@ Maintenant que vous avez terminé cette partie du parcours de module complément
 * Comprendre le contenu de la démonstration de We.Cafe.
 * Découvrir comment configurer AEM Screens pour We.Cafe.
 
-Vous êtes maintenant prêt à explorer les fonctionnalités d’AEM Screens à l’aide de vos propres sites de démonstration. Passez à la section suivante du parcours, [Gérer vos sites de démonstration,](manage.md) où vous découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
+Vous êtes maintenant prêt à explorer les fonctionnalités d’AEM Screens à l’aide de vos propres sites de démonstration. Passez à la section suivante du parcours, [Gérer vos sites de démonstration,](manage.md) où vous découvrirez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 
 Vous pouvez également consulter certaines des ressources supplémentaires disponibles dans la [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités rencontrées dans ce parcours.
 

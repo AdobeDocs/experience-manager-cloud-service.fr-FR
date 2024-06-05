@@ -1,13 +1,16 @@
 ---
 title: Modification du contenu de la page à l’aide de l’éditeur de page AEM
 description: L’éditeur de page d’AEM est un outil puissant pour créer du contenu.
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 33%
 
 ---
-
 
 # Modification du contenu de la page à l’aide de l’éditeur de page AEM {#edit-content}
 
@@ -94,7 +97,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 1. Ouvrez l’[explorateur de ressources](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser).
 1. Faites glisser le composant jusqu’à la position requise. La variable [espace réservé du composant](#component-placeholder) vous indique où le composant est positionné et où une cible s’affichera lorsqu’il sera inséré.
 1. Relâchez la ressource sur la cible. Un composant, approprié au type de ressource, est créé à l’emplacement requis contenant la ressource sélectionnée.
-1. [Modifier](#edit-content) le composant, si nécessaire.
+1. [Modifiez](#edit-content) le composant si nécessaire.
 
 >[!NOTE]
 >

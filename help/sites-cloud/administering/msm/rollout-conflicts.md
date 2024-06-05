@@ -4,10 +4,11 @@ description: Découvrez comment gérer et résoudre les conflits de déploiement
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 63%
+source-wordcount: '919'
+ht-degree: 65%
 
 ---
 
@@ -54,7 +55,7 @@ Dans les sections suivantes, un exemple de nouvelle page `b` est utilisé, cré�
 
 ## Gestionnaire de déploiement et gestion des conflits {#rollout-manager-and-conflict-handling}
 
-Le gestionnaire de déploiement vous permet d’activer ou de désactiver la gestion des conflits.
+Le gestionnaire de déploiement permet d’activer ou de désactiver la gestion des conflits.
 
 Ceci est effectué à l’aide de la [configuration OSGi](/help/implementing/deploying/configuring-osgi.md) du **gestionnaire de déploiement WCM Day CQ**. Définissez la valeur **Gérer un conflit avec des pages créées manuellement** (`rolloutmgr.conflicthandling.enabled` ) sur true si le gestionnaire de déploiement doit gérer les conflits d’une page créée dans la Live Copy qui porte un nom déjà présent dans le plan directeur.
 
@@ -76,7 +77,7 @@ AEM fournit :
 
 Le gestionnaire de conflits par défaut est `ResourceNameRolloutConflictHandler`
 
-* Avec ce gestionnaire, la page de plan directeur a la priorité.
+* Avec ce gestionnaire, la page du plan directeur prévaut.
 * Le classement des services pour ce gestionnaire est défini sur le bas. En d’autres termes, sous la valeur par défaut de la variable `service.ranking` , car il est supposé que les gestionnaires personnalisés ont besoin d’un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour garantir de la flexibilité lorsque cela est nécessaire.
 
 Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, la page Live Copy `/b` est déplacé dans la branche Live Copy vers `/b_msm_moved`.

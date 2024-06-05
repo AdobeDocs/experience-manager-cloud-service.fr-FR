@@ -2,8 +2,11 @@
 title: En savoir plus sur le développement CMS découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez la technologie découplée et pourquoi l’utiliser.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 100%
 
@@ -62,13 +65,13 @@ Lorsque nous parlons d’un CMS découplé (ou sans tête), il s’agit d’un s
 
 ![CMS découplé](assets/headless-cms.png)
 
-Les services consommateurs (expériences de réalité augmentée, boutiques web, expériences mobiles, applications web progressives (PWA), etc.) récupèrent le contenu du CMS découplé et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
+Les services consommateurs (expériences de réalité augmentée, boutiques Web, expériences mobiles, applications Web progressives (PWA), etc.) récupèrent le contenu du CMS découplé et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
 
 Omettre la tête (en mode découplé) permet de simplifier le CMS en éliminant sa complexité. Vous pouvez ainsi transférer la responsabilité de rendu du contenu vers les services qui en ont réellement besoin et qui sont souvent mieux adaptés pour cela.
 
 ## Découplage {#decoupling}
 
-La diffusion découplée est possible en exposant un ensemble d’interfaces de programmation d’applications (API) robustes et flexibles dans lesquelles toutes vos expériences peuvent être sélectionnées. L’API sert de langage commun entre les services, en les liant au niveau du contenu grâce à une diffusion de contenu normalisée, mais en leur permettant de mettre en œuvre leurs propres solutions.
+La diffusion découplée est possible en exposant un ensemble d’interfaces de programmation d’applications (API) robustes et flexibles sur lesquelles toutes vos expériences peuvent s’appuyer. L’API sert de langage commun entre les services, en les liant au niveau du contenu grâce à une diffusion de contenu normalisée, mais en leur permettant de mettre en œuvre leurs propres solutions.
 
 L’absence de tête est un exemple de découplage du contenu et de sa présentation. Dans un sens plus général, il s’agit de découpler les sections frontale (consommateur) et dorsale (gestion de contenu) de votre pile de services. Dans une configuration découplée, le système de présentation (la tête) est découplé de la gestion de contenu (la queue). L’un et l’autre n’interagissent que par le biais d’appels à des API.
 

@@ -2,8 +2,11 @@
 title: Gestion des versions du projet Maven
 description: Pour les déploiements d’évaluation et de production d’AEM as a Cloud Service, Cloud Manager génère une version incrémentée unique
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%
 

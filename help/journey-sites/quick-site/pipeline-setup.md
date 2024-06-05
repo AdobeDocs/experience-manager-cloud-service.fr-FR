@@ -2,10 +2,13 @@
 title: Configurer le pipeline
 description: Créez un pipeline front-end pour gérer la personnalisation du thème de votre site.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 94%
+source-wordcount: '949'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ Créez un pipeline front-end pour gérer la personnalisation du thème de votre 
 Dans le document précédent du parcours de création rapide de site AEM, [Créer un site à partir d’un modèle](create-site.md), vous avez appris à utiliser un modèle de site pour créer rapidement un site AEM qui peut être davantage personnalisé à l’aide d’outils front-end. Vous devriez maintenant :
 
 * Découvrir comment obtenir des modèles de site AEM.
-* Découvrez comment créer un site à l’aide d’un modèle.
+* Apprendre à créer un nouveau site à l’aide d’un modèle.
 * Découvrir comment télécharger le modèle de votre nouveau site pour le fournir au développeur front-end.
 
 Cet article s’appuie sur ces principes de base afin que vous puissiez configurer un pipeline frontal, que le développeur front-end utilisera ultérieurement dans le parcours pour déployer les personnalisations frontales.
@@ -51,13 +54,13 @@ Ainsi, le développement front-end peut fonctionner séparément et parallèleme
 
 >[!NOTE]
 >
->Les pipelines front-end peuvent uniquement déployer des ressources JavaScript, CSS et statiques pour appliquer un style à votre site AEM. Le contenu du site, tel que les pages ou les ressources, ne peut pas être déployé dans un pipeline.
+>Les pipelines front-end peuvent uniquement déployer des ressources JavaScript, CSS et statiques pour appliquer un style à votre site AEM. Le contenu du site, tel que les pages ou les ressources, ne peuvent pas être déployé dans un pipeline.
 
 ## Accès à Cloud Manager {#login}
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celle que vous souhaitez gérer. Si vous commencez avec AEM as a Cloud Service, il est probable qu’un seul programme soit disponible.
+1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celui que vous souhaitez gérer. Si vous commencez avec AEM as a Cloud Service, il est probable qu’un seul programme soit disponible.
 
    ![Sélection d’un programme dans Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -71,7 +74,7 @@ Notez le nom du programme auquel vous avez accédé ou copiez l’URL. Vous devr
 
 Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipeline pour le déploiement front-end.
 
-1. Dans le **Pipelines** de la page Cloud Manager , sélectionnez la variable **Ajouter** bouton .
+1. Dans la section **Pipelines** de la page Cloud Manager, appuyez ou cliquez sur le bouton **Ajouter**.
 
    ![Pipelines](assets/pipelines-add.png)
 
@@ -92,7 +95,7 @@ Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipel
    * Définissez la **Branche Git** à laquelle le pipeline doit être associé.
    * Définissez l’**Emplacement du code** si le développement front-end se trouve sous un chemin d’accès particulier dans le référentiel sélectionné. La valeur par défaut est la racine du référentiel, mais le développement front-end et back-end se fait souvent sous différents chemins d’accès.
 
-   ![Informations sur le code source pour l’ajout de pipeline](assets/add-pipeline-source-code.png)
+   ![Informations sur le code source pour l’ajout de pipeline.](assets/add-pipeline-source-code.png)
 
 1. Sélectionnez **Enregistrer**.
 

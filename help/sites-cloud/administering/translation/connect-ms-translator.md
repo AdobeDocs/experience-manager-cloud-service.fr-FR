@@ -4,10 +4,11 @@ description: Découvrez comment connecter AEM à Microsoft Translator pour autom
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -26,7 +27,7 @@ Créez une configuration afin que le service cloud [Microsoft Translator](https:
 | Propriété | Description |
 |---|---|
 | Libellé de traduction | Nom d’affichage du service de traduction |
-| Attribution de traduction | (Facultatif) Pour le contenu généré par l’utilisateur, l’attribution qui s’affiche en regard du texte traduit, par exemple : `Translations by Microsoft` |
+| Attribution de traduction | (Facultatif) Pour le contenu créé par l’utilisateur ou l’utilisatrice, l’attribution qui apparaît à côté du texte traduit, par exemple `Translations by Microsoft`. |
 | ID d’espace de travail | (Facultatif) ID de votre moteur Microsoft Translator personnalisé à utiliser |
 | Clé d’abonnement | Votre clé d’abonnement Microsoft pour Microsoft Translator |
 

@@ -2,9 +2,11 @@
 title: Notes de mise à jour de la version 2020.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.9.0.
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '711'
 ht-degree: 94%
 
 ---
@@ -21,7 +23,7 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service v
 
 ### Nouveautés de [!DNL Sites]  {#what-is-new-sites}
 
-* Le SDK JavaScript de l’éditeur d’application sur une seule page (SPA) [est désormais en source libre](/help/implementing/developing/hybrid/reference-materials.md).
+* SDK JavaScript de l’éditeur d’application sur une seule page (SPA) [est désormais open source](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -50,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Composants principaux CIF version 1.3.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) pour plus d’informations.
+* Publication CIF composants principaux v1.3.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) pour plus d’informations.
 
 * La fonctionnalité d’aperçu avec produit/catégorie pour les modèles de produit et de catégorie est désormais disponible. Elle permet aux utilisateurs métier/spécialistes du marketing dans AEM d’afficher les modèles de produit/catégorie avec des données réelles.
 
@@ -74,7 +76,7 @@ La date de publication de [!UICONTROL Cloud Manager] version 2020.9.0 est le 3
 
 * La fonction Audit de contenu se nomme désormais Contrôle de l’expérience.
 * Le processus de création a été divisé en trois commandes Maven distinctes.
-* Si le clonage du référentiel Git échoue, il est tenté à nouveau jusqu’à trois fois.
+* Si le clonage du référentiel Git échoue, il est tenté à nouveau jusqu’à trois fois.
 
 ### Correctifs {#bug-fixes-cm}
 

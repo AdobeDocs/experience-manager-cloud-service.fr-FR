@@ -2,10 +2,12 @@
 title: Présentation de Cloud Manager
 description: Découvrez comment Cloud Manager prend en charge votre projet AEM par le biais de ses programmes, environnements et pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +63,7 @@ Vous pouvez également accéder à la page Programmes et produits de Cloud Mana
 
 >[!TIP]
 >
->Des profils d’autorisation personnalisés avec des autorisations configurables sont également disponibles. Consultez le document [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md) pour plus d’informations.
+>Des profils d’autorisation personnalisés avec des autorisations configurables sont également disponibles. Pour plus de détails, consultez le document [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
 
 ## Programmes Cloud Manager {#cloud-manager-programs}
 

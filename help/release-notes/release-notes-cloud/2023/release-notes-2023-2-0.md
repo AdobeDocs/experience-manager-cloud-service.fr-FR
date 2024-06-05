@@ -2,8 +2,10 @@
 title: Notes de mise à jour de la version 2023.2.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.2.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 100%
 
@@ -40,7 +42,7 @@ Consultez la vidéo Aperçu de la mise à jour de février 2023 pour un résum�
 * Exportez des fragments de contenu d’AEM as a Cloud Service vers Adobe Target en tant qu’offres JSON.
 * La prise en charge de la pagination et du tri GraphQL, ainsi que des améliorations de la mise en cache interne, permettent désormais d’accroître les performances des applications clientes découplées lors de la récupération de jeux de contenu volumineux d’AEM à l’aide de requêtes et de filtres GraphQL complexes.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 

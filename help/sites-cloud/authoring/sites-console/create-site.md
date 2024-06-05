@@ -1,10 +1,11 @@
 ---
-title: Création d’un site
+title: Créer un site
 description: Découvrez comment les administrateurs utilisent AEM pour créer un site à l’aide de modèles de site afin de définir le style et la structure de votre site.
-feature: Administering
-role: Admin
+feature: Administering, Authoring
+role: Admin, User
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 67%
@@ -12,7 +13,7 @@ ht-degree: 67%
 ---
 
 
-# Création d’un site {#new-site}
+# Créer un site {#new-site}
 
 Découvrez comment les administrateurs utilisent AEM créer un site à l’aide de modèles de site pour définir le style et la structure de votre site.
 

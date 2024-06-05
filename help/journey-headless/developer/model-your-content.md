@@ -2,8 +2,11 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement Adobe Experience Manager (AEM) Headless, apprenez à modéliser votre contenu pour une diffusion AEM Headless à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
 
@@ -224,7 +227,7 @@ Les fragments de contenu sont toujours basés sur un modèle de fragment de cont
 
 ### Sélection du modèle approprié {#select-model}
 
-La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer > Fragment de contenu dans le dossier requis sous Ressources > Fichiers. L’assistant vous guide tout au long des étapes.
+La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer > Fragment de contenu dans le dossier requis dans Ressources > Fichiers. L’assistant vous guide tout au long des étapes.
 
 Un fragment de contenu est basé sur un modèle de fragment de contenu spécifique que vous sélectionnez comme première étape du processus de création.
 

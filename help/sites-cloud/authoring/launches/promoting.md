@@ -2,10 +2,13 @@
 title: Conversion de lancements
 description: Vous devez convertir des pages de lancement afin de renvoyer le contenu dans la source (production) avant de le publier.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -80,7 +83,7 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 
 ## Conversion de pages de lancement lors de leur modification {#promoting-launch-pages-when-editing}
 
-Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement** est également disponible dans les **informations sur la page**. L’assistant s’ouvre alors pour collecter les informations nécessaires.
+Lorsque vous modifiez une page de lancement, l’action **Promouvoir le lancement** est également disponible dans les **informations sur la page**. Cette action ouvre l’assistant pour collecter les informations nécessaires.
 
 ![Convertir le lancement à partir des informations du site](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

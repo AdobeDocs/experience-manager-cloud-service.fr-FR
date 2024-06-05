@@ -4,10 +4,12 @@ description: Découvrez comment configurer l’éditeur de texte enrichi [!DNL A
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '4303'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +25,7 @@ Pour plus d’informations sur les autres configurations d’éditeur de texte e
 
 ## Activation d’un module externe et configuration de la propriété features {#activateplugin}
 
-Pour activer un module externe, procédez comme suit. Certaines étapes ne sont nécessaires que lorsque vous configurez un module externe pour la première fois, car les noeuds correspondants n’existent pas.
+Pour activer un module externe, procédez comme suit : Certaines étapes ne sont nécessaires que lorsque vous configurez un module externe pour la première fois, car les nœuds correspondants n’existent pas.
 
 Par défaut, les modules externes `format`, `link`, `list`, `justify` et `control`, ainsi que toutes leurs fonctions, sont activés dans l’éditeur de texte enrichi.
 
@@ -75,7 +77,7 @@ La boîte de dialogue de recherche et de remplacement devient transparente lorsq
 
 ## Configuration des modes de collage {#pastemodes}
 
-Lors de l’utilisation de l’éditeur de texte enrichi, les auteurs peuvent coller du contenu dans l’un des trois modes suivants :
+Lorsqu’ils utilisent l’éditeur de texte enrichi, les créateurs et créatrices peuvent coller du contenu dans l’un des trois modes suivants :
 
 * **Mode Navigateur** : collage de texte avec la mise en œuvre de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables.
 
@@ -95,17 +97,17 @@ Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs d
 
 Pour configurer l’éditeur de texte enrichi afin qu’il affiche les icônes requises, procédez comme suit.
 
-1. Accédez à votre composant, par exemple : `/apps/<myProject>/components/text`.
+1. Accédez à votre composant, par exemple `/apps/<myProject>/components/text`.
 1. Accédez au nœud `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
 1. Créez la propriété `features` sur le nœud `edit` et ajoutez une ou plusieurs des fonctions. Enregistrez toutes les modifications.
 
 ### Configuration du comportement de l’icône et du raccourci Coller (Ctrl + V) {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
-Vous pouvez préconfigurer le comportement de la variable **[!UICONTROL Coller (Ctrl+V)]** à l’aide des étapes suivantes. Cette configuration définit également le comportement du raccourci clavier Ctrl+V que les auteurs utilisent pour coller du contenu.
+Vous pouvez préconfigurer le comportement de l’icône **[!UICONTROL Coller (Ctrl+V)]** en vous aidant des étapes suivantes. Cette configuration définit également le comportement du raccourci clavier Ctrl+V que les créateurs et créatrices utilisent pour coller du contenu.
 
-La configuration permet d’utiliser les trois types de cas suivants :
+La configuration permet d’utiliser les trois types de cas suivants :
 
-* Coller du texte à l’aide de l’implémentation de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables. Configuré à l’aide de `browser` ci-dessous.
+* Collage de texte avec la mise en œuvre de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables. Configuré à l’aide de `browser` ci-dessous.
 
 * Collage du contenu du Presse-papiers en tant que texte brut. Cela supprime tous les éléments de style et de mise en forme du contenu copié avant insertion dans le composant [!DNL Experience Manager]. Configuré à l’aide de `plaintext` ci-dessous.
 
@@ -191,11 +193,11 @@ Voici un exemple de structure `htmlPasteRules` valide :
 
 ## Configuration des styles de texte {#textstyles}
 
-Les auteurs peuvent appliquer des styles pour modifier l’aspect d’une partie de texte. Les styles sont basés sur les classes CSS que vous avez prédéfinies dans votre feuille de style CSS. Le contenu stylisé est inclus dans les balises `span` à l’aide de l’attribut `class` pour faire référence à la classe CSS. Par exemple :
+Les créateurs et créatrices peuvent appliquer des styles pour modifier l’apparence d’une portion de texte. Les styles sont basés sur les classes CSS que vous avez prédéfinies dans votre feuille de style CSS. Le contenu stylisé est inclus dans les balises `span` à l’aide de l’attribut `class` pour faire référence à la classe CSS. Par exemple :
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
-Lorsque le module externe Styles est activé pour la première fois, aucun style par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des styles aux auteurs, procédez comme suit :
+Lorsque le module externe Styles est activé pour la première fois, aucun style par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des styles aux créateurs et créatrices, procédez comme suit :
 
 * Activez le sélecteur de liste déroulante Style.
 * Spécifiez un ou plusieurs emplacements des feuilles de style.
@@ -228,7 +230,7 @@ Cette opération et effectuée en activant le module externe Styles.
 
 Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référencer :
 
-1. Accédez au noeud racine de votre composant Texte, par exemple : `/apps/<myProject>/components/text`.
+1. Accédez au nœud racine de votre composant Texte, par exemple `/apps/<myProject>/components/text`.
 1. Ajoutez la propriété `externalStyleSheets` au nœud parent de `<rtePlugins-node>` :
 
    * **Nom** `externalStyleSheets`
@@ -280,7 +282,7 @@ L’éditeur de texte enrichi utilise un élément DOM de conteneur doté d’un
 
    * **Nom** `text`
    * **Type** `String`
-   * **Valeur** Description du style ; s’affiche dans la zone de sélection de la liste déroulante Style .
+   * **Valeur**. Description du style, s’affiche dans la zone de sélection de la liste déroulante Style.
 
 1. Enregistrez les modifications.
 
@@ -302,8 +304,8 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
    * Valeur : `jpn-word-wrap` (sans préfixe `.`)
 
 1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que les auteurs voient lors de la sélection du style.
-   * Nom : `text`
-*Type : `String`
+   * Nom : `text`
+*Type : `String`
    * Valeur : `Japanese word-wrap`
 
 1. Créez une feuille de style et spécifiez son chemin d’accès. Consultez [spécification de l’emplacement de la feuille de style](#locationofstylesheet). Ajoutez le contenu suivant à la feuille de style. Modifiez la couleur d’arrière-plan selon vos besoins.
@@ -321,7 +323,7 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 ## Configuration des formats de paragraphe {#paraformats}
 
-Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur peut les sélectionner et les affecter à l’aide du sélecteur Format . Les exemples de balises block incluent, entre autres, le paragraphe standard. &lt;p> et en-têtes &lt;h1>, &lt;h2>, etc.
+Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur ou l’autrice peut les sélectionner et les attribuer à l’aide du sélecteur Format. Les exemples de balises block incluent, entre autres, le paragraphe standard. &lt;p> et en-têtes &lt;h1>, &lt;h2>, etc.
 
 >[!CAUTION]
 >
@@ -331,7 +333,7 @@ Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise b
 >
 >Si une balise block, par exemple, une `<hr>` balise, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour une balise `paraformat` plug-in .
 
-Lorsque le module externe Formats de paragraphe est activé pour la première fois, aucun format de paragraphe par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
+Lorsque le plug-in Formats de paragraphe est activé pour la première fois, aucun format de paragraphe par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
 
 * Activez la liste du sélecteur pop-up [!UICONTROL Format].
 * Spécifiez les balises block qui peuvent être sélectionnées comme formats de paragraphes dans le menu pop-up.
@@ -384,7 +386,7 @@ Les formats de paragraphe sont mis à disposition pour être sélectionnés :
 
    * **Nom** `description`
    * **Type** `String`
-   * **Valeur** Texte descriptif pour ce format, par exemple, paragraphe, titre 1, titre 2, etc. Ce texte est affiché dans la liste de sélection Format .
+   * **Valeur** Texte descriptif pour ce format, par exemple, paragraphe, titre 1, titre 2, etc. Ce texte est affiché dans la liste de sélection Format.
 
 1. Enregistrez les modifications.
 
@@ -476,11 +478,11 @@ Les styles sont généralement appliqués au texte, mais un ensemble distinct de
 
 >[!NOTE]
 >
-Vous pouvez définir des styles pour les tableaux et les cellules uniquement pour l’IU classique.
+Vous pouvez définir des styles de tableaux et de cellules uniquement pour l’IU classique.
 
 >[!NOTE]
 >
-La copie et le collage de tableaux dans ou depuis un composant d’éditeur de texte enrichi dépendent du navigateur. Il n’est pas pris en charge par défaut pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant d’éditeur de texte enrichi dans Mozilla Firefox dans les IU classique et tactile, la mise en page du tableau n’est pas conservée.
+La copie et le collage de tableaux dans ou depuis un composant d’éditeur de texte enrichi dépendent du navigateur. Cette fonction n’est pas prise en charge par défaut pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant d’éditeur de texte enrichi dans Mozilla Firefox dans les IU classique et tactile, la mise en page du tableau n’est pas conservée.
 
 1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/table`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Créez la propriété `features` sur le nœud `table` :
@@ -499,7 +501,7 @@ La copie et le collage de tableaux dans ou depuis un composant d’éditeur de t
    * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
    * `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
 
-1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement de votre feuille de style](#locationofstylesheet) comme c’est le cas lors de la définition de [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
+1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement de votre feuille de style](#locationofstylesheet), car cela revient à définir les [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
 1. Sous le nœud `table`, créez les nœuds suivants selon les besoins :
 
    * Pour définir des styles pour le tableau entier (disponibles sous **[!UICONTROL Propriétés du tableau]**) :
@@ -592,7 +594,7 @@ Si vous incorporez des modifications que le vérificateur orthographique suggèr
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
-L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir quelques dernières modifications. Par défaut, 50 modifications sont stockées dans l’historique. Vous pouvez configurer cette valeur, au besoin.
+L’éditeur de texte enrichi permet aux auteurs et autrices d’annuler ou de rétablir quelques dernières modifications. Par défaut, 50 modifications sont stockées dans l’historique. Vous pouvez configurer cette valeur, au besoin.
 
 1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/undo`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Sur le nœud `undo`, créez la propriété :
@@ -605,9 +607,9 @@ L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir que
 
 ## Configuration de la taille de tabulation {#tabsize}
 
-Lorsque vous appuyez sur le caractère de tabulation dans un texte, un nombre prédéfini d’espaces est inséré ; par défaut, il s’agit de trois espaces insécables et d’un espace.
+Lorsque vous appuyez sur le caractère de tabulation dans un texte, un nombre prédéfini d’espaces est inséré ; par défaut, il s’agit de trois espaces insécables et d’un espace.
 
-Pour définir la taille de la tabulation :
+Pour définir la taille de la tabulation :
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/keys`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Sur le nœud `keys`, créez la propriété :

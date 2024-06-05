@@ -2,10 +2,13 @@
 title: Gestion des noms de domaine personnalisés
 description: Découvrez comment utiliser Cloud Manager pour afficher, mettre à jour, remplacer et supprimer des noms de domaine personnalisés.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -19,7 +22,7 @@ Utilisez le menu **Affichage et mise à jour** pour afficher simplement les dét
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , sélectionnez le programme.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
 1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
 

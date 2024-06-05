@@ -2,10 +2,13 @@
 title: Administration des balises
 description: Découvrez comment administrer des balises dans AEM pour organiser votre contenu.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Workflow
+role: Admin
+source-git-commit: d46678e999889934631bd0c678de5b060bc38f44
 workflow-type: tm+mt
 source-wordcount: '2200'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -30,9 +33,9 @@ Les balises offrent des fonctionnalités puissantes pour organiser et gérer le 
 
 * Les balises peuvent être regroupées dans différents espaces de noms.
    * Les espaces de noms peuvent être considérés comme des hiérarchies qui permettent de créer des taxonomies.
-   * Ces taxonomies sont globales dans toute l&#39;AEM.
+   * Ces taxonomies sont globales dans l’ensemble d’AEM.
 * Les balises peuvent être appliquées par les auteurs et utilisées par les visiteurs du site.
-* Quel que soit leur créateur, toutes les formes de balises peuvent être sélectionnées, lors de l’affectation d’une page ou lors d’une recherche.
+* Quel que soit leur créateur ou créatrice, toutes les formes de balises peuvent être sélectionnées, lors de l’affectation d’une page ou lors d’une recherche.
 * Les balises sont utilisées par la variable [Composant Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=fr) pour générer des listes dynamiques basées sur les balises sélectionnées.
 
 ## Exigences en matière de balises {#requirements}

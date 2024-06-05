@@ -2,10 +2,12 @@
 title: Pages d’erreur personnalisées
 description: AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP, qui peut être personnalisé.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 93%
+source-wordcount: '569'
+ht-degree: 96%
 
 ---
 
@@ -62,7 +64,7 @@ Lorsque le traitement des demandes provoque une exception, la structure Apache 
    * Le code de réponse HTTP 500
    * La trace de la pile d’exception
 
-La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-to-customize-pages-shown-by-the-error-handler) permet de créer un script `500.jsp`. Cependant, ce dernier n’est utilisé que si `HttpServletResponse.sendError(500)` est exécuté de manière explicite ; c’est-à-dire à partir d’un détecteur d’exceptions.
+La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-to-customize-pages-shown-by-the-error-handler) permet de créer un script `500.jsp`. Cependant, il n’est utilisé que si `HttpServletResponse.sendError(500)` est exécuté de manière explicite ; c’est-à-dire à partir d’un détecteur d’exceptions.
 
 Dans le cas contraire, le code de réponse est défini sur 500, mais le script `500.jsp` n’est pas exécuté.
 
@@ -77,6 +79,6 @@ Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire
 >
 >Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreurs par défaut répond en écrivant la trace de la pile complète à la réponse.
 >
->Pour un gestionnaire d’erreurs personnalisé, des réponses avec le code 500 sont nécessaires. Par conséquent, la variable [Le filtre de débogage de la gestion du contenu web CQ doit être désactivé.](/help/implementing/deploying/configuring-osgi.md). Cela garantit le renvoi du code de réponse 500 qui, à son tour, déclenche le gestionnaire d’erreurs Sling approprié.
+>Des réponses avec le code 500 sont nécessaires pour un gestionnaire d’erreurs personnalisé. Par conséquent, le [filtre de débogage de la gestion du contenu web CQ doit être désactivé](/help/implementing/deploying/configuring-osgi.md). Cela garantit le renvoi du code de réponse 500 qui, à son tour, déclenche le gestionnaire d’erreurs Sling approprié.
 >
 >Sur une instance de publication, le filtre de débogage de la gestion du contenu Web CQ est **toujours** désactivé (même s’il est configuré comme étant activé).

@@ -1,10 +1,13 @@
 ---
 title: Personnalisation et extension de la console de fragments de contenu et de l’éditeur
 description: Découvrez comment personnaliser la console Fragment de contenu et l’éditeur
-source-git-commit: 7eeb4fc7f6d5c74a0d3352f1b16f98617945cd88
+exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 26%
+source-wordcount: '87'
+ht-degree: 31%
 
 ---
 

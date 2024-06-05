@@ -2,10 +2,13 @@
 title: Tout assembler – Votre application et votre contenu dans AEM découplé
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment aborder votre projet AEM, notamment les fragments de contenu, les appels GraphQL, les appels API REST et votre application, mais aussi comment préparer ce projet pour la mise en ligne.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 99%
+source-wordcount: '1061'
+ht-degree: 100%
 
 ---
 
@@ -114,6 +117,6 @@ Poursuivez votre parcours dans AEM découplé en consultant le document [Comment
 * [SDK AEM découplé pour les navigateurs côté client (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 * [SDK AEM découplé pour les Node.js côté serveur (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [SDK AEM découplé pour Java™](https://github.com/adobe/aem-headless-client-java)
-* [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
+* [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

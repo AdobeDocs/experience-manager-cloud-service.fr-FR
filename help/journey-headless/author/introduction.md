@@ -2,10 +2,13 @@
 title: Création pour AEM en tant que CMS découplé - Introduction
 description: Une introduction de l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service dans un CMS découplé pour créer du contenu pour votre projet.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 95%
+source-wordcount: '680'
+ht-degree: 100%
 
 ---
 
@@ -61,7 +64,7 @@ De plus, ces fragments peuvent également être utilisés lors de la constructio
 
 La modélisation de contenu (également appelée modélisation de données) est donc un autre terme technique. Pourquoi devrait-il vous intéresser en tant qu’auteur ?
 
-Pour que les applications sans interface utilisateur puissent accéder à votre contenu et en faire quelque chose, votre contenu doit vraiment avoir une structure prédéfinie. Il serait possible de donner à votre contenu une forme libre, mais cela rendrait la vie *vraiment* compliquée aux applications.
+Pour que les applications découplées puissent accéder à votre contenu et en faire quelque chose, votre contenu a vraiment besoin d’une structure prédéfinie. Il serait possible de donner à votre contenu une forme libre, mais cela rendrait la vie *vraiment* compliquée aux applications.
 
 Fondamentalement, le processus de définition de la structure à laquelle votre contenu doit se conformer implique la conception d’un modèle, processus appelé « modélisation des données ».
 
@@ -77,15 +80,15 @@ Maintenant que vous avez découvert les concepts et la terminologie, l’étape 
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
+* [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
 
-* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
 
 * Parcours du développeur AEM Headless
    * [En savoir plus sur le développement CMS découplé](/help/journey-headless/developer/learn-about.md)
    * [Découvrez comment modéliser votre contenu](/help/journey-headless/developer/model-your-content.md)
 
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 
 * [Parcours d’architecture de contenu découplé AEM](/help/journey-headless/architect/overview.md)
 

@@ -2,10 +2,13 @@
 title: Utilisation des workflows de projet
 description: Plusieurs workflows de projet sont proposés prêts à l’emploi.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 96%
+source-wordcount: '449'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +16,7 @@ ht-degree: 96%
 
 Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
 
-* **Workflow d’approbation de projet** - Ce workflow vous permet d’affecter du contenu à un utilisateur, de le passer en revue, puis de l’approuver.
+* **Workflow d’approbation de projet** : ce workflow vous permet d’attribuer le contenu à un utilisateur ou une utilisatrice, de le passer en revue, puis de l’approuver.
 * **Demander le lancement** : ce workflow demande un lancement.
 * **Demander la page de destination** : ce workflow demande une page de destination.
 * **Demander l’adresse électronique** : ce workflow demande une adresse électronique.
@@ -25,8 +28,8 @@ Selon le modèle de projet que vous sélectionnez, certains workflows sont dispo
 |---|:-:|:-:|
 | Workflow d’approbation de projet | x |  |
 | Demander le lancement | x |  |
-| Demander la page de destination | x |  |
-| Demander une adresse | x | |
+| Demander une page de destination | x |  |
+| Demander un e-mail | x | |
 | DAM Créer copie de langue&amp;ast; |  | x |
 | DAM Créer et traduire copie de langue&amp;ast; |   | x |
 
@@ -36,7 +39,7 @@ Selon le modèle de projet que vous sélectionnez, certains workflows sont dispo
 
 Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow choisi. Seules les étapes changent.
 
-Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la mosaïque **Tâches**. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône de l’utilisateur ou de l’utilisatrice.
+Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la vignette **Tâches**. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône de l’utilisateur ou de l’utilisatrice.
 
 Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-vous aux sections suivantes :
 

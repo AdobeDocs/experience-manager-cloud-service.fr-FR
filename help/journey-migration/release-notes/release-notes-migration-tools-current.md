@@ -3,10 +3,11 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2024.05.0
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: 5275c759d38563f655d4861b191aaf583d001268
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 42%
+ht-degree: 43%
 
 ---
 
@@ -22,7 +23,7 @@ La date de publication de l’analyseur des bonnes pratiques v2.1.48 est le 9 ma
 
 ### Nouveautés {#what-is-new-bpa}
 
-* L’analyseur des bonnes pratiques (BPA) prend désormais en charge le chargement automatique des rapports générés par BPA directement dans le gestionnaire d’accélération du cloud (CAM). Les utilisateurs n’auront plus besoin de télécharger manuellement le rapport et de le charger dans la CAM. En savoir plus [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
+* L’analyseur des bonnes pratiques (BPA) prend désormais en charge le chargement automatique des rapports générés par BPA directement dans le gestionnaire d’accélération du cloud (CAM). Les utilisateurs n’auront plus besoin de télécharger manuellement le rapport et de le charger dans la CAM. En savoir plus [here](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
 
 ## Cloud Acceleration Manager {#cam-release}
 

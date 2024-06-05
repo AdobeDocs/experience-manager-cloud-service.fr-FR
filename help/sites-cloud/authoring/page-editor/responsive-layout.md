@@ -2,10 +2,13 @@
 title: Mise en page réactive
 description: AEM permet de créer une mise en page réactive pour vos pages.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1740'
-ht-degree: 83%
+ht-degree: 86%
 
 ---
 
@@ -49,7 +52,7 @@ Selon votre projet, le conteneur de mises en page peut être utilisé comme syst
 
 >[!TIP]
 >
->Adobe fournit [Documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la mise en page réactive en tant que référence pouvant être fournie aux développeurs front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple, lors de la création de maquettes de HTML statiques pour un site d’ futur.
+>Adobe propose une [documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) sur la disposition réactive. Celle-ci peut servir de référence et être distribuée aux équipes de développement d’applications front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lors de la création de maquettes HTML statiques pour un site AEM en préparation.
 
 >[!NOTE]
 >
@@ -96,7 +99,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    La barre d’outils de l’émulateur affiche des options de mise en page supplémentaires :
 
-   * **Rotation du périphérique** - Permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage) et inversement.
+   * **Rotation de l’appareil** : permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage), et inversement.
 
    ![Bouton Rotation de l’appareil - Paysage](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Bouton Rotation de l’appareil - Portrait](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)

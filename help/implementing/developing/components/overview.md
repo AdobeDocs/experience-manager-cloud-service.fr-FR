@@ -2,10 +2,12 @@
 title: Aperçu des composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 57%
+ht-degree: 66%
 
 ---
 
@@ -27,9 +29,9 @@ Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels
 * Ils sont développés à l’aide de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr).
 * Ils peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
 
-Les composants étant modulaires, vous pouvez :
+Les composants étant modulaires, vous pouvez :
 
-* Développez un nouveau composant sur votre instance locale.
+* développer un nouveau composant sur votre instance locale ;
 * Déployer ce composant sur votre environnement de test.
 * Déployer le composant sur votre environnement de création actif et permettre ainsi aux auteurs et/ou développeurs d’ajouter et de configurer du contenu.
 * Déployez-le dans vos environnements de publication actifs, où il est utilisé pour effectuer le rendu du contenu pour les visiteurs de votre site web.
@@ -50,7 +52,7 @@ Les composants principaux sont fournis avec AEM as a Cloud Service et le [tutori
 
 Pour un aperçu de tous les composants disponibles dans votre instance AEM, utilisez la méthode [Console Composants](/help/sites-cloud/authoring/components-console.md).
 
-Vous pouvez également utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
+Vous pouvez également utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
 
 1. Dans **[!UICONTROL CRXDE Lite]**, sélectionnez **[!UICONTROL Outils]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Requête]** pour ouvrir l’onglet **[!UICONTROL Requête]**.
 

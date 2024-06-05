@@ -2,10 +2,12 @@
 title: Indexation après migration de contenu
 description: Découvrez comment le processus de migration va indexer le contenu ingéré sur l’instance du Cloud Service de destination.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 58195fcb10312c89042f555665d4c8b3642f82ba
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 

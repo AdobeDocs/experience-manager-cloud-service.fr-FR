@@ -1,17 +1,19 @@
 ---
 title: Prise en main des SPA dans AEM avec React
-description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
+description: Cet article présente un exemple d’application SPA, explique comment elle est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
 # Prise en main des SPA dans AEM avec React {#getting-started-with-spas-in-aem-using-react}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Le souhait des développeurs et des développeuses est de pouvoir créer des sites avec des structures SPA. Les auteurs, et les autrices pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de structures SPA.
+Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Le souhait des développeurs et des développeuses est de pouvoir créer des sites avec des structures SPA. Les auteurs, et les autrices pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de structures SPA.
 
 La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente une SPA simplifiée dans le framework React, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA.
 
@@ -209,7 +211,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-L’idée centrale de SPA dans AEM est de mapper les composants de la version de la version de la version de la version de la version de la version de la version de la version de la version de la version de la version d’SPA aux composants de la version d’ et de mettre à jour le composant lorsque le contenu est modifié (et inversement). Consultez le document [Aperçu de l’éditeur de SPA](editor-overview.md), qui résume ce modèle de communication.
+Les SPA dans AEM ont comme principale finalité de mapper les composants SPA aux composants AEM et de mettre à jour le composant lorsque le contenu est modifié (et inversement). Consultez le document [Aperçu de l’éditeur de SPA](editor-overview.md), qui résume ce modèle de communication.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
@@ -256,7 +258,7 @@ Pour plus d’informations, voir le document [Plan directeur d’applications su
 
 Il est régulièrement nécessaire que les composants d’une application sur une seule page partagent des informations. Il existe plusieurs méthodes recommandées pour cela, énumérées ci-dessous dans un ordre de complexité croissant.
 
-* **Option 1 :** Centralisez la logique et procédez à une diffusion vers les composants nécessaires, par exemple à l’aide de React Context.
+* **Option 1 :** centralisez la logique et procédez à une diffusion vers les composants nécessaires, par exemple en utilisant React Context.
 * **Option 2 :** Partagez des états de composant en utilisant une bibliothèque d’états telle que Redux.
 * **Option 3 :** Tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
 

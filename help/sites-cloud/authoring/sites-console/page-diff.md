@@ -2,10 +2,13 @@
 title: Outil de comparaison des pages
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -65,7 +68,7 @@ L’outil de comparaison détecte les modifications effectuées sur les composan
 
 ### Affichage en mode plein écran {#fullscreen-and-exiting}
 
-Pour vous concentrer sur un contenu particulier, vous pouvez cliquer sur l’icône Plein écran de l’un des &quot;côtés&quot; de la comparaison côte à côte afin de l’agrandir dans la fenêtre du navigateur.
+Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
 
 ![Bouton Plein écran](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
@@ -94,7 +97,7 @@ Dans certains cas, l’outil de comparaison des pages peut ne pas détecter tout
 
 >[!NOTE]
 >
->Les versions ne peuvent pas être comparées les unes aux autres. Seule la version en cours peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
+>Les versions ne peuvent pas être comparées entre elles. Seule la version en cours peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
 
 >[!NOTE]
 >

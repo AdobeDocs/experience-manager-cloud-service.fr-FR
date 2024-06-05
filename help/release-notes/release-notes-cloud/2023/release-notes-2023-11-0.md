@@ -2,7 +2,9 @@
 title: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 55%
@@ -25,7 +27,7 @@ La section suivante concerne les notes de mise à jour de la version 2023.11.0 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) est le vendredi 30 novembre 2023. La prochaine disponibilité des fonctionnalités (2023.12.0) est prévue pour le vendredi 14 décembre 2023.
+La date de publication de la version actuelle (2023.11.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 30 novembre 2023. La prochaine disponibilité des fonctionnalités (2023.12.0) est prévue pour le vendredi 14 décembre 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -45,7 +47,7 @@ Regardez la vidéo Présentation de la version de novembre 2023 pour un résumé
 
 ![Rechercher et remplacer](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
-Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-headless-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs.
+Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-headless-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

@@ -4,10 +4,11 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1413'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 92%
 
 ## Général {#general}
 
-MSM est une structure configurable pour automatiser le déploiement de contenu. Les mises en œuvre impliquent souvent des parties importantes d’un site web, ainsi que plusieurs organisations et zones géographiques. Il est donc vivement recommandé de planifier les mises en oeuvre MSM avec autant de soin que vous planifiez votre site web :
+MSM est une structure configurable pour automatiser le déploiement de contenu. Les mises en œuvre impliquent souvent des parties importantes d’un site web, ainsi que plusieurs organisations et zones géographiques. Il est donc vivement recommandé de planifier les mises en œuvre MSM avec autant de soin que vous planifiez votre site web :
 
 * **Planifiez la structure et les flux de contenu** avec soin avant de commencer la mise en œuvre.
 * **Personnalisez autant que nécessaire, mais le moins possible.** Bien que MSM prenne en charge un haut degré de personnalisation (par exemple, les configurations de déploiement), la meilleure pratique pour favoriser les performances, la fiabilité et l’amélioration de votre site web est généralement de minimiser la personnalisation.
@@ -43,7 +44,7 @@ Lors de la création d’un site avec une Live Copy, il est avantageux de créer
 
 ## Composants et synchronisation de conteneur {#components-and-container-synchronization}
 
-En général, la règle de déploiement dans MSM concernant la synchronisation des composants est la suivante :
+En général, la règle de déploiement dans MSM concernant la synchronisation des composants est la suivante :
 
 * Les composants sont déployés en synchronisant toutes les ressources contenues dans le plan directeur.
 * Les conteneurs ne synchronisent que la ressource active.
@@ -66,7 +67,7 @@ Notez qu’AEM propose deux méthodes principales pour créer des Live Copies 
 
 Voici quelques points à garder à l’esprit lors de la création d’un site :
 
-* Pour créer un site, vous devez disposer d’un [configuration du plan directeur](creating-live-copies.md#managing-blueprint-configurations).
+* Pour créer un site, vous avez besoin d’une [configuration de plan directeur](creating-live-copies.md#managing-blueprint-configurations).
 * Pour permettre la sélection des chemins de langue afin de créer un site, les racines de langue correspondantes doivent exister dans le plan directeur (source).
 * Une fois qu’un [site a été créé comme une Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (en sélectionnant **Créer**, puis **Site**), les deux premiers niveaux de cette Live Copy sont *peu profonds*. Les enfants de la page n’appartiennent pas à la relation activée, mais un déploiement descend toujours si une relation activée correspondant au déclencheur est détectée.
 
@@ -119,7 +120,7 @@ Lorsque vous envisagez de déplacer des pages dans une Live Copy, tenez compte 
 
 ## Personnalisation des déploiements {#customizing-rollouts}
 
-Les configurations de déploiement MSM sont fortement personnalisables. L’automatisation des déploiements peut avoir des conséquences de grande envergure. En règle générale, il est recommandé de vous préparer soigneusement avant de vous engager dans les activités suivantes :
+Les configurations de déploiement MSM sont fortement personnalisables. L’automatisation des déploiements peut avoir d’importantes conséquences. En règle générale, il est recommandé de vous préparer soigneusement avant de vous engager dans les activités suivantes :
 
 * Automatisation des déploiements, par exemple avec des [déclencheurs onModify](#onmodify)
 * Personnalisation des [propriétés ou des types de nœuds](#node-types-properties)
@@ -132,7 +133,7 @@ Lorsque vous utilisez le [déclencheur de déploiement](live-copy-sync-config.md
 
 * L’automatisation des déploiements avec des déclencheurs `onModify` peut avoir un impact négatif sur les performances de création, car ils déclenchent des déploiements après chaque modification de page.
 * Le résultat du déploiement peut différer de celui attendu, car :
-   * Vous ne pouvez pas spécifier l’ordre des événements de modification qui en résultent.
+   * Vous ne pouvez pas spécifier l’ordre des événements de modification résultants.
    * L’architecture basée sur des événements ne peut pas garantir la séquence des événements transmis au Gestionnaire de déploiement.
 * L’utilisation d’une telle configuration de déploiement peut entraîner des conflits de validation si des mises à jour simultanées de la même ressource se produisent.
 
@@ -140,7 +141,7 @@ Par conséquent, il est recommandé d’utiliser uniquement les déclencheurs `o
 
 ### Types/propriétés de nœuds {#node-types-properties}
 
-Outre la personnalisation des actions de déploiement, MSM vous permet de personnaliser les propriétés de noeud en cours de déploiement. La variable [La configuration OSGi MSM vous permet d’exclure les types de noeuds](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
+En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La variable [La configuration OSGi MSM vous permet d’exclure les types de noeuds](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
 
 ## Informations supplémentaires {#further-information}
 

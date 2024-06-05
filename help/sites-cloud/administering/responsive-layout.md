@@ -1,13 +1,16 @@
 ---
 title: Configuration du conteneur de mises en page et du mode Mise en page
 description: Découvrez comment configurer le conteneur de mises en page et le mode de mise en page pour activer les mises en page réactives pour vos auteurs de contenu.
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
+solution: Experience Manager Sites
+feature: Administering
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 50%
 
 ---
-
 
 # Configuration du conteneur de mises en page et du mode Mise en page {#configuring-layout-container-and-layout-mode}
 

@@ -4,10 +4,12 @@ seo-title: Developer Mode
 description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +54,7 @@ Il présente une arborescence de composants qui :
 
 * décrit la chaîne de composants et de modèles rendus sur la page. L’arborescence peut être développée pour afficher le contexte dans la hiérarchie.
 * affiche le temps de calcul côté serveur nécessaire au rendu du composant ;
-* Permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, par exemple :
+* permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, par exemple :
    * le chemin du référentiel ;
    * les liens vers les scripts (accessibles dans CRXDE Lite)
    * Les informations sur le composant, comme indiqué dans la section [Console des composants](/help/sites-cloud/authoring/components-console.md)

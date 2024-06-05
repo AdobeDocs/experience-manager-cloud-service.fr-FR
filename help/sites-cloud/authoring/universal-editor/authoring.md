@@ -2,10 +2,13 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 23%
+ht-degree: 25%
 
 ---
 
@@ -84,7 +87,7 @@ L’organisation dans laquelle vous êtes actuellement connecté s’affiche. S�
 
 #### Solutions {#solutions}
 
-Appuyez ou cliquez sur le sélecteur de solutions pour accéder rapidement à d’autres solutions Experience Cloud.
+Appuyez ou cliquez sur le sélecteur de solutions pour accéder rapidement à d’autres solutions Experience Cloud.
 
 ![Sélecteur de solutions](assets/solutions.png)
 
@@ -102,7 +105,7 @@ Cette icône comporte un badge indiquant le nombre d’éléments incomplets act
 
 #### Propriétés de l’utilisateur ou de l’utilisatrice {#user-properties}
 
-Sélectionnez l’icône représentant votre utilisateur pour accéder à vos paramètres utilisateur. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
+Appuyez ou cliquez sur l’icône qui représente votre utilisateur ou votre utilisatrice pour accéder à vos paramètres d’utilisateur ou d’utilisatrice. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
 
 ![Propriétés de l’utilisateur](assets/user-properties.png)
 

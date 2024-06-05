@@ -2,8 +2,11 @@
 title: Publication du contenu découplé traduit
 description: Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 
@@ -63,7 +66,7 @@ La méthode la plus simple pour publier les traductions consiste à accéder au 
 
 Ce chemin d’accès mène aux sous-dossiers pour chaque langue de traduction et vous pouvez choisir laquelle publier.
 
-1. Naviguez vers **Navigation** -> **Assets** -> **Fichiers** et ouvrez le dossier du projet.
+1. Accédez à **Navigation** -> **Ressources** -> **Fichiers** et ouvrez le dossier du projet.
 1. Vous pouvez y voir le dossier racine de langue et tous les autres dossiers de langue. Sélectionnez la ou les langues localisées que vous souhaitez publier.
    ![Sélection du dossier de langue.](assets/select-language-folder.png)
 1. Sélectionner **Gérer la publication**.
@@ -92,7 +95,7 @@ Cependant, comme auparavant, le processus est légèrement différent si vous av
 
 ### Mise à jour d’un projet de traduction créé automatiquement {#updating-automatic-project}
 
-1. Accédez à **Navigation** -> **Ressources** -> **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
+1. Accédez à **Navigation** > **Ressources** > **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
 1. Sélectionnez la racine de langue de votre projet. Dans ce cas, nous avons sélectionné `/content/dam/wknd/en`.
 1. Sélectionnez le sélecteur de rail et affichez le **Références** du panneau.
 1. **Sélectionner des copies de langue**.

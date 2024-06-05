@@ -2,10 +2,13 @@
 title: Tests fonctionnels Java™
 description: Découvrez comment écrire des tests fonctionnels Java™ pour AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -128,7 +131,7 @@ Assurez-vous que votre dépendance dans `it.tests/pom.xml` a été mis à jour.
 
 >[!NOTE]
 >
->Cette modification doit être effectuée avant le 6 avril 2024.
+>Cette modification doit être effectuée avant le 6 avril 2024.
 >Si vous ne mettez pas à jour la bibliothèque de dépendances, des échecs de pipeline se produiront à l’étape « Tests fonctionnels personnalisés ».
 
 ### Exécution locale du test {#local-test-execution}

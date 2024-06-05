@@ -2,10 +2,12 @@
 title: Exemples de types de module d’IU ContextHub
 description: ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions.
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 94%
+source-wordcount: '1114'
+ht-degree: 95%
 
 ---
 
@@ -170,7 +172,7 @@ La source du module d’IU se trouve à l’adresse `/libs/granite/contexthub/co
 
 ### Configuration {#configuration-5}
 
-Les instances du module d’IU `contexthub.screen-orientation` ne nécessitent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La variable `clickable` est `false` par défaut. Si vous remplacez la configuration par défaut à définir `clickable` to `true`, cliquez sur le module pour afficher une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
+Les instances du module d’IU `contexthub.screen-orientation` ne nécessitent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La propriété `clickable` est définie sur `false` par défaut. Si vous remplacez la configuration par défaut à définir `clickable` to `true`, cliquez sur le module pour afficher une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
 
 ```javascript
 {

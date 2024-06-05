@@ -2,10 +2,13 @@
 title: Personnaliser le thème du site
 description: Découvrez comment le thème du site est créé, comment le personnaliser et comment le tester à l’aide du contenu réel d’AEM.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 94%
+source-wordcount: '954'
+ht-degree: 100%
 
 ---
 
@@ -64,9 +67,9 @@ Lorsque la structure du projet de thème vous convient, démarrez le proxy local
 
    ![npm run live](assets/npm-run-live.png)
 
-1. Lorsque le serveur proxy démarre, il ouvre automatiquement un navigateur sur `http://localhost:7001/`. Sélectionner **CONNEXION LOCALE (TÂCHES D’ADMINISTRATION UNIQUEMENT)** et connectez-vous avec les informations d’identification de l’utilisateur proxy fournies par l’administrateur AEM.
+1. Lorsque le serveur proxy démarre, il ouvre automatiquement un navigateur sur `http://localhost:7001/`. Appuyez ou cliquez sur **CONNEXION LOCALE (TÂCHES D’ADMINISTRATION UNIQUEMENT)** et connectez-vous avec les identifiants de l’utilisateur proxy fournies par l’administrateur AEM.
 
-   ![Connexion locale](assets/sign-in-locally.png)
+   ![Connexion locale.](assets/sign-in-locally.png)
 
    >[!TIP]
    >
@@ -135,7 +138,7 @@ Maintenant que vous avez terminé cette partie du parcours de création rapide d
 * Voir comment tester vos personnalisations de thème à l’aide de contenu d’AEM réel via un proxy local.
 * Savoir comment valider vos modifications dans le référentiel Git d’AEM.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document. [Déployer Votre Thème Personnalisé,](deploy-theme.md) où vous apprenez à déployer le thème à l’aide du pipeline front-end.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Déployer votre thème personnalisé](deploy-theme.md), qui vous apprendra à déployer le thème à l’aide du pipeline front-end.
 
 ## Ressources supplémentaires {#additional-resources}
 

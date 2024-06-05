@@ -2,16 +2,18 @@
 title: Terminologie d’AEM as a Cloud Service
 description: Avant de vous connecter à AEMaaCS, il est utile de comprendre une partie de la terminologie du système et sa structure de base.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Terminologie d’AEM as a Cloud Service {#terminology}
 
-Dans cette partie du [parcours d&#39;intégration,](overview.md) vous découvrez la terminologie d&#39;AEM as a Cloud Service et sa structure de base.
+Dans cette partie du [parcours d’intégration,](overview.md) vous découvrirez certains aspects de la terminologie d’AEM as a Cloud Service et sa structure de base.
 
 ## Objectif {#objective}
 
@@ -19,7 +21,7 @@ Maintenant que vous comprenez ce qui a conduit au processus d’intégration en 
 
 AEM as a Cloud Service est un outil puissant et flexible, et pour utiliser n’importe quel outil, vous devez connaître son organisation ainsi que sa terminologie et le langage utilisés pour le décrire. Ce document résume certains termes clés que vous devez comprendre avant de commencer à utiliser le système.
 
-Après avoir lu ce document, vous devez comprendre
+Après avoir lu ce document, vous comprendrez :
 
 * Les différents calques qui constituent AEMaaCS.
 * Les principes de base de chaque calque.
@@ -44,7 +46,7 @@ Un exemple est souvent utile pour contextualiser cette hiérarchie.
    * Un programme Assets pour la division WKND Media
 * Les programmes pour WKND Magazine et WKND Media auraient tous les deux des **environnements** de développement, d’évaluation et de production.
 * **Des référentiels** sont utilisés pour gérer le code personnalisé et les applications pour WKND Magazine et WKND Media.
-* Divers **outils et workflows** utilisez les référentiels pour déployer le code à l’aide des pipelines CI/CD, des journaux d’accès, des AEM d’accès, etc.
+* Divers **outils et workflows** travaillent sur les référentiels pour déployer le code à l’aide des pipelines CI/CD, accéder aux logs, accéder à AEM, etc.
 
 ## Prochaines étapes {#what-is-next}
 
@@ -53,4 +55,4 @@ Maintenant que vous avez terminé cette partie du parcours d’intégration AEM,
 * Les différents calques qui constituent AEMaaCS.
 * Les principes de base de chaque calque.
 
-Tenez compte de ces connaissances et continuez votre parcours d’intégration AEM en lisant le document suivant. [Accès au Admin Console](admin-console.md), où vous découvrez comment accéder à la console et vérifier votre statut en tant qu’administrateur système.
+Tirez parti de ces connaissances et poursuivez votre parcours d’intégration AEM en consultant le document [Accès à Admin Console](admin-console.md), où vous apprendrez comment accéder à la console et vérifier votre statut en tant qu’administrateur système.

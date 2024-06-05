@@ -2,14 +2,17 @@
 title: 'Facultatif : comment créer des applications monopages (SPA) avec Adobe Experience Manager (AEM)'
 description: Dans cette suite facultative du parcours de développement découplé AEM, vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1259'
 ht-degree: 100%
 
 ---
 
-# Comment créer des applications sur une seule page (SPA) avec AEM {#create-spa}
+# Comment créer des applications monopages avec AEM {#create-spa}
 
 Dans cette suite facultative du [Parcours de développement découplé AEM](overview.md), vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles. Vous découvrirez également comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM et intégrer des SPA externes, en activant les fonctionnalités d’édition selon les besoins.
 
@@ -32,7 +35,7 @@ Cet article s’appuie sur vos connaissances du découplage AEM en explorant en 
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment les applications d’une seule page sont développées à l’aide du cadre de l’éditeur de SPA AEM. Après avoir lu ce document, vous devriez :
+Ce document vous aide à comprendre comment les applications monopages sont développées à l’aide du cadre de l’éditeur d’application monopage AEM. Après avoir lu ce document, vous devriez :
 
 * comprendre la fonction de base de l’éditeur de SPA ;
 * connaître les exigences relatives à la création d’une SPA entièrement modifiable pour AEM ;
@@ -72,7 +75,7 @@ Pour obtenir une description complète des SPA et des raisons de leur utilisatio
 
 ## Comment AEM gère les SPA
 
-Le développement d’applications sur une seule page sur AEM suppose que le développeur front-end respecte les bonnes pratiques standard lors de la création d’une SPA. En tant que personne chargée du développement front-end, si vous suivez ces bonnes pratiques générales et quelques principes spécifiques à AEM, votre SPA devient fonctionnelle avec AEM et ses fonctionnalités de création de contenu.
+Le développement d’applications monopages sur AEM suppose que l’équipe de développement front-end respecte les bonnes pratiques standard lors de la création d’une application monopage. En tant que personne chargée du développement front-end, si vous suivez ces bonnes pratiques générales et quelques principes spécifiques à AEM, votre SPA devient fonctionnelle avec AEM et ses fonctionnalités de création de contenu.
 
 * **Portabilité** : comme pour tout composant, les composants de SPA créés doivent être aussi portables que possible. La SPA doit être créée avec des composants portables et réutilisables.
 * **AEM détermine la structure du site** : la personne chargée du développement front-end crée des composants et contrôle leur structure interne, mais elle dépend d’AEM pour définir la structure de contenu du site.

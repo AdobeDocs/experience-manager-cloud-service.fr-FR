@@ -2,10 +2,13 @@
 title: Gestion des audiences
 description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub.
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 87%
+source-wordcount: '885'
+ht-degree: 86%
 
 ---
 

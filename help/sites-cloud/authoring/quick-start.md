@@ -2,7 +2,10 @@
 title: Guide de démarrage rapide pour la création
 description: Commencez ici pour obtenir un guide de haut niveau rapide afin de commencer à créer du contenu à l’aide de la console Sites.
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 3%
@@ -109,4 +112,4 @@ Voici d’autres ressources qui approfondissent toutes les fonctionnalités de l
 * [Concepts de création](/help/sites-cloud/authoring/author-publish.md)
 * [La console Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
 * [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Publication de pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+* [Publier des pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md)

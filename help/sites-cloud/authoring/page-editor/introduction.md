@@ -1,13 +1,16 @@
 ---
 title: Éditeur de page d’AEM
 description: L’éditeur de page d’AEM est un outil puissant pour créer du contenu.
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
+exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 40%
 
 ---
-
 
 # Éditeur de page d’AEM {#editing-page-content}
 
@@ -98,7 +101,7 @@ Plusieurs modes sont possibles lors de la modification d’une page, ce qui perm
 * [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) - Améliore la pertinence du contenu grâce au ciblage et à la mesure sur tous les canaux
 * [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - Affichage de l’état d’une page à un moment donné
 * [État de Live Copy](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - Permet d’obtenir un aperçu rapide de l’état de Live Copy et des composants qui sont/ne sont pas hérités.
-* [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
+* [Mode de développement](/help/implementing/developing/tools/developer-mode.md)
 * [Aperçu](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - Affichez la page telle qu’elle s’affiche dans l’environnement de publication ou naviguez à l’aide de liens dans le contenu.
 * [Annoter](/help/sites-cloud/authoring/page-editor/annotations.md) - Ajouter ou afficher des annotations sur la page
 
@@ -178,7 +181,7 @@ Par exemple :
 
 ![Exemple d’affichage de l’état de Live Copy](assets/page-editor-editing-live-copy-status.png)
 
-## Aperçu des pages {#previewing-pages}
+## Prévisualiser des pages {#previewing-pages}
 
 Deux options sont disponibles pour prévisualiser une page :
 

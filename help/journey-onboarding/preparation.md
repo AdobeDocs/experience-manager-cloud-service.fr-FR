@@ -2,10 +2,12 @@
 title: Préparation à l’intégration
 description: Avant que le processus d’intégration ne commence, l’administrateur système doit comprendre un certain nombre d’étapes préparatoires avant de se connecter au système.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +19,7 @@ Maintenant que vous savez ce qui vous attend dans le processus d’intégration 
 
 AEM as a Cloud Service est un outil puissant et flexible qui propose de nombreuses solutions, modules complémentaires et modèles de déploiement. La solution que votre entreprise est autorisée à utiliser est définie dans votre contrat avec Adobe. Cette information vous permet de démarrer le processus d’intégration.
 
-Après avoir lu ce document, vous devez comprendre
+Après avoir lu ce document, vous comprendrez :
 
 * Ce que votre contrat avec Adobe définit.
 * Quelles sont les dispositions d’Adobe.
@@ -73,7 +75,7 @@ L’objectif de l’appel est de vous donner l’opportunité de poser des quest
 
 Une fois le processus de configuration de l’environnement terminé, l’administrateur système client désigné dans le contrat reçoit un e-mail de bienvenue confirmant que l’accès à Adobe Experience Cloud lui a été accordé. Si vous lisez ce parcours de documentation, cette personne est probablement vous !
 
-L’e-mail contient des informations détaillées sur la prise en main des services Experience Cloud et du portail en libre-service Cloud Manager. Il contient également des informations importantes, telles que les ressources d’assistance, les forums, les questions fréquentes, etc. La liste des ressources fournies dans l’e-mail contient également des informations sur la façon d’accéder à vos environnements cloud AEM.
+L’e-mail contient des informations détaillées sur la prise en main des services Experience Cloud et du portail en libre-service Cloud Manager. De plus, l’e-mail contient des informations importantes, telles que la façon d’accéder aux ressources d’assistance, aux forums, aux questions fréquentes, etc. La liste des ressources fournies dans l’e-mail contient également des informations sur la façon d’accéder à vos environnements cloud AEM.
 
 >[!TIP]
 >
@@ -88,4 +90,4 @@ Vous devriez maintenant comprendre les éléments suivants :
 * L’impact de ce contrat sur le processus d’intégration.
 * Comment préparer votre appel d’intégration.
 
-Maintenant que vous connaissez ces étapes de préparation, vous êtes presque prêt à vous connecter vous-même au système. Mais vous avez d’abord besoin d’un bref aperçu de la structure d’AEM as a Cloud Service du point de vue de l’administrateur système et de découvrir une terminologie importante. Passez à la partie suivante du parcours, [Terminologie d’AEM as a Cloud Service](terminology.md).
+Maintenant que vous connaissez ces étapes de préparation, vous êtes presque prêt à vous connecter vous-même au système. Mais vous aurez tout d’abord besoin d’un bref aperçu de la structure d’AEM as a Cloud Service du point de vue de l’administrateur système et de découvrir une terminologie importante. Passez à la partie suivante du parcours, [Terminologie d’AEM as a Cloud Service](terminology.md).

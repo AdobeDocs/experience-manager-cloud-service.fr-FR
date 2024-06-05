@@ -1,13 +1,15 @@
 ---
 title: Bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling
 description: Découvrir les bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling
-source-git-commit: b6f7b6996b377ecfa372742ce1ad22139547ebdd
-workflow-type: ht
+exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 100%
 
 ---
-
 
 # Bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
@@ -274,8 +276,3 @@ delete service my-feature-service
 Il est essentiel d’écrire des tests côté serveur pour les utilisateurs et les utilisatrices de service et pour la configuration de leurs autorisations. Cela permet non seulement de vérifier que votre configuration fonctionne en pratique, mais également de repérer les révocations et les erreurs imprévues lors de modifications du contenu de contrôle d’accès ou des utilisateurs et des utilisatrices de service.
 
 La bibliothèque `com.adobe.granite.testing.clients` fournit de nombreux utilitaires qui facilitent l’écriture de SST pour les utilisateurs et les utilisatrices de service.
-
-
-
-
-

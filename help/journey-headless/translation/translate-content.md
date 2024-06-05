@@ -2,8 +2,11 @@
 title: Traduction du contenu découplé
 description: Utilisez le connecteur de traduction pour traduire votre contenu découplé.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 100%
 
@@ -53,7 +56,7 @@ Les deux approches sont explorées dans les sections suivantes.
 
 Pour les propriétaires de contenu qui sont également responsables de la traduction, il est souvent plus facile de laisser AEM créer automatiquement le projet de traduction. Pour permettre à AEM de créer automatiquement un projet de traduction en fonction de votre chemin d’accès au contenu :
 
-1. Accédez à **Navigation** -> **Ressources** -> **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
+1. Accédez à **Navigation** > **Ressources** > **Fichiers**. N’oubliez pas que le contenu découplé dans AEM est stocké en tant que ressources appelées fragments de contenu.
 1. Sélectionnez la racine de langue de votre projet. Dans ce cas, nous avons sélectionné `/content/dam/wknd/en`.
 1. Sélectionnez le sélecteur de rail et affichez le **Références** du panneau.
 1. **Sélectionner des copies de langue**.

@@ -2,10 +2,13 @@
 title: Utilisation des balises
 description: Les balises sont une méthode rapide et facile pour classer le contenu dans un site web
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -13,7 +16,7 @@ ht-degree: 93%
 
 Les balises sont une méthode rapide et facile pour classer le contenu dans un site web. Les balises peuvent être considérées comme des mots-clés ou des libellés pouvant être jointes à une page, à une ressource ou à un autre contenu pour permettre aux recherches de trouver ce contenu et le contenu associé.
 
-* Voir [Administration des balises](/help/sites-cloud/administering/tags.md) pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
+* Voir [Administration des balises](/help/sites-cloud/administering/tags.md) pour plus d’informations sur la création et la gestion des balises et sur la façon de déterminer à quel contenu elles ont été appliquées.
 * Voir [Balisage pour les développeurs et développeuses](/help/implementing/developing/introduction/tagging-framework.md) pour plus d’informations sur le framework de balisage et sur l’inclusion et l’extension de balises dans les applications personnalisées.
 
 ## Dix raisons d’utiliser les balises {#ten-reasons-to-use-tagging}
