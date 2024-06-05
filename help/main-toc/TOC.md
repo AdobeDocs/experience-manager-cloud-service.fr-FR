@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 8123d5c9e3343361baab651d2c1eb72779b952ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5001'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -741,7 +741,7 @@ ht-degree: 99%
       + [Installation et configuration](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Mise en cache du Dispatcher et du CDN](/help/forms/troubleshooting-caching-performance.md)
       + [Redémarrer le SDK d’AEM](/help/forms/restart-aem-sdk.md)
-      + [Résolution des échecs de création de Forms](/help/forms/form-creation-failing.md)
+      + [Résoudre les échecs de création de formulaires](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Présentation de Screens as a Cloud Service {#overview}
       + [Présentation](/help/screens-cloud/introduction/introduction.md)
