@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1264'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ Les JavaDocs sont publiés sur Maven Central.
 
    Comme d’habitude, les projets individuels peuvent utiliser la dépendance.
 
-1. Déployez sur votre serveur local.
+1. Procédez au déploiement sur votre serveur local.
 
 1. Si vous êtes satisfait(e) de son fonctionnement local, validez le code d’une branche de développement et utilisez un pipeline hors production Cloud Manager pour le déploiement dans un environnement abonné au canal de version préliminaire.
 
