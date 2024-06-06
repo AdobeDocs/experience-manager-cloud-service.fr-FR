@@ -1,7 +1,7 @@
 ---
 title: Surveillance à usage réel pour AEM as a Cloud Service
 description: Découvrez comment utiliser la surveillance de l’utilisation réelle (RUM) pour capturer et analyser en temps réel l’expérience utilisateur numérique d’un site web ou d’une application.
-source-git-commit: a15f973c21044e16751401bd0ffb256a4d0fb17d
+source-git-commit: 17a47bc440f971bcd220846ba31812fb1ee2f12e
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -10,6 +10,7 @@ ht-degree: 0%
 
 
 >[!NOTE]
+>
 >Nous sommes ravis d’annoncer la [Déploiement GA](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) pour le service de surveillance de l’utilisation réelle, la collecte de données côté client. Il s’agit d’un service automatisé et aucune configuration client n’est requise.
 
 # Service de surveillance à usage réel pour AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
