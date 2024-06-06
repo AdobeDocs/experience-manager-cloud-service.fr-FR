@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3e63cfc65ea28a481b50f431483a13c2fd80853c
+source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 87%
+source-wordcount: '1900'
+ht-degree: 86%
 
 ---
 
@@ -44,7 +44,12 @@ Consultez la vidéo Vue d’ensemble de la version de mai 2024 pour obtenir un 
 
 ### Nouvelles fonctionnalités de Sites {#sites-new-features}
 
-**Création AEM pour Edge Delivery Services**
+#### Service de données de surveillance d’utilisation réelle (RUM) {#real-use-monitoring}
+
+* **[Le service de données de surveillance à usage réel (RUM) est désormais GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** activation de la collecte de données côté client pour AEM as a Cloud Service.
+Le service de surveillance de l’utilisation réelle , la collection côté client, offre un reflet plus précis des interactions, assurant une mesure fiable de l’engagement du site web. Il permet aux clients disposant d’informations avancées sur le trafic et les performances de leur page. C’est une excellente occasion d’en savoir plus sur les performances de votre page et d’obtenir des informations pour l’améliorer.
+
+### Création d’AEM pour les Edge Delivery Services
 
 Stabilité améliorée et différentes améliorations pour une meilleure expérience de création.
 
@@ -212,11 +217,6 @@ Comme pour AEM 6.5, Apache/le Dispatcher ingère des mappages de réécriture p
 #### Edge Side Includes (ESI) pour le chargement de contenu dynamique (programme d’adoption précoce) {#esi-early-adopter}
 
 Le réseau CDN géré par Adobe prend désormais en charge [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), un langage de balisage pour l’assemblage de contenu web dynamique au niveau Edge. En incluant des extraits de code ESI, vous pouvez mettre en cache la page HTML globale sur le réseau CDN avec des durées de vie (TTL) plus élevées, tout en récupérant plus fréquemment de l’origine les sections plus petites qui nécessitent des mises à jour à un rythme supérieur (durées de vie moins élevées). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
-
-#### Service de données de surveillance des utilisateurs et utilisatrices réels (RUM) (programme d’adoption précoce)
-
-* **[Le service de données de surveillance à usage réel (RUM) est désormais GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** activation de la collecte de données côté client pour AEM as a Cloud Service.
-Le service de surveillance de l’utilisation réelle , la collection côté client, offre un reflet plus précis des interactions, assurant une mesure fiable de l’engagement du site web. Il permet aux clients disposant d’informations avancées sur le trafic et les performances de leur page. C’est une excellente occasion d’en savoir plus sur les performances de votre page et d’obtenir des informations pour l’améliorer.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
