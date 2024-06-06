@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 94%
@@ -18,14 +18,9 @@ ht-degree: 94%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service (composants de base) | Cet article |
+| AEM as a Cloud Service (composants principaux) | [Cliquez ici](/help/forms/rule-editor-core-components.md) |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
-| AEM as a Cloud Service | Cet article |
-
-
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| Composant principal | [Cliquez ici](/help/forms/rule-editor-core-components.md) |
-| Composant de base | Cet article |
 
 ## Vue d’ensemble {#overview}
 
@@ -45,7 +40,7 @@ L’éditeur de règles fournit une interface utilisateur intuitive et simplifi�
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent créer des scripts et modifier des scripts existants. Les utilisateurs appartenant au groupe [!DNL forms-users] peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
 
-## Différence entre l’éditeur de règles dans les composants principaux et l’éditeur de règles dans les composants de base
+## Différences entre l’éditeur de règles dans les composants principaux et l’éditeur de règles dans les composants de base
 
 {{rule-editor-diff}}
 

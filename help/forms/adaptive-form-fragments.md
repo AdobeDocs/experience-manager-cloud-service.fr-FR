@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2150'
 ht-degree: 91%
 
 ---
@@ -20,8 +20,9 @@ ht-degree: 91%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service (composants de base) | Cet article |
+| AEM as a Cloud Service (composants principaux) | [Cliquez ici](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
-| AEM as a Cloud Service | Cet article |
 
 Bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnels tels que le nom et l’adresse, les informations relatives à la famille et aux revenus, etc. Les développeurs de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé. Les formulaires adaptatifs fournissent un mécanisme pratique pour créer un segment de formulaire, comme un panneau ou un groupe de champs, une seule fois et pour les réutiliser dans des formulaires adaptatifs. Ces segments réutilisables et autonomes s’appellent des fragments de formulaire adaptatif.
 
