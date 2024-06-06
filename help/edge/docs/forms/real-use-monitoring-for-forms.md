@@ -1,14 +1,14 @@
 ---
-title: Surveillance des utilisateurs et utilisatrices réels (RUM) des Edge Delivery Services pour AEM Forms as a Cloud Service
+title: Surveillance des utilisateurs en temps réel (RUM) pour les Edge Delivery Services pour AEM Forms as a Cloud Service
 description: La surveillance des utilisateurs et utilisatrices réels (RUM) des Edge Delivery Services pour AEM Forms as a Cloud Service implique le suivi et l’analyse continus des interactions des personnes avec les formulaires.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
-workflow-type: ht
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+workflow-type: tm+mt
 source-wordcount: '792'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
