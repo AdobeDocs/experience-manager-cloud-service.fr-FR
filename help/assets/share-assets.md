@@ -4,9 +4,9 @@ description: Distribuez vos ressources numériques à l’aide de méthodes tell
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
+source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1835'
 ht-degree: 80%
 
 ---
@@ -116,12 +116,12 @@ Le modèle d’email peut être personnalisé à l’aide de texte brut ou de HT
 
 | Espaces réservés | Description |
 |---|-----|
-| ${emailSubject} | Objet d&#39;un email |
-| ${emailInitiator} | ID de courrier électronique de l’utilisateur qui a créé le courrier électronique. |
-| ${emailMessage} | Corps de l&#39;email |
-| ${pagePath} | URL du lien partagé |
-| ${linkExpiry} | Date d’expiration du lien partagé |
-| ${host.prefix} | Origine de la [!DNL Experience Manager] instance, par exemple `http://www.adobe.com"` |
+| `${emailSubject}` | Objet d&#39;un email |
+| `${emailInitiator}` | ID de courrier électronique de l’utilisateur qui a créé le courrier électronique. |
+| `${emailMessage}` | Corps de l&#39;email |
+| `${pagePath}` | URL du lien partagé |
+| `${linkExpiry}` | Date d’expiration du lien partagé |
+| `${host.prefix}` | Origine de la [!DNL Experience Manager] instance, par exemple `http://www.adobe.com"` |
 
 #### Exemple de modèle de courrier électronique personnalisé {#custom-email-template-example}
 
