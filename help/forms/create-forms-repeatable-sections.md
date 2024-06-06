@@ -4,10 +4,10 @@ description: Découvrez comment créer des sections ou des champs répétables d
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: d3c5adf0b5b2155308e0bf9f4459682f11b67780
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 91%
+source-wordcount: '1258'
+ht-degree: 92%
 
 ---
 
@@ -31,10 +31,10 @@ Prenons l’exemple d’un formulaire utilisé pour collecter des informations s
 * définir le nombre minimal ou maximal de répétitions pour un composant de formulaire adaptatif ;
 * utiliser l’éditeur de règles pour configurer les actions d’ajout ou de suppression pour les sections répétables
 
-Vous pouvez utiliser la variable [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr), ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr) composants pour rendre les sections d’un formulaire adaptatif répétables. Vous pouvez ajouter des composants enfants aux composants panneau, accordéon, onglets horizontaux ou assistant pour créer une section répétable dans un formulaire.
+Vous pouvez utiliser la variable [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr), [Onglets verticaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)  ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr) composants pour rendre les sections d’un formulaire adaptatif répétables. Vous pouvez ajouter des composants enfants à ces composants pour créer des sections répétables dans un formulaire.
 
 
-Les exemples de ce document reposent sur le composant [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr). Vous pouvez effectuer les étapes identiques pour créer les composants répétables [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr), et [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr).
+Les exemples de ce document reposent sur le composant [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr). Vous pouvez effectuer les étapes identiques pour créer la variable [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr), [Onglets verticaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr) composants répétables.
 
 ## Ajouter ou supprimer des sections répétables dans un formulaire {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -64,7 +64,7 @@ Pour activer la répétition d’un panneau, procédez comme suit :
 
 Le parent du panneau à répéter doit contenir un bouton d’ajout pour gérer l’instance de répétition du panneau. Pour insérer des boutons dans le parent et activer des scripts sur les boutons, procédez comme suit :
 
-1. Ajoutez un **composant de bouton** au parent du panneau. Dans la vidéo d’exemple ci-dessous, un composant de bouton avec le nom de libellé **Ajouter** et le nom de champ **AddPanel** est utilisé. Sélectionnez le composant, puis sélectionnez ![edit-rules](/help/forms/assets/edit-rules.png). Les règles du composant de bouton s’ouvrent dans l’éditeur de règles.
+1. Ajoutez un **composant de bouton** au parent du panneau. Dans la vidéo d’exemple ci-dessous, un composant de bouton avec le nom de libellé **Ajouter** et le nom de champ **AddPanel** est utilisé. Sélectionnez le composant, puis ![edit-rules](/help/forms/assets/edit-rules.png). Les règles du composant de bouton s’ouvrent dans l’éditeur de règles.
 1. Dans la fenêtre Éditeur de règles, cliquez sur **Créer**.
 
    Sélectionnez **Éditeur visuel** dans la ligne Objets et fonctions de formulaire.
@@ -85,7 +85,7 @@ Le parent du panneau à répéter doit contenir un bouton d’ajout pour gérer 
 
 Le parent du panneau doit contenir un bouton de suppression pour supprimer l’instance des panneaux répétables. Pour insérer des boutons dans le parent et activer des scripts sur les boutons pour supprimer les panneaux répétables, procédez comme suit :
 
-1. Ajoutez un **composant de bouton** au parent du panneau. Dans la vidéo ci-dessous, un composant de bouton avec le nom de libellé **Supprimer** et le nom de champ **DeletePanel** est utilisé. Sélectionnez le composant, puis sélectionnez ![edit-rules](/help/forms/assets/edit-rules.png). Les règles du composant de bouton s’ouvrent dans l’éditeur de règles.
+1. Ajoutez un **composant de bouton** au parent du panneau. Dans la vidéo ci-dessous, un composant de bouton avec le nom de libellé **Supprimer** et le nom de champ **DeletePanel** est utilisé. Sélectionnez le composant, puis ![edit-rules](/help/forms/assets/edit-rules.png). Les règles du composant de bouton s’ouvrent dans l’éditeur de règles.
 1. Dans la fenêtre Éditeur de règles, cliquez sur **Créer**.
 
    Sélectionnez **Éditeur visuel** dans la ligne Objets et fonctions de formulaire.
@@ -140,7 +140,7 @@ Le parent du panneau doit contenir un bouton de suppression pour supprimer l’i
 
 >[!NOTE]
 >
-> Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instances du panneau et utilisez l’API addInstance du gestionnaire d’instances pour ajouter l’instance supprimée. Par exemple, _panelName.addInstance(). Elle ajoute une instance du panneau supprimé.
+> Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instances du panneau et l’API addInstance du gestionnaire d’instances pour ajouter l’instance supprimée. Par exemple, _panelName.addInstance(). Elle ajoute une instance du panneau supprimé.
 
 <!--
 ![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)

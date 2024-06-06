@@ -4,7 +4,7 @@ description: Découvrez comment ajouter de nouveaux paramètres régionaux pour 
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+source-git-commit: 6238d059ff44586ab1b0d24895a8b73d74b1f913
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 8%
@@ -369,7 +369,7 @@ Ces étapes vous guident tout au long de l’aperçu d’un formulaire adaptatif
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
 * Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif. Cela simplifie le processus de localisation.
-* Lorsque les composants Zone numérique et Sélecteur de date sont traduits dans un paramètre régional spécifique, des problèmes de mise en forme peuvent se produire. Pour atténuer ce problème, une **Langue** a été incorporée dans la boîte de dialogue Configurer de [Composant Sélecteur de date](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) et [Composant Zone numérique](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Lorsque les composants Zone numérique et Sélecteur de date sont traduits dans un paramètre régional spécifique, des problèmes de mise en forme peuvent se produire. Pour atténuer ce problème, une **Langue** a été incorporée dans la boîte de dialogue Configurer de [Composant Sélecteur de date](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) et [Composant Zone numérique](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Gestion des nouveaux champs :

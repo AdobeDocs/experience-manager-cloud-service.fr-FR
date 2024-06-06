@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Ajouter des fragments de formulaire adaptatif, fragments de formulaire adaptatif, Créer un fragment de formulaire, Ajouter un fragment à un formulaire adaptatif, Gérer des fragments
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: c8172320a8c0372ea6947415a9c1c1be326f3828
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 92%
+source-wordcount: '1344'
+ht-degree: 80%
 
 ---
 
@@ -30,18 +30,19 @@ Vous pouvez ajouter un fragment plusieurs fois à un document et utiliser les pr
 
 >[!NOTE]
 >
-> Vous pouvez facilement personnaliser votre expérience de fragment pour les personnes qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html?lang=fr).
+> Vous pouvez facilement personnaliser votre expérience de fragment pour les personnes qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
-## Créer un fragment de formulaire {#create-a-fragment}
+## Créer un fragment de formulaire adaptatif {#create-a-fragment}
 
-Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enregistrer un panneau dans un formulaire adaptatif existant en tant que fragment. Pour créer un fragment de formulaire :
+Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistrer un panneau dans un formulaire adaptatif existant en tant que fragment. Pour créer un fragment de formulaire :
 
 1. Connectez-vous à votre instance de création d’AEM Forms à l’adresse https://[*nom_hôte*]:[*port*]/aem/forms.html.
 1. Cliquez sur **Créer > Fragment de formulaire adaptatif**.
+
+   ![Créer un fragment de formulaire adaptatif](/help/forms/assets/adaptive-form-fragment.png)
+
 1. Indiquez le titre, le nom, la description et les balises du fragment. Assurez-vous de spécifier un nom unique pour le fragment. S’il existe déjà un autre fragment portant le même nom, la création du fragment échoue.
-1. Sélectionnez un modèle de formulaire. Vous pouvez créer un fragment de formulaire pour les formulaires adaptatifs basés sur des composants principaux ou les formulaires adaptatifs basés sur des composants de base.
-   * Pour créer un fragment de formulaire pour les formulaires basés sur des composants principaux, sélectionnez un modèle basé sur des composants principaux.
-   * Pour créer un fragment de formulaire pour les formulaires basés sur des composants de base, sélectionnez un modèle de composants de base. Par exemple, /libs/fd/af/templateForFragment/defaultFragmentTemplate.
+1. Sélectionnez un modèle de formulaire. Vous pouvez créer un fragment de formulaire pour le Forms adaptatif basé sur les composants principaux ou le Forms adaptatif basé sur les composants de base. Pour créer un fragment de formulaire pour les formulaires basés sur des composants principaux, sélectionnez un modèle basé sur des composants principaux.
 
    Lorsque vous créez un fragment de formulaire pour les formulaires basés sur des composants principaux, utilisez l’option Sélectionner un thème de formulaire pour sélectionner un thème basé sur des composants principaux.
 
@@ -60,11 +61,9 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
    ![Modèle de données de formulaire (FDM)](assets/create-af-3.png)
 
-
-
 1. Cliquez sur **Créer** puis sur **Ouvrir** pour ouvrir le fragment, avec un modèle par défaut, en mode d’édition. En mode d’édition, vous pouvez ajouter n’importe quel composant de formulaire adaptatif au fragment.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire XDP comme modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire apparaît dans l’outil de recherche de contenu. Il vous permet de faire glisser des éléments du modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du modèle XDP ou XSD associé.
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> En outre, si vous avez sélectionné un schéma XML comme modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire s’affiche dans l’outil de recherche de contenu. Il vous permet de faire glisser des éléments de modèle de formulaire sur le fragment. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 Une fois le fragment de formulaire adaptatif basé sur un schéma ou un modèle de données de formulaire (FDM) créé, les éléments de modèle de données de formulaire (FDM) ou de schéma apparaissent dans l’onglet Sources de données du navigateur de contenu de l’éditeur de formulaire adaptatif. Vous pouvez glisser-déposer des éléments du modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du schéma associé.
 
@@ -75,23 +74,24 @@ Pour ajouter un fragment de formulaire adaptatif à un formulaire adaptatif, pro
 
 1. Ouvrez le formulaire adaptatif en mode d’édition.
 1. Ajoutez le composant **Fragment de formulaire adaptatif** au formulaire.
-1. Cliquez sur l’explorateur de contenu **Ressources** dans la barre latérale. Dans l’explorateur de ressources, sous les chemins d’accès, sélectionnez l’option **Fragments de formulaire adaptatif**. Tous les fragments de formulaires adaptatifs disponibles pour votre formulaire, selon le modèle du formulaire, s’affichent.
+1. Ouvrez la boîte de dialogue Configuration de **fragment de formulaire adaptatif** composant.
+1. Sélectionnez la variable **Référence de fragment** dans le **De base** . Tous les fragments de formulaires adaptatifs disponibles pour votre formulaire, selon le modèle du formulaire, s’affichent.
 
-   ![Sélection de l’option Fragments de formulaire adaptatif](assets/adaptive-forms-fragments.png)
+1. Sélectionnez un fragment de formulaire adaptatif dans la **fragment de formulaire adaptatif** sur votre formulaire adaptatif.
 
-1. Faites glisser un fragment de formulaire adaptatif sur le composant **Fragment de formulaire adaptatif** sur votre formulaire adaptatif.
+   ![Sélection de l’option Fragments de formulaire adaptatif](/help/forms/assets/adaptive-form-fragment-basic.png)
 
-   >[!NOTE]
+<!-- >[!NOTE]
    >
-   >Le fragment de formulaire adaptatif ne peut pas être créé au sein même du formulaire adaptatif. De plus, vous ne pouvez pas utiliser un fragment basé sur XSD dans un formulaire adaptatif basé sur JSON et inversement.
+   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. -->
 
 Le fragment de formulaire adaptatif est ajouté par référence au formulaire adaptatif et est synchronisé avec le fragment autonome du formulaire adaptatif. Cela signifie que toutes les modifications apportées au fragment de formulaire adaptatif sont répercutées dans toutes les instances où le fragment est incorporé dans les formulaires adaptatifs.
 
-### Incorporer un fragment dans un formulaire adaptatif {#embed-a-fragment-in-adaptive-form}
+<!--### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
 
-Vous pouvez choisir d’incorporer un fragment de formulaire adaptatif en cliquant sur l’icône ![Incorporer](assets/Smock_Import_18_N.svg) dans la barre d’outils du panneau du fragment ajouté.
+You can choose to embed an Adaptive Form fragment in an Adaptive Form by clicking the ![Embed](assets/Smock_Import_18_N.svg) icon the panel toolbar of the added fragment
 
-Le fragment inclus n’est plus lié au fragment autonome. Vous pouvez modifier les composants dans le fragment inclus à partir du formulaire adaptatif.
+The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.-->
 
 <!-- 
 ## Configure fragment appearance {#configure-fragment-appearance}
@@ -109,7 +109,7 @@ Perform the following steps to show complete fragments in forms:
 
 ### Utilisation de fragments dans les fragments {#using-fragments-within-fragments}
 
-Vous pouvez créer des fragments de formulaire adaptatif imbriqués, ce qui signifie que vous pouvez faire glisser un fragment dans un autre fragment, et avoir une structure de fragment imbriqué.
+Vous pouvez créer des fragments de formulaire adaptatif imbriqués, ce qui signifie que vous pouvez ajouter un fragment dans un autre fragment et avoir une structure de fragment imbriqué.
 
 ### Utiliser un fragment de formulaire plusieurs fois dans un formulaire adaptatif {#using-form-fragment-mutiple-times-in-af}
 
@@ -117,13 +117,15 @@ Vous pouvez utiliser plusieurs fois un fragment de formulaire basé sur un sché
 
 ![Utiliser plusieurs fragments dans un formulaire adaptatif](/help/forms/assets/using-multiple-fragment-af.gif)
 
-## Correspondance automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
+<!--
 
-Lorsque vous créez un fragment de formulaire adaptatif à partir d’un modèle de formulaire XFA ou d’un type XSD complexe et que vous le faites glisser dans un formulaire adaptatif, le fragment XFA ou le type XSD complexe est automatiquement remplacé par le fragment de formulaire adaptatif correspondant dont la racine de modèle de fragment est mappée au fragment XFA ou un type XSD complexe.
+## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
-Vous pouvez modifier la ressource de fragment et ses liaisons dans la boîte de dialogue Modifier le composant.
+When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
 
-Vous pouvez également faire glisser un fragment de formulaire adaptatif lié depuis la bibliothèque des fragments de formulaire adaptatif dans l’outil de recherche de contenu AEM et fournir la référence correcte de liaison depuis la boîte de dialogue Modifier le composant du panneau du fragment de formulaire adaptatif.
+You can change the fragment asset and its bindings from the Edit component dialog.
+
+You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
 
 ## Gérer les fragments {#manage-fragments}
 
@@ -131,7 +133,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
 
 1. Accédez à `https://[hostname]/aem/forms.html`.
 
-1. Cliquez sur **Sélectionner** dans la barre d’outils de l’interface utilisateur d’AEM Forms et sélectionnez un fragment de formulaire adaptatif. La barre d’outils affiche les opérations suivantes que vous pouvez effectuer sur le fragment de formulaire adaptatif sélectionné.
+1. Cliquez sur **Sélectionner** dans la barre d’outils de l’interface utilisateur d’un AEM Forms et sélectionnez un fragment de formulaire adaptatif. La barre d’outils affiche les opérations suivantes que vous pouvez effectuer sur le fragment de formulaire adaptatif sélectionné.
 
 <table>
  <tbody>
@@ -143,21 +145,13 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
    <td><p>Modifier</p> </td>
    <td><p>Ouvre le fragment de formulaire adaptatif sélectionné en mode d’édition.<br /> <br /> </p> </td>
   </tr>
-  <tr>
-   <td><p>Propriétés</p> </td>
-   <td><p>Ouvre le panneau Propriétés. Dans le panneau Propriétés, vous pouvez afficher et modifier les propriétés, générer un aperçu et charger une miniature pour le fragment sélectionné. Pour plus d’informations, consultez la section <a>Gestion des métadonnées</a>.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Copier</p> </td>
-   <td><p>Copie le fragment sélectionné. Le bouton Coller s’affiche dans la barre d’outils.<br /> <br /> </p> </td>
+   <tr>
+   <td><p>Prévisualisation</p> </td>
+   <td><p>Fournit des options de prévisualisation du fragment en HTML ou un aperçu personnalisé en fusionnant les données d’un fichier XML avec le fragment. Pour plus d’informations, voir <a>Aperçu d’un formulaire</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Télécharger</p> </td>
    <td><p>Télécharge le fragment sélectionné.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Aperçu</p> </td>
-   <td><p>Fournit des options de prévisualisation du fragment en HTML ou un aperçu personnalisé en fusionnant les données d’un fichier XML avec le fragment. Pour plus d’informations, voir <a>Aperçu d’un formulaire</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Démarrage de la révision/Gestion de la révision</p> </td>
@@ -181,17 +175,11 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
 ## Points essentiels à respecter lorsque vous utilisez des fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Assurez-vous que le nom du fragment est unique. La création du fragment échoue si un fragment portant le même nom existe déjà.
-* Dans un formulaire adaptatif basé sur XDP, si vous enregistrez un panneau en tant que fragment contenant une autre partie du fragment XDP, le fragment obtenu sera automatiquement lié au fragment XDP enfant. Dans le cas d’un formulaire adaptatif basé sur un schéma XSD, le fragment obtenu sera associé à la racine de schéma.
-* Lorsque vous créez un fragment de formulaire adaptatif, un nœud de fragment est créé, similaire au nœud guideContainer pour un formulaire adaptatif, dans CRXDE Lite.
-* Un fragment d’un formulaire adaptatif qui utilise un modèle de données de formulaire différent (FDM) n’est pas pris en charge. Par exemple, un fragment basé sur XDP n’est pas pris en charge dans un formulaire adaptatif basé sur XSD et inversement.
-* Les fragments de formulaire adaptatif sont disponibles par l’onglet Fragments de formulaire adaptatif dans l’outil de recherche de contenu AEM.
 * Toute expression, tout script ou tout style d’un fragment de formulaire adaptatif autonome est conservé lorsqu’il est inséré par référence ou incorporé dans un formulaire adaptatif.
-* Vous ne pouvez pas modifier un fragment de formulaire adaptatif, inséré par référence, au sein même d’un formulaire adaptatif. Pour modifier, vous pouvez soit modifier le fragment de formulaire adaptatif autonome, soit incorporer le fragment dans le formulaire adaptatif.
+* Vous ne pouvez pas modifier un fragment de formulaire adaptatif, inséré par référence, au sein même d’un formulaire adaptatif. Pour modifier, modifiez le fragment de formulaire adaptatif autonome.
 * Lorsque vous publiez un formulaire adaptatif, vous devez publier le fragment de formulaire adaptatif autonome inséré par référence dans le formulaire adaptatif.
 * Lorsque vous publiez de nouveau un fragment de formulaire adaptatif mis à jour, les modifications sont répercutées dans les instances publiées du formulaire adaptatif dans lequel le fragment est utilisé.
 * Le formulaire adaptatif contenant le composant Vérifier ne prend pas en charge les utilisateurs et utilisatrices anonymes. En outre, il n’est pas recommandé d’utiliser le composant Vérifier dans un fragment de formulaire adaptatif.
-* (**Mac uniquement**) Pour vous assurer que la fonctionnalité des fragments de formulaire fonctionne parfaitement dans tous les scénarios, ajoutez l’entrée suivante au fichier /private/etc/hosts :
-  `127.0.0.1 <Host machine>` **Ordinateur hôte** : ordinateur Apple Mac sur lequel AEM Forms est déployé.
 
 ## Fragments de référence {#reference-fragments}
 
