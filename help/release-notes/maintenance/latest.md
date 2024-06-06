@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f52b5f763277c9288d5dd30b01cfb7a4afeddda7
+source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 43%
 
 ---
@@ -47,7 +47,7 @@ Aucun.
 
 ### Avis de modification {#change-notice-16544}
 
-À compter de septembre 2024, AEM as a Cloud Service désactivera la sérialisation des résolveurs de ressources via la structure de l’exportateur de modèle Sling. Voir [la documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter) pour plus d’informations.
+À compter de septembre 2024, AEM as a Cloud Service désactivera la sérialisation des résolveurs de ressources via la structure de l’exportateur de modèle Sling. Voir [la documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) pour plus d’informations.
 
 ### Fonctionnalités et API obsolètes {#deprecated-16544}
 
