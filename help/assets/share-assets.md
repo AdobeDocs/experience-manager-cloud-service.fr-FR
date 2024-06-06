@@ -1,14 +1,13 @@
 ---
 title: Distribution et partage de ressources, dossiers et collections
 description: Distribuez vos ressources numériques à l’aide de méthodes telles que le partage sous forme de lien, le téléchargement et via [!DNL Brand Portal], [!DNL desktop app] et [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 94%
+source-wordcount: '1847'
+ht-degree: 80%
 
 ---
 
@@ -86,7 +85,7 @@ Pour partager des ressources sous la forme d’une URL publique :
 1. La boîte de dialogue **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans le champ **[!UICONTROL Partager le lien]**.
 1. Définissez la date d’expiration du lien partagé selon vos besoins.
 1. Sous **[!UICONTROL Paramètres de lien]**, cochez ou décochez `Include Originals` ou `Include Renditions` pour inclure ou exclure l’un des deux. Le choix de l’option est obligatoire.
-1. Les noms des ressources sélectionnées s’affichent dans la colonne de droite de la boîte de dialogue [!DNL Share Link].
+1. Les noms des ressources sélectionnées s’affichent dans la colonne de droite du [!DNL Share Link] de la boîte de dialogue
 1. Copiez ce lien de ressource et partagez-le avec des utilisateurs.
 
 ### Partager des liens de ressources avec des notifications d’e-mails {#share-assets-link-through-email}
@@ -101,15 +100,51 @@ Pour partager des ressources par e-mail :
    * Dans la zone **[!UICONTROL Objet]**, saisissez un objet pour préciser l’objectif des ressources partagées.
    * Dans la zone **[!UICONTROL Message]**, vous pouvez, au besoin, saisir un message.
    * Dans le champ **[!UICONTROL Expiration]**, indiquez une date et une heure d’expiration du lien à l’aide du sélecteur de date.
-   * Cochez la case **[!UICONTROL Autoriser le téléchargement du fichier original]** pour permettre aux destinataires de télécharger le rendu original.
+   * Activez la variable **[!UICONTROL Autoriser le téléchargement du fichier d’origine]** pour permettre aux destinataires de télécharger le rendu original.
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs. Les utilisateurs reçoivent un e-mail contenant le lien partagé.
 
    ![E-mail de partage de lien](assets/link-sharing-email-notification.png)
 
-### Télécharger les ressources à l’aide du lien de ressource
+### Personnalisation du modèle de courrier électronique {#customize-email-template}
 
-Tout utilisateur ayant accès au lien de la ressource partagée peut télécharger les ressources regroupées dans un dossier zip. Le processus de téléchargement est le même, qu’un utilisateur accède au lien de la ressource copiée ou qu’il utilise le lien de la ressource partagé par e-mail.
+Un modèle bien conçu véhicule le professionnalisme et la compétence, améliorant ainsi la crédibilité de votre message et de votre organisation. La variable [!DNL Adobe Experience Manager] permet de personnaliser le modèle d’email qui est envoyé aux destinataires qui reçoivent l’email contenant le lien partagé. En outre, les modèles d&#39;email personnalisés permettent de personnaliser le contenu de votre email en s&#39;adressant à vos destinataires avec le nom et en référençant des détails spécifiques qui les concernent. Cette touche personnelle peut donner au destinataire un sentiment de valeur et accroître son engagement. De plus, un modèle personnalisé garantit la cohérence de vos emails avec l’identité de votre marque, notamment les logos, les couleurs et les polices. La cohérence renforce la reconnaissance de la marque et la confiance entre les destinataires.
+
+#### Format d’un modèle d’email personnalisé {#format-of-custom-email-template}
+
+Le modèle d’email peut être personnalisé à l’aide de texte brut ou de HTML. Le lien de modèle modifiable par défaut se trouve à l’adresse `/libs/settings/dam/adhocassetshare/en.txt`. Vous pouvez remplacer le modèle en créant le fichier . `/apps/settings/dam/adhocassetshare/en.txt`. Vous pouvez modifier le modèle d&#39;email autant de fois que nécessaire.
+
+| Espaces réservés | Description |
+|---|-----|
+| ${emailSubject} | Objet d&#39;un email |
+| ${emailInitiator} | ID de courrier électronique de l’utilisateur qui a créé le courrier électronique. |
+| ${emailMessage} | Corps de l&#39;email |
+| ${pagePath} | URL du lien partagé |
+| ${linkExpiry} | Date d’expiration du lien partagé |
+| ${host.prefix} | Origine de la [!DNL Experience Manager] instance, par exemple `http://www.adobe.com"` |
+
+#### Exemple de modèle de courrier électronique personnalisé {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### Télécharger les ressources à l’aide du lien de ressource {#download-assets-using-asset-link}
+
+Tout utilisateur ayant accès au lien de la ressource partagée peut télécharger les ressources regroupées dans un dossier zip. Le processus de téléchargement est le même, qu’un utilisateur accède au lien de la ressource copiée ou qu’il utilise le lien de la ressource partagé par le biais du courrier électronique.
 
 * Cliquez sur le lien de la ressource ou collez l’URL dans votre navigateur. L’interface [!UICONTROL Partage de liens] s’ouvre et vous pouvez basculer vers la [!UICONTROL Vue Vignette] ou la [!UICONTROL Vue Liste].
 
@@ -211,7 +246,7 @@ Les utilisateurs peuvent télécharger les ressources requises et les partager e
 
 Les spécialistes marketing et les utilisateurs de services dédiés peuvent facilement partager des ressources approuvées avec des professionnels de la création à l’aide des solutions suivantes :
 
-* **Appli de bureau Experience Manager** : cette application fonctionne sous Windows et Mac. Voir [Vue d’ensemble de l’appli de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr). Pour savoir comment un utilisateur autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, rechercher et prévisualiser des ressources](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets). Les utilisateurs peuvent créer des ressources et les repartager avec leurs collaborateurs qui sont des utilisateurs d’Experience Manager (par exemple, en chargeant de nouvelles images). Voir [Chargement de ressources à l’aide de l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem).
+* **Appli de bureau Experience Manager** : cette application fonctionne sous Windows et Mac. Voir [Vue d’ensemble de l’appli de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr). Pour savoir comment un utilisateur autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, rechercher et prévisualiser des ressources](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets). Les utilisateurs peuvent créer des ressources et les repartager avec leurs collaborateurs qui sont des utilisateurs d’Experience Manager (par exemple, en chargeant de nouvelles images). Voir [chargement de ressources à l’aide d’une appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link** : les professionnels de la création peuvent rechercher et utiliser des ressources directement dans [!DNL Adobe InDesign], [!DNL Adobe Illustrator] et [!DNL Adobe Photoshop].
 
@@ -266,7 +301,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Configurations pour utiliser [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le processus de création de contenu. Il connecte [!DNL Adobe Experience Manager Assets] aux applications de bureau [!DNL Creative Cloud], [!DNL Adobe InDesign], [!DNL Adobe Photoshop] et [!DNL Adobe Illustrator]. Le panneau [!DNL Adobe Asset Link] permet aux créatifs d’accéder au contenu stocké dans [!DNL Assets] et de le modifier sans quitter les applications de création qui leur sont les plus familières.
+Adobe Asset Link simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le processus de création de contenu. Il se connecte [!DNL Adobe Experience Manager Assets] avec [!DNL Creative Cloud] applications de bureau, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], et [!DNL Adobe Illustrator]. Le panneau [!DNL Adobe Asset Link] permet aux créatifs d’accéder au contenu stocké dans [!DNL Assets] et de le modifier sans quitter les applications de création qui leur sont les plus familières.
 
 Voir [comment configurer [!DNL Assets] pour l’utiliser avec [!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -300,3 +335,4 @@ Voir [comment configurer [!DNL Assets] pour l’utiliser avec [!DNL Adobe Asset 
 * [Gérer les collections](manage-collections.md)
 * [Import des métadonnées en bloc](metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
