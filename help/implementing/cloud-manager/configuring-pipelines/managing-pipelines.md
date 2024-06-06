@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 53%
+source-wordcount: '1119'
+ht-degree: 48%
 
 ---
 
@@ -110,6 +110,10 @@ Selon le type de pipeline, vous pouvez être en mesure d’annuler l’exécutio
 >
 >Vous ne pouvez pas modifier un pipeline en cours d’exécution.
 
+>[!NOTE]
+>
+>Les pipelines de niveau web et de configuration ne sont pas pris en charge par les référentiels privés. Consultez le document [Ajout de référentiels privés dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) pour plus de détails et la liste complète des limites.
+
 ## Suppression de pipelines {#deleting-pipelines}
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
@@ -143,6 +147,14 @@ Une fois une étape de pipeline terminée, un résumé est présenté.
 Sélectionnez la variable **Afficher les détails** pour afficher le lien **Durée** . Cela inclut la durée moyenne du pipeline en fonction de la tendance historique de ce programme.
 
 ![Durée.](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+Si votre pipeline contenait **Analyse du code** , ce qui a soulevé des problèmes, vous pouvez appuyer ou cliquer sur l’icône **Détails du téléchargement** pour afficher une liste de [tests de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) cela n&#39;a pas été le cas.
+
+![Problèmes de qualité du code](assets/managing-pipelines-code-quality-issues.png)
+
+A **Emplacement du fichier de projet** est disponible dans le fichier CSV pour indiquer l’emplacement du code incriminé. Cette colonne correspond au chemin d’accès relatif au projet, tandis que la variable **Emplacement du fichier** est générée par Maven.
+
+![Détails du problème d’analyse du code du projet](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >

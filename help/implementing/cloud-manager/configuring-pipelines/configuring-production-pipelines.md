@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 68%
+source-wordcount: '1367'
+ht-degree: 67%
 
 ---
 
@@ -86,7 +86,7 @@ Pour terminer la configuration du pipeline de production de code full stack, pro
 
    >[!TIP]
    > 
-   >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+   >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
    * **Branche Git** : cette option définit à partir de quelle branche le pipeline doit récupérer le code.
       * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à les sélectionner.
@@ -126,6 +126,10 @@ Un déploiement ciblé déploie le code uniquement pour les parties sélectionn�
    * Si un pipeline de code de niveau web existe pour l’environnement sélectionné, cette sélection est désactivée.
    * Si vous disposez déjà d’un pipeline full stack se déployant vers un environnement, la création d’un pipeline de configuration de niveau web pour le même environnement entraîne l’exclusion de la configuration de niveau web existante dans le pipeline full stack.
 
+>[!NOTE]
+>
+>Les pipelines de niveau web et de configuration ne sont pas pris en charge par les référentiels privés. Consultez le document [Ajout de référentiels privés dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) pour plus de détails et la liste complète des limites.
+
 Les étapes de création de votre pipeline de déploiement ciblé en production sont les mêmes une fois que vous avez choisi un type de déploiement.
 
 1. Choisissez le type de déploiement dont vous avez besoin.
@@ -142,7 +146,7 @@ Les étapes de création de votre pipeline de déploiement ciblé en production 
 
    >[!TIP]
    > 
-   >Consultez [Ajout et gestion de référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+   >Consultez [Ajout et gestion de référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
    * **Branche Git** – Cette option définit à partir de quelle branche le pipeline sélectionné doit récupérer le code.
       * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Elle trouve les branches correspondantes que vous pouvez sélectionner.

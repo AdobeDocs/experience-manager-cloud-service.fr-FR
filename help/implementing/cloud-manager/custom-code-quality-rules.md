@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
 workflow-type: tm+mt
-source-wordcount: '4167'
-ht-degree: 87%
+source-wordcount: '4482'
+ht-degree: 81%
 
 ---
 
@@ -1134,7 +1134,6 @@ Le remplacement de la valeur par défaut peut entraîner des lectures de page tr
 
 Le modèle attendu pour les noms d’index entièrement personnalisés est le suivant : `[prefix].[indexName]-custom-[version]`. Vous trouverez plus d’informations dans le document [Recherche et indexation de contenu](/help/operations/indexing.md).
 
-
 ### Même propriété avec des valeurs analysées différentes dans la même définition d’index {#oakpal-same-property-different-analyzed-values}
 
 #### Code non conforme {#non-compliant-code-same-property-different-analyzed-values}
@@ -1187,7 +1186,7 @@ Exemple :
 
 Si la propriété analysée n’a pas été explicitement définie, sa valeur par défaut est false.
 
-### Propriété Balises
+### Propriété Balises {#tags-property}
 
 * **Clé**: IndexHasValidTagsProperty
 * **Type** : code smell
@@ -1195,3 +1194,75 @@ Si la propriété analysée n’a pas été explicitement définie, sa valeur pa
 * **Depuis** : version 2023.1.0
 
 Pour des index spécifiques, veillez à conserver la propriété tags et ses valeurs actuelles. Bien que l’ajout de nouvelles valeurs à la propriété de balises soit autorisé, la suppression de toutes les valeurs existantes (ou de la propriété dans son ensemble) peut entraîner des résultats inattendus.
+
+### Les noeuds de définition d’index ne doivent pas être déployés dans le module de contenu de l’interface utilisateur {#oakpal-ui-content-package}
+
+* **Clé**: IndexNotUnderUIContent
+* **Type**: amélioration
+* **Gravité** : mineure
+* **Depuis** : version 2024.6.0
+
+AEM Cloud Service interdit les définitions d’index de recherche personnalisée (noeuds de type `oak:QueryIndexDefinition`) à partir du déploiement dans le module de contenu de l’interface utilisateur.
+
+>[!WARNING]
+>
+>Vous êtes invité à y répondre dès que possible, car cela provoquera l’échec des pipelines à partir de la variable [Version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### La Définition D’Index De Texte Complet Personnalisé Du Type damAssetLucene Doit Être Correctement Préfixée Avec &quot;damAssetLucene&quot; {#oakpal-dam-asset-lucene}
+
+* **Clé**: CustomFulltextIndexOfTheDamAssetCheck
+* **Type**: amélioration
+* **Gravité** : mineure
+* **Depuis** : version 2024.6.0
+
+AEM Cloud Service interdit les définitions d’index de texte intégral personnalisées de type `damAssetLucene` d’être précédé d’un préfixe autre que `damAssetLucene`.
+
+>[!WARNING]
+>
+>Vous êtes invité à y répondre dès que possible, car cela provoquera l’échec des pipelines à partir de la variable [Version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Les Noeuds De Définition D’Index Ne Doivent Pas Contenir De Propriétés Portant Le Même Nom {#oakpal-index-property-name}
+
+* **Clé**: DuplicateNameProperty
+* **Type**: amélioration
+* **Gravité** : mineure
+* **Depuis** : version 2024.6.0
+
+AEM Cloud Service interdit les définitions d’index de recherche personnalisées (c’est-à-dire les noeuds de type `oak:QueryIndexDefinition`) de contenir des propriétés portant le même nom.
+
+>[!WARNING]
+>
+>Vous êtes invité à y répondre dès que possible, car cela provoquera l’échec des pipelines à partir de la variable [Version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### La personnalisation de certaines définitions d’index en standard est interdite {#oakpal-customizing-ootb-index}
+
+* **Clé**: RestrictIndexCustomization
+* **Type**: amélioration
+* **Gravité** : mineure
+* **Depuis** : version 2024.6.0
+
+AEM Cloud Service interdit toute modification non autorisée des index prêts à l’emploi suivants :
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>Vous êtes invité à y répondre dès que possible, car cela provoquera l’échec des pipelines à partir de la variable [Version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### La Configuration Des Tokenizers Dans Les Analyseurs Doit Être Créée Avec Le Nom &#39;tokenizer&#39;. {#oakpal-tokenizer}
+
+* **Clé**: AnalyzerTokenizerConfigCheck
+* **Type**: amélioration
+* **Gravité** : mineure
+* **Depuis** : version 2024.6.0
+
+AEM Cloud Service interdit la création de jetons dont les noms sont incorrects dans les analyseurs. Les jetons doivent toujours être définis comme `tokenizer`.
+
+>[!WARNING]
+>
+>Vous êtes invité à y répondre dès que possible, car cela provoquera l’échec des pipelines à partir de la variable [Version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
