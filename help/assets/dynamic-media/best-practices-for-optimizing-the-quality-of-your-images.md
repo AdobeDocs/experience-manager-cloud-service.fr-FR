@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
+source-git-commit: 7820492f462d2b5824e408429332b5adf2e67aab
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 72%
@@ -25,9 +25,9 @@ Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images D
 **Imagerie dynamique :**
 
 * L’activation de l’imagerie dynamique dans Dynamic Media permet l’optimisation automatique du format, de la taille et de la qualité des images en fonction des fonctionnalités du navigateur client.
-Vous souhaitez en savoir plus ? Accédez à [Imagerie dynamique](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+Vous souhaitez en savoir plus ? Accédez à [Imagerie dynamique](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Cela améliore les performances de diffusion des images en réglant dynamiquement ces paramètres.
-* Vous pouvez évaluer l’imagerie dynamique à l’aide de l’outil d’auto-évaluation. [Instantané](https://snapshot.scene7.com/)
+* Vous pouvez évaluer l’imagerie dynamique à l’aide de l’outil d’auto-évaluation. [Instantané](https://snapshot.scene7.com/).
 
 **Formats d’image :**
 
