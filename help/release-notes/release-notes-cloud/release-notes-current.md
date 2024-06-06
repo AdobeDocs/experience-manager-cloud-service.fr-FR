@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -62,8 +62,8 @@ Les actions et les workflows de traduction de contenu déclenchent désormais de
 
 #### Service de données de surveillance d’utilisation réelle (RUM) {#real-use-monitoring}
 
-* **[Le service de données de surveillance à usage réel (RUM) est désormais GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** activation de la collecte de données côté client pour AEM as a Cloud Service.
-Le service de surveillance de l’utilisation réelle, la collection côté client, offre un reflet plus précis des interactions, assurant une mesure fiable de l’engagement du site web. Il permet aux clients disposant d’informations avancées sur le trafic et les performances de leur page. C’est une excellente occasion d’en savoir plus sur les performances de votre page et d’obtenir des informations pour l’améliorer.
+* **[Le service de données Real User Monitoring (surveillance des utilisateurs et utilisatrices réels, RUM) est désormais en disponibilité générale](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**. Il permet la collecte de données côté client pour AEM as a Cloud Service.
+Le service de surveillance de l’utilisation réelle, la collection côté client, offre un reflet plus précis des interactions, assurant une mesure fiable de l’engagement du site web. Il dote la clientèle d’informations avancées sur le trafic et les performances de leurs pages. Il permet d’approfondir les performances de vos pages et d’obtenir des informations pour les améliorer.
 
 #### Création d’AEM pour les Edge Delivery Services {#edge-enhancements}
 
@@ -236,12 +236,12 @@ Le réseau CDN géré par Adobe prend désormais en charge [Edge Side Includes
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-* **Publication d’une rubrique ou de ses éléments sur un fragment d’expérience**
-Désormais, les guides du Experience Manager vous permettent de publier une rubrique ou ses éléments dans un fragment d’expérience. Un fragment d’expérience est une unité de contenu modulaire qui intègre à la fois le contenu et la mise en page.  Les fragments d’expérience sont essentiels et peuvent vous aider à créer des expériences cohérentes et attrayantes.
-* **Possibilité de transmettre les métadonnées de la ressource de rubrique à la sortie du PDF natif.**
-Vous pouvez ajouter les métadonnées de la ressource de rubrique lors de la génération de la sortie de l’PDF natif. Cette fonctionnalité vous permet d’ajouter des métadonnées spécifiques pour différentes rubriques, telles que le titre et l’auteur de la rubrique, dans les en-têtes et pieds de page de la page de la rubrique.
+* **Publier une rubrique ou ses éléments sur un fragment d’expérience**
+Désormais, Experience Manager Guides vous permet de publier une rubrique ou ses éléments dans un fragment d’expérience. Un fragment d’expérience est une unité de contenu modulaire qui intègre à la fois le contenu et la mise en page.  Les fragments d’expérience sont essentiels, en ce qu’ils peuvent vous aider à créer des expériences cohérentes et attrayantes.
+* **Possibilité de transmettre les métadonnées de la ressource de rubrique à la sortie du PDF natif**
+Vous pouvez ajouter les métadonnées de la ressource de rubrique lors de la génération de la sortie du PDF natif. Cette fonctionnalité vous permet d’ajouter des métadonnées spécifiques pour différentes rubriques, telles que le titre et l’auteur ou l’autrice de la rubrique, dans les en-têtes et pieds de page de la page de la rubrique.
 
-Pour plus d’informations sur les nouvelles fonctionnalités et les problèmes améliorés résolus dans la version, consultez la [Feuille de route de la publication des guides du Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
