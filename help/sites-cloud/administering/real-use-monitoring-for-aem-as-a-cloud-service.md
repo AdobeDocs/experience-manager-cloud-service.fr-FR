@@ -1,7 +1,7 @@
 ---
 title: Surveillance à usage réel pour AEM as a Cloud Service
 description: Découvrez comment utiliser la surveillance de l’utilisation réelle (RUM) pour capturer et analyser en temps réel l’expérience utilisateur numérique d’un site web ou d’une application.
-source-git-commit: 17a47bc440f971bcd220846ba31812fb1ee2f12e
+source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -114,6 +114,6 @@ Lorsque vous analysez les données RUM, il peut y avoir des écarts dans les pag
 
 1. **Comment puis-je me désinscrire ?**
 
-Nous vous recommandons vivement d’utiliser la surveillance de l’utilisation réelle (RUM) en raison de ses avantages significatifs et de sa capacité à optimiser vos expériences numériques. Il peut offrir des informations précieuses qui peuvent améliorer les performances du site web. Le service est conçu pour être transparent et n’a aucun impact sur les performances de votre site web.
+   Nous vous recommandons vivement d’utiliser la surveillance de l’utilisation réelle (RUM) en raison de ses avantages significatifs et de sa capacité à optimiser vos expériences numériques. Il peut offrir des informations précieuses qui peuvent améliorer les performances du site web. Le service est conçu pour être transparent et n’a aucun impact sur les performances de votre site web.
 
-S’exclure signifie ne pas tenir compte de ces informations. Toutefois, si vous rencontrez des problèmes, contactez l’assistance Adobe.
+   S’exclure signifie ne pas tenir compte de ces informations. Toutefois, si vous rencontrez des problèmes, contactez l’assistance Adobe.
