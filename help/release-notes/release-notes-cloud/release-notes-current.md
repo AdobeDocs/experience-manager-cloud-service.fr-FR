@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
+source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 92%
@@ -62,7 +62,7 @@ Les actions et les workflows de traduction de contenu déclenchent désormais de
 
 #### Service de données de surveillance d’utilisation réelle (RUM) {#real-use-monitoring}
 
-* **[Le service de données Real User Monitoring (surveillance des utilisateurs et utilisatrices réels, RUM) est désormais en disponibilité générale](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**. Il permet la collecte de données côté client pour AEM as a Cloud Service.
+* **[Le service de données Real User Monitoring (surveillance des utilisateurs et utilisatrices réels, RUM) est désormais en disponibilité générale](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)**. Il permet la collecte de données côté client pour AEM as a Cloud Service.
 Le service de surveillance de l’utilisation réelle, la collection côté client, offre un reflet plus précis des interactions, assurant une mesure fiable de l’engagement du site web. Il dote la clientèle d’informations avancées sur le trafic et les performances de leurs pages. Il permet d’approfondir les performances de vos pages et d’obtenir des informations pour les améliorer.
 
 #### Création d’AEM pour les Edge Delivery Services {#edge-enhancements}
