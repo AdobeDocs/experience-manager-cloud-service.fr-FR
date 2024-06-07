@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1942'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Consultez la vidéo Vue d’ensemble de la version de mai 2024 pour obtenir un 
 
 ### Nouvelles fonctionnalités de Sites {#sites-new-features}
 
-#### Intégration AEM traduction {#translation-integration}
+#### Intégration de la traduction AEM {#translation-integration}
 
-Les actions et les workflows de traduction de contenu déclenchent désormais des événements pour permettre le suivi des étapes et des états de processus pertinents à partir d’applications externes. Les événements suivants sont en cours de génération. Les utilisateurs pourront s’abonner aux événements à l’aide de la console Adobe Developer.
+Les actions et les workflows de traduction de contenu déclenchent désormais des événements pour permettre le suivi des étapes et des états de processus pertinents à partir d’applications externes. Les événements suivants sont en cours de génération. Les personnes pourront s’abonner aux événements à l’aide d’Adobe Developer Console.
 
 * `TRANSLATION_JOB_CREATED`
 * `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
@@ -60,12 +60,12 @@ Les actions et les workflows de traduction de contenu déclenchent désormais de
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### Service de données de surveillance d’utilisation réelle (RUM) {#real-use-monitoring}
+#### Service de surveillance des utilisateurs et utilisatrices en temps réel (RUM) {#real-use-monitoring}
 
-* **[Le service de données Real User Monitoring (surveillance des utilisateurs et utilisatrices réels, RUM) est désormais en disponibilité générale](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)**. Il permet la collecte de données côté client pour AEM as a Cloud Service.
-Le service de surveillance de l’utilisation réelle, la collection côté client, offre un reflet plus précis des interactions, assurant une mesure fiable de l’engagement du site web. Il dote la clientèle d’informations avancées sur le trafic et les performances de leurs pages. Il permet d’approfondir les performances de vos pages et d’obtenir des informations pour les améliorer.
+* **[Le service de données Real User Monitoring (surveillance des utilisateurs et utilisatrices en temps réel, RUM) est désormais en disponibilité générale](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)**. Il permet la collecte de données côté client pour AEM as a Cloud Service.
+Le service de surveillance des utilisateurs et utilisatrices en temps réel (RUM) et sa collecte côté client offrent un reflet plus précis des interactions, assurant ainsi une mesure fiable de l’engagement du site web. Il dote la clientèle d’informations avancées sur le trafic et les performances de leurs pages. Il permet d’approfondir les performances de vos pages et d’obtenir des informations pour les améliorer.
 
-#### Création d’AEM pour les Edge Delivery Services {#edge-enhancements}
+#### Création AEM pour Edge Delivery Services {#edge-enhancements}
 
 Stabilité améliorée et différentes améliorations pour une meilleure expérience de création.
 
@@ -144,11 +144,11 @@ Vous souhaitez intégrer l’une de ces solutions Captcha à vos formulaires ada
 
 ### Service Forms
 
-Le service Forms génère des formulaires PDF interactifs pour la capture de données. Il peut également être utilisé pour importer ou exporter des données vers et depuis un formulaire de PDF interactif existant et valider les données envoyées. Voici une répartition de ses fonctionnalités :
+Le service Forms génère des formulaires PDF interactifs pour la capture de données. Il peut également être utilisé pour importer ou exporter des données vers et à partir d’un formulaire PDF interactif existant et valider les données envoyées. Voici une répartition de ses fonctionnalités :
 
 * **Rendu de Forms** : générez un formulaire PDF interactif à partir d’un modèle créé à l’aide d’AEM Forms Designer et éventuellement de données XML. Cela génère essentiellement un formulaire PDF à remplir, éventuellement prérempli avec des données.
 * **Extraction et import des données** : importez des données dans un formulaire PDF existant et extrayez des données d’un formulaire PDF rempli. Les formats de données XDP et XML sont pris en charge, et l’import dans des formulaires PDF non XFA (également appelés AcroForms) prend également en charge les données FDF et XFDF.
-* **Validation des données**: validez les données envoyées, au format XDP ou XML, par rapport à un modèle créé à l’aide d’AEM Forms Designer.
+* **Validation des données** : validez les données envoyées, au format XDP ou XML, par rapport à un modèle créé à l’aide d’AEM Forms Designer.
 
 >[!IMPORTANT]
 >
@@ -190,7 +190,7 @@ L’interface de ligne de commande RDE comporte de nouvelles fonctionnalités qu
 
 * [La commande de configuration est interactive](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), ce qui facilite le choix entre les organisations, les programmes et les environnements. Il est également désormais possible de remplacer ces valeurs sur la ligne de commande.
 * [Mode silencieux](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) pour une sortie moins détaillée.
-* [mode json](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) pour une sortie utile lorsqu’elle est appelée par programmation.
+* [Mode json](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) pour une sortie utile lorsqu’elle est appelée par programmation.
 
 ### Nouvelles notifications du centre d’actions {#actions-center-notifications}
 
@@ -253,5 +253,5 @@ Vous trouverez une liste complète des versions des outils de migration [ici](/h
 
 ## Notes de mise à jour dʼExperience Cloud {#experience-cloud}
 
-Vous trouverez des informations sur les versions d’autres applications Experience Cloud. [here](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current).
-Pour recevoir chaque mois une notification par e-mail concernant les mises à jour des notes de mise à jour des Experience Cloud, abonnez-vous au [Mise à jour produit prioritaire des Adobes](https://www.adobe.com/subscription/priority-product-update.html).
+Vous trouverez des informations sur les versions d’autres applications Experience Cloud [ici](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current).
+Pour recevoir chaque mois une notification par e-mail concernant des informations sur les notes de mise à jour d’Experience Cloud, abonnez-vous aux [Mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html).
