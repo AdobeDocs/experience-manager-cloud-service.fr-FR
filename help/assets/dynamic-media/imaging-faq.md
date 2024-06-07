@@ -2,13 +2,13 @@
 title: Imagerie dynamique
 description: Découvrez comment l’imagerie intelligente avec l’IA Adobe Sensei applique les caractéristiques de visualisation uniques de chaque utilisateur ou utilisatrice pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
 contentOwner: Rick Brough
-feature: Asset Management,Renditions
+feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
-source-wordcount: '3535'
+source-wordcount: '3454'
 ht-degree: 100%
 
 ---

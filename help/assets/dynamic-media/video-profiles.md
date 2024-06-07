@@ -2,12 +2,12 @@
 title: Profils vidéo Dynamic Media
 description: Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Vous pouvez également ajouter un recadrage intelligent à vos vidéos.
 contentOwner: Rick Brough
-feature: Asset Management,Video Profiles,Renditions
+feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
-source-wordcount: '3716'
+source-wordcount: '3744'
 ht-degree: 100%
 
 ---
@@ -20,11 +20,11 @@ Voici d’autres facteurs qui déterminent la qualité des vidéos :
 
 * **Résolution de la vidéo source originale chargée**
 
-   Si la vidéo MP4 a été enregistrée à une résolution moins élevée, telle que 240p ou 360p, elle ne peut pas être diffusée en haute définition en continu.
+  Si la vidéo MP4 a été enregistrée à une résolution moins élevée, telle que 240p ou 360p, elle ne peut pas être diffusée en haute définition en continu.
 
 * **Taille du lecteur vidéo**
 
-   Par défaut, la largeur du profil de codage de vidéo adaptative est définie sur « Auto ». Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
+  Par défaut, la largeur du profil de codage de vidéo adaptative est définie sur « Auto ». Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
 
 Voir [Bonnes pratiques en matière de codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -57,7 +57,7 @@ Le tableau suivant identifie les bonnes pratiques à appliquer lors du codage de
    <td><strong>Débit vidéo (kbit/s)</strong></td>
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td>
    <td><strong>Codec audio</strong></td>
-   <td><strong>Débit audio  (kbit/s)</strong></td>
+   <td><strong>Débit audio (Kbits/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -401,7 +401,7 @@ Voir aussi [Retraiter des ressources dans un dossier](/help/assets/dynamic-media
 
 * Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` et sélectionnez **[!UICONTROL Enregistrer tout]**.
 
-   ![chlimage_1-519](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
 
 ## Surveillance de la progression d’une tâche de traitement de profil vidéo {#monitoring-the-progress-of-an-encoding-job}

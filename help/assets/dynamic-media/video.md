@@ -2,13 +2,13 @@
 title: Vidéo dans Dynamic Media
 description: Découvrez comment utiliser la vidéo dans Dynamic Media. Examinez les bonnes pratiques en matière de codage de vidéos, de publication de vidéos dans YouTube, d’affichage de rapports vidéo et d’ajout de marqueurs de chapitre ou de sous-titrage aux vidéos.
 contentOwner: Rick Brough
-feature: Video Profiles
+feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '9357'
-ht-degree: 80%
+ht-degree: 82%
 
 ---
 
@@ -537,13 +537,13 @@ Voici quelques avantages clés de l’activation de DASH sur votre compte :
 
 L’activation de la prise en charge DASH sur votre compte s’effectue au moyen d’un cas de service clientèle Adobe que vous créez et envoyez.
 
-**À propos de l’activation de la prise en charge de plusieurs sous-titres et du suivi audio sur votre compte**
+**À propos de l’activation de la prise en charge de plusieurs sous-titres et pistes audio sur votre compte**
 
 Au moment même où vous créez un cas de prise en charge des Adobes pour que le BASH soit activé sur votre compte, vous pouvez également bénéficier de l’activation automatique de plusieurs sous-titres et du suivi audio. Après l’activation, toutes les vidéos suivantes que vous chargez sont traitées avec une nouvelle architecture du serveur principal qui inclut la prise en charge de l’ajout de plusieurs sous-titres et pistes audio à vos vidéos.
 
 >[!IMPORTANT]
 >
->Toutes les vidéos que vous avez téléchargées *before* activation de la prise en charge de plusieurs sous-titres et du suivi audio sur votre compte Dynamic Media, [doit être retraité](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que plusieurs fonctionnalités de sous-titres et de suivi audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
+>Toutes les vidéos que vous avez téléchargées *avant* l’activation de la prise en charge de plusieurs sous-titres et pistes audio sur votre compte Dynamic Media [doivent être retraitées](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de prise en charge de plusieurs sous-titres et pistes audio soient disponibles. Après retraitement, les URL de la vidéo continuent à fonctionner et à être lues normalement.
 
 **Pour activer la prise en charge du suivi DASH, multilégendes et multiaudio sur votre compte Dynamic Media :**
 
@@ -565,7 +565,7 @@ Au moment même où vous créez un cas de prise en charge des Adobes pour que le
    * [Ajout de plusieurs sous-titres et pistes audio](#add-msma) à votre vidéo.
 
 
-## À propos de la prise en charge de plusieurs sous-titres et du suivi audio pour les vidéos dans Dynamic Media{#about-msma}
+## À propos de la prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media{#about-msma}
 
 Grâce à la fonctionnalité de suivi audio et de sous-titres multiples de Dynamic Media, vous pouvez facilement ajouter plusieurs sous-titres et pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface d’utilisation.
 
@@ -587,7 +587,7 @@ La fonctionnalité de suivi multilégende et audio est disponible pour votre com
 
 ### Ajout de plusieurs sous-titres et pistes audio à votre vidéo {#add-msma}
 
-Avant d’ajouter plusieurs sous-titres et pistes audio à votre vidéo, assurez-vous que vous disposez déjà des éléments suivants :
+Avant d’ajouter plusieurs sous-titres et plusieurs pistes audio à votre vidéo, assurez-vous que vous disposez déjà des éléments suivants :
 
 * Dynamic Media est configuré dans un environnement AEM.
 * Un [profil vidéo Dynamic Media est appliqué au dossier dans lequel vos vidéos sont ingérées](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
@@ -597,12 +597,12 @@ Les légendes et les légendes ajoutées sont prises en charge avec les formats 
 
 >[!IMPORTANT]
 >
->Toutes les vidéos que vous avez téléchargées *before* activation de la prise en charge de plusieurs sous-titres et du suivi audio sur votre compte Dynamic Media, [doit être retraité](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que plusieurs fonctionnalités de sous-titres et de suivi audio soient disponibles. Les URL de la vidéo continuent à fonctionner et à se lire normalement, après retraitement.
+>Toutes les vidéos que vous avez chargées *avant* l’activation de la prise en charge de plusieurs sous-titres et pistes audio sur votre compte Dynamic Media [doivent être retraitées](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de prise en charge de plusieurs sous-titres et pistes audio soient disponibles. Après retraitement, les URL de la vidéo continuent à fonctionner et à être lues normalement.
 
 **Pour ajouter plusieurs sous-titres et pistes audio à votre vidéo :**
 
 1. [Chargez la vidéo principale dans un dossier](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) qui comporte déjà un profil vidéo qui lui est affecté.
-1. Accédez à la ressource vidéo chargée à laquelle vous souhaitez ajouter plusieurs sous-titres et pistes audio.
+1. Accédez à la ressource vidéo chargée à laquelle ajouter plusieurs sous-titres et pistes audio.
 1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
 1. Dans la barre d’outils, sélectionnez l’icône Propriétés (cercle contenant un « i »).
    ![Ressource vidéo sélectionnée avec une coche sur l’image de la miniature vidéo et l’option Afficher les propriétés surlignée sur la barre d’outils.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ressource vidéo sélectionnée en vue Vignette.*
@@ -823,7 +823,7 @@ La piste audio d’origine extraite d’un fichier principal ne peut pas être t
 
 >[!IMPORTANT]
 >
->Adobe vous recommande de [activation de la fonctionnalité de suivi audio et de sous-titres multiples](#enable-dash) sur votre compte Dynamic Media. Cela vous permet de tirer parti de la dernière architecture du serveur principal Dynamic Media et d’un processus simplifié pour ajouter des sous-titres, des sous-titres et des pistes audio à vos vidéos.
+>Adobe vous recommande d’[activer la fonctionnalité de sous-titres et pistes audio multiples](#enable-dash) sur votre compte Dynamic Media. Cela vous permet de tirer parti de la dernière architecture du serveur principal Dynamic Media et d’un processus simplifié pour ajouter des sous-titres, des sous-titres et des pistes audio à vos vidéos.
 
 Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des sous-titres aux vidéos uniques ou aux ensembles de vidéos adaptatives. En ajoutant des sous-titrages, vous évitez d’avoir à réenregistrer le son ou de recourir à des locuteurs natifs pour réenregistrer la partie audio dans les différentes langues. La lecture de la vidéo s’effectue dans la langue dans laquelle elle a été enregistrée. Les sous-titres de langues étrangères s’affichent afin que les personnes de différentes langues puissent toujours comprendre la partie audio.
 
