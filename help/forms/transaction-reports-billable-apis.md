@@ -6,7 +6,7 @@ exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
 source-wordcount: '1438'
-ht-degree: 71%
+ht-degree: 86%
 
 ---
 
@@ -37,22 +37,22 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Outil de suivi des soumissions de formulaires"
->abstract="Ce graphique représente le nombre d’envois de formulaires adaptatifs pendant des périodes spécifiques. L’augmentation des envois peut indiquer que le formulaire est de plus en plus populaire ou qu’il est nécessaire de collecter plus de données auprès des utilisateurs. **Remarque :** Le graphique fournit des données spécifiques à l’instance actuelle, ce qui vous permet d’analyser rapidement les tendances et de prendre des décisions éclairées. Pour les données d’envoi d’autres instances, accédez simplement au tableau de bord de l’instance correspondante."
+>abstract="Ce graphe représente le nombre d’envois de formulaires adaptatifs pendant des périodes spécifiques. L’augmentation des envois peut indiquer que le formulaire est de plus en plus populaire ou qu’il est nécessaire de collecter plus de données auprès des utilisateurs et utilisatrices. **Note :** le graphe fournit des données spécifiques à l’instance actuelle, ce qui vous permet d’analyser rapidement les tendances et de prendre des décisions éclairées. Pour les données d’envoi d’autres instances, accédez simplement au tableau de bord de l’instance correspondante."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
->title="Suivi du rendu du document"
->abstract="Ce graphique représente le nombre de rendus de document pendant des périodes spécifiques. **Remarque :** Le graphique fournit des données spécifiques à l’instance actuelle, ce qui vous permet d’analyser rapidement les tendances et de prendre des décisions éclairées. Pour les données d’envoi d’autres instances, accédez simplement au tableau de bord de l’instance correspondante."
+>title="Outil de suivi du rendu du document"
+>abstract="Ce graphe représente le nombre de rendus de document pendant des périodes spécifiques. **Note :** le graphe fournit des données spécifiques à l’instance actuelle, ce qui vous permet d’analyser rapidement les tendances et de prendre des décisions éclairées. Pour les données d’envoi d’autres instances, accédez simplement au tableau de bord de l’instance correspondante."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Outil de suivi des nouveaux formulaires"
->abstract="Le graphique fournit des informations sur le nombre de formulaires nouvellement créés au cours de périodes spécifiques. **Remarque :** Le graphique fournit des données spécifiques à l’instance d’auteur AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de chacune d’elles."
+>abstract="Le graphe fournit des informations sur le nombre des formulaires nouvellement créés au cours de périodes spécifiques. **Note :** le graphe fournit des données spécifiques à l’instance de création AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de chacune d’elles."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Outil de suivi des formulaires publiés"
->abstract="Le graphique fournit des informations sur le nombre de formulaires qui ont été publiés avec succès au cours de périodes spécifiques. **Remarque :** Le graphique fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
+>abstract="Le graphe fournit des informations sur le nombre de formulaires publiés avec succès au cours de périodes spécifiques. **Note :** le graphe fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
@@ -62,18 +62,18 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Durée moyenne de création de formulaire"
->abstract="Le graphique affiche la durée moyenne nécessaire à la création et à la publication d’un formulaire, mesurée à partir du premier jour où le formulaire a été ouvert pour édition. **Remarque :** Le graphique fournit des données spécifiques à l’instance d’auteur AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de chacune d’elles."
+>abstract="Le graphique affiche la durée moyenne nécessaire à la création et à la publication d’un formulaire, mesurée à partir du premier jour où le formulaire a été ouvert pour édition. **Note :** le graphe fournit des données spécifiques à l’instance de création AEM Forms actuelle. Pour afficher les données d’autres instances, accédez au tableau de bord de chacune d’elles."
 
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Suivi des fragments Forms"
->abstract="Ce graphique vous permet de voir le nombre de fragments de formulaire que vous utilisez dans vos formulaires. **Remarque :** Le graphique fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
+>title="Outil de suivi des fragments de formulaires"
+>abstract="Ce graphe vous permet de voir combien de fragments de formulaire vous utilisez dans vos formulaires. **Note :** le graphe fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Suivi de la durée moyenne des fragments de formulaire"
->abstract="Le graphe affiche la durée moyenne nécessaire à la création d’un fragment de formulaire, mesurée à partir du premier jour où le fragment de formulaire a été ouvert pour modification. **Remarque :** Le graphique fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
+>title="Outil de suivi du temps moyen des fragments de formulaires"
+>abstract="Le graphe affiche la durée moyenne nécessaire à la création d’un fragment de formulaire, mesurée à partir du premier jour où le fragment de formulaire a été ouvert pour modification. **Note :** le graphe fournit des données spécifiques à l’instance de publication AEM Forms actuelle. Pour afficher les données de conversion d’autres instances, accédez au tableau de bord de chaque instance."
 
 
 <!-- 
