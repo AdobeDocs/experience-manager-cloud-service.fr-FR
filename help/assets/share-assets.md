@@ -4,10 +4,10 @@ description: Distribuez vos ressources numériques à l’aide de méthodes tell
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
+source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 80%
+source-wordcount: '1829'
+ht-degree: 81%
 
 ---
 
@@ -121,7 +121,7 @@ Le modèle d’email peut être personnalisé à l’aide de texte brut ou de HT
 | `${emailMessage}` | Corps de l&#39;email |
 | `${pagePath}` | URL du lien partagé |
 | `${linkExpiry}` | Date d’expiration du lien partagé |
-| `${host.prefix}` | Origine de la [!DNL Experience Manager] instance, par exemple `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### Exemple de modèle de courrier électronique personnalisé {#custom-email-template-example}
 
@@ -137,10 +137,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### Télécharger les ressources à l’aide du lien de ressource {#download-assets-using-asset-link}
 
