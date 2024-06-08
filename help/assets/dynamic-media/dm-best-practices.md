@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions,Configuration,Asset Management,Best Practices
+feature: Video,Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: a92d55a4b9368d92d41d0156d8aa2b24f619fc54
+source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,9 @@ Fonctionnalité proactive qui vous permet de choisir les ressources à synchroni
 * **Publication sélective :**
 Une fois vos ressources synchronisées, la publication sélective vous permet de contrôler quelles ressources sont visibles par vos clients. Grâce à cette fonctionnalité, vous pouvez déterminer les ressources approuvées qui sont réellement diffusées par le biais de vos canaux, en veillant à ce que vos clients ne voient que le contenu le plus pertinent et le meilleur.
 
-Ces deux bonnes pratiques vous aident à mieux contrôler, gérer et optimiser la productivité de votre contenu multimédia. Vous souhaitez en savoir plus ? Accédez à [Configuration de la publication sélective au niveau du dossier dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+Ces deux bonnes pratiques vous aident à mieux contrôler, gérer et optimiser la productivité de votre contenu multimédia.
+
+Vous souhaitez en savoir plus ? Accédez à [Configuration de la publication sélective au niveau du dossier dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Préparation des ressources pour la diffusion
@@ -130,12 +132,12 @@ Vous souhaitez en savoir plus ? Regarder [Utilisation du recadrage intelligent a
 
 Appliquez régulièrement les recommandations suivantes pour vous assurer que vos images contribuent efficacement à votre stratégie d’optimisation pour les moteurs de recherche globale.
 
-* **Noms de fichier image significatifs :**
+* **Noms de fichiers d’image significatifs :**
 Utilisez des noms de fichier descriptifs qui reflètent le contenu de l’image. Par exemple :
    * Utilisez `myCompany-Silver-Wrist-Watch`
    * *éviter* `myCompany_Silver_Wrist_Watch` ou `myCompanySilverWristWatch`
 
-  Cela permet aux moteurs de recherche de comprendre le contexte de l’image et améliore l’optimisation du référencement. Sachez également que Google préfère les tirets aux traits de soulignement ou aux mots concaténés à la séparation de mots.
+  Cela permet aux moteurs de recherche de comprendre le contexte de l’image et améliore l’optimisation du référencement. Google préfère les tirets aux traits de soulignement ou aux espaces dans le nom d’un fichier. Évitez également de concaténer des mots dans un nom de fichier.
 * **Domaine personnalisé :**
 Implémentez un domaine personnalisé qui inclut le nom de votre société ou marque pour renforcer la reconnaissance et la confiance de la marque. Par exemple :
 
@@ -167,7 +169,7 @@ Dynamic Media propose une suite de commandes permettant d’améliorer les image
 | --- | --- |
 | **Télécharger et publier votre image d’origine** | ・ Commencez par télécharger l’image d’origine dans Dynamic Media.<br>・ Assurez-vous qu’il est publié et accessible via une URL.<br>・ Dans cet exemple, une image de stock d’une montre avec un fond blanc (appelons-la &quot;Image X&quot;) est téléchargée sur Dynamic Media.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
 | **Création d’un masque** | ・ Développer un masque qui définit le sujet (la zone dans laquelle vous souhaitez appliquer des effets) et l&#39;arrière-plan (la zone que vous souhaitez modifier).<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>・ Les masques sont généralement des images en niveaux de gris, où le blanc représente le sujet, et le noir le fond. Vous pouvez créer des masques à l’aide d’outils tels qu’Adobe Photoshop.<br>Vous souhaitez en savoir plus ? Accédez à [Création et modification d’un masque rapide dans Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>・ Pour &quot;Image X&quot;, créez un masque qui décrit précisément le sujet que vous souhaitez améliorer. Par exemple, une personne, un objet, etc. |
-| **Application de commandes URL Dynamic Media pour les effets** | Une fois que vous avez votre masque, utilisez les commandes URL pour appliquer des effets tels que des ombres portées ou modifiez la couleur d’arrière-plan en &quot;Image X&quot;. Voici deux exemples :<br><br> ・ **Effet Ombre portée :**<br> Pour ajouter un effet d’ombre portée le long des limites de l’objet, modifiez l’URL comme suit :<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>Dans cette URL, la variable `$shadow$` crée l’effet d’ombre, et `color=0,0,0` définit la couleur de l’ombre sur le noir.<br>・ **Changement de couleur d’arrière-plan :**<br> Pour modifier la couleur d’arrière-plan, utilisez l’URL avec une valeur de couleur d’arrière-plan différente :<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> Dans cet exemple, `color=255,255,255` définit la couleur d’arrière-plan sur blanche. Modifiez l’arrière-plan d’une couleur spécifique pour l’impact visuel. |
+| **Application de commandes URL Dynamic Media pour les effets** | Une fois que vous avez votre masque, utilisez les commandes URL pour appliquer des effets tels que des ombres portées ou modifiez la couleur d’arrière-plan en &quot;Image X&quot;. Voici deux exemples :<br><br> ・ **Effet ombre portée :**<br> Pour ajouter un effet d’ombre portée le long des limites de l’objet, modifiez l’URL comme suit :<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>Dans cette URL, la variable `$shadow$` crée l’effet d’ombre, et `color=0,0,0` définit la couleur de l’ombre sur le noir.<br>・ **Changement de couleur d’arrière-plan :**<br> Pour modifier la couleur d’arrière-plan, utilisez l’URL avec une valeur de couleur d’arrière-plan différente :<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> Dans cet exemple, `color=255,255,0` définit la couleur d’arrière-plan sur jaune. Modifiez l’arrière-plan d’une couleur spécifique pour l’impact visuel. |
 
 #### Ajouter une bordure d’image
 
@@ -176,8 +178,8 @@ Dynamic Media vous permet de manipuler des images directement via des URL, ce qu
 | Tâche | Que faire |
 | --- | --- |
 | **Bordure blanche** | Pour ajouter une bordure blanche, utilisez l’URL suivante :<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10)<br>Dans cette URL, la variable `extend=10,10,10,10` spécifie la taille de la bordure de dix pixels sur tous les côtés. |
-| **Le flou le long de la frontière blanche** | Pour ajouter un effet de flou le long de la bordure blanche, vous pouvez modifier l’URL comme suit :<br>[https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>Dans cette URL, la variable `effect=-1` applique l’effet de flou, et `op_blur=60` contrôle l’intensité du flou. |
-| **Effet ombre portée le long de la limite extérieure** | Pour ajouter un effet d’ombre portée le long de la limite extérieure, utilisez cette URL :<br>https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0<br>La variable `$shadow$` crée l’effet d’ombre, et `color=0,0,0` définit la couleur de l’ombre sur le noir. |
+| **Flou le long de la bordure blanche** | Pour ajouter un effet de flou le long de la bordure blanche, vous pouvez modifier l’URL comme suit :<br>[https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>Dans cette URL, la variable `effect=-1` applique l’effet de flou, et `op_blur=60` contrôle l’intensité du flou. |
+| **Déposer l’effet d’ombre le long de la limite extérieure** | Pour ajouter un effet d’ombre portée le long de la limite extérieure, utilisez cette URL :<br>https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0<br>La variable `$shadow$` crée l’effet d’ombre, et `color=0,0,0` définit la couleur de l’ombre sur le noir. |
 
 N’hésitez pas à tester ces URL pour obtenir les effets visuels souhaités.
 
@@ -187,38 +189,38 @@ Si vous souhaitez superposer un logo ou une icône à une image existante, Dynam
 
 | Étape | Que faire |
 | --- | --- |
-| **Téléchargement et publication de l’image de base** | Tout d’abord, téléchargez et publiez l’image de base sur laquelle vous souhaitez superposer le logo ou l’icône. Vous pouvez utiliser n’importe quelle image comme base.<br>Par exemple, voici une image de base :<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage). |
-| **Téléchargement et publication du logo ou de l’image d’icône** | Ensuite, téléchargez et publiez l’image que vous souhaitez superposer sur l’image de base. Cette image doit être un fichier PNG transparent avec le logo ou l’icône à superposer.<br>Voici l’image PNG transparente d’un objet étoile avec des effets de transparence qui vont être superposés :<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
+| **Télécharger et publier l’image de base** | Tout d’abord, téléchargez et publiez l’image de base sur laquelle vous souhaitez superposer le logo ou l’icône. Vous pouvez utiliser n’importe quelle image comme base.<br>Par exemple, voici une image de base :<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage). |
+| **Télécharger et publier le logo ou l’image de l’icône** | Ensuite, téléchargez et publiez l’image que vous souhaitez superposer sur l’image de base. Cette image doit être un fichier PNG transparent avec le logo ou l’icône à superposer.<br>Voici l’image PNG transparente d’un objet étoile avec des effets de transparence qui vont être superposés :<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
 | **Application de l’URL Dynamic Media** | Créez maintenant une URL Dynamic Media qui combine l’image de base et le logo ou l’image d’icône. Pour ce faire, vous pouvez utiliser des commandes URL.<br>La structure de l’URL ressemble à ceci :<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>where<br>・ `hotspotRetailBaseImage` est l’image de base.<br>・ `starxp` est l’image logo/icône.<br>・ `layer=1` indique que le logo ou l’icône doit être superposé sur l’image de base.<br>・ `scale=1.25` ajuste la taille du logo/de l’icône.<br>・ `posN=0.33,-.25` détermine la position du logo/de l’icône par rapport à l’image de base.<br>・ `fmt=png` garantit que la sortie est au format PNG. |
 
-Que savoir plus ? Accédez à [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) pour plus d’informations sur la variable `src` et d’autres commandes Dynamic Media.
+Que savoir plus ? Accédez à [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) pour plus d’informations sur la variable `src` et d’autres commandes d’URL Dynamic Media.
 
 
-#### Superposition de texte promu
+#### Recouvrement du texte promotionnel
 
 Vous trouverez ci-dessous les étapes de superposition d’un message promotionnel sur une image à l’aide de HTML et de CSS.
 
 | Étape | Que faire |
 | --- | --- |
-| **Téléchargement et publication de l’image de base** | Tout d’abord, téléchargez et publiez l’image de base sur laquelle vous souhaitez superposer le texte. Vous pouvez utiliser n’importe quelle image de votre choix. Par exemple, voici un exemple d’image de base :<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa)<br> |
+| **Télécharger et publier l’image de base** | Tout d’abord, téléchargez et publiez l’image de base sur laquelle vous souhaitez superposer le texte. Vous pouvez utiliser n’importe quelle image de votre choix. Par exemple, voici un exemple d’image de base :<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa)<br> |
 | **Application d’opérateurs de texte Dynamic Media** | Dynamic Media vous permet d’appliquer des opérateurs de texte pour superposer du texte dynamique directement sur l’image. L’exemple d’URL suivant illustre cette fonctionnalité :<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600 hei=600](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600 hei=600) |
 
 #### Redimensionnement et recadrage pour divers cas d’utilisation
 
-##### Concepts de base du redimensionnement des images
+##### Principes de base du redimensionnement des images
 
 Le redimensionnement de l’image implique de modifier les dimensions, la résolution et la taille de fichier d’une image. Voici quelques points essentiels à prendre en compte :
 
-* **Composition du pixel :**
+* **Composition des pixels :**
 Les images numériques se composent de petits points appelés pixels. Lorsqu’une image est créée, elle présente un nombre spécifique de pixels. Le redimensionnement implique l’ajout ou la soustraction de pixels pour modifier les dimensions, la résolution et la taille de fichier de l’image.
 * **Format :**
 Le maintien du rapport L/H (relation entre largeur et hauteur) est essentiel pour éviter la distorsion. Si vous agrandissez (mise à l’échelle) ou réduisez (mise à l’échelle) une image, la conservation des proportions garantit la cohérence visuelle.
-* **Considérations sur la qualité :**
+* **Considérations relatives à la qualité :**
 Le redimensionnement peut avoir une incidence sur la qualité de l’image. Évitez la mise à l’échelle drastique, car elle peut conduire à la pixellisation. Envisagez plutôt de reproduire l’image à une taille et une résolution plus grandes. Pour les images plus petites, utilisez les outils appropriés pour maintenir la résolution.
 
-##### Recadrage ou redimensionnement
+##### Recadrage et redimensionnement
 
-Le redimensionnement et le recadrage sont des techniques de Dynamic Media qui vous permettent de transformer des images en fonction de divers cas d’utilisation, qu’il s’agisse de créer des miniatures, des bannières ou des images d’affichage de produit.
+Le recadrage et le redimensionnement sont des techniques de Dynamic Media qui vous permettent de transformer des images en fonction de divers cas d’utilisation, qu’il s’agisse de créer des miniatures, des images d’affichage de produit ou des bannières.
 
 * **Recadrage :**
 Cela implique la suppression d’une partie d’une image pour modifier sa composition et sa mise en forme. Elle ne modifie pas les dimensions globales, mais se concentre sur un domaine spécifique.
@@ -251,13 +253,13 @@ Vous souhaitez en savoir plus sur les commandes disponibles dans une URL ? Accé
 
 * **Sélectionnez un profil vidéo :**
 Tout d’abord, dans Dynamic Media, vous devez sélectionner un profil vidéo approprié. Vous pouvez opter pour le *Codage vidéo adaptatif* profil disponible dans AEM Assets sous Profils vidéo. Ces paramètres de codage prédéfinis garantissent que votre vidéo est optimisée pour la lecture sur divers appareils et conditions de bande passante. Vous pouvez également créer votre propre profil de vidéo adaptative.
-* **Attribuer le profil :**
+* **Attribuez le profil :**
 Affectez le profil vidéo sélectionné aux dossiers dans lesquels la vidéo va être chargée. Cette étape permet de s’assurer que les paramètres de codage corrects sont appliqués pendant le processus de téléchargement.
 * **Téléchargez la vidéo d’origine :**
 Téléchargez le fichier vidéo d’origine. Assurez-vous que c&#39;est une vidéo haute résolution de bonne qualité. Plus la vidéo source est bonne, plus le résultat final est bon.
 * **Aperçu et publication :**
 Prévisualisez la vidéo afin de vous assurer que tout se présente comme prévu. Une fois satisfait, allez-y et publiez-le. Cette étape rend la vidéo accessible à votre audience.
-* **Lien ou incorporation :**
+* **Lien ou intégration :**
 Après la publication, vous disposez de deux options.
    * **Lier directement :**
 Utilisez l’URL fournie pour créer un lien direct vers la vidéo. Liez-le de manière appropriée sur votre site marketing.
@@ -272,7 +274,7 @@ Vous souhaitez en savoir plus ? Accédez à [Vidéo](https://experienceleague.ad
 
 Pour garantir la qualité et l’engagement optimales de vos vidéos, pensez à mettre en oeuvre une combinaison des stratégies de bonnes pratiques suivantes :
 
-* **Utilisez la visionneuse vidéo intégrée HTML5 :**
+* **Utilisez la visionneuse de vidéos HTML5 intégrée :**
 Les paramètres prédéfinis de la visionneuse vidéo Dynamic Media HTML5 sont des lecteurs vidéo fiables. Utilisez-les pour éviter les problèmes courants liés à la lecture vidéo et aux appareils mobiles HTML5.
 Ces paramètres prédéfinis répondent à des défis tels que la diffusion en continu à débit adaptatif et la portée limitée du navigateur de bureau.
 Vous souhaitez en savoir plus ? Accédez à [Bonne pratique : utilisation de la visionneuse de vidéos HTML 5](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
@@ -301,7 +303,7 @@ Vous souhaitez en savoir plus ? Accédez à [Activation de la DASH sur votre com
 
 L&#39;internationalisation des vidéos destinées à une consommation multilingue est essentielle pour atteindre une audience mondiale. Dynamic Media fournit des fonctionnalités qui peuvent vous aider à atteindre cet objectif.
 
-* **Télécharger vos vidéos :**
+* **Téléchargez vos vidéos :**
    * Créez tout d’abord un profil de codage vidéo. Vous pouvez utiliser le profil de codage vidéo adaptatif prédéfini fourni avec Dynamic Media ou créer votre propre profil personnalisé.
    * Associez le profil de traitement vidéo à un ou plusieurs dossiers dans lesquels vous chargez les vidéos issues de sources originales.
    * Chargez les vidéos issues de sources originales dans ces dossiers. Dynamic Media les code en fonction du profil de traitement vidéo affecté.
@@ -346,5 +348,5 @@ Pour garantir le meilleur format optimisé pour le web, vous pouvez vous fier à
 
 Grâce à l’imagerie dynamique, vous pouvez vous assurer que vos images sont diffusées de la manière la plus efficace possible, en fonction de l’environnement de navigation de chaque utilisateur. Cette approche simplifie le processus et peut améliorer les performances en termes de temps de chargement des images et d’expérience utilisateur globale.
 
-Vous souhaitez en savoir plus ? Accédez à [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md)
+Vous souhaitez en savoir plus ? Accédez à [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md).
 
