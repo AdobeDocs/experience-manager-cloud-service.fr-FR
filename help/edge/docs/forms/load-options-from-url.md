@@ -1,17 +1,17 @@
 ---
-title: Charger les options de liste déroulante depuis une URL ou une autre feuille pour les Edge Delivery Services pour AEM Forms as a Cloud Service
+title: Charger les options de liste déroulante à partir d’une URL ou une autre feuille d’Edge Delivery Services pour AEM Forms as a Cloud Service
 description: Les options de la liste déroulante sont incluses dans une feuille de calcul distincte, puis importées dans la feuille de calcul principale via l’URL fournie.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Options d’une URL ou d’une autre feuille pour les Edge Delivery Services pour AEM Forms as a Cloud Service
+# Options d’une URL ou d’une autre feuille d’Edge Delivery Services pour AEM Forms as a Cloud Service
 
 Les formulaires comprennent souvent des menus déroulants que les utilisateurs et utilisatrices peuvent sélectionner parmi des options prédéfinies. Ces options sont généralement définies dans le formulaire lui-même, mais la gestion de longues listes peut être difficile. Ce guide explique comment améliorer la création de formulaires en chargeant les options de liste déroulante à partir d’une feuille de calcul distincte via une URL.
 

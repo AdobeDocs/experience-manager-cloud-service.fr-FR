@@ -4,7 +4,7 @@ description: Découvrez les opérations réalisées en arrière-plan par Experie
 landing-page-description: Découvrez les opérations réalisées en arrière-plan par Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance, et obtenez des réponses à vos requêtes.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '105'
 ht-degree: 100%
 
