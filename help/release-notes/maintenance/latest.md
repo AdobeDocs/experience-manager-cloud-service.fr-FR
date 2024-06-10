@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 16544, publiée le 4 juin 2024. La version de maintenance précédente était la version 16461.
 
-L’activation des fonctionnalités de la version 2024.6.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
+L’activation des fonctionnalités de la version 2024.6.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
 >[!CAUTION]
 >
->Utilisez le SDK référencé ici sous , car une régression a été confirmée avec le SDK précédent :
+>Utilisez le SDK référencé ci-dessous, car une régression a été confirmée avec le SDK précédent :
 >`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### Améliorations {#enhancements-16544}
