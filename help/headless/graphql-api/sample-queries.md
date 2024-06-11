@@ -3,10 +3,10 @@ title: Apprendre à utiliser GraphQL avec AEM – Exemples de contenu et de req
 description: Apprenez à utiliser GraphQL avec AEM pour pourvoir diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 99%
+source-wordcount: '1826'
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ Consultez ces exemples de requêtes pour obtenir un aperçu de la création de r
 >
 >Vous pouvez accéder à l’éditeur de requêtes à partir de :
 >
->* **Outils** > **Général** > **Éditeur de requêtes GraphQL**
+>* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
 >* directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -362,7 +362,7 @@ Si vous créez une variante, appelée « Centre de Berlin » (`berlin_centre`)
 }
 ```
 
-### Exemple de requête : noms de toutes les villes balisées en tant que coupures municipales {#sample-names-all-cities-tagged-city-breaks}
+### Exemple de requête : noms de toutes les villes balisées en tant qu’Escapades en ville {#sample-names-all-cities-tagged-city-breaks}
 
 Si vous :
 
@@ -1794,6 +1794,20 @@ Cette requête interroge :
   }
 } 
 ```
+
+## Exemples de requêtes pour la diffusion de ressources DAM et Dynamic Media {#sample-queries-delivery-DAM-DM}
+
+Pour la diffusion d’images optimisée pour le web (des ressources de gestion des actifs numériques) :
+
+* [Exemple de requête pour une diffusion d’images optimisée pour le web avec des paramètres complets](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+
+* [Exemple de requête pour une diffusion d’image optimisée pour le web avec un seul paramètre spécifié](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+
+Pour la diffusion de l’URL vers une ressource Dynamic Media
+
+* Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Référence d’image](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+* Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## Exemple de structure de fragment de contenu (utilisée avec GraphQL) {#content-fragment-structure-graphql}
 

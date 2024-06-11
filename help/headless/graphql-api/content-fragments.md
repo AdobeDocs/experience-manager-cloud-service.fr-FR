@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: d0814d3feb9ad14ddd3372851a7b2df4b0c81125
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
 workflow-type: tm+mt
-source-wordcount: '5365'
-ht-degree: 84%
+source-wordcount: '5400'
+ht-degree: 87%
 
 ---
 
@@ -745,7 +745,7 @@ La solution de GraphQL vous permet :
 >* `_dynamicUrl` : ressource DAM
 >* `_dmS7Url` : une ressource Dynamic Media
 > 
->Si l’image référencée est une ressource DAM, la valeur de `_dmS7Url` sera `null`. Voir [Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL](#dynamic-media-asset-delivery-by-url).
+>Si la ressource référencée est une ressource DAM, la valeur de `_dmS7Url` sera `null`. Voir [Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Structure de la demande de transformation {#structure-transformation-request}
 
@@ -925,10 +925,6 @@ Les restrictions suivantes s’appliquent :
 
 GraphQL pour les fragments de contenu AEM vous permet de demander une URL à une ressource Dynamic Media (Scene7) AEM (référencée par une **Référence de contenu**).
 
->[!CAUTION]
->
->Uniquement *image* Les ressources de Dynamic Media peuvent être référencées.
-
 La solution de GraphQL vous permet :
 
 * d’utiliser `_dmS7Url` sur la référence `ImageRef` ;
@@ -946,12 +942,12 @@ La solution de GraphQL vous permet :
 >* `_dmS7Url` : une ressource Dynamic Media
 >* `_dynamicUrl` : ressource DAM
 > 
->Si l’image référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` sera `null`. Voir [diffusion d’images optimisée pour le web dans des requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
+>Si la ressource référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` sera `null`. Voir [diffusion d’images optimisée pour le web dans des requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
-### Exemple de requête pour la diffusion de ressources Dynamic Media par URL {#sample-query-dynamic-media-asset-delivery-by-url}
+### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Référence d’image{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Voici un exemple de requête :
-* pour plusieurs fragments de contenu de type `team` et `person`
+* pour plusieurs fragments de contenu de type `team` et `person`, renvoi d’une `ImageRef`
 
 ```graphql
 query allTeams {
@@ -973,6 +969,47 @@ query allTeams {
     }
   }
 } 
+```
+
+### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+
+Voici un exemple de requête :
+* pour plusieurs fragments de contenu de type `team` et `person`, renvoi d’une `ImageRef`, `MultimediaRef` et `DocumentRef`:
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+       featureVideo {
+          __typename
+          ... on MultimediaRef{
+            _dmS7Url
+            size
+          }
+        }
+      about-me {
+          __typename
+          ... on DocumentRef{
+            _dmS7Url
+            _path
+          }
+        }
+      }
+    }
+  }
+}
 ```
 
 ## GraphQL pour AEM – Résumé des extensions {#graphql-extensions}
@@ -1070,7 +1107,9 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
       * `_dmS7Url`: sur la `ImageRef` référence pour la diffusion de l’URL vers une [Ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
 
-         * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL](#sample-query-dynamic-media-asset-delivery-by-url)
+         * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+         * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
    * `_tags`: pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau de `cq:tags` identifiants.
 
@@ -1117,23 +1156,23 @@ Voir [Authentification pour les requêtes distantes AEM GraphQL sur les fragment
 
 ## Limites {#limitations}
 
-Pour vous protéger contre les problèmes potentiels, vos requêtes sont soumises à des limitations par défaut :
+ Pour vous protéger contre les problèmes potentiels, vos requêtes sont soumises à des limitations par défaut :
 
-* La requête ne peut pas contenir plus de 1M (1 024 x 1 024) caractères
-* La requête ne peut pas contenir plus de 15 000 jetons
-* La requête ne peut pas contenir plus de 200000 jetons d’espace blanc
+* La requête ne peut pas contenir plus de 1 million (1 024x1 024) de caractères.
+* La requête ne peut pas contenir plus de 15 000 jetons.
+* La requête ne peut pas contenir plus de 200 000 jetons d’espace blanc.
 
-Vous devez également savoir :
+À savoir également :
 
-* Une erreur de conflit de champ est renvoyée lorsque votre requête GraphQL contient des champs portant le même nom dans deux modèles (ou plus) et que les conditions suivantes sont remplies :
+* Une erreur de conflit de champ est renvoyée lorsque votre requête GraphQL contient des champs portant le même nom dans deux modèles (ou plus) et que les conditions suivantes sont remplies :
 
-   * Où :
+   * Dans les cas où :
 
-      * Deux (ou plusieurs modèles) sont utilisés comme références possibles, lorsqu’ils sont définis comme étant autorisés. **Type de modèle** dans la référence Fragment de contenu.
+      * Deux (ou plusieurs modèles) sont utilisés comme références possibles, lorsqu’ils sont définis comme un **Type de modèle** autorisé dans la référence Fragment de contenu.
 
      et :
 
-      * Ces deux modèles ont des champs ayant un nom commun ; cela signifie que le même nom apparaît dans les deux modèles.
+      * Ces deux modèles ont des champs ayant un nom commun. Cela signifie que le même nom apparaît dans les deux modèles.
 
      et
 
@@ -1141,12 +1180,12 @@ Vous devez également savoir :
 
    * Par exemple :
 
-      * Lorsque deux fragments (ou plus) avec des modèles différents (par exemple, `M1`, `M2`) sont utilisées comme références possibles (référence de contenu ou référence de fragment) à partir d’un autre fragment ; par exemple, `Fragment1` `MultiField/List`
+      * Lorsque deux fragments (ou plus) avec des modèles différents (par exemple, `M1`, `M2`) sont utilisées comme références possibles (référence de contenu ou référence de fragment) à partir d’un autre fragment. Par exemple, `Fragment1` `MultiField/List`.
       * Et ces deux fragments avec des modèles différents (`M1`, `M2`) comportent des champs portant le même nom, mais avec des types différents.
 Illustration :
-         * `M1.Title` as `Text`
-         * `M2.Title` as `Text/MultiField`
-      * Une erreur de conflit de champ se produira si la requête GraphQL contient le paramètre `Title` champ .
+         * `M1.Title` en tant que `Text`
+         * `M2.Title` en tant que `Text/MultiField`
+      * Une erreur de conflit de champ se produira si la requête GraphQL contient le champ `Title`.
 
 ## FAQ {#faqs}
 
