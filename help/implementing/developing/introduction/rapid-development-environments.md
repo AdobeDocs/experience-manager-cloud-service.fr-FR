@@ -4,9 +4,9 @@ description: Découvrez comment utiliser des environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
 workflow-type: tm+mt
-source-wordcount: '4294'
+source-wordcount: '4312'
 ht-degree: 50%
 
 ---
@@ -412,11 +412,6 @@ L’exemple de code ci-dessus illustre le comportement si un lot ne se résout p
 
 ### Déploiement du code frontal en fonction des thèmes du site et des modèles de site {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> Cette fonctionnalité n’est pas encore disponible. Il sera déployé au cours du mois de juin.
->
-
 Les RDE prennent en charge le code frontal basé sur [thèmes du site](/help/sites-cloud/administering/site-creation/site-themes.md) et [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md). Avec les RDE, cette opération s’effectue à l’aide d’une directive de ligne de commande pour déployer les packages front-end, plutôt que Cloud Manager. [Pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) utilisé pour d’autres types d’environnements.
 
 Comme d’habitude, créez votre package front-end à l’aide de npm :
@@ -460,6 +455,10 @@ Logs:
 >L’affectation de noms des fichiers dans le package front-end doit respecter les conventions d’affectation de noms suivantes :
 > * dossier &quot;dist&quot;, pour le dossier du package de sortie npm build
 > * fichier &quot;package.json&quot;, pour le package de dépendances npm
+
+>[!TIP]
+>
+> Si vous avez créé votre RDE avant avril 2023 et que vous rencontrez l’erreur &quot;UNATTENTED_API_ERROR&quot; lors de la première tentative de la fonctionnalité frontale, essayez de supprimer votre environnement et créez-le à nouveau.
 
 ### Vérification du statut du RDE {#checking-rde-status}
 
@@ -533,8 +532,8 @@ Voir `aio aem:rde:logs --help` pour l’ensemble complet des options de ligne de
 
 Les fonctionnalités incluent les suivantes :
 
-* déclaration des niveaux de journal à un niveau par package ou classe
-* personnalisation du format de sortie du journal
+* Déclarer des niveaux de journal par niveau de package ou de classe
+* Personnaliser le format de sortie du journal
 * jusqu’à quatre configurations de journal actuelles, chacune dans son propre terminal
 * mise en surbrillance des logs spécifiques
 
