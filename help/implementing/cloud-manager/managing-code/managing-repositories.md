@@ -1,16 +1,16 @@
 ---
-title: Gestion des référentiels dans Cloud Manager
+title: Gestion des référentiels dans Cloud Manager
 description: Découvrez comment créer, afficher et supprimer vos référentiels Git dans Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 395179c078d87a393adbc4072a9f4e5b5ca3de51
+source-git-commit: e467c8058531441524fedd37e14b82b7fb255c69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 30%
+source-wordcount: '624'
+ht-degree: 29%
 
 ---
 
 
-# Gestion des référentiels dans Cloud Manager {#managing-repos}
+# Gestion des référentiels dans Cloud Manager {#managing-repos}
 
 Découvrez comment créer, afficher et supprimer vos référentiels Git dans Cloud Manager.
 
@@ -38,7 +38,7 @@ La variable **Référentiels** La fenêtre fournit des détails sur les référe
 
 * Type de référentiel
    * **Adobe** indique les référentiels gérés par Adobe
-   * **Privé** indique les référentiels GitHub que vous gérez ;
+   * **GitHub** indique les référentiels GitHub privés que vous gérez ;
 * Lorsqu’elle a été créée
 * Pipelines associés au référentiel
 
@@ -75,7 +75,14 @@ Lors de l’affichage de vos référentiels dans le **Référentiels** vous pouv
 
 La variable **Informations sur le référentiel** s’ouvre avec les détails. Pour plus d’informations sur l’accès aux informations du référentiel, consultez le document . [Accès aux informations du référentiel.](accessing-repos.md)
 
-## Vérifier les branches {#check-branches}
+## Vérifier les branches / Créer un projet {#check-branches}
+
+La variable **Vérifier les branches / Créer un projet** L’action exécute deux fonctions en fonction de l’état du référentiel.
+
+* Si le référentiel est nouvellement créé, l’action crée un exemple de projet basé sur [l’archétype de projet AEM.](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Si le référentiel a déjà créé l’exemple de projet, il vérifie l’état du référentiel et de ses branches et renvoie les rapports si l’exemple de projet existe déjà.
+
+![Action Vérifier les branches](assets/check-branches.png)
 
 ## Copier l’URL du référentiel {#copy-url}
 
