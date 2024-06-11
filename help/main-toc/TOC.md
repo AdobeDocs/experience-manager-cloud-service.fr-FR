@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5034'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -507,7 +507,7 @@ ht-degree: 99%
       + Parcours Dynamic Media : principes de base {#dm-journey}
          + [Première partie : présentation de Dynamic Media - Cas d’utilisation - Flux des ressources dans le système](/help/assets/dynamic-media/dm-journey-part1.md)
          + [Deuxième partie : anatomie d’une URL Dynamic Media - Principes fondamentaux des paramètres d’image prédéfinis - À propos des visionneuses d’images, des visionneuses à 360° et des visionneuses de supports variés](/help/assets/dynamic-media/dm-journey-part2.md)
-         + [Bonnes pratiques relatives à Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
+         + [Bonnes pratiques relatives à Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
       + [Archive de newsletter sur Dynamic Media par Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuration de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -560,7 +560,7 @@ ht-degree: 99%
       + [Fin de vie des visionneuses DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Utilisation de la vue Ressources {#assets-view}
       + [Présentation](/help/assets/assets-view-introduction.md)
-      + [Prise en main](/help/assets/get-started-assets-view.md)
+      + [Commencer](/help/assets/get-started-assets-view.md)
       + [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
       + [Types de fichiers pris en charge et cas d’utilisation](/help/assets/supported-file-formats-assets-view.md)
       + [Afficher les ressources](/help/assets/navigate-assets-view.md)
@@ -586,7 +586,7 @@ ht-degree: 99%
       + [Configurer le mappage des métadonnées des ressources](/help/assets/configure-asset-metadata-mapping.md)
       + [Installer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Suppression des dépendances externes pour les installations existantes](/help/assets/remove-external-dependencies.md)
-      + [Configurer le  [!DNL enhanced connector]  pour  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Configurer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Mettre à jour  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Intégration avec Adobe Workfront {#integration-adobe-express}
