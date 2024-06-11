@@ -4,10 +4,10 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 3%
+source-wordcount: '1163'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est pas encore publiée et certaines destinations de journalisation peuvent ne pas être disponibles au moment de la publication. En attendant, vous pouvez ouvrir un ticket d’assistance pour transférer les journaux vers **Splunk**, comme décrit dans la section [article de connexion](/help/implementing/developing/introduction/logging.md).
+>Cette fonctionnalité n’est pas encore disponible et certaines destinations de journalisation peuvent ne pas être disponibles au moment de la publication. En attendant, vous pouvez ouvrir un ticket d’assistance pour transférer les journaux vers **Splunk**, comme décrit dans la section [article de connexion](/help/implementing/developing/introduction/logging.md).
 
 Les clients qui disposent d’une licence pour un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent avoir AEM, Apache/Dispatcher et des journaux CDN transférés vers les destinations de journalisation associées. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
@@ -27,6 +27,8 @@ Les clients qui disposent d’une licence pour un fournisseur de journalisation 
 
 Le transfert de journal est configuré en libre-service en déclarant une configuration dans Git et en la déployant via le pipeline de configuration de Cloud Manager vers les types d’environnements de développement, d’évaluation et de production dans les programmes de production (hors environnements de test).
 
+Il existe une option pour que les journaux d’AEM et Apache/Dispatcher soient acheminés par AEM infrastructure réseau avancée, telle qu’une adresse IP de sortie dédiée.
+
 Notez que la bande passante réseau associée aux journaux envoyés à la destination de journalisation est considérée comme faisant partie de l’utilisation des E/S réseau de votre entreprise.
 
 
@@ -36,6 +38,7 @@ Cet article est organisé de la manière suivante :
 
 * Configuration : commune à toutes les destinations de journalisation
 * Configurations de destination de journalisation : chaque destination a un format légèrement différent.
+* Formats de saisie de journal - informations sur les formats de saisie de journal
 * Mise en réseau avancée : envoi de journaux d’AEM et Apache/Dispatcher via une sortie dédiée ou via un VPN
 
 
@@ -48,7 +51,7 @@ Cet article est organisé de la manière suivante :
         logForwarding.yaml
    ```
 
-1. logForwarding.yaml doit contenir des métadonnées et une configuration similaire au format suivant (nous utilisons Splunk comme exemple).
+1. `logForwarding.yaml` doit contenir des métadonnées et une configuration similaire au format suivant (nous utilisons Splunk comme exemple).
 
    ```
    kind: "LogForwarding"
@@ -64,7 +67,7 @@ Cet article est organisé de la manière suivante :
          index: "AEMaaCS"
    ```
 
-   La variable **kind** doit être défini sur LogForwarding , la version doit être définie sur la version du schéma, qui est 1.
+   La variable **kind** doit être défini sur `LogForwarding` la version doit être définie sur la version du schéma, qui est 1.
 
    Jetons dans la configuration (tels que `${{SPLUNK_TOKEN}}`) représentent des secrets, qui ne doivent pas être stockés dans Git. À la place, déclarez-les comme Cloud Manager  [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md) de type **secret**. Veillez à sélectionner **Tous** comme valeur de liste déroulante pour le champ Service appliqué , afin que les journaux puissent être transférés vers les niveaux d’auteur, de publication et d’aperçu.
 
@@ -136,12 +139,51 @@ Un jeton SAS doit être utilisé pour l’authentification. Elle doit être cré
 
 * Services autorisés : l’objet Blob doit être sélectionné.
 * Ressources autorisées : l’objet doit être sélectionné.
-* Autorisations autorisées : l’écriture, l’ajout et la création doivent être sélectionnés.
+* Autorisations autorisées : vous devez sélectionner Write, Add, Create (Écrire, Ajouter, Créer).
 * Date/heure de début et d’expiration valides.
 
 Voici une capture d’écran d’un exemple de configuration de jeton SAS :
 
 ![Configuration du jeton Azure Blob SAS](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
+#### Journaux CDN Azure Blob Storage {#azureblob-cdn}
+
+Chacun des serveurs de journalisation répartis dans le monde produira un nouveau fichier toutes les quelques secondes, sous la variable `aemcdn` dossier. Une fois créé, le fichier ne sera plus annexé au fichier. Le format du nom de fichier est AAAA-MM-DDThh:mm:ss.sss-uniqueid.log. Par exemple, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+
+Par exemple, à un moment donné :
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+```
+
+Et puis 30 secondes plus tard :
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+   2024-03-04T10:00:30.000-ghi.log
+   2024-03-04T10:00:30.000-jkl.log
+   2024-03-04T10:00:30.000-mno.log
+```
+
+Chaque fichier contient plusieurs entrées de journal json, chacune sur une ligne distincte. Les formats d’entrée de journal sont décrits dans la section [article de connexion](/help/implementing/developing/introduction/logging.md), et chaque entrée de journal inclut également les propriétés supplémentaires mentionnées dans la variable [Formats de saisie du journal](#log-format) ci-dessous.
+
+#### Autres journaux de stockage Azure Blob {#azureblob-other}
+
+Les journaux autres que les journaux CDN apparaissent sous un dossier avec la convention de dénomination suivante :
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
+Sous chaque dossier, un seul fichier est créé et ajouté. Les clients sont responsables du traitement et de la gestion de ce fichier afin qu’il ne se développe pas trop.
+
+Voir les formats d’entrée de journal dans la [article de connexion](/help/implementing/developing/introduction/logging.md). Les entrées de journal incluent également les propriétés supplémentaires mentionnées dans la variable [Formats de saisie du journal](#log-formats) ci-dessous.
 
 
 ### Datadog {#datadog}
@@ -202,6 +244,24 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
+#### Logs CDN HTTPS {#https-cdn}
+
+Les requêtes Web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec le format d’entrée de journal décrit dans la variable [article de connexion](/help/implementing/developing/introduction/logging.md#cdn-log). Les propriétés supplémentaires sont mentionnées dans la section [Formats de saisie du journal](#log-formats) ci-dessous.
+
+Il existe également une propriété nommée `sourcetype`, qui est défini sur la valeur . `aemcdn`.
+
+#### Autres journaux HTTPS {#https-other}
+
+Une demande web distincte (POST) sera envoyée pour chaque entrée de journal, avec les formats d’entrée de journal décrits dans la variable [article de connexion](/help/implementing/developing/introduction/logging.md). Les propriétés supplémentaires sont mentionnées dans la section [Formats de saisie du journal](#log-format) ci-dessous.
+
+Il existe également une propriété nommée `sourcetype`, qui est défini sur l’une des valeurs suivantes :
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
 ### Splunk {#splunk}
 
 ```
@@ -237,9 +297,38 @@ data:
    ```   
 -->
 
+## Formats de saisie du journal {#log-formats}
+
+Voir le [article de connexion](/help/implementing/developing/introduction/logging.md) pour le format de chaque type de journal respectif (journal de Dispatcher, journal CDN, etc.).
+
+Puisque les journaux de plusieurs programmes et environnements peuvent être transférés vers la même destination de journalisation, en plus de la sortie décrite dans l’article de journalisation, les propriétés suivantes seront incluses dans chaque entrée de journal :
+
+* aem_env_id
+* aem_env_type
+* aem_program_id
+* aem_tier
+
+Par exemple, les propriétés peuvent avoir les valeurs suivantes :
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+```
+
 ## Mise en réseau avancée {#advanced-networking}
 
-Si vous avez des exigences organisationnelles pour verrouiller le trafic vers votre destination de journalisation, vous pouvez configurer le transfert des journaux pour qu’il [mise en réseau avancée](/help/security/configuring-advanced-networking.md). Découvrez les modèles des trois types de mise en réseau avancés ci-dessous, qui utilisent une `port` , ainsi que la variable `host` .
+>[!NOTE]
+>
+>Cette fonctionnalité n’est pas encore prête pour les utilisateurs plus précoces.
+
+
+Certaines organisations choisissent de restreindre le trafic qui peut être reçu par les destinations de journalisation.
+
+Pour le journal du réseau de diffusion de contenu, vous pouvez ajouter des adresses IP aux listes autorisées, comme décrit dans la section [cet article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, envisagez d’envoyer du trafic vers un Azure Blob Store (non Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP dédiée vers leur destination finale.
+
+Pour les autres journaux, vous pouvez configurer le transfert des journaux pour qu’il [mise en réseau avancée](/help/security/configuring-advanced-networking.md). Découvrez les modèles des trois types de mise en réseau avancés ci-dessous, qui utilisent une `port` , ainsi que la variable `host` .
 
 ### Sortie de port flexible {#flex-port}
 
@@ -249,7 +338,7 @@ Si le trafic du journal va vers un port autre que 443 (par exemple, 8443 ci-dess
 {
     "portForwards": [
         {
-            "name": "mylogging.service.logger.com",
+            "name": "splunk-host.example.com",
             "portDest": 8443, # something other than 443
             "portOrig": 30443
         }    
@@ -265,7 +354,7 @@ version: "1"
 data:
   splunk:
     default:
-      host: "proxy.tunnel"
+      host: "${{AEM_PROXY_HOST}}"
       token: "${{SomeToken}}"
       port: 30443
       index: "index_name"
@@ -273,14 +362,15 @@ data:
 
 ### Adresse IP Egress dédiée {#dedicated-egress}
 
+
 Si le trafic du journal doit sortir d’une adresse IP de sortie dédiée, configurez la mise en réseau avancée comme suit :
 
 ```
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443, 
             "portOrig": 30443
         }    
     ]
@@ -290,15 +380,25 @@ Si le trafic du journal doit sortir d’une adresse IP de sortie dédiée, confi
 et configurez le fichier yaml comme suit :
 
 ```
+      
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "proxy.tunnel"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443    
 ```
 
 ### VPN {#vpn}
@@ -309,24 +409,29 @@ Si le trafic du journal doit passer par un VPN, configurez la mise en réseau av
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443,
             "portOrig": 30443
         }    
     ]
 }
-```
 
-et configurez le fichier yaml comme suit :
-
-```
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "mylogging.service.com"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443     
 ```
