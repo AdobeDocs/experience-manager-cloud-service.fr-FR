@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Vous souhaitez en savoir plus ? Accédez à [Organisation des ressources en tant
 * **Organisez les ressources à l’aide de profils :**
 Un profil de traitement automatise la gestion des ressources dans les dossiers désignés, ce qui rationalise l’organisation. La normalisation des métadonnées, des noms de fichier et des structures de dossiers permet d’appliquer ces profils de manière cohérente et précise au fur et à mesure que votre collection de ressources numériques se développe.
 Vous souhaitez en savoir plus ? Accédez à [Organisation des ressources à l’aide de profils](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### Optimiser la qualité des images
 
