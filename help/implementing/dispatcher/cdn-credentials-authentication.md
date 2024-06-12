@@ -1,15 +1,16 @@
 ---
-title: Configuration des informations d’identification et de l’authentification du réseau de diffusion de contenu
+title: Configurer les informations d’identification et l’authentification du réseau CDN
 description: Découvrez comment configurer les informations d’identification et l’authentification du réseau de diffusion de contenu en déclarant les règles dans un fichier de configuration qui est ensuite déployé à l’aide du pipeline de configuration de Cloud Manager.
 feature: Dispatcher
-source-git-commit: ee993798739232da794dbf7ff0a643ca93effa7d
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Configuration des informations d’identification et de l’authentification du réseau de diffusion de contenu {#cdn-credentials-authentication}
+# Configurer les informations d’identification et l’authentification du réseau CDN {#cdn-credentials-authentication}
 
 >[!NOTE]
 >Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme d’adoption précoce, envoyez un email à `aemcs-cdn-config-adopter@adobe.com`.
@@ -71,7 +72,7 @@ La syntaxe de la variable `X-AEM-Edge-Key` La valeur inclut :
 
 ## Purge du jeton API {#purge-API-token}
 
-Les clients peuvent purger le cache CDN à l’aide d’un jeton API de purge déclaré. Le jeton est déclaré avec la syntaxe ci-dessous.  Voir [Configuration commune](#common-setup) pour savoir comment le déployer.
+Les clients peuvent [purge du cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md) en utilisant un jeton API de purge déclaré. Le jeton est déclaré avec la syntaxe ci-dessous.  Voir [Configuration commune](#common-setup) pour savoir comment le déployer.
 
 ```
 kind: "CDN"
