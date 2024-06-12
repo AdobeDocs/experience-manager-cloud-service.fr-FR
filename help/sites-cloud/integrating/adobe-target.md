@@ -2,9 +2,9 @@
 title: Intégration à Adobe Target
 description: Intégration à Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 876de632163c4a0952e238ac89577fa9f064b900
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -31,10 +31,13 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
 * Experience Platform Launch est l’outil par défaut permettant d’instrumenter un site AEM avec des fonctionnalités Target (bibliothèques JS). Par conséquent, l’intégration d’AEM as a Cloud Service avec Launch et Adobe Target s’effectue de façon conjointe (voir les liens ci-dessous).
 
-   * [Intégration à Adobe Target à l’aide d’Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html?lang=fr)
-   * [Intégrer Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
-   * [Intégration d’AEM à Adobe Launch via Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
-   * [Présentation de l’intégration d’AEM à Experience Platform Launch, Analytics et Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
+<!--   
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+-->
+
+* [Intégrer Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
+* [Intégration d’AEM à Adobe Launch via Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
+* [Présentation de l’intégration d’AEM à Experience Platform Launch, Analytics et Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
 
 >[!NOTE]
 >
