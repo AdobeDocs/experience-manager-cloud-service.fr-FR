@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2023.12.0 d’ [!DNL Adobe Exp
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 80%
+ht-degree: 75%
 
 ---
 
@@ -27,7 +27,7 @@ La section suivante concerne les notes de mise à jour de la version 2023.12.0 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2023.12.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 14 décembre 2023. La prochaine disponibilité des fonctionnalités (2024.1.0) est prévue pour le jeudi 25 janvier 2023.
+La date de publication de la version actuelle (2023.12.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 14 décembre 2023. La prochaine mise à jour des fonctionnalités (2024.1.0) est prévue pour le jeudi 25 janvier 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -47,11 +47,11 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 
-**Vous pouvez utiliser la variable [Service de données de surveillance des utilisateurs réels (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** pour activer la collecte côté client pour AEM as a Cloud Service.
+**Vous pouvez utiliser la variable [Service de données de surveillance d’utilisation réelle (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** pour activer la collecte côté client pour AEM as a Cloud Service.
 
-Le Service de données Real User Monitoring (RUM) offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Par ailleurs, pour les personnes utilisant un réseau CDN non géré par Adobe, il est désormais possible de créer automatiquement des rapports sur le trafic, ce qui leur évite d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
+Le service de données de surveillance de l’utilisation réelle (RUM) offre un reflet plus précis des interactions des utilisateurs, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Par ailleurs, pour les personnes utilisant un réseau CDN non géré par Adobe, il est désormais possible de créer automatiquement des rapports sur le trafic, ce qui leur évite d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com`, ainsi que le nom de domaine de l’environnement de production, d’évaluation et de développement à partir de l’adresse électronique associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données Real User Monitoring (RUM) pour vous.
+Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com`, ainsi que le nom de domaine de l’environnement de production, d’évaluation et de développement à partir de l’adresse électronique associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance de l’utilisation réelle (RUM) pour vous.
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}

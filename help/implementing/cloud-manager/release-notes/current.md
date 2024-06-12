@@ -4,10 +4,10 @@ description: Consultez les notes de mise à jour de Cloud Manager 2024.6.0 dan
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 5644e6f433b18408780e13057ba469e7c4926f78
-workflow-type: ht
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ La date de mise à jour de Cloud Manager version 2024.6.0 dans AEM as a Clo
 
 ## Nouveautés {#what-is-new}
 
-* Vous pouvez désormais [utiliser vos propres référentiels GitHub](/help/implementing/cloud-manager/managing-code/private-repositories.md) comme sources pour les pipelines full-stack et frontend.
+* Vous pouvez désormais [utiliser vos propres référentiels GitHub](/help/implementing/cloud-manager/managing-code/private-repositories.md) comme sources pour les pipelines full-stack et front-end.
    * De plus, vous pouvez tirer parti des référentiels GitHub avec les [sous-modules git](/help/implementing/cloud-manager/managing-code/git-submodules.md), qui vous procurent un meilleur contrôle sur les pipelines générés automatiquement et utilisés pour la validation des demandes d’extraction. Vous pouvez également définir des comportements pour les mesures essentielles pendant la phase d’analyse du code.
    * [Vous avez également le choix](/help/implementing/cloud-manager/managing-code/github-check-config.md) de conserver l’historique des rapports sur GitHub, de nommer le pipeline et de définir les variables de pipeline en fonction de vos besoins.
 * La fonction [Restaurer le contenu en libre-service](/help/operations/restore.md) fournit une restauration de sauvegarde pendant sept jours au maximum, ainsi que diverses fonctionnalités :
@@ -54,11 +54,11 @@ Cloud Manager vous permet désormais de [générer et gérer en libre-service d
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à `Grp-aemcs-dv-dert-adopter@adobe.com` à partir de l’adresse e-mail associée à votre Adobe ID.
 
-### Collecte côté client via Real User Monitoring (RUM) {#rum}
+### Collecte côté client via Real Use Monitoring (RUM) {#rum}
 
-Vous pouvez utiliser le [Service de données Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) pour activer la collecte côté client pour AEM as a Cloud Service.
+Vous pouvez utiliser la variable [Service de données de surveillance d’utilisation réelle (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) pour activer la collecte côté client pour AEM as a Cloud Service.
 
-Le Service de données Real User Monitoring (RUM) offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Pour les personnes utilisant un réseau CDN non géré par Adobe, la création de rapports automatisés sur le trafic peut désormais être activée, leur évitant ainsi d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
+Le service de données de surveillance de l’utilisation réelle (RUM) offre un reflet plus précis des interactions des utilisateurs, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Pour les personnes utilisant un réseau CDN non géré par Adobe, la création de rapports automatisés sur le trafic peut désormais être activée, leur évitant ainsi d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com` à partir de l’adresse e-mail associée à votre Adobe ID. Indiquez le nom de domaine des environnements de production, d’évaluation et de développement dans votre e-mail.  La disponibilité du programme d’adoption précoce de cette fonctionnalité est limitée.
 

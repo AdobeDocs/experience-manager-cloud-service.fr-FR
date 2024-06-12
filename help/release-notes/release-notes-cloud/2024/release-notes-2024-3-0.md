@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.3.0 d’ [!DNL Adobe Expe
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '2292'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -123,7 +123,7 @@ Grâce à Assets Essentials, les administrateurs et les administratrices peuven
 Ces services permettent d’effectuer les opérations suivantes :
 
 * Utilisez plusieurs sources de contenu sur le même site de formulaires et utilisez vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou l’éditeur de formulaires adaptatifs.
-* Proposez des expériences d’inscription numérique qui se chargent et s’affichent rapidement et surveillez en permanence les performances de vos formulaires grâce à la surveillance des utilisateurs et utilisatrices réels (RUM).
+* Diffusez des expériences d’inscription numérique qui se chargent et s’affichent rapidement et en permanence pour surveiller les performances de vos formulaires grâce à la surveillance de l’utilisation réelle (RUM).
 * Utilisez du HTML brut, du code CSS moderne et du code Vanilla JavaScript pour créer des expériences exceptionnelles, en évitant la courbe abrupte d’apprentissage d’un framework spécifique.
 
 
@@ -186,10 +186,10 @@ Cette mise à jour offre une expérience plus inclusive aux utilisateurs et util
 
   Vous pouvez écrire à `aem-forms-ea@adobe.com` depuis votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.
 
-* **[Vous pouvez utiliser le Service de données Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** pour activer la collecte côté client pour AEM as a Cloud Service.
-Le Service de données Real User Monitoring (RUM) offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Par ailleurs, pour les personnes utilisant un réseau CDN non géré par Adobe, il est désormais possible de créer automatiquement des rapports sur le trafic, ce qui leur évite d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
+* **[Vous pouvez tirer parti du service de données de surveillance de l’utilisation réelle (RUM).](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** pour activer la collecte côté client pour AEM as a Cloud Service.
+Le service de données de surveillance de l’utilisation réelle (RUM) offre un reflet plus précis des interactions des utilisateurs, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Par ailleurs, pour les personnes utilisant un réseau CDN non géré par Adobe, il est désormais possible de créer automatiquement des rapports sur le trafic, ce qui leur évite d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
 
-  Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com`, avec le nom de domaine de chacun des environnements pour lesquels vous souhaitez activer l’utilisation de RUM depuis votre adresse e-mail associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données Real User Monitoring (RUM) pour vous.
+  Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com`, avec le nom de domaine de chacun des environnements pour lesquels vous souhaitez activer l’utilisation de RUM depuis votre adresse e-mail associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance de l’utilisation réelle (RUM) pour vous.
 
 ## Principes de base d’[!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
