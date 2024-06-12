@@ -4,10 +4,10 @@ description: Consultez les notes de mise à jour de Cloud Manager 2024.6.0 dan
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 8eaf2b70734cec1fedace64d74059ee161785b39
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 93%
+source-wordcount: '548'
+ht-degree: 100%
 
 ---
 
@@ -54,13 +54,13 @@ Cloud Manager vous permet désormais de [générer et gérer en libre-service d
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à `Grp-aemcs-dv-dert-adopter@adobe.com` à partir de l’adresse e-mail associée à votre Adobe ID.
 
-### Collecte côté client via Real Use Monitoring (RUM) {#rum}
+<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
 
-Vous pouvez utiliser la variable [Service de données de surveillance d’utilisation réelle (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) pour activer la collecte côté client pour AEM as a Cloud Service.
+You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
 
-Le service de données de surveillance de l’utilisation réelle (RUM) offre un reflet plus précis des interactions des utilisateurs, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Pour les personnes utilisant un réseau CDN non géré par Adobe, la création de rapports automatisés sur le trafic peut désormais être activée, leur évitant ainsi d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
+Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com` à partir de l’adresse e-mail associée à votre Adobe ID. Indiquez le nom de domaine des environnements de production, d’évaluation et de développement dans votre e-mail.  La disponibilité du programme d’adoption précoce de cette fonctionnalité est limitée.
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited.-->
 
 ### Tableau de bord d’audit de l’expérience {#experience-audit-dashboard}
 
