@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, a
 
 ### Problèmes connus {#known-issues-16544}
 
-* GRANITE-52573 : demandes contenant une double barre oblique `//` sont rejetés avec le code d’état 400. Ce comportement sera rétabli dans une version de maintenance ultérieure.
+* GRANITE-52573 : les requêtes contenant une double barre oblique `//` sont refusées avec le code d’état 400. Ce comportement sera rétabli dans une version de maintenance ultérieure.
 
 ### Avis de modification {#change-notice-16544}
 
