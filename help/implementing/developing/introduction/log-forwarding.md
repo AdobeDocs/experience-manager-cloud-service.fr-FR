@@ -4,9 +4,9 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
+source-git-commit: e007f2e3713d334787446305872020367169e6a2
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1209'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 >
 >Cette fonctionnalité n’est pas encore disponible et certaines destinations de journalisation peuvent ne pas être disponibles au moment de la publication. En attendant, vous pouvez ouvrir un ticket d’assistance pour transférer les journaux vers **Splunk**, comme décrit dans la section [article de connexion](/help/implementing/developing/introduction/logging.md).
 
-Les clients qui disposent d’une licence pour un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent avoir AEM, Apache/Dispatcher et des journaux CDN transférés vers les destinations de journalisation associées. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
+Les clients qui disposent d’une licence pour un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent avoir AEM journaux (y compris Apache/Dispatcher) et des journaux CDN transférés vers les destinations de journalisation associées. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
 * Stockage Azure Blob
 * DataDog
@@ -71,7 +71,7 @@ Cet article est organisé de la manière suivante :
 
    Jetons dans la configuration (tels que `${{SPLUNK_TOKEN}}`) représentent des secrets, qui ne doivent pas être stockés dans Git. À la place, déclarez-les comme Cloud Manager  [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md) de type **secret**. Veillez à sélectionner **Tous** comme valeur de liste déroulante pour le champ Service appliqué , afin que les journaux puissent être transférés vers les niveaux d’auteur, de publication et d’aperçu.
 
-   Il est possible de définir des valeurs différentes entre les journaux cdn et tout le reste (journaux AEM et apache), en incluant une **cdn** et/ou **aem** après la balise **default** block, où les propriétés peuvent remplacer celles définies dans la variable **default** block ; seule la propriété enabled est requise. Un cas d’utilisation possible peut être l’utilisation d’un index Splunk différent pour les journaux CDN, comme l’exemple ci-dessous.
+   Il est possible de définir des valeurs différentes entre les journaux CDN et AEM (y compris Apache/Dispatcher), en incluant une **cdn** et/ou **aem** après la balise **default** block, où les propriétés peuvent remplacer celles définies dans la variable **default** block ; seule la propriété enabled est requise. Un cas d’utilisation possible peut être l’utilisation d’un index Splunk différent pour les journaux CDN, comme l’exemple ci-dessous.
 
    ```
       kind: "LogForwarding"
@@ -91,7 +91,7 @@ Cet article est organisé de la manière suivante :
             index: "AEMaaCS_CDN"   
    ```
 
-   Un autre scénario consiste à désactiver le transfert des journaux CDN ou de tout le reste (journaux AEM et apache). Par exemple, pour ne transférer que les journaux CDN, vous pouvez configurer les éléments suivants :
+   Un autre scénario consiste à désactiver le transfert des journaux CDN ou AEM journaux (y compris Apache/Dispatcher). Par exemple, pour ne transférer que les journaux CDN, vous pouvez configurer les éléments suivants :
 
    ```
       kind: "LogForwarding"
@@ -171,9 +171,9 @@ aemcdn/
 
 Chaque fichier contient plusieurs entrées de journal json, chacune sur une ligne distincte. Les formats d’entrée de journal sont décrits dans la section [article de connexion](/help/implementing/developing/introduction/logging.md), et chaque entrée de journal inclut également les propriétés supplémentaires mentionnées dans la variable [Formats de saisie du journal](#log-format) ci-dessous.
 
-#### Autres journaux de stockage Azure Blob {#azureblob-other}
+#### Journaux Azure Blob Storage AEM {#azureblob-aem}
 
-Les journaux autres que les journaux CDN apparaissent sous un dossier avec la convention de dénomination suivante :
+AEM journaux (y compris Apache/Dispatcher) apparaissent sous un dossier avec la convention d’affectation des noms suivante :
 
 * aemaccess
 * aemerror
@@ -250,9 +250,14 @@ Les requêtes Web (POST) seront envoyées en continu, avec une payload json qui 
 
 Il existe également une propriété nommée `sourcetype`, qui est défini sur la valeur . `aemcdn`.
 
-#### Autres journaux HTTPS {#https-other}
+>[!NOTE]
+>
+> Avant l’envoi de la première entrée de journal CDN, votre serveur HTTP doit effectuer un défi unique : une requête envoyée au chemin ``wellknownpath`` doit répondre avec ``*``.
 
-Une demande web distincte (POST) sera envoyée pour chaque entrée de journal, avec les formats d’entrée de journal décrits dans la variable [article de connexion](/help/implementing/developing/introduction/logging.md). Les propriétés supplémentaires sont mentionnées dans la section [Formats de saisie du journal](#log-format) ci-dessous.
+
+#### Journaux des AEM HTTPS {#https-aem}
+
+Pour les journaux d’AEM (y compris apache/dispatcher), les demandes web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec les différents formats d’entrée de journal comme décrit dans la section [article de connexion](/help/implementing/developing/introduction/logging.md). Les propriétés supplémentaires sont mentionnées dans la section [Formats de saisie du journal](#log-format) ci-dessous.
 
 Il existe également une propriété nommée `sourcetype`, qui est défini sur l’une des valeurs suivantes :
 
@@ -299,7 +304,7 @@ data:
 
 ## Formats de saisie du journal {#log-formats}
 
-Voir le [article de connexion](/help/implementing/developing/introduction/logging.md) pour le format de chaque type de journal respectif (journal de Dispatcher, journal CDN, etc.).
+Voir le [article de connexion](/help/implementing/developing/introduction/logging.md) pour le format de chaque type de journal respectif (journaux CDN et journaux AEM y compris Apache/Dispatcher).
 
 Puisque les journaux de plusieurs programmes et environnements peuvent être transférés vers la même destination de journalisation, en plus de la sortie décrite dans l’article de journalisation, les propriétés suivantes seront incluses dans chaque entrée de journal :
 
@@ -328,7 +333,7 @@ Certaines organisations choisissent de restreindre le trafic qui peut être reç
 
 Pour le journal du réseau de diffusion de contenu, vous pouvez ajouter des adresses IP aux listes autorisées, comme décrit dans la section [cet article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, envisagez d’envoyer du trafic vers un Azure Blob Store (non Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP dédiée vers leur destination finale.
 
-Pour les autres journaux, vous pouvez configurer le transfert des journaux pour qu’il [mise en réseau avancée](/help/security/configuring-advanced-networking.md). Découvrez les modèles des trois types de mise en réseau avancés ci-dessous, qui utilisent une `port` , ainsi que la variable `host` .
+Pour les journaux d’AEM (y compris Apache/Dispatcher), vous pouvez configurer le transfert des journaux pour qu’il [mise en réseau avancée](/help/security/configuring-advanced-networking.md). Découvrez les modèles des trois types de mise en réseau avancés ci-dessous, qui utilisent une `port` , ainsi que la variable `host` .
 
 ### Sortie de port flexible {#flex-port}
 
