@@ -4,10 +4,10 @@ description: Découvrez le fonctionnement de la modélisation de contenu pour la
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
+workflow-type: tm+mt
 source-wordcount: '2233'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -345,7 +345,7 @@ Pour certaines valeurs, la signification sémantique peut être déduite des val
 * **Images** : si une référence à une ressource dans AEM est une ressource avec un type MIME commençant par `image/`, la référence est rendue sous la forme `<picture><img src="${reference}"></picture>`.
 * **Liens** : si une référence existe dans AEM et n’est pas une image, ou si la valeur commence par `https?://` ou `#`, la référence est rendue sous la forme `<a href="${reference}">${reference}</a>`.
 * **Texte enrichi** : si une valeur rognée commence par un paragraphe (`p`, `ul`, `ol`, `h1`-`h6`, etc.), la valeur est rendue sous forme de texte enrichi.
-* **Noms de classe** : la propriété `classes` est traitée sous forme d’options de bloc et rendue dans l’en-tête du tableau pour des [blocs simples](#simple), ou en tant que liste de valeurs pour les éléments d’un [bloc conteneur](#container).
+* **Noms de classe** - La variable `classes` est traitée comme [options de bloc](/help/edge/developer/markup-sections-blocks.md#block-options) et rendu dans l’en-tête du tableau pour [des blocs simples,](#simple) ou en tant que liste de valeurs pour les éléments d’une [bloc conteneur.](#container)
 * **Listes de valeurs** : si une valeur est une propriété à plusieurs valeurs et que la première valeur ne correspond à aucune des valeurs précédentes, toutes les valeurs sont concaténées sous la forme d’une liste séparée par des virgules.
 
 Tout le reste est rendu en texte brut.
