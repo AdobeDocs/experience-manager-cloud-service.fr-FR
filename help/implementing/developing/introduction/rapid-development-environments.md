@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
-ht-degree: 48%
+source-wordcount: '4244'
+ht-degree: 47%
 
 ---
 
@@ -472,11 +472,6 @@ Pour plus d’informations et de démonstration, voir le tutoriel vidéo [Commen
 
 ## Journaux {#rde-logging}
 
->[!NOTE]
->
-> Cette fonctionnalité n’est pas encore disponible. Il sera déployé au cours du mois de juin.
-> 
-
 Comme pour d’autres types d’environnements, les niveaux de journal peuvent être définis en modifiant les configurations OSGi, bien que, comme décrit ci-dessus, le modèle de déploiement pour les RDE implique une ligne de commande plutôt qu’un déploiement Cloud Manager. Vérifiez les [documentation de journalisation](/help/implementing/developing/introduction/logging.md) pour plus d’informations sur l’affichage, le téléchargement et l’interprétation des journaux.
 
 L’interface de ligne de commande de RDE dispose également de sa propre commande de journal qui peut être utilisée pour configurer rapidement les classes et packages à consigner, ainsi que le niveau de journalisation. Ces configurations peuvent être considérées comme éphémères, car elles ne modifient pas les propriétés OSGI dans le contrôle de version. Cette fonctionnalité est axée sur les logs de sortie en temps réel, plutôt que sur les journaux du passé lointain.
@@ -484,6 +479,14 @@ L’interface de ligne de commande de RDE dispose également de sa propre comman
 L’exemple suivant illustre comment exécuter le niveau Auteur avec un package défini au niveau Journal de débogage et deux packages (séparés par des espaces) définis à un niveau de débogage info. Une sortie qui comprend une **auth** est mis en surbrillance.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>Si l’erreur s’affiche `RDECLI:UNEXPECTED_API_ERROR` lors de la lecture des commandes journaux pour le service de création, réinitialisez votre environnement et réessayez. Cette erreur sera générée si votre dernière opération de réinitialisation date d’avant fin mai 2024.
+>
+```
+>aio aem:rde:reset
+>```
 
 Voir `aio aem:rde:logs --help` pour l’ensemble complet des options de ligne de commande.
 
