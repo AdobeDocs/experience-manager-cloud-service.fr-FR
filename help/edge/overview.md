@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '862'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Avec Edge Delivery Services, AEM offre des expériences exceptionnelles qui fa
 
 En utilisant Edge Delivery Services, vous pouvez accomplir ce qui suit :
 
-* Créez des sites rapides avec un score Lighthouse parfait et surveillez en permanence les performances de votre site grâce à une surveillance de l’utilisation réelle (RUM).
+* Créer des sites rapides avec un score Lighthouse parfait et surveiller en permanence les performances de votre site grâce à la surveillance de l’utilisation en temps réel (RUM).
 * Augmenter l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser directement les instances de création AEM et la création basée sur des documents. Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web.
 * Utiliser un framework d’expérimentation intégré qui permet la création rapide de tests, l’exécution sans impact sur les performances et la mise en production rapide de la meilleure version.
 
@@ -46,7 +46,7 @@ Edge Delivery Services fait partie d’Adobe Experience Manager. De ce fait,
 
 Veuillez consulter le [Guide de prise en main du développement pour la création AEM avec Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) afin d’apprendre à démarrer votre propre projet pour créer avec AEM et Edge Delivery Services.
 
-Vous pouvez également utiliser des Edge Delivery Services avec [Adobe Target,](https://www.aem.live/developer/target-integration) [Surveillance d’utilisation réelle (RUM)](https://www.aem.live/developer/rum) pour diagnostiquer l’utilisation et les performances de vos sites, et [Lancez.](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home)
+Vous pouvez également utiliser Edge Delivery Services avec [Adobe Target](https://www.aem.live/developer/target-integration) et la [surveillance de l’utilisation en temps réel (RUM)](https://www.aem.live/developer/rum) pour diagnostiquer l’utilisation et les performances de vos sites, ainsi que [Launch.](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home)
 
 ## Commencer avec Edge Delivery Services {#getting-started}
 
