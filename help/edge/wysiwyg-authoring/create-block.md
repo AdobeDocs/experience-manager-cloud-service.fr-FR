@@ -4,10 +4,10 @@ description: Découvrez comment créer des blocs instrumentés pour une utilisat
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: c6013984e1c47766964e6f8ece76e7793b59308f
+source-git-commit: 364acc6a76261a725a46fe3e1ef173bc03b5a289
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 74%
+source-wordcount: '1401'
+ht-degree: 64%
 
 ---
 
@@ -45,13 +45,13 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 ### Créer une définition et un modèle de bloc {#create-block-model}
 
-1. Cloner le projet GitHub local que vous avez créé dans le [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et ouvrez-le dans un éditeur de votre choix.
+1&amp;period ; clonez le projet GitHub local que vous avez créé dans la variable [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et ouvrez-le dans un éditeur de votre choix.
 
-   * L’éditeur Microsoft Code est utilisé ici à titre d’exemple.
+* L’éditeur Microsoft Code est utilisé ici à titre d’exemple.
 
-   ![Clonage du projet](assets/create-block/clone.png)
+![Clonage du projet](assets/create-block/clone.png)
 
-1. Modifiez le fichier `component-definition.json` à la racine du projet et ajoutez la définition suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
+2&amp;period ; modifiez la variable `component-definition.json` à la racine du projet, ajoutez la définition suivante pour votre nouveau bloc de guillemet et enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-1. Modifiez le fichier `component-models.json` à la racine du projet et ajoutez la [définition de modèle](/help/implementing/universal-editor/field-types.md#model-structure) suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
+3&amp;period ; modifiez la variable `component-models.json` à la racine du projet et ajoutez le code suivant : [définition de modèle](/help/implementing/universal-editor/field-types.md#model-structure) pour votre nouveau bloc de guillemet et enregistrez le fichier.
 
-   * Consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) pour plus d’informations sur ce qui est important à prendre en compte lors de la création de modèles de contenu.
+* Consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) pour plus d’informations sur ce qui est important à prendre en compte lors de la création de modèles de contenu.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-1. Modifiez le fichier `component-filters.json` à la racine du projet et ajoutez le bloc de citation à la [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) afin de permettre d’ajouter le bloc à n’importe quelle section, puis l’enregistrement du fichier.
+4&amp;period ; modifiez la variable `component-filters.json` à la racine du projet et ajoutez le bloc de guillemet au [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) pour permettre l&#39;ajout du bloc à n&#39;importe quelle section et l&#39;enregistrement du fichier.
 
 >[!BEGINTABS]
 
@@ -147,9 +147,9 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-1. À l’aide de Git, validez ces modifications dans votre branche `main`.
+5&amp;period ; à l’aide de git, validez ces modifications dans votre `main` branche.
 
-   * La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail sur un projet réel.
+* La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail sur un projet réel.
 
 ### Créer du contenu avec le bloc {#create-content}
 
@@ -190,13 +190,13 @@ Maintenant que votre bloc de citation de base est défini et validé dans l’ex
 
 Maintenant que vous avez un bloc de citation fonctionnel, vous pouvez lui appliquer un style.
 
-1. Revenez à l’éditeur de votre projet.
+1&amp;period ; revenez à l’éditeur de votre projet.
 
-1. Créez un dossier `quote` dans le dossier `blocks`.
+2&amp;period ; créer une `quote` sous `blocks` dossier.
 
-   ![Création d’un dossier de citation](assets/create-block/new-folder.png)
+![Création d’un dossier de citation](assets/create-block/new-folder.png)
 
-1. Dans le nouveau dossier `quote`, ajoutez un fichier `quote.js` pour implémenter la décoration du bloc en ajoutant le code JavaScript suivant, puis enregistrez le fichier.
+3&amp;period ; dans la nouvelle `quote` dossier, ajoutez une `quote.js` pour implémenter block decoration en ajoutant le code JavaScript suivant et en enregistrant le fichier.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. Dans le dossier `quote`, ajoutez un fichier `quote.css` pour définir le style du bloc en ajoutant le code CSS suivant, puis enregistrez le fichier.
+4&amp;period ; dans la variable `quote` dossier, ajoutez une `quote.css` pour définir le style du bloc en ajoutant le code CSS suivant et en enregistrant le fichier.
 
 >[!BEGINTABS]
 
@@ -263,27 +263,27 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. À l’aide de Git, validez ces modifications dans votre branche `main`.
+5&amp;period ; à l’aide de git, validez ces modifications dans votre `main` branche.
 
-   * La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail dans un projet réel.
+* La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail sur un projet réel.
 
-1. Revenez à l’onglet de navigateur dans l’éditeur universel dans lequel vous étiez en train de modifier la page de votre projet, puis rechargez la page pour afficher le bloc avec son style appliqué.
+6&amp;period ; revenez à l’onglet de votre navigateur de l’éditeur universel dans lequel vous modifiez la page de votre projet et rechargez la page pour afficher votre bloc stylisé.
 
-1. Vous voyez ainsi sur la page le bloc de citation avec son style appliqué.
+7&amp;period ; voir le bloc de guillemet désormais stylisé sur la page.
 
-   ![Bloc de citation avec son style appliqué dans l’éditeur universel](assets/create-block/quote-styled.png)
+![Bloc de citation avec son style appliqué dans l’éditeur universel](assets/create-block/quote-styled.png)
 
-1. Vérifiez que les modifications ont été transférées en production en accédant à la page publiée. Le lien sera similaire à `https://<branch>--<repo>--<owner>.hlx.page`.
+8&amp;period ; vérifiez que les modifications ont été transférées en production en accédant à la page publiée. Le lien sera similaire à `https://<branch>--<repo>--<owner>.hlx.page`.
 
-   ![Bloc de citation publié et avec son style appliqué](assets/create-block/quote-styled-published.png)
+![Bloc de citation publié et avec son style appliqué](assets/create-block/quote-styled-published.png)
 
 Félicitations. Vous disposez maintenant d’un bloc de citation entièrement fonctionnel et avec un style appliqué. Vous pouvez utiliser cet exemple comme base pour concevoir vos propres blocs spécifiques à des projets.
 
 ### Options de bloc {#block-options}
 
-Si vous avez besoin d’un bloc pour l’aspect ou le comportement légèrement différent selon certaines circonstances, mais pas assez différent pour devenir un nouveau bloc, vous pouvez permettre aux auteurs de choisir parmi [options de bloc.](content-modeling.md#type-inference)
+Si vous avez besoin d’un bloc pour un aspect ou un comportement légèrement différent selon certaines circonstances, mais pas assez différent pour devenir un nouveau bloc, vous pouvez permettre aux personnes chargées de la création de choisir parmi les [options de bloc](content-modeling.md#type-inference).
 
-En ajoutant une `classes` pour le bloc, la propriété générée dans l’en-tête du tableau pour les blocs simples ou sous la forme d’une liste de valeurs pour les éléments d’un bloc conteneur.
+En ajoutant une propriété `classes` au bloc, la propriété est rendue dans l’en-tête du tableau pour les blocs simples ou sous la forme d’une liste de valeurs pour les éléments d’un bloc conteneur.
 
 ```json
 {
