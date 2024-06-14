@@ -4,7 +4,7 @@ description: Découvrez les principaux cas d’utilisation d’Universal Editor,
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
@@ -29,10 +29,10 @@ Ce document explique en détail ces deux cas d’utilisation et explique comment
 
 L’éditeur universel offre un éditeur visuel intuitif et pratique à vos auteurs de contenu, quel que soit le type de contenu qu’ils créent. Les deux principaux cas d’utilisation sont les suivants :
 
-* [Création basée sur AEM](#aem-authoring) - Utilisez la console AEM Sites pour gérer le contenu et créer des pages dans AEM à l’aide d’Universal Editor
+* [Création WYSIWYG](#wysiwyg-authoring) - Utilisez la console AEM Sites pour gérer le contenu et créer des pages dans AEM à l’aide d’Universal Editor
 * [Création sans affichage](#headless-authoring) : créez du contenu dans votre propre application sans interface utilisateur graphique personnalisée à l’aide d’Universal Editor.
 
-### Création basée sur AEM {#aem-authoring}
+### Création WYSIWYG {#wysiwyg-authoring}
 
 Si vous maîtrisez déjà AEM, vous pouvez utiliser la console Sites pour créer et gérer vos pages, puis les modifier à l’aide de l’éditeur universel.
 
@@ -40,9 +40,9 @@ Vous pouvez ainsi bénéficier des outils disponibles dans la console Sites, tel
 
 Si c’est votre cas d’utilisation, reportez-vous aux documents suivants pour une présentation complète de la prise en main d’Universal Editor dans AEM.
 
-1. [Guide de prise en main du développeur pour la création AEM avec des Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) - Prise en main de votre premier projet Universal Editor dans AEM
-1. [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/aem-authoring/create-block.md) - Découvrez comment équiper des blocs pour rendre votre contenu modifiable dans l’éditeur universel
-1. [Modélisation de contenu pour la création AEM avec des projets Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) - Découvrez les détails de la structure des blocs pour modéliser efficacement votre contenu à utiliser avec l’éditeur universel.
+1. [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Prise en main de votre premier projet Universal Editor dans AEM
+1. [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/wysiwyg-authoring/create-block.md) - Découvrez comment équiper des blocs pour rendre votre contenu modifiable dans l’éditeur universel
+1. [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Découvrez les détails de la structure des blocs pour modéliser efficacement votre contenu à utiliser avec l’éditeur universel.
 
 Une fois que vous avez lu ces documents, vous pouvez revenir à cette page pour en savoir plus sur le cas d’utilisation de la création sans interface utilisateur et sur le fonctionnement général d’Universal Editor.
 
@@ -54,7 +54,7 @@ Si c’est votre cas d’utilisation, reportez-vous immédiatement au document s
 
 * [Exemple d’application SecurBank pour l’éditeur universel](/help/implementing/universal-editor/securbank.md)
 
-Une fois que vous avez lu ce document, vous pouvez revenir à cette page pour en savoir plus sur le cas d’utilisation de la création AEM et sur le fonctionnement général d’Universal Editor.
+Une fois que vous avez lu ce document, vous pouvez revenir à cette page pour en savoir plus sur le cas d’utilisation de la création WYSIWYG et sur le fonctionnement général de l’éditeur universel.
 
 ## Fonctionnement d’Universal Editor {#how-ue-works}
 
@@ -63,7 +63,7 @@ La puissance d’Universal Editor réside dans sa capacité à créer n’import
 L’éditeur universel fonctionne comme suit.
 
 1. Un développeur utilise l’application ou la page pour utiliser l’éditeur universel. Cette instrumentation indique à l’éditeur quel contenu est modifiable et comment le conserver.
-   * Pour la création basée sur AEM, les pages créées à l’aide du modèle standard sont automatiquement instrumentées.
+   * Pour la création WYSIWYG, les pages créées à l’aide du modèle standard sont automatiquement instrumentées.
    * Pour une création sans interface utilisateur, votre application peut être facilement instrumentée.
 1. L’auteur du contenu charge l’éditeur universel, qui à son tour charge votre page pour modification. Parce qu’il est instrumenté, il sait quel contenu est modifiable et comment il doit être représenté et conservé.
 1. L’auteur du contenu modifie le contenu de la page dans une interface WYSIWYG intuitive, en effectuant une modification statique.
