@@ -3,10 +3,10 @@ title: Modifier des vidéos
 description: Modification des vidéos à l’aide de [!DNL Adobe Express] options optimisées et enregistrez les vidéos mises à jour sous forme de versions.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: ff201051a70862e7597cf36f70a0e7225178f1fa
+source-git-commit: afdab9a7b449673ecf15bc9ab31307388da7b64e
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 18%
+ht-degree: 17%
 
 ---
 
@@ -83,7 +83,7 @@ Votre vidéo peut être téléchargée au format GIF. Vous pouvez enregistrer la
 
 * Seules les vidéos au format MP4 sont prises en charge pour modification.
 
-* La taille de fichier source maximale prise en charge est de 200 Mo.
+* La taille de fichier source maximale prise en charge est de 1 Go.
 
 * Les vidéos prises en charge sont supérieures à 46 pixels et inférieures à 3 840 pixels de tous les côtés.
 
@@ -93,9 +93,9 @@ Votre vidéo peut être téléchargée au format GIF. Vous pouvez enregistrer la
 
 ### Étapes suivantes {#next-steps}
 
-* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
+* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets.
 
-* Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
+* Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
 * Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General#support).
 
