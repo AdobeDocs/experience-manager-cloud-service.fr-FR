@@ -2,10 +2,12 @@
 title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment utiliser la console Ressources pour gérer vos fragments de contenu AEM, comme base de votre contenu headless ou pour la création de pages.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Content Fragments
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1885'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -54,7 +56,7 @@ La méthode de création d’un fragment de contenu est la suivante :
 1. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
 1. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
-   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) - utilisé pour créer un fragment qui nécessite du contenu structuré ; par exemple, la fonction **Adventure** model
+   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) : utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Adventure**.
 
       * Tous les modèles disponibles s’affichent.
 
@@ -141,7 +143,7 @@ Pour ouvrir votre fragment à des fins de modification :
    * Cliquer/appuyer sur le fragment ou le lien du fragment (cela dépend de l’affichage de la console).
    * Sélectionnez le fragment, puis cliquez sur **Modifier** dans la barre d’outils.
 
-1. L’éditeur de fragments s’ouvre. Apportez les modifications nécessaires :
+1. L’éditeur de fragment s’ouvre. Apportez les modifications nécessaires :
 
    ![Éditeur de fragment](assets/cfm-managing-03.png)
 
@@ -185,7 +187,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
 
 * Sous le nom du fragment, vous pouvez voir le nom du [Modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer le fragment actif :
 
-   * Le nom est également un lien qui ouvre l’éditeur de modèles.
+   * Le nom est également un lien servant à ouvrir l’éditeur de modèles.
 
 * Voir le statut du fragment, par exemple, les informations relatives à la date et à l’heure de création, de modification ou de publication. Le statut est également codé par couleur :
 
@@ -319,7 +321,7 @@ Par exemple :
 
 L’action **Comparer avec la version actuelle** est disponible à partir du [Journal](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) après avoir sélectionné une version spécifique.
 
-Cette action s’ouvre :
+Cette action ouvre :
 
 * la version **actuelle** (la plus récente) (à gauche) ;
 

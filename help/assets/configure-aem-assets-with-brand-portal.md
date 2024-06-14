@@ -2,13 +2,13 @@
 title: Configuration d’AEM Assets as a [!DNL Cloud Service] avec Brand Portal
 description: Découvrez comment configurer AEM Assets avec Brand Portal. La configuration vous permet de publier des ressources de marque approuvées d’une instance d’AEM sur Brand Portal et de les distribuer aux utilisateurs de Brand Portal.
 contentOwner: AK
-feature: Brand Portal,Asset Distribution,Configuration
+feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1766'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -191,7 +191,7 @@ Outre le workflow d’automatisation de l’activation de Brand Portal sur Expe
 
 >[!NOTE]
 >
-> Vous ne pouvez pas créer de nouvelles informations d’identification JWT à partir de juin 2024. Dorénavant, seules les informations d’identification OAuth sont créées.
+> Vous ne pourrez plus créer de nouvelles informations d’identification JWT à partir de juin 2024. Dorénavant, seules les informations d’identification OAuth sont créées.
 > En savoir plus [création d’une configuration OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 
 La section suivante décrit comment configurer manuellement Experience Manager Assets as a [!DNL Cloud Service] avec Brand Portal à l’aide d’Adobe Developer Console.
@@ -202,7 +202,7 @@ Auparavant, Experience Manager Assets as a [!DNL Cloud Service] était configur�
 <!--1. Under the project, configure an API using the public key to create a service account connection.
 1. Get the service account credentials and JSON Web Token (JWT) payload information.
 1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
-1. Dans Adobe Developer Console, créez un projet pour votre client Brand Portal (organisation).
+1. Dans Adobe Developer Console, créez un projet pour votre client Brand Portal (organisation).
 1. Dans Experience Manager Assets, configurez le service cloud Brand Portal à l’aide du compte IMS et du point d’entrée Brand Portal (URL de l’organisation).
 1. Testez votre configuration en publiant une ressource d’Experience Manager Assets sur Brand Portal.
 
@@ -218,12 +218,12 @@ Pour configurer Experience Manager Assets avec Brand Portal, vous devez dispo
 * Une adresse URL du client Brand Portal
 * Un utilisateur disposant de droits d’administrateur système sur l’organisation IMS du client Brand Portal
 
-## Création d’une configuration {#create-new-configuration}
+## Créer une configuration {#create-new-configuration}
 
 Procédez comme suit dans la séquence spécifiée pour configurer Experience Manager Assets avec Brand Portal.
 
-1. [Configuration des informations d’identification OAuth dans la console Adobe Developer](#config-oauth)
-1. [Créer une intégration Adobe IMS à l’aide d’OAuth](#create-ims-account-configuration)
+1. [Configurer les informations d’identification OAuth dans Adobe Developer Console](#config-oauth)
+1. [Créer une intégration Adobe IMS à l’aide d’OAuth](#create-ims-account-configuration)
 1. [Configuration du service cloud](#configure-cloud-service)
    <!--1. [Obtain public certificate](#public-certificate)-->
 <!--1. [Create service account (JWT) connection](#createnewintegration) 
@@ -357,11 +357,11 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 -->
 
-### Configuration des informations d’identification OAuth dans la console Adobe Developer {#config-oauth}
+### Configurer les informations d’identification OAuth dans Adobe Developer Console {#config-oauth}
 
 [Configuration des informations d’identification OAuth dans la console Adobe Developer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) et sélectionnez API Brand Portal.
 
-### Création d’une intégration Adobe IMS à l’aide d’OAuth {#create-ims-account-configuration}
+### Créer une nouvelle intégration Adobe IMS à l’aide d’OAuth {#create-ims-account-configuration}
 
 [Créer une intégration Adobe IMS à l’aide d’OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) et sélectionnez Brand Portal dans la liste déroulante sous Solution cloud.
 

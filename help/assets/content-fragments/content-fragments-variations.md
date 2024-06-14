@@ -2,7 +2,9 @@
 title: Variations - création de contenu de fragment (ressources - fragments de contenu)
 description: Découvrez comment les variations de fragment de contenu vous permettent de créer du contenu pour le fragment, puis de créer des variantes de ce contenu en fonction de vos besoins, augmentant ainsi la flexibilité.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 71%

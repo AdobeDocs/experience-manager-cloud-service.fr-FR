@@ -2,10 +2,12 @@
 title: Contenu associé (Ressources - Fragments de contenu)
 description: Découvrez comment la fonction de contenu associée pour les fragments de contenu AEM fournit la connexion afin que les ressources puissent être éventuellement utilisées avec le fragment.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 46%
+ht-degree: 55%
 
 ---
 
@@ -25,7 +27,7 @@ Pour les fragments de contenu d’Adobe Experience Manager (AEM) as a Cloud Serv
 >
 >Vous pouvez ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page de plusieurs manières différentes.
 
-Pour créer l’association, vous devez d’abord [ajouter vos ressources multimédias à une collection ;](/help/assets/manage-collections.md). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
+Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/manage-collections.md). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
 
 1. Ouvrez votre fragment et sélectionnez ensuite **Contenu associé** dans le panneau latéral.
 

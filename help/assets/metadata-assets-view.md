@@ -1,13 +1,14 @@
 ---
 title: Comment gérer les métadonnées dans la vue Assets ?
 description: Découvrez comment gérer les métadonnées dans la vue Assets. Une meilleure gestion des métadonnées rend une ressource plus accessible, plus facile à gérer et à compléter.
-role: User,Leader,Admin,Architect,Developer
+role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+feature: Metadata
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
@@ -153,19 +154,19 @@ Pour attribuer un formulaire de métadonnées à un dossier :
 
    ![Formulaire de métadonnées à partir des propriétés du dossier](assets/metadata-from-folder-props.png)
 
-### Suppression d’un formulaire de métadonnées d’un dossier {#remove-metadata-form-folder}
+### Supprimer un formulaire de métadonnées des dossiers {#remove-metadata-form-folder}
 
-Après avoir affecté un formulaire de métadonnées à un ou plusieurs dossiers, Experience Manager Assets vous permet également de supprimer le formulaire de métadonnées des dossiers sélectionnés.
+Après avoir affecté un formulaire de métadonnées à un ou plusieurs dossiers, Experience Manager Assets vous permet également de le supprimer des dossiers sélectionnés.
 
-Pour supprimer un formulaire de métadonnées d’un dossier :
+Pour supprimer un formulaire de métadonnées d’un dossier :
 
 1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Formulaires de métadonnées]** et sélectionnez un formulaire de métadonnées.
 
-1. Cliquez sur **[!UICONTROL Supprimer du ou des dossiers]**. La liste des dossiers affectés au formulaire de métadonnées s’affiche.
+1. Cliquez sur **[!UICONTROL Supprimer du ou des dossiers]**. La liste des dossiers attribués au formulaire de métadonnées s’affiche.
 
 1. Sélectionnez le dossier et cliquez sur **[!UICONTROL Supprimer]**. Vous pouvez également sélectionner plusieurs dossiers dans la liste.
 
-Vous pouvez également accéder à la page des détails du dossier et sélectionner **[!UICONTROL Formulaire de métadonnées mappées sur le système]** de la **[!UICONTROL Forms des métadonnées]** pour supprimer le formulaire de métadonnées affecté d’un dossier.
+Vous pouvez également accéder à la page des détails du dossier et sélectionner **[!UICONTROL Formulaire de métadonnées mappées sur le système]** dans le champ **[!UICONTROL Formulaires de métadonnées]** pour supprimer le formulaire de métadonnées affecté d’un dossier.
 
 ## Étapes suivantes {#next-steps}
 

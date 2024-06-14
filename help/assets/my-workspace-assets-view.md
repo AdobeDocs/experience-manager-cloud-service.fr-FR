@@ -1,7 +1,10 @@
 ---
 title: Vue Mon espace de travail pour Assets
 description: La page Mon espace de travail est composée de modules visuels personnalisables permettant d’accéder facilement aux éléments clés de l’interface utilisateur d’Assets et aux informations les plus pertinentes pour l’utilisateur et l’utilisatrice.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 91%

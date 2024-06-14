@@ -1,12 +1,13 @@
 ---
-title: Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL (Ressources - Fragments de contenu)
+title: Diffusion de contenu sans affichage à l’aide de fragments de contenu avec GraphQL (Assets - Fragments de contenu)
 description: Découvrez les concepts de base de la réalisation d’un CMS AEM découplé à l’aide de fragments de contenu avec GraphQL pour la diffusion de contenu découplé.
-feature: Content Fragments, GraphQL API
+feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: User
+source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 92%
+source-wordcount: '719'
+ht-degree: 98%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 92%
 
 Avec les fragments de contenu et l’API GraphQL, vous pouvez utiliser Adobe Experience Manager (AEM) as a Cloud Service en tant que système de gestion de contenu (CMS) découplé.
 
-Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu découplé structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez/devez rendre (en tant que réponse à la requête API unique).
+Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu découplé structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
 
 >[!NOTE]
 >
@@ -49,7 +50,7 @@ GraphQL est :
 
   Voir [GraphQL.org](https://graphql.org)
 
-La variable [API GRAPHQL AEM](#aem-graphql-api) vous permet d’effectuer des requêtes (complexes) sur votre [Fragments de contenu](/help/assets/content-fragments/content-fragments.md); chaque requête étant en fonction d’un type de modèle spécifique. Le contenu renvoyé peut alors être utilisé par vos applications.
+L’[API AEM GraphQL](#aem-graphql-api) permet d’effectuer des requêtes (complexes) sur vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) ; chaque requête étant conforme à un type de modèle spécifique. Le contenu renvoyé peut alors être utilisé par vos applications.
 
 ## API AEM GraphQL {#aem-graphql-api}
 
@@ -93,7 +94,7 @@ La **[référence à un fragment](/help/assets/content-fragments/content-fragmen
 
 * est un type de données spécifique qui peut être utilisé lors de la définition d’un modèle de fragment de contenu ;
 
-* fait référence à un autre fragment, en fonction d’un modèle de fragment de contenu spécifique ;
+* Fait référence à un autre fragment, en fonction d’un modèle de fragment de contenu spécifique.
 
 * Permet de récupérer des données structurées.
 

@@ -2,11 +2,12 @@
 title: Sélecteur de destination pour AEM as a Cloud Service
 description: Utilisez le sélecteur de destination AEM pour afficher et sélectionner les ressources que vous pouvez utiliser comme copie de la ressource d’origine.
 contentOwner: Adobe
-role: Admin,User
+role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
+feature: Selectors
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1887'
 ht-degree: 92%
 
 ---

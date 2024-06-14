@@ -2,10 +2,12 @@
 title: Comment gérer les balises dans la vue Assets ?
 description: Découvrez comment gérer les balises dans la vue Assets. Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: cadf0e383608a39200d716cc698ad1979f24fd1d
+feature: Smart Tags
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 71%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +47,7 @@ Pour pouvoir appliquer des balises à des ressources, vous devez d’abord crée
 
 D’autres fonctionnalités non mentionnées dans cet article, dont la fusion, le changement de nom, la localisation et la publication de balises, sont disponibles dans la vue Admin.
 
-## Création d’un espace de noms {#create-a-namespace}
+## Créer un espace de noms {#create-a-namespace}
 
 Un espace de noms est un conteneur de balises qui ne peut exister qu’au niveau racine. Vous pouvez commencer à configurer la structure hiérarchique des balises en définissant d’abord un nom logique pour l’espace de noms. Si vous n’ajoutez pas de balise aux espaces de noms existants, la balise passe automatiquement aux balises standard.
 
@@ -59,7 +61,7 @@ Pour créer un espace de noms, procédez comme suit :
 
 1. Cliquez sur `Save`.
 
-## Ajout de balises à un espace de noms {#add-tags-to-namespace}
+## Ajouter des balises à un espace de noms {#add-tags-to-namespace}
 
 Pour ajouter des balises à un espace de noms, procédez comme suit :
 
@@ -77,7 +79,7 @@ Pour ajouter des balises à un espace de noms, procédez comme suit :
    >* Par défaut, l’outil copie le texte saisi dans le champ Titre, supprime les espaces vides ou les caractères spéciaux (. &amp; / \ : * ? [ ] | &quot; %) et le stocke en tant que nom.
    >* Vous pouvez mettre à jour le champ `Title` plus tard, mais le champ `Name` est en lecture seule.
 
-## Ajout de balises à des balises standard {#add-tags-to-standard-tags}
+## Ajouter des balises aux balises standard {#add-tags-to-standard-tags}
 
 Les balises non structurées ou qui n’ont pas de hiérarchie sont stockées dans l’espace de noms `Standard Tags`. De plus, lorsque vous souhaitez ajouter des termes descriptifs supplémentaires sans affecter la taxonomie régie, vous pouvez stocker cette valeur sous `Standard Tags`. Vous pouvez déplacer ces valeurs dans des espaces de noms structurés au fil du temps. De plus, vous pouvez utiliser l’espace de noms `Standard Tags` comme entrée de formulaire libre pour les mots-clés.
 
@@ -89,7 +91,7 @@ Pour créer une balise standard, cliquez sur `Create Tag` au niveau racine. Indi
 >
 >Si vous supprimez l’espace de noms `Standard Tags` à l’aide d’Assets as a Cloud Service, les balises créées au niveau racine ne s’affichent pas dans la liste des balises disponibles.
 
-## Déplacer des balises {#move-tags}
+## Déplacer les balises {#move-tags}
 
 Si vous stockez vos balises sous une hiérarchie incorrecte ou si votre taxonomie change au fil du temps, vous pouvez déplacer les balises sélectionnées pour préserver l’intégrité des données. Les conditions suivantes doivent être prises en compte lors du déplacement des balises :
 
@@ -127,16 +129,16 @@ Pour supprimer des balises, procédez comme suit :
 >* La suppression d’une balise supprime également toutes ses références des ressources.
 >* Vous ne pouvez pas supprimer les balises standard qui existent au niveau racine.
 
-## Ajout du composant Balises au formulaire de métadonnées {#add-tags-to-metadata-form}
+## Ajouter un composant Balises au formulaire de métadonnées {#add-tags-to-metadata-form}
 
-Le composant Balises est ajouté automatiquement au formulaire de métadonnées `default`. Vous pouvez concevoir un [formulaire de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=fr#metadata-forms) soit en utilisant un modèle, soit à partir de zéro. Si vous n’utilisez pas de modèle de formulaire de métadonnées existant, vous pouvez modifier votre formulaire de métadonnées et ajouter le composant Balises. Le mappage des propriétés de métadonnées est renseigné automatiquement et ne peut pas être modifié pour le moment. [!DNL Assets as a Cloud Service] les utilisateurs peuvent mettre à jour le mappage pour stocker les valeurs de balise à l’aide d’espaces de noms personnalisés et n’exposer que les sous-ensembles de hiérarchies à l’aide de chemins d’accès racine.
+Le composant Balises est ajouté automatiquement au formulaire de métadonnées `default`. Vous pouvez concevoir un [formulaire de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=fr#metadata-forms) soit en utilisant un modèle, soit à partir de zéro. Si vous n’utilisez pas de modèle de formulaire de métadonnées existant, vous pouvez modifier votre formulaire de métadonnées et ajouter le composant Balises. Le mappage des propriétés de métadonnées est renseigné automatiquement et ne peut pas être modifié pour le moment. Les personnes utilisant [!DNL Assets as a Cloud Service] peuvent mettre à jour le mappage pour stocker les valeurs de balise à l’aide d’espaces de noms personnalisés et n’exposer que les sous-ensembles de hiérarchies à l’aide des chemins d’accès racine.
 
 Regardez cette vidéo rapide pour découvrir comment ajouter le composant Balises à votre formulaire de métadonnées :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420452)
 
 
-### Ajout de balises à Assets {#add-tags-to-assets}
+### Ajouter des balises aux ressources {#add-tags-to-assets}
 
 1. Accédez à la page Détails de la ressource, puis à la section `Tags` du formulaire de métadonnées.
 1. Sélectionnez l’icône du sélecteur de balises située en regard du champ Balises ou commencez à saisir un nom de balise pour afficher les résultats suggérés.
@@ -146,61 +148,61 @@ Regardez cette vidéo rapide pour découvrir comment ajouter le composant Balise
 1. Sélectionnez une ou plusieurs balises. La sous-balise est sélectionnée automatiquement avec la balise ou l’espace de noms parent.
 Les balises modifiées dans Assets Essentials sont également appliquées dans Assets as a Cloud Service.
 
-## Ajout de balises à la liste bloquée {#blocklist-essentials}
+## Ajouter des balises à la liste bloquée {#blocklist-essentials}
 
-[!DNL Assets view] vous permet de configurer une liste bloquée qui inclut des mots qui ne doivent pas être ajoutés en tant que balises intelligentes aux ressources lorsqu’ils sont chargés dans le référentiel. Cette fonctionnalité vous aide à maintenir la conformité de la marque et réduit les efforts de modération des balises intelligentes.
+[!DNL Assets view] vous permet désormais de configurer une liste bloquée contenant des mots qui ne doivent pas être ajoutés en tant que balises intelligentes aux ressources chargées dans le référentiel. Cette fonctionnalité vous aide à maintenir la conformité de la marque et réduit les efforts de modération des balises intelligentes.
 <!--
 ### Block smart tags for single asset {#block-smart-tags-for-single-asset}
 ![block smart tags](assets/block-smart-tags.png)
 -->
 
-### Balises intelligentes pour tous les actifs {#block-smart-tags-for-all-assets}
+### Bloquer les balises intelligentes pour toutes les ressources {#block-smart-tags-for-all-assets}
 
-[!DNL Assets view] permet à un administrateur de bloquer les balises intelligentes pour les ressources existantes et nouvellement ajoutées. Pour bloquer des balises, procédez comme suit :
+[!DNL Assets view] permet à un administrateur ou à une administratrice de bloquer les balises intelligentes pour les ressources existantes et nouvellement ajoutées. Pour bloquer des balises, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Balises bloquées]** under **[!UICONTROL Paramètres]**.
-1. Cliquez sur **[!UICONTROL Ajout d’une balise bloquée]**.
-1. Saisissez les balises dans la zone de texte à bloquer, puis cliquez sur **[!UICONTROL Entrée]**.
+1. Accédez à **[!UICONTROL Balises bloquées]** sous **[!UICONTROL Paramètres]**.
+1. Cliquez sur **[!UICONTROL Ajouter une balise bloquée]**.
+1. Saisissez les balises à bloquer dans la zone de texte, puis cliquez sur **[!UICONTROL Entrée]**.
 1. Une fois l’ajout de balises terminé, cliquez sur **[!UICONTROL Ajouter]**. Les balises saisies sont répertoriées dans la liste des balises bloquées.
 
    >[!NOTE]
    >
-   >Vous pouvez ajouter un maximum de 25 balises à la liste à la fois. Répétez les étapes pour ajouter d’autres balises à la liste bloquée.
+   >Vous pouvez ajouter un maximum de 25 balises à la liste en une fois. Répétez les étapes pour ajouter d’autres balises à la liste bloquée.
 
-Vous pouvez également bloquer les balises intelligentes d’une seule ressource. Accédez aux détails d’une ressource. Sous **[!UICONTROL Balises]** , supprimez les balises intelligentes indésirables et cliquez sur **[!UICONTROL Enregistrer]**. Les balises sont répertoriées dans la liste bloquée de la ressource sélectionnée.
+Vous pouvez également bloquer les balises intelligentes d’une seule ressource. Accédez aux détails d’une ressource. Sous **[!UICONTROL Balises]**, supprimez les balises intelligentes indésirables et cliquez sur **[!UICONTROL Enregistrer]**. Les balises sont répertoriées dans la liste bloquée de la ressource sélectionnée.
 
 ### Actions effectuées sur la liste bloquée {#blocklist-actions}
 
-* **Supprimer des balises :** Vous pouvez également supprimer les balises de la liste bloquée. Pour ce faire, sélectionnez une ou plusieurs balises à supprimer. Cliquez sur **[!UICONTROL Supprimer]**. Vous pouvez supprimer simultanément un maximum de 25 balises de la liste.
-* **Sélectionnez tout :** Cochez la case en regard de **Nom de balise** pour sélectionner toutes les balises de la liste bloquée.
-* **Tri :** Vous pouvez trier la liste bloquée par ordre croissant ou décroissant. Pour ce faire, cliquez sur la flèche en regard de **Nom de balise**.
+* **Supprimer des balises :** vous pouvez également supprimer les balises de la liste bloquée. Pour ce faire, sélectionnez une ou plusieurs balises à supprimer. Cliquez sur **[!UICONTROL Supprimer]**. Vous pouvez supprimer un maximum de 25 balises de la liste en une fois.
+* **Sélectionner tout :** cochez la case en regard du **Nom de balise** pour sélectionner toutes les balises de la liste bloquée.
+* **Trier :** vous pouvez trier la liste bloquée par ordre ascendant ou descendant. Pour ce faire, cliquez sur la flèche en regard du **Nom de balise**.
 
-  ![balises block](assets/blocklist.gif)
+  ![Balises bloquées.](assets/blocklist.gif)
 
   >[!NOTE]
   >
   >N’utilisez pas de caractères spéciaux lors de l’ajout d’une balise dans la liste bloquée. Vous pouvez utiliser des caractères tels que a-z, A-Z, 0-9 et -.
 
-### Liste bloquée d’exportation{#export-blocklist}
+### Exporter la liste bloquée{#export-blocklist}
 
-La vue Assets vous permet d’exporter les balises bloquées répertoriées au format CSV. Pour exporter une liste bloquée, procédez comme suit :
+La vue Assets vous permet d’exporter les balises bloquées répertoriées au format CSV. Pour exporter une liste bloquée, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Exportation au format CSV]**.
+1. Cliquez sur **[!UICONTROL Exporter au format CSV]**.
 1. Sélectionnez l’emplacement approprié pour enregistrer le fichier CSV. Vous pouvez également renommer le fichier selon vos besoins.
 1. Cliquez sur **[!UICONTROL Enregistrer]**. La liste exportée au format CSV est téléchargée à l’emplacement sélectionné.
 
-### Liste bloquée d’importation{#import-blocklist}
+### Importer une liste bloquée{#import-blocklist}
 
-La vue Assets permet d’importer des balises bloquées à partir d’une source de données (CSV). Pour importer une liste bloquée, procédez comme suit :
+La vue Assets permet d’importer des balises bloquées à partir d’une source de données (CSV). Pour importer une liste bloquée, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Importation au format CSV]**.
-1. Sélectionnez le fichier CSV sur votre appareil. Cliquez sur **[!UICONTROL sélectionner un fichier ;]** pour accéder au fichier à partir de votre appareil. Vous pouvez également faire glisser et déposer le fichier CSV depuis votre appareil.
+1. Cliquez sur **[!UICONTROL Importer au format CSV]**.
+1. Sélectionnez le fichier CSV sur votre appareil. Cliquez sur **[!UICONTROL Sélectionner un fichier]** pour accéder au fichier à partir de votre appareil. Vous pouvez également faire glisser et déposer le fichier CSV depuis votre appareil.
 1. Cliquez sur **[!UICONTROL Charger]**. Les balises du fichier CSV sont répertoriées dans la liste des balises bloquées.
 
-   ![Importer la liste des balises bloquées](assets/import-blocked-tags.png)
+   ![Import de la liste des balises bloquées.](assets/import-blocked-tags.png)
 
-Si vous souhaitez télécharger un modèle de balises bloquées, procédez comme suit :
+Si vous souhaitez télécharger un modèle de balises bloquées, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Modèle de téléchargement]**.
+1. Cliquez sur **[!UICONTROL Télécharger le modèle]**.
 1. Sélectionnez l’emplacement approprié pour enregistrer le fichier CSV. Vous pouvez également renommer le fichier selon vos besoins.
-1. Cliquez sur **[!UICONTROL Enregistrer]**. Les modèles de balises block au format CSV sont téléchargés à l’emplacement sélectionné.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. Le modèle de balises bloquées au format CSV est téléchargé à l’emplacement sélectionné.

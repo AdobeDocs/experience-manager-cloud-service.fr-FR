@@ -2,12 +2,12 @@
 title: Configuration de  [!DNL Workfront for Experience Manager enhanced connector]
 description: Configuration de  [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '1767'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -63,7 +63,7 @@ Pour vous abonner aux événements, procédez comme suit :
 1. Accédez à l’onglet Dossiers liés au projet dans les services cloud.
 1. Chemin d’accès parent du dossier lié : sélectionnez un dossier dans la gestion des actifs numériques où vous souhaitez créer les dossiers liés. Si ce paramètre n’est pas renseigné, il est défini par défaut sur /content/dam. Assurez-vous que le schéma de métadonnées des outils Workfront et le schéma de métadonnées du dossier Dossier lié Workfront ont été appliqués au dossier sélectionné.
 1. Structure de dossiers liés : entrez des valeurs séparées par des virgules. Chaque valeur doit être `DE:<some-project-custom-form-field>`, Portfolio, Programme, Année, Nom ou une « valeur de chaîne littérale » (cette dernière avec des guillemets). Elle est actuellement définie sur Portfolio,Program,Year,DE:Project Type,Name.
-1. Configurer les autorisations : Ajouter `jcr:all permissions` autorisations pour `/conf/workfront-tools/settings/cloudconfigs` pour `wf-workfront-users` groupe.
+1. Configurez les autorisations : ajoutez des autorisations `jcr:all permissions` à `/conf/workfront-tools/settings/cloudconfigs` pour le groupe `wf-workfront-users`.
 1. Créez le titre du dossier lié dans Workfront à l’aide de la case à cocher Noms de structure de dossiers doit être cochée si le titre du dossier dans Workfront doit inclure tous les dossiers de la structure. Sinon, il s’agit du titre du dernier dossier.
 1. Le multichamp Sous-dossiers permet de spécifier une liste de dossiers à créer en tant que dossier enfant du dossier lié.
 1. Statut du projet : sélectionnez le statut pour lequel le projet doit être défini afin de créer le dossier lié.
@@ -82,7 +82,7 @@ Le mappage des métadonnées entre les projets Workfront et les dossiers AEM est
 
 Pour configurer les mappages, procédez comme suit :
 
-1. Ajouter `jcr:read` autorisations pour `/conf/global/settings/dam/adminui-extension/foldermetadataschema` pour `wf-workfront-users` groupe.
+1. Ajoutez des autorisations `jcr:read` à `/conf/global/settings/dam/adminui-extension/foldermetadataschema` pour le groupe `wf-workfront-users`.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sélectionnez le formulaire de schéma de métadonnées de dossier à modifier, puis cliquez sur Modifier.
 1. Sélectionnez le champ de formulaire de schéma de métadonnées de dossier que vous souhaitez modifier, puis sélectionnez l’onglet Paramètres dans le panneau de droite.

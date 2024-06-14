@@ -2,7 +2,9 @@
 title: Fragments de contenu - Navigateur de configurations (Ressources - Fragments de contenu)
 description: Découvrez comment activer certaines fonctionnalités de fragments de contenu dans le navigateur de configurations.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Content Fragments
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 99%
@@ -29,8 +31,8 @@ Avant d’utiliser les fragments de contenu, vous devez utiliser l’**explorate
 
 Pour activer la fonctionnalité de fragment de contenu, procédez comme suit :
 
-* activer l’utilisation de la fonctionnalité de fragments de contenu par le biais de l’explorateur de configurations ;
-* appliquer la configuration à votre dossier de ressources
+* activez l’utilisation de la fonctionnalité de fragment de contenu par le biais de l’explorateur de configurations ;
+* appliquer la configuration à votre dossier de ressources.
 
 ### Activation de la fonctionnalité de fragments de contenu dans l’explorateur de configurations {#enable-content-fragment-functionality-in-configuration-browser}
 
