@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
-workflow-type: ht
-source-wordcount: '422'
-ht-degree: 100%
+source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 80%
 
 ---
 
@@ -49,6 +49,11 @@ Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, a
 ### Problèmes connus {#known-issues-16544}
 
 * GRANITE-52573 : les requêtes contenant une double barre oblique `//` sont refusées avec le code d’état 400. Ce comportement sera rétabli dans une version de maintenance ultérieure.
+
+>[!NOTE]
+> AEM Engineering a identifié une régression pour la fonctionnalité de lancements qui affecte les versions d’AEM actuelles à partir de 16461. En raison de cette régression, les nouveaux lancements (créés après l’application de nouvelles versions) qui incluent des pages non profondes ne seront pas correctement promus en raison de configurations manquantes.
+> Si vos environnements sont affectés, un script shell permettant d’identifier et de mettre à jour les configurations manquantes est disponible via le service clientèle (référence interne SITES-22457).
+> Un correctif à plus long terme sera disponible pour garantir que de nouveaux lancements sont créés avec toutes les configurations appropriées. D&#39;ici là, un correctif interne est également disponible sur demande.
 
 ### Avis de modification {#change-notice-16544}
 
