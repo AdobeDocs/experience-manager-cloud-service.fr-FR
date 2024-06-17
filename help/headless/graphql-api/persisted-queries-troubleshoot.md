@@ -3,7 +3,7 @@ title: Dépannage des requêtes GraphQL persistantes
 description: Découvrez comment résoudre les problèmes liés aux requêtes GraphQL persistantes dans Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Pour vous aider à résoudre ces problèmes, cette page couvre les *le plus cour
 
 Une requête GraphQL persistante peut échouer lorsqu’elle est basée sur des types GraphQL obsolètes, souvent en raison d’un changement dans les modèles de fragment de contenu sous-jacents.
 
-De telles erreurs peuvent se produire pour diverses raisons. Par exemple, lorsque l’auteur d’un modèle de fragment de contenu (la liste n’est pas exhaustive) :
+De telles erreurs peuvent se produire pour diverses raisons. Par exemple (la liste n’est pas exhaustive), lorsque l’auteur d’un modèle de fragment de contenu :
 
 * supprime ou renomme un champ
 * met à jour la variable **Type de modèle** qui définit les modèles autorisés pour la référence au fragment
