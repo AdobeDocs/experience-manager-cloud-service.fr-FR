@@ -4,10 +4,10 @@ description: Cette page présente un aperçu de l’utilisation de Cloud Acceler
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d840e0beb8036ed8e543ac85850290e778371bbe
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,6 +96,10 @@ Pour supprimer votre projet, procédez comme suit :
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. Cliquez sur **Supprimer** pour confirmer l’étape.
+
+   >[!NOTE]
+   >Les projets expirent automatiquement et sont supprimés après un an d’inactivité de migration. Les projets restent actifs en modifiant le nom ou la description du projet, en chargeant un rapport BPA, en créant ou en modifiant un jeu de migration, en exécutant une extraction ou en exécutant une ingestion.
+
 
 ## Prochaines étapes {#whats-next}
 
