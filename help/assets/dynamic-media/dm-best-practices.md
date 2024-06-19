@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
+source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -142,7 +143,6 @@ Utilisez des noms de fichier descriptifs qui reflètent le contenu de l’image.
   Cela permet aux moteurs de recherche de comprendre le contexte de l’image et améliore l’optimisation du référencement. Google préfère les tirets aux traits de soulignement ou aux espaces dans le nom d’un fichier. Évitez également de concaténer des mots dans un nom de fichier.
 * **Domaine personnalisé :**
 Implémentez un domaine personnalisé qui inclut le nom de votre société ou marque pour renforcer la reconnaissance et la confiance de la marque. Par exemple :
-
    * Utilisez `http://images.mycompany.com/is/image/companyname/`
    * *éviter* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **Structure de dossiers compatible avec le SEO :**
@@ -351,4 +351,3 @@ Pour garantir le meilleur format optimisé pour le web, vous pouvez vous fier à
 Grâce à l’imagerie dynamique, vous pouvez vous assurer que vos images sont diffusées de la manière la plus efficace possible, en fonction de l’environnement de navigation de chaque utilisateur. Cette approche simplifie le processus et peut améliorer les performances en termes de temps de chargement des images et d’expérience utilisateur globale.
 
 Vous souhaitez en savoir plus ? Accédez à [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md).
-
