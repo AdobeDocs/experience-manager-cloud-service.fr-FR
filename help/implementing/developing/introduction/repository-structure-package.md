@@ -4,10 +4,10 @@ description: Les projets Maven pour Adobe Experience Manager as a Cloud Se
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -164,7 +164,7 @@ Par exemple :
 + Le package de code A se déploie dans `/apps/a`
 + Le package de code B se déploie dans `/apps/a/b`
 
-Si une dépendance au niveau du package n’est pas établie à partir du package de code B sur le package de code A, le package de code B peut être déployé en premier dans `/apps/a`. Il serait ensuite suivi du module de code B, qui se déploie dans `/apps/a`. Le résultat est la suppression du fichier précédemment installé dans `/apps/a/b`.
+Si une dépendance au niveau du package n’est pas établie à partir du package de code B sur le package de code A, le package de code B peut être déployé en premier dans `/apps/a`. S’il est ensuite suivi du package de code A, qui se déploie dans `/apps/a`, le résultat est la suppression du fichier précédemment installé. `/apps/a/b`.
 
 Dans ce cas :
 
