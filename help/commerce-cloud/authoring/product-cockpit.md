@@ -1,10 +1,12 @@
 ---
-title: Console du produit
+title: Cockpit de produits
 description: Découvrez comment travailler avec le Product Cockpit, qui offre une vue d’ensemble unifiée des catalogues de produits liés et du contenu associé.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '433'
 ht-degree: 95%
 
 ---

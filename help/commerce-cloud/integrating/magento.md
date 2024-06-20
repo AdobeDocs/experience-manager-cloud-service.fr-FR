@@ -3,7 +3,9 @@ title: Intégration d’AEM et d’Adobe Commerce à l’aide de Commerce Inte
 description: AEM et Adobe Commerce sont intégrés de manière transparente à l’aide de Commerce Integration Framework (CIF). CIF permet à AEM d’accéder à une instance Adobe Commerce et de communiquer avec Adobe Commerce via GraphQL. Il permet également aux auteurs AEM d’utiliser les sélecteurs de produit et de catégorie, ainsi que la console de produits pour parcourir les données de produit et de catégorie récupérées à la demande à partir d’Adobe Commerce. En outre, le CIF offre une vitrine prête à l’emploi qui peut accélérer les projets commerciaux.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
-source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 87%
@@ -52,5 +54,5 @@ Dans les projets, les composants principaux AEM CIF et les composants de projet 
 
 ## Recherche {#search}
 
-CIF fournit une [Composant principal de recherche](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) qui est une expérience de recherche rendue côté serveur basée sur [API Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/). Les clients commerciaux peuvent utiliser [Recherche en direct](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) au lieu de . Suivez les étapes suivantes : [link](/help/commerce-cloud/integrating/live-search-plp.md) pour en savoir plus sur l’intégration CIF - Recherche en direct.
+CIF fournit une [Composant principal de recherche](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) qui est une expérience de recherche rendue côté serveur basée sur [API COMMERCE GRAPHQL](https://developer.adobe.com/commerce/webapi/graphql/). Les clients Commerce peuvent utiliser [Recherche en direct](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) au lieu de . Suivez les étapes suivantes : [link](/help/commerce-cloud/integrating/live-search-plp.md) pour en savoir plus sur l’intégration CIF - Recherche en direct.
 

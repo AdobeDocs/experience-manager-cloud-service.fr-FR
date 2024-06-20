@@ -3,16 +3,18 @@ title: Intégration d’AEM et de solutions de commerce tierces à l’aide de C
 description: Les entreprises peuvent avoir besoin de solutions de commerce tierces supplémentaires pour alimenter leur storefront. Commerce Integration Framework (CIF) peut être utilisé dans de tels scénarios d’intégration pour connecter une solution de commerce tierce à Adobe Experience Manager à l’aide de l’environnement d’exécution d’E/S.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '509'
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
+source-wordcount: '491'
 ht-degree: 100%
 
 ---
 
 # Intégration d’AEM et de solutions de commerce tierces à l’aide de Commerce Integration Framework {#aem-third-party}
 
-L’intégration d’une solution de commerce non-Adobe est un scénario courant pour l’environnement CIF. Les solutions tierces avec différents schémas et API sont connectées par le biais d’une couche d’intégration.
+L’intégration d’une solution de commerce non-Adobe est un scénario courant pour l’environnement CIF. Les solutions tierces avec différentes API et différents schémas sont connectées par le biais d’une couche d’intégration.
 
 ## Architecture {#architecture}
 
@@ -40,7 +42,7 @@ L’intégration des API de catalogue de produits est nécessaire pour déverrou
 
 ## Cas d’utilisation du front-end
 
-Les [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) récupèrent et échangent des données par le biais des API Commerce d’Adobe prises en charge par CIF. Pour réutiliser des composants, les API respectives doivent être implémentées.
+Les [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) récupèrent et échangent des données par le biais des API Commerce d’Adobe prises en charge par CIF. Pour réutiliser des composants, les API respectives doivent être implémentées.
 
 Il est recommandé de communiquer directement avec la solution tierce afin d’éviter toute latence, ce qui est essentiel pour les performances des composants côté client.
 
@@ -54,11 +56,11 @@ Cette couche d’intégration n’est pas requise si une couche tierce est dispo
 
 ## Connecteurs préconfigurés {#connectors}
 
-Les connecteurs constituent un bon point de départ pour les projets. Ils sont fournis avec une connexion spécifique à une solution de commerce et un mappage d’API par défaut. Ces connecteurs sont créés par des tiers et ne sont pas gérés par Adobe. Contactez le partenaire concerné pour obtenir des informations.
+Les connecteurs constituent un bon point de départ pour les projets. Ces éléments sont fournis avec une connexion spécifique à une solution de commerce et un mappage d’API par défaut. Ces connecteurs sont créés par des tiers et ne sont pas gérés par Adobe. Contactez le partenaire concerné pour obtenir des informations.
 
 * [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), configuré par Diconium
 * [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), configuré par Diconium
 
 >[!TIP]
 >
->Bien que les connecteurs aident les projets à accélérer l’intégration du commerce, ils ne sont pas plug-n-play. Les solutions de commerce d’entreprise sont généralement fortement personnalisées et nécessitent une intégration personnalisée. Une bonne connaissance de la plateforme commerciale, des schémas Adobe Commerce GraphQL et d’Adobe I/O Runtime est requise.
+>Bien que les connecteurs aident les projets à accélérer l’intégration du commerce, ils ne sont pas plug-n-play. Les solutions de commerce d’entreprise sont fortement personnalisées et nécessitent une intégration personnalisée. Une bonne connaissance de la plateforme commerciale, des schémas Adobe Commerce GraphQL et d’Adobe I/O Runtime est requise.

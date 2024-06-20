@@ -2,9 +2,11 @@
 title: Affectation d’un canal à un affichage dans Screens as a Cloud Service
 description: Cette page décrit comment attribuer un canal à un affichage dans Screens as a Cloud Service.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '442'
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
+source-wordcount: '444'
 ht-degree: 100%
 
 ---

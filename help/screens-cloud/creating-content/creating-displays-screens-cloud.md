@@ -2,7 +2,9 @@
 title: Création et gestion des affichages dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des affichages dans Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 89%
@@ -49,7 +51,7 @@ Vous pouvez supprimer un affichage du fournisseur de services Screens.
 
 Sélectionnez l’affichage et cliquez sur **Supprimer** au bas du panneau, comme illustré dans la figure ci-dessous.
 
-![image](/help/screens-cloud/assets/display/disp-5.png)
+![Image](/help/screens-cloud/assets/display/disp-5.png)
 
 ## Étapes d’organisation des affichages dans des dossiers {#organize-display}
 

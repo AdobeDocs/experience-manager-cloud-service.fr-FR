@@ -2,7 +2,9 @@
 title: Création d’un environnement
 description: Cette page décrit la création d’un environnement dans Cloud Manager pour Screens as a Cloud Service.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 44%
@@ -28,11 +30,11 @@ Une fois la création du projet terminée, vous pouvez voir la mise à jour de l
 
 1. Cliquez sur **Ajouter un environnement** de Cloud Manager **Présentation** page.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-environ1.png)
+   ![Image](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
 1. Sélectionnez les détails de l’environnement dans la **Ajouter un environnement** , puis cliquez sur **Enregistrer**.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-environ2.png)
+   ![Image](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
 1. Une fois l’ajout d’un environnement terminé, la carte d’appel à l’action est mise à jour, comme illustré dans la figure ci-dessous.
 

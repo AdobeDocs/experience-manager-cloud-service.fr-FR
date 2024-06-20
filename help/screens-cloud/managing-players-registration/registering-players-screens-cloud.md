@@ -2,9 +2,11 @@
 title: Enregistrement de lecteurs dans Screens as a Cloud Service
 description: Cette page décrit comment enregistrer des lecteurs dans Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '500'
 ht-degree: 80%
 
 ---
@@ -46,13 +48,13 @@ Pour enregistrer votre lecteur, procédez comme suit :
 
 1. Cliquez sur **Créer** pour créer le code d’enregistrement. Vous pouvez voir votre lecteur avec le code d’enregistrement dans la liste.
 
-   ![image](/help/screens-cloud/assets/player/register-player3.png)
+   ![Image](/help/screens-cloud/assets/player/register-player3.png)
 
 1. Cliquez sur la valeur située sous la colonne . **CODE D’ENREGISTREMENT**  pour copier la valeur dans le presse-papiers.
 
 1. Collez cette valeur dans la variable **Saisir du code** dans le champ **Enregistrement du lecteur** dans l’interface utilisateur d’administration du lecteur AEM Screens, puis cliquez sur **Enregistrer**.
 
-   ![image](/help/screens-cloud/assets/player/register-player4.png)
+   ![Image](/help/screens-cloud/assets/player/register-player4.png)
 
 
 1. Lorsque vous avez ajouté le code, vous pouvez constater que le lecteur est désormais enregistré dans l’interface utilisateur d’administration du lecteur.

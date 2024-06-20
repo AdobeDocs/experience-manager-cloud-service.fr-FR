@@ -1,15 +1,17 @@
 ---
-title: Purge du cache CDN
+title: Purge du cache du réseau CDN
 description: Découvrez comment supprimer des objets mis en cache du cache CDN d’Adobe en configurant le jeton API de purge qui peut ensuite être utilisé dans les appels API.
 feature: CDN Cache
-source-git-commit: bd8f534642848a656e5e54c425049c95cdb413f7
+exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Purge du cache CDN {#cdn-purge-cache}
+# Purge du cache du réseau CDN {#cdn-purge-cache}
 
 >[!NOTE]
 >Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme d’adoption précoce, envoyez un email à `aemcs-cdn-config-adopter@adobe.com`.

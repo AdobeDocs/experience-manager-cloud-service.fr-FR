@@ -1,12 +1,13 @@
 ---
-title: Réseau de diffusion de contenu dans AEM as a Cloud Service
+title: Réseau CDN dans AEM as a Cloud Service
 description: Découvrez comment utiliser le réseau de diffusion de contenu géré par AEM et comment pointer votre propre réseau de diffusion de contenu vers le réseau de diffusion de contenu géré par AEM.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -40,7 +41,7 @@ Consultez [Gestion des listes d’adresses IP autorisées](/help/implementing/c
 >
 >Seules les requêtes provenant des adresses IP autorisées sont traitées par le biais du réseau CDN géré par AEM. Si vous pointez votre propre réseau CDN sur le réseau géré par AEM, assurez-vous que les adresses IP de votre réseau CDN sont incluses dans la liste autorisée.
 
-### Configuration du trafic sur le réseau de diffusion de contenu {#cdn-configuring-cloud}
+### Configurer le trafic sur le réseau CDN {#cdn-configuring-cloud}
 
 Les règles de configuration du trafic et des filtres du réseau de diffusion de contenu peuvent être déclarées dans un fichier de configuration et déployées sur le réseau de diffusion de contenu, à l’aide de la variable [Pipeline de configuration de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Pour plus d’informations, voir [Configuration du trafic sur le réseau de diffusion de contenu](/help/implementing/dispatcher/cdn-configuring-traffic.md) et [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md).
 

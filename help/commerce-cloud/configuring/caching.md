@@ -2,10 +2,12 @@
 title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '840'
-ht-degree: 100%
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
+source-wordcount: '811'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +30,7 @@ Il n’y a pas d’invalidation du cache. Par conséquent, agissez prudemment lo
 
 Lors de la configuration de la mise en cache des composants, le nom du cache doit correspondre au nom des composants **proxy** que vous définissez dans votre projet.
 
-Avant d’envoyer une requête GraphQL, le client ou la cliente vérifie si cette requête **exacte** est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour établir une correspondance, la requête GraphQL _doit_ correspondre exactement. Autrement dit, la requête, le nom de l’opération (le cas échéant), les variables (le cas échéant) _doivent_ tous être égaux à la requête mise en cache. En outre, tous les en-têtes HTTP personnalisés qui peuvent être définis _doivent_ être également identiques. Par exemple, l’en-tête `Store` Adobe Commerce _doit_ correspondre.
+Avant d’envoyer une requête GraphQL, le client ou la cliente vérifie si cette requête **exacte** est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour établir une correspondance, la requête GraphQL _must_ correspond exactement. Autrement dit, la requête, le nom de l’opération (le cas échéant), les variables (le cas échéant) _must_ tous sont égaux à la requête mise en cache. En outre, tous les en-têtes HTTP personnalisés qui peuvent être définis _doivent_ être également identiques. Par exemple, l’en-tête `Store` Adobe Commerce _doit_ correspondre.
 
 ### Exemples {#examples}
 

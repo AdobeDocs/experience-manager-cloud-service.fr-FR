@@ -1,13 +1,15 @@
 ---
 title: '''[!DNL Live Search] Page de liste de produits CIF composant'
 description: Utilisation de CIF composants pour activer [!DNL Live Search] Composant Page de liste de produits sur un site AEM
-source-git-commit: eaec541c191fc8f68d78662f2b6ab9140460aa9f
+exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Live Search] Composant CIF {#live-search-cif-component}
 
@@ -15,7 +17,7 @@ La recherche en direct pour Adobe Commerce offre une expérience de recherche ra
 
 Cette rubrique décrit l’utilisation d’un composant CIF d’AEM pour mettre en oeuvre le [!DNL Live Search] Widget Page de liste de produits (PLP) dans votre site AEM.
 
-## Conditions préalables requises {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Cette rubrique suppose que vous disposez d’un [Environnement AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr) configuré.
 

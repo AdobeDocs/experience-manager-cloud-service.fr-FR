@@ -1,15 +1,17 @@
 ---
 title: Prise en charge des sous-modules Git
-description: Découvrez comment utiliser les sous-modules Git pour fusionner le contenu de plusieurs branches dans des référentiels Git au moment de la création.
-source-git-commit: 34c96940f91d42d622d50e85e9a9d6f75f3fb483
+description: Découvrez comment vous pouvez utiliser des sous-modules Git pour fusionner le contenu de plusieurs branches dans des référentiels Git lors de la création.
+exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 57%
+ht-degree: 93%
 
 ---
 
-
-# Prise en charge des sous-modules Git pour les référentiels d’Adobe {#git-submodule-support}
+# Prise en charge des sous-modules Git pour les référentiels Adobe {#git-submodule-support}
 
 Les sous-modules Git peuvent être utilisés pour fusionner le contenu de plusieurs branches dans des référentiels Git au moment de la création.
 
@@ -78,11 +80,11 @@ Lors de l’utilisation de sous-modules git avec des référentiels gérés par 
 * Les références des sous-modules Git sont stockées vers des validations Git spécifiques. Par conséquent, lorsque des modifications sont apportées au référentiel de sous-module, la validation référencée doit être mise à jour.
    * Par exemple, en utilisant `git submodule update --remote`
 
-## Prise en charge du sous-module Git pour les référentiels privés {#private-repositories}
+## Prise en charge des sous-modules Git pour les référentiels privés {#private-repositories}
 
-Prise en charge des sous-modules git lors de l’utilisation de [référentiels privés](private-repositories.md) est largement identique à l’utilisation de référentiels Adobe.
+La prise en charge des sous-modules Git pour les [référentiels privés](private-repositories.md) est largement similaire à celle des référentiels Adobe.
 
-Cependant, après avoir configuré votre `pom.xml` et d’exécuter la variable `git submodule` Commandes, vous devez ajouter une `.gitmodules` dans le répertoire racine du référentiel de l’agrégateur pour que Cloud Manager détecte la configuration du sous-module.
+Cependant, après avoir configuré votre fichier `pom.xml` et exécuté les commandes `git submodule`, vous devez ajouter un fichier `.gitmodules` dans le répertoire racine du référentiel de l’agrégateur pour que Cloud Manager détecte la configuration du sous-module.
 
 ![fichier .gitmodules](assets/gitmodules.png)
 
@@ -90,9 +92,9 @@ Cependant, après avoir configuré votre `pom.xml` et d’exécuter la variable 
 
 ### Restrictions et recommandations {#limitations-recommendations-private-repos}
 
-Lors de l’utilisation de sous-modules git avec des référentiels privés, tenez compte des limites suivantes.
+Lors de l’utilisation de sous-modules Git avec des référentiels privés, tenez compte des restrictions suivantes.
 
-* Les URL git des sous-modules peuvent être au format HTTPS ou SSH, mais elles doivent être liées à un référentiel github.com
-   * L’ajout d’un sous-module de référentiel d’Adobe à un référentiel d’agrégation GitHub ou vice versa ne fonctionnera pas.
+* Les URL Git des sous-modules peuvent être au format HTTPS ou SSH, mais elles doivent diriger vers un référentiel github.com
+   * L’ajout d’un sous-module de référentiel d’Adobe à un référentiel d’agrégateur GitHub ou vice-versa ne fonctionnera pas.
 * Les sous-modules GitHub doivent être accessibles pour l’application GitHub Adobe.
-* [Limites de l’utilisation de sous-modules Git avec des référentiels gérés par Adobe](#limitations-recommendations) s’appliquent également.
+* [Les limites d’utilisation des sous-modules Git avec des référentiels gérés par Adobe](#limitations-recommendations) s’appliquent également.

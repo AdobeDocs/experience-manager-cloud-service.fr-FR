@@ -2,7 +2,9 @@
 title: Ajout d’un module complémentaire Screens à un nouveau programme dans Cloud Manager
 description: Découvrez comment ajouter un module complémentaire Screens à un nouveau programme dans Cloud Manager for Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 48%
@@ -35,11 +37,11 @@ Pour ajouter Screens en tant que module complémentaire à un nouveau programme 
 
 1. Sélectionnez **Configurer pour la production** dans l’assistant de création de programme pour créer un programme de production. L’utilisateur peut accepter le nom de programme par défaut ou le modifier avant de sélectionner **Continuer**.
 
-   ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon2.png)
+   ![Image](/help/screens-cloud/assets/onboarding/onboard-screens-addon2.png)
 
 1. Sélectionner **Screens** sous la forme d’un module complémentaire de la fonction **Configuration pour la production** à partir de cette étape de l’assistant, cliquez sur **Créer**.
 
-   ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
+   ![Image](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
 
 1. Une fois la configuration de création de votre programme terminée, vous pouvez voir votre programme Cloud Manager. Par exemple, la variable **Programme de démonstration ScreensCloud**, comme illustré dans la figure ci-dessous, avec Screens comme module complémentaire dans votre programme.
 

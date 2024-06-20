@@ -2,9 +2,11 @@
 title: Guide rapide relatif à WCAG 2.1
 description: Guide rapide relatif aux directives d’accessibilité du contenu web (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1739'
 ht-degree: 97%
 
 ---
@@ -42,7 +44,7 @@ En d’autres termes, des consignes qui peuvent être appliquées à divers form
 Chaque consigne est écrite de manière à pouvoir être testée objectivement pour s’assurer qu’un groupe d’experts en accessibilité conviendrait de façon générale que la consigne a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée.
 
 * Permettent une **mise en œuvre contextuelle avec des priorités :**
-les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion d’ *accessibilité prise en charge* est introduite. Ainsi, les auteurs et autrices peuvent prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas prendre totalement en charge l’accessibilité ou qui peuvent nécessiter que les personnes utilisatrices disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
+les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, le concept d’*accessibilité prise en charge* est introduit. Ainsi, les auteurs et autrices peuvent prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas prendre totalement en charge l’accessibilité ou qui peuvent nécessiter que les personnes utilisatrices disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
 
 Ces objectifs ont considérablement influencé la structure de WCAG 2.1.
 
@@ -58,11 +60,11 @@ WCAG 2.1 est constitué de quatre principes clés de conception accessible, par
 
 1. **Perceptible** : un utilisateur ou une utilisatrice peut-il/elle appréhender le contenu web en question ?
 1. **Opérationnel** : un utilisateur ou une utilisatrice peut-il/elle naviguer, saisir des données ou interagir d’une manière ou d’une autre avec le contenu web ?
-1. **Compréhensible** : un utilisateur ou une utilisatrice peut-il/elle assimiler et comprendre le contenu web qui lui est présenté ?
+1. **Compréhensible** : un utilisateur ou une utilisatrice peut-il/elle traiter et comprendre le contenu web qui lui est présenté ?
 1. **Robuste** : le contenu web est-il disponible de la manière prévue dans un nombre suffisamment important d’environnements de navigation, y compris les anciens et les nouveaux environnements de navigation ?
 
 Développons :
-* Chaque **Principe** se compose d’une ou de plusieurs **recommandations**.
+* Chaque **principe** se compose d’une ou de plusieurs **recommandations**.
 
 * Les recommandations sont rédigées en tant qu’instructions, qui sont soit positives (faites ceci...), soit négatives (ne faites pas cela...).
 * Les recommandations sont numérotées de 1.1 à 4.1, le premier numéro correspondant au principe parent.
@@ -149,7 +151,7 @@ La section « Comment se conformer » est disponible sur la page [Comment se c
 Sans filtrage, cette ressource fournit tous les critères de réussite regroupés par recommandation. Pour chaque critère de réussite, les informations suivantes sont fournies :
 
 * le texte du critère de réussite ;
-* un lien vers le document Compréhension correspondant ;
+* un lien vers le document « Compréhension » correspondant ;
 * une liste des techniques suffisantes connexes, avec un lien vers les détails de chaque technique ;
 * une liste des techniques consultatives connexes, avec un lien vers les détails de chaque technique (le cas échéant) ;
 * une liste des échecs associés, avec un lien vers les détails de chaque échec.

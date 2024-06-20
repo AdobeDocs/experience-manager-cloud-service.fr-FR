@@ -1,16 +1,19 @@
 ---
 title: Configuration du mode Chronologie pour AEM Screens
 description: Cette page décrit comment configurer une vue de chronologie dans Screens as a Cloud Service.
-source-git-commit: eb71ea3a1a739b08fb3154a5f41a0706bd81488c
+exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 15%
+ht-degree: 19%
 
 ---
 
 # Configuration du mode Chronologie pour AEM Screens {#configuring-timelineview-screens}
 
-## Introduction {#introduction}
+## Présentation {#introduction}
 
 Cette section décrit comment créer une vue de chronologie pour AEM Screens.
 

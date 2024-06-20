@@ -2,11 +2,14 @@
 title: Fonctionnalités actuelles de l’adoption précoce de [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 description: Fonctionnalités actuelles de l’adoption précoce de [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
-Role: developer, user
-source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
+Role: developer, user, author
+exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '1731'
-ht-degree: 8%
+ht-degree: 24%
 
 ---
 
@@ -20,7 +23,7 @@ Le programme d’adoption précoce d’AEM Forms vous offre une occasion unique 
 
 ## Comment participer au programme Adopteur anticipé ?
 
-Si vous souhaitez rejoindre notre programme d&#39;adoption précoce pour n&#39;importe quelle innovation d&#39;adoption précoce, envoyez simplement un email depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  pour demander l’accès. Vous pouvez demander l’accès à l’ensemble ou à toute innovation spécifique.
+Si vous souhaitez rejoindre notre programme d&#39;adoption précoce pour n&#39;importe quelle innovation d&#39;adoption précoce, envoyez simplement un email depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  pour demander l’accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
 
 ## Innovations initiales des adopteurs
 
@@ -123,15 +126,15 @@ Prêt à démarrer ? [Documentation sur la durée de vie (RTL) d’Adaptive Form
 
 ### Amélioration des méthodes de protection des robots
 
-AEM Forms a amélioré ses fonctionnalités de sécurité en ajoutant la prise en charge de deux solutions CAPTCHA populaires : Cloudflare Turnstile et Captcha. Cela vient s’ajouter au reCAPTCHA de Google déjà disponible, offrant ainsi aux utilisateurs plus de choix et de flexibilité pour protéger leurs formulaires contre les robots et les spams envoyés.
+AEM Forms a amélioré ses fonctionnalités de sécurité en ajoutant la prise en charge de deux solutions Captcha populaires : Cloudflare Turnstile et hCaptcha. Cela vient s’ajouter au reCAPTCHA de Google déjà disponible, offrant ainsi aux utilisateurs et utilisatrices plus de choix et de flexibilité pour protéger leurs formulaires contre les robots et les spams envoyés.
 
-* **Cloudflare Turnstile**: ce CAPTCHA sans friction vérifie les utilisateurs par le biais d’un simple défi qui ne nécessite pas d’interaction explicite. Il s’intègre de manière transparente à vos formulaires, améliorant ainsi l’expérience utilisateur.
-* **Captcha**: ce CAPTCHA axé sur la confidentialité offre une alternative conviviale qui met l’accent sur la confidentialité des données. Il vise à trouver un équilibre entre la sécurité et l’expérience utilisateur.
-* **Google reCAPTCHA**: AEM Forms continue à prendre en charge reCAPTCHA v2 et reCAPTCHA Enterprise, offrant ainsi une solution fiable et bien établie.
+* **Cloudflare Turnstile** : ce Captcha sans friction vérifie les utilisateurs et utilisatrices par le biais d’un simple défi qui ne nécessite pas d’interaction explicite. Il s’intègre de manière transparente à vos formulaires, améliorant ainsi l’expérience client.
+* **hCaptcha** : ce Captcha axé sur la confidentialité offre une alternative conviviale qui met l’accent sur la confidentialité des données. Il vise à trouver un équilibre entre la sécurité et l’expérience client.
+* **Google reCAPTCHA** : AEM Forms continue à prendre en charge reCAPTCHA v2 et reCAPTCHA Enterprise, offrant ainsi une solution fiable et bien établie.
 
-En proposant plusieurs options CAPTCHA, AEM Forms vous permet de sélectionner la solution qui correspond le mieux à vos besoins.
+En proposant plusieurs options de Captcha, AEM Forms vous permet de sélectionner la solution qui correspond le mieux à vos besoins.
 
-Prêt à intégrer l’une de ces solutions CAPTCHA à votre Forms adaptatif ? Notre documentation fournit des instructions détaillées pour chaque : [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), et [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Vous souhaitez intégrer l’une de ces solutions Captcha à vos formulaires adaptatifs ? Notre documentation fournit des instructions détaillées pour [Cloudflare Turnstile](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), et [Google reCAPTCHA](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### API Doc Assurance
 
@@ -155,13 +158,13 @@ Globalement, [API Doc Assurance](https://developer.adobe.com/experience-manager-
 
 ### API de service Forms
 
-Le service Forms génère des PDF forms interactifs pour la capture de données. Il peut également être utilisé pour importer/exporter des données vers/depuis un formulaire de PDF interactif existant et valider les données envoyées. Voici une répartition de ses fonctionnalités :
+Le service Forms génère des formulaires PDF interactifs pour la capture de données. Il peut également être utilisé pour importer/exporter des données vers/depuis un formulaire de PDF interactif existant et valider les données envoyées. Voici une répartition de ses fonctionnalités :
 
-* **Rendu de Forms**: générez un formulaire de PDF interactif à partir d’un modèle créé à l’aide d’AEM Forms Designer et éventuellement de données XML. Cela génère essentiellement un formulaire de PDF à remplir, éventuellement prérempli avec des données.
+* **Rendu de Forms** : générez un formulaire PDF interactif à partir d’un modèle créé à l’aide d’AEM Forms Designer et éventuellement de données XML. Cela génère essentiellement un formulaire PDF à remplir, éventuellement prérempli avec des données.
 
-* **Extraction et importation de données**: importez des données dans un formulaire de PDF existant et extrayez des données d’un formulaire de PDF rempli. Les formats de données XDP et XML sont pris en charge et l’importation dans des PDF forms non XFA (également appelés AcroForms) prend également en charge les données FDF et XFDF.
+* **Extraction et import des données** : importez des données dans un formulaire PDF existant et extrayez des données d’un formulaire PDF rempli. Les formats de données XDP et XML sont pris en charge, et l’import dans des formulaires PDF non XFA (également appelés AcroForms) prend également en charge les données FDF et XFDF.
 
-* **Validation des données**: validez les données envoyées, au format XDP ou XML, par rapport à un modèle créé à l’aide d’AEM Forms Designer.
+* **Validation des données** : validez les données envoyées, au format XDP ou XML, par rapport à un modèle créé à l’aide d’AEM Forms Designer.
 
 ## Voir également
 

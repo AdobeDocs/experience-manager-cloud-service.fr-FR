@@ -3,10 +3,11 @@ title: Prise en main des formulaires AEM Forms Edge Delivery Services. Créez
 description: Créez rapidement des formulaires parfaits. ⚡ Création basée sur des documents de formulaires AEM Forms Edge Delivery = vitesse époustouflante et formulaires compatibles avec l’optimisation du moteur de recherche pour des utilisateurs et utilisatrices plus heureux.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f6a320b0f3960ae789559b837995986bf0a4bbad
+workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +19,7 @@ AEM Forms Edge Delivery fournit un bloc, appelé bloc de formulaires adaptatif
 
 Ces formulaires envoient directement les données vers un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser l’écosystème dynamique et les API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou pour démarrer un workflow d’entreprise existant.
 
-![Écosystème de création basé sur des documents](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![Écosystème de création basé sur les documents](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## Conditions préalables

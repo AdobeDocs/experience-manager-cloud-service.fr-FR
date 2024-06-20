@@ -2,7 +2,9 @@
 title: Présentation d’AEM Screens as a Cloud Service
 description: Comprendre AEM Screens as a Cloud Service.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 59%
@@ -25,8 +27,8 @@ Screens as a Cloud Service comporte deux composants principaux, à savoir :
 * **[Fournisseur de services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)**, qui est le service de gestion de l’affichage numérique exécuté sur Adobe I/O Runtime. Le fournisseur de services Screens permet aux auteurs, développeurs et administrateurs de contenu de gérer les affichages et les lecteurs pour la lecture du contenu une fois le contenu ajouté aux canaux. En outre, le fournisseur de services Screens informe l’orchestrateur sur l’emplacement et le moment où le contenu va être lu à un niveau élevé.
 
 
-## Aperçu de l’architecture {#architectural-overview}
+## Vue d’ensemble de l’architecture {#architectural-overview}
 
 En tant qu’utilisateur AEM Screens as a Cloud Service, vous pouvez ajouter et gérer du contenu dans les canaux. Vous pouvez enregistrer et gérer des affichages et des lecteurs à partir des interfaces conçues spécifiquement pour Screens as a Cloud Service, à savoir : **Fournisseur de services Screens** et **Fournisseur de contenu Screens**.
 
-![image](/help/screens-cloud/assets/architecture-screenscloud.png)
+![Image](/help/screens-cloud/assets/architecture-screenscloud.png)

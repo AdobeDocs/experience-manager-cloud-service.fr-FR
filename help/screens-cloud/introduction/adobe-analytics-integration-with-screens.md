@@ -9,7 +9,8 @@ docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Screens Deployments
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 75%
@@ -23,7 +24,7 @@ Cette section couvre les sujets suivants :
 * **Présentation**
 * **Particularités architecturales**
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 ***AEM Screens*** tire parti d’Adobe Analytics ; vous obtenez ainsi une solution unique sur le marché : des analyses multicanaux permettant de mettre le contenu affiché à l’emplacement concerné en corrélation avec d’autres sources de données.
 

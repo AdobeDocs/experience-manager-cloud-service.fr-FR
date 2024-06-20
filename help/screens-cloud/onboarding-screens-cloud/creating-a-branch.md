@@ -2,7 +2,9 @@
 title: Création d’une branche
 description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens as a Cloud Service.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 46%
@@ -26,15 +28,15 @@ La section suivante décrit comment créer une branche pour votre programme dans
 
 1. Pour créer votre branche et votre projet, cliquez sur **Créer**.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch1.png)
+   ![Image](/help/screens-cloud/assets/onboarding/create-branch1.png)
 
 1. Sélectionnez la variable **Titre** et **Nouveau nom de branche** de la **Création d’une branche et d’un projet** assistant et cliquez sur **Créer**.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch2.png)
+   ![Image](/help/screens-cloud/assets/onboarding/create-branch2.png)
 
 1. La carte d’appel à l’action s’affiche sur le **Présentation** mettre à jour l’état en tant que création de projet en cours.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch3.png)
+   ![Image](/help/screens-cloud/assets/onboarding/create-branch3.png)
 
 1. Une fois la création du projet terminée, la carte d’appel à l’action est mise à jour dans le **Présentation** page.
 

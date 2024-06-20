@@ -3,10 +3,12 @@ title: Bonnes pratiques en matière de requête et d’indexation
 description: Découvrez comment optimiser vos index et requêtes en fonction des bonnes pratiques d’Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '3088'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
@@ -24,7 +26,7 @@ Lors de la conception de la taxonomie d’un référentiel, plusieurs facteurs d
 
 Lors de la conception d’une taxonomie qui tient compte de ces facteurs, il est également important de penser à la « traversabilité » de la conception de l’indexation. Dans ce contexte, la traversabilité est la capacité d’une taxonomie à permettre un accès prévisible au contenu en fonction de son chemin d’accès. Cela permet d’obtenir un système plus efficace, plus facile à gérer qu’un système nécessitant l’exécution de plusieurs requêtes.
 
-En outre, lors de la conception d’une taxonomie, il est important de déterminer si l’ordre est important. Dans les cas où un ordre explicite n’est pas nécessaire et qu’un grand nombre de nœuds frères est attendu, il est préférable d’utiliser un type de nœud non ordonné tel que `sling:Folder` ou `oak:Unstructured`. Dans les cas où un ordre est obligatoire, `nt:unstructured` et `sling:OrderedFolder` serait plus approprié.
+De plus, lors de la conception d’une taxonomie, il est important de se demander si l’ordre importe. Dans les cas où un ordre explicite n’est pas nécessaire et qu’un grand nombre de nœuds frères est attendu, il est préférable d’utiliser un type de nœud non ordonné tel que `sling:Folder` ou `oak:Unstructured`. Dans les cas où un ordre est obligatoire, `nt:unstructured` et `sling:OrderedFolder` serait plus approprié.
 
 ### Requêtes dans les composants {#queries-in-components}
 
@@ -46,7 +48,7 @@ Par exemple, si le contenu est stocké dans une taxonomie similaire à :
 
 Le nœud `/content/myUnstructuredContent/parentCategory/childCategory` peut simplement être récupéré ; ses tâches enfants peuvent être analysées et utilisées pour le rendu du composant.
 
-En outre, lorsque vous avez affaire à un jeu de résultats petit ou homogène, il peut être plus rapide de parcourir le référentiel et de rassembler les noeuds requis, plutôt que de concevoir une requête pour renvoyer le même jeu de résultats. En règle générale, les requêtes doivent être évitées lorsque cela est possible.
+En outre, lorsque vous traitez un ensemble de résultats petit ou homogène, il peut être plus rapide de parcourir le référentiel et de rassembler les nœuds requis, plutôt que de concevoir une requête pour renvoyer le même ensemble de résultats. En règle générale, les requêtes doivent être évitées lorsque cela est possible.
 
 ### Prérécupération des résultats {#prefetching-results}
 

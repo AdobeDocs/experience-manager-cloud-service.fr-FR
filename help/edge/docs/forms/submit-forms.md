@@ -3,8 +3,9 @@ title: Préparer votre feuille de calcul pour accepter des données
 description: Créez plus rapidement des formulaires performants à l’aide de feuilles de calcul et de champs du bloc de formulaires adaptatifs.
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 

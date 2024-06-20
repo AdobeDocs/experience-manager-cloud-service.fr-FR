@@ -2,9 +2,11 @@
 title: Règlements sur la protection et la confidentialité des données – Préparation d’Adobe Experience Manager as a Cloud Service Foundation
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Foundation pour les différents règlements sur la protection et la confidentialité des données. Cet article comprend le Règlement général sur la protection des données (RGPD) de l’UE, la loi sur la protection de la vie privée des consommateurs et consommatrices de Californie (California Consumer Privacy Act) et la manière de s’y conformer lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: ht
-source-wordcount: '503'
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
+source-wordcount: '501'
 ht-degree: 100%
 
 ---
@@ -43,7 +45,7 @@ En ce qui concerne AEM Foundation, les données personnelles stockées sont cons
 
    ![Profil utilisateur](assets/dpp-foundation-02.png)
 
-### API HTTP  {#http-api}
+### API HTTP {#http-api}
 
 Comme mentionné, Adobe fournit des API pour accéder aux données utilisateur et faciliter l’automatisation. Il existe plusieurs types d’API que vous pouvez utiliser :
 
@@ -87,7 +89,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 4. Enfin, confirmez l’action.
 
-   L’interface utilisateur indique alors que le compte utilisateur a été désactivé en grisant la carte de profil et en y ajoutant un cadenas :
+   L’interface utilisateur indique alors que le compte d’utilisateur a été désactivé en grisant la carte de profil et en y ajoutant un cadenas :
 
    ![Compte désactivé](assets/dpp-foundation-04.png)
 
@@ -110,7 +112,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **Désactivation de l’utilisateur :**
 
-Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyé par la commande ci-dessus :
+Utilisation du chemin de nœud de la propriété home de la payload JSON renvoyée par la commande ci-dessus :
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'

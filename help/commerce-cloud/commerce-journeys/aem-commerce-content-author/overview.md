@@ -2,10 +2,12 @@
 title: Parcours de création de contenu AEM Commerce
 description: Commencez ici pour un parcours guidé à travers la création d’AEM Commerce.
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +27,7 @@ Ce guide vous guide à travers les sujets les plus importants de la création d�
 
 ## Parcours de documentation AEM {#documentation-journeys}
 
-[Un Parcours de documentation](/help/journey-documentation/documentation-journeys.md) Il relie de nombreux sujets et caractéristiques complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau pour AEM, comprendre et résoudre un problème commercial du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
+[Un parcours de documentation](/help/journey-documentation/documentation-journeys.md) relie de nombreux sujets et fonctionnalités différents et compliqués en aidant le lecteur ou la lectrice, qui débute parfois dans AEM, à comprendre et à résoudre un problème d’activité du début à la fin, tout en présupposant un minimum de connaissances préalables concernant le sujet ou AEM.
 
 Les parcours de documentation sont conçus autour des principes de bonne pratique, reposent sur les dernières recherches d’Adobe, sur l’expérience éprouvée de mise en œuvre des consultants Adobe, ainsi que sur les retours de projets clients.
 
@@ -35,13 +37,13 @@ Si vous souhaitez savoir la manière dont Adobe recommande de résoudre des prob
 
 Ce parcours est destiné à l’auteur de contenu AEM Commerce. Ce parcours présente les exigences, les étapes et l’approche à adopter pour démarrer et gérer les pages de catalogue, les modèles ainsi que les expériences produit complètes.
 
-Les informations contenues dans ce parcours peuvent être utiles à d&#39;autres personnes, mais certaines informations sont superflues à certains rôles. Restez à l’affût des prochains parcours couvrant les spécificités des rôles supplémentaires.
+Les informations présentées dans ce parcours peuvent être utiles à d’autres personnes, mais certaines informations sont superflues pour certains rôles. Restez à l’affût des prochains parcours couvrant les spécificités des rôles supplémentaires.
 
 ## Le Parcours {#the-journey}
 
 Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous apportent des connaissances fondamentales et vous proposent un lien vers une documentation technique détaillée.
 
-Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous découvrez AEM Content and Commerce, Adobe vous recommande de commencer au début et de progresser de manière séquentielle.
+Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous découvrez AEM Content et Commerce, Adobe vous recommande de commencer par le début et de progresser de manière séquentielle.
 
 | Numéro | Article | Description |
 |---|---|---|

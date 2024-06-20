@@ -2,9 +2,11 @@
 title: Création d’expériences produit
 description: Découvrez comment créer du contenu de produit qui peut ensuite être utilisé dans divers canaux pour créer une expérience d’achat immersive.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1157'
 ht-degree: 60%
 
 ---
@@ -15,7 +17,7 @@ Découvrez comment gérer les expériences produit.
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours de contenu et de commerce Adobe Experience Manager (AEM), [Gestion des expériences de catalogue de produits étape par étape](staged-catalog.md), vous avez appris à gérer des expériences de catalogue de produits intermédiaires.
+Dans le document précédent du parcours Adobe Experience Manager (AEM) Content and Commerce, [Gestion des expériences de catalogue de produits étape par étape](staged-catalog.md), vous avez appris à gérer des expériences de catalogue de produits intermédiaires.
 
 ## Objectif {#objective}
 
@@ -103,7 +105,7 @@ Si vous avez créé du contenu associé pour ce produit, basculez dans la barre 
 
 ## Fin du parcours ? {#end-of-journey}
 
-Félicitations ! Vous avez terminé le parcours du développeur d’AEM Content and Commerce ! Vous devez maintenant :
+Félicitations. Vous avez terminé le parcours du développeur d’AEM Content and Commerce ! Vous devez maintenant :
 
 * comprendre comment associer n’importe quel contenu AEM à des objets de catalogue de produits ;
 * utiliser des espaces réservés pour enrichir individuellement les pages de produits et de catégories ;

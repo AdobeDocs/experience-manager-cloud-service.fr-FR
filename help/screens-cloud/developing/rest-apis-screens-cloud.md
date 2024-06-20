@@ -1,17 +1,19 @@
 ---
 title: API REST
-description: Screens as a Cloud Service fournit une API RESTful simple conforme à la spécification Siren. Consultez cette page pour savoir comment parcourir la structure de contenu et envoyer des commandes aux périphériques de l’environnement.
+description: Screens as a Cloud Service fournit une API RESTful simple conforme à la spécification Siren. Consultez cette page pour savoir comment parcourir la structure de contenu et envoyer des commandes aux appareils au sein de l’environnement.
 exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+feature: Developing Screens
+role: Admin, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '200'
 ht-degree: 100%
 
 ---
 
 # API REST {#rest-apis}
 
-AEM Screens fournit une API RESTful simple conforme à la spécification [Siren](https://github.com/kevinswiber/siren). Elle vous permet de parcourir la structure de contenu et d’envoyer des commandes aux périphériques au sein de l’environnement.
+AEM Screens fournit une API RESTful simple conforme à la spécification [Siren](https://github.com/kevinswiber/siren). Elle vous permet de parcourir la structure de contenu et d’envoyer des commandes aux appareils au sein de l’environnement.
 
 L’API est accessible à l’adresse suivante : [*http://localhost:4502/api/screens.json*](http://localhost:4502/api/screens.json).
 
@@ -97,7 +99,7 @@ Host: http://localhost:4502
 
 Le code JSON renvoyé par les appels d’API peut contenir la liste des actions disponibles sur la ressource.
 
-L’affichage, par exemple, répertorie une action *broadcast-command* qui permet d’envoyer une commande à tous les périphériques qui lui sont affectés.
+L’affichage, par exemple, répertorie une action *broadcast-command* qui permet d’envoyer une commande à tous les appareils qui lui sont affectés.
 
 ```xml
 GET /api/screens/content/screens/we-retail/locations/demo/flagship/single.json HTTP/1.1
