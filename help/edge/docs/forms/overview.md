@@ -4,10 +4,10 @@ description: Les services AEM Forms Edge Delivery Services sont conçus pour 
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
-workflow-type: ht
+source-git-commit: f69336073addb106cde01d72c921f3b98ff6337a
+workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -17,7 +17,7 @@ Les services AEM Forms Edge Delivery Services constituent un ensemble de serv
 
 Ces services permettent d’effectuer les opérations suivantes :
 
-* **Créer des expériences d’inscription avec les outils de votre choix :** augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur des documents (Microsoft SharePoint ou Google Drive) et la création AEM (éditeur de formulaires adaptatifs). Vous pouvez utiliser plusieurs sources de contenu sur le même site de formulaires et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou l’éditeur de formulaires adaptatifs.
+* **Créer des expériences d’inscription avec les outils de votre choix :** augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur les documents (lecteur Microsoft SharePoint ou Google) et la création WYSIWYG (éditeur de Forms adaptatif). Vous pouvez utiliser plusieurs sources de contenu sur le même site de formulaires et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou l’éditeur de formulaires adaptatifs.
 
 * **Offrir des expériences d’inscription numérique exceptionnelles :** proposez des expériences d’inscription numérique qui se chargent et s’affichent rapidement et surveillez en permanence les performances de vos formulaires grâce à la surveillance de l’utilisation en temps réel (RUM). Des temps de chargement plus rapides et une expérience client optimisée contribuent à des taux d’achèvement de formulaire et de conversion plus élevés.
 
@@ -25,13 +25,13 @@ Ces services permettent d’effectuer les opérations suivantes :
 
 ## Vue d’ensemble d’AEM Forms Edge Delivery Services {#edge-overview}
 
-Les services AEM Forms Edge Delivery Services offrent une grande flexibilité quant à la manière dont vous créez des formulaires sur votre site web. Vous pouvez créer du contenu et des formulaires avec la [création AEM](/help/forms/creating-adaptive-form-core-components.md) ainsi que la [création basée sur des documents](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services fournit un bloc de formulaires, appelé [bloc de formulaires adaptatifs](/help/edge/docs/forms/create-forms.md), pour ajouter un formulaire à votre site Edge Delivery Services.
+Les services AEM Forms Edge Delivery Services offrent une grande flexibilité quant à la manière dont vous créez des formulaires sur votre site web. Vous pouvez créer du contenu et des formulaires avec [Création WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) ainsi que [Création basée sur des documents](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services fournit un bloc de formulaires, appelé [bloc de formulaires adaptatifs](/help/edge/docs/forms/create-forms.md), pour ajouter un formulaire à votre site Edge Delivery Services.
 
 Par exemple, vous créez des formulaires directement dans Microsoft Excel ou Google Sheets et ces feuilles de calcul sont transformées en formulaires pour votre site web. Tout nouveau formulaire ou contenu de formulaire, un nouveau champ de formulaire par exemple, est instantanément disponible sur votre site web sans qu’un processus de reconstruction ne soit nécessaire.
 
-Le diagramme suivant illustre comment modifier des formulaires dans Microsoft Excel ou Google Sheets (création basée sur des documents) et les publier sur Edge Delivery Services. Il présente également la méthode de publication d’AEM à l’aide de l’éditeur de formulaires adaptatifs (création AEM).
+Le diagramme suivant illustre comment modifier des formulaires dans Microsoft Excel ou Google Sheets (création basée sur des documents) et les publier sur Edge Delivery Services. Il affiche également la méthode de publication AEM à l’aide de l’éditeur de Forms adaptatif (création WYSIWYG).
 
-![Publication sur Edge Delivery Services et AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Publication sur Edge Delivery Services et AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
 Les services AEM Forms Edge Delivery Services utilisent GitHub afin que les clientes et les clients puissent gérer et déployer du code directement à partir de leur référentiel GitHub. Par exemple, vous pouvez écrire des formulaires dans [Google Sheets](/help/edge/docs/forms/create-forms.md) ou [Microsoft Excel](/help/edge/docs/forms/create-forms.md) et les composants de vos formulaires peuvent être développés à l’aide de CSS et de JavaScript dans un référentiel GitHub.
 
@@ -39,16 +39,16 @@ Lorsque vos formulaires sont prêts, vous pouvez utiliser [AEM Sidekick](/help/
 
 ![Installation d’AEM Sidekick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-Le choix entre la [création basée sur des documents](#document-based-authoring-features) et la [création AEM](#aem-authoring-features) dépend de vos besoins spécifiques :
+Le choix entre [Création basée sur des documents](#document-based-authoring-features) et [Création WYSIWYG](#wysiwyg-authoring-features) dépend de vos besoins spécifiques :
 
 * Pour les formulaires simples qui ne collectent que des informations de base avec quelques champs (les formulaires de contact, les formulaires de génération de leads ou les formulaires de demande de service, par exemple), et pour lesquels vous avez besoin d’une connectivité aux données rapide à l’aide d’une feuille de calcul, la [création basée sur des documents](#document-based-authoring-features) est le choix idéal. Vous pouvez créer ces formulaires comme vous le feriez pour créer un document dans Google Sheets ou Microsoft Excel.
 
-* Pour les formulaires complexes, tels que les formulaires qui nécessitent plusieurs panneaux, des règles et une logique métier complexes, une manipulation de données, une intégration à des systèmes externes ou des workflows simplifiés à l’aide de fonctionnalités d’AEM, la [création AEM](#aem-authoring-features) est une meilleure option.
+* Pour les formulaires complexes, tels que les formulaires qui nécessitent plusieurs panneaux, des règles complexes et une logique métier, la manipulation de données, l’intégration à des systèmes externes ou des processus simplifiés à l’aide de fonctionnalités d’AEM, [Création WYSIWYG](#wysiwyg-authoring-features) est une meilleure option.
 
 
-### Fonctionnalités clés de la création basée sur des documents et de la création AEM
+### Principales fonctionnalités de création basée sur les documents et de création WYSIWYG
 
-La création basée sur des documents offre un ensemble de fonctionnalités de base et la création AEM déverrouille des fonctionnalités supplémentaires par rapport à la création basée sur des documents, ce qui vous permet de créer des formulaires plus complexes et interactifs. Les principales fonctionnalités de la création basée sur des documents et de la création AEM sont les suivantes :
+La création basée sur les documents offre un ensemble de fonctionnalités de base et la création WYSIWYG déverrouille des fonctionnalités supplémentaires au-delà de la création basée sur les documents , ce qui vous permet de créer des formulaires interactifs et plus complexes. Les principales fonctionnalités de la création basée sur les documents et de la création WYSIWYG sont les suivantes :
 
 #### Fonctionnalités de création basée sur des documents
 
@@ -63,9 +63,9 @@ La création basée sur des documents vous permet de créer des formulaires à l
 * Envoi des données de formulaire directement à Microsoft Excel ou Google Sheets ou à des adresses e-mail.
 * Contrôler les performances de vos formulaires grâce à la surveillance de l’utilisation en temps réel (RUM).
 
-#### Fonctionnalités de création AEM
+#### Fonctionnalités de création WYSIWYG
 
-La création AEM fournit une interface WYSIWYG (éditeur de formulaires adaptatifs) pour la création de formulaires et offre toutes les fonctionnalités de la création basée sur les documents, ainsi qu’un large éventail de fonctionnalités supplémentaires :
+WYSIWYG Authoring fournit une interface WYSIWYG (Adaptive Forms Editor) pour la création de formulaires et offre toutes les fonctionnalités de la création basée sur les documents, ainsi qu’un large éventail de fonctionnalités supplémentaires :
 
 * Éditeur de règles avancé pour créer une logique complexe.
 * Extensibilité côté serveur pour les fonctionnalités personnalisées.
@@ -77,20 +77,20 @@ La création AEM fournit une interface WYSIWYG (éditeur de formulaires adaptati
 * Modèle de données de formulaire (FDM) pour définir la structure des données et les interactions avec diverses sources de données.
 * Possibilité de choisir parmi plusieurs actions d’envoi pour gérer les envois de formulaire, y compris envoyer des données à Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, et de nombreuses autres sources de données.
 
-Essentiellement, la [création AEM](/help/forms/creating-adaptive-form-core-components.md) s’appuie sur les principes fondamentaux de la [création basée sur des documents](/help/edge/docs/forms/create-forms.md), fournissant une boîte à outils plus avancée pour la création et la gestion de formulaires complexes.
+Essentiellement, [Création WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) s&#39;appuie sur les principes fondamentaux de [Création basée sur des documents](/help/edge/docs/forms/create-forms.md), fournissant une boîte à outils plus avancée pour la création et la gestion de formulaires complexes.
 
 >[!NOTE]
 >
 >
-> La fonctionnalité de création d’AEM est disponible dans le cadre du programme d’adoption précoce. Si cela vous intéresse, envoyez un e-mail à l’adresse aem-forms-ea@adobe.com à partir de votre adresse e-mail professionnelle pour demander l’accès à la fonctionnalité.
+> La fonctionnalité de création WYSIWYG est disponible dans le cadre du programme d’adoption précoce. Si cela vous intéresse, envoyez un e-mail à l’adresse aem-forms-ea@adobe.com à partir de votre adresse e-mail professionnelle pour demander l’accès à la fonctionnalité.
 
 ### AEM Forms Edge Delivery Services : création, publication et envoi de formulaires
 
-Les diagrammes suivants illustrent le processus de création, de publication et d’envoi de formulaires à l’aide de la création basée sur des documents et de la création AEM.
+Les diagrammes suivants illustrent le processus de création, de publication et d’envoi de formulaires à l’aide de la création basée sur les documents et de la création WYSIWYG.
 
 ![Création basée sur des documents](/help/edge/assets/document-based-authoring-workflow.png)
 
-![Création AEM](/help/edge/assets/aem-authoring-workflow.png)
+![Création WYSIWYG](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## Commencer à créer des formulaires
 
