@@ -4,10 +4,10 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -103,7 +103,7 @@ Vous trouverez ci-dessous les types de composants que vous pouvez utiliser pour 
 | [Nombre](#number) | `number` |
 | [Groupe de cases](#radio-group) | `radio-group` |
 | [Référence](#reference) | `reference` |
-| [Texte enrichi](#rich-text) | `rich-text` |
+| [Texte enrichi](#rich-text) | `richtext` |
 | [Sélectionner](#select) | `select` |
 | [Onglet](#tab) | `tab` |
 | [Texte](#text) | `text` |
