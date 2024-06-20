@@ -4,9 +4,9 @@ description: Découvrez la recherche et l’indexation de contenu dans AEM as a 
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2449'
 ht-degree: 65%
 
 ---
@@ -85,7 +85,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Tout module de contenu contenant des définitions d’index doit avoir les propriétés suivantes définies dans le fichier de propriétés du module de contenu, situé dans `<package_name>/META-INF/vault/properties.xml`:
+>Les propriétés suivantes doivent être définies pour tout module de contenu contenant des définitions d’index dans la variable `properties.xml` du package de contenu. `properties.xml` est créé par défaut dans un nouveau module et se trouve à l’adresse `<package_name>/META-INF/vault/properties.xml`:
 >
 > * `noIntermediateSaves=true`
 >
