@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1733'
 ht-degree: 24%
 
 ---
@@ -75,9 +75,9 @@ Voici ce que propose le site Conversational Forms :
 Les Forms de conversation sont plus qu&#39;un simple coup d&#39;oeil, elles changent la donne de l&#39;expérience utilisateur.  Augmentez l’engagement, réduisez l’abandon de formulaire et rendez l’interaction avec votre site web plus agréable pour tous.
 
 
-### Création basée sur AEM pour les Edge Delivery Services
+### Création WYSIWYG pour les Edge Delivery Services
 
-La création basée sur AEM fournit une interface WYSIWYG (Adaptive Forms Editor) pour créer et publier ces formulaires sur des Edge Delivery Services. La création basée sur AEM offre toutes les fonctionnalités de [Création basée sur des documents](/help/edge/docs/forms/overview.md#document-based-authoring-features), ainsi qu’un large éventail de fonctionnalités supplémentaires :
+WYSIWYG Authoring fournit des interfaces WYSIWYG (Universal Editor et Adaptive Forms Editor) pour créer et publier des formulaires adaptatifs sur des Edge Delivery Services. WYSIWYG Authoring offre toutes les fonctionnalités de [Création basée sur des documents](/help/edge/docs/forms/overview.md#document-based-authoring-features), ainsi qu’un large éventail de fonctionnalités supplémentaires :
 
 * Éditeur de règles avancé pour créer une logique complexe.
 * Extensibilité côté serveur pour les fonctionnalités personnalisées.
