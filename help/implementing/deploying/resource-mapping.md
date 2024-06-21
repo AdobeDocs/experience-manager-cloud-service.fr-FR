@@ -6,10 +6,11 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 97%
+source-wordcount: '526'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +27,7 @@ Un mappage HTTP possible consiste à préfixer toutes les demandes à `localhost
 
 `localhost:4503/content/we-retail/en/products.html`
 
-accessible à l’aide de :
+Être accessible à l’aide de :
 
 `localhost:4503/we-retail/en/products.html`
 
@@ -48,7 +49,8 @@ Ces listes peuvent être visualisées (ainsi que des informations de configurati
 
 * Configuration indique la configuration actuelle (telle que définie pour le [résolveur de ressource Apache Sling](/help/overview/seo-and-url-management.md#etc-map)). 
 
-* Test de configuration Permet de saisir une URL ou un chemin d’accès à la ressource. Cliquez sur **Résoudre** ou **Mapper** pour confirmer la façon dont le système transforme l’entrée.
+* Test de configuration
+Cela permet de saisir une URL ou un chemin d’accès vers la ressource. Cliquez sur **Résoudre** ou **Mapper** pour confirmer la façon dont le système transforme l’entrée.
 
 * **Resolver Map Entries (Entrées de mappage du résolveur)** La liste des entrées utilisées par les méthodes ResourceResolver.resolve pour mapper les URL aux ressources. 
 
@@ -78,7 +80,7 @@ De nouvelles définitions de mappage sont créées dans le référentiel.
 
 >[!NOTE]
 >
->Il existe de nombreuses ressources disponibles qui permettent d’expliquer comment définir les expressions régulières ; par exemple, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Il existe de nombreuses ressources disponibles qui permettent d’expliquer comment définir les expressions régulières. Par exemple, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Création de définitions de mappage dans AEM {#creating-mapping-definitions-in-aem}
 

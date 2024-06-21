@@ -2,7 +2,9 @@
 title: Générer des variations
 description: En savoir plus sur la génération de variations, accessible à partir d’AEM as a Cloud Service et du Sidekick des Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
+feature: Generate Variations
+role: Admin, Architect, Developer
+source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -380,7 +382,7 @@ Par exemple, pour ajouter une audience à partir d’un fichier sur Google Drive
 1. Dans Google Drive, créez un fichier de feuille de calcul comportant deux colonnes :
    1. La première colonne s’affiche dans la liste déroulante.
    1. La deuxième colonne correspond à la description de l’audience.
-1. Publiez le fichier :
+1. Publish du fichier :
    1. Fichier -> Partager -> publier sur le web -> CSV
 1. Copiez l’URL dans le fichier publié.
 1. Accédez à Générer des variations.

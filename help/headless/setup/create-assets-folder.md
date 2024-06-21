@@ -2,10 +2,12 @@
 title: Création d’un dossier de ressources - Configuration découplée
 description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 83%
+ht-degree: 86%
 
 ---
 
@@ -43,7 +45,7 @@ Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pou
 
    ![Fenêtre de confirmation](../assets/assets-folder-confirmation.png)
 
-Vous pouvez créer des sous-dossiers supplémentaires dans le dossier que vous avez créé. Les sous-dossiers hériteront de la **configuration du cloud** du dossier parent. Il peut toutefois être remplacé si vous souhaitez utiliser des modèles d’une autre configuration.
+Vous pouvez créer des sous-dossiers supplémentaires dans le dossier que vous venez de créer. Les sous-dossiers hériteront de la **configuration du cloud** du dossier parent. Il peut toutefois être remplacé si vous souhaitez utiliser des modèles d’une autre configuration.
 
 Si vous utilisez une structure de site localisée, vous pouvez [créer une racine de langue](/help/assets/translate-assets.md) sous votre nouveau dossier.
 

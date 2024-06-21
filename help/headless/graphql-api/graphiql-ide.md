@@ -1,12 +1,13 @@
 ---
 title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -21,13 +22,13 @@ Une mise en œuvre de l’IDE [GraphQL](https://graphql.org/learn/serving-over-h
 >Dans les versions précédentes, un package était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut désormais être supprimé.
 
 >[!NOTE]
->Vous devez avoir [configuré vos points d’entrée](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) avant d’utiliser l’IDE GraphiQL.
+>Vous devez avoir [configuré vos points d’entrée](/help/headless/graphql-api/graphql-endpoint.md) dans l’[explorateur de configuration](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) avant d’utiliser l’IDE GraphiQL.
 
-La variable **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant :
+L’outil **GraphiQL** permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :
 * sélectionner le **Point d’entrée** approprié pour la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
 * saisir directement de nouvelles requêtes ;
 * créer et accéder aux **[Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md)** ;
-* Exécutez vos requêtes pour afficher immédiatement les résultats.
+* exécuter vos requêtes pour afficher immédiatement les résultats ;
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
 * publier ou dépublier, **Requêtes persistantes**, sur votre service de **Publication** ou de **Prévisualisation** ; par exemple, vers/depuis `dev-publish` ;
@@ -36,7 +37,7 @@ La variable **GraphiQL** vous permet de tester et de déboguer vos requêtes Gra
 
 Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
-* **Outils** > **Général** > **Éditeur de requêtes GraphQL**
+* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
 * directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
@@ -87,7 +88,7 @@ Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la 
 
 ## Variables de requête {#query-variables}
 
-L’IDE GraphiQL vous permet également de gérer votre [Variables de requête](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+L’IDE GraphiQL vous permet également de gérer vos [variables de requête](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Par exemple :
 
@@ -154,7 +155,7 @@ La requête sera alors désactivée à partir de l’environnement que vous sél
 
 ## Copie de l’URL pour accéder directement à la requête {#copy-url}
 
-La variable **Copier l’URL** permet de simuler une requête, en copiant l&#39;URL utilisée pour accéder directement à la requête conservée et visualiser les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
+L’option **Copier l’URL** vous permet de simuler une requête en copiant l’URL utilisée pour accéder directement à la requête persistante et consulter les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
 
 <!--
   >[!NOTE]

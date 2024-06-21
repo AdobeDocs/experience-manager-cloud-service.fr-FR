@@ -3,8 +3,9 @@ title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu headless dans AEM, ce qui vous permet de créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
-role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+role: User, Admin, Architect
+solution: Experience Manager Sites
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '3011'
 ht-degree: 90%

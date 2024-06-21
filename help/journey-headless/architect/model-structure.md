@@ -3,10 +3,10 @@ title: En savoir plus sur la création de modèles de fragment de contenu dans A
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 100%
 

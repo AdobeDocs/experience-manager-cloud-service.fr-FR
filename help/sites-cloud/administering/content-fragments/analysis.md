@@ -4,10 +4,11 @@ description: Comprenez la structure de vos fragments de contenu. Vous obtenez ai
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -26,7 +27,7 @@ La structure à plusieurs niveaux est construite à l’aide de Références :
    * [Gérer ces références](/help/sites-cloud/administering/content-fragments/authoring.md##manage-references)
    * [Recherche des références parentes de votre fragment](/help/sites-cloud/administering/content-fragments/managing.md#parent-references-fragment)
 
-## Arborescence de structure {#structure-tree}
+## Arborescence de la structure {#structure-tree}
 
 Ouvrez le **Arborescence de structure** de la barre d’outils de l’éditeur pour afficher la structure hiérarchique du fragment de contenu et ses références. Utilisez l’icône de lien pour ouvrir les références.
 

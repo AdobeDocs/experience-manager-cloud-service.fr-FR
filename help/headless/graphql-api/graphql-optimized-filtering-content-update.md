@@ -2,20 +2,22 @@
 title: Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.
 description: Découvrez comment mettre à jour vos fragments de contenu pour le filtrage GraphQL optimisé dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu découplée.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 59%
+ht-degree: 63%
 
 ---
 
-# Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé. {#updating-content-fragments-for-optimized-graphql-filtering}
+# Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé {#updating-content-fragments-for-optimized-graphql-filtering}
 
 Pour optimiser les performances de vos filtres GraphQL, exécutez une procédure pour mettre à jour vos fragments de contenu.
 
 >[!NOTE]
 >
->Après avoir mis à jour vos fragments de contenu, vous pouvez suivre les recommandations relatives à la [Optimisation des requêtes GraphQL](/help/headless/graphql-api/graphql-optimization.md).
+>Après avoir mis à jour vos fragments de contenu, vous pouvez suivre les recommandations relatives à l’[Optimisation des requêtes GraphQL](/help/headless/graphql-api/graphql-optimization.md).
 
 
 ## Conditions préalables {#prerequisites}
@@ -28,7 +30,7 @@ Il existe des conditions préalables pour cette tâche :
 
    * au minimum, la variable `Deployment Manager` dans Cloud Manager est requis.
 
-## Mise à jour des fragments de contenu. {#updating-content-fragments}
+## Mise à jour des fragments de contenu {#updating-content-fragments}
 
 1. Activez la mise à jour en définissant les variables suivantes pour votre instance à l’aide de l’interface utilisateur de Cloud Manager :
 
@@ -234,9 +236,9 @@ Par conséquent, la présence de cette propriété, sur le nœud JCR `/content/d
 
      >[!NOTE]
      >
-     >La procédure met à jour les fragments de contenu sur les instances d’auteur et de publication.
+     >La procédure met à jour les fragments de contenu sur les instances d’auteur et de Publish.
      >
-     >Par conséquent, Adobe vous recommande d’effectuer la vérification par le biais de l’explorateur de référentiel pour *au moins* un auteur *et* une instance de publication.
+     >Par conséquent, Adobe vous recommande d’effectuer la vérification par le biais de l’explorateur de référentiel pour *au moins* un auteur *et* une instance Publish.
 
 ## Limites {#limitations}
 

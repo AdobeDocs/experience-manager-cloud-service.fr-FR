@@ -3,10 +3,12 @@ title: Présentation de Headless pour AEM
 description: Découvrez Headless dans Adobe Experience Manager (AEM) avec une combinaison de documentation détaillée et de parcours headless. Découvrez comment des fonctionnalités telles que les modèles de fragment de contenu, les fragments de contenu et une API GraphQL sont utilisées pour créer des expériences découplées.
 landing-page-description: Apprenez comment utiliser et administrer Headless dans Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 98%
+source-wordcount: '694'
+ht-degree: 100%
 
 ---
 
@@ -63,7 +65,7 @@ Plusieurs ressources sont disponibles pour commencer à utiliser les fonctionnal
 
 ## Comparaison entre couplage et découplage {#headful-headless}
 
-Ce guide se concentre sur le modèle de mise en œuvre entièrement découplée d’AEM. Cependant, l’affichage tête contre tête n’a pas besoin d’être un choix binaire dans AEM. Vous pouvez utiliser des fonctionnalités découplées afin de gérer et diffuser du contenu vers plusieurs points de contact tout en permettant aux auteurs de contenu de modifier des applications sur une seule page. Le tout dans AEM.
+Ce guide se concentre sur le modèle de mise en œuvre entièrement découplée d’AEM. Pour autant, le choix entre couplage et découplage n’est pas nécessairement binaire dans AEM. Vous pouvez utiliser des fonctionnalités découplées afin de gérer et diffuser du contenu vers plusieurs points de contact tout en permettant aux auteurs de contenu de modifier des applications sur une seule page. Le tout dans AEM.
 
 >[!TIP]
 >

@@ -3,13 +3,14 @@ title: Diffusion de contenu découplée à l’aide de fragments de contenu avec
 description: Découvrez les concepts de base de la réalisation d’un CMS AEM découplé à l’aide de fragments de contenu avec GraphQL pour la diffusion de contenu découplé.
 feature: Content Fragments, GraphQL API
 role: Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '737'
 ht-degree: 95%
 
 ---
-
 
 # Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
@@ -106,7 +107,7 @@ Pour faciliter l’analyse, AEM propose plusieurs méthodes d’affichage de la 
 
 Voir [Analyse de la structure de fragments de contenu](/help/sites-cloud/administering/content-fragments/analysis.md) pour plus d’informations :
 
-* [Arborescence de structure](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
+* [Arborescence de la structure](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 
 ## Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 

@@ -2,9 +2,9 @@
 title: Référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 98%

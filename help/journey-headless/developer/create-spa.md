@@ -3,10 +3,10 @@ title: 'Facultatif : comment créer des applications monopages (SPA) avec Adobe
 description: Dans cette suite facultative du parcours de développement découplé AEM, vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%
 

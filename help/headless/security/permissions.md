@@ -1,9 +1,10 @@
 ---
 title: Considérations relatives aux autorisations pour le contenu découplé
 description: Découvrez les différentes considérations relatives aux autorisations et aux listes de contrôle d’accès pour une mise en œuvre découplée avec Adobe Experience Manager. Découvrez les différentes personnes et les niveaux d’autorisation potentiels nécessaires pour les environnements de création et de publication.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 96%

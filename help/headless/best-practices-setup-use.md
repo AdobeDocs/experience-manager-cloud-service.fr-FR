@@ -2,10 +2,12 @@
 title: Bonnes pratiques pour la configuration et l’utilisation d’AEM GraphQL avec des fragments de contenu
 description: Découvrez les bonnes pratiques recommandées pour la configuration et l’utilisation d’AEM GraphQL avec des fragments de contenu.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 36%
+source-wordcount: '702'
+ht-degree: 40%
 
 ---
 
@@ -13,11 +15,11 @@ ht-degree: 36%
 
 Ces instructions résument les bonnes pratiques recommandées pour configurer, configurer et utiliser AEM avec GraphQL et les fragments de contenu.
 
-## Prise en main {#getting-started}
+## Commencer {#getting-started}
 
 Pour vous aider à vous mettre à niveau :
 
-* [Que désigne l’expression « Headless » ?](/help/headless/what-is-headless.md)
+* [Qu&#39;est-ce que l&#39;absence de tête ?](/help/headless/what-is-headless.md)
 * Présentation des différents environnements de l’AEM [Architecture](/help/headless/deployment/architecture.md)
 
 ## Configuration {#setup}
@@ -51,7 +53,7 @@ Pour :
 >[!NOTE]
 >Si la mise en cache dans Dispatcher est activée, la fonction [Configuration CORS](#cors-setup) n’est pas nécessaire et peut donc être ignoré.
 
-La mise en cache des requêtes persistantes n’est pas activée par défaut dans Dispatcher. L’activation par défaut n’est pas possible, car les clients qui utilisent le partage de ressources cross-origin (CORS) avec plusieurs origines doivent examiner et éventuellement mettre à jour leur configuration Dispatcher.
+La mise en cache des requêtes persistantes n’est pas activée par défaut dans Dispatcher. L’activation par défaut n’est pas possible, car les clients ou clientes qui utilisent le partage de ressources entre origines multiples (CORS) doivent examiner et éventuellement mettre à jour la configuration de Dispatcher.
 
 #### Détails {#details-dispatcher-caching}
 
@@ -61,14 +63,14 @@ La mise en cache des requêtes persistantes n’est pas activée par défaut dan
 
 Dispatcher est généralement configuré pour :
 
-* Publier : production
+* Publish : production
 
 ### Configuration CORS {#cors-setup}
 
 >[!NOTE]
 >Si la mise en cache dans la variable [AEM Dispatcher](#dispatcher-caching) est activée, la configuration CORS n’est pas nécessaire. Cette section peut donc être ignorée.
 
-Pour accéder au point d’entrée GraphQL, une politique CORS doit être configurée et ajoutée à un projet AEM qui soit déployé vers AEM via Cloud Manager. Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités.
+Pour accéder au point de terminaison GraphQL, une stratégie CORS doit être configurée et ajoutée à un projet AEM déployé sur AEM via Cloud Manager. Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités.
 
 #### Détails {#details-cors-setup}
 
@@ -78,11 +80,11 @@ Pour accéder au point d’entrée GraphQL, une politique CORS doit être config
 
 La norme CORS est généralement configurée pour :
 
-* Publier : production
+* Publish : production
 
 ### Authentification {#authentication}
 
-Un des principaux cas d’utilisation de l’API Adobe Experience Manager as a Cloud Service (AEM) GraphQL pour la diffusion de fragments de contenu consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes à distance peuvent nécessiter un accès authentifié à l’API afin de sécuriser la diffusion de contenu découplé.
+Un cas d’utilisation principal de l’API GraphQL Adobe Experience Manager as a Cloud Service (AEM) pour la diffusion de fragments de contenu consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes à distance peuvent nécessiter un accès authentifié à l’API afin de sécuriser la diffusion de contenu découplé.
 
 #### Détails {#details-authentication}
 
@@ -123,19 +125,19 @@ Pour :
 * Tests
 * Production
 
-### Utilisation d’un réseau de diffusion de contenu (CDN) {#cdn}
+### Utiliser un réseau de diffusion de contenu (CDN) {#cdn}
 
-Les requêtes GraphQL et leurs réponses JSON peuvent être mises en cache si elles sont ciblées comme `GET` lors de l’utilisation d’un réseau de diffusion de contenu. En revanche, les demandes non mises en cache peuvent être très (ressources) coûteuses et lentes à traiter, avec des effets potentiellement néfastes supplémentaires sur les ressources de l’origine.
+Les requêtes GraphQL et leurs réponses JSON peuvent être mises en cache si elles sont ciblées comme requêtes `GET` lors de l’utilisation d’un réseau CDN. En revanche, les requêtes non mises en cache peuvent être très coûteuses (en ressources) et lentes à traiter, avec des effets potentiellement néfastes supplémentaires sur les ressources de l’origine.
 
 #### Détails {#details-cdn}
 
-[Réseau de diffusion de contenu dans AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
+[Réseau CDN dans AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
 
 #### Environnements {#environments-cdn}
 
 Un réseau de diffusion de contenu est généralement configuré pour :
 
-* Publier : production
+* Publish : production
 
 ### Configuration et création de fragments de contenu {#cconfigure-create-content-fragments}
 
@@ -144,7 +146,7 @@ AEM GraphQL est utilisé pour récupérer des informations de vos fragments de c
 #### Détails {#details-content-fragments}
 
 * [Création d’une configuration](/help/headless/setup/create-configuration.md)
-* [Créer un modèle de fragment de contenu](/help/headless/setup/create-content-model.md)
+* [Création d’un modèle de fragment de contenu](/help/headless/setup/create-content-model.md)
 * [Créer un dossier de ressources](/help/headless/setup/create-assets-folder.md)
 * [Créer et modifier vos fragments de contenu](/help/headless/setup/create-content-fragment.md)
 
@@ -170,7 +172,7 @@ Ces instructions sont fournies pour vous aider à éviter les problèmes de perf
 
 #### Détails {#details-optimize-graphql-queries}
 
-[Optimisation des requêtes GraphQL.](/help/headless/graphql-api/graphql-optimization.md)
+[Optimisation des requêtes GraphQL](/help/headless/graphql-api/graphql-optimization.md)
 
 >[!NOTE]
 >

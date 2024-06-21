@@ -1,11 +1,12 @@
 ---
 title: Configuration du point de terminaison Dispatcher avec AEM sans affichage
 description: Dispatcher est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont utilisées pour ouvrir les points d’entrée GraphQL aux applications découplées.
-feature: Dispatcher, GraphQL API
+feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 94%
 
 ---

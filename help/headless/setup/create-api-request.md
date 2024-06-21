@@ -2,10 +2,12 @@
 title: Création d’une requête API - Configuration découplée
 description: Découvrez comment utiliser l’API GraphQL pour une diffusion découplée du contenu du fragment de contenu et l’API REST AEM Assets pour gérer les fragments de contenu.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +25,7 @@ Découvrez comment utiliser l’API GraphQL pour une diffusion découplée du co
 
 >[!NOTE]
 >
->La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+>Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
 Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.
 
@@ -106,4 +108,4 @@ C’est terminé ! Vous possédez maintenant une compréhension de base de la g
 
 >[!NOTE]
 >
->La variable [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
+>Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.

@@ -1,9 +1,10 @@
 ---
 title: Architecture AEM découplée
 description: Découvrez l’architecture de haut niveau d’Adobe Experience Manager pour un déploiement découplé. Découvrez le rôle des services de création, de prévisualisation et de publication AEM et le modèle de déploiement recommandé pour les applications découplées.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%

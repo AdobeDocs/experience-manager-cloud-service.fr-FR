@@ -2,7 +2,9 @@
 title: Création de fragments de contenu - Configuration découplée
 description: Découvrez comment utiliser les fragments de contenu AEM pour concevoir, créer, organiser et utiliser du contenu indépendant des pages pour une diffusion découplée.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 85%

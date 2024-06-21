@@ -3,10 +3,10 @@ title: Tout assembler – Votre application et votre contenu dans AEM découplé
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment aborder votre projet AEM, notamment les fragments de contenu, les appels GraphQL, les appels API REST et votre application, mais aussi comment préparer ce projet pour la mise en ligne.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 100%
 

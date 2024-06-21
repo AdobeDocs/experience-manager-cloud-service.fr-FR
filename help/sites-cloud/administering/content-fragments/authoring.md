@@ -4,7 +4,8 @@ description: Découvrez comment créer du contenu pour vos fragments de contenu 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: ec0129b0087e86f50c6c1e65d5445693e63278e0
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2668'
 ht-degree: 7%
@@ -469,7 +470,7 @@ Pour utiliser cette fonctionnalité, vous devez d’abord :
 
 Une fois l’URL définie, la variable **Aperçu** est actif. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin de générer le fragment de contenu.
 
-## Publication du fragment {#publish-content-fragment}
+## Publish de votre fragment {#publish-content-fragment}
 
 Vous pouvez **Publier** votre fragment dans :
 

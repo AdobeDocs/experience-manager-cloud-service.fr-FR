@@ -3,9 +3,9 @@ title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 92%

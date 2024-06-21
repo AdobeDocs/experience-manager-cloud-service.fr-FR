@@ -4,10 +4,11 @@ description: Examinez ces points importants avant de définir vos politiques de 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 57%
+ht-degree: 46%
 
 ---
 
@@ -24,7 +25,7 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 1. **Le fragment de contenu en tant qu’entité unique.**
 
    * **Cas pratique**: un utilisateur qui doit modifier/mettre à jour un fragment de contenu - **et supprimer un fragment entier**.
-   * **Autorisations** : l’autorisation Supprimer peut être attribuée à l’aide de la gestion des utilisateurs et des groupes.
+   * **Autorisations**: l’autorisation Supprimer peut être affectée via la gestion des utilisateurs et/ou des groupes.
 
 2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variations, les sous-noeuds.**
 
@@ -35,7 +36,7 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 
 >[!NOTE]
 >
->Voir également Contrôle des opérations de gestion des utilisateurs dans AEM.
+>Voir aussi Contrôle des opérations de gestion des utilisateurs dans AEM.
 
 ## Autorisations requises pour la fonctionnalité d’éditeur uniquement {#permissions-required-for-editor-functionality-only}
 
@@ -71,7 +72,7 @@ Les conditions préalables aux autorisations pour permettre à un utilisateur et
 
 * Pour le nœud `jcr:content` de tous les fragments de contenu :
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`, and `jcr:removeChildNodes`
+   * `jcr:addChildNodes`, `jcr:modifyProperties`, et `jcr:removeChildNodes`
 
 * Pour tous les nœuds situés sous `jcr:content` de tous les fragments de contenu :
 

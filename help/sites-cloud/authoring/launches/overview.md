@@ -3,9 +3,9 @@ title: Lancements
 description: Les lancements vous permettent de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Launches
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 94%

@@ -4,7 +4,8 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '3209'
 ht-degree: 58%
@@ -110,7 +111,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
    >
    >Lorsqu’un champ est défini comme **Obligatoire**, la variable **Libellé** indiqué dans le volet de gauche est marqué d’un astérisque (**&#42;**).
 
-![Propriétés.](assets/cf-cfmodels-empty-model.png)
+![Propriétés](assets/cf-cfmodels-empty-model.png)
 
 1. **Pour ajouter un champ**
 

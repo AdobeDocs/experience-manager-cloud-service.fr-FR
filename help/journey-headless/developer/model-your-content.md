@@ -3,10 +3,10 @@ title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement Adobe Experience Manager (AEM) Headless, apprenez à modéliser votre contenu pour une diffusion AEM Headless à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
 
