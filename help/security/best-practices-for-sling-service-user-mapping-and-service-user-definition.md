@@ -4,8 +4,8 @@ description: Découvrir les bonnes pratiques pour le mappage des utilisateurs et
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 100%
 
@@ -189,7 +189,7 @@ Exemples pour `userproperties-copy-service` :
 * Réduire la portée
 
    * Placez des politiques de contrôle d’accès dans des sous-arborescences spécifiques aux fonctionnalités.
-   * En cas d’éléments distribués : utilisez des restrictions pour limiter la portée (consultez [la documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) pour la liste des restrictions intégrées).
+   * En cas d’éléments distribués : utilisez des restrictions pour limiter la portée (consultez [la documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) pour la liste des restrictions intégrées).
 
 * Garantir la cohérence
 

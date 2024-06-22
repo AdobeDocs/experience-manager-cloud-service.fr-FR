@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2023.6.0 d’ [!DNL Adobe Expe
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '1322'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -128,7 +128,7 @@ La vue Assets vous permet désormais d’[ajouter des composants de propriété 
 
 * [Méthodes d’authentification améliorées pour le modèle de données de formulaire](/help/forms/configure-data-sources.md) : une sécurité renforcée grâce à l’introduction de l’authentification basée sur les informations d’identification client pour connecter AEM Forms à des sources de données compatibles. Cette amélioration élimine le besoin d’emprunt d’identité ou de connexion de l’utilisateur ou de l’utilisatrice, renforçant ainsi la protection de vos données.
 
-* [Formulaires adaptatifs avec des sections répétables](/help/forms/create-forms-repeatable-sections.md) : vous pouvez désormais créer des composants [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr), [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html#features?lang=fr), et [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr) dans un formulaire adaptatif basé sur les composants principaux pour créer des sections répétables.
+* [Formulaires adaptatifs avec des sections répétables](/help/forms/create-forms-repeatable-sections.md) : vous pouvez désormais créer des composants [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr), [Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), et [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr) dans un formulaire adaptatif basé sur les composants principaux pour créer des sections répétables.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
