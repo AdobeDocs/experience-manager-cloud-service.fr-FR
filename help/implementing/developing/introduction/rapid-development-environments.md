@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
+source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
 workflow-type: tm+mt
-source-wordcount: '4244'
-ht-degree: 47%
+source-wordcount: '4215'
+ht-degree: 48%
 
 ---
 
@@ -223,11 +223,6 @@ Cependant, avec une coordination étroite, il est possible pour plusieurs dével
 
 
 ### Indicateurs globaux {#global-flags}
-
->[!NOTE]
->
-> Ces indicateurs globaux ne sont pas encore disponibles. Elles seront déployées au mois de juin.
-> 
 
 * Pour une sortie moins détaillée, utilisez l’indicateur quiet :
 
@@ -565,11 +560,6 @@ Vous pouvez également réinitialiser le RDE à l’aide du bouton représentant
 Pour plus d’informations sur la gestion de vos environnements à l’aide de Cloud Manager, consultez [la documentation de Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Commandes prenant en charge la sortie JSON {#json-commands}
-
->[!NOTE]
->
-> Ces commandes ne sont pas encore disponibles. Elles seront déployées au mois de juin.
-> 
 
 La plupart des commandes prennent en charge le ```--json``` Indicateur qui supprime la sortie de la console et renvoie un fichier json valide à traiter dans les scripts. Vous trouverez ci-dessous quelques commandes prises en charge, avec des exemples de sortie json.
 
