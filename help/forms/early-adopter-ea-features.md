@@ -1,31 +1,31 @@
 ---
-title: Fonctionnalités actuelles de l’adoption précoce de [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Fonctionnalités actuelles de l’adoption précoce de [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: Fonctionnalités actuelles d’accès anticipé de [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: Fonctionnalités actuelles d’accès anticipé de [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 0c49e0ba5deb3659418cb0d057151863beac5340
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 24%
 
 ---
 
-# Programme d’adoption précoce d’AEM Forms
+# Programme d’accès anticipé AEM Forms
 
-Le programme d’adoption précoce d’AEM Forms vous offre une occasion unique d’accéder de manière exclusive à des fonctionnalités de pointe avant tout le monde et d’aider à façonner leur développement. Le programme vous offre les possibilités suivantes :
+Le programme d’accès anticipé d’AEM Forms vous offre une occasion unique d’accéder de manière exclusive à des fonctionnalités de pointe avant tout le monde et de contribuer à façonner leur développement. Le programme vous offre les possibilités suivantes :
 
 * Soyez parmi les premiers à avoir accès à des technologies de pointe avant qu&#39;elles ne touchent le grand public.
 * Co-innovez avec l’équipe produit, façonnant ensemble l’avenir du produit. Utilisez vos cas d’utilisation pour guider le développement, en veillant à ce que l’innovation soit mature et réponde à vos défis du monde réel.
 * Faites part de vos commentaires et aidez-nous à résoudre les problèmes avant le lancement, afin d’offrir une expérience utilisateur plus fluide lors de la mise à jour complète.
 
-## Comment participer au programme Adopteur anticipé ?
+## Comment participer au programme Accès anticipé ?
 
-Si vous souhaitez rejoindre notre programme d&#39;adoption précoce pour n&#39;importe quelle innovation d&#39;adoption précoce, envoyez simplement un email depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  pour demander l’accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
+Si vous souhaitez participer à notre programme Accès anticipé pour toute innovation en matière d’accès anticipé, envoyez simplement un courriel de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  pour demander l’accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
 
-## Innovations initiales des adopteurs
+## Innovations en accès anticipé
 
 ### AEM Forms Generative AI (Gen AI)
 
@@ -102,7 +102,7 @@ En rationalisant le processus de transfert de données, le connecteur peut vous 
 Essentiellement, AEM Forms to Marketo Connector vous aide à tirer parti des avantages des deux plateformes pour créer un entonnoir marketing plus efficace.
 
 
-## Autres innovations en matière d’Adopteurs anticipés
+## Autres innovations d’accès anticipé
 
 ### Prise en charge des langues écrites de droite à gauche (RTL)
 
