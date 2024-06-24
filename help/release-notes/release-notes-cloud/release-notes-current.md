@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
+source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -122,12 +122,12 @@ Cette version introduit une mise à niveau significative de l’éditeur de règ
 
 
 
-### Fonctionnalités d’adoption précoce dans AEM Forms {#forms-new-early-adopter-features}
+### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-access-adopter-features}
 
-Le programme d’adoption précoce d’AEM Forms vous offre une opportunité unique d’accéder de manière exclusive à des innovations de pointe avant toute autre personne et de contribuer à façonner leur développement.
+Le programme d’accès anticipé d’AEM Forms vous offre une occasion unique d’accéder de manière exclusive à des innovations de pointe avant n’importe qui d’autre et d’aider à façonner leur développement.
 Le programme offre l’accès à de multiples innovations.
 
-Les notes de mise à jour répertorient les innovations apportées à la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme d’adoption précoce, voir [Documentation du programme d’adoption précoce d’AEM Forms](/help/forms/early-adopter-ea-features.md).
+Les notes de mise à jour répertorient les innovations apportées à la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme Accès anticipé, voir [Documentation du programme d’accès anticipé AEM Forms](/help/forms/early-access-ea-features.md).
 
 #### Amélioration des méthodes de protection des robots
 
@@ -152,7 +152,7 @@ Le service Forms génère des formulaires PDF interactifs pour la capture de don
 
 >[!IMPORTANT]
 >
-> Si vous souhaitez rejoindre notre programme d’adoption précoce pour n’importe quelle innovation d’adoption précoce, envoyez simplement un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) pour demander l’accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
+> Si vous souhaitez participer à notre programme Accès anticipé pour toute innovation en matière d’accès anticipé, envoyez simplement un courriel de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) pour demander l’accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
 
 
 ## Principes de base d’[!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
@@ -174,7 +174,7 @@ Les [environnements de développement rapide (RDE)](/help/implementing/developin
 
 #### Prise en charge de RDE pour le code en front-end à l’aide des thèmes et modèles de site {#rde-frontend}
 
-Les [RDE prennent désormais en charge le code en front-end](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les utilisateurs et utilisatrices bénéficiant de l’adoption précoce. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+[Les RDE prennent désormais en charge le code frontal.](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) basé sur [thèmes du site](/help/sites-cloud/administering/site-creation/site-themes.md) et [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les premiers adoptants. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
 #### Amélioration de la journalisation des RDE {#rde-logging}
 
