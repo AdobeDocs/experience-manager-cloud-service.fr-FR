@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Les services AEM Forms Edge Delivery Services constituent un ensemble de serv
 
 Ces services permettent d’effectuer les opérations suivantes :
 
-* **Créer des expériences d’inscription avec les outils de votre choix :** augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur les documents (lecteur Microsoft SharePoint ou Google), la création WYSIWYG (éditeur universel ou éditeur de Forms adaptatif). Vous pouvez utiliser plusieurs sources de contenu sur le même site de formulaires et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets, Universal Editor ou Adaptive Forms Editor.
+* **Créer des expériences d’inscription avec les outils de votre choix :** augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur des documents (Microsoft SharePoint ou Google Drive) et la création WYSIWYG (éditeur universel ou éditeur de formulaires adaptatifs). Vous pouvez utiliser plusieurs sources de contenu sur le même site de formulaires et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets, l’éditeur unversel ou l’éditeur de formulaires adaptatifs.
 
 * **Offrir des expériences d’inscription numérique exceptionnelles :** proposez des expériences d’inscription numérique qui se chargent et s’affichent rapidement et surveillez en permanence les performances de vos formulaires grâce à la surveillance de l’utilisation en temps réel (RUM). Des temps de chargement plus rapides et une expérience client optimisée contribuent à des taux d’achèvement de formulaire et de conversion plus élevés.
 
@@ -25,11 +25,11 @@ Ces services permettent d’effectuer les opérations suivantes :
 
 ## Vue d’ensemble d’AEM Forms Edge Delivery Services {#edge-overview}
 
-Les services AEM Forms Edge Delivery Services offrent une grande flexibilité quant à la manière dont vous créez des formulaires sur votre site web. Vous pouvez créer du contenu et des formulaires avec [Création WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) ainsi que [Création basée sur des documents](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services fournit un bloc de formulaires, appelé [bloc de formulaires adaptatifs](/help/edge/docs/forms/create-forms.md), pour ajouter un formulaire à votre site Edge Delivery Services.
+Les services AEM Forms Edge Delivery Services offrent une grande flexibilité quant à la manière dont vous créez des formulaires sur votre site web. Vous pouvez créer du contenu et des formulaires avec la [création WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) ainsi que la [création basée sur des documents](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services fournit un bloc de formulaires, appelé [bloc de formulaires adaptatifs](/help/edge/docs/forms/create-forms.md), pour ajouter un formulaire à votre site Edge Delivery Services.
 
 Par exemple, vous créez des formulaires directement dans Microsoft Excel ou Google Sheets et ces feuilles de calcul sont transformées en formulaires pour votre site web. Tout nouveau formulaire ou contenu de formulaire, un nouveau champ de formulaire par exemple, est instantanément disponible sur votre site web sans qu’un processus de reconstruction ne soit nécessaire.
 
-Le diagramme suivant illustre comment modifier des formulaires dans Microsoft Excel ou Google Sheets (création basée sur des documents) et les publier sur Edge Delivery Services. Il affiche également la méthode de publication AEM à l’aide de la création WYSIWYG (Universal Editor ou Adaptive Forms Editor).
+Le diagramme suivant illustre comment modifier des formulaires dans Microsoft Excel ou Google Sheets (création basée sur des documents) et les publier sur Edge Delivery Services. Il présente également la méthode de publication d’AEM à l’aide de la création WYSIWYG (éditeur universel ou éditeur de formulaires adaptatifs).
 
 ![Publication sur Edge Delivery Services et AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -39,16 +39,16 @@ Lorsque vos formulaires sont prêts, vous pouvez utiliser [AEM Sidekick](/help/
 
 ![Installation d’AEM Sidekick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-Le choix entre [Création basée sur des documents](#document-based-authoring-features) et [Création WYSIWYG](#wysiwyg-authoring-features) dépend de vos besoins spécifiques :
+Le choix entre la [création basée sur des documents](#document-based-authoring-features) et la [création WYSIWYG ](#wysiwyg-authoring-features) dépend de vos besoins spécifiques :
 
 * Pour les formulaires simples qui ne collectent que des informations de base avec quelques champs (les formulaires de contact, les formulaires de génération de leads ou les formulaires de demande de service, par exemple), et pour lesquels vous avez besoin d’une connectivité aux données rapide à l’aide d’une feuille de calcul, la [création basée sur des documents](#document-based-authoring-features) est le choix idéal. Vous pouvez créer ces formulaires comme vous le feriez pour créer un document dans Google Sheets ou Microsoft Excel.
 
-* Pour les formulaires complexes, tels que les formulaires qui nécessitent plusieurs panneaux, des règles complexes et une logique métier, la manipulation de données, l’intégration à des systèmes externes ou des processus simplifiés à l’aide de fonctionnalités d’AEM, [Création WYSIWYG](#wysiwyg-authoring-features) est une meilleure option.
+* Pour les formulaires complexes, tels que les formulaires qui nécessitent plusieurs panneaux, des règles et une logique commerciale complexes, une manipulation de données, une intégration à des systèmes externes ou des workflows simplifiés à l’aide de fonctionnalités d’AEM, la [création WYSIWYG](#wysiwyg-authoring-features) est une meilleure option.
 
 
-### Principales fonctionnalités de création basée sur les documents et de création WYSIWYG
+### Fonctionnalités clés de la création basée sur des documents et de la création WYSIWYG
 
-La création basée sur les documents offre un ensemble de fonctionnalités de base et la création WYSIWYG déverrouille des fonctionnalités supplémentaires au-delà de la création basée sur les documents, ce qui vous permet de créer des formulaires plus complexes et interactifs. Les principales fonctionnalités de la création basée sur les documents et de la création WYSIWYG sont les suivantes :
+La création basée sur des documents offre un ensemble de fonctionnalités de base et la création WYSIWYG déverrouille des fonctionnalités supplémentaires par rapport à la création basée sur des documents, ce qui vous permet de créer des formulaires plus complexes et interactifs. Les principales fonctionnalités de la création basée sur des documents et de la création WYSIWYG sont les suivantes :
 
 #### Fonctionnalités de création basée sur des documents
 
@@ -63,9 +63,9 @@ La création basée sur des documents vous permet de créer des formulaires à l
 * Envoi des données de formulaire directement à Microsoft Excel ou Google Sheets ou à des adresses e-mail.
 * Contrôler les performances de vos formulaires grâce à la surveillance de l’utilisation en temps réel (RUM).
 
-#### Fonctionnalités de création WYSIWYG
+#### Fonctionnalités de la création WYSIWYG
 
-WYSIWYG Authoring fournit des interfaces WYSIWYG (Universal Editor et Adaptive Forms Editor) pour la création de formulaires et offre toutes les fonctionnalités de la création basée sur les documents, ainsi qu’un large éventail de fonctionnalités supplémentaires :
+La création WYSIWYG fournit une interface WYSIWYG (éditeur universel et éditeur de formulaires adaptatifs) pour la création de formulaires et offre toutes les fonctionnalités de la création basée sur les documents, ainsi qu’un large éventail de fonctionnalités supplémentaires :
 
 * Éditeur de règles avancé pour créer une logique complexe.
 * Extensibilité côté serveur pour les fonctionnalités personnalisées.
@@ -77,9 +77,9 @@ WYSIWYG Authoring fournit des interfaces WYSIWYG (Universal Editor et Adaptive F
 * Modèle de données de formulaire (FDM) pour définir la structure des données et les interactions avec diverses sources de données.
 * Possibilité de choisir parmi plusieurs actions d’envoi pour gérer les envois de formulaire, y compris envoyer des données à Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, et de nombreuses autres sources de données.
 
-Toutes les fonctions ci-dessus sont également disponibles via l’éditeur de Forms adaptatif.
+Toutes les fonctionnalités ci-dessus sont également disponibles via l’éditeur de Forms adaptatif.
 
-Essentiellement, création WYSIWYG (éditeur universel et [Éditeur Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md)) s’appuie sur les bases de [Création basée sur des documents](/help/edge/docs/forms/create-forms.md), fournissant une boîte à outils plus avancée pour la création et la gestion de formulaires complexes.
+Essentiellement, la création WYSIWYG (éditeur universel et [éditeur de formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md)) s’appuie sur les principes fondamentaux de la [création basée sur des documents](/help/edge/docs/forms/create-forms.md), fournissant une boîte à outils plus avancée pour la création et la gestion de formulaires complexes.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Essentiellement, création WYSIWYG (éditeur universel et [Éditeur Forms adapta
 
 ### AEM Forms Edge Delivery Services : création, publication et envoi de formulaires
 
-Les diagrammes suivants illustrent le processus de création, de publication et d’envoi de formulaires à l’aide de la création basée sur les documents et de la création WYSIWYG.
+Les diagrammes suivants illustrent le processus de création, de publication et d’envoi de formulaires à l’aide de la création basée sur des documents et de la création WYSIWYG.
 
 ![Création basée sur des documents](/help/edge/assets/document-based-authoring-workflow.png)
 
