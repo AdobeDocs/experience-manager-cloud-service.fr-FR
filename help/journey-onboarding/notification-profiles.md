@@ -4,10 +4,10 @@ description: Découvrez comment créer des profils d’utilisateurs dans l’Adm
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 92%
+source-wordcount: '1130'
+ht-degree: 80%
 
 ---
 
@@ -18,14 +18,17 @@ Découvrez comment créer des profils d’utilisateurs dans l’Admin Console po
 
 ## Vue d’ensemble {#overview}
 
-De temps à autre, l’Adobe contacte les utilisateurs au sujet de leurs environnements as a Cloud Service AEM. En plus des notifications dans le produit, Adobe utilise parfois également les notifications par e-mail. Il existe deux types de notification par e-mail :
+De temps à autre, Adobe doit contacter les utilisateurs et utilisatrices au sujet des environnements AEM as a Cloud Service. En plus des notifications dans le produit, Adobe utilise parfois également les notifications par e-mail. Il existe deux types de notification par e-mail :
 
 * **Notification d’incident** : ces notifications sont envoyées lors d’un incident ou lorsqu’Adobe identifie un problème de disponibilité potentiel avec votre environnement AEM as a Cloud Service.
 * **Notification proactive** : ces notifications sont envoyées lorsqu’un membre de l’équipe d’assistance Adobe souhaite fournir des conseils sur une optimisation potentielle ou une recommandation susceptible de bénéficier à votre environnement AEM as a Cloud Service.
 
->[!NOTE]
->
->L’affectation de groupes à une notification proactive n’est pas prise en charge. Vous devez affecter des utilisateurs directement aux profils de produit à la place.
+Les utilisateurs peuvent également recevoir ces notifications pour des programmes spécifiques en fonction de leurs [autorisations de groupe personnalisées.](/help/implementing/cloud-manager/custom-permissions.md)
+
+En outre, l’affectation de groupes à une notification proactive est prise en charge et les utilisateurs et groupes peuvent être directement affectés aux profils de produits.
+
+* Par défaut, les utilisateurs des groupes de notifications d’incident et proactives recevront des notifications pour tous les programmes.
+* Cependant, si les utilisateurs ne souhaitent pas recevoir toutes les notifications, ils peuvent utiliser des autorisations de lecture personnalisées pour spécifier les notifications de programme qu’ils souhaitent recevoir.
 
 Pour que les utilisateurs ou les utilisatrices appropriés puissent recevoir ces notifications, vous devez configurer et affecter des profils d’utilisateurs, comme décrit dans ce document.
 
@@ -52,7 +55,7 @@ Pour configurer correctement la réception des notifications, créez deux profil
 
    ![Liste des instances de l’Admin Console](assets/cloud_manager_instance.png)
 
-1. Vous pouvez voir la liste de tous les profils de produits Cloud Manager configurés.
+1. La liste de tous les profils de produits Cloud Manager configurés s’affiche.
 
    ![Profils de produit de l’Admin Console](assets/cloud_manager_profiles.png)
 
@@ -60,7 +63,8 @@ Pour configurer correctement la réception des notifications, créez deux profil
 
    * **Nom du profil de produit** : `Incident Notification - Cloud Service`.
    * **Nom d’affichage** : `Incident Notification - Cloud Service`
-   * **Description** : profil Cloud Manager des utilisateurs et utilisatrices qui recevront des notifications lors d’un incident ou lorsqu’Adobe identifie un problème de disponibilité potentiel avec l’environnement AEM as a Cloud Service.
+   * **Description**: profil Cloud Manager pour les utilisateurs qui recevront des notifications lors d’un incident ou lorsque l’Adobe a identifié un problème de disponibilité potentiel avec votre environnement as a Cloud Service AEM.
+      * Les utilisateurs disposant d’autorisations READ personnalisées sur des programmes spécifiques recevront des notifications uniquement pour ces programmes s’ils choisissent d’utiliser des autorisations personnalisées.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -69,6 +73,7 @@ Pour configurer correctement la réception des notifications, créez deux profil
    * **Nom du profil de produit** : `Proactive Notification - Cloud Service`.
    * **Nom d’affichage** : `Proactive Notification - Cloud Service`
    * **Description** : profil Cloud Manager des utilisateurs et utilisatrices qui recevront des notifications lorsqu’un membre de l’équipe d’assistance Adobe souhaite fournir des conseils sur une optimisation potentielle ou une recommandation relative à la configuration de l’environnement AEM as a Cloud Service.
+      * Les utilisateurs disposant d’autorisations READ personnalisées sur des programmes spécifiques recevront des notifications uniquement pour ces programmes s’ils choisissent d’utiliser des autorisations personnalisées.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -88,7 +93,7 @@ Une fois les groupes créés, vous devez affecter les utilisateurs et les utilis
 
 Pour ajouter des utilisateurs et utilisatrices n’ayant pas encore de Federated ID configurés, procédez comme suit.
 
-1. Identifiez les personnes qui doivent recevoir des notifications d’incident ou des notifications proactives.
+1. Identifiez le ou les utilisateurs ou les groupes qui doivent recevoir des notifications d’incident ou proactives.
 
 1. Si vous ne l’avez pas encore fait, connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
@@ -113,13 +118,15 @@ Pour ajouter des utilisateurs et utilisatrices n’ayant pas encore de Federated
 
 1. Cliquez sur **Enregistrer** et un e-mail de bienvenue est envoyé à l’utilisateur ou utilisatrice que vous avez ajouté(e).
 
-La personne invitée recevra désormais les notifications. Répétez ces étapes pour les personnes de votre équipe qui doivent recevoir des notifications.
+La personne invitée recevra désormais les notifications. Les utilisateurs disposant d’autorisations READ personnalisées sur des programmes spécifiques recevront des notifications uniquement pour ces programmes s’ils choisissent d’utiliser des autorisations personnalisées.
+
+Répétez ces étapes pour les personnes de votre équipe qui doivent recevoir des notifications.
 
 ### Ajouter des utilisateurs ou utilisatices existants à des profils {#existing-user}
 
 Pour ajouter des utilisateurs et utilisatrices dont les Federated ID existent déjà, procédez comme suit.
 
-1. Identifiez les personnes qui doivent recevoir des notifications d’incident ou des notifications proactives.
+1. Identifiez le ou les utilisateurs ou les groupes qui doivent recevoir des notifications d’incident ou proactives.
 
 1. Si vous ne l’avez pas encore fait, connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
@@ -142,7 +149,9 @@ Pour ajouter des utilisateurs et utilisatrices dont les Federated ID existent d�
 
 1. Cliquez sur **Enregistrer** et un e-mail de bienvenue est envoyé à l’utilisateur ou utilisatrice que vous avez ajouté(e).
 
-La personne invitée recevra désormais les notifications. Répétez ces étapes pour les personnes de votre équipe qui doivent recevoir des notifications.
+La personne invitée recevra désormais les notifications. Les utilisateurs disposant d’autorisations READ personnalisées sur des programmes spécifiques recevront des notifications uniquement pour ces programmes s’ils choisissent d’utiliser des autorisations personnalisées.
+
+Répétez ces étapes pour les personnes de votre équipe qui doivent recevoir des notifications.
 
 ## Ressources supplémentaires {#additional-resources}
 
