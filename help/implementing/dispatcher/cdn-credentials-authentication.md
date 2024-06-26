@@ -4,9 +4,9 @@ description: Découvrez comment configurer les informations d’identification e
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 73d0a4a73a3e97a91b2276c86d3ed1324de8c361
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1400'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,8 @@ Le réseau de diffusion de contenu fourni par l’Adobe dispose de plusieurs fon
 
 * La valeur d’en-tête HTTP utilisée par le réseau de diffusion de contenu Adobe pour valider les requêtes provenant d’un réseau de diffusion de contenu géré par le client.
 * Jeton API utilisé pour purger les ressources dans le cache CDN.
+* Liste de combinaisons nom d’utilisateur/mot de passe pouvant accéder à un contenu restreint, en envoyant un formulaire d’authentification de base.
+
 
 Chacune d’elles, y compris la syntaxe de configuration, est décrite dans sa propre section ci-dessous. La variable [Configuration commune](#common-setup) La section illustre la configuration commune aux deux environnements, ainsi qu’au déploiement. Enfin, il y a une section sur la façon de [rotation des clés](#rotating-secrets), qui est considéré comme une bonne pratique de sécurité.
 
@@ -29,7 +31,7 @@ Comme décrit dans la section [Réseau de diffusion de contenu dans AEM as a Clo
 
 Dans le cadre de la configuration, le réseau de diffusion de contenu Adobe et le réseau de diffusion de contenu client doivent s’entendre sur une valeur de la variable `X-AEM-Edge-Key` En-tête HTTP. Cette valeur est définie sur chaque requête, sur le réseau de diffusion de contenu client, avant d’être acheminée vers le réseau de diffusion de contenu Adobe, qui valide ensuite que la valeur est comme prévu, de sorte qu’il puisse faire confiance à d’autres en-têtes HTTP, y compris ceux qui aident à acheminer la demande vers l’origine AEM appropriée.
 
-La variable `X-AEM-Edge-Key` est déclarée avec la syntaxe ci-dessous. Voir [Configuration commune](#common-setup) pour savoir comment le déployer.
+La variable `X-AEM-Edge-Key` est déclarée avec la syntaxe ci-dessous, avec la ou les valeurs réelles référencées par les propriétés edgeKey1 et edgeKey2. Voir [Configuration commune](#common-setup) pour savoir comment déployer la configuration.
 
 ```
 kind: "CDN"
@@ -55,12 +57,12 @@ La syntaxe de la variable `X-AEM-Edge-Key` La valeur inclut :
 
 * Type, version et métadonnées.
 * Noeud de données contenant un enfant `experimental_authentication` (le préfixe expérimental sera supprimé lorsque la fonction sera publiée).
-* Sous la fonction &quot;expérimental_authentication&quot;, avec un noeud d’authentificateur et un noeud de règles, qui sont tous deux des tableaux.
+* Sous `experimental_authentication`, un `authenticators` noeud et un `rules` , qui sont des tableaux.
 * Authentificateurs : vous permet de déclarer un type de jeton ou d’informations d’identification, qui dans ce cas est une clé de périphérie. Elle comprend les propriétés suivantes :
    * name : chaîne descriptive.
-   * type : doit être edge.
-   * edgeKey1 : sa valeur doit référencer un jeton secret, qui ne doit pas être stocké dans git, mais plutôt déclaré en tant que [Variable d’environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) de type secret. Pour le champ Service appliqué, sélectionnez Tous. Il est recommandé que la valeur (par exemple,`${{CDN_EDGEKEY_052824}}`) reflète le jour où il a été ajouté.
-   * edgeKey2 : utilisé pour la rotation des secrets, qui est décrite dans la section [section secrets rotatifs](#rotating-secrets) ci-dessous Au moins un des `edgeKey1` et `edgeKey2` doivent être déclarées.
+   * type - doit être `edge`.
+   * edgeKey1 : valeur de la variable *X-AEM-Edge-Key*, qui doit référencer un jeton secret, qui ne doit pas être stocké dans Git, mais plutôt déclaré comme [Variable d’environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) de type secret. Pour le champ Service appliqué, sélectionnez Tous. Il est recommandé que la valeur (par exemple,`${{CDN_EDGEKEY_052824}}`) reflète le jour où il a été ajouté.
+   * edgeKey2 : utilisé pour la rotation des secrets, qui est décrite dans la section [section secrets rotatifs](#rotating-secrets) ci-dessous Définissez-le de la même manière que edgeKey1. Au moins un des `edgeKey1` et `edgeKey2` doivent être déclarées.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Règles : vous permet de déclarer quels authentificateurs doivent être utilisés et s’il s’agit du niveau de publication et/ou d’aperçu.  Il comprend :
    * name : chaîne descriptive.
@@ -68,7 +70,7 @@ La syntaxe de la variable `X-AEM-Edge-Key` La valeur inclut :
    * action : doit spécifier &quot;authenticate&quot;, avec l’authentificateur prévu référencé.
 
 >[!NOTE]
->La clé Edge doit être configurée comme [Variable d’environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) variable de type `secret`, avant que la configuration référençant son déploiement.
+>La clé Edge doit être configurée comme [Variable d’environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) variable de type `secret` (avec *Tous* sélectionné pour Service appliqué), avant le déploiement de la configuration référençant celui-ci.
 
 ## Purge du jeton API {#purge-API-token}
 
@@ -87,18 +89,18 @@ data:
          purgeKey1: ${{CDN_PURGEKEY_031224}}
          purgeKey2: ${{CDN_PURGEKEY_021225}}
     rules:
-     - name: purge-auth-rule
-       when: { reqProperty: tier, equals: "publish" }
-       action:
-         type: authenticate
-         authenticator: purge-auth
+       - name: purge-auth-rule
+         when: { reqProperty: tier, equals: "publish" }
+         action:
+           type: authenticate
+           authenticator: purge-auth
 ```
 
 La syntaxe comprend :
 
 * type, version et métadonnées.
 * noeud de données contenant un enfant `experimental_authentication` (le préfixe expérimental sera supprimé lorsque la fonction sera publiée).
-* Sous `experimental_authentication`, avec un seul noeud d’authentificateurs.
+* Sous `experimental_authentication`, un `authenticators` noeud et un `rules` , qui sont des tableaux.
 * Authentificateurs : vous permet de déclarer un type de jeton ou d’informations d’identification, qui dans ce cas est une clé de purge. Elle comprend les propriétés suivantes :
    * name : chaîne descriptive.
    * type : doit être purge.
@@ -109,6 +111,59 @@ La syntaxe comprend :
    * name - chaîne descriptive
    * When : condition qui détermine le moment où la règle doit être évaluée, selon la syntaxe de la variable [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) article. En règle générale, il comprend une comparaison du niveau actuel (par exemple, publication).
    * action : doit spécifier &quot;authenticate&quot;, avec l’authentificateur prévu référencé.
+
+>[!NOTE]
+>La clé Edge doit être configurée comme [Variable d’environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) variable de type `secret`, avant que la configuration référençant son déploiement.
+
+## Authentification de base {#basic-auth}
+
+Protect de certaines ressources de contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur et un mot de passe. Cette fonctionnalité est principalement destinée aux cas d’utilisation de l’authentification légère, tels que la révision du contenu par les parties prenantes de l’entreprise, plutôt qu’en tant que solution complète pour les droits d’accès des utilisateurs finaux.
+
+Une boîte de dialogue d’authentification de base s’affiche pour l’utilisateur final comme suit :
+
+![basicauth-dialog](/help/implementing/dispatcher/assets/basic-auth-dialog.png)
+
+
+La syntaxe est déclarée comme décrit ci-dessous. Voir [Configuration commune](#common-setup) section ci-dessous pour plus d’informations sur la façon de le déployer.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_authentication:
+    authenticators:
+       - name: my-basic-authenticator
+         type: basic
+         credentials:
+           - user: johndoe
+             password: ${{JOHN_DOE_PASSWORD}}
+           - user: janedoe
+             password: ${{JANE_DOE_PASSWORD}}
+    rules:
+       - name: basic-auth-rule
+         when: { reqProperty: path, like: "/summercampaign" }
+         action:
+           type: authenticate
+           authenticator: my-basic-authenticator
+```
+
+La syntaxe comprend :
+
+* type, version et métadonnées.
+* un noeud de données contenant un objet `experimental_authentication` (le préfixe expérimental sera supprimé lorsque la fonction sera publiée).
+* Sous `experimental_authentication`, un `authenticators` noeud et un `rules` , qui sont des tableaux.
+* Authentificateurs : dans ce scénario, déclarez un authentificateur de base, qui possède la structure suivante :
+   * name - chaîne descriptive
+   * type - doit être `basic`
+   * un tableau d’informations d’identification, dont chacune comprend les paires nom/valeur suivantes, que les utilisateurs finaux peuvent entrer dans la boîte de dialogue d’authentification de base :
+      * user : nom de l’utilisateur
+      * password : sa valeur doit référencer un jeton secret, qui ne doit pas être stocké dans git, mais plutôt déclaré comme variables d’environnement Cloud Manager de type secret (avec **Tous** sélectionné comme champ de service)
+* Règles : vous permet de déclarer quels authentificateurs doivent être utilisés et quelles ressources doivent être protégées. Chaque règle comprend :
+   * name - chaîne descriptive
+   * When : condition qui détermine le moment où la règle doit être évaluée, selon la syntaxe de la variable [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) article. En règle générale, il comprend une comparaison du niveau de publication ou des chemins spécifiques.
+   * action : doit spécifier &quot;authenticate&quot;, avec l’authentificateur prévu référencé, qui est une authentification de base pour ce scénario.
 
 >[!NOTE]
 >La clé Edge doit être configurée comme [Variable d’environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) variable de type `secret`, avant que la configuration référençant son déploiement.
