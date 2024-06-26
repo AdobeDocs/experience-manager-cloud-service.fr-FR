@@ -4,10 +4,10 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
 workflow-type: tm+mt
-source-wordcount: '3769'
-ht-degree: 96%
+source-wordcount: '3772'
+ht-degree: 94%
 
 ---
 
@@ -177,7 +177,7 @@ La boîte de dialogue **Paramètres du package** est accessible via le bouton **
 
 Les filtres identifient les nœuds du référentiel à inclure dans le package. Une **définition de filtre** spécifie les informations suivantes :
 
-* **Chemin d’accès racine** du contenu à inclure
+* La variable **Chemin racine** du contenu à inclure
 * **Règles** incluant ou excluant certains nœuds sous le chemin d’accès racine
 
 Ajoutez des règles à l’aide du bouton **+**. Supprimez des règles à l’aide du bouton **-**.
@@ -190,18 +190,22 @@ Vous pouvez définir une ou plusieurs définitions de filtre pour un package. Ut
 
 ![Onglet Filtres](assets/edit-filter.png)
 
-Lors de la création de filtres, vous pouvez définir un chemin dʼaccès ou utiliser une expression régulière pour spécifier tous les nœuds à inclure ou exclure.
+Lors de la création de règles, vous définissez une expression régulière (également appelée expression régulière, regexp ou expression rationnelle) pour spécifier tous les noeuds que vous souhaitez inclure ou exclure.
 
 | Type de règle | Description |
 |---|---|
-| inclusion | L’inclusion d’un répertoire inclut le répertoire en question et l’ensemble des fichiers et des dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière), mais n’inclut **pas** d’autres fichiers ou dossiers situés sous le chemin d’accès racine spécifié. |
-| Exclusion | L’exclusion d’un répertoire exclut le répertoire en question et l’ensemble des fichiers et des dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière). |
+| inclusion | Include inclut tous les fichiers et dossiers du répertoire spécifié qui correspondent à l’expression régulière. Inclure **will not** d’inclure d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
+| Exclusion | Exclure exclut tous les fichiers et dossiers correspondant à l’expression régulière. |
 
 Les filtres de package sont le plus souvent définis lors de la première [création du package.](#creating-a-new-package) Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
 
 >[!TIP]
 >
 >Un package peut contenir plusieurs définitions de filtre de manière à pouvoir combiner facilement des nœuds de différents emplacements en un seul package.
+
+>[!TIP]
+>
+>Pour plus d’informations, voir [Apache Jackrabbit - Filtre Workspace](https://jackrabbit.apache.org/filevault/filter.html) la documentation.
 
 ### Dépendances {#dependencies}
 
