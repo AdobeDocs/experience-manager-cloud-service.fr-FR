@@ -4,7 +4,8 @@ description: Vous pouvez utiliser des thèmes pour mettre en forme et fournir un
 keywords: les formulaires adaptatifs mettent en forme les composants principaux. utilisation du thème dans les composants principaux, mise en forme du formulaire adaptatif, personnalisation des thèmes
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 30%
@@ -380,7 +381,7 @@ Le thème est déployé à l’aide de la fonction [pipeline front-end.](https:/
 1. Sélectionner **[!UICONTROL Ajout d’un pipeline hors production]** ou **[!UICONTROL Ajout d’un pipeline de production]** selon l’environnement du Cloud Service. Par exemple, ici, la variable **[!UICONTROL Ajout d’un pipeline de production]** est sélectionnée.
 1. Dans le **[!UICONTROL Ajout d’un pipeline de production]** dans la boîte de dialogue **[!UICONTROL Configuration]** , indiquez le nom de votre pipeline. Par exemple, le nom du pipeline est `customcanvastheme`.
 1. Cliquez sur **[!UICONTROL Continuer]**.
-1. Sélectionnez la variable **[!UICONTROL Déploiement ciblé]** > le **[!UICONTROL Code front-end]** , dans la variable **[!UICONTROL Code source]** étapes.
+1. Sélectionnez la variable **[!UICONTROL Déploiement ciblé]** > le **[!UICONTROL Code front-end]** , dans la variable **[!UICONTROL Code Source]** étapes.
 1. Sélectionnez la variable **[!UICONTROL Référentiel]** et la variable **[!UICONTROL Branche Git]** qui présentent vos dernières modifications. Par exemple, ici, le nom du référentiel sélectionné est `custom-canvas-theme-repo` et la branche Git est `main`.
 1. Sélectionnez la variable **[!UICONTROL Emplacement du code]** as `/`, si vos modifications sont présentes dans le dossier racine.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.

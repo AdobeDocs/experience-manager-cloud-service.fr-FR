@@ -1,10 +1,10 @@
 ---
 title: Création sans effort de PDF en bloc - Principal de l’art avec traitement par lots - Votre auto-guide de génération de millions de documents PDF !
 description: Comment créer des communications personnalisées et axées sur la marque ?
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 94%

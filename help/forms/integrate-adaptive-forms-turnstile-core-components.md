@@ -1,20 +1,22 @@
 ---
 title: Comment utiliser Turnstile dans un AEM des composants principaux de formulaire adaptatif ?
-description: Améliorez la sécurité des formulaires grâce au service Turnstile sans effort. Guide pas à pas à l'intérieur !
+description: Améliorez la sécurité des formulaires grâce au service Turnstile sans effort. Guide détaillé inclus.
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 13%
+ht-degree: 16%
 
 ---
 
 # Connexion de votre environnement AEM Forms à Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<span class="preview"> Cette fonctionnalité est inscrite dans le Programme des Adopteurs Anticipés. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> Cette fonctionnalité est inscrite dans le Programme des Adopteurs Anticipés. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -66,11 +68,11 @@ Pour intégrer AEM Forms avec le service Turnstile, procédez comme suit :
       ![Configuration du Cloud Service pour connecter votre environnement AEM Forms à Turnstile](assets/config-turntstile.png)
 
    >[!NOTE]
-   > Les utilisateurs n’ont pas besoin de modifier l’URL de validation JavaScript côté client et l’URL de validation côté serveur, car ils sont déjà préremplis pour la validation Turnstile.
+   > Les utilisateurs ne doivent pas modifier l’URL de validation JavaScript côté client et l’URL de validation côté serveur, car ils sont déjà préremplis pour la validation de Turnstile.
 
    Une fois le service de captcha Turnstile configuré, il peut être utilisé dans un [Formulaire adaptatif basé sur les composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## Utiliser le tuteur dans un formulaire adaptatif {#using-turnstile-core-components}
+## Utiliser Turnstile dans un formulaire adaptatif {#using-turnstile-core-components}
 
 1. Ouvrez votre instance AEM Forms as a Cloud Service.
 1. Accédez à **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.

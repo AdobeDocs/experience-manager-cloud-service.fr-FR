@@ -3,16 +3,17 @@ title: Comment créer un modèle de formulaire adaptatif ?
 description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2059'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
 # Création d’un modèle de formulaire adaptatif {#adaptive-form-templates}
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -42,10 +43,10 @@ Après avoir créé un dossier, ouvrez-le et suivez les étapes ci-après pour c
 1. Sélectionner **[!UICONTROL Créer]** dans le dossier que vous avez créé.
 1. Dans la section Choisir un type de modèle , sélectionnez **[!UICONTROL Modèle de formulaire adaptatif]** et sélectionnez **[!UICONTROL Suivant]**.
 
-1. Dans la section Détails du modèle , indiquez un titre de modèle et sélectionnez **[!UICONTROL Créer]**.
+1. Dans la section Détails du modèle, indiquez un titre de modèle, puis sélectionnez **[!UICONTROL Créer]**.
 Vous pouvez également fournir une description.
 
-1. Sélectionner **[!UICONTROL Terminé]** pour revenir à la console, ou sélectionnez **[!UICONTROL Ouvrir]** pour ouvrir le modèle dans l’éditeur.
+1. Sélectionnez **[!UICONTROL Terminé]** pour revenir à la console ou **[!UICONTROL Ouvrir]** pour ouvrir le modèle dans l’éditeur.
 
 ### Interface utilisateur de l’éditeur de modèles {#template-editor-ui}
 
@@ -133,7 +134,7 @@ Modifiez le type Structure en type Contenu initial pour le calque et commencez �
 * Vous pouvez faire glisser le composant de panneau depuis le navigateur de composants et le déposer dans la barre latérale.
 * Vous pouvez ajouter un panneau enfant du `guideRootPanel` depuis la barre d’outils de composant.
 
-Pour créer les onglets Informations générales et Informations professionnelles, ajoutez deux panneaux au panneau enfant du `guideRootPanel`. Sélectionnez les panneaux et sélectionnez ![cmppr](assets/configure-icon.svg) pour ouvrir les propriétés dans la barre latérale. Modifiez les noms d’élément en `general-info` et `professional-info`, et les titres en Informations générales et Informations professionnelle, respectivement. Dans la barre latérale, sélectionnez le contenu à ouvrir dans l’explorateur de contenu. Dans l’onglet Objets de formulaire, sélectionnez `guideRootPanel`. Dans l’éditeur, le guideRootPanel est sélectionné. Sélectionner ![cmppr](assets/configure-icon.svg) dans la barre d’outils du composant pour ouvrir ses propriétés. Dans le champ Disposition de panneau , sélectionnez **[!UICONTROL Onglets en haut]** et sélectionnez **[!UICONTROL Terminé]**. La structure de modèle à onglets est appliquée.
+Pour créer les onglets Informations générales et Informations professionnelles, ajoutez deux panneaux au panneau enfant du `guideRootPanel`. Sélectionnez les panneaux, puis ![cmppr](assets/configure-icon.svg) pour afficher les propriétés dans la barre latérale. Modifiez les noms d’élément en `general-info` et `professional-info`, et les titres en Informations générales et Informations professionnelles, respectivement. Dans la barre latérale, sélectionnez le contenu pour afficher l’explorateur de contenu. Dans l’onglet Objets de formulaire, sélectionnez `guideRootPanel`. Dans l’éditeur, le guideRootPanel est sélectionné. Sélectionnez ![cmppr](assets/configure-icon.svg) dans la barre d’outils de composant pour afficher ses propriétés. Dans le champ Disposition de panneau, sélectionnez **[!UICONTROL Onglets supérieurs]** et cliquez sur **[!UICONTROL Terminé]**. La structure de modèle à onglets est appliquée.
 
 #### Ajout de contenu dans les onglets {#adding-content-in-tabs}
 
@@ -152,7 +153,7 @@ Lorsque vous créez un modèle, il est ajouté en tant que brouillon. Activez le
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Modèles]**, et ouvrez le dossier dans lequel vous avez créé le modèle.
 
 1. Le modèle que vous avez créé est marqué comme Brouillon.
-1. Sélectionnez le modèle et choisissez **[!UICONTROL Activer]** dans la barre d’outils.
+1. Sélectionnez le modèle, puis cliquez sur **[!UICONTROL Activer]** dans la barre d’outils.
 Lorsque vous créez un formulaire adaptatif, vous pouvez voir le modèle affiché lorsque vous êtes invité à choisir un modèle.
 
 ## Importation ou exportation d’un modèle {#importing-or-exporting-a-template}

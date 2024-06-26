@@ -3,7 +3,8 @@ title: Comment créer un portail Forms sur une page Experience Manager Sites ?
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 84%
@@ -101,7 +102,7 @@ Suivez les étapes suivantes pour configurer le connecteur de stockage unifié p
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Connecteur de stockage unifié]**.
 1. Dans la section **[!UICONTROL Portail Formulaires]**, sélectionnez **[!UICONTROL Azure]** dans la liste déroulante **[!UICONTROL Stockage]**.
 1. Spécifiez le [chemin de configuration pour la configuration de stockage Azure](#create-azure-storage-configuration) dans le champ **[!UICONTROL Chemin de configuration de stockage]**.
-1. Sélectionner **[!UICONTROL Publier]** puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
+1. Sélectionner **[!UICONTROL Publish]** puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
 ## Activer les composants du portail Formulaires {#enable-forms-portal-components}
 

@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4351'
 ht-degree: 2%
@@ -25,7 +26,7 @@ ht-degree: 2%
 
 ## Présentation
 
-AEM Forms prend en charge les fonctions personnalisées, ce qui permet aux utilisateurs de définir des fonctions JavaScript pour l’implémentation de règles métier complexes. Ces fonctions personnalisées étendent les capacités des formulaires en facilitant la manipulation et le traitement des données saisies pour répondre aux exigences spécifiées. Ils permettent également une modification dynamique du comportement du formulaire en fonction de critères prédéfinis.
+AEM Forms prend en charge les fonctions personnalisées, ce qui permet aux utilisateurs de définir des fonctions JavaScript pour l’implémentation de règles commerciales complexes. Ces fonctions personnalisées étendent les capacités des formulaires en facilitant la manipulation et le traitement des données saisies pour répondre aux exigences spécifiées. Ils permettent également une modification dynamique du comportement du formulaire en fonction de critères prédéfinis.
 
 >[!NOTE]
 >
@@ -41,7 +42,7 @@ Les avantages des fonctions personnalisées dans les Forms adaptatives sont les 
 
 Les fonctions personnalisées sont essentiellement des bibliothèques clientes ajoutées dans le fichier JavaScript. Une fois que vous avez créé une fonction personnalisée, elle est disponible dans l’éditeur de règles pour sélection par l’utilisateur dans un formulaire adaptatif. Les fonctions personnalisées sont identifiées par les annotations JavaScript dans l’éditeur de règles.
 
-### Annotations JavaScript prises en charge pour une fonction personnalisée {#js-annotations}
+### Annotations JavaScript prises en charge pour la fonction personnalisée {#js-annotations}
 
 Les annotations JavaScript sont utilisées pour fournir des métadonnées pour le code JavaScript. Il comprend des commentaires commençant par des symboles spécifiques, par exemple /** et @. Les annotations fournissent des informations importantes sur les fonctions, variables et autres éléments du code. Le formulaire adaptatif prend en charge les annotations JavaScript suivantes pour les fonctions personnalisées :
 
@@ -172,7 +173,7 @@ Vous pouvez créer une fonction personnalisée avec ou sans commentaires jsdoc.
 ```
 Si l’utilisateur n’ajoute aucune annotation JavaScript à la fonction personnalisée, elle est répertoriée dans l’éditeur de règles par son nom de fonction. Toutefois, il est recommandé d’inclure des annotations JavaScript pour améliorer la lisibilité des fonctions personnalisées.
 
-### Fonction de flèche avec annotations JavaScript ou commentaire obligatoires
+### Fonction Flèche avec annotations ou commentaire JavaScript obligatoires
 
 Vous pouvez créer une fonction personnalisée à l’aide d’une syntaxe de fonction de flèche :
 
@@ -337,7 +338,7 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
 **Déployez le nouveau dossier de bibliothèques clientes dans votre environnement AEM**
 
-Déployer l’AEM as a Cloud Service, [Répertoire du projet AEMaaCS], dans votre environnement de Cloud Service. Pour effectuer un déploiement sur votre environnement de Cloud Service :
+Déployer AEM as a Cloud Service, [Répertoire du projet AEMaaCS], dans votre environnement de Cloud Service. Pour effectuer un déploiement sur votre environnement de Cloud Service :
 
 1. Validez les modifications
 

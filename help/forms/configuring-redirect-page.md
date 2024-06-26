@@ -2,17 +2,17 @@
 title: Comment configurer une page de redirection ?
 description: Les utilisateurs peuvent être redirigés vers une page Web que les auteurs de formulaires peuvent configurer lors de la phase de création.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
-# Configurer une page de redirection {#configuring-redirect-page}
+# Configuration d’une page de redirection {#configuring-redirect-page}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -32,7 +32,7 @@ Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle le
 
    Configuration de la page de redirection
 
-Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Les paramètres `status` et `owner` sont transmis pour toutes les actions d’envoi disponibles. Outre ces deux paramètres, d’autres paramètres sont transmis pour les actions d’envoi suivantes :
+Les auteurs et autrices de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Les paramètres `status` et `owner` sont transmis pour toutes les actions d’envoi disponibles. Outre ces deux paramètres, d’autres paramètres sont transmis pour les actions d’envoi suivantes :
 
 * **[!UICONTROL Envoyer vers le point d’entrée REST]** : les paramètres ajoutés pour la correspondance entre le champ et le paramètre sont transmis. Les paramètres `status` et `owner` ne sont pas transmis à cette action d’envoi. Pour plus d’informations, voir [Configuration de l’action d’envoi Envoyer vers le point d’entrée REST](configuring-submit-actions.md).
 

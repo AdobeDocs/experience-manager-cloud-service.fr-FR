@@ -4,16 +4,17 @@ description: Utilisez le composant Tableau pour ajouter des tableaux à un formu
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
 # Tableaux dans le formulaire adaptatif {#tables-in-adaptive-forms}
 
-<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 
 | Version | Lien de l’article |
@@ -89,7 +90,7 @@ Pour ajouter ou supprimer une colonne, cliquez sur la cellule de texte dans la s
 
 Vous pouvez ajouter une description du tableau pour expliquer l’organisation des informations que les lecteurs d’écran peuvent interpréter et lire. Pour ajouter la description :
 
-1. Sélectionnez le tableau, puis choisissez ![cmppr](assets/cmppr.png) pour afficher ses propriétés dans la barre latérale.
+1. Sélectionnez le tableau, puis ![cmppr](assets/cmppr.png) pour afficher ses propriétés dans la barre latérale.
 1. Spécifiez le résumé dans l’onglet Accessibilité.
 1. Cliquez sur **Terminé**.
 
@@ -107,9 +108,9 @@ Pour appliquer le tri sur les colonnes du tableau, les cellules des colonnes du 
 
 Pour activer le tri :
 
-1. Sélectionnez le tableau, puis choisissez ![configure_icon](assets/configure_icon.png) (Configuration). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **Contenu** dans le panneau latéral de la communication interactive.
+1. Sélectionnez le tableau, puis ![configure_icon](assets/configure_icon.png) (Configurer). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **Contenu** dans le sidekick de la communication interactive.
 1. Sélectionnez **Activer le tri**.
-1. Sélectionner ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du tableau. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
+1. Sélectionnez ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du tableau. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
 
    ![Activer le tri](assets/enable_sorting_new.png)
 
@@ -128,7 +129,7 @@ Pour activer le tri :
 
 Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
-1. Dans le **[!UICONTROL Contenu]** , sélectionnez l’onglet **[!UICONTROL Tableau]** et sélectionnez Configurer (![Configurer](assets/configure-icon.svg)).
+1. Dans l’onglet **[!UICONTROL Contenu]**, sélectionnez le composant **[!UICONTROL Tableau]** et ciquez sur l’icône Configurer (![Configurer](assets/configure-icon.svg)).
 
 1. Saisissez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, en spécifiant 2, 4, 6 comme valeurs dans le champ **[!UICONTROL Largeur de colonne]**, la largeur des colonnes est définie sur 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième. 2/12 comme largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
 
@@ -136,9 +137,9 @@ Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
 Vous pouvez définir le style d’un tableau à l’aide du mode Style de la barre d’outils de la page. Effectuez les étapes suivantes pour passer en mode Style et modifier le style du tableau.
 
-1. Dans la barre d’outils de la page, avant Aperçu, sélectionnez ![liste déroulante canevas](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre d’outils de la page, avant Aperçu, sélectionnez ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
 
-1. Dans la barre latérale, sélectionnez le tableau et le bouton Modifier . ![edit-button](assets/edit-button.png).
+1. Dans la barre latérale, sélectionnez le tableau, puis cliquez sur le bouton Modifier (![edit-button](assets/edit-button.png)).
 Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 ![Propriétés de style d’un tableau](assets/style-table.png)
@@ -151,7 +152,7 @@ Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou la suppression dynamique de lignes au moment de l’exécution.
 
-1. Sélectionnez une rangée de tableau, puis ![cmppr](assets/cmppr.png).
+1. Sélectionnez une ligne de tableau et cliquez sur ![cmppr](assets/cmppr.png).
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes dans le tableau.
 1. Cliquez sur **Terminé**.
 
@@ -319,7 +320,7 @@ Vous pouvez aussi faire glisser et déposer un groupe d’éléments de type com
 
 >[!NOTE]
 >
->Le nombre d’éléments d’un composant de tableau XDP, d’un sous-formulaire ou d’un type complexe XSD ne peut pas dépasser le nombre de cellules d’une ligne. Par exemple, vous ne pouvez pas déposer quatre éléments sur une ligne qui n’a que trois cellules. Cela provoquera une erreur.
+>Le nombre d’éléments dans un composant de tableau XDP, un sous-formulaire, ou un type XSD complexe ne peut pas dépasser le nombre de cellules dans une ligne. Par exemple, vous ne pouvez pas déposer quatre éléments sur une ligne qui n’a que trois cellules. Cela provoquera une erreur.
 >
 >Si le nombre d’éléments est inférieur au nombre de cellules dans une ligne, la nouvelle ligne ajoute d’abord les cellules en fonction des éléments, puis les cellules par défaut sont ajoutées pour remplir les autres cellules de la ligne. Par exemple, si vous déposez un groupe de trois éléments dans une ligne qui comporte quatre cellules, les trois premières cellules sont basées sur les éléments déposés et la cellule restante sera la cellule de tableau par défaut.
 

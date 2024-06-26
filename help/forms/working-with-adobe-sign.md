@@ -3,10 +3,10 @@ title: Comment utiliser Adobe Sign dans un formulaire adaptatif ?
 description: Utilisez Adobe Sign dans un formulaire adaptatif pour permettre aux destinataires du formulaire de signer électroniquement un formulaire à partir de l’appareil et du lieu de leur choix.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 90%

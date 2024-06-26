@@ -3,10 +3,11 @@ title: Enregistrer une transaction pour les implémentations personnalisées
 description: Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas automatiquement comptabilisées comme des transactions
 feature: Adaptive Forms, Foundation Components
 exl-id: cb584f78-30af-4a58-be99-843352e8249c
-source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
+role: Admin, Developer, User
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 86%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
 | AEM as a Cloud Service | Cet article |
 
-Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas comptabilisées comme des transactions.
+Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas automatiquement comptabilisées comme des transactions.
 
 Vous pouvez utiliser du code personnalisé pour envoyer un formulaire de PDF. Vous pouvez également envoyer un formulaire à l’aide de méthodes personnalisées au lieu d’utiliser des méthodes d’envoi fournies avec AEM Forms. Toutes les actions mentionnées précédemment et les implémentations personnalisées des API AEM Forms ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API, [TransactionRecorder](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/com/adobe/aem/transaction/core/ITransactionRecorder.html), pour enregistrer de telles actions en tant que transactions.
 

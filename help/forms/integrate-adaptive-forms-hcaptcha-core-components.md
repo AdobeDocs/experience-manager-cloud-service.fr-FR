@@ -1,21 +1,23 @@
 ---
 title: Comment utiliser Captcha&reg ; dans un formulaire adaptatif AEM composants principaux ?
-description: Améliorez la sécurité des formulaires grâce à Captcha&reg ; sans effort. Guide pas à pas à l'intérieur !
+description: Améliorez sans effort la sécurité des formulaires grâce au service hCaptcha®. Guide détaillé inclus.
 topic-tags: Adaptive Forms, author
 keywords: Captcha&reg ; service, Forms adaptatif, défi CAPTCHA, prévention des robots, composants principaux, sécurité d’envoi de formulaire, prévention des spams de formulaire
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 14%
+ht-degree: 27%
 
 ---
 
 # Connexion de votre environnement AEM Forms avec Captcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview"> Cette fonctionnalité est inscrite dans le Programme des Adopteurs Anticipés. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> Cette fonctionnalité est inscrite dans le Programme des Adopteurs Anticipés. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -27,7 +29,7 @@ AEM Forms as a Cloud Service prend en charge les solutions CAPTCHA suivantes :
 
 ## Intégration de l’environnement AEM Forms avec Captcha Captcha
 
-Le service Captcha® protège vos formulaires contre les robots, les spams et les abus automatisés. Il pose un problème de widget de case à cocher et évalue la réponse de l’utilisateur pour déterminer s’il s’agit d’un humain ou d’un robot interagissant avec le formulaire. Elle empêche l’utilisateur de procéder si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots de publier du spam ou des activités malveillantes.
+Le service hCaptcha® protège vos formulaires des robots, spams et violations automatisées. Il propose un test sous forme de widget de case à cocher et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le formulaire. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des activités malveillantes.
 
 AEM Forms as a Cloud Service prend en charge Captcha® dans les composants principaux de Forms adaptatif. Vous pouvez l’utiliser pour présenter un défi de widget de case à cocher lors de l’envoi du formulaire.
 
@@ -88,8 +90,8 @@ Pour intégrer AEM Forms avec le service Captcha®, procédez comme suit :
 
    * **[!UICONTROL Nom]:** Indiquez le nom de votre composant Captcha. Vous pouvez identifier facilement un composant de formulaire avec son nom unique dans le formulaire et dans l’éditeur de règles.
    * **[!UICONTROL Titre]:** Indiquez le titre de votre composant Captcha.
-   * **[!UICONTROL Paramètres de configuration]:** Sélectionnez une configuration de cloud configurée pour Captcha®.
-   * **Taille du captcha :** Vous pouvez sélectionner la taille d&#39;affichage de la boîte de dialogue de défi Captcha®. Utilisez la variable **[!UICONTROL Compact]** pour afficher une petite taille et la variable **[!UICONTROL Normal]** pour afficher une boîte de dialogue de défi Captcha® de taille relativement grande.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
+   * **[!UICONTROL Paramètres de configuration] :** sélectionnez une configuration de cloud configurée pour hCaptcha®.
+   * **Taille du captcha :** Vous pouvez sélectionner la taille d&#39;affichage de la boîte de dialogue de défi Captcha®. Utilisez l’option **[!UICONTROL Compact]** pour afficher une boîte de dialogue de test Captcha® de petite taille et l’option **[!UICONTROL Normal]** pour afficher une taille relativement grande.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL Message de validation]:** Fournissez un message de validation pour votre validation Captcha lors de l’envoi du formulaire.
    * **[!UICONTROL Message de validation de script]** - Cette option permet de saisir un message à afficher en cas d’échec de la validation du script.
      >[!NOTE]
@@ -101,7 +103,7 @@ Pour intégrer AEM Forms avec le service Captcha®, procédez comme suit :
 
 Désormais, seuls les formulaires légitimes dans lesquels l’utilisateur réussit à résoudre le problème posé par le service Captcha® sont autorisés pour l’envoi du formulaire. hCaptcha®
 
-**Captcha® est une marque déposée de Intuition Machines, Inc.**
+**hCaptcha® est une marque déposée d’Intuition Machines, Inc.**
 
 
 ## Questions fréquentes

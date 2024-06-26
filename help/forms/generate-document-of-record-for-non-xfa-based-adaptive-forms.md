@@ -3,7 +3,8 @@ title: Comment générer un document d’enregistrement (DE) pour AEM Forms ?
 description: Découvrez comment générer un modèle de document d’enregistrement (DE) pour Forms adaptatif.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 92%
@@ -337,7 +338,7 @@ Lors de la génération d’un document d’enregistrement, vous pouvez modifier
 Pour localiser les informations de branding que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, suivez les étapes suivantes :
 
 1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis sélectionnez ![configure](assets/configure.png).
-1. Sélectionner ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
+1. Sélectionnez ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
 1. Sélectionnez le modèle par défaut ou un modèle personnalisé pour le rendu du document d’enregistrement. Si vous sélectionnez le modèle par défaut, une vignette d’aperçu du document d’enregistrement s’affiche sous la liste déroulante Modèle.
 1. Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines des propriétés suivantes, ou toutes les propriétés, apparaissent dans l’onglet Document d’enregistrement. Spécifiez les propriétés mentionnées ci-dessous pour définir l’apparence du document d’enregistrement :
 
@@ -407,7 +408,7 @@ Effectuez les étapes suivantes à partir de l’instance d’auteur de l’édi
 
    * **[!UICONTROL Générer un document d’enregistrement]** : lorsque cette option est sélectionnée, le modèle de [!UICONTROL document d’enregistrement] est généré automatiquement pour votre formulaire adaptatif.
 
-1. Sélectionner ![Enregistrer](/help/forms/assets/check-button.png) pour enregistrer les propriétés.
+1. Sélectionnez ![Enregistrer](/help/forms/assets/check-button.png) pour enregistrer les propriétés.
 
 ![Prise en charge des modèles de document d’enregistrement](/help/forms/assets/dor-templatesupport.png)
 

@@ -4,7 +4,8 @@ description: Créez des modèles de formulaire adaptatif basés sur le composant
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 58%
@@ -27,11 +28,11 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Condition préalable
 
-**Activation des composants principaux de Forms adaptatif pour votre environnement**: lorsque vous créez un programme, les composants principaux de Forms adaptatif sont déjà activés pour votre environnement. Si vous disposez d’un environnement as a Cloud Service de formulaire basé sur [AEM Archetype 39 ou version antérieure](https://github.com/adobe/aem-project-archetype), [Activation des composants principaux de Forms adaptatif pour votre environnement](enable-adaptive-forms-core-components.md).
+**Activation des composants principaux de Forms adaptatif pour votre environnement**: lorsque vous créez un programme, les composants principaux de Forms adaptatif sont déjà activés pour votre environnement. Si vous disposez d’un environnement as a Cloud Service formulaire basé sur [AEM Archetype 39 ou version antérieure](https://github.com/adobe/aem-project-archetype), [Activation des composants principaux de Forms adaptatif pour votre environnement](enable-adaptive-forms-core-components.md).
 
 >[!NOTE]
 >
-> Lors du déploiement de l’environnement as a Cloud Service Forms basé sur Archetype 45, la variable **Forms adaptatif (composant principal)** des modèles et des thèmes basés sur des composants principaux sont ajoutés à votre environnement.
+> Lors du déploiement de l’environnement Forms as a Cloud Service basé sur Archetype 45, la variable **Forms adaptatif (composant principal)** des modèles et des thèmes basés sur des composants principaux sont ajoutés à votre environnement.
 
 ## Utilisation d’un modèle {#working-with-templates}
 

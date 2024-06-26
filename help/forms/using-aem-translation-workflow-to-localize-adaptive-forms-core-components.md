@@ -3,7 +3,8 @@ title: Comment pouvons-nous traduire un formulaire adaptatif basé sur les compo
 description: Découvrez comment créer un modèle de données de formulaire (FDM) dans AEM Forms, tester le modèle avec des exemples de données et de services et configurer diverses options pour un modèle.
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 93%

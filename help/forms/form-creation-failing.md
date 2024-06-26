@@ -1,9 +1,10 @@
 ---
 title: Comment résoudre les problèmes de création de formulaires ?
-description: Résolution des problèmes de création de formulaires dans l’environnement as a Cloud Service d’AEM Forms.
-feature: Adaptive Forms, Troubleshooting
+description: Résolution des problèmes liés à la création de formulaires dans l’environnement AEM Forms as a Cloud Service.
+feature: Adaptive Forms
 role: User
-source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
+exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 5%
@@ -12,7 +13,7 @@ ht-degree: 5%
 
 # Problème lors de la publication de formulaires{#form-creation-fails}
 
-Après la mise à jour des utilisateurs vers la version as a Cloud Service d’AEM Forms `2024.5.16461`:
+Après la mise à jour des utilisateurs vers AEM Forms as a Cloud Service `2024.5.16461`:
 
 **Certains utilisateurs** Le problème peut survenir lors de la création de formulaires. En effet, lorsqu’un utilisateur crée un formulaire, le message d’erreur suivant s’affiche dans la boîte de dialogue de création :
 
@@ -27,9 +28,9 @@ Le problème se produit car l’auteur publie le formulaire sans **publier d’a
 Pour résoudre le problème, procédez comme suit :
 
 1. Assurez-vous que le modèle que vous utilisez dans votre formulaire ne comporte pas la variable `jcr:uuid` et d’autres propriétés protégées générées par le système sur le chemin d’accès `<template-path>/initial/jcr:content node`.
-1. Publiez le modèle de manière explicite à l’aide de la console de modèles.
+1. Publish le modèle de manière explicite à l’aide de la console de modèles.
 1. Maintenant, lorsque votre modèle est publié, essayez de créer de nouveaux formulaires à l’aide de ce modèle.
-1. Si le modèle que vous avez utilisé est mis à jour dans les prochaines versions, Publiez à nouveau le modèle (comme indiqué à l’étape 2) afin d’éviter des problèmes d’échec de création de formulaire.
+1. Si le modèle que vous avez utilisé est mis à jour dans les prochaines versions, Publish à nouveau le modèle (comme indiqué à l’étape 2) afin d’éviter des problèmes d’échec de création de formulaire.
 
 
 <!--
@@ -55,13 +56,3 @@ To resolve the issue, perform the following workaround steps:
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
 -->
-
-
-
-
-
-
-
-
-
-

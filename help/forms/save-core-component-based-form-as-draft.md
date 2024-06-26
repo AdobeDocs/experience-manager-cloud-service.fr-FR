@@ -2,13 +2,14 @@
 title: Comment enregistrer le formulaire adaptatif basé sur les composants principaux en tant que brouillon ?
 description: Découvrez comment enregistrer le formulaire adaptatif basé sur des composants principaux en tant que brouillon, créer un portail Forms et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
-
 
 <span class="preview"> Cet article contient le contenu de la fonctionnalité de version préliminaire. La fonctionnalité de préversion est accessible uniquement via notre [canal de version préliminaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).
 
@@ -23,7 +24,7 @@ L’enregistrement d’un formulaire adaptatif en tant que brouillon est une fon
 * Assurez-vous que la variable [Le composant principal est défini sur la version 3.0.24 ou ultérieure.](https://github.com/adobe/aem-core-forms-components) pour utiliser cette fonctionnalité.
 * Assurez-vous que vous disposez d’une [Compte de stockage Azure et clé d&#39;accès](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) pour autoriser l’accès au compte de stockage Azure.
 
-## Enregistrement d’un formulaire adaptatif en tant que brouillon
+## Enregistrer un formulaire adaptatif en tant que brouillon
 
 [!DNL Experience Manager Forms] L’intégration de données (data-integration.md) fournit [!DNL Azure] configuration de stockage pour intégrer des formulaires à [!DNL Azure] services de stockage. Le modèle de données de formulaire (FDM) peut être utilisé pour créer un Forms adaptatif qui interagit avec la variable [!DNL Azure] pour activer les workflows métier.
 
@@ -71,7 +72,7 @@ Après, vous avez créé avec succès la configuration de stockage Azure, config
 
    ![Paramètre de stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. Sélectionner **[!UICONTROL Enregistrer]** puis sélectionnez **[!UICONTROL Publier]** pour publier la configuration.
+1. Sélectionner **[!UICONTROL Enregistrer]** puis sélectionnez **[!UICONTROL Publish]** pour publier la configuration.
 
 ### 3. Création de règles pour enregistrer un formulaire adaptatif en tant que brouillon {#rule-to-save-adaptive-form-as-draft}
 

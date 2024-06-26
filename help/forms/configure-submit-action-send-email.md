@@ -3,15 +3,17 @@ Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: comment envoyer un courrier électronique pour un formulaire adaptatif, une action Envoyer par messagerie, un courrier électronique de formulaire adaptatif, un courrier électronique d’envoi de formulaire, un guide d’envoi de courrier électronique
 feature: Adaptive Forms, Core Components
-source-git-commit: f1db04e6cd1f78c1530aefd29f5f036ca5e70873
+exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
+title: "Comment configurer une action Envoyer pour un formulaire adaptatif ?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 14%
+source-wordcount: '447'
+ht-degree: 16%
 
 ---
 
-
-# Configuration de l’action Envoyer un courrier électronique pour un formulaire adaptatif
+# Configurer l’action Envoyer un e-mail pour un formulaire adaptatif
 
 La variable **[!UICONTROL Envoyer un courrier électronique]** L’action Envoyer permet d’envoyer un email à un ou plusieurs destinataires lors de l’envoi réussi du formulaire. Cette action Envoyer permet de créer un email pouvant inclure des données de formulaire dans un format prédéfini. Prenons l’exemple du modèle suivant où le nom du client, l’adresse de livraison, le nom de l’état et le code postal sont récupérés dans les données de formulaire envoyées :
 
@@ -69,5 +71,3 @@ Pour configurer l’action Envoyer :
 ## Articles connexes
 
 {{af-submit-action}}
-
-

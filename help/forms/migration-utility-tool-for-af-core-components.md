@@ -6,13 +6,14 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 4%
 
 ---
-
 
 # Présentation
 
@@ -117,9 +118,9 @@ Pour activer et utiliser les outils de modernisation AEM de votre environnement 
    * **Aucun** : sélectionnez cette option si vous ne souhaitez pas créer de copie des formulaires basés sur les composants de base avant de commencer la conversion du formulaire.
    * **Restaurer** : sélectionnez l’option pour restaurer le formulaire à son état avant de commencer la conversion.
    * **Copier vers Target**: sélectionnez l’option permettant de créer une copie des formulaires basés sur le composant Foundation avant de commencer la conversion du formulaire.
-Dans notre cas, la variable **Copier vers Target** est sélectionnée. Si la variable **Copier vers Target** est sélectionnée, la variable **[!UICONTROL Chemin source]** et **[!UICONTROL Chemin cible]** les options deviennent visibles.
+Dans notre cas, la variable **Copier vers Target** est sélectionnée. Si la variable **Copier vers Target** est sélectionnée, la variable **[!UICONTROL Chemin Source]** et **[!UICONTROL Chemin cible]** les options deviennent visibles.
 
-1. Spécifiez la variable `source folder` dans le champ **[!UICONTROL Chemin source]**.
+1. Spécifiez la variable `source folder` dans le champ **[!UICONTROL Chemin Source]**.
 1. Spécifiez la variable `target folder` dans le champ **[!UICONTROL Chemin cible]**.
 1. Sélectionnez **[!UICONTROL Suivant]**.
 1. Cliquez sur **[!UICONTROL Ajouter Forms]**. Tous les formulaires du `source folder` s’affiche à l’écran.
@@ -149,6 +150,3 @@ Vous pouvez maintenant constater que le formulaire adaptatif créé à partir de
 
 * Assurez-vous que vos formulaires basés sur des composants de base utilisent uniquement les composants qui ont un équivalent [Composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) disponible. Dans les cas où vous utilisez des composants de base qui n’ont pas de composant principal équivalent, le composant de base n’est pas converti. Il ne fonctionne donc pas correctement lors de la création d’un formulaire.
 * Assurez-vous que les règles de couverture des composants de base vers les composants principaux sont formatées en XML.
-
-
-

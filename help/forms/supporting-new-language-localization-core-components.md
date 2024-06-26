@@ -4,7 +4,8 @@ description: Découvrez comment ajouter de nouveaux paramètres régionaux pour 
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 8%
@@ -94,9 +95,9 @@ Cloner le référentiel des composants principaux de Forms adaptatif : vous avez
 
 Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants principaux, procédez comme suit :
 
-### Cloner votre référentiel Git as a Cloud Service AEM
+### Clonage de votre référentiel Git AEM as a Cloud Service
 
-1. Ouvrez la ligne de commande et choisissez un répertoire dans lequel stocker votre référentiel as a Cloud Service AEM, tel que `/cloud-service-repository/`.
+1. Ouvrez la ligne de commande et sélectionnez un répertoire pour stocker votre référentiel AEM as a Cloud Service, tel que `/cloud-service-repository/`.
 
 1. Exécutez la commande ci-dessous pour cloner le référentiel :
 
@@ -106,7 +107,7 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
 
    Pour cloner votre référentiel Git, vous avez besoin d’informations :
 
-   * **Nom de l’organisation**: identifie votre équipe ou projet dans Adobe Experience Manager as a Cloud Service (as a Cloud Service).
+   * **Nom de l’organisation**: identifie votre équipe ou projet dans Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
 
    * **Identifiant du programme**: indique le programme associé à votre référentiel.
 
@@ -118,7 +119,7 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
 
    **Votre projet est prêt !**
 
-   Une fois la commande terminée, un nouveau dossier est créé dans votre répertoire local. Ce dossier porte le nom de votre programme (par exemple, program-id). Ce dossier contient tous les fichiers et le code téléchargés depuis votre référentiel Git as a Cloud Service AEM.
+   Une fois la commande terminée, un nouveau dossier est créé dans votre répertoire local. Ce dossier porte le nom de votre programme (par exemple, program-id). Ce dossier contient tous les fichiers et le code téléchargés à partir de votre référentiel Git AEM as a Cloud Service.
 
    Dans ce guide, nous nous référons à ce dossier en tant que `[AEMaaCS project directory]`.
 
@@ -326,7 +327,7 @@ Cette étape s’applique uniquement aux langues autres que les suivantes couram
 
 Vous êtes maintenant prêt à utiliser le nouveau paramètre régional avec votre Forms adaptatif. Vous pouvez
 
-* Déployer l’AEM as a Cloud Service, [Répertoire du projet AEMaaCS], dans votre environnement de développement local pour essayer la nouvelle configuration des paramètres régionaux sur votre ordinateur local. Pour effectuer un déploiement sur votre environnement de développement local :
+* Déployer AEM as a Cloud Service, [Répertoire du projet AEMaaCS], dans votre environnement de développement local pour essayer la nouvelle configuration des paramètres régionaux sur votre ordinateur local. Pour effectuer un déploiement sur votre environnement de développement local :
 
    1. Assurez-vous que votre environnement de développement local est opérationnel. Si vous n’avez pas encore configuré d’environnement de développement local, reportez-vous au guide sur la [Configuration de l’environnement de développement local pour AEM Forms](/help/forms/setup-local-development-environment.md).
 
@@ -340,7 +341,7 @@ Vous êtes maintenant prêt à utiliser le nouveau paramètre régional avec vot
       mvn -PautoInstallPackage clean install
       ```
 
-* Déployer l’AEM as a Cloud Service, [Répertoire du projet AEMaaCS], dans votre environnement de Cloud Service. Pour effectuer un déploiement sur votre environnement de Cloud Service :
+* Déployer AEM as a Cloud Service, [Répertoire du projet AEMaaCS], dans votre environnement de Cloud Service. Pour effectuer un déploiement sur votre environnement de Cloud Service :
 
    1. Validez vos modifications :
 
@@ -363,7 +364,7 @@ Ces étapes vous guident tout au long de l’aperçu d’un formulaire adaptatif
 1. Spécifiez le **Titre du projet** et sélectionnez les **Langues cibles** dans le menu déroulant de l’assistant **Ajouter un dictionnaire au projet de traduction**.
 1. Cliquez sur **Terminé** et exécutez le projet de traduction créé.
 1. Accédez à **Formulaires** > **Formulaires et documents**.
-1. Sélectionnez le formulaire adaptatif et choisissez le **Aperçu comme HTML** .
+1. Sélectionnez le formulaire adaptatif et choisissez le **Aperçu en tant qu’HTML** .
 1. Ajouter `&afAcceptLang=<locale-name>` dans l’URL d’aperçu et appuyez sur la touche Entrée. Remplacer `<locale-name>` avec votre code de paramètres régionaux réel. Le formulaire adaptatif s’affiche dans les paramètres régionaux spécifiés.
 
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
