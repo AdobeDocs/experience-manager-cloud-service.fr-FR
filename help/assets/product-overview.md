@@ -1,9 +1,9 @@
 ---
 title: Présentation de Content Hub
 description: En savoir plus sur Content Hub, ses principaux avantages, comment y accéder et comment fournir des commentaires sur les options disponibles dans Content Hub.
-source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
+source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Content Hub vous permet de créer du contenu avec Adobe Express (si vous dispose
 
 ## Conditions préalables {#prerequisites-content-hub}
 
-Version de juin as a Cloud Service Experience Manager
+Content Hub nécessite un environnement de création de production as a Cloud Service Experience Manager, version 2024.6 ou ultérieure (la version minimale est 2024.6.16799).
 
 ## Comment accéder à Content Hub ? {#access-content-hub}
 
-Après avoir ajouté un utilisateur à la variable [Profil de produits Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub est accessible à l’aide des méthodes suivantes :
+[Après avoir configuré Content Hub](#deploy-content-hub) et l’ajout d’un utilisateur à la variable [Profil de produits Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub est accessible à l’aide des méthodes suivantes :
 
 * Accédez à Content Hub à l’aide du lien suivant :
 
