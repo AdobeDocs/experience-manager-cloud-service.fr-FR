@@ -4,7 +4,7 @@ description: Découvrez les tâches de maintenance dans AEM as a Cloud Service e
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 39%
@@ -46,14 +46,14 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
   <tr>
     <td>Purge de version</td>
     <td>Client</td>
-    <td>La purge de version est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>La purge de version est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Client</td>
-    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ La purge des versions et le journal d’audit réduit la taille du référentiel
 
 >[!NOTE]
 >
->Adobe recommande aux clients de ne pas configurer la purge de version.
+>Les clients AEM Guides ne doivent pas configurer la purge de version.
 
 ### Paramètres par défaut {#defaults}
 
@@ -283,7 +283,7 @@ Voir [configuration des pipelines de production](/help/implementing/cloud-manage
 
 >[!NOTE]
 >
->Adobe recommande aux clients de ne pas configurer la purge de version.
+>Les clients AEM Guides ne doivent pas configurer la purge de version.
 
 #### Valeurs par défaut de la purge de version {#version-purge-defaults}
 
