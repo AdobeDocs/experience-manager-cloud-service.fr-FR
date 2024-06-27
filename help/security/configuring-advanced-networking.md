@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5744'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -805,48 +805,48 @@ La mise en œuvre d’une stratégie de mise en pool de connexions appropriée e
 
 À la lumière de ces informations, Adobe vous conseille de réévaluer votre configuration d’AEM actuelle et d’envisager l’incorporation délibérée de la mise en pool de connexions conjointement avec les paramètres de mise en réseau avancée. En gérant le nombre de connexions parallèles et en réduisant au minimum la possibilité de connexions obsolètes, ces mesures permettent de réduire le risque que les serveurs proxy atteignent leurs limites de connexions. Cette mise en œuvre stratégique a donc pour but de réduire la probabilité que les demandes ne parviennent pas à des points d’entrée externes.
 
-#### FAQ sur les limites de connexion
+#### Questions fréquentes sur les limites de connexion
 
 Lors de l’utilisation de la mise en réseau avancée, le nombre de connexions est limité afin d’assurer la stabilité entre les environnements et d’empêcher que les environnements inférieurs n’épuisent les connexions disponibles.
 
-Les connexions sont limitées à 1 000 par instance d’AEM et des alertes sont envoyées aux clients lorsque le nombre atteint 750.
+Les connexions sont limitées à 1 000 par instance AEM et des alertes sont envoyées aux clientes et clients lorsque le nombre atteint 750.
 
-##### La limite de connexion est-elle appliquée uniquement au trafic sortant des ports non standard ou à tout le trafic sortant ?
+##### La limite de connexion est-elle appliquée uniquement au trafic sortant des ports non standard ou à tout le trafic sortant ?
 
-Cette limite s’applique uniquement aux connexions utilisant le réseau avancé (sortie sur des ports non standard, à l’aide d’une adresse IP de sortie dédiée ou d’un VPN).
+Cette limite s’applique uniquement aux connexions utilisant la mise en réseau avancée (sortie sur des ports non standard, à l’aide d’une adresse IP de sortie dédiée ou d’un VPN).
 
-##### Nous ne voyons pas de différence significative dans le nombre de connexions sortantes. Pourquoi recevons-nous la notification maintenant ?
+##### Nous ne voyons pas de différence significative dans le nombre de connexions sortantes. Pourquoi recevons-nous la notification maintenant ?
 
-Si le client crée des connexions de manière dynamique (par exemple, une ou plusieurs connexions pour chaque demande), une augmentation du trafic peut entraîner un pic de connexions.
+Si le client ou la cliente crée des connexions de manière dynamique (par exemple, une ou plusieurs connexions pour chaque demande), une augmentation du trafic peut entraîner un pic de connexions.
 
-##### Est-il possible que nous ayons connu une situation similaire dans le passé sans être alertés ?
+##### Est-il possible que nous ayons connu une situation similaire dans le passé sans avoir reçu d’alertes ?
 
-Les alertes ne sont envoyées que lorsque la limite de soft est atteinte.
+Les alertes ne sont envoyées que lorsque la limite basse est atteinte.
 
-##### Que se passe-t-il si la limite maximale est atteinte ?
+##### Que se passe-t-il si la limite maximale est atteinte ?
 
-Lorsque la limite est atteinte, les nouvelles connexions sortantes d’AEM par le biais de réseaux avancés (sortie sur des ports non standard, à l’aide d’une IP de sortie dédiée ou d’un VPN) seront abandonnées pour se protéger contre une attaque du DoS.
+Lorsque la limite maximale est atteinte, les nouvelles connexions de sortie d’AEM par le biais d’une mise en réseau avancée (sortie sur des ports non standard, à l’aide d’une IP de sortie dédiée ou d’un VPN) seront abandonnées pour se protéger contre une attaque DoS.
 
-##### La limite peut-elle être augmentée ?
+##### La limite peut-elle être augmentée ?
 
-Non, un grand nombre de connexions peut avoir un impact significatif sur les performances et un DoS dans les modules et les environnements.
+Non, un grand nombre de connexions peut avoir un impact significatif sur les performances et provoquer un DoS dans les capsules et les environnements.
 
-##### Les connexions sont-elles automatiquement fermées par le système AEM après un certain temps ?
+##### Les connexions sont-elles automatiquement fermées par le système AEM après un certain temps ?
 
-Oui, les connexions sont fermées au niveau de la JVM et à différents points de l’infrastructure réseau. Cependant, cela sera trop tard pour tout service de production. Les connexions doivent être explicitement fermées lorsqu’elles ne sont plus nécessaires ou renvoyées au pool lors de l’utilisation du pool de connexions. Sinon, la consommation des ressources sera trop élevée et peut entraîner un épuisement des ressources.
+Oui, les connexions sont fermées au niveau JVM et à différents points de l’infrastructure réseau. Cependant, cela sera trop tard pour tout service de production. Les connexions doivent être explicitement fermées lorsqu’elles ne sont plus nécessaires ou renvoyées au pool lors de l’utilisation du pool de connexions. Sinon, la consommation des ressources sera trop élevée et peut entraîner un épuisement des ressources.
 
-##### Si la limite de connexion maximale est atteinte, cela affecte-t-il les licences et entraîne-t-il des coûts supplémentaires ?
+##### Si la limite de connexion maximale est atteinte, cela affecte-t-il les licences et entraîne-t-il des coûts supplémentaires ?
 
-Non, aucune licence ou aucun coût n’est associé à cette limite. C&#39;est une limite technique.
+Non, cette limite n’est associée à aucune licence ni aucun coût. Il s’agit d’une limite technique.
 
-##### À quel point sommes-nous proches de la limite ? Quelle est la limite maximale ?
+##### Comment savoir si nous nous approchons de la limite ? Quelle est la limite maximale ?
 
-L’alerte est déclenchée lorsque les connexions dépassent 750. La limite maximale est de 1 000 connexions par instance AEM.
+L’alerte est déclenchée lorsque le nombre de connexions dépasse 750. La limite maximale est de 1 000 connexions par instance AEM.
 
-##### Cette limite s&#39;applique-t-elle aux VPN ?
+##### Cette limite s’applique-t-elle aux VPN ?
 
-Oui, la limite s&#39;applique aux connexions utilisant le réseau avancé, y compris les VPN.
+Oui, la limite s’applique aux connexions utilisant la mise en réseau avancée, y compris les VPN.
 
-##### Si nous utilisons une adresse IP sortante dédiée, cette limite sera-t-elle toujours applicable ?
+##### Si nous utilisons une adresse IP de sortie dédiée, cette limite sera-t-elle toujours applicable ?
 
-Oui, la limite est toujours applicable si vous utilisez une adresse IP sortante dédiée.
+Oui, la limite est toujours applicable si vous utilisez une adresse IP de sortie dédiée.
