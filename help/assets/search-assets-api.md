@@ -2,7 +2,7 @@
 title: Recherche dans l’API Assets
 description: Découvrez comment utiliser l’API Search Assets.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 1%
@@ -58,4 +58,3 @@ headers: {
 Pour appeler l’API de recherche, un jeton IMS doit être défini dans la variable `Authorization` détails. Le jeton IMS est récupéré à partir d’un compte technique. Voir [Récupération des informations d’identification AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) pour créer un compte technique. Voir [Génération du jeton d’accès](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) pour générer le jeton IMS et l’utiliser de manière appropriée dans l’en-tête de requête de l’API de recherche de ressources.
 
 Pour consulter des exemples de requête, des exemples de réponse et des codes de réponse, voir [Recherche dans l’API Assets](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
-
