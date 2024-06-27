@@ -4,7 +4,7 @@ description: Utilisez le sélecteur de ressources pour rechercher, trouver et r�
 contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
+source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 39%
@@ -404,8 +404,8 @@ Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de
 
 * [Méthodes de communication](#prereqs)
 * Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez disposer de licences pour :
-   * Référentiel Assets (par exemple, as a Cloud Service Experience Manager Assets)
-   * Dynamic Media AEM
+   * Référentiel Assets (as a Cloud Service Experience Manager Assets, par exemple).
+   * AEM Dynamic Media.
 * Uniquement [ressources approuvées](#approved-assets.md) sont disponibles pour garantir la cohérence de la marque.
 
 ### Intégration pour Dynamic Media avec les fonctionnalités OpenAPI{#adobe-app-integration-polaris}
