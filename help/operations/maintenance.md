@@ -4,10 +4,10 @@ description: Découvrez les tâches de maintenance dans AEM as a Cloud Service e
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 80%
+source-wordcount: '2106'
+ht-degree: 39%
 
 ---
 
@@ -28,7 +28,7 @@ Dans les versions précédentes d’AEM, vous pouviez configurer les tâches de 
 >
 >Adobe se réserve le droit de remplacer les paramètres de configuration de la tâche de maintenance d’un client ou d’une cliente afin d’atténuer des problèmes tels que la dégradation des performances.
 
-Le tableau suivant illustre les tâches de maintenance disponibles au moment de la diffusion d’AEM as a Cloud Service.
+Le tableau suivant illustre les tâches de maintenance disponibles.
 
 <table style="table-layout:auto">
  <tbody>
@@ -45,26 +45,16 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   </tr>
   <tr>
     <td>Purge de version</td>
-    <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant une date à déterminer en 2024), la purge est désactivée et sera activée à l’avenir avec une valeur par défaut de 7 ans ; les clients pourront la configurer avec des valeurs personnalisées plus faibles (30 jours, par exemple).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->La purge est activée par défaut pour les nouveaux environnements (ceux créés à partir d’une date à déterminer en 2024) avec les valeurs ci-dessous, et les clients peuvent la configurer avec des valeurs personnalisées.
-     <ol>
-       <li>Les versions de plus de 30 jours sont supprimées</li>
-       <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
-       <li>Quelle que soit la règle ci-dessus, la version la plus récente est conservée.</li>
-       <br>Il est recommandé aux client(e)s qui ont des exigences réglementaires pour effectuer le rendu des pages du site exactement telles qu’elles s’affichaient à une date spécifique de faire appel à des services externes spécialisés.
-     </ol></td>
+    <td>Client</td>
+    <td>La purge de version est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
   </td>
   </tr>
   <tr>
     <td>Purge du journal d’audit</td>
-    <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant une date à déterminer en 2024), la purge est désactivée et sera activée à l’avenir avec une valeur par défaut de 7 ans ; les clients pourront la configurer avec des valeurs personnalisées plus faibles (30 jours, par exemple).<br><br> <!-- See above for the two line breaks -->La purge des nouveaux environnements (ceux créés à partir d’une date à déterminer en 2024) sera activée par défaut sous la variable <code>/content</code> du référentiel, selon le comportement suivant :
-     <ol>
-       <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
-       <li>Pour le contrôle du DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
-       <li>Pour le contrôle des pages, les journaux de plus de 3 jours sont supprimés.</li>
-       <br>Il est recommandé aux client(e)s qui ont des exigences réglementaires pour produire des journaux d’audit non modifiables de faire appel à des services externes spécialisés.
-     </ol></td>
+    <td>Client</td>
+    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
    </td>
   </tr>
   <tr>
@@ -200,3 +190,197 @@ Exemple de code 3 (mensuel)
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+## Tâches de maintenance de purge de version et de purge du journal d’audit {#purge-tasks}
+
+La purge des versions et le journal d’audit réduit la taille du référentiel et, dans certains cas, peut améliorer les performances.
+
+>[!NOTE]
+>
+>Adobe recommande aux clients de ne pas configurer la purge de version.
+
+### Paramètres par défaut {#defaults}
+
+Actuellement, la purge n’est pas activée par défaut, mais cela changera à l’avenir. Les environnements créés avant l’activation de la purge par défaut auront un seuil plus conservateur, de sorte que la purge ne se produise pas de manière inattendue. Pour plus d’informations sur la stratégie de purge par défaut, reportez-vous aux sections Purge de version et Purge du journal d’audit ci-dessous.
+<!-- Version purging and audit log purging are on by default, with different default values for environments with ids higher than **TBD** versus those with ids lower than that value. -->
+
+<!-- ### Overriding the default values with a new configuration {#override} -->
+
+Les valeurs de purge par défaut peuvent être remplacées en déclarant un fichier de configuration et en le déployant, comme décrit ci-dessous.
+
+<!-- The reason for this behavior is to clarify the ambiguity over whether the default purge values would take effect once you remove the declaration. -->
+
+### Application d’une configuration {#configure-purge}
+
+Déclarez un fichier de configuration et déployez-le, comme décrit dans les étapes suivantes.
+
+>[!NOTE]
+>Une fois que vous avez déployé le noeud de purge de version dans le fichier de configuration, vous devez le conserver déclaré et ne pas le supprimer. Le pipeline de configuration échoue si vous tentez de le faire.
+> 
+>De même, une fois que vous avez déployé le noeud de purge du journal d’audit dans le fichier de configuration, vous devez le conserver déclaré et ne pas le supprimer.
+
+**1** - créez la structure de dossiers et de fichiers suivante dans le dossier de niveau supérieur de votre projet dans Git :
+
+```
+config/
+     mt.yaml
+```
+
+**2** - Déclarez les propriétés dans le fichier de configuration, qui incluent :
+
+* une propriété &quot;type&quot; avec la valeur &quot;MaintenanceTasks&quot;.
+* une propriété &quot;version&quot; (nous sommes actuellement à la version 1).
+* un objet &quot;metadata&quot; facultatif avec la propriété `envTypes` avec une liste séparée par des virgules du type d’environnement (dev, stage, prod) pour lequel cette configuration est valide. Si aucun objet de métadonnées n’est déclaré, la configuration est valide pour tous les types d’environnements.
+* un objet de données avec les deux `versionPurge` et `auditLogPurge` objets.
+
+Voir les définitions et la syntaxe de la variable `versionPurge` et `auditLogPurge` en dessous.
+
+Vous devez structurer la configuration comme dans l’exemple suivant :
+
+```
+kind: "MaintenanceTasks"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  versionPurge:
+    maximumVersions: 15
+    maximumAgeDays: 20
+    paths: ["/content"]
+    minimumVersions: 1
+    retainLabelledVersions: false
+  auditLogPurge:
+    rules:
+      - replication:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+      - pages:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+      - dam:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+```
+
+Gardez à l’esprit que pour que la configuration soit valide :
+
+* toutes les propriétés doivent être définies. Il n’existe aucun paramètre par défaut hérité.
+* les types (entiers, chaînes, valeurs booléennes, etc.) dans les tableaux de propriétés ci-dessous doivent être respectés.
+
+>[!NOTE]
+>Vous pouvez utiliser `yq` pour valider localement la mise en forme YAML de votre fichier de configuration (par exemple, `yq mt.yaml`).
+
+**3** - Configurez les pipelines de configuration hors production et en production.
+
+Les environnements de développement rapide ne prennent pas en charge la purge. Pour les autres types d’environnements dans les programmes de production (non Sandbox), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager.
+
+Voir [configuration des pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et [configuration des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) pour plus d’informations.
+
+### Purge de version {#version-purge}
+
+>[!NOTE]
+>
+>Adobe recommande aux clients de ne pas configurer la purge de version.
+
+#### Valeurs par défaut de la purge de version {#version-purge-defaults}
+
+<!-- For version purging, environments with an id higher than **TBD** have the following default values: -->
+
+Actuellement, la purge n’est pas activée par défaut, mais cela changera à l’avenir.
+
+Les environnements créés après l’activation de la purge par défaut auront les valeurs par défaut suivantes :
+
+* Les versions de plus de 30 jours sont supprimées.
+* Les cinq versions les plus récentes des 30 derniers jours sont conservées.
+* Quelle que soit la règle ci-dessus, la version la plus récente (en plus du fichier actif) est conservée.
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+Les valeurs par défaut des environnements créés avant l’activation de la purge par défaut sont répertoriées ci-dessous, mais il est recommandé de les réduire afin d’optimiser les performances.
+
+* Les versions de plus de 7 ans sont supprimées.
+* Toutes les versions des 7 dernières années sont conservées.
+* Au bout de 7 ans, les versions autres que la version la plus récente (en plus du fichier actif) sont supprimées.
+
+#### Propriétés de purge de version {#version-purge-properties}
+
+Les propriétés autorisées sont répertoriées ci-dessous.
+
+Les colonnes indiquant *default* indiquer les valeurs par défaut à l’avenir, lors de l’application des valeurs par défaut ; *À déterminer* reflète un identifiant d’environnement qui n’est toujours pas déterminé.
+
+| Propriétés | valeur par défaut future pour envs > À déterminer | valeur par défaut future des jalons&lt;=À déterminer | obligatoire | Type | Valeurs |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| chemin(s) d’accès | [&quot;/content&quot;] | [&quot;/content&quot;] | Oui | tableau de chaînes | Spécifie les chemins sous lesquels purger les versions lors de la création de nouvelles versions.  Les clients doivent déclarer cette propriété, mais la seule valeur autorisée est &quot;/content&quot;. |
+| maximumAgeDays | 30 | 2557 (7 ans + 2 jours bissextiles) | Oui | Entier | Toute version antérieure à la valeur configurée est supprimée. Si la valeur est 0, la purge n’est pas effectuée en fonction de l’âge de la version. |
+| maximumVersions | 5 | 0 (aucune limite) | Oui | Entier | Toute version antérieure à la n dernière version est supprimée. Si la valeur est 0, la purge n’est pas effectuée en fonction du nombre de versions. |
+| minimumVersions | 1 | 1 | Oui | Entier | Nombre minimum de versions qui sont conservées, indépendamment de l’âge. Notez qu’au moins 1 version est toujours conservée ; sa valeur doit être 1 ou supérieure. |
+| keepLabeleledVersioned | false | false | Oui | booléen | Détermine si les versions explicitement étiquetées seront exclues de la purge. Pour une meilleure optimisation du référentiel, il est recommandé de définir cette valeur sur false. |
+
+
+**Interactions de propriété**
+
+Les exemples suivants illustrent la manière dont les propriétés interagissent lorsqu’elles sont combinées.
+
+Exemple :
+
+```
+maximumAgeDays = 30
+maximumVersions = 10
+minimumVersions = 2
+```
+
+S’il existe 11 versions au jour 23, la version la plus ancienne sera purgée la prochaine fois que la tâche de maintenance de purge sera exécutée, puisque la variable `maximumVersions` est définie sur 10.
+
+S’il existe 5 versions au jour 31, seules 3 versions seront purgées depuis la variable `minimumVersions` est définie sur 2.
+
+Exemple :
+
+```
+maximumAgeDays = 30
+maximumVersions = 0
+minimumVersions = 1
+```
+
+Aucune version ultérieure à 30 jours ne sera purgée depuis le `maximumVersions` est définie sur 0.
+
+Une version de plus de 30 jours sera conservée.
+
+### Purge du journal d’audit {#audit-purge}
+
+#### Valeurs par défaut de la purge du journal d’audit {#audit-purge-defaults}
+
+<!-- For audit log purging, environments with an id higher than **TBD** have the following default values: -->
+
+Actuellement, la purge n’est pas activée par défaut, mais cela changera à l’avenir.
+
+Les environnements créés après l’activation de la purge par défaut auront les valeurs par défaut suivantes :
+
+* Les journaux de réplication, de gestion des actifs numériques et d’audit de page datant de plus de 7 jours sont supprimés.
+* Tous les événements possibles sont consignés.
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+Les valeurs par défaut des environnements créés avant l’activation de la purge par défaut sont répertoriées ci-dessous, mais il est recommandé de les réduire afin d’optimiser les performances.
+
+* Les journaux de réplication, de gestion des actifs numériques et d’audit de page datant de plus de 7 ans sont supprimés.
+* Tous les événements possibles sont consignés.
+
+>[!NOTE]
+>Il est recommandé que les clients, qui ont des exigences réglementaires pour produire des journaux d’audit non modifiables, s’intègrent à des services externes spécialisés.
+
+#### Propriétés de purge du journal d’audit {#audit-purge-properties}
+
+Les propriétés autorisées sont répertoriées ci-dessous.
+
+Les colonnes indiquant *default* indiquer les valeurs par défaut à l’avenir, lors de l’application des valeurs par défaut ; *À déterminer* reflète un identifiant d’environnement qui n’est toujours pas déterminé.
+
+
+| Propriétés | valeur par défaut future pour envs > À déterminer | valeur par défaut future des jalons&lt;=À déterminer | obligatoire | Type | Valeurs |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| règles | - | - | Oui | Objet | Un ou plusieurs des noeuds suivants : réplication, pages, dam. Chacun de ces noeuds définit des règles, avec les propriétés ci-dessous. Toutes les propriétés doivent être déclarées. |
+| maximumAgeDays | 7 jours | pour tous, 2557 (7 ans + 2 jours bissextiles) | Oui | integer | Pour la réplication, les pages ou le dam : nombre de jours pendant lesquels les journaux d’audit sont conservés. Les journaux d’audit antérieurs à la valeur configurée sont purgés. |
+| contentPath | &quot;/content&quot; | &quot;/content&quot; | Oui | Chaîne | Chemin d’accès sous lequel les journaux d’audit seront purgés, pour le type associé. Doit être défini sur &quot;/content&quot;. |
+| types | toutes les valeurs | toutes les valeurs | Oui | Tableau d&#39;énumération | Pour **réplication**, les valeurs énumérées sont : Activer, Désactiver, Supprimer, Test, Inverser, Sondage interne. Pour **pages**, les valeurs énumérées sont : PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Pour **dam**, les valeurs énumérées sont : ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT,_UPDATED, ACCEPTED, TÉLÉCHARGÉ, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJETÉ. |
