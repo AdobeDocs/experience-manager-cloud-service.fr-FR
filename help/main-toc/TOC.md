@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: c7c881bb1c235007ba14684959494f08ed27aa67
 workflow-type: tm+mt
-source-wordcount: '5073'
-ht-degree: 99%
+source-wordcount: '5128'
+ht-degree: 98%
 
 ---
 
@@ -589,6 +589,19 @@ ht-degree: 99%
       + [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
       + [Gérer les balises](/help/assets/tagging-management-assets-view.md)
       + [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+   + Gestion de Content Hub {#content-hub}
+      + [Vue d’ensemble](/help/assets/product-overview.md)
+      + [Déploiement de Content Hub](/help/assets/deploy-content-hub.md)
+      + [Configuration de l’interface utilisateur de Content Hub](/help/assets/configure-content-hub-ui-options.md)
+      + [Chargement ou importation de ressources approuvées par la marque dans Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [Recherche de ressources dans Content Hub](/help/assets/search-assets-content-hub.md)
+      + [Propriétés des ressources](/help/assets/asset-properties-content-hub.md)
+      + [Partage de ressources dans Content Hub](/help/assets/share-assets-content-hub.md)
+      + [Téléchargement de ressources à l’aide de Content Hub](/help/assets/download-assets-content-hub.md)
+      + [Gestion des collections dans Content Hub](/help/assets/collections-content-hub.md)
+      + [Modification d’images à l’aide d’Adobe Express dans Content Hub](/help/assets/edit-images-content-hub.md)
+      + [Statistiques sur les ressources dans Content Hub](/help/assets/insights-content-hub.md)
    + Bonnes pratiques{#best-practices}
       + [Bonnes pratiques de recherche](/help/assets/search-best-practices.md)
       + [Gestion des métadonnées et bonnes pratiques](/help/assets/metadata-best-practices.md)
