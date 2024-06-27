@@ -4,10 +4,10 @@ description: Tirez parti du Centre d’actions pour agir facilement sur les inci
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 7630481aab89b31057509f23aab334e17c537257
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 64%
+source-wordcount: '988'
+ht-degree: 55%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 64%
 
 AEM as a Cloud Service envoie au Centre d’actions des notifications par e-mail en cas d’incident critique nécessitant une action immédiate, ainsi que des recommandations proactives pour les optimisations. Ces incidents peuvent être par exemple une file d’attente bloquée ou un jeu d’informations d’identification arrivant à expiration ; l’ensemble des types de notification du Centre d’actions peut être consulté dans le [tableau ci-dessous](#supported-notification-types), qui s’agrandira au fil du temps.
 
-Lorsqu’une notification électronique du Centre d’actions est reçue, vous pouvez cliquer dessus pour ouvrir le Centre d’actions d’AEM as a Cloud Service, avec une fenêtre contextuelle qui affiche un contexte supplémentaire expliquant l’action à entreprendre par un client.
+Lorsqu’une notification par e-mail du Centre d’actions est reçue, vous pouvez cliquer dessus pour ouvrir le Centre d’actions d’AEM as a Cloud Service avec une fenêtre contextuelle présentant un contexte supplémentaire expliquant l’action à entreprendre par un client.
 
 Outre l’affichage d’informations sur la notification par e-mail ouverte, le Centre d’actions sert de hub où vous pouvez afficher et gérer l’ensemble des notifications actuelles et antérieures. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -76,6 +76,12 @@ Le tableau suivant répertorie les types de notifications actuellement pris en c
 | File d’attente de réplication bloquée | Incident | Débloquer la file d’attente en suivant les instructions de la [documentation de réplication](/help/operations/replication.md#troubleshooting) |
 | Requête GraphQL persistante non valide | Incident | Correction d’une requête GraphQL non valide en référençant [Documentation de dépannage des requêtes GraphQL persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Pic de trafic à l’origine | Incident | Protect votre origine en configurant des règles de filtrage du trafic de limite de taux qui se déclenchent à des seuils inférieurs à ceux du pic de trafic par défaut à l’alerte d’origine.  Voir [Blocage des attaques DoS et DDoS à l’aide de règles de trafic](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentation sur les règles de filtrage du trafic, qui fait référence à un tutoriel. |
+| Les pages contiennent un grand nombre de noeuds | Proactif | Réduire le nombre total de noeuds dans une page. Voir [Documentation sur la complexité des pages](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
+| Grand nombre d’instances de workflow en cours d’exécution | Proactif | Arrêtez les workflows en cours d’exécution qui ne sont plus nécessaires. Découvrez comment [configurer une tâche de purge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Expiration du certificat S2S | Proactif | Découvrez comment actualiser des informations d’identification dans la [documentation sur la génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials). | Nombre de connexions élevé | Proactif | En savoir plus sur le pool de connexions [Mise en pool de connexions avec la documentation mise en réseau avancée](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Mappage des utilisateurs du service obsolète | Proactif | Découvrez comment utiliser le nouveau format de mappage des utilisateurs de Sling Service, comme indiqué dans [Bonnes pratiques pour le mappage des utilisateurs et la définition d’utilisateur du service Sling](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| Nombre de connexions élevé | Proactif | En savoir plus sur le pool de connexions dans [Documentation sur les réseaux avancée](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Nombre de connexions élevé | Proactif | En savoir plus sur le pool de connexions dans [Documentation sur les réseaux avancée](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
+| Utilisateurs ajoutés directement au groupe personnalisé | Proactif | Les utilisateurs doivent être ajoutés aux groupes IMS appropriés et ces groupes IMS doivent être ajoutés en tant que membres des groupes AEM. Aligner sur [Bonnes pratiques IMS](/help/security/ims-support.md) | |
+| Contenu JCR manquant | Proactif | Ajoutez le noeud de contenu JCR manquant. Voir [Documentation sur Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Workflows terminés non purgés | Proactif | Réduisez le nombre d’instances de workflow et améliorez les performances en purgeant les instances de workflow qui ont plus de 90 jours. Découvrez comment [configuration des tâches de maintenance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance) | |
+| Type de ressource Sling manquant dans la page | Proactif | Ajoutez le noeud de type de ressource Sling manquant. Voir [Documentation sur Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
