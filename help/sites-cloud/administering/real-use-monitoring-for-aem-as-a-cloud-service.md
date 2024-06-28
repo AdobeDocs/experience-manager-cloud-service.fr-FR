@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la surveillance de l’utilisation rée
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
+source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,6 @@ Le service de surveillance à usage réel est bénéfique pour tous les clients.
 
 Pour tous les clients Adobe, ce service fournit des informations précieuses sur les interactions utilisateur. Les clients qui utilisent leur propre réseau de diffusion de contenu peuvent bénéficier de rapports de trafic simplifiés, car Adobe intègre désormais directement la collecte de données, rendant ainsi inutile la création de rapports distincts lors des cycles de renouvellement.
 
-Souhaitez-vous déverrouiller tout le potentiel de votre site web en utilisant l’outil de visualisation de l’explorateur RUM des Adopteurs anticipés d’Adobe pour obtenir des informations utiles sur l’engagement de votre site web ? Cet outil peut fournir des informations sur les performances de votre page, y compris des mesures sur le nombre de clics, les taux de conversion des principales versions Web (CWV), les conversions et les cartes de parcours des clients. Grâce à ces informations puissantes, vous pouvez optimiser vos expériences numériques pour répondre plus efficacement aux besoins de vos utilisateurs. Si vous souhaitez en savoir plus et obtenir un accès, envoyez-nous un e-mail à l’adresse `rum-explorer@adobe.com`.
-
 ## Comprendre le fonctionnement du service de surveillance d’utilisation réelle {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager (AEM) utilise la surveillance de l’utilisation réelle (RUM) pour aider les clients et les Adobes à comprendre la manière dont les visiteurs interagissent avec AEM sites. Cela les aide à diagnostiquer les problèmes de performance et à mesurer l’efficacité des expériences. RUM protège la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle n’est collectée.
@@ -47,7 +45,7 @@ En tant qu’opérateur de site, aucune inscription supplémentaire n’est requ
 
 ## Échantillonnage des données du service de surveillance d’utilisation réelle {#rum-service-data-sampling}
 
-Les solutions d’analyse web traditionnelles tentent de collecter des données sur chaque visiteur. Le service RUM d’AEM ne capture que les informations provenant d’une petite fraction de pages vues. Le service est censé être échantillonné et rendu anonyme plutôt qu’un remplacement pour les analyses. Par défaut, le ratio d’échantillonnage des pages est de 1:100. Pour l’instant, les opérateurs du site ne peuvent ni augmenter ni diminuer le taux d’échantillonnage. Pour estimer précisément le trafic total, pour chaque 100 pages vues, les données sont collectées à partir de 1, ce qui vous donne une approximation fiable du trafic global.
+Les solutions d’analyse web traditionnelles tentent de collecter des données sur chaque visiteur. AEM service RUM  capture uniquement les informations provenant d’une petite fraction de pages vues. Le service est censé être échantillonné et rendu anonyme plutôt qu’un remplacement pour les analyses. Par défaut, le ratio d’échantillonnage des pages est de 1:100. Pour l’instant, les opérateurs du site ne peuvent ni augmenter ni diminuer le taux d’échantillonnage. Pour estimer précisément le trafic total, pour chaque 100 pages vues, les données sont collectées à partir de 1, ce qui vous donne une approximation fiable du trafic global.
 
 Lorsque vous décidez si les données sont collectées, elles sont effectuées page vue par page vue et il devient pratiquement impossible de suivre les interactions sur plusieurs pages. Par conception, RUM n’a aucun concept de visiteurs ou de sessions, uniquement des pages vues.
 
@@ -108,7 +106,7 @@ Lorsque vous analysez les données RUM, il peut y avoir des écarts dans les pag
 
 1. **La variable `/.rum` Le chemin est bloqué sur mon site. Comment dois-je le réparer ?**
 
-   La variable `/.rum` Le chemin d’accès est requis pour que la collection RUM fonctionne. Si vous disposez d’un réseau de diffusion de contenu devant ce que Adobe fournit dans le cadre d’AEM as a Cloud Service, assurez-vous que la variable `/.rum` chemin d’accès transfère vers la même origine AEM que le reste de votre contenu AEM. Assurez-vous également qu’il n’est pas ajusté.
+   La variable `/.rum` Le chemin d’accès est requis pour que la collection RUM fonctionne. Si vous disposez d’un réseau de diffusion de contenu devant ce que Adobe fournit dans AEM as a Cloud Service, assurez-vous que la variable `/.rum` chemin d’accès transfère vers la même origine AEM que le reste de votre contenu AEM. Assurez-vous également qu’il n’est pas ajusté.
 
 1. **La collecte RUM est-elle comptabilisée dans les demandes de contenu à des fins contractuelles ?**
 
