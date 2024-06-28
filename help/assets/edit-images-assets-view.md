@@ -4,7 +4,7 @@ description: Modifiez les images à l’aide des options optimisées d’ [!DNL 
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 9a21c9218e45bb6ce91263c9798e3b1c99f369b4
+source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 32%
@@ -13,7 +13,7 @@ ht-degree: 32%
 
 # Modifier des images dans [!DNL Assets view] {#edit-images-in-assets-view}
 
-La vue Ressource permet de modifier des images de base, notamment de redimensionner, de supprimer l’arrière-plan, de recadrer et de convertir les formats JPEG et PNG. En outre, il permet une modification avancée via l’intégration à Adobe Express. Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en tant que nouvelle version de cette image. Le contrôle de version vous permet de revenir à la ressource d’origine ultérieurement, si nécessaire. Pour modifier une image, [ouvez son aperçu](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) et cliquez sur **Modifier l’image**.
+La vue Assets permet de modifier des images de base, notamment de redimensionner, de supprimer l’arrière-plan, de recadrer et de convertir les formats JPEG et PNG. En outre, il permet une modification avancée via l’intégration à Adobe Express. Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en tant que nouvelle version de cette image. Le contrôle de version vous permet de revenir à la ressource d’origine ultérieurement, si nécessaire. Pour modifier une image, [ouvez son aperçu](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) et cliquez sur **Modifier l’image**.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ La vue Ressource permet de modifier des images de base, notamment de redimension
 
 ## Modifier l’image {#edit-image}
 
-Land sur la vue Ressource, à l’aide du lien - [Affichage des ressources](https://experience.adobe.com/#/assets) et en sélectionnant le référentiel approprié. Pour recevoir un accès, contactez l’administrateur de votre entreprise.
+Accédez à la vue Assets à l’aide du lien - [Vue Assets](https://experience.adobe.com/#/assets) et en sélectionnant le référentiel approprié. Pour recevoir un accès, contactez l’administrateur de votre entreprise.
 Pour toute information de référence supplémentaire, voir [Prise en main de la vue Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Présentation de l’interface utilisateur de la vue Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), et [Cas d’utilisation de la vue Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -88,11 +88,11 @@ Les utilisateurs disposant de droits express peuvent utiliser l’éditeur expre
 ![s’exprimer dans l’IU de base](/help/assets/assets/express-in-essentials-ui.jpg)
 Pour modifier des images à l’aide de [!DNL Adobe Express] incorporez l’éditeur, procédez comme suit :
 
-1. Accédez à la vue AEM Assets à l’aide du lien - [AEM Affichage des ressources](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié.
+1. Accédez à la vue AEM Assets à l’aide du lien - [Vue AEM Assets](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié.
 1. Cliquez sur **Assets**, saisissez un dossier et sélectionnez une image.
 1. Cliquez sur **Ouvrir dans Adobe Express**. L’image s’ouvre sur une zone de travail express.
 1. Apportez les modifications requises à l’image.
-1. Si votre projet nécessite l’ajout de pages supplémentaires, cliquez sur **Ajouter**, sélectionnez Assets, saisissez un dossier, sélectionnez une image à importer sur la page de zone de travail, puis effectuez les modifications requises sur l’image.
+1. Si votre projet nécessite l’ajout de pages supplémentaires, cliquez sur **Ajouter**, sélectionnez des ressources, saisissez un dossier, sélectionnez une image à importer sur la page de zone de travail, puis effectuez les modifications requises sur l’image.
 1. Pour enregistrer les images, cliquez sur **Enregistrer**. La boîte de dialogue d’enregistrement s’affiche.
 
    >[!NOTE]
@@ -197,9 +197,9 @@ TBD: Insert a video of the available social media options.
 
 * Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets.
 
-* Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
+* Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General#support).
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
