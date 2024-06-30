@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 45%
+source-wordcount: '1932'
+ht-degree: 43%
 
 ---
 
@@ -86,6 +86,14 @@ Les fonctionnalités Dynamic Media avec OpenAPI étendent la gestion des actifs 
 **D’autres options sont disponibles dans le tableau de bord Assets Insights**
 
 Le décompte des ressources par type et taille de ressource est désormais disponible dans le tableau de bord Statistiques sur Assets . Ces options fournissent des données en temps réel dans votre environnement de vue Assets. Elles détaillent le nombre et le pourcentage de ressources par tranche de taille et type de ressource.
+
+**Mises à jour de l’éditeur d’Adobes Express incorporé**
+
+* Expérience utilisateur améliorée pour l’enregistrement en tant que nouvelle ressource et l’enregistrement en tant que nouvelle version.
+
+* L’exportation de documents Express de plusieurs pages (auparavant une seule page était prise en charge) au format PDF de plusieurs pages et image. La sélection des formats d’image enregistre chaque page en tant que ressource distincte dans la gestion des actifs numériques pour la distribution en aval.
+
+* Prise en charge de l’ajout de métadonnées dans la boîte de dialogue Enregistrer lors de l’enregistrement d’une ressource.
 
 <!--
 

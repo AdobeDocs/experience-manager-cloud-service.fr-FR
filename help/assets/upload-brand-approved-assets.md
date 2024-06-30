@@ -2,9 +2,9 @@
 title: Charger les ressources approuvées par la marque vers [!DNL Content Hub]
 description: Découvrez comment télécharger les ressources approuvées par la marque vers Content Hub
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Chargement de ressources approuvées pour la marque dans Content Hub {#upload-brand-approved-assets-content-hub}
 
-Les administrateurs peuvent ajouter des ressources à Content Hub à partir du système de fichiers local ou importer des ressources à partir de OneDrive ou de sources de données Dropbox. Toutes les ressources s’affichent au niveau supérieur dans Content Hub, quelle que soit la structure de dossiers disponible sur votre système de fichiers local ou OneDrive et les sources de données Dropbox pour améliorer les fonctionnalités de recherche.
+[Utilisateurs de Content Hub disposant des droits d’ajout de ressources](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) Vous pouvez ajouter des ressources à Content Hub à partir du système de fichiers local ou importer des ressources à partir de OneDrive ou de sources de données Dropbox. Toutes les ressources s’affichent au niveau supérieur dans Content Hub, quelle que soit la structure de dossiers disponible sur votre système de fichiers local ou OneDrive et les sources de données Dropbox pour améliorer les fonctionnalités de recherche.
 
 Pour améliorer davantage la recherche de ressources, Content Hub vous permet d’effectuer les opérations suivantes :
 
