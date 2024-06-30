@@ -1,9 +1,9 @@
 ---
 title: Modifier des images dans Content Hub à l’aide d’Adobe Express
 description: Modifier des images dans Content Hub à l’aide d’Adobe Express
-source-git-commit: 52166c1983218d619c416b4c095e8954e3010dc5
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Content Hub vous permet de créer du contenu avec Adobe Express. Vous pouvez mod
 
 ## Conditions préalables {#prereqs-edit-image-content-hub}
 
-Droits d’accès à l’Adobe Express et [Utilisateurs consommateurs de ressources Content Hub avec des autorisations d’envoi](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) peut modifier des images à l’aide de Content Hub.
+Droits d’accès à l’Adobe Express et [Utilisateurs de Content Hub disposant des droits de remix de ressources vers de nouvelles variations](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) peut modifier des images à l’aide de Content Hub.
 
 >[!NOTE]
 >

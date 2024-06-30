@@ -2,9 +2,9 @@
 title: Gestion des collections dans Content Hub
 description: Découvrez comment gérer les collections dans Content Hub
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '617'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,10 @@ Une collection fait référence à un ensemble de ressources qui peuvent être p
 * **Supprimer**: supprimez l’ensemble de la collection.
 
 Il permet aux utilisateurs d’accéder facilement aux différentes ressources disponibles dans et de les gérer. [!DNL Content Hub].
+
+## Conditions préalables {#prerequisites}
+
+[Utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Création de collections{#create-collections}
 

@@ -2,9 +2,9 @@
 title: Partager Assets dans [!DNL the Content Hub]
 description: Partager Assets dans [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ![Image de la bannière de ressources](assets/share-assets-banner.png)
 
 Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de [!DNL the Content Hub] utilisateurs. La fonctionnalité permet aux utilisateurs autorisés d’accéder aux ressources partagées avec eux et de les télécharger. Lors du téléchargement de ressources à partir d’un lien partagé, [!DNL the Content Hub] utilise un service asynchrone qui offre un téléchargement plus rapide et ininterrompu.
+
+## Conditions préalables {#prerequisites}
+
+[Utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Partage d’une seule ressource {#share-a-single-asset}
 

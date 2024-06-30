@@ -2,9 +2,9 @@
 title: Propriétés des ressources dans [!DNL the Content Hub]
 description: Découvrez comment afficher et gérer les propriétés des ressources dans [!DNL Content Hub]
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '599'
 ht-degree: 12%
 
 ---
@@ -21,6 +21,10 @@ L’affichage des propriétés des ressources vous aide à classer les ressource
 * plus accessible : les systèmes et les utilisateurs peuvent la trouver facilement ;
 * Plus facile à gérer : vous pouvez facilement trouver des ressources avec le même ensemble de propriétés et leur appliquer des modifications.
 * Terminé : la ressource contient plus d’informations et de contexte.
+
+## Conditions préalables {#prerequisites}
+
+[Utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Affichage des propriétés d’une ressource {#properties-ui}
 

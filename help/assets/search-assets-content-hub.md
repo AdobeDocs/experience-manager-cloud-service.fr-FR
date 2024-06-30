@@ -2,9 +2,9 @@
 title: Recherche de ressources dans Content Hub
 description: Découvrez comment rechercher des ressources dans [!DNL Content Hub]
 role: User
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 ![Image de la bannière de ressources](assets/search.png)
 
 Lorsque votre référentiel contient un grand nombre de ressources, la recherche de la ressource appropriée prend du temps. [!DNL The Content Hub] search vous permet de rechercher les ressources approuvées afin que vous puissiez y effectuer des actions supplémentaires, telles que télécharger, partager ou créer des collections. Vous pouvez utiliser différentes fonctionnalités pour affiner vos résultats de recherche, par exemple, en effectuant une recherche textuelle à l’aide de filtres, en effectuant une recherche par balises intelligentes ou par balises intelligentes, en recherchant un format de fichier particulier, etc.
+
+## Conditions préalables {#prerequisites}
+
+[Utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Ce que vous pouvez rechercher  {#what-you-can-search}
 

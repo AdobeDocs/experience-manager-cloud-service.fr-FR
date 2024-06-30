@@ -2,9 +2,9 @@
 title: Téléchargement de ressources à partir de Content Hub
 description: Découvrez comment télécharger des ressources à partir du portail Content Hub
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '125'
 ht-degree: 5%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 5%
 Content Hub vous permet de télécharger et de partager vos ressources. Ces ressources peuvent inclure des images, des vidéos ou tout autre contenu numérique. Content Hub améliore l’accessibilité et l’adaptabilité pour une distribution efficace des ressources.
 
 Vous pouvez télécharger une ou plusieurs ressources à l’aide de Content Hub. Les versions d’origine de la ressource sont téléchargées.
+
+## Conditions préalables {#prerequisites}
+
+[Utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Télécharger une ressource {#download-single-asset}
 
