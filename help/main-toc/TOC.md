@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '5143'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -564,14 +564,14 @@ ht-degree: 98%
       + [Fin de vie des visionneuses DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
       + Dynamic Media avec fonctionnalités OpenAPI {#dynamic-media-open-apis}
          + [Vue d’ensemble](/help/assets/dynamic-media-open-apis-overview.md)
-         + [Approbation des ressources](/help/assets/approve-assets.md)
-         + [Intégration aux applications en aval](/help/assets/integrate-dynamic-media-open-apis.md)
+         + [Approuver des ressources](/help/assets/approve-assets.md)
+         + [Intégration à des applications en aval](/help/assets/integrate-dynamic-media-open-apis.md)
          + [API de recherche de ressources](/help/assets/search-assets-api.md)
          + [API de diffusion](/help/assets/deliver-assets-apis.md)
-         + [Limitation de la diffusion des ressources](/help/assets/restrict-assets-delivery.md)
-         + [Intégration d’AEM Assets distant à AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [Restreindre la diffusion des ressources](/help/assets/restrict-assets-delivery.md)
+         + [Intégrer AEM Assets distant à AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [Questions fréquentes](/help/assets/dynamic-media-open-apis-faqs.md)
-         + [Configuration d’un domaine personnalisé](/help/assets/configure-custom-domain.md)
+         + [Configurer des domaines personnalisés](/help/assets/configure-custom-domain.md)
    + Utilisation de la vue Ressources {#assets-view}
       + [Présentation](/help/assets/assets-view-introduction.md)
       + [Commencer](/help/assets/get-started-assets-view.md)
@@ -595,16 +595,16 @@ ht-degree: 98%
 
    + Content Hub {#content-hub}
       + [Vue d’ensemble](/help/assets/product-overview.md)
-      + [Déploiement de Content Hub](/help/assets/deploy-content-hub.md)
-      + [Configuration de l’interface utilisateur de Content Hub](/help/assets/configure-content-hub-ui-options.md)
-      + [Chargement ou importation de ressources approuvées par la marque dans Content Hub](/help/assets/upload-brand-approved-assets.md)
-      + [Recherche de ressources dans Content Hub](/help/assets/search-assets-content-hub.md)
-      + [Propriétés des ressources](/help/assets/asset-properties-content-hub.md)
-      + [Partage de ressources dans Content Hub](/help/assets/share-assets-content-hub.md)
-      + [Téléchargement de ressources à l’aide de Content Hub](/help/assets/download-assets-content-hub.md)
-      + [Gestion des collections dans Content Hub](/help/assets/collections-content-hub.md)
-      + [Modification d’images à l’aide d’Adobe Express dans Content Hub](/help/assets/edit-images-content-hub.md)
-      + [Statistiques sur les ressources dans Content Hub](/help/assets/insights-content-hub.md)
+      + [Déployer le hub de contenus](/help/assets/deploy-content-hub.md)
+      + [Configurer l’interface d’utilisation du hub de contenus](/help/assets/configure-content-hub-ui-options.md)
+      + [Charger ou importer des ressources approuvées par la marque dans le hub de contenus](/help/assets/upload-brand-approved-assets.md)
+      + [Rechercher des ressources dans le hub de contenus](/help/assets/search-assets-content-hub.md)
+      + [Propriétés de la ressource](/help/assets/asset-properties-content-hub.md)
+      + [Partager des ressources dans le hub de contenus](/help/assets/share-assets-content-hub.md)
+      + [Télécharger des ressources à l’aide du hub de contenus](/help/assets/download-assets-content-hub.md)
+      + [Gérer des collections dans le hub de contenus](/help/assets/collections-content-hub.md)
+      + [Modifier des images à l’aide d’Adobe Express dans le hub de contenus](/help/assets/edit-images-content-hub.md)
+      + [Asset Insights dans le hub de contenus](/help/assets/insights-content-hub.md)
    + Bonnes pratiques{#best-practices}
       + [Bonnes pratiques de recherche](/help/assets/search-best-practices.md)
       + [Gestion des métadonnées et bonnes pratiques](/help/assets/metadata-best-practices.md)
