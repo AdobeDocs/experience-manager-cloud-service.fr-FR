@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '1958'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -130,11 +130,11 @@ Cette version apporte une mise à niveau importante à l’éditeur de règles v
 
 * Utilisez la fonctionnalité [**Enregistrer en tant que brouillon**](/help/forms/save-core-component-based-form-as-draft.md) pour enregistrer des formulaires partiellement remplis en vue d’un envoi ultérieur. Cette fonctionnalité est utile dans les cas où les utilisateurs doivent interrompre le remplissage d’un formulaire et y revenir ultérieurement.
 
-### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
+### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
 
 Le programme d’accès anticipé d’AEM Forms vous offre une occasion unique d’accéder de manière exclusive à des innovations de pointe avant n’importe qui d’autre et d’aider à façonner leur développement. Le programme offre l’accès à de multiples innovations.
 
-Cette note de mise à jour répertorie les innovations proposées dans la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme Accès anticipé, voir [Documentation du programme d’accès anticipé AEM Forms](/help/forms/early-access-ea-features.md).
+Cette note de mise à jour répertorie les innovations proposées dans la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme d’accès anticipé, voir [Documentation du programme d’accès anticipé d’AEM Forms](/help/forms/early-access-ea-features.md).
 
 #### Amélioration des méthodes de protection des robots
 
