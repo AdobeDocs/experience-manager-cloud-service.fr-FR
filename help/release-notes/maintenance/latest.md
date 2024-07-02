@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 87%
+source-wordcount: '753'
+ht-degree: 79%
 
 ---
 
@@ -71,10 +71,10 @@ L’activation des fonctionnalités de la version 2024.6.0 fournit l’ensemble
 
 #### Forms
 
-1. Si un utilisateur ou une utilisatrice télécharge la version du SDK AEM Forms supérieure à `AEM Forms add-on v2024.05.04.00-240400`, le fichier de lot ne démarre pas le service Docker. Pour résoudre ce problème, procédez comme suit :
-   1. Téléchargez le [dossier](/help/forms/assets/sdk_hotfix.zip).
-   1. Extrayez le contenu du dossier téléchargé et copiez les fichiers `sdk.sh` et `sdk.bat`.
-   1. Remplacez les fichiers `sdk.sh` et `sdk.bat` existants par les nouveaux fichiers dans votre SDK AEM Forms.
+* Lorsque vous installez le SDK AEM et ajoutez `AEM Forms add-on v2024.05.04.00-240400`, le démarrage du service Docker échoue. Le service Docker est nécessaire pour générer un document d’enregistrement dans un environnement de développement local. Pour résoudre le problème :
+   1. Téléchargez la [correctif](/help/forms/assets/sdk_hotfix.zip). Lorsque vous téléchargez le correctif, une `.zip` est téléchargé.
+   1. Extrayez le correctif téléchargé dans un dossier.
+   1. Remplacez l’ancien `sdk.sh` et `sdk.bat` fichiers avec des fichiers plus récents dans le dossier extrait à l&#39;étape 2.
 
 ### Avis de modification {#change-notice-16799}
 
