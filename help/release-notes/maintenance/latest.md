@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
@@ -52,6 +52,15 @@ L’activation des fonctionnalités de la version 2024.6.0 fournit l’ensemble
 * SCRNS-4194 : suppression de la dépendance aux API Google Guava.
 * SCRNS-4360 : absence du bouton Gérer la publication et Publication rapide pour les personnes ne faisant pas partie de l’équipe d’administration dans le fournisseur de contenu pour les canaux.
 * SCRNS-4323 : masquer/désactiver les lancements à partir de screens.html.
+
+#### Forms
+
+* FORMS-14844 : Forms adaptatif autorise l’envoi de formulaire malgré l’échec de la vérification reCAPTCHA.
+* FORMS-14984 : Forms avec CAPTCHA ignore la validation si &quot;submitMetaData&quot; est absent des données envoyées.
+* FORMS-14477 : Les options &quot;Après&quot; et &quot;Avant&quot; de l’éditeur de règles ne fonctionnent pas dans la validation du sélecteur de date.
+* FORMS-14019 : la fonctionnalité &quot;Invoke Service&quot; de l’éditeur de règles ne fonctionne pas dans Universal Editor.
+* FORMS-14336 : lorsqu’aucun champ de formulaire n’est sélectionné, l’éditeur doit s’ouvrir en mettant l’accent sur l’ensemble de l’élément de formulaire.
+* FORMS-15061 : le cercle de chargeur persiste indéfiniment lors de l’utilisation de l’option d’appel du service dans l’éditeur de règles.
 
 ### Problèmes connus {#known-issues-16799}
 
