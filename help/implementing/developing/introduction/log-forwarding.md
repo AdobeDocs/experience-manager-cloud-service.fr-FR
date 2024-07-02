@@ -4,10 +4,10 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e007f2e3713d334787446305872020367169e6a2
+source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 2%
+source-wordcount: '1278'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Les clients qui disposent d’une licence pour un fournisseur de journalisation 
 
 Le transfert de journal est configuré en libre-service en déclarant une configuration dans Git et en la déployant via le pipeline de configuration de Cloud Manager vers les types d’environnements de développement, d’évaluation et de production dans les programmes de production (hors environnements de test).
 
-Il existe une option pour que les journaux d’AEM et Apache/Dispatcher soient acheminés par AEM infrastructure réseau avancée, telle qu’une adresse IP de sortie dédiée.
+Il existe une option pour que les journaux d’AEM et Apache/Dispatcher soient acheminés par le biais d’AEM infrastructure de mise en réseau avancée, telle qu’une adresse IP de sortie dédiée.
 
 Notez que la bande passante réseau associée aux journaux envoyés à la destination de journalisation est considérée comme faisant partie de l’utilisation des E/S réseau de votre entreprise.
 
@@ -39,7 +39,7 @@ Cet article est organisé de la manière suivante :
 * Configuration : commune à toutes les destinations de journalisation
 * Configurations de destination de journalisation : chaque destination a un format légèrement différent.
 * Formats de saisie de journal - informations sur les formats de saisie de journal
-* Mise en réseau avancée : envoi de journaux d’AEM et Apache/Dispatcher via une sortie dédiée ou via un VPN
+* Mise en réseau avancée : envoi de journaux AEM et Apache/Dispatcher via une sortie dédiée ou via un VPN
 
 
 ## Configuration {#setup}
@@ -71,7 +71,7 @@ Cet article est organisé de la manière suivante :
 
    Jetons dans la configuration (tels que `${{SPLUNK_TOKEN}}`) représentent des secrets, qui ne doivent pas être stockés dans Git. À la place, déclarez-les comme Cloud Manager  [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md) de type **secret**. Veillez à sélectionner **Tous** comme valeur de liste déroulante pour le champ Service appliqué , afin que les journaux puissent être transférés vers les niveaux d’auteur, de publication et d’aperçu.
 
-   Il est possible de définir des valeurs différentes entre les journaux CDN et AEM (y compris Apache/Dispatcher), en incluant une **cdn** et/ou **aem** après la balise **default** block, où les propriétés peuvent remplacer celles définies dans la variable **default** block ; seule la propriété enabled est requise. Un cas d’utilisation possible peut être l’utilisation d’un index Splunk différent pour les journaux CDN, comme l’exemple ci-dessous.
+   Il est possible de définir des valeurs différentes entre les journaux CDN et les journaux AEM (y compris Apache/Dispatcher) en incluant une **cdn** et/ou **aem** après la balise **default** block, où les propriétés peuvent remplacer celles définies dans la variable **default** block ; seule la propriété enabled est requise. Un cas d’utilisation possible peut être l’utilisation d’un index Splunk différent pour les journaux CDN, comme l’exemple ci-dessous.
 
    ```
       kind: "LogForwarding"
@@ -109,7 +109,7 @@ Cet article est organisé de la manière suivante :
             enabled: false
    ```
 
-1. Pour les types d’environnements autres que RDE (qui n’est actuellement pas pris en charge), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager.
+1. Pour les types d’environnement autres que RDE (qui n’est actuellement pas pris en charge), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager.
 
    * [Voir Configuration des pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [Voir Configuration des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -173,7 +173,7 @@ Chaque fichier contient plusieurs entrées de journal json, chacune sur une lign
 
 #### Journaux Azure Blob Storage AEM {#azureblob-aem}
 
-AEM journaux (y compris Apache/Dispatcher) apparaissent sous un dossier avec la convention d’affectation des noms suivante :
+Les journaux d’AEM (y compris Apache/Dispatcher) apparaissent sous un dossier avec la convention d’affectation des noms suivante :
 
 * aemaccess
 * aemerror
@@ -199,12 +199,16 @@ data:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
       token: "${{DATADOG_API_KEY}}"
+      tags:
+         tag1: value1
+         tag2: value2
       
 ```
 
 Considérations :
 
 * Créez une clé API, sans intégration avec un fournisseur cloud spécifique.
+* la propriété tags est facultative.
 
 
 ### Elasticsearch et OpenSearch {#elastic}
@@ -221,6 +225,7 @@ data:
       host: "example.com"
       user: "${{ELASTICSEARCH_USER}}"
       password: "${{ELASTICSEARCH_PASSWORD}}"
+      pipeline: "ingest pipeline name"
 ```
 
 Considérations :
@@ -228,6 +233,15 @@ Considérations :
 * Pour les informations d’identification, veillez à utiliser les informations d’identification de déploiement plutôt que les informations d’identification de compte. Il s’agit des informations d’identification générées dans un écran qui peut ressembler à cette image :
 
 ![Informations d’identification de déploiement Elastic](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* La propriété de pipeline facultative doit être définie sur le nom du pipeline d’ingestion Elasticsearch ou OpenSearch, qui peut être configuré pour acheminer l’entrée de journal vers l’index approprié. Le type de processeur du pipeline doit être défini sur *script* et le langage de script doit être défini sur *sans douleur*. Voici un exemple de fragment de script pour acheminer les entrées de journal vers un index tel que aemaccess_dev_26_06_2024 :
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+```
 
 ### HTTPS {#https}
 
