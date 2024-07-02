@@ -2,15 +2,15 @@
 title: Déployer [!DNL Content Hub]
 description: Découvrez comment déployer et activer Content Hub et accorder l’accès à des utilisateurs disposant de différents types de privilèges (chargement de ressources, utilisateurs d’Adobe Express) et comment accorder des privilèges d’administrateur aux utilisateurs.
 role: Admin
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1253'
 ht-degree: 3%
 
 ---
 
 
-# Déploiement de Content Hub {#deploy-content-hub}
+# Déployer le hub de contenus {#deploy-content-hub}
 
 ![Déploiement de Content Hub](assets/deploy-content-hub.png)
 
@@ -50,6 +50,11 @@ Pour accéder au portail Content Hub, les administrateurs doivent d’abord acti
 1. Cliquez sur **[!UICONTROL Mettre à jour]**.
 
 Content Hub est désormais activé pour Experience Manager Assets as a Cloud Service.
+
+>[!NOTE]
+>
+>Vous pouvez accéder à Content Hub et l’utiliser avec jusqu’à 250 utilisateurs de Content Hub. Contactez votre représentant Adobe si vous avez d’autres questions.
+
 
 Si vous découvrez Experience Manager Assets, cliquez sur **[!UICONTROL Ajout d’un programme]** puis fournissez les détails du programme (nom du programme, configurer pour la production) et cliquez sur **[!UICONTROL Continuer]**. Vous pouvez ensuite sélectionner **[!UICONTROL Assets]** et **[!UICONTROL Content Hub]** dans le **[!UICONTROL Solutions et modules complémentaires]** .
 
