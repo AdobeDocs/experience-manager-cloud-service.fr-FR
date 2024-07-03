@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5143'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -182,9 +182,9 @@ ht-degree: 99%
    + Notes de mise à jour de Workfront pour le connecteur amélioré Experience Manager{#workfront}
       + [Notes de mise à jour actuelles de Workfront pour le connecteur amélioré Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Notes de mise à jour pour la fonction de génération de variations {#generate-variations}
-      + [Notes de mise à jour actuelles pour la génération de variations](/help/generative-ai/release-notes-generate-variations.md)
-   + Notes de mise à jour d’Universal Editor {#univeral-editor}
-      + [Notes de mise à jour actuelles de Universal Editor](/help/release-notes/universal-editor/current.md)
+      + [Notes de mise à jour actuelles pour la fonction Générer des variations](/help/generative-ai/release-notes-generate-variations.md)
+   + Notes de mise à jour de l’éditeur universel {#univeral-editor}
+      + [Notes de mise à jour actuelles de l’éditeur universel](/help/release-notes/universal-editor/current.md)
    + [Nouveautés?](/help/release-notes/what-is-new.md)
    + [Changements notables dans AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md)
@@ -593,7 +593,7 @@ ht-degree: 99%
       + [Gérer les balises](/help/assets/tagging-management-assets-view.md)
       + [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
-   + Content Hub {#content-hub}
+   + Hub de contenus {#content-hub}
       + [Vue d’ensemble](/help/assets/product-overview.md)
       + [Déployer le hub de contenus](/help/assets/deploy-content-hub.md)
       + [Configurer l’interface d’utilisation du hub de contenus](/help/assets/configure-content-hub-ui-options.md)
