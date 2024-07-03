@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
+source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '752'
 ht-degree: 79%
 
 ---
@@ -52,9 +52,6 @@ L’activation des fonctionnalités de la version 2024.6.0 fournit l’ensemble
 * SCRNS-4194 : suppression de la dépendance aux API Google Guava.
 * SCRNS-4360 : absence du bouton Gérer la publication et Publication rapide pour les personnes ne faisant pas partie de l’équipe d’administration dans le fournisseur de contenu pour les canaux.
 * SCRNS-4323 : masquer/désactiver les lancements à partir de screens.html.
-
-#### Forms
-
 * FORMS-14844 : Forms adaptatif autorise l’envoi de formulaire malgré l’échec de la vérification reCAPTCHA.
 * FORMS-14984 : Forms avec CAPTCHA ignore la validation si &quot;submitMetaData&quot; est absent des données envoyées.
 * FORMS-14477 : Les options &quot;Après&quot; et &quot;Avant&quot; de l’éditeur de règles ne fonctionnent pas dans la validation du sélecteur de date.
