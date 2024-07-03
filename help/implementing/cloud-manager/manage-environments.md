@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2377'
 ht-degree: 70%
 
 ---
@@ -61,6 +61,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit appartenir au **P
    * Sélectionnez un [**type d’environnement**.](#environment-types)
       * Le nombre d’environnements disponibles/utilisés est indiqué entre parenthèses derrière le nom du type d’environnement.
    * Entrez un **Nom** d’environnement.
+      * Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * Fournissez une **Description** de l’environnement.
    * Si vous ajoutez un environnement de **production et d’évaluation**, vous devez indiquer un nom et une description à l’environnement de production et à celui d’évaluation.
    * Sélectionnez une **Région principale** dans la liste déroulante.
@@ -178,7 +179,7 @@ Une fois activé, vous pouvez publier du contenu dans le service d’aperçu à 
 >
 >Votre environnement doit utiliser la version AEM `2021.05.5368.20210529T101701Z` ou ultérieure pour utiliser le service d’aperçu. Vérifiez qu’un pipeline de mise à jour s’est correctement exécuté sur votre environnement afin de pouvoir utiliser le service de prévisualisation.
 
-### État des régions de publication supplémentaires {#additional-region-status}
+### État des régions Publish supplémentaires {#additional-region-status}
 
 Si vous avez activé d’autres régions de publication, vous pouvez vérifier l’état de ces régions à partir du **Environnements** carte.
 
@@ -305,7 +306,7 @@ De plus, vous pouvez vous connecter localement à partir de l’onglet **Environ
 
 ## Gestion des noms de domaine personnalisés {#manage-cdn}
 
-Les noms de domaine personnalisés sont pris en charge dans Cloud Manager pour les programmes Sites pour les services de publication et d’aperçu.
+Les noms de domaine personnalisés sont pris en charge dans Cloud Manager pour les programmes Sites pour les services de publication et de prévisualisation.
 
 >[!TIP]
 >
