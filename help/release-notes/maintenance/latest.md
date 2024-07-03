@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
+source-git-commit: 9303ecadea38d83bd71ed0d440067bae5c419940
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 79%
+source-wordcount: '944'
+ht-degree: 20%
 
 ---
 
@@ -15,79 +15,94 @@ ht-degree: 79%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 16799 {#release-16799}
+## Version 16971 {#release-16971}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 16799, publiée le 18 juin 2024. La version de maintenance précédente était la version 16544.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 16971, publiée le jeudi 3 juillet 2024. La version de maintenance précédente était la version 16799.
 
-L’activation des fonctionnalités de la version 2024.6.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
+L’activation des fonctionnalités de la version 2024.7.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
-### Améliorations {#enhancements-16799}
+### Améliorations {#enhancements-16971}
 
-* ASSETS-31977 : amélioration des opérations de déplacement, de copie et de suppression de ressources.
-* ASSETS-33618 : fonctionnalité de transcription automatique et de traduction pour les vidéos dans Dynamic Media.
-* ASSETS-35185 : action d’approbation pour ContentHub et DM et ajout de propriétés aux propriétés damAssetLucene.
-* ASSETS-35533 : ajout des propriétés DRM et CAI à l’index damAssetLucene.
-* ASSETS-37280 : gestion séquentielle des traitements pour la traduction lorsque le sous-titre source (vtt) est toujours en cours de traitement.
-* ASSETS-37559 : amélioration d’un événement de suppression de ressource.
-* ASSETS-37723 : implémentation d’un événement de publication de ressource.
-* ASSETS-37724 : implémentation d’un événement de dépublication de ressource.
-* ASSETS-38614 : améliorations de l’interface d’utilisation de partage de lien.
-* ASSETS-39601 : application automatique de l’expression régulière de validation au nom de la Live Copy de la ressource.
-* ASSETS-39454 : mise à niveau vers les visionneuses 2024.5.0 dans Quickstart.
-* CNTBF-184 : chemins d’accès de support sous `/conf` dans le retour de contenu.
+* SITES-22948 : supprimez les références commerciales dans le contenu de base d’AEM CS.
+* SITES-22141 : [Fragments de contenu] SegmentNotFoundException de CFM ModelChangeRepositoryImpl après OnRC.
+* SITES-21893 : problème de recadrage d’image sur l’instance d’auteur.
+* SITES-21788 : [Fragments de contenu] Afficher le REMARQUE dans l’éditeur de modèles CF et CF lorsque uiSchema est activé pour le modèle.
+* SITES-21688 : le déploiement MSM ne met pas à jour le chemin d’accès au fragment d’expérience (XF) sur les pages Live Copy.
+* SITES-21659 : renvoie le nom complet de l’utilisateur créant/modifiant/répliquant une ressource de modèle.
+* SITES-21609 : point d’entrée OpenAPI pour migrer les fragments de contenu d’un modèle à un autre.
+* SITES-21598 : [Ouvrir l’API] Create CFM - return error si le chemin de configuration donné n’existe pas.
+* SITES-21491 : [Ouvrir l’API] Le point de terminaison PATCH des Forces canadiennes doit respecter les relations en direct au niveau du terrain.
+* SITES-21434 : [Ouvrir l’API] Le point de GET des Forces canadiennes doit respecter les relations en direct au niveau du terrain.
+* SITES-21415 : Éditeur CF - Prise en charge des références UUID.
+* SITES-21326 : [Ouvrir l’API] Fournissez des informations sur la présence de références pour un fragment de contenu.
+* SITES-21310 : [Ouvrir l’API] Ajoutez l’identifiant du fragment de contenu dans la réponse de l’API de traduction.
+* SITES-20859 : API d’ouverture du FC - Renvoi de références lors de la récupération d’un fragment par chemin d’accès.
+* SITES-20687 : [Ouvrir l’API] Point de terminaison pour la récupération de l’état du traitement par lot.
+* SITES-20657 : [Ouvrir l’API] Permet d’indiquer une option pour le mot entier match lors du remplacement d’une chaîne à l’aide de `FindAndReplace` point de terminaison .
+* SITES-20587 : [Ouvrir l’API] Créer `COPY` point de terminaison pour les fragments de contenu.
+* SITES-20584 : [Ouvrir l’API] Optimiser la récupération des références.
+* SITES-20308 : [Ouvrir l’API] Activez le traitement par lot sur l’API .
+* SITES-19976 : [Ouvrir l’API] Schéma d’interface utilisateur générique pour les champs conditionnels.
+* SITES-19556 : [Fragments de contenu] Mettez à jour uiSchema s’il existe lorsque le modèle est modifié.
+* SITES-18056 : [Ouvrir l’API] Lorsque vous publiez un fragment de contenu à prévisualiser, incluez des références.
+* SITES-16898 : [Schéma] Point d’entrée OpenAPI pour migrer les fragments de contenu d’un modèle à un autre.
+* SITES-16609 : Point de terminaison List Launches.
+* SITES-16606 : Créez un point de terminaison Launch.
+* SITES-21617 : [Xwalk] Rendre les propriétés/métadonnées de page modifiables dans l’UE.
+* SITES-19614 : [Xwalk] Pagination de l’éditeur de feuilles de calcul et défilement infini.
+* SITES-22163 : [Xwalk] Amélioration de la prise en charge du contenu diffusé à partir du niveau de publication pour Edge Delivery Sites.
+* SITES-22109 : [Xwalk] Amélioration de la gestion du post-traitement des balises richtext.
+* SITES-22035 : [Xwalk] Amélioration de la gestion de MSM et des lancements.
+* SITES-21839 : [Xwalk] Amélioration du mappage et de l’assainissement des chemins pour le contenu non fourni par Edge Delivery.
 
-### Problèmes résolus {#fixed-issues-16799}
+### Problèmes résolus {#fixed-issues-16971}
 
-* ASSETS-37335 : la modification du panneau Rechercher dans le filtre décoche toutes les cases.
-* ASSETS-38069 : problème d’aperçu du PDF de gestion des ressources numériques AEM lors de la sélection du filtre de la chronologie.
-* ASSETS-38215 : bouton de licence Adobe Stock grisé dans AEM as a Cloud Service pour l’abonnement Entreprise.
-* ASSETS-38578 : liens hypertexte incorrects dans le rapport Partage de liens de ressources.
-* ASSETS-38678 : dysfonctionnement des paramètres d’affichage dans Détails de la collection.
-* ASSETS-39071 : la diffusion optimisée pour le web peut générer une exception si le type MIME de rendu d’origine est nul.
-* ASSETS-39316 : le tri par nom ne fonctionne pas dans les collections.
-* ASSETS-39377 : l’import en masse à partir de OneDrive peut échouer lors de la réception de backpressure provenant d’une API distante.
-* ASSETS-39428 : problèmes de rendu dans l’interface d’utilisation de la gestion des droits d’auteur.
-* CQ-4357150 : Guava dans le lot cq-content-sync.
-* GRANITE-52573 : les requêtes contenant une double barre oblique `//` sont refusées avec le code d’état 400.
-* SCRNS-4194 : suppression de la dépendance aux API Google Guava.
-* SCRNS-4360 : absence du bouton Gérer la publication et Publication rapide pour les personnes ne faisant pas partie de l’équipe d’administration dans le fournisseur de contenu pour les canaux.
-* SCRNS-4323 : masquer/désactiver les lancements à partir de screens.html.
+* CQ-4356898 : [Traduction] Erreur outOfMemory pour CF contenant un nombre inhabituellement élevé de liens.
+* CQ-4357055 : [Traduction] La traduction automatique ne fonctionne pas à l’aide de l’API REST.
+* CQ-4353931 : [Traduction] Ajoutez jcr:uuid dans la page source de traduction/xf/asset lorsqu’il manque.
+* CQ-4357591 : [Traduction] Modifiez le workflow &quot;Associer JCR:UUID&quot; pour qu’il fonctionne pour Pages/XF.
 * FORMS-14844 : Forms adaptatif autorise l’envoi de formulaire malgré l’échec de la vérification reCAPTCHA.
 * FORMS-14984 : Forms avec CAPTCHA ignore la validation si &quot;submitMetaData&quot; est absent des données envoyées.
 * FORMS-14477 : Les options &quot;Après&quot; et &quot;Avant&quot; de l’éditeur de règles ne fonctionnent pas dans la validation du sélecteur de date.
 * FORMS-14019 : la fonctionnalité &quot;Invoke Service&quot; de l’éditeur de règles ne fonctionne pas dans Universal Editor.
 * FORMS-14336 : lorsqu’aucun champ de formulaire n’est sélectionné, l’éditeur doit s’ouvrir en mettant l’accent sur l’ensemble de l’élément de formulaire.
 * FORMS-15061 : le cercle de chargeur persiste indéfiniment lors de l’utilisation de l’option d’appel du service dans l’éditeur de règles.
+* SITES-22457 : La promotion d’un lancement qui n’est pas profond ne met pas à jour le contenu source.
+* SITES-22748 : [Fragments de contenu] Amélioration de la gestion des erreurs pour la tâche de mise à jour de fragment de contenu
+* SITES-22349 : [Fragments de contenu] ContentType pour les éléments cf multilignes vides ne peut pas être modifié.
+* SITES-22343 : [Fragments de contenu] Le type sémantique &quot;énumération&quot; est rompu.
+* SITES-22194 : après avoir défini la redirection, model.json ne fonctionne plus.
+* SITES-21953 : [Ouvrir l’API] La balise Etag est modifiée en fonction de l’ordre de validationStatus.
+* SITES-21894 : [Ouvrir l’API] Améliorez la validation du chemin parent lors de la création de CF.
+* SITES-21887 : [Ouvrir l’API] ETag non valide renvoyé par le point de terminaison des variations du POST.
+* SITES-21657 : [Ouvrir l’API] Améliorez la validation sur la propriété Chemin de recherche CF.
+* SITES-21949 : le curseur non valide des API de recherche renvoie 500.
+* SITES-20927 : les API de recherche renvoient un 500 lorsque la requête est manquante.
+* SITES-20544 : [Ouvrir l’API] Modifiez la génération des noms de modules de publication afin d’éviter les conflits Oak.
+* SITES-19710 : CVE-2022-47937 - Supprimez toutes les utilisations de org.apache.sling.commons.json dans l’éditeur de page.
+* SITES-11992 : [Accessibilité] Un nom accessible est manquant dans le bouton du sélecteur d’échantillon d’annotation.
+* SITES-10979 : [Accessibilité] Le libellé n’est pas persistant.
+* SITES-10962 : [Accessibilité] Bouton : le bouton n’a pas de rôle.
+* SITES-10905 : [Accessibilité] L’état du composant actif ne présente pas de rapport de contraste de 3 à 1.
+* SITES-2974 :  [Accessibilité] - Défilement horizontal à 320 px de largeur.
+* SITES-22026 : impossible de déplacer les fragments d’expérience entre les dossiers dans AEM
+* SITES-22106 : Problème de fonctionnalité de changement de langue dans le nouvel éditeur de fragments de contenu
+* SITES-21980 : gestion incohérente des types de référence UUID.
+* SITES-7257 : NPE dans ThumbnailServlet.
 
-### Problèmes connus {#known-issues-16799}
+### Problèmes connus {#known-issues-16971}
 
->[!NOTE]
-> L’équipe d’ingénierie AEM a identifié une régression pour la fonctionnalité de lancements qui affecte les versions d’AEM actuelles à partir de la version 16461. En raison de cette régression, les nouveaux lancements (créés après l’application de nouvelles versions) qui incluent des pages non profondes ne seront pas correctement promus en raison de configurations manquantes.
-> Si vos environnements sont affectés, un script shell permettant d’identifier et de mettre à jour les configurations manquantes est disponible via le service clientèle (référence interne SITES-22457).
-> Un correctif à plus long terme sera disponible pour garantir que de nouveaux lancements sont créés avec toutes les configurations appropriées. D’ici là, un correctif interne est également disponible à la demande.
+Aucun.
 
-#### Forms
-
-* Lorsque vous installez le SDK AEM et ajoutez `AEM Forms add-on v2024.05.04.00-240400`, le démarrage du service Docker échoue. Le service Docker est nécessaire pour générer un document d’enregistrement dans un environnement de développement local. Pour résoudre le problème :
-   1. Téléchargez la [correctif](/help/forms/assets/sdk_hotfix.zip). Lorsque vous téléchargez le correctif, une `.zip` est téléchargé.
-   1. Extrayez le correctif téléchargé dans un dossier.
-   1. Remplacez l’ancien `sdk.sh` et `sdk.bat` fichiers avec des fichiers plus récents dans le dossier extrait à l&#39;étape 2.
-
-### Avis de modification {#change-notice-16799}
-
-* Cette version contient les nouvelles versions de l’index de produit suivantes :
-   * **damAssetLucene-11**
-   * **fragments-11**
-
-  Les versions personnalisées des versions d’index précédentes seront automatiquement fusionnées avec la nouvelle version de l’index de produit. Appliquez d’autres mises à jour personnalisées à la version fusionnée.
+### Avis de modification {#change-notice-16971}
 
 * À compter de septembre 2024, AEM as a Cloud Service désactivera la sérialisation des résolveurs de ressources via le framework de l’exportateur de modèle Sling. Voir la [documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) pour plus d’informations.
 
-### Fonctionnalités et API obsolètes {#deprecated-16799}
+### Fonctionnalités et API obsolètes {#deprecated-16971}
 
 Pour savoir ce qui est obsolète ou supprimé dans AEM as a Cloud Service, voir [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Technologies intégrées {#embedded-tech-16799}
+### Technologies intégrées {#embedded-tech-16971}
 
 | Technologie | Version | Lien |
 |---|---|---|
