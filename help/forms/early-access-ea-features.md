@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+source-git-commit: 29da5119403d47502fe4dc1d2a5c728aa0828b0e
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 24%
+source-wordcount: '2784'
+ht-degree: 29%
 
 ---
 
@@ -41,10 +41,9 @@ Les fonctionnalités de l’IA générique proposées sont les suivantes :
 
 * **Génération de panneau pour Forms**: laissez l&#39;IA faire la lourde tâche. Générez des panneaux de formulaire prédéfinis adaptés aux besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences du client ou les détails du voyage. Gagnez du temps et garantissez la cohérence avec les mises en page et fonctionnalités prédéfinies.
 
-
 * **Modification des dispositions de formulaire**: testez différentes mises en page et conceptions à l’aide des invites d’IA générique. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver l’ajustement idéal pour votre formulaire. Utilisez les invites d’IA générique pour optimiser vos formulaires pour la réactivité mobile et créer des formulaires attrayants pour les utilisateurs.
 
-* **Création de règles de formulaire avec des invites d’IA générique**: utilisez des invites d’IA générique pour obtenir de l’aide sur la création de règles intelligentes qui réagissent aux entrées utilisateur. Notre API générique peut suggérer et même générer des règles conditionnelles en fonction de l’objectif de votre formulaire.
+* **Configuration de l’action Envoyer**: utilisez des invites d’IA générique pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
 
 
 ### Connecteur de fusion AEM Forms Workfront
@@ -77,7 +76,110 @@ Les Forms de conversation sont plus qu&#39;un simple coup d&#39;oeil, elles chan
 
 ### Création WYSIWYG pour les Edge Delivery Services
 
-WYSIWYG Authoring fournit des interfaces WYSIWYG (Universal Editor et Adaptive Forms Editor) pour créer et publier des formulaires adaptatifs sur des Edge Delivery Services. WYSIWYG Authoring offre toutes les fonctionnalités de [Création basée sur des documents](/help/edge/docs/forms/overview.md#document-based-authoring-features), ainsi qu’un large éventail de fonctionnalités supplémentaires :
+La création WYSIWYG fournit des interfaces WYSIWYG (Universal Editor et Adaptive Forms Editor) pour créer et publier des formulaires adaptatifs en Edge Delivery Services. WYSIWYG Authoring offre toutes les fonctionnalités de [Création basée sur des documents](/help/edge/docs/forms/overview.md#document-based-authoring-features), ainsi qu’un large éventail de fonctionnalités supplémentaires :
+
+* Éditeur de règles avancé pour créer une logique complexe.
+* Extensibilité côté serveur pour les fonctionnalités personnalisées.
+* Expérience d’édition WYSIWYG pour une création et une visualisation de formulaire simples.
+* Fonctionnalité de document d’enregistrement pour créer des archives inviolables de données envoyées.
+* Intégration à Adobe Sign pour les signatures électroniques.
+* Intégration à différentes sources de données pour préremplir les formulaires et envoyer des données.
+* Modèle de données de formulaire (FDM) pour définir la structure des données et les interactions avec diverses sources de données.
+* Possibilité de choisir parmi plusieurs actions d’envoi pour gérer les envois de formulaire, y compris l’envoi de données à Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, et de nombreuses autres sources de données.
+
+
+### Connecteur AEM Forms vers Marketo
+
+Le connecteur AEM Forms to Marketo relie l’écart entre vos formulaires web (Forms adaptatif) créés avec Adobe Experience Manager (AEM) et votre plateforme d’automatisation marketing, Marketo.
+
+Lorsqu’une personne envoie un formulaire sur votre site web créé avec AEM Forms adaptatif, le connecteur s’assure que les données envoyées sont automatiquement envoyées à Marketo. Cela évite la saisie manuelle des données et réduit le risque d’erreur.
+
+![AEM Form - Marketo Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+
+En rationalisant le processus de transfert de données, le connecteur peut vous aider à améliorer les taux de conversion de votre site web. En envoyant automatiquement les données de piste à Marketo, vous pouvez vous assurer que les pistes qualifiées sont rapidement entrées dans vos programmes de développement.
+
+Essentiellement, AEM Forms to Marketo Connector vous aide à tirer parti des avantages des deux plateformes pour créer un entonnoir marketing plus efficace.
+
+
+## Autres innovations d’accès anticipé
+
+### Prise en charge des langues écrites de droite à gauche (RTL)
+
+Les Forms adaptatives peuvent désormais s’afficher dans un langage RTL (de droite à gauche), ce qui offre une expérience utilisateur plus inclusive et une facilité d’utilisation.
+
+Cette fonctionnalité s’applique à des langues telles que l’arabe, l’hébreu et l’ourdou, écrites et lues de droite à gauche (RTL), ce qui améliore la compréhension et les taux d’achèvement des formulaires.
+
+![Prise en charge des langues de droite à gauche (RTL)](mobile-responsive.png)
+
+La prise en charge des langues de droite à gauche (RTL) dans les Forms adaptatives vous aide à :
+
+* **Développe la base d’utilisateurs**: les entreprises peuvent désormais toucher plus de 2 milliards de personnes dans le monde qui sont plus à l’aise avec les langues de durée de vie (RTL).
+
+* **Offrir une expérience utilisateur améliorée**: Forms effectue un rendu parfait avec un flux de texte naturel de droite à gauche, un alignement correct des éléments de l’interface utilisateur et des mises en page intuitives reflétant les habitudes de lecture des utilisateurs. Cela réduit la confusion et augmente les taux d’achèvement du formulaire.
+
+* **Diffuser des expériences mobiles réactives**: Forms reste accessible sur n’importe quel appareil en raison de sa réactivité mobile inhérente, ce qui garantit une expérience fluide sur tous les ordinateurs de bureau, tablettes et smartphones.
+
+Dans l’ensemble, la prise en charge du langage RTL dans les Forms adaptatives permet aux entreprises de concevoir des formulaires véritablement globaux, ce qui renforce la portée, l’engagement et l’inclusion.
+
+Prêt à démarrer ? [Documentation sur la durée de vie (RTL) d’Adaptive Forms](/help/forms/supporting-new-language-localization-core-components.md) fournit un guide détaillé sur l’utilisation de l’innovation RTL.
+
+### Amélioration des méthodes de protection des robots
+
+AEM Forms a amélioré ses fonctionnalités de sécurité en ajoutant la prise en charge de deux solutions Captcha populaires : Cloudflare Turnstile et hCaptcha. Cela vient s’ajouter au reCAPTCHA de Google déjà disponible, offrant ainsi aux utilisateurs et utilisatrices plus de choix et de flexibilité pour protéger leurs formulaires contre les robots et les spams envoyés.
+
+* **Cloudflare Turnstile** : ce Captcha sans friction vérifie les utilisateurs et utilisatrices par le biais d’un simple défi qui ne nécessite pas d’interaction explicite. Il s’intègre de manière transparente à vos formulaires, améliorant ainsi l’expérience client.
+* **hCaptcha** : ce Captcha axé sur la confidentialité offre une alternative conviviale qui met l’accent sur la confidentialité des données. Il vise à trouver un équilibre entre la sécurité et l’expérience client.
+* **Google reCAPTCHA** : AEM Forms continue à prendre en charge reCAPTCHA v2 et reCAPTCHA Enterprise, offrant ainsi une solution fiable et bien établie.
+
+En proposant plusieurs options de Captcha, AEM Forms vous permet de sélectionner la solution qui correspond le mieux à vos besoins.
+
+Vous souhaitez intégrer l’une de ces solutions Captcha à vos formulaires adaptatifs ? Notre documentation fournit des instructions détaillées pour [Cloudflare Turnstile](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), et [Google reCAPTCHA](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+
+### API Doc Assurance
+
+
+Les API Doc Assurance d’AEM Forms sont un ensemble d’outils au sein des API de communication du Cloud Service AEM Forms qui vous permettent de gérer la sécurité et l’interaction utilisateur de vos documents de PDF.
+
+Voici une ventilation de ce que peuvent faire les API Doc Assurance :
+
+* **Chiffrement et décryptage de documents**: Protect vos documents en rendant leur contenu illisible à l’aide du chiffrement. Vous contrôlez les parties du PDF qui sont chiffrées, y compris l’ensemble du document, le contenu spécifique, les métadonnées ou les pièces jointes.
+
+* **Signature numérique de documents**: ajoutez des signatures numériques à vos documents pour la validation et la vérification anti-falsification. Il peut être utilisé à des fins de certification ou pour garantir l’intégrité du document.
+
+* **Reader Étendre vos documents (appliquer ou modifier les droits d’utilisation des documents de PDF)**: permet à votre entreprise de partager facilement des documents de PDF interactifs en étendant les fonctionnalités d’Adobe Reader avec des droits d’utilisation supplémentaires.
+
+  Les API d’extension de Reader (droits d’utilisation) ajoutent des droits d’utilisation à un document de PDF. Cela active des fonctionnalités généralement indisponibles à l’ouverture d’un document PDF dans Adobe Reader, comme l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document. Les utilisateurs tiers n’ont pas besoin de disposer d’un logiciel supplémentaire ni de modules externes pour utiliser les documents définis avec des droits d’utilisation.
+
+  Lorsque les droits d’utilisation appropriés sont ajoutés aux documents de PDF, les destinataires peuvent activer des activités depuis Adobe Reader.
+
+Globalement, [API Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) vous aide à améliorer la sécurité et la conformité des documents en ajoutant une couche de contrôle supplémentaire.
+
+
+### API de service Forms
+
+Le service Forms génère des formulaires PDF interactifs pour la capture de données. Il peut également être utilisé pour importer/exporter des données vers/depuis un formulaire de PDF interactif existant et valider les données envoyées. Voici une répartition de ses fonctionnalités :
+
+* **Rendu de Forms** : générez un formulaire PDF interactif à partir d’un modèle créé à l’aide d’AEM Forms Designer et éventuellement de données XML. Cela génère essentiellement un formulaire PDF à remplir, éventuellement prérempli avec des données.
+
+* **Extraction et import des données** : importez des données dans un formulaire PDF existant et extrayez des données d’un formulaire PDF rempli. Les formats de données XDP et XML sont pris en charge, et l’import dans des formulaires PDF non XFA (également appelés AcroForms) prend également en charge les données FDF et XFDF.
+
+* **Validation des données** : validez les données envoyées, au format XDP ou XML, par rapport à un modèle créé à l’aide d’AEM Forms Designer.
+
+## Voir également
+
+* [Dernières innovations dans AEM Forms](/help/forms/latest-innovations.md)
+
+* [Fonctionnalités d’AEM Forms en tant que Cloud Service](/help/forms/home.md)
+
+* [Différence entre AEM 6.5 Forms (AMS et On-Prem) et AEM Forms as a Cloud Service (AEM CS Forms)](/help/forms/notable-changes.md)
+
+
+Les Forms de conversation sont plus qu&#39;un simple coup d&#39;oeil, elles changent la donne de l&#39;expérience utilisateur.  Augmentez l’engagement, réduisez l’abandon de formulaire et rendez l’interaction avec votre site web plus agréable pour tous.
+
+
+### Création WYSIWYG pour les Edge Delivery Services
+
+La création WYSIWYG fournit des interfaces WYSIWYG (Universal Editor et Adaptive Forms Editor) pour créer et publier des formulaires adaptatifs en Edge Delivery Services. WYSIWYG Authoring offre toutes les fonctionnalités de [Création basée sur des documents](/help/edge/docs/forms/overview.md#document-based-authoring-features), ainsi qu’un large éventail de fonctionnalités supplémentaires :
 
 * Éditeur de règles avancé pour créer une logique complexe.
 * Extensibilité côté serveur pour les fonctionnalités personnalisées.
