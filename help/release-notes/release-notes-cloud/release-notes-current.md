@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8581ff75a68c045ccfbb6a525c1e08a6ee253d52
+source-git-commit: 1566963898fb7f6999e3fad796b938128521bcce
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 44%
@@ -46,7 +46,7 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 **Service de données de surveillance d’utilisation réelle (RUM)** {#real-use-monitoring}
 
-Le service de données de surveillance de l’utilisation réelle (RUM) est désormais disponible en général, ce qui permet la collecte de données côté client pour AEM as a Cloud Service. Ce service reflète plus précisément les interactions des utilisateurs, ce qui garantit une mesure fiable de l’engagement du site web. Il offre aux clients des informations avancées sur le trafic et les performances de leurs pages, ce qui leur offre une occasion précieuse de comprendre et d’améliorer les performances de ces pages.
+La variable [Service de données de surveillance d’utilisation réelle (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) est désormais disponible en général, ce qui permet la collecte de données côté client pour AEM as a Cloud Service. Ce service reflète plus précisément les interactions des utilisateurs, ce qui garantit une mesure fiable de l’engagement du site web. Il offre aux clients des informations avancées sur le trafic et les performances de leurs pages, ce qui leur offre une occasion précieuse de comprendre et d’améliorer les performances de ces pages.
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 
