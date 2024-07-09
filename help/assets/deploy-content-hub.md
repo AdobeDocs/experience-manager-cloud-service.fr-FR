@@ -2,9 +2,9 @@
 title: Déployer [!DNL Content Hub]
 description: Découvrez comment déployer et activer Content Hub et accorder l’accès à des utilisateurs disposant de différents types de privilèges (chargement de ressources, utilisateurs d’Adobe Express) et comment accorder des privilèges d’administrateur aux utilisateurs.
 role: Admin
-source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1316'
 ht-degree: 3%
 
 ---
@@ -46,6 +46,10 @@ Pour accéder au portail Content Hub, les administrateurs doivent d’abord acti
 
 1. Développer **[!UICONTROL Assets]** et sélectionnez **[!UICONTROL Content Hub]**.
    ![Sélection de Content Hub dans Cloud Manager](assets/edit-program-cloud-manager-content-hub.png)
+
+   >[!NOTE]
+   >
+   >If **[!UICONTROL Mettre à jour]** n’est pas activé pour vous après avoir sélectionné Content Hub, assurez-vous que vous avez spécifié les paramètres d’activation pour le programme.
 
 1. Cliquez sur **[!UICONTROL Mettre à jour]**.
 
@@ -111,9 +115,19 @@ Ces utilisateurs peuvent désormais accéder aux ressources disponibles sur le p
 >
 >Vous pouvez utiliser toutes les fonctionnalités avancées de l’entreprise, telles que la synchronisation avec des fournisseurs d’identité externes.
 
-Après avoir ajouté les utilisateurs appropriés à l’aide d’Admin Console, les utilisateurs peuvent accéder à Content Hub à l’aide du lien suivant :
+### Comment accéder à Content Hub ? {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+Content Hub est accessible de différentes manières :
+
+* Accédez à Content Hub à l’aide du lien suivant :
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* Connectez-vous à `experience.adobe com` et cliquez sur **[!UICONTROL Experience Manager Assets Content Hub]** disponible dans le **[!UICONTROL Accès rapide]** section :
+  ![Accès Content Hub](assets/access-content-hub.png)
+
+* Connectez-vous à `experience.adobe com` et cliquez sur **[!UICONTROL Experience Manager Assets Content Hub]** disponible dans le sélecteur de produits :
+  ![Méthode d’accès Content Hub 3](assets/access-content-hub-alternate.png)
 
 ### Désactivation des notifications par e-mail aux utilisateurs {#disable-email-notifications}
 

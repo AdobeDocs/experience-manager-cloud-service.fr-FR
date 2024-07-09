@@ -1,10 +1,10 @@
 ---
 title: Présentation de Content Hub
 description: En savoir plus sur Content Hub, ses principaux avantages, comment y accéder et comment fournir des commentaires sur les options disponibles dans Content Hub.
-source-git-commit: b29641286919b5becc3982400ea160836531fdc5
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ![Présentation de Content Hub](assets/content-hub-overview.png)
 
-Content Hub est disponible dans le cadre de Experience Manager Assets as a Cloud Service pour démocratiser l’accès au contenu de marque pour les organisations et leurs partenaires commerciaux. Il se concentre sur la distribution des ressources pour activation à grande échelle et la création de variantes de contenu sur marque afin d’améliorer l’agilité marketing.
+Le hub de contenus est disponible dans le cadre d’Experience Manager Assets as a Cloud Service pour démocratiser l’accès au contenu de marque pour les organisations et leurs partenaires commerciaux. Il se concentre sur la distribution des ressources pour activation à grande échelle et la création de variantes de contenu sur marque afin d’améliorer l’agilité marketing.
 
 ## Pourquoi Content Hub ?
 
@@ -41,7 +41,7 @@ Content Hub nécessite un environnement de création de production as a Cloud Se
 
 ## Comment accéder à Content Hub ? {#access-content-hub}
 
-[Après avoir configuré Content Hub](#deploy-content-hub) et l’ajout d’un utilisateur à la variable [Profil de produits Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub est accessible à l’aide des méthodes suivantes :
+[Après avoir configuré Content Hub](/help/assets/deploy-content-hub.md) et l’ajout d’un utilisateur à la variable [Profil de produits Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub est accessible à l’aide des méthodes suivantes :
 
 * Accédez à Content Hub à l’aide du lien suivant :
 
@@ -89,7 +89,7 @@ Procédez comme suit pour configurer Content Hub pour votre équipe :
 <table>
 <td>
    <a href="/help/assets/configure-content-hub-ui-options.md">
-   <img alt="Déploiement de Content Hub" src="./assets/configure-assets.png" />
+   <img alt="Déployer le hub de contenus" src="./assets/configure-assets.png" />
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
@@ -145,7 +145,7 @@ Procédez comme suit pour configurer Content Hub pour votre équipe :
 </td>
 <td>
    <a href="/help/assets/collections-content-hub.md">
-   <img alt="Gestion des collections dans Content Hub" src="./assets/manage-collection.png" />
+   <img alt="Gérer des collections dans le hub de contenus" src="./assets/manage-collection.png" />
    </a>
    <div>
       <a href="/help/assets/collections-content-hub.md">

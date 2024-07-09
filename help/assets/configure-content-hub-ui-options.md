@@ -1,14 +1,14 @@
 ---
-title: Configuration de l’interface utilisateur de Content Hub
-description: Configuration de l’interface utilisateur de Content Hub
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+title: Configurer l’interface d’utilisation du hub de contenus
+description: Configurer l’interface d’utilisation du hub de contenus
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 6%
+source-wordcount: '1119'
+ht-degree: 7%
 
 ---
 
-# Configuration de l’interface utilisateur de Content Hub {#configure-content-hub-user-interface}
+# Configurer l’interface d’utilisation du hub de contenus {#configure-content-hub-user-interface}
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configuration de ressources sur Content Hub](assets/configure-assets.png)
@@ -97,6 +97,10 @@ Content Hub permet aux administrateurs de configurer des filtres qui s’affiche
 1. Cliquez sur **[!UICONTROL Confirmer]**. Le nouveau filtre s’affiche dans la liste des filtres existants.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications afin que le nouveau filtre s’affiche sur la page Rechercher lors du filtrage des ressources.
+
+   >[!NOTE]
+   >
+   >Le nouveau filtre s’affiche sur la page Recherche uniquement s’il existe une autre ressource dans le référentiel correspondant aux critères de filtrage.
 
 De même, vous pouvez cliquer sur ![Icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque filtre disponible, pour modifier les libellés ou cliquez sur l’icône de suppression pour supprimer un filtre existant. Cliquez sur **[!UICONTROL Enregistrer]** après avoir apporté toutes les modifications pour appliquer les modifications.
 
