@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 54159c25b60277268ade16b437891f268873fecf
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 90%
+source-wordcount: '1340'
+ht-degree: 66%
 
 ---
 
@@ -23,10 +23,6 @@ Les applications web offrent souvent des fonctions de gestion de compte permetta
 * Le stockage des données du profil utilisateur
 * L’appartenance à un groupe
 * La synchronisation des données.
-
->[!IMPORTANT]
->
->Pour que la fonctionnalité décrite dans cet article soit opérationnelle, la fonction de synchronisation des données utilisateur doit être activée, ce qui nécessite, pour le moment, une demande au service clientèle indiquant le programme et les environnements appropriés. Si elles ne sont pas activées, les informations utilisateur sont conservées pendant une courte période (1 à 24 heures) avant de disparaître.
 
 ## L’enregistrement {#registration}
 
@@ -44,6 +40,10 @@ Il est possible d’écrire un code d’enregistrement personnalisé qui prend, 
    1. créer un enregistrement utilisateur à l’aide de l’une des méthodes `createUser()` de l’API UserManager ;
    1. conserver toutes les données de profil capturées à l’aide des méthodes `setProperty()` de l’interface Authorizable.
 1. Flux facultatifs, comme l’obligation pour l’utilisateur de valider son courrier électronique.
+
+**Condition préalable requise :**
+
+Pour que la logique décrite ci-dessus fonctionne correctement, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
 
 ### Externe {#external-managed-registration}
 
@@ -63,6 +63,10 @@ Les clients peuvent écrire leurs propres composants personnalisés. Pour en sav
 
 * La [structure d’authentification Sling](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
 * Envisagez aussi de [demander une session d’experts de la communauté AEM](https://bit.ly/ATACEFeb15) à propos de la connexion.
+
+**Condition préalable requise :**
+
+Pour que la logique décrite ci-dessus fonctionne correctement, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
 
 ### Intégration à un fournisseur d’identités {#integration-with-an-idp}
 
@@ -84,9 +88,15 @@ Pour plus d’informations sur l’utilisation du service de gestionnaire d’au
 
 L’interface `com.adobe.granite.auth.oauth.provider` peut être implémentée avec le fournisseur OAuth de votre choix.
 
+**Condition préalable requise :**
+
+En règle générale, il est recommandé de toujours s’appuyer sur le fournisseur d’identité (idP) comme un seul point de vérité lors du stockage de données spécifiques à l’utilisateur. Si les informations supplémentaires sur l’utilisateur sont stockées dans le référentiel local, qui ne fait pas partie de l’IDP, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés. En complément de [synchronisation des données](#data-synchronization-data-synchronization), dans le cas du fournisseur d’authentification SAML, assurez-vous que [appartenance à un groupe dynamique](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) est activée.
+
 ### Sessions réactives et jetons encapsulés {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service active des sessions réactives basées sur les cookies, ce qui garantit qu’une personne utilisatrice finale est dirigée vers le même nœud de publication pour chaque requête. Pour améliorer les performances, la fonction de jeton encapsulé est activée par défaut, de sorte que l’enregistrement utilisateur dans le référentiel n’ait pas besoin d’être référencé pour chaque requête. Si le nœud de publication avec lequel l’utilisateur final ou l’utilisatrice finale a une affinité est remplacé, son enregistrement d’ID utilisateur est disponible sur le nouveau nœud de publication, comme décrit dans la section de synchronisation des données ci-dessous.
+AEM as a Cloud Service active les sessions persistantes basées sur des cookies, en s’assurant qu’un utilisateur final est redirigé vers le même noeud de publication à chaque demande. Dans certains cas particuliers, tels que les pics de trafic utilisateur, la fonction de jeton encapsulé peut améliorer les performances afin que l’enregistrement utilisateur dans le référentiel ne doive pas être référencé pour chaque requête. Si le noeud de publication auquel un utilisateur final a une affinité est remplacé, son enregistrement d’ID utilisateur est disponible sur le nouveau noeud de publication, comme décrit dans la section [synchronisation des données](#data-synchronization-data-synchronization) ci-dessous.
+
+Pour tirer parti de la fonctionnalité de jeton encapsulé, veuillez envoyer une demande au service clientèle indiquant le programme et les environnements appropriés. Plus important encore, le jeton encapsulé ne peut pas être activé sans [synchronisation des données](#data-synchronization-data-synchronization) et doivent être activés ensemble. Par conséquent, passez soigneusement en revue le cas d’utilisation avant d’activer et de vérifier que la fonctionnalité est essentielle.
 
 ## Profil utilisateur {#user-profile}
 
@@ -99,11 +109,19 @@ Les informations de profil utilisateur peuvent être écrites et lues de deux ma
 * Utilisation côté serveur avec l’interface `com.adobe.granite.security.user` UserPropertiesManager, qui place les données sous le nœud de l’utilisateur dans `/home/users`. Assurez-vous que les pages uniques par utilisateur ne soient pas mises en cache.
 * Utilisation côté client avec ContextHub, comme décrit dans [la documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
+**Condition préalable requise :**
+
+Pour que la logique de persistance du profil utilisateur côté serveur fonctionne correctement, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
+
 ### Magasins de données tiers {#third-party-data-stores}
 
 Les données de la personnes utilisatrice finale peuvent être envoyées à des fournisseurs tiers, comme les systèmes de gestion de la relation client (CRM). Elles sont récupérées par le biais d’API lors de la connexion de l’utilisateur ou de l’utilisatrice à AEM et conservées (ou actualisées) sur le nœud de profil de l’utilisateur ou de l’utilisatrice AEM, puis utilisées le cas échéant par AEM.
 
 Il est possible d’accéder en temps réel à des services tiers pour récupérer des attributs de profil. Toutefois, il est important de s’assurer que cela n’ait pas d’impact significatif sur le traitement des demandes dans AEM.
+
+**Condition préalable requise :**
+
+Pour que la logique décrite ci-dessus fonctionne correctement, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
 
 ## Autorisations (groupes d’utilisateurs fermés) {#permissions-closed-user-groups}
 
@@ -116,13 +134,17 @@ Indépendamment de la connexion, le code personnalisé peut également être con
 
 ## La synchronisation des données. {#data-synchronization}
 
-Les utilisateurs finaux du site web attendent une expérience cohérente pour chaque requête de page web ou même lorsqu’ils se connectent à l’aide d’un navigateur différent. Même s’ils ne le savent pas, ils sont conduits vers différents nœuds de serveur de l’infrastructure du niveau Publication. AEM as a Cloud Service effectue cette opération en synchronisant rapidement la variable `/home` hiérarchie de dossiers (informations sur le profil utilisateur, appartenance à un groupe, etc.) sur tous les noeuds du niveau publication.
+Les utilisateurs finaux du site web attendent une expérience cohérente pour chaque requête de page web ou même lorsqu’ils se connectent à l’aide d’un navigateur différent. Même s’ils ne le savent pas, ils sont conduits vers différents nœuds de serveur de l’infrastructure du niveau Publication. Pour ce faire, AEM as a Cloud Service synchronise rapidement la variable `/home` hiérarchie de dossiers (informations sur le profil utilisateur, appartenance à un groupe, etc.) sur tous les noeuds du niveau publication.
 
 Contrairement à d’autres solutions AEM, la synchronisation des utilisateurs et de l’appartenance à un groupe dans AEM as a Cloud Service n’utilise pas une approche de messagerie point à point, mais plutôt une approche publication-abonnement qui ne nécessite pas de configuration client.
 
 >[!NOTE]
 >
 >Par défaut, la synchronisation des profils d’utilisateurs et des membres de groupes n’est pas activée et les données ne seront donc pas synchronisées ni même conservées de manière permanente au niveau Publication. Pour activer la fonction, adressez une demande au service d’assistance clientèle pour lui indiquer le programme et les environnements appropriés.
+
+>[!IMPORTANT]
+>
+>Testez l’implémentation à grande échelle avant d’activer la synchronisation des données dans l’environnement de production. Selon le cas d’utilisation et les données conservées, des problèmes de cohérence et de latence peuvent se produire.
 
 ## Considérations relatives au cache {#cache-considerations}
 
