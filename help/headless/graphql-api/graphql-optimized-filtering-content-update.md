@@ -4,10 +4,10 @@ description: Découvrez comment mettre à jour vos fragments de contenu pour le 
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 66d44481fa7e58b23e0381bfebb997acbedecfb7
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 63%
+source-wordcount: '867'
+ht-degree: 60%
 
 ---
 
@@ -38,71 +38,81 @@ Il existe des conditions préalables pour cette tâche :
 
    Les variables disponibles sont les suivantes :
 
+   | | Nom | Valeur | Valeur par défaut | Service | Appliqué | Type | Remarques |
+   |---|---|---|---|---|---|---|---|
+   | 1 | `CF_MIGRATION_ENABLED` | `1` | `0` | Tous | | Variable | Active(!=0) ou désactive (0) le déclenchement du traitement de la migration des fragments de contenu. |
+   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | Tous | | Variable | Assurer (!=0) rémigration des fragments de contenu. La définition de cet indicateur sur 0 effectue une migration incrémentielle des CF. Cela signifie que si la tâche est arrêtée pour une raison quelconque, l’exécution suivante de la tâche commence la migration à partir du point où elle a été arrêtée. La première migration est recommandée pour l’application (valeur=1). |
+   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | Tous | | Variable | Taille du lot pour enregistrer le nombre de fragments de contenu après la migration. Cela correspond au nombre de CF qui sont enregistrés dans le référentiel en un seul lot et peut être utilisé pour optimiser le nombre d’écritures dans le référentiel. |
+   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | Tous | | Variable | Nombre maximal de fragments de contenu à traiter à la fois. Voir également les notes pour `CF_MIGRATION_INTERVAL`. |
+   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | Tous | | Variable | Intervalle (en secondes) de traitement des fragments de contenu restants jusqu’à la limite suivante. Cet intervalle est également considéré comme un temps d’attente avant le démarrage de la tâche et comme un délai entre le traitement de chaque nombre de CF_MIGRATION_LIMIT suivant. (*) |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>Nom</th>
-      <th>Valeur</th>
-      <th>Valeur par défaut</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
       <th>Service</th>
-      <th>Appliqué</th>
+      <th>Applied</th>
       <th>Type</th>
-      <th>Remarques</th>
+      <th>Notes</th>
      </tr>
 
-   <tr>
+     <tr>
       <td>1</td>
-      <td>« CF_MIGRATION_ENABLED » </td>
+      <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
-      <td>Tous </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Active(!=0) ou désactive (0) le déclenchement du traitement de la migration des fragments de contenu. </td>
+      <td>Enables(!=0) or disables(0) triggering of Content Fragment migration job. </td>
      </tr>
      <tr>
       <td>2</td>
-      <td>« CF_MIGRATION_ENFORCE » </td>
+      <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
-      <td>Tous </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Assurer (!=0) rémigration des fragments de contenu.<br>La définition de cet indicateur sur 0 effectue une migration incrémentielle des CF. Cela signifie que si la tâche est arrêtée pour une raison quelconque, l’exécution suivante de la tâche commence la migration à partir du point où elle a été arrêtée. La première migration est recommandée pour l’application (valeur=1). </td>
+      <td>Enforce (!=0) remigration of Content Fragments.<br>Setting this flag to 0 does an incremental migration of CFs. This means, if the job is terminated for any reason, then the next run of the job starts migration from the point where it got terminated. The first migration is recommended for enforcement (value=1). </td>
      </tr>
      <tr>
       <td>3</td>
-      <td>« CF_MIGRATION_BATCH » </td>
+      <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
-      <td>Tous </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Taille du lot pour enregistrer le nombre de fragments de contenu après la migration.<br>Cela correspond au nombre de CF qui sont enregistrés dans le référentiel en un seul lot et peut être utilisé pour optimiser le nombre d’écritures dans le référentiel. </td>
+      <td>Size of the batch for saving the number of Content Fragments after migration.<br>This is relevant to how many CFs are saved to the repository in one batch, and can be used to optimize the number of writes to the repository. </td>
      </tr>
      <tr>
       <td>4</td>
-      <td>« CF_MIGRATION_LIMIT » </td>
-      <td>`1 000` </td>
-      <td>`1 000` </td>
-      <td>Tous </td>
+      <td>`CF_MIGRATION_LIMIT` </td>
+      <td>`1000` </td>
+      <td>`1000` </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Nombre maximal de fragments de contenu à traiter à la fois.<br>Voir aussi les notes de « CF_MIGRATION_INTERVAL ». </td>
+      <td>Max number of Content Fragments to process at a time.<br>See also notes for `CF_MIGRATION_INTERVAL`. </td>
      </tr>
      <tr>
       <td>5</td>
-      <td>« CF_MIGRATION_INTERVAL » </td>
+      <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
-      <td>Tous </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Intervalle (en secondes) de traitement des fragments de contenu restants jusqu’à la prochaine limite<br>Cet intervalle est également considéré comme un temps d’attente avant le démarrage de la tâche et comme un délai entre le traitement de chaque nombre de CF_MIGRATION_LIMIT suivant.<br>(*)</td>
+      <td>Interval (seconds) to process the remaining Content Fragments up until the next Limit<br>This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
@@ -193,30 +203,36 @@ Il existe des conditions préalables pour cette tâche :
 
    Une fois la procédure de mise à jour exécutée, réinitialisez la variable d’environnement cloud `CF_MIGRATION_ENABLED` sur « 0 » pour déclencher le recyclage de tous les pods.
 
+   | | Nom | Valeur | Valeur par défaut | Service | Appliqué | Type | Remarques |
+   |---|---|---|---|---|---|---|---|
+   | | `CF_MIGRATION_ENABLED` | `0` | `0` | Tous | | Variable | Désactive(0) (ou Active(!= 0) le déclenchement de la tâche de migration de fragment de contenu. |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>Nom</th>
-      <th>Valeur</th>
-      <th>Valeur par défaut</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
       <th>Service</th>
-      <th>Appliqué</th>
+      <th>Applied</th>
       <th>Type</th>
-      <th>Remarques</th>
+      <th>Notes</th>
      </tr>
      <tr>
       <td></td>
-      <td>« CF_MIGRATION_ENABLED » </td>
+      <td>`CF_MIGRATION_ENABLED` </td>
       <td>`0` </td>
       <td>`0` </td>
-      <td>Tous </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Désactive(0) (ou Active(!= 0) le déclenchement de la tâche de migration de fragment de contenu. </td>
+      <td>Disables(0) (or Enables(!=0)) triggering of Content Fragment migration job. </td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
