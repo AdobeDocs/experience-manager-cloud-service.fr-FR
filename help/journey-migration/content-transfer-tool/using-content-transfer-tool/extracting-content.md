@@ -29,19 +29,19 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
 1. Sélectionnez un jeu de migration dans le **Transfert de contenu** assistant et cliquez sur **Extract** pour démarrer l’extraction.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >[!TIP]
    >Il est désormais possible de planifier le démarrage automatique d’une ingestion dès qu’une extraction est réussie. Voir [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
 
    >[!IMPORTANT]
    >
-   >Assurez-vous que la clé Extraction est valide et qu’elle n’est pas proche de son expiration. Si la date d&#39;expiration est proche, vous pouvez renouveler la clé Extraction en sélectionnant le jeu de migration et en cliquant sur Propriétés. Cliquez sur **Renouveler**. Vous accédez alors au Cloud Acceleration Manager où vous pouvez cliquer sur **Copier la clé d’extraction**. Chaque fois que vous cliquez **Copier la clé d’extraction**, une nouvelle clé d’extraction est générée, valable 14 jours à compter de la création.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >Assurez-vous que la clé Extraction est valide et qu’elle n’est pas proche de son expiration. Si la date d&#39;expiration est proche, vous pouvez renouveler la clé Extraction en sélectionnant le jeu de migration et en cliquant sur Propriétés. Cliquez sur **Renouveler**. Vous accédez alors au Cloud Acceleration Manager sur lequel vous pouvez cliquer. **Copier la clé d’extraction**. Chaque fois que vous cliquez **Copier la clé d’extraction**, une nouvelle clé d’extraction est générée, valable 14 jours à compter de la création.
+   >![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Cela ouvre la boîte de dialogue Extraction . Cliquez sur **Extract** pour démarrer la phase d&#39;extraction.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
    >Vous pouvez éventuellement remplacer le conteneur intermédiaire lors de la phase d’extraction. If **Remplacement du conteneur d’évaluation** est désactivé, il peut accélérer les extractions pour les migrations suivantes où les chemins d’accès au contenu ou les paramètres des versions d’inclusion n’ont pas changé. Cependant, si les chemins d’accès au contenu ou les paramètres des versions ont changé, alors l’option **Remplacer le conteneur d’évaluation** doit être activée.
@@ -52,11 +52,11 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
    Cliquez sur **Afficher la progression** pour obtenir une vue granulaire de l’extraction en cours.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   Vous pouvez également surveiller la progression de la phase d’extraction à partir de Cloud Acceleration Manager en consultant la page du transfert de contenu, puis en cliquant sur **..** > **Afficher les détails**.
+   Vous pouvez également surveiller la progression de la phase d’extraction à partir de Cloud Acceleration Manager en consultant la page Transfert de contenu, puis en cliquant sur **..** > **Afficher les détails**.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
 1. Une fois l’extraction terminée, passez en revue les autres colonnes comme **Source** et **Chemins** pour plus d’informations sur le jeu de migration que vous avez renseigné. Cliquer **..** > **Afficher les détails** pour afficher les détails, y compris la durée de chaque étape de l’extraction. Affichez cette boîte de dialogue pendant l’extraction afin de voir comment les étapes progressent.
 
@@ -88,4 +88,4 @@ Suivez les étapes ci-dessous :
 
 ## Prochaines étapes {#whats-next}
 
-Après avoir appris à extraire du contenu de la source dans l’outil de transfert de contenu, vous êtes prêt à apprendre le processus d’ingestion dans l’outil de transfert de contenu. Voir [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) où vous pouvez apprendre à ingérer votre jeu de migration à partir de l’outil de transfert de contenu.
+Après avoir appris à extraire du contenu de Source dans l’outil de transfert de contenu, vous êtes prêt à apprendre le processus d’ingestion dans l’outil de transfert de contenu. Voir [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) où vous pouvez apprendre à ingérer votre jeu de migration à partir de l’outil de transfert de contenu.

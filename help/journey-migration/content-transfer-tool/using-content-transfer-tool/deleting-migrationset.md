@@ -15,8 +15,8 @@ ht-degree: 68%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_delete_migrationset"
->title="Suppression d&#39;un jeu de migration"
->abstract="Découvrez la suppression d&#39;un jeu de migration."
+>title="Suppression d’un jeu de migration"
+>abstract="Découvrez la suppression d’un jeu de migration."
 
 Les jeux de migration peuvent être supprimés de Cloud Acceleration Manager.
 
@@ -24,7 +24,7 @@ Les jeux de migration peuvent être supprimés de Cloud Acceleration Manager.
 
 Pour supprimer un jeu de migration, procédez comme suit :
 
-1. Accédez à la vue de liste du jeu de migration dans Cloud Acceleration Manager et cliquez sur les trois points (**..**) en regard du jeu de migration que vous souhaitez supprimer. L’action **Supprimer** doit être visible, comme illustré ci-dessous.
+1. Accédez à la vue Liste du jeu de migration dans Cloud Acceleration Manager et cliquez sur les trois points (**..**) en regard du jeu de migration que vous souhaitez supprimer. L’action **Supprimer** doit être visible, comme illustré ci-dessous.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
@@ -40,4 +40,4 @@ Pour supprimer un jeu de migration, procédez comme suit :
 
 Pour supprimer le jeu de migration de l’assistant de transfert de contenu, sélectionnez-le et cliquez sur **Supprimer** dans la barre d’actions.
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)
+![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

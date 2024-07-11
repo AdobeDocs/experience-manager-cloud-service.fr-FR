@@ -51,7 +51,7 @@ La formule générale pour calculer l’espace disque disponible requis est la s
    * *volume de stockage des nœuds* : taille du répertoire de stockage des segments ou taille de la base de données MongoDB.
 Ainsi, pour un volume de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
 
-* Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les compléments de contenu. Au maximum, 20 jeux de migration par projet dans Cloud Acceleration Manager peuvent être créés et gérés au cours de l’activité de transfert de contenu. Si plus de 20 jeux de migration sont nécessaires, créez un second projet dans Cloud Acceleration Manager. Toutefois, cela nécessite une gestion de projet supplémentaire et une gouvernance hors produit afin d’éviter le remplacement de contenu sur la cible par plusieurs utilisateurs.
+* Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les compléments de contenu. Au maximum, 20 jeux de migration par projet dans Cloud Acceleration Manager peuvent être créés et gérés simultanément pendant l’activité de transfert de contenu. Si plus de 20 jeux de migration sont nécessaires, créez un second projet dans Cloud Acceleration Manager. Toutefois, cela nécessite une gestion de projet supplémentaire et une gouvernance hors produit afin d’éviter le remplacement de contenu sur la cible par plusieurs utilisateurs.
 
 * Évitez de modifier le répertoire d’installation de l’outil CTT. Par défaut, l’installation a lieu dans le chemin crx-quickstart/cloud-migration. Cet emplacement spécifique est utilisé en interne par d’autres bibliothèques. La modification de ce chemin peut entraîner des problèmes d’extraction.
 

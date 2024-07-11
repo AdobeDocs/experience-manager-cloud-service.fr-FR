@@ -78,19 +78,19 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
-1. Connectez-vous à Cloud Acceleration Manager (CAM) et cliquez sur le projet CAM que vous avez créé précédemment pour évaluer votre préparation à AEM as a Cloud Service. Si vous n’avez pas créé de projet CAM, reportez-vous à la section Création et gestion d’un projet dans CAM.
+1. Connectez-vous à Cloud Acceleration Manager (CAM) et cliquez sur le projet CAM que vous avez créé précédemment afin d’évaluer votre préparation au passage à AEM as a Cloud Service. Si vous n’avez pas créé de projet CAM, reportez-vous à la section Création et gestion d’un projet dans CAM.
 
 1. Cliquez sur le bouton **Transfert de contenu** pour ouvrir la vue Liste des jeux de migration.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
 1. Créez un jeu de migration en cliquant sur **Créer un jeu de migration**.
 
    >[!NOTE]
    >
-   >Dans Cloud Acceleration Manager, vous pouvez créer un maximum de 20 jeux de migration, y compris les jeux expirés, par projet.
+   >Dans Cloud Acceleration Manager, il est possible de créer un maximum de 20 jeux de migration, y compris les jeux expirés, par projet.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
    La boîte de dialogue suivante s’affiche. Notez qu’un jeu de migration expire après une longue période d’inactivité. Une fois les avertissements affichés sur la carte du projet et les lignes du tableau des tâches de migration pour une période donnée, le jeu de migration expire et ses données ne sont plus disponibles. Consultez [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
 
@@ -179,11 +179,11 @@ Pour exécuter une vérification de taille, procédez comme suit :
 
 1. Sélectionnez un jeu de migration et cliquez sur **Vérifier la taille**.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
 1. Cela ouvre la fenêtre **Vérifier la taille** boîte de dialogue.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
 1. Cliquez sur **Vérifier la taille** pour démarrer le processus. Vous revenez alors à la vue Liste jeu de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
 

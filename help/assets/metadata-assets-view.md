@@ -138,7 +138,7 @@ Vous trouverez ci-dessous un aperçu de chaque type de propriété et de leur mo
 
 ### Attribuer un formulaire de métadonnées à un dossier {#assign-metadata-form-folder}
 
-Vous pouvez également affecter un formulaire de métadonnées à un dossier dans le déploiement de la vue Assets. Le formulaire de métadonnées attribué à un dossier selon le type MIME est remplacé lorsque vous appliquez manuellement un formulaire de métadonnées à un dossier. Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent ensuite les propriétés définies dans le formulaire de métadonnées.
+Vous pouvez également affecter un formulaire de métadonnées à un dossier dans votre déploiement de vue Assets. Le formulaire de métadonnées attribué à un dossier selon le type MIME est remplacé lorsque vous appliquez manuellement un formulaire de métadonnées à un dossier. Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent ensuite les propriétés définies dans le formulaire de métadonnées.
 
 Pour attribuer un formulaire de métadonnées à un dossier :
 

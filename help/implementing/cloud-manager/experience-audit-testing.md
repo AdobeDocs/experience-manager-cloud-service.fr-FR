@@ -61,7 +61,7 @@ Vous configurez les pages incluses dans le contrôle de l’expérience lors de 
    * Ajouter un nouveau [pipeline hors production,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si vous souhaitez activer l’audit sur un pipeline front-end ou de développement full-stack.
    * Ou vous pouvez [modifier un pipeline existant,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) et mettre à jour les options existantes.
 
-1. Si vous ajoutez ou modifiez un pipeline hors production pour lequel vous souhaitez utiliser le contrôle de l’expérience, vous devez sélectionner la variable **Audit de l’expérience** de la **Code source** .
+1. Si vous ajoutez ou modifiez un pipeline hors production pour lequel vous souhaitez utiliser le contrôle de l’expérience, vous devez sélectionner la variable **Audit de l’expérience** de la **Code Source** .
 
    ![Activation du contrôle de l’expérience](assets/experience-audit-enable.jpg)
 
