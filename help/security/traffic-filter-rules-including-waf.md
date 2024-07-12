@@ -4,10 +4,10 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '3947'
-ht-degree: 100%
+source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
+workflow-type: tm+mt
+source-wordcount: '3938'
+ht-degree: 96%
 
 ---
 
@@ -245,9 +245,9 @@ Les actions sont classées par ordre de priorité en fonction de leurs types dan
 
 | **Nom** | **Propriétés autorisées** | **Signification** |
 |---|---|---|
-| **autoriser** | `wafFlags` (facultatif), `alert` (facultatif, pas encore publié) | Si wafFlags n’est pas présent, arrête le traitement des règles et passe à la diffusion de la réponse. Si wafFlags est présent, désactive les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir la section [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
-| **bloquer** | `status, wafFlags` (facultatif et mutuellement exclusif), `alert` (facultatif, pas encore publié) | Si wafFlags n’est pas présent, renvoie une erreur HTTP en contournant toutes les autres propriétés, le code d’erreur est défini par la propriété de statut ou sur la valeur par défaut 406. Si wafFlags est présent, active les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir la section [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
-| **consigner** | `wafFlags` (facultatif), `alert` (facultatif, pas encore publié) | Consigne le fait que la règle a été déclenchée, sinon n’affecte pas le traitement. wafFlags n’a aucun effet. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Cette fonctionnalité n’est pas encore disponible. Voir la section [Alertes sur les règles de filtrage de trafic](#traffic-filter-rules-alerts) pour plus d’informations sur la façon de rejoindre le programme d’adoption précoce. |
+| **autoriser** | `wafFlags` (facultatif), `alert` (facultatif) | Si wafFlags n’est pas présent, arrête le traitement des règles et passe à la diffusion de la réponse. Si wafFlags est présent, désactive les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se déclenche pas de nouveau avant le lendemain (UTC). |
+| **bloquer** | `status, wafFlags` (facultatif et mutuellement exclusif), `alert` (facultatif) | Si wafFlags n’est pas présent, renvoie une erreur HTTP en contournant toutes les autres propriétés, le code d’erreur est défini par la propriété de statut ou sur la valeur par défaut 406. Si wafFlags est présent, active les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se déclenche pas de nouveau avant le lendemain (UTC). |
+| **log** | `wafFlags` (facultatif), `alert` (facultatif) | Consigne le fait que la règle a été déclenchée, sinon n’affecte pas le traitement. wafFlags n’a aucun effet. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se déclenche pas de nouveau avant le lendemain (UTC). |
 
 ### Liste des indicateurs WAF {#waf-flags-list}
 
@@ -493,16 +493,14 @@ data:
 
 ## Alertes sur les règles de filtrage de trafic {#traffic-filter-rules-alerts}
 
->[!NOTE]
->
->Cette fonctionnalité n’est pas encore disponible. Pour obtenir un accès par le biais du programme d’adoption précoce, envoyez un e-mail à **aemcs-waf-adopter@adobe.com**.
+Une règle peut être configurée pour envoyer une notification du Centre d’actions si elle est déclenchée dix fois pendant une fenêtre de 5 minutes. Une telle règle vous avertit lorsque certains schémas de trafic se produisent afin que vous puissiez prendre les mesures nécessaires. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se déclenche pas de nouveau avant le lendemain (UTC).
 
-Une règle peut être configurée pour envoyer une notification du Centre d’actions si elle est déclenchée dix fois pendant une fenêtre de 5 minutes. Une telle règle vous avertit lorsque certains schémas de trafic se produisent afin que vous puissiez prendre les mesures nécessaires. En savoir plus sur le [Centre d’actions](/help/operations/actions-center.md), notamment comment configurer les profils de notification requis pour recevoir des e-mails.
+En savoir plus sur le [Centre d’actions](/help/operations/actions-center.md), notamment comment configurer les profils de notification requis pour recevoir des e-mails.
 
 ![Notification du Centre d’actions](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-La propriété alerte (assortie du préfixe *expérimental* puisque la fonctionnalité n’est pas encore publiée), peut être appliquée au nœud d’action pour tous les types d’action (autoriser, bloquer, consigner).
+La propriété alert peut être appliquée au noeud action pour tous les types d’actions (allow, block, log).
 
 ```
 kind: "CDN"
@@ -519,7 +517,7 @@ data:
             - { reqProperty: tier, equals: publish }
         action:
           type: block
-          experimental_alert: true
+          alert: true
 ```
 
 ## Alerte de pic de trafic par défaut à l’origine {#traffic-spike-at-origin-alert}
@@ -532,7 +530,7 @@ Une notification par e-mail du [centre d’actions](/help/operations/actions-cen
 
 Si ce seuil est atteint, Adobe bloquera le trafic de cette adresse IP, mais il est recommandé de prendre des mesures supplémentaires pour protéger votre origine, notamment la configuration des règles de filtrage du trafic à des taux limites pour bloquer les pics de trafic à des seuils inférieurs. Voir le [tutoriel sur le blocage des attaques DoS et DDoS à l’aide des règles de trafic](#tutorial-blocking-DDoS-with-rules) pour une visite guidée.
 
-Cette alerte est activée par défaut, mais elle peut être désactivée à l’aide de la propriété *enable_ddos_alert*, définie sur false.
+Cette alerte est activée par défaut, mais elle peut être désactivée à l’aide de la propriété *enable_ddos_alert*, définie sur false. Une fois l’alerte déclenchée, elle ne se déclenche plus avant le lendemain (UTC).
 
 ```
 kind: "CDN"
