@@ -4,27 +4,27 @@ description: Découvrez comment configurer le trafic CDN en déclarant les règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
+source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1326'
 ht-degree: 3%
 
 ---
 
 # Configurer le trafic sur le réseau CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service propose un ensemble de fonctionnalités configurables dans la [Réseau de diffusion de contenu géré par Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) qui modifient la nature des requêtes entrantes ou des réponses sortantes. Les règles suivantes, décrites en détail dans cette page, peuvent être déclarées pour obtenir le comportement suivant :
+AEM as a Cloud Service propose un ensemble de fonctionnalités configurables au niveau de la couche [CDN gérée par Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) qui modifient la nature des requêtes entrantes ou des réponses sortantes. Les règles suivantes, décrites en détail dans cette page, peuvent être déclarées pour obtenir le comportement suivant :
 
-* [Transformations de requêtes](#request-transformations) - modifier les aspects des requêtes entrantes, notamment les en-têtes, les chemins et les paramètres ;
-* [Conversion des réponses](#response-transformations) : modifiez les en-têtes qui reviennent au client (par exemple, un navigateur web).
-* [Redirections côté client](#client-side-redirectors) : déclenche une redirection du navigateur. Cette fonctionnalité n’est pas encore disponible en version GA, mais elle est disponible pour les utilisateurs avancés.
-* [Sélecteurs d’origine](#origin-selectors) - proxy vers un serveur principal d’origine différent.
+* [Transformations de requêtes](#request-transformations) : modifiez les aspects des requêtes entrantes, y compris les en-têtes, les chemins et les paramètres.
+* [transformations de réponse](#response-transformations) - modifiez les en-têtes qui reviennent au client (par exemple, un navigateur web).
+* [Redirections côté client](#client-side-redirectors) - déclenchez une redirection du navigateur. Cette fonctionnalité n’est pas encore disponible en version GA, mais elle est disponible pour les utilisateurs avancés.
+* [Sélecteurs d’origine](#origin-selectors) - proxy vers un autre serveur principal d’origine.
 
-Les règles de filtrage du trafic (dont le WAF), qui contrôlent le trafic autorisé ou refusé par le CDN, peuvent également être configurées sur le CDN. Cette fonctionnalité est déjà disponible et vous pouvez en savoir plus dans la section [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) page.
+Les règles de filtrage du trafic (dont le WAF), qui contrôlent le trafic autorisé ou refusé par le CDN, peuvent également être configurées sur le CDN. Cette fonctionnalité est déjà disponible et vous pouvez en savoir plus à ce sujet sur la page [Règles de filtre de trafic y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md) .
 
-En outre, si le réseau de diffusion de contenu ne peut pas contacter son origine, vous pouvez écrire une règle qui fait référence à une page d’erreur personnalisée auto-hébergée (qui est alors rendue). En savoir plus à ce sujet en lisant la section [Configuration des pages d’erreur CDN](/help/implementing/dispatcher/cdn-error-pages.md) article.
+En outre, si le réseau de diffusion de contenu ne peut pas contacter son origine, vous pouvez écrire une règle qui fait référence à une page d’erreur personnalisée auto-hébergée (qui est alors rendue). Pour en savoir plus à ce sujet, consultez l’article [Configuration des pages d’erreur CDN](/help/implementing/dispatcher/cdn-error-pages.md) .
 
-Toutes ces règles, déclarées dans un fichier de configuration dans le contrôle de code source, sont déployées à l’aide de [Pipeline de configuration de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Gardez à l’esprit que la taille cumulée du fichier de configuration, y compris les règles de filtrage du trafic, ne peut pas dépasser 100 Ko.
+Toutes ces règles, déclarées dans un fichier de configuration dans le contrôle de code source, sont déployées à l’aide du [pipeline de configuration de Cloud Manager ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Gardez à l’esprit que la taille cumulée du fichier de configuration, y compris les règles de filtrage du trafic, ne peut pas dépasser 100 Ko.
 
 ## Ordre d’évaluation {#order-of-evaluation}
 
@@ -43,7 +43,7 @@ config/
      cdn.yaml
 ```
 
-* La variable `cdn.yaml` Le fichier de configuration doit contenir à la fois des métadonnées et les règles décrites dans les exemples ci-dessous. La variable `kind` doit être défini sur `CDN` et la version doit être définie sur la version du schéma, qui est actuellement `1`.
+* Le fichier de configuration `cdn.yaml` doit contenir à la fois des métadonnées et les règles décrites dans les exemples ci-dessous. Le paramètre `kind` doit être défini sur `CDN` et la version doit être définie sur la version du schéma, qui est actuellement `1`.
 
 * Créez un pipeline de configuration de déploiement ciblé dans Cloud Manager. Voir [configuration des pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et [configuration des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
@@ -58,7 +58,7 @@ Les types de règle dans les sections ci-dessous partagent une syntaxe commune.
 
 Une règle est référencée par un nom, une &quot;clause de condition&quot; et des actions.
 
-La clause when détermine si une règle sera évaluée, en fonction de propriétés telles que le domaine, le chemin, les chaînes de requête, les en-têtes et les cookies. La syntaxe est la même pour tous les types de règle. Pour plus d’informations, voir la section [Section Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) dans l’article Règles de filtrage du trafic .
+La clause when détermine si une règle sera évaluée, en fonction de propriétés telles que le domaine, le chemin, les chaînes de requête, les en-têtes et les cookies. La syntaxe est la même pour tous les types de règles. Pour plus d’informations, reportez-vous à la [section Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) de l’article Règles de filtrage du trafic .
 
 Les détails du noeud actions diffèrent par type de règle et sont décrits dans les sections individuelles ci-dessous.
 
@@ -68,7 +68,7 @@ Les règles de transformation de requêtes vous permettent de modifier les requ�
 
 Les cas d’utilisation sont variés et incluent des réécritures d’URL pour simplifier l’application ou mapper les URL héritées.
 
-Comme nous l’avons mentionné plus haut, le fichier de configuration est limité en termes de taille, de sorte que les organisations ayant des exigences plus importantes doivent définir des règles dans la variable `apache/dispatcher` calque.
+Comme mentionné précédemment, il existe une limite de taille au fichier de configuration, de sorte que les organisations ayant des exigences plus importantes doivent définir des règles dans la couche `apache/dispatcher`.
 
 Exemple de configuration :
 
@@ -168,7 +168,7 @@ actions:
 
 ### Variables {#variables}
 
-Vous pouvez définir des variables pendant la transformation de requête, puis les référencer ultérieurement dans la séquence d’évaluation. Voir [ordre d’évaluation](#order-of-evaluation) pour plus de détails.
+Vous pouvez définir des variables pendant la transformation de requête, puis les référencer ultérieurement dans la séquence d’évaluation. Pour plus d’informations, consultez le diagramme [ordre d’évaluation](#order-of-evaluation) .
 
 Exemple de configuration :
 
@@ -274,7 +274,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -292,7 +292,7 @@ L’action disponible est expliquée dans le tableau ci-dessous.
 | Nom | Propriétés | Signification |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | Nom de l’une des origines définies. |
-|     | useCache (facultatif, la valeur par défaut est true) | Indiquez si la mise en cache doit être utilisée pour les requêtes correspondant à cette règle. |
+|     | skipCache (facultatif, la valeur par défaut est false) | Indiquez si la mise en cache doit être utilisée pour les requêtes correspondant à cette règle. Par défaut, les réponses seront mises en cache en fonction de l’en-tête de mise en cache de la réponse (par exemple, Cache-Control ou Expires). |
 
 **Origines**
 
@@ -302,11 +302,11 @@ Les connexions aux origines sont uniquement SSL et utilisent le port 443.
 |------------------|--------------------------------------|
 | **name** | Nom pouvant être référencé par &quot;action.originName&quot;. |
 | **domain** | Nom de domaine utilisé pour se connecter au serveur principal personnalisé. Il est également utilisé pour l’interface SNI SSL et la validation. |
-| **ip** (facultatif, iv4 et ipv6 pris en charge) | S’il est fourni, il est utilisé pour se connecter au serveur principal au lieu de &quot;domaine&quot;. Toujours &quot;domain&quot; est utilisé pour l’interface SNI SSL et la validation. |
+| **ip** (facultatif, pris en charge iv4 et ipv6) | S’il est fourni, il est utilisé pour se connecter au serveur principal au lieu de &quot;domaine&quot;. Toujours &quot;domain&quot; est utilisé pour l’interface SNI SSL et la validation. |
 | **forwardHost** (facultatif, la valeur par défaut est false) | Si la valeur est définie sur true, l’en-tête &quot;Host&quot; de la requête client est transmis au serveur principal, sinon la valeur &quot;domain&quot; est transmise dans l’en-tête &quot;Host&quot;. |
 | **forwardCookie** (facultatif, la valeur par défaut est false) | S’il est défini sur true, l’en-tête &quot;Cookie&quot; de la requête client est transmis au serveur principal, sinon l’en-tête du cookie est supprimé. |
 | **forwardAuthorization** (facultatif, la valeur par défaut est false) | S’il est défini sur true, l’en-tête &quot;Authorization&quot; de la requête client est transmis au serveur principal, sinon l’en-tête Authorization est supprimé. |
-| **timeout** (facultatif, en secondes, la valeur par défaut est de 60) | Nombre de secondes pendant lesquelles le CDN doit attendre qu’un serveur principal diffuse le premier octet d’un corps de réponse HTTP. Cette valeur est également utilisée comme délai d’expiration entre les octets pour le serveur principal. |
+| **timeout** (facultatif, en secondes, la valeur par défaut est 60) | Nombre de secondes pendant lesquelles le CDN doit attendre qu’un serveur principal diffuse le premier octet d’un corps de réponse HTTP. Cette valeur est également utilisée comme délai d’expiration entre les octets pour le serveur principal. |
 
 ### Proxys vers les Edge Delivery Services {#proxying-to-edge-delivery}
 
@@ -341,13 +341,13 @@ data:
 ```
 
 >[!NOTE]
-> Puisque le réseau de diffusion de contenu géré par l’Adobe est utilisé, veillez à configurer l’invalidation push dans **géré** en suivant les Edge Delivery Services [Configuration de la documentation d’invalidation push](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Puisque le réseau de diffusion de contenu géré par l’Adobe est utilisé, veillez à configurer l’invalidation push en mode **managed** , en suivant la [documentation sur la configuration de l’invalidation push](https://www.aem.live/docs/byo-dns#setup-push-invalidation) des Edge Delivery Services.
 
 
 ## Redirections côté client {#client-side-redirectors}
 
 >[!NOTE]
->Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme d’adoption précoce, envoyez un email à `aemcs-cdn-config-adopter@adobe.com` et décrivez votre cas d’utilisation.
+>Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme des premiers adopteurs, envoyez un email `aemcs-cdn-config-adopter@adobe.com` et décrivez votre cas d’utilisation.
 
 Vous pouvez utiliser des règles de redirection côté client pour les redirections 301, 302 et les redirections côté client similaires. Si une règle correspond, le CDN répond avec une ligne d’état qui inclut le code d’état et le message (par exemple, HTTP/1.1 301 Déplacé définitivement), ainsi que le jeu d’en-têtes d’emplacement.
 
@@ -380,5 +380,5 @@ data:
 
 | Nom | Propriétés | Signification |
 |-----------|--------------------------|-------------|
-| **rediriger** | location | Valeur de l’en-tête &quot;Emplacement&quot;. |
+| **redirect** | location | Valeur de l’en-tête &quot;Emplacement&quot;. |
 |     | status (facultatif, 301 par défaut) | Statut HTTP à utiliser dans le message de redirection, 301 par défaut, les valeurs autorisées sont : 301, 302, 303, 307, 308. |
