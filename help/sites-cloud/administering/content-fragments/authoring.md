@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2687'
 ht-degree: 7%
 
 ---
@@ -27,7 +27,7 @@ Cet éditeur fournit les éléments suivants :
 * [Chargement en ligne de ressources en tant que références de contenu](#reference-images), sans avoir à les charger dans la gestion des ressources numériques.
 * [Générer des variations](#generate-variations-ai) pour utiliser l’IA générique afin d’accélérer la création de contenu en fonction des invites.
 * [Aperçu](#preview-content-fragment) de l’expérience rendue fournie par le fragment de contenu.
-* Capacité à [Publier](#publish-content-fragment) et [Dépublier](#unpublish-content-fragment) à partir de l’éditeur.
+* Capacité à [Publish](#publish-content-fragment) et [Dépublier](#unpublish-content-fragment) à partir de l’éditeur.
 * Capacité à [afficher et ouvrir les copies de langue associées ;](#view-language-copies) dans l’éditeur.
 * Capacité à [afficher les détails de version ;](#view-version-history) dans l’éditeur. Vous pouvez également revenir à une version sélectionnée.
 * Capacité à [afficher et ouvrir les références parentes ;](#view-parent-references).
@@ -35,7 +35,7 @@ Cet éditeur fournit les éléments suivants :
 
 >[!WARNING]
 >
->L’éditeur décrit dans cette section est *only* disponible dans le *en ligne* Adobe Experience Manager (AEM) as a Cloud Service.
+>L’éditeur décrit dans cette section est *only* disponible dans le *en ligne* as a Cloud Service Adobe Experience Manager (AEM).
 
 ## Éditeur de fragment de contenu {#content-fragment-editor}
 
@@ -45,7 +45,7 @@ Lorsque vous ouvrez l’éditeur de fragments de contenu pour la première fois,
    * lien vers la console de fragments de contenu (icône Accueil)
    * informations sur le modèle et le dossier
    * liens vers [Aperçu (si le modèle d’URL d’aperçu par défaut est configuré pour le modèle)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [Publier](#publish-content-fragment), et [Dépublier](#unpublish-content-fragment) actions
+   * [Publish](#publish-content-fragment), et [Dépublier](#unpublish-content-fragment) actions
    * une option pour afficher tout **Références parentes** (icône de lien)
    * le fragment **[État](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, et les dernières informations enregistrées ;
    * bascule pour passer à l’éditeur d’origine (basé sur les ressources)
@@ -116,7 +116,7 @@ Ouvrez le **Arborescence de structure** de la barre d’outils de l’éditeur p
 
 ## Variations {#variations}
 
-[Variations](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sont une fonctionnalité importante des fragments de contenu AEM. Ils vous permettent de créer et de modifier des copies de la **Principal** contenu à utiliser sur des canaux et des scénarios spécifiques, ce qui rend la diffusion de contenu sans interface utilisateur et la création de pages encore plus flexible.
+[Variations](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sont une fonctionnalité importante de l’AEM des fragments de contenu. Ils vous permettent de créer et de modifier des copies de la **Principal** contenu à utiliser sur des canaux et des scénarios spécifiques, ce qui rend la diffusion de contenu sans interface utilisateur et la création de pages encore plus flexible.
 
 Dans l’éditeur, vous pouvez effectuer les opérations suivantes :
 
@@ -336,7 +336,7 @@ Vous pouvez également [select **Créer un fragment** pour ouvrir le **Créer** 
 Dans **Référence de contenu** vous pouvez effectuer les deux opérations suivantes :
 
 * ressources de référence qui existent déjà dans le référentiel
-* les charger directement dans le champ ; cela évite d’utiliser la variable **Ressources** console à télécharger
+* les charger directement dans le champ ; cela évite d’utiliser la variable **Assets** console à télécharger
 
   >[!NOTE]
   >
@@ -348,19 +348,26 @@ Dans **Référence de contenu** vous pouvez effectuer les deux opérations suiva
 Pour ajouter une ressource, vous pouvez effectuer l’une des opérations suivantes :
 
 * faites glisser et déposez directement le nouveau fichier de ressource (par exemple, depuis votre système de fichiers) dans le **Référence de contenu** field
-* utilisez la méthode **Ajout d’une ressource** , puis sélectionnez l’une des options suivantes : **Parcourir les ressources** ou **Télécharger** pour ouvrir le sélecteur approprié afin d’utiliser :
+* utilisez la méthode **Ajout d’une ressource** , puis sélectionnez l’une des options suivantes : **Parcourir Assets** ou **Télécharger** pour ouvrir le sélecteur approprié afin d’utiliser :
 
   ![Éditeur de fragment de contenu - Ajout d’options de ressource](assets/cf-authoring-add-asset-options.png)
 
 #### Pages de référence {#reference-pages}
 
-Pour ajouter des références à des pages AEM, des fragments d’expérience ou d’autres types de contenu :
+Pour ajouter des références à des pages AEM, des fragments d’expérience ou d’autres types de contenu de ce type :
 
 1. Sélectionner **Ajouter un chemin d’accès au contenu**.
 
 1. Ajoutez le chemin d’accès requis dans le champ de saisie.
 
 1. Confirmer avec **Ajouter**.
+
+>[!NOTE]
+>
+>Cela ne doit pas être utilisé pour les références à :
+>
+>* Fragments de contenu - utilisez une [Référence de fragment](#fragment-references)
+>* Images - utiliser [Images de référence](#reference-images)
 
 ### Afficher les références parentes {#view-parent-references}
 
@@ -472,10 +479,10 @@ Une fois l’URL définie, la variable **Aperçu** est actif. Vous pouvez sélec
 
 ## Publish de votre fragment {#publish-content-fragment}
 
-Vous pouvez **Publier** votre fragment dans :
+Vous pouvez **Publish** votre fragment dans :
 
 * Prévisualiser l’instance
-* Instance de publication
+* Instance Publish
 
 Vous pouvez publier votre fragment à partir de l’éditeur ou de la console. Voir [Publication et aperçu d’un fragment](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) pour plus d’informations.
 
@@ -484,7 +491,7 @@ Vous pouvez publier votre fragment à partir de l’éditeur ou de la console. V
 Vous pouvez également **Dépublier** votre fragment à partir de :
 
 * Prévisualiser l’instance
-* Instance de publication
+* Instance Publish
 
 Vous pouvez annuler la publication de votre fragment dans l’éditeur ou dans la console. Voir [Annulation de la publication d’un fragment](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) pour plus d’informations.
 
@@ -551,6 +558,6 @@ La variable **Champs** répertorie tous les champs du fragment de contenu. L’i
 
   Le fragment de contenu et ses variations comportent également des champs de métadonnées (propriétés de variation) appelés **Titre** et **Description**. Ces champs font partie intégrante d’un fragment de contenu et sont initialement définis lors du fragment. Ils peuvent être mis à jour dans le *panneau droit* lors de la modification du fragment.
 
-* Pour plus d’informations sur la fonction [éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md) - il est disponible à partir de la **Ressources** et la console **Fragments de contenu** console.
+* Pour plus d’informations sur la variable [éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md) - il est disponible à partir de la **Assets** et la console **Fragments de contenu** console.
 
 * Votre équipe de projet peut personnaliser l’éditeur si nécessaire. Voir [Personnalisation de la console de fragments de contenu et de l’éditeur](/help/implementing/developing/extending/content-fragments-console-and-editor.md) pour plus de détails.
