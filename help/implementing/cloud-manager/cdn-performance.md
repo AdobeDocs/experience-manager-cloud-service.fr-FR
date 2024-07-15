@@ -20,7 +20,7 @@ Découvrez comment Cloud Manager évalue les performances du réseau de diffusio
 
 Chaque programme Cloud Manager dispose d’un tableau de bord des performances CDN. Ce tableau de bord présente un score global des performances du réseau de diffusion de contenu, ainsi que des tendances, des alertes et des suggestions d’amélioration, le cas échéant.
 
-![Tableau de bord des performances du réseau CDN](assets/cdn-performance-dashboard.png)
+![Tableau de bord des performances CDN](assets/cdn-performance-dashboard.png)
 
 ## Accès au tableau de bord {#accessing}
 
@@ -28,11 +28,11 @@ Le tableau de bord du réseau CDN est disponible sur la page d’aperçu de chaq
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , appuyez ou cliquez sur le programme dont vous souhaitez afficher le tableau de bord CDN.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur le programme dont vous souhaitez afficher le tableau de bord CDN.
 
-   ![Page Mes programmes](assets/my-programs.png)
+   ![Ma page de programmes](assets/my-programs.png)
 
-1. Sur le **Aperçu du programme** de votre programme, faites défiler la page vers le bas, **Environnements** et **Pipelines** pour afficher les **Performances** carte.
+1. Sur la page **Aperçu du programme** de votre programme, faites défiler la page sous les cartes **Environnements** et **Pipelines** pour afficher la carte **Performance**.
 
    ![Performances](assets/cdn-performance-overview.png)
 
@@ -40,15 +40,15 @@ Le tableau de bord du réseau CDN est disponible sur la page d’aperçu de chaq
 
 Le tableau de bord présente un score global des performances du réseau de diffusion de contenu, ainsi que des tendances, des alertes et des suggestions d’amélioration, le cas échéant.
 
-![Tableau de bord des performances du réseau CDN](assets/cdn-performance-dashboard.png)
+![Tableau de bord des performances CDN](assets/cdn-performance-dashboard.png)
 
-Pour plus d’informations sur les performances de votre réseau de diffusion de contenu et pour obtenir des suggestions sur la façon de l’améliorer, appuyez ou cliquez sur . **Afficher la tendance**.
+Pour plus d’informations sur les performances de votre réseau de diffusion de contenu et pour obtenir des suggestions pour l’améliorer, appuyez ou cliquez sur **Afficher la tendance**.
 
-![Tendance des performances](assets/cdn-performance-trend.png)
+![Tendance de performances](assets/cdn-performance-trend.png)
 
-Appuyez ou cliquez sur **Affichage** sous le graphique pour modifier la période du graphique.
+Appuyez ou cliquez sur **Afficher** sous le graphique pour modifier la période du graphique.
 
-Pour obtenir des suggestions sur la façon d’améliorer les performances du réseau de diffusion de contenu, sélectionnez le **Recommendations** .
+Pour obtenir des suggestions sur la façon d’améliorer les performances de votre réseau de diffusion de contenu, sélectionnez l’onglet **Recommendations** .
 
 ![Recommandations CDN](assets/cdn-performance-recommendations.png)
 
@@ -67,12 +67,12 @@ Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
 * **Accès** - Les données sont demandées par le cache, et elles ont été trouvées.
-* **Miss** - Les données sont demandées par le cache, et elles sont introuvables.
-* **Pass** - Les données sont demandées par le cache et sont définies pour ne pas les mettre en cache dans tous les cas.
+* **Miss** - Les données sont demandées par le cache et sont introuvables.
+* **Pass** - Les données sont demandées par le cache et sont définies pour ne pas mettre ces données en cache dans tous les cas.
 * **Autre** - Toutes les requêtes de données du cache qui ne correspondent à aucun autre cas.
 
 Les mesures du cache sont mises à jour toutes les 24 heures.
 
 >[!TIP]
 >
->Pour plus d’informations sur la façon dont Cloud Manager et le réseau de diffusion de contenu interagissent avec Dispatcher, consultez le document . [Mise en cache dans AEM as a Cloud Service.](/help/implementing/dispatcher/caching.md)
+>Pour plus d’informations sur la façon dont Cloud Manager et le réseau de diffusion de contenu interagissent avec Dispatcher, consultez le document [Mise en cache dans AEM as a Cloud Service.](/help/implementing/dispatcher/caching.md)

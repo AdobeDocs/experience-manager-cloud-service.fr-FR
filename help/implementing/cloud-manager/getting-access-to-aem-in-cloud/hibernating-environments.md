@@ -34,7 +34,7 @@ Suivez ces étapes pour mettre vos environnements de programme Sandbox en veille
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , appuyez ou cliquez sur le programme à mettre en veille pour afficher ses détails.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur le programme que vous souhaitez mettre en veille pour afficher ses détails.
 
 1. Sur la carte **Environnements**, cliquez sur le bouton représentant des points de suspension et sélectionnez la **Developer Console**.
 
@@ -50,11 +50,11 @@ Suivez ces étapes pour mettre vos environnements de programme Sandbox en veille
 
    ![Confirmation de la mise en veille](assets/hibernate-2.png)
 
-Une fois la mise en veille terminée, vous voyez la notification de fin du processus de mise en veille pour votre environnement dans **Developer Console** écran.
+Une fois la veille terminée, vous voyez la notification de fin du processus de veille pour votre environnement dans l’écran **Developer Console**.
 
 ![Confirmation de veille](assets/hibernate-4.png)
 
-Dans Developer Console, vous pouvez également cliquer sur le **Environnements** dans les chemins de navigation au-dessus de la balise **Capsule** Liste déroulante pour une liste des environnements à mettre en veille.
+Dans Developer Console, vous pouvez également cliquer sur le lien **Environments** dans le chemin de navigation situé au-dessus de la liste déroulante **Pod** pour obtenir une liste des environnements à mettre en veille.
 
 ![Liste des environnements à mettre en veille](assets/hibernate-1b.png)
 
@@ -68,13 +68,13 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , appuyez ou cliquez sur le programme à réactiver pour afficher ses détails.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur le programme que vous souhaitez réactiver pour afficher ses détails.
 
 1. Sur la carte **Environnements**, cliquez sur le bouton représentant des points de suspension et sélectionnez la **Developer Console**.
 
    * Consultez [Accès à Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) pour plus d’informations sur Developer Console.
 
-1. Cliquez sur **Réactiver**.
+1. Cliquez sur **De-hibernate** (Réactiver).
 
    ![Bouton De-hibernate](assets/de-hibernation-img1.png) (Réactiver)
 
@@ -91,7 +91,7 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
    ![Fin de la réactivation](assets/de-hibernation-img4.png)
 
 
-Dans Developer Console, vous pouvez également cliquer sur le **Environnements** dans les chemins de navigation au-dessus de la balise **Capsule** Liste déroulante pour une liste des environnements à réactiver.
+Dans Developer Console, vous pouvez également cliquer sur le lien **Environments** dans le chemin de navigation situé au-dessus de la liste déroulante **Pod** pour obtenir une liste des environnements à réactiver.
 
 ![Liste des capsules en veille](assets/de-hibernate-1b.png)
 

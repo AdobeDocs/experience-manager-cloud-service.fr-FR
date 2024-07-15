@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Guide de démarrage rapide pour la création {#quick-guide-to-authoring}
 
-Pour commencer à créer du contenu à l’aide de la section **Sites** console.
+Démarrez ici pour obtenir un guide rapide et de haut niveau pour commencer à créer du contenu à l’aide de la console **Sites**.
 
 >[!TIP]
 >
@@ -23,30 +23,30 @@ Pour commencer à créer du contenu à l’aide de la section **Sites** console.
 
 ## Tout commence dans la console Sites. {#sites-console}
 
-Si vous souhaitez créer du contenu ou afficher et gérer votre contenu existant, l’aperçu central pour vous est : **Sites** console.
+Que vous souhaitiez créer du contenu ou afficher et gérer votre contenu existant, l’aperçu central pour vous est la console **Sites**.
 
-Lorsque vous vous connectez pour la première fois à AEM, vous accédez à l’écran de navigation globale. Appuyez ou cliquez simplement sur **Sites** pour ouvrir le **Sites** console.
+Lorsque vous vous connectez pour la première fois à AEM, vous accédez à l’écran de navigation globale. Appuyez ou cliquez simplement sur **Sites** pour ouvrir la console **Sites**.
 
 ![Navigation globale](assets/getting-started-global-navigation.png)
 
-Pour accéder à la navigation globale à partir de n’importe quel autre emplacement d’AEM, appuyez ou cliquez sur le bouton **Adobe Experience Manager** lien situé en haut à gauche de tout écran d’AEM, qui ouvre une fenêtre déroulante de la navigation globale.
+Pour accéder à la navigation globale à partir de n’importe quel autre emplacement d’AEM, appuyez ou cliquez sur le lien **Adobe Experience Manager** en haut à gauche de tout écran AEM, ce qui ouvre une liste déroulante de la navigation globale.
 
-Une fois dans la variable **Sites** , votre contenu est simple à parcourir et présenté par défaut dans un mode Colonnes.
+Une fois dans la console **Sites**, votre contenu est simple à parcourir et est présenté par défaut dans un mode Colonnes.
 
 ![La console Sites](assets/getting-started-sites-console.png)
 
 ## Vues {#views}
 
-Par défaut, la variable **Sites** s’ouvre dans la console **Colonne** vue. Chaque niveau de hiérarchie est affiché sous la forme d’une colonne, qui se prête bien au contenu organisé hiérarchiquement sur le web.
+Par défaut, la console **Sites** s’ouvre dans la vue **Colonne**. Chaque niveau de hiérarchie est affiché sous la forme d’une colonne, qui se prête bien au contenu organisé hiérarchiquement sur le web.
 
-![Mode Colonnes](assets/getting-started-column-view.png)
+![Colonnes vues](assets/getting-started-column-view.png)
 
 Appuyez ou cliquez sur une entrée dans une colonne pour la sélectionner ou ouvrir le niveau suivant vers le bas de la hiérarchie. Un élément sélectionné est indiqué par une coche.
 
 Deux vues supplémentaires sont disponibles :
 
-* **Mode Carte** - Cette vue présente chaque entrée comme une carte facilement manipulable, rendant ainsi des options supplémentaires facilement accessibles.
-* **Mode Liste** : présente un seul niveau de hiérarchie sous la forme d’une seule liste, fournissant des détails supplémentaires sur les éléments individuels.
+* **Mode Carte** - Ce mode présente chaque entrée comme une carte facilement manipulable, rendant ainsi des options supplémentaires facilement accessibles.
+* **Mode Liste** : présente un niveau unique d’une hiérarchie sous la forme d’une liste unique, fournissant plus de détails sur les éléments individuels.
 
 Utilisez le sélecteur de vue situé en haut à gauche de l’écran pour passer d’une vue à l’autre. Ce document utilise la vue Colonnes par défaut.
 
@@ -54,7 +54,7 @@ Utilisez le sélecteur de vue situé en haut à gauche de l’écran pour passer
 
 **Mode Colonnes** présente le contenu sous la forme d’une série de colonnes en cascade. La sélection d’un élément dans la colonne active affiche ses détails dans la colonne suivante à droite s’il s’agit d’un document ou affiche le contenu du niveau de hiérarchie suivant s’il s’agit d’un dossier.
 
-![Mode Colonnes en détail](assets/getting-started-column-detail.png)
+![Affichage Colonnes en détail](assets/getting-started-column-detail.png)
 
 Ainsi, vous pouvez parcourir la structure de contenu vers le haut et vers le bas.
 
@@ -70,7 +70,7 @@ La recherche s’affiche sous la forme d’une liste déroulante sur l’ensembl
 
 ## Création de contenu {#creating}
 
-Pour créer une page, accédez simplement à l’emplacement où vous souhaitez qu’elle se trouve dans la hiérarchie de contenu, puis appuyez ou cliquez sur l’icône **Créer** dans la barre d’outils.
+Pour créer une page, accédez simplement à l’emplacement où vous souhaitez qu’elle se trouve dans la hiérarchie de contenu, puis appuyez ou cliquez sur le bouton **Créer** de la barre d’outils.
 
 ![Créer](assets/getting-started-create.png)
 
@@ -80,27 +80,27 @@ En fonction de ce que vous avez choisi de créer, l’assistant approprié vous 
 
 ## Modifier le contenu {#editing}
 
-Pour modifier une page, appuyez ou cliquez dessus pour la sélectionner dans le **Sites** console. Ensuite, dans la barre d’outils qui s’affiche, appuyez ou cliquez sur le bouton **Modifier** Icône
+Pour modifier une page, appuyez ou cliquez dessus pour la sélectionner dans la console **Sites**. Ensuite, dans la barre d’outils qui s’affiche, appuyez ou cliquez sur l’icône **Modifier** .
 
 ![Sélectionner le contenu à modifier](assets/getting-started-edit.png)
 
 La page s’ouvre alors dans l’éditeur approprié au contenu.
 
-Si vous souhaitez simplement mettre à jour les propriétés d’une page, telles que les balises ou son nom, vous pouvez appuyer ou cliquer sur le bouton **Propriétés** dans la barre d’outils.
+Si vous souhaitez simplement mettre à jour les propriétés d’une page comme les balises ou son nom, vous pouvez appuyer ou cliquer sur l’icône **Propriétés** de la barre d’outils.
 
 ## Organisation du contenu {#organizing}
 
-Pour déplacer ou copier une page, sélectionnez-la dans la console, puis, dans la barre d’outils, appuyez ou cliquez sur **Déplacer** ou **Copier**. Un assistant vous guide tout au long des étapes de déplacement ou de copie, en définissant le nom et l’emplacement de la page résultant du déplacement.
+Pour déplacer ou copier une page, sélectionnez la page dans la console, puis, dans la barre d’outils, appuyez ou cliquez sur **Déplacer** ou **Copier**. Un assistant vous guide tout au long des étapes de déplacement ou de copie, en définissant le nom et l’emplacement de la page résultant du déplacement.
 
 ![Assistant de déplacement de page](assets/getting-started-move-page.png)
 
 ## Publication de contenu {#publishing}
 
-Lorsque vous avez terminé d’apporter les modifications souhaitées à votre contenu à l’aide de la variable **Sites** , vous pouvez publier le contenu. Sélectionnez le contenu à publier, puis appuyez ou cliquez sur le bouton **Publication rapide** dans la barre d’outils.
+Lorsque vous avez terminé d’apporter les modifications souhaitées à votre contenu à l’aide de la console **Sites**, vous pouvez publier le contenu. Sélectionnez le contenu à publier et appuyez ou cliquez sur l’icône **Quick Publish** dans la barre d’outils.
 
 ![Publication rapide](assets/getting-started-quick-publish.png)
 
-Confirmez la publication en appuyant ou en cliquant de nouveau sur **Publier** dans la boîte de dialogue.
+Confirmez la publication en appuyant ou en cliquant de nouveau sur **Publish** dans la boîte de dialogue.
 
 ## Ressources supplémentaires {#additional-resources}
 

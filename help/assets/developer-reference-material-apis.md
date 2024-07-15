@@ -187,7 +187,7 @@ Le processus de chargement d’un binaire n’est pas terminé tant que l’URL 
 
 ### Exemple de script Shell pour charger des ressources dans AEM as a Cloud Service {#upload-assets-shell-script}
 
-Le processus de chargement en plusieurs étapes pour un accès binaire direct dans AEM as a Cloud Service est illustré dans l’exemple shell-script suivant. `aem-upload.sh`:
+Le processus de chargement en plusieurs étapes pour un accès binaire direct dans AEM as a Cloud Service est illustré dans l’exemple shell-script `aem-upload.sh` suivant :
 
 ```bash
 #!/bin/bash
@@ -552,4 +552,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] en tant que [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

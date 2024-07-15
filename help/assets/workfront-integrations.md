@@ -20,9 +20,9 @@ ht-degree: 87%
 
 [!DNL Adobe Workfront] est une application de gestion du travail qui vous permet de gérer l’ensemble du cycle de vie du travail en un seul endroit. L’intégration entre [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] permet aux entreprises d’améliorer la vitesse du contenu et le délai de mise sur le marché en établissant des liens intrinsèques entre le travail et la gestion des ressources numériques. Dans le cadre de la gestion de leur travail dans Workfront, les utilisateurs ont accès aux documents et images requis.
 
-Adobe des offres à [intégrer [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] En mode natif (prise en charge des Assets Essentials et des ressources as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=fr).
+Adobe propose [integrate [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] nativement (prise en charge des Assets Essentials et des as a Cloud Service Assets)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=fr).
 
-Avec l’intégration de Experience Manager native, vous pouvez :
+Avec l’intégration d’Experience Manager native, vous pouvez :
 
 * Configuration rapide de l’intégration dans Workfront.
 
@@ -44,7 +44,7 @@ Depuis juin 2022, Adobe a lancé une nouvelle intégration native pour connecte
 >
 >Adobe ne prend pas en charge l’utilisation en parallèle du connecteur amélioré Workfront pour Experience Manager et de l’intégration d’Experience Manager.
 
-Pour les installations antérieures à juin 2022, voici quelques points à noter pour le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector]:
+Pour les installations antérieures à juin 2022, voici quelques points à noter pour le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector] :
 
 * Adobe nécessite le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ou [!DNL Adobe Professional Services]. S’il est déployé et configuré sans partenaire certifié ou sans [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
 * Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.

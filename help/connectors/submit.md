@@ -1,6 +1,6 @@
 ---
 title: Envoi d’un connecteur AEM
-description: Découvrez comment référencer et déployer correctement les connecteurs dans Adobe Experience Manager (AEM) as a Cloud Service.
+description: Découvrez comment référencer et déployer correctement les connecteurs as a Cloud Service Adobe Experience Manager (AEM).
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 feature: Operations
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 32%
 
 # Envoi d’un connecteur AEM
 
-Les informations fournies ci-dessous sont utiles pour envoyer des connecteurs Adobe Experience Manager (AEM) et doivent être lues avec des articles sur [implémentation](implement.md) et  [maintenance](maintain.md) connecteurs.
+Les informations fournies ci-dessous sont utiles pour l’envoi de connecteurs Adobe Experience Manager (AEM) et doivent être lues avec des articles sur l’ [implémentation](implement.md) et la [ maintenance](maintain.md) des connecteurs.
 
 Les connecteurs AEM sont répertoriés dans [Adobe Exchange](https://partners.adobe.com/technologyprogram/experiencecloud.html).
 
@@ -38,7 +38,7 @@ Où qu’ils soient hébergés, les modules doivent être référencés en tant 
 </dependency>
 ```
 
-Si le partenaire logiciel héberge le connecteur sur un référentiel Maven accessible sur Internet (tel que Cloud Manager accessible), le partenaire doit fournir la configuration du référentiel où la variable `pom.xml` peut être placé. Cela est dû au fait que les dépendances des connecteurs (ci-dessus) peuvent être résolues au moment de la création, à la fois localement et par Cloud Manager.
+Si le partenaire logiciel héberge le connecteur sur un référentiel Maven accessible sur Internet (tel que Cloud Manager accessible), le partenaire doit fournir la configuration du référentiel où le `pom.xml` peut être placé. Cela est dû au fait que les dépendances des connecteurs (ci-dessus) peuvent être résolues au moment de la création, à la fois localement et par Cloud Manager.
 
 ```xml
 <repository>
@@ -55,4 +55,4 @@ Si le partenaire logiciel héberge le connecteur sur un référentiel Maven acce
 </repository>
 ```
 
-Si le partenaire logiciel choisit de distribuer le connecteur en tant que fichiers téléchargeables, le partenaire doit alors fournir des instructions. L’instruction doit décrire comment les fichiers peuvent être déployés dans un référentiel Maven de système de fichiers local qui doit être archivé dans Git dans le cadre du projet AEM. Cloud Manager peut ainsi résoudre ces dépendances.
+Si le partenaire logiciel choisit de distribuer le connecteur en tant que fichiers téléchargeables, le partenaire doit alors fournir des instructions. L’instruction doit décrire comment les fichiers peuvent être déployés dans un référentiel Maven de système de fichiers local qui doit être archivé dans Git dans le cadre du projet AEM. Cela permet à Cloud Manager de résoudre ces dépendances.

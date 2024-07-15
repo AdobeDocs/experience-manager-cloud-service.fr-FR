@@ -52,7 +52,7 @@ Tous ces points d’entrée ouvrent le lancement dans la console Sites , où vou
 
 * Naviguer
 * **Créer** des pages
-* Sélectionnez des pages existantes et agissez, par exemple : **Modifier**, ouvrez **Propriétés**, **Verrouiller**, **Copier**, **Coller** et **Supprimer**
+* Sélectionnez les pages existantes et agissez. Par exemple, **Modifier**, ouvrez **Propriétés**, **Verrouiller**, **Copier**, **Coller** et **Supprimer**
   ![Accéder au lancement dans la console Sites à partir de Gérer le contenu](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Utiliser le rail **Références** pour revenir aux pages **Source de lancement** :
   ![Console Sites – Source de lancement](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

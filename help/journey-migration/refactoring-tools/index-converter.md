@@ -36,7 +36,7 @@ Si la [vérification de l’index Oak](https://adobe-consulting-services.github.
 
 ## Utilisation d’Index Converter {#using-index-converter}
 
-* Par Adobe I/O, interface de ligne de commande : Adobe recommande d’utiliser le convertisseur d’index au moyen de l’option  `aio-cli-plugin-aem-cloud-service-migration` (AEM module externe de refactorisation du code as a Cloud Service pour l’interface de ligne de commande d’Adobe I/O).
+* Par Adobe I/O CLI : Adobe recommande d’utiliser le convertisseur d’index au moyen de `aio-cli-plugin-aem-cloud-service-migration` (module externe de refactorisation du code AEM as a Cloud Service pour l’interface de ligne de commande d’Adobe I/O).
 
   Voir **[Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** pour savoir comment installer et utiliser le module externe.
 

@@ -29,8 +29,8 @@ Pour plus d’informations sur les environnements de prévisualisation, consulte
 
 Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’interface utilisateur de **Publication gérée**.
 
-1. Dans la console Sites , sélectionnez la ou les pages à envoyer en prévisualisation, puis cliquez sur le bouton **Gérer la publication** bouton .
-1. Dans l’assistant suivant, sélectionnez **Aperçu** comme destination.
+1. Dans la console Sites, sélectionnez la ou les pages à envoyer en prévisualisation, puis cliquez sur le bouton **Gérer la publication** .
+1. Dans l’assistant suivant, sélectionnez **Preview** comme destination.
 
    ![publication gérée](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 

@@ -37,7 +37,7 @@ Le statut ne doit pas être conservé dans la mémoire, mais conservé dans le r
 
 N’utilisez pas le système de fichiers de l’instance dans AEM as a Cloud Service. Le disque est éphémère et est effacé lorsque les instances sont recyclées. L’utilisation limitée du système de fichiers pour le stockage temporaire lié au traitement des demandes uniques est possible, mais ne doit pas être excessive dans le cas des fichiers volumineux. En effet, elle peut avoir un impact négatif sur le quota d’utilisation des ressources et rencontrer des limitations de disque.
 
-Par exemple, si l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publication doit s’assurer que toutes les données qui doivent être conservées sont transférées vers un service externe pour un stockage à plus long terme.
+Par exemple, si l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publish doit s’assurer que toutes les données qui doivent être conservées sont transférées vers un service externe pour un stockage à plus long terme.
 
 ## Observation {#observation}
 
@@ -168,29 +168,29 @@ Les niveaux de journal sont les suivants :
 
 Les images mémoire de threads dans les environnements Cloud sont collectés en permanence, mais ne peuvent pas être téléchargées en libre-service pour le moment. En attendant, contactez l’assistance AEM si des images mémoire de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre temporelle exacte.
 
-## CRX/DE Lite et la console de développement as a Cloud Service AEM {#crxde-lite-and-developer-console}
+## CRX/DE Lite et AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
 ### Développement local {#local-development}
 
 Pour le développement local, les développeurs ont un accès complet à CRXDE Lite (`/crx/de`) et à la console web AEM (`/system/console`).
 
-Sur le développement local (à l’aide du SDK), `/apps` et `/libs` peuvent être écrits directement dans , ce qui diffère des environnements cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
+Lors du développement local (à l’aide du SDK), `/apps` et `/libs` peuvent être écrits directement dans , ce qui diffère des environnements cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
 
 ### Outils de développement AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->AEM Developer Console as a Cloud Service ne doit pas être confondue avec le [*Console Adobe Developer*](https://developer.adobe.com/developer-console/).
+>AEM as a Cloud Service Developer Console ne doit pas être confondu avec le [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) du même nom.
 >
 
 Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement du niveau de création, mais pas sur l’environnement intermédiaire ou de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
-Il est possible de lancer l’explorateur de référentiels à partir d’AEM as a Cloud Service Developer Console, afin d’obtenir une vue en lecture seule du référentiel pour tous les environnements sur les niveaux de création, de publication et d’aperçu. En savoir plus sur le navigateur de référentiels [ici](/help/implementing/developing/tools/repository-browser.md).
+Il est possible de lancer l’explorateur de référentiel à partir d’AEM as a Cloud Service Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et d’aperçu. En savoir plus sur le navigateur de référentiels [ici](/help/implementing/developing/tools/repository-browser.md).
 
-Un ensemble d’outils de débogage AEM environnements de développement as a Cloud Service est disponible dans AEM Console de développement as a Cloud Service pour les environnements de développement, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
+Un ensemble d’outils de débogage des environnements de développement AEM as a Cloud Service est disponible dans AEM as a Cloud Service Developer Console pour les environnements de développement, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Vous pouvez, à titre de raccourci, utiliser la commande d’interface de ligne de commande Cloud Manager suivante pour lancer AEM as a Cloud Service Developer Console en fonction d’un paramètre d’environnement décrit ci-dessous :
+Vous pouvez utiliser comme raccourci la commande d’interface de ligne de commande Cloud Manager suivante pour lancer AEM as a Cloud Service Developer Console en fonction d’un paramètre d’environnement décrit ci-dessous :
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -208,11 +208,11 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Également utile pour le débogage, la console de développement as a Cloud Service d’AEM comporte un lien vers l’outil Expliquer la requête :
+Également utile pour le débogage, AEM as a Cloud Service Developer Console comporte un lien vers l’outil Expliquer la requête :
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes de production, l’accès à AEM as a Cloud Service Developer Console est défini par &quot;Cloud Manager - Rôle de développeur&quot; dans Adobe Admin Console, tandis que pour les programmes Sandbox, l’AEM as a Cloud Service Developer Console est disponible pour tout utilisateur disposant d’un profil de produit qui lui donne accès à l’environnement as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développement » est nécessaire pour les vidages de statut et le navigateur de référentiels. Les utilisateurs et les utilisatrices doivent également être définis dans le profil de produit Utilisateurs et utilisatrices d’AEM ou Administrateurs et administratrices d’AEM sur les services de création et de publication pour afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
+Pour les programmes de production, l’accès à AEM as a Cloud Service Developer Console est défini par &quot;Cloud Manager - Rôle de développeur&quot; dans Adobe Admin Console, tandis que pour les programmes Sandbox, AEM as a Cloud Service Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui donnant accès à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développement » est nécessaire pour les vidages de statut et le navigateur de référentiels. Les utilisateurs et les utilisatrices doivent également être définis dans le profil de produit Utilisateurs et utilisatrices d’AEM ou Administrateurs et administratrices d’AEM sur les services de création et de publication pour afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
 
 ### Surveillance des performances {#performance-monitoring}
 
@@ -249,7 +249,7 @@ Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/exp
 
 Le port du serveur SMTP doit être défini comme jeu de valeur `portDest` dans le paramètre portForwards utilisé dans l’appel API lors de la configuration de la mise en réseau avancée et la valeur `portOrig` doit être une valeur significative comprise entre 30 000 et 30 099, selon la plage requise. Par exemple, si le port du serveur SMTP est 465, le port 30465 doit être utilisé en tant que valeur `portOrig`.
 
-Dans ce cas, en supposant que SSL doive être activé, dans la configuration de la variable **Day CQ Mail Service OSGI** service :
+Dans ce cas, en supposant que SSL doive être activé, dans la configuration du service **Day CQ Mail Service OSGI** :
 
 * Définissez `smtp.port` sur `30465`.
 * Définissez `smtp.ssl` sur `true`.

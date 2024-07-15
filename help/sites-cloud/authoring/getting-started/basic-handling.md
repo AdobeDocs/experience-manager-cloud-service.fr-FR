@@ -31,7 +31,7 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 
 ![Panneau de navigation](/help/sites-cloud/authoring/assets/navigation.png)
 
-La console **Sites** est utilisée dans ce document pour garantir une bonne compréhension de l’utilisation de base d’AEM. Sélectionner sur **Sites** pour commencer.
+La console **Sites** est utilisée dans ce document pour garantir une bonne compréhension de l’utilisation de base d’AEM. Sélectionnez sur **Sites** pour commencer.
 
 ## Navigation dans le produit {#product-navigation}
 
@@ -39,7 +39,7 @@ Lorsqu’une personne utilisatrice accède à une console pour la première fois
 
 ![Tutoriel de navigation](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Sélectionner **Suivant** pour accéder à la page suivante de la présentation. Sélectionner **Fermer** ou sélectionnez en dehors de la boîte de dialogue de présentation à fermer.
+Sélectionnez **Suivant** pour accéder à la page suivante de la présentation. Sélectionnez **Fermer** ou cliquez en dehors de la boîte de dialogue de présentation pour fermer.
 
 Si vous ne désactivez pas l’option **Ne plus afficher ce message**, l’aperçu redémarrera la prochaine fois que vous accéderez à la console.
 
@@ -53,7 +53,7 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](#navigation-panel)** - Représenté par une boussole et le panneau par défaut lorsque vous vous connectez à AEM
+* **[Navigation](#navigation-panel)** : représenté par une boussole et le panneau par défaut lorsque vous vous connectez à AEM
 * **[Outils](#tools-panel)** : représenté par un marteau
 
 Consultez les options disponibles dans ces panneaux ci-dessous.

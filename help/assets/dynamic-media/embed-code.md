@@ -7,8 +7,8 @@ role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Voir [Diffusion d’images optimisées pour un site réactif](responsive-site.md
 
 >[!NOTE]
 >
->Le code incorporé ne peut pas être copié tant que vous n’avez pas publié la ressource sélectionnée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
+>Vous ne pouvez pas copier le code d’intégration tant que la ressource sélectionnée n’a pas été publiée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
 >
 >Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
 >

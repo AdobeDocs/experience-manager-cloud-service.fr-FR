@@ -103,9 +103,9 @@ La **[référence à un fragment](/help/sites-cloud/administering/content-fragme
 
 ## Analyse de la structure de fragments de contenu {#analyzing-content-fragments-structure}
 
-Pour faciliter l’analyse, AEM propose plusieurs méthodes d’affichage de la structure de vos fragments à partir du [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md).
+Pour faciliter l’analyse, AEM propose plusieurs méthodes d’affichage de la structure de vos fragments à partir de l’ [ éditeur de fragments de contenu ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-Voir [Analyse de la structure de fragments de contenu](/help/sites-cloud/administering/content-fragments/analysis.md) pour plus d’informations :
+Pour plus d’informations, voir [Analyse de la structure de fragment de contenu](/help/sites-cloud/administering/content-fragments/analysis.md) :
 
 * [Arborescence de la structure](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 

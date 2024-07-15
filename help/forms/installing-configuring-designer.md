@@ -23,7 +23,7 @@ Designer est un outil de conception de formulaires graphiques de type pointer-cl
 
 ## Conditions préalables {#pre-requisites}
 
-Pour installer la dernière version d’AEM Forms Designer 64 bits ou 32 bits, vous avez besoin des logiciels et du matériel minimum suivants pour installer et configurer Designer :
+Pour installer la dernière version d’AEM Forms Designer 64 bits ou 32 bits, vous avez besoin des logiciels et du matériel minimal suivants pour installer et configurer Designer :
 
 +++ Designer 64 bits (recommandé)
 
@@ -59,7 +59,7 @@ Pour installer la dernière version d’AEM Forms Designer 64 bits ou 32 bits, v
 
 >[!NOTE]
 >
-> Avant d’installer la version 64 bits de Forms Designer, désinstallez cette dernière.
+> Avant d’installer la version 64 bits de Forms Designer, désinstallez la version 32 bits de Designer.
 
 Pour installer Designer, procédez comme suit :
 

@@ -32,7 +32,7 @@ Dans un cadre externe sécurisé avec HTTPS, un cadre HTTP non sécurisé ne peu
 
 Pour ce faire, vous devez configurer AEM pour qu’il s’exécute sur HTTPS. À des fins de développement, vous pouvez utiliser un certificat auto-signé.
 
-[Consultez ce document](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=fr) sur la configuration de l’AEM s’exécutant sur HTTPS, y compris un certificat auto-signé, que vous pouvez utiliser.
+[Consultez ce document](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=fr) sur la configuration de l’AEM s’exécutant sur HTTPS, y compris un certificat auto-signé que vous pouvez utiliser.
 
 ## Installation du service Universal Editor {#install-ue-service}
 
@@ -40,9 +40,9 @@ Le service d’éditeur universel n’est pas une copie complète de l’éditeu
 
 [NodeJS version 16](https://nodejs.org/en/download/releases) est nécessaire pour exécuter une copie locale du service Universal Editor.
 
-Le service d’éditeur universel est disponible via Distribution logicielle. Veuillez consulter la [Documentation sur la distribution logicielle](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr) pour plus d’informations sur la manière d’y accéder.
+Le service d’éditeur universel est disponible via Distribution logicielle. Pour plus d’informations sur la façon d’y accéder, consultez la [documentation sur la distribution de logiciels](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr).
 
-Enregistrez le `universal-editor-service.cjs` de Distribution logicielle vers votre environnement de développement local.
+Enregistrez le fichier `universal-editor-service.cjs` de Distribution logicielle dans votre environnement de développement local.
 
 ## Création d’un certificat pour exécuter le service Universal Editor avec HTTPS {#ue-https}
 
@@ -54,13 +54,13 @@ Exécutez la commande suivante.
 $ openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certificate.pem
 ```
 
-La commande génère un `key.pem` et un `certificate.pem` fichier . Enregistrez ces fichiers au même chemin que votre `universal-editor-service.cjs` fichier .
+La commande génère un fichier `key.pem` et un fichier `certificate.pem`. Enregistrez ces fichiers dans le même chemin que votre fichier `universal-editor-service.cjs`.
 
 ## Configuration de la configuration du service d’éditeur universel {#setting-up-service}
 
 Un certain nombre de variables d’environnement doivent être définies dans NodeJS pour exécuter localement le service d’éditeur universel.
 
-Sur le même chemin que votre `universal-editor-service.cjs`, `key.pem` et `certificate.pem` fichiers, créez une `.env` avec le contenu suivant.
+Sur le même chemin que vos fichiers `universal-editor-service.cjs`, `key.pem` et `certificate.pem`, créez un fichier `.env` avec le contenu suivant.
 
 ```text
 EXPRESS_PORT=8000
@@ -71,10 +71,10 @@ NODE_TLS_REJECT_UNAUTHORIZED=0
 
 La variable a les significations suivantes :
 
-* `EXPRESS_PORT`: définit le port sur lequel écoute le service Universal Editor.
-* `EXPRESS_PRIVATE`: pointe vers votre [clé privée créée précédemment,](#ue-https) `key.pem`
-* `EXPRESS_CERT`: pointe vers votre [certificat créé précédemment,](#ue-https) `certificate.pem`
-* `NODE_TLS_REJECT_UNAUTHORIZED=0`: accepte les certificats auto-signés
+* `EXPRESS_PORT` : définit le port sur lequel écoute le service Universal Editor
+* `EXPRESS_PRIVATE` : pointe vers votre [clé privée créée précédemment,](#ue-https) `key.pem`
+* `EXPRESS_CERT` : pointe vers votre [ certificat créé précédemment,](#ue-https) `certificate.pem`
+* `NODE_TLS_REJECT_UNAUTHORIZED=0` : accepte les certificats auto-signés
 
 ## Exécution du service Universal Editor {#running-ue}
 
@@ -102,23 +102,23 @@ Pour qu’une page soit modifiée à l’aide de votre service Universal Editor 
 <meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
-Une fois défini, vous devriez voir chaque appel de mise à jour de contenu envoyé à `https://localhost:8000` au lieu du service Universal Editor par défaut.
+Une fois défini, vous devriez voir chaque appel de mise à jour de contenu aller à `https://localhost:8000` au lieu du service d’éditeur universel par défaut.
 
 >[!NOTE]
 >
->Tentative d’accès direct `https://localhost:8000` se traduit par une `404` erreur. Ce comportement est attendu.
+>Toute tentative d&#39;accès direct à `https://localhost:8000` entraîne une erreur `404`. Ce comportement est attendu.
 >
->Pour tester l’accès à votre service d’éditeur universel local, utilisez `https://localhost:8000/corslib/LATEST`. Voir [section suivante](#editing) pour plus d’informations.
+>Pour tester l’accès à votre service Universal Editor local, utilisez `https://localhost:8000/corslib/LATEST`. Pour plus d’informations, reportez-vous à la [section suivante](#editing) .
 
 >[!TIP]
 >
->Pour plus d’informations sur la manière dont les pages sont instrumentées pour utiliser le service Global Universal Editor, consultez le document . [Prise en main d’Universal Editor dans AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
+>Pour plus d’informations sur la manière dont les pages sont instrumentées pour utiliser le service Global Universal Editor, consultez le document [Prise en main d’Universal Editor dans AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
 
 ## Modification d’une page avec le service d’éditeur universel local {#editing}
 
-Avec la variable [Service d’éditeur universel s’exécutant localement](#running-ue) et votre [page de contenu instrumentée pour utiliser le service local,](#using-loca-ue) vous pouvez maintenant lancer l’éditeur.
+Avec le [service d&#39;éditeur universel s&#39;exécutant localement](#running-ue) et votre [ page de contenu instrumentée pour utiliser le service local, ](#using-loca-ue) vous pouvez maintenant démarrer l&#39;éditeur.
 
-1. Ouvrez votre navigateur pour `https://localhost:8000/corslib/LATEST`.
+1. Ouvrez votre navigateur sur `https://localhost:8000/corslib/LATEST`.
 1. Dirigez votre navigateur pour accepter [votre certificat auto-signé.](#ue-https)
 1. Une fois le certificat autosigné approuvé, vous pouvez modifier la page à l’aide de votre service d’éditeur universel local.
 

@@ -16,10 +16,10 @@ ht-degree: 72%
 
 ![data-integeration](assets/data-integeration.png)
 
-[[!DNL Experience Manager Forms] Intégration de données](data-integration.md) fournit une configuration de stockage [!DNL Azure] pour intégrer des formulaires aux services de stockage [!DNL Azure]. Le modèle de données de formulaire (FDM) peut être utilisé pour créer un Forms adaptatif qui interagit avec [!DNL Azure] pour activer les workflows métier. Par exemple :
+[[!DNL Experience Manager Forms] Intégration de données](data-integration.md) fournit une configuration de stockage [!DNL Azure] pour intégrer des formulaires aux services de stockage [!DNL Azure]. Le modèle de données de formulaire (FDM) peut être utilisé pour créer un Forms adaptatif qui interagit avec le serveur [!DNL Azure] pour activer les processus d’entreprise. Par exemple :
 
 * Écrire des données dans [!DNL Azure] sur un envoi de formulaires adaptatifs.
-* Écriture de données dans [!DNL Azure] par le biais d’entités personnalisées définies dans le modèle de données de formulaire (FDM) et inversement.
+* Écrivez des données dans [!DNL Azure] par le biais d’entités personnalisées définies dans le modèle de données de formulaire (FDM) et inversement.
 * Demander des données à un serveur [!DNL Azure] et préremplir des formulaires adaptatifs.
 * Lire des données à partir du serveur [!DNL Azure].
 
@@ -31,25 +31,25 @@ Avant d’exécuter ces étapes, vérifiez que vous disposez d’un compte de st
 1. Sélectionnez un dossier pour créer la configuration et sélectionnez **[!UICONTROL Créer]**.
 1. Indiquez un titre pour la configuration dans le champ **[!UICONTROL Titre]**.
 1. Indiquez le nom du compte de stockage [!DNL Azure] dans le champ **[!UICONTROL Compte de stockage Azure]**.
-1. Spécifiez la clé pour accéder au compte de stockage Azure dans le **[!UICONTROL Clé d’accès Azure]** champ et sélectionnez **[!UICONTROL Enregistrer]**.
+1. Indiquez la clé pour accéder au compte de stockage Azure dans le champ **[!UICONTROL Clé d&#39;accès Azure]** et sélectionnez **[!UICONTROL Enregistrer]**.
 
 ## Création d’un modèle de données de formulaire {#create-azure-form-data-model}
 
-Après avoir créé la configuration de stockage [!DNL Azure], vous pouvez [créer le modèle de données de formulaire](create-form-data-models.md). Spécifiez le dossier contenant les [!DNL Azure] dans la **[!UICONTROL Configuration des sources de données]** lors de la création du modèle de données de formulaire (FDM). Vous pouvez ensuite sélectionner la configuration dans la liste des configurations existant dans le nom de dossier spécifié.
+Après avoir créé la configuration de stockage [!DNL Azure], vous pouvez [créer le modèle de données de formulaire](create-form-data-models.md). Spécifiez le dossier contenant la configuration [!DNL Azure] dans le champ **[!UICONTROL Configuration de Data Source]** lors de la création du modèle de données de formulaire (FDM). Vous pouvez ensuite sélectionner la configuration dans la liste des configurations existant dans le nom de dossier spécifié.
 
 ### Ajout de services [!DNL Azure] au modèle de données de formulaire {#add-azure-services}
 
-Après avoir créé les objets de modèle de données de formulaire (FDM) et de modèle de données, vous pouvez ajouter [!DNL Azure] vers le modèle de données de formulaire (FDM).
+Après avoir créé les objets de modèle de données de formulaire (FDM) et de modèle de données, vous pouvez ajouter des services [!DNL Azure] au modèle de données de formulaire (FDM).
 
 Pour ajouter des services [!DNL Azure] :
 
-1. En mode d’ édition , sélectionnez les services dans la **[!UICONTROL Services]** dans le volet de gauche, puis sélectionnez **[!UICONTROL Ajouter la sélection]**. Les services sélectionnés s’affichent dans la variable **[!UICONTROL Services]** de l’onglet Form Data Model (FDM).
+1. En mode d’édition, sélectionnez les services dans la section **[!UICONTROL Services]** du volet de gauche, puis sélectionnez **[!UICONTROL Ajouter la sélection]**. Les services sélectionnés s’affichent dans l’onglet **[!UICONTROL Services]** du modèle de données de formulaire (FDM).
 
    ![Ajouter les services sélectionnés](assets/select-services.png)
 
 1. Dans l’onglet **[!UICONTROL Services]**, sélectionnez le service et appuyez sur **[!UICONTROL Modifier les propriétés]**. En fonction du service, définissez les objets de modèle d’entrée ou de sortie pour le service.
 
-1. Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire (FDM).
+1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire (FDM).
 
    Le tableau suivant décrit les services [!DNL Azure] disponibles :
 
@@ -94,9 +94,9 @@ Pour ajouter des services [!DNL Azure] :
 
 Pour définir une propriété d’objet de modèle de données comme clé de recherche :
 
-1. Dans le **[!UICONTROL Modèle]** , sélectionnez la propriété d’objet de modèle de données, puis sélectionnez **[!UICONTROL Modifier les propriétés]**.
+1. Dans l’onglet **[!UICONTROL Model]** , sélectionnez la propriété de l’objet de modèle de données et sélectionnez **[!UICONTROL Edit Properties]**.
 1. Activez l’option **[!UICONTROL Clé de recherche]**. Cette option est disponible uniquement pour les types de données principaux.
-1. Sélectionner **[!UICONTROL Terminé]** puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire (FDM).
+1. Sélectionnez **[!UICONTROL Done]** (Terminé), puis **[!UICONTROL Save]** (Enregistrer) pour enregistrer le modèle de données de formulaire (FDM).
 
 Après avoir défini les propriétés des objets du modèle de données comme clés de recherche, les valeurs de hachage sont stockées dans les balises dʼindex Azure et les valeurs codées en base64 dans les métadonnées Azure.
 

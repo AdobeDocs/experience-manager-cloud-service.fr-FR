@@ -53,10 +53,10 @@ Pour connecter un site AEM et AEM composants principaux à une vue de magasin d�
 4. Affectez la configuration enfant à un site AEM.
 
    * Accédez à la console AEM Sites.
-   * Accédez à la racine de région ou de langue de la structure de votre site. Par exemple : `/content/venia/us _or_ /content/venia/us/en` pour la page d’exemple Venia
+   * Accédez à la racine de région ou de langue de la structure de votre site. Par exemple, `/content/venia/us _or_ /content/venia/us/en` pour la page d’exemple Venia
    * Sélectionnez la page et ouvrez ses propriétés.
    * Sélectionnez l’onglet Avancé.
-   * Dans le `Configuration` , sélectionnez la configuration que vous avez créée à l’étape 3.
+   * Dans la section `Configuration` , sélectionnez la configuration que vous avez créée à l’étape 3.
 
 ## Ressources supplémentaires
 

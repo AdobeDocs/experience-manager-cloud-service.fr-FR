@@ -49,7 +49,7 @@ Lors de la création d’un modèle modifiable :
 
    >[!NOTE]
    >
-   >Une sélection de types de modèles prêts à l’emploi est fournie. Vous pouvez également [créer vos propres types de modèles spécifiques à un site ;](#creating-template-types) si nécessaire.
+   >Une sélection de types de modèles prêts à l’emploi est fournie. Vous pouvez également [créer vos propres types de modèle spécifiques au site](#creating-template-types) si nécessaire.
 
 1. Configurez la structure, les politiques de contenu, le contenu initial et la mise en page du nouveau modèle.
 
@@ -147,7 +147,7 @@ Dans une instance AEM standard, le dossier `global` existe déjà dans la consol
 
 >[!NOTE]
 >
->Il est recommandé de créer un dossier qui contiendra vos modèles personnalisés et de ne pas utiliser la variable `global` dossier.
+>Il est recommandé de créer un dossier destiné à contenir vos modèles personnalisés et de ne pas utiliser le dossier `global`.
 
 >[!CAUTION]
 >
@@ -213,7 +213,7 @@ Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes 
 
 >[!NOTE]
 >
->Dans le [Navigateur de configuration,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) vous pouvez modifier le dossier global et activer le **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier, il n’est toutefois pas recommandé de le faire.
+>Dans le [ navigateur de configuration,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), vous pouvez modifier le dossier global et activer l’option **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier. Toutefois, cela n’est pas recommandé.
 
 ### ACL et groupes {#acls-and-groups}
 
@@ -358,7 +358,7 @@ When creating an editable template, the value is copied from the template type t
 Si vous avez créé un modèle qui peut servir de base pour d’autres modèles, vous pouvez le copier en tant que type de modèle.
 
 1. Créez un modèle qui servira de base pour votre type de modèle. Pour ce faire, procédez comme vous le feriez pour n’importe quel modèle de page, [en suivant ces instructions](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author).
-1. À l’aide de CRXDE Lite, copiez le modèle créé à partir du `templates` au noeud `template-types` sous [dossier de modèles](#template-folders).
+1. À l’aide de CRXDE Lite, copiez le modèle créé à partir du noeud `templates` vers le noeud `template-types` sous le [dossier de modèles](#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](#template-folders).
 1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` de tous les nœuds `jcr:content`.
 
@@ -597,6 +597,6 @@ Le diagramme suivant illustre le processus d’évaluation de modèle :
 
 Pour limiter les modèles servant à créer des pages enfants sous une page donnée, utilisez la propriété `cq:allowedTemplates` du nœud `jcr:content` de la page pour spécifier la liste des modèles à autoriser en tant que pages enfants. Chaque valeur de la liste doit être un chemin absolu vers un modèle pour une page enfant autorisée, par exemple `/apps/wknd/templates/page-content`.
 
-Vous pouvez utiliser la variable `cq:allowedTemplates` sur la propriété  `jcr:content` pour que cette configuration soit appliquée à toutes les pages créées qui utilisent ce modèle.
+Vous pouvez utiliser la propriété `cq:allowedTemplates` sur le noeud `jcr:content` du modèle pour que cette configuration soit appliquée à toutes les pages créées qui utilisent ce modèle.
 
 Si vous souhaitez ajouter d’autres contraintes, par exemple concernant la hiérarchie des modèles, vous pouvez appliquer les propriétés `allowedParents/allowedChildren` sur le modèle. Vous pouvez ensuite spécifier explicitement que les pages créées à partir d’un modèle T doivent être des parents/enfants de pages créées à partir d’un modèle T.

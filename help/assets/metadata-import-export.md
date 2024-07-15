@@ -63,7 +63,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc
 
 >[!NOTE]
 >
->Les exportations de métadonnées sont limitées à 1 048 575 ressources, ce qui correspond à la taille maximale des feuilles de calcul dans Microsoft Excel. Si une hiérarchie exportée contient plus de ressources que ce nombre, seules les métadonnées des 1 048 575 premières ressources seront incluses dans le fichier CSV.
+>Les exportations de métadonnées sont limitées à 1 048 575 Assets, ce qui correspond à la taille maximale des feuilles de calcul dans Microsoft Excel. Si une hiérarchie exportée contient plus que ce nombre d’Assets, seules les métadonnées des 1 048 575 premières Assets seront incluses dans le fichier CSV.
 
 1. Sélectionnez le dossier de ressources pour lequel vous souhaitez exporter des métadonnées. Dans la barre d’outils, sélectionnez **[!UICONTROL Exporter les métadonnées]**.
 1. Dans la boîte de dialogue Exportation des métadonnées, indiquez un nom pour le fichier CSV. Pour exporter des métadonnées des ressources dans les sous-dossiers, sélectionnez **[!UICONTROL Inclure les ressources dans les sous-dossiers]**.
@@ -74,7 +74,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc
 
 1. Dans le champ **[!UICONTROL Propriétés à exporter]**, indiquez si vous voulez exporter toutes les propriétés ou certaines propriétés. Si vous choisissez Propriétés sélectives à exporter, ajoutez les propriétés souhaitées.
 
-1. Dans la barre d’outils, sélectionnez **[!UICONTROL Exporter]**. Un message confirme l’exportation de l’image. Fermez le message.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Export]**. Un message confirme l’exportation de l’image. Fermez le message.
 1. Ouvrez la notification de la boîte de réception pour la tâche d’exportation. Sélectionnez la tâche et cliquez sur **[!UICONTROL Ouvrir]** dans la barre d’outils. Pour télécharger le fichier CSV avec les métadonnées, sélectionnez **[!UICONTROL Téléchargement CSV]** dans la barre d’outils. Cliquez sur **[!UICONTROL Fermer]**.
 
    ![Boîte de dialogue de téléchargement du fichier CSV contenant les métadonnées exportées en bloc](assets/csv_download.png)

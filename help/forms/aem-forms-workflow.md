@@ -7,7 +7,7 @@ topic-tags: publish, document_services
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2373'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -79,7 +79,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
 1. Créez des étapes de workflow. Un workflow peut se composer de plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et signalent la progression du workflow.
 
-   Pour définir une étape, sélectionnez la ![info-circle](assets/info-circle.png) pour ouvrir les propriétés du modèle de processus, ouvrez l’icône **Phases** , ajoutez des étapes pour le modèle de workflow, puis sélectionnez **Enregistrer et fermer**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
+   Pour définir une étape, sélectionnez l’icône ![info-circle](assets/info-circle.png) pour ouvrir les propriétés de modèle de workflow, ouvrez l’onglet **Étapes**, ajoutez des étapes au modèle de workflow et sélectionnez **Enregistrer et fermer**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
 
 1. Glissez-déposez l’explorateur d’étapes **Affecter une tâche** dans le modèle de processus. Faites-en la première étape du modèle.
 
@@ -91,7 +91,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
    Pour l’exemple de demande de prêt immobilier, configurez l’étape Affecter une tâche pour utiliser un formulaire adaptatif en lecture seule et afficher le document PDF une fois la tâche terminée. Par ailleurs, sélectionnez le groupe d’utilisateurs autorisé à approuver la demande de prêt. Dans l’onglet **Actions**, désactivez l’option **Envoyer**. Créez une variable **actionTaken** de type de données de chaîne et spécifiez la variable en tant que **Variable d’itinéraire**. Par exemple, actionTaken. Ajoutez également les itinéraires Approuver et Refuser. Les itinéraires sont affichés sous forme d’actions distinctes (boutons) dans la boîte de réception AEM. Le workflow sélectionne une branche en fonction de l’action (bouton) sélectionnée par l’utilisateur ou l’utilisatrice.
 
-   Vous pouvez importer l’exemple de package, disponible au téléchargement au début de la section, pour l’ensemble complet des valeurs de tous les champs de l’étape Affecter une tâche configurée par exemple, une demande de prêt immobilier.
+   Vous pouvez importer l’exemple de package, disponible pour téléchargement au début de la section, pour l’ensemble complet des valeurs de tous les champs de l’étape configurée Attribuer une tâche, par exemple la demande de prêt immobilier.
 
 1. Faites glisser et déposez le composant Division OU de l’explorateur d’étapes vers le modèle de workflow. L’étape de division OU divise le processus et une seule branche est active par la suite. Cette étape permet d’ajouter des chemins de traitement conditionnels dans le processus. Vous ajoutez des étapes de processus à chaque branche selon vos besoins.
 
@@ -269,10 +269,10 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### Purge des instances de processus {#purge-workflow-instances}
 
-Réduire le nombre d’instances de processus améliore les performances du moteur de processus. Vous pouvez donc purger régulièrement les instances de processus terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de processus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=fr) purge des instances de processus.
+Réduire le nombre d’instances de workflow améliore les performances du moteur de workflow. Vous pouvez donc purger régulièrement les instances de workflow terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de processus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=fr) purge des instances de processus.
 
 
 >[!MORELIKETHIS]
 >
->* [Utilisation AEM processus de traduction pour localiser le Forms adaptatif et le document d’enregistrement](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* [Variables dans les processus d’AEM basés sur Forms](/help/forms/variable-in-aem-workflows.md)
+>* [Utiliser AEM processus de traduction pour localiser le Forms adaptatif et le document d’enregistrement](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+>* [Variables dans les processus d’AEM centrés sur Forms](/help/forms/variable-in-aem-workflows.md)

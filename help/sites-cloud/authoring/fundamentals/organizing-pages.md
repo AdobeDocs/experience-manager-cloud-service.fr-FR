@@ -113,7 +113,7 @@ Vous trouverez la liste complète et détaillée des caractères autorisés dans
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’une page **Titre** lors de la création d’une page, AEM délivre la page **Nom** de cette chaîne et [valider le nom en fonction des conventions ;](/help/implementing/developing/introduction/naming-conventions.md) imposé par AEM et JCR.
+Si vous n’indiquez qu’un **Titre** de page lors de la création d’une page, AEM renvoie la page **Nom** de cette chaîne et [validez le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
 
 Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
@@ -185,7 +185,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 1. À la première étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Sélectionnez le modèle à utiliser pour créer la page, puis sélectionnez **Suivant** pour continuer.
+   * Sélectionnez le modèle que vous souhaitez utiliser pour créer la page, puis cliquez sur **Suivant** pour continuer.
 
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
 
@@ -193,7 +193,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 1. À l’étape finale de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Utilisez les trois onglets pour saisir la variable [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) que vous souhaitez attribuer à la nouvelle page, puis sélectionnez **Créer** pour créer réellement la page.
+   * Utilisez les trois onglets pour accéder aux [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) que vous souhaitez attribuer à la nouvelle page, puis sélectionnez **Créer** pour réellement créer la page.
 
    * Utilisez **Précédent** pour revenir à la sélection de modèle.
 
@@ -269,7 +269,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
    ![Copier](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Accédez à l’emplacement destiné à la nouvelle copie de la page.
-1. Sélectionnez la variable **Coller** qui est devenue disponible.
+1. Sélectionnez l’icône **Coller** qui est devenue disponible.
 
    ![Coller](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -279,7 +279,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
    ![Boîte de dialogue de collage](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Sélectionnez la variable **Coller** pour confirmer la transaction de collage et créer la ou les pages.
+1. Sélectionnez le bouton **Coller** pour confirmer la transaction de collage et créer la ou les nouvelles pages.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
 1. À l’étape **Renommer** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Spécifiez le nom à attribuer à la page après son déplacement, puis sélectionnez **Suivant** pour continuer.
+   * Spécifiez le nom que la page doit avoir après son déplacement, puis sélectionnez **Suivant** pour continuer.
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
 
    ![Déplacer et renommer la page](/help/sites-cloud/authoring/assets/move-page-rename.png)

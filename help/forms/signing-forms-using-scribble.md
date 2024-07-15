@@ -35,9 +35,9 @@ Vous pouvez utiliser les composants **Signature tactile** et **Étape de signatu
 * **C :** cliquez sur l’icône **Géolocalisation** pour ajouter une géolocalisation avec la signature.
 * **D :** cliquez sur l’icône **Clavier** pour saisir votre nom sur la zone de travail.
 
-Une fois que vous avez sélectionné Terminé ![aem_forms_save](assets/aem_forms_save.png) dans la fenêtre de signature tactile, vous ne pouvez pas modifier la signature. Si vous souhaitez modifier la signature, vous devez ignorer la signature actuelle et la signer à nouveau à l’aide de l’option Pinceau/Clavier ci-dessus.
+Une fois que vous avez sélectionné l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) dans la fenêtre de signature tactile, vous ne pouvez pas modifier la signature. Si vous souhaitez modifier la signature, vous devez ignorer la signature actuelle et la signer à nouveau à l’aide de l’option Pinceau/Clavier ci-dessus.
 
-Vous pouvez sélectionner la variable **Configurer** ![icône de configuration](assets/configure.png) pour définir les proportions du canevas de signature tactile.
+Vous pouvez sélectionner l’icône **Configurer** ![Configurer l’icône](assets/configure.png) pour définir les proportions du canevas de signature tactile.
 * Lorsque le rapport d’aspect de la zone de travail de signature tactile est inférieur à 1, les informations de géolocalisation sont ajoutées au bas de la zone de travail de signature tactile.
 
 
@@ -64,7 +64,7 @@ Vous pouvez sélectionner la variable **Configurer** ![icône de configuration](
    >
    >Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature. 
 
-1. Dans l’explorateur de contenu, sélectionnez **Conteneur de formulaires**, puis sélectionnez la variable **Configurer** ![icône de configuration](assets/configure.png) Icône L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et désélectionnez l’option **Activer Adobe Sign**. Sélectionnez Terminé . ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications.
+1. Dans le navigateur de contenu, sélectionnez **Form Container**, puis l’icône **Configurer** ![ ](assets/configure.png) . L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et désélectionnez l’option **Activer Adobe Sign**. Sélectionnez l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications.
 
    >[!NOTE]
    >
@@ -78,9 +78,9 @@ Vous pouvez sélectionner la variable **Configurer** ![icône de configuration](
    * **Message du modèle :** indiquez le message à afficher lorsque la signature PDF est chargée. Les services Adobe Sign mettent un certain temps à préparer et charger la signature PDF.
    * **Service de signature :** sélectionnez l’option **Signature tactile**.
 
-   * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Adobe recommande d’utiliser [thèmes](themes.md) et [styles en ligne](inline-style-adaptive-forms.md) au lieu de la classe CSS.
+   * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Adobe recommande d’utiliser [themes](themes.md) et [styles intégrés](inline-style-adaptive-forms.md) au lieu de la classe CSS.
 
-   Sélectionnez Terminé . ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications. La signature est correctement configurée.
+   Sélectionnez l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications. La signature est correctement configurée.
 
    Désormais, lorsque vous remplissez un formulaire, une version PDF du formulaire adaptatif est affichée et les options pour signer le document PDF sont fournies. Pour plus d’informations, voir [Signature d’un formulaire adaptatif en utilisant la signature tactile](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 

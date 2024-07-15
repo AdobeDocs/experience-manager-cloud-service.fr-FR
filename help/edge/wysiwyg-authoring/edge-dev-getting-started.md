@@ -1,6 +1,6 @@
 ---
 title: Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services
-description: Ce guide vous aidera à maîtriser l’exécution d’un nouveau site Adobe Experience Manager à l’aide d’Edge Delivery Services et d’Universal Editor pour la création de contenu WYSIWYG.
+description: Ce guide vous aidera à maîtriser l’exécution d’un nouveau site Adobe Experience Manager à l’aide de Edge Delivery Services et de l’éditeur universel pour la création de contenu WYSIWYG.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 # Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services {#edge-dev-getting-started}
 
-Ce guide vous aidera à maîtriser l’exécution d’un nouveau site Adobe Experience Manager à l’aide d’Edge Delivery Services et d’Universal Editor pour la création de contenu WYSIWYG.
+Ce guide vous aidera à maîtriser l’exécution d’un nouveau site Adobe Experience Manager à l’aide de Edge Delivery Services et de l’éditeur universel pour la création de contenu WYSIWYG.
 
 ## Conditions préalables {#prerequisites}
 
@@ -59,7 +59,7 @@ Les sites web sont automatiquement créés pour chacune de vos branches, de l’
 >
 >Consultez la [section Créer](/help/edge/developer/block-collection.md) de la documentation Edge Delivery Services pour plus d’informations sur les blocs et sur la manière de développer pour Edge Delivery Services.
 
-## Prise en main de la création et des Edge Delivery Services WYSIWYG {#getting-started}
+## Prise en main de la création et du Edge Delivery Services WYSIWYG {#getting-started}
 
 Lorsque vous remplissez [les conditions préalables](#prerequisites) et [avez choisi d’utiliser l’éditeur universel,](#editor-choice) vous pouvez commencer votre propre projet.
 
@@ -131,7 +131,7 @@ Maintenant que vous disposez d’un projet GitHub, vous devez créer un site AE
 >
 >Pour modifier votre site à l’aide de l’éditeur universel, vous devez utiliser un navigateur basé sur Chromium.
 
-1. Téléchargez la dernière création WYSIWYG avec le modèle de site Edge Delivery Services depuis GitHub à l’adresse [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Téléchargez la dernière création WYSIWYG avec modèle de site Edge Delivery Services depuis GitHub à l’adresse [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Connectez-vous à votre instance de création AEM as a Cloud Service et accédez à la console Sites, puis appuyez ou cliquez sur **Créer** -> **Site à partir du modèle**.
 
@@ -193,10 +193,10 @@ Lorsque vous avez terminé de modifier votre nouveau site à l’aide de l’éd
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous disposez d’un projet WYSIWYG en cours de création avec des Edge Delivery Services, vous pouvez commencer à créer et à mettre en forme vos propres blocs.
+Maintenant que vous disposez d’un projet WYSIWYG de création avec des Edge Delivery Services, vous pouvez commencer à créer et à mettre en forme vos propres blocs.
 
 Consultez le guide [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/wysiwyg-authoring/create-block.md) pour plus d’informations.
 
 >[!TIP]
 >
->Pour une présentation exhaustive de la création d’un nouveau projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service en tant que source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

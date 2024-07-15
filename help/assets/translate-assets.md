@@ -88,7 +88,7 @@ Pour créer la racine de langue, créez un dossier, puis utilisez le code de lan
 
 Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie présente la propriété Nom `it`. La propriété Nom est utilisée comme nom du nœud de ressource dans le référentiel et détermine donc le chemin d’accès des ressources. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
 
-1. Dans la console Ressources, sélectionnez **[!UICONTROL Créer]** et choisissez **[!UICONTROL Dossier]** dans le menu.
+1. Dans la console Assets, sélectionnez **[!UICONTROL Créer]** et **[!UICONTROL Dossier]** dans le menu.
 1. Dans le champ Nom, tapez le code de pays au format `<language-code>`.
 1. Sélectionnez **[!UICONTROL Créer]**. La racine de langue est créée dans la console Ressources.
 
@@ -97,20 +97,20 @@ Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie
 L’IU optimisée pour les écrans tactiles propose un panneau Références qui affiche la liste des racines de langue créées dans [!DNL Assets].
 
 1. Dans la console Ressources, choisissez le gabarit de langue pour lequel vous souhaitez créer des copies de langue.
-1. Sélectionnez l’icône de navigation globale, puis choisissez **[!UICONTROL Références]** pour ouvrir le volet Référence .
-1. Dans le volet Références , sélectionnez **[!UICONTROL Copies de langue]**. Le panneau Copies de langue affiche les copies de langue des ressources.
+1. Sélectionnez l’icône de navigation globale, puis **[!UICONTROL Références]** pour ouvrir le volet Référence.
+1. Dans le volet Références, sélectionnez **[!UICONTROL Copies de langue]**. Le panneau Copies de langue affiche les copies de langue des ressources.
 
 ### Créer un projet de traduction {#create-a-new-translation-project}
 
 Si vous utilisez cette option, les ressources à traduire sont copiées dans la racine de la langue vers laquelle vous souhaitez effectuer la traduction. Selon les options que vous choisissez, un projet de traduction est créé pour les ressources dans la console Projets. Selon les paramètres, le projet de traduction peut être démarré manuellement ou s’exécuter automatiquement dès sa création.
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez le dossier source pour lequel vous souhaitez créer une copie de langue.
-1. Ouvrez le **[!UICONTROL Références]** et sélectionnez **[!UICONTROL Copies de langue]** under **[!UICONTROL Copies]**.
-1. Sélectionner **[!UICONTROL Créer et traduire]** en bas.
+1. Ouvrez le volet **[!UICONTROL Références]** et sélectionnez **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]**.
+1. Sélectionnez **[!UICONTROL Créer et traduire]** en bas de la page.
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Créer un projet de traduction]**.
 1. Dans le champ **[!UICONTROL Titre du projet]**, saisissez un titre pour le projet.
-1. Sélectionner sur **[!UICONTROL Créer]**. Les ressources du dossier source sont copiées vers les dossiers cibles pour les paramètres régionaux que vous avez sélectionnés à l’étape 4.
+1. Sélectionnez sur **[!UICONTROL Créer]**. Les ressources du dossier source sont copiées vers les dossiers cibles pour les paramètres régionaux que vous avez sélectionnés à l’étape 4.
 1. Pour accéder au dossier, sélectionnez la copie de langue, puis cliquez sur **[!UICONTROL Afficher dans Assets]**.
 1. Accédez à la console Projets. Le dossier de traduction est copié dans la console Projets.
 1. Ouvrez le dossier pour afficher le projet de traduction.
@@ -128,8 +128,8 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
 1. Dans l’interface utilisateur d’Assets, accédez au dossier source qui contient des ressources non traduites.
 1. Sélectionnez une ressource à traduire, puis ouvrez le **[!UICONTROL volet Référence]**. La section **[!UICONTROL Copies de langue]** indique le nombre de copies de traduction actuellement disponibles.
-1. Sélectionner **[!UICONTROL Copies de langue]** under **[!UICONTROL Copies]**. La liste des copies de traduction disponibles s’affiche.
-1. Sélectionner **[!UICONTROL Créer et traduire]** en bas.
+1. Sélectionnez **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]**. La liste des copies de traduction disponibles s’affiche.
+1. Sélectionnez **[!UICONTROL Créer et traduire]** en bas de la page.
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Ajouter à un projet de traduction existant]** afin d’exécuter le workflow de traduction sur le dossier.
    >[!NOTE]
@@ -139,7 +139,7 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 1. Sélectionnez **[!UICONTROL Créer]**. Les fichiers à traduire sont ajoutés au dossier cible. Le dossier mis à jour est répertorié sous la section **[!UICONTROL Copies de langue]**.
 1. Accédez à la console Projets, puis ouvrez le projet de traduction existant auquel vous avez ajouté des ressources.
 1. Sélectionnez le projet de traduction pour afficher la page des détails du projet.
-1. Sélectionnez les points de suspension en bas de la page **Tâche de traduction** pour afficher les ressources dans le processus de traduction. La liste des tâches de traduction affiche également les entrées des métadonnées et des balises de ressources. Ces entrées indiquent que les métadonnées et les balises des ressources sont également traduites.
+1. Sélectionnez les points de suspension en bas de la mosaïque **Tâche de traduction** pour afficher les ressources dans le processus de traduction. La liste des tâches de traduction affiche également les entrées des métadonnées et des balises de ressources. Ces entrées indiquent que les métadonnées et les balises des ressources sont également traduites.
 
    >[!NOTE]
    >
@@ -147,8 +147,8 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
    >* Si vous utilisez la traduction automatique, les fichiers binaires des ressources ne sont pas traduits.
    >* Si la ressource que vous ajoutez à la tâche de traduction contient des sous-ressources, sélectionnez-les et supprimez-les pour que la traduction se déroule sans problème.
 
-1. Pour commencer la traduction des ressources, sélectionnez la flèche sur la page **[!UICONTROL Tâche de traduction]** mosaïque et sélectionnez **[!UICONTROL Début]** dans la liste. Un message indique le début de la tâche de traduction.
-1. Pour afficher l’état de la tâche de traduction, sélectionnez les points de suspension en bas de la page **[!UICONTROL Tâche de traduction]** mosaïque. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
+1. Pour commencer la traduction des ressources, sélectionnez la flèche sur la mosaïque **[!UICONTROL Tâche de traduction]** et sélectionnez **[!UICONTROL Démarrer]** dans la liste. Un message indique le début de la tâche de traduction.
+1. Pour afficher l’état de la tâche de traduction, sélectionnez les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction]**. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Une fois la traduction terminée, l’état devient Prêt pour la révision. Accédez à l’interface utilisateur d’Assets et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
 ### Mise à jour des copies de langue {#update-language-copies}
@@ -163,9 +163,9 @@ Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire
 Si vous utilisez cette option, l’ensemble de ressources est ajouté à un projet de traduction existant afin de mettre à jour la copie de langue pour les paramètres régionaux que vous sélectionnez.
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez le dossier source auquel vous avez ajouté un dossier de ressources.
-1. Ouvrez le **[!UICONTROL Volet Références]**, puis sélectionnez **[!UICONTROL Copies de langue]** under **[!UICONTROL Copies]** pour afficher la liste des copies de langue.
+1. Ouvrez le **[!UICONTROL volet Références]** et sélectionnez **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]** pour afficher la liste des copies de langue.
 1. Activez la case à cocher devant **[!UICONTROL Copies de langue]** de façon à sélectionner toutes les copies de langue. Désélectionnez les autres copies à l’exception des copies de langue correspondant aux paramètres régionaux dans lesquels vous souhaitez traduire.
-1. Sélectionner **[!UICONTROL Mise à jour des copies de langue]** en bas.
+1. Sélectionnez **[!UICONTROL Mettez à jour les copies de langue]** en bas.
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Ajouter à un projet de traduction existant]**.
 1. Dans la liste **[!UICONTROL Projet de traduction existant]**, choisissez un projet auquel ajouter la ressource à traduire.
 1. Sélectionner **[!UICONTROL Début]**.
@@ -173,21 +173,21 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
 
 ### Création de copies de langue temporaires {#creating-temporary-language-copies}
 
-Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviezles ressources traduites. [!DNL Assets] stocke les nouvelles ressources traduites à un emplacement temporaire et met à jour la copie de langue existante après avoir explicitement approuvé les ressources. Si vous refusez les ressources, la copie de langue reste inchangée.
+Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviezles ressources traduites. [!DNL Assets] stocke les ressources nouvellement traduites à un emplacement temporaire et met à jour la copie de langue existante après avoir explicitement approuvé les ressources. Si vous refusez les ressources, la copie de langue reste inchangée.
 
-1. Sélectionnez le dossier racine source sous **[!UICONTROL Copies de langue]** pour lequel vous avez déjà créé une copie de langue, puis sélectionnez **[!UICONTROL Affichage dans les ressources]** pour ouvrir le dossier dans [!DNL Assets].
-1. Dans l’interface utilisateur d’Assets, sélectionnez une ressource que vous avez déjà traduite et sélectionnez l’option **[!UICONTROL Modifier]** dans la barre d’outils pour ouvrir la ressource en mode d’édition.
+1. Sélectionnez le dossier racine source sous **[!UICONTROL Copies de langue]** pour lesquelles vous avez déjà créé une copie de langue, puis sélectionnez **[!UICONTROL Afficher dans Assets]** pour ouvrir le dossier dans [!DNL Assets].
+1. Dans l’interface utilisateur d’Assets, sélectionnez une ressource que vous avez déjà traduite et sélectionnez l’icône **[!UICONTROL Modifier]** de la barre d’outils pour ouvrir la ressource en mode d’édition.
 1. Modifiez la ressource et enregistrez les modifications.
 1. Exécutez les étapes 2 à 14 de la procédure [Ajouter à un projet de traduction existant](#add-to-existing-translation-project) pour mettre à jour la copie de langue.
-1. Sélectionnez les points de suspension en bas de la page **[!UICONTROL Tâche de traduction]** mosaïque. Dans la liste des ressources sur la page **[!UICONTROL Tâche de traduction]**, vous pouvez voir l’emplacement temporaire dans lequel la version traduite de la ressource est stockée.
+1. Sélectionnez les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction]**. Dans la liste des ressources sur la page **[!UICONTROL Tâche de traduction]**, vous pouvez voir l’emplacement temporaire dans lequel la version traduite de la ressource est stockée.
 1. Cochez la case en regard de **[!UICONTROL Titre]**.
-1. Dans la barre d’outils, sélectionnez **[!UICONTROL Accepter la traduction]** puis sélectionnez **[!UICONTROL Accepter]** dans la boîte de dialogue pour remplacer la ressource traduite dans le dossier cible par la version traduite de la ressource modifiée.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Accepter la traduction]**, puis **[!UICONTROL Accepter]** dans la boîte de dialogue pour remplacer la ressource traduite dans le dossier cible par la version traduite de la ressource modifiée.
 
    >[!NOTE]
    >
    >Pour permettre au workflow de traduction de mettre à jour la ou les ressources de destination, acceptez à la fois la ressource et les métadonnées.
 
-   Sélectionner **[!UICONTROL Rejeter la traduction]** pour conserver la version traduite d’origine de la ressource dans la racine des paramètres régionaux cibles et rejeter la version modifiée.
+   Sélectionnez **[!UICONTROL Rejeter la traduction]** pour conserver la version traduite d’origine de la ressource dans la racine des paramètres régionaux cibles et rejeter la version modifiée.
 
 1. Accédez à la console Ressources et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
@@ -229,12 +229,12 @@ Vous utilisez le workflow Créer et traduire afin de générer des copies de lan
 Utilisez l’option **Créer uniquement la structure** pour créer une hiérarchie de dossiers cible au niveau de la racine de la langue cible semblable à celle du dossier source au sein de la racine de la langue source. Dans ce cas, les fichiers source sont copiés dans le dossier de destination. Cependant, aucun projet de traduction n’est généré.
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez le dossier source pour lequel vous souhaitez créer une structure au niveau de la racine de la langue cible.
-1. Ouvrez le **[!UICONTROL Références]** et sélectionnez **[!UICONTROL Copies de langue]** under **[!UICONTROL Copies]**.
-1. Sélectionner **[!UICONTROL Créer et traduire]** en bas.
+1. Ouvrez le volet **[!UICONTROL Références]** et sélectionnez **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]**.
+1. Sélectionnez **[!UICONTROL Créer et traduire]** en bas de la page.
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la langue pour laquelle vous souhaitez créer une structure de dossiers.
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Créer uniquement la structure]**.
 1. Sélectionnez **[!UICONTROL Créer]**. La nouvelle structure de la langue cible est répertoriée sous **[!UICONTROL Copies de langue]**.
-1. Sélectionnez la structure dans la liste, puis sélectionnez **[!UICONTROL Affichage dans les ressources]** pour accéder à la structure de dossiers dans la langue cible.
+1. Sélectionnez la structure dans la liste, puis **[!UICONTROL Afficher dans Assets]** pour accéder à la structure de dossiers dans la langue cible.
 
 ## Application de services cloud de traduction à des dossiers {#applying-translation-cloud-services-to-folders}
 
@@ -247,7 +247,7 @@ Vous pouvez appliquer le service cloud de traduction directement à votre dossie
 L’application de services cloud directement à votre dossier de ressources élimine le besoin de configurer des services de traduction lorsque vous créez ou mettez à jour les workflows de traduction.
 
 1. Depuis l’interface utilisateur d’Assets, sélectionnez le dossier auquel vous souhaitez appliquer des services de traduction.
-1. Dans la barre d’outils, sélectionnez la **[!UICONTROL Propriétés]** pour afficher l’icône **[!UICONTROL Propriétés du dossier]** page.
+1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Propriétés]** pour afficher la page **[!UICONTROL Propriétés du dossier]**.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -267,16 +267,16 @@ L’application de services cloud directement à votre dossier de ressources él
 Si vous souhaitez appliquer un connecteur personnalisé pour les services de traduction que vous souhaitez utiliser dans les workflows de traduction. Pour appliquer un connecteur personnalisé, installez d’abord le connecteur à partir du [gestionnaire de modules](/help/implementing/developing/tools/package-manager.md). Configurez ensuite le connecteur depuis la console Cloud Services. Une fois le connecteur configuré, il est disponible dans la liste des connecteurs de l’onglet Cloud Services décrits dans la section [Application des services de traduction](#applying-the-translation-services). Une fois que vous avez appliqué le connecteur personnalisé et exécuté des workflows de traduction, la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction affiche les détails du connecteur dans les sections **[!UICONTROL Fournisseur]** et **[!UICONTROL Méthode]**.
 
 1. Installez le connecteur depuis le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
-1. Sélectionnez le logo du Experience Manager et accédez à **[!UICONTROL Outils > Déploiement > Cloud Service]**.
+1. Sélectionnez le logo de l’Experience Manager et accédez à **[!UICONTROL Outils > Déploiement > Cloud Service]**.
 1. Localisez le connecteur que vous avez installé sous **[!UICONTROL Services tiers]** sur la page **[!UICONTROL Services Cloud]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Sélectionnez la variable **[!UICONTROL Configurer maintenant]** pour ouvrir le lien **[!UICONTROL Créer une configuration]** boîte de dialogue.
+1. Sélectionnez le lien **[!UICONTROL Configurer maintenant]** pour ouvrir la boîte de dialogue **[!UICONTROL Créer une configuration]**.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Indiquez un titre et un nom pour le connecteur, puis sélectionnez **[!UICONTROL Créer]**. Le connecteur personnalisé est alors disponible dans la liste des connecteurs de l’onglet **[!UICONTROL Services Cloud]** décrit à l’étape 5 de la section [Application des services de traduction](#applying-the-translation-services).
+1. Spécifiez un titre et un nom pour le connecteur, puis sélectionnez **[!UICONTROL Créer]**. Le connecteur personnalisé est alors disponible dans la liste des connecteurs de l’onglet **[!UICONTROL Services Cloud]** décrit à l’étape 5 de la section [Application des services de traduction](#applying-the-translation-services).
 1. Exécutez n’importe quel workflow de traduction tel que décrit dans la section Création de projets de traduction après avoir appliqué le connecteur personnalisé. Vérifiez les informations détaillées du connecteur dans la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction dans la console **[!UICONTROL Projets]**.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)

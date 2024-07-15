@@ -197,7 +197,7 @@ Vous pouvez utiliser les propriétés du sélecteur de destination pour personna
 | *hasMore* | booléen | Non | | Lorsque l’application dispose de davantage de contenu à afficher, vous pouvez utiliser cette propriété pour ajouter un chargeur chargeant le contenu afin de le rendre visible dans l’application. Il s’agit d’un indicateur montrant que le chargement du contenu est en cours. |
 | *orgName* | booléen | Non | | Il s’agit du nom de l’organisation (probablement orgID) associé à AEM |
 | *initRepoID* | chaîne | Non | | Il s’agit du chemin d’accès du référentiel de ressources que vous souhaitez utiliser dans une vue initiale par défaut |
-| *onCreateFolder* | chaîne | Non | | La variable `onCreateFolder` permet d’ajouter une icône qui ajoute un nouveau dossier dans l’application. |
+| *onCreateFolder* | chaîne | Non | | La propriété `onCreateFolder` vous permet d’ajouter une icône qui ajoute un nouveau dossier dans l’application. |
 | *onConfirm* | chaîne | Non | | Il s’agit d’un rappel lorsque vous appuyez sur le bouton de confirmation. |
 | *confirmDisabled* | chaîne | Non | | Cette propriété contrôle le bouton de confirmation. |
 | *viewType* | chaîne | Non | | La propriété `viewType` sert à spécifier les vues que vous utilisez pour afficher les ressources. |
@@ -262,7 +262,7 @@ Il s’agit d’un exemple de la propriété `optionsFormSetup`. Vous pouvez l�
 
 ### Créer un dossier {#create-new-folder}
 
-Il vous permet de créer un dossier dans le dossier de destination de votre [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Il vous permet de créer un dossier dans le dossier de destination de votre [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service].
 
 ### Types de vues {#types-of-view}
 

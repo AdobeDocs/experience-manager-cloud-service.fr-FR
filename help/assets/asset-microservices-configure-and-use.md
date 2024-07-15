@@ -159,7 +159,7 @@ Créez les profils de traitement personnalisé supplémentaire et appliquez-les 
 
 Appliquez des profils de traitement aux dossiers en utilisant l’une des méthodes suivantes :
 
-* Les administrateurs peuvent sélectionner une définition de profil de traitement dans **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]** et utilisez **[!UICONTROL Application d’un profil à des dossiers]** action. Cette action ouvre un navigateur de contenu qui vous permet d’accéder à des dossiers spécifiques, de les sélectionner et de confirmer l’application du profil.
+* Les administrateurs peuvent sélectionner une définition de profil de traitement dans **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de traitement]** et utiliser l’action **[!UICONTROL Appliquer le profil aux dossiers]**. Cette action ouvre un navigateur de contenu qui vous permet d’accéder à des dossiers spécifiques, de les sélectionner et de confirmer l’application du profil.
 * Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur Assets, exécuter l’action **[!UICONTROL Propriétés]** pour ouvrir l’écran des propriétés du dossier, cliquer sur l’onglet **[!UICONTROL Traitement des ressources]** puis, dans la liste [!UICONTROL Profil de traitement], sélectionner le profil de traitement approprié pour ce dossier. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
   ![Application d’un profil de traitement à un dossier à partir de l’onglet Propriétés de l’élément](assets/folder-properties-processing-profile.png)
 
@@ -246,7 +246,7 @@ Lorsque le post-traitement n’est pas nécessaire, créez et utilisez un modèl
    * Titre : désactiver le workflow de démarrage automatique
    * Nom : disable-auto-start-workflow
 1. Sélectionnez __Terminé__ pour créer le modèle de processus.
-1. __Sélectionner__ et __Modifier__ le modèle de processus créé ;
+1. __Sélectionnez__ et __Modifiez__ le modèle de processus créé
 1. Dans l’éditeur de modèle de processus, sélectionnez l’__Étape 1__ de la définition de modèle et supprimez-la.
 1. Ouvrez le __Panneau latéral__ puis sélectionnez __Étapes__.
 1. Faites glisser l’étape __Ressources de mise à jour de gestion des actifs numériques, processus terminé__ dans la définition de modèle.

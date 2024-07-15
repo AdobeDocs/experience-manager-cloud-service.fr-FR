@@ -24,9 +24,9 @@ ht-degree: 90%
 
 Tout comme l’[environnement de création full-stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) le pipeline front-end possède son propre environnement. Les développeurs disposent d’une certaine flexibilité à l’aide de ce pipeline tant que le contrat de version front-end suivant est respecté.
 
-Le pipeline front-end requiert le projet front-end Node.js pour utiliser la variable `build` directive de script pour générer la version qu’il déploie. En effet, Cloud Manager utilise la commande . `npm run build` pour générer le projet déployable pour la version front-end.
+Le pipeline front-end nécessite que le projet front-end Node.js utilise la directive de script `build` pour générer la version qu’il déploie. Cela est dû au fait que Cloud Manager utilise la commande `npm run build` pour générer le projet déployable pour la version front-end.
 
-Le contenu obtenu de la variable `dist` est ce qui est finalement déployé par Cloud Manager, en les traitant comme des fichiers statiques. Ces fichiers sont hébergés en externe sur AEM, mais sont disponibles via un `/content/...` URL de l’environnement déployé.
+Le contenu obtenu du dossier `dist` est finalement déployé par Cloud Manager, sous la forme de fichiers statiques. Ces fichiers sont hébergés en externe sur AEM, mais sont disponibles via une URL `/content/...` sur l’environnement déployé.
 
 ## Versions de Node {#node-versions}
 
@@ -37,7 +37,7 @@ L’environnement de génération front-end prend en charge les versions suivant
 * 16
 * 18
 
-Vous pouvez utiliser la variable `NODE_VERSION` [variable d&#39;environnement](/help/implementing/cloud-manager/environment-variables.md) pour définir la version souhaitée.
+Vous pouvez utiliser la `NODE_VERSION` [variable d&#39;environnement](/help/implementing/cloud-manager/environment-variables.md) pour définir la version souhaitée.
 
 ## Source unique de vérité {#single-source-of-truth}
 

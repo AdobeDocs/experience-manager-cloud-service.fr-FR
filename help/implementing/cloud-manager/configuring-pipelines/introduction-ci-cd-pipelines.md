@@ -56,7 +56,7 @@ Un pipeline hors production sert principalement à exécuter des analyses de qua
 Outre la dichotomie production et hors production, les pipelines peuvent être différenciés par le type de code qu’ils déploient.
 
 * **[Pipelines full stack](#full-stack-pipeline)** - Déploient simultanément des versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec des configurations HTTPD/Dispatcher.
-* **[Configuration des pipelines](#config-deployment-pipeline)** - Configurez et déployez les règles de filtrage du trafic, y compris les règles WAF, en quelques minutes.
+* **[Config Pipelines](#config-deployment-pipeline)** - Configurez et déployez les règles de filtrage du trafic, y compris les règles WAF, en quelques minutes.
 * **[Pipelines front-end](#front-end)** - Déploient les versions de code front-end contenant une ou plusieurs applications d’interface utilisateur côté client.
 * **[Pipelines de configuration de niveau web](#web-tier-config-pipelines)** - Déploient les configurations HTTPD/Dispatcher.
 
@@ -118,7 +118,7 @@ Pour savoir comment configurer des pipelines full stack, reportez-vous aux docum
 
 Avec un pipeline de configuration, vous pouvez configurer et déployer des règles de filtrage du trafic, y compris des règles WAF, en quelques minutes.
 
-Voir [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
+Voir [Règles de filtre de trafic y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
 
 ### Configuration des pipelines de configuration {#configure-config-deployment}
 

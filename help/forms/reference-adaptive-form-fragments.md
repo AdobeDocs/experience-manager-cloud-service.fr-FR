@@ -8,8 +8,8 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 63%
+source-wordcount: '396'
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 63%
 
 Un fragment de formulaire adaptatif est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez faire glisser et déposer un fragment de formulaire adaptatif dans un formulaire à l’aide de l’explorateur de ressources dans la barre latérale et vous pouvez le modifier dans l’éditeur de formulaire.
 
-Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le package [!DNL AEM Forms] [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/fr/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Il comprend les fragments suivants :
+Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le package [!DNL AEM Forms] [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/fr/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Il inclut les fragments suivants :
 
 * Adresse
 * Coordonnées
@@ -31,13 +31,13 @@ Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fo
 * Conditions générales
 * Conditions générales avec griffonnage
 
-Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Forms &amp; Documents. Pour installer un package, voir [Déploiement de packages de contenu via Cloud Manager et Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#deploying-content-packages-via-cloud-manager-and-package-manager) et [Comment utiliser les packages](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
+Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé dans Formulaires et documents. Pour installer un package, voir [Déploiement de packages de contenu via Cloud Manager et Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#deploying-content-packages-via-cloud-manager-and-package-manager) et [Comment utiliser les packages](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
 
 ![Tous les fragments répertoriés](assets/ootb-frags.png)
 
 ## Adresse {#address}
 
-Comprend des champs pour spécifier une adresse postale. Les champs disponibles sont Adresse postale, Code postal, Ville, État et pays. Il comprend également un service Web préconfiguré qui renseigne la ville et l’état pour un code postal américain spécifié.
+Comprend des champs pour spécifier une adresse postale. Les champs disponibles sont les suivants : adresse, code postal, ville, État et pays. Il comprend également un service web préconfiguré qui renseigne la ville et l’État pour un code postal américain donné.
 
 ![Fragment d’adresse](assets/address.png)
 
@@ -82,7 +82,7 @@ Comprend des champs permettant d’indiquer des informations sur une ou plusieur
 
 ## Historique d’emploi {#employment-history}
 
-Comprend des champs pour capturer l’historique des emplois. Il permet d’ajouter plusieurs organisations.
+Comprend des champs permettant de capturer l’historique des emplois. Il permet d’ajouter plusieurs entreprises.
 
 ![Fragment d’historique d’emploi](assets/emp-history.png)
 
@@ -92,7 +92,7 @@ Comprend des champs pour capturer l’historique des emplois. Il permet d’ajou
 
 ## Recettes et dépenses {#income-expenditure}
 
-Comprend des champs pour capturer les flux de trésorerie et les dépenses mensuels. Les Forms qui demandent aux utilisateurs de fournir des détails financiers peuvent utiliser ce fragment pour capturer les recettes et les dépenses.
+Comprend des champs permettant de capturer les dépenses et le flux de trésorerie mensuels. Les formulaires qui nécessitent la saisie d’informations financières peuvent utiliser ce fragment pour capturer les revenus et les dépenses.
 
 ![Fragment de recettes et de dépenses](assets/income.png)
 

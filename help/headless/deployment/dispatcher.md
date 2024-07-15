@@ -12,7 +12,7 @@ ht-degree: 94%
 ---
 
 
-# Dispatcher : configuration du point d’entrée avec AEM sans affichage
+# Dispatcher - Configuration de point de terminaison avec AEM sans affichage
 
 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont incluses par défaut pour ouvrir les points d’entrée GraphQL aux applications découplées.
 

@@ -14,13 +14,13 @@ ht-degree: 23%
 
 # Panneau latéral de la console Sites {#side-panel}
 
-Découvrez comment utiliser le panneau latéral dans l’AEM **Sites** pour mieux comprendre et parcourir votre contenu.
+Découvrez comment utiliser le panneau latéral dans la console AEM **Sites** pour mieux comprendre et parcourir votre contenu.
 
 ## Orientation {#orientation}
 
-Par défaut, le panneau latéral est fermé lorsque vous entrez dans le **Sites** console. Ainsi, l’écran est entièrement dédié à votre contenu.
+Le panneau latéral est fermé par défaut lorsque vous entrez dans la console **Sites**. Ainsi, l’écran est entièrement dédié à votre contenu.
 
-Appuyez ou cliquez sur le bouton **Panneau latéral** dans le **Sites** dans la barre d’outils de la console pour activer le panneau latéral et choisir votre vue du contenu.
+Appuyez ou cliquez sur l’icône **Panneau latéral** dans la barre d’outils de la console **Sites** pour activer le panneau latéral et choisir votre vue du contenu.
 
 * [Contenu uniquement](#content-only)
 * [Arborescence de contenu](#content-tree)
@@ -30,7 +30,7 @@ Appuyez ou cliquez sur le bouton **Panneau latéral** dans le **Sites** dans la 
 * [Filtrer](#filter)
 * [Configurer Analytics](#setup-analytics)
 
-![Panneau latéral de la console Sites](assets/sites-console-side-panel-views.png)
+![Vues du panneau latéral de la console Sites](assets/sites-console-side-panel-views.png)
 
 La vue actuelle sélectionnée est indiquée par une coche bleue dans la liste déroulante et l’icône du panneau latéral dans la barre d’outils est mise à jour avec le nom de la vue sélectionnée.
 
@@ -40,7 +40,7 @@ Cette vue du panneau latéral la désactive, c’est-à-dire qu’elle n’affic
 
 >[!TIP]
 >
->Utiliser l’accent grave/la coche arrière `´` raccourci clavier pour basculer vers la vue Contenu uniquement du panneau latéral.
+>Utilisez le raccourci clavier accent/coche arrière grave `´` pour passer à la vue Contenu uniquement du panneau latéral.
 
 ## Arborescence de contenu {#content-tree}
 
@@ -56,7 +56,7 @@ La console affiche le contenu de l’élément actuellement sélectionné dans l
 
 >[!TIP]
 >
->* Utilisez la variable `Alt+1` raccourci clavier pour basculer vers l’arborescence de contenu du panneau latéral.
+>* Utilisez le raccourci clavier `Alt+1` pour passer à l’arborescence de contenu du panneau latéral.
 >* Après avoir sélectionné une entrée dans la hiérarchie, vous pouvez naviguer rapidement dans la hiérarchie à l’aide des touches directionnelles.
 >* Reportez-vous à la section [Raccourcis clavier](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) pour plus d’informations.
 
@@ -66,7 +66,7 @@ La chronologie peut être utilisée pour afficher les événements qui ont affec
 
 ![Détails de la chronologie](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
-La variable **Chronologie** panneau latéral permet d’afficher, dans une liste déroulante, divers événements liés à un élément sélectionné pouvant être sélectionnés comme types :
+Le panneau latéral **Chronologie** vous permet d’afficher divers événements liés à un élément sélectionné comme types dans une liste déroulante :
 
 * Commentaires
 * [Annotations](/help/sites-cloud/authoring/page-editor/annotations.md)
@@ -77,9 +77,9 @@ La variable **Chronologie** panneau latéral permet d’afficher, dans une liste
    * Notez qu’aucune information ne sera affichée pour les workflows transitoires, car aucune information historique n’est enregistrée pour ceux-ci.<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
 * Tout afficher
 
-En outre, vous pouvez ajouter/afficher des commentaires sur l’élément sélectionné à l’aide du **Commentaire** s’affiche au bas de la liste des événements. Saisissez un commentaire suivi de `Return` enregistre le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
+De plus, vous pouvez ajouter/afficher des commentaires sur l’élément sélectionné à l’aide de la zone **Commentaire** affichée en bas de la liste des événements. Saisissez un commentaire suivi de `Return` pour enregistrer le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
 
-Dans le **Sites** vous pouvez également accéder à d’autres fonctionnalités via le bouton représentant des points de suspension en regard de la console **Commentaire** champ .
+Dans la console **Sites** , vous pouvez également accéder à des fonctionnalités supplémentaires par le biais du bouton représentant des points de suspension en regard du champ **Commentaire** .
 
 * [enregistrer une version ;](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [démarrer un workflow.](/help/sites-cloud/authoring/workflows/applying.md)
@@ -88,18 +88,18 @@ Dans le **Sites** vous pouvez également accéder à d’autres fonctionnalités
 
 >[!TIP]
 >
->* Utilisez la variable `Alt+2` raccourci clavier pour passer en mode Chronologie du panneau latéral.
+>* Utilisez le raccourci clavier `Alt+2` pour basculer vers la vue de chronologie du panneau latéral.
 >* Reportez-vous à la section [Raccourcis clavier](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) pour plus d’informations.
 
 ## Références {#references}
 
-La variable **Références** La vue affiche une liste des types de références vers ou depuis la ressource sélectionnée dans la console.
+La vue **Références** affiche une liste des types de références de ou depuis vers la ressource sélectionnée dans la console.
 
 ![Détails des références](assets/console-side-panel-references-detail.png)
 
 Sélectionnez le type de référence approprié pour en savoir plus. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence particulière, notamment :
 
-* **Liens entrants**, fournit une liste des pages qui font référence à la page, ainsi qu’un accès direct à **Modifier** l’une de ces pages lorsque vous sélectionnez un lien spécifique.
+* **Liens entrants**, fournit une liste de pages qui référencent la page, ainsi qu’un accès direct à **Modifier** l’une de ces pages lorsque vous sélectionnez un lien spécifique.
    * Cela peut uniquement afficher les liens statiques, et non les liens générés dynamiquement, tels que depuis le composant Liste .
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md) donne accès aux lancements associés.
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md) affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
@@ -108,15 +108,15 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 
 ## Site {#site}
 
-La variable **Site** La vue du panneau latéral affiche les détails des sites [créé à l’aide d’un modèle de site.](/help/sites-cloud/administering/site-creation/create-site.md)
+La vue **Site** du panneau latéral affiche les détails des sites [ créés à l’aide d’un modèle de site.](/help/sites-cloud/administering/site-creation/create-site.md)
 
 ![Panneau du site](assets/console-side-panel-site-paenl.png)
 
-Voir le document [Utilisation du panneau Site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) pour plus d’informations sur l’utilisation du panneau pour gérer la variable [thème de votre site.](/help/sites-cloud/administering/site-creation/site-themes.md).
+Consultez le document [Utilisation du panneau du site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) pour plus d’informations sur la manière dont vous pouvez utiliser le panneau pour gérer le [thème de votre site.](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 Si vous n’avez pas encore configuré le pipeline frontal pour activer la création de site basée sur un thème, le panneau latéral offre cette option.
 
-![Option permettant d’activer le pipeline frontal dans le panneau latéral](assets/sites-console-side-panel-site.png)
+![Option pour activer le pipeline front-end dans le panneau latéral](assets/sites-console-side-panel-site.png)
 
 >[!TIP]
 >
@@ -124,11 +124,11 @@ Si vous n’avez pas encore configuré le pipeline frontal pour activer la créa
 
 ## Filtrer {#filter}
 
-La variable **Filtrer** est similaire au panneau [fonctionnalité de recherche](/help/sites-cloud/authoring/search.md) avec les filtres d’emplacement appropriés déjà définis, ce qui vous permet de filtrer davantage le contenu que vous souhaitez afficher.
+Le panneau **Filtre** est similaire à la [ fonction de recherche](/help/sites-cloud/authoring/search.md) avec les filtres d’emplacement appropriés déjà définis, ce qui vous permet de filtrer davantage le contenu que vous souhaitez afficher.
 
 ![Exemple de filtre](assets/console-side-panel-filter.png)
 
-Contrairement aux autres vues du panneau latéral, pour passer à une autre vue, appuyez ou cliquez sur la `X` dans le champ de recherche.
+Contrairement aux autres vues du panneau latéral, pour passer à une autre vue, appuyez ou cliquez sur le `X` dans le champ de recherche.
 
 ## Configurer Analytics {#setup-analytics}
 

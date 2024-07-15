@@ -29,13 +29,13 @@ Suivez les étapes ci-dessous pour attribuer un lecteur à un affichage :
 
    ![image](/help/screens-cloud/assets/player/register-player7.png)
 
-1. La boîte de dialogue **Attribuer un affichage** s’ouvre. Sélectionnez l’affichage dans la liste, puis cliquez sur **Sélectionner**.
+1. La boîte de dialogue **Attribuer un affichage** s’ouvre. Sélectionnez l&#39;affichage dans la liste et cliquez sur **Sélectionner**.
 
    ![image](/help/screens-cloud/assets/player/register-player8.png)
 
 ## Lecture du contenu {#content-playback}
 
-Une fois que vous avez attribué un affichage à un lecteur, comme indiqué dans la section précédente, l’affichage affecté sous la **AFFICHAGE ATTRIBUÉ** du panneau.
+Une fois que vous avez attribué un affichage à un lecteur, comme indiqué dans la section précédente, l’affichage affecté s’affiche sous le panneau **AFFICHAGE ATTRIBUÉ** .
 
 Désormais, l’affichage est attribué à votre lecteur et le canal commence à lire le contenu. Le lecteur doit maintenant télécharger et commencer à lire le contenu. **Félicitations !**
 

@@ -25,7 +25,7 @@ Pour que l’auteur puisse utiliser l’éditeur de page AEM pour modifier les d
 >
 >Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, un calque spécifique au framework composé de modules, composants et services peut être fourni.
 >
->**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous souhaitez mettre en oeuvre un autre framework à utiliser avec AEM.
+>**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous souhaitez mettre en oeuvre une autre structure à utiliser avec AEM.
 
 >[!CAUTION]
 >

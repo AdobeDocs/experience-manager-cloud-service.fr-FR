@@ -66,7 +66,7 @@ Les sections suivantes, [En tant qu’auteur de contenu](#as-a-content-author) e
 Si vous souhaitez utiliser le système de style pour vos propres composants, procédez comme suit :
 
 1. Installez le CSS en tant que bibliothèques clientes, comme décrit dans la section [Vue d’ensemble](#overview).
-1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section . [En tant qu’auteur de modèles](#as-a-template-author).
+1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section [En tant qu’auteur de modèles](#as-a-template-author).
 1. Les créateurs et créatrices de contenu peuvent alors utiliser les styles comme décrit dans la section [En tant que créateur ou créatrice de contenu](#as-a-content-author).
 
 ### En tant qu’auteur de contenu {#as-a-content-author}
@@ -76,7 +76,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
    ![Système de style pour l’auteur](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Sélectionnez la variable **Styles** dans la barre d’outils de la fonction **Liste** pour ouvrir le menu de style et modifier l’aspect du composant.
+1. Sélectionnez le bouton **Styles** sur la barre d’outils du composant **Liste** pour ouvrir le menu de style et modifier l’aspect du composant.
 
    ![Sélection de styles](/help/sites-cloud/authoring/assets/style-system-author2.png)
 

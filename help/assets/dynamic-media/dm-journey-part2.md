@@ -123,7 +123,7 @@ Vous vous rappelez que, dans le chapitre précédent [Anatomie d’une URL Dynam
 
 Vous pouvez considérer un paramètre d’image prédéfini comme une recette pour vos images. Il va fournir n&#39;importe quelle image qui utilise le paramètre prédéfini de manière cohérente à chaque fois ; il va être le même. Le paramètre `&op_brightness=+10` a également été ajouté pour augmenter légèrement la luminosité.
 
-Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, vous souhaitez appliquer la variable _Volume moyen_ image prédéfinie en image d&#39;un bol de chocolat liquide.
+Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, vous souhaitez appliquer le paramètre d&#39;image prédéfini _Medium_ à une image d&#39;un bol de chocolat liquide.
 
 ![Application du paramètre d’image prédéfini *Medium* pour générer un rendu d’image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Application du paramètre d’image prédéfini Medium pour générer un rendu d’image_

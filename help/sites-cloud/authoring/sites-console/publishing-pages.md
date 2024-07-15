@@ -56,7 +56,7 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 
 >[!NOTE]
 >
->Si vous souhaitez conserver l’ordre des pages, vous devez utiliser [Gérer la publication](#manage-publication) pour publier la page parente avec toutes les pages enfants dans une seule action.
+>Si vous souhaitez préserver l’ordre des pages, vous devez utiliser [Gérer la publication](#manage-publication) pour publier la page parente avec toutes les pages enfants en une seule action.
 >
 >La commande de page n’est pas garantie :
 >* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
@@ -68,7 +68,7 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 
 ### Publication à partir de l’éditeur de page {#publishing-from-the-page-editor}
 
-Si vous modifiez une page dans la variable [éditeur de page,](/help/sites-cloud/authoring/page-editor/introduction.md) il peut être publié directement à partir de l’éditeur.
+Si vous modifiez une page dans l’éditeur de page [, ](/help/sites-cloud/authoring/page-editor/introduction.md) elle peut être publiée directement à partir de l’éditeur.
 
 1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu, puis sélectionnez l’option **Publier la page**.
 
@@ -78,7 +78,7 @@ Si vous modifiez une page dans la variable [éditeur de page,](/help/sites-cloud
 
    * La page est publiée directement, s’il n’y a aucune référence à publier.
    * Si la page comporte des références à publier, celles-ci sont répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
-      * Indiquez les ressources, balises, etc., que vous souhaitez publier conjointement avec la page, puis utilisez **Publier** pour terminer le processus.
+      * Spécifiez les ressources, balises, etc. que vous souhaitez publier conjointement avec la page, puis utilisez **Publish** pour terminer le processus.
       * Sélectionner **Annuler** pour abandonner l’opération.
 
    ![Publication de références avec la page](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -101,7 +101,7 @@ Si vous modifiez une page dans la variable [éditeur de page,](/help/sites-cloud
 
 ### Publication à partir de la console Site {#publishing-from-the-sites-console}
 
-Dans le **Sites** La console propose deux options de publication :
+Dans la console **Sites**, il existe deux options de publication :
 
 * [Publication rapide](#quick-publish)
 * [Gérer la publication](#manage-publication)
@@ -132,7 +132,7 @@ La méthode **Gérer la publication** propose plus d’options que **Publication
 
 >[!NOTE]
 >
->Si vous souhaitez conserver l’ordre des pages, vous devez utiliser **Gérer la publication** pour publier la page parente avec toutes les pages enfants d’une seule action.
+>Si vous souhaitez préserver l’ordre des pages, vous devez utiliser **Gérer la publication** pour publier la page parente avec toutes les pages enfants en une seule action.
 >
 >La commande de page n’est pas garantie :
 >* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
@@ -244,7 +244,7 @@ Vous pouvez dépublier une ou plusieurs pages de la destination souhaitée en pr
 
 ### Dépublication à partir de l’éditeur {#unpublishing-from-the-editor}
 
-Lorsque vous modifiez une page, si vous souhaitez en annuler la publication, sélectionnez **Annuler la publication de la page** dans le **Informations sur la page** , comme vous le feriez [publier la page ;](#publishing-from-the-editor).
+Lors de la modification d’une page, si vous souhaitez annuler la publication de cette page, sélectionnez **Annuler la publication de la page** dans le menu **Informations sur la page**, comme vous le feriez [publier la page](#publishing-from-the-editor).
 
 >[!NOTE]
 >

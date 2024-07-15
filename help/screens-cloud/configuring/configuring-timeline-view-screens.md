@@ -69,11 +69,11 @@ Le contrôle de version crée un &quot;instantané&quot; d’un canal à un mome
    ![Ajouter un commentaire](/help/screens-cloud/assets/configure/screens-timeline5.jpg)
 
 1. Sélectionnez **Enregistrer comme version**.
-1. Saisissez un **Libellé** et **Commentaire** pour la version.
+1. Saisissez un **libellé** et un **commentaire** pour la version.
 
    ![Ajouter un commentaire](/help/screens-cloud/assets/configure/screens-timeline6.jpg)
 
-1. Confirmez la nouvelle version en sélectionnant **Créer**.Les informations de la chronologie sont mises à jour pour indiquer la nouvelle version.
+1. Confirmez la nouvelle version en sélectionnant **Créer**. Les informations de la chronologie sont mises à jour pour indiquer la nouvelle version.
 
 #### Restauration d’une version {#revertversion}
 
@@ -109,7 +109,7 @@ Vous pouvez comparer une version spécifique à la version actuelle :
 
 1. Accédez au canal pour lequel vous souhaitez ajouter un commentaire.
 1. Sélectionnez le canal.
-1. Ouvrez le **Chronologie** column
+1. Ouvrez la colonne **Chronologie**
 1. Sélectionnez **Tout afficher** ou **Versions** dans la liste déroulante des filtres. Les versions du canal sélectionné sont répertoriées.
 1. Sélectionnez la version à comparer. Les options possibles s’affichent :
 
@@ -137,11 +137,11 @@ Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes 
 
 1. Sélectionnez **Démarrer le workflow**.
 1. L’assistant Créer un workflow s’ouvre pour spécifier les détails du workflow.
-1. Sélectionner **Modèle de workflow** dans la liste déroulante et saisissez le titre du workflow.
+1. Sélectionnez **Modèle de workflow** dans la liste déroulante et saisissez le titre du workflow.
 
    ![Démarrer le workflow](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
-1. Continuer en cliquant **Suivant**.
+1. Poursuivez en cliquant sur **Suivant**.
 1. À l’étape de la portée, vous pouvez :
    * **Ajouter du contenu** pour ajouter des ressources supplémentaires au workflow.
    * **Inclure les enfants** pour indiquer que les enfants de cette ressource seront inclus dans le workflow.
@@ -149,7 +149,7 @@ Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes 
 
    ![Démarrer le workflow](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
 
-1. Sélectionner **Créer** pour fermer l&#39;assistant et créer l&#39;instance de workflow.
+1. Sélectionnez **Créer** pour fermer l’assistant et créer l’instance de workflow.
 1. Vous devrez peut-être effectuer certaines actions supplémentaires pour terminer le workflow en fonction du modèle de workflow sélectionné.
 
    ![Démarrer le workflow](/help/screens-cloud/assets/configure/screens-timeline13.jpg)

@@ -31,7 +31,7 @@ Le plug-in `aio-cli-plugin-aem-cloud-service-migration` se compose de deux parti
 
 * **Interface utilisateur**
 
-   * `aio-cli` pour exécuter un ou plusieurs outils de refactorisation du code (en mettant en chaîne les outils à exécuter de manière séquentielle).
+   * `aio-cli` commandes pour exécuter un ou plusieurs outils de refactorisation du code (en mettant en chaîne les outils à exécuter de manière séquentielle).
    * `config.yaml` qui accepte les paramètres d’entrée requis.
 
 * **Suite d’outils de refactorisation du code sous-jacente**

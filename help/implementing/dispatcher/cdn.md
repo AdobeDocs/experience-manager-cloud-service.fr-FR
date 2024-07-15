@@ -43,7 +43,7 @@ Consultez [Gestion des listes d’adresses IP autorisées](/help/implementing/c
 
 ### Configurer le trafic sur le réseau CDN {#cdn-configuring-cloud}
 
-Les règles de configuration du trafic et des filtres du réseau de diffusion de contenu peuvent être déclarées dans un fichier de configuration et déployées sur le réseau de diffusion de contenu, à l’aide de la variable [Pipeline de configuration de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Pour plus d’informations, voir [Configuration du trafic sur le réseau de diffusion de contenu](/help/implementing/dispatcher/cdn-configuring-traffic.md) et [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md).
+Les règles de configuration du trafic et des filtres CDN peuvent être déclarées dans un fichier de configuration et déployées sur le CDN, à l’aide du [pipeline de configuration de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Pour plus d’informations, voir [Configuration du trafic sur le réseau de diffusion de contenu](/help/implementing/dispatcher/cdn-configuring-traffic.md) et [Règles de filtre de trafic incluant les règles WAF](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Configuration des pages d’erreur CDN {#cdn-error-pages}
 

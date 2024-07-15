@@ -554,7 +554,7 @@ Au moment même où vous créez un cas de prise en charge des Adobes pour que le
    * Votre environnement de Cloud Service (ID de programme et ID d’environnement).
    * Nom de votre compte de société Dynamic Media.
    * Votre région Dynamic Media : Amérique du Nord (NA), Asie-Pacifique (APAC) ou Europe-Moyen-Orient-Asie (EMEA).
-   * Indiquez que la prise en charge du suivi DASH, multi-légendes et multi-audio doit être activée sur votre compte Dynamic Media, dans Experience Manager 6.5.
+   * Sur Experience Manager 6.5, indiquez que vous souhaitez activer la prise en charge du format DASH, de légendes multiples et de suivi audio sur votre compte Dynamic Media.
 
 1. Le service clientèle d’Adobe vous inscrira sur la liste d’attente des clientes et clients en se basant sur l’ordre dans lequel les demandes ont été envoyées.
 1. Dès qu’Adobe sera prêt à traiter votre demande, le service clientèle vous contactera pour se coordonner avec vous et programmer une date cible d’activation.
@@ -562,7 +562,7 @@ Au moment même où vous créez un cas de prise en charge des Adobes pour que le
 1. Vous pouvez désormais effectuer l’une des opérations suivantes :
 
    * Créez votre [paramètre prédéfini de visionneuse vidéo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) comme d’habitude.
-   * [Ajout de plusieurs sous-titres et pistes audio](#add-msma) à votre vidéo.
+   * [Ajoutez plusieurs sous-titres et pistes audio](#add-msma) à votre vidéo.
 
 
 ## À propos de la prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media{#about-msma}
@@ -581,7 +581,7 @@ Voici quelques cas d’utilisation à prendre en compte pour l’ajout de plusie
 |  | Pistes de commentaires |
 |  | Audio descriptif |
 
-Tous [Formats vidéo pris en charge par Dynamic Media](/help/assets/file-format-support.md) et toutes les visionneuses de vidéos Dynamic Media, à l’exception de Dynamic Media *Video_360* visionneuse : prise en charge pour une utilisation avec plusieurs sous-titres et pistes audio.
+Tous les [ formats vidéo pris en charge dans Dynamic Media](/help/assets/file-format-support.md) et toutes les visionneuses vidéo Dynamic Media (à l’exception de la visionneuse Dynamic Media *Video_360*) sont pris en charge pour une utilisation avec plusieurs sous-titres et pistes audio.
 
 La fonctionnalité de suivi multilégende et audio est disponible pour votre compte Dynamic Media au moyen d’un bouton d’activation/désactivation de fonctionnalités qui doit être activé par le service clientèle d’Adobe.
 
@@ -591,7 +591,7 @@ Avant d’ajouter plusieurs sous-titres et plusieurs pistes audio à votre vidé
 
 * Dynamic Media est configuré dans un environnement AEM.
 * Un [profil vidéo Dynamic Media est appliqué au dossier dans lequel vos vidéos sont ingérées](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Le suivi multilégende et multiaudio est activé sur votre compte Dynamic Media.](#enable-dash).
+* [ La piste multilégende et multiaudio est activée sur votre compte Dynamic Media ](#enable-dash).
 
 Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVTT et Adobe VTT. Les fichiers des pistes audio ajoutés sont pris en charge au format MP3.
 
@@ -612,7 +612,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
    >Si vous ne voyez pas l’onglet **[!UICONTROL Sous-titres et pistes audio]**, cela signifie l’une des deux choses suivantes :
    >
    >* Aucun profil vidéo n’est affecté au dossier dans lequel se trouve la vidéo sélectionnée. Dans ce cas, voir [Application d’un profil vidéo au dossier](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* Ou, la vidéo doit être retraitée par Dynamic Media. Dans ce cas, voir [Retraiter des ressources Dynamic Media dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >* Ou, la vidéo doit être retraitée par Dynamic Media. Dans ce cas, voir [Retraiter les ressources Dynamic Media dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
    >
    >Une fois l’une des tâches ci-dessus terminée, reprenez cette procédure.
 
@@ -627,7 +627,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
      |--- |--- |
      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de sous-titres et de pistes audio supplémentaires. |
      | Langue | Sélectionnez la langue des sous-titres. |
-     | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titre** - Texte de la légende affiché avec la vidéo qui traduit ou transcrit la boîte de dialogue.<br>**Légende** : le texte de la légende inclut également les bruits de fond, la différenciation des locuteurs et locutrices et d’autres informations pertinentes, ainsi que la traduction ou la transcription du dialogue, afin d’offrir un contenu plus accessible aux personnes sourdes ou malentendantes. |
+     | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titres** : texte des sous-titres affichés dans la vidéo qui traduit ou transcrit les dialogues.<br>**Légende** : le texte de la légende inclut également les bruits de fond, la différenciation des locuteurs et locutrices et d’autres informations pertinentes, ainsi que la traduction ou la transcription du dialogue, afin d’offrir un contenu plus accessible aux personnes sourdes ou malentendantes. |
      | Libellé | Texte affiché pour le nom du sous-titre dans la liste de fenêtres contextuelles **[!UICONTROL Sélectionner l’audio ou les sous-titres]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste de sous-titre ou de légende. Par exemple, `English (CC)`. |
 
      Vous pouvez modifier les métadonnées de sous-titres ultérieurement, si nécessaire. Lorsque la vidéo est publiée, ces informations sont reflétées dans les URL publiques des vidéos publiées.
@@ -653,7 +653,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
    >Selon les paramètres de mise en cache de votre instance, le traitement des métadonnées peut prendre plusieurs minutes avant qu’elles ne soient reflétées dans l’aperçu et dans les URL publiées.
 
 1. (Facultatif) Si vous avez sélectionné **[!UICONTROL Enregistrer et fermer]** à l’étape précédente au lieu de **[!UICONTROL Enregistrer]**, vous pouvez toujours afficher le statut du traitement des fichiers chargés. Consultez [Afficher le statut du cycle de vie des fichiers de sous-titres et de pistes audio chargés](#lifecycle-status-video).
-1. (Facultatif) Prévisualisez la vidéo avant de la publier pour vous assurer que les sous-titres et le son fonctionnent comme prévu. Voir [Prévisualiser une vidéo comportant plusieurs sous-titres et pistes audio](#preview-video-audio-subtitle)
+1. (Facultatif) Prévisualisez la vidéo avant de la publier pour vous assurer que les sous-titres et le son fonctionnent comme prévu. Voir [Prévisualisation d’une vidéo comportant plusieurs sous-titres et pistes audio](#preview-video-audio-subtitle)
 1. Publiez la vidéo. Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
 
 #### À propos de l’ajout de fichiers de sous-titres et de pistes audio à une vidéo déjà publiée
@@ -760,7 +760,7 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/ad
 
    ![Sélection de la visionneuse Vidéo dans la liste déroulante Visionneuses.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
 
-1. Près du coin inférieur droit, à gauche de l’icône de volume, sélectionnez l’icône en forme de phylactère, puis sélectionnez l’audio ou le sous-titre que vous souhaitez entendre et/ou ou voir. Si vous le souhaitez, sous Sous Sous-titres, vous pouvez sélectionner **[!UICONTROL Off]** pour ne pas afficher de sous-titres ou de sous-titres.
+1. Près du coin inférieur droit, à gauche de l’icône de volume, sélectionnez l’icône en forme de phylactère, puis sélectionnez l’audio ou le sous-titre que vous souhaitez entendre et/ou ou voir. Si vous le souhaitez, sous Sous-titres, vous pouvez sélectionner **[!UICONTROL Désactivé]** pour ne pas afficher de sous-titres ou de sous-titres.
 
    ![Liste de fenêtres contextuelles (pop-up) Audio et sous-titres dans la visionneuse de vidéos.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulation d’un utilisateur ou d’une utilisatrice sélectionnant le contenu audio et les sous-titres pour la lecture vidéo.*
 
@@ -839,7 +839,7 @@ Dynamic Media peut convertir les fichiers de légende au format JSON (JavaScript
 
 Voir [Diffusion de contenu statique (sans image)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=fr#image-serving-api) pour plus d’informations sur l’utilisation de la fonction JSON dans une URL.
 
-**Pour ajouter des sous-titres à une vidéo :**
+**Pour ajouter des sous-titres à la vidéo :**
 
 1. Utilisez une application ou un service tiers pour créer votre fichier de sous-titres vidéo.
 

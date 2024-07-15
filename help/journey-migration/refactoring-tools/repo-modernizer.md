@@ -34,7 +34,7 @@ Repository Modernizer crée une structure de projet AEM Cloud Service compatible
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Par Adobe I/O, interface de ligne de commande : Adobe recommande d’utiliser Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM module externe de refactorisation du code as a Cloud Service pour l’interface de ligne de commande d’Adobe I/O).
+* Par Adobe I/O CLI : Adobe recommande d’utiliser Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (module externe de refactorisation de code AEM as a Cloud Service pour l’interface de ligne de commande d’Adobe I/O).
 
   Consultez **[Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** pour apprendre à installer et à utiliser le plug-in.
 

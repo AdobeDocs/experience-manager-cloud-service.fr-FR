@@ -75,7 +75,7 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
 * **Sélecteur de mode**
 
-  Affiche la [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) et vous permet de sélectionner un autre mode, tel que l’édition, la mise en page, la temporisation ou le ciblage.
+  Affiche le [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) actuel et vous permet de sélectionner un autre mode, tel que l’édition, la mise en page, la temporisation ou le ciblage.
 
   ![Bouton Sélecteur de mode](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -87,7 +87,7 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
 * **Annoter**
 
-  Permet d’ajouter [annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) sur la page lors de la révision d’une page. Après la première annotation, l’icône prend la forme d’un nombre indiquant le nombre d’annotations sur la page.
+  Permet d’ajouter [des annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) à la page lors de la révision d’une page. Après la première annotation, l’icône prend la forme d’un nombre indiquant le nombre d’annotations sur la page.
 
   ![Bouton Annotation](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -151,9 +151,9 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
      ![Insertion d’un composant](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * Si vous utilisez un ordinateur de bureau, vous pouvez double-cliquer sur le bouton **Faire glisser des composants ici** de la boîte.
+   * Si vous utilisez un ordinateur de bureau, vous pouvez double-cliquer sur la zone **Faire glisser les composants ici** .
 
-   * La variable **Insérer un nouveau composant** ouvrez la boîte de dialogue pour vous permettre de sélectionner le composant requis :
+   * La boîte de dialogue **Insérer un nouveau composant** s’ouvre pour vous permettre de sélectionner le composant requis :
 
      ![Boîte de dialogue Insérer un nouveau composant](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -161,7 +161,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
 ### Insertion d’un composant à partir de l’explorateur de ressources {#inserting-a-component-using-the-assets-browser}
 
-Vous pouvez également ajouter un nouveau composant à la page en faisant glisser une ressource depuis l’ [navigateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Cela crée automatiquement un composant du type approprié contenant la ressource.
+Vous pouvez également ajouter un nouveau composant à la page en faisant glisser une ressource depuis le [navigateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Cela crée automatiquement un composant du type approprié contenant la ressource.
 
 Ce comportement peut être configuré pour votre installation. Pour plus d’informations, voir Configuration d’un système de paragraphes de manière à faire glisser une ressource pour créer une instance de composant. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -261,7 +261,7 @@ Les actions disponibles sont affichées comme il convient ; ces actions ne peuv
 
 * **Convertir en variation de fragment d’expérience**
 
-  Vous pouvez ainsi créer une [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) du composant sélectionné ou ajoutez-le à un fragment d’expérience existant.
+  Vous pouvez ainsi créer un [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) à partir du composant sélectionné ou l’ajouter à un fragment d’expérience existant.
 
   ![Bouton Convertir en variation de fragment d’expérience](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -341,7 +341,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
    ![Barre d’outils d’un composant de page](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Sélectionnez la variable **Disposition** pour ajuster la mise en page du composant.
+   Sélectionnez l’action **Disposition** pour ajuster la disposition du composant.
 
    ![Bouton Disposition de la barre d’outils d’un composant](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

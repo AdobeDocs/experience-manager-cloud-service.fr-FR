@@ -524,28 +524,28 @@ Cependant, il arrive qu’une API devienne obsolète dans le contexte d’Experi
 
 ### N’utilisez pas @Inject annotation avec @Optional dans les modèles Sling {#sonarqube-slingmodels-inject-optional}
 
-* **Clé**: InjectAnnotationWithOptionalInjectionCheck
-* **Type**: qualité logicielle
+* **Clé** : InjectAnnotationWithOptionalInjectionCheck
+* **Type** : Qualité logicielle
 * **Gravité** : mineure
-* **Depuis**: version 2023.11
+* **Depuis** : version 2023.11
 
-Le projet Apache Sling décourage l’utilisation de la variable `@Inject` annotation dans le contexte des modèles Sling, car elle peut entraîner de mauvaises performances lorsqu’elle est combinée avec la fonction `DefaultInjectionStrategy.OPTIONAL` (au niveau du champ ou de la classe). Au lieu de cela, des injections plus spécifiques (telles que `@ValueMapValue` ou `@OsgiInjector` les annotations) doivent être utilisées.
+Le projet Apache Sling décourage l’utilisation de l’annotation `@Inject` dans le contexte des modèles Sling, car cela peut entraîner de mauvaises performances lorsqu’elle est combinée avec l’élément `DefaultInjectionStrategy.OPTIONAL` (au niveau du champ ou de la classe). À la place, des injections plus spécifiques (comme les annotations `@ValueMapValue` ou `@OsgiInjector`) doivent être utilisées.
 
-Vérifiez les [Documentation Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été faite.
+Pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été faite, consultez la [documentation Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1).
 
 
 ### Réutilisation des instances d’un client HTTPC {#sonarqube-reuse-httpclient}
 
-* **Clé**: AEMSRE-870
-* **Type**: qualité logicielle
+* **Clé** : AEMSRE-870
+* **Type** : Qualité logicielle
 * **Gravité** : mineure
-* **Depuis**: version 2023.11
+* **Depuis** : version 2023.11
 
 AEM applications atteignent souvent d’autres applications à l’aide du protocole HTTP, et Apache HttpClient est une bibliothèque souvent utilisée pour atteindre cet objectif. Mais la création d’un tel objet HttpClient s’accompagne d’une surcharge. Ces objets doivent donc être réutilisés autant que possible.
 
-Cette règle vérifie qu’un tel objet HttpClient n’est pas privé dans une méthode, mais global au niveau de la classe, afin qu’il puisse être réutilisé. Dans ce cas, le champ httpClient doit être défini dans le constructeur de la classe ou de la propriété `activate()` (si cette classe est un composant/service OSGi).
+Cette règle vérifie qu’un tel objet HttpClient n’est pas privé dans une méthode, mais global au niveau de la classe, afin qu’il puisse être réutilisé. Dans ce cas, le champ httpClient doit être défini dans le constructeur de la classe ou de la méthode `activate()` (si cette classe est un composant/service OSGi).
 
-Vérifiez les [Guide d’optimisation](https://hc.apache.org/httpclient-legacy/performance.html) de HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation de HttpClient.
+Consultez le [Guide d’optimisation](https://hc.apache.org/httpclient-legacy/performance.html) de HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation de HttpClient.
 
 #### Code non conforme {#non-compliant-code-14}
 
@@ -734,7 +734,7 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 >
 >Par exemple, si la création génère des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all`, où `com.myco:com.myco.all` contient `com.myco:com.myco.ui.apps`, toutes les configurations dans `com.myco:com.myco.ui.apps` seront signalées comme doublons.
 >
->Il s’agit généralement de ne pas suivre la variable [Instructions relatives à la structure de module de contenu](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple spécifique, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente du package `com.myco:com.myco.ui.apps`.
+>Il s’agit généralement de ne pas respecter les [directives de structure de module de contenu](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple spécifique, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente du package `com.myco:com.myco.ui.apps`.
 
 #### Code non conforme {#non-compliant-code-osgi}
 
@@ -989,7 +989,8 @@ Experience Manager as a Cloud Service interdit aux définitions d’index d
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Experience Manager as a Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée `reindex`. L’indexation à l’aide de cette propriété doit être mise à jour avant la migration vers Experience Manager as a Cloud Service. Consultez le document [Recherche et indexation de contenu](/help/operations/indexing.md#how-to-use) pour en savoir plus.
+Experience Manager as a Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée `reindex`. L’indexation à l’aide de cette propriété doit être mise à jour avant la migration vers Experience Manager en tant que
+Cloud Service. Consultez le document [Recherche et indexation de contenu](/help/operations/indexing.md#how-to-use) pour en savoir plus.
 
 ### Les noeuds lucene de ressource DAM personnalisés ne doivent pas spécifier &#39;queryPaths&#39; {#oakpal-damAssetLucene-queryPaths}
 
@@ -1036,22 +1037,22 @@ Experience Manager as a Cloud Service interdit aux définitions d’index d
 
 ### Le noeud d’index spécifiant &#39;includedPaths&#39; doit également spécifier &#39;queryPaths&#39; avec les mêmes valeurs. {#oakpal-included-paths-without-query-paths}
 
-* **Clé**: IndexIncludedPathsWithoutQueryPaths
+* **Key** : IndexIncludedPathsWithoutQueryPaths
 * **Type** : code smell
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0
 
-Pour les index personnalisés, les deux `includedPaths` et `queryPaths` doit être configuré avec des valeurs identiques. Si l’un est spécifié, l’autre doit correspondre à l’autre. Cependant, il existe un cas particulier pour les index de `damAssetLucene`, y compris ses versions personnalisées. Pour ceux-ci, vous devez uniquement fournir `includedPaths`.
+Pour les index personnalisés, `includedPaths` et `queryPaths` doivent être configurés avec des valeurs identiques. Si l’un est spécifié, l’autre doit correspondre à l’autre. Cependant, il existe un cas spécial pour les index de `damAssetLucene`, y compris ses versions personnalisées. Pour cela, vous ne devez fournir que `includedPaths`.
 
 ### Le noeud d’index spécifiant nodeScopeIndex sur le type de noeud générique doit également spécifier includedPaths et queryPaths {#oakpal-full-text-on-generic-node-type}
 
-* **Clé**: IndexFulltextOnGenericType
+* **Clé** : IndexFulltextOnGenericType
 * **Type** : code smell
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0
 
-Lors de la définition de la variable `nodeScopeIndex` sur un type de noeud &quot;générique&quot; comme `nt:unstructured` ou `nt:base`, vous devez également spécifier la variable `includedPaths` et `queryPaths` propriétés.
-`nt:base` peut être considéré comme &quot;générique&quot;, car tous les types de noeuds en héritent. Donc, définir une `nodeScopeIndex` on `nt:base` fera en sorte qu’il indexe tous les noeuds du référentiel. De même, `nt:unstructured` est également considéré comme &quot;générique&quot;, car il existe de nombreux noeuds dans les référentiels de ce type.
+Lors de la définition de la propriété `nodeScopeIndex` sur un type de noeud &quot;générique&quot; comme `nt:unstructured` ou `nt:base`, vous devez également spécifier les propriétés `includedPaths` et `queryPaths`.
+`nt:base` peut être considéré comme &quot;générique&quot;, car tous les types de noeuds en héritent. La définition d’un `nodeScopeIndex` sur `nt:base` lui permettra d’indexer tous les noeuds du référentiel. De même, `nt:unstructured` est également considéré comme &quot;générique&quot;, car il existe de nombreux noeuds dans les référentiels de ce type.
 
 #### Code non conforme {#non-compliant-code-full-text-on-generic-node-type}
 
@@ -1091,7 +1092,7 @@ Lors de la définition de la variable `nodeScopeIndex` sur un type de noeud &quo
 
 ### La propriété queryLimitReads du moteur de requête ne doit pas être remplacée. {#oakpal-query-limit-reads}
 
-* **Clé**: OverrideOfQueryLimitReads
+* **Key** : OverrideOfQueryLimitReads
 * **Type** : code smell
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0
@@ -1100,7 +1101,7 @@ Le remplacement de la valeur par défaut peut entraîner des lectures de page tr
 
 ### Plusieurs versions actives du même code {#oakpal-multiple-active-versions}
 
-* **Clé**: IndexDetectMultipleActiveVersionsOfSameIndex
+* **Clé** : IndexDetectMultipleActiveVersionsOfSameIndex
 * **Type** : code smell
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0
@@ -1127,12 +1128,12 @@ Le remplacement de la valeur par défaut peut entraîner des lectures de page tr
 
 ### Le nom des définitions d’index entièrement personnalisées doit être conforme aux instructions officielles. {#oakpal-fully-custom-index-name}
 
-* **Clé**: IndexValidFullyCustomName
+* **Clé** : IndexValidFullyCustomName
 * **Type** : code smell
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0
 
-Le modèle attendu pour les noms d’index entièrement personnalisés est le suivant : `[prefix].[indexName]-custom-[version]`. Vous trouverez plus d’informations dans le document [Recherche et indexation de contenu](/help/operations/indexing.md).
+Le modèle attendu pour les noms d’index entièrement personnalisés est : `[prefix].[indexName]-custom-[version]`. Vous trouverez plus d’informations dans le document [Recherche et indexation de contenu](/help/operations/indexing.md).
 
 ### Même propriété avec des valeurs analysées différentes dans la même définition d’index {#oakpal-same-property-different-analyzed-values}
 
@@ -1188,7 +1189,7 @@ Si la propriété analysée n’a pas été explicitement définie, sa valeur pa
 
 ### Propriété Balises {#tags-property}
 
-* **Clé**: IndexHasValidTagsProperty
+* **Clé** : IndexHasValidTagsProperty
 * **Type** : code smell
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0

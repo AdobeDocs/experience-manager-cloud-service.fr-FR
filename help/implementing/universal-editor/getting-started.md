@@ -57,9 +57,9 @@ Si vous ne mettez pas en oeuvre d’application React et/ou avez besoin d’un r
 La dernière version est toujours recommandée, mais les versions précédentes du service peuvent être référencées en cas de modifications entraînant une rupture.
 
 * `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - La toute dernière bibliothèque CORS de l’UE
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - Dernière bibliothèque CORS de l’UE sous la version 2.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - Dernière bibliothèque CORS de l’UE sous la version 2.1.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- Exact la bibliothèque CORS de l’UE version 2.1.1
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - La dernière bibliothèque CORS de l’UE sous la version 2.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - La dernière bibliothèque CORS de l’UE sous la version 2.1.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` - La bibliothèque CORS de l’UE exacte version 2.1.1
 
 ## Ajouter les configurations OSGi nécessaires {#osgi-configurations}
 
@@ -109,9 +109,9 @@ Les connexions utilisées dans l’application sont stockées sous la forme de b
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>` - Il s’agit d’une classification de la connexion à deux options.
-   * `system` - Pour les points de fin de connexion
-   * `config` - Pour [définition des paramètres de configuration facultatifs](#configuration-settings)
+* `<category>` - Il s’agit d’une classification de la connexion avec deux options.
+   * `system` - Pour les points d’entrée de connexion
+   * `config` - Pour [ la définition des paramètres de configuration facultatifs](#configuration-settings)
 * `<referenceName>` : il s’agit d’un nom court réutilisé dans le document pour identifier la connexion. Par exemple, `aemconnection`
 * `<protocol>` : indique le plug-in de persistance du service de persistance de l’éditeur universel à utiliser. Par ex. `aem`
 * `<url>` : il s’agit de l’URL vers le système où les modifications doivent être conservées. Par ex. `http://localhost:4502`
@@ -165,7 +165,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### Paramètres de configuration {#configuration-settings}
 
-Vous pouvez utiliser la variable `config` préfixe dans l’URL de votre connexion pour définir les points d’entrée de service et d’extension si nécessaire.
+Vous pouvez utiliser le préfixe `config` dans l’URL de votre connexion pour définir les points d’entrée de service et d’extension si nécessaire.
 
 Si vous ne souhaitez pas utiliser le service Universal Editor, qui est hébergé par Adobe, mais votre propre version hébergée, vous pouvez le définir dans une balise META. Pour remplacer le point d’entrée de service par défaut fourni par Universal Editor, définissez votre propre point d’entrée de service :
 
@@ -178,7 +178,7 @@ Si vous ne souhaitez pas utiliser le service Universal Editor, qui est hébergé
 
 Si vous souhaitez uniquement que certaines extensions soient activées pour une page, vous pouvez le définir dans une balise meta . Pour récupérer les extensions, définissez les points de fin d’extension :
 
-* Nom du méta : `urn:adobe:aue:config:extensions`
+* Nom méta : `urn:adobe:aue:config:extensions`
 * Métadonnées : `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (exemple)
 
 ```html

@@ -75,18 +75,18 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
    ![Image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Cliquez sur **Générer un rapport** pour exécuter l’analyseur des bonnes pratiques.
+1. Cliquez sur **Générer le rapport** pour exécuter l’analyseur des bonnes pratiques.
 
    ![Image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Fournir la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à la [Analyse des bonnes pratiques dans la CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à l’ [analyse des bonnes pratiques dans CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
    ![Image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >Vous avez la possibilité d’ignorer le téléchargement automatique vers le mode CAM en sélectionnant **Ignorer le téléchargement automatique du rapport vers le mode CAM**. Si vous choisissez d’ignorer, vous devrez télécharger manuellement le rapport BPA sous la forme d’un fichier de valeurs séparées par des virgules, puis télécharger le fichier dans CAM. Il est recommandé d’utiliser l’option de clé de chargement , car elle simplifie l’opération.
 
-1. La variable **Générer** devient actif lorsqu’une clé valide est fournie. Cliquez sur **Générer** pour lancer la génération de rapports.
+1. Le bouton **Générer** devient actif lorsqu’une clé valide est fournie. Cliquez sur **Générer** pour lancer la génération de rapports.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
@@ -102,14 +102,14 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
    ![Image](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-1. Vous pouvez télécharger le rapport au format CSV (valeurs séparées par des virgules) en cliquant sur **Exportation au format CSV**. Vous avez également la possibilité de visualiser le rapport dans le mode CAM en cliquant sur **Accédez à CAM**. Vous accédez alors au [Analyse des bonnes pratiques](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) dans CAM.
+1. Vous avez la possibilité de télécharger le rapport au format CSV (valeurs séparées par des virgules) en cliquant sur **Exporter au format CSV**. Vous avez également la possibilité d&#39;afficher le rapport dans CAM en cliquant sur **Accéder à CAM**. Vous accédez alors à la page [Bonnes pratiques d’analyse](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) de la CAM.
 
 Vous pouvez forcer l’analyseur des bonnes pratiques à effacer son cache et à générer de nouveau le rapport en cliquant sur **Actualiser le rapport**.
 
 ![Image](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 
-1. Si le cache arrive à expiration, vous avez la possibilité de visualiser le dernier rapport généré dans CAM en cliquant sur **Afficher le dernier rapport généré dans CAM** ou lancer une nouvelle génération de rapports en cliquant sur **Générer un nouveau rapport**.
+1. Si le cache arrive à expiration, vous avez la possibilité de visualiser le dernier rapport généré dans CAM en cliquant sur **Afficher le dernier rapport généré dans CAM** ou lancer une nouvelle génération de rapport en cliquant sur **Générer un nouveau rapport**.
 
 ![Image](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
@@ -118,7 +118,7 @@ Vous pouvez forcer l’analyseur des bonnes pratiques à effacer son cache et à
 
 Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), procédez comme suit :
 
-1. Cliquez sur l’icône de rail gauche dans la partie gauche de la page. Cela affichera le **filtre ACS Commons**. Cliquez sur le bouton **Filtre ACS Commons** pour afficher la case à cocher interactive comme illustré dans l’image ci-dessous.
+1. Cliquez sur l’icône de rail gauche dans la partie gauche de la page. Cela affichera le **filtre ACS Commons**. Cliquez sur le **filtre ACS Commons** pour afficher la case à cocher interactive comme illustré dans l’image ci-dessous.
 
    ![Image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 

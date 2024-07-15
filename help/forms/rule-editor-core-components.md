@@ -43,7 +43,7 @@ Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peu
 
 >[!NOTE]
 >
-> Pour découvrir comment créer et utiliser des fonctions personnalisées en détail, reportez-vous à la section [Fonctions personnalisées dans le Forms adaptatif (composants principaux)](/help/forms/create-and-use-custom-functions.md) article.
+> Pour découvrir comment créer et utiliser des fonctions personnalisées en détail, reportez-vous à l’article [Fonctions personnalisées dans Forms adaptatif (composants principaux)](/help/forms/create-and-use-custom-functions.md) .
 
 ## Compréhension d’une règle {#understanding-a-rule}
 
@@ -150,7 +150,7 @@ Lorsque vous créez une règle Lorsque, vous pouvez déclencher l’action Effac
 
 #### Plusieurs champs autorisés dans [!UICONTROL When] {#allowed-multiple-fields}
 
-Dans le **When** , vous avez la possibilité d’ajouter d’autres champs à l’exception du champ auquel la règle est appliquée.
+Dans la condition **When**, vous avez la possibilité d’ajouter d’autres champs à l’exception du champ auquel la règle est appliquée.
 
 Par exemple, en utilisant le type de règle Lorsque , vous pouvez évaluer une condition sur différents objets de formulaire et effectuer l’action suivante :
 
@@ -168,11 +168,11 @@ Action 1 sur Objet A
 
 _
 
-![Champs multiples autorisés dans Lorsque](/help/forms/assets/allowed-multiple-field-when.png)
+![Plusieurs champs autorisés dans When](/help/forms/assets/allowed-multiple-field-when.png)
 
 ##### Considérations lors de l’utilisation de plusieurs champs autorisés dans la fonction de condition Quand
 
-* Assurez-vous que la variable [Le composant principal est défini sur la version 3.0.14 ou ultérieure.](https://github.com/adobe/aem-core-forms-components) pour utiliser cette fonction dans l’éditeur de règles.
+* Assurez-vous que le [composant principal est défini sur la version 3.0.14 ou ultérieure](https://github.com/adobe/aem-core-forms-components) pour utiliser cette fonctionnalité dans l’éditeur de règles.
 * Si des règles sont appliquées à différents champs dans la condition Lorsque , la règle se déclenche même si un seul de ces champs est modifié.
 
 
@@ -196,7 +196,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 Si plusieurs champs autorisés de la fonction de condition Lorsque rencontrent des problèmes, suivez les étapes de dépannage comme suit :
 
 1. Ouvrez le formulaire adaptatif en mode de modification.
-1. Ouvrez l’explorateur de contenu et sélectionnez le **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
+1. Ouvrez l’explorateur de contenu et sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur Terminé et enregistrez à nouveau la boîte de dialogue.
 
@@ -208,13 +208,13 @@ Si plusieurs champs autorisés de la fonction de condition Lorsque rencontrent d
 
 **[!UICONTROL Désactiver]** Désactive l’objet spécifié.
 
-**[!UICONTROL Service Invoke]** Appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous appuyez sur le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire (FDM) sur votre [!DNL Experience Manager] instance. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper des objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié s’affichent. Voir l’exemple de règle pour appeler les services de modèle de données de formulaire (FDM).
+**[!UICONTROL Appeler le service]** : appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous appuyez sur le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire (FDM) sur votre instance [!DNL Experience Manager]. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper des objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié s’affichent. Voir l’exemple de règle pour appeler les services de modèle de données de formulaire (FDM).
 
 Outre le service de modèle de données de formulaire, vous pouvez spécifier une URL WSDL directe pour appeler un service Web. Cependant, un service de modèle de données de formulaire possède de nombreux avantages et l’approche recommandée permettant d’appeler un service.
 
 Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire (FDM), voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
 
-**[!UICONTROL Définir la valeur de]** Calcule et définit la valeur de l’objet spécifié. Vous pouvez définir cette valeur par une chaîne, la valeur d’un autre objet, la valeur calculée avec une expression ou une fonction mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous choisissez l’option de service Web, elle affiche tous les services configurés dans tous les modèles de données de formulaire (FDM) sur votre [!DNL Experience Manager] instance. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper des objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié s’affichent.
+**[!UICONTROL Définir la valeur de]** Calcule et définit la valeur de l’objet spécifié. Vous pouvez définir cette valeur par une chaîne, la valeur d’un autre objet, la valeur calculée avec une expression ou une fonction mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous choisissez l’option de service Web, elle affiche tous les services configurés dans tous les modèles de données de formulaire (FDM) sur votre instance [!DNL Experience Manager]. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper des objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié s’affichent.
 
 Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire (FDM), voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
 
@@ -230,7 +230,7 @@ Le type de règle **[!UICONTROL Définir la propriété]** permet de définir la
 * valid (booléen)
 * errorMessage (chaîne)
 * default (Number, String, Date)
-* enumNames (chaîne)[])
+* enumNames (String[])
 * chartType (chaîne)
 
 Par exemple, il vous permet de définir des règles pour afficher la zone de texte lorsqu’un utilisateur clique sur un bouton. Vous pouvez utiliser une fonction personnalisée, un objet de formulaire, une propriété d’objet ou une sortie de service pour définir une règle.
@@ -251,11 +251,11 @@ La figure suivante illustre un exemple d’activation dynamique de la case à co
 
 **[!UICONTROL Définir la cible d’action]**: définit la cible d’action sur l’objet spécifié.
 
-**[!UICONTROL Envoyer le formulaire]** Envoie le formulaire.
+**[!UICONTROL Submit Form]** Envoie le formulaire.
 
-**[!UICONTROL Réinitialiser]** Réinitialise le formulaire ou l’objet spécifié.
+**[!UICONTROL Reset]** Réinitialise le formulaire ou l’objet spécifié.
 
-**[!UICONTROL Valider]** Valide le formulaire ou l’objet spécifié.
+**[!UICONTROL Validate]** : valide le formulaire ou l’objet spécifié.
 
 **[!UICONTROL Ajouter une instance]** : ajoute une instance de la ligne de panneau ou de tableau répétable spécifiée.
 
@@ -265,7 +265,7 @@ La figure suivante illustre un exemple d’activation dynamique de la case à co
 
 **[!UICONTROL Accéder à]** : accédez à d’autres <!--Interactive Communications,-->formulaires adaptatifs, d’autres ressources, comme des images ou des fragments de document ou une URL externe. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Événement Dispatcher]** Déclenche les actions ou les comportements spécifiques en fonction de conditions ou d’événements prédéfinis.
+**[!UICONTROL Dispatch Event]** déclenche des actions ou des comportements spécifiques en fonction de conditions ou d’événements prédéfinis.
 
 
 ### [!UICONTROL Définir la valeur de] {#set-value-of}
@@ -276,13 +276,17 @@ Notez que le type de règle **Définir la valeur de** n’est pas disponible pou
 
 Définir la valeur d’Objet A sur :
 
-(chaîne ABC) OU (propriété d’objet X de Objet C) OU (valeur d’une fonction) OU (valeur d’une expression mathématique) OU (valeur de sortie d’un service de modèle de données) ;
+(chaîne ABC) OU
+(propriété d’objet X de Objet C) OU
+(valeur d’une fonction) OU
+(valeur d’une expression mathématique) OU
+(valeur de sortie d’un service de modèle de données) ;
 
 Lorsque (facultatif) :
 
 (Condition 1 ET Condition 2 ET Condition 3) est TRUE ;
 
-L’exemple suivant sélectionne la valeur de `Question2` as `True` et définit la valeur de `Result` as `correct`.
+L’exemple suivant sélectionne la valeur de `Question2` en tant que `True` et définit la valeur de `Result` en tant que `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -464,7 +468,7 @@ Le bouton **[!UICONTROL Annuler]** annule tous les changements apportés à une 
 
 ## Règles d’écriture {#write-rules}
 
-Vous pouvez créer des règles à l’aide de l’éditeur de règles visuel. <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+Vous pouvez écrire des règles à l’aide de l’éditeur de règles visuel <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Tout d&#39;abord, examinons l’écriture de règles utilisant l’éditeur visuel.
 
@@ -499,7 +503,7 @@ Pour créer des règles :
 
    ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. Dans le **[!UICONTROL Entrer une chaîne]** dans la règle, sélectionnez **Marié** dans le menu déroulant.
+1. Dans le champ **[!UICONTROL Entrer une chaîne]** de la règle, sélectionnez **Marié** dans le menu déroulant.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -514,12 +518,12 @@ Pour créer des règles :
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
    Définissez ensuite l’action à effectuer si cette condition est False.
-1. Cliquez sur **[!UICONTROL Ajouter une section supplémentaire]** pour ajouter une autre condition pour la variable **[!UICONTROL Salaire du conjoint]** , au cas où vous sélectionneriez État civil comme seul.
+1. Cliquez sur **[!UICONTROL Ajouter une autre section]** pour ajouter une autre condition pour le champ **[!UICONTROL Salaire du conjoint]**, au cas où vous sélectionneriez État civil comme seul.
 
    ![when-else](assets/when-else.png)
 
 
-1. Dans l’instruction Else, sélectionnez **[!UICONTROL Masquer]** de la **[!UICONTROL Sélectionner une action]** menu déroulant.
+1. Dans l’instruction Else, sélectionnez **[!UICONTROL Masquer]** dans la liste déroulante **[!UICONTROL Sélectionner une action]**.
    ![when-else](assets/when-else-1.png)
 
 1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]**, puis le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
@@ -632,7 +636,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Fonctions personnalisées dans l’éditeur de règles {#custom-functions}
 
-Outre les fonctions prêtes à l’emploi telles que *Somme de* qui sont répertoriés sous **Sortie de fonctions**, vous pouvez également utiliser des fonctions personnalisées dans votre éditeur de règles. L’éditeur de règles prend en charge la syntaxe ECMAScript 2019 JavaScript pour les scripts et les fonctions personnalisées. Pour plus d’informations sur la création de fonctions personnalisées, consultez l’article [Fonctions personnalisées dans les formulaires adaptatifs](/help/forms/create-and-use-custom-functions.md).
+Outre les fonctions prêtes à l’emploi telles que *Somme de* répertoriées sous **Fonctions Output**, vous pouvez également utiliser des fonctions personnalisées dans votre éditeur de règles. L’éditeur de règles prend en charge la syntaxe ECMAScript 2019 de JavaScript pour les scripts et les fonctions personnalisées. Pour plus d’informations sur la création de fonctions personnalisées, consultez l’article [Fonctions personnalisées dans les formulaires adaptatifs](/help/forms/create-and-use-custom-functions.md).
 
 <!--
 
@@ -819,11 +823,11 @@ Vous pouvez effectuer les actions suivantes sur les règles :
 * **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle en haut s’exécute en premier, suivie des autres règles du même type. Par exemple, si vous avez les règles Lorsque, Afficher, Activer et Lorsque en première, deuxième, troisième et quatrième positions depuis le haut respectivement, la règle Lorsque du haut est exécutée en premier, suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
 Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](assets/sort-rules.svg) en regard ou la faire glisser et la déposer dans l’ordre souhaité dans la liste.
 
-* **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. Les options de modification et de suppression de la règle s’affichent. Sélectionner **[!UICONTROL Modifier]** pour ouvrir la règle sélectionnée dans l’éditeur de règles <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
+* **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. Les options de modification et de suppression de la règle s’affichent. Sélectionnez **[!UICONTROL Modifier]** pour ouvrir la règle sélectionnée dans l’éditeur de règles <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
 
 * **Supprimer** : pour supprimer une règle, sélectionnez-la puis choisissez **[!UICONTROL Supprimer]**.
 
-* **Activer/Désactiver**: lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et sélectionner **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
+* **Activer/Désactiver** : lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et sélectionner **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
 
 ![Désactiver la règle](assets/disablerule-cc.png)
 

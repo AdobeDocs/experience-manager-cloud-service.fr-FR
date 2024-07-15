@@ -281,7 +281,7 @@ AEM as a Cloud Service fournit trois journaux pour les serveurs web Apache et l
 * Journal des erreurs du serveur web Apache HTTPD
 * Journal de Dispatcher
 
-Ces journaux ne sont disponibles que pour le niveau Publication.
+Ces journaux ne sont disponibles que pour le niveau Publish.
 
 Cet ensemble de journaux fournit des informations sur les requêtes HTTP envoyées au niveau Publication d’AEM as a Cloud Service avant que celles-ci n’atteignent l’application AEM. Il est important de comprendre cela, car, dans l’idéal, la plupart des requêtes HTTP envoyées aux serveurs de niveau Publication sont servies par du contenu mis en cache par le serveur web Apache HTTPD et le Dispatcher AEM, et n’atteignent jamais l’application AEM elle-même. Il n’existe donc aucune instruction de journal pour ces requêtes dans les journaux Java, de requêtes ou des accès d’AEM.
 
@@ -399,7 +399,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 Les niveaux de journal mod_rewrite sont définis par la variable REWRITE_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
 
-Il peut être défini sur Error, Warn, Info, Debug et Trace1 à Trace8, avec la valeur par défaut Warn. Pour déboguer vos RewriteRules, il est recommandé d’augmenter le niveau de journal sur trace2. Il est recommandé de déboguer les règles de réécriture à l’aide de la variable [SDK Dispatcher](../../dispatcher/validation-debug.md). Le niveau de journalisation maximal pour AEM as a Cloud Service est `debug`. Il n’est donc actuellement pas possible de déboguer efficacement les règles de réécriture dans le cloud.
+Il peut être défini sur Error, Warn, Info, Debug et Trace1 à Trace8, avec la valeur par défaut Warn. Pour déboguer vos RewriteRules, il est recommandé d’augmenter le niveau de journal sur trace2. Il est recommandé de déboguer les règles de réécriture à l’aide du [SDK Dispatcher](../../dispatcher/validation-debug.md). Le niveau de journalisation maximal pour AEM as a Cloud Service est de `debug`. Il n’est donc actuellement pas possible de déboguer efficacement les règles de réécriture dans le cloud.
 
 Pour plus d’informations, consultez la [documentation du module mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 ## Journal CDN {#cdn-log}
 
-AEM as a Cloud Service permet d’accéder aux journaux CDN, qui sont utiles pour les cas d’utilisation, notamment l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de le définir sur différents modes tels que les informations, les avertissements ou les erreurs.
+AEM as a Cloud Service donne accès aux journaux CDN, qui sont utiles pour les cas d’utilisation, notamment l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de le définir sur différents modes tels que les informations, les avertissements ou les erreurs.
 
 Les journaux CDN seront transférés vers Splunk pour les nouvelles demandes de ticket de transfert Splunk. Les clients qui ont déjà activé le transfert Splunk pourront ajouter des journaux CDN à l’avenir.
 
@@ -550,7 +550,7 @@ Les journaux CDN sont différents des autres journaux dans la mesure où ils res
 | *status* | Code d’état HTTP sous la forme d’une valeur d’entier. |
 | *res_age* | Durée (en secondes) pendant laquelle une réponse a été mise en cache (dans tous les nœuds). |
 | *pop* | Centre de données du serveur de cache de réseau CDN. |
-| *rules* | Les noms de toute correspondance [règles de filtrage de trafic](/help/security/traffic-filter-rules-including-waf.md) et les indicateurs WAF, indiquant également si la correspondance a entraîné un bloc. Vide si aucune règle ne correspondait. |
+| *rules* | Les noms des [règles de filtre de trafic](/help/security/traffic-filter-rules-including-waf.md) et des indicateurs WAF correspondants, indiquant également si la correspondance a entraîné un bloc. Vide si aucune règle ne correspondait. |
 
 
 ## Comment accéder aux journaux {#how-to-access-logs}
@@ -559,11 +559,11 @@ Les journaux CDN sont différents des autres journaux dans la mesure où ils res
 
 Les journaux AEM as a Cloud Service pour les services cloud sont accessibles par téléchargement via l’interface de Cloud Manager ou en affichant leurs dernières lignes à l’aide de l’interface de ligne de commande Adobe I/O. Pour plus d’informations, voir la [documentation sur la journalisation de Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
-### Journaux des régions de publication supplémentaires {#logs-for-additional-publish-regions}
+### Journaux des régions Publish supplémentaires {#logs-for-additional-publish-regions}
 
-Si d’autres régions de publication sont activées pour un environnement particulier, les journaux de chaque région peuvent être téléchargés à partir de Cloud Manager, comme mentionné ci-dessus.
+Si d’autres régions Publish sont activées pour un environnement particulier, les journaux de chaque région peuvent être téléchargés à partir de Cloud Manager, comme mentionné ci-dessus.
 
-Les journaux d’AEM et de Dispatcher pour les régions de publication supplémentaires spécifient la région dans les 3 premières lettres après l’ID d’environnement, comme illustré par **nld2** dans l’exemple ci-dessous, qui fait référence à une instance de publication AEM supplémentaire située aux Pays-Bas :
+Les journaux d’AEM et de dispatcher pour les régions Publish supplémentaires spécifient la région dans les 3 premières lettres après l’ID d’environnement, comme illustré par **nld2** dans l’exemple ci-dessous, qui fait référence à une instance de publication AEM supplémentaire située aux Pays-Bas :
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

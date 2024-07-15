@@ -22,7 +22,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Possibilité de [restaurer les pages et les sous-pages (arborescences de page) dans une version antérieure](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
-* Capacité à [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans AEM [Éditeur SPA](/help/implementing/developing/hybrid/introduction.md).
+* Possibilité de [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans AEM [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -142,6 +142,6 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 
 * Publication du module AIO-CLI afin d’unifier les outils de refactorisation du code pour permettre aux développeurs d’appeler et d’exécuter ces outils à partir d’un seul emplacement. Voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) pour plus d’informations.
 
-* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Voir [Ressource Git : convertisseur du Dispatcher AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) pour plus d’informations.
+* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Voir [Ressource Git : convertisseur AEM Cloud Service Dispatcher](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) pour plus d’informations.
 
 * Réécriture du convertisseur du Dispatcher dans ` node.js ` et intégration avec le module AIO-CLI.

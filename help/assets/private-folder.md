@@ -31,7 +31,7 @@ Vous pouvez créer un dossier privé dans l’interface utilisateur d’[!DNL Ad
 
 Pour créer et partager un dossier privé :
 
-1. Dans le [!DNL Assets] , cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Dossier]** dans le menu.
+1. Dans la console [!DNL Assets], cliquez sur le bouton **[!UICONTROL Créer]** de la barre d’outils, puis sélectionnez **[!UICONTROL Dossier]** dans le menu.
 
    ![Créer un dossier de ressources](assets/create-folder.png)
 

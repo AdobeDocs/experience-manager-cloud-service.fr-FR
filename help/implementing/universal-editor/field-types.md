@@ -24,7 +24,7 @@ Ce document présente la définition d’un modèle, ainsi que les champs et les
 
 >[!TIP]
 >
->Si vous ne savez pas comment utiliser votre application pour l’éditeur universel, consultez le document . [Présentation d’Universal Editor pour AEM Developers.](/help/implementing/universal-editor/developer-overview.md)
+>Si vous ne savez pas comment utiliser votre application pour l’éditeur universel, consultez le document [Présentation de l’éditeur universel pour AEM développeurs.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Structure de la définition de modèle {#model-structure}
 
@@ -41,9 +41,9 @@ La définition de modèle est une structure JSON, commençant par un tableau de 
 ]
 ```
 
-Voir **[Champs](#fields)** section de ce document pour plus d’informations sur la définition de votre `fields` tableau.
+Pour plus d’informations sur la définition de votre tableau `fields`, reportez-vous à la section **[Fields](#fields)** de ce document.
 
-Pour utiliser la définition de modèle avec un composant, la méthode `data-aue-model` peut être utilisé.
+Pour utiliser la définition de modèle avec un composant, l’attribut `data-aue-model` peut être utilisé.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
@@ -77,7 +77,7 @@ Un objet de champ possède la définition de type suivante.
 | `description` | `FieldDescription` | Description du champ | Non |
 | `placeholder` | `string` | Espace réservé pour le champ | Non |
 | `value` | `FieldValue` | Valeur par défaut | Non |
-| `valueType` | `ValueType` | La validation standard peut être `string`, `string[]`, `number`, `date`, `boolean` | Non |
+| `valueType` | `ValueType` | Validation standard, peut être `string`, `string[]`, `number`, `date`, `boolean` | Non |
 | `required` | `boolean` | Le champ est-il obligatoire ? | Non |
 | `readOnly` | `boolean` | Le champ est-il en lecture seule ? | Non |
 | `hidden` | `boolean` | Le champ est-il masqué par défaut ? | Non |
@@ -93,18 +93,18 @@ Vous trouverez ci-dessous les types de composants que vous pouvez utiliser pour 
 | Description | Type de composant |
 |---|---|
 | [AEM balise](#aem-tag) | `aem-tag` |
-| [Contenu AEM](#aem-content) | `aem-content` |
+| [AEM Contenu](#aem-content) | `aem-content` |
 | [Booléen](#boolean) | `boolean` |
 | [Groupe de cases à cocher](#checkbox-group) | `checkbox-group` |
 | [Conteneur](#container) | `container` |
 | [Fragment de contenu](#content-fragment) | `aem-content-fragment` |
-| [Heure de date](#date-time) | `date-time` |
-| [Multisélection](#multiselect) | `multiselect` |
+| [Date Time](#date-time) | `date-time` |
+| [Multiselect](#multiselect) | `multiselect` |
 | [Nombre](#number) | `number` |
-| [Groupe de cases](#radio-group) | `radio-group` |
+| [Groupe de cases d’option](#radio-group) | `radio-group` |
 | [Référence](#reference) | `reference` |
 | [Texte enrichi](#rich-text) | `richtext` |
-| [Sélectionner](#select) | `select` |
+| [Select](#select) | `select` |
 | [Onglet](#tab) | `tab` |
 | [Texte](#text) | `text` |
 
@@ -114,7 +114,7 @@ Un type de composant de balise AEM active un sélecteur de balise AEM, qui peut 
 
 >[!BEGINTABS]
 
->[!TAB Exemple]
+>[!TAB Sample]
 
 ```json
 {
@@ -142,7 +142,7 @@ Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peu
 
 >[!BEGINTABS]
 
->[!TAB Exemple]
+>[!TAB Sample]
 
 ```json
 {
@@ -222,7 +222,7 @@ Tout comme une valeur booléenne, un type de composant de groupe de cases à coc
 
 >[!BEGINTABS]
 
->[!TAB Exemple]
+>[!TAB Sample]
 
 ```json
 {
@@ -244,7 +244,7 @@ Tout comme une valeur booléenne, un type de composant de groupe de cases à coc
 
 >[!TAB Capture d’écran]
 
-![Capture d’écran du type de composant Groupe de cases à cocher](assets/component-types/checkbox-group.png)
+![Capture d’écran du type de composant de groupe de cases à cocher](assets/component-types/checkbox-group.png)
 
 >[!ENDTABS]
 
@@ -258,7 +258,7 @@ Un type de composant de conteneur permet le regroupement de composants. Il propo
 
 >[!BEGINTABS]
 
->[!TAB Exemple]
+>[!TAB Sample]
 
 ```json
  {
@@ -297,7 +297,7 @@ Un type de composant de conteneur permet le regroupement de composants. Il propo
 
 #### Fragment de contenu {#content-fragment}
 
-Le sélecteur de fragment de contenu peut être utilisé pour sélectionner une [Fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) et ses variations (si nécessaire). Il propose une configuration supplémentaire.
+Le sélecteur de fragment de contenu peut être utilisé pour sélectionner un [fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) et ses variations (si nécessaire). Il propose une configuration supplémentaire.
 
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
@@ -343,7 +343,7 @@ Il propose également un type de validation supplémentaire.
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `customErrorMsg` | `string` | Message qui s’affiche si `valueFormat` n&#39;est pas satisfait | Non |
+| `customErrorMsg` | `string` | Message qui s’affiche si `valueFormat` n’est pas satisfait | Non |
 
 >[!BEGINTABS]
 
@@ -423,7 +423,7 @@ Il propose également un type de validation supplémentaire.
 
 #### Fragment d’expérience {#experience-fragment}
 
-Le sélecteur de fragment d’expérience peut être utilisé pour sélectionner une [Fragment d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) et ses variations (si nécessaire). Il propose une configuration supplémentaire.
+Le sélecteur de fragment d’expérience peut être utilisé pour sélectionner un [fragment d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) et ses variations (si nécessaire). Il propose une configuration supplémentaire.
 
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
@@ -520,7 +520,7 @@ Un type de composant à sélection multiple présente plusieurs éléments à s�
 
 >[!TAB Captures d’écran]
 
-![Capture d’écran du type de composant à sélection multiple](assets/component-types/multiselect.png)
+![Capture d’écran du type de composant multi-select](assets/component-types/multiselect.png)
 ![Capture d’écran du type de composant à sélection multiple avec regroupement](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
@@ -533,7 +533,7 @@ Un type de composant numérique permet la saisie d’un nombre. Il offre des typ
 |---|---|---|---|
 | `numberMin` | `number` | Nombre minimum autorisé | Non |
 | `numberMax` | `number` | Nombre maximal autorisé | Non |
-| `customErrorMsg` | `string` | Message qui s’affiche si `numberMin` ou `numberMax` n&#39;est pas satisfait | Non |
+| `customErrorMsg` | `string` | Message qui s’affichera si `numberMin` ou `numberMax` n’est pas satisfait | Non |
 
 >[!BEGINTABS]
 
@@ -590,7 +590,7 @@ Un type de composant de groupe de cases d’option permet une sélection mutuell
 
 >[!BEGINTABS]
 
->[!TAB Exemple]
+>[!TAB Sample]
 
 ```json
 {
@@ -612,7 +612,7 @@ Un type de composant de groupe de cases d’option permet une sélection mutuell
 
 >[!TAB Capture d’écran]
 
-![Capture d’écran du type de composant Groupe radio](assets/component-types/radio.png)
+![Capture d’écran du type de composant de groupe radio](assets/component-types/radio.png)
 
 >[!ENDTABS]
 
@@ -622,7 +622,7 @@ Un type de composant de référence permet une référence à un autre objet de 
 
 >[!BEGINTABS]
 
->[!TAB Exemple]
+>[!TAB Sample]
 
 ```json
 {
@@ -703,7 +703,7 @@ Un type de composant sélectionné permet de sélectionner une seule option dans
 
 >[!BEGINTABS]
 
->[!TAB Exemple]
+>[!TAB Sample]
 
 ```json
 {
@@ -733,13 +733,13 @@ Un type de composant sélectionné permet de sélectionner une seule option dans
 
 Un type de composant Onglets vous permet de regrouper d’autres champs de saisie sur plusieurs onglets afin d’améliorer l’organisation de la mise en page pour les auteurs.
 
-A `tab` peut être considérée comme un séparateur dans le tableau de `fields`. Tout ce qui vient après une `tab` sera placé sur cet onglet jusqu’à ce qu’un nouveau `tab` se produit, où les éléments suivants seront placés sur le nouvel onglet.
+Une définition `tab` peut être considérée comme un séparateur dans le tableau de `fields`. Tout ce qui suit un `tab` est placé sur cet onglet jusqu’à ce qu’un nouvel `tab` soit rencontré, où les éléments suivants seront placés sur le nouvel onglet.
 
 Si vous souhaitez que les éléments apparaissent au-dessus de tous les onglets, ils doivent être définis avant les onglets.
 
 >[!BEGINTABS]
 
->[!TAB Exemple]
+>[!TAB Sample]
 
 ```json
 {
@@ -786,7 +786,7 @@ Le texte permet une seule ligne de saisie de texte.  Elle comprend des types de 
 | `minLength` | `number` | Nombre minimum de caractères autorisés | Non |
 | `maxLength` | `number` | Nombre maximal de caractères autorisés | Non |
 | `regExp` | `string` | Expression régulière à laquelle le texte d’entrée doit correspondre | Non |
-| `customErrorMsg` | `string` | Message qui s’affiche si `minLength`, `maxLength`, et/ou `regExp` est/sont violées | Non |
+| `customErrorMsg` | `string` | Message qui s’affichera si `minLength`, `maxLength` et/ou `regExp` sont enfreints | Non |
 
 >[!BEGINTABS]
 
@@ -832,6 +832,6 @@ Le texte permet une seule ligne de saisie de texte.  Elle comprend des types de 
 
 >[!TAB Capture d’écran]
 
-![Capture d’écran du type de composant Texte](assets/component-types/simpletext.png)
+![Capture d’écran du type de composant de texte](assets/component-types/simpletext.png)
 
 >[!ENDTABS]

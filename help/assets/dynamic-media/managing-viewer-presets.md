@@ -8,7 +8,7 @@ exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4326'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -384,7 +384,7 @@ Experience Manager affiche une grande variété de paramètres prédéfinis de v
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. Dans la propriété limit, remplacez le nombre par le nombre souhaité, par exemple : `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Dans la propriété de limite, remplacez le nombre par le nombre souhaité, par exemple, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
 1. Sélectionnez **[!UICONTROL Enregistrer tout]**.
 
 ## Création de paramètres prédéfinis de visionneuse {#creating-a-new-viewer-preset}

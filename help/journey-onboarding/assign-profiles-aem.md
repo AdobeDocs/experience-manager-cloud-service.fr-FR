@@ -102,7 +102,7 @@ L’utilisateur que vous avez ajouté aura désormais accès aux services de cr�
 
 ## Fin du parcours ? {#the-end}
 
-Félicitations ! Les utilisateurs que vous avez affectés aux profils de produit AEM as a Cloud Service sont maintenant prêts à accéder à l’environnement de création AEM et à commencer à créer du contenu avec AEM as a Cloud Service. De même, les développeurs peuvent désormais accéder à Cloud Manager pour utiliser Git afin de stocker le code d’application personnalisé et de le déployer. Ainsi, votre parcours d’intégration est terminé et vos utilisateurs peuvent désormais se servir d’AEMaaCS.
+Félicitations. Les utilisateurs que vous avez affectés aux profils de produit AEM as a Cloud Service sont maintenant prêts à accéder à l’environnement de création AEM et à commencer à créer du contenu avec AEM as a Cloud Service. De même, les développeurs peuvent désormais accéder à Cloud Manager pour utiliser Git afin de stocker le code d’application personnalisé et de le déployer. Ainsi, votre parcours d’intégration est terminé et vos utilisateurs peuvent désormais se servir d’AEMaaCS.
 
 Cependant, si vous souhaitez mieux comprendre comment les créateurs et les développeurs utilisent le système, vous pouvez continuer avec deux parties facultatives de ce parcours d’intégration :
 

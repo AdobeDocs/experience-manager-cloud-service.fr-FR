@@ -67,7 +67,7 @@ Les résultats de la recherche conjuguent les ressources vidéo avec des mots-cl
 
 ## Modération des balises intelligentes des vidéos {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] permet de traiter les balises intelligentes pour :
+[!DNL Adobe Experience Manager] vous permet de traiter les balises intelligentes pour :
 
 * Supprimer les balises inexactes attribuées aux vidéos de votre marque.
 

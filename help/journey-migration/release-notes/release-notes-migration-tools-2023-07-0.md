@@ -33,4 +33,4 @@ La date de publication de l’analyseur des bonnes pratiques v2.1.42 est le 6 ju
 ### Correctifs {#bug-fixes-bpa}
 
 * Le BPA a été amélioré afin d’éviter les échecs de génération de rapports en mémoire insuffisante pour les rapports avec un grand nombre de résultats.
-* La BPA a été améliorée afin de détecter les caractères d’échappement dans les chemins d’accès afin d’éviter les échecs d’assimilation de contenu lors de la migration du contenu vers AEM as a Cloud Service.
+* L’application d’une seule page (BPA) a été améliorée afin de détecter les caractères d’échappement dans les chemins d’accès afin d’éviter les échecs d’ingestion de contenu lors de la migration de contenu vers AEM as a Cloud Service.

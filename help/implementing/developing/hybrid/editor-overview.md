@@ -27,9 +27,9 @@ La prise en charge des applications sur une seule page dans AEM s’accompagne d
 
 Pour plus d’informations sur SPA dans AEM, voir :
 
-* [Blueprint SPA](blueprint.md) pour les exigences techniques d’un SPA.
-* [Prise en main de SPA dans AEM avec React](getting-started-react.md) pour une visite rapide d’un SPA simple avec React.
-* [Prise en main de SPA dans AEM avec Angular](getting-started-angular.md) pour une visite rapide d&#39;un SPA simple avec Angular.
+* [SPA Blueprint](blueprint.md) pour connaître les exigences techniques d’un SPA.
+* [Prise en main d’SPA dans AEM avec React](getting-started-react.md) pour une présentation rapide d’un simple  à l’aide de React.
+* [Prise en main de SPA dans AEM avec Angular](getting-started-angular.md) pour une présentation rapide d’un simple  avec Angular.
 
 ## Conception {#design}
 
@@ -187,6 +187,6 @@ Le SDK de l’éditeur de SPA d’AEM est entièrement pris en charge par Adobe 
 * Modifier les configurations (écouteurs, par exemple)
 * Annuler/rétablir
 * Outil de comparaison des pages et déformation temporelle
-* Fonctionnalités de réécriture de HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.
+* Fonctionnalités de réécriture d’HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.
 * Mode Développeur
 * Lancements AEM

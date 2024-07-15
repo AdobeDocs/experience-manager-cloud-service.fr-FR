@@ -64,7 +64,7 @@ Une stratégie similaire peut être utilisée pour conserver le résultat dans u
 
 La documentation d’Oak fournit une [présentation générale de l’exécution des requêtes.](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) C’est la base de toutes les activités d’optimisation décrites dans ce document.
 
-AEM as a Cloud Service fournit la variable [Outil Performances des requêtes](#query-performance-tool), conçu pour prendre en charge l’implémentation de requêtes efficaces.
+AEM as a Cloud Service fournit l’ [ outil de performance de requête ](#query-performance-tool), conçu pour prendre en charge l’implémentation de requêtes efficaces.
 
 * Il affiche les requêtes déjà exécutées avec leurs caractéristiques de performance appropriées et leur plan de requête.
 * Il permet d’exécuter des requêtes ad hoc à différents niveaux, en commençant par afficher le plan de requête jusqu’à l’exécution de la requête complète.
@@ -87,7 +87,7 @@ La contrainte principale sur toute requête doit être une correspondance de pro
 
 Le moteur de requête ne prend en compte qu’un seul index. Cela signifie qu’un index existant peut et doit être personnalisé en y ajoutant d’autres propriétés d’index personnalisées.
 
-La variable [Aide-mémoire pour les requêtes JCR](#jcr-query-cheatsheet) la section de ce document répertorie les contraintes disponibles et décrit également l’aspect qu’une définition d’index doit avoir pour être récupérée. Utilisez l’[outil Performances des requêtes](#query-performance-tool) pour tester la requête et vous assurer que l’index approprié est utilisé et que le moteur de requête n’a pas besoin d’évaluer les contraintes en dehors de l’index.
+La section [ JCR Query cheatsheet](#jcr-query-cheatsheet) de ce document répertorie les contraintes disponibles et décrit également la manière dont une définition d’index doit avoir l’air pour être récupérée. Utilisez l’[outil Performances des requêtes](#query-performance-tool) pour tester la requête et vous assurer que l’index approprié est utilisé et que le moteur de requête n’a pas besoin d’évaluer les contraintes en dehors de l’index.
 
 ### Commande {#ordering}
 
@@ -107,16 +107,16 @@ Cela signifie également que la taille du jeu de résultats ne peut être déter
 
 Une telle limite empêche également le moteur de requête de consulter la **limite de traversée** de 100 000 nœuds, ce qui entraîne un arrêt forcé de la requête.
 
-Voir la section [Requêtes avec des jeux de résultats volumineux](#queries-with-large-result-sets) de ce document si un jeu de résultats potentiellement important doit être traité complètement.
+Consultez la section [Requêtes avec des jeux de résultats volumineux](#queries-with-large-result-sets) de ce document si un jeu de résultats potentiellement volumineux doit être traité complètement.
 
 ## Outil Performances des requêtes {#query-performance-tool}
 
-L’outil de performance de requête (situé à l’adresse `/libs/granite/operations/content/diagnosistools/queryPerformance.html` et disponible via le [Developer Console dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries)) fournit -
+L’outil de performance de requête (situé à l’emplacement `/libs/granite/operations/content/diagnosistools/queryPerformance.html` et disponible via [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries)) fournit -
 * Liste de toutes les &quot;requêtes lentes&quot; ; actuellement définies comme étant celles qui lisent/analysent plus de 5 000 lignes.
 * Une liste de &quot;Requêtes populaires&quot;
 * L’outil &quot;Expliquer la requête&quot; pour comprendre comment une requête particulière sera exécutée par Oak.
 
-![Outil Performances des requêtes](assets/query-performance-tool.png)
+![Outil de performance de requête](assets/query-performance-tool.png)
 
 Les tables &quot;Requêtes lentes&quot; et &quot;Requêtes populaires&quot; incluent -
 * L’instruction de requête elle-même.
@@ -128,37 +128,37 @@ Les tables &quot;Requêtes lentes&quot; et &quot;Requêtes populaires&quot; incl
    * Lecture : indiquant qu’une ligne a été incluse dans un jeu de résultats.
    * Analysé : indiquant qu’une ligne a été incluse dans les résultats de la requête d’index sous-jacente (dans le cas d’une requête indexée) ou lue à partir du magasin de noeuds (dans le cas d’une traversée du référentiel).
 
-Ces tables permettent d’identifier les requêtes qui ne sont pas entièrement indexées (voir [Utilisation d’un index](#use-an-index) ou lisent trop de noeuds (voir également [Traverse du référentiel](#repository-traversal) et [Traverse d’index](#index-traversal)). De telles requêtes seront mises en évidence, avec les zones de préoccupation appropriées indiquées en rouge.
+Ces tables permettent d’identifier les requêtes qui ne sont pas entièrement indexées (voir [Utiliser un index](#use-an-index) ou lire trop de noeuds (voir aussi [Repository Traversal](#repository-traversal) et [Index Traversal](#index-traversal)). De telles requêtes seront mises en évidence, avec les zones de préoccupation appropriées indiquées en rouge.
 
-La variable `Reset Statistics` est fournie pour supprimer toutes les statistiques existantes collectées dans les tables. Cela permet l&#39;exécution d&#39;une requête particulière (soit via l&#39;application elle-même, soit via l&#39;outil Explain Query ) et l&#39;analyse des statistiques d&#39;exécution.
+L’option `Reset Statistics` est fournie pour supprimer toutes les statistiques existantes collectées dans les tables. Cela permet l&#39;exécution d&#39;une requête particulière (soit via l&#39;application elle-même, soit via l&#39;outil Explain Query ) et l&#39;analyse des statistiques d&#39;exécution.
 
 ### Expliquer la requête
 
-L’outil Expliquer la requête permet aux développeurs de comprendre le plan d’exécution de la requête (voir [Lecture du plan d’exécution de la requête](#reading-query-execution-plan)), y compris les détails des index utilisés lors de l’exécution de la requête. Vous pouvez l’utiliser pour comprendre l’efficacité avec laquelle une requête est indexée pour prédire ou pour analyser rétrospectivement ses performances.
+L’outil Expliquer la requête permet aux développeurs de comprendre le plan d’exécution de la requête (voir [ Lecture du plan d’exécution de la requête ](#reading-query-execution-plan)), y compris les détails de tous les index utilisés lors de l’exécution de la requête. Vous pouvez l’utiliser pour comprendre l’efficacité avec laquelle une requête est indexée pour prédire ou pour analyser rétrospectivement ses performances.
 
 #### Expliquer une requête
 
 Pour expliquer une requête, procédez comme suit :
 
-* Sélectionnez la langue de requête appropriée à l’aide du `Language` liste déroulante.
-* Saisissez l’instruction de requête dans le champ `Query` champ .
+* Sélectionnez la langue de requête appropriée à l’aide de la liste déroulante `Language` .
+* Saisissez l’instruction de requête dans le champ `Query` .
 * Si nécessaire, cochez les cases fournies pour indiquer comment la requête sera exécutée.
    * Par défaut, les requêtes JCR n’ont pas besoin d’être exécutées pour identifier le plan d’exécution de la requête (ce n’est pas le cas pour les requêtes QueryBuilder).
    * Trois options sont proposées pour exécuter la requête :
-      * `Include Execution Time` - exécutez la requête, mais ne tentez pas de lire les résultats.
-      * `Read first page of results` - exécuter la requête et lire la première &quot;page&quot; de 20 résultats (réplication des bonnes pratiques d’exécution des requêtes).
-      * `Include Node Count` - exécuter la requête et lire l&#39;ensemble des résultats (ce qui n&#39;est généralement pas conseillé - voir [Traverse d’index](#index-traversal)).
+      * `Include Execution Time` - Exécutez la requête, mais n’essayez de lire aucun résultat.
+      * `Read first page of results` - Exécutez la requête et lisez la première &quot;page&quot; de 20 résultats (réplication des bonnes pratiques d’exécution des requêtes).
+      * `Include Node Count` - Exécutez la requête et lisez l’ensemble du jeu de résultats (en général, ce n’est pas conseillé - voir [Index Traversal](#index-traversal)).
 
 #### Fenêtre contextuelle Explication de requête {#query-explanation-popup}
 
-![Fenêtre contextuelle Explication de requête](./assets/query-explanation-popup.png)
+![Fenêtre contextuelle d’explication de requête](./assets/query-explanation-popup.png)
 
-Après avoir sélectionné `Explain`, une fenêtre contextuelle s’affiche pour l’utilisateur décrivant le résultat de l’explication de la requête (et l’exécution, le cas échéant).
+Après avoir sélectionné `Explain`, une fenêtre contextuelle décrivant le résultat de l’explication de la requête (et de l’exécution, le cas échéant) s’affiche pour l’utilisateur.
 Cette fenêtre contextuelle comprend des détails sur -
-* Index utilisés lors de l’exécution de la requête (ou aucun index si la requête est exécutée à l’aide de [Traverse du référentiel](#repository-traversal)).
-* Le temps d’exécution (si `Include Execution Time` case à cocher cochée) et le nombre de résultats lus (si `Read first page of results` ou `Include Node Count` cochez les cases ).
-* Le plan d’exécution, permettant une analyse détaillée de l’exécution de la requête - voir [Lecture du plan d’exécution de la requête](#reading-query-execution-plan) pour savoir comment interpréter cela.
-* Chemins des 20 premiers résultats de la requête (si `Read first page of results` case à cocher cochée)
+* Index utilisés lors de l’exécution de la requête (ou aucun index si la requête est exécutée à l’aide de [Repository Traversal](#repository-traversal)).
+* La durée d’exécution (si la case `Include Execution Time` était cochée) et le nombre de résultats lus (si les cases `Read first page of results` ou `Include Node Count` étaient cochées).
+* Le plan d’exécution, qui permet une analyse détaillée de l’exécution de la requête. Voir [Lecture du plan d’exécution de la requête](#reading-query-execution-plan) pour savoir comment interpréter cela.
+* Chemins des 20 premiers résultats de la requête (si la case `Read first page of results` a été cochée)
 * Les logs complets de la planification des requêtes, indiquant les coûts relatifs des index pris en compte pour l&#39;exécution de cette requête (l&#39;index avec le coût le plus bas sera celui choisi).
 
 #### Lecture du plan d’exécution de la requête {#reading-query-execution-plan}
@@ -174,9 +174,9 @@ Examinez la requête suivante :
 ...qui contient -
 * 3 restrictions
    * Type de noeud (`dam:Asset`)
-   * Chemin (descendants) `/content/dam`)
+   * Chemin (descendants de `/content/dam`)
    * Propriété (`jcr:content/metadata/dc:title = "My Title"`)
-* Classement par `jcr:created` property
+* Commande par la propriété `jcr:created`
 
 L’explication de cette requête entraîne le plan suivant :
 
@@ -192,18 +192,18 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 
 Cette section du plan stipule que :
 * Un index est utilisé pour exécuter cette requête.
-   * Dans ce cas, l’index Lucene `/oak:index/damAssetLucene-9` est utilisé. Les informations restantes sont donc indiquées dans la syntaxe de requête Lucene.
+   * Dans ce cas, l’index Lucene `/oak:index/damAssetLucene-9` sera utilisé. Les informations restantes se trouvent donc dans la syntaxe de requête Lucene.
 * Les 3 restrictions sont gérées par l’index :
    * Restriction du type de noeud
-      * implicite, car `damAssetLucene-9` répertorie uniquement les noeuds de type dam:Asset.
+      * implicite, car `damAssetLucene-9` indexe uniquement les noeuds de type dam:Asset.
    * Restriction de chemin
       * car `+:ancestors:/content/dam` apparaît dans la requête Lucene.
    * Restriction des propriétés
       * car `+jcr:content/metadata/dc:title:My Title` apparaît dans la requête Lucene.
 * L’ordre est géré par l’index.
-   * car `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]`  apparaît dans la requête Lucene.
+   * car `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]` apparaît dans la requête Lucene.
 
-Une telle requête est susceptible de fonctionner correctement, puisque les résultats renvoyés par la requête d’index ne seront pas filtrés davantage dans le moteur de requête (mis à part le filtrage du contrôle d’accès). Cependant, il est toujours possible qu’une telle requête s’exécute lentement si les bonnes pratiques ne sont pas suivies. Voir [Traverse d’index](#index-traversal) ci-dessous
+Une telle requête est susceptible de fonctionner correctement, puisque les résultats renvoyés par la requête d’index ne seront pas filtrés davantage dans le moteur de requête (mis à part le filtrage du contrôle d’accès). Cependant, il est toujours possible qu’une telle requête s’exécute lentement si les bonnes pratiques ne sont pas suivies. Voir [Index Traversal](#index-traversal) ci-dessous.
 
 Considérer une requête différente -
 
@@ -214,9 +214,9 @@ Considérer une requête différente -
 ...qui contient -
 * 3 restrictions
    * Type de noeud (`dam:Asset`)
-   * Chemin (descendants) `/content/dam`)
+   * Chemin (descendants de `/content/dam`)
    * Propriété (`jcr:content/metadata/myProperty = "My Property Value"`)
-* Classement par `jcr:created` property**
+* Commande par la propriété `jcr:created`**
 
 L’explication de cette requête entraîne le plan suivant :
 
@@ -233,17 +233,17 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 Cette section du plan stipule que :
 * Seules 2 (sur 3) restrictions sont traitées par l’index :
    * Restriction du type de noeud
-      * implicite, car `damAssetLucene-9` répertorie uniquement les noeuds de type dam:Asset.
+      * implicite, car `damAssetLucene-9` indexe uniquement les noeuds de type dam:Asset.
    * Restriction de chemin
       * car `+:ancestors:/content/dam` apparaît dans la requête Lucene.
-* Restriction des propriétés `jcr:content/metadata/myProperty = "My Property Value"` n’est pas exécuté à l’index, mais sera appliqué en tant que moteur de requête filtrant sur les résultats de la requête Lucene sous-jacente.
-   * Ceci est dû au fait que `+jcr:content/metadata/myProperty:My Property Value` n’apparaît pas dans la requête Lucene, car cette propriété n’est pas indexée dans la variable `damAssetLucene-9` index utilisé pour cette requête.
+* La restriction de propriété `jcr:content/metadata/myProperty = "My Property Value"` n’est pas exécutée à l’index, mais sera plutôt appliquée en tant que filtrage Query Engine sur les résultats de la requête Lucene sous-jacente.
+   * En effet, `+jcr:content/metadata/myProperty:My Property Value` n’apparaît pas dans la requête Lucene, car cette propriété n’est pas indexée dans l’index `damAssetLucene-9` utilisé pour cette requête.
 
-Ce plan d’exécution de requête génère chaque ressource sous `/content/dam` à partir de l’index, puis filtré davantage par le moteur de requête (qui inclura uniquement ceux correspondant à la restriction de propriété non indexée dans le jeu de résultats).
+Ce plan d’exécution de requête entraîne la lecture de chaque ressource sous `/content/dam` à partir de l’index, puis le filtrage par le moteur de requête (qui inclut uniquement celles correspondant à la restriction de propriété non indexée dans le jeu de résultats).
 
-Même si seulement un faible pourcentage de ressources correspond à la restriction `jcr:content/metadata/myProperty = "My Property Value"`, la requête doit lire un grand nombre de noeuds pour (tenter) remplir la &quot;page&quot; de résultats demandée. Cela peut entraîner une requête peu performante, qui s’affichera comme ayant une faible valeur `Read Optimization` score dans l’outil de performances des requêtes) et peut entraîner des messages AVERTISSEMENT indiquant que de grands nombres de noeuds sont parcourus (voir [Traverse d’index](#index-traversal)).
+Même si un faible pourcentage de ressources correspond à la restriction `jcr:content/metadata/myProperty = "My Property Value"`, la requête doit lire un grand nombre de noeuds pour (tenter) remplir la &quot;page&quot; de résultats demandée. Cela peut entraîner une requête peu performante, qui s’affichera comme ayant un score `Read Optimization` faible dans l’outil Performances des requêtes) et peut entraîner des messages WARN indiquant qu’un grand nombre de noeuds sont parcourus (voir [Index Traversal](#index-traversal)).
 
-Pour optimiser les performances de cette seconde requête, créez une version personnalisée du `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) et ajoutez la définition de propriété suivante :
+Pour optimiser les performances de cette seconde requête, créez une version personnalisée de l’index `damAssetLucene-9` (`damAssetLucene-9-custom-1`) et ajoutez la définition de propriété suivante :
 
 ```
 "myProperty": {
@@ -263,22 +263,22 @@ Il contient des exemples de requêtes pour QueryBuilder, XPath et SQL-2, couvran
 
 Vous trouverez ci-dessous quelques bonnes pratiques à prendre en compte lors de la définition ou de l’extension d’index.
 
-* Pour les types de noeuds qui comportent des index existants (tels que `dam:Asset` ou `cq:Page`) préfèrent l’extension des index prêts à l’emploi à l’ajout de nouveaux index.
-   * L’ajout de nouveaux index, notamment des index de texte intégral, sur le `dam:Asset` Le type de noeud est fortement déconseillé (voir [cette note](/help/operations/indexing.md##index-names-index-names)).
+* Pour les types de noeuds ayant des index existants (tels que `dam:Asset` ou `cq:Page`), préférez l’extension des index prêts à l’emploi à l’ajout de nouveaux index.
+   * Il est vivement déconseillé d’ajouter de nouveaux index (notamment des index en texte intégral) sur le type de noeud `dam:Asset` (voir [cette note](/help/operations/indexing.md##index-names-index-names)).
 * Lors de l’ajout de nouveaux index
    * Définissez toujours des index de type &quot;lucene&quot;.
-   * Utilisez une balise d’index dans la définition d’index (et la requête associée) et `selectionPolicy = tag` pour s’assurer que l’index n’est utilisé que pour les requêtes prévues.
-   * Assurez-vous que `queryPaths` et `includedPaths` sont fournies (généralement avec les mêmes valeurs).
-   * Utilisation `excludedPaths` pour exclure les chemins qui ne contiendront pas de résultats utiles.
-   * Utilisation `analyzed` propriétés uniquement lorsque cela est nécessaire, par exemple lorsque vous devez utiliser une restriction de requête en texte intégral uniquement pour cette propriété.
-   * Toujours spécifier `async = [ async, nrt ] `, `compatVersion = 2` et `evaluatePathRestrictions = true`.
-   * Spécification uniquement `nodeScopeIndex = true` si vous avez besoin d’un index de texte intégral nodescope.
+   * Utilisez une balise d’index dans la définition d’index (et la requête associée) et `selectionPolicy = tag` pour vous assurer que l’index n’est utilisé que pour les requêtes prévues.
+   * Assurez-vous que `queryPaths` et `includedPaths` sont fournis (généralement avec les mêmes valeurs).
+   * Utilisez `excludedPaths` pour exclure les chemins qui ne contiendront pas de résultats utiles.
+   * Utilisez les propriétés `analyzed` uniquement lorsque cela est nécessaire, par exemple, lorsque vous devez utiliser une restriction de requête en texte intégral uniquement pour cette propriété.
+   * Spécifiez toujours `async = [ async, nrt ] `, `compatVersion = 2` et `evaluatePathRestrictions = true`.
+   * Indiquez uniquement `nodeScopeIndex = true` si vous avez besoin d’un index de texte intégral nodescope.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Documentation de l’index Lucene Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+>Pour plus d’informations, voir la [documentation de l’index Lucene Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-Les vérifications de pipeline d’Automated Cloud Manager appliqueront certaines des bonnes pratiques décrites ci-dessus.
+Les contrôles automatisés du pipeline Cloud Manager appliqueront certaines des bonnes pratiques décrites ci-dessus.
 
 ## Requêtes avec jeux de résultats volumineux {#queries-with-large-result-sets}
 
@@ -304,7 +304,7 @@ Grâce à ces informations, il est possible d’optimiser cette requête à l’
 
 ### Traverse d’index {#index-traversal}
 
-Les requêtes qui utilisent un index, mais qui lisent toujours un grand nombre de noeuds, sont enregistrées avec un message similaire à ce qui suit (notez le terme `Index-Traversed` plutôt que `Traversed`).
+Les requêtes qui utilisent un index, mais qui lisent toujours un grand nombre de noeuds sont enregistrées avec un message similaire à ce qui suit (notez le terme `Index-Traversed` plutôt que `Traversed`).
 
 ```text
 05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
@@ -323,11 +323,11 @@ Cela peut se produire pour plusieurs raisons :
 
 | Cause | Atténuation |
 |----------|--------------|
-| La Commission de `p.guessTotal` (ou l’utilisation d’un paramètre guessTotal très volumineux) provoquant l’itération de QueryBuilder sur un grand nombre de résultats comptant les résultats. | Fournir `p.guessTotal` avec une valeur appropriée |
-| Utilisation d’une limite importante ou illimitée dans Query Builder (c’est-à-dire `p.limit=-1`) | Utilisez la valeur appropriée pour `p.limit` (idéalement, 1 000 ou moins) |
+| L’omission de `p.guessTotal` (ou l’utilisation d’un paramètre guessTotal très important) entraîne QueryBuilder à itérer un grand nombre de résultats comptant les résultats. | Fournir à `p.guessTotal` une valeur appropriée |
+| Utilisation d’une limite importante ou illimitée dans Query Builder (c’est-à-dire `p.limit=-1`) | Utilisez une valeur appropriée pour `p.limit` (idéalement 1 000 ou moins). |
 | Utilisation d’un prédicat de filtrage dans Query Builder qui filtre un grand nombre de résultats de la requête JCR sous-jacente | Remplacer les prédicats de filtrage par des restrictions qui peuvent être appliquées dans la requête JCR sous-jacente |
 | Utilisation d’un tri basé sur un comparateur dans QueryBuilder | Remplacez par un ordre basé sur les propriétés dans la requête JCR sous-jacente (à l’aide de propriétés indexées selon l’ordre). |
 | Filtrage d’un grand nombre de résultats en raison du contrôle d’accès | Appliquez une propriété indexée supplémentaire ou une restriction de chemin à la requête pour refléter le contrôle d’accès. |
-| Utilisation de la &quot;pagination décalée&quot; avec un décalage important | Envisager d’utiliser [Pagination du clavier](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
-| Itération d’un nombre de résultats important ou illimité | Envisager d’utiliser [Pagination du clavier](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Utilisation de la &quot;pagination décalée&quot; avec un décalage important | Pensez à utiliser [Pagination du jeu de clés](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Itération d’un nombre de résultats important ou illimité | Pensez à utiliser [Pagination du jeu de clés](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
 | Index incorrect sélectionné | Utilisez des balises dans la définition de requête et d’index pour vous assurer que l’index attendu est utilisé. |

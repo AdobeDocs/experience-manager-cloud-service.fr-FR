@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
 source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '260'
+ht-degree: 0%
 
 ---
 
@@ -28,8 +28,8 @@ Vous pouvez demander un rapport d’erreur une fois par mois pour une société 
 
 **Pour demander un rapport d’erreur pour les URL de diffusion Dynamic Media qui échouent :**
 
-1. [Envoyez un email à reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) par le nom de la société associée à votre compte Dynamic Media.
+1. [Envoyez un courrier électronique à reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) avec le nom de la société associée à votre compte Dynamic Media.
 
-   Si vous ne connaissez pas le nom de l’entreprise, reportez-vous à la section [Configuration Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr#configuring-dynamic-media-cloud-services) page **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuration de Dynamic Media]**. Sur la page du navigateur de configuration Dynamic Media, cliquez sur **[!UICONTROL global]**, sélectionnez la variable *[Dynamic_Media_folder_icon]* , puis sélectionnez **[!UICONTROL Modifier]**. Vous devez disposer des droits d’administrateur dans AEM pour accéder à la page de configuration de Dynamic Media.
+   Si vous ne connaissez pas le nom de l’entreprise, consultez la page [Configuration Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr#configuring-dynamic-media-cloud-services) dans **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuration Dynamic Media]**. Sur la page du navigateur de configuration Dynamic Media, cliquez sur **[!UICONTROL global]**, cochez la case *[Icône_dossier_Dynamic_Media]*, puis sélectionnez **[!UICONTROL Modifier]**. Vous devez disposer des droits d’administrateur dans AEM pour accéder à la page de configuration de Dynamic Media.
 
-   ![Accès à la page Configuration de Dynamic Media .](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
+   ![Accès à la page de configuration de Dynamic Media.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

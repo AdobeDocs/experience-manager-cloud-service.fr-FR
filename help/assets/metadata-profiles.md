@@ -27,8 +27,8 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**, puis cliquez sur **[!UICONTROL Créer]**.
-1. Saisissez un titre pour le profil de métadonnées, par exemple, Exemples de métadonnées, puis sélectionnez **[!UICONTROL Envoyer]**. La page Modifier le formulaire pour le profil de métadonnées s’affiche.
-1. Cliquez sur un composant et configurez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**. Par exemple, cliquez sur le bouton **[!UICONTROL Description]** et modifiez ses propriétés.
+1. Saisissez un titre pour le profil de métadonnées, par exemple, Exemple de métadonnées, et sélectionnez **[!UICONTROL Envoyer]**. La page Modifier le formulaire pour le profil de métadonnées s’affiche.
+1. Cliquez sur un composant et configurez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**. Par exemple, cliquez sur le composant **[!UICONTROL Description]** et modifiez ses propriétés.
 Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]** :
 
    * **[!UICONTROL Libellé du champ]** : nom sous lequel s’affiche la propriété des métadonnées. Il est uniquement disponible à titre de référence.
@@ -90,7 +90,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 1. Accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à appliquer à un ou à plusieurs dossiers.
-1. Cliquez sur **[!UICONTROL Application d’un profil de métadonnées à des dossiers]** et sélectionnez le ou les dossiers que vous souhaitez utiliser pour recevoir les ressources récemment chargées, puis cliquez sur **[!UICONTROL Terminé]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Cliquez sur **[!UICONTROL Appliquer le profil de métadonnées aux dossiers]** et sélectionnez le ou les dossiers que vous souhaitez utiliser pour recevoir les ressources nouvellement chargées, puis cliquez sur **[!UICONTROL Terminé]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 #### Application de profils de métadonnées aux dossiers à partir des propriétés {#applying-metadata-profiles-to-folders-from-properties}
 
@@ -108,7 +108,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 * Accédez à `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` et appliquez le profil approprié, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
-* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajouter la propriété `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Cliquez sur **Enregistrer tout**.
+* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Cliquez sur **Enregistrer tout**.
 
 ## Suppression d’un profil de métadonnées d’un dossier {#removing-a-metadata-profile-from-folders}
 
@@ -120,7 +120,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 1. Cliquez sur le logo Experience Manager et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
-1. Cliquez sur **[!UICONTROL Suppression d’un profil de métadonnées d’un dossier]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer un profil, puis cliquez sur **[!UICONTROL Terminé]**.
+1. Cliquez sur **[!UICONTROL Supprimer le profil de métadonnées des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer un profil, puis cliquez sur **[!UICONTROL Terminé]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil de métadonnées n’est plus appliqué à un dossier.
 

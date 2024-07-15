@@ -49,4 +49,4 @@ dig TXT _aemverification.example.com -t txt
 
 >[!TIP]
 >
->Il existe plusieurs [Outils de recherche DNS](https://www.ultratools.com/tools/dnsLookup) disponible. Le DoH Google peut être utilisé pour rechercher des entrées d’enregistrement TXT et déterminer si l’enregistrement TXT est manquant ou erroné.
+>Plusieurs [outils de recherche DNS](https://www.ultratools.com/tools/dnsLookup) sont disponibles. Le DoH Google peut être utilisé pour rechercher des entrées d’enregistrement TXT et déterminer si l’enregistrement TXT est manquant ou erroné.

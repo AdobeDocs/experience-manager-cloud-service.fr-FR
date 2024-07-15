@@ -11,7 +11,7 @@ exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
 source-git-commit: 973cec704b5e8f34e3b2c448fc10e09226ffa933
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -52,15 +52,15 @@ Dynamic Media ne prend pas en charge les combinaisons de navigateur web et de s
 * Safari 8 + iOS 8.4
 * Safari 8 + OS X 10.10 Yosemite
 
-## Fin de la prise en charge de Secure Socket Layer 2.0 et 3.0 et de Transport Layer Security 1.0 et 1.1. {#tls}
+## Fin de la prise en charge de Secure Socket Layer 2.0 et 3.0 et de Transport Layer Security 1.0 et 1.1. {#tls}
 
 <!-- CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-À compter du 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
+À compter du 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
 
-* SSL (Secure Socket Layer) 2.0
-* SSL 3.0
+* SSL (Secure Socket Layer) 2.0
+* SSL 3.0
 * TLS (Transport Layer Security) 1.0 et 1.1
 * Les chiffrements faibles suivants dans TLS 1.2 :
    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`

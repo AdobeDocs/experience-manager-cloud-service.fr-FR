@@ -20,11 +20,11 @@ Utilisez la fonction Arborescence de structure de l’éditeur de fragments de c
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ).
+>Il existe deux éditeurs pour la création de fragments de contenu. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**. Pour plus d’informations sur le nouvel éditeur, voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), (principalement accessible à partir de la console **Fragments de contenu**).
 
 Dans l’éditeur de fragments de contenu, vous pouvez sélectionner l’icône d’arborescence de structure :
 
-![Arborescence de la structure de fragment de contenu dans le panneau latéral](assets/cfm-structuretree-01.png)
+![Arborescence de structure de fragment de contenu dans le panneau latéral](assets/cfm-structuretree-01.png)
 
 Cette opération ouvre une représentation de la structure du fragment dans le volet de gauche. Vous pouvez ainsi parcourir et atteindre les fragments référencés. La sélection d’une référence ouvre ce fragment en vue de le modifier.
 

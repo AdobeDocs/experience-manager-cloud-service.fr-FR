@@ -19,7 +19,7 @@ Découvrez les puissantes fonctionnalités du panneau Site pour vous aider à pe
 
 ## Vue d’ensemble {#overview}
 
-Le panneau Site vous permet de gérer le thème et les ressources de modèle de votre site. [Comme d’autres panneaux](/help/sites-cloud/authoring/sites-console/console-side-panel.md) (Arborescence de contenu, Références ou Chronologie, par exemple), le panneau Site s’affiche en tant que panneau le plus à gauche de la console Sites, affichant des informations sur l’élément sélectionné. Contrairement aux autres panneaux, le panneau Site s’applique uniquement aux racines du site.
+Le panneau Site vous permet de gérer le thème et les ressources de modèle de votre site. [Comme les autres panneaux](/help/sites-cloud/authoring/sites-console/console-side-panel.md) tels que l’arborescence de contenu, les références ou les panneaux Chronologie, le panneau Site s’affiche en tant que panneau le plus à gauche de la console Sites, affichant des informations sur l’élément sélectionné. Contrairement aux autres panneaux, le panneau Site s’applique uniquement aux racines du site.
 
 Le panneau Site permet de gérer les informations relatives aux thèmes et aux modèles pour votre site, notamment :
 
@@ -34,13 +34,13 @@ Le panneau Site permet de gérer les informations relatives aux thèmes et aux m
 
 ## Télécharger les sources de thème {#downloading-theme-sources}
 
-Lorsque vous créez un site dans AEM en fonction d’une [modèle de site,](site-templates.md) vous pouvez télécharger votre [thème du site](site-themes.md) à l’aide du panneau Site.
+Lorsque vous créez un site dans AEM en fonction d&#39;un modèle de site [, ](site-templates.md) vous pouvez télécharger votre [thème de site](site-themes.md) à l&#39;aide du panneau Site.
 
 Le panneau Site s’affichant dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site.
 
 ![Téléchargement de sources de thème](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Sélectionner **Télécharger des sources de thème** pour télécharger une copie locale du thème du site en tant que `.zip` à des fins de personnalisation.
+Sélectionnez **Télécharger les sources du thème** pour télécharger une copie locale du thème du site sous forme de fichier `.zip` à des fins de personnalisation.
 
 ## Télécharger les ressources de modèle {#downloading-template-resources}
 
@@ -50,7 +50,7 @@ Si votre site est basé sur un modèle de site, le panneau Site s’affichant da
 
 ![Téléchargement de sources de thème](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Sélectionnez le ou les boutons situés sous l’en-tête **Télécharger des ressources de modèle supplémentaires** pour télécharger une copie locale des fichiers disponibles.
+Sélectionnez le ou les boutons situés sous l’en-tête **Télécharger les ressources de modèle supplémentaires** pour télécharger une copie locale des fichiers disponibles.
 
 ## Affichage et modification des versions d’un thème {#them-versions}
 
@@ -62,11 +62,11 @@ Le panneau Site s’affichant dans la console Sites, sélectionnez la racine de 
 
 La version actuelle du thème s’affiche avec son hachage de validation et l’horodatage de sa dernière mise à jour.
 
-Sélectionner **Sélectionner la version** pour afficher les versions précédentes du thème.
+Sélectionnez **Sélectionner la version** pour afficher les versions précédentes du thème.
 
 ![Sélection de la version du thème](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Sélectionnez la version que vous souhaitez modifier, puis sélectionnez **Appliquer** pour effectuer la modification.
+Sélectionnez la version à modifier, puis **Appliquer** pour effectuer la modification.
 
 Si AEM détecte qu’une version plus récente du thème a été déployée via le pipeline front-end, mais n’est pas appliquée à votre site, une icône de notification s’affiche.
 
@@ -80,7 +80,7 @@ Si votre site n’a pas été créé à l’aide d’un modèle de site, il n’
 
 Vous pouvez toutefois activer le pipeline frontal pour votre site à l’aide du panneau Site.
 
-Le panneau Site s’affichant dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site, puis sélectionnez **Activation du pipeline front-end**.
+Le panneau Site s’affichant dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site, puis sélectionnez **Activer le pipeline front-end**.
 
 ![Activation du pipeline front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 

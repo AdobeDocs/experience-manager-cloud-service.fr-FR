@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Analyse de la structure de fragments de contenu {#analyzing-content-fragments-structure}
 
-Les fragments de contenu sont conçus pour [Diffusion sans affichage à l’aide de GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Cela signifie qu’ils peuvent avoir une structure à plusieurs niveaux.
+Les fragments de contenu sont conçus pour une [diffusion sans affichage à l’aide de GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Cela signifie qu’ils peuvent avoir une structure à plusieurs niveaux.
 
 Experience Manager (AEM) propose plusieurs méthodes pour visualiser et analyser la structure de vos fragments.
 
@@ -29,7 +29,7 @@ La structure à plusieurs niveaux est construite à l’aide de Références :
 
 ## Arborescence de la structure {#structure-tree}
 
-Ouvrez le **Arborescence de structure** de la barre d’outils de l’éditeur pour afficher la structure hiérarchique du fragment de contenu et ses références. Utilisez l’icône de lien pour ouvrir les références.
+Ouvrez l’onglet **Arborescence de structure** de la barre d’outils de l’éditeur pour afficher la structure hiérarchique du fragment de contenu et ses références. Utilisez l’icône de lien pour ouvrir les références.
 
 Par exemple :
 

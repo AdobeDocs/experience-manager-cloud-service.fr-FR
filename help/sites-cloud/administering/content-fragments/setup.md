@@ -14,7 +14,7 @@ ht-degree: 39%
 
 # Fragments de contenu - Configuration {#content-fragments-setup}
 
-Les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de préparer le contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux. Idéal pour la diffusion sans interface utilisateur et la création de pages.
+Les fragments de contenu as a Cloud Service Adobe Experience Manager (AEM) vous permettent de préparer le contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux. Idéal pour la diffusion sans interface utilisateur et la création de pages.
 
 Pour activer votre instance pour la fonctionnalité de fragment de contenu, vous devez activer :
 
@@ -31,16 +31,16 @@ Pour activer votre instance pour la fonctionnalité de fragment de contenu, vous
 
 La configuration de votre instance est terminée :
 
-* par [Activation de la fonctionnalité dans l’explorateur de configurations](#enable-content-fragment-functionality-configuration-browser)
-* then [application de la configuration à vos dossiers de ressources individuels](#apply-the-configuration-to-your-folder)
+* par [activation de la fonctionnalité dans l’explorateur de configurations](#enable-content-fragment-functionality-configuration-browser)
+* ensuite [appliquer la configuration à vos dossiers Assets individuels](#apply-the-configuration-to-your-folder)
 
 ## Activation de la fonctionnalité de fragment de contenu dans l’explorateur de configurations {#enable-content-fragment-functionality-configuration-browser}
 
-Pour utiliser la fonctionnalité Fragment de contenu des modèles de fragment de contenu et des requêtes persistantes GraphQL, vous devez **must** les activer d’abord à l’aide de l’option **Explorateur de configuration**:
+Pour utiliser la fonctionnalité Fragment de contenu des modèles de fragment de contenu et des requêtes persistantes GraphQL, vous **devez** d’abord les activer via le **navigateur de configuration** :
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Explorateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Pour plus d’informations, voir [Navigateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
@@ -59,8 +59,8 @@ Pour utiliser la fonctionnalité Fragment de contenu des modèles de fragment de
 1. Utilisez le bouton **Créer** pour ouvrir la boîte de dialogue.
 
    1. Spécifiez un **Titre**.
-   1. À la création, la variable **Nom** devient le nom du noeud dans le référentiel.
-Vous pouvez saisir un nom. Si vous laissez le champ vide, il est généré automatiquement en fonction du titre, puis ajusté en fonction de [Conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md); vous pouvez ajuster le résultat si nécessaire.
+   1. Lors de la création, le **nom** devient le nom du noeud dans le référentiel.
+Vous pouvez saisir un nom. Si vous laissez le champ vide, il est généré automatiquement en fonction du titre, puis ajusté en fonction des [conventions d’appellation d’AEM](/help/implementing/developing/introduction/naming-conventions.md) ; vous pouvez ajuster le résultat si nécessaire.
    1. Pour activer leur utilisation, sélectionnez
       * **Modèles de fragment de contenu**
       * **Requêtes persistantes GraphQL**
@@ -71,8 +71,8 @@ Vous pouvez saisir un nom. Si vous laissez le champ vide, il est généré autom
 
 ## Appliquer la configuration à votre dossier {#apply-the-configuration-to-your-folder}
 
-Lorsque la configuration **global** est activé pour la fonctionnalité de fragment de contenu, il s’applique ensuite à tout dossier de ressources accessible par le biais du **Ressources** console.
+Lorsque la configuration **global** est activée pour la fonctionnalité de fragment de contenu, elle s’applique ensuite à tout dossier Assets, accessible par le biais de la console **Assets**.
 
-Pour utiliser d’autres configurations (excluant donc global) avec un dossier de ressources comparable, vous devez définir la connexion. Pour ce faire, sélectionnez la **Configuration** dans le **Cloud Service** de la **Propriétés du dossier** du dossier approprié.
+Pour utiliser d’autres configurations (excluant donc global) avec un dossier Assets comparable, vous devez définir la connexion. Pour ce faire, sélectionnez la **configuration** appropriée dans l’onglet **Cloud Service** des **propriétés du dossier** du dossier approprié.
 
 ![Appliquer la configuration](assets/cf-setup-apply-conf.png)

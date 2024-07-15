@@ -48,7 +48,7 @@ Un utilisateur avec le rôle **Propriétaire de l’entreprise** ou **Responsabl
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez au **Paramètres de domaine** de la page **Présentation** écran.
+1. Accédez à la page **Paramètres de domaine** à partir de l’écran **Aperçu**.
 
 1. Identifiez la ligne du nom de domaine personnalisé que vous souhaitez supprimer.
 

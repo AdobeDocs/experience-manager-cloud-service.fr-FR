@@ -20,14 +20,14 @@ Découvrez comment créer des blocs instrumentés pour une utilisation avec l’
 
 Ce guide fournit des instructions détaillées sur la création de blocs instrumentés pour l’éditeur universel dans la création WYSIWYG avec des projets Edge Delivery Services. Il aborde l’ajout de composants, le chargement de définitions de composants dans l’éditeur universel, la publication de pages, l’implémentation des décorations et des styles de bloc, l’application des modifications à l’environnement de production ainsi que la vérification de ces modifications. Quand vous aurez terminé ce guide, vous pourrez créer et déployer un nouveau bloc pour votre propre projet.
 
-Ce guide nécessite nécessairement une connaissance existante de la création WYSIWYG avec des projets Edge Delivery Services ainsi que l’éditeur universel. Avant de commencer ce guide, vous devez déjà avoir accès à Edge Delivery Services et connaître ses principes de base, notamment :
+Ce guide nécessite nécessairement une connaissance existante de la création WYSIWYG avec des projets Edge Delivery Services ainsi que de l’éditeur universel. Avant de commencer ce guide, vous devez déjà avoir accès à Edge Delivery Services et connaître ses principes de base, notamment :
 
 * Vous avez terminé le [tutoriel sur Edge Delivery Services.](/help/edge/developer/tutorial.md)
 * Vous avez accès à un [sandbox AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Vous avez [activé l’éditeur universel dans le même environnement de sandbox.](/help/implementing/universal-editor/getting-started.md)
-* Vous avez terminé la [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide.
+* Vous avez terminé le guide [Guide de prise en main du développeur pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
 
-Ce guide s’appuie sur le travail effectué dans la variable [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide.
+Ce guide s’appuie sur le travail effectué dans le guide [Guide de prise en main du développeur pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
 
 ## Ajouter un nouveau bloc à votre projet {#add-block}
 
@@ -45,13 +45,13 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 ### Créer une définition et un modèle de bloc {#create-block-model}
 
-1&amp;period ; clonez le projet GitHub local que vous avez créé dans la variable [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et ouvrez-le dans un éditeur de votre choix.
+1&amp;period; Cloner le projet GitHub local que vous avez créé dans le guide [Guide de prise en main du développeur pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et ouvrez-le dans un éditeur de votre choix.
 
 * L’éditeur Microsoft Code est utilisé ici à titre d’exemple.
 
 ![Clonage du projet](assets/create-block/clone.png)
 
-2&amp;period ; modifiez la variable `component-definition.json` à la racine du projet, ajoutez la définition suivante pour votre nouveau bloc de guillemet et enregistrez le fichier.
+2&amp;period; Modifiez le fichier `component-definition.json` à la racine du projet et ajoutez la définition suivante pour votre nouveau bloc de guillemet et enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-3&amp;period ; modifiez la variable `component-models.json` à la racine du projet et ajoutez le code suivant : [définition de modèle](/help/implementing/universal-editor/field-types.md#model-structure) pour votre nouveau bloc de guillemet et enregistrez le fichier.
+3&amp;period; Modifiez le fichier `component-models.json` à la racine du projet et ajoutez la [définition de modèle](/help/implementing/universal-editor/field-types.md#model-structure) suivante pour votre nouveau bloc de guillemet et enregistrez le fichier.
 
-* Consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) pour plus d’informations sur ce qui est important à prendre en compte lors de la création de modèles de contenu.
+* Pour plus d’informations sur ce qui est important à prendre en compte lors de la création de modèles de contenu, consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) .
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-4&amp;period ; modifiez la variable `component-filters.json` à la racine du projet et ajoutez le bloc de guillemet au [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) pour permettre l&#39;ajout du bloc à n&#39;importe quelle section et l&#39;enregistrement du fichier.
+4&amp;period; Modifiez le fichier `component-filters.json` à la racine du projet et ajoutez le bloc de guillemet à la [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) pour permettre l’ajout du bloc à n’importe quelle section et enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-5&amp;period ; à l’aide de git, validez ces modifications dans votre `main` branche.
+5&amp;period; À l’aide de git, validez ces modifications dans votre branche `main`.
 
 * La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail sur un projet réel.
 
@@ -155,7 +155,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 Maintenant que votre bloc de citation de base est défini et validé dans l’exemple de projet, vous pouvez ajouter un bloc de citation à une page existante.
 
-1. Dans un navigateur, connectez-vous à AEM as a Cloud Service. [À l’aide de la console Sites,](/help/sites-cloud/authoring/basic-handling.md) accédez au site que vous avez créé dans la [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et sélectionnez une page.
+1. Dans un navigateur, connectez-vous à AEM as a Cloud Service. [À l’aide de la console Sites,](/help/sites-cloud/authoring/basic-handling.md) accédez au site que vous avez créé dans le guide [Guide de prise en main du développeur pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et sélectionnez une page.
 
    * Dans ce cas, `index` est utilisé à titre d’exemple.
 
@@ -190,13 +190,13 @@ Maintenant que votre bloc de citation de base est défini et validé dans l’ex
 
 Maintenant que vous avez un bloc de citation fonctionnel, vous pouvez lui appliquer un style.
 
-1&amp;period ; revenez à l’éditeur de votre projet.
+1&amp;point ; revenez à l’éditeur de votre projet.
 
-2&amp;period ; créer une `quote` sous `blocks` dossier.
+2&amp;period; Créez un dossier `quote` sous le dossier `blocks`.
 
 ![Création d’un dossier de citation](assets/create-block/new-folder.png)
 
-3&amp;period ; dans la nouvelle `quote` dossier, ajoutez une `quote.js` pour implémenter block decoration en ajoutant le code JavaScript suivant et en enregistrant le fichier.
+3&amp;period; Dans le nouveau dossier `quote`, ajoutez un fichier `quote.js` pour implémenter la décoration de bloc en ajoutant le JavaScript suivant et enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&amp;period ; dans la variable `quote` dossier, ajoutez une `quote.css` pour définir le style du bloc en ajoutant le code CSS suivant et en enregistrant le fichier.
+4&amp;period; Dans le dossier `quote`, ajoutez un fichier `quote.css` pour définir le style du bloc en ajoutant le code CSS suivant et enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5&amp;period ; à l’aide de git, validez ces modifications dans votre `main` branche.
+5&amp;period; À l’aide de git, validez ces modifications dans votre branche `main`.
 
 * La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail sur un projet réel.
 
-6&amp;period ; revenez à l’onglet de votre navigateur de l’éditeur universel dans lequel vous modifiez la page de votre projet et rechargez la page pour afficher votre bloc stylisé.
+6&amp;point ; revenez à l’onglet de votre navigateur de l’éditeur universel dans lequel vous modifiez la page de votre projet et rechargez la page pour afficher votre bloc stylisé.
 
-7&amp;period ; voir le bloc de guillemet désormais stylisé sur la page.
+7&amp;point ; voir le bloc de guillemet maintenant stylisé sur la page.
 
 ![Bloc de citation avec son style appliqué dans l’éditeur universel](assets/create-block/quote-styled.png)
 
-8&amp;period ; vérifiez que les modifications ont été transférées en production en accédant à la page publiée. Le lien sera similaire à `https://<branch>--<repo>--<owner>.hlx.page`.
+8&amp;point; Vérifiez que les modifications ont été transférées en production en accédant à la page publiée. Le lien sera similaire à `https://<branch>--<repo>--<owner>.hlx.page`.
 
 ![Bloc de citation publié et avec son style appliqué](assets/create-block/quote-styled-published.png)
 
@@ -335,9 +335,9 @@ La publication de contenu avec un nouveau modèle n’est prise en charge que lo
 
 Maintenant que vous savez comment créer des blocs, il est essentiel de comprendre comment modéliser le contenu de manière sémantique pour optimiser l’expérience de développement.
 
-Consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) pour découvrir comment fonctionne la modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services.
+Consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) pour découvrir comment la modélisation de contenu fonctionne pour la création WYSIWYG avec des projets Edge Delivery Services.
 
 >[!TIP]
 >
->Pour une présentation exhaustive de la création d’un nouveau projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service en tant que source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

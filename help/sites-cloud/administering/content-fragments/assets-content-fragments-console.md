@@ -1,6 +1,6 @@
 ---
-title: Affichage et gestion des ressources dans la console de fragments de contenu
-description: Découvrez comment afficher et gérer les ressources dans la **console Fragments de contenu** d’Adobe Experience Manager as a Cloud Service.
+title: Affichage et gestion d’Assets dans la console de fragments de contenu
+description: Découvrez comment afficher et gérer Assets dans la **console Fragments de contenu** d’Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
@@ -12,42 +12,42 @@ ht-degree: 7%
 
 ---
 
-# Affichage et gestion des ressources dans la console de fragments de contenu {#viewing-managing-assets-content-fragments-console}
+# Affichage et gestion d’Assets dans la console de fragments de contenu {#viewing-managing-assets-content-fragments-console}
 
-Par défaut, la variable [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) de Adobe Experience Manager as a Cloud Service présente votre [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md).
+Par défaut, la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) d’Adobe Experience Manager as a Cloud Service présente vos [ fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md).
 
-Cependant, vous pouvez également afficher et gérer toutes les autres sortes de **Ressources** dans **Console Fragments de contenu**.
+Cependant, vous pouvez également afficher et gérer toutes les autres sortes de **Assets** dans cette **console de fragments de contenu**.
 
 >[!NOTE]
 >
->Les fragments de contenu sont également accessibles à partir du **[Ressources](/help/assets/overview.md)** console.
+>Les fragments de contenu sont également accessibles à partir de la console **[Assets](/help/assets/overview.md)**.
 
-## Affichage des ressources {#viewing-assets}
+## Affichage d’Assets {#viewing-assets}
 
-Vous pouvez utiliser le panneau situé à l’extrême gauche de la console Fragments de contenu pour sélectionner  **Ressources** comme type de ressource à afficher, parcourir et gérer :
+Vous pouvez utiliser le panneau situé à l’extrême gauche de la console Fragments de contenu pour sélectionner **Assets** comme type de ressource à afficher, parcourir et gérer :
 
 ![Console Fragments de contenu - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 >[!NOTE]
 >
->Bien que les fragments de contenu soient stockés en tant que ressources, ils ne sont pas répertoriés dans cette vue.
+>Bien que les fragments de contenu soient stockés en tant qu’Assets, ils ne sont pas répertoriés dans cette vue.
 
 ## Gestion des ressources {#managing-assets}
 
-Dans la **Ressources** dans la console Fragments de contenu, vous pouvez effectuer les opérations suivantes :
+Dans la vue **Assets** de la console Fragments de contenu, vous pouvez :
 
-![Console Fragments de contenu - Parcourir la ressource](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
+![ Console Fragments de contenu - Parcourir la ressource](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-* Parcourez la structure et parcourez vos ressources ; [similaire à la fonctionnalité de la console Ressources.](/help/assets/navigate-assets-view.md)
+* Parcourez la structure et parcourez votre Assets. [ Comme avec la fonctionnalité de la console Assets](/help/assets/navigate-assets-view.md)
 * [Créer un dossier](/help/assets/manage-digital-assets.md#creating-folders)
 * [Chargement des ressources](/help/assets/add-delete-assets-view.md)
 * Configurez le type d’affichage (Liste, Grille, Galerie, Cascade) et, le cas échéant, les colonnes visibles.
 
-Vous pouvez également agir sur une ou plusieurs ressources sélectionnées :
+Vous pouvez également agir sur une ou plusieurs Assets sélectionnées :
 
-![Console Fragments de contenu : actions pour la ressource sélectionnée](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-actions.png)
+![Console Fragments de contenu - actions pour la ressource sélectionnée](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-actions.png)
 
-Voir [Gestion des ressources](/help/assets/manage-organize-assets-view.md) pour plus de détails sur :
+Voir [Gérer Assets](/help/assets/manage-organize-assets-view.md) pour plus de détails sur :
 
 * Détails
 * Télécharger

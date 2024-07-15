@@ -31,7 +31,7 @@ Lisez la suite pour plus de détails sur l’envoi asynchrone dans les formulair
 
 Pour configurer l’envoi asynchrone d’un formulaire adaptatif :
 
-1. En mode de création de formulaire adaptatif, sélectionnez l’objet Conteneur de formulaires et choisissez ![cmppr1](assets/configure-icon.svg) pour ouvrir ses propriétés.
+1. En mode de création de formulaire adaptatif, sélectionnez l’objet Conteneur de formulaires et sélectionnez ![cmppr1](assets/configure-icon.svg) pour ouvrir ses propriétés.
 1. Dans la section des propriétés **[!UICONTROL Envoi]**, activez **[!UICONTROL Utiliser l’envoi asynchrone]**.
 1. Dans la section **[!UICONTROL Lors de l’envoi]**, sélectionnez l’une des options suivantes pour effectuer un envoi de formulaire réussi.
 
@@ -108,7 +108,7 @@ Les développeurs et les auteurs de formulaires peuvent écrire des règles, au 
 
 Effectuez les étapes suivantes pour écrire des règles afin de gérer les événements de succès et d’erreur.
 
-1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire, puis sélectionnez ![edit-rules1](assets/edit-rules-icon.svg) pour ouvrir l’éditeur de règles.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire, puis ![edit-rules1](assets/edit-rules-icon.svg) pour ouvrir l’éditeur de règles.
 1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire, puis **[!UICONTROL Créer]**.
 1. Sélectionnez **[!UICONTROL est envoyé avec succès]** ou **[!UICONTROL l’envoi échoue]** dans la liste déroulante **[!UICONTROL Sélectionner l’état]**.
 1. Définissez une action **[!UICONTROL Ensuite]** pour l’état sélectionné. Par exemple, sélectionnez **[!UICONTROL Accéder à]**, puis tapez ou collez une URL. Vous pouvez également faire glisser n’importe quelle fonction à l’aide de l’onglet **[!UICONTROL Fonctions]** vers la règle.

@@ -62,7 +62,7 @@ Pour rechercher et filtrer vos ressources :
    * Recherches enregistrées
    * Répertoire de recherche
    * Balises
-   * Critères de recherche, par exemple, dates de modification, état de publication, état LiveCopy
+   * Critères de recherche, par exemple, dates de modification, état Publish, état LiveCopy
 
    >[!NOTE]
    >

@@ -6,15 +6,15 @@ role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 92%
+source-wordcount: '1520'
+ht-degree: 100%
 
 ---
 
 
 # Affecter des membres de l’équipe à des profils de produits Cloud Manager {#assign-team-members}
 
-Dans cette partie du [parcours d&#39;intégration,](overview.md) vous apprenez à affecter des membres de l’équipe à des profils de produit Cloud Manager.
+Dans cette partie du [parcours d’intégration](overview.md), découvrez comment affecter des membres de l’équipe à des profils de produits Cloud Manager.
 
 ## Objectif {#objective}
 
@@ -33,7 +33,7 @@ Après avoir lu ce document, vous devriez :
 
 ## Conditions préalables {#prerequisites}
 
-Pour affecter des membres de l’équipe à des profils de produit, vous devez disposer d’informations sur les membres de l’équipe qui doivent accéder à AEM as a Cloud Service, notamment :
+Pour affecter des membres de l’équipe à des profils de produits, vous devez disposer d’informations sur les membres de l’équipe qui devront accéder à AEM as a Cloud Service, notamment :
 
 * leur nom ;
 * leur adresse e-mail ;
@@ -73,9 +73,9 @@ Admin Console vous permet de voir la liste des profils Cloud Manager.
 
    ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. Vous pouvez voir la liste des profils de produits Cloud Manager préconfigurés.
+1. La liste des profils de produits Cloud Manager préconfigurés s’affiche.
 
-   ![Profils de produits](/help/journey-onboarding/assets/assign-team3.png)
+   ![Profils de produits.](/help/journey-onboarding/assets/assign-team3.png)
 
 Les profils les plus importants à affecter dans le cadre du processus d’intégration initial sont les suivants :
 
@@ -177,11 +177,11 @@ Cette partie du parcours d’intégration vous a permis d’en savoir plus sur l
 * Comprendre les trois principaux profils de produits de Cloud Manager : **Propriétaire de l’entreprise**, **Responsable de déploiement** et **Développeur**.
 * Être capable d’affecter des membres de l’équipe aux profils de produits Cloud Manager.
 
-Vous êtes maintenant prêt à poursuivre votre parcours d’intégration en consultant le document. [Accéder à Cloud Manager,](cloud-manager.md) où vous apprendrez à accéder à Cloud Manager et à créer vos ressources de projet.
+Vous êtes maintenant prêts à poursuivre votre parcours d’intégration en passant au document [Accéder à Cloud Manager](cloud-manager.md), dans lequel vous découvrirez comment accéder à Cloud Manager et créer vos ressources de projet.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Il est recommandé de poursuivre le parcours d’intégration comme décrit précédemment. Il s’agit de ressources supplémentaires si vous souhaitez approfondir un sujet particulier à partir de ce parcours.
+Il est recommandé de poursuivre le parcours d’intégration comme décrit précédemment. Voici quelques ressources supplémentaires si vous souhaitez approfondir un sujet particulier de ce parcours.
 
 * [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md) : découvrez Cloud Manager, les programmes et les environnements.
 * [Profils de produits Cloud Manager](/help/onboarding/aem-cs-team-product-profiles.md) : découvrez l’équipe et les profils de produits AEM as a Cloud Service.

@@ -145,7 +145,7 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
    * Un assistant d&#39;action démarre ;
    * Une page de documentation s’ouvre
 
-   Par exemple : **Déléguer** ouvre une boîte de dialogue :
+   Par exemple, **Déléguer** ouvre une boîte de dialogue :
 
    ![Déléguer la tâche de boîte de réception](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

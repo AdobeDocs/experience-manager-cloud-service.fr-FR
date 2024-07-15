@@ -19,7 +19,7 @@ ht-degree: 87%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-La configuration de Adobe Experience Manager Assets Brand Portal vous permet de publier des ressources de marque approuvées depuis Adobe Experience Manager Assets as a [!DNL Cloud Service] à Brand Portal et distribuez-les aux utilisateurs de Brand Portal.
+La configuration de Adobe Experience Manager Assets Brand Portal vous permet de publier des ressources de marque approuvées d’Adobe Experience Manager Assets en tant qu’instance [!DNL Cloud Service] sur Brand Portal et de les distribuer aux utilisateurs de Brand Portal.
 
 ## Activation de Brand Portal à l’aide de Cloud Manager {#activate-brand-portal}
 
@@ -123,7 +123,7 @@ Suivez les étapes suivantes pour valider la connexion entre votre instance Expe
 
    ![File d’attente de traitement pour la distribution des ressources](assets/test-bpconfig3.png)
 
-1. Vérification de la connexion entre Experience Manager Assets as a [!DNL Cloud Service] et Brand Portal, cliquez sur le bouton **[!UICONTROL Tester la connexion]** Icône
+1. Pour vérifier la connexion entre Experience Manager Assets as a [!DNL Cloud Service] et Brand Portal, cliquez sur l’icône **[!UICONTROL Tester la connexion]** .
 
    ![Vérification de la connexion entre AEM et Brand Portal](assets/test-bpconfig4.png)
 
@@ -192,7 +192,7 @@ Outre le workflow d’automatisation de l’activation de Brand Portal sur Expe
 >[!NOTE]
 >
 > Vous ne pourrez plus créer de nouvelles informations d’identification JWT à partir de juin 2024. Dorénavant, seules les informations d’identification OAuth sont créées.
-> En savoir plus [création d’une configuration OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+> Voir plus [création d’une configuration OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 
 La section suivante décrit comment configurer manuellement Experience Manager Assets as a [!DNL Cloud Service] avec Brand Portal à l’aide d’Adobe Developer Console.
 
@@ -359,11 +359,11 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 ### Configurer les informations d’identification OAuth dans Adobe Developer Console {#config-oauth}
 
-[Configuration des informations d’identification OAuth dans la console Adobe Developer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) et sélectionnez API Brand Portal.
+[Configurez les informations d’identification OAuth dans Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) et sélectionnez API Brand Portal.
 
 ### Créer une nouvelle intégration Adobe IMS à l’aide d’OAuth {#create-ims-account-configuration}
 
-[Créer une intégration Adobe IMS à l’aide d’OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) et sélectionnez Brand Portal dans la liste déroulante sous Solution cloud.
+[Créez une intégration Adobe IMS à l’aide d’OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) et sélectionnez Brand Portal dans la liste déroulante sous Solution cloud.
 
 <!--
 Ensure that you have performed the following steps:
@@ -418,7 +418,7 @@ Pour configurer le service cloud Brand Portal, procédez comme suit :
 
    Dans le champ **[!UICONTROL URL du service]**, entrez l’adresse URL de votre client Brand Portal (organisation).
 
-   ![Configuration de Brand Portal, boîte de dialogue.](assets/create-cloud-service.png)
+   ![Boîte de dialogue de configuration Brand Portal.](assets/create-cloud-service.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**. La configuration cloud est alors créée.
 
@@ -427,7 +427,7 @@ Pour configurer le service cloud Brand Portal, procédez comme suit :
 Vous pouvez maintenant tester la configuration en vérifiant l’agent de distribution et en publiant les ressources sur Brand Portal.
 
 **Placer sur la liste autorisée les adresses IP sortantes dans SPS si l’aperçu sécurisé est activé**
-Si vous utilisez Dynamic Media-Scene7 avec [aperçu sécurisé activé](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) pour une société, il est conseillé à l’administrateur de la société Scene7 [placer sur la liste autorisée les adresses IP sortantes publiques](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) pour les régions respectives utilisant l’interface utilisateur Flash de SPS (Scene7 Publishing System).
+Si vous utilisez Dynamic Media-Scene7 avec [ aperçu sécurisé activé](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) pour une entreprise, il est conseillé à l’administrateur de la société Scene7 [de placer sur la liste autorisée les adresses IP sortantes publiques](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) pour les régions respectives utilisant l’interface utilisateur Flash de SPS (Scene7 Publishing System).
 Les adresses IP sortantes sont les suivantes :
 
 | **Zone géographique** | **Adresse IP de sortie** |

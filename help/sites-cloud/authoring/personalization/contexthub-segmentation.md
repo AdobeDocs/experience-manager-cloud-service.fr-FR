@@ -91,7 +91,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
 1. Après avoir [accédé aux segments](#accessing-segments), [naviguez jusqu’au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment.
 
-1. Sélectionnez la variable **Créer** et sélectionnez **Créer un segment ContextHub**.
+1. Sélectionnez le bouton **Créer** et sélectionnez **Créer un segment ContextHub**.
 
    ![Ajouter un segment](../assets/contexthub-create-segment.png)
 
@@ -196,7 +196,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Créer un dossier {#create-folder}
 
-1. Après [accès aux segments](#accessing-segments), sélectionnez la variable **Créer** et sélectionnez **Dossier**.
+1. Après [ avoir accédé aux segments](#accessing-segments), cliquez sur le bouton **Créer** et sélectionnez **Dossier**.
 
    ![Ajouter un dossier](../assets/contexthub-create-segment.png)
 
@@ -219,11 +219,11 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Modifier les dossiers existants {#modify-folders}
 
-1. Après [accès aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
+1. Après avoir [ accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
 
-1. Sélectionner **Renommer** dans la barre d’outils pour renommer le dossier.
+1. Sélectionnez **Renommer** dans la barre d’outils pour renommer le dossier.
 
 1. Fournissez un nouveau **Titre du dossier** et sélectionnez **Enregistrer**.
 
@@ -235,25 +235,25 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Supprimer un dossier
 
-1. Après [accès aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
+1. Après avoir [ accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
 
-1. Sélectionner **Supprimer** dans la barre d’outils pour supprimer le dossier.
+1. Sélectionnez **Supprimer** dans la barre d’outils pour supprimer le dossier.
 
 1. Une boîte de dialogue présente une liste de dossiers sélectionnés pour suppression.
 
    ![Confirmer la suppression](../assets/contexthub-confirm-segment-delete.png)
 
-   * Sélectionner **Supprimer** pour confirmer.
-   * Sélectionner **Annuler** pour abandonner.
+   * Sélectionnez **Supprimer** pour confirmer.
+   * Sélectionnez **Annuler** pour abandonner.
 
 1. Si l’un des dossiers sélectionnés contient des sous-dossiers ou des segments, leur suppression doit être confirmée.
 
    ![Confirmer la suppression des enfants](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Sélectionner **Forcer la suppression** pour confirmer.
-   * Sélectionner **Annuler** pour abandonner.
+   * Sélectionnez **Forcer la suppression** pour confirmer.
+   * Sélectionnez **Annuler** pour abandonner.
 
 >[!NOTE]
 >

@@ -23,7 +23,7 @@ L’interface d’utilisation de Cloud Manager est composée principalement de 
 
 >[!TIP]
 >
->Consultez également la section [parcours de documentation d’intégration](/help/journey-onboarding/overview.md) pour une présentation complète de la prise en main d’AEM as a Cloud Service à l’aide de Cloud Manager.
+>Consultez également le [parcours de documentation d’intégration](/help/journey-onboarding/overview.md) pour obtenir un aperçu complet de la prise en main d’AEM as a Cloud Service à l’aide de Cloud Manager.
 
 ## Console Mes programmes {#my-programs}
 
@@ -106,7 +106,7 @@ Chaque programme est représenté par une vignette (ou une ligne dans un tableau
 
 * Image du programme (si configurée)
 * Nom du programme
-* Type de service : **Experience Manager Cloud** pour les AEM en tant que * programmes de Cloud Service ou [**Experience Manager** pour les programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* Type de service : **Experience Manager Cloud** pour AEM en tant que * programmes Cloud Service ou [**Experience Manager** pour les programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Type de programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) : sandbox ou production.
 * Statut
 * Solutions configurées
@@ -149,7 +149,7 @@ L’icône représentant des points de suspension vous permet d’accéder à de
 
 #### Onglet Licence {#license-tab}
 
-La variable **Licence** permet d’accéder rapidement à la fonction [Tableau de bord de la licence.](/help/implementing/cloud-manager/license-dashboard.md)
+L’onglet **Licence** permet d’accéder rapidement au [ tableau de bord de la licence.](/help/implementing/cloud-manager/license-dashboard.md)
 
 ### Liens rapides {#quick-links}
 
@@ -168,7 +168,7 @@ La vue d’ensemble du programme vous donne accès à toutes les informations d�
 1. Un [appel à l’action](#cta) basé sur les dernières actions du programme.
 1. Une [vue d’ensemble des environnements](#environments) du programme.
 1. Une [vue d’ensemble des pipelines](#pipelines) du programme.
-1. Un [présentation des performances](#performance) du programme
+1. Une [présentation des performances](#performance) du programme
 1. Des liens vers des [ressources utiles](#useful-resources).
 
 ### Barres d’outils {#program-overview-toolbar}
@@ -237,9 +237,9 @@ Consultez le document [Gestion des pipelines](/help/implementing/cloud-manager/c
 
 ### Carte de performance {#performance}
 
-La variable **Performances** La carte donne un aperçu de la variable **[Tableau de bord du réseau CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
+La carte **Performance** donne un aperçu du **[tableau de bord CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
 
-![Carte des performances](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
+![Carte de performance](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
 ### Ressources utiles {#useful-resources}
 

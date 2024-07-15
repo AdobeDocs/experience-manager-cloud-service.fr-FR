@@ -33,7 +33,7 @@ L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de frag
 
 >[!NOTE]
 >
->Pour obtenir les informations les plus récentes sur les API de Experience Manager, consultez également la page [API ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Pour obtenir les dernières informations sur les API Experience Manager, consultez également la page [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## L’API GraphQL {#graphql-api}
 
@@ -167,7 +167,7 @@ En outre, l’utilisateur doit avoir accès à un point de terminaison GraphQL p
 
 GraphQL est une API fortement typée, ce qui signifie que les données doivent être clairement structurées et organisées par type.
 
-La spécification GraphQL fournit une série de directives sur la création d’une API robuste pour interroger les données sur une certaine instance. Pour ce faire, un client doit récupérer la variable [Schéma](#schema-generation), qui contient tous les types nécessaires à une requête.
+La spécification GraphQL fournit une série de directives sur la création d’une API robuste pour interroger les données sur une certaine instance. Pour ce faire, un client doit récupérer le [schéma](#schema-generation), qui contient tous les types nécessaires à une requête.
 
 Pour les fragments de contenu, les schémas GraphQL (structure et types) reposent sur des [Modèles de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) **activés** et leurs types de données
 
@@ -240,7 +240,7 @@ Le schéma comporte des champs individuels de deux catégories de base :
 
   Une sélection de [types de données](#Data-types) est utilisée pour créer des champs en fonction de la configuration du modèle de fragment de contenu. Les noms des champs proviennent du champ **Nom de la propriété** de l’onglet **Type de données**.
 
-   * Prenez également en compte le paramètre **Rendre en tant que**, car les utilisateurs et utilisatrices peuvent configurer certains types de données. Par exemple, un champ de texte d’une seule ligne peut être configuré pour contenir plusieurs textes d’une seule ligne en choisissant `multifield` dans la liste déroulante.
+   * Prenez également en compte le paramètre **Rendre en tant que**, car les utilisateurs et utilisatrices peuvent configurer certains types de données. Par exemple, un champ de texte d’une seule ligne peut être configuré pour contenir plusieurs textes d’une seule ligne en sélectionnant `multifield` dans la liste déroulante.
 
 * GraphQL pour AEM génère également plusieurs [champs d’assistance](#helper-fields).
 
@@ -264,7 +264,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 ### Champs d’assistant {#helper-fields}
 
-Outre les types de données pour les champs générés par l’utilisateur, GraphQL pour AEM génère également plusieurs *assistance* pour identifier un fragment de contenu ou fournir des informations supplémentaires sur ce dernier.
+Outre les types de données pour les champs générés par l’utilisateur, GraphQL pour AEM génère également plusieurs champs *helper* pour aider à identifier un fragment de contenu ou fournir des informations supplémentaires sur un fragment de contenu.
 
 Ces [champs d’assistance](#helper-fields) sont précédés d’un `_` pour distinguer ce qui a été défini par l’utilisateur ou l’utilisatrice de ce qui a été généré automatiquement.
 
@@ -520,7 +520,7 @@ Chaque champ peut être filtré par son propre jeu d’expressions. Les jeux d�
 
 Une définition de filtre (transmise comme l’argument `filter` dans une requête) contient les éléments suivants :
 
-* Une sous-définition pour chaque champ (le champ est accessible par son nom, par exemple, il y a une `lastName` dans le filtre pour la variable `lastName` champ dans le Type de données (champ)
+* Une sous-définition pour chaque champ (le champ est accessible par son nom, par exemple, il y a un champ `lastName` dans le filtre pour le champ `lastName` dans le type Données (champ))
 * Chaque sous-définition contient le tableau `_expressions`, qui fournit le jeu d’expressions, ainsi que le champ `_logOp`, qui définit l’opérateur logique avec lequel les expressions doivent être combinées.
 * Chaque expression est définie par la valeur (champ `value`) et l’opérateur (champ `_operator`) auxquels le contenu d’un champ doit être comparé.
 
@@ -716,7 +716,7 @@ query {
 
 La diffusion d&#39;images optimisées pour le Web permet d&#39;utiliser une requête Graphql pour :
 
-* Demande d’une URL à une image de ressource DAM (référencée par une **Référence de contenu**)
+* Demande d’une URL à une image de ressource DAM (référencée par une **référence de contenu**)
 
 * Transmettez des paramètres avec la requête, de sorte qu’un rendu spécifique de l’image soit automatiquement généré et renvoyé.
 
@@ -736,13 +736,13 @@ Vous pouvez ainsi créer dynamiquement des rendus d’image pour la diffusion JS
 
 La solution de GraphQL vous permet :
 
-* Demander une URL : utilisez `_dynamicUrl` sur le `ImageRef` reference
+* Demander une URL : utilisez `_dynamicUrl` sur la référence `ImageRef`
 
-* Pass parameters : add `_assetTransform` dans l’en-tête de liste où vos filtres sont définis ;
+* Transmettez les paramètres : ajoutez `_assetTransform` à l’en-tête de liste où vos filtres sont définis.
 
 >[!NOTE]
 >
->A **Référence de contenu** peut être utilisé pour les ressources DAM et Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
+>Une **référence de contenu** peut être utilisée pour les ressources DAM et Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
 >* `_dynamicUrl` : ressource DAM
 >* `_dmS7Url` : une ressource Dynamic Media
 > 
@@ -924,7 +924,7 @@ Les restrictions suivantes s’appliquent :
 
 ## Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL{#dynamic-media-asset-delivery-by-url}
 
-GraphQL pour les fragments de contenu AEM vous permet de demander une URL à une ressource Dynamic Media (Scene7) AEM (référencée par une **Référence de contenu**).
+GraphQL pour les fragments de contenu AEM vous permet de demander une URL à une ressource Dynamic Media (Scene7) AEM (référencée par une **référence de contenu**).
 
 La solution de GraphQL vous permet :
 
@@ -932,23 +932,23 @@ La solution de GraphQL vous permet :
 
 >[!NOTE]
 >
->Pour ce faire, vous devez disposer d’un [Configuration du cloud Dynamic Media](/help/assets/dynamic-media/config-dm.md).
+>Pour ce faire, vous devez disposer d’une [configuration de cloud Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 >
->Cela ajoute le `dam:scene7File` et `dam:scene7Domain` sur les métadonnées de la ressource lors de sa création.
+>Cela ajoute les attributs `dam:scene7File` et `dam:scene7Domain` aux métadonnées de la ressource lors de sa création.
 
 >[!NOTE]
 >
->A **Référence de contenu** peut être utilisé pour les ressources DAM et Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
+>Une **référence de contenu** peut être utilisée pour les ressources DAM et Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
 >
 >* `_dmS7Url` : une ressource Dynamic Media
 >* `_dynamicUrl` : ressource DAM
 > 
->Si la ressource référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` sera `null`. Voir [diffusion d’images optimisée pour le web dans des requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
+>Si la ressource référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` sera `null`. Voir [diffusion d’images optimisée pour le web dans les requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
 ### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Référence d’image{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Voici un exemple de requête :
-* pour plusieurs fragments de contenu de type `team` et `person`, renvoi d’une `ImageRef`
+* pour plusieurs fragments de contenu de type `team` et `person`, renvoyant un `ImageRef`
 
 ```graphql
 query allTeams {
@@ -975,7 +975,7 @@ query allTeams {
 ### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 Voici un exemple de requête :
-* pour plusieurs fragments de contenu de type `team` et `person`, renvoi d’une `ImageRef`, `MultimediaRef` et `DocumentRef`:
+* pour plusieurs fragments de contenu de type `team` et `person`, renvoyant un `ImageRef`, `MultimediaRef` et `DocumentRef` :
 
 ```graphql
 query allTeams {
@@ -1087,18 +1087,18 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
    * Pour la diffusion d&#39;images :
 
-      * `_authorURL`: URL complète de la ressource image sur l’auteur AEM
-      * `_publishURL`: URL complète de la ressource image sur AEM Publier
+      * `_authorURL` : URL complète de la ressource image sur l’auteur AEM
+      * `_publishURL` : URL complète de la ressource image sur AEM Publish
 
-      * Pour [diffusion d’images optimisée pour le web](#web-optimized-image-delivery-in-graphql-queries) (des ressources DAM) :
+      * Pour la [diffusion d’image optimisée pour le web](#web-optimized-image-delivery-in-graphql-queries) (de ressources DAM) :
 
-         * `_dynamicUrl`: URL complète de la ressource de gestion des actifs numériques optimisée pour le web sur la page `ImageRef` reference
+         * `_dynamicUrl` : URL complète de la ressource DAM optimisée pour le web sur la référence `ImageRef`
 
            >[!NOTE]
            >
-           >`_dynamicUrl` est l’URL préférée à utiliser pour les ressources DAM optimisées pour le web et doit remplacer l’utilisation de la fonction `_path`, `_authorUrl`, et `_publishUrl` dans la mesure du possible.
+           >`_dynamicUrl` est l’URL préférée à utiliser pour les ressources DAM optimisées pour le web et doit remplacer `_path`, `_authorUrl` et `_publishUrl` chaque fois que cela est possible.
 
-         * `_assetTransform`: pour transférer des paramètres sur l’en-tête de liste dans lequel vos filtres sont définis.
+         * `_assetTransform` : pour transmettre des paramètres sur l’en-tête de liste dans lequel vos filtres sont définis
 
          * Voir :
 
@@ -1106,13 +1106,13 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
             * [Exemple de requête pour une diffusion d’image optimisée pour le web avec un seul paramètre spécifié](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`: sur la `ImageRef` référence pour la diffusion de l’URL vers une [Ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
+      * `_dmS7Url` : sur la référence `ImageRef` pour la diffusion de l’URL vers une [ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
 
          * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
          * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
-   * `_tags`: pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau de `cq:tags` identifiants.
+   * `_tags` : pour révéler les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau d’identifiants `cq:tags`.
 
       * Reportez-vous à [Exemple de requête : noms de toutes les villes balisées en tant qu’Escapades en ville](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks).
       * Reportez-vous à [Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag).

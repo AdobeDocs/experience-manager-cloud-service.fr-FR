@@ -24,7 +24,7 @@ La date de publication de l’analyseur de bonnes pratiques v2.1.30 est le 27 j
 ### Nouveautés {#what-is-new-bpa}
 
 * L’outil BPA peut désormais détecter et générer des rapports sur la taille totale de l’index Lucene pouvant être migré, qui est l’index Lucene total à l’exclusion de `/oak:index/lucene` et de `/oak:index/damAssetLucene`.
-* Nouveau modèle ajouté à l’outil BPA pour détecter et générer des rapports sur l’utilisation d’un dictionnaire i18n personnalisé. Translator.html n’est pas disponible dans AEM dictionnaire i18n as a Cloud Service et personnalisé doit être déployé à partir de Git par le biais du pipeline CI/CD de Cloud Manager.
+* Nouveau modèle ajouté à l’outil BPA pour détecter et générer des rapports sur l’utilisation d’un dictionnaire i18n personnalisé. Translator.html n’est pas disponible dans AEM as a Cloud Service et le dictionnaire i18n personnalisé doit être déployé à partir de Git par le biais du pipeline CI/CD de Cloud Manager.
 
 ### Correctifs {#bug-fixes-bpa}
 

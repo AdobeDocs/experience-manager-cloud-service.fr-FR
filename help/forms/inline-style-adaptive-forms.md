@@ -111,9 +111,9 @@ En suivant les étapes ci-dessus, vous pouvez sélectionner et mettre en forme d
 
 ## Copie et collage de styles {#copy-paste-styles}
 
-Vous pouvez également copier un style et le coller d’un composant à un autre dans un formulaire adaptatif. Dans le **[!UICONTROL Style]** en mode , sélectionnez le composant, puis cliquez sur l’icône Copier ![Copier](assets/property-copy-icon.svg).
+Vous pouvez également copier un style et le coller d’un composant à un autre dans un formulaire adaptatif. En mode **[!UICONTROL Style]** , sélectionnez le composant et sélectionnez l’icône Copier ![Copier](assets/property-copy-icon.svg).
 
-Sélectionnez l’autre composant du même type, puis cliquez sur l’icône Coller . ![Copier](assets/Smock_Paste_18_N.svg) pour copier le style. Vous pouvez également sélectionner l’icône Effacer le style . ![Copier](assets/clear-style-icon.svg) pour effacer le style appliqué.
+Sélectionnez l’autre composant du même type et cliquez sur l’icône Coller ![Copier](assets/Smock_Paste_18_N.svg) pour coller le style copié. Vous pouvez également sélectionner l’icône Effacer le style ![Copier](assets/clear-style-icon.svg) pour effacer le style appliqué.
 
 ## Définition des styles pour les différents états d’un composant {#set-styles-for-states}
 
@@ -121,7 +121,7 @@ Vous pouvez définir des styles pour différents états d’un type de composant
 
 Pour définir la mise en forme d’un état d’un composant :
 
-1. Dans le **[!UICONTROL Style]** en mode , sélectionnez le composant, puis cliquez sur l’icône Modifier ![Modifier](assets/Smock_Edit_18_N.svg).
+1. En mode **[!UICONTROL Style]** , sélectionnez le composant et sélectionnez l’icône Modifier ![Modifier](assets/Smock_Edit_18_N.svg).
 
 1. Sélectionnez l’état du composant à l’aide de la liste déroulante **[!UICONTROL État]**.
 
@@ -129,7 +129,7 @@ Pour définir la mise en forme d’un état d’un composant :
 
 1. Définissez la mise en forme de l’état sélectionné du composant et sélectionnez ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
 
-Vous pouvez également simuler les états de succès et d’erreur. Cliquez sur l’icône Développer pour afficher le **[!UICONTROL Simuler la réussite]** et **[!UICONTROL Simuler une erreur]** options.
+Vous pouvez également simuler les états de succès et d’erreur. Sélectionnez l’icône Développer pour afficher les options **[!UICONTROL Simuler la réussite]** et **[!UICONTROL Simuler l’erreur]** .
 
 ![Simuler les états](assets/simulate-states.png)
 

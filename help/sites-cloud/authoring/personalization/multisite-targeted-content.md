@@ -29,7 +29,7 @@ Ce document contient les informations suivantes :
 
 Pour configurer la manière dont vos sites partagent du contenu personnalisé, vous devez effectuer les étapes suivantes :
 
-1. [Création d’une zone](#creating-new-areas) ou [création d’une zone comme Live Copy](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *zone* de la page, c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy vous permet d’hériter du contenu entre les structures du site.
+1. [Créez une zone](#creating-new-areas) ou [créez une zone comme Live Copy](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *zone* de la page, c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy vous permet d’hériter du contenu entre les structures du site.
 
 1. [Lier votre site ou votre page](#linking-sites-to-an-area) à une zone.
 
@@ -147,12 +147,12 @@ Les zones peuvent couvrir des activités et des offres. Après avoir créé une 
 
 >[!NOTE]
 >
->La zone par défaut appelée Zone de Principal est réduite par défaut lorsque vous sélectionnez le nom d’une marque. **Jusqu’à** vous créez une autre zone. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
+>La zone par défaut appelée Zone de Principal est réduite par défaut lorsque vous sélectionnez le nom d’une marque **jusqu’à** où vous créez une autre zone. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
 
 Pour créer une zone :
 
 1. Accédez à **Personnalisation** > **Activités** ou **Offres** et sélectionnez ensuite votre marque.
-1. Sélectionner **Créer une zone**.
+1. Sélectionnez **Créer une zone**.
 
    ![Créer une zone](/help/sites-cloud/authoring/assets/multisite-create-area.png)
 
@@ -171,7 +171,7 @@ Vous créez une zone en tant que Live Copy pour hériter du contenu ciblé sur l
 Pour créer une zone comme Live Copy :
 
 1. Accédez à **Personnalisation** > **Activités** ou **Offres** et sélectionnez ensuite votre marque.
-1. Sélectionner **Créer une zone comme Live Copy**.
+1. Sélectionnez **Créer une zone comme Live Copy**.
 
    ![Créer une zone comme Live Copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
 
@@ -212,13 +212,13 @@ Lorsque vous liez, seules les activités, expériences et offres de la zone sél
 Pour lier un site à une zone :
 
 1. Accédez au site (ou à la page) que vous souhaitez lier à une zone.
-1. Sélectionnez le site ou la page et sélectionnez **Afficher les propriétés**.
-1. Sélectionnez la variable **Personnalisation** .
+1. Sélectionnez le site ou la page, puis **Afficher les propriétés**.
+1. Sélectionnez l’onglet **Personalization** .
 1. Dans le menu **Marque**, sélectionnez la marque à laquelle vous souhaitez lier votre zone. Une fois la marque sélectionnée, les zones disponibles sont disponibles dans le menu **Référence de zone**. 
 
    ![Liaison de sites](/help/sites-cloud/authoring/assets/multisite-english.png)
 
-1. Sélectionnez la zone dans la **Référence de zone** menu déroulant et sélectionnez **Enregistrer**.
+1. Sélectionnez la zone dans le menu déroulant **Référence de zone** et sélectionnez **Enregistrer**.
 
    ![Référence de zone](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 
@@ -251,7 +251,7 @@ Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activi
 
    ![Suspendre la Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
-1. Sélectionner **Suspendre** pour suspendre l’activité. Les activités suspendues apparaissent en rouge.
+1. Sélectionnez **Suspendre** pour suspendre l’activité. Les activités suspendues apparaissent en rouge.
 
    ![Live Copy suspendue](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
@@ -259,10 +259,10 @@ Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activi
 
 Pour rompre l’héritage du contenu ciblé dans une activité :
 
-1. Accédez à la page sur laquelle vous souhaitez désolidariser la Live Copy du gabarit et sélectionnez **Ciblage** dans le menu déroulant du mode.
+1. Accédez à la page où vous souhaitez désolidariser la Live Copy du gabarit et sélectionnez **Ciblage** dans le menu déroulant du mode.
 1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir le statut d’héritage. Sélectionnez **Commencer le ciblage**.
 1. Sélectionnez **Désolidariser une Live Copy** dans le menu déroulant de la barre d’outils. AEM confirme que vous souhaitez détacher la Live Copy.
-1. Sélectionner **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la désolidarisation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est désormais locale.
+1. Sélectionnez **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la désolidarisation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est désormais locale.
 
    ![Activité locale](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
@@ -278,7 +278,7 @@ Pour restaurer l’héritage du contenu ciblé dans une activité :
 
    ![Reprise de la Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
-1. Sélectionner **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de la Live Copy. Toute modification apportée à l’activité actuelle est perdue si vous reprenez l’héritage.
+1. Sélectionnez **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de la Live Copy. Toute modification apportée à l’activité actuelle est perdue si vous reprenez l’héritage.
 
 ## Suppression de zones {#deleting-areas}
 
@@ -288,4 +288,4 @@ Pour supprimer une zone :
 
 1. Accédez à **Personnalisation** > **Activités** ou **Offres** et sélectionnez ensuite votre marque.
 1. Sélectionnez l’icône située en regard de la zone à supprimer.
-1. Sélectionner **Supprimer** et confirmez que vous souhaitez supprimer la zone.
+1. Sélectionnez **Supprimer** et confirmez que vous souhaitez supprimer la zone.

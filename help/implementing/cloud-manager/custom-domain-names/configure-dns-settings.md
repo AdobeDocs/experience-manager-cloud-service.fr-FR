@@ -40,7 +40,7 @@ Connectez-vous au serveur d’enregistrement de votre domaine et créez un enreg
 
 Un domaine apex est un domaine personnalisé qui ne contient pas de sous-domaine, tel que `example.com`. Un domaine apex est configuré avec un enregistrement `A`, `ALIAS` ou `ANAME` via votre fournisseur DNS. Des domaines apex doivent pointer vers des adresses IP spécifiques.
 
-Ajoutez ce qui suit : `A` des enregistrements des paramètres DNS de votre domaine par l’intermédiaire de votre fournisseur de domaine.
+Ajoutez les enregistrements `A` suivants aux paramètres DNS de votre domaine par l’intermédiaire de votre fournisseur de domaine.
 
 * `A RECORD`
 

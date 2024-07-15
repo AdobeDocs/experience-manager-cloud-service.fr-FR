@@ -25,36 +25,36 @@ Retraitez les fichiers d’un dossier si vous rencontrez l’une des deux situat
 
 Pour retraiter des ressources dans un dossier :
 
-1. Dans [!DNL Experience Manager], sur la page Ressources, sélectionnez les ressources nouvellement ajoutées ou les ressources que vous souhaitez retraiter.
+1. Dans [!DNL Experience Manager], sur la page Assets, sélectionnez les ressources nouvellement ajoutées ou les ressources que vous souhaitez retraiter.
 Si vous sélectionnez un dossier :
 
    * Le workflow prend en compte tous les fichiers du dossier sélectionné, de manière récursive.
    * Si le dossier principal sélectionné contient un ou plusieurs sous-dossiers avec des ressources, le workflow retraite chaque ressource de la hiérarchie de dossiers.
    * Il est conseillé d’éviter d’exécuter ce workflow sur une hiérarchie de dossiers contenant plus de 1 000 ressources.
 
-1. Sélectionner **[!UICONTROL Retraiter les ressources]**. Choisissez parmi les deux options suivantes :
+1. Sélectionnez **[!UICONTROL Retraiter Assets]**. Choisissez parmi les deux options suivantes :
 
-   ![Options de retraitement des ressources](assets/reprocessing-assets-options.png)
+   ![Retraitement des options Assets](assets/reprocessing-assets-options.png)
 
-   * **[!UICONTROL Processus complet]:** Sélectionnez cette option lorsque vous souhaitez exécuter le processus global, notamment le profil par défaut, le profil personnalisé, le traitement dynamique (s’il est configuré) et les workflows de post-traitement.
-   * **[!UICONTROL Avancé]:** Sélectionnez cette option pour choisir un retraitement avancé.
+   * **[!UICONTROL Processus complet] :** Sélectionnez cette option lorsque vous souhaitez exécuter le processus global, y compris le profil par défaut, le profil personnalisé, le traitement dynamique (s’il est configuré) et les workflows de post-traitement.
+   * **[!UICONTROL Avancé] :** Sélectionnez cette option pour choisir un retraitement avancé.
 
-     ![Options de retraitement des ressources avancées](assets/reprocessing-assets-options-advanced.png)
+     ![Options Assets de retraitement avancées](assets/reprocessing-assets-options-advanced.png)
 
      Sélectionnez l’une des options avancées suivantes :
 
-      * **[!UICONTROL Prévisualisation des rendus par défaut]:** Choisissez cette option lorsque vous souhaitez retraiter les rendus prévisualisés par défaut.
+      * **[!UICONTROL Rendus d’aperçu par défaut] :** Sélectionnez cette option lorsque vous souhaitez retraiter les rendus prévisualisés par défaut.
 
-      * **[!UICONTROL Métadonnées]:** Choisissez cette option lorsque vous souhaitez extraire des informations de métadonnées et des balises intelligentes pour les ressources sélectionnées.
+      * **[!UICONTROL Métadonnées] :** Sélectionnez cette option lorsque vous souhaitez extraire des informations de métadonnées et des balises intelligentes pour les ressources sélectionnées.
 
-      * **[!UICONTROL Profils de traitement]:** Choisissez cette option lorsque vous souhaitez retraiter un profil sélectionné. Vous pouvez choisir **[!UICONTROL Processus complet]** pour inclure le traitement par défaut et le profil personnalisé affecté au niveau du dossier.
+      * **[!UICONTROL Profils de traitement] :** Sélectionnez cette option lorsque vous souhaitez retraiter un profil sélectionné. Vous pouvez choisir l’option **[!UICONTROL Processus complet]** pour inclure le traitement par défaut et le profil personnalisé affecté au niveau du dossier.
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL Processus de post-traitement]:** Sélectionnez cette option si un traitement supplémentaire des ressources est nécessaire et ne peut pas être réalisé à l’aide des profils de traitement. D’autres workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
+      * **[!UICONTROL Processus de traitement Post] :** sélectionnez cette option lorsque le traitement supplémentaire des ressources est requis, ce qui ne peut pas être réalisé à l’aide des profils de traitement. D’autres workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
-Voir [utilisation des microservices de ressources et des profils de traitement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr) pour en savoir plus sur les profils de traitement et le workflow de post-traitement.
+Voir [Utilisation des microservices de ressources et des profils de traitement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr) pour en savoir plus sur les profils de traitement et le workflow de post-traitement.
 
-![Options de retraitement des ressources avancées 2](assets/reprocessing-assets-options-advanced-2.png)
+![Options Assets de retraitement avancées2](assets/reprocessing-assets-options-advanced-2.png)
 
 Après avoir sélectionné les options appropriées, cliquez sur **[!UICONTROL Retraiter]**. Le message de réussite s’affiche.
 
@@ -68,29 +68,29 @@ Les entreprises qui traitent des ressources numériques utilisent de plus en plu
 
 Comparé aux vocabulaires des langages naturels, le balisage des ressources numériques basé sur la taxonomie métier aide à les aligner avec les activités d’une entreprise et à assurer que les ressources les mieux adaptées apparaissent dans les recherches.
 
-En savoir plus sur [Balises intelligentes pour les ressources vidéo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=en).
+En savoir plus sur les [balises intelligentes pour les ressources vidéo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=en).
 
-En savoir plus sur [Retraiter les balises de couleur pour les images existantes dans la gestion des ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images).
+En savoir plus sur [Retraiter les balises de couleur pour les images existantes dans DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images).
 
 ### Recadrage intelligent {#reprocessing-smart-crop}
 
-En savoir plus sur [Recadrage intelligent Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) qui permet d’appliquer un recadrage spécifique (**[!UICONTROL Recadrage intelligent]** et le recadrage de pixels) et la configuration de l’accentuation aux ressources chargées.
+En savoir plus sur le [recadrage intelligent Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) qui vous permet d’appliquer un recadrage spécifique (**[!UICONTROL recadrage intelligent]** et recadrage de pixels) et une configuration d’accentuation aux ressources chargées.
 
 ### Métadonnées {#reprocessing-metadata}
 
 [!DNL Adobe Experience Manager Assets] conserve les métadonnées de chaque fichier. Cela permet d’obtenir une catégorisation et une organisation plus simples des ressources, ainsi que d’aider les personnes qui recherchent une ressource spécifique. Grâce à la possibilité d’extraire les métadonnées à partir des fichiers chargés dans Experience Manager Assets, la gestion des métadonnées s’intègre au workflow créatif. La possibilité de conserver et de gérer les métadonnées de vos fichiers permet aussi d’organiser et de traiter automatiquement les fichiers en fonction de leurs métadonnées.
 
-En savoir plus sur [Retraitement des profils de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=fr).
+En savoir plus sur le [retraitement des profils de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=fr).
 
 ### Retraitement de ressources Dynamic Media dans un dossier {#reprocessing-dynamic-media}
 
-Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez modifié. Pour plus d’informations, voir [retraiter les ressources Dynamic Media dans un dossier.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez modifié. Pour plus d&#39;informations, consultez la section [Retraiter les ressources Dynamic Media dans un dossier.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
 
 >[!NOTE]
 >
->Vous devez configurer [!DNL Dynamic Media] dans l’environnement pour activer la boîte de dialogue Dynamic Media.
+>Vous devez configurer [!DNL Dynamic Media] sur l’environnement pour activer la boîte de dialogue Dynamic Media.
 >
 
 ### Workflows
 
-En savoir plus sur [profils de traitement et workflows de post-traitement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr).
+En savoir plus sur les [profils de traitement et les workflows de post-traitement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr).

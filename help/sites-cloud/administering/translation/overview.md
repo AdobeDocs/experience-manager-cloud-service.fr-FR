@@ -36,7 +36,7 @@ Si votre fournisseur de services de traduction ne fournit pas de connecteur pour
 
 >[!NOTE]
 >
->Votre utilisateur doit être membre du `project-administrators` pour utiliser les fonctions Copie de la langue.
+>Votre utilisateur doit être membre du groupe `project-administrators` pour utiliser les fonctionnalités de copie de la langue.
 
 ## Bonnes pratiques {#best-practices}
 

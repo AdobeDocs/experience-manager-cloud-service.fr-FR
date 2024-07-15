@@ -1,6 +1,6 @@
 ---
 title: Comment connecter une base de données à [!DNL AEM Forms] as a Cloud Service ?
-description: Récupérez et enregistrez des données dans les services Web RESTful, les services Web SOAP et les services OData d’un formulaire adaptatif ou d’un processus AEM.
+description: Récupérez et enregistrez des données dans les services Web RESTful, les services Web basés sur SOAP et les services OData d’un formulaire adaptatif ou d’un processus AEM.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
@@ -50,7 +50,7 @@ Une fois que vous avez créé un modèle de données de formulaire (FDM), vous p
 
 La première étape de l’implémentation de l’intégration de données pour envoyer un formulaire adaptatif à une base de données consiste à identifier et configurer les sources de données qui stockent les informations que vous souhaitez utiliser dans le Forms adaptatif. Ensuite, vous créez un modèle de données de formulaire (FDM) qui utilise des objets, des propriétés et des services de modèle de données provenant d’une ou de plusieurs sources de données. Vous pouvez créer un Forms adaptatif basé sur un modèle de données de formulaire (FDM) où les champs de formulaire adaptatif sont liés aux propriétés de source de données respectives.
 
-[!DNL AEM Forms] vous permet également de créer un modèle de données de formulaire (FDM) indépendant des sources de données et d’associer ou d’associer ultérieurement des objets et des propriétés de modèle de données dans le modèle de données de formulaire (FDM) à la source de données. Cela élimine toute dépendance aux sources de données lorsque vous travaillez sur un modèle de données de formulaire (FDM).
+[!DNL AEM Forms] vous permet également de créer un modèle de données de formulaire (FDM) indépendant des sources de données et d’associer ou de lier ultérieurement des objets et des propriétés de modèle de données dans le modèle de données de formulaire (FDM) à la source de données. Cela élimine toute dépendance aux sources de données lorsque vous travaillez sur un modèle de données de formulaire (FDM).
 
 Consultez les sections suivantes pour commencer, comprendre et mettre en oeuvre l’intégration des données :
 

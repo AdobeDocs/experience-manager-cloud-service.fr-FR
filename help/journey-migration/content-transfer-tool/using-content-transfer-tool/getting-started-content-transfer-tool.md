@@ -23,7 +23,7 @@ ht-degree: 76%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=fr" text="Notes de mise à jour"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portail de distribution de logiciels"
 
-Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module à l’aide de [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus de détails sur la dernière version, voir [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=fr).
+Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais de [Package Manager](/help/implementing/developing/tools/package-manager.md) sur votre instance Adobe Experience Manager (AEM) source. Veillez à télécharger la dernière version. Pour plus de détails sur la dernière version, voir [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 Seules les versions 2.0.0 et ultérieures seront prises en charge. Il est conseillé d’utiliser la version la plus récente.
 
@@ -47,7 +47,7 @@ L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle n
 
 Comprendre les problèmes de connexion SSL/TLS peut parfois être difficile. Pour résoudre les problèmes de connexion lors d’un processus d’extraction, vous pouvez activer la journalisation SSL via la console système de l’environnement AEM source en procédant comme suit :
 
-1. Accédez à la console web Adobe Experience Manager sur votre instance source en accédant à **Outils > Opérations > Console web** ou directement à l’URL à l’adresse *https://serveraddress:serverport/system/console/configMgr*
+1. Accédez à la console web Adobe Experience Manager sur votre instance source, en accédant à **Outils > Opérations > Console web** ou directement à l’URL à l’adresse *https://serveraddress:serverport/system/console/configMgr*
 1. Recherchez **Configuration du service d’extraction de l’outil de transfert de contenu**
 1. Utilisez le bouton représentant un crayon pour modifier ses valeurs de configuration.
 1. Activez la variable **Activation de la journalisation SSL pour l’extraction** , puis appuyez sur **Enregistrer**:
@@ -80,7 +80,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
 1. Connectez-vous à Cloud Acceleration Manager (CAM) et cliquez sur le projet CAM que vous avez créé précédemment afin d’évaluer votre préparation au passage à AEM as a Cloud Service. Si vous n’avez pas créé de projet CAM, reportez-vous à la section Création et gestion d’un projet dans CAM.
 
-1. Cliquez sur le bouton **Transfert de contenu** pour ouvrir la vue Liste des jeux de migration.
+1. Cliquez sur la carte **Transfert de contenu** pour ouvrir la vue Liste des jeux de migration.
 
    ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -100,7 +100,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
    >
    >Le nom doit respecter les mêmes conventions qu’un nœud AEM. Il ne peut donc pas contenir les caractères suivants : . / : [ ] | *
 
-1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Sélectionnez le symbole des trois points (**..**) pour ouvrir la liste déroulante et sélectionnez **Copier la clé d’extraction**. Vous avez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
+1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Sélectionnez le symbole des trois points (**...**) pour ouvrir la liste déroulante et sélectionnez **Copier la clé d’extraction**. Vous avez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
 
    >[!NOTE]
    >
@@ -181,11 +181,11 @@ Pour exécuter une vérification de taille, procédez comme suit :
 
    ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Cela ouvre la fenêtre **Vérifier la taille** boîte de dialogue.
+1. Cela ouvre la boîte de dialogue **Vérifier la taille**.
 
    ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Cliquez sur **Vérifier la taille** pour démarrer le processus. Vous revenez alors à la vue Liste jeu de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
+1. Cliquez sur **Vérifier la taille** pour lancer le processus. Vous revenez alors à la vue Liste jeu de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
@@ -204,4 +204,4 @@ Pour exécuter une vérification de taille, procédez comme suit :
 
 ## Prochaines étapes {#whats-next}
 
-Maintenant que vous avez appris à créer un jeu de migration, vous êtes prêt à en apprendre plus sur les processus d’extraction et d’ingestion dans l’outil de transfert de contenu. Avant d’apprendre ces processus, vous devez consulter [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service.
+Maintenant que vous avez appris à créer un jeu de migration, vous êtes prêt à en apprendre plus sur les processus d’extraction et d’ingestion dans l’outil de transfert de contenu. Avant d’apprendre ces processus, vous devez consulter [Gestion de référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service.

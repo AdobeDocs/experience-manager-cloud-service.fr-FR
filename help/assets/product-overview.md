@@ -27,13 +27,13 @@ AEM Assets sert de source unique de vérité et toutes les ressources approuvée
 
 Les propriétés les plus courantes de Content Hub, telles que les filtres de recherche, les champs disponibles lors de l’ajout ou de l’importation de ressources, les propriétés de ressource, le contenu de bannière pour la valorisation de marque, sont configurables et un administrateur peut facilement configurer l’interface utilisateur de Content Hub en fonction de ses besoins.
 
-**Permettre aux non-créatifs de modifier et de remixer du contenu tout en restant fidèles à la marque**
+**Permettre aux non-créatifs de modifier et de remixer du contenu tout en restant sur la marque**
 
 Content Hub vous permet de créer du contenu avec Adobe Express (si vous disposez de droits d’Adobe Express). Vous pouvez modifier du contenu existant à l’aide d’outils simples d’utilisation, produire des variations de marque avec des modèles et des éléments de marque et créer du contenu avec les dernières fonctionnalités GenAI d’Adobe Firefly.
 
-**Obtenir des informations sur l’utilisation du contenu par les équipes**
+**Obtenez des informations sur l’utilisation du contenu entre les équipes**
 
-[!DNL Content Hub] fournit des informations précieuses sur les ressources, en répondant à un défi commun auquel les parties prenantes marketing sont souvent confrontées : les statistiques d’utilisation des ressources utilisées dans les campagnes marketing, les canaux et les différentes régions. En acquérant une compréhension claire des performances et de la popularité des ressources, elle fournit des informations exploitables essentielles à l’amélioration de l’expérience utilisateur.
+[!DNL Content Hub] fournit des informations précieuses sur les ressources, ce qui permet de répondre à un défi commun auquel les parties prenantes marketing sont souvent confrontées : les statistiques d’utilisation des ressources utilisées dans les campagnes marketing, les canaux et les différentes régions. En acquérant une compréhension claire des performances et de la popularité des ressources, elle fournit des informations exploitables essentielles à l’amélioration de l’expérience utilisateur.
 
 ## Conditions préalables {#prerequisites-content-hub}
 
@@ -41,14 +41,14 @@ Content Hub nécessite un environnement de création de production as a Cloud Se
 
 ## Comment accéder à Content Hub ? {#access-content-hub}
 
-[Après avoir configuré Content Hub](/help/assets/deploy-content-hub.md) et l’ajout d’un utilisateur à la variable [Profil de produits Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub est accessible à l’aide des méthodes suivantes :
+[Après avoir configuré Content Hub](/help/assets/deploy-content-hub.md) et ajouté un utilisateur au [profil de produit Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub est accessible à l’aide des méthodes suivantes :
 
 * Accédez à Content Hub à l’aide du lien suivant :
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* Connectez-vous à experience.adobe com et cliquez sur **[!UICONTROL Experience Manager Assets Content Hub]** disponible dans le **[!UICONTROL Accès rapide]** section :
-  ![Accès Content Hub](assets/access-content-hub.png)
+* Connectez-vous à experience.adobe com et cliquez sur **[!UICONTROL Experience Manager Assets Content Hub]** disponible dans la section **[!UICONTROL Accès rapide]** :
+  ![Accès à Content Hub](assets/access-content-hub.png)
 
 * Connectez-vous à experience.adobe com et cliquez sur **[!UICONTROL Experience Manager Assets Content Hub]** disponible dans le sélecteur de produits :
   ![Méthode d’accès Content Hub 3](assets/access-content-hub-alternate.png)
@@ -67,19 +67,19 @@ Indiquez un objet, une description de la recommandation et joignez des fichiers,
 
 Procédez comme suit pour configurer Content Hub pour votre équipe :
 
-1. [Activation de Content Hub pour Experience Manager Assets à l’aide de Cloud Manager](deploy-content-hub.md#enable-content-hub).
+1. [Activez Content Hub pour Experience Manager Assets à l’aide de Cloud Manager](deploy-content-hub.md#enable-content-hub).
 
 1. [Administrateur Content Hub intégré](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [Ajout d’utilisateurs Content Hub clés](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [Ajouter des utilisateurs Content Hub clés](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
-1. [Créateurs ou administrateurs DAM pour approuver des ressources à l’aide de ressources Experience Manager](approve-assets.md).
+1. [Les auteurs ou administrateurs DAM doivent approuver les ressources à l’aide de ressources Experience Manager](approve-assets.md).
 
-1. [Les administrateurs peuvent configurer l’interface utilisateur de Content Hub pour d’autres utilisateurs.](configure-content-hub-ui-options.md).
+1. [Les administrateurs peuvent configurer l’interface utilisateur de Content Hub pour d’autres utilisateurs](configure-content-hub-ui-options.md).
 
-1. [Octroi de l’accès Content Hub à d’autres utilisateurs de l’équipe](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [Accordez l’accès à Content Hub à d’autres utilisateurs de l’équipe ](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
-1. [Accès au portail Content Hub](#access-content-hub).
+1. [Accéder au portail Content Hub](#access-content-hub).
 
 1. [Fournir des commentaires Content Hub](#provide-content-hub-feedback).
 
@@ -93,7 +93,7 @@ Procédez comme suit pour configurer Content Hub pour votre équipe :
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
-      <strong>Configuration de l’interface utilisateur de Content Hub</strong>
+      <strong> Configuration de l’interface utilisateur de Content Hub</strong>
       </a>
    </div>
    <p>
@@ -136,11 +136,11 @@ Procédez comme suit pour configurer Content Hub pour votre équipe :
    </a>
    <div>
       <a href="/help/assets/share-assets-content-hub.md">
-      <strong>Partage de ressources disponibles dans Content Hub</strong>
+      <strong> Partager des ressources disponibles dans Content Hub</strong>
       </a>
    </div>
    <p>
-      <em>Découvrez comment partager une ou plusieurs ressources sous forme de lien, puis y accéder.</em>
+      <em>Découvrez comment partager une ou plusieurs ressources en tant que lien, puis y accéder.</em>
    </p>
 </td>
 <td>
@@ -166,7 +166,7 @@ Procédez comme suit pour configurer Content Hub pour votre équipe :
       </a>
    </div>
    <p>
-      <em> Le module de contenu fournit des informations précieuses sur les ressources, ce qui permet de répondre à un défi commun auquel les parties prenantes marketing sont souvent confrontées.</em>
+      <em> Le module de contenu fournit des insights précieux sur les ressources, en répondant à un défi commun auquel les parties prenantes marketing rencontrent souvent </em>
    </p>
 </td>
 </table>

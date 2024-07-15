@@ -178,7 +178,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 #### Application de profils d’image Dynamic Media aux dossiers à partir des propriétés {#applying-image-profiles-to-folders-from-properties}
 
-1. Sélectionnez le logo du Experience Manager et accédez à **[!UICONTROL Ressources]**.
+1. Sélectionnez le logo de l’Experience Manager et accédez à **[!UICONTROL Assets]**.
 1. Accédez à un *dossier* (et non à une ressource) auquel vous souhaitez appliquer un profil d’image.
 1. Selon l’affichage dossier dans lequel vous êtes, procédez comme suit :
    * En mode Carte, placez le pointeur sur le dossier, puis cochez la case pour le sélectionner.

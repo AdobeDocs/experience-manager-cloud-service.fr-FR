@@ -29,7 +29,7 @@ Il existe trois grandes catégories de tests pris en charge par le pipeline Clou
 
 1. [Tests d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * Le test d’audit d’expérience est activé dans tous les pipelines de production de Cloud Manager et ne peut pas être ignoré.
+   * Le test de contrôle de l’expérience est activé dans tous les pipelines de production Cloud Manager et ne peut pas être ignoré.
 
 Ces tests peuvent être :
 

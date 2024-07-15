@@ -63,7 +63,7 @@ Les modèles de site sont simplement des packages avec une structure logique qui
 * `files` : dossier contenant le kit d’interface utilisateur, le fichier XD et éventuellement d’autres fichiers.
 * `previews` : dossier contenant des captures d’écran du modèle de site.
 * `site` : package de contenu du contenu copié pour chaque site créé à partir de ce modèle, tel que des modèles de page, des pages, etc.
-* `theme`: sources de la variable [thème du site](site-themes.md) pour modifier l’aspect du site, notamment CSS, JavaScript, etc.
+* `theme` : sources du [thème du site](site-themes.md) pour modifier l’aspect du site, y compris CSS, JavaScript, etc.
 
 ## Modèle de site standard {#standard-site-template}
 

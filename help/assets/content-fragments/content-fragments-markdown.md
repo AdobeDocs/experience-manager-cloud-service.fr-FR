@@ -14,13 +14,13 @@ ht-degree: 86%
 
 # Markdown {#markdown}
 
-Quand vous êtes [création](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragment de contenu utilise *markdown* pour vous permettre d’écrire facilement du contenu pour une diffusion sans interface utilisateur ou la création de pages :
+Lorsque vous êtes [en création](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragment de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire facilement du contenu pour une diffusion sans interface utilisateur ou la création de pages :
 
 >[!NOTE]
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ).
+>Il existe deux éditeurs pour la création de fragments de contenu. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**. Pour plus d’informations sur le nouvel éditeur, voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), (principalement accessible à partir de la console **Fragments de contenu**).
 
 ![Éditeur de balisage](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

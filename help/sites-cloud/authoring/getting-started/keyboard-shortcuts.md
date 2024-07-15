@@ -80,7 +80,7 @@ Vous pouvez désactiver les raccourcis clavier à deux emplacements :
 
 ## Raccourcis clavier pour l’éditeur de page {#keyboard-shortcuts-for-the-page-editor}
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles, d’autres à la fonction [modification de page](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles, d’autres à la [modification de page](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 ## Raccourcis clavier de la console Fragments de contenu {#keyboard-shortcuts-for-the-content-fragments-console}
 

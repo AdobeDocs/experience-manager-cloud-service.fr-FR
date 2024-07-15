@@ -21,7 +21,7 @@ ht-degree: 47%
 
 # Importation ou exportation d’actifs Forms adaptatifs et AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-Vous pouvez déplacer le Forms adaptatif et les ressources connexes telles que les thèmes de formulaire adaptatif, le modèle de données de formulaire (FDM), les modèles de formulaire adaptatif, les fragments et les PDF forms entre [!DNL AEM Forms] instances.
+Vous pouvez déplacer le Forms adaptatif et les ressources connexes telles que les thèmes de formulaire adaptatif, le modèle de données de formulaire (FDM), les modèles de formulaire adaptatif, les fragments et les PDF forms entre les instances [!DNL AEM Forms].
 
 ## Téléchargement d’Forms adaptatif, de PDF forms ou de ressources connexes {#download-forms-amp-documents-assets}
 
@@ -32,11 +32,11 @@ Pour télécharger des formulaires ou des ressources connexes :
 
    ![Sélectionner Forms](/help/forms/assets/select-forms.png)
 
-1. Sélectionnez les ressources, puis cliquez sur le bouton **[!UICONTROL Télécharger]** à partir du rail supérieur.
+1. Sélectionnez les ressources, puis cliquez sur l’icône **[!UICONTROL Télécharger]** dans le rail supérieur.
 
    ![Télécharger Forms](/help/forms/assets/download-form.png)
 
-   Lorsque vous téléchargez le formulaire, la variable **[!UICONTROL Télécharger les ressources]** s’affiche.
+   Lorsque vous téléchargez le formulaire, la boîte de dialogue **[!UICONTROL Télécharger les ressources(s)]** s’affiche.
 
    ![Téléchargement de ressources de formulaires](/help/forms/assets/download-form-assets.png)
 
@@ -56,7 +56,7 @@ Pour charger un formulaire ou une ressource connexe :
 
 1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Charger un fichier]**. Une boîte de dialogue s’affiche.
 
-   ![Chargement de Forms](/help/forms/assets/form-upload.png)
+   ![Télécharger Forms](/help/forms/assets/form-upload.png)
 
 1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner d’autres types de fichiers pris en charge. Sélectionnez **[!UICONTROL Ouvrir]**. Le nom de dossier ou de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
 
@@ -66,25 +66,25 @@ Pour charger un formulaire ou une ressource connexe :
 
    >[!NOTE]
    >
-   > Lorsqu’un nom entre en conflit avec différents types de ressources, le chargement d’un package ne remplace pas la hiérarchie de dossiers existante. Par exemple, si vous disposez d’un formulaire adaptatif nommé &quot;Formation&quot; à l’emplacement `/content/dam/formsanddocuments` sur un serveur. Vous pouvez télécharger le formulaire adaptatif et le télécharger sur un autre serveur. Le deuxième serveur comporte également un dossier nommé &quot;Entraînement&quot; au même emplacement. `/content/dam/formsanddocuments`. Le chargement échoue.
+   > Lorsqu’un nom entre en conflit avec différents types de ressources, le chargement d’un package ne remplace pas la hiérarchie de dossiers existante. Par exemple, si vous disposez d’un formulaire adaptatif nommé &quot;Formation&quot; à l’emplacement `/content/dam/formsanddocuments` sur un serveur. Vous pouvez télécharger le formulaire adaptatif et le télécharger sur un autre serveur. Le deuxième serveur comporte également un dossier nommé &quot;Training&quot; au même emplacement `/content/dam/formsanddocuments`. Le chargement échoue.
 
 ## Télécharger un thème
 
 Vous pouvez exporter des thèmes dans [!DNL AEM Forms] que vous pouvez utiliser dans d’autres projets ou instances. AEM permet de télécharger des thèmes sous la forme d&#39;un fichier zip, que vous pouvez télécharger sur l&#39;instance.
 Pour télécharger un thème :
 
-1. Connectez-vous à [!DNL Experience Manager Forms] Instance de création.
-1. Sélectionner **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**.
+1. Connectez-vous à votre instance d’auteur [!DNL Experience Manager Forms].
+1. Sélectionnez **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**.
 
    ![Sélectionner un thème](/help/forms/assets/select-theme.png)
 
-1. Sur la page Thèmes, sélectionnez le thème et cliquez sur le bouton **[!UICONTROL Télécharger]** à partir du rail supérieur.
+1. Sur la page Thèmes, sélectionnez le thème et cliquez sur l’icône **[!UICONTROL Télécharger]** dans le rail supérieur.
 
    ![Télécharger le thème](/help/forms/assets/download-theme.png)
 
-   Lorsque vous téléchargez le thème, la variable **[!UICONTROL Télécharger les ressources]** s’affiche.
+   Lorsque vous téléchargez le thème, la boîte de dialogue **[!UICONTROL Télécharger les ressources(s)]** s’affiche.
 
-   ![Téléchargement de ressources de thème](/help/forms/assets/download-theme-asset.png)
+   ![Télécharger des ressources de thème](/help/forms/assets/download-theme-asset.png)
 
 1. Cliquez sur **[!UICONTROL Télécharger]**.
 
@@ -119,12 +119,12 @@ Pour créer un dossier :
 
    ![Sélectionner le formulaire](/help/forms/assets/select-forms.png)
 
-1. Sélectionner **[!UICONTROL Créer]** > **[!UICONTROL Dossier]**.
+1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Dossier]**.
 
    ![Créer un dossier](/help/forms/assets/create-folder.png)
 
-   La variable **[!UICONTROL Ajouter un dossier]** s’affiche.
-1. Saisissez le **[!UICONTROL Titre]**. La variable **[!UICONTROL Nom]** renseigne automatiquement lorsque vous tapez le **[!UICONTROL Titre]**.
+   La boîte de dialogue **[!UICONTROL Ajouter un dossier]** s’affiche.
+1. Saisissez le **[!UICONTROL Titre]**. Le **[!UICONTROL Nom]** est automatiquement renseigné lorsque vous tapez le **[!UICONTROL Titre]**.
 
    ![Ajouter un dossier](/help/forms/assets/add-folder.png)
 
@@ -147,24 +147,24 @@ Vous pouvez utiliser des ressources existantes pour créer rapidement une ressou
 Pour créer des copies de ressources :
 
 1. Connectez-vous à l’instance [!DNL Experience Manager Forms].
-1. Sur la page Ressources appropriées, sélectionnez une ou plusieurs ressources. L’interface utilisateur affiche la variable **[!UICONTROL Copier]** Icône
-1. Sélectionner **[!UICONTROL Copier]**. L’interface utilisateur affiche la variable ![Icône Coller](/help/forms/assets/Smock_Paste_18_N.svg) Icône
+1. Sur la page Ressources appropriées, sélectionnez une ou plusieurs ressources. L’interface utilisateur affiche l’icône **[!UICONTROL Copier]** .
+1. Sélectionnez **[!UICONTROL Copier]**. L’interface utilisateur affiche l’icône ![Paste icon](/help/forms/assets/Smock_Paste_18_N.svg) .
 
-   ![Copie d’une ressource](/help/forms/assets/copy-asset.png)
+   ![Copier la ressource](/help/forms/assets/copy-asset.png)
 
    Vous pouvez également choisir d’accéder à un dossier avant de le coller. Différents dossiers peuvent contenir des ressources portant le même nom. Pour plus d’informations sur les dossiers, voir [Dossiers et organisation des actifs](#folders-and-organizing-assets).
-1. Sélectionner **[!UICONTROL Coller]**.
+1. Sélectionnez **[!UICONTROL Coller]**.
 
    ![Coller la ressource](/help/forms/assets/paste-asset.png)
 
-1. La variable **[!UICONTROL Coller]** s’affiche. Le système génère automatiquement des noms et des titres aux nouvelles copies des ressources, mais vous pouvez modifier les titres et les noms des ressources.
+1. La boîte de dialogue **[!UICONTROL Coller]** s’affiche. Le système génère automatiquement des noms et des titres aux nouvelles copies des ressources, mais vous pouvez modifier les titres et les noms des ressources.
 
-   Si vous copiez et collez les ressources au même endroit, un suffixe &quot;-CopyXX&quot; est ajouté au nom existant de la variable `asset`. Si aucun titre n’existait pour la ressource copiée, le champ de titre généré automatiquement reste vide.
+   Si vous copiez et collez les ressources au même endroit, un suffixe &quot;-CopyXX&quot; est ajouté au nom existant de `asset`. Si aucun titre n’existait pour la ressource copiée, le champ de titre généré automatiquement reste vide.
 
-   ![Coller la ressource à un nouvel emplacement](/help/forms/assets/paste-click-asset.png)
+   ![Coller la ressource au nouvel emplacement](/help/forms/assets/paste-click-asset.png)
 
-   Si nécessaire, modifiez la variable **[!UICONTROL Titre]** avec lequel vous souhaitez enregistrer la copie de la ressource. La variable **[!UICONTROL Nom]** renseigne automatiquement lorsque vous tapez le **[!UICONTROL Titre]**.
-1. Sélectionner **[!UICONTROL Coller]**. De nouvelles copies des ressources copiées sont créées.
+   Si nécessaire, modifiez le **[!UICONTROL titre]** avec lequel vous souhaitez enregistrer la copie de la ressource. Le **[!UICONTROL Nom]** est automatiquement renseigné lorsque vous tapez le **[!UICONTROL Titre]**.
+1. Sélectionnez **[!UICONTROL Coller]**. De nouvelles copies des ressources copiées sont créées.
 
 ## Rechercher {#search-forms}
 
@@ -173,7 +173,7 @@ Lorsque vous disposez d’un grand nombre de ressources, la recherche de la ress
 Pour rechercher la ressource :
 
 1. Connectez-vous à l’instance [!DNL Experience Manager Forms].
-1. Cliquez sur le bouton ![icône de recherche](assets/folder-search-icon.svg) icône de recherche.
+1. Cliquez sur l’icône de recherche ![icône de recherche](assets/folder-search-icon.svg).
 
    ![Formulaire de recherche](/help/forms/assets/search-form.png)
 
@@ -183,7 +183,7 @@ Pour rechercher la ressource :
 
    ![Recherche de ressources](/help/forms/assets/search-bar.png)
 
-Pour plus d’informations et d’instructions sur l’utilisation de la recherche, voir [Rechercher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr).
+Pour plus d’informations et d’instructions sur l’utilisation de la recherche, voir [Recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr).
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

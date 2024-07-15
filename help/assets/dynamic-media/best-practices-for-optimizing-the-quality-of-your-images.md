@@ -25,13 +25,13 @@ Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images D
 **Imagerie dynamique :**
 
 * L’activation de l’imagerie dynamique dans Dynamic Media permet l’optimisation automatique du format, de la taille et de la qualité des images en fonction des fonctionnalités du navigateur client.
-Vous souhaitez en savoir plus ? Accédez à [Imagerie dynamique](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
+Vous souhaitez en savoir plus ? Accédez à [Smart Imaging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Cela améliore les performances de diffusion des images en réglant dynamiquement ces paramètres.
-* Vous pouvez évaluer l’imagerie dynamique à l’aide de l’outil d’auto-évaluation. [Instantané](https://snapshot.scene7.com/).
+* Vous pouvez évaluer l’imagerie dynamique à l’aide de l’outil d’auto-évaluation [Instantané](https://snapshot.scene7.com/).
 
 **Formats d’image :**
 
-* Évitez d’utiliser des caractères explicites `fmt=webp` ou `fmt=avif` dans une URL, sauf si cela est spécifiquement requis pour un cas d’utilisation.
+* Évitez d’utiliser des commandes `fmt=webp` ou `fmt=avif` explicites dans une URL, sauf si cela est spécifiquement requis pour un cas d’utilisation.
 * L’imagerie dynamique sélectionne automatiquement le meilleur format, ce qui optimise les gains de bande passante.
 
 **Comportement par défaut :**
@@ -47,10 +47,10 @@ En prenant des décisions éclairées sur les formats d’image et en activant l
 
 Considérations essentielles pour l’utilisation des images source :
 
-* **Format de l’image source :**
+* **Format d’image Source :**
    * L’utilisation de formats sans perte tels que PNG, TIFF ou PSD garantit que la qualité de l’image reste élevée sans aucun artefact de compression.
    * Ces formats conservent toutes les données d’origine, ce qui les rend idéales pour la modification et le traitement ultérieur.
-* **Taille de l’image source :**
+* **Taille de l’image Source :**
    * En commençant par une image haute résolution, vous bénéficiez de davantage de détails et de flexibilité.
    * Lorsque les images doivent être affichées à des tailles différentes (par exemple, sur différents appareils ou à différentes résolutions d’écran), le fait d’avoir une image source plus grande permet une meilleure mise à l’échelle.
    * Pour les images qui prennent en charge le zoom (comme les photos de produit), visez les dimensions d’environ 2 000 pixels ou plus sur le côté le plus long.
@@ -91,7 +91,7 @@ Avec Experience Manager, vous pouvez accentuer les images lors de l’ingestion,
 
 Vous pouvez utiliser deux méthodes d’accentuation d’image :
 
-* Accentuation simple (`&op_sharpen`) : à l’instar du filtre d’accentuation utilisé dans Photoshop, l’accentuation simple applique une accentuation de base à l’affichage final de l’image à la suite d’un redimensionnement dynamique. Cependant, cette méthode ne peut pas être configurée par l’utilisateur. La bonne pratique consiste à éviter d’utiliser `&op_sharpen` sauf si nécessaire.
+* Accentuation simple (`&op_sharpen`) : à l’instar du filtre d’accentuation utilisé dans Photoshop, l’accentuation simple applique une accentuation de base à l’affichage final de l’image à la suite d’un redimensionnement dynamique. Cependant, cette méthode ne peut pas être configurée par l’utilisateur. La bonne pratique consiste à éviter d’utiliser `&op_sharpen`, sauf si nécessaire.
 * Masquage flou (`&op_USM`) : le masquage flou est un filtre d’accentuation standard. La bonne pratique consiste à accentuer les images à l’aide de l’accentuation en suivant les instructions ci-dessous. L’accentuation permet de contrôler les trois paramètres suivants :
 
    * `&op_sharpen=`quantité,rayon,seuil
@@ -142,7 +142,7 @@ La bonne pratique pour la compression JPG consiste à utiliser `&qlt=85,0`.
 Le paramètre `jpegSize` est utile pour garantir qu’une image n’excède pas une certaine taille pour sa diffusion sur les appareils dont la mémoire est limitée.
 
 * Ce paramètre est défini en kilo-octets (`jpegSize=&lt;size_in_kilobytes&gt;`). Il définit la taille maximale autorisée pour la diffusion de l’image.
-* `&jpegSize=` interagit avec le paramètre de compression JPG `&qlt=`. Si la réponse JPG avec le paramètre de compression JPG spécifié (`&qlt=`) ne dépasse pas la valeur jpegSize, l’image est renvoyée avec `&qlt=` tel que défini. Sinon, `&qlt=` est graduellement diminué jusqu’à ce que l’image s’adapte à la taille maximale autorisée. Ou, jusqu’à ce que le système détermine qu’il ne peut pas s’adapter et renvoie une erreur.
+* `&jpegSize=` interagit avec le paramètre de compression JPG `&qlt=`. Si la réponse JPG avec le paramètre de compression JPG spécifié (`&qlt=`) ne dépasse pas la valeur jpegSize, l’image est renvoyée avec `&qlt=` tel que défini. Sinon, `&qlt=` est graduellement diminué jusqu’à ce que l’image corresponde à la taille maximale autorisée. Ou, jusqu’à ce que le système détermine qu’il ne peut pas s’adapter et renvoie une erreur.
 
 Une bonne pratique consiste à définir `&jpegSize=` et à ajouter le paramètre `&qlt=` si vous diffusez des images JPG vers des appareils dont la mémoire est limitée.
 

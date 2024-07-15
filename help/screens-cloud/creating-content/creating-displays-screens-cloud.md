@@ -29,7 +29,7 @@ Ce document vous aide à comprendre comment créer et gérer des affichages dans
 Pour créer l’affichage à partir du fournisseur de services Screens, procédez comme suit :
 
 1. Accédez au fournisseur de services Screens à partir de votre instance AEM Cloud Service.
-1. Sélectionner **Affichages** dans le panneau de navigation de gauche, puis cliquez sur **Créer** dans le coin supérieur droit de l’écran.
+1. Sélectionnez **Affiche** dans le panneau de navigation de gauche et cliquez sur **Créer** dans le coin supérieur droit de l’écran.
 
    ![image](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -37,7 +37,7 @@ Pour créer l’affichage à partir du fournisseur de services Screens, procéde
 
    ![image](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Saisissez le titre comme **LoopingChannelDisplay** in **Nom d’affichage** et cliquez sur **Créer**.
+1. Saisissez le titre **LoopingChannelDisplay** dans **Nom d’affichage** et cliquez sur **Créer**.
 
    ![image](/help/screens-cloud/assets/display/disp3.png)
 
@@ -120,7 +120,7 @@ Vous pouvez déplacer du contenu vers vos nouveaux dossiers pour mieux organiser
 
 ![image](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Remarque** : Le dossier doit être sélectionné dans le rail latéral de dossiers. En outre, la navigation dans le chemin de navigation doit afficher le nom du dossier actif en regard de **Affichages**.
+**Remarque** : Le dossier doit être sélectionné dans le rail latéral de dossiers. De plus, la navigation dans le chemin de navigation doit afficher le nom du dossier actif en regard de **Affichages**.
 
 ## Comment supprimer du contenu d’un dossier {#delete-folder}
 

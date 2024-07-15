@@ -69,23 +69,23 @@ Créez une racine de langue comme page racine d’une copie de langue qui identi
 
 Pour créer la racine de langue, créez une page, puis utilisez le code de langue ISO comme valeur de la propriété **Nom**. Le code de la langue doit être dans l’un des formats suivants :
 
-* `<language-code>` - Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple : `en`.
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - Le code de pays pris en charge est un code à deux lettres en minuscules ou en majuscules, comme défini par la norme ISO 3166, par exemple : `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - Le code de langue pris en charge est un code à deux lettres tel que défini par la norme ISO-639-1, par exemple `en`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - Le code de pays pris en charge est un code à deux lettres en minuscules ou en majuscules, tel que défini par la norme ISO 3166, par exemple `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. La variable **Nom** est utilisée comme nom du noeud de page dans le référentiel et détermine donc le chemin d’accès de la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. La propriété **Name** est utilisée comme nom du noeud de page dans le référentiel et détermine donc le chemin d’accès de la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Accédez aux sites.
 1. Sélectionnez le site pour lequel vous souhaitez créer une copie de langue.
-1. Sélectionner **Créer**, puis sélectionnez **Page**.
+1. Sélectionnez **Créer**, puis **Page**.
 
    ![Création d’une page](../assets/create-page.png)
 
-1. Sélectionnez le modèle de page, puis sélectionnez **Suivant**.
-1. Dans le **Nom** saisissez le code pays au format de `<language-code>` ou `<language-code>_<country-code>`, par exemple : `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
+1. Sélectionnez le modèle de page, puis **Suivant**.
+1. Dans le champ **Name** , saisissez le code de pays au format `<language-code>` ou `<language-code>_<country-code>`, par exemple, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
 
    ![Création d’une page racine de langue](../assets/create-language-root.png)
 
-1. Sélectionnez **Créer**. Dans la boîte de dialogue de confirmation, sélectionnez l’une des options suivantes : **Terminé** pour revenir à la console Sites, ou **Ouvrir** pour ouvrir la copie de langue.
+1. Sélectionnez **Créer**. Dans la boîte de dialogue de confirmation, sélectionnez **Terminé** pour revenir à la console Sites ou **Ouvrir** pour ouvrir la copie de langue.
 
 ## Affichage du statut des racines de langue {#seeing-the-status-of-language-roots}
 

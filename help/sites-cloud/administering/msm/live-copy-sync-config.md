@@ -46,7 +46,7 @@ Chaque configuration du déploiement utilise un déclencheur qui entraîne la su
 
 Le tableau ci-dessous répertorie les configurations de déploiement prêtes à l’emploi installées avec AEM. Le tableau contient les actions de déclenchement et de synchronisation de chaque configuration du déploiement.
 
-Si les actions de configuration de déploiement installées ne répondent pas à vos besoins, vous pouvez [créez une configuration de déploiement.](#creating-a-rollout-configuration)
+Si les actions de configuration de déploiement installées ne répondent pas à vos besoins, vous pouvez [créer une configuration de déploiement.](#creating-a-rollout-configuration)
 
 | Nom | Description | Déclencheur | [Actions de synchronisation](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Si les actions de configuration de déploiement installées ne répondent pas à
 
 Le tableau ci-dessous répertorie les actions de synchronisation prêtes à l’emploi d’AEM.
 
-Si les actions installées ne répondent pas à vos besoins, vous pouvez [Créez une action de synchronisation.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Si les actions installées ne répondent pas à vos besoins, vous pouvez [Créer une action de synchronisation.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | Nom de l’action | Description | Propriétés |
 |---|---|---|
@@ -85,7 +85,7 @@ Si les actions installées ne répondent pas à vos besoins, vous pouvez [Créez
 
 ### Créer une configuration de déploiement {#creating-a-rollout-configuration}
 
-Vous pouvez [créer une configuration de déploiement ;](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) lorsque les configurations de déploiement installées ne répondent pas aux exigences de votre application en procédant comme suit.
+Vous pouvez [créer une configuration de déploiement](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) lorsque les configurations de déploiement installées ne répondent pas aux exigences de votre application en procédant comme suit.
 
 1. [Création de la configuration de déploiement -](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [Ajoutez des actions de synchronisation à la configuration du déploiement.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)

@@ -24,7 +24,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Titre et balises**
 
-   * **Titre** - Le titre de la page s’affiche à différents emplacements. Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
+   * **Titre** : le titre de la page s’affiche à différents emplacements. Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
       * Ce champ est obligatoire.
    * **Balises** : vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
       * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
@@ -90,9 +90,9 @@ Les propriétés sont réparties sur plusieurs onglets.
   >* Elles ne prennent pas en charge les modèles d’expression régulière.
   >* ne doit pas être définie sur une page existante.
 
-   * **Ajouter** - Sélectionnez cette option pour afficher un champ permettant de définir une URL de redirection vers un microsite pour la page.
+   * **Ajouter** - Sélectionnez cette option pour afficher un champ afin de définir une URL Vanity pour la page.
       * Sélectionnez à nouveau pour ajouter plusieurs.
-      * Sélectionnez la variable **Supprimer** pour supprimer l’URL Vanity.
+      * Sélectionnez l’icône **Supprimer** pour supprimer l’URL Vanity.
    * **Rediriger l’URL Vanity** – Indique si vous souhaitez que la page utilise l’URL Vanity.
 
 ### Avancé {#advanced}
@@ -101,7 +101,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * **Langue** – Langue de la page.
    * **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
-   * **Rediriger** - Indique la page vers laquelle cette page doit automatiquement être redirigée avec un HTML. `302 Found` statut.
+   * **Redirection** - Indique la page vers laquelle cette page doit automatiquement rediriger avec un état d’HTML `302 Found`.
       * **Redirection permanente** - Lorsque cette case est cochée, la page redirige vers le chemin cible fourni avec un statut HTML `301 Moved Permanently`.
    * **Conception** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
    * **Alias** – Indique un alias à utiliser avec cette page.
@@ -289,7 +289,7 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 
 1. Ouvrez la page dont vous souhaitez modifier les propriétés.
 1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu de sélection :
-1. Sélectionner **Ouvrir les propriétés** et une boîte de dialogue s’ouvre pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
+1. Sélectionnez **Ouvrir les propriétés** et une boîte de dialogue s’ouvre pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
    * **Annuler**
    * **Enregistrez et fermez**
 1. Utilisez le bouton **Enregistrer et fermer** pour enregistrer les modifications.
@@ -326,7 +326,7 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
       * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.
    * Propriétés communes partageant une valeur commune
       * Seules les propriétés qui partagent une valeur commune sont visibles en mode Affichage.
-      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que lorsque *all* sont courantes. Si seulement certaines sont courantes, elles s’affichent uniquement lors de la modification.
+      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne s’affichent que lorsque *all* est commun. Si seulement certaines sont courantes, elles s’affichent uniquement lors de la modification.
       * En l’absence de propriétés avec une valeur commune, un message s’affiche.
 
 * **Modifier**

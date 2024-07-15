@@ -168,7 +168,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## Extraction de document
 
-<span class="preview"> La capacité d’extraction de documents s’inscrit dans le cadre du Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité Extraction de documents est inscrite dans le Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 Le service Extraction de documents vous permet d’obtenir les propriétés d’un document de PDF, telles que ses droits d’utilisation, ses propriétés de PDF et ses métadonnées. Les fonctionnalités d’extraction de document sont les suivantes :
 
@@ -176,7 +176,7 @@ Le service Extraction de documents vous permet d’obtenir les propriétés d’
 * Extrayez les droits d’utilisation activés dans un document de PDF. Les utilisateurs récupèrent les droits d’utilisation activés ou désactivés dans un document de PDF pour l’extensibilité Adobe Acrobat Reader.
 * Pour obtenir les informations de métadonnées présentes dans un document de PDF, les métadonnées sont des informations sur le document (qui se distinguent du contenu du document, telles que le texte et les graphiques). La plateforme de métadonnées extensibles (XMP) Adobe est une norme de gestion des métadonnées de document. Le service XMP Utilities peut récupérer XMP métadonnées de documents PDF et exporter des métadonnées dans des documents PDF.
 
-La variable [Documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
+La [ documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
 
 <!--
 
@@ -198,7 +198,7 @@ Les API de conversion de document de communication aident à convertir un docume
 
 ### Convertir le PDF en XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> La fonctionnalité Convertir le PDF en XDP est inscrite au Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité Convertir le PDF en XDP fait partie du Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 Convertit un document de PDF en fichier XDP. Pour qu’un document de PDF soit converti en fichier XDP, le document de PDF doit contenir un flux XFA dans le dictionnaire.
 
@@ -226,12 +226,12 @@ Vous pouvez accomplir ces tâches à l’aide des API Encryption :
 * Récupérez le type de sécurité appliqué à un document de PDF.
 * Renvoyer le type de sécurité appliqué à un document PDF.
 
-Les API de signature et les API de chiffrement sont [API synchrones](#types-of-communications-apis-types).
+Les API Signature et les API Encryption sont [API synchrones](#types-of-communications-apis-types).
 
 
 ### Utilitaires de document {#doc-utility}
 
-Les utilitaires de document avec les API synchrones vous aident à convertir des documents entre les formats de fichiers PDF et XDP. Appliquez des droits d’utilisation à un document et extrayez les droits d’utilisation activés à partir d’un document. Requête d’informations sur un document PDF. <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> Vous trouverez ci-dessous des informations détaillées sur les API de droits d’utilisation :
+Les utilitaires de document avec les API synchrones vous aident à convertir des documents entre les formats de fichiers PDF et XDP. Appliquez des droits d’utilisation à un document et extrayez les droits d’utilisation activés à partir d’un document. Requête d’informations sur un document PDF. <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> Vous trouverez ci-dessous les détails des API de droits d’utilisation :
 
 
 #### API de droits d’utilisation (extension de Reader)
@@ -257,35 +257,35 @@ Ces fonctionnalités de droits d’utilisation spéciaux sont automatiquement ac
 
 Les différentes fonctionnalités de droits d’utilisation pour étendre les services de Reader de PDF sont les suivantes :
 
-* **Décodage des codes à barres**: pour décoder les codes à barres dans le document du PDF.
+* **Décodage des codes à barres** : pour décoder les codes à barres dans le document du PDF.
 
-* **Commentaires**: mise en commentaire hors ligne sur le document du PDF.
+* **Comments** : pour ajouter des commentaires hors ligne sur le document du PDF.
 
-* **Commentaires en ligne**: mise en commentaire en ligne sur le document du PDF.
+* **Comments Online** : pour commenter en ligne le document du PDF.
 
-* **Signature numérique**: pour ajouter des signatures numériques à un document de PDF.
+* **Signature numérique** : pour ajouter des signatures numériques à un document de PDF.
 
-* **Champs de formulaire dynamique**: pour ajouter des champs de formulaire à un document de PDF.
+* **Champs de formulaire dynamique** : pour ajouter des champs de formulaire à un document de PDF.
 
-* **Pages de formulaire dynamique**: pour ajouter des pages de formulaire à un document de PDF.
+* **Pages de formulaire dynamiques** : pour ajouter des pages de formulaire à un document de PDF.
 
-* **Fichiers incorporés**: pour incorporer des fichiers dans un document de PDF.
+* **Fichiers incorporés** : pour incorporer des fichiers dans un document de PDF.
 
-* **Importation de données de formulaire**: pour importer des données de formulaire dans un document de PDF.
+* **Importation de données de formulaire** : pour importer des données de formulaire dans un document de PDF.
 
-* **Exportation des données de formulaire**: pour importer des données de formulaire dans un document de PDF.
+* **Exportation de données de formulaire** : pour importer des données de formulaire dans un document de PDF.
 
-* **Remplissage du formulaire**: pour remplir les champs de formulaire dans un document de PDF.
+* **Form Fill In** : pour remplir les champs de formulaire dans un document de PDF.
 
-* **Forms en ligne**: pour accéder à un service Web ou à une base de données à partir d’un document de PDF.
+* **Forms en ligne** : pour accéder à un service Web ou à une base de données à partir d’un document de PDF.
 
-* **Submit Standalone**: pour envoyer des données de formulaire hors ligne à partir d’un document de PDF.
+* **Submit Standalone** : pour envoyer des données de formulaire hors ligne à partir d’un document de PDF.
 
 
 #### Autres fonctionnalités
 
-* **Message**: message affiché dans Adobe Acrobat Reader lors de l’ouverture d’un document de PDF avec un ou plusieurs droits d’utilisation appliqués.
-* **Déverrouiller le mot de passe**: mot de passe requis pour l’ouverture d’un document de PDF chiffré. En règle générale, il s’agit du mot de passe d’ouverture du document, mais si le document du PDF est en outre protégé par un mot de passe d’accès, vous pouvez l’utiliser pour l’ouvrir.
+* **Message** : message affiché dans Adobe Acrobat Reader lors de l’ouverture d’un document de PDF avec un ou plusieurs droits d’utilisation appliqués.
+* **Déverrouiller le mot de passe** : mot de passe requis pour ouvrir un document de PDF chiffré. En règle générale, il s’agit du mot de passe d’ouverture du document, mais si le document du PDF est en outre protégé par un mot de passe d’accès, vous pouvez l’utiliser pour l’ouvrir.
 
 La [documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
 
@@ -319,7 +319,7 @@ Après l’intégration, pour activer la fonctionnalité de communications pour 
 
 >[!NOTE]
 >
-> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante au [Configuration Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la [configuration Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

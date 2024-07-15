@@ -37,14 +37,14 @@ Pour publier le canal, procédez comme suit :
 
 1. Cliquez sur **Gérer la publication** dans la barre d’actions.
 
-1. Sélectionnez la variable **Action** as **Publier** et **Planification** as **Maintenant** de la **Assistant Gestion de publication** et cliquez sur **Suivant**.
+1. Sélectionnez **Action** comme **Publish** et **Planification** comme **Maintenant** dans l’assistant **Gérer la publication** et cliquez sur **Suivant**.
 
    ![Sélection de l’action de publication](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
    >Cliquez sur **Inclure les enfants** dans la barre d’actions et désactivez toutes les options pour publier tous les modules de votre projet, puis cliquez sur Ajouter pour publier. Par défaut, toutes les cases seront cochées et vous devrez les décocher manuellement pour publier tous les modules de votre projet.
 
-1. Après avoir sélectionné le canal dans la **Gérer la publication** assistant, cliquez sur **Publier** pour publier le canal.
+1. Après avoir sélectionné le canal à partir de l’assistant **Gérer la publication**, cliquez sur **Publish** pour publier le canal.
 
    ![Publication du canal](/help/screens-cloud/assets/create-content/managepub-3.png)
 

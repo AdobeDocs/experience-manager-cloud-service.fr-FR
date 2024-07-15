@@ -44,7 +44,7 @@ Cette variable d’environnement est utilisée à deux endroits :
 
 Une autre URL de point d’entrée GraphQL peut être utilisée pour chaque environnement AEM as a Cloud Service. De cette façon, les projets peuvent connecter les environnements d’évaluation AEM avec les systèmes d’évaluation de commerce et l’environnement de production AEM à un système de production de commerce. Ce point d’entrée GraphQL doit être accessible au public, et les connexions VPN privées ou locales ne sont pas prises en charge. Vous pouvez éventuellement fournir un en-tête d’authentification afin d’utiliser des fonctionnalités CIF supplémentaires nécessitant une authentification.
 
-Facultatif et destiné uniquement à Adobe Commerce Enterprise/Cloud, le module complémentaire CIF prend en charge l’utilisation de données de catalogue intermédiaires pour les auteurs d’AEM. Ces données nécessitent que vous configuriez un en-tête d’autorisation. Cet en-tête n’est disponible et utilisé que sur les instances d’auteur AEM pour des raisons de sécurité. AEM les instances de publication ne peuvent pas afficher de données intermédiaires.
+Facultatif et destiné uniquement à Adobe Commerce Enterprise/Cloud, le module complémentaire CIF prend en charge l’utilisation de données de catalogue intermédiaires pour les auteurs d’AEM. Ces données nécessitent que vous configuriez un en-tête d’autorisation. Cet en-tête n’est disponible et utilisé que sur les instances d’auteur AEM pour des raisons de sécurité. AEM instances Publish ne peuvent pas afficher de données intermédiaires.
 
 Il existe deux options pour configurer le point d’entrée :
 

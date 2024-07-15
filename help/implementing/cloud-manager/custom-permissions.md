@@ -30,7 +30,7 @@ Les autorisations personnalisées permettent aux utilisateurs de créer des prof
 
 >[!TIP]
 >
->Pour plus d’informations sur les rôles prédéfinis, voir [AEM équipe as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md).
+>Pour plus d’informations sur les rôles prédéfinis, voir [Équipe AEM as a Cloud Service et Profils de produit](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Utiliser les autorisations personnalisées {#using}
 
@@ -40,7 +40,7 @@ Pour créer et utiliser vos propres autorisations personnalisées, trois étapes
 1. [Attribuez des autorisations personnalisées au profil de produit.](#assign-permissions)
 1. [Affectez des utilisateurs au profil de produit.](#assign-users)
 
-Cette section décrit ces étapes. Il peut s’avérer utile de consulter [Termes](#terms) et [Autorisations configurables](#configurable-permissions) lors de la création de vos propres autorisations personnalisées.
+Cette section décrit ces étapes. Il peut s’avérer utile d’afficher les sections [Termes](#terms) et [Autorisations configurables](#configurable-permissions) lorsque vous créez vos propres autorisations personnalisées.
 
 >[!NOTE]
 >
@@ -52,22 +52,22 @@ Commencez par créer un profil de produit auquel vous pourrez attribuer des auto
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Sur la page d’entrée de Cloud Manager, sélectionnez le **Gérer l’accès** bouton .
+1. Sur la page d’entrée Cloud Manager, cliquez sur le bouton **Gérer l’accès** .
 
 ![Bouton Gérer l’accès](assets/manage-access.png)
 
-1. Une redirection vers l’onglet **Produits** de l’Admin Console se produit, dans lequel vous pouvez gérer les utilisateurs et utilisatrices et les autorisations de Cloud Manager. Dans le Admin Console, sélectionnez la variable **Nouveau profil** bouton .
+1. Une redirection vers l’onglet **Produits** de l’Admin Console se produit, dans lequel vous pouvez gérer les utilisateurs et utilisatrices et les autorisations de Cloud Manager. Dans l’Admin Console, cliquez sur le bouton **Nouveau profil** .
 
 ![Bouton Nouveau profil.](assets/admin-console-new-profile.png)
 
 1. Fournissez les détails généraux du profil.
 
    * **Nom du profil de produit** : un nom descriptif du profil.
-   * **Nom d’affichage** : nom abrégé affiché dans l’interface utilisateur (options).
+   * **Nom d’affichage** : nom abrégé affiché dans l’interface utilisateur (options)
    * **Description** : une description informative du profil expliquant son objectif (facultatif).
-   * **Notifier les utilisateurs par courrier électronique** - Lorsqu’ils sont sélectionnés, les utilisateurs sont avertis par e-mail lorsqu’ils sont ajoutés ou supprimés de ce profil.
+   * **Avertir les utilisateurs par e-mail** - Lorsqu’ils sont sélectionnés, les utilisateurs sont avertis par e-mail lorsqu’ils sont ajoutés ou supprimés de ce profil.
 
-1. Sélectionner **Enregistrer** une fois terminé.
+1. Sélectionnez **Enregistrer** une fois l’opération terminée.
 
 Le nouveau profil de produit est enregistré et visible dans la liste des profils de produits dans l’Admin Console.
 
@@ -75,28 +75,28 @@ Le nouveau profil de produit est enregistré et visible dans la liste des profil
 
 Maintenant que vous disposez d’un nouveau profil de produit, vous pouvez lui attribuer des autorisations personnalisées.
 
-1. Dans le Admin Console, sélectionnez le nom de la variable [nouveau profil de produit que vous avez créé](#create).
+1. Dans l’Admin Console, sélectionnez le nom du [nouveau profil de produit que vous avez créé](#create).
 
 1. Dans la fenêtre qui s’ouvre, sélectionnez l’onglet **Autorisations** pour afficher la liste des autorisations modifiables.
 
    ![Autorisations modifiables.](assets/permissions-tab.png)
 
-1. Sélectionnez la variable **Modifier** lien d’une autorisation afin que vous puissiez la modifier.
+1. Sélectionnez le lien **Modifier** d&#39;une autorisation afin que vous puissiez la modifier.
 
-1. La variable **Modifier l’autorisation** s’ouvre.
+1. La fenêtre **Modifier l’autorisation** s’ouvre.
    * L’autorisation que vous avez sélectionnée à l’étape précédente est sélectionnée dans la colonne de gauche.
    * Les éléments d’autorisation disponibles pour l’affectation de l’autorisation se trouvent dans la colonne du milieu intitulée **Autorisations disponibles**.
    * Les éléments d’autorisation attribués se trouvent dans la colonne de droite intitulée **Éléments d’autorisation inclus**.
 
    ![Modification des éléments d’autorisation.](assets/edit-permission-items.png)
 
-1. Sélectionnez le plus (`+`) en regard de l’élément d’autorisation afin que vous puissiez l’ajouter à la colonne **Éléments d’autorisation inclus**.
+1. Sélectionnez l’icône plus (`+`) en regard de l’élément d’autorisation afin que vous puissiez l’ajouter à la colonne **Éléments d’autorisation inclus**.
 
-   * Sélectionnez la variable `i` en regard d’un élément d’autorisation si vous souhaitez en savoir plus à ce sujet.
+   * Sélectionnez l’icône `i` en regard d’un élément d’autorisation si vous souhaitez en savoir plus à ce sujet.
 
-1. Sélectionnez la variable **Tout ajouter** en haut de la page **Autorisations disponibles** pour ajouter toutes les autorisations.
+1. Sélectionnez le bouton **Ajouter tout** en haut de la colonne **Autorisations disponibles** afin de pouvoir ajouter toutes les autorisations.
 
-1. Sélectionner **Enregistrer** lorsque vous avez terminé de définir les éléments d’autorisation pour votre nouveau profil de produit.
+1. Sélectionnez **Enregistrer** lorsque vous avez terminé de définir les éléments d’autorisation de votre nouveau profil de produit.
 
 Votre nouveau profil de produit est maintenant enregistré avec ses autorisations personnalisées.
 
@@ -104,13 +104,13 @@ Votre nouveau profil de produit est maintenant enregistré avec ses autorisation
 
 Vous pouvez désormais affecter des personnes au nouveau profil de produit que vous avez créé avec des autorisations personnalisées.
 
-1. Dans le Admin Console, sélectionnez le nom de la variable [nouveau profil de produit auquel vous avez attribué des autorisations personnalisées.](#assign-permissions)
+1. Dans l&#39;Admin Console, sélectionnez le nom du [nouveau profil de produit auquel vous avez attribué des autorisations personnalisées.](#assign-permissions)
 
 1. Dans la fenêtre qui s’ouvre, sélectionnez l’onglet **Utilisateurs et utilisatrices**.
 
-1. Sélectionnez la variable **Ajout d’utilisateurs** et affecter des utilisateurs à votre nouveau profil de produit avec des autorisations personnalisées.
+1. Sélectionnez le bouton **Ajouter des utilisateurs** et affectez des utilisateurs à votre nouveau profil de produit avec des autorisations personnalisées.
 
-Voir la section **Ajout d’utilisateurs et de groupes d’utilisateurs à un profil de produit** du document [Gestion des profils de produit pour les utilisateurs d’entreprise](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) pour plus d’informations sur l’utilisation du Admin Console.
+Pour plus d’informations sur l’utilisation de l’Admin Console, reportez-vous à la section **Ajout d’utilisateurs et de groupes d’utilisateurs à un profil de produit** du document [Gestion des profils de produit pour les utilisateurs d’entreprise](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html).
 
 ## Autorisations configurables {#configurable-permissions}
 
@@ -154,9 +154,9 @@ Les autorisations au niveau de l’organisation se rapportent aux autorisations 
 Les autorisations suivantes sont des autorisations au niveau de l’organisation :
 
 * **Création de programme** - Cette autorisation permet aux utilisateurs de créer un programme dans l’organisation.
-* **Accès aux informations sur le référentiel** Cette autorisation au niveau du client/de l’organisation permet aux utilisateurs de générer le nom d’utilisateur, le mot de passe et l’URL du référentiel pour accéder au projet client et contribuer à ce dernier.
+* **Accès aux informations du référentiel** Cette autorisation au niveau du client/de l’organisation permet aux utilisateurs de générer le nom d’utilisateur, le mot de passe et l’URL du référentiel pour accéder au projet client et contribuer à ce dernier.
    * Le nom d’utilisateur et le mot de passe pour l’accès au référentiel sont communs à tous les référentiels dans l’organisation, mais l’URL du référentiel est unique à chaque programme.
-   * Voir [Accès aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md) pour plus d’informations.
+   * Pour plus d’informations, voir [Accès aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md) .
 
 ## Termes {#terms}
 
@@ -164,9 +164,9 @@ Les termes suivants sont utilisés pour créer et gérer des autorisations perso
 
 | Terme | Description |
 |---|---|
-| Autorisations prédéfinies | Rôles prédéfinis tels que **Propriétaire de l’entreprise** et **Responsable de déploiement** pour régir différentes fonctionnalités de Cloud Manager. Pour plus d’informations sur les rôles prédéfinis, voir [AEM l’équipe as a Cloud Service et les profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md) |
-| Autorisations personnalisées | Les fonctionnalités de Cloud Manager permettent aux utilisateurs de créer des profils d’autorisation afin de définir des rôles pour régir les fonctionnalités prises en charge de Cloud Manager. |
-| Profil de produits | Créé dans le Admin Console pour gérer les autorisations configurables applicables aux utilisateurs faisant partie du profil d’autorisation. |
+| Autorisations prédéfinies | Rôles prédéfinis tels que **Propriétaire de l’entreprise** et **Responsable de déploiement** pour régir différentes fonctionnalités de Cloud Manager. Pour plus d&#39;informations sur les rôles prédéfinis, voir [Équipe AEM as a Cloud Service et Profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md) |
+| Autorisations personnalisées | Les fonctionnalités de Cloud Manager permettent aux utilisateurs de créer des profils d’autorisation pour définir des rôles pour régir les fonctionnalités prises en charge par Cloud Manager. |
+| Profil de produits | Créé dans l’Admin Console pour gérer les autorisations configurables applicables aux utilisateurs faisant partie du profil d’autorisation. |
 | Autorisation configurable | Autorisations de Cloud Manager qui peuvent être configurées dans le profil d’autorisation. |
 | Élément d’autorisation | Un programme, un environnement ou une ressource de pipeline sur lequel une autorisation peut être appliquée |
 
@@ -184,7 +184,7 @@ Les éléments d’autorisation se rapportent à la portée dans laquelle l’au
 Gardez à l’esprit les restrictions suivantes lors de l’utilisation d’autorisations personnalisées.
 
 * Le profil d’autorisations personnalisées répertorie également les programmes, les environnements et les pipelines AMS lors de la configuration des autorisations.
-* Les ressources telles que le programme, l’environnement et le pipeline qui ont été créés dans Cloud Manager peuvent prendre deux minutes pour s’afficher en Admin Console pour la configuration des autorisations.
+* Les ressources telles que le programme, l’environnement et le pipeline créés dans Cloud Manager peuvent prendre deux minutes pour s’afficher dans Admin Console pour la configuration des autorisations.
 * Dans de rares cas où le service d’autorisations personnalisées ne répond pas, les profils prédéfinis sont toujours disponibles et les utilisateurs et utilisatrices des profils prédéfinis disposent toujours d’un accès approprié.
 
 ## Questions fréquentes {#faq}
@@ -196,7 +196,7 @@ Gardez à l’esprit les restrictions suivantes lors de l’utilisation d’auto
 * Responsable de déploiement
 * Développeur
 
-Pour plus d’informations sur les rôles prédéfinis, voir [AEM l’équipe as a Cloud Service et les profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md)
+Pour plus d&#39;informations sur les rôles prédéfinis, voir [Équipe AEM as a Cloud Service et Profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ### Qu’advient-il des profils d’autorisation prédéfinis lors de l’introduction de profils personnalisés ?
 
@@ -208,7 +208,7 @@ Non, les profils par défaut ne sont pas modifiables. Vous ne pouvez pas ajouter
 
 ### Dois-je supprimer les profils d’autorisation prédéfinis puisque les profils personnalisés sont désormais disponibles ?
 
-Ne supprimez pas les profils d’autorisation prédéfinis du Admin Console.
+Ne supprimez pas les profils d’autorisation prédéfinis de l’Admin Console.
 
 ### Puis-je ajouter des utilisateurs et utilisatrices à plusieurs profils d’autorisation ?
 
@@ -216,4 +216,4 @@ Oui, un utilisateur ou une utilisatrice peut faire partie de plusieurs profils, 
 
 ### Que se passe-t-il si une personne est autorisée à modifier un environnement/pipeline mais n’a pas accès à un programme contenant l’environnement/le pipeline ?
 
-Dans ce cas, l’utilisateur ne peut pas accéder à l’environnement ou au pipeline s’il ne dispose pas de la variable **Accès au programme** autorisations contenant l’environnement ou le pipeline.
+Dans ce cas, l’utilisateur ne peut pas accéder à l’environnement ou au pipeline s’il ne dispose pas des autorisations **Accès au programme** contenant l’environnement ou le pipeline.

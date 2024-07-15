@@ -21,7 +21,7 @@ Découvrez les types d’environnements que vous pouvez créer et comment les cr
 
 Un utilisateur disposant des autorisations requises peut créer les types d’environnement suivants (dans les limites de ce qui est disponible pour le client spécifique).
 
-* **Production + Évaluation** - Les environnements de production et d’évaluation sont disponibles en une paire et sont utilisés à des fins de production et de test, respectivement. Effectuez des tests de performance et de sécurité dans un environnement intermédiaire. Celui-ci a la même taille que l’environnement de production.
+* **Production + Intermédiaire** - Les environnements de production et d’évaluation sont disponibles en une paire et sont utilisés à des fins de production et de test, respectivement. Effectuez des tests de performance et de sécurité dans un environnement intermédiaire. Celui-ci a la même taille que l’environnement de production.
 
 * **Développement** - Un environnement de développement peut être créé à des fins de développement et de test et peut uniquement être associé à des pipelines hors production.  Les environnements de développement n’ont pas la même taille que les environnements de test et de production et ne doivent pas être utilisés pour effectuer des tests de performance et de sécurité.
 
@@ -40,13 +40,13 @@ Les fonctionnalités de chaque environnement dépendent des solutions activées 
 
 ## Ajout d’un environnement {#adding-environments}
 
-Pour ajouter ou modifier un environnement, un utilisateur doit appartenir au **Propriétaire de l’entreprise** rôle.
+Pour ajouter ou modifier un environnement, un utilisateur doit être membre du rôle **Propriétaire de l’entreprise**.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , appuyez ou cliquez sur le programme pour lequel vous souhaitez ajouter un environnement.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur le programme pour lequel vous souhaitez ajouter un environnement.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** console, cliquez sur **Ajouter un environnement** sur le **Environnements** pour ajouter un environnement.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, cliquez sur **Ajouter un environnement** sur la carte **Environnements** pour ajouter un environnement.
 
    ![Carte Environnements](assets/no-environments.png)
 
@@ -91,9 +91,9 @@ Lorsque vous ajoutez un environnement, vous pouvez choisir de configurer des ré
 1. Sélectionnez l’option **Ajout de zones de publication** pour afficher de nouvelles **Zones de publication supplémentaires**.
 1. Dans le menu déroulant **Zones de publication supplémentaires**, sélectionnez une zone supplémentaire.
 1. La zone géographique sélectionnée est ajoutée sous la liste déroulante pour indiquer sa sélection.
-   * Sélectionnez la variable `X` en regard de la région sélectionnée afin de pouvoir la désélectionner.
+   * Sélectionnez le `X` en regard de la région sélectionnée afin de pouvoir la désélectionner.
 1. Sélectionnez une autre zone géographique dans le menu déroulant **Zones de publication supplémentaires** pour ajouter une autre zone géographique.
-1. Sélectionner **Enregistrer** lorsque vous êtes prêt à créer votre environnement.
+1. Sélectionnez **Enregistrer** lorsque vous êtes prêt à créer votre environnement.
 
 ![Sélection de plusieurs zones géographiques](assets/select-multiple-regions.png)
 
@@ -119,7 +119,7 @@ Vous pouvez également supprimer d’autres zones géographiques de publication.
 
    ![Modifier l’environnement](assets/edit-environment.png)
 
-1. Sélectionner **Enregistrer** pour enregistrer les modifications.
+1. Sélectionnez **Enregistrer** pour enregistrer les modifications.
 
 Les modifications apportées à l’environnement de production s’appliquent aux environnements de production et d’évaluation. Les modifications apportées à plusieurs zones géographiques de publication ne peuvent être modifiées que dans l’environnement de production.
 
@@ -127,9 +127,9 @@ Si vous souhaitez configurer la variable [réseau avancé](/help/security/config
 
 ## Détails de l’environnement {#viewing-environment}
 
-Dans la **Présentation** , vous pouvez accéder aux détails d’un environnement de deux manières différentes.
+Sur la page **Aperçu**, vous pouvez accéder aux détails d’un environnement de deux manières différentes.
 
-1. Dans la **Présentation** , cliquez sur **Environnements** dans le panneau de navigation latéral.
+1. Sur la page **Overview** , cliquez sur l’onglet **Environments** du panneau de navigation latéral.
 
    ![Onglet Environnements](assets/environments-tab2.png)
 
@@ -181,24 +181,24 @@ Une fois activé, vous pouvez publier du contenu dans le service d’aperçu à 
 
 ### État des régions Publish supplémentaires {#additional-region-status}
 
-Si vous avez activé d’autres régions de publication, vous pouvez vérifier l’état de ces régions à partir du **Environnements** carte.
+Si vous avez activé d’autres régions de publication, vous pouvez vérifier l’état de ces régions à partir de la carte **Environnements** .
 
-1. Sur le **Présentation** , recherchez la variable **Environnements** carte.
+1. Sur la page **Overview** , recherchez la carte **Environments** .
 
-1. Sur le **Environnements** , la variable **État** indique s’il existe des problèmes avec les régions de publication supplémentaires configurées. Cliquez sur le bouton **Infos** pour plus d’informations sur les régions.
+1. Sur la carte **Environments** , la colonne **Status** indique s’il existe des problèmes avec les régions de publication supplémentaires configurées. Cliquez sur l’icône **Informations** pour plus d’informations sur les régions.
 
    ![Informations supplémentaires sur l’état des régions de publication sur la carte Environnements](assets/additional-publish-region-status-environments-card.png)
 
-Vous pouvez également accéder aux mêmes informations à partir du **Environnements** .
+Vous pouvez également accéder aux mêmes informations à partir de l’onglet **Environments**.
 
-1. Sur le **Présentation** , sélectionnez **Environnements** .
+1. Sur la page **Overview** , sélectionnez l’onglet **Environments** .
 
-1. Sur le **Environnements** , sélectionnez l’environnement à interroger dans le panneau de navigation de gauche.
+1. Dans l’onglet **Environnements**, sélectionnez l’environnement que vous souhaitez interroger dans le panneau de navigation de gauche.
 
 1. Une fois qu’un environnement est sélectionné :
 
-   * La variable **Informations sur l’environnement** Le tableau indique les régions configurées pour l’environnement sélectionné.
-   * La variable **État** de la colonne **Segments d’environnement** indique s’il existe des problèmes avec les régions de publication supplémentaires configurées. Passez la souris sur l’état pour plus d’informations sur un problème.
+   * La table **Informations sur l’environnement** indique les régions configurées pour l’environnement sélectionné.
+   * La colonne **État** de la table **Segments d’environnement** reflète l’existence de problèmes avec les régions de publication supplémentaires configurées. Passez la souris sur l’état pour plus d’informations sur un problème.
 
    ![Informations supplémentaires sur l’état des régions de publication dans l’onglet Environnements](assets/additional-publish-region-status-environments-tab.png)
 
@@ -209,7 +209,7 @@ Si des problèmes sont signalés avec des régions de publication supplémentair
 
 La durée d’attente nécessaire pour que le système se remette seul avant d’entreprendre des actions supplémentaires dépend de l’impact de l’échec de cette région sur vos systèmes.
 
-Dans tous les cas, [le trafic est toujours acheminé vers l’autre région la plus proche qui est en ligne.](/help/operations/additional-publish-regions.md) Si vous rencontrez toujours des problèmes, contactez l’assistance clientèle d’Adobe.
+Dans tous les cas, le trafic [est toujours acheminé vers l’autre région la plus proche qui soit en ligne.](/help/operations/additional-publish-regions.md) Si vous rencontrez toujours des problèmes, contactez l’assistance clientèle d’Adobe.
 
 ## Mise à jour des environnements {#updating-dev-environment}
 
@@ -233,9 +233,9 @@ Le processus de mise à jour est donc un processus en deux étapes :
 ### Mise à jour de vos environnements {#updating-your-environments}
 
 >[!NOTE]
-> Depuis 2024, les instances de développement et certains programmes Sandbox sont déjà automatiquement mis à jour. Il n’est donc plus nécessaire de gérer manuellement les mises à jour pour ces programmes. Suite à cette transition, l’option Mettre à jour manuellement l’environnement pour les instances de développement peut ne pas être disponible pour _some_ de vos programmes.
+> Depuis 2024, les instances de développement et certains programmes Sandbox sont déjà automatiquement mis à jour. Il n’est donc plus nécessaire de gérer manuellement les mises à jour pour ces programmes. En raison de cette transition, l’option Mettre à jour manuellement l’environnement pour les instances de développement peut ne pas être disponible pour _une partie_ de vos programmes.
 
-La variable **Mettre à jour** est disponible à partir de la **Environnements** pour certains environnements de développement dans les programmes sandbox en cliquant sur le bouton représentant des points de suspension de l’environnement.
+L’option **Mettre à jour** est disponible à partir de la carte **Environnements** pour certains environnements et environnements de développement dans les programmes Sandbox en cliquant sur le bouton représentant des points de suspension de l’environnement.
 
 ![Option de mise à jour de la carte Environnements](assets/environ-update2.png)
 
@@ -243,7 +243,7 @@ Cette option est également disponible en cliquant sur l’onglet **Environnemen
 
 ![Option de mise à jour depuis l’onglet Environnements](assets/environ-update3.png)
 
-Un utilisateur avec la variable **Responsable de déploiement** ou **Propriétaire de l’entreprise** Le rôle peut utiliser cette option pour mettre à jour le pipeline associé à cet environnement vers la dernière version d’AEM.
+Un utilisateur disposant du rôle **Responsable de déploiement** ou **Propriétaire de l’entreprise** peut utiliser cette option pour mettre à jour le pipeline associé à cet environnement vers la dernière version d’AEM.
 
 Une fois que la version du pipeline est mise à jour vers la dernière version d’AEM disponible pour le public, l’utilisateur est invité à exécuter le pipeline associé pour déployer la dernière version dans l’environnement.
 
@@ -253,11 +253,11 @@ Le comportement de l’option **Mise à jour** varie en fonction de la configura
 
 * Si le pipeline a déjà été mis à jour, l’option **Mettre à jour** invite l’utilisateur à exécuter le pipeline.
 * Si le pipeline est déjà en cours de mise à jour, l’option **Mettre à jour** informe l’utilisateur qu’une mise à jour est déjà en cours d’exécution.
-* Si un pipeline approprié n’existe pas, la variable **Mettre à jour** invite l’utilisateur à en créer une.
+* Si aucun pipeline approprié n’existe, l’option **Mettre à jour** invite l’utilisateur à en créer un.
 
 ## Suppression d’environnements de développement {#deleting-environment}
 
-Un utilisateur avec la variable **Responsable de déploiement** ou **Propriétaire de l’entreprise** peut supprimer un environnement de développement.
+Un utilisateur disposant du rôle **Responsable de déploiement** ou **Propriétaire de l’entreprise** peut supprimer un environnement de développement.
 
 Dans l’écran **Vue d’ensemble** du programme dans la carte **Environnements**, cliquez sur le bouton représentant des points de suspension de l’environnement de développement que vous souhaitez supprimer.
 
@@ -296,7 +296,7 @@ Cette option est également disponible à partir de l’onglet **Environnement**
 
 ## Connexion locale {#login-locally}
 
-Sélectionner **Connexion locale** depuis le menu représentant des points de suspension de l’environnement dans la **Environnements** pour vous connecter localement à Adobe Experience Manager.
+Sélectionnez **Connexion locale** dans le menu de points de suspension de l’environnement dans la carte **Environnements** pour vous connecter localement à Adobe Experience Manager.
 
 ![Connexion locale](assets/environ-login-locally.png)
 
@@ -310,7 +310,7 @@ Les noms de domaine personnalisés sont pris en charge dans Cloud Manager pour l
 
 >[!TIP]
 >
->Pour plus d’informations, voir le document [Présentation des noms de domaine personnalisés.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+>Pour plus d’informations, consultez le document [Introduction aux noms de domaine personnalisés.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 ## Gestion des listes d’adresses IP autorisées {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ L’application d’une liste autorisée IP associe toutes les plages d’adress
 
 >[!TIP]
 >
->Pour plus d’informations, voir le document [Présentation des Listes autorisées IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>Pour plus d’informations, consultez le document [Introduction aux Listes autorisées IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

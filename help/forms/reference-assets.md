@@ -12,7 +12,7 @@ ht-degree: 90%
 
 # Ressources de référence pour Forms as a Cloud Service {#reference-themes}
 
-Vous pouvez obtenir les thèmes de référence, les modèles et le modèle de données de formulaire (FDM) en installant le [Package de ressources de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Vous pourrez ainsi commencer rapidement et accélérer votre développement de formulaires adaptatifs. Utilisez le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr) pour déployer ce package dans votre environnement Forms as a Cloud Service.
+Vous pouvez obtenir les thèmes de référence, les modèles et le modèle de données de formulaire (FDM) en installant le [package Assets de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Vous pourrez ainsi commencer rapidement et accélérer votre développement de formulaires adaptatifs. Utilisez le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr) pour déployer ce package dans votre environnement Forms as a Cloud Service.
 Le package comprend les ressources de référence suivantes :
 
 ## Thèmes {#themes}

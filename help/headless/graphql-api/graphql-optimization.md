@@ -74,7 +74,7 @@ Voir :
 
 Lors de l’utilisation de requêtes GraphQL persistantes avec un réseau CDN, il est recommandé de définir les en-têtes de contrôle de cache HTTP appropriés.
 
-Chaque requête persistante peut avoir son propre ensemble spécifique d’en-têtes de contrôle de cache. Les en-têtes peuvent être définis sur la variable [API GRAPHQL](/help/headless/graphql-api/content-fragments.md) ou le [AEM IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md).
+Chaque requête persistante peut avoir son propre ensemble spécifique d’en-têtes de contrôle de cache. Les en-têtes peuvent être définis sur l’ [API GraphQL](/help/headless/graphql-api/content-fragments.md) ou l’ [IDE GraphiQL AEM](/help/headless/graphql-api/graphiql-ide.md).
 
 **Références supplémentaires**
 

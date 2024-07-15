@@ -15,7 +15,7 @@ ht-degree: 96%
 
 # Publication et dépublication de formulaires et documents{#publishing-and-unpublishing-forms-and-documents}
 
-[!DNL AEM Forms] vous permet de créer, de publier et de dépublier facilement des formulaires. Le serveur [!DNL AEM Forms] propose deux instances : auteur et publication. L’instance Auteur est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance de publication est destinée à conserver les ressources et les ressources connexes disponibles pour les utilisateurs finaux.
+[!DNL AEM Forms] vous permet de créer, de publier et de dépublier facilement des formulaires. Le serveur [!DNL AEM Forms] propose deux instances : auteur et publication. L’instance Auteur est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance Publish est destinée à conserver les ressources et les ressources connexes disponibles pour les utilisateurs finaux.
 
 ## Ressources prises en charge  {#supported-assets-nbsp}
 

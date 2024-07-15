@@ -172,7 +172,7 @@ La source du module d’IU se trouve à l’adresse `/libs/granite/contexthub/co
 
 ### Configuration {#configuration-5}
 
-Les instances du module d’IU `contexthub.screen-orientation` ne nécessitent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La propriété `clickable` est définie sur `false` par défaut. Si vous remplacez la configuration par défaut à définir `clickable` to `true`, cliquez sur le module pour afficher une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
+Les instances du module d’IU `contexthub.screen-orientation` ne nécessitent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La propriété `clickable` est définie sur `false` par défaut. Si vous remplacez la configuration par défaut pour définir `clickable` sur `true`, un clic sur le module affiche une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
 
 ```javascript
 {

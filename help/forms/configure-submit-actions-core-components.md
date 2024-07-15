@@ -23,7 +23,7 @@ ht-degree: 38%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Cet article |
 
-Une action Soumettre vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle se déclenche lorsqu’un utilisateur clique sur la variable **[!UICONTROL Envoyer]** sur un formulaire adaptatif. Forms as a Cloud Service, pour Adaptive Forms basé sur les composants principaux, offre un tableau d’actions d’envoi préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
+Une action Soumettre vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle est déclenchée lorsqu’un utilisateur clique sur le bouton **[!UICONTROL Submit]** sur un formulaire adaptatif. Forms as a Cloud Service, pour Adaptive Forms basé sur les composants principaux, offre un tableau d’actions d’envoi préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
 
 * Envoyez facilement des données de formulaire par courrier électronique.
 * Lancez Microsoft® Power Automate les flux ou les flux AEM lors de la transmission des données.
@@ -31,14 +31,14 @@ Une action Soumettre vous permet de choisir la destination des données capturé
 * Envoyez facilement les données à une source de données configurée à l’aide du modèle de données de formulaire (FDM).
 * Envoyez facilement les données à un point de terminaison REST.
 
-Vous pouvez [étendre les actions d’envoi par défaut ;](custom-submit-action-form.md). Vous pouvez également personnaliser les actions d’envoi en fonction des exigences de l’organisation.
+Vous pouvez [étendre les actions d’envoi par défaut](custom-submit-action-form.md). Vous pouvez également personnaliser les actions d’envoi en fonction des exigences de l’organisation.
 
-Pour définir une action Envoyer pour un formulaire adaptatif, utilisez la boîte de dialogue Configurer d’une **Conteneur de formulaires adaptatifs** composant. La boîte de dialogue de configuration d’une **Conteneur de formulaires adaptatifs** comprend :
+Pour définir une action Envoyer pour un formulaire adaptatif, utilisez la boîte de dialogue Configurer d’un composant **Conteneur de formulaire adaptatif** . La boîte de dialogue de configuration d’un composant **Adaptive Form Container** comprend :
 * Onglet De base
 * Onglet Modèle de données de formulaire
 * Onglet Envoi
 
-Vous pouvez définir les propriétés du conteneur de formulaires à l’aide de la boîte de dialogue Configurer . Pour en savoir plus sur la boîte de dialogue de configuration d’un composant Conteneur de formulaires, [cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
+Vous pouvez définir les propriétés du conteneur de formulaires à l’aide de la boîte de dialogue Configurer . Pour en savoir plus sur la boîte de dialogue Configurer d’un composant de conteneur de formulaires, [cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
 
 ## Sélectionner et configurer une action Envoyer pour un formulaire adaptatif {#select-and-configure-submit-action}
 
@@ -51,10 +51,10 @@ Pour sélectionner et configurer une action Envoyer pour votre formulaire :
 
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une action d’envoi.](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Sélectionnez et configurez un **[!UICONTROL Action Envoyer]**, en fonction de vos besoins.
+1. Sélectionnez et configurez une **[!UICONTROL action Envoyer]** en fonction de vos besoins.
 
 Vous pouvez également configurer différentes actions pour les envois de formulaire adaptatif.
-* **URL/chemin de redirection** - Cette option permet à l’utilisateur de configurer une page pour chaque formulaire, vers laquelle les utilisateurs du formulaire sont redirigés après l’envoi d’un formulaire adaptatif.
+* **URL de redirection/chemin** : cette option permet à l’utilisateur de configurer une page pour chaque formulaire, vers laquelle les utilisateurs du formulaire sont redirigés après l’envoi d’un formulaire adaptatif.
 * **Afficher le message** - Cette option permet aux utilisateurs et utilisatrices d’ajouter un message qui s’affiche lorsque le formulaire adaptatif est envoyé avec succès. Le texte prédéfini est inclus dans la boîte de dialogue et peut être modifié par l’utilisateur.
 
 Pour plus d’informations sur les actions d’envoi suivantes, voir :
@@ -74,7 +74,7 @@ Vous pouvez également envoyer un formulaire adaptatif à d’autres configurati
 * [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Connecter un formulaire adaptatif à Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
-Vous pouvez [personnalisation des actions d’envoi par défaut](custom-submit-action-form.md). De plus, vous pouvez personnaliser les actions d’envoi afin de vous conformer à des exigences organisationnelles spécifiques.
+Vous pouvez [personnaliser les actions d’envoi par défaut](custom-submit-action-form.md). De plus, vous pouvez personnaliser les actions d’envoi afin de vous conformer à des exigences organisationnelles spécifiques.
 
 
 <!--
@@ -213,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 Dans le cadre de la sécurité AEM et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 400.jsp, 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 400, 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication. Vous pouvez également créer des pages JSP pour d’autres codes d’erreur HTTP.
 
-Lorsque vous préremplissez un modèle de données de formulaire (FDM), ou un formulaire adaptatif basé sur un schéma avec une plainte de données XML ou JSON à un schéma qui ne contient pas de données. `<afData>`, `<afBoundData>`, et `</afUnboundData>` balises, les données des champs non liés du formulaire adaptatif sont perdues. Le schéma peut être un schéma XML, un schéma JSON ou un modèle de données de formulaire (FDM). Les champs non liés sont des champs de formulaire adaptatif sans la propriété `bindref`.
+Lorsque vous préremplissez un modèle de données de formulaire (FDM) ou un formulaire adaptatif basé sur un schéma avec une plainte de données XML ou JSON à un schéma qui est que les données ne contiennent pas de balises `<afData>`, `<afBoundData>` et `</afUnboundData>`, les données des champs non liés du formulaire adaptatif sont perdues. Le schéma peut être un schéma XML, un schéma JSON ou un modèle de données de formulaire (FDM). Les champs non liés sont des champs de formulaire adaptatif sans la propriété `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

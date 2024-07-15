@@ -164,7 +164,7 @@ Par exemple :
 + Le package de code A se déploie dans `/apps/a`
 + Le package de code B se déploie dans `/apps/a/b`
 
-Si une dépendance au niveau du package n’est pas établie à partir du package de code B sur le package de code A, le package de code B peut être déployé en premier dans `/apps/a`. S’il est ensuite suivi du package de code A, qui se déploie dans `/apps/a`, le résultat est la suppression du fichier précédemment installé. `/apps/a/b`.
+Si une dépendance au niveau du package n’est pas établie à partir du package de code B sur le package de code A, le package de code B peut être déployé en premier dans `/apps/a`. S’il est ensuite suivi du package de code A, qui se déploie dans `/apps/a`, le résultat est la suppression du `/apps/a/b` précédemment installé.
 
 Dans ce cas :
 

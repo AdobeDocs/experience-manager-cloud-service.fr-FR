@@ -26,7 +26,7 @@ AEM Forms permet aux développeurs et développeuses de formulaires d’incorpo
 
 Vous pouvez utiliser AEM éditeur de page pour incorporer rapidement plusieurs formulaires à vos pages AEM Sites. L’utilisation de l’éditeur de page AEM permet aux auteurs de contenu de créer des expériences de capture de données en toute transparence dans une page Sites à l’aide de la puissance des composants Forms adaptatif, notamment le comportement dynamique, les validations, l’intégration de données, ainsi que la génération d’un document d’enregistrement et l’automatisation des processus d’entreprise. L’éditeur de page permet également d’utiliser différentes fonctionnalités des pages d’AEM Sites, telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
 
-Fourniture AEM Forms **[!UICONTROL Conteneur de formulaires adaptatifs]** et **[!UICONTROL Forms adaptatif - Incorporer (v2)]** composants. Vous pouvez utiliser **[!UICONTROL Forms adaptatif - Incorporer (v2)]** pour ajouter un formulaire adaptatif existant ou créer un formulaire à l’aide de l’ éditeur de Forms adaptatif , tandis que **[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer un formulaire dans un fragment d’expérience ou une page AEM Sites.
+AEM Forms fournit les composants **[!UICONTROL Adaptive Form Container]** et **[!UICONTROL Adaptive Forms - Embed(v2)]**. Vous pouvez utiliser le composant **[!UICONTROL Forms adaptatif - Incorporer(v2)]** pour ajouter un formulaire adaptatif existant ou créer un formulaire à l’aide de l’éditeur de Forms adaptatif , tandis que le composant **[!UICONTROL Conteneur de formulaire adaptatif]** pour créer un formulaire dans un fragment d’expérience ou une page AEM Sites.
 
 ![Exemple de formulaire adaptatif dans une page AEM Sites](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -52,28 +52,28 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 Vous pouvez tirer pleinement parti de cette fonctionnalité en utilisant les options suivantes :
 
-* **[Créer un formulaire adaptatif à l’aide de modèles approuvés et l’incorporer à une page AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** Vous pouvez utiliser des modèles prévalidés pour créer et incorporer rapidement des Forms adaptatives conformes aux directives de marque et aux normes de conception de votre entreprise.
+* **[Créez un formulaire adaptatif à l’aide de modèles approuvés et incorporez-le à une page AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** Vous pouvez utiliser des modèles prévalidés pour créer et incorporer rapidement des Forms adaptatifs conformes aux directives de marque et aux normes de conception de votre entreprise.
 
-* **[Incorporation de formulaires existants dans une page AEM Sites](#embed-an-adaptive-form-in-sites-editor):** Vous pouvez facilement intégrer des formulaires que vous avez déjà créés dans vos sites web, ce qui permet aux visiteurs d’interagir directement avec eux.
+* **[Incorporer des formulaires existants à une page AEM Sites](#embed-an-adaptive-form-in-sites-editor) :** Vous pouvez facilement intégrer des formulaires que vous avez déjà créés dans vos sites web, ce qui permet aux visiteurs d’interagir directement avec eux.
 
-* **[Convertir un formulaire adaptatif incorporé en fragment d’expérience](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Convertissez un formulaire adaptatif incorporé ajouté à une page AEM Sites en un fragment d’expérience pour réutiliser le formulaire sur plusieurs pages AEM Sites.
+* **[Convertir un formulaire adaptatif incorporé en fragment d’expérience](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment) :** Convertir un formulaire adaptatif incorporé ajouté à une page AEM Sites en fragment d’expérience pour réutiliser le formulaire sur plusieurs pages AEM Sites.
 
-* **[Création et ajout d’un formulaire adaptatif personnalisé à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** Vous pouvez utiliser la variable **[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer entièrement un nouveau formulaire, en le adaptant spécifiquement à vos besoins et préférences de conception.
+* **[Créez et ajoutez un formulaire adaptatif personnalisé à une page AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment) :** Vous pouvez utiliser le composant **[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer entièrement un formulaire entièrement nouveau, en le adaptant spécifiquement à vos besoins et préférences de conception.
 
 * **[Créer et ajouter un formulaire adaptatif personnalisé à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor) :** vous pouvez étendre la portée de vos formulaires en les ajoutant aux fragments d’expérience AEM, ce qui permet une réutilisation transparente sur plusieurs pages ou sites.
 
-* **Ajouter plusieurs formulaires à une page AEM Sites ou à un fragment d’expérience :** vous pouvez créer ou ajouter plusieurs formulaires adaptatifs à une page AEM Sites afin de proposer plusieurs choix aux utilisateurs et utilisatrices en fonction de leurs préférences et de leurs besoins. Vous pouvez utiliser AEM éditeur de page pour incorporer rapidement plusieurs formulaires à vos pages AEM Sites. Vous pouvez utiliser la variable **[!UICONTROL Conteneur de formulaires adaptatifs]** à plusieurs reprises pour ajouter le Forms adaptatif dans une page AEM Sites. Vous pouvez utiliser la variable **[!UICONTROL Forms adaptatif - Incorporer]** composant plusieurs fois dans une page AEM Sites, uniquement si **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** est sélectionnée. Au cas où la variable **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** n’est pas cochée, la page AEM Sites ne prend en charge qu’un seul formulaire adaptatif pour exister sans iframe. Pour ajouter d’autres Forms adaptatives à l’aide du **[!UICONTROL Forms adaptatif - Incorporer]** component, select **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** .
+* **Ajouter plusieurs formulaires à une page AEM Sites ou à un fragment d’expérience :** vous pouvez créer ou ajouter plusieurs formulaires adaptatifs à une page AEM Sites afin de proposer plusieurs choix aux utilisateurs et utilisatrices en fonction de leurs préférences et de leurs besoins. Vous pouvez utiliser AEM éditeur de page pour incorporer rapidement plusieurs formulaires à vos pages AEM Sites. Vous pouvez utiliser le composant **[!UICONTROL Conteneur de formulaires adaptatifs]** plusieurs fois pour ajouter le Forms adaptatif dans une page AEM Sites. Vous pouvez utiliser le composant **[!UICONTROL Forms adaptatif - Incorporer]** plusieurs fois dans une page AEM Sites, uniquement si l’option **[!UICONTROL Le formulaire couvre toute la largeur de l’image]** est sélectionnée. Si l’option **[!UICONTROL Le formulaire couvre toute la largeur de l’image]** n’est pas cochée, la page AEM Sites ne prend en charge qu’un seul formulaire adaptatif pour exister sans iframe. Pour ajouter d’autres Forms adaptatives à l’aide du composant **[!UICONTROL Forms adaptatif - Incorporer]**, sélectionnez l’option **[!UICONTROL Le formulaire couvre toute la largeur de l’image]**.
 
 ## Observations relatives à l’intégration d’un formulaire adaptatif dans une page AEM Sites ou dans un fragment d’expérience AEM {#consideration}
 
-* Lorsque vous créez ou ajoutez un formulaire à l’aide de la fonction **[!UICONTROL Forms adaptatif - Incorporer (v2)]** , les formulaires sont traduits et localisés à l’aide du flux de traduction AEM Forms. Dans ce cas, un seul formulaire est conservé et référencé dans toutes les copies de langue des pages Sites. **[!UICONTROL Forms adaptatif - Incorporer (v2)]** ne permet pas d’accéder aux différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
+* Lorsque vous créez ou ajoutez un formulaire à l’aide du composant **[!UICONTROL Adaptive Forms - Embed(v2)]**, les formulaires sont traduits et localisés à l’aide du flux de traduction AEM Forms. Dans ce cas, un seul formulaire est conservé et référencé dans toutes les copies de langue des pages Sites. Le composant **[!UICONTROL Adaptive Forms - Embed(v2)]** ne permet pas d’accéder aux différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
 
-* Lorsque vous utilisez la variable **[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer un formulaire, les formulaires sont traduits et localisés par le biais du flux de traduction AEM Sites. Pour chaque langue, une copie distincte (copie de langue) de la page du site et des formulaires correspondants est générée. Lorsqu’un auteur ou une autrice de contenu modifie une règle dans un formulaire sur la page parente, les mêmes modifications doivent être effectuées dans toutes les copies de langue du formulaire. **[!UICONTROL Conteneur de formulaires adaptatifs]** vous permet également d’utiliser différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
+* Lorsque vous utilisez le **[!UICONTROL conteneur de formulaires adaptatifs]** pour créer un formulaire, les formulaires sont traduits et localisés par le biais du flux de traduction AEM Sites. Pour chaque langue, une copie distincte (copie de langue) de la page du site et des formulaires correspondants est générée. Lorsqu’un auteur ou une autrice de contenu modifie une règle dans un formulaire sur la page parente, les mêmes modifications doivent être effectuées dans toutes les copies de langue du formulaire. **[!UICONTROL Conteneur de formulaires adaptatifs]** vous permet également d’utiliser diverses fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
 
 
 ## Conditions requises pour incorporer un formulaire adaptatif dans une page AEM Sites ou dans un fragment d’expérience AEM {#before-you-start-embedding-an-adaptive-form}
 
-Avant d’incorporer un nouveau formulaire adaptatif ou un formulaire adaptatif préexistant à l’aide de **[!UICONTROL Forms adaptatif - Incorporer (v2)]**, activez **Composants principaux de Forms adaptatif** et ajouter **Bibliothèques clientes Forms adaptatives** à votre page AEM Sites :
+Avant d’incorporer un nouveau formulaire adaptatif ou un formulaire adaptatif préexistant à l’aide de **[!UICONTROL Forms adaptatif - Incorporer(v2)]**, activez les **composants principaux de Forms adaptatif** et ajoutez les **bibliothèques clientes de Forms adaptatif** à votre page AEM Sites :
 
 +++  Activer les composants principaux des formulaires adaptatifs pour votre environnement AEM Cloud Service
 
@@ -83,12 +83,12 @@ Assurez-vous que les [composants principaux de formulaires adaptatifs sont activ
 
 +++  Ajouter des bibliothèques clientes de formulaires adaptatifs à votre page AEM Sites ou votre fragment d’expérience
 
-Lorsque la variable **[!UICONTROL Lorsque le formulaire couvre toute la largeur d’une page]** est sélectionnée dans la variable **[!UICONTROL Conteneurs de formulaires]** Configurez la boîte de dialogue et Adaptive Forms à l’aide des composants principaux est utilisé. Il est nécessaire d’inclure les bibliothèques clientes sur la page de votre site correspondant.
+Lorsque l’option **[!UICONTROL Lorsque le formulaire couvre toute la largeur d’une page]** est sélectionnée dans la boîte de dialogue de configuration **[!UICONTROL Conteneurs de formulaires]** et que le Forms adaptatif utilisant les composants principaux est utilisé, il est nécessaire d’inclure les bibliothèques clientes sur la page de votre site correspondant.
 
-![Lorsque l’option Form cover (couvre toute la largeur d’une page) est sélectionnée, le formulaire adaptatif avec les composants principaux est utilisé.](/help/forms/assets/overlaycorecomponent.gif)
+![ Lorsque l’option Form cover long de la largeur d’une page est sélectionnée et que le formulaire adaptatif avec des composants principaux est utilisé](/help/forms/assets/overlaycorecomponent.gif)
 
 
-Ajoutez la variable **Customheaderlibs** et **Customfooterlibs** bibliothèques clientes vers votre page AEM Sites à l’aide du pipeline de déploiement. Pour ajouter les bibliothèques clientes :
+Ajoutez les bibliothèques clientes **Customheaderlibs** et **Customfooterlibs** à votre page AEM Sites à l’aide du pipeline de déploiement. Pour ajouter les bibliothèques clientes :
 
 1. Accédez à et clonez votre [référentiel Git AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=fr).
 1. Ouvrez le dossier Référentiel Git AEM Cloud Service dans un éditeur de texte brut. Par exemple, Microsoft® Visual Code.
@@ -132,13 +132,13 @@ Ajoutez la variable **Customheaderlibs** et **Customfooterlibs** bibliothèques 
 
 +++
 
-+++ Activer **[!UICONTROL Forms adaptatif - Incorporer (v2)]** pour votre page AEM Sites ou votre fragment d’expérience
++++ Activez **[!UICONTROL Adaptive Forms - Embed(v2)]** pour votre page AEM Sites ou votre fragment d’expérience.
 
-Pour activer **[!UICONTROL Forms adaptatif - Incorporer (v2)]** dans la stratégie du modèle, procédez comme suit :
+Pour activer le composant **[!UICONTROL Adaptive Forms - Embed(v2)]** dans la stratégie du modèle, procédez comme suit :
 
-1. Ouvrez la page AEM Sites ou le fragment d’expérience pour modification. Pour ouvrir la page à modifier, sélectionnez-la, puis cliquez sur **[!UICONTROL Modifier]**.
+1. Ouvrez la page AEM Sites ou le fragment d’expérience pour modification. Pour ouvrir la page à modifier, sélectionnez la page, puis cliquez sur **[!UICONTROL Modifier]**.
 1. Ouvrez le modèle de votre page Sites ou Fragment d’expérience. Pour ouvrir le modèle, accédez aux **[!UICONTROL Informations sur la page]** ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Modifier le modèle]**. Le modèle correspondant s’ouvre dans l’éditeur de modèles.
-1. Dans la vue Structure, cliquez sur l’icône **[!UICONTROL Politique]** ![Politique](/help/forms/assets/Smock_FeedManagement_18_N.svg) dans la barre de menus. Dans le **[!UICONTROL Composants autorisés]** et sélectionnez la variable **[!UICONTROL Forms adaptatif - Incorporer (v2)]**  sous la case **[Nom du projet AEM Archetype] - Formulaire adaptatif**.
+1. Dans la vue Structure, cliquez sur l’icône **[!UICONTROL Politique]** ![Politique](/help/forms/assets/Smock_FeedManagement_18_N.svg) dans la barre de menus. Dans la liste **[!UICONTROL Composants autorisés]**, cochez la case **[!UICONTROL Forms adaptatif - Incorporer(v2)]** sous le **[Nom de projet d’AEM archétype] - Formulaire adaptatif**.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
@@ -147,11 +147,11 @@ Pour activer **[!UICONTROL Forms adaptatif - Incorporer (v2)]** dans la stratég
 
 ## Incorporation d’un formulaire adaptatif à l’aide du composant Forms adaptatif - Incorporer (v2) {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-Utilisez la variable **[!UICONTROL Forms adaptatif - Incorporer (v2)]** pour créer un formulaire adaptatif directement dans l’éditeur AEM Sites à l’aide de l’assistant de création de formulaire. Le formulaire obtenu est enregistré en tant qu’entité externe, ce qui permet sa réutilisation dans d’autres pages Sites et dans des formulaires autonomes. Vous pouvez incorporer entièrement un nouveau formulaire, en le adaptant spécifiquement à vos besoins et préférences de conception, directement dans une page AEM Sites ou dans un fragment d’expérience. Pour les formulaires à usage unique, il est recommandé d’effectuer une création directe sur une page AEM Sites, tandis que les fragments d’expérience sont idéaux pour les formulaires qui doivent être réutilisés sur plusieurs pages de votre site web.
+Utilisez le composant **[!UICONTROL Adaptive Forms - Embed(v2)]** pour créer un formulaire adaptatif directement dans l’éditeur AEM Sites à l’aide de l’assistant de création de formulaire. Le formulaire obtenu est enregistré en tant qu’entité externe, ce qui permet sa réutilisation dans d’autres pages Sites et dans des formulaires autonomes. Vous pouvez incorporer entièrement un nouveau formulaire, en le adaptant spécifiquement à vos besoins et préférences de conception, directement dans une page AEM Sites ou dans un fragment d’expérience. Pour les formulaires à usage unique, il est recommandé d’effectuer une création directe sur une page AEM Sites, tandis que les fragments d’expérience sont idéaux pour les formulaires qui doivent être réutilisés sur plusieurs pages de votre site web.
 
-Vous pouvez facilement incorporer un nouveau formulaire à l’aide de **[!UICONTROL Forms adaptatif - Incorporer (v2)]**.  Imaginez, par exemple, l’incorporation d’un nouveau formulaire de contact dans une page AEM Sites ou dans un fragment d’expérience AEM. Toute mise à jour ou modification apportée au formulaire de contact dans la page AEM Sites ou au fragment d’expérience s’applique automatiquement à toutes les pages sur lesquelles il est déployé. Cela simplifie la gestion des formulaires de votre site web, assurant une expérience utilisateur transparente tout en rationalisant le processus global.
+Vous pouvez facilement incorporer un nouveau formulaire à l’aide de **[!UICONTROL Adaptive Forms - Embed(v2)]**.  Imaginez, par exemple, l’incorporation d’un nouveau formulaire de contact dans une page AEM Sites ou dans un fragment d’expérience AEM. Toute mise à jour ou modification apportée au formulaire de contact dans la page AEM Sites ou au fragment d’expérience s’applique automatiquement à toutes les pages sur lesquelles il est déployé. Cela simplifie la gestion des formulaires de votre site web, assurant une expérience utilisateur transparente tout en rationalisant le processus global.
 
-Utilisation **[!UICONTROL Forms adaptatif - Incorporer (v2)]**, vous pouvez :
+En utilisant **[!UICONTROL Adaptive Forms - Embed(v2)]**, vous pouvez :
 
 * [Incorporer un nouveau formulaire à l’aide de l’assistant de Forms adaptatif dans la page AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites)
 * [Incorporation d’un nouveau formulaire à l’aide de l’assistant de Forms adaptatif dans un fragment d’expérience](#embed-form-using-adaptive-form-wizzard-experience-fragment)
@@ -169,13 +169,13 @@ Les étapes pour incorporer un nouveau formulaire à une page AEM Sites sont les
 
    ![Composant Formulaires adaptatifs - Incorporer](/help/forms/assets/aemformcontainer.png)
 
-1. Créez un formulaire adaptatif à partir du **[!UICONTROL Création de formulaire]** assistant.
+1. Créez un formulaire adaptatif à partir de l’assistant **[!UICONTROL Création de formulaire]**.
 Le **[!UICONTROL chemin de la ressource]** inclut déjà le chemin d’un formulaire adaptatif créé.
 1. Enregistrez les paramètres. Le formulaire adaptatif est maintenant incorporé dans la page.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
-Ensuite, vous pouvez [Définition de l’action Envoyer](/help/forms/configuring-submit-actions.md) et les propriétés avancées d’un formulaire adaptatif incorporé à l’aide de l’assistant de création de formulaire.
+Ensuite, vous pouvez [définir l’action Envoyer](/help/forms/configuring-submit-actions.md) et les propriétés avancées d’un formulaire adaptatif incorporé à l’aide de l’assistant de création de formulaire.
 
 
 ### Incorporation d’un nouveau formulaire à l’aide de l’assistant de Forms adaptatif dans un fragment d’expérience {#embed-form-using-adaptive-form-wizzard-experience-fragment}
@@ -188,39 +188,39 @@ Les étapes pour incorporer un nouveau formulaire à un fragment d’expérience
 
    ![Composant Formulaires adaptatifs - Incorporer](/help/forms/assets/aemformcontainer.png)
 
-1. Créez un formulaire adaptatif à partir du **[!UICONTROL Création de formulaire]** assistant.
+1. Créez un formulaire adaptatif à partir de l’assistant **[!UICONTROL Création de formulaire]**.
 Le **[!UICONTROL chemin de la ressource]** inclut déjà le chemin d’un formulaire adaptatif créé.
 1. Enregistrez les paramètres. Le formulaire adaptatif est désormais incorporé au fragment d’expérience.
 
-Ensuite, vous pouvez [Définition de l’action Envoyer](/help/forms/configuring-submit-actions.md) et les propriétés avancées d’un formulaire adaptatif incorporé à l’aide de l’assistant de création de formulaire.
+Ensuite, vous pouvez [définir l’action Envoyer](/help/forms/configuring-submit-actions.md) et les propriétés avancées d’un formulaire adaptatif incorporé à l’aide de l’assistant de création de formulaire.
 
 ### Incorporation d’un formulaire adaptatif existant dans une page AEM Sites {#embed-an-adaptive-form-in-sites-editor}
 
-Avec la variable **[!UICONTROL Forms adaptatif - Incorporer (v2)]** , vous pouvez intégrer facilement un formulaire adaptatif préexistant à une page dans AEM Sites. Cette fonctionnalité améliore considérablement l’adaptabilité et la réutilisation d’Adaptive Forms, offrant ainsi aux clients un moyen pratique de réutiliser les formulaires qu’ils ont déjà créés. Imaginez par exemple l’incorporation d’un formulaire de contact à une page AEM Sites, ce qui évite d’avoir à le recréer plusieurs fois.
+Avec le composant **[!UICONTROL Adaptive Forms - Embed(v2)]**, vous pouvez intégrer facilement un formulaire adaptatif préexistant dans une page dans AEM Sites. Cette fonctionnalité améliore considérablement l’adaptabilité et la réutilisation d’Adaptive Forms, offrant ainsi aux clients un moyen pratique de réutiliser les formulaires qu’ils ont déjà créés. Imaginez par exemple l’incorporation d’un formulaire de contact à une page AEM Sites, ce qui évite d’avoir à le recréer plusieurs fois.
 
 Pour incorporer un formulaire adaptatif existant dans une page Sites :
 
 1. Ouvrez la page AEM Sites en mode d’édition.
-1. Faites glisser et déposez le **[!UICONTROL Forms adaptatif - Incorporer (v2)]** du navigateur de composants vers la page Sites.
-1. Sélectionnez la variable **[!UICONTROL Forms adaptatif - Incorporer]** sur la page Sites, puis sélectionnez ![Propriétés Adaptive Form Container](/help/forms/assets/configure-icon.svg) dans la barre d’actions. La variable **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
+1. Faites glisser et déposez le composant **[!UICONTROL Forms adaptatif - Incorporer(v2)]** de l’explorateur de composants vers la page Sites.
+1. Sélectionnez le composant **[!UICONTROL Forms adaptatif - Incorporer]** dans la page Sites et sélectionnez ![Propriétés du conteneur de formulaires adaptatifs](/help/forms/assets/configure-icon.svg) dans la barre d’actions. La boîte de dialogue **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** s’ouvre.
 1. Recherchez et sélectionnez le formulaire adaptatif à incorporer dans le **[!UICONTROL chemin de la ressource]**.
 1. Enregistrez les paramètres. Le formulaire adaptatif est désormais incorporé à la page.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
 
-Ensuite, vous pouvez [Définition de l’action Envoyer](/help/forms/configuring-submit-actions.md) et les propriétés avancées d’un formulaire adaptatif incorporé à l’aide de l’assistant de création de formulaire.
+Ensuite, vous pouvez [définir l’action Envoyer](/help/forms/configuring-submit-actions.md) et les propriétés avancées d’un formulaire adaptatif incorporé à l’aide de l’assistant de création de formulaire.
 
 ### Incorporation d’un formulaire adaptatif existant dans un fragment d’expérience {#embed-an-adaptive-form-in-experience-fragment}
 
 Vous pouvez également étendre l’accessibilité de vos formulaires en les incorporant au fragment d’expérience AEM. Pour incorporer un formulaire adaptatif dans un fragment d’expérience :
 
 1. Ouvrez un fragment d’expérience en mode d’édition.
-1. Faites glisser et déposez le **[!UICONTROL Forms adaptatif - Incorporer (v2)]** du navigateur de composants au fragment d’expérience.
-1. Sélectionnez la variable **[!UICONTROL Forms adaptatif - Incorporer]** dans le fragment d’expérience et sélectionnez ![Propriétés Adaptive Form Container](/help/forms/assets/configure-icon.svg) dans la barre d’actions. La variable **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
+1. Faites glisser et déposez le composant **[!UICONTROL Forms adaptatif - Incorporer(v2)]** de l’explorateur de composants vers le fragment d’expérience.
+1. Sélectionnez le composant **[!UICONTROL Forms adaptatif - Incorporer]** dans le fragment d’expérience et sélectionnez ![Propriétés du conteneur de formulaires adaptatifs](/help/forms/assets/configure-icon.svg) dans la barre d’actions. La boîte de dialogue **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** s’ouvre.
 1. Recherchez et sélectionnez le formulaire adaptatif à incorporer dans le **[!UICONTROL chemin de la ressource]**.
 1. Enregistrez les paramètres. Le formulaire adaptatif est désormais incorporé au fragment d’expérience.
 
-Ensuite, vous pouvez [Définition de l’action Envoyer](/help/forms/configuring-submit-actions.md) et les propriétés avancées d’un formulaire adaptatif incorporé à l’aide de l’assistant de création de formulaire.
+Ensuite, vous pouvez [définir l’action Envoyer](/help/forms/configuring-submit-actions.md) et les propriétés avancées d’un formulaire adaptatif incorporé à l’aide de l’assistant de création de formulaire.
 
 ### Convertir un formulaire adaptatif dans une page AEM Sites en fragment d’expérience {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
@@ -236,7 +236,7 @@ Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’
 
    Une boîte de dialogue pour convertir le conteneur de formulaires adaptatifs en un nouveau fragment d’expérience ou l’ajouter à un fragment d’expérience existant s’affiche.
 
-1. Sur le **[!UICONTROL Convertir en fragment d’expérience]** de la boîte de dialogue variation, définissez les valeurs des options suivantes :
+1. Dans la boîte de dialogue de variation **[!UICONTROL Convertir en fragment d’expérience]**, définissez les valeurs des options suivantes :
 
    * **Action :** vous pouvez sélectionner pour créer un fragment d’expérience ou ajouter à un fragment d’expérience existant.
    * **Chemin d’accès parent :** spécifiez le chemin du dossier dans lequel héberger le fragment d’expérience. Cette option est disponible uniquement pour la création d’un fragment d’expérience.
@@ -246,37 +246,38 @@ Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’
 
 ## Configuration des propriétés Adaptive Form-Embed(v2)
 
-Vous pouvez personnaliser les paramètres avancés du composant **[!UICONTROL Formulaire adaptatif - Incorporer (v2)]**. Dans le **[!UICONTROL Modifier le Forms adaptatif - Incorporer]** , vous pouvez spécifier les éléments suivants :
+Vous pouvez personnaliser les paramètres avancés du composant **[!UICONTROL Formulaire adaptatif - Incorporer (v2)]**. Dans la boîte de dialogue **[!UICONTROL Modifier le Forms adaptatif - Incorporer]**, vous pouvez spécifier les éléments suivants :
 
-* **Chemin de la ressource**: recherchez et sélectionnez un formulaire adaptatif à incorporer. Il est prérempli si vous le faites glisser à partir du navigateur de ressources.
+* **Chemin d’accès à la ressource** : recherchez et sélectionnez un formulaire adaptatif à incorporer. Il est prérempli si vous le faites glisser à partir du navigateur de ressources.
 * **Publier l’envoi** : sélectionnez l’action à déclencher lors de l’envoi du formulaire. Vous pouvez choisir d’afficher un message de remerciement ou une page de remerciement.
    * **Afficher un message de remerciement** : à l’aide de l’éditeur de texte enrichi, rédigez un message à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher un message de remerciement.
    * **Afficher une page de remerciement** : recherchez et sélectionnez la page à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
-   * **Rediriger vers la page de remerciement** : activez cette option pour remplacer la page contenant le formulaire adaptatif incorporé par la page de remerciement. Sinon, la page de remerciement remplace le formulaire adaptatif dans la **[!UICONTROL Forms adaptatif - Incorporer (v2)]** sans actualiser les sites sous-jacents de la page. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
-   * **Message de remerciement**: brève confirmation ou confirmation affichée à l’écran après l’envoi réussi d’un formulaire.
-   * **Page Merci**: recherchez et sélectionnez la page à afficher après l’envoi réussi d’un formulaire.
+   * **Rediriger vers la page de remerciement** : activez cette option pour remplacer la page contenant le formulaire adaptatif incorporé par la page de remerciement. Dans le cas contraire, la page de remerciement remplace le formulaire adaptatif dans le composant **[!UICONTROL Adaptive Forms - Embed(v2)]** sans actualiser les sites sous-jacents de la page. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
+   * **Message de remerciement** : brève confirmation ou confirmation affichée à l’écran après avoir envoyé un formulaire.
+   * **Page de remerciement** : recherchez et sélectionnez la page à afficher après l’envoi réussi d’un formulaire.
 
-* **Utiliser la langue de la page**: utilisez le paramètre local de la page AEM Sites au lieu du paramètre régional du formulaire adaptatif. Cette option s’applique uniquement au formulaire adaptatif (Foundation).
-* **Définir la cible d’action sur le formulaire**: sélectionnez cette option pour mettre l’accent sur le premier champ du formulaire adaptatif. Cette option s’applique uniquement au formulaire adaptatif (Foundation).
+* **Utiliser la langue de la page** : utilisez le paramètre local de la page AEM Sites au lieu du paramètre régional du formulaire adaptatif. Cette option s’applique uniquement au formulaire adaptatif (Foundation).
+* **Définir la mise au point sur le formulaire** : sélectionnez cette option pour définir la mise au point sur le premier champ du formulaire adaptatif. Cette option s’applique uniquement au formulaire adaptatif (Foundation).
 * **Thème** : sélectionnez un thème qui définit le style des composants de votre formulaire adaptatif. Le style comprend des propriétés d’aspect telles que le style de police, la couleur d’arrière-plan, les dimensions et l’alignement. Cette option s’applique uniquement au formulaire adaptatif (Foundation).
 
   >[!NOTE]
   >
-  > Vous pouvez utiliser la variable **Utiliser la langue de la page**, **Définir la cible d’action sur le formulaire** et **Thème** options uniquement pour le formulaire adaptatif (Foundation).
+  > Vous pouvez utiliser les options **Utiliser la langue de la page**, **Définir le focus sur le formulaire** et **thème** uniquement pour le formulaire adaptatif (Foundation).
 
-* **Le formulaire couvre toute la largeur du cadre.**: un cadre intégré (iframe) est un élément de HTML qui charge un formulaire adaptatif sur une page AEM Sites.
+* **Le formulaire couvre toute la largeur de l’image** :
+Un cadre intégré (iframe) est un élément d’HTML qui charge un formulaire adaptatif sur une page AEM Sites.
 
-   * Si la variable **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** est cochée, un formulaire adaptatif occupe toute la largeur du conteneur dans lequel il est placé. Dans ce cas, un iframe n’est pas utilisé pour générer le formulaire. La mise en page et la conception d’un formulaire adaptatif s’adaptent à toute la largeur du conteneur, ce qui le rend réactif et capable de s’adapter à différentes tailles d’écran. Cette option vous permet d’incorporer plusieurs Forms adaptatives dans une page AEM Sites.
-
-     >[!NOTE]
-     >
-     > Pour incorporer plusieurs formulaires dans une page AEM Sites, sélectionnez **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** .
-
-   * Si la variable **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** n’est pas cochée, un formulaire adaptatif ne couvre pas toute la largeur du conteneur. Au lieu de cela, un iframe est utilisé pour générer le formulaire, qui ne peut pas être étendu au-delà d’une largeur spécifique. Cette approche est utile lorsqu’un formulaire adaptatif a des limites définies et doit coexister avec d’autres composants AEM à côté dans le conteneur. Si cette option n’est pas cochée, elle n’autorise l’intégration d’une seule Forms adaptative dans la page AEM Sites sans iframe.
+   * Si la case à cocher **[!UICONTROL Form couvre toute la largeur du cadre]** est cochée, un formulaire adaptatif occupe toute la largeur du conteneur dans lequel il est placé. Dans ce cas, un iframe n’est pas utilisé pour générer le formulaire. La mise en page et la conception d’un formulaire adaptatif s’adaptent à toute la largeur du conteneur, ce qui le rend réactif et capable de s’adapter à différentes tailles d’écran. Cette option vous permet d’incorporer plusieurs Forms adaptatives dans une page AEM Sites.
 
      >[!NOTE]
      >
-     > La page AEM Sites ne prend en charge qu’un seul formulaire adaptatif pour exister sans iframe. Pour ajouter d’autres Forms adaptatives à l’aide du **[!UICONTROL Forms adaptatif - Incorporer]** component, select **[!UICONTROL Le formulaire couvre toute la largeur du cadre.]** .
+     > Pour incorporer plusieurs formulaires dans une page AEM Sites, sélectionnez **[!UICONTROL Le formulaire couvre toute la largeur de la case à cocher du cadre]**.
+
+   * Si la case à cocher **[!UICONTROL Form cover long de la largeur du cadre]** n’est pas cochée, un formulaire adaptatif ne couvre pas toute la largeur du conteneur. Au lieu de cela, un iframe est utilisé pour générer le formulaire, qui ne peut pas être étendu au-delà d’une largeur spécifique. Cette approche est utile lorsqu’un formulaire adaptatif a des limites définies et doit coexister avec d’autres composants AEM à côté dans le conteneur. Si cette option n’est pas cochée, elle n’autorise l’intégration d’une seule Forms adaptative dans la page AEM Sites sans iframe.
+
+     >[!NOTE]
+     >
+     > La page AEM Sites ne prend en charge qu’un seul formulaire adaptatif pour exister sans iframe. Pour ajouter d’autres Forms adaptatives à l’aide du composant **[!UICONTROL Forms adaptatif - Incorporer]**, sélectionnez l’option **[!UICONTROL Le formulaire couvre toute la largeur de l’image]**.
 
 * **Hauteur** : indiquez la hauteur du conteneur. Laissez ce champ vide pour redimensionner automatiquement le conteneur.
 * **Bibliothèque cliente CSS** : spécifiez le chemin d’accès à une bibliothèque cliente CSS.
@@ -344,7 +345,7 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 1. You can now embed an Adaptive Form on AEM site pages using the [!UICONTROL AEM Forms Container Component].
 -->
 
-## Publier le formulaire adaptatif incorporé {#publishing-embedded-adaptive-form}
+## Formulaire adaptatif incorporé Publish {#publishing-embedded-adaptive-form}
 
 Examinons les scénarios suivants concernant la publication d’un formulaire adaptatif incorporé dans une page AEM Sites :
 

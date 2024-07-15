@@ -28,7 +28,7 @@ Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Tra
 
 ## Connexion à un fournisseur de services de traduction {#connecting-to-a-translation-service-provider}
 
-Créez une configuration de cloud qui connecte AEM à votre fournisseur de services de traduction. AEM inclut la possibilité de [Connexion à Microsoft® Translator](connect-ms-translator.md) par défaut.
+Créez une configuration de cloud qui connecte AEM à votre fournisseur de services de traduction. AEM inclut la possibilité de [se connecter à Microsoft® Translator](connect-ms-translator.md) par défaut.
 
 Les fournisseurs de services de traduction ci-dessous fournissent une mise en œuvre de la nouvelle API AEM pour les projets de traduction.
 
@@ -44,7 +44,7 @@ Les fournisseurs de services de traduction ci-dessous fournissent une mise en œ
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
-Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En règle générale, vous devez fournir vos informations d’identification pour vous authentifier auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration cloud pour le connecteur Microsoft® Translator, voir [Intégration avec Microsoft® Translator](connect-ms-translator.md).
+Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En règle générale, vous devez fournir vos informations d’identification pour vous authentifier auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration de cloud pour le connecteur du traducteur Microsoft®, voir [Intégration à Microsoft® Translator](connect-ms-translator.md).
 
 Vous pouvez créer plusieurs configurations de cloud pour le même connecteur, si nécessaire. Par exemple, créez une configuration pour chacun des comptes ou projets que vous avez avec le même fournisseur.
 
@@ -70,13 +70,13 @@ Une fois que vous avez configuré une structure d’intégration de traduction, 
 
 Une configuration unique de la structure contrôle la manière dont le contenu de page et les ressources sont traduits. Pour créer une configuration de traduction :
 
-1. Dans le [menu de navigation globale,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) select **Outils > Cloud Service et Cloud Service de traduction**.
+1. Dans le [ menu de navigation globale,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) sélectionnez **Outils > Cloud Service et Cloud Service de traduction**.
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Il est souvent basé sur un site particulier, mais peut également être global.
-1. Indiquez les informations suivantes dans les champs, puis sélectionnez **Créer**.
+1. Indiquez les informations suivantes dans les champs, puis sélectionnez **Créer** :
    1. Sélectionnez **Type de configuration** dans la liste déroulante.
    1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud**, ainsi que dans les listes déroulantes de propriétés de la page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
-1. Dans le **Modifier la configuration** , configurez les propriétés sur la fenêtre **Sites** et **Ressources** onglets, puis sélectionnez **Enregistrer et fermer**.
+1. Dans la fenêtre **Modifier la configuration**, configurez les propriétés sur les onglets **Sites** et **Assets**, puis sélectionnez **Enregistrer et fermer**.
 
 ### Propriétés de configuration des sites {#sites-configuration-properties}
 
@@ -110,7 +110,7 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
 | Traduire les balises | Activez cette propriété afin de pouvoir traduire les balises associées à la ressource. |
 | Exécution automatique de la traduction | Sélectionnez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier ou de définir la portée de la tâche de traduction. |
 | Désactiver Traduction uniquement des champs mis à jour | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles à des fins de traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
-| Activer les champs de modèle de contenu pour la traduction | L’activation de cette option utilise la méthode **Traductible** champ sur [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) pour déterminer si le champ est traduit et créé automatiquement [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
+| Activer les champs de modèle de contenu pour la traduction | L’activation de cette option utilise le champ **Translatable** sur [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) pour déterminer si le champ est traduit et crée automatiquement les [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
 
 ## Configuration des pages pour la traduction {#configuring-pages-for-translation}
 
@@ -121,7 +121,7 @@ Pour configurer la traduction de vos pages source dans d’autres langues, assoc
 
 Notez que la configuration de cloud du framework d’intégration de traduction identifie la configuration de cloud à utiliser pour la connexion au fournisseur de services. Lorsque vous associez une page source à une configuration cloud de framework, la page doit être associée à la configuration cloud du fournisseur utilisée par la configuration cloud de framework.
 
-Lorsque vous associez une page à une configuration de cloud, les descendants de la page héritent de l’association. Par exemple, si vous avez associé la variable `/content/wknd/language-masters/en/magazine` avec une structure d’intégration de traduction, la variable `magazine` les pages et les pages enfants en dessous sont traduites en fonction de la structure.
+Lorsque vous associez une page à une configuration de cloud, les descendants de la page héritent de l’association. Par exemple, si vous avez associé la page `/content/wknd/language-masters/en/magazine` à une structure d’intégration de traduction, la page `magazine` et les pages enfants situées en dessous sont traduites en fonction de la structure.
 
 Lorsque cela est nécessaire, vous pouvez remplacer l’association dans une page descendante. Par exemple, le contenu d’un site web traite principalement des voyages et de l’art de vivre. Cependant, une branche des pages décrit l’entreprise. Dans ce cas, la page racine du site peut être associée à une structure d’intégration de traduction qui spécifie la traduction automatique à l’aide de la catégorie Style de vie. La branche qui décrit l’entreprise utilise une structure qui effectue la traduction automatique à l’aide de la catégorie Général .
 
@@ -131,7 +131,7 @@ Associez une page au fournisseur de traduction que vous utilisez pour traduire l
 
 1. Dans la console Sites, sélectionnez la page à configurer et sélectionnez **Afficher les propriétés**.
 1. Sélectionnez l’onglet **Services cloud**.
-1. Dans le **Ajouter une configuration** , sélectionnez la configuration.
+1. Dans la liste déroulante **Ajouter une configuration** , sélectionnez la configuration.
 1. Sélectionnez **Enregistrer et fermer**.
 
 ### Association des pages à une structure d’intégration de traduction {#associating-pages-with-a-translation-integration-framework}
@@ -140,5 +140,5 @@ Associez une page au framework d’intégration de traduction qui définit la fa
 
 1. Dans la console Sites, sélectionnez la page à configurer et sélectionnez **Afficher les propriétés**.
 1. Sélectionnez l’onglet **Services cloud**.
-1. Dans le **Ajouter une configuration** , sélectionnez la configuration.
+1. Dans la liste déroulante **Ajouter une configuration** , sélectionnez la configuration.
 1. Sélectionnez **Enregistrer et fermer**.

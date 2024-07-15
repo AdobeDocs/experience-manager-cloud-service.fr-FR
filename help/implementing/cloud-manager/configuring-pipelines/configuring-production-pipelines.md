@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1367'
-ht-degree: 67%
+ht-degree: 69%
 
 ---
 
@@ -42,7 +42,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. Accédez au **Pipelines** de la carte **Aperçu du programme** page et clic **Ajouter** pour sélectionner **Ajout d’un pipeline de production**.
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme** et cliquez sur **Ajouter** pour sélectionner **Ajouter un pipeline de production**.
 
    ![Carte Pipelines dans l’aperçu du Gestionnaire de programmes](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -61,7 +61,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
    ![Configuration du pipeline de production](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. Sur le **Code source** vous devez sélectionner le type de code que le pipeline doit traiter.
+1. Dans l’onglet **Code Source** , vous devez sélectionner le type de code que le pipeline doit traiter.
 
    * **[Code full stack](#full-stack-code)**
    * **[Déploiement ciblé](#targeted-deployment)**
@@ -72,7 +72,7 @@ Les étapes de création de votre pipeline de production varient en fonction du 
 
 ### Code full stack {#full-stack-code}
 
-Un pipeline de code à pile complète déploie simultanément des builds de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec une configuration HTTPD/Dispatcher.
+Un pipeline de code à pile complète déploie simultanément les versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec une configuration HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -96,13 +96,13 @@ Pour terminer la configuration du pipeline de production de code full stack, pro
 
    ![Code full stack](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Appuyez ou cliquez sur **Continuer** pour accéder au **Audit de l’expérience** vous permettant de définir les chemins qui doivent toujours être inclus dans le contrôle de l’expérience.
+1. Appuyez ou cliquez sur **Continuer** pour accéder à l’onglet **Audit de l’expérience** où vous pouvez définir les chemins qui doivent toujours être inclus dans le contrôle de l’expérience.
 
    ![Ajout d’un contrôle de l’expérience](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. Indiquez les chemins à inclure dans le contrôle de l’expérience.
 
-   * Voir le document [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) pour plus d’informations.
+   * Pour plus d’informations, consultez le document [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) .
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
@@ -112,23 +112,23 @@ Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](man
 
 ### Déploiement ciblé {#targeted-deployment}
 
-Un déploiement ciblé déploie le code uniquement pour les parties sélectionnées de votre application AEM. Dans un tel déploiement, vous pouvez choisir **Inclure** l’un des types de code suivants :
+Un déploiement ciblé déploie le code uniquement pour les parties sélectionnées de votre application AEM. Dans un tel déploiement, vous pouvez choisir d’**inclure** l’un des types de code suivants :
 
 * **Config** - Configurez les paramètres des règles de filtrage du trafic sur votre environnement AEM.
-   * Voir le document [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
-   * Lors de l’exécution d’un pipeline de déploiement ciblé, [Configurations WAF](/help/security/traffic-filter-rules-including-waf.md) seront déployés, à condition qu’ils soient enregistrés dans l’environnement, le référentiel et la branche que vous avez définis dans le pipeline.
+   * Consultez le document [Règles de filtrage du trafic y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
+   * Lors de l’exécution d’un pipeline de déploiement ciblé, les [configurations WAF](/help/security/traffic-filter-rules-including-waf.md) seront déployées, à condition qu’elles soient enregistrées dans l’environnement, le référentiel et la branche que vous avez définis dans le pipeline.
    * À tout moment, il ne peut y avoir qu’un seul pipeline de configuration par environnement.
 * **Code front-end** - Configurez JavaScript et CSS pour le front-end de votre application AEM.
    * Avec les pipelines front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut être accéléré.
    * Consultez le document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus ainsi que certaines considérations à prendre en compte pour en tirer le meilleur parti.
-* **Configuration du niveau web** - Configurez les propriétés du dispatcher pour stocker, traiter et diffuser des pages web au client.
-   * Voir le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) pour plus d’informations.
+* **Configuration de niveau web** - Configurez les propriétés du Dispatcher pour stocker, traiter et diffuser des pages web au client.
+   * Pour plus d’informations, consultez le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) .
    * Si un pipeline de code de niveau web existe pour l’environnement sélectionné, cette sélection est désactivée.
    * Si vous disposez déjà d’un pipeline full stack se déployant vers un environnement, la création d’un pipeline de configuration de niveau web pour le même environnement entraîne l’exclusion de la configuration de niveau web existante dans le pipeline full stack.
 
 >[!NOTE]
 >
->Les pipelines de niveau web et de configuration ne sont pas pris en charge par les référentiels privés. Consultez le document [Ajout de référentiels privés dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) pour plus de détails et la liste complète des limites.
+>Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés. Consultez le document [Ajouter des référentiels privés dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) pour plus de détails et pour la liste complète des restrictions.
 
 Les étapes de création de votre pipeline de déploiement ciblé en production sont les mêmes une fois que vous avez choisi un type de déploiement.
 
@@ -136,11 +136,11 @@ Les étapes de création de votre pipeline de déploiement ciblé en production 
 
 ![Options de déploiement ciblées](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
 
-1. Définissez la variable **Environnements de déploiement éligibles**.
+1. Définissez les **environnements de déploiement éligibles**.
 
    * Si votre pipeline est un pipeline de déploiement, vous devez sélectionner les environnements à déployer.
 
-1. Sous **Code source**, définissez les options suivantes :
+1. Sous **Source Code**, définissez les options suivantes :
 
    * **Référentiel** – Cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
 
@@ -154,7 +154,7 @@ Les étapes de création de votre pipeline de déploiement ciblé en production 
    * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
    * **Planifié** - Cette option permet à l’utilisateur d’activer le déploiement en production planifié. Disponible uniquement pour les déploiements ciblés de niveau web.
 
-   ![Configuration du pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. Cliquez sur **Enregistrer**.
 

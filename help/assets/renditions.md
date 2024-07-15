@@ -22,7 +22,7 @@ Les rendus sont classés comme statiques et dynamiques, chaque type présentant 
 ## Rendus statiques {#static-renditions}
 
 Les rendus statiques sont des versions prégénérées de ressources numériques, généralement créées lors de l’assimilation ou de la modification de ressources. Ces rendus sont optimisés à des fins et plateformes spécifiques, telles que les miniatures web, les formats compatibles avec les appareils mobiles pour le responsive design ou les versions haute résolution pour l’impression, ce qui garantit une expérience efficace et cohérente.
-Formation [affichage et téléchargement](#view-dynamic-renditions) rendus statiques dans [!DNL Experience Manager Assets].
+Découvrez [comment afficher et télécharger](#view-dynamic-renditions) rendus statiques dans [!DNL Experience Manager Assets].
 
 ## Rendus dynamiques {#dynamic-renditions}
 
@@ -33,32 +33,32 @@ Ces rendus permettent aux entreprises de fournir des expériences personnalisée
 
 * Vous devez être un utilisateur Dynamic Media sous licence AEM.
 
-* Utilisation [!UICONTROL Vue Admin] pour configurer :
-   * [Recadrage intelligent de profils d’image](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
+* Utilisez [!UICONTROL Admin view] pour configurer :
+   * [Profils d’image avec recadrage intelligent](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [Paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md)
 
-  Vous pouvez [changer la vue](/help/assets/assets-view-introduction.md#how-to-access-assets-view) plus tard pour prévisualiser les rendus dynamiques dans la vue Assets.
+  Vous pouvez [changer de vue](/help/assets/assets-view-introduction.md#how-to-access-assets-view) ultérieurement pour prévisualiser les rendus dynamiques dans la vue Assets.
 
 ### Affichage et téléchargement de rendus dynamiques {#view-renditions}
 
-Pour afficher ou télécharger des rendus dynamiques dans [!DNL Experience Manager Assets], procédez comme suit :
+Pour afficher ou télécharger les rendus dynamiques des images dans [!DNL Experience Manager Assets], procédez comme suit :
 
-1. Accédez à **[!UICONTROL Gestion des ressources]** > **[!UICONTROL Ressources]**.
+1. Accédez à **[!UICONTROL Gestion Assets]** > **[!UICONTROL Assets]**.
 
 1. Accédez au dossier de ressources approprié.
 
-1. Cliquez sur l’image à afficher, puis cliquez sur **[!UICONTROL Détails]**.
+1. Cliquez sur l&#39;image à afficher, puis sur **[!UICONTROL Details]**.
 
-1. Dans le menu de droite, cliquez sur **[!UICONTROL Rendus]**. <br> La variable **[!UICONTROL Rendus]** s’ouvre avec le panneau disponible **[!UICONTROL Dynamique]** et **[!UICONTROL Recadrage intelligent]** rendus.
+1. Dans le menu de droite, cliquez sur **[!UICONTROL Rendus]**. <br> Le panneau **[!UICONTROL Rendus]** s’ouvre avec les rendus **[!UICONTROL Dynamique]** et **[!UICONTROL Recadrage intelligent]** disponibles.
 
    ![rendus dynamiques](assets/preset_smart_crop.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. Cliquez sur le rendu que vous devez afficher ou télécharger.
 
-1. Cliquez sur le bouton ![icône de téléchargement](assets/do-not-localize/download-icon.png) en regard du rendu dynamique à télécharger. <br> Vous pouvez également sélectionner le rendu d’image, puis cliquer sur **[!UICONTROL Télécharger le rendu]** en bas de l’écran.
+1. Cliquez sur l’icône ![télécharger](assets/do-not-localize/download-icon.png) en regard du rendu dynamique que vous devez télécharger. <br> Vous pouvez également sélectionner le rendu d’image, puis cliquer sur l’option **[!UICONTROL Télécharger le rendu]** en bas de la page.
 
-   Vous pouvez cliquer sur le bouton ![icône de téléchargement](assets/do-not-localize/download-icon.png) icône disponible en haut de **[!UICONTROL Recadrage intelligent]** section rendus pour télécharger tous les rendus de recadrage intelligent disponibles pour cette ressource.
+   Vous pouvez cliquer sur l’icône ![Télécharger l’icône](assets/do-not-localize/download-icon.png) disponible en haut de la section **[!UICONTROL Recadrage intelligent]** pour télécharger tous les rendus de recadrage intelligent pour cette ressource.
 
 >[!NOTE]
 >

@@ -1,25 +1,26 @@
 ---
-title: Comment activer les composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms ?
-description: Découvrez comment activer les composants principaux de Forms adaptatif sur AEM Forms as a Cloud Service.
+title: Comment activer les composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local AEM Forms ?
+description: Découvrez comment activer les composants principaux de Forms adaptatif as a Cloud Service AEM Forms.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
-# Activation des composants principaux de Forms adaptatif {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Activer les composants principaux des formulaires adaptatifs {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
+L’activation des composants principaux de Forms adaptatif as a Cloud Service AEM Forms vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
 
 ## Considérations
 
@@ -35,7 +36,7 @@ L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Clo
 Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les composants principaux des formulaires adaptatifs et les formulaires adaptatifs découplés pour un environnement AEM Forms as a Cloud Service
 
 
-![Activation des composants principaux et des formulaires adaptatifs sans en-tête](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
+![Activer les composants principaux et les formulaires adaptatifs sans tête](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
 ## 1. Cloner votre référentiel Git AEM Forms as a Cloud Service {#clone-git-repository}

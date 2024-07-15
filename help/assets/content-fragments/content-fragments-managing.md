@@ -1,6 +1,6 @@
 ---
-title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
-description: Découvrez comment utiliser la console Ressources pour gérer vos fragments de contenu AEM, comme base de votre contenu headless ou pour la création de pages.
+title: Gestion des fragments de contenu (Assets - Fragments de contenu)
+description: Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM, comme base de votre contenu sans interface utilisateur ou pour la création de pages.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
@@ -14,7 +14,7 @@ ht-degree: 89%
 
 # Gérer des fragments de contenu {#managing-content-fragments}
 
-Découvrez comment utiliser la console Ressources pour gérer vos fragments de contenu AEM, comme base de votre contenu headless ou pour la création de pages.
+Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM, comme base de votre contenu sans interface utilisateur ou pour la création de pages.
 
 Après avoir défini vos [modèles de fragment de contenu](#creating-a-content-model), vous pouvez les utiliser pour [créer vos fragments de contenu](#creating-a-content-fragment).
 
@@ -41,7 +41,7 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 >
 >Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu. Cette section traite de l’éditeur d’origine, principalement accessible à partir de **Ressources** console. Consultez la documentation de Sites , [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir du **Fragments de contenu** ). Les deux éditeurs disposent d’un bouton d’activation/désactivation dans la barre d’outils supérieure afin d’accéder rapidement à l’autre éditeur.
+>Il existe deux éditeurs pour la création de fragments de contenu. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**. Pour plus d’informations sur le nouvel éditeur, voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), (principalement accessible à partir de la console **Fragments de contenu**). Les deux éditeurs disposent d’un bouton d’activation/désactivation dans la barre d’outils supérieure afin d’accéder rapidement à l’autre éditeur.
 
 ## Créer des fragments de contenu {#creating-content-fragments}
 
@@ -152,7 +152,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
    >[!NOTE]
    >
-   >**Enregistrer et fermer** est disponible au moyen de la fonction **Enregistrer** liste déroulante.
+   >**Save &amp; close** est disponible dans la liste déroulante **Save**.
 
    >[!NOTE]
    >
@@ -198,7 +198,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
    * **Modifié** : orange
    * **Désactivé** : rouge
 
-* Un bouton permet de **Essayer un nouvel éditeur**, en ouvrant directement le *new* [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) accessible via le [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* Un bouton vous permet de **Essayer un nouvel éditeur** en ouvrant directement l’ *nouvel* [éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) accessible via la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 
   >[!WARNING]
   >
@@ -344,7 +344,7 @@ Ces dernières sont affichées dans des versions côte à côte dans lesquelles�
 >
 >Vous ne pouvez pas modifier le contenu d’un fragment lors de la comparaison de fragments.
 
-![Comparaison des variations](assets/cfm-managing-06.png)
+![Comparaison de variations](assets/cfm-managing-06.png)
 
 ## Restauration vers une version spécifique   {#reverting-to-a-version}
 

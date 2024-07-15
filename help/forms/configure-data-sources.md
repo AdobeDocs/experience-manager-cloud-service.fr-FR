@@ -1,6 +1,6 @@
 ---
 title: Comment configurer des sources de données ?
-description: Découvrez comment configurer les services Web RESTful, les services Web SOAP et les services OData comme sources de données pour un modèle de données de formulaire (FDM).
+description: Découvrez comment configurer les services Web RESTful, les services Web basés sur SOAP et les services OData comme sources de données pour un modèle de données de formulaire (FDM).
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
@@ -22,9 +22,9 @@ ht-degree: 84%
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] Data Integration vous permet de configurer des sources de données disparates et de vous y connecter. La prise en charge est assurée par défaut pour les types suivants :
+[!DNL Experience Manager Forms] L’ intégration de données vous permet de configurer des sources de données disparates et de vous y connecter. La prise en charge est assurée par défaut pour les types suivants :
 
-* Bases de données relationnelles - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL et [!DNL Oracle RDBMS]
+* Bases de données relationnelles : MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL et [!DNL Oracle RDBMS]
 * Services web RESTful
 * Services web SOAP
 * Services OData (version 4.0)
@@ -39,7 +39,7 @@ L’intégration de données prend en charge l’authentification OAuth2.0, ([Co
 ### Prérequis
 
 Avant de configurer des bases de données relationnelles à l’aide de la Configuration de la console web [!DNL Experience Manager], il est obligatoire d’effectuer les actions suivantes :
-* [Activation de la mise en réseau avancée via l’API de gestion du cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), car les ports sont désactivés par défaut.
+* [ Activez la mise en réseau avancée via l’API de gestion du cloud ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), car les ports sont désactivés par défaut.
 * [Ajouter des dépendances de pilote JDBC dans Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=fr#mysql-driver-dependencies).
 
 
@@ -123,7 +123,7 @@ Pour configurer le dossier pour les configurations de service cloud :
 
 ## Configurer des services web RESTful {#configure-restful-web-services}
 
-Les services web RESTful peuvent être décrits à l’aide de [Spécifications Swagger](https://swagger.io/specification/v2/) au format JSON ou YAML dans un objet [!DNL Swagger] fichier de définition. Pour configurer le service web RESTful dans [!DNL Experience Manager] as a Cloud Service, vérifiez que le fichier [!DNL Swagger] ([Swagger Version 2.0](https://swagger.io/specification/v2/)) ou le fichier [!DNL Swagger] ([Swagger Version 3.0](https://swagger.io/specification/v3/)) est présent dans votre système de fichiers ou l’URL où le fichier est hébergé.
+Les services Web RESTful peuvent être décrits à l’aide des [spécifications Swagger](https://swagger.io/specification/v2/) au format JSON ou YAML dans un fichier de définition [!DNL Swagger]. Pour configurer le service web RESTful dans [!DNL Experience Manager] as a Cloud Service, vérifiez que le fichier [!DNL Swagger] ([Swagger Version 2.0](https://swagger.io/specification/v2/)) ou le fichier [!DNL Swagger] ([Swagger Version 3.0](https://swagger.io/specification/v3/)) est présent dans votre système de fichiers ou l’URL où le fichier est hébergé.
 
 ### Configurez les services RESTful pour la version 2.0 de la spécification Open API {#configure-restful-services-open-api-2.0}.
 
@@ -134,7 +134,7 @@ Les services web RESTful peuvent être décrits à l’aide de [Spécifications 
 1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service RESTful :
 
-   * Sélectionnez une URL ou un fichier dans le [!UICONTROL Source Swagger] et, en conséquence, spécifiez la variable [!DNL Swagger URL] à la fonction[!DNL  Swagger] fichier de définition ou téléchargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
+   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source] et spécifiez [!DNL Swagger URL] dans le fichier de définition [!DNL  Swagger] ou téléchargez le fichier [!DNL Swagger] depuis votre système de fichiers local.
    * En fonction de l’entrée source [!DNL  Swagger], les champs suivants sont préremplis avec des valeurs :
 
       * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source [!DNL Swagger].
@@ -159,7 +159,7 @@ Les services web RESTful peuvent être décrits à l’aide de [Spécifications 
 1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service RESTful :
 
-   * Sélectionnez une URL ou un fichier dans le [!UICONTROL Source Swagger] et, en conséquence, spécifiez la variable [!DNL Swagger 3.0 URL] à la fonction[!DNL  Swagger] fichier de définition ou téléchargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
+   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source] et spécifiez [!DNL Swagger 3.0 URL] dans le fichier de définition [!DNL  Swagger] ou téléchargez le fichier [!DNL Swagger] depuis votre système de fichiers local.
    * En fonction de l’entrée source [!DNL  Swagger], les informations de connexion au serveur cible s’affichent.
    * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, clé API ou authentification personnalisée pour accéder au service RESTful et spécifiez les détails de l’authentification.
 
@@ -180,11 +180,11 @@ Consultez [Spécification OpenAPI 3.0](https://swagger.io/specification/v3/) po
 
 ### Configuration du client HTTP de modèle de données de formulaire (FDM) pour optimiser les performances {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] formez un modèle de données lors de l’intégration aux services web RESTful en tant que source de données ; il comprend des configurations de client HTTP pour l’optimisation des performances.
+[!DNL Experience Manager Forms] forme un modèle de données lors de l’intégration aux services web RESTful en tant que source de données ; inclut des configurations de client HTTP pour l’optimisation des performances.
 
 Définissez les propriétés suivantes de la **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]** pour spécifier l’expression régulière :
 
-* Utilisez la variable `http.connection.max.per.route` pour définir le nombre maximal de connexions autorisées entre le modèle de données de formulaire (FDM) et les services Web RESTful. La valeur par défaut est de 20 connexions.
+* Utilisez la propriété `http.connection.max.per.route` pour définir le nombre maximal de connexions autorisées entre le modèle de données de formulaire (FDM) et les services Web RESTful. La valeur par défaut est de 20 connexions.
 
 * Utilisez la propriété `http.connection.max` pour spécifier le nombre maximal de connexions autorisées pour chaque itinéraire. La valeur par défaut est de 40 connexions.
 
@@ -208,11 +208,11 @@ Le fichier JSON suivant affiche un exemple :
 } 
 ```
 
-1. Sélectionner **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]**.
+1. Sélectionnez **[!UICONTROL Form Data Model HTTP Client Configuration for REST data source]**.
 
 1. Dans la boîte de dialogue [!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST] :
 
-   * Spécifiez le nombre maximal de connexions autorisées entre le modèle de données de formulaire (FDM) et les services Web RESTful dans la variable **[!UICONTROL Limite de connexion au total]** champ . La valeur par défaut est de 20 connexions.
+   * Indiquez le nombre maximal de connexions autorisées entre le modèle de données de formulaire (FDM) et les services Web RESTful dans le champ **[!UICONTROL Limite de connexion au total]** . La valeur par défaut est de 20 connexions.
 
    * Spécifiez le nombre maximal de connexions autorisées pour chaque itinéraire dans le champ **[!UICONTROL Limite de connexion par itinéraire]**. La valeur par défaut est « deux connexions ».
 
@@ -224,7 +224,7 @@ Le fichier JSON suivant affiche un exemple :
 
 ## Configuration des services web SOAP {#configure-soap-web-services}
 
-Les services web SOAP sont décrits à l’aide des [spécifications WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] ne prennent pas en charge le modèle WSDL de style RPC.
+Les services web SOAP sont décrits à l’aide des [spécifications WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] ne prend pas en charge le modèle WSDL de style RPC.
 
 Pour configurer le service Web SOAP dans [!DNL Experience Manager] as a Cloud Service, vérifiez que vous disposez de l’URL WSDL pour le service web et procédez comme suit :
 
@@ -267,7 +267,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 >[!NOTE]
 >
 > Le modèle de données de formulaire (FDM) prend en charge [OData version 4](https://www.odata.org/documentation/).
->Pour un guide détaillé de configuration [!DNL Microsoft®® Dynamics 365], en ligne ou sur site, voir [[!DNL Microsoft® Dynamics] Configuration OData](ms-dynamics-odata-configuration.md).
+>Pour obtenir un guide détaillé sur la configuration de [!DNL Microsoft®® Dynamics 365] en ligne ou sur site, voir [[!DNL Microsoft® Dynamics] Configuration OData](ms-dynamics-odata-configuration.md).
 
 1. Accédez à **[!UICONTROL Outils > Services Cloud > Sources de données]**. Sélectionnez le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -283,7 +283,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
    >[!NOTE]
    >
-   >Sélectionnez le type d’authentification OAuth 2.0 avec lequel vous connecter. [!DNL Microsoft®® Dynamics] services utilisant le point d’entrée OData comme racine de service.
+   >Sélectionnez le type d’authentification OAuth 2.0 pour vous connecter aux services [!DNL Microsoft®® Dynamics] à l’aide du point d’entrée OData comme racine du service.
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration cloud pour le service OData.
 

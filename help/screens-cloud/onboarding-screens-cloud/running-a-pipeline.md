@@ -54,7 +54,7 @@ La section suivante décrit comment configurer le pipeline CI/CD et déployer vo
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. Une fois le processus de création terminé, vous pouvez voir un lien d’auteur à partir du **Environnements** Carte du **Présentation** page.
+1. Une fois le processus de création terminé, vous pouvez voir un lien d’auteur à partir de la carte **Environments** de la page **Overview** de Cloud Manager.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 

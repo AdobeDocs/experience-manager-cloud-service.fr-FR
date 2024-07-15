@@ -46,14 +46,14 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
   <tr>
     <td>Purge de version</td>
     <td>Client</td>
-    <td>La purge de version est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge de version est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut, avec ces valeurs pouvant être remplacées.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Client</td>
-    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la stratégie peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de journal d’audit</a> .<br/><br/>La purge sera bientôt activée par défaut, avec ces valeurs pouvant être remplacées.<br>
    </td>
    </td>
   </tr>
@@ -67,7 +67,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Purge des tâches ad hoc</td>
     <td>Client</td>
     <td>
-    <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de la fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>.</p>
+    <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>.</p>
     <p>Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus. Nommez-le <code>granite_TaskPurgeTask</code>, avec l’attribut <code>sling:resourceType</code> défini sur <code>granite/operations/components/maintenance/task</code> et l’attribut <code>granite.maintenance.name</code> défini sur <code>TaskPurge</code>. Configurez les propriétés OSGI. Voir <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> pour la liste des propriétés.</p>
   </td>
   </tr>
@@ -75,7 +75,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Purge du workflow</td>
     <td>Client</td>
     <td>
-    <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de la fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
     <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_WorkflowPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Consultez la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=fr#regular-purging-of-workflow-instances">documentation sur les tâches de maintenance AEM 6.5</a>.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Purge du projet</td>
     <td>Client</td>
     <td>
-    <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de la fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
     <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des propriétés OSGI sous « Configuration de purge des projets Adobe ».</p>
   </td>
   </tr>
@@ -226,14 +226,14 @@ config/
      mt.yaml
 ```
 
-**2** - Déclarez les propriétés dans le fichier de configuration, qui incluent :
+**2** - Déclarez les propriétés dans le fichier de configuration, notamment :
 
 * une propriété &quot;type&quot; avec la valeur &quot;MaintenanceTasks&quot;.
 * une propriété &quot;version&quot; (nous sommes actuellement à la version 1).
 * un objet &quot;metadata&quot; facultatif avec la propriété `envTypes` avec une liste séparée par des virgules du type d’environnement (dev, stage, prod) pour lequel cette configuration est valide. Si aucun objet de métadonnées n’est déclaré, la configuration est valide pour tous les types d’environnements.
-* un objet de données avec les deux `versionPurge` et `auditLogPurge` objets.
+* un objet de données avec les objets `versionPurge` et `auditLogPurge`.
 
-Voir les définitions et la syntaxe de la variable `versionPurge` et `auditLogPurge` en dessous.
+Voir les définitions et la syntaxe des objets `versionPurge` et `auditLogPurge` ci-dessous.
 
 Vous devez structurer la configuration comme dans l’exemple suivant :
 
@@ -309,7 +309,7 @@ Les valeurs par défaut des environnements créés avant l’activation de la pu
 
 Les propriétés autorisées sont répertoriées ci-dessous.
 
-Les colonnes indiquant *default* indiquer les valeurs par défaut à l’avenir, lors de l’application des valeurs par défaut ; *À déterminer* reflète un identifiant d’environnement qui n’est toujours pas déterminé.
+Les colonnes indiquant *default* indiquent les valeurs par défaut à l’avenir, lorsque les valeurs par défaut sont appliquées ; *TBD* reflète un ID d’environnement qui n’est toujours pas déterminé.
 
 | Propriétés | valeur par défaut future pour envs > À déterminer | valeur par défaut future des jalons&lt;=À déterminer | obligatoire | Type | Valeurs |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
@@ -332,9 +332,9 @@ maximumVersions = 10
 minimumVersions = 2
 ```
 
-S’il existe 11 versions au jour 23, la version la plus ancienne sera purgée la prochaine fois que la tâche de maintenance de purge sera exécutée, puisque la variable `maximumVersions` est définie sur 10.
+S’il existe 11 versions le 23 jour, la version la plus ancienne sera purgée la prochaine fois que la tâche de maintenance de purge sera exécutée, puisque la propriété `maximumVersions` est définie sur 10.
 
-S’il existe 5 versions au jour 31, seules 3 versions seront purgées depuis la variable `minimumVersions` est définie sur 2.
+S’il existe 5 versions au jour 31, seules 3 versions seront purgées, car la propriété `minimumVersions` est définie sur 2.
 
 Exemple :
 
@@ -344,7 +344,7 @@ maximumVersions = 0
 minimumVersions = 1
 ```
 
-Aucune version ultérieure à 30 jours ne sera purgée depuis le `maximumVersions` est définie sur 0.
+Aucune version ultérieure à 30 jours ne sera purgée, car la propriété `maximumVersions` est définie sur 0.
 
 Une version de plus de 30 jours sera conservée.
 
@@ -375,7 +375,7 @@ Les valeurs par défaut des environnements créés avant l’activation de la pu
 
 Les propriétés autorisées sont répertoriées ci-dessous.
 
-Les colonnes indiquant *default* indiquer les valeurs par défaut à l’avenir, lors de l’application des valeurs par défaut ; *À déterminer* reflète un identifiant d’environnement qui n’est toujours pas déterminé.
+Les colonnes indiquant *default* indiquent les valeurs par défaut à l’avenir, lorsque les valeurs par défaut sont appliquées ; *TBD* reflète un ID d’environnement qui n’est toujours pas déterminé.
 
 
 | Propriétés | valeur par défaut future pour envs > À déterminer | valeur par défaut future des jalons&lt;=À déterminer | obligatoire | Type | Valeurs |
@@ -383,4 +383,4 @@ Les colonnes indiquant *default* indiquer les valeurs par défaut à l’avenir,
 | règles | - | - | Oui | Objet | Un ou plusieurs des noeuds suivants : réplication, pages, dam. Chacun de ces noeuds définit des règles, avec les propriétés ci-dessous. Toutes les propriétés doivent être déclarées. |
 | maximumAgeDays | 7 jours | pour tous, 2557 (7 ans + 2 jours bissextiles) | Oui | integer | Pour la réplication, les pages ou le dam : nombre de jours pendant lesquels les journaux d’audit sont conservés. Les journaux d’audit antérieurs à la valeur configurée sont purgés. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | Oui | Chaîne | Chemin d’accès sous lequel les journaux d’audit seront purgés, pour le type associé. Doit être défini sur &quot;/content&quot;. |
-| types | toutes les valeurs | toutes les valeurs | Oui | Tableau d&#39;énumération | Pour **réplication**, les valeurs énumérées sont : Activer, Désactiver, Supprimer, Test, Inverser, Sondage interne. Pour **pages**, les valeurs énumérées sont : PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Pour **dam**, les valeurs énumérées sont : ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT,_UPDATED, ACCEPTED, TÉLÉCHARGÉ, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJETÉ. |
+| types | toutes les valeurs | toutes les valeurs | Oui | Tableau d&#39;énumération | Pour **replication**, les valeurs énumérées sont : Activer, Désactiver, Supprimer, Tester, Inverser, Sondage interne. Pour **pages**, les valeurs énumérées sont : PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Pour **dam**, les valeurs énumérées sont : ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, DED_COMMENT, RENDITION_UPDATED, ACCEPTÉ, TÉLÉCHARGÉ, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED . |

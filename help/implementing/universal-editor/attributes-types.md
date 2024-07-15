@@ -34,7 +34,7 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 | `data-aue-filter` | Définit les références qui peuvent être utilisées |
 | `data-aue-label` | Définit un libellé personnalisé pour un élément sélectionnable affiché dans l’éditeur. <br>Si `data-aue-model` est défini, le libellé est récupéré via le modèle. |
 | `data-aue-model` | Définit un modèle qui est utilisé pour la modification basée sur les formulaires dans le rail des propriétés |
-| `data-aue-behavior` | Définit la variable [comportement d’une instrumentation](#behaviors), par exemple, du texte ou une image autonome peut également imiter un composant pour le rendre modifiable ou pouvant être supprimé. |
+| `data-aue-behavior` | Définit le [comportement d’une instrumentation](#behaviors) ; par exemple, un texte ou une image autonome peut également imiter un composant pour le rendre modifiable ou pouvant être supprimé. |
 
 ## Types d’éléments {#item-types}
 

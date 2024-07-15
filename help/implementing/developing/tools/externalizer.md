@@ -13,7 +13,7 @@ ht-degree: 83%
 
 # Externalisation d’URL {#externalizing-urls}
 
-Dans AEM, la variable **Externalizer** est un service OSGi qui vous permet de transformer par programmation un chemin d’accès aux ressources (par exemple, `/path/to/my/page`) dans une URL externe et absolue (par exemple, `https://www.mycompany.com/path/to/my/page`) en ajoutant un préfixe au chemin d’accès avec un DNS préconfiguré.
+Dans AEM, **Externalizer** est un service OSGi qui vous permet de transformer par programmation un chemin de ressource (par exemple, `/path/to/my/page`) en URL externe et absolue (par exemple, `https://www.mycompany.com/path/to/my/page`) en ajoutant un préfixe au chemin d’accès avec un DNS préconfiguré.
 
 Étant donné qu’AEM as a Cloud Service ne peut pas connaître son URL visible en externe et qu’il est parfois nécessaire de créer un lien hors de portée de la requête, ce service fournit un emplacement central pour configurer ces URL externes et les créer.
 
@@ -91,7 +91,7 @@ Pour définir un mappage de domaine pour le service Externalizer, procédez comm
 
    >[!NOTE]
    >
-   >Une configuration personnalisée permet d’ajouter une nouvelle catégorie, telle que `production`, `staging` ou même des systèmes externes non AEM tels que `my-internal-webservice`. Il est utile d’éviter de coder en dur de telles URL à différents endroits dans le code de base d’un projet.
+   >Une configuration personnalisée vous permet d’ajouter une nouvelle catégorie, par exemple `production`, `staging` ou même des systèmes externes non AEM tels que `my-internal-webservice`. Il est utile d’éviter de coder en dur de telles URL à différents endroits dans le code de base d’un projet.
 
 1. Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 

@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 ## Présentation {#introduction}
 
-Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`.). Cette réutilisation vous permet de conserver votre investissement dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, voir [Création d’un formulaire adaptatif basé sur un modèle](creating-adaptive-form.md).
+Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, voir [Création d’un formulaire adaptatif basé sur un modèle](creating-adaptive-form.md).
 
 Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptatif. Ces champs sont appelés champs liés. Les propriétés des champs liés (tels que les scripts, les libellés et le format d’affichage) sont copiées à partir du fichier XDP. Vous pouvez également choisir de remplacer la valeur de certaines de ces propriétés.
 
@@ -56,12 +56,12 @@ Le package contient les ressources suivantes :
 
 1. Accédez à https://&lt;serveur>:&lt;port>/aem/forms.html. Entrez vos informations d’identification si nécessaire.
 1. Ouvrez le fichier sample-af-xfa pour le modifier en mode création.
-1. Dans l’explorateur de contenu de la barre latérale, sélectionnez l’onglet Objets de modèle de données. Faites glisser NumericField1 et TextField1 jusqu’au formulaire adaptatif.
+1. Dans l’explorateur de contenu de la barre latérale, sélectionnez l’onglet Objets de modèle de données. Faites glisser les champs NumericField1 et TextField1 sur le formulaire adaptatif.
 1. Remplacez le titre de NumericField1 de **Numeric Field** par **AF Numeric Field.**
 
 >[!NOTE]
 >
->Dans les étapes précédentes, nous avons remplacé une propriété d’un champ dans le fichier XDP. Cette propriété ne sera donc pas synchronisée si la propriété correspondante du fichier XDP est modifiée ultérieurement.
+>Dans les étapes précédentes, nous avons remplacé une propriété d’un champ du fichier XDP. Cette propriété ne sera donc pas synchronisée si la propriété correspondante du fichier XDP est modifiée ultérieurement.
 
 ## Détection des modifications dans le fichier XDP {#detecting-changes-in-xdp-file}
 

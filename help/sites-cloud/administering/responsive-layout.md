@@ -14,20 +14,20 @@ ht-degree: 50%
 
 # Configuration du conteneur de mises en page et du mode Mise en page {#configuring-layout-container-and-layout-mode}
 
-[Mise en page réactive](/help/sites-cloud/authoring/page-editor/responsive-layout.md) est un mécanisme de réalisation [responsive web design.](https://fr.wikipedia.org/wiki/Site_web_réactif) Cela permet à l’auteur de contenu de créer des pages web dont la mise en page et les dimensions dépendent des appareils utilisés par leurs utilisateurs.
+[La mise en page réactive](/help/sites-cloud/authoring/page-editor/responsive-layout.md) est un mécanisme permettant de réaliser une [conception web réactive.](https://fr.wikipedia.org/wiki/Site_web_réactif) Cela permet à l’auteur de contenu de créer des pages web dont la mise en page et les dimensions dépendent des appareils utilisés par leurs utilisateurs.
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
 * **[Conteneur de mises en page](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Ce composant fournit un système de paragraphes/grille qui vous permet d’ajouter et de positionner des composants dans une grille réactive.
    * Il peut être utilisé comme système de paragraphes (parsys) par défaut pour votre page et mis à la disposition des créateurs dans l’explorateur de composants.
-   * Par défaut **Conteneur de mises en page** est défini sous `/libs/wcm/foundation/components/responsivegrid`.
+   * Le composant **Conteneur de mises en page** par défaut est défini sous `/libs/wcm/foundation/components/responsivegrid`.
    * Vous pouvez définir des conteneurs de mise en page en tant que :
       * composant que l’utilisateur ou l’utilisatrice peut ajouter à une page ;
       * système de paragraphes par défaut de la page ;
       * En tant que composant et le parsys par défaut.
          * Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
-* **[Mode Mise en page](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Une fois le conteneur de mises en page positionné sur la page, vous pouvez utiliser la variable **Disposition** pour positionner le contenu dans la grille réactive.
-* **[Émulateur](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
+* **[Mode Mise en page](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Une fois que le conteneur de mises en page est positionné sur votre page, vous pouvez utiliser le mode **Mise en page** pour positionner le contenu dans la grille réactive.
+* **[Émulateur](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** : permet de créer et de modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
 
 Grâce à ces mécanismes de grille réactive, vous pouvez :
 
@@ -38,15 +38,15 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 
 >[!NOTE]
 >
->Lors de la création d’un site à partir de la variable [Archétype de projet](#addlink) ou depuis le [Modèle de site standard](#addlink), la mise en page réactive est généralement configurée. Sinon, vous devez [Activation du composant Conteneur de mises en page](#enable-the-layout-container-component-for-page) pour vos pages.
+>Lors de la création d’un site à partir de l’[archétype de projet](#addlink) ou du [ modèle de site standard](#addlink), la mise en page réactive est généralement configurée. Sinon, vous devez [ activer le composant Conteneur de mises en page ](#enable-the-layout-container-component-for-page) pour vos pages.
 
 ## Activation de l’émulateur {#enabling-emulator}
 
-La variable [Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) et la variable [Modèle de site standard](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) sont déjà activés pour utiliser l’émulateur. Si vous avez développé votre propre contenu non basé sur les composants principaux ou l’archétype, consultez le document . [Responsive Design](/help/implementing/developing/introduction/responsive-design.md) pour plus d’informations sur le développement de vos composants tout en exploitant ces fonctionnalités.
+L’ [ archétype de projet ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) et le [modèle de site standard](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) sont déjà activés pour utiliser l’émulateur. Si vous avez développé votre propre contenu qui n’est pas basé sur les composants principaux ou l’archétype, consultez le document [Responsive Design](/help/implementing/developing/introduction/responsive-design.md) pour plus d’informations sur la manière de développer vos composants tout en exploitant ces fonctionnalités.
 
 ## Activation du mode Disposition pour votre site {#activate-layout-mode-for-your-site}
 
-**Disposition** Le mode vous permet d’utiliser l’émulateur pour ajuster la disposition de votre contenu pour différents appareils. L’exemple de site WKND est déjà activé pour **Disposition** mode . Pour activer votre propre site, procédez comme suit.
+Le mode **Mise en page** vous permet d’utiliser l’émulateur pour ajuster la mise en page de votre contenu pour différents appareils. L’exemple de site WKND est déjà activé pour le mode **Disposition**. Pour activer votre propre site, procédez comme suit.
 
 ### Configuration des points d’arrêt {#configure-breakpoints}
 
@@ -115,7 +115,7 @@ Exemple de définition :
 
 ## Activation du redimensionnement des composants pour la page {#enable-component-resizing-for-the-page}
 
-Redimensionnement des composants dans **Disposition** Le mode est une partie importante du responsive design, qui peut être utilisé dans l’exemple de site WKND. Pour activer votre propre site, procédez comme suit.
+Le redimensionnement des composants en mode **Mise en page** est une partie importante de la conception adaptée, qui peut être utilisée dans l’exemple de site WKND. Pour activer votre propre site, procédez comme suit.
 
 ### Définir le conteneur de mise en page comme parsys (système de paragraphes) principal {#set-layout-container-as-main-parsys}
 
@@ -223,9 +223,9 @@ Pour une mise en page réactive efficace, l’auteur du contenu doit pouvoir fai
 
 Pour permettre aux créateurs d’ajouter d’autres grilles réactives dans des pages de contenu, vous devez activer le composant conteneur de mise en page pour la page. Vous pouvez effectuer cette opération à l’aide de l’une des fonctions suivantes :
 
-* **Via l’environnement de création** - [Modifier vos modèles de page](/help/sites-cloud/authoring/sites-console/templates.md) pour activer le conteneur de mises en page pour une page.
-* **Définition du composant** - Utilisation `allowedComponent` ou une inclusion statique lors de la définition du composant.
+* **Par l’intermédiaire de l’environnement de création** - [Modifiez vos modèles de page](/help/sites-cloud/authoring/sites-console/templates.md) pour activer le conteneur de mises en page pour une page.
+* **Définition du composant** - Utilisez `allowedComponent` ou une inclusion statique lors de la définition du composant.
 
 ### Configurer la grille du Conteneur de mise en page {#configure-the-grid-of-the-layout-container}
 
-Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de mises en page. [en modifiant vos modèles de page.](/help/sites-cloud/authoring/sites-console/templates.md)
+Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de mises en page [ en modifiant vos modèles de page.](/help/sites-cloud/authoring/sites-console/templates.md)

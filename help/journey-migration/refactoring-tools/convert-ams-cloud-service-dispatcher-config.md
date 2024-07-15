@@ -3,8 +3,8 @@ title: Conversion d’une configuration AMS en configuration de Dispatcher Adobe
 description: Conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager as a Cloud Service
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 97%
+source-wordcount: '1262'
+ht-degree: 96%
 
 ---
 
@@ -204,7 +204,7 @@ par l’instruction suivante :
 
 Grâce au script `docker_run.sh` des outils Dispatcher, vous pouvez tester si votre configuration ne contient aucune autre erreur qui ne s’afficherait que lors du déploiement :
 
-1. générer des informations de déploiement avec le programme de validation.
+1. Générez des informations de déploiement avec le programme de validation.
 
    `validator full -d out`
 Valide la configuration complète et génère les informations de déploiement en sortie (out).

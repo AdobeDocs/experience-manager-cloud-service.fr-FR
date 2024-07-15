@@ -7,7 +7,7 @@ exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 
@@ -28,10 +28,10 @@ Avant d’exécuter ces étapes, vérifiez que vous disposez d’un compte de st
 Pour créer une configuration de stockage [!DNL Azure], procédez comme suit :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Stockage Azure]**.
-1. Sélectionnez un dossier pour créer la configuration, puis sélectionnez **[!UICONTROL Créer]**.
+1. Sélectionnez un dossier pour créer la configuration et sélectionnez **[!UICONTROL Créer]**.
 1. Indiquez un titre pour la configuration dans le champ **[!UICONTROL Titre]**.
 1. Indiquez le nom du compte de stockage [!DNL Azure] dans le champ **[!UICONTROL Compte de stockage Azure]**.
-1. Spécifiez la clé pour accéder au compte de stockage Azure dans le **[!UICONTROL Clé d’accès Azure]** champ et sélectionnez **[!UICONTROL Enregistrer]**.
+1. Indiquez la clé pour accéder au compte de stockage Azure dans le champ **[!UICONTROL Clé d&#39;accès Azure]** et sélectionnez **[!UICONTROL Enregistrer]**.
 
 ### Configuration du connecteur de stockage unifié (USC) pour les processus AEM {#configure-unified-storage-connector-workflows}
 
@@ -41,7 +41,7 @@ Effectuez les étapes suivantes pour configurer Unified Storage Connector (USC) 
 
 1. Dans la section **[!UICONTROL Workflow]**, sélectionnez **[!UICONTROL Azure]** dans la liste déroulante Stockage.
 1. Spécifiez le [chemin de configuration pour la configuration de stockage Azure](#create-azure-storage-configuration) dans le champ **[!UICONTROL Chemin de configuration de stockage]**.
-1. Sélectionner **[!UICONTROL Publier]** puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
+1. Sélectionnez **[!UICONTROL Publish]**, puis **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
 ### Configuration d’un modèle de workflow AEM pour le stockage de données externe {#configure-workflow-external-data-storage}
 
@@ -71,7 +71,7 @@ Voici nos recommandations concernant l’utilisation des workflows AEM et le sto
 
 >[!MORELIKETHIS]
 >
->* [Configuration des sources de données pour AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configuration de sources de données pour AEM Forms](/help/forms/configure-data-sources.md)
 >* [Configuration du stockage Azure pour AEM Forms](/help/forms/configure-azure-storage.md)
->* [Intégration de Microsoft Dynamics 365 et Salesforce à Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
->  [Ajout de Forms Portal à une page AEM Sites](/help/forms/configure-forms-portal.md)
+>* [Intégrer Microsoft Dynamics 365 et Salesforce à Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Ajout du portail Forms à une page AEM Sites](/help/forms/configure-forms-portal.md)

@@ -8,17 +8,17 @@ discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 80%
+source-wordcount: '493'
+ht-degree: 91%
 
 ---
 
 
 # Association de réviseurs d’envoi à un formulaire {#associating-submission-reviewers-with-a-form}
 
-Lorsque vous créez un formulaire, vous pouvez spécifier les utilisateurs qui passent en revue les envois du formulaire via le portail de formulaires et qui font part de leurs commentaires. Votre entreprise peut recueillir des commentaires et retravailler les formulaires envoyés.
+Lorsque vous créez un formulaire, vous pouvez spécifier les utilisateurs et utilisatrices qui passent en revue les envois du formulaire via le portail Formulaires et qui font part de leurs commentaires. Votre entreprise peut recueillir des commentaires et retravailler les formulaires envoyés.
 
-[!DNL AEM Forms] permet d’associer un groupe de réviseurs à un formulaire. Les utilisateurs ajoutés à un groupe de révision d’un formulaire examinent les envois du formulaire en question et font part de leurs commentaires.
+[!DNL AEM Forms] vous permet d’associer un groupe de réviseurs à un formulaire. Les utilisateurs ajoutés à un groupe de révision d’un formulaire examinent les envois du formulaire en question et font part de leurs commentaires.
 
 Les groupes de réviseurs assignés à un formulaire peuvent uniquement analyser les envois du formulaire spécifié.
 
@@ -28,10 +28,10 @@ Les groupes de réviseurs assignés à un formulaire peuvent uniquement analyser
 
 Pour associer un groupe de réviseurs à un formulaire, modifiez le schéma de métadonnées des formulaires adaptatifs. Par défaut, vous ne pouvez pas ajouter un groupe de réviseurs à un formulaire envoyé.
 
-Pour modifier le schéma de métadonnées :
+Pour modifier le schéma de métadonnées :
 
-1. En mode création, sous Experience Manager, cliquez sur **Outils** > **Ressources** > **Schémas de métadonnées**.
-1. Dans la page Forms du schéma, accédez à **Forms** > **Forms Créé dans AEM.**
+1. En mode création, sous Experience Manager, cliquez sur **Outils** > **Ressources** > **Schémas de métadonnées**.
+1. Dans la page Formulaires du schéma, accédez à **Formulaires** > **Formulaires créés dans AEM.**
 
    L’URL de la page est la suivante :
 
@@ -77,5 +77,5 @@ Pour associer des groupes d’utilisateurs à un formulaire adaptatif :
 
 >[!MORELIKETHIS]
 >
->* [Création et gestion des révisions de formulaires](/help/forms/create-reviews-forms.md)
->* [Création et gestion de révisions pour un formulaire adaptatif](/help/forms/review-adaptiveforms-in-sites-page.md)
+>* [Création et gestion de révisions des formulaires](/help/forms/create-reviews-forms.md)
+>* [Créer et gérer des révisions pour un formulaire adaptatif](/help/forms/review-adaptiveforms-in-sites-page.md)

@@ -32,8 +32,8 @@ Si vous apportez des modifications ultérieures à la ressource, au dossier ou �
 >[!NOTE]
 >
 >Adobe recommande la publication décalée, de préférence en dehors des heures de pointe, de sorte que l’auteur AEM n’utilise pas une quantité excessive de ressources.
->Les ressources doivent être publiées par lots. La recommandation pour la taille du lot est de 15 Ko.
-> Pour [!DNL Experience Manager Assets] as a [!DNL Cloud Service], le taux de transfert observé en état de laboratoire est de 1 000 actifs par heure. Le taux est observé avec une taille moyenne de 10 Mo de ressources.
+>Assets doit être publié par lots. La recommandation pour la taille du lot est de 15 Ko.
+> Pour [!DNL Experience Manager Assets] en tant que [!DNL Cloud Service], le taux de transfert observé en état de laboratoire est de 1 000 ressources par heure. Le taux est observé avec une taille moyenne de 10 Mo de ressources.
 
 ## Publication de ressources sur Brand Portal {#publish-assets-to-bp}
 
@@ -77,7 +77,7 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 
    <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
 
-   ![publier ultérieurement](assets/publish-later.png)
+   ![publier plus tard](assets/publish-later.png)
 
 1. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Cliquez sur **[!UICONTROL Suivant]**.
 
@@ -130,7 +130,7 @@ Vous pouvez publier ou dépublier des dossiers de ressources immédiatement ou e
 
    Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir le dossier publié.
 
-1. **Publication ultérieure de dossiers**
+1. **Dossiers Publish plus tard**
 Pour planifier la publication des dossiers de ressources à une date ou une heure ultérieure :
 
    1. Sélectionnez les dossiers dont vous souhaitez planifier la publication, puis cliquez sur **[!UICONTROL Gérer la publication]** dans la barre d’outils située en haut.
@@ -142,7 +142,7 @@ Pour planifier la publication des dossiers de ressources à une date ou une heur
 
       <!--![publishlaterbp](assets/publishlaterbp.png)-->
 
-   ![publier un dossier ultérieur ;](assets/publish-later-folder.png)
+   ![publier le dossier ultérieur](assets/publish-later-folder.png)
 
    1. Confirmez votre sélection dans **[!UICONTROL Portée]**. Cliquez sur **[!UICONTROL Suivant]**.
 

@@ -19,7 +19,7 @@ ht-degree: 81%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | Cet article |
 
-<span class="preview"> Ce document décrit la procédure manuelle d’activation d’Adobe Analytics sur un formulaire adaptatif. Adobe recommande toutefois d’utiliser la variable [Activation d’Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md). </span>
+<span class="preview"> Ce document décrit la procédure manuelle d’activation d’Adobe Analytics sur un formulaire adaptatif. Cependant, Adobe recommande d&#39;utiliser l&#39;option [Activer Adobe Analytics pour un formulaire adaptatif à l&#39;aide de l&#39;automatisation de la configuration Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md). </span>
 
 AEM Forms s’intègre à [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=fr), ce qui permet la capture et le suivi des mesures de performances des formulaires que vous avez publiés. L’analyse de ces mesures a pour objectif de permettre aux utilisateurs professionnels d’obtenir des informations sur le comportement de l’utilisateur final et d’optimiser l’expérience de capture des données. Vous pouvez capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) par le biais d’Adobe Analytics pour Forms adaptatif.
 
@@ -43,7 +43,7 @@ Utilisez [!DNL Adobe Analytics] pour identifier les schémas d’interaction et 
 
 * **Enregistrements** : nombre de fois où les utilisateurs enregistrent un formulaire sur le Portail Formulaires.
 
-Outre ces événements prêts à l’emploi, vous pouvez définir des événements personnalisés dans des formulaires adaptatifs à l’aide d’un éditeur de règles et les mapper à des événements dans [!DNL Adobe Analytics]
+Outre ces événements prêts à l’emploi, vous pouvez définir des événements personnalisés dans des formulaires adaptatifs à l’aide d’un éditeur de règles et les mapper aux événements dans [!DNL Adobe Analytics].
 
 La figure suivante illustre les actions que vous devez effectuer avant d’afficher des rapports dans [!DNL Adobe Analytics] :
 
@@ -172,7 +172,7 @@ Suivez les étapes suivantes pour créer des règles basées sur l’extension *
 1. Sélectionnez **[!UICONTROL Effacer les variables]** comme type d’action. Sélectionnez **[!UICONTROL Conserver les modifications]**. Après avoir effectué ces étapes, la section **[!UICONTROL Actions]** s’affiche comme suit :
    ![Configuration des actions](assets/actions-config.png)
 
-   Personnalisez la section **[!UICONTROL Actions]** en fonction de vos besoins. Par exemple, vous pouvez définir deux **Envoyer la balise** étapes d’un flux d’action pour envoyer des données à [!DNL Adobe Analytics] et le traiter comme une page vue en une seule étape et envoyer des données à [!DNL Adobe Analytics] et ne le traitez pas comme une page vue lors de la deuxième étape.
+   Personnalisez la section **[!UICONTROL Actions]** en fonction de vos besoins. Par exemple, vous pouvez définir deux étapes **Envoyer la balise** dans un flux d’action pour envoyer des données à [!DNL Adobe Analytics] et les traiter comme une page vue en une seule étape et envoyer des données à [!DNL Adobe Analytics] sans les traiter comme une page vue lors de la seconde étape.
 
    ![Configuration des actions](assets/actions-config-2.png)
 
@@ -197,13 +197,13 @@ Pour publier la configuration, procédez comme suit :
 
 1. Dans la section **[!UICONTROL Développement]**, sélectionnez ![Autres options](assets/more-options-icon.svg), puis **[!UICONTROL Approuver et publier dans la production]**.
 
-1. Vérifiez que les modifications et le flux de publication s’affichent bientôt dans la variable **[!UICONTROL Publié]** .
+1. Vérifiez que les modifications et le flux de publication s’affichent bientôt dans la section **[!UICONTROL Publié]** .
 
 ![Flux de publication](assets/publish-flow.png)
 
 ## 2. Configuration d’AEM Forms {#configure-aem-forms}
 
-Avant de créer une configuration Adobe Launch, créez une [Configuration d’Adobe IMS à l’aide d’Adobe Launch comme solution cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=fr).
+Avant de créer une configuration Adobe Launch, créez une [configuration Adobe IMS à l’aide d’Adobe Launch en tant que solution cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=fr).
 
 ### Création d’une configuration Adobe Launch {#create-adobe-launch-configuration}
 
@@ -227,7 +227,7 @@ Pour créer une configuration Adobe Launch, procédez comme suit :
 
 ### Activation d’[!DNL Adobe Analytics] pour un formulaire adaptatif {#enable-analytics-adaptive-form}
 
-Pour utiliser la variable [!DNL Adobe Launch] configuration dans un formulaire adaptatif existant :
+Pour utiliser la configuration [!DNL Adobe Launch] dans un formulaire adaptatif existant :
 
 1. Dans l’instance d’auteur AEM Forms, accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Sélectionnez le formulaire adaptatif, puis sélectionnez **[!UICONTROL Propriétés]**.
@@ -316,4 +316,4 @@ Perform the following steps to add AEM Forms and Adobe Analytics integration spe
 
 >[!MORELIKETHIS]
 >
->*[Activation d’Adobe Analytics dans un formulaire adaptatif](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+>*[Activer Adobe Analytics à un formulaire adaptatif](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)

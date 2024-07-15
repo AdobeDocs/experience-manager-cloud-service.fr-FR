@@ -17,10 +17,10 @@ ht-degree: 93%
 
 La configuration Apache et Dispatcher dans AEM as a Cloud Service est assez similaire à la configuration AMS. Les principales différences sont :
 
-* Dans AEM as a Cloud Service, certaines directives Apache peuvent ne pas être utilisées (par exemple : `Listen` ou `LogLevel`)
+* Dans AEM as a Cloud Service, certaines directives Apache peuvent ne pas être utilisées (par exemple, `Listen` ou `LogLevel`)
 * Dans AEM as a Cloud Service, seules certaines parties de la configuration Dispatcher peuvent être placées dans les fichiers d’inclusion et les noms qui leur sont donnés sont importants. Par exemple, les règles de filtrage que vous souhaitez réutiliser sur différents hôtes doivent être placées dans un fichier nommé `filters/filters.any`. Consultez la page de référence pour plus d’informations.
 * Dans AEM as a Cloud Service, il existe une validation supplémentaire pour interdire les règles de filtrage écrites avec `/glob` de façon à éviter les problèmes de sécurité. Puisque `deny *` est utilisé plutôt que `allow *` (qui ne peut pas être utilisé), les clients et les clientes auront avantage à exécuter le Dispatcher localement et à procéder par tâtonnements, en examinant les journaux pour savoir exactement quels chemins sont bloqués par les filtres Dispatcher afin de pouvoir les ajouter.
-* Dans AEM as a Cloud Service, il est actuellement vivement recommandé de [opt-in pour utiliser le mode source flexible de la configuration du Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) par exemple pour utiliser des pipelines de configuration de niveau web ou pour bénéficier d’une meilleure flexibilité en termes de nombre et de structure de fichiers de configuration.
+* Dans AEM as a Cloud Service, il est actuellement vivement recommandé d’[opter pour le mode source flexible de la configuration du Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug), par exemple pour utiliser des pipelines de configuration de niveau web ou pour bénéficier d’une meilleure flexibilité en termes de nombre et de structure de fichiers de configuration.
 
 ## Instructions relatives à la migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
 
@@ -105,7 +105,8 @@ Exécutez le programme de validation du Dispatcher dans votre répertoire, avec 
 $ validator httpd .
 ```
 
-Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé ces fichiers.
+Si vous constatez des erreurs portant sur des fichiers d’inclusion manquants, vérifiez si vous les avez correctement renommés.
+fichiers .
 
 Si vous voyez des directives Apache qui ne sont pas placées sur la liste autorisée, supprimez-les.
 
@@ -258,7 +259,8 @@ Exécutez le programme de validation du Dispatcher AEM as a Cloud Service dans v
 $ validator dispatcher .
 ```
 
-Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, vérifiez si vous avez correctement renommé ces fichiers.
+Si vous constatez des erreurs portant sur des fichiers d’inclusion manquants, vérifiez si vous les avez correctement renommés.
+fichiers .
 
 Si des erreurs s’affichent concernant une variable `PUBLISH_DOCROOT` non définie, renommez-la `DOCROOT`.
 

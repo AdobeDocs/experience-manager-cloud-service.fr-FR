@@ -8,7 +8,7 @@ exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2145'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Dans une visionneuse d’images, vous pouvez également créer des échantillons
 
 Cette application est utile lorsque vous souhaitez afficher un élément avec une couleur, un modèle ou une finition différente. Pour créer une visionneuse d’images avec des échantillons de couleur, vous avez besoin d’une image pour chaque couleur, modèle ou finition que vous souhaitez présenter aux utilisateurs. Vous avez également besoin d’un échantillon de couleur, de motif ou de finition pour chaque couleur, motif ou finition.
 
-Supposons, par exemple, que vous souhaitiez présenter des images de calques avec des couleurs différentes ; les calques sont rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d&#39;une prise avec un rouge, une avec un vert, et une avec une facture bleue. Vous avez également besoin d’un échantillon de couleur rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs cliquent dans la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
+Supposons que vous souhaitiez présenter des images de casquettes avec des visières de couleurs différentes ; les visières sont rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d’une prise avec une visière rouge, une avec une verte, et une avec une bleue. Vous avez également besoin d’un échantillon de couleur rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs cliquent dans la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
 
 >[!NOTE]
 >
@@ -116,10 +116,10 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 >
 >Si vous utilisez des miniatures pour indiquer des échantillons de produit, procédez comme suit :
 >
->Créez des vignettes ou des prises de vue différentes de la même image la présentant avec différentes couleurs, modèles et finitions. Vous avez également besoin de fichiers miniatures qui correspondent aux différentes couleurs, modèles ou finitions. Par exemple, pour présenter des miniatures avec une visionneuse d’images présentant la même veste en noir, marron et vert, vous avez besoin des éléments suivants :
+>Créez des vignettes ou des prises de vue différentes de la même image la présentant avec différentes couleurs, modèles et finitions. Vous avez également besoin de miniatures qui correspondent aux différentes couleurs, modèles ou finitions. Par exemple, pour présenter des miniatures avec une visionneuse d’images pour la même veste en noir, marron et vert, vous avez besoin des éléments suivants :
 >
->* Une prise de vue noire, marron et verte de la même veste.
->* Miniature en noir, marron et vert.
+>* Une prise de vue de la même veste en noir, marron et vert.
+>* Une miniature de la veste en noir, marron et vert.
 
 ## Créez une visionneuse d’images {#creating-image-sets}
 
@@ -148,7 +148,7 @@ Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
 **Pour créer une visionneuse d’images** :
 
 1. Dans Adobe Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale.
-1. Sélectionner **[!UICONTROL Navigation]** > **[!UICONTROL Ressources]**. Naviguez jusqu’à l’emplacement où vous souhaitez créer une visionneuse d’images, puis accédez à **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse d’images]** pour ouvrir la page de l’éditeur de visionneuse d’images.
+1. Sélectionnez **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Naviguez jusqu’à l’emplacement où vous souhaitez créer une visionneuse d’images, puis accédez à **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse d’images]** pour ouvrir la page de l’éditeur de visionneuse d’images.
 
    Vous pouvez également la créer depuis un dossier qui contient les ressources.
 
@@ -227,7 +227,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 * Ajouter des images à la visionneuse d’images.
 * Réorganiser des images dans la visionneuse d’images.
 * Supprimer des ressources de la visionneuse d’images.
-* Appliquez des paramètres prédéfinis de visionneuse.
+* Appliquez les paramètres d’affichage prédéfinis.
 * Supprimez la visionneuse d’images.
 
 **Pour modifier les visionneuses d’images :**
@@ -236,11 +236,11 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 
    * Pointez sur une ressource d’image, puis sélectionnez **[!UICONTROL Modifier]** (icône de crayon).
    * Pointez sur une ressource de visionneuse d’image, sélectionnez **[!UICONTROL Sélectionner]** (icône de coche), puis sélectionnez **[!UICONTROL Modifier]** dans la barre d’outils.
-   * Sélectionnez sur une ressource de visionneuse d’images, puis sélectionnez **[!UICONTROL Modifier]** (icône crayon) dans la barre d’outils.
+   * Sélectionnez sur une ressource de visionneuse d’images, puis **[!UICONTROL Modifier]** (icône crayon) dans la barre d’outils.
 
-1. Pour modifier les images de la visionneuse d’images, effectuez l’une des opérations suivantes :
+1. Pour modifier les images dans la visionneuse d’images, procédez d’une des manières suivantes :
 
-   * Pour réorganiser les ressources, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône de réorganisation pour déplacer les éléments).
+   * Pour réorganiser les images, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône Réorganiser pour déplacer des éléments).
    * Pour trier les éléments dans l’ordre ascendant ou descendant, cliquez sur l’en-tête de colonne.
    * Pour ajouter une ressource ou mettre à jour une ressource existante, cliquez sur **[!UICONTROL Ajouter une ressource]**. Accédez à une ressource, sélectionnez-la, puis sélectionnez **[!UICONTROL Sélectionner]** en haut à droite de la page.
      >[!NOTE]

@@ -44,7 +44,7 @@ Ce document utilise l’exemple des redirections pour illustrer la création de 
 
 Pour créer des mappages à l’aide de feuilles de calcul dans votre projet AEM avec Edge Delivery Services, vous devez avoir créé votre site à l’aide du modèle de site le plus récent.
 
-Consultez le document [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) pour plus d’informations.
+Pour plus d’informations, consultez le document [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
 
 ## Créer une feuille de calcul {#spreadsheet}
 

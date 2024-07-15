@@ -1,6 +1,6 @@
 ---
 title: Service de notification Screens dans Screens as a Cloud Service
-description: Cette page décrit comment configurer le service de notification dans Screens as a Cloud Service.
+description: Cette page décrit comment configurer le service de notification as a Cloud Service Screens.
 index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 feature: Developing Screens
@@ -35,4 +35,4 @@ Sur AEM Screens Cloud, les clients peuvent demander un rapport sur l’état d�
 
 ### Exemple de cas d’utilisation
 
-Si vous définissez l’heure du rapport sur 5 h et le délai d’expiration du ping sur 1 heure, si votre périphérique Screens ne effectue pas de test ping entre 4 h et 5 h, vous recevrez une notification par e-mail confirmant l’inactivité du périphérique.
+Si vous définissez l’heure du rapport sur 5 h et le délai d’expiration du ping sur 1 heure, si votre appareil Screens ne fait pas de test ping entre 4 h et 5 h, vous recevrez une notification par e-mail confirmant l’inactivité de l’appareil.

@@ -7,7 +7,7 @@ exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
 workflow-type: tm+mt
 source-wordcount: '3772'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -177,7 +177,7 @@ La boîte de dialogue **Paramètres du package** est accessible via le bouton **
 
 Les filtres identifient les nœuds du référentiel à inclure dans le package. Une **définition de filtre** spécifie les informations suivantes :
 
-* La variable **Chemin racine** du contenu à inclure
+* **Chemin d’accès racine** du contenu à inclure
 * **Règles** incluant ou excluant certains nœuds sous le chemin d’accès racine
 
 Ajoutez des règles à l’aide du bouton **+**. Supprimez des règles à l’aide du bouton **-**.
@@ -190,12 +190,12 @@ Vous pouvez définir une ou plusieurs définitions de filtre pour un package. Ut
 
 ![Onglet Filtres](assets/edit-filter.png)
 
-Lors de la création de règles, vous définissez une expression régulière (également appelée expression régulière, regexp ou expression rationnelle) pour spécifier tous les noeuds que vous souhaitez inclure ou exclure.
+Lors de la création de règles, vous définissez une expression régulière (également appelée regex, regexp ou expression rationnelle) pour spécifier tous les nœuds que vous souhaitez inclure ou exclure.
 
 | Type de règle | Description |
 |---|---|
-| inclusion | Include inclut tous les fichiers et dossiers du répertoire spécifié qui correspondent à l’expression régulière. Inclure **will not** d’inclure d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
-| Exclusion | Exclure exclut tous les fichiers et dossiers correspondant à l’expression régulière. |
+| inclusion | Inclusion inclut tous les fichiers et dossiers du répertoire spécifié qui correspondent à l’expression régulière. Inclusion **n’inclura pas** d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
+| Exclusion | Exclusion exclut tous les fichiers et dossiers correspondant à l’expression régulière. |
 
 Les filtres de package sont le plus souvent définis lors de la première [création du package.](#creating-a-new-package) Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
 
@@ -205,7 +205,7 @@ Les filtres de package sont le plus souvent définis lors de la première [créa
 
 >[!TIP]
 >
->Pour plus d’informations, voir [Apache Jackrabbit - Filtre Workspace](https://jackrabbit.apache.org/filevault/filter.html) la documentation.
+>Pour plus d’informations, voir la documentation [Apache Jackrabbit - Filtre d’espace de travail](https://jackrabbit.apache.org/filevault/filter.html).
 
 ### Dépendances {#dependencies}
 
@@ -399,13 +399,13 @@ Le gestionnaire de packages peut effectuer les validations suivantes :
 
 >[!NOTE]
 >
->Les packages ne pouvant pas être utilisés pour déployer du code dans AEMaaCS, **Imports de modules OSGi** La validation n’est pas nécessaire.
+>Les packages ne pouvant pas être utilisés pour déployer du code dans AEMaaCS, la validation **Imports de package OSGi** n’est pas nécessaire.
 
 **Contenu vérifié**
 
 Cette validation inspecte le package pour tous les fichiers JAR (lots OSGi), extrait leur `manifest.xml` (qui contient les dépendances de version sur lesquelles le lot OSGi repose) et vérifie que l’instance AEM exporte lesdites dépendances avec les versions correctes.
 
-**Comment les rapports sont-ils générés**
+**Comment il est signalé**
 
 Toutes les dépendances de version qui ne peuvent pas être satisfaites par l’instance AEM est répertoriées dans le journal d’activité du Gestionnaire de packages.
 
@@ -421,7 +421,7 @@ Pour résoudre des erreurs dues à des lots OSGi non satisfaits, il faut ajuster
 
 >[!NOTE]
 >
->Les packages ne pouvant pas être utilisés pour déployer du code dans AEMaaCS, **Recouvrements** La validation n’est pas nécessaire.
+>Comme les packages ne peuvent pas être utilisés pour déployer du code dans AEMaaCS, la validation **Recouvrements** n’est pas nécessaire.
 
 **Contenu vérifié**
 
@@ -429,7 +429,7 @@ Cette validation détermine si le package en cours d’installation contient un 
 
 Par exemple, étant donné un recouvrement présent dans `/apps/sling/servlet/errorhandler/404.jsp`, un package contenant `/libs/sling/servlet/errorhandler/404.jsp`, il modifiera donc le fichier existant dans `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Comment les rapports sont-ils générés**
+**Comment il est signalé**
 
 Ces recouvrements sont décrits dans le Journal d’activités du Gestionnaire de packages.
 
@@ -451,7 +451,7 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 
 Cette validation vérifie quelles autorisations sont ajoutées, comment elles sont gérées (fusion/remplacement) et si les autorisations actuelles sont affectées.
 
-**Comment les rapports sont-ils générés**
+**Comment il est signalé**
 
 Les autorisations sont décrites dans le Journal d’activités du Gestionnaire de packages.
 
@@ -616,4 +616,4 @@ Les packages AEM peuvent être utilisés pour créer et partager du contenu dans
 
 [Distribution logicielle](https://downloads.experiencecloud.adobe.com) fournit des packages AEM à utiliser sur le SDK AEM de développement local. Les packages AEM fournis sur la distribution logicielle ne doivent pas être installés sur les environnements cloud AEMaaCS, sauf approbation expresse de l’assistance clientèle Adobe.
 
-Pour plus d’informations, voir la section [Distribution logicielle .](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
+Pour plus d’informations, consultez la [documentation sur la distribution de logiciels.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)

@@ -54,7 +54,7 @@ Le diagramme architectural suivant explique comment Adobe Analytics s’intègr
 
 ## Activation d’Adobe Analytics dans AEM Screens Cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
-Contactez votre gestionnaire de relations d’Adobe pour activer les analyses d’Adobe dans Screens Cloud.
+Contactez votre gestionnaire de relations d’Adobe pour activer Adobe Analytics dans Screens Cloud.
 
 ## Utilisation du service Adobe Analytics dans AEM Screens Cloud {#using-adobe-analytics-service-in-aem-screens}
 

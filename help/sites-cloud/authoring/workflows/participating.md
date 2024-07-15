@@ -78,7 +78,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (sélectionnez la miniature).
 1. Sélectionnez **Terminer** dans la barre d’outils.
-1. La variable **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire**, le cas échéant.
+1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire**, le cas échéant.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Éditeur de page {#completing-a-participant-step-page-editor}
@@ -87,7 +87,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 
 1. Ouvrez la [page en mode d’édition](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Terminer** dans la barre d’état en haut.
-1. La variable **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire**, le cas échéant.
+1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire**, le cas échéant.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Chronologie {#completing-a-participant-step-timeline}

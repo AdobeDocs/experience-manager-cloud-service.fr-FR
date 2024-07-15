@@ -24,17 +24,17 @@ ht-degree: 58%
 
 L’intégration de données [!DNL Experience Manager Forms] fournit une interface utilisateur intuitive permettant de créer et d’utiliser des modèles de données de formulaire. Un modèle de données de formulaire (FDM) repose sur des sources de données pour l’exchange de données. Cependant, vous pouvez créer un modèle de données de formulaire (FDM) avec ou sans source de données. Il existe deux approches de création d’un modèle de données de formulaire, selon que vous avez ou non configuré les sources de données :
 
-* **Utilisation de sources de données préconfigurées**: si vous avez configuré des sources de données comme décrit dans la section [Configuration des sources de données](configure-data-sources.md), vous pouvez les sélectionner lors de la création d’un modèle de données de formulaire (FDM). Elle apporte tous les objets, propriétés et services de modèle de données des sources de données sélectionnées, disponibles pour utilisation dans le modèle de données de formulaire (FDM).
+* **À l’aide de sources de données préconfigurées** : si vous avez configuré des sources de données comme décrit dans la section [Configurer des sources de données](configure-data-sources.md), vous pouvez les sélectionner lors de la création d’un modèle de données de formulaire (FDM). Elle apporte tous les objets, propriétés et services de modèle de données des sources de données sélectionnées, disponibles pour utilisation dans le modèle de données de formulaire (FDM).
 
-* **Sans sources de données**: si vous n’avez pas configuré de sources de données pour votre modèle de données de formulaire (FDM), vous pouvez toujours le créer sans sources de données. Vous pouvez utiliser le modèle de données de formulaire (FDM) pour créer un Forms adaptatif. <!--and interactive communication--> et les tester à l’aide de données d’exemple. Lorsque des sources de données sont disponibles, vous pouvez lier le modèle de données de formulaire (FDM) aux sources de données, qui se reflètent automatiquement dans le Forms adaptatif associé.<!--and interactive communications-->.
+* **Sans sources de données** : si vous n’avez pas configuré de sources de données pour votre modèle de données de formulaire (FDM), vous pouvez toujours le créer sans sources de données. Vous pouvez utiliser le modèle de données de formulaire (FDM) pour créer un Forms adaptatif <!--and interactive communication--> et les tester à l’aide de données d’exemple. Lorsque des sources de données sont disponibles, vous pouvez lier le modèle de données de formulaire (FDM) aux sources de données, qui se reflètent automatiquement dans le Forms adaptatif associé<!--and interactive communications-->.
 
 >[!NOTE]
 >
->Vous devez être membre des deux **fdm-author** et **forms-user** groupes pour pouvoir créer et utiliser le modèle de données de formulaire (FDM). Contactez votre administrateur [!DNL Experience Manager] pour devenir membre des groupes.
+>Vous devez être membre des groupes **fdm-author** et **forms-user** pour pouvoir créer et utiliser un modèle de données de formulaire (FDM). Contactez votre administrateur [!DNL Experience Manager] pour devenir membre des groupes.
 
 ## Créer un modèle de données de formulaire (FDM) {#data-sources}
 
-Assurez-vous d’avoir configuré les sources de données que vous prévoyez d’utiliser dans le modèle de données de formulaire (FDM) comme décrit dans la section [Configuration des sources de données](configure-data-sources.md). Procédez comme suit pour créer un modèle de données de formulaire (FDM) basé sur des sources de données configurées :
+Assurez-vous d’avoir configuré les sources de données que vous avez l’intention d’utiliser dans le modèle de données de formulaire (FDM) comme décrit dans la section [Configuration des sources de données](configure-data-sources.md). Procédez comme suit pour créer un modèle de données de formulaire (FDM) basé sur des sources de données configurées :
 
 1. Dans l’instance d’auteur [!DNL Experience Manager], accédez à **[!UICONTROL Formulaires > Intégrations de données]**.
 1. Sélectionner **[!UICONTROL Créer > Modèle de données de formulaire]**.
@@ -47,7 +47,7 @@ Assurez-vous d’avoir configuré les sources de données que vous prévoyez d�
 1. Sélectionnez **[!UICONTROL Suivant]**.
 
 1. (**Applicable uniquement si les sources de données sont configurées**) L’écran **[!UICONTROL Sélectionner la source de données]** répertorie les sources de données disponibles, le cas échéant. Sélectionnez les sources de données à utiliser dans le modèle de données de formulaire.
-1. Sélectionner **[!UICONTROL Créer]** et dans la boîte de dialogue de confirmation, sélectionnez **[!UICONTROL Ouvrir]** pour ouvrir l’éditeur de modèle de données de formulaire.
+1. Sélectionnez **[!UICONTROL Créer]** et, dans la boîte de dialogue de confirmation, sélectionnez **[!UICONTROL Ouvrir]** pour ouvrir l’éditeur de modèle de données de formulaire.
 
    Passons en revue les différents composants de l’interface utilisateur de l’éditeur de modèle de données de formulaire.
 
@@ -89,17 +89,17 @@ Procédez comme suit pour ajouter ou mettre à jour des sources de données à u
 
 >[!NOTE]
 >
->Une fois que vous avez ajouté de nouvelles sources de données ou mis à jour des sources de données existantes dans un modèle de données de formulaire (FDM), veillez à mettre à jour les références de liaison, le cas échéant, dans Forms adaptatif.<!--and interactive communications--> qui utilisent le modèle de données de formulaire mis à jour (FDM).
+>Une fois que vous avez ajouté de nouvelles sources de données ou mis à jour des sources de données existantes dans un modèle de données de formulaire (FDM), veillez à mettre à jour les références de liaison, le cas échéant, dans Forms adaptatif <!--and interactive communications--> qui utilisent le modèle de données de formulaire (FDM) mis à jour.
 
 ## Configurations basées sur le contexte pour des modes d’exécution spécifiques {#runmode-specific-context-aware-config}
 
-[!UICONTROL Modèle de données de formulaire (FDM)] utilitaires [Configurations basées sur le contexte Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=fr) pour prendre en charge différents paramètres de source de données afin de se connecter à des sources de données pour différents [!DNL Experience Manager] Modes d’exécution.
+[!UICONTROL Le modèle de données de formulaire (FDM)] utilise les [ configurations basées sur le contexte Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=fr) pour prendre en charge différents paramètres de source de données afin de se connecter aux sources de données pour différents modes d’exécution [!DNL Experience Manager].
 
-When [!UICONTROL Modèle de données de formulaire (FDM)] utilise les configurations cloud pour stocker les paramètres qui, lorsqu’ils sont archivés et déployés par le biais du contrôle de code source (référentiel GIT Cloud-Manager), créent une configuration cloud avec les mêmes paramètres pour tous les modes d’exécution (développement, évaluation et production). Cependant, dans les cas d’utilisation où des jeux de données différents sont nécessaires pour les environnements de test et de production, nous utilisons des paramètres de source de données (par exemple, l’URL de la source de données) pour différents [!DNL Experience Manager] Modes d’exécution.
+Lorsque [!UICONTROL Form Data Model (FDM)] utilise des configurations cloud pour stocker des paramètres qui, lorsqu’ils sont archivés et déployés par le biais du contrôle de code source (référentiel GIT Cloud-Manager), créent une configuration cloud avec les mêmes paramètres pour tous les modes d’exécution (développement, évaluation et production). Cependant, pour les cas d’utilisation où il est nécessaire d’avoir des jeux de données différents pour les environnements de test et de production, nous utilisons les paramètres de source de données (par exemple, l’URL de la source de données) pour différents modes d’exécution [!DNL Experience Manager].
 
-Pour ce faire, vous devez créer une configuration OSGi contenant des paires paramètres-valeur de source de données. Cette option remplace la même paire de [!UICONTROL Modèle de données de formulaire (FDM)] configuration du cloud au moment de l’exécution. Comme les configurations OSGi prennent en charge ces modes d’exécution par défaut, vous pouvez remplacer un paramètre de source de données par des valeurs différentes en fonction du mode d’exécution.
+Pour ce faire, vous devez créer une configuration OSGi contenant des paires paramètres-valeur de source de données. Cela remplace la même paire de la configuration de cloud [!UICONTROL Form Data Model (FDM)] au moment de l’exécution. Comme les configurations OSGi prennent en charge ces modes d’exécution par défaut, vous pouvez remplacer un paramètre de source de données par des valeurs différentes en fonction du mode d’exécution.
 
-Pour activer les configurations cloud spécifiques au déploiement dans [!UICONTROL Modèle de données de formulaire (FDM)]:
+Pour activer les configurations cloud spécifiques au déploiement dans [!UICONTROL Form Data Model (FDM)] :
 
 1. créez une configuration cloud sur l’instance de développement locale. Pour obtenir des instructions détaillées, consultez [Comment configurer des sources de données](/help/forms/configure-data-sources.md).
 
@@ -114,7 +114,7 @@ Pour activer les configurations cloud spécifiques au déploiement dans [!UICONT
 
 1. Créez une configuration basée sur le contexte Apache Sling. Pour créer la configuration OSGi :
    1. **Configurez les fichiers de configuration OSGi dans le projet d’archétype d’[!DNL Experience Manager].**
-Création de fichiers de configuration d’usine OSGi avec PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Créez un fichier portant le même nom sous chaque dossier de mode d’exécution où les valeurs doivent être modifiées par mode d’exécution. Pour plus d’informations, consultez la [Configuration de l’OSGi pour  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+Créez des fichiers de configuration d’usine OSGi avec le PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Créez un fichier portant le même nom sous chaque dossier de mode d’exécution où les valeurs doivent être modifiées par mode d’exécution. Pour plus d’informations, consultez la [Configuration de l’OSGi pour  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **Configurez le fichier json de configuration OSGI.** Pour utiliser le fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling :
       1. Sur l’instance de développement locale `/system/console/configMgr`, sélectionnez la configuration OSGi d’usine avec le nom **[!UICONTROL Fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling : configuration OSGi]**.
@@ -143,4 +143,4 @@ Pour plus d’informations, reportez-vous à la section [Utilisation d’un mod�
 
 >[!MORELIKETHIS]
 >
->* [Utilisation du modèle de données de formulaire (FDM)](/help/forms/using-form-data-model.md)
+>* [Utiliser le modèle de données de formulaire (FDM)](/help/forms/using-form-data-model.md)

@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est pas encore disponible et certaines destinations de journalisation peuvent ne pas être disponibles au moment de la publication. En attendant, vous pouvez ouvrir un ticket d’assistance pour transférer les journaux vers **Splunk**, comme décrit dans la section [article de connexion](/help/implementing/developing/introduction/logging.md).
+>Cette fonctionnalité n’est pas encore disponible et certaines destinations de journalisation peuvent ne pas être disponibles au moment de la publication. En attendant, vous pouvez ouvrir un ticket d’assistance pour transférer les journaux vers **Splunk**, comme décrit dans l’ [article sur la journalisation](/help/implementing/developing/introduction/logging.md).
 
 Les clients qui disposent d’une licence pour un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent avoir AEM journaux (y compris Apache/Dispatcher) et des journaux CDN transférés vers les destinations de journalisation associées. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
@@ -67,11 +67,11 @@ Cet article est organisé de la manière suivante :
          index: "AEMaaCS"
    ```
 
-   La variable **kind** doit être défini sur `LogForwarding` la version doit être définie sur la version du schéma, qui est 1.
+   Le paramètre **kind** doit être défini sur `LogForwarding`, la version doit être définie sur la version du schéma, qui est 1.
 
-   Jetons dans la configuration (tels que `${{SPLUNK_TOKEN}}`) représentent des secrets, qui ne doivent pas être stockés dans Git. À la place, déclarez-les comme Cloud Manager  [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md) de type **secret**. Veillez à sélectionner **Tous** comme valeur de liste déroulante pour le champ Service appliqué , afin que les journaux puissent être transférés vers les niveaux d’auteur, de publication et d’aperçu.
+   Les jetons dans la configuration (tels que `${{SPLUNK_TOKEN}}`) représentent des secrets, qui ne doivent pas être stockés dans Git. À la place, déclarez-les comme Cloud Manager [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md) de type **secret**. Veillez à sélectionner **Tous** comme valeur de liste déroulante pour le champ Service appliqué, de sorte que les journaux puissent être transférés vers les niveaux d’auteur, de publication et d’aperçu.
 
-   Il est possible de définir des valeurs différentes entre les journaux CDN et les journaux AEM (y compris Apache/Dispatcher) en incluant une **cdn** et/ou **aem** après la balise **default** block, où les propriétés peuvent remplacer celles définies dans la variable **default** block ; seule la propriété enabled est requise. Un cas d’utilisation possible peut être l’utilisation d’un index Splunk différent pour les journaux CDN, comme l’exemple ci-dessous.
+   Il est possible de définir des valeurs différentes entre les journaux CDN et les journaux d’AEM (y compris Apache/Dispatcher), en incluant un bloc supplémentaire **cdn** et/ou **aem** après le bloc **default**, où les propriétés peuvent remplacer celles définies dans le bloc **default** ; seule la propriété activée est requise. Un cas d’utilisation possible peut être l’utilisation d’un index Splunk différent pour les journaux CDN, comme l’exemple ci-dessous.
 
    ```
       kind: "LogForwarding"
@@ -148,7 +148,7 @@ Voici une capture d’écran d’un exemple de configuration de jeton SAS :
 
 #### Journaux CDN Azure Blob Storage {#azureblob-cdn}
 
-Chacun des serveurs de journalisation répartis dans le monde produira un nouveau fichier toutes les quelques secondes, sous la variable `aemcdn` dossier. Une fois créé, le fichier ne sera plus annexé au fichier. Le format du nom de fichier est AAAA-MM-DDThh:mm:ss.sss-uniqueid.log. Par exemple, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+Chacun des serveurs de journalisation répartis dans le monde produira un nouveau fichier toutes les quelques secondes, sous le dossier `aemcdn`. Une fois créé, le fichier ne sera plus annexé au fichier. Le format du nom de fichier est AAAA-MM-DDThh:mm:ss.sss-uniqueid.log. Par exemple, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
 
 Par exemple, à un moment donné :
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Chaque fichier contient plusieurs entrées de journal json, chacune sur une ligne distincte. Les formats d’entrée de journal sont décrits dans la section [article de connexion](/help/implementing/developing/introduction/logging.md), et chaque entrée de journal inclut également les propriétés supplémentaires mentionnées dans la variable [Formats de saisie du journal](#log-format) ci-dessous.
+Chaque fichier contient plusieurs entrées de journal json, chacune sur une ligne distincte. Les formats d’entrée de journal sont décrits dans l’ [article de journalisation](/help/implementing/developing/introduction/logging.md), et chaque entrée de journal inclut également les propriétés supplémentaires mentionnées dans la section [Formats d’entrée de journal](#log-format) ci-dessous.
 
 #### Journaux Azure Blob Storage AEM {#azureblob-aem}
 
@@ -183,7 +183,7 @@ Les journaux d’AEM (y compris Apache/Dispatcher) apparaissent sous un dossier 
 
 Sous chaque dossier, un seul fichier est créé et ajouté. Les clients sont responsables du traitement et de la gestion de ce fichier afin qu’il ne se développe pas trop.
 
-Voir les formats d’entrée de journal dans la [article de connexion](/help/implementing/developing/introduction/logging.md). Les entrées de journal incluent également les propriétés supplémentaires mentionnées dans la variable [Formats de saisie du journal](#log-formats) ci-dessous.
+Voir les formats d’entrée de journal dans l’ [article de journalisation](/help/implementing/developing/introduction/logging.md). Les entrées de journal incluent également les propriétés supplémentaires mentionnées dans la section [Formats de saisie de journal](#log-formats) ci-dessous.
 
 
 ### Datadog {#datadog}
@@ -232,7 +232,7 @@ Considérations :
 
 * Pour les informations d’identification, veillez à utiliser les informations d’identification de déploiement plutôt que les informations d’identification de compte. Il s’agit des informations d’identification générées dans un écran qui peut ressembler à cette image :
 
-![Informations d’identification de déploiement Elastic](/help/implementing/developing/introduction/assets/ec-creds.png)
+![Informations d’identification de déploiement élastiques](/help/implementing/developing/introduction/assets/ec-creds.png)
 
 * La propriété de pipeline facultative doit être définie sur le nom du pipeline d’ingestion Elasticsearch ou OpenSearch, qui peut être configuré pour acheminer l’entrée de journal vers l’index approprié. Le type de processeur du pipeline doit être défini sur *script* et le langage de script doit être défini sur *sans douleur*. Voici un exemple de fragment de script pour acheminer les entrées de journal vers un index tel que aemaccess_dev_26_06_2024 :
 
@@ -260,20 +260,20 @@ data:
 
 #### Logs CDN HTTPS {#https-cdn}
 
-Les requêtes Web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec le format d’entrée de journal décrit dans la variable [article de connexion](/help/implementing/developing/introduction/logging.md#cdn-log). Les propriétés supplémentaires sont mentionnées dans la section [Formats de saisie du journal](#log-formats) ci-dessous.
+Les requêtes Web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec le format d’entrée de journal décrit dans l’ [article de journalisation](/help/implementing/developing/introduction/logging.md#cdn-log). Des propriétés supplémentaires sont mentionnées dans la section [Formats de saisie de journal](#log-formats) ci-dessous.
 
-Il existe également une propriété nommée `sourcetype`, qui est défini sur la valeur . `aemcdn`.
+Il existe également une propriété nommée `sourcetype`, qui est définie sur la valeur `aemcdn`.
 
 >[!NOTE]
 >
-> Avant l’envoi de la première entrée de journal CDN, votre serveur HTTP doit effectuer un défi unique : une requête envoyée au chemin ``wellknownpath`` doit répondre avec ``*``.
+> Avant l’envoi de la première entrée de journal CDN, votre serveur HTTP doit réussir un défi unique : une requête envoyée au chemin ``wellknownpath`` doit répondre avec ``*``.
 
 
 #### Journaux des AEM HTTPS {#https-aem}
 
-Pour les journaux d’AEM (y compris apache/dispatcher), les demandes web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec les différents formats d’entrée de journal comme décrit dans la section [article de connexion](/help/implementing/developing/introduction/logging.md). Les propriétés supplémentaires sont mentionnées dans la section [Formats de saisie du journal](#log-format) ci-dessous.
+Pour les journaux d’AEM (y compris apache/dispatcher), les demandes web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec les différents formats d’entrée de journal comme décrit dans l’ [article de journalisation](/help/implementing/developing/introduction/logging.md). Des propriétés supplémentaires sont mentionnées dans la section [Formats de saisie de journal](#log-format) ci-dessous.
 
-Il existe également une propriété nommée `sourcetype`, qui est défini sur l’une des valeurs suivantes :
+Il existe également une propriété nommée `sourcetype`, définie sur l’une de ces valeurs :
 
 * aemaccess
 * aemerror
@@ -318,7 +318,7 @@ data:
 
 ## Formats de saisie du journal {#log-formats}
 
-Voir le [article de connexion](/help/implementing/developing/introduction/logging.md) pour le format de chaque type de journal respectif (journaux CDN et journaux AEM y compris Apache/Dispatcher).
+Consultez l’ [ article général sur la journalisation](/help/implementing/developing/introduction/logging.md) pour connaître le format de chaque type de journal respectif (journaux CDN et journaux d’AEM y compris Apache/Dispatcher).
 
 Puisque les journaux de plusieurs programmes et environnements peuvent être transférés vers la même destination de journalisation, en plus de la sortie décrite dans l’article de journalisation, les propriétés suivantes seront incluses dans chaque entrée de journal :
 
@@ -345,9 +345,9 @@ aem_tier: author
 
 Certaines organisations choisissent de restreindre le trafic qui peut être reçu par les destinations de journalisation.
 
-Pour le journal du réseau de diffusion de contenu, vous pouvez ajouter des adresses IP aux listes autorisées, comme décrit dans la section [cet article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, envisagez d’envoyer du trafic vers un Azure Blob Store (non Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP dédiée vers leur destination finale.
+Pour le journal du réseau de diffusion de contenu, vous pouvez ajouter les adresses IP aux listes autorisées, comme décrit dans [cet article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, envisagez d’envoyer du trafic vers un Azure Blob Store (non Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP dédiée vers leur destination finale.
 
-Pour les journaux d’AEM (y compris Apache/Dispatcher), vous pouvez configurer le transfert des journaux pour qu’il [mise en réseau avancée](/help/security/configuring-advanced-networking.md). Découvrez les modèles des trois types de mise en réseau avancés ci-dessous, qui utilisent une `port` , ainsi que la variable `host` .
+Pour les journaux d’AEM (y compris Apache/Dispatcher), vous pouvez configurer le transfert des journaux pour passer par la [mise en réseau avancée](/help/security/configuring-advanced-networking.md). Consultez les modèles pour les trois types de réseau avancés ci-dessous, qui utilisent un paramètre facultatif `port` , ainsi que le paramètre `host` .
 
 ### Sortie de port flexible {#flex-port}
 

@@ -73,7 +73,7 @@ Le [tutoriel WKND](develop-wknd-tutorial.md) utilise cette stratégie pour défi
 
 ### Utiliser des requêtes de média avec des pages AEM {#using-media-queries-with-aem-pages}
 
-[Exemple de projet WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisez la méthode [Composant principal de page,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) qui inclut les bibliothèques clientes via la stratégie de page.
+[L’exemple de projet WKND ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et l’ [archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisent le [composant principal Page,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) qui inclut les bibliothèques clientes via la stratégie de page.
 
 Si votre propre composant de page n’est pas basé sur le composant principal Page, vous pouvez également inclure le dossier de bibliothèque cliente dans le script HTL ou JSP de celui-ci. Cela générera et référencera le fichier CSS avec les requêtes de média nécessaires au fonctionnement de la grille réactive.
 
@@ -99,19 +99,19 @@ Le script JSP génère le code HTML suivant qui référence les feuilles de sty
 
 ## Aperçu pour des périphériques spécifiques {#previewing-for-specific-devices}
 
-L’émulateur vous permet de prévisualiser vos pages dans différentes tailles de fenêtre d’affichage afin que vous puissiez tester le comportement de votre conception réactive. Lorsque vous modifiez une page dans la console Sites, vous pouvez appuyer ou cliquer sur le bouton **Émulateur** pour afficher l’émulateur.
+L’émulateur vous permet de prévisualiser vos pages dans différentes tailles de fenêtre d’affichage afin que vous puissiez tester le comportement de votre conception réactive. Lors de la modification d’une page dans la console Sites, vous pouvez appuyer ou cliquer sur l’icône **Émulateur** pour afficher l’émulateur.
 
 ![Icône de l’émulateur dans la barre d’outils](assets/emulator-icon.png)
 
-Dans la barre d’outils de l’émulateur, appuyez ou cliquez sur le bouton **Périphériques** pour afficher un menu déroulant dans lequel vous pouvez sélectionner un appareil. Lorsque vous sélectionnez un appareil, la page change afin de s’adapter à la taille de la fenêtre d’affichage.
+Dans la barre d’outils de l’émulateur, vous pouvez appuyer ou cliquer sur l’icône **Périphériques** pour afficher un menu déroulant dans lequel vous pouvez sélectionner un appareil. Lorsque vous sélectionnez un appareil, la page change afin de s’adapter à la taille de la fenêtre d’affichage.
 
 ![Barre d’outils de l’émulateur](assets/emulator.png)
 
 ### Spécification des groupes d’appareils {#specifying-device-groups}
 
-Pour spécifier les groupes d’appareils qui apparaissent dans le **Périphériques** liste, ajouter une `cq:deviceGroups` à la propriété `jcr:content` noeud de la page de modèle de votre site. La valeur de la propriété est un tableau de chemins d’accès pointant vers les nœuds du groupe d’appareils.
+Pour spécifier les groupes d’appareils qui apparaissent dans la liste **Périphériques**, ajoutez une propriété `cq:deviceGroups` au noeud `jcr:content` de la page de modèle de votre site. La valeur de la propriété est un tableau de chemins d’accès pointant vers les nœuds du groupe d’appareils.
 
-Par exemple, la page de modèle du site WKND est : `/conf/wknd/settings/wcm/template-types/empty-page/structure`. Et le `jcr:content` sous , la propriété suivante est incluse :
+Par exemple, la page de modèle du site WKND est `/conf/wknd/settings/wcm/template-types/empty-page/structure`. Et le noeud `jcr:content` sous celui-ci inclut la propriété suivante :
 
 * Nom : `cq:deviceGroups`
 * Type : `String[]`
@@ -123,13 +123,13 @@ Les nœuds du groupe d’appareils sont situés dans le dossier `/etc/mobile/gro
 
 Les pages réactives s’adaptent dynamiquement au périphérique sur lequel elles sont générées, offrant ainsi une meilleure expérience à l’utilisateur. Toutefois, il est également important que les ressources soient optimisées au point d’arrêt et sur l’appareil afin de réduire le temps de chargement des pages.
 
-[Composant d’image des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) fonctions telles que la sélection d’images adaptatives.
+[Le composant d’image des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) comprend des fonctionnalités telles que la sélection d’images adaptatives.
 
-* Par défaut, le composant d’image utilise la variable [Servlet d’image adaptative](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) pour fournir le rendu approprié.
+* Par défaut, le composant d’image utilise la [servlet d’image adaptative](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) pour fournir le rendu approprié.
 * [Diffusion d’images optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) est également disponible par le biais d’une simple case à cocher dans sa stratégie, qui fournit des ressources d’image à partir de la gestion des actifs numériques au format WebP et peut réduire la taille de téléchargement d’une image d’environ 25 % en moyenne.
 
 ## Conteneur de mises en page {#layout-container}
 
-AEM Conteneur de mises en page permet d’implémenter efficacement une mise en page réactive afin d’adapter les dimensions de la page à la fenêtre d’affichage client.
+AEM Conteneur de mises en page permet d’implémenter efficacement une mise en page réactive afin d’adapter les dimensions de la page à la fenêtre d’affichage cliente.
 
-Consultez le document [Configuration du conteneur de mises en page et du mode Mise en page](/help/sites-cloud/administering/responsive-layout.md) pour plus d’informations sur le fonctionnement du conteneur de mises en page et sur l’activation de mises en page réactives pour votre contenu.
+Pour plus d’informations sur le fonctionnement du conteneur de mises en page et l’activation des mises en page réactives pour votre contenu, reportez-vous au document [Configuration du conteneur de mises en page et du mode de mise en page](/help/sites-cloud/administering/responsive-layout.md) .

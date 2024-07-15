@@ -12,7 +12,7 @@ ht-degree: 55%
 
 ---
 
-# Intégration d’un formulaire adaptatif à Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
+# Intégrer le formulaire adaptatif à Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -27,7 +27,7 @@ Vous pouvez utiliser les informations d’identification du client OAuth 2.0 po
 
 AEM Forms échange les informations d’identification du client (consumer key et secret du client), définies dans l’application connectée Salesforce, pour obtenir un jeton d’accès.
 
-AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Pour en savoir plus sur ces options, voir [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) article.
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Vous pouvez en savoir plus sur ces options dans l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) .
 
 L’utilisation des informations d’identification du client OAuth 2.0 présente plusieurs avantages par rapport à l’authentification à l’aide du flux de code d’autorisation :
 
@@ -61,7 +61,7 @@ Pour connecter le formulaire adaptatif à l’application Salesforce à l’aide
 
 1. Chargez le fichier Swagger créé à partir de votre ordinateur local en cliquant sur **[!UICONTROL Parcourir]**.
 1. Sélectionnez le **[!UICONTROL Type d’authentification]** comme **[!UICONTROL OAuth 2.0]**. Le panneau **[!UICONTROL Paramètres d’authentification]** s’affiche.
-1. Sélectionnez la variable **[!UICONTROL Type d’octroi]** as **[!UICONTROL Informations d’identification client]**.
+1. Sélectionnez le **[!UICONTROL Type d’octroi]** comme **[!UICONTROL Informations d’identification du client]**.
 1. Spécifiez l’**[!UICONTROL ID client]** et le **[!UICONTROL Secret du client]** obtenus à partir de l’application connectée à Salesforce.
 1. Spécifiez l’**[!UICONTROL URL du jeton d’accès]** au format
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
@@ -74,7 +74,7 @@ Pour connecter le formulaire adaptatif à l’application Salesforce à l’aide
 1. Si la connexion est établie, cliquez sur le bouton **[!UICONTROL Créer]**.
 
 
-Après avoir configuré l’application Salesforce, vous pouvez utiliser la configuration lors de la création d’un modèle de données de formulaire (FDM). Pour plus d’informations, voir [Créer un modèle de données de formulaire (FDM)](create-form-data-models.md). [Configuration de l’action d’envoi de modèle de données de formulaire](/help/forms/using-form-data-model.md) pour un formulaire adaptatif afin d’envoyer des données aux applications Salesforce.
+Après avoir configuré l’application Salesforce, vous pouvez utiliser la configuration lors de la création d’un modèle de données de formulaire (FDM). Pour plus d’informations, voir [Création d’un modèle de données de formulaire (FDM)](create-form-data-models.md). [Configurez l’action d’envoi de modèle de données de formulaire](/help/forms/using-form-data-model.md) pour un formulaire adaptatif afin d’envoyer des données aux applications Salesforce.
 
 Pour plus d’informations sur la création et l’utilisation du modèle de données de formulaire (FDM) dans les processus d’entreprise, voir [Intégration de données](data-integration.md).
 

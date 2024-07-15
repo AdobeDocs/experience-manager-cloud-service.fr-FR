@@ -181,7 +181,7 @@ Un autre cas d’utilisation résolu par Dynamic Media est la vidéo. La vidéo
 
 Les clients se rendent dans Dynamic Media avec les problèmes suivants qu’ils espèrent résoudre :
 
-&quot;_Mon entreprise a la vidéo, et le département a dépensé une grosse somme d&#39;argent pour la créer, mais s&#39;est abstenu de la placer sur des pages, ou de la diffuser. La raison était que depuis les tests, la qualité de la vidéo ne pouvait pas être garantie, ou même si elle allait vraiment jouer. Et finalement, cela affecte la marque de l&#39;entreprise et potentiellement son rôle dans la conversion._&quot;
+&quot;_Mon entreprise a la vidéo, et le département a dépensé une grosse somme d&#39;argent pour la créer, mais s&#39;est abstenu de la placer sur des pages ou de la diffuser. La raison était que depuis les tests, la qualité de la vidéo ne pouvait pas être garantie, ou même si elle allait vraiment jouer. Et finalement, cela affecte la marque de l&#39;entreprise et potentiellement son rôle dans la conversion._&quot;
 
 La solution de Dynamic Media consiste à prendre ce fichier vidéo principal et à confier à Dynamic Media la création de toutes les tailles nécessaires grâce à son processus de transcodage. Vous pouvez ensuite l’ajouter au lecteur vidéo intelligent de Dynamic Media. Ce workflow garantit que si vous utilisez cette vidéo sur votre page de destination principale ou sur une page de détails de catégorie ou de produit, elle sera diffusée de façon cohérente et avec une qualité élevée.
 

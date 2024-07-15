@@ -1,6 +1,6 @@
 ---
 title: Configurer la configuration de publication Dynamic Media pour Image Server
-description: Découvrez comment configurer la configuration de la publication Dynamic Media pour Image Server, notamment la gestion des couleurs, la sécurité et les images miniatures.
+description: Découvrez comment configurer la configuration de Dynamic Media Publish pour le serveur d’images, notamment la gestion des couleurs, la sécurité et les images miniatures.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -11,7 +11,7 @@ mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '3493'
+source-wordcount: '3333'
 ht-degree: 99%
 
 ---

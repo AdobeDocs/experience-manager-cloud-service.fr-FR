@@ -76,9 +76,9 @@ Vous pouvez contacter votre représentant Adobe pour une démonstration ou pour 
 
 * Le composant Détails du produit peut désormais être utilisé et configuré sur n’importe quelle page de contenu.
 
-* Publication CIF site de référence Venia - 2021.03.25 qui comprend la dernière version de CIF Core Components v1.9.0. Voir [Site de référence Venia CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) pour plus d’informations.
+* Publication CIF site de référence Venia - 2021.03.25 qui comprend la dernière version de CIF Core Components v1.9.0. Pour plus d’informations, voir [CIF site de référence Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) .
 
-* Publication CIF composants principaux v1.9.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) pour plus d’informations.
+* Publication CIF composants principaux v1.9.0. Pour plus d’informations, voir [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) .
 
 
 ## Cloud Manager {#cloud-manager}
@@ -92,7 +92,7 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 ### Nouveautés {#what-is-new-march}
 
-* Clients avec des environnements avec des configurations de nom de domaine personnalisé préexistantes pour [LISTES AUTORISÉES IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) et [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) consultez un message à propos de leurs configurations existantes et peuvent être en libre-service au moyen de l’interface utilisateur .
+* Les clients avec des environnements avec des configurations de nom de domaine personnalisé préexistantes pour les [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), les [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) et les [noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) voient apparaître un message sur leurs configurations existantes antérieures et peuvent s’auto-servir par le biais de l’interface utilisateur.
 
 * Les utilisateurs et utilisatrices disposant des autorisations requises peuvent désormais modifier un programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
 
@@ -169,13 +169,13 @@ La date de publication de l’analyseur de bonnes pratiques v2.1.8 est le 22 mar
 
 ### Nouveautés des outils de refactorisation du code {#what-is-new-crt}
 
-* Nouvelles fonctionnalités et améliorations de Repository Modernizer. Voir [Ressource GitHub : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour la dernière version.
+* Nouvelles fonctionnalités et améliorations de Repository Modernizer. Voir [Ressource GitHub : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour obtenir la dernière version.
    * Normalisez les configurations OSGi (à l’exception des configurations RepoInit) au format .cfg.json préféré.
    * Renommez les dossiers de configuration OSGi au format spécifié.
    * Générez le projet ui.apps.structure.
    * Créez le module d’analyse.
 
-* Nouvelles fonctionnalités et améliorations pour Dispatcher Converter. Voir [Ressource GitHub : convertisseur du Dispatcher](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Nouvelles fonctionnalités et améliorations pour Dispatcher Converter. Voir [Ressource GitHub : convertisseur Dispatcher](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * Création de fichiers distincts pour différentes inclusions au lieu de mettre le contenu en file d’attente.
    * Capacité à gérer à la fois le chemin d’accès des dossiers vhosts et le chemin d’accès aux fichiers vhost.
    * Génération de fichiers en batterie avec des configurations client importantes dans une plage de 600 et plus.

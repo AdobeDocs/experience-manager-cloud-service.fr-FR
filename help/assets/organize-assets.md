@@ -87,7 +87,7 @@ Vous trouverez ci-dessous la procédure à suivre pour ajouter des balises à un
 
 1. Connectez-vous à [!DNL Experience Manager Assets].
 1. Cliquez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**, sélectionnez la ressource et cliquez sur **[!UICONTROL Propriétés]** pour ouvrir les propriétés de la ressource.
-1. Dans le **[!UICONTROL De base]** , cliquez sur l’icône de dossier dans **[!UICONTROL Balises]** métadonnées. Une fenêtre contextuelle s’ouvre.
+1. Dans l’onglet **[!UICONTROL Basic]** , cliquez sur l’icône de dossier dans les métadonnées **[!UICONTROL Tags]**. Une fenêtre contextuelle s’ouvre.
 1. Recherchez ou sélectionnez les balises appropriées parmi les balises existantes dans `cq-tags`. Vous pouvez affecter plusieurs balises à la ressource.
 
    Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction du **[!UICONTROL Nom]** (par ordre alphabétique), de la date de **[!UICONTROL Création]** ou de la date de **[!UICONTROL Modification]**. Dans l’illustration suivante, la structure des balises est triée par ordre alphabétique en fonction de la variable **[!UICONTROL Nom]**.

@@ -17,7 +17,7 @@ ht-degree: 67%
 
 L’action d’envoi **[!UICONTROL Soumettre à OneDrive]** connecte un formulaire adaptatif à un stockage Microsoft® OneDrive. Vous pouvez envoyer les données de formulaire, les fichiers, les pièces jointes ou le document d’enregistrement au Microsoft® OneDrive Storage connecté.
 
-AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Pour en savoir plus sur ces options, voir [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)  article.
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Vous pouvez en savoir plus sur ces options dans l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) .
 
 ## Avantages
 
@@ -33,7 +33,7 @@ Voici quelques-uns des avantages de l’intégration transparente d’AEM Forms 
 Pour configurer OneDrive pour l’envoi par AEM Forms, procédez comme suit :
 
 1. [Créer une configuration OneDrive](#create-a-onedrive-configuration-create-onedrive-configuration) : connecte AEM Forms à votre stockage Microsoft® OneDrive.
-2. [Utilisation de l’action d’envoi Envoyer à OneDrive dans un formulaire adaptatif](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): votre formulaire adaptatif est connecté à Microsoft® OneDrive configuré.
+2. [Utilisez l’action d’envoi Envoyer à OneDrive dans un formulaire adaptatif](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af) : cela connecte votre formulaire adaptatif à Microsoft® OneDrive configuré.
 
 ### Créer une configuration OneDrive {#create-onedrice-configuration}
 

@@ -8,7 +8,7 @@ discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1109'
-ht-degree: 60%
+ht-degree: 78%
 
 ---
 
@@ -17,36 +17,36 @@ ht-degree: 60%
 
 Les sections répétables sont des panneaux qui peuvent être ajoutés ou supprimés dynamiquement dans un formulaire.
 
-Par exemple, lors de la demande d’une tâche, le chercheur d’emploi fournit des détails sur la précédente tâche, tels que le nom de l’entreprise, le rôle, le projet et d’autres informations. L’information de tous les employeurs nécessite des sections différentes mais similaires. Dans un tel scénario, le formulaire d’embauche fournit une section employeur et fournit également une option pour ajouter dynamiquement d’autres sections de ce type. Ces sections dynamiquement ajoutées sont appelées sections répétables.
+Par exemple, lorsqu&#39;il ou elle postule pour un emploi, le demandeur ou demandeuse d’emploi fournit des détails sur les emplois précédents, tels que le nom de l’entreprise, le rôle, le projet et d’autres informations. Les informations concernant les employeurs nécessitent des sections différentes mais similaires. Dans un tel scénario, le formulaire d’embauche fournit une section employeur et fournit également une option pour ajouter dynamiquement d’autres sections de ce type. Ces sections dynamiquement ajoutées sont appelées sections répétables.
 
 Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthodes suivantes :
 
 ## Utilisation du gestionnaire d’instances via des scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. En mode d’édition, sélectionnez un panneau, puis sélectionnez ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **[!UICONTROL Activer la répétition du panneau]**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
+1. En mode de modification, sélectionnez un panneau, puis ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **[!UICONTROL Activer la répétition du panneau]**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
 
-   Le champ Maximum spécifie le nombre maximal de fois qu’un panneau peut apparaître sur la page. Vous pouvez spécifier -1 dans le champ Nombre maximum pour que le panneau s’affiche un nombre infini de fois.
+   Le champ Maximum spécifie le nombre maximum de fois qu’un panneau peut apparaître sur la page. Vous pouvez spécifier -1 dans le champ Nombre maximum pour que le panneau s’affiche un nombre infini de fois.
 
    Le champ Minimum spécifie le nombre minimum de fois qu’un panneau s’affiche sur le formulaire. Si vous définissez le champ Nombre minimum sur zéro, vous pouvez ultérieurement supprimer toutes les instances via des scripts une fois le rendu terminé.
 
    >[!NOTE]
    >
-   >Pour créer un panneau non répétable, définissez la valeur des champs Maximum et Minimum sur 1. La mise en page en accordéon ne prend pas en charge -1 dans le champ Nombre maximum . Vous pouvez spécifier un nombre élevé pour donner la notion de valeur infinie.
+   >Pour créer un panneau non répétable, définissez la valeur des champs Maximum et Minimum sur 1. La disposition en accordéon ne prend pas en charge la valeur -1 dans le champ Nombre maximum. Vous pouvez spécifier un nombre élevé pour donner la notion de valeur infinie.
 
 1. Le parent du panneau, qui doit être répété, doit contenir des boutons d’ajout et de suppression pour gérer les instances des panneaux répétables. Pour insérer des boutons dans le parent et activer des scripts sur les boutons, procédez comme suit :
 
-   1. A partir de la barre latérale, faites glisser un composant Bouton jusqu’au parent du panneau. Sélectionnez le composant, puis sélectionnez ![edit-rules](assets/edit-rules.png). Les règles du bouton s’ouvrent dans l’éditeur de règles.
+   1. A partir de la barre latérale, faites glisser un composant Bouton jusqu’au parent du panneau. Sélectionnez le composant, puis ![edit-rules](assets/edit-rules.png). Les règles du bouton s’ouvrent dans l’éditeur de règles.
    1. Dans la fenêtre Éditeur de règles, cliquez sur **Créer**.
 
       Sélectionnez **Éditeur visuel** dans la ligne Objets et fonctions de formulaire.
 
       1. Dans la zone de règle, sous QUAND, sélectionnez l’état **lorsque l’on clique dessus**.
-      1. Sous ALORS :
+      1. Sous PUIS :
 
          * Pour créer un bouton d’ajout de panneau, sélectionnez **Ajouter une instance** et glissez-déposez le panneau à l’aide du ![panneau latéral](assets/toggle-side-panel.png) ou sélectionnez-le à l’aide de l’option **Déposer l’objet ou sélectionner ici.**
          * Pour créer un bouton de suppression de panneau, sélectionnez **Supprimer une instance**, et glissez-déposez le panneau à l’aide du ![panneau latéral](assets/toggle-side-panel.png) ou sélectionnez-le à l’aide de l’option **Déposer l’objet ou sélectionner ici**
 
-      Sélectionnez **Éditeur de code** dans la ligne Objets et fonctions de formulaire. Cliquez sur **Modifier les règles** et dans la zone de code :
+      Sélectionner **Éditeur de code** dans la ligne Objets et fonctions de formulaire. Cliquez sur **Modifier les règles** et dans la zone de code :
 
       * Pour créer un bouton d’ajout de panneau, spécifiez `this.panel.instanceManager.addInstance()`.
       * Pour créer un bouton de suppression de panneau, spécifiez `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`.
@@ -95,8 +95,8 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 Un panneau présente différentes options de disposition. La mise en page de l’option de conception en accordéon prend en charge les panneaux répétables. Effectuez les étapes suivantes pour créer un panneau répétable avec la mise en page de l’option de conception en accordéon :
 
-1. Sur le parent du panneau à répéter, sélectionnez ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Dans le menu déroulant **Disposition**, sélectionnez **Accordéon**.
-1. Dans un panneau à répéter, sélectionnez ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Activez la variable **Rendre le panneau répétable** et spécifiez les valeurs de la variable **Maximum** et **Minimum** des champs.
+1. Dans le parent du panneau à répéter, sélectionnez ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Dans le menu déroulant **Disposition**, sélectionnez **Accordéon**.
+1. Dans un panneau à répéter, sélectionnez ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Activez l’onglet **Rendre le panneau répétable** et spécifiez des valeurs pour les champs **Maximum** et **Minimum**.
 
    Vous pouvez désormais utiliser les boutons plus (+) et Supprimer (![delete-panel](assets/delete-panel.png)) pour ajouter ou supprimer des panneaux.
 
@@ -104,14 +104,14 @@ Un panneau présente différentes options de disposition. La mise en page de l�
 
 Un sous-formulaire répétable est similaire aux panneaux répétables dans les formulaires adaptatifs. Dans [!DNL AEM Forms] Designer, suivez la procédure suivante pour créer un sous-formulaire qui se répète :
 
-1. Dans la palette Hiérarchie, sélectionnez le sous-formulaire parent du sous-formulaire à répéter.
+1. Dans la palette Hiérarchie, sélectionner le sous-formulaire parent du sous-formulaire à répéter.
 1. Dans la palette Objet, cliquez sur l’onglet Sous-formulaire et sélectionnez Distribué dans la liste Contenu.
 1. Sélectionnez le sous-formulaire à répéter.
 1. Dans la palette Objet, cliquez sur l’onglet Sous-formulaire et sélectionnez Positionné ou Distribué dans la liste Contenu.
 1. Cliquez sur l’onglet Liaison et sélectionnez Sous-formulaire pour chaque élément.
-1. Pour spécifier le nombre minimum de répétitions, sélectionnez Nombre minimum de répétitions et saisissez un nombre dans la zone associée. Si cette option est définie sur 0 et qu’aucune donnée n’est fournie pour les objets du sous-formulaire au moment de la fusion des données, le sous-formulaire n’est pas placé lors de la génération du formulaire.
-1. Pour spécifier le nombre maximum de répétitions du sous-formulaire, sélectionnez Nombre maximum de répétitions et saisissez un nombre dans la zone associée. Si vous n’indiquez pas de valeur dans la zone Nombre maximum de répétitions, le nombre de répétitions du sous-formulaire est illimité.
-1. Pour spécifier un nombre précis de répétitions du sous-formulaire, quelle que soit la quantité de données, sélectionnez l’option Quantité initiale et tapez un nombre dans la zone associée. Si vous sélectionnez cette option et qu’aucune donnée n’est disponible ou qu’il existe moins d’entrées de données par rapport à la valeur Nombre initial spécifiée, des instances vides du sous-formulaire sont quand même placées sur le formulaire.
+1. Pour spécifier le nombre minimum de répétitions, sélectionnez Nombre minimum de répétitions et saisissez un nombre dans la zone associée. Si cette option est définie sur 0 et qu’aucune donnée n’est fournie pour les objets du sous-formulaire au moment de la fusion, le sous-formulaire n’est pas placé lors de la génération du formulaire.
+1. Pour spécifier le nombre maximum de répétitions du sous-formulaire, sélectionnez Nombre maximum de répétitions et saisissez un nombre dans la zone associée. Si vous ne spécifiez aucune valeur dans la zone Nombre maximum, le nombre de répétitions du sous-formulaire est illimité.
+1. Pour spécifier un nombre précis de répétitions du sous-formulaire, quelle que soit la quantité de données, sélectionnez l’option Quantité initiale et tapez un nombre dans la zone associée. Si vous sélectionnez cette option et qu’aucune donnée n’est disponible ou qu’il existe moins d’entrées de données par rapport à la valeur Quantité initiale spécifiée, des instances vides du sous-formulaire sont toujours placées sur le formulaire.
 1. Ajoutez deux boutons dans le sous-formulaire parent : un pour ajouter une instance et un autre pour supprimer une instance d’un sous-formulaire répétable. Pour obtenir des instructions détaillées, voir [Création d’une action](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Liez maintenant le modèle de formulaire au formulaire adaptatif. Pour les étapes détaillées, voir [Création d’un formulaire adaptatif basé sur un modèle](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Utilisez les boutons créés à l’étape 9 pour ajouter et supprimer des sous-formulaires.

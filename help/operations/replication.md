@@ -66,7 +66,7 @@ Vous pouvez également créer un modèle de workflow qui utilise l’étape du p
 1. Sur la page d’accueil d’AEM as a Cloud Service, accédez à **Outils – Workflow – Modèles**.
 1. Sur la page Modèles de workflow, appuyez sur **Créer** dans l’angle supérieur droit de l’écran.
 1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de processus](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
-1. Sélectionnez le modèle créé dans la liste, puis appuyez sur **Modifier**
+1. Sélectionnez le modèle créé dans la liste et appuyez sur **Modifier**
 1. Dans la fenêtre suivante, faites un glisser-déposer de l’étape du processus dans le flux de modèle actuel :
 
    ![Étape du processus](/help/operations/assets/processstep.png)
@@ -209,6 +209,6 @@ Pour résoudre les problèmes de réplication, accédez aux files d’attente de
 
 ![Journaux](assets/publish-logs.png "Journaux")
 
-Si le contenu n’a pas pu être publié, l’ensemble de la publication est restaurée à partir du service de publication AEM.
+Si le contenu n’a pas pu être publié, l’ensemble de la publication est restaurée à partir du service Publish d’AEM.
 
 Dans ce cas, la file d’attente principale modifiable affiche un statut rouge. Elle doit être examinée afin d’identifier le ou les éléments qui ont provoqué l’annulation de la publication. En cliquant sur cette file d’attente, les éléments en attente s’affichent, parmi lesquels il est possible d’effacer, si nécessaire, tous les éléments ou un seul.

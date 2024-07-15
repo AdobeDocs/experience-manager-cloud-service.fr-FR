@@ -19,7 +19,7 @@ Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux 
 
 Les magasins ContextHub sont créés à partir de candidats de magasins enregistrés. Pour créer un magasin personnalisé, vous devez créer et enregistrer un candidat de magasin.
 
-Le fichier JavaScript qui inclut le code qui crée et enregistre le magasin candidat doit être inclus dans une [dossier de bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md). La catégorie du dossier doit correspondre au schéma suivant :
+Le fichier JavaScript qui inclut le code qui crée et enregistre le magasin candidat doit être inclus dans un [dossier de bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md). La catégorie du dossier doit correspondre au schéma suivant :
 
 ```xml
 contexthub.store.[storeType]

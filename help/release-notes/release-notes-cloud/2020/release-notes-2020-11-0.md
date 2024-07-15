@@ -34,7 +34,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ### Nouveautés d’[!DNL Assets] et [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Ingestion en masse de ressources**: fournir aux clients un service d’ingestion évolutif et natif dans le cloud qui utilise [!DNL Experience Manager] Architecture as a Cloud Service, y compris les microservices de ressources. Les cas d’utilisation essentiels incluent l’ingestion à l’échelle voulue avec la surveillance, les rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données dans le cloud à l’aide d’outils de téléchargement courants. Voir [Outil d’ingestion de ressources en masse](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Ingestion de ressources en bloc** : proposez aux clients un service d’ingestion évolutif et natif dans le cloud qui utilise [!DNL Experience Manager] une architecture as a Cloud Service, y compris des microservices de ressources. Les cas d’utilisation essentiels incluent l’ingestion à l’échelle voulue avec la surveillance, les rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données dans le cloud à l’aide d’outils de téléchargement courants. Voir [Outil d’ingestion de ressources en masse](/help/assets/add-assets.md#asset-bulk-ingestor).
 
   Cet outil est destiné aux administrateurs système, consultants ou partenaires concernés par l’implémentation. Cette fonction permet l’ingestion à grande échelle et est idéalement adaptée pour une ingestion initiale ou occasionnellement volumineuse. Pour les tâches d’ingestion de volume plus modeste, utilisez l’[[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr) ou [effectuez un chargement à l’aide de l’interface utilisateur d’Assets](/help/assets/add-assets.md#upload-assets).
 
@@ -75,9 +75,9 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Publication CIF site de référence Venia - 2020.11.05 incluant la dernière version des CIF composants principaux v1.5.0. Voir [Site de référence Venia CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) pour plus d’informations.
+* Publication CIF site de référence Venia - 2020.11.05 incluant la dernière version des CIF composants principaux v1.5.0. Pour plus d’informations, voir [CIF site de référence Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) .
 
-* Publication CIF composants principaux v1.5.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) pour plus d’informations.
+* Publication CIF composants principaux v1.5.0. Pour plus d’informations, voir [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) .
 
 ### Correctifs {#bug-fixes-commerce}
 
@@ -119,7 +119,7 @@ Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des prob
 
 ### Autres {#others-foundation}
 
-Nouveau [Syntaxe &quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) recherchez la configuration apache et dispatcher exécutée pendant la génération de Cloud Manager, qui peut également être exécutée à l’aide AEM outils Dispatcher du SDK as a Cloud Service.
+Nouvelle vérification [&quot;httpd -t&quot; de la syntaxe ](/help/implementing/dispatcher/disp-overview.md#local-validation) pour la configuration Apache et Dispatcher exécutée pendant la génération Cloud Manager, qui peut également être exécutée à l’aide des outils Dispatcher du SDK AEM as a Cloud Service.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 

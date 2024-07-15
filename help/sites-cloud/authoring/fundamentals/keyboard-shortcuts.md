@@ -21,7 +21,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clav
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
-| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Basculer entre **Aperçu** et la valeur sélectionnée [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (par exemple, **Modifier**, **Disposition**, etc.)* |
+| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Basculez entre **Aperçu** et le [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> actuellement sélectionné (par exemple, **Modifier**, **Disposition**, etc.)* |
 | Mode d’**édition** | `Ctrl-z` | [Annuler la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |

@@ -40,7 +40,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 ![Console Projets](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Sélectionnez **Chronologie**, puis un projet pour afficher sa chronologie.
-* Sélectionner **Sélectionner** pour passer en mode de sélection.
+* Sélectionnez **Sélectionner** pour passer en mode de sélection.
 * Cliquez sur **Créer** pour ajouter des projets.
 * **Activer/désactiver les projets actifs** permet de basculer entre tous les projets actifs.
 * **Afficher la vue Statistiques** permet d’afficher les statistiques de projet concernant les tâches terminées.

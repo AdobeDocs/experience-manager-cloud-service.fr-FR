@@ -43,7 +43,8 @@ Il est possible d’écrire un code d’enregistrement personnalisé qui prend, 
 
 **Condition préalable requise :**
 
-Pour que la logique décrite ci-dessus fonctionne correctement, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
+Pour que la logique décrite ci-dessus fonctionne correctement, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant
+une demande au service clientèle indiquant le programme et les environnements appropriés.
 
 ### Externe {#external-managed-registration}
 
@@ -66,7 +67,8 @@ Les clients peuvent écrire leurs propres composants personnalisés. Pour en sav
 
 **Condition préalable requise :**
 
-Pour que la logique décrite ci-dessus fonctionne correctement, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
+Pour que la logique décrite ci-dessus fonctionne correctement, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant
+une demande au service clientèle indiquant le programme et les environnements appropriés.
 
 ### Intégration à un fournisseur d’identités {#integration-with-an-idp}
 
@@ -90,13 +92,13 @@ L’interface `com.adobe.granite.auth.oauth.provider` peut être implémentée a
 
 **Condition préalable requise :**
 
-En règle générale, il est recommandé de toujours s’appuyer sur le fournisseur d’identité (idP) comme un seul point de vérité lors du stockage de données spécifiques à l’utilisateur. Si les informations supplémentaires sur l’utilisateur sont stockées dans le référentiel local, qui ne fait pas partie de l’IDP, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés. En complément de [synchronisation des données](#data-synchronization-data-synchronization), dans le cas du fournisseur d’authentification SAML, assurez-vous que [appartenance à un groupe dynamique](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) est activée.
+En règle générale, il est recommandé de toujours s’appuyer sur le fournisseur d’identité (idP) comme un seul point de vérité lors du stockage de données spécifiques à l’utilisateur. Si les informations utilisateur supplémentaires sont stockées dans le référentiel local, qui ne fait pas partie de l’idP, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés. En plus de la [synchronisation des données](#data-synchronization-data-synchronization), dans le cas du fournisseur d’authentification SAML, assurez-vous que l’[appartenance à un groupe dynamique](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) est activée.
 
 ### Sessions réactives et jetons encapsulés {#sticky-sessions-and-encapsulated-tokens}
 
 AEM as a Cloud Service active les sessions persistantes basées sur des cookies, en s’assurant qu’un utilisateur final est redirigé vers le même noeud de publication à chaque demande. Dans certains cas particuliers, tels que les pics de trafic utilisateur, la fonction de jeton encapsulé peut améliorer les performances afin que l’enregistrement utilisateur dans le référentiel ne doive pas être référencé pour chaque requête. Si le noeud de publication auquel un utilisateur final a une affinité est remplacé, son enregistrement d’ID utilisateur est disponible sur le nouveau noeud de publication, comme décrit dans la section [synchronisation des données](#data-synchronization-data-synchronization) ci-dessous.
 
-Pour tirer parti de la fonctionnalité de jeton encapsulé, veuillez envoyer une demande au service clientèle indiquant le programme et les environnements appropriés. Plus important encore, le jeton encapsulé ne peut pas être activé sans [synchronisation des données](#data-synchronization-data-synchronization) et doivent être activés ensemble. Par conséquent, passez soigneusement en revue le cas d’utilisation avant d’activer et de vérifier que la fonctionnalité est essentielle.
+Pour tirer parti de la fonctionnalité de jeton encapsulé, veuillez envoyer une demande au service clientèle indiquant le programme et les environnements appropriés. Plus important encore, le jeton encapsulé ne peut pas être activé sans [synchronisation des données](#data-synchronization-data-synchronization) et doit être activé ensemble. Par conséquent, passez soigneusement en revue le cas d’utilisation avant d’activer et de vérifier que la fonctionnalité est essentielle.
 
 ## Profil utilisateur {#user-profile}
 
@@ -111,7 +113,8 @@ Les informations de profil utilisateur peuvent être écrites et lues de deux ma
 
 **Condition préalable requise :**
 
-Pour que la logique de persistance du profil utilisateur côté serveur fonctionne correctement, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
+Pour que la logique de persistance du profil utilisateur côté serveur fonctionne correctement, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant
+une demande au service clientèle indiquant le programme et les environnements appropriés.
 
 ### Magasins de données tiers {#third-party-data-stores}
 
@@ -121,7 +124,8 @@ Il est possible d’accéder en temps réel à des services tiers pour récupér
 
 **Condition préalable requise :**
 
-Pour que la logique décrite ci-dessus fonctionne correctement, activez [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
+Pour que la logique décrite ci-dessus fonctionne correctement, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant
+une demande au service clientèle indiquant le programme et les environnements appropriés.
 
 ## Autorisations (groupes d’utilisateurs fermés) {#permissions-closed-user-groups}
 
@@ -134,7 +138,7 @@ Indépendamment de la connexion, le code personnalisé peut également être con
 
 ## La synchronisation des données. {#data-synchronization}
 
-Les utilisateurs finaux du site web attendent une expérience cohérente pour chaque requête de page web ou même lorsqu’ils se connectent à l’aide d’un navigateur différent. Même s’ils ne le savent pas, ils sont conduits vers différents nœuds de serveur de l’infrastructure du niveau Publication. Pour ce faire, AEM as a Cloud Service synchronise rapidement la variable `/home` hiérarchie de dossiers (informations sur le profil utilisateur, appartenance à un groupe, etc.) sur tous les noeuds du niveau publication.
+Les utilisateurs finaux du site web attendent une expérience cohérente pour chaque requête de page web ou même lorsqu’ils se connectent à l’aide d’un navigateur différent. Même s’ils ne le savent pas, ils sont conduits vers différents nœuds de serveur de l’infrastructure du niveau Publication. Pour ce faire, AEM as a Cloud Service synchronise rapidement la hiérarchie de dossiers `/home` (informations de profil utilisateur, appartenance à un groupe, etc.) sur tous les noeuds du niveau publication.
 
 Contrairement à d’autres solutions AEM, la synchronisation des utilisateurs et de l’appartenance à un groupe dans AEM as a Cloud Service n’utilise pas une approche de messagerie point à point, mais plutôt une approche publication-abonnement qui ne nécessite pas de configuration client.
 

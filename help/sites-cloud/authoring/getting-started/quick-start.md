@@ -47,7 +47,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
       * [Mode Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [Afficher comme publié(e)](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* Les versions ne sont pas lancées/créées à partir de l’éditeur de page. Cela est maintenant effectué à partir de la fonction **Sites** (via **Créer** ou [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) pour une ressource sélectionnée).
+* Les versions ne sont pas lancées/créées à partir de l’éditeur de page. Cette opération est désormais effectuée à partir de la console **Sites** (par l’intermédiaire de **Créer** ou de la [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) pour une ressource sélectionnée).
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ La sélection d’une page dépend de la vue utilisée dans la console :
 
 Les [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) sont disponibles :
 
-1. [Accédez à la page](#finding-your-page) vous voulez agir.
+1. [Accédez à la page](#finding-your-page) sur laquelle vous souhaitez agir.
 1. Placez le pointeur de la souris sur la carte qui représente la ressource requise. Les actions rapides s’affichent :
 
    ![Actions de carte](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -172,7 +172,7 @@ Pour modifier votre page :
 
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
-      * Ouvrez la barre d’outils du composant en sélectionnant , puis en utilisant la fonction **Supprimer** Icône
+      * Ouvrez la barre d’outils du composant en sélectionnant , puis utilisez l’icône **Supprimer** .
 
    * [Ajouter des annotations](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) à la page :
 
@@ -302,7 +302,7 @@ Pour créer une [version](/help/sites-cloud/authoring/features/page-versions.md)
 
    ![Option du mode Chronologie](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Sélectionnez les points de suspension en bas à droite de la colonne Frise chronologique pour afficher d’autres boutons, notamment **Enregistrer comme version**.
+1. Sélectionnez les points de suspension en bas à droite de la colonne Frise chronologique pour afficher d’autres boutons, dont **Enregistrer comme version**.
 
    ![Mode Chronologie](/help/sites-cloud/authoring/assets/timeline-view.png)
 

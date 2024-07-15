@@ -57,7 +57,7 @@ Ainsi, vous avez seulement besoin de redéfinir les modifications à apporter et
 
 ### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
 
-Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir le HTML nécessaire pour prendre le contenu requis, puis le rendre selon les besoins, dans les environnements de création et de publication.
+Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir l’HTML nécessaire pour prendre le contenu requis, puis le rendre selon les besoins, dans les environnements de création et de publication.
 
 Il est recommandé de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
@@ -183,7 +183,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
 | `component.html` | `nt:file` | Fichier de script HTL du composant. |
 | `cq:icon` | `String` | Cette valeur pointe vers l’[icône du composant](#component-icon) et apparaît dans le navigateur de composants. |
 
-Si vous observez le **Texte** vous pouvez voir plusieurs de ces éléments :
+Si vous observez le composant **Texte**, vous pouvez voir plusieurs de ces éléments :
 
 ![Structure du composant Texte](assets/components-text.png)
 
@@ -443,7 +443,7 @@ La validation du champ dans l’IU Granite et les widgets de l’IU Granite est 
 
 ### Détection de la disponibilité de la boîte de dialogue {#dialog-ready}
 
-Si vous disposez d’un code JavaScript personnalisé qui ne doit être exécuté que lorsque la boîte de dialogue est disponible et prête, vous devez écouter le message `dialog-ready` .
+Si vous disposez d’un JavaScript personnalisé qui ne doit être exécuté que lorsque la boîte de dialogue est disponible et prête, vous devez écouter l’événement `dialog-ready`.
 
 Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prête à l’emploi, soit chaque fois qu’une modification (création ou mise à jour) a lieu dans le DOM de la boîte de dialogue.
 

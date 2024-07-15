@@ -128,7 +128,7 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 >[!NOTE]
 >
-> Lorsque vous utilisez des liens symboliques sous Windows, vous devez exécuter dans une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou avoir le [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilège attribué.
+> Lorsque vous utilisez des liens symboliques sous Windows, vous devez être exécuté dans une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou avoir le privilège [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) attribué.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -166,7 +166,7 @@ mklink wknd.farm ..\available_farms\wknd.farm
 
 >[!NOTE]
 >
-> Lorsque vous utilisez des liens symboliques sous Windows, vous devez exécuter dans une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou avoir le [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilège attribué.
+> Lorsque vous utilisez des liens symboliques sous Windows, vous devez être exécuté dans une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou avoir le privilège [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) attribué.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -399,7 +399,7 @@ En mode flexible, d’autres fichiers peuvent également être inclus, à condit
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-Par exemple, vous pouvez inclure un fichier dans un répertoire créé sous `conf.d/includes` comme suit :
+Par exemple, vous pouvez inclure un fichier dans un répertoire créé sous le répertoire `conf.d/includes` comme suit :
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf
@@ -554,7 +554,7 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apach
 
 ### Injection de variables d’environnement personnalisées {#environment-variables}
 
-Les variables d’environnement personnalisées peuvent être utilisées avec le SDK du Dispatcher en les définissant dans un fichier distinct et en le référençant dans la variable `ENV_FILE` Variable d’environnement avant de démarrer le dispatcher local.
+Les variables d’environnement personnalisées peuvent être utilisées avec le SDK du Dispatcher en les définissant dans un fichier distinct et en le référençant dans la variable d’environnement `ENV_FILE` avant de démarrer le Dispatcher local.
 
 Un fichier contenant des variables d’environnement personnalisées ressemblerait à ceci :
 

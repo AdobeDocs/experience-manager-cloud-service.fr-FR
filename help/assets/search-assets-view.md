@@ -1,5 +1,5 @@
 ---
-title: Découvrez comment rechercher des ressources dans [!DNL Assets view]?
+title: Découvrez comment rechercher et découvrir des ressources dans [!DNL Assets view] ?
 description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. La puissante fonctionnalité de recherche vous permet de découvrir rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
@@ -322,7 +322,7 @@ Les administrateurs et administratrices ont également la possibilité de désac
 
 ### Commentaires sur la recherche contextuelle {#contextual-search-feedback}
 
-Si vous devez fournir des commentaires sur la fonction de recherche contextuelle, cliquez sur ![Icône Recherche contextuelle](assets/do-not-localize/Smock_Help_18_N.svg) et cliquez sur l’icône Commentaires . Sélectionnez le type de commentaire, spécifiez l’objet et la description, puis cliquez sur **[!UICONTROL Soumettre]**.
+Si vous devez fournir des commentaires sur la fonction de recherche contextuelle, cliquez sur ![Icône de recherche contextuelle](assets/do-not-localize/Smock_Help_18_N.svg) et cliquez sur l’icône Commentaires . Sélectionnez le type de commentaire, spécifiez l’objet et la description, puis cliquez sur **[!UICONTROL Soumettre]**.
 
 ![Commentaires sur la recherche contextuelle](assets/contextual-search-feedback.png)
 

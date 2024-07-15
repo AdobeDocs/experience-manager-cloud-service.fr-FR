@@ -30,15 +30,15 @@ La section suivante décrit comment créer une branche pour votre programme dans
 
    ![Image](/help/screens-cloud/assets/onboarding/create-branch1.png)
 
-1. Sélectionnez la variable **Titre** et **Nouveau nom de branche** de la **Création d’une branche et d’un projet** assistant et cliquez sur **Créer**.
+1. Sélectionnez le **Titre** et le **Nouveau nom de branche** dans l’assistant **Créer une branche et un projet** et cliquez sur **Créer**.
 
    ![Image](/help/screens-cloud/assets/onboarding/create-branch2.png)
 
-1. La carte d’appel à l’action s’affiche sur le **Présentation** mettre à jour l’état en tant que création de projet en cours.
+1. La carte d’appel à l’action s’affiche sur la page **Aperçu** de Cloud Manager pour mettre à jour l’état en tant que création de projet en cours.
 
    ![Image](/help/screens-cloud/assets/onboarding/create-branch3.png)
 
-1. Une fois la création du projet terminée, la carte d’appel à l’action est mise à jour dans le **Présentation** page.
+1. Une fois la création du projet terminée, la mise à jour de la carte d’appel à l’action s’affiche sur la page **Aperçu** de Cloud Manager.
 
    ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
 

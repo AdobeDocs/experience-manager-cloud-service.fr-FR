@@ -122,7 +122,7 @@ Les formulaires adaptatifs peuvent ainsi interagir avec les serveurs Microsoft D
 * Demandez des données aux serveurs Microsoft Dynamics 365 et Salesforce et préremplissez des formulaires adaptatifs.
 * Lisez des données à partir des serveurs Microsoft Dynamics 365 et Salesforce.
 
-Vous pouvez obtenir le modèle de données de formulaire (FDM) suivant en installant le [Package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Vous pouvez obtenir le modèle de données de formulaire suivant (FDM) en installant le [module de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
 
 * Microsoft® Dynamics 365
 * Salesforce

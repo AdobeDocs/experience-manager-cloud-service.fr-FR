@@ -15,7 +15,7 @@ ht-degree: 75%
 
 La carte d’activation fournit tout le contenu pertinent qui met en évidence la préparation, les actions spécifiques à entreprendre et une prise en compte approfondie pour garantir une activation fluide et réussie d’AEM as a Cloud Service.
 
-Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet et accéder au **Go Live** , comme illustré dans la figure ci-dessous.
+Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet et accédez à la section **Go Live**, comme illustré dans la figure ci-dessous.
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
@@ -27,7 +27,7 @@ Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet e
 
 Consultez cette section pour explorer la carte d’activité Go Live :
 
-1. Cliquez sur le bouton **Affichage** à partir du bouton **Go Live** carte.
+1. Cliquez sur le bouton **Afficher** de la carte **Go Live** .
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 

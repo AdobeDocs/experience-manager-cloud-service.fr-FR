@@ -46,7 +46,7 @@ Pour épingler une ressource, un dossier ou une collection :
 
 1. Sélectionnez l’élément et cliquez sur **[!UICONTROL Épingler à l’accès rapide]**.
 
-1. Sélectionnez cette option si vous devez épingler l’élément uniquement pour vous, pour l’ensemble de l’organisation ou pour les groupes sélectionnés. Si vous sélectionnez **[!UICONTROL Groupes]**, choisissez des noms de groupe existants dans le **[!UICONTROL Epinglage pour les groupes]** champ .
+1. Sélectionnez cette option si vous devez épingler l’élément uniquement pour vous, pour l’ensemble de l’organisation ou pour les groupes sélectionnés. Si vous sélectionnez **[!UICONTROL Pour les groupes]**, choisissez un nom de groupe existant dans le champ **[!UICONTROL Epinglage pour les groupes]**.
 
    ![Épinglage d’éléments pour les groupes.](assets/pin-items-for-groups.png)
 1. Cliquez sur **[!UICONTROL Épingler]**.
@@ -64,7 +64,7 @@ Vous pouvez également afficher les principaux termes recherchés, ainsi que le 
 
 **Tâches**
 
-Affiche la liste des tâches qui vous sont actuellement affectées dans le **[!UICONTROL Mes tâches]** , créé par vous dans la variable **[!UICONTROL Tâches affectées]** et les tâches déjà effectuées par vous dans la **[!UICONTROL Tâches terminées]** . Vous pouvez sélectionner une tâche et cliquer sur **[!UICONTROL Demande complète]** pour approuver ou rejeter une tâche. Vous pouvez également sélectionner une tâche et cliquer sur **[!UICONTROL Afficher les détails de la tâche]** pour afficher la tâche et l’approuver, la rejeter, la modifier ou la supprimer.
+Affiche la liste des tâches qui vous sont actuellement affectées dans l’onglet **[!UICONTROL Mes tâches]**, que vous avez créé dans l’onglet **[!UICONTROL Tâches affectées]**, ainsi que les tâches que vous avez déjà effectuées dans l’onglet **[!UICONTROL Tâches terminées]**. Vous pouvez sélectionner une tâche et cliquer sur **[!UICONTROL Terminer la tâche]** pour approuver ou rejeter une tâche. Vous pouvez également sélectionner une tâche et cliquer sur **[!UICONTROL Afficher les détails de la tâche]** pour afficher la tâche et l’approuver, la rejeter, la modifier ou la supprimer.
 
 ![Tâches dans l’espace de travail](assets/tasks-workspace.png)
 

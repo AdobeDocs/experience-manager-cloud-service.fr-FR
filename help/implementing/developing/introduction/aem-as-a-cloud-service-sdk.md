@@ -27,7 +27,7 @@ En outre, certains clientes et clients qui ont déjà été déployés avec AEM�
 
 ## Création pour le SDK {#building-for-the-sdk}
 
-Le SDK AEM as a Cloud Service permet de créer et de déployer du code personnalisé. Voir [Documentation AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr). Voici ce qui est réalisé de manière générale :
+Le SDK AEM as a Cloud Service permet de créer et de déployer du code personnalisé. Consultez la [documentation AEM sur l’archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr). Voici ce qui est réalisé de manière générale :
 
 * **Compilation du code**. Comme prévu, le code source est compilé afin de générer les packages de contenu résultants.
 * **Création d’artefacts**. Les artefacts sont créés pendant ce processus.
@@ -38,7 +38,7 @@ Les mêmes opérations sont exécutées par Cloud Manager lors du déploiement v
 
 >[!NOTE]
 >
->Le SDK as a Cloud Service AEM doit être créé avec une distribution et une version de Java prises en charge par [Environnement de création de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEM clients as a Cloud Service peuvent télécharger le JDK d’Oracle à partir du [Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr) et avoir la prise en charge étendue de Java 11 jusqu’en septembre 2026 en raison des conditions de licence et de prise en charge d’Adobe pour la technologie Java d’Oracle lorsqu’elle est utilisée dans des projets Adobe Experience Manager.
+>Le SDK AEM as a Cloud Service doit être créé avec une distribution et une version de Java prises en charge par [l’environnement de génération Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Les clients AEM as a Cloud Service peuvent télécharger le JDK d’Oracle à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr) et bénéficier d’une prise en charge étendue de Java 11 jusqu’en septembre 2026 en raison des conditions d’octroi de licence et de prise en charge de la technologie Java d’Oracle lorsqu’elle est utilisée dans des projets Adobe Experience Manager.
 
 ## Accès au SDK d’AEM as a Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 

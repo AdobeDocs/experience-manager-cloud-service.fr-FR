@@ -35,7 +35,7 @@ Une révision est un mécanisme qui permet à un ou plusieurs réviseurs ou rév
    * **Titre** (obligatoire) : il peut contenir des caractères alphanumériques, des tirets et des traits de soulignement.
    * **Description** (factultative) : description de la finalité ou du contenu de la révision.
    * **Échéance** (facultative) : date de fin de la révision. Une fois l’échéance passée, la tâche est indiquée comme étant « En retard ».
-   * **Nom du réviseur ou de la réviseuse** : au moins un nom doit être indiqué. Utilisez la zone liste déroulante pour ajouter des réviseurs ou réviseuses, en saisissant une liste de tous les noms correspondants. Sélectionnez un nom, puis cliquez sur **Ajouter**. Dans la section suivante du **Réviseurs** affiche le nom de tous les réviseurs.
+   * **Nom du réviseur ou de la réviseuse** : au moins un nom doit être indiqué. Utilisez la zone liste déroulante pour ajouter des réviseurs ou réviseuses, en saisissant une liste de tous les noms correspondants. Sélectionnez un nom, puis cliquez sur **Ajouter**. Dans la section suivante de l’onglet **Réviseurs**, les noms de tous les réviseurs s’affichent.
 
 1. Cliquez sur **Démarrer** pour lancer une révision.
 

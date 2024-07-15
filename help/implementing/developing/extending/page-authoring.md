@@ -13,7 +13,7 @@ ht-degree: 54%
 
 # Personnaliser la création de pages {#customizing-page-authoring}
 
-Adobe Experience Manager as a Cloud Service fournit des mécanismes permettant de personnaliser la fonctionnalité de création de pages (et la fonction [consoles](/help/implementing/developing/extending/consoles.md)) de votre instance de création.
+Adobe Experience Manager as a Cloud Service fournit des mécanismes permettant de personnaliser la fonctionnalité de création de pages (et les [consoles](/help/implementing/developing/extending/consoles.md)) de votre instance de création.
 
 ## Clientlibs {#clientlibs}
 
@@ -22,19 +22,19 @@ Les bibliothèques côté client vous permettent d’étendre l’implémentatio
 Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` La nouvelle bibliothèque cliente doit :
 
 * Dépend de la bibliothèque cliente de création `cq.authoring.editor.sites.page`.
-* Faites partie des `cq.authoring.editor.sites.page.hook` catégorie.
+* Faites partie de la catégorie `cq.authoring.editor.sites.page.hook` appropriée.
 
-Voir [Utilisation des bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
+Voir [Utilisation de bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Recouvrements {#overlays}
 
 Les superpositions sont basées sur des définitions de noeud et vous permettent de superposer la fonctionnalité standard dans `/libs` avec votre propre fonctionnalité personnalisée dans `/apps`.
 
-Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car la fonction [fusion de ressources sling](/help/implementing/developing/introduction/sling-resource-merger.md) autorise l’héritage.
+Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car [sling resource merge](/help/implementing/developing/introduction/sling-resource-merger.md) permet l’héritage.
 
-Pour plus d’informations, voir [Jeu de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=fr).
+Pour plus d’informations, voir le [ensemble de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=fr).
 
-Pour plus d’informations sur les superpositions, voir [Recouvrements pour Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
+Pour plus d’informations sur les incrustations, voir [Recouvrements pour Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Ajouter un nouveau calque (mode) {#add-new-layer-mode}
 
@@ -44,7 +44,7 @@ Lorsque vous modifiez une page, plusieurs [modes](/help/sites-cloud/authoring/pa
 
 Une instance AEM standard fournit la couche MSM. Cela permet d’accéder aux données relatives à la [gestion multisite](/help/sites-cloud/administering/msm/overview.md) et de les mettre en évidence dans le calque.
 
-Pour l’afficher en action, vous pouvez modifier n’importe quelle copie de langue dans le [Exemple de contenu WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et sélectionnez la variable **État de Live Copy** mode .
+Pour l’afficher en action, vous pouvez modifier n’importe quelle copie de langue dans l’ [exemple de contenu WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et sélectionner le mode **État de Live Copy** .
 
 Vous trouverez la définition du calque MSM (pour référence) à l’emplacement suivant :
 
@@ -70,12 +70,12 @@ Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Mark
 
 Lors de la création de pages, l’utilisateur doit souvent effectuer une sélection dans les ressources d’une liste.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Par exemple, si la variable `pathbrowser` Le composant Granite permet à l’utilisateur de sélectionner le chemin d’accès à une ressource particulière. Les chemins présentés peuvent être filtrés comme suit :
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Par exemple, si le composant Granite `pathbrowser` est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource particulière, les chemins d’accès présentés peuvent être filtrés comme suit :
 
 * Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Spécifiez un nom pour le prédicat et faites-y référence lors de l’utilisation de `pathbrowser`.
 
-Pour plus d’informations sur la création d’un prédicat personnalisé, voir [cet article.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+Pour plus d&#39;informations sur la création d&#39;un prédicat personnalisé, consultez [cet article.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
 
 ## Ajouter une nouvelle action à une barre d’outils de composant {#add-new-action-to-a-component-toolbar}
 
@@ -108,7 +108,7 @@ Dans une installation AEM standard :
 
            Définit le type d’éditeur en ligne utilisé lorsqu’une édition statique est déclenchée pour ce composant ; par exemple, `text`, `textimage`, `image`, `title`.
 
-1. Vous pouvez configurer d’autres détails de configuration de l’éditeur à l’aide d’un `config` noeud contenant des configurations et un `plugin` pour contenir les détails de configuration du module externe nécessaires.
+1. Des détails de configuration supplémentaires de l’éditeur peuvent être configurés à l’aide d’un noeud `config` contenant des configurations et d’un noeud `plugin` contenant les détails de configuration de module externe nécessaires.
 
 
 Voici un exemple de définition des proportions pour le module externe de recadrage d’image du composant image.
@@ -178,9 +178,9 @@ Le workflow d’usine, **Demande d’activation** :
 
 Pour bénéficier d’un comportement personnalisé lors d’une telle activation, vous pouvez incruster le workflow **Demande d’activation** :
 
-1. Dans `/apps` recouvrez la propriété **Sites** assistant `/libs/wcm/core/content/common/managepublicationwizard`
+1. Dans `/apps`, superposez l&#39;assistant **Sites** `/libs/wcm/core/content/common/managepublicationwizard`
 
    * Cette opération remplace l’instance commune de `/libs/cq/gui/content/common/managepublicationwizard`.
 
 1. Mettez à jour le modèle de workflow et les configurations/scripts associés selon les besoins.
-1. Retirer le droit au `replicate` action de tous les utilisateurs appropriés pour toutes les pages pertinentes. Pour que ce workflow soit déclenché comme action par défaut lorsque l’un des utilisateurs est concerné, essayez de publier (ou de répliquer) une page.
+1. Supprimez le droit à l’action `replicate` de tous les utilisateurs appropriés pour toutes les pages pertinentes. Pour que ce workflow soit déclenché comme action par défaut lorsque l’un des utilisateurs est concerné, essayez de publier (ou de répliquer) une page.

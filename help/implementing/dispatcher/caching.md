@@ -101,7 +101,7 @@ Dans les deux cas, les en-têtes de mise en cache peuvent être remplacés à un
 
 Lorsque vous modifiez les en-têtes de mise en cache sur la couche du Dispatcher, veillez à ne pas créer un cache trop important. Consultez la discussion dans la section HTML/texte [ci-dessus](#html-text). Assurez-vous également que les ressources destinées à être conservées en privé (plutôt que mises en cache) ne font pas partie des filtres de directive `LocationMatch`.
 
-Les ressources JCR (plus de 16 Ko) stockées dans la banque d’objets Blob sont généralement diffusées sous la forme de redirections 302 par AEM. Ces redirections sont interceptées et suivies par le réseau de diffusion de contenu et le contenu est diffusé directement à partir de la banque d’objets blob. Seul un ensemble limité d’en-têtes peut être personnalisé sur ces réponses. Par exemple, pour personnaliser `Content-Disposition` vous devez utiliser les directives dispatcher comme suit :
+Les ressources JCR (plus de 16 Ko) stockées dans la banque d’objets Blob sont généralement diffusées sous la forme de redirections 302 par AEM. Ces redirections sont interceptées et suivies par le réseau de diffusion de contenu et le contenu est diffusé directement à partir de la banque d’objets blob. Seul un ensemble limité d’en-têtes peut être personnalisé sur ces réponses. Par exemple, pour personnaliser `Content-Disposition`, vous devez utiliser les directives Dispatcher comme suit :
 
 ```
 <LocationMatch "\.(?i:pdf)$">
@@ -227,7 +227,7 @@ Actuellement, les images dans l’espace de stockage blob marquées comme privé
 
 ### Analyse du ratio d’accès au cache du réseau CDN {#analyze-chr}
 
-Voir [tutoriel sur l’analyse du taux d’accès au cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) pour plus d’informations sur le téléchargement des journaux CDN et l’analyse du taux d’accès au cache de votre site, à l’aide d’un tableau de bord.
+Pour plus d’informations sur le téléchargement des journaux CDN et l’analyse du taux d’accès au cache de votre site à l’aide d’un tableau de bord, consultez le [tutoriel d’analyse du taux d’accès au cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) .
 
 ### Comportement de la requête HEAD {#request-behavior}
 
@@ -245,12 +245,12 @@ Pour les environnements créés en octobre 2023 ou version ultérieure, afin de 
 
 Envoyez un ticket d’assistance si vous souhaitez que ce comportement soit désactivé.
 
-Pour les environnements créés avant octobre 2023, il est recommandé de configurer le `ignoreUrlParams` property as [documenté ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
+Pour les environnements créés avant octobre 2023, il est recommandé de configurer la propriété `ignoreUrlParams` de la configuration Dispatcher comme [documentée ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
 
 Il existe deux possibilités d&#39;ignorer les paramètres marketing. (Où la première est préférée pour ignorer le cache via les paramètres de requête) :
 
 1. Ignorez tous les paramètres et autorisez de manière sélective les paramètres utilisés.
-Dans l’exemple suivant uniquement `page` et `product` Les paramètres ne sont pas ignorés et les requêtes sont transférées à l’éditeur.
+Dans l’exemple suivant, seuls les paramètres `page` et `product` ne sont pas ignorés et les requêtes sont transférées à l’éditeur.
 
 ```
 /ignoreUrlParams {
@@ -260,7 +260,7 @@ Dans l’exemple suivant uniquement `page` et `product` Les paramètres ne sont 
 }
 ```
 
-1. Autoriser tous les paramètres à l&#39;exception des paramètres marketing. Le fichier [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) définit une liste des paramètres marketing couramment utilisés qui seront ignorés. Adobe ne mettra pas à jour ce fichier. Il peut être étendu par les utilisateurs en fonction de leurs fournisseurs marketing.
+1. Autoriser tous les paramètres à l&#39;exception des paramètres marketing. Le fichier [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) définit une liste de paramètres marketing couramment utilisés qui seront ignorés. Adobe ne mettra pas à jour ce fichier. Il peut être étendu par les utilisateurs en fonction de leurs fournisseurs marketing.
 
 ```
 /ignoreUrlParams {
@@ -279,7 +279,7 @@ En général, il n’est pas nécessaire d’invalider le cache du Dispatcher. V
 Comme les versions précédentes d’AEM, la publication ou la dépublication des pages efface le contenu du cache du Dispatcher. Si un problème de mise en cache est suspecté, vous devez republier les pages en question et vous assurer qu’un hôte virtuel correspond à l’hôte local `ServerAlias`, ce qui est obligatoire pour l’invalidation du cache du Dispatcher.
 
 >[!NOTE]
->Pour une invalidation correcte de Dispatcher, assurez-vous que les requêtes de &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; et &quot;\*.adobeaemcloud.net&quot; sont toutes mises en correspondance et gérées par une configuration vhost afin que la requête puisse être traitée. Vous pouvez effectuer cette tâche par correspondance globale « * » dans une configuration vhost générale, suivant le modèle de l’[archétype AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) de référence. Vous pouvez également vous assurer que la liste mentionnée précédemment est capturée par l’un des hôtes virtuels.
+>Pour une invalidation Dispatcher correcte, assurez-vous que les requêtes de &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; et &quot;\*.adobeaemcloud.net&quot; sont toutes mises en correspondance et gérées par une configuration vhost afin que la requête puisse être traitée. Vous pouvez effectuer cette tâche par correspondance globale « * » dans une configuration vhost générale, suivant le modèle de l’[archétype AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) de référence. Vous pouvez également vous assurer que la liste mentionnée précédemment est capturée par l’un des hôtes virtuels.
 
 Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur ou de l’autrice, elle utilise l’agent de vidage pour invalider les chemins d’accès appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache du Dispatcher, ainsi que ses parents, jusqu’à un certain niveau (que vous pouvez configurer à l’aide de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#invalidating-files-by-folder-level)).
 

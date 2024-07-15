@@ -152,7 +152,7 @@ Une fois le paramètre régional identifié, le formulaire adaptatif sélectionn
 
 En l’absence d’informations de paramètres régionaux, le formulaire adaptatif est distribué dans la langue d’origine du formulaire. La langue d’origine est la langue utilisée lors du développement du formulaire adaptatif.
 
-Obtenir un [exemple de bibliothèque cliente](/help/forms/assets/locale-support-sample.zip) pour ajouter la prise en charge des nouveaux paramètres régionaux. Vous devez modifier le contenu du dossier dans le paramètre régional requis.
+Procurez-vous un [exemple de bibliothèque cliente](/help/forms/assets/locale-support-sample.zip) pour ajouter la prise en charge de nouveaux paramètres régionaux. Vous devez modifier le contenu du dossier dans le paramètre régional requis.
 
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 

@@ -26,7 +26,7 @@ L’interface utilisateur de Cloud Manager vous permet d’ajouter un domaine pe
 
 ## Que sont les noms de domaine personnalisés ? {#what-are-custom-domain-names}
 
-Chaque site web est associé à une adresse numérique unique, lisible par ordinateur, telle que `184.33.123.64`. Le système de noms de domaine (DNS) permet d’associer des domaines personnalisés de marque à des sites web en traduisant des adresses numériques en adresses mémorables, telles que `wknd.com`.
+Chaque site web est associé à une adresse numérique unique, lisible par ordinateur, telle que `184.33.123.64`. Le système de noms de domaine (DNS) est ce qui vous permet d’associer des domaines personnalisés et de marque à des sites web en traduisant des adresses numériques en adresses mémorables telles que `wknd.com`.
 
 Il est recommandé d’attribuer à votre site un nom de domaine qui soit mémorisable pour vos clients et qui reflète votre marque.
 

@@ -1,6 +1,6 @@
 ---
 title: Ajout d’un module complémentaire Screens à un nouveau programme dans Cloud Manager
-description: Découvrez comment ajouter un module complémentaire Screens à un nouveau programme dans Cloud Manager for Screens as a Cloud Service.
+description: Découvrez comment ajouter un module complémentaire Screens à un nouveau programme dans Cloud Manager pour Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
 feature: Screens Deployments
 role: Admin, Developer, User
@@ -31,7 +31,7 @@ Pour ajouter Screens en tant que module complémentaire à un nouveau programme 
    >[!NOTE]
    >Pour en savoir plus sur Cloud Manager, voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=fr).
 
-1. Cliquez sur **Ajout d’un programme** à partir de la page d’entrée de Cloud Manager.
+1. Cliquez sur **Ajouter le programme** sur la page d’entrée Cloud Manager.
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon1.png)
 
@@ -39,14 +39,14 @@ Pour ajouter Screens en tant que module complémentaire à un nouveau programme 
 
    ![Image](/help/screens-cloud/assets/onboarding/onboard-screens-addon2.png)
 
-1. Sélectionner **Screens** sous la forme d’un module complémentaire de la fonction **Configuration pour la production** à partir de cette étape de l’assistant, cliquez sur **Créer**.
+1. Sélectionnez **Screens** comme module complémentaire dans l’écran **Configurer pour production** de cette étape de l’assistant et cliquez sur **Créer**.
 
    ![Image](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
 
-1. Une fois la configuration de création de votre programme terminée, vous pouvez voir votre programme Cloud Manager. Par exemple, la variable **Programme de démonstration ScreensCloud**, comme illustré dans la figure ci-dessous, avec Screens comme module complémentaire dans votre programme.
+1. Une fois la configuration de création de votre programme terminée, vous pouvez voir votre programme Cloud Manager. Par exemple, le **programme de démonstration ScreensCloud**, comme illustré dans la figure ci-dessous, avec Screens comme module complémentaire dans votre programme.
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
 ## Prochaines étapes {#whats-next}
 
-Lorsque vous avez appris à ajouter Screens en tant que module complémentaire à un programme Cloud Manager existant et que votre programme s’affiche sous Programmes et produits de Cloud Manager, vous êtes prêt à passer à l’étape suivante. L’étape suivante du processus d’intégration est la suivante : [Création d’une branche pour votre projet dans Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Lorsque vous avez appris à ajouter Screens en tant que module complémentaire à un programme Cloud Manager existant et que votre programme s’affiche sous Programmes et produits Cloud Manager, vous êtes prêt à passer à l’étape suivante. L’étape suivante du processus d’intégration est [Création d’une branche pour votre projet dans Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

@@ -28,19 +28,19 @@ La version suivante (2021.1.0) est le 28 janvier 2021.
 
 * L’intégration à [!DNL Adobe InDesign Server] est désormais disponible pour [!DNL Experience Manager] as a [!DNL Cloud Service]. Il permet l’automatisation du traitement des fichiers [!DNL Adobe InDesign] à l’aide de scripts [!DNL Adobe InDesign Server] et aux utilisateurs d’utiliser l’interface utilisateur des modèles [!DNL Assets] pour créer des brochures ou des publicités. Seul [!DNL InDesign Server] hébergé par [!DNL Adobe Managed Services] est pris en charge pour [!DNL Experience Manager as a Cloud Service]. <!-- TBD: Add link to article. -->
 
-* [!DNL Experience Manager] a été amélioré pour suivre et afficher les références de ressources lorsqu’une ressource est utilisée dans un déploiement [!DNL Experience Manager Sites] distant à l’aide de la fonctionnalité Ressources connectées. Une nouvelle [!UICONTROL Références] dans le [!UICONTROL Propriétés] répertorie désormais les références locales et distantes de la ressource. Les références permettent aux utilisateurs DAM de suivre l’utilisation des ressources dans les pages [!DNL Sites] et dans les ressources composées dans [!DNL Assets]. Voir [Configuration et utilisation des ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md).
+* [!DNL Experience Manager] a été amélioré pour suivre et afficher les références de ressources lorsqu’une ressource est utilisée dans un déploiement [!DNL Experience Manager Sites] distant à l’aide de la fonctionnalité Ressources connectées. Un nouvel onglet [!UICONTROL Références] de la page [!UICONTROL Propriétés] de la ressource répertorie désormais les références locales et distantes de la ressource. Les références permettent aux utilisateurs DAM de suivre l’utilisation des ressources dans les pages [!DNL Sites] et dans les ressources composées dans [!DNL Assets]. Voir [Configuration et utilisation des ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* [!DNL Dynamic Media] Les fonctionnalités sont désormais accessibles par AEM [!DNL Sites] composants principaux basés sur des images. Les auteurs peuvent configurer rapidement les composants pour qu’ils utilisent les paramètres d’image prédéfinis, les options de recadrage dynamique et les modificateurs d’image lors de la création de pages web. Voir [Version 2.13.0 des composants de base](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
+* Les fonctionnalités [!DNL Dynamic Media] sont désormais accessibles par le biais AEM [!DNL Sites] composants principaux basés sur les images. Les auteurs peuvent configurer rapidement les composants pour qu’ils utilisent les paramètres d’image prédéfinis, les options de recadrage dynamique et les modificateurs d’image lors de la création de pages web. Voir [Version 2.13.0 des composants de base](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* La variable [!DNL Experience Manager] L’appli de bureau permet aux utilisateurs de charger des fichiers et des dossiers en les faisant glisser depuis l’Explorateur Windows ou le Finder Mac sur l’interface de l’appli de bureau. Voir [ajout de ressources à l’aide de l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem).
+* L’appli de bureau [!DNL Experience Manager] permet aux utilisateurs de charger des fichiers et des dossiers en faisant glisser les fichiers depuis l’Explorateur Windows ou le Finder Mac sur l’interface de l’appli de bureau. Voir [Ajout de ressources à l’aide de l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Publication CIF site de référence Venia - 2020.12.01 qui comprend la dernière version de CIF Core Components v1.6.0. Voir [Site de référence Venia CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) pour plus d’informations.
+* Publication CIF site de référence Venia - 2020.12.01 qui comprend la dernière version de CIF Core Components v1.6.0. Pour plus d’informations, voir [CIF site de référence Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) .
 
-* Publication CIF composants principaux v1.6.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) pour plus d’informations.
+* Publication CIF composants principaux v1.6.0. Pour plus d’informations, voir [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) .
 
 ## Cloud Manager {#cloud-manager}
 
@@ -54,27 +54,27 @@ La date de publication de Cloud Manager dans Adobe Experience Manager (AEM) as a
 
 * Gestion en libre-service des [listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-* La mise à jour **Environnement** La page détails permet désormais aux utilisateurs de gérer les noms de domaine personnalisés et les Listes autorisées IP dans leurs environnements.
+* La page de détails **Environnement** mise à jour permet désormais aux utilisateurs de gérer les noms de domaine personnalisés et les Listes autorisées IP dans leurs environnements.
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
 * Certaines occurrences d’échecs au stade de l’analyse du code sans fournir de résultats sont corrigées.
 
-* La carte Environnement n’affichait pas de manière cohérente la variable **Ajouter** bouton .
+* La carte d’environnement n’affichait pas systématiquement le bouton **Ajouter** .
 
 ## Outils de refactorisation du code {#code-refactoring-tools}
 
 ### Nouveautés d’[!DNL Code Refactoring Tools]  {#what-is-new-crt}
 
-* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in inclut des correctifs pour le convertisseur du Dispatcher AEM et Repository Modernizer et prend également en charge un nouvel utilitaire : le convertisseur d’index. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) où vous pouvez en savoir plus sur ce module externe.
+* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in inclut des correctifs pour le convertisseur Dispatcher d’AEM et Repository Modernizer et prend également en charge un nouvel utilitaire, le convertisseur d’index. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) où vous pouvez en savoir plus sur ce module externe.
 
-* Le convertisseur d’index est un utilitaire qui permet de transformer les définitions d’index Oak personnalisées d’un client en définitions d’index Oak compatibles as a Cloud Service AEM. Voir [Convertisseur d’index](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) pour plus d’informations.
+* Le convertisseur d’index est un utilitaire qui permet de transformer les définitions d’index Oak personnalisées d’un client en définitions d’index Oak compatibles avec AEM as a Cloud Service. Pour plus d’informations, voir [Convertisseur d’index](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) .
 
 * Nouvelle fonctionnalité ajoutée à [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) qui crée un package distinct `ui.config` contenant toutes les configurations OSGi.
 
 ### Correctifs {#crt-bug-fixes}
 
-* Plusieurs correctifs ont été apportés aux outils Dispatcher Converter et Repository Modernizer d’AEM. Voir [Convertisseur du Dispatcher AEM](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) et [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Plusieurs correctifs ont été apportés aux outils Dispatcher Converter et Repository Modernizer d’AEM. Voir [Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) et [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ### Date de publication {#release-date-ctt}
 
@@ -88,4 +88,4 @@ La date de publication de l’outil de transfert de contenu version v1.1.20 est
 
 * Le statut de l’interface utilisateur de l’outil de transfert de contenu (CTT) pour un jeu de migration n’était pas conservé et modifié après une période d’inactivité. Ce problème a été résolu.
 * L’option d’affichage des journaux était désactivée si les journaux n’étaient pas disponibles. Ce problème a été corrigé et des messages ont été ajoutés pour informer les utilisateurs de l’absence de logs.
-* L’état de l’interface utilisateur de l’outil de transfert de contenu *ÉCHEC* lorsque l’utilisateur a arrêté une ingestion. Ce problème a été corrigé pour afficher à la place *STOPPED*.
+* L’état de l’interface utilisateur de l’outil de transfert de contenu affichait *FAILED* lorsque l’utilisateur arrêtait une ingestion. Ce problème a été corrigé pour afficher à la place *STOPPED*.

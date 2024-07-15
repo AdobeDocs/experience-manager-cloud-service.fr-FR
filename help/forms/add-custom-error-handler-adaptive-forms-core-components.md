@@ -67,7 +67,7 @@ Le code ci-dessous illustre la structure de réponse d’échec existante :
 Où :
 
 * `errorCausedBy` décrit le motif de l’échec.
-* `errors` mentionnez l’expression des champs qui ont échoué aux critères de validation avec le message d’erreur de validation.
+* `errors` mentionnent l’expression des champs qui ont échoué aux critères de validation avec le message d’erreur de validation.
 * Champ `originCode` ajouté par AEM et contenant le code d’état http renvoyé par le service externe.
 * Champ `originMessage` ajouté par AEM et contenant les données d’erreur brutes renvoyées par le service externe.
 
@@ -170,9 +170,9 @@ Vous pouvez afficher la valeur de dataRef dans la fenêtre **[!UICONTROL Propri�
 
 Avant d’ajouter un gestionnaire d’erreurs à l’aide du service Invoke de l’éditeur de règles :
 
-* [Activation des composants principaux Forms adaptatifs pour votre environnement AEM Cloud Service](enable-adaptive-forms-core-components.md).
+* [Activez les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service](enable-adaptive-forms-core-components.md).
 
-* Découvrez comment [création de fonctions personnalisées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=fr#write-rules).
+* Découvrez comment [créer des fonctions personnalisées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=fr#write-rules).
 
 
 ## Ajouter un gestionnaire d’erreurs à l’aide de l’éditeur de règles {#add-error-handler-using-rule-editor}
@@ -233,11 +233,11 @@ Pour créer une fonction d’erreur personnalisée, procédez comme suit :
 Pour créer une fonction de gestionnaire d’erreur personnalisée, procédez comme suit :
 
 1. [Clonez votre référentiel AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git).
-1. Créez un dossier sous le dossier `[AEM Forms as a Cloud Service repository folder]/apps/`. Par exemple, créez un dossier nommé comme `experience-league`
-1. Accédez à `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` et créez un `ClientLibraryFolder` as `clientlibs`.
+1. Créez un dossier sous le dossier `[AEM Forms as a Cloud Service repository folder]/apps/`. Par exemple, créez un dossier nommé `experience-league`.
+1. Accédez à `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` et créez un `ClientLibraryFolder` en tant que `clientlibs`.
 1. Créez un dossier nommé `js`.
 1. Accédez au dossier `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
-1. Ajoutez un fichier JavaScript, par exemple : `function.js`. Le fichier comprend le code du gestionnaire d’erreurs personnalisé.
+1. Ajoutez un fichier JavaScript, par exemple `function.js`. Le fichier comprend le code du gestionnaire d’erreurs personnalisé.
 Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les en-têtes, reçus du point d’entrée du service REST, dans la console du navigateur.
 
    ```javascript
@@ -256,11 +256,11 @@ Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les 
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
-   Dans le code ci-dessus, `return true` appelle automatiquement le gestionnaire d’erreurs par défaut. Pour empêcher l’appel du gestionnaire d’erreur par défaut, incluez `return false`.
+   Dans le code ci-dessus, `return true` appelle automatiquement le gestionnaire d’erreurs par défaut. Pour empêcher l’appel du gestionnaire d’erreurs par défaut, incluez `return false`.
 
    >[!NOTE]
    >
-   > Dans le `.content.xml` fichier, ajouter `categories = [custom-errorhandler-name]`. Par exemple, dans ce cas : [custom-errorhandler-name] est fourni en tant que `customfunctionsdemoV2`.
+   > Dans le fichier `.content.xml`, ajoutez `categories = [custom-errorhandler-name]`. Par exemple, dans ce cas, [custom-errorhandler-name] est fourni comme `customfunctionsdemoV2`.
 
 
 1. Enregistrez le fichier `function.js`.
@@ -311,7 +311,7 @@ Pour utiliser un gestionnaire d’erreurs personnalisé à l’aide de l’actio
 1. Sélectionnez **[!UICONTROL Gestionnaire d’erreurs personnalisé]** dans la section **[!UICONTROL Gestionnaire d’erreurs]**.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
-![ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire pour gérer les réponses d’erreur](/help/forms/assets/custom-error-handler.png)s
+![ ajoutez un gestionnaire d&#39;erreur personnalisé dans un formulaire pour gérer les réponses d&#39;erreur](/help/forms/assets/custom-error-handler.png)s
 
 
 À la suite de cette règle, les valeurs que vous saisissez pour **Identifiant de l’animal domestique** vérifient la validation du **Nom de l’animal domestique** à l’aide du service externe appelé par le point d&#39;entrée REST. Si les critères de validation basés sur la source de données échouent, les messages d’erreur s’affichent au niveau du champ.

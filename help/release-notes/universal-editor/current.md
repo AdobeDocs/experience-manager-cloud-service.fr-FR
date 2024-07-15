@@ -17,22 +17,22 @@ Il s’agit des notes de mise à jour de la version d’Universal Editor du 28 j
 
 >[!TIP]
 >
->Pour consulter les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, voir [cette page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>Pour consulter les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, reportez-vous à [cette page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Nouveautés {#what-is-new}
 
-* **Accueil**: les pages récentes s’affichent sous forme de liste, sans prévisualisation d’images.
-* **Barre d’emplacement**: ajout d’une validation d’URL améliorée, application des URL HTTPS et prise en charge des hachages dans les URL pour prendre en compte les applications orientées hachage.
-* **Navigation au clavier**: la sélection de superposition de page a été découplée de la sélection du rail de propriétés afin d’améliorer la navigation au clavier sur la page sans perdre la sélection.
-* **Étiquettes d’éléments**: la valeur de secours pour les étiquettes utilise désormais `data-aue-prop` au lieu de `data-aue-type` pour une identification plus claire dans les superpositions et dans l’arborescence de contenu.
-* **Modèle d’éditeur de texte enrichi**: A **Annuler** a été ajouté au modal de l’éditeur de texte enrichi lors de son ouverture à partir du panneau des propriétés.
-* **Service UE sur le noeud**: la prise en charge HTTP du service Universal Editor a été réintroduite, car toutes les connexions HTTPS sont interrompues au niveau de Dispatcher.
-* **API de copie interne**: ajout d’une API au service d’éditeur universel pour copier les composants, ce qui permettra l’introduction ultérieure des options de la barre d’outils pour copier et dupliquer le contenu.
+* **Accueil** : les pages récentes s’affichent sous forme de liste, sans prévisualisation d’images.
+* **Barre d’emplacement** : ajout d’une validation d’URL améliorée, application des URL HTTPS et prise en charge des hachages dans les URL pour prendre en compte les applications routées par le hachage.
+* **Navigation au clavier** : la sélection de superposition de page a été découplée de la mise au point du rail des propriétés afin d’améliorer la navigation au clavier sur la page sans perdre la mise au point.
+* **Étiquettes d’éléments** : la valeur de secours pour les étiquettes utilise désormais `data-aue-prop` au lieu de `data-aue-type` pour une identification plus claire dans les superpositions et dans l’arborescence de contenu.
+* **Modèle RTE** : un bouton **Annuler** a été ajouté à la fenêtre modale de l’éditeur de texte enrichi lors de son ouverture à partir du panneau des propriétés.
+* **Service UE sur le noeud** : la prise en charge HTTP du service Universal Editor a été réintroduite, car toutes les connexions HTTPS sont interrompues au niveau de Dispatcher.
+* **API de copie interne** : ajout d’une API au service d’éditeur universel pour copier les composants, ce qui permettra l’introduction future des options de la barre d’outils pour copier et dupliquer le contenu.
 
 ## Correctifs {#bug-fixes}
 
-* **Chemin de navigation du panneau Propriétés**: le menu de chemin de navigation du panneau des propriétés pour les éléments imbriqués profondément, qui ne restaient pas ouverts, a été corrigé.
-* **Sélecteur de fragment de contenu**: le sélecteur de fragment de contenu a été amélioré afin de s’assurer qu’il respecte les règles définies dans le modèle de fragment de contenu ou dans la variable `data-aue-filter`.
-* **Insertion de composants**: correction de la liste pour insérer de nouveaux composants qui ne se mettaient pas à jour correctement après avoir accédé à une autre page.
-* **État de publication**: la gestion des états de publication a été améliorée afin de fonctionner de manière plus cohérente.
-* **Correctifs divers**: cette version contient également divers correctifs mineurs, le nettoyage de la dette des technologies, des améliorations de sécurité et des tests consolidés pour garantir la stabilité et les performances globales.
+* **Chemin de navigation du panneau Propriétés** : le menu du chemin de navigation du panneau Propriétés pour les éléments imbriqués profondément, qui ne restaient pas ouverts, a été corrigé.
+* **Sélecteur de fragment de contenu** : le sélecteur de fragment de contenu a été amélioré afin de s’assurer qu’il respecte les règles définies dans le modèle de fragment de contenu ou dans le `data-aue-filter`.
+* **Insertion de composants** : correction de la liste permettant d’insérer de nouveaux composants qui n’étaient pas mis à jour avec précision après avoir accédé à une autre page.
+* **État de publication** : la gestion des états de publication a été améliorée afin de fonctionner de manière plus cohérente.
+* **Correctifs divers** : cette version contient également divers correctifs mineurs, nettoyage de la dette technique, améliorations de sécurité et tests consolidés pour une stabilité et des performances globales.

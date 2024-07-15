@@ -8,15 +8,15 @@ exl-id: 34541302-6610-4f5e-af93-c95328dda910
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '4492'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
 # Bannières de carrousel{#carousel-banners}
 
-Les bannières de carrousel permettent aux marketeurs de générer des conversions en créant facilement du contenu promotionnel interactif et tournant et en le diffusant sur n’importe quel écran.
+Les bannières de carrousel permettent aux spécialistes du marketing de générer des interactions en créant facilement du contenu promotionnel interactif et rotatif et en le diffusant sur n&#39;importe quel écran.
 
-La création et la modification de contenu figurant dans les bannières promotionnelles peuvent prendre du temps, ce qui limite votre capacité à publier rapidement un nouveau contenu ou à le cibler davantage. Les bannières de carrousel vous permettent de créer ou de modifier rapidement des bannières rotatives et d’ajouter des éléments interactifs, tels que des liens de zones réactives vers les détails du produit ou les ressources connexes. Vous pouvez les diffuser sur n’importe quel écran, ce qui vous permet de diffuser plus rapidement du contenu promotionnel sur le marché.
+La création et la modification du contenu présenté dans les bannières promotionnelles peuvent prendre beaucoup de temps, limitant votre capacité à publier rapidement du nouveau contenu ou à le rendre plus ciblé. Les bannières de carrousel vous permettent de créer ou de modifier rapidement des bannières rotatives et d’ajouter des éléments interactifs, tels que des liens de zones réactives vers les détails du produit ou les ressources connexes. Vous pouvez les diffuser sur n’importe quel écran, ce qui vous permet de diffuser plus rapidement du contenu promotionnel sur le marché.
 
 Les bannières de carrousel sont signalées par une bannière contenant le mot **[!UICONTROL CAROUSELSET]** :
 
@@ -75,17 +75,17 @@ Pour démarrer rapidement :
 
 1. [Ajoutez des zones réactives ou cliquables dans une bannière d’image](#adding-hotspots-or-image-maps-to-an-image-banner).
 
-   Ajoutez une ou plusieurs zones réactives ou zones cliquables sur une bannière d’images. Ensuite, associez chacun d’entre eux à une action telle qu’un lien, un aperçu rapide ou un fragment d’expérience. Une fois que vous avez ajouté des zones réactives ou des zones cliquables, vous terminez cette tâche en publiant l’ensemble de carrousel. La publication crée le code incorporé que vous pouvez utiliser pour copier et appliquer à la page d’entrée de votre site web.
+   Ajoutez une ou plusieurs zones réactives ou zones cliquables sur une bannière d’images. Ensuite, associez chacun d’entre eux à une action telle qu’un lien, un aperçu rapide ou un fragment d’expérience. Après avoir ajouté des zones réactives ou cliquables, terminez cette tâche en publiant l&#39;ensemble de carrousel. La publication crée le code intégré que vous pouvez copier et appliquer à la fin dans la page de destination de votre site web.
 
    Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners). Si vous le souhaitez, vous pouvez afficher une représentation de l’ensemble de carrousel et tester son interactivité.
 
 1. [Publiez les bannières de carrousel](#publishing-carousel-banners).
 
-   Vous publiez un ensemble de carrousel comme vous le feriez pour d’autres ressources. Dans Ressources, accédez à l’ensemble de carrousel, sélectionnez-le et sélectionnez **[!UICONTROL Publier]**. La publication d’un ensemble de carrousel active la chaîne URL et d’incorporation.
+   Vous publiez un ensemble de carrousel comme vous le feriez pour d’autres ressources. Dans Ressources, accédez à l’ensemble de carrousel, sélectionnez-le et sélectionnez **[!UICONTROL Publier]**. La publication d’un ensemble de carrousel active l’URL et la chaîne intégrée.
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * [Ajout d’une bannière de carrousel à votre page web](#adding-a-carousel-banner-to-your-website-page)Vous pouvez ajouter l’URL de la bannière de carrousel ou le code intégré que vous avez copié sur la page web.
+   * [Ajoutez une bannière de carrousel à votre page web](#adding-a-carousel-banner-to-your-website-page)Vous pouvez ajouter l’URL de bannière de carrousel ou le code intégré que vous avez copié sur la page web.
 
       * [Intégrez la bannière de carrousel à un aperçu rapide existant](#integrating-the-carousel-banner-with-an-existing-quickview). Si vous utilisez un système de gestion de contenu web externe, vous devez intégrer la nouvelle bannière de carrousel à la mise en œuvre de l’aperçu rapide existant sur votre site web.
 
@@ -111,7 +111,7 @@ Lorsque vous ajoutez des zones réactives ou des zones cliquables à une image d
 
 Il est important d’identifier correctement le nombre et le type des variables à associer aux données des zones réactives ou des zones cliquables. Chaque zone réactive ou zone cliquable ajoutée à une image de bannière doit comporter suffisamment d’informations pour identifier clairement le produit sur le système back-end existant. En même temps, assurez-vous que chaque zone réactive ou zone cliquable ne comporte pas plus de données que nécessaire. La raison en est que cela rendrait le processus de saisie des données trop complexe et la gestion continue des zones réactives ou des zones cliquables plus sujette aux erreurs.
 
-Il existe différentes manières d’identifier un ensemble de variables à utiliser pour les données de zone réactive ou de zone cliquable.
+Il existe différentes manières d’identifier un jeu de variables à utiliser pour les données des zones réactives ou des zones cliquables.
 
 Il suffit parfois de consulter les spécialistes informatiques chargés de la mise en œuvre de l’aperçu rapide existant. Ils sont susceptibles de connaître l’ensemble minimal de données permettant d’identifier l’aperçu rapide dans le système. Cependant, il est possible d’analyser le comportement existant du code en front-end.
 
@@ -208,7 +208,7 @@ Pour charger des bannières d’image, voir [Chargement de ressources](/help/ass
 
    Pour plus d’informations, voir [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
 
-1. Continuez à ajouter des diapositives jusqu’à ce que vous ayez ajouté toutes les images à faire pivoter dans l’ensemble de carrousel.
+1. Continuez à ajouter des diapositives jusqu’à ce que vous ayez ajouté toutes les images que vous souhaitez faire pivoter dans l’ensemble du carrousel.
 1. (En option) Effectuez l’une des actions suivantes :
 
    * Si nécessaire, faites glisser les diapositives pour réorganiser la liste des images à insérer.
@@ -225,10 +225,10 @@ Pour charger des bannières d’image, voir [Chargement de ressources](/help/ass
    >
    >Pour les bannières de carrousel, vous pouvez ajuster les éléments suivants :
    >
-   >* Durée d’affichage d’une image. Par défaut, chaque image s’affiche pendant 9 secondes.
-   >* Animation. Par défaut, chaque transition de diapositive est un fondu. Vous pouvez changer cela en transition de diapositive.
-   >* Style des boutons. Les utilisateurs peuvent faire alterner les bannières en sélectionnant chaque point ou numéro. Vous pouvez modifier l’emplacement d’affichage des boutons d’indicateur définis (et, s’ils sont de type numérique ou en pointillé) et leur taille.
-   >* Modifiez le style de mise en surbrillance d’une zone cliquable ou de l’icône utilisée pour les zones réactives.
+   >* Durée d’affichage d’une image. Par défaut, chaque image s’affiche pendant 9 secondes.
+   >* Animation. Par défaut, chaque transition de diapositive est une atténuation. Vous pouvez changer cela en une transition de diapositive.
+   >* Style des boutons. Les utilisateurs peuvent faire alterner les bannières en sélectionnant chaque point ou numéro. Vous pouvez modifier l’emplacement des boutons indicateurs définis (et s’ils sont numériques ou en forme de points) ainsi que leur taille.
+   >* Modifiez le style de mise en surbrillance d’une zone cliquable ou l’icône utilisée pour les zones réactives.
    >* Avant de modifier un paramètre prédéfini de visionneuse, choisissez le style sur laquelle vous souhaitez fonder ce paramètre. Sans cela, lorsque vous commencerez à modifier le paramètre prédéfini de visionneuse, vous perdrez toutes les modifications si vous changez de paramètre prédéfini..
 
    Vous pouvez également prévisualiser l’aspect de la bannière de carrousel. Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
@@ -282,7 +282,7 @@ Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-car
 
    Pour supprimer une zone réactive ou une zone cliquable, sélectionnez l’onglet **[!UICONTROL Actions]**. Sous l’en-tête **[!UICONTROL Cartes et zone réactives]**, dans la liste déroulante **[!UICONTROL Type sélectionné]**, sélectionnez le nom de la zone réactive ou de l’image cliquable à supprimer. Sélectionnez l’icône **[!UICONTROL Corbeille]** en regard du menu, puis sélectionnez **[!UICONTROL Supprimer]**.
 
-1. Dans le champ de texte Nom , saisissez le nom de la zone réactive ou de la zone cliquable. Ce nom apparaît également dans la variable **[!UICONTROL Cartes et zones réactives]** liste déroulante. Le fait de fournir un nom facilite l’identification de la zone réactive ou de la zone cliquable si vous décidez de le modifier ultérieurement.
+1. Dans le champ de texte Nom, saisissez le nom de la zone réactive ou cliquable. Ce nom apparaît également dans la liste déroulante **[!UICONTROL Zones réactives et cliquables]**. Le fait de fournir un nom facilite l’identification de la zone réactive ou de la zone cliquable si vous décidez de le modifier ultérieurement.
 1. Effectuez l’une des actions disponibles sur l’onglet **[!UICONTROL Actions]** :
 
    * Sélectionnez **[!UICONTROL Aperçu rapide]**.
@@ -328,7 +328,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fragments/content-f
    Vous pouvez également prévisualiser l’aspect de la bannière de carrousel. Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
-1. Publiez l’ensemble de carrousel. La publication crée le code incorporé ou l’URL que vous pouvez utiliser sur la page de votre site web. Si vous êtes un client Sites Experience Manager, ajoutez l’ensemble de carrousel directement à votre page web.
+1. Publiez l’ensemble de carrousel. La publication crée le code intégré ou l’URL que vous pouvez utiliser sur la page de votre site web. Si vous êtes un client Sites Experience Manager, ajoutez l’ensemble de carrousel directement à votre page web.
 
    Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
@@ -444,11 +444,11 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code en front-end.
 1. Le code en front-end charge les données ou le contenu de l’aperçu rapide.
 1. Facultativement, le code en front-end convertit les données chargées de l’aperçu rapide en une représentation HTML.
-1. Le code frontal affiche une boîte de dialogue ou un panneau modal et affiche le contenu du HTML à l’écran pour l’utilisateur.
+1. Le code frontal affiche une boîte de dialogue ou un panneau modal et affiche le contenu de l’HTML à l’écran pour l’utilisateur.
 
 Ces appels ne représentent pas des appels d’API publics indépendants qui peuvent être appelés par la logique de page web à partir d’une étape arbitraire. Il s’agit plutôt d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
 
-Alors que la bannière de carrousel remplace l’étape 1, et partiellement l’étape 2, lorsqu’un utilisateur sélectionne une zone réactive ou une zone cliquable, cette interaction est gérée par la visionneuse. La visionneuse renvoie un événement à la page web qui contient toutes les données de zone réactive ou de zone cliquable ajoutées précédemment.
+Alors que la bannière de carrousel remplace l’étape 1, et partiellement l’étape 2, lorsqu’un utilisateur sélectionne une zone réactive ou une zone cliquable, cette interaction est gérée par la visionneuse. La visionneuse renvoie un événement à la page web qui contient toutes les données des zones réactives ou des zones cliquables ajoutées précédemment.
 
 Dans ce type de gestionnaire d’événements, le code en front-end effectue les opérations suivantes :
 

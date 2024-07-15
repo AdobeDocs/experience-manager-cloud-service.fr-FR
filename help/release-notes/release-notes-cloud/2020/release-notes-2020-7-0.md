@@ -57,7 +57,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 AEM Commerce est désormais disponible dans Cloud Service.
 
-Voir [Prise en main de Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=fr) pour plus d’informations.
+Pour plus d’informations, voir [Prise en main d’Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=fr) .
 
 ## Composants principaux {#core-components}
 
@@ -68,7 +68,7 @@ La version 2.11.0 des [composants principaux AEM](https://experienceleague.adob
 * Introduction d’un nouveau [composant Visionneuse PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * La prise en charge AMP (Accelerated Mobile Pages) des composants principaux est désormais disponible. Elle permet de générer des expériences client plus rapides en rendant la transition de page instantanée lors de l’accès au site à partir d’un résultat de recherche mobile Google, ce qui améliore l’engagement des utilisateurs et l’optimisation du moteur de recherche.
-Voir [Prise en charge AMP des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=fr) pour plus d’informations.
+Pour plus d’informations, voir [Prise en charge AMP des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=fr) .
 
 * Compatibilité avec la version 1.0.2 de la [couche de données client Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr).
 
@@ -123,7 +123,7 @@ Consultez Utilisation de la prise en charge de Java 11 pour plus d’informatio
 
 ### Nouveautés {#what-is-new-foundations}
 
-* [Les journaux peuvent être transférés vers des comptes Splunk.](/help/implementing/developing/introduction/logging.md#splunk-logs), ce qui permet aux entreprises d’utiliser leur investissement Splunk.
+* [Les journaux peuvent être transférés vers des comptes Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), ce qui permet aux entreprises d’utiliser leur investissement Splunk.
 
 * [Une adresse IP de sortie statique et dédiée](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) peut être affectée au trafic sortant programmé dans le code Java, ce qui peut s’avérer utile pour certaines intégrations.
 
@@ -139,7 +139,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * La version antérieure de CRA ne pouvait pas s’exécuter sur Adobe Experience Manager (AEM) 6.1. Nous avons ajouté la prise en charge explicite de l’autorisation des utilisateurs dans le groupe d’administrateurs.
 
-  Voir [Installation de CRA sur AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=fr#installing-on-aem61) pour plus d’informations.
+  Pour plus d’informations, voir [Installation de CRA sur AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=fr#installing-on-aem61) .
 
 * L’horodatage d’expiration affiché sur le rapport résumé était incorrect.
 

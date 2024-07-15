@@ -329,19 +329,19 @@ Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spé
    >
    >Il doit s’agir d’une variation web de fragment d’expérience.
 
-1. Sélectionner **Exporter vers Adobe Target**.
+1. Sélectionnez **Exporter vers Adobe Target**.
 
    >[!NOTE]
    >
    >Si le fragment d’expérience a déjà été exporté, sélectionnez **Mettre à jour dans Adobe Target**.
 
-1. Sélectionner **Exportation sans publication** ou **Publier** selon les besoins.
+1. Sélectionnez **Exporter sans publier** ou **Publish** selon les besoins.
 
    >[!NOTE]
    >
    >L’option **Publier** permet la publication immédiate du fragment d’expérience et l’envoie vers Target.
 
-1. Sélectionner **OK** dans la boîte de dialogue de confirmation.
+1. Sélectionnez **OK** dans la boîte de dialogue de confirmation.
 
    Votre fragment d’expérience se trouve désormais dans Target.
 

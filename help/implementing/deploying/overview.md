@@ -72,7 +72,7 @@ Les modifications d’application dues au modèle de déploiement étant activé
 
 Pour les clients et clientes qui disposent de bases de code, il est essentiel de passer par l’exercice de restructuration du référentiel décrit dans la documentation d’AEM en vue de s’assurer que le contenu qui se trouvait auparavant sous /etc est déplacé vers le bon emplacement.
 
-Certaines restrictions supplémentaires s’appliquent à ces modules de code, par exemple : [installer des hooks](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas prises en charge.
+Certaines restrictions supplémentaires s’appliquent à ces modules de code, par exemple, les [hooks d’installation](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
 
 ## Configuration OSGI {#osgi-configuration}
 
@@ -296,7 +296,7 @@ Dans les solutions AEM existantes, les clients et les clientes peuvent exécuter
 
 AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécution disponibles et sur la manière dont les bundles OSGI et la configuration OSGI peuvent être mappés sur ces modes :
 
-* Les modes d’exécution de configuration OSGI doivent faire référence au RDE, au développement, à l’évaluation, à la production de l’environnement, ou à la création et à la publication pour le service. Une combinaison de `<service>.<environment_type>` est pris en charge, alors que ces environnements doivent être utilisés dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Les modes d’exécution de configuration OSGI doivent faire référence au RDE, au développement, à l’évaluation, à la production de l’environnement, ou à la création et à la publication pour le service. Une combinaison de `<service>.<environment_type>` est prise en charge, alors que ces environnements doivent être utilisés dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le package de contenu sous `install.author` ou `install.publish`.
 
 AEM as a Cloud Service ne permet pas d’utiliser des modes d’exécution pour installer du contenu destiné à des environnements ou des services spécifiques. Si un environnement de développement doit être alimenté avec des données ou un HTML qui ne se trouvent pas dans les environnements d’évaluation ou de production, le gestionnaire de modules peut être utilisé.

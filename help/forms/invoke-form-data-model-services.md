@@ -87,7 +87,7 @@ La structure de l’API spécifie les détails suivants concernant l’opératio
 
 ## Exemple de script pour appeler un service {#sample-script-to-invoke-a-service}
 
-L’exemple de script suivant utilise la méthode `guidelib.dataIntegrationUtils.executeOperation` API pour appeler la méthode `getAccountById` opération de service configurée dans la variable `employeeAccount` modèle de données de formulaire (FDM).
+L’exemple de script suivant utilise l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler l’opération de service `getAccountById` configurée dans le modèle de données de formulaire `employeeAccount` (FDM).
 
 L’opération `getAccountById` utilise la valeur du champ de formulaire `employeeID` comme entrée pour l’argument `empId` et renvoie le nom de l’employé, le numéro de compte et le solde du compte pour l’employé correspondant. Les valeurs de sortie sont renseignées dans les champs de formulaire spécifiés. Par exemple, la valeur de l’argument `name` est renseignée dans l’élément de formulaire `fullName` et la valeur de l’argument `accountNumber`, dans l’élément de formulaire `account`.
 
@@ -119,7 +119,7 @@ La fonction d’appel peut avoir des fonctions de rappel `success` et `failure`.
 
 ### Exemple de script avec fonctions de rappel de succès et d’échec {#callback-function-success-failure}
 
-L’exemple de script suivant utilise la méthode `guidelib.dataIntegrationUtils.executeOperation` API pour appeler la méthode `GETOrder` opération de service configurée dans la variable `employeeOrder` modèle de données de formulaire (FDM).
+L’exemple de script suivant utilise l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler l’opération de service `GETOrder` configurée dans le modèle de données de formulaire `employeeOrder` (FDM).
 
 L’opération `GETOrder` prend la valeur du champ de formulaire `Order ID` comme entrée pour l’argument `orderId` et renvoie la valeur de quantité de commande dans la fonction de rappel `success`.  Si la fonction de rappel `success` ne renvoie pas la quantité de commande, la fonction de rappel `failure` affiche le message `Error occured`.
 

@@ -1,6 +1,6 @@
 ---
 title: Assistance Edge Delivery Services dans Cloud Manager
-description: Découvrez comment diffuser vos projets Cloud Manager à l’aide d’Edge Delivery Services.
+description: Découvrez comment diffuser vos projets Cloud Manager à l’aide de Edge Delivery Services.
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -13,7 +13,7 @@ ht-degree: 30%
 
 # Assistance Edge Delivery Services dans Cloud Manager {#edge-delivery-services}
 
-Découvrez comment diffuser vos projets Cloud Manager à l’aide d’Edge Delivery Services.
+Découvrez comment diffuser vos projets Cloud Manager à l’aide de Edge Delivery Services.
 
 >[!NOTE]
 >
@@ -28,19 +28,19 @@ Edge Delivery Services est un ensemble de services composable qui offre une gr
 
 Vous pouvez utiliser AEM gestion de contenu et la création WYSIWYG à l’aide de l’éditeur universel, ainsi que la création basée sur des documents.
 
-Cloud Manager dans AEM as a Cloud Service vous permet d’activer le service de diffusion Edge pour votre projet.
+Cloud Manager dans AEM as a Cloud Service vous permet d’activer le service Edge Delivery pour votre projet.
 
 >[!TIP]
 >
->Pour plus d’informations sur les Edge Delivery Services et leur utilisation avec AEM, consultez le document . [Présentation des Edge Delivery Services.](/help/edge/overview.md)
+>Pour plus d’informations sur les Edge Delivery Services et leur utilisation avec AEM, consultez le document [Présentation des Edge Delivery Services.](/help/edge/overview.md)
 
 ## Edge Delivery Services dans Cloud Manager {#edge-in-cloud-manager}
 
-Si vous possédez des Edge Delivery Services sous licence dans Adobe Experience Manager Sites, vous pouvez intégrer des Edge Delivery Services directement sur votre site dans Cloud Manager et passer en ligne. [à l’aide d’une expérience guidée en libre-service.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+Si vous possédez des Edge Delivery Services sous licence dans Adobe Experience Manager Sites, vous pouvez embarquer sur votre site avec des Edge Delivery Services directement dans Cloud Manager et passer en ligne [à l&#39;aide d&#39;une expérience guidée en libre-service.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
 
 Vous bénéficiez ainsi d’une expérience unifiée pour toutes vos propriétés AEM, ce qui garantit la cohérence avec tous les workflows critiques, notamment la gestion des noms de domaine, la gestion des certificats SSL et les mappages CDN.
 
-Edge Delivery Services est disponible pour les deux [programmes de production et sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Les Edge Delivery Services sont disponibles pour les programmes [production et sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 ## Activation des Edge Delivery Services {#enabling}
 

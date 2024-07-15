@@ -18,7 +18,7 @@ L’environnement de création d’AEM comprend divers mécanismes permettant d�
 
 ## Gestion de votre site {#managing-your-site}
 
-La variable **Sites** La console vous permet de parcourir et de gérer votre site web à l’aide de la barre d’en-tête, de la barre d’outils, des icônes d’action (applicables à la ressource sélectionnée), des chemins de navigation et, lorsqu’ils sont sélectionnés, des rails secondaires (par exemple, la chronologie et les références).
+La console **Sites** vous permet de parcourir et de gérer votre site web à l’aide de la barre d’en-tête, de la barre d’outils, des icônes d’action (applicables à la ressource sélectionnée), des chemins de navigation et, lorsqu’ils sont sélectionnés, des rails secondaires (par exemple, la chronologie et les références).
 
 Par exemple, le mode Colonnes :
 
@@ -90,7 +90,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
    * Filtrer les composants par nom
    * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante.
 
-  Pour obtenir une description plus détaillée du composant, vous pouvez sélectionner l’icône d’informations en regard du composant dans la variable **Composants** navigateur (le cas échéant). Par exemple, pour le **fragment de contenu** :
+  Pour obtenir une description plus détaillée du composant, vous pouvez sélectionner l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **fragment de contenu** :
 
   ![Informations de l’explorateur de composants](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -163,7 +163,7 @@ Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeu
 
 ## Arborescence de contenu {#content-tree}
 
-La variable **Arborescence de contenu** donne un aperçu de tous les composants de la page dans une hiérarchie afin que vous puissiez voir en un coup d’oeil comment la page est composée.
+L’ **arborescence de contenu** donne un aperçu de tous les composants de la page dans une hiérarchie afin que vous puissiez voir en un coup d’oeil comment la page est composée.
 
 L’arborescence de contenu est un onglet du panneau latéral (ainsi que l’explorateur de composants et de ressources). Pour ouvrir (ou fermer) le panneau latéral, utilisez l’icône en haut à gauche de la barre d’outils :
 
@@ -224,7 +224,7 @@ Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez *
 
 Sélectionnez le type de référence approprié pour en savoir plus. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence particulière, notamment :
 
-* **Liens entrants**, fournit une liste des pages qui font référence à la page, ainsi qu’un accès direct à **Modifier** l’une de ces pages lorsque vous sélectionnez un lien spécifique.
+* **Liens entrants**, fournit une liste de pages qui référencent la page, ainsi qu’un accès direct à **Modifier** l’une de ces pages lorsque vous sélectionnez un lien spécifique.
 
    * Cette option permet uniquement d’afficher des liens statiques, et non des liens générés dynamiquement, par exemple, à partir du composant Liste.
 
@@ -271,7 +271,7 @@ Le menu **Informations sur la page** peut en outre donner accès à des analyses
 Plusieurs modes sont possibles lors de la modification d’une page, ce qui permet d’effectuer différentes actions :
 
 * [Modifier](/help/sites-cloud/authoring/fundamentals/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
-* [Disposition](/help/sites-cloud/authoring/features/responsive-layout.md) - vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil (si la page est basée sur un conteneur de mises en page).
+* [Mise en page](/help/sites-cloud/authoring/features/responsive-layout.md) : permet de créer et de modifier une mise en page réactive en fonction de l’appareil (si la page est basée sur un conteneur de mises en page).
 * [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) : accroît la pertinence du contenu grâce au ciblage et à la mesure sur tous les canaux.
 * [Distorsion du temps](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
@@ -288,7 +288,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* Selon les caractéristiques de la page, certains modes peuvent ne pas être disponibles.
 >* L’accès à certains modes nécessite les autorisations/privilèges appropriés.
 >* Le mode de développement n’est pas disponible sur les appareils mobiles en raison de restrictions d’espace.
->* Il existe une [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) pour basculer entre les **Aperçu** et le mode actuellement sélectionné (par exemple : **Modifier**, **Disposition**, etc.).
+>* Il existe un [ raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) pour basculer entre **Aperçu** et le mode actuellement sélectionné (par exemple, **Modifier**, **Disposition**, etc.).
 >
 
 ## Sélection du chemin d’accès {#path-selection}
@@ -315,7 +315,7 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 
 ![Explorateur de chemins d’accès](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Une fois une ressource sélectionnée, la variable **Sélectionner** dans l’angle supérieur droit de la boîte de dialogue devient actif. Sélectionnez cette option pour confirmer la sélection ou **Annuler** pour abandonner.
+* Une fois qu’une ressource est sélectionnée, le bouton **Sélectionner** dans l’angle supérieur droit de la boîte de dialogue devient actif. Sélectionnez pour confirmer la sélection ou **Annuler** pour abandonner.
 * Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton **Sélectionner**, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur le **X** en regard du nombre pour tout désélectionner.
 * Lorsque vous parcourez l’arborescence, votre emplacement est reflété dans le chemin de navigation de la boîte de dialogue. Ces chemins de navigation peuvent également être utilisés pour accéder rapidement à la hiérarchie des ressources.
 * Vous pouvez à tout moment utiliser le champ de recherche situé en haut de la boîte de dialogue. Cliquez sur le **X** dans le champ de recherche pour effacer la recherche.

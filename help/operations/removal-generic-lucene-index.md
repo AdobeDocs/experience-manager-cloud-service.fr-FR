@@ -24,7 +24,7 @@ Dans AEM, les requêtes en texte intégral sont celles qui utilisent les fonctio
 
 Ces requêtes ne peuvent pas renvoyer de résultats sans utiliser dʼindex. Contrairement à une requête ne contenant que des restrictions de chemin ou de propriété, une requête contenant une restriction de texte intégral pour laquelle aucun index ne peut être trouvé (et donc une traversée est effectuée) ne retournera jamais aucun résultat.
 
-L’index Lucene générique (`/oak:index/lucene-*`) existe depuis AEM 6.0/Oak 1.0 afin de fournir une recherche de texte intégral dans la plus grande partie de la hiérarchie du référentiel, bien que certains chemins, tels que `/jcr:system` et `/var`, aient toujours été exclus. Cependant, cet index a été largement remplacé par des index sur des types de noeuds plus spécifiques (par exemple, `damAssetLucene-*` pour le `dam:Asset` type de noeud), qui prend en charge les recherches de texte intégral et de propriétés.
+L’index Lucene générique (`/oak:index/lucene-*`) existe depuis AEM 6.0/Oak 1.0 afin de fournir une recherche de texte intégral dans la plus grande partie de la hiérarchie du référentiel, bien que certains chemins, tels que `/jcr:system` et `/var`, aient toujours été exclus. Cependant, cet index a été largement remplacé par des index sur des types de noeuds plus spécifiques (par exemple, `damAssetLucene-*` pour le type de noeud `dam:Asset`), qui prennent en charge les recherches de texte intégral et de propriété.
 
 Dans AEM 6.5, l’index Lucene générique a été marqué comme obsolète, indiquant qu’il serait supprimé dans les versions ultérieures. Depuis, un avertissement est consigné lorsque l’index est utilisé, comme illustré par le fragment de code de journal suivant :
 
@@ -131,7 +131,7 @@ Traditionnellement, lʼindex Lucene générique est utilisé pour prendre en cha
 
 #### Recherche du sélecteur de champ de chemin {#picker-search}
 
-AEM comprend un composant de boîte de dialogue personnalisé avec le type de ressource Sling `granite/ui/components/coral/foundation/form/pathfield` qui fournit un navigateur (sélecteur) permettant de sélectionner un autre chemin dʼaccès AEM. Sélecteur de champ de chemin par défaut, utilisé lorsqu’il n’est pas personnalisé `pickerSrc` est définie dans la structure de contenu et affiche une barre de recherche dans la boîte de dialogue contextuelle.
+AEM comprend un composant de boîte de dialogue personnalisé avec le type de ressource Sling `granite/ui/components/coral/foundation/form/pathfield` qui fournit un navigateur (sélecteur) permettant de sélectionner un autre chemin dʼaccès AEM. Le sélecteur de champ de chemin par défaut, utilisé lorsqu’aucune propriété `pickerSrc` personnalisée n’est définie dans la structure de contenu, effectue le rendu d’une barre de recherche dans la boîte de dialogue contextuelle.
 
 Les types de nœud sur lesquels porter la recherche peuvent être spécifiés à l’aide de la propriété `nodeTypes`.
 

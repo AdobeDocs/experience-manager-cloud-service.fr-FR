@@ -66,7 +66,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * Pour éviter toute confusion, les lignes de segment de l’instance de publication d’AEM et de l’instance de publication du Dispatcher sur la page Détails de l’environnement ont été consolidées.
 
-  ![Environnements de Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![Environnements Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * Une nouvelle règle de qualité du code a été ajoutée pour valider la structure des index `damAssetLucene`. Pour plus d’informations, voir [Index Lucene Oak des ressources DAM personnalisées](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
 
@@ -90,7 +90,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#ga-features-assets}
 
-* La fonctionnalité d’automatisation de contenu permet [!DNL Experience Manager Assets] utilisez la méthode [!DNL Adobe Creative Cloud] API pour automatiser la production de ressources à grande échelle. Elle améliore la vitesse du contenu en réduisant considérablement le temps nécessaire et les itérations pour créer des variantes d’une même ressource. La fonctionnalité ne nécessite aucun code et fonctionne depuis la gestion des ressources numériques.
+* La fonctionnalité d’automatisation du contenu permet à [!DNL Experience Manager Assets] d’utiliser les API [!DNL Adobe Creative Cloud] pour automatiser la production de ressources à grande échelle. Elle améliore la vitesse du contenu en réduisant considérablement le temps nécessaire et les itérations pour créer des variantes d’une même ressource. La fonctionnalité ne nécessite aucun code et fonctionne depuis la gestion des ressources numériques.
 * La version [!DNL Adobe Asset Link] v3.0 pour [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], [!DNL Adobe InDesign] et [!DNL Adobe Asset Link] v2.0 pour [!DNL Adobe XD] est publiée. Elle fournit les éléments suivants :
 
    * Prise en charge de [!DNL Assets Essentials].
@@ -104,7 +104,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 * Les paramètres d’affichage sont améliorés pour permettre aux utilisateurs de choisir une vue par défaut et un paramètre de tri par défaut.
 * La fonctionnalité de téléchargement de Linkshare utilise des téléchargements asynchrones qui augmentent la vitesse de téléchargement.
 * Les utilisateurs peuvent rechercher et filtrer les dossiers en fonction des prédicats de propriété.
-* [!DNL Experience Manager Assets] incorpore la visionneuse du PDF optimisée par [!DNL Adobe Document Cloud] pour prévisualiser les documents pris en charge. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incorpore la visionneuse de PDF optimisée par [!DNL Adobe Document Cloud] pour prévisualiser les documents pris en charge. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5.
 
 ### Correctifs d’[!DNL Assets]  {#bugs-fixed-assets}
 

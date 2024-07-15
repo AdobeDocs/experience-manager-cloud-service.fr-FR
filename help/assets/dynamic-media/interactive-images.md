@@ -8,7 +8,7 @@ exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4072'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -253,25 +253,25 @@ Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interac
 
    * Pour l’ouvrir dans la page Affichage des détails, sélectionnez l’image. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**.
 
-1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Ajouter une zone réactive]** (icône de sélection à l’aide du doigt) pour ouvrir la page de gestion des zones réactives.
+1. Près du coin supérieur gauche de la page, sélectionnez **[!UICONTROL Ajouter une zone réactive]** (icône Appuyer avec le doigt) pour ouvrir la page de gestion des zones réactives.
 1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Zone réactive]**.
 
    1. Dans le coin supérieur gauche de la page de gestion des zones réactives, sélectionnez **[!UICONTROL Zone réactive]**.
    1. Sur l’image, sélectionnez un emplacement où vous souhaitez que la zone réactive s’affiche. Si nécessaire, faites glisser la zone réactive pour en ajuster l’emplacement. Vous pouvez également utiliser les touches fléchées du clavier pour contrôler la position d’une zone réactive sélectionnée.
    1. Ajoutez des zones réactives supplémentaires si nécessaire en répétant les étapes a et b.
-   1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis sélectionnez **[!UICONTROL Supprimer]** (icône de corbeille) sous **[!UICONTROL Zones réactives]** en-tête.
+   1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis sélectionnez **[!UICONTROL Supprimer]** (icône de corbeille) sous l’en-tête **[!UICONTROL Zones réactives]**.
 
 1. Dans le champ de texte Nom, saisissez le nom de la zone réactive. Ce nom apparaît également dans la liste déroulante Zone réactive sélectionnée.
 1. Utilisez l’une des méthodes suivantes :
 
    * Sélectionnez **[!UICONTROL Aperçu rapide]**.
 
-      * Si vous êtes client Experience Manager Sites ou eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit que vous souhaitez utiliser, puis cliquez sur **Sélectionner** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
+      * Si vous êtes client Experience Manager Sites ou eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit que vous souhaitez utiliser, puis sélectionnez **Sélectionner** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
       * Si vous *n’êtes pas* client Experience Manager Sites ou eCommerce :
 
          * Consultez [Identification des variables de zone réactive](#optional-identifying-hotspot-variables) ; vous devez définir ces variables.
          * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur du SKU, saisissez le SKU du produit. La valeur SKU saisie renseigne automatiquement la partie variable du modèle d’aperçu rapide. Cela garantit que le système peut associer la zone réactive à l’aperçu rapide d’un SKU en particulier.
-         * (Facultatif) Si d’autres variables de l’aperçu rapide sont utilisées pour identifier un produit, sélectionnez **[!UICONTROL Ajout d’une variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
+         * (Facultatif) Si d’autres variables de l’aperçu rapide sont utilisées pour identifier un produit, sélectionnez **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
 
    * Sélectionnez **[!UICONTROL Lien hypertexte]**.
 
@@ -284,7 +284,7 @@ Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interac
 
    * Sélectionnez **[!UICONTROL Fragment d’expérience]**.
 
-      * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Sélectionnez le fragment d’expérience que vous souhaitez utiliser. Sélectionnez **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
+      * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Sélectionnez le fragment d’expérience que vous souhaitez utiliser. Sélectionnez ensuite **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
 Voir [Fragments d’expérience](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * Indiquez la largeur et la hauteur du fragment d’expérience tel que vous souhaitez qu’il apparaisse dans la bannière.
@@ -378,7 +378,7 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code en front-end.
 1. Le code en front-end charge les données ou le contenu de l’aperçu rapide.
 1. Facultativement, le code en front-end convertit les données chargées de l’aperçu rapide en une représentation HTML.
-1. Le code frontal affiche une boîte de dialogue ou un panneau modal et affiche le contenu du HTML à l’écran pour l’utilisateur.
+1. Le code frontal affiche une boîte de dialogue ou un panneau modal et affiche le contenu de l’HTML à l’écran pour l’utilisateur.
 
 Ces appels ne représentent pas nécessairement des appels d’API publics indépendants qui sont appelés en suivant la logique de la page web à partir d’une étape arbitraire. Il s’agit plutôt d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
 

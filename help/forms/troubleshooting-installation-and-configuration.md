@@ -61,5 +61,5 @@ Pour résoudre le problème, procédez comme suit :
 
 1. Démarrez AEM et attendez qu’il démarre complètement jusqu’à ce que tous les lots soient démarrés.
 1. Arrêtez AEM (Ctrl + C).
-1. Placement de Forms `.far` dans le dossier d’installation.
+1. Placez le fichier Forms `.far` dans le dossier d’installation.
 1. Redémarrez le serveur AEM.

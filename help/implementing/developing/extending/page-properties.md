@@ -13,11 +13,11 @@ ht-degree: 58%
 
 # Personnaliser les vues des propriétés de la page{#customizing-views-of-page-properties}
 
-Chaque page comporte un ensemble de [properties](/help/sites-cloud/authoring/sites-console/page-properties.md) qui peuvent être affichés et modifiés par les utilisateurs. Certaines sont requises lors de la création de la page (création d’une vue), d’autres peuvent être affichées et modifiées ultérieurement (modification d’une vue). Ces propriétés de page sont définies et rendues disponibles par la boîte de dialogue (`cq:dialog`) du composant de page approprié.
+Chaque page comporte un ensemble de [propriétés](/help/sites-cloud/authoring/sites-console/page-properties.md) qui peuvent être affichées et modifiées par les utilisateurs. Certaines sont requises lors de la création de la page (création d’une vue), d’autres peuvent être affichées et modifiées ultérieurement (modification d’une vue). Ces propriétés de page sont définies et rendues disponibles par la boîte de dialogue (`cq:dialog`) du composant de page approprié.
 
 Le statut par défaut de chaque propriété de la page est :
 
-* Masqué dans la vue de création (par exemple : **Créer une page** assistant)
+* Masqué dans la vue de création (par exemple, l’assistant **Créer une page**)
 
 * Disponible dans la vue d’édition (par exemple, **Afficher les propriétés**)
 
@@ -28,7 +28,7 @@ Les champs doivent être configurés spécifiquement si une modification est req
    * Nom : `cq:showOnCreate`
    * Type : `Boolean`
 
-* Propriété de page à afficher dans la vue d’édition, telle que **Affichage**/**Modifier**  **Propriétés** option :
+* Propriété de page à afficher dans la vue d’édition, telle que l’option **View**/**Edit** **Properties** :
 
    * Nom : `cq:hideOnEdit`
    * Type : `Boolean`
@@ -72,10 +72,10 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-cloud/authoring/sit
 
 >[!NOTE]
 >
->Lors de la configuration des propriétés de page à utiliser avec des Live Copies, voir [Extension du Multi Site Manager](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) pour plus d’informations.
+>Lors de la configuration des propriétés de page à utiliser avec des Live Copies, voir [Extension du Multi Site Manager](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) pour plus de détails.
 
 ## Exemple de configuration des propriétés de page {#sample-configuration-of-page-properties}
 
-Cet exemple illustre la technique de comparaison des boîtes de dialogue de [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) y compris l’utilisation de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Il illustre également l’utilisation de `cq:showOnCreate` et de `cq:hideOnEdit`.
+Cet exemple illustre la technique de comparaison des boîtes de dialogue de [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md), y compris l’utilisation de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Il illustre également l’utilisation de `cq:showOnCreate` et de `cq:hideOnEdit`.
 
-Vous trouverez le code de cette page sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).
+Vous pouvez trouver le code de cette page sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

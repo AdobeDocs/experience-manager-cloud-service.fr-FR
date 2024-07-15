@@ -45,7 +45,7 @@ Pour modifier la disposition d’un formulaire adaptatif, utilisez le mode Créa
 
 L’auteur d’un formulaire peut associer une disposition à chaque panneau d’un formulaire adaptatif, y compris le panneau racine.
 
-Les dispositions de panneau sont disponibles à l’emplacement `/libs/fd/af/layouts/panel`suivant. Sélectionnez le panneau, puis sélectionnez ![cmppr1](assets/configure-icon.svg) pour afficher les propriétés du panneau.
+Les dispositions de panneau sont disponibles à l’emplacement `/libs/fd/af/layouts/panel`suivant. Sélectionnez le panneau et sélectionnez ![cmppr1](assets/configure-icon.svg) pour afficher les propriétés du panneau.
 
 ![Liste des dispositions de panneau pour le panneau racine d’un formulaire adaptatif](assets/layouts.png)
 
@@ -77,7 +77,7 @@ L’expression récapitulative peut être utilisée pour afficher les valeurs fo
 
 ![Panneaux reproductibles utilisant une disposition de type Accordéon dans des formulaires adaptatifs](assets/accordion-layout.png)
 
-### [!UICONTROL Disposition avec onglets : les onglets s’affichent à gauche.]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL  Disposition avec onglets : les onglets s’affichent sur la gauche]{#tabbed-layout-tabs-appear-on-the-left}
 
 Cette disposition permet de placer le composant **[!UICONTROL Panneau de formulaire adaptatif]** dans un panneau avec une navigation par onglets. Les onglets sont placés à gauche du contenu du panneau.
 
@@ -111,7 +111,7 @@ Cette disposition, comme son nom l’indique, affiche les titres des panneaux ai
 
 ![Dispositions pour appareils mobiles avec affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile-layout1.png)
 
-### [!UICONTROL Disposition sans titres de panneau dans l’en-tête de formulaire]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL  Disposition sans titres de panneau dans l’en-tête de formulaire]{#layout-without-panel-titles-in-the-form-header}
 
 Cette disposition, comme son nom l’indique, affiche uniquement le menu de navigation et la barre de navigation sans les titres des panneaux. Cette disposition fournit également des icônes Suivant et Précédent pour la navigation.
 

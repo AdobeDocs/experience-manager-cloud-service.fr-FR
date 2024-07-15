@@ -36,7 +36,7 @@ Ce document décrit tous les blocs de création et la manière dont ils échange
 ### Éditeurs {#editors}
 
 * **Éditeur universel** – L’éditeur universel utilise un DOM instrumenté pour permettre la modification statique du contenu. Consultez [Attributs et types](attributes-types.md) pour plus d’informations sur les métadonnées nécessaires. Consultez le document [Prise en main de l’éditeur universel dans AEM](getting-started.md) pour découvrir un exemple de l’instrumentation dans AEM.
-* **Rail des propriétés** - Certaines propriétés des composants ne peuvent pas être modifiées en contexte ; par exemple, l’heure de rotation d’un carrousel ou quel onglet accordéon doit toujours être ouvert ou fermé. Pour activer la modification de ces informations de composant, utilisez l’éditeur basé sur les formulaires qui apparaît dans le rail latéral de l’éditeur.
+* **Rail de propriétés** - Certaines propriétés de composants ne peuvent pas être modifiées en contexte, par exemple, l’heure de rotation d’un carrousel ou l’onglet d’accordéon doit toujours être ouvert ou fermé. Pour activer la modification de ces informations de composant, utilisez l’éditeur basé sur les formulaires qui apparaît dans le rail latéral de l’éditeur.
 
 ### Application distante {#remote-app}
 

@@ -229,12 +229,12 @@ Pour ajouter et utiliser un gestionnaire d’erreurs personnalisé dans un formu
 
 Pour créer une fonction d’erreur personnalisée, procédez comme suit :
 
-1. [Clonage de votre référentiel as a Cloud Service AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git).
-1. Créez un dossier sous le dossier `[AEM Forms as a Cloud Service repository folder]/apps/`. Par exemple, créez un dossier nommé comme `experience-league`
-1. Accédez à `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` et créez un `ClientLibraryFolder` as `clientlibs`.
+1. [Cloner votre référentiel as a Cloud Service AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git).
+1. Créez un dossier sous le dossier `[AEM Forms as a Cloud Service repository folder]/apps/`. Par exemple, créez un dossier nommé `experience-league`.
+1. Accédez à `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` et créez un `ClientLibraryFolder` en tant que `clientlibs`.
 1. Créez un dossier nommé `js`.
 1. Accédez au dossier `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
-1. Ajoutez un fichier JavaScript, par exemple : `function.js`. Le fichier comprend le code du gestionnaire d’erreurs personnalisé.
+1. Ajoutez un fichier JavaScript, par exemple `function.js`. Le fichier comprend le code du gestionnaire d’erreurs personnalisé.
 Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les en-têtes, reçus du point d’entrée du service REST, dans la console du navigateur.
 
    ```javascript
@@ -258,11 +258,11 @@ Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les 
 
    >[!NOTE]
    >
-   > Dans le `.content.xml` , ajoutez le fichier `allowProxy` et `categories` propriétés.
+   > Dans le fichier `.content.xml`, ajoutez les propriétés `allowProxy` et `categories` .
    >
    > * `allowProxy = [Boolean]true`
    > * `categories= customfunctionsdemo`
-   >Par exemple, dans ce cas : [custom-errorhandler-name] est fourni en tant que `customfunctionsdemo`.
+   >Par exemple, dans ce cas, [custom-errorhandler-name] est fourni comme `customfunctionsdemo`.
 
 1. Enregistrez le fichier `function.js`.
 1. Accédez au dossier `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.

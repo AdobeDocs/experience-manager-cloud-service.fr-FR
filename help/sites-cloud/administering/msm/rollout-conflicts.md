@@ -32,11 +32,11 @@ Outre les fonctionnalités standard, des gestionnaires de conflit personnalisés
 
 ### Exemple de scénario {#example-scenario}
 
-Dans les sections suivantes, un exemple de nouvelle page `b` est utilisé, créé à la fois dans le plan directeur et dans la branche Live Copy (créée manuellement), pour illustrer les différentes méthodes de résolution des conflits :
+Dans les sections suivantes, un exemple de nouvelle page `b` est utilisé, créé à la fois dans le plan directeur et dans la branche Live Copy (créée manuellement), pour illustrer les différentes méthodes de résolution de conflit :
 
 * Plan directeur : `/b`
 
-  un gabarit avec une page enfant, `bp-level-1`
+  Un gabarit avec une page enfant, `bp-level-1`
 
 * Live Copy: `/b`
 
@@ -78,9 +78,9 @@ AEM fournit :
 Le gestionnaire de conflits par défaut est `ResourceNameRolloutConflictHandler`
 
 * Avec ce gestionnaire, la page du plan directeur prévaut.
-* Le classement des services pour ce gestionnaire est défini sur le bas. En d’autres termes, sous la valeur par défaut de la variable `service.ranking` , car il est supposé que les gestionnaires personnalisés ont besoin d’un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour garantir de la flexibilité lorsque cela est nécessaire.
+* Le classement des services pour ce gestionnaire est défini sur le bas. C’est-à-dire, sous la valeur par défaut de la propriété `service.ranking`, car l’hypothèse est que les gestionnaires personnalisés ont besoin d’un rang supérieur. Cependant, le classement n’est pas le minimum absolu pour garantir de la flexibilité lorsque cela est nécessaire.
 
-Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, la page Live Copy `/b` est déplacé dans la branche Live Copy vers `/b_msm_moved`.
+Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, la page Live Copy `/b` est déplacée dans la branche Live Copy vers `/b_msm_moved`.
 
 * Live Copy: `/b`
 
@@ -99,7 +99,7 @@ Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, l
 |  | Plan directeur après le déploiement | Live Copy après le déploiement | Live Copy après le déploiement | Publication après le déploiement |
 |---|---|---|---|---|
 | Valeur | `b` | `b` | `b_msm_moved` | `b` |
-| Commentaire |  | Contient le contenu de la page du plan directeur `b` qui a été déployée | Contient le contenu de la page `b` créée manuellement dans la branche Live Copy | Aucune modification ; contient le contenu de la page d’origine. `b` qui a été créé manuellement dans la branche Live Copy et est désormais appelée `b_msm_moved` |
+| Commentaire |  | Contient le contenu de la page du plan directeur `b` qui a été déployée | Contient le contenu de la page `b` créée manuellement dans la branche Live Copy | Aucune modification ; contient le contenu de la page d’origine `b` qui a été créé manuellement dans la branche Live Copy et qui est désormais appelée `b_msm_moved` |
 | Valeur | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Commentaire |  |  | Aucune modification | Aucune modification |
 
@@ -112,7 +112,7 @@ Les gestionnaires de conflit personnalisés peuvent :
 * nommés selon vos besoins ;
 * développés/configurés selon vos besoins.
    * Par exemple, vous pouvez développer un gestionnaire de sorte que la page Live Copy soit prioritaire.
-* Il peut être configuré à l’aide de la fonction [Configuration OSGi](/help/implementing/deploying/configuring-osgi.md). En particulier :
+* Il peut être configuré à l’aide de la [configuration OSGi](/help/implementing/deploying/configuring-osgi.md). En particulier :
    * **Classement des services** définit l’ordre associé aux autres gestionnaires de conflit (`service.ranking`).
       * La valeur par défaut est `0`.
 
@@ -139,7 +139,7 @@ Dans ce cas, la Live Copy a la priorité. La page du plan directeur `/b` n’est
 |  | Plan directeur après le déploiement | Live Copy après le déploiement | Publication après le déploiement |
 |---|---|---|---|
 | Valeur | `b` | `b` | `b` |
-| Commentaire |  | Aucune modification ; contient le contenu de la page. `b` qui a été créé manuellement dans la branche Live Copy | Aucune modification ; contient le contenu de la page. `b` qui a été créé manuellement dans la branche Live Copy |
+| Commentaire |  | Aucune modification ; présente le contenu de la page `b` qui a été créé manuellement dans la branche Live Copy | Aucune modification ; contient le contenu de la page `b` qui a été créée manuellement dans la branche Live Copy |
 | Valeur | `/bp-level-1,` | `/lc-level-1` | `/lc-level-1` |
 | Commentaire |  | Aucune modification | Aucune modification |
 

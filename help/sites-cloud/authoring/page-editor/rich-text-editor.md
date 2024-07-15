@@ -18,7 +18,7 @@ L’éditeur de texte enrichi (RTE) est un élément de base permettant d’ajou
 
 ## Modification statique {#in-place-editing}
 
-Sélection d’un composant textuel en un seul clic pour afficher la variable [de la barre d’outils du composant.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+Sélectionner un composant textuel en un seul clic pour afficher la barre d’outils [component.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
 
 ![Barre d’outils de composant](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

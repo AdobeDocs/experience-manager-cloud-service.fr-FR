@@ -21,7 +21,7 @@ AEM Assets s’intègre de manière native à Adobe Express, ce qui vous perme
 
 ## Conditions préalables {#prerequisites}
 
-Droits d’accès à Adobe Express et à au moins un environnement dans AEM Assets. L’environnement peut être l’un des référentiels dans Assets as a Cloud Service ou Assets Essentials.
+Droits d’accès à Adobe Express et à au moins un environnement dans AEM Assets. L’environnement peut être l’un des référentiels dans les Assets Essentials as a Cloud Service ou Assets.
 
 
 ## Utilisation d’AEM Assets dans l’éditeur d’Adobes Express {#use-aem-assets-in-express}
@@ -32,7 +32,7 @@ Effectuez les étapes suivantes pour commencer à utiliser AEM Assets dans l’�
 
 2. Ouvrez un nouveau canevas vierge en chargeant un nouveau modèle ou projet ou en créant une ressource.
 
-3. Cliquez sur **[!UICONTROL Ressources]** disponible dans le volet de navigation de gauche. Adobe Express affiche la liste des référentiels auxquels vous avez droit, ainsi que la liste des ressources et des dossiers disponibles au niveau racine.
+3. Cliquez sur **[!UICONTROL Assets]** dans le volet de navigation de gauche. Adobe Express affiche la liste des référentiels auxquels vous avez droit, ainsi que la liste des ressources et des dossiers disponibles au niveau racine.
 
 4. Parcourez ou recherchez des ressources dans votre référentiel pour les faire glisser sur la zone de travail. Vous pouvez filtrer les ressources à l’aide de divers filtres disponibles, tels que le type de fichier, le type MIME et les dimensions.
 
@@ -47,24 +47,24 @@ Effectuez les étapes suivantes pour commencer à utiliser AEM Assets dans l’�
 
 Après avoir incorporé les modifications appropriées dans le canevas express, vous pouvez les enregistrer dans le référentiel AEM Assets.
 
-1. Cliquez sur **[!UICONTROL Partager]** pour ouvrir le **[!UICONTROL Partager]** boîte de dialogue.
+1. Cliquez sur **[!UICONTROL Partager]** pour ouvrir la boîte de dialogue **[!UICONTROL Partager]**.
 
-   ![Enregistrement des ressources dans AEM](assets/adobe-express-share.png)
+   ![Enregistrer des ressources dans AEM](assets/adobe-express-share.png)
 
 2. Dans la section Stockage du volet de droite, sélectionnez **AEM Assets**. Adobe Express affiche la boîte de dialogue de chargement.
-3. Sélectionnez **Page en cours** ou **Toutes les pages**. Indiquez le nom et le format des ressources à exporter. Vous pouvez exporter le contenu du canevas aux formats PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. Le format s’ajuste automatiquement en fonction des ressources sur la ou les pages de la zone de travail.
-Sélection **Page en cours** enregistre la ressource sur la page active dans votre dossier de destination. Si vous sélectionnez **Toutes les pages** et que le format d’exportation n’est pas PDF, toutes les pages de canevas sont enregistrées en tant que fichiers distincts dans un nouveau dossier de votre dossier de destination. Si le format d’exportation est PDF, toutes les pages de canevas sont enregistrées en tant que fichier de PDF unique dans le dossier de destination.
+3. Sélectionnez **Page active** ou **Toutes les pages**. Indiquez le nom et le format des ressources à exporter. Vous pouvez exporter le contenu du canevas aux formats PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. Le format s’ajuste automatiquement en fonction des ressources sur la ou les pages de la zone de travail.
+Sélectionnez **Page active** pour enregistrer la ressource sur votre page active dans votre dossier de destination. Si vous sélectionnez **Toutes les pages** et que le format d’exportation n’est pas PDF, toutes les pages de canevas sont enregistrées en tant que fichiers distincts dans un nouveau dossier de votre dossier de destination. Si le format d’exportation est PDF, toutes les pages de canevas sont enregistrées en tant que fichier de PDF unique dans le dossier de destination.
 
 4. Cliquez sur l’icône de dossier sous **Dossier de destination** pour sélectionner un emplacement et enregistrer la ou les ressources.
 
-   ![Enregistrement des ressources dans AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
+   ![Enregistrer des ressources dans AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. Facultatif : vous pouvez ajouter des métadonnées de campagne pour votre téléchargement à l’aide de la variable **Nom du projet ou de la campagne** champ . Vous pouvez utiliser un nom existant ou en créer un nouveau. Vous pouvez définir plusieurs noms de projet ou de campagne pour votre téléchargement. Pour enregistrer le nom, saisissez simplement le nom et appuyez sur Entrée.
+5. Facultatif : vous pouvez ajouter des métadonnées de campagne pour votre téléchargement à l’aide du champ **Projet ou nom de campagne**. Vous pouvez utiliser un nom existant ou en créer un nouveau. Vous pouvez définir plusieurs noms de projet ou de campagne pour votre téléchargement. Pour enregistrer le nom, saisissez simplement le nom et appuyez sur Entrée.
 En règle générale, Adobe recommande de spécifier des valeurs dans le reste des champs et de créer une expérience de recherche améliorée pour vos ressources chargées.
 
-6. De même, définissez les valeurs de la variable **[!UICONTROL Mots-clés]** et **[!UICONTROL Canaux]** des champs.
+6. De même, définissez des valeurs pour les champs **[!UICONTROL Mots-clés]** et **[!UICONTROL Canaux]** .
 
-7. Cliquez sur **[!UICONTROL Télécharger]** pour charger la ou les ressources vers AEM Assets.
+7. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger la ou les ressources vers AEM Assets.
 
 ## Limites {#limitations}
 

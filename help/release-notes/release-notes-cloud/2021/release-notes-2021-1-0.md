@@ -54,9 +54,9 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 * Gestion de l’expérience des produits : nouvel onglet de propriétés Commerce pour les ressources et les fragments d’expérience. Cet onglet permet de lier des produits/catégories à des ressources et fragments d’expérience. L’onglet affiche également des données en temps réel pour les produits/catégories liés ainsi qu’un lien permettant d’afficher des détails dans la console du produit.
 
-* Publication CIF site de référence Venia - 2021.02.02 qui comprend la dernière version de CIF Core Components v1.7.0. Voir [Site de référence Venia CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) pour plus d’informations.
+* Publication CIF site de référence Venia - 2021.02.02 qui comprend la dernière version de CIF Core Components v1.7.0. Pour plus d’informations, voir [CIF site de référence Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) .
 
-* Publication CIF composants principaux v1.7.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) pour plus d’informations.
+* Publication CIF composants principaux v1.7.0. Pour plus d’informations, voir [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) .
 
 ## Cloud Manager {#cloud-manager}
 
@@ -78,13 +78,13 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 
 
 * Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in comprend des correctifs pour le Dispatcher Converter et le Repository Modernizer AEM et prend également en charge un nouvel utilitaire : Index Converter. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) pour en savoir plus sur ce module externe.
 
-* Index Converter est un utilitaire qui permet de transformer les définitions d’index OAK personnalisées d’un client en définitions d’index OAK compatibles avec AEM as a Cloud Service. Voir [Convertisseur d’index](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) pour plus d’informations.
+* Index Converter est un utilitaire qui permet de transformer les définitions d’index OAK personnalisées d’un client en définitions d’index OAK compatibles avec AEM as a Cloud Service. Pour plus d’informations, voir [Convertisseur d’index](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) .
 
 * Nouvelle fonctionnalité ajoutée à [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) qui crée un package distinct `ui.config` contenant toutes les configurations OSGi.
 
 ### Correctifs {#crt-bug-fixes}
 
-* Plusieurs correctifs de bogues ont été apportés aux outils Dispatcher Converter et Repository Modernizer d’AEM. Voir [Convertisseur du Dispatcher AEM](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) et [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Plusieurs correctifs de bogues ont été apportés aux outils Dispatcher Converter et Repository Modernizer d’AEM. Voir [Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) et [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 

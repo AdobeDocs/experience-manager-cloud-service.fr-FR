@@ -17,7 +17,7 @@ Implémentation d’un connecteur AEM
 
 Les informations fournies ci-dessous vous seront d’une grande utilité pour la création de [connecteurs AEM](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html). Elles doivent être lues parallèlement aux conseils sur l’[envoi](submit.md) et la [maintenance](maintain.md) des connecteurs.
 
-Une licence de développeur pour AEM peut être obtenue via le [Programme Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+Une licence de développeur pour AEM peut être obtenue via le [programme Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 Modèles d’intégration courants
 ---------------------------
@@ -66,7 +66,7 @@ En outre, seul Adobe doit écrire du code dans `/libs` ; les clients et les par
 
 Les connecteurs existants peuvent également être restructurés pour déplacer toute configuration qui aurait pu placer `/etc` dans d’autres dossiers de niveau supérieur, tels que `/conf`. Cette restructuration a été effectuée dans le cadre d’AEM 6.5 et est décrite dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
-Il est recommandé de placer la majorité du code du connecteur sous `/apps/connectors/<vendor>` afin de promouvoir une structure de référentiel propre pour les clients qui disposent de plusieurs connecteurs.
+Il est recommandé de placer la majorité du code du connecteur sous `/apps/connectors/<vendor>` afin de promouvoir une structure de référentiel propre pour les clients qui ont plusieurs connecteurs.
 
 Configuration de Cloud Services
 -----------------------------

@@ -38,8 +38,8 @@ Les utilisateurs pensent souvent qu’une mise en oeuvre sans interface limite l
 
 Les exigences d’une mise en œuvre pour utiliser l’éditeur universel sont très simples et prennent en charge :
 
-* **N’importe quelle architecture** - Rendu côté serveur, rendu côté serveur, rendu côté client, etc.
-* **N’importe quel framework** - AEM Vanilla, ou tout framework tiers comme React, Next.js, Angular, etc.
+* **Any Architecture** - Rendu côté serveur, rendu côté serveur, rendu côté client, etc.
+* **Any Framework** - AEM Vanilla, ou tout framework tiers comme React, Next.js, Angular, etc.
 * **N’importe quel hébergement** - Peut être hébergé localement sur AEM ou sur un domaine distant
 
 ### Tout contenu {#any-content}
@@ -54,7 +54,7 @@ Un créateur ou une créatrice de contenu doit avoir la même expérience puissa
 
 Pour un créateur ou une créatrice de contenu, le contenu ne concerne pas seulement les informations contenues, mais aussi leur rendu et leur réception. Le contenu est fourni avec des métadonnées et des règles d’instrumentation supplémentaires, que l’éditeur universel peut comprendre et modifier, notamment :
 
-* **Application de la mise en page et du style** - En utilisant un système de style, le professionnel du marketing et l’auteur de contenu peuvent appliquer différents styles à leur contenu et créer différentes mises en page pour le contenu, telles que des colonnes, des carrousels, des onglets, des accordéons, etc.
+* **Application de la mise en page et du style** - En utilisant un système de style, le spécialiste du marketing et l’auteur du contenu peuvent appliquer différents styles à leur contenu et créer différentes mises en page pour le contenu, telles que des colonnes, des carrousels, des onglets, des accordéons, etc.
 
 ## Valeur {#value}
 
@@ -86,12 +86,12 @@ Un professionnel ou une professionnelle du marketing souhaite créer du contenu 
 
 À mesure que vous explorez l’éditeur universel et passez à l’implémentation dans vos propres projets, gardez à l’esprit les restrictions suivantes.
 
-* Pas plus de 25 ressources AEM (fragments de contenu, pages, fragments d’expérience, ressources, etc.) doit être des références en tant qu’instrumentation sur une seule page.
-* AEM as a Cloud Service est le seul serveur AEM pris en charge.
-* AEM version as a Cloud Service `2023.8.13099` ou supérieur est requis.
+* Pas plus de 25 ressources AEM (fragments de contenu, pages, fragments d’expérience, Assets, etc.) doit être des références en tant qu’instrumentation sur une seule page.
+* AEM as a Cloud Service est le seul AEM principal pris en charge.
+* La version `2023.8.13099` ou supérieure d’AEM as a Cloud Service est requise.
 * Les auteurs de contenu doivent disposer de leurs propres comptes Experience Cloud.
 * Chrome et Edge sont les navigateurs pris en charge
 
 ## Étapes suivantes {#next-steps}
 
-Consultez le document [Cas d’utilisation de l’éditeur universel et chemins d’apprentissage](/help/implementing/universal-editor/use-cases.md) pour en savoir plus sur les cas d’utilisation courants d’Universal Editor et pour découvrir les ressources de documentation appropriées pour vous aider dans votre projet.
+Consultez le document [Cas d’utilisation de l’éditeur universel et chemins d’apprentissage](/help/implementing/universal-editor/use-cases.md) pour en savoir plus sur les cas d’utilisation courants de l’éditeur universel et pour découvrir les ressources de documentation appropriées pour vous aider dans votre projet.

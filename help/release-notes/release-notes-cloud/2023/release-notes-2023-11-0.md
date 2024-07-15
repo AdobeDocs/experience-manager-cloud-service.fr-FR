@@ -27,7 +27,7 @@ La section suivante concerne les notes de mise à jour de la version 2023.11.0 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2023.11.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 30 novembre 2023. La prochaine disponibilité des fonctionnalités (2023.12.0) est prévue pour le vendredi 14 décembre 2023.
+La date de publication de la version actuelle (2023.11.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 30 novembre 2023. La prochaine disponibilité des fonctionnalités (2023.12.0) est prévue pour le vendredi 14 décembre 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -43,17 +43,17 @@ Regardez la vidéo Présentation de la version de novembre 2023 pour un résumé
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 
-**[Recherche et remplacement de chaînes dans des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: la console de fragments de contenu offre aux utilisateurs un moyen simple et intuitif de remplacer une chaîne apparaissant simultanément dans plusieurs fragments de contenu afin d’accélérer la vitesse du contenu.
+**[Rechercher et remplacer des chaînes dans des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)** : la console de fragments de contenu offre aux utilisateurs un moyen simple et intuitif de remplacer une chaîne apparaissant simultanément dans plusieurs fragments de contenu afin d’accélérer la vitesse du contenu.
 
 ![Rechercher et remplacer](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
-Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d’un courrier électronique à **aemcs-headless-adopter@adobe.com** à partir de votre ID de courrier électronique officiel pour en savoir plus sur le programme des premiers adopteurs.
+Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez un e-mail à **aemcs-headless-adopter@adobe.com** à partir de votre ID d’e-mail officiel pour en savoir plus sur le programme d’adoption précoce.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-features}
 
-* **Éditeur d’Adobe Express intégré dans AEM Assets**: les utilisateurs ayant accès à Express disposent désormais d’outils intégrés d’édition et de création d’images d’Adobe Express et d’Adobe Firefly disponibles directement dans AEM Assets pour améliorer la réutilisation du contenu et accélérer la vitesse de diffusion du contenu.
+* **Éditeur d’Adobe Express intégré dans AEM Assets** : les utilisateurs ayant accès à Express disposent désormais d’outils intégrés de modification et de création d’images d’Adobe Express et d’Adobe Firefly disponibles directement dans AEM Assets afin d’améliorer la réutilisation du contenu et d’accélérer la vitesse de diffusion du contenu.
 
   ![Affectation d’un formulaire de métadonnées à un dossier.](/help/assets/assets/adobe-express-aem-assets.png)
 
@@ -66,35 +66,35 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoi d
 -->
 
 
-* **Rapports sur l’utilisation du stockage dans Insights**: les administrateurs ont désormais la possibilité d’afficher les rapports sur l’utilisation du stockage disponibles dans le cadre d’ Insights .
+* **Rapports sur l’utilisation du stockage dans les statistiques** : les administrateurs ont désormais la possibilité d’afficher les rapports sur l’utilisation du stockage disponibles dans le cadre d’Insights.
 
   ![Informations sur l’utilisation du stockage](/help/assets/assets/storage-usage-insights.png)
 
-* **Recherche de la première configuration de page d’accueil**: Experience Manager Assets vous permet désormais de configurer l’expérience de la page d’accueil pour votre entreprise. Si vous sélectionnez l’approche axée sur la recherche pour votre page d’accueil, vous pouvez configurer l’alignement de la barre de recherche, l’image d’arrière-plan et le logo de votre organisation.
+* **Recherche de la première configuration de page d’accueil** : Experience Manager Assets vous permet désormais de configurer l’expérience de page d’accueil pour votre entreprise. Si vous sélectionnez l’approche axée sur la recherche pour votre page d’accueil, vous pouvez configurer l’alignement de la barre de recherche, l’image d’arrière-plan et le logo de votre organisation.
 
   ![Configuration de l’approche axée sur la recherche.](/help/assets/assets/search-first-configuration.png)
 
 ### Nouvelles fonctionnalités de la version préliminaire pour la vue d’administration {#admin-view-features-prerelease}
 
-**Aperçu vidéo**: AEM Assets génère désormais par défaut des rendus d’aperçu de tous les formats vidéo pris en charge, sans avoir à configurer de profil de traitement.
+**Aperçu vidéo** : AEM Assets génère désormais par défaut des rendus d’aperçu de tous les formats vidéo pris en charge, sans avoir à configurer de profil de traitement.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouvelles fonctionnalités d’ [!DNL Experience Manager Forms] {#forms-features}
+### Nouvelles fonctionnalités de [!DNL Experience Manager Forms] {#forms-features}
 
 * **[Composant de case à cocher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant de case à cocher. Il permet aux utilisateurs et utilisatrices de faire des choix binaires, en sélectionnant ou en désélectionnant une option particulière. Il s’affiche généralement sous la forme d’une petite case sur laquelle vous pouvez cliquer ou appuyer pour basculer entre deux états : cochée et décochée. La case à cocher est un élément de formulaire courant, utilisé pour présenter un choix oui/non ou vrai/faux.
 
 * **[Composant Conditions générales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant Conditions générales. Il permet aux personnes créant les formulaires d’introduire une section spécifique dans le formulaire, dans laquelle les utilisateurs et utilisatrices peuvent consulter les conditions générales ou les accords juridiques associés à l’utilisation d’un service, d’un produit ou d’une plateforme. Ce composant est conçu pour informer les utilisateurs et utilisatrices des règles, des réglementations et des obligations qu’ils acceptent en envoyant le formulaire.
 
-  ![Composants des onglets Case à cocher, Termes et conditions et Vertical](/help/forms/assets/forms-components.png)
+  ![Composants Case à cocher, Termes et conditions, et Onglet vertical](/help/forms/assets/forms-components.png)
 
 * **[Composant Onglets verticaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=fr)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais organiser le contenu des formulaires en une liste verticale d’onglets, ce qui assure une disposition structurée et navigable. L’utilisation d’onglets verticaux dans un formulaire peut améliorer l’expérience globale de l’utilisateur ou de l’utilisatrice en simplifiant la navigation et en améliorant l’organisation du contenu du formulaire, en particulier lorsqu’un formulaire contient plusieurs sections ou des informations complexes.
 
 
 
-### Nouvelles fonctionnalités d’ [!DNL Forms] Version préliminaire {#prerelease-features-forms}
+### Nouvelles fonctionnalités de la version préliminaire de [!DNL Forms] {#prerelease-features-forms}
 
-* **[Connexion d’une Forms adaptative à une liste Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms fournit une intégration prête à l’emploi pour envoyer directement les données de formulaire à la liste SharePoint, ce qui vous permet d’exploiter les fonctionnalités de listes SharePoint. Vous pouvez configurer Microsoft SharePoint List en tant que source de données pour un modèle de données de formulaire et utiliser la variable **Envoyer à l’aide du modèle de données de formulaire** Action d’envoi pour connecter un formulaire adaptatif à une liste SharePoint.
+* **[Connecter un Forms adaptatif à une liste SharePoint Microsoft®](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)** : AEM Forms fournit une intégration prête à l’emploi pour envoyer directement des données de formulaire à la liste SharePoint, ce qui vous permet d’exploiter les fonctionnalités de listes de SharePoint. Vous pouvez configurer Microsoft SharePoint List comme source de données pour un modèle de données de formulaire et utiliser l’action d’envoi **Envoyer à l’aide du modèle de données de formulaire** pour connecter un formulaire adaptatif à la liste SharePoint.
 
 <!-- 
 
@@ -122,11 +122,11 @@ Les règles de filtrage du trafic ont été publiées en octobre et incluent une
 
 Une fois sous licence, ces règles WAF avancées peuvent être déployées sur le réseau de diffusion de contenu à l’aide du pipeline de configuration de Cloud Manager pour ajouter une couche supplémentaire de protection contre les attaques web.
 
-En savoir plus [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), y compris WAF. Contactez votre équipe de compte AEM au sujet de la licence de la protection WAF-DDoS ou de la sécurité renforcée.
+Découvrez les [règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md), y compris WAF. Contactez votre équipe de compte AEM au sujet de la licence de la protection WAF-DDoS ou de la sécurité renforcée.
 
 ### Programme d’adoption précoce pour la configuration du réseau CDN {#cdn-config-early-adopter}
 
-Outre la version récemment publiée [Règles de filtre de trafic (y compris WAF)](/help/security/traffic-filter-rules-including-waf.md), il est possible d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration CDN. Nous aimerions bien connaître vos cas pratiques, notamment :
+Outre les [règles de filtrage du trafic (dont WAF)](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau de diffusion de contenu. Nous aimerions bien connaître vos cas pratiques, notamment :
 * Redirections côté client 301/302
 * Établier un proxy des requêtes en périphérie vers des origines arbitraires
 * Transformations d’URL
@@ -135,7 +135,7 @@ Outre la version récemment publiée [Règles de filtre de trafic (y compris WAF
 * authentification par nom d’utilisateur/mot de passe
 * toute autre configuration CDN utile
 
-Envoi d’un courrier électronique à **aemcs-cdn-config-adopter@adobe.com** de votre e-mail officiel avec vos commentaires.
+Envoyez un email à **aemcs-cdn-config-adopter@adobe.com** à partir de votre ID d&#39;email officiel avec vos commentaires.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -149,4 +149,4 @@ Vous trouverez une liste complète des versions des outils de migration [ici](/h
 
 * Impossible d’envoyer le Forms adaptatif en fonction des composants principaux. Le problème se produit pour les Forms adaptatives créées à l’aide des versions 2.0.38 à 2.0.60 des composants principaux.
 
-  Pour résoudre le problème. vous pouvez passer à la version 2.0.62 ou ultérieure des composants principaux de formulaire adaptatif. Pour définir une version des composants principaux de Forms adaptatif pour votre environnement, [Définissez les versions du composant core.forms.components.version, core.forms.components.af.version et core.wcm.components.version .](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) les dépendances dans votre projet Forms as a Cloud Service ou basé sur AEM Archetype et [déployer les modifications dans votre environnement Forms as a Cloud Service ;](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Vous trouverez la dernière version des dépendances des composants principaux de Forms adaptatif à l’adresse [Référentiel Git des composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  Pour résoudre le problème. vous pouvez passer à la version 2.0.62 ou ultérieure des composants principaux de formulaire adaptatif. Pour définir une version des composants principaux de Forms adaptatif pour votre environnement, [ définissez les versions de core.forms.components.version, core.forms.components.af.version et les dépendances core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dans votre projet Forms as a Cloud Service repository ou basé sur AEM Archetype et [déployez les modifications dans votre environnement Forms as a Cloud Service](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Vous trouverez la dernière version des dépendances des composants principaux de Forms adaptatif à l’adresse [Référentiel Git des composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components#system-requirements).

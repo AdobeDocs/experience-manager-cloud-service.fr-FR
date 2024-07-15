@@ -17,9 +17,9 @@ ht-degree: 87%
 
 Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client.
 
-L’éditeur de Forms adaptatif fournit la variable **Appeler un flux Microsoft® Power Automate** Les actions d’envoi pour envoyer des données de formulaires adaptatifs, des pièces jointes et un document d’enregistrement sont envoyées à Power Automate Cloud Flow.
+L’éditeur de Forms adaptatif fournit l’action d’envoi **Invoke a Microsoft® Power Automate flow** pour envoyer des données de formulaires adaptatifs, des pièces jointes et un document d’enregistrement sont envoyés à Power Automate Cloud Flow.
 
-AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Pour en savoir plus sur ces options, voir [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)  article.
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Vous pouvez en savoir plus sur ces options dans l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) .
 
 
 ## Avantages
@@ -96,7 +96,7 @@ Effectuez les actions suivantes pour connecter votre instance Forms as a Clou
    >Lorsque vous créez un formulaire adaptatif, indiquez le nom du conteneur dans le champ **[!UICONTROL Conteneur de configurations]**.
 
 1. Sur la page de configuration, sélectionnez **[!UICONTROL Créer]** pour créer une configuration [!DNL Microsoft®®® Power Automate Flow Service] dans AEM Forms.
-1. Sur le **[!UICONTROL Configuration du service Dataverse pour Microsoft®®® Power Automate]** , indiquez la variable **[!UICONTROL ID client]** (également appelé ID d’application), **[!UICONTROL Secret du client]**, **[!UICONTROL URL OAuth]** et **[!UICONTROL URL de l’environnement dynamique]**. Utilisez l’ID client, le secret client, l’URL OAuth et l’URL de l’environnement Dynamics de [l’application Microsoft® Azure Active Directory](#ms-power-automate-application) que vous avez créée dans la section précédente. Utilisez l’option Points d’entrée de l’interface utilisateur de l’application Microsoft® Azure Active Directory pour trouver l’URL OAuth.
+1. Sur la page **[!UICONTROL Configurer le service de données pour Microsoft®®® Power Automate]**, spécifiez l’**[!UICONTROL ID client]** (également appelé ID d’application), le **[!UICONTROL Secret client]**, l’ **[!UICONTROL URL OAuth]** et l’ **[!UICONTROL URL d’environnement dynamique]**. Utilisez l’ID client, le secret client, l’URL OAuth et l’URL de l’environnement Dynamics de [l’application Microsoft® Azure Active Directory](#ms-power-automate-application) que vous avez créée dans la section précédente. Utilisez l’option Points d’entrée de l’interface utilisateur de l’application Microsoft® Azure Active Directory pour trouver l’URL OAuth.
 
    ![Utilisez l’option Points d’entrée de l’interface utilisateur de l’application Microsoft Power Automate pour trouver l’URL OAuth.](assets/endpoints.png)
 
@@ -130,7 +130,7 @@ Après la [Connexion de votre instance Forms as a Cloud Service à Microsoft® P
 1. Connectez-vous à votre instance Création, sélectionnez votre formulaire adaptatif et cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans le conteneur de configuration, recherchez et sélectionnez le conteneur créé dans la section [Créer une configuration cloud du Dataverse de Microsoft® Power Automate](#microsoft-power-automate-dataverse-cloud-configuration), puis choisissez **[!UICONTROL Enregistrer et fermer]**.
 1. Ouvrez le formulaire adaptatif pour le modifier et accéder à la section **[!UICONTROL Envoi]** des propriétés du Conteneur de formulaires adaptatifs.
-1. Dans le conteneur de propriétés, pour **[!UICONTROL Actions Envoyer]** sélectionnez l’option **[!UICONTROL Appeler un flux d’automatisation de puissance]** et sélectionnez une **[!UICONTROL Flux de Power Automate]**. Sélectionnez le flux requis afin que les données de formulaires adaptatifs lui soient soumises lors de l’envoi.
+1. Dans le conteneur de propriétés, pour **[!UICONTROL Submit Actions]**, sélectionnez l’option **[!UICONTROL Invoke a Power Automate flow]** et sélectionnez un **[!UICONTROL Power Automate flow]**. Sélectionnez le flux requis afin que les données de formulaires adaptatifs lui soient soumises lors de l’envoi.
 
    ![Configurer l’action d’envoi](assets/submission.png)
 

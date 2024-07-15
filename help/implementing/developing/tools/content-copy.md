@@ -17,7 +17,7 @@ L’outil de copie de contenu permet de copier du contenu modifiable à la deman
 
 ## Présentation {#introduction}
 
-Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu vous permet de copier du contenu d’un environnement de production AEM as a Cloud Service vers un environnement d’évaluation, de développement ou [Environnement de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environnement pour de tels tests.
+Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu vous permet de copier du contenu d’un environnement AEM as a Cloud Service de production vers un environnement d’évaluation, de développement ou de [Environnement de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) pour de tels tests.
 
 Le contenu à copier est défini par un jeu de contenu. Un jeu de contenu est constitué d’une liste de chemins JCR qui contiennent le contenu modifiable à copier d’un environnement source de service de création vers un environnement cible de service de création, dans le même programme Cloud Manager. Les chemins d’accès suivants sont autorisés dans un jeu de contenu.
 
@@ -43,7 +43,7 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 | Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Obligatoire |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
-Pour plus d’informations sur les autorisations et leur définition, voir [AEM équipe as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md).
+Pour plus d’informations sur les autorisations et sur la façon de les définir, voir [Équipe AEM as a Cloud Service et Profils de produit](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Créer un jeu de contenu {#create-content-set}
 
@@ -51,13 +51,13 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. À l’aide du panneau de navigation latéral, accédez au **Visionneuses de contenu** à partir de la **Présentation** page.
+1. À l’aide du panneau de navigation latéral, accédez à l’onglet **Visionneuses de contenu** à partir de la page **Aperçu**.
 
 1. Dans le coin supérieur droit de l’écran, cliquez sur **Ajouter un jeu de contenu**.
 
    ![Jeux de contenu](assets/content-sets.png)
 
-1. Sur le **Détails** dans l’assistant, indiquez le nom et la description du jeu de contenu, puis sélectionnez **Continuer**.
+1. Dans l’onglet **Détails** de l’assistant, indiquez un nom et une description pour le jeu de contenu, puis sélectionnez **Continuer**.
 
    ![Détails du jeu de contenu](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
    1. Dans la liste des chemins d’accès inclus, appuyez ou cliquez sur l’icône **Ajouter des sous-chemins à exclure** en regard du chemin que vous devez limiter.
    1. Saisissez le sous-chemin d’accès à exclure sous le chemin d’accès sélectionné.
-   1. Sélectionner **Exclure le chemin**.
-   1. Sélectionner **Ajouter des sous-chemins d’exclusion** pour ajouter d’autres chemins à exclure, le cas échéant.
+   1. Sélectionnez **Exclure le chemin**.
+   1. Sélectionnez à nouveau **Ajouter des sous-chemins d’exclusion** pour ajouter des chemins d’accès supplémentaires à exclure, si nécessaire.
       * Les chemins exclus doivent être relatifs au chemin inclus.
       * Le nombre de chemins exclus n’est pas limité.
 
@@ -88,7 +88,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
    ![Modification de la liste de chemins](assets/add-content-set-excluded-paths.png)
 
-1. Sélectionner **Créer** pour créer le jeu de contenu.
+1. Sélectionnez **Créer** pour créer le jeu de contenu.
 
 Le jeu de contenu peut désormais être utilisé pour copier du contenu entre des environnements.
 
@@ -181,9 +181,9 @@ Pour ce faire, sur la page **Activité de copie de contenu**, sélectionnez l’
 
 Vous pouvez consulter les journaux des environnements source et de destination pour tout processus de copie de contenu terminé.
 
-Pour ce faire, sur la page **Copie de l’activité de contenu** , sélectionnez **Journaux** dans le menu représentant des points de suspension du processus de copie pour lequel vous souhaitez consulter les journaux, puis choisissez l’environnement pour lequel vous souhaitez effectuer la vérification.
+Pour ce faire, sur la page **Copier l’activité de contenu**, sélectionnez l’action **Journaux** dans le menu avec points de suspension du processus de copie pour lequel vous souhaitez consulter les journaux, puis choisissez pour quel environnement.
 
-![Accès aux journaux du processus de copie de contenu](assets/copy-content-logs.png)
+![Accès aux journaux pour copier le processus de contenu](assets/copy-content-logs.png)
 
 Les journaux sont téléchargés sur votre ordinateur local. Si le téléchargement ne commence pas, vérifiez les paramètres du bloqueur de fenêtres contextuelles.
 

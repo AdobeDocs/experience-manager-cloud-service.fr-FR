@@ -116,7 +116,7 @@ Pour autoriser le téléchargement de DAM à partir de votre gestion des ressour
 
    `/apps/<your-app-name>/config.publish`
 
-1. Dans le dossier de configuration, créez un fichier de type `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
+1. Dans le dossier de configuration, créez un fichier de type `nt:file` nommé `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Remplissez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` avec les éléments suivants. Définit une taille maximale (en octets) pour le téléchargement en tant que valeur de `asset.download.prezip.maxcontentsize`. L’exemple ci-dessous configure la taille maximale du téléchargement ZIP pour qu’il ne dépasse pas 100 Ko.
 
    ```java
@@ -134,12 +134,12 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 
 ## Rendu onTime ou OffTime {#on-off-time-rendition}
 
-Pour activer la variable `OnOffTimeAssetAccessFilter` , vous devez créer une configuration OSGi. Ce service permet de bloquer l’accès aux rendus et aux métadonnées en plus de la ressource elle-même en fonction des paramètres d’heure d’activation/de désactivation. La configuration OSGi doit être pour `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Suivez les étapes ci-dessous :
+Pour activer le service `OnOffTimeAssetAccessFilter`, vous devez créer une configuration OSGi. Ce service permet de bloquer l’accès aux rendus et aux métadonnées en plus de la ressource elle-même en fonction des paramètres d’heure d’activation/de désactivation. La configuration OSGi doit être définie sur `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Suivez les étapes ci-dessous :
 
-1. Dans le code de votre projet dans Git, créez un fichier de configuration à l’adresse `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Le fichier doit contenir `{}` comme son contenu, ce qui signifie une configuration OSGi vide pour le composant OSGi correspondant. Cette action active le service.
+1. Dans le code de votre projet dans Git, créez un fichier de configuration à l’emplacement `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Le fichier doit contenir `{}` en tant que contenu, ce qui signifie une configuration OSGi vide pour le composant OSGi correspondant. Cette action active le service.
 1. Déployez votre code, y compris cette nouvelle configuration, via [!DNL Cloud Manager].
 1. Une fois déployé, les rendus et les métadonnées sont accessibles en fonction des paramètres d’heure d’activation/de désactivation des ressources. Si la date ou l’heure actuelle est antérieure à l’heure actuelle ou après l’heure de désactivation, un message d’erreur s’affiche.
-Pour plus d’informations sur l’ajout d’une configuration OSGi vide, voir ceci [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr).
+Pour plus d’informations sur l’ajout d’une configuration OSGi vide, consultez ce [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr).
 
 ## Conseils et restrictions {#tips-limitations}
 

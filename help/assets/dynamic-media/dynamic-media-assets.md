@@ -4,7 +4,7 @@ description: Dynamic Media fournit des ressources visuelles de marchandisage et
 contentOwner: Rick Brough
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '165'
 ht-degree: 100%
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: Quels sont les problèmes connus et les limites de l’environnement as a Cloud Service d’AEM Forms ?
-description: Problèmes connus et limites de  [!DNL AEM Forms] Environnement as a Cloud Service.
+description: Problèmes connus et limites de l’environnement  [!DNL AEM Forms] as a Cloud Service.
 contentOwner: khsingh
 role: Admin, Developer, User
 feature: Adaptive Forms

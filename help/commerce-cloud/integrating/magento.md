@@ -54,5 +54,5 @@ Dans les projets, les composants principaux AEM CIF et les composants de projet 
 
 ## Recherche {#search}
 
-CIF fournit une [Composant principal de recherche](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) qui est une expérience de recherche rendue côté serveur basée sur [API COMMERCE GRAPHQL](https://developer.adobe.com/commerce/webapi/graphql/). Les clients Commerce peuvent utiliser [Recherche en direct](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) au lieu de . Suivez les étapes suivantes : [link](/help/commerce-cloud/integrating/live-search-plp.md) pour en savoir plus sur l’intégration CIF - Recherche en direct.
+CIF fournit par défaut un [composant principal de recherche](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) qui est une expérience de recherche générée côté serveur basée sur l’ [API Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/). Les clients Commerce ont la possibilité d&#39;utiliser [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) à la place. Suivez ce [lien](/help/commerce-cloud/integrating/live-search-plp.md) pour en savoir plus sur l’intégration CIF - Recherche en direct.
 

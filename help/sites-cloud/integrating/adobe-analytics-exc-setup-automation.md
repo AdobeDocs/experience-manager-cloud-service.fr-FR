@@ -48,12 +48,12 @@ L’environnement doit maintenant être prêt pour l’automatisation de la conf
 1. Développez le menu du rail latéral et sélectionnez **Configuration d’Analytics**.
 
    Il s’agit d’une nouvelle option du rail latéral qui ouvre un panneau qui fournit des commandes et un état pour l’automatisation de la configuration de l’Experience Cloud.
-1. Sélectionnez la variable **Intégration d’Analytics** bouton .
+1. Sélectionnez le bouton **Intégrer Analytics** .
 1. Dans la boîte de dialogue qui s’affiche, fournissez un nom au **Identifiant de suite de rapports**.
 
-   Cette chaîne est utilisée pour créer une [Identifiant de suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr) dans Adobe Analytics comme entrepôt de données pour les données d’analyse du site AEM sélectionné. La chaîne fournie est ajoutée avec les identifiants d’environnement et de niveau pour garantir l’unicité.
+   Cette chaîne est utilisée pour créer un [identifiant de suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr) dans Adobe Analytics comme entrepôt de données pour les données d’analyse du site d’AEM sélectionné. La chaîne fournie est ajoutée avec les identifiants d’environnement et de niveau pour garantir l’unicité.
 
-1. Actualisez la page et le panneau, puis sélectionnez **Vérification de l’état d’intégration** pour vérifier l’état de l’automatisation.
+1. Actualisez la page et le panneau et sélectionnez **Vérifier l’état de l’intégration** pour vérifier l’état de l’automatisation.
 
    La configuration de l’automatisation se produit de manière asynchrone. La **Vérification de l’état d’intégration** affiche l’état actuel de l’intégration.
 
@@ -76,7 +76,7 @@ Ensuite, accédez à Adobe Analytics pour afficher les données provenant des �
 
 1. Accédez à Adobe Analytics dans la même organisation IMS que votre site AEM.
 1. Création d’un rapport d’aperçu pour AEM Sites en accédant à **Rapports** > **Engagement** > **Adobe Experience Manager** > **Aperçu des performances du site**.
-1. Sélectionner **Ouvrir le rapport**.
+1. Sélectionnez **Ouvrir le rapport**.
 1. Sélectionnez l’**Identifiant de suite de rapports** qui correspond au nom de la suite de rapports utilisé dans l’exercice précédent.
 1. Affichez le flux de données d’analyse dans le nouveau modèle au fil du temps.
 

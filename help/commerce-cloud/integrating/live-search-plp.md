@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Live Search] Page de liste de produits CIF composant'
-description: Utilisation de CIF composants pour activer [!DNL Live Search] Composant Page de liste de produits sur un site AEM
+title: '[!DNL Live Search] Composant CIF de page de liste de produits'
+description: Utilisation de CIF composants pour activer le composant  [!DNL Live Search] Page de liste de produits sur un site AEM
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Composant CIF {#live-search-cif-component}
+# [!DNL Live Search] CIF composant {#live-search-cif-component}
 
 La recherche en direct pour Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive, sans frais supplémentaires. La recherche en direct optimisée par Adobe Sensei utilise l’intelligence artificielle et des algorithmes d’apprentissage automatique pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, génèrent des expériences d’achat pertinentes et personnalisées.
 
-Cette rubrique décrit l’utilisation d’un composant CIF d’AEM pour mettre en oeuvre le [!DNL Live Search] Widget Page de liste de produits (PLP) dans votre site AEM.
+Cette rubrique décrit l’utilisation d’un composant CIF d’AEM pour implémenter le widget [!DNL Live Search] Product Listing Page (PLP) sur votre site AEM.
 
 ## Conditions préalables {#prerequisites}
 
-Cette rubrique suppose que vous disposez d’un [Environnement AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr) configuré.
+Cette rubrique suppose que vous avez configuré un [environnement AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr) local.
 
-Le composant PLP nécessite la fonction [[!DNL Live Search] Composant CIF contextuel](live-search-popover.md) à installer. Le widget PLP nécessite une variable de session de navigateur générée par la fenêtre contextuelle.
+Le composant PLP nécessite l’installation du [[!DNL Live Search] composant CIF de fenêtre contextuelle](live-search-popover.md). Le widget PLP nécessite une variable de session de navigateur générée par la fenêtre contextuelle.
 
 ## Mettre à jour le compositeur {#update-composer}
 
-Ajouter des modules d’événement à `ui.frontend/package.json`.
+Ajoutez des modules d’événement à `ui.frontend/package.json`.
 
 À la ligne 27, changez :
 
@@ -54,11 +54,11 @@ vers :
 
 ## Modifications des fichiers {#files-changes}
 
-Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . Modifiez les fichiers suivants. Les numéros de ligne peuvent être légèrement différents de ceux affichés ici.
+Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité [!DNL Live Search]. Modifiez les fichiers suivants. Les numéros de ligne peuvent être légèrement différents de ceux affichés ici.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-cif/.content.xml
 
-  Ajouter `core.cif.productlist.v1` à la fonction `embed` ligne.
+  Ajoutez `core.cif.productlist.v1` à la ligne `embed`.
 
   ```
   embed="[core.cif.components.common,core.cif.components.product.v3,core.cif.components.productcarousel.v1,core.cif.components.productcollection.v2,core.cif.components.productteaser.v1,core.cif.components.searchbar.v2,core.cif.components.header.v1,core.cif.components.carousel.v1,core.cif.components.categorycarousel.v1,core.cif.components.featuredcategorylist.v1,core.cif.components.storefront-events.v1,core.cif.components.extensions.product-recs.storefront-events-collector.v1,core.wcm.components.commons.site.link,core.cif.productlist.v1]"
@@ -66,7 +66,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/.content.xml
 
-  Création d’un fichier `.content.xml`:
+  Créez un fichier `.content.xml` :
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -79,7 +79,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css.txt
 
-  Création du fichier `css.txt`:
+  Créez le fichier `css.txt` :
 
   ```text
   #base=css
@@ -89,7 +89,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css/productlist.css
 
-  Création du fichier `productlist.css`
+  Créez le fichier `productlist.css`
 
   ```css
     /* #search-plp-root */
@@ -118,7 +118,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js.txt
 
-  Création du fichier `js.txt`:
+  Créez le fichier `js.txt` :
 
   ```text
   js/productlist.js
@@ -126,7 +126,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js/productlist.js
 
-  Création du fichier `productlist.js`:
+  Créez le fichier `productlist.js` :
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -281,7 +281,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/productlist.html
 
-  Créer un fichier `productlist.html`:
+  Créer un fichier `productlist.html` :
 
   ```html
   <div
@@ -295,7 +295,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchresults/.content.xml
 
-  Modifier `.content.xml` à la ligne 6 :
+  Modifiez `.content.xml` à la ligne 6 :
 
   ```xml
   sling:resourceSuperType="venia/components/commerce/productlist"
@@ -303,7 +303,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.content/src/main/content/jcr_root/content/venia/language-masters/en/search/.content.xml
 
-  Modifier `.content.xml` sur la ligne 21-22 :
+  Modifiez `.content.xml` sur la ligne 21-22 :
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -311,7 +311,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.content/src/main/content/jcr_root/content/venia/us/en/search/.content.xml
 
-  Modifier `.content.xml` à la ligne 26 :
+  Modifiez `.content.xml` sur la ligne 26 :
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -319,7 +319,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.frontend/src/main/components/App/App.js
 
-  Modifier `App.js` sur la ligne 47, juste au-dessus de la ligne `../../site/main.scss`:
+  Modifiez `App.js` sur la ligne 47, juste au-dessus de `../../site/main.scss` :
 
   ```javascript
   import '@adobe/magento-storefront-event-collector';
@@ -327,7 +327,7 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 * ui.tests/test-module/specs/venia/productlist-dialog.js
 
-  Modifier `productlist-dialog.js` et changer `describe` to `describe.skip` à la ligne 20 :
+  Modifiez `productlist-dialog.js` et remplacez `describe` par `describe.skip` à la ligne 20 :
 
   ```javascript
   describe.skip('Product List Component Dialog', function () {
@@ -337,14 +337,14 @@ Plusieurs fichiers doivent être mis à jour pour activer [!DNL Live Search] . M
 
 Il peut y avoir certaines catégories dans lesquelles la catégorie ou la page de catalogue par défaut est souhaitée, plutôt que d’utiliser le widget PLP. Dans AEM, ces pages de catégorie doivent être configurées manuellement.
 
-1. Sur la page Auteur , sélectionnez un modèle de page de catégorie. _Venia Store - Accueil_ > _Page du catalogue_ > _Magasin Venia - Page de catégorie_ et sélectionnez &quot;Shop the look&quot; ou créez un modèle de page.
+1. Sur la page Auteur , sélectionnez un modèle de page de catégorie. _Venia Store - Home_ > _Catalog Page_ > _Venia Store - Category Page_ et sélectionnez &quot;Shop the look&quot; ou créez un modèle de page.
 
-![Sélectionner le modèle](../assets/cif-widget-1.jpg)
+![Sélectionnez le modèle](../assets/cif-widget-1.jpg)
 
-1. Cliquez sur le bouton _Propriétés_ et sélectionnez la variable _Commerce_ .
+1. Cliquez sur la section _Propriétés_ et sélectionnez l’onglet _Commerce_ .
 
-![Sélectionner les propriétés](../assets/cif-widget-2.jpg)
+![Choisir les propriétés](../assets/cif-widget-2.jpg)
 
 1. Sélectionnez la catégorie à afficher avec le modèle de page de catégorie sélectionné.
 
-![Sélectionner la catégorie](../assets/cif-widget-3.jpg)
+![Sélectionnez la catégorie](../assets/cif-widget-3.jpg)

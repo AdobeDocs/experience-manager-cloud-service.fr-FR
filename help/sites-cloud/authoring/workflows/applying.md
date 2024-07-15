@@ -55,7 +55,7 @@ Vous pouvez démarrer un workflow des deux manières suivantes :
 * [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
-Dans les deux cas, vous devez [Spécification des détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
+Dans les deux cas, vous devez [spécifier les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Démarrage d’un workflow à partir de la barre d’outils Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -119,7 +119,7 @@ Indiquez les détails suivants :
 
 1. À l’étape **Domaine**, vous pouvez sélectionner :
 
-   * **Ajouter du contenu** pour ouvrir le [navigateur de chemin](/help/sites-cloud/authoring/path-selection.md) et sélectionner des ressources supplémentaires ; lorsque vous vous trouvez dans le navigateur, sélectionnez **Sélectionner** pour ajouter le contenu à l’instance de workflow.
+   * **Ajoutez du contenu** pour ouvrir le [navigateur de chemins d’accès](/help/sites-cloud/authoring/path-selection.md) et sélectionner des ressources supplémentaires. Lorsque vous êtes dans le navigateur, sélectionnez **Sélectionner** pour ajouter le contenu à l’instance de workflow.
 
    * Une ressource existante pour afficher d’autres actions :
 

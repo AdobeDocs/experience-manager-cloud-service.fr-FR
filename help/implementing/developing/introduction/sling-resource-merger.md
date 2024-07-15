@@ -190,7 +190,7 @@ Ceux-ci, associés aux fonctionnalités standard, vous permettent d’effectuer 
 
 * **Masquer les enfants d’un nœud (tout en conservant les propriétés du nœud)**
 
-  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le noeud et ses propriétés sont requis dans la variable `/apps` overlay/override, mais certains ou tous les noeuds enfants ne sont pas nécessaires dans la variable `/apps` superposition/remplacement.
+  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le noeud et ses propriétés sont requis dans le recouvrement/remplacement de `/apps`, mais certains ou tous les noeuds enfants ne sont pas requis dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
@@ -222,7 +222,7 @@ Sling Resource Merger comprend deux fournisseurs de ressources personnalisés�
 >
 >Lors de l’accès à votre ressource, il est recommandé d’utiliser le point de montage approprié.
 >
->Cela garantit que Sling Resource Merger est appelé et que la ressource entièrement fusionnée est renvoyée (ce qui réduit la structure à partir de laquelle la réplication doit être effectuée. `/libs`).
+>Cela garantit que Sling Resource Merger est appelé et que la ressource entièrement fusionnée est renvoyée (réduction de la structure qui doit être répliquée à partir de `/libs`).
 
 * Recouvrement :
 

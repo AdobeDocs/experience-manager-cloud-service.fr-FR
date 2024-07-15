@@ -37,7 +37,7 @@ Avec la surveillance personnalisée, la clientèle peut éventuellement fournir 
 
 >[!NOTE]
 >
-> Cette fonctionnalité n’est proposée que pour les environnements de production et les clients ayant des [Prise en charge avancée du cloud.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons?lang=fr) Si vous avez des questions, contactez votre équipe Adobe en charge des comptes.
+> Cette fonctionnalité est uniquement proposée aux environnements de production et aux clients disposant de l’[ assistance cloud avancée.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons?lang=fr) Si vous avez des questions, contactez votre équipe Adobe en charge des comptes.
 
 ## Surveillance des modules internes {#module-monitoring}
 

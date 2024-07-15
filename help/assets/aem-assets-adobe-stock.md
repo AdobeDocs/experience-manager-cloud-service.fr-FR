@@ -124,7 +124,7 @@ La clé publique (certificat) authentifie votre profil sur la console Adobe Deve
 
 1. Dans la page Configurations d’Adobe IMS, cliquez sur **[!UICONTROL Créer]**. La page **[!UICONTROL Configuration du compte technique Adobe IMS]** s’affiche.
 
-1. Dans le **[!UICONTROL Certificat]** onglet, sélectionnez **[!UICONTROL Adobe Stock]** de la **[!UICONTROL Solution cloud]** liste déroulante.
+1. Dans l’onglet **[!UICONTROL Certificate]**, sélectionnez **[!UICONTROL Adobe Stock]** dans la liste déroulante **[!UICONTROL Solution cloud]**.
 
 1. Vous pouvez créer un certificat ou réutiliser un certificat existant pour la configuration.
 
@@ -271,7 +271,7 @@ Vous pouvez créer un groupe d’utilisateurs ou attribuer des autorisations à 
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Adobe Stock]**. Sélectionnez la configuration du cloud d’[!DNL Adobe Stock] et cliquez sur **[!UICONTROL Propriétés]**.
 
-1. Ajoutez le groupe d’utilisateurs créé au [!DNL Adobe Stock] configuration. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+1. Ajoutez le groupe d’utilisateurs créé à la configuration [!DNL Adobe Stock]. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
    ![affecter-utilisateur](assets/aem-stock-adduser.png)
 
@@ -308,7 +308,7 @@ Pour activer la configuration cloud d’[!DNL Adobe Stock] :
 
 1. Cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **[!UICONTROL Mes préférences]**. La fenêtre des **[!UICONTROL Préférences utilisateur]** s’ouvre.
 
-1. Sélectionnez la **[!UICONTROL Configuration des stocks]** dans la liste déroulante, puis cliquez sur **[!UICONTROL Accepter]** pour activer la configuration.
+1. Sélectionnez la **[!UICONTROL configuration de stock]** souhaitée dans la liste déroulante et cliquez sur **[!UICONTROL Accepter]** pour activer la configuration.
 
    ![préférences-utilisateur](assets/aem-stock-preferences.png)
 

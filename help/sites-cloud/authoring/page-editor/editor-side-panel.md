@@ -18,7 +18,7 @@ Découvrez comment utiliser le panneau latéral dans l’éditeur de sites d’A
 
 ## Modes du panneau latéral {#modes}
 
-Le panneau latéral est toujours accessible dans l’éditeur de page en appuyant ou en cliquant sur le **Activer/désactiver le panneau latéral** dans la barre d’outils de l’éditeur de page.
+Le panneau latéral est toujours accessible dans l’éditeur de page en appuyant ou en cliquant sur l’icône **Activer/désactiver le panneau latéral** dans la barre d’outils de l’éditeur de page.
 
 ![Bascule du panneau latéral](assets/editor-side-panel-side-panel-toggle.png)
 
@@ -30,11 +30,11 @@ Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côt
 
 ## Explorateur de composants {#components-browser}
 
-[Composants](/help/implementing/developing/components/overview.md) sont les blocs de création utilisés pour créer du contenu avec l’éditeur de page d’AEM. Vous placez plusieurs composants sur une page et configurez leurs options pour créer votre page de contenu.
+[Les composants](/help/implementing/developing/components/overview.md) sont les blocs de création utilisés pour créer du contenu avec l’éditeur de page d’AEM. Vous placez plusieurs composants sur une page et configurez leurs options pour créer votre page de contenu.
 
 L’explorateur de composants présente tous les composants que vous pouvez utiliser sur la page active. Vous pouvez les faire glisser à l’emplacement approprié, puis les modifier pour ajouter votre contenu.
 
-Appuyez ou cliquez sur le bouton **Composants** dans le panneau latéral pour accéder à la variable **Composants** navigateur.
+Appuyez ou cliquez sur l’onglet **Components** dans le panneau latéral pour accéder au navigateur **Components** .
 
 ![Icône du navigateur de composants dans le panneau latéral](assets/editor-side-panel-components-browser.png)
 
@@ -62,7 +62,7 @@ Pour ajouter un composant à votre page, cliquez sur le composant requis et fait
 
 ### Utilisation de l’explorateur de composants {#using-component-browser}
 
-Composants du **Composants** Les navigateurs sont représentés par :
+Les composants du navigateur **Components** sont représentés par :
 
 * Nom du composant
 * Groupe de composants (en gris)
@@ -75,17 +75,17 @@ Dans la barre d’outils supérieure de l’explorateur de **composants**, vous 
 * Filtrer les composants par nom
 * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante.
 
-Pour obtenir une description plus détaillée du composant, vous pouvez sélectionner l’icône d’informations en regard du composant dans la variable **Composants** navigateur (le cas échéant). Par exemple, pour le **fragment de contenu** :
+Pour obtenir une description plus détaillée du composant, vous pouvez sélectionner l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **fragment de contenu** :
 
 ![Informations de l’explorateur de composants](assets/editor-side-panel-component-description.png)
 
-Pour plus d’informations sur les composants disponibles, voir [Console de composants.](/help/sites-cloud/authoring/components-console.md)
+Pour plus d’informations sur les composants disponibles, voir la [console de composants.](/help/sites-cloud/authoring/components-console.md)
 
 ## Explorateur de ressources {#assets-browser}
 
-La variable **Ressources** Le navigateur affiche toutes les [ressources](/help/assets/overview.md) qui peuvent être utilisées sur la page active.
+Le navigateur **Assets** affiche toutes les [ressources](/help/assets/overview.md) disponibles sur votre page actuelle.
 
-Appuyez ou cliquez sur le bouton **Ressources** dans le panneau latéral pour parcourir les ressources.
+Appuyez ou cliquez sur l’onglet **Assets** du panneau latéral pour parcourir les ressources.
 
 ![Bouton de l’explorateur de ressources](assets/editor-side-panel-assets-browser-tab.png)
 
@@ -115,7 +115,7 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
 ![Explorateur de ressources sur bureau](assets/editor-side-panel-assets-browser-desktop.png)
 
-### Utilisation de l’explorateur de ressources {#using-assets-browser}
+### Utilisation du navigateur Assets {#using-assets-browser}
 
 Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser jusqu’à l’emplacement souhaité. Il peut s’agir des éléments suivants :
 
@@ -142,13 +142,13 @@ Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeu
 
 ## Arborescence de contenu {#content-tree}
 
-La variable **Arborescence de contenu** donne un aperçu de tous les composants de la page dans une hiérarchie afin que vous puissiez voir en un coup d’oeil comment la page est composée.
+L’ **arborescence de contenu** donne un aperçu de tous les composants de la page dans une hiérarchie afin que vous puissiez voir en un coup d’oeil comment la page est composée.
 
 >[!NOTE]
 >
 >L’arborescence de contenu n’est pas disponible si vous modifiez une page sur un appareil mobile (si la largeur de l’explorateur est inférieure à 1 024 px).
 
-Appuyez ou cliquez sur le bouton **Arborescence de contenu** pour accéder à l’arborescence de contenu.
+Appuyez ou cliquez sur l’onglet **Arborescence de contenu** pour accéder à l’arborescence de contenu.
 
 ![Bouton Arborescence de contenu](assets/editor-side-panel-content-tree-tab.png)
 
@@ -178,8 +178,8 @@ Si le composant sur lequel vous cliquez est éditable, une icône de clé à mol
 
 ### Une Live Copy {#live-copy}
 
-Une page qui fait partie d’une [livecopy](/help/sites-cloud/administering/msm/overview.md), où les composants sont hérités d’une autre page, propose différentes options.
+Une page qui fait partie d’une [Live Copy](/help/sites-cloud/administering/msm/overview.md), où les composants sont hérités d’une autre page, aura différentes options.
 
 ## Explorateur de contenu associé {#associated-content-browser}
 
-Si votre page contient des fragments de contenu, vous avez également accès au [pour le contenu associé.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+Si votre page contient des fragments de contenu, vous avez également accès au [navigateur pour le contenu associé.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)

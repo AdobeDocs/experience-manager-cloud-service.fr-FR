@@ -84,7 +84,7 @@ Pour importer des composants du portail Formulaires prêts à l’emploi sur AEM
 
 ## Configurer le stockage Azure pour les formulaires adaptatifs {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] Intégration de données](data-integration.md) fournit une configuration de stockage [!DNL Azure] pour intégrer des formulaires aux services de stockage [!DNL Azure]. Le modèle de données de formulaire (FDM) peut être utilisé pour créer un Forms adaptatif qui interagit avec [!DNL Azure] pour activer les workflows métier.
+[[!DNL Experience Manager Forms] Intégration de données](data-integration.md) fournit une configuration de stockage [!DNL Azure] pour intégrer des formulaires aux services de stockage [!DNL Azure]. Le modèle de données de formulaire (FDM) peut être utilisé pour créer un Forms adaptatif qui interagit avec le serveur [!DNL Azure] pour activer les processus d’entreprise.
 
 ### Créer une configuration de stockage Azure {#create-azure-storage-configuration}
 
@@ -102,7 +102,7 @@ Suivez les étapes suivantes pour configurer le connecteur de stockage unifié p
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Connecteur de stockage unifié]**.
 1. Dans la section **[!UICONTROL Portail Formulaires]**, sélectionnez **[!UICONTROL Azure]** dans la liste déroulante **[!UICONTROL Stockage]**.
 1. Spécifiez le [chemin de configuration pour la configuration de stockage Azure](#create-azure-storage-configuration) dans le champ **[!UICONTROL Chemin de configuration de stockage]**.
-1. Sélectionner **[!UICONTROL Publish]** puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
+1. Sélectionnez **[!UICONTROL Publish]**, puis **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
 ## Activer les composants du portail Formulaires {#enable-forms-portal-components}
 
@@ -114,11 +114,11 @@ Une fois qu’un composant de portail est activé, vous pouvez l’utiliser dans
 
 Vous pouvez créer et personnaliser le Portail Formulaires sur les sites web créés à l’aide d’AEM en ajoutant et en configurant les composants du portail. Assurez-vous que les [composants sont activés](#enable-forms-portal-components) avant de les utiliser dans le Portail Formulaires.
 
-Pour ajouter un composant, faites-le glisser du panneau Composants vers le conteneur de mises en page ou sélectionnez l’icône d’ajout sur le conteneur de mises en page et ajoutez-le à partir du [!UICONTROL Insérer un nouveau composant] boîte de dialogue.
+Pour ajouter un composant, faites-le glisser du panneau Composants vers le conteneur de mises en page sur la page ou sélectionnez l’icône Ajouter du conteneur de mises en page et ajoutez le composant à partir de la boîte de dialogue [!UICONTROL Insérer un nouveau composant].
 
 ### Configuration du composant Brouillons et envois {#configure-drafts-submissions-component}
 
-Le composant Brouillons et envois affiche les formulaires enregistrés en tant que brouillons en vue d’être remplis ultérieurement et les formulaires envoyés. Pour configurer, sélectionnez le composant, puis sélectionnez l’option ![Icône Configurer](assets/configure_icon.png). Dans la boîte de dialogue [!UICONTROL Brouillons et envois], spécifiez le titre pour indiquer la liste des formulaires en tant que brouillons ou formulaires envoyés. Indiquez également si le composant doit énumérer les brouillons de formulaires ou les formulaires envoyés au format vignette ou liste.
+Le composant Brouillons et envois affiche les formulaires enregistrés en tant que brouillons en vue d’être remplis ultérieurement et les formulaires envoyés. Pour la configuration, sélectionnez le composant, puis sélectionnez l’icône ![Configurer](assets/configure_icon.png). Dans la boîte de dialogue [!UICONTROL Brouillons et envois], spécifiez le titre pour indiquer la liste des formulaires en tant que brouillons ou formulaires envoyés. Indiquez également si le composant doit énumérer les brouillons de formulaires ou les formulaires envoyés au format vignette ou liste.
 
 ![Icône Brouillons](assets/drafts-component.png)
 
@@ -130,7 +130,7 @@ Le composant Recherche et énumérateur est utilisé pour énumérer les formula
 
 ![Icône Recherche et énumérateur](assets/search-and-lister-component.png)
 
-Pour configurer, sélectionnez le composant, puis sélectionnez l’option ![Icône Configurer](assets/configure_icon.png). La boîte de dialogue [!UICONTROL Recherche et énumérateur] s’ouvre.
+Pour la configuration, sélectionnez le composant, puis sélectionnez l’icône ![Configurer](assets/configure_icon.png). La boîte de dialogue [!UICONTROL Recherche et énumérateur] s’ouvre.
 
 1. Dans l’onglet [!UICONTROL Affichage], configurez ce qui suit :
    * Dans **[!UICONTROL Titre]**, spécifiez le titre du composant Recherche et énumérateur. Un titre indicatif permet aux utilisateurs d’effectuer une recherche rapide dans la liste des formulaires.
@@ -142,7 +142,7 @@ Pour configurer, sélectionnez le composant, puis sélectionnez l’option ![Ic�
 
 ### Configurer le composant Lien {#configure-link-component}
 
-Le composant Lien vous permet de fournir des liens vers un formulaire adaptatif sur la page. Pour configurer, sélectionnez le composant, puis sélectionnez l’option ![Icône Configurer](assets/configure_icon.png). La boîte de dialogue [!UICONTROL Modifier le composant Lien] s’ouvre.
+Le composant Lien vous permet de fournir des liens vers un formulaire adaptatif sur la page. Pour la configuration, sélectionnez le composant, puis sélectionnez l’icône ![Configurer](assets/configure_icon.png). La boîte de dialogue [!UICONTROL Modifier le composant Lien] s’ouvre.
 
 1. Dans l’onglet [!UICONTROL Affichage], fournissez la légende du lien et l’info-bulle pour faciliter l’identification des formulaires représentés par le lien.
 1. Dans l’onglet [!UICONTROL Informations sur les ressources], spécifiez le chemin d’accès au référentiel où la ressource est stockée.
@@ -153,7 +153,7 @@ Le composant Lien vous permet de fournir des liens vers un formulaire adaptatif 
 Vous pouvez configurer pour envoyer un formulaire adaptatif uniquement lorsque tous les destinataires ont terminé la cérémonie de signature. Suivez les étapes ci-dessous pour configurer le paramètre à l’aide d’Adobe Sign.
 
 1. Dans l’instance de création, ouvrez un formulaire adaptatif en mode d’édition.
-1. Dans le volet de gauche, sélectionnez l’icône Propriétés et développez l’objet **[!UICONTROL SIGNTAGE ÉLECTRONIQUE]** .
+1. Dans le volet de gauche, sélectionnez l’icône Propriétés et développez l’option **[!UICONTROL SIGNTATURE ÉLECTRONIQUE]** .
 1. Sélectionnez **[!UICONTROL Activer Adobe Sign]**. Différentes options de configuration s’affichent.
 1. Dans la section [!UICONTROL Envoyer le formulaire], sélectionnez l’option **[!UICONTROL après que chaque destinataire a terminé la cérémonie de signature]** pour configurer l’action Envoyer le formulaire, où le formulaire est d’abord envoyé à tous les destinataires pour signature. Une fois que tous les destinataires ont signé le formulaire, le formulaire est envoyé.
 
@@ -169,10 +169,10 @@ Vous pouvez enregistrer les formulaires en tant que brouillons en vue de les rem
 Pour créer une règle &quot;Enregistrer le formulaire&quot; sur un composant de formulaire, par exemple un bouton, procédez comme suit :
 
 1. Dans l’instance de création, ouvrez un formulaire adaptatif en mode d’édition.
-1. Dans le volet de gauche, sélectionnez ![Icône Composants](assets/components_icon.png) et faites glisser le [!UICONTROL Bouton] du formulaire.
-1. Sélectionnez la variable [!UICONTROL Bouton] , puis sélectionnez la variable ![Icône Configurer](assets/configure_icon.png).
-1. Sélectionnez la variable [!UICONTROL Modifier des règles] pour ouvrir l’éditeur de règles.
-1. Sélectionner **[!UICONTROL Créer]** pour configurer et créer la règle.
+1. Dans le volet de gauche, sélectionnez ![Icône Composants](assets/components_icon.png) et faites glisser le composant [!UICONTROL Bouton] vers le formulaire.
+1. Sélectionnez le composant [!UICONTROL Bouton], puis sélectionnez l’ ![icône de configuration](assets/configure_icon.png).
+1. Sélectionnez l’icône [!UICONTROL Modifier les règles] pour ouvrir l’éditeur de règles.
+1. Sélectionnez **[!UICONTROL Créer]** pour configurer et créer la règle.
 1. Dans la section [!UICONTROL Quand], sélectionnez « est cliqué » et dans la section [!UICONTROL Après], sélectionnez les options « Enregistrer le formulaire ».
 1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
 
@@ -181,7 +181,7 @@ Pour créer une règle &quot;Enregistrer le formulaire&quot; sur un composant de
 Vous pouvez configurer la fonction d’enregistrement automatique d’un formulaire adaptatif comme suit :
 
 1. Dans l’instance de création, ouvrez un formulaire adaptatif en mode d’édition.
-1. Dans le volet de gauche, sélectionnez la variable ![Icône Propriétés](assets/configure_icon.png) et développez la variable [!UICONTROL ENREGISTREMENT AUTOMATIQUE] .
+1. Dans le volet de gauche, sélectionnez l’![icône Propriétés](assets/configure_icon.png) et développez l’option [!UICONTROL ENREGISTREMENT AUTOMATIQUE] .
 1. Sélectionnez la case à cocher **[!UICONTROL Activer]** pour activer l’enregistrement automatique du formulaire. Vous pouvez configurer les éléments suivants :
 * Par défaut, l’[!UICONTROL Événement de formulaire adaptatift] est défini sur « true », ce qui implique que le formulaire est enregistré automatiquement après chaque événement.
 * Dans [!UICONTROL Déclencheur], configurez l’option pour déclencher l’enregistrement automatique en fonction de l’occurrence d’un événement ou d’un intervalle de temps spécifique.

@@ -46,12 +46,12 @@ Un ou une architecte de l’information ne réaliserait ces tâches qu’occasio
 
 1. Lorsque vous avez terminé de créer votre modèle, sélectionnez **Enregistrer**.
 
-1. Le mode du modèle créé varie selon que vous avez sélectionné ou non **Activer le modèle** lors de la création du modèle :
+1. Le mode du modèle créé dépend de si vous avez sélectionné **Activer le modèle** lors de la création du modèle :
    * sélectionné - le nouveau modèle sera déjà **Activé**
    * non sélectionné - le nouveau modèle sera créé en mode **Brouillon**
 
 1. S’il n’est pas déjà activé, le modèle doit être **Activé** pour pouvoir l’utiliser.
-   1. Sélectionnez le modèle que vous avez créé, puis sélectionnez **Activer**.
+   1. Sélectionnez le modèle que vous avez créé, puis **Activer**.
 
       ![Activation du modèle](../assets/models-enable.png)
    1. Confirmez l’activation du modèle en appuyant ou en cliquant sur **Activer** dans la boîte de dialogue de confirmation.

@@ -25,7 +25,7 @@ L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, li
 
 >[!NOTE]
 >
-> Une mise en oeuvre OpenAPI modernisée de l’API de gestion des fragments de contenu est disponible. Pour obtenir une documentation complète, voir [API de gestion des fragments de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Il est recommandé d’utiliser la nouvelle implémentation d’OpenAPI. L’utilisation existante de l’API HTTP Assets pour les fragments de contenu doit être migrée vers la nouvelle API OpenAPI de gestion des fragments de contenu.
+> Une mise en oeuvre OpenAPI modernisée de l’API de gestion des fragments de contenu est disponible. Pour obtenir une documentation complète, reportez-vous à la section [API de gestion de fragments de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Il est recommandé d’utiliser la nouvelle implémentation d’OpenAPI. L’utilisation existante de l’API HTTP Assets pour les fragments de contenu doit être migrée vers la nouvelle API OpenAPI de gestion des fragments de contenu.
 
 Pour accéder à l’API :
 

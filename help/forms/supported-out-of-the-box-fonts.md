@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Polices prises en charge prêtes à l’emploi pour la génération de PDF sur Forms as a Cloud Service  {#ootb-supported-fonts-overview}
 
-AEM Forms as a Cloud Service propose différentes polices prises en charge intégrées, qui peuvent être facilement utilisées dans [API de communication](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Document d’enregistrement des composants principaux](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), et [Document d’enregistrement des composants de base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+AEM Forms as a Cloud Service propose différentes polices prises en charge intégrées qui peuvent être utilisées en toute transparence dans les [API de communication](/help/forms/aem-forms-cloud-service-communications-introduction.md), le [document d’enregistrement pour les composants principaux](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) et le [document d’enregistrement pour les composants de base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
 <!--
 
@@ -52,5 +52,5 @@ La liste des polices prises en charge en standard est la suivante :
 * eurosign.ttf
 
 
-Outre les polices mentionnées ci-dessus, vous pouvez utiliser des polices personnalisées pour donner aux PDF un aspect spécifique. Pour activer les polices personnalisées, vous devez [ajouter des polices personnalisées à votre environnement Forms as a Cloud Service ;](/help/forms/use-custom-fonts.md) avec une licence valide.
+Outre les polices mentionnées ci-dessus, vous pouvez utiliser des polices personnalisées pour donner aux PDF un aspect spécifique. Pour activer les polices personnalisées, vous [ ajoutez des polices personnalisées à votre environnement as a Cloud Service Forms ](/help/forms/use-custom-fonts.md) avec une licence valide.
 

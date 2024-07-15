@@ -36,7 +36,7 @@ Un exemple est souvent utile pour contextualiser cette hiérarchie.
 
 Un programme Cloud Manager est fourni avec son propre référentiel Git.
 
-Pour accéder au référentiel git de Cloud Manager, les utilisateurs doivent utiliser un client git avec un outil de ligne de commande, un client git visuel autonome ou l’IDE de votre choix, tel qu’Eclipse, IntelliJ ou NetBeans.
+Pour accéder au référentiel git Cloud Manager, les utilisateurs doivent utiliser un client git avec un outil de ligne de commande, un client git visuel autonome ou l’IDE de votre choix, tel qu’Eclipse, IntelliJ ou NetBeans.
 
 Une fois le client Git configuré, vous pouvez gérer votre référentiel Git à partir de l’interface utilisateur de Cloud Manager. Pour en savoir plus sur la gestion de Git à l’aide de l’interface utilisateur de Cloud Manager, consultez la section [Accès à Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
@@ -56,7 +56,7 @@ La seule différence réside dans le fait que le référentiel Git distant fait 
 
 ## Types de programme {#program-types}
 
-Un utilisateur peut créer une **production** programme ou **sandbox** programme.
+Un utilisateur peut créer un programme **production** ou un programme **sandbox**.
 
 * Un **programme de production** est créé pour activer le trafic en direct pour votre site.
    * Consultez [Présentation des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus d’informations.

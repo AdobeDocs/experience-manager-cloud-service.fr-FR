@@ -22,7 +22,7 @@ Vous pouvez gérer les paramètres de configuration des composants OSGi par le b
 
 >[!TIP]
 >
->Vous pouvez utiliser Cloud Manager pour configurer des variables d’environnement. Pour plus d’informations, consultez la documentation [ici.](/help/implementing/cloud-manager/environment-variables.md)
+>Vous pouvez utiliser Cloud Manager pour configurer des variables d’environnement. Pour plus d&#39;informations, consultez la documentation [ici.](/help/implementing/cloud-manager/environment-variables.md)
 
 ## Fichiers de configuration OSGi {#osgi-configuration-files}
 
@@ -48,7 +48,7 @@ selon le format de configuration OSGi `cfg.json`.
 
 >[!NOTE]
 >
->Les configurations OSGi ne sont pas stockées sous /apps comme les instances d’AEM standard dans le cloud où elles sont stockées dans un emplacement externe. Archivage dans Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) pour afficher les configurations OSGi.
+>Les configurations OSGi ne sont pas stockées sous /apps comme les instances d’AEM standard dans le cloud où elles sont stockées dans un emplacement externe. Vérifiez dans Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) pour afficher les configurations OSGi.
 
 ## Résolution du mode d’exécution {#runmode-resolution}
 
@@ -85,9 +85,9 @@ Les modes d’exécution AEM as a Cloud Service sont bien définis en fonction d
 Les valeurs de configuration OSGi spécifiées par le mode d’exécution peuvent être vérifiées en :
 
 1. Ouvrant [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr) pour les environnements AEM as a Cloud Services
-1. En sélectionnant le ou les niveaux de service à inspecter, à l’aide du __Capsule__ liste déroulante
+1. Sélection du ou des niveaux de service à inspecter à l’aide de la liste déroulante __Pod__
 1. Sélectionnant l’onglet __Statut__ 
-1. Sélection __Configurations__ de la __Saut d’état__ liste déroulante
+1. Sélectionner __Configurations__ dans la liste déroulante __Saut d’état__
 1. Cliquant sur le bouton __Obtenir le statut__
 
 La vue résultante affiche toutes les configurations de composant OSGi pour le ou les niveaux sélectionnés avec leurs valeurs de configuration OSGi applicables. Ces valeurs peuvent être référencées de manière croisée avec les valeurs de configuration OSGi dans le code source du projet AEM sous `/apps/example/osgiconfig/config.<runmode(s)>`.
@@ -182,7 +182,7 @@ Les fichiers de configuration OSGi au format JSON peuvent être écrits manuelle
 1. Dans votre IDE, ouvrez le projet `ui.apps`, recherchez ou créez le dossier de configuration (`/apps/.../config.<runmode>`) qui cible les modes d’exécution auxquels la nouvelle configuration OSGi doit s’appliquer
 1. Dans ce dossier de configuration, créez un fichier `<PID>.cfg.json`. Le PID est l’identité persistante du composant OSGi. Il s’agit généralement du nom de classe complet de l’implémentation du composant OSGi. Par exemple :
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Les noms de fichiers de configuration OSGi d’usine utilisent la variable `<factoryPID>-<name>.cfg.json` convention de dénomination
+Les noms de fichiers de configuration OSGi d’usine utilisent la convention d’affectation des noms `<factoryPID>-<name>.cfg.json`
 1. Ouvrez le nouveau fichier `.cfg.json` et définissez les combinaisons clé/valeur pour les paires propriété et valeur OSGi, en appliquant le [format de configuration OSGi JSON](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Enregistrez les modifications dans le nouveau fichier `.cfg.json`.
 1. Ajoutez et validez votre nouveau fichier de configuration OSGi sur Git.
@@ -522,7 +522,7 @@ Voir [cette page](https://developer.adobe.com/experience-cloud/cloud-manager/doc
 
 >[!TIP]
 >
->Vous pouvez également utiliser Cloud Manager pour configurer des variables d’environnement. Pour plus d’informations, consultez la documentation [ici.](/help/implementing/cloud-manager/environment-variables.md)
+>Vous pouvez également utiliser Cloud Manager pour configurer des variables d’environnement. Pour plus d&#39;informations, consultez la documentation [ici.](/help/implementing/cloud-manager/environment-variables.md)
 
 ### Définition de valeurs via l’API {#setting-values-via-api}
 

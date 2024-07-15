@@ -14,11 +14,11 @@ ht-degree: 36%
 
 # Créer des pages {#creating-pages}
 
-Découvrez comment créer des pages pour votre site web à l’aide du **Sites** console.
+Découvrez comment créer des pages pour votre site web à l’aide de la console **Sites**.
 
 >[!TIP]
 >
->Avant de commencer à créer des pages, familiarisez-vous avec [la manière dont vos pages sont organisées en AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Avant de commencer à créer des pages, familiarisez-vous avec [l&#39;organisation de vos pages en AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
 
 ## Privilèges d’accès {#access-privileges}
 
@@ -30,7 +30,7 @@ Si vous rencontrez des problèmes, contactez votre administrateur système.
 
 À moins que toutes les pages n’aient été créées pour vous au préalable, vous devez créer une page avant de commencer à créer du contenu :
 
-1. Ouvrir [la valeur **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Ouvrez [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Accédez à l’emplacement où créer la page.
 1. Ouvrez le sélecteur de liste déroulante avec l’option **Créer** de la barre d’outils, puis sélectionnez **Page** dans la liste :
 
@@ -38,7 +38,7 @@ Si vous rencontrez des problèmes, contactez votre administrateur système.
 
 1. À la première étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Sélectionnez le modèle à utiliser pour créer la page, puis sélectionnez **Suivant** pour continuer.
+   * Sélectionnez le modèle que vous souhaitez utiliser pour créer la page, puis cliquez sur **Suivant** pour continuer.
 
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
 
@@ -46,7 +46,7 @@ Si vous rencontrez des problèmes, contactez votre administrateur système.
 
 1. À la dernière étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Utilisez les trois onglets pour saisir la variable [propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md) que vous souhaitez attribuer à la nouvelle page, puis sélectionnez **Créer** pour créer réellement la page.
+   * Utilisez les trois onglets pour accéder aux [propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md) que vous souhaitez attribuer à la nouvelle page, puis sélectionnez **Créer** pour réellement créer la page.
 
    * Utilisez **Précédent** pour revenir à la sélection de modèle.
 
@@ -70,11 +70,11 @@ Si vous rencontrez des problèmes, contactez votre administrateur système.
 
    ![Affichage du titre de la page](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. Appuyez ou cliquez sur **Créer** pour terminer le processus et créer votre page. La boîte de dialogue de confirmation vous demande si vous souhaitez **Ouvrir** la page immédiatement ou revenir à la console (**Terminé**). Sélectionnez-en un pour terminer le processus de création de la page.
+1. Appuyez ou cliquez sur **Créer** pour terminer le processus et créer votre nouvelle page. La boîte de dialogue de confirmation vous demande si vous souhaitez **ouvrir** la page immédiatement ou revenir à la console (**Terminé**). Sélectionnez-en un pour terminer le processus de création de la page.
 
    ![Réussite de la création de page](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   * Si vous choisissez **Ouvrir**, la variable **Sites** La console ouvre l’éditeur approprié en fonction du modèle de la nouvelle page :
+   * Si vous choisissez **Ouvrir**, la console **Sites** ouvre l’éditeur approprié en fonction du modèle de la nouvelle page, soit :
       * [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md)
       * [Éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
@@ -88,4 +88,4 @@ Si vous revenez à la console, la nouvelle page s’affiche :
 
 >[!CAUTION]
 >
->Une fois une page créée, son modèle ne peut plus être modifié, sauf si vous [créer un lancement avec un nouveau modèle ;](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), mais vous perdrez tout contenu existant.
+>Une fois qu’une page a été créée, son modèle ne peut plus être modifié, sauf si vous [ créez un lancement avec un nouveau modèle](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), mais cela perdra tout contenu existant.

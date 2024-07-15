@@ -268,4 +268,4 @@ Il est régulièrement nécessaire que les composants d’une application sur un
 * La section [Présentation de l’éditeur de SPA](editor-overview.md) examine de plus près le modèle de communication entre AEM et la SPA.
 * Le tutoriel [Projet SPA WKND](wknd-tutorial.md) est un tutoriel détaillé qui met en œuvre un projet SPA simple dans AEM.
 * La section [Mappage d’un modèle dynamique sur un composant pour les SPA](model-to-component-mapping.md) explique le mappage d’un modèle dynamique sur un composant et présente son fonctionnement au sein des SPA dans AEM.
-* [Blueprint SPA](blueprint.md) offre un aperçu détaillé du fonctionnement du SDK SPA pour AEM si vous souhaitez mettre en oeuvre des  dans pour un framework autre que React ou Angular ou souhaitez simplement une compréhension plus approfondie.
+* [SPA Blueprint](blueprint.md) offre un aperçu détaillé du fonctionnement du SDK SPA pour l’ au cas où vous souhaitez mettre en oeuvre le  dans pour un framework autre que React ou Angular ou simplement pour une compréhension plus approfondie.

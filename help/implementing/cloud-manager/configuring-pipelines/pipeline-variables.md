@@ -35,7 +35,7 @@ Les noms de variables doivent respecter les conventions suivantes.
 * Il existe une limite de 200 variables par pipeline.
 * Chaque nom doit comporter 100 caractères ou moins.
 * La valeur `string` de chaque variable doit comporter moins de 2 048 caractères.
-* Chaque `secretString` La valeur de la variable type doit comporter 500 caractères ou moins.
+* Chaque valeur de variable de type `secretString` doit comporter 500 caractères ou moins.
 
 ## Via l’interface utilisateur de Cloud Manager {#ui}
 
@@ -45,43 +45,43 @@ Si un pipeline s’exécute, la gestion des variables est bloquée.
 
 ### Ajout de variables de pipeline {#add-ui}
 
-1. When [la gestion de vos pipelines,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) appuyez ou cliquez sur le bouton représentant des points de suspension du pipeline pour lequel vous souhaitez créer des variables de pipeline et sélectionnez **Afficher/modifier des variables** dans le menu contextuel.
+1. Lorsque [vous gérez vos pipelines,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) appuyez ou cliquez sur le bouton représentant des points de suspension du pipeline pour lequel vous souhaitez créer des variables de pipeline et sélectionnez **Afficher/modifier des variables** dans le menu contextuel.
 
-   ![Affichage/modification des variables de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
+   ![Afficher/modifier des variables de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. La variable **Configuration des variables** s’ouvre. Saisissez les détails de la variable dans la première ligne du tableau, puis appuyez ou cliquez sur **Ajouter**.
+1. La fenêtre **Configuration des variables** s’ouvre. Saisissez les détails de la variable dans la première ligne du tableau et appuyez ou cliquez sur **Ajouter**.
 
-   * **Nom de configuration** est un identifiant unique de votre variable, qui doit être en tête [conventions d’appellation des variables de pipeline.](#naming-conventions)
-   * **Valeur** est la valeur contenue dans la variable.
-   * **Étape appliquée** est l’étape du pipeline auquel la variable s’applique. Elle est requise.
+   * **Nom de configuration** est un identifiant unique de votre variable, qui doit gérer les [conventions d&#39;appellation des variables de pipeline.](#naming-conventions)
+   * **Value** est la valeur contenue par la variable.
+   * **Étape appliquée** est l’étape du pipeline à laquelle la variable s’applique. Elle est requise.
       * **Build**
       * **Tests fonctionnels**
       * **Tests de l’interface utilisateur**
-   * **Type** définit si la variable est en texte brut ou chiffrée en tant que secret.
+   * **Type** définit si la variable est en texte brut ou chiffrée en secret.
 
    ![Ajouter une variable](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
 
-1. Le est ajouté au tableau. Ajoutez d’autres variables selon les besoins, puis appuyez ou cliquez sur **Enregistrer** pour enregistrer les variables ajoutées au pipeline.
+1. Le est ajouté au tableau. Ajoutez d’autres variables selon les besoins, puis appuyez ou cliquez sur **Enregistrer** pour enregistrer les variables que vous avez ajoutées au pipeline.
 
 ### Modification des variables de pipeline {#edit-ui}
 
-1. When [la gestion de vos pipelines,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) appuyez ou cliquez sur le bouton représentant des points de suspension du pipeline pour lequel vous souhaitez créer des variables de pipeline et sélectionnez **Afficher/modifier des variables** dans le menu contextuel.
+1. Lorsque [vous gérez vos pipelines,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) appuyez ou cliquez sur le bouton représentant des points de suspension du pipeline pour lequel vous souhaitez créer des variables de pipeline et sélectionnez **Afficher/modifier des variables** dans le menu contextuel.
 
-   ![Affichage/modification des variables de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
+   ![Afficher/modifier des variables de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. La variable **Configuration des variables** s’ouvre. Appuyez ou cliquez sur le bouton représentant des points de suspension de la variable que vous souhaitez modifier, puis sélectionnez **Modifier**.
+1. La fenêtre **Configuration des variables** s’ouvre. Appuyez ou cliquez sur le bouton représentant des points de suspension de la variable que vous souhaitez modifier, puis sélectionnez **Modifier**.
 
    ![Modifier la variable](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. Mettez à jour la valeur de la variable selon les besoins, puis appuyez ou cliquez sur **Appliquer** (coche à la fin de la ligne) pour appliquer la modification ou **Ignorer** (la flèche vers l’arrière) pour annuler la modification.
+1. Mettez à jour la valeur de la variable selon les besoins et appuyez ou cliquez sur **Appliquer** (coche à la fin de la ligne) pour appliquer la modification ou sur **Ignorer** (flèche vers l’arrière) pour annuler la modification.
 
    * Seule la valeur de la variable peut être modifiée.
 
-   ![Modification d’une variable](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
+   ![Modification d&#39;une variable](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
 1. Appuyez ou cliquez sur **Enregistrer** pour enregistrer les modifications que vous avez apportées aux variables dans le pipeline.
 
-Si vous souhaitez supprimer une variable, sélectionnez **Supprimer** au lieu de **Modifier** dans le menu points de suspension de la variable pipeline dans la variable **Configuration des variables** fenêtre.
+Si vous souhaitez supprimer une variable, sélectionnez **Supprimer** au lieu de **Modifier** dans le menu de points de suspension de la variable de pipeline dans la fenêtre **Configuration des variables**.
 
 ## Utilisation de l’interface de ligne de commande de Cloud Manager {#cli}
 

@@ -37,7 +37,7 @@ La recherche de ressources dans AEM prend en charge les cas d’utilisation suiv
 | [Limites](#limitations) et [conseils](#tips) | | |
 | [Exemples illustrés](#samples) | | |
 
-Recherchez des ressources à l’aide du champ Omni-recherche situé en haut de l’interface web [!DNL Experience Manager]. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. `Path:/content/dam` s’affiche également lorsque vous effectuez une recherche au niveau racine dans la variable **[!UICONTROL Fichiers]** dossier. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Omni-recherche pour limiter l’étendue de la recherche au dossier actif. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
+Recherchez des ressources à l’aide du champ Omni-recherche situé en haut de l’interface web [!DNL Experience Manager]. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. `Path:/content/dam` s’affiche également lorsque vous effectuez une recherche au niveau racine dans le dossier **[!UICONTROL Files]**. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Omni-recherche pour limiter la portée de la recherche au dossier actif. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
 
 Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des dossiers, des balises et des métadonnées. Vous pouvez filtrer les résultats de recherche en fonction des différentes options (prédicats), telles que le type et la taille de fichier, la date de dernière modification, l’état de la ressource, les données d&#39;aperçu et les licences Adobe Stock. Vous pouvez personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide des [facettes de recherche](/help/assets/search-facets.md). Le filtre [!UICONTROL Type de fichier] du panneau [!UICONTROL Filtres] comporte des cases à cocher à états mixtes. Les cases à cocher du premier niveau sont donc partiellement cochées à moins que vous ne sélectionniez tous les prédicats (ou formats) imbriqués.
 
@@ -49,23 +49,23 @@ Familiarisez-vous avec l’interface de recherche des ressources et les actions 
 <!--
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 -->
-![Présentation de l’interface des résultats de recherche Experience Manager Assets](assets/aem-search-interface.png)
-*Figure : Présentation [!DNL Experience Manager Assets] interface des résultats de recherche.*
+![Comprendre l’interface des résultats de recherche Experience Manager Assets](assets/aem-search-interface.png)
+*Figure : Présentation de l’interface des résultats de recherche [!DNL Experience Manager Assets].*
 
-**A.** Enregistrer la recherche en tant que collection dynamique.
+**A.** Enregistrez la recherche en tant que collection dynamique.
 **B.** Filtres ou prédicats pour limiter les résultats de la recherche.
-**C.** Afficher des fichiers, des dossiers ou les deux.
+**C.** Affichez des fichiers, des dossiers ou les deux.
 **D.** L’emplacement de recherche est DAM.
-**E.** Accéder aux recherches enregistrées.
+**E.** Accéder Aux Recherches Enregistrées.
 **F.** Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche.
-**G.** Affiche Ressources comme recherche par défaut.
+**G.** Affiche Assets comme recherche par défaut.
 **H.** L’emplacement de recherche est DAM.
 **I.** Champ Omni-recherche avec mot-clé de recherche fourni par l’utilisateur.
 **J.** Sélectionnez les résultats de recherche chargés.
-**K.** Tri par Créé, Modifié, Nom, Aucun.
+**K.** Tri par créé, modifié, nom, aucun.
 **L.** Tri par ordre croissant ou décroissant.
 **M.** Nombre de résultats de recherche affichés sur le total des résultats de recherche. **N.** Fermez la recherche.
-**O.** Basculez entre le mode Carte et le mode Liste.
+**O.** Basculer entre le mode Carte et le mode Liste.
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
@@ -81,13 +81,13 @@ Experience Manager Assets affiche par défaut le nombre de facettes pour deux pr
 
 * État d’approbation (jcr:content/metadata/dam:status)
 
-Depuis août 2023, Experience Manager Assets inclut une nouvelle version 9 de `damAssetLucene` index. les versions précédentes, `damAssetLucene-8` et ci-dessous, utilisez la méthode `statistical` pour vérifier le contrôle d’accès sur un échantillon des éléments pour chaque nombre de facettes de recherche.
+Depuis août 2023, Experience Manager Assets inclut une nouvelle version 9 de l’index `damAssetLucene`. Les versions précédentes, `damAssetLucene-8` et antérieures, utilisent le mode `statistical` pour vérifier le contrôle d’accès sur un échantillon des éléments pour chaque nombre de facettes de recherche.
 
-`damAssetLucene-9` modifie le comportement du comptage des facettes Oak Query afin de ne plus évaluer le contrôle d’accès sur les comptes de facettes renvoyés par l’index de recherche sous-jacent, ce qui entraîne des temps de réponse de recherche plus rapides. Par conséquent, les utilisateurs peuvent se voir présenter des valeurs de nombre de facettes, qui incluent les ressources auxquelles ils n’ont pas accès. Ces utilisateurs ne peuvent pas accéder à ces ressources, les télécharger ni lire d’autres détails, y compris leurs chemins d’accès, ni obtenir d’autres informations les concernant.
+`damAssetLucene-9` modifie le comportement du comptage des facettes Oak Query pour ne plus évaluer le contrôle d’accès sur les comptes de facettes renvoyés par l’index de recherche sous-jacent, ce qui entraîne des temps de réponse de recherche plus rapides. Par conséquent, les utilisateurs peuvent se voir présenter des valeurs de nombre de facettes, qui incluent les ressources auxquelles ils n’ont pas accès. Ces utilisateurs ne peuvent pas accéder à ces ressources, les télécharger ni lire d’autres détails, y compris leurs chemins d’accès, ni obtenir d’autres informations les concernant.
 
-Si vous devez passer au comportement précédent (`statistical` mode), voir [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr) pour créer une version personnalisée de la variable `damAssetLucene-9` index. Adobe déconseille de passer à la `secure` en raison de l’impact sur les temps de réponse de la recherche avec des jeux de résultats volumineux.
+Si vous devez passer au comportement précédent (`statistical`), voir [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr) pour créer une version personnalisée de l’index `damAssetLucene-9`. Adobe ne recommande pas de passer au mode `secure` en raison de l’impact sur les temps de réponse de la recherche avec des jeux de résultats volumineux.
 
-Pour plus d’informations sur les fonctionnalités de facette d’Oak, y compris une description détaillée de ces modes, voir [cet article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+Pour plus d’informations sur les fonctionnalités des facettes Oak, y compris une description détaillée de ces modes, consultez [cet article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suggestions de recherche en cours de frappe {#searchsuggestions}
 
@@ -160,7 +160,7 @@ Par exemple, si vous définissez la limite du nombre de résultats sur une taill
 
 Pour configurer la taille du lot de ressources, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configurations d’Assets]** > **[!UICONTROL Configuration de l’omni-recherche des ressources]**.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Configurations Assets]** > **[!UICONTROL Configuration de l’omni-recherche Assets]**.
 
 1. Sélectionnez la limite du nombre de résultats et cliquez sur **[!UICONTROL Enregistrer]**.
 

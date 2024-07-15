@@ -94,7 +94,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez le service clientèle.
 
-Vous ne pouvez pas utiliser de balises intelligentes, [!DNL Asset] lien, [!DNL Asset] sélecteur, balisage en masse, modification des workflows de ressources ou standard [!DNL Adobe Experience Manager] interface utilisateur pour accéder à Media Library sans [!DNL Assets] licence.
+Vous ne pouvez pas utiliser les balises intelligentes, le lien [!DNL Asset], le sélecteur [!DNL Asset], le balisage en masse, modifier les workflows de ressources ou l’interface utilisateur [!DNL Adobe Experience Manager] standard pour accéder à Media Library sans licence [!DNL Assets].
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

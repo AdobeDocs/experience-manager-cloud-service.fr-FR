@@ -66,21 +66,21 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Nouveautés de [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-* **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** - Adobe Sign pour les niveaux de service entreprise et d’entreprise vous permet éventuellement d’étendre les rôles des destinataires du contrat, au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire de l’accord de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), avec Signer comme rôle par défaut.
+* **Utiliser les rôles Adobe Sign dans un formulaire adaptatif** - Adobe Sign pour les niveaux de service d’entreprise et d’entreprise vous permet éventuellement d’étendre les rôles des destinataires du contrat, au-delà du seul signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire de l’accord de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), avec le signataire comme rôle par défaut.
 
-* **Analytics pour Forms adaptatif** - Vous pouvez désormais capturer et suivre le comportement de l’utilisateur final au moyen d’Adobe Analytics pour les Forms adaptatives afin de recueillir les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
+* **Analytics pour le Forms adaptatif** - Vous pouvez désormais capturer et suivre le comportement de l’utilisateur final au moyen d’Adobe Analytics pour le Forms adaptatif afin de recueillir les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
 
-* **Connectez facilement Adobe Experience Manager (AEM) Forms à Microsoft® Dynamics et Salesforce** - Le service fournit une configuration de source de données et des modèles de données prêts à l’emploi pour Microsoft® Dynamics et Salesforce. Cela la rend [plus rapide et plus facile pour les développeurs de configurer Microsoft® Dynamics et Salesforce comme sources de données pour un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
+* **Connectez facilement Adobe Experience Manager (AEM) Forms à Microsoft® Dynamics et Salesforce** - Le service fournit une configuration de source de données et des modèles de données prêts à l’emploi pour Microsoft® Dynamics et Salesforce. Cela permet aux développeurs de [configurer plus rapidement et plus facilement Microsoft® Dynamics et Salesforce comme sources de données pour un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
 
-* **Signer électroniquement un formulaire adaptatif à l’aide de DocuSign** - Vous pouvez utiliser DocuSign pour e-signer un formulaire adaptatif. Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif. Vous pouvez installer le package disponible dans Distribution logicielle pour importer l’action d’envoi.
+* **E-Sign an adaptive form using DocuSign** - Vous pouvez utiliser DocuSign pour e-signer un formulaire adaptatif. Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif. Vous pouvez installer le package disponible dans Distribution logicielle pour importer l’action d’envoi.
 
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-* **Connecteur de stockage unifié** - Utilisez Unified Storage Connector pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes : 
+* **Unified Storage Connector** - Utilisez Unified Storage Connector pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes : 
    * Activez la fonctionnalité d’enregistrement et de reprise du portail Formulaires et stockez les brouillons de formulaires adaptatifs dans un référentiel de données géré par le client ou la cliente.
    * Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** - [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) vous aide à combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+* **[!DNL AEM Forms as a Cloud Service - Communications]** - Les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) vous aident à combiner des modèles XDP et des données XML pour générer des documents d’impression dans divers formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    * Générer des documents en complétant des fichiers de modèle avec des données XML
    * Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
    * Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat
@@ -143,11 +143,11 @@ Pour plus d’informations, voir [Prise en charge des miniatures de vidéos](htt
 * Une adresse IP sortante dédiée pour faire sortir le trafic d’AEM as a Cloud Service à partir d’une adresse IP unique et prenant désormais en charge tous les ports.
 * Un VPN pour sécuriser le trafic entre votre infrastructure et AEM as a Cloud Service.
 
-Lisez la section [documentation](/help/security/configuring-advanced-networking.md) pour plus d’informations, notamment sur la manière de configurer la mise en réseau avancée en libre-service à l’aide des API Cloud Manager.
+Lisez la [documentation](/help/security/configuring-advanced-networking.md) pour plus d’informations, y compris sur la manière de fournir une mise en réseau avancée en libre-service à l’aide des API Cloud Manager.
 
 **Optimisations des index**
 
-Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] à partir de cette version. Pour supprimer cet index de texte intégral sur les environnements AEM conformément aux clients AEM, Adobe Engineering travaille individuellement et de manière proactive avec les clients pour une suppression douce et durable de l’index de texte intégral Lucene. Visitez le [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) pour plus d’informations, contactez directement l’assistance d’Adobe si vous avez des questions.
+Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] à partir de cette version. Pour supprimer cet index de texte intégral sur les environnements AEM conformément aux clients AEM, Adobe Engineering travaille individuellement et de manière proactive avec les clients pour une suppression douce et durable de l’index de texte intégral Lucene. Pour plus d’informations, consultez la [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) et contactez directement l’assistance de l’Adobe si vous avez des questions.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -184,7 +184,7 @@ La date de publication de la mise à jour de Cloud Acceleration Manager est le 4
 
 ### Nouveautés {#what-is-new-cam}
 
-* Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Voir les étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
+* Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Voir les étapes 6 et 7 de [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 

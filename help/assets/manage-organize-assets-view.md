@@ -130,7 +130,7 @@ Pour définir le statut de la ressource :
 
 1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Détails]** dans la barre d’outils.
 
-1. Dans le **[!UICONTROL De base]** sélectionnez l’état de la ressource dans l’onglet **[!UICONTROL État]** liste déroulante. Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).
+1. Dans l’onglet **[!UICONTROL Basic]** , sélectionnez l’état de la ressource dans la liste déroulante **[!UICONTROL Status]** . Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

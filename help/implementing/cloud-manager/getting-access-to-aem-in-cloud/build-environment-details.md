@@ -25,7 +25,7 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
 * Apache Maven 3.9.4 est installé.
    * Adobe recommande aux utilisateurs et utilisatrices de [mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP.](#https-maven)
 * Les versions Java installées sont Oracle JDK 11.0.22 et Oracle JDK 8u401.
-* **IMPORTANT**: par défaut, la variable `JAVA_HOME` La variable d’environnement est définie sur `/usr/lib/jvm/jdk1.8.0_401` qui contient l’Oracle JDK 8u401. *_Cette valeur par défaut doit être remplacée pour AEM Cloud Projects d’utiliser JDK 11._*. Voir [Définition de la version du JDK Maven](#alternate-maven-jdk-version) pour plus d’informations.
+* **IMPORTANT** : par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401` qui contient le JDK Oracle 8u401. *_Cette valeur par défaut doit être remplacée pour que AEM Cloud Projects utilise JDK 11_*. Pour plus d’informations, voir la section [Définition de la version du JDK Maven](#alternate-maven-jdk-version) .
 * D’autres packages système nécessaires sont installés.
    * `bzip2`
    * `unzip`
@@ -54,13 +54,13 @@ Pour garantir une expérience fluide avec la version mise à jour, Adobe recomma
 
 ### Utilisation d’une version de Java spécifique {#using-java-support}
 
-Par défaut, les projets sont créés par le processus de génération Cloud Manager à l’aide du JDK Oracle 8, mais il est vivement conseillé aux clients AEM Cloud Service de définir la version du JDK utilisée pour exécuter Maven sur . `11`.
+Par défaut, les projets sont créés par le processus de génération Cloud Manager à l’aide du JDK Oracle 8, mais il est vivement conseillé aux clients AEM Cloud Service de définir la version du JDK utilisée pour exécuter Maven sur `11`.
 
 #### Définition de la version du JDK Maven {#alternate-maven-jdk-version}
 
-Il est recommandé de définir la version du JDK pour l’ensemble de l’exécution Maven sur `11` dans `.cloudmanager/java-version` fichier .
+Il est recommandé de définir la version du JDK pour l’exécution Maven entière sur `11` dans un fichier `.cloudmanager/java-version`.
 
-Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel git utilisée par le pipeline. Editez le fichier pour qu&#39;il ne contienne que le texte, `11`. Bien que Cloud Manager accepte également une valeur de `8`, cette version n’est plus prise en charge pour les projets AEM Cloud Service. Toute autre valeur est ignorée. When `11` est spécifié, l’Oracle 11 est utilisé et la variable `JAVA_HOME` La variable d’environnement est définie sur `/usr/lib/jvm/jdk-11.0.22`.
+Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel git utilisée par le pipeline. Modifiez le fichier afin qu&#39;il ne contienne que le texte, `11`. Bien que Cloud Manager accepte également une valeur `8`, cette version n’est plus prise en charge pour les projets AEM Cloud Service. Toute autre valeur est ignorée. Lorsque `11` est spécifié, l’Oracle 11 est utilisé et la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk-11.0.22`.
 
 ## Variables d’environnement {#environment-variables}
 
@@ -87,7 +87,7 @@ Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement s
 
 Votre processus de génération peut dépendre de variables de configuration spécifiques qui ne seraient pas appropriées pour le référentiel Git ou vous devrez peut-être les faire varier entre les exécutions de pipeline utilisant la même branche.
 
-Consultez le document [Configuration des variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) pour plus d’informations
+Pour plus d’informations, voir le document [Configuration des variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
 

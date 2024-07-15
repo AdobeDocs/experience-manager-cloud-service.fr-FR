@@ -1,19 +1,19 @@
 ---
 title: Prise en main d’Adaptive Forms.
 description: Découvrez comment créer une Forms adaptative adaptée aux périphériques mobiles avec notre tutoriel détaillé. Ces formulaires s’adaptent de manière transparente sur tous les périphériques, assurant ainsi une expérience fluide.
-keywords: Forms adaptatif, Forms réactif, Forms HTML5
+keywords: Forms adaptatif, Forms réactif, HTML5 Forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
+exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
+source-git-commit: af58a784f24f212962ad73f11015fb788493d8b5
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 3%
 
 ---
-
 
 # Créer un formulaire adaptatif (composants principaux) - Tutoriel
 
@@ -32,14 +32,14 @@ Ce tutoriel fournit un guide détaillé sur la création d’un formulaire adapt
 * Localisation de votre formulaire adaptatif pour différentes langues
 * Configuration de votre formulaire pour produire des données structurées
 * Configuration de votre formulaire pour envoyer des données à un point de terminaison REST
-* Publication du formulaire adaptatif
+* Publish de votre formulaire adaptatif
 
 
 ## Pourquoi créer des formulaires basés sur des composants principaux ?
 
-AEM Forms fournit des composants de base et des composants principaux pour créer des expériences de formulaires. Les composants principaux sont l’approche moderne et recommandée pour créer de nouvelles expériences de formulaires. Pourquoi utiliser les composants principaux ? Ces composants sont légers, Open Source (disponibles sur github), offrent un excellent score Google Lighthouse et des vitaux web, sont compatibles avec l’accessibilité et apportent toutes les fonctionnalités courantes d’AEM Sites (telles que le contrôle de version et la localisation). En outre, ces composants sont plus faciles à mettre en forme. Vous pouvez facilement personnaliser leur aspect selon les directives de valorisation de marque de votre entreprise. Ils ne comportent aucune dépendance tierce. Tout développeur maîtrisant JavaScript et CSS peut facilement personnaliser ces composants.
+AEM Forms fournit des composants de base et des composants principaux pour créer des expériences de formulaires. Les composants principaux sont l’approche moderne et recommandée pour créer de nouvelles expériences de formulaires. Pourquoi utiliser les composants principaux ? Ces composants sont légers, Open Source (disponibles sur github), offrent un excellent score Google Lighthouse et des vitaux web, sont compatibles avec l’accessibilité et apportent toutes les fonctionnalités courantes d’AEM Sites (telles que le contrôle de version et la localisation). En outre, ces composants sont plus faciles à mettre en forme. Vous pouvez facilement personnaliser leur aspect selon les directives de valorisation de marque de votre entreprise. Ils n’ont aucune dépendance tierce, tout développeur maîtrisant JavaScript et CSS peut facilement personnaliser ces composants.
 
-![Pourquoi créer un Forms adaptatif basé sur les composants principaux ? Ces composants sont légers, plus faciles à mettre en forme, offrent un score de phare élevé, prennent en charge les normes d’accessibilité, facilement personnalisables et open source, disponibles sur github, sans dépendance à l’égard des bibliothèques tierces et n’ont pratiquement pas de courbe d’apprentissage pour les développeurs AEM et les auteurs AEM En plus de cela, les composants principaux d’AEM Forms disposent de toutes les fonctionnalités des composants principaux de la gestion de contenu web.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
+![ Pourquoi créer un Forms adaptatif basé sur les composants principaux ? Ces composants sont légers, plus faciles à mettre en forme, offrent un score de phare élevé, prennent en charge les normes d’accessibilité, facilement personnalisables et open source, disponibles sur github, sans dépendance à l’égard des bibliothèques tierces et n’ont pratiquement pas de courbe d’apprentissage pour les développeurs AEM et les auteurs AEM En plus, les composants principaux AEM Forms disposent de toutes les fonctionnalités des composants principaux de la gestion de contenu web d’.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## Cas d’utilisation : pré-qualification simplifiée du prêt immobilier avec Forms adaptatif
 
@@ -68,15 +68,15 @@ Le développement local avec AEM SDK vous permet de gagner du temps et de simpli
 
 **Prêt à commencer ?**
 
-1. [Configuration des outils de développement pour AEM Projets](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): téléchargez et installez la dernière version de [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=fr#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=fr#install-git), [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=fr#node-js), et [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=fr#install-maven). Installez également un éditeur de texte brut. Les exemples de ce tutoriel sont basés sur Visual Studio Code.
+1. [Configuration des outils de développement pour AEM Projects](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects) : téléchargez et installez la dernière version de [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=fr#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=fr#install-git), [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=fr#node-js) et [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=fr#install-maven). Installez également un éditeur de texte brut. Les exemples de ce tutoriel sont basés sur Visual Studio Code.
 
-1. [Installation du SDK AEM](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): téléchargez et installez la dernière version du SDK AEM. Cela fournit les outils essentiels au développement AEM. Notez la version du SDK AEM.
+1. [Installation du SDK AEM](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development) : téléchargez et installez la dernière version du SDK AEM. Cela fournit les outils essentiels au développement AEM. Notez la version du SDK AEM.
 
-   ![Distribution logicielle](/help/forms/assets/software-distribution.png)
+   ![ Distribution-Logiciels](/help/forms/assets/software-distribution.png)
 
-   ![installation AEM SDK](/help/forms/assets/start-aem-sdk.png)
+   ![installer AEM SDK](/help/forms/assets/start-aem-sdk.png)
 
-1. [Ajout du module complémentaire AEM Forms](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): téléchargez et installez le module complémentaire AEM Forms correspondant à la version de votre SDK AEM depuis le [Distribution logicielle](https://experience.adobe.com/#/downloads) Portail.
+1. [Ajoutez le module complémentaire AEM Forms](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users) : téléchargez et installez le module complémentaire AEM Forms correspondant à la version de votre SDK à partir du portail [Distribution logicielle](https://experience.adobe.com/#/downloads).
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
    +++Installer le module complémentaire AEM Forms :
@@ -84,15 +84,15 @@ Le développement local avec AEM SDK vous permet de gagner du temps et de simpli
    Pour installer le module complémentaire AEM Forms :
 
    1. Arrêtez AEM SDK.
-   1. Ajoutez le fichier de module complémentaire AEM Forms (.far) au `AEM SDK/crx-quickstart/install` dossier,
+   1. Ajoutez le fichier de module complémentaire AEM Forms (.far) au dossier `AEM SDK/crx-quickstart/install`,
    1. Redémarrez AEM SDK.
 
 +++
 
-1. [Configuration des autorisations utilisateur](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): créez des utilisateurs dotés d’autorisations de développement, de création et d’autres autorisations et ajoutez-les à des groupes de formulaires prédéfinis.
+1. [Configurer les autorisations d’utilisateur](/help/forms/setup-local-development-environment.md#configure-users-and-permissions) : créez des utilisateurs disposant d’autorisations de développement, de création et autres et ajoutez ces utilisateurs à des groupes de formulaires prédéfinis.
 
 
-1. [Ajout de modèles Forms adaptatifs](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): utilisez AEM archetypes 48 ou version ultérieure pour créer un projet AEM et le déployer sur votre SDK d’AEM. Le projet ajoute des modèles Forms adaptatifs à votre SDK AEM.
+1. [Ajouter des modèles Forms adaptatifs](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype) : utilisez AEM archetypes 48 ou version ultérieure pour créer un projet AEM et le déployer sur votre SDK. Le projet ajoute des modèles Forms adaptatifs à votre SDK AEM.
 
    ![Modèles de formulaire adaptatif](/help/forms/assets/adaptive-forms-templates.png)
 
@@ -119,7 +119,7 @@ Le développement local avec AEM SDK vous permet de gagner du temps et de simpli
 +++
 
 
-Pour obtenir des instructions détaillées et un guide détaillé sur la configuration de votre environnement de développement AEM Forms local, reportez-vous à la section [Configuration de l’environnement de développement local pour AEM Forms](/help/forms/setup-local-development-environment.md) article.
+Pour obtenir des instructions détaillées et un guide détaillé sur la configuration de votre environnement de développement AEM Forms local, reportez-vous à l’article [Configuration de l’environnement de développement local pour AEM Forms](/help/forms/setup-local-development-environment.md) .
 
 
 

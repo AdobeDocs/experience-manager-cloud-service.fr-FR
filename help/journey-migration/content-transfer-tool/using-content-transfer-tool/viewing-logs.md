@@ -40,6 +40,6 @@ Suivez ensuite les étapes ci-dessous :
 
 ### Journaux d’ingestion
 
-Pour afficher les journaux d’ingestion, accédez à la liste Tâches d’ingestion dans Cloud Acceleration Manager, puis recherchez la tâche de migration souhaitée et cliquez sur les trois points (**..**) de la tâche. Vous pouvez ensuite cliquer sur **Journal de téléchargement** pour télécharger les journaux.
+Pour afficher les journaux d’ingestion, accédez à la liste Tâches d’ingestion dans Cloud Acceleration Manager, puis recherchez la tâche de migration souhaitée et cliquez sur les trois points (**...**) de la tâche. Vous pouvez ensuite cliquer sur **Télécharger le journal** pour télécharger les journaux.
 
 ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

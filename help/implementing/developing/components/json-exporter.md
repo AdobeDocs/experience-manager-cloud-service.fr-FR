@@ -43,7 +43,7 @@ Avec AEM, la diffusion s’effectue à l’aide du sélecteur `model` et de l’
 
 Vous pouvez également diffuser le contenu d’un fragment de contenus structuré en le ciblant spécifiquement.
 
-Cette opération s’effectue à l’aide du chemin d’accès complet au fragment (via l’ `jcr:content`) ; par exemple, avec un suffixe tel que .
+Pour ce faire, utilisez le chemin d’accès complet au fragment (via `jcr:content`) ; par exemple, avec un suffixe tel que .
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 

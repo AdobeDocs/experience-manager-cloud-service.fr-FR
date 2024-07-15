@@ -15,7 +15,7 @@ ht-degree: 73%
 
 # Organiser des pages {#creating-and-organizing-pages}
 
-Découvrez comment organiser votre site web avec AEM. Une fois que vous avez compris comment organiser vos pages, vous pouvez [créer des pages ;](/help/sites-cloud/authoring/sites-console/creating-pages.md) et [gérer les pages de sortie.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+Découvrez comment organiser votre site web avec AEM. Une fois que vous avez compris comment organiser vos pages, vous pouvez [créer des pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) et [gérer les pages de sortie.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 
 {{edge-delivery-authoring}}
 
@@ -30,7 +30,7 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web est construite comme une arborescence qui contient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former les URL, tandis que les titres sont affichés lorsque le contenu de la page est affiché.
 
-Vous trouverez ci-dessous un exemple tiré de la fonction [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) site, où un article sur les skateparks (`la-skateparks`) est accessible :
+Vous trouverez ci-dessous un exemple tiré du site [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr), sur lequel vous pouvez accéder à un article concernant les skateparks (`la-skateparks`) :
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -51,7 +51,7 @@ Vous trouverez ci-dessous un exemple tiré de la fonction [Tutoriel WKND](https:
    /...
 ```
 
-Cette structure peut être visualisée à partir du [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) où vous pouvez parcourir les pages de votre site web et effectuer des actions sur les pages.
+Cette structure peut être visualisée à partir de la console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) où vous pouvez parcourir les pages de votre site web et effectuer des actions sur les pages.
 
 ## Conventions de dénomination des pages {#page-naming-conventions}
 
@@ -95,7 +95,7 @@ Vous trouverez la liste complète et détaillée des caractères autorisés dans
 
 ### Titre {#title}
 
-Si vous n’indiquez qu’une page **Titre** lors de la création d’une page, AEM délivre la page **Nom** de cette chaîne et [valider le nom en fonction des conventions ;](/help/implementing/developing/introduction/naming-conventions.md) imposé par AEM et JCR.
+Si vous n’indiquez qu’un **Titre** de page lors de la création d’une page, AEM renvoie la page **Nom** de cette chaîne et [validez le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
 
 Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
@@ -118,19 +118,19 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 
 ## Modèles {#templates}
 
-Dans AEM, une [modèle](/help/sites-cloud/authoring/sites-console/templates.md) est un type spécialisé de page utilisé comme base pour toute nouvelle page en cours de création.
+Dans AEM, un [template](/help/sites-cloud/authoring/sites-console/templates.md) est un type spécialisé de page utilisé comme base pour toute nouvelle page créée.
 
 Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
 AEM comporte plusieurs modèles prêts à l’emploi. Les modèles disponibles dépendent du site web individuel. Les champs clés sont les suivants :
 
 * **Titre** : titre affiché sur la page web obtenue.
-* **Nom** - Utilisé lors de l’attribution du nom de la page
-* **Modèle** - Liste des modèles utilisables lors de la génération de la nouvelle page
+* **Nom** - Utilisé lors de l’attribution d’un nom à la page
+* **Modèle** - Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ## Composants {#components}
 
-[Composants](/help/implementing/developing/components/overview.md) sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec une gamme de composants prêts à l’emploi, appelés [les composants principaux,](/help/implementing/developing/components/overview.md#core-components) qui offrent des fonctionnalités complètes. Voici quelques exemples de composants :
+Les [composants](/help/implementing/developing/components/overview.md) sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec une gamme de composants prêts à l’emploi, appelés [composants principaux,](/help/implementing/developing/components/overview.md#core-components) qui fournissent des fonctionnalités complètes. Voici quelques exemples de composants :
 
 * Texte
 * Image

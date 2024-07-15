@@ -176,7 +176,7 @@ Vous pouvez utiliser plusieurs fois un fragment de formulaire basé sur un sché
 
 >[!NOTE]
 >
-> Si vous utilisez plusieurs fois des fragments de formulaire sans base dans un formulaire adaptatif, un problème de synchronisation des données entre les champs des fragments se produit. Vous pouvez utiliser une [fragment de formulaire basé sur un composant principal](/help/forms/adaptive-form-fragments-core-components.md) qui n’est lié à aucun modèle de données de formulaire (FDM), plusieurs fois dans un formulaire sans rencontrer de problèmes de synchronisation des données.
+> Si vous utilisez plusieurs fois des fragments de formulaire sans base dans un formulaire adaptatif, un problème de synchronisation des données entre les champs des fragments se produit. Vous pouvez utiliser un [fragment de formulaire basé sur un composant principal](/help/forms/adaptive-form-fragments-core-components.md) qui n’est lié à aucun modèle de données de formulaire (FDM), plusieurs fois dans un formulaire sans rencontrer de problèmes de synchronisation des données.
 
 ## Mappage automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
 

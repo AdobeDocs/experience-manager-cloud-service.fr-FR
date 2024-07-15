@@ -14,20 +14,20 @@ ht-degree: 47%
 
 # Console Sites {#sites-console}
 
-Découvrez comment utiliser le **Sites** pour gérer et organiser vos pages d’AEM.
+Découvrez comment utiliser la console **Sites** pour gérer et organiser vos pages d’AEM.
 
 ## Orientation {#orientation}
 
-La variable **Sites** console vous permet d’afficher la hiérarchie des pages.
+La console **Sites** vous permet d’afficher la hiérarchie de vos pages.
 
 ![Mode Colonnes de la console Sites avec un élément sélectionné](assets/sites-console-column-view-selected.png)
 
 Il offre différentes vues et barres d’outils pour vous aider à gérer et organiser vos pages.
 
-* [Barre d’outils de la console](#toolbar) est toujours présente pour vous aider à naviguer.
+* [La barre d’outils de la console](#toolbar) est toujours présente pour vous aider à naviguer.
 * [Trois vues différentes](#views) vous permettent de localiser et de sélectionner facilement votre page.
-* [Barre d’outils Action](#action-toolbar) s’affiche lorsque vous avez sélectionné un élément pour y effectuer une action.
-* [Panneau latéral](#side-panel) comporte plusieurs options pour afficher des informations détaillées sur une page sélectionnée.
+* [La barre d’outils d’action ](#action-toolbar) s’affiche lorsque vous avez sélectionné un élément pour y effectuer une action.
+* [Le panneau latéral](#side-panel) comporte plusieurs options pour afficher des informations détaillées sur une page sélectionnée.
 
 ## Barre d’outils Console {#console-toolbar}
 
@@ -45,7 +45,7 @@ Les options présentées dépendent de la console active. Par exemple, dans la c
 
 ![Exemple de sélecteur de panneau latéral](assets/sites-console-side-panel-selector.png)
 
-Pour plus d’informations sur le panneau latéral, consultez le document . [Panneau côté console Sites.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+Pour plus d’informations sur le panneau latéral, consultez le document [Panneau latéral de la console Sites.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
 
 ### Chemins de navigation {#breadcrumbs}
 
@@ -60,22 +60,22 @@ Appuyez ou cliquez sur le texte du chemin de navigation pour afficher une liste 
 
 ### Tout sélectionner {#select-all}
 
-Appuyez ou cliquez sur le bouton **Tout sélectionner** sélectionne tous les éléments de la vue actuelle de la console.
+Appuyez ou cliquez sur le bouton **Sélectionner tout** pour sélectionner tous les éléments de votre vue actuelle de la console.
 
-![Bouton Tout sélectionner](assets/sites-console-select-all.png)
+![Sélectionner tout bouton](assets/sites-console-select-all.png)
 
-Lorsque vous avez sélectionné tous les éléments, le nombre d’éléments sélectionnés s’affiche en haut à droite de la barre d’outils, où la variable **Tout sélectionner** apparaissait.
+Lorsque vous avez sélectionné tous les éléments, le nombre d’éléments sélectionnés s’affiche en haut à droite de la barre d’outils où s’affiche le bouton **Sélectionner tout** .
 
 Vous pouvez annuler la sélection de tous les éléments et quitter le mode de sélection en procédant comme suit :
 
-* Cliquez ou appuyez sur le bouton **X** à côté du décompte.
-* En utilisant la variable **escape** clé.
+* Cliquez ou appuyez sur le **X** en regard du nombre.
+* Utilisation de la clé **escape**.
 
 ![Tout désélectionner](assets/sites-console-deselect-all.png)
 
 ### Bouton Créer {#create-button}
 
-La variable **Créer** vous permet d’ajouter de nouvelles pages à votre site et de créer des objets Sites supplémentaires, tels que Live Copies ou Lancements.
+Le bouton **Créer** vous permet d’ajouter de nouvelles pages à votre site et de créer des objets Sites supplémentaires tels que Live Copies ou Lancements.
 
 ![Bouton Créer](assets/sites-console-create.png)
 
@@ -92,13 +92,13 @@ Pour plus d’informations sur leur fonctionnement, reportez-vous aux liens vers
 
 ## Vues et sélection de pages {#views}
 
-La variable **Sites** La console propose trois vues différentes de votre hiérarchie de contenu. Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres actions) vos ressources dans n’importe quelle vue disponible.
+La console **Sites** offre trois vues différentes de votre hiérarchie de contenu. Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres actions) vos ressources dans n’importe quelle vue disponible.
 
 * [Mode Colonnes](#column-view)
 * [Mode Carte](#card-view)
 * [Vue Liste](#list-view)
 
-La variable **Affichage** L’icône située à l’extrémité droite de la barre d’outils AEM indique la vue active sélectionnée.
+L’icône **Afficher** située à l’extrémité droite de la barre d’outils AEM indique la vue actuelle sélectionnée.
 
 Appuyez ou cliquez dessus pour sélectionner une autre vue.
 
@@ -181,11 +181,11 @@ En mode Carte, chaque élément au niveau actuel de la hiérarchie s’affiche s
    * Si la page est verrouillée, masquée ou fait partie d’une Live Copy.
    * Indicateurs si vous devez agir sur l’élément dans le cadre d’un workflow.
 
-Offres en mode Carte [actions rapides](#quick-actions) pour les éléments tels que la sélection et les actions courantes telles que la modification.
+Le mode Carte propose également des [ actions rapides ](#quick-actions) pour des éléments tels que la sélection et des actions courantes telles que la modification.
 
 ![Actions rapides](assets/sites-console-quick-actions.png)
 
-Vous pouvez parcourir l’arborescence vers le bas en appuyant/cliquant sur des cartes (en veillant à ne pas appuyer sur les actions rapides) ou vers le haut en utilisant la variable [chemins de navigation dans l’en-tête](#the-header).
+Vous pouvez parcourir l’arborescence vers le bas en appuyant/cliquant sur des cartes (en veillant à éviter d’appuyer sur les actions rapides) ou vers le haut en utilisant le [chemin de navigation dans l’en-tête](#the-header).
 
 ### Vue Liste {#list-view}
 
@@ -194,7 +194,7 @@ Le mode Liste fournit des informations pour chaque ressource au niveau actuel da
 ![Vue Liste](assets/sites-console-list-view.png)
 
 * Vous pouvez parcourir l’arborescence vers le bas en appuyant/cliquant sur le nom de la ressource, ou vers le haut en utilisant le [chemin de navigation dans l’en-tête](#the-header).
-* Pour sélectionner facilement tous les éléments de la liste, utilisez le [**Tout sélectionner** dans la barre d’outils.](#select-all)
+* Pour sélectionner facilement tous les éléments de la liste, cochez la case [**Tout sélectionner** dans la barre d’outils.](#select-all)
 
 * Sélectionnez les colonnes à afficher à l’aide de l’option **Afficher les paramètres** située sous le bouton Vues. Vous pouvez afficher les colonnes suivantes :
 
@@ -208,7 +208,7 @@ Le mode Liste fournit des informations pour chaque ressource au niveau actuel da
    * **Traduit**
    * **Pages vues**
    * **Visiteurs uniques**
-   * **Durée sur la page**
+   * **Temps sur la page**
 
 ![Configurer les colonnes](assets/sites-console-select-columns.png)
 
@@ -230,30 +230,30 @@ Sélectionnez la barre de sélection verticale et faites glisser l’élément v
 
 Chaque fois qu’une ressource est sélectionnée, vous pouvez effectuer diverses actions sur l’élément sélectionné. Ces actions sont affichées dans la barre d’outils des actions.
 
-![Barre d’outils Actions](assets/introduction-actions-toolbar.png)
+![Barre d’outils d’actions](assets/introduction-actions-toolbar.png)
 
 La barre d’outils Actions n’apparaît que lorsqu’une ressource est sélectionnée dans la console. L’action disponible dans la barre d’outils Actions change pour refléter les actions que vous pouvez effectuer sur les éléments spécifiques sélectionnés. Les actions les plus courantes sont :
 
 * [**Créer**](#create-action) - Créer du contenu ou des actions liées au contenu
-* **Modifier** - Selon la manière dont la page sélectionnée a été créée, la variable **Modifier** ouvre l’éditeur approprié.
+* **Modifier** - Selon la manière dont la page sélectionnée a été créée, l’action **Modifier** ouvrira l’éditeur approprié.
    * [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) - Pour les pages créées avec l’éditeur de page AEM
    * [Éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) - Pour les pages créées avec l’éditeur universel
 * [**Propriétés**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Ouvre la fenêtre des propriétés de page
-* [**Verrouiller**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Verrouiller une page pour empêcher d’autres utilisateurs de la modifier
+* [**Verrouiller**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Verrouiller une page pour empêcher d’autres personnes de la modifier
 * [**Copier**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copier une page
 * [**Déplacer**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Déplacer ou renommer une page
-* [**Publication rapide**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publier une ou plusieurs pages immédiatement
-* [**Gérer la publication**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Planification de la publication d’une ou de plusieurs pages
-* [**Restaurer**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaurer une version d’une page ou d’une arborescence de pages
+* [**Quick Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish une ou plusieurs pages immédiatement
+* [**Gérer la publication**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Planification de la publication d’une page
+* [**Restaurer**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaurer une version d’une page ou d’une arborescence de page
 * [**Supprimer**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Supprimer une ou plusieurs pages
 
-En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois points ou **..**) ouvre un sélecteur de liste déroulante contenant toutes les actions restantes.
+En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois points ou **...**) pour ouvrir un sélecteur de liste déroulante contenant toutes les actions restantes.
 
 ![Options supplémentaires](assets/sites-console-additional-options.png)
 
 ### Créer une action {#create-action}
 
-L’action de création offre des options similaires à la fonction [**Créer** bouton de barre d’outils](#create-button) pour créer des pages et des éléments similaires.
+L’action de création offre des options similaires au bouton de barre d’outils [**Créer**](#create-button) pour créer des pages et des éléments similaires.
 
 En outre, il offre la possibilité de créer des actions liées aux pages.
 

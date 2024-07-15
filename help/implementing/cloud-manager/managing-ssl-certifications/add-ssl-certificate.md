@@ -22,7 +22,7 @@ Découvrez comment ajouter votre propre certificat SSL à l’aide des outils en
 
 ## Conditions requises du certificat {#certificate-requirements}
 
-Consultez la section **Conditions requises du certificat** du document [Présentation de la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) pour vous assurer que le certificat que vous souhaitez ajouter est pris en charge par AEM as a Cloud Service.
+Consultez la section **Exigences de certificat** du document [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) pour vous assurer que le certificat que vous souhaitez ajouter est pris en charge par AEM as a Cloud Service.
 
 ## Ajout d’un certificat {#adding-a-cert}
 
@@ -34,11 +34,11 @@ Pour ajouter un certificat à l’aide de Cloud Manager, procédez comme suit.
 
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 
-1. Cliquez sur **Certificats SSL** dans le panneau de navigation de gauche. Un tableau contenant les détails de tout certificat SSL existant s’affiche sur l’écran principal.
+1. Cliquez sur **SSL Certificates** dans le panneau de navigation de gauche. Un tableau contenant les détails de tout certificat SSL existant s’affiche sur l’écran principal.
 
    ![Ajout d’un certificat SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Cliquez sur **Ajout d’un certificat SSL** pour ouvrir **Ajout d’un certificat SSL** de la boîte de dialogue
+1. Cliquez sur **Ajouter un certificat SSL** pour ouvrir la boîte de dialogue **Ajouter un certificat SSL** .
 
    * Entrez un nom pour votre certificat dans **Nom du certificat**.
       * Il s’agit d’un nom uniquement à titre d’information, il peut s’agir de n’importe quel nom qui vous aide à référencer facilement votre certificat.
@@ -143,7 +143,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver la clé privée correspondante pour votre `main/server` , vous devez recréer le certificat en générant une nouvelle demande de signature de certificat et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
+>La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver une clé privée correspondante pour votre certificat `main/server`, vous devez recréer le certificat en générant une nouvelle CSR et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
 
 ### Dates de validité du certificat {#certificate-validity-dates}
 

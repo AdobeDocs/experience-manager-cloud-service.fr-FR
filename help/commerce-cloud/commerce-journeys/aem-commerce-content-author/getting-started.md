@@ -17,7 +17,7 @@ Découvrez Adobe Experience Manager (AEM) CIF Création.
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent de ce parcours Content and Commerce, [En savoir plus sur AEM contenu et Commerce](/help/commerce-cloud/introduction.md), vous avez appris la théorie et les concepts de base de CMS sans interface et d’AEM Content and Commerce.
+Dans le document précédent de ce parcours Content and Commerce, [En savoir plus sur AEM contenu et Commerce](/help/commerce-cloud/introduction.md), vous avez appris la théorie et les concepts de base d’un CMS sans interface utilisateur et d’un contenu et d’un Commerce sans interface utilisateur.
 
 Cet article développe ces principes fondamentaux.
 
@@ -81,7 +81,7 @@ Le catalogue de produits affiche par défaut toutes les catégories de premier n
 Vous pouvez ouvrir les propriétés du produit en cliquant sur l’icône de propriété. L’icône s’affiche en survolant une vignette de produit.
 ![console des propriétés du produit](assets/cockpit-properties.png)
 
-Toutes les propriétés du produit sont en lecture seule, car les données sont chargées en temps réel depuis le serveur principal connecté. La modification des propriétés du produit doit être effectuée dans le système principal, qui est le système d’enregistrement. Onglet **Variantes** s’affiche uniquement si le produit comporte des variations. Cliquez sur l’onglet pour afficher toutes les variations avec leurs attributs.
+Toutes les propriétés du produit sont en lecture seule, car les données sont chargées en temps réel depuis le serveur principal connecté. La modification des propriétés du produit doit être effectuée dans le système principal, qui est le système d’enregistrement. L’onglet **Variantes** s’affiche uniquement si le produit comporte des variations. Cliquez sur l’onglet pour afficher toutes les variations avec leurs attributs.
 ![variantes du produit cockpit](assets/cockpit-properties-variants.png)
 
 Les onglets restants affichent tout le contenu AEM associé au produit. Ces onglets sont abordés dans l’un des modules suivants.
@@ -101,10 +101,10 @@ Maintenant que vous avez terminé cette partie du parcours, vous devriez :
 * Comment accéder au catalogue de produits dans AEM à l’aide des sélecteurs de produits et de catégories
 * Comment accéder aux données Content and Commerce à l’aide du cockpit du produit et d’AEM Omnisearch
 
-Utilisez ces connaissances et continuez votre parcours en consultant le document. [Gestion des pages et des modèles de catalogue de produits](catalog-templates.md), où vous apprendrez à créer et personnaliser votre première expérience de catalogue de produits.
+Tirez parti de ces connaissances et poursuivez votre parcours en consultant le document [Gérer les pages et les modèles de catalogue de produits](catalog-templates.md), dans lequel vous apprendrez à créer et personnaliser votre première expérience de catalogue de produits.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours -[Gestion des pages et des modèles de catalogue de produits](catalog-templates.md)- voici quelques ressources facultatives qui approfondissent certains concepts mentionnés ici. Toutefois, ces ressources facultatives ne sont pas requises pour continuer sur le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours -[Gérer les pages et les modèles de catalogue de produits](catalog-templates.md) - les ressources facultatives suivantes approfondissent certains concepts mentionnés ici. Toutefois, ces ressources facultatives ne sont pas requises pour continuer sur le parcours.
 
 * [Configuration des magasins et des catalogues](/help/commerce-cloud/getting-started.md#catalog)

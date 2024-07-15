@@ -63,9 +63,9 @@ Pour activer le point d’entrée correspondant :
 
 1. Accédez à **Outils**, **Général**, puis sélectionnez **GraphQL**.
 1. Sélectionnez **Créer**.
-1. La variable **Créer un point de terminaison GraphQL** s’ouvre. Vous pouvez spécifier ici les éléments suivants :
+1. La boîte de dialogue **Créer un point de terminaison GraphQL** s’ouvre. Vous pouvez spécifier ici les éléments suivants :
    * **Nom** : nom du point d’entrée ; vous pouvez saisir du texte.
-   * **Utiliser le schéma GraphQL fourni par**: utilisez la liste déroulante pour sélectionner le site/projet requis.
+   * **Utiliser le schéma GraphQL fourni par** : utilisez la liste déroulante pour sélectionner le site/projet requis.
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ Pour activer le point d’entrée correspondant :
    >* *Les points d’entrée GraphQL peuvent introduire des problèmes de sécurité et de performances des données s’ils ne sont pas gérés avec précaution. Assurez-vous que les autorisations appropriées sont définies après la création d’un point d’entrée.*
 
 1. Confirmez en sélectionnant **Créer**.
-1. La variable **Étapes suivantes** La boîte de dialogue fournit un lien direct vers la console Sécurité afin que vous puissiez vous assurer que le point de terminaison créé dispose des autorisations appropriées.
+1. La boîte de dialogue **Étapes suivantes** fournit un lien direct vers la console Sécurité afin que vous puissiez vous assurer que le point de terminaison créé dispose des autorisations appropriées.
 
    >[!CAUTION]
    >
@@ -92,4 +92,4 @@ Sélectionnez le nouveau point d’entrée et **Publier** pour le rendre entièr
 >
 >Cela peut entraîner un problème de sécurité sur les instances de publication, car les requêtes GraphQL peuvent imposer une charge importante au serveur.
 >
->Configuration [Listes ACL adaptées à votre cas d’utilisation](/help/headless/security/permissions.md) sur le point de terminaison .
+>Configurez les [listes de contrôle d’accès adaptées à votre cas d’utilisation](/help/headless/security/permissions.md) sur le point de terminaison .

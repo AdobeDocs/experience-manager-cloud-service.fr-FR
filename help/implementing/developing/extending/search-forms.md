@@ -66,7 +66,7 @@ Les configurations par défaut (classées dans l’ordre alphabétique) disponib
 
 >[!NOTE]
 >
->Pour plus d’informations sur les formulaires de recherche liés aux ressources, voir [Ressources - Facettes de recherche](/help/assets/search-facets.md).
+>Pour plus d’informations sur les formulaires de recherche liés aux ressources, voir [Assets - Facettes de recherche](/help/assets/search-facets.md).
 
 
 ## Prédicats et paramètres associés {#predicates-and-their-settings}
@@ -529,7 +529,7 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
 * **Chemin d’accès aux options**
 
-  L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, Après avoir sélectionné **+** sert à ajouter la sélection à la liste des options valides (puis la fonction **-** pour la supprimer, le cas échéant).
+  L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, Après avoir sélectionné l’icône **+**, ajoutez la sélection à la liste des options valides (puis l’icône **-** à supprimer si nécessaire).
 
   Les options sont des nœuds de contenu créés par l’utilisateur, qui possèdent la structure suivante :
 

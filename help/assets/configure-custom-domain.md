@@ -24,18 +24,18 @@ Dans Adobe Cloud Manager, vous pouvez faire ressortir votre site web en ajoutant
 
 Pour configurer un domaine personnalisé pour le niveau de publication, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Aperçu du programme]** > **[!UICONTROL Certificats SSL]**et ajoutez votre certificat SSL.
+1. Accédez à **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Aperçu du programme]** > **[!UICONTROL Certificats SSL]** et ajoutez votre certificat SSL.
    ![image](/help/assets/assets/ssl-certificate.png)
-Découvrez comment ajouter [Certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) dans Adobe Cloud Manager.
+Découvrez comment ajouter le [certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) dans Adobe Cloud Manager.
 
-1. Après avoir ajouté le certificat SSL, ajoutez un domaine personnalisé. Cliquez sur **[!UICONTROL Paramètres de domaine]** et spécifiez le domaine personnalisé par rapport à la propriété **[!UICONTROL Service Publish]** .
+1. Après avoir ajouté le certificat SSL, ajoutez un domaine personnalisé. Cliquez sur **[!UICONTROL Paramètres de domaine]** et spécifiez le domaine personnalisé par rapport à l’option **[!UICONTROL Service Publish]** .
 En savoir plus sur [domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. Ajouter 2 [Enregistrements CNAME](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) dans votre enregistrement DNS correspondant aux domaines de publication.
+1. Ajoutez 2 [enregistrements CNAME](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) dans votre enregistrement DNS correspondant aux domaines de publication.
 La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.
 
 1. Consignez un cas de support pour faciliter la configuration du domaine personnalisé, en vous assurant qu’il dirige vers le niveau de diffusion.
 
 >[!NOTE]
 >
-> Veillez à ajouter le domaine personnalisé à la liste des URL de redirection autorisées dans le client IMS pour le sélecteur de ressources.<br>Coordination avec l’équipe d’Adobe respective afin d’exécuter cette tâche en fournissant la chaîne de domaine personnalisée.
+> Veillez à ajouter le domaine personnalisé à la liste des URL de redirection autorisées dans le client IMS pour le sélecteur de ressources.<br>Coordination avec l’équipe d’Adobe respective pour exécuter cette tâche en fournissant la chaîne de domaine personnalisée.

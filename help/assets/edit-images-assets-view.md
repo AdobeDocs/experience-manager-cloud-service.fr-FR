@@ -23,8 +23,8 @@ La vue Assets permet de modifier des images de base, notamment de redimensionner
 
 ## Modifier l’image {#edit-image}
 
-Accédez à la vue Assets à l’aide du lien - [Vue Assets](https://experience.adobe.com/#/assets) et en sélectionnant le référentiel approprié. Pour recevoir un accès, contactez l’équipe d’administration de votre entreprise.
-Pour toute information de référence supplémentaire, voir [Prise en main de la vue Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Présentation de l’interface utilisateur de la vue Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), et [Cas d’utilisation de la vue Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Accédez à la vue Assets à l’aide du lien : [Assets View](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié. Pour recevoir un accès, contactez l’équipe d’administration de votre entreprise.
+Pour obtenir des informations de référence supplémentaires, reportez-vous à [Prise en main de la vue Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprendre l’interface utilisateur de la vue Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) et [Cas d’utilisation de la vue Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -85,10 +85,10 @@ Vous pouvez rapidement convertir les formats d’image JPEG et PNG à l’aide d
 ### Modifier des images à l’aide de l’éditeur intégré d’Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
 Les utilisateurs disposant de droits express peuvent utiliser l’éditeur express intégré dans la vue Assets pour modifier facilement le contenu et créer du contenu avec GenAI depuis Adobe Firefly. Cela améliore la réutilisation du contenu et accélère la vitesse du contenu. Vous pouvez également utiliser des éléments prédéfinis pour optimiser l’aspect de vos ressources ou exécuter des actions rapides pour modifier vos images en quelques clics seulement.
-![s’exprimer dans l’IU de base](/help/assets/assets/express-in-essentials-ui.jpg)
-Pour modifier des images à l’aide de [!DNL Adobe Express] incorporez l’éditeur, procédez comme suit :
+![express dans l’IU de base](/help/assets/assets/express-in-essentials-ui.jpg)
+Pour modifier des images à l’aide de l’éditeur incorporé [!DNL Adobe Express], procédez comme suit :
 
-1. Accédez à la vue AEM Assets à l’aide du lien - [Vue AEM Assets](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié.
+1. Accédez à la vue AEM Assets à l’aide du lien : [AEM Assets View](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié.
 1. Cliquez sur **Ressources**, saisissez un dossier et sélectionnez une image.
 1. Cliquez sur **Ouvrir dans Adobe Express**. L’image s’ouvre sur une zone de travail Express.
 1. Apportez les modifications requises à l’image.
@@ -124,10 +124,10 @@ Pour modifier des images à l’aide de [!DNL Adobe Express] incorporez l’édi
 
 [!DNL Assets view] vous permet de créer un modèle entièrement nouveau à l’aide de l’éditeur intégré [!DNL Adobe Express]. Pour créer une ressource à l’aide d’[!DNL Adobe Express], exécutez les étapes suivantes :
 
-1. Accédez à **[!UICONTROL Mon Workspace]** et cliquez sur **[!UICONTROL Créer]** dans la bannière d’Adobe Express qui s’affiche en haut. La zone de travail vierge d’[!DNL Adobe Express] s’affiche dans l’interface utilisateur d’[!DNL Assets view].
+1. Accédez à **[!UICONTROL My Workspace]** et cliquez sur **[!UICONTROL Créer]** dans la bannière d’Adobe Express qui s’affiche en haut de l’écran. La zone de travail vierge d’[!DNL Adobe Express] s’affiche dans l’interface utilisateur d’[!DNL Assets view].
 1. Créez votre contenu à l’aide de [modèles](https://helpx.adobe.com/fr/express/using/work-with-templates.html). Sinon, accédez à **[!UICONTROL Vos créations]** pour modifier le contenu existant.
 1. Une fois les modifications terminées, cliquez sur **[!UICONTROL Enregistrer]**.
-1. Spécifiez le chemin de destination de la ressource créée, puis cliquez sur **[!UICONTROL Enregistrer en tant que nouvelle ressource]**.
+1. Spécifiez le chemin de destination de la ressource créée et cliquez sur **[!UICONTROL Enregistrer comme nouvelle ressource]**.
 
 #### Limites {#limitations}
 
@@ -195,7 +195,7 @@ TBD: Insert a video of the available social media options.
 
 ### Étapes suivantes {#next-steps}
 
-* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets.
+* Fournissez des commentaires sur les produits à l’aide de l’option [!UICONTROL Feedback] disponible dans l’interface utilisateur de la vue Assets.
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 

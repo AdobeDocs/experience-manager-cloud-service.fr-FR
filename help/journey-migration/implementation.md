@@ -61,7 +61,7 @@ Il permet de spécifier le sous-ensemble de contenu que vous souhaitez transfér
 
 Le processus de migration de contenu consiste en plusieurs étapes, qui demandent une planification, un suivi et une collaboration entre les différentes équipes.
 
-Pour plus d’informations sur le fonctionnement de l’outil et sur la façon dont Adobe vous recommande de l’utiliser, voir la section [Documentation de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Pour plus d’informations sur le fonctionnement de l’outil et sur la façon dont Adobe vous recommande de l’utiliser, consultez la [documentation de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Refactorisation du code {#code-refactor}
 

@@ -78,9 +78,9 @@ Ce type de métadonnées permet aux utilisateurs de comprendre et d’utiliser e
 
 Les métadonnées d’information fournissent des informations descriptives pour améliorer la compréhension du contenu, ce qui facilite la découverte de contenu et la recherche. Il comprend des mots-clés, des légendes et des descriptions. <br>Par exemple, lors de la gestion d’une vidéo dans Experience Manager Assets, nous pouvons inclure les métadonnées d’information suivantes :
 
-* **Mots-clés**: marketing, lancement de produit, promotion
-* **Légende**: présentation de notre dernier produit avec des fonctionnalités intéressantes
-* **Description**: présentation détaillée du contenu vidéo.
+* **Mots-clés** : marketing, lancement de produit, promotion
+* **Légende** : présentation de notre dernier produit avec des fonctionnalités intéressantes
+* **Description** : présentation détaillée du contenu vidéo.
 
 ### Métadonnées administratives
 
@@ -170,7 +170,7 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
 
 1. Accédez à l’emplacement des ressources que vous souhaitez modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
-1. Dans la barre d’outils, sélectionnez **[!UICONTROL Propriétés]** pour ouvrir le [!UICONTROL Propriétés] pour les ressources sélectionnées.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Propriétés]** pour ouvrir la page [!UICONTROL Propriétés] pour les ressources sélectionnées.
 
    >[!NOTE]
    >

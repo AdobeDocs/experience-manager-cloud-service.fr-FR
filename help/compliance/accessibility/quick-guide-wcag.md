@@ -29,7 +29,7 @@ WCAG 2.1 regroupe un ensemble de consignes et de critères de réussite, qui ne
 
 Par exemple, la description d’une image (ou de tout autre contenu non textuel) à l’aide de l’attribut `alt` dans le code HTML avantage considérablement les personnes non voyantes ou malvoyantes. La description textuelle dans l’attribut `alt` peut être convertie en sortie vocale ou transmise aux affichages électroniques en braille actualisables.
 
-WCAG 2.1 peut également présenter des avantages pour d’autres bénéficiaires, y compris les personnes qui peuvent être considérées comme *personnes handicapées par rapport à la situation*. c’est-à-dire les personnes qui, en raison de circonstances telles que la technologie de navigation, la vitesse de la connexion réseau ou l’environnement de navigation, peuvent rencontrer des obstacles similaires à ceux des personnes handicapées.
+En outre, WCAG 2.1 peut présenter des avantages pour d’autres bénéficiaires, y compris les personnes qui peuvent être considérées comme *handicapées par rapport à la situation*. c’est-à-dire les personnes qui, en raison de circonstances telles que la technologie de navigation, la vitesse de la connexion réseau ou l’environnement de navigation, peuvent rencontrer des obstacles similaires à ceux des personnes handicapées.
 
 En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propriétaires de sites web peuvent créer du contenu web qui satisfait les critères de réussite des niveaux A et AA pertinents de WCAG 2.1.
 

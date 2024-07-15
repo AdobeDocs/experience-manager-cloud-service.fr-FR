@@ -7,7 +7,7 @@ role: Admin, User
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 72%
+ht-degree: 85%
 
 ---
 
@@ -39,17 +39,17 @@ Vous pouvez séparer la délégation de tâches en fonction des modèles de proc
 
 Effectuez les étapes suivantes pour activer le paramètre Absence du bureau pour votre compte et déléguez les tâches de votre boîte de réception à un autre utilisateur :
 
-1. Connectez-vous à l’instance AEM. Sélectionnez la variable ![Boîte de réception](assets/bell.svg) et sélectionnez **[!UICONTROL Afficher tout]**. La liste des éléments de votre boîte de réception s’affiche.
-1. Sélectionnez la variable ![Sélecteur d’affichage](assets/viewlist.svg) ou ![Sélecteur d’affichage](assets/calendar.svg) en regard de l’icône **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Paramètres]**. La boîte de dialogue des paramètres apparaît.
+1. Connectez-vous à l’instance AEM. Sélectionnez l’icône ![Boîte de réception](assets/bell.svg), puis **[!UICONTROL Afficher tout]**. La liste des éléments de votre boîte de réception s’affiche.
+1. Sélectionnez l’icône ![Sélecteur de vue](assets/viewlist.svg) ou ![Sélecteur de vue](assets/calendar.svg) en regard du bouton **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Paramètres]**. La boîte de dialogue des paramètres apparaît.
 1. Ouvrez l’onglet **[!UICONTROL Absence du bureau]** dans la boîte de dialogue des paramètres.
-1. Sélectionnez la variable **[!UICONTROL Activer/Désactiver]** pour activer le paramètre Absence du bureau .
+1. Appuyez sur le bouton **[!UICONTROL Activer/Désactiver]** pour activer le paramètre Absence du bureau.
 1. Spécifiez les paramètres **[!UICONTROL Heure de Début]** et **[!UICONTROL Heure de fin]**. Les tâches sont déléguées uniquement pendant la période spécifiée. Laissez le champ **[!UICONTROL Heure de fin]** vide pour déléguer des tâches pour une période indéfinie.
-1. Cochez la case **[!UICONTROL Transférer mes tâches pendant cette période]**. Si vous ne sélectionnez pas l’option et ne spécifiez aucune personne désignée, vos éléments ne sont transférés à aucun utilisateur. Bien que vous soyez absent et que le paramètre soit activé, les tâches restent dans votre boîte de réception.
-1. Sélectionner **[!UICONTROL Ajouter un cessionnaire]**. Spécifiez un utilisateur dans le champ **[!UICONTROL Cessionnaire]** pour lui déléguer les tâches. Spécifiez le **[!UICONTROL modèle de workflow]** à déléguer à l’utilisateur spécifié. Vous pouvez sélectionner plusieurs modèles de processus.
+1. Cochez la case **[!UICONTROL Transférer mes tâches pendant cette période]**. Si vous ne sélectionnez pas l’option et ne spécifiez pas de personne désignée, vos éléments ne sont transférés à aucun utilisateur ni utilisatrice. Bien que vous soyez absent et que le paramètre soit activé, les tâches restent dans votre boîte de réception.
+1. Sélectionnez **[!UICONTROL Ajouter une personne désignée]**. Spécifiez un utilisateur dans le champ **[!UICONTROL Cessionnaire]** pour lui déléguer les tâches. Spécifiez le **[!UICONTROL modèle de workflow]** à déléguer à l’utilisateur spécifié. Vous pouvez sélectionner plusieurs modèles de processus.
 
    En outre, pour affecter toutes les tâches, quel que soit le modèle de processus, à un utilisateur particulier, sélectionnez **[!UICONTROL Tous les processus]** dans la liste déroulante Modèle de processus. <br>
 
-   Pour affecter des éléments à un utilisateur spécifique pour tous les modèles de workflow, sauf quelques-uns, sélectionnez **[!UICONTROL Tous les workflows]** dans la liste déroulante Modèle de processus , sélectionnez **[!UICONTROL + Ajouter des exceptions]**, puis spécifiez les modèles de workflow à exclure.
+   Pour attribuer des éléments à un utilisateur ou une utilisatrice spécifique pour quasiment tous les modèles de workflow, sélectionnez **[!UICONTROL Tous les workflows]** dans la liste déroulante Modèle de workflow, appuyez sur **[!UICONTROL + Ajouter des exceptions]** et spécifiez les modèles de workflow à exclure.
    <br>
 
    Répétez cette étape pour ajouter d’autres délégataires. <br>
@@ -66,8 +66,8 @@ Désormais, les tâches qui vous sont affectées au cours de la période d’abs
 
 >[!NOTE]
 >
->(Pour les éléments de workflow basés sur l’utilisation de Forms uniquement) Activez la variable **[!UICONTROL Autoriser les personnes désignées à déléguer à l’aide des paramètres &quot;Absence du bureau&quot;]** de l’ **[!UICONTROL Affecter une tâche]** dans le workflow. Seules les tâches pour lesquelles l’option ci-dessus est activée sont déléguées à d’autres utilisateurs.
->(Pour les éléments de processus orientés formulaire uniquement) Activez l’option **[!UICONTROL Autoriser les délégataires à déléguer à l’aide des paramètres « Absence du bureau »]** de l’étape **[!UICONTROL Attribuer la tâche]** du processus. Seuls les éléments pour lesquels l’option mentionnée précédemment est activée sont délégués à d’autres utilisateurs.
+>(Pour les éléments de workflow basés sur Forms uniquement) Activez l’option **[!UICONTROL Autoriser la personne désignée à déléguer à l’aide de l’option &quot;Paramètres d’absence du bureau&quot;]** de l’étape **[!UICONTROL Affecter une tâche]** dans le workflow. Seules les tâches pour lesquelles l’option ci-dessus est activée sont déléguées à d’autres utilisateurs.
+>(Pour les éléments de processus orientés formulaire uniquement) Activez l’option **[!UICONTROL Autoriser les délégataires à déléguer à l’aide des paramètres « Absence du bureau »]** de l’étape **[!UICONTROL Attribuer la tâche]** du processus. Seules les tâches pour lesquelles l’option ci-dessus est activée sont déléguées à d’autres utilisateurs ou utilisatrices.
 
 ## Limites {#limitations}
 

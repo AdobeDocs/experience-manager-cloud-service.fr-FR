@@ -13,7 +13,7 @@ ht-degree: 31%
 
 # Personnalisation de la console de fragments de contenu et de l’éditeur {#customizing-content-fragment-console-and-editor}
 
-La console de fragments de contenu et l’éditeur sont extensibles et peuvent être personnalisés selon vos besoins à l’aide du créateur d’applications Adobe.
+La console de fragments de contenu et l’éditeur sont extensibles et peuvent être personnalisés selon vos besoins à l’aide d’Adobe App Builder.
 
 Pour plus d’informations, consultez la section suivante :
 
@@ -29,4 +29,4 @@ Pour plus d’informations, consultez la section suivante :
 
 * l’éditeur de fragment de contenu
 
-   * [AEM des points d’extension de l’éditeur de fragments de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)
+   * [AEM Points d’extension de l’éditeur de fragments de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)

@@ -84,7 +84,7 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 Forms as a Cloud Service propose des options pour stocker du contenu dans un système de stockage externe tel que Blob Store, Database ou un service de stockage. Vous pouvez également stocker des données de processus en cours (données variables de workflow AEM) qui contiennent des éléments de données personnelles sensibles (SPD) dans un référentiel géré par le client pour un traitement sécurisé. Adobe recommande de stocker uniquement les données sensibles sur les stockages gérés par le client.
 
-Vous pouvez utiliser la variable **Connecteur de stockage unifié** pour vous connecter à Blob Storage et **Modèle de données de formulaire (FDM)** pour vous connecter à des bases de données ou à des services principaux (RESTful, SOAP, Azure Blob Storage, etc.).
+Vous pouvez utiliser le **Unified Storage Connector** pour vous connecter à Blob Storage et le **Form Data Model (FDM)** pour vous connecter à des bases de données ou à des services principaux (RESTful, SOAP, Azure Blob Storage, etc.).
 
 ### Services de document
 

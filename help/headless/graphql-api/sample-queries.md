@@ -1796,7 +1796,7 @@ Cette requête interroge :
 } 
 ```
 
-## Exemples de requêtes pour la diffusion de ressources DAM et Dynamic Media {#sample-queries-delivery-DAM-DM}
+## Exemples de requêtes pour la diffusion de DAM et Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
 
 Pour la diffusion d’images optimisée pour le web (des ressources de gestion des actifs numériques) :
 

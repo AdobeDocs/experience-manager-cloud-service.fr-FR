@@ -75,7 +75,7 @@ Pour passer en mode Ciblage :
 
    ![Mode Ciblage](../assets/targeted-mode.png)
 
-1. Sélectionner **Ciblage**. Les options de ciblage s’affichent dans la partie supérieure de la page.
+1. Sélectionnez **Ciblage**. Les options de ciblage s’affichent dans la partie supérieure de la page.
 
    ![Barre d’outils de ciblage](../assets/targeted-toolbar.png)
 
@@ -100,7 +100,7 @@ Pour ajouter une activité :
    >
    >Si vous créez une marque en utilisant un autre procédé, assurez-vous que le nœud `/campaigns/<brand>/master` existe pour éviter qu’une erreur ne se produise lorsque vous tenterez de créer une activité.
 
-1. Sélectionnez + en regard de l’option **Activité** menu déroulant.
+1. Sélectionnez + en regard du menu déroulant **Activité** .
 1. Saisissez un nom pour l’activité.
 
    >[!NOTE]
@@ -142,7 +142,7 @@ Pour ajouter une activité :
 
    >[!NOTE]
    >
-   >Pour modifier l’activité que vous utilisez, sélectionnez **Précédent**.
+   >Pour modifier l’activité avec laquelle vous travaillez, sélectionnez **Précédent**.
 
 ## Créer : création d’expériences {#create-authoring-the-experiences}
 
@@ -194,7 +194,7 @@ Vous pouvez enregistrer des offres personnalisées dans une bibliothèque d’of
 
 Pour ajouter une expérience :
 
-1. Pour ajouter une expérience, sélectionnez **+** **Ajout du ciblage d’expérience** qui apparaît sous les expériences existantes dans la variable **Audiences** volet.
+1. Pour ajouter une expérience, sélectionnez **+** **Ajouter le ciblage d’expérience** qui apparaît sous les expériences existantes dans le volet **Audiences**.
 1. Sélectionnez une audience. Par défaut, ce nom correspond au nom de l’expérience. Si vous le souhaitez, vous pouvez saisir un autre nom. Sélectionnez **OK**.
 
 #### Suppression d’expériences à l’aide du mode Ciblage {#removing-experiences-using-targeting-mode}
@@ -295,7 +295,7 @@ Lorsque vous ajoutez un composant au composant cible, il fournit du contenu pour
 
 Vous pouvez ajouter un composant cible à la page en mode édition ou en mode Ciblage. Vous pouvez ajouter des composants au composant cible uniquement en mode Ciblage. Le composant cible appartient au groupe de composants de personnalisation.
 
-Si vous modifiez le contenu ciblé, vous devez sélectionner **Commencer le ciblage** avant que vous ne puissiez le faire.
+Si vous modifiez du contenu ciblé, vous devez sélectionner **Commencer le ciblage** avant de pouvoir le faire.
 
 1. Faites glisser le composant cible vers la page où vous voulez faire apparaître l’offre.
 1. Par défaut, aucun identifiant d’emplacement n’est défini. Sélectionnez la roulette de configuration pour définir l’emplacement.
@@ -356,11 +356,11 @@ Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par d�
 
    Le sélecteur d’offres vous permet de rechercher ou de filtrer des offres. Lors de la navigation ou du filtrage, vous pouvez également trier les offres et modifier leur mode d’affichage. Le nombre dans l’angle supérieur droit indique le nombre d’offres disponibles dans la bibliothèque actuelle.
 
-   * Sélectionner **Parcourir** pour accéder à un autre dossier. Le volet de navigation s’affiche. Cliquez sur la flèche pour accéder aux dossiers. Sélectionner **Parcourir** pour fermer le volet de navigation.
+   * Sélectionnez **Parcourir** pour accéder à un autre dossier. Le volet de navigation s’affiche. Cliquez sur la flèche pour accéder aux dossiers. Sélectionnez à nouveau **Parcourir** pour fermer le volet de navigation.
 
    ![Parcourir le contenu](../assets/targeted-select-content-browse.png)
 
-   * Sélectionner **Filtrer** pour filtrer les offres par rapport aux mots-clés ou aux balises. Vous saisissez des mots-clés et sélectionnez des balises dans le menu déroulant. Sélectionner **Filtrer** pour fermer le volet de filtrage.
+   * Sélectionnez **Filtrer** pour filtrer les offres par rapport aux mots-clés ou aux balises. Vous saisissez des mots-clés et sélectionnez des balises dans le menu déroulant. Sélectionnez à nouveau **Filtre** pour fermer le volet de filtrage.
 
    ![Filtrer le contenu](../assets/targeted-filter.png)
 
@@ -368,7 +368,7 @@ Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par d�
 
    ![Ordre de tri des filtres](../assets/targeted-filter-sort.png)
 
-   Sélectionnez l’icône en regard de **Afficher sous** pour afficher les offres sous forme de mosaïques ou de liste.
+   Sélectionnez l’icône en regard de **Afficher comme** pour afficher les offres sous forme de mosaïque ou de liste.
 
    ![Bouton Afficher sous](../assets/targeted-view-as-button.png)
 
@@ -379,7 +379,7 @@ Ajoutez une offre personnalisée à la [bibliothèque d’offres](/help/sites-cl
 Pour plus d’informations sur l’utilisation de la console Offres pour créer une offre réutilisable, reportez-vous à la section [Ajout d’une offre à une bibliothèque d’offres](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Sélectionnez l’expérience pour afficher l’offre personnalisée.
-1. Sélectionnez l’offre personnalisée pour afficher le menu d’offres, puis sélectionnez la **Enregistrer l’offre dans la bibliothèque des offres** Icône
+1. Sélectionnez l’offre personnalisée pour afficher le menu d’offres, puis sélectionnez l’icône **Enregistrer l’offre dans la bibliothèque d’offres** .
 
    ![Enregistrer l’offre dans la bibliothèque d’offres](../assets/targeted-save-offer-library-button.png)
 
@@ -427,7 +427,7 @@ Une audience ne doit pas être utilisée par plusieurs expériences. Un symbole 
 Procédez comme suit pour associer une expérience à une audience lors de l’utilisation du ciblage AEM (ou du ciblage d’expérience Adobe Target) :
 
 1. Sélectionnez la flèche de liste déroulante en regard de la zone d’audience mappée à l’expérience.
-1. (Facultatif) Sélectionnez **Modifier** puis saisissez un mot-clé pour rechercher le segment souhaité.
+1. (Facultatif) Sélectionnez **Modifier** , puis saisissez un mot-clé pour rechercher le segment souhaité.
 1. Dans la liste des audiences, sélectionnez l’audience et sélectionnez **OK**.
 
 ### Si vous utilisez des tests A/B (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
@@ -442,7 +442,7 @@ Vous pouvez modifier les pourcentages, à condition que leur somme reste égale 
 
 1. Sélectionnez la liste déroulante en regard de l’audience mappée à l’expérience.
 1. (Facultatif) Cliquez sur **Modifier**, puis saisissez un mot-clé pour rechercher le segment souhaité.
-1. Sélectionner **OK.**
+1. Sélectionnez **OK.**
 1. Saisissez des pourcentages pour configurer le mode de routage du trafic d’audience vers chaque expérience. Le nombre total doit être égal à 100.
 1. (Facultatif) Modifiez le nom de l’expérience en cliquant sur le menu déroulant en regard de son nom.
 

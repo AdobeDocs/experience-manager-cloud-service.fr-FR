@@ -95,11 +95,11 @@ Lors de la création d’un modèle modifiable :
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
-Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. Il s’agit d’une tâche de l’administrateur qui est décrite dans le document . [Modèles de page](/help/implementing/developing/components/templates.md#template-folders).
+Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. Il s’agit d’une tâche de l’administrateur qui est décrite dans le document [Modèles de page](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Création d’un modèle - Créateur ou créatrice de modèles {#creating-a-new-template-template-author}
 
-1. Ouvrez le **Console de modèles** (par **Outils >** **Général**), puis accédez au dossier requis.
+1. Ouvrez la **console de modèles** (par le biais de **Outils >** **Général**), puis accédez au dossier requis.
 
    >[!NOTE]
    >
@@ -161,10 +161,10 @@ Pour définir la miniature du modèle :
 
 1. Modifiez les propriétés du modèle.
 1. Choisissez si vous souhaitez télécharger une miniature ou la faire générer à partir du contenu du modèle.
-   * Si vous souhaitez charger une miniature, sélectionnez **Télécharger l’image**
+   * Si vous souhaitez télécharger une miniature, sélectionnez **Télécharger l’image**
    * Si vous souhaitez générer une miniature, sélectionnez **Générer l’aperçu**
 1. Pour les deux méthodes, un aperçu de la miniature s’affiche.
-   * Si ce n’est pas le cas, sélectionnez **Effacer** pour charger une autre image ou générer à nouveau la miniature.
+   * Si ce n’est pas le cas, sélectionnez **Effacer** pour télécharger une autre image ou générer à nouveau la miniature.
 1. Lorsque la miniature vous satisfait, sélectionnez **Enregistrer et fermer**.
 
 ### Activation et autorisation d’un modèle - Créateur ou créatrice de modèles {#enabling-and-allowing-a-template-template-author}
@@ -184,7 +184,7 @@ Un modèle peut être activé ou désactivé afin de le rendre disponible ou ind
 
 1. Dans la **console de modèles**, sélectionnez le modèle.
 1. Sélectionnez **Activer** ou **Désactiver** dans la barre d’outils, puis de nouveau dans la boîte de dialogue de confirmation.
-1. Vous pouvez désormais utiliser votre modèle lorsque [créer une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), mais vous souhaiterez probablement [modifier le modèle ;](#editing-templates-template-authors) selon vos besoins.
+1. Vous pouvez désormais utiliser votre modèle lors de la [création d’une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), bien que vous vouliez [modifier le modèle](#editing-templates-template-authors) en fonction de vos besoins.
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ En mode **Structure**, vous définissez les composants et le contenu de votre mo
 
 ![Structure de page de l’éditeur de modèles](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-Vous pouvez effectuer plusieurs actions dans la variable **Structure** de l’éditeur de modèles et de plusieurs fonctions pour vous aider :
+Vous pouvez exécuter plusieurs actions en mode **Structure** de l’éditeur de modèles, ainsi que plusieurs fonctions pour vous aider :
 
 #### Ajout de composants {#add-components}
 
@@ -351,8 +351,8 @@ Cela permet de définir les détails de la conception.
 
 La fenêtre de configuration est divisée en deux.
 
-* Dans la partie gauche de la boîte de dialogue sous **Stratégie**, vous pouvez sélectionner une stratégie existante ou en sélectionner une.
-* Dans la partie droite de la boîte de dialogue sous **Propriétés**, vous pouvez définir les propriétés spécifiques au type de composant.
+* Dans la partie gauche de la boîte de dialogue sous **Stratégie**, vous pouvez sélectionner une stratégie existante.
+* Dans la partie droite de la boîte de dialogue sous **Properties**, vous pouvez définir les propriétés spécifiques au type de composant.
 
 Les propriétés disponibles dépendent du composant sélectionné. Par exemple, pour un composant de texte, les propriétés définissent les options de copier-coller, de mise en forme et de style de paragraphe, entre autres options.
 
@@ -360,21 +360,21 @@ Les propriétés disponibles dépendent du composant sélectionné. Par exemple,
 
 Les politiques de contenu (ou de conception) définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle).
 
-Sous **Stratégie** vous pouvez sélectionner une stratégie existante à appliquer au composant dans la liste déroulante.
+Sous **Stratégie**, vous pouvez sélectionner une stratégie existante à appliquer au composant dans la liste déroulante.
 
 ![Sélectionner une politique](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-Vous pouvez ajouter une nouvelle stratégie en cliquant sur le bouton d’ajout en regard de l’option **Sélectionner une stratégie** menu déroulant. Donnez un nouveau titre dans la section **Titre de la stratégie** champ .
+Vous pouvez ajouter une nouvelle stratégie en sélectionnant le bouton d’ajout en regard de la liste déroulante **Sélectionner une stratégie**. Donnez un nouveau titre dans le champ **Titre de la stratégie**.
 
 ![Bouton Ajouter une politique](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-La stratégie existante sélectionnée dans le **Sélectionner une stratégie** La liste déroulante peut être copiée en tant que nouvelle stratégie à l’aide du bouton Copier situé en regard de la liste déroulante. Donnez un nouveau titre dans la section **Titre de la stratégie** champ . Par défaut, la politique copiée est intitulée **Copie de X**, X étant le titre de la politique copiée.
+La stratégie existante sélectionnée dans la liste déroulante **Sélectionner une stratégie** peut être copiée en tant que nouvelle stratégie à l’aide du bouton Copier en regard de la liste déroulante. Donnez un nouveau titre dans le champ **Titre de la stratégie**. Par défaut, la politique copiée est intitulée **Copie de X**, X étant le titre de la politique copiée.
 
 ![Bouton Copier la politique](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 Vous pouvez saisir la description de la politique dans le champ **Description de la politique** (facultatif).
 
-Dans le **D’autres modèles utilisent également la stratégie sélectionnée.** , vous pouvez facilement voir les autres modèles qui utilisent la stratégie sélectionnée dans la **Sélectionner une stratégie** liste déroulante.
+Dans la section **D’autres modèles utilisent également la stratégie sélectionnée**, vous pouvez facilement voir quels autres modèles utilisent la stratégie sélectionnée dans la liste déroulante **Sélectionner une stratégie** .
 
 ![Utilisation d’une politique existante](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -395,13 +395,13 @@ Sur l’onglet **Principal**, les paramètres les plus importants du composant s
 
 Par exemple, pour un composant d’image, les largeurs autorisées peuvent être définies, ainsi que l’activation du chargement différé.
 
-Si un paramètre permet plusieurs configurations, sélectionnez la variable **Ajouter** pour ajouter une autre configuration.
+Si un paramètre permet plusieurs configurations, cliquez sur le bouton **Ajouter** pour ajouter une autre configuration.
 
 ![Bouton Ajouter.](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-Pour supprimer une configuration, sélectionnez la **Supprimer** situé à droite de la configuration.
+Pour supprimer une configuration, cliquez sur le bouton **Supprimer** situé à droite de la configuration.
 
-Pour supprimer une configuration, sélectionnez la **Supprimer** bouton .
+Pour supprimer une configuration, cliquez sur le bouton **Supprimer** .
 
 ![Bouton Supprimer](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -415,7 +415,7 @@ Par exemple, pour un composant d’image, vous pouvez définir les proportions d
 
 >[!CAUTION]
 >
->Dans AEM rapports de recadrage, les proportions **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur, à des fins de compatibilité avec les versions héritées. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
+>Dans AEM rapports de recadrage sont définis comme **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur, à des fins de compatibilité avec les versions héritées. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
 
 >[!NOTE]
 >
@@ -461,9 +461,9 @@ Dans l’onglet **Composants autorisés**, vous définissez les composants dispo
 
 Dans l’onglet **Composants par défaut**, vous définissez les composants qui sont automatiquement associés à des types de médias donnés. Ainsi, lorsqu’un créateur fait glisser une ressource depuis le navigateur des ressources, AEM sait avec quel composant l’associer. Seuls les composants avec des zones de dépôt sont disponibles pour cette configuration.
 
-Sélectionner **Ajouter un mappage** pour ajouter un nouveau mappage de composant et de type MIME.
+Sélectionnez **Ajouter le mappage** pour ajouter un nouveau composant et un mappage de type MIME.
 
-Sélectionnez un composant dans la liste, puis sélectionnez **Ajouter un type** pour ajouter un type MIME supplémentaire à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
+Sélectionnez un composant dans la liste et sélectionnez **Ajouter un type** pour ajouter un type MIME supplémentaire à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
 
 ![Onglet Composants par défaut](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -568,20 +568,20 @@ Vous pouvez appliquer une politique de contenu au modèle ou aux pages créées.
 
   ![Sélecteur de politique](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  Vous pouvez ajouter une nouvelle stratégie en cliquant sur le bouton d’ajout en regard de l’option **Sélectionner une stratégie** liste déroulante. Donnez un nouveau titre dans la section **Titre de la stratégie** champ .
+  Vous pouvez ajouter une nouvelle stratégie en cliquant sur le bouton d’ajout en regard de la liste déroulante **Sélectionner une stratégie** . Donnez un nouveau titre dans le champ **Titre de la stratégie**.
 
   ![Bouton Ajouter une politique](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  La stratégie existante sélectionnée dans le **Sélectionner une stratégie** La liste déroulante peut être copiée en tant que nouvelle stratégie à l’aide du bouton Copier situé en regard de la liste déroulante. Donnez un nouveau titre dans la section **Titre de la stratégie** champ . Par défaut, la politique copiée est intitulée **Copie de X**, X étant le titre de la politique copiée.
+  La stratégie existante sélectionnée dans la liste déroulante **Sélectionner une stratégie** peut être copiée en tant que nouvelle stratégie à l’aide du bouton Copier en regard de la liste déroulante. Donnez un nouveau titre dans le champ **Titre de la stratégie**. Par défaut, la politique copiée est intitulée **Copie de X**, X étant le titre de la politique copiée.
 
   ![Bouton Copier la politique](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* Définissez le titre de la politique dans le champ **Titre de la politique**. Une stratégie doit comporter un titre pour faciliter sa sélection dans la variable **Sélectionner une stratégie** liste déroulante.
+* Définissez le titre de la politique dans le champ **Titre de la politique**. Une stratégie doit avoir un titre pour pouvoir être facilement sélectionnée dans la liste déroulante **Sélectionner une stratégie**.
 
   ![Titre de la politique](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * Vous pouvez saisir la description de la politique dans le champ **Description de la politique** (facultatif).
-* Dans le **D’autres modèles utilisent également la stratégie sélectionnée.** , vous pouvez facilement voir les autres modèles qui utilisent la stratégie sélectionnée dans la **Sélectionner une stratégie** liste déroulante.
+* Dans la section **D’autres modèles utilisent également la stratégie sélectionnée**, vous pouvez facilement voir quels autres modèles utilisent la stratégie sélectionnée dans la liste déroulante **Sélectionner une stratégie** .
 
   ![Utilisation des politiques](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 

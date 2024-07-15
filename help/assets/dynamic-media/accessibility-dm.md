@@ -10,7 +10,7 @@ exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,7 @@ Consultez la rubrique d’aide **Prise en charge des technologies d’assistance
 
 Dynamic Media prend en charge la diffusion de vidéos et de visionneuses de vidéos adaptatives avec sous-titrage. Les sous-titres doivent s’afficher au-dessus du contenu vidéo.
 
-Voir [Vidéo dans Dynamic Media - Ajout de sous-titres à une vidéo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+Consultez la section [Vidéo dans Dynamic Media - Ajouter des sous-titres à une vidéo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]

@@ -22,14 +22,14 @@ En même temps que l’outil d’exportation JSON mis à jour, les fragments de
 
 >[!NOTE]
 >
->Les fragments de contenu sont une **Sites** , mais sont stockées sous la forme **Ressources**.
+>Les fragments de contenu sont une fonctionnalité **Sites**, mais sont stockés sous la forme **Assets**.
 >
->Ils sont désormais principalement gérés avec la variable **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** mais ils peuvent toujours être gérés à partir de la console **[Ressources](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>Ils sont maintenant principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, bien qu’ils puissent toujours être gérés à partir de la console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
 >Il existe deux éditeurs pour la création de fragments de contenu :
 >
->* Le nouvel éditeur de [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), est principalement accessible à partir de la fonction **Fragments de contenu** console.
->* La variable [éditeur d’origine](/help/assets/content-fragments/content-fragments-variations.md) est principalement accessible à partir du **Ressources** console.
+>* Le nouvel éditeur de [ fragments de contenu - création](/help/sites-cloud/administering/content-fragments/authoring.md) est principalement accessible à partir de la console **fragments de contenu**.
+>* L’ [éditeur d’origine](/help/assets/content-fragments/content-fragments-variations.md) est principalement accessible à partir de la console **Assets**.
 
 >[!NOTE]
 >
@@ -133,8 +133,8 @@ Vous pouvez ainsi ajouter du contenu supplémentaire [intermédiaire](/help/asse
 
 Pour le contenu intermédiaire, vous pouvez :
 
-* Ajoutez des composants à partir du [Explorateur de composants.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Ajout de ressources à partir de la fonction [Explorateur de ressources.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Ajoutez des composants à partir du navigateur [Components.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* Ajoutez des ressources à partir du navigateur [Assets.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * Utiliser du [contenu associé](#using-associated-content) comme source de contenu intermédiaire.
 
 >[!CAUTION]

@@ -156,7 +156,7 @@ Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou l
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes dans le tableau.
 1. Cliquez sur **Terminé**.
 
-Au moment de l’exécution ou de l’aperçu, vous voyez **+** et ![Bouton Supprimer](/help/forms/assets/Smock_Delete.svg) pour ajouter ou supprimer une rangée.
+Au moment de l’exécution ou de l’aperçu, vous voyez les boutons **+** et ![Supprimer le bouton](/help/forms/assets/Smock_Delete.svg) pour ajouter ou supprimer une ligne.
 
 ![ajout-suppression-dynamique-de lignes](assets/add-delete-layout.png)
 

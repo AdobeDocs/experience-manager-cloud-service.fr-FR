@@ -113,7 +113,7 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
 
 >[!NOTE]
 >
->Les artefacts d’un référentiel Maven protégé par mot de passe doivent être utilisés avec prudence, car le code déployé par ce mécanisme ne passe actuellement pas par [règles de qualité du code](/help/implementing/cloud-manager/custom-code-quality-rules.md) implémenté dans les points de contrôle qualité de Cloud Manager. Par conséquent, ce mécanisme ne devrait être utilisé que dans de rares cas et pour le code non lié à AEM. Il est conseillé de déployer les sources Java et l’ensemble du code source du projet avec le binaire.
+>Les artefacts d’un référentiel Maven protégé par mot de passe doivent être utilisés avec précaution, car le code déployé par ce mécanisme n’est actuellement pas exécuté par les [règles de qualité du code](/help/implementing/cloud-manager/custom-code-quality-rules.md) implémentées dans les points de contrôle de qualité Cloud Manager. Par conséquent, ce mécanisme ne devrait être utilisé que dans de rares cas et pour le code non lié à AEM. Il est conseillé de déployer les sources Java et l’ensemble du code source du projet avec le binaire.
 
 Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager :
 
@@ -123,7 +123,7 @@ Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Mana
 Lorsque le processus de création de Cloud Manager démarre :
 
 * L’élément `<servers>` dans ce fichier est fusionné dans le fichier `settings.xml` par défaut fourni par Cloud Manager.
-   * ID de serveur commençant par `adobe` et `cloud-manager` sont considérées comme réservées. Ne les utilisez pas sur des serveurs personnalisés.
+   * Les ID de serveur commençant par `adobe` et `cloud-manager` sont considérés comme réservés. Ne les utilisez pas sur des serveurs personnalisés.
    * Les ID de serveur ne correspondant pas à l’un de ces préfixes ou à l’ID par défaut `central` ne seront jamais mis en miroir par Cloud Manager.
 * Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’un élément `<repository>` et `<pluginRepository>` dans le fichier `pom.xml`.
 * En règle générale, ces éléments `<repository>` et `<pluginRepository>` sont contenus dans un [profil spécifique à Cloud Manager](#activating-maven-profiles-in-cloud-manager), bien que cela ne soit pas strictement nécessaire.

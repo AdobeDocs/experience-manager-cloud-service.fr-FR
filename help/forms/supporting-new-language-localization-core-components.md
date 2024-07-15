@@ -31,24 +31,24 @@ Pour une localisation correcte, il est essentiel de comprendre comment AEM Forms
 
 AEM Forms donne la priorité aux méthodes suivantes pour déterminer les paramètres régionaux d’un formulaire adaptatif :
 
-1. **Sélecteur de paramètres régionaux de l’URL ([locale])**:
+1. **Sélecteur de paramètres régionaux de l’URL ([locale])** :
 
-   Le système donne la priorité aux paramètres régionaux spécifiés dans l’URL à l’aide de la variable [locale] sélecteur. Ce format permet la mise en cache pour de meilleures performances.
+   Le système donne la priorité aux paramètres régionaux spécifiés dans l’URL à l’aide du sélecteur [locale] . Ce format permet la mise en cache pour de meilleures performances.
 
    Format : l’URL suit ce format : http:/[URL du serveur AEM Forms]/content/forms/af/[afName].[locale].html?wcmmode=disabled.
 
-   Exemple : https://[server]/content/forms/af/contact-us.hi effectue le rendu du formulaire en hindi.
+   Exemple : https://[server]/content/forms/af/contact-us.hi.html effectue le rendu du formulaire en hindi.
 
 
-1. **Paramètre de requête afAcceptLang**:
+1. **Paramètre de requête afAcceptLang** :
 
-   Pour remplacer les paramètres régionaux du navigateur de l’utilisateur, vous pouvez utiliser la variable `afAcceptLang` dans l’URL.
+   Pour remplacer les paramètres régionaux du navigateur de l’utilisateur, vous pouvez utiliser le paramètre `afAcceptLang` dans l’URL.
 
    Exemple : https://[server]/forms/af/survey.ca-fr.html?afAcceptLang=ca-fr force le rendu du formulaire en français canadien.
 
-1. **Paramètre régional du navigateur de l’utilisateur (en-tête Accept-Language)**:
+1. **Paramètre régional du navigateur de l’utilisateur (en-tête Accept-Language)** :
 
-   Si aucun autre paramètre régional n’est spécifié, AEM Forms prend en compte les paramètres régionaux du navigateur de l’utilisateur envoyés à l’aide de la variable `Accept-Language` en-tête .
+   Si aucun autre paramètre régional n’est spécifié, AEM Forms prend en compte le paramètre régional du navigateur de l’utilisateur envoyé à l’aide de l’en-tête `Accept-Language`.
 
 
 ### Mécanisme de secours :
@@ -58,7 +58,7 @@ AEM Forms donne la priorité aux méthodes suivantes pour déterminer les param�
 
   Exemple : si en_ZA (anglais d’Afrique du Sud) est demandé et qu’il n’existe pas de bibliothèque en_ZA, il utilise en (anglais) s’il est disponible.
 
-  Si aucune bibliothèque cliente appropriée n’est trouvée, le dictionnaire par défaut (principalement `en`) pour le langage de création du formulaire.
+  Si aucune bibliothèque cliente appropriée n’est trouvée, le dictionnaire par défaut (principalement `en`) pour le langage de création du formulaire est utilisé.
 
   En l’absence d’informations sur les paramètres régionaux, le formulaire adaptatif s’affiche dans la langue d’origine utilisée lors du développement.
 
@@ -69,9 +69,9 @@ Avant de commencer à ajouter un nouveau paramètre régional pour votre Forms a
 
 **Logiciel :**
 
-* Éditeur de texte brut (IDE) : bien que tout éditeur de texte brut puisse fonctionner, un environnement de développement intégré (IDE) comme [Code Visual Studio Microsoft](https://code.visualstudio.com/download) propose des fonctionnalités avancées pour faciliter la modification.
+* Éditeur de texte brut (IDE) : bien que tout éditeur de texte brut puisse fonctionner, un environnement de développement intégré (IDE) comme [Microsoft Visual Studio Code](https://code.visualstudio.com/download) offre des fonctionnalités avancées pour faciliter la modification.
 
-* Git : ce système de contrôle de version est nécessaire pour gérer les modifications de code. Si vous ne l’avez pas installé, téléchargez-le depuis [https://git-scm.com](https://git-scm.com).
+* Git : ce système de contrôle de version est nécessaire pour gérer les modifications de code. Si vous ne l&#39;avez pas installé, téléchargez-le depuis [https://git-scm.com](https://git-scm.com).
 
 
 **Référentiel de code :**
@@ -88,7 +88,7 @@ Cloner le référentiel des composants principaux de Forms adaptatif : vous avez
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   Cette commande télécharge le référentiel et crée un dossier nommé `aem-core-forms-components` sur votre machine. Dans ce guide, nous nous référons à ce dossier en tant que `[Adaptive Forms Core Components repository]`
+   Cette commande télécharge le référentiel et crée un dossier nommé `aem-core-forms-components` sur votre ordinateur. Dans ce guide, nous nous référons à ce dossier en tant que `[Adaptive Forms Core Components repository]`
 
 
 ## Ajouter un paramètre régional {#add-localization-support-for-non-supported-locales}
@@ -97,7 +97,7 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
 
 ### Clonage de votre référentiel Git AEM as a Cloud Service
 
-1. Ouvrez la ligne de commande et sélectionnez un répertoire pour stocker votre référentiel AEM as a Cloud Service, tel que `/cloud-service-repository/`.
+1. Ouvrez la ligne de commande et choisissez un répertoire pour stocker votre référentiel AEM as a Cloud Service, tel que `/cloud-service-repository/`.
 
 1. Exécutez la commande ci-dessous pour cloner le référentiel :
 
@@ -107,21 +107,21 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
 
    Pour cloner votre référentiel Git, vous avez besoin d’informations :
 
-   * **Nom de l’organisation**: identifie votre équipe ou projet dans Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
+   * **Nom de l’organisation** : cela identifie votre équipe ou votre projet dans Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
 
-   * **Identifiant du programme**: indique le programme associé à votre référentiel.
+   * **ID de programme** : indique le programme associé à votre référentiel.
 
-   * **Informations d’identification**: vous avez besoin d’un nom d’utilisateur et d’un mot de passe (ou d’un jeton d’accès personnel) pour accéder au référentiel en toute sécurité.
+   * **Credentials** : vous avez besoin d’un nom d’utilisateur et d’un mot de passe (ou d’un jeton d’accès personnel) pour accéder au référentiel en toute sécurité.
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League &quot;[Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article de Adobe Experience League &quot;[Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    **Votre projet est prêt !**
 
    Une fois la commande terminée, un nouveau dossier est créé dans votre répertoire local. Ce dossier porte le nom de votre programme (par exemple, program-id). Ce dossier contient tous les fichiers et le code téléchargés à partir de votre référentiel Git AEM as a Cloud Service.
 
-   Dans ce guide, nous nous référons à ce dossier en tant que `[AEMaaCS project directory]`.
+   Dans ce guide, nous nous référons à ce dossier sous le nom de `[AEMaaCS project directory]`.
 
 
 ### Ajouter le nouveau paramètre régional au Guide Localization Service
@@ -130,19 +130,19 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
 
    ![Dossier Référentiel dans un éditeur](/help/forms/assets/repository-folder-in-an-editor.png)
 
-1. Recherchez la variable `Guide Localization Service.cfg.json` fichier . Ce fichier contrôle les paramètres régionaux pris en charge par votre application AEM Forms. Vous pouvez modifier ce fichier pour ajouter un nouveau paramètre régional.
+1. Recherchez le fichier `Guide Localization Service.cfg.json`. Ce fichier contrôle les paramètres régionaux pris en charge par votre application AEM Forms. Vous pouvez modifier ce fichier pour ajouter un nouveau paramètre régional.
 
-   * **Fichier existant**: si le fichier existe déjà, localisez-le dans votre répertoire de projet AEM Forms. L’emplacement type est :
+   * **Fichier existant** : si le fichier existe déjà, localisez-le dans votre répertoire de projet AEM Forms. L’emplacement type est :
 
      ```Shell
      [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
      ```
 
-     Remplacer `<appid>` avec l’ID d’application spécifique à votre projet. Vous pouvez trouver `<appid>` pour votre projet AEM dans le `archetype.properties` fichier .
+     Remplacez `<appid>` par l’ID d’application spécifique à votre projet. Vous pouvez trouver `<appid>` pour votre projet AEM dans le fichier `archetype.properties` .
 
      ![Propriétés de l’archétype](/help/forms/assets/archetype-properties.png)
 
-   * **Nouveau fichier**: si le fichier n’existe pas, vous devez le créer au même emplacement que celui mentionné ci-dessus. Ne copiez pas le nom du fichier à partir de ce document, mais saisissez-le manuellement. Nom du fichier `Guide Localization Service.cfg.json` inclut des espaces. Il s’agit d’une faute intentionnelle et non d’une faute de frappe dans la documentation.
+   * **Nouveau fichier** : si le fichier n’existe pas, vous devez le créer au même emplacement que celui mentionné ci-dessus. Ne copiez pas le nom du fichier à partir de ce document, mais saisissez-le manuellement. Le nom de fichier `Guide Localization Service.cfg.json` comprend des espaces. Il s’agit d’une faute intentionnelle et non d’une faute de frappe dans la documentation.
 
      Voici un exemple de fichier avec la liste des paramètres régionaux OOTB pris en charge :
 
@@ -164,9 +164,9 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
      ```
 
 1. Ajoutez le code de paramètres régionaux correspondant à la langue souhaitée au fichier.
-   1. Utilisez la variable [Liste des codes ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) pour trouver le code à deux lettres représentant la langue souhaitée.
+   1. Utilisez la [Liste des codes ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) pour trouver le code à deux lettres représentant la langue souhaitée.
 
-   1. Insérez le code de paramètres régionaux dans la variable `Guide Localization Service.cfg.json` fichier . Voici quelques exemples :
+   1. Insérez le code de paramètres régionaux dans le fichier `Guide Localization Service.cfg.json`. Voici quelques exemples :
 
       * Langues écrites de gauche à droite :
          * Anglais (Etats-Unis) : en-US
@@ -177,16 +177,16 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
          * Hébreu : he (ou iw pour référence historique)
          * Farsi : fa
 
-1. Après avoir apporté des modifications, assurez-vous que la variable `Guide Localization Service.cfg.json` est correctement formaté en tant que fichier JSON valide. Des erreurs de mise en forme JSON peuvent l’empêcher de fonctionner correctement. Enregistrez le fichier.
+1. Après avoir apporté des modifications, assurez-vous que le fichier `Guide Localization Service.cfg.json` est correctement formaté en tant que fichier JSON valide. Des erreurs de mise en forme JSON peuvent l’empêcher de fonctionner correctement. Enregistrez le fichier.
 
 
 
 ### Utilisation de l’exemple de bibliothèque cliente pour faciliter l’ajout de paramètres régionaux
 
-AEM Forms fournit un exemple utile de bibliothèque cliente, `clientlib-it-custom-locale`, afin de simplifier l’ajout de nouveaux paramètres régionaux. Cette bibliothèque fait partie du [Référentiel des composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components), disponible sur GitHub.
+AEM Forms fournit un exemple de bibliothèque cliente utile, `clientlib-it-custom-locale`, pour simplifier l’ajout de nouveaux paramètres régionaux. Cette bibliothèque fait partie du [référentiel des composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components), disponible sur GitHub.
 
 
-Avant de commencer, assurez-vous de disposer d’une copie locale du [Référentiel des composants principaux de Forms adaptatif]. Sinon, vous pouvez facilement le cloner à l’aide de Git avec la commande suivante :
+Avant de commencer, assurez-vous d’avoir une copie locale du [référentiel des composants principaux de Forms adaptatif]. Sinon, vous pouvez facilement le cloner à l’aide de Git avec la commande suivante :
 
 ```SHELL
 git clone https://github.com/adobe/aem-core-forms-components.git
@@ -198,11 +198,11 @@ Cette commande télécharge l’ensemble du référentiel, y compris la biblioth
 
 ### Intégration de l’exemple de bibliothèque cliente
 
-Maintenant, incorporons le `clientlib-it-custom-locale` dans votre AEM as a Cloud Service, [Répertoire du projet AEMaaCS]:
+Maintenant, incorporons la bibliothèque `clientlib-it-custom-locale` dans votre répertoire de projet AEM as a Cloud Service, [AEMaaCS project directory] :
 
 1. Recherchez l’exemple de bibliothèque cliente :
 
-   Dans votre copie locale de la fonction [Référentiel des composants principaux de Forms adaptatif], accédez au chemin suivant :
+   Dans votre copie locale du [référentiel des composants principaux de Forms adaptatif], accédez au chemin suivant :
 
    ```
        /aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs
@@ -210,19 +210,19 @@ Maintenant, incorporons le `clientlib-it-custom-locale` dans votre AEM as a Clou
 
 1. Copiez et collez la bibliothèque :
 
-   1. Copiez le `clientlib-it-custom-locale` dossier.
+   1. Copiez le dossier `clientlib-it-custom-locale`.
 
       ![Copie de clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-copy.png)
 
-   1. Accédez au répertoire suivant dans votre [Répertoire du projet AEMaaCS]:
+   1. Accédez au répertoire suivant dans votre [ répertoire de projet AEMaaCS ] :
 
       ```
       /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib
       ```
 
-      **Important**: Remplacer `<app-id>` avec l’identifiant réel de votre application.
+      **Important** : remplacez `<app-id>` par l’identifiant réel de votre application.
 
-   1. Collez la copie `clientlib-it-custom-locale` dans ce répertoire.
+   1. Collez le dossier `clientlib-it-custom-locale` copié dans ce répertoire.
 
       ![Collage de clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
@@ -231,17 +231,17 @@ Maintenant, incorporons le `clientlib-it-custom-locale` dans votre AEM as a Clou
 
 1. Accédez au répertoire de paramètres régionaux :
 
-   Dans `[AEMaaCS project directory]`, accédez au chemin suivant :
+   Dans votre `[AEMaaCS project directory]`, accédez au chemin suivant :
 
    ```
        /ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/
    ```
 
-   **Important**: Remplacer `<program-id>` avec votre ID d’application réel.
+   **Important** : remplacez `<program-id>` par votre ID d’application réel.
 
 1. Recherchez l’exemple de fichier en anglais :
 
-   AEM Forms fournit une [Exemple de fichier de paramètres régionaux anglais (.json) sur GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json).
+   AEM Forms fournit un [exemple de fichier de paramètres régionaux anglais (.json) sur GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json).
 
    Le fichier en anglais comprend l’ensemble de chaînes par défaut à titre de référence. Votre fichier spécifique au paramètre régional doit imiter la structure du fichier en anglais.
 
@@ -256,7 +256,7 @@ Maintenant, incorporons le `clientlib-it-custom-locale` dans votre AEM as a Clou
 
 1. Créez votre fichier de paramètres régionaux :
 
-   1. Créez un fichier .json dans le `i18n` répertoire .
+   1. Créez un fichier .json dans le répertoire `i18n`.
    1. Nommez le fichier à l’aide du code de paramètres régionaux correspondant à la langue souhaitée (par exemple, fr-FR.json pour le français et ar-ae.json pour l’arabe). La structure de ce fichier doit refléter le fichier de paramètres régionaux anglais.
 
 
@@ -277,7 +277,7 @@ Cette étape s’applique uniquement aux langues autres que les suivantes couram
 
 1. Recherchez le dossier de configuration :
 
-   Accédez au répertoire suivant dans votre [Répertoire du projet AEMaaCS]:
+   Accédez au répertoire suivant dans votre [répertoire de projet AEMaaCS] :
 
    ```
    /ui.content/src/main/content/jcr_root/etc
@@ -285,15 +285,15 @@ Cette étape s’applique uniquement aux langues autres que les suivantes couram
 
 1. Créez les dossiers nécessaires (le cas échéant) :
 
-   Si la variable `etc` n’existe pas dans `jcr_root` , créez-le. Inside `etc`, créez un autre dossier nommé `languages` s&#39;il manque.
+   Si le dossier `etc` n’existe pas dans le dossier `jcr_root`, créez-le. Dans `etc`, créez un autre dossier nommé `languages` s&#39;il manque.
 
 1. Créez le fichier de configuration des paramètres régionaux :
 
-   Dans le `languages` créer un dossier, créer un fichier nommé `.content.xml`. Ne copiez pas le nom du fichier à partir de ce document, mais saisissez-le manuellement.
+   Dans le dossier `languages`, créez un fichier nommé `.content.xml`. Ne copiez pas le nom du fichier à partir de ce document, mais saisissez-le manuellement.
 
-   ![créer un nouveau fichier nommé `.content.xml`](etc-content-xml.png)
+   ![ créez un nouveau fichier nommé `.content.xml`](etc-content-xml.png)
 
-   Ouvrez ce fichier et collez le contenu suivant, en remplaçant [LOCALE_CODE] avec le code de paramètres régionaux réel (par exemple, ar-ae pour l’arabe).
+   Ouvrez ce fichier et collez le contenu suivant, en remplaçant [LOCALE_CODE] par le code de paramètres régionaux réel (par exemple, ar-ae pour l’arabe).
 
 
    ```XML
@@ -311,7 +311,7 @@ Cette étape s’applique uniquement aux langues autres que les suivantes couram
 
 1. Incluez les nouveaux dossiers dans filter.xml :
 
-   Accédez au `/ui.content/src/main/content/meta-inf/vault/filter.xml` dans votre [Répertoire du projet AEMaaCS].
+   Accédez au fichier `/ui.content/src/main/content/meta-inf/vault/filter.xml` dans votre [ répertoire de projet AEMaaCS].
 
    Ouvrez le fichier et ajoutez la ligne suivante à la fin :
 
@@ -319,7 +319,7 @@ Cette étape s’applique uniquement aux langues autres que les suivantes couram
    <filter root="/etc/languages"/>
    ```
 
-   ![Ajoutez les dossiers créés dans le `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+   ![Ajoutez les dossiers créés dans le `filter.xml` sous `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 1. Enregistrez le fichier.
 
@@ -327,13 +327,13 @@ Cette étape s’applique uniquement aux langues autres que les suivantes couram
 
 Vous êtes maintenant prêt à utiliser le nouveau paramètre régional avec votre Forms adaptatif. Vous pouvez
 
-* Déployer AEM as a Cloud Service, [Répertoire du projet AEMaaCS], dans votre environnement de développement local pour essayer la nouvelle configuration des paramètres régionaux sur votre ordinateur local. Pour effectuer un déploiement sur votre environnement de développement local :
+* Déployez le [répertoire de projet AEMaaCS] d’AEM as a Cloud Service dans votre environnement de développement local pour essayer la nouvelle configuration des paramètres régionaux sur votre ordinateur local. Pour effectuer un déploiement sur votre environnement de développement local :
 
-   1. Assurez-vous que votre environnement de développement local est opérationnel. Si vous n’avez pas encore configuré d’environnement de développement local, reportez-vous au guide sur la [Configuration de l’environnement de développement local pour AEM Forms](/help/forms/setup-local-development-environment.md).
+   1. Assurez-vous que votre environnement de développement local est opérationnel. Si vous n’avez pas encore configuré d’environnement de développement local, reportez-vous au guide sur la [configuration de l’environnement de développement local pour AEM Forms](/help/forms/setup-local-development-environment.md).
 
    1. Ouvrez la fenêtre de terminal ou l’invite de commande.
 
-   1. Accédez au [Répertoire du projet AEMaaCS]
+   1. Accédez au [ répertoire du projet AEMaaCS]
 
    1. Exécutez la commande suivante :
 
@@ -341,17 +341,17 @@ Vous êtes maintenant prêt à utiliser le nouveau paramètre régional avec vot
       mvn -PautoInstallPackage clean install
       ```
 
-* Déployer AEM as a Cloud Service, [Répertoire du projet AEMaaCS], dans votre environnement de Cloud Service. Pour effectuer un déploiement sur votre environnement de Cloud Service :
+* Déployez le [répertoire de projet AEMaaCS] d’AEM as a Cloud Service dans votre environnement de Cloud Service. Pour effectuer un déploiement sur votre environnement de Cloud Service :
 
    1. Validez vos modifications :
 
-      Après avoir ajouté la nouvelle configuration de paramètres régionaux, validez vos modifications avec un message Git clair décrivant l’ajout de paramètres régionaux (par exemple, &quot;Ajout de la prise en charge pour [Nom du paramètre régional]&quot;).
+      Après avoir ajouté la nouvelle configuration de paramètres régionaux, validez vos modifications avec un message Git clair décrivant l’ajout de paramètres régionaux (par exemple, &quot;Ajout de la prise en charge de [Nom de paramètre régional]&quot;).
 
    1. Déployer le code mis à jour :
 
-      Déclenchez un déploiement de votre code via le [pipeline de pile complète existant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline). Cette opération génère et déploie automatiquement le code mis à jour avec la nouvelle prise en charge des paramètres régionaux.
+      Déclenchez un déploiement de votre code par le biais du [pipeline de pile complète existant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline). Cette opération génère et déploie automatiquement le code mis à jour avec la nouvelle prise en charge des paramètres régionaux.
 
-      Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur [configuration d’un pipeline pour AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).
+      Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur la configuration d’un pipeline pour AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).[
 
 
 ## Aperçu d’un formulaire adaptatif avec les paramètres régionaux nouvellement ajoutés
@@ -364,20 +364,20 @@ Ces étapes vous guident tout au long de l’aperçu d’un formulaire adaptatif
 1. Spécifiez le **Titre du projet** et sélectionnez les **Langues cibles** dans le menu déroulant de l’assistant **Ajouter un dictionnaire au projet de traduction**.
 1. Cliquez sur **Terminé** et exécutez le projet de traduction créé.
 1. Accédez à **Formulaires** > **Formulaires et documents**.
-1. Sélectionnez le formulaire adaptatif et choisissez le **Aperçu en tant qu’HTML** .
-1. Ajouter `&afAcceptLang=<locale-name>` dans l’URL d’aperçu et appuyez sur la touche Entrée. Remplacer `<locale-name>` avec votre code de paramètres régionaux réel. Le formulaire adaptatif s’affiche dans les paramètres régionaux spécifiés.
+1. Sélectionnez le formulaire adaptatif et choisissez l’option **Aperçu en tant qu’HTML** .
+1. Ajoutez `&afAcceptLang=<locale-name>` à l’URL de prévisualisation et appuyez sur la touche Entrée. Remplacez `<locale-name>` par votre code de paramètres régionaux réel. Le formulaire adaptatif s’affiche dans les paramètres régionaux spécifiés.
 
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
 * Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif. Cela simplifie le processus de localisation.
-* Lorsque les composants Zone numérique et Sélecteur de date sont traduits dans un paramètre régional spécifique, des problèmes de mise en forme peuvent se produire. Pour atténuer ce problème, une **Langue** a été incorporée dans la boîte de dialogue Configurer de [Composant Sélecteur de date](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) et [Composant Zone numérique](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Lorsque les composants Zone numérique et Sélecteur de date sont traduits dans un paramètre régional spécifique, des problèmes de mise en forme peuvent se produire. Pour atténuer ce problème, une option **Langue** a été incorporée dans la boîte de dialogue de configuration de [composant Sélecteur de date](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) et [composant Zone numérique](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Gestion des nouveaux champs :
 
-   * **Traduction automatique**: si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et effectuer une nouvelle opération.[exécution du projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant. Les nouveaux champs ajoutés après le projet de traduction initial restent non traduits.
+   * **Traduction automatique** : si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et exécuter à nouveau le projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant. [ Les nouveaux champs ajoutés après le projet de traduction initial restent non traduits.
 
-   * **Traduction humaine**: pour les processus de traduction humaine, exportez le dictionnaire à l’aide de l’interface utilisateur à l’adresse `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire des nouveaux champs et téléchargez la version révisée.
+   * **Traduction humaine** : pour les processus de traduction humaine, exportez le dictionnaire à l’aide de l’interface utilisateur à l’adresse `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire des nouveaux champs et téléchargez la version révisée.
 
 
 ## Voir également {#see-also}

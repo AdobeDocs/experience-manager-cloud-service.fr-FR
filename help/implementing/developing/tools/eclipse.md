@@ -36,13 +36,13 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 
 >[!NOTE]
 >
->Sur macOS, vous devez cliquer avec le bouton droit de la souris. **Eclipse.app**, puis sélectionnez **Afficher le contenu du module** pour rechercher votre `eclipse.ini`**.**
+>Sur macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Afficher le contenu du module** pour trouver votre `eclipse.ini`**.**
 
 ## Comment installer AEM Developer Tools pour Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
 Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous pouvez installer le plug-in comme suit :
 
-1. Ouvrez le [AEM site Web des outils de développement](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Ouvrez le [site Web des outils de développement AEM](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Copiez le **lien d’installation**.
 
@@ -66,7 +66,7 @@ Dans Eclipse, une perspective détermine les actions et les vues disponibles dan
 
 Les _outils de développement Experience Manager pour Eclipse_ offrent une perspective AEM qui vous permet de contrôler intégralement vos projets et instances AEM. Pour ouvrir la perspective AEM :
 
-1. Dans la barre de menus Eclipse, sélectionnez **Fenêtre** > **Perspective** > **Open Perspective** > **Autre**.
+1. Dans la barre de menus Eclipse, sélectionnez **Window** > **Perspective** > **Open Perspective** > **Other**.
 1. Sélectionnez **AEM** dans la boîte de dialogue et cliquez sur **Ouvrir**.
 
 ![La perspective AEM dans Eclipse](assets/eclipse-aem-perspective.png)
@@ -134,16 +134,16 @@ Vous pouvez utiliser la fonction **Nouveau projet** pour créer la structure qui
 1. Remplacez le contenu de votre projet `PROJECT.ui.apps` par les dossiers `apps` et `etc` de votre package :
 
    1. Dans le panneau Project Explorer (Explorateur de projets), développez `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
-   1. Cliquez avec le bouton droit de la souris sur le `apps` dossier et choisissez **Afficher dans** > **Explorateur de systèmes**.
+   1. Cliquez avec le bouton droit sur le dossier `apps` et choisissez **Afficher dans** > **Explorateur système**.
    1. Supprimez les dossiers `apps` et `etc` que vous devriez voir maintenant et placez ici les dossiers `apps` et `etc` de votre package de contenu.
-   1. Dans Eclipse, cliquez avec le bouton droit sur la `PROJECT.ui.apps` projet et choisissez **Actualiser**.
+   1. Dans Eclipse, cliquez avec le bouton droit sur le projet `PROJECT.ui.apps` et choisissez **Actualiser**.
 
 1. Faites ensuite de même pour `PROJECT.ui.content` et remplacez son dossier de contenu par celui de vos packages :
 
    1. Dans le panneau Project Explorer (Explorateur de projets), développez `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. Cliquez avec le bouton droit de la souris sur le dossier de contenu profond et choisissez **Afficher dans** > **Explorateur de systèmes**.
+   1. Cliquez avec le bouton droit sur le dossier de contenu plus profond et choisissez **Afficher dans** > **Explorateur système**.
    1. Supprimez le dossier de contenu que vous devriez voir maintenant et placez ici le dossier de contenu de votre package de contenu.
-   1. Dans Eclipse, cliquez avec le bouton droit sur la `PROJECT.ui.content` projet et choisissez **Actualiser**.
+   1. Dans Eclipse, cliquez avec le bouton droit sur le projet `PROJECT.ui.content` et choisissez **Actualiser**.
 
 1. Vous devez maintenant mettre à jour les fichiers `filter.xml` de ces deux projets pour qu’ils correspondent au contenu de votre package de contenu. Pour cela, ouvrez le fichier `META-INF/vault/filter.xml` de votre package de contenu dans un éditeur de texte/code distinct.
 
@@ -192,13 +192,13 @@ Vous pouvez utiliser la fonction **Nouveau projet** pour créer la structure qui
 1. Veillez à enregistrer toutes vos modifications. Vous pouvez désormais synchroniser ce nouveau contenu avec votre instance AEM.
 
 1. Dans le panneau Servers (Serveurs), assurez-vous que votre connexion est démarrée. Si ce n’est pas le cas, démarrez-la.
-1. Cliquez sur le bouton **Nettoyage et publication** Icône
+1. Cliquez sur l’icône **Nettoyer et Publish** .
 
 Une fois cette opération terminée, votre package devrait être exécuté sur votre instance. Lors de l’enregistrement, toute modification est automatiquement synchronisée avec l’instance.
 
-Si vous souhaitez recréer un module à partir de votre projet, cliquez avec le bouton droit de la souris sur le `PROJECT.ui.apps` ou `PROJECT.ui.content` et choisissez **Exécutez comme** > **Installation de Maven**.
+Si vous souhaitez recréer un package à partir de votre projet, cliquez avec le bouton droit de la souris sur `PROJECT.ui.apps` ou `PROJECT.ui.content` et choisissez **Exécuter en tant que** > **Installation Maven**.
 
-Vous disposez désormais d’un dossier cible créé avec votre module à l’intérieur (appelé, par exemple, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Vous avez maintenant créé un dossier cible avec votre module à l’intérieur (appelé, par exemple, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Résolution des problèmes {#troubleshooting}
 

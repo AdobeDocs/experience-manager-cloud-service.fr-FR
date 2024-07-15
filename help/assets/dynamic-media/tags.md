@@ -24,7 +24,7 @@ L’extension *Visionneuses Dynamic Media* pour les Experience Platform Tags et 
 
 Cette intégration signifie que vous pouvez suivre l’utilisation des visionneuses Dynamic Media sur votre site web avec Adobe Analytics. Dans le même temps, vous pouvez utiliser les événements et les données exposés par les visiteurs et visiteuses avec toute autre extension de balises Experience Platform provenant d’Adobe ou d’un tiers.
 
-Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir [Extensions d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=fr) dans le Guide de l’utilisateur Experience Platform Tags.
+Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir [Extensions d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=fr) dans le Guide d’utilisation des balises Experience Platform.
 
 **Cette rubrique est destinée aux interlocuteurs suivants :** administrateurs de site, développeurs du programme Adobe Experience Manager et personnes qui participent à son exploitation.
 
@@ -506,7 +506,7 @@ Une fois les balises Experience Platform configurées, les éléments suivants 
 
 Une propriété dans Experience Platform Tags est une configuration nommée qui conserve l’ensemble de vos paramètres. Une bibliothèque des paramètres de configuration est générée et publiée à différents niveaux d’environnement (développement, évaluation et production).
 
-Voir aussi [Configurer une propriété de sélection](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=fr).
+Voir aussi [Configuration d&#39;une propriété de sélection](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=fr).
 
 **Pour créer une propriété dans Experience Platform Tags :**
 

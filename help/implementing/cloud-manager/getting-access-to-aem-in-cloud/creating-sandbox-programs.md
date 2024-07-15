@@ -22,7 +22,7 @@ Découvrez-en plus sur les types de programme dans le document [Présentation de
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** console, appuyez ou cliquez sur **Ajout d’un programme** près du coin supérieur droit de l’écran.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur **Ajouter un programme** près du coin supérieur droit de l’écran.
 
    ![Page de destination de Cloud Manager](assets/log-in.png)
 
@@ -34,7 +34,7 @@ Découvrez-en plus sur les types de programme dans le document [Présentation de
 
    * L’image sert uniquement de vignette dans la fenêtre de vue d’ensemble du programme et permet d’identifier le programme.
 
-1. Dans le **Configuration de votre environnement de test** , sélectionnez les solutions que vous souhaitez activer dans votre programme sandbox en cochant les options du **Solutions et modules complémentaires** table.
+1. Dans la boîte de dialogue **Configuration de votre environnement de test** , sélectionnez les solutions que vous souhaitez activer dans votre programme d’environnement de test en cochant les options de la table **Solutions &amp; Add-ons** .
 
    * Utilisez les chevrons en regard des noms des solutions pour afficher des modules complémentaires facultatifs supplémentaires pour les solutions.
 
@@ -52,7 +52,7 @@ Une nouvelle carte de programme Sandbox s’affiche sur la page de destination a
 
 Vous pouvez afficher les détails de la configuration de votre sandbox et accéder à l’environnement (une fois disponible) en consultant la page d’aperçu du programme.
 
-1. Dans la page d’entrée de Cloud Manager, cliquez sur le bouton représentant des points de suspension du programme créé.
+1. Sur la page d’entrée Cloud Manager, cliquez sur le bouton représentant des points de suspension du programme créé.
 
    ![Accès à l’aperçu du programme](assets/program-overview-sandbox.png)
 
@@ -74,4 +74,4 @@ Vous pouvez afficher les détails de la configuration de votre sandbox et accéd
 
 >[!TIP]
 >
->Consultez le document [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md) pour plus d’informations sur la navigation dans Cloud Manager et sur la compréhension de la variable **Mes programmes** console.
+>Consultez le document [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md) pour plus d’informations sur la navigation dans Cloud Manager et sur la compréhension de la console **Mes programmes**.

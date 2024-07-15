@@ -47,13 +47,13 @@ En tant qu’utilisateur, vous pouvez accéder à CRXDE Lite dans l’environnem
 >[!IMPORTANT]
 >L’écriture, au moment de l’exécution, dans des référentiels non modifiables tels que `/libs` et `/apps`, entraîne des erreurs. En outre, vous n’avez pas accès aux outils de développement pour les environnements d’évaluation et de production.
 
-Voir [Développement avec le CRXDE Lite](/help/implementing/developing/tools/crxde.md) pour plus d’informations sur le développement de votre application AEM à l’aide de CRXDE Lite.
+Voir [Développement avec CRXDE Lite](/help/implementing/developing/tools/crxde.md) pour plus d’informations sur la manière de développer votre application AEM à l’aide de CRXDE Lite.
 
 ## Gestion des journaux {#managing-logs}
 
 Les utilisateurs et utilisatrices peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
-Voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) pour savoir comment accéder aux journaux et les gérer via l’interface utilisateur ou à partir de l’API au moyen de Cloud Manager.
+Voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) pour savoir comment accéder aux journaux et les gérer à l’aide de l’interface utilisateur ou de l’API par le biais de Cloud Manager.
 
 ## Contacter l’assistance {#contacting-support}
 

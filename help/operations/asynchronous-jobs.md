@@ -23,7 +23,7 @@ Ces opérations comprennent :
 * Récupération des ressources dépassant la limite de seuil définie à partir d’un déploiement Experience Manager distant
 * Déploiement de Live Copies
 
-Vous pouvez afficher l’état des tâches asynchrones à partir du **[!UICONTROL Opérations de fond]** tableau de bord à **Navigation globale** > **Outils** > **Général** > **Tâches**.
+Vous pouvez afficher l’état des tâches asynchrones à partir du tableau de bord **[!UICONTROL Opérations en arrière-plan]** sur **Navigation globale** > **Outils** > **Général** > **Tâches**.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez 
 
 Pour afficher le statut des opérations asynchrones en détail, accédez à la page **[!UICONTROL Opérations en arrière-plan]**.
 
-1. Dans l’interface du Experience Manager, sélectionnez **Navigation globale** > **Outils** > **Général** > **Tâches**.
+1. Dans l’interface d’Experience Manager, sélectionnez **Navigation globale** > **Outils** > **Général** > **Tâches**.
 
 1. Sur la page **[!UICONTROL Opérations en arrière-plan]**, passez en revue les détails des opérations.
 

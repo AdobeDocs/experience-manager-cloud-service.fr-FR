@@ -60,15 +60,15 @@ L’utilisation d’un modèle pour créer un site est simple.
 
    ![Création d’un site à partir d’un modèle](../assets/create-site-from-template.png)
 
-1. Dans l’assistant Créer un site , sélectionnez un modèle existant dans le panneau de gauche ou sur **Importer** en haut de la colonne gauche pour importer un nouveau modèle.
+1. Dans l’assistant Créer un site, sélectionnez un modèle existant dans le panneau de gauche ou sur **Importer** en haut de la colonne de gauche pour importer un nouveau modèle.
 
    ![Assistant Création de site](../assets/site-creation-wizard.png)
 
-   1. Si vous choisissez d’importer, recherchez le modèle à utiliser dans l’explorateur de fichiers, puis sélectionnez **Télécharger**.
+   1. Si vous choisissez d’importer, dans l’explorateur de fichiers, recherchez le modèle que vous souhaitez utiliser et sélectionnez **Télécharger**.
 
    1. Une fois chargé, il s’affiche dans la liste des modèles disponibles.
 
-1. Lors de la sélection d’un modèle, il affiche des informations sur le modèle dans la colonne de droite. Avec le modèle sélectionné, sélectionnez **Suivant**.
+1. Lors de la sélection d’un modèle, il affiche des informations sur le modèle dans la colonne de droite. Lorsque le modèle souhaité est sélectionné, sélectionnez **Suivant**.
 
    ![Sélectionner un modèle](../assets/select-site-template.png)
 
@@ -78,7 +78,7 @@ L’utilisation d’un modèle pour créer un site est simple.
    * Le nom du site fait alors partie de l’URL.
    * Le nom du site doit respecter les [conventions de dénomination des pages d’AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. Sélectionner **Créer** et le site est créé à partir du modèle de site.
+1. Sélectionnez **Créer** et le site est créé à partir du modèle de site.
 
    ![Détails du nouveau site.](../assets/create-site-details.png)
 
@@ -96,8 +96,8 @@ Les auteurs de contenu peuvent maintenant commencer la création !
 
 Si votre site nécessite une personnalisation au-delà des modèles disponibles, vous disposez de plusieurs options.
 
-* Si la structure du site ou le contenu initial doit être ajusté, [le modèle de site peut être personnalisé en fonction de vos besoins.](site-templates.md).
-* Si le style du site doit être adapté, [le thème du site peut être téléchargé et personnalisé.](/help/journey-sites/quick-site/overview.md).
-* Si la fonctionnalité du site doit être ajustée, [le site peut être entièrement personnalisé.](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* Si la structure du site ou le contenu initial doit être ajusté, [le modèle de site peut être personnalisé pour répondre à vos besoins](site-templates.md).
+* Si le style du site doit être ajusté, [le thème du site peut être téléchargé et personnalisé](/help/journey-sites/quick-site/overview.md).
+* Si la fonctionnalité du site doit être ajustée, [le site peut être entièrement personnalisé](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Toute personnalisation doit être effectuée avec l’aide d’une équipe de développement.

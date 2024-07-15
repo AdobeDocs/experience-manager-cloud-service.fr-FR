@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Live Search] Fenêtre contextuelle CIF composant'
-description: Utilisation de CIF composants pour activer [!DNL Live Search] Composant contextuel sur un site AEM
+title: '[!DNL Live Search] Visionneuse CIF composant'
+description: Utilisation de CIF composants pour activer le composant de fenêtre contextuelle  [!DNL Live Search] sur un site AEM
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Composant CIF de fenêtre contextuelle {#live-search-popover}
+# [!DNL Live Search] Composant de CIF de fenêtre contextuelle {#live-search-popover}
 
-La variable [!DNL Live Search] La fenêtre contextuelle est l’élément qui contient la variable [!DNL Live Search] résultats au fur et à mesure que vous tapez dans le champ de recherche.
+La fenêtre contextuelle [!DNL Live Search] est l’élément qui contient les résultats [!DNL Live Search] lorsque vous tapez dans le champ de recherche.
 Cette rubrique décrit comment intégrer ce composant à votre site AEM.
 
 ## Structure de fichier {#file-strucure}
@@ -22,7 +22,7 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 
-  Créez le `.content.xml` fichier :
+  Créez le fichier `.content.xml` :
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -35,7 +35,7 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css.txt
 
-  Créez le `css.txt` fichier :
+  Créez le fichier `css.txt` :
 
   ```text
   #base=css
@@ -45,7 +45,7 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css/searchbar.css
 
-  Créez le `searchbar.css` fichier :
+  Créez le fichier `searchbar.css` :
 
 
   ```css
@@ -140,7 +140,7 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js.txt
 
-  Créez le `js.txt` fichier :
+  Créez le fichier `js.txt` :
 
   ```text
   js/searchbar.js
@@ -148,7 +148,7 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js
 
-  Créez le `searchbar.js` fichier :
+  Créez le fichier `searchbar.js` :
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -494,7 +494,7 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/searchbar.html
 
-  Créez le `searchbar.html` fichier :
+  Créez le fichier `searchbar.html` :
 
   ```html
   <!-- Livesearch popover -->
@@ -556,7 +556,7 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
 
 * ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json
 
-  Créez le `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` fichier :
+  Créez le fichier `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` :
 
   ```json
   {
@@ -570,7 +570,7 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
 
    * ui.tests/test-module/specs/venia/searchbar.js
 
-     Modifiez la variable `searchbar.js` fichier, ligne 19-20, modification `describe` to `describe.skip`:
+     Modifiez le fichier `searchbar.js`, Ligne 19-20, changeant `describe` en `describe.skip` :
 
      ```javascript
      describe.skip('Venia Searchbar Component', () => {

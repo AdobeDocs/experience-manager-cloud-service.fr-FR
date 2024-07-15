@@ -373,7 +373,7 @@ Pour personnaliser votre fragment, procédez comme suit :
    >
    >* un chemin contenant un sous-ensemble des magasins définis dans le chemin d’accès ContextHub configuré pour la page.
    >
-   >La variable **Chemin d’accès aux segments** sélectionné dans le **Personnalisation** doit être :
+   >Le **Chemin d’accès aux segments** sélectionné dans l’onglet **Personalization** doit être :
    >
    >* le même chemin d’accès que celui configuré pour la page sur laquelle le fragment est rendu
    >

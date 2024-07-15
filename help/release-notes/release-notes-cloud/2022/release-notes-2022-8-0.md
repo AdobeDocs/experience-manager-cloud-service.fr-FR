@@ -39,15 +39,15 @@ Consultez la vidéo Aperçu de la version de janvier 2022 pour un résumé des 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
 * Le composant Email permet de créer du contenu dans AEM qui est ensuite diffusé par Campaign Classic sous la forme d’emails. Le composant principal Email :
-   * est basé sur la variable [Composant WCM principal](https://github.com/adobe/aem-core-wcm-components) qui prend en charge les modèles modifiables et le système de style.
+   * est basé sur le [composant WCM principal](https://github.com/adobe/aem-core-wcm-components) qui prend en charge les modèles modifiables et le système de style.
    * fournit 10 composants prêts à l’emploi optimisés pour la production (page, conteneur, titre, texte, image, bouton, teaser, fragment d’expérience, fragment de contenu, segmentation).
-   * permet une personnalisation et une segmentation avancées grâce au [insertion de variables Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) sur la plupart des champs de boîte de dialogue et à la variable [Composant Segmentation](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * fournit une sortie de HTML optimale pour les emails grâce au [Styles CSS intégrés](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), la variable [Attribut HTML inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), et la variable [assainisseur de HTMLs](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * fournit une personnalisation et une segmentation avancées grâce à l’ [ insertion de variables Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) sur la plupart des champs de boîte de dialogue et au [ composant de segmentation](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)) flexible.
+   * fournit une sortie d’HTML optimale pour les emails grâce au [CSS styles inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), au [HTML attribute inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation) et au [HTML sanitizer](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * permet de créer des emails n’importe où.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de préversion [!DNL Sites] {#prerelease-features-sites}
 
-* La variable [Console de fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) permet aux utilisateurs d’afficher le nombre total de copies de langue associées à un fragment de contenu. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
+* La [console de fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) offre aux utilisateurs la possibilité d’afficher le nombre total de copies de langue associées à un fragment de contenu. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
 
 ![Langues de fragments de contenu](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -55,7 +55,7 @@ Consultez la vidéo Aperçu de la version de janvier 2022 pour un résumé des 
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#features-assets}
 
-* Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreindre le type de ressources que les utilisateurs peuvent charger en fonction du type MIME ;](/help/assets/configure-asset-upload-restrictions.md).
+* Vous pouvez maintenant configurer Adobe Experience Manager Assets pour [restreindre le type de ressources que les utilisateurs peuvent charger en fonction du type MIME](/help/assets/configure-asset-upload-restrictions.md).
 
   ![Restrictions de téléchargement des ressources](/help/assets/assets/asset-upload-restrictions.png)
 

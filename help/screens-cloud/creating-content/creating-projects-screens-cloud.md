@@ -32,7 +32,7 @@ Pour créer un projet dans Screens as a Cloud Service, procédez comme suit :
 
    ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. Saisissez le **Titre** de votre projet dans **Créer un projet Screens** de la boîte de dialogue Par exemple : *FirstDigitalExperience*.
+1. Saisissez le **titre** de votre projet dans la boîte de dialogue **Créer un projet Screens** . Par exemple, *FirstDigitalExperience*.
 
    ![create-screens-project2](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 

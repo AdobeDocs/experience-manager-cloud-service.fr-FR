@@ -41,14 +41,14 @@ La vue Assets vous permet d’afficher des données en temps réel pour votre en
 
 Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigation de gauche pour afficher les graphiques générés automatiquement suivants :
 
-* **Téléchargements**: nombre de ressources téléchargées à partir de l’environnement de vue Ressources au cours des 30 ou 12 derniers jours représentés à l’aide d’un graphique linéaire.
+* **Téléchargements** : nombre de ressources téléchargées à partir de l’environnement d’affichage Assets au cours des 30 ou 12 derniers jours représentés à l’aide d’un graphique linéaire.
   ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
 
-* **Téléchargements**: nombre de ressources chargées dans l’environnement de vue Ressources au cours des 30 ou 12 derniers jours représentés à l’aide d’un graphique linéaire.
+* **Téléchargements** : nombre de ressources chargées dans l’environnement d’affichage Assets au cours des 30 ou 12 derniers jours représentés à l’aide d’un graphique linéaire.
   ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
   <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **Utilisation du stockage**: utilisation du stockage, en octets, pour l’environnement de vue Ressources représenté à l’aide d’un graphique à barres.
+* **Utilisation du stockage** : utilisation du stockage, en octets, pour l’environnement de vue Assets représenté à l’aide d’un graphique à barres.
   ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
   <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 

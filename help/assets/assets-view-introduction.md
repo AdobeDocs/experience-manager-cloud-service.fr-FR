@@ -1,5 +1,5 @@
 ---
-title: En quoi la vue Assets dans AEM vous est-elle bénéfique ?
+title: Dans AEM, quel est l’intérêt d’Assets ?
 description: En savoir plus sur les principaux avantages de la vue Assets dans AEM. Adobe, qui utilise son expertise pour autonomiser les professionnels du marketing et de la création, propose une nouvelle expérience utilisateur qui change tout le monde.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
@@ -49,7 +49,7 @@ Vous pouvez accéder à la vue Assets de la manière suivante :
 
 ## À quoi sert la vue Assets ?
 
-La vue Assets offre les avantages clés suivants qui ne sont pas disponibles dans la vue Admin :
+La vue Assets offre les avantages clés suivants, qui ne sont pas disponibles dans la vue Admin :
 
 * [Tableau de bord Mon espace de travail offrant des expériences rationalisées](#my-workspace-for-streamlined-experience)
 * [Approche axée sur la recherche en priorité pour une efficacité accrue](#search-first)
@@ -61,7 +61,7 @@ La vue Assets offre les avantages clés suivants qui ne sont pas disponibles dan
 
 ### Tableau de bord Mon espace de travail offrant des expériences rationalisées {#my-workspace-for-streamlined-experience}
 
-Découvrez une solution de gestion des ressources numériques qui comprend les divers besoins des différents rôles de l’entreprise. La vue sélectionnée des ressources donne la priorité à la facilité d’utilisation et à la vitesse, en fonction des préférences des marketeurs en matière d’attrait visuel et d’espaces de travail encombrants. Grâce au tableau de bord Mon espace de travail personnalisé en fonction de la personne qui l’utilise, les personnes spécialisées dans le marketing peuvent rapidement trouver, prévisualiser, modifier, gérer et diffuser des ressources avec une efficacité remarquable. Dites adieu aux interminables heures passées à rechercher des ressources spécifiques. Nous vous proposons aujourd’hui une expérience simplifiée qui met à votre portée tout ce dont vous avez besoin.
+Découvrez une solution de gestion des ressources numériques qui comprend les divers besoins des différents rôles de l’entreprise. La vue élégante d’Assets donne la priorité à la facilité d’utilisation et à la vitesse, en fonction de la préférence des marketeurs pour l’attrait visuel et les espaces de travail encombrants. Grâce au tableau de bord Mon espace de travail personnalisé en fonction de la personne qui l’utilise, les personnes spécialisées dans le marketing peuvent rapidement trouver, prévisualiser, modifier, gérer et diffuser des ressources avec une efficacité remarquable. Dites adieu aux interminables heures passées à rechercher des ressources spécifiques. Nous vous proposons aujourd’hui une expérience simplifiée qui met à votre portée tout ce dont vous avez besoin.
 
 ![Vue d’ensemble de Mon espace de travail](assets/my-workspace-demo.gif)
 
@@ -69,7 +69,7 @@ Découvrez une solution de gestion des ressources numériques qui comprend les d
 
 ### Insights pour la prise de décisions pilotées par les données {#insights-data}
 
-Pour suivre la vitesse du contenu, il est essentiel de pouvoir tirer parti d’informations exploitables. La vue Ressources offre des informations avancées dans My Workspace, fournissant des données précieuses sur les performances des ressources, l’utilisation de l’audience et les engagements. Les personnes spécialiées dans le marketing peuvent prendre des décisions pilotées par les données, optimiser les stratégies de contenu et affiner leur diffusion en aval pour obtenir des résultats optimaux. Grâce à l’accès à des informations pertinentes, les entreprises ont une longueur d’avance sur la concurrence et génèrent des résultats exceptionnels.
+Pour suivre la vitesse du contenu, il est essentiel de pouvoir tirer parti d’informations exploitables. La vue Assets offre des insights avancés dans My Workspace, fournissant des données précieuses sur les performances des ressources, l’utilisation de l’audience et les engagements. Les personnes spécialiées dans le marketing peuvent prendre des décisions pilotées par les données, optimiser les stratégies de contenu et affiner leur diffusion en aval pour obtenir des résultats optimaux. Grâce à l’accès à des informations pertinentes, les entreprises ont une longueur d’avance sur la concurrence et génèrent des résultats exceptionnels.
 
 ![Vue d’ensemble d’Insights](assets/insights-overview.gif)
 

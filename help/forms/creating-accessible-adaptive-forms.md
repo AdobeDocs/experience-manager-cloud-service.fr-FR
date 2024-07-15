@@ -158,7 +158,7 @@ Les raccourcis clavier suivants sont disponibles dans [!DNL AEM Forms].
 | Réinitialiser les données saisies dans un formulaire | Alt+R |
 | Envoyer un formulaire | Alt+S |
 
-En outre, plusieurs raccourcis clavier sont disponibles pour le composant **[!UICONTROL Sélecteur de date]** dans les formulaires adaptatifs. Pour activer les touches de raccourci, sélectionnez le composant **[!UICONTROL Sélecteur de date]**, puis ![Configurer](assets/configure-icon.svg) pour ouvrir les propriétés. Dans le **[!UICONTROL Modèles]** , sélectionnez un modèle d’affichage à l’aide de la fonction **[!UICONTROL Type]** et **[!UICONTROL Modèle]** listes déroulantes. Enregistrez les propriétés pour activer l’utilisation de raccourcis clavier pour le composant **[!UICONTROL Sélecteur de date]**.
+En outre, plusieurs raccourcis clavier sont disponibles pour le composant **[!UICONTROL Sélecteur de date]** dans les formulaires adaptatifs. Pour activer les touches de raccourci, sélectionnez le composant **[!UICONTROL Sélecteur de date]**, puis ![Configurer](assets/configure-icon.svg) pour ouvrir les propriétés. Dans la section **[!UICONTROL Modèles]** , sélectionnez un modèle d’affichage à l’aide des listes déroulantes **[!UICONTROL Type]** et **[!UICONTROL Modèle]** . Enregistrez les propriétés pour activer l’utilisation de raccourcis clavier pour le composant **[!UICONTROL Sélecteur de date]**.
 
 Les touches de raccourci clavier suivantes sont disponibles pour le composant Sélecteur de date dans les formulaires adaptatifs :
 

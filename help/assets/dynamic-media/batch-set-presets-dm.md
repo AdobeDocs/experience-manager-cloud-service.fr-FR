@@ -7,8 +7,8 @@ role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 99%
+source-wordcount: '3434'
+ht-degree: 100%
 
 ---
 
@@ -267,4 +267,3 @@ Si vous souhaitez simplement *supprimer* les paramètres prédéfinis des dossie
 >* [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md)
 >* [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) – Voir Mode de synchronisation dans la rubrique pour en savoir plus sur la synchronisation d’un dossier unique avec [!DNL Dynamic Media].
 >* [Création d’une configuration Dynamic Media dans Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) – Voir la section Mode de synchronisation Dynamic Media de la rubrique pour en savoir plus sur la synchronisation de tous les dossiers avec [!DNL Dynamic Media].
-

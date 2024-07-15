@@ -3,7 +3,7 @@ title: Notes de mise à jour dʼAEM Forms as a Cloud Service
 description: Découvrez les nouvelles fonctionnalités, les versions bêta, les informations de version préliminaire, etc. pour AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 100%
 
@@ -126,7 +126,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 - **Analytics pour formulaires adaptatifs** : vous pouvez désormais capturer et suivre le comportement des utilisateurs et utilisatrices via Adobe Analytics pour formulaires adaptatifs en vue de recueillir des informations relatives aux utilisateurs et utilisatrices. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience client.
 
-- **Connectez facilement AEM Forms à Microsoft Dynamics et à Salesforce** : le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce, ce qui permet aux développeurs de configurer [plus rapidement et plus facilement Microsoft Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](configure-msdynamics-salesforce.md).
+- **Connecter facilement AEM Forms à Microsoft Dynamics et à Salesforce** : le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce, ce qui permet aux développeurs et développeuses de [configurer plus rapidement et plus facilement Microsoft Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](configure-msdynamics-salesforce.md).
 
 ## 2021.7.0 {#july-2021-07-0}
 
@@ -139,7 +139,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 - **Document d’enregistrement basé sur Acrobat** : vous pouvez également [utiliser Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=fr) comme modèle de document d’enregistrement en plus du modèle de formulaire basé sur XFA.
 
-- **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Vous pouvez ainsi récupérer et stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant que BLOB.
+- **Connecteur d’entrepôt de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=fr). Vous pouvez ainsi récupérer et stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant que BLOB.
 
 - **Externalisateur de données variables** : vous pouvez enregistrer les données variables des workflows AEM sur un système de stockage externe géré par votre entreprise.
 

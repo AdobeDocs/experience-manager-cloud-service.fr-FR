@@ -3,8 +3,8 @@ title: Personnaliser et optimiser la console Fragments de contenu
 description: Découvrez comment personnaliser la console Fragments de contenu.
 exl-id: a5f2c7f2-2fe5-4f0c-9960-6e8fa7336f10
 source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
-workflow-type: ht
-source-wordcount: '75'
+workflow-type: tm+mt
+source-wordcount: '60'
 ht-degree: 100%
 
 ---

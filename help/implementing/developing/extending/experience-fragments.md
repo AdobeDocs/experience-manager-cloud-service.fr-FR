@@ -49,7 +49,7 @@ Par exemple :
 
 ![Rendu HTML brut](assets/xf-14.png)
 
-Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires. La variable [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Ce transformateur est configuré comme suit :
+Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires. Le [module de réécriture Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Ce transformateur est configuré comme suit :
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 

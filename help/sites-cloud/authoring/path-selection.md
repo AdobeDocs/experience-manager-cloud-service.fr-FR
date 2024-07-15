@@ -32,13 +32,13 @@ Vous pouvez également effectuer une saisie dans le champ de chemin d’accès. 
 
 ## Explorateur de chemins d’accès {#path-browser}
 
-L’explorateur de chemins d’accès est organisé de la manière suivante : [mode colonne](/help/sites-cloud/authoring/basic-handling.md#column-view) de [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) permettant une sélection plus détaillée des ressources.
+L’explorateur de chemins d’accès est organisé de la même manière que le [mode Colonnes](/help/sites-cloud/authoring/basic-handling.md#column-view) de la console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) permettant une sélection plus détaillée des ressources.
 
 ![Explorateur de chemins d’accès](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Une fois une ressource sélectionnée, la variable **Sélectionner** dans l’angle supérieur droit de la boîte de dialogue devient actif.
-   * Sélectionnez cette option pour confirmer la sélection ou **Annuler** pour abandonner.
-* Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également la fonction **Sélectionner** , mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre.
+* Une fois qu’une ressource est sélectionnée, le bouton **Sélectionner** dans l’angle supérieur droit de la boîte de dialogue devient actif.
+   * Sélectionnez pour confirmer la sélection ou **Annuler** pour abandonner.
+* Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton **Sélectionner**, mais ajoute également un nombre de ressources sélectionnées en haut à droite de la fenêtre.
    * Cliquez sur le **X** en regard du nombre pour tout désélectionner.
 * Lorsque vous naviguez dans l’arborescence, votre emplacement est reflété dans le chemin de navigation en haut de la boîte de dialogue.
    * Ces chemins de navigation peuvent également être utilisés pour accéder rapidement à la hiérarchie des ressources.

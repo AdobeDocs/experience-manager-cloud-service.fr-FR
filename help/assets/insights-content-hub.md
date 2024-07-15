@@ -1,6 +1,6 @@
 ---
 title: Affichage des informations sur les ressources dans Content Hub
-description: Découvrez comment afficher les insights sur les ressources dans [!DNL Content Hub]
+description: Découvrez comment afficher les insights sur les ressources dans  [!DNL Content Hub]
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Assets Insights dans [!DNL Content Hub] {#assets-insights}
 
-![Informations sur Assets](assets/asset-insights-banner.jpg)
+![ Statistiques Assets](assets/asset-insights-banner.jpg)
 
-[!DNL Content Hub] fournit des informations précieuses sur les ressources, en répondant à un défi commun auquel les parties prenantes marketing sont souvent confrontées : les statistiques d’utilisation des ressources utilisées dans les campagnes marketing, les canaux et les différentes régions. En acquérant une compréhension claire des performances et de la popularité des ressources, elle fournit des informations exploitables essentielles à l’amélioration de l’expérience utilisateur.
+[!DNL Content Hub] fournit des informations précieuses sur les ressources, ce qui permet de répondre à un défi commun auquel les parties prenantes marketing sont souvent confrontées : les statistiques d’utilisation des ressources utilisées dans les campagnes marketing, les canaux et les différentes régions. En acquérant une compréhension claire des performances et de la popularité des ressources, elle fournit des informations exploitables essentielles à l’amélioration de l’expérience utilisateur.
 
 ## Conditions préalables {#prerequisites}
 
-[Utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Affichage des statistiques pour les ressources chargées{#view-statistics-for-uploaded-assets}
 
-Vous pouvez afficher les statistiques sur les ressources et les collections chargées en accédant à la **[!UICONTROL Informations]** . Suivez l’historique des chargements de vos ressources avec la vue des chargements de ressources annuels, mensuels et quotidiens.
+Vous pouvez afficher les statistiques des ressources et collections chargées en accédant à l’onglet **[!UICONTROL Statistiques]** . Suivez l’historique des chargements de vos ressources avec la vue des chargements de ressources annuels, mensuels et quotidiens.
 
 ![Téléchargement des statistiques sur les ressources](assets/assets-insights.jpg)
 
@@ -41,12 +41,12 @@ Le tableau présente un aperçu détaillé des différentes ressources, y compri
 
 Le graphique circulaire représente visuellement le nombre total de ressources par format de fichier, fournissant une illustration claire du nombre de ressources individuelles et de leurs pourcentages correspondants.
 
-![Statistiques sur le nombre de ressources par type de ressource](assets/insights-categorial-view.jpg)
+![ Nombre de ressources par statistiques de type de ressource](assets/insights-categorial-view.jpg)
 
 Vous pouvez également afficher :
 
-* **Utilisateurs actifs par jour et par mois**: nombre d’utilisateurs actifs par jour ou par mois représenté à l’aide d’un graphique linéaire.
-* **[!UICONTROL Assets par campagnes]**: nombre de ressources et pourcentage respectif en fonction des campagnes.
-* **[!UICONTROL Assets par canaux]**: nombre de ressources et pourcentage respectif en fonction des canaux utilisés.
-* **[!UICONTROL Assets par régions]**: nombre de ressources et pourcentage respectif en fonction des régions d’utilisation des ressources.
+* **Utilisateurs actifs par jour et mois** : nombre d’utilisateurs actifs par jour ou par mois représenté à l’aide d’un graphique linéaire.
+* **[!UICONTROL Assets par campagnes]** : nombre de ressources et pourcentage respectif en fonction des campagnes.
+* **[!UICONTROL Assets par canaux]** : nombre de ressources et pourcentage respectif en fonction des canaux utilisés.
+* **[!UICONTROL Assets par régions]** : nombre de ressources et pourcentage respectif en fonction des régions d’utilisation des ressources.
 

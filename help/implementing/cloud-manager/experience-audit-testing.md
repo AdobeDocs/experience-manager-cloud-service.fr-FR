@@ -47,7 +47,7 @@ Le contrôle de l’expérience est disponible pour Cloud Manager :
 * Pipelines de production de sites, par défaut.
 * Des pipelines de développement front-end, éventuellement.
 
-Voir [Section de configuration](#configuration) pour plus d’informations sur la configuration de l’audit pour les environnements facultatifs.
+Pour plus d’informations sur la configuration de l’audit pour les environnements facultatifs, reportez-vous à la [section Configuration](#configuration) .
 
 ## Configuration {#configuration}
 
@@ -57,25 +57,25 @@ Vous configurez les pages incluses dans le contrôle de l’expérience lors de 
 
 1. Selon le type de pipeline que vous souhaitez configurer, suivez les instructions pour :
 
-   * Ajouter un nouveau [pipeline de production,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) si vous souhaitez définir les chemins à évaluer par l’audit.
-   * Ajouter un nouveau [pipeline hors production,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si vous souhaitez activer l’audit sur un pipeline front-end ou de développement full-stack.
-   * Ou vous pouvez [modifier un pipeline existant,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) et mettre à jour les options existantes.
+   * Ajoutez un nouveau [pipeline de production,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) si vous souhaitez définir les chemins à évaluer par l’audit.
+   * Ajoutez un nouveau [pipeline hors production,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si vous souhaitez activer l’audit sur un pipeline front-end ou de développement à pile complète.
+   * Vous pouvez également [modifier un pipeline existant,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) et mettre à jour les options existantes.
 
-1. Si vous ajoutez ou modifiez un pipeline hors production pour lequel vous souhaitez utiliser le contrôle de l’expérience, vous devez sélectionner la variable **Audit de l’expérience** de la **Code Source** .
+1. Si vous ajoutez ou modifiez un pipeline hors production pour lequel vous souhaitez utiliser le contrôle de l’expérience, vous devez cocher la case **Audit de l’expérience** sur l’onglet **Code Source** .
 
-   ![Activation du contrôle de l’expérience](assets/experience-audit-enable.jpg)
+   ![Activation de l’audit d’expérience](assets/experience-audit-enable.jpg)
 
    * Cela n’est nécessaire que pour les pipelines hors production.
-   * La variable **Audit de l’expérience** s’affiche lorsque la case est cochée.
+   * L’onglet **Audit de l’expérience** s’affiche lorsque la case est cochée.
 
-1. Pour les pipelines de production et hors production, vous définissez les chemins qui doivent être inclus dans le contrôle de l’expérience sur le **Audit de l’expérience** .
+1. Pour les pipelines de production et hors production, vous définissez les chemins qui doivent être inclus dans le contrôle de l’expérience sur l’onglet **Audit de l’expérience** .
 
    * Les chemins de page doivent commencer par `/` et sont relatifs à votre site.
-   * Par exemple, si votre site est `wknd.site` et souhaite inclure `https://wknd.site/us/en/about-us.html` dans le contrôle de l’expérience, saisissez le chemin d’accès. `/us/en/about-us.html`.
+   * Par exemple, si votre site est `wknd.site` et que vous souhaitez inclure `https://wknd.site/us/en/about-us.html` dans le contrôle de l’expérience, saisissez le chemin `/us/en/about-us.html`.
 
    ![Définition d’un chemin pour le contrôle de l’expérience](assets/experience-audit-add-page.png)
 
-1. Appuyez ou cliquez sur **Ajouter une page** et le chemin est renseigné automatiquement avec l’adresse de votre environnement et ajouté au tableau des chemins.
+1. Appuyez ou cliquez sur **Ajouter une page** et le chemin d’accès est automatiquement renseigné avec l’adresse de votre environnement et ajouté à la table des chemins d’accès.
 
    ![Enregistrement du chemin d’accès dans la table](assets/experience-audit-page-added.png)
 
@@ -103,11 +103,11 @@ Il existe pour chaque type de test un score au niveau agrégé, tel que les perf
 
 La mesure de modification peut avoir l’une des valeurs suivantes.
 
-* **Valeur positive** - Les pages ont été améliorées sur le test sélectionné depuis la dernière exécution du pipeline de production.
+* **Valeur positive** : les pages ont été améliorées sur le test sélectionné depuis la dernière exécution du pipeline de production.
 
 * **Valeur négative** : les pages ont régressé sur le test sélectionné depuis la dernière exécution du pipeline de production.
 
-* **Aucune modification** - Les pages ont obtenu le même score depuis la dernière exécution du pipeline de production.
+* **Aucune modification** : les pages ont obtenu le même score depuis la dernière exécution du pipeline de production.
 
 * **N/A** : il n’y a pas de score précédent avec lequel effectuer la comparaison.
 

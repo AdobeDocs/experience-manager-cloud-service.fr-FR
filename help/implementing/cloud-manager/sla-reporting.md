@@ -19,13 +19,13 @@ Découvrez comment voir les performances de votre environnement d’AEM de produ
 
 ## Présentation {#introduction}
 
-Les données de rapport SLA sont disponibles pour chaque programme de production via la variable **Rapports** . Pour y accéder, procédez comme suit.
+Les données de rapport SLA sont disponibles pour chaque programme de production via l&#39;onglet **Rapports** . Pour y accéder, procédez comme suit.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. À l’aide du panneau de navigation latéral, accédez au **Rapports** à partir de la **Présentation** page.
+1. À l’aide du panneau de navigation latéral, accédez à l’onglet **Rapports** à partir de la page **Aperçu**.
 
 1. Cliquez sur l’année souhaitée pour afficher les données SLA sous forme de graphique.
 
@@ -33,23 +33,23 @@ Les données de rapport SLA sont disponibles pour chaque programme de production
 
 Placez le curseur sur un point de données pour afficher les valeurs spécifiques de ce point.
 
-![Affichage des données détaillées](assets/sla-reporting-b.png)
+![Affichage de données détaillées](assets/sla-reporting-b.png)
 
 ## Mesures SLA {#sla-metrics}
 
 Le graphique de l’année sélectionnée comprend plusieurs jeux de données.
 
-* **Contrat de niveau publication** - Il s’agit du contrat SLA défini dans votre contrat avec Adobe pour le niveau de publication.
+* **Contrat de niveau Publish** : il s’agit du contrat SLA défini dans votre contrat avec Adobe pour le niveau de publication.
 
-* **Niveau de publication réel** - Il s’agit de la période de disponibilité mesurée du niveau publication de production comptabilisant les incidents causés par les fournisseurs d’Adobe ou d’Adobe.
+* **Niveau Publish réel** : il s’agit de la période de disponibilité mesurée du niveau publication de production comptabilisant les incidents provoqués par les fournisseurs d’Adobe ou d’Adobe.
 
-* **Contrat de niveau auteur** - Il s’agit du contrat SLA défini dans votre contrat avec l’Adobe pour le niveau auteur.
+* **Contrat de niveau auteur** : il s’agit du contrat SLA défini dans votre contrat avec l’Adobe pour le niveau auteur.
 
-* **Niveau de création réel** - Il s’agit de la période de disponibilité mesurée du niveau auteur de production prenant en compte les incidents causés par les fournisseurs d’Adobe ou d’Adobe.
+* **Niveau de création réel** : il s’agit de la période de disponibilité mesurée du niveau de création de production qui tient compte des incidents causés par les fournisseurs d’Adobe ou d’Adobe.
 
 ## Analyse des événements {#event-analysis}
 
-La variable **Analyse des événements** La section située sous le graphique affiche l’ensemble des incidents survenus pour le programme au cours de l’année sélectionnée.
+La section **Analyse des événements** sous le graphique affiche l’ensemble des incidents qui se sont produits pour le programme au cours de l’année sélectionnée.
 
 Chaque incident comporte une période, une cause et un ensemble de commentaires.
 

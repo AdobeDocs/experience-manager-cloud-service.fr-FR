@@ -1,6 +1,6 @@
 ---
 title: Accès au niveau de création
-description: Découvrez comment accéder au niveau Auteur d’un environnement as a Cloud Service AEM.
+description: Découvrez comment accéder au niveau de création d’un environnement AEM as a Cloud Service.
 exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
 feature: Configuring
 role: Admin

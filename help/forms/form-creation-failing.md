@@ -13,21 +13,21 @@ ht-degree: 5%
 
 # Problème lors de la publication de formulaires{#form-creation-fails}
 
-Après la mise à jour des utilisateurs vers AEM Forms as a Cloud Service `2024.5.16461`:
+Après la mise à jour des utilisateurs vers AEM Forms as a Cloud Service `2024.5.16461` :
 
-**Certains utilisateurs** Le problème peut survenir lors de la création de formulaires. En effet, lorsqu’un utilisateur crée un formulaire, le message d’erreur suivant s’affiche dans la boîte de dialogue de création :
+**Certains utilisateurs** peuvent rencontrer des problèmes lors de la création de formulaires. Le problème est tel que, lorsqu’un utilisateur crée un formulaire, le message d’erreur suivant s’affiche dans la boîte de dialogue de création :
 
 `A server error occurred. Try again after sometime.`
 
 ## Cause {#cause-form-creation-fails}
 
-Le problème se produit car l’auteur publie le formulaire sans **publier d’abord le modèle** utilisé dans . Cela se traduit par l’ajout de la variable `jcr:uuid` et d’autres propriétés protégées et générées par le système à la propriété `<template-path>/initial/jcr:content` , ce qui entraîne des échecs lors de la création suivante du formulaire.
+Le problème se produit car l’auteur publie le formulaire sans **publier au préalable le modèle** utilisé dans celui-ci. Cela entraîne l’ajout de `jcr:uuid` et d’autres propriétés protégées et générées par le système au noeud `<template-path>/initial/jcr:content`, ce qui entraîne des échecs lors de la création ultérieure du formulaire.
 
 ## Solution {#resolution-form-creation-fails}
 
 Pour résoudre le problème, procédez comme suit :
 
-1. Assurez-vous que le modèle que vous utilisez dans votre formulaire ne comporte pas la variable `jcr:uuid` et d’autres propriétés protégées générées par le système sur le chemin d’accès `<template-path>/initial/jcr:content node`.
+1. Assurez-vous que le modèle que vous utilisez dans votre formulaire ne comporte pas les propriétés protégées `jcr:uuid` et d’autres propriétés générées par le système sur le chemin `<template-path>/initial/jcr:content node`.
 1. Publish le modèle de manière explicite à l’aide de la console de modèles.
 1. Maintenant, lorsque votre modèle est publié, essayez de créer de nouveaux formulaires à l’aide de ce modèle.
 1. Si le modèle que vous avez utilisé est mis à jour dans les prochaines versions, Publish à nouveau le modèle (comme indiqué à l’étape 2) afin d’éviter des problèmes d’échec de création de formulaire.

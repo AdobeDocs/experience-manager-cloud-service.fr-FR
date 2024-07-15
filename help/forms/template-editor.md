@@ -40,7 +40,7 @@ Experience Manager met à disposition un dossier global pour organiser les modè
 
 Après avoir créé un dossier, ouvrez-le et suivez les étapes ci-après pour créer un modèle :
 
-1. Sélectionner **[!UICONTROL Créer]** dans le dossier que vous avez créé.
+1. Sélectionnez **[!UICONTROL Créer]** dans le dossier que vous avez créé.
 1. Dans la section Choisir un type de modèle , sélectionnez **[!UICONTROL Modèle de formulaire adaptatif]** et sélectionnez **[!UICONTROL Suivant]**.
 
 1. Dans la section Détails du modèle, indiquez un titre de modèle, puis sélectionnez **[!UICONTROL Créer]**.
@@ -107,7 +107,7 @@ Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lors
 
 Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulaires adaptatifs du modèle s’affiche comme un formulaire adaptatif à des fins de modification. Comme lors de la création d’un formulaire adaptatif, vous pouvez spécifier des paramètres initiaux, par exemple en sélectionnant un thème et des actions Envoyer.
 
-Les auteurs et autrices de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à l’édition du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![liste déroulante canevas](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenu initial]**.
+Les auteurs et autrices de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![ ](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenu initial]**.
 
 
 Dans le calque Contenu initial, vous créez le modèle de formulaire adaptatif que les auteurs utilisent en tant que base. La création d’un modèle est semblable à la création d’un formulaire : vous utilisez les options disponibles dans la barre latérale. Celle-ci fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
@@ -169,7 +169,7 @@ Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formula
 
 Vous pouvez associer un [!UICONTROL Schéma de modèle de données de formulaire] à un modèle de formulaire adaptatif dans un éditeur de modèles. Il permet aux créateurs et aux créatrices de sélectionner un schéma dans l’éditeur de modèles. Lorsque vous associez un schéma à un modèle et qu’un créateur ou une créatrice de formulaire crée un formulaire basé sur le modèle, le schéma est présélectionné pour le formulaire. Il permet aux créateurs et aux créatrices de formulaires de réglementer l’utilisation du schéma et de gagner du temps. Pour sélectionner un schéma de modèle de données de formulaire dans l’éditeur de modèles :
 
-1. Sélectionner **[!UICONTROL Explorateur de contenu]** située sur le côté gauche.
+1. Sélectionnez **[!UICONTROL Explorateur de contenu]** situé sur le côté gauche.
 1. Accédez au conteneur de formulaires **[!UICONTROL Paramètre]**.
 1. Sélectionnez **[!UICONTROL Modèle de données]**.
 1. Choisissez votre modèle de données de formulaire via **[!UICONTROL Sélectionner un modèle de données de formulaire]** et enregistrez la configuration.

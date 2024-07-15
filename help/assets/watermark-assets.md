@@ -19,7 +19,7 @@ ht-degree: 87%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-[!DNL Adobe Experience Manager Assets] vous permet d’ajouter un filigrane numérique aux images et aux vidéos. [!DNL Assets] prend en charge l’application d’une image en tant que filigrane pour d’autres fichiers image. Les filigranes peuvent aider les utilisateurs à vérifier l’authenticité et le copyright des ressources. Un filigrane peut également être utilisé pour indiquer le statut d’un document, tel que confidentiel, brouillon, validité, etc.
+[!DNL Adobe Experience Manager Assets] permet d’ajouter un filigrane numérique aux images et aux vidéos. [!DNL Assets] prend en charge l’application d’une image en tant que filigrane pour d’autres fichiers image. Les filigranes peuvent aider les utilisateurs à vérifier l’authenticité et le copyright des ressources. Un filigrane peut également être utilisé pour indiquer le statut d’un document, tel que confidentiel, brouillon, validité, etc.
 
 Pour configurer [!DNL Experience Manager] de façon à appliquer un filigrane à des ressources :
 

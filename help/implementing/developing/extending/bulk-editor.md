@@ -22,7 +22,7 @@ Par défaut, les propriétés de page ne sont pas activées pour la modification
 * Certains champs sont généralement uniques. Vous devez décider s’il est utile d’activer ces champs pour la modification en masse, lorsqu’une valeur sera appliquée.
    * Par exemple, les titres de page sont presque toujours uniques.
 * Certains champs peuvent avoir plusieurs valeurs qui nécessitent une représentation significative lors du rendu.
-   * Par exemple, une liste déroulante d’état intitulée **Prêt pour publication**. Il peut y avoir plusieurs valeurs avant la modification en masse, telles que **ready**, **in-review**, **en cours**, etc.
+   * Par exemple, une liste déroulante d’état intitulée **Prêt pour publication**. Il peut y avoir plusieurs valeurs avant la modification en masse, telles que **ready**, **in-review**, **in-progress**, etc.
 
 En raison de la possibilité de plusieurs valeurs, il est recommandé de n’activer que les types de champ suivants pour la modification en masse.
 
@@ -35,7 +35,7 @@ En raison de la possibilité de plusieurs valeurs, il est recommandé de n’act
 
 ## Activer un champ {#enabling-a-field}
 
-Ces étapes utilisent la méthode `/apps/core/wcm/components/page/v1/page` de la [Exemple de contenu WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comme exemple pour activer la modification en masse sur un champ dans un environnement de développement.
+Ces étapes utilisent `/apps/core/wcm/components/page/v1/page` de l’ [exemple de contenu WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comme exemple pour activer la modification en masse d’un champ dans un environnement de développement.
 
 1. À l’aide de CRXDE, ouvrez votre composant de page.
 1. Accédez au champ requis dans la définition de `cq:dialog`.

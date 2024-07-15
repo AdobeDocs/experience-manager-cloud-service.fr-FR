@@ -94,7 +94,7 @@ Pour télécharger la dernière version du SDK Adobe Experience Manager as a C
 
    >[!NOTE]
    >
-   > Il est recommandé de télécharger la dernière version de l’archive de fonctionnalités Experience Manager Forms (module complémentaire AEM Forms), des ressources de référence de formulaires ou de Forms Designer pour une compatibilité transparente avec le SDK Adobe Experience Manager as a Cloud Service.
+   > Il est recommandé de télécharger la dernière version de l’archive de fonctionnalités Experience Manager Forms (module complémentaire AEM Forms), des ressources de référence de formulaires ou Forms Designer pour une compatibilité transparente avec le SDK Adobe Experience Manager as a Cloud Service.
 
 1. Examinez et acceptez le contrat de licence de l’utilisateur final. Sélectionnez le bouton **[!UICONTROL Télécharger]**.
 
@@ -135,8 +135,8 @@ L’archive des fonctionnalités Adobe Experience Manager Forms as a Cloud Servi
 
 1. Accédez au répertoire crx-quickstart/install. Si le dossier n’existe pas, créez-le.
 
-1. Arrêtez votre instance AEM, placez le [!DNL AEM Forms] archive des fonctionnalités de module complémentaire, `aem-forms-addon-<version>.far`, dans le dossier d’installation.
-1. Accédez à la fenêtre de commande active et appuyez sur `Ctrl + C` pour redémarrer le SDK.
+1. Arrêtez votre instance d’AEM, placez l’archive de fonction de module complémentaire [!DNL AEM Forms], `aem-forms-addon-<version>.far`, dans le dossier d’installation.
+1. Accédez à la fenêtre de commande active et appuyez sur la commande `Ctrl + C` pour redémarrer le SDK.
 
    >[!NOTE]
    >
@@ -271,7 +271,7 @@ Utilisez ce projet pour créer des formulaires adaptatifs, déployer des mises �
 
 >[!NOTE]
 >
-> Configurez AEM projet basé sur Archetype version 30 ou ultérieure pour obtenir et utiliser Microsoft® Dynamics 365 et le modèle de données de formulaire Salesforce (FDM) avec AEM Forms as a Cloud Service.
+> Configurez AEM projet basé sur l’archétype version 30 ou ultérieure pour obtenir et utiliser Microsoft® Dynamics 365 et le modèle de données de formulaire Salesforce (FDM) avec AEM Forms as a Cloud Service.
 > Configurez un projet basé sur l’archétype AEM version 32 ou ultérieure pour obtenir et utiliser les thèmes Tranquil, Urbane et Ultramarine avec AEM Forms as a Cloud Service.
 
 Pour configurer le projet :
@@ -299,7 +299,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     >* Lors de la création d’un projet Archetype avec la version 45, la variable [AEM archetype Project Folder]/pom.xml définit initialement la version des composants principaux de formulaires sur 2.0.64. Avant de créer ou de déployer le projet Archetype, mettez à jour la version des composants principaux de formulaires vers la version 2.0.62.
+     >* Lors de la création d’un projet Archetype avec la version 45, le [dossier AEM archetype Project]/pom.xml définit initialement la version des composants principaux de formulaires sur 2.0.64. Avant de créer ou de déployer le projet Archetype, mettez à jour la version des composants principaux de formulaires vers la version 2.0.62.
 
 1. Déployez le projet sur votre environnement de développement local. Vous pouvez utiliser la commande suivante pour effectuer un déploiement sur votre environnement de développement local :
 
@@ -317,7 +317,7 @@ Pour configurer le Dispatcher local et y ajouter ensuite des règles spécifique
 
 ### Configuration du Dispatcher local {#setup-local-dispatcher}
 
-La variable [!DNL Experience Manager] Le SDK as a Cloud Service inclut la version recommandée des outils Dispatcher qui facilite la configuration, la validation et la simulation locale de Dispatcher. Les outils du Dispatcher sont basés sur Docker et fournissent des outils en ligne de commandes pour transpiler les fichiers de configuration du serveur web HTTP Apache et du Dispatcher dans un format compatible et les déployer sur le Dispatcher s’exécutant dans le conteneur Docker.
+Le SDK as a Cloud Service [!DNL Experience Manager] comprend la version recommandée des outils Dispatcher qui facilite la configuration, la validation et la simulation locale de Dispatcher. Les outils du Dispatcher sont basés sur Docker et fournissent des outils en ligne de commandes pour transpiler les fichiers de configuration du serveur web HTTP Apache et du Dispatcher dans un format compatible et les déployer sur le Dispatcher s’exécutant dans le conteneur Docker.
 
 La mise en cache sur le Dispatcher permet à [!DNL AEM Forms] de préremplir les formulaires adaptatifs sur un client. Elle améliore la vitesse de rendu des formulaires préremplis.
 
@@ -329,7 +329,7 @@ Pour configurer le cache du Dispatcher pour Experience Manager Forms en tant que
 
 1. Ouvrez votre projet AEM et accédez à `\src\conf.dispatcher.d\available_farms`
 1. Créez une copie du fichier `default.farm`, par exemple, `forms.farm`.
-1. Ouvrez le `forms.farm` pour modifier et remplacer le code suivant :
+1. Ouvrez le fichier `forms.farm` créé pour le modifier et remplacez le code suivant :
 
    ```json
    #/ignoreUrlParams {
@@ -366,7 +366,7 @@ Votre environnement de développement local est prêt.
 
 ## Activer les composants principaux des formulaires adaptatifs AEM Forms as a Cloud Service et dans l’environnement de développement local
 
-L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
+L’activation des composants principaux de Forms adaptatif as a Cloud Service AEM Forms vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
 
 Pour obtenir des instructions, voir [Activer les composants principaux des formulaires adaptatifs AEM Forms as a Cloud Service et dans l’environnement de développement local](/help/forms/enable-adaptive-forms-core-components.md)
 

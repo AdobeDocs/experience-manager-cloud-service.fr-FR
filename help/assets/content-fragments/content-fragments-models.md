@@ -33,12 +33,12 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
    >
    >Si l’[utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
 
-1. Spécifiez la variable **Titre du modèle**.
-Vous pouvez également définir différentes propriétés ; par exemple, ajouter **Balises**, un **Description**, puis sélectionnez **Activer le modèle** to [activer le modèle ;](#enabling-disabling-a-content-fragment-model) si nécessaire.
+1. Spécifiez le **Titre du modèle**.
+Vous pouvez également définir différentes propriétés ; par exemple, ajouter **Balises**, une **Description** et sélectionner **Activer le modèle** à [activer le modèle](#enabling-disabling-a-content-fragment-model) si nécessaire.
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur la variable **Modèle d’URL d’aperçu par défaut** see [Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
+   >Pour plus d’informations sur le **modèle d’URL d’aperçu par défaut**, voir [ Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
 
    ![titre et description](assets/cfm-models-02.png)
 
@@ -153,10 +153,10 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
   Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
-Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances. When **Champ multiple** est utilisé. Vous pouvez définir le nombre minimal et maximal d’éléments. Voir [Validation](#validation) pour plus de détails.
+Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances. Lorsque **Multiple Field** est utilisé, vous pouvez définir le nombre minimal et maximal d’éléments. Pour plus d’informations, voir [Validation](#validation) .
 
 * **Libellé du champ**
-Saisie d’un **Libellé du champ** génère automatiquement une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
+La saisie d’un **libellé du champ** génère automatiquement un **nom de propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
 
 * **Validation**
 La validation de base est disponible par le biais de mécanismes tels que la propriété **Requis**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
@@ -217,15 +217,15 @@ Différents types de données incluent désormais la possibilité de définir le
    * Test d’un modèle de fragment de contenu spécifique.
 * **Nombre min. d’éléments** / **Nombre max. d’éléments**
 
-  Champs définis comme une **Champ multiple** (définie avec **Render As**) comportent les options suivantes :
+  Les champs qui ont été définis comme **Multiple Field** (définis avec **Render As**) ont les options suivantes :
 
    * **Nombre min. d’éléments**
    * **Nombre max. d’éléments**
 
   Ils sont validés :
 
-   * La valeur maximale est validée dans la variable [Éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md).
-   * Les deux sont validés dans la variable [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * La valeur maximale est validée dans l’ [éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md).
+   * Tous deux sont validés dans l’ [ éditeur de fragment de contenu ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Utilisation de références pour former un contenu imbriqué {#using-references-to-form-nested-content}
 
@@ -336,7 +336,7 @@ Vous pouvez modifier les **propriétés** d’un modèle de fragment de contenu�
 
      >[!NOTE]
      >
-     Cette propriété n’est utilisée que par la variable *new* Éditeur de fragment de contenu. Voir [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) pour plus d’informations.
+     Il n’est utilisé que par l’éditeur de fragment de contenu *new*. Voir [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) pour plus d’informations.
 
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}

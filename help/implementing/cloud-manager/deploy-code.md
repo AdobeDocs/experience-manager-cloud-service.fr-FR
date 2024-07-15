@@ -34,7 +34,7 @@ Une fois que vous avez [configuré votre pipeline de production](/help/implement
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur le **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)** , appuyez ou cliquez sur le programme pour lequel vous souhaitez déployer le code.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur le programme pour lequel vous souhaitez déployer du code.
 
 1. Cliquez sur **Déployer** dans l’appel à l’action de l’écran **Présentation** pour lancer le processus de déploiement.
 
@@ -154,11 +154,11 @@ Dans de telles circonstances, si une réexécution est possible, la page de stat
 
 ### Réexécution de l’API {#reexecute-API}
 
-En plus d’être disponible dans l’interface utilisateur, vous pouvez utiliser [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) pour déclencher de nouvelles exécutions et identifier les exécutions déclenchées comme réexécutions.
+En plus d’être disponible dans l’interface utilisateur, vous pouvez utiliser [l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) pour déclencher de nouvelles exécutions et identifier les exécutions déclenchées comme réexécutions.
 
 #### Déclencher une réexécution {#reexecute-deployment-api}
 
-Pour déclencher une réexécution, envoyez une requête de PUT au lien HAL. `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` sur l’état de l’étape de déploiement en production.
+Pour déclencher une réexécution, envoyez une requête de PUT au lien HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` sur l’état de l’étape de déploiement de production.
 
 * Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape.
 * En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape.

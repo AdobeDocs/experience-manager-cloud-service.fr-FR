@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # ContextHub {#contexthub}
 
-ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. Sa principale fonctionnalité est d’offrir la possibilité de [afficher les données contextuelles lors de la simulation et du changement entre différentes personas ;](/help/sites-cloud/authoring/personalization/contexthub.md).
+ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. Sa principale fonctionnalité est d’offrir la possibilité d’ [afficher les données contextuelles tout en simulant diverses personas et en passant de l’une à l’autre ](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 ContextHub vous permet d’effectuer les opérations suivantes :
 

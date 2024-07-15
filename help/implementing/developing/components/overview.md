@@ -44,13 +44,13 @@ Chaque composant AEM :
 
 ## AEM Core Components {#aem-core-components}
 
-[Composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés permettant d’AEM accélérer le développement et de réduire les coûts de maintenance de vos sites web.
+[Les composants principaux d’AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management) normalisés permettant d’AEM accélérer le développement et de réduire les coûts de maintenance de vos sites web.
 
 Les composants principaux sont fournis avec AEM as a Cloud Service et le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustre la manière d’implémenter et d’utiliser les composants. Les composants sont fournis avec l’intégralité du code source et peuvent être utilisés tels quels ou comme points de départ pour des composants modifiés ou étendus.
 
 ### Affichage des composants disponibles {#viewing-available-components}
 
-Pour un aperçu de tous les composants disponibles dans votre instance AEM, utilisez la méthode [Console Composants](/help/sites-cloud/authoring/components-console.md).
+Pour un aperçu de tous les composants disponibles dans votre instance AEM, utilisez la [console Composants](/help/sites-cloud/authoring/components-console.md).
 
 Vous pouvez également utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
 
@@ -58,7 +58,7 @@ Vous pouvez également utiliser CRXDE Lite pour obtenir la liste de tous les co
 
 1. Dans l’onglet **[!UICONTROL Requête]**, sélectionnez `XPath` comme **[!UICONTROL Type]**.
 
-1. Dans le **[!UICONTROL Requête]** saisissez la chaîne suivante dans le champ de saisie :
+1. Dans le champ de saisie **[!UICONTROL Query]**, saisissez la chaîne suivante :
 
    `//element(*, cq:Component)`
 

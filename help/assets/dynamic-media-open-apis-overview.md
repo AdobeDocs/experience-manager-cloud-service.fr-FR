@@ -19,23 +19,23 @@ Dynamic Media avec les fonctionnalités OpenAPI place la gestion des actifs num�
 
 Dynamic Media avec les fonctionnalités OpenAPI offre les avantages clés suivants :
 
-* **Intégrations fluides**: Dynamic Media avec les fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet aux développeurs de facilement [intégrer la diffusion des ressources à leurs applications](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe ainsi que les applications tierces. Il fournit une [Interface utilisateur du sélecteur de ressources Microsoft Frontend](/help/assets/asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Le sélecteur peut être intégré sans effort à n’importe quelle application basée sur des structures JavaScript telles que React JS, Angular JS et Vanilla JS.
+* **Intégrations en toute transparence** : Dynamic Media avec fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet à vos développeurs d&#39;[ intégrer facilement la diffusion des ressources à leurs applications ](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe ainsi que les applications tierces. Il fournit une [interface utilisateur du sélecteur de ressources Micro Frontend ](/help/assets/asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Le sélecteur peut être intégré sans effort à n’importe quelle application basée sur des structures JavaScript telles que React JS, Angular JS et Vanilla JS.
 
-* **Gestion centralisée des ressources numériques**: DAM est la source unique de vérité pour toutes les ressources numériques. Vos ressources numériques sont gérées de manière centralisée dans AEM Assets et diffusées aux applications gourmandes par référence à l’aide d’URL de diffusion, sans copier de fichiers binaires de ressources.
+* **Gestion centralisée des ressources numériques** : DAM est la source unique de vérité pour toutes les ressources numériques. Vos ressources numériques sont gérées de manière centralisée dans AEM Assets et diffusées aux applications gourmandes par référence à l’aide d’URL de diffusion, sans copier de fichiers binaires de ressources.
 
-* **Mises à jour en temps réel**: toute modification apportée aux ressources approuvées dans la gestion des ressources numériques, y compris les mises à jour de version et les modifications de métadonnées, est automatiquement répercutée dans les URL de diffusion. Avec une valeur TTL (short Time-to-Live) de 10 minutes configurée pour Dynamic Media avec des fonctionnalités OpenAPI via CDN, les mises à jour deviennent visibles dans toutes les interfaces de création et de publication en moins de 10 minutes.
+* **Mises à jour en temps réel** : toute modification apportée aux ressources approuvées dans la gestion des actifs numériques, y compris les mises à jour de version et les modifications de métadonnées, est automatiquement répercutée dans les URL de diffusion. Avec une valeur TTL (short Time-to-Live) de 10 minutes configurée pour Dynamic Media avec des fonctionnalités OpenAPI via CDN, les mises à jour deviennent visibles dans toutes les interfaces de création et de publication en moins de 10 minutes.
 
-* **Cohérence des marques**: uniquement [ressources approuvées par la marque](/help/assets/approve-assets.md) sont exposées aux applications en aval. [Les responsables de marque et les marketeurs contrôlent étroitement les ressources de marque.](/help/assets/restrict-assets-delivery.md). Seule la version approuvée et la dernière version de la ressource peut être utilisée, ce qui garantit la cohérence de la marque sur tous les canaux et applications.
+* **Cohérence des marques** : seuls les [actifs approuvés par la marque](/help/assets/approve-assets.md) sont exposés aux applications en aval. [Les responsables de marques et les marketeurs maintiennent un contrôle strict sur les ressources de marque](/help/assets/restrict-assets-delivery.md). Seule la version approuvée et la dernière version de la ressource peut être utilisée, ce qui garantit la cohérence de la marque sur tous les canaux et applications.
 
-* **Diffusion optimisée pour le web**: les ressources numériques sont diffusées dans des formats optimisés pour le web afin d’améliorer les principales fonctionnalités du web pour vos expériences numériques. Cela inclut la prise en charge des rendus WebP pour les images, la diffusion en continu adaptative via les protocoles HLS ou DASH pour les vidéos et les rendus originaux pour les documents.
+* **Diffusion optimisée pour le web** : les ressources numériques sont diffusées dans des formats optimisés pour le web afin d’améliorer les principales valeurs web de vos expériences numériques. Cela inclut la prise en charge des rendus WebP pour les images, la diffusion en continu adaptative via les protocoles HLS ou DASH pour les vidéos et les rendus originaux pour les documents.
 
-* **Transformation de ressources dynamique**: notre système permet la transformation d’images à la volée à l’aide de paramètres d’URL connus sous le nom de modificateurs d’image. [Par exemple, largeur, hauteur, rotation, symétrie, qualité, recadrage, format et recadrage intelligent](/help/assets/deliver-assets-apis.md). Les rendus transformés sont générés dynamiquement et distribués de manière transparente via le réseau de diffusion de contenu.
+* **Transformation de ressources dynamique** : notre système permet la transformation d’images à la volée à l’aide de paramètres d’URL connus sous le nom de modificateurs d’image. [Par exemple, largeur, hauteur, rotation, symétrie, qualité, recadrage, format et recadrage intelligent ](/help/assets/deliver-assets-apis.md). Les rendus transformés sont générés dynamiquement et distribués de manière transparente via le réseau de diffusion de contenu.
 
-* **Diffusion sécurisée des ressources**: Dynamic Media avec les fonctionnalités OpenAPI fournit un mécanisme de contrôle d’accès à vos ressources numériques. Vous pouvez spécifier des rôles ou des groupes d’utilisateurs comme métadonnées pour les ressources à sécuriser et définir une période prédéfinie au cours de laquelle [seuls les utilisateurs autorisés peuvent accéder à ces ressources.](/help/assets/restrict-assets-delivery.md). Les URL de diffusion des ressources sécurisées ne sont pas résolues pour les utilisateurs non autorisés au cours de la période limitée.
+* **Livraison sécurisée des ressources** : Dynamic Media avec les fonctionnalités OpenAPI fournit un mécanisme de contrôle d’accès à vos ressources numériques. Vous pouvez spécifier des rôles ou des groupes d’utilisateurs comme métadonnées pour les ressources à sécuriser et définir une période prédéfinie pendant laquelle [ seuls les utilisateurs autorisés peuvent accéder à ces ressources](/help/assets/restrict-assets-delivery.md). Les URL de diffusion des ressources sécurisées ne sont pas résolues pour les utilisateurs non autorisés au cours de la période limitée.
 
-* **Informations sur les données permettant de prendre des décisions éclairées (à venir)**: au-delà de la gestion et de la diffusion des ressources, il capture les informations sur les données de diffusion dans les diffusions de ressources sur le réseau de diffusion de contenu, ce qui permet aux gestionnaires de marque de suivre les mesures de diffusion sur l’ensemble des canaux. Il leur permet de prendre des décisions pilotées par les données pour optimiser continuellement la gouvernance des ressources et les stratégies de diffusion.
+* **Informations sur les données pour prendre des décisions éclairées (à venir)** : au-delà de la gestion des ressources et de la diffusion, il capture les informations sur les données de diffusion dans les diffusions de ressources sur le réseau de diffusion de contenu, ce qui permet aux gestionnaires de marque de suivre les mesures de diffusion sur l’ensemble des canaux. Il leur permet de prendre des décisions pilotées par les données pour optimiser continuellement la gouvernance des ressources et les stratégies de diffusion.
 
-![Diagramme de flux de données Dynamic Media Open API](assets/dm-openapi-dfd.png)
+![ Diagramme de flux de données Dynamic Media Open API](assets/dm-openapi-dfd.png)
 
 ## Conditions préalables pour accéder à Dynamic Media avec les fonctionnalités OpenAPI {#prerequisites-dynaminc-media-open-apis}
 
@@ -49,7 +49,7 @@ Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez dis
 
 Avant d’envoyer une demande d’activation de Dynamic Media avec les fonctionnalités OpenAPI sur AEM as a Cloud Service, vérifiez qu’elle n’est pas déjà activée.
 
-Une fois que la variable [Conditions préalables](#prerequisites-dynaminc-media-open-apis) sont satisfaits et si les fonctionnalités OpenAPI de Dynamic Media sont activées sur votre instance AEM as a Cloud Service, une URL de diffusion est disponible pour chaque ressource approuvée dans le référentiel. Pour plus d’informations sur la copie d’une URL de diffusion, voir [Copie de l’URL de diffusion pour les ressources approuvées](approve-assets.md#copy-delivery-url-approved-assets) . Adobe recommande d’utiliser cette méthode pour vérifier que Dynamic Media avec les fonctionnalités OpenAPI est activé sur AEM as a Cloud Service avant d’envoyer un ticket d’assistance pour l’activer.
+Une fois que les [conditions préalables](#prerequisites-dynaminc-media-open-apis) sont remplies et que les fonctionnalités OpenAPI de Dynamic Media sont activées sur votre instance AEM as a Cloud Service, une URL de diffusion est disponible pour chaque ressource approuvée dans le référentiel. Pour plus d’informations sur la copie de l’URL de diffusion, voir [Copier l’URL de diffusion pour les ressources approuvées](approve-assets.md#copy-delivery-url-approved-assets) . Adobe recommande d’utiliser cette méthode pour vérifier que Dynamic Media avec les fonctionnalités OpenAPI est activé sur AEM as a Cloud Service avant d’envoyer un ticket d’assistance pour l’activer.
 
 Pour activer Dynamic Media avec les fonctionnalités OpenAPI sur AEM as a Cloud Service, envoyez un ticket de support d’Adobe avec les détails suivants :
 
@@ -71,7 +71,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 
 >[!NOTE]
 >
->Exclure `/conf/global/settings/dam/assets-configurations/assetdelivery` de n’importe quel module de contenu, afin d’éviter la désactivation de Dynamic Media avec les fonctionnalités OpenAPI.
+>Exclure `/conf/global/settings/dam/assets-configurations/assetdelivery` de tout module de contenu, afin d’éviter la désactivation de Dynamic Media avec les fonctionnalités OpenAPI.
 
 ## En savoir plus sur les principales fonctionnalités {#learn-more-key-capabilities}
 
@@ -82,11 +82,11 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    </a>
    <div>
       <a href="/help/assets/approve-assets.md">
-      <strong>Approbation des ressources dans Experience Manager Assets</strong>
+      <strong>Approuver des ressources dans Experience Manager Assets</strong>
       </a>
    </div>
    <p>
-      <em>Approuvez les ressources dans AEM Assets afin de rationaliser la gestion des ressources, en veillant à ce que le processus de gestion des ressources soit contrôlé et efficace.</em>
+      <em> Approuvez des ressources dans AEM Assets pour rationaliser la gestion des ressources, en veillant à un processus contrôlé et efficace pour gérer les ressources.</em>
    </p>
 </td>
 <td>
@@ -95,7 +95,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    </a>
    <div>
       <a href="/help/assets/integrate-dynamic-media-open-apis.md">
-      <strong>Intégration d’AEM Assets aux applications en aval</strong>
+      <strong>Intégrer AEM Assets aux applications en aval</strong>
       </a>
    </div>
    <p>
@@ -108,7 +108,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    </a>
    <div>
       <a href="/help/assets/asset-selector.md">
-      <strong>Sélecteur de ressources Micro-Frontend de l’Adobe</strong>
+      <strong>Sélecteur de ressources micro-front d’Adobe</strong>
       </a>
    </div>
    <p>
@@ -136,11 +136,11 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    </a>
    <div>
       <a href="/help/assets/deliver-assets-apis.md">
-      <strong>Diffuser des ressources vers les applications en aval</strong>
+      <strong> Diffuser des ressources aux applications en aval</strong>
       </a>
    </div>
    <p>
-      <em>Diffusez des ressources vers des applications intégrées en aval à l’aide d’une URL de diffusion.</em>
+      <em>Diffuser des ressources vers des applications en aval intégrées à l’aide d’une URL de diffusion.</em>
    </p>
 </td>
 <td>
@@ -149,7 +149,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    </a>
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
-      <strong>Limitation de l’accès aux ressources dans Experience Manager</strong>
+      <strong>Limiter l’accès aux ressources dans Experience Manager</strong>
       </a>
    </div>
    <p>

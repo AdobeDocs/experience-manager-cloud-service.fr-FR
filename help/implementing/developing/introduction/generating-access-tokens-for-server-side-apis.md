@@ -112,7 +112,7 @@ Tout d’abord, un nouveau profil de produit doit être créé dans l’Adobe A
 
 1. Accédez à l’Adobe Admin Console depuis la page [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
 1. Cliquez sur le lien **Gérer** sous la colonne **Produits et services** sur la gauche.
-1. Sélectionner **AEM as a Cloud Service**.
+1. Sélectionnez **AEM as a Cloud Service**.
 1. Appuyez sur le bouton **Nouveau profil**.
 
    ![Nouveau profil](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)

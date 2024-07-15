@@ -17,7 +17,7 @@ Découvrez comment gérer les expériences produit.
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours Adobe Experience Manager (AEM) Content and Commerce, [Gestion des expériences de catalogue de produits étape par étape](staged-catalog.md), vous avez appris à gérer des expériences de catalogue de produits intermédiaires.
+Dans le document précédent du parcours Adobe Experience Manager (AEM) Content and Commerce, [Gérer les expériences de catalogue de produits étape](staged-catalog.md), vous avez appris à gérer les expériences de catalogue de produits étape par étape.
 
 ## Objectif {#objective}
 
@@ -75,7 +75,7 @@ Ouvrez la boîte de dialogue du composant et saisissez un nom pour cet espace r�
 
 ![boîte de dialogue pem XF](assets/pem-dialog-xf.png)
 
-Ouvrez le fragment d’expérience que vous avez associé à un produit à l’étape précédente. Ouvrez les propriétés et accédez à l’onglet Commerce. Saisissez le même nom d’espace réservé sous le **Emplacement de l’espace réservé du catalogue**.
+Ouvrez le fragment d’expérience que vous avez associé à un produit à l’étape précédente. Ouvrez les propriétés et accédez à l’onglet Commerce. Saisissez le même nom d’espace réservé sous l’emplacement **de l’espace réservé du catalogue**.
 
 ![pem xf](assets/pem-xf.png)
 
@@ -111,7 +111,7 @@ Félicitations. Vous avez terminé le parcours du développeur d’AEM Content�
 * utiliser des espaces réservés pour enrichir individuellement les pages de produits et de catégories ;
 * savoir comment rendre le contenu Shoppable et utiliser l’onglet de contenu associé ;
 
-Vous êtes maintenant prêt à gérer les expériences de produits à l’aide d’AEM Content and Commerce. Toutefois, AEM Content and Commerce disposent de nombreuses options supplémentaires. Extrayez certaines des ressources supplémentaires disponibles dans le [Section Ressources supplémentaires](#additional-resources) où vous pouvez en savoir plus sur les fonctionnalités que vous avez vues dans ce parcours.
+Vous êtes maintenant prêt à gérer les expériences de produits à l’aide d’AEM Content and Commerce. Toutefois, AEM Content and Commerce disposent de nombreuses options supplémentaires. Consultez certaines des ressources supplémentaires disponibles dans la [section Ressources supplémentaires](#additional-resources) où vous pouvez en savoir plus sur les fonctionnalités que vous avez vues dans ce parcours.
 
 ## Ressources supplémentaires {#additional-resources}
 

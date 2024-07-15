@@ -89,7 +89,7 @@ La prochaine version est prévue pour le 09 décembre 2021.
 * Les utilisateurs et utilisatrices peuvent désormais exploiter les nouveaux pipelines front-end pour déployer exclusivement le code front-end de manière accélérée. Voir [Pipelines frontaux de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
 
   >[!IMPORTANT]
-  >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` ou version ultérieure pour utiliser de nouveaux pipelines front-end.
+  >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` ou supérieure pour utiliser de nouveaux pipelines front-end.
 
 * La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la publication de la version.
 

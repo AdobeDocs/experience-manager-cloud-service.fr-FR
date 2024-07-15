@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Comparer des formulaires adaptatifs {#compare-two-forms}
 
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible via notre [canal de version préliminaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). </span>
+<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible par le biais de notre [canal de pré-version](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). </span>
 
 Lorsque les auteurs de formulaires doivent comparer deux formulaires distincts en fonction des champs, du contenu et des composants de formulaire, ils comparent les deux formulaires. L’auteur du formulaire doit s’assurer que les deux formulaires se trouvent dans le même répertoire ou dossier pour pouvoir les comparer. Pour comparer deux formulaires adaptatifs distincts, procédez comme suit :
 

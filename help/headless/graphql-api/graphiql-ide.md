@@ -83,7 +83,7 @@ Vous pouvez exécuter une nouvelle requête immédiatement ou charger et exécut
 
 Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la requête qui sera exécutée lorsque vous :
 
-* sélectionnez dans la **Exécuter la requête** icon
+* sélectionnez sur l’icône **Exécuter la requête**
 * utilisez la combinaison de clavier `Control-Enter`.
 
 ## Variables de requête {#query-variables}
@@ -106,7 +106,7 @@ Les [requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) so
 >
 >Les règles de réécriture personnalisées sur le Dispatcher peuvent remplacer les valeurs par défaut de la publication AEM.
 >
->Dans le cas où vous envoyez des en-têtes de contrôle du cache TTL à partir du Dispatcher, en fonction d’un modèle de correspondance d’emplacement, vous pouvez alors, si nécessaire, exclure . `/graphql/execute.json/*` des correspondances.
+>Dans le cas où vous envoyez des en-têtes de contrôle du cache TTL à partir du Dispatcher, en fonction d’un modèle de correspondance d’emplacement, vous pouvez alors, si nécessaire, exclure `/graphql/execute.json/*` des correspondances.
 
 Avec GraphQL, vous pouvez configurer les en-têtes de cache HTTP pour contrôler ces paramètres pour votre propre requête persistante.
 
@@ -114,7 +114,7 @@ Avec GraphQL, vous pouvez configurer les en-têtes de cache HTTP pour contrôler
 
    ![En-têtes de cache HTTP de requêtes persistantes](assets/cfm-graphqlapi-headers-01.png "En-têtes de cache HTTP de requêtes persistantes")
 
-1. Si vous sélectionnez cette option, le **Configuration du cache** boîte de dialogue :
+1. Cette sélection ouvre la boîte de dialogue **Configuration du cache** :
 
    ![Paramètres d’en-tête de cache HTTP de requête persistante](assets/cfm-graphqlapi-headers-02.png "Paramètres d’en-tête de cache HTTP de requête persistante")
 

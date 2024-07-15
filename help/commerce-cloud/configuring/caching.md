@@ -30,7 +30,7 @@ Il n’y a pas d’invalidation du cache. Par conséquent, agissez prudemment lo
 
 Lors de la configuration de la mise en cache des composants, le nom du cache doit correspondre au nom des composants **proxy** que vous définissez dans votre projet.
 
-Avant d’envoyer une requête GraphQL, le client ou la cliente vérifie si cette requête **exacte** est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour établir une correspondance, la requête GraphQL _must_ correspond exactement. Autrement dit, la requête, le nom de l’opération (le cas échéant), les variables (le cas échéant) _must_ tous sont égaux à la requête mise en cache. En outre, tous les en-têtes HTTP personnalisés qui peuvent être définis _doivent_ être également identiques. Par exemple, l’en-tête `Store` Adobe Commerce _doit_ correspondre.
+Avant d’envoyer une requête GraphQL, le client ou la cliente vérifie si cette requête **exacte** est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour qu’une correspondance soit trouvée, la requête GraphQL _doit_ correspond exactement. En d’autres termes, la requête, le nom de l’opération (le cas échéant), les variables (le cas échéant) _must_ sont toutes égales à la requête mise en cache. En outre, tous les en-têtes HTTP personnalisés qui peuvent être définis _doivent_ être également identiques. Par exemple, l’en-tête `Store` Adobe Commerce _doit_ correspondre.
 
 ### Exemples {#examples}
 

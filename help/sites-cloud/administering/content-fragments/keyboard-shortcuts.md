@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Une sélection de raccourcis clavier est disponible à l’utilisation dans la console Fragments de contenu.
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certaines s’appliquent lorsque [modification de pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), d’autres au [utilisation générale des consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certaines s’appliquent lors de la [modification de pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), d’autres lors de l’ [utilisation générale des consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

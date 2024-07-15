@@ -7,8 +7,8 @@ role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 95%
+source-wordcount: '332'
+ht-degree: 100%
 
 ---
 
@@ -47,6 +47,6 @@ Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebappli
 
 ## Utilisation du protocole HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. La diffusion des ressources Dynamic Media est prise en charge via HTTP/2, qui offre de meilleurs temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media sont désormais prises en charge sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
 Voir [Diffusion du contenu sur HTTP2](http2faq.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.

@@ -1,6 +1,6 @@
 ---
 title: Notes de mise à jour de la fonction Générer des variations
-description: Notes de mise à jour de Generate Variations (Générer des variations), accessibles depuis AEM as a Cloud Service et le Sidekick des Edge Delivery Services
+description: Notes de mise à jour de Generate Variations (Générer des variations), accessibles à partir d’AEM as a Cloud Service et du Sidekick de Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Notes de mise à jour de la fonction Générer des variations {#release-notes-generate-variations}
 
-Cette page documente les notes de mise à jour de Générer des variations, accessibles depuis AEM as a Cloud Service et le Sidekick des Edge Delivery Services.
+Cette page documente les notes de mise à jour de Générer des variations, accessibles à partir d’AEM as a Cloud Service et du Sidekick de Edge Delivery Services.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ La version actuelle est la version 2.2.0.
 
 ## Problèmes connus {#known-issues}
 
-* Pour les problèmes liés aux invites personnalisées lors du déplacement d’une version antérieure, voir [Infos personnalisées dans v2.0.0](/help/generative-ai/generate-variations.md#custom-prompts-v200)
+* Pour les problèmes liés aux invites personnalisées lors du déplacement à partir d’une version antérieure, voir [invites personnalisées dans v2.0.0](/help/generative-ai/generate-variations.md#custom-prompts-v200)
 
 ## Versions précédentes {#previous-releases}
 

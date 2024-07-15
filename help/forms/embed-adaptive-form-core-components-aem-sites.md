@@ -17,9 +17,9 @@ Vous pouvez facilement créer ou incorporer des formulaires adaptatifs dans une 
 
 Vous pouvez choisir l’une des méthodes suivantes pour créer ou ajouter un formulaire adaptatif à une page AEM Sites :
 
-* **Création d’un formulaire adaptatif à l’aide du composant de conteneur de Forms adaptatif**: la variable [Conteneur de formulaires adaptatifs](#af-container-component) vous permet de créer des expériences d’inscription numérique en utilisant des composants Forms adaptatif directement dans l’éditeur AEM Sites. Cette intégration offre une expérience transparente aux auteurs et autrices AEM Sites qui souhaitent créer et gérer des formulaires dans leurs pages AEM Sites.
+* **Créer un formulaire adaptatif à l’aide du composant Adaptive Forms Container** : le composant [Conteneur de formulaires adaptatifs](#af-container-component) permet de créer des expériences d’inscription numérique en utilisant les composants Adaptive Forms directement dans l’éditeur AEM Sites. Cette intégration offre une expérience transparente aux auteurs et autrices AEM Sites qui souhaitent créer et gérer des formulaires dans leurs pages AEM Sites.
 
-* **Ajouter un formulaire adaptatif existant**: la variable [Forms adaptatif - Incorporer (v2)](#embed-existing-af) permet d’ajouter facilement un formulaire adaptatif préexistant dans une page dans AEM Sites. Cette fonctionnalité améliore l’adaptabilité et la possibilité de réutilisation des formulaires adaptatifs. Cette intégration permet aux clientes et clients de réutiliser les formulaires adaptatifs déjà créés.
+* **Ajouter un formulaire adaptatif existant** : le composant [ Adaptive Forms - Embed(v2)](#embed-existing-af) permet d’ajouter facilement un formulaire adaptatif préexistant dans une page dans AEM Sites. Cette fonctionnalité améliore l’adaptabilité et la possibilité de réutilisation des formulaires adaptatifs. Cette intégration permet aux clientes et clients de réutiliser les formulaires adaptatifs déjà créés.
 
 * **Utiliser l’assistant de formulaires adaptatifs pour créer un formulaire** : le composant [Formulaires adaptatifs - Incorporer (v2)](#embed-new-af) permet de créer un formulaire adaptatif à partir de l’éditeur AEM Sites à l’aide de l’assistant de création de formulaire. Le formulaire est enregistré en tant qu’entité externe. Vous pouvez également réutiliser ce formulaire dans d’autres pages Sites et dans des formulaires autonomes.
 
@@ -110,7 +110,7 @@ Dans la boîte de dialogue [!UICONTROL Modifier le conteneur de formulaires adap
    * **Service de préremplissage** : vous pouvez utiliser le service de préremplissage pour remplir automatiquement les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ouvre un formulaire, les valeurs de ces champs sont préremplies. Pour plus d’informations sur le service de préremplissage, voir [Préremplir les champs de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager.html?lang=fr).
    * **Catégorie de bibliothèque cliente** : spécifiez les [fonctions JavaScript](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=fr#custom-functions) qui sont utilisées dans les expressions et prises en charge par les formulaires adaptatifs.
 * **Modèle de données** : un modèle de données vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez le **[!UICONTROL modèle de données de formulaire]** si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
-   * **Modèle de données de formulaire**: un modèle de données de formulaire (FDM) permet à un formulaire adaptatif de communiquer avec des sources de données disparates. Pour plus d’informations sur la configuration d’une source de données, voir [Configurer des sources de données](/help/forms/configure-data-sources.md).
+   * **Modèle de données de formulaire** : un modèle de données de formulaire (FDM) permet à un formulaire adaptatif de communiquer avec des sources de données disparates. Pour plus d’informations sur la configuration d’une source de données, voir [Configurer des sources de données](/help/forms/configure-data-sources.md).
    * **Schéma** : le schéma représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation. Vous pouvez [associer le schéma à un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=fr) et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif.
 
      >[!NOTE]
@@ -138,7 +138,7 @@ Dans la boîte de dialogue [!UICONTROL Modifier le conteneur de formulaires adap
 
 ## Incorporer un formulaire adaptatif  {#aem-container-component}
 
-L’utilisation du composant **[!UICONTROL Formulaires adaptatifs - Incorporer (V2)]** permet d’incorporer un nouveau formulaire adaptatif ou un formulaire adaptatif existant dans la page de Site. La variable [!UICONTROL Forms adaptatif - Incorporer (v2)] permet d’effectuer les opérations suivantes :
+L’utilisation du composant **[!UICONTROL Formulaires adaptatifs - Incorporer (V2)]** permet d’incorporer un nouveau formulaire adaptatif ou un formulaire adaptatif existant dans la page de Site. Le composant [!UICONTROL Forms adaptatif - Incorporer(v2)] permet d’effectuer les opérations suivantes :
 
 * [Ajouter un formulaire adaptatif existant](#embed-new-af)
 
@@ -203,7 +203,7 @@ Pour utiliser les composants Formulaires adaptatifs dans une page AEM Sites, in
 
 1. Ouvrez la page AEM Sites en mode d’édition.
 1. À partir du panneau Explorateur des composants, faites glisser et déposez le composant [!UICONTROL Formulaires adaptatifs - Incorporer] sur la page.
-1. Sélectionnez la variable [!UICONTROL Forms adaptatif - Incorporer] dans la page sites et sélectionnez ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) dans la barre d’actions. La boîte de dialogue **[!UICONTROL Modifier les formulaires adaptatifs - Incorporer]** s’ouvre.
+1. Sélectionnez le composant [!UICONTROL Forms adaptatif - Incorporer] dans la page des sites et sélectionnez ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) dans la barre d’actions. La boîte de dialogue **[!UICONTROL Modifier les formulaires adaptatifs - Incorporer]** s’ouvre.
 1. Recherchez et sélectionnez le formulaire adaptatif à incorporer dans le [!UICONTROL chemin de la ressource].
 1. Enregistrez les paramètres. Le formulaire adaptatif est maintenant incorporé dans la page.
 

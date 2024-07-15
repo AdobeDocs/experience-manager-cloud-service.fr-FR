@@ -91,7 +91,7 @@ Consultez cette section pour découvrir la carte d’activité Carte de déploie
 
 ## Utilisation de la carte de transfert de contenu {#content-transfer}
 
-La carte Transfert de contenu vous permet de lancer et de gérer le transfert de contenu de votre instance AEM actuelle vers AEM as a Cloud Service.
+La carte Transfert de contenu vous permet de démarrer et de gérer le transfert de contenu de votre instance AEM actuelle vers AEM as a Cloud Service.
 
 Suivez cette section pour explorer la carte d’activité Transfert de contenu :
 

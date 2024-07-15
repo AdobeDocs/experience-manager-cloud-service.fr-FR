@@ -27,8 +27,8 @@ Les dossiers de ressources sont utilisés pour [organiser des ressources de cont
 
 Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pour organiser le contenu au fur et à mesure de sa création. Pour les besoins de ce guide de prise en main, il suffit de créer un dossier.
 
-1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Navigation > Ressources > Fichiers**.
-1. Sélectionner **Créer > Dossier**.
+1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Navigation > Assets > Fichiers**.
+1. Sélectionnez **Créer > Dossier**.
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
    * Le **nom** deviendra celui du nœud dans le référentiel.
@@ -41,7 +41,7 @@ Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pou
 1. Pour la **configuration du cloud**, sélectionnez la[ configuration que vous avez créée précédemment.](create-configuration.md)
    ![Configurer le dossier de ressources](../assets/assets-folder-configure.png)
 1. Sélectionnez **Enregistrer et fermer**.
-1. Sélectionner **OK** dans la fenêtre de confirmation.
+1. Sélectionnez **OK** dans la fenêtre de confirmation.
 
    ![Fenêtre de confirmation](../assets/assets-folder-confirmation.png)
 

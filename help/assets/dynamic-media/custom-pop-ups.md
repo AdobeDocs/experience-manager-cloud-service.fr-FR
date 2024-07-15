@@ -1,5 +1,5 @@
 ---
-title: Création de pop-ups personnalisés à l’aide de l’aperçu rapide
+title: Créer des pop-ups personnalisés à l’aide de l’aperçu rapide
 description: Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences d’e-commerce où une fenêtre pop-up s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans la fenêtre pop-up.
 contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
@@ -8,13 +8,13 @@ exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '944'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
 # Création de pop-ups personnalisés à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
-L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les pop-ups. En fonction de la visionneuse que vous utilisez, les clients peuvent sélectionner une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu associé.
+L’aperçu rapide par défaut est utilisé dans les expériences e-commerce où un pop-up s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les pop-ups. En fonction de la visionneuse que vous utilisez, les clients peuvent sélectionner une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu associé.
 
 L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynamic Media :
 
@@ -46,7 +46,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
     </tr>
     <tr>
     <td>Bannières de carrousel</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Ajout de zones réactives ou cliquables à une bannière</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Ajout de zones réactives ou cliquables à une bannière </a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -123,7 +123,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Appel de fonction** Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par la page hôte. Le code incorporé fournit un exemple d’appel de fonction :
+   **Appel de fonction** Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code intégré fournit un exemple d’appel de fonction :
 
    `loadQuickView(sku)`
 
@@ -137,7 +137,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
 1. Procédez comme suit :
 
-   * Supprimez les commentaires de la section setHandlers du code incorporé.
+   * Supprimez les commentaires de la section setHandlers du code intégré.
    * Mappez toutes les variables supplémentaires contenues dans l’aperçu rapide.
 
       * Mettez à jour l’appel `loadQuickView(sku,*var1*,*var2*)` si vous ajoutez d’autres variables.
@@ -156,7 +156,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
      Les variables de l’aperçu rapide sont mappées. L’appel de fonction est en place. Et la console du navigateur écrit la valeur de la variable dans la console du navigateur. Cette opération s’appuie sur l’exemple de fonction fourni.
 
-1. Vous pouvez désormais utiliser la fonction pour appeler un pop-up simple dans l’aperçu rapide. L’exemple suivant utilise une `DIV` pour une fenêtre contextuelle.
+1. Vous pouvez désormais utiliser la fonction pour appeler un pop-up simple dans l’aperçu rapide. L’exemple suivant utilise une balise `DIV` pour une fenêtre contextuelle.
 1. Mettez en forme la balise `DIV` du pop-up comme suit. Ajoutez un style supplémentaire selon vos besoins.
 
    ```xml {.line-numbers}
@@ -226,9 +226,9 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    Dans le code ci-dessus, vous avez effectué ce qui suit :
 
    * Identification de la fenêtre pop-up personnalisée.
-   * Suppression de la bibliothèque du modèle DOM.
+   * Suppression de celui-ci du DOM.
    * Identification du conteneur de la visionneuse.
-   * Ajout de la fenêtre contextuelle au conteneur de la visionneuse.
+   * Ajout du pop-up au conteneur de la visionneuse.
 
 1. Votre code complet de setHandlers ressemble à ceci (la visionneuse de vidéo interactive a été utilisée) :
 

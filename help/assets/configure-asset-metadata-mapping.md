@@ -125,7 +125,7 @@ Pour appliquer des paramètres de métadonnées au dossier d’images :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
 
-1. Sélectionnez le schéma de métadonnées dans la liste disponible, puis cliquez sur **[!UICONTROL Appliquer aux dossiers]**.
+1. Sélectionnez le schéma de métadonnées dans la liste disponible et cliquez sur **[!UICONTROL Appliquer aux dossiers]**.
 
 1. Sélectionnez le dossier de destination vers lequel [l’image est envoyée à partir de l’application Adobe Workfront](#send-image-workfront-assets) et cliquez sur **[!UICONTROL Appliquer]**.
 

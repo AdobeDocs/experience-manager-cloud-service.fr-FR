@@ -112,7 +112,7 @@ La prochaine version est prévue pour le 3 juin 2021.
 
 * Le point d’entrée du référentiel dans l’API publique inclut désormais l’URL de Git.
 
-* Les journaux de déploiement téléchargés par un utilisateur de Cloud Manager sont plus pertinents et incluent des détails sur les échecs et les scénarios de succès.
+* Les journaux de déploiement téléchargés par un utilisateur Cloud Manager sont plus pertinents et incluent des détails sur les échecs et les scénarios de succès.
 
 * Les échecs intermittents rencontrés lors de la publication du code vers le git d’Adobe ont maintenant été résolus.
 
@@ -150,7 +150,7 @@ La date de publication de l’outil de transfert de contenu version v1.4.6 est 
 
 * Une nouvelle instruction de journalisation a été ajoutée au journal des erreurs du démarrage rapide si l’utilisateur ne dispose pas des autorisations d’exécution sur le fichier exécutable Java.
 
-* Lorsqu’un utilisateur supprime un jeu de migration de l’interface utilisateur du CTT, où une extraction a été effectuée, la variable `tmp` le dossier associé à ce jeu de migration est supprimé afin d’économiser de l’espace.
+* Lorsqu’un utilisateur supprime un jeu de migration de l’interface utilisateur du CTT, où une extraction a été effectuée, le dossier `tmp` associé à ce jeu de migration est supprimé afin d’économiser de l’espace.
 
 ### Correctifs {#bug-fixes-ctt-latest}
 

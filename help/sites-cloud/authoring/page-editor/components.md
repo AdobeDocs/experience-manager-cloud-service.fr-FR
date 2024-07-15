@@ -26,7 +26,7 @@ AEM est fourni avec tout un éventail de composants prêts à l’emploi qui pro
 
 ## Utilisation générale {#general-usage}
 
-Les composants sont disponibles sur la page **Composants** dans le panneau latéral de l’éditeur de page lorsque [modification d’une page.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Les composants sont disponibles sur l’onglet **Composants** du panneau latéral de l’éditeur de page lors de la [modification d’une page.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 Vous pouvez sélectionner un composant et le faire glisser vers l’emplacement souhaité sur votre page. Vous pouvez ensuite le modifier à l’aide des méthodes suivantes :
 

@@ -27,7 +27,7 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 >[!NOTE]
 >Si Amazon S3, Azure Data Store ou File Data Store sont utilisés comme type de magasin de données, vous pouvez exécuter l’étape de précopie facultative pour augmenter la vitesse de la phase d’extraction. L’étape de précopie est la plus efficace pour la première extraction et ingestion complète. Pour plus d’informations, consultez [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md).
 
-1. Sélectionnez un jeu de migration dans le **Transfert de contenu** assistant et cliquez sur **Extract** pour démarrer l’extraction.
+1. Sélectionnez un jeu de migration dans l’assistant **Content Transfer** et cliquez sur **Extract** pour démarrer l’extraction.
 
    ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
@@ -36,29 +36,29 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
    >[!IMPORTANT]
    >
-   >Assurez-vous que la clé Extraction est valide et qu’elle n’est pas proche de son expiration. Si la date d&#39;expiration est proche, vous pouvez renouveler la clé Extraction en sélectionnant le jeu de migration et en cliquant sur Propriétés. Cliquez sur **Renouveler**. Vous accédez alors au Cloud Acceleration Manager sur lequel vous pouvez cliquer. **Copier la clé d’extraction**. Chaque fois que vous cliquez **Copier la clé d’extraction**, une nouvelle clé d’extraction est générée, valable 14 jours à compter de la création.
+   >Assurez-vous que la clé Extraction est valide et qu’elle n’est pas proche de son expiration. Si la date d&#39;expiration est proche, vous pouvez renouveler la clé Extraction en sélectionnant le jeu de migration et en cliquant sur Propriétés. Cliquez sur **Renouveler**. Vous accédez alors à Cloud Acceleration Manager où vous pouvez cliquer sur **Copier la clé d’extraction**. Chaque fois que vous cliquez sur **Copier la clé d’extraction**, une nouvelle clé d’extraction est générée et valide pendant 14 jours à compter de la création.
    >![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
-1. Cela ouvre la boîte de dialogue Extraction . Cliquez sur **Extract** pour démarrer la phase d&#39;extraction.
+1. Cela ouvre la boîte de dialogue Extraction . Cliquez sur **Extract** pour lancer la phase d’extraction.
 
    ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
-   >Vous pouvez éventuellement remplacer le conteneur intermédiaire lors de la phase d’extraction. If **Remplacement du conteneur d’évaluation** est désactivé, il peut accélérer les extractions pour les migrations suivantes où les chemins d’accès au contenu ou les paramètres des versions d’inclusion n’ont pas changé. Cependant, si les chemins d’accès au contenu ou les paramètres des versions ont changé, alors l’option **Remplacer le conteneur d’évaluation** doit être activée.
+   >Vous pouvez éventuellement remplacer le conteneur intermédiaire lors de la phase d’extraction. Si **Remplacer le conteneur d’évaluation** est désactivé, il peut accélérer les extractions pour les migrations suivantes où les chemins de contenu ou les paramètres des versions d’inclusion n’ont pas été modifiés. Cependant, si les chemins d’accès au contenu ou les paramètres des versions ont changé, alors l’option **Remplacer le conteneur d’évaluation** doit être activée.
 
 1. Le champ **Extraction** affiche désormais le statut **RUNNING** pour indiquer que l’extraction est en cours d’exécution.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
-   Cliquez sur **Afficher la progression** pour obtenir une vue granulaire de l’extraction en cours.
+   Vous pouvez cliquer sur **Afficher la progression** pour obtenir une vue granulaire de l’extraction en cours.
 
    ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   Vous pouvez également surveiller la progression de la phase d’extraction à partir de Cloud Acceleration Manager en consultant la page Transfert de contenu, puis en cliquant sur **..** > **Afficher les détails**.
+   Vous pouvez également surveiller la progression de la phase d’extraction à partir de Cloud Acceleration Manager en consultant la page de transfert de contenu, puis en la consultant plus en détail en cliquant sur **...** > **Afficher les détails**.
 
    ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Une fois l’extraction terminée, passez en revue les autres colonnes comme **Source** et **Chemins** pour plus d’informations sur le jeu de migration que vous avez renseigné. Cliquer **..** > **Afficher les détails** pour afficher les détails, y compris la durée de chaque étape de l’extraction. Affichez cette boîte de dialogue pendant l’extraction afin de voir comment les étapes progressent.
+1. Une fois l’extraction terminée, passez en revue les autres colonnes comme **Source** et **Chemins** pour plus d’informations sur le jeu de migration que vous avez renseigné. Cliquez sur **...** > **Afficher les détails** pour afficher les détails, y compris la durée de chaque étape de l’extraction. Affichez cette boîte de dialogue pendant l’extraction afin de voir comment les étapes progressent.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 

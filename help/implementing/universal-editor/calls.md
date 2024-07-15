@@ -20,27 +20,27 @@ Découvrez les différents types d’appels effectués sur votre application par
 
 L’éditeur universel communique avec votre application instrumentée par le biais d’une série d’appels définis. Cela est transparent pour et n’a aucun effet sur l’expérience utilisateur finale.
 
-Toutefois, pour le développeur, la compréhension de ces appels et de ce qu’ils font peut s’avérer utile lors du débogage de votre application lors de l’utilisation d’Universal Editor. Si vous avez instrumenté votre application et qu’elle ne se comporte pas comme prévu, il peut s’avérer utile d’ouvrir la **Réseau** des outils de développement de votre navigateur et examinez les appels lorsque vous modifiez du contenu dans votre application.
+Toutefois, pour le développeur, la compréhension de ces appels et de ce qu’ils font peut s’avérer utile lors du débogage de votre application lors de l’utilisation d’Universal Editor. Si vous avez instrumenté votre application et qu’elle ne se comporte pas comme prévu, il peut s’avérer utile d’ouvrir l’onglet **Réseau** des outils de développement dans votre navigateur et d’inspecter les appels lorsque vous modifiez du contenu dans votre application.
 
-![Exemple d’appel de détails sur l’onglet Réseau des outils de développement du navigateur](assets/calls-network-tab.png)
+![Exemple d&#39;un appel de détails sur l&#39;onglet Réseau des outils de développement du navigateur](assets/calls-network-tab.png)
 
-* La variable **Payload** de l’appel contient des détails sur les éléments mis à jour par l’éditeur, y compris l’identification des éléments à mettre à jour et la manière de les mettre à jour.
-* La variable **Réponse** inclut des détails sur ce qui a été mis à jour exactement par le service d’éditeur. Cela facilite l’actualisation du contenu dans l’éditeur. Dans certains cas, comme une `move` , la page entière doit être actualisée.
+* La **charge utile** de l’appel contient des détails sur ce qui est mis à jour par l’éditeur, y compris l’identification des éléments à mettre à jour et la manière de les mettre à jour.
+* La **réponse** comprend des détails sur ce qui a été exactement mis à jour par le service d’éditeur. Cela facilite l’actualisation du contenu dans l’éditeur. Dans certains cas, comme un appel `move`, la page entière doit être actualisée.
 
-Une fois qu’un appel est terminé avec succès, les événements sont déclenchés et incluent la charge utile de la requête et de la réponse, qui peut être personnalisée pour votre propre application. Consultez le document [Événements d’éditeur universels](/help/implementing/universal-editor/events.md) pour plus d’informations.
+Une fois qu’un appel est terminé avec succès, les événements sont déclenchés et incluent la charge utile de la requête et de la réponse, qui peut être personnalisée pour votre propre application. Pour plus d’informations, consultez le document [Événements d’éditeur universel](/help/implementing/universal-editor/events.md) .
 
 Vous trouverez ci-dessous une liste des types d’appels effectués par l’éditeur universel vers votre application, ainsi que des exemples de payloads et de réponses.
 
 ## Mettre à jour {#update}
 
-Un `update` Cet appel se produit lorsque vous modifiez du contenu dans votre application à l’aide d’Universal Editor. La variable `update` conserve les modifications.
+Un appel `update` se produit lorsque vous modifiez du contenu dans votre application à l’aide d’Universal Editor. `update` conserve les modifications.
 
 Sa charge utile inclut des détails sur les éléments à écrire dans le JCR.
 
-* `resource`: chemin JCR à mettre à jour
-* `prop`: propriété JCR mise à jour
-* `type`: type de valeur JCR de la propriété mise à jour.
-* `value`: données mises à jour
+* `resource` : chemin JCR à mettre à jour
+* `prop` : propriété JCR mise à jour
+* `type` : type de valeur JCR de la propriété mise à jour
+* `value` : données mises à jour
 
 >[!BEGINTABS]
 
@@ -82,12 +82,12 @@ Sa charge utile inclut des détails sur les éléments à écrire dans le JCR.
 
 ## Détails {#details}
 
-A `details` survient lors du chargement de votre application dans l’éditeur universel pour récupérer le contenu de l’application.
+Un appel `details` se produit lors du chargement de votre application dans l’éditeur universel pour récupérer le contenu de l’application.
 
 Sa charge utile inclut les données à générer ainsi que des détails sur ce que représentent les données (le schéma) afin qu’elles puissent être rendues dans l’éditeur universel.
 
-* Pour un composant, l’éditeur universel récupère uniquement une `data` , puisque le schéma des données est défini dans l’application.
-* Pour les fragments de contenu, l’éditeur universel récupère également une `schema` car le modèle de fragment de contenu est défini dans le JCR.
+* Pour un composant, l’éditeur universel récupère uniquement un objet `data`, puisque le schéma des données est défini dans l’application.
+* Pour les fragments de contenu, l’éditeur universel récupère également un objet `schema` puisque le modèle de fragment de contenu est défini dans le JCR.
 
 >[!BEGINTABS]
 
@@ -146,11 +146,11 @@ Sa charge utile inclut les données à générer ainsi que des détails sur ce q
 
 ## Ajouter {#add}
 
-Un `add` Cet appel se produit lorsque vous placez un nouveau composant dans votre application à l’aide d’Universal Editor.
+Un appel `add` se produit lorsque vous placez un nouveau composant dans votre application à l’aide de l’éditeur universel.
 
-Sa payload comprend une `path` contenant l’emplacement d’ajout du contenu.
+Sa payload comprend un objet `path` contenant l’emplacement où le contenu doit être ajouté.
 
-Elle comprend également une `content` avec des objets supplémentaires pour les détails spécifiques au point de fin du contenu à stocker. [pour chaque module externe.](/help/implementing/universal-editor/architecture.md) Par exemple, si votre application est basée sur le contenu d’AEM et de Magento, la payload contiendra un objet de données pour chaque système.
+Il comprend également un objet `content` avec des objets supplémentaires pour les détails spécifiques au point d’entrée du contenu à stocker [ pour chaque module externe.](/help/implementing/universal-editor/architecture.md) Par exemple, si votre application est basée sur le contenu d’AEM et de Magento, la payload contiendra un objet de données pour chaque système.
 
 >[!BEGINTABS]
 
@@ -204,9 +204,9 @@ Elle comprend également une `content` avec des objets supplémentaires pour les
 
 ## Déplacer {#move}
 
-A `move` Cet appel se produit lorsque vous déplacez un composant dans votre application à l’aide d’Universal Editor.
+Un appel `move` se produit lorsque vous déplacez un composant dans votre application à l’aide de l’éditeur universel.
 
-Sa payload comprend une `from` définissant l’emplacement du composant et un `to` définissant l’emplacement de déplacement.
+Sa charge utile comprend un objet `from` définissant l’emplacement du composant et un objet `to` définissant son emplacement de déplacement.
 
 >[!BEGINTABS]
 
@@ -260,7 +260,7 @@ Sa payload comprend une `from` définissant l’emplacement du composant et un `
 
 ## Supprimez {#remove}
 
-A `remove` Cet appel se produit lorsque vous supprimez un composant dans votre application à l’aide d’Universal Editor.
+Un appel `remove` se produit lorsque vous supprimez un composant dans votre application à l’aide de l’éditeur universel.
 
 Sa charge utile inclut le chemin d’accès de l’objet qui est supprimé.
 
@@ -310,7 +310,7 @@ Sa charge utile inclut le chemin d’accès de l’objet qui est supprimé.
 
 ## Publier {#publish}
 
-A `publish` survient lorsque vous cliquez sur le bouton **Publier** dans l’éditeur universel pour publier le contenu que vous avez modifié.
+Un appel `publish` se produit lorsque vous cliquez sur le bouton **Publish** dans l’éditeur universel pour publier le contenu que vous avez modifié.
 
 L’éditeur universel effectue une itération sur le contenu et génère une liste de références qui doit également être publiée.
 

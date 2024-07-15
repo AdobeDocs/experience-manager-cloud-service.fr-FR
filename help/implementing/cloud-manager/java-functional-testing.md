@@ -118,8 +118,8 @@ Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ]
 
 * aem-cloud-testing-clients:
 
-Les modifications à venir de l’infrastructure en conteneur utilisée pour exécuter des tests fonctionnels nécessiteront la bibliothèque . [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) utilisé dans votre test fonctionnel personnalisé pour le mettre à jour vers au moins la version **1.2.1**
-Assurez-vous que votre dépendance dans `it.tests/pom.xml` a été mis à jour.
+Les modifications à venir dans l’infrastructure en conteneur utilisée pour exécuter des tests fonctionnels nécessiteront la mise à jour de la bibliothèque [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) utilisée dans votre test fonctionnel personnalisé vers au moins la version **1.2.1**
+Assurez-vous que votre dépendance dans `it.tests/pom.xml` a été mise à jour.
 
 ```
 <dependency>

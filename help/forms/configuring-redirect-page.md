@@ -38,4 +38,4 @@ Les auteurs et autrices de formulaires peuvent utiliser les paramètres suivants
 
 >[!MORELIKETHIS]
 >
->* [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
+>* [Configuration d’une page de redirection ou d’un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)

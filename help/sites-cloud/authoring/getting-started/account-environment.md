@@ -24,7 +24,7 @@ La boîte de dialogue des paramètres **Utilisateur** vous donne accès aux opti
 * Se faire passer pour
    * La fonction Se faire passer pour permet à un utilisateur de travailler au nom d’un autre. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Profil
-   * Il offre un lien pratique vers vos paramètres utilisateur. <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * Il offre un lien pratique vers vos paramètres utilisateur <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [Mes préférences](#my-preferences)
    * Spécifiez les différents paramètres uniques à votre utilisateur.
 
@@ -32,7 +32,7 @@ La boîte de dialogue des paramètres **Utilisateur** vous donne accès aux opti
 
 ### Mes préférences {#my-preferences}
 
-La variable **Mes préférences** La boîte de dialogue est accessible à l’aide de la fonction [Utilisateur](#user-settings) dans l’en-tête.
+La boîte de dialogue **Mes préférences** est accessible par le biais de l’option [Utilisateur](#user-settings) de l’en-tête.
 
 Chaque utilisateur peut définir ses propriétés préférées.
 

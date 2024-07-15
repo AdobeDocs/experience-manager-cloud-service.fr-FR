@@ -20,8 +20,8 @@ Découvrez les différents points d’extension et autres fonctionnalités qui v
 
 L’éditeur universel permet deux types d’adaptation aux besoins de votre projet.
 
-* [Personnalisation de l’éditeur universel](#customizing) - La fonctionnalité standard d’Universal Editor peut être adaptée via plusieurs configurations de personnalisation.
-* [Extension de l’interface utilisateur de l’éditeur universel](#extending) - L’interface utilisateur de l’éditeur universel peut également être étendue à l’aide du générateur d’applications pour répondre aux besoins de vos projets.
+* [Personnalisation de l’éditeur universel](#customizing) - Les fonctionnalités standard de l’éditeur universel peuvent être adaptées via plusieurs configurations de personnalisation.
+* [Extension de l’interface utilisateur de l’éditeur universel](#extending) - L’interface utilisateur de l’éditeur universel peut également être étendue à l’aide d’App Builder pour répondre aux besoins de vos projets.
 
 Les deux types sont présentés dans les sections suivantes.
 
@@ -33,7 +33,7 @@ Universal Editor propose plusieurs options intégrées pour personnaliser ses fo
 
 Certains workflows de création nécessitent que le contenu soit examiné avant d’être publié. Dans ce cas, l’option de publication ne doit être disponible pour aucun auteur.
 
-La variable **Publier** peut donc être entièrement supprimé dans une application en ajoutant les métadonnées suivantes.
+Le bouton **Publish** peut donc être entièrement supprimé dans une application en ajoutant les métadonnées suivantes.
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
@@ -58,13 +58,13 @@ Une définition de filtre peut se présenter comme suit, ce qui limite un conten
 ]
 ```
 
-Vous pouvez ensuite référencer la définition de filtre à partir de votre composant de conteneur en ajoutant la propriété . `data-aue-filter`, en transmettant l’identifiant du filtre que vous avez défini précédemment.
+Vous pouvez ensuite référencer la définition de filtre à partir de votre composant de conteneur en ajoutant la propriété `data-aue-filter`, en transmettant l’identifiant du filtre que vous avez défini précédemment.
 
 ```html
 data-aue-filter="container-filter"
 ```
 
-La définition de la variable `components` dans une définition de filtre à `null` autorise tous les composants, comme s’il n’existait aucun filtre.
+La définition de l’attribut `components` dans une définition de filtre sur `null` autorise tous les composants, comme s’il n’y avait aucun filtre.
 
 ```json
 [
@@ -77,9 +77,9 @@ La définition de la variable `components` dans une définition de filtre à `nu
 
 ### Afficher et masquer les composants de manière conditionnelle dans le rail des propriétés {#conditionally-hide}
 
-Bien qu’un ou plusieurs composants puissent généralement être disponibles pour les auteurs, il peut arriver qu’ils n’aient pas de sens dans certains cas. Dans ce cas, vous pouvez masquer des composants dans le rail de propriétés en ajoutant une `condition` à l’attribut [des champs du modèle de composant.](/help/implementing/universal-editor/field-types.md#fields)
+Bien qu’un ou plusieurs composants puissent généralement être disponibles pour les auteurs, il peut arriver qu’ils n’aient pas de sens dans certains cas. Dans ce cas, vous pouvez masquer des composants dans le rail de propriétés en ajoutant un attribut `condition` aux [ champs du modèle de composant.](/help/implementing/universal-editor/field-types.md#fields)
 
-Les conditions peuvent être définies à l’aide de [Schéma JsonLogic.](https://jsonlogic.com/) Si la condition est vraie, le champ s’affiche. Si la condition est fausse, le champ est masqué.
+Les conditions peuvent être définies à l’aide du schéma [JsonLogic.](https://jsonlogic.com/) Si la condition est vraie, le champ s’affiche. Si la condition est fausse, le champ est masqué.
 
 >[!BEGINTABS]
 
@@ -118,7 +118,7 @@ Les conditions peuvent être définies à l’aide de [Schéma JsonLogic.](https
 
 ## Extension de l’interface utilisateur de l’éditeur universel {#extending}
 
-En tant que service Adobe Experience Cloud, l’interface utilisateur de l’éditeur universel peut être étendue à l’aide du générateur d’applications et du Experience Manager.
+En tant que service Adobe Experience Cloud, l’interface utilisateur d’Universal Editor peut être étendue à l’aide d’App Builder et d’Experience Manager.
 
 Les extensions d’IU sont des applications JavaScript créées avec Adobe App Builder qui peuvent être incorporées dans des applications d’IU qui s’exécutent sous le shell unifié Adobe Experience Cloud, comme Universal Editor. Vous pouvez ajouter vos propres boutons et actions au menu d’en-tête et au rail de propriétés, ainsi que créer vos propres événements pour l’éditeur universel.
 
@@ -126,10 +126,10 @@ Si vous souhaitez explorer ces possibilités, consultez les ressources suivantes
 
 1. [Extensibilité de l’interface utilisateur](https://developer.adobe.com/uix/docs/) - Il s’agit de la documentation destinée aux développeurs concernant l’extension de l’interface utilisateur.
 1. [Guides d’extensibilité de l’interface utilisateur](https://developer.adobe.com/uix/docs/guides/) - Instructions détaillées sur la manière de développer votre propre extension
-1. [Points d’extension Universal Editor](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - Documentation du point d’extension spécifique à l’éditeur universel
+1. [Points d’extension Universal Editor](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - Documentation de point d’extension universelle spécifique à l’éditeur
 
 >[!TIP]
 >
->Si vous préférez apprendre par exemple, reportez-vous à la section [Tutoriel sur l’extensibilité de l’interface utilisateur AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Bien qu’il se concentre sur l’extension de la console Fragment de contenu, les concepts de mise en oeuvre d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
+>Si vous préférez apprendre par exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur [AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Bien qu’il se concentre sur l’extension de la console Fragment de contenu, les concepts de mise en oeuvre d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
 
-[Utilisation des Extensions Manager dans AEM Sites,](https://developer.adobe.com/uix/docs/extension-manager/) vous pouvez activer ou désactiver vos extensions au niveau de chaque instance, accéder aux extensions propriétaires d’Adobe, y compris celles pour l’éditeur universel, et bien plus encore.
+[À l’aide d’Extension Manager dans AEM Sites, ](https://developer.adobe.com/uix/docs/extension-manager/) vous pouvez activer ou désactiver vos extensions au niveau de chaque instance, accéder aux extensions propriétaires de l’Adobe, y compris celles pour l’éditeur universel, et bien plus encore.

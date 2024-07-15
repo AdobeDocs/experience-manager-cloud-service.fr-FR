@@ -25,7 +25,7 @@ Découvrez comment gérer et modifier les ressources vidéo dans [!DNL Adobe Exp
 
 ## Chargement et prévisualisation des ressources vidéo {#upload-and-preview-video-assets}
 
-Vous pouvez charger et prévisualiser des ressources vidéo au format pris en charge dans [!DNL Experience Manager Assets].
+Vous pouvez télécharger et prévisualiser des ressources vidéo au format pris en charge vers [!DNL Experience Manager Assets].
 <!-- It generates previews for video assets with the extension MP4. -->
 
 ### Chargement de ressources vidéo
@@ -33,21 +33,21 @@ Vous pouvez charger et prévisualiser des ressources vidéo au format pris en ch
 Pour charger une ressource vidéo, procédez comme suit :
 
 1. Dans le dossier Ressources numériques ou les sous-dossiers, accédez à l’emplacement où vous devez ajouter la ressource.
-1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis choisissez **[!UICONTROL Fichiers]**. <br>Vous pouvez également faire glisser un fichier sur l’interface utilisateur.
-En savoir plus sur [chargement de ressources](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils et sélectionnez **[!UICONTROL Fichiers]**. <br>Vous pouvez également faire glisser un fichier sur l’interface utilisateur.
+En savoir plus sur le [téléchargement de ressources](manage-digital-assets.md#uploading-assets) dans [!DNL Experience Manager Assets].
 
 <!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
 
 ### Prévisualisation de ressources vidéo
 
-Vous pouvez prévisualiser des vidéos dans les rendus pris en charge dans la [!DNL Assets] de l’interface utilisateur. Pour prévisualiser une ressource vidéo, procédez comme suit :
+Vous pouvez prévisualiser des vidéos dans des rendus pris en charge dans l’interface utilisateur de [!DNL Assets]. Pour prévisualiser une ressource vidéo, procédez comme suit :
 
-1. Chargement d’une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [formats vidéo pris en charge](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
-1. Cliquez sur la ressource, puis sélectionnez ![option détails](assets/do-not-localize/details_icon.svg) **[!UICONTROL Détails]**  dans la barre d’outils supérieure. La ressource vidéo s’ouvre dans la visionneuse de vidéos.
-1. Cliquez sur le bouton ![option de lecture](assets/do-not-localize/play.png) sur la miniature de la vidéo. <br>Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
+1. Transférez une ressource vidéo d’un format pris en charge vers [!DNL Experience Manager Assets]. En savoir plus sur les [formats vidéo pris en charge](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
+1. Cliquez sur la ressource, puis sélectionnez l’option ![details](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]** dans la barre d’outils supérieure. La ressource vidéo s’ouvre dans la visionneuse de vidéos.
+1. Cliquez sur l’icône ![option de lecture](assets/do-not-localize/play.png) de la miniature vidéo. <br>Vous pouvez lire, suspendre, contrôler le volume et zoomer sur la vidéo en plein écran.
 
-Pour les ressources vidéo existantes dans [!DNL Experience Manager Assets], vous devez **[!UICONTROL Retraiter]** les ressources dans [!DNL Experience Manager] pour activer la fonction d’aperçu vidéo. Découvrez comment [retraitement des ressources numériques](reprocessing.md) in [!DNL Experience Manager].
+Pour les ressources vidéo existantes dans [!DNL Experience Manager Assets], vous devez **[!UICONTROL Retraiter]** les ressources dans [!DNL Experience Manager] pour activer la fonction d’aperçu vidéo. Découvrez comment [retraiter des ressources numériques](reprocessing.md) dans [!DNL Experience Manager].
 
 ### Limites de l’aperçu vidéo
 

@@ -31,7 +31,7 @@ Les API suivantes sont essentielles pour AEM.
 
 >[!NOTE]
 >
->Pour obtenir les informations les plus récentes sur les API de Experience Manager, consultez également la page [API ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Pour obtenir les dernières informations sur les API Experience Manager, consultez également la page [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## Autres frameworks {#additional-apis}
 
@@ -74,7 +74,7 @@ AEM propose des composants personnalisables et des options de diffusion de conte
 | [API HTTP de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md) | Accès au contenu de fragment de contenu directement via l’API HTTP via les opérations CRUD |
 | [API GraphQL de fragments de contenu](/help/headless/graphql-api/content-fragments.md) | Activer la diffusion efficace de fragments de contenu vers les clients JavaScript dans les implémentations CMS découplées |
 | [API HTTP ressources de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr) | Format exact des requêtes de ressources HTTP prises en charge |
-| [API ouvertes du modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) | API ouvertes du modèle de fragment de contenu et de fragment de contenu |
+| [ OpenAPI de modèle de fragment de contenu et de fragment de contenu ](/help/headless/content-fragment-openapis.md) | API ouvertes du modèle de fragment de contenu et de fragment de contenu |
 
 ## API spécifiques à SPA {#spa-apis}
 

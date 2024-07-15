@@ -23,15 +23,15 @@ Une personne dotée du rôle **Propriétaire de l’entreprise** ou **Responsabl
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. Dans la **Présentation** , accédez à la **LISTES AUTORISÉES IP** à l’aide de l’onglet de navigation latérale.
+1. Sur la page **Overview** , accédez à la page **IP Listes autorisées** à l’aide de l’onglet de navigation latéral.
 
    ![Option de liste d’adresses IP autorisées dans le panneau latéral](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-1. Cliquez sur **Ajout d’une Liste autorisée IP**.
+1. Cliquez sur **Ajouter une Liste autorisée IP**.
 
    ![Boîte de dialogue Ajouter une liste d’adresses IP autorisées](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. Dans le **Ajout d’une Liste autorisée IP** , saisissez le nom à utiliser pour référencer la liste autorisée dans la **Nom de la Liste autorisée IP** champ .
+1. Dans la boîte de dialogue **Ajouter une Liste autorisée IP** , saisissez un nom à utiliser pour référencer la liste autorisée dans le champ **Nom de la Liste autorisée IP** .
 
    * Ce nom n’est donné qu’à titre d’information et doit être descriptif pour vous aider à identifier la liste.
 

@@ -42,7 +42,7 @@ L’interface utilisateur CRXDE Lite comporte de nombreuses parties et de nombr
 
 ### Barre de commutation supérieure {#top-switcher-bar}
 
-La barre de sélecteur supérieure vous permet de basculer rapidement entre CRXDE Lite et [Gestionnaire de modules.](package-manager.md)
+La barre de sélecteur supérieure vous permet de basculer rapidement entre le CRXDE Lite et le [gestionnaire de modules.](package-manager.md)
 
 ### Widget de chemin de nœud {#node-path-widget}
 
@@ -73,7 +73,7 @@ Une fois le fichier modifié dans le **volet de modification**, les outils suiva
 * **Afficher dans l’arborescence** – affiche le fichier dans l’arborescence du référentiel.
 * **Rechercher/Remplacer** – effectue une recherche ou un remplacement.
 
-Double-cliquez sur la ligne d’état du **Volet Modifier** ouvre la fonction **Aller à la ligne** pour saisir un numéro de ligne spécifique.
+Double-cliquez sur la ligne d’état du **volet d’édition** pour ouvrir la boîte de dialogue **Aller à la ligne** afin de pouvoir saisir un numéro de ligne spécifique.
 
 ### Onglet Propriétés {#properties-tab}
 
@@ -146,7 +146,7 @@ Le **bouton Renommer** renomme le nœud sélectionné.
 
 ### Mixins {#mixins-button}
 
-La variable **Bouton Mixins** vous permet d’ajouter des types de mixin au type de noeud. Les types de mixin sont principalement utilisés pour ajouter des fonctions avancées.
+Le **bouton Mixins** vous permet d’ajouter des types de mixin au type de noeud. Les types de mixin sont principalement utilisés pour ajouter des fonctions avancées.
 
 ### Outils {#tools-button}
 
@@ -165,7 +165,7 @@ Le **widget de connexion** affiche l’utilisateur actuellement connecté.
 
 Cliquez dessus pour vous connecter ou vous reconnecter en tant qu’un autre utilisateur. `@crx.default` indique que vous vous trouvez dans l’espace de travail par défaut (et unique) du référentiel.
 
-La variable **Préférences** peut être utilisée pour définir la langue de l’interface utilisateur et pour afficher et personnaliser les touches d’accès rapide pour diverses actions telles que l’enregistrement, la recherche, la création de notes, etc.
+L’option **Préférences** peut être utilisée pour définir la langue de votre interface utilisateur et pour afficher et personnaliser les touches de raccourci pour diverses actions telles que l’enregistrement, la recherche, la création de notes, etc.
 
 ## Création d’un dossier {#creating-a-folder}
 
@@ -244,7 +244,7 @@ Pour importer une définition de type de nœud :
 CRXDE Lite permet d’afficher le fichier `error.log` qui se trouve sur le système de fichiers sous `<aem-install-dir>/crx-quickstart/logs` et de filtrer selon le niveau de journalisation approprié. Procédez comme suit :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. Dans le menu déroulant situé à droite de la [**Onglet Console**](#console-tab) au bas de la fenêtre, sélectionnez **Journaux du serveur**.
+1. Dans le menu déroulant situé à droite de l’[**onglet Console**](#console-tab) au bas de la fenêtre, sélectionnez **Journaux du serveur**.
 1. Cliquez sur l’icône **Arrêter** pour afficher les messages.
 
 Vous pouvez effectuer les actions suivantes :

@@ -51,7 +51,7 @@ Pour plus d’informations, notamment sur l’ajout de configurations de mise en
 
 ## Journalisation {#logging}
 
-Si d’autres régions de publication sont activées, des journaux distincts pour chaque région sont disponibles via Cloud Manager. Pour plus d’informations, voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) et [Journaux des régions de publication supplémentaires](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+Si d’autres régions de publication sont activées, des journaux distincts pour chaque région sont disponibles via Cloud Manager. Pour plus d’informations, voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) et [Journaux des régions Publish supplémentaires](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Limites {#limitations}
 

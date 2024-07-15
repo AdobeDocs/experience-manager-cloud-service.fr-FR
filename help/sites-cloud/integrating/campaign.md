@@ -25,7 +25,7 @@ Découvrez la prise en charge d’AEM as a Cloud Service pour les intégrations 
 
 ## Intégration à Adobe Campaign v7/v8 {#acc}
 
-La prise en charge de l’intégration avec AEM as a Cloud Service dépend de la version de Campaign que vous avez implémentée.
+La prise en charge de l’intégration à AEM as a Cloud Service dépend de la version de Campaign que vous avez implémentée.
 
 | Version de Campaign | Intégration à AEMaaCS |
 |---|---|

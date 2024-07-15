@@ -134,7 +134,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
    Les composants Screens nécessitent deux rendus différents selon le [mode de création](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) utilisé :
 
    1. **Production**: Mode Aperçu ou Publication (wcmmode=disabled)
-   1. **Modifier**: utilisé pour tous les autres modes de création, c’est-à-dire l’édition, la conception, la génération de modèles automatique, le développeur...
+   1. **Modifier** : utilisé pour tous les autres modes de création, c’est-à-dire modifier, concevoir, échafauder, développeur...
 
    `helloworld.html` fonctionne comme un commutateur, en vérifiant quel mode de création est actif et en redirigeant vers un autre script HTL. Une convention commune utilisée par les composants Screens consiste à utiliser un script `edit.html` pour le mode d’édition et un script `production.html` pour le mode de production.
 
@@ -331,7 +331,7 @@ Les composants d’AEM Screens s’affichent différemment en mode d’édition
 
 1. Copiez et collez le dossier de bibliothèque cliente `shared` pour créer une bibliothèque cliente nommée `production`.
 
-   ![Copiez la bibliothèque cliente partagée pour créer une bibliothèque cliente de production.](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![Copiez la bibliothèque cliente partagée pour créer une bibliothèque cliente de production](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Copiez la bibliothèque cliente partagée pour créer une bibliothèque cliente de production.
 

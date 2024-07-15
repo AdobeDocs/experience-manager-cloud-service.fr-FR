@@ -1,5 +1,5 @@
 ---
-title: Bonnes pratiques de recherche pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Rechercher les bonnes pratiques pour  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Bonnes pratiques pour rechercher, rechercher et récupérer les métadonnées des ressources dans votre application.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
@@ -14,23 +14,23 @@ ht-degree: 8%
 
 # Bonnes pratiques de recherche AEM Assets
 
-[!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Parfois, trouver la bonne ressource peut être ardu et chronophage. Par conséquent, la fonctionnalité de recherche de ressources dans [!DNL Adobe Experience Manager Assets] est au coeur de l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs professionnels et les marketeurs ou pour une administration par les administrateurs DAM.
+[!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Parfois, trouver la bonne ressource peut être ardu et chronophage. Par conséquent, la fonctionnalité de recherche de ressources dans [!DNL Adobe Experience Manager Assets] est essentielle à l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs professionnels et les marketeurs ou pour une administration par les administrateurs DAM.
 
 Ce document d’aide contient AEM bonnes pratiques de recherche, à l’aide de divers scénarios, pour aider AEM utilisateurs à effectuer une recherche de base à avancée.
 
-## Accès à la recherche de Experience Manager {#access-experience-manager-search}
+## Accès à la recherche d’Experience Manager {#access-experience-manager-search}
 
-Vous trouverez ci-dessous les étapes de base à suivre en Experience Manager avant de commencer votre recherche :
+Vous trouverez ci-dessous les étapes de base à suivre dans Experience Manager avant de lancer votre recherche :
 
-* Dans le **Vue Admin**, accédez à Ressources > Fichiers en Experience Manager et cliquez sur l’icône de recherche dans la barre supérieure. Vous pouvez également utiliser une barre oblique (/) pour ouvrir le champ Omni Search.
-Dans le **Affichage des ressources**, la barre de recherche est visible en haut et est accessible directement.
-* `Location:Assets` et `Path:/content/dam` sont présélectionnés afin de limiter la portée de la recherche à votre référentiel Experience Manager Assets. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Omni Search pour limiter la portée de la recherche au dossier actif.
+* Dans la **vue Admin**, accédez à Assets > Fichiers dans Experience Manager et cliquez sur l’icône de recherche dans la barre supérieure. Vous pouvez également utiliser une barre oblique (/) pour ouvrir le champ Omni Search.
+Dans la **vue Assets**, la barre de recherche est visible en haut et est accessible directement.
+* `Location:Assets` et `Path:/content/dam` sont pré-sélectionnés pour limiter la portée de la recherche à votre référentiel Experience Manager Assets. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Omni Search pour limiter la portée de la recherche au dossier actif.
 
 ## Recherche de base {#basic-search}
 
-**Scénario 1 : effectuer une recherche de base à l’aide d’une `classic car` comme mot-clé de recherche.**
+**Scénario 1 : effectuer une recherche de base à l’aide d’un `classic car` comme mot-clé de recherche.**
 
-La recherche de mots-clés n’est pas sensible à la casse. Il s’agit d’une recherche de texte intégral dans les champs de métadonnées inclus dans la ressource. *recherche de texte intégral* index (configurable dans la définition d’index). Si plusieurs mots-clés sont utilisés, **AND est l’opérateur par défaut entre les mots-clés. Par conséquent, il considère la recherche de &quot;voiture classique&quot; comme &quot;voiture ET classique&quot;.**.
+La recherche de mots-clés n’est pas sensible à la casse. Il s’agit d’une recherche de texte intégral dans les champs de métadonnées inclus dans l’index *recherche de texte intégral* de la ressource (configurable dans la définition d’index). Si plusieurs mots-clés sont utilisés, **AND est l’opérateur par défaut entre les mots-clés. Par conséquent, il considère qu’une recherche de &quot;voiture classique&quot; est &quot;voiture ET classique&quot;**.
 
 Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche dans les balises intelligentes. L’ordre approximatif d’affichage des résultats de recherche est le suivant :
 
@@ -38,32 +38,32 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 2. Correspondances de `Classic Car` dans les balises intelligentes.
 3. Correspondances de `Classic` ou de `Car` dans les balises intelligentes.
 
-Spécifier `classic car` comme mot-clé de recherche, puis cliquez sur Rechercher. Vous pouvez afficher les suggestions de recherche dans une liste déroulante lorsque vous saisissez le mot-clé. Les suggestions de recherche sont basées sur le contenu de l’index de recherche sur votre déploiement de Experience Manager. Si vous ne pouvez pas afficher les ressources appropriées dans le menu déroulant, appuyez sur la touche Entrée pour afficher la liste des résultats. Les résultats sont triés par pertinence, à partir des correspondances les plus proches.
+Spécifiez `classic car` comme mot-clé de recherche et cliquez sur Rechercher. Vous pouvez afficher les suggestions de recherche dans une liste déroulante lorsque vous saisissez le mot-clé. Les suggestions de recherche sont basées sur le contenu de l’index de recherche sur votre déploiement Experience Manager. Si vous ne pouvez pas afficher les ressources appropriées dans le menu déroulant, appuyez sur la touche Entrée pour afficher la liste des résultats. Les résultats sont triés par pertinence, à partir des correspondances les plus proches.
 
 <!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
-Vous pouvez rendre la recherche plus précise en ajoutant le mot-clé de recherche entre guillemets doubles (&quot;&quot;). Cette recherche inclut uniquement les ressources qui contiennent ensemble les termes spécifiés. Les critères de recherche se présentent comme suit : `"classic car"`. Par conséquent, les résultats de la recherche avec les deux termes `classic` et `car` s’affichent.
+Vous pouvez rendre la recherche plus précise en ajoutant le mot-clé de recherche entre guillemets doubles (&quot;&quot;). Cette recherche inclut uniquement Assets qui contient les termes spécifiés ensemble. Les critères de recherche ressemblent à - `"classic car"`. Par conséquent, les résultats de la recherche avec les termes `classic` et `car` s’affichent.
 
 <!--![Finding exact match](assets/simple-search-2.png)-->
 
-La recherche affiche des résultats similaires si vous travaillez dans le **[!UICONTROL Affichage des ressources]** ainsi que .
+La recherche affiche des résultats similaires si vous utilisez également la **[!UICONTROL vue Assets]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
 ## Fichiers et dossiers {#files-folders}
 
-**Scénario 2 : rechercher tous les fichiers à l’aide de la variable `classic car` dans le `automobile` dossier.**
+**Scénario 2 : recherchez tous les fichiers à l’aide du mot-clé `classic car` dans le dossier `automobile`.**
 
-Le filtre Fichiers et dossiers vous aide à affiner votre recherche. Utilisez les options Fichiers, Dossiers ou Fichiers et Dossiers disponibles dans la liste déroulante en fonction de vos besoins. L’option permettant de choisir parmi Fichiers, Dossiers ou Fichiers et Dossiers est accessible dans la variable **[!UICONTROL Vue Admin]** uniquement. Dans le **[!UICONTROL Affichage des ressources]**, accédez à [!UICONTROL Chemin] et parcourez le dossier dans lequel vous souhaitez effectuer une recherche.
+Le filtre Fichiers et dossiers vous aide à affiner votre recherche. Utilisez les options Fichiers, Dossiers ou Fichiers et Dossiers disponibles dans la liste déroulante en fonction de vos besoins. L’option de sélection parmi Fichiers, Dossiers ou Fichiers et Dossiers est accessible uniquement dans la **[!UICONTROL vue d’administration]**. Dans la **[!UICONTROL vue Assets]**, accédez à [!UICONTROL Chemin] et parcourez le dossier dans lequel vous souhaitez effectuer une recherche.
 
-* Utilisez la variable **[!UICONTROL Fichiers]** lorsque vous devez rechercher spécifiquement des fichiers à un chemin d’accès spécifique dans le référentiel. Vous n’avez pas besoin de rechercher des dossiers dans le chemin d’accès défini.
-* Utilisez la variable **[!UICONTROL Dossiers]** lorsque vous devez limiter votre recherche aux dossiers à un chemin d’accès spécifique.
-* Utilisez la variable **[!UICONTROL Fichiers et dossiers]** si vous devez rechercher toutes les ressources disponibles à l’emplacement spécifié dans le référentiel.
+* Utilisez l’option **[!UICONTROL Files]** lorsque vous devez rechercher spécifiquement des fichiers à un chemin spécifique dans le référentiel. Vous n’avez pas besoin de rechercher des dossiers dans le chemin d’accès défini.
+* Utilisez l’option **[!UICONTROL Dossiers]** lorsque vous devez limiter votre recherche aux dossiers à un chemin spécifique.
+* Utilisez l’option **[!UICONTROL Fichiers et dossiers]** si vous devez rechercher toutes les ressources disponibles à l’emplacement spécifié dans le référentiel.
 
 Pour réaliser ce scénario, procédez comme suit :
 
-1. Spécifier `classic car` comme mot-clé de recherche, puis cliquez sur Rechercher.
-2. Cliquez sur Filtres et définissez le chemin du dossier pour la variable `automobile` dossier. Par exemple : `/content/dam/multiple-assets/automobile`
+1. Spécifiez `classic car` comme mot-clé de recherche et cliquez sur Rechercher.
+2. Cliquez sur Filtres et définissez le chemin du dossier du dossier `automobile`. Par exemple, `/content/dam/multiple-assets/automobile`
 Sélectionnez le dossier à partir du chemin d’accès et accédez au dossier requis si vous souhaitez effectuer des recherches dans le dossier spécifique.
 3. Sélectionnez Fichiers dans la liste déroulante pour afficher tous les fichiers avec le mot-clé `classic car`.
 
@@ -73,61 +73,61 @@ Sélectionnez le dossier à partir du chemin d’accès et accédez au dossier r
 
 ## Opérateurs  {#operators}
 
-**Scénario 3 : Recherche `Classic Car` ou `Car` mots-clés utilisant différentes combinaisons d’opérateurs pour affiner votre recherche.**
+**Scénario 3 : recherchez des mots-clés `Classic Car` ou `Car` à l’aide de diverses combinaisons d’opérateurs pour affiner votre recherche.**
 
-Pour exécuter le scénario ci-dessus dans **[!UICONTROL Vue Admin]**, vous pouvez utiliser une combinaison de différents opérateurs pour améliorer votre expérience de recherche. Les opérateurs pris en charge sont les suivants :
+Pour exécuter le scénario ci-dessus dans la **[!UICONTROL vue d&#39;administration]**, vous pouvez utiliser une combinaison de divers opérateurs pour améliorer votre expérience de recherche. Les opérateurs pris en charge sont les suivants :
 
 ### Opérateur ET {#and-operator}
 
-L’opérateur AND est l’opérateur par défaut entre deux mots-clés dans la recherche Omni. Par exemple, lorsque vous saisissez `classic car` dans la barre de recherche, les résultats avec `classic` et `car` par défaut, les mots-clés apparaissent dans les résultats de recherche.
+L’opérateur AND est l’opérateur par défaut entre deux mots-clés dans la recherche Omni. Par exemple, lorsque vous tapez `classic car` dans la barre de recherche, les résultats avec les mots-clés `classic` et `car` apparaissent dans les résultats de la recherche, par défaut.
 
 ![Recherche à l’aide de l’opérateur ET](assets/simple-search-1.png)
 
 ### Opérateur OU {#or-operator}
 
-Lorsque vous souhaitez être spécifique aux résultats de la recherche et qu’une option doit apparaître dans les résultats de la recherche, vous pouvez utiliser l’opérateur OU. Par exemple, la variable `classic OR car` Le mot-clé fournit les résultats de recherche avec l’un des mots-clés de leurs métadonnées.
+Lorsque vous souhaitez être spécifique aux résultats de la recherche et qu’une option doit apparaître dans les résultats de la recherche, vous pouvez utiliser l’opérateur OU. Par exemple, le mot-clé `classic OR car` fournit les résultats de recherche avec l’un des mots-clés de leurs métadonnées.
 
 ![Recherche à l’aide de l’opérateur OU](assets/or-operator.png)
 
 ### opérateur NOT {#not-operator}
 
-Lorsque vous souhaitez récupérer des résultats, à l’exclusion de certains mots-clés, vous pouvez utiliser l’opérateur SAUF . L’opérateur SAUF utilise le trait d’union (-) pour diriger AEM recherche sur les éléments à exclure des résultats de la recherche. Par exemple, la variable `car - classic` requête de recherche qui spécifie les métadonnées qui contiennent `car` mais exclut `classic`.
+Lorsque vous souhaitez récupérer des résultats, à l’exclusion de certains mots-clés, vous pouvez utiliser l’opérateur SAUF . L’opérateur SAUF utilise le trait d’union (-) pour diriger AEM recherche sur les éléments à exclure des résultats de la recherche. Par exemple, la requête de recherche `car - classic` qui spécifie les métadonnées qui contiennent `car` mais exclut `classic`.
 
-![Recherche à l’aide de l’opérateur SAUF](assets/not-operator.png)
+![Recherche à l’aide de l’opérateur NOT](assets/not-operator.png)
 
-De même, vous pouvez rechercher toutes les voitures, mais pas les jeep. La requête ressemble à ceci : `car - jeep`. Elle affiche toutes les ressources avec des métadonnées. `car` mais exclut les ressources contenant des métadonnées `jeep`.
+De même, vous pouvez rechercher toutes les voitures, mais pas les jeep. La requête ressemble à : `car - jeep`. Il affiche toutes les ressources avec des métadonnées `car` mais exclut les ressources avec des métadonnées `jeep`.
 
-![Recherche à l’aide de l’opérateur SAUF](assets/images-jeep.png)
+![Recherche à l’aide de l’opérateur NOT](assets/images-jeep.png)
 
-**[!UICONTROL Affichage des ressources]** ne prend pas en charge l’utilisation des opérateurs.
+**[!UICONTROL La vue Assets]** ne prend pas en charge l’utilisation des opérateurs.
 
 ## Caractères génériques {#wildcards}
 
-Les caractères génériques sont utilisés pour remplacer un ou plusieurs caractères dans la recherche. Pour exécuter le scénario ci-dessus dans **[!UICONTROL Vue Admin]**, vous pouvez utiliser une combinaison de différents caractères génériques pour améliorer votre expérience de recherche. Deux caractères génériques sont utilisés pour effectuer la recherche - Point d’interrogation (?) et astérisque (*). Le symbole du point d’interrogation permet de rechercher un seul caractère, tandis que le symbole de l’astérisque permet de rechercher plusieurs caractères.
+Les caractères génériques sont utilisés pour remplacer un ou plusieurs caractères dans la recherche. Pour exécuter le scénario ci-dessus dans la **[!UICONTROL vue d’administration]**, vous pouvez utiliser une combinaison de différents caractères génériques pour améliorer votre expérience de recherche. Deux caractères génériques sont utilisés pour effectuer la recherche - Point d’interrogation (?) et astérisque (*). Le symbole du point d’interrogation permet de rechercher un seul caractère, tandis que le symbole de l’astérisque permet de rechercher plusieurs caractères.
 
 ### Point d’interrogation (?) {#question-mark}
 
 Le symbole du point d’interrogation peut être utilisé comme opérateur conditionnel pour faciliter votre recherche dans Experience Manager.
 
-* `car?` requête correspond au mot avec un caractère après la voiture. Par exemple, panier.
-* `?car` La requête correspond au mot avec un caractère avant la voiture. Par exemple, cicatrice.
-* `car????` query correspond au mot avec quatre caractères après la voiture. Par exemple, lessive à la voiture.
+* La requête `car?` correspond au mot avec un caractère après la voiture. Par exemple, panier.
+* La requête `?car` correspond au mot avec un caractère avant la voiture. Par exemple, cicatrice.
+* La requête `car????` correspond au mot avec quatre caractères après la voiture. Par exemple, lessive à la voiture.
 
 ### Astérisque (*) {#asterisk}
 
-L’astérisque est un opérateur de caractères génériques utilisé pour élargir votre recherche en tapant moins de caractères. Lorsque vous connaissez les caractères de départ de la ressource que vous recherchez, mais que vous ne connaissez pas le reste, vous pouvez utiliser l’opérateur astérisque dans votre recherche. Par exemple, la variable `*car` La requête renvoie toutes les ressources avec la voiture postfix disponible dans leurs métadonnées. Les résultats peuvent être des voitures classiques, des voitures de sport, des voitures classiques et sportives, etc. Vous trouverez ci-dessous quelques exemples d’utilisation de l’opérateur astérisque de différentes manières :
+L’astérisque est un opérateur de caractères génériques utilisé pour élargir votre recherche en tapant moins de caractères. Lorsque vous connaissez les caractères de départ de la ressource que vous recherchez, mais que vous ne connaissez pas le reste, vous pouvez utiliser l’opérateur astérisque dans votre recherche. Par exemple, la requête `*car` renvoie toutes les ressources avec la voiture de correctif disponible dans leurs métadonnées. Les résultats peuvent être des voitures classiques, des voitures de sport, des voitures classiques et sportives, etc. Vous trouverez ci-dessous quelques exemples d’utilisation de l’opérateur astérisque de différentes manières :
 
 * `*car*` renvoie toutes les combinaisons possibles.
-* `car*` renvoie les ressources avec carwash, carrier, Carriage, etc.
-* `*car` renvoie des ressources avec des voitures modernes, des voitures de sport, etc.
+* `car*` renvoie des ressources avec lessive, opérateur, transport, etc.
+* `*car` renvoie des ressources avec une voiture moderne, une voiture de sport, etc.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
-**[!UICONTROL Affichage des ressources]** ne prend pas en charge l’utilisation des caractères génériques.
+**[!UICONTROL La vue Assets]** ne prend pas en charge l’utilisation des caractères génériques.
 
 ## Filtres {#filters}
 
-Adobe Experience Manager fournit divers filtres de recherche que vous pouvez utiliser pour affiner et segmenter votre recherche à l’aide d’une requête étendue. Lorsque vous n’êtes pas certain du titre ou de la méta-description d’une ressource, vous pouvez utiliser divers filtres de recherche pour rendre votre recherche plus pertinente. Vous pouvez utiliser des filtres de recherche avec ou sans saisir de mot-clé. Pour ouvrir le panneau des filtres dans le **[!UICONTROL Vue Admin]**, cliquez sur le **Navigation globale** et sélectionnez **[!UICONTROL Filtres]**. En revanche, pour ouvrir le panneau des filtres dans **[!UICONTROL Affichage des ressources]**, cliquez sur [!UICONTROL Filtres] en regard de la barre de recherche.
+Adobe Experience Manager fournit divers filtres de recherche que vous pouvez utiliser pour affiner et segmenter votre recherche à l’aide d’une requête étendue. Lorsque vous n’êtes pas certain du titre ou de la méta-description d’une ressource, vous pouvez utiliser divers filtres de recherche pour rendre votre recherche plus pertinente. Vous pouvez utiliser des filtres de recherche avec ou sans saisir de mot-clé. Pour ouvrir le panneau des filtres dans la **[!UICONTROL vue d’administration]**, cliquez sur l’icône **de navigation globale** et sélectionnez **[!UICONTROL Filtres]**. En revanche, pour ouvrir le panneau des filtres dans la **[!UICONTROL vue Assets]**, cliquez sur [!UICONTROL Filtres] en regard de la barre de recherche.
 
 ![Panneau Filtres](assets/filters.png)
 
@@ -157,37 +157,37 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 ![Filter example 1](assets/filter-1.png)
 -->
 
-**Scénario 4 : recherche de documents de type PDF non publiés avec la variable `classic car` par mot-clé.**
+**Scénario 4 : recherche de documents de type de fichier de PDF non publiés contenant le mot-clé `classic car`.**
 
-Exécutez les étapes suivantes dans **[!UICONTROL Vue Admin]**:
+Exécutez les étapes suivantes dans **[!UICONTROL Admin view]** :
 
-1. Type `classic car` dans la barre de recherche.
-1. Accédez à Filtres. Sous [!UICONTROL Type de fichier], développer [!UICONTROL Documents], développer [!UICONTROL Traitement de texte].
-1. Sélectionner [!UICONTROL PDF].
-1. Accédez à [!UICONTROL État] > [!UICONTROL Publier] > [!UICONTROL Non publié].
+1. Saisissez `classic car` dans la barre de recherche.
+1. Accédez à Filtres. Sous [!UICONTROL Type de fichier], développez [!UICONTROL Documents], puis développez [!UICONTROL Traitement de texte].
+1. Sélectionnez [!UICONTROL PDF].
+1. Accédez à [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Unpublish].
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
-Exécutez les étapes suivantes dans **[!UICONTROL Affichage des ressources]**:
+Exécutez les étapes suivantes dans la **[!UICONTROL vue Assets]** :
 
-1. Type `classic car` dans la barre de recherche.
-1. Accédez à Filtres. Sous [!UICONTROL Type MIME], sélectionnez [!UICONTROL PDF].
-1. Accédez à [!UICONTROL État de la ressource], sélectionnez [!UICONTROL Tous] pour inclure toutes les ressources publiées et non publiées.
+1. Saisissez `classic car` dans la barre de recherche.
+1. Accédez à Filtres. Sous [!UICONTROL MIME Type], sélectionnez [!UICONTROL PDF].
+1. Accédez à [!UICONTROL Asset Status], sélectionnez [!UICONTROL All] pour inclure toutes les ressources publiées et non publiées.
 
 **Scénario 5 : recherche de toutes les images à l’exception de PNG**
 
-Lorsque vous n’êtes pas certain du titre ou de la méta-description d’une ressource, vous pouvez utiliser divers filtres de recherche pour rendre votre recherche plus pertinente. Par exemple, pour rechercher des ressources dans **[!UICONTROL Vue Admin]**, procédez comme suit :
+Lorsque vous n’êtes pas certain du titre ou de la méta-description d’une ressource, vous pouvez utiliser divers filtres de recherche pour rendre votre recherche plus pertinente. Par exemple, pour rechercher des ressources dans **[!UICONTROL Vue d&#39;administration]**, procédez comme suit :
 
 1. Accédez aux filtres de recherche.
-1. Accédez à Filtres. Sous [!UICONTROL Type de fichier], développer [!UICONTROL Images] et sélectionnez [!UICONTROL Compatible web]
+1. Accédez à Filtres. Sous [!UICONTROL Type de fichier], développez [!UICONTROL Images] et sélectionnez [!UICONTROL Web enabled]
 1. Désélectionnez PNG.
 
 <!--![Search all images except jeep](assets/images-png.png)-->
 
-Pour rechercher des ressources à l’aide du scénario mentionné dans **[!UICONTROL Affichage des ressources]**, procédez comme suit :
+Pour rechercher des ressources à l’aide du scénario mentionné dans la **[!UICONTROL vue Assets]**, procédez comme suit :
 
 1. Accédez aux filtres de recherche.
-1. Accédez à Filtres. Sous [!UICONTROL Type MIME], sélectionnez tous les types MIME donnés, mais désélectionnez PNG.
+1. Accédez à Filtres. Sous [!UICONTROL MIME Type], sélectionnez tous les types MIME donnés, mais désélectionnez PNG.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425486)
 
@@ -195,29 +195,31 @@ Pour rechercher des ressources à l’aide du scénario mentionné dans **[!UICO
 
 AEM recherche vous permet de concevoir des requêtes de recherche complexes avec moins d’effort. Vous trouverez ci-dessous différents exemples pour vous aider à créer des requêtes de recherche complexes :
 
-**Scénario 6 : recherche de tous les documents dans le référentiel du Experience Manager avec `classic car` dans leurs métadonnées. Le contenu du document doit contenir `classic car` par mot-clé.**
+**Scénario 6 : recherchez tous les documents du référentiel Experience Manager avec `classic car` dans leurs métadonnées. Le contenu du document doit contenir le mot-clé `classic car`.**
 
 Adobe Experience Manager vous permet d’ajouter plusieurs critères à votre recherche. Vous pouvez utiliser une combinaison de mots-clés, d’opérateurs et de filtres pour affiner vos résultats de recherche.
 
 Pour effectuer une recherche dans le scénario 6 :
 
-1. Saisissez le `classic car` dans la barre de recherche.
+1. Saisissez le mot-clé `classic car` dans la barre de recherche.
 2. Accédez au panneau Filtres et sélectionnez Documents sous Type de fichier.
-3. Affinez votre recherche à l’aide du caractère générique astérisque. Type `"classic car"` pour rechercher toutes les ressources qui contiennent le `classic car` mot-clé.
+3. Affinez votre recherche à l’aide du caractère générique astérisque. Saisissez `"classic car"` pour rechercher toutes les ressources contenant le mot-clé `classic car`.
 
 <!--![Scenario 6](assets/scenario-6.png)-->
 
-Le scénario 6 ne peut pas s’exécuter dans **[!UICONTROL Affichage des ressources]** car il ne prend pas en charge l’utilisation des caractères génériques.
+Le scénario 6 ne peut pas s’exécuter dans **[!UICONTROL vue Assets]**, car il ne prend pas en charge l’utilisation de caractères génériques.
 
-**Scénario 7 : recherche de tous les documents dans le référentiel du Experience Manager dans lequel le contenu du document doit inclure `car` mais exclure `classic`. La même condition s’applique aux métadonnées d’une ressource.**
+**Scénario 7 : recherchez tous les documents du référentiel Experience Manager dans lesquels le contenu du document doit inclure `car` mais exclure `classic`. La même condition s&#39;applique aux métadonnées d&#39;une ressource.**
 
 Pour effectuer une recherche dans le scénario 7 :
 
-Saisissez le `car - classic` dans la barre de recherche. Accédez au panneau Filtres et sélectionnez Documents sous Type de fichier. L’ordre de priorité de la recherche est basé sur les éléments suivants : Priorité 1 : Priorité des métadonnées 2 : Balises intelligentes
+Saisissez le mot-clé `car - classic` dans la barre de recherche. Accédez au panneau Filtres et sélectionnez Documents sous Type de fichier. L’ordre de priorité de la recherche est basé sur les éléments suivants :
+Priorité 1 : Métadonnées
+Priorité 2 : balises intelligentes
 
 <!--![Scenario 7](assets/scenario-7.png)-->
 
-Le scénario 7 ne peut pas s’exécuter dans **[!UICONTROL Affichage des ressources]** car il ne prend pas en charge l’utilisation des caractères génériques.
+Le scénario 7 ne peut pas s’exécuter dans **[!UICONTROL vue Assets]**, car il ne prend pas en charge l’utilisation de caractères génériques.
 
 <!--
 **Scenario 9: Search for all images except PNG**
@@ -235,49 +237,50 @@ When you are unsure about the title or meta description of an asset, you can use
 ![Search all images except jeep](assets/images-jeep.png)
 -->
 
-**Scénario 8 : recherche de balises de métadonnées avec une jeep de métadonnées**
+**Scénario 8 : recherche de balises de métadonnées avec jeep de métadonnées**
 
-Vous pouvez capturer un critère spécifique à l’aide de différents filtres de recherche. Tag est un mot-clé attribué à une ressource afin de l’identifier parmi un grand nombre de ressources. Par exemple, dans ce scénario, recherchez des ressources avec *jeep* des balises qu’il contient. Pour ce faire, saisissez `tags:jeep` dans la barre de recherche. Seules les ressources qui répondent à ces critères sont répertoriées dans les résultats de recherche.
+Vous pouvez capturer un critère spécifique à l’aide de différents filtres de recherche. Tag est un mot-clé attribué à une ressource afin de l’identifier parmi un grand nombre de ressources. Par exemple, dans ce scénario, recherchez des ressources contenant des balises *jeep*. Pour ce faire, saisissez `tags:jeep` dans la barre de recherche. Seules les ressources qui répondent à ces critères sont répertoriées dans les résultats de recherche.
 
 <!--![Search using tags](assets/search-tags.png)-->
 
-La recherche affiche des résultats similaires si vous travaillez dans le **[!UICONTROL Affichage des ressources]** ainsi que .
+La recherche affiche des résultats similaires si vous utilisez également la **[!UICONTROL vue Assets]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
 **Scénario 9 : rechercher une correspondance similaire pour la voiture couleur rouge**
 
-Lors de l’exécution de votre recherche sur AEM, vous pouvez filtrer vos résultats en affichant des ressources similaires aux ressources sélectionnées. Vous pouvez utiliser la variable **Rechercher semblable** pour restreindre votre recherche à la correspondance exacte ou similaire de la ressource recherchée. Cela permet de rechercher des ressources qui ont des balises intelligentes similaires à la ressource sélectionnée. Par exemple, pour rechercher des ressources similaires, procédez comme suit :
+Lors de l’exécution de votre recherche sur AEM, vous pouvez filtrer vos résultats en affichant des ressources similaires aux ressources sélectionnées. Vous pouvez utiliser l’option **Rechercher des ressources similaires** pour restreindre votre recherche à la correspondance exacte ou similaire de la ressource recherchée. Cela permet de rechercher des ressources qui ont des balises intelligentes similaires à la ressource sélectionnée. Par exemple, pour rechercher des ressources similaires, procédez comme suit :
 
 1. Recherchez la ressource selon vos besoins.
-1. Pointez sur la ressource > cliquez sur les points de suspension > sélectionnez [!UICONTROL Rechercher semblable].
-ou sélectionnez la ressource > accédez aux points de suspension en haut à droite > sélectionnez [!UICONTROL Rechercher semblable].
+1. Passez la souris sur la ressource > cliquez sur les points de suspension > sélectionnez [!UICONTROL Rechercher des éléments similaires].
+ou
+Sélectionnez la ressource > accédez aux points de suspension en haut à droite > sélectionnez [!UICONTROL Rechercher des éléments similaires].
 
-   ![Rechercher similaire](assets/find-similar.png)
+   ![Trouver similaire](assets/find-similar.png)
 
 1. Remarquez la barre de recherche. La miniature de la ressource sélectionnée s’affiche dans la barre de recherche pour indiquer vos besoins en termes de recherche. Par conséquent, elle renvoie les ressources avec des balises intelligentes similaires.
 
-Exécutez les étapes suivantes dans **[!UICONTROL Affichage des ressources]**:
+Exécutez les étapes suivantes dans la **[!UICONTROL vue Assets]** :
 
 1. Recherchez la ressource selon vos besoins.
-1. Sélectionnez l’image > accédez à [!UICONTROL Rechercher une image similaire] dans la barre de navigation supérieure.
+1. Sélectionnez l’image > accédez à l’option [!UICONTROL Rechercher une image similaire] dans la barre de navigation supérieure.
 Vous accédez alors à la collection de ressources avec des couleurs et des métadonnées similaires.
 
 ## Facettes de recherche personnalisées {#custom-search-facets}
 
-Les facettes de recherche de Adobe Experience Manager vous permettent de rechercher des ressources de plusieurs manières plutôt que dans un seul ordre taxonomique, prédéterminé ou prédéfini. Vous pouvez personnaliser les facettes de recherche et ajouter des prédicats selon vos besoins. Lecture [Facettes de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) pour le guide détaillé sur l’ajout d’un prédicat personnalisé.
+Les facettes de recherche de Adobe Experience Manager vous permettent de rechercher des ressources de plusieurs manières plutôt que dans un seul ordre taxonomique, prédéterminé ou prédéfini. Vous pouvez personnaliser les facettes de recherche et ajouter des prédicats selon vos besoins. Lisez [Facettes de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) pour consulter le guide détaillé sur l’ajout d’un prédicat personnalisé.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
 -->
 
-**Scénario 10 : recherche de ressources spécifiques selon leur date de dernière modification ou d’expiration**
+**Scénario 10 : recherche de ressources spécifiques en fonction de leur date de dernière modification ou d’expiration**
 
-Les contraintes de date vous permettent de réduire votre recherche personnalisée à une période spécifique, en utilisant par exemple les filtres de recherche de période. Pour rechercher la condition ci-dessus, saisissez `classic car` dans la barre de recherche. Sélectionnez la plage de dates dans le [!UICONTROL Date de création] et [!UICONTROL Dernière modification] filtres de dates.
+Les contraintes de date vous permettent de réduire votre recherche personnalisée à une période spécifique, en utilisant par exemple les filtres de recherche de période. Pour rechercher la condition ci-dessus, saisissez `classic car` dans la barre de recherche. Sélectionnez la période dans les filtres de dates [!UICONTROL Date de création] et [!UICONTROL Dernière modification].
 
 ![Filtres de date](assets/date-filters.png)
 
-La recherche affiche des résultats similaires si vous travaillez dans le [!UICONTROL Affichage des ressources] ainsi que .
+La recherche affiche des résultats similaires si vous utilisez également la [!UICONTROL vue Assets].
 
 ## Renforcer la pertinence des mots-clés {#boosting-keywords}
 
@@ -303,7 +306,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 The newly added assets are not indexed.
 -->
 
-## Différences entre les [!UICONTROL Vue Admin] et [!UICONTROL Affichage des ressources] Rechercher {#differences-asset-and-admin-view}
+## Différences entre la [!UICONTROL vue d’administration] et la [!UICONTROL vue Assets] Rechercher {#differences-asset-and-admin-view}
 
 <table>
     <tr>
@@ -313,7 +316,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> Facettes personnalisées </td>
-        <td> Vous pouvez ajouter <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr">facettes de recherche personnalisées selon les besoins.</td>
+        <td> Vous pouvez ajouter <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr">des facettes de recherche personnalisées en fonction des besoins.</td>
         <td> Les facettes personnalisées sont partiellement prises en charge dans la vue Assets. Les facettes prises en charge sont les suivantes :
             <ul>
             <li> Balises prédites

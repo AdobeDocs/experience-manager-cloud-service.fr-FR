@@ -28,7 +28,7 @@ La configuration se compose de deux étapes principales :
 
 ### Ajouter un référentiel {#add-repo}
 
-1. Dans Cloud Manager, à partir du **Aperçu du programme** , sélectionnez **Référentiels** pour basculer vers l’onglet **Référentiels** page et clic **Ajouter un référentiel**.
+1. Dans Cloud Manager, sur la page **Aperçu du programme**, sélectionnez l’onglet **Référentiels** pour passer à la page **Référentiels** et cliquez sur **Ajouter un référentiel**.
 
 1. Dans la boîte de dialogue **Ajouter un référentiel**, sélectionnez **Référentiel privé** comme type de référentiel.
 
@@ -50,7 +50,7 @@ La configuration se compose de deux étapes principales :
 
 Cloud Manager connaît désormais votre référentiel GitHub, mais il doit toujours y accéder. Pour accorder l’accès, vous devez installer l’application GitHub d’Adobe et vérifier que vous êtes propriétaire du référentiel spécifié.
 
-1. Après avoir ajouté votre propre référentiel, la variable **Validation de la propriété du référentiel privé** s’ouvre.
+1. Après avoir ajouté votre propre référentiel, la boîte de dialogue **Validation de la propriété du référentiel privé** s’ouvre.
 
    ![Validation de la propriété du référentiel privé.](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -58,7 +58,7 @@ Cloud Manager connaît désormais votre référentiel GitHub, mais il doit touj
    * Une personne propriétaire de votre organisation GitHub doit installer l’application qui se trouve à l’adresse `https://github.com/apps/cloud-manager-for-aem` et accordez l’accès au référentiel.
    * Consultez la documentation de GitHub pour plus d’informations sur la manière dont cela est effectué.
 
-1. Pour renforcer la sécurité, vous devez créer un fichier secret dans la branche par défaut de votre référentiel. Sélectionner **Générer**.
+1. Pour renforcer la sécurité, vous devez créer un fichier secret dans la branche par défaut de votre référentiel. Sélectionnez **Générer**.
 
 1. Confirmez la génération du fichier secret en appuyant ou en cliquant sur **Confirmer**.
 
@@ -72,7 +72,7 @@ Cloud Manager connaît désormais votre référentiel GitHub, mais il doit touj
 
 1. Créez un fichier dans la branche par défaut de votre référentiel GitHub appelé `.well-known/adobe/cloud-manager-challenge`, collez le contenu du fichier secret dans ce fichier et enregistrez-le.
 
-1. Une fois l’application installée et le fichier secret présent dans le référentiel, vous pouvez sélectionner **Valider** dans le **Validation de la propriété du référentiel privé** boîte de dialogue.
+1. Une fois l’application installée et le fichier secret présent dans le référentiel, vous pouvez sélectionner **Valider** dans la boîte de dialogue **Validation de la propriété du référentiel privé** .
 
 L’application peut être installée et un fichier secret peut être créé dans n’importe quel ordre. Toutefois, vous devez effectuer les deux étapes avant de pouvoir valider.
 
@@ -80,9 +80,9 @@ Jusqu’à la validation, le référentiel est répertorié avec une icône roug
 
 ![Référentiel non validé.](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-La variable **Type** identifie facilement les référentiels fournis par l’Adobe (**Adobe**) et vos propres référentiels GitHub (**GitHub**).
+La colonne **Type** identifie facilement les référentiels fournis par l’Adobe (**Adobe**) et vos propres référentiels GitHub (**GitHub**).
 
-Si vous devez revenir au référentiel à une date ultérieure pour terminer la validation, sur la page **Référentiels** , sélectionnez le bouton représentant des points de suspension dans la ligne représentant le référentiel GitHub que vous venez d’ajouter, puis sélectionnez **Validation de propriété** dans le menu déroulant.
+Si vous devez revenir au référentiel à une date ultérieure pour terminer la validation, sur la page **Référentiels**, cliquez sur le bouton représentant le référentiel GitHub que vous venez d’ajouter, puis sélectionnez **Validation de propriété** dans le menu déroulant.
 
 ## Utiliser des référentiels privés avec Cloud Manager {#using}
 

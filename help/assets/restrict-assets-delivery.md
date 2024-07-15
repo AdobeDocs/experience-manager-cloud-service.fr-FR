@@ -13,9 +13,9 @@ ht-degree: 1%
 
 La gouvernance centrale des ressources dans Experience Manager permet à l’administrateur DAM ou aux responsables de marque de gérer l’accès aux ressources. Ils peuvent restreindre l’accès en configurant des rôles pour les ressources approuvées du côté création, en particulier sur l’instance d’auteur AEM as a Cloud Service.
 
-Utilisateurs [recherche](search-assets-api.md) ou en utilisant [URL de diffusion](deliver-assets-apis.md) peuvent accéder aux ressources restreintes une fois le processus d’autorisation réussi.
+Les utilisateurs [qui effectuent une recherche](search-assets-api.md) ou qui utilisent [des URL de diffusion](deliver-assets-apis.md) peuvent accéder à des ressources restreintes lorsqu’ils réussissent à passer le processus d’autorisation.
 
-![Accès limité aux ressources](/help/assets/assets/restricted-access.png)
+![Accès restreint aux ressources](/help/assets/assets/restricted-access.png)
 
 ## Diffusion restreinte utilisant un jeton IMS {#restrict-delivery-ims-token}
 
@@ -28,31 +28,31 @@ En Experience Manager, la diffusion limitée via IMS implique deux étapes clés
 
 Vous pouvez restreindre la diffusion des ressources dans [!DNL Experience Manager] en fonction des rôles. Pour configurer les rôles, procédez comme suit :
 
-1. Accédez au [!DNL Experience Manager] en tant qu’administrateur DAM.
+1. Accédez à [!DNL Experience Manager] en tant qu’administrateur DAM.
 1. Sélectionnez la ressource pour laquelle vous devez configurer le rôle.
-1. Accédez à **[!UICONTROL Propriétés]** > **[!UICONTROL Avancé]**, et assurez-vous que la variable **[!UICONTROL Rôles]** existe dans le champ [!UICONTROL Métadonnées avancées] .
+1. Accédez à **[!UICONTROL Propriétés]** > **[!UICONTROL Avancé]**, puis assurez-vous que le champ **[!UICONTROL Rôles]** existe dans l’onglet [!UICONTROL Métadonnées avancées].
 
-   ![Métadonnées des rôles](/help/assets/assets/roles_metadata.jpg)
+   ![Métadonnées de rôles](/help/assets/assets/roles_metadata.jpg)
 Si le champ n’est pas disponible, procédez comme suit pour ajouter le champ :
 
    1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
    1. Sélectionnez le schéma de métadonnées et cliquez sur **[!UICONTROL Modifier _(e)_]**.
-   1. Ajouter un **[!UICONTROL Texte à plusieurs valeurs]** du champ **[!UICONTROL Créer un formulaire]** dans la partie droite de la section Métadonnées du formulaire.
-   1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans la variable  **[!UICONTROL Paramètres]** panel :
-      1. Modifiez la variable **[!UICONTROL Libellé du champ]** to _Rôles_.
-      1. Mettez à jour le **[!UICONTROL Associer à la propriété]** to _./jcr:content/metadata/dam:rôles_.
+   1. Ajoutez un champ **[!UICONTROL Texte à plusieurs valeurs]** de la section **[!UICONTROL Créer le formulaire]** dans la partie droite de la section Métadonnées dans le formulaire.
+   1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
+      1. Remplacez le **[!UICONTROL libellé du champ]** par _rôles_.
+      1. Mettez à jour la **[!UICONTROL map to property]** vers _./jcr:content/metadata/dam:rôles_.
 
 1. Procurez-vous les groupes IMS à ajouter dans les métadonnées Rôles de la ressource. Pour récupérer les groupes IMS, procédez comme suit :
    1. Connectez-vous à https://adminconsole.adobe.com/.
    1. Accédez à votre organisation respective et accédez à **[!UICONTROL Groupes d’utilisateurs]**.
-   1. Sélectionnez la variable **[!UICONTROL Groupe d’utilisateurs]** vous devez ajouter et extraire la variable **[!UICONTROL orgID]** et **[!UICONTROL userGroupID]** à partir de l’URL ou utilisez votre ID d’organisation comme `{orgID}@AdobeOrg:{usergroupID}`.
+   1. Sélectionnez le **[!UICONTROL groupe d&#39;utilisateurs]** à ajouter et extrayez les **[!UICONTROL orgID]** et **[!UICONTROL userGroupID]** depuis l&#39;URL ou utilisez votre ID d&#39;organisation tel que `{orgID}@AdobeOrg:{usergroupID}`.
 
-1. Ajoutez l’ID de groupe au **[!UICONTROL Rôles]** champ des propriétés Asset. <br>
-Les ID de groupe définis dans la variable **[!UICONTROL Rôles]** sont les seuls utilisateurs qui peuvent accéder à la ressource. Vous pouvez également ajouter l’identifiant du client IMS et l’identifiant du profil IMS dans la variable **[!UICONTROL Rôles]** champ . Par exemple, `{orgId}@AdobeOrg:{profileId}`.
+1. Ajoutez l’ID de groupe au champ **[!UICONTROL Rôles]** des propriétés Asset. <br>
+Les ID de groupe définis dans le champ **[!UICONTROL Rôles]** sont les seuls utilisateurs qui peuvent accéder à la ressource. Vous pouvez également ajouter l&#39;identifiant du client IMS et l&#39;identifiant du profil IMS dans le champ **[!UICONTROL Rôles]** . Par exemple, `{orgId}@AdobeOrg:{profileId}`.
 
    >[!NOTE]
    >
-   >Pour la nouvelle vue Assets, vous ne pouvez autoriser l’accès qu’aux niveaux de dossier, et exclusivement aux groupes plutôt qu’aux utilisateurs individuels. En savoir plus sur [gestion des autorisations dans Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+   >Pour la nouvelle vue Assets, vous ne pouvez autoriser l’accès qu’aux niveaux de dossier, et exclusivement aux groupes plutôt qu’aux utilisateurs individuels. En savoir plus sur la [gestion des autorisations dans Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427429)
 
@@ -66,7 +66,7 @@ Pour définir l’heure d’activation et de désactivation de la ressource, pro
 
 1. Sélectionnez la ressource et cliquez sur **[!UICONTROL Propriétés]**.
 
-1. Dans le **[!UICONTROL Activation planifiée (de)]** de la **[!UICONTROL De base]** , définissez l’ heure d’activation ou de désactivation en fonction de vos besoins.
+1. Dans la section **[!UICONTROL Activation planifiée (de)]** de l’onglet **[!UICONTROL De base]** , définissez l’heure d’activation ou l’heure de désactivation en fonction de vos besoins.
 
 De même, dans la vue Assets, vous pouvez sélectionner la ressource et cliquer sur **[!UICONTROL Détails]** pour afficher les propriétés de la ressource et définir l’heure d’activation et l’heure de désactivation.
 
@@ -74,19 +74,19 @@ Le champ est disponible dans le formulaire de métadonnées par défaut. Si votr
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
 1. Sélectionnez le schéma de métadonnées et cliquez sur **[!UICONTROL Modifier]**.
-1. Ajouter un **[!UICONTROL Date]** du champ **[!UICONTROL Créer un formulaire]** dans la partie droite de la section Métadonnées du formulaire.
-1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans la variable  **[!UICONTROL Paramètres]** panel :
-   1. Modifiez la variable **[!UICONTROL Libellé du champ]** to **Heure d’activation** ou **Heure de désactivation**.
-   1. Mettez à jour le **[!UICONTROL Associer à la propriété]** to _./jcr:content/onTime_ pour **Heure d’activation** champ et _./jcr:content/offTime_ pour **Heure de désactivation** champ .
+1. Ajoutez un champ **[!UICONTROL Date]** de la section **[!UICONTROL Créer le formulaire]** dans la partie droite de la section Métadonnées dans le formulaire.
+1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
+   1. Remplacez le **[!UICONTROL libellé du champ]** par **Heure d’activation** ou **Heure de désactivation**.
+   1. Mettez à jour la **[!UICONTROL map to property]** vers _./jcr:content/onTime_ pour le champ **Heure d’activation** et _./jcr:content/offTime_ pour le champ **Heure de désactivation** .
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 De même, pour la vue Assets, si votre ressource n’est pas basée sur le schéma de métadonnées par défaut et que les champs Heure d’activation et Heure de désactivation ne sont pas disponibles dans les propriétés de la ressource, exécutez les étapes suivantes :
 
-1. Cliquez sur **[!UICONTROL Forms des métadonnées]** dans le **[!UICONTROL Paramètres]** .
+1. Cliquez sur **[!UICONTROL Forms de métadonnées]** dans la section **[!UICONTROL Paramètres]** .
 1. Sélectionnez le formulaire de métadonnées et cliquez sur **[!UICONTROL Modifier]**.
-1. Ajouter un **[!UICONTROL Date]** du champ **[!UICONTROL Composants]** dans le volet de gauche.
-1. Cliquez sur le champ que vous venez d’ajouter et modifiez la variable **[!UICONTROL Libellé]** to **Heure d’activation** ou **Heure de désactivation**.
-1. Mettez à jour le **[!UICONTROL Propriété de métadonnées]** to _./jcr:content/onTime_ pour **Heure d’activation** champ et _./jcr:content/offTime_ pour **Heure de désactivation** champ .
+1. Ajoutez un champ **[!UICONTROL Date]** de la section **[!UICONTROL Components]** du volet de gauche au formulaire.
+1. Cliquez sur le champ nouvellement ajouté et remplacez **[!UICONTROL Libellé]** par **Heure d’activation** ou **Heure de désactivation**.
+1. Mettez à jour la **[!UICONTROL propriété de métadonnées]** vers _./jcr:content/onTime_ pour le champ **Heure d’activation** et _./jcr:content/offTime_ pour le champ **Heure de désactivation** .
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 
@@ -102,18 +102,18 @@ Pour activer la diffusion de ressources restreintes au cas où la requête serai
 1. [Générer un jeton d’accès](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token).
    * Connectez-vous à la console de développement de votre environnement AEM as a Cloud Service.
 
-   * Accédez à **[!UICONTROL Environnement]** > **[!UICONTROL Intégrations]** > **[!UICONTROL Jeton local]** > **[!UICONTROL Obtention du jeton de développement local]** > **[!UICONTROL Copier la valeur accessToken]**. En savoir plus sur [comment accéder au jeton et aux aspects connexes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
+   * Accédez à **[!UICONTROL Environnement]** > **[!UICONTROL Intégrations]** > **[!UICONTROL Jeton local]** > **[!UICONTROL Obtenir un jeton de développement local]** > **[!UICONTROL Copier la valeur accessToken]**. En savoir plus sur [comment accéder au jeton et aux aspects connexes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
 
-1. Intégrez le jeton d’accès obtenu à la variable **[!UICONTROL Autorisation]** en-tête , en veillant à ce que sa valeur contienne le préfixe **[!UICONTROL Porteur]**.
+1. Intégrez le jeton d’accès obtenu à l’en-tête **[!UICONTROL Authorization]**, en veillant à ce que sa valeur soit précédée du préfixe **[!UICONTROL Bearer]**.
 
 1. Validez la fonctionnalité du jeton d’accès en initiant une requête. Elle doit générer une erreur 404 dans les cas où il n’existe pas de jeton d’accès IMS, ou le jeton d’accès fourni n’a pas les mêmes entités ou groupes que ceux ajoutés dans les métadonnées de la ressource.
 
 #### Diffusion pour les fournisseurs d’identité personnalisés sur une instance Publish {#delivery-custom-identity-provider}
 
-Dans le cas d’un fournisseur d’identité personnalisé configuré sur votre instance Publish ou Preview, vous pouvez mentionner le groupe qui doit avoir accès aux ressources sécurisées dans `groupMembership` pendant le processus de configuration. Lorsque vous vous connectez à un fournisseur d’identité personnalisé via [Intégration SAML](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), la variable `groupMembership` est lu et utilisé pour construire un cookie, qui est envoyé dans toutes les demandes d’authentification, similaire à un jeton IMS en cas de demande de l’auteur AEM ou du sélecteur de ressources.
+Dans le cas d’un fournisseur d’identité personnalisé configuré sur votre instance Publish ou Preview, vous pouvez mentionner le groupe qui doit avoir accès aux ressources sécurisées dans l’attribut `groupMembership` pendant le processus de configuration. Lorsque vous vous connectez au fournisseur d’identité personnalisé via l’ [intégration SAML](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), l’attribut `groupMembership` est lu et utilisé pour construire un cookie, qui est envoyé dans toutes les demandes d’authentification, similaire à un jeton IMS en cas de demande de l’auteur AEM ou du sélecteur de ressources.
 
-Lorsqu’une ressource sécurisée est disponible sur une page et qu’une demande est envoyée à l’URL de diffusion pour effectuer le rendu de la ressource, AEM vérifie les rôles présents dans le cookie ou le jeton IMS et la compare au `dam:roles property` appliquée lors de la création de la ressource. S’il existe une correspondance, la ressource s’affiche.
+Lorsqu’une ressource sécurisée est disponible sur une page et qu’une demande est envoyée à l’URL de diffusion pour effectuer le rendu de la ressource, AEM vérifie les rôles présents dans le cookie ou le jeton IMS et la compare à l’élément `dam:roles property` appliqué lors de la création de la ressource. S’il existe une correspondance, la ressource s’affiche.
 
 >[!NOTE]
 >
-> Dans le [ticket de support pour activer Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities), mentionnez diffusion limitée dans le cas pratique. L’ingénierie d’Adobe aidera à apporter les clarifications nécessaires et/ou à mettre en place un processus pour une diffusion limitée.
+> Dans le [ticket de support pour activer Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities), mentionnez la diffusion limitée dans le cas d’utilisation. L’ingénierie d’Adobe aidera à apporter les clarifications nécessaires et/ou à mettre en place un processus pour une diffusion limitée.

@@ -49,7 +49,7 @@ Si vous avez besoin d’une ou de plusieurs de ces fonctionnalités, il est alor
 
 ## Service OSGi – Configuration du composant de fragment de contenu {#osgi-service-content-fragment-component-configuration}
 
-La configuration doit être liée au service OSGi. **Configuration du composant de fragment de contenu**:
+La configuration doit être liée au service OSGi **Configuration du composant de fragment de contenu** :
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 

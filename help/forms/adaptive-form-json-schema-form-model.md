@@ -44,7 +44,7 @@ Les fonctionnalités clés de l’utilisation d’un schéma JSON sont les suiva
 * La structure du modèle JSON s’affiche sous forme d’arborescence sous l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie JSON dans le formulaire adaptatif.
 * Vous pouvez préremplir le formulaire avec le code JSON conforme au schéma associé.
 * Au moment de l’envoi, les données saisies par l’utilisateur ou l’utilisatrice sont envoyées au format JSON approprié pour le schéma associé.
-* Vous pouvez également créer le formulaire en fonction du schéma JSON, conformément aux spécifications du [Version 2012-20](https://json-schema.org/draft/2020-12/release-notes).
+* Vous pouvez également créer le formulaire en fonction du schéma JSON, conformément aux spécifications de la version [2012-20](https://json-schema.org/draft/2020-12/release-notes).
 
 Un schéma JSON se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés vers un formulaire adaptatif, ils sont automatiquement mis en correspondance avec les composants de formulaires adaptatifs correspondants.
 
@@ -451,8 +451,8 @@ Le formulaire adaptatif utilise les informations disponibles dans le schéma JSO
 >[!ENDTABS]
 
 Les modifications clés des spécifications du schéma JSON V4 vers la version 2020-12 sont les suivantes :
-* L’identifiant est déclaré comme `$id`
-* Les définitions sont déclarées comme `$defs`
+* L’ID est déclaré `$id`
+* definitions est déclaré `$defs`
 
 ### Définitions de schéma réutilisables {#reusable-schema-definitions}
 

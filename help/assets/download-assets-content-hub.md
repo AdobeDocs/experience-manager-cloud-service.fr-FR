@@ -20,11 +20,11 @@ Vous pouvez télécharger une ou plusieurs ressources à l’aide de Content Hub
 
 ## Conditions préalables {#prerequisites}
 
-[Utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Télécharger une ressource {#download-single-asset}
 
 1. Sélectionnez la ou les ressources à télécharger.
-   ![Téléchargement d’une seule ressource](assets/download-assets-new.jpg)
-1. Cliquez sur **[!UICONTROL Télécharger]**. <br> Vous pouvez également cliquer sur l’icône de téléchargement disponible sur la carte de la ressource pour télécharger une ressource.
+   ![Télécharger une seule ressource](assets/download-assets-new.jpg)
+1. Cliquez sur **[!UICONTROL Télécharger]**. <br> Vous pouvez également cliquer sur l’icône de téléchargement disponible sur la carte de ressource pour télécharger une ressource.
 Toutes les ressources sont téléchargées dans leur rendu d’origine.

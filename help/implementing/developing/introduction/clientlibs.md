@@ -31,7 +31,7 @@ Les bibliothèques côté client sont la solution intégrée pour la diffusion d
 
 ## Que sont les bibliothèques côté client ? {#what-are-clientlibs}
 
-Les sites requièrent du code JavaScript et CSS, ainsi que des ressources statiques telles que des icônes et des polices web, pour être traités côté client. Une bibliothèque cliente est un mécanisme AEM de référence (par catégorie si nécessaire) et de diffusion de ces ressources.
+Les sites requièrent du code JavaScript et CSS, ainsi que des ressources statiques telles que des icônes et des polices web, pour être traités côté client. Une bibliothèque cliente  un mécanisme de référence (par catégorie si nécessaire) et de diffusion de ces ressources.
 
 AEM collecte le CSS et code JavaScript du site dans un seul fichier, à un emplacement central, afin de s’assurer qu’une seule copie d’une ressource est incluse dans la sortie HTML. Cela optimise l’efficacité de la diffusion et permet à ces ressources d’être conservées de façon centralisée dans le référentiel par le biais d’un proxy, en assurant la sécurité de l’accès.
 
@@ -90,7 +90,7 @@ Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, u
    * Type : booléen
    * Valeur : `true`
 1. Si vous devez gérer des ressources statiques, créez un sous-dossier nommé `resources` sous le dossier de bibliothèques clientes.
-   * Si vous stockez des ressources statiques ailleurs que sous le dossier `resources`, ils ne peuvent pas être référencés sur une instance de publication.
+   * Si vous stockez des ressources statiques ailleurs que sous le dossier `resources`, elles ne peuvent pas être référencées sur une instance de publication.
 1. Ajoutez les fichiers sources dans le dossier de bibliothèques.
    * Cela est généralement effectué par le processus de création front-end de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr).
    * Si vous le souhaitez, vous pouvez organiser les fichiers sources dans des sous-dossiers.
@@ -114,7 +114,7 @@ Une fois votre dossier de bibliothèques clientes [configuré comme requis](#cre
 * Vous avez une bibliothèque cliente dans `/apps/myproject/clientlibs/foo`.
 * Vous avez une image statique dans `/apps/myprojects/clientlibs/foo/resources/icon.png`.
 
-La variable `allowProxy` vous permet de demander :
+La propriété `allowProxy` vous permet de demander :
 
 * La bibliothèque cliente via `/etc.clientlibs/myprojects/clientlibs/foo.js`.
 * L’image statique via `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`.
@@ -341,7 +341,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Pour plus d’informations sur les options GCC, voir [Documentation GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Pour plus d&#39;informations sur les options GCC, consultez la [documentation GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Définition de l’outil de minification par défaut du système {#set-system-default-minifier}
 

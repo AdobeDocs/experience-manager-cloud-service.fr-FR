@@ -59,7 +59,7 @@ Sélectionnez **[!UICONTROL Mise en page]** dans la liste déroulante qui s’af
 **Objectif :** vous souhaitez insérer un composant de tableau ainsi qu’un composant d’image et les positionner en parallèle dans un formulaire adaptatif.
 
 1. Insérez les composants de tableau et d’image en utilisant le mode [!UICONTROL Édition] dans le formulaire adaptatif. Le composant d’image s’affiche après le composant de tableau.
-1. Basculer vers [!UICONTROL Disposition] et sélectionnez l’option [!UICONTROL Tableau] composant. Les points bleus pour redimensionner le composant s’affichent aux colonnes 1 et 12.
+1. Passez en mode [!UICONTROL Disposition] et sélectionnez le composant [!UICONTROL Tableau]. Les points bleus pour redimensionner le composant s’affichent aux colonnes 1 et 12.
 1. Faites glisser le point bleu de la colonne 12 vers la colonne 6 de la grille réactive.
 
    ![Définition du point de fin du tableau](assets/layout_mode_end_point_table_new.png)
@@ -125,7 +125,7 @@ Vous pouvez désactiver le mode Mise en page pour les formulaires avec une ancie
 Pour désactiver le mode Mise en page, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]** et ouvrez le modèle utilisé dans le formulaire en mode **[!UICONTROL Édition]**.
-1. Sélectionnez le conteneur de formulaires dans le volet de gauche, puis sélectionnez **[!UICONTROL Stratégie.]**
+1. Sélectionnez le conteneur de formulaires dans le volet de gauche et sélectionnez **[!UICONTROL Stratégie.]**
 
    ![Désactivation du mode Disposition](assets/policy_disable_layout_mode.png)
 

@@ -29,7 +29,7 @@ ht-degree: 96%
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. [!DNL AEM Forms] fournit une interface utilisateur intuitive et des composants prêts à l’emploi pour la création et l’utilisation de formulaires adaptatifs. Vous pouvez choisir de créer un formulaire adaptatif basé sur un modèle de formulaire ou un schéma ou sans modèle de formulaire. Il est important de choisir avec soin le modèle de formulaire qui convient non seulement à vos besoins, mais qui étend également vos investissements et vos ressources d’infrastructure existantes. Vous pouvez choisir parmi les options suivantes pour créer un formulaire adaptatif :
 
 * **Utilisation d’un modèle de données de formulaire (FDM)**
-  [Intégration de données](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates dans un modèle de données de formulaire (FDM) que vous pouvez utiliser pour créer un Forms adaptatif. Choisissez le modèle de données de formulaire (FDM) si le formulaire adaptatif que vous créez implique la récupération et l’écriture de données à partir de et vers plusieurs sources de données.
+  [L’intégration de données](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates dans un modèle de données de formulaire (FDM) que vous pouvez utiliser pour créer une Forms adaptative. Choisissez le modèle de données de formulaire (FDM) si le formulaire adaptatif que vous créez implique la récupération et l’écriture de données à partir de et vers plusieurs sources de données.
 
 * **Utilisation d’un modèle de formulaire XDP**
 Il s’agit d’un modèle de formulaire idéal si vous investissez dans des formulaires XFA ou XDP. Il fournit une méthode directe de conversion des formulaires de type XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs qui en résultent prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les motifs.
@@ -98,7 +98,7 @@ Il vous permet de faire glisser des éléments de modèle de formulaire sur le f
 
   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour voir les propriétés du conteneur de formulaires adaptatifs :
 
-  Sélectionnez un composant, puis cliquez sur ![champ-level](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Conteneur de formulaires adaptatifs]**, puis sélectionnez ![properties](assets/Smock_Wrench_18_N.svg).
+  Sélectionnez un composant, puis ![field-level](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Adaptive Form Container]**, puis sélectionnez ![properties](assets/Smock_Wrench_18_N.svg).
 
 * **Explorateur de ressources**
 

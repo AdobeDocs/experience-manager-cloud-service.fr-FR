@@ -78,7 +78,7 @@ Vérifiez que les images figurant dans la série de formation sont conformes aux
 
 **Quantité et taille :** 10 images au minimum et 50 images au maximum par balise.
 
-**Cohérence** : assurez-vous que les images pour la même balise sont visuellement similaires. Il est préférable d’ajouter les balises portant sur les mêmes aspects visuels (par exemple, un même type d’objet dans une image) dans un modèle de balise unique. Par exemple, il n’est pas judicieux de baliser ces images en tant que `my-party` (pour la formation), car ils ne sont pas visuellement similaires.
+**Cohérence** : assurez-vous que les images pour la même balise sont visuellement similaires. Il est préférable d’ajouter les balises portant sur les mêmes aspects visuels (par exemple, un même type d’objet dans une image) dans un modèle de balise unique. Par exemple, il n’est pas recommandé de baliser ces images en `my-party` (pour l’entraînement), car elles ne sont pas visuellement similaires.
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/coherence.png)
 
@@ -123,7 +123,7 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
 1. Créez les balises nécessaires et la structure de balise appropriée. Chargez les images appropriées dans le référentiel de gestion des ressources numériques (DAM).
 1. Dans l’interface utilisateur d’[!DNL Experience Manager], accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Entraînement des balises intelligentes]**.
 1. Cliquez sur **[!UICONTROL Créer]**. Indiquez un **[!UICONTROL titre]** et une **[!UICONTROL description]**.
-1. Cliquez sur l’icône de dossier dans **[!UICONTROL Balises]** champ . Une fenêtre contextuelle s’ouvre.
+1. Cliquez sur l’icône de dossier dans le champ **[!UICONTROL Balises]** . Une fenêtre contextuelle s’ouvre.
 1. Recherchez ou sélectionnez les balises appropriées parmi les balises existantes dans `cq-tags` que vous souhaitez ajouter au modèle. Cliquez sur **[!UICONTROL Suivant]**.
 
    >[!NOTE]

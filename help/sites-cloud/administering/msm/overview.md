@@ -33,7 +33,7 @@ Cette page présente un aperçu de la réutilisation du contenu avec MSM. Les pa
 
 >[!NOTE]
 >
->MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Voir [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Ressources).
+>MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Voir [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Assets).
 
 ## Scénarios possibles {#possible-scenarios}
 
@@ -115,14 +115,14 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Créer un site** (**Sites**)
 
-   * MSM vous aide à gérer plusieurs sites web qui partagent du contenu commun. Par exemple, les sites web sont souvent offerts aux audiences internationales de sorte que la majeure partie du contenu soit commun à tous les pays, avec un sous-ensemble du contenu spécifique à chaque pays. MSM vous permet de [créer des Live Copies qui mettent automatiquement à jour un ou plusieurs sites en fonction de votre site source ;](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Cela vous permet également d’appliquer une structure de base commune, d’utiliser le contenu commun dans tous les sites, de conserver la même apparence et de concentrer les efforts sur la gestion du contenu qui diffère réellement d’un site à l’autre. Créer un site de la manière suivante :
+   * MSM vous aide à gérer plusieurs sites web qui partagent du contenu commun. Par exemple, les sites web sont souvent offerts aux audiences internationales de sorte que la majeure partie du contenu soit commun à tous les pays, avec un sous-ensemble du contenu spécifique à chaque pays. MSM vous permet de [créer des Live Copies qui mettent automatiquement à jour un ou plusieurs sites en fonction de votre site source](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Cela vous permet également d’appliquer une structure de base commune, d’utiliser le contenu commun dans tous les sites, de conserver la même apparence et de concentrer les efforts sur la gestion du contenu qui diffère réellement d’un site à l’autre. Créer un site de la manière suivante :
       * requiert une configuration de plan directeur prédéfinie pour spécifier la source ;
       * crée une Live Copy de la source (prédéfinie).
       * fournit à l’utilisateur ou l’utilisatrice le bouton **Déploiement**.
 
 * **Créer une Live Copy** (**Sites**)
 
-   * MSM vous permet de [créer une Live Copy ad hoc (ponctuelle) d’une page ou sous-branche individuelle d’un site web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Par exemple, la duplication d’une sous-branche afin de fournir des informations sur une nouvelle version/mise à jour d’un produit. Créer une Live Copy de la manière suivante :
+   * MSM vous permet de [créer une Live Copy ad hoc (ponctuelle) d’une page ou sous-branche individuelle d’un site web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Par exemple, la duplication d’une sous-branche pour fournir des informations sur une nouvelle version/mise à jour d’un produit. Créer une Live Copy de la manière suivante :
       * crée une Live Copy ad hoc (aucune configuration de plan directeur requise) ;
       * peut être utilisé pour créer (immédiatement) une Live Copy pour une page ou une branche.
       * Nécessite de **Synchroniser** (ne fournit pas le bouton **Déployer**).
@@ -137,11 +137,11 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Aperçu de la Live Copy** (**Sites**)
 
-   * Cette console vous permet de : [afficher et gérer votre plan directeur et ses Live Copies ;](live-copy-overview.md)
+   * Cette console vous permet de [ visualiser et gérer votre plan directeur et ses Live Copies.](live-copy-overview.md)
 
 * **Plans directeurs** (**Outils** – **Sites**)
 
-   * Cette console vous permet de : [créez et gérez vos configurations de plan directeur.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Cette console vous permet de [ créer et gérer vos configurations de plan directeur.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ Les configurations de déploiement peuvent être réutilisées, de sorte que plu
 
 ### Conflits de déploiement {#rollout-conflicts}
 
-Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs modifient du contenu dans la source et dans la Live Copy. Il est donc utile de savoir comment AEM gère les [conflits pouvant survenir pendant le déploiement.](rollout-conflicts.md)
+Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs modifient du contenu dans la source et dans la Live Copy. Il est donc utile de savoir comment AEM gère les [conflits qui peuvent se produire pendant le déploiement.](rollout-conflicts.md)
 
 ### Suspension et annulation de l’héritage et de la synchronisation {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -328,7 +328,7 @@ Les étapes suivantes décrivent la procédure standard d’utilisation de MSM p
    1. Vous pouvez éventuellement [créer une configuration de déploiement](live-copy-sync-config.md#creating-a-rollout-configuration), le cas échéant.
 
 1. Déterminez où vous devez [spécifier les configurations de déploiement à utiliser](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) et effectuez la configuration selon vos besoins.
-1. Si nécessaire, [créer une configuration de plan directeur ;](creating-live-copies.md#creating-a-blueprint-configuration) qui identifie le contenu source de la Live Copy.
+1. Si nécessaire, [créez une configuration de plan directeur](creating-live-copies.md#creating-a-blueprint-configuration) qui identifie le contenu source de la Live Copy.
 1. [Créez une Live Copy.](creating-live-copies.md#creating-a-live-copy)
 1. Apportez des modifications au contenu source selon vos besoins. Vous devez utiliser le processus normal de révision et d’approbation de contenu établi par votre entreprise.
 1. [Déployez](creating-live-copies.md#rolling-out-a-blueprint) le plan directeur ou [synchronisez la Live Copy](creating-live-copies.md#synchronizing-a-live-copy) avec les modifications.

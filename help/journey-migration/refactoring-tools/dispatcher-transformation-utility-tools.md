@@ -1,6 +1,6 @@
 ---
 title: Outil convertisseur du Dispatcher AEM
-description: Découvrez comment convertir des configurations existantes sur AEM Dispatcher en configurations sur AEM Dispatcher as a Cloud Service.
+description: Découvrez comment convertir des configurations existantes sur AEM Dispatcher en configurations sur AEM as a Cloud Service Dispatcher.
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 feature: Migration
 role: Admin

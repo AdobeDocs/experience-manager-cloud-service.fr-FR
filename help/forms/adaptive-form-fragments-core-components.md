@@ -59,7 +59,7 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
      > Dans les formulaires adaptatifs, vous pouvez utiliser plusieurs fois un fragment de formulaire unique (basé sur des composants principaux). Il prend en charge les fragments de formulaire basés sur des schémas et sans modèle.
 
    * **Schéma** : indique de créer un fragment à partir d’un schéma XML ou JSON chargé dans AEM Forms. Vous pouvez charger ou sélectionner l’un des schémas XML ou JSON comme modèle de formulaire pour le fragment. Lorsque vous sélectionnez un schéma XML, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant un type complexe présent dans le schéma sélectionné à partir de la liste déroulante **[!UICONTROL Type complexe de schéma XML]**. Lorsque vous sélectionnez un schéma JSON, vous pouvez également créer un fragment de formulaire adaptatif en sélectionnant une définition de schéma présente dans le schéma sélectionné à partir de la liste déroulante **[!UICONTROL Définitions de schéma JSON]**.
-   * **Modèle de données de formulaire**: indique de créer le fragment à l’aide d’un modèle de données de formulaire (FDM). Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire (FDM). Développez la liste déroulante Définitions de modèle de données de formulaire (FDM) . Il répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié (FDM). Sélectionnez un objet de modèle de données dans la liste.
+   * **Modèle de données de formulaire** : indique de créer le fragment à l’aide d’un modèle de données de formulaire (FDM). Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire (FDM). Développez la liste déroulante Définitions de modèle de données de formulaire (FDM) . Il répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié (FDM). Sélectionnez un objet de modèle de données dans la liste.
 
    ![Modèle de données de formulaire (FDM)](assets/create-af-3.png)
 
@@ -76,10 +76,10 @@ Pour ajouter un fragment de formulaire adaptatif à un formulaire adaptatif, pro
 
 1. Ouvrez le formulaire adaptatif en mode d’édition.
 1. Ajoutez le composant **Fragment de formulaire adaptatif** au formulaire.
-1. Ouvrez la boîte de dialogue Configuration de **fragment de formulaire adaptatif** composant.
-1. Sélectionnez la variable **Référence de fragment** dans le **De base** . Tous les fragments de formulaires adaptatifs disponibles pour votre formulaire, selon le modèle du formulaire, s’affichent.
+1. Ouvrez la boîte de dialogue Configuration du composant **Fragment de formulaire adaptatif** .
+1. Sélectionnez la **référence au fragment** dans l’onglet **De base**. Tous les fragments de formulaires adaptatifs disponibles pour votre formulaire, selon le modèle du formulaire, s’affichent.
 
-1. Sélectionnez un fragment de formulaire adaptatif dans la **fragment de formulaire adaptatif** sur votre formulaire adaptatif.
+1. Sélectionnez un fragment de formulaire adaptatif sur le composant **Fragment de formulaire adaptatif** de votre formulaire adaptatif.
 
    ![Sélection de l’option Fragments de formulaire adaptatif](/help/forms/assets/adaptive-form-fragment-basic.png)
 

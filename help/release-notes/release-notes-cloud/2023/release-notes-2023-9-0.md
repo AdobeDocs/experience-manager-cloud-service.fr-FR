@@ -28,7 +28,7 @@ La section suivante concerne les notes de mise à jour de la version 2023.9.0 d
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2023.9.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 28 septembre 2023. La prochaine disponibilité des fonctionnalités (2023.10.0) est prévue pour le vendredi 26 octobre 2023.
+La date de publication de la version actuelle (2023.9.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 28 septembre 2023. La prochaine disponibilité des fonctionnalités (2023.10.0) est prévue pour le vendredi 26 octobre 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -42,9 +42,9 @@ Regardez la vidéo de présentation de la version de septembre 2023 pour un rés
 
 ## Edge Delivery Services AEM {#edge-delivery}
 
-Edge Delivery est un nouvel ensemble de services composables axés sur l’optimisation de l’impact du contenu afin de générer des résultats commerciaux mesurables au moment de l’interaction client.
+Edge Delivery est un nouvel ensemble de services composables dont l’objectif est de maximiser l’impact du contenu afin de générer des résultats commerciaux mesurables au moment de l’interaction client.
 
-En savoir plus sur les Edge Delivery Services dans cet article [here](/help/edge/overview.md).
+Pour en savoir plus sur les Edge Delivery Services, reportez-vous à l’article [ici](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,9 +58,9 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 ### Nouvelles fonctionnalités de la vue d’administration {#admin-view-features}
 
-* **Intégration d’AEM Assets as a Cloud Service à la création basée sur les documents pour les Edge Delivery Services**: intégration d’AEM Assets à la création basée sur les documents pour que les Edge Delivery Services puissent permettre aux créateurs de sites web d’ [utiliser des images disponibles dans les référentiels AEM Assets lors de la création de documents dans les documents Microsoft Word ou Google ;](/help/edge/using.md#integrate-assets-edge).
+* **Intégrer AEM Assets as a Cloud Service à la création basée sur les documents pour les Edge Delivery Services** : Intégrez AEM Assets à la création basée sur les documents pour les Edge Delivery Services afin de permettre aux créateurs de sites web d’ [ utiliser les images disponibles dans les référentiels AEM Assets lors de la création de documents dans Microsoft Word ou Google Docs](/help/edge/using.md#integrate-assets-edge).
 
-* **Extraction des archives ZIP**: possibilité de sélectionner les archives ZIP gérées en Experience Manager et [extraction directe des fichiers dans Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sans les télécharger.
+* **Extraire les archives ZIP** : possibilité de sélectionner les archives ZIP gérées en Experience Manager et [extraire directement les fichiers dans Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sans les télécharger.
 
   ![Épinglage d’éléments pour les groupes.](/help/release-notes/assets/extract-archive.png)
 
@@ -97,7 +97,7 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 * **[Amélioration de la gestion des erreurs avec les gestionnaires d’erreurs personnalisés dans l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)** : vous pouvez désormais appeler une fonction personnalisée (à l’aide de la bibliothèque cliente) en réponse à une erreur renvoyée par un service externe et fournir une réponse personnalisée aux utilisateurs et utilisatrices finaux. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client ou la cliente que le service est indisponible.
 
-* **[Version 64 bits d’AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour vous permettre de créer des formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
+* **[Version 64 bits d’AEM Forms Designer](/help/forms/installing-configuring-designer.md)** : la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour vous permettre de créer des formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
 
 ### Programme d’adoption précoce {#forms-early-adopter}
 
@@ -105,7 +105,7 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
   Vous pouvez écrire à `aem-forms-ea@adobe.com` depuis votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.
 
-* **[Forms adaptatif sans affichage](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr)**: utilisez le Forms adaptatif sans affichage pour permettre aux développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs via les API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
+* **[Forms adaptatif sans affichage](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr)** : utilisez le Forms adaptatif sans affichage pour permettre à vos développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs par le biais d’API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
 
    * créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
    * intégrer nativement les formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat ;

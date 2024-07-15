@@ -235,7 +235,7 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 
    * **Nom** `externalStyleSheets`
    * **Type** `String[]` (multichaîne ; cliquez sur **Multi** dans CRXDE)
-   * **Valeurs** Chemin et nom de fichier de chaque feuille de style à inclure. Utilisez les chemins d’accès au référentiel.
+   * **Valeurs** Chemin d’accès et nom de fichier de chaque feuille de style que vous souhaitez inclure. Utilisez les chemins d’accès au référentiel.
 
    >[!NOTE]
    >
@@ -323,7 +323,7 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 ## Configuration des formats de paragraphe {#paraformats}
 
-Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur ou l’autrice peut les sélectionner et les attribuer à l’aide du sélecteur Format. Les exemples de balises block incluent, entre autres, le paragraphe standard. &lt;p> et en-têtes &lt;h1>, &lt;h2>, etc.
+Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur ou l’autrice peut les sélectionner et les attribuer à l’aide du sélecteur Format. Les exemples de balises block incluent, entre autres, le paragraphe standard &lt;p> et les en-têtes &lt;h1>, &lt;h2>, etc.
 
 >[!CAUTION]
 >
@@ -331,7 +331,7 @@ Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise b
 
 >[!NOTE]
 >
->Si une balise block, par exemple, une `<hr>` balise, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour une balise `paraformat` plug-in .
+>Si une balise block, par exemple, une balise `<hr>`, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe `paraformat`.
 
 Lorsque le plug-in Formats de paragraphe est activé pour la première fois, aucun format de paragraphe par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
 
@@ -357,7 +357,7 @@ Pour activer le module externe `paraformat`, procédez comme suit :
 
 >[!CAUTION]
 >
->Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la variable `<p>` est supprimée, puis l’auteur du contenu ne peut pas sélectionner la balise [!UICONTROL Formats de paragraphe] même si d’autres formats sont configurés.
+>Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la balise `<p>` est supprimée, l’auteur du contenu ne peut pas sélectionner l’option [!UICONTROL Formats des paragraphes] même si d’autres formats sont configurés.
 
 ### Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
 
@@ -378,7 +378,7 @@ Les formats de paragraphe sont mis à disposition pour être sélectionnés :
 
    * **Nom** `tag`
    * **Type** `String`
-   * **Valeur** Balise block pour le format, par exemple : p, h1, h2, etc.
+   * **Valeur** La balise block pour le format, par exemple : p, h1, h2, etc.
 
      Vous n’avez pas besoin de saisir les crochets de séparation.
 

@@ -34,7 +34,7 @@ Lisez la suite pour plus de détails sur les diverses tâches et configurations 
 
 >[!NOTE]
 >
->Vous devez être membre des deux **fdm-author** et **forms-user** groupes pour pouvoir créer et utiliser le modèle de données de formulaire (FDM). Contactez votre administrateur [!DNL Experience Manager] pour devenir membre des groupes.
+>Vous devez être membre des groupes **fdm-author** et **forms-user** pour pouvoir créer et utiliser le modèle de données de formulaire (FDM). Contactez votre administrateur [!DNL Experience Manager] pour devenir membre des groupes.
 
 ## Ajout d’objets et de services de modèle de données {#add-data-model-objects-and-services}
 
@@ -44,15 +44,15 @@ Vous pouvez ajouter des objets et des services de modèle de données à partir 
 
 Pour ajouter des objets et services de modèle de données :
 
-1. Connectez-vous au [!DNL Experience Manager] instance d’auteur, accédez à **[!UICONTROL Forms > Intégrations de données]**, puis ouvrez le modèle de données de formulaire (FDM) dans lequel vous souhaitez ajouter des objets de modèle de données.
+1. Connectez-vous à l’instance d’auteur [!DNL Experience Manager], accédez à **[!UICONTROL Forms > Intégrations de données]** et ouvrez le modèle de données de formulaire (FDM) dans lequel vous souhaitez ajouter des objets de modèle de données.
 1. Dans le volet Sources de données, développez les sources de données pour afficher les objets et services de modèle de données disponibles.
-1. Sélectionnez les objets et services de modèle de données à ajouter au modèle de données de formulaire (FDM), puis sélectionnez **[!UICONTROL Ajouter la sélection]**.
+1. Sélectionnez les objets et services de modèle de données à ajouter au modèle de données de formulaire (FDM) et sélectionnez **[!UICONTROL Ajouter la sélection]**.
 
    ![selected-objects](assets/selected-objects.png)
 
    Objets et services de modèle de données sélectionnés
 
-   La variable **[!UICONTROL Modèle]** affiche une représentation graphique de tous les objets de modèle de données et de leurs propriétés ajoutés au modèle de données de formulaire (FDM). Chaque objet de modèle de données est représenté par une case dans le modèle de données de formulaire (FDM).
+   L’onglet **[!UICONTROL Modèle]** affiche une représentation graphique de tous les objets de modèle de données et de leurs propriétés ajoutés au modèle de données de formulaire (FDM). Chaque objet de modèle de données est représenté par une case dans le modèle de données de formulaire (FDM).
 
    ![model-tab](assets/model-tab.png)
 
@@ -86,9 +86,9 @@ Vous pouvez ajouter des objets de modèle de données à partir de sources de do
 
 Pour créer un objet de modèle de données sans sources de données :
 
-1. Connectez-vous au [!DNL Experience Manager] instance d’auteur, accédez à **[!UICONTROL Forms > Intégrations de données]**, puis ouvrez le modèle de données de formulaire (FDM) dans lequel vous souhaitez créer un objet ou une entité de modèle de données.
+1. Connectez-vous à l’instance d’auteur [!DNL Experience Manager], accédez à **[!UICONTROL Forms > Intégrations de données]** et ouvrez le modèle de données de formulaire (FDM) dans lequel vous souhaitez créer un objet ou une entité de modèle de données.
 1. Sélectionnez **[!UICONTROL Créer une entité]**.
-1. Dans le [!UICONTROL Création d’un modèle de données] , spécifiez un nom pour l’objet de modèle de données et sélectionnez **[!UICONTROL Ajouter]**. Un objet de modèle de données est ajouté au modèle de données de formulaire (FDM). L’objet de modèle de données ajouté n’est pas lié à une source de données et n’a aucune propriété comme indiqué dans l’image suivante.
+1. Dans la boîte de dialogue [!UICONTROL Créer un modèle de données], spécifiez un nom pour l’objet de modèle de données et sélectionnez **[!UICONTROL Ajouter]**. Un objet de modèle de données est ajouté au modèle de données de formulaire (FDM). L’objet de modèle de données ajouté n’est pas lié à une source de données et n’a aucune propriété comme indiqué dans l’image suivante.
 
    ![new-entity](assets/new-entity.png)
 
@@ -107,17 +107,17 @@ Pour créer une propriété enfant :
 
    Pour lier manuellement une propriété enfant à une propriété d’objet de modèle de données, sélectionnez l’icône de navigation en regard du champ **[!UICONTROL Référence de liaison]**. La boîte de dialogue **[!UICONTROL Sélection d’objet]** répertorie toutes les propriétés de l’objet modèle de données parent. Sélectionnez une propriété puis l’icône en forme de coche. Notez que vous pouvez uniquement sélectionner une propriété du même type de données que la propriété enfant.
 
-1. Sélectionner **[!UICONTROL Terminé]** pour enregistrer la propriété enfant, puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire (FDM). La propriété enfant est maintenant ajoutée à l’objet de modèle de données.
+1. Sélectionnez **[!UICONTROL Done]** (Terminé) pour enregistrer la propriété enfant et **[!UICONTROL Save]** (Enregistrer) pour enregistrer le modèle de données de formulaire (FDM). La propriété enfant est maintenant ajoutée à l’objet de modèle de données.
 
-Après avoir créé des objets et des propriétés de modèle de données, vous pouvez continuer à créer le Forms adaptatif. <!--and interactive communications--> basé sur le modèle de données de formulaire (FDM). Par la suite, lorsque des sources de données sont disponibles et configurées, vous pouvez lier le modèle de données de formulaire (FDM) à des sources de données. La liaison est automatiquement mise à jour dans les formulaires adaptatifs <!--and interactive communications--> associés. Pour plus d’informations sur la création de Forms adaptatif <!--and interactive communications--> à l’aide du modèle de données de formulaire (FDM), voir [Utiliser le modèle de données de formulaire](using-form-data-model.md).
+Après avoir créé des objets et des propriétés de modèle de données, vous pouvez continuer à créer le Forms adaptatif <!--and interactive communications--> en fonction du modèle de données de formulaire (FDM). Par la suite, lorsque des sources de données sont disponibles et configurées, vous pouvez lier le modèle de données de formulaire (FDM) à des sources de données. La liaison est automatiquement mise à jour dans les formulaires adaptatifs <!--and interactive communications--> associés. Pour plus d’informations sur la création d’un Forms adaptatif <!--and interactive communications--> à l’aide du modèle de données de formulaire (FDM), voir [ Utilisation du modèle de données de formulaire](using-form-data-model.md).
 
 ### Liaison des objets et des propriétés de modèle de données {#bind-data-model-objects-and-properties}
 
-Lorsque les sources de données que vous souhaitez intégrer au modèle de données de formulaire (FDM) sont disponibles, vous pouvez les ajouter au modèle de données de formulaire (FDM), comme décrit dans la section [Mise à jour des sources de données](create-form-data-models.md#update). Ensuite, procédez comme suit pour lier les objets et propriétés de modèle de données non liés :
+Lorsque les sources de données que vous souhaitez intégrer au modèle de données de formulaire (FDM) sont disponibles, vous pouvez les ajouter au modèle de données de formulaire (FDM) comme décrit dans la section [Mettre à jour les sources de données](create-form-data-models.md#update). Ensuite, procédez comme suit pour lier les objets et propriétés de modèle de données non liés :
 
 1. Dans le modèle de données de formulaire, sélectionnez la source de données non liée que vous souhaitez lier à une source de données.
 1. Sélectionnez **[!UICONTROL Modifier les propriétés]**.
-1. Dans le volet **[!UICONTROL Modifier les propriétés]**, sélectionnez l’icône de navigation en regard du champ **[!UICONTROL Liaison]**. Elle ouvre la fenêtre **[!UICONTROL Sélectionner un objet]** qui répertorie les sources de données ajoutées dans le modèle de données de formulaire (FDM).
+1. Dans le volet **[!UICONTROL Modifier les propriétés]**, sélectionnez l’icône de navigation en regard du champ **[!UICONTROL Liaison]**. Elle ouvre la boîte de dialogue **[!UICONTROL Sélectionner l’objet]** qui répertorie les sources de données ajoutées dans le modèle de données de formulaire (FDM).
 
    ![select-object](assets/select-object.png)
 
@@ -160,7 +160,7 @@ Pour lire et écrire des données pour un objet de modèle de données, procéde
    Services de lecture et d’écriture configurés pour la source de données des employés
 
 1. Sélectionnez ![aem_6_3_edit](assets/edit.svg) pour l’argument de service de lecture afin de [lier l’argument à une valeur Attribut du profil utilisateur, Attribut de requête ou Littéral](#bindargument) et spécifiez la valeur de liaison.
-1. Sélectionner **[!UICONTROL Terminé]** pour sauvegarder l&#39;argument, **[!UICONTROL Terminé]** pour enregistrer les propriétés, puis **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire (FDM).
+1. Sélectionnez **[!UICONTROL Done]** pour enregistrer l’argument, **[!UICONTROL Done]** pour enregistrer les propriétés, puis **[!UICONTROL Save]** pour enregistrer le modèle de données de formulaire (FDM).
 
 ### Liaison des arguments du service de lecture {#bindargument}
 
@@ -273,7 +273,7 @@ Pour ajouter une association :
 
    Sélectionnez **[!UICONTROL Terminé]** pour enregistrer l’argument.
 
-1. Sélectionner **[!UICONTROL Terminé]** pour enregistrer l’association, puis **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire (FDM).
+1. Sélectionnez **[!UICONTROL Done]** (Terminé) pour enregistrer l’association, puis **[!UICONTROL Save]** (Enregistrer) pour enregistrer le modèle de données de formulaire (FDM).
 1. Répétez les étapes pour créer plus d’associations si nécessaire.
 
 >[!NOTE]
@@ -301,7 +301,7 @@ Pour modifier les propriétés :
 
    Boîte de dialogue Modifier les propriétés pour un service Get
 
-1. Sélectionner **[!UICONTROL Terminé]** pour enregistrer les propriétés, puis **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire (FDM).
+1. Sélectionnez **[!UICONTROL Done]** (Terminé) pour enregistrer les propriétés, puis **[!UICONTROL Save]** (Enregistrer) pour enregistrer le modèle de données de formulaire (FDM).
 
 ### Créer des propriétés calculées {#computed}
 
@@ -363,13 +363,13 @@ Pour plus d’informations sur les propriétés de navigation, voir la [document
 </EntityType>
 ```
 
-Lorsque vous configurez un service OData dans un modèle de données de formulaire (FDM), toutes les propriétés de navigation d’un conteneur d’entités sont mises à disposition via un service dans le modèle de données de formulaire (FDM). Dans cet exemple de service OData TripPin, les trois propriétés de navigation dans la propriété `Person` le conteneur d’entités peut être lu à l’aide d’un `GET LINK` dans le modèle de données de formulaire (FDM).
+Lorsque vous configurez un service OData dans un modèle de données de formulaire (FDM), toutes les propriétés de navigation d’un conteneur d’entités sont mises à disposition via un service dans le modèle de données de formulaire (FDM). Dans cet exemple de service OData TripPin, les trois propriétés de navigation dans le conteneur d’entités `Person` peuvent être lues à l’aide d’un service `GET LINK` dans le modèle de données de formulaire (FDM).
 
-Ce qui suit met en évidence les `GET LINK of Person /People` dans le modèle de données de formulaire (FDM), qui est un service combiné pour les trois propriétés de navigation dans le `Person` de l’entité du service OData TripPin.
+L’exemple suivant met en évidence le service `GET LINK of Person /People` dans le modèle de données de formulaire (FDM), qui est un service combiné pour les trois propriétés de navigation dans l’entité `Person` du service OData TripPin.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-Une fois que vous avez ajouté la variable `GET LINK` dans l’onglet Services du modèle de données de formulaire (FDM), vous pouvez modifier les propriétés pour choisir l’objet de modèle de sortie et la propriété de navigation à utiliser dans le service. Par exemple, le service `GET LINK of Person /People` dans l’exemple suivant utilise Trip comme objet de modèle de sortie et la propriété de navigation Trips.
+Une fois que vous avez ajouté le service `GET LINK` à l’onglet Services dans le modèle de données de formulaire (FDM), vous pouvez modifier les propriétés pour choisir l’objet de modèle de sortie et la propriété de navigation à utiliser dans le service. Par exemple, le service `GET LINK of Person /People` dans l’exemple suivant utilise Trip comme objet de modèle de sortie et la propriété de navigation Trips.
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
@@ -381,7 +381,7 @@ Dans cet exemple, vous pouvez également choisir l’objet de modèle de sortie 
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-De même, vous pouvez choisir un `GET LINK` et configurez ses propriétés de navigation lors de l’ajout d’associations dans le modèle de données de formulaire (FDM). Toutefois, pour pouvoir sélectionner une propriété de navigation, assurez-vous que le champ **[!UICONTROL Liaison à]** est défini sur **[!UICONTROL Littéral]**.
+De même, vous pouvez choisir un service `GET LINK` et configurer ses propriétés de navigation lors de l’ajout d’associations dans le modèle de données de formulaire (FDM). Toutefois, pour pouvoir sélectionner une propriété de navigation, assurez-vous que le champ **[!UICONTROL Liaison à]** est défini sur **[!UICONTROL Littéral]**.
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
@@ -391,7 +391,7 @@ L’éditeur de modèle de données de formulaire (FDM) vous permet de générer
 
 Procédez comme suit pour générer et modifier des exemples de données :
 
-1. Ouvrez un modèle de données de formulaire (FDM) et sélectionnez **[!UICONTROL Modifier des exemples de données]**. Cela génère et affiche les exemples de données dans la fenêtre Modifier les exemples de données.
+1. Ouvrez un modèle de données de formulaire (FDM) et sélectionnez **[!UICONTROL Modifier les exemples de données]**. Cela génère et affiche les exemples de données dans la fenêtre Modifier les exemples de données.
 
    ![Génération des exemples de données](assets/form_data_model_generate_sample_data_new.png)
 
@@ -403,7 +403,7 @@ Procédez comme suit pour générer et modifier des exemples de données :
 
 Votre modèle de données de formulaire (FDM) est configuré, mais avant de le mettre en service, vous pouvez tester si les objets et services de modèle de données configurés fonctionnent comme prévu. Pour tester les objets et les services de modèle de données :
 
-1. Sélectionnez un objet ou un service de modèle de données dans le modèle de données de formulaire (FDM) et sélectionnez **[!UICONTROL Objet de modèle de test]** ou **[!UICONTROL Service de test]**, respectivement.
+1. Sélectionnez un objet ou un service de modèle de données dans le modèle de données de formulaire (FDM) et sélectionnez respectivement **[!UICONTROL Objet de modèle de test]** ou **[!UICONTROL Service de test]**.
 
    La fenêtre Tester le modèle de données de formulaire s’ouvre.
 
@@ -549,4 +549,4 @@ Une exception s’affiche si les données d’entrée ne répondent pas aux crit
 
 ## Étapes suivantes {#next-steps}
 
-Vous disposez d’un modèle de données de formulaire de travail (FDM) prêt à être utilisé dans Forms adaptatif. <!--and interactive communications--> workflows. Pour plus d’informations, voir [Utilisation du modèle de données de formulaire (FDM)](using-form-data-model.md).
+Vous disposez d’un modèle de données de formulaire de travail (FDM) prêt à l’emploi dans les processus de Forms adaptatif <!--and interactive communications-->. Pour plus d’informations, voir [Utiliser le modèle de données de formulaire (FDM)](using-form-data-model.md).

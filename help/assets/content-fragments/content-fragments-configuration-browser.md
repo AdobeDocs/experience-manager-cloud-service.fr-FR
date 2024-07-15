@@ -41,7 +41,7 @@ Pour utiliser certaines [fonctionnalités de fragments de contenu](#creating-a-c
 
 >[!NOTE]
 >
->Voir [Explorateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Voir [Navigateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >

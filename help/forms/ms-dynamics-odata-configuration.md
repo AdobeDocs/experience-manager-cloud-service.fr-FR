@@ -1,6 +1,6 @@
 ---
-title: Comment configurer [!DNL Microsoft Dynamics] OData pour AEM Forms ?
-description: Découvrez comment créer un modèle de données de formulaire (FDM) basé sur les entités, les attributs et les services définis dans [!DNL Microsoft Dynamics] service.
+title: Comment configurer  [!DNL Microsoft Dynamics] OData pour AEM Forms ?
+description: Découvrez comment créer un modèle de données de formulaire (FDM) basé sur les entités, les attributs et les services définis dans le service  [!DNL Microsoft Dynamics] .
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
@@ -21,11 +21,11 @@ ht-degree: 68%
 
 ![data-integeration](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] est un logiciel de gestion de la relation client (Customer Relationship Management, CRM) et de planification des ressources de l’entreprise (Enterprise Resource Planning, ERP), qui fournit des solutions d’entreprise pour la création et la gestion de comptes clients, de contacts, de prospects, d’opportunités et de dossiers. L’[[!DNL Experience Manager Forms] intégration de données](data-integration.md) fournit une configuration de service cloud OData permettant d’intégrer Forms aux serveurs [!DNL Microsoft Dynamics] On-premise et en ligne. Il vous permet de créer un modèle de données de formulaire (FDM) basé sur les entités, les attributs et les services définis dans [!DNL Microsoft Dynamics] service. Le modèle de données de formulaire (FDM) peut être utilisé pour créer un Forms adaptatif qui interagit avec [!DNL Microsoft Dynamics] pour activer les workflows métier. Par exemple :
+[!DNL Microsoft Dynamics] est un logiciel de gestion de la relation client (Customer Relationship Management, CRM) et de planification des ressources de l’entreprise (Enterprise Resource Planning, ERP), qui fournit des solutions d’entreprise pour la création et la gestion de comptes clients, de contacts, de prospects, d’opportunités et de dossiers. L’[[!DNL Experience Manager Forms] intégration de données](data-integration.md) fournit une configuration de service cloud OData permettant d’intégrer Forms aux serveurs [!DNL Microsoft Dynamics] On-premise et en ligne. Il vous permet de créer un modèle de données de formulaire (FDM) basé sur les entités, les attributs et les services définis dans le service [!DNL Microsoft Dynamics]. Le modèle de données de formulaire (FDM) peut être utilisé pour créer un Forms adaptatif qui interagit avec le serveur [!DNL Microsoft Dynamics] pour activer les processus d’entreprise. Par exemple :
 
 * Demander des données à un serveur [!DNL Microsoft Dynamics] et préremplir des formulaires adaptatifs
 * Écrire des données dans [!DNL Microsoft Dynamics] sur un envoi de formulaires adaptatifs
-* Écriture de données dans [!DNL Microsoft Dynamics] par le biais d’entités personnalisées définies dans le modèle de données de formulaire (FDM) et inversement
+* Écrire des données dans [!DNL Microsoft Dynamics] par le biais d’entités personnalisées définies dans le modèle de données de formulaire (FDM) et inversement
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -34,9 +34,9 @@ ht-degree: 68%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour un événement [!DNL Experience Manager] instance, voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance [!DNL Experience Manager], voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
 
-AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Pour en savoir plus sur ces options, voir [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)  article.
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Vous pouvez en savoir plus sur ces options dans l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) .
 
 
 ## Conditions préalables {#prerequisites}
@@ -129,14 +129,14 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](#cloud-folder).
 
-1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir **[!UICONTROL l’assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, puis sélectionnez **[!UICONTROL Service OData]** de la **[!UICONTROL Type de service]** , vous pouvez également rechercher et sélectionner une miniature pour la configuration, puis sélectionner **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir **[!UICONTROL l’assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 Dans l’onglet **[!UICONTROL Paramètres d’authentification]** :
 
    1. Saisissez la valeur du champ **[!UICONTROL Racine du service]**. Accédez à l’instance Dynamics et à **[!UICONTROL Ressources de développement]** pour afficher la valeur du champ Racine du service. Par exemple, https://&lt;nom-client>/api/data/v9.1/
 
    1. Sélectionnez **[!UICONTROL OAuth 2.0]** comme type d’authentification.
 
-   1. Remplacez les valeurs par défaut dans les champs **[!UICONTROL ID client]** (également appelé **ID d’application**), **[!UICONTROL Secret du client]**, **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]**, **[!UICONTROL URL du jeton d’accès]** et **[!UICONTROL Ressource]** par les valeurs de votre configuration de service [!DNL Microsoft Dynamics]. Il est obligatoire de spécifier l’URL de l’instance de dynamique dans la variable **[!UICONTROL Ressource]** champ à configurer [!DNL Microsoft Dynamics] avec un modèle de données de formulaire (FDM). Utilisez l’URL racine du service pour dériver l’URL de l’instance dynamique. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Remplacez les valeurs par défaut dans les champs **[!UICONTROL ID client]** (également appelé **ID d’application**), **[!UICONTROL Secret du client]**, **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]**, **[!UICONTROL URL du jeton d’accès]** et **[!UICONTROL Ressource]** par les valeurs de votre configuration de service [!DNL Microsoft Dynamics]. Il est obligatoire de spécifier l’URL de l’instance de dynamique dans le champ **[!UICONTROL Resource]** pour configurer [!DNL Microsoft Dynamics] avec un modèle de données de formulaire (FDM). Utilisez l’URL racine du service pour dériver l’URL de l’instance dynamique. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Spécifiez **[!UICONTROL openid]** dans le champ **[!UICONTROL Champ d’application de l’autorisation]** pour la procédure d’autorisation sur [!DNL Microsoft Dynamics].
 
@@ -161,17 +161,17 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Après avoir configuré le service cloud OData de MS Dynamics, vous pouvez utiliser le service lors de la création d’un modèle de données de formulaire (FDM). Pour plus d’informations, voir [Créer un modèle de données de formulaire (FDM)](create-form-data-models.md).
+Après avoir configuré le service cloud OData de MS Dynamics, vous pouvez utiliser le service lors de la création d’un modèle de données de formulaire (FDM). Pour plus d’informations, voir [Création d’un modèle de données de formulaire (FDM)](create-form-data-models.md).
 
 Ensuite, vous pouvez créer un modèle de données de formulaire adaptatif (FDM) et l’utiliser dans divers cas d’utilisation de formulaire adaptatif, tels que :
 
 * Remplir le formulaire adaptatif en obtenant des informations des entités et des services [!DNL Microsoft Dynamics]
-* Appeler [!DNL Microsoft Dynamics] Opérations de serveur définies dans un modèle de données de formulaire (FDM) à l’aide de règles de formulaire adaptatif
+* Appeler [!DNL Microsoft Dynamics] opérations de serveur définies dans un modèle de données de formulaire (FDM) à l’aide de règles de formulaire adaptatif
 * Écrire les données de formulaire envoyées dans les entités [!DNL Microsoft Dynamics]
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
-Vous pouvez [configuration de l’action d’envoi de modèle de données de formulaire](/help/forms/using-form-data-model.md) pour un formulaire adaptatif pour envoyer des données à Microsoft Dynamics OData.
+Vous pouvez [configurer l’action d’envoi de modèle de données de formulaire](/help/forms/using-form-data-model.md) pour un formulaire adaptatif afin d’envoyer des données à Microsoft Dynamics OData.
 
 Pour plus d’informations sur la création et l’utilisation du modèle de données de formulaire (FDM) dans les processus d’entreprise, voir [Intégration de données](data-integration.md).
 

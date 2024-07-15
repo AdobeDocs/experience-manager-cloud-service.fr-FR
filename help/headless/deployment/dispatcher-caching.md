@@ -41,7 +41,7 @@ Pour activer la mise en cache des requêtes persistantes, définissez la variabl
 
 >[!NOTE]
 >
->Pour atteindre un individu `ETag` calcul de l’en-tête sur les requêtes persistantes mises en cache (pour *each* réponse unique) la variable `FileETag Digest` doit être utilisé dans la configuration de Dispatcher configuration d’hôte virtuel (s’il n’existe pas déjà) :
+>Pour obtenir un calcul d’en-tête `ETag` individuel sur les requêtes persistantes masquées (pour *chaque réponse* unique), le paramètre `FileETag Digest` doit être utilisé dans la configuration de l’hôte virtuel de la configuration du Dispatcher (s’il n’existe pas déjà) :
 >
 >```xml
 ><Directory />    

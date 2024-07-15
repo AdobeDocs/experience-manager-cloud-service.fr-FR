@@ -21,7 +21,7 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) pour afficher les actions disponibles.
 1. Sélectionnez **Accéder à la page** pour ouvrir la page à modifier.
 
-Lors de la modification de la page, une indication s’affiche dans la barre d’outils supérieure, ainsi que le **Laisser** et **Naviguer** options :
+Lors de la modification de la page, une indication s’affiche dans la barre d’outils supérieure, ainsi que les options **Leave** et **Navigate** :
 
 ![Quitter et Naviguer apparaissent depuis l’éditeur de page](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

@@ -59,7 +59,7 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] est autorisé à avoir une instance [!DNL Brand Portal] préconfigurée. L’utilisateur de [!DNL Cloud Manager] peut activer [!DNL Brand Portal] dans [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Consultez [Activation de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr).
 
-* Les entreprises peuvent désormais approvisionner des ressources à l’aide de [!DNL Brand Portal]. La fonctionnalité d’approvisionnement des ressources utilise les [!DNL Brand Portal] pour aider les clients à interagir avec les utilisateurs de l’agence afin de sources de ressources pour de nouvelles campagnes marketing, séances photo et projets. Voir [Approvisionnement des ressources dans [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr).
+* Les entreprises peuvent désormais approvisionner des ressources à l’aide de [!DNL Brand Portal]. La fonctionnalité d’approvisionnement des ressources utilise [!DNL Brand Portal] pour aider les clients à interagir avec les utilisateurs de l’agence pour sources de ressources pour de nouvelles campagnes marketing, séances photo et projets. Voir [Approvisionnement des ressources dans [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr).
 
 * Le rapport d’utilisation de [!DNL Brand Portal] n’affiche désormais que les utilisateurs actifs. Les utilisateurs inactifs ne s’affichent pas. Les utilisateurs principaux sont ceux dont le compte est affecté à un profil de produit dans l’[!DNL Admin Console]. Voir la section relative aux rapports [[!DNL Brand Portal] ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=fr).
 
@@ -80,9 +80,9 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 * Propriétés étendues de la console de produits pour afficher les ressources liées et les fragments d’expérience, y compris les actions permettant d’accéder rapidement au contenu associé.
 
-* Publication CIF site de référence Venia - 2021.02.24 qui comprend la dernière version de CIF Core Components v1.8.0. Voir [Site de référence Venia CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) pour plus d’informations.
+* Publication CIF site de référence Venia - 2021.02.24 qui comprend la dernière version de CIF Core Components v1.8.0. Pour plus d’informations, voir [CIF site de référence Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) .
 
-* Publication CIF composants principaux v1.8.0. Voir [CIF composants principaux](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) pour plus d’informations.
+* Publication CIF composants principaux v1.8.0. Pour plus d’informations, voir [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) .
 
 ## Cloud Manager {#cloud-manager}
 
@@ -166,4 +166,4 @@ Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-m
 ### Correctifs {#bug-fixes-crt}
 
 * Plusieurs correctifs ont été apportés à Repository Modernizer.
-Voir [Ressource GitHub : aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus d’informations.
+Pour plus d’informations, voir [Ressource GitHub : aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) .

@@ -24,7 +24,7 @@ Cet article décrit la procédure d’utilisation du processus de traduction AEM
 
 Le service de traduction automatique traduit directement le contenu de vos formulaires adaptatifs et documents d’enregistrement. [!DNL AEM Forms] est préconfiguré pour utiliser une version d’évaluation de [!DNL Microsoft Translator] pour la traduction automatique. Procédez comme suit pour activer la traduction automatique pour les formulaires adaptatifs et le document d’enregistrement :
 
-1. Sur le [!DNL AEM Forms] , sélectionnez un formulaire, puis le **Ajouter un dictionnaire** .
+1. Dans l’interface utilisateur de [!DNL AEM Forms], sélectionnez un formulaire, puis l’option **Ajouter un dictionnaire** .
 1. Dans l’écran **Ajouter un dictionnaire au projet de traduction**, sélectionnez l’option **Créer un nouveau projet de traduction** ou **Ajouter à un projet de traduction existant**.
 1. Dans le champ **Titre du projet**, indiquez le titre, par exemple `Government Reference Site - German locale.`
 1. Dans le champ **Langues cibles**, spécifiez un paramètre régional (par exemple `German(de)`), puis cliquez sur **Terminé**. Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**.

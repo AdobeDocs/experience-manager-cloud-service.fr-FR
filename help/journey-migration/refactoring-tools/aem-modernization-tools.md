@@ -1,6 +1,6 @@
 ---
 title: Outils de modernisation d’AEM
-description: Découvrez la suite d’utilitaires qui peuvent être utilisés pour convertir les fonctionnalités d’AEM héritées en fonctionnalités modernes et prises en charge par AEM as a Cloud Service.
+description: Découvrez la suite d’utilitaires qui peuvent être utilisés pour convertir les fonctionnalités d’AEM héritées en fonctionnalités modernes et prises en charge d’AEM as a Cloud Service.
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
 feature: Migration
 role: Admin

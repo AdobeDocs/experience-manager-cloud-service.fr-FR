@@ -19,7 +19,7 @@ Le module complémentaire AEM Assets pour Adobe Express vous permet d’accéder
 
 ## Conditions préalables {#prerequisites}
 
-Droits d’accès à Adobe Express et à au moins un environnement dans AEM Assets. L’environnement peut être l’un des référentiels dans Assets as a Cloud Service ou Assets Essentials.
+Droits d’accès à Adobe Express et à au moins un environnement dans AEM Assets. L’environnement peut être l’un des référentiels dans les Assets Essentials as a Cloud Service ou Assets.
 
 
 ## Ajout d’un module complémentaire AEM Assets à Adobe Express {#access-assets-addon}
@@ -30,13 +30,13 @@ Effectuez les étapes suivantes pour ajouter le module complémentaire AEM Asset
 
 1. Ouvrez un nouveau canevas vierge en chargeant un nouveau modèle ou projet ou en créant une ressource.
 
-1. Cliquez sur **[!UICONTROL Modules complémentaires]** disponible dans le volet de navigation de gauche.
+1. Cliquez sur **[!UICONTROL Add-ons]** dans le volet de navigation de gauche.
 
-1. Spécifier **[!UICONTROL AEM Assets]** dans la barre de recherche disponible en haut de la page [!UICONTROL Modules complémentaires] et cliquez sur le module complémentaire AEM Assets.
+1. Spécifiez **[!UICONTROL AEM Assets]** dans la barre de recherche disponible en haut de la section [!UICONTROL Modules complémentaires] et cliquez sur le module complémentaire AEM Assets.
 
    ![Module complémentaire AEM Assets](assets/aem-assets-add-on.png)
 
-1. Cliquez sur **[!UICONTROL Ajouter]**. Le module complémentaire s’affiche dans la liste des **[!UICONTROL Vos modules complémentaires]** . Cliquez à nouveau sur le module complémentaire pour afficher le contenu dans le volet de navigation de droite. Le module complémentaire affiche la liste des référentiels auxquels vous avez droit, ainsi que la liste des ressources et des dossiers disponibles au niveau racine.
+1. Cliquez sur **[!UICONTROL Ajouter]**. Le module complémentaire s’affiche dans la liste de **[!UICONTROL Vos modules complémentaires]** . Cliquez à nouveau sur le module complémentaire pour afficher le contenu dans le volet de navigation de droite. Le module complémentaire affiche la liste des référentiels auxquels vous avez droit, ainsi que la liste des ressources et des dossiers disponibles au niveau racine.
 
    Utilisez la barre de recherche pour rechercher les ressources que vous devez utiliser dans la zone de travail.
 
@@ -57,11 +57,11 @@ Après avoir ajouté le module complémentaire AEM Assets à Adobe Express, vous
 
 Après avoir incorporé les modifications appropriées dans la zone de travail express, vous pouvez les enregistrer dans le référentiel AEM Assets.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]** pour ouvrir le **[!UICONTROL Télécharger]** boîte de dialogue.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour ouvrir la boîte de dialogue **[!UICONTROL Télécharger]**.
 1. Spécifiez le nom et le format de la ressource. Vous pouvez enregistrer le contenu du canevas au format PNG ou JPEG.
 
-1. Cliquez sur l’icône de dossier située en regard de la propriété **[!UICONTROL Emplacement]** , accédez à l’emplacement où vous devez enregistrer la ressource, puis cliquez sur **[!UICONTROL Sélectionner]**. Le nom du dossier s’affiche dans la variable **[!UICONTROL Emplacement]** champ .
+1. Cliquez sur l’icône de dossier en regard du champ **[!UICONTROL Emplacement]**, accédez à l’emplacement où vous devez enregistrer la ressource, puis cliquez sur **[!UICONTROL Sélectionner]**. Le nom du dossier s’affiche dans le champ **[!UICONTROL Location]** .
 
-1. Cliquez sur **[!UICONTROL Télécharger]** pour charger la ressource dans AEM Assets.
+1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger la ressource vers AEM Assets.
 
-   ![Enregistrement des ressources dans AEM](assets/aem-assets-add-on-save.png)
+   ![Enregistrer des ressources dans AEM](assets/aem-assets-add-on-save.png)

@@ -8,7 +8,7 @@ exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 71%
+ht-degree: 85%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 71%
 
 La gestion des ressources Dynamic Media (vidéo, d’image et interactives) chargées implique de nombreuses tâches, notamment l’aperçu, le téléchargement ou la publication de ces ressources.
 
-Lors de la prévisualisation, vous pouvez également appliquer des paramètres d’image prédéfinis (pour les images uniquement) ou des paramètres prédéfinis de visionneuse (pour la vidéo et les images). Vous ne pouvez pas appliquer les deux à une ressource. Voir [Application de paramètres prédéfinis de visionneuse](viewer-presets.md) et [Application de paramètres d’image prédéfinis](image-presets.md).
+Lors de la prévisualisation, vous pouvez également appliquer des paramètres d’image prédéfinis (pour les images uniquement) ou des paramètres de visionneuse prédéfinis (pour la vidéo et les images). Vous ne pouvez pas appliquer les deux à une ressource. Voir [Application de paramètres prédéfinis de visionneuse](viewer-presets.md) et [Application de paramètres d’image prédéfinis](image-presets.md).
 
 Pour des informations générales sur la gestion des ressources, consultez [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/manage-digital-assets.md).
 

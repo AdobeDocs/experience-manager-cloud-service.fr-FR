@@ -18,7 +18,7 @@ ht-degree: 75%
 
 Si vous constatez ce que vous pensez être un comportement erroné ou une erreur dans MSM, avant de procéder à un dépannage en profondeur, assurez-vous de vérifier les points suivants :
 
-* Vérifiez les [FAQ sur MSM](#faq) parce que vos problèmes ou questions peuvent déjà être traités là-bas.
+* Consultez la [FAQ MSM](#faq) car vos problèmes ou questions peuvent déjà y être abordés.
 * Consultez l’[article sur les bonnes pratiques MSM](best-practices.md), car plusieurs conseils y sont proposés, ainsi que des clarifications sur certaines idées fausses.
 
 ## Recherche d’informations avancées sur votre plan et le statut de Live Copy {#advanced-info}
@@ -43,7 +43,7 @@ Les versions précédentes des servlets renvoyaient des informations calculées 
 
 * Type de mixin `cq:LiveSync`
    * Il est défini sur les nœuds `jcr:content` et définit les pages racine Live Copy.
-   * Ces pages ont une `cq:LiveSyncConfig` noeud enfant de type `cq:LiveCopy` qui contient des informations de base et obligatoires sur la Live Copy via les propriétés suivantes :
+   * Ces pages ont un noeud enfant `cq:LiveSyncConfig` de type `cq:LiveCopy` qui contient des informations de base et obligatoires sur la Live Copy via les propriétés suivantes :
       * `cq:master` pointe vers la page de plan directeur de la Live Copy.
       * `cq:rolloutConfigs` indique les configurations de déploiement principal appliquées à la Live Copy.
       * `cq:isDeep` est « true » si les pages enfants de cette page racine de Live Copy sont incluses dans la Live Copy.
@@ -72,7 +72,7 @@ Consultez [cet article](best-practices.md) pour plus d’informations à ce suje
 
 ### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 
-Il n’y a pas de **déploiement** privilège pouvant être défini ou supprimé pour les entités de Adobe Experience Manager (utilisateurs ou groupes).
+Il n’existe aucun privilège **rollout** pouvant être défini ou supprimé pour les entités de Adobe Experience Manager (utilisateurs ou groupes).
 
 Vous pouvez cependant :
 
@@ -83,7 +83,7 @@ Vous pouvez cependant :
 
 Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une page Live Copy si elle n’existe pas encore. Par exemple, lorsqu’elle a été déployée pour la première fois ou que la page Live Copy a été supprimée manuellement.
 
-Dans ce cas, toutefois, si une page sans `cq:LiveRelationship` existe avec le même nom, cette page est renommée de sorte qu’elle soit antérieure à la création de la page Live Copy.
+Dans ce cas, cependant, si une page sans propriété `cq:LiveRelationship` porte le même nom, cette page est renommée avant la création de la page Live Copy.
 
 Par défaut, le déploiement attend une page Live Copy liée sur laquelle les mises à jour des plans directeurs sont déployées. Ou, il ne s’attend à aucune page lors de la création d’une page Live Copy.
 

@@ -181,7 +181,7 @@ Experience Manager Assets prend en charge deux types d’utilisateurs selon leu
 
 #### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques (DAM) {#creative-users-with-direct-access-to-dam}
 
-En règle générale, les équipes créatives internes ou les agences/professionnels de la création intégrés au réseau interne ont accès à l’instance DAM, y compris la connexion au Experience Manager. Experience Manager et l’infrastructure réseau peuvent être configurés afin d’autoriser un accès direct aux parties externes (généralement, des entreprises de confiance telles que des agences travaillant pour un client) pour disposer d’un accès à Experience Manager via le réseau (par le biais de la liste adresses IP autorisées ou d’un VPN, par exemple).
+En règle générale, les équipes créatives internes ou les agences/professionnels de la création intégrés au réseau interne ont accès à l’instance DAM, y compris la connexion Experience Manager. Experience Manager et l’infrastructure réseau peuvent être configurés afin d’autoriser un accès direct aux parties externes (généralement, des entreprises de confiance telles que des agences travaillant pour un client) pour disposer d’un accès à Experience Manager via le réseau (par le biais de la liste adresses IP autorisées ou d’un VPN, par exemple).
 
 Dans ce cas, Adobe Asset Link ou l’application de bureau Experience Manager permet d’accéder facilement aux ressources finales/approuvées et d’enregistrer les ressources préparées par les créatifs dans la gestion des ressources numériques (DAM).
 

@@ -5,7 +5,7 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
 workflow-type: tm+mt
 source-wordcount: '1737'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -96,7 +96,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    La barre d’outils de l’émulateur affiche des options de mise en page supplémentaires :
 
-   * **Rotation du périphérique** - Permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage) et inversement.
+   * **Rotation de l’appareil** : permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage), et inversement.
 
    ![Bouton Rotation de l’appareil - Paysage](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Bouton Rotation de l’appareil - Portrait](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -136,14 +136,14 @@ Un **conteneur de mise en page** est un système de paragraphes qui présente le
 >
 >S’il n’est pas encore disponible, le **conteneur de mise en page** doit être explicitement activé pour un système de paragraphes ou une page. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). À partir de là, vous pouvez le faire glisser vers l’emplacement requis sur la page, après lequel vous pouvez voir la variable **Faites glisser les composants ici** espace réservé.
+1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). À partir de là, vous pouvez le faire glisser vers l’emplacement requis sur la page, après lequel vous pouvez voir l’espace réservé **Faire glisser les composants ici** .
 1. Vous pouvez ensuite ajouter des composants au conteneur de mise en page, qui contiendront le contenu proprement dit :
 
    ![Conteneur de mise en page](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
 ## Sélection et exécution d’une action sur un conteneur de mise en page (mode d’édition) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Comme pour les autres composants, vous pouvez sélectionner un conteneur de mises en page, puis agir sur ce dernier (couper, copier, supprimer) (en cas d’insertion dans **Modifier** mode) :
+Comme pour les autres composants, vous pouvez sélectionner un conteneur de mises en page, puis agir sur ce dernier (couper, copier, supprimer) (en mode **Modifier** ) :
 
 >[!CAUTION]
 >
@@ -202,7 +202,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
   ![Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* Dans **Disposition** vous pouvez sélectionner le mode **Faire glisser des composants ici** pour sélectionner le composant entier. La barre d’outils s’affiche pour ce mode.
+* En mode **Mise en page** , vous pouvez sélectionner le **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils s’affiche pour ce mode.
 
   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 

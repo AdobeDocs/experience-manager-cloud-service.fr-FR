@@ -109,13 +109,13 @@ Veuillez tenir compte du fait que l’ingestion entière échoue si l’une des 
 Comparé à la section ci-dessus, l’ingestion n’échoue **pas** en raison des problèmes de ressources suivants. Toutefois, il est vivement recommandé de prendre les mesures appropriées dans ces scénarios :
 
 * Toute ressource dont le rendu original est manquant.
-* Tout dossier manquant `jcr:content` noeud .
+* Tout dossier qui comporte un noeud `jcr:content` manquant.
 
 Les deux éléments ci-dessus sont identifiés et signalés dans le rapport de [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 ## Liste de contrôle de mise en production {#Go-Live-Checklist}
 
-Pour plus d’informations, consultez la [Liste de contrôle d’activation](/help/journey-onboarding/go-live-checklist.md) la documentation.
+Pour plus d’informations, consultez la documentation [Liste de contrôle d’activation](/help/journey-onboarding/go-live-checklist.md) .
 
 ## Prochaines étapes {#what-is-next}
 

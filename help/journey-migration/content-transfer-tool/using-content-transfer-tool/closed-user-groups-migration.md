@@ -31,16 +31,16 @@ Les entités principales (y compris les groupes) sont automatiquement incluses d
 
 La vérification du groupe et de ses membres doit être effectuée avant la mise en ligne. Le rapport Principal, téléchargé via la vue Tâche d’ingestion, peut être utilisé pour déterminer si le groupe en question a été inclus ou non parce qu’il ne faisait pas partie d’une liste de contrôle d’accès ou d’une stratégie de CUG.
 
-Ensuite, les processus doivent être déclenchés et les propriétés doivent être définies pour activer les CUG. Pour ce faire, republiez toutes les pages associées à une stratégie de CUG. Cette opération calibre l’instance de publication pour effectuer le suivi des stratégies.
+Ensuite, les processus doivent être déclenchés et les propriétés doivent être définies pour activer les CUG. Pour ce faire, republiez toutes les pages associées à une stratégie de CUG. Cela permet d’étalonner l’instance Publish pour effectuer le suivi des stratégies.
 
-Cela active les stratégies de CUG lors de la publication et le contenu n’est accessible que pour les utilisateurs authentifiés qui sont membres du groupe associé aux stratégies.
+Cela active les stratégies de CUG sur Publish et le contenu n’est accessible que pour les utilisateurs authentifiés qui sont membres du groupe associé aux stratégies.
 
 ## Résumé
 
 En résumé, voici les étapes pour activer CUG après une migration :
 
-1. Assurez-vous que chaque groupe utilisé dans les stratégies de CUG existe sur Publier après la migration.
+1. Vérifiez que chaque groupe utilisé dans les stratégies de CUG existe sur Publish après la migration.
    - Un groupe peut exister s’il est inclus dans la stratégie de CUG d’un contenu migré ou dans la liste de contrôle d’accès de ce contenu.
-   - Si ce n’est pas le cas, utilisez Packages pour l’installer sur l’instance de destination (ou créez-la manuellement) et l’activer ainsi que ses membres. Vérifiez ensuite qu’il existe sur la publication.
+   - Si ce n’est pas le cas, utilisez Packages pour l’installer sur l’instance de destination (ou créez-la manuellement) et l’activer ainsi que ses membres. Vérifiez ensuite qu’il existe sur Publish.
 1. Republiez toutes les pages associées à une stratégie de CUG, en vous assurant qu’elles sont publiées, par exemple en modifiant d’abord la page. Il est important de tous les republier.
    - Une fois toutes les pages republiées, vérifiez la fonctionnalité de chaque page protégée par un groupe d’utilisateurs fermé.

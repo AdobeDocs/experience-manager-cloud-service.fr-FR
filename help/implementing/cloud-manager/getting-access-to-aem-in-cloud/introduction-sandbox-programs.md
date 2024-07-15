@@ -25,7 +25,7 @@ Le programme Sandbox est l’un des deux types de programmes disponibles dans AE
 
 ## Création automatique {#auto-creation}
 
-Les programmes Sandbox proposent la création automatique. Chaque fois que vous créez un programme d’environnement de test, Cloud Manager :
+Les programmes Sandbox proposent la création automatique. Chaque fois que vous créez un programme Sandbox, Cloud Manager automatiquement :
 
 * Ajout d’AEM Sites et d’AEM Assets en tant que solutions dans votre programme.
 * Configuration d’un référentiel git de projet avec un exemple de projet basé sur l’[archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)

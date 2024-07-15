@@ -69,7 +69,7 @@ Pour vous abonner aux événements, procédez comme suit :
 1. Statut du projet : sélectionnez le statut pour lequel le projet doit être défini afin de créer le dossier lié.
 1. Créer un dossier lié dans les projets avec un portfolio : liste des portfolios auxquels le projet doit appartenir pour créer le dossier lié. Laissez cette liste vide pour créer le dossier lié pour l’ensemble du portefeuille de projets.
 1. Créer un dossier lié dans les projets avec un champ de formulaire personnalisé : champ de formulaire personnalisé et valeur correspondante que le projet doit avoir pour créer le dossier lié. Cette configuration est ignorée si elle n’est pas renseignée. Sélectionnez `CUSTOM FORMS: Create DAM Linked Folder` pour le champ et saisissez `Yes` pour la valeur.
-1. Configurer l’autorisation : configurez ces autorisations. `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` pour le `wf-workfront-users group`.
+1. Configurer l’autorisation : configurez ces autorisations, `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` pour le `wf-workfront-users group`.
 1. Cliquez sur Activer la création automatique de dossiers liés. Si vous revenez à l’onglet Abonnements aux événements, un événement de création est désormais disponible.
 
 ![configuration des dossiers liés](/help/assets/assets/wf-linked-folder-config.png)
@@ -86,7 +86,7 @@ Pour configurer les mappages, procédez comme suit :
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sélectionnez le formulaire de schéma de métadonnées de dossier à modifier, puis cliquez sur Modifier.
 1. Sélectionnez le champ de formulaire de schéma de métadonnées de dossier que vous souhaitez modifier, puis sélectionnez l’onglet Paramètres dans le panneau de droite.
-1. Dans [!UICONTROL Mappé à partir du champ Workfront] , sélectionnez le nom du champ Workfront que vous souhaitez mapper à la propriété de dossier AEM sélectionnée. Les options disponibles sont les suivantes :
+1. Dans le champ [!UICONTROL Mappé à partir du champ Workfront] , sélectionnez le nom du champ Workfront que vous souhaitez mapper à la propriété de dossier AEM sélectionnée. Les options disponibles sont les suivantes :
 
    * Champs de formulaire personnalisé du projet
    * Champs de présentation du projet (ID, nom, description, numéro de référence, date d’achèvement prévue, propriétaire du projet, parrain du projet, Portfolio ou programme)
@@ -100,9 +100,9 @@ Le mappage des métadonnées entre les documents Adobe Workfront et les ressour
 Pour configurer les mappages, procédez comme suit :
 
 1. Accédez à **Outils** > **Ressources** > **Schémas de métadonnées**.
-1. Sélectionnez le formulaire de schéma de métadonnées à modifier, puis cliquez sur **Modifier** ou créer entièrement un schéma de métadonnées.
-1. Sélectionnez le champ de formulaire de schéma de métadonnées à modifier, puis sélectionnez **Paramètres** dans le panneau de droite.
-1. Dans [!DNL Workfront] Champ de formulaire personnalisé : sélectionnez le nom du champ [!DNL Workfront] champ à mapper à la propriété AEM sélectionnée. Les options disponibles sont les suivantes :
+1. Sélectionnez le formulaire de schéma de métadonnées à modifier et cliquez sur **Modifier** ou créez un schéma de métadonnées à partir de zéro.
+1. Sélectionnez le champ de formulaire de schéma de métadonnées à modifier, puis sélectionnez l’onglet **Paramètres** dans le panneau de droite.
+1. Dans [!DNL Workfront] Champ de formulaire personnalisé, sélectionnez le nom du champ [!DNL Workfront] que vous souhaitez mapper à la propriété AEM sélectionnée. Les options disponibles sont les suivantes :
 
    * Champs de formulaire personnalisé du document
    * Champs de formulaire personnalisé du projet
@@ -110,7 +110,7 @@ Pour configurer les mappages, procédez comme suit :
    * Champs de formulaire personnalisé de la tâche
    * Champs de présentation du projet (ID, nom, description ou numéro de référence)
 
-1. Dans le cas où la variable [!DNL Workfront] champ sélectionné dans [!UICONTROL Champ de formulaire personnalisé Workfront] est un champ de type Utilisateur Workfront , il est nécessaire de spécifier le champ Utilisateur Workfront à mapper. Pour ce faire, cochez la case Obtenir la valeur du champ d’objet référencé de Workfront, puis indiquez le nom du [!UICONTROL Champ de formulaire personnalisé Utilisateur Workfront] à partir duquel récupérer la valeur à mapper.
+1. Dans le cas où le champ [!DNL Workfront] sélectionné dans [!UICONTROL Workfront Custom Form Field] est un champ de type Utilisateur Workfront, il est nécessaire de spécifier le champ Utilisateur Workfront que vous souhaitez mapper. Pour ce faire, cochez la case Obtenir la valeur du champ d’objet référencé de Workfront, puis indiquez le nom du [!UICONTROL Champ de formulaire personnalisé Utilisateur Workfront] à partir duquel récupérer la valeur à mapper.
 
    ![configuration du mappage de métadonnées](/help/assets/assets/wf-metadata-mapping-config1.png)
 

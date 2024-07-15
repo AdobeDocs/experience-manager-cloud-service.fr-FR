@@ -36,14 +36,14 @@ Supposons que vous souhaitiez afficher des métadonnées en cascade en fonction 
 
 Sans tenir compte du type de ressource choisi, affichez les informations de copyright comme étant un champ requis.
 
-1. Sélectionnez la variable [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
-1. Dans le **[!UICONTROL Forms du schéma]** page, sélectionnez un formulaire de schéma, puis sélectionnez **[!UICONTROL Modifier]** dans la barre d’outils pour éditer le schéma.
+1. Sélectionnez le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Schémas de métadonnées]**.
+1. Sur la page **[!UICONTROL Forms de schéma]**, sélectionnez un formulaire de schéma, puis sélectionnez **[!UICONTROL Modifier]** dans la barre d’outils pour modifier le schéma.
 
    ![select_form](assets/select_form.png)
 
 1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ à conditionner. Spécifiez un nom et un chemin de propriété dans l’onglet **[!UICONTROL Paramètres]**.
 
-   Pour créer un onglet, sélectionnez `+` pour ajouter un onglet, puis ajouter un champ de métadonnées.
+   Pour créer un onglet, sélectionnez `+` pour ajouter un onglet, puis ajoutez un champ de métadonnées.
 
    ![add_tab](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. Les paires clé-valeur sont les options fournies à un utilisateur ou une utilisatrice de formulaire. Vous pouvez fournir les paires clé-valeur manuellement ou à partir d’un fichier JSON.
 
-   * Pour spécifier les valeurs manuellement, sélectionnez **[!UICONTROL Ajouter manuellement]**, puis sélectionnez **[!UICONTROL Ajouter un choix]** et indiquez le texte et la valeur de l’option. Par exemple, spécifiez les types de ressources Vidéo, PDF, Word et Image.
+   * Pour spécifier les valeurs manuellement, sélectionnez **[!UICONTROL Ajouter manuellement]**, puis **[!UICONTROL Ajouter un choix]** et spécifiez le texte et la valeur de l’option. Par exemple, spécifiez les types de ressources Vidéo, PDF, Word et Image.
 
    * Pour récupérer dynamiquement les valeurs d’un fichier JSON, sélectionnez **[!UICONTROL Ajouter via le chemin JSON]** et indiquez le chemin d’accès au fichier JSON. [!DNL Experience Manager] récupère les paires clé/valeur en temps réel lorsque le formulaire est présenté à l’utilisateur.
 
@@ -80,7 +80,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Sous **[!UICONTROL Condition requise]**, sélectionnez l’option **[!UICONTROL Requis, d’après la nouvelle règle]**.
-1. Sélectionner **[!UICONTROL Ajouter une règle]** et sélectionnez la variable **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur de champ sur laquelle vous souhaitez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Sélectionner **[!UICONTROL Terminé]** pour enregistrer les modifications.
+1. Sélectionnez **[!UICONTROL Ajouter une règle]** et choisissez le champ **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur de champ sur laquelle vous souhaitez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les modifications.
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,7 +90,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. Sous **[!UICONTROL Visibilité]**, sélectionnez l’option **[!UICONTROL Visible, d’après la nouvelle règle]**.
 
-1. Sélectionner **[!UICONTROL Ajouter une règle]** et sélectionnez la variable **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur du champ sur lequel vous souhaitez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Sélectionner **[!UICONTROL Terminé]** pour enregistrer les modifications.
+1. Sélectionnez **[!UICONTROL Ajouter une règle]** et choisissez le champ **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur du champ sur lequel vous souhaitez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les modifications.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 

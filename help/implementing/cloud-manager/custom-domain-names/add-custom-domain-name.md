@@ -22,23 +22,23 @@ Vous pouvez ajouter un nom de domaine personnalisé à partir de deux emplacemen
 
 >[!NOTE]
 >
->Un utilisateur doit disposer de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour ajouter un nom de domaine personnalisé dans Cloud Manager. Vous devez utiliser le réseau de diffusion de contenu Fastly.
+>Un utilisateur doit disposer du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour ajouter un nom de domaine personnalisé dans Cloud Manager. Vous devez utiliser le réseau de diffusion de contenu Fastly.
 
 ## Ajout d’un nom de domaine personnalisé à partir de la page Paramètres du domaine {#adding-cdn-settings}
 
 Lors de l’ajout d’un nom de domaine personnalisé, le domaine est diffusé à l’aide du certificat valide le plus spécifique. Si plusieurs certificats ont le même domaine, la mise à jour la plus récente est choisie. Adobe recommande de gérer les certificats de sorte qu’il n’y ait pas de chevauchement de domaines.
 
-Procédez comme suit pour ajouter un nom de domaine personnalisé à partir du **Paramètres de domaine** page. Ces étapes sont basées sur Fastly. Si vous utilisez un autre CDN, vous devez configurer votre domaine avec le CDN que vous avez choisi d’utiliser.
+Suivez ces étapes pour ajouter un nom de domaine personnalisé à partir de la page **Paramètres de domaine**. Ces étapes sont basées sur Fastly. Si vous utilisez un autre CDN, vous devez configurer votre domaine avec le CDN que vous avez choisi d’utiliser.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. Accédez au **Paramètres de domaine** dans le panneau de navigation de gauche.
+1. Accédez à l’onglet **Paramètres de domaine** dans le panneau de navigation de gauche.
 
    ![Fenêtre Paramètres du domaine](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Cliquez sur le bouton **Ajouter un domaine** en haut à droite pour ouvrir la **Ajouter un nom de domaine** boîte de dialogue.
+1. Cliquez sur le bouton **Ajouter un domaine** en haut à droite pour ouvrir la boîte de dialogue **Ajouter un nom de domaine** .
 
    ![Boîte de dialogue Ajouter un domaine](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -64,7 +64,7 @@ Consultez [Vérification du statut du nom de domaine personnalisé](/help/implem
 
 >[!TIP]
 >
->Consultez l’article suivant sur la nécessité de [Ajouter un CNAME ou un enregistrement suivant](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) pour éviter de doubler l’effort lors de l’ajout d’enregistrements DNS à votre domaine personnalisé. L’entrée TXT et le CNAME ou un enregistrement peuvent être définis simultanément sur le serveur DNS qui gouverne.
+>Consultez l’article suivant sur la nécessité de [ajouter un CNAME ou un enregistrement suivant](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) pour éviter de doubler l’effort lors de l’ajout d’enregistrements DNS à votre domaine personnalisé. L’entrée TXT et le CNAME ou un enregistrement peuvent être définis simultanément sur le serveur DNS qui gouverne.
 
 >[!TIP]
 >

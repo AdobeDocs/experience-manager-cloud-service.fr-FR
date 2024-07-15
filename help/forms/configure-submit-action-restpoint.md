@@ -15,13 +15,13 @@ ht-degree: 61%
 
 # Configuration d’un formulaire adaptatif pour une action d’envoi point de fin REST
 
-Utilisez la variable **[!UICONTROL Envoyer vers le point de fin REST]** action pour publier les données envoyées vers une URL REST. L’URL peut être celle d’un serveur interne (le serveur sur lequel le formulaire est rendu) ou externe.
+Utilisez l’action **[!UICONTROL Submit to REST Endpoint]** pour publier les données envoyées vers une URL REST. L’URL peut être celle d’un serveur interne (le serveur sur lequel le formulaire est rendu) ou externe.
 
-AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Pour en savoir plus sur ces options, voir [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)  article.
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Vous pouvez en savoir plus sur ces options dans l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) .
 
 ## Avantages
 
-Certains des avantages de la configuration de la variable **[!UICONTROL Envoyer vers le point de fin REST]** les actions d’envoi pour Adaptive Forms sont les suivantes :
+Voici quelques-uns des avantages de la configuration de l’action d’envoi **[!UICONTROL Envoyer vers le point de terminaison REST]** pour le Forms adaptatif :
 
 * Il permet une intégration transparente des données de formulaire avec des systèmes et services externes via les API RESTful.
 * Il offre une certaine flexibilité pour gérer les envois de données depuis Forms adaptatif, en prenant en charge des structures de données dynamiques et complexes.
@@ -35,8 +35,8 @@ Pour configurer l’action d’envoi :
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
-1. Dans la **[!UICONTROL Action Envoyer]** liste déroulante, sélectionnez **[!UICONTROL Envoyer vers le point de terminaison REST]**.
-   ![Configuration des actions du point de fin Submit to Rest](/help/forms/assets/submit-action-restendpoint.png)
+1. Dans la liste déroulante **[!UICONTROL Submit Action]** , sélectionnez **[!UICONTROL Submit to Rest endpoint]**.
+   ![Configuration de l’action du point de terminaison Submit to Rest](/help/forms/assets/submit-action-restendpoint.png)
 
    Pour publier des données sur un serveur interne, indiquez le chemin de la ressource. Les données sont publiées avec le chemin de la ressource. Par exemple, `/content/restEndPoint`. Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
 

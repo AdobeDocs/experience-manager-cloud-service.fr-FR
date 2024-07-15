@@ -17,7 +17,7 @@ L’import en bloc dans la vue AEM Assets permet aux administrateurs et adminis
 
 >[!NOTE]
 >
->L’importateur en masse d’affichage des ressources utilise le même serveur principal que celui de l’importateur en masse d’affichage administrateur. Cependant, il offre davantage de sources de données à importer et une expérience utilisateur plus simplifiée.
+>L’importateur en masse d’affichage Assets utilise le même serveur principal que celui de l’importateur en masse d’affichage administrateur. Cependant, il offre davantage de sources de données à importer et une expérience utilisateur plus simplifiée.
 
 Vous pouvez importer des ressources à partir des sources de données suivantes :
 
@@ -155,7 +155,7 @@ Lorsque vous importez des ressources ou des dossiers en bloc, [!DNL Experience M
 
 Lors de l’importation en bloc, [!DNL Experience Manager] recherche les dossiers existants pour éviter de réimporter les ressources et les dossiers et vérifie également les règles d’assainissement appliquées dans le dossier parent où l’importation a lieu. Si les règles d’assainissement sont appliquées dans le dossier parent, les mêmes règles sont appliquées à la source d’importation. Pour une nouvelle importation, les règles d’assainissement suivantes sont appliquées pour gérer les noms de fichiers des ressources et dossiers.
 
-Pour plus d’informations sur les noms interdits, la gestion des noms de ressources et la gestion des noms de dossiers lors de l’importation en bloc, voir [Gestion des noms de fichier lors de l’importation en bloc dans la vue d’administration](add-assets.md##filename-handling-bulkimport).
+Pour plus d’informations sur les noms interdits, la gestion des noms de ressources et la gestion des noms de dossiers lors de l’importation en masse, voir [ Gestion des noms de fichier lors de l’importation en masse dans la vue d’administration](add-assets.md##filename-handling-bulkimport).
 
 ## Afficher les configurations d’import en bloc existantes {#view-import-configuration}
 
@@ -214,6 +214,6 @@ Cliquez sur l’![icône Plus](assets/do-not-localize/more-icon.svg) corresponda
 
 Pour afficher l’emplacement cible des ressources où les ressources sont importées après l’exécution de la tâche d’import en bloc, cliquez sur l’![icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de la configuration, puis sur **[!UICONTROL Afficher les ressources]**.
 
-## Vidéo : Importation en bloc de ressources à l’aide de la vue Assets
+## Vidéo : Importation de ressources en bloc à l’aide de la vue Assets
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428012)

@@ -8,7 +8,7 @@ discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '994'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -74,7 +74,7 @@ Vous pouvez accéder aux données utilisateur et les supprimer d’une instance 
 Toutefois, dans les scénarios suivants d’identification des workflows associés à un initiateur ou une initiatrice, l’identification peut échouer ou les résultats peuvent être ambigus :
 
 * **Workflow déclenché par un dossier de contrôle** : il est impossible d’identifier une instance de workflow à l’aide de son initiateur ou initiatrice si le workflow est déclenché par un dossier de contrôle. Dans ce cas, les informations utilisateur sont codées dans les données stockées.
-* **Workflow lancé à partir de l’instance de publication AEM**: toutes les instances de workflow sont créées à l’aide d’un utilisateur de service lorsqu’un Forms adaptatif ou des lettres sont envoyés à partir de l’instance de publication AEM. Dans ce cas, le nom d’utilisateur de la personne connectée n’est pas capturé dans les données de l’instance de workflow.
+* **Workflow initié à partir de l’instance d’AEM de publication** : toutes les instances de workflow sont créées à l’aide d’un utilisateur de service lorsqu’un Forms adaptatif ou des lettres sont envoyées à partir de l’instance de publication AEM. Dans ce cas, le nom d’utilisateur de la personne connectée n’est pas capturé dans les données de l’instance de workflow.
 
 ### Accès aux données utilisateur {#access}
 
@@ -137,7 +137,7 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
 
    1. Accédez à `https://'[server]:[port]'/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Workflow > Instances]**.
-   1. Sélectionnez les instances de workflow appropriées pour l’utilisateur et sélectionnez **[!UICONTROL Arrêter]** pour arrêter les instances en cours d’exécution.
+   1. Sélectionnez les instances de workflow appropriées pour l’utilisateur ou l’utilisatrice et sélectionnez **[!UICONTROL Arrêter]** pour arrêter les instances en cours d’exécution.
 
       Pour plus d’informations sur l’utilisation des instances de workflow, voir [Gestion des instances de workflow](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=fr#authoring).
 
@@ -161,4 +161,4 @@ Vous pouvez également utiliser des API pour accéder aux nœuds et propriétés
 
 >[!MORELIKETHIS]
 >
->* [Utilisation du processus AEM Forms pour l’automatisation des processus d’entreprise](/help/forms/aem-forms-workflow.md)
+>* [Utiliser le workflow AEM Forms pour l’automatisation des processus d’entreprise](/help/forms/aem-forms-workflow.md)

@@ -27,7 +27,7 @@ Si vous connaissez les modèles de page [dans une implémentation AEM complète,
 
 Un administrateur n’a besoin de créer une configuration qu’une seule fois, ou très rarement lorsqu’un nouvel espace de travail est nécessaire pour organiser vos modèles de contenu. Pour les besoins de ce guide de prise en main, il suffit de créer une configuration.
 
-1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils > Général > Explorateur de configuration**.
+1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Outils > Général > Navigateur de configuration**.
 1. Indiquez un **Titre** et un **Nom** pour votre configuration.
    * Le **Titre** doit être descriptif.
    * Le **nom** deviendra celui du nœud dans le référentiel.
@@ -39,7 +39,7 @@ Un administrateur n’a besoin de créer une configuration qu’une seule fois, 
 
    ![Création d’une configuration](../assets/create-configuration.png)
 
-1. Sélectionner **Créer**
+1. Sélectionnez **Créer**
 
 Vous pouvez créer plusieurs configurations si nécessaire. Les configurations peuvent également être imbriquées.
 

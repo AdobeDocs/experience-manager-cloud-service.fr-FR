@@ -175,7 +175,7 @@ Pour configurer l’outil dʼimportation en bloc, procédez comme suit :
 
 1. Indiquez un titre pour la configuration de lʼimportation en bloc dans le champ **[!UICONTROL Titre]**.
 
-1. Sélectionnez le type de source de données dans la **[!UICONTROL Importer la source]** liste déroulante.
+1. Sélectionnez le type de source de données dans la liste déroulante **[!UICONTROL Importer Source]** .
 
 1. Indiquez les valeurs permettant de créer une connexion avec la source de données. Par exemple, si vous sélectionnez **Stockage Azure Blob** comme source de données, spécifiez les valeurs du compte de stockage Azure, du conteneur dʼobjets blob Azure et de la clé d’accès Azure.
 

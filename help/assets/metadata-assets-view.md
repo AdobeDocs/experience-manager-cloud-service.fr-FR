@@ -80,7 +80,7 @@ La vue Assets utilise la séquence suivante pour rechercher des noms de formulai
 Formulaire de sous-type MIME > Type MIME > `default` > Formulaire prêt à l’emploi
 
 Par exemple, si un formulaire de métadonnées portant le nom `PDF` ou `pdf` existe, les documents PDF chargés contiennent des champs de métadonnées tels que définis dans le formulaire. Si un formulaire de métadonnées du nom de `PDF` ou `pdf` n’existe pas, la vue Assets vérifie s’il existe un formulaire de métadonnées du nom de `application`. S’il existe un formulaire de métadonnées du nom de `application`, les documents PDF chargés contiennent les champs de métadonnées définis dans le formulaire. Si la vue Assets ne trouve toujours pas de formulaire de métadonnées correspondant, il recherche le formulaire de métadonnées `default` pour appliquer les champs de métadonnées définis dans le formulaire aux documents PDF chargés. Si aucune de ces étapes ne fonctionne, la vue Assets applique les champs de métadonnées définis dans le formulaire d’usine à tous les documents de PDF chargés.
-Si vous souhaitez affecter un formulaire de métadonnées à un dossier [see](#assign-metadata-form-folder).
+Cependant, si vous souhaitez attribuer un formulaire de métadonnées à un dossier [voir](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >

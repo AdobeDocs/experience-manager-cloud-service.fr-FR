@@ -7,7 +7,7 @@ docset: aem65
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 57%
+ht-degree: 80%
 
 ---
 
@@ -18,7 +18,7 @@ Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de vis
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] La version de Designer permet de modifier le message affiché sur la page zéro. Pour modifier le message de la page zéro, procédez comme suit :
+La version [!DNL AEM Forms] de Designer vous permet de modifier le message affiché sur la page zéro. Pour modifier le message de la page zéro, procédez comme suit :
 
 1. Assurez-vous que la version [!DNL AEM Forms] de Designer est installée. Vous pouvez vérifier la version dans l’écran A propos de Designer.
 
@@ -29,7 +29,7 @@ Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de vis
 1. Dans la boîte de dialogue [!UICONTROL Propriétés du formulaire], cliquez sur le signe ![plus](assets/plus.png) (icône plus) pour ajouter une propriété personnalisée.
 
 1. Spécifiez **_pagezerocontent** en tant que nom de propriété.
-1. Ajoutez le nouveau message Page zéro, au format Texte enrichi, en tant que valeur. Par exemple :
+1. Ajoutez le nouveau message de la page zéro, au format de texte enrichi, en tant que valeur. Par exemple :
 
 
    `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`
@@ -42,9 +42,9 @@ Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de vis
 
 >[!NOTE]
 >
->La propriété personnalisée que vous avez créée peut ne pas s’afficher correctement dans la boîte de dialogue Propriétés du formulaire lors de la réouverture du formulaire. Cependant, il fonctionne correctement et le formulaire affiche le message mis à jour de la page zéro.
+>La propriété personnalisée que vous avez créée peut ne pas s’afficher correctement dans la boîte de dialogue Propriétés du formulaire lors de la réouverture du formulaire. Cependant, elle fonctionne correctement et le formulaire affiche le message mis à jour de la page zéro.
 
 >[!MORELIKETHIS]
 >
->* [Télécharger et installer Forms Designer pour créer des modèles de document d’enregistrement](/help/forms/installing-configuring-designer.md)
+>* [ Télécharger et installer Forms Designer pour créer des modèles de document d’enregistrement](/help/forms/installing-configuring-designer.md)
 >* [Utilisez Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire ?](/help/forms/use-forms-designer.md)

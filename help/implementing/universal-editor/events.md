@@ -17,23 +17,23 @@ Découvrez les différents événements que l’éditeur universel envoie et que
 
 ## Présentation {#introduction}
 
-Les applications peuvent avoir des exigences différentes pour les mises à jour de page ou de composant. Par conséquent, l’éditeur universel envoie des événements définis aux applications distantes. Si l’application distante n’a pas d’écouteur d’événement personnalisé pour l’événement envoyé, une [écouteur d’événement de secours](#fallback-listeners) fourni par la fonction `universal-editor-cors` est exécuté.
+Les applications peuvent avoir des exigences différentes pour les mises à jour de page ou de composant. Par conséquent, l’éditeur universel envoie des événements définis aux applications distantes. Si l’application distante n’a pas d’écouteur d’événement personnalisé pour l’événement envoyé, un [écouteur d’événement de secours](#fallback-listeners) fourni par le package `universal-editor-cors` est exécuté.
 
-Tous les événements sont appelés sur l’élément DOM affecté de la page distante. Les événements sont propagés à la variable `BODY` élément où l’écouteur d’événement par défaut fourni par la variable `universal-editor-cors` est enregistré. Il existe des événements pour le contenu et des événements pour l’interface utilisateur.
+Tous les événements sont appelés sur l’élément DOM affecté de la page distante. Les événements se propagent jusqu’à l’élément `BODY` où l’écouteur d’événement par défaut fourni par le package `universal-editor-cors` est enregistré. Il existe des événements pour le contenu et des événements pour l’interface utilisateur.
 
 Tous les événements suivent une convention d’affectation des noms.
 
 * `aue:<content-or-ui>-<event-name>`
 
-Par exemple : `aue:content-update` et `aue:ui-select`
+Par exemple, `aue:content-update` et `aue:ui-select`
 
-Les événements incluent la charge utile de la requête et de la réponse et sont déclenchés une fois que l’appel correspondant a réussi. Pour plus d’informations sur les appels et des exemples de leurs payloads, consultez le document . [Appels universels de l’éditeur.](/help/implementing/universal-editor/calls.md)
+Les événements incluent la charge utile de la requête et de la réponse et sont déclenchés une fois que l’appel correspondant a réussi. Pour plus d’informations sur les appels et des exemples de leurs payloads, consultez le document [Appels Universal Editor.](/help/implementing/universal-editor/calls.md)
 
 ## Événements de mise à jour de contenu {#content-events}
 
 ### aue:content-add {#content-add}
 
-La variable `aue:content-add` est déclenché lorsqu’un nouveau composant est ajouté à un conteneur.
+L’événement `aue:content-add` est déclenché lorsqu’un nouveau composant est ajouté à un conteneur.
 
 La payload est le contenu du service Universal Editor, avec le contenu de secours de la définition du composant.
 
@@ -55,7 +55,7 @@ La payload est le contenu du service Universal Editor, avec le contenu de secour
 
 ### aue:content-details {#content-details}
 
-La variable `aue:content-details` est déclenché lorsqu’un composant est chargé dans le rail des propriétés.
+L’événement `aue:content-details` est déclenché lorsqu’un composant est chargé dans le rail des propriétés.
 
 La payload est le contenu du composant et éventuellement son schéma.
 
@@ -72,7 +72,7 @@ La payload est le contenu du composant et éventuellement son schéma.
 
 ### aue:content-move {#content-move}
 
-La variable `aue:content-move` est déclenché lorsqu’un composant est déplacé.
+L’événement `aue:content-move` est déclenché lorsqu’un composant est déplacé.
 
 La charge utile est le composant, le conteneur source et le conteneur cible.
 
@@ -91,7 +91,7 @@ La charge utile est le composant, le conteneur source et le conteneur cible.
 
 ### aue:content-patch {#content-patch}
 
-La variable `aue:content-patch` est déclenché lorsque les données d’un composant sont mises à jour dans le rail des propriétés.
+L’événement `aue:content-patch` est déclenché lorsque les données d’un composant sont mises à jour dans le rail des propriétés.
 
 La payload est un correctif JSON des propriétés mises à jour.
 
@@ -110,7 +110,7 @@ La payload est un correctif JSON des propriétés mises à jour.
 
 ### aue:content-remove {#content-remove}
 
-La variable `aue:content-remove` est déclenché lorsqu’un composant est supprimé d’un conteneur.
+L’événement `aue:content-remove` est déclenché lorsqu’un composant est supprimé d’un conteneur.
 
 La payload est l’identifiant de l’élément du composant supprimé.
 
@@ -126,7 +126,7 @@ La payload est l’identifiant de l’élément du composant supprimé.
 
 ### aue:content-update {#content-update}
 
-La variable `aue:content-update` est déclenché lorsque les propriétés d’un composant sont mises à jour en contexte.
+L’événement `aue:content-update` est déclenché lorsque les propriétés d’un composant sont mises à jour en contexte.
 
 La payload est la valeur mise à jour.
 
@@ -182,13 +182,13 @@ Payload de réponse
 
 ### aue:ui-publish {#ui-publish}
 
-La variable `aue:ui-publish` se déclenche lorsque le contenu est publié (avec un appel au niveau de la fonction `BODY` niveau).
+L’événement `aue:ui-publish` est déclenché lorsque le contenu est publié (avec appel au niveau `BODY`).
 
 La payload est une liste d’identifiants d’élément et de leur état de publication.
 
 ### aue:ui-select {#ui-select}
 
-La variable `aue:ui-select` est déclenché lorsqu’un composant est sélectionné.
+L’événement `aue:ui-select` est déclenché lorsqu’un composant est sélectionné.
 
 La charge utile correspond à l’identifiant de l’élément, aux propriétés de l’élément et au type d’élément du composant sélectionné.
 
@@ -205,7 +205,7 @@ La charge utile correspond à l’identifiant de l’élément, aux propriétés
 
 ### aue:ui-preview {#ui-preview}
 
-La variable `aue:ui-preview` est déclenché lorsque le mode de modification de la page est remplacé par **Aperçu**.
+L’événement `aue:ui-preview` est déclenché lorsque le mode de modification de la page est remplacé par **Preview**.
 
 La payload est vide pour cet événement.
 
@@ -217,7 +217,7 @@ La payload est vide pour cet événement.
 
 ### aue:ui-edit {#ui-edit}
 
-La variable `aue:ui-edit` est déclenché lorsque le mode de modification de la page est remplacé par **Modifier**.
+L’événement `aue:ui-edit` est déclenché lorsque le mode de modification de la page est remplacé par **Edit**.
 
 La payload est vide pour cet événement.
 
@@ -229,7 +229,7 @@ La payload est vide pour cet événement.
 
 ### aue:ui-viewport-change {#ui-viewport-change}
 
-La variable `aue:ui-viewport-change` est déclenché lorsque la taille de la fenêtre d’affichage est modifiée.
+L’événement `aue:ui-viewport-change` est déclenché lorsque la taille de la fenêtre d’affichage est modifiée.
 
 La payload est les dimensions de la fenêtre d’affichage.
 
@@ -244,7 +244,7 @@ La payload est les dimensions de la fenêtre d’affichage.
 
 ### aue:initialized {#initialized}
 
-La variable `aue:initialized` est déclenché pour faire savoir à la page distante qu’elle est correctement chargée dans Universal Editor.
+L’événement `aue:initialized` est déclenché pour informer la page distante qu’elle est correctement chargée dans l’éditeur universel.
 
 La payload est vide pour cet événement.
 
@@ -265,7 +265,7 @@ La payload est vide pour cet événement.
 | `aue:content-move` | Déplacer le contenu/la structure du composant vers la zone cible |
 | `aue:content-patch` | Rechargement de page |
 | `aue:content-remove` | Suppression de l’élément DOM |
-| `aue:content-update` | Mettez à jour le `innerHTML` avec la payload |
+| `aue:content-update` | Mettre à jour `innerHTML` avec la payload |
 
 ### Événements de l’interface utilisateur {#ui-event-fallbacks}
 
@@ -273,8 +273,8 @@ La payload est vide pour cet événement.
 |---|---|
 | `aue:ui-publish` | Ne rien faire |
 | `aue:ui-select` | Accédez à l’élément sélectionné |
-| `aue:ui-preview` | Ajouter `class="adobe-ue-preview"` à la balise de HTML |
-| `aue:ui-edit` | Ajouter `class=adobe-ue-edit"` à la balise de HTML |
+| `aue:ui-preview` | Ajouter `class="adobe-ue-preview"` à la balise d’HTML |
+| `aue:ui-edit` | Ajouter `class=adobe-ue-edit"` à la balise d’HTML |
 | `aue:ui-viewport-change` | Ne rien faire |
 | `aue:initialized` | Ne rien faire |
 

@@ -113,7 +113,7 @@ Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est cr�
 
    ![Propriétés du composant texte](assets/external-spa-text-properties.png)
 
-   Ces valeurs sont transmises en tant que propriétés à la propriété créée. `AEMText` React et peut être utilisé pour effectuer le rendu du contenu.
+   Ces valeurs sont transmises en tant que propriétés au composant React `AEMText` créé et peuvent être utilisées pour effectuer le rendu du contenu.
 
    ```javascript
    import React from 'react';
@@ -358,7 +358,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 1. Vérifiez la modification de la page dans AEM.
 
-   * Déployez le projet pour AEM et accédez au `test` page. Le contenu de la page est désormais rendu et les composants AEM sont modifiables.
+   * Déployez le projet pour AEM et accédez à la page `test` créée. Le contenu de la page est désormais rendu et les composants AEM sont modifiables.
 
 ## Restrictions du framework {#framework-limitations}
 

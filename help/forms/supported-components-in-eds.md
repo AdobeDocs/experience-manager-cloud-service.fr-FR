@@ -1,40 +1,40 @@
 ---
 title: Composants de formulaire AEM Forms Edge Delivery Services
-description: Les Edge Delivery Services AEM Forms conçus pour des performances optimales vous permettent d’envisager l’avenir de la collecte de données rationalisée et de l’engagement des utilisateurs. L’article répertorie tous les composants de formulaire disponibles prêts à l’emploi pour les formulaires EDD.
+description: Les services AEM Forms Edge Delivery Services, conçus pour des performances élevées, vous permettent d’envisager l’avenir d’une collecte de données et d’une interaction client rationalisées. L’article répertorie tous les composants de formulaire disponibles prêts à l’emploi pour les formulaires EDD.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
 
 
 
-# Composants de HTML pris en charge dans la diffusion Edge du bloc de formulaire
+# Composants HTML pris en charge dans Edge Delivery de bloc de formulaire
 
 AEM Forms Edge Delivery comprend un bloc de formulaire. Le bloc de formulaire vous permet de créer facilement des formulaires pour capturer et stocker des données capturées.
 
-Le bloc Formulaire prend en charge les composants HTML-5 prêts à l’emploi tels que le texte, l’email, le numéro, la date, etc. Il prend également en charge les éléments de zone de texte, de sélection et d’ensemble de champs. Il comprend également des fonctions de validation d’entrée natives de HTML-5. Le bloc de formulaire crée une structure de HTML uniforme pour tous les types de champs et conteneurs, assurant ainsi la cohérence. Vous pouvez également [style des types de champ](https://adobe-rnd.github.io/form-block/customization/styling_form) en utilisant la variable `form.css` fichier .
+Le bloc Formulaire prend en charge les composants HTML-5 prêts à l’emploi tels que le texte, l’email, le numéro, la date, etc. Il prend également en charge les éléments de zone de texte, de sélection et d’ensemble de champs. Il comprend également des fonctionnalités de validation d’entrée natives à HTML-5. Le bloc de formulaire crée une structure d’HTML uniforme pour tous les types de champs et conteneurs, assurant ainsi la cohérence. Vous [stylisez également les types de champ](https://adobe-rnd.github.io/form-block/customization/styling_form) à l’aide du fichier `form.css`.
 
-## Types d’entrée de HTML 5 pris en charge dans le bloc de formulaire
+## Types d’entrée d’HTML pris en charge 5 dans le bloc de formulaire
 
-Le bloc de formulaire prend en charge divers types d’entrée de HTML 5 et effectue le rendu transparent des formulaires créés avec les composants principaux d’AEM.
+Le bloc de formulaire prend en charge divers types d’entrée d’HTML 5 et effectue le rendu transparent des formulaires créés avec les composants principaux d’AEM.
 
-Voici le tableau qui décrit la manière dont les composants principaux correspondent à leurs types d’entrée HTML-5 dans la diffusion Edge :
+Le tableau suivant décrit la manière dont les composants principaux correspondent à leurs types d’entrée HTML-5 dans Edge Delivery :
 
 <table>
  <tbody>
   <tr>
    <td><b>Composants principaux</b> </td>
-   <td><b>Type d’entrée HTML 5</b> </td>
+   <td><b>Type d’entrée d’HTML 5</b> </td>
    <td><b>Détails</b></td>
   </tr>
   <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html">Conteneur de formulaires</a></td>
+   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html">Conteneur de formulaire</a></td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#form">formulaire </td>
    <td> Créez un formulaire pour capturer les entrées utilisateur.
    </td>
@@ -47,16 +47,16 @@ Voici le tableau qui décrit la manière dont les composants principaux correspo
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input.html">Entrée de nombre</a></td>
    <td><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number">nombre</a></td>
-   <td>Permet à l’utilisateur de saisir un nombre. Vous pouvez également ajouter une validation intégrée pour rejeter les entrées non numériques. Permet à l’utilisateur de saisir un nombre. Vous pouvez également ajouter une validation intégrée pour rejeter les entrées non numériques. Au départ, le champ de saisie s'affiche sous forme d'une entrée numérique. Si un utilisateur applique un modèle d’affichage, celui-ci se transforme en texte pour permettre à l’auteur d’appliquer la mise en forme des nombres, puisque le HTML 5 ne prend pas en charge les modèles d’affichage. Cependant, lorsque l’utilisateur clique dessus, il revient à saisir des nombres.</td>
+   <td>Permet à l’utilisateur de saisir un nombre. Vous pouvez également ajouter une validation intégrée pour rejeter les entrées non numériques. Permet à l’utilisateur de saisir un nombre. Vous pouvez également ajouter une validation intégrée pour rejeter les entrées non numériques. Au départ, le champ de saisie s'affiche sous forme d'une entrée numérique. Si un utilisateur applique un modèle d’affichage, celui-ci se transforme en texte pour permettre à l’auteur d’appliquer le formatage des nombres, car l’HTML 5 ne prend pas en charge les modèles d’affichage. Cependant, lorsque l’utilisateur clique dessus, il revient à saisir des nombres.</td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker.html">Sélecteur de date</a></td>
    <td><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date">date </a></td>
-   <td> Créez un champ de saisie pour saisir une date. Vous avez la possibilité de saisir la date soit par le biais d’une zone de texte, qui valide l’entrée, soit par le biais d’une interface de sélecteur de date dédiée. Au départ, le champ de saisie de date natif s’affiche. Si un utilisateur applique un modèle d’affichage, celui-ci se transforme en texte pour permettre à l’utilisateur d’appliquer une mise en forme, car le HTML 5 ne prend pas en charge les modèles d’affichage. Cependant, lorsque l’utilisateur clique dessus, il revient à saisir une date.</td>
+   <td> Créez un champ de saisie pour saisir une date. Vous avez la possibilité de saisir la date soit par le biais d’une zone de texte, qui valide l’entrée, soit par le biais d’une interface de sélecteur de date dédiée. Au départ, le champ de saisie de date natif s’affiche. Si un utilisateur applique un modèle d’affichage, celui-ci se transforme en texte pour permettre à l’utilisateur d’appliquer une mise en forme, car l’HTML 5 ne prend pas en charge les modèles d’affichage. Cependant, lorsque l’utilisateur clique dessus, il revient à saisir une date.</td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment.html">Pièce jointe</a></td>
-   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file">fichier</a></td>
+   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file">Fichier</a></td>
    <td> Permet à l’utilisateur de choisir un ou plusieurs fichiers dans le stockage de l’appareil. Il prend en charge les validations d’entrée de fichier améliorées, telles que les types de fichiers acceptés, les restrictions de taille de fichier et les limites de sélection de fichier minimales/maximales. </td>
   </tr>
   <tr>
@@ -110,7 +110,7 @@ Voici le tableau qui décrit la manière dont les composants principaux correspo
    <td> Permet à l’utilisateur de saisir et de modifier une adresse électronique. Si l’utilisateur ajoute plusieurs attributs, une liste d’adresses email peut être ajoutée ou modifiée.</td>
   </tr>
    <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/telephone-input.html">Entrée du téléphone</a></td>
+   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/telephone-input.html">Entrée téléphonique</a></td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel">tel</a></td>
    <td>Permet à l’utilisateur de saisir et de modifier un numéro de téléphone.</td>
   </tr>

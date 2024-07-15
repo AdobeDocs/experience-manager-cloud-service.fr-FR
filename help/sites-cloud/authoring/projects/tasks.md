@@ -50,7 +50,7 @@ Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour affich
 
 #### Détails de la tâche {#task-details}
 
-Pour plus d’informations sur une tâche particulière, dans la liste Tâches, sélectionnez la tâche et **Ouvrir**.
+Pour plus d’informations sur une tâche particulière, dans la liste des tâches, sélectionnez la tâche et **Ouvrir**.
 
 ![Détails de la tâche](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -66,7 +66,7 @@ Vous pouvez ajouter de nouvelles tâches aux projets. Ces tâches apparaissent e
 
 Pour ajouter une tâche, procédez comme suit :
 
-1. Dans le projet, dans la variable **Tâche** , sélectionnez l’icône + . La fenêtre **Ajouter une tâche** s’affiche.
+1. Dans le projet, dans la mosaïque **Tâches**, sélectionnez l’icône + . La fenêtre **Ajouter une tâche** s’affiche.
 1. Saisissez des informations sur la tâche. Le titre de la tâche et le groupe auquel elle est affectée sont obligatoires. Des informations supplémentaires telles que le chemin d’accès au contenu, la description, la priorité de la tâche et la date d’échéance sont facultatives. En outre, vous pouvez sélectionner l’onglet **Avancé** pour saisir le nom de la tâche, qui est utilisé pour nommer l’URL.
 
    ![Ajouter une tâche](/help/sites-cloud/authoring/assets/projects-add-task.png)

@@ -44,7 +44,7 @@ Pour gérer les propriétés de balisage des couleurs pour les images :
 
 1. Spécifiez le format d’affichage de la balise de couleur dans le champ **[!UICONTROL Format d’affichage]**. Les options possibles incluent le nom de la couleur, le RGB ou le format HEX.
 
-1. Indiquez le nombre de couleurs que vous souhaitez baliser pour les images dans la variable **[!UICONTROL Limite]** champ . Ces couleurs s’affichent lorsque vous consultez les propriétés d’une image. Vous pouvez définir un nombre compris entre un et 40 dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
+1. Indiquez le nombre de couleurs que vous souhaitez baliser pour les images dans le champ **[!UICONTROL Limite]**. Ces couleurs s’affichent lorsque vous consultez les propriétés d’une image. Vous pouvez définir un nombre compris entre un et 40 dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
 
 1. Indiquez le pourcentage de couverture colorimétrique minimal pour inclure une balise de couleur dans les résultats de recherche dans le champ **[!UICONTROL % de seuil de couverture/dominance]**. Par exemple, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 9 % dans ce champ, l’image est incluse lorsque vous recherchez des images de couleur rouge. Cependant, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 11 % dans ce champ, l’image n’est pas incluse lorsque vous recherchez des images comprenant la couleur rouge.
 
@@ -106,21 +106,21 @@ Pour ajouter le composant Balises de couleurs intelligentes à l’éditeur des 
 
 ## Balises de couleurs pour les images existantes dans la gestion des ressources numériques (DAM) {#color-tags-existing-images}
 
-Les images existantes dans la gestion des actifs numériques ne sont pas balisées automatiquement par la couleur. [!UICONTROL Retraiter les ressources] manuellement pour générer des balises de couleur.
+Les images existantes dans la gestion des actifs numériques ne sont pas balisées automatiquement par la couleur. [!UICONTROL Retraiter Assets] manuellement pour générer des balises de couleur pour ces utilisateurs.
 
 Pour baliser les images ou les dossiers (y compris les sous-dossiers) de ressources qui existent dans le référentiel de ressources, procédez comme suit :
 
 1. Sélectionnez le logo [!DNL Adobe Experience Manager], puis les ressources dans la page [!UICONTROL Navigation].
 
-1. Sélectionner [!UICONTROL Fichiers].
+1. Sélectionnez [!UICONTROL Fichiers].
 
-1. Dans l’interface Assets, accédez au dossier auquel vous souhaitez appliquer des balises de couleur.
+1. Dans l’interface d’Assets, accédez au dossier auquel vous souhaitez appliquer des balises de couleur.
 
 1. Sélectionnez le dossier complet ou des images spécifiques.
 
 1. Sélectionnez l’icône [!UICONTROL Retraiter les ressources] ![icône Retraiter les ressources](assets/do-not-localize/reprocess-assets-icon.png) et sélectionnez l’option [!UICONTROL Processus complet].
 
-Une fois le processus terminé, accédez à la [!UICONTROL Propriétés] de toute image du dossier. Les balises ajoutées automatiquement apparaissent dans la variable [!UICONTROL Balises de couleur intelligente] dans la section [!UICONTROL De base] .
+Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de toute image dans le dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises de couleur intelligente] de l’onglet [!UICONTROL De base] .
 
 
 ## Afficher les balises de couleurs intelligentes des images {#view-color-tags}
@@ -135,7 +135,7 @@ Pour afficher les balises de couleurs intelligentes pour les images :
 
    ![Afficher les balises de couleurs](assets/view-color-tags.png)
 
-   Placez le pointeur de la souris sur une balise de couleur pour afficher le **[!UICONTROL Seuil de couverture/de dominance %]** d’une couleur dans une image.
+   Passez la souris sur une balise de couleur pour afficher le **[!UICONTROL seuil de couverture/dominance %]** d’une couleur dans une image.
 
 ## Configurer le prédicat de couleur d’AEM Assets {#configure-search-predicate}
 
@@ -165,13 +165,13 @@ Pour configurer le filtre de recherche :
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-Après avoir configuré toutes les propriétés de balisage des couleurs et [configuration du prédicat colorimétrique Ressources](#search-images-based-on-colors), vous pouvez rechercher des images en fonction d’une couleur sous forme de filtre.
+Après avoir configuré toutes les propriétés de balisage des couleurs et [configuré le prédicat de couleur Assets](#search-images-based-on-colors), vous pouvez rechercher des images en fonction d’une couleur comme filtre.
 
 Pour rechercher des images en fonction des couleurs :
 
 1. Accédez à **[!UICONTROL Ressources > Fichiers]**.
 
-1. Sélectionner **[!UICONTROL Filtrer]** dans la liste déroulante.
+1. Sélectionnez **[!UICONTROL Filter]** dans la liste déroulante.
    ![Filtrer les ressources](assets/filter-assets.png)
 
 1. Sélectionnez le [prédicat de couleur d’AEM Assets](#configure-search-predicate).

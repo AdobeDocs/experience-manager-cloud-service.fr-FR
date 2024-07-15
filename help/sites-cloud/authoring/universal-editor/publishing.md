@@ -31,7 +31,7 @@ Lorsqu’elle est hébergée en externe, l’application web s’assure que le c
 
 Pour déterminer s’il convient d’accéder au niveau création ou au niveau publication, il suffit d’une simple instruction conditionnelle dans l’application pour choisir le point d’entrée de création ou de publication approprié lors de la détection de son ouverture dans l’éditeur.
 
-Une autre option consiste à déployer l’application dans deux environnements différents, configurés différemment, de sorte que l’un récupère son contenu à partir du niveau création et que l’autre le récupère à partir du niveau publication. Pour permettre aux auteurs d’ouvrir l’URL publiée dans l’éditeur universel, un petit script peut être créé pour &quot;convertir&quot; l’URL côté publication en son équivalent dans l’environnement de création (par exemple, en ajoutant un `author` sous-domaine), de sorte que les auteurs soient automatiquement redirigés.
+Une autre option consiste à déployer l’application dans deux environnements différents, configurés différemment, de sorte que l’un récupère son contenu à partir du niveau création et que l’autre le récupère à partir du niveau publication. Pour permettre aux auteurs d’ouvrir l’URL publiée dans l’éditeur universel, un petit script peut être créé pour &quot;convertir&quot; l’URL côté publication en son équivalent dans l’environnement de création (par exemple, en ajoutant un sous-domaine `author` ), de sorte que les auteurs soient automatiquement redirigés.
 
 ## Résumé {#summary}
 

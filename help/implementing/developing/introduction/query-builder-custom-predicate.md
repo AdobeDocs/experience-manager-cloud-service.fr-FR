@@ -103,7 +103,7 @@ Le regroupement des prédicats de métadonnées de réplication avec un évaluat
 >
 >La configuration de nouveaux projets AEM incluant l’utilisation de Maven est expliquée en détail dans [le tutoriel WKND.](develop-wknd-tutorial.md)
 
-Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet. La variable `PredicateEvaluator` fait partie de la `cq-search` artefact afin qu’il soit ajouté à votre fichier pom Maven.
+Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet. `PredicateEvaluator` fait partie de l’artefact `cq-search`. Il doit donc être ajouté à votre fichier Pom Maven.
 
 >[!NOTE]
 >

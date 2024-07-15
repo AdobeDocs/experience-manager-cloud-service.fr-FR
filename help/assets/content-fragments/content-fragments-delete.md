@@ -24,14 +24,14 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 
 1. **Le fragment de contenu en tant qu’entité unique.**
 
-   * **Cas pratique**: un utilisateur qui doit modifier/mettre à jour un fragment de contenu - **et supprimer un fragment entier**.
+   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu - **et supprimer un fragment entier**.
    * **Autorisations** : l’autorisation Supprimer peut être affectée via la gestion des utilisateurs et/ou des groupes. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variations, les sous-nœuds.**
 
    Le fonctionnement de base de l’éditeur de fragment de contenu nécessite que ces sous-éléments transitoires puissent être supprimés. Par exemple, lors de la manipulation des variantes, mais également lors de la modification de métadonnées ou de la gestion du contenu associé.
 
-   * **Cas pratique**: un utilisateur qui doit modifier/mettre à jour un fragment de contenu - **sans être autorisé à supprimer un fragment entier**.
+   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu - **sans être autorisé à supprimer un fragment entier**.
    * **Autorisations** : voir [Autorisations requises pour la fonctionnalité d’éditeur uniquement](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
