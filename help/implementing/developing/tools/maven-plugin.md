@@ -4,10 +4,10 @@ description: Utilisation du plug-in Maven Content Package pour déployer des app
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 97%
+source-wordcount: '1235'
+ht-degree: 94%
 
 ---
 
@@ -27,10 +27,13 @@ Ce document décrit comment utiliser Maven pour gérer ces tâches. Cependant, i
 
 >[!NOTE]
 >
+>Veuillez toujours utiliser les dernières versions disponibles de ces modules externes.
+
+>[!NOTE]
+>
 >La **création** de packages incombe désormais au [plug-in Maven Apache Jackrabbit FileVault.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
 >
->* Le `content-package-maven-plugin` ne prend plus en charge les packages à partir de la version 1.0.2.
->* Cet article décrit comment le **déploiement** des packages construits dans AEM est effectué par le plug-in Maven Content Package d’Adobe.
+>Cet article décrit le **déploiement** des modules construits vers AEM tels qu’ils sont réalisés par le module externe Maven Adobe Content Package.
 
 ## Packages et structure de projet AEM {#aem-project-structure}
 
@@ -38,7 +41,7 @@ AEM as a Cloud Service adhère aux bonnes pratiques les plus récentes en ma
 
 >[!TIP]
 >
->Voir [AEM structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) de la documentation as a Cloud Service AEM et de la [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) la documentation. Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
+>Reportez-vous à l’article [AEM Structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et à la documentation [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
 
 ## Obtention du plug-in Maven Content Package {#obtaining-the-content-package-maven-plugin}
 
@@ -160,64 +163,6 @@ Désinstalle un package. Le package reste sur le serveur avec l’état désinst
 
 Tous les paramètres de l’objectif uninstall sont décrits dans la section [Paramètres communs](#common-parameters).
 
-### package {#package}
-
-Crée un package de contenu. La configuration par défaut de l’objectif du package comprend le contenu du répertoire dans lequel les fichiers compilés sont enregistrés. L’exécution de l’objectif du package requiert que la phase de création de la compilation soit terminée. L’objectif est lié à la phase de package du cycle de vie de compilation Maven.
-
-#### Paramètres {#parameters-5}
-
-Outre les paramètres suivants, consultez la description du paramètre `name` dans la section [Paramètres communs](#common-parameters).
-
-| Nom | Type | Requis | Valeur par défaut | Description |
-|---|---|---|---|---|
-| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | Non | Aucune | Configuration d’archive à utiliser |
-| `builtContentDirectory` | `java.io.File` | Oui | Valeur du répertoire de sortie de la compilation Maven | Répertoire qui comporte le contenu à inclure dans le package |
-| `dependencies` | `java.util.List` | Non | Aucune |  |
-| `embeddedTarget` | `java.lang.String` | Non | Aucune |  |
-| `embeddeds` | `java.util.List` | Non | Aucune |  |
-| `failOnMissingEmbed` | `boolean` | Oui | `false` | La valeur `true` entraîne l’échec de la compilation lorsqu’un artefact incorporé n’est pas trouvé dans les dépendances du projet. La valeur `false` entraîne l’absence de prise en compte de l’erreur par la création. |
-| `filterSource` | `java.io.File` | Non | Aucune | Ce paramètre définit un fichier qui spécifie la source du filtre de l’espace de travail. Les filtres spécifiés dans le fichier de configuration et injectés via les incorporations ou les sous-packages sont fusionnés avec le contenu du fichier. |
-| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | Non | Aucune | Ce paramètre contient les éléments de filtre qui définissent le contenu du package. Lorsqu’ils sont exécutés, les filtres sont inclus dans le fichier `filter.xml`. Voir la section [Utilisation des filtres](#using-filters) ci-dessous. |
-| `finalName` | `java.lang.String` | Oui | Paramètre `finalName` défini dans le projet Maven (phase de compilation) | Nom du fichier zip du package généré sans extension `.zip` |
-| `group` | `java.lang.String` | Oui | `groupID` défini dans le projet Maven. | `groupId` du package de contenu généré, qui fait partie du chemin d’installation cible pour le package de contenu |
-| `outputDirectory` | `java.io.File` | Oui | Répertoire build défini dans le projet Maven | Répertoire local dans lequel est enregistré le package de contenu |
-| `prefix` | `java.lang.String` | Non | Aucune |  |
-| `project` | `org.apache.maven.project.MavenProject` | Oui | Aucune | Projet Maven |
-| `properties` | `java.util.Map` | Non | Aucune | Ces paramètres définissent des propriétés supplémentaires que vous pouvez définir dans le fichier `properties.xml`. Ces propriétés ne peuvent pas remplacer les propriétés prédéfinies suivantes : `group` (utiliser le paramètre `group` à définir), `name` (utiliser le paramètre `name` à définir), `version` (utiliser le paramètre `version` à définir), `description` (fixé à partir de la description du projet), `groupId` (`groupId` du descripteur de projet Maven), `artifactId` (`artifactId` du descripteur de projet Maven), `dependencies` (utiliser le paramètre `dependencies` à définir), `createdBy` (valeur de la propriété système `user.name`), `created` (temps système actuel), `requiresRoot` (utiliser le paramètre `requiresRoot` à définir), `packagePath` (généré automatiquement à partir du groupe et du nom du package) |
-| `requiresRoot` | `boolean` | Oui | false | Définit si le package requiert ou non root. Devient la propriété `requiresRoot` du fichier `properties.xml`. |
-| `subPackages` | `java.util.List` | Non | Aucune |  |
-| `version` | `java.lang.String` | Oui | Version définie dans le projet Maven. | Version du package de contenu |
-| `workDirectory` | `java.io.File` | Oui | Répertoire défini dans le projet Maven (phase de compilation) | Répertoire qui comporte le contenu à inclure dans le package |
-
-#### Utilisation de l’élément filters {#using-filters}
-
-Utilisez l’élément filters pour définir le contenu du package. Les filtres sont ajoutés à l’élément `workspaceFilter` du fichier `META-INF/vault/filter.xml` du package.
-
-L’exemple de filtre suivant montre la structure XML à utiliser :
-
-```xml
-<filter>
-   <root>/apps/myapp</root>
-   <mode>merge</mode>
-       <includes>
-              <include>/apps/myapp/install/</include>
-              <include>/apps/myapp/components</include>
-       </includes>
-       <excludes>
-              <exclude>/apps/myapp/config/*</exclude>
-       </excludes>
-</filter>
-```
-
-##### Mode d’importation {#import-mode}
-
-L’élément `mode` définit l’impact de l’importation du package sur le contenu du référentiel. Les valeurs suivantes peuvent être utilisées :
-
-* **Fusionner** : le contenu du package ne se trouvant pas encore dans le référentiel est ajouté. Le contenu se trouvant dans le package et le référentiel reste inchangé. Aucun contenu n’est supprimé du référentiel.
-* **Remplacer** : le contenu du package absent du référentiel y est ajouté. Le contenu du référentiel est remplacé par le contenu correspondant du package. Le contenu est supprimé du référentiel lorsqu’il n’existe pas dans le package.
-* **Mettre à jour** : le contenu du package ne se trouvant pas dans le référentiel y est ajouté. Le contenu du référentiel est remplacé par le contenu correspondant du package.
-
-Lorsque le filtre ne contient pas d’élément `mode`, la valeur `replace` par défaut est utilisée.
 
 ### help {#help}
 
@@ -270,4 +215,4 @@ Le dernier archétype de projet AEM met en œuvre la structure de package des bo
 
 >[!TIP]
 >
->Voir [AEM structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) de la documentation as a Cloud Service AEM et de la [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) la documentation. Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
+>Reportez-vous à l’article [AEM Structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et à la documentation [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
