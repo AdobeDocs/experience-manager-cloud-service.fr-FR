@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’outil de transfert de contenu pour 
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 93%
@@ -68,7 +68,7 @@ Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus 
 >title="Expiration d’un jeu de migration"
 >abstract="Découvrez à quoi correspond l’expiration d’un jeu de migration."
 
-Tous les jeux de migration expirent après une longue période d’inactivité d’environ 90 jours. Les indicateurs s’affichent sur la carte du projet et les lignes du tableau des tâches de migration pendant un certain temps, puis le jeu de migration expire et ses données deviennent indisponibles. Le délai d’expiration du jeu de migration peut facilement être prolongé en :
+Tous les jeux de migration expirent après une longue période d’inactivité d’environ 45 jours. Les indicateurs s’affichent sur la carte du projet et les lignes du tableau des tâches de migration pendant un certain temps, puis le jeu de migration expire et ses données deviennent indisponibles. Le délai d’expiration du jeu de migration peut facilement être prolongé en :
 
 * modifiant sa description
 * obtenant sa clé d’extraction
