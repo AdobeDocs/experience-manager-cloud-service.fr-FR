@@ -2,10 +2,10 @@
 title: Dynamic Media avec fonctionnalités OpenAPI
 description: Découvrez les concepts clés, tels que les raisons d’utiliser Dynamic Media avec les fonctionnalités OpenAPI et comment l’activer.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 0%
+source-wordcount: '1061'
+ht-degree: 1%
 
 ---
 
@@ -117,6 +117,10 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 </td>
 </table>
 <table>
+
+
+
+<table>
 <td>
    <a href="/help/assets/search-assets-api.md">
    <img alt="Recherche de ressources dans le référentiel Experience Manager Assets" src="./assets/search-assets-api-overview.png" />
@@ -156,5 +160,48 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
       <em> L’administrateur DAM ou les gestionnaires de marques limitent l’accès en configurant des rôles pour les ressources approuvées sur l’instance d’auteur AEM as a Cloud Service.</em>
    </p>
 </td>
+
+</table>
+<table>
+<td>
+   <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+   <img alt="Intégrer AEM Assets distant à AEM Sites" src="./assets/connected-assets-rdam.png" />
+   </a>
+   <div>
+      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+      <strong>Intégrer AEM Assets distant avec AEM Sites</strong>
+      </a>
+   </div>
+   <p>
+      <em>Découvrez comment intégrer AEM Assets distant à l’environnement AEM Sites. </em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+   <img alt="Questions fréquentes sur les fonctionnalités OpenAPI de Dynamic Media" src="./assets/dynamic-media-faqs.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+      <strong> Questions fréquentes sur les fonctionnalités de Dynamic Media avec OpenAPI</strong>
+      </a>
+   </div>
+   <p>
+      <em>Obtenez une réponse aux questions les plus fréquemment posées sur les fonctionnalités Dynamic Media avec OpenAPI.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/configure-custom-domain.md">
+   <img alt="Configurer des domaines personnalisés" src="./assets/configure-custom-domain.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/configure-custom-domain.md">
+      <strong>Configurer un domaine personnalisé</strong>
+      </a>
+   </div>
+   <p>
+      <em>Lorsqu'AEM as a Cloud Service est fourni avec un domaine par défaut, vous pouvez le personnaliser selon vos besoins.</em>
+   </p>
+</td>
+
 </table>
 
