@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  a
 description: Notes de mise à jour actuelles pour  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1566963898fb7f6999e3fad796b938128521bcce
+source-git-commit: 445d15c1449b968325c77becce8b0a547ba151d6
 workflow-type: tm+mt
-source-wordcount: '1957'
-ht-degree: 100%
+source-wordcount: '1941'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 >[!NOTE]
 >
->Voir [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) pour plus d’informations sur les mises à jour de la documentation qui ne sont pas directement liées à une version.
+>Pour recevoir chaque mois une notification par e-mail concernant des informations sur les notes de mise à jour d’Experience Cloud, abonnez-vous aux [Mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Date de publication {#release-date}
 
@@ -252,5 +252,4 @@ Vous trouverez une liste complète des versions de la génération de variations
 
 ## Notes de mise à jour dʼExperience Cloud {#experience-cloud}
 
-Vous trouverez des informations sur les versions d’autres applications Experience Cloud [ici](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current).
-Pour recevoir chaque mois une notification par e-mail concernant des informations sur les notes de mise à jour d’Experience Cloud, abonnez-vous aux [Mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html).
+Vous trouverez des informations sur les versions d&#39;autres applications Experience Cloud [ici](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current).
