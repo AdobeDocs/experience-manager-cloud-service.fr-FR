@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
 workflow-type: tm+mt
-source-wordcount: '5627'
-ht-degree: 83%
+source-wordcount: '5735'
+ht-degree: 81%
 
 ---
 
@@ -900,6 +900,15 @@ In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.
 Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
 
 ## Exemples de règles {#example}
+
+### Rationalisation de calculs complexes dans des panneaux répétables avec fonctions intégrées
+
+L’éditeur de règles vous permet d’utiliser des fonctions prêtes à l’emploi telles que Somme, Min, Max et Joindre directement sur les champs des panneaux répétables. Cela permet de libérer une automatisation puissante, ce qui vous permet de mettre en oeuvre une logique commerciale complexe sans code personnalisé.
+Imaginez un formulaire avec un panneau répétable. Chaque instance de panneau peut collecter des données comme des quantités de produits. Vous pouvez utiliser la fonction Somme pour calculer automatiquement la quantité totale sur tous les panneaux, éliminant ainsi les calculs manuels et les erreurs potentielles.
+
+![Prise en charge des champs de panneau répétables dans les fonctions prêtes à l’emploi](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+Ce n&#39;est qu&#39;un exemple ! Explorez les [fonctions](#b-form-objects-and-functions-br) disponibles pour simplifier les processus et améliorer la précision des données dans vos formulaires.
 
 ### Appeler service de modèle de données de formulaire {#invoke}
 

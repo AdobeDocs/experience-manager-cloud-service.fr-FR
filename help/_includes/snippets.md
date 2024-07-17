@@ -1,8 +1,8 @@
 ---
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 86%
 
 ---
 # Fragments de code {#snippets}
@@ -87,8 +87,8 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
      </tr>
    <tr>
     <td>Exécuter des opérations mathématiques sur le champ de panneau répétable </td>
-    <td>Les fonctions mathématiques prêtes à l’emploi peuvent être appliquées à des champs de panneau répétables pour exécuter des fonctions telles que la somme et la moyenne. </td>
-    <td>Les opérations mathématiques sur le champ de panneau répétable peuvent être effectuées à l’aide des fonctions personnalisées.
+    <td>Les fonctions mathématiques prêtes à l’emploi peuvent être appliquées à des champs de panneau répétables pour exécuter des fonctions telles que la somme, la moyenne à l’aide de l’éditeur de règles. Deux arguments doivent être fournis : le premier spécifie le panneau répétable contenant le champ, le second spécifie le champ dans le panneau répétable correspondant. </td>
+    <td>Les opérations mathématiques sur le champ de panneau répétable peuvent être effectuées à l’aide des fonctions personnalisées. Vous pouvez également appliquer les fonctions mathématiques directement aux champs du panneau répétable à l’aide de l’éditeur de règles.
    </td>
    </tr>
       <tr>
