@@ -5,9 +5,9 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
+source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
 workflow-type: tm+mt
-source-wordcount: '4482'
+source-wordcount: '4513'
 ht-degree: 87%
 
 ---
@@ -1267,3 +1267,12 @@ AEM Cloud Service interdit la création de jetons dont les noms sont incorrects 
 >[!WARNING]
 >
 >Nous vous conseillons vivement de prendre en compte ce point dès que possible, car cela entraînera l’échec des pipelines à compter de la [version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### La configuration des définitions d’indexation ne doit pas contenir d’espaces {#oakpal-indexing-definitions-spaces}
+
+* **Clé** : PathSpacesCheck
+* **Type** : amélioration
+* **Gravité** : mineure
+* **Depuis** : version 2024.7.0
+
+AEM Cloud Service interdit la création de définitions d’indexation qui contiennent des propriétés avec des espaces.

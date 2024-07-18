@@ -4,7 +4,7 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 87%
@@ -561,9 +561,9 @@ Les journaux AEM as a Cloud Service pour les services cloud sont accessibles pa
 
 ### Journaux des régions Publish supplémentaires {#logs-for-additional-publish-regions}
 
-Si d’autres régions Publish sont activées pour un environnement particulier, les journaux de chaque région peuvent être téléchargés à partir de Cloud Manager, comme mentionné ci-dessus.
+Si d’autres régions de publication sont activées pour un environnement particulier, les journaux de chaque région peuvent être téléchargés à partir de Cloud Manager, comme mentionné ci-dessus.
 
-Les journaux d’AEM et de dispatcher pour les régions Publish supplémentaires spécifient la région dans les 3 premières lettres après l’ID d’environnement, comme illustré par **nld2** dans l’exemple ci-dessous, qui fait référence à une instance de publication AEM supplémentaire située aux Pays-Bas :
+Les journaux d’AEM et de dispatcher pour les autres régions de publication spécifient la région dans les 3 premières lettres après l’ID d’environnement, comme illustré par **nld2** dans l’exemple ci-dessous, qui fait référence à une instance de publication AEM supplémentaire située aux Pays-Bas :
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

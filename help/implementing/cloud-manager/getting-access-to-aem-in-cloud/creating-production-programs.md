@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1040'
 ht-degree: 34%
 
 ---
@@ -87,7 +87,7 @@ Adobe Conformité à la HIPAA et pare-feu d’applications web (WAF) facilite la
 
 Si vous disposez des droits nécessaires, l’onglet **SLA** s’affiche comme deuxième ou troisième onglet dans la boîte de dialogue **Configuration pour la production**.
 
-AEM Sites offre un contrat de niveau de service (SLA) standard de 99,9 %. L’option **99.99% Service Level Agreement** active un pourcentage de temps de disponibilité minimal de 99,99% pour vos environnements de production.
+AEM Sites et Forms offrent un contrat de niveau de service (SLA) standard de 99,9 %. L’option **99.99% Service Level Agreement** active un pourcentage de temps de disponibilité minimal de 99,99% pour vos environnements de production pour Sites et/ou Forms.
 
 Le contrat SLA de 99,99 % offre des avantages, notamment une disponibilité plus élevée et une latence plus faible, et nécessite une [région de publication supplémentaire](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) à appliquer à l’environnement de production dans le programme.
 
@@ -105,7 +105,7 @@ Outre les droits requis, 99,99 % des contrats de niveau de service (SLA) ont des
 * Pour que le contrat SLA de 99,99 % et le reporting soient activés, l’ [environnement de production/d’évaluation](/help/implementing/cloud-manager/manage-environments.md#adding-environments) doit avoir été créé et au moins une région de publication supplémentaire doit avoir été appliquée à l’environnement de production/d’évaluation.
    * Si vous utilisez [une mise en réseau avancée,](/help/security/configuring-advanced-networking.md) assurez-vous de consulter le document [Ajout de plusieurs régions Publish à un nouvel environnement](/help/implementing/cloud-manager/manage-environments.md#adding-regions) pour obtenir des recommandations afin de maintenir la connectivité en cas d’échec régional.
 * Au moins une région de publication supplémentaire doit rester dans votre programme SLA de 99,99 %. Les utilisateurs ne sont pas autorisés à supprimer la dernière région de publication supplémentaire de votre programme SLA 99,99 %.
-* Le contrat SLA de 99,99 % est pris en charge pour les programmes de production pour lesquels la solution Sites est activée.
+* 99,99 % du contrat SLA est pris en charge pour les programmes de production pour lesquels la solution Sites ou Forms est activée.
 * Vous devez exécuter un [pipeline de pile complet](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) pour activer (ou, lors de la modification d’un programme, désactiver) le contrat SLA de 99,99 %.
 
 ## Accès à votre programme {#accessing}

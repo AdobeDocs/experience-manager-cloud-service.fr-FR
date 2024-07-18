@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1995'
 ht-degree: 7%
 
 ---
@@ -112,7 +112,7 @@ Outre le résumé présenté dans les détails d’une exécution de pipeline, v
 
 Appuyez ou cliquez sur **Afficher les pages les plus lentes** pour ouvrir la boîte de dialogue **5 pages les plus lentes**, affichant les cinq pages les moins performantes que vous [ avez ](#configuration) configurées pour effectuer un audit.
 
-![ {5](assets/experience-audit-slowest-five.jpg)
+![ {5](assets/experience-audit-slowest-five.png)
 
 Les scores sont ventilés par **Performance**, **Accessibilité**, **Bonnes pratiques** et **SEO** avec l’écart de chaque mesure par rapport au dernier audit.
 
@@ -166,7 +166,7 @@ La section **Recommendations** présente un ensemble agrégé d’informations. 
 
 Appuyez ou cliquez sur le chevron d’une recommandation pour en afficher les détails.
 
-![Détails de la recommandation](assets/experience-audit-recommendation-details.png)
+![Détails de la recommandation](assets/experience-audit-recommendations-details.png)
 
 Lorsqu’elles sont disponibles, les détails de la recommandation étendue contiennent également le pourcentage de l’impact des recommandations, afin de vous aider à vous concentrer sur les modifications ayant le plus d’impact.
 
@@ -184,7 +184,7 @@ Appuyez ou cliquez sur le lien d’une page spécifique pour mettre à jour le f
 
 ![Résultats de page](assets/experience-audit-page-results.png)
 
-L’onglet **Rapports bruts** donne des scores pour chaque audit de la page. Appuyez ou cliquez sur l’icône **Télécharger** pour récupérer un fichier JSON des données brutes.
+L’onglet **Rapports bruts** donne des scores pour chaque audit de la page. Appuyez ou cliquez sur la date du rapport dans la colonne **Rapport Lighthouse** pour récupérer un fichier JSON des données brutes.
 
 ![Rapport brut](assets/experience-audit-raw-reports.png)
 
@@ -200,6 +200,10 @@ Pour exécuter une analyse à la demande, accédez à l’onglet **Rapports** po
 
 ![Analyse à la demande](assets/experience-audit-on-demand.png)
 
+Le bouton **Exécuter l’analyse** n’est plus disponible et est signalé par une icône d’horloge lorsqu’une analyse à la demande est déjà en cours d’exécution.
+
+![Analyse à la demande en cours](assets/experience-audit-on-demand-running.png)
+
 Les analyses à la demande déclenchent un audit de l’expérience pour les 25 [dernières pages configurées](#configuration) et se terminent généralement en quelques minutes.
 
 Une fois l’analyse terminée, le graphique des scores sera automatiquement mis à jour. Vous pouvez consulter les résultats exactement comme pour une analyse d’exécution de pipeline.
@@ -214,15 +218,15 @@ Vous pouvez filtrer le graphique des scores en fonction du type de déclencheur 
 
 ## Problèmes rencontrés dans le contrôle de l’expérience {#issues}
 
-Si les [pages que vous avez configurées](#configuration) à contrôler n’étaient pas disponibles, le contrôle de l’expérience le reflète.
+Si les [pages que vous avez configurées](#configuration) à contrôler n’étaient pas disponibles ou qu’il y avait d’autres erreurs dans l’audit, le contrôle de l’expérience le reflète.
 
 Le pipeline affiche une section d’erreur extensible pour afficher les chemins d’URL relatifs auxquels il n’a pas pu accéder.
 
 ![Problèmes rencontrés par l’audit d’expérience](assets/experience-audit-issues.jpg)
 
-Si vous affichez le rapport complet, les détails sont affichés dans la section **[Résultats de l’analyse de l’audit d’expérience](#results)** .
+Si vous affichez le rapport complet, les détails sont affichés dans la section **[Résultats de l’analyse de l’audit d’expérience](#results)**, qui peut également être développée.
 
-![Problèmes de rapport complets](assets/experience-audit-issues-reports.jpeg)
+![Problèmes de rapport complets](assets/experience-audit-issues-report.png)
 
 Voici quelques raisons pour lesquelles les pages peuvent ne pas être disponibles :
 
@@ -253,8 +257,7 @@ Ils peuvent être améliorés en procédant comme suit :
 
 Les détails suivants fournissent des informations supplémentaires sur la manière dont le contrôle de l’expérience évalue votre site. Elles ne sont pas nécessaires à l’utilisation générale de la fonctionnalité et sont fournies ici pour être complètes.
 
-* Bien que les [ chemins de page d’audit d’expérience configurés](#configuration) affichent le domaine `.com` de l’éditeur, l’audit analyse le domaine d’origine (`.net`), afin de s’assurer que les problèmes introduits lors du développement sont détectés.
-   * Le domaine `.com` utilise un CDN et peut générer de meilleurs scores ou contenir des résultats mis en cache.
+* L’audit analyse le domaine d’origine (`.com`) tel que défini dans les [ chemins de page d’audit d’expérience configurés](#configuration) de l’éditeur afin de simuler plus précisément les expériences utilisateur réelles et de vous aider à prendre des décisions plus éclairées concernant la gestion et l’optimisation de vos sites web.
 * Dans les pipelines de production à pile complète, l’environnement d’évaluation est analysé.
    * Pour que l’audit fournisse des détails pertinents lors du contrôle, le contenu de l’environnement d’évaluation doit être aussi proche que possible de l’environnement de production.
 * Les pages affichées dans la liste déroulante **Sélectionner** de la section [**Scores de page - tendance**](#trend) sont toutes des pages connues qui ont été analysées par le passé par le contrôle de l’expérience.

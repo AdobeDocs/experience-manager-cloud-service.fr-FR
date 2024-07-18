@@ -4,12 +4,13 @@ description: Découvrez comment AEM as a Cloud Service prend en charge des régi
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 78%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
+
 
 # Autres régions de publication {#additional-publish-regions}
 
@@ -22,7 +23,9 @@ Les organisations peuvent acquérir sous licence jusqu’à trois régions de pu
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement disponible uniquement pour AEM Sites. Elle ne peut pas non plus être appliquée aux programmes sandbox. En outre, la fonctionnalité d’autres régions de publication nécessite que votre programme soit mis à jour pour AEM version 12142 ou ultérieure.
+>* Cette fonctionnalité est disponible pour les solutions Sites et Forms .
+>* Cette fonctionnalité ne peut pas être appliquée aux [programmes Sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* Cette fonctionnalité nécessite que votre programme soit mis à jour AEM version 12142 ou ultérieure.
 
 ## Cas d’utilisation {#use-cases}
 
@@ -57,7 +60,9 @@ Si d’autres régions de publication sont activées, des journaux distincts pou
 
 Gardez à l’esprit les limites suivantes lorsque vous envisagez d’utiliser des régions de publication supplémentaires.
 
-* D’autres régions de publication ne peuvent être ajoutées qu’à AEM Sites. Les régions de publication supplémentaires ne s’étendent pas à d’autres solutions AEM ou fonctionnalités associées déployées dans le même programme (par exemple, AEM Forms ou Adobe Learning Manager).
+* D’autres régions de publication ne peuvent être ajoutées qu’à AEM Sites ou AEM Forms.
+   * Les régions de publication supplémentaires ne s’étendent pas à d’autres solutions AEM ou fonctionnalités associées déployées dans le même programme (par exemple, AEM Assets ou Adobe Learning Manager).
+   * Cependant, ces solutions peuvent être ajoutées à un programme tant qu’au moins une solution Sites ou Forms s’y applique.
 * D’autres régions ne peuvent être ajoutées que si les droits associés sont disponibles et inutilisés dans le client.
 * Vous pouvez ajouter au maximum trois régions de publication supplémentaires à n’importe quel environnement.
 * D’autres régions sont disponibles uniquement pour les programmes de production. Cette fonctionnalité n’est pas disponible dans les programmes sandbox.
