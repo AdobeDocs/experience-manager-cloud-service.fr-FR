@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
+source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
 workflow-type: tm+mt
 source-wordcount: '5735'
 ht-degree: 81%
@@ -13,13 +13,13 @@ ht-degree: 81%
 ---
 
 
+# Ajout de règles à un formulaire adaptatif (composants principaux) {#adaptive-forms-rule-editor}
+
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (composants principaux) | Cet article |
 | AEM as a Cloud Service (composants de base) | [Cliquez ici](/help/forms/rule-editor.md) |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
-
-# Ajout de règles à un formulaire adaptatif (composants principaux) {#adaptive-forms-rule-editor}
 
 La fonctionnalité d’éditeur de règles permet aux utilisateurs professionnels et aux développeurs de formulaires de créer des règles sur des objets de formulaire adaptatif. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des entrées de l’utilisateur et des actions de l’utilisateur sur le formulaire. Cela permet de rationaliser davantage l’expérience de remplissage du formulaire en assurant précision et vitesse.
 
