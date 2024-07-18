@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
+source-git-commit: a9596774326d5756477c0a44c2715fc5c3561e2a
 workflow-type: tm+mt
-source-wordcount: '5735'
+source-wordcount: '5787'
 ht-degree: 81%
 
 ---
@@ -904,9 +904,17 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 ### Rationalisation de calculs complexes dans des panneaux répétables avec fonctions intégrées
 
 L’éditeur de règles vous permet d’utiliser des fonctions prêtes à l’emploi telles que Somme, Min, Max et Joindre directement sur les champs des panneaux répétables. Cela permet de libérer une automatisation puissante, ce qui vous permet de mettre en oeuvre une logique commerciale complexe sans code personnalisé.
-Imaginez un formulaire avec un panneau répétable. Chaque instance de panneau peut collecter des données comme des quantités de produits. Vous pouvez utiliser la fonction Somme pour calculer automatiquement la quantité totale sur tous les panneaux, éliminant ainsi les calculs manuels et les erreurs potentielles.
+Imaginez un formulaire avec un panneau répétable, où chaque instance de panneau collecte des informations sur la valeur déclarée des ressources.
+
+![Formulaire répétable](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+
+Vous pouvez utiliser la fonction `Sum` pour calculer automatiquement la valeur totale des ressources sur tous les panneaux, rendant ainsi inutile tout calcul manuel et réduisant le risque d’erreur.
 
 ![Prise en charge des champs de panneau répétables dans les fonctions prêtes à l’emploi](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+Lorsque vous remplissez un formulaire, en ajoutant des instances pour déclarer les valeurs de la ressource, le bouton `Calculate Asset Value` calcule la somme totale de toutes les valeurs de la ressource déclarée et affiche le résultat dans la zone de texte `assetvalue`.
+
+![Prise en charge des champs de panneau répétables dans les fonctions prêtes à l’emploi](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 Ce n&#39;est qu&#39;un exemple ! Explorez les [fonctions](#b-form-objects-and-functions-br) disponibles pour simplifier les processus et améliorer la précision des données dans vos formulaires.
 
