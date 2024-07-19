@@ -4,10 +4,10 @@ description: Cette page décrit comment accéder au fournisseur de services Scre
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 84%
+source-wordcount: '430'
+ht-degree: 53%
 
 ---
 
@@ -33,26 +33,62 @@ Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens
    >[!CAUTION]
    >Si vous avez accès à plusieurs organisations, vérifiez que votre connexion est établie avec la bonne organisation. Pour modifier votre organisation, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation à laquelle vous avez besoin d’accéder.
 
-2. Cliquez sur l’icône d’engrenage en regard de Projet (coin supérieur gauche)
+1. Cliquez sur l’icône d’engrenage en regard de Projet (coin supérieur gauche)
 
    ![image](/help/screens-cloud/assets/configure/configure-screens0.png)
 
-3. Saisissez les informations suivantes dans la boîte de dialogue Modifier les paramètres.
+1. Saisissez les informations suivantes dans la boîte de dialogue Modifier les paramètres.
    * **URL de publication** - URL de publication AEM (par exemple, `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **URL de création** - URL de création AEM (par exemple, `https://author-p12345-e12345.adobeaemcloud.com`)
 
    >[!NOTE]
    >Veillez à créer et publier au moins un canal d’écran AEM avant de configurer l’AEM sous Fournisseur de services Screens. Pour créer un canal, accédez à /screens.html sur votre fournisseur de contenu.
 
-   ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
+   ![Image](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Cliquez sur **Enregistrer** pour vous connecter au fournisseur de contenu Screens
+1. Cliquez sur **Enregistrer** pour vous connecter au fournisseur de contenu Screens.
 
-5. Sélectionnez **Canaux** dans la barre de navigation de gauche et cliquez sur **Ouvrir dans le fournisseur de contenu**.
+1. Dans la configuration de l’instance de publication AEM pour autoriser l’accès uniquement aux adresses IP de confiance par la fonction Cloud Manager de Liste autorisée IP, vous devez configurer un en-tête avec une valeur clé dans la boîte de dialogue des paramètres, comme illustré ci-dessous.
+Les adresses IP qui doivent être whitelistées doivent également être déplacées vers le fichier de configuration et [non appliquées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) depuis les paramètres de Cloud Manager.
+
+   ![Image](/help/screens-cloud/assets/configure/configure-screens20.png)
+
+La même clé doit être configurée à AEM configuration du réseau de diffusion de contenu.  Il est recommandé de ne pas placer la valeur d’en-tête directement dans GITHub et d’utiliser une [référence secrète](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets).
+Voici un exemple de [configuration CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) :
+
+    type : &quot;CDN&quot;
+    version : &quot;1&quot;
+    metadata:
+    envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
+    data:
+    trafficFilters:
+    rules:
+    - name: &quot;block-request-from-not-allowed-ips&quot;
+    quand :
+    allOf:
+    -} reqProperty : clientIp
+    notIn: [&quot;101.41.112.0/24&quot;]
+    - reqProperty: tier
+    equals: publish
+    action: block
+    - name: &quot;allow-requests-with-header&quot;
+    when:
+    allOf:
+    - q Propriété : tier
+    est égal à : publish
+    - reqProperty : path
+    est égal à : /screens/channels.json
+    - reqHeader : x-screens-liste autorisée-key
+    est égal à : ${\
+    {CDN_HEADER_KEY}
+    action:
+    type: allow
+
+1. Sélectionnez **Canaux** dans la barre de navigation de gauche et cliquez sur **Ouvrir dans le fournisseur de contenu**.
 
    ![Image](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Le fournisseur de contenu Screens s’ouvre dans un autre onglet qui vous permet de créer votre contenu.
+1. Le fournisseur de contenu Screens s’ouvre dans un autre onglet qui vous permet de créer votre contenu.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
 
