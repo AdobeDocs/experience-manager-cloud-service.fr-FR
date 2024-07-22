@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3938'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -530,7 +530,7 @@ Une notification par e-mail du [centre d’actions](/help/operations/actions-cen
 
 Si ce seuil est atteint, Adobe bloquera le trafic de cette adresse IP, mais il est recommandé de prendre des mesures supplémentaires pour protéger votre origine, notamment la configuration des règles de filtrage du trafic à des taux limites pour bloquer les pics de trafic à des seuils inférieurs. Voir le [tutoriel sur le blocage des attaques DoS et DDoS à l’aide des règles de trafic](#tutorial-blocking-DDoS-with-rules) pour une visite guidée.
 
-Cette alerte est activée par défaut, mais elle peut être désactivée à l’aide de la propriété *defaultTrafficAlerts*, définie sur false. Une fois l’alerte déclenchée, elle ne se redéclenche plus avant le lendemain (UTC).
+Cette alerte est activée par défaut, mais elle peut être désactivée à l’aide de la propriété *defaultTrafficAlerts* définie sur false. Une fois l’alerte déclenchée, elle ne se redéclenche plus avant le lendemain (UTC).
 
 ```
 kind: "CDN"
