@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 >
 >À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes, telles que 2022 ou 2023.
 >
->Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
+>Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 ## Vidéo de mise à jour {#release-video}
 
-Consultez la vidéo Aperçu de la version de juin 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.6.0 :
+Consultez la vidéo Vue d’ensemble de la version de juin 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.6.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430779?quality=12)
 
@@ -250,6 +250,6 @@ Vous trouverez une liste complète des versions de l’éditeur universel [ici](
 
 Vous trouverez une liste complète des versions de la génération de variations [ici](/help/generative-ai/release-notes-generate-variations.md).
 
-## Notes de mise à jour dʼExperience Cloud {#experience-cloud}
+## Notes de mise à jour dʼExperience Cloud {#experience-cloud}
 
-Vous trouverez des informations sur les versions d&#39;autres applications Experience Cloud [ici](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current).
+Vous trouverez des informations sur les versions d’autres applications Experience Cloud [ici](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current).
