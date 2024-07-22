@@ -5,10 +5,10 @@ contentOwner: KK
 role: Admin,User
 feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
+source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 39%
+source-wordcount: '4871'
+ht-degree: 38%
 
 ---
 
@@ -812,6 +812,60 @@ Le tableau suivant décrit des propriétés importantes de l’objet Ressource s
 | *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | nombre | Hauteur du rendu. |
 
 Pour obtenir la liste complète des propriétés ainsi qu’un exemple détaillé, consultez la page [Exemple de code de sélecteur de ressources](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
+### Filtre d’appel contextuel{#contextual-invocation-filter}
+
+Le sélecteur de ressources vous permet d’ajouter un filtre de sélecteur de balises. Il prend en charge un groupe de balises qui combine toutes les balises pertinentes avec un groupe de balises particulier. En outre, il vous permet de sélectionner des balises supplémentaires correspondant à la ressource que vous recherchez. De plus, vous pouvez définir les groupes de balises par défaut sous le filtre d’appel contextuel qui sont principalement utilisés par vous afin qu’ils vous soient accessibles en déplacement.
+
+> 
+>
+> * Vous devez ajouter un extrait de code d’appel contextuel pour activer le filtre de balisage dans la recherche.
+> * Il est obligatoire d’utiliser la propriété name correspondant au type de groupe de balises `(property=xcm:keywords.id=)`.
+
+Syntaxe :
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+Pour ajouter des groupes de balises dans le panneau Filtres, il est obligatoire d’ajouter au moins un groupe de balises par défaut. En outre, utilisez le fragment de code ci-dessous pour ajouter les balises par défaut présélectionnées dans le groupe de balises.
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![filtre de groupe de balises](assets/tag-group.gif)
 
 ## Gestion de la sélection de ressources à l’aide du schéma d’objet {#handling-selection}
 
