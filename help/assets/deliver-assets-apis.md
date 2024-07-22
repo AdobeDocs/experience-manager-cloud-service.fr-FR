@@ -2,7 +2,7 @@
 title: API de diffusion
 description: Découvrez comment utiliser les API de diffusion.
 role: User
-source-git-commit: 6fdc44b93e11a20b6859419813fd7eadbefd95c1
+source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Le tableau suivant illustre l’utilisation des différentes API de diffusion di
 
 | API de diffusion | Description |
 |---|---|
-| [Représentation binaire optimisée pour le web de la ressource au format de sortie demandé](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Renvoie la représentation binaire optimisée pour le web de la ressource dans le format de sortie demandé en fonction de l’ID de ressource envoyé dans la requête. En outre, vous pouvez définir divers modificateurs d’image tels que la largeur, la hauteur, la rotation, la rotation, la qualité, le recadrage, le format et le [recadrage intelligent](/help/assets/dynamic-media/image-profiles.md). Voir les [détails de l’API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) pour connaître les formats et les modificateurs d’image pris en charge.<br>Adobe recommande d&#39;utiliser cette API pour tous les types de format d&#39;image. |
+| [Représentation binaire optimisée pour le web de la ressource au format de sortie demandé](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Renvoie la représentation binaire optimisée pour le web de la ressource dans le format de sortie demandé en fonction de l’ID de ressource envoyé dans la requête. En outre, vous pouvez définir divers modificateurs d’image tels que la largeur, la hauteur, la rotation, la rotation, la qualité, le recadrage, le format et le [recadrage intelligent](/help/assets/dynamic-media/image-profiles.md). Voir les [détails de l’API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) pour connaître les formats et les modificateurs d’image pris en charge.<br>Adobe recommande d&#39;utiliser cette API pour tous les types de format d&#39;image. |
 | [Représentation binaire optimisée pour le web de la ressource](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | API de commodité qui s’applique par défaut à la représentation binaire optimisée pour le web de la ressource renvoyée dans la réponse. Les valeurs par défaut incluent un format standard JPEG/WEBP, qualité => 65 et largeur => 1024. |
 | [binaire téléchargé original de la ressource](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Renvoie les fichiers binaires chargés initialement pour la ressource. Adobe recommande d’utiliser cette API pour les types de format de document et les images de SVG. |
 | [Rendu pré-généré de la ressource disponible dans l’environnement de création AEM Assets](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | Renvoie le flux binaire du rendu de ressource disponible dans l’environnement de création AEM Assets en fonction de l’ID de ressource et du nom du rendu envoyé dans la requête. |
