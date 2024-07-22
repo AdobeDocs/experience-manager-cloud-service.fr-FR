@@ -4,9 +4,9 @@ description: Découvrez les tâches de maintenance dans AEM as a Cloud Service e
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
+source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2110'
 ht-degree: 39%
 
 ---
@@ -84,7 +84,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Client</td>
     <td>
     <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
-    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des propriétés OSGI sous « Configuration de purge des projets Adobe ».</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Voir la liste des [propriétés OSGI](/help/implementing/deploying/configuring-osgi.md) sous **Configuration de purge des projets d’Adobe** .</p>
   </td>
   </tr>
   </tbody>
