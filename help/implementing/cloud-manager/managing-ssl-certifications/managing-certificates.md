@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '649'
 ht-degree: 78%
 
 ---
@@ -39,7 +39,9 @@ Lorsqu’un certificat expire, tout domaine utilisé avec le certificat expiré 
 1. Accédez à l’écran **Certificats SSL** à partir de l’écran **Environnements**.
 1. Vous pouvez voir un tableau avec une ligne pour chaque certificat SSL installé avec succès dans votre programme. Cliquez sur le bouton représentant des points de suspension tout à droite de la ligne du certificat que vous souhaitez mettre à jour, puis sélectionnez **Afficher et mettre à jour**.
 1. Les détails du certificat s’affichent et peuvent être mis à jour.
-1. Exécutez le pipeline pour déployer le certificat mis à jour.
+1. Enregistrez vos modifications.
+
+Une fois vos modifications enregistrées, elles sont appliquées automatiquement.
 
 >[!NOTE]
 >
