@@ -1,18 +1,18 @@
 ---
-title: Créer du contenu pour Edge Delivery Services
+title: Création de contenu WYSIWYG pour les Edge Delivery Services
 description: Découvrez le fonctionnement de la création de contenu avec Edge Delivery Services et comment créer du contenu AEM avec Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 85%
+source-wordcount: '448'
+ht-degree: 69%
 
 ---
 
 
-# Créer du contenu pour Edge Delivery Services {#authoring-edge}
+# Création de contenu WYSIWYG pour les Edge Delivery Services {#authoring-edge}
 
 Avec Edge Delivery Services, la création est facile, rapide et flexible. Vous disposez de deux options pour créer du contenu pour Edge Delivery Services :
 
@@ -25,7 +25,7 @@ Lorsque vous utilisez Edge Delivery Services avec AEM as a Cloud Service, 
 
 ![Fonctionnement de la création WYSIWYG avec les Edge Delivery Services](assets/how-aem-edge-works.png)
 
-1. [L’environnement de création WYSIWYG](/help/sites-cloud/authoring/quick-start.md) est utilisé pour la gestion de contenu comme la création de pages, de fragments d’expérience, de fragments de contenu, etc.
+1. [L’environnement AEM Sites](/help/sites-cloud/authoring/quick-start.md) est utilisé pour la gestion de contenu, par exemple pour créer de nouvelles pages, des fragments d’expérience, des fragments de contenu, etc.
    * Toutes les fonctionnalités d’AEM sont disponibles : workflows, MSM, traduction, lancements, etc.
 1. [L’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) est utilisé pour créer le contenu géré dans AEM.
    * Il propose une nouvelle interface utilisateur moderne pour la création de contenu.
@@ -52,9 +52,8 @@ Pour plus d’informations sur la création à l’aide de l’éditeur universe
 
 Consultez le [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) pour découvrir comment démarrer votre propre projet pour créer avec des AEM et des Edge Delivery Services.
 
-## Création basée sur des documents  {#document-based}
+## Méthodes de création supplémentaires  {#authoring-methods}
 
-Dans le cas de la création basée sur des documents, vous pouvez utiliser diverses sources telles que des documents Microsoft Word et Google Docs. Les documents provenant de ces sources deviennent des pages de votre site web. Les en-têtes, listes, images, éléments de police et vidéos peuvent tous être transférés de la source initiale vers votre site web. Vous pouvez ajouter des métadonnées à des fins d’optimisation pour les moteurs de recherche ou utiliser des blocs pour travailler avec du contenu structuré et ajouter des fonctionnalités.
+La création WYSIWYG est un outil puissant et intuitif pour les auteurs de contenu. Cependant, il existe de nombreux cas d’utilisation de création différents, raison pour laquelle AEM propose des solutions de création supplémentaires.
 
-Pour plus d’informations sur la création basée sur des documents, reportez-vous à [ce document dans la documentation Edge Delivery Services.](/help/edge/docs/authoring.md)
-
+Consultez le document [Choix d’une méthode de création](/help/edge/authoring-methods.md) pour en savoir plus sur les solutions de création AEM offres, y compris la création basée sur des documents et sans interface.
