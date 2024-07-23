@@ -4,9 +4,9 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ Cet article est organisé de la manière suivante :
             enabled: false
    ```
 
-1. Pour les types d’environnement autres que RDE (qui n’est actuellement pas pris en charge), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager.
+1. Pour les types d’environnements autres que RDE (qui n’est actuellement pas pris en charge), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager. Notez que les pipelines de pile complète et les pipelines de niveau web ne déploient pas le fichier de configuration.
 
    * [Voir Configuration des pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [Voir Configuration des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+Considérations :
+
+* La chaîne d’URL doit inclure **https://** ou la validation échouera. Si aucun port n’est inclus dans la chaîne d’URL, le port 443 (port HTTPS par défaut) est utilisé.
+* Si vous souhaitez utiliser un port différent du port 443, veuillez le fournir dans le cadre de l’URL.
 
 #### Logs CDN HTTPS {#https-cdn}
 
@@ -267,8 +272,7 @@ Il existe également une propriété nommée `sourcetype`, qui est définie sur 
 
 >[!NOTE]
 >
-> Avant l’envoi de la première entrée de journal CDN, votre serveur HTTP doit réussir un défi unique : une requête envoyée au chemin ``wellknownpath`` doit répondre avec ``*``.
-
+> Avant l’envoi de la première entrée de journal CDN, votre serveur HTTP doit réussir un défi unique : une requête envoyée au chemin ``/.well-known/fastly/logging/challenge`` doit répondre avec un astérisque ``*`` dans le corps et un code d’état 200.
 
 #### Journaux des AEM HTTPS {#https-aem}
 
