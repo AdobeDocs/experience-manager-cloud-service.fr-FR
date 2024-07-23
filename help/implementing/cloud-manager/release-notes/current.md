@@ -4,10 +4,10 @@ description: Consultez les notes de mise à jour de Cloud Manager 2024.7.0 dan
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
+source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 58%
+source-wordcount: '633'
+ht-degree: 62%
 
 ---
 
@@ -22,11 +22,11 @@ Cette page présente les notes de mise à jour de Cloud Manager version 2024.
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2024.7.0 de Cloud Manager dans AEM as a Cloud Service est le 18 juillet 2024. La prochaine version est prévue pour le 8 août 2024.
+La date de publication de la version 2024.7.0 de Cloud Manager dans AEM as a Cloud Service est le 18 juillet 2024. La prochaine version est prévue pour le 8 août 2024.
 
 ## Nouveautés {#what-is-new}
 
-* Le [pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) et le [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) déclenchent **Lors des modifications Git** pour démarrer le pipeline sur une validation est désormais disponible pour les [référentiels privés.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+* Le déclencheur **Lors des modifications Git** du [pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) et du [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) permettant de démarrer le pipeline sur une validation est désormais disponible pour les [référentiels privés.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
    * Ce processus sera mis en oeuvre progressivement et sera achevé d&#39;ici la mi-août.
 * Lors de l’ajout d’un certificat DV [géré par l’Adobe,](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) vous pouvez désormais ajouter un seul certificat qui couvre plusieurs domaines au lieu de créer un certificat pour chaque domaine.
 * Les solutions qui n’ont pas [d’autres régions de publication](/help/operations/additional-publish-regions.md) peuvent désormais être ajoutées à un programme tant que le programme comporte au moins une solution Sites ou Forms qui s’y applique.
@@ -39,6 +39,7 @@ La date de publication de la version 2024.7.0 de Cloud Manager dans AEM as a Clo
       * Le lien du rapport brut Lighthouse est désormais visible de manière plus intuitive, directement dans le panneau des détails des instantanés d’analyse.
       * La section Recommandations pour Lighthouse a été améliorée.
    * La mesure du PWA a été supprimée conformément à la version 12.0.0 de Lighthouse, ce qui a éliminé cette mesure.
+* [L’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) a été mis à jour vers la [version 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 ## Programme d’adoption précoce {#early-adoption}
 
