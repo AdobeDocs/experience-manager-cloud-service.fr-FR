@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
+source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 69%
+source-wordcount: '598'
+ht-degree: 76%
 
 ---
 
@@ -63,14 +63,6 @@ Une fois enregistré, votre certificat s’affiche sous la forme d’une nouvell
 ## Erreurs de certificat {#certificate-errors}
 
 Certaines erreurs peuvent se produire si un certificat n’est pas installé correctement ou répond aux exigences de Cloud Manager.
-
-### S’assurer d’un formatage correct des lignes {#line-formatting}
-
-Lors du collage de valeurs pour **Certificate**, **Private key** et **Certificate chain**, les nouvelles lignes ne doivent être qu’après BEGIN CERTIFICATE et avant END CERTIFICATE. En d’autres termes, les valeurs collées doivent être construites comme suit :
-
-* `-----BEGIN CERTIFICATE-----` doit apparaître sur sa propre ligne.
-* `-----END CERTIFICATE-----` doit apparaître sur sa propre ligne.
-* Le contenu du certificat doit apparaître sur sa propre ligne sous la forme d&#39;une longue chaîne **sans nouvelles lignes** entre `-----BEGIN CERTIFICATE-----` et `-----END CERTIFICATE-----`.
 
 ### Suppression de certificats du client {#client-certificates}
 
