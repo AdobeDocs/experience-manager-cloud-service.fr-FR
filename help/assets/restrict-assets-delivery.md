@@ -2,7 +2,8 @@
 title: Limitation de la diffusion des ressources dans Experience Manager
 description: Découvrez comment restreindre la diffusion des ressources dans [!DNL Experience Manager].
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 1%
@@ -19,7 +20,7 @@ Les utilisateurs [qui effectuent une recherche](search-assets-api.md) ou qui uti
 
 ## Diffusion restreinte utilisant un jeton IMS {#restrict-delivery-ims-token}
 
-En Experience Manager, la diffusion limitée via IMS implique deux étapes clés :
+Dans Experience Manager Assets, la diffusion limitée via IMS implique deux étapes clés :
 
 * Création
 * Diffusion
@@ -43,7 +44,7 @@ Si le champ n’est pas disponible, procédez comme suit pour ajouter le champ :
       1. Mettez à jour la **[!UICONTROL map to property]** vers _./jcr:content/metadata/dam:rôles_.
 
 1. Procurez-vous les groupes IMS à ajouter dans les métadonnées Rôles de la ressource. Pour récupérer les groupes IMS, procédez comme suit :
-   1. Connectez-vous à https://adminconsole.adobe.com/.
+   1. Se connecter à `https://adminconsole.adobe.com/.`
    1. Accédez à votre organisation respective et accédez à **[!UICONTROL Groupes d’utilisateurs]**.
    1. Sélectionnez le **[!UICONTROL groupe d&#39;utilisateurs]** à ajouter et extrayez les **[!UICONTROL orgID]** et **[!UICONTROL userGroupID]** depuis l&#39;URL ou utilisez votre ID d&#39;organisation tel que `{orgID}@AdobeOrg:{usergroupID}`.
 
