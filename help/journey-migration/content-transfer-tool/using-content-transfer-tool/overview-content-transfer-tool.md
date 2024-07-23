@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’outil de transfert de contenu pour 
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
+source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 93%
@@ -49,7 +49,7 @@ Le transfert de contenu comporte deux phases :
 
 Un jeu de migration possède les attributs suivants :
 
-* Avec la nouvelle version, vous pouvez créer un maximum de vingt jeux de migration au sein d’un projet créé dans Cloud Acceleration Manager.
+* Avec la nouvelle version, vous pouvez créer un maximum de dix jeux de migration au sein d’un projet créé dans Cloud Acceleration Manager.
 * Chaque jeu de migration doit avoir un nom unique.
 
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
