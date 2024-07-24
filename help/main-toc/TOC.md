@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
 workflow-type: tm+mt
 source-wordcount: '5270'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -697,15 +697,15 @@ ht-degree: 97%
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
             + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’outil utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Enregistrer un formulaire adaptatif en tant que brouillon](/help/forms/save-core-component-based-form-as-draft.md)
-            + Présentation de l’éditeur de règles pour Forms adaptatif basé sur les composants principaux{#rule-editor-core-components}
-               + [Présentation de l’éditeur de règles pour Forms adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components.md)
-               + [Interface utilisateur de l’éditeur de règles pour Forms adaptatif basée sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
-               + [Différence entre l’éditeur de règles de base et l’éditeur de règles de composants principaux](/help/forms/rule-editor-core-components-difference-tables.md)
-               + [Opérateur et types d’événements disponibles dans l’éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-events-operators.md)
-               + [Exemples d’éditeur de règles pour un formulaire adaptatif basé sur des composants principaux](/help/forms/rule-editor-core-components-usecases.md)
-            + Présentation des fonctions personnalisées de Forms adaptatif basées sur les composants principaux{#create-and-use-custom-function-core-component}
-               + [Présentation des fonctions personnalisées de Forms adaptatif basées sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
-               + [Création et utilisation d’une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
+            + Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux{#rule-editor-core-components}
+               + [Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components.md)
+               + [Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
+               + [Différence entre l’éditeur de règles de base et l’éditeur de règles des composants principaux](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [Types d’opérateurs et événements disponibles dans l’éditeur de règles d’un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-events-operators.md)
+               + [Exemples d’éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-usecases.md)
+            + Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux{#create-and-use-custom-function-core-component}
+               + [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
+               + [Créer et utiliser une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
                + [Exemples de fonctions personnalisées pour un formulaire adaptatif basé sur des composants principaux](/help/forms/custom-function-core-components-use-cases.md)
       + Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
