@@ -1,8 +1,8 @@
 ---
 source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 # Fragments de code {#snippets}
@@ -117,13 +117,13 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
   <table>
   </tbody>
 
-## Éditeur De Règles Voir Aussi {#see-also-rule-editor}
+## Éditeur de règles : voir aussi {#see-also-rule-editor}
 
-* [Présentation de l’éditeur de règles pour Forms adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components.md)
+* [Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components.md)
 * [Types d’opérateurs et événements dans l’éditeur de règles d’un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-events-operators.md)
-* [Interface utilisateur de l’éditeur de règles pour Forms adaptatif basée sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
+* [Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
 * [Différents cas d’utilisation de l’éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
-* [Différence dans différentes éditions de l’éditeur de règles](/help/forms/rule-editor-core-components-difference-tables.md)
-* [Présentation des fonctions personnalisées de Forms adaptatif basées sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
-* [Création d’une fonction personnalisée pour un formulaire adaptatif basée sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
-* [Exemples de développement et d’utilisation de fonctions personnalisées](/help/forms/custom-function-core-components-use-cases.md)
+* [Différence des diverses éditions de l’éditeur de règles](/help/forms/rule-editor-core-components-difference-tables.md)
+* [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
+* [Créer une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
+* [Exemples de développement et d’utilisation d’une fonction personnalisée](/help/forms/custom-function-core-components-use-cases.md)
