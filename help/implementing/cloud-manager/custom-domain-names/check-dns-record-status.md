@@ -5,16 +5,29 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 96%
+source-wordcount: '373'
+ht-degree: 60%
 
 ---
 
+
 # Vérification du statut de l’enregistrement DNS {#check-dns-record-status}
 
-Dans Cloud Manager, vous pouvez déterminer si votre nom de domaine se résout correctement sur votre site web AEM as a Cloud Service.
+Découvrez comment déterminer si vos paramètres DNS sont correctement résolus à l’aide de Cloud Manager.
+
+## État des enregistrements DNS {#status}
+
+Un nom de domaine personnalisé ne peut pas servir de trafic en direct tant que le DNS n’a pas été résolu correctement. Dans Cloud Manager, vous pouvez déterminer si votre nom de domaine se résout correctement sur votre site web AEM as a Cloud Service.
+
+## Conditions requises {#requirements}
+
+Vous devez répondre à ces exigences avant de vérifier l’état d’enregistrement DNS à l’aide de Cloud Manager.
+
+* Vous devez avoir déjà configuré les paramètres DNS pour votre nom de domaine personnalisé, comme décrit dans le document [Configuration des paramètres DNS.](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+
+## Comment vérifier l’état de l’enregistrement DNS {#how-to}
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
@@ -24,11 +37,17 @@ Dans Cloud Manager, vous pouvez déterminer si votre nom de domaine se résout 
 
 1. Cliquez sur le bouton **Statut** pour le nom de domaine.
 
-Cloud Manager effectue une recherche DNS pour votre nom de domaine et affiche l’un des messages de statut suivants.
+Cloud Manager effectue une recherche DNS pour votre nom de domaine et l’affiche [état actuel.](#statuses)
+
+Cloud Manager déclenche automatiquement une recherche DNS lorsque votre nom de domaine personnalisé est vérifié et déployé correctement pour la première fois. Pour les tentatives suivantes, vous devez sélectionner vous-même l’icône **Résoudre à nouveau** en face du statut.
+
+## Statuts DNS dans Cloud Manager {#statuses}
+
+Un domaine personnalisé peut avoir l’un des états suivants dans Cloud Manager.
 
 * **Statut de DNS non détecté** - Le statut du DNS n’est pas détecté tant que votre nom de domaine personnalisé n’a pas été vérifié et déployé avec succès.
 
-   * Ce statut est également observé lorsque votre nom de domaine personnalisé est en cours de suppression.
+   * Cet état est également observé lorsque votre nom de domaine personnalisé est en cours de suppression.
 
 * **Résolution DNS incorrecte** - Cela indique que la configuration des enregistrements DNS n’a pas encore été résolue ou est erronée.
 
@@ -43,4 +62,6 @@ Cloud Manager effectue une recherche DNS pour votre nom de domaine et affiche l
 
    * Votre site accueille des visiteurs.
 
-Cloud Manager déclenche automatiquement une recherche DNS lorsque votre nom de domaine personnalisé est vérifié et déployé correctement pour la première fois. Pour les tentatives suivantes, vous devez sélectionner vous-même l’icône **Résoudre à nouveau** en face du statut.
+## Étapes suivantes {#next-steps}
+
+Félicitations. Vous avez correctement configuré votre domaine personnalisé pour l’utiliser avec Cloud Manager. Consultez le document [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour plus d’informations sur la gestion de vos noms de domaine personnalisés à l’aide de Cloud Manager.

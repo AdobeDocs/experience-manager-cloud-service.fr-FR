@@ -1,30 +1,35 @@
 ---
 title: Configuration des paramètres DNS
-description: Découvrez comment configurer les paramètres DNS pour vos noms de domaine personnalisés.
+description: Découvrez comment configurer les paramètres DNS pour vos noms de domaine personnalisés permet à votre site de servir les visiteurs.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 92%
+source-wordcount: '416'
+ht-degree: 49%
 
 ---
 
+
 # Configuration des paramètres DNS {#configure-dns}
 
-Une fois votre nom de domaine personnalisé vérifié et déployé, vous êtes prêt à mettre à jour les enregistrements DNS pour votre nom de domaine personnalisé avec votre fournisseur DNS. Cela permet à votre site de répondre aux visiteurs. Cette activité est donc généralement effectuée avant le lancement.
+Une fois le nom de domaine personnalisé [vérifié et déployé avec succès, ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) vous êtes prêt à mettre à jour les enregistrements DNS de votre nom de domaine personnalisé avec votre fournisseur DNS. Cela permet à votre site de répondre aux visiteurs. Cette activité est donc généralement effectuée avant le lancement.
 
 ## Que sont les paramètres DNS ? {#dns-settings}
 
-Un enregistrement `CNAME` ou A, une fois configuré, achemine tout le trafic Internet du domaine vers l’endroit où il pointe. Si cet emplacement n’est pas configuré pour desservir le trafic, il y a une panne. S’il n’a pas été testé, il se peut que le contenu présente des erreurs. C’est pourquoi cette étape est toujours effectuée une fois le test terminé et que vous êtes prêt à passer en ligne.
+Un enregistrement `CNAME` ou A, une fois configuré, achemine tout le trafic Internet du domaine vers l’emplacement où il pointe. Si cet emplacement n’est pas configuré pour desservir le trafic, il y a une panne. S’il n’a pas été testé, il se peut que le contenu présente des erreurs. C’est pourquoi cette étape est toujours effectuée une fois le test terminé et que vous êtes prêt à passer en ligne.
 
-Pour configurer ces paramètres, vous devez déterminer si un enregistrement `CNAME` ou Apex doit être configuré pour pointer votre nom de domaine personnalisé vers le nom de domaine Cloud Manager. Les sections suivantes vous aideront à déterminer quel type d’enregistrement convient à votre configuration DNS.
+Pour configurer ces paramètres, vous devez déterminer si un enregistrement `CNAME` ou apex doit être configuré pour pointer votre nom de domaine personnalisé vers le nom de domaine Cloud Manager. Les sections suivantes de ce document vous aideront à déterminer le type d’enregistrement approprié à votre configuration DNS.
 
->[!NOTE]
->
->Vous ou la personne appropriée de votre organisation devez être en mesure de vous connecter ou de contacter votre fournisseur DNS (la société auprès de laquelle vous avez acheté le domaine) et d’effectuer des mises à jour de vos paramètres DNS.
+## Conditions requises {#requirements}
+
+Vous devez répondre à ces exigences avant de configurer vos enregistrements DNS.
+
+* Vous devez identifier l’hôte ou le serveur d’enregistrement de votre domaine si vous ne le connaissez pas déjà.
+* Vous devez être en mesure de modifier les enregistrements DNS pour le domaine de votre entreprise ou contacter la personne appropriée qui peut le faire.
+* Vous devez avoir déjà vérifié le nom de domaine personnalisé que vous avez configuré comme décrit dans le document [Vérification du statut du nom de domaine.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
 
 ## Enregistrement CNAME {#cname-record}
 
@@ -51,3 +56,7 @@ Ajoutez les enregistrements `A` suivants aux paramètres DNS de votre domaine pa
 * `A record for domain @ pointing to IP 151.101.131.10`
 
 * `A record for domain @ pointing to IP 151.101.195.10`
+
+## Étapes suivantes {#next-steps}
+
+Une fois que vous avez configuré vos enregistrements DNS pour votre nom de domaine personnalisé, vous devez vérifier ces paramètres dans Cloud Manager. Passez au document [Vérification de l’état des enregistrements DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) pour finaliser votre nom de domaine personnalisé.
