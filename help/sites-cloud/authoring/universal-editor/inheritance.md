@@ -1,0 +1,51 @@
+---
+title: Héritage de contenu dans l’éditeur universel
+description: Découvrez comment l’éditeur universel prend en charge l’héritage de contenu pour la gestion multisite et les lancements pour prendre en charge la réutilisation et la localisation du contenu.
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 3%
+
+---
+
+
+# Héritage de contenu dans l’éditeur universel {#inheritance}
+
+Découvrez comment l’éditeur universel prend en charge l’héritage de contenu pour la gestion multisite et les lancements pour prendre en charge la réutilisation et la localisation du contenu.
+
+## Cas d’utilisation {#use-case}
+
+Pour de nombreux utilisateurs d’AEM, la création d’une page n’est que le début. Pour dimensionner efficacement le contenu, les étapes suivantes sont généralement impliquées après la création de la page :
+
+1. **Traduisez la page** à l’aide de copies de langue et de workflows de traduction.
+1. **Localisez la page** à l’aide de la gestion multisite pour déployer la page traduite sur différents marchés.
+1. **Créez de nouvelles versions** à l’aide de lancements pour préparer les itérations futures de la page et mettre en ligne ces modifications.
+
+Ces étapes peuvent accélérer la vitesse du contenu et assurer la cohérence du contenu. L’éditeur universel prend en charge l’héritage du contenu, qui est le mécanisme sur lequel reposent ces étapes.
+
+## Héritage {#what-is-inheritance}
+
+L’héritage est le mécanisme par lequel le contenu peut être lié, de sorte que la modification de l’un modifie automatiquement l’autre. Les composants hérités peuvent être le produit de divers scénarios :
+
+* [Gestion multisite (MSM)](/help/sites-cloud/administering/msm/overview.md)
+* [Lancements](/help/sites-cloud/authoring/launches/overview.md)
+
+MSM et les lancements sont des outils puissants pour vous aider à réutiliser votre contenu. Les pages peuvent être copiées à partir d’une source centrale (le plan directeur) pour permettre aux auteurs d’apporter des modifications spécifiques au contexte de ces copies, tandis que le reste du contenu reste hérité du plan directeur. Cela s’avère extrêmement utile lors de la localisation de sites.
+
+Pour modifier un certain contenu des copies, les auteurs rompent l’héritage sur les composants affectés afin de s’assurer que leurs modifications locales ne sont pas écrasées lorsque les copies sont synchronisées à partir du plan directeur.
+
+## Héritage de contenu et éditeur universel {#universal-editor}
+
+Lorsqu’une page fait partie de MSM ou d’un lancement et que du contenu est modifié avec l’éditeur universel, l’éditeur désactive automatiquement l’héritage pour toutes les modifications apportées par les auteurs sur cette page, en s’assurant que le contenu modifié est conservé lorsque les mises à jour sont synchronisées à partir du plan directeur.
+
+L’auteur n’a pas besoin de cliquer sur un bouton ou de prendre toute autre mesure pour désactiver l’héritage avant d’effectuer des modifications locales. Dès qu’une modification est apportée, l’héritage est implicitement annulé. Ceci contraste avec l’[ éditeur de page.](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)
+
+## Limites {#limitations}
+
+* Les auteurs ne peuvent pas rétablir l’héritage pour les composants uniques.
+   * L’héritage ne peut être rétabli que pour la page entière via la [console Aperçu de la Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md) ou la [console Lancements.](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+* Les auteurs n’ont pas de commentaires visuels pour voir quels composants ont leur héritage désactivé et lesquels sont toujours conservés.
+* Actuellement, ces fonctionnalités sont limitées aux composants des pages et ne s’appliquent pas encore aux [fragments de contenu,](/help/sites-cloud/administering/content-fragments/overview.md) même si ceux-ci disposent également des fonctionnalités MSM et Launch.
