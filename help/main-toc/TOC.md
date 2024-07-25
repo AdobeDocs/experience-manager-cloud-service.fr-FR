@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
+source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
 workflow-type: tm+mt
-source-wordcount: '5283'
+source-wordcount: '5297'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Notes de mise à jour de la version 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [Notes de mise à jour de la version 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
          + [Notes de mise à jour de la version 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [Notes de mise à jour de la version 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -686,6 +687,7 @@ ht-degree: 99%
             + [Envoyer un formulaire adaptatif à Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Envoyer un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Connecter un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Configuration d’un site SharePoint avec accès limité à l’aide de la portée d’autorisation](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Intégrer un formulaire adaptatif AEM au workflow AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configurer l’action Envoyer vers le point d’entrée REST pour les formulaires adaptatifs](/help/forms/configure-submit-action-restpoint.md)
             + [Configurer l’action Envoyer un e-mail pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)

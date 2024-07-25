@@ -4,13 +4,13 @@ description: L’article décrit les différents cas d’utilisation d’un édi
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 58%
+source-wordcount: '1125'
+ht-degree: 56%
 
 ---
-
 
 # Différents cas d’utilisation de l’éditeur de règles
 
@@ -18,9 +18,10 @@ L’article fournit des exemples détaillés d’un éditeur de règles pour un 
 Maintenant, discutons des différentes mises en oeuvre d’un éditeur de règles.
 
 
-## Rationalisation de calculs complexes dans des panneaux répétables avec fonctions intégrées
+## Rationalisation de calculs complexes dans des panneaux répétables avec fonctions
 
-L’éditeur de règles vous permet d’utiliser des fonctions prêtes à l’emploi telles que Somme, Min, Max et Joindre directement sur les champs des panneaux répétables. Cela permet de libérer une automatisation puissante, ce qui vous permet de mettre en oeuvre une logique commerciale complexe sans code personnalisé.
+L’éditeur de règles vous permet d’utiliser des fonctions prêtes à l’emploi telles que Somme, Min, Max et Joindre directement sur les champs des panneaux répétables. Vous pouvez également transmettre une valeur de champ de panneau répétable à la fonction qui accepte le tableau de nombres, le tableau de chaînes, le tableau booléen, etc. Cela permet de libérer une automatisation puissante, ce qui vous permet de mettre en oeuvre une logique commerciale complexe sans code personnalisé.
+
 Imaginez un formulaire avec un panneau répétable, où chaque instance de panneau collecte des informations sur la valeur déclarée des ressources.
 
 ![Formulaire répétable](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ Vous pouvez utiliser la fonction `Sum` pour calculer automatiquement la valeur t
 Lorsque vous remplissez un formulaire, en ajoutant des instances pour déclarer les valeurs de la ressource, le bouton `Calculate Asset Value` calcule la somme totale de toutes les valeurs de la ressource déclarée et affiche le résultat dans la zone de texte `assetvalue`.
 
 ![Prise en charge des champs de panneau répétables dans les fonctions prêtes à l’emploi](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> Si la valeur du champ de panneau répétable est transmise à une fonction qui n’accepte pas de tableau, la valeur du champ de la dernière instance du panneau répétable est transmise à la fonction .
 
 Ce n&#39;est qu&#39;un exemple ! Explorez les [fonctions](#b-form-objects-and-functions-br) disponibles pour simplifier les processus et améliorer la précision des données dans vos formulaires.
 

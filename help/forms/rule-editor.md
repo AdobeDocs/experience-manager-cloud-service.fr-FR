@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 94%
@@ -561,7 +561,7 @@ La balise `jsdoc` associée est nécessaire :
 * Si vous souhaitez personnaliser la configuration et la description
 * Parce qu’il y a plusieurs façons de déclarer une fonction dans`JavaScript,` et que les commentaires permettent de conserver une trace des fonctions.
 
-L’éditeur de règles prend en charge la syntaxe JavaScript ES2015 pour les scripts et les fonctions personnalisées.
+L’éditeur de règles prend en charge la syntaxe JavaScript ES5 pour les scripts et les fonctions personnalisées.
 Pour plus d’informations, consultez [jsdoc.app](https://jsdoc.app/).
 
 Balises `jsdoc` prises en charge :

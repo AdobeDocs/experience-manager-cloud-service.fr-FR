@@ -1,8 +1,8 @@
 ---
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 98%
 
 ---
 # Fragments de code {#snippets}
@@ -100,7 +100,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
    </tr>
    <tr>
     <td>Prise en charge d’ES10 </td>
-    <td>ES10 n’est pas encore pris en charge. </td>
+    <td>ES10 n’est pas encore pris en charge. Il ne prend en charge que les fonctionnalités JavaScript ES5. </td>
     <td>Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions let et arrow (prise en charge d’ES10) dans les fonctions personnalisées. 
    </td>
    </tr>

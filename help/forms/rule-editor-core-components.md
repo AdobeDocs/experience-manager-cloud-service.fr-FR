@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 62%
 
 ---
@@ -91,8 +91,6 @@ Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe
 * Si une règle recherche une condition et exécute immédiatement une action en fournissant une valeur dans un champ ou en quittant un champ, il est recommandé d’écrire une règle avec un concept de condition-action ou le type de règle Lorsque sur le champ sur lequel la condition est évaluée.
 * La condition dans la règle Lorsque est évaluée lorsqu’un utilisateur modifie la valeur de l’objet pour lequel la règle Lorsque est appliquée. Cependant, si vous souhaitez déclencher l’action lorsque la valeur change du côté serveur, comme lorsque vous préremplissez la valeur, il est recommandé de créer une règle Lorsque qui déclenche l’action lors de l’initialisation du champ.
 * Lorsque vous créez des règles pour les menus déroulants, les boutons radio ou les cases à cocher, les options ou les valeurs de ces objets de formulaire sont préremplies dans l’éditeur de règles.
-
-## Étape suivante
 
 Pour savoir comment utiliser l’interface utilisateur pour écrire et gérer des règles dans un éditeur de règles, reportez-vous à l’article [ Interface utilisateur de l’éditeur de règles pour Forms adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md) .
 
