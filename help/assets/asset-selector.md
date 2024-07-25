@@ -4,10 +4,10 @@ description: Utilisez le sélecteur de ressources pour rechercher, trouver et r�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
+source-git-commit: cdb35a56c1337012fa099135470b91e162e8e902
 workflow-type: tm+mt
-source-wordcount: '4561'
-ht-degree: 39%
+source-wordcount: '5339'
+ht-degree: 32%
 
 ---
 
@@ -107,6 +107,7 @@ Vous pouvez intégrer le sélecteur de ressources à diverses applications, tell
 
 * [Intégrer le sélecteur de ressources à une application  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Intégration du sélecteur de ressources à une application non Adobe](#adobe-non-app-integration)
+* [Intégration pour Dynamic Media avec les fonctionnalités OpenAPI](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -386,6 +387,171 @@ Le sélecteur de ressources est rendu sur l’élément de conteneur `<div>`, co
 >
 >Si vous avez intégré le sélecteur de ressources à l’aide du workflow S’inscrire mais que vous ne parvenez toujours pas à accéder au référentiel de diffusion, assurez-vous que les cookies de navigateur sont nettoyés. Sinon, vous obtenez une erreur `invalid_credentials All session cookies are empty` dans la console.
 
++++
+
+<!--Integration with Polaris application content starts here-->
+
+>[!TAB Intégration pour Dynamic Media avec fonctionnalités OpenAPI]
+
+### Conditions préalables {#prereqs-polaris}
+
+Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de ressources à Dynamic Media avec les fonctionnalités OpenAPI :
+
+* [Méthodes de communication](#prereqs)
+* Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez disposer de licences pour :
+   * Référentiel Assets (as a Cloud Service Experience Manager Assets, par exemple).
+   * AEM Dynamic Media.
+* Seules les [ressources approuvées](#approved-assets.md) peuvent être utilisées pour assurer la cohérence de la marque.
+
+### Intégration pour Dynamic Media avec les fonctionnalités OpenAPI{#adobe-app-integration-polaris}
+
+L’intégration du sélecteur de ressources avec le processus Dynamic Media OpenAPI implique différentes étapes, notamment la création d’une URL Dynamic Media personnalisée ou la sélection d’une URL Dynamic Media, etc.
+
++++**Intégrer le sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI**
+
+Les propriétés `rootPath` et `path` ne doivent pas faire partie des fonctionnalités Dynamic Media avec OpenAPI . Vous pouvez plutôt configurer la propriété `aemTierType`. Voici la syntaxe de la configuration :
+
+```
+aemTierType:[1: "delivery"]
+```
+
+Cette configuration vous permet d’afficher toutes les ressources approuvées sans dossiers ou sous la forme d’une structure plate. Pour plus d’informations, accédez à la propriété `aemTierType` sous [Propriétés du sélecteur de ressources](#asset-selector-properties)
+
++++
+
++++**Créer une URL de diffusion dynamique à partir des ressources approuvées**
+Une fois que vous avez configuré le sélecteur de ressources, un schéma d’objets est utilisé pour créer une URL de diffusion dynamique à partir des ressources sélectionnées.
+Par exemple, un schéma d’un objet d’un tableau d’objets reçu lors de la sélection d’une ressource :
+
+```
+{
+"dc:format": "image/jpeg",
+"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+"repo:name": "image-7.jpg",
+"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
+...
+}
+```
+
+Toutes les ressources sélectionnées sont transportées par la fonction `handleSelection` qui agit comme un objet JSON. Par exemple, `JsonObj`. L&#39;URL de diffusion dynamique est créée en combinant les opérateurs suivants :
+
+| Objet | JSON |
+|---|---|
+| Hôte | `assetJsonObj["repo:repositoryId"]` |
+| Racine de l’API | `/adobe/dynamicmedia/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
+| format | `.jpg` |
+
+**Spécification de l’API de diffusion de ressources approuvées**
+
+Format d’URL :
+`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+
+Où,
+
+* L’hôte est `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* La racine de l’API est `"/adobe/dynamicmedia/deliver"`
+* `<asset-id>` est l’identifiant de ressource
+* `<seo-name>` est le nom d’une ressource
+* `<format>` est le format de sortie
+* `<image modification query parameters>` comme prise en charge par la spécification de l’API de diffusion des ressources approuvées
+
+**API de remise de ressources approuvées**
+
+L&#39;URL de diffusion dynamique présente la syntaxe suivante :
+`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, où,
+
+* L’hôte est `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* La racine de l’API pour la diffusion du rendu original est `"/adobe/assets/deliver"`.
+* `<asset-id>` est l’identifiant de ressource
+* `<seo-name>`est le nom de la ressource qui peut avoir ou ne pas avoir d’extension
+
++++
+
++++**Prêt à choisir l’URL de diffusion dynamique**
+Toutes les ressources sélectionnées sont transportées par une fonction `handleSelection` qui agit comme un objet JSON. Par exemple, `JsonObj`. L&#39;URL de diffusion dynamique est créée en combinant les opérateurs suivants :
+
+| Objet | JSON |
+|---|---|
+| Hôte | `assetJsonObj["repo:repositoryId"]` |
+| Racine de l’API | `/adobe/assets/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"]` |
+
+Vous trouverez ci-dessous les deux manières de parcourir l’objet JSON :
+
+![URL de diffusion dynamique](assets/dynamic-delivery-url.png)
+
+* **Miniature :** Les miniatures peuvent être des images et les ressources sont PDF, vidéo, images, etc. Vous pouvez toutefois utiliser les attributs de hauteur et de largeur de la miniature d’une ressource comme rendu de diffusion dynamique.
+L’ensemble de rendus suivant peut être utilisé pour les ressources de type PDF :
+Une fois qu’un pdf est sélectionné dans le sidekick, le contexte de sélection fournit les informations suivantes. Vous trouverez ci-dessous la manière de parcourir l’objet JSON :
+
+  <!--![Thumbnail dynamic delivery url](image-1.png)-->
+
+  Vous pouvez vous reporter à `selection[0].....selection[4]` pour le tableau de lien de rendu de la capture d’écran ci-dessus. Par exemple, les propriétés clés de l’un des rendus de miniature sont les suivantes :
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+Dans la capture d’écran ci-dessus, l’URL de diffusion du rendu d’origine du PDF doit être incorporée dans l’expérience cible si PDF est requis et non sa miniature. Par exemple, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`.
+
+* **Vidéo :** Vous pouvez utiliser l’URL du lecteur vidéo pour les ressources de type vidéo qui utilisent un iFrame incorporé. Vous pouvez utiliser les rendus de tableau suivants dans l’expérience cible :
+  <!--![Video dynamic delivery url](image.png)-->
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+  Vous pouvez vous reporter à `selection[0].....selection[4]` pour le tableau de lien de rendu de la capture d’écran ci-dessus. Par exemple, les propriétés clés de l’un des rendus de miniature sont les suivantes :
+
+  Le fragment de code de la capture d’écran ci-dessus est un exemple de ressource vidéo. Elle inclut le tableau de liens de rendus. `selection[5]` dans l’extrait est l’exemple de miniature d’image qui peut être utilisé comme espace réservé de miniature vidéo dans l’expérience cible. Le `selection[5]` du tableau des rendus est destiné au lecteur vidéo. Il sert un HTML et peut être défini comme `src` de l’iframe. Il prend en charge la diffusion en continu à débit adaptatif qui est une diffusion de la vidéo optimisée pour le web.
+
+  Dans l’exemple ci-dessus, l’URL du lecteur vidéo est `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+
++++**Interface utilisateur du sélecteur de ressources pour Dynamic Media avec fonctionnalités OpenAPI**
+
+Une fois l’intégration avec le sélecteur de ressources Micro-Frontend de l’Adobe effectuée, vous pouvez afficher la structure des ressources uniquement de toutes les ressources approuvées disponibles dans le référentiel de ressources Experience Manager.
+
+![Dynamic Media avec l’interface utilisateur des fonctionnalités OpenAPI](assets/polaris-ui.png)
+
+* **A** : [masquer/afficher le panneau](#hide-show-panel)
+* **B** : [Assets](#repository)
+* **C** : [Tri](#sorting)
+* **D** : [filtres](#filters)
+* **E** : [barre de recherche](#search-bar)
+* **F** : [Tri par ordre croissant ou décroissant](#sorting)
+* **G** : Annuler la sélection
+* **H** : sélectionnez une ou plusieurs ressources
+
++++
+
++++**Configurer des filtres personnalisés**
+Le sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI vous permet de configurer des propriétés personnalisées et des filtres en fonction de celles-ci. La propriété `filterSchema` est utilisée pour configurer ces propriétés. La personnalisation peut être exposée sous la forme `metadata.<metadata bucket>.<property name>.` sur laquelle les filtres peuvent être configurés, où,
+
+* `metadata` est l’information d’une ressource
+* `embedded` est le paramètre statique utilisé pour la configuration, et
+* `<propertyname>` est le nom du filtre que vous configurez.
+
+Pour la configuration, les propriétés définies au niveau de `jcr:content/metadata/` sont exposées sous la forme `metadata.<metadata bucket>.<property name>.` pour les filtres que vous souhaitez configurer.
+
+Par exemple, dans le sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI, une propriété sur `asset jcr:content/metadata/client_name:market` est convertie en `metadata.embedded.client_name:market` pour la configuration des filtres.
+
+Pour obtenir le nom, une activité unique doit être effectuée. Effectuez un appel API de recherche pour la ressource et obtenez le nom de la propriété (le compartiment, essentiellement).
+
++++
+
 >[!ENDTABS]
 
 ## Propriétés du sélecteur de ressources {#asset-selector-properties}
@@ -398,8 +564,6 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 | *imsOrg* | Chaîne | Oui | | Identifiant Adobe Identity Management System (IMS) attribué lors de l’approvisionnement de [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] pour votre organisation. La clé `imsOrg` est requise pour vous authentifier, que l’organisation à laquelle vous accédez se trouve sous Adobe IMS ou non. |
 | *imsToken* | Chaîne | Non | | Jeton de support IMS utilisé pour l’authentification. `imsToken` est requis si vous utilisez une application [!DNL Adobe] pour l’intégration. |
 | *apiKey* | Chaîne | Non | | Clé d’API utilisée pour accéder au service AEM Discovery. `apiKey` est requis si vous utilisez une intégration d’application [!DNL Adobe]. |
-| *rootPath* | Chaîne | Non | /content/dam/ | Chemin du dossier à partir duquel le sélecteur de ressources affiche vos ressources. `rootPath` peut également être utilisé sous la forme d’encapsulation. Par exemple, avec le chemin suivant, `/content/dam/marketing/subfolder/`, le sélecteur de ressources ne vous permet pas de parcourir les dossiers parents, mais affiche uniquement les dossiers enfants. |
-| *Chemin.* | Chaîne | Non | | Chemin d’accès utilisé pour accéder à un répertoire spécifique de ressources lors du rendu du sélecteur de ressources. |
 | *filterSchema* | Tableau | Non | | Modèle utilisé pour configurer les propriétés de filtre. Cela s’avère utile lorsque vous souhaitez limiter certaines options de filtre dans le sélecteur de ressources. |
 | *filterFormProps* | Objet | Non | | Spécifiez les propriétés de filtre à utiliser pour affiner votre recherche. Pour ! Par exemple, type MIME JPG, PNG, GIF. |
 | *selectedAssets* | Tableau `<Object>` | Non |                 | Spécifiez les ressources sélectionnées lors du rendu du sélecteur de ressources. Un tableau d’objets contenant une propriété d’ID des ressources est requis. Par exemple : `[{id: 'urn:234}, {id: 'urn:555'}]`. Une ressource doit être disponible dans le répertoire actuel. Si vous devez utiliser un autre répertoire, saisissez également une valeur pour la propriété `path`. |
@@ -427,6 +591,8 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 | *expirationOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit l’état d’une ressource expirée. La fonction renvoie `EXPIRED`, `EXPIRING_SOON` ou `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [Personnaliser les ressources expirées](#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ou déplacée sur la zone de travail. |
 | *showToast* | | Non | | Il permet au sélecteur de ressources d’afficher un message de toast personnalisé pour la ressource expirée. |
 <!--
+| *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
 -->
