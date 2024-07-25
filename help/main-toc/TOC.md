@@ -861,9 +861,9 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [Vue d’ensemble d’Edge Delivery Services](/help/edge/overview.md)
    + [Utiliser Edge Delivery Services avec AEM](/help/edge/using.md)
-   + [Choix d’une méthode de création](/help/edge/authoring-methods.md)
+   + [Choisir une méthode de création](/help/edge/authoring-methods.md)
    + Création WYSIWYG {#wysiwyg-authoring}
-      + [Création de contenu WYSIWYG pour Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Création de contenu WYSIWYG pour Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
       + [Publier du contenu pour Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
       + [Guide de démarrage pour le développement](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [Créer des blocs](/help/edge/wysiwyg-authoring/create-block.md)
