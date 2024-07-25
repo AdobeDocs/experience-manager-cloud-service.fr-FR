@@ -1,15 +1,16 @@
 ---
 title: Configurer le trafic sur le réseau CDN
-description: Découvrez comment configurer le trafic CDN en déclarant les règles et les filtres dans un fichier de configuration et en les déployant sur le CDN à l’aide du pipeline de configuration de Cloud Manager.
+description: Découvrez comment configurer le trafic CDN en déclarant les règles et les filtres dans un fichier de configuration et en les déployant sur le CDN à l’aide d’un pipeline de configuration Cloud Manager.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 3%
+source-wordcount: '1319'
+ht-degree: 2%
 
 ---
+
 
 # Configurer le trafic sur le réseau CDN {#cdn-configuring-cloud}
 
@@ -20,11 +21,11 @@ AEM as a Cloud Service propose un ensemble de fonctionnalités configurables au 
 * [Redirections côté client](#client-side-redirectors) - déclenchez une redirection du navigateur. Cette fonctionnalité n’est pas encore disponible en version GA, mais elle est disponible pour les utilisateurs avancés.
 * [Sélecteurs d’origine](#origin-selectors) - proxy vers un autre serveur principal d’origine.
 
-Les règles de filtrage du trafic (dont le WAF), qui contrôlent le trafic autorisé ou refusé par le CDN, peuvent également être configurées sur le CDN. Cette fonctionnalité est déjà disponible et vous pouvez en savoir plus à ce sujet sur la page [Règles de filtre de trafic y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md) .
+Sur le réseau de diffusion de contenu, vous pouvez également configurer des règles de filtrage du trafic (y compris WAF) qui contrôlent le trafic autorisé ou refusé par le réseau de diffusion de contenu. Cette fonctionnalité est déjà disponible et vous pouvez en savoir plus à ce sujet sur la page [Règles de filtrage du trafic incluant les règles WAF](/help/security/traffic-filter-rules-including-waf.md) .
 
 En outre, si le réseau de diffusion de contenu ne peut pas contacter son origine, vous pouvez écrire une règle qui fait référence à une page d’erreur personnalisée auto-hébergée (qui est alors rendue). Pour en savoir plus à ce sujet, consultez l’article [Configuration des pages d’erreur CDN](/help/implementing/dispatcher/cdn-error-pages.md) .
 
-Toutes ces règles, déclarées dans un fichier de configuration dans le contrôle de code source, sont déployées à l’aide du [pipeline de configuration de Cloud Manager ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Gardez à l’esprit que la taille cumulée du fichier de configuration, y compris les règles de filtrage du trafic, ne peut pas dépasser 100 Ko.
+Toutes ces règles, déclarées dans un fichier de configuration dans le contrôle de code source, sont déployées à l’aide du pipeline de configuration Cloud Manager [config .](/help/operations/config-pipeline.md) Gardez à l’esprit que la taille cumulée du fichier de configuration, y compris les règles de filtrage du trafic, ne peut pas dépasser 100 Ko.
 
 ## Ordre d’évaluation {#order-of-evaluation}
 
@@ -36,23 +37,24 @@ Fonctionnellement, les différentes fonctionnalités mentionnées précédemment
 
 Avant de pouvoir configurer le trafic sur le réseau de diffusion de contenu, vous devez effectuer les opérations suivantes :
 
-* Créez ce dossier et cette structure de fichiers dans le dossier de niveau supérieur de votre projet Git :
+1. Créez un fichier nommé `cdn.yaml` ou similaire, référençant les différents fragments de code de configuration dans les sections ci-dessous.
 
-```
-config/
-     cdn.yaml
-```
+   Tous les fragments de code possèdent ces propriétés communes, qui sont décrites dans l’[article Config Pipeline](/help/operations/config-pipeline.md#common-syntax). La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur *1*.
 
-* Le fichier de configuration `cdn.yaml` doit contenir à la fois des métadonnées et les règles décrites dans les exemples ci-dessous. Le paramètre `kind` doit être défini sur `CDN` et la version doit être définie sur la version du schéma, qui est actuellement `1`.
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   ```
 
-* Créez un pipeline de configuration de déploiement ciblé dans Cloud Manager. Voir [configuration des pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et [configuration des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans l’ [article Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
 
-**Remarques**
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’ [article Config Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
-* Les RDE ne prennent actuellement pas en charge le pipeline de configuration.
-* Vous pouvez utiliser `yq` pour valider localement le format YAML de votre fichier de configuration (par exemple, `yq cdn.yaml`).
+1. Déployez la configuration.
 
-## Syntaxe {#configuration-syntax}
+## Syntaxe des règles {#configuration-syntax}
 
 Les types de règle dans les sections ci-dessous partagent une syntaxe commune.
 

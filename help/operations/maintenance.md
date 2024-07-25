@@ -4,12 +4,13 @@ description: Découvrez les tâches de maintenance dans AEM as a Cloud Service e
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 39%
+source-wordcount: '2055'
+ht-degree: 40%
 
 ---
+
 
 # Tâches de maintenance dans AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -219,23 +220,19 @@ Déclarez un fichier de configuration et déployez-le, comme décrit dans les é
 > 
 >De même, une fois que vous avez déployé le noeud de purge du journal d’audit dans le fichier de configuration, vous devez le conserver déclaré et ne pas le supprimer.
 
-**1** - créez la structure de dossiers et de fichiers suivante dans le dossier de niveau supérieur de votre projet dans Git :
+**1** Créez un fichier nommé `mt.yaml` ou similaire.
 
-```
-config/
-     mt.yaml
-```
+**2** Placez le fichier quelque part sous un dossier de niveau supérieur nommé `config` ou similaire, comme décrit dans l’article [config pipeline.](/help/operations/config-pipeline.md#folder-structure)
 
-**2** - Déclarez les propriétés dans le fichier de configuration, notamment :
+**3** - Déclarez les propriétés dans le fichier de configuration, notamment :
 
-* une propriété &quot;type&quot; avec la valeur &quot;MaintenanceTasks&quot;.
-* une propriété &quot;version&quot; (nous sommes actuellement à la version 1).
-* un objet &quot;metadata&quot; facultatif avec la propriété `envTypes` avec une liste séparée par des virgules du type d’environnement (dev, stage, prod) pour lequel cette configuration est valide. Si aucun objet de métadonnées n’est déclaré, la configuration est valide pour tous les types d’environnements.
+* quelques propriétés au-dessus du noeud de données — consultez l’ [article du pipeline de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description. La valeur de la propriété `kind` doit être *MaintenanceTasks* et la version doit être définie sur *1*.
+
 * un objet de données avec les objets `versionPurge` et `auditLogPurge`.
 
 Voir les définitions et la syntaxe des objets `versionPurge` et `auditLogPurge` ci-dessous.
 
-Vous devez structurer la configuration comme dans l’exemple suivant :
+Organisez la configuration comme dans l’exemple suivant :
 
 ```
 kind: "MaintenanceTasks"
@@ -270,14 +267,7 @@ Gardez à l’esprit que pour que la configuration soit valide :
 * toutes les propriétés doivent être définies. Il n’existe aucun paramètre par défaut hérité.
 * les types (entiers, chaînes, valeurs booléennes, etc.) dans les tableaux de propriétés ci-dessous doivent être respectés.
 
->[!NOTE]
->Vous pouvez utiliser `yq` pour valider localement la mise en forme YAML de votre fichier de configuration (par exemple, `yq mt.yaml`).
-
-**3** - Configurez les pipelines de configuration hors production et en production.
-
-Les environnements de développement rapide ne prennent pas en charge la purge. Pour les autres types d’environnements dans les programmes de production (non Sandbox), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager.
-
-Voir [configuration des pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et [configuration des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) pour plus d’informations.
+**4** - Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’article [config pipeline .](/help/operations/config-pipeline.md#managing-in-cloud-manager) Les environnements de test et les environnements de développement rapide ne prennent pas en charge la purge.
 
 ### Purge de version {#version-purge}
 

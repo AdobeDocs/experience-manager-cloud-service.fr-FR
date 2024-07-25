@@ -4,10 +4,10 @@ description: Tirez parti du Centre d’actions pour agir facilement sur les inci
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 7630481aab89b31057509f23aab334e17c537257
+source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 55%
+source-wordcount: '1045'
+ht-degree: 53%
 
 ---
 
@@ -76,6 +76,7 @@ Le tableau suivant répertorie les types de notifications actuellement pris en c
 | File d’attente de réplication bloquée | Incident | Débloquer la file d’attente en suivant les instructions de la [documentation de réplication](/help/operations/replication.md#troubleshooting) |
 | Requête GraphQL persistante non valide | Incident | Corrigez la requête GraphQL non valide en référençant la [documentation de dépannage des requêtes GraphQL persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Pic de trafic à l’origine | Incident | Protect votre origine en configurant des règles de filtrage du trafic de limite de taux qui se déclenchent à des seuils inférieurs à ceux du pic de trafic par défaut à l’alerte d’origine.  Consultez la section [Blocking DoS and DDoS attaquant à l’aide de règles de trafic](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentation sur les règles de filtrage du trafic, qui fait référence à un tutoriel. |
+| Règles de filtrage du trafic CDN déclenchées | Incident | Si la règle de filtrage du trafic correspondante reflète une attaque et que votre site ne bloque pas ce trafic, protégez votre site en configurant une règle de filtrage du trafic en mode de blocage. Consultez la section [Protection des sites Web avec des règles de filtrage du trafic (y compris les règles WAF)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) de la documentation sur les règles de filtrage du trafic, qui fait référence à un tutoriel. |
 | Les pages contiennent un grand nombre de noeuds | Proactif | Réduire le nombre total de noeuds dans une page. Reportez-vous à la [documentation sur la complexité de la page](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Grand nombre d’instances de workflow en cours d’exécution | Proactif | Arrêtez les workflows en cours d’exécution qui ne sont plus nécessaires. Découvrez comment [configurer une tâche de purge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Expiration du certificat S2S | Proactif | Découvrez comment actualiser des informations d’identification dans la [documentation sur la génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials). | Nombre de connexions élevé | Proactif | En savoir plus sur le pool de connexions dans la [documentation sur le pool de connexions avec la mise en réseau avancée](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

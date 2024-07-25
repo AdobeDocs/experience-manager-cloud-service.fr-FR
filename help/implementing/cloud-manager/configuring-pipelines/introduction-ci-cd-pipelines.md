@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 89%
+source-wordcount: '1500'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,8 @@ Un pipeline hors production sert principalement à exécuter des analyses de qua
 Outre la dichotomie production et hors production, les pipelines peuvent être différenciés par le type de code qu’ils déploient.
 
 * **[Pipelines full stack](#full-stack-pipeline)** - Déploient simultanément des versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec des configurations HTTPD/Dispatcher.
-* **[Config Pipelines](#config-deployment-pipeline)** - Configurez et déployez les règles de filtrage du trafic, y compris les règles WAF, en quelques minutes.
+* **[Config Pipelines](#config-deployment-pipeline)** - Déployez rapidement les configurations pour des fonctionnalités telles que le transfert de journaux, les tâches de maintenance liées à la purge et diverses configurations de réseau de diffusion de contenu telles que les règles de filtrage du trafic (y compris les règles WAF), les transformations de requêtes et de réponses, les sélecteurs d’origine, les redirections côté client, les pages d’erreur, les clés de réseau de diffusion de contenu gérées par le client, les clés de purge et l’API de base.
+   * Pour plus d’informations, consultez le document [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md) .
 * **[Pipelines front-end](#front-end)** - Déploient les versions de code front-end contenant une ou plusieurs applications d’interface utilisateur côté client.
 * **[Pipelines de configuration de niveau web](#web-tier-config-pipelines)** - Déploient les configurations HTTPD/Dispatcher.
 
@@ -71,11 +72,10 @@ Le tableau suivant résume les pipelines disponibles dans Cloud Manager et leur 
 | Production ou hors production | Déploiement | Full stack | Déploie simultanément des versions de code front-end et back-end avec des configurations HTTPD/Dispatcher. | Lorsque le code front-end doit être déployé simultanément avec le code de serveur AEM.<br>Lorsque les pipelines front-end ou les pipelines de configuration de niveau web n’ont pas encore été adoptés. |
 | Production ou hors production | Déploiement | Front-end | Déploie une version de code front-end contenant une ou plusieurs applications d’interface utilisateur côté client. | Prise en charge de plusieurs pipelines front-end simultanés<br>Beaucoup plus rapide que les déploiements full stack |
 | Production ou hors production | Déploiement | Configuration de la couche web | Déploie des configurations HTTPD/Dispatcher | Déploiement en quelques minutes |
-| Production ou hors production | Déploiement | Config | Déploiement des règles de filtrage du trafic | Déploiement en quelques minutes |
+| Production ou hors production | Déploiement | Config | Déploie la [configuration pour un certain nombre de fonctionnalités](/help/operations/config-pipeline.md) liées au réseau de diffusion de contenu, au transfert de journal et aux tâches de maintenance de purge | Déploiement en quelques minutes |
 | Hors production | Qualité du code | Full stack | Exécute des analyses de qualité du code sur le code full stack sans déploiement. | Prise en charge de plusieurs pipelines |
 | Hors production | Qualité du code | Front-end | Exécute des analyses de qualité du code sur le code front-end sans déploiement. | Prise en charge de plusieurs pipelines |
 | Hors production | Qualité du code | Configuration de la couche web | Exécute des analyses de qualité du code sur les configurations du Dispatcher sans déploiement. | Prise en charge de plusieurs pipelines |
-| Hors production | Qualité du code | Config | Déploiement des règles de filtrage du trafic |  |
 
 Le diagramme suivant illustre les configurations de pipelines Cloud Manager avec une configuration traditionnelle, un référentiel front-end unique ou un référentiel front-end indépendant.
 
@@ -116,9 +116,9 @@ Pour savoir comment configurer des pipelines full stack, reportez-vous aux docum
 
 ## Configuration des pipelines {#config-deployment-pipeline}
 
-Avec un pipeline de configuration, vous pouvez configurer et déployer des règles de filtrage du trafic, y compris des règles WAF, en quelques minutes.
+Avec un pipeline de configuration, vous pouvez déployer rapidement des configurations pour le transfert de journaux, les tâches de maintenance liées à la purge et diverses configurations du réseau de diffusion de contenu, telles que les règles de filtrage du trafic (y compris les règles WAF), les transformations de requête et de réponse, les sélecteurs d’origine, les redirections côté client, les pages d’erreur, les clés de réseau de diffusion de contenu gérées par le client, les clés d’API de purge et l’authentification de base.
 
-Voir [Règles de filtre de trafic y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
+Consultez le document [Utilisation des pipelines de configuration](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) pour obtenir une liste complète des fonctionnalités prises en charge et pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
 
 ### Configuration des pipelines de configuration {#configure-config-deployment}
 
