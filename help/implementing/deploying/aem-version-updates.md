@@ -4,9 +4,9 @@ description: Découvrez comment Adobe Experience Manager (AEM) as a Cloud Servic
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '997'
 ht-degree: 11%
 
 ---
@@ -33,7 +33,7 @@ Grâce à NIMU, le client peut utiliser le pipeline à tout moment, même si une
 #### Mise à jour des activités
 
 La version d’AEM actuelle peut toujours être vérifiée pour chaque environnement, comme auparavant, à l’aide du panneau Environnements de l’interface utilisateur de Cloud Manager . Les mêmes points de contrôle de qualité utilisés dans le pipeline sont utilisés par les mises à jour de maintenance non intrusives, y compris les tests écrits par le client.
-Une notification de l’interface utilisateur de Cloud Manager est envoyée chaque fois qu’une mise à jour de maintenance non intrusive est appliquée aux environnements de votre programme. Vous pouvez le configurer pour qu’il soit également envoyé à votre email.
+Une [notification de l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/notifications.md) sera envoyée chaque fois qu’une mise à jour de maintenance non intrusive est appliquée aux environnements de votre programme. Vous pouvez le configurer pour qu’il soit également envoyé à votre email.
 
 >[!NOTE]
 >
@@ -102,3 +102,11 @@ En règle générale, les mises à jour n’entraînent aucune interruption, y c
 Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. Dans un [déploiement en continu](/help/implementing/deploying/overview.md#how-rolling-deployments-work), la nouvelle version d’AEM contient son propre `/libs` (référentiel non modifiable basé sur TarMK). Il est différent de l’ancienne version d’AEM, bien que les deux fassent référence à un référentiel modifiable partagé basé sur DocumentMK qui contient des zones comme `/content` , `/conf` , `/etc` et d’autres.
 
 Comme les anciennes et les nouvelles versions possèdent leurs propres versions de `/libs`, elles peuvent toutes deux être actives pendant la mise à jour en continu. Et les deux peuvent reprendre la circulation jusqu&#39;à ce que l&#39;ancien soit complètement remplacé par le nouveau.
+
+## Informations supplémentaires {#further-information}
+
+Pour plus de détails sur les thèmes connexes :
+
+* [Pipeline CI/CD Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Notification de l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/notifications.md)
+* [Architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)
