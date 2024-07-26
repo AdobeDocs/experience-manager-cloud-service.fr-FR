@@ -4,10 +4,10 @@ description: Comprendre l’interface utilisateur et de la navigation dans [!DNL
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 92%
+source-wordcount: '966'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,8 @@ Lorsque vous vous connectez à [!DNL Assets view], l’interface suivante s’af
 
 ## Parcourir et afficher les ressources et les dossiers {#browse-repository}
 
-Vous pouvez accéder aux dossiers requis à partir de l’interface utilisateur principale ou de la barre latérale gauche. Lors de votre navigation, vous pouvez utiliser l’interface pour afficher les miniatures de vos ressources afin de parcourir visuellement le référentiel ou d’afficher les détails de la ressource pour trouver rapidement la ressource souhaitée. Les options disponibles dans la barre latérale gauche sont les suivantes :
+Vous pouvez accéder aux dossiers requis à partir de l’interface utilisateur principale ou de la barre latérale gauche. Experience Manager Assets affiche désormais des aperçus visuels du contenu du dossier sur la miniature du dossier lors de la navigation ou de la recherche de contenu, ce qui améliore la visibilité des ressources disponibles dans le référentiel AEM Assets. Cette miniature de dossier permet d’économiser le temps consacré à la recherche de ressources spécifiques dans un dossier du référentiel AEM Assets.
+Lorsque vous parcourez des ressources dans un dossier, vous pouvez utiliser l’interface pour afficher des miniatures de ressources afin de parcourir visuellement le référentiel ou d’afficher les détails de la ressource pour trouver rapidement la ressource souhaitée. Les options disponibles dans la barre latérale gauche sont les suivantes :
 
 * [Mon espace de travail](/help/assets/my-workspace-assets-view.md) : Assets comprend désormais un espace de travail personnalisable, composé de widgets permettant d’accéder facilement aux éléments clés de l’interface utilisateur d’Assets et aux informations qui vous intéressent le plus. Sur une page unique, bénéficiez d’un aperçu de vos tâches et d’un accès rapide aux principaux workflows. Grâce à un accès rapide et convivial aux menus pertinents, vous gagnez en efficacité et en vitesse de contenu.
 * [Tâches](/help/assets/my-workspace-assets-view.md) : vous pouvez afficher les tâches qui vous sont affectées sous l’onglet **Mes tâches**. En revanche, les tâches que vous créez peuvent être affichées sous l’onglet **Tâches affectées**. En outre, les tâches que vous effectuez se trouvent sous l’onglet **Tâches terminées** .
@@ -61,7 +62,7 @@ Dans [!DNL Assets view], vous pouvez afficher les ressources, les dossiers et le
 
 Pour localiser une ressource, vous pouvez trier les ressources par ordre croissant ou décroissant de `Name`, `Relevancy`, `Size`, `Modified` et `Created`.
 
-Pour accéder à un dossier, double-cliquez sur les miniatures du dossier ou sélectionnez le dossier dans la barre latérale gauche. Pour afficher les détails d’un dossier, sélectionnez-le et cliquez sur Détails dans la barre d’outils supérieure. Pour parcourir la hiérarchie de haut en bas, utilisez la barre latérale gauche ou le chemin de navigation en haut.
+Pour naviguer dans un dossier, double-cliquez sur les miniatures du dossier ou sélectionnez le dossier dans la barre latérale gauche. Pour afficher les détails d’un dossier, sélectionnez-le et cliquez sur Détails dans la barre d’outils supérieure. Pour parcourir la hiérarchie de haut en bas, utilisez la barre latérale gauche ou le chemin de navigation en haut.
 
 ![Parcourir les dossiers](assets/browsing-folders.png)
 
