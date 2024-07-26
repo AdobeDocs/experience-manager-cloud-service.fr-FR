@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1356'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -19,32 +19,32 @@ Avec Edge Delivery Services, AEM offre des expériences exceptionnelles qui fa
 En utilisant Edge Delivery Services, vous pouvez accomplir ce qui suit :
 
 * Créer des sites rapides avec un score Lighthouse parfait et surveiller en permanence les performances de votre site grâce à la surveillance de l’utilisation en temps réel (RUM).
-* Augmenter l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création WYSIWYG et la création basée sur des documents prêts à l’emploi. Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web.
+* Augmenter l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser directement la création WYSIWYG et basée sur des documents. Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web.
 * Utiliser un framework d’expérimentation intégré qui permet la création rapide de tests, l’exécution sans impact sur les performances et la mise en production rapide de la meilleure version.
 
-## Réaction rapide aux besoins de l’entreprise {#agile-reaction}
+## Réaction agile aux besoins de l’entreprise {#agile-reaction}
 
-En tant que leader reconnu de longue date du secteur, Adobe sait combien il est important de pouvoir créer et publier rapidement du contenu nouveau et significatif pour vos clients. Les défis courants liés à la mise à l’échelle de la création de contenu ont été mis en évidence par le marché, notamment :
+En tant que leader reconnu de longue date du secteur, Adobe sait combien il est important de pouvoir créer et publier rapidement du contenu nouveau et significatif pour vos clientes et clients. Les défis courants liés à la mise à l’échelle de la création de contenu ont été mis en évidence par le marché, notamment :
 
 1. **La demande de contenu continue de croître.**
-   * Il est nécessaire de déverrouiller de nouveaux auteurs de contenu pour répondre à cette demande.
+   * Il est nécessaire de libérer les créateurs et créatrices de contenu pour répondre à cette demande.
    * Le processus de création de contenu doit être mis à l’échelle de manière efficace dans l’ensemble de l’entreprise.
-   * Les auteurs doivent pouvoir réagir rapidement aux tendances qui changent.
+   * Les créateurs et créatrices doivent pouvoir réagir rapidement aux tendances qui changent.
 1. **Le contenu omnicanal est nécessaire.**
    * Un contrôle de mise en page est nécessaire, quelle que soit la diffusion de contenu.
-   * Les auteurs doivent pouvoir modifier directement la disposition du contenu.
-1. **La pression augmente pour augmenter le retour sur investissement sur le contenu.**
-   * Les auteurs eux-mêmes ont besoin de la capacité d’optimiser le contenu qu’ils créent.
+   * Les créateurs et créatrices doivent pouvoir modifier directement la mise en page du contenu.
+1. **La pression augmente pour générer davantage de retour sur investissement sur le contenu.**
+   * Les personnes qui créent du contenu elles-mêmes ont besoin de la capacité d’optimiser le contenu qu’elles créent.
 
-Ces tendances se sont avérées constantes dans l&#39;ensemble de l&#39;industrie. Toutefois, les exigences individuelles varient inévitablement d’un projet à l’autre. L’objectif de tout projet Edge Delivery Services est de trouver la solution qui convient à vos utilisateurs.
+Ces tendances se sont avérées constantes dans l’ensemble du secteur. Toutefois, les exigences individuelles varient inévitablement d’un projet à l’autre. L’objectif de tout projet Edge Delivery Services est de trouver la solution qui convient à vos utilisateurs et utilisatrices.
 
-1. **Concentrez-vous sur la valeur plutôt que sur les fonctionnalités.** - Déterminez le processus le plus optimisé pour servir vos auteurs plutôt que de vous perdre dans AEM jeu de fonctionnalités étendu.
-1. **Profitez de la flexibilité AEM.** - Il n’est pas nécessaire d’utiliser les fonctionnalités AEM dans un vide. Utilisez les fonctionnalités dont vous avez besoin par cas d’utilisation.
-1. **Tirez parti de l’expertise de votre auteur.** - Impliquez les véritables auteurs de contenu dans le projet dès le début pour vous assurer que vous fournissez la valeur dont ils ont besoin en mettant en oeuvre les fonctionnalités qui ont du sens.
+1. **Concentrez-vous sur la valeur plutôt que sur les fonctionnalités.** Déterminez le workflow le plus optimisé pour servir vos créateurs et créatrices plutôt que de vous perdre dans le large éventail de fonctionnalités AEM.
+1. **Profitez de la flexibilité d’AEM.** Il n’est pas nécessaire d’utiliser les fonctionnalités AEM de manière isolée. Utilisez les fonctionnalités dont vous avez besoin par cas d’utilisation.
+1. **Tirez parti de l’expertise de vos créateurs et créatrices.** Impliquez les véritables créateurs et créatrices de contenu dans le projet dès le début pour vous assurer que vous fournissez la valeur dont ils ont besoin en mettant en œuvre les fonctionnalités qui ont du sens.
 
-En mettant l’accent sur la valeur de vos auteurs, votre projet Edge Delivery Services peut répondre aux besoins du secteur moderne auxquels sont confrontés vos créateurs de contenu et fournir rapidement du contenu pour satisfaire vos clients.
+En mettant l’accent sur la valeur pour vos créateurs et créatrices, votre projet Edge Delivery Services peut répondre aux besoins du secteur moderne auxquels sont confrontés vos créateurs et créatrices de contenu et fournir rapidement du contenu pour satisfaire vos clientes et clients.
 
-## Outils de création flexibles pour les créateurs de contenu {#overview}
+## Outils de création flexibles pour les créateurs et créatrices de contenu {#overview}
 
 Edge Delivery Services est un ensemble de services composable qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Vous pouvez utiliser la [gestion de contenu AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=fr) et la création WYSIWYG à l’aide de l’[éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md), ainsi que la [création basée sur des documents](https://www.aem.live/docs/authoring).
 
@@ -52,20 +52,20 @@ Le diagramme suivant illustre comment modifier du contenu dans Microsoft Word (
 
 ![Architecture d’Edge Delivery](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery Services utilise GitHub pour vous permettre de gérer et de déployer du code directement à partir de votre référentiel GitHub. Un nouveau contenu est ajouté instantanément sans reconstruire le processus.
+Edge Delivery Services utilise GitHub pour vous permettre de gérer et de déployer du code directement à partir de votre référentiel GitHub. Le nouveau contenu est ajouté instantanément sans nouveau processus de création.
 
 ### Création basée sur des documents {#document-based}
 
-Avec la création basée sur des documents, vous pouvez utiliser du contenu directement à partir de Microsoft Word ou de documents Google de sorte que ces sources deviennent des pages de votre site web. Les en-têtes, listes, images et éléments de police peuvent tous être transférés de la source initiale vers le site web.
+Grâce à la création basée sur des documents, vous pouvez utiliser du contenu directement à partir de Microsoft Word ou de Google Docs de sorte que ces sources deviennent des pages de votre site web. Les en-têtes, listes, images et éléments de police peuvent tous être transférés de la source initiale vers le site web.
 
-* Avec la création basée sur des documents, chaque marketeur peut créer rapidement du contenu à l’aide d’outils de création connus (Microsoft Word, Google Docs, etc.).
-* La création de contenu est simplifiée en permettant la création, la révision et la publication directement dans les documents source.
-* Les outils connus étant utilisés, aucune intégration n’est requise pour les auteurs de contenu, ce qui augmente la vitesse du contenu.
+* Avec la création basée sur des documents, chaque personne spécialisée dans le marketing peut créer rapidement du contenu à l’aide d’outils de création connus (Microsoft Word, Google Docs, etc.).
+* La création de contenu est rationalisée en permettant la création, la révision et la publication directement dans les documents source.
+* Les outils connus étant utilisés, aucune intégration n’est requise pour les créateurs et créatrices de contenu, ce qui augmente la vitesse du contenu.
 * Les fonctionnalités de votre site peuvent être développées à l’aide de CSS et JavaScript dans GitHub.
 
 ![Création basée sur des documents](assets/document-based-authoring.png)
 
-Pour plus d’informations, reportez-vous à la documentation de création basée sur les documents :
+Pour plus d’informations, voir la documentation sur la création basée sur des documents :
 
 * Pour plus d’informations sur la prise en main d’Edge Delivery, consultez la [section Créer](https://www.aem.live/docs/#build).
 * Pour comprendre comment créer et publier du contenu à l’aide d’Edge Delivery, consultez la [section Publier](https://www.aem.live/docs/authoring).
@@ -73,30 +73,30 @@ Pour plus d’informations, reportez-vous à la documentation de création basé
 
 ### Création WYSIWYG {#wysiwyg-authoring}
 
-La création de contenu WYSIWYG (What-you-see-what-you-get) utilise Universal Editor, un emplacement unique personnalisable pour modifier le contenu en direct et dans son contexte à l’aide d’un aperçu visuel.
+La création de contenu WYSIWYG (ce que vous voyez est ce que vous obtenez) utilise l’éditeur universel, un emplacement unique personnalisable pour modifier le contenu en direct et dans son contexte à l’aide d’une prévisualisation visuelle.
 
-* Avec la création WYSIWYG, vous augmentez l’efficacité de l’auteur, qu’il soit headless ou headful.
-* Vous pouvez tirer parti de l’AEM de fonctionnalités complètes de gestion de contenu, notamment de workflow et de gouvernance.
+* Avec la création WYSIWYG, vous augmentez l’efficacité de création, qu’elle soit couplée ou découplée.
+* Vous pouvez tirer parti des fonctionnalités complètes de gestion de contenu AEM, notamment de workflow et de gouvernance.
 * Tirez parti de nombreux points d’extension pour prendre en charge vos propres processus et intégrations.
 * Les fonctionnalités de votre site peuvent être développées à l’aide de CSS et JavaScript dans GitHub.
 
 ![Création WYSIWYG](assets/wysiwyg-authoring.png)
 
-Pour plus d’informations, consultez la documentation de création WYSIWYG :
+Pour plus d’informations, voir la documentation sur la création WYSIWYG :
 
-* Pour un aperçu de l’éditeur universel et de la création WYSIWYG, consultez le document [WYSIWYG Content Authoring for Edge Delivery Services.](/help/edge/wysiwyg-authoring/authoring.md)
-* Pour une présentation destinée aux développeurs, reportez-vous au document [Guide de prise en main du développeur pour la création avec des Edge Delivery Services WYSIWYG.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Pour une vue d’ensemble de l’éditeur universel et de la création WYSIWYG, consultez le document [Création de contenu WYSIWYG pour Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md).
+* Pour une vue d’ensemble destinée aux développeurs et développeuses, reportez-vous au document [Guide de prise en main pour le développement pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ### Choix de votre méthode de création {#authoring-method}
 
-La flexibilité AEM vous permet de vous assurer que vos besoins en matière de création sont satisfaits. Adobe peut vous aider à déterminer la(les) méthode(s) qui correspond le mieux à vos besoins.
+La flexibilité d’AEM vous permet de vous assurer que vos besoins en matière de création sont satisfaits. Adobe peut vous aider à déterminer la ou les méthodes qui répondent le mieux à vos besoins.
 
-* Incluez toujours vos auteurs de contenu dans la décision.
-* Plusieurs méthodes de création peuvent être implémentées.
+* Incluez toujours vos créateurs et créatrices de contenu dans la décision.
+* Plusieurs méthodes de création peuvent être mises en œuvre.
 * Vous pouvez toujours modifier votre méthode de création après coup.
-* Vous ne devez pas décider avant l’implémentation, mais plutôt dans le cadre de l’implémentation.
+* Vous ne devez pas décider avant la mise en œuvre, mais plutôt dans le cadre de la mise en œuvre.
 
-Pour plus d’informations, consultez le document [Choix d’une méthode de création](authoring-methods.md) .
+Pour plus d’informations, consultez le document [Choix d’une méthode de création](authoring-methods.md).
 
 ## Edge Delivery Services et autres produits Adobe Experience Cloud {#edge-other-products}
 
