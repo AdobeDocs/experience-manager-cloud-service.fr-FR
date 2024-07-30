@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 573de431328650778b3ef0979a24190477382310
-workflow-type: ht
-source-wordcount: '332'
-ht-degree: 100%
+source-git-commit: dc7150c6ce971aa6f89fa24f7ca387cbb28db1f2
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 63%
 
 ---
 
@@ -16,42 +16,41 @@ ht-degree: 100%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 17098 {#release-17098}
+## Version 17258 {#release-17258}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 17098, publiée le 16 juillet 2024. La version de maintenance précédente était la version 16971.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 17258, publiée le mercredi 30 juillet 2024. La version de maintenance précédente était la version 17098.
 
-L’activation des fonctionnalités de la version 2024.7.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
+L’activation des fonctionnalités de la version 2024.8.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
-### Améliorations {#enhancements-17098}
+### Améliorations {#enhancements-17258}
 
-- SKYOPS-79817 : activation de la tâche Sling Feature Analyzer pour les mappages d’utilisation du service
+* ASSETS-31445 - Fonctionnalités de modèle Dynamic Media initiales
+* ASSETS-40399 - Mise à jour des paramètres de la file d’attente de transcription automatique de DM
+* ASSETS-40873 - Autorisation de la définition des lignes maximales d’exportation de métadonnées via la configuration OSGI
 
-### Problèmes résolus {#fixed-issues-17098}
+### Problèmes résolus {#fixed-issues-17258}
 
-- ASSETS-39665 : la synchronisation des recadrages intelligents ne fonctionne pas après la migration de la version 6.5 vers AEMCS.
-- FORMS-14993 : API Forms renvoyant 500 pour le matériel précédemment en service
-- GRANITE-52120 : CRXDE renvoyant 500 lors de l’affichage des données de contrôle d’accès
-- GRANITE-52573 : demandes renvoyant 400 lors de l’utilisation de // dans des URL réécrites
-- GRANITE-52746 : tous les types de nœud ne sont pas chargés dans la boîte de dialogue Créer un nœud.
-- GRANITE-52777 : gestion interrompue des 404 lorsque la demande est encapsulée
-- GRANITE-52871 : assurez-vous que publish-worker est synchronisé avec golden-publish et qu’il est terminée avant la compression.
-- SKYOPS-79173 : réplicateur ne répliquant pas sur plusieurs agents correspondant à un AgentIdFilter donné
-- SKYOPS-80075 : problèmes liés aux Umlauts (trémas) dans les noms de ressources, entraînant le blocage de la file d’attente de publication (Mac)
-- SKYOPS-81032 : filtrage des journaux générés par les demandes d’obtention de journaux lors de l’utilisation de la journalisation améliorée
+* ASSETS-30613 - Le remplacement de la ressource ne supprime pas et n’ajoute pas de ressource dans le nouveau niveau de diffusion
+* ASSETS-31882 - L’accès au fichier de manifeste en flux continu dans l’auteur est interdit
+* ASSETS-39598 - L’importation en bloc ne peut pas supprimer des ressources dont le nom contient des caractères spéciaux du serveur principal S3.
+* CNTBF-209 - Améliorations de l’annulation des tâches de workflow
+* SCRNS-3762 - Améliore playerLogger dans le canal de séquence pour placer les journaux sur la console lors de la prévisualisation du canal sur le navigateur.
+* SCRNS-4455 - Bouton &quot;Gérer la publication&quot; et &quot;Quick Publish&quot; manquant pour les utilisateurs non-administrateurs dans le fournisseur de contenu pour les canaux
+* SITES-22940 - Impossible d’afficher le fragment de contenu en tant que charge utile de workflow
 
-### Problèmes connus {#known-issues-17098}
+### Problèmes connus {#known-issues-17258}
 
 Aucun
 
-### Avis de modification {#change-notice-17098}
+### Avis de modification {#change-notice-17258}
 
-- À compter de septembre 2024, AEM as a Cloud Service désactivera la sérialisation des résolveurs de ressources via le framework de l’exportateur de modèle Sling. Voir la [documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) pour plus d’informations.
+* À compter de septembre 2024, AEM as a Cloud Service désactivera la sérialisation des résolveurs de ressources via le framework de l’exportateur de modèle Sling. Voir la [documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) pour plus d’informations.
 
-### Fonctionnalités et API obsolètes {#deprecated-17098}
+### Fonctionnalités et API obsolètes {#deprecated-17258}
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées ](/help/release-notes/deprecated-removed-features.md).
 
-### Technologies intégrées {#embedded-tech-17098}
+### Technologies intégrées {#embedded-tech-17258}
 
 | Technologie | Version | Lien |
 |---|---|---|
