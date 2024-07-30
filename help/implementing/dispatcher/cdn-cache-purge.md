@@ -4,20 +4,17 @@ description: Découvrez comment supprimer des objets mis en cache du cache CDN d
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '437'
 ht-degree: 1%
 
 ---
 
 # Purge du cache du réseau CDN {#cdn-purge-cache}
 
->[!NOTE]
->Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme d&#39;adoption précoce, envoyez un email `aemcs-cdn-config-adopter@adobe.com`.
-
 La purge supprime un objet du cache de réseau de diffusion de contenu Adobe, ce qui entraîne de futures demandes qui reviennent à l’origine comme une absence de cache, plutôt que d’être diffusées à partir du cache.
-AEM as a Cloud Service vous permet de configurer un jeton API de purge, qui peut ensuite être utilisé dans les appels API. Lisez l’ [ article Configuration des informations d’identification et de l’authentification du réseau de diffusion de contenu ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) pour découvrir comment configurer ce jeton à l’aide des directives d’authentification du pipeline de configuration Cloud Manager.
+AEM as a Cloud Service vous permet de configurer un jeton API de purge, qui peut ensuite être utilisé dans les appels API de purge. Lisez l’ [ article Configuration des informations d’identification et de l’authentification du réseau de diffusion de contenu ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) pour découvrir comment configurer ce jeton à l’aide des directives d’authentification du pipeline de configuration Cloud Manager.
 
 Il existe trois variations de purge prises en charge :
 

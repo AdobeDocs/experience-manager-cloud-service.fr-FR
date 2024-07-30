@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le réseau de diffusion de contenu gér
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 88%
+source-wordcount: '1250'
+ht-degree: 79%
 
 ---
 
@@ -44,13 +44,29 @@ Consultez [Gestion des listes d’adresses IP autorisées](/help/implementing/c
 
 ### Configurer le trafic sur le réseau CDN {#cdn-configuring-cloud}
 
-Les règles de configuration du trafic et des filtres CDN peuvent être déclarées dans un fichier de configuration et déployées sur le CDN, à l’aide des [pipelines de configuration Cloud Manager.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) Pour plus d’informations, voir [Configuration du trafic sur le réseau de diffusion de contenu](/help/implementing/dispatcher/cdn-configuring-traffic.md) et [Règles de filtrage du trafic incluant les règles WAF](/help/security/traffic-filter-rules-including-waf.md).
+Configurez le trafic sur le réseau de diffusion de contenu de différentes manières, notamment :
+* blocage du trafic malveillant avec les [règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) (y compris, éventuellement, les règles WAF avancées sous licence)
+* modification de la nature de la [requête et réponse](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
+* application 301/302 [redirections côté client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
+* déclaration de [sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) pour inverser le proxy d’une requête aux serveurs principaux non AEM
+
+Découvrez comment configurer ces fonctionnalités à l’aide de fichiers YAML dans Git et les déployer à l’aide du [pipeline de configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md) de Cloud Manager.
 
 ### Configuration des pages d’erreur CDN {#cdn-error-pages}
 
 Une page d’erreur CDN peut être configurée pour remplacer la page sans marque par défaut qui est diffusée dans le navigateur dans le rare cas où AEM ne peut pas être atteinte. Pour plus d’informations, voir [Configuration des pages d’erreur CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
-## Le réseau CDN client pointe vers le réseau CDN géré par AEM {#point-to-point-CDN}
+### Purge du contenu mis en cache sur le réseau de diffusion de contenu {#purge-cdn}
+
+La définition de TTL à l’aide de l’en-tête HTTP Cache-Control est une approche efficace pour équilibrer les performances de diffusion du contenu et l’actualisation du contenu. Cependant, dans les cas où il est essentiel de diffuser immédiatement du contenu mis à jour, il peut être bénéfique de purger directement le cache du réseau de diffusion de contenu.
+
+Découvrez [la configuration d&#39;un jeton API de purge](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) et [la purge du contenu CDN mis en cache](/help/implementing/dispatcher/cdn-cache-purge.md).
+
+### Authentification de base sur le réseau de diffusion de contenu {#basic-auth}
+
+Pour les cas d’utilisation de l’authentification légère, y compris les parties prenantes de l’entreprise qui vérifient le contenu, protégez le contenu en ouvrant une boîte de dialogue d’authentification de base qui nécessite un nom d’utilisateur et un mot de passe. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md) et rejoignez le programme des premiers adopteurs.
+
+## Points de contact du réseau de diffusion de contenu client vers le réseau de diffusion de contenu géré AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -71,7 +87,7 @@ Instructions de configuration :
 1. Définissez le SNI sur l’entrée du réseau CDN d’Adobe.
 1. Définissez l’en-tête hôte sur le domaine d’origine. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
-1. Définir `X-AEM-Edge-Key`. La valeur doit être configurée à l’aide d’un pipeline de configuration Cloud Manager, comme décrit dans [cet article.](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value)
+1. Définir `X-AEM-Edge-Key`. La valeur doit être configurée à l’aide d’un pipeline de configuration Cloud Manager, comme décrit dans [cet article.](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)
 
    * Ce paramétrage est nécessaire afin que le réseau CDN d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple,`X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau CDN géré par le client ou la cliente) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
    * L’accès à l’entrée du réseau CDN d’Adobe peut être aussi bloqué lorsqu’une balise `X-AEM-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
