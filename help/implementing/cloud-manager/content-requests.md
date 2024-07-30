@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
+source-git-commit: 5296d46658f591d7736587c98b112006d947321d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1288'
 ht-degree: 10%
 
 ---
@@ -21,11 +21,6 @@ Les demandes de contenu sont des demandes qui arrivent dans AEM Sites (y compris
 ## Compréhension des requêtes de contenu Cloud Service {#understanding-cloud-service-content-requests}
 
 Pour les clients qui utilisent le réseau de diffusion de contenu prêt à l’emploi, les demandes de contenu du Cloud Service sont mesurées par le biais d’une collecte de données côté serveur. Cette collection est activée via l’analyse des logs CDN. Les requêtes de contenu sont automatiquement collectées côté serveur à la périphérie d’Adobe Experience Manager as a Cloud Service, via une analyse automatisée des fichiers journaux provenant du réseau de diffusion de contenu AEM as a Cloud Service. Pour ce faire, isolez les demandes renvoyant du contenu d’HTML `(text/html)` ou JSON `(application/json)` du réseau de diffusion de contenu et repose sur plusieurs règles d’inclusion et d’exclusion détaillées ci-dessous. Une demande de contenu se produit indépendamment du contenu renvoyé fourni à partir des caches CDN ou du contenu retournant à l’origine du CDN (AEM dispatchers).
-
-Pour les clients qui utilisent leur propre réseau de diffusion de contenu, la collection côté client offre un reflet plus précis des interactions, assurant une mesure fiable de l’engagement du site web via le service de [surveillance de l’utilisation réelle](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md). Les clients disposent ainsi d’informations avancées sur le trafic et les performances de leurs pages. Bien qu’il soit bénéfique pour tous les clients, il offre un reflet représentatif des interactions des utilisateurs, ce qui garantit une mesure fiable de l’engagement du site web en capturant le nombre de pages vues du côté client.
-
-Pour les clients qui apportent leur propre réseau de diffusion de contenu en plus d’AEM as a Cloud Service, les rapports côté serveur génèrent des résultats qui ne peuvent pas être utilisés pour comparer les demandes de contenu sous licence. Avec la [ surveillance de l’utilisation réelle](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), l’Adobe peut refléter une mesure fiable de l’engagement du site web.
-
 
 ### Écarts entre les demandes de contenu de Cloud Service {#content-requests-variances}
 
