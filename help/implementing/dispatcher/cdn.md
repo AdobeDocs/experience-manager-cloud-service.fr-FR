@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le réseau de diffusion de contenu gér
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
+source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 79%
+source-wordcount: '1552'
+ht-degree: 64%
 
 ---
 
@@ -44,7 +44,8 @@ Consultez [Gestion des listes d’adresses IP autorisées](/help/implementing/c
 
 ### Configurer le trafic sur le réseau CDN {#cdn-configuring-cloud}
 
-Configurez le trafic sur le réseau de diffusion de contenu de différentes manières, notamment :
+Vous pouvez configurer le trafic sur le réseau de diffusion de contenu de différentes manières, notamment :
+
 * blocage du trafic malveillant avec les [règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) (y compris, éventuellement, les règles WAF avancées sous licence)
 * modification de la nature de la [requête et réponse](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
 * application 301/302 [redirections côté client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
@@ -64,7 +65,7 @@ Découvrez [la configuration d&#39;un jeton API de purge](/help/implementing/dis
 
 ### Authentification de base sur le réseau de diffusion de contenu {#basic-auth}
 
-Pour les cas d’utilisation de l’authentification légère, y compris les parties prenantes de l’entreprise qui vérifient le contenu, protégez le contenu en ouvrant une boîte de dialogue d’authentification de base qui nécessite un nom d’utilisateur et un mot de passe. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md) et rejoignez le programme des premiers adopteurs.
+Pour les cas d’utilisation de l’authentification légère, y compris les parties prenantes de l’entreprise qui examinent le contenu, protégez le contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur et un mot de passe. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md) et rejoignez le programme des premiers adopteurs.
 
 ## Points de contact du réseau de diffusion de contenu client vers le réseau de diffusion de contenu géré AEM {#point-to-point-CDN}
 
@@ -145,6 +146,26 @@ Vous trouverez ci-dessous plusieurs exemples de configuration de plusieurs grand
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+### Erreurs courantes {#common-errors}
+
+Les exemples de configurations fournis indiquent les paramètres de base nécessaires, mais une configuration client peut avoir d’autres règles d’impact qui suppriment, modifient ou réorganisent les en-têtes nécessaires à AEM as a Cloud Service pour diffuser le trafic. Vous trouverez ci-dessous des erreurs courantes qui se produisent lors de la configuration d’un réseau de diffusion de contenu géré par le client pour pointer vers AEM as a Cloud Service.
+
+**Redirection vers le point d’entrée du service Publish**
+
+Lorsqu’une requête reçoit une réponse 403 interdite, cela signifie que certains en-têtes requis lui manquent. Cela est généralement dû au fait que le réseau de diffusion de contenu gère à la fois le trafic de domaine apex et `www`, mais n’ajoute pas l’en-tête correct pour le domaine `www`. Ce problème peut être résolu en vérifiant vos journaux de réseau de diffusion de contenu AEM as a Cloud Service et en vérifiant les en-têtes de requête nécessaires.
+
+**Trop de redirections boucle**
+
+Lorsqu’une page reçoit une boucle &quot;Trop de redirection&quot;, un en-tête de requête est ajouté au réseau de diffusion de contenu qui correspond à une redirection qui la force à se rediriger. Par exemple :
+
+* Une règle CDN est créée pour correspondre au domaine apex ou au domaine www et ajoute l’en-tête X-Forwarded-Host du domaine apex uniquement.
+* Une requête pour un domaine apex correspond à cette règle CDN, qui ajoute le domaine apex en tant qu’en-tête X-Forwarded-Host.
+* Une requête est envoyée à l’origine où une redirection correspond explicitement à l’en-tête hôte pour le domaine d’application (par exemple, ^example.com).
+* Une règle de réécriture est déclenchée, ce qui réécrit la demande pour le domaine d’expression vers https avec le sous-domaine www.
+* Cette redirection est ensuite envoyée au serveur Edge du client, où la règle CDN est redéclenchée en ajoutant à nouveau l’en-tête X-Forwarded-Host pour le domaine apex et non le sous-domaine www. Ensuite, le processus recommence jusqu’à l’échec de la requête.
+
+Pour résoudre ce problème, évaluez votre stratégie de redirection SSL, les règles CDN, les combinaisons de règles de redirection et de réécriture.
 
 ## En-têtes de géolocalisation {#geo-headers}
 
