@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 06fc5cd31b07fcd8bf085b41bc5f39907d4f5a79
+source-git-commit: ae2805097007d3d056e30b9c8420b47027a3af0e
 workflow-type: tm+mt
-source-wordcount: '5299'
+source-wordcount: '5304'
 ht-degree: 99%
 
 ---
@@ -289,6 +289,7 @@ ht-degree: 99%
       + [Outils de modernisation d’AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [Modifications notables apportées à AEM Sites dans AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+   + [Sites et Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
    + Création {#authoring}
       + [Guide de démarrage rapide pour la création de pages](/help/sites-cloud/authoring/quick-start.md)
       + [Manipulation de base](/help/sites-cloud/authoring/basic-handling.md)
@@ -331,7 +332,7 @@ ht-degree: 99%
          + [Système de style](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [Limites d’annulation et de rétablissement](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Éditeur universel {#universal-editor}
-         + [Navigation dans l’éditeur universel](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [Explorer l’éditeur universel](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Publication de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Héritage de contenu dans l’éditeur universel](/help/sites-cloud/authoring/universal-editor/inheritance.md)
@@ -689,7 +690,7 @@ ht-degree: 99%
             + [Envoyer un formulaire adaptatif à Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Envoyer un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Connecter un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [Configuration d’un site SharePoint avec accès limité à l’aide de la portée d’autorisation](/help/forms/configure-sharepoint-site-limited-access.md)
+            + [Configurer un site SharePoint avec accès limité à l’aide du champ d’application de l’autorisation](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Intégrer un formulaire adaptatif AEM au workflow AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configurer l’action Envoyer vers le point d’entrée REST pour les formulaires adaptatifs](/help/forms/configure-submit-action-restpoint.md)
             + [Configurer l’action Envoyer un e-mail pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
