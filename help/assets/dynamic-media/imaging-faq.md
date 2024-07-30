@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
 workflow-type: tm+mt
 source-wordcount: '3454'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -30,6 +30,7 @@ De plus, obtenez désormais un meilleur score Google Core Web Vital pour LCP (
 >Testez et découvrez les avantages des modificateurs d’image Dynamic Media et de l’imagerie dynamique à l’aide de Dynamic Media [_Snapshot_](https://snapshot.scene7.com/).
 >
 > Snapshot est un outil de démonstration visuel, conçu pour illustrer la puissance de Dynamic Media pour une diffusion d’images optimisée et dynamique. Testez des images de test ou des URL Dynamic Media afin d’observer visuellement la sortie de divers modificateurs d’images Dynamic Media et d’optimiser l’imagerie dynamique pour les éléments suivants :
+>
 >* Taille de fichier (avec diffusion WebP et AVIF)
 >* Bande passante réseau
 >* DPR (rapport de pixels de l’appareil)
@@ -133,13 +134,15 @@ Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caract
 * Conversion automatique au format AVIF si le navigateur prend en charge le format
 * Conversion automatique au format WebP si la conversion AVIF n’a pas été bénéfique ou si le navigateur ne prend pas en charge l’AVIF
 * Conversion automatique vers le JPEG2000 si Safari ne prend pas en charge le WebP
-* Conversion automatique vers le JPEGXR pour IE 9+ ou si Edge ne prend pas en charge WebP\
-  | Format d’image | Navigateurs pris en charge |
-|---|---|
-| AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
-| WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
-| JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-| JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+* Conversion automatique vers le JPEGXR pour IE 9+ ou si Edge ne prend pas en charge WebP
+
+  | Format d’image  | Navigateurs pris en charge |
+  |---|---|
+  | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
+  | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
+  | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * Pour les navigateurs qui ne prennent pas en charge ces formats, le format d’image demandé initialement est diffusé.
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
@@ -477,5 +480,5 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 
 >[!MORELIKETHIS]
 >
->* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
->>
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) 
+-->

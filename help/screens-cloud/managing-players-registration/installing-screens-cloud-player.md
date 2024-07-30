@@ -4,7 +4,7 @@ description: Cette page décrit comment installer et configurer des lecteurs dan
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 98%
@@ -71,12 +71,14 @@ Les propriétés suivantes sont incluses dans chaque `ping` :
 | lastContentChange {string} | date et heure de la dernière modification du contenu |
 
 >[!NOTE]
+>
 >Vous pouvez éventuellement activer une propriété plus avancée à partir des préférences du lecteur (activer la surveillance de lecture) :
->|Property|Description|
+>
+>| Propriété | Description |
 >|---|---|
->|isContentRendering {boolean}|true si le GPU peut confirmer qu’il lit du contenu réel (en fonction de l’analyse des pixels)|
+>| isContentRendering {boolean} | true si le GPU peut confirmer qu’il lit du contenu réel (en fonction de l’analyse des pixels) |
 
-### Restrictions {#limitations}
+### Limites {#limitations}
 
 Vous trouverez ci-dessous quelques limitations au suivi de base de la lecture :
 

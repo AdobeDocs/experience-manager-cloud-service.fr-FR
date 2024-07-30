@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9a3678e8e28806c3c7574d2cfd047c30537d7f41
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '10491'
 ht-degree: 66%
@@ -909,6 +909,7 @@ La piste audio d’origine extraite d’un fichier vidéo principal ne peut pas 
    | Créer un dossier distinct pour chaque ressource | Créez un dossier pour chaque fichier de sous-titres ou de pistes audio que vous avez sélectionné pour téléchargement. |
    | E-mail | Utilisez votre programme de messagerie par défaut pour envoyer le fichier .zip à une adresse e-mail spécifique. |
    | Ressources | Indique le nombre de fichiers à télécharger et la taille totale combinée de tous les fichiers sélectionnés. La désélection de cette option ternit (désactive) le bouton **[!UICONTROL Télécharger]** et vous empêche de télécharger un fichier. |
+
 1. Sélectionnez **[!UICONTROL Télécharger]**.
 1. Publiez la vidéo. Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
 

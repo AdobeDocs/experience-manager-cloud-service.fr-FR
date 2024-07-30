@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 99%
@@ -239,6 +239,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md) et [360°](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
+
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par [!DNL Adobe Photoshop] et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
