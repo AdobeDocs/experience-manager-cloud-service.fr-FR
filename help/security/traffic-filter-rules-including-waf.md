@@ -4,10 +4,10 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
 workflow-type: tm+mt
-source-wordcount: '3939'
-ht-degree: 92%
+source-wordcount: '3932'
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Les règles de filtre de trafic peuvent être utilisées pour bloquer ou autoris
 
 La plupart de ces règles de filtre de trafic sont disponibles pour tous les clientes et clients d’AEM as a Cloud Service Sites et Forms. Elles fonctionnent principalement sur les propriétés de requête et les en-têtes de requête, notamment l’adresse IP, le nom d’hôte, le chemin d’accès et l’agent utilisateur.
 
-Une sous-catégorie de règles de filtre de trafic nécessite une licence Sécurité renforcée ou une licence Protection WAF-DDoS. Ces règles puissantes sont connues sous le nom de règles de filtre de trafic WAF (pare-feu d’application web, ou règles WAF, en abrégé) et ont accès aux [Indicateurs WAF](#waf-flags-list) décrits plus loin dans cet article.
+Une sous-catégorie de règles de filtre de trafic nécessite une licence Sécurité renforcée ou une licence Protection WAF-DDoS. Ces règles puissantes sont connues sous le nom de règles de filtreag de trafic WAF (pare-feu d’application web, ou règles WAF, en abrégé) et ont accès aux [Indicateurs WAF](#waf-flags-list) décrits plus loin dans cet article.
 
-Les règles de filtrage du trafic peuvent être déployées via des pipelines de configuration Cloud Manager vers des types d’environnements de développement, d’évaluation et de production dans des programmes de production (non sandbox). La prise en charge des RDE sera assurée à l’avenir.
+Les règles de filtrage du trafic peuvent être déployées par le biais de pipelines de configuration de Cloud Manager vers des types d’environnements de développement, d’évaluation et de production dans des programmes de production (hors sandbox). La prise en charge des RDE sera assurée à l’avenir.
 
 [Suivez un tutoriel](#tutorial) pour développer rapidement une expertise concrète sur cette fonctionnalité.
 
@@ -63,13 +63,13 @@ Les clientes et clients peuvent prendre des mesures proactives pour limiter les 
 
 Par exemple, au niveau de la couche Apache, les clientes et clients peuvent configurer l’une des options suivantes : [module Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) pour limiter l’accès à certains contenus.
 
-Comme le décrit cet article, les règles de filtrage du trafic peuvent être déployées sur le réseau de diffusion de contenu géré par Adobe, à l’aide des pipelines de configuration [ de Cloud Manager.](/help/operations/config-pipeline.md) Outre les règles de filtrage du trafic basées sur des propriétés telles que l’adresse IP, le chemin et les en-têtes, ou des règles basées sur la définition de limites de taux, les clients peuvent également acquérir sous licence une puissante sous-catégorie de règles de filtrage du trafic appelées règles WAF.
+Comme le décrit cet article, des règles de filtrage du trafic peuvent être déployées sur le réseau CDN géré par Adobe à l’aide du [pipeline de configuration de Cloud Manager.](/help/operations/config-pipeline.md) Outre les règles de filtrage de trafic basées sur des propriétés telles que l’adresse IP, le chemin d’accès et les en-têtes, ou encore les règles basées sur la définition de limites de débit, les clientes et clients peuvent également acquérir sous licence une sous-catégorie puissante de règles de filtrage du trafic appelées règles WAF.
 
 ## Processus suggéré {#suggested-process}
 
 Voici un processus de bout en bout de haut niveau recommandé pour obtenir les règles de filtrage de trafic appropriées :
 
-1. Configurez les pipelines de configuration hors production et de production, comme décrit dans la section [Configuration](#setup) .
+1. Configurez les pipelines de configuration hors production et en production, comme décrit dans la section [Configuration](#setup).
 1. Les clientes et clients qui possèdent une licence pour la sous-catégorie des règles de filtrage du trafic de WAF doivent les activer dans Cloud Manager.
 1. Lisez et testez le tutoriel pour comprendre concrètement comment utiliser les règles de filtrage du trafic, y compris les règles WAF si elles sont sous licence. Ce tutoriel vous guide tout au long des étapes du déploiement de règles dans un environnement de développement, de la simulation du trafic malveillant et du téléchargement des [journaux du réseau CDN](#cdn-logs) à leur analyse dans les [outils du tableau de bord](#dashboard-tooling).
 1. Copiez les règles de démarrage recommandées dans `cdn.yaml` et déployez la configuration dans l’environnement de production en mode journal.
@@ -100,22 +100,22 @@ Voici un processus de bout en bout de haut niveau recommandé pour obtenir les r
          action: block
    ```
 
-   Consultez l’ [ article sur le pipeline de configuration ](/help/operations/config-pipeline.md#common-syntax) pour une description des propriétés situées au-dessus du noeud `data`. La valeur de la propriété `kind` doit être définie sur *CDN* et la version doit être définie sur `1`.
+   Consultez l’[article sur le pipeline de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description des propriétés situées au-dessus du nœud `data`. La valeur de la propriété `kind` doit être définie sur *CDN* et la version doit être définie sur `1`.
 
 
 1. Si les règles WAF sont sous licence, vous devez activer la fonctionnalité dans Cloud Manager, comme décrit ci-dessous pour les scénarios de programme nouveaux et existants.
 
    1. Pour configurer le WAF sur un nouveau programme, cochez la case **Protection WAF-DDOS** dans l’onglet **Sécurité** lorsque vous [ajoutez un programme de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
-   1. Pour configurer WAF sur un programme existant, [modifiez votre programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) et, sur l’onglet **Sécurité**, désélectionnez ou cochez l’option **WAF-DDOS** à tout moment.
+   1. Pour configurer le WAF sur un programme existant, [modifiez votre programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) et dans l’onglet **Sécurité**, décochez ou cochez la case **WAF-DDOS** à tout moment.
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’article [config pipeline .](/help/operations/config-pipeline.md#managing-in-cloud-manager) Le pipeline fera référence à un dossier de niveau supérieur `config` avec le fichier `cdn.yaml` placé quelque part en dessous, comme [décrit ici](/help/operations/config-pipeline.md#folder-structure).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’article sur le [pipeline de configuration.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Le pipeline fera référence à un dossier de niveau supérieur `config` avec le fichier `cdn.yaml` placé quelque part en dessous, comme [décrit ici](/help/operations/config-pipeline.md#folder-structure).
 
-## Syntaxe des règles de filtre de trafic {#rules-syntax}
+## Syntaxe des règles de filtrage de trafic {#rules-syntax}
 
-Vous pouvez configurer des *règles de filtre de trafic* pour qu’elles correspondent à des modèles tels que les adresses IP, l’agent utilisateur, les en-têtes de requête, le nom d’hôte, la zone géographique et l’URL.
+Vous pouvez configurer des *règles de filtrage du trafic* pour établir une correspondance sur des modèles tels que les adresses IP, l’agent utilisateur, les en-têtes de requête, le nom d’hôte, la zone géographique et l’URL.
 
-Les clients qui disposent d’une licence pour l’offre de sécurité renforcée ou de protection WAF-DDoS peuvent également configurer une catégorie spéciale de règles de filtrage du trafic appelée *Règles de filtrage du trafic WAF* (ou règles WAF pour abréger) qui font référence à un ou plusieurs [indicateurs WAF](#waf-flags-list).
+Les clientes et les clients qui détiennent une licence pour l’offre de sécurité améliorée ou de protection WAF-DDoS peuvent également configurer une catégorie spéciale de règles de filtrage du trafic appelée *Règles de filtrage du trafic* (ou règles WAF) qui font référence à un ou plusieurs [indicateurs WAF](#waf-flags-list).
 
 Voici un exemple d’un ensemble de règles de filtrage du trafic, qui incluent également une règle WAF.
 
@@ -261,7 +261,7 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | SCANNER | Scanner | Identifie les services et outils d’analyse les plus utilisés. |
 | RESPONSESPLIT | Fractionnement des réponses HTTP | Identifie le moment où les caractères CRLF sont envoyés en entrée de l’application pour injecter des en-têtes dans la réponse HTTP. |
 | XML-ERROR | Erreur de codage XML | Corps de requête POST, PUT ou PATCH spécifié comme contenant du code XML dans l’en-tête de requête « Content-Type », mais contenant des erreurs d’analyse XML. Cela est souvent lié à une erreur de programmation ou à une requête automatisée ou malveillante. |
-| DATACENTER | Datacenter | Identifie la demande comme provenant d’un fournisseur d’hébergement connu. Ce type de trafic n’est généralement pas associé à un utilisateur final réel. |
+| CENTRE DE DONNÉES | Centre de données | Identifie la requête comme provenant d’un fournisseur d’hébergement connu. Ce type de trafic n’est généralement pas associé à un utilisateur final réel ou une utilisatrice finale réelle. |
 
 
 ## Considérations {#considerations}
@@ -475,7 +475,7 @@ data:
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
-## Alertes sur les règles de filtrage de trafic {#traffic-filter-rules-alerts}
+## Alertes sur les règles de filtrage du trafic {#traffic-filter-rules-alerts}
 
 Une règle peut être configurée pour envoyer une notification du Centre d’actions si elle est déclenchée dix fois pendant une fenêtre de 5 minutes. Une telle règle vous avertit lorsque certains schémas de trafic se produisent afin que vous puissiez prendre les mesures nécessaires. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se redéclenche pas avant le lendemain (UTC).
 
@@ -505,10 +505,6 @@ data:
 ```
 
 ## Alerte de pic de trafic par défaut à l’origine {#traffic-spike-at-origin-alert}
-
->[!NOTE]
->
->Cette fonctionnalité est progressivement déployée.
 
 Une notification par e-mail du [centre d’actions](/help/operations/actions-center.md) sera envoyée lorsqu’un trafic important est envoyé à l’origine, et qu’un nombre de requêtes, correspondant à un seuil élevé, provient d’une même adresse IP, ce qui suggère une attaque DDoS.
 
@@ -735,7 +731,7 @@ Deux tutoriels sont disponibles.
 
 Ce tutoriel vous guide à travers les éléments suivants :
 
-* Configuration du pipeline de configuration Cloud Manager
+* Configuration du pipeline de configuration de Cloud Manager
 * Utilisation d’outils pour simuler le trafic malveillant
 * Déclaration des règles de filtre de trafic, y compris les règles WAF
 * Analyse des résultats à l’aide des outils de tableau de bord
