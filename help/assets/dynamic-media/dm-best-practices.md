@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 0%
@@ -76,15 +76,23 @@ Les bonnes pratiques relatives aux visionneuses Dynamic Media sont des directive
 
 En suivant ces bonnes pratiques, vous pouvez obtenir une intégration transparente, une gestion efficace des ressources et des interactions de visionneuse améliorées. La synchronisation des ressources, l’utilisation du recadrage intelligent et le respect des directives d’inclusion de fichier JavaScript sont des pratiques importantes. Ces recommandations permettent de maintenir l’intégrité et la fiabilité de la diffusion multimédia sur différentes plateformes et différents appareils.
 
-* **Synchroniser l’Assets de la visionneuse :** Assurez-vous que toutes les ressources de la visionneuse sont synchronisées avec Dynamic Media avant d’utiliser le lecteur. Pour résoudre les problèmes liés à la visionneuse, reportez-vous à l’article [Dépannage des visionneuses Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
-* **Page Exemple de gestionnaire :** Accédez à la page exemple de gestionnaire à l’adresse `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
-* **Publish Assets :** Assurez-vous que les ressources sont publiées avant de les afficher dans les visionneuses de diffusion.
-* **Vidéos de lecture automatique coupées :** Pour la fonctionnalité de lecture automatique dans les vidéos, utilisez les paramètres vidéo muets car les navigateurs limitent la lecture des vidéos avec le volume.
-* **Recadrage intelligent :** Utilisez le composant Image v3 pour le recadrage intelligent afin d’améliorer la présentation des ressources d’image.
-* **Inclusion de fichier JavaScript :** Incluez uniquement le fichier JavaScript de la visionneuse principale sur votre page. Évitez de référencer des fichiers JavaScript supplémentaires que la logique d’exécution de la visionneuse peut télécharger. En particulier, ne liez pas directement à la bibliothèque `Utils.js` du SDK HTML5 à partir du chemin d’accès au contexte `/s7viewers` (appelé inclusion du SDK consolidé). La logique de la visionneuse gère l’emplacement de `Utils.js` ou de bibliothèques de visionneuses d’exécution similaires, qui peuvent changer d’une version à l’autre. Adobe ne conserve pas les anciennes versions de la visionneuse secondaire incluses sur le serveur. Par conséquent, leur référencement direct peut interrompre la fonctionnalité de la visionneuse lors des futures mises à jour.
-* **Instructions d’incorporation :** Utilisez la documentation pour incorporer des instructions spécifiques à chaque visionneuse.
+* **Synchroniser la visionneuse Assets :**
+Assurez-vous que toutes les ressources de visionneuse sont synchronisées avec Dynamic Media avant d’utiliser le lecteur. Pour résoudre les problèmes liés à la visionneuse, reportez-vous à l’article [Dépannage des visionneuses Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
+* **Exemple de page de gestionnaire :**
+Accédez à la page du gestionnaire d’exemples à l’adresse `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+* **Publish Assets :**
+Assurez-vous que les ressources sont publiées avant de les afficher dans les visionneuses de diffusion.
+* **Vidéos de lecture automatique coupées :**
+Pour la fonctionnalité de lecture automatique des vidéos, utilisez les paramètres vidéo muets, car les navigateurs limitent la lecture des vidéos avec le volume.
+* **Recadrage intelligent :**
+Utilisez le composant Image v3 pour le recadrage intelligent afin d’améliorer la présentation des ressources d’image.
+* **Inclusion de fichier JavaScript :**
+N’incluez que le fichier JavaScript de la visionneuse principale sur votre page. Évitez de référencer des fichiers JavaScript supplémentaires que la logique d’exécution de la visionneuse peut télécharger. En particulier, ne liez pas directement à la bibliothèque `Utils.js` du SDK HTML5 à partir du chemin d’accès au contexte `/s7viewers` (appelé inclusion du SDK consolidé). La logique de la visionneuse gère l’emplacement de `Utils.js` ou de bibliothèques de visionneuses d’exécution similaires, qui peuvent changer d’une version à l’autre. Adobe ne conserve pas les anciennes versions de la visionneuse secondaire incluses sur le serveur. Par conséquent, leur référencement direct peut interrompre la fonctionnalité de la visionneuse lors des futures mises à jour.
+* **Instructions d’incorporation :**
+Utilisez la documentation pour incorporer des directives spécifiques à chaque visionneuse.
 Vous souhaitez en savoir plus ? Accédez à [Visionneuses pour AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
-* **Tutoriel et exemples du SDK :** Consultez le [tutoriel du SDK de la visionneuse](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) et les [exemples d’applications du SDK HTML5](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) pour une compréhension approfondie des API des composants du SDK.
+* **Tutoriel du SDK et exemples :**
+Passez en revue les [exemples d’applications du SDK de la visionneuse](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) et [exemples d’applications du SDK HTML5](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) pour une compréhension approfondie des API de composants du SDK.
 
 
 ## Préparation des ressources pour la diffusion
