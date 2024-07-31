@@ -4,7 +4,7 @@ description: Utilisez le sélecteur de ressources pour rechercher, trouver et r�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: cdb35a56c1337012fa099135470b91e162e8e902
+source-git-commit: c9cdbf85b5ebdda0ccd1a7858943f65f9175bde9
 workflow-type: tm+mt
 source-wordcount: '5339'
 ht-degree: 32%
@@ -590,6 +590,7 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 | *filterRepoList* | Fonction | Non |  | Vous pouvez utiliser la fonction de rappel `filterRepoList` qui appelle le référentiel Experience Manager et renvoie une liste filtrée de référentiels. |
 | *expirationOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit l’état d’une ressource expirée. La fonction renvoie `EXPIRED`, `EXPIRING_SOON` ou `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [Personnaliser les ressources expirées](#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ou déplacée sur la zone de travail. |
 | *showToast* | | Non | | Il permet au sélecteur de ressources d’afficher un message de toast personnalisé pour la ressource expirée. |
+
 <!--
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
