@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 0%
 
 ---
@@ -77,9 +77,11 @@ Les bonnes pratiques relatives aux visionneuses Dynamic Media sont des directive
 En suivant ces bonnes pratiques, vous pouvez obtenir une intégration transparente, une gestion efficace des ressources et des interactions de visionneuse améliorées. La synchronisation des ressources, l’utilisation du recadrage intelligent et le respect des directives d’inclusion de fichier JavaScript sont des pratiques importantes. Ces recommandations permettent de maintenir l’intégrité et la fiabilité de la diffusion multimédia sur différentes plateformes et différents appareils.
 
 * **Synchroniser la visionneuse Assets :**
-Assurez-vous que toutes les ressources de visionneuse sont synchronisées avec Dynamic Media avant d’utiliser le lecteur. Pour résoudre les problèmes liés à la visionneuse, reportez-vous à l’article [Dépannage des visionneuses Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
-* **Exemple de page de gestionnaire :**
-Accédez à la page du gestionnaire d’exemples à l’adresse `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+Assurez-vous que toutes les ressources de visionneuse sont synchronisées avec Dynamic Media avant d’utiliser le lecteur.
+
+   * Accédez à la page du gestionnaire d’exemples à l’adresse `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. Cette page vous permet de resynchroniser les ressources d’une visionneuse, y compris les icônes d’usine, les fichiers CSS et les paramètres prédéfinis.
+   * Si vous rencontrez des problèmes de visionneuse, reportez-vous à l’article [Dépannage des visionneuses Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) .
+
 * **Publish Assets :**
 Assurez-vous que les ressources sont publiées avant de les afficher dans les visionneuses de diffusion.
 * **Vidéos de lecture automatique coupées :**
@@ -400,6 +402,7 @@ Vous souhaitez en savoir plus ? Accédez à [Smart Imaging](/help/assets/dynamic
 
 **Analyse de cas :** *Après la publication d’un nouveau contenu ou le remplacement d’un contenu existant, comment peut-on s’assurer que les modifications apparaissent immédiatement sur le réseau de diffusion de contenu ?*
 
-Le réseau de diffusion de contenu (CDN) met en cache des ressources Dynamic Media pour une diffusion rapide aux clients. Lorsque des mises à jour sont apportées à ces ressources, il est important que les modifications prennent effet immédiatement sur le site web. En purgeant ou en invalidant le cache CDN, les ressources diffusées par Dynamic Media peuvent être mises à jour rapidement. Cette approche élimine la nécessité d’attendre que le cache arrive à expiration en fonction de la valeur TTL (Time To Live), généralement définie sur dix heures. Au lieu de cela, une requête peut être envoyée à partir de l’interface utilisateur de Dynamic Media pour faire expirer le cache en quelques minutes.
+Le réseau de diffusion de contenu (CDN) met en cache des ressources Dynamic Media pour une diffusion rapide aux clients. Lorsque des mises à jour sont apportées à ces ressources, il est important que les modifications prennent effet immédiatement sur le site web. En purgeant ou en invalidant le cache CDN, les ressources diffusées par Dynamic Media peuvent être mises à jour rapidement. Cette approche élimine la nécessité d’attendre que le cache arrive à expiration en fonction de la valeur TTL (Time To Live), généralement définie sur dix heures.
+Selon votre cas d’utilisation spécifique, vous pouvez mettre à jour les paramètres TTL (durée de vie) du réseau CDN en conséquence.
 
 Vous souhaitez en savoir plus ? Accédez à [Invalider le cache CDN au moyen de Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
