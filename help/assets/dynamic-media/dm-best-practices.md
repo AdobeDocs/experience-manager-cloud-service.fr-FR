@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
+source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -162,14 +162,17 @@ Appliquez régulièrement les recommandations suivantes pour vous assurer que vo
 
 * **Noms de fichiers image significatifs :**
 Utilisez des noms de fichier descriptifs qui reflètent le contenu de l’image. Par exemple :
+
    * Utilisez `myCompany-Silver-Wrist-Watch`
    * ** `myCompany_Silver_Wrist_Watch` ou `myCompanySilverWristWatch`
 
   Cela permet aux moteurs de recherche de comprendre le contexte de l’image et améliore l’optimisation du référencement. Google préfère les tirets aux traits de soulignement ou aux espaces dans le nom d’un fichier. Évitez également de concaténer des mots dans un nom de fichier.
 * **Domaine personnalisé :**
 Implémentez un domaine personnalisé qui inclut le nom de votre société ou marque pour renforcer la reconnaissance et la confiance de la marque. Par exemple :
+
    * Utilisez `http://images.mycompany.com/is/image/companyname/`
    * ** `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **Structure de dossiers compatible avec l’optimisation pour les moteurs de recherche :**
 Organisez vos images dans une structure de dossiers qui inclut le nom ou la marque de votre société pour une meilleure indexation, par exemple `http://images.mycompany.com/is/image/companyname/`.
 * **Jeux de règles Dynamic Media :**
@@ -309,6 +312,7 @@ Téléchargez le fichier vidéo d’origine. Assurez-vous que c&#39;est une vid�
 Prévisualisez la vidéo afin de vous assurer que tout se présente comme prévu. Une fois satisfait, allez-y et publiez-le. Cette étape rend la vidéo accessible à votre audience.
 * **Lien ou intégration :**
 Après la publication, vous disposez de deux options.
+
    * **Lien direct :**
 Utilisez l’URL fournie pour créer un lien direct vers la vidéo. Liez-le de manière appropriée sur votre site marketing.
    * **Incorporer la vidéo :**
