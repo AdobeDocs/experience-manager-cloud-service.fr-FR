@@ -3,9 +3,9 @@ title: Limitation de la diffusion des ressources dans Experience Manager
 description: Découvrez comment restreindre la diffusion des ressources dans [!DNL Experience Manager].
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
+source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1130'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Si le champ n’est pas disponible, procédez comme suit pour ajouter le champ :
    1. Sélectionnez le **[!UICONTROL groupe d&#39;utilisateurs]** à ajouter et extrayez les **[!UICONTROL orgID]** et **[!UICONTROL userGroupID]** depuis l&#39;URL ou utilisez votre ID d&#39;organisation tel que `{orgID}@AdobeOrg:{usergroupID}`.
 
 1. Ajoutez l’ID de groupe au champ **[!UICONTROL Rôles]** des propriétés Asset. <br>
-Les ID de groupe définis dans le champ **[!UICONTROL Rôles]** sont les seuls utilisateurs qui peuvent accéder à la ressource. Vous pouvez également ajouter l&#39;identifiant du client IMS et l&#39;identifiant du profil IMS dans le champ **[!UICONTROL Rôles]** . Par exemple, `{orgId}@AdobeOrg:{profileId}`.
+Les ID de groupe définis dans le champ **[!UICONTROL Rôles]** sont les seuls utilisateurs qui peuvent accéder à la ressource. Outre l&#39;identifiant de groupe IMS, vous pouvez également ajouter l&#39;identifiant utilisateur IMS et l&#39;identifiant de profil IMS dans le champ **[!UICONTROL Rôles]** . Par exemple, `{orgId}@AdobeOrg:{profileId}`.
 
    >[!NOTE]
    >
