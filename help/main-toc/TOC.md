@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae2805097007d3d056e30b9c8420b47027a3af0e
+source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
-source-wordcount: '5304'
-ht-degree: 99%
+source-wordcount: '5315'
+ht-degree: 100%
 
 ---
 
@@ -162,6 +162,9 @@ ht-degree: 99%
          + [Notes de mise à jour de la version 2020.2.0](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
    + Notes de mise à jour des outils de migration {#migration-tools}
       + [Notes de mise à jour de la version actuelle](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + 2024 {#2024}
+         + [Notes de mise à jour de la version 2024.01.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
+         + [Notes de mise à jour de la version 2024.05.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
       + 2023 {#2023}
          + [Notes de mise à jour de la version 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [Notes de mise à jour de la version 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
@@ -289,7 +292,7 @@ ht-degree: 99%
       + [Outils de modernisation d’AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [Modifications notables apportées à AEM Sites dans AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
-   + [Sites et Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
+   + [Sites et Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
    + Création {#authoring}
       + [Guide de démarrage rapide pour la création de pages](/help/sites-cloud/authoring/quick-start.md)
       + [Manipulation de base](/help/sites-cloud/authoring/basic-handling.md)

@@ -1,34 +1,40 @@
 ---
-title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2024.05.0
-description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2024.05.0
+title: Notes de mise à jour des outils de migration dans la version 2024.07 d’AEM as a Cloud Service
+description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2024.07.0
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 43%
+source-wordcount: '171'
+ht-degree: 34%
 
 ---
 
-# Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2024.05.0 {#release-notes}
+# Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2024.07.0 {#release-notes}
 
-Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2024.05.0.
+Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2024.07.0.
+
+## Outil de transfert de contenu {#ctt-release}
+
+### Date de publication {#release-date-ctt}
+
+La date de publication de l’outil de transfert de contenu v3.0.16 est juillet 2024.
+
+### Nouveautés {#what-is-new-ctt}
+
+* Chargement automatique des logs d’extraction de CTT en cas d’échec.
+* Les utilisateurs peuvent désormais effectuer l’ingestion avec succès lors du renouvellement de la clé d’extraction.
+* Ajout de la prise en charge des extractions CTT à l’aide d’une clé d’accès Azure et d’une clé secrète avec AzureDataStore.
+* Les utilisateurs recevront désormais le message d’erreur correct lorsqu’une clé non valide est utilisée pour créer un jeu de migration.
 
 ## Analyseur des bonnes pratiques {#bpa-release}
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de l’analyseur des bonnes pratiques v2.1.48 est le 9 mai 2024.
+La date de publication de la version 2.1.5 de l’analyseur des bonnes pratiques est mai 2024.
 
-### Nouveautés {#what-is-new-bpa}
+### Correctifs {#bug-fixes-bpa}
 
-* L’analyseur des bonnes pratiques (BPA) prend désormais en charge le téléchargement automatique des rapports générés par BPA directement vers Cloud Acceleration Manager (CAM). Les utilisateurs n’auront plus besoin de télécharger manuellement le rapport et de le charger dans la CAM. En savoir plus [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
-
-## Cloud Acceleration Manager {#cam-release}
-
-### Nouveautés {#what-is-new-cam}
-
-* Cloud Acceleration Manager (CAM) prend désormais en charge le chargement automatique des rapports générés par BPA directement vers CAM. En savoir plus [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
-
-* Cloud Acceleration Manager fournit désormais une estimation de la durée d’ingestion, compte tenu de facteurs tels que le nombre de noeuds, la taille de l’entrepôt de données, etc. En savoir plus [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)
+* L’analyseur des bonnes pratiques détecte désormais tous les noeuds de plus de 16 Mo.
+* Les conditions de race causant la correction d&#39;occurrences non-conformistes.
