@@ -4,16 +4,18 @@ description: Modifiez les images à l’aide des options optimisées d’ [!DNL 
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
+source-git-commit: 610da7c1e8f20156b165d819a4bb91ec5ffcad80
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 79%
+source-wordcount: '1127'
+ht-degree: 59%
 
 ---
 
 # Modifier des images dans [!DNL Assets view] {#edit-images-in-assets-view}
 
-La vue Assets permet de modifier des images de base, notamment de redimensionner, de supprimer l’arrière-plan, de recadrer et de convertir les formats JPEG et PNG. En outre, elle permet une modification avancée via l’intégration à Adobe Express. Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en tant que nouvelle version de cette image. Le contrôle de version vous permet de revenir ultérieurement à la ressource d’origine, si nécessaire. Pour modifier une image, [ouvrez sa prévisualisation](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) et cliquez sur **Modifier l’image**.
+L’interface utilisateur de la vue Assets permet l’édition d’images de base, optimisée par Adobe Express, intégrée à l’interface utilisateur. Cette modification inclut le redimensionnement, la suppression en arrière-plan, le recadrage et la conversion entre les formats JPEG et PNG. En outre, il permet des modifications avancées par le biais de l’interface Adobe Express incorporée dans l’interface utilisateur de la vue Assets.
+
+Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en tant que nouvelle version de cette image. Le contrôle de version vous permet de revenir ultérieurement à la ressource d’origine, si nécessaire. Pour modifier une image, [ouvrez sa prévisualisation](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) et cliquez sur **Modifier l’image**.
 
 >[!NOTE]
 >
@@ -23,7 +25,7 @@ La vue Assets permet de modifier des images de base, notamment de redimensionner
 
 ## Modifier l’image {#edit-image}
 
-Accédez à la vue Assets à l’aide du lien : [Assets View](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié. Pour recevoir un accès, contactez l’équipe d’administration de votre entreprise.
+Accédez à l’interface utilisateur de la vue Assets à l’aide du lien : [Assets View](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié. Pour recevoir un accès, contactez l’équipe d’administration de votre entreprise.
 Pour obtenir des informations de référence supplémentaires, reportez-vous à [Prise en main de la vue Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprendre l’interface utilisateur de la vue Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) et [Cas d’utilisation de la vue Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -33,13 +35,13 @@ Pour obtenir des informations de référence supplémentaires, reportez-vous à 
 
 ### Modifier l’image sur la vue Assets à l’aide d’Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Après avoir accédé à la vue Assets, cliquez sur **Assets**, sélectionnez une image, puis cliquez sur **Modifier** dans le rail supérieur. Le nouvel écran affiche les options de modification disponibles, notamment le redimensionnement, la suppression de l’arrière-plan, le recadrage et la conversion aux formats JPEG et PNG.
+Après avoir accédé à la vue Assets, cliquez sur **Assets**, sélectionnez une image, puis cliquez sur **Modifier** dans le rail supérieur. Le nouvel écran affiche les options de modification disponibles, optimisées par Adobe Express, notamment le redimensionnement, la suppression d’arrière-plan, le recadrage et la conversion entre les formats JPEG et PNG.
 
 #### Redimensionnement de l’image {#resize-image-using-express}
 
 Le redimensionnement d’une image à une taille spécifique est un cas d’utilisation courant. La vue Assets vous permet de redimensionner rapidement les images en fonction des tailles de photo courantes en fournissant de nouvelles résolutions précalculées pour des tailles de photo spécifiques. Pour redimensionner l’image à l’aide de la vue Assets, procédez comme suit :
 
-1. Cliquez sur **Redimensionner l’image** dans le volet de gauche.
+1. Cliquez sur **Redimensionner l’image** dans le volet de gauche. Une boîte de dialogue affiche les fonctionnalités de redimensionnement d’image optimisées par Adobe Express.
 1. Sélectionnez la plateforme de médias sociaux appropriée dans la liste déroulante Redimensionner et sélectionnez la taille de l’image parmi les options qui s’affichent.
 1. Mettez l’image à l’échelle, le cas échéant, à l’aide du champ **Échelle d’image**.
 1. Cliquez sur **[!UICONTROL Appliquer]** pour appliquer vos modifications.
@@ -68,7 +70,7 @@ La transformation d’une image en taille parfaite est facile à l’aide des ac
    ![Enregistrement d’image avec Adobe Express.](assets/adobe-express-crop-image.png)
 L’image recadrée peut être téléchargée. Vous pouvez enregistrer la ressource modifiée en tant que nouvelle version de la même ressource ou l’enregistrer en tant que nouvelle ressource.
 
-#### Convertir entre les types de fichiers image {#convert-image-types-using-express}
+#### Convertir le JPEG en PNG {#convert-image-types-using-express}
 
 Vous pouvez rapidement convertir les formats d’image JPEG et PNG à l’aide d’Adobe Express. Procédez comme suit :
 
@@ -79,12 +81,11 @@ Vous pouvez rapidement convertir les formats d’image JPEG et PNG à l’aide d
 #### Limites {#limitations-adobe-express}
 
 * Résolution d’image prise en charge : minimum de 50 pixels, maximum de 6 000 pixels par dimension.
-
 * Taille de fichier maximale prise en charge : 17 Mo.
 
 ### Modifier des images à l’aide de l’éditeur intégré d’Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
-Les utilisateurs disposant de droits express peuvent utiliser l’éditeur express intégré dans la vue Assets pour modifier facilement le contenu et créer du contenu avec GenAI depuis Adobe Firefly. Cela améliore la réutilisation du contenu et accélère la vitesse du contenu. Vous pouvez également utiliser des éléments prédéfinis pour optimiser l’aspect de vos ressources ou exécuter des actions rapides pour modifier vos images en quelques clics seulement.
+Les utilisateurs disposant de droits express peuvent utiliser l’éditeur express intégré dans la vue Assets pour modifier facilement le contenu et créer du contenu avec GenAI depuis Adobe Firefly. Cette fonctionnalité améliore la réutilisation du contenu et accélère la vitesse du contenu. Vous pouvez également utiliser des éléments prédéfinis pour optimiser l’aspect de vos ressources ou exécuter des actions rapides pour modifier vos images en quelques clics seulement.
 ![express dans l’IU de base](/help/assets/assets/express-in-essentials-ui.jpg)
 Pour modifier des images à l’aide de l’éditeur incorporé [!DNL Adobe Express], procédez comme suit :
 
@@ -93,19 +94,14 @@ Pour modifier des images à l’aide de l’éditeur incorporé [!DNL Adobe Expr
 1. Cliquez sur **Ouvrir dans Adobe Express**. L’image s’ouvre sur une zone de travail Express.
 1. Apportez les modifications requises à l’image.
 1. Si votre projet nécessite l’ajout de pages supplémentaires, cliquez sur **Ajouter**, sélectionnez Ressources, saisissez un dossier, sélectionnez une image à importer sur la page de zone de travail, puis apportez les modifications requises à l’image.
-1. Pour enregistrer les images, cliquez sur **Enregistrer**. La boîte de dialogue d’enregistrement s’affiche.
+1. Pour enregistrer une ou plusieurs ressources, cliquez sur **Enregistrer**. La boîte de dialogue d’enregistrement affiche les options d’enregistrement. Pour choisir parmi les options d’enregistrement, suivez l’une des instructions ci-dessous qui correspond à vos besoins :
+   1. Pour enregistrer une seule page, cliquez sur **Enregistrer comme version** pour exporter l’image en tant que nouvelle version (en conservant le format d’origine), puis enregistrez-la dans le même dossier.
 
-   >[!NOTE]
-   >
-   > **1. Pour une seule page**
-   >
-   > **Enregistrer en tant que version :** cette fonctionnalité prend uniquement en charge l’enregistrement d’une seule ressource. Sélectionnez cette option pour exporter l’image en tant que nouvelle version (en conservant le format d’origine), puis l’enregistrer dans le même dossier.
-   > **Enregistrer en tant que nouvelle ressource :** sélectionnez cette option pour exporter la ressource dans un format différent de celui de l’original et l’enregistrer dans n’importe quel dossier en tant que nouvelle ressource.
-   >  
-   > **2. Pour plusieurs pages**
-   >
-   > **Enregistrer en tant que version :** cette fonctionnalité prend uniquement en charge l’enregistrement d’une seule ressource. Si vous souhaitez enregistrer une seule page à partir de plusieurs pages, sélectionnez cette option pour enregistrer la ressource dans son format et son emplacement d’origine.\
-   > **Enregistrer en tant que nouvelle ressource :** cette option vous permet d’exporter plusieurs ressources ou une seule ressource vers n’importe quel dossier et de les enregistrer en tant que nouvelles ressources avec leur format de fichier original ou différent.
+   1. Pour enregistrer une seule page, cliquez sur **Enregistrer comme nouvelle ressource** pour exporter la ressource dans un autre format et l’enregistrer dans un dossier en tant que nouvelle ressource.
+
+   1. Pour enregistrer une seule page à partir de plusieurs pages, cliquez sur **Enregistrer comme version** pour enregistrer la ressource dans son format et son emplacement d’origine.
+
+   1. Pour enregistrer plusieurs pages ou une seule page parmi plusieurs pages, cliquez sur **Enregistrer comme nouvelle ressource**. Cette action exporte les ressources uniques ou multiples dans n’importe quel dossier et les enregistre en tant que nouvelles ressources ou ressources dans le format d’origine ou autre.
 
 1. Dans la boîte de dialogue Enregistrer, procédez comme suit :
    1. Saisissez un nom pour le fichier dans le champ **Enregistrer sous**.
