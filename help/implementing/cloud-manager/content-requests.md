@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 10%
+source-wordcount: '1269'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Écarts entre les demandes de contenu de Cloud Service {#content-requests-variances}
 
-Les requêtes de contenu peuvent présenter des variations dans les outils de création de rapports Analytics d’une organisation, comme illustré dans le tableau suivant. En règle générale, *n’utilisez pas* les outils d’analyse qui collectent des données par le biais d’une instrumentation côté client pour signaler le nombre de demandes de contenu pour un site donné, simplement parce qu’ils dépendent souvent du consentement de l’utilisateur pour être déclenchés, ce qui fait qu’il manque une fraction significative du trafic. Les outils Analytics qui collectent les données côté serveur dans les fichiers journaux ou les rapports CDN pour les clients qui ajoutent leur propre CDN au-dessus d’AEM as a Cloud Service offrent de meilleurs décomptes. Pour la création de rapports sur les pages vues et leurs performances associées, le [ Adobe RUM Data Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) est l’option recommandée par l’Adobe.
+Les requêtes de contenu peuvent présenter des variations dans les outils de création de rapports Analytics d’une organisation, comme illustré dans le tableau suivant. En règle générale, *n’utilisez pas* les outils d’analyse qui collectent des données par le biais d’une instrumentation côté client pour signaler le nombre de demandes de contenu pour un site donné, simplement parce qu’ils dépendent souvent du consentement de l’utilisateur pour être déclenchés, ce qui fait qu’il manque une fraction significative du trafic. Les outils Analytics qui collectent les données côté serveur dans les fichiers journaux ou les rapports CDN pour les clients qui ajoutent leur propre CDN au-dessus d’AEM as a Cloud Service offrent de meilleurs décomptes.
 
 | Raison de l’écart | Explication |
 |---|---|
