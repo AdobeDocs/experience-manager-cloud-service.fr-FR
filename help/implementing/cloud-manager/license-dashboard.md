@@ -5,16 +5,23 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 58%
+source-wordcount: '1101'
+ht-degree: 31%
 
 ---
+
 
 # Tableau de bord des licences {#license-dashboard}
 
 Cloud Manager fournit un tableau de bord pour un affichage convivial des produits AEMaaCS disponibles pour votre entreprise ou vos clients.
+
+>[!IMPORTANT]
+>
+>Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. [Les programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
+>
+>Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez le document [Navigation dans l’interface utilisateur de Cloud Manager.](/help/implementing/cloud-manager/navigation.md#program-cards)
 
 ## Vue d’ensemble {#overview}
 
@@ -32,8 +39,8 @@ Pour accéder à votre tableau de bord des licences, procédez comme suit.
 >Un utilisateur possédant le rôle **Propriétaire de l’entreprise** doit être connecté pour afficher le tableau de bord de la licence.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
-
-1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, passez à l’onglet **Licence**.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur le bouton du menu du hamburger sur l’ [en-tête Cloud Manager.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) Les onglets s’affichent.
+1. Appuyez ou cliquez sur l’option **Licence** dans l’onglet .
 
 ![Tableau de bord des licences](assets/license-dashboard.png)
 
@@ -41,18 +48,56 @@ Le tableau de bord se divise en trois sections, comme suit :
 
 * **Solutions** - Cette section résume les solutions pour lesquelles vous disposez d’une licence, telles que Sites ou Assets.
 * **Modules complémentaires** - Cette section résume les modules complémentaires disponibles pour vos solutions sous licence.
-* **Environnement de sandbox et de développement** - Cette section résume les environnements disponibles.
+* **Autres droits** - Cette section résume l’environnement de test et de développement ainsi que d’autres droits qui peuvent être utilisés dans votre client.
 
-Chaque section résume ce qui est disponible et comment il est utilisé, le cas échéant. Actuellement, seules les solutions Sites s’affichent même si d’autres solutions existent dans le client.
+Chaque section résume ce qui est disponible et comment il est utilisé, le cas échéant. Actuellement, seules les solutions Sites et Assets sont affichées même si d’autres solutions existent dans le client.
 
 * La colonne **État** affiche le nombre de droits inutilisés par rapport au total disponible pour le client.
 * La colonne **Configuré sur** indique les programmes sur lesquels le droit de la solution a été appliqué.
    * Un droit est considéré comme utilisé uniquement lorsqu’un environnement de production a été créé ou, s’il en existe un, si un pipeline de mise à jour a été exécuté.
-* La colonne **Utilisation** affiche les requêtes de contenu consommées au cours des 12 derniers mois sous la forme d’un graphique lorsque l’utilisateur clique dessus.
+   * Seul un nombre limité de programmes sont répertoriés individuellement dans la colonne avec le reste représenté par une entrée `+x`.
+   * Passez la souris sur l’entrée `+x` d’une fenêtre contextuelle avec les détails de tous les programmes.
+* La colonne **Utilisation** affiche un bouton **[Afficher les détails d’utilisation](#view-usage-details)** pour afficher les statistiques d’utilisation de la solution.
 
 >[!TIP]
 >
 >Pour savoir comment gérer les droits d’Adobe de l’ensemble de votre organisation à partir d’Admin Console, consultez la [présentation de l’Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
+
+## Afficher les détails d’utilisation {#view-usage-details}
+
+Le bouton **Afficher les détails d’utilisation** donne accès à la fenêtre **Détails d’utilisation** de la solution choisie. Cette fenêtre présente une ventilation détaillée comprenant des graphiques indiquant l’utilisation de votre solution. La manière dont cette utilisation est mesurée dépend de la solution choisie.
+
+### Détails de l’utilisation des sites {#sites-usage-details}
+
+La fenêtre **Détails de l’utilisation des sites** présente des graphiques qui donnent un aperçu de l’utilisation de vos licences Sites en fonction des [demandes de contenu.](#what-is-a-content-request)
+
+![Fenêtre des détails d’utilisation des sites](assets/sites-usage-details.png)
+
+Le côté gauche de la fenêtre présente un graphique circulaire indiquant la ventilation du contrat pour l’année du contrat sélectionnée dans la liste déroulante **Afficher l’année du contrat** .
+
+Le côté droit de la fenêtre présente un diagramme de surface présentant l&#39;utilisation répartie par programme au fil du temps pour l&#39;année contractuelle sélectionnée. Une survol permet d’afficher une fenêtre contextuelle contenant des détails par programme pour le moment sélectionné.
+
+### Détails de l’utilisation d’Assets {#assets-usage-details}
+
+La fenêtre **Détails de l’utilisation d’Assets** présente des graphiques qui donnent un aperçu de l’utilisation de vos licences Assets en fonction des [utilisateurs standard](#storage) et [.](#standard-users) Sélectionnez l’onglet approprié pour basculer entre les vues.
+
+Pour les vues de stockage et d’utilisateurs standard, vous pouvez utiliser la liste déroulante **Type d’environnement** pour basculer l’affichage entre les environnements de production, d’évaluation et de développement.
+
+#### Stockage  {#storage}
+
+![Fenêtre des détails d’utilisation d’Assets pour le stockage](assets/assets-usage-details-storage.png)
+
+Le côté gauche de la fenêtre présente un graphique circulaire indiquant la ventilation du contrat pour l’année du contrat sélectionnée dans la liste déroulante **Afficher l’année du contrat** .
+
+Le côté droit de la fenêtre présente un diagramme de surface présentant l&#39;utilisation répartie par programme au fil du temps pour l&#39;année contractuelle sélectionnée. Une survol permet d’afficher une fenêtre contextuelle contenant des détails par programme pour le moment sélectionné.
+
+#### Utilisateurs standard {#standard-users}
+
+![Fenêtre de détails d’utilisation d’Assets pour les utilisateurs standard](assets/assets-usage-details-standard-users.png)
+
+Le côté gauche de la fenêtre présente un graphique circulaire indiquant la ventilation du contrat pour l’année du contrat sélectionnée dans la liste déroulante **Afficher l’année du contrat** .
+
+Le côté droit de la fenêtre présente un diagramme de surface présentant l&#39;utilisation répartie par programme au fil du temps pour l&#39;année contractuelle sélectionnée. Une survol permet d’afficher une fenêtre contextuelle contenant des détails par programme pour le moment sélectionné.
 
 ## Foire aux questions {#faq}
 
