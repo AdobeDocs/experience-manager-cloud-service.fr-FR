@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -59,7 +59,7 @@ Une page d’erreur CDN peut être configurée pour remplacer la page sans marqu
 
 ### Purge du contenu mis en cache sur le réseau de diffusion de contenu {#purge-cdn}
 
-La définition de TTL à l’aide de l’en-tête HTTP Cache-Control est une approche efficace pour équilibrer les performances de diffusion du contenu et l’actualisation du contenu. Cependant, dans les cas où il est essentiel de diffuser immédiatement du contenu mis à jour, il peut être bénéfique de purger directement le cache du réseau de diffusion de contenu.
+La définition de la durée de vie (TTL) à l’aide de l’en-tête de contrôle du cache HTTP est une approche efficace pour équilibrer les performances de diffusion du contenu et l’actualisation du contenu. Cependant, dans les cas où il est essentiel de diffuser immédiatement du contenu mis à jour, il peut être bénéfique de purger directement le cache du réseau de diffusion de contenu.
 
 Découvrez [la configuration d&#39;un jeton API de purge](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) et [la purge du contenu CDN mis en cache](/help/implementing/dispatcher/cdn-cache-purge.md).
 
@@ -67,7 +67,7 @@ Découvrez [la configuration d&#39;un jeton API de purge](/help/implementing/dis
 
 Pour les cas d’utilisation de l’authentification légère, y compris les parties prenantes de l’entreprise qui examinent le contenu, protégez le contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur et un mot de passe. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md) et rejoignez le programme des premiers adopteurs.
 
-## Points de contact du réseau de diffusion de contenu client vers le réseau de diffusion de contenu géré AEM {#point-to-point-CDN}
+## Le réseau CDN du client ou de la cliente pointe vers le réseau CDN géré par AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
