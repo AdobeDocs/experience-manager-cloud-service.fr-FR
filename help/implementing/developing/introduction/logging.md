@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
+source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
 workflow-type: tm+mt
-source-wordcount: '2797'
-ht-degree: 87%
+source-wordcount: '2829'
+ht-degree: 86%
 
 ---
 
@@ -614,6 +614,12 @@ Les clients disposant d’un compte Splunk peuvent demander, via un ticket de se
 La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l’utilisation des E/S réseau du client ou de la cliente.
 
 Les journaux CDN seront transférés vers Splunk pour les nouvelles demandes de ticket d’assistance ; les clients qui ont déjà activé le transfert Splunk pourront ajouter des journaux CDN à l’avenir.
+
+>[!NOTE]
+>
+>Les journaux spécifiques et les journaux utilisateur spécifiques ne peuvent pas être transférés vers Splunk.
+>
+>Tous les journaux seront transférés vers Splunk, où tout filtrage supplémentaire peut être effectué par le client en fonction de ses besoins.
 
 ### Activation du transfert Splunk {#enabling-splunk-forwarding}
 
