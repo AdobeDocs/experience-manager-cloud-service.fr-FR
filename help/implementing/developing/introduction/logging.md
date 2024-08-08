@@ -4,7 +4,7 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 86%
@@ -617,9 +617,9 @@ Les journaux CDN seront transférés vers Splunk pour les nouvelles demandes de 
 
 >[!NOTE]
 >
->Les journaux spécifiques et les journaux utilisateur spécifiques ne peuvent pas être transférés vers Splunk.
+>Les journaux *Specific* et *specific* User ne peuvent pas être transférés vers Splunk.
 >
->Tous les journaux seront transférés vers Splunk, où tout filtrage supplémentaire peut être effectué par le client en fonction de ses besoins.
+>**Tous** journaux seront transférés vers Splunk, où tout filtrage supplémentaire peut être effectué par le client en fonction de ses besoins.
 
 ### Activation du transfert Splunk {#enabling-splunk-forwarding}
 
