@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '527'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 [!DNL Assets view] prend en charge un large éventail de formats de fichier. Chaque fonctionnalité prend en charge différents types de fichiers.
 
 * ![icône de type de fichier image](assets/image-icon.svg) Images : JPG, PNG, GIF, TIFF et autres.
-* ![icône creative cloudtype](assets/creative-cloud-files.svg) Fichiers de Creative Cloud : PSD, AI et INDD.
+* ![Icône de type cloudtype créatif](assets/creative-cloud-files.svg) fichiers de Creative Cloud : PSD, PSB, AI et INDD
 * ![icône de type appareil photo](assets/camera-icon.svg) Fichiers RAW de caméras : CR2/CR3, NEF, SRW/SRF et autres.
 * ![Icône de type de fichier document](assets/document-icon.svg) Documents : DOCX, PDF, PPTX et XLSX
 * ![Icône de type de fichier vidéo](assets/video-icon.svg) Vidéos : MP4
@@ -46,7 +46,7 @@ Les différents types de fichiers ont différents degrés de prise en charge pou
 | Dossiers | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | Vidéos MP4 | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
-| PSD, AI et INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
+| PSD, PSB, AI et INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | Autres fichiers binaires. | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
 <!-- Hiding CC Libraries (considered beta) as per PM feedback.
@@ -63,7 +63,7 @@ Les différents types de fichiers ont différents degrés de prise en charge pou
 | Vidéos | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | Bibliothèques CC | − | − | − | − | − | ✓ | ✓ |
 | PDF | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| PSD | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| PSD et PSB | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | AI et INDD | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | Autres fichiers binaires. | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 
@@ -78,7 +78,7 @@ Les différents types de fichiers ont différents degrés de prise en charge pou
 | Vidéos | − | ✓ | ✓ |
 | Bibliothèques CC | − | − | − |
 | PDF | − | ✓ | ✓ |
-| PSD, AI et INDD | − | ✓ | ✓ |
+| PSD, PSB, AI et INDD | − | ✓ | ✓ |
 | Autres fichiers binaires. | − | ✓ | ✓ |
 | DOC | − | ✓ | ✓ |
 | DOCX | − | ✓ | ✓ |
@@ -99,7 +99,8 @@ Les différents types de fichiers ont différents degrés de prise en charge pou
 | Vidéos | ✓ | − | ✓ | ✓ | ✓ |
 | Bibliothèques CC | ✓ | − | − | − | − |
 | PDF | ✓ | − | ✓ | ✓ | ✓ |
-| PSD, AI et INDD | ✓ | − | ✓ | ✓ | ✓ |
+| AI et INDD | ✓ | − | ✓ | ✓ | ✓ |
+| PSD et PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Autres fichiers binaires. | ✓ | − | ✓ | ✓ | ✓ |
 
 Les utilisateurs de [!DNL Adobe Asset Link] peuvent charger et enregistrer (charger une nouvelle version) des fichiers dans le référentiel [!DNL Assets view] des applications de bureau [!DNL Adobe Creative Cloud] prises en charge.
@@ -112,7 +113,7 @@ Les utilisateurs de [!DNL Adobe Asset Link] peuvent charger et enregistrer (char
 | Videos        |          |
 | CC Libraries  |          |
 | PDF files     |          |
-| PSD           |          |
+| PSD, PSB           |          |
 | AI            |          |
 | INDD          |          |
 
