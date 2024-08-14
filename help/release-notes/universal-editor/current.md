@@ -1,19 +1,20 @@
 ---
-title: Notes de mise à jour d’Universal Editor 2024.06.28
-description: Il s’agit des notes de mise à jour de la version 2024.06.28 d’Universal Editor.
+title: Notes de mise à jour d’Universal Editor 2024.08.13
+description: Il s’agit des notes de mise à jour de la version 2024.08.13 d’Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: cc94ad2ba42707bb7541217f0225b995f64ad84f
+exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
+source-git-commit: d71d3481004f2429c018c536b3e12784cf597f85
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 1%
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
 
-# Notes de mise à jour d’Universal Editor 2024.06.28 {#release-notes}
+# Notes de mise à jour d’Universal Editor 2024.08.13 {#release-notes}
 
-Il s’agit des notes de mise à jour de la version d’Universal Editor du 28 juin 2024.
+Il s’agit des notes de mise à jour de la version d’Universal Editor du 13 août 2024.
 
 >[!TIP]
 >
@@ -21,18 +22,19 @@ Il s’agit des notes de mise à jour de la version d’Universal Editor du 28 j
 
 ## Nouveautés {#what-is-new}
 
-* **Accueil** : les pages récentes s’affichent sous forme de liste, sans prévisualisation d’images.
-* **Barre d’emplacement** : ajout d’une validation d’URL améliorée, application des URL HTTPS et prise en charge des hachages dans les URL pour prendre en compte les applications routées par le hachage.
-* **Navigation au clavier** : la sélection de superposition de page a été découplée de la mise au point du rail des propriétés afin d’améliorer la navigation au clavier sur la page sans perdre la mise au point.
-* **Étiquettes d’éléments** : la valeur de secours pour les étiquettes utilise désormais `data-aue-prop` au lieu de `data-aue-type` pour une identification plus claire dans les superpositions et dans l’arborescence de contenu.
-* **Modèle RTE** : un bouton **Annuler** a été ajouté à la fenêtre modale de l’éditeur de texte enrichi lors de son ouverture à partir du panneau des propriétés.
-* **Service UE sur le noeud** : la prise en charge HTTP du service Universal Editor a été réintroduite, car toutes les connexions HTTPS sont interrompues au niveau de Dispatcher.
-* **API de copie interne** : ajout d’une API au service d’éditeur universel pour copier les composants, ce qui permettra l’introduction future des options de la barre d’outils pour copier et dupliquer le contenu.
+* **Types de données personnalisés** : personnalisez l’éditeur en fonction de vos besoins de données uniques avec la possibilité de créer des champs personnalisés dans le panneau des propriétés.
+   * Que vous développiez un sélecteur de produits personnalisé pour des cas d’utilisation commerciaux ou que vous remplissiez une liste déroulante avec des valeurs issues de vos arrière-plans, cette fonctionnalité vous donne le contrôle nécessaire sur les données que les auteurs utilisent pour composer du contenu.
+* **Glisser-déposer inter-conteneurs** : profitez d’une plus grande flexibilité dans la composition des mises en page avec la possibilité de déplacer des composants sur différents conteneurs par glisser-déposer dans le [panneau Arborescence de contenu.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **Intégration GitHub optimisée** : la mise en cache des réponses GitHub a été introduite, ce qui accélère considérablement la récupération des balises et de `universal-editor-cors-library`, ce qui se traduit par une expérience utilisateur plus rapide et plus fluide.
+* **Package Managed Services RPM** : Adobe propose désormais un package RPM pour rationaliser le déploiement et la gestion du service d’éditeur universel, ce qui simplifie la maintenance et réduit les frais opérationnels pour les services gérés.
+* **Validation des jetons IMS configurable** : pour accroître la flexibilité de la gestion des jetons, la validation des jetons IMS est désormais facultative.
+   * Cette option de configuration vous permet de désactiver la validation si nécessaire, ce qui simplifie les configurations de la passerelle cloud.
+* **Intégration Splunk** : la journalisation Splunk a été intégrée dans Universal Editor Service Express, ce qui améliore la surveillance et les diagnostics.
+   * Cette intégration garantit un suivi efficace des logs, des opérations plus fluides et un dépannage plus rapide.
 
 ## Correctifs {#bug-fixes}
 
-* **Chemin de navigation du panneau Propriétés** : le menu du chemin de navigation du panneau Propriétés pour les éléments imbriqués profondément, qui ne restaient pas ouverts, a été corrigé.
-* **Sélecteur de fragment de contenu** : le sélecteur de fragment de contenu a été amélioré afin de s’assurer qu’il respecte les règles définies dans le modèle de fragment de contenu ou dans le `data-aue-filter`.
-* **Insertion de composants** : correction de la liste permettant d’insérer de nouveaux composants qui n’étaient pas mis à jour avec précision après avoir accédé à une autre page.
-* **État de publication** : la gestion des états de publication a été améliorée afin de fonctionner de manière plus cohérente.
-* **Correctifs divers** : cette version contient également divers correctifs mineurs, nettoyage de la dette technique, améliorations de sécurité et tests consolidés pour une stabilité et des performances globales.
+* **Commentaires sur la publication améliorés** : si la publication échoue en raison d’autorisations insuffisantes, les commentaires envoyés à l’utilisateur lors de la publication ont été améliorés afin d’afficher un avertissement clair au lieu de simplement signaler un échec.
+* **Amélioration de la gestion des URL** : les problèmes de codage/décodage d’URL incorrect qui provoquaient des échecs de publication ont été résolus.
+* **Gestion précise des données** : correction d’un problème en raison duquel les nombres flottants étaient incorrectement stockés en tant qu’entiers, ce qui permet d’assurer une gestion précise des données dans votre contenu.
+* **Sécurité et stabilité** : les vulnérabilités de la sécurité dans les images Docker ont été corrigées et la couverture de test pour les composants critiques tels que le sélecteur de composants et le chemin de navigation ont été implémentés, ce qui a permis d’offrir une expérience d’éditeur plus sécurisée, stable et fiable.
