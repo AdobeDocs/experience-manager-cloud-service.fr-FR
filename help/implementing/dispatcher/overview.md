@@ -4,10 +4,10 @@ description: En savoir plus sur le flux de données de diffusion de contenu et c
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 93%
+ht-degree: 87%
 
 ---
 
@@ -36,4 +36,4 @@ Les sections suivantes fournissent des informations plus détaillées sur la dif
 * [Mise en cache](/help/implementing/dispatcher/caching.md)
 
 
-Des informations sur la réplication du service de création vers le service de publication sont disponibles [ici](/help/operations/replication.md).
+Pour plus d’informations sur la réplication du service de création vers le service de publication, voir [Réplication](/help/operations/replication.md).

@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '2829'
-ht-degree: 86%
+source-wordcount: '2831'
+ht-degree: 85%
 
 ---
 
@@ -628,7 +628,7 @@ Dans la demande d’assistance, les clients doivent indiquer :
 * Adresse du point d’entrée Splunk HEC. Ce point d’entrée doit disposer d’un certificat SSL valide et être accessible au public.
 * l’index Splunk ;
 * le port Splunk ;
-* le jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
+* le jeton Splunk HEC. Pour plus d’informations, voir [Exemples de collecteur d’événements HTTP](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) .
 
 Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée. Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
 

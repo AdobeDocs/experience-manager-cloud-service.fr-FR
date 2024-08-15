@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant les règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3c546a05cf91dd8dcba39e42cd0f19857713f130
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1314'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Avant de pouvoir configurer le trafic sur le réseau de diffusion de contenu, vo
 
 1. Créez un fichier nommé `cdn.yaml` ou similaire, référençant les différents fragments de code de configuration dans les sections ci-dessous.
 
-   Tous les fragments de code possèdent ces propriétés communes, qui sont décrites dans l’[article Config Pipeline](/help/operations/config-pipeline.md#common-syntax). La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur *1*.
+   Tous les fragments de code possèdent ces propriétés communes, décrites sous [Config Pipeline](/help/operations/config-pipeline.md#common-syntax). La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur *1*.
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ Avant de pouvoir configurer le trafic sur le réseau de diffusion de contenu, vo
      envTypes: ["dev"]
    ```
 
-1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans l’ [article Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit sous [Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’ [article Config Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit sous [Config Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Déployez la configuration.
 

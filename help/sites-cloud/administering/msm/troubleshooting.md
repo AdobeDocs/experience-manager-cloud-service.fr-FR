@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 75%
+source-wordcount: '762'
+ht-degree: 72%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 75%
 Si vous constatez ce que vous pensez être un comportement erroné ou une erreur dans MSM, avant de procéder à un dépannage en profondeur, assurez-vous de vérifier les points suivants :
 
 * Consultez la [FAQ MSM](#faq) car vos problèmes ou questions peuvent déjà y être abordés.
-* Consultez l’[article sur les bonnes pratiques MSM](best-practices.md), car plusieurs conseils y sont proposés, ainsi que des clarifications sur certaines idées fausses.
+* Consultez les [bonnes pratiques MSM](best-practices.md) pour obtenir plusieurs conseils, ainsi qu’une clarification de certaines idées fausses.
 
 ## Recherche d’informations avancées sur votre plan et le statut de Live Copy {#advanced-info}
 
@@ -68,7 +68,7 @@ Vous trouverez ci-dessous quelques questions fréquentes concernant MSM et la Li
 
 Les actions de synchronisation MSM sont hautement configurables. Les propriétés ou composants qui sont modifiés lors des déploiements dépendent directement des propriétés de ces configurations.
 
-Consultez [cet article](best-practices.md) pour plus d’informations à ce sujet.
+Pour plus d’informations sur cette rubrique, voir [Bonnes pratiques MSM](best-practices.md) .
 
 ### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 

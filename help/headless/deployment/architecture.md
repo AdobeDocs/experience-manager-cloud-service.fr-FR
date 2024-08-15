@@ -4,10 +4,10 @@ description: Découvrez l’architecture de haut niveau d’Adobe Experience M
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Un environnement d’AEM type est constitué d’un service de création et d’
 
 * **Le Dispatcher** est un serveur web statique qui est alimenté par le module Dispatcher d’AEM. Il fournit des fonctionnalités de mise en cache et une couche de sécurité supplémentaire. Le **Dispatcher** se trouve en face des services de **Publication** et d’**Aperçu**.
 
-Dans un programme AEM as a Cloud Service, vous pouvez avoir plusieurs environnements, qu’ils soient de développement, d’évaluation ou de production. Chaque environnement possède ses propres services de **Création**, de **Publication** et d’**Aperçu**. Pour en savoir plus sur la gestion des [environnements, rendez-vous ici](/help/implementing/cloud-manager/manage-environments.md).
+Dans un programme AEM as a Cloud Service, vous pouvez avoir plusieurs environnements, qu’ils soient de développement, d’évaluation ou de production. Chaque environnement possède ses propres services de **Création**, de **Publication** et d’**Aperçu**. Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour en savoir plus.
 
 ## Modèle création/publication
 

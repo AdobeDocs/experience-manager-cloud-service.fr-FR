@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le réseau de diffusion de contenu gér
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 65%
+source-wordcount: '1555'
+ht-degree: 64%
 
 ---
 
@@ -178,7 +178,7 @@ Le réseau CDN géré par AEM ajoute des en-têtes à chaque requête avec les �
 >
 >Si le réseau CDN est géré par le client, ces en-têtes reflètent l’emplacement du serveur proxy du réseau CDN des clients plutôt que le client réel. Par conséquent, pour le réseau CDN géré par le client, les en-têtes de géolocalisation doivent être gérés par le réseau CDN client.
 
-Les valeurs des codes de pays sont les codes Alpha-2 décrits [ici](https://fr.wikipedia.org/wiki/ISO_3166-1).
+Les valeurs des codes pays sont les codes Alpha-2 décrits sous [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1).
 
 Les valeurs des codes du continent sont les suivantes :
 

@@ -4,9 +4,9 @@ description: Découvrez les principes de base de la mise en cache dans AEM as a 
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2897'
 ht-degree: 88%
 
 ---
@@ -245,7 +245,7 @@ Pour les environnements créés en octobre 2023 ou version ultérieure, afin de 
 
 Envoyez un ticket d’assistance si vous souhaitez que ce comportement soit désactivé.
 
-Pour les environnements créés avant octobre 2023, il est recommandé de configurer la propriété `ignoreUrlParams` de la configuration Dispatcher comme [documentée ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
+Pour les environnements créés avant octobre 2023, il est recommandé de configurer la propriété `ignoreUrlParams` de la configuration Dispatcher ; voir [Configuration de Dispatcher - Ignoration des paramètres d’URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
 
 Il existe deux possibilités d&#39;ignorer les paramètres marketing. (Où la première est préférée pour ignorer le cache via les paramètres de requête) :
 

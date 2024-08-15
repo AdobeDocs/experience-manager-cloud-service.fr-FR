@@ -4,9 +4,9 @@ description: Découvrez les tâches de maintenance dans AEM as a Cloud Service e
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 40%
 
 ---
@@ -222,11 +222,11 @@ Déclarez un fichier de configuration et déployez-le, comme décrit dans les é
 
 **1** Créez un fichier nommé `mt.yaml` ou similaire.
 
-**2** Placez le fichier quelque part sous un dossier de niveau supérieur nommé `config` ou similaire, comme décrit dans l’article [config pipeline.](/help/operations/config-pipeline.md#folder-structure)
+**2** Placez le fichier quelque part sous un dossier de niveau supérieur nommé `config` ou similaire, comme décrit dans [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
 **3** - Déclarez les propriétés dans le fichier de configuration, notamment :
 
-* quelques propriétés au-dessus du noeud de données — consultez l’ [article du pipeline de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description. La valeur de la propriété `kind` doit être *MaintenanceTasks* et la version doit être définie sur *1*.
+* quelques propriétés au-dessus du noeud de données — voir [Utilisation de pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description. La valeur de la propriété `kind` doit être *MaintenanceTasks* et la version doit être définie sur *1*.
 
 * un objet de données avec les objets `versionPurge` et `auditLogPurge`.
 

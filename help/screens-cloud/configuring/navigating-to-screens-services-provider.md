@@ -4,10 +4,10 @@ description: Cette page décrit comment accéder au fournisseur de services Scre
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 60%
+source-wordcount: '382'
+ht-degree: 58%
 
 ---
 
@@ -28,7 +28,7 @@ La section suivante explique comment configurer le fournisseur de services Scree
 
 Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens :
 
-1. Accédez au fournisseur de services Screens [ici](https://experience.adobe.com/screens).
+1. Accédez au [fournisseur de services Screens](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Si vous avez accès à plusieurs organisations, vérifiez que votre connexion est établie avec la bonne organisation. Pour modifier votre organisation, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation à laquelle vous avez besoin d’accéder.

@@ -4,9 +4,9 @@ description: Interdire la sérialisation des ResourceResolvers via l’exporteur
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 La fonction d’exportateur de modèle Sling permet de sérialiser des objets de modèles Sling au format JSON. Cette fonctionnalité est largement utilisée car elle permet à SPA (applications d’une seule page) d’accéder facilement aux données d’AEM. Du côté de l’implémentation, la bibliothèque Jacson Databind est utilisée pour sérialiser ces objets.
 
-La sérialisation est une opération récursive. À partir d’un &quot;objet racine&quot;, il effectue une itération récursive à travers tous les objets éligibles et les sérialise ainsi que leurs enfants. Vous trouverez une description des champs sérialisés dans [cet article](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
+La sérialisation est une opération récursive. À partir d’un &quot;objet racine&quot;, il effectue une itération récursive à travers tous les objets éligibles et les sérialise ainsi que leurs enfants. Vous trouverez une description des champs qui sont sérialisés dans l’article [Jackson - Decide What Fields Get Serialized/Deserialized](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
 
 Cette approche sérialise tous les types d’objets dans JSON et peut naturellement également sérialiser un objet Sling `ResourceResolver` s’il est couvert par les règles de sérialisation. Ceci est problématique, car le service `ResourceResolver` (et donc également l’objet de service qui le représente) contient des informations potentiellement sensibles, qui ne doivent pas être divulguées. Par exemple :
 

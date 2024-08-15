@@ -4,10 +4,10 @@ description: Découvrez les étapes à suivre pour vous assurer que votre instal
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1900'
-ht-degree: 95%
+source-wordcount: '1907'
+ht-degree: 94%
 
 ---
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service offre de très nombreuses fonctionnalités et possibi
 
 Outre ces améliorations, plusieurs différences ont été introduites entre les installations on-premise d’AEM et d’Adobe Managed Services, par rapport à AEM as a Cloud Service.
 
-La liste des éléments du tableau ci-dessous est le sous-ensemble des modifications les plus pertinentes pour une migration vers AEM as a Cloud Service. Vous pouvez consulter la liste complète des modifications notables [ici](/help/release-notes/aem-cloud-changes.md).
+La liste des éléments du tableau ci-dessous est le sous-ensemble des modifications les plus pertinentes pour une migration vers AEM as a Cloud Service. Vous pouvez consulter la liste complète des [modifications notables apportées à Adobe Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 <table>
 <thead>

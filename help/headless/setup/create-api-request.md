@@ -4,10 +4,10 @@ description: Découvrez comment utiliser l’API GraphQL pour une diffusion déc
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 95%
+source-wordcount: '677'
+ht-degree: 93%
 
 ---
 
@@ -45,7 +45,7 @@ Avant de pouvoir utiliser les API GraphQL, un point d’entrée GraphQL doit êt
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-Plus d’informations sur l’activation [des points d’entrée GraphQL se trouvent ici](/help/headless/graphql-api/graphql-endpoint.md).
+Pour plus d’informations sur l’activation des points de fin GraphQL, voir [Gestion des points de fin GraphQL dans AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Requête de contenu à l’aide de GraphQL avec GraphiQL
 

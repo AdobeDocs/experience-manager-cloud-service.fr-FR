@@ -4,10 +4,10 @@ description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités C
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 95%
+source-wordcount: '898'
+ht-degree: 94%
 
 ---
 
@@ -111,7 +111,7 @@ Les candidats de magasin personnalisés peuvent définir des fonctions suppléme
 >
 >Par défaut, ContextHub ne connaît pas les utilisateurs et utilisatrices actuellement connectés sur les serveurs de publication. Il considère ces utilisateurs et utilisatrices comme étant « anonymes ».
 >
->Vous pouvez sensibiliser ContextHub aux utilisateurs et utilisatrices connectés en chargeant le magasin de profils. Voir un [exemple de code sur GitHub à cette adresse](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Vous pouvez sensibiliser ContextHub aux utilisateurs et utilisatrices connectés en chargeant le magasin de profils. Voir l’exemple de code : [aem-sample-we-retail sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Génération d’événements ContextHub {#contexthub-eventing}
 

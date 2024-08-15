@@ -4,10 +4,10 @@ description: Notes de mise à jour des outils de migration dans AEM as a Clou
 feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 99%
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,8 @@ ht-degree: 99%
 Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
+>
+>Voir [Notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md) pour consulter les dernières notes de mise à jour.
 
 ## Outil de transfert de contenu {#ctt-release}
 

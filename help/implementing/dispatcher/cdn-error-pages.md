@@ -4,9 +4,9 @@ description: Découvrez comment remplacer la page d’erreur par défaut en héb
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ Avant de pouvoir remplacer la page d’erreur par défaut, vous devez effectuer 
 
 1. Créez un fichier nommé `cdn.yaml` ou similaire, en référençant la section de syntaxe ci-dessous.
 
-1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans l’ [article du pipeline de configuration](/help/operations/config-pipeline.md#folder-structure).
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’ [article sur le pipeline de configuration](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans la section [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Déployez la configuration.
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-Pour obtenir une description des propriétés situées au-dessus du noeud de données, reportez-vous à l’ [article sur le pipeline de configuration](/help/operations/config-pipeline.md#common-syntax) . La valeur de la propriété type doit être *CDN* et la propriété `version` doit être définie sur *1*.
+Voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description des propriétés au-dessus du noeud de données. La valeur de la propriété type doit être *CDN* et la propriété `version` doit être définie sur *1*.
 
 
 | Nom | Propriétés autorisées | Signification |

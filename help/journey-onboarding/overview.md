@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 100%
+source-wordcount: '1292'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Félicitations pour avoir choisi AEM as a Cloud Service. Ce document constitue l
 
 ## Présentation {#introduction}
 
-Adobe Experience Manager est une suite performante de services de contenu composable qui offre rapidement des expériences personnalisées et à fort impact sur n’importe quel canal, en exploitant le contenu de tout le monde pour tout le monde. **Edge Delivery Services** est la dernière innovation d’Adobe Experience Manager qui permet une vitesse de contenu extrême et offre des expériences exceptionnelles. Découvrez comment commencer à utiliser Edge Delivery Services en consultant [cette page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=fr). Pour savoir comment utiliser Edge Delivery Services, reportez-vous à la page [Tutoriel pour l’équipe de développement](https://www.hlx.live/developer/tutorial).
+Adobe Experience Manager est une suite performante de services de contenu composable qui offre rapidement des expériences personnalisées et à fort impact sur n’importe quel canal, en exploitant le contenu de tout le monde pour tout le monde. **Edge Delivery Services** est la dernière innovation d’Adobe Experience Manager qui permet une vitesse de contenu extrême et offre des expériences exceptionnelles. Découvrez comment commencer à utiliser les Edge Delivery Services en consultant la [présentation des Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=fr). Pour savoir comment utiliser Edge Delivery Services, reportez-vous à la page [Tutoriel pour l’équipe de développement](https://www.hlx.live/developer/tutorial).
 
 L’intégration est le processus au cours duquel un la personne chargée de l’administration système désignée configure AEM as a Cloud Service pour votre organisation. Ce processus inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs et utilisatrices à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à ses ressources sur AEM as a Cloud Service.
 

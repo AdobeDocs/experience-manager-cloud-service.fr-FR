@@ -4,10 +4,10 @@ description: Dispatcher est une couche de mise en cache et de sécurité pour le
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 94%
+source-wordcount: '222'
+ht-degree: 85%
 
 ---
 
@@ -40,4 +40,4 @@ La demande de requêtes persistantes s’effectue sur un autre point d’entrée
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Les requêtes persistantes peuvent être demandées à l’aide de `GET`, mettant ainsi en cache la réponse au niveau du Dispatcher et du réseau CDN. Vous trouverez plus d’informations sur la mise en cache et l’invalidation du cache [ici](/help/implementing/dispatcher/caching.md).
+Les requêtes persistantes peuvent être demandées à l’aide de `GET`, mettant ainsi en cache la réponse au niveau du Dispatcher et du réseau CDN. Vous trouverez plus d’informations sur la mise en cache et l’invalidation du cache sous [l’ Introduction à la mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).

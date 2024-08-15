@@ -4,9 +4,9 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est pas encore disponible et certaines destinations de journalisation peuvent ne pas être disponibles au moment de la publication. En attendant, vous pouvez ouvrir un ticket d’assistance pour transférer les journaux vers **Splunk**, comme décrit dans l’ [article sur la journalisation](/help/implementing/developing/introduction/logging.md).
+>Cette fonctionnalité n’est pas encore disponible et certaines destinations de journalisation peuvent ne pas être disponibles au moment de la publication. En attendant, vous pouvez ouvrir un ticket d’assistance pour transférer les journaux vers **Splunk**, comme décrit sous [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
 
 Les clients qui disposent d’une licence pour un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent avoir AEM journaux (y compris Apache/Dispatcher) et des journaux CDN transférés vers les destinations de journalisation associées. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Chaque fichier contient plusieurs entrées de journal json, chacune sur une ligne distincte. Les formats d’entrée de journal sont décrits dans l’ [article de journalisation](/help/implementing/developing/introduction/logging.md), et chaque entrée de journal inclut également les propriétés supplémentaires mentionnées dans la section [Formats d’entrée de journal](#log-format) ci-dessous.
+Chaque fichier contient plusieurs entrées de journal json, chacune sur une ligne distincte. Les formats d’entrée de journal sont décrits sous [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), et chaque entrée de journal inclut également les propriétés supplémentaires mentionnées dans la section [Formats d’entrée de journal](#log-format) ci-dessous.
 
 #### Journaux Azure Blob Storage AEM {#azureblob-aem}
 
@@ -183,7 +183,7 @@ Les journaux d’AEM (y compris Apache/Dispatcher) apparaissent sous un dossier 
 
 Sous chaque dossier, un seul fichier est créé et ajouté. Les clients sont responsables du traitement et de la gestion de ce fichier afin qu’il ne se développe pas trop.
 
-Voir les formats d’entrée de journal dans l’ [article de journalisation](/help/implementing/developing/introduction/logging.md). Les entrées de journal incluent également les propriétés supplémentaires mentionnées dans la section [Formats de saisie de journal](#log-formats) ci-dessous.
+Voir les formats d’entrée de journal sous [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Les entrées de journal incluent également les propriétés supplémentaires mentionnées dans la section [Formats de saisie de journal](#log-formats) ci-dessous.
 
 
 ### Datadog {#datadog}
@@ -266,7 +266,7 @@ Considérations :
 
 #### Logs CDN HTTPS {#https-cdn}
 
-Les requêtes Web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec le format d’entrée de journal décrit dans l’ [article de journalisation](/help/implementing/developing/introduction/logging.md#cdn-log). Des propriétés supplémentaires sont mentionnées dans la section [Formats de saisie de journal](#log-formats) ci-dessous.
+Les requêtes Web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec le format d’entrée de journal décrit sous [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md#cdn-log). Des propriétés supplémentaires sont mentionnées dans la section [Formats de saisie de journal](#log-formats) ci-dessous.
 
 Il existe également une propriété nommée `sourcetype`, qui est définie sur la valeur `aemcdn`.
 
@@ -276,7 +276,7 @@ Il existe également une propriété nommée `sourcetype`, qui est définie sur 
 
 #### Journaux des AEM HTTPS {#https-aem}
 
-Pour les journaux d’AEM (y compris apache/dispatcher), les demandes web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec les différents formats d’entrée de journal comme décrit dans l’ [article de journalisation](/help/implementing/developing/introduction/logging.md). Des propriétés supplémentaires sont mentionnées dans la section [Formats de saisie de journal](#log-format) ci-dessous.
+Pour les journaux d’AEM (y compris apache/dispatcher), les demandes web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec les différents formats d’entrée de journal comme décrit sous [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Des propriétés supplémentaires sont mentionnées dans la section [Formats de saisie de journal](#log-format) ci-dessous.
 
 Il existe également une propriété nommée `sourcetype`, définie sur l’une de ces valeurs :
 
@@ -323,7 +323,7 @@ data:
 
 ## Formats de saisie du journal {#log-formats}
 
-Consultez l’ [ article général sur la journalisation](/help/implementing/developing/introduction/logging.md) pour connaître le format de chaque type de journal respectif (journaux CDN et journaux d’AEM y compris Apache/Dispatcher).
+Voir [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) pour le format de chaque type de journal respectif (journaux CDN et journaux d’AEM y compris Apache/Dispatcher).
 
 Puisque les journaux de plusieurs programmes et environnements peuvent être transférés vers la même destination de journalisation, en plus de la sortie décrite dans l’article de journalisation, les propriétés suivantes seront incluses dans chaque entrée de journal :
 
@@ -350,7 +350,7 @@ aem_tier: author
 
 Certaines organisations choisissent de restreindre le trafic qui peut être reçu par les destinations de journalisation.
 
-Pour le journal du réseau de diffusion de contenu, vous pouvez ajouter les adresses IP aux listes autorisées, comme décrit dans [cet article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, envisagez d’envoyer du trafic vers un Azure Blob Store (non Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP dédiée vers leur destination finale.
+Pour le journal du réseau de diffusion de contenu, vous pouvez ajouter des adresses IP aux listes autorisées, comme décrit dans la [documentation rapide - Liste d’adresses IP publiques](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, envisagez d’envoyer du trafic vers un Azure Blob Store (non Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP dédiée vers leur destination finale.
 
 Pour les journaux d’AEM (y compris Apache/Dispatcher), vous pouvez configurer le transfert des journaux pour passer par la [mise en réseau avancée](/help/security/configuring-advanced-networking.md). Consultez les modèles pour les trois types de réseau avancés ci-dessous, qui utilisent un paramètre facultatif `port` , ainsi que le paramètre `host` .
 

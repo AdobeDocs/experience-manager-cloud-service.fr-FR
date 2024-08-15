@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 74%
+source-wordcount: '1403'
+ht-degree: 75%
 
 ---
 
@@ -116,7 +116,7 @@ Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](man
 Un déploiement ciblé déploie le code uniquement pour les parties sélectionnées de votre application AEM. Dans un tel déploiement, vous pouvez choisir d’**inclure** l’un des types de code suivants :
 
 * **Config** - Configurez les paramètres de différentes fonctionnalités de votre environnement AEM.
-   * Consultez l’ [utilisation des pipelines de configuration](/help/operations/config-pipeline.md) pour obtenir la liste des configurations prises en charge, qui incluent le transfert de journaux, les tâches de maintenance liées à la purge et diverses configurations du réseau de diffusion de contenu, et pour les gérer dans votre référentiel afin qu’elles soient correctement déployées.
+   * Voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md) pour obtenir la liste des configurations prises en charge, notamment le transfert de journaux, les tâches de maintenance liées à la purge et diverses configurations du réseau de diffusion de contenu, et pour les gérer dans votre référentiel afin qu’elles soient déployées correctement.
    * Lors de l’exécution d’un pipeline de déploiement ciblé, les configurations sont déployées, à condition qu’elles soient enregistrées dans l’environnement, le référentiel et la branche que vous avez définis dans le pipeline.
    * À tout moment, il ne peut y avoir qu’un seul pipeline de configuration par environnement.
 * **Code front-end** - Configurez JavaScript et CSS pour le front-end de votre application AEM.

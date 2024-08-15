@@ -4,10 +4,10 @@ description: Comprenez l’authentification requise pour les requêtes GraphQL d
 feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 96%
 
 ---
 
@@ -41,4 +41,4 @@ Toutes les requêtes réalisées à l’aide du jeton d’accès sont en fait ef
 
 Ce compte d’utilisateur signifie que vous devez vérifier que le compte dispose des autorisations nécessaires pour exécuter les requêtes GraphQL.
 
-Vous pouvez vérifier ces autorisations en utilisant GraphiQL sur l’instance locale. Vous trouverez plus d’informations sur les [autorisations ici](/help/headless/security/permissions.md).
+Vous pouvez vérifier ces autorisations en utilisant GraphiQL sur l’instance locale. Pour plus d’informations, voir [Considérations sur les autorisations pour le contenu sans interface utilisateur](/help/headless/security/permissions.md).

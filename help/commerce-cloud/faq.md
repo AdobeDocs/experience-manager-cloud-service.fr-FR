@@ -4,10 +4,10 @@ description: Intégration d’AEM et de Commerce à l’aide de Commerce Integra
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '965'
+ht-degree: 98%
 
 ---
 
@@ -77,4 +77,4 @@ Oui, le questionnaire d’auto-évaluation D et l’attestation de conformité s
 
 ## 16. Comment puis-je demander une licence d’évaluation d’I/O Runtime ?
 
-Vous pouvez demander une licence d’évaluation pour utiliser I/O Runtime [ici](https://developer.adobe.com/app-builder/trial/).
+Voir [Obtention de l’accès](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) pour plus d’informations sur la demande d’une licence d’évaluation pour utiliser I/O Runtime.

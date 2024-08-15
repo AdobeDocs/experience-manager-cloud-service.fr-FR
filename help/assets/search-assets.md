@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '5503'
+source-wordcount: '5506'
 ht-degree: 90%
 
 ---
@@ -87,7 +87,7 @@ Depuis août 2023, Experience Manager Assets inclut une nouvelle version 9 de l�
 
 Si vous devez passer au comportement précédent (`statistical`), voir [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr) pour créer une version personnalisée de l’index `damAssetLucene-9`. Adobe ne recommande pas de passer au mode `secure` en raison de l’impact sur les temps de réponse de la recherche avec des jeux de résultats volumineux.
 
-Pour plus d’informations sur les fonctionnalités des facettes Oak, y compris une description détaillée de ces modes, consultez [cet article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+Pour plus d’informations sur les fonctionnalités des facettes Oak, y compris une description détaillée de ces modes, voir [Facettes - Documentation Oak - Index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suggestions de recherche en cours de frappe {#searchsuggestions}
 

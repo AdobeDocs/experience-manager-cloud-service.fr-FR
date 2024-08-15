@@ -4,9 +4,9 @@ description: Découvrez comment supprimer des objets mis en cache du cache CDN d
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 # Purge du cache du réseau CDN {#cdn-purge-cache}
 
 La purge supprime un objet du cache de réseau de diffusion de contenu Adobe, ce qui entraîne de futures demandes qui reviennent à l’origine comme une absence de cache, plutôt que d’être diffusées à partir du cache.
-AEM as a Cloud Service vous permet de configurer un jeton API de purge, qui peut ensuite être utilisé dans les appels API de purge. Lisez l’ [ article Configuration des informations d’identification et de l’authentification du réseau de diffusion de contenu ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) pour découvrir comment configurer ce jeton à l’aide des directives d’authentification du pipeline de configuration Cloud Manager.
+AEM as a Cloud Service vous permet de configurer un jeton API de purge, qui peut ensuite être utilisé dans les appels API de purge. Lisez la section [Configuration des informations d’identification et de l’authentification CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) pour apprendre à configurer ce jeton à l’aide des directives d’authentification du pipeline de configuration Cloud Manager.
 
 Il existe trois variations de purge prises en charge :
 
@@ -75,4 +75,4 @@ N’oubliez pas que l’en-tête `X-AEM-Purge` doit inclure la valeur &quot;all&
 
 ## Interactions avec le calque Apache/Dispatcher {#apache-layer}
 
-Comme décrit dans l’ [ article Flux de diffusion de contenu ](/help/implementing/dispatcher/overview.md), le réseau de diffusion de contenu récupère le contenu de la couche Apache/Dispatcher, si le cache a expiré. Cela signifie qu’avant de purger une ressource sur le réseau de diffusion de contenu, vous devez vous assurer qu’une nouvelle version du contenu est également disponible sur Dispatcher. Pour plus d’informations, voir [Invalidation du cache de Dispatcher](/help/implementing/dispatcher/caching.md#disp).
+Comme décrit sous [Flux de diffusion de contenu](/help/implementing/dispatcher/overview.md), le réseau de diffusion de contenu récupère le contenu de la couche Apache/Dispatcher, si le cache a expiré. Cela signifie qu’avant de purger une ressource sur le réseau de diffusion de contenu, vous devez vous assurer qu’une nouvelle version du contenu est également disponible sur Dispatcher. Pour plus d’informations, voir [Invalidation du cache de Dispatcher](/help/implementing/dispatcher/caching.md#disp).

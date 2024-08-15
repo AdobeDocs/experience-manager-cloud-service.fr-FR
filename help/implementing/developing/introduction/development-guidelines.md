@@ -4,10 +4,10 @@ description: Découvrez les conseils de développement sur AEM as a Cloud Servi
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2745'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -184,7 +184,7 @@ Lors du développement local (à l’aide du SDK), `/apps` et `/libs` peuvent ê
 
 Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement du niveau de création, mais pas sur l’environnement intermédiaire ou de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
-Il est possible de lancer l’explorateur de référentiel à partir d’AEM as a Cloud Service Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et d’aperçu. En savoir plus sur le navigateur de référentiels [ici](/help/implementing/developing/tools/repository-browser.md).
+Il est possible de lancer l’explorateur de référentiel à partir d’AEM as a Cloud Service Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et d’aperçu. Pour plus d’informations, voir le [Navigateur de référentiel](/help/implementing/developing/tools/repository-browser.md).
 
 Un ensemble d’outils de débogage des environnements de développement AEM as a Cloud Service est disponible dans AEM as a Cloud Service Developer Console pour les environnements de développement, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
 
@@ -194,7 +194,7 @@ Vous pouvez utiliser comme raccourci la commande d’interface de ligne de comma
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-Pour plus d’informations, consultez [cette page](/help/release-notes/home.md).
+Voir [Informations sur la version](/help/release-notes/home.md) pour plus d’informations.
 
 Les développeurs peuvent générer des informations de statut et résoudre diverses ressources.
 
